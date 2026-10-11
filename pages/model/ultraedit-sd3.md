@@ -6,22 +6,37 @@
 
 Peking University / BIGAI (UltraEdit) · released 2024-06
 
-**score 33.5** ±6.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.4** ±6.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks UltraEdit (SD3, with mask) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>  22.9%    30.1   2026-03-17   83% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                17% ▇▇
-                        weighted average                       = 33.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   22.9%  ▂·▂●·▂·▃▂·▃█ beats 3/14   medium · avg 42%     80%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1   80% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       20% ▇▇
+weighted average                                   = 32.4
+</pre>
 
 <sub>Licences: EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

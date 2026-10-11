@@ -6,29 +6,76 @@
 
 Alibaba · released 2025-07 · 480B params (35B active) · apache-2.0
 
-**score 64.0** ±1.2 · #160 of 934 · from 10 benchmark results across 4 sources
+**score 64.0** ±1.2 · #169 of 949 · from 10 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Qwen3-Coder 480B-A35B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃▆█▆●▄▄▃▂▁    #134 of 334     36%      7
+coding          ▁▁▁▃▆██●▆▄▃▁    #142 of 469     63%      6
+chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #125 of 466*     13%      1
+</pre>
+
+<details><summary>agent tasks · #134 of 334 · 36% of its score</summary>
+
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [watt-tool-70B](watt-tool-70b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   23.9%  ▃··▃·▃▃●█▅▃▅ beats 4/14     very hard · avg 5.8%     11%  sharp
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (lab)</a>             67.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 74/131   hard · avg 28%          8.0%  sharp · at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>                 77.5%  ▁····▃·▂▇█▂● beats 23/28    medium · avg 45%        5.9%  small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>         54.7%  ▁··▁▃▂●▇█▃▃▁ beats 15/60    hard · avg 24%          5.2%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (lab)</a>                60.0%  ▁▁▁·▅▄▁█▇▁▁● beats 26/28    hard · avg 29%          4.6%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">BFCL v3 (lab)</a>                        68.7%  ▁▁▁▁▁▃▅█▆●▄▁ beats 143/170  medium · avg 57%        1.6%  blunt · at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live (lab)</a>                 26.3%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>coding · #142 of 469 · 63% of its score</summary>
+
+Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1274.2  ▁▂▄●▅█▄▇▆▄▁▁ beats 18/119  avg 981                 24%  sharp
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises, tw…</a>   61.8%  ▂▁▁▃▆▃▄▆●▃▄▂ beats 55/71   very hard · avg 10%     20%  sharp · at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (lab)</a>             67.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 74/131  hard · avg 28%         8.0%  sharp · at its level · small run
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   61.2%  ▁··▁·▁▁▁▆●▇█ beats 15/45   hard · avg 32%         6.5%  at its level
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>         54.7%  ▁··▁▃▂●▇█▃▃▁ beats 15/60   hard · avg 24%         5.2%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live (lab)</a>                 26.3%  █··········● beats 1/1                               —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #125 of 466 · 13% of its score</summary>
+
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [MiMo-V2-Flash (309B-A15B)](mimo-v2-flash.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1387.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 228/379  avg 1268       13%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="card-qwen-qwen3-coder-30b-a3b-instruct"></a>Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises…</a>   61.8%    63.8   2026-09-25   21% ▇▇▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (lab)</a>         67.0%    65.0   2026-09-25    8% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>     54.7%    65.3   2026-09-25    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>             77.5%    65.7   2026-09-25    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (lab)</a>            60.0%    67.6   2026-09-25    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">BFCL v3 (lab)</a>                    68.7%    60.8   2026-09-25    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1274.2    63.1   2026-10-01   23% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1387.3    64.4   2026-10-02   13% ▇▇
-<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   23.9%    64.1   2026-01-17   10% ▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   61.2%    62.9   2025-11-02    7% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 64.0
+source                                    results  share of the score
+<a name="card-qwen-qwen3-coder-30b-a3b-instruct"></a><a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Qwen/Qwen3-Coder-30B-A3B-Instruct model…</a>        6   45% ▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   37% ▇▇▇▇
+<a name="paper-2601.11868v1"></a><a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench: Benchmarking Agents on …</a>        1   11% ▇
+<a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    7% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 64.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Qwen/Qwen3-Coder-30B-A3B-Instruct model card ([Apache-2.0](../../licenses/card-qwen-qwen3-coder-30b-a3b-instruct.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt))</sub>
 
@@ -55,21 +102,66 @@ api (Novita AI) · $0.67/M blended · $0.38 in / $1.55 out per 1M tokens · [nov
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output. Model endpoint qwen/qwen3-coder-480b-a35b-instruct.  Product: Serverless chat completions. API model: qwen/qwen3-coder-480b-a35b-instruct. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
 <pre>
-download              size  score
-4-bit q4_k_m      ~288.5GB   64.0
-2-bit ud-q2_k_xl  ~144.5GB   64.0
-1-bit ud-iq1_m     ~72.5GB   64.0
+download                       size  score
+4-bit q4_k_m               ~288.5GB   64.0
+2-bit ud-q2_k_xl           ~144.5GB   64.0
+1-bit ud-iq1_m              ~72.5GB   64.0
+4-bit mlx-4bit · mac only  ~270.1GB   64.0
+4-bit mlx-8bit · mac only  ~510.2GB   64.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run qwen3-coder:480b
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-Q2_K_XL
-# 1-bit ud-iq1_m
-llama-server -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-IQ1_M
+# 2-bit ud-q2_k_xl · ~144.5GB
+llama cli -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-Q2_K_XL
+# 1-bit ud-iq1_m · ~72.5GB
+llama cli -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-IQ1_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-IQ1_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 2-bit ud-q2_k_xl · ~144.5GB
+lms get https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 1-bit ud-iq1_m · ~72.5GB
+lms get https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF@UD-IQ1_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~270.1GB
+lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~510.2GB
+lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~288.5GB
+ollama run qwen3-coder:480b
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~270.1GB
+mlx_lm.chat --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~510.2GB
+mlx_lm.chat --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/qwen3-coder-480b-a35b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

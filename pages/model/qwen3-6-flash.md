@@ -6,26 +6,64 @@
 
 Alibaba · released 2026-04 · closed weights
 
-**score 66.3** ±1.2 · #132 of 934 · from 7 benchmark results across 2 sources
+**score 66.2** ±1.3 · #134 of 949 · from 7 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Qwen3.6 Flash among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+math                ▁▂▃▅▆▅▄●▄▁▁▁   #142 of 400*     61%      2
+vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄    #34 of 150*    1.3%      1
+</pre>
+
+<details><summary>math · #142 of 400 · 61% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   17.2%  ▂··▁▁●▄▄█▅▃▃ beats 9/82     very hard · avg 1.2%     50%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    84.4%  ▃▃▄▃▃▃▇●█▃▂▅ beats 124/193  very hard · avg 8.5%     11%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #34 of 150 · 1.3% of its score</summary>
+
+Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive spatia…</a>   47.7%  ▃·▅▃▅▃··●··█ beats 8/11   very hard · avg 32%    1.3%  blunt · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                          result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   83.3%  ▁▁▁▁▂▄▆▄▅●█▅ beats 136/208  hard · avg 40%           22%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          20.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 79/135   very hard · avg 5.9%    5.1%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   12.0%  █··●▃▇▄█▂▃▁▁ beats 18/74    very hard · avg 9.4%    4.8%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              15.9%  ▁▁▃●▃▃▆▆█▃▂▅ beats 9/78     very hard · avg 8.0%    4.6%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       17.2%    64.6   2026-08-29   51% ▇▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    83.3%    69.3   2026-08-07   22% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        84.4%    68.7   2026-08-07   11% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>           20.0%    71.5   2026-08-07    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>    12.0%    64.6   2026-08-27    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>               15.9%    59.9   2026-08-27    4% ▇
-<a name="paper-2610.12402v1-spacecast-bench"></a>SpaceCast-Bench: Eval…  <a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive sp…</a>  47.7%    78.1   2026-10-08    1% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 66.3
+source                                    results  share of the score
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        6   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2610.12402v1-spacecast-bench"></a><a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench: Evaluating Predictive …</a>        1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 66.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

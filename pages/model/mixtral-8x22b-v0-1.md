@@ -6,20 +6,35 @@
 
 Mistral · released 2024-04 · 140.62B params (39B active) · apache-2.0
 
-**score 47.2** ±3.1 · #511 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.0** ±3.0 · #524 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Mixtral 8x22B v0.1 (base) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                     result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   45.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 42/58  medium · avg 50%     96%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source              test                     score  implies  date        weight
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper  <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>  45.5%    47.1   2025-04-01   96% ▇▇▇▇▇▇▇▇▇▇▇
-prior               pull toward the middle            50.0                 4% ▇
-                    weighted average                = 47.2
+source                         results  share of the score
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                   1   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             4% ▇
+weighted average                        = 47.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -29,14 +44,18 @@ prior               pull toward the middle            50.0                 4% �
 
 <pre>
 download          size  score
-16-bit bf16  ~281.24GB   47.2
+16-bit bf16  ~281.24GB   47.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16
+# 16-bit bf16 · ~281.24GB
 uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='mistralai/Mixtral-8x22B-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/mixtral-8x22b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

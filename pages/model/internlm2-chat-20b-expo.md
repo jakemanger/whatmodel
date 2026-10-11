@@ -6,35 +6,92 @@
 
 Chujie Zheng (ExPO) · released 2024-05 · 19.86B params · other
 
-**score 45.6** ±1.8 · #563 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.3** ±1.8 · #579 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks internlm2-chat-20b-ExPO among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #328 of 466*     99%      1
+</pre>
+
+<details><summary>chat &amp; writing · #328 of 466 · 99% of its score</summary>
+
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+
+<pre>
+test                            result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   27.2%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 73/122  medium · avg 39%     99%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  27.2%    45.5   2025-08-09   99% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 45.6
+source                               results  share of the score
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        1   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   1% ▇
+weighted average                              = 45.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-16-bit bf16  ~39.72GB   45.6
+download          size  score
+16-bit bf16   ~39.72GB   45.3
+4-bit Q4_K_M     ~12GB   45.3
+8-bit Q8_0     ~21.1GB   45.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/internlm2-chat-20b-ExPO', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~12GB
+llama cli -hf mradermacher/internlm2-chat-20b-ExPO-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/internlm2-chat-20b-ExPO-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~21.1GB
+llama cli -hf mradermacher/internlm2-chat-20b-ExPO-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/internlm2-chat-20b-ExPO-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~12GB
+lms get https://huggingface.co/mradermacher/internlm2-chat-20b-ExPO-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~21.1GB
+lms get https://huggingface.co/mradermacher/internlm2-chat-20b-ExPO-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~12GB
+ollama run hf.co/mradermacher/internlm2-chat-20b-ExPO-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~21.1GB
+ollama run hf.co/mradermacher/internlm2-chat-20b-ExPO-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~39.72GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/internlm2-chat-20b-ExPO', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/internlm2-chat-20b-expo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

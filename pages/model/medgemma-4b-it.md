@@ -6,38 +6,103 @@
 
 Google · released 2025-05 · 4.3B params · health-ai-developer-foundations
 
-**score 46.4** ±2.7 · #543 of 934 · from 4 benchmark results across 4 sources
+**score 46.4** ±2.7 · #545 of 949 · from 4 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks MedGemma 4B IT among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, bias-…</a>   43.4%  ▄·▂▂●··█▂▄·▄ beats 4/13     hard · avg 48%       37%  at its level
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   29.4%  ▁▁▁▁▁▂▂●▄▆█▃ beats 29/97    hard · avg 32%       31%  blunt · at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   68.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 149/276  medium · avg 73%     15%  at its level · noisy
+<a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   44.1%  ▂···▂▂·●▂▃██ beats 4/17     medium · avg 53%     14%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2606.12250v1-polish-medical-exams"></a>Reassessing High-Perf…  <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, b…</a>  43.4%    47.3   2026-06-10   36% ▇▇▇▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  29.4%    47.0   2025-06-03   34% ▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  68.2%    46.7   2025-07-15   14% ▇▇
-<a name="paper-2606.08071v1-surgiq"></a>SurgiQ: A Large-Scale…  <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-sho…</a>  44.1%    41.0   2026-06-06   12% ▇
-prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 46.4
+source                                    results  share of the score
+<a name="paper-2606.12250v1-polish-medical-exams"></a><a href="https://arxiv.org/html/2606.12250v1">Reassessing High-Performing LLMs on Pol…</a>        1   37% ▇▇▇▇
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1   31% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1   15% ▇▇
+<a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1   14% ▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 46.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance? ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
-download        size  score
-4-bit q4_k_m  ~3.3GB   46.4
+download                     size  score
+4-bit q4_k_m               ~3.3GB   46.4
+4-bit Q4_K_M               ~2.5GB   46.4
+8-bit Q8_0                 ~4.1GB   46.4
+4-bit mlx-4bit · mac only    ~3GB   46.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run medgemma:4b
+# 4-bit Q4_K_M · ~2.5GB
+llama cli -hf lmstudio-community/medgemma-4b-it-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/medgemma-4b-it-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~4.1GB
+llama cli -hf lmstudio-community/medgemma-4b-it-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/medgemma-4b-it-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~2.5GB
+lms get https://huggingface.co/lmstudio-community/medgemma-4b-it-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~4.1GB
+lms get https://huggingface.co/lmstudio-community/medgemma-4b-it-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~3GB
+lms get https://huggingface.co/lmstudio-community/medgemma-4b-it-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~3.3GB
+ollama run medgemma:4b
+# 4-bit Q4_K_M · ~2.5GB
+ollama run hf.co/lmstudio-community/medgemma-4b-it-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~4.1GB
+ollama run hf.co/lmstudio-community/medgemma-4b-it-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~3GB
+mlx_lm.chat --model lmstudio-community/medgemma-4b-it-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/medgemma-4b-it-MLX-4bit
+```
 
 [interactive version](https://whatmodel.sh/model/medgemma-4b-it) · [JSON](https://whatmodel.sh/api?format=json&all=1)

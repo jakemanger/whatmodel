@@ -6,51 +6,140 @@
 
 Meta · released 2024-01 · 69B params · llama2
 
-**score 46.5** ±0.6 · #535 of 934 · from 12 benchmark results across 6 sources
+**score 46.1** ±0.6 · #551 of 949 · from 13 benchmark results across 7 sources
+
+## What it's good at
+
+<sub>● marks Code Llama 70B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #307 of 469     78%      6
+chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #435 of 466*    5.7%      2
+</pre>
+
+<details><summary>coding · #307 of 469 · 78% of its score</summary>
+
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            72.0%  ▁·▁▁▃▄▆▅●▃▁▁ beats 63/99  easy · avg 79%       43%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           65.9%  ▁·▁▁▁▃▄▄▄●▃▁ beats 62/99  easy · avg 74%       19%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   58.9%  ▁·▂▁▂▆▅█▄▄●▂ beats 33/35  medium · avg 64%    5.2%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   41.1%  ▄▇█▃▄▇▄▁●▃·▁ beats 32/35  medium · avg 49%    4.0%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   53.0%  ▁·▁▁▄██▄█▁▅● beats 34/35  medium · avg 56%    3.9%  sharp · at its level
+<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                           62.2%  ▃▃▃█··▃▅··●▃ beats 9/11   easy · avg 73%      3.3%  at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #435 of 466 · 5.7% of its score</summary>
+
+Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty  counts  why
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1039.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 22/95   avg 1201      2.9%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1119.1  ▁▁▁●▃▃▃▆▆▇█▃ beats 22/379  avg 1268      2.8%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                     result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>         47.7%  ▂▂▃▄▄█▁▄●▃▁▃ beats 33/42  medium · avg 55%    8.9%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   40.5%  ▃▂·▆▆██▆●▃▃▃ beats 26/33  medium · avg 41%    3.4%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   48.9%  ▂▁▁▄▂▅▇█●▂▂▂ beats 49/58  medium · avg 50%    3.4%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                        72.0%    46.9   2024-12-26   25% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                       65.9%    47.0   2024-12-26   20% ▇▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        66.5%    45.5   2024-03-28   13% ▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                47.7%    46.9   2024-03-28    9% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>   58.9%    47.4   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>   41.1%    46.7   2024-05-07    4% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>   53.0%    49.4   2024-05-07    4% ▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  67.8%    46.9   2024-01-31    7% ▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                       62.2%    43.8   2024-01-31    3% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>          40.5%    50.1   2025-04-01    3% ▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>          48.9%    49.3   2025-04-01    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1119.1    32.2   2026-10-02    3% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 46.5
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   42% ▇▇▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   22% ▇▇▇
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        3   13% ▇▇
+<a name="paper-2308.12950v3"></a><a href="https://arxiv.org/html/2308.12950v3">Code Llama: Open Foundation Models for …</a>        2   11% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              2    7% ▇
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    3% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    3% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 46.1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/codellama/CodeLlama-70b-Instruct-hf/blob/397cae981dffaf5d5c9c90e89a0a75a850528b70/README.md): Meta official model card: "It was fine-tuned with up to 16k tokens. This variant does not support long context of up to 100k tokens." Stated rounded 16k, as for codellama-70b. The repo's config.json sets max\_position\_embeddings 4096, which the card does not explain. Observed 2026-10-07.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~41.9GB   46.5
-8-bit q8_0    ~83.3GB   46.5
+download                      size  score
+4-bit q4_k_m               ~41.9GB   46.1
+8-bit q8_0                 ~83.3GB   46.1
+4-bit Q4_K_M               ~41.4GB   46.1
+2-bit Q2_K                 ~25.5GB   46.1
+4-bit mlx-4bit · mac only  ~39.2GB   46.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run codellama:70b-instruct-q4_K_M
-# 8-bit q8_0
-ollama run codellama:70b-instruct-q8_0
+# 4-bit Q4_K_M · ~41.4GB
+llama cli -hf second-state/CodeLlama-70b-Instruct-hf-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf second-state/CodeLlama-70b-Instruct-hf-GGUF:Q4_K_M
+# 2-bit Q2_K · ~25.5GB
+llama cli -hf second-state/CodeLlama-70b-Instruct-hf-GGUF:Q2_K
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf second-state/CodeLlama-70b-Instruct-hf-GGUF:Q2_K
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~41.4GB
+lms get https://huggingface.co/second-state/CodeLlama-70b-Instruct-hf-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit Q2_K · ~25.5GB
+lms get https://huggingface.co/second-state/CodeLlama-70b-Instruct-hf-GGUF@Q2_K -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~39.2GB
+lms get https://huggingface.co/mlx-community/CodeLlama-70b-Instruct-hf-4bit-MLX -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~41.9GB
+ollama run codellama:70b-instruct-q4_K_M
+# 8-bit q8_0 · ~83.3GB
+ollama run codellama:70b-instruct-q8_0
+# 4-bit Q4_K_M · ~41.4GB
+ollama run hf.co/second-state/CodeLlama-70b-Instruct-hf-GGUF:Q4_K_M
+# 2-bit Q2_K · ~25.5GB
+ollama run hf.co/second-state/CodeLlama-70b-Instruct-hf-GGUF:Q2_K
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~39.2GB
+mlx_lm.chat --model mlx-community/CodeLlama-70b-Instruct-hf-4bit-MLX
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/CodeLlama-70b-Instruct-hf-4bit-MLX
+```
 
 [interactive version](https://whatmodel.sh/model/codellama-70b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

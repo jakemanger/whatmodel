@@ -6,22 +6,40 @@
 
 Midjourney · released 2024-07 · proprietary
 
-**score 41.8** ±3.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.9** ±3.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Midjourney V6.1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.33 / 5    41.3   2024-12-25   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                 6% ▇
-                        weighted average                          = 41.8
+task           vs the others          rank  counts  tests
+text to image  ▁▂▇▇●▅█▇▂▃▁▁   #103 of 157*     94%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #103 of 157 · 94% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall. Trails [Playground v2 (1024px aesthetic)](playground-v2.md), [Show-o2 7B](show-o2-7b.md), [FLUX.1 \[schnell\]](flux-1-schnell.md) here, though they rank lower overall.
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  3.33 / 5  █▄·▄██▄▄█●▄▄ beats 12/14  easy · avg 3.83 / 5     94%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 41.9
+</pre>
 
 <sub>Licences: EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt))</sub>
 

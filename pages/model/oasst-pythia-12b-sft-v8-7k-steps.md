@@ -6,21 +6,39 @@
 
 LAION (OpenAssistant) · released 2023-05 · apache-2.0
 
-**score 25.9** ±2.8 · #878 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 26.1** ±2.8 · #890 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks OpenAssistant Pythia 12B SFT v8 (7k steps) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁●▁▄▆▅▆█▆▆▆▂   #458 of 466*     97%      2
+</pre>
+
+<details><summary>chat &amp; writing · #458 of 466 · 97% of its score</summary>
+
+Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Falcon 7B Instruct](falcon-7b-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        4.2%  ▁●▂▃▆▆█▆▄▄▁▁ beats 4/122  medium · avg 39%        53%  too hard for it
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   41.9%  ▂▂·●·▇▃▆█▆▄▂ beats 4/45   very easy · avg 96%     43%  sharp · at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   4.2%    25.5   2025-08-09   55% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  41.9%    24.3   2025-08-09   42% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 25.9
+source                               results  share of the score
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   3% ▇
+weighted average                              = 26.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -28,14 +46,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~23.84GB   25.9
+4-bit fp16  ~23.84GB   26.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp16
+# 4-bit fp16 · ~23.84GB
 uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='OpenAssistant/pythia-12b-sft-v8-7k-steps', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/oasst-pythia-12b-sft-v8-7k-steps) · [JSON](https://whatmodel.sh/api?format=json&all=1)

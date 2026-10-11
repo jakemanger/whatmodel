@@ -6,20 +6,38 @@
 
 Google · released 2024-11 · proprietary
 
-**score 52.7** ±2.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.6** ±2.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Gemini Experimental 1114 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁▃▅▇●▇▅▄▂▁   #289 of 549*     97%      1
+</pre>
+
+<details><summary>coding · #289 of 549 · 97% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   60.9%  ▁·▁▂▄▁▆●█▆▂▂ beats 31/62  medium · avg 54%     97%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  60.9%    52.8   2024-11-15   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 52.7
+source                             results  share of the score
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>        1   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                 3% ▇
+weighted average                            = 52.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>
 

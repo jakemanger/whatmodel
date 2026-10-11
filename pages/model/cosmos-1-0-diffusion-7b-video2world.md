@@ -6,21 +6,37 @@
 
 NVIDIA · released 2025-01 · 7B params · nvidia-open-model
 
-**score 48.7** ±4.6 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 48.6** ±4.6 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Cosmos-1.0-Diffusion-7B-Video2World among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others        rank  counts  tests
+text to video  ▇▅▄▆█●▇▂▃▃▂▄   #43 of 94*     91%      2
+</pre>
+
+<details><summary>text to video · #43 of 94 · 91% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: camera-pos…</a>   68.4%  █·█·······█● beats 3/3    easy · avg 68%     87%  sharp · at its level
+<a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: Sampson ep…</a>  0.4730  ●···█···█··█ beats 0/3    avg 0.385         4.2%  blunt · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="paper-2501.03575v3-cosmos"></a>Cosmos World Foundati…  <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: camera…</a>   68.4%    50.6   2025-07-09   87% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: Sampso…</a>  0.4730     6.6   2025-07-09    4% ▇
-prior                   pull toward the middle                    49.9                 9% ▇
-                        weighted average                        = 48.7
+source                                    results  share of the score
+<a name="paper-2501.03575v3-cosmos"></a><a href="https://arxiv.org/html/2501.03575v3">Cosmos World Foundation Model Platform …</a>        2   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        9% ▇
+weighted average                                   = 48.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Cosmos World Foundation Model Platform for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

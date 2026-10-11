@@ -6,36 +6,93 @@
 
 SpeakLeash · released 2024-08 · 11.17B params · apache-2.0
 
-**score 53.4** ±3.6 · #349 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 52.5** ±2.8 · #386 of 949 · from 3 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Bielik 11B v2.1 Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   72.2%  ▁▂▂▂▃█▃●▅▄▂▃ beats 58/95    easy · avg 66%       45%  at its level
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash) (…</a>   66.3%  ▁··▁▁▂▂▆▅▆●▆ beats 45/70    medium · avg 64%     36%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   73.5%  ▃▁▁▁▁▁▁▁▂█●▁ beats 208/276  medium · avg 73%     15%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  72.2%    54.6   2026-08-11   71% ▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  73.5%    50.6   2024-10-17   23% ▇▇▇
-prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 53.4
+source                                    results  share of the score
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB (lab)</a>                          1   45% ▇▇▇▇▇
+<a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard …</a>        1   36% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1   15% ▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 52.5
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-16-bit bf16  ~22.34GB   53.4
+download          size  score
+16-bit bf16   ~22.34GB   52.5
+4-bit Q4_K_M    ~6.7GB   52.5
+8-bit Q8_0     ~11.9GB   52.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='speakleash/Bielik-11B-v2.1-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~6.7GB
+llama cli -hf speakleash/Bielik-11B-v2.1-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf speakleash/Bielik-11B-v2.1-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~11.9GB
+llama cli -hf speakleash/Bielik-11B-v2.1-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf speakleash/Bielik-11B-v2.1-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~6.7GB
+lms get https://huggingface.co/speakleash/Bielik-11B-v2.1-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~11.9GB
+lms get https://huggingface.co/speakleash/Bielik-11B-v2.1-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~6.7GB
+ollama run hf.co/speakleash/Bielik-11B-v2.1-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~11.9GB
+ollama run hf.co/speakleash/Bielik-11B-v2.1-Instruct-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~22.34GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='speakleash/Bielik-11B-v2.1-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/bielik-11b-v2-1-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

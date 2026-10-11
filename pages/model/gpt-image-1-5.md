@@ -10,31 +10,76 @@ OpenAI · released 2025-12 · proprietary
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks GPT Image 1.5 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1238.5    72.3   2026-09-24   28% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1369.6    74.1   2026-09-30   10% ▇
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   81.5%    72.8   2026-05-14   29% ▇▇▇
-<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   63.2%    73.4   2026-02-10    5% ▇
-<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>   59.6%    66.9   2026-03-17    5% ▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>   58.0%    55.9   2026-10-07    4% ▇
-<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>  1131.9    82.1   2026-10-01    4% ▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1071.0    65.0   2026-03-30    4% ▇
-<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   59.8%    72.5   2026-06-05    4% ▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   59.7%    71.0   2026-05-27    3% ▇
-<a name="visual-multitextedit-ccby"></a>MultiTextEdit: Benchm…  <a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual t…</a>   71.5%    69.5   2026-05-18    3% ▇
-<a name="visual-tecci"></a>TECCI: Tricky Edits o…  <a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success r…</a>    5.7%    49.3   2026-05-31    1% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 71.2
+task                    vs the others        rank  counts  tests
+text to image           ▂▅▅▃▄▄█▃●▂▁▁   #14 of 126     68%      5
+image to image / edit…  ▁▁·▃▂▃█▃●▄▁▁    #15 of 62     24%      5
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #14 of 126 · 68% of its score</summary>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) · MultiTextEdit: Benchmarking Cross-Lingual Degradation in Text-in-Image Editing ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt))</sub>
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   81.5%  ▄█▂▂▂▂▆▄·●·▂ beats 15/16  hard · avg 26%       29%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1237.4  ▂▂▃▄▇█▄●▄▂·▂ beats 61/75  avg 1027             28%  typical
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   58.0%  ▁▂▂█●▁▂▃·▁·▁ beats 13/22  hard · avg 28%      4.4%  sharp · noisy
+<a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>    59.8%  ▄·█···▄▄▄●▄▄ beats 6/8    medium · avg 36%    3.6%  blunt · at its level
+<a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>      59.7%  █▅▅·▅▅█·●··▃ beats 15/17  medium · avg 46%    2.9%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #15 of 62 · 24% of its score</summary>
+
+Beats [Nano Banana 2 Lite (Gemini 3.1 Flash-Lite Image)](nano-banana-2-lite.md) here, though they rank higher overall. Trails [Grok Imagine Image Pro](grok-imagine-image-pro.md), [Qwen-Image-2.1](qwen-image-2-1.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1369.7  ▂▁▁▂▆▇█▄●▅▁▂ beats 40/53  avg 1153                 11%  typical
+<a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation (Eng…</a>   63.2%  ▄▄····▄▄█▄·● beats 8/8    hard · avg 34%          5.1%  at its level
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1071.0  ▃▂····▂█▂▃●▃ beats 12/14  avg 956                 4.1%  blunt
+<a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual text-…</a>   71.5%  ▄·▄▄▄▄··█●·▄ beats 7/8    medium · avg 50%        2.5%  at its level
+<a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success rate …</a>    5.7%  ●········▄█▄ beats 0/4    very hard · avg 7.1%    1.4%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>  1131.9  ▁▁▁▄▂█▂▁▁●▁▁ beats 30/34  avg 875             4.3%  typical
+<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   59.6%  ▂·▂▃·▂·▃▂·▃● beats 13/14  medium · avg 42%    3.6%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   38% ▇▇▇▇▇
+<a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   29% ▇▇▇▇
+<a name="visual-gebench"></a><a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench: Benchmarking Image Generation …</a>        1    5% ▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1    4% ▇
+<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    4% ▇
+<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    4% ▇
+<a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1    4% ▇
+<a name="visual-fepbench"></a><a href="https://arxiv.org/html/2606.05949v2#S4.T2">Faithful</a>                                        1    4% ▇
+<a name="visual-qwenbench"></a><a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench: From Generation to Cr…</a>        1    3% ▇
+<a name="visual-multitextedit-ccby"></a><a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit: Benchmarking Cross-Lingu…</a>        1    3% ▇
+<a name="visual-tecci"></a><a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI: Tricky Edits of Collected and Cu…</a>        1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 71.2
+</pre>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) · MultiTextEdit: Benchmarking Cross-Lingual Degradation in Text-in-Image Editing ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt))</sub>
 
 ## How to run it
 

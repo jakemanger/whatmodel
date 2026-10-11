@@ -6,27 +6,56 @@
 
 UC Berkeley (Brooks, Holynski, Efros) · released 2023-01 · 0.86B params · mit
 
-**score 19.2** ±3.1 · #143 of 144 · from 6 benchmark results across 6 sources
+**score 18.8** ±3.2 · #143 of 144 · from 6 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks InstructPix2Pix among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         29.2%    14.3   2025-12-01   32% ▇▇▇▇
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      23.8%    18.8   2026-05-13   21% ▇▇▇
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>  45.0%    23.8   2026-03-29   15% ▇▇
-<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>  13.0%    14.4   2026-03-17   14% ▇▇
-<a name="visual-multitextedit-ccby"></a>MultiTextEdit: Benchm…  <a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual t…</a>  23.8%    25.1   2026-05-18   11% ▇
-<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>   0.3%     3.3   2026-05-29    2% ▇
-prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 19.2
+task                    vs the others       rank  counts  tests
+image to image / edit…  ●▁·▃▂▃█▃▃▄▁▁   #62 of 62     81%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #62 of 62 · 81% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>              29.2%  ●····▂▄▂▄·█▂ beats 0/11   easy · avg 73%       33%  at its level
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           23.8%  ●▃▂·▃▆▂█·▃·▃ beats 0/20   hard · avg 45%       22%  too hard for it
+<a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editing (…</a>   45.0%  ●··█··██···█ beats 0/4    easy · avg 73%       15%  blunt · at its level
+<a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual text-…</a>   23.8%  ●·▄▄▄▄··█▄·▄ beats 0/8    medium · avg 50%     11%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   13.0%  ●·▂▃·▂·▃▂·▃█ beats 0/14   medium · avg 42%         12%  blunt
+<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    0.3%  ●·····█▅▃·▃▅ beats 0/9    very hard · avg 4.3%    2.3%  too hard for it
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-unicbench"></a><a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicEdit-10M: A Dataset and Benchmark B…</a>        1   33% ▇▇▇▇
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   22% ▇▇▇
+<a name="visual-imagenworld"></a><a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld: Stress-Testing Image Gener…</a>        1   15% ▇▇
+<a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1   12% ▇
+<a name="visual-multitextedit-ccby"></a><a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit: Benchmarking Cross-Lingu…</a>        1   11% ▇
+<a name="visual-paintbench"></a><a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench: Deterministic Evaluation of…</a>        1    2% ▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 18.8
+</pre>
 
 <sub>Licences: UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MultiTextEdit: Benchmarking Cross-Lingual Degradation in Text-in-Image Editing ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -34,14 +63,18 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~2.6GB   19.2
+fp16 · nvidia only  ~2.6GB   18.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~2.6GB
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionInstructPix2PixPipeline; from diffusers.utils import load_image; p=StableDiffusionInstructPix2PixPipeline.from_pretrained('timbrooks/instruct-pix2pix', torch_dtype=torch.float16, safety_checker=None).to('cuda'); p('turn him into cyborg', image=load_image('https://raw.githubusercontent.com/timothybrooks/instruct-pix2pix/main/imgs/example.jpg'), num_inference_steps=10, image_guidance_scale=1).images[0].save('out.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/instructpix2pix) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,29 +6,57 @@
 
 Alibaba · released 2026-09 · proprietary
 
-**score 69.0** ±2.0 · #4 of 117 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 68.9** ±2.0 · #3 of 118 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Qwen-Audio-3.0-TTS-Plus among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER (lab)</a>        6.7%    67.3   2026-07-27   20% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (pr…</a>  4.04 / 5    69.8   2026-07-27   15% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>      4.7%    70.3   2026-07-27   14% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER (lab)</a>        7.4%    68.4   2026-07-27   14% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · speaker si…</a>     84.7%    71.1   2026-07-27   10% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · speaker si…</a>     81.5%    70.4   2026-07-27   10% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>      3.1%    68.9   2026-07-27    9% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker si…</a>     76.6%    70.3   2026-07-27    6% ▇
-prior                   pull toward the middle                      49.7                 2% ▇
-                        weighted average                          = 69.0
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁▇█▃●   #1 of 37*     20%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #1 of 37 · 20% of its score</summary>
+
+Beats [OpenAudio S1](openaudio-s1.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · speaker simila…</a>   84.7%  █·····██···● beats 3/3    medium · avg 58%     10%  typical
+<a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · speaker simila…</a>   81.5%  █····█··█··● beats 3/3    medium · avg 54%     10%  typical
+<a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · Whisper large-…</a>    1.5%  ▁···▂▂▂▂█●▄▂ beats 27/35  avg 3.6%               —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · Paraformer CER…</a>    0.8%  ▁·▂▁▁▁▂▃▅●·▂ beats 28/30  avg 2.1%               —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER (lab)</a>            6.7%  █····█·██●██ beats 4/6    avg 26%                   20%  sharp
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (predic…</a>  4.04 / 5  █·▄·▄▄·▄···● beats 6/6    medium · avg 2.98 / 5     14%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER (lab)</a>            7.4%  ▄▄▄···▄··▄·● beats 5/6    avg 23%                   14%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice clone…</a>      4.7%  ▄···▄··▄··█● beats 6/6    avg 20%                   14%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added langua…</a>      3.1%  █··█······●█ beats 2/3    avg 12%                   10%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker simila…</a>     76.6%  ▄·····▄▄·▄▄● beats 6/6    medium · avg 49%         6.6%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report (la…</a>        8   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 68.9
+</pre>
 
 <sub>Licences: Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt))</sub>
 

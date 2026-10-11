@@ -16,7 +16,12 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
+# fp32 motion module + SD 1.5 (sd.cpp) · ~7.8GB
 sd-cli -M vid_gen --model models/v1-5-pruned-emaonly.safetensors --motion-module models/mm_sd_v15_v2.ckpt --offload-to-cpu --diffusion-fa -p "a red apple on a wooden table" --cfg-scale 8.0 --sampling-method euler --scheduler discrete -H 384 -W 384 --video-frames 16 --fps 8 --steps 20 -s 42 -o out.avi
 ```
 

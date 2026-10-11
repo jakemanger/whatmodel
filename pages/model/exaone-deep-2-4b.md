@@ -6,26 +6,59 @@
 
 LG AI Research · released 2025-03 · 2.41B params · exaone
 
-**score 50.3** ±1.5 · #423 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.2** ±1.5 · #436 of 949 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks EXAONE Deep 2.4B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ●█·········█      #3 of 3*     10%      1
+math    ▁▂▃▅●▅▄█▄▁▁▁   #231 of 400     61%      3
+</pre>
+
+<details><summary>coding · #3 of 3 · 10% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspecifie…</a>   46.6%  ▁···▁▁▃▅●█▄▅ beats 14/37  medium · avg 43%     10%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · #231 of 400 · 61% of its score</summary>
+
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [OpenThinker 7B](openthinker-7b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank lower overall.
+
+<pre>
+test             result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2025 (lab)</a>   47.9%  ●·▄▄····▄··█ beats 1/6    medium · avg 53%        27%  sharp · at its level
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2024 (lab)</a>   52.5%  ▁▁▁▂▁▃▁●███▃ beats 24/85  medium · avg 54%        20%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">MATH-500 (lab)</a>    92.3%  ▁▃▂▃▅▇●▇█▅▂▁ beats 43/84  very easy · avg 91%     14%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">GPQA Diamond (lab)</a>   54.3%  ●···▄▄···▄·█ beats 1/6    hard · avg 51%     28%  sharp · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2025 (lab)</a>                 47.9%    48.2   2025-03-12   29% ▇▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">GPQA Diamond (lab)</a>              54.3%    51.7   2025-03-12   27% ▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2024 (lab)</a>                 52.5%    49.2   2025-03-12   20% ▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">MATH-500 (lab)</a>                  92.3%    52.2   2025-03-12   13% ▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspec…</a>  46.6%    51.9   2025-03-12   10% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 50.3
+source                                    results  share of the score
+<a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LG AI Research vendor-reported benchmar…</a>        5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 50.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
-
-
 
 ## How to run it
 
@@ -33,17 +66,38 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m   ~1.6GB   50.3
-4-bit q4_k_m  ~1.64GB   50.3
+4-bit q4_k_m   ~1.6GB   50.2
+4-bit q4_k_m  ~1.64GB   50.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run exaone-deep:2.4b
-# 4-bit q4_k_m
-llama-server -hf LGAI-EXAONE/EXAONE-Deep-2.4B-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~1.64GB
+llama cli -hf LGAI-EXAONE/EXAONE-Deep-2.4B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf LGAI-EXAONE/EXAONE-Deep-2.4B-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~1.64GB
+lms get https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~1.6GB
+ollama run exaone-deep:2.4b
+# 4-bit q4_k_m · ~1.64GB
+ollama run hf.co/LGAI-EXAONE/EXAONE-Deep-2.4B-GGUF:Q4_K_M
+```
 
 [interactive version](https://whatmodel.sh/model/exaone-deep-2-4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

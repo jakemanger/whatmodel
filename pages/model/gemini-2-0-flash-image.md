@@ -6,26 +6,57 @@
 
 Google · released 2025-05 · closed weights
 
-**score 44.7** ±1.8 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
+**score 44.9** ±1.8 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Gemini 2.0 Flash Image Generation (preview) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            975.3    44.3   2026-09-24   51% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1080.8    41.0   2026-09-30   18% ▇▇
-<a name="paper-2505.17613v2-mmmg"></a>MMMG: a Comprehensive…  <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                          66.9%    46.8   2026-09-30   18% ▇▇
-                        <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (averag…</a>   59.2%    56.5   2026-09-30    9% ▇
-<a name="report-2506.18871v4"></a>BAAI                    <a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 …</a>   36.2%    25.7   2026-04-21    3% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 44.7
+task                    vs the others        rank  counts  tests
+text to image           ▁▂▇▇●▅█▇▂▃▁▁   #90 of 157     77%      3
+image to image / edit…  ▁▁▁●▂▃█▃▃▃▁▁   #73 of 81*     22%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #90 of 157 · 77% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX1.1 \[pro\]](flux-1-1-pro.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                975.3  ▂●▃▄▇█▄▂▄▂·▂ beats 5/75   avg 1027             50%  typical
+<a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                              66.9%  ██·●·▄·█···▄ beats 4/8    easy · avg 71%       18%  at its level
+<a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   59.2%  █··█▄▄·▄●·▄▄ beats 7/9    medium · avg 51%    8.9%  at its level
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #73 of 81 · 22% of its score</summary>
+
+Trails [Stable Diffusion 3.5 Large](sd-3-5-large.md), [OmniGen2](omnigen2.md), [BAGEL](bagel.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1080.8  ▂●▁▂▆▇█▄▆▅▁▂ beats 2/53   avg 1153             19%  typical
+<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   36.2%  ●▃▃··▃·····█ beats 0/6    medium · avg 65%    3.0%  at its level · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   69% ▇▇▇▇▇▇▇▇
+<a name="paper-2505.17613v2-mmmg"></a><a href="https://arxiv.org/html/2505.17613v2">MMMG: a Comprehensive and Reliable Benc…</a>        2   27% ▇▇▇
+<a name="report-2506.18871v4"></a><a href="https://arxiv.org/html/2506.18871v4">BAAI</a>                                            1    3% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 44.9
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MMMG: a Comprehensive and Reliable Benchmark for Multitask Multimodal Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BAAI ([CC BY 4.0](../../licenses/report-2506.18871v4.txt))</sub>
 

@@ -6,39 +6,89 @@
 
 Black Forest Labs · released 2025-11 · 32B params · flux-dev-nc
 
-**score 58.2** ±1.0 · #53 of 144 · from 18 benchmark results across 14 sources
+**score 58.3** ±1.0 · #53 of 144 · from 18 benchmark results across 14 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks FLUX.2 \[dev\] among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                              score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>    42.3%    56.3   2026-05-14   24% ▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            1145.6    62.5   2026-09-24   16% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                 1224.7    57.5   2026-09-30    6% ▇
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>    19.1%    58.7   2026-09-28   16% ▇▇
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>        52.2%    55.7   2026-05-13   12% ▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>    89.5%    59.5   2026-08-25    5% ▇
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>    87.2%    59.6   2026-07-12    4% ▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>    41.0%    54.6   2026-10-07    4% ▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>    87.6%    63.1   2026-06-23    2% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 repor…</a>  11.3800    57.5   2026-06-23    1% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese char…</a>    68.7%    64.2   2026-06-23    0% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-…</a>    85.0%    54.4   2026-06-23    0% ▇
-<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>    945.7    58.6   2026-10-01    2% ▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>      1006.0    56.4   2026-03-30    2% ▇
-<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>    53.1%    67.1   2026-06-05    2% ▇
-<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>     4.6%    51.5   2026-05-29    1% ▇
-<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>    29.9%    48.9   2026-03-26    1% ▇
-<a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>    36.9%    67.8   2026-04-24    1% ▇
-prior                   pull toward the middle                     49.9                 0% ▇
-                        weighted average                         = 58.2
+task                    vs the others        rank  counts  tests
+text to image           ▂▅▅▃▄▄●▃▁▂▁▁   #42 of 126     56%      9
+image to image / edit…  ▁▁·▃▂▃●▃▃▄▁▁    #40 of 62     20%      3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #42 of 126 · 56% of its score</summary>
+
+Beats [Wan 2.7 Image](wan-2-7-image.md), [Wan 2.5 Text-to-Image Preview](wan-2-5-t2i-preview.md), [Recraft V4](recraft-v4.md) here, though they rank higher overall.
+
+<pre>
+test                                 result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    42.3%  ▄█▂▂▂●▆▄·▂·▂ beats 9/16   hard · avg 26%       24%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1145.8  ▂▂▃▄▇●▄▂▄▂·▂ beats 41/75  avg 1027             15%  typical
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>     89.5%  ▄····▄█▄▄█▄● beats 10/10  easy · avg 82%      4.8%  typical
+<a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>    87.2%  ▂█····▄●▄··▂ beats 8/11   easy · avg 79%      4.4%  typical
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    41.0%  ▁▂▂●▃▁▂▃·▁·▁ beats 7/22   hard · avg 28%      4.3%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>     53.1%  ▄·█···▄●▄▄▄▄ beats 4/8    medium · avg 36%    2.0%  blunt · at its level
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.3800  ▄···●··▄·▄·▄ beats 2/5    avg 11.076          1.0%  blunt
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese characte…</a>    68.7%  ▄·······●█▄▄ beats 1/5    medium · avg 60%    0.3%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-prom…</a>    85.0%  █······●████ beats 1/5    easy · avg 85%      0.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #40 of 62 · 20% of its score</summary>
+
+Beats [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall. Trails [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [Qwen-Image-Edit](qwen-image-edit.md), [LongCat-Image-Edit](longcat-image-edit.md) here, though they rank lower overall.
+
+<pre>
+test                         result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>    52.2%  ▃▃▂·▃▆▂●·▃·▃ beats 13/20  hard · avg 45%     12%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1224.6  ▂▁▁▂▆●█▄▆▅▁▂ beats 14/53  avg 1153          5.9%  typical
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1006.0  ▃▂····▂●▂▃▂▃ beats 6/14   avg 956           2.3%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>   19.1%  ▃·█▅▃·●▃···▃ beats 8/10   very hard · avg 7.6%     16%  sharp
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   945.7  ▁▁▁▄●█▂▁▁▂▁▁ beats 9/34   avg 875                 2.4%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI prompts…</a>   87.6%  ▄···█··●···█ beats 3/5    easy · avg 78%          2.1%  typical
+<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    4.6%  ▃·····█●▃·▃▅ beats 4/9    very hard · avg 4.3%    1.3%  too hard for it
+<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   29.9%  ▂···▂·▂●▆▅·▂ beats 7/15   hard · avg 31%          0.9%  at its level
+<a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (Brie…</a>   36.9%  ▅·▃·▃··▃·█●▃ beats 8/9    hard · avg 28%          0.5%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   24% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   21% ▇▇▇
+<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   16% ▇▇
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   12% ▇
+<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1    5% ▇
+<a name="visual-tiif-bench"></a><a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench: How Does Your T2I Model Fol…</a>        1    4% ▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1    4% ▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T11">Cosmos 3: Omnimodal World Models for Ph…</a>        4    3% ▇
+<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    2% ▇
+<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    2% ▇
+<a name="visual-fepbench"></a><a href="https://arxiv.org/html/2606.05949v2#S4.T2">Faithful</a>                                        1    2% ▇
+<a name="visual-paintbench"></a><a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench: Deterministic Evaluation of…</a>        1    1% ▇
+<a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    1% ▇
+<a name="visual-knowledge-visualization"></a><a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization: A Benchmark an…</a>        1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 58.3
+</pre>
 
 <sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -50,23 +100,27 @@ api (Cloudflare) · $0.046/image · [developers.cloudflare.com](https://develope
 
 <pre>
 version                                     needs  score
-bf16 (cpu offload) · nvidia only          ~77.3GB   58.2
-nf4 (bnb-4bit DiT + text encoder) · nvi…  ~19.7GB   58.2
-mlx-int4 (Flux2CLI, Swift) · mac only     ~19.7GB   58.2
-gguf-q4_k_s + Mistral Small 3.2 q4_k_m …  ~41.3GB   58.2
+bf16 (cpu offload) · nvidia only          ~77.3GB   58.3
+nf4 (bnb-4bit DiT + text encoder) · nvi…  ~19.7GB   58.3
+mlx-int4 (Flux2CLI, Swift) · mac only     ~19.7GB   58.3
+gguf-q4_k_s + Mistral Small 3.2 q4_k_m …  ~41.3GB   58.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (cpu offload) · nvidia only
+# bf16 (cpu offload) · nvidia only · ~77.3GB
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2Pipeline; p=Flux2Pipeline.from_pretrained('black-forest-labs/FLUX.2-dev', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=28, guidance_scale=4).images[0].save('out.png')"
-# nf4 (bnb-4bit DiT + text encoder) · nvidia only
+# nf4 (bnb-4bit DiT + text encoder) · nvidia only · ~19.7GB
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import Flux2Pipeline; p=Flux2Pipeline.from_pretrained('diffusers/FLUX.2-dev-bnb-4bit', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=28, guidance_scale=4).images[0].save('out.png')"
-# mlx-int4 (Flux2CLI, Swift) · mac only
+# mlx-int4 (Flux2CLI, Swift) · mac only · ~19.7GB
 ./Flux2CLI t2i "a cat holding a sign" --model dev --transformer-quant int4
-# gguf-q4_k_s + Mistral Small 3.2 q4_k_m (sd.cpp)
+# gguf-q4_k_s + Mistral Small 3.2 q4_k_m (sd.cpp) · ~41.3GB
 sd-cli --diffusion-model models/flux2-dev-Q4_K_S.gguf --vae models/flux2_ae.safetensors --llm models/Mistral-Small-3.2-24B-Instruct-2506-Q4_K_M.gguf -p "a lovely cat" --cfg-scale 1.0 --sampling-method euler -v --diffusion-fa --offload-to-cpu
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/flux-2-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,74 +6,147 @@
 
 Z.ai · released 2025-07 · 355B params (32B active) · mit
 
-**score 64.8** ±0.7 · #150 of 934 · from 44 benchmark results across 7 sources
+**score 64.7** ±0.6 · #158 of 949 · from 52 benchmark results across 9 sources
+
+## What it's good at
+
+<sub>● marks GLM-4.5 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others         rank  counts  tests
+agent tasks     ▁▁▃▆█▆●▄▄▃▂▁   #127 of 334     18%     11
+coding          ▁▁▁▃▆██●▆▄▃▁   #146 of 469     10%      6
+chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #102 of 466    5.3%      2
+math            ▁▂▃▅▆▅▄●▄▁▁▁   #111 of 400     27%      4
+web search      ●▂▂▆▄█▃▃▁▁·▁    #79 of 81*    2.3%      1
+</pre>
+
+<details><summary>agent tasks · #127 of 334 · 18% of its score</summary>
+
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://arxiv.org/html/2508.06471v1">SWE-bench Verified (lab)</a>             64.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 61/131   hard · avg 24%         4.2%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Retail</a>                      69.3%  █···█·●·██·█ beats 2/5      medium · avg 36%       2.8%  at its level
+<a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                     26.4%  ▂·▄▁●▃▆▄█▂▃▄ beats 8/42     very hard · avg 12%    2.3%  at its level · small run · several runs
+<a href="https://arxiv.org/html/2508.06471v1">Terminal-Bench (pre-2.0 release) …</a>   37.5%  ▃·▃···▃▃▅·●█ beats 7/10     very hard · avg 15%    1.9%  at its level · small run · several runs
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Telecom</a>                     56.1%  █··██·●·█··█ beats 3/5      very hard · avg 10%    1.7%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>                 79.7%  ▁····▃·▂▇█▂● beats 25/28    medium · avg 45%       1.6%  small run
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Airline</a>                     66.0%  ▄·····█··▄·● beats 4/5      hard · avg 29%         1.3%  at its level
+<a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>                60.4%  ▁▁▁·▅▄▁█▇▁▁● beats 27/28    hard · avg 29%         1.1%  at its level · small run
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/score/data_overall.csv">BFCL V4 (2025-11-03 archive, mode…</a>   72.0%  ▃··▅▃▃·▅·▃·● beats 10/10    hard · avg 34%         0.8%  at its level
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">BFCL v3</a>                              79.1%  ▁▁▁▁▁▃▅█▆▅▄● beats 170/170  medium · avg 60%       0.7%  blunt · at its level · small run · seve…
+<a href="https://huggingface.co/zai-org/GLM-4.6/blob/be72194883d968d7923a07e2f61681ea9a2826d1/README.md">τ²-bench overall (weighted) (lab)</a>    67.5%  ●··········█ beats 0/1                                —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>coding · #146 of 469 · 10% of its score</summary>
+
+Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [Devstral Small 2 24B](devstral-small-2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2508.06471v1">SWE-bench Verified (lab)</a>             64.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 61/131  hard · avg 24%      4.2%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">LiveCodeBench (version unspecifie…</a>   61.1%  ●······▄█▄·▄ beats 0/5     medium · avg 39%    2.3%  at its level
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–May 20…</a>   64.5%  ▄▄·●·····█·▄ beats 2/5     medium · avg 45%    1.3%  at its level
+<a href="https://huggingface.co/zai-org/GLM-4.6/blob/be72194883d968d7923a07e2f61681ea9a2826d1/README.md">LiveCodeBench v6 (window unspecif…</a>   63.3%  ▂▃▄▄▅●█▅▄▇▃▆ beats 27/65   medium · avg 40%    1.1%  at its level · small run
+<a href="https://arxiv.org/html/2508.06471v1">SciCode (level unspecified) (lab)</a>    41.7%  ▁····▃▄▄▄█●▂ beats 26/34   hard · avg 19%      0.9%  at its level · small run
+<a href="https://arxiv.org/html/2508.06471v1">LiveCodeBench 2024-07 to 2025-01 …</a>   72.9%  █··········● beats 1/1                            —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #102 of 466 · 5.3% of its score</summary>
+
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [GPT-4.1](gpt-4-1.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
+
+<pre>
+test                        result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>              1411.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 257/379  avg 1268          3.4%  blunt
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">IFEval prompt-level strict</a>   85.4%  ●██··█·█···█ beats 0/5      easy · avg 74%    1.9%  several runs
+</pre>
+
+</details>
+
+<details><summary>math · #111 of 400 · 27% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [gpt-oss-120b](gpt-oss-120b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>                         85.8%  █···██●·█··█ beats 3/5    medium · avg 60%        10%  sharp · several runs
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025</a>                         83.3%  █·█···█●█··█ beats 3/5    medium · avg 51%        10%  sharp · several runs
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">HMMT 2025 (edition unspecified)</a>   76.3%  ▄··●··▄·▄··█ beats 1/5    hard · avg 29%         3.7%  sharp · at its level
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500</a>                          97.0%  ▄······▄▄●·█ beats 3/5    very easy · avg 91%    2.9%  maxed out · small run · several runs
+</pre>
+
+</details>
+
+<details><summary>web search · #79 of 81 · 2.3% of its score</summary>
+
+Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [GPT-4o Search Preview (2025-03-11)](gpt-4o-search-preview.md) here, though they rank lower overall.
+
+<pre>
+test              result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>   26.4%  ▂·▄▁●▃▆▄█▂▃▄ beats 8/42   very hard · avg 12%    2.3%  at its level · small run · several runs
+</pre>
+
+</details>
+
+<details><summary>other tests (17)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">GPQA Diamond</a>                         77.0%  █··██·●█···█ beats 3/5      hard · avg 42%           13%  sharp · at its level · several runs
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam</a>                 14.8%  ▄····▄·●·▄·▄ beats 3/5      very hard · avg 4.3%    6.4%  several runs
+<a href="https://arxiv.org/html/2508.06471v1">GPQA (subset unspecified) (lab)</a>      79.1%  ▂▁▂▂▄▃▆▃▅█●▃ beats 93/104   hard · avg 47%          4.6%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MMLU-Pro</a>                             81.5%  ●·▄···█·▄··▄ beats 0/5      medium · avg 56%        4.2%  several runs
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MMLU-Redux</a>                           89.9%  █●██··█····█ beats 1/5      medium · avg 73%        2.5%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1229.2  ▁·▂▁▄▅▅●█▄▁▁ beats 36/62    avg 1044                2.1%  typical
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">ZebraLogic</a>                           90.9%  ●█··█·██···█ beats 0/5      easy · avg 75%          2.0%  maxed out
+<a href="https://arxiv.org/html/2508.06471v1">MMLU (lab)</a>                           90.0%  ▁▁▁▁▁▂▃▅█▃▆● beats 179/183  medium · avg 72%        1.6%  small run
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">VitaBench</a>                            26.8%  █····██·●█·█ beats 3/5      very hard · avg 7.8%    1.5%  typical
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">OJBench</a>                              19.0%  ●······▄▄·▄█ beats 0/5      very hard · avg 12%     1.5%  at its level
+<a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench overall, text input (Z.…</a>   25.7%  ▄··▄●·▄▄█·▄▄ beats 2/8      very hard · avg 11%     1.3%  typical
+<a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                       26.4%  ▄▄▄▆█▆██●·▂█ beats 25/32    very hard · avg 7.7%    1.2%  small run
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">BeyondAIME</a>                           66.0%  █··●····▄··█ beats 2/5      medium · avg 41%        1.1%  at its level
+<a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>                 52.8%  ▁·▁·▁▃▆▅●▁█▅ beats 16/29    hard · avg 27%          0.9%  at its level · small run
+<a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">miniF2F (pass@1)</a>                     10.9%  ●█······▄··▄ beats 0/5      very hard · avg 13%     0.1%  blunt · at its level · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   96.3%  ▁▁▂▃▄▄█●▃▂▂▁ beats 93/140   very easy · avg 94%     0.1%  blunt · maxed out · noisy
+<a href="https://arxiv.org/html/2508.06471v1">SysBench (ISR) (lab)</a>                 81.0%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="card-meituan-longcat-flash-thinking"></a>Meituan LongCat-Flash…  <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">GPQA Diamond</a>                     78.3%    65.3   2025-09-24    7% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">AIME 2025</a>                        85.5%    63.8   2025-09-24    6% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">AIME 2024</a>                        89.3%    63.7   2025-09-24    5% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">HMMT 2025 (edition unspecifie…</a>   76.3%    65.8   2025-09-24    4% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MMLU-Pro</a>                         81.5%    64.7   2025-09-24    3% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MMLU-Redux</a>                       89.9%    65.2   2025-09-24    3% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Retail</a>                  69.3%    66.9   2025-09-24    3% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">LiveCodeBench (version unspec…</a>   61.1%    59.5   2025-09-24    3% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">ZebraLogic</a>                       90.9%    62.3   2025-09-24    2% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Telecom</a>                 56.1%    67.8   2025-09-24    2% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">OJBench</a>                          19.0%    57.5   2025-09-24    2% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">VitaBench</a>                        26.8%    68.2   2025-09-24    2% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">IFEval prompt-level strict</a>       85.4%    61.4   2025-09-24    1% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MATH-500</a>                         95.4%    54.3   2025-09-24    1% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">BeyondAIME</a>                       66.0%    68.4   2025-09-24    1% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Airline</a>                 66.0%    72.6   2025-09-24    1% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">BFCL v3</a>                          79.1%    74.4   2025-09-24    0% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">miniF2F (pass@1)</a>                 10.9%    52.7   2025-09-24    0% ▇
-<a name="report-2508.06471v1"></a>GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">AIME 2024 (lab)</a>                  91.0%    65.7   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">GPQA (subset unspecified) (la…</a>   79.1%    65.8   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">SWE-bench Verified (lab)</a>         64.2%    65.6   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MMLU (lab)</a>                       90.0%    63.3   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">Humanity's Last Exam (lab)</a>       14.4%    64.3   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MMLU-Pro (lab)</a>                   84.6%    65.8   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MATH-500 (lab)</a>                   98.2%    68.4   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>             79.7%    67.2   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 26.4%    59.6   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                   26.4%    67.5   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>            60.4%    67.2   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">Terminal-Bench (pre-2.0 relea…</a>   37.5%    68.2   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">SciCode (level unspecified) (…</a>   41.7%    67.1   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>             52.8%    66.0   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">IFEval prompt-level strict (l…</a>   86.1%    61.3   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">BFCL v3 (lab)</a>                    77.8%    69.4   2025-08-08    0% ▇
-<a name="primeintellect-intellect3-card-eval"></a>Prime Intellect INTEL…  <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">GPQA Diamond</a>                     77.0%    64.8   2025-11-27    8% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>                        85.8%    64.9   2025-11-27    4% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam</a>             14.8%    64.4   2025-11-27    4% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025</a>                        83.3%    65.1   2025-11-27    4% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–Ma…</a>   64.5%    61.4   2025-11-27    2% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500</a>                         97.0%    67.9   2025-11-27    0% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1411.3    67.2   2026-10-02    4% ▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1229.2    65.8   2026-05-10    2% ▇
-<a name="zai-rpc-bench-leaderboard"></a>RPC-Bench leaderboard   <a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench overall, text input…</a>   25.7%    66.0   2026-06-17    2% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   96.3%    59.9   2025-10-16    0% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 64.8
+source                                    results  share of the score
+<a name="card-meituan-longcat-flash-thinking"></a><a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">Meituan LongCat-Flash-Thinking model ca…</a>       18   41% ▇▇▇▇▇
+<a name="report-2508.06471v1"></a><a href="https://arxiv.org/html/2508.06471v1">GLM-4.5 Team (lab)</a>                             16   21% ▇▇▇
+<a name="primeintellect-intellect3-card-eval"></a><a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Prime Intellect INTELLECT-3 model card:…</a>        6   19% ▇▇
+<a name="card2-zai-org-glm-4-6"></a><a href="https://huggingface.co/zai-org/GLM-4.6/blob/be72194883d968d7923a07e2f61681ea9a2826d1/README.md">zai-org/GLM-4.6 model card (lab)</a>                7   11% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    3% ▇
+<a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1    2% ▇
+<a name="zai-rpc-bench-leaderboard"></a><a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench leaderboard (lab)</a>                     1    1% ▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 64.7
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<sub>Licences: Meituan LongCat-Flash-Thinking model card ([MIT](https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/LICENSE)) · GLM-4.5 Team ([CC BY 4.0](../../licenses/report-2508.06471v1.txt)) · Prime Intellect INTELLECT-3 model card: Evaluation table ([MIT](https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md)) · zai-org/GLM-4.6 model card ([MIT](../../licenses/zai-org--GLM-4.6.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · RPC-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
-<sub>Licences: Meituan LongCat-Flash-Thinking model card ([MIT](https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/LICENSE)) · GLM-4.5 Team ([CC BY 4.0](../../licenses/report-2508.06471v1.txt)) · Prime Intellect INTELLECT-3 model card: Evaluation table ([MIT](https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · RPC-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
-
-<details><summary>Not counted (5)</summary>
+<details><summary>Not counted (3)</summary>
 
 <pre>
 source                  test                            score  why
 GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">LiveCodeBench 2024-07 to 2025…</a>  72.9%  too few models have it yet
 GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">SysBench (ISR)</a>                  81.0%  too few models have it yet
-zai-org/GLM-4.6 model…  <a href="https://huggingface.co/zai-org/GLM-4.6/blob/be72194883d968d7923a07e2f61681ea9a2826d1/README.md">AIME 2025</a>                       85.4%  only model in this source's run
-zai-org/GLM-4.6 model…  <a href="https://huggingface.co/zai-org/GLM-4.6/blob/be72194883d968d7923a07e2f61681ea9a2826d1/README.md">LiveCodeBench v6 (window unsp…</a>  63.3%  too few models have it yet
 zai-org/GLM-4.6 model…  <a href="https://huggingface.co/zai-org/GLM-4.6/blob/be72194883d968d7923a07e2f61681ea9a2826d1/README.md">τ²-bench overall (weighted)</a>     67.5%  too few models have it yet
 </pre>
 
@@ -86,21 +159,58 @@ api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai]
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-4.5.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/zhipuai/glm-4.5.toml)</sub>
 
 <pre>
-download              size  score
-4-bit ud-q4_k_xl  ~213.5GB   64.8
-2-bit ud-q2_k_xl    ~107GB   64.8
-1-bit ud-iq1_s    ~53.75GB   64.8
+download                       size  score
+4-bit ud-q4_k_xl           ~213.5GB   64.7
+2-bit ud-q2_k_xl             ~107GB   64.7
+1-bit ud-iq1_s             ~53.75GB   64.7
+4-bit mlx-4bit · mac only  ~198.6GB   64.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit ud-q4_k_xl
-llama-server -hf unsloth/GLM-4.5-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/GLM-4.5-GGUF:UD-Q2_K_XL
-# 1-bit ud-iq1_s
-llama-server -hf unsloth/GLM-4.5-GGUF:UD-IQ1_S
+# 4-bit ud-q4_k_xl · ~213.5GB
+llama cli -hf unsloth/GLM-4.5-GGUF:UD-Q4_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/GLM-4.5-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl · ~107GB
+llama cli -hf unsloth/GLM-4.5-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/GLM-4.5-GGUF:UD-Q2_K_XL
+# 1-bit ud-iq1_s · ~53.75GB
+llama cli -hf unsloth/GLM-4.5-GGUF:UD-IQ1_S
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/GLM-4.5-GGUF:UD-IQ1_S
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit ud-q4_k_xl · ~213.5GB
+lms get https://huggingface.co/unsloth/GLM-4.5-GGUF@UD-Q4_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit ud-q2_k_xl · ~107GB
+lms get https://huggingface.co/unsloth/GLM-4.5-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 1-bit ud-iq1_s · ~53.75GB
+lms get https://huggingface.co/unsloth/GLM-4.5-GGUF@UD-IQ1_S -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~198.6GB
+lms get https://huggingface.co/mlx-community/GLM-4.5-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~198.6GB
+mlx_lm.chat --model mlx-community/GLM-4.5-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/GLM-4.5-4bit
+```
 
 [interactive version](https://whatmodel.sh/model/glm-4-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

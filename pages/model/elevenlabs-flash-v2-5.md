@@ -6,30 +6,60 @@
 
 ElevenLabs · released 2024-12 · proprietary
 
-**score 62.5** ±2.2 · #30 of 117 · from 7 benchmark results across 3 sources
+**score 62.5** ±2.0 · #30 of 118 · from 8 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Eleven Flash v2.5 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>     1191.0    59.5   2026-09-25   46% ▇▇▇▇▇▇
-<a name="speech-voxtral-tts-report"></a>Voxtral TTS             <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>      41.3%    63.4   2026-04-06   10% ▇
-                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>      53.8%    64.1   2026-04-06   10% ▇
-                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>       1.6%    72.5   2026-04-06    5% ▇
-                        <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>       0.9%    74.1   2026-04-06    5% ▇
-<a name="speech-rime-alpha-bench-ccby"></a>Rime Alpha TTS Benchm…  <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired hu…</a>  -0.12 / 2    64.4   2026-09-13   11% ▇
-                        <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired hu…</a>   0.16 / 2    63.3   2026-09-13   10% ▇
-prior                   pull toward the middle                       49.7                 2% ▇
-                        weighted average                           = 62.5
+task           vs the others     rank  counts  tests
+voice cloning  █···●······█   #2 of 3     25%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #2 of 3 · 25% of its score</summary>
 
-<sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · Voxtral TTS ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference ([CC BY 4.0](../../licenses/speech-rime-alpha-bench-ccby.txt))</sub>
+Beats [Eleven v3](elevenlabs-v3.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspecifi…</a>   41.3%  █●·········█ beats 1/2    hard · avg 22%    8.6%  at its level · small run
+<a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language speaker …</a>   53.8%  █●·········█ beats 1/2    hard · avg 31%    8.4%  at its level · small run
+<a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER (Vox…</a>    1.6%  █····█·····● beats 2/2    avg 5.4%          4.5%  small run
+<a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspecifi…</a>    0.9%  █··········● beats 2/2    avg 3.3%          3.9%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                   result  vs the others in its run  difficulty              counts  why
+<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>     1191.0  ▁···▁▃··●▄▁▇ beats 6/18   avg 1078                   37%  typical
+<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>     1225.4  ▃·▃▃▃·▃█●▃·▃ beats 8/12   avg 1080                   19%  typical
+<a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired human …</a>   0.16 / 2  ▄·▄········● beats 3/3    medium · avg -0.58 / 2    8.4%  at its level
+<a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired human …</a>  -0.12 / 2  █·······█·█● beats 3/3    hard · avg -0.90 / 2      7.9%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-vapi-humanness-20260925"></a><a href="https://humannessindex.vapi.ai/api/models">The Humanness Index by Vapi · September…</a>        1   37% ▇▇▇▇
+<a name="speech-voxtral-tts-report"></a><a href="https://arxiv.org/html/2603.25551v2">Voxtral TTS</a>                                     4   25% ▇▇▇
+<a name="speech-vapi-humanness-20260610"></a><a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">The Humanness Index by Vapi · June 2026…</a>        1   19% ▇▇
+<a name="speech-rime-alpha-bench-ccby"></a><a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime Alpha TTS Benchmark v1.0.0 · Suppo…</a>        2   16% ▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 62.5
+</pre>
+
+<sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · Voxtral TTS ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · The Humanness Index by Vapi · June 2026 production export ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference ([CC BY 4.0](../../licenses/speech-rime-alpha-bench-ccby.txt))</sub>
 
 ## How to run it
 

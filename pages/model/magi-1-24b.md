@@ -8,19 +8,37 @@ Sand AI · released 2025-04 · 24B params · apache-2.0
 
 **score 48.3** ±4.4 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks MAGI-1 24B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2512.01989v1-paibench"></a>PAI-Bench: A Comprehe…  <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference …</a>  988.9    48.7   2025-12-01   69% ▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video…</a>  79.4%    46.4   2025-12-01   23% ▇▇▇
-prior                   pull toward the middle                   49.9                 8% ▇
-                        weighted average                       = 48.3
+task            vs the others        rank  counts  tests
+image to video  ▁▁▂▂●█▄▃▃▄▂▂   #54 of 74*     92%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to video · #54 of 74 · 92% of its score</summary>
+
+Beats [HunyuanVideo 1.5](hunyuanvideo-1-5.md), [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>   988.9  ▄······█●··█ beats 3/6    avg 1002           69%  typical
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   79.4%  ▃······▅·●▅█ beats 3/10   easy · avg 81%     23%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        2   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 48.3
+</pre>
 
 <sub>Licences: PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

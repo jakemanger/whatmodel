@@ -6,20 +6,38 @@
 
 PixVerse · released 2025-12 · closed weights
 
-**score 51.6** ±10.1 · #49 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.6** ±10.0 · #49 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks PixVerse 5.5 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others        rank  counts  tests
+text to video  ▆▄▃▄▆●█▃▂▂▂▄   #31 of 68*     57%      1
+</pre>
+
+<details><summary>text to video · #31 of 68 · 57% of its score</summary>
+
+Beats [Kling 2.1 Master](kling-2-1-master.md) here, though they rank higher overall.
+
+<pre>
+test              result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   85.5%  ▂··▂··●▄▂··▆ beats 3/11   easy · avg 84%     57%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>        85.5%    52.9   2026-04-22   57% ▇▇▇▇▇▇▇
-prior                   pull toward the middle           49.9                43% ▇▇▇▇▇
-                        weighted average               = 51.6
+source                                    results  share of the score
+<a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1   57% ▇▇▇▇▇▇▇
+prior: pull toward the middle                       43% ▇▇▇▇▇
+weighted average                                   = 51.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 

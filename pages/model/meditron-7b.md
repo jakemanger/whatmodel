@@ -6,36 +6,104 @@
 
 EPFL LLM · released 2023-11 · 6.74B params · llama2
 
-**score 17.5** ±5.6 · #910 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 18.3** ±5.7 · #922 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Meditron 7B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>    9.5%  ●▁▁▁▁▂▂▃▄▆█▃ beats 0/97   hard · avg 32%       66%  blunt
+<a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   27.1%  ●···▂▂·▃▂▃██ beats 0/17   medium · avg 53%     19%  too hard for it
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   9.5%    13.6   2025-04-28   69% ▇▇▇▇▇▇▇▇
-<a name="paper-2606.08071v1-surgiq"></a>SurgiQ: A Large-Scale…  <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-sho…</a>  27.1%     6.8   2026-06-06   17% ▇▇
-prior                   pull toward the middle                   50.0                14% ▇▇
-                        weighted average                       = 17.5
+source                                    results  share of the score
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1   66% ▇▇▇▇▇▇▇▇
+<a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1   19% ▇▇
+prior: pull toward the middle                       14% ▇▇
+weighted average                                   = 18.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-16-bit bf16  ~13.48GB   17.5
+download                       size  score
+16-bit bf16                ~13.48GB   18.3
+4-bit Q4_K_M                 ~4.1GB   18.3
+8-bit Q8_0                   ~7.2GB   18.3
+4-bit mlx-4bit · mac only    ~3.8GB   18.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='epfl-llm/meditron-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~4.1GB
+llama cli -hf TheBloke/meditron-7B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/meditron-7B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.2GB
+llama cli -hf TheBloke/meditron-7B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/meditron-7B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.1GB
+lms get https://huggingface.co/TheBloke/meditron-7B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~7.2GB
+lms get https://huggingface.co/TheBloke/meditron-7B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~3.8GB
+lms get https://huggingface.co/mlx-community/meditron-7b -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.1GB
+ollama run hf.co/TheBloke/meditron-7B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.2GB
+ollama run hf.co/TheBloke/meditron-7B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~3.8GB
+mlx_lm.chat --model mlx-community/meditron-7b
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/meditron-7b
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~13.48GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='epfl-llm/meditron-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/meditron-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -8,22 +8,54 @@ Kuaishou · released 2025-09 · closed weights
 
 **score 57.1** ±1.8 · #33 of 93 · from 5 benchmark results across 4 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Kling 2.5 Turbo Pro among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1219.8    56.2   2026-09-22   54% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1275.6    58.4   2026-09-22   36% ▇▇▇▇
-<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>   59.4%    60.5   2026-09-10    5% ▇
-<a name="visual-v-reasonbench"></a>V-ReasonBench: Toward…  <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>   11.3%    41.0   2025-11-20    2% ▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                 90.8%    70.6   2026-04-22    2% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 57.1
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄▆▅●▃▂▂▂▄   #20 of 68*     56%      2
+image to video  ▁▂·▂▅█●▄▅▆▃▄    #29 of 50     43%      3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #20 of 68 · 56% of its score</summary>
+
+Beats [Kling 2.6 Pro](kling-2-6-pro.md), [Cosmos3-Super](cosmos3-super.md) here, though they rank higher overall.
+
+<pre>
+test              result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>     1219.8  ▂▂▃▆█●·▆▅▁▂▇ beats 19/41  avg 1147           54%  typical
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   90.8%  ▂··▂··█▄▂··● beats 9/11   easy · avg 84%    1.6%  blunt
+</pre>
+
+</details>
+
+<details><summary>image to video · #29 of 50 · 43% of its score</summary>
+
+Beats [Seedance 1.5 Pro](seedance-1-5-pro.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md), [Seedance 1.0 Pro](seedance-1-0-pro.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1275.6  ▁▁▁▁▄▇●▆▃▂▄█ beats 17/40  avg 1189             36%  typical
+<a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video reason…</a>   59.4%  █··●······▄█ beats 2/5    medium · avg 50%    5.4%  at its level
+<a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>       11.3%  ●·····▄···▄▄ beats 1/4    hard · avg 17%      1.8%  noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-vwg-bench"></a><a href="https://arxiv.org/html/2609.11242v1#S4.T2">From Evaluation to Enhancement: Benchma…</a>        1    5% ▇
+<a name="visual-v-reasonbench"></a><a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench: Toward Unified Reasoning…</a>        1    2% ▇
+<a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    2% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 57.1
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) · V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 

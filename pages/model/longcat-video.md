@@ -8,21 +8,59 @@ Meituan · released 2025-10 · 13.6B params · mit
 
 **score 51.1** ±2.4 · #50 of 93 · from 4 benchmark results across 4 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LongCat-Video among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  904.0    51.4   2026-05-11   67% ▇▇▇▇▇▇▇▇
-<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>  22.2%    50.7   2026-09-30   14% ▇▇
-<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>  81.1%    48.5   2026-08-06    9% ▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  45.4%    52.2   2026-08-10    8% ▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 51.1
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄▆●█▃▂▂▂▄   #33 of 68*    7.5%      1
+image to video  ▁▂·▂●█▅▄▅▆▃▄   #40 of 50*     67%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #33 of 68 · 7.5% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   45.4%  ▅·▃●▃·▅▃▅▃▃▃ beats 5/14   hard · avg 44%    7.5%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>image to video · #40 of 50 · 67% of its score</summary>
+
+Beats [HunyuanVideo 1.5](hunyuanvideo-1-5.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   904.0  ▃▃··●··▃▃▃·▃ beats 2/8    avg 875        67%  sharp
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   22.2%  ▅·▃●·█·▃···▃ beats 3/9    hard · avg 21%     14%  typical
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   81.1%  █▄·●█▄▄····▄ beats 3/8    easy · avg 82%    9.1%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   67% ▇▇▇▇▇▇▇▇
+<a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1   14% ▇▇
+<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1    9% ▇
+<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    8% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 51.1
+</pre>
 
 <sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
 
@@ -37,11 +75,15 @@ version                needs  score
 bf16 · nvidia only  ~100.4GB   51.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~100.4GB
 git clone https://github.com/meituan-longcat/LongCat-Video && cd LongCat-Video && pip install torch==2.6.0+cu124 torchvision==0.21.0+cu124 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124 && pip install ninja psutil packaging && pip install flash_attn==2.7.4.post1 && pip install -r requirements.txt && pip install "huggingface_hub[cli]" && huggingface-cli download meituan-longcat/LongCat-Video --local-dir ./weights/LongCat-Video && torchrun run_demo_text_to_video.py --checkpoint_dir=./weights/LongCat-Video --enable_compile
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/longcat-video) · [JSON](https://whatmodel.sh/api?format=json&all=1)

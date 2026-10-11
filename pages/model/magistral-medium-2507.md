@@ -6,23 +6,60 @@
 
 Mistral · released 2025-07 · proprietary
 
-**score 55.3** ±1.5 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.2** ±1.5 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Magistral Medium 1.1 (2507) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▃●······▃·▃▃       #5 of 7*     11%      1
+math    ▁▂▃▅▇●▅█▄▁▁▁   #228 of 464*     58%      2
+</pre>
+
+<details><summary>coding · #5 of 7 · 11% of its score</summary>
+
+Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   59.4%  ▄●▄······▄·▄ beats 2/5    medium · avg 50%     11%  at its level
+</pre>
+
+</details>
+
+<details><summary>math · #228 of 464 · 58% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [OpenThinker2 7B](openthinker2-7b.md) here, though they rank lower overall.
+
+<pre>
+test             result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   61.0%  ●▃·····▃···▃ beats 0/5    medium · avg 49%     32%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>   72.0%  ●▃·····▃···▃ beats 2/5    medium · avg 60%     26%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>   71.5%  █·█·██●····█ beats 4/5    medium · avg 53%     30%  sharp · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                 61.0%    53.9   2025-09-17   33% ▇▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>              71.5%    57.9   2025-09-17   30% ▇▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>                 72.0%    54.4   2025-09-17   26% ▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>  59.4%    55.4   2025-09-17   10% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 55.3
+source                                    results  share of the score
+<a name="card2-mistralai-magistral-small-2509"></a><a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">mistralai/Magistral-Small-2509 model ca…</a>        4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 55.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt))</sub>
 

@@ -6,23 +6,50 @@
 
 Tencent · released 2026-01 · 80B params · tencent-hunyuan-community
 
-**score 61.9** ±3.1 · #33 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 62.2** ±3.1 · #32 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks HunyuanImage 3.0-Instruct among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1302.7    66.5   2026-09-30   52% ▇▇▇▇▇▇
-<a name="visual-infoedit"></a>InfoEdit: Probing Glo…  <a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing …</a>    3.2%    57.6   2026-09-27   43% ▇▇▇▇▇
-prior                   pull toward the middle                    49.9                 4% ▇
-                        weighted average                        = 61.9
+task                    vs the others        rank  counts  tests
+image to image / edit…  ▁▁·▃▂▃█●▃▄▁▁   #22 of 62*     54%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #22 of 62 · 54% of its score</summary>
+
+Beats [Seedream 4.5](seedream-4-5.md), [FLUX.2 \[max\]](flux-2-max.md), [Wan 2.7 Image Pro](wan-2-7-image-pro.md) here, though they rank higher overall.
+
+<pre>
+test              result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1302.7  ▂▁▁▂▆▇●▄▆▅▁▂ beats 31/53  avg 1153       54%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing (ave…</a>    3.2%  ▄··●█····▄▄▄ beats 1/6    very hard · avg 1.4%     42%  sharp · too hard for it
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   54% ▇▇▇▇▇▇
+<a name="visual-infoedit"></a><a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit: Probing Global Layout Reasoni…</a>        1   42% ▇▇▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 62.2
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · InfoEdit: Probing Global Layout Reasoning in Infographic Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -34,14 +61,18 @@ api (fal.ai) · $0.090/image · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-im
 
 <pre>
 version                                      needs  score
-bf16 (official, multi-GPU) · nvidia only  ~202.7GB   61.9
+bf16 (official, multi-GPU) · nvidia only  ~202.7GB   62.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (official, multi-GPU) · nvidia only
+# bf16 (official, multi-GPU) · nvidia only · ~202.7GB
 git clone https://github.com/Tencent-Hunyuan/HunyuanImage-3.0.git && cd HunyuanImage-3.0 && pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128 && pip install -r requirements.txt && hf download tencent/HunyuanImage-3.0-Instruct --local-dir ./HunyuanImage-3-Instruct && python3 -c "from transformers import AutoModelForCausalLM; m=AutoModelForCausalLM.from_pretrained('./HunyuanImage-3-Instruct', attn_implementation='sdpa', trust_remote_code=True, torch_dtype='auto', device_map='auto', moe_impl='eager', moe_drop_tokens=True); m.load_tokenizer('./HunyuanImage-3-Instruct'); cot,s=m.generate_image(prompt='Make a new fridge magnet from the logo in image 1 using the fridge-magnet material in image 2', image=['./assets/demo_instruct_imgs/input_1_0.png','./assets/demo_instruct_imgs/input_1_1.png'], seed=42, image_size='auto', use_system_prompt='en_unified', bot_task='think_recaption', infer_align_image_size=True, diff_infer_steps=50, verbose=2); s[0].save('image_edit.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hunyuanimage-3-0-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

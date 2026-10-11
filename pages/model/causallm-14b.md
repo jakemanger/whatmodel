@@ -6,21 +6,39 @@
 
 CausalLM · released 2023-10 · wtfpl
 
-**score 39.4** ±2.0 · #712 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.4** ±2.0 · #722 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks CausalLM 14B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #392 of 466*     98%      2
+</pre>
+
+<details><summary>chat &amp; writing · #392 of 466 · 98% of its score</summary>
+
+Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       15.7%  ▁▂▂▃▆●█▆▄▄▁▁ beats 40/122  medium · avg 39%        87%  typical
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   88.3%  ▂▂·▆·▇▃▆●▆▄▂ beats 27/45   very easy · avg 96%     11%  sharp · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  15.7%    39.0   2025-08-09   88% ▇▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  88.3%    41.3   2025-08-09   11% ▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 39.4
+source                               results  share of the score
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   2% ▇
+weighted average                              = 39.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -29,13 +47,52 @@ prior                   pull toward the middle                   50.0           
 <pre>
 download         size  score
 16-bit bf16  ~28.33GB   39.4
+4-bit Q4_0     ~8.2GB   39.4
+8-bit Q8_0    ~15.1GB   39.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CausalLM/14B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_0 · ~8.2GB
+llama cli -hf TheBloke/CausalLM-14B-GGUF:Q4_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/CausalLM-14B-GGUF:Q4_0
+# 8-bit Q8_0 · ~15.1GB
+llama cli -hf TheBloke/CausalLM-14B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/CausalLM-14B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_0 · ~8.2GB
+lms get https://huggingface.co/TheBloke/CausalLM-14B-GGUF@Q4_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~15.1GB
+lms get https://huggingface.co/TheBloke/CausalLM-14B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_0 · ~8.2GB
+ollama run hf.co/TheBloke/CausalLM-14B-GGUF:Q4_0
+# 8-bit Q8_0 · ~15.1GB
+ollama run hf.co/TheBloke/CausalLM-14B-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~28.33GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CausalLM/14B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/causallm-14b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

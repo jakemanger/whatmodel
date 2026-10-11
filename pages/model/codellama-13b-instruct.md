@@ -6,33 +6,73 @@
 
 Meta · released 2023-08 · 13.02B params · llama2
 
-**score 38.5** ±0.7 · #728 of 934 · from 14 benchmark results across 5 sources
+**score 38.5** ±0.7 · #738 of 949 · from 14 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Code Llama 13B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁▃●██▇▆▄▃▁    #386 of 469     65%      6
+math    ▁▂●▅▆▅▄█▄▁▁▁   #370 of 400*    2.5%      1
+</pre>
+
+<details><summary>coding · #386 of 469 · 65% of its score</summary>
+
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                            48.8%  ▁█▄▅▇●·▄▇▅▄▄ beats 19/42  easy · avg 78%          37%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   39.4%  ▁·▂▁▂▆▅●▄▄▁▂ beats 17/35  medium · avg 64%       8.4%  at its level
+<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                           49.4%  ▃▃▃●··▃▅··▅▃ beats 5/11   easy · avg 73%         5.9%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   27.7%  ▄▇█▃▄●▄▁▇▃·▁ beats 23/35  medium · avg 49%       5.0%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   15.8%  ▁·▁▁▄█●▄█▁▅▅ beats 15/35  medium · avg 56%       4.6%  sharp
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            69.2%  ▃▃▃·▆▃▃●▃▂▂▅ beats 17/25  very easy · avg 86%    3.7%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>math · #370 of 400 · 2.5% of its score</summary>
+
+Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md), [OLMo 2 1B Instruct (0425)](olmo-2-1b.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+
+<pre>
+test   result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   23.0%  ▆▂●█▅▅▃▆···▂ beats 6/25   easy · avg 73%    2.5%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    33.8%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 23/42  medium · avg 55%     12%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       48.0%  ▁·····▂●▂▅·▁ beats 7/25   easy · avg 77%      7.2%  sharp · at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              29.7%  ▂▁▁●▂▅▇█▆▂▂▂ beats 11/58  medium · avg 50%    5.0%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>              28.2%  ▃▂·●▆██▆▅▃▃▃ beats 4/33   medium · avg 41%    4.7%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 43.3%  ▁▁▃●▄█▄▁█··▁ beats 4/25   easy · avg 74%      2.6%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   37.8%  ▂··▁●▂▂▂█▅▁▂ beats 4/25   medium · avg 61%    0.8%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       48.8%    39.7   2024-03-28   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               33.8%    40.7   2024-03-28   12% ▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 42.7%    38.6   2024-01-31   13% ▇▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      49.4%    37.6   2024-01-31    6% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  39.4%    38.1   2024-05-07    8% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  27.7%    40.4   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  15.8%    35.3   2024-05-07    5% ▇
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  48.0%    36.3   2023-11-20    8% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       69.2%    41.6   2023-11-20    4% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           23.0%    31.5   2023-11-20    3% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            43.3%    32.7   2023-11-20    3% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  37.8%    31.0   2023-11-20    1% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         29.7%    36.2   2025-04-01    5% ▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         28.2%    41.2   2025-04-01    5% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 38.5
+source                                    results  share of the score
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   36% ▇▇▇▇
+<a name="paper-2308.12950v3"></a><a href="https://arxiv.org/html/2308.12950v3">Code Llama: Open Foundation Models for …</a>        2   19% ▇▇
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        3   18% ▇▇
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                          5   17% ▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              2   10% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 38.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -41,18 +81,65 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://arxiv.org/abs/2308.12950v3): Context length from the maker's technical report.</sub>
 
 <pre>
-download        size  score
-4-bit q4_k_m  ~7.9GB   38.5
-8-bit q8_0     ~14GB   38.5
+download                      size  score
+4-bit q4_k_m                ~7.9GB   38.5
+8-bit q8_0                   ~14GB   38.5
+4-bit Q4_K_M                ~7.9GB   38.5
+8-bit Q8_0                 ~13.8GB   38.5
+4-bit mlx-8bit · mac only  ~13.8GB   38.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run codellama:13b-instruct-q4_K_M
-# 8-bit q8_0
-ollama run codellama:13b-instruct-q8_0
+# 4-bit Q4_K_M · ~7.9GB
+llama cli -hf TheBloke/CodeLlama-13B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/CodeLlama-13B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+llama cli -hf TheBloke/CodeLlama-13B-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/CodeLlama-13B-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~7.9GB
+lms get https://huggingface.co/TheBloke/CodeLlama-13B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~13.8GB
+lms get https://huggingface.co/TheBloke/CodeLlama-13B-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~13.8GB
+lms get https://huggingface.co/mlx-community/CodeLlama-13b-Instruct-hf-8bit-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~7.9GB
+ollama run codellama:13b-instruct-q4_K_M
+# 8-bit q8_0 · ~14GB
+ollama run codellama:13b-instruct-q8_0
+# 4-bit Q4_K_M · ~7.9GB
+ollama run hf.co/TheBloke/CodeLlama-13B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+ollama run hf.co/TheBloke/CodeLlama-13B-Instruct-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-8bit · mac only · ~13.8GB
+mlx_lm.chat --model mlx-community/CodeLlama-13b-Instruct-hf-8bit-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/CodeLlama-13b-Instruct-hf-8bit-mlx
+```
 
 [interactive version](https://whatmodel.sh/model/codellama-13b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

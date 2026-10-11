@@ -6,22 +6,60 @@
 
 NVIDIA · released 2026-08 · 31.6B params (3.6B active) · openmdw-1.1
 
-**score 61.9** ±2.3 · #188 of 934 · from 3 benchmark results across 2 sources
+**score 62.2** ±2.2 · #187 of 949 · from 3 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Nemotron 3.5 Lightning 30B-A3B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃▆██▇●▄▃▁   #127 of 469*     37%      1
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #165 of 466*     42%      1
+</pre>
+
+<details><summary>coding · #127 of 469 · 37% of its score</summary>
+
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   52.9%  ▁▁▁▁·▁▂●▅▃█▇ beats 11/49  hard · avg 18%     37%  at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #165 of 466 · 42% of its score</summary>
+
+Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1349.5  ▁▁▁▂▃▃▃▆●▇█▃ beats 194/379  avg 1268       42%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   87.7%  ▁▁▃●█▄▃▃▆▂▂▂ beats 7/49   easy · avg 78%     19%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   52.9%    65.8   2026-09-07   34% ▇▇▇▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   87.7%    61.0   2026-09-07   20% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1349.5    59.8   2026-10-02   43% ▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 61.9
+source                         results  share of the score
+<a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>               2   56% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   42% ▇▇▇▇▇
+prior: pull toward the middle             2% ▇
+weighted average                        = 62.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -33,20 +71,75 @@ api (Fireworks AI) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [
 
 <pre>
 download                        size  score
-4-bit q4_k_m                ~19.46GB   61.9
-8-bit q8_0                  ~38.42GB   61.9
-4-bit mlx-nvfp4 · mac only  ~19.46GB   61.9
+4-bit q4_k_m                ~19.46GB   62.2
+8-bit q8_0                  ~38.42GB   62.2
+4-bit mlx-nvfp4 · mac only  ~19.46GB   62.2
+4-bit Q4_K_M                 ~25.5GB   62.2
+8-bit Q8_0                     ~35GB   62.2
+4-bit mlx-4bit · mac only    ~17.8GB   62.2
+4-bit mlx-8bit · mac only    ~33.6GB   62.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run nemotron-3.5-lightning:30b
-# 8-bit q8_0
-ollama run nemotron-3.5-lightning:30b-a3b-q8_0
-# 4-bit mlx-nvfp4 · mac only
-ollama run nemotron-3.5-lightning:30b-a3b-mlx
+# 4-bit Q4_K_M · ~25.5GB
+llama cli -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~35GB
+llama cli -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~25.5GB
+lms get https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~35GB
+lms get https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~17.8GB
+lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~33.6GB
+lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~19.46GB
+ollama run nemotron-3.5-lightning:30b
+# 8-bit q8_0 · ~38.42GB
+ollama run nemotron-3.5-lightning:30b-a3b-q8_0
+# 4-bit mlx-nvfp4 · mac only · ~19.46GB
+ollama run nemotron-3.5-lightning:30b-a3b-mlx
+# 4-bit Q4_K_M · ~25.5GB
+ollama run hf.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~35GB
+ollama run hf.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~17.8GB
+mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit
+# 4-bit mlx-8bit · mac only · ~33.6GB
+mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/nemotron-3-5-lightning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

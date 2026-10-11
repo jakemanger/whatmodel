@@ -6,23 +6,48 @@
 
 Google · released 2022-10 · 0.783B params · apache-2.0
 
-**score 26.9** ±1.9 · #869 of 934 · from 4 benchmark results across 2 sources
+**score 26.6** ±1.9 · #883 of 949 · from 4 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Flan-T5 Large among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others      rank  counts  tests
+math  ██·●···█···█   #3 of 5*     19%      1
+</pre>
+
+<details><summary>math · #3 of 5 · 19% of its score</summary>
+
+<pre>
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    0.7%  ●·▁·▁··▂▄█▄▄ beats 2/26   hard · avg 22%     19%  too hard for it
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 37.5%  ▁▁▁▁▂●▅▅█▃▄▁ beats 19/129  easy · avg 80%          45%  sharp
+<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           45.1%  ▁▁▁▁▁▂●▅█▃▆▃ beats 28/183  easy · avg 82%          29%  typical
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   81.7%  ▁●▂▃▄▄█▆▃▂▂▁ beats 6/140   very easy · avg 94%    4.9%  blunt · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>            37.5%    28.5   2022-12-06   44% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                      45.1%    28.8   2022-12-06   30% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>                       0.7%    18.6   2022-12-06   19% ▇▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  81.7%    25.2   2025-10-16    5% ▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 26.9
+source                                    results  share of the score
+<a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        3   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    5% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 26.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -30,14 +55,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp32  ~3.13GB   26.9
+4-bit fp32  ~3.13GB   26.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp32
+# 4-bit fp32 · ~3.13GB
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-large')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/flan-t5-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

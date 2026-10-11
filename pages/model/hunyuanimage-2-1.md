@@ -6,23 +6,50 @@
 
 Tencent · released 2025-09 · 17B params · tencent-hunyuan-community
 
-**score 57.8** ±2.3 · #55 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 57.8** ±2.3 · #56 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks HunyuanImage 2.1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>  18.8%    58.6   2026-09-28   81% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>  49.8%    55.2   2026-06-09   16% ▇▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 57.8
+task           vs the others         rank  counts  tests
+text to image  ▂▅▅▃▄●█▃▁▂▁▁   #57 of 126*     16%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #57 of 126 · 16% of its score</summary>
+
+Trails [LLaDA-Image](llada-image.md), [Z-Image-Turbo](z-image-turbo.md), [Qwen-Image-2512](qwen-image-2512.md) here, though they rank lower overall.
+
+<pre>
+test                              result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>   49.8%  ▄·····●█▄·▄█ beats 1/7    medium · avg 41%     16%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>   18.8%  ▃·█▅▃·●▃···▃ beats 7/10   very hard · avg 7.6%     81%  sharp
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-imagetime"></a><a href="https://arxiv.org/html/2606.10620v1#S5.T5">Can Image Models Imagine Time? ImageTim…</a>        1   16% ▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 57.8
+</pre>
 
 <sub>Licences: Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt))</sub>
 
@@ -37,11 +64,15 @@ version               needs  score
 bf16 · nvidia only  ~64.2GB   57.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~64.2GB
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import HunyuanImagePipeline; p=HunyuanImagePipeline.from_pretrained('hunyuanvideo-community/HunyuanImage-2.1-Diffusers', torch_dtype=torch.bfloat16).to('cuda:0'); p('a cute cartoon penguin plush toy painting the Mona Lisa in a studio', num_inference_steps=50, height=2048, width=2048, generator=torch.Generator(device='cuda:0').manual_seed(649151)).images[0].save('out.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hunyuanimage-2-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

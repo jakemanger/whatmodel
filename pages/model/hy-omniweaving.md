@@ -8,21 +8,38 @@ Tencent · released 2026-03 · 8.3B params · tencent-hy-community
 
 **score 52.4** ±4.0 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks HY-OmniWeaving among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>   84.0%    54.2   2026-08-06   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric…</a>   79.9%    55.0   2026-08-06   23% ▇▇▇
-<a name="visual-wrop-object-permanence"></a>Training Object Perma…  <a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (…</a>  1268.5    46.6   2026-09-23   29% ▇▇▇
-<a name="visual-phyground"></a>PhyGround: Benchmarki…  <a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evalu…</a>   62.0%    57.4   2026-05-11   17% ▇▇
-prior                   pull toward the middle                    49.9                 7% ▇
-                        weighted average                        = 52.4
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (huma…</a>  1268.5  ●····██···▄█ beats 0/7    avg 1299             29%  noisy
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   84.0%  █▄·▄●▄▄····▄ beats 4/8    easy · avg 82%       25%  blunt
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric-gro…</a>   79.9%  █··▄●▄▄····▄ beats 3/6    easy · avg 77%       23%  blunt
+<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   62.0%  █▄▄··▄···●·█ beats 5/7    medium · avg 57%     17%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        2   48% ▇▇▇▇▇▇
+<a name="visual-wrop-object-permanence"></a><a href="https://arxiv.org/html/2609.28654v1#S5.T2">Training Object Permanence in World Mod…</a>        1   29% ▇▇▇
+<a name="visual-phyground"></a><a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround: Benchmarking Physical Reason…</a>        1   17% ▇▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 52.4
+</pre>
 
 <sub>Licences: VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Training Object Permanence in World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

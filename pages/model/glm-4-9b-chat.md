@@ -6,26 +6,59 @@
 
 Zhipu AI (Z.ai) · released 2024-06 · 9.4B params · glm-4
 
-**score 47.4** ±1.9 · #504 of 934 · from 7 benchmark results across 7 sources
+**score 47.2** ±1.8 · #514 of 949 · from 8 benchmark results across 7 sources
+
+## What it's good at
+
+<sub>● marks GLM-4 9B Chat among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others         rank  counts  tests
+agent tasks  ▁▁●▆█▆▅▄▄▃▂▁   #317 of 334     20%      3
+</pre>
+
+<details><summary>agent tasks · #317 of 334 · 20% of its score</summary>
+
+Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-08-26/score/data_overall.csv">BFCL V4 (2025-08-26 archive, mode…</a>   21.2%  ▄●····█▄···▄ beats 1/5     hard · avg 27%      7.8%  typical
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              39.1%  ▁▁▁▁●▃▅█▅▄▁▁ beats 12/114  medium · avg 52%    6.5%  blunt · at its level
+<a href="https://arxiv.org/html/2406.12793v2#S3.T7">BFCL (version not stated) (lab)</a>      81.0%  █·········●█ beats 2/5     easy · avg 78%      5.6%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                          result  vs the others in its run    difficulty           counts  why
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  39.0990 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 28/52    avg 45.199 WB-Score     33%  sharp
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             59.0%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 28/95    easy · avg 66%          21%  at its level
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                61.8%  ▁··▁▁▂▂▆▅●█▆ beats 43/70    medium · avg 64%        17%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             75.0%  ▃▁▁▁▁▁▁▁▂█●▁ beats 225/276  medium · avg 73%       6.4%  at its level · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>             98.7%  ▁▁▂▃▄▄█▆▃▂●▁ beats 133/140  very easy · avg 94%    2.0%  blunt · maxed out · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                       score  implies  date        weight
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  39.0990 WB-Score    46.6   2024-08-01   33% ▇▇▇▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>             59.0%    45.4   2026-08-11   23% ▇▇▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>             61.8%    49.3   2025-03-01   17% ▇▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                                    39.1%    38.8   2025-06-14    8% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             75.0%    51.8   2024-06-05    7% ▇
-<a name="paper-2406.12793v2-chatglm"></a>ChatGLM: A Family of …  <a href="https://arxiv.org/html/2406.12793v2#S3.T7">BFCL (version not stated) (la…</a>             81.0%    51.6   2024-07-30    7% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>             98.7%    64.9   2025-10-16    3% ▇
-prior                   pull toward the middle                              50.0                 2% ▇
-                        weighted average                                  = 47.4
+source                                    results  share of the score
+<a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                   1   33% ▇▇▇▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   21% ▇▇
+<a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>          1   17% ▇▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-08-26/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   14% ▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    6% ▇
+<a name="paper-2406.12793v2-chatglm"></a><a href="https://arxiv.org/html/2406.12793v2#S3.T7">ChatGLM: A Family of Large Language Mod…</a>        1    6% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    2% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 47.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -35,17 +68,51 @@ prior                   pull toward the middle                              50.0
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~6.14GB   47.4
-8-bit q8_0    ~11.78GB   47.4
+4-bit q4_k_m   ~6.14GB   47.2
+8-bit q8_0    ~11.78GB   47.2
+4-bit Q4_K_M    ~6.3GB   47.2
+8-bit Q8_0       ~10GB   47.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run glm4:9b-chat-q4_K_M
-# 8-bit q8_0
-ollama run glm4:9b-chat-q8_0
+# 4-bit Q4_K_M · ~6.3GB
+llama cli -hf bartowski/glm-4-9b-chat-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/glm-4-9b-chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~10GB
+llama cli -hf bartowski/glm-4-9b-chat-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/glm-4-9b-chat-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~6.3GB
+lms get https://huggingface.co/bartowski/glm-4-9b-chat-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~10GB
+lms get https://huggingface.co/bartowski/glm-4-9b-chat-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~6.14GB
+ollama run glm4:9b-chat-q4_K_M
+# 8-bit q8_0 · ~11.78GB
+ollama run glm4:9b-chat-q8_0
+# 4-bit Q4_K_M · ~6.3GB
+ollama run hf.co/bartowski/glm-4-9b-chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~10GB
+ollama run hf.co/bartowski/glm-4-9b-chat-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/glm-4-9b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

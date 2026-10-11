@@ -6,35 +6,79 @@
 
 SJTU MedLLM (Henrychur) · released 2024-05 · 8.03B params · llama3
 
-**score 36.6** ±4.8 · #768 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.1** ±5.1 · #770 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks MMed-Llama-3-8B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   20.4%  ▁▁▁▁▁●▂▃▄▆█▃ beats 10/97  hard · avg 32%     89%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  20.4%    35.1   2025-04-28   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                10% ▇
-                        weighted average                       = 36.6
+source                         results  share of the score
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>           1   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            11% ▇
+weighted average                        = 37.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
 ## How to run it
 
 <pre>
-download        size  score
-4-bit fp32  ~32.12GB   36.6
+download          size  score
+4-bit fp32    ~32.12GB   37.1
+4-bit q4_k_m    ~4.9GB   37.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp32
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Henrychur/MMed-Llama-3-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit q4_k_m · ~4.9GB
+llama cli -hf Axcel1/MMed-Llama-3-8B-Q4_K_M-GGUF:q4_k_m
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Axcel1/MMed-Llama-3-8B-Q4_K_M-GGUF:q4_k_m
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~4.9GB
+lms get https://huggingface.co/Axcel1/MMed-Llama-3-8B-Q4_K_M-GGUF@q4_k_m -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~4.9GB
+ollama run hf.co/Axcel1/MMed-Llama-3-8B-Q4_K_M-GGUF:q4_k_m
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp32 · ~32.12GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Henrychur/MMed-Llama-3-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/mmed-llama-3-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

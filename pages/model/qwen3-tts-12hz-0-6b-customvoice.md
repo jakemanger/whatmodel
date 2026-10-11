@@ -6,22 +6,37 @@
 
 Alibaba (Qwen) · released 2026-01 · apache-2.0
 
-**score 46.0** ±6.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.7** ±6.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Qwen3-TTS 12Hz 0.6B CustomVoice among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-carun-tts-bench-apache"></a>carun/tts-bench: inte…  <a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun tts-bench · 56-sentence…</a>   4.1%    45.4   2026-09-10   85% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.7                15% ▇▇
-                        weighted average                       = 46.0
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun tts-bench · 56-sentence Eng…</a>    4.1%  █····●·····█ beats 1/2    avg 2.9%       85%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-carun-tts-bench-apache"></a><a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun/tts-bench: intelligibility benchm…</a>        1   85% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       15% ▇▇
+weighted average                                   = 45.7
+</pre>
 
 <sub>Licences: carun/tts-bench: intelligibility benchmark of four open TTS engines ([Apache-2.0](https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/LICENSE.txt))</sub>
 

@@ -6,22 +6,40 @@
 
 Microsoft / Rutgers / Duke · released 2017-11
 
-**score 16.0** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 16.2** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks AttnGAN (COCO) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  weight
-<a name="visual-tifa"></a>TIFA: Accurate and In…  <a href="https://arxiv.org/html/2303.11897v3">TIFA v1.0 (overall, mPLUG VQA)</a>  58.1%    13.7    94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9     6% ▇
-                        weighted average                       = 16.0
+task           vs the others          rank  counts  tests
+text to image  ●▂▇▇▆▅█▇▂▃▁▁   #157 of 157*     94%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #157 of 157 · 94% of its score</summary>
+
+Trails [CogView2](cogview2.md) here, though they rank lower overall.
+
+<pre>
+test                            result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2303.11897v3">TIFA v1.0 (overall, mPLUG VQA)</a>   58.1%  ●·······▄▄▄▄ beats 0/5    very easy · avg 95%     94%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-tifa"></a><a href="https://arxiv.org/html/2303.11897v3">TIFA: Accurate and Interpretable Text-t…</a>        1   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 16.2
+</pre>
 
 <sub>Licences: TIFA: Accurate and Interpretable Text-to-Image Faithfulness Evaluation with Question Answering ([CC-BY-4.0](../../licenses/visual-tifa.txt))</sub>
 

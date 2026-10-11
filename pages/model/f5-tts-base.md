@@ -6,31 +6,59 @@
 
 SWivid (SJTU X-LANCE) · released 2024-10 · 0.3358B params · cc-by-nc-4.0
 
-**score 57.2** ±2.4 · #48 of 117 · from 10 benchmark results across 3 sources
+**score 56.9** ±2.4 · #48 of 118 · from 10 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks F5-TTS Base (v0) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-f5tts-report-ccby"></a>F5-TTS: A Fairytaler …  <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>     66.0%    59.0   2024-10-09   17% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker si…</a>     67.0%    60.0   2024-10-09   16% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker si…</a>     76.0%    62.0   2024-10-09   13% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>      2.4%    60.1   2024-10-09    7% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper la…</a>      1.8%    65.4   2024-10-09    7% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer…</a>      1.6%    57.3   2024-10-09    4% ▇
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  4.10 / 5    50.6   2025-05-11   25% ▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.33 / 5    50.8   2025-05-11    4% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     89.4%    56.4   2025-05-15    3% ▇
-                        <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     89.6%    55.1   2025-05-15    2% ▇
-prior                   pull toward the middle                      49.7                 2% ▇
-                        weighted average                          = 57.2
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁●█▃▃   #24 of 37     38%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #24 of 37 · 38% of its score</summary>
+
+Beats [GLM-TTS](glm-tts.md), [CosyVoice2-0.5B](cosyvoice2-0-5b.md), [MaskGCT](maskgct.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker simila…</a>   67.0%  ▁·▂▂▂●▆▃▅··▂ beats 7/30   medium · avg 53%     15%  at its level
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker simila…</a>   76.0%  ▁·▂··▂·●▄·▃▄ beats 10/25  medium · avg 62%     13%  at its level
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper large-…</a>    1.8%  ▁···▂▂▂▂●▆▄▂ beats 16/35  avg 3.6%            6.2%  blunt
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer CER…</a>    1.6%  ▁·▂▁▁▁●▃▅█·▂ beats 6/30   avg 2.1%            3.4%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  4.10 / 5  ▅·█▅▅·█▃▃●·▅ beats 15/17  easy · avg 4.03 / 5       26%  typical
+<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>     66.0%  ▄·········●▄ beats 1/3    medium · avg 52%          17%  at its level
+<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>      2.4%  █·····█·█··● beats 3/3    avg 4.1%                 7.5%  typical
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.33 / 5  ▅··▃▅··▅█▅█● beats 15/17  medium · avg 3.30 / 5    3.6%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · C…</a>     89.4%  ▄▄·····▄··▄● beats 4/5    very easy · avg 88%      3.0%  blunt
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     89.6%  ▂▂█·▂·█▆▂·●▂ beats 16/17  very easy · avg 89%      2.1%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-f5tts-report-ccby"></a><a href="https://arxiv.org/html/2410.06885v1">F5-TTS: A Fairytaler that Fakes Fluent …</a>        6   63% ▇▇▇▇▇▇▇▇
+<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                   2   30% ▇▇▇▇
+<a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>           2    5% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 56.9
+</pre>
 
 <sub>Licences: F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching ([CC BY 4.0](../../licenses/speech-f5tts-report-ccby.txt)) · TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt))</sub>
 
@@ -38,14 +66,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version    needs  score
-fp32     ~1.35GB   57.2
+fp32     ~1.35GB   56.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32
+# fp32 · ~1.35GB
 pip install f5-tts && f5-tts_infer-cli --model F5TTS_Base --gen_text "Hello, world."
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/f5-tts-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

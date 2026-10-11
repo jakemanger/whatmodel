@@ -6,25 +6,41 @@
 
 Resemble AI · released 2025-05 · 0.5B params · mit
 
-**score 49.9** ±4.8 · #66 of 117 · from 4 benchmark results across 2 sources
+**score 49.5** ±4.7 · #68 of 118 · from 4 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Chatterbox among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     24.5%    45.7   2025-08-10   63% ▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.1%    57.8   2025-08-10   16% ▇▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.33 / 5    58.2   2026-03-15    6% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.23 / 5    64.5   2026-03-15    6% ▇
-prior                   pull toward the middle                      49.7                 9% ▇
-                        weighted average                          = 49.9
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     24.5%  ▅▅▃▃●▅▅▃·▃·▅ beats 6/16   hard · avg 30%          63%  at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           13.1%  ▂▄··▂▄▄··●▄▆ beats 9/16   avg 16%                 16%  blunt
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.33 / 5  ▄▄█·▄▄▄▄●·▄█ beats 8/11   easy · avg 4.20 / 5    5.9%  blunt
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.23 / 5  █··▄▄██▄·●▄▄ beats 9/11   easy · avg 3.99 / 5    5.7%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   79% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2   12% ▇
+prior: pull toward the middle                        9% ▇
+weighted average                                   = 49.5
+</pre>
 
 <sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>
 
@@ -36,21 +52,25 @@ api (Replicate) · $25.00/M chars · [replicate.com](https://replicate.com/resem
 
 <pre>
 version                        needs  score
-fp32 · nvidia only            ~2.9GB   49.9
-fp32 · mac only               ~2.9GB   49.9
-fp32 (chatterbox-tts 0.1.7)  ~3.19GB   49.9
+fp32 · nvidia only            ~2.9GB   49.5
+fp32 · mac only               ~2.9GB   49.5
+fp32 (chatterbox-tts 0.1.7)  ~3.19GB   49.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 · nvidia only
+# fp32 · nvidia only · ~2.9GB
 pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='cuda'); ta.save('out.wav', m.generate('Hello world'), m.sr)"
-# fp32 · mac only
+# fp32 · mac only · ~2.9GB
 pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='mps'); ta.save('out.wav', m.generate('Hello world'), m.sr)"
-# fp32 (chatterbox-tts 0.1.7)
+# fp32 (chatterbox-tts 0.1.7) · ~3.19GB
 pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='cpu'); ta.save('out.wav', m.generate('Hello world'), m.sr)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 

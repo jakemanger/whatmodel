@@ -6,65 +6,131 @@
 
 Baidu · released 2025-06 · 300B params (47B active) · apache-2.0
 
-**score 60.1** ±1.3 · #210 of 934 · from 17 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.9** ±1.3 · #220 of 949 · from 18 benchmark results across 1 source · † every result so far was reported by its maker
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks ERNIE 4.5 300B-A47B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card-ernie-45-posttrained-final"></a>ERNIE 4.5 post-traine…  <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2025 (lab)</a>                 35.1%    53.6   2026-09-25   12% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2024 (lab)</a>                 54.8%    57.2   2026-09-25   11% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">BIG-Bench Hard (lab)</a>            94.3%    63.4   2026-09-25    8% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">GSM8K (lab)</a>                     96.6%    60.5   2026-09-25    7% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU (lab)</a>                      86.5%    58.9   2026-09-25    7% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">HumanEval+ (lab)</a>                92.1%    56.8   2026-09-25    7% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SimpleQA (lab)</a>                  45.9%    71.8   2026-09-25    6% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU-Pro (lab)</a>                  78.4%    60.8   2026-09-25    6% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">LiveCodeBench (version unspec…</a>  38.8%    54.2   2026-09-25    6% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">C-Eval (lab)</a>                    90.6%    62.0   2026-09-25    5% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">CMMLU (lab)</a>                     90.2%    62.7   2026-09-25    4% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MATH-500 (lab)</a>                  96.4%    65.4   2026-09-25    4% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">Multi-IF (aggregation unspeci…</a>  76.6%    61.9   2026-09-25    4% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ChineseSimpleQA (lab)</a>           77.1%    65.8   2026-09-25    4% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MBPP+ (lab)</a>                     81.0%    58.9   2026-09-25    3% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">IFEval (aggregation unspecifi…</a>  88.0%    62.3   2026-09-25    3% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MuSR (lab)</a>                      69.9%    59.7   2026-09-25    2% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 60.1
+task            vs the others      rank  counts  tests
+coding          ······●·····    #1 of 1     15%      3
+chat &amp; writing  ······●·····   #1 of 1*    2.7%      1
+math            ······●·····    #1 of 1     33%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: ERNIE 4.5 post-trained 300B-A47B benchmark chart ([Apache-2.0](../../licenses/cards-final-NOTICE.txt))</sub>
-
-<details><summary>Not counted (1)</summary>
+<details><summary>coding · #1 of 1 · 15% of its score</summary>
 
 <pre>
-source                  test                            score  why
-ERNIE 4.5 post-traine…  <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SysBench (aggregation unspeci…</a>  69.8%  too few models have it yet
+test                                result  vs the others in its run    difficulty      counts  why
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">HumanEval+ (lab)</a>                     92.1%  ▁·▁▁▂▃▄▄█▅▄● beats 138/145  easy · avg 83%    6.4%  sharp · maxed out · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">LiveCodeBench (version unspecifie…</a>   38.8%  ▁···▁▁▃●▅█▄▅ beats 7/37     hard · avg 28%    5.8%  at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MBPP+ (lab)</a>                          81.0%  ▁··▁▁▃▄█▆▄●▁ beats 115/120  easy · avg 70%    3.2%  small run
 </pre>
 
 </details>
+
+<details><summary>chat &amp; writing · #1 of 1 · 2.7% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty      counts  why
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">IFEval (aggregation unspecified) …</a>   88.0%  ▁▁▃▁▂▄▄▆●▃▂▁ beats 95/141  easy · avg 78%    2.7%  small run
+</pre>
+
+</details>
+
+<details><summary>math · #1 of 1 · 33% of its score</summary>
+
+<pre>
+test             result  vs the others in its run    difficulty           counts  why
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2025 (lab)</a>   35.1%  ▁·▁▁▁▂●▆█▇▅▁ beats 22/133   hard · avg 21%          11%  sharp · at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2024 (lab)</a>   54.8%  ▁▁▁▂▁▃▁●███▃ beats 25/85    hard · avg 31%          10%  sharp · at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">GSM8K (lab)</a>       96.6%  ▂▂▂▅▅▆▅▇█▇▄● beats 145/146  very easy · avg 90%    7.0%  sharp · maxed out · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MATH-500 (lab)</a>    96.4%  ▁▃▂▃▅▇▅▇●▅▂▁ beats 61/84    very easy · avg 87%    4.5%  maxed out · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (10)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">BIG-Bench Hard (lab)</a>                 94.3%  ▁▁▁▁▂▄▅▅█▃▄● beats 129/129  easy · avg 79%      8.1%  sharp · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU (lab)</a>                           86.5%  ▁▁▁▁▁▂▃▅█▃●▃ beats 166/183  easy · avg 74%      6.4%  small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SimpleQA (lab)</a>                       45.9%  ▄▄▄▆█▆███·●█ beats 28/32    hard · avg 16%      6.2%  at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU-Pro (lab)</a>                       78.4%  ▁▁·▁▁▁▃▂▄●█▁ beats 117/188  medium · avg 60%    5.7%  small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">C-Eval (lab)</a>                         90.6%  ▁···▁▁▂▁▂▂▃● beats 26/33    easy · avg 79%      5.4%  small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">CMMLU (lab)</a>                          90.2%  ▅·▅····█▃▅█● beats 14/14    easy · avg 79%      4.4%  small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ChineseSimpleQA (lab)</a>                77.1%  ▄··▄▄▄··●··█ beats 4/6      medium · avg 52%    3.7%  at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SysBench (aggregation unspecified…</a>   69.8%  █··●····█··█ beats 1/3      medium · avg 52%    3.5%  at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">Multi-IF (aggregation unspecified…</a>   76.6%  ▁▁▁▁▁▁▃▄●▄▁▂ beats 23/41    medium · avg 62%    2.6%  blunt · at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MuSR (lab)</a>                           69.9%  █·██······█● beats 4/4      medium · avg 58%    2.1%  blunt · at its level · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="card-ernie-45-posttrained-final"></a><a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A47B benchm…</a>       18   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 59.9
+</pre>
+
+<sub>Licences: ERNIE 4.5 post-trained 300B-A47B benchmark chart ([Apache-2.0](../../licenses/cards-final-NOTICE.txt))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-PT/blob/47bbaf1c9e356313c3cb2ded9078a494fb152f0e/README.md): Baidu official model card (ERNIE-4.5-300B-A47B-PT): configuration table Context Length 131072. Observed 2026-09-25.</sub>
 
 <pre>
-download              size  score
-4-bit ud-q4_k_xl  ~180.5GB   60.1
-2-bit ud-q2_k_xl   ~90.5GB   60.1
+download                       size  score
+4-bit ud-q4_k_xl           ~180.5GB   59.9
+2-bit ud-q2_k_xl            ~90.5GB   59.9
+4-bit mlx-4bit · mac only  ~168.5GB   59.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit ud-q4_k_xl
-llama-server -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q2_K_XL
+# 4-bit ud-q4_k_xl · ~180.5GB
+llama cli -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q4_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl · ~90.5GB
+llama cli -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q2_K_XL
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit ud-q4_k_xl · ~180.5GB
+lms get https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF@UD-Q4_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit ud-q2_k_xl · ~90.5GB
+lms get https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~168.5GB
+lms get https://huggingface.co/mlx-community/ERNIE-4.5-300B-A47B-PT-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~168.5GB
+mlx_lm.chat --model mlx-community/ERNIE-4.5-300B-A47B-PT-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/ERNIE-4.5-300B-A47B-PT-4bit
+```
 
 [interactive version](https://whatmodel.sh/model/ernie-4-5-300b-a47b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

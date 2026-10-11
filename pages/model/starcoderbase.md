@@ -6,46 +6,113 @@
 
 BigCode · released 2023-05 · 15.5B params · bigcode-openrail-m
 
-**score 32.9** ±1.0 · #815 of 934 · from 12 benchmark results across 3 sources
+**score 33.0** ±1.0 · #827 of 949 · from 12 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks StarCoderBase 15.5B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁●▆██▇▆▄▃▁    #429 of 469     94%      8
+math    ▁●▃▅▆▅▄█▄▁▁▁   #390 of 400*    5.4%      1
+</pre>
+
+<details><summary>coding · #429 of 469 · 94% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                      29.3%  ▂··●▂▄▂··▄▂▂ beats 3/12   easy · avg 79%       24%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 37.4%  █·▅▃●▃▅▃▃▅·▅ beats 6/15   easy · avg 82%       19%  at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.9%  ▁·▂▁▂●▅█▄▄▁▂ beats 10/35  medium · avg 64%     13%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           31.3%  ▁··▁●▂█▇▁··▁ beats 4/22   medium · avg 59%    9.2%  at its level · several runs
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           34.2%  ▁·▂●▁█▁▂···▁ beats 5/22   medium · avg 55%    8.1%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        23.8%  ▄▄·▄█●▄█·█·▄ beats 5/12   medium · avg 52%    7.9%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   15.3%  ▄▇●▃▄▇▄▁▇▃·▁ beats 11/35  medium · avg 49%    6.8%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   12.9%  ▁·▁▁▄●█▄█▁▅▅ beats 11/35  medium · avg 56%    5.5%  sharp
+</pre>
+
+</details>
+
+<details><summary>math · #390 of 400 · 5.4% of its score</summary>
+
+Beats [Code Llama 7B (base)](codellama-7b.md), [Llama 2 13B Chat](llama-2-13b-chat.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.1 1B-A400M Instruct](granite-3-1-1b-a400m.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
+
+<pre>
+test         result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>   21.5%  ▄▄▄·●█·██·█▄ beats 3/12   easy · avg 75%    5.4%  sharp · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 29.3%    32.5   2024-02-29   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      50.6%    31.5   2024-02-29   11% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   23.8%    34.0   2024-02-29    8% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     21.5%    29.2   2024-02-29    6% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  31.9%    34.4   2024-05-07   13% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            37.4%    33.6   2024-05-07    8% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  15.3%    32.3   2024-05-07    7% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      31.0%    31.2   2024-05-07    6% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  12.9%    33.0   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      34.4%    33.7   2024-05-07    5% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      31.3%    34.6   2024-01-03    3% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      34.2%    35.7   2024-01-03    3% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 32.9
+source                                    results  share of the score
+<a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   48% ▇▇▇▇▇▇
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   45% ▇▇▇▇▇
+<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    6% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 33.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
 
 ## How to run it
 
 <pre>
-download        size  score
-4-bit fp32  ~63.28GB   32.9
+download          size  score
+4-bit fp32    ~63.28GB   33.0
+4-bit Q4_K_M   ~10.1GB   33.0
+8-bit Q8_0       ~17GB   33.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp32
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase', torch_dtype='auto', device_map='auto')('def print_hello_world():', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~10.1GB
+llama cli -hf mradermacher/starcoderbase-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/starcoderbase-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~17GB
+llama cli -hf mradermacher/starcoderbase-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/starcoderbase-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~10.1GB
+lms get https://huggingface.co/mradermacher/starcoderbase-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~17GB
+lms get https://huggingface.co/mradermacher/starcoderbase-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~10.1GB
+ollama run hf.co/mradermacher/starcoderbase-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~17GB
+ollama run hf.co/mradermacher/starcoderbase-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp32 · ~63.28GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase', torch_dtype='auto', device_map='auto')('def print_hello_world():', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/starcoderbase) · [JSON](https://whatmodel.sh/api?format=json&all=1)

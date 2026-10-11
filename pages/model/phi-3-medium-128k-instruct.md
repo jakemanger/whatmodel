@@ -6,29 +6,70 @@
 
 Microsoft · released 2024-04 · 13.96B params · mit
 
-**score 45.2** ±1.3 · #577 of 934 · from 10 benchmark results across 5 sources
+**score 45.1** ±1.2 · #583 of 949 · from 10 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Phi-3 Medium 128K Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁▃▆█●▇▆▄▃▁    #259 of 469     10%      4
+math    ▁▂▃●▆▅▄█▄▁▁▁   #330 of 400*     18%      1
+</pre>
+
+<details><summary>coding · #259 of 469 · 10% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   50.8%  ▃··▁▂▂▃▂●▃▄▂ beats 26/47  medium · avg 54%    3.7%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   43.0%  █▂▁▁▂▂▂▃▅●▅▇ beats 32/47  medium · avg 36%    3.5%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   30.2%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 20/47  hard · avg 33%      2.6%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.7%  ▁▁▁······▁▃● beats 37/47  easy · avg 67%      0.1%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #330 of 400 · 18% of its score</summary>
+
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
+
+<pre>
+test          result  vs the others in its run  difficulty      counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   17.6%  ▂▂▅●▄█▆▃▅▂▃▄ beats 15/92  hard · avg 32%     18%  sharp
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 30.3%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 28/61    medium · avg 41%     53%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         27.6%  ▁▁●▁▂▄▆▄▅▇█▅ beats 12/208   hard · avg 40%       10%  sharp
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            78.6%  ▁▁·▁·▂●▄█▂·▁ beats 5/22     easy · avg 83%      3.6%  typical
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 188/276  medium · avg 73%    3.1%  at its level · noisy
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           46.1%  ▄··▂●▂▆██▄▄▂ beats 3/21     easy · avg 68%      1.3%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            30.3%    44.8   2024-10-22   52% ▇▇▇▇▇▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    17.6%    46.1   2025-01-31   19% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    27.6%    39.5   2025-01-31   11% ▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  50.8%    49.3   2025-05-31    4% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  43.0%    54.3   2025-05-31    4% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  30.2%    48.5   2025-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  76.7%    74.7   2025-05-31    0% ▇
-<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                       78.6%    46.5   2025-10-09    3% ▇
-                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                      46.1%    36.7   2025-10-09    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  71.7%    49.3   2024-05-21    3% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 45.2
+source                                    results  share of the score
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   53% ▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        2   29% ▇▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   10% ▇
+<a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2    5% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    3% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 45.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -37,18 +78,73 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/microsoft/Phi-3-medium-128k-instruct/blob/a088b37c71d441ab6d862bb3fcfe6165b3014702/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download        size  score
-4-bit q4_0   ~8.88GB   45.2
-8-bit q8_0  ~17.25GB   45.2
+download                       size  score
+4-bit q4_0                  ~8.88GB   45.1
+8-bit q8_0                 ~17.25GB   45.1
+4-bit Q4_K_M                 ~8.6GB   45.1
+8-bit Q8_0                  ~14.8GB   45.1
+4-bit mlx-4bit · mac only    ~7.9GB   45.1
+4-bit mlx-8bit · mac only   ~14.8GB   45.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run phi3:medium-128k
-# 8-bit q8_0
-ollama run phi3:14b-medium-128k-instruct-q8_0
+# 4-bit Q4_K_M · ~8.6GB
+llama cli -hf bartowski/Phi-3-medium-128k-instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Phi-3-medium-128k-instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~14.8GB
+llama cli -hf bartowski/Phi-3-medium-128k-instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Phi-3-medium-128k-instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~8.6GB
+lms get https://huggingface.co/bartowski/Phi-3-medium-128k-instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~14.8GB
+lms get https://huggingface.co/bartowski/Phi-3-medium-128k-instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~7.9GB
+lms get https://huggingface.co/mlx-community/Phi-3-medium-128k-instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~14.8GB
+lms get https://huggingface.co/mlx-community/Phi-3-medium-128k-instruct-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~8.88GB
+ollama run phi3:medium-128k
+# 8-bit q8_0 · ~17.25GB
+ollama run phi3:14b-medium-128k-instruct-q8_0
+# 4-bit Q4_K_M · ~8.6GB
+ollama run hf.co/bartowski/Phi-3-medium-128k-instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~14.8GB
+ollama run hf.co/bartowski/Phi-3-medium-128k-instruct-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~7.9GB
+mlx_lm.chat --model mlx-community/Phi-3-medium-128k-instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Phi-3-medium-128k-instruct-4bit
+# 4-bit mlx-8bit · mac only · ~14.8GB
+mlx_lm.chat --model mlx-community/Phi-3-medium-128k-instruct-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Phi-3-medium-128k-instruct-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/phi-3-medium-128k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

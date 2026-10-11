@@ -6,27 +6,44 @@
 
 OpenAI · released 2022-09 · 0.074B params · apache-2.0
 
-**score 35.7** ±2.7 · #140 of 160 · from 6 benchmark results across 4 sources
+**score 35.4** ±2.8 · #142 of 162 · from 6 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Whisper base.en among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.en.json">LibriSpeech test-clean WER</a>       4.3%    31.0   2026-09-15   35% ▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.en.json">FLEURS English test WER</a>          7.6%    40.8   2026-09-15   14% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.3%    40.9   2026-03-26   26% ▇▇▇
-<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  19.8%    30.9   2026-03-19   13% ▇▇
-                        <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>   9.5%    37.4   2026-03-19    8% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       5.1%    16.1   2024-12-09    1% ▇
-prior                   pull toward the middle                   49.8                 3% ▇
-                        weighted average                       = 35.7
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.en.json">LibriSpeech test-clean WER</a>            4.3%  ▁···▁▁●·▄▄██ beats 6/56   avg 2.3%       36%  blunt · several runs
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   10.3%  ▁▁▁▃··▁▁●██▆ beats 19/86  avg 8.2%       27%  blunt
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.en.json">FLEURS English test WER</a>               7.6%  ▁··▁▁▁▁●▁▃█▁ beats 10/56  avg 5.8%       14%  blunt
+<a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · English…</a>   19.8%  █·●···▄▄▄··▄ beats 2/7    avg 8.3%       13%  typical
+<a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · English…</a>    9.5%  ▄···●···▄··█ beats 1/4    avg 5.7%      7.7%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.en.json">transcribe.cpp model catalog · LibriSpe…</a>        2   48% ▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            1   27% ▇▇▇
+<a name="speech-stt-picovoice-apache"></a><a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice speech-to-text-benchmark · En…</a>        2   21% ▇▇▇
+<a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                             1    2% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 35.4
+</pre>
 
 <sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Picovoice speech-to-text-benchmark · English batch-engine WER ([Apache-2.0](../../licenses/speech-stt-picovoice-apache.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
 
@@ -34,17 +51,21 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version    needs  score
-fp16     ~0.68GB   35.7
-fp32     ~0.86GB   35.7
+fp16     ~0.68GB   35.4
+fp32     ~0.86GB   35.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16
+# fp16 · ~0.68GB
 uvx --from openai-whisper whisper audio.mp3 --model base.en
-# fp32
+# fp32 · ~0.86GB
 uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-base.en')('audio.wav', return_timestamps=True)['text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/whisper-base-en) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,20 +6,35 @@
 
 Cohere · released 2025-02 · 8.03B params · cc-by-nc-4.0
 
-**score 48.7** ±4.8 · #475 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.5** ±4.8 · #487 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Command R7B Arabic (02-2025) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   27.9%  ▁▁·▁▂▂▄●▄▅▄▄ beats 24/66  hard · avg 31%     90%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  27.9%    48.5   2026-02-23   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                10% ▇
-                        weighted average                       = 48.7
+source                               results  share of the score
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>        1   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                  10% ▇
+weighted average                              = 48.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -27,14 +42,48 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~5.1GB   48.7
+4-bit q4_k_m  ~5.1GB   48.5
+4-bit q4_k_m  ~5.1GB   48.5
+8-bit q8_0    ~8.5GB   48.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run command-r7b-arabic:7b
+# 4-bit q4_k_m · ~5.1GB
+llama cli -hf matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF:q4_k_m
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF:q4_k_m
+# 8-bit q8_0 · ~8.5GB
+llama cli -hf matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF:q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF:q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~5.1GB
+lms get https://huggingface.co/matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF@q4_k_m -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~8.5GB
+lms get https://huggingface.co/matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF@q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.1GB
+ollama run command-r7b-arabic:7b
+# 4-bit q4_k_m · ~5.1GB
+ollama run hf.co/matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF:q4_k_m
+# 8-bit q8_0 · ~8.5GB
+ollama run hf.co/matrixportalx/c4ai-command-r7b-arabic-02-2025-GGUF:q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/command-r7b-arabic-02-2025) · [JSON](https://whatmodel.sh/api?format=json&all=1)

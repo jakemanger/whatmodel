@@ -6,30 +6,64 @@
 
 Mistral · released 2025-12 · 8.8B params · apache-2.0
 
-**score 55.2** ±1.1 · #306 of 934 · from 11 benchmark results across 4 sources
+**score 55.2** ±1.1 · #308 of 949 · from 11 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Ministral 3 8B Reasoning 2512 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁▃▆██●▆▄▃▁   #148 of 469*     10%      1
+math    █·····●····█        #2 of 3     39%      2
+</pre>
+
+<details><summary>coding · #148 of 469 · 10% of its score</summary>
+
+Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">LiveCodeBench (version unspecifie…</a>   61.6%  ▁···▁▁▃▅▅█●▅ beats 27/37  medium · avg 47%     10%  at its level · small run · several runs
+</pre>
+
+</details>
+
+<details><summary>math · #2 of 3 · 39% of its score</summary>
+
+<pre>
+test             result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2025 (lab)</a>   78.7%  ▁·▁▁▁▂▅▆●▇▅▁ beats 82/133  medium · avg 64%     20%  sharp · small run · several runs
+<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2024 (lab)</a>   86.0%  ▁▁▁▂▁▃▁▅█●█▃ beats 62/85   easy · avg 73%       19%  sharp · small run · several runs
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">GPQA Diamond (lab)</a>                   66.8%  ▁▁▁▁▂▄▅▅●██▄ beats 141/310  hard · avg 51%       24%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4312  ▁▄▃●▇▄█▃▅▁▁▁ beats 7/30     avg 0.423            16%  sharp
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   43.1%  ▂▃▅▂●▃█▅█▅▃▆ beats 7/34     medium · avg 42%    7.8%  blunt · at its level
+<a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   58.5%  ▂···▂▂·▃▂▃●█ beats 11/17    medium · avg 53%    2.5%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="card-mistralai-ministral-3-8b-reasoning-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">GPQA Diamond (lab)</a>               66.8%    56.7   2026-09-25   12% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2025 (lab)</a>                  78.7%    55.7   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2024 (lab)</a>                  86.0%    57.2   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">LiveCodeBench (version unspec…</a>   61.6%    57.8   2026-09-25    5% ▇
-<a name="card-mistralai-ministral-3-3b-reasoning-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">GPQA Diamond (lab)</a>               66.8%    56.7   2026-09-25   12% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">AIME 2025 (lab)</a>                  78.7%    55.7   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">AIME 2024 (lab)</a>                  86.0%    57.2   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">LiveCodeBench (version unspec…</a>   61.6%    57.8   2026-09-25    5% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.4312    50.8   2026-05-02   16% ▇▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   43.1%    51.3   2026-05-02    8% ▇
-<a name="paper-2606.08071v1-surgiq"></a>SurgiQ: A Large-Scale…  <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-sho…</a>   58.5%    54.7   2026-06-06    2% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 55.2
+source                                    results  share of the score
+<a name="card-mistralai-ministral-3-8b-reasoning-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">mistralai/Ministral-3-8B-Reasoning-2512…</a>        4   37% ▇▇▇▇
+<a name="card-mistralai-ministral-3-3b-reasoning-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">mistralai/Ministral-3-3B-Reasoning-2512…</a>        4   37% ▇▇▇▇
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   24% ▇▇▇
+<a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1    3% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 55.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: mistralai/Ministral-3-8B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-3B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -38,15 +72,57 @@ prior                   pull toward the middle                    50.0          
 <sub>[context source](https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md): Mistral official model card: "Supports a 256k context window"; the card's serving notes give the default --max-model-len 262144 (exact tokens). Reasoning-2512 checkpoint. Observed 2026-09-25.</sub>
 
 <pre>
-download       size  score
-4-bit q4_k_m  5.2GB   55.2
+download                     size  score
+4-bit q4_k_m                5.2GB   55.2
+4-bit mlx-4bit · mac only  ~4.8GB   55.2
+4-bit mlx-8bit · mac only    ~9GB   55.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf mistralai/Ministral-3-8B-Reasoning-2512-GGUF:Q4_K_M
+# 4-bit q4_k_m · 5.2GB
+llama cli -hf mistralai/Ministral-3-8B-Reasoning-2512-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mistralai/Ministral-3-8B-Reasoning-2512-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · 5.2GB
+lms get https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.8GB
+lms get https://huggingface.co/alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~9GB
+lms get https://huggingface.co/alexgusevski/Ministral-3-8B-Reasoning-2512-q8-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · 5.2GB
+ollama run hf.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.8GB
+mlx_lm.chat --model alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx
+# 4-bit mlx-8bit · mac only · ~9GB
+mlx_lm.chat --model alexgusevski/Ministral-3-8B-Reasoning-2512-q8-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model alexgusevski/Ministral-3-8B-Reasoning-2512-q8-mlx
+```
 
 [interactive version](https://whatmodel.sh/model/ministral-3-8b-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

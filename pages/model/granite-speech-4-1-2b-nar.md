@@ -6,23 +6,38 @@
 
 IBM · released 2026-03 · 2.255B params · apache-2.0
 
-**score 61.4** ±3.8 · #22 of 160 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.5** ±3.9 · #22 of 162 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Granite Speech 4.1 2B NAR among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                        score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-4.1-2b-nar.json">LibriSpeech test-clean WER</a>   1.3%    65.7   2026-09-15   68% ▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-4.1-2b-nar.json">FLEURS English test WER</a>      5.3%    52.7   2026-09-15   26% ▇▇▇
-prior                   pull toward the middle               49.8                 6% ▇
-                        weighted average                   = 61.4
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                        result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-4.1-2b-nar.json">LibriSpeech test-clean WER</a>    1.3%  ▁···▁▁▂·▄▄█● beats 55/56  avg 2.3%       67%  blunt
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-4.1-2b-nar.json">FLEURS English test WER</a>       5.3%  ▁··▁▁▁▁▁▁●█▁ beats 22/56  avg 5.8%       27%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-4.1-2b-nar.json">transcribe.cpp model catalog · LibriSpe…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 61.5
+</pre>
 
 <sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
 
@@ -30,14 +45,18 @@ prior                   pull toward the middle               49.8               
 
 <pre>
 version                      needs  score
-q8_0-gguf (transcribe.cpp)  ~2.5GB   61.4
+q8_0-gguf (transcribe.cpp)  ~2.5GB   61.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# q8_0-gguf (transcribe.cpp)
+# q8_0-gguf (transcribe.cpp) · ~2.5GB
 git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/granite-speech-4.1-2b-nar-gguf granite-speech-4.1-2b-nar-Q8_0.gguf --local-dir models/granite-speech-4.1-2b-nar && build/bin/transcribe-cli -m models/granite-speech-4.1-2b-nar/granite-speech-4.1-2b-nar-Q8_0.gguf audio.wav
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/granite-speech-4-1-2b-nar) · [JSON](https://whatmodel.sh/api?format=json&all=1)

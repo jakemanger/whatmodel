@@ -8,21 +8,41 @@ cerspense · released 2023-06 · cc-by-nc-4.0
 
 **score 27.3** ±3.0 · #85 of 93 · from 4 benchmark results across 3 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks ZeroScope v2 576w among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>      11.9%    27.3   2026-01-30   46% ▇▇▇▇▇▇
-                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>     34.0%    31.0   2026-01-30   19% ▇▇
-<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>     45.8%    20.9   2024-10-01   16% ▇▇
-<a name="visual-fetv-ccby"></a>FETV: A Benchmark for…  <a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV manual video quality (me…</a>  3.62 / 5    23.4   2023-12-26   15% ▇▇
-prior                   pull toward the middle                      49.9                 4% ▇
-                        weighted average                          = 27.3
+task           vs the others       rank  counts  tests
+text to video  ●▄▃▄▆▅█▃▂▂▂▄   #61 of 68     96%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #61 of 68 · 96% of its score</summary>
+
+Trails [Hotshot-XL](hotshot-xl.md) here, though they rank lower overall.
+
+<pre>
+test                                  result  vs the others in its run  difficulty                counts  why
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>          11.9%  ▄▄●·▄▄█····▄ beats 2/7    medium · avg 48%             46%  sharp
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>      34.0%  ▅·▃●··▃█···▃ beats 3/9    medium · avg 56%             19%  at its level
+<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>     45.8%  ●·▄█▄▄▄·▄·▄█ beats 0/10   medium · avg 71%             16%  at its level
+<a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV manual video quality (mean o…</a>  3.62 / 5  █·····●····█ beats 1/2    very easy · avg 4.63 / 5     15%  at its level · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        2   65% ▇▇▇▇▇▇▇▇
+<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1   16% ▇▇
+<a name="visual-fetv-ccby"></a><a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV: A Benchmark for Fine-Grained Eval…</a>        1   15% ▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 27.3
+</pre>
 
 <sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt)) · FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -33,11 +53,15 @@ version              needs  score
 fp16 · nvidia only  ~7.9GB   27.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~7.9GB
 python -c "import torch;from diffusers import DiffusionPipeline;from diffusers.utils import export_to_video;p=DiffusionPipeline.from_pretrained('cerspense/zeroscope_v2_576w',torch_dtype=torch.float16);p.enable_model_cpu_offload();export_to_video(p('Darth Vader is surfing on waves',num_inference_steps=40,height=320,width=576,num_frames=24).frames[0],'zeroscope.mp4')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/zeroscope-v2-576w) · [JSON](https://whatmodel.sh/api?format=json&all=1)

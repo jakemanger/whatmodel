@@ -10,26 +10,42 @@ Microsoft · released 2026-07 · 4B params
 
 Score within the [CVTG-2K word accuracy](https://whatmodel.sh/image?set=cvtg-2k-word-accuracy%40visual-mage-flow&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Mage-Flow-Turbo among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-mage-flow"></a>Mage-Flow: An Efficie…  <a href="https://arxiv.org/html/2607.19064v2#S6.T8">GenEval (lab)</a>                   88.0%    80.2   2026-07-22   20% ▇▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">CVTG-2K word accuracy (lab)</a>     87.3%    55.5   2026-07-22    9% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">TIIF-Bench testmini (short pr…</a>  83.6%    74.1   2026-07-22    8% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">TIIF-Bench testmini (long pro…</a>  84.2%    57.3   2026-07-22    7% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (CN) (lab)</a>       80.1%    45.8   2026-07-22    7% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (CN) (lab)</a>          49.1%    63.1   2026-07-22    6% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (EN) (lab)</a>          52.3%    60.8   2026-07-22    6% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (EN) (lab)</a>       91.1%    -5.7   2026-07-22    5% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">DPG-Bench (lab)</a>                 85.5%    35.5   2026-07-22    5% ▇
-prior                   pull toward the middle                   53.5                27% ▇▇▇
-                        weighted average                       = 32.6
+task           vs the others     rank  counts  tests
+text to image  ●····█·····█   #3 of 3     73%      9
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #3 of 3 · 73% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">GenEval (lab)</a>                        88.0%  ▇▃▅▇▁▄▅▃█▃▃● beats 36/39  very easy · avg 87%     20%  sharp · small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">CVTG-2K word accuracy (lab)</a>          87.3%  ▄▄▄█●▄·▄···▄ beats 5/8    very easy · avg 87%    9.1%  small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">TIIF-Bench testmini (short prompt…</a>   83.6%  █·█········● beats 2/2    easy · avg 83%         7.9%  small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">TIIF-Bench testmini (long prompts…</a>   84.2%  █······●···█ beats 1/2    easy · avg 84%         7.4%  small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (CN) (lab)</a>            80.1%  ▃·······●███ beats 2/12   easy · avg 81%         6.9%  small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (CN) (lab)</a>               49.1%  ●·▃█▃·▃··▃·▃ beats 0/8    medium · avg 50%       5.7%  at its level · small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (EN) (lab)</a>               52.3%  ▃······●▅█▅▃ beats 1/9    medium · avg 53%       5.6%  at its level · small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (EN) (lab)</a>            91.1%  ▃·····▅●█▅▃▃ beats 3/12   very easy · avg 92%    5.1%  small run
+<a href="https://arxiv.org/html/2607.19064v2#S6.T8">DPG-Bench (lab)</a>                      85.5%  ▄·▂·▂▆●▄▂▄▂▂ beats 7/17   very easy · avg 86%    5.0%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-mage-flow"></a><a href="https://arxiv.org/html/2607.19064v2#S6.T8">Mage-Flow: An Efficient Native-Resoluti…</a>        9   73% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       27% ▇▇▇
+weighted average                                   = 32.6
+</pre>
 
 <sub>Licences: Mage-Flow: An Efficient Native-Resolution Foundation Model for Image Generation and Editing ([CC-BY-4.0](../../licenses/visual-mage-flow.txt))</sub>
 
@@ -41,13 +57,17 @@ bf16 + Qwen3-VL 4B q4_k_m (sd.cpp)        ~13.8GB   32.6
 int8 convrot + Qwen3-VL 4B q4_k_m (sd.c…   ~8.9GB   32.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 + Qwen3-VL 4B q4_k_m (sd.cpp)
+# bf16 + Qwen3-VL 4B q4_k_m (sd.cpp) · ~13.8GB
 sd-cli --diffusion-model models/mage_flow_turbo_bf16.safetensors --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/mage_flow_vae_bf16.safetensors -p "a lovely cat holding a sign says 'mage.cpp'" --cfg-scale 1.0 --steps 4 --diffusion-fa -v --offload-to-cpu
-# int8 convrot + Qwen3-VL 4B q4_k_m (sd.cpp)
+# int8 convrot + Qwen3-VL 4B q4_k_m (sd.cpp) · ~8.9GB
 sd-cli --diffusion-model models/mage_flow_turbo_int8_convrot.safetensors --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/mage_flow_vae_bf16.safetensors -p "a lovely cat holding a sign says 'mage.cpp'" --cfg-scale 1.0 --steps 4 --diffusion-fa -v --offload-to-cpu
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/mage-flow-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

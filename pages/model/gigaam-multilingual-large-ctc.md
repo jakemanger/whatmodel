@@ -6,23 +6,38 @@
 
 Sber · released 2026-07 · 0.6B params · mit
 
-**score 65.0** ±28.5 · #1 of 2 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 46.5** ±7.0 · #114 of 162 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
-Score within the [Common Voice English WER (version unspecified)](https://whatmodel.sh/stt?set=commonvoice-en-wer-version-unspecified%40card3-ai-sage-gigaam-multilingual&score=set) comparison set only.
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+
+## What it's good at
+
+<sub>● marks GigaAM Multilingual Large (CTC 600M) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">Common Voice English WER (version…</a>   21.5%  █···●·█····█ beats 1/3    avg 20%        61%  typical
+<a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">FLEURS English test WER (lab)</a>         9.4%  ▁··▁▁▁●▂▃█▂▁ beats 8/64   avg 6.6%       20%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-ai-sage-gigaam-multilingual"></a>ai-sage/GigaAM-Multil…  <a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">Common Voice English WER (ver…</a>  21.5%    39.7   2026-07-14   14% ▇▇
-                        <a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">FLEURS English test WER (lab)</a>    9.4%    49.8   2026-07-14   11% ▇
-prior                   pull toward the middle                   50.0                75% ▇▇▇▇▇▇▇▇▇
-                        weighted average                       = 65.0
+source                                    results  share of the score
+<a name="card3-ai-sage-gigaam-multilingual"></a><a href="https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md">ai-sage/GigaAM-Multilingual model card …</a>        2   81% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       19% ▇▇
+weighted average                                   = 46.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: ai-sage/GigaAM-Multilingual model card ([MIT](https://opensource.org/licenses/MIT))</sub>
 
@@ -30,14 +45,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 version                           needs  score
-fp32 (transformers remote code)  2.34GB   65.0
+fp32 (transformers remote code)  2.34GB   46.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (transformers remote code)
+# fp32 (transformers remote code) · 2.34GB
 pip install "transformers>=5" torch torchaudio hydra-core omegaconf && python -c "from transformers import AutoModel; model = AutoModel.from_pretrained('ai-sage/GigaAM-Multilingual', revision='large_ctc', trust_remote_code=True); print(model.transcribe('example.wav'))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/gigaam-multilingual-large-ctc) · [JSON](https://whatmodel.sh/api?format=json&all=1)

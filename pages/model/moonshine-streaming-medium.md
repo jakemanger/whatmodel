@@ -6,25 +6,42 @@
 
 Useful Sensors (Moonshine AI) · released 2026-01 · 0.27B params · mit
 
-**score 50.5** ±2.8 · #95 of 160 · from 4 benchmark results across 3 sources
+**score 50.4** ±2.9 · #97 of 162 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Moonshine Streaming Medium among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-streaming-medium.json">LibriSpeech test-clean WER</a>       2.2%    51.8   2026-09-15   38% ▇▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-streaming-medium.json">FLEURS English test WER</a>          7.9%    39.3   2026-09-15   15% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.7%    57.8   2026-03-26   29% ▇▇▇
-<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  10.6%    44.2   2026-03-19   15% ▇▇
-prior                   pull toward the middle                   49.8                 3% ▇
-                        weighted average                       = 50.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-streaming-medium.json">LibriSpeech test-clean WER</a>            2.2%  ▁···▁▁▂·▄●██ beats 22/56  avg 2.3%       38%  blunt
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    6.7%  ▁▁▁▃··▁▁▂█●▆ beats 66/86  avg 8.2%       30%  blunt
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-streaming-medium.json">FLEURS English test WER</a>               7.9%  ▁··▁▁▁▁●▁▃█▁ beats 9/56   avg 5.8%       15%  blunt
+<a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · English…</a>   10.6%  █·█···▄▄●··▄ beats 6/7    avg 8.3%       15%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-streaming-medium.json">transcribe.cpp model catalog · LibriSpe…</a>        2   53% ▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            1   30% ▇▇▇▇
+<a name="speech-stt-picovoice-apache"></a><a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice speech-to-text-benchmark · En…</a>        1   15% ▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 50.4
+</pre>
 
 <sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Picovoice speech-to-text-benchmark · English batch-engine WER ([Apache-2.0](../../licenses/speech-stt-picovoice-apache.txt))</sub>
 
@@ -32,14 +49,18 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version   needs  score
-fp32     ~1.8GB   50.5
+fp32     ~1.8GB   50.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32
+# fp32 · ~1.8GB
 uv run --with transformers --with torch --with librosa python -c "import librosa; from transformers import MoonshineStreamingForConditionalGeneration as M, AutoProcessor as P; r='moonshine-ai/moonshine-streaming-medium'; m=M.from_pretrained(r); p=P.from_pretrained(r); i=p(librosa.load('audio.wav', sr=16000)[0], return_tensors='pt', sampling_rate=16000); print(p.decode(m.generate(**i, max_length=int(i.attention_mask.sum()*6.5/16000))[0], skip_special_tokens=True))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/moonshine-streaming-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

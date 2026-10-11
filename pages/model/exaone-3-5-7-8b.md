@@ -6,41 +6,91 @@
 
 LG AI Research · released 2024-12 · 7.82B params · exaone
 
-**score 50.1** ±3.7 · #431 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 50.2** ±3.8 · #435 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks EXAONE 3.5 7.8B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #242 of 466*     94%      2
+</pre>
+
+<details><summary>chat &amp; writing · #242 of 466 · 94% of its score</summary>
+
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation">Arena-Hard (version/judge unspeci…</a>   68.7%  ▃▃▂▅▃▆▅●▅▅▂▃ beats 18/30  easy · avg 68%     57%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation">IFEval (aggregation unspecified) …</a>   78.9%  ▄·▄·●·▄▄···█ beats 2/6    easy · avg 78%     37%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation">Arena-Hard (version/judge uns…</a>  68.7%    49.9   2024-12-01   58% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation">IFEval (aggregation unspecifi…</a>  78.9%    50.6   2024-12-01   35% ▇▇▇▇
-prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 50.1
+source                                    results  share of the score
+<a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation">LG AI Research vendor-reported benchmar…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 50.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
-
-
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md): Model card: 'Context Length: 32,768 tokens'. Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m   ~4.8GB   50.1
-4-bit q4_k_m  ~4.77GB   50.1
+download                      size  score
+4-bit q4_k_m                ~4.8GB   50.2
+4-bit q4_k_m               ~4.77GB   50.2
+4-bit mlx-4bit · mac only   ~4.4GB   50.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run exaone3.5:7.8b
-# 4-bit q4_k_m
-llama-server -hf LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~4.77GB
+llama cli -hf LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~4.77GB
+lms get https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.4GB
+lms get https://huggingface.co/alexander583/EXAONE-3.5-7.8B-Instruct-Q4-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~4.8GB
+ollama run exaone3.5:7.8b
+# 4-bit q4_k_m · ~4.77GB
+ollama run hf.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.4GB
+mlx_lm.chat --model alexander583/EXAONE-3.5-7.8B-Instruct-Q4-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model alexander583/EXAONE-3.5-7.8B-Instruct-Q4-mlx
+```
 
 [interactive version](https://whatmodel.sh/model/exaone-3-5-7-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

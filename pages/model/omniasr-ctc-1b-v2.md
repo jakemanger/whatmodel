@@ -6,25 +6,53 @@
 
 Meta · released 2025-12 · 0.98B params · apache-2.0
 
-**score 48.9** ±2.7 · #106 of 160 · from 4 benchmark results across 3 sources
+**score 49.5** ±2.7 · #104 of 162 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Omnilingual ASR CTC 1B v2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        8.0%    51.1   2026-03-26   84% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  23.9%    33.4   2026-08-24    8% ▇
-                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  67.2%    23.5   2026-08-24    4% ▇
-<a name="speech-stt-iberian-bench-ccby"></a>Benchmarking Automati…  <a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-lan…</a>  21.5%    62.5   2026-09-29    2% ▇
-prior                   pull toward the middle                   49.8                 3% ▇
-                        weighted average                       = 48.9
+task                    vs the others        rank  counts  tests
+multilingual transcri…  ▂··▃▄█●▅▄▂·▂   #14 of 36*     87%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>multilingual transcription · #14 of 36 · 87% of its score</summary>
+
+Beats [Cohere Transcribe Arabic (07-2026)](cohere-transcribe-arabic-07-2026.md), [Qwen3-ASR-1.7B](qwen3-asr-1-7b.md), [Voxtral Mini Transcribe V2](voxtral-mini-transcribe-2.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>             8.0%  ▂··▂●▂█▃█▂▁▁ beats 6/29   avg 8.9%       83%  typical
+<a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-languag…</a>   21.5%  █▃▃··●▃▃··▃▃ beats 6/10   avg 38%       4.2%  noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   23.9%  ▄·█·●▄▄▄·█▄▄ beats 3/10   avg 15%       7.2%  blunt
+<a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   67.2%  ▃●····▃▅▃·▅▃ beats 2/10   avg 41%       3.2%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                            1   83% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-bavarian-betthupferl-mit"></a><a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">German dialect ASR Benchmark</a>                    2   10% ▇
+<a name="speech-stt-iberian-bench-ccby"></a><a href="https://arxiv.org/html/2609.36920v1">Benchmarking Automatic Speech Recogniti…</a>        1    4% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 49.5
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · German dialect ASR Benchmark ([MIT](../../licenses/speech-stt-bavarian-betthupferl-mit.txt)) · Benchmarking Automatic Speech Recognition Tools for Iberian Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -32,14 +60,18 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version    needs  score
-bf16     ~2.85GB   48.9
+bf16     ~2.85GB   49.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16
+# bf16 · ~2.85GB
 uv run --python 3.12 --with omnilingual-asr python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_1B_v2').transcribe(['audio.wav'], batch_size=1))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/omniasr-ctc-1b-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

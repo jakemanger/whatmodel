@@ -6,38 +6,129 @@
 
 Liquid AI · released 2025-09 · 2.57B params · lfm1.0
 
-**score 47.6** ±5.4 · #500 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.8** ±1.5 · #649 of 949 · from 13 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks LFM2 2.6B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #262 of 466*     11%      1
+math            ▁▂▃▅●▅▄█▄▁▁▁   #287 of 400*     11%      2
+</pre>
+
+<details><summary>chat &amp; writing · #262 of 466 · 11% of its score</summary>
+
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures (lab)</a>   79.6%  █··▄▄·●····▄ beats 4/5    easy · avg 85%     11%  typical
+</pre>
+
+</details>
+
+<details><summary>math · #287 of 400 · 11% of its score</summary>
+
+Beats [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [StarCoder2 15B](starcoder2-15b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2511.23404v1">MATH-500 (lab)</a>                       63.6%  ▃····●·█···▃ beats 1/5    easy · avg 81%     10%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy (l…</a>   82.4%  █·█··█●█···█ beats 3/5    easy · avg 84%    1.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (10)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2511.23404v1">MMLU (lab)</a>                           64.4%  ▄█···●·····▄ beats 3/5     easy · avg 74%          16%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro (lab)</a>                       26.0%  ██●···██···█ beats 2/5     medium · avg 45%        10%  typical
+<a href="https://arxiv.org/html/2511.23404v1">GPQA Diamond (lab)</a>                   26.6%  █●····███··█ beats 1/5     very hard · avg 35%     10%  sharp · too hard for it
+<a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecified)…</a>   22.2%  █··█●█··█··█ beats 2/5     hard · avg 33%         9.3%  typical
+<a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average (lab)</a>    60.3%  ▄··█●··▄···▄ beats 3/5     easy · avg 71%         9.3%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid) (l…</a>   55.4%  ▄·█····●···▄ beats 4/5     medium · avg 60%       7.9%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Liquid…</a>   74.3%  ▄·▄·●···▄··▄ beats 3/5     easy · avg 82%         6.2%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   64.5%  ▃·▁▁▂▁▂●█▇▄▁ beats 39/100  medium · avg 68%       3.3%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   76.3%  ▁▁▁▁▁▁▁▂●█▄▃ beats 54/146  easy · avg 83%         2.8%  at its level · noisy
+<a href="https://arxiv.org/html/2511.23404v1">GSM-Plus (lab)</a>                       60.8%  █·····██●·██ beats 3/5     easy · avg 74%         1.9%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  64.5%    48.5   2026-04-17   53% ▇▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  76.3%    45.2   2026-04-17   34% ▇▇▇▇
-prior                  pull toward the middle                   50.0                13% ▇▇
-                       weighted average                       = 47.6
+source                         results  share of the score
+<a name="report-2511.23404v1"></a><a href="https://arxiv.org/html/2511.23404v1">LFM2 Technical Report (lab)</a>         11   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2    6% ▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 42.8
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: LFM2 Technical Report ([CC BY 4.0](../../licenses/cards-gap-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md): LFM2 card model-property table: 'Context length 32,768 tokens' for LFM2-350M/700M/1.2B/2.6B (config allows 128000). Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~1.56GB   47.6
+download                      size  score
+4-bit q4_k_m               ~1.56GB   42.8
+4-bit mlx-4bit · mac only   ~1.4GB   42.8
+4-bit mlx-8bit · mac only   ~2.7GB   42.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf LiquidAI/LFM2-2.6B-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~1.56GB
+llama cli -hf LiquidAI/LFM2-2.6B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf LiquidAI/LFM2-2.6B-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~1.56GB
+lms get https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~1.4GB
+lms get https://huggingface.co/mlx-community/LFM2-2.6B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~2.7GB
+lms get https://huggingface.co/mlx-community/LFM2-2.6B-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~1.56GB
+ollama run hf.co/LiquidAI/LFM2-2.6B-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~1.4GB
+mlx_lm.chat --model mlx-community/LFM2-2.6B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/LFM2-2.6B-4bit
+# 4-bit mlx-8bit · mac only · ~2.7GB
+mlx_lm.chat --model mlx-community/LFM2-2.6B-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/LFM2-2.6B-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/lfm2-2-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

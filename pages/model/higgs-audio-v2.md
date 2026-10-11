@@ -6,28 +6,56 @@
 
 Boson AI · released 2025-07 · 5.8B params · boson-higgs-audio-2-community
 
-**score 55.0** ±3.2 · #51 of 117 · from 7 benchmark results across 3 sources
+**score 54.7** ±3.1 · #53 of 118 · from 7 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Higgs Audio V2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>   2.1%    58.7   2026-06-04   33% ▇▇▇▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>  49.9%    46.7   2026-06-04    6% ▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>  21.2%    48.6   2026-06-04    5% ▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>  38.9%    55.6   2025-08-10   30% ▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER …</a>  19.4%    40.2   2025-08-10    7% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  56.0%    61.3   2026-05-24   14% ▇▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  25.0%  -156.7   2026-05-24    0% ▇
-prior                   pull toward the middle                   49.7                 4% ▇
-                        weighted average                       = 55.0
+task           vs the others        rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁●█▃▃   #26 of 37*     32%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #26 of 37 · 32% of its score</summary>
+
+Beats [CosyVoice2-0.5B](cosyvoice2-0-5b.md), [MaskGCT](maskgct.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-zh m…</a>    2.1%  ●··▄▄····█▄▄ beats 0/6    avg 3.7%       32%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>   38.9%  ▅▅▃▃█▅●▃·▃·▅ beats 12/16  hard · avg 30%       31%  at its level
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>   56.0%  ▃·····▂▂▂▃●▆ beats 9/15   medium · avg 46%     14%  blunt · at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER (lab)</a>   19.4%  ▂▄··▂●▄··█▄▆ beats 4/16   avg 16%             7.2%  blunt
+<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set · 2…</a>   49.9%  ▃·●·▃·····▃█ beats 1/6    avg 44%             6.9%  sharp · noisy
+<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice clone…</a>   21.2%  ▃·····●···▅█ beats 1/6    avg 20%             5.0%  noisy
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>   25.0%  ▂●▂··▂·▃▃▃█▂ beats 1/15   avg 8.6%            0.2%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-higgs3-sglang-apache"></a><a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Higgs Audio v3 comparison tables in SGL…</a>        3   44% ▇▇▇▇▇
+<a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   38% ▇▇▇▇▇
+<a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2   14% ▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 54.7
+</pre>
 
 <sub>Licences: Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>
 
@@ -35,17 +63,21 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                                      needs  score
-bf16 (transformers &gt;=5.3.0) · nvidia on…  ~12.37GB   55.0
-mlx-8bit (mlx-audio) · mac only               ~7GB   55.0
+bf16 (transformers &gt;=5.3.0) · nvidia on…  ~12.37GB   54.7
+mlx-8bit (mlx-audio) · mac only               ~7GB   54.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (transformers >=5.3.0) · nvidia only
+# bf16 (transformers >=5.3.0) · nvidia only · ~12.37GB
 uv run --with 'transformers>=5.3.0' --with torch --with accelerate python -c "from transformers import AutoProcessor, HiggsAudioV2ForConditionalGeneration; model_id = 'bosonai/higgs-audio-v2-generation-3B-base'; processor = AutoProcessor.from_pretrained(model_id, device_map='auto'); model = HiggsAudioV2ForConditionalGeneration.from_pretrained(model_id, device_map='auto'); conversation = [{'role': 'system', 'content': [{'type': 'text', 'text': 'Generate audio following instruction.'}]}, {'role': 'scene', 'content': [{'type': 'text', 'text': 'Audio is recorded from a quiet room.'}]}, {'role': 'user', 'content': [{'type': 'text', 'text': 'The sun rises in the east and sets in the west. This simple fact has been observed by humans for thousands of years.'}]}]; inputs = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=True, return_dict=True, sampling_rate=24000, return_tensors='pt').to(model.device); outputs = model.generate(**inputs, max_new_tokens=1000, do_sample=False); decoded = processor.batch_decode(outputs); processor.save_audio(decoded, 'output_single_speaker.wav')"
-# mlx-8bit (mlx-audio) · mac only
+# mlx-8bit (mlx-audio) · mac only · ~7GB
 pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/higgs-audio-v2-3B-mlx-q8 --text "Hello from Higgs Audio on MLX." --ref_audio path/to/reference.wav --ref_text "Transcript of the reference clip."
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/higgs-audio-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,23 +6,54 @@
 
 Mistral · released 2024-11 · 124B params · mistral-research
 
-**score 54.4** ±2.7 · #328 of 934 · from 4 benchmark results across 2 sources
+**score 54.3** ±2.7 · #341 of 949 · from 4 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Pixtral Large (2411) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+math                ▁▂▃▅▆●▄█▄▁▁▁   #219 of 400*     22%      1
+vision &amp; documents  ▁▁▃▂▁●▄▃▆▇█▄    #114 of 150     97%      4
+</pre>
+
+<details><summary>math · #219 of 400 · 22% of its score</summary>
+
+Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+
+<pre>
+test                        result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MathVista (testmini) (lab)</a>   69.4%  ▁··▁▄▄▇█●▆█▄ beats 25/47  medium · avg 63%     22%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #114 of 150 · 97% of its score</summary>
+
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [Gemma 4 E4B](gemma-4-e4b.md), [Gemma 3 27B](gemma-3-27b.md), [Qwen2.5-VL 32B Instruct](qwen2-5-vl-32b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1095.2  ▁▁▂▂▂▂●▅▅▆██ beats 29/145  avg 1068             46%  blunt
+<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MathVista (testmini) (lab)</a>        69.4%  ▁··▁▄▄▇█●▆█▄ beats 25/47   medium · avg 63%     22%  at its level · small run
+<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MMMU (val) (lab)</a>                  64.0%  ▁····▁▁▄█●▆▆ beats 25/52   medium · avg 57%     22%  at its level · small run
+<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">ChartQA (lab)</a>                     88.1%  ▁··▁▁▁▁▁▂▅▅● beats 34/44   easy · avg 82%      6.8%  blunt · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="first-party-mistral-scores"></a>Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MathVista (testmini) (lab)</a>       69.4%    54.5   2024-11-18   22% ▇▇▇
-                        <a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MMMU (val) (lab)</a>                 64.0%    54.5   2024-11-18   22% ▇▇▇
-                        <a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">ChartQA (lab)</a>                    88.1%    62.4   2024-11-18    7% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1095.2    53.5   2026-10-02   46% ▇▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 54.4
+source                                    results  share of the score
+<a name="first-party-mistral-scores"></a><a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">Mistral AI vendor-reported benchmark sc…</a>        3   50% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   46% ▇▇▇▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 54.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -30,14 +61,36 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~248.27GB   54.4
+16-bit bf16 · nvidia only  ~248.27GB   54.3
+2-bit Q2_K                   ~46.7GB   54.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-pip install --upgrade vllm mistral_common && vllm serve mistralai/Pixtral-Large-Instruct-2411 --config-format mistral --load-format mistral --tokenizer_mode mistral --limit_mm_per_prompt 'image=10' --tensor-parallel-size 8
+# 2-bit Q2_K · ~46.7GB
+llama cli -hf EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF:Q2_K
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF:Q2_K
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 2-bit Q2_K · ~46.7GB
+lms get https://huggingface.co/EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF@Q2_K -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~248.27GB
+pip install --upgrade vllm mistral_common && vllm serve mistralai/Pixtral-Large-Instruct-2411 --config-format mistral --load-format mistral --tokenizer_mode mistral --limit_mm_per_prompt 'image=10' --tensor-parallel-size 8
+```
 
 [interactive version](https://whatmodel.sh/model/pixtral-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

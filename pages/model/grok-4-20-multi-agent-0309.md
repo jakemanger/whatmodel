@@ -6,22 +6,62 @@
 
 SpaceXAI (xAI) · released 2026-03 · closed weights
 
-**score 73.2** ±2.3 · #58 of 934 · from 3 benchmark results across 1 source
+**score 73.1** ±2.3 · #58 of 949 · from 3 benchmark results across 1 source
+
+## What it's good at
+
+<sub>● marks Grok 4.20 Multi-Agent (0309) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others         rank  counts  tests
+chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #33 of 466*     47%      1
+vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄   #45 of 150*     32%      1
+web search          ▂▂▂▆▄●▃▃▁▁·▁    #25 of 81*     19%      1
+</pre>
+
+<details><summary>chat &amp; writing · #33 of 466 · 47% of its score</summary>
+
+Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Claude Opus 4.5](claude-opus-4-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1470.6  ▁▁▁▂▃▃▃▆▆▇●▃ beats 341/379  avg 1268       47%  blunt
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #45 of 150 · 32% of its score</summary>
+
+Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [Kimi K2.5](kimi-k2-5.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1250.3  ▁▁▂▂▂▂▄▅▅▆●█ beats 102/145  avg 1068       32%  blunt
+</pre>
+
+</details>
+
+<details><summary>web search · #25 of 81 · 19% of its score</summary>
+
+Beats [Claude Opus 4.8](claude-opus-4-8.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1204.9  ▁·▁▁▂▂▂█●▂▁▁ beats 24/30  avg 1055       19%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1470.6    74.3   2026-10-02   46% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1250.3    72.3   2026-10-02   34% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1204.9    74.8   2026-08-24   18% ▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 73.2
+source                         results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             2% ▇
+weighted average                        = 73.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

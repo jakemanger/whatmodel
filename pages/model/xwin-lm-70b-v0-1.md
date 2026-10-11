@@ -6,41 +6,124 @@
 
 Xwin-LM · released 2023-09 · 70B params · llama2
 
-**score 44.0** ±1.2 · #612 of 934 · from 7 benchmark results across 2 sources
+**score 43.9** ±1.2 · #616 of 949 · from 7 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Xwin-LM 70B v0.1 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃●██▇▆▄▃▁   #400 of 469*    8.9%      1
+chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #337 of 466*     49%      2
+math            ▁▂▃▅●▅▄█▄▁▁▁   #265 of 400*    7.4%      1
+</pre>
+
+<details><summary>coding · #400 of 469 · 8.9% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   66.1%  ▃▃▃·▆▃●█▃▂▂▅ beats 13/25  very easy · avg 86%    8.9%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #337 of 466 · 49% of its score</summary>
+
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       24.6%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 63/122  medium · avg 39%        46%  typical
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   95.6%  ▂▂·▆·▇▃▆█▆●▂ beats 43/45   very easy · avg 96%    2.7%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #265 of 400 · 7.4% of its score</summary>
+
+Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [InternVL2-4B](internvl2-4b.md) here, though they rank lower overall.
+
+<pre>
+test   result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   65.5%  ▆▂▅█▅▅●▆···▂ beats 20/25  easy · avg 73%    7.4%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       65.6%  ▁·····▂█▂●·▁ beats 19/25  easy · avg 77%       23%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 65.0%  ▁▁▃▃▄█▄▁●··▁ beats 20/25  easy · avg 74%      8.4%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   38.2%  ▂··▁●▂▂▂█▅▁▂ beats 5/25   medium · avg 61%    2.5%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  65.6%    44.5   2023-11-20   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       66.1%    40.0   2023-11-20    9% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            65.0%    45.0   2023-11-20    8% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           65.5%    46.8   2023-11-20    8% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  38.2%    31.1   2023-11-20    2% ▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  24.6%    44.3   2025-08-09   45% ▇▇▇▇▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  95.6%    47.9   2025-08-09    3% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 44.0
+source                               results  share of the score
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                     5   50% ▇▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   49% ▇▇▇▇▇▇
+prior: pull toward the middle                   1% ▇
+weighted average                              = 43.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
 <pre>
-download        size  score
-4-bit q4_0  ~38.87GB   44.0
+download          size  score
+4-bit q4_0    ~38.87GB   43.9
+4-bit Q4_K_M   ~41.4GB   43.9
+2-bit Q2_K     ~25.5GB   43.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run xwinlm:70b-v0.1
+# 4-bit Q4_K_M · ~41.4GB
+llama cli -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q4_K_M
+# 2-bit Q2_K · ~25.5GB
+llama cli -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q2_K
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q2_K
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~41.4GB
+lms get https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit Q2_K · ~25.5GB
+lms get https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF@Q2_K -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~38.87GB
+ollama run xwinlm:70b-v0.1
+# 4-bit Q4_K_M · ~41.4GB
+ollama run hf.co/mradermacher/Xwin-LM-70B-V0.1-GGUF:Q4_K_M
+# 2-bit Q2_K · ~25.5GB
+ollama run hf.co/mradermacher/Xwin-LM-70B-V0.1-GGUF:Q2_K
+```
 
 [interactive version](https://whatmodel.sh/model/xwin-lm-70b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

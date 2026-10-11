@@ -6,30 +6,82 @@
 
 Meta · released 2024-09 · 10.7B params · llama3.2
 
-**score 42.7** ±1.8 · #646 of 934 · from 11 benchmark results across 4 sources
+**score 42.7** ±1.8 · #652 of 949 · from 11 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Llama 3.2 11B Vision Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+coding              ▁▁▁▃▆●█▇▆▄▃▁   #321 of 469*    8.5%      1
+math                ▁▂▃●▆▅▄█▄▁▁▁   #300 of 400*     14%      2
+vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄    #141 of 150     47%      6
+</pre>
+
+<details><summary>coding · #321 of 469 · 8.5% of its score</summary>
+
+Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
+
+<pre>
+test       result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>   62.8%  ▁▁▁▁▁▃▅●█▃▂▁ beats 103/190  easy · avg 72%    8.5%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #300 of 400 · 14% of its score</summary>
+
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>   48.3%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 25/80  medium · avg 55%    8.5%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>        24.3%  ▂····●···▂█▆ beats 1/9    medium · avg 53%    5.7%  at its level
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #141 of 150 · 47% of its score</summary>
+
+Beats [Gemma 3 4B](gemma-3-4b.md), [CogVLM2 Llama3 Chat 19B](cogvlm2-llama3-chat-19b.md), [MiniCPM-V 2.6](minicpm-v-2-6.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                                                         result  vs the others in its run  difficulty                counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                               992.7  ▁▁▂●▂▂▄▅▅▆██ beats 8/145  avg 1068                     19%  blunt
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  4.7900 MM-MT-Bench score (1-10)  ▅··●·█·▃▃··▅ beats 2/9    avg 5.740 MM-MT-Bench s…     10%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   67.1%  ▃···●▃··▅▃▃▃ beats 2/9    easy · avg 74%              6.2%  blunt · at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                    23.0%  ●·▂······█▄▄ beats 0/9    medium · avg 52%            5.8%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                          24.3%  ▂····●···▂█▆ beats 1/9    medium · avg 53%            5.7%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                       14.8%  ●·▄▄▄··▄▄▄▄█ beats 0/9    easy · avg 77%              0.5%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                 68.5%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 103/183  easy · avg 76%       19%  at its level
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   24.4%  ▁▁·▁▂▂▄●▄▅▄▄ beats 19/66    hard · avg 31%      9.2%  typical
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.0%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 177/276  medium · avg 73%    6.2%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                                      score  implies  date        weight
-<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                                      68.5%    46.2   2024-10-10   20% ▇▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  4.7900 MM-MT-Bench score (1-10)    43.6   2024-10-10    9% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>                                                 62.8%    47.7   2024-10-10    8% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 48.3%    48.1   2024-10-10    8% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               67.1%    43.4   2024-10-10    6% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                23.0%    25.0   2024-10-10    6% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      24.3%    28.5   2024-10-10    6% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   14.8%   -28.0   2024-10-10    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                            992.7    41.1   2026-10-02   20% ▇▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>                            24.4%    47.2   2025-09-29    9% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                            71.0%    48.8   2024-12-05    6% ▇
-prior                   pull toward the middle                                             50.0                 1% ▇
-                        weighted average                                                 = 42.7
+source                               results  share of the score
+<a name="paper-2410.07073v2-pixtral"></a><a href="https://arxiv.org/html/2410.07073v2#S3.T3">Pixtral 12B</a>                                8   64% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                1   19% ▇▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>        1    9% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    6% ▇
+prior: pull toward the middle                   1% ▇
+weighted average                              = 42.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -43,13 +95,17 @@ download          size  score
 8-bit q8_0    ~13.34GB   42.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
 ```sh
-# 4-bit q4_k_m
+# 4-bit q4_k_m · ~6.92GB
 ollama run llama3.2-vision:11b-instruct-q4_K_M
-# 8-bit q8_0
+# 8-bit q8_0 · ~13.34GB
 ollama run llama3.2-vision:11b-instruct-q8_0
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/llama-3-2-11b-vision) · [JSON](https://whatmodel.sh/api?format=json&all=1)

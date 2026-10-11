@@ -6,22 +6,37 @@
 
 ElevenLabs · released 2025-06 · closed weights
 
-**score 55.1** ±8.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.8** ±8.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks ElevenLabs v3 Alpha among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.37 / 5    57.6   2026-09-25   69% ▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.7                31% ▇▇▇▇
-                        weighted average                          = 55.1
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preference MO…</a>  3.37 / 5  ●·█········█ beats 0/2    medium · avg 3.08 / 5     69%  at its level · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-vibevoice-mit-figure"></a><a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">Microsoft VibeVoice own subjective eval…</a>        1   69% ▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       31% ▇▇▇▇
+weighted average                                   = 54.8
+</pre>
 
 <sub>Licences: Microsoft VibeVoice own subjective evaluation figure ([MIT](../../licenses/speech-followup-NOTICES.txt))</sub>
 

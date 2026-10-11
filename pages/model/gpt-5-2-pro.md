@@ -6,23 +6,50 @@
 
 OpenAI · released 2025-12 · proprietary
 
-**score 77.5** ±1.0 · #22 of 934 · from 4 benchmark results across 2 sources
+**score 77.1** ±1.0 · #26 of 949 · from 4 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks GPT-5.2 Pro among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others         rank  counts  tests
+math  ▁▂▃▅▆▅▄█▄●▁▁   #21 of 400*     84%      2
+</pre>
+
+<details><summary>math · #21 of 400 · 84% of its score</summary>
+
+Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3-8-flash.md), [Muse Spark 1.3](muse-spark-1-3.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      46.0%  ▁▂▁▂█●▂▂▁▁▁▁ beats 43/63  very hard · avg 0.1%     44%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   74.0%  ▂··▁▁▃▄▄█●▃▃ beats 62/82  very hard · avg 1.2%     40%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-2-pro-2025-12-11-medium/results.json">ARC-AGI-2 public evaluation set (…</a>   37.9%  █··▂▅▁▃▁●·▁▃ beats 19/24  very hard · avg 0.3%     12%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/blob/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-2-pro-2025-12-11-high/results.json">ARC-AGI-1 public evaluation set (…</a>   94.6%  ▁·▇▃▁·█▇▁·●▃ beats 21/27  very hard · avg 4.1%    3.2%  sharp · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          46.0%    77.5   2026-06-13   46% ▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       74.0%    77.8   2026-06-13   41% ▇▇▇▇▇
-<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-2-pro-2025-12-11-medium/results.json">ARC-AGI-2 public evaluation s…</a>  37.9%    74.9   2026-06-04    8% ▇
-                        <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/blob/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-2-pro-2025-12-11-high/results.json">ARC-AGI-1 public evaluation s…</a>  94.6%    80.9   2026-06-04    6% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 77.5
+source                                    results  share of the score
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        2   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-2-pro-2025-12-11-medium/results.json">ARC Prize Foundation model_baseline out…</a>        2   16% ▇▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 77.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt))</sub>
 

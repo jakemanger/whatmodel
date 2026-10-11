@@ -6,43 +6,126 @@
 
 Mistral · released 2023-09 · 7.24B params · apache-2.0
 
-**score 32.4** ±1.1 · #821 of 934 · from 7 benchmark results across 6 sources
+**score 32.0** ±1.0 · #837 of 949 · from 12 benchmark results across 8 sources
+
+## What it's good at
+
+<sub>● marks Mistral 7B Instruct v0.1 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁●▆██▇▆▄▃▁   #430 of 469*     36%      1
+chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #443 of 466*     17%      2
+</pre>
+
+<details><summary>coding · #430 of 469 · 36% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
+
+<pre>
+test       result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>   28.7%  ▁●▄▅▇█·▄▇▅▄▄ beats 3/42   easy · avg 78%     36%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #443 of 466 · 17% of its score</summary>
+
+Beats [Phi-2 (2.7B)](phi-2.md), [Minotaur 13B (fixed)](minotaur-13b-fixed.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty  counts  why
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1008.0  ▂▁▂▁●▇█▆▇▄▂▂ beats 16/95   avg 1201      8.7%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1110.3  ▁▁▁●▃▃▃▆▆▇█▃ beats 17/379  avg 1268      8.6%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (9)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    17.6%  ▂●▃▄▄█▁▄▅▃▁▃ beats 2/42    medium · avg 55%     17%  typical
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2024-02-11%2018%3A31%3A12.754223.json">Natural Questions (closed book)</a>      17.8%  ▁·▁·▁▂▁▂·●▂█ beats 14/28   medium · avg 58%     12%  typical
+<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mistral-7B-Instruct-v0.1_5shots.zip">MMLU-Pro</a>                             24.2%  ●▂▅█▃·█▃▅··▂ beats 0/23    medium · avg 57%    9.0%  typical
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   36.5%  ▂●▂▃█▄▃▆▃▅▂▂ beats 8/81    medium · avg 58%    3.5%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2024-02-25%2022%3A42%3A33.912317.json">TriviaQA</a>                             52.2%  ▁··▁█▃▃▁▄▅●█ beats 20/28   easy · avg 79%      1.5%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   59.7%  ▃▁▁▁▁▁▁▁●█▅▁ beats 88/276  medium · avg 73%    1.5%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   69.0%  ▁▁▁▁▁▁▁▂●█▄▃ beats 37/146  easy · avg 83%      1.3%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2023-12-24%2022%3A43%3A28.675599.json">TruthfulQA MC2</a>                       55.9%  ▅▃█▆▁▂●···▁▁ beats 28/31   medium · avg 64%    0.7%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2023-12-26%2009%3A44%3A31.720031.json">HaluEval QA hallucination detecti…</a>   49.2%  ●▁▁·▁▁·▁▁▁▁▁ beats 4/27    medium · avg 70%    0.7%  sharp · too hard for it · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        28.7%    32.8   2024-03-28   47% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                17.6%    31.2   2024-03-28   21% ▇▇▇
-<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mistral-7B-Instruct-v0.1_5shots.zip">MMLU-Pro</a>                         24.2%    30.7                13% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1110.3    31.2   2026-10-02   11% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   36.5%    32.0   2026-09-19    4% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   59.7%    41.4   2024-05-27    2% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   69.0%    40.7   2026-04-17    2% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 32.4
+source                                    results  share of the score
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   53% ▇▇▇▇▇▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-Instruct-v0.1/results_2024-02-11%2018%3A31%3A12.754223.json">Hallucinations Leaderboard results</a>              4   14% ▇▇
+<a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Mistral-7B-Instruct-v0.1_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1    9% ▇
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    9% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    9% ▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    3% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 32.0
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
 <sub>[context source](https://arxiv.org/abs/2310.06825v1): Context length from the maker's technical report.</sub>
 
 <pre>
-download       size  score
-4-bit q4_0  ~4.84GB   32.4
+download         size  score
+4-bit q4_0    ~4.84GB   32.0
+4-bit Q4_K_M   ~4.4GB   32.0
+8-bit Q8_0     ~7.7GB   32.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run mistral:v0.1
+# 4-bit Q4_K_M · ~4.4GB
+llama cli -hf TheBloke/Mistral-7B-Instruct-v0.1-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/Mistral-7B-Instruct-v0.1-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.7GB
+llama cli -hf TheBloke/Mistral-7B-Instruct-v0.1-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/Mistral-7B-Instruct-v0.1-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.4GB
+lms get https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~7.7GB
+lms get https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~4.84GB
+ollama run mistral:v0.1
+# 4-bit Q4_K_M · ~4.4GB
+ollama run hf.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.7GB
+ollama run hf.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/mistral-7b-instruct-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

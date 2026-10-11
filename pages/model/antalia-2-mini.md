@@ -6,22 +6,37 @@
 
 Patientdesk.ai · released 2026-10 · 0.0076B params · apache-2.0
 
-**score 40.1** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 39.9** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Antalia-2 Mini among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-cloud0day3-antalia-mini"></a>Antalia-2 Mini model …  <a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Freya-TR-Eval Turkish TTS int…</a>   1.1%    39.5   2026-10-09   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.7                 6% ▇
-                        weighted average                       = 40.1
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Freya-TR-Eval Turkish TTS intelli…</a>    1.1%  ▄··▄··▄···▂● beats 9/10   avg 0.3%       94%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                           results  share of the score
+<a name="card3-cloud0day3-antalia-mini"></a><a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Antalia-2 Mini model card (lab)</a>        1   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle               6% ▇
+weighted average                          = 39.9
+</pre>
 
 <sub>Licences: Antalia-2 Mini model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 

@@ -6,42 +6,76 @@
 
 ElevenLabs · released 2026-02 · proprietary
 
-**score 65.4** ±1.3 · #14 of 117 · from 19 benchmark results across 7 sources
+**score 65.1** ±1.3 · #15 of 118 · from 20 benchmark results across 8 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Eleven v3 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>              5.8%    69.3   2026-07-27    9% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (pr…</a>  3.92 / 5    67.2   2026-07-27    7% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>      5.1%    69.4   2026-07-27    6% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>             10.7%    62.4   2026-07-27    6% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>      5.1%    60.7   2026-07-27    4% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker si…</a>     48.9%    46.5   2026-07-27    3% ▇
-<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      2.4%    67.2   2026-06-25    7% ▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  3.39 / 5    72.1   2026-06-25    7% ▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      3.8%    65.9   2026-06-25    6% ▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.35 / 5    64.6   2026-06-25    6% ▇
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>    1281.1    68.0   2026-09-25   17% ▇▇
-<a name="speech-voxtral-tts-report"></a>Voxtral TTS             <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>     39.2%    60.1   2026-04-06    4% ▇
-                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>     49.7%    58.8   2026-04-06    4% ▇
-                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>      2.2%    64.4   2026-04-06    2% ▇
-                        <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>      1.3%    64.8   2026-04-06    2% ▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Co…</a>  3.33 / 5    60.7   2026-07-16    3% ▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability…</a>  3.59 / 5    63.5   2026-07-16    2% ▇
-<a name="speech-voicefirst-indic-ccby"></a>Preferences of a Voic…  <a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 India…</a>    1056.3    67.4   2026-04-23    3% ▇
-<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>    111.7%  -872.7   2026-08-12    0% ▇
-prior                   pull toward the middle                      49.7                 1% ▇
-                        weighted average                          = 65.4
+task           vs the others     rank  counts  tests
+voice cloning  ●···█······█   #3 of 3     11%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #3 of 3 · 11% of its score</summary>
 
-<sub>Licences: Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · Voxtral TTS ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages ([CC BY 4.0](../../licenses/speech-voicefirst-indic-ccby.txt)) · Addis AI Amharic TTS benchmark ([CC BY-SA 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
+Trails [Eleven Flash v2.5](elevenlabs-flash-v2-5.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspecifi…</a>   39.2%  ●█·········█ beats 0/2    hard · avg 22%    3.6%  at its level · small run
+<a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language speaker …</a>   49.7%  ●█·········█ beats 0/2    hard · avg 31%    3.5%  at its level · small run
+<a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER (Vox…</a>    2.2%  ●····█·····█ beats 0/2    avg 5.4%          1.9%  small run
+<a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspecifi…</a>    1.3%  ●··········▄ beats 0/2    avg 3.3%          1.7%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (16)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>    1281.1  ▁···▁▃··█▄▁● beats 18/18  avg 1078                  16%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>                  5.8%  █····█·████● beats 6/6    avg 26%                  8.2%  sharp
+<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>    1231.8  ▃·▃▃▃·▃█●▃·▃ beats 9/12   avg 1080                 8.2%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>      2.4%  ▄·····█··▄█● beats 6/7    avg 8.3%                 7.1%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (predic…</a>  3.92 / 5  █·▄·▄▄·●···▄ beats 5/6    medium · avg 2.98 / 5    6.5%  at its level
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>      3.8%  ▄·····▄█▄●·▄ beats 5/7    avg 12%                  6.2%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-langu…</a>  3.39 / 5  █··▄█▄····●▄ beats 6/7    hard · avg 2.00 / 5      6.0%  at its level
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>                 10.7%  ▄▄●···▄··▄·█ beats 2/6    avg 23%                  5.8%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice clone…</a>      5.1%  ▄···▄··▄··●█ beats 3/6    avg 20%                  5.6%  typical
+<a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-l…</a>  3.35 / 5  ▃▃█···●···▃▃ beats 5/7    medium · avg 2.52 / 5    5.2%  at its level
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added langua…</a>      5.1%  ●··█······██ beats 0/3    avg 12%                  3.9%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker simila…</a>     48.9%  ●·····▄▄·▄▄█ beats 0/6    medium · avg 49%         3.0%  at its level
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Code-S…</a>  3.33 / 5  ●··▄·······▄ beats 0/3    medium · avg 2.67 / 5    2.8%  at its level
+<a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 Indian la…</a>    1056.3  ▄····▄·····● beats 3/3    avg 897                  2.3%  typical
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability (hu…</a>  3.59 / 5  ●·▄······▄·▄ beats 0/4    medium · avg 3.01 / 5    2.1%  at its level
+<a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (Chir…</a>    111.7%  ●·····▄·▄·██ beats 0/6    avg 8.7%                 0.0%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report</a>             6   33% ▇▇▇▇
+<a name="speech-zonos2-report-bysa"></a><a href="https://arxiv.org/html/2606.24320v2">ZONOS2 Technical Report</a>                         4   24% ▇▇▇
+<a name="speech-vapi-humanness-20260925"></a><a href="https://humannessindex.vapi.ai/api/models">The Humanness Index by Vapi · September…</a>        1   16% ▇▇
+<a name="speech-voxtral-tts-report"></a><a href="https://arxiv.org/html/2603.25551v2">Voxtral TTS</a>                                     4   11% ▇
+<a name="speech-vapi-humanness-20260610"></a><a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">The Humanness Index by Vapi · June 2026…</a>        1    8% ▇
+<a name="speech-rw-voice-eq-report"></a><a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ Bench</a>                               2    5% ▇
+<a name="speech-voicefirst-indic-ccby"></a><a href="https://arxiv.org/html/2604.21481v2">Preferences of a Voice-First Nation: pa…</a>        1    2% ▇
+<a name="speech-amharic-addis-bysa"></a><a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Addis AI Amharic TTS benchmark</a>                  1    0% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 65.1
+</pre>
+
+<sub>Licences: Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · Voxtral TTS ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · The Humanness Index by Vapi · June 2026 production export ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages ([CC BY 4.0](../../licenses/speech-voicefirst-indic-ccby.txt)) · Addis AI Amharic TTS benchmark ([CC BY-SA 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
 
 ## How to run it
 

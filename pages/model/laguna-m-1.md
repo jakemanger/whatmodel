@@ -6,23 +6,55 @@
 
 Poolside · released 2026-04 · 225B params (23B active) · apache-2.0
 
-**score 67.1** ±1.9 · #116 of 934 · from 4 benchmark results across 2 sources
+**score 67.0** ±1.8 · #117 of 949 · from 4 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Laguna M.1 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others         rank  counts  tests
+agent tasks  ██●········█       #2 of 4     46%      4
+coding       ▁▁▁▃▆██▇●▄▃▁   #114 of 469     83%      4
+</pre>
+
+<details><summary>agent tasks · #2 of 4 · 46% of its score</summary>
+
+<pre>
+test                          result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%  ▁▁▁▁▁▁▂▄█●▁▁ beats 97/131  hard · avg 27%          18%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%  ▂▂▅▅█●██▆▂▃▃ beats 16/36   very hard · avg 11%     16%  at its level · small run
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%  ▁··▁▃▂▅●█▃▃▁ beats 25/60   hard · avg 27%          12%  at its level · small run
+<a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#benchmark-results">SWE-bench Pro (lab)</a>            49.2%  ▅▃●·▃·▅▅▅█▃▃ beats 3/15                              —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>coding · #114 of 469 · 83% of its score</summary>
+
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kimi K2 Thinking](kimi-k2-thinking.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
+
+<pre>
+test                          result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1348.1  ▁▂▄▃●█▄▇▆▄▁▁ beats 27/119  avg 981            53%  sharp
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%  ▁▁▁▁▁▁▂▄█●▁▁ beats 97/131  hard · avg 27%     18%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%  ▁··▁▃▂▅●█▃▃▁ beats 25/60   hard · avg 27%     12%  at its level · small run
+<a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#benchmark-results">SWE-bench Pro (lab)</a>            49.2%  ▅▃●·▃·▅▅▅█▃▃ beats 3/15                         —  not counted yet: no other model in the …
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                           score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1348.1    66.5   2026-10-01   52% ▇▇▇▇▇▇
-<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%    68.5   2026-05-26   19% ▇▇
-                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%    68.5   2026-05-26   16% ▇▇
-                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%    67.8   2026-05-26   12% ▇
-prior                   pull toward the middle                  50.0                 2% ▇
-                        weighted average                      = 67.1
+source                         results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   53% ▇▇▇▇▇▇
+<a name="report-2605.27605v1"></a><a href="https://arxiv.org/html/2605.27605v1">Poolside (lab)</a>                       3   46% ▇▇▇▇▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 67.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Poolside ([CC BY-SA 4.0](../../licenses/report-2605.27605v1.txt))</sub>
 
@@ -43,20 +75,63 @@ api (Poolside) · price unknown · [huggingface.co](https://huggingface.co/pools
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only   ~451.6GB   67.1
-4-bit fp8 · nvidia only    ~229.08GB   67.1
-4-bit nvfp4 · nvidia only  ~139.29GB   67.1
+16-bit bf16 · nvidia only   ~451.6GB   67.0
+4-bit fp8 · nvidia only    ~229.08GB   67.0
+4-bit nvfp4 · nvidia only  ~139.29GB   67.0
+4-bit Q4_K_M                ~136.1GB   67.0
+4-bit mlx-4bit · mac only     ~127GB   67.0
+4-bit mlx-8bit · mac only   ~239.9GB   67.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'
-# 4-bit fp8 · nvidia only
-pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1-FP8 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'
-# 4-bit nvfp4 · nvidia only
-pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1-NVFP4 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'
+# 4-bit Q4_K_M · ~136.1GB
+llama cli -hf linuxid10t/Laguna-M.1-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf linuxid10t/Laguna-M.1-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~136.1GB
+lms get https://huggingface.co/linuxid10t/Laguna-M.1-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~127GB
+lms get https://huggingface.co/mlx-community/Laguna-M.1-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~239.9GB
+lms get https://huggingface.co/mlx-community/Laguna-M.1-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~127GB
+mlx_lm.chat --model mlx-community/Laguna-M.1-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Laguna-M.1-4bit
+# 4-bit mlx-8bit · mac only · ~239.9GB
+mlx_lm.chat --model mlx-community/Laguna-M.1-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Laguna-M.1-8bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~451.6GB
+pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'
+# 4-bit fp8 · nvidia only · ~229.08GB
+pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1-FP8 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'
+# 4-bit nvfp4 · nvidia only · ~139.29GB
+pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1-NVFP4 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'
+```
 
 [interactive version](https://whatmodel.sh/model/laguna-m-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

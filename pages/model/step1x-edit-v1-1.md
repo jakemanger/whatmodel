@@ -10,21 +10,50 @@ StepFun · released 2025-07 · 12.43B params · apache-2.0
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Step1X-Edit v1.1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card2-stepfun-ai-step1x-edit-v1p2"></a>stepfun-ai/Step1X-Edi…  <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>        51.6%    48.2   2025-12-29   23% ▇▇▇
-                        <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, lan…</a>  69.7%    47.2   2025-12-29   23% ▇▇▇
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         69.2%    46.0   2025-12-01   30% ▇▇▇▇
-<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  66.9%    52.1   2025-11-14   21% ▇▇
-prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 48.2
+task                    vs the others       rank  counts  tests
+image to image / edit…  ▁▁·▃●▃█▃▃▄▁▁   #50 of 62     76%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #50 of 62 · 76% of its score</summary>
+
+Beats [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>              69.2%  ▂····▂▄▂●·█▂ beats 5/11   easy · avg 73%       30%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>             51.6%  ●█·········█ beats 0/2    medium · avg 54%     23%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, languag…</a>   69.7%  ●·······█··█ beats 0/2    easy · avg 73%       23%  at its level · small run
+<a href="https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md">GEdit-Bench-EN overall (G_O, GPT-…</a>   69.7%  ▄·····█·●▄·▄ beats 3/5                           —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-turn …</a>   66.9%  █▄▄·▄▄▄▄█·▄● beats 11/12  medium · avg 65%     20%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="card2-stepfun-ai-step1x-edit-v1p2"></a><a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">stepfun-ai/Step1X-Edit-v1p2 model card …</a>        2   46% ▇▇▇▇▇
+<a name="visual-unicbench"></a><a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicEdit-10M: A Dataset and Benchmark B…</a>        1   30% ▇▇▇▇
+<a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1   20% ▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 48.2
+</pre>
 
 <sub>Licences: stepfun-ai/Step1X-Edit-v1p2 model card ([Apache-2.0](../../licenses/stepfun-ai--Step1X-Edit-v1p2.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -44,11 +73,15 @@ version               needs  score
 bf16 · nvidia only  ~50.6GB   48.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~50.6GB
 git clone -b step1xedit https://github.com/Peyton-Chen/diffusers.git && cd diffusers && pip install -e . && pip install transformers==4.55.0 && python -c "import torch; from diffusers import Step1XEditPipeline; from diffusers.utils import load_image; p=Step1XEditPipeline.from_pretrained('stepfun-ai/Step1X-Edit-v1p1-diffusers', torch_dtype=torch.bfloat16); p.to('cuda'); p(image=load_image('input.png').convert('RGB'), prompt='add a ruby pendant to the neck of the girl', num_inference_steps=28, true_cfg_scale=6.0, generator=torch.Generator().manual_seed(42)).images[0].save('0000.jpg')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/step1x-edit-v1-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

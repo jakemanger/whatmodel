@@ -6,26 +6,85 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 57.1** ±3.8 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 53.8** ±2.6 · #353 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Olmo 3 7B Think DPO among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others          rank  counts  tests
+math  ▁▂▃▅▆▅●█▄▁▁▁   #175 of 400*     97%      2
+</pre>
+
+<details><summary>math · #175 of 400 · 97% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
+
+<pre>
+test                               result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified) (lab)</a>     92.4%  ▃·····●···▅█ beats 1/6    very easy · avg 90%     50%  maxed out
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (lab)</a>   40.5%  ▄······█▄●·█ beats 4/6    hard · avg 30%          47%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card2-allenai-olmo-3-7b-think"></a>allenai/Olmo-3-7B-Thi…  <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (…</a>  40.5%    54.9   2026-06-25   50% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified) (la…</a>  92.4%    60.7   2026-06-25   44% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 57.1
+source                                    results  share of the score
+<a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card (lab)</a>        2   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 53.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: allenai/Olmo-3-7B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Think.txt))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download        size  score
+4-bit Q4_K_M  ~4.5GB   53.8
+8-bit Q8_0    ~7.8GB   53.8
+</pre>
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
+```sh
+# 4-bit Q4_K_M · ~4.5GB
+llama cli -hf mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.8GB
+llama cli -hf mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q8_0
+```
+
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.5GB
+lms get https://huggingface.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~7.8GB
+lms get https://huggingface.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.5GB
+ollama run hf.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.8GB
+ollama run hf.co/mradermacher/Olmo-3-7B-Think-DPO-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/olmo-3-7b-think-dpo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,34 +6,61 @@
 
 OpenAI · released 2023-10 · closed weights
 
-**score 44.2** ±1.3 · comparison only: no current run option verified · from 13 benchmark results across 10 sources
+**score 44.4** ±1.3 · comparison only: no current run option verified · from 13 benchmark results across 10 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks DALL·E 3 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>              967.8    43.5   2026-09-24   26% ▇▇▇
-<a name="paper-2505.17613v2-mmmg"></a>MMMG: a Comprehensive…  <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                            62.7%    43.6   2026-09-30    9% ▇
-                        <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (averag…</a>     35.2%    38.4   2026-09-30    5% ▇
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>     72.2%    42.9   2026-07-12   12% ▇
-                        <a href="https://arxiv.org/html/2506.02161v3#S4.T3">GenAI-Bench (VQAScore overall)</a>     81.0%    55.4   2026-07-12    1% ▇
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.63 / 5    46.3   2024-12-25   12% ▇
-<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>     61.0%    47.2   2024-08-26   11% ▇
-<a name="kandinsky3-original-human-comparison"></a>Kandinsky 3.0           <a href="https://arxiv.org/html/2312.03511v2">Human text alignment · wins a…</a>     50.0%    45.3   2023-12-11    4% ▇
-                        <a href="https://arxiv.org/html/2312.03511v2">Human visual quality · wins a…</a>     56.0%    42.2   2023-12-11    4% ▇
-<a name="visual-geckonum"></a>Evaluating Numerical …  <a href="https://arxiv.org/html/2406.14774v3#S5.T2">GeckoNum Task 1: exact number…</a>     45.2%    47.5   2025-02-06    6% ▇
-<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>     76.0%    46.8   2024-03-10    5% ▇
-<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.32 / 5    37.2   2024-11-13    3% ▇
-<a name="paper-2502.10663v1-real"></a>REAL: Realism Evaluat…  <a href="https://arxiv.org/html/2502.10663v1">REAL realism benchmark for T2…</a>     52.4%    29.6   2025-02-15    1% ▇
-prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 44.2
+task           vs the others        rank  counts  tests
+text to image  ▁▂▇▇●▅█▇▂▃▁▁   #96 of 157     99%     13
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #96 of 157 · 99% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [UNO](uno.md) here, though they rank lower overall.
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                  967.8  ▂●▃▄▇█▄▂▄▂·▂ beats 3/75   avg 1027                27%  typical
+<a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>     72.2%  ▂●····▄▄▄··▂ beats 3/11   easy · avg 79%          12%  at its level
+<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  3.63 / 5  █▄·▄██▄▄█▄▄● beats 14/14  easy · avg 3.83 / 5     12%  at its level
+<a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark score)</a>       61.0%  ▄·▄·█▄▄▄···● beats 7/7    easy · avg 66%          11%  at its level
+<a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                                62.7%  █●·▄·▄·█···▄ beats 3/8    easy · avg 71%         9.5%  at its level
+<a href="https://arxiv.org/html/2406.14774v3#S5.T2">GeckoNum Task 1: exact number gen…</a>     45.2%  ██·█·······● beats 3/3    medium · avg 51%       6.4%  at its level
+<a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generation …</a>     76.0%  ▄▄·█·······● beats 4/4    easy · avg 80%         4.8%  at its level
+<a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>     35.2%  ●··█▄▄·▄▄·▄▄ beats 1/9    medium · avg 51%       4.7%  at its level
+<a href="https://arxiv.org/html/2312.03511v2">Human text alignment · wins again…</a>     50.0%  █·█········● beats 2/2    medium · avg 58%       4.0%  at its level · small run
+<a href="https://arxiv.org/html/2312.03511v2">Human visual quality · wins again…</a>     56.0%  █····█·····● beats 2/2    easy · avg 66%         3.6%  at its level · small run
+<a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall satis…</a>  3.32 / 5  ●·▄········█ beats 0/3    easy · avg 3.87 / 5    3.1%  at its level
+<a href="https://arxiv.org/html/2506.02161v3#S4.T3">GenAI-Bench (VQAScore overall)</a>         81.0%  █···█·●····█ beats 2/3    easy · avg 79%         1.1%  blunt
+<a href="https://arxiv.org/html/2502.10663v1">REAL realism benchmark for T2I (a…</a>     52.4%  ●··········▄ beats 0/2    easy · avg 65%         0.9%  blunt · at its level · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   27% ▇▇▇
+<a name="paper-2505.17613v2-mmmg"></a><a href="https://arxiv.org/html/2505.17613v2">MMMG: a Comprehensive and Reliable Benc…</a>        2   14% ▇▇
+<a name="visual-tiif-bench"></a><a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench: How Does Your T2I Model Fol…</a>        2   13% ▇▇
+<a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   12% ▇
+<a name="visual-conceptmix"></a><a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix: A Compositional Image Gener…</a>        1   11% ▇
+<a name="kandinsky3-original-human-comparison"></a><a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>                                   2    8% ▇
+<a name="visual-geckonum"></a><a href="https://arxiv.org/html/2406.14774v3#S5.T2">Evaluating Numerical Reasoning in Text-…</a>        1    6% ▇
+<a name="visual-imagenhub"></a><a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub: Standardizing the evaluation…</a>        1    5% ▇
+<a name="visual-kolors-readme"></a><a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">Kwai-Kolors/Kolors repository README</a>            1    3% ▇
+<a name="paper-2502.10663v1-real"></a><a href="https://arxiv.org/html/2502.10663v1">REAL: Realism Evaluation of Text-to-Ima…</a>        1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 44.4
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MMMG: a Comprehensive and Reliable Benchmark for Multitask Multimodal Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · Kandinsky 3.0 ([CC BY 4.0](../../licenses/kandinsky3-original-human-comparison-CC-BY-4.0.txt)) · Evaluating Numerical Reasoning in Text-to-Image Models ([CC-BY-4.0](../../licenses/visual-geckonum.txt)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt)) · Kwai-Kolors/Kolors repository README ([Apache-2.0](../../licenses/visual-kolors-readme.txt)) · REAL: Realism Evaluation of Text-to-Image Generation Models for Effective Data Augmentation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

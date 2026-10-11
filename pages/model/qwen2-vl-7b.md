@@ -6,64 +6,165 @@
 
 Alibaba · released 2024-08 · 8.29B params · apache-2.0
 
-**score 46.0** ±1.0 · #552 of 934 · from 27 benchmark results across 6 sources
+**score 45.9** ±1.0 · #559 of 949 · from 27 benchmark results across 6 sources
+
+## What it's good at
+
+<sub>● marks Qwen2-VL 7B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+coding              ▁▁▁▃▆●█▇▆▄▃▁   #324 of 469*    2.4%      1
+math                ▁▂▃●▆▅▄█▄▁▁▁    #337 of 400     19%      3
+vision &amp; documents  ▁▁▃●▁▃▄▃▆▇█▄    #130 of 150     79%     17
+</pre>
+
+<details><summary>coding · #324 of 469 · 2.4% of its score</summary>
+
+Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
+
+<pre>
+test       result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>   62.2%  ▁▁▁▁▁▃▅●█▃▂▁ beats 102/190  easy · avg 72%    2.4%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #337 of 400 · 19% of its score</summary>
+
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
+
+<pre>
+test                        result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (lab)</a>   58.2%  ▃··●▅·▃█▅▅▅█ beats 1/16   medium · avg 69%     13%  at its level · several runs
+<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>            16.3%  ▁●·▁··▄▁▃▇▇█ beats 1/24   hard · avg 27%      4.1%  small run
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>    27.9%  ▂▄●▃█▇▅▆▄▃▄▁ beats 11/80  medium · avg 55%    2.6%  at its level
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #130 of 150 · 79% of its score</summary>
+
+Beats [Nova Lite](nova-lite.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall.
+
+<pre>
+test                                                         result  vs the others in its run   difficulty                counts  why
+<a href="https://arxiv.org/html/2409.12191v2">MMMU (val) (lab)</a>                                              54.1%  ▂···●▂▂▂▄▄▄█ beats 3/16    medium · avg 61%             15%  at its level · several runs
+<a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (lab)</a>                                    58.2%  ▃··●▅·▃█▅▅▅█ beats 1/16    medium · avg 69%             13%  at its level · several runs
+<a href="https://arxiv.org/html/2409.12191v2">MMStar (lab)</a>                                                  60.7%  ▂··▄●▂·▄█▂▄▆ beats 3/16    medium · avg 65%            8.8%  at its level
+<a href="https://arxiv.org/html/2409.12191v2">MMMU Pro (lab)</a>                                                43.5%  ▃·█·●▃▃▃▅▅▃█ beats 5/16    medium · avg 46%            6.3%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1030.8  ▁▁▂▂●▂▄▅▅▆██ beats 18/145  avg 1068                    5.7%  blunt
+<a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>                                             16.3%  ▁●·▁··▄▁▃▇▇█ beats 1/24    hard · avg 27%              4.1%  small run
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                         -49.0000  ▃●▃·▃█·▅▃▃▃▃ beats 1/12    avg -0.671                  3.8%  typical
+<a href="https://arxiv.org/html/2409.12191v2">HallusionBench (lab)</a>                                          50.6%  ▃·▃·●▃▅▅▃▅█▅ beats 2/16    medium · avg 55%            3.5%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                                                 83.0%  ▂··▂·●▃·▅▂▆█ beats 2/17    easy · avg 85%              3.4%  blunt · several runs
+<a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (lab)</a>                                          76.5%  ▃·▃▅█●▃▃▃▃▃▃ beats 7/13    easy · avg 80%              3.2%  at its level · small run
+<a href="https://arxiv.org/html/2409.12191v2">DocVQA (lab)</a>                                                  94.5%  ▃··▅▃●▃█▃█▅▅ beats 5/17    very easy · avg 94%         3.2%  blunt · maxed out
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  5.4500 MM-MT-Bench score (1-10)  ▅··▃·●·▃▃··▅ beats 3/9     avg 5.740 MM-MT-Bench s…    2.8%  sharp · noisy
+<a href="https://arxiv.org/html/2409.12191v2">RealWorldQA (lab)</a>                                             70.1%  ▅▃·▃●▅·█·▃▅█ beats 5/16    easy · avg 70%              2.7%  blunt · at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   75.9%  ▃···█▃··●▃▃▃ beats 6/9     easy · avg 74%              1.7%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12191v2">OCRBench (lab)</a>                                                86.6%  ▅█·▃▃●▃▅▅▃·▃ beats 9/16    easy · avg 84%              1.0%  blunt
+<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1025.0  ▄▄·▄·▄●▄·▄·█ beats 4/8     avg 1037                    0.9%  blunt
+<a href="https://arxiv.org/html/2409.12191v2">TextVQA (lab)</a>                                                 84.3%  █······▄·●▄▄ beats 3/5     easy · avg 80%              0.6%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                 68.5%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 104/183  easy · avg 76%         5.5%  at its level
+<a href="https://arxiv.org/html/2409.12191v2">Video-MME (without subtitles) (la…</a>   63.3%  ▃··●··▅█▃▃▅▃ beats 3/13     medium · avg 66%       4.8%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12191v2">Video-MME (with subtitles) (lab)</a>     69.0%  ▁▁▁▁●·▁▃▁▁▁█ beats 4/16     medium · avg 73%       2.3%  at its level · small run
+<a href="https://arxiv.org/html/2409.12191v2">MVBench (lab)</a>                        67.0%  ▂▂▂·●█··▆▄·▂ beats 3/13     medium · avg 67%       1.9%  blunt · at its level
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   95.8%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 82/140   very easy · avg 94%    0.6%  blunt · maxed out · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                                      score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12191v2">MMMU (val) (lab)</a>                                          54.1%    45.3   2024-10-03   13% ▇▇
-                        <a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (lab)</a>                                58.2%    43.2   2024-10-03   11% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">MMStar (lab)</a>                                              60.7%    46.7   2024-10-03    9% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">MMMU Pro (lab)</a>                                            43.5%    48.5   2024-10-03    6% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">Video-MME (without subtitles)…</a>                            63.3%    47.1   2024-10-03    5% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>                                         16.3%    38.9   2024-10-03    4% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">HallusionBench (lab)</a>                                      50.6%    46.2   2024-10-03    4% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                                             83.0%    47.2   2024-10-03    3% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (lab)</a>                                      76.5%    48.0   2024-10-03    3% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">DocVQA (lab)</a>                                              94.5%    50.7   2024-10-03    3% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">RealWorldQA (lab)</a>                                         70.1%    49.8   2024-10-03    3% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">Video-MME (with subtitles) (l…</a>                            69.0%    46.3   2024-10-03    2% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">MVBench (lab)</a>                                             67.0%    50.5   2024-10-03    2% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">OCRBench (lab)</a>                                            86.6%    55.6   2024-10-03    1% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">TextVQA (lab)</a>                                             84.3%    62.2   2024-10-03    1% ▇
-<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                                      68.5%    45.3   2024-10-10    5% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  5.4500 MM-MT-Bench score (1-10)    48.3   2024-10-10    3% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>                                                 62.2%    46.8   2024-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 27.9%    36.5   2024-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                48.1%    47.3   2024-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      53.7%    50.9   2024-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               75.9%    52.7   2024-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   41.2%     2.2   2024-10-10    0% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1030.8    45.7   2026-10-02    6% ▇
-<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>                         -49.0000    38.7   2025-03-16    4% ▇
-<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1025.0    48.3   2024-09-25    1% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>                            95.8%    55.3   2025-10-16    1% ▇
-prior                   pull toward the middle                                             50.0                 0% ▇
-                        weighted average                                                 = 46.0
+source                                    results  share of the score
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12191v2">Qwen (lab)</a>                                     15   70% ▇▇▇▇▇▇▇▇
+<a name="paper-2410.07073v2-pixtral"></a><a href="https://arxiv.org/html/2410.07073v2#S3.T3">Pixtral 12B</a>                                     8   19% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    6% ▇
+<a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1    4% ▇
+<a name="molmo-card-human-elo"></a><a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo-72B-0924 model card: Human Pr…</a>        1    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 45.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column ([Apache-2.0](https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-4-bit q4_k_m   ~5.4GB   46.0
-8-bit q8_0    ~8.82GB   46.0
+download                      size  score
+4-bit q4_k_m                ~5.4GB   45.9
+8-bit q8_0                 ~8.82GB   45.9
+4-bit mlx-4bit · mac only   ~4.7GB   45.9
+4-bit mlx-8bit · mac only   ~8.8GB   45.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf ggml-org/Qwen2-VL-7B-Instruct-GGUF:Q4_K_M
-# 8-bit q8_0
-llama-server -hf ggml-org/Qwen2-VL-7B-Instruct-GGUF:Q8_0
+# 4-bit q4_k_m · ~5.4GB
+llama cli -hf ggml-org/Qwen2-VL-7B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ggml-org/Qwen2-VL-7B-Instruct-GGUF:Q4_K_M
+# 8-bit q8_0 · ~8.82GB
+llama cli -hf ggml-org/Qwen2-VL-7B-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ggml-org/Qwen2-VL-7B-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~5.4GB
+lms get https://huggingface.co/ggml-org/Qwen2-VL-7B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~8.82GB
+lms get https://huggingface.co/ggml-org/Qwen2-VL-7B-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.7GB
+lms get https://huggingface.co/mlx-community/Qwen2-VL-7B-Instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~8.8GB
+lms get https://huggingface.co/mlx-community/Qwen2-VL-7B-Instruct-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.4GB
+ollama run hf.co/ggml-org/Qwen2-VL-7B-Instruct-GGUF:Q4_K_M
+# 8-bit q8_0 · ~8.82GB
+ollama run hf.co/ggml-org/Qwen2-VL-7B-Instruct-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.7GB
+mlx_lm.chat --model mlx-community/Qwen2-VL-7B-Instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen2-VL-7B-Instruct-4bit
+# 4-bit mlx-8bit · mac only · ~8.8GB
+mlx_lm.chat --model mlx-community/Qwen2-VL-7B-Instruct-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen2-VL-7B-Instruct-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/qwen2-vl-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

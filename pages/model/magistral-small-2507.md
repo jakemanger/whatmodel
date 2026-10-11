@@ -6,23 +6,60 @@
 
 Mistral · released 2025-07 · 23.57B params · apache-2.0
 
-**score 54.6** ±1.4 · #321 of 934 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 54.5** ±1.5 · #331 of 949 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Magistral Small 1.1 (2507) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  █●········██       #3 of 4*     11%      1
+math    ▁▂▃▅▆●▄█▄▁▁▁   #207 of 400*     59%      2
+</pre>
+
+<details><summary>coding · #3 of 4 · 11% of its score</summary>
+
+Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   59.2%  ▄●▄······▄·▄ beats 1/5    medium · avg 50%     11%  at its level
+</pre>
+
+</details>
+
+<details><summary>math · #207 of 400 · 59% of its score</summary>
+
+Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+
+<pre>
+test             result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>   62.0%  ●▃·····▃···▃ beats 1/5    medium · avg 49%     32%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>   70.5%  ●▃·····▃···▃ beats 0/5    medium · avg 60%     27%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>   65.8%  ●·█·███····█ beats 0/5    medium · avg 53%     30%  sharp · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                 62.0%    54.5   2025-09-17   33% ▇▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>              65.8%    55.3   2025-09-17   29% ▇▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>                 70.5%    53.8   2025-09-17   26% ▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>  59.2%    55.4   2025-09-17   10% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 54.6
+source                                    results  share of the score
+<a name="card2-mistralai-magistral-small-2509"></a><a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">mistralai/Magistral-Small-2509 model ca…</a>        4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 54.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt))</sub>
 
@@ -32,14 +69,74 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~47.14GB   54.6
+16-bit bf16 · nvidia only  ~47.14GB   54.5
+4-bit Q4_K_M                ~14.3GB   54.5
+8-bit Q8_0                  ~25.1GB   54.5
+4-bit mlx-4bit · mac only   ~13.3GB   54.5
+4-bit mlx-8bit · mac only     ~25GB   54.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-vllm serve mistralai/Magistral-Small-2507 --reasoning-parser mistral --tokenizer_mode mistral --config_format mistral --load_format mistral --tool-call-parser mistral --enable-auto-tool-choice --tensor-parallel-size 2
+# 4-bit Q4_K_M · ~14.3GB
+llama cli -hf mistralai/Magistral-Small-2507-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mistralai/Magistral-Small-2507-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~25.1GB
+llama cli -hf mistralai/Magistral-Small-2507-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mistralai/Magistral-Small-2507-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~14.3GB
+lms get https://huggingface.co/mistralai/Magistral-Small-2507-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~25.1GB
+lms get https://huggingface.co/mistralai/Magistral-Small-2507-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~13.3GB
+lms get https://huggingface.co/lmstudio-community/Magistral-Small-2507-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~25GB
+lms get https://huggingface.co/lmstudio-community/Magistral-Small-2507-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~14.3GB
+ollama run hf.co/mistralai/Magistral-Small-2507-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~25.1GB
+ollama run hf.co/mistralai/Magistral-Small-2507-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~13.3GB
+mlx_lm.chat --model lmstudio-community/Magistral-Small-2507-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Magistral-Small-2507-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~25GB
+mlx_lm.chat --model lmstudio-community/Magistral-Small-2507-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Magistral-Small-2507-MLX-8bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~47.14GB
+vllm serve mistralai/Magistral-Small-2507 --reasoning-parser mistral --tokenizer_mode mistral --config_format mistral --load_format mistral --tool-call-parser mistral --enable-auto-tool-choice --tensor-parallel-size 2
+```
 
 [interactive version](https://whatmodel.sh/model/magistral-small-2507) · [JSON](https://whatmodel.sh/api?format=json&all=1)

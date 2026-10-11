@@ -6,31 +6,57 @@
 
 Alibaba (FunAudioLLM) · released 2024-07 · 0.3B params · apache-2.0
 
-**score 54.7** ±2.6 · #53 of 117 · from 10 benchmark results across 3 sources
+**score 54.4** ±2.6 · #55 of 118 · from 10 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks CosyVoice-300M among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-f5tts-report-ccby"></a>F5-TTS: A Fairytaler …  <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>     66.0%    59.5   2024-10-09   21% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker si…</a>     64.0%    57.8   2024-10-09   20% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker si…</a>     75.0%    60.9   2024-10-09   17% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>      3.6%    52.3   2024-10-09    9% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper la…</a>      3.4%    51.7   2024-10-09    8% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer…</a>      3.1%    39.8   2024-10-09    4% ▇
-<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  4.15 / 5    50.4   2025-03-27   11% ▇
-                        <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>      5.0%    63.1   2025-03-27    0% ▇
-<a name="speech-amphion-maskgct-mit"></a>Amphion MaskGCT READM…  <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-en · Whisper la…</a>      4.1%    47.3   2024-10-20    4% ▇
-                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-zh · Paraformer…</a>      4.1%    32.3   2024-10-20    3% ▇
-prior                   pull toward the middle                      49.7                 3% ▇
-                        weighted average                          = 54.7
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁●▁▇█▃▃   #30 of 37     54%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #30 of 37 · 54% of its score</summary>
+
+Trails [Spark-TTS 0.5B](spark-tts-0-5b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker simila…</a>   64.0%  ▁·▂▂●█▆▃▅··▂ beats 5/30   medium · avg 53%     19%  at its level
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker simila…</a>   75.0%  ▁·▂··▂·●▄·▃▄ beats 5/25   medium · avg 62%     17%  at its level
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper large-…</a>    3.4%  ▁···▂●▂▂█▆▄▂ beats 3/35   avg 3.6%             11%  blunt · several runs
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer CER</a>     3.1%  ▁·●▁▁▁▂▃▅█·▂ beats 1/30   avg 2.1%            7.0%  blunt · several runs
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>     66.0%  ▄·········●▄ beats 2/3    medium · avg 52%        21%  at its level
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>  4.15 / 5  ▄·····▄·▄█·● beats 5/5    easy · avg 4.11 / 5     12%  typical
+<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>      3.6%  ●·····█·█··█ beats 0/3    avg 4.1%               9.0%  typical
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>      5.0%  ▄··········● beats 2/5    avg 6.4%               0.5%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-f5tts-report-ccby"></a><a href="https://arxiv.org/html/2410.06885v1">F5-TTS: A Fairytaler that Fakes Fluent …</a>        6   78% ▇▇▇▇▇▇▇▇▇
+<a name="speech-versa-toolkit-ccby"></a><a href="https://arxiv.org/html/2412.17667v2">VERSA toolkit paper: TTS demonstration</a>          2   12% ▇
+<a name="speech-amphion-maskgct-mit"></a><a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Amphion MaskGCT README · zero-shot TTS …</a>        2    7% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 54.4
+</pre>
 
 <sub>Licences: F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching ([CC BY 4.0](../../licenses/speech-f5tts-report-ccby.txt)) · VERSA toolkit paper: TTS demonstration ([CC BY 4.0](../../licenses/speech-versa-toolkit-ccby.txt)) · Amphion MaskGCT README · zero-shot TTS results table ([MIT](../../licenses/speech-amphion-maskgct-mit.txt))</sub>
 
@@ -38,14 +64,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                 needs  score
-fp32 (CosyVoice repo)  ~2.3GB   54.7
+fp32 (CosyVoice repo)  ~2.3GB   54.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (CosyVoice repo)
+# fp32 (CosyVoice repo) · ~2.3GB
 git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git && cd CosyVoice && git submodule update --init --recursive && conda create -n cosyvoice -y python=3.10 && conda activate cosyvoice && pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com && python -c "from huggingface_hub import snapshot_download; snapshot_download('FunAudioLLM/CosyVoice-300M', local_dir='pretrained_models/CosyVoice-300M')" && python -c "import sys; sys.path.append('third_party/Matcha-TTS'); from cosyvoice.cli.cosyvoice import AutoModel; import torchaudio; cosyvoice = AutoModel(model_dir='pretrained_models/CosyVoice-300M'); [torchaudio.save('zero_shot_{}.wav'.format(i), j['tts_speech'], cosyvoice.sample_rate) for i, j in enumerate(cosyvoice.inference_zero_shot('CosyVoice is undergoing a comprehensive upgrade, providing more accurate, stable, faster, and better voice generation capabilities.', '希望你以后能够做的比我还好呦。', './asset/zero_shot_prompt.wav'))]"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cosyvoice-300m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

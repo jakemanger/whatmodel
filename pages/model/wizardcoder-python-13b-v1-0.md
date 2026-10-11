@@ -6,22 +6,41 @@
 
 WizardLM · released 2023-08 · 13B params · llama2
 
-**score 41.9** ±2.4 · #663 of 934 · from 3 benchmark results across 2 sources
+**score 41.9** ±2.4 · #672 of 949 · from 3 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks WizardCoder Python 13B V1.0 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #352 of 469     97%      3
+</pre>
+
+<details><summary>coding · #352 of 469 · 97% of its score</summary>
+
+Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
+
+<pre>
+test             result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>   64.0%  ▁▁▁▁▁▃▅▅●▃▂▁ beats 105/190  easy · avg 82%       57%  sharp · at its level · small run
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>        36.5%  ▁··▁▅●█▇▁··▁ beats 7/22     medium · avg 54%     21%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>        41.3%  ▁·▂▃▁●▁▂···▁ beats 13/22    medium · avg 53%     20%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="first-party-wizardlm-scores"></a>WizardLM team vendor-…  <a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>         64.0%    43.1   2024-01-19   57% ▇▇▇▇▇▇▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              36.5%    38.2   2024-01-03   21% ▇▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              41.3%    41.3   2024-01-03   20% ▇▇
-prior                   pull toward the middle           50.0                 3% ▇
-                        weighted average               = 41.9
+source                                    results  share of the score
+<a name="first-party-wizardlm-scores"></a><a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">WizardLM team vendor-reported scores fo…</a>        1   57% ▇▇▇▇▇▇▇
+<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2   40% ▇▇▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 41.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
 
@@ -30,18 +49,52 @@ prior                   pull toward the middle           50.0                 3%
 <sub>[context source](https://huggingface.co/WizardLM/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/config.json): WizardLM official configuration for WizardCoder-Python-13B-V1.0 (pinned commit): max\_position\_embeddings 16384. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
 
 <pre>
-download        size  score
-4-bit q4_k_m  ~7.9GB   41.9
-8-bit q8_0     ~14GB   41.9
+download         size  score
+4-bit q4_k_m   ~7.9GB   41.9
+8-bit q8_0      ~14GB   41.9
+4-bit Q4_K_M   ~7.9GB   41.9
+8-bit Q8_0    ~13.8GB   41.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run wizardcoder:13b-python-q4_K_M
-# 8-bit q8_0
-ollama run wizardcoder:13b-python-q8_0
+# 4-bit Q4_K_M · ~7.9GB
+llama cli -hf TheBloke/WizardCoder-Python-13B-V1.0-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/WizardCoder-Python-13B-V1.0-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+llama cli -hf TheBloke/WizardCoder-Python-13B-V1.0-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/WizardCoder-Python-13B-V1.0-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~7.9GB
+lms get https://huggingface.co/TheBloke/WizardCoder-Python-13B-V1.0-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~13.8GB
+lms get https://huggingface.co/TheBloke/WizardCoder-Python-13B-V1.0-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~7.9GB
+ollama run wizardcoder:13b-python-q4_K_M
+# 8-bit q8_0 · ~14GB
+ollama run wizardcoder:13b-python-q8_0
+# 4-bit Q4_K_M · ~7.9GB
+ollama run hf.co/TheBloke/WizardCoder-Python-13B-V1.0-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+ollama run hf.co/TheBloke/WizardCoder-Python-13B-V1.0-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/wizardcoder-python-13b-v1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

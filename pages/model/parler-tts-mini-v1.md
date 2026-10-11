@@ -6,23 +6,38 @@
 
 Hugging Face (Parler-TTS) · released 2024-08 · 0.88B params · apache-2.0
 
-**score 44.1** ±6.1 · #80 of 117 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.9** ±6.1 · #82 of 118 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Parler-TTS Mini v1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  3.83 / 5    42.4   2025-03-27   82% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>      4.7%    68.5   2025-03-27    3% ▇
-prior                   pull toward the middle                      49.7                15% ▇▇
-                        weighted average                          = 44.1
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>  3.83 / 5  ▄·····▄·▄●·▄ beats 4/5    easy · avg 4.11 / 5     82%  at its level
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>      4.7%  ▄··········● beats 3/5    avg 6.4%               2.6%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                  results  share of the score
+<a name="speech-versa-toolkit-ccby"></a><a href="https://arxiv.org/html/2412.17667v2">VERSA toolkit paper: TTS demonstration</a>        2   85% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                     15% ▇▇
+weighted average                                 = 43.9
+</pre>
 
 <sub>Licences: VERSA toolkit paper: TTS demonstration ([CC BY 4.0](../../licenses/speech-versa-toolkit-ccby.txt))</sub>
 
@@ -30,14 +45,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version              needs  score
-fp32 (parler-tts)  ~3.51GB   44.1
+fp32 (parler-tts)  ~3.51GB   43.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (parler-tts)
+# fp32 (parler-tts) · ~3.51GB
 pip install git+https://github.com/huggingface/parler-tts.git soundfile && python -c "import torch, soundfile as sf; from parler_tts import ParlerTTSForConditionalGeneration; from transformers import AutoTokenizer; d = 'cuda:0' if torch.cuda.is_available() else 'cpu'; m = ParlerTTSForConditionalGeneration.from_pretrained('parler-tts/parler-tts-mini-v1').to(d); t = AutoTokenizer.from_pretrained('parler-tts/parler-tts-mini-v1'); desc = 'A female speaker delivers a slightly expressive and animated speech with a moderate speed and pitch. The recording is of very high quality, with the speaker voice sounding clear and very close up.'; g = m.generate(input_ids=t(desc, return_tensors='pt').input_ids.to(d), prompt_input_ids=t('Hey, how are you doing today?', return_tensors='pt').input_ids.to(d)); sf.write('parler_tts_out.wav', g.cpu().numpy().squeeze(), m.config.sampling_rate)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/parler-tts-mini-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,26 +6,51 @@
 
 xAI · released 2026-04 · proprietary
 
-**score 60.2** ±4.8 · comparison only: no current run option verified · from 3 benchmark results across 1 source
+**score 60.3** ±4.9 · comparison only: no current run option verified · from 3 benchmark results across 1 source
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Grok Voice Transcribe 1.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   1.8%    61.7   2026-07-19   47% ▇▇▇▇▇▇
-                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   3.8%    53.9   2026-07-19   23% ▇▇▇
-                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>   9.5%    68.1   2026-07-19   21% ▇▇▇
-prior                   pull toward the middle                   49.8                 9% ▇
-                        weighted average                       = 60.2
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSpeech…</a>    1.8%  ▃·····▃▅█●▅▅ beats 7/11   avg 3.4%       48%  typical
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpeech …</a>    3.8%  ▂·····▄●█▂▂▄ beats 3/11   avg 4.6%       22%  typical
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>    9.5%  ▃·▃▅··▃▃▅▅█● beats 13/13  avg 16%        21%  blunt
+<a href="https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/BENCHMARKS.md">raven.eval · German read/parliame…</a>    8.4%  ●··········█ beats 0/1                     —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stt-verli-mit"></a><a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verliapp/stt-benchmark · independent ST…</a>        3   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        9% ▇
+weighted average                                   = 60.3
+</pre>
 
 <sub>Licences: verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt))</sub>
+
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                            score  why
+raven.eval · German A…  <a href="https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/BENCHMARKS.md">raven.eval · German read/parl…</a>   8.4%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 

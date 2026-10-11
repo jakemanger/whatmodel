@@ -6,23 +6,39 @@
 
 Smallest.ai · released 2026-03 · proprietary
 
-**score 53.3** ±3.0 · #57 of 117 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 53.3** ±3.0 · #58 of 118 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Lightning v3.1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>    1111.5    52.5   2026-09-25   89% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiven…</a>  3.30 / 5    64.4   2026-07-16    7% ▇
-prior                   pull toward the middle                      49.7                 4% ▇
-                        weighted average                          = 53.3
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>    1111.5  ▁···▁●··█▄▁▇ beats 3/18   avg 1078                  88%  typical
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiveness …</a>  3.30 / 5  █●█···█····█ beats 1/4    medium · avg 2.87 / 5    7.8%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-vapi-humanness-20260925"></a><a href="https://humannessindex.vapi.ai/api/models">The Humanness Index by Vapi · September…</a>        1   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-rw-voice-eq-report"></a><a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ Bench</a>                               1    8% ▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 53.3
+</pre>
 
 <sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 

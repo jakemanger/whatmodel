@@ -6,25 +6,54 @@
 
 Stability AI · released 2023-11 · 2.57B params · sai-nc-community
 
-**score 33.3** ±2.1 · #125 of 144 · from 4 benchmark results across 4 sources
+**score 33.5** ±2.1 · #125 of 144 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks SDXL-Turbo among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                  score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>        935.0    29.1   2024-06-04   33% ▇▇▇▇
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>     3.15 / 5    39.0   2024-12-25   31% ▇▇▇▇
-<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>        35.0%    32.1   2024-08-26   25% ▇▇▇
-<a name="visual-sdxl-lightning"></a>SDXL-Lightning: Progr…  <a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image)…</a>  23.7100 FID    29.9   2024-03-02   10% ▇
-prior                   pull toward the middle                         49.9                 2% ▇
-                        weighted average                             = 33.3
+task           vs the others         rank  counts  tests
+text to image  ▂●▅▃▄▄█▃▁▂▁▁   #105 of 126     89%      3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #105 of 126 · 89% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [IF-XL](deepfloyd-if-xl.md) here, though they rank higher overall.
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>     935.0  ▃▃··●·▃·█·▃▃ beats 2/8    avg 1237                33%  sharp
+<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  3.15 / 5  █▄·▄██▄●█▄▄▄ beats 9/14   easy · avg 3.83 / 5     31%  at its level
+<a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark score)</a>       35.0%  ▄·▄·●▄▄▄···▄ beats 2/7    easy · avg 66%          25%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                     result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>  23.7100 FID  ●··██······█ beats 0/3    avg 11.695 FID     10%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-genai-arena"></a><a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI Arena: An Open Evaluation Platfor…</a>        1   33% ▇▇▇▇
+<a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   31% ▇▇▇▇
+<a name="visual-conceptmix"></a><a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix: A Compositional Image Gener…</a>        1   25% ▇▇▇
+<a name="visual-sdxl-lightning"></a><a href="https://arxiv.org/html/2402.13929v3#S4.T2">SDXL-Lightning: Progressive Adversarial…</a>        1   10% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 33.5
+</pre>
 
 <sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · SDXL-Lightning: Progressive Adversarial Diffusion Distillation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -32,20 +61,24 @@ prior                   pull toward the middle                         49.9     
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~8.9GB   33.3
-fp16 (sd.cpp)         ~8.8GB   33.3
-q8_0 (sd.cpp --type)  ~4.9GB   33.3
+fp16 · nvidia only    ~8.9GB   33.5
+fp16 (sd.cpp)         ~8.8GB   33.5
+q8_0 (sd.cpp --type)  ~4.9GB   33.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~8.9GB
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('stabilityai/sdxl-turbo', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', num_inference_steps=1, guidance_scale=0.0).images[0].save('out.png')"
-# fp16 (sd.cpp)
+# fp16 (sd.cpp) · ~8.8GB
 sd-cli -m models/sd_xl_turbo_1.0_fp16.safetensors -H 512 -W 512 -p "a lovely cat" --cfg-scale 1 --steps 1 -v
-# q8_0 (sd.cpp --type)
+# q8_0 (sd.cpp --type) · ~4.9GB
 sd-cli -m models/sd_xl_turbo_1.0_fp16.safetensors --type q8_0 -H 512 -W 512 -p "a lovely cat" --cfg-scale 1 --steps 1 -v
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/sdxl-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,24 +6,52 @@
 
 Black Forest Labs / Krea · released 2025-07 · 12B params · flux-dev-nc
 
-**score 47.0** ±3.5 · #90 of 144 · from 3 benchmark results across 3 sources
+**score 47.0** ±3.4 · #90 of 144 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks FLUX.1 Krea \[dev\] among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  82.0%    47.9   2026-03-29   53% ▇▇▇▇▇▇
-<a name="genexam-readme-mit"></a>GenExam leaderboard     <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT…</a>  16.4%    47.7   2026-09-26   37% ▇▇▇▇
-<a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>  18.2%    29.1   2026-04-24    5% ▇
-prior                   pull toward the middle                   49.9                 5% ▇
-                        weighted average                       = 47.0
+task           vs the others         rank  counts  tests
+text to image  ▂▅▅▃●▄█▃▁▂▁▁   #75 of 126*     90%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #75 of 126 · 90% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided generatio…</a>   82.0%  ▄··█▄·●··▄·▄ beats 4/6    easy · avg 84%     52%  typical
+<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>   16.4%  ●▆·▂▂····▂▂█ beats 0/13   hard · avg 20%     38%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (Brie…</a>   18.2%  ●·▃·▃··▃·█▃▃ beats 0/9    hard · avg 28%    5.1%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-imagenworld"></a><a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld: Stress-Testing Image Gener…</a>        1   52% ▇▇▇▇▇▇
+<a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1   38% ▇▇▇▇▇
+<a name="visual-knowledge-visualization"></a><a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization: A Benchmark an…</a>        1    5% ▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 47.0
+</pre>
 
 <sub>Licences: ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -38,11 +66,15 @@ version                                 needs  score
 bf16 + model CPU offload · nvidia only  ~41GB   47.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 + model CPU offload · nvidia only
+# bf16 + model CPU offload · nvidia only · ~41GB
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-Krea-dev', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('A frog holding a sign that says hello world', height=1024, width=1024, guidance_scale=4.5).images[0].save('flux-krea-dev.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/flux-1-krea-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

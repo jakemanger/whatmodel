@@ -6,39 +6,71 @@
 
 Alibaba (Tongyi-MAI) · released 2025-11 · 6B params · apache-2.0
 
-**score 55.3** ±1.4 · #64 of 144 · from 18 benchmark results across 7 sources
+**score 55.4** ±1.4 · #64 of 144 · from 18 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Z-Image-Turbo among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                              score  implies  date        weight
-<a name="report-2511.22699v5"></a>Tongyi-MAI              <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>         91.7%    55.0   2026-07-06    6% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>         92.6%    55.4   2026-07-06    5% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                     82.0%    54.0   2026-07-06    4% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>       85.9%    55.7   2026-07-06    4% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>            50.7%    57.8   2026-07-06    4% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>            52.8%    57.9   2026-07-06    4% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                   84.9%    45.8   2026-07-06    3% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long pro…</a>    80.0%    54.9   2026-07-06    3% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>    77.7%    55.7   2026-07-06    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            1083.9    55.8   2026-09-24   30% ▇▇▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>    85.7%    53.4   2026-08-25   10% ▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>    54.4%    59.8   2026-10-07    8% ▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>    78.1%    48.1   2026-06-23    4% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 repor…</a>  11.3600    57.5   2026-06-23    2% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese char…</a>    73.3%    72.8   2026-06-23    0% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-…</a>    87.0%   112.0   2026-06-23    0% ▇
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>    54.1%    59.1   2026-06-09    6% ▇
-<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>    39.0%    52.3   2026-06-05    4% ▇
-prior                   pull toward the middle                     49.9                 1% ▇
-                        weighted average                         = 55.3
+task           vs the others        rank  counts  tests
+text to image  ▂▅▅▃▄●█▃▁▂▁▁   #55 of 126     95%     17
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #55 of 126 · 95% of its score</summary>
+
+Beats [HunyuanImage 2.1](hunyuanimage-2-1.md) here, though they rank higher overall.
+
+<pre>
+test                                 result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1083.5  ▂▂▃▄●█▄▂▄▂·▂ beats 22/75  avg 1027                30%  typical
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>     85.7%  ▄····▄█●▄█▄█ beats 4/10   easy · avg 82%          10%  typical
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    54.4%  ▁▂▂█●▁▂▃·▁·▁ beats 12/22  hard · avg 28%         8.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>      54.1%  ▄·····▄●▄·▄█ beats 3/7    medium · avg 41%       6.0%  at its level
+<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>             91.7%  ▃·····▅●█▅▃▃ beats 4/12   very easy · avg 88%    5.9%  small run
+<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>             92.6%  ▃·······█●██ beats 6/12   very easy · avg 89%    4.6%  maxed out · small run
+<a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                         82.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 29/39  easy · avg 77%         4.3%  small run
+<a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>     39.0%  ▄·●···▄▄▄▄▄▄ beats 1/8    medium · avg 36%       3.9%  blunt · at its level
+<a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>           85.9%  ▄▄●█▄▄·▄···▄ beats 2/8    easy · avg 81%         3.6%  small run
+<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>                50.7%  ▃·▃●▃·▃··▃·▃ beats 3/8    medium · avg 39%       3.5%  at its level · small run
+<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>                52.8%  ▃······▃●█▅▃ beats 2/9    medium · avg 41%       3.5%  at its level · small run
+<a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                       84.9%  ▄·▂·▂●█▄▂▄▂▂ beats 5/17   very easy · avg 85%    3.2%  small run
+<a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long prompts…</a>    80.0%  ●······█··▄▄ beats 0/4    easy · avg 74%         2.8%  small run
+<a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short prompt…</a>    77.7%  ●···█···██·█ beats 0/4    easy · avg 71%         2.8%  small run
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.3600  ▄···●··▄·▄·▄ beats 1/5    avg 11.076             1.8%  blunt
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese characte…</a>    73.3%  ▄·······▄█●▄ beats 4/5    medium · avg 60%       0.5%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-prom…</a>    87.0%  █······█●███ beats 2/5    easy · avg 85%         0.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI prompts…</a>   78.1%  ●···█··▄···█ beats 0/5    easy · avg 78%    4.4%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="report-2511.22699v5"></a><a href="https://arxiv.org/html/2511.22699v5">Tongyi-MAI (lab)</a>                                9   34% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   30% ▇▇▇▇
+<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   10% ▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1    8% ▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T11">Cosmos 3: Omnimodal World Models for Ph…</a>        4    7% ▇
+<a name="visual-imagetime"></a><a href="https://arxiv.org/html/2606.10620v1#S5.T5">Can Image Models Imagine Time? ImageTim…</a>        1    6% ▇
+<a name="visual-fepbench"></a><a href="https://arxiv.org/html/2606.05949v2#S4.T2">Faithful</a>                                        1    4% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 55.4
+</pre>
 
 <sub>Licences: Tongyi-MAI ([CC BY 4.0](../../licenses/report-2511.22699v5.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt))</sub>
 
@@ -50,17 +82,21 @@ api (Replicate (PrunaAI optimized)) · $0.0050/image · [replicate.com](https://
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                        ~14.9GB   55.3
-gguf-q3_k (+ Qwen3-4B Q4_K_M text encod…   ~7.7GB   55.3
+bf16 · nvidia only                        ~14.9GB   55.4
+gguf-q3_k (+ Qwen3-4B Q4_K_M text encod…   ~7.7GB   55.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~14.9GB
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ZImagePipeline; p=ZImagePipeline.from_pretrained('Tongyi-MAI/Z-Image-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=9, guidance_scale=0.0).images[0].save('out.png')"
-# gguf-q3_k (+ Qwen3-4B Q4_K_M text encoder)
+# gguf-q3_k (+ Qwen3-4B Q4_K_M text encoder) · ~7.7GB
 sd-cli --diffusion-model models/z_image_turbo-Q3_K.gguf --vae models/ae.safetensors --llm models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf -p 'a cat holding a sign' --cfg-scale 1.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 1024 --steps 8
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/z-image-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

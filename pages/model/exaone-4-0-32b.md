@@ -6,50 +6,110 @@
 
 LG AI Research · released 2025-07 · 32B params · exaone
 
-**score 58.5** ±0.9 · #236 of 934 · from 29 benchmark results across 4 sources
+**score 58.7** ±0.9 · #241 of 949 · from 29 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks EXAONE 4.0 32B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃▆█●▅▄▄▃▂▁    #193 of 334     32%      7
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #232 of 469*    7.4%      2
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #204 of 466*    1.6%      1
+math            ▁▂▃▅▆▅●█▄▁▁▁    #152 of 400     18%      4
+</pre>
+
+<details><summary>agent tasks · #193 of 334 · 32% of its score</summary>
+
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                   result  vs the others in its run    difficulty            counts  why
+<a href="https://arxiv.org/html/2601.03286v1">τ²-bench Telecom</a>        26.1%  ▁·▅●▆▅▂▃▃▂▃▁ beats 16/89    hard · avg 17%          8.9%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>         59.5%  ▁····▂▁▃▆●▃▁ beats 22/44    medium · avg 38%        6.8%  at its level · several runs
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>        45.6%  ▁▁·▂▁▃▂●█▅▂▃ beats 14/42    hard · avg 29%          5.2%  at its level · several runs
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>      3.6%  ▂▅●▂▂▆▂▂█▅▅▂ beats 6/27     very hard · avg 2.3%    4.6%  sharp · too hard for it · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Retail (lab)</a>    62.8%  ▁····▃·▂▇●▂▆ beats 13/28    medium · avg 38%        3.6%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Airline (lab)</a>   51.5%  ▁▁▁·▅▄▁█▇●▁▇ beats 22/28    hard · avg 27%          2.6%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">BFCL v3 (lab)</a>           63.9%  ▁▁▁▁▁▃▅█●▅▄▁ beats 117/170  medium · avg 57%        0.9%  blunt · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #232 of 469 · 7.4% of its score</summary>
+
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unspecif…</a>   66.7%  ▂▃▄▄▅█●▅▄▇▃▆ beats 31/65  medium · avg 46%        3.8%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench Pro 2025Q2 (Medium)…</a>    4.8%  █··▄▂▂●█▄·▄▆ beats 8/22   very hard · avg 3.0%    3.5%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #204 of 466 · 1.6% of its score</summary>
+
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">IFEval (aggregation unspecified) …</a>   83.7%  ▄·▄·▄·▄●···█ beats 4/6    easy · avg 78%    1.6%  typical
+</pre>
+
+</details>
+
+<details><summary>math · #152 of 400 · 18% of its score</summary>
+
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Olmo 3 32B Think](olmo-3-32b-think.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">AIME 2025 (lab)</a>            85.3%  █·▄▄····●··█ beats 4/6    medium · avg 53%    7.8%  sharp
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IMO-AnswerBench (lab)</a>      66.1%  ▁▁·▁▁●▄▅█▄▂▃ beats 6/42   medium · avg 40%    4.2%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (lab)</a>   72.9%  ▁▁▁▃▁▅●▃██▁▄ beats 10/31  medium · avg 51%    3.3%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">HMMT November 2025 (lab)</a>   78.1%  ▁▁····▁●▃█▇▁ beats 5/23   easy · avg 65%      2.7%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (13)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">GPQA Diamond (lab)</a>                   75.4%  █···▄▄···●·█ beats 4/6      hard · avg 51%           11%  sharp · at its level
+<a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                    32.6%  ▁···▁▃▂●▂▃▃▂ beats 11/23    hard · avg 18%          5.0%  at its level
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (lab)</a>                       81.8%  ▁▁·▁▁▁▃▂▄▅●▁ beats 136/188  medium · avg 62%        4.5%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   86.6%  ▂·▂▂·▂·●▃·█▃ beats 5/14     easy · avg 80%          4.3%  typical
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   79.7%  ▂··▂▂·▂▆▆●·▄ beats 11/15    medium · avg 63%        3.0%  at its level
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">Humanity's Last Exam (lab)</a>           10.6%  ▁▁▁▃●▆▇██▆▁▃ beats 18/104   very hard · avg 4.4%    2.7%  small run
+<a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     36.4%  ▂···█▂●▆██▆▂ beats 8/23     very hard · avg 30%     2.4%  typical
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag</a>                            65.7%  ▁▁▁▁▂▂▃●█▆▅▃ beats 31/85    medium · avg 64%        2.3%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Redux (lab)</a>                     92.3%  ▁▁▃▁▂▃▄▅▇▅●▄ beats 46/63    easy · avg 79%          1.9%  small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFBench (aggregation unspecified)…</a>   36.0%  ▃▇▂▄●▅▂▄▄▆█▇ beats 23/80    medium · avg 36%        1.6%  at its level · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                                 89.9%  ▁▁▁▁▁▂▃▅█▃▆● beats 177/183  medium · avg 71%        1.5%  noisy · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA</a>                                 75.7%  ▁▁▁▃▃▄●█▄▃▁▁ beats 38/83    easy · avg 84%          0.6%  blunt · small run
+<a href="https://aclanthology.org/2026.findings-acl.324.pdf">Thunder-KoNUBench symbol 0-shot</a>      81.5%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">GPQA Diamond (lab)</a>              75.4%    60.1   2025-07-11   11% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">AIME 2025 (lab)</a>                 85.3%    62.8   2025-07-11    9% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Telecom (lab)</a>          23.7%    52.4   2026-08-03    5% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (lab)</a>                  81.8%    62.3   2025-07-11    5% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IMO-AnswerBench (lab)</a>           66.1%    61.3   2026-08-03    5% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unsp…</a>  66.7%    58.6   2026-08-03    4% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench Pro 2025Q2 (Med…</a>   4.8%    53.4   2026-08-03    4% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (lab)</a>        72.9%    59.5   2025-07-11    4% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">HMMT November 2025 (lab)</a>        78.1%    58.4   2026-08-03    3% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">Humanity's Last Exam (lab)</a>      10.6%    60.7   2026-08-03    3% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Retail (lab)</a>            62.8%    61.3   2025-07-11    3% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Retail (lab)</a>           67.5%    62.6   2026-08-03    3% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Airline (lab)</a>           51.5%    65.3   2025-07-11    2% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFBench (aggregation unspecif…</a>  36.0%    49.2   2026-08-03    2% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Redux (lab)</a>                92.3%    64.6   2025-07-11    2% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Airline (lab)</a>          52.0%    62.5   2026-08-03    2% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">IFEval (aggregation unspecifi…</a>  83.7%    55.4   2025-07-11    2% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">BFCL v3 (lab)</a>                   63.9%    55.7   2025-07-11    1% ▇
-<a name="paper-2601.03286v1-hyperclova-x-32b-think"></a>HyperCLOVA X 32B Think  <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>              3.6%    53.6   2026-01-03    5% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1">τ²-bench Telecom</a>                26.1%    56.1   2026-01-03    4% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>                 59.5%    60.3   2026-01-03    3% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag</a>                       65.7%    47.4   2026-01-03    2% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>                45.6%    58.7   2026-01-03    2% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                            89.9%    63.7   2026-01-03    1% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA</a>                            75.7%    26.0   2026-01-03    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  86.6%    55.2   2026-04-17    4% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  79.7%    62.3   2026-04-17    3% ▇
-<a name="acl-kcl-2026"></a>Korean Canonical Lega…  <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>               32.6%    60.2   2026-09-25    5% ▇
-                        <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                36.4%    57.2   2026-09-25    2% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 58.5
+source                                    results  share of the score
+<a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">LG AI Research vendor-reported benchmar…</a>       18   65% ▇▇▇▇▇▇▇▇
+<a name="paper-2601.03286v1-hyperclova-x-32b-think"></a><a href="https://arxiv.org/html/2601.03286v1#S5.T5">HyperCLOVA X 32B Think</a>                          7   20% ▇▇
+<a name="acl-kcl-2026"></a><a href="https://aclanthology.org/2026.eacl-short.17.pdf">Korean Canonical Legal Benchmark: Towar…</a>        2    7% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    7% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 58.7
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: HyperCLOVA X 32B Think ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt))</sub>
+<sub>Licences: HyperCLOVA X 32B Think ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 <details><summary>Not counted (1)</summary>
 
@@ -65,18 +125,67 @@ Thunder-KoNUBench: A …  <a href="https://aclanthology.org/2026.findings-acl.32
 <sub>[context source](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md): LG AI Research official model card: EXAONE 4.0 32B context length 131,072 tokens. Fact only; the card's model licence (non-commercial) governs weights, not this number. Observed 2026-09-25.</sub>
 
 <pre>
-download              size  score
-4-bit gguf-q4_k_m  ~19.7GB   58.5
-8-bit gguf-q8_0    ~38.9GB   58.5
+download                      size  score
+4-bit gguf-q4_k_m          ~19.7GB   58.7
+8-bit gguf-q8_0            ~38.9GB   58.7
+4-bit mlx-4bit · mac only    ~18GB   58.7
+4-bit mlx-8bit · mac only    ~34GB   58.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit gguf-q4_k_m
-llama-server -hf LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q4_K_M
-# 8-bit gguf-q8_0
-llama-server -hf LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q8_0
+# 4-bit gguf-q4_k_m · ~19.7GB
+llama cli -hf LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q4_K_M
+# 8-bit gguf-q8_0 · ~38.9GB
+llama cli -hf LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit gguf-q4_k_m · ~19.7GB
+lms get https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit gguf-q8_0 · ~38.9GB
+lms get https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~18GB
+lms get https://huggingface.co/lmstudio-community/EXAONE-4.0-32B-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~34GB
+lms get https://huggingface.co/lmstudio-community/EXAONE-4.0-32B-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit gguf-q4_k_m · ~19.7GB
+ollama run hf.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q4_K_M
+# 8-bit gguf-q8_0 · ~38.9GB
+ollama run hf.co/LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~18GB
+mlx_lm.chat --model lmstudio-community/EXAONE-4.0-32B-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/EXAONE-4.0-32B-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~34GB
+mlx_lm.chat --model lmstudio-community/EXAONE-4.0-32B-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/EXAONE-4.0-32B-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/exaone-4-0-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

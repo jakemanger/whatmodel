@@ -6,38 +6,103 @@
 
 OpenBMB · released 2024-09 · minicpm-model-license
 
-**score 46.8** ±4.0 · #519 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.5** ±2.1 · #508 of 949 · from 3 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks MiniCPM3-4B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ▁▁▃●█▆▅▄▄▃▂▁   #286 of 334*     25%      2
+coding       ▁▁▁▃▆●█▇▆▄▃▁   #291 of 469*     73%      1
+</pre>
+
+<details><summary>agent tasks · #286 of 334 · 25% of its score</summary>
+
+Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [Qwen2.5 3B Instruct](qwen2-5-3b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   25.6%  ▁▁▁▂●█▅▅▆▂▂▂ beats 15/77   hard · avg 32%       16%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           50.3%  ▁▁▁▁▁▃●█▅▄▁▁ beats 34/114  medium · avg 52%    8.8%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #291 of 469 · 73% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   21.5%  ▁▁·▁▂●▆█▅▂·▂ beats 6/31   hard · avg 26%     73%  sharp
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  25.6%    45.2   2025-12-16   58% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         50.3%    48.7   2025-06-14   35% ▇▇▇▇
-prior                   pull toward the middle                   50.0                 7% ▇
-                        weighted average                       = 46.8
+source                                    results  share of the score
+<a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1   73% ▇▇▇▇▇▇▇▇▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   25% ▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 47.5
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
+<sub>Licences: LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/openbmb/MiniCPM3-4B/blob/d6b14ddaefdb11c624dd75c3c779549bc90b08cb/README.md): Model card: 'MiniCPM3-4B has a 32k context window.'</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~2.47GB   46.8
+download                      size  score
+4-bit q4_k_m               ~2.47GB   47.5
+4-bit mlx-4bit · mac only   ~2.4GB   47.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf openbmb/MiniCPM3-4B-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~2.47GB
+llama cli -hf openbmb/MiniCPM3-4B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf openbmb/MiniCPM3-4B-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~2.47GB
+lms get https://huggingface.co/openbmb/MiniCPM3-4B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~2.4GB
+lms get https://huggingface.co/mlx-community/MiniCPM3-4B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~2.47GB
+ollama run hf.co/openbmb/MiniCPM3-4B-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~2.4GB
+mlx_lm.chat --model mlx-community/MiniCPM3-4B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/MiniCPM3-4B-4bit
+```
 
 [interactive version](https://whatmodel.sh/model/minicpm3-4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

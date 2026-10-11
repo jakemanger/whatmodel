@@ -6,24 +6,42 @@
 
 nineninesix.ai · released 2026-06 · 0.556B params · apache-2.0
 
-**score 53.0** ±3.8 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 52.5** ±3.9 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Gepard 1.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="card3-nineninesix-gepard-1-0"></a>nineninesix/gepard-1.…  <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · speaker si…</a>     58.5%    53.8   2026-09-10   40% ▇▇▇▇▇
-                        <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en WER (transcr…</a>      3.6%    52.5   2026-09-10   39% ▇▇▇▇▇
-                        <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · UTMOS (pre…</a>  2.64 / 5    53.5   2026-09-10   16% ▇▇
-prior                   pull toward the middle                      49.7                 6% ▇
-                        weighted average                          = 53.0
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁●██▃▃   #34 of 43     94%      3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #34 of 43 · 94% of its score</summary>
+
+Beats [CosyVoice-300M](cosyvoice-300m.md) here, though they rank higher overall.
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · speaker simila…</a>     58.5%  ▁·●▂▂█▆▃▅··▂ beats 2/30   medium · avg 53%          40%  at its level
+<a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en WER (transcriber…</a>      3.6%  ●··········█ beats 0/3    avg 4.2%                  39%  typical
+<a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · UTMOS (predict…</a>  2.64 / 5  █·····█●···█ beats 2/3    medium · avg 2.52 / 5     16%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                   results  share of the score
+<a name="card3-nineninesix-gepard-1-0"></a><a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">nineninesix/gepard-1.0 model card (lab)</a>        3   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       6% ▇
+weighted average                                  = 52.5
+</pre>
 
 <sub>Licences: nineninesix/gepard-1.0 model card ([Apache-2.0](https://opensource.org/licenses/Apache-2.0))</sub>
 

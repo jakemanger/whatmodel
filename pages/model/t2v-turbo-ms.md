@@ -6,20 +6,38 @@
 
 UC Santa Barbara · released 2024-05 · cc-by-4.0
 
-**score 39.1** ±6.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 39.1** ±6.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks T2V-Turbo (MS) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others        rank  counts  tests
+text to video  ▇▅▄●█▆▇▂▃▃▂▄   #64 of 94*     83%      1
+</pre>
+
+<details><summary>text to video · #64 of 94 · 83% of its score</summary>
+
+Trails [LTX-2.3](ltx-2-3.md), [T2V-Turbo-v2](t2v-turbo-v2.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2405.18750v2">VBench (T2V total) (lab)</a>   80.6%  ●···▄▄▄····▄ beats 0/5    very easy · avg 90%     83%  small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                      score  implies  date        weight
-<a name="paper-2405.18750v2-t2vturbo"></a>T2V-Turbo: Breaking t…  <a href="https://arxiv.org/html/2405.18750v2">VBench (T2V total) (lab)</a>  80.6%    36.8   2024-10-11   82% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle             49.9                18% ▇▇
-                        weighted average                 = 39.1
+source                                    results  share of the score
+<a name="paper-2405.18750v2-t2vturbo"></a><a href="https://arxiv.org/html/2405.18750v2">T2V-Turbo: Breaking the Quality Bottlen…</a>        1   83% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       17% ▇▇
+weighted average                                   = 39.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: T2V-Turbo: Breaking the Quality Bottleneck of Video Consistency Model with Mixed Reward Feedback ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

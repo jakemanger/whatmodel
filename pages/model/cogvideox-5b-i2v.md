@@ -8,21 +8,39 @@ Zhipu AI (THUDM) · released 2024-09 · 5B params · cogvideox
 
 **score 46.4** ±3.9 · #60 of 93 · from 4 benchmark results across 4 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks CogVideoX-5B-I2V among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                score  implies  date        weight
-<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>      27.7%    57.8   2026-09-30   31% ▇▇▇▇
-<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric…</a>      72.9%    44.0   2026-08-06   24% ▇▇▇
-<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>   6.75 / 10    36.9   2025-02-28   24% ▇▇▇
-<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>      57.9%    40.4   2026-05-14   15% ▇▇
-prior                   pull toward the middle                       49.9                 6% ▇
-                        weighted average                           = 46.4
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                   result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>      27.7%  ▅·▃▅·●·▃···▃ beats 5/9    hard · avg 21%           31%  typical
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric-gro…</a>      72.9%  ●··▄▄▄▄····▄ beats 1/6    easy · avg 77%           24%  blunt · at its level
+<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>       6.75 / 10  ▅··▅●···▃··█ beats 4/8    easy · avg 7.71 / 10     24%  at its level
+<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>      57.9%  ●···▂······█ beats 0/5    medium · avg 65%         15%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1   31% ▇▇▇▇
+<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1   24% ▇▇▇
+<a name="video-worldmodelbench"></a><a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench: Judging Video Generati…</a>        1   24% ▇▇▇
+<a name="visual-mechverse"></a><a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse: Evaluating Physical Motion C…</a>        1   15% ▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 46.4
+</pre>
 
 <sub>Licences: MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -33,11 +51,15 @@ version               needs  score
 bf16 · nvidia only  ~12.5GB   46.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~12.5GB
 python -c "import torch;from diffusers import CogVideoXImageToVideoPipeline;from diffusers.utils import export_to_video,load_image;p=CogVideoXImageToVideoPipeline.from_pretrained('THUDM/CogVideoX-5b-I2V',torch_dtype=torch.bfloat16);p.enable_sequential_cpu_offload();p.vae.enable_tiling();p.vae.enable_slicing();export_to_video(p(prompt='A little girl is riding a bicycle at high speed. Focused, detailed, realistic.',image=load_image('input.jpg'),num_inference_steps=50,num_frames=49,guidance_scale=6).frames[0],'output.mp4',fps=8)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cogvideox-5b-i2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

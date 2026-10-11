@@ -6,23 +6,52 @@
 
 Reve · released 2026-06 · proprietary
 
-**score 74.3** ±2.2 · #12 of 144 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 74.2** ±2.2 · #12 of 144 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Reve 2.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1268.9    75.5   2026-09-24   72% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1358.6    72.8   2026-09-30   26% ▇▇▇
-prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 74.3
+task                    vs the others         rank  counts  tests
+text to image           ▂▅▅▃▄▄█▃▁●▁▁   #11 of 126*     71%      1
+image to image / edit…  ▁▁·▃▂▃█▃●▄▁▁    #14 of 62*     27%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #11 of 126 · 71% of its score</summary>
+
+Beats [Nano Banana Pro (Gemini 3 Pro Image)](nano-banana-pro.md) here, though they rank higher overall.
+
+<pre>
+test                   result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1269.2  ▂▂▃▄▇█▄▂●▂·▂ beats 67/75  avg 1027       71%  typical
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #14 of 62 · 27% of its score</summary>
+
+Trails [Grok Imagine Image Pro](grok-imagine-image-pro.md), [Qwen-Image-2.1](qwen-image-2-1.md), [ChatGPT Image Latest (chatgpt-image-latest)](chatgpt-image-latest.md) here, though they rank lower overall.
+
+<pre>
+test              result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1358.5  ▂▁▁▂▆▇█▄●▅▁▂ beats 38/53  avg 1153       27%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             2% ▇
+weighted average                        = 74.2
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

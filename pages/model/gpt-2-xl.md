@@ -6,62 +6,142 @@
 
 OpenAI · released 2019-11 · 1.558B params · mit
 
-**score 10.8** ±1.1 · #919 of 934 · from 26 benchmark results across 7 sources
+**score 11.4** ±1.1 · #934 of 949 · from 29 benchmark results across 8 sources
+
+## What it's good at
+
+<sub>● marks GPT-2 XL (1.5B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others      rank  counts  tests
+math  █···●······█   #2 of 3*    2.4%      1
+</pre>
+
+<details><summary>math · #2 of 3 · 2.4% of its score</summary>
+
+Beats [GPT-Neo 1.3B](gpt-neo-1-3b.md) here, though they rank higher overall.
+
+<pre>
+test    result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA</a>   23.6%  ●···█··█···█ beats 0/3    hard · avg 46%    2.4%  too hard for it
+</pre>
+
+</details>
+
+<details><summary>other tests (20)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            40.0%  ●▃▃··▅····▃█ beats 0/8     very easy · avg 92%     17%  at its level · several runs
+<a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                        25.0%  ●····▃▃···▅█ beats 0/8     hard · avg 46%          13%  sharp · too hard for it · several runs
+<a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           22.4%  ●······▂·▆·▂ beats 0/8     very hard · avg 26%     12%  too hard for it · several runs
+<a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                             58.3%  ●·▃▃··▃··▃·█ beats 1/8     very easy · avg 90%    8.4%  at its level · several runs
+<a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                           58.3%  ●··█···█▄▄·▄ beats 1/8     easy · avg 90%         7.9%  several runs
+<a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zero-sh…</a>   30.1%  █···██·█···● beats 4/4     easy · avg 79%         7.4%  too hard for it
+<a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                                 70.5%  ▄●··▄·▄·▄·██ beats 1/8     easy · avg 89%         5.7%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                61.8%  ▄●▄···▄··█▄▄ beats 1/8     easy · avg 92%         4.6%  typical
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   51.2%  ●·▄··█··█··▄ beats 0/7     very easy · avg 90%    4.6%  blunt · at its level
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                        38.6%  █·····█·█··● beats 3/3     easy · avg 83%         4.0%  at its level
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                                 69.0%  ▄·▄·●··▆▂··▂ beats 6/12    very easy · avg 96%    2.8%  at its level
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                     67.6%  █····█···█·● beats 3/3     easy · avg 92%         2.2%  blunt · at its level
+<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           39.4%  ●▄····█▄▄··▄ beats 0/7     medium · avg 63%       1.9%  blunt
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">PubMedQA</a>                             60.4%  ▂·▂●·▄▂▄▄▂█▂ beats 4/17    medium · avg 75%       1.6%  blunt · at its level · several runs
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">MedMCQA</a>                              30.9%  ▂▂··●▄▂▂·▄██ beats 3/17    medium · avg 68%       1.2%  too hard for it
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">MedQA (USMLE, 4 options)</a>             28.0%  ▁▁··●▁▁··▄▃█ beats 4/17    easy · avg 76%         1.1%  sharp · too hard for it
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.9%  ●▁▁▁▁▁▁▁▂█▅▁ beats 23/276  medium · avg 73%       0.6%  too hard for it · noisy
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   37.0%  ▃···▃▃·▃·●·█ beats 4/7     hard · avg 44%         0.5%  blunt
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>   11.7%  ▄···█···█●·▄ beats 6/7     very hard · avg 11%    0.0%  blunt · too hard for it
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   47.1%  ●·······▁··▁ beats 3/7     very hard · avg 51%    0.0%  blunt · too hard for it · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="acl-2021-emnlp-main-564"></a>Surface Form Competit…  <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">OpenBookQA</a>                      22.4%    -3.7   2021-11-01   12% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                   25.2%     8.5   2021-11-01   12% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                       38.4%     7.6   2021-11-01    6% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                   38.6%     9.0   2021-11-01    4% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                        56.2%     9.4   2021-11-01    3% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                            69.0%     5.7   2021-11-01    3% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                67.6%     5.2   2021-11-01    2% ▇
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        58.3%    16.5   2023-09-11    5% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           61.8%    18.3   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      58.3%    19.0   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       40.0%    15.9   2023-09-11    3% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            70.5%    16.5   2023-09-11    3% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   25.0%     2.4   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      39.4%    13.2   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      22.4%     1.2   2023-09-11    1% ▇
-<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                       50.9%    15.2   2021-08-06    7% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  51.2%    10.6   2021-08-06    5% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                      59.4%    23.0   2021-08-06    4% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                            70.8%    14.7   2021-08-06    3% ▇
-<a name="acl-2021-findings-acl-404-prost"></a>PROST                   <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zer…</a>  30.1%    15.3   2021-08-01    8% ▇
-<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA</a>                          23.6%    11.0   2021-04-12    2% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA</a>                        58.3%    18.0   2021-04-12    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  25.9%    -2.3   2024-02-05    1% ▇
-<a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  37.0%    36.4   2022-12-07    0% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  11.7%    82.3   2022-12-07    0% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.1%   -48.0   2022-12-07    0% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 10.8
+source                                    results  share of the score
+<a name="acl-2021-emnlp-main-564"></a><a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Surface Form Competition</a>                        7   41% ▇▇▇▇▇
+<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   25% ▇▇▇
+<a name="eleutherai-gpt-j-6b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">EleutherAI GPT-J-6B model card</a>                  4   19% ▇▇
+<a name="acl-2021-findings-acl-404-prost"></a><a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST</a>                                           1    7% ▇
+<a name="eleutherai-gpt-neo-2-7b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">EleutherAI GPT-Neo 2.7B model card</a>              2    3% ▇
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">Open Medical-LLM Leaderboard results</a>            3    3% ▇
+<a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                           3    1% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 11.4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>
+<sub>Licences: Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <sub>[context source](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf): Context limit from the maker's documentation, observed 2026-10-06.</sub>
 
 <pre>
-download       size  score
-4-bit fp32  ~6.43GB   10.8
+download                       size  score
+4-bit fp32                  ~6.43GB   11.4
+4-bit Q4_K_M                 ~1.2GB   11.4
+8-bit Q8_0                   ~1.7GB   11.4
+16-bit mlx-bf16 · mac only   ~3.1GB   11.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp32
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2-xl')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~1.2GB
+llama cli -hf mradermacher/gpt2-xl-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/gpt2-xl-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.7GB
+llama cli -hf mradermacher/gpt2-xl-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/gpt2-xl-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~1.2GB
+lms get https://huggingface.co/mradermacher/gpt2-xl-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~1.7GB
+lms get https://huggingface.co/mradermacher/gpt2-xl-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 16-bit mlx-bf16 · mac only · ~3.1GB
+lms get https://huggingface.co/warshanks/gpt2-xl-bf16 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~1.2GB
+ollama run hf.co/mradermacher/gpt2-xl-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.7GB
+ollama run hf.co/mradermacher/gpt2-xl-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 16-bit mlx-bf16 · mac only · ~3.1GB
+mlx_lm.chat --model warshanks/gpt2-xl-bf16
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model warshanks/gpt2-xl-bf16
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp32 · ~6.43GB
+uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2-xl')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/gpt-2-xl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

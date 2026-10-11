@@ -6,60 +6,86 @@
 
 NVIDIA · released 2025-07 · 2.56B params · cc-by-4.0
 
-**score 60.9** ±1.8 · #24 of 160 · from 8 benchmark results across 5 sources
+**score 61.2** ±1.5 · #24 of 162 · from 16 benchmark results across 6 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Canary-Qwen-2.5B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  22.4%    60.3   2025-11-18   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  18.2%    63.0   2025-11-18   18% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.6%    64.1   2026-03-26   11% ▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   8.6%    58.2   2026-03-26   11% ▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-qwen-2.5b.json">LibriSpeech test-clean WER</a>       1.6%    59.5   2026-09-15   15% ▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-qwen-2.5b.json">FLEURS English test WER</a>          3.6%    66.1   2026-09-15    6% ▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.2%    59.0   2026-07-16    9% ▇
-<a name="speech-stt-yoruba-cs-report"></a>Switch-aware evaluati…  <a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba…</a>  70.0%    60.2   2026-09-10    8% ▇
-prior                   pull toward the middle                   49.8                 1% ▇
-                        weighted average                       = 60.9
+task                    vs the others       rank  counts  tests
+long-form transcripti…  ▁▁▄▁·▁▂█●▁▁▁   #4 of 27*    7.4%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>long-form transcription · #4 of 27 · 7.4% of its score</summary>
 
-<sub>Licences: AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Switch-aware evaluation of ASR on English-Yoruba code-switched speech ([CC BY 4.0](../../licenses/speech-stt-yoruba-cs-report.txt))</sub>
-
-<details><summary>Not counted (8)</summary>
+Trails [Speechmatics Enhanced](speechmatics-enhanced.md) here, though they rank lower overall.
 
 <pre>
-source                  test                            score  why
-nvidia/canary-qwen-2.…  <a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">AMI WER (Open ASR / ESB test …</a>  10.2%  too few models have it yet
-nvidia/canary-qwen-2.…  <a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">Earnings-22 WER (short-form, …</a>  10.4%  too few models have it yet
-nvidia/canary-qwen-2.…  <a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">GigaSpeech test WER</a>              9.4%  too few models have it yet
-nvidia/canary-qwen-2.…  <a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">LibriSpeech test-clean WER</a>       1.6%  only model in this source's run
-nvidia/canary-qwen-2.…  <a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">LibriSpeech test-other WER</a>       3.1%  too few models have it yet
-nvidia/canary-qwen-2.…  <a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">SPGISpeech test WER</a>              1.9%  too few models have it yet
-nvidia/canary-qwen-2.…  <a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">TED-LIUM test WER (short-form)</a>   2.7%  too few models have it yet
-nvidia/canary-qwen-2.…  <a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">VoxPopuli English test WER</a>       5.7%  too few models have it yet
+test                            result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>    8.6%  ▁▁▅▁·▃▅█●▁▂▂ beats 24/30  avg 12%       7.4%  typical
 </pre>
 
 </details>
+
+<details><summary>other tests (14)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-region …</a>   22.4%  ▂····▂···▂▆● beats 9/11   avg 46%        14%  typical
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parliamen…</a>   18.2%  ▂▂····▂·▅·▃● beats 11/12  avg 52%        12%  sharp
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-qwen-2.5b.json">LibriSpeech test-clean WER</a>            1.6%  ▁···▁▁▂·▄▄█● beats 40/56  avg 2.3%       11%  blunt · several runs
+<a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">SPGISpeech test WER (lab)</a>             1.9%  ▄▄··▄██··▄█● beats 10/11  avg 5.4%      7.5%  sharp
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    5.6%  ▁▁▁▃··▁▁▂██● beats 83/86  avg 8.2%      7.4%  blunt
+<a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">Earnings-22 WER (short-form, Open…</a>   10.4%  █······███·● beats 4/4    avg 21%       6.2%  typical
+<a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">AMI WER (Open ASR / ESB test spli…</a>   10.2%  ▄▄·······█·● beats 4/4    avg 24%       5.9%  typical
+<a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-world En…</a>    9.2%  █●▃▅▃···▃··▃ beats 3/9    avg 15%       5.8%  typical
+<a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">GigaSpeech test WER (lab)</a>             9.4%  ▁····▁··▁▄●▂ beats 15/17  avg 17%       5.5%  typical
+<a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba cod…</a>   70.0%  █··█·●···█·█ beats 2/4    avg 131%      5.5%  typical
+<a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">LibriSpeech test-other WER (lab)</a>      3.1%  ▁▁▁▂▅▃▅▄█▂●▁ beats 53/54  avg 5.4%      4.5%  typical
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-qwen-2.5b.json">FLEURS English test WER</a>               3.6%  ▁··▁▁▁▁▁▁▃█● beats 54/56  avg 5.8%      3.8%  blunt
+<a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">VoxPopuli English test WER (lab)</a>      5.7%  █▄▄··████●██ beats 12/16  avg 9.0%      3.0%  typical
+<a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">TED-LIUM test WER (short-form) (l…</a>    2.7%  ▁·▁▇█▃·▁▁▃█● beats 27/27  avg 5.0%      0.3%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="first-party-nvidia-asr-cards"></a><a href="https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md">NVIDIA ASR model cards (lab)</a>                    8   34% ▇▇▇▇
+<a name="speech-stt-afrispeech-multibench-report"></a><a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench</a>                           2   26% ▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            2   15% ▇▇
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-qwen-2.5b.json">transcribe.cpp model catalog · LibriSpe…</a>        2   13% ▇▇
+<a name="speech-rw-voice-eq-report"></a><a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ Bench</a>                               1    6% ▇
+<a name="speech-stt-yoruba-cs-report"></a><a href="https://arxiv.org/html/2609.11786v1">Switch-aware evaluation of ASR on Engli…</a>        1    5% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 61.2
+</pre>
+
+<sub>Licences: NVIDIA ASR model cards ([CC BY 4.0](../../licenses/nvidia--parakeet-tdt-0.6b-v2.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Switch-aware evaluation of ASR on English-Yoruba code-switched speech ([CC BY 4.0](../../licenses/speech-stt-yoruba-cs-report.txt))</sub>
 
 ## How to run it
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~6.64GB   60.9
+bf16 · nvidia only  ~6.64GB   61.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~6.64GB
 python examples/speechlm2/salm_generate.py pretrained_name=nvidia/canary-qwen-2.5b inputs=input_manifest.json output_manifest=generations.jsonl batch_size=128 user_prompt="Transcribe the following:"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/canary-qwen-2-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -14,7 +14,12 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
+# fp32 (chatterbox-tts 0.1.7) · ~2.99GB
 pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts_turbo import ChatterboxTurboTTS; m = ChatterboxTurboTTS.from_pretrained(device='cpu'); ta.save('test-turbo.wav', m.generate('Hi there, Sarah here from MochaFone calling you back [chuckle], have you got one minute to chat about the billing issue?'), m.sr)"
 ```
 

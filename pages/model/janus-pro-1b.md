@@ -6,24 +6,43 @@
 
 DeepSeek · released 2025-01 · 1.5B params · deepseek
 
-**score 36.0** ±3.9 · #117 of 144 · from 3 benchmark results across 2 sources
+**score 36.2** ±3.9 · #116 of 144 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Janus-Pro-1B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   73.0%    41.0   2025-01-29   34% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 82.6%    39.5   2025-01-29   29% ▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  26.0%    24.3   2026-06-02   31% ▇▇▇▇
-prior                   pull toward the middle                   49.9                 6% ▇
-                        weighted average                       = 36.0
+task           vs the others         rank  counts  tests
+text to image  ▂▅●▃▄▄█▃▁▂▁▁   #102 of 126     94%      3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #102 of 126 · 94% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md), [SSD-1B](ssd-1b.md), [Show-o (show-o-demo-512)](show-o-demo-512.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                        73.0%  ▇▃▅▇▁▄●▃█▃▃▅ beats 21/39  easy · avg 83%          35%  at its level · small run
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   26.0%  ●·▆▂▆█▄▆▂▄·▄ beats 1/22   medium · avg 60%        30%  at its level
+<a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                      82.6%  ▄·●·▂▆█▄▂▄▂▂ beats 2/17   very easy · avg 89%     29%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="report-2501.17811v1"></a><a href="https://arxiv.org/html/2501.17811v1">DeepSeek-AI (lab)</a>                               2   63% ▇▇▇▇▇▇▇▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   30% ▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 36.2
+</pre>
 
 <sub>Licences: DeepSeek-AI ([CC BY 4.0](../../licenses/report-2501.17811v1.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
@@ -35,14 +54,18 @@ api (DeepInfra) · $0.0005/image · [deepinfra.com](https://deepinfra.com/deepse
 
 <pre>
 version              needs  score
-bf16 · nvidia only  ~5.5GB   36.0
+bf16 · nvidia only  ~5.5GB   36.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~5.5GB
 git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && sed -i.bak 's#deepseek-ai/Janus-1.3B#deepseek-ai/Janus-Pro-1B#; s#"role": "User"#"role": "<|User|>"#; s#"role": "Assistant"#"role": "<|Assistant|>"#' generation_inference.py && python generation_inference.py
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/janus-pro-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

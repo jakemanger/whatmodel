@@ -6,24 +6,39 @@
 
 OpenAI · released 2023-11 · proprietary
 
-**score 59.3** ±3.8 · #43 of 117 · from 3 benchmark results across 1 source
+**score 59.1** ±3.8 · #43 of 118 · from 3 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks TTS-1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source             test                               score  implies  date        weight
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench  <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>  3.33 / 5    61.0   2026-07-16   41% ▇▇▇▇▇
-                   <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Ro…</a>  3.16 / 5    60.3   2026-07-16   30% ▇▇▇▇
-                   <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.46 / 5    57.5   2026-07-16   24% ▇▇▇
-prior              pull toward the middle                      49.7                 6% ▇
-                   weighted average                          = 59.3
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qualit…</a>  3.33 / 5  ●·█········▄ beats 0/4    medium · avg 2.70 / 5     40%  at its level
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Role-F…</a>  3.16 / 5  ●·····█····▄ beats 0/3    medium · avg 2.58 / 5     31%  at its level
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Identity …</a>  3.46 / 5  ●·····▄····█ beats 1/4    medium · avg 3.08 / 5     23%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-rw-voice-eq-report"></a><a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ Bench</a>                    3   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             6% ▇
+weighted average                        = 59.1
+</pre>
 
 <sub>Licences: RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 

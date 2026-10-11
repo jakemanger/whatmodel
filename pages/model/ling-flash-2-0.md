@@ -6,21 +6,48 @@
 
 inclusionAI (Ant Group) · released 2025-09 · 100B params (6.1B active) · mit
 
-**score 59.0** ±2.1 · #228 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 59.0** ±2.1 · #236 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Ling-flash-2.0 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #174 of 466*     39%      1
+</pre>
+
+<details><summary>chat &amp; writing · #174 of 466 · 39% of its score</summary>
+
+Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1343.8  ▁▁▁▂▃▃▃▆●▇█▃ beats 185/379  avg 1268       39%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5174  ▁▄▃▃▇▄●▃▅▁▁▁ beats 20/30  avg 0.423      59%  sharp
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5174    59.3   2026-05-02   62% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1343.8    59.2   2026-10-02   36% ▇▇▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 59.0
+source                                    results  share of the score
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        1   59% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   39% ▇▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 59.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -32,13 +59,39 @@ download          size  score
 2-bit q2_k    ~36.25GB   59.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q4_K_M
-# 2-bit q2_k
-llama-server -hf bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q2_K
+# 4-bit q4_k_m · ~62.62GB
+llama cli -hf bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q4_K_M
+# 2-bit q2_k · ~36.25GB
+llama cli -hf bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q2_K
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q2_K
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~62.62GB
+lms get https://huggingface.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit q2_k · ~36.25GB
+lms get https://huggingface.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF@Q2_K -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 2-bit q2_k · ~36.25GB
+ollama run hf.co/bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q2_K
+```
 
 [interactive version](https://whatmodel.sh/model/ling-flash-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

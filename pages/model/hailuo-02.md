@@ -6,23 +6,52 @@
 
 MiniMax · released 2025-06 · closed weights
 
-**score 53.4** ±1.8 · #42 of 93 · from 4 benchmark results across 3 sources
+**score 53.5** ±1.8 · #42 of 93 · from 4 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Hailuo 02 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄▆▅●▃▂▂▂▄   #27 of 68*     59%      2
+image to video  ▁▂·▂▅●▅▄▅▆▃▄   #35 of 50*     39%      2
+</pre>
+
+<details><summary>text to video · #27 of 68 · 59% of its score</summary>
+
+<pre>
+test              result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>     1181.1  ▂▂▃▆●▆·▆▅▁▂▇ beats 12/41  avg 1147           57%  typical
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   85.8%  ▂··▂··●▄▂··▆ beats 4/11   easy · avg 84%    1.8%  blunt
+</pre>
+
+</details>
+
+<details><summary>image to video · #35 of 50 · 39% of its score</summary>
+
+Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Kling 2.1 Standard](kling-2-1-standard.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
+
+<pre>
+test                            result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1223.7  ▁▁▁▁▄●▃▆▃▂▄█ beats 9/40   avg 1189           38%  typical
+<a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>   37.5%  █·····▄···●▄ beats 3/4    hard · avg 17%    1.7%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1181.1    52.9   2026-09-22   57% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1223.7    53.3   2026-09-22   38% ▇▇▇▇▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                 85.8%    53.7   2026-04-22    2% ▇
-<a name="visual-v-reasonbench"></a>V-ReasonBench: Toward…  <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>   37.5%    78.8   2025-11-20    2% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 53.4
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    2% ▇
+<a name="visual-v-reasonbench"></a><a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench: Toward Unified Reasoning…</a>        1    2% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 53.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt)) · V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt))</sub>
 

@@ -6,39 +6,112 @@
 
 OpenBMB · released 2026-09 · 2.52B params · apache-2.0
 
-**score 63.4** ±1.0 · #169 of 934 · from 20 benchmark results across 1 source · † every result so far was reported by its maker
+**score 63.5** ±1.1 · #174 of 949 · from 20 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks MiniCPM5 2B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃▆█▆●▄▄▃▂▁    #128 of 334     21%      5
+coding          ▁▁▁▃▆██●▆▄▃▁    #155 of 469     34%      5
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #181 of 466*    0.2%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁    #138 of 400     29%      4
+web search      █·█▄██·▄●·▄▄      #3 of 13*    5.1%      1
+</pre>
+
+<details><summary>agent tasks · #128 of 334 · 21% of its score</summary>
+
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified (lab)</a>             46.4%  ▄··▄▄█··▄·▄● beats 8/8    very hard · avg 12%     5.3%  sharp · at its level · noisy
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BrowseComp-ZH (lab)</a>                  43.5%  ▄▄·▄▄▄·█···● beats 8/8    very hard · avg 13%     5.1%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)…</a>   14.4%  █▂···▂···●·▂ beats 7/8    very hard · avg 4.3%    5.0%  sharp · noisy
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BFCL V4 (December 2025 archive) (…</a>   66.6%  ▄·█·▄▄▄▄·▄·● beats 8/8    medium · avg 43%        3.7%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">τ²-bench Telecom (lab)</a>               97.1%  ▁·▅█▆▅▂▃▃●▃▁ beats 79/89  hard · avg 32%          1.9%  sharp · noisy · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #155 of 469 · 34% of its score</summary>
+
+Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Medium)…</a>   17.5%  █···▂··▄▂··● beats 8/8    very hard · avg 2.0%     11%  sharp · noisy
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench v6 (window unspecif…</a>   69.1%  ▃····█·▃▅▃·● beats 8/8    medium · avg 39%        6.5%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   68.0%  ▄···█▄··▄█▄● beats 8/8    hard · avg 33%          5.9%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified (lab)</a>             46.4%  ▄··▄▄█··▄·▄● beats 8/8    very hard · avg 12%     5.3%  sharp · at its level · noisy
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)…</a>   14.4%  █▂···▂···●·▂ beats 7/8    very hard · avg 4.3%    5.0%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #181 of 466 · 0.2% of its score</summary>
+
+Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">IFEval (aggregation unspecified) …</a>   86.7%  ▄▄····▄··●██ beats 3/8    easy · avg 77%    0.2%  noisy
+</pre>
+
+</details>
+
+<details><summary>math · #138 of 400 · 29% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">HMMT February 2026 (lab)</a>   63.8%  ▅··▃▃·▃··▃·● beats 7/8    hard · avg 30%          12%  sharp · at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2025 (lab)</a>            86.5%  █▄▄▄▄····█·● beats 8/8    medium · avg 42%       7.2%  sharp
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2026 (lab)</a>            86.5%  ▄·▄█·▄▄···█● beats 8/8    medium · avg 48%       6.1%  sharp
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MATH-500 (lab)</a>             94.6%  ██▄▄●··▄···▄ beats 6/8    very easy · avg 89%    2.7%  maxed out
+</pre>
+
+</details>
+
+<details><summary>web search · #3 of 13 · 5.1% of its score</summary>
+
+Trails [Spark-X2.5 1.7B](spark-x2-5-1-7b.md) here, though they rank lower overall.
+
+<pre>
+test                 result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BrowseComp-ZH (lab)</a>   43.5%  ▄▄·▄▄▄·█···● beats 8/8    very hard · avg 13%    5.1%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (7)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">OJBench (lab)</a>                        32.5%  ▃····▃▅··█▃● beats 8/8    very hard · avg 12%    6.0%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LongBench v2 (lab)</a>                   43.7%  ▃······▅▅▃·● beats 7/8    very hard · avg 32%    5.3%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Pro (lab)</a>                       70.8%  ▂··▂█·▂●···▂ beats 7/8    medium · avg 59%       4.3%  typical
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SuperGPQA (lab)</a>                      40.8%  ▃·▃·▃▅●····▃ beats 7/8    hard · avg 32%         3.8%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Redux (lab)</a>                     84.7%  ▂···█··▂●··▂ beats 7/8    easy · avg 77%         3.4%  typical
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">IFBench (aggregation unspecified)…</a>   66.3%  ▅····▃▃·█·●▃ beats 7/8    medium · avg 43%       2.2%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">Multi-IF (aggregation unspecified…</a>   71.8%  ▄▄···▄·▄·▄●█ beats 5/8    medium · avg 60%       1.4%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-openbmb-minicpm5-2b"></a>openbmb/MiniCPM5-2B m…  <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">HMMT February 2026 (lab)</a>        63.8%    61.0   2026-09-06   12% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Med…</a>  17.5%    69.9   2026-09-06   10% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2025 (lab)</a>                 86.5%    66.7   2026-09-06    8% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">OJBench (lab)</a>                   32.5%    65.4   2026-09-06    7% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2026 (lab)</a>                 86.5%    65.4   2026-09-06    7% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench v6 (window unsp…</a>  69.1%    62.5   2026-09-06    6% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Eas…</a>  68.0%    65.1   2026-09-06    6% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified (lab)</a>        46.4%    67.3   2026-09-06    5% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LongBench v2 (lab)</a>              43.7%    61.3   2026-09-06    5% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BrowseComp-ZH (lab)</a>             43.5%    67.3   2026-09-06    5% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecif…</a>  14.4%    61.0   2026-09-06    5% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Pro (lab)</a>                  70.8%    54.2   2026-09-06    4% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SuperGPQA (lab)</a>                 40.8%    54.6   2026-09-06    4% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BFCL V4 (December 2025 archiv…</a>  66.6%    65.5   2026-09-06    3% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Redux (lab)</a>                84.7%    54.6   2026-09-06    3% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MATH-500 (lab)</a>                  94.6%    56.9   2026-09-06    3% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">IFBench (aggregation unspecif…</a>  66.3%    62.2   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">Multi-IF (aggregation unspeci…</a>  71.8%    57.5   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">τ²-bench Telecom (lab)</a>          97.1%    73.0   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">IFEval (aggregation unspecifi…</a>  86.7%    61.4   2026-09-06    0% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 63.4
+source                                results  share of the score
+<a name="card3-openbmb-minicpm5-2b"></a><a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">openbmb/MiniCPM5-2B model card (lab)</a>       20  100% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                    0% ▇
+weighted average                               = 63.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: openbmb/MiniCPM5-2B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -47,18 +120,67 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md): Model card: 'Context Length: 131,072'. Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~1.56GB   63.4
-8-bit q8_0    ~2.68GB   63.4
+download                      size  score
+4-bit q4_k_m               ~1.56GB   63.5
+8-bit q8_0                 ~2.68GB   63.5
+4-bit mlx-4bit · mac only   ~1.4GB   63.5
+4-bit mlx-8bit · mac only   ~2.7GB   63.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf openbmb/MiniCPM5-2B-GGUF:Q4_K_M --jinja
-# 8-bit q8_0
-llama-server -hf openbmb/MiniCPM5-2B-GGUF:Q8_0 --jinja
+# 4-bit q4_k_m · ~1.56GB
+llama cli -hf openbmb/MiniCPM5-2B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf openbmb/MiniCPM5-2B-GGUF:Q4_K_M
+# 8-bit q8_0 · ~2.68GB
+llama cli -hf openbmb/MiniCPM5-2B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf openbmb/MiniCPM5-2B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~1.56GB
+lms get https://huggingface.co/openbmb/MiniCPM5-2B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~2.68GB
+lms get https://huggingface.co/openbmb/MiniCPM5-2B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~1.4GB
+lms get https://huggingface.co/mlx-community/MiniCPM5-2B-mlx-4Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~2.7GB
+lms get https://huggingface.co/mlx-community/MiniCPM5-2B-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~1.56GB
+ollama run hf.co/openbmb/MiniCPM5-2B-GGUF:Q4_K_M
+# 8-bit q8_0 · ~2.68GB
+ollama run hf.co/openbmb/MiniCPM5-2B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~1.4GB
+mlx_lm.chat --model mlx-community/MiniCPM5-2B-mlx-4Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/MiniCPM5-2B-mlx-4Bit
+# 4-bit mlx-8bit · mac only · ~2.7GB
+mlx_lm.chat --model mlx-community/MiniCPM5-2B-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/MiniCPM5-2B-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/minicpm5-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

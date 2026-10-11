@@ -6,22 +6,37 @@
 
 Meta · released 2023-09 · 0.036B params · cc-by-nc-4.0
 
-**score 18.2** ±3.9 · #115 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 18.0** ±3.9 · #116 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks MMS TTS Turkish among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-cloud0day3-antalia-mini"></a>Antalia-2 Mini model …  <a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Freya-TR-Eval Turkish TTS int…</a>   6.4%    16.2   2026-10-09   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.7                 6% ▇
-                        weighted average                       = 18.2
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Freya-TR-Eval Turkish TTS intelli…</a>    6.4%  ▄··●··▄···▂█ beats 2/10   avg 0.3%       94%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="card3-cloud0day3-antalia-mini"></a><a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Antalia-2 Mini model card</a>            1   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             6% ▇
+weighted average                        = 18.0
+</pre>
 
 <sub>Licences: Antalia-2 Mini model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -29,14 +44,18 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                          needs  score
-fp32 (transformers VitsModel)  ~0.15GB   18.2
+fp32 (transformers VitsModel)  ~0.15GB   18.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (transformers VitsModel)
+# fp32 (transformers VitsModel) · ~0.15GB
 uv run --python 3.11 --with transformers --with torch --with scipy python -c "from transformers import VitsModel, AutoTokenizer; import torch, scipy; model = VitsModel.from_pretrained('facebook/mms-tts-tur'); tokenizer = AutoTokenizer.from_pretrained('facebook/mms-tts-tur'); inputs = tokenizer('Merhaba, nasılsınız?', return_tensors='pt'); torch.set_grad_enabled(False); output = model(**inputs).waveform; scipy.io.wavfile.write('out.wav', rate=model.config.sampling_rate, data=output.squeeze().numpy())"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/mms-tts-tur) · [JSON](https://whatmodel.sh/api?format=json&all=1)

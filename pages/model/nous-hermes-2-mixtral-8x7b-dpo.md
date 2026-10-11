@@ -6,24 +6,54 @@
 
 Nous Research · released 2024-01 · 46.7B params (12.9B active) · apache-2.0
 
-**score 40.5** ±2.3 · #693 of 934 · from 3 benchmark results across 3 sources
+**score 40.1** ±1.8 · #709 of 949 · from 4 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Nous Hermes 2 Mixtral 8x7B DPO among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #397 of 466*     59%      2
+</pre>
+
+<details><summary>chat &amp; writing · #397 of 466 · 59% of its score</summary>
+
+Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty  counts  why
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1090.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 41/95   avg 1201       30%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1164.3  ▁▁▁▂●▃▃▆▆▇█▃ beats 46/379  avg 1268       29%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                          result  vs the others in its run    difficulty           counts  why
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  30.7114 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 17/52    avg 45.199 WB-Score     33%  sharp
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             67.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 133/276  medium · avg 73%       6.3%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                       score  implies  date        weight
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  30.7114 WB-Score    41.6   2024-08-01   44% ▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                            1164.3    37.7   2026-10-02   44% ▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             67.2%    46.2   2024-02-27   10% ▇
-prior                   pull toward the middle                              50.0                 2% ▇
-                        weighted average                                  = 40.5
+source                                    results  share of the score
+<a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                   1   33% ▇▇▇▇
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   30% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   29% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    6% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 40.1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -31,17 +61,49 @@ prior                   pull toward the middle                              50.0
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~28.52GB   40.5
-8-bit q8_0    ~56.54GB   40.5
+4-bit q4_k_m  ~28.52GB   40.1
+8-bit q8_0    ~56.54GB   40.1
+4-bit Q4_K_M   ~28.4GB   40.1
+8-bit Q8_0     ~49.6GB   40.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run nous-hermes2-mixtral:8x7b-dpo-q4_K_M
-# 8-bit q8_0
-ollama run nous-hermes2-mixtral:8x7b-dpo-q8_0
+# 4-bit Q4_K_M · ~28.4GB
+llama cli -hf TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~49.6GB
+llama cli -hf TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~28.4GB
+lms get https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~49.6GB
+lms get https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~28.52GB
+ollama run nous-hermes2-mixtral:8x7b-dpo-q4_K_M
+# 8-bit q8_0 · ~56.54GB
+ollama run nous-hermes2-mixtral:8x7b-dpo-q8_0
+# 4-bit Q4_K_M · ~28.4GB
+ollama run hf.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF:Q4_K_M
+```
 
 [interactive version](https://whatmodel.sh/model/nous-hermes-2-mixtral-8x7b-dpo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

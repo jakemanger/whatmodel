@@ -6,28 +6,57 @@
 
 Boson AI · released 2026-06 · 4B params · boson-higgs-audio-v3-research-nc
 
-**score 65.0** ±3.4 · #17 of 117 · from 7 benchmark results across 4 sources
+**score 65.0** ±3.4 · #17 of 118 · from 7 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Higgs Audio V3 TTS among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>      1.1%    66.8   2026-06-04   38% ▇▇▇▇▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>      2.7%    79.7   2026-06-04    7% ▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>      4.4%    71.1   2026-06-04    6% ▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Co…</a>  3.38 / 5    62.2   2026-07-16   20% ▇▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice…</a>     56.0%    60.5   2026-10-01   16% ▇▇
-                        <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice…</a>      5.0%   167.8   2026-10-01    0% ▇
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>    1072.8    62.7   2026-09-24    8% ▇
-prior                   pull toward the middle                      49.7                 5% ▇
-                        weighted average                          = 65.0
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁▇●▃▃   #9 of 37*     37%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #9 of 37 · 37% of its score</summary>
+
+Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [OmniVoice](omnivoice.md) here, though they rank higher overall. Trails [VoxCPM2](voxcpm2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-zh m…</a>    1.1%  ▄··▄▄····█▄● beats 6/6    avg 3.7%       37%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Code-S…</a>  3.38 / 5  █··●·······▄ beats 2/3    medium · avg 2.67 / 5     20%  at its level
+<a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice clo…</a>     56.0%  ▃·····▂▂▂▃●▆ beats 7/15   medium · avg 46%          16%  blunt · at its level
+<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set · 2…</a>      2.7%  ▃·▃·▃·····▃● beats 6/6    avg 44%                  8.1%  sharp · noisy
+<a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community blin…</a>    1072.8  ▂▂··▃·█●···▂ beats 11/12  avg 1018                 7.7%  blunt
+<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice clone…</a>      4.4%  ▃·····▃···▅● beats 6/6    avg 20%                  5.9%  noisy
+<a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice clo…</a>      5.0%  ▂▂▂··▂·▃▃▃●▂ beats 11/15  avg 8.6%                 0.2%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-higgs3-sglang-apache"></a><a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Higgs Audio v3 comparison tables in SGL…</a>        3   51% ▇▇▇▇▇▇
+<a name="speech-rw-voice-eq-report"></a><a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ Bench</a>                               1   20% ▇▇
+<a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v3">RVCBench: Benchmarking Robustness of Vo…</a>        2   16% ▇▇
+<a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                                1    8% ▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 65.0
+</pre>
 
 <sub>Licences: Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>
 
@@ -43,13 +72,17 @@ bf16 · nvidia only  ~10.1GB   65.0
 bf16 · mac only     ~10.1GB   65.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~10.1GB
 hf download bosonai/higgs-audio-v3-tts-4b && sgl-omni serve --model-path bosonai/higgs-audio-v3-tts-4b --port 8000
-# bf16 · mac only
+# bf16 · mac only · ~10.1GB
 pip install mlx-audio && mlx_audio.tts.generate --model bosonai/higgs-audio-v3-tts-4b --text 'Hello, world!'
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/higgs-audio-v3-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

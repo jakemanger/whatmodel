@@ -6,25 +6,52 @@
 
 NVIDIA · released 2024-01 · 0.61B params · cc-by-4.0
 
-**score 54.0** ±2.7 · #78 of 160 · from 4 benchmark results across 2 sources
+**score 54.0** ±2.7 · #79 of 162 · from 4 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Parakeet CTC 0.6B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.7%    52.2   2026-03-26   25% ▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.8%    55.1   2026-03-26   25% ▇▇▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-0.6b.json">LibriSpeech test-clean WER</a>       1.9%    55.8   2026-09-15   34% ▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-0.6b.json">FLEURS English test WER</a>          5.5%    51.5   2026-09-15   13% ▇▇
-prior                   pull toward the middle                   49.8                 3% ▇
-                        weighted average                       = 54.0
+task                    vs the others        rank  counts  tests
+long-form transcripti…  ▁▁▄▁·▁▂●▄▁▁▁   #16 of 27*     26%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>long-form transcription · #16 of 27 · 26% of its score</summary>
+
+Beats [Parakeet TDT 1.1B](parakeet-tdt-1-1b.md), [Parakeet RNNT 1.1B](parakeet-rnnt-1-1b.md), [Distil-Whisper distil-large-v3](distil-large-v3.md) here, though they rank higher overall. Trails [Whisper large (v1)](whisper-large.md), [Whisper large-v2](whisper-large-v2.md), [Rev AI Machine (Reverb ASR)](revai-machine.md) here, though they rank lower overall.
+
+<pre>
+test                            result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>    9.8%  ▁▁▅▁·▃●█▆▁▂▂ beats 12/30  avg 12%        26%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-0.6b.json">LibriSpeech test-clean WER</a>            1.9%  ▁···▁▁▂·▄▄●█ beats 32/56  avg 2.3%       33%  blunt
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.7%  ▁▁▁▃··▁▁▂●█▆ beats 44/86  avg 8.2%       26%  blunt
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-0.6b.json">FLEURS English test WER</a>               5.5%  ▁··▁▁▁▁▁▁●█▁ beats 20/56  avg 5.8%       13%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            2   51% ▇▇▇▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-0.6b.json">transcribe.cpp model catalog · LibriSpe…</a>        2   46% ▇▇▇▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 54.0
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
 
@@ -35,11 +62,15 @@ version               needs  score
 fp32 · nvidia only  ~3.43GB   54.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 · nvidia only
+# fp32 · nvidia only · ~3.43GB
 uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-ctc-0.6b').transcribe(['audio.wav']))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/parakeet-ctc-0-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

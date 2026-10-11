@@ -6,43 +6,79 @@
 
 DeepFloyd · released 2023-04 · 4.3B params · deepfloyd-if-license
 
-**score 34.8** ±1.8 · #122 of 144 · from 7 benchmark results across 7 sources
+**score 34.9** ±1.8 · #121 of 144 · from 7 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks IF-XL among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                                        score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>                           2.77 / 5    32.5   2024-12-25   23% ▇▇▇
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.4500 mean human alignment score    38.2   2024-10-10   21% ▇▇▇
-<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md">GenEval</a>                                                     61.0%    36.5   2023-10-17   21% ▇▇
-<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>                              38.0%    33.9   2024-08-26   19% ▇▇
-<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>                              59.0%    34.2   2024-03-10   10% ▇
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              58.9%    24.4   2023-11-07    6% ▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>                              27.3%    48.5   2024-02-21    0% ▇
-prior                   pull toward the middle                                               49.9                 1% ▇
-                        weighted average                                                   = 34.8
+task           vs the others         rank  counts  tests
+text to image  ▂●▅▃▄▄█▃▁▂▁▁   #107 of 126     72%      5
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #107 of 126 · 72% of its score</summary>
 
-<sub>Licences: EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GenEval authors' results: djghosh13/geneval README and arXiv 2310.11513v1 ([MIT (README); CC-BY-4.0 (arXiv 2310.11513v1)](../../licenses/visual-geneval.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [SDXL-Turbo](sdxl-turbo.md), [Stable Diffusion XL 1.0](sdxl.md) here, though they rank lower overall.
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  2.77 / 5  █▄·▄●█▄▄█▄▄▄ beats 5/14   easy · avg 3.83 / 5     23%  at its level
+<a href="https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md">GenEval</a>                                61.0%  ▅█···▅▃▃▃··● beats 10/10  easy · avg 79%          21%  at its level
+<a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark score)</a>       38.0%  ▄·▄·█●▄▄···▄ beats 4/7    easy · avg 66%          18%  at its level
+<a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generation …</a>     59.0%  ▄▄·●·······▄ beats 3/4    easy · avg 80%          10%  at its level
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>     27.3%  ▃··▃▅·▅·▅▅●▅ beats 11/14  hard · avg 27%         0.1%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                                           result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.4500 mean human alignment score  █▄▄·█·▄█▄▄·● beats 11/11  avg 6.285 mean human al…     21%  typical
+<a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (aspect…</a>                              58.9%  ▁····●▁·▁··▁ beats 4/9    very easy · avg 92%         5.5%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   23% ▇▇▇
+<a name="visual-geneval"></a><a href="https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md">GenEval authors' results: djghosh13/gen…</a>        1   21% ▇▇▇
+<a name="visual-evalalign"></a><a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign: Supervised Fine-Tuning Multi…</a>        1   21% ▇▇▇
+<a name="visual-conceptmix"></a><a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix: A Compositional Image Gener…</a>        1   18% ▇▇
+<a name="visual-imagenhub"></a><a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub: Standardizing the evaluation…</a>        1   10% ▇
+<a name="visual-heim"></a><a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM: Holistic Evaluation of Text-to-Im…</a>        1    6% ▇
+<a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">tgxs002/HPSv2 repository README</a>                 1    0% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 34.9
+</pre>
+
+<sub>Licences: EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · GenEval authors' results: djghosh13/geneval README and arXiv 2310.11513v1 ([MIT (README); CC-BY-4.0 (arXiv 2310.11513v1)](../../licenses/visual-geneval.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                                     needs  score
-fp16 + model CPU offload (stages I+II, …  ~29.1GB   34.8
+fp16 + model CPU offload (stages I+II, …  ~29.1GB   34.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 + model CPU offload (stages I+II, 256px) · nvidia only
+# fp16 + model CPU offload (stages I+II, 256px) · nvidia only · ~29.1GB
 uv run --with diffusers --with transformers --with accelerate --with torch --with safetensors --with sentencepiece --with protobuf python -c "import torch; from diffusers import DiffusionPipeline; s1=DiffusionPipeline.from_pretrained('DeepFloyd/IF-I-XL-v1.0', variant='fp16', torch_dtype=torch.float16); s1.enable_model_cpu_offload(); s2=DiffusionPipeline.from_pretrained('DeepFloyd/IF-II-L-v1.0', text_encoder=None, variant='fp16', torch_dtype=torch.float16); s2.enable_model_cpu_offload(); e,n=s1.encode_prompt('a cat holding a sign'); i=s1(prompt_embeds=e, negative_prompt_embeds=n, output_type='pt').images; s2(image=i, prompt_embeds=e, negative_prompt_embeds=n, output_type='pil').images[0].save('out.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/deepfloyd-if-xl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

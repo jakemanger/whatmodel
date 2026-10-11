@@ -6,37 +6,94 @@
 
 Xwin-LM · released 2023-11 · llama2
 
-**score 48.4** ±0.9 · #484 of 934 · from 3 benchmark results across 1 source
+**score 48.3** ±0.9 · #492 of 949 · from 3 benchmark results across 1 source
+
+## What it's good at
+
+<sub>● marks XwinCoder-34B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #282 of 469    100%      3
+</pre>
+
+<details><summary>coding · #282 of 469 · 100% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank lower overall.
+
+<pre>
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    75.6%  ▁·▁▁▃▄▆▅●▃▁▁ beats 72/99  easy · avg 79%     50%  sharp
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   69.5%  ▁·▁▁▁▃▄▄▄●▃▁ beats 68/99  easy · avg 74%     42%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        64.8%  ▁···▁▁▂▅▇●▆▂ beats 51/75  easy · avg 68%    7.9%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               75.6%    48.4   2024-12-26   51% ▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              69.5%    48.4   2024-12-26   42% ▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   64.8%    48.1   2024-12-26    7% ▇
-prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 48.4
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3  100% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 48.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-16-bit bf16  ~67.49GB   48.4
+download          size  score
+16-bit bf16   ~67.49GB   48.3
+4-bit Q4_K_M   ~20.2GB   48.3
+8-bit Q8_0     ~35.9GB   48.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Xwin-LM/XwinCoder-34B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~20.2GB
+llama cli -hf TheBloke/XwinCoder-34B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/XwinCoder-34B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~35.9GB
+llama cli -hf TheBloke/XwinCoder-34B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/XwinCoder-34B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~20.2GB
+lms get https://huggingface.co/TheBloke/XwinCoder-34B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~35.9GB
+lms get https://huggingface.co/TheBloke/XwinCoder-34B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~20.2GB
+ollama run hf.co/TheBloke/XwinCoder-34B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~35.9GB
+ollama run hf.co/TheBloke/XwinCoder-34B-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~67.49GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Xwin-LM/XwinCoder-34B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/xwincoder-34b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

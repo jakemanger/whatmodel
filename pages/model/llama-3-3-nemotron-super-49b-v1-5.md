@@ -6,23 +6,53 @@
 
 NVIDIA · released 2025-07 · 49B params · nvidia-open-model
 
-**score 57.4** ±1.4 · #263 of 934 · from 4 benchmark results across 2 sources
+**score 57.5** ±1.4 · #264 of 949 · from 4 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Llama 3.3 Nemotron Super 49B v1.5 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #202 of 469     81%      3
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #176 of 466*     18%      1
+</pre>
+
+<details><summary>coding · #202 of 469 · 81% of its score</summary>
+
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    6.1%  ▃▃····▃·●·▃▃ beats 4/7    very hard · avg 2.4%     46%  sharp · too hard for it
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   61.9%  ▄·▄····▄●▄█▄ beats 3/7    medium · avg 45%         25%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   68.1%  ▄▄···▄·●▄█·▄ beats 3/7    medium · avg 57%         11%  at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #176 of 466 · 18% of its score</summary>
+
+Beats [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1342.9  ▁▁▁▂▃▃▃▆●▇█▃ beats 181/379  avg 1268       18%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="report-2512.13607v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>    6.1%    57.2   2026-03-27   46% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   61.9%    56.9   2026-03-27   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–Ma…</a>   68.1%    57.2   2026-03-27   11% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1342.9    59.1   2026-10-02   17% ▇▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 57.4
+source                         results  share of the score
+<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                         3   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   18% ▇▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 57.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -31,18 +61,67 @@ prior                   pull toward the middle                    50.0          
 <sub>[context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/llama-3.3-nemotron-super-49b-v1.5.toml)</sub>
 
 <pre>
-download             size  score
-4-bit ud-q4_k_xl  ~29.9GB   57.4
-2-bit ud-q2_k_xl  ~15.2GB   57.4
+download                      size  score
+4-bit ud-q4_k_xl           ~29.9GB   57.5
+2-bit ud-q2_k_xl           ~15.2GB   57.5
+4-bit mlx-4bit · mac only  ~28.1GB   57.5
+4-bit mlx-8bit · mac only    ~53GB   57.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit ud-q4_k_xl
-llama-server -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q2_K_XL
+# 4-bit ud-q4_k_xl · ~29.9GB
+llama cli -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q4_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl · ~15.2GB
+llama cli -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q2_K_XL
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit ud-q4_k_xl · ~29.9GB
+lms get https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF@UD-Q4_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit ud-q2_k_xl · ~15.2GB
+lms get https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~28.1GB
+lms get https://huggingface.co/jesusoctavioas/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-4Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~53GB
+lms get https://huggingface.co/LogicBombaklot/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-8Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit ud-q4_k_xl · ~29.9GB
+ollama run hf.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl · ~15.2GB
+ollama run hf.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q2_K_XL
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~28.1GB
+mlx_lm.chat --model jesusoctavioas/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-4Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model jesusoctavioas/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-4Bit
+# 4-bit mlx-8bit · mac only · ~53GB
+mlx_lm.chat --model LogicBombaklot/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-8Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model LogicBombaklot/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-8Bit
+```
 
 [interactive version](https://whatmodel.sh/model/llama-3-3-nemotron-super-49b-v1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

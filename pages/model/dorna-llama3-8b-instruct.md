@@ -6,35 +6,89 @@
 
 Part AI · released 2024-06 · 8.03B params · llama3
 
-**score 42.1** ±5.0 · #658 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.0** ±4.8 · #670 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Dorna-Llama3-8B-Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   47.0%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 22/81  medium · avg 58%     90%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  47.0%    41.1   2026-09-19   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                11% ▇
-                        weighted average                       = 42.1
+source                           results  share of the score
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>        1   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle              10% ▇
+weighted average                          = 42.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-16-bit bf16  ~16.06GB   42.1
+download          size  score
+16-bit bf16   ~16.06GB   42.0
+4-bit Q4_K_M    ~4.9GB   42.0
+8-bit Q8_0      ~8.5GB   42.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='PartAI/Dorna-Llama3-8B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~4.9GB
+llama cli -hf QuantFactory/Dorna-Llama3-8B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf QuantFactory/Dorna-Llama3-8B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.5GB
+llama cli -hf QuantFactory/Dorna-Llama3-8B-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf QuantFactory/Dorna-Llama3-8B-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.9GB
+lms get https://huggingface.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.5GB
+lms get https://huggingface.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.9GB
+ollama run hf.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.5GB
+ollama run hf.co/QuantFactory/Dorna-Llama3-8B-Instruct-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~16.06GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='PartAI/Dorna-Llama3-8B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/dorna-llama3-8b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

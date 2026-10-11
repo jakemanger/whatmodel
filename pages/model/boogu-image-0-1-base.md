@@ -6,22 +6,40 @@
 
 Boogu project · released 2026-06 · apache-2.0
 
-**score 66.6** ±5.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.6** ±5.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Boogu-Image-0.1 Base among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>  77.9%    68.8   2026-10-07   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                12% ▇
-                        weighted average                       = 66.6
+task           vs the others         rank  counts  tests
+text to image  ▁▂▇▇▆▅█▇●▃▁▁   #20 of 157*     88%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #20 of 157 · 88% of its score</summary>
+
+Beats [Qwen-Image-2.0-Pro (2026-06-22)](qwen-image-2-0-pro-2026-06-22.md), [Uni-1.1](uni-1-1.md) here, though they rank higher overall. Trails [Qwen-Image 2.0 Pro](qwen-image-2-0-pro.md), [Ideogram 4.0](ideogram-4.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   77.9%  ▁▂▂█▃▁●▃·▁·▁ beats 16/22  hard · avg 28%     88%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       12% ▇
+weighted average                                   = 66.6
+</pre>
 
 <sub>Licences: UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

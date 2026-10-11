@@ -6,25 +6,54 @@
 
 OpenAI · released 2022-04 · proprietary
 
-**score 35.9** ±3.3 · comparison only: no current run option verified · from 4 benchmark results across 4 sources
+**score 36.1** ±3.3 · comparison only: no current run option verified · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks DALL·E 2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                    score  implies  date        weight
-<a name="visual-imagereward"></a>ImageReward: Learning…  <a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of …</a>  390.0000 wins    33.3   2023-12-28   43% ▇▇▇▇▇
-<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>          54.0%    29.8   2024-03-10   34% ▇▇▇▇
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>          97.1%    50.0   2023-11-07   18% ▇▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>          27.0%    43.7   2024-02-21    0% ▇
-prior                   pull toward the middle                           49.9                 5% ▇
-                        weighted average                               = 35.9
+task           vs the others          rank  counts  tests
+text to image  ▁▂●▇▆▅█▇▂▃▁▁   #139 of 157*     34%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #139 of 157 · 34% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [CogView2](cogview2.md), [Versatile Diffusion v1.0](versatile-diffusion.md), [Dreamlike Photoreal 2.0](dreamlike-photoreal-2-0.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generation …</a>   54.0%  ▄●·█·······▄ beats 1/4    easy · avg 80%     34%  at its level
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   27.0%  ▃··▃▅·▅·▅●█▅ beats 8/14   hard · avg 27%    0.3%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                       result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of T2I …</a>  390.0000 wins  ▄·········█● beats 3/3    avg 526.557 wins        43%  sharp
+<a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (aspect…</a>          97.1%  ▁····█▁·▁··● beats 9/9    very easy · avg 92%     18%  sharp · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-imagereward"></a><a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward: Learning and Evaluating Hu…</a>        1   43% ▇▇▇▇▇
+<a name="visual-imagenhub"></a><a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub: Standardizing the evaluation…</a>        1   34% ▇▇▇▇
+<a name="visual-heim"></a><a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM: Holistic Evaluation of Text-to-Im…</a>        1   18% ▇▇
+<a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">tgxs002/HPSv2 repository README</a>                 1    0% ▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 36.1
+</pre>
 
 <sub>Licences: ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 

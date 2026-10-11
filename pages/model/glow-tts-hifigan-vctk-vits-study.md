@@ -6,22 +6,37 @@
 
 VITS study (public implementations) · released 2021-06 · closed weights
 
-**score 27.9** ±5.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 27.8** ±5.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Glow-TTS + HiFi-GAN (VCTK, VITS study) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                         score  implies  date        weight
-<a name="speech-vits-icml2021"></a>VITS: ICML 2021 origi…  <a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 VCTK human MOS</a>  3.76 / 5    24.6   2021-07-18   87% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                49.7                13% ▇▇
-                        weighted average                    = 27.9
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                        result  vs the others in its run  difficulty                counts  why
+<a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 VCTK human MOS</a>  3.76 / 5  █····●·····█ beats 1/2    very easy · avg 4.73 / 5     87%  at its level · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-vits-icml2021"></a><a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS: ICML 2021 original listening stud…</a>        1   87% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       13% ▇▇
+weighted average                                   = 27.8
+</pre>
 
 <sub>Licences: VITS: ICML 2021 original listening studies ([CC-BY-4.0](../../licenses/speech-vits-icml2021.txt))</sub>
 

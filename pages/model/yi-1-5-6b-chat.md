@@ -6,25 +6,44 @@
 
 01.AI · released 2024-05 · 6.06B params · apache-2.0
 
-**score 36.7** ±1.8 · #765 of 934 · from 6 benchmark results across 5 sources
+**score 36.6** ±1.7 · #779 of 949 · from 6 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Yi 1.5 6B Chat among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                          result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  23.3181 WB-Score  ▁·▁▁·●█▄▇▆▅▆ beats 5/52    avg 45.199 WB-Score     28%  sharp
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        33.8%  ▂▁▁▄●▅▇█▆▂▂▂ beats 14/58   medium · avg 50%        26%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        25.5%  ▃●·▆▆██▆▅▃▃▃ beats 2/33    medium · avg 41%        24%  typical
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                 5.2%  ●··▁▁▂▂▆▅▆█▆ beats 0/70    medium · avg 64%        14%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             62.6%  ▃▁▁▁▁▁▁▁●█▅▁ beats 98/276  medium · avg 73%       5.0%  at its level · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>             92.1%  ▁▁▂▃●▄█▆▃▂▂▁ beats 37/140  very easy · avg 94%    2.6%  blunt · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                       score  implies  date        weight
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                    33.8%    39.3   2025-04-01   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                    25.5%    39.0   2025-04-01   25% ▇▇▇
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  23.3181 WB-Score    37.1   2024-08-01   27% ▇▇▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>              5.2%    21.2   2024-06-19   13% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             62.6%    43.0   2024-05-16    5% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>             92.1%    43.4   2025-10-16    3% ▇
-prior                   pull toward the middle                              50.0                 1% ▇
-                        weighted average                                  = 36.7
+source                                  results  share of the score
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                            2   49% ▇▇▇▇▇▇
+<a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                 1   28% ▇▇▇
+<a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>        1   14% ▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>               1    5% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>             1    3% ▇
+prior: pull toward the middle                      1% ▇
+weighted average                                 = 36.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -33,18 +52,73 @@ prior                   pull toward the middle                              50.0
 <sub>[context source](https://huggingface.co/01-ai/Yi-1.5-6B-Chat/blob/771924d1c83d67527d665913415d7086f11ea9c0/config.json): 01.AI official configuration for Yi-1.5-6B-Chat (pinned commit): max\_position\_embeddings 4096. Configured maximum, not a benchmarked long-context claim: the official card states no context length for this checkpoint (it lists the Yi-1.5 family at 4K, 16K and 32K, with separate -16K chat repos). Observed 2026-10-07.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~4.14GB   36.7
-8-bit q8_0    ~7.77GB   36.7
+download                      size  score
+4-bit q4_k_m               ~4.14GB   36.6
+8-bit q8_0                 ~7.77GB   36.6
+4-bit Q4_K_M                ~3.7GB   36.6
+8-bit Q8_0                  ~6.4GB   36.6
+4-bit mlx-4bit · mac only   ~3.4GB   36.6
+4-bit mlx-8bit · mac only   ~6.4GB   36.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run yi:6b-chat-v1.5-q4_K_M
-# 8-bit q8_0
-ollama run yi:6b-chat-v1.5-q8_0
+# 4-bit Q4_K_M · ~3.7GB
+llama cli -hf lmstudio-community/Yi-1.5-6B-Chat-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Yi-1.5-6B-Chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~6.4GB
+llama cli -hf lmstudio-community/Yi-1.5-6B-Chat-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Yi-1.5-6B-Chat-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~3.7GB
+lms get https://huggingface.co/lmstudio-community/Yi-1.5-6B-Chat-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~6.4GB
+lms get https://huggingface.co/lmstudio-community/Yi-1.5-6B-Chat-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~3.4GB
+lms get https://huggingface.co/mlx-community/Yi-1.5-6B-Chat-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~6.4GB
+lms get https://huggingface.co/mlx-community/Yi-1.5-6B-Chat-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~4.14GB
+ollama run yi:6b-chat-v1.5-q4_K_M
+# 8-bit q8_0 · ~7.77GB
+ollama run yi:6b-chat-v1.5-q8_0
+# 4-bit Q4_K_M · ~3.7GB
+ollama run hf.co/lmstudio-community/Yi-1.5-6B-Chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~6.4GB
+ollama run hf.co/lmstudio-community/Yi-1.5-6B-Chat-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~3.4GB
+mlx_lm.chat --model mlx-community/Yi-1.5-6B-Chat-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Yi-1.5-6B-Chat-4bit
+# 4-bit mlx-8bit · mac only · ~6.4GB
+mlx_lm.chat --model mlx-community/Yi-1.5-6B-Chat-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Yi-1.5-6B-Chat-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/yi-1-5-6b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

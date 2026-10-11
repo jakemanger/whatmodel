@@ -6,21 +6,48 @@
 
 Alibaba · released 2025-04 · proprietary
 
-**score 61.5** ±2.3 · #195 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 61.3** ±2.3 · #203 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks QwQ-Plus among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others          rank  counts  tests
+math  ▁▂▃▅▆▅●█▄▁▁▁   #147 of 400*    8.2%      1
+</pre>
+
+<details><summary>math · #147 of 400 · 8.2% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   89.6%  ▄█·▄····●▄·█ beats 4/7    easy · avg 76%    8.2%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test          result  vs the others in its run   difficulty      counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   65.4%  ▁▁▁▁▂▄▆▄●▇█▅ beats 95/208  hard · avg 40%     89%  sharp · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    65.4%    61.5   2025-04-11   90% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="paper-2505.22113v1-thinkbench"></a>THINK-Bench: Evaluati…  <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accu…</a>  89.6%    64.3   2025-05-28    8% ▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 61.5
+source                                    results  share of the score
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        1   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2505.22113v1-thinkbench"></a><a href="https://arxiv.org/html/2505.22113v1">THINK-Bench: Evaluating Thinking Effici…</a>        1    8% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 61.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

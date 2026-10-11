@@ -6,30 +6,56 @@
 
 Z.ai · released 2025-12 · 1.55B params · mit
 
-**score 62.8** ±1.6 · #28 of 117 · from 9 benchmark results across 1 source
+**score 62.9** ±1.7 · #27 of 118 · from 9 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks GLM-TTS among every model on that task or test, worst to best.</sub>
 
 <pre>
-source           test                            score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio  <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval hard-en · WER</a>           9.4%    63.2   2025-12-01   16% ▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-en · speaker si…</a>  67.3%    60.1   2025-12-01   14% ▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval ZH (zero-shot Chines…</a>   3.6%    63.9   2025-12-01   14% ▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-zh · speaker si…</a>  76.0%    62.2   2025-12-01   13% ▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval EN (zero-shot Englis…</a>   6.6%    60.9   2025-12-01   13% ▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval hard-zh · CER</a>           9.1%    65.1   2025-12-01   10% ▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval hard-en · speaker si…</a>  73.4%    67.4   2025-12-01   10% ▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-en · Whisper la…</a>   2.5%    58.7   2025-12-01    5% ▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-zh · Paraformer…</a>   1.1%    66.0   2025-12-01    5% ▇
-prior            pull toward the middle                   49.7                 1% ▇
-                 weighted average                       = 62.8
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁●█▃▃   #25 of 37     38%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #25 of 37 · 38% of its score</summary>
+
+Trails [F5-TTS Base (v0)](f5-tts-base.md), [E2 TTS Base (F5-TTS reproduction)](e2-tts-base.md), [DMOSpeech 2](dmospeech-2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-en · speaker simila…</a>   67.3%  █·●·██·▄·▄·▄ beats 2/10   medium · avg 53%     14%  at its level
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-zh · speaker simila…</a>   76.0%  ▃··▃●▅▅··▃·▃ beats 2/10   medium · avg 62%     14%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-en · Whisper large-…</a>    2.5%  ▃··▃●··▅·█▃▅ beats 3/11   avg 3.6%            5.4%  blunt
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">Seed-TTS test-zh · Paraformer CER</a>     1.1%  ▂··▄··▂●█·▄▂ beats 4/11   avg 2.1%            4.8%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval hard-en · WER</a>                9.4%  █··██·●█████ beats 3/8    avg 26%              18%  sharp
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>    3.6%  █▄···●▄·█··▄ beats 4/8    avg 9.2%             15%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval hard-zh · CER</a>                9.1%  ▃▃·▃··●▃█··▃ beats 3/8    avg 23%              12%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval hard-en · speaker simila…</a>   73.4%  ▄█▄·▄··▄··●█ beats 6/8    medium · avg 49%     11%  at its level
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">CV3-Eval EN (zero-shot English) ·…</a>    6.6%  ▃·······▃●█▅ beats 3/8    avg 16%             4.7%  noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md">UltraEval-Audio</a>                      9   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 62.9
+</pre>
 
 <sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt))</sub>
 
@@ -37,14 +63,18 @@ prior            pull toward the middle                   49.7                 1
 
 <pre>
 version                                     needs  score
-fp32 (official GLM-TTS repo) · nvidia o…  ~8.89GB   62.8
+fp32 (official GLM-TTS repo) · nvidia o…  ~8.89GB   62.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (official GLM-TTS repo) · nvidia only
+# fp32 (official GLM-TTS repo) · nvidia only · ~8.89GB
 git clone https://github.com/zai-org/GLM-TTS.git && cd GLM-TTS && pip install -r requirements.txt && pip install -U huggingface_hub && huggingface-cli download zai-org/GLM-TTS --local-dir ckpt && python glmtts_inference.py --data=example_zh --exp_name=_test --use_cache
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/glm-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

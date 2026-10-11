@@ -6,36 +6,88 @@
 
 Open Thoughts · released 2025-05 · 7.62B params · apache-2.0
 
-**score 49.3** ±1.0 · #454 of 934 · from 15 benchmark results across 2 sources
+**score 50.4** ±0.9 · #427 of 949 · from 17 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks OpenThinker3 7B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #256 of 469     10%      3
+chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #396 of 466*    5.0%      2
+math            ▁▂▃▅▆▅●█▄▁▁▁    #168 of 400     37%      4
+</pre>
+
+<details><summary>coding · #256 of 469 · 10% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
+
+<pre>
+test              result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>         87.4%  ▂·······▂·●█ beats 2/6    easy · avg 80%      4.4%  sharp
+<a href="https://arxiv.org/html/2512.13961v2">MBPP+</a>              61.4%  ▄●····▄·▄··█ beats 1/5    medium · avg 62%    3.3%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>   68.0%  ▃▃·····●·▃·█ beats 2/6    easy · avg 65%      2.9%  at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #396 of 466 · 5.0% of its score</summary>
+
+Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
+
+<pre>
+test                              result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled</a>     24.0%  ●···█·█·█·██ beats 0/5    medium · avg 44%    4.4%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified)</a>   51.7%  ●▄·····█▄▄·▄ beats 0/6    easy · avg 79%      0.6%  noisy
+</pre>
+
+</details>
+
+<details><summary>math · #168 of 400 · 37% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall.
+
+<pre>
+test                         result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                     67.7%  ▄·····▄··●██ beats 2/6    medium · avg 59%        13%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                     57.2%  ▄··▄····●▄▄▄ beats 2/6    medium · avg 51%        11%  sharp · at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>     94.5%  ▃·····▃···●█ beats 3/6    very easy · avg 90%    7.7%  typical
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>   38.4%  ▄······█●▄·█ beats 3/6    hard · avg 30%         5.4%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                       77.1%  ▄·····▄·●·██ beats 2/6    easy · avg 78%       14%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>            47.6%  ▃······▃·●·█ beats 3/6    hard · avg 43%       11%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                                 77.4%  ▄···▄··●··▄█ beats 2/6    easy · avg 77%      7.0%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">AGIEval English</a>                      78.6%  ▄····●·▄▄··█ beats 1/5    easy · avg 76%      5.1%  typical
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   19.8%  ▁▁▁▁●▂▂▃▄▆█▃ beats 8/97   hard · avg 32%      3.7%  blunt · at its level
+<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                           34.9%  █●····▄·▄·▄▄ beats 2/6    medium · avg 53%    3.1%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">PopQA</a>                                18.0%  ▄··●···▄···█ beats 2/5    hard · avg 22%      2.1%  blunt
+<a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)</a>    23.0%  ●·██·██····█ beats 0/5    medium · avg 36%    1.8%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                  77.1%    49.5   2026-09-25   16% ▇▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                       57.2%    52.3   2026-09-25   13% ▇▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                       67.7%    53.4   2026-09-25   13% ▇▇
-                        <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>       47.6%    52.7   2026-09-25   11% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                            77.4%    50.3   2026-09-25    9% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English</a>                 78.6%    51.8   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled</a>  24.0%    40.8   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>                      87.4%    54.5   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                      34.9%    40.0   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+</a>                           61.4%    49.5   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>                68.0%    51.4   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  23.0%    42.0   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">PopQA</a>                           18.0%    45.3   2026-09-25    2% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>  51.7%    21.0   2026-09-25    1% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  19.8%    36.0   2025-07-22    5% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 49.3
+source                              results  share of the score
+<a name="report-2512.13961v2"></a><a href="https://arxiv.org/html/2512.13961v2">Olmo 3</a>                                   14   83% ▇▇▇▇▇▇▇▇▇▇
+<a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card</a>        2   13% ▇▇
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                1    4% ▇
+prior: pull toward the middle                  0% ▇
+weighted average                             = 50.4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
+<sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · allenai/Olmo-3-7B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Think.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
 ## How to run it
 
@@ -43,14 +95,74 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~18.79GB   49.3
+16-bit bf16 · nvidia only  ~18.79GB   50.4
+4-bit Q4_K_M                 ~4.7GB   50.4
+8-bit Q8_0                   ~8.1GB   50.4
+4-bit mlx-4bit · mac only    ~4.3GB   50.4
+4-bit mlx-8bit · mac only    ~8.1GB   50.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-vllm serve open-thoughts/OpenThinker3-7B
+# 4-bit Q4_K_M · ~4.7GB
+llama cli -hf lmstudio-community/OpenThinker3-7B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/OpenThinker3-7B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.1GB
+llama cli -hf lmstudio-community/OpenThinker3-7B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/OpenThinker3-7B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.7GB
+lms get https://huggingface.co/lmstudio-community/OpenThinker3-7B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.1GB
+lms get https://huggingface.co/lmstudio-community/OpenThinker3-7B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.3GB
+lms get https://huggingface.co/mlx-community/OpenThinker3-7B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~8.1GB
+lms get https://huggingface.co/mlx-community/OpenThinker3-7B-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.7GB
+ollama run hf.co/lmstudio-community/OpenThinker3-7B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.1GB
+ollama run hf.co/lmstudio-community/OpenThinker3-7B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.3GB
+mlx_lm.chat --model mlx-community/OpenThinker3-7B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/OpenThinker3-7B-4bit
+# 4-bit mlx-8bit · mac only · ~8.1GB
+mlx_lm.chat --model mlx-community/OpenThinker3-7B-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/OpenThinker3-7B-8bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~18.79GB
+vllm serve open-thoughts/OpenThinker3-7B
+```
 
 [interactive version](https://whatmodel.sh/model/openthinker3-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

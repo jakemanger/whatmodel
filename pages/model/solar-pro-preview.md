@@ -6,20 +6,35 @@
 
 Upstage · released 2024-09 · 22.14B params · mit
 
-**score 50.7** ±6.5 · #414 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.5** ±6.5 · #426 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Solar Pro Preview (22B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   73.7%  ▃▁▁▁▁▁▁▁▂█●▁ beats 209/276  medium · avg 73%     81%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  73.7%    50.8   2024-09-18   81% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                19% ▇▇
-                        weighted average                       = 50.7
+source                           results  share of the score
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle              19% ▇▇
+weighted average                          = 50.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -28,15 +43,49 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/upstage/solar-pro-preview-instruct/blob/dd4bcf7006df9b1ce3f87711e702e4063832aae3/config.json): config.json max\_position\_embeddings 4096. Observed 2026-10-10.</sub>
 
 <pre>
-download       size  score
-4-bit q4_k_m  ~13GB   50.7
+download         size  score
+4-bit q4_k_m    ~13GB   50.5
+4-bit Q4_K_M  ~13.3GB   50.5
+8-bit Q8_0    ~23.5GB   50.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run solar-pro:22b
+# 4-bit Q4_K_M · ~13.3GB
+llama cli -hf MaziyarPanahi/solar-pro-preview-instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf MaziyarPanahi/solar-pro-preview-instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~23.5GB
+llama cli -hf MaziyarPanahi/solar-pro-preview-instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf MaziyarPanahi/solar-pro-preview-instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~13.3GB
+lms get https://huggingface.co/MaziyarPanahi/solar-pro-preview-instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~23.5GB
+lms get https://huggingface.co/MaziyarPanahi/solar-pro-preview-instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~13GB
+ollama run solar-pro:22b
+# 4-bit Q4_K_M · ~13.3GB
+ollama run hf.co/MaziyarPanahi/solar-pro-preview-instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~23.5GB
+ollama run hf.co/MaziyarPanahi/solar-pro-preview-instruct-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/solar-pro-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

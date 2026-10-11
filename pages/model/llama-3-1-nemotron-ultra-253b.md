@@ -6,30 +6,97 @@
 
 NVIDIA · released 2025-04 · 253B params · nvidia-open-model
 
-**score 60.9** ±1.5 · #202 of 934 · from 9 benchmark results across 4 sources
+**score 61.0** ±1.5 · #206 of 949 · from 10 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Llama 3.1 Nemotron Ultra 253B v1 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁   #246 of 334*    4.1%      3
+coding          ▁▁▁▃▆██▇●▄▃▁    #78 of 469*    1.9%      2
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂    #164 of 466     30%      3
+math            ●··········█        #2 of 2     34%      3
+</pre>
+
+<details><summary>agent tasks · #246 of 334 · 4.1% of its score</summary>
+
+Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           56.7%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 64/114  medium · avg 52%    4.1%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   10.0%  ▁▁▁▂▇▆▆▆█▂▄▂ beats 0/111   hard · avg 32%         —  failed run: No function call was ever e…
+<a href="https://arxiv.org/html/2505.00949v5">BFCL v2 Live (lab)</a>                74.1%  █··········● beats 1/1                            —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>coding · #78 of 469 · 1.9% of its score</summary>
+
+Beats [GPT-5.2](gpt-5-2.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/v5.json">LiveCodeBench official release_v5…</a>   74.9%  █···█····●·█ beats 2/3    medium · avg 52%    1.9%  at its level · noisy
+<a href="https://arxiv.org/html/2505.00949v5">LiveCodeBench 2024-08 to 2025-02 …</a>   66.3%  █··········● beats 1/1                           —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #164 of 466 · 30% of its score</summary>
+
+Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1347.6  ▁▁▁▂▃▃▃▆●▇█▃ beats 190/379  avg 1268           20%  blunt
+<a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge unspeci…</a>   87.0%  ▃▃▂▅▃▆▅█▅▅▂● beats 29/30    easy · avg 70%    6.4%  small run
+<a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecified) …</a>   88.9%  ▁▁▃▁▂▄▄▆●▃▂▁ beats 102/141  easy · avg 80%    3.9%  small run
+</pre>
+
+</details>
+
+<details><summary>math · #2 of 2 · 34% of its score</summary>
+
+Trails [Llama 3.3 Nemotron Super 49B v1](llama-3-3-nemotron-super-49b-v1.md) here, though they rank lower overall.
+
+<pre>
+test             result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>   72.5%  ▁·▁▁▁▂▅▆●▇▅▁ beats 70/133  medium · avg 39%        14%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>   80.8%  ▁▁▁▂▁▃▁▅█●█▃ beats 55/85   medium · avg 48%        12%  sharp · small run
+<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>    97.0%  ▁▃▂▃▅▇▅▇●▅▂▁ beats 68/84   very easy · avg 90%    8.1%  maxed out · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>                   76.0%  ▁▁▁▁▂▄▅▅●██▄ beats 176/310  hard · avg 47%     16%  sharp · at its level · small run
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1139.8  ▁·▂▁▄●▅▃█▄▁▁ beats 17/62    avg 1044           12%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="report-2505.00949v5"></a>NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>               76.0%    62.6   2025-09-09   17% ▇▇
-                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>                  72.5%    61.4   2025-09-09   15% ▇▇
-                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>                  80.8%    62.9   2025-09-09   13% ▇▇
-                        <a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>                   97.0%    63.7   2025-09-09    8% ▇
-                        <a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge uns…</a>   87.0%    62.8   2025-09-09    7% ▇
-                        <a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecifi…</a>   88.9%    62.3   2025-09-09    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1347.6    59.6   2026-10-02   19% ▇▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1139.8    58.2   2026-05-10   12% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          56.7%    54.1   2025-06-14    5% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 60.9
+source                                    results  share of the score
+<a name="report-2505.00949v5"></a><a href="https://arxiv.org/html/2505.00949v5">NVIDIA (lab)</a>                                    6   61% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   20% ▇▇
+<a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1   12% ▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    4% ▇
+<a name="livecodebench-website-20250801"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/v5.json">LiveCodeBench official website results</a>          1    2% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 61.0
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2505.00949v5.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
+<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2505.00949v5.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt))</sub>
 
 <details><summary>Not counted (3)</summary>
 
@@ -47,18 +114,50 @@ NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">LiveCodeBe
 <sub>[context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/llama-3.1-nemotron-ultra-253b.toml)</sub>
 
 <pre>
-download              size  score
-4-bit ud-q4_k_xl  ~152.3GB   60.9
-2-bit ud-q2_k_xl   ~76.4GB   60.9
+download                       size  score
+4-bit ud-q4_k_xl           ~152.3GB   61.0
+2-bit ud-q2_k_xl            ~76.4GB   61.0
+4-bit mlx-5bit · mac only  ~174.2GB   61.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit ud-q4_k_xl
-llama-server -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q2_K_XL
+# 4-bit ud-q4_k_xl · ~152.3GB
+llama cli -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q4_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl · ~76.4GB
+llama cli -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q2_K_XL
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit ud-q4_k_xl · ~152.3GB
+lms get https://huggingface.co/unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF@UD-Q4_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit ud-q2_k_xl · ~76.4GB
+lms get https://huggingface.co/unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-5bit · mac only · ~174.2GB
+lms get https://huggingface.co/LibraxisAI/Llama-3_1-Nemotron-Ultra-253B-v1-MLX-Q5 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-5bit · mac only · ~174.2GB
+mlx_lm.chat --model LibraxisAI/Llama-3_1-Nemotron-Ultra-253B-v1-MLX-Q5
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model LibraxisAI/Llama-3_1-Nemotron-Ultra-253B-v1-MLX-Q5
+```
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-nemotron-ultra-253b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

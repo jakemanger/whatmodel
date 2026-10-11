@@ -6,23 +6,47 @@
 
 Puyuan Peng et al. (UT Austin) · released 2024-04 · 0.83B params · coqui-public-model-license
 
-**score 37.8** ±8.3 · #90 of 117 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.3** ±8.4 · #93 of 118 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks VoiceCraft 830M TTSEnhanced among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-amphion-maskgct-mit"></a>Amphion MaskGCT READM…  <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-en · Whisper la…</a>   7.6%    32.4   2024-10-20   42% ▇▇▇▇▇
-                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">LibriSpeech test-clean zero-s…</a>   4.7%    34.5   2024-10-20   31% ▇▇▇▇
-prior                   pull toward the middle                   49.7                28% ▇▇▇
-                        weighted average                       = 37.8
+task           vs the others        rank  counts  tests
+voice cloning  ▁·▁▁●▁▁▁▇█▃▃   #33 of 37*     41%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #33 of 37 · 41% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-en · Whisper large-…</a>    7.6%  ●···▂▂▂▂█▆▄▂ beats 0/35   avg 3.6%       41%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">LibriSpeech test-clean zero-shot …</a>    4.7%  ●·█········█ beats 0/2    avg 2.8%       31%  blunt · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-amphion-maskgct-mit"></a><a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Amphion MaskGCT README · zero-shot TTS …</a>        2   72% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       28% ▇▇▇
+weighted average                                   = 37.3
+</pre>
 
 <sub>Licences: Amphion MaskGCT README · zero-shot TTS results table ([MIT](../../licenses/speech-amphion-maskgct-mit.txt))</sub>
 
@@ -30,14 +54,18 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                                     needs  score
-fp32 (jasonppy/VoiceCraft repo) · nvidi…  ~4.53GB   37.8
+fp32 (jasonppy/VoiceCraft repo) · nvidi…  ~4.53GB   37.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (jasonppy/VoiceCraft repo) · nvidia only
+# fp32 (jasonppy/VoiceCraft repo) · nvidia only · ~4.53GB
 git clone https://github.com/jasonppy/VoiceCraft.git && cd VoiceCraft && conda create -n voicecraft python=3.9.16 && conda activate voicecraft && pip install -e git+https://github.com/facebookresearch/audiocraft.git@c5157b5bf14bf83449c17ea1eeb66c19fb4bc7f0#egg=audiocraft && pip install xformers==0.0.22 && pip install torchaudio==2.0.2 torch==2.0.1 && apt-get install ffmpeg && apt-get install espeak-ng && pip install tensorboard==2.16.2 && pip install phonemizer==3.2.1 && pip install datasets==2.16.0 && pip install torchmetrics==0.11.1 && pip install huggingface_hub==0.22.2 && wget https://huggingface.co/pyp1/VoiceCraft/resolve/main/encodec_4cb2048_giga.th -O ./pretrained_models/encodec_4cb2048_giga.th && python -c "import os; os.environ['USER'] = 'me'; import torch, torchaudio; from argparse import Namespace; from data.tokenizer import AudioTokenizer, TextTokenizer; from models import voicecraft; from inference_tts_scale import inference_one_sample; device = 'cuda' if torch.cuda.is_available() else 'cpu'; model = voicecraft.VoiceCraft.from_pretrained('pyp1/VoiceCraft_830M_TTSEnhanced'); phn2num = model.args.phn2num; config = vars(model.args); model.to(device); audio_tokenizer = AudioTokenizer(signature='./pretrained_models/encodec_4cb2048_giga.th', device=device); text_tokenizer = TextTokenizer(backend='espeak'); audio_fn = './demo/5895_34622_000026_000002.wav'; info = torchaudio.info(audio_fn); prompt_end_frame = int(3.6 * info.sample_rate); decode_config = {'top_k': 40, 'top_p': 1, 'temperature': 1, 'stop_repetition': 3, 'kvcache': 1, 'codec_audio_sr': 16000, 'codec_sr': 50, 'silence_tokens': [1388, 1898, 131], 'sample_batch_size': 3}; concated_audio, gen_audio = inference_one_sample(model, Namespace(**config), phn2num, text_tokenizer, audio_tokenizer, audio_fn, 'Gwynplaine had, besides, for his work and for his feats of strength, I cannot believe that the same model can also do text to speech synthesis too.', device, decode_config, prompt_end_frame); torchaudio.save('gen.wav', gen_audio[0].cpu(), 16000)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/voicecraft-830m-tts-enhanced) · [JSON](https://whatmodel.sh/api?format=json&all=1)

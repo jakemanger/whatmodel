@@ -6,32 +6,74 @@
 
 Alibaba · released 2025-07 · 30.5B params (3.3B active) · apache-2.0
 
-**score 57.5** ±1.2 · #260 of 934 · from 13 benchmark results across 3 sources
+**score 57.6** ±1.2 · #262 of 949 · from 13 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Qwen3 Coder 30B-A3B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others         rank  counts  tests
+agent tasks  ▁▁▃▆█●▅▄▄▃▂▁   #183 of 334     60%      8
+coding       ▁▁▁▃▆█●▇▆▄▃▁   #211 of 469     71%      7
+</pre>
+
+<details><summary>agent tasks · #183 of 334 · 60% of its score</summary>
+
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
+
+<pre>
+test                               result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                  31.8%  ●▄·····▄▄▄▄█ beats 0/7      hard · avg 17%           21%  sharp · at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>              20.7%  ●·▄·····█▄█▄ beats 0/7      hard · avg 18%           11%  at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                  10.1%  ●······█▄▄█▄ beats 0/7      very hard · avg 7.1%    9.4%  typical
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>   19.8%  ▄···●···▄▄██ beats 1/7      very hard · avg 6.5%    7.2%  sharp
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>                68.7%  ▁····▃·▂▇●▂▆ beats 19/28    medium · avg 45%        6.1%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (lab)</a>               48.0%  ▁▁▁·▅▄▁█●▁▁▇ beats 19/28    hard · avg 29%          4.2%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">BFCL v3 (lab)</a>                       62.2%  ▁▁▁▁▁▃▅█●▅▄▁ beats 105/170  medium · avg 57%        1.6%  blunt · at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live (lab)</a>                20.7%  ●··········█ beats 0/1                                 —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>coding · #211 of 469 · 71% of its score</summary>
+
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   31.8%  ●▄·····▄▄▄▄█ beats 0/7    hard · avg 17%           21%  sharp · at its level · several runs
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises, tw…</a>   33.3%  ▂▁▁▃▆▃●▆█▃▄▂ beats 28/71  very hard · avg 10%      18%  sharp · at its level · small run
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>               20.7%  ●·▄·····█▄█▄ beats 0/7    hard · avg 18%           11%  at its level · several runs
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   38.5%  ▁▁▁▁·●▂▃▅▃█▇ beats 6/49   hard · avg 18%           10%  at its level
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>    19.8%  ▄···●···▄▄██ beats 1/7    very hard · avg 6.5%    7.2%  sharp
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SciCode (level unspecified)</a>          18.3%  ●···▄▄█▄·▄·▄ beats 0/7    very hard · avg 13%     4.6%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live (lab)</a>                 20.7%  ●··········█ beats 0/1                               —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   85.0%  ▁▁●▁█▄▃▃▆▂▂▂ beats 6/49   easy · avg 78%    6.6%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card-qwen-qwen3-coder-30b-a3b-instruct"></a>Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises…</a>  33.3%    58.0   2026-09-25   19% ▇▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (lab)</a>        51.6%    60.0   2026-09-25    8% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>            68.7%    61.2   2026-09-25    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>    34.7%    54.6   2026-09-25    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (lab)</a>           48.0%    61.0   2026-09-25    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">BFCL v3 (lab)</a>                   62.2%    54.5   2026-09-25    2% ▇
-<a name="card3-kwaipilot-kat-coder-v2-5-dev"></a>Kwaipilot/KAT-Coder-V…  <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>              31.8%    57.2   2026-07-23   14% ▇▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>              10.1%    53.7   2026-07-23    9% ▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecif…</a>  19.8%    61.3   2026-07-23    7% ▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>          20.7%    51.6   2026-07-23    6% ▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SciCode (level unspecified)</a>     18.3%    55.4   2026-07-23    5% ▇
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>  38.5%    59.7   2026-09-07    9% ▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>  85.0%    57.6   2026-09-07    7% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 57.5
+source                                    results  share of the score
+<a name="card-qwen-qwen3-coder-30b-a3b-instruct"></a><a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Qwen/Qwen3-Coder-30B-A3B-Instruct model…</a>        6   42% ▇▇▇▇▇
+<a name="card3-kwaipilot-kat-coder-v2-5-dev"></a><a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Kwaipilot/KAT-Coder-V2.5-Dev model card</a>         5   41% ▇▇▇▇▇
+<a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2   16% ▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 57.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Qwen/Qwen3-Coder-30B-A3B-Instruct model card ([Apache-2.0](../../licenses/card-qwen-qwen3-coder-30b-a3b-instruct.txt)) · Kwaipilot/KAT-Coder-V2.5-Dev model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt))</sub>
 
@@ -51,19 +93,74 @@ api (Novita AI) · $0.12/M blended · $0.07 in / $0.27 out per 1M tokens · [nov
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output. Model endpoint qwen/qwen3-coder-30b-a3b-instruct.  Product: Serverless chat completions. API model: qwen/qwen3-coder-30b-a3b-instruct. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~18.8GB   57.5
-8-bit q8_0    ~37.1GB   57.5
+download                      size  score
+4-bit q4_k_m               ~18.8GB   57.6
+8-bit q8_0                 ~37.1GB   57.6
+4-bit Q4_K_M               ~18.6GB   57.6
+8-bit Q8_0                 ~32.5GB   57.6
+4-bit mlx-4bit · mac only  ~17.2GB   57.6
+4-bit mlx-8bit · mac only  ~32.4GB   57.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run qwen3-coder:30b
-# 8-bit q8_0
-ollama run qwen3-coder:30b-a3b-q8_0
+# 4-bit Q4_K_M · ~18.6GB
+llama cli -hf lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~32.5GB
+llama cli -hf lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~18.6GB
+lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~32.5GB
+lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~17.2GB
+lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~32.4GB
+lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~18.8GB
+ollama run qwen3-coder:30b
+# 8-bit q8_0 · ~37.1GB
+ollama run qwen3-coder:30b-a3b-q8_0
+# 4-bit Q4_K_M · ~18.6GB
+ollama run hf.co/lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~32.5GB
+ollama run hf.co/lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~17.2GB
+mlx_lm.chat --model lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~32.4GB
+mlx_lm.chat --model lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Qwen3-Coder-30B-A3B-Instruct-MLX-8bit
+```
 
 ## Published speed measurements
 

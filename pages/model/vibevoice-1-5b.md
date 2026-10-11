@@ -6,24 +6,40 @@
 
 Microsoft · released 2025-08 · 2.7B params · mit
 
-**score 53.7** ±6.0 · #55 of 117 · from 3 benchmark results across 2 sources
+**score 53.3** ±6.0 · #57 of 118 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks VibeVoice 1.5B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     48.0%    51.5   2026-05-24   52% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     23.0%  -139.2   2026-05-24    0% ▇
-<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.43 / 5    60.5   2026-09-25   33% ▇▇▇▇
-prior                   pull toward the middle                      49.7                15% ▇▇
-                        weighted average                          = 53.7
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>     48.0%  ▃·····▂▂●▃█▆ beats 4/15   medium · avg 46%          52%  blunt · at its level
+<a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preference MO…</a>  3.43 / 5  █·●········█ beats 1/2    medium · avg 3.08 / 5     33%  at its level · small run
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>     23.0%  ▂▂●··▂·▃▃▃█▂ beats 2/15   avg 8.6%                 0.6%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2   52% ▇▇▇▇▇▇
+<a name="speech-vibevoice-mit-figure"></a><a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">Microsoft VibeVoice own subjective eval…</a>        1   33% ▇▇▇▇
+prior: pull toward the middle                       15% ▇▇
+weighted average                                   = 53.3
+</pre>
 
 <sub>Licences: RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · Microsoft VibeVoice own subjective evaluation figure ([MIT](../../licenses/speech-followup-NOTICES.txt))</sub>
 
@@ -31,14 +47,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                         needs  score
-bf16 (transformers &gt;=5.17.0)  ~5.42GB   53.7
+bf16 (transformers &gt;=5.17.0)  ~5.42GB   53.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (transformers >=5.17.0)
+# bf16 (transformers >=5.17.0) · ~5.42GB
 pip install "transformers[torch]>=5.17.0" diffusers soundfile && python -c "import os; from transformers import AutoProcessor, AutoModelForTextToWaveform; model_id='vibevoice/VibeVoice-1.5B-hf'; processor=AutoProcessor.from_pretrained(model_id); model=AutoModelForTextToWaveform.from_pretrained(model_id, device_map='auto'); conversation=[{'role':'0','content':[{'type':'text','text':'Hello, nice to meet you. How are you?'}]}]; inputs=processor.apply_chat_template(conversation, return_dict=True, tokenize=True, add_generation_prompt=True).to(model.device, model.dtype); audio=model.generate(**inputs); processor.save_audio(audio, 'VibeVoice-1.5B-hf_tts.wav')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/vibevoice-1-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

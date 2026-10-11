@@ -6,22 +6,40 @@
 
 Alpha-VLLM (Shanghai AI Lab) · released 2025-01 · 2.6B params · apache-2.0
 
-**score 42.6** ±3.7 · #98 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.7** ±3.7 · #98 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Lumina-Image 2.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  71.2%    42.1   2026-07-12   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 6% ▇
-                        weighted average                       = 42.6
+task           vs the others         rank  counts  tests
+text to image  ▂▅▅●▄▄█▃▁▂▁▁   #82 of 126*     94%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #82 of 126 · 94% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall. Trails [Playground v2 (1024px aesthetic)](playground-v2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>   71.2%  ▂●····▄▄▄··▂ beats 2/11   easy · avg 79%     94%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-tiif-bench"></a><a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench: How Does Your T2I Model Fol…</a>        1   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 42.7
+</pre>
 
 <sub>Licences: TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt))</sub>
 
@@ -33,14 +51,18 @@ api (fal.ai) · $0.075/image · [fal.ai](https://fal.ai/models/fal-ai/lumina-ima
 
 <pre>
 version                                   needs  score
-bf16 + model CPU offload · nvidia only  ~13.2GB   42.6
+bf16 + model CPU offload · nvidia only  ~13.2GB   42.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 + model CPU offload · nvidia only
+# bf16 + model CPU offload · nvidia only · ~13.2GB
 uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from diffusers import Lumina2Pipeline; p=Lumina2Pipeline.from_pretrained('Alpha-VLLM/Lumina-Image-2.0', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('A serene photograph of golden sunlight reflecting on a vast expanse of water', height=1024, width=1024, guidance_scale=4.0, num_inference_steps=50, cfg_trunc_ratio=0.25, cfg_normalization=True, generator=torch.Generator('cpu').manual_seed(0)).images[0].save('lumina_demo.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/lumina-image-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

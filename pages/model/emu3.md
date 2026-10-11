@@ -6,27 +6,50 @@
 
 BAAI · released 2024-09 · 8B params · apache-2.0
 
-**score 35.4** ±2.3 · #120 of 144 · from 4 benchmark results across 4 sources
+**score 35.6** ±2.3 · #120 of 144 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Emu3 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       41.7%    34.7   2026-07-01   45% ▇▇▇▇▇
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   8.8%    38.6   2026-05-14   32% ▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  39.0%    34.4   2026-06-02   11% ▇
-<a name="paper-2506.10963v2-mmmg-kg"></a>MMMG: A Massive         <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generati…</a>   6.1%    26.7   2025-06-13   11% ▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 35.4
+task           vs the others         rank  counts  tests
+text to image  ▂●▅▃▄▄█▃▁▂▁▁   #103 of 126     98%      6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #103 of 126 · 98% of its score</summary>
 
-<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>            41.7%  ●▂█▂▂▂····▂▂ beats 0/13   easy · avg 69%       45%  at its level
+<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    8.8%  ●█▂▂▂▂▆▄·▂·▂ beats 1/16   hard · avg 26%       32%  sharp · too hard for it
+<a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>    6.1%  ●··▃·█▃▃▅··▃ beats 0/9    hard · avg 24%       11%  typical
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   39.0%  ▄·▆▂●█▄▆▂▄·▄ beats 6/22   medium · avg 60%     10%  at its level
+<a href="https://arxiv.org/html/2409.18869v1">GenEval (lab)</a>                        54.0%  ▇▃●▇▁▄▅▃█▃▃▅ beats 8/39   easy · avg 79%         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2409.18869v1">DPG-Bench (lab)</a>                      80.6%  ●·▂·▂▆█▄▂▄▂▂ beats 1/17                          —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   45% ▇▇▇▇▇
+<a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   32% ▇▇▇▇
+<a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                                 1   11% ▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   10% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 35.6
+</pre>
+
+<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
 <details><summary>Not counted (2)</summary>
 
@@ -42,14 +65,18 @@ BAAI    <a href="https://arxiv.org/html/2409.18869v1">GenEval</a>    54.0%  too 
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~22.2GB   35.4
+bf16 · nvidia only  ~22.2GB   35.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~22.2GB
 git clone https://github.com/baaivision/Emu3 && cd Emu3 && pip install -r requirements.txt && python image_generation.py
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/emu3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,27 +6,55 @@
 
 IBM · released 2024-04 · 3.48B params · apache-2.0
 
-**score 33.2** ±1.3 · #811 of 934 · from 8 benchmark results across 3 sources
+**score 33.2** ±1.3 · #825 of 949 · from 8 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Granite 3B Code Base (2K) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁●▆██▇▆▄▃▁   #421 of 469     82%      6
+</pre>
+
+<details><summary>coding · #421 of 469 · 82% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   33.1%  ▁·▂▁▂●▅█▄▄▁▂ beats 11/35  medium · avg 64%     24%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                           36.0%  █·▅●▃▃▅▃▃▅·▅ beats 5/15   easy · avg 70%       15%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   21.9%  ▄▇█▃●▇▄▁▇▃·▁ beats 18/35  medium · avg 49%     13%  typical
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                     30.6%  ▃▅●▃▃▅·▃▃▅·▅ beats 3/15   medium · avg 59%     11%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   19.3%  ▁·▁▁▄██●█▁▅▅ beats 18/35  medium · avg 56%     10%  sharp
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                     31.4%  ▃·●██▅▃·▃▃▅▃ beats 1/15   medium · avg 55%    9.3%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              20.2%  ●▁▁▄▂▅▇█▆▂▂▂ beats 0/58   medium · avg 50%     15%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   33.4%  ▁▁▁▁●▁▁▂▄█▄▃ beats 8/146  easy · avg 83%      2.4%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  33.1%    35.0   2024-05-07   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      36.0%    32.8   2024-05-07   15% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  21.9%    37.5   2024-05-07   13% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                30.6%    30.9   2024-05-07   12% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  19.3%    37.6   2024-05-07   10% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                31.4%    31.0   2024-05-07    9% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         20.2%    28.4   2025-04-01   13% ▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  33.4%    18.3   2026-04-17    3% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 33.2
+source                                    results  share of the score
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1   15% ▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    2% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 33.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -37,11 +65,32 @@ download         size  score
 4-bit q4_k_m  ~2.13GB   33.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf ibm-granite/granite-3b-code-base-2k-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~2.13GB
+llama cli -hf ibm-granite/granite-3b-code-base-2k-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ibm-granite/granite-3b-code-base-2k-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~2.13GB
+lms get https://huggingface.co/ibm-granite/granite-3b-code-base-2k-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~2.13GB
+ollama run hf.co/ibm-granite/granite-3b-code-base-2k-GGUF:Q4_K_M
+```
 
 [interactive version](https://whatmodel.sh/model/granite-3b-code-base-2k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

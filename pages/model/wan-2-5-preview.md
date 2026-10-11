@@ -6,25 +6,58 @@
 
 Alibaba · released 2025-09 · closed weights
 
-**score 60.4** ±1.5 · #26 of 93 · from 6 benchmark results across 5 sources
+**score 60.5** ±1.5 · #26 of 93 · from 6 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Wan 2.5 Preview among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄▆▅█●▂▂▂▄   #17 of 68*     45%      2
+image to video  ▁▂·▂▅█▅●▅▆▃▄    #24 of 50     54%      4
+</pre>
+
+<details><summary>text to video · #17 of 68 · 45% of its score</summary>
+
+Trails [Seedance 1.5 Pro](seedance-1-5-pro.md) here, though they rank lower overall.
+
+<pre>
+test                          result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                 1245.3  ▂▂▃▆█●·▆▅▁▂▇ beats 22/41  avg 1147           41%  typical
+<a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench T2AV micro Visual QA</a>   79.3%  ▄····▄····●█ beats 2/4    easy · avg 68%    4.0%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #24 of 50 · 54% of its score</summary>
+
+Trails [Runway Gen-4.5](runway-gen-4-5.md), [PixVerse V5.6](pixverse-v5-6.md), [Kling 2.6 Pro](kling-2-6-pro.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1321.4  ▁▁▁▁▄▇▃●▃▂▄█ beats 22/40  avg 1189                 27%  typical
+<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>   918.0  ▂··●▂▆█▆▂▂▆▄ beats 1/19   avg 741                  15%  sharp
+<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>   21.5%  ▃·▃···▃▃●·▃▃ beats 6/8    very hard · avg 9.6%    8.0%  typical
+<a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video reason…</a>   55.0%  ●··▄······▄█ beats 0/5    medium · avg 50%        4.1%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1245.3    58.4   2026-09-22   40% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1321.4    62.8   2026-09-22   27% ▇▇▇
-<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>   918.0    59.9   2026-09-25   16% ▇▇
-<a name="visual-gap-target-bench"></a>Target-Bench: Can Vid…  <a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT plannin…</a>   21.5%    67.3   2026-04-15    8% ▇
-<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>   55.0%    54.2   2026-09-10    4% ▇
-<a name="visual-vabench"></a>VABench: A Comprehens…  <a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench T2AV micro Visual QA</a>     79.3%    62.4   2026-04-06    4% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 60.4
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   67% ▇▇▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   15% ▇▇
+<a name="visual-gap-target-bench"></a><a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench: Can Video World Models Ac…</a>        1    8% ▇
+<a name="visual-vwg-bench"></a><a href="https://arxiv.org/html/2609.11242v1#S4.T2">From Evaluation to Enhancement: Benchma…</a>        1    4% ▇
+<a name="visual-vabench"></a><a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench: A Comprehensive Benchmark for …</a>        1    4% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 60.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Target-Bench: Can Video World Models Achieve Mapless Path Planning with Semantic Targets? ([CC-BY-4.0](../../licenses/visual-gap-target-bench.txt)) · From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) · VABench: A Comprehensive Benchmark for Audio-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

@@ -6,22 +6,40 @@
 
 MIT Han Lab / NVIDIA · released 2024-10 · 8.12B params · mit
 
-**score 32.0** ±6.5 · #128 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.1** ±6.5 · #128 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks VILA-U 7B (256px) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  31.0%    28.1   2026-06-02   82% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                18% ▇▇
-                        weighted average                       = 32.0
+task           vs the others          rank  counts  tests
+text to image  ▂●▅▃▄▄█▃▁▂▁▁   #115 of 126*     82%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #115 of 126 · 82% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [CogView2](cogview2.md), [Versatile Diffusion v1.0](versatile-diffusion.md), [Dreamlike Photoreal 2.0](dreamlike-photoreal-2-0.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   31.0%  ▄·●▂▆█▄▆▂▄·▄ beats 2/22   medium · avg 60%     82%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   82% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       18% ▇▇
+weighted average                                   = 32.1
+</pre>
 
 <sub>Licences: WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
@@ -29,14 +47,18 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                   needs  score
-bf16 (official inference.py) · nvidia o…  ~20GB   32.0
+bf16 (official inference.py) · nvidia o…  ~20GB   32.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (official inference.py) · nvidia only
+# bf16 (official inference.py) · nvidia only · ~20GB
 git clone https://github.com/mit-han-lab/vila-u && cd vila-u && ./environment_setup.sh vila-u && conda activate vila-u && git lfs install && git clone https://huggingface.co/mit-han-lab/vila-u-7b-256 && CUDA_VISIBLE_DEVICES=0 python inference.py --model_path vila-u-7b-256 --prompt "A snowy mountain." --save_path generated_images --generation_nums 8
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/vila-u-7b-256) · [JSON](https://whatmodel.sh/api?format=json&all=1)

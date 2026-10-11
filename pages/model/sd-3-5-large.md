@@ -6,32 +6,79 @@
 
 Stability AI · released 2024-10 · 8.1B params · stabilityai-community
 
-**score 41.4** ±1.4 · #101 of 144 · from 11 benchmark results across 10 sources
+**score 41.5** ±1.3 · #102 of 144 · from 11 benchmark results across 10 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Stable Diffusion 3.5 Large among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           938.3    40.3   2026-09-24   27% ▇▇▇
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  15.9%    44.7   2026-05-14   19% ▇▇
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       55.2%    42.1   2026-07-01   16% ▇▇
-<a name="paper-2505.17613v2-mmmg"></a>MMMG: a Comprehensive…  <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                         59.1%    41.4   2026-09-30   10% ▇
-                        <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (averag…</a>  33.2%    37.0   2026-09-30    5% ▇
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   2.5%    40.0   2026-09-28    6% ▇
-<a name="paper-2604.24023v2-servimage"></a>ServImage: An Image G…  <a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (hu…</a>   8.6%    40.1   2026-06-19    5% ▇
-<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>  794.4    39.7   2026-10-01    4% ▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  46.0%    39.5   2026-06-02    4% ▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>   7.5%    37.0   2026-10-07    3% ▇
-<a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>  31.1%    59.5   2026-04-24    1% ▇
-prior                   pull toward the middle                   49.9                 1% ▇
-                        weighted average                       = 41.4
+task                    vs the others        rank  counts  tests
+text to image           ▂▅▅●▄▄█▃▁▂▁▁   #86 of 126     88%      8
+image to image / edit…  ▁▁·●▂▃█▃▃▄▁▁   #57 of 62*    4.9%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #86 of 126 · 88% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall. Trails [Playground v2.5](playground-v2-5.md), [Playground v2 (1024px aesthetic)](playground-v2.md), [Show-o2 7B](show-o2-7b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                938.3  ●▂▃▄▇█▄▂▄▂·▂ beats 1/75   avg 1027             27%  typical
+<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   15.9%  ▄█●▂▂▂▆▄·▂·▂ beats 6/16   hard · avg 26%       19%  sharp
+<a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>            55.2%  ▅▂●▂▂▂····▂▂ beats 7/13   easy · avg 69%       16%  at its level
+<a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                              59.1%  ●█·▄·▄·█···▄ beats 1/8    easy · avg 71%       10%  at its level
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>    8.6%  ▂●··▂··▃█··▂ beats 1/11   hard · avg 18%      4.9%  sharp
+<a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   33.2%  ●··█▄▄·▄▄·▄▄ beats 0/9    medium · avg 51%    4.6%  at its level
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   46.0%  ▄·▆▂▆●▄▆▂▄·▄ beats 11/22  medium · avg 60%    3.8%  at its level
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    7.5%  ●▂▂█▃▁▂▃·▁·▁ beats 0/22   hard · avg 28%      3.4%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #57 of 62 · 4.9% of its score</summary>
+
+Beats [UNO](uno.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>    8.6%  ▂●··▂··▃█··▂ beats 1/11   hard · avg 18%    4.9%  sharp
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>    2.5%  ▃·●▅▃·▅▃···▃ beats 1/10   very hard · avg 7.6%    5.9%  sharp · too hard for it
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   794.4  ●▁▁▄▂█▂▁▁▂▁▁ beats 0/34   avg 875                 4.2%  typical
+<a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (Brie…</a>   31.1%  ▅·▃·▃··●·█▃▃ beats 4/9    hard · avg 28%          0.7%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   27% ▇▇▇
+<a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   19% ▇▇
+<a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   16% ▇▇
+<a name="paper-2505.17613v2-mmmg"></a><a href="https://arxiv.org/html/2505.17613v2">MMMG: a Comprehensive and Reliable Benc…</a>        2   15% ▇▇
+<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1    6% ▇
+<a name="paper-2604.24023v2-servimage"></a><a href="https://arxiv.org/html/2604.24023v2">ServImage: An Image Generation and Edit…</a>        1    5% ▇
+<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    4% ▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1    4% ▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1    3% ▇
+<a name="visual-knowledge-visualization"></a><a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization: A Benchmark an…</a>        1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 41.5
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · MMMG: a Comprehensive and Reliable Benchmark for Multitask Multimodal Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ServImage: An Image Generation and Editing Benchmark from Real-world Commercial Imaging Services ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -43,23 +90,27 @@ api (Replicate) · $0.065/image · [replicate.com](https://replicate.com/stabili
 
 <pre>
 version                          needs  score
-bf16 · nvidia only            ~19.94GB   41.4
-fp8 (TensorRT) · nvidia only   ~5.36GB   41.4
-bf16 + T5 fp16 (sd.cpp)          ~34GB   41.4
-q8_0 (sd.cpp --type)           ~18.2GB   41.4
+bf16 · nvidia only            ~19.94GB   41.5
+fp8 (TensorRT) · nvidia only   ~5.36GB   41.5
+bf16 + T5 fp16 (sd.cpp)          ~34GB   41.5
+q8_0 (sd.cpp --type)           ~18.2GB   41.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~19.94GB
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with protobuf python -c "import torch; from diffusers import StableDiffusion3Pipeline; p=StableDiffusion3Pipeline.from_pretrained('stabilityai/stable-diffusion-3.5-large', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=28, guidance_scale=3.5).images[0].save('out.png')"
-# fp8 (TensorRT) · nvidia only
+# fp8 (TensorRT) · nvidia only · ~5.36GB
 git clone https://github.com/NVIDIA/TensorRT.git && cd TensorRT && git checkout release/sd35 && docker run --rm --gpus all -e HF_TOKEN -v $PWD:/workspace nvcr.io/nvidia/pytorch:25.01-py3 bash -c "cd /workspace/demo/Diffusion && source setup.sh && python3 demo_txt2img_sd35.py 'a cat holding a sign' --version=3.5-large --fp8 --denoising-steps=30 --guidance-scale 3.5 --download-onnx-models --build-static-batch --use-cuda-graph --hf-token=\$HF_TOKEN --onnx-dir onnx_fp8 --engine-dir engine_fp8"
-# bf16 + T5 fp16 (sd.cpp)
+# bf16 + T5 fp16 (sd.cpp) · ~34GB
 sd-cli -m models/sd3.5_large.safetensors --clip_l models/clip_l.safetensors --clip_g models/clip_g.safetensors --t5xxl models/t5xxl_fp16.safetensors -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable diffusion 3.5 Large"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu
-# q8_0 (sd.cpp --type)
+# q8_0 (sd.cpp --type) · ~18.2GB
 sd-cli -m models/sd3.5_large.safetensors --clip_l models/clip_l.safetensors --clip_g models/clip_g.safetensors --t5xxl models/t5xxl_fp16.safetensors --type q8_0 -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable diffusion 3.5 Large"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/sd-3-5-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

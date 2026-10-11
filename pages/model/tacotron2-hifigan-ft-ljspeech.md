@@ -10,18 +10,33 @@ VITS study (public implementations) · released 2021-06
 
 Score within the [VITS 2021 LJ Speech human MOS](https://whatmodel.sh/tts?set=vits2021-ljspeech-mos&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Tacotron 2 + fine-tuned HiFi-GAN (LJ Speech) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                              score  implies  weight
-<a name="speech-vits-icml2021"></a>VITS: ICML 2021 origi…  <a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 LJ Speech human MOS</a>  4.25 / 5    55.3    58% ▇▇▇▇▇▇▇
-prior                   pull toward the middle                     52.1    42% ▇▇▇▇▇
-                        weighted average                         = 53.9
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                             result  vs the others in its run  difficulty           counts  why
+<a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 LJ Speech human MOS</a>  4.25 / 5  █····█·●·█·█ beats 2/4    easy · avg 4.22 / 5     58%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-vits-icml2021"></a><a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS: ICML 2021 original listening stud…</a>        1   58% ▇▇▇▇▇▇▇
+prior: pull toward the middle                       42% ▇▇▇▇▇
+weighted average                                   = 53.9
+</pre>
 
 <sub>Licences: VITS: ICML 2021 original listening studies ([CC-BY-4.0](../../licenses/speech-vits-icml2021.txt))</sub>
 

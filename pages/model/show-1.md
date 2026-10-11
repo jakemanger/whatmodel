@@ -6,23 +6,41 @@
 
 Show Lab / NUS · released 2023-10 · 6B params · cc-by-nc-4.0
 
-**score 25.1** ±2.3 · #89 of 93 · from 4 benchmark results across 1 source
+**score 25.2** ±2.3 · #89 of 93 · from 4 benchmark results across 1 source
+
+## What it's good at
+
+<sub>● marks Show-1 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others       rank  counts  tests
+text to video  ●▄▃▄▆▅█▃▂▂▂▄   #63 of 68     98%      4
+</pre>
+
+<details><summary>text to video · #63 of 68 · 98% of its score</summary>
+
+Beats [Open-Sora 1.2](open-sora-1-2.md) here, though they rank higher overall.
+
+<pre>
+test                                     result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quality</a>     53.74 / 100  ▄····▄█●··▄▄ beats 5/7    very easy · avg 85.14 /…     26%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quality</a>     52.19 / 100  ●█·····▄·█▄▄ beats 0/7    very easy · avg 87.87 /…     25%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal consist…</a>  60.83 / 100  ▄···▄▄▄▄●··█ beats 5/7    very easy · avg 88.67 /…     24%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video align…</a>  62.07 / 100  ▂··▂▂·····▂● beats 7/7    very easy · avg 87.86 /…     23%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                  score  implies  weight
-<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  53.74 / 100    24.9    26% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  52.19 / 100    20.7    25% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  60.83 / 100    25.8    24% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  62.07 / 100    27.1    23% ▇▇▇
-prior                   pull toward the middle                         49.9     2% ▇
-                        weighted average                             = 25.1
+source                                    results  share of the score
+<a name="visual-evalcrafter-2023"></a><a href="https://arxiv.org/html/2310.11440v3">EvalCrafter: original 2023 text-to-vide…</a>        4   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 25.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalCrafter: original 2023 text-to-video evaluations ([CC-BY-4.0](../../licenses/visual-evalcrafter-2023.txt))</sub>
 
@@ -30,14 +48,18 @@ prior                   pull toward the middle                         49.9     
 
 <pre>
 version                                     needs  score
-fp16 + model CPU offload (official run_…  ~83.2GB   25.1
+fp16 + model CPU offload (official run_…  ~83.2GB   25.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 + model CPU offload (official run_inference.py) · nvidia only
+# fp16 + model CPU offload (official run_inference.py) · nvidia only · ~83.2GB
 git clone https://github.com/showlab/Show-1 && cd Show-1 && pip install -r requirements.txt && python run_inference.py
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/show-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

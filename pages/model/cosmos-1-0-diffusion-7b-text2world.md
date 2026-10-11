@@ -6,22 +6,41 @@
 
 NVIDIA · released 2025-01 · 7B params · nvidia-open-model
 
-**score 46.0** ±3.1 · #61 of 93 · from 3 benchmark results across 2 sources
+**score 45.9** ±3.1 · #61 of 93 · from 3 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Cosmos-1.0-Diffusion-7B-Text2World among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others       rank  counts  tests
+text to video  ▆▄▃▄●▅█▃▂▂▂▄   #39 of 68     96%      3
+</pre>
+
+<details><summary>text to video · #39 of 68 · 96% of its score</summary>
+
+Beats [Wan 2.2 TI2V 5B](wan-2-2-5b.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp; PC)</a>    24.1%  ▄···▄·▄·●··▄ beats 3/5    hard · avg 33%     52%  at its level
+<a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: camera-pos…</a>   62.6%  █·█·······●█ beats 2/3    easy · avg 68%     42%  sharp · at its level
+<a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: Sampson ep…</a>  0.3550  █···█···█··● beats 3/3    avg 0.385         2.0%  blunt · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>   24.1%    44.0   2026-01-30   52% ▇▇▇▇▇▇
-<a name="paper-2501.03575v3-cosmos"></a>Cosmos World Foundati…  <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: camera…</a>   62.6%    47.2   2025-07-09   42% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: Sampso…</a>  0.3550    66.6   2025-07-09    2% ▇
-prior                   pull toward the middle                    49.9                 4% ▇
-                        weighted average                        = 46.0
+source                                    results  share of the score
+<a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        1   52% ▇▇▇▇▇▇
+<a name="paper-2501.03575v3-cosmos"></a><a href="https://arxiv.org/html/2501.03575v3">Cosmos World Foundation Model Platform …</a>        2   44% ▇▇▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 45.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · Cosmos World Foundation Model Platform for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -29,14 +48,18 @@ prior                   pull toward the middle                    49.9          
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~29.8GB   46.0
+bf16 · nvidia only  ~29.8GB   45.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~29.8GB
 uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg --with cosmos_guardrail python -c "import torch; from diffusers import CosmosTextToWorldPipeline; from diffusers.utils import export_to_video; p=CosmosTextToWorldPipeline.from_pretrained('nvidia/Cosmos-1.0-Diffusion-7B-Text2World', torch_dtype=torch.bfloat16); p.to('cuda'); export_to_video(p(prompt='A sleek, humanoid robot stands in a vast warehouse filled with neatly stacked cardboard boxes on industrial shelves.').frames[0], 'output.mp4', fps=30)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cosmos-1-0-diffusion-7b-text2world) · [JSON](https://whatmodel.sh/api?format=json&all=1)

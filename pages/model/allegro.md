@@ -6,22 +6,39 @@
 
 Rhymes AI · released 2024-10 · 2.8B params · apache-2.0
 
-**score 34.9** ±2.3 · #79 of 93 · from 3 benchmark results across 2 sources
+**score 35.0** ±2.3 · #79 of 93 · from 3 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Allegro among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others       rank  counts  tests
+text to video  ▆▄●▄▆▅█▃▂▂▂▄   #54 of 68     98%      3
+</pre>
+
+<details><summary>text to video · #54 of 68 · 98% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1001.9  ▃▃···▅●·▃▅·█ beats 4/10   avg 1229           49%  sharp
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   56.1%  ▄▄·█··█▄▄●▄▄ beats 8/10   easy · avg 73%     31%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   50.7%  ▄▄·█▄●▄··▄▄▄ beats 6/10   easy · avg 70%     18%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1001.9    33.6   2025-03-22   49% ▇▇▇▇▇▇
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>   56.1%    37.4   2025-05-17   31% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>   50.7%    32.3   2025-05-17   18% ▇▇
-prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 34.9
+source                                    results  share of the score
+<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                                     1   49% ▇▇▇▇▇▇
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   48% ▇▇▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 35.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt))</sub>
 
@@ -29,14 +46,18 @@ prior                   pull toward the middle                    49.9          
 
 <pre>
 version              needs  score
-bf16 · nvidia only  ~9.3GB   34.9
+bf16 · nvidia only  ~9.3GB   35.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~9.3GB
 python -c "import torch;from diffusers import AutoencoderKLAllegro,AllegroPipeline;from diffusers.utils import export_to_video;v=AutoencoderKLAllegro.from_pretrained('rhymes-ai/Allegro',subfolder='vae',torch_dtype=torch.float32);p=AllegroPipeline.from_pretrained('rhymes-ai/Allegro',vae=v,torch_dtype=torch.bfloat16);p.enable_sequential_cpu_offload();p.vae.enable_tiling();export_to_video(p('A seaside harbor with bright sunlight and sparkling seawater, with many boats in the water',guidance_scale=7.5,max_sequence_length=512,num_inference_steps=100).frames[0],'allegro.mp4',fps=15)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/allegro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

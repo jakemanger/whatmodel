@@ -6,37 +6,127 @@
 
 MiniMax · released 2026-06 · 428B params (23B active) · minimax-community
 
-**score 70.2** ±1.0 · #82 of 934 · from 16 benchmark results across 8 sources
+**score 70.2** ±1.0 · #82 of 949 · from 16 benchmark results across 8 sources
+
+## What it's good at
+
+<sub>● marks MiniMax-M3 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+agent tasks         ▁▁▃▆█▆▅▄●▃▂▁     #57 of 334     35%      5
+coding              ▁▁▁▃▆██▇▆●▃▁    #57 of 469*     21%      2
+chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂    #66 of 466*    8.8%      1
+math                ▁▂▃▅▆▅▄●▄▁▁▁   #139 of 400*    4.0%      1
+vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄     #59 of 150    9.1%      3
+web search          ▂▂▂▆●█▃▃▁▁·▁     #43 of 81*    2.8%      1
+</pre>
+
+<details><summary>agent tasks · #57 of 334 · 35% of its score</summary>
+
+Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [GPT-5.2](gpt-5-2.md), [Gemini 3.6 Flash](gemini-3-6-flash.md) here, though they rank higher overall.
+
+<pre>
+test                                     result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0687 IPS  ▁▁▁●▂▃▇█▂▂▁▃ beats 8/49   avg -0.312 IPS           18%  sharp
+<a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">MCP-Atlas (public set)</a>                    74.2%  █··█·█●·████ beats 3/7    hard · avg 29%          5.8%  at its level
+<a href="https://arxiv.org/html/2609.21562v2">GameLogicBench solve rate (72 God…</a>        19.4%  █●·█·▄·██▄·▄ beats 2/11   very hard · avg 4.7%    5.8%  typical
+<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>        29.8%  ▄█··▄▄▄●█·▄█ beats 7/12   very hard · avg 5.8%    2.8%  typical
+<a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-based…</a>        53.0%  ▂·▁▁··▇▇█●·▁ beats 24/25  hard · avg 29%          2.6%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #57 of 469 · 21% of its score</summary>
+
+Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1482.0  ▁▂▄▃▅█●▇▆▄▁▁ beats 67/119  avg 981                  16%  sharp
+<a href="https://arxiv.org/html/2609.21562v2">GameLogicBench solve rate (72 God…</a>   19.4%  █●·█·▄·██▄·▄ beats 2/11    very hard · avg 4.7%    5.8%  typical
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #66 of 466 · 8.8% of its score</summary>
+
+Beats [GPT-5.2](gpt-5-2.md), [Qwen3.8 27B](qwen3-8-27b.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [Gemma 4 31B](gemma-4-31b.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1440.1  ▁▁▁▂▃▃▃▆▆▇●▃ beats 298/379  avg 1268      8.8%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #139 of 400 · 4.0% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   71.1%  ▃▃▄▃▃▃▇●█▃▂▅ beats 105/193  very hard · avg 8.5%    4.0%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #59 of 150 · 9.1% of its score</summary>
+
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Qwen3.6 Flash](qwen3-6-flash.md), [Qwen3.5 35B-A3B](qwen3-5-35b-a3b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1236.6  ▁▁▂▂▂▂▄▅▅●██ beats 92/145  avg 1068            6.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1433.0  ▁▁▃●▄▃▇█▅▇▄▅ beats 5/37    avg 1335            2.9%  blunt
+<a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing (Av…</a>   50.7%  ●·▁·▂▂▅█·▁▂▂ beats 1/22    medium · avg 62%    0.2%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>web search · #43 of 81 · 2.8% of its score</summary>
+
+Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.7 Max](qwen3-7-max.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   29.8%  ▄█··▄▄▄●█·▄█ beats 7/12   very hard · avg 5.8%    2.8%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         90.9%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 180/208  hard · avg 40%           11%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          7.0%  ●··▂▃▇▄█▂▃▁▁ beats 13/74    very hard · avg 9.4%    5.8%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                14.0%  █▁▁▁▁●▁▄▂▂▁▁ beats 67/135   very hard · avg 5.9%    4.9%  sharp · noisy
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average…</a>   31.3%  ▁▁▃▂▂▄●▃▄▄▄█ beats 13/38    very hard · avg 14%     3.0%  at its level
+<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (single-shot…</a>    2.9%  ▃▃●▃·▅···█▃▃ beats 3/12     very hard · avg 0.8%    3.0%  too hard for it
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                  score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0687 IPS    70.0   2026-10-02   17% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1482.0    72.7   2026-10-01   15% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1440.1    70.7   2026-10-02    9% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>       1236.6    70.7   2026-10-02    6% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>       1433.0    69.1   2026-09-13    3% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                          90.9%    74.0   2026-08-10   11% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>           7.0%    64.4   2026-08-27    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 14.0%    67.1   2026-08-10    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              71.1%    63.5   2026-08-10    4% ▇
-<a name="paper-2609.21562v2-gamelogicbench"></a>GameLogicBench: Evalu…  <a href="https://arxiv.org/html/2609.21562v2">GameLogicBench solve rate (72…</a>        19.4%    67.6   2026-09-21    6% ▇
-<a name="card-zai-org--glm-5.2"></a>zai-org/GLM-5.2 model…  <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">MCP-Atlas (public set)</a>                74.2%    74.4   2026-09-25    6% ▇
-<a name="paper-2610.00609v1-legal-research-bench"></a>Legal Research Bench    <a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (single-…</a>         2.9%    67.4   2026-09-30    3% ▇
-                        <a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic…</a>        29.8%    76.2   2026-09-30    3% ▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>        31.3%    64.3   2026-09-07    3% ▇
-<a name="paper-2609.31632v1-eegagentbench"></a>EEGAgentBench: Benchm…  <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-b…</a>        53.0%    77.0   2026-09-10    3% ▇
-<a name="paper-2605.07492v2-puredocbench"></a>How Far Is Document P…  <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing…</a>        50.7%    10.6   2026-09-27    0% ▇
-prior                   pull toward the middle                         50.0                 0% ▇
-                        weighted average                             = 70.2
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     5   51% ▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        4   25% ▇▇▇
+<a name="paper-2610.00609v1-legal-research-bench"></a><a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench</a>                            2    6% ▇
+<a name="card-zai-org--glm-5.2"></a><a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">zai-org/GLM-5.2 model card</a>                      1    6% ▇
+<a name="paper-2609.21562v2-gamelogicbench"></a><a href="https://arxiv.org/html/2609.21562v2">GameLogicBench: Evaluating Coding Agent…</a>        1    6% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    3% ▇
+<a name="paper-2609.31632v1-eegagentbench"></a><a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench: Benchmarking LLM Agents …</a>        1    3% ▇
+<a name="paper-2605.07492v2-puredocbench"></a><a href="https://arxiv.org/html/2605.07492v2">How Far Is Document Parsing from Solved…</a>        1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 70.2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · zai-org/GLM-5.2 model card ([mit](../../licenses/zai-org--GLM-5.2.txt)) · Legal Research Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Legal Research Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · zai-org/GLM-5.2 model card ([mit](../../licenses/zai-org--GLM-5.2.txt)) · GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -45,18 +135,58 @@ api (Deep Infra) · $0.49/M blended · $0.28 in / $1.1 out per 1M tokens · [dee
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/MiniMaxAI/MiniMax-M3.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/minimax/MiniMax-M3.toml)</sub>
 
 <pre>
-download              size  score
-4-bit ud-q4_k_m   ~257.3GB   70.2
-2-bit ud-q2_k_xl  ~128.9GB   70.2
+download                       size  score
+4-bit ud-q4_k_m            ~257.3GB   70.2
+2-bit ud-q2_k_xl           ~128.9GB   70.2
+4-bit mlx-4bit · mac only  ~241.5GB   70.2
+4-bit mlx-8bit · mac only  ~454.4GB   70.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit ud-q4_k_m
-llama-server -hf unsloth/MiniMax-M3-GGUF:UD-Q4_K_M
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/MiniMax-M3-GGUF:UD-Q2_K_XL
+# 4-bit ud-q4_k_m · ~257.3GB
+llama cli -hf unsloth/MiniMax-M3-GGUF:UD-Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/MiniMax-M3-GGUF:UD-Q4_K_M
+# 2-bit ud-q2_k_xl · ~128.9GB
+llama cli -hf unsloth/MiniMax-M3-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/MiniMax-M3-GGUF:UD-Q2_K_XL
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit ud-q4_k_m · ~257.3GB
+lms get https://huggingface.co/unsloth/MiniMax-M3-GGUF@UD-Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit ud-q2_k_xl · ~128.9GB
+lms get https://huggingface.co/unsloth/MiniMax-M3-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~241.5GB
+lms get https://huggingface.co/mlx-community/MiniMax-M3-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~454.4GB
+lms get https://huggingface.co/inferencerlabs/MiniMax-M3-MLX-Q8 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~241.5GB
+mlx_lm.chat --model mlx-community/MiniMax-M3-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/MiniMax-M3-4bit
+# 4-bit mlx-8bit · mac only · ~454.4GB
+mlx_lm.chat --model inferencerlabs/MiniMax-M3-MLX-Q8
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model inferencerlabs/MiniMax-M3-MLX-Q8
+```
 
 [interactive version](https://whatmodel.sh/model/minimax-m3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

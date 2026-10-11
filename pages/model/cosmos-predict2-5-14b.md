@@ -8,21 +8,60 @@ NVIDIA · released 2025-12 · 14B params · nvidia-open-model-license
 
 **score 46.8** ±2.9 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Cosmos-Predict2.5-14B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>  82.1%    46.1   2026-06-23   32% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>  83.0%    48.5   2026-06-23   25% ▇▇▇
-<a name="visual-cronos-ccby"></a>CRONOS: Benchmarking …  <a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS counterfactual rigid-b…</a>   8.0%    44.3   2026-05-22   31% ▇▇▇▇
-<a name="visual-phyground"></a>PhyGround: Benchmarki…  <a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evalu…</a>  58.2%    52.2   2026-05-11    9% ▇
-prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 46.8
+task            vs the others        rank  counts  tests
+text to video   ▇▅▄▆●▆▇▂▃▃▂▄   #49 of 94*     32%      1
+image to video  ▁▁▂▂●█▄▃▃▄▂▂   #59 of 74*     56%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #49 of 94 · 32% of its score</summary>
+
+Beats [Wan 2.2 TI2V 5B](wan-2-2-5b.md) here, though they rank higher overall. Trails [Cosmos-1.0-Diffusion-7B-Text2World](cosmos-1-0-diffusion-7b-text2world.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   82.1%  █●▄··▄▄▄▄▄·▄ beats 2/9    easy · avg 85%     32%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #59 of 74 · 56% of its score</summary>
+
+Beats [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall. Trails [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS counterfactual rigid-body …</a>    8.0%  █·····●··█·█ beats 1/3    very hard · avg 12%     31%  sharp
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, imag…</a>   83.0%  ▄·●··▄··▄▄▄█ beats 2/8    easy · avg 84%          25%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   58.2%  █▄▄··●···▄·█ beats 4/7    medium · avg 57%    8.7%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        2   57% ▇▇▇▇▇▇▇
+<a name="visual-cronos-ccby"></a><a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS: Benchmarking Counterfactual Phy…</a>        1   31% ▇▇▇▇
+<a name="visual-phyground"></a><a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround: Benchmarking Physical Reason…</a>        1    9% ▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 46.8
+</pre>
 
 <sub>Licences: Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

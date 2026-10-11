@@ -6,23 +6,50 @@
 
 ByteDance · released 2024-02 · 2.57B params · openrail++
 
-**score 36.8** ±3.1 · #114 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 36.9** ±3.1 · #114 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks SDXL-Lightning (4-step UNet) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                  score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>       1053.0    37.5   2024-06-04   74% ▇▇▇▇▇▇▇▇▇
-<a name="visual-sdxl-lightning"></a>SDXL-Lightning: Progr…  <a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image)…</a>  22.3000 FID    31.7   2024-03-02   22% ▇▇▇
-prior                   pull toward the middle                         49.9                 4% ▇
-                        weighted average                             = 36.8
+task           vs the others         rank  counts  tests
+text to image  ▂▅●▃▄▄█▃▁▂▁▁   #93 of 126*     74%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #93 of 126 · 74% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>  1053.0  ▃▃··▃·▃·●·▃▃ beats 5/8    avg 1237       74%  sharp
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                     result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image) ↓ (…</a>  22.3000 FID  █··●█······█ beats 1/3    avg 11.695 FID     22%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-genai-arena"></a><a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI Arena: An Open Evaluation Platfor…</a>        1   74% ▇▇▇▇▇▇▇▇▇
+<a name="visual-sdxl-lightning"></a><a href="https://arxiv.org/html/2402.13929v3#S4.T2">SDXL-Lightning: Progressive Adversarial…</a>        1   22% ▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 36.9
+</pre>
 
 <sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · SDXL-Lightning: Progressive Adversarial Diffusion Distillation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -30,20 +57,24 @@ prior                   pull toward the middle                         49.9     
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~8.9GB   36.8
-fp16 (sd.cpp)         ~8.8GB   36.8
-q8_0 (sd.cpp --type)  ~4.9GB   36.8
+fp16 · nvidia only    ~8.9GB   36.9
+fp16 (sd.cpp)         ~8.8GB   36.9
+q8_0 (sd.cpp --type)  ~4.9GB   36.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~8.9GB
 uv run --with diffusers --with transformers --with accelerate --with torch --with safetensors python -c "import torch; from diffusers import StableDiffusionXLPipeline, UNet2DConditionModel, EulerDiscreteScheduler; from huggingface_hub import hf_hub_download; from safetensors.torch import load_file; b='stabilityai/stable-diffusion-xl-base-1.0'; u=UNet2DConditionModel.from_config(b, subfolder='unet').to('cuda', torch.float16); u.load_state_dict(load_file(hf_hub_download('ByteDance/SDXL-Lightning', 'sdxl_lightning_4step_unet.safetensors'), device='cuda')); p=StableDiffusionXLPipeline.from_pretrained(b, unet=u, torch_dtype=torch.float16, variant='fp16').to('cuda'); p.scheduler=EulerDiscreteScheduler.from_config(p.scheduler.config, timestep_spacing='trailing'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=0).images[0].save('out.png')"
-# fp16 (sd.cpp)
+# fp16 (sd.cpp) · ~8.8GB
 sd-cli -m models/sdxl_lightning_4step.safetensors -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 1 --steps 4 --sampling-method euler --scheduler sgm_uniform -v
-# q8_0 (sd.cpp --type)
+# q8_0 (sd.cpp --type) · ~4.9GB
 sd-cli -m models/sdxl_lightning_4step.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 1 --steps 4 --sampling-method euler --scheduler sgm_uniform -v
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/sdxl-lightning-4-step) · [JSON](https://whatmodel.sh/api?format=json&all=1)

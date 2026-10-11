@@ -6,21 +6,37 @@
 
 Google · released 2024-01 · proprietary
 
-**score 26.8** ±3.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 26.9** ±3.6 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Lumiere (T2V) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others        rank  counts  tests
+text to video  ●▅▄▆█▆▇▂▃▃▂▄   #86 of 94*     94%      2
+</pre>
+
+<details><summary>text to video · #86 of 94 · 94% of its score</summary>
+
+<pre>
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>        9.0%  ▄●▄·▄▄█····▄ beats 1/7    medium · avg 48%     66%  sharp
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>   33.0%  ▅·●▅··▃█···▃ beats 2/9    medium · avg 56%     28%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>    9.0%    23.6   2026-01-30   67% ▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>  33.0%    30.0   2026-01-30   28% ▇▇▇
-prior                   pull toward the middle                   49.9                 6% ▇
-                        weighted average                       = 26.8
+source                                    results  share of the score
+<a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 26.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt))</sub>
 

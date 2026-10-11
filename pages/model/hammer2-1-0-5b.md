@@ -6,36 +6,93 @@
 
 MadeAgents · released 2024-12 · 0.49B params · cc-by-nc-4.0
 
-**score 43.1** ±4.1 · #638 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.8** ±4.2 · #648 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Hammer2.1-0.5b among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ▁▁▃●█▆▅▄▄▃▂▁   #302 of 334*     92%      2
+</pre>
+
+<details><summary>agent tasks · #302 of 334 · 92% of its score</summary>
+
+Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [Mixtral 8x22B Instruct v0.1](mixtral-8x22b-instruct-v0-1.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   21.2%  ▁▁▁●██▅▅▆▂▂▂ beats 6/77    hard · avg 32%       57%  typical
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           45.4%  ▁▁▁▁▁●▅█▅▄▁▁ beats 23/114  medium · avg 52%     35%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  21.2%    41.3   2025-12-16   56% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         45.4%    44.4   2025-06-14   37% ▇▇▇▇
-prior                   pull toward the middle                   50.0                 8% ▇
-                        weighted average                       = 43.1
+source                                    results  share of the score
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 42.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
-download        size  score
-16-bit bf16  ~0.99GB   43.1
+download         size  score
+16-bit bf16   ~0.99GB   42.8
+4-bit Q4_K_M   ~0.4GB   42.8
+8-bit Q8_0     ~0.5GB   42.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MadeAgents/Hammer2.1-0.5b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~0.4GB
+llama cli -hf mradermacher/Hammer2.1-0.5b-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Hammer2.1-0.5b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~0.5GB
+llama cli -hf mradermacher/Hammer2.1-0.5b-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Hammer2.1-0.5b-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~0.4GB
+lms get https://huggingface.co/mradermacher/Hammer2.1-0.5b-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~0.5GB
+lms get https://huggingface.co/mradermacher/Hammer2.1-0.5b-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~0.4GB
+ollama run hf.co/mradermacher/Hammer2.1-0.5b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~0.5GB
+ollama run hf.co/mradermacher/Hammer2.1-0.5b-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~0.99GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MadeAgents/Hammer2.1-0.5b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/hammer2-1-0-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

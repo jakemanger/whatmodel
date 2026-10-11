@@ -6,21 +6,50 @@
 
 StepFun · released 2025-07 · 321B params (38B active) · apache-2.0
 
-**score 59.4** ±2.6 · #223 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.3** ±2.5 · #230 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Step 3 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+chat &amp; writing      ▁▁▁▄▆▅▆█●▆▆▂   #166 of 466*     57%      1
+vision &amp; documents  ▁▁▃▂▁▃●▃▆▇█▄    #96 of 150*     40%      1
+</pre>
+
+<details><summary>chat &amp; writing · #166 of 466 · 57% of its score</summary>
+
+Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1349.4  ▁▁▁▂▃▃▃▆●▇█▃ beats 193/379  avg 1268       57%  blunt
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #96 of 150 · 40% of its score</summary>
+
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run   difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1144.9  ▁▁▂▂▂▂▄●▅▆██ beats 44/145  avg 1068       40%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1349.4    59.8   2026-10-02   56% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1144.9    59.5   2026-10-02   41% ▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 59.4
+source                         results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             3% ▇
+weighted average                        = 59.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -28,14 +57,18 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download                      size  score
-4-bit fp8 · nvidia only  ~327.59GB   59.4
+4-bit fp8 · nvidia only  ~327.59GB   59.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp8 · nvidia only
+# 4-bit fp8 · nvidia only · ~327.59GB
 uv pip install -U vllm --torch-backend=auto --extra-index-url https://wheels.vllm.ai/nightly && vllm serve stepfun-ai/step3-fp8 --tensor-parallel-size 8 --reasoning-parser step3 --enable-auto-tool-choice --tool-call-parser step3 --gpu-memory-utilization 0.85 --max-num-batched-tokens 4096 --trust-remote-code
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/step-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

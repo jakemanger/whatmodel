@@ -6,24 +6,39 @@
 
 Wayu Research / Paxa Labs · released 2026-08 · 0.082B params · cc-by-nc-4.0
 
-**score 64.0** ±3.9 · #21 of 117 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 63.8** ±3.9 · #22 of 118 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Wayu-Paxa-TTS-Edge among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-wayu-thai-tts-ccby"></a>Building and Evaluati…  <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 1,531-it…</a>  68.2%    61.7   2026-09-03   35% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · English …</a>   1.1%    65.1   2026-09-03   30% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 500-utte…</a>   3.7%    68.7   2026-09-03   29% ▇▇▇
-prior                   pull toward the middle                   49.7                 6% ▇
-                        weighted average                       = 64.0
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 1,531-item C…</a>   68.2%  ●···█······█ beats 0/2    medium · avg 48%     34%  at its level · small run
+<a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · English CER …</a>    1.1%  ●······█···█ beats 0/2    avg 3.6%             31%  small run
+<a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 500-utteranc…</a>    3.7%  █······●···█ beats 1/2    avg 12%              29%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-wayu-thai-tts-ccby"></a><a href="https://arxiv.org/html/2609.03502v1">Building and Evaluating Fixed-Voice Tha…</a>        3   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 63.8
+</pre>
 
 <sub>Licences: Building and Evaluating Fixed-Voice Thai TTS from Synthetic Speech ([CC BY 4.0](../../licenses/speech-wayu-thai-tts-ccby.txt))</sub>
 
@@ -31,14 +46,18 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                    needs  score
-fp32 (wayu-tts package)  ~0.33GB   64.0
+fp32 (wayu-tts package)  ~0.33GB   63.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (wayu-tts package)
+# fp32 (wayu-tts package) · ~0.33GB
 pip install git+https://github.com/wayu-research/wayu-tts-inference && wayu-tts "สวัสดีค่ะ" --voice f_young_clear --out hello.wav
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/wayu-paxa-tts-edge) · [JSON](https://whatmodel.sh/api?format=json&all=1)

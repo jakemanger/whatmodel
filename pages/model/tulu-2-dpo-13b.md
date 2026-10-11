@@ -6,42 +6,131 @@
 
 Allen Institute for AI · released 2023-11 · 13B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 37.4** ±1.3 · #753 of 934 · from 8 benchmark results across 3 sources
+**score 37.4** ±1.3 · #765 of 949 · from 8 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Tulu 2 DPO 13B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁●▆██▇▆▄▃▁   #441 of 469*     13%      1
+chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #407 of 466*     40%      2
+math            ▁▂▃●▆▅▄█▄▁▁▁   #311 of 400*    8.2%      1
+</pre>
+
+<details><summary>coding · #441 of 469 · 13% of its score</summary>
+
+Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (lab)</a>   48.9%  ▃▃▃·●▃▃█▃▂▂▅ beats 6/25   very easy · avg 86%     13%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #407 of 466 · 40% of its score</summary>
+
+Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       11.6%  ▁▂▂▃●▆█▆▄▄▁▁ beats 28/122  medium · avg 39%        34%  typical
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   88.1%  ▂▂·▆·▇▃▆●▆▄▂ beats 26/45   very easy · avg 96%    6.1%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #311 of 400 · 8.2% of its score</summary>
+
+Beats [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md), [OLMo 2 32B Instruct (0325)](olmo-2-32b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
+
+<pre>
+test         result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   49.5%  ▆▂▅█▅●▃▆···▂ beats 16/25  easy · avg 73%    8.2%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 49.4%  ▁·····▂●▂▅·▁ beats 12/25    easy · avg 77%       24%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           55.3%  ▁▁▃▃▄█●▁█··▁ beats 15/25    easy · avg 74%      8.7%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   65.8%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 120/276  medium · avg 73%    3.2%  at its level · noisy
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   39.7%  ▂··▁▃●▂▂█▅▁▂ beats 6/25     medium · avg 61%    2.8%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            49.4%    37.0   2023-11-20   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  48.9%    34.5   2023-11-20   13% ▇▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     49.5%    41.4   2023-11-20    9% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      55.3%    39.9   2023-11-20    8% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  39.7%    32.6   2023-11-20    3% ▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  11.6%    35.8   2025-08-09   33% ▇▇▇▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  88.1%    40.7   2025-08-09    6% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  65.8%    45.5   2024-03-05    3% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 37.4
+source                               results  share of the score
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (lab)</a>                               5   56% ▇▇▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   40% ▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    3% ▇
+prior: pull toward the middle                   1% ▇
+weighted average                              = 37.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-16-bit bf16  ~26.03GB   37.4
+download          size  score
+16-bit bf16   ~26.03GB   37.4
+4-bit Q4_K_M    ~7.9GB   37.4
+8-bit Q8_0     ~13.8GB   37.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/tulu-2-dpo-13b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~7.9GB
+llama cli -hf TheBloke/tulu-2-dpo-13B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/tulu-2-dpo-13B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+llama cli -hf TheBloke/tulu-2-dpo-13B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/tulu-2-dpo-13B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~7.9GB
+lms get https://huggingface.co/TheBloke/tulu-2-dpo-13B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~13.8GB
+lms get https://huggingface.co/TheBloke/tulu-2-dpo-13B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~7.9GB
+ollama run hf.co/TheBloke/tulu-2-dpo-13B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+ollama run hf.co/TheBloke/tulu-2-dpo-13B-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~26.03GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/tulu-2-dpo-13b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/tulu-2-dpo-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

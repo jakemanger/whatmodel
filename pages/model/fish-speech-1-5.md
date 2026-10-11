@@ -6,25 +6,41 @@
 
 Fish Audio · released 2024-12 · cc-by-nc-sa-4.0
 
-**score 40.7** ±3.3 · #83 of 117 · from 4 benchmark results across 2 sources
+**score 40.5** ±3.3 · #85 of 118 · from 4 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Fish Speech 1.5 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  3.58 / 5    40.7   2025-05-11   76% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.24 / 5    48.4   2025-05-11    7% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     80.6%    28.3   2025-05-15    7% ▇
-                        <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     86.8%    40.2   2025-05-15    5% ▇
-prior                   pull toward the middle                      49.7                 4% ▇
-                        weighted average                          = 40.7
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  3.58 / 5  ▅·█▅▅·█●▃▅·▅ beats 12/17  easy · avg 4.03 / 5       76%  at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · C…</a>     80.6%  ●▄·····▄··▄█ beats 0/5    very easy · avg 88%      7.4%  blunt
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.24 / 5  ▅··▃▅··▅█▅●█ beats 13/17  medium · avg 3.30 / 5    7.0%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     86.8%  ▂▂█·▂·█●▂·▄▂ beats 11/17  very easy · avg 89%      4.9%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                 results  share of the score
+<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                2   83% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>        2   12% ▇
+prior: pull toward the middle                     4% ▇
+weighted average                                = 40.5
+</pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt))</sub>
 
@@ -32,20 +48,24 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                                  needs  score
-bf16 (fish-speech repo)                ~1.47GB   40.7
-bf16 (fish-speech repo) · mac only     ~1.47GB   40.7
-bf16 (fish-speech repo) · nvidia only  ~1.47GB   40.7
+bf16 (fish-speech repo)                ~1.47GB   40.5
+bf16 (fish-speech repo) · mac only     ~1.47GB   40.5
+bf16 (fish-speech repo) · nvidia only  ~1.47GB   40.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (fish-speech repo)
+# bf16 (fish-speech repo) · ~1.47GB
 git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout v1.5.0 && pip3 install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 && pip3 install -e .[stable] && huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-speech-1.5 && python -m tools.run_webui --llama-checkpoint-path "checkpoints/fish-speech-1.5" --decoder-checkpoint-path "checkpoints/fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth" --decoder-config-name firefly_gan_vq
-# bf16 (fish-speech repo) · mac only
+# bf16 (fish-speech repo) · mac only · ~1.47GB
 git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout v1.5.0 && pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 && pip install -e .[stable] && huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-speech-1.5 && python tools/llama/generate.py --text "Hello, world." --checkpoint-path "checkpoints/fish-speech-1.5" --num-samples 2 --device mps && python tools/vqgan/inference.py -i "codes_0.npy" --checkpoint-path "checkpoints/fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth" --device mps
-# bf16 (fish-speech repo) · nvidia only
+# bf16 (fish-speech repo) · nvidia only · ~1.47GB
 git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout v1.5.0 && pip3 install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 && pip3 install -e .[stable] && huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-speech-1.5 && python tools/llama/generate.py --text "Hello, world." --checkpoint-path "checkpoints/fish-speech-1.5" --num-samples 2 --compile && python tools/vqgan/inference.py -i "codes_0.npy" --checkpoint-path "checkpoints/fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/fish-speech-1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

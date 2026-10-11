@@ -6,21 +6,48 @@
 
 GeneZC · released 2023-11 · 3.02B params · apache-2.0
 
-**score 33.1** ±2.4 · #812 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.2** ±2.3 · #826 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks MiniChat-1.5-3B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #433 of 466*     98%      2
+</pre>
+
+<details><summary>chat &amp; writing · #433 of 466 · 98% of its score</summary>
+
+Beats [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        7.7%  ▁▂▂●▆▆█▆▄▄▁▁ beats 17/122  medium · avg 39%        72%  typical
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   78.5%  ▂▂·▆·▇●▆█▆▄▂ beats 18/45   very easy · avg 96%     25%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>    0.0%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 73%       —  failed run: All nine published task sco…
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   7.7%    31.6   2025-08-09   74% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  78.5%    36.0   2025-08-09   24% ▇▇▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 33.1
+source                               results  share of the score
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   2% ▇
+weighted average                              = 33.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -36,15 +63,54 @@ Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open
 ## How to run it
 
 <pre>
-download        size  score
-16-bit bf16  ~6.04GB   33.1
+download         size  score
+16-bit bf16   ~6.04GB   33.2
+4-bit Q4_K_M   ~1.8GB   33.2
+8-bit Q8_0     ~3.2GB   33.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='GeneZC/MiniChat-1.5-3B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~1.8GB
+llama cli -hf mradermacher/MiniChat-1.5-3B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/MiniChat-1.5-3B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~3.2GB
+llama cli -hf mradermacher/MiniChat-1.5-3B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/MiniChat-1.5-3B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~1.8GB
+lms get https://huggingface.co/mradermacher/MiniChat-1.5-3B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~3.2GB
+lms get https://huggingface.co/mradermacher/MiniChat-1.5-3B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~1.8GB
+ollama run hf.co/mradermacher/MiniChat-1.5-3B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~3.2GB
+ollama run hf.co/mradermacher/MiniChat-1.5-3B-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~6.04GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='GeneZC/MiniChat-1.5-3B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/minichat-1-5-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

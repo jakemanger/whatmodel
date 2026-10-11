@@ -6,24 +6,61 @@
 
 Arcee AI · released 2026-01 · 398B params (13B active) · openmdw-1.1
 
-**score 58.8** ±2.1 · #232 of 934 · from 5 benchmark results across 3 sources
+**score 58.9** ±2.1 · #237 of 949 · from 5 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Trinity-Large-Preview among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #134 of 466*     41%      1
+math            ●··········█       #2 of 2*    6.3%      1
+</pre>
+
+<details><summary>chat &amp; writing · #134 of 466 · 41% of its score</summary>
+
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [o3-mini](o3-mini.md), [K-EXAONE (236B-A23B)](k-exaone-236b-a23b.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1378.6  ▁▁▁▂▃▃▃▆●▇█▃ beats 218/379  avg 1268       41%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #2 of 2 · 6.3% of its score</summary>
+
+<pre>
+test             result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">AIME 2025 (lab)</a>   24.0%  ▁·▁▁▁●▅▆█▇▅▁ beats 14/133  medium · avg 39%    6.3%  sharp · at its level · noisy · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">GPQA Diamond (lab)</a>                   63.3%  ▁▁▁▁▂▄▅●███▄ beats 121/310  hard · avg 44%          34%  sharp · at its level · small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">MMLU-Pro (lab)</a>                       75.2%  ▁▁·▁▁▁▃▂▄●█▁ beats 103/188  medium · avg 59%        17%  at its level · small run
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   93.1%  ▁▂▁▂▅█▂●▄▃▁▁ beats 71/98    very easy · avg 90%    0.0%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="first-party-arcee-scores"></a>Arcee AI vendor-repor…  <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">GPQA Diamond (lab)</a>               63.3%    57.6   2026-01-27   34% ▇▇▇▇
-                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">MMLU-Pro (lab)</a>                   75.2%    58.5   2026-01-27   18% ▇▇
-                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">AIME 2025 (lab)</a>                  24.0%    41.1   2026-01-27    7% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1378.6    63.3   2026-10-02   39% ▇▇▇▇▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   93.1%   167.0   2026-09-22    0% ▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 58.8
+source                                    results  share of the score
+<a name="first-party-arcee-scores"></a><a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">Arcee AI vendor-reported benchmark scor…</a>        3   57% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   41% ▇▇▇▇▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 58.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -31,17 +68,36 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download               size  score
-4-bit ud-q4_k_xl  ~247.33GB   58.8
-2-bit ud-q2_k_xl  ~145.84GB   58.8
+4-bit ud-q4_k_xl  ~247.33GB   58.9
+2-bit ud-q2_k_xl  ~145.84GB   58.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit ud-q4_k_xl
-llama-server -hf unsloth/Trinity-Large-Preview-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/Trinity-Large-Preview-GGUF:UD-Q2_K_XL
+# 4-bit ud-q4_k_xl · ~247.33GB
+llama cli -hf unsloth/Trinity-Large-Preview-GGUF:UD-Q4_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Trinity-Large-Preview-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl · ~145.84GB
+llama cli -hf unsloth/Trinity-Large-Preview-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Trinity-Large-Preview-GGUF:UD-Q2_K_XL
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit ud-q4_k_xl · ~247.33GB
+lms get https://huggingface.co/unsloth/Trinity-Large-Preview-GGUF@UD-Q4_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit ud-q2_k_xl · ~145.84GB
+lms get https://huggingface.co/unsloth/Trinity-Large-Preview-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
 
 [interactive version](https://whatmodel.sh/model/trinity-large-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

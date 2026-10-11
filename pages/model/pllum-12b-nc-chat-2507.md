@@ -6,20 +6,35 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-07 · 12.25B params · other (pllum-1.1)
 
-**score 55.1** ±4.2 · #310 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.9** ±4.2 · #320 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks PLLuM-12B-nc-chat (2507) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   73.3%  ▁▂▂▂▃█▃●▅▄▂▃ beats 64/95  easy · avg 66%     92%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source            test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  73.3%    55.5   2026-08-11   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior             pull toward the middle                   50.0                 8% ▇
-                  weighted average                       = 55.1
+source                         results  share of the score
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                     1   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             8% ▇
+weighted average                        = 54.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>
 
@@ -27,14 +42,18 @@ prior             pull toward the middle                   50.0                 
 
 <pre>
 download        size  score
-16-bit bf16  ~24.5GB   55.1
+16-bit bf16  ~24.5GB   54.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16
+# 16-bit bf16 · ~24.5GB
 uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/PLLuM-12b-nc-chat-2507', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/pllum-12b-nc-chat-2507) · [JSON](https://whatmodel.sh/api?format=json&all=1)

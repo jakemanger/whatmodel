@@ -6,22 +6,37 @@
 
 Google · released 2026-08 · proprietary
 
-**score 66.6** ±6.1 · #9 of 160 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.8** ±6.0 · #9 of 162 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Gemini 3.5 Transcribe among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-persian-triple-threat-apache"></a>Persian ASR Triple Th…  <a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/gemini35_transcribe_scores.json">Persian ASR Triple Threat · V…</a>   6.4%    69.4   2026-08-28   86% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.8                14% ▇▇
-                        weighted average                       = 66.6
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/gemini35_transcribe_scores.json">Persian ASR Triple Threat · Visua…</a>    6.4%  █·········●█ beats 1/2    avg 43%        86%  sharp · noisy · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                 results  share of the score
+<a name="speech-stt-persian-triple-threat-apache"></a><a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/gemini35_transcribe_scores.json">Persian ASR Triple Threat Leaderboard</a>        1   86% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                    14% ▇▇
+weighted average                                = 66.8
+</pre>
 
 <sub>Licences: Persian ASR Triple Threat Leaderboard ([Apache-2.0](../../licenses/speech-stt-persian-triple-threat-apache.txt))</sub>
 

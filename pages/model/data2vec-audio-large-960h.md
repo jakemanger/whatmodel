@@ -6,24 +6,40 @@
 
 Meta · released 2022-04 · 0.31B params · apache-2.0
 
-**score 12.3** ±3.5 · #154 of 160 · from 3 benchmark results across 2 sources
+**score 13.1** ±3.5 · #157 of 162 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks data2vec Audio Large 960h among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/data2vec-audio-large-960h/blob/27aba26eed532b86dcd0f17284a0307de4b51f39/README.md#evaluation">LibriSpeech test-other WER (l…</a>   4.1%    11.0   2022-06-06   39% ▇▇▇▇▇
-                      <a href="https://huggingface.co/facebook/data2vec-audio-large-960h/blob/27aba26eed532b86dcd0f17284a0307de4b51f39/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   1.9%    14.1   2022-06-06   13% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  23.2%     8.8   2026-03-26   42% ▇▇▇▇▇
-prior                 pull toward the middle                   49.8                 5% ▇
-                      weighted average                       = 12.3
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   23.2%  ▁▁▁●··▁▁▂██▆ beats 6/86   avg 8.2%       43%  blunt
+<a href="https://huggingface.co/facebook/data2vec-audio-large-960h/blob/27aba26eed532b86dcd0f17284a0307de4b51f39/README.md#evaluation">LibriSpeech test-other WER (lab)</a>      4.1%  ▂·▂·▂······● beats 3/6    avg 0.2%       38%  typical
+<a href="https://huggingface.co/facebook/data2vec-audio-large-960h/blob/27aba26eed532b86dcd0f17284a0307de4b51f39/README.md#evaluation">LibriSpeech test-clean WER (lab)</a>      1.9%  ▂··▂▂·····▂● beats 6/8    avg 0.4%       13%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="first-party-meta-asr-cards"></a><a href="https://huggingface.co/facebook/data2vec-audio-large-960h/blob/27aba26eed532b86dcd0f17284a0307de4b51f39/README.md#evaluation">Meta (lab)</a>                           2   52% ▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   43% ▇▇▇▇▇
+prior: pull toward the middle             5% ▇
+weighted average                        = 13.1
+</pre>
 
 <sub>Licences: Meta ([Apache-2.0](https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
@@ -31,14 +47,18 @@ prior                 pull toward the middle                   49.8             
 
 <pre>
 version    needs  score
-fp32     ~1.99GB   12.3
+fp32     ~1.99GB   13.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32
+# fp32 · ~1.99GB
 uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/data2vec-audio-large-960h', chunk_length_s=30)('audio.wav')['text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/data2vec-audio-large-960h) · [JSON](https://whatmodel.sh/api?format=json&all=1)

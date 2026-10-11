@@ -23,7 +23,12 @@ FastPitch 1.0 vs 1.1 pairwise pre…   56.5%  lab          <a href="https://gith
 
 ## How to run it
 
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
+# fp32 (NVIDIA DeepLearningExamples FastPitch, NGC container) · ~1.24GB
 git clone https://github.com/NVIDIA/DeepLearningExamples.git && cd DeepLearningExamples/PyTorch/SpeechSynthesis/FastPitch && bash scripts/docker/build.sh && docker run --gpus=all --rm --ipc=host -v $PWD:/workspace/fastpitch/ fastpitch:latest bash -c "bash scripts/download_cmudict.sh && HIFIGAN= WAVEGLOW=pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt bash scripts/inference_example.sh"
 ```
 

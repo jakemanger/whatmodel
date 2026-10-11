@@ -6,29 +6,68 @@
 
 Liquid AI · released 2025-07 · 1.17B params · lfm1.0
 
-**score 39.5** ±1.5 · #710 of 934 · from 10 benchmark results across 3 sources
+**score 39.7** ±1.5 · #715 of 949 · from 10 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks LFM2 1.2B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #289 of 466*    6.8%      1
+math            ▁▂▃●▆▅▄█▄▁▁▁   #298 of 400*     31%      2
+</pre>
+
+<details><summary>chat &amp; writing · #289 of 466 · 6.8% of its score</summary>
+
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFEval (aggregation unspecified) …</a>   74.9%  ▄····█▄···▄● beats 6/6    easy · avg 82%    6.8%  at its level
+</pre>
+
+</details>
+
+<details><summary>math · #298 of 400 · 31% of its score</summary>
+
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+
+<pre>
+test         result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MGSM (lab)</a>    55.0%  █···█▄··●··▄ beats 5/6    easy · avg 77%     21%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GSM8K (lab)</a>   58.3%  ▄·█···▄·▄··● beats 5/6    easy · avg 83%     10%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (7)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMLU (lab)</a>                           55.2%  █·███·█··●·█ beats 5/6     easy · avg 75%       22%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMMLU (lab)</a>                          46.7%  ▄···▄·▄▄··▄● beats 6/6     medium · avg 59%     11%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFBench (aggregation unspecified)…</a>   20.7%  ▄▄·▄····▄·●▄ beats 5/6     medium · avg 40%     10%  typical
+<a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GPQA (subset unspecified) (lab)</a>      31.5%  █······▄▄█·● beats 6/6     hard · avg 39%      8.1%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   58.7%  ▃▁▁▁▁▁▁▁●█▅▁ beats 86/276  medium · avg 73%    4.3%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   29.6%  ▃·▁●▂▁▂▅█▇▄▁ beats 12/100  medium · avg 68%    3.1%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   63.1%  ▁▁▁▁▁▁▁●▄█▄▃ beats 33/146  easy · avg 83%      3.1%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-liquidai-lfm2-1-2b"></a>LiquidAI/LFM2-1.2B mo…  <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GPQA (subset unspecified) (la…</a>  31.5%    40.2   2026-08-05   21% ▇▇▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GSM8K (lab)</a>                     58.3%    39.6   2026-08-05   17% ▇▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMLU (lab)</a>                      55.2%    38.4   2026-08-05   14% ▇▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MGSM (lab)</a>                      55.0%    42.7   2026-08-05   13% ▇▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMMLU (lab)</a>                     46.7%    38.6   2026-08-05   10% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFBench (aggregation unspecif…</a>  20.7%    37.0   2026-08-05    8% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFEval (aggregation unspecifi…</a>  74.9%    43.0   2026-08-05    5% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  29.6%    28.9   2026-04-17    3% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  63.1%    36.7   2026-04-17    3% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  58.7%    39.6   2025-08-30    4% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 39.5
+source                               results  share of the score
+<a name="card3-liquidai-lfm2-1-2b"></a><a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">LiquidAI/LFM2-1.2B model card (lab)</a>        7   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                      2    6% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    4% ▇
+prior: pull toward the middle                   1% ▇
+weighted average                              = 39.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LiquidAI/LFM2-1.2B model card ([LFM Open License v1.0](https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/LICENSE)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -37,15 +76,57 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md): LFM2 card model-property table: 'Context length 32,768 tokens' for LFM2-350M/700M/1.2B/2.6B (config allows 128000). Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~0.73GB   39.5
+download                      size  score
+4-bit q4_k_m               ~0.73GB   39.7
+4-bit mlx-4bit · mac only   ~0.7GB   39.7
+4-bit mlx-8bit · mac only   ~1.2GB   39.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf LiquidAI/LFM2-1.2B-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~0.73GB
+llama cli -hf LiquidAI/LFM2-1.2B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf LiquidAI/LFM2-1.2B-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~0.73GB
+lms get https://huggingface.co/LiquidAI/LFM2-1.2B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~0.7GB
+lms get https://huggingface.co/mlx-community/LFM2-1.2B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~1.2GB
+lms get https://huggingface.co/lmstudio-community/LFM2-1.2B-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~0.73GB
+ollama run hf.co/LiquidAI/LFM2-1.2B-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~0.7GB
+mlx_lm.chat --model mlx-community/LFM2-1.2B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/LFM2-1.2B-4bit
+# 4-bit mlx-8bit · mac only · ~1.2GB
+mlx_lm.chat --model lmstudio-community/LFM2-1.2B-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/LFM2-1.2B-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/lfm2-1-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

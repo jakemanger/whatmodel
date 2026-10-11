@@ -6,29 +6,99 @@
 
 Mistral · released 2026-03 · 119B params (6.5B active) · apache-2.0
 
-**score 59.7** ±1.6 · #220 of 934 · from 10 benchmark results across 4 sources
+**score 59.6** ±1.6 · #225 of 949 · from 10 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Mistral Small 4 (119B-A6.5B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others            rank  counts  tests
+agent tasks         ▁▁▃▆█▆●▄▄▃▂▁     #140 of 334*     20%      1
+coding              ██········█●         #1 of 4*    8.4%      1
+chat &amp; writing      ▁▁▁▄▆▅●█▆▆▆▂     #276 of 466*    7.9%      1
+math                               not ranked yet       —      1
+vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄      #87 of 150*    8.0%      1
+</pre>
+
+<details><summary>agent tasks · #140 of 334 · 20% of its score</summary>
+
+Beats [watt-tool-70B](watt-tool-70b.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   42.4%  ▆··▆▄▂▄●▆▆█▄ beats 11/23  very hard · avg 14%     20%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #1 of 4 · 8.4% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspecifie…</a>   63.6%  ▁···▁▁▃▅▅█●▅ beats 28/37  medium · avg 41%    8.4%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #276 of 466 · 7.9% of its score</summary>
+
+Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">Arena-Hard (version/judge unspeci…</a>   58.3%  ▃▃▂▅▃●▅█▅▅▂▃ beats 13/30  medium · avg 50%    7.9%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · 0.0% of its score</summary>
+
+<pre>
+test             result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">AIME 2025 (lab)</a>   83.8%  ▁·▁▁▁▂▅▆█●▅▁ beats 96/133  medium · avg 42%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #87 of 150 · 8.0% of its score</summary>
+
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md), [GLM-4.6V](glm-4-6v.md) here, though they rank higher overall.
+
+<pre>
+test            result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>   60.0%  ▂▃▁▃▆▇●▇▇██▅ beats 20/52  hard · avg 42%    8.0%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (lab)</a>                   71.2%  ▁▁▁▁▂▄▅▅●██▄ beats 157/310  hard · avg 43%          15%  sharp · at its level · small run
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   33.9%  ▁▁·▁▂▂▄●▄▅▄▄ beats 31/66    hard · avg 31%          12%  at its level
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (lab)</a>                       78.0%  ▁▁·▁▁▁▃▂▄●█▁ beats 115/188  medium · avg 60%       9.5%  at its level · small run
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecified)…</a>   48.0%  ▃▇▂▄▅●▂▄▄▆█▇ beats 36/80    hard · avg 31%         6.9%  at its level · small run
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   20.6%  ▁▁▃▂●▄▁▃▄▄▄█ beats 7/38     very hard · avg 14%    6.2%  at its level
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text generati…</a>   62.9%  ▄·▄█▄··▄▄·▄● beats 8/8      medium · avg 41%       4.6%  at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (lab)</a>              71.2%    63.1   2026-09-25   15% ▇▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (lab)</a>                  78.0%    60.6   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">Arena-Hard (version/judge uns…</a>  58.3%    51.8   2026-09-25    9% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspec…</a>  63.6%    61.6   2026-09-25    8% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>  48.0%    60.6   2026-09-25    8% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                  60.0%    61.7   2026-09-25    8% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text gene…</a>  62.9%    66.1   2026-09-25    5% ▇
-<a name="paper-2605.17281v2-contractbench"></a>ContractBench: Can LL…  <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (3…</a>  42.4%    63.2   2026-09-27   18% ▇▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  33.9%    51.5   2026-04-04   12% ▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>  20.6%    56.7   2026-09-28    6% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 59.7
+source                                    results  share of the score
+<a name="card-mistralai-mistral-small-4-119b-2603"></a><a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">mistralai/Mistral-Small-4-119B-2603 mod…</a>        7   61% ▇▇▇▇▇▇▇
+<a name="paper-2605.17281v2-contractbench"></a><a href="https://arxiv.org/html/2605.17281v2">ContractBench: Can LLM Agents Preserve …</a>        1   20% ▇▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1   12% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    6% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 59.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
 
@@ -48,18 +118,65 @@ api (Mistral) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [docs.m
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens. Mistral standard synchronous API; model mistral-small-2603. Uncached input; output includes generated reasoning where billed.  Batch, cache storage, tools and other modalities excluded. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): Mistral API maximum input tokens from exact catalogue record mistral/mistral-small-2603; not the legacy max\_tokens field.</sub>
 
 <pre>
-download             size  score
-4-bit ud-q4_k_m   ~71.9GB   59.7
-2-bit ud-q2_k_xl  ~36.2GB   59.7
+download                       size  score
+4-bit ud-q4_k_m             ~71.9GB   59.6
+2-bit ud-q2_k_xl            ~36.2GB   59.6
+4-bit mlx-4bit · mac only   ~67.8GB   59.6
+4-bit mlx-8bit · mac only  ~127.2GB   59.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit ud-q4_k_m
-llama-server -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q4_K_M
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q2_K_XL
+# 4-bit ud-q4_k_m · ~71.9GB
+llama cli -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q4_K_M
+# 2-bit ud-q2_k_xl · ~36.2GB
+llama cli -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q2_K_XL
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit ud-q4_k_m · ~71.9GB
+lms get https://huggingface.co/unsloth/Mistral-Small-4-119B-2603-GGUF@UD-Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit ud-q2_k_xl · ~36.2GB
+lms get https://huggingface.co/unsloth/Mistral-Small-4-119B-2603-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~67.8GB
+lms get https://huggingface.co/mlx-community/Mistral-Small-4-119B-2603-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~127.2GB
+lms get https://huggingface.co/mlx-community/Mistral-Small-4-119B-2603-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 2-bit ud-q2_k_xl · ~36.2GB
+ollama run hf.co/unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q2_K_XL
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~67.8GB
+mlx_lm.chat --model mlx-community/Mistral-Small-4-119B-2603-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Mistral-Small-4-119B-2603-4bit
+# 4-bit mlx-8bit · mac only · ~127.2GB
+mlx_lm.chat --model mlx-community/Mistral-Small-4-119B-2603-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Mistral-Small-4-119B-2603-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/mistral-small-4) · [JSON](https://whatmodel.sh/api?format=json&all=1)

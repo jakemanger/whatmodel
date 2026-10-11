@@ -10,19 +10,34 @@ NVIDIA · released 2020-10 · closed weights
 
 Score within the [LibriSpeech test-clean WER](https://whatmodel.sh/stt?set=librispeech-test-clean-wer%40speech-nvidia-dle-asr&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Jasper 10x5 (NVIDIA DLE, A100 recipe) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  weight
-<a name="speech-nvidia-dle-asr"></a>NVIDIA DeepLearningEx…  <a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md">LibriSpeech test-clean WER (l…</a>   3.4%    21.3    17% ▇▇
-                        <a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md">LibriSpeech test-other WER (l…</a>   9.7%    24.2    16% ▇▇
-prior                   pull toward the middle                   50.0    68% ▇▇▇▇▇▇▇▇
-                        weighted average                       = 65.0
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                              result  vs the others in its run   difficulty  counts  why
+<a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md">LibriSpeech test-clean WER (lab)</a>    3.4%  ▁·▁·▁▁▁●▃▇█▆ beats 12/100  avg 3.5%       17%  small run
+<a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md">LibriSpeech test-other WER (lab)</a>    9.7%  ●▁▁▂▅▃▅▄█▂▂▁ beats 1/54    avg 10%        16%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-nvidia-dle-asr"></a><a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md">NVIDIA DeepLearningExamples Jasper and …</a>        2   32% ▇▇▇▇
+prior: pull toward the middle                       68% ▇▇▇▇▇▇▇▇
+weighted average                                   = 65.0
+</pre>
 
 <sub>Licences: NVIDIA DeepLearningExamples Jasper and QuartzNet READMEs ([Apache-2.0](../../licenses/speech-nvidia-dle-asr.txt))</sub>
 

@@ -6,23 +6,50 @@
 
 Alibaba · released 2024-04 · 7.25B params · other (tongyi-qianwen-research)
 
-**score 40.6** ±0.7 · #692 of 934 · from 4 benchmark results across 2 sources
+**score 40.7** ±0.8 · #700 of 949 · from 4 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks CodeQwen1.5 7B (base) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃●██▇▆▄▃▁   #377 of 469     94%      3
+</pre>
+
+<details><summary>coding · #377 of 469 · 94% of its score</summary>
+
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3.0 2B Instruct](granite-3-0-2b.md) here, though they rank lower overall.
+
+<pre>
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    51.8%  ▁·▁▁▃▄●▅█▃▁▁ beats 37/99  easy · avg 79%     51%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   45.7%  ▁·▁▁▁▃▄●▄█▃▁ beats 38/99  easy · avg 74%     37%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        60.8%  ▁···▁▁▂▅▇●▆▂ beats 38/75  easy · avg 68%    6.6%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                     result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   45.6%  ▂▁▁▄▂▅▇█●▂▂▂ beats 43/58  medium · avg 50%    5.9%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                51.8%    39.9   2024-12-26   52% ▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>               45.7%    39.9   2024-12-26   37% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                    60.8%    45.4   2024-12-26    6% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>  45.6%    47.6   2025-04-01    5% ▇
-prior                   pull toward the middle            50.0                 0% ▇
-                        weighted average                = 40.6
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    6% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 40.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -31,15 +58,54 @@ prior                   pull toward the middle            50.0                 0
 <sub>[context source](https://huggingface.co/Qwen/CodeQwen1.5-7B/blob/5ce5a1554e50a9e3bb236de7c0b8a2a1746186e4/config.json): Alibaba official configuration for CodeQwen1.5-7B (pinned commit 5ce5a15): max\_position\_embeddings 65536. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
 
 <pre>
-download        size  score
-16-bit bf16  ~14.5GB   40.6
+download         size  score
+16-bit bf16   ~14.5GB   40.7
+4-bit Q4_K_M   ~4.7GB   40.7
+8-bit Q8_0     ~7.7GB   40.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Qwen/CodeQwen1.5-7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~4.7GB
+llama cli -hf bartowski/CodeQwen1.5-7B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/CodeQwen1.5-7B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.7GB
+llama cli -hf bartowski/CodeQwen1.5-7B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/CodeQwen1.5-7B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.7GB
+lms get https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~7.7GB
+lms get https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.7GB
+ollama run hf.co/bartowski/CodeQwen1.5-7B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.7GB
+ollama run hf.co/bartowski/CodeQwen1.5-7B-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~14.5GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Qwen/CodeQwen1.5-7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/codeqwen1-5-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

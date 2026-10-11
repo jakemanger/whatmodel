@@ -6,38 +6,62 @@
 
 OpenAI · released 2022-09 · 0.244B params · apache-2.0
 
-**score 39.1** ±2.0 · #137 of 160 · from 17 benchmark results across 11 sources
+**score 38.7** ±2.1 · #140 of 162 · from 17 benchmark results across 11 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Whisper small among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json">LibriSpeech test-clean WER</a>        3.3%    38.9   2026-09-15   19% ▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json">FLEURS English test WER</a>           6.5%    46.2   2026-09-15    8% ▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json">FLEURS Mandarin test error ra…</a>   23.1%    32.5   2026-09-15    7% ▇
-<a name="speech-omniasr-paper-bysa"></a>Omnilingual ASR: Open…  <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEUR…</a>   50.8%    32.7   2025-11-12   10% ▇
-                        <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Commo…</a>  111.7%    30.8   2025-11-12    7% ▇
-<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>    4.1%    54.0   2026-07-19    4% ▇
-                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>   14.9%    52.7   2026-07-19    4% ▇
-<a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>   26.0%    36.2   2026-08-17    7% ▇
-<a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   16.4%    44.7   2025-10-27    7% ▇
-<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>   20.3%    40.1   2026-08-24    5% ▇
-                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>   47.4%    43.1   2026-08-24    2% ▇
-<a name="speech-stt-danish-asr-ryeai-mit"></a>Danish Speech-to-Text…  <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean…</a>   46.9%    38.6   2026-06-24    6% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>   55.1%    34.8   2025-01-12    4% ▇
-<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>   21.7%    40.7   2026-09-25    4% ▇
-<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200          <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>   39.1%    37.5   2023-09-30    2% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>   12.3%    30.7   2024-12-09    1% ▇
-                        <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>        4.3%    21.6   2024-12-09    1% ▇
-prior                   pull toward the middle                    49.8                 2% ▇
-                        weighted average                        = 39.1
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (16)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json">LibriSpeech test-clean WER</a>            3.3%  ▁···▁▁▂·●▄██ beats 7/56   avg 2.3%       20%  blunt · several runs
+<a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEURS-81…</a>   50.8%  ●···▃···▃▃██ beats 0/10   avg 13%        11%  sharp · noisy
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json">FLEURS English test WER</a>               6.5%  ▁··▁▁▁▁▁●▃█▁ beats 13/56  avg 5.8%      7.6%  blunt
+<a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Common Vo…</a>  111.7%  ●▂▂····▂▆··█ beats 0/10   avg 21%       7.5%  sharp · noisy
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json">FLEURS Mandarin test error rate</a>      23.1%  ▂▂··●▄▂▂·▆██ beats 2/17   avg 12%       7.2%  typical
+<a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir) co…</a>   26.0%  ▄··▄·●▄▄··██ beats 2/8    avg 12%       7.2%  typical
+<a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilean Sp…</a>   16.4%  ●▂·····▂▂·█▂ beats 0/8    avg 13%       7.0%  typical
+<a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   46.9%  ▂▂···●▂▅█▃▂▂ beats 3/16   avg 32%       5.7%  blunt
+<a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   20.3%  ▄·█·▄●▄▄·█▄▄ beats 4/10   avg 15%       4.4%  blunt
+<a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   55.1%  ●·▂▂▅█▅▃▂▅▂▂ beats 0/22   avg 40%       4.3%  blunt
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpeech …</a>    4.1%  ▂·····●▂█▂▂▄ beats 1/11   avg 4.6%      4.1%  typical
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>   14.9%  ▃·▃●··▃▃▅▅█▃ beats 3/13   avg 16%       3.8%  blunt
+<a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sources,…</a>   21.7%  ▃··▃▃··●··█▅ beats 3/9    avg 17%       3.5%  blunt
+<a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 African …</a>   39.1%  ███····█●███ beats 4/7    avg 30%       2.4%  blunt
+<a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR b…</a>   47.4%  ▃█····●▅▃·▅▃ beats 4/10   avg 41%       1.9%  blunt
+<a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>       12.3%  ▂····▂▂▂█●▃▂ beats 10/13  avg 9.2%      1.1%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json">transcribe.cpp model catalog · LibriSpe…</a>        3   34% ▇▇▇▇
+<a name="speech-omniasr-paper-bysa"></a><a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR: Open-Source Multilingu…</a>        2   18% ▇▇
+<a name="speech-stt-verli-mit"></a><a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verliapp/stt-benchmark · independent ST…</a>        2    8% ▇
+<a name="speech-stt-peste-apache"></a><a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian Speech to Text benchmark</a>        1    7% ▇
+<a name="speech-stt-cl-spanish-asr-apache"></a><a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilean Spanish</a>          1    7% ▇
+<a name="speech-stt-bavarian-betthupferl-mit"></a><a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">German dialect ASR Benchmark</a>                    2    6% ▇
+<a name="speech-stt-danish-asr-ryeai-mit"></a><a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish Speech-to-Text Leaderboard</a>               1    6% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a><a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderboard</a>           1    4% ▇
+<a name="speech-stt-turkasr-bench-mit"></a><a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">Turkish ASR Leaderboard</a>                         1    4% ▇
+<a name="speech-stt-afrispeech200-report-ccby"></a><a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200</a>                                  1    2% ▇
+<a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                             2    2% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 38.7
+</pre>
 
 <sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Omnilingual ASR: Open-Source Multilingual Speech Recognition for 1600+ Languages ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)) · verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt)) · PESTE · Persian Speech to Text benchmark ([Apache-2.0](../../licenses/speech-stt-peste-apache.txt)) · Open ASR Leaderboard – Chilean Spanish ([Apache-2.0](../../licenses/speech-stt-cl-spanish-asr-apache.txt)) · German dialect ASR Benchmark ([MIT](../../licenses/speech-stt-bavarian-betthupferl-mit.txt)) · Danish Speech-to-Text Leaderboard ([MIT](https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · AfriSpeech-200 ([CC BY 4.0](../../licenses/speech-stt-afrispeech200-report-ccby.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
 
@@ -45,17 +69,21 @@ prior                   pull toward the middle                    49.8          
 
 <pre>
 version   needs  score
-fp16     ~1.1GB   39.1
-fp32     ~1.7GB   39.1
+fp16     ~1.1GB   38.7
+fp32     ~1.7GB   38.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16
+# fp16 · ~1.1GB
 uvx --from openai-whisper whisper audio.mp3 --model small
-# fp32
+# fp32 · ~1.7GB
 uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-small')('audio.wav', return_timestamps=True)['text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/whisper-small) · [JSON](https://whatmodel.sh/api?format=json&all=1)

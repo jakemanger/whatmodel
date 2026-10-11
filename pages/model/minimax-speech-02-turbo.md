@@ -6,22 +6,37 @@
 
 MiniMax · released 2025-04 · proprietary
 
-**score 59.7** ±3.1 · #42 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.7** ±3.2 · #42 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks MiniMax Speech-02-Turbo among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1196.0    60.2   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    49.7                 4% ▇
-                        weighted average                        = 59.7
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>  1196.0  ▁···▁▃··●▄▁▇ beats 7/18   avg 1078       96%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-vapi-humanness-20260925"></a><a href="https://humannessindex.vapi.ai/api/models">The Humanness Index by Vapi · September…</a>        1   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 59.7
+</pre>
 
 <sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
 

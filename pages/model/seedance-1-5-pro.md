@@ -8,24 +8,65 @@ ByteDance Seed · released 2025-12 · proprietary
 
 **score 57.5** ±1.5 · #32 of 93 · from 7 benchmark results across 5 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Seedance 1.5 Pro among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1256.0    59.4   2026-09-22   39% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1307.2    61.5   2026-09-22   26% ▇▇▇
-<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>   697.0    46.9   2026-09-25   15% ▇▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>   90.0%    59.1   2026-06-23    6% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>   87.6%    55.8   2026-06-23    5% ▇
-<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>   29.3%    56.2   2026-09-30    7% ▇
-<a name="visual-whatif-world-ccby"></a>What-If World: A Caus…  <a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-interven…</a>   32.4%    55.7   2026-05-26    2% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 57.5
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄▆▅█●▂▂▂▄   #16 of 68*     45%      2
+image to video  ▁▂·▂▅●▅▄▅▆▃▄    #37 of 50     47%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #16 of 68 · 45% of its score</summary>
+
+Beats [Wan 2.5 Preview](wan-2-5-preview.md), [Kling 2.6 Pro](kling-2-6-pro.md), [PixVerse V5.6](pixverse-v5-6.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1256.0  ▂▂▃▆█●·▆▅▁▂▇ beats 23/41  avg 1147           39%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   90.0%  █▄▄··▄▄▄▄●·▄ beats 8/9    easy · avg 85%    6.0%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #37 of 50 · 47% of its score</summary>
+
+Trails [Cosmos3-Nano](cosmos3-nano.md), [Kling 2.1 Master](kling-2-1-master.md), [Hailuo 02](hailuo-02.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1307.2  ▁▁▁▁▄▇▃●▃▂▄█ beats 20/40  avg 1189           26%  typical
+<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>   697.0  ●··▂▂▆█▆▂▂▆▄ beats 0/19   avg 741            15%  sharp
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, imag…</a>   87.6%  ▄·█··▄··●▄▄█ beats 4/8    easy · avg 84%    4.9%  typical
+<a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-intervention…</a>   32.4%  █·●····▄···█ beats 2/5    hard · avg 27%    2.1%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   29.3%  ▅·▃▅·●·▃···▃ beats 7/9    hard · avg 21%    6.5%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   65% ▇▇▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   15% ▇▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        2   11% ▇
+<a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1    7% ▇
+<a name="visual-whatif-world-ccby"></a><a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World: A Causal Benchmark for G…</a>        1    2% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 57.5
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · What-If World: A Causal Benchmark for General World Models in Embodied Scenarios ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

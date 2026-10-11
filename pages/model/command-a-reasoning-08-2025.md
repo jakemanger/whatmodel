@@ -6,30 +6,139 @@
 
 Cohere
 
-**score 55.0** ±2.0 · comparison only: no current run option verified · from 6 benchmark results across 2 sources
+**score 54.8** ±2.1 · #323 of 949 · from 6 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Command A Reasoning (08-2025) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ▁▁▃▆█●▅▄▄▃▂▁    #154 of 334     58%      3
+coding       ▁▁▁▃▆██●▆▄▃▁   #185 of 469*    8.9%      1
+math         ▁▂▃▅▆●▄█▄▁▁▁   #211 of 400*     25%      1
+</pre>
+
+<details><summary>agent tasks · #154 of 334 · 58% of its score</summary>
+
+Beats [o4-mini](o4-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty            counts  why
+<a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>            37.0%  ▁·▅●▆▅▂▃▃▂▃▁ beats 30/89  hard · avg 25%           27%  sharp · at its level · small run
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   57.1%  ▁▁▁▂██▅▅●▂▂▂ beats 68/77  hard · avg 32%           18%  at its level
+<a href="https://cohere.com/blog/command-a-plus">Terminal-Bench Hard (lab)</a>          3.0%  ▂▅●▂▂▆▂▂█▅▅▂ beats 4/27   very hard · avg 4.2%     12%  sharp · too hard for it · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #185 of 469 · 8.9% of its score</summary>
+
+Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
+
+<pre>
+test                               result  vs the others in its run  difficulty      counts  why
+<a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (lab)</a>   30.0%  ▁····▃▄●▄█▆▂ beats 10/34  hard · avg 19%    8.9%  small run
+</pre>
+
+</details>
+
+<details><summary>math · #211 of 400 · 25% of its score</summary>
+
+Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+
+<pre>
+test             result  vs the others in its run   difficulty        counts  why
+<a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>   57.0%  ▁·▁▁▁▂▅●█▇▅▁ beats 43/133  medium · avg 47%     25%  sharp · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) (lab)</a>   36.0%  ●········██▅ beats 0/8    medium · avg 41%    6.7%  at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>          37.0%    53.7   2026-05-20   28% ▇▇▇
-                        <a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>                 57.0%    52.0   2026-05-20   25% ▇▇▇
-                        <a href="https://cohere.com/blog/command-a-plus">Terminal-Bench Hard (lab)</a>        3.0%    48.3   2026-05-20   12% ▇
-                        <a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (…</a>  30.0%    60.4   2026-05-20    9% ▇
-                        <a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) …</a>  36.0%    43.7   2026-05-20    6% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  57.1%    67.4   2025-12-16   18% ▇▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 55.0
+source                                    results  share of the score
+<a name="first-party-cohere-scores"></a><a href="https://cohere.com/blog/command-a-plus">Cohere vendor-reported benchmark scores…</a>        5   80% ▇▇▇▇▇▇▇▇▇▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   18% ▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 54.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download                      size  score
+4-bit Q4_K_M               ~67.1GB   54.8
+8-bit Q8_0                  ~118GB   54.8
+2-bit IQ2_XXS              ~30.5GB   54.8
+4-bit mlx-8bit · mac only   ~118GB   54.8
+</pre>
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
+```sh
+# 4-bit Q4_K_M · ~67.1GB
+llama cli -hf bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~118GB
+llama cli -hf bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:Q8_0
+# 2-bit IQ2_XXS · ~30.5GB
+llama cli -hf bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:IQ2_XXS
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:IQ2_XXS
+```
+
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~67.1GB
+lms get https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~118GB
+lms get https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit IQ2_XXS · ~30.5GB
+lms get https://huggingface.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF@IQ2_XXS -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~118GB
+lms get https://huggingface.co/mlx-community/command-a-reasoning-08-2025-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 2-bit IQ2_XXS · ~30.5GB
+ollama run hf.co/bartowski/CohereLabs_command-a-reasoning-08-2025-GGUF:IQ2_XXS
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-8bit · mac only · ~118GB
+mlx_lm.chat --model mlx-community/command-a-reasoning-08-2025-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/command-a-reasoning-08-2025-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/command-a-reasoning-08-2025) · [JSON](https://whatmodel.sh/api?format=json&all=1)

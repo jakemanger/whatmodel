@@ -6,24 +6,61 @@
 
 Allen Institute for AI · released 2023-11 · 13B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 39.6** ±1.7 · #708 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 39.6** ±1.7 · #716 of 949 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Code Tulu 2 13B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #351 of 469*     21%      1
+math    ▁▂▃●▆▅▄█▄▁▁▁   #334 of 400*     14%      1
+</pre>
+
+<details><summary>coding · #351 of 469 · 21% of its score</summary>
+
+Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (lab)</a>   76.2%  ▃▃▃·▆▃▃█●▂▂▅ beats 19/25  very easy · avg 86%     21%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>math · #334 of 400 · 14% of its score</summary>
+
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
+
+<pre>
+test         result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>   41.0%  ▆▂▅█●▅▃▆···▂ beats 14/25  easy · avg 73%     14%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 52.8%  ▁·····▂█●▅·▁ beats 15/25  easy · avg 77%       43%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           45.9%  ▁▁▃▃●█▄▁█··▁ beats 6/25   easy · avg 74%       15%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   55.7%  ▂··▁▃▂▂▂█●▁▂ beats 20/25  medium · avg 61%    4.9%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            52.8%    38.7   2023-11-20   44% ▇▇▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  76.2%    44.2   2023-11-20   20% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     41.0%    38.1   2023-11-20   15% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      45.9%    34.3   2023-11-20   15% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  55.7%    45.9   2023-11-20    5% ▇
-prior   pull toward the middle                   50.0                 1% ▇
-        weighted average                       = 39.6
+source                         results  share of the score
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (lab)</a>                         5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 39.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt))</sub>
 
@@ -34,11 +71,15 @@ download         size  score
 16-bit bf16  ~26.03GB   39.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16
+# 16-bit bf16 · ~26.03GB
 uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/codetulu-2-13b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/code-tulu-2-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

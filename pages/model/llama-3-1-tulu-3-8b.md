@@ -6,45 +6,81 @@
 
 Ai2 · released 2024-11 · 8.03B params · llama3.1
 
-**score 44.1** ±0.7 · #605 of 934 · from 26 benchmark results across 4 sources
+**score 44.1** ±0.7 · #609 of 949 · from 26 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Llama 3.1 Tulu 3 8B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others         rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #331 of 466    8.7%      3
+math            ▁▂▃●▆▅▄█▄▁▁▁   #315 of 400     22%      4
+</pre>
+
+<details><summary>chat &amp; writing · #331 of 466 · 8.7% of its score</summary>
+
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1220.5  ▁▁▁▂▃●▃▆▆▇█▃ beats 76/379  avg 1268            4.8%  blunt
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>   34.0%  ▃▃·▁▁●▇▅·▁·▁ beats 10/22   medium · avg 42%    2.8%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (lab)</a>      82.4%  ▁▃▁▃▁▄▁▁●▃▃▁ beats 14/22   easy · avg 80%      1.1%  at its level
+</pre>
+
+</details>
+
+<details><summary>math · #315 of 400 · 22% of its score</summary>
+
+Beats [Athene-70B](athene-70b.md), [OLMo 2 32B Instruct (0325)](olmo-2-32b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                       87.6%  ▂▃··▃▂▅█●▃▂▃ beats 17/22  very easy · avg 91%     11%  sharp · several runs
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                              58.6%  ▅▃▃●·▅···▃·▃ beats 6/10   easy · avg 71%         5.7%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                              46.1%  █●██···▄▄▄·▄ beats 2/10   medium · avg 64%       3.6%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>   43.7%  ▃▃●▂▂▆·····▁ beats 12/22  medium · avg 61%       1.9%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (15)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           68.2%  ▁▂·▁·▁▁●·▃▃▅ beats 6/22    easy · avg 77%          14%  at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 69.0%  ▁▄·▁▁·▅●·▄▄▁ beats 10/22   easy · avg 75%          14%  sharp · at its level · several runs
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge</a>                        79.4%  ▂●▂█▂···▄··▂ beats 1/10    very easy · avg 91%     11%  sharp
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA</a>                           79.8%  ▂··▄●▂·▂···▄ beats 4/10    easy · avg 87%         6.3%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro</a>                             40.9%  █▄●·█▄▄▄·▄·▄ beats 3/10    medium · avg 57%       4.4%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft)</a>        54.5%  █▄▄●█··█···▄ beats 5/10    easy · avg 65%         4.1%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                           65.4%  ▃····▃▃●▃·▅▅ beats 5/10    medium · avg 74%       2.7%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag</a>                            80.9%  ▃▅█·▃▃●···▃▃ beats 8/10    easy · avg 84%         2.4%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                                79.3%  ▃··▃··●█▃·▃▃ beats 3/10    easy · avg 85%         2.3%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA</a>                           73.4%  ▃·▃●▅█·▃···▃ beats 3/10    easy · avg 78%         2.2%  blunt · at its level
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 55.0%  ▃▃▂·●▃·▅█▂▅▂ beats 5/21    medium · avg 63%       1.8%  blunt · at its level · several runs
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified)</a>            29.9%  █··▄▂··●▂··▄ beats 7/10    very hard · avg 33%    1.2%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          29.1%  ▁▁▁▃▃▃▁●▁▃·▄ beats 13/21   hard · avg 32%         1.1%  blunt
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA</a>                                 78.3%  ▃·▅·▃●·▃▅··▃ beats 6/10    easy · avg 83%         0.7%  blunt · at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.9%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 92/146  easy · avg 83%         0.7%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="card-microsoft-phi-4-mini-instruct"></a>microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge</a>                    79.4%    41.2   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K</a>                            84.3%    45.2   2026-09-25    7% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA</a>                       79.8%    44.0   2026-09-25    7% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU</a>                             65.0%    43.4   2026-09-25    7% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard</a>                   55.5%    41.1   2026-09-25    6% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                             58.6%    44.4   2026-09-25    6% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro</a>                         40.9%    41.5   2026-09-25    4% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft)</a>    54.5%    43.4   2026-09-25    4% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                             46.1%    42.5   2026-09-25    3% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                       65.4%    41.6   2026-09-25    3% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA</a>                       73.4%    45.2   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag</a>                        80.9%    47.1   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                            79.3%    43.6   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified)</a>        29.9%    44.7   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">TruthfulQA MC2</a>                   64.1%    42.5   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA</a>                             78.3%    39.7   2026-09-25    1% ▇
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                       68.2%    45.0   2025-10-08    7% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>             69.0%    47.5   2025-10-08    7% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                      87.6%    48.7   2025-10-08    4% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   34.0%    47.1   2025-10-08    3% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>             55.0%    40.4   2025-10-08    2% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>   43.7%    42.6   2025-10-08    2% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                      29.1%    48.2   2025-10-08    1% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>   82.4%    52.3   2025-10-08    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1220.5    44.4   2026-10-02    5% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   83.9%    50.4   2026-04-17    1% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 44.1
+source                                    results  share of the score
+<a name="card-microsoft-phi-4-mini-instruct"></a><a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">microsoft/Phi-4-mini-instruct model card</a>       16   69% ▇▇▇▇▇▇▇▇
+<a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious (lab)</a>                          8   26% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    5% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 44.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: microsoft/Phi-4-mini-instruct model card ([MIT](../../licenses/card-microsoft-phi-4-mini-instruct.txt)) · 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -53,18 +89,73 @@ prior                   pull toward the middle                    50.0          
 <sub>[context source](https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B/blob/666943798adbde0b1aff34626007e26986a3c107/config.json): Ai2 official configuration for Llama-3.1-Tulu-3-8B (pinned commit): max\_position\_embeddings 131072 (llama3 rope scaling, factor 8.0 over original 8192). Configured maximum, not a benchmarked long-context claim: the official card states no context length; its vLLM note suggests --max\_model\_len=8192 because of the long chat template. Observed 2026-10-07.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m   ~5.32GB   44.1
-8-bit q8_0    ~10.14GB   44.1
+download                       size  score
+4-bit q4_k_m                ~5.32GB   44.1
+8-bit q8_0                 ~10.14GB   44.1
+4-bit Q4_K_M                 ~4.9GB   44.1
+8-bit Q8_0                   ~8.5GB   44.1
+4-bit mlx-4bit · mac only    ~4.5GB   44.1
+4-bit mlx-8bit · mac only    ~8.5GB   44.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run tulu3:8b-q4_K_M
-# 8-bit q8_0
-ollama run tulu3:8b-q8_0
+# 4-bit Q4_K_M · ~4.9GB
+llama cli -hf lmstudio-community/Llama-3.1-Tulu-3-8B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Llama-3.1-Tulu-3-8B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.5GB
+llama cli -hf lmstudio-community/Llama-3.1-Tulu-3-8B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Llama-3.1-Tulu-3-8B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.9GB
+lms get https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-8B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.5GB
+lms get https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-8B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.5GB
+lms get https://huggingface.co/mlx-community/Llama-3.1-Tulu-3-8B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~8.5GB
+lms get https://huggingface.co/mlx-community/Llama-3.1-Tulu-3-8B-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.32GB
+ollama run tulu3:8b-q4_K_M
+# 8-bit q8_0 · ~10.14GB
+ollama run tulu3:8b-q8_0
+# 4-bit Q4_K_M · ~4.9GB
+ollama run hf.co/lmstudio-community/Llama-3.1-Tulu-3-8B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.5GB
+ollama run hf.co/lmstudio-community/Llama-3.1-Tulu-3-8B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.5GB
+mlx_lm.chat --model mlx-community/Llama-3.1-Tulu-3-8B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Llama-3.1-Tulu-3-8B-4bit
+# 4-bit mlx-8bit · mac only · ~8.5GB
+mlx_lm.chat --model mlx-community/Llama-3.1-Tulu-3-8B-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Llama-3.1-Tulu-3-8B-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-tulu-3-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

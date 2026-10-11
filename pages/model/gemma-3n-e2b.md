@@ -6,31 +6,69 @@
 
 Google · released 2025-06 · 5.44B params (2B active) · gemma
 
-**score 43.0** ±1.6 · #640 of 934 · from 12 benchmark results across 4 sources
+**score 42.9** ±1.6 · #644 of 949 · from 12 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Gemma 3n E2B IT among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others      rank  counts  tests
+coding  ●··········█    #2 of 2     29%      3
+math    ●··········█   #2 of 2*     24%      2
+</pre>
+
+<details><summary>coding · #2 of 2 · 29% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                      66.5%  ▁▁▁▁▁▃▅▅●▃▂▁ beats 112/190  easy · avg 81%       16%  sharp · at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                           56.6%  ▁▁▁▄▅█●▅▃▁▂▁ beats 47/81    easy · avg 71%      7.9%  at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">LiveCodeBench v5 (window unspecif…</a>   18.6%  ●▃·····▃█··▅ beats 0/7      medium · avg 35%    5.5%  small run
+</pre>
+
+</details>
+
+<details><summary>math · #2 of 2 · 24% of its score</summary>
+
+<pre>
+test             result  vs the others in its run  difficulty      counts  why
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">AIME 2025 (lab)</a>    6.7%  ▁·▁●▁▂▅▆█▇▅▁ beats 5/133  hard · avg 22%     14%  sharp · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM (lab)</a>        53.1%  ▃·▁·▁··▂▄●▄▄ beats 13/26  easy · avg 66%     10%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (9)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU (lab)</a>                           60.1%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 70/183  medium · avg 73%     10%  at its level · small run
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   52.0%  ▂▄▂▃█●▃▆▃▅▂▂ beats 36/81   medium · avg 58%     10%  blunt · at its level
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU-Pro (lab)</a>                       40.5%  ▁▁·▁▁▁●▂▄▅█▁ beats 27/188  medium · avg 56%    8.6%  at its level · small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Global-MMLU (lab)</a>                    55.1%  ●▅▃·▃···▅·▅█ beats 0/11    medium · avg 65%    5.1%  at its level · small run
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   56.3%  ▃▁▁▁▁▁▁▁●█▅▁ beats 80/276  medium · avg 73%    4.9%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   66.4%  ▃·▁▁▂▁▂▅●▇▄▁ beats 42/100  medium · avg 68%    3.7%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   79.4%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 63/146  easy · avg 83%      3.2%  at its level · noisy
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">GPQA Diamond (Google RelaxedAccur…</a>   24.8%  ······●····· beats 1/1                            —  not counted yet: no other model in the …
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Codegolf v2.2 (lab)</a>                  11.0%  ●··········█ beats 0/1                            —  not counted yet: no other model in the …
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="gap-google-gemma3n"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                 66.5%    44.7   2026-09-25   16% ▇▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">AIME 2025 (lab)</a>                  6.7%    39.3   2026-09-25   15% ▇▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU (lab)</a>                      60.1%    43.2   2026-09-25   11% ▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM (lab)</a>                      53.1%    46.0   2026-09-25   10% ▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU-Pro (lab)</a>                  40.5%    42.0   2026-09-25    9% ▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                      56.6%    42.1   2026-09-25    8% ▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">LiveCodeBench v5 (window unsp…</a>  18.6%    36.9   2026-09-25    5% ▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Global-MMLU (lab)</a>               55.1%    42.3   2026-09-25    5% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  52.0%    45.4   2026-09-19    9% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  66.4%    49.9   2026-04-17    4% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  79.4%    47.3   2026-04-17    3% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  56.3%    37.9   2025-07-15    5% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 43.0
+source                                    results  share of the score
+<a name="gap-google-gemma3n"></a><a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Google DeepMind Gemma 3n E2B IT model c…</a>        8   78% ▇▇▇▇▇▇▇▇▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1   10% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    7% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    5% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 42.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Google DeepMind Gemma 3n E2B IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -49,18 +87,73 @@ Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/mod
 <sub>[context source](https://ai.google.dev/gemma/docs/gemma-3n/model_card): Publisher advertises 32K total context, shared between input and output. Stored as the stated rounded 32K; no unsupported 32,768-token precision inferred.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~3.76GB   43.0
-8-bit q8_0    ~7.03GB   43.0
+download                      size  score
+4-bit q4_k_m               ~3.76GB   42.9
+8-bit q8_0                 ~7.03GB   42.9
+4-bit Q4_K_M                  ~3GB   42.9
+8-bit Q8_0                  ~4.8GB   42.9
+4-bit mlx-4bit · mac only   ~4.5GB   42.9
+4-bit mlx-8bit · mac only   ~6.7GB   42.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run gemma3n:e2b
-# 8-bit q8_0
-ollama run gemma3n:e2b-it-q8_0
+# 4-bit Q4_K_M · ~3GB
+llama cli -hf unsloth/gemma-3n-E2B-it-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/gemma-3n-E2B-it-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~4.8GB
+llama cli -hf unsloth/gemma-3n-E2B-it-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/gemma-3n-E2B-it-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~3GB
+lms get https://huggingface.co/unsloth/gemma-3n-E2B-it-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~4.8GB
+lms get https://huggingface.co/unsloth/gemma-3n-E2B-it-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.5GB
+lms get https://huggingface.co/lmstudio-community/gemma-3n-E2B-it-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~6.7GB
+lms get https://huggingface.co/lmstudio-community/gemma-3n-E2B-it-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~3.76GB
+ollama run gemma3n:e2b
+# 8-bit q8_0 · ~7.03GB
+ollama run gemma3n:e2b-it-q8_0
+# 4-bit Q4_K_M · ~3GB
+ollama run hf.co/unsloth/gemma-3n-E2B-it-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~4.8GB
+ollama run hf.co/unsloth/gemma-3n-E2B-it-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.5GB
+mlx_lm.chat --model lmstudio-community/gemma-3n-E2B-it-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/gemma-3n-E2B-it-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~6.7GB
+mlx_lm.chat --model lmstudio-community/gemma-3n-E2B-it-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/gemma-3n-E2B-it-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/gemma-3n-e2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

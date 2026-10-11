@@ -6,24 +6,52 @@
 
 StepFun · released 2025-08 · apache-2.0
 
-**score 37.3** ±2.9 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
+**score 37.2** ±2.9 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks NextStep-1-Large-Edit among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      29.0%    32.4   2026-05-13   50% ▇▇▇▇▇▇
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         64.1%    42.4   2025-12-01   28% ▇▇▇
-<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  53.4%    40.4   2025-11-14   18% ▇▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 37.3
+task                    vs the others        rank  counts  tests
+image to image / edit…  ▁▁●▃▂▃█▃▃▃▁▁   #76 of 81*     79%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #76 of 81 · 79% of its score</summary>
+
+Trails [OmniGen (v1)](omnigen-v1.md) here, though they rank lower overall.
+
+<pre>
+test                        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   29.0%  ▃▃●·▃▆▂█·▃·▃ beats 4/20   hard · avg 45%     50%  typical
+<a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>      64.1%  ▂····▂●▂▄·█▂ beats 3/11   easy · avg 73%     29%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-turn …</a>   53.4%  █▄▄·▄●▄▄█·▄█ beats 5/12   medium · avg 65%     17%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   50% ▇▇▇▇▇▇
+<a name="visual-unicbench"></a><a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicEdit-10M: A Dataset and Benchmark B…</a>        1   29% ▇▇▇
+<a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1   17% ▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 37.2
+</pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

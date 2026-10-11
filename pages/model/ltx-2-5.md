@@ -8,19 +8,46 @@ Lightricks · released 2026-08 · 22B params · ltx-2.x-community
 
 **score 53.1** ±6.1 · #43 of 93 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LTX-2.5 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-kandinsky6-report"></a>Kandinsky 6.0 Video: …  <a href="https://arxiv.org/html/2610.05608v1#S7.T11">VABench T2AV micro Visual QA</a>    61.7%    42.8   2026-10-04   49% ▇▇▇▇▇▇
-<a name="visual-datapoint-video-bench"></a>Datapoint Video Bench…  <a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench (overal…</a>  978.4    68.6   2026-09-28   36% ▇▇▇▇
-prior                   pull toward the middle                   49.9                16% ▇▇
-                        weighted average                       = 53.1
+task           vs the others      rank  counts  tests
+text to video  █····●·····█   #2 of 3*     49%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #2 of 3 · 49% of its score</summary>
+
+Trails [Kandinsky 6.0 Video Lite](kandinsky-6-0-lite.md) here, though they rank lower overall.
+
+<pre>
+test                          result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2610.05608v1#S7.T11">VABench T2AV micro Visual QA</a>   61.7%  ●█··▄·▄···▄█ beats 0/7    easy · avg 68%     49%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench (overall El…</a>   978.4  ▃▃·●·▃·▃··▃█ beats 2/9    avg 889        36%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-kandinsky6-report"></a><a href="https://arxiv.org/html/2610.05608v1#S7.T11">Kandinsky 6.0 Video: Foundation Models …</a>        1   49% ▇▇▇▇▇▇
+<a name="visual-datapoint-video-bench"></a><a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench leaderboard</a>               1   36% ▇▇▇▇
+prior: pull toward the middle                       16% ▇▇
+weighted average                                   = 53.1
+</pre>
 
 <sub>Licences: Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Datapoint Video Bench leaderboard ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -37,15 +64,19 @@ q8 · mac only                             ~26.9GB   53.1
 gguf-q8_0 22B dev + Gemma 4 12B q8_0 (s…  ~47.7GB   53.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp8 · nvidia only
+# fp8 · nvidia only · ~13.7GB
 uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --duration-head-path models/ltx-2.5/model_patches/ltx-2.5-duration-head-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt "A golden retriever running through a sunny meadow, cinematic lighting" --seed 42 --output-path output_distilled.mp4 --quantization fp8-cast --offload cpu
-# q8 · mac only
+# q8 · mac only · ~26.9GB
 rapid-mlx serve ltx-2.5-mlx-q8
-# gguf-q8_0 22B dev + Gemma 4 12B q8_0 (sd.cpp)
+# gguf-q8_0 22B dev + Gemma 4 12B q8_0 (sd.cpp) · ~47.7GB
 sd-cli -M convert -m models/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --type q8_0 -o models/gemma4-12b-with-proj-ltx-2.5-Q8_0.gguf && sd-cli -M vid_gen --diffusion-model models/ltx-2.5-22b-dev-transformer-Q8_0.gguf --vae models/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae models/ltx-2.5-audio-vae-bf16.safetensors --llm models/gemma4-12b-with-proj-ltx-2.5-Q8_0.gguf -p "A wide aerial shot of a red vintage convertible driving along a coastal cliff road at sunset, waves crashing below" --cfg-scale 3.0 --sampling-method euler -v -n "worst quality, low quality, blurry, distorted, artifacts" -W 1280 -H 720 --diffusion-fa --offload-to-cpu --video-frames 121 --fps 24 -o t2v.webm
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ltx-2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

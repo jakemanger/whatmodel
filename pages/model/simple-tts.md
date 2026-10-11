@@ -6,23 +6,38 @@
 
 ASAPP Research (Justin Lovelace et al.) · released 2023-10
 
-**score 31.2** ±5.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.0** ±5.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Simple-TTS among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-ditto-tts-report-ccby"></a>DiTTo-TTS: Diffusion …  <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>   4.1%    27.0   2025-02-17   52% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>  50.3%    31.9   2025-02-17   38% ▇▇▇▇▇
-prior                   pull toward the middle                   49.7                11% ▇
-                        weighted average                       = 31.2
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s cro…</a>    4.1%  █···█··●···█ beats 2/3    avg 0.7%           52%  typical
+<a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s cro…</a>   50.3%  █··········● beats 3/3    easy · avg 72%     37%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-ditto-tts-report-ccby"></a><a href="https://arxiv.org/html/2406.11427v2">DiTTo-TTS: Diffusion Transformers for S…</a>        2   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       11% ▇
+weighted average                                   = 31.0
+</pre>
 
 <sub>Licences: DiTTo-TTS: Diffusion Transformers for Scalable Text-to-Speech without Domain-Specific Factors ([CC BY 4.0](../../licenses/speech-ditto-tts-report-ccby.txt))</sub>
 

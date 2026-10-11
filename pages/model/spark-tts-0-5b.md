@@ -6,27 +6,54 @@
 
 SparkAudio · released 2025-02 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 52.3** ±3.1 · #59 of 117 · from 6 benchmark results across 2 sources
+**score 51.7** ±3.2 · #61 of 118 · from 6 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Spark-TTS 0.5B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  57.2%    52.9   2025-07-20   33% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  65.7%    53.0   2025-07-20   32% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   2.3%    60.5   2025-07-20   11% ▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   1.7%    55.2   2025-07-20    7% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  41.0%    42.9   2026-05-24   14% ▇▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  33.0%  -214.3   2026-05-24    0% ▇
-prior                   pull toward the middle                   49.7                 4% ▇
-                        weighted average                       = 52.3
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁●▇█▃▃   #29 of 37     81%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #29 of 37 · 81% of its score</summary>
+
+Beats [CosyVoice-300M](cosyvoice-300m.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker simila…</a>   65.7%  ▁·●··▂·█▄·▃▄ beats 2/25   medium · avg 62%     32%  at its level
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker simila…</a>   57.2%  ▁·●▂▂█▆▃▅··▂ beats 1/30   medium · avg 53%     32%  at its level
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper large-…</a>    2.3%  ▁···▂▂▂▂●▆▄▂ beats 13/35  avg 3.6%             10%  blunt
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer CER</a>     1.7%  ▁·▂▁▁▁▂▃●█·▂ beats 13/30  avg 2.1%            7.1%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>   41.0%  ▃·····●▂▂▃█▆ beats 2/15   medium · avg 46%     14%  blunt · at its level
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>   33.0%  ●▂▂··▂·▃▃▃█▂ beats 0/15   avg 8.6%            0.2%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-dmospeech2-report-bysa"></a><a href="https://arxiv.org/html/2507.14988v1">DMOSpeech 2: Reinforcement Learning for…</a>        4   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2   14% ▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 51.7
+</pre>
 
 <sub>Licences: DMOSpeech 2: Reinforcement Learning for Duration Prediction in Metric-Optimized Speech Synthesis ([CC BY-SA 4.0](../../licenses/speech-dmospeech2-report-bysa.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>
 
@@ -46,17 +73,21 @@ Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS
 
 <pre>
 version                                  needs  score
-fp32 (Spark-TTS repo CLI)              ~3.92GB   52.3
-mlx-bf16 (mlx-audio 0.5.x) · mac only   ~2.9GB   52.3
+fp32 (Spark-TTS repo CLI)              ~3.92GB   51.7
+mlx-bf16 (mlx-audio 0.5.x) · mac only   ~2.9GB   51.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (Spark-TTS repo CLI)
+# fp32 (Spark-TTS repo CLI) · ~3.92GB
 git clone https://github.com/SparkAudio/Spark-TTS.git && cd Spark-TTS && conda create -n sparktts -y python=3.12 && conda activate sparktts && pip install -r requirements.txt && python -c "from huggingface_hub import snapshot_download; snapshot_download('SparkAudio/Spark-TTS-0.5B', local_dir='pretrained_models/Spark-TTS-0.5B')" && cd example && bash infer.sh
-# mlx-bf16 (mlx-audio 0.5.x) · mac only
+# mlx-bf16 (mlx-audio 0.5.x) · mac only · ~2.9GB
 pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Spark-TTS-0.5B-bf16 --text 'Hello, world!'
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/spark-tts-0-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

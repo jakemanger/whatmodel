@@ -6,21 +6,50 @@
 
 MiniMax · released 2024-08 · closed weights
 
-**score 45.8** ±3.9 · #62 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.7** ±3.9 · #62 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Hailuo 01 (MiniMax video-01 / I2V-01) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄●▅█▃▂▂▂▄   #40 of 68*     47%      1
+image to video  ▁▂·▂●█▅▄▅▆▃▄   #41 of 50*     47%      1
+</pre>
+
+<details><summary>text to video · #40 of 68 · 47% of its score</summary>
+
+Beats [Wan 2.2 TI2V 5B](wan-2-2-5b.md) here, though they rank higher overall.
+
+<pre>
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rating)</a>   60.0%  ▄····▄···●·▄ beats 3/4    medium · avg 66%     47%  at its level
+</pre>
+
+</details>
+
+<details><summary>image to video · #41 of 50 · 47% of its score</summary>
+
+Beats [HunyuanVideo 1.5](hunyuanvideo-1-5.md), [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall.
+
+<pre>
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rating)</a>   61.0%  ▄···●······█ beats 1/3    medium · avg 66%     47%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  61.0%    46.0   2025-04-21   47% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>  60.0%    44.9   2025-04-21   46% ▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 6% ▇
-                        weighted average                       = 45.8
+source                                    results  share of the score
+<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-V2: Infinite-length Film Gener…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 45.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>
 

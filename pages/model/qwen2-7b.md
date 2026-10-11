@@ -6,61 +6,182 @@
 
 Alibaba · released 2024-06 · 7.62B params · apache-2.0
 
-**score 44.0** ±0.6 · #610 of 934 · from 22 benchmark results across 10 sources
+**score 44.0** ±0.6 · #614 of 949 · from 22 benchmark results across 10 sources
+
+## What it's good at
+
+<sub>● marks Qwen2 7B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁●▆█▆▅▄▄▃▂▁   #310 of 334*    0.8%      1
+coding          ▁▁▁▃▆●█▇▆▄▃▁   #349 of 469*     11%      1
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #300 of 466*    2.8%      1
+math            ▁▂▃●▆▅▄█▄▁▁▁    #332 of 400     28%      5
+</pre>
+
+<details><summary>agent tasks · #310 of 334 · 0.8% of its score</summary>
+
+Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [GLM-4 9B Chat](glm-4-9b-chat.md), [Command R (08-2024)](command-r-08-2024.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
+
+<pre>
+test     result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>   41.3%  ▁▁▁▁▁●▅█▅▄▁▁ beats 17/114  medium · avg 52%    0.8%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #349 of 469 · 11% of its score</summary>
+
+Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [OpenChat 3.5](openchat-3-5.md) here, though they rank lower overall.
+
+<pre>
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>   37.9%  ▁▂●▃▆█▆▃▂·▁▁ beats 4/47   medium · avg 61%     11%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #300 of 466 · 2.8% of its score</summary>
+
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   38.1%  ▁·▁▁▂▁▄▄▆●█▄ beats 22/38  medium · avg 49%    2.8%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>math · #332 of 400 · 28% of its score</summary>
+
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                          85.7%  ▄···█●▄·▄·▄█ beats 3/8    very easy · avg 92%    8.6%  sharp · several runs
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          80.1%  ▁▄·▁▄●▅▅▅███ beats 10/43  very easy · avg 89%    7.5%  sharp
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>      52.9%  ▃····●·▅·▅·█ beats 1/8    easy · avg 76%         4.7%  at its level · several runs
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   23.9%  ▁▁▁▆●▂▇▇▄··▂ beats 12/38  hard · avg 34%         3.4%  sharp
+<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                   19.5%  ▃·····●··█▅▅ beats 1/8    medium · avg 37%       3.4%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (12)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   66.9%  ▁·▁▁▄●▄▅█▄▂▁ beats 10/53    easy · avg 77%       19%  at its level
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 26.6%  ▁▁▁▂▂▃●█▆▃▅▃ beats 19/61    medium · avg 41%     14%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        40.7%  ▂▁▁▄▂▅●█▆▂▂▂ beats 29/58    medium · avg 50%    4.4%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        28.0%  ▃▂·●▆██▆▅▃▃▃ beats 3/33     medium · avg 41%    4.3%  at its level
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard</a>                       65.0%  ▁▁▁▁▂▄▅▅●▃▄▁ beats 75/129   easy · avg 75%      3.3%  sharp · at its level · small run
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>    8.4%  ▁▁●▆██▁▁·▁▁▁ beats 5/57     hard · avg 18%      3.0%  sharp
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU</a>                                 70.8%  ▁▁▁▁▁▂▃▅█●▆▃ beats 117/183  easy · avg 78%      2.7%  at its level
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      53.7%  ▁··▁▁▂▂▆●▆█▆ beats 28/70    medium · avg 64%    2.2%  at its level
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified)</a>            38.4%  ▂▁▂▂▄▃●▃▅█▄▃ beats 34/104   hard · avg 40%      1.6%  sharp
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   50.0%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 28/81    medium · avg 58%    1.6%  blunt · at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   72.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 192/276  medium · avg 73%    0.8%  at its level · noisy
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU</a>                                80.9%  ▅·▅····█●▅█▅ beats 7/14     easy · avg 75%      0.8%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>  66.9%    44.0                17% ▇▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>     80.1%    44.5                13% ▇▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 probl…</a>  37.9%    42.4                11% ▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 p…</a>  23.9%    47.0                 3% ▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   8.4%    44.0                 3% ▇
-<a name="internlm-github-model-cards"></a>InternLM GitHub repos…  <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K</a>                           82.9%    46.2   2024-07-03    4% ▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard</a>                  65.0%    46.0   2024-07-03    3% ▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU</a>                            70.8%    46.1   2024-07-03    3% ▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified)</a>       48.6%    45.3   2024-07-03    2% ▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified)</a>       38.4%    51.1   2024-07-03    2% ▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU</a>                           80.9%    56.1   2024-07-03    1% ▇
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            26.6%    42.6   2024-10-22   13% ▇▇
-<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     85.7%    43.9   2024-09-18    5% ▇
-                        <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>              19.5%    40.6   2024-09-18    3% ▇
-                        <a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (la…</a>  52.9%    38.5   2024-09-18    2% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>   28.0%    40.9   2025-04-01    4% ▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   40.7%    43.9   2025-04-01    4% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  38.1%    46.5   2026-04-06    3% ▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  53.7%    45.4   2024-06-19    2% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.0%    43.6   2026-09-19    1% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>                         41.3%    40.7   2025-04-13    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  72.1%    49.6   2024-06-06    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 44.0
+source                                    results  share of the score
+<a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>             5   44% ▇▇▇▇▇
+<a name="internlm-github-model-cards"></a><a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">InternLM GitHub repository model cards</a>          6   14% ▇▇
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   14% ▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (lab)</a>                                      3   11% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2    9% ▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards</a>             1    3% ▇
+<a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>          1    2% ▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    2% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 44.0
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · InternLM GitHub repository model cards ([Apache-2.0](https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/LICENSE)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · InternLM GitHub repository model cards ([Apache-2.0](https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/LICENSE)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/Qwen/Qwen2-7B-Instruct/blob/f2826a00ceef68f0f2b946d945ecc0477ce4450c/README.md): Qwen official model card: "Qwen2-7B-Instruct supports a context length of up to 131,072 tokens". Full supported model-card context requires the documented YaRN configuration beyond the default 32,768 tokens (config.json). This does not promise the same limit on every hosted API. Observed 2026-10-07.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~5.07GB   44.0
-8-bit q8_0    ~9.64GB   44.0
+download                      size  score
+4-bit q4_k_m               ~5.07GB   44.0
+8-bit q8_0                 ~9.64GB   44.0
+4-bit q4_k_m                ~4.7GB   44.0
+8-bit q8_0                  ~8.1GB   44.0
+4-bit mlx-4bit · mac only   ~4.3GB   44.0
+4-bit mlx-8bit · mac only   ~8.1GB   44.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run qwen2:7b-instruct-q4_K_M
-# 8-bit q8_0
-ollama run qwen2:7b-instruct-q8_0
+# 4-bit q4_k_m · ~4.7GB
+llama cli -hf Qwen/Qwen2-7B-Instruct-GGUF:q4_k_m
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/Qwen2-7B-Instruct-GGUF:q4_k_m
+# 8-bit q8_0 · ~8.1GB
+llama cli -hf Qwen/Qwen2-7B-Instruct-GGUF:q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/Qwen2-7B-Instruct-GGUF:q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~4.7GB
+lms get https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF@q4_k_m -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~8.1GB
+lms get https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF@q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.3GB
+lms get https://huggingface.co/mlx-community/Qwen2-7B-Instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~8.1GB
+lms get https://huggingface.co/mlx-community/Qwen2-7B-Instruct-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.07GB
+ollama run qwen2:7b-instruct-q4_K_M
+# 8-bit q8_0 · ~9.64GB
+ollama run qwen2:7b-instruct-q8_0
+# 4-bit q4_k_m · ~4.7GB
+ollama run hf.co/Qwen/Qwen2-7B-Instruct-GGUF:q4_k_m
+# 8-bit q8_0 · ~8.1GB
+ollama run hf.co/Qwen/Qwen2-7B-Instruct-GGUF:q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.3GB
+mlx_lm.chat --model mlx-community/Qwen2-7B-Instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen2-7B-Instruct-4bit
+# 4-bit mlx-8bit · mac only · ~8.1GB
+mlx_lm.chat --model mlx-community/Qwen2-7B-Instruct-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen2-7B-Instruct-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/qwen2-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

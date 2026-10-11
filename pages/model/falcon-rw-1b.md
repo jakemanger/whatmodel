@@ -6,29 +6,49 @@
 
 TII · released 2023-04 · 1.3B params · apache-2.0
 
-**score 19.4** ±1.8 · #904 of 934 · from 8 benchmark results across 1 source
+**score 20.1** ±1.6 · #918 of 949 · from 12 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Falcon-RW 1B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (12)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                63.2%  ▄█●···▄··█▄▄ beats 3/8    easy · avg 92%          14%  at its level
+<a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                           60.7%  █··●···█▄▄·▄ beats 2/8    easy · avg 90%          14%  typical
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-23%2017%3A09%3A28.422286.json">Natural Questions (closed book)</a>       9.3%  ▁·▁·▁▂▁●·▅▂█ beats 9/28   medium · avg 58%        14%  typical
+<a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                        28.2%  ▅····▃●···▅█ beats 3/8    easy · avg 79%          13%  sharp · too hard for it
+<a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                             63.3%  ▅·▃●··▃··▃·█ beats 3/8    very easy · avg 90%     11%  at its level
+<a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            46.6%  ▃▃▃··●····▃█ beats 3/8    easy · avg 83%          11%  at its level
+<a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                                 74.7%  ▄▄··▄·●·▄·██ beats 3/8    easy · avg 88%         6.3%  blunt · at its level
+<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           40.5%  █●····█▄▄··▄ beats 2/7    medium · avg 63%       5.8%  blunt
+<a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           24.4%  ●······▂·▆·▂ beats 3/8    medium · avg 54%       4.1%  too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-20%2023%3A51%3A12.755266.json">TriviaQA</a>                             31.4%  ▁··▁█▃▃▁●▅▄█ beats 13/28  easy · avg 79%         2.8%  noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-08%2010%3A44%3A07.732591.json">TruthfulQA MC2</a>                       36.0%  ●▃█▆▁▂▅···▁▁ beats 4/31   medium · avg 64%       1.8%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-13%2004%3A45%3A23.642544.json">HaluEval QA hallucination detecti…</a>   42.2%  ●▁▁·▁▁·▁▁▁▁▁ beats 0/27   medium · avg 70%       0.5%  sharp · too hard for it · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>              60.7%    20.8   2023-09-11   17% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>           28.2%    17.0   2023-09-11   16% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                   63.2%    18.6   2023-09-11   16% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                63.3%    20.4   2023-09-11   14% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>               46.6%    21.9   2023-09-11   12% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>              40.5%    16.1   2023-09-11    9% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                    74.7%    24.0   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>              24.4%     9.3   2023-09-11    7% ▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 19.4
+source                                    results  share of the score
+<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   80% ▇▇▇▇▇▇▇▇▇▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-rw-1b/results_2023-12-23%2017%3A09%3A28.422286.json">Hallucinations Leaderboard results</a>              4   19% ▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 20.1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
@@ -36,14 +56,18 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download        size  score
-16-bit bf16  ~2.62GB   19.4
+16-bit bf16  ~2.62GB   20.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16
+# 16-bit bf16 · ~2.62GB
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-rw-1b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/falcon-rw-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

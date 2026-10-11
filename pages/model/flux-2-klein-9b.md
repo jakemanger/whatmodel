@@ -6,28 +6,70 @@
 
 Black Forest Labs · released 2026-01 · 9B params · flux-dev-nc
 
-**score 54.6** ±1.7 · #68 of 144 · from 7 benchmark results across 6 sources
+**score 54.8** ±1.7 · #67 of 144 · from 7 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks FLUX.2 \[klein\] 9B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1070.2    54.4   2026-09-24   42% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1224.7    57.6   2026-09-30   15% ▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   87.1%    55.7   2026-08-25   15% ▇▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>   22.9%    47.9   2026-10-07   11% ▇
-<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>   925.3    56.1   2026-10-01    6% ▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1039.0    61.5   2026-03-30    6% ▇
-<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    3.5%    46.2   2026-05-29    3% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 54.6
+task                    vs the others        rank  counts  tests
+text to image           ▂▅▅▃▄●█▃▁▂▁▁   #61 of 126     67%      3
+image to image / edit…  ▁▁·▃▂▃●▃▃▄▁▁   #34 of 62*     22%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #61 of 126 · 67% of its score</summary>
+
+Trails [LongCat-Image](longcat-image.md), [LLaDA-Image-Turbo](llada-image-turbo.md), [FLUX.1 Kontext \[max\]](flux-1-kontext-max.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1070.3  ▂▂▃●▇█▄▂▄▂·▂ beats 19/75  avg 1027           41%  typical
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    87.1%  ▄····▄█▄▄●▄█ beats 6/10   easy · avg 82%     15%  typical
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   22.9%  ▁▂●█▃▁▂▃·▁·▁ beats 3/22   hard · avg 28%     11%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #34 of 62 · 22% of its score</summary>
+
+Beats [FLUX.2 \[flex\]](flux-2-flex.md), [Imagen 4](imagen-4.md), [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall.
+
+<pre>
+test                         result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1224.7  ▂▁▁▂▆●█▄▆▅▁▂ beats 15/53  avg 1153       16%  typical
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1039.0  ▃▂····▂█▂●▂▃ beats 11/14  avg 956       6.2%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   925.3  ▁▁▁●▂█▂▁▁▂▁▁ beats 6/34   avg 875                 6.4%  typical
+<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    3.5%  ▃·····●▅▃·▃▅ beats 1/9    very hard · avg 4.3%    3.1%  too hard for it
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   57% ▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   15% ▇▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   11% ▇
+<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    6% ▇
+<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    6% ▇
+<a name="visual-paintbench"></a><a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench: Deterministic Evaluation of…</a>        1    3% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 54.8
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -39,20 +81,24 @@ api (Cloudflare) · $0.015/image · [developers.cloudflare.com](https://develope
 
 <pre>
 version                                   needs  score
-bf16 (cpu offload) · nvidia only        ~22.1GB   54.6
-mlx-qint8 (Flux2CLI, Swift) · mac only  ~11.3GB   54.6
-gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp)    ~13.7GB   54.6
+bf16 (cpu offload) · nvidia only        ~22.1GB   54.8
+mlx-qint8 (Flux2CLI, Swift) · mac only  ~11.3GB   54.8
+gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp)    ~13.7GB   54.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (cpu offload) · nvidia only
+# bf16 (cpu offload) · nvidia only · ~22.1GB
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2KleinPipeline; p=Flux2KleinPipeline.from_pretrained('black-forest-labs/FLUX.2-klein-9B', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=4, guidance_scale=1.0).images[0].save('out.png')"
-# mlx-qint8 (Flux2CLI, Swift) · mac only
+# mlx-qint8 (Flux2CLI, Swift) · mac only · ~11.3GB
 ./Flux2CLI t2i "a cat holding a sign" --model klein-9b --transformer-quant qint8
-# gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp)
+# gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp) · ~13.7GB
 sd-cli --diffusion-model models/flux-2-klein-9b-Q4_0.gguf --vae models/flux2_ae.safetensors --llm models/Qwen3-8B-Q4_K_M.gguf -p "a lovely cat" --cfg-scale 1.0 --steps 4 -v --offload-to-cpu --diffusion-fa
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/flux-2-klein-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

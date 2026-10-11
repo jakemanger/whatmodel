@@ -6,31 +6,73 @@
 
 Cohere · released 2026-03 · 2.07B params · apache-2.0
 
-**score 61.4** ±1.8 · #21 of 160 · from 10 benchmark results across 6 sources
+**score 61.7** ±1.8 · #21 of 162 · from 10 benchmark results across 6 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Cohere Transcribe (03-2026) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        3.8%    61.6   2026-03-26   36% ▇▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.4%    65.5   2026-03-26   11% ▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   7.9%    60.5   2026-03-26   11% ▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-03-2026.json">LibriSpeech test-clean WER</a>       1.3%    66.3   2026-09-15   15% ▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-03-2026.json">FLEURS English test WER</a>          5.1%    54.3   2026-09-15    6% ▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-03-2026.json">FLEURS Mandarin test error ra…</a>  11.2%    50.5   2026-09-15    6% ▇
-<a name="speech-stt-dutch-asr-tvosch-apache"></a>Dutch ASR Leaderboard   <a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/CohereLabs__cohere-transcribe-03-2026.json">Dutch ASR Leaderboard · avera…</a>   8.4%    61.6   2026-05-11    8% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  30.7%    61.1   2026-04-16    3% ▇
-<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  15.2%    62.4   2026-08-15    2% ▇
-<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  14.5%    62.0   2026-08-18    1% ▇
-prior                   pull toward the middle                   49.8                 1% ▇
-                        weighted average                       = 61.4
+task                    vs the others       rank  counts  tests
+long-form transcripti…  ▁▁▄▁·▁▂█▄●▁▁   #3 of 27*     11%      1
+multilingual transcri…  ▂··▃▄█▆▅●▂·▂   #6 of 36*     37%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>long-form transcription · #3 of 27 · 11% of its score</summary>
+
+Trails [Speechmatics Enhanced](speechmatics-enhanced.md) here, though they rank lower overall.
+
+<pre>
+test                            result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>    7.9%  ▁▁▅▁·▃▅█▆●▂▂ beats 26/30  avg 12%        11%  typical
+</pre>
+
+</details>
+
+<details><summary>multilingual transcription · #6 of 36 · 37% of its score</summary>
+
+Beats [Cohere Transcribe Arabic (07-2026)](cohere-transcribe-arabic-07-2026.md) here, though they rank higher overall. Trails [SeamlessM4T v2 Large](seamless-m4t-v2-large.md), [Voxtral Small 24B (2507)](voxtral-small-24b.md), [Chirp 3](google-chirp-3.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>    3.8%  ▂··▂▃▂█▃█●▁▁ beats 26/29  avg 8.9%       37%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-03-2026.json">LibriSpeech test-clean WER</a>            1.3%  ▁···▁▁▂·▄▄█● beats 56/56  avg 2.3%       14%  blunt
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    5.4%  ▁▁▁▃··▁▁▂██● beats 86/86  avg 8.2%       11%  blunt
+<a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/CohereLabs__cohere-transcribe-03-2026.json">Dutch ASR Leaderboard · average W…</a>    8.4%  ▄··▄█···●··▄ beats 4/6    avg 16%       8.0%  typical
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-03-2026.json">FLEURS English test WER</a>               5.1%  ▁··▁▁▁▁▁▁●█▁ beats 24/56  avg 5.8%      5.6%  blunt
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-03-2026.json">FLEURS Mandarin test error rate</a>      11.2%  ▂▂··▂▄▂▂·●██ beats 7/17   avg 12%       5.4%  typical
+<a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   30.7%  ▃·▂▂▅█▅▃▂●▂▂ beats 18/22  avg 40%       3.2%  blunt
+<a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · held-ou…</a>   15.2%  ▃·▅·▅▃▃·●▃▃█ beats 7/12   avg 24%       2.0%  blunt
+<a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project dysa…</a>   14.5%  ▂·▂··▂····▆● beats 6/9    avg 18%       1.3%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                            3   59% ▇▇▇▇▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-03-2026.json">transcribe.cpp model catalog · LibriSpe…</a>        3   25% ▇▇▇
+<a name="speech-stt-dutch-asr-tvosch-apache"></a><a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/CohereLabs__cohere-transcribe-03-2026.json">Dutch ASR Leaderboard</a>                           1    8% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a><a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderboard</a>           1    3% ▇
+<a name="speech-stt-quranic-asr-lb-apache"></a><a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard</a>                         1    2% ▇
+<a name="speech-stt-sap-dysarthric-report"></a><a href="https://arxiv.org/html/2605.02782v2">Dysarthric ASR with clinical context on…</a>        1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 61.7
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Dutch ASR Leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt))</sub>
 
@@ -42,14 +84,18 @@ api (fal.ai) · $0.0042/audio min · [fal.ai](https://fal.ai/models/fal-ai/coher
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~5.47GB   61.4
+bf16 · nvidia only  ~5.47GB   61.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~5.47GB
 vllm serve CohereLabs/cohere-transcribe-03-2026 --trust-remote-code
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cohere-transcribe-03-2026) · [JSON](https://whatmodel.sh/api?format=json&all=1)

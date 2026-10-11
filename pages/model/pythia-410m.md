@@ -6,26 +6,42 @@
 
 EleutherAI · released 2023-02 · 0.405B params · apache-2.0
 
-**score 10.4** ±1.7 · #921 of 934 · from 7 benchmark results across 2 sources
+**score 10.4** ±1.6 · #936 of 949 · from 7 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Pythia 410M among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (7)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                       52.1%  ▃·▅▃▃●·██▃██ beats 6/19   very easy · avg 90%     26%  at its level
+<a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                           81.1%  ▂··▂▃▂●▆▃▃█▂ beats 5/19   very easy · avg 98%     26%  at its level
+<a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                           66.8%  ▂·▄▄·●▂▆▂▄█▄ beats 5/19   easy · avg 88%          14%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   51.6%  ▃··▅▃▃▅●▅███ beats 7/19   very easy · avg 89%     13%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                     53.7%  ▄····▄●▂▄▆▆█ beats 6/19   easy · avg 89%          12%  typical
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>                  21.3%  ●··▁·▁▁·▁▂▁▂ beats 7/19   medium · avg 72%       6.1%  sharp · too hard for it
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   26.4%  ●▁▁▁▁▁▁▁▂█▅▁ beats 7/276  medium · avg 73%       1.2%  too hard for it · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  52.1%    11.1   2023-05-31   26% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      81.1%    10.4   2023-05-31   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      66.8%     9.1   2023-05-31   14% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  51.6%    13.5   2023-05-31   14% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                53.7%     8.1   2023-05-31   12% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             21.3%     2.1   2023-05-31    7% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  26.4%    -2.7   2024-02-11    1% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 10.4
+source                                    results  share of the score
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 10.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -34,15 +50,54 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://arxiv.org/abs/2304.01373v2): Training sequence length stated by the maker; no separate serving limit is published.</sub>
 
 <pre>
-download       size  score
-4-bit fp16  ~0.91GB   10.4
+download         size  score
+4-bit fp16    ~0.91GB   10.4
+4-bit Q4_K_M   ~0.3GB   10.4
+8-bit Q8_0     ~0.4GB   10.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp16
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-410m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~0.3GB
+llama cli -hf mradermacher/pythia-410m-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/pythia-410m-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~0.4GB
+llama cli -hf mradermacher/pythia-410m-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/pythia-410m-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~0.3GB
+lms get https://huggingface.co/mradermacher/pythia-410m-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~0.4GB
+lms get https://huggingface.co/mradermacher/pythia-410m-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~0.3GB
+ollama run hf.co/mradermacher/pythia-410m-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~0.4GB
+ollama run hf.co/mradermacher/pythia-410m-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp16 · ~0.91GB
+uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-410m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/pythia-410m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

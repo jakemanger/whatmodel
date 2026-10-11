@@ -6,60 +6,127 @@
 
 Alibaba · released 2025-10 · 2.13B params · apache-2.0
 
-**score 44.1** ±0.7 · #607 of 934 · from 41 benchmark results across 5 sources
+**score 43.9** ±0.7 · #617 of 949 · from 41 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Qwen3-VL 2B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+agent tasks         ▁▁▃●█▆▅▄▄▃▂▁   #258 of 334*    1.8%      1
+coding              ▁▁▁●▆██▇▆▄▃▁   #423 of 469*    2.6%      1
+chat &amp; writing      ▁▁▁▄▆▅●█▆▆▆▂   #309 of 466*    4.2%      1
+math                ▁▂▃▅●▅▄█▄▁▁▁   #292 of 400*    9.1%      2
+vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄    #133 of 150     53%     19
+</pre>
+
+<details><summary>agent tasks · #258 of 334 · 1.8% of its score</summary>
+
+Beats [o3-mini](o3-mini.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
+
+<pre>
+test           result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>   55.4%  ●▄··▄█·█▄█▄█ beats 0/13   medium · avg 59%    1.8%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #423 of 469 · 2.6% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">LiveCodeBench v6 (window unspecif…</a>   20.3%  ●▅█▅▅▃▅···▃█ beats 0/16   medium · avg 35%    2.6%  typical
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #309 of 466 · 4.2% of its score</summary>
+
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecified) …</a>   68.2%  ●··▃···██▅▃▃ beats 0/11   easy · avg 77%    4.2%  at its level · several runs
+</pre>
+
+</details>
+
+<details><summary>math · #292 of 400 · 9.1% of its score</summary>
+
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [StarCoder2 15B](starcoder2-15b.md) here, though they rank lower overall.
+
+<pre>
+test                        result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>   61.3%  ▃··▃●·▃█▅▅▅█ beats 2/16   medium · avg 69%    5.6%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">AIME 2025 (lab)</a>              22.2%  ●·▃▃█··▃▅▃·█ beats 0/12   medium · avg 45%    3.4%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #133 of 150 · 53% of its score</summary>
+
+Beats [Gemma 4 E2B](gemma-4-e2b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv descriptive questions (la…</a>   62.3%  ●··▂▂▂·▂▄▄▂█ beats 1/14   easy · avg 74%          11%  at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU (val) (lab)</a>                     53.4%  ▂···●▂▂▂▄▄▄█ beats 2/16   medium · avg 61%       6.6%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv (reasoning questions) (la…</a>   26.8%  ●▂▄▆▄▄▆··▄█▂ beats 0/21   medium · avg 39%       6.3%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMStar (lab)</a>                         58.3%  ▂··●▂▂·▄█▂▄▆ beats 2/16   medium · avg 65%       6.2%  at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>           61.3%  ▃··▃●·▃█▅▅▅█ beats 2/16   medium · avg 69%       5.6%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU Pro (lab)</a>                       36.5%  ▃·●·▅▃▃▃▅▅▃█ beats 1/16   medium · avg 46%       3.1%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">HallusionBench (lab)</a>                 51.4%  ▃·▃·●▃▅▅▃▅█▅ beats 3/16   medium · avg 55%       2.6%  blunt · at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (lab)</a>                        79.1%  ▂··●·▂▃·▅▂▆█ beats 1/17   easy · avg 85%         1.9%  blunt · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>                    63.9%  ●▃·▃▅▅·█·▃▅█ beats 1/16   easy · avg 70%         1.8%  blunt · at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">DocVQA (lab)</a>                         93.3%  ▃··●▃▅▃█▃█▅▅ beats 2/17   very easy · avg 94%    1.7%  blunt · maxed out
+<a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   27.0%  ▁·▁·▃●▁▇▃█·▄ beats 5/22   hard · avg 27%         1.6%  blunt
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">ScreenSpot-Pro (lab)</a>                 48.5%  ▂····▂●··▂█▆ beats 2/11   medium · avg 46%       1.0%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">CC-OCR (lab)</a>                         72.8%  ▃··●▅·▅▅·█▅▃ beats 1/13   easy · avg 74%         1.0%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1</a>                  74.4%  █·····▃··●·▃ beats 4/5    easy · avg 79%         1.0%  blunt · at its level
+<a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench (bilingual RU/EN enter…</a>   14.3%  ▃●·▅·▃·█·█▅▅ beats 1/14   hard · avg 24%         0.9%  typical
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">OCRBench (lab)</a>                       85.8%  ▅█·▃▃●▃▅▅▃·▃ beats 7/16   easy · avg 84%         0.9%  blunt · several runs
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench</a>                           84.8%  ▄··▄··█··▄·● beats 5/5    very easy · avg 86%    0.4%  noisy
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test</a>                            71.3%  ●···▄▄···▄·▄ beats 1/5    easy · avg 82%         0.2%  blunt · at its level
+<a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing (Av…</a>   62.1%  ▂·▁·●▂▅█·▁▂▂ beats 3/22   medium · avg 62%       0.1%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (10)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                       49.0%  ●·▄·▄▄▄▄█▄██ beats 0/12   medium · avg 63%    9.0%  at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                     66.5%  ●··▃·▃·█▃▅▃▅ beats 0/11   easy · avg 79%      7.0%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (lab)</a>      42.0%  ▂····●·▂▂█▆█ beats 1/14   hard · avg 49%      4.6%  sharp
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      24.3%  ●··▄·▄▄▄█▄██ beats 0/11   medium · avg 37%    3.0%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles) (la…</a>   61.9%  ▃··●··▅█▃▃▅▃ beats 1/13   medium · avg 66%    2.5%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (lab)</a>                   36.4%  ●··▃▅▃▃▃▃▃·█ beats 0/11   medium · avg 43%    2.4%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU</a>                                 63.0%  ▄·····▄▄··●█ beats 3/5    medium · avg 70%    2.1%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                        47.4%  ●··▃·▅▃▃·█·▃ beats 0/10   hard · avg 51%      2.0%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">MVBench (lab)</a>                        61.7%  ●▂▂·▂█··▆▄·▂ beats 0/13   medium · avg 67%    1.0%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified)</a>   52.3%  ▄·▄··█●····▄ beats 4/5    medium · avg 58%    0.9%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv descriptive questions…</a>  62.3%    43.5   2025-11-27    8% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                  49.0%    43.1   2025-11-27    7% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                66.5%    40.7   2025-11-27    7% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU (val) (lab)</a>                53.4%    44.9   2025-11-27    7% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv (reasoning questions)…</a>  26.8%    43.4   2025-11-27    6% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>      61.3%    45.4   2025-11-27    6% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMStar (lab)</a>                    58.3%    44.7   2025-11-27    4% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (la…</a>  42.0%    46.2   2025-11-27    4% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">AIME 2025 (lab)</a>                 22.2%    42.0   2025-11-27    4% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecifi…</a>  68.2%    42.0   2025-11-27    3% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU Pro (lab)</a>                  36.5%    43.3   2025-11-27    3% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                 24.3%    41.0   2025-11-27    3% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">LiveCodeBench v6 (window unsp…</a>  20.3%    42.8   2025-11-27    3% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles)…</a>  61.9%    45.7   2025-11-27    2% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (lab)</a>              36.4%    45.5   2025-11-27    2% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                   47.4%    47.2   2025-11-27    2% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>                   55.4%    46.7   2025-11-27    2% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">HallusionBench (lab)</a>            51.4%    47.2   2025-11-27    2% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (lab)</a>                   79.1%    40.5   2025-11-27    2% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">DocVQA (lab)</a>                    93.3%    46.0   2025-11-27    2% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>               63.9%    41.8   2025-11-27    1% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MVBench (lab)</a>                   61.7%    41.8   2025-11-27    1% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ScreenSpot-Pro (lab)</a>            48.5%    53.1   2025-11-27    1% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CC-OCR (lab)</a>                    72.8%    48.7   2025-11-27    1% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">OCRBench (lab)</a>                  85.8%    53.7   2025-11-27    1% ▇
-<a name="card2-coherelabs-north-micro-vision-instruct"></a>CohereLabs/North-Micr…  <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>   59.5%    38.7   2026-08-10    2% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU</a>                            63.0%    46.9   2026-08-10    2% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU-Pro</a>                        42.8%    46.6   2026-08-10    2% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar</a>                          50.6%    40.6   2026-08-10    2% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspeci…</a>  52.3%    46.9   2026-08-10    1% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1</a>             74.4%    45.1   2026-08-10    1% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">IFEval (aggregation unspecifi…</a>  73.4%    45.4   2026-08-10    1% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench</a>                  67.3%    53.5   2026-08-10    1% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA</a>                     64.6%    44.8   2026-08-10    0% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench</a>                      84.8%    49.2   2026-08-10    0% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">OCRBench</a>                        75.1%    38.4   2026-08-10    0% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test</a>                       71.3%    18.4   2026-08-10    0% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">ChartQA</a>                         69.3%    34.6   2026-08-10    0% ▇
-<a name="paper-2606.01348v3-chartarena"></a>ChartArena: Benchmark…  <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (Eng…</a>  27.0%    51.3   2026-07-05    2% ▇
-<a name="paper-2608.17895v1-bear-bench"></a>BEAR-Bench: A Bilingu…  <a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench (bilingual RU/EN e…</a>  14.3%    42.4   2026-08-18    1% ▇
-<a name="paper-2605.07492v2-puredocbench"></a>How Far Is Document P…  <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing…</a>  62.1%    49.8   2026-09-27    0% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 44.1
+source                                    results  share of the score
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=18">Qwen (lab)</a>                                     25   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="card2-coherelabs-north-micro-vision-instruct"></a><a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CohereLabs/North-Micro-Vision-Instruct …</a>       13   13% ▇▇
+<a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    2% ▇
+<a name="paper-2608.17895v1-bear-bench"></a><a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench: A Bilingual Enterprise and …</a>        1    1% ▇
+<a name="paper-2605.07492v2-puredocbench"></a><a href="https://arxiv.org/html/2605.07492v2">How Far Is Document Parsing from Solved…</a>        1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 43.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: CohereLabs/North-Micro-Vision-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BEAR-Bench: A Bilingual Enterprise and Academic Reasoning Benchmark for Multimodal Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -68,18 +135,73 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/blob/89644892e4d85e24eaac8bacfd4f463576704203/README.md): Official Qwen model card: 'Native 256K context, expandable to 1M'. Observed 2026-10-09.</sub>
 
 <pre>
-download        size  score
-4-bit q4_k_m  ~1.9GB   44.1
-8-bit q8_0    ~2.6GB   44.1
+download                     size  score
+4-bit q4_k_m               ~1.9GB   43.9
+8-bit q8_0                 ~2.6GB   43.9
+4-bit Q4_K_M               ~1.1GB   43.9
+8-bit Q8_0                 ~1.8GB   43.9
+4-bit mlx-4bit · mac only  ~1.8GB   43.9
+4-bit mlx-8bit · mac only  ~2.6GB   43.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run qwen3-vl:2b-instruct
-# 8-bit q8_0
-ollama run qwen3-vl:2b-instruct-q8_0
+# 4-bit Q4_K_M · ~1.1GB
+llama cli -hf Qwen/Qwen3-VL-2B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/Qwen3-VL-2B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.8GB
+llama cli -hf Qwen/Qwen3-VL-2B-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/Qwen3-VL-2B-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~1.1GB
+lms get https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~1.8GB
+lms get https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~1.8GB
+lms get https://huggingface.co/mlx-community/Qwen3-VL-2B-Instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~2.6GB
+lms get https://huggingface.co/lmstudio-community/Qwen3-VL-2B-Instruct-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~1.9GB
+ollama run qwen3-vl:2b-instruct
+# 8-bit q8_0 · ~2.6GB
+ollama run qwen3-vl:2b-instruct-q8_0
+# 4-bit Q4_K_M · ~1.1GB
+ollama run hf.co/Qwen/Qwen3-VL-2B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.8GB
+ollama run hf.co/Qwen/Qwen3-VL-2B-Instruct-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~1.8GB
+mlx_lm.chat --model mlx-community/Qwen3-VL-2B-Instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen3-VL-2B-Instruct-4bit
+# 4-bit mlx-8bit · mac only · ~2.6GB
+mlx_lm.chat --model lmstudio-community/Qwen3-VL-2B-Instruct-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Qwen3-VL-2B-Instruct-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/qwen3-vl-2b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

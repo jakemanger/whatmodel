@@ -6,24 +6,50 @@
 
 WizardLM · released 2024-01 · 33.34B params · msft-research
 
-**score 49.6** ±0.7 · #448 of 934 · from 5 benchmark results across 3 sources
+**score 49.5** ±0.7 · #458 of 949 · from 5 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks WizardCoder 33B V1.1 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #265 of 469     84%      2
+</pre>
+
+<details><summary>coding · #265 of 469 · 84% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank lower overall.
+
+<pre>
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    79.9%  ▁·▁▁▃▄▆▅●▃▁▁ beats 83/99  easy · avg 79%     56%  sharp · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   73.2%  ▁·▁▁▁▃▄▄▄●▃▁ beats 82/99  easy · avg 74%     28%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   53.3%  ▂▂▃▄▄█▁▄▅●▁▃ beats 38/42  medium · avg 55%     16%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               79.9%    50.4   2024-12-26   34% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              73.2%    49.9   2024-12-26   29% ▇▇▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               73.8%    48.3   2024-03-28   18% ▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       53.3%    49.3   2024-03-28   15% ▇▇
-<a name="first-party-wizardlm-scores"></a>WizardLM team vendor-…  <a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>         79.9%    49.1   2024-01-19    4% ▇
-prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 49.6
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   61% ▇▇▇▇▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   34% ▇▇▇▇
+<a name="first-party-wizardlm-scores"></a><a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">WizardLM team vendor-reported scores fo…</a>        1    4% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 49.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt))</sub>
 
@@ -32,18 +58,65 @@ prior                   pull toward the middle           50.0                 0%
 <sub>[context source](https://huggingface.co/WizardLM/WizardCoder-33B-V1.1/blob/22d03e16bd052cec88228e17e832f851391e3565/config.json): WizardLM official configuration for WizardCoder-33B-V1.1 (pinned commit): max\_position\_embeddings 16384 (linear rope scaling, factor 4.0). Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
 
 <pre>
-download       size  score
-4-bit q4_k_m  ~20GB   49.6
-8-bit q8_0    ~35GB   49.6
+download                      size  score
+4-bit q4_k_m                 ~20GB   49.5
+8-bit q8_0                   ~35GB   49.5
+4-bit Q4_K_M               ~19.9GB   49.5
+8-bit Q8_0                 ~35.4GB   49.5
+4-bit mlx-8bit · mac only  ~35.4GB   49.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run wizardcoder:33b-v1.1-q4_K_M
-# 8-bit q8_0
-ollama run wizardcoder:33b-v1.1-q8_0
+# 4-bit Q4_K_M · ~19.9GB
+llama cli -hf TheBloke/WizardCoder-33B-V1.1-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/WizardCoder-33B-V1.1-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~35.4GB
+llama cli -hf TheBloke/WizardCoder-33B-V1.1-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/WizardCoder-33B-V1.1-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~19.9GB
+lms get https://huggingface.co/TheBloke/WizardCoder-33B-V1.1-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~35.4GB
+lms get https://huggingface.co/TheBloke/WizardCoder-33B-V1.1-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~35.4GB
+lms get https://huggingface.co/GGorman/WizardCoder-33B-V1.1-Q8-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~20GB
+ollama run wizardcoder:33b-v1.1-q4_K_M
+# 8-bit q8_0 · ~35GB
+ollama run wizardcoder:33b-v1.1-q8_0
+# 4-bit Q4_K_M · ~19.9GB
+ollama run hf.co/TheBloke/WizardCoder-33B-V1.1-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~35.4GB
+ollama run hf.co/TheBloke/WizardCoder-33B-V1.1-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-8bit · mac only · ~35.4GB
+mlx_lm.chat --model GGorman/WizardCoder-33B-V1.1-Q8-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model GGorman/WizardCoder-33B-V1.1-Q8-mlx
+```
 
 [interactive version](https://whatmodel.sh/model/wizardcoder-33b-v1-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

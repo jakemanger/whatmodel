@@ -6,24 +6,39 @@
 
 Microsoft · released 2026-09 · 8.67B params · mit
 
-**score 47.2** ±4.9 · #112 of 160 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 47.2** ±5.1 · #112 of 162 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks VibeVoice-ASR-Streaming-7B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-vibevoice-asr-streaming-report-ccby"></a>VibeVoice-ASR-Streami…  <a href="https://arxiv.org/html/2609.02812v2">GigaSpeech test WER (lab)</a>       10.2%    49.6   2026-09-10   40% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-other WER (l…</a>   6.5%    44.0   2026-09-10   39% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-clean WER (l…</a>   2.3%    47.6   2026-09-10   12% ▇
-prior                   pull toward the middle                   49.8                 9% ▇
-                        weighted average                       = 47.2
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                              result  vs the others in its run   difficulty  counts  why
+<a href="https://arxiv.org/html/2609.02812v2">GigaSpeech test WER (lab)</a>          10.2%  ▁····▁··▁●█▂ beats 6/17    avg 10.0%      40%  small run
+<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-other WER (lab)</a>    6.5%  ▁▁▁▂●▃▅▄█▂▂▁ beats 11/54   avg 4.8%       38%  small run
+<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-clean WER (lab)</a>    2.3%  ▁·▁·▁▁▁▁▃●█▆ beats 39/100  avg 2.1%       12%  blunt · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-vibevoice-asr-streaming-report-ccby"></a><a href="https://arxiv.org/html/2609.02812v2">VibeVoice-ASR-Streaming Technical Repor…</a>        3   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       10% ▇
+weighted average                                   = 47.2
+</pre>
 
 <sub>Licences: VibeVoice-ASR-Streaming Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -34,11 +49,15 @@ version                                      needs  score
 bf16 (official VibeVoice repo) · nvidia…  ~17.36GB   47.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (official VibeVoice repo) · nvidia only
+# bf16 (official VibeVoice repo) · nvidia only · ~17.36GB
 git clone https://github.com/microsoft/VibeVoice.git && cd VibeVoice && pip install -e . && python demo/vibevoice_asr_streaming_inference_from_file.py --model_path microsoft/VibeVoice-ASR-Streaming-7B --audio_files audio.wav
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/vibevoice-asr-streaming-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

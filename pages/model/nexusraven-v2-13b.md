@@ -6,37 +6,115 @@
 
 Nexusflow · released 2023-12 · 13.02B params · other
 
-**score 38.3** ±6.3 · #736 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 28.7** ±2.6 · #872 of 949 · from 5 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks NexusRaven V2 13B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ▁▁●▆█▆▅▄▄▃▂▁   #322 of 334*     11%      1
+</pre>
+
+<details><summary>agent tasks · #322 of 334 · 11% of its score</summary>
+
+Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank lower overall.
+
+<pre>
+test     result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   36.0%  ▁▁▁▁●▃▅█▅▄▁▁ beats 11/114  medium · avg 52%     11%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-03-03%2011%3A06%3A20.668175.json">Natural Questions (closed book)</a>      14.2%  ▁·▁·▁▂▁▂·●▂█ beats 12/28  medium · avg 58%     67%  typical
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-02-08%2018%3A51%3A34.994633.json">TriviaQA</a>                             42.3%  ▁··▁█▃▃▁▄●▄█ beats 18/28  easy · avg 79%       10%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-01-30%2014%3A29%3A26.599300.json">TruthfulQA MC2</a>                       44.4%  ▅▃█●▁▂▅···▁▁ beats 18/31  medium · avg 64%    4.9%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-02-03%2010%3A10%3A35.690425.json">HaluEval QA hallucination detecti…</a>   23.7%  ●▁▁·▁▁·▁▁▁▁▁ beats 12/27  medium · avg 70%    3.6%  sharp · too hard for it · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                 36.0%    35.8   2025-06-14   82% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle           50.0                18% ▇▇
-                        weighted average               = 38.3
+source                                    results  share of the score
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/Nexusflow/NexusRaven-V2-13B/results_2024-03-03%2011%3A06%3A20.668175.json">Hallucinations Leaderboard results</a>              4   86% ▇▇▇▇▇▇▇▇▇▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   11% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 28.7
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
+<sub>Licences: Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/Nexusflow/NexusRaven-V2-13B/blob/a6b84dc52f4c8f2cd61637f840066f376c629271/config.json): config.json max\_position\_embeddings 16384. Observed 2026-10-10.</sub>
 
 <pre>
-download      size  score
-4-bit q4_0  ~7.4GB   38.3
+download                      size  score
+4-bit q4_0                  ~7.4GB   28.7
+4-bit Q4_K_M                ~7.9GB   28.7
+8-bit Q8_0                 ~13.8GB   28.7
+4-bit mlx-6bit · mac only  ~10.6GB   28.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run nexusraven:13b
+# 4-bit Q4_K_M · ~7.9GB
+llama cli -hf TheBloke/NexusRaven-V2-13B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/NexusRaven-V2-13B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+llama cli -hf TheBloke/NexusRaven-V2-13B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/NexusRaven-V2-13B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~7.9GB
+lms get https://huggingface.co/TheBloke/NexusRaven-V2-13B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~13.8GB
+lms get https://huggingface.co/TheBloke/NexusRaven-V2-13B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-6bit · mac only · ~10.6GB
+lms get https://huggingface.co/k8smee/NexusRaven-V2-13B-mlx-6Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~7.4GB
+ollama run nexusraven:13b
+# 4-bit Q4_K_M · ~7.9GB
+ollama run hf.co/TheBloke/NexusRaven-V2-13B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+ollama run hf.co/TheBloke/NexusRaven-V2-13B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-6bit · mac only · ~10.6GB
+mlx_lm.chat --model k8smee/NexusRaven-V2-13B-mlx-6Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model k8smee/NexusRaven-V2-13B-mlx-6Bit
+```
 
 [interactive version](https://whatmodel.sh/model/nexusraven-v2-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

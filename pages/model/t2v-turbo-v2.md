@@ -6,21 +6,48 @@
 
 UC Santa Barbara · released 2024-10 · apache-2.0
 
-**score 38.0** ±4.9 · #72 of 93 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 37.9** ±4.9 · #72 of 93 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks T2V-Turbo-v2 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others        rank  counts  tests
+text to video  ▆▄▃▄●▅█▃▂▂▂▄   #44 of 68*     48%      1
+</pre>
+
+<details><summary>text to video · #44 of 68 · 48% of its score</summary>
+
+Beats [Open-Sora 2.0](open-sora-2-0.md), [Wan 2.1 T2V 1.3B](wan-2-1-1-3b.md), [Mochi 1](mochi-1.md) here, though they rank higher overall.
+
+<pre>
+test                      result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2410.05677v3#S4.T1">VBench (T2V total) (lab)</a>   83.5%  █···▄●▄····▄ beats 3/5    very easy · avg 90%     48%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                              result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.22 / 10  ●··▅▃···▃··█ beats 1/8    easy · avg 7.71 / 10     42%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="paper-2410.05677v3-t2vturbo2"></a>T2V-Turbo-v2: Enhanci…  <a href="https://arxiv.org/html/2410.05677v3#S4.T1">VBench (T2V total) (lab)</a>           83.5%    40.6   2025-09-16   47% ▇▇▇▇▇▇
-<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.22 / 10    32.2   2025-02-28   43% ▇▇▇▇▇
-prior                   pull toward the middle                      49.9                10% ▇
-                        weighted average                          = 38.0
+source                                    results  share of the score
+<a name="paper-2410.05677v3-t2vturbo2"></a><a href="https://arxiv.org/html/2410.05677v3#S4.T1">T2V-Turbo-v2: Enhancing Video Generatio…</a>        1   48% ▇▇▇▇▇▇
+<a name="video-worldmodelbench"></a><a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench: Judging Video Generati…</a>        1   42% ▇▇▇▇▇
+prior: pull toward the middle                       10% ▇
+weighted average                                   = 37.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: T2V-Turbo-v2: Enhancing Video Generation Model Post-Training through Data ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt))</sub>
 
@@ -32,17 +59,21 @@ api (Replicate) · price unknown · [replicate.com](https://replicate.com/chenxw
 
 <pre>
 version                                     needs  score
-fp32 · nvidia only                         ~9.4GB   38.0
-fp32 checkpoints (official Gradio demo,…  ~16.2GB   38.0
+fp32 · nvidia only                         ~9.4GB   37.9
+fp32 checkpoints (official Gradio demo,…  ~16.2GB   37.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 · nvidia only
+# fp32 · nvidia only · ~9.4GB
 git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-v2 unet_mg.pt --local-dir t2v-turbo-v2 && python app.py --unet_dir t2v-turbo-v2/unet_mg.pt --base_model_dir vc2/model.ckpt --version v2 --motion_gs 0.0
-# fp32 checkpoints (official Gradio demo, MPS) · mac only
+# fp32 checkpoints (official Gradio demo, MPS) · mac only · ~16.2GB
 git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-v2 unet_mg.pt --local-dir t2v-turbo-v2 && sed -i '' 's/^device = "cuda"/device = "mps"/' app.py && python app.py --unet_dir t2v-turbo-v2/unet_mg.pt --base_model_dir vc2/model.ckpt --version v2 --motion_gs 0.0
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/t2v-turbo-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

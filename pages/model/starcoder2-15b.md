@@ -6,36 +6,72 @@
 
 BigCode · released 2024-02 · 15.96B params · bigcode-openrail-m
 
-**score 38.7** ±0.5 · #721 of 934 · from 17 benchmark results across 5 sources
+**score 38.8** ±0.5 · #729 of 949 · from 17 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks StarCoder2 15B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁▃●██▇▆▄▃▁    #398 of 469     88%      9
+math    ▁▂▃▅●▅▄█▄▁▁▁   #286 of 400*    1.9%      1
+</pre>
+
+<details><summary>coding · #398 of 469 · 88% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            46.3%  ▁·▁▁▃▄●▅█▃▁▁ beats 30/99  easy · avg 79%       47%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           37.8%  ▁·▁▁▁▃●▄▄█▃▁ beats 27/99  easy · avg 74%       18%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 51.2%  █·▅▃▃▃▅▃▃▅·● beats 14/15  easy · avg 82%      5.6%  at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   44.4%  ▁·▂▁▂▆▅█●▄▁▂ beats 26/35  medium · avg 64%    4.7%  at its level
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        33.8%  ▄▄·▄██▄█·●·▄ beats 10/12  medium · avg 52%    2.9%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   17.0%  ▄▇●▃▄▇▄▁▇▃·▁ beats 12/35  medium · avg 49%    2.8%  typical
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           47.4%  ▃▅█▃▃▅·▃▃▅·● beats 14/15  medium · avg 59%    2.7%  at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   21.9%  ▁·▁▁▄██●█▁▅▅ beats 20/35  medium · avg 56%    2.6%  sharp
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           46.7%  ▃·▃██▅▃·▃▃▅● beats 15/15  medium · avg 55%    2.2%  blunt · at its level · several runs
+</pre>
+
+</details>
+
+<details><summary>math · #286 of 400 · 1.9% of its score</summary>
+
+Beats [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
+
+<pre>
+test         result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>   65.1%  ▄▄▄·▄█·██·█● beats 12/12  easy · avg 75%    1.9%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                           result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               29.0%  ▂▂▃▄●█▁▄▅▃▁▃ beats 13/42  medium · avg 55%    6.9%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   38.3%  ▂▁▁▄▂▅●█▆▂▂▂ beats 22/58  medium · avg 50%    2.8%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       46.3%    38.1   2024-12-26   26% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      37.8%    37.2   2024-12-26   19% ▇▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       45.1%    38.5   2024-03-28   13% ▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               29.0%    38.2   2024-03-28    7% ▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 46.3%    38.4   2024-02-29    8% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      66.2%    39.6   2024-02-29    3% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   33.8%    40.4   2024-02-29    3% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     65.1%    46.0   2024-02-29    2% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-I (lab)</a>                48.1%    44.3   2024-02-29    1% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                47.1%    45.6   2024-02-29    0% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.4%    40.6   2024-05-07    4% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  17.0%    34.2   2024-05-07    3% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            51.2%    40.6   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  21.9%    38.1   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      47.4%    43.1   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      46.7%    43.9   2024-05-07    2% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   38.3%    42.5   2025-04-01    2% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 38.7
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   43% ▇▇▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   20% ▇▇
+<a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        6   17% ▇▇
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   16% ▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        1    3% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 38.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -44,18 +80,73 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/bigcode/starcoder2-15b/blob/46d44742909c03ac8cee08eb03fdebce02e193ec/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download        size  score
-4-bit q4_k_m  ~9.9GB   38.7
-8-bit q8_0     ~17GB   38.7
+download                     size  score
+4-bit q4_k_m               ~9.9GB   38.8
+8-bit q8_0                  ~17GB   38.8
+4-bit Q4_K_M               ~9.9GB   38.8
+8-bit Q8_0                  ~17GB   38.8
+4-bit mlx-4bit · mac only    ~9GB   38.8
+4-bit mlx-8bit · mac only   ~17GB   38.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run starcoder2:15b-q4_K_M
-# 8-bit q8_0
-ollama run starcoder2:15b-q8_0
+# 4-bit Q4_K_M · ~9.9GB
+llama cli -hf second-state/StarCoder2-15B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf second-state/StarCoder2-15B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~17GB
+llama cli -hf second-state/StarCoder2-15B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf second-state/StarCoder2-15B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~9.9GB
+lms get https://huggingface.co/second-state/StarCoder2-15B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~17GB
+lms get https://huggingface.co/second-state/StarCoder2-15B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~9GB
+lms get https://huggingface.co/mlx-community/bigcode-starcoder2-15b-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~17GB
+lms get https://huggingface.co/mlx-community/bigcode-starcoder2-15b-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~9.9GB
+ollama run starcoder2:15b-q4_K_M
+# 8-bit q8_0 · ~17GB
+ollama run starcoder2:15b-q8_0
+# 4-bit Q4_K_M · ~9.9GB
+ollama run hf.co/second-state/StarCoder2-15B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~17GB
+ollama run hf.co/second-state/StarCoder2-15B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~9GB
+mlx_lm.chat --model mlx-community/bigcode-starcoder2-15b-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/bigcode-starcoder2-15b-4bit
+# 4-bit mlx-8bit · mac only · ~17GB
+mlx_lm.chat --model mlx-community/bigcode-starcoder2-15b-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/bigcode-starcoder2-15b-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/starcoder2-15b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

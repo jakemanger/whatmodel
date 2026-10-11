@@ -6,20 +6,38 @@
 
 Amazon · released 2025-11 · closed weights
 
-**score 66.6** ±6.5 · #125 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 66.3** ±6.7 · #132 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Nova 2 Omni (Preview) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ▁▁▃▆█▆▅●▄▃▂▁   #105 of 334*     80%      1
+</pre>
+
+<details><summary>agent tasks · #105 of 334 · 80% of its score</summary>
+
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user) …</a>   75.7%  ▂··▄···▂▄●█▄ beats 6/13   medium · avg 45%     80%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source      test                            score  implies  date        weight
-<a name="amazon-tau2-verified"></a>Amazon AGI  <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>  75.7%    70.4   2026-09-25   81% ▇▇▇▇▇▇▇▇▇▇
-prior       pull toward the middle                   50.0                19% ▇▇
-            weighted average                       = 66.6
+source                         results  share of the score
+<a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI (lab)</a>                     1   80% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            20% ▇▇
+weighted average                        = 66.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt))</sub>
 

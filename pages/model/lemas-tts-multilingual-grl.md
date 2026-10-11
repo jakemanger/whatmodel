@@ -6,22 +6,37 @@
 
 LEMAS Project · released 2026-01 · cc-by-4.0
 
-**score 50.0** ±6.1 · #65 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 50.1** ±6.1 · #66 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LEMAS-TTS (w/o prosody, multilingual\_grl) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-lemas-report-bysa"></a>LEMAS multilingual au…  <a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual TTS eval ·…</a>   5.7%    50.1   2026-01-04   85% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.7                15% ▇▇
-                        weighted average                       = 50.0
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual TTS eval · 9-l…</a>    5.7%  █········●·█ beats 1/2    avg 5.9%       85%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-lemas-report-bysa"></a><a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual audio suite report (…</a>        1   85% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       15% ▇▇
+weighted average                                   = 50.1
+</pre>
 
 <sub>Licences: LEMAS multilingual audio suite report ([CC BY-SA 4.0](../../licenses/speech-lemas-report-bysa.txt))</sub>
 
@@ -29,14 +44,18 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                                    needs  score
-official checkpoint (LEMAS-TTS repo, F5…  ~1.4GB   50.0
+official checkpoint (LEMAS-TTS repo, F5…  ~1.4GB   50.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# official checkpoint (LEMAS-TTS repo, F5-TTS-based)
+# official checkpoint (LEMAS-TTS repo, F5-TTS-based) · ~1.4GB
 git clone https://github.com/LEMAS-Project/LEMAS-TTS.git && cd LEMAS-TTS && pip install -r requirements.txt && hf download LEMAS-Project/LEMAS-TTS --include "pretrained_models/*" --local-dir . && PYTHONPATH=$PWD python -m lemas_tts.scripts.tts_multilingual --model multilingual_grl --ckpt_file pretrained_models/ckpts/multilingual_grl/multilingual_grl.safetensors --vocab_file pretrained_models/data/multilingual_grl/vocab.txt --frontend phone --use_ema --ref_audio pretrained_models/demos/lemas_tts_test/es.wav --ref_text "Te voy a dar un tip que le copié a John Rockefeller, uno de los empresarios más picudos de la historia. " --text "I want to give you a tip I copied from John Rockefeller." --output_wave out.wav --nfe_step 64 --cfg_strength 5.0 --sway_sampling_coef 3.0 --ref_ratio 1.0 --separate_langs --speed 1.0 --seed -1
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/lemas-tts-multilingual-grl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,36 +6,91 @@
 
 EPFL LLM · released 2023-11 · 68.98B params · llama2
 
-**score 36.9** ±4.2 · #761 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 38.4** ±4.2 · #744 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Meditron 70B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   15.7%  ▁▁▁●▁▂▂▃▄▆█▃ beats 4/97   hard · avg 32%       64%  blunt
+<a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   56.5%  ▂···▂▂·▃▂▃●█ beats 8/17   medium · avg 53%     28%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  15.7%    28.3   2025-04-28   69% ▇▇▇▇▇▇▇▇
-<a name="paper-2606.08071v1-surgiq"></a>SurgiQ: A Large-Scale…  <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-sho…</a>  56.5%    58.1   2026-06-06   23% ▇▇▇
-prior                   pull toward the middle                   50.0                 8% ▇
-                        weighted average                       = 36.9
+source                                    results  share of the score
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1   64% ▇▇▇▇▇▇▇▇
+<a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1   28% ▇▇▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 38.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
-download          size  score
-16-bit bf16  ~137.95GB   36.9
+download           size  score
+16-bit bf16   ~137.95GB   38.4
+4-bit Q4_K_M    ~41.4GB   38.4
+2-bit Q2_K      ~29.3GB   38.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='epfl-llm/meditron-70b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~41.4GB
+llama cli -hf TheBloke/meditron-70B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/meditron-70B-GGUF:Q4_K_M
+# 2-bit Q2_K · ~29.3GB
+llama cli -hf TheBloke/meditron-70B-GGUF:Q2_K
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/meditron-70B-GGUF:Q2_K
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~41.4GB
+lms get https://huggingface.co/TheBloke/meditron-70B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit Q2_K · ~29.3GB
+lms get https://huggingface.co/TheBloke/meditron-70B-GGUF@Q2_K -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~41.4GB
+ollama run hf.co/TheBloke/meditron-70B-GGUF:Q4_K_M
+# 2-bit Q2_K · ~29.3GB
+ollama run hf.co/TheBloke/meditron-70B-GGUF:Q2_K
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~137.95GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='epfl-llm/meditron-70b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/meditron-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

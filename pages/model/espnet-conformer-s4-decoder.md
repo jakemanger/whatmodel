@@ -6,23 +6,38 @@
 
 ESPnet · released 2022-12 · 0.1132B params · cc-by-4.0
 
-**score 45.2** ±3.7 · #121 of 160 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 44.8** ±3.9 · #123 of 162 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks ESPnet Conformer + S4 decoder (no LM) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  weight
-<a name="speech-espnet-librispeech-20260929"></a>ESPnet LibriSpeech AS…  <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (l…</a>   5.0%    45.1    74% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   2.3%    44.5    20% ▇▇
-prior                   pull toward the middle                   49.8     5% ▇
-                        weighted average                       = 45.2
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                              result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (lab)</a>    5.0%  █▃▃·▃●·▅···▅ beats 7/11   avg 3.7%       73%  typical
+<a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (lab)</a>    2.3%  █··▃▃●▅▃···▅ beats 5/11   avg 1.9%       21%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-espnet-librispeech-20260929"></a><a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">ESPnet LibriSpeech ASR recipe results (…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 44.8
+</pre>
 
 <sub>Licences: ESPnet LibriSpeech ASR recipe results ([Apache-2.0](../../licenses/speech-espnet-librispeech-20260929.txt))</sub>
 
@@ -30,14 +45,18 @@ prior                   pull toward the middle                   49.8     5% ▇
 
 <pre>
 version     needs  score
-fp32 · CPU   ~8GB   45.2
+fp32 · CPU   ~8GB   44.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 · CPU
+# fp32 · CPU · ~8GB
 uv run --python 3.10 --with espnet --with espnet_model_zoo --with librosa python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained(model_tag='espnet/kmiyazaki_librispeech_asr_s4_decoder', lm_weight=0); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/espnet-conformer-s4-decoder) · [JSON](https://whatmodel.sh/api?format=json&all=1)

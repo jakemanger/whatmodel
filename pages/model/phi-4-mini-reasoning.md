@@ -6,25 +6,53 @@
 
 Microsoft · released 2025-04 · 3.8B params · mit
 
-**score 46.7** ±2.2 · #524 of 934 · from 6 benchmark results across 3 sources
+**score 47.0** ±2.2 · #521 of 949 · from 6 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Phi-4-mini-reasoning 3.8B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others          rank  counts  tests
+math  ▁▂▃▅▆▅●█▄▁▁▁   #180 of 400*     32%      2
+</pre>
+
+<details><summary>math · #180 of 400 · 32% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall.
+
+<pre>
+test             result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024 (lab)</a>   57.5%  ▁▁▁▂▁▃▁●███▃ beats 27/85  medium · avg 53%        25%  sharp · at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500 (lab)</a>    94.6%  ▁▃▂▃▅▇▅●█▅▂▁ beats 52/84  very easy · avg 87%    6.8%  noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond (lab)</a>                   52.0%  ▁▁▁▁▂▄●▅███▄ beats 93/310  hard · avg 51%       32%  sharp · at its level
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   21.3%  ▁▁▁▁▁●▂▃▄▆█▃ beats 14/97   hard · avg 32%       20%  blunt · at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   41.0%  ▃·▁▁▂●▂▅█▇▄▁ beats 22/100  medium · avg 68%    7.7%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   55.7%  ▁▁▁▁▁▁▁●▄█▄▃ beats 26/146  easy · avg 83%      5.5%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card-microsoft-phi-4-mini-reasoning"></a>microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond (lab)</a>              52.0%    52.0   2026-09-25   31% ▇▇▇▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024 (lab)</a>                 57.5%    52.5   2026-09-25   25% ▇▇▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500 (lab)</a>                  94.6%    57.0   2026-09-25    6% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  21.3%    37.3   2025-04-28   22% ▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  41.0%    36.8   2026-04-17    8% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  55.7%    29.9   2026-04-17    6% ▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 46.7
+source                                    results  share of the score
+<a name="card-microsoft-phi-4-mini-reasoning"></a><a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">microsoft/Phi-4-mini-reasoning model ca…</a>        3   64% ▇▇▇▇▇▇▇▇
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1   20% ▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   13% ▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 47.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: microsoft/Phi-4-mini-reasoning model card ([MIT](../../licenses/card-microsoft-phi-4-mini-reasoning.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -35,21 +63,70 @@ api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens �
 <sub>[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft): USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (Microsoft models table), 'Phi-4-mini-reasoning' (GA), 128K context: input $0.075, output $0.30, region US East. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25. · [context source](https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md): Microsoft official model card: Phi-4-mini-reasoning context length 128K tokens (stated rounded). Observed 2026-09-25.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~2.49GB   46.7
-8-bit q8_0    ~4.08GB   46.7
-4-bit q4_k_m  ~3.15GB   46.7
+download                      size  score
+4-bit q4_k_m               ~2.49GB   47.0
+8-bit q8_0                 ~4.08GB   47.0
+4-bit q4_k_m               ~3.15GB   47.0
+4-bit mlx-4bit · mac only   ~2.2GB   47.0
+4-bit mlx-8bit · mac only   ~4.1GB   47.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf unsloth/Phi-4-mini-reasoning-GGUF:Q4_K_M
-# 8-bit q8_0
-llama-server -hf unsloth/Phi-4-mini-reasoning-GGUF:Q8_0
-# 4-bit q4_k_m
+# 4-bit q4_k_m · ~2.49GB
+llama cli -hf unsloth/Phi-4-mini-reasoning-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Phi-4-mini-reasoning-GGUF:Q4_K_M
+# 8-bit q8_0 · ~4.08GB
+llama cli -hf unsloth/Phi-4-mini-reasoning-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Phi-4-mini-reasoning-GGUF:Q8_0
+```
+
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~2.49GB
+lms get https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~4.08GB
+lms get https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~2.2GB
+lms get https://huggingface.co/lmstudio-community/Phi-4-mini-reasoning-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~4.1GB
+lms get https://huggingface.co/mlx-community/Phi-4-mini-reasoning-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~2.49GB
+ollama run hf.co/unsloth/Phi-4-mini-reasoning-GGUF:Q4_K_M
+# 8-bit q8_0 · ~4.08GB
+ollama run hf.co/unsloth/Phi-4-mini-reasoning-GGUF:Q8_0
+# 4-bit q4_k_m · ~3.15GB
 ollama run phi4-mini-reasoning:3.8b
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~2.2GB
+mlx_lm.chat --model lmstudio-community/Phi-4-mini-reasoning-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Phi-4-mini-reasoning-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~4.1GB
+mlx_lm.chat --model mlx-community/Phi-4-mini-reasoning-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Phi-4-mini-reasoning-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/phi-4-mini-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

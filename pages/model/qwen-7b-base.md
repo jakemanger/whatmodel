@@ -6,30 +6,46 @@
 
 Alibaba · released 2023-08 · 7.72B params · other (tongyi-qianwen-license-agreement)
 
-**score 32.2** ±0.9 · #824 of 934 · from 11 benchmark results across 2 sources
+**score 31.7** ±0.9 · #844 of 949 · from 11 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Qwen-7B (base) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (11)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">ARC Challenge</a>                        49.1%  ▁·▁··▁▁▇▂█▆● beats 24/26   easy · avg 85%          49%  sharp · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">WinoGrande</a>                           66.0%  ▁····▁··▁▂●▄ beats 14/26   easy · avg 89%          12%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">BoolQ</a>                                74.6%  ▂▃▂▅▆▂▅▆●▂▂▂ beats 21/26   easy · avg 91%         9.0%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">ARC Easy</a>                             65.2%  ▁▁·▁▁▄▅●█▅▁▃ beats 13/26   easy · avg 88%         6.2%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">HellaSwag</a>                            88.8%  ▃···▁▇▅█▇▃▁● beats 26/26   very easy · avg 92%    4.9%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">SciQ</a>                                 93.2%  ▁·▁·▁·▃▅▃●▄▁ beats 15/26   very easy · avg 98%    4.3%  maxed out
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">OpenBookQA</a>                           32.2%  █·▁▁▃·▁▃▅●▃▄ beats 21/26   medium · avg 53%       4.0%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">PIQA</a>                                 74.0%  ▁·▁··▁▁●█▅█▂ beats 5/26    easy · avg 88%         4.0%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">Social IQA</a>                           49.4%  ▁···▁▃█▁▁●·▁ beats 25/26   medium · avg 59%       2.5%  blunt
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">LAMBADA (OpenAI version), last-wo…</a>   69.7%  ▁··▂▁▁▁▂▆●▅▃ beats 13/26   very easy · avg 89%    2.3%  blunt · at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   58.1%  ▃▁▁▁▁▁▁▁●█▅▁ beats 85/276  medium · avg 73%       1.2%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">ARC Challenge</a>                   49.1%    33.2   2024-04-08   51% ▇▇▇▇▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">WinoGrande</a>                      66.0%    28.1   2024-04-08   11% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">BoolQ</a>                           74.6%    31.9   2024-04-08    8% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">OpenBookQA</a>                      32.2%    32.7   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">ARC Easy</a>                        65.2%    26.1   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">HellaSwag</a>                       88.8%    42.7   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">SciQ</a>                            93.2%    29.7   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">PIQA</a>                            74.0%    22.1   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">Social IQA</a>                      49.4%    37.8   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">LAMBADA (OpenAI version), las…</a>  69.7%    27.5   2024-04-08    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  58.1%    40.0   2024-02-05    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 32.2
+source                           results  share of the score
+<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json">Stability AI</a>                          10   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    1% ▇
+prior: pull toward the middle               0% ▇
+weighted average                          = 31.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -38,15 +54,54 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/Qwen/Qwen-7B/blob/ef3c5c9c57b252f3149c1408daf4d649ec8b6c85/config.json): Alibaba official configuration for Qwen-7B (pinned commit ef3c5c9): max\_position\_embeddings 32768. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-16-bit bf16  ~15.44GB   32.2
+download          size  score
+16-bit bf16   ~15.44GB   31.7
+4-bit Q4_K_M    ~4.9GB   31.7
+8-bit Q8_0      ~8.2GB   31.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Qwen/Qwen-7B', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~4.9GB
+llama cli -hf mradermacher/Qwen-7B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Qwen-7B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.2GB
+llama cli -hf mradermacher/Qwen-7B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Qwen-7B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.9GB
+lms get https://huggingface.co/mradermacher/Qwen-7B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.2GB
+lms get https://huggingface.co/mradermacher/Qwen-7B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.9GB
+ollama run hf.co/mradermacher/Qwen-7B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.2GB
+ollama run hf.co/mradermacher/Qwen-7B-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~15.44GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Qwen/Qwen-7B', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/qwen-7b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

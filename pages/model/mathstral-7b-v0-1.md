@@ -6,23 +6,52 @@
 
 Mistral AI · released 2024-07 · 7.25B params · apache-2.0
 
-**score 42.4** ±1.4 · #654 of 934 · from 4 benchmark results across 4 sources
+**score 42.3** ±1.4 · #663 of 949 · from 4 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Mathstral 7B v0.1 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others          rank  counts  tests
+math  ▁▂▃●▆▅▄█▄▁▁▁   #306 of 400*    4.8%      1
+</pre>
+
+<details><summary>math · #306 of 400 · 4.8% of its score</summary>
+
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">MATH (subset unspecified) (lab)</a>   56.6%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 33/80  easy · avg 66%    4.8%  at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 24.5%  ▁▁▁▂▂▃●█▆▃▅▃ beats 18/61  medium · avg 41%     57%  at its level
+<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_mathstral-7B_5shots.zip">MMLU-Pro</a>                             42.0%  ▃▂▅●▃·█▃▅··▂ beats 9/23   medium · avg 57%     26%  at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>    9.0%  ▁▁●▆██▁▁·▁▁▁ beats 7/57   hard · avg 18%       11%  sharp · too hard for it
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            24.5%    41.4   2024-10-22   55% ▇▇▇▇▇▇▇
-<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_mathstral-7B_5shots.zip">MMLU-Pro</a>                        42.0%    42.6                29% ▇▇▇▇
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   9.0%    44.8                11% ▇
-<a name="first-party-mistral-scores"></a>Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">MATH (subset unspecified) (la…</a>  56.6%    47.1   2024-07-16    4% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 42.4
+source                                    results  share of the score
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   57% ▇▇▇▇▇▇▇
+<a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_mathstral-7B_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1   26% ▇▇▇
+<a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">WildEval ZeroEval published results</a>             1   11% ▇
+<a name="first-party-mistral-scores"></a><a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">Mistral AI vendor-reported benchmark sc…</a>        1    5% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 42.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt))</sub>
 
@@ -31,18 +60,73 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://docs.mistral.ai/models/mathstral-7b-0-1): Context limit from the maker's documentation, observed 2026-10-06.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~4.85GB   42.4
-8-bit q8_0     ~9.2GB   42.4
+download                      size  score
+4-bit q4_k_m               ~4.85GB   42.3
+8-bit q8_0                  ~9.2GB   42.3
+4-bit Q4_K_M                ~4.4GB   42.3
+8-bit Q8_0                  ~7.7GB   42.3
+4-bit mlx-4bit · mac only   ~4.1GB   42.3
+4-bit mlx-8bit · mac only   ~7.7GB   42.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run mathstral:7b-v0.1-q4_K_M
-# 8-bit q8_0
-ollama run mathstral:7b-v0.1-q8_0
+# 4-bit Q4_K_M · ~4.4GB
+llama cli -hf lmstudio-community/mathstral-7B-v0.1-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/mathstral-7B-v0.1-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.7GB
+llama cli -hf lmstudio-community/mathstral-7B-v0.1-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/mathstral-7B-v0.1-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.4GB
+lms get https://huggingface.co/lmstudio-community/mathstral-7B-v0.1-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~7.7GB
+lms get https://huggingface.co/lmstudio-community/mathstral-7B-v0.1-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.1GB
+lms get https://huggingface.co/mlx-community/mathstral-7B-v0.1-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~7.7GB
+lms get https://huggingface.co/mlx-community/mathstral-7B-v0.1-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~4.85GB
+ollama run mathstral:7b-v0.1-q4_K_M
+# 8-bit q8_0 · ~9.2GB
+ollama run mathstral:7b-v0.1-q8_0
+# 4-bit Q4_K_M · ~4.4GB
+ollama run hf.co/lmstudio-community/mathstral-7B-v0.1-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.7GB
+ollama run hf.co/lmstudio-community/mathstral-7B-v0.1-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.1GB
+mlx_lm.chat --model mlx-community/mathstral-7B-v0.1-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/mathstral-7B-v0.1-4bit
+# 4-bit mlx-8bit · mac only · ~7.7GB
+mlx_lm.chat --model mlx-community/mathstral-7B-v0.1-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/mathstral-7B-v0.1-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/mathstral-7b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

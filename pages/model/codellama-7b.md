@@ -6,56 +6,87 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 34.0** ±0.5 · #802 of 934 · from 37 benchmark results across 8 sources
+**score 33.9** ±0.5 · #816 of 949 · from 37 benchmark results across 8 sources
+
+## What it's good at
+
+<sub>● marks Code Llama 7B (base) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃●██▇▆▄▃▁   #419 of 469     80%     11
+math    ▁●▃▅▆▅▄█▄▁▁▁   #393 of 400    6.6%      2
+</pre>
+
+<details><summary>coding · #419 of 469 · 80% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            37.8%  ▁·▁▁▃●▆▅█▃▁▁ beats 22/99  easy · avg 79%          36%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           35.4%  ▁·▁▁▁▃●▄▄█▃▁ beats 23/99  easy · avg 74%          14%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 39.0%  █·▅▃▃●▅▃▃▅·▅ beats 7/15   easy · avg 82%         9.4%  at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.2%  ▁·▂▁▂●▅█▄▄▁▂ beats 8/35   medium · avg 64%       3.9%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                46.8%  ▁···▁▁▂●▇█▆▂ beats 16/75  easy · avg 68%         3.0%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>                     35.9%  ▁··▁▅●█▇▁··▁ beats 6/22   medium · avg 59%       2.7%  at its level · several runs
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                              21.5%  ▄▄·▄●█▄█·█·▄ beats 3/12   medium · avg 52%       2.3%  typical
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>                     34.2%  ▁·▂●▁█▁▂···▁ beats 6/22   medium · avg 55%       2.3%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   13.9%  ▄●█▃▄▇▄▁▇▃·▁ beats 7/35   medium · avg 49%       2.1%  typical
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            58.7%  ▃▃▃·▆●▃█▃▂▂▅ beats 10/25  very easy · avg 86%    2.0%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   14.2%  ▁·▁▁▄█●▄█▁▅▅ beats 13/35  medium · avg 56%       1.7%  sharp
+</pre>
+
+</details>
+
+<details><summary>math · #393 of 400 · 6.6% of its score</summary>
+
+Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Granite 3.1 1B-A400M Instruct](granite-3-1-1b-a400m.md) here, though they rank lower overall.
+
+<pre>
+test   result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   12.0%  ●▂▅█▅▅▃▆···▂ beats 1/25   easy · avg 75%    4.7%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">MATH</a>     4.1%  ▃·●····▃···█ beats 1/5    hard · avg 30%    1.9%  several runs
+</pre>
+
+</details>
+
+<details><summary>other tests (11)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       43.4%  ▁·····▂●▂▅·▁ beats 4/25   easy · avg 77%         3.0%  sharp
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              28.7%  ▂▁▁●▂▅▇█▆▂▂▂ beats 8/58   medium · avg 50%       2.3%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 33.8%  ●▁▃▃▄█▄▁█··▁ beats 0/25   easy · avg 74%         2.1%  at its level · several runs
+<a href="https://arxiv.org/html/2310.06825v1#S3.T2">ARC Challenge</a>                        34.5%  ▆▁▁▂▂●▇█▄▃▃▂ beats 29/97  easy · avg 80%         1.5%  sharp · at its level
+<a href="https://arxiv.org/html/2310.06825v1#S3.T2">WinoGrande</a>                           62.3%  ▁···▂▁▁●█▇▃▁ beats 30/87  easy · avg 87%         0.9%  at its level
+<a href="https://arxiv.org/html/2310.06825v1#S3.T2">Natural Questions (closed book)</a>      11.0%  ▁·▁·▁▂▁▂●▄▃█ beats 10/33  medium · avg 57%       0.9%  typical
+<a href="https://arxiv.org/html/2310.06825v1#S3.T2">HellaSwag</a>                            62.9%  ▁▁▁▁▂▂▃●█▆▅▃ beats 27/85  very easy · avg 90%    0.6%  at its level
+<a href="https://arxiv.org/html/2310.06825v1#S3.T2">TriviaQA</a>                             34.9%  ▁·▁▁▄▁▂▂●▁▂█ beats 16/38  easy · avg 85%         0.5%  at its level · noisy
+<a href="https://arxiv.org/html/2310.06825v1#S3.T2">ARC Easy</a>                             59.4%  ▁▂▃▂▃▅●█▇▆▄▆ beats 20/65  easy · avg 88%         0.4%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   47.6%  ▂··▁▃▂▂●█▅▁▂ beats 11/25  medium · avg 61%       0.4%  blunt · at its level
+<a href="https://arxiv.org/html/2310.06825v1#S3.T2">PIQA</a>                                 72.8%  ▁▁▁▃▃●▇█▄▃▁▁ beats 24/83  easy · avg 87%         0.3%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       37.8%    35.4   2024-12-26   23% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      35.4%    36.4   2024-12-26   15% ▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           46.8%    36.8   2024-12-26    3% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  31.2%    33.9   2024-05-07    4% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            39.0%    34.4   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  13.9%    31.3   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      36.2%    35.2   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  14.2%    33.9   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      34.0%    33.3   2024-05-07    1% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                           11.9%    24.1   2024-05-07    1% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                             4.1%    25.0   2024-05-07    1% ▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                       33.5%    34.1   2024-02-29    7% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                            52.1%    32.2   2024-02-29    3% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                         21.5%    32.2   2024-02-29    2% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                           27.0%    31.6   2024-02-29    2% ▇
-<a name="paper-2310.06825v1"></a>Mistral 7B              <a href="https://arxiv.org/html/2310.06825v1#S3.T2">HumanEval</a>                       31.1%    37.1   2023-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1#S3.T2">ARC Challenge</a>                   34.5%    26.0   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1#S3.T2">GSM8K</a>                           20.8%    27.1   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1#S3.T2">MATH</a>                             5.2%    28.4   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1#S3.T2">MMLU</a>                            36.9%    24.8   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1#S3.T2">WinoGrande</a>                      62.3%    24.8   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1#S3.T2">MBPP</a>                            52.5%    40.5   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1#S3.T2">HellaSwag</a>                       62.9%    23.8   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1#S3.T2">TriviaQA</a>                        34.9%    20.7   2023-10-10    0% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1#S3.T2">Natural Questions (closed boo…</a>  11.0%    22.0   2023-10-10    0% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1#S3.T2">ARC Easy</a>                        59.4%    17.5   2023-10-10    0% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1#S3.T2">PIQA</a>                            72.8%    21.0   2023-10-10    0% ▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 33.5%    35.6   2024-01-31    6% ▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      41.4%    33.7   2024-01-31    3% ▇
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  43.4%    33.7   2023-11-20    3% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       58.7%    38.0   2023-11-20    2% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           12.0%    26.4   2023-11-20    1% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            33.8%    25.8   2023-11-20    1% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  47.6%    39.5   2023-11-20    0% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         28.7%    35.5   2025-04-01    2% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>                35.9%    38.3   2024-01-03    1% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>                34.2%    35.7   2024-01-03    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 34.0
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   39% ▇▇▇▇▇
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        8   15% ▇▇
+<a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   14% ▇▇
+<a name="paper-2310.06825v1"></a><a href="https://arxiv.org/html/2310.06825v1#S3.T2">Mistral 7B</a>                                     12   12% ▇
+<a name="paper-2308.12950v3"></a><a href="https://arxiv.org/html/2308.12950v3">Code Llama: Open Foundation Models for …</a>        2    9% ▇
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                          5    8% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    2% ▇
+<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results (…</a>        2    2% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 33.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Mistral 7B ([CC BY 4.0](../../licenses/paper-2310.06825v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
 
@@ -64,18 +95,65 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://arxiv.org/abs/2308.12950v3): Context length from the maker's technical report.</sub>
 
 <pre>
-download        size  score
-4-bit q4_k_m  ~4.1GB   34.0
-8-bit q8_0    ~7.2GB   34.0
+download                     size  score
+4-bit q4_k_m               ~4.1GB   33.9
+8-bit q8_0                 ~7.2GB   33.9
+4-bit Q4_K_M               ~4.1GB   33.9
+8-bit Q8_0                 ~7.2GB   33.9
+4-bit mlx-4bit · mac only  ~3.8GB   33.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run codellama:7b-code-q4_K_M
-# 8-bit q8_0
-ollama run codellama:7b-code-q8_0
+# 4-bit Q4_K_M · ~4.1GB
+llama cli -hf TheBloke/CodeLlama-7B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/CodeLlama-7B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.2GB
+llama cli -hf TheBloke/CodeLlama-7B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/CodeLlama-7B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.1GB
+lms get https://huggingface.co/TheBloke/CodeLlama-7B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~7.2GB
+lms get https://huggingface.co/TheBloke/CodeLlama-7B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~3.8GB
+lms get https://huggingface.co/mlx-community/CodeLlama-7b-hf-4bit-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~4.1GB
+ollama run codellama:7b-code-q4_K_M
+# 8-bit q8_0 · ~7.2GB
+ollama run codellama:7b-code-q8_0
+# 4-bit Q4_K_M · ~4.1GB
+ollama run hf.co/TheBloke/CodeLlama-7B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.2GB
+ollama run hf.co/TheBloke/CodeLlama-7B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~3.8GB
+mlx_lm.chat --model mlx-community/CodeLlama-7b-hf-4bit-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/CodeLlama-7b-hf-4bit-mlx
+```
 
 [interactive version](https://whatmodel.sh/model/codellama-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

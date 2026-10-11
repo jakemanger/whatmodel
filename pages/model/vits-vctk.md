@@ -6,24 +6,40 @@
 
 Kakao Enterprise (Jaehyeon Kim et al.) · released 2021-06 · mit
 
-**score 34.5** ±4.6 · #99 of 117 · from 3 benchmark results across 2 sources
+**score 34.3** ±4.5 · #99 of 118 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks VITS (VCTK multi-speaker) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-vits-icml2021"></a>VITS: ICML 2021 origi…  <a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 VCTK human MOS (lab)</a>  4.38 / 5    38.4                47% ▇▇▇▇▇▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>      8.5%    28.2   2025-08-10   30% ▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       27.5%    26.5   2025-08-10   15% ▇▇
-prior                   pull toward the middle                      49.7                 8% ▇
-                        weighted average                          = 34.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty                counts  why
+<a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 VCTK human MOS (lab)</a>      4.38 / 5  █····█·····● beats 2/2    very easy · avg 4.73 / 5     46%  small run
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>      8.5%  ●▅▃▃█▅▅▃·▃·▅ beats 0/16   hard · avg 30%               30%  typical
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           27.5%  ▂●··▂▄▄··█▄▆ beats 2/16   avg 16%                      15%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-vits-icml2021"></a><a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS: ICML 2021 original listening stud…</a>        1   46% ▇▇▇▇▇▇
+<a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   45% ▇▇▇▇▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 34.3
+</pre>
 
 <sub>Licences: VITS: ICML 2021 original listening studies ([CC-BY-4.0](../../licenses/speech-vits-icml2021.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt))</sub>
 
@@ -31,14 +47,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                                     needs  score
-fp32 (jaywalnut310/vits repo) · nvidia …  ~0.16GB   34.5
+fp32 (jaywalnut310/vits repo) · nvidia …  ~0.16GB   34.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (jaywalnut310/vits repo) · nvidia only
+# fp32 (jaywalnut310/vits repo) · nvidia only · ~0.16GB
 git clone https://github.com/jaywalnut310/vits && cd vits && pip install -r requirements.txt && apt-get install espeak && cd monotonic_align && python setup.py build_ext --inplace && cd .. && python -c "import torch, commons, utils; from models import SynthesizerTrn; from text.symbols import symbols; from text import text_to_sequence; from scipy.io.wavfile import write; hps = utils.get_hparams_from_file('./configs/vctk_base.json'); net_g = SynthesizerTrn(len(symbols), hps.data.filter_length // 2 + 1, hps.train.segment_size // hps.data.hop_length, n_speakers=hps.data.n_speakers, **hps.model).cuda(); _ = net_g.eval(); _ = utils.load_checkpoint('/path/to/pretrained_vctk.pth', net_g, None); text_norm = text_to_sequence('VITS is Awesome!', hps.data.text_cleaners); text_norm = commons.intersperse(text_norm, 0) if hps.data.add_blank else text_norm; stn_tst = torch.LongTensor(text_norm); torch.set_grad_enabled(False); x_tst = stn_tst.cuda().unsqueeze(0); x_tst_lengths = torch.LongTensor([stn_tst.size(0)]).cuda(); sid = torch.LongTensor([4]).cuda(); audio = net_g.infer(x_tst, x_tst_lengths, sid=sid, noise_scale=.667, noise_scale_w=0.8, length_scale=1)[0][0,0].data.cpu().float().numpy(); write('vctk.wav', hps.data.sampling_rate, audio)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/vits-vctk) · [JSON](https://whatmodel.sh/api?format=json&all=1)

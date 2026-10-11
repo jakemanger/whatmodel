@@ -6,25 +6,52 @@
 
 Meta · released 2023-08 · 13.02B params · llama2
 
-**score 38.3** ±0.9 · #735 of 934 · from 6 benchmark results across 3 sources
+**score 38.2** ±0.9 · #749 of 949 · from 6 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Code Llama 13B Python among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃●██▇▆▄▃▁   #397 of 469     79%      4
+</pre>
+
+<details><summary>coding · #397 of 469 · 79% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
+
+<pre>
+test              result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>          42.7%  ▁█▄▅●█·▄▇▅▄▄ beats 14/42  easy · avg 78%       63%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>         49.0%  ▃▃▃●··▃▅··▅▃ beats 4/11   easy · avg 73%       10%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>   39.7%  ▁··▁▅▂●▇▁··▁ beats 11/22  medium · avg 54%    3.0%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>   39.8%  ▁·▂▃▁●▁▂···▁ beats 10/22  medium · avg 53%    2.9%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   29.4%  ▂▂▃▄●█▁▄▅▃▁▃ beats 15/42  medium · avg 55%     21%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               42.7%    37.7   2024-03-28   42% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       29.4%    38.4   2024-03-28   21% ▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         43.3%    38.8   2024-01-31   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              49.0%    37.5   2024-01-31   10% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>        39.7%    40.7   2024-01-03    3% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>        39.8%    40.2   2024-01-03    3% ▇
-prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 38.3
+source                                    results  share of the score
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   62% ▇▇▇▇▇▇▇
+<a name="paper-2308.12950v3"></a><a href="https://arxiv.org/html/2308.12950v3">Code Llama: Open Foundation Models for …</a>        2   32% ▇▇▇▇
+<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results (…</a>        2    6% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 38.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
 
@@ -33,18 +60,52 @@ prior                   pull toward the middle           50.0                 0%
 <sub>[context source](https://arxiv.org/abs/2308.12950v3): Context length from the maker's technical report.</sub>
 
 <pre>
-download        size  score
-4-bit q4_k_m  ~7.9GB   38.3
-8-bit q8_0     ~14GB   38.3
+download         size  score
+4-bit q4_k_m   ~7.9GB   38.2
+8-bit q8_0      ~14GB   38.2
+4-bit Q4_K_M   ~7.9GB   38.2
+8-bit Q8_0    ~13.8GB   38.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run codellama:13b-python-q4_K_M
-# 8-bit q8_0
-ollama run codellama:13b-python-q8_0
+# 4-bit Q4_K_M · ~7.9GB
+llama cli -hf mradermacher/CodeLlama-13b-Python-hf-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/CodeLlama-13b-Python-hf-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+llama cli -hf mradermacher/CodeLlama-13b-Python-hf-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/CodeLlama-13b-Python-hf-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~7.9GB
+lms get https://huggingface.co/mradermacher/CodeLlama-13b-Python-hf-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~13.8GB
+lms get https://huggingface.co/mradermacher/CodeLlama-13b-Python-hf-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~7.9GB
+ollama run codellama:13b-python-q4_K_M
+# 8-bit q8_0 · ~14GB
+ollama run codellama:13b-python-q8_0
+# 4-bit Q4_K_M · ~7.9GB
+ollama run hf.co/mradermacher/CodeLlama-13b-Python-hf-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+ollama run hf.co/mradermacher/CodeLlama-13b-Python-hf-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/codellama-13b-python) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,27 +6,62 @@
 
 Open Thoughts · released 2025-02 · 32.76B params · apache-2.0
 
-**score 54.7** ±1.3 · #318 of 934 · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 54.6** ±1.3 · #330 of 949 · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks OpenThinker 32B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁▃▆██●▆▄▃▁   #180 of 469*    4.6%      1
+math    ▁▂▃▅▆▅●█▄▁▁▁    #182 of 400     59%      3
+</pre>
+
+<details><summary>coding · #180 of 469 · 4.6% of its score</summary>
+
+Beats [Qwen3.5 9B](qwen3-5-9b.md), [Devstral 2 (2512)](devstral-2.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
+
+<pre>
+test                    result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">LiveCodeBench v2 (lab)</a>   68.9%  ▄··█·▄···▄●█ beats 5/7    medium · avg 59%    4.6%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · #182 of 400 · 59% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
+
+<pre>
+test             result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (lab)</a>   68.0%  ▁▁▁▂▁▃▁▅●██▃ beats 34/85   medium · avg 56%        27%  sharp · at its level · several runs
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>    90.6%  ▁▃▂▃▅▇●▇█▅▂▁ beats 41/84   very easy · avg 86%     18%  several runs
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>   49.3%  ▁·▁▁▁▂▅●█▇▅▁ beats 35/133  medium · avg 38%        15%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>   63.5%  ▁▁▁▁▂▄▅●███▄ beats 122/310  medium · avg 52%     35%  sharp · at its level · several runs
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="card3-open-thoughts-openthinker2-32b"></a>open-thoughts/OpenThi…  <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>      63.5%    54.8   2025-06-05   21% ▇▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>         49.3%    53.7   2025-06-05   15% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (lab)</a>         68.0%    54.0   2025-06-05   14% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>          90.6%    55.5   2025-06-05    9% ▇
-<a name="card3-open-thoughts-openthinker-32b"></a>open-thoughts/OpenThi…  <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">GPQA Diamond (lab)</a>      61.6%    56.0   2025-06-05   14% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">AIME 2024 (lab)</a>         66.0%    53.3   2025-06-05   13% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">MATH-500 (lab)</a>          90.6%    55.5   2025-06-05    8% ▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">LiveCodeBench v2 (lab)</a>  68.9%    57.1   2025-06-05    5% ▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 54.7
+source                                    results  share of the score
+<a name="card3-open-thoughts-openthinker2-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">open-thoughts/OpenThinker2-32B model ca…</a>        4   60% ▇▇▇▇▇▇▇
+<a name="card3-open-thoughts-openthinker-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">open-thoughts/OpenThinker-32B model car…</a>        4   40% ▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 54.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: open-thoughts/OpenThinker2-32B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · open-thoughts/OpenThinker-32B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -35,15 +70,70 @@ prior                   pull toward the middle           50.0                 1%
 <sub>[context source](https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/config.json): config.json max\_position\_embeddings 32768 (Qwen2.5 base); trained with a 16k context per the card. Observed 2026-10-10.</sub>
 
 <pre>
-download       size  score
-4-bit q4_k_m  ~20GB   54.7
+download                      size  score
+4-bit q4_k_m                 ~20GB   54.6
+4-bit Q4_K_M               ~19.9GB   54.6
+8-bit Q8_0                 ~34.8GB   54.6
+4-bit mlx-4bit · mac only  ~18.4GB   54.6
+4-bit mlx-8bit · mac only  ~34.8GB   54.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run openthinker:32b
+# 4-bit Q4_K_M · ~19.9GB
+llama cli -hf lmstudio-community/OpenThinker-32B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/OpenThinker-32B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~34.8GB
+llama cli -hf lmstudio-community/OpenThinker-32B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/OpenThinker-32B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~19.9GB
+lms get https://huggingface.co/lmstudio-community/OpenThinker-32B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~34.8GB
+lms get https://huggingface.co/lmstudio-community/OpenThinker-32B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~18.4GB
+lms get https://huggingface.co/AlejandroOlmedo/OpenThinker-32B-4bit-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~34.8GB
+lms get https://huggingface.co/AlejandroOlmedo/OpenThinker-32B-8bit-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~20GB
+ollama run openthinker:32b
+# 4-bit Q4_K_M · ~19.9GB
+ollama run hf.co/lmstudio-community/OpenThinker-32B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~34.8GB
+ollama run hf.co/lmstudio-community/OpenThinker-32B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~18.4GB
+mlx_lm.chat --model AlejandroOlmedo/OpenThinker-32B-4bit-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model AlejandroOlmedo/OpenThinker-32B-4bit-mlx
+# 4-bit mlx-8bit · mac only · ~34.8GB
+mlx_lm.chat --model AlejandroOlmedo/OpenThinker-32B-8bit-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model AlejandroOlmedo/OpenThinker-32B-8bit-mlx
+```
 
 [interactive version](https://whatmodel.sh/model/openthinker-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

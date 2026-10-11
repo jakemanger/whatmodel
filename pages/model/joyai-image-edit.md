@@ -6,22 +6,40 @@
 
 JD (JoyAI) · released 2026-03 · apache-2.0
 
-**score 56.6** ±2.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.7** ±2.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks JoyAI-Image-Edit among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                        score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>  53.6%    56.9   2026-05-13   96% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle               49.9                 4% ▇
-                        weighted average                   = 56.6
+task                    vs the others        rank  counts  tests
+image to image / edit…  ▁▁▁▃▂▃●▃▃▃▁▁   #45 of 81*     96%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #45 of 81 · 96% of its score</summary>
+
+Beats [Imagen 4](imagen-4.md), [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.2 \[dev\]](flux-2-dev.md) here, though they rank higher overall. Trails [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [LongCat-Image-Edit](longcat-image-edit.md) here, though they rank lower overall.
+
+<pre>
+test                        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   53.6%  ▃▃▂·▃▆▂●·▃·▃ beats 15/20  hard · avg 45%     96%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 56.7
+</pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt))</sub>
 

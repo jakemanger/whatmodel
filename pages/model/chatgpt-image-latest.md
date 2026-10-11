@@ -6,22 +6,40 @@
 
 OpenAI · released 2025-12 · proprietary
 
-**score 74.3** ±4.2 · #13 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 74.2** ±4.0 · #13 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks ChatGPT Image Latest (chatgpt-image-latest) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1388.6    76.3   2026-10-06   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            49.9                 7% ▇
-                        weighted average                = 74.3
+task                    vs the others       rank  counts  tests
+image to image / edit…  ▁▁·▃▂▃█▃▃●▁▁   #9 of 62*     93%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #9 of 62 · 93% of its score</summary>
+
+Beats [Reve 2.1](reve-2-1.md), [Nano Banana 2 (Gemini 3.1 Flash Image)](nano-banana-2.md), [Reve 2.0](reve-2-0.md) here, though they rank higher overall.
+
+<pre>
+test              result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>  1388.6  ▂▁▁▂▆▇█▄●▅▁▂ beats 44/53  avg 1153       93%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             7% ▇
+weighted average                        = 74.2
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

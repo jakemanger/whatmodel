@@ -6,20 +6,38 @@
 
 Peking University / Kuaishou · released 2024-10 · 2B params · stabilityai-ai-community
 
-**score 42.1** ±3.2 · #67 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.0** ±3.2 · #67 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Pyramid Flow (SD3) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others        rank  counts  tests
+text to video  ▆▄▃▄●▅█▃▂▂▂▄   #43 of 68*     96%      1
+</pre>
+
+<details><summary>text to video · #43 of 68 · 96% of its score</summary>
+
+Beats [Open-Sora 2.0](open-sora-2-0.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1113.9  ▃▃···▅▃·▃▅·● beats 8/10   avg 1229       96%  sharp
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source       test                             score  implies  date        weight
-<a name="video-genai-arena-space"></a>GenAI-Arena  <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1113.9    41.7   2025-03-22   96% ▇▇▇▇▇▇▇▇▇▇▇
-prior        pull toward the middle                    49.9                 4% ▇
-             weighted average                        = 42.1
+source                         results  share of the score
+<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                          1   96% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             4% ▇
+weighted average                        = 42.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt))</sub>
 
@@ -27,14 +45,18 @@ prior        pull toward the middle                    49.9                 4% �
 
 <pre>
 version             needs  score
-bf16 · nvidia only   ~8GB   42.1
+bf16 · nvidia only   ~8GB   42.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~8GB
 git clone https://github.com/jy0205/Pyramid-Flow && cd Pyramid-Flow && pip install -r requirements.txt && python -c "import torch;from huggingface_hub import snapshot_download;from pyramid_dit import PyramidDiTForVideoGeneration;from diffusers.utils import export_to_video;snapshot_download('rain1011/pyramid-flow-sd3',local_dir='pyramid-flow-sd3');m=PyramidDiTForVideoGeneration('pyramid-flow-sd3',model_name='pyramid_mmdit',model_dtype='bf16',model_variant='diffusion_transformer_768p');m.vae.enable_tiling();m.enable_sequential_cpu_offload();torch.set_grad_enabled(False);torch.autocast('cuda',dtype=torch.bfloat16).__enter__();export_to_video(m.generate(prompt='A movie trailer featuring the adventures of the 30 year old space man wearing a red wool knitted motorcycle helmet, blue sky, salt desert, cinematic style',num_inference_steps=[20,20,20],video_num_inference_steps=[10,10,10],height=768,width=1280,temp=16,guidance_scale=9.0,video_guidance_scale=5.0,output_type='pil',save_memory=True),'pyramid.mp4',fps=24)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/pyramid-flow-sd3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

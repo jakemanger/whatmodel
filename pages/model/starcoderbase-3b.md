@@ -6,31 +6,60 @@
 
 BigCode · released 2023-06 · 3B params · bigcode-openrail-m
 
-**score 27.5** ±0.8 · #866 of 934 · from 12 benchmark results across 3 sources
+**score 27.6** ±0.8 · #878 of 949 · from 12 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks StarCoderBase 3B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁●▃▆██▇▆▄▃▁    #452 of 469     97%      9
+math    ●▂▃▅▆▅▄█▄▁▁▁   #400 of 400*    2.5%      1
+</pre>
+
+<details><summary>coding · #452 of 469 · 97% of its score</summary>
+
+Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            17.7%  ▁·▁●▃▄▆▅█▃▁▁ beats 6/99   easy · avg 79%       43%  sharp · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           15.9%  ▁·▁▁●▃▄▄▄█▃▁ beats 6/99   easy · avg 74%       21%  sharp
+<a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 29.4%  ●·▅▃▃▃▅▃▃▅·▅ beats 0/15   easy · avg 82%       11%  at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   21.8%  ▁·▂●▂▆▅█▄▄▁▂ beats 3/35   medium · avg 64%    6.7%  typical
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        14.2%  ●▄·▄██▄█·█·▄ beats 0/12   medium · avg 52%    3.9%  typical
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           27.5%  ●▅█▃▃▅·▃▃▅·▅ beats 0/15   medium · avg 59%    3.5%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   11.9%  ●▇█▃▄▇▄▁▇▃·▁ beats 2/35   medium · avg 49%    3.0%  typical
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           27.0%  ●·▃██▅▃·▃▃▅▃ beats 0/15   medium · avg 55%    2.9%  blunt · at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    6.4%  ▁·▁●▄██▄█▁▅▅ beats 2/35   medium · avg 56%    2.0%  sharp · too hard for it
+</pre>
+
+</details>
+
+<details><summary>math · #400 of 400 · 2.5% of its score</summary>
+
+Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
+
+<pre>
+test         result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>    8.0%  ●▄▄·▄█·██·█▄ beats 0/12   easy · avg 75%    2.5%  sharp
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       17.7%    27.0   2024-12-26   34% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      15.9%    27.2   2024-12-26   22% ▇▇▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 21.3%    29.3   2024-02-29   10% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      42.6%    27.6   2024-02-29    6% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   14.2%    25.9   2024-02-29    4% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                      8.0%    21.2   2024-02-29    3% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  21.8%    28.3   2024-05-07    6% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            29.4%    29.3   2024-05-07    4% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      27.5%    28.6   2024-05-07    3% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  11.9%    29.4   2024-05-07    3% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      27.0%    26.9   2024-05-07    3% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>   6.4%    26.9   2024-05-07    2% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 27.5
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   53% ▇▇▇▇▇▇
+<a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   24% ▇▇▇
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   22% ▇▇▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 27.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt))</sub>
 
@@ -38,17 +67,29 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp32  ~12.17GB   27.5
-4-bit q4_0    ~1.8GB   27.5
+4-bit fp32  ~12.17GB   27.6
+4-bit q4_0    ~1.8GB   27.6
+4-bit q4_0    ~1.8GB   27.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
 ```sh
-# 4-bit fp32
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-3b', torch_dtype='auto', device_map='auto')('def print_hello_world():', max_new_tokens=40)[0]['generated_text'])"
-# 4-bit q4_0
+# 4-bit q4_0 · ~1.8GB
+ollama run starcoder:3b
+# 4-bit q4_0 · ~1.8GB
 ollama run starcoder:3b
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**Other engines**
+
+```sh
+# 4-bit fp32 · ~12.17GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-3b', torch_dtype='auto', device_map='auto')('def print_hello_world():', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/starcoderbase-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

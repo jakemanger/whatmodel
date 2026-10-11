@@ -6,23 +6,39 @@
 
 IBM · released 2026-08 · 0.47B params · apache-2.0
 
-**score 62.0** ±3.8 · #18 of 160 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.2** ±3.9 · #17 of 162 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Granite Speech 5.0 470M TurboCTC among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                        score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">LibriSpeech test-clean WER</a>   1.3%    64.7   2026-09-15   68% ▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">FLEURS English test WER</a>      4.6%    57.6   2026-09-15   26% ▇▇▇
-prior                   pull toward the middle               49.8                 6% ▇
-                        weighted average                   = 62.0
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">LibriSpeech test-clean WER</a>            1.3%  ▁···▁▁▂·▄▄█● beats 51/56  avg 2.3%       67%  blunt
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">FLEURS English test WER</a>               4.6%  ▁··▁▁▁▁▁▁▃●▁ beats 34/56  avg 5.8%       27%  blunt
+<a href="https://arxiv.org/html/2609.20104v1">Granite 5.0 report · Open ASR pub…</a>    5.7%  █···█·····█● beats 3/3    avg 11%          —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">transcribe.cpp model catalog · LibriSpe…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 62.2
+</pre>
 
 <sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
 
@@ -39,14 +55,18 @@ Design of the IBM Gra…  <a href="https://arxiv.org/html/2609.20104v1">Granite 
 
 <pre>
 version            needs  score
-bf16 · mac only  ~1.63GB   62.0
+bf16 · mac only  ~1.63GB   62.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · mac only
+# bf16 · mac only · ~1.63GB
 uvx --from mlx-audio mlx_audio.stt.generate --model ibm-granite/granite-speech-5.0-470m-turboctc --audio audio.wav --output-path out
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/granite-speech-5-0-470m-turboctc) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,31 +6,70 @@
 
 DeepSeek · released 2023-10 · 1.3B params · deepseek
 
-**score 32.4** ±0.6 · #822 of 934 · from 12 benchmark results across 5 sources
+**score 32.4** ±0.6 · #834 of 949 · from 12 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks DeepSeek-Coder 1.3B Base among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁●▆██▇▆▄▃▁    #432 of 469     87%      7
+math    ●▂▃▅▆▅▄█▄▁▁▁   #398 of 400*    2.2%      1
+</pre>
+
+<details><summary>coding · #432 of 469 · 87% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
+
+<pre>
+test        result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    28.7%  ▁·▁▁●▄▆▅█▃▁▁ beats 13/99  easy · avg 79%       54%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   25.6%  ▁·▁▁▁●▄▄▄█▃▁ beats 15/99  easy · avg 74%       19%  sharp · at its level
+<a href="https://arxiv.org/html/2402.19173v1">MBPP</a>         55.4%  ▄▄▄█●▄·▄█·▄▄ beats 6/12   easy · avg 82%      4.5%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        47.9%  ▁···▁▁▂●▇█▆▂ beats 17/75  easy · avg 68%      4.3%  at its level
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>      16.2%  ▄●·▄██▄█·█·▄ beats 1/12   medium · avg 52%    3.2%  typical
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   27.8%  ▁··▁●▂█▇▁··▁ beats 2/22   medium · avg 54%    1.2%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   31.0%  ▁·●▃▁█▁▂···▁ beats 2/22   medium · avg 53%    1.2%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>math · #398 of 400 · 2.2% of its score</summary>
+
+Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
+
+<pre>
+test   result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>   12.6%  ▄●▄·▄█·██·█▄ beats 1/12   easy · avg 75%    2.2%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                     result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>         20.3%  ▂▂●▄▄█▁▄▅▃▁▃ beats 5/42   medium · avg 55%    7.1%  typical
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   22.3%  ●▁▁▄▂▅▇█▆▂▂▂ beats 2/58   medium · avg 50%    3.3%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                28.7%    32.0   2024-12-26   30% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>               25.6%    32.3   2024-12-26   20% ▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                    47.9%    37.6   2024-12-26    4% ▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                29.9%    33.2   2024-03-28   15% ▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>        20.3%    33.1   2024-03-28    7% ▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                28.7%    32.3   2024-02-29    9% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                     55.4%    34.1   2024-02-29    4% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                  16.2%    28.0   2024-02-29    3% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                    12.6%    25.1   2024-02-29    2% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>  22.3%    30.1   2025-04-01    3% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>               27.8%    31.7   2024-01-03    1% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>               31.0%    32.8   2024-01-03    1% ▇
-prior                   pull toward the middle            50.0                 0% ▇
-                        weighted average                = 32.4
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   52% ▇▇▇▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   22% ▇▇▇
+<a name="paper-2402.19173v1"></a><a href="https://arxiv.org/html/2402.19173v1">StarCoder 2 and The Stack v2: The Next …</a>        4   20% ▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    3% ▇
+<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    2% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 32.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
 
@@ -42,15 +81,49 @@ prior                   pull toward the middle            50.0                 0
 download          size  score
 4-bit q4_k_m  ~0.874GB   32.4
 8-bit q8_0      ~1.4GB   32.4
+4-bit Q4_K_M    ~0.9GB   32.4
+8-bit Q8_0      ~1.4GB   32.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run deepseek-coder:1.3b-base-q4_K_M
-# 8-bit q8_0
-ollama run deepseek-coder:1.3b-base-q8_0
+# 4-bit Q4_K_M · ~0.9GB
+llama cli -hf TheBloke/deepseek-coder-1.3b-base-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/deepseek-coder-1.3b-base-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.4GB
+llama cli -hf TheBloke/deepseek-coder-1.3b-base-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/deepseek-coder-1.3b-base-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~0.9GB
+lms get https://huggingface.co/TheBloke/deepseek-coder-1.3b-base-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~1.4GB
+lms get https://huggingface.co/TheBloke/deepseek-coder-1.3b-base-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~0.874GB
+ollama run deepseek-coder:1.3b-base-q4_K_M
+# 8-bit q8_0 · ~1.4GB
+ollama run deepseek-coder:1.3b-base-q8_0
+# 4-bit Q4_K_M · ~0.9GB
+ollama run hf.co/TheBloke/deepseek-coder-1.3b-base-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.4GB
+ollama run hf.co/TheBloke/deepseek-coder-1.3b-base-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-1-3b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

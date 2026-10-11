@@ -6,36 +6,160 @@
 
 Xiaomi · released 2025-12 · 309.8B params (15B active) · mit
 
-**score 66.2** ±1.2 · comparison only: no current run option verified · from 12 benchmark results across 3 sources
+**score 66.2** ±1.2 · #135 of 949 · from 12 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks MiMo-V2-Flash (309B-A15B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃▆█▆▅●▄▃▂▁   #101 of 334*     19%      2
+coding          ▁▁▁▃▆██●▆▄▃▁   #136 of 469*     31%      2
+chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #127 of 466*     14%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁     #84 of 400     20%      4
+web search      █●···█····██       #4 of 5*     10%      1
+</pre>
+
+<details><summary>agent tasks · #101 of 334 · 19% of its score</summary>
+
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
+
+<pre>
+test                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>        51.2%  ▁▁▁▁▁▃·▁▄●▄█ beats 14/23  hard · avg 18%       10%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>   84.1%  ▄······●█·▄▄ beats 1/5    medium · avg 46%    9.5%  typical
+</pre>
+
+</details>
+
+<details><summary>coding · #136 of 469 · 31% of its score</summary>
+
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1292.5  ▁▂▄●▅█▄▇▆▄▁▁ beats 19/119  avg 981              24%  sharp
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">LiveCodeBench v6 (window unspecif…</a>   81.6%  ▂▃▄▄▅██▅●▇▃▆ beats 46/65   medium · avg 48%    6.6%  small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #127 of 466 · 14% of its score</summary>
+
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1386.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 226/379  avg 1268       14%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #84 of 400 · 20% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall. Trails [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md), [EXAONE 4.5 33B](exaone-4-5-33b.md) here, though they rank lower overall.
+
+<pre>
+test                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">AIME 2025</a>            95.1%  ▁·▁▁▁▂▅▆█▇▅● beats 129/133  easy · avg 67%       10%  sharp · maxed out · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">IMO-AnswerBench</a>      80.9%  ▁▁·▁▁▁▄▅●▄▂▃ beats 24/42    medium · avg 35%    5.3%  small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025</a>   91.0%  ▁▁····▁▅▃●▇▁ beats 16/23    medium · avg 65%    2.5%  noisy
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025</a>   95.4%  ▁▁▁▃▁▅▅▃█●▁▄ beats 27/31    medium · avg 58%    1.9%  noisy · small run
+</pre>
+
+</details>
+
+<details><summary>web search · #4 of 5 · 10% of its score</summary>
+
+<pre>
+test           result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>   51.2%  ▁▁▁▁▁▃·▁▄●▄█ beats 14/23  hard · avg 18%     10%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                   result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>           30.8%  ▃·▅●█·▅█▅▃▃▃ beats 3/17   very hard · avg 11%    6.8%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics</a>         54.3%  ●██··██·█··█ beats 0/6    hard · avg 31%         6.4%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset)</a>   78.2%  ▃▃····█●···▃ beats 5/6    medium · avg 47%       3.4%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="card2-stepfun-ai-step-3-5-flash"></a>stepfun-ai/Step-3.5-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">AIME 2025</a>                        95.1%    68.7   2026-03-17   10% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>                    51.2%    64.4   2026-03-17   10% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>               84.1%    68.0   2026-03-17    8% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">LiveCodeBench v6 (window unsp…</a>   81.6%    66.1   2026-03-17    7% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">IMO-AnswerBench</a>                  80.9%    69.5   2026-03-17    7% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics</a>                  54.3%    63.9   2026-03-17    5% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset)</a>            78.2%    71.5   2026-03-17    4% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025</a>               91.0%    71.2   2026-03-17    3% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025</a>               95.4%    73.9   2026-03-17    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1292.5    64.0   2026-10-08   23% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1386.3    64.2   2026-10-08   13% ▇▇
-<a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                    30.8%    66.2   2026-05-11    7% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 66.2
+source                                    results  share of the score
+<a name="card2-stepfun-ai-step-3-5-flash"></a><a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">stepfun-ai/Step-3.5-Flash model card</a>            9   55% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   38% ▇▇▇▇▇
+<a name="paper-2605.10912v1-wildclawbench"></a><a href="https://arxiv.org/html/2605.10912v1">WildClawBench: A Benchmark for Real-Wor…</a>        1    7% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 66.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: stepfun-ai/Step-3.5-Flash model card ([Apache-2.0](../../licenses/stepfun-ai--Step-3.5-Flash.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download                       size  score
+4-bit Q4_K_M               ~186.8GB   66.2
+8-bit Q8_0                 ~328.2GB   66.2
+2-bit UD-IQ2_XXS           ~101.6GB   66.2
+4-bit mlx-4bit · mac only  ~173.8GB   66.2
+</pre>
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
+```sh
+# 4-bit Q4_K_M · ~186.8GB
+llama cli -hf unsloth/MiMo-V2-Flash-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/MiMo-V2-Flash-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~328.2GB
+llama cli -hf unsloth/MiMo-V2-Flash-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/MiMo-V2-Flash-GGUF:Q8_0
+# 2-bit UD-IQ2_XXS · ~101.6GB
+llama cli -hf unsloth/MiMo-V2-Flash-GGUF:UD-IQ2_XXS
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/MiMo-V2-Flash-GGUF:UD-IQ2_XXS
+```
+
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~186.8GB
+lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~328.2GB
+lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit UD-IQ2_XXS · ~101.6GB
+lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@UD-IQ2_XXS -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~173.8GB
+lms get https://huggingface.co/mlx-community/MiMo-V2-Flash-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~173.8GB
+mlx_lm.chat --model mlx-community/MiMo-V2-Flash-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/MiMo-V2-Flash-4bit
+```
 
 [interactive version](https://whatmodel.sh/model/mimo-v2-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

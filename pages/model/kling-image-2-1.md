@@ -6,22 +6,38 @@
 
 Kuaishou · closed weights
 
-**score 52.8** ±7.0 · #72 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.9** ±7.0 · #73 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Kling Image 2.1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>  48.3%    53.6   2026-05-27   79% ▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                21% ▇▇▇
-                        weighted average                       = 52.8
+task           vs the others         rank  counts  tests
+text to image  ▂▅▅▃▄●█▃▁▂▁▁   #63 of 126*     79%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #63 of 126 · 79% of its score</summary>
+
+<pre>
+test                             result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>   48.3%  ●▅▅·▅▅█·█··▃ beats 1/17   medium · avg 46%     79%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-qwenbench"></a><a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench: From Generation to Cr…</a>        1   79% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       21% ▇▇
+weighted average                                   = 52.9
+</pre>
 
 <sub>Licences: Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 

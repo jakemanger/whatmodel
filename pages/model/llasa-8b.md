@@ -6,27 +6,42 @@
 
 HKUST Audio · released 2025-01 · 8.57B params · cc-by-nc-4.0
 
-**score 52.0** ±2.5 · #61 of 117 · from 6 benchmark results across 2 sources
+**score 51.5** ±2.6 · #62 of 118 · from 6 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Llasa-8B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  59.4%    54.5   2025-07-20   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  67.1%    54.2   2025-07-20   21% ▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   4.0%    47.8   2025-07-20    7% ▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   4.2%    31.4   2025-07-20    5% ▇
-<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>  58.1%    53.6   2026-06-15   32% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>   3.6%    50.1   2026-06-15   12% ▇
-prior                   pull toward the middle                   49.7                 2% ▇
-                        weighted average                       = 52.0
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁●▁▇█▃▃   #31 of 37     97%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #31 of 37 · 97% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker simila…</a>   58.1%  ●····▄·█▄█▄▄ beats 0/8    medium · avg 53%     53%  at its level · several runs
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker simila…</a>   67.1%  ▁·●··▂·█▄·▃▄ beats 1/25   medium · avg 62%     21%  at its level
+<a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper large-…</a>    3.6%  ●···█▄▄·█▄·▄ beats 0/8    avg 3.6%             18%  blunt · several runs
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer CER</a>     4.2%  ●·▂▁▁▁▂▃▅█·▂ beats 0/30   avg 2.1%            4.6%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-dmospeech2-report-bysa"></a><a href="https://arxiv.org/html/2507.14988v1">DMOSpeech 2: Reinforcement Learning for…</a>        4   53% ▇▇▇▇▇▇
+<a name="speech-raon-opentts-report-ccby"></a><a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS: Open Models and Data for …</a>        2   44% ▇▇▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 51.5
+</pre>
 
 <sub>Licences: DMOSpeech 2: Reinforcement Learning for Duration Prediction in Metric-Optimized Speech Synthesis ([CC BY-SA 4.0](../../licenses/speech-dmospeech2-report-bysa.txt)) · Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech ([CC BY 4.0](../../licenses/speech-raon-opentts-report-ccby.txt))</sub>
 
@@ -34,14 +49,18 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                                      needs  score
-bf16 (transformers + xcodec2) · nvidia …  ~20.43GB   52.0
+bf16 (transformers + xcodec2) · nvidia …  ~20.43GB   51.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (transformers + xcodec2) · nvidia only
+# bf16 (transformers + xcodec2) · nvidia only · ~20.43GB
 pip install xcodec2==0.1.5 && python -c "from transformers import AutoTokenizer, AutoModelForCausalLM; import torch; import soundfile as sf; from xcodec2.modeling_xcodec2 import XCodec2Model; torch.set_grad_enabled(False); llasa_8b = 'HKUSTAudio/Llasa-8B'; tokenizer = AutoTokenizer.from_pretrained(llasa_8b); model = AutoModelForCausalLM.from_pretrained(llasa_8b); model.eval(); model.to('cuda'); Codec_model = XCodec2Model.from_pretrained('HKUSTAudio/xcodec2'); Codec_model.eval().cuda(); input_text = 'Hello, world.'; formatted_text = f'<|TEXT_UNDERSTANDING_START|>{input_text}<|TEXT_UNDERSTANDING_END|>'; chat = [{'role': 'user', 'content': 'Convert the text to speech:' + formatted_text}, {'role': 'assistant', 'content': '<|SPEECH_GENERATION_START|>'}]; input_ids = tokenizer.apply_chat_template(chat, tokenize=True, return_tensors='pt', continue_final_message=True).to('cuda'); speech_end_id = tokenizer.convert_tokens_to_ids('<|SPEECH_GENERATION_END|>'); outputs = model.generate(input_ids, max_length=2048, eos_token_id=speech_end_id, do_sample=True, top_p=1, temperature=1); speech_tokens = tokenizer.batch_decode(outputs[0][input_ids.shape[1]:-1], skip_special_tokens=True); speech_tokens = torch.tensor([int(t[4:-2]) for t in speech_tokens if t.startswith('<|s_') and t.endswith('|>')]).cuda().unsqueeze(0).unsqueeze(0); gen_wav = Codec_model.decode_code(speech_tokens); sf.write('gen.wav', gen_wav[0, 0, :].cpu().numpy(), 16000)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/llasa-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

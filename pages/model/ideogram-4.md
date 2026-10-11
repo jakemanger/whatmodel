@@ -10,19 +10,46 @@ Ideogram · released 2026-06 · 9.3B params · ideogram-4-nc
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Ideogram 4.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1204.8    68.7   2026-09-24   85% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>   911.9    54.1   2026-10-01   13% ▇▇
-prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 66.4
+task           vs the others         rank  counts  tests
+text to image  ▂▅▅▃▄▄█●▁▂▁▁   #16 of 126*     84%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #16 of 126 · 84% of its score</summary>
+
+Beats [Qwen-Image-2.1](qwen-image-2-1.md), [Qwen-Image-2.0-Pro (2026-06-22)](qwen-image-2-0-pro-2026-06-22.md), [Uni-1.1](uni-1-1.md) here, though they rank higher overall. Trails [Qwen-Image 2.0 Pro](qwen-image-2-0-pro.md) here, though they rank lower overall.
+
+<pre>
+test                   result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1205.1  ▂▂▃▄▇█▄●▄▂·▂ beats 58/75  avg 1027       84%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   911.9  ▁▁▁●▂█▂▁▁▂▁▁ beats 4/34   avg 875        13%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1   13% ▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 66.4
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -39,15 +66,19 @@ mlx-q4 · mac only                  ~6.08GB   66.4
 fp8 + Qwen3-VL 8B q4_k_m (sd.cpp)  ~29.2GB   66.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# nf4 · nvidia only
+# nf4 · nvidia only · ~6.08GB
 uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with bitsandbytes --with sentencepiece python -c "import torch; from diffusers import Ideogram4Pipeline; p=Ideogram4Pipeline.from_pretrained('ideogram-ai/ideogram-4-nf4', dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', height=1024, width=1024).images[0].save('out.png')"
-# mlx-q4 · mac only
+# mlx-q4 · mac only · ~6.08GB
 uvx --from mflux mflux-save --model ideogram-4-fp8 -q 4 --path ideogram-4-mflux-q4 && uvx --from mflux mflux-generate-ideogram4 --model ideogram-4-mflux-q4 --prompt-file caption.json --width 1024 --height 1024 --preset V4_DEFAULT_20
-# fp8 + Qwen3-VL 8B q4_k_m (sd.cpp)
+# fp8 + Qwen3-VL 8B q4_k_m (sd.cpp) · ~29.2GB
 sd-cli --diffusion-model models/ideogram4_fp8.safetensors --uncond-diffusion-model models/ideogram4_uncond_fp8.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf --vae models/flux2_ae.safetensors -p "$(cat caption.json)" --diffusion-fa -v --offload-to-cpu -H 1024 -W 1024
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ideogram-4) · [JSON](https://whatmodel.sh/api?format=json&all=1)

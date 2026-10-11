@@ -6,27 +6,64 @@
 
 AssemblyAI · released 2026-02 · proprietary
 
-**score 62.4** ±2.0 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
+**score 62.6** ±2.0 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Universal-3 Pro among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        3.2%    64.0   2026-03-26   44% ▇▇▇▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.2%    60.3   2026-03-26   14% ▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   6.8%    64.0   2026-03-26   13% ▇▇
-<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench        <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  84.5%    56.0   2026-05-15   10% ▇
-                      <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   4.3%    69.8   2026-05-15    7% ▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench     <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.4%    58.3   2026-07-16   11% ▇
-prior                 pull toward the middle                   49.8                 1% ▇
-                      weighted average                       = 62.4
+task                    vs the others       rank  counts  tests
+long-form transcripti…  ▁▁▅▁·▃▅█▆▁●▂   #3 of 31*     13%      1
+multilingual transcri…  ▂··▃▄█▆▅▄●·▂   #3 of 37*     45%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>long-form transcription · #3 of 31 · 13% of its score</summary>
+
+<pre>
+test                            result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>    6.8%  ▁▁▅▁·▃▅█▆▁●▂ beats 28/30  avg 12%        13%  typical
+</pre>
+
+</details>
+
+<details><summary>multilingual transcription · #3 of 37 · 45% of its score</summary>
+
+Beats [Universal-3.5 Pro](assemblyai-universal-3-5-pro.md), [Cohere Transcribe Arabic (07-2026)](cohere-transcribe-arabic-07-2026.md) here, though they rank higher overall. Trails [SeamlessM4T v2 Large](seamless-m4t-v2-large.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>    3.2%  ▂··▂▃▂█▃█▂●▁ beats 28/29  avg 8.9%       45%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    6.2%  ▁▁▁▃··▁▁▂██● beats 76/86  avg 8.2%           13%  blunt
+<a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-world En…</a>    9.4%  ●▃▃▅▃···▃··▃ beats 2/9    avg 15%            11%  typical
+<a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canonical …</a>   84.5%  ▄···●··▄▄▄·█ beats 1/6    easy · avg 77%     10%  typical
+<a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (300 E…</a>    4.3%  ▄·▄·▄·▄█···● beats 6/6    avg 12%           7.3%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                 3   71% ▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-voicecodebench-report"></a><a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench</a>                       2   17% ▇▇
+<a name="speech-rw-voice-eq-report"></a><a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ Bench</a>                    1   11% ▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 62.6
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · VoiceCodeBench ([CC BY 4.0](../../licenses/speech-stt-voicecodebench-report.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 

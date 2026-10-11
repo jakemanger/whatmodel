@@ -6,24 +6,81 @@
 
 Arcee AI · released 2026-04 · 398B params (13B active) · openmdw-1.1
 
-**score 62.7** ±1.7 · #174 of 934 · from 5 benchmark results across 2 sources
+**score 62.6** ±1.6 · #183 of 949 · from 5 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Trinity-Large-Thinking among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others            rank  counts  tests
+agent tasks                    not ranked yet       —      1
+coding          ▁▁▁▃▆██●▆▄▃▁     #171 of 469*     43%      1
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂     #145 of 466*     24%      1
+math            █··········●         #1 of 2*    3.2%      1
+</pre>
+
+<details><summary>agent tasks · 0.0% of its score</summary>
+
+<pre>
+test                    result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">τ²-bench Telecom (lab)</a>   94.7%  ▁·▅█▆▅▂▃●▂▃▁ beats 74/89  very hard · avg 9.6%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>coding · #171 of 469 · 43% of its score</summary>
+
+Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md), [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1237.6  ▁▂●▃▅█▄▇▆▄▁▁ beats 9/119  avg 981        43%  sharp
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #145 of 466 · 24% of its score</summary>
+
+Beats [INTELLECT-3](intellect-3.md), [Nemotron 3 Super 120B-A12B](nemotron-3-super-120b-a12b.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1367.3  ▁▁▁▂▃▃▃▆●▇█▃ beats 211/379  avg 1268       24%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #1 of 2 · 3.2% of its score</summary>
+
+<pre>
+test             result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (lab)</a>   96.3%  ▁·▁▁▁▂▅▆█▇▅● beats 132/133  medium · avg 39%    3.2%  sharp · noisy · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">GPQA Diamond (lab)</a>   76.3%  ▁▁▁▁▂▄▅▅●██▄ beats 180/310  hard · avg 44%       19%  sharp · at its level · small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (lab)</a>       83.4%  ▁▁·▁▁▁▃▂▄▅●▁ beats 156/188  medium · avg 59%    9.2%  small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1237.6    61.5   2026-10-01   42% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1367.3    62.0   2026-10-02   24% ▇▇▇
-<a name="first-party-arcee-scores"></a>Arcee AI vendor-repor…  <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">GPQA Diamond (lab)</a>          76.3%    63.9   2026-04-01   20% ▇▇
-                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (lab)</a>              83.4%    64.9   2026-04-01   10% ▇
-                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (lab)</a>             96.3%    72.8   2026-04-01    3% ▇
-prior                   pull toward the middle               50.0                 1% ▇
-                        weighted average                   = 62.7
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   67% ▇▇▇▇▇▇▇▇
+<a name="first-party-arcee-scores"></a><a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">Arcee AI vendor-reported benchmark scor…</a>        3   32% ▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 62.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -44,17 +101,36 @@ api (Arcee AI) · $0.39/M blended · $0.25 in / $0.8 out per 1M tokens · [docs.
 
 <pre>
 download           size  score
-4-bit q4_k_m  ~241.85GB   62.7
-2-bit iq2_m   ~133.01GB   62.7
+4-bit q4_k_m  ~241.85GB   62.6
+2-bit iq2_m   ~133.01GB   62.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf arcee-ai/Trinity-Large-Thinking-GGUF:Q4_K_M
-# 2-bit iq2_m
-llama-server -hf arcee-ai/Trinity-Large-Thinking-GGUF:IQ2_M
+# 4-bit q4_k_m · ~241.85GB
+llama cli -hf arcee-ai/Trinity-Large-Thinking-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf arcee-ai/Trinity-Large-Thinking-GGUF:Q4_K_M
+# 2-bit iq2_m · ~133.01GB
+llama cli -hf arcee-ai/Trinity-Large-Thinking-GGUF:IQ2_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf arcee-ai/Trinity-Large-Thinking-GGUF:IQ2_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~241.85GB
+lms get https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit iq2_m · ~133.01GB
+lms get https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF@IQ2_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
 
 [interactive version](https://whatmodel.sh/model/trinity-large-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

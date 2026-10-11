@@ -6,22 +6,37 @@
 
 Supertone · released 2026-05 · 0.099B params · openrail-m
 
-**score 55.0** ±9.5 · #52 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.0** ±9.7 · #52 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Supertonic 3 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source            test                             score  implies  date        weight
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1051.4    58.0   2026-09-24   64% ▇▇▇▇▇▇▇▇
-prior             pull toward the middle                    49.7                36% ▇▇▇▇
-                  weighted average                        = 55.0
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community blin…</a>  1051.4  ▂▂··▃·●▅···▂ beats 7/12   avg 1018       62%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                     1   62% ▇▇▇▇▇▇▇
+prior: pull toward the middle            38% ▇▇▇▇▇
+weighted average                        = 55.0
+</pre>
 
 <sub>Licences: Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>
 
@@ -33,13 +48,17 @@ onnx-fp32 (supertonic Python SDK 1.3.x)  ~0.4GB   55.0
 onnx-fp32 (Supertonic sample code)       ~0.4GB   55.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# onnx-fp32 (supertonic Python SDK 1.3.x)
+# onnx-fp32 (supertonic Python SDK 1.3.x) · ~0.4GB
 pip install supertonic && supertonic tts 'Supertonic is a lightning fast, on-device TTS system.' -o output.wav --lang en
-# onnx-fp32 (Supertonic sample code)
+# onnx-fp32 (Supertonic sample code) · ~0.4GB
 git clone https://github.com/supertone-oss-archive/supertonic.git && cd supertonic && python3.11 -m venv .venv && source .venv/bin/activate && python -m pip install huggingface_hub && hf download supertone-oss-archive/supertonic-3 --revision aafc6e32416a594460b32413efc49d7fe4ce6d46 --local-dir assets && python -m pip install -r py/requirements.txt && cd py && python example_onnx.py --n-test 1 --text "This speech was generated locally with the archived Supertonic model." --lang en
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/supertonic-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -10,18 +10,36 @@ Skywork AI · released 2026-01 · mit
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks UniPic 3 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                        score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>  47.0%    51.9   2026-05-13   96% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle               49.9                 4% ▇
-                        weighted average                   = 51.8
+task                    vs the others        rank  counts  tests
+image to image / edit…  ▁▁▁▃▂●█▃▃▃▁▁   #59 of 81*     96%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #59 of 81 · 96% of its score</summary>
+
+Beats [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall. Trails [GLM-Image](glm-image.md), [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md) here, though they rank lower overall.
+
+<pre>
+test                        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   47.0%  ▃▃▂·▃▆●█·▃·▃ beats 11/20  hard · avg 45%     96%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 51.8
+</pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt))</sub>
 

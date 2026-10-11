@@ -10,18 +10,36 @@ Alibaba (AIDC-AI) · released 2025-11 · 7B params · apache-2.0
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Ovis-Image-7B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source    test                            score  implies  date        weight
-<a name="visual-fepbench"></a>Faithful  <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>  33.4%    46.9   2026-06-05   81% ▇▇▇▇▇▇▇▇▇▇
-prior     pull toward the middle                   49.9                19% ▇▇
-          weighted average                       = 47.5
+task           vs the others         rank  counts  tests
+text to image  ▂▅▅▃●▄█▃▁▂▁▁   #74 of 126*     81%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #74 of 126 · 81% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
+
+<pre>
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>   33.4%  ●·█···▄▄▄▄▄▄ beats 0/8    medium · avg 36%     81%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="visual-fepbench"></a><a href="https://arxiv.org/html/2606.05949v2#S4.T2">Faithful</a>                             1   81% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            19% ▇▇
+weighted average                        = 47.5
+</pre>
 
 <sub>Licences: Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt))</sub>
 
@@ -33,13 +51,17 @@ bf16 · nvidia only               ~20GB   47.5
 gguf-q4_0 + Ovis 2.5 (sd.cpp)  ~12.1GB   47.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~20GB
 uv run --with 'diffusers>=0.36.0' --with transformers --with accelerate --with torch python -c "import torch; from diffusers import OvisImagePipeline; p=OvisImagePipeline.from_pretrained('ATH-MaaS/Ovis-Image-7B', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', negative_prompt='', num_inference_steps=50, guidance_scale=5.0).images[0].save('out.png')"
-# gguf-q4_0 + Ovis 2.5 (sd.cpp)
+# gguf-q4_0 + Ovis 2.5 (sd.cpp) · ~12.1GB
 sd-cli --diffusion-model models/ovis_image-Q4_0.gguf --vae models/ae.safetensors --llm models/ovis_2.5.safetensors -p "a lovely cat" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ovis-image-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

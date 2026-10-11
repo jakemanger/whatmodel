@@ -6,24 +6,44 @@
 
 Kuaishou (Kolors team) · released 2024-07 · 2.6B params · kolors-model-license
 
-**score 38.4** ±3.2 · #110 of 144 · from 3 benchmark results across 3 sources
+**score 38.6** ±3.2 · #110 of 144 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Kolors among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.93 / 5    34.9   2024-12-25   73% ▇▇▇▇▇▇▇▇▇
-<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.59 / 5    46.0   2024-11-13   19% ▇▇
-<a name="hpsv3-readme-mit"></a>HPSv3 repository READ…  <a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchm…</a>   10.5500    58.3   2025-12-05    3% ▇
-prior                   pull toward the middle                      49.9                 4% ▇
-                        weighted average                          = 38.4
+task           vs the others        rank  counts  tests
+text to image  ▂▅●▃▄▄█▃▁▂▁▁   #96 of 126     96%      3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #96 of 126 · 96% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [SDXL-Lightning (4-step UNet)](sdxl-lightning-4-step.md), [Stable Cascade](stable-cascade.md), [BLIP3-o 8B](blip3o-8b.md) here, though they rank lower overall.
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  2.93 / 5  █▄·▄█●▄▄█▄▄▄ beats 7/14   easy · avg 3.83 / 5     73%  at its level
+<a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall satis…</a>  3.59 / 5  ▄·▄········● beats 3/3    easy · avg 3.87 / 5     19%  at its level
+<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>   10.5500  ▃·····▃··▃·● beats 5/5    avg 10.058             3.4%  sharp · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   73% ▇▇▇▇▇▇▇▇▇
+<a name="visual-kolors-readme"></a><a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">Kwai-Kolors/Kolors repository README (l…</a>        1   19% ▇▇
+<a name="hpsv3-readme-mit"></a><a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 repository README</a>                         1    3% ▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 38.6
+</pre>
 
 <sub>Licences: EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · Kwai-Kolors/Kolors repository README ([Apache-2.0](../../licenses/visual-kolors-readme.txt)) · HPSv3 repository README ([MIT](https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/LICENSE))</sub>
 
@@ -31,14 +51,18 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version               needs  score
-fp16 · nvidia only  ~21.6GB   38.4
+fp16 · nvidia only  ~21.6GB   38.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~21.6GB
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import KolorsPipeline; p=KolorsPipeline.from_pretrained('Kwai-Kolors/Kolors-diffusers', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', guidance_scale=5.0, num_inference_steps=50).images[0].save('out.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/kolors) · [JSON](https://whatmodel.sh/api?format=json&all=1)

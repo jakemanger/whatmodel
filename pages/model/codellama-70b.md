@@ -6,25 +6,53 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 43.1** ±1.1 · #637 of 934 · from 6 benchmark results across 3 sources
+**score 43.1** ±1.1 · #640 of 949 · from 6 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Code Llama 70B (base) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #348 of 469     87%      5
+</pre>
+
+<details><summary>coding · #348 of 469 · 87% of its score</summary>
+
+Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [OpenChat 3.5](openchat-3-5.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                      53.0%  █▃▃▅·▃●·▃··▃ beats 8/11   easy · avg 76%       29%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   52.8%  ▁·▂▁▂▆▅█▄●▁▂ beats 31/35  medium · avg 64%     19%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   28.2%  ▄▇█▃▄▇●▁▇▃·▁ beats 24/35  medium · avg 49%     13%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   32.8%  ▁·▁▁▄██▄█●▅▅ beats 27/35  medium · avg 56%     13%  sharp · at its level
+<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                           62.4%  ▃▃▃█··▃▅··●▃ beats 10/11  easy · avg 73%       13%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                     result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   44.3%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 41/58  medium · avg 50%     12%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  52.8%    44.5   2024-05-07   20% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  28.2%    40.6   2024-05-07   14% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  32.8%    42.6   2024-05-07   13% ▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 53.0%    41.8   2024-01-31   29% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      62.4%    44.3   2024-01-31   13% ▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         44.3%    46.4   2025-04-01   11% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 43.1
+source                                    results  share of the score
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        3   46% ▇▇▇▇▇▇
+<a name="paper-2308.12950v3"></a><a href="https://arxiv.org/html/2308.12950v3">Code Llama: Open Foundation Models for …</a>        2   41% ▇▇▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1   12% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 43.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -33,18 +61,65 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/codellama/CodeLlama-70b-hf/blob/cc11b0f79c8a072bd1e1f32ec280e1ff8ec018f6/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download       size  score
-4-bit q4_k_m  ~41GB   43.1
-8-bit q8_0    ~73GB   43.1
+download                      size  score
+4-bit q4_k_m                 ~41GB   43.1
+8-bit q8_0                   ~73GB   43.1
+4-bit Q4_K_M               ~41.4GB   43.1
+2-bit Q2_K                 ~25.5GB   43.1
+4-bit mlx-4bit · mac only  ~39.2GB   43.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run codellama:70b-code-q4_K_M
-# 8-bit q8_0
-ollama run codellama:70b-code-q8_0
+# 4-bit Q4_K_M · ~41.4GB
+llama cli -hf TheBloke/CodeLlama-70B-hf-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/CodeLlama-70B-hf-GGUF:Q4_K_M
+# 2-bit Q2_K · ~25.5GB
+llama cli -hf TheBloke/CodeLlama-70B-hf-GGUF:Q2_K
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/CodeLlama-70B-hf-GGUF:Q2_K
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~41.4GB
+lms get https://huggingface.co/TheBloke/CodeLlama-70B-hf-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit Q2_K · ~25.5GB
+lms get https://huggingface.co/TheBloke/CodeLlama-70B-hf-GGUF@Q2_K -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~39.2GB
+lms get https://huggingface.co/mlx-community/CodeLlama-70b-hf-4bit-MLX -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~41GB
+ollama run codellama:70b-code-q4_K_M
+# 8-bit q8_0 · ~73GB
+ollama run codellama:70b-code-q8_0
+# 4-bit Q4_K_M · ~41.4GB
+ollama run hf.co/TheBloke/CodeLlama-70B-hf-GGUF:Q4_K_M
+# 2-bit Q2_K · ~25.5GB
+ollama run hf.co/TheBloke/CodeLlama-70B-hf-GGUF:Q2_K
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~39.2GB
+mlx_lm.chat --model mlx-community/CodeLlama-70b-hf-4bit-MLX
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/CodeLlama-70b-hf-4bit-MLX
+```
 
 [interactive version](https://whatmodel.sh/model/codellama-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

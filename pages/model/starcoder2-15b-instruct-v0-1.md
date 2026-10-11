@@ -6,24 +6,51 @@
 
 BigCode · released 2024-04 · 15.96B params · bigcode-openrail-m
 
-**score 45.5** ±0.8 · #566 of 934 · from 5 benchmark results across 2 sources
+**score 45.5** ±0.8 · #573 of 949 · from 5 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks StarCoder2-15B-Instruct-v0.1 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #330 of 469     87%      3
+</pre>
+
+<details><summary>coding · #330 of 469 · 87% of its score</summary>
+
+Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
+
+<pre>
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    67.7%  ▁·▁▁▃▄▆●█▃▁▁ beats 53/99  easy · avg 79%     45%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   60.4%  ▁·▁▁▁▃▄▄●█▃▁ beats 52/99  easy · avg 74%     35%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        65.1%  ▁···▁▁▂▅▇●▆▂ beats 52/75  easy · avg 68%    6.4%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                           result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   43.7%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 38/58  medium · avg 50%    6.4%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>   36.7%  ▃▂·▆▆█●▆▅▃▃▃ beats 20/33  medium · avg 41%    6.4%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                           score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                      67.7%    45.2   2024-12-26   46% ▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                     60.4%    44.9   2024-12-26   36% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                          65.1%    48.3   2024-12-26    6% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>  36.7%    47.4   2025-04-01    6% ▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>  43.7%    45.9   2025-04-01    5% ▇
-prior                   pull toward the middle                  50.0                 0% ▇
-                        weighted average                      = 45.5
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   87% ▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2   13% ▇▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 45.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -32,18 +59,60 @@ prior                   pull toward the middle                  50.0            
 <sub>[context source](https://huggingface.co/bigcode/starcoder2-15b-instruct-v0.1/blob/ffb8dd9776ba9a66d655ecd962e882f3013e9f7c/config.json): BigCode official configuration for starcoder2-15b-instruct-v0.1 (pinned commit ffb8dd9): max\_position\_embeddings 16384. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-16-bit bf16  ~31.92GB   45.5
-4-bit q4_0     ~9.1GB   45.5
+download          size  score
+16-bit bf16   ~31.92GB   45.5
+4-bit q4_0      ~9.1GB   45.5
+4-bit q4_0      ~9.1GB   45.5
+4-bit Q4_K_M    ~9.9GB   45.5
+8-bit Q8_0       ~17GB   45.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoder2-15b-instruct-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-# 4-bit q4_0
-ollama run starcoder2:15b-instruct
+# 4-bit Q4_K_M · ~9.9GB
+llama cli -hf mradermacher/starcoder2-15b-instruct-v0.1-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/starcoder2-15b-instruct-v0.1-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~17GB
+llama cli -hf mradermacher/starcoder2-15b-instruct-v0.1-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/starcoder2-15b-instruct-v0.1-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~9.9GB
+lms get https://huggingface.co/mradermacher/starcoder2-15b-instruct-v0.1-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~17GB
+lms get https://huggingface.co/mradermacher/starcoder2-15b-instruct-v0.1-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~9.1GB
+ollama run starcoder2:15b-instruct
+# 4-bit q4_0 · ~9.1GB
+ollama run starcoder2:15b-instruct
+# 4-bit Q4_K_M · ~9.9GB
+ollama run hf.co/mradermacher/starcoder2-15b-instruct-v0.1-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~17GB
+ollama run hf.co/mradermacher/starcoder2-15b-instruct-v0.1-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~31.92GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoder2-15b-instruct-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/starcoder2-15b-instruct-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

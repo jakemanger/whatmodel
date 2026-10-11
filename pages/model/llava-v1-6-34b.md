@@ -6,27 +6,51 @@
 
 LLaVA · released 2024-01 · 34.8B params · apache-2.0
 
-**score 39.7** ±1.8 · #706 of 934 · from 6 benchmark results across 4 sources
+**score 39.5** ±1.6 · #718 of 949 · from 8 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks LLaVA-v1.6-34B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others         rank  counts  tests
+vision &amp; documents  ▁●▃▂▁▃▄▃▆▇█▄   #146 of 150     99%      8
+</pre>
+
+<details><summary>vision &amp; documents · #146 of 150 · 99% of its score</summary>
+
+Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md) here, though they rank higher overall. Trails [LLaVA-v1.6-Vicuna-13B](llava-v1-6-vicuna-13b.md), [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
+
+<pre>
+test                                  result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>          51.0%  ●█▄▄▄·██·▄·█ beats 0/12   easy · avg 71%       31%  at its level
+<a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv descriptive questions (te…</a>     51.5%  ●··▄··█··▄·▄ beats 0/6    easy · avg 71%       18%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>        964.4  ▁▁●▂▂▂▄▅▅▆██ beats 5/145  avg 1068             16%  blunt
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -67.5000  ●▃▃·▃█·▅▃▃▃▃ beats 0/12   avg -0.671           11%  typical
+<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>          22.5%  ●▂▂█▃▂·▂▂··▂ beats 0/13   medium · avg 36%     10%  typical
+<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>                       51.1%  ▁····▁▁▄●▇▆▆ beats 10/52  medium · avg 59%    6.8%  at its level · small run
+<a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv reasoning questions (test…</a>     20.0%  ●··▄▄▄█····▄ beats 0/6    hard · avg 32%      6.0%  blunt
+<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>                          69.5%  ▁▁▁▄●▁▃·▃▃▃█ beats 6/24   easy · avg 77%      0.9%  blunt · at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="charxiv-readme-apache"></a>CharXiv leaderboard     <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>      51.0%    39.9   2024-07-23   41% ▇▇▇▇▇
-                        <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>      22.5%    42.2   2024-07-23   13% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>     964.4    37.6   2026-10-02   21% ▇▇
-<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -67.5000    34.7   2025-03-16   14% ▇▇
-<a name="llava-model-zoo-apache"></a>LLaVA repository mode…  <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>                   51.1%    46.6   2024-01-30    9% ▇
-                        <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>                      69.5%    33.7   2024-01-30    1% ▇
-prior                   pull toward the middle                      50.0                 1% ▇
-                        weighted average                          = 39.7
+source                                    results  share of the score
+<a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   42% ▇▇▇▇▇
+<a name="paper-2406.18521v1-charxiv"></a><a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv: Charting Gaps in Realistic Cha…</a>        2   24% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   16% ▇▇
+<a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1   11% ▇
+<a name="llava-model-zoo-apache"></a><a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">LLaVA repository model zoo (lab)</a>                2    8% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 39.5
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: CharXiv leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LLaVA repository model zoo ([Apache-2.0](https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/LICENSE))</sub>
+<sub>Licences: CharXiv leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LLaVA repository model zoo ([Apache-2.0](https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/LICENSE))</sub>
 
 ## How to run it
 
@@ -34,17 +58,21 @@ prior                   pull toward the middle                      50.0        
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~21.38GB   39.7
-8-bit q8_0    ~42.26GB   39.7
+4-bit q4_k_m  ~21.38GB   39.5
+8-bit q8_0    ~42.26GB   39.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
 ```sh
-# 4-bit q4_k_m
+# 4-bit q4_k_m · ~21.38GB
 ollama run llava:34b-v1.6-q4_K_M
-# 8-bit q8_0
+# 8-bit q8_0 · ~42.26GB
 ollama run llava:34b-v1.6-q8_0
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/llava-v1-6-34b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

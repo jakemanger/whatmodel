@@ -6,28 +6,59 @@
 
 StepFun · released 2025-11 · 12.44B params · apache-2.0
 
-**score 52.9** ±2.0 · #71 of 144 · from 7 benchmark results across 6 sources
+**score 53.0** ±1.9 · #72 of 144 · from 7 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Step1X-Edit v1.2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      51.6%    55.6   2026-05-13   40% ▇▇▇▇▇
-<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>  45.9%    52.7   2026-07-11   19% ▇▇
-<a name="card2-stepfun-ai-step1x-edit-v1p2"></a>stepfun-ai/Step1X-Edi…  <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>        60.9%    54.4   2025-12-29    9% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, lan…</a>  75.8%    51.9   2025-12-29    8% ▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo) (…</a>  996.0    55.4   2026-03-30    8% ▇
-<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  60.5%    45.2   2025-11-14    7% ▇
-<a name="paper-2603.26174v1-creval"></a>CREval: An Automated …  <a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image e…</a>  69.5%    42.4   2026-03-27    6% ▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 52.9
+task                    vs the others       rank  counts  tests
+image to image / edit…  ▁▁·▃▂●█▃▃▄▁▁   #44 of 62     72%      5
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #44 of 62 · 72% of its score</summary>
+
+Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-kontext-max.md), [Qwen-Image](qwen-image.md) here, though they rank higher overall. Trails [GLM-Image](glm-image.md), [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           51.6%  ▃▃▂·▃▆▂●·▃·▃ beats 12/20  hard · avg 45%       41%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>             60.9%  ██·········● beats 2/2    medium · avg 54%    8.6%  at its level · small run
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo) (lab)</a>    996.0  ▃▂····▂●▂▃▂▃ beats 4/14   avg 956             8.5%  blunt
+<a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, languag…</a>   75.8%  █·······█··● beats 2/2    easy · avg 73%      8.0%  small run
+<a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image editi…</a>   69.5%  ▄█●··█··▄·▄▄ beats 3/8    easy · avg 74%      6.3%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    45.9%  ▂··●█▂▄▂▂·▂▂ beats 1/12   medium · avg 41%     19%  at its level
+<a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-turn …</a>   60.5%  █▄▄·▄▄▄▄●·▄█ beats 8/12   medium · avg 65%    7.1%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   41% ▇▇▇▇▇
+<a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   19% ▇▇
+<a name="card2-stepfun-ai-step1x-edit-v1p2"></a><a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">stepfun-ai/Step1X-Edit-v1p2 model card …</a>        2   17% ▇▇
+<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    9% ▇
+<a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1    7% ▇
+<a name="paper-2603.26174v1-creval"></a><a href="https://arxiv.org/html/2603.26174v1">CREval: An Automated Interpretable Eval…</a>        1    6% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 53.0
+</pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · stepfun-ai/Step1X-Edit-v1p2 model card ([Apache-2.0](../../licenses/stepfun-ai--Step1X-Edit-v1p2.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CREval: An Automated Interpretable Evaluation for Creative Image Manipulation under Complex Instructions ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -35,14 +66,18 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~50.7GB   52.9
+bf16 · nvidia only  ~50.7GB   53.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~50.7GB
 git clone -b step1xedit_v1p2 https://github.com/Peyton-Chen/diffusers.git && cd diffusers && pip install -e . && pip install transformers==4.55.0 && python -c "import torch; from diffusers import Step1XEditPipelineV1P2; from diffusers.utils import load_image; p=Step1XEditPipelineV1P2.from_pretrained('stepfun-ai/Step1X-Edit-v1p2', torch_dtype=torch.bfloat16); p.to('cuda'); o=p(image=load_image('input.png').convert('RGB'), prompt='add a ruby pendant on the neck of the girl.', num_inference_steps=50, true_cfg_scale=6, generator=torch.Generator().manual_seed(42), enable_thinking_mode=True, enable_reflection_mode=True); o.final_images[0].save('0001-final.jpg')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/step1x-edit-v1-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

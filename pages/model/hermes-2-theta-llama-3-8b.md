@@ -6,22 +6,39 @@
 
 Nous Research · released 2024-05 · 8.03B params · apache-2.0
 
-**score 43.5** ±2.5 · #625 of 934 · from 3 benchmark results across 3 sources
+**score 43.3** ±2.4 · #636 of 949 · from 3 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Hermes 2 Theta Llama 3 8B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                          result  vs the others in its run    difficulty           counts  why
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.6352 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 13/52    avg 45.199 WB-Score     57%  sharp
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                54.9%  ▁··▁▁▂▂▆●▆█▆ beats 31/70    medium · avg 64%        30%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             70.0%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 164/276  medium · avg 73%        11%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                       score  implies  date        weight
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  29.6352 WB-Score    40.8   2024-08-01   55% ▇▇▇▇▇▇▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>             54.9%    46.0   2024-06-19   30% ▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             70.0%    48.1   2024-05-27   13% ▇▇
-prior                   pull toward the middle                              50.0                 3% ▇
-                        weighted average                                  = 43.5
+source                                  results  share of the score
+<a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                 1   57% ▇▇▇▇▇▇▇
+<a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>        1   30% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>               1   11% ▇
+prior: pull toward the middle                      2% ▇
+weighted average                                 = 43.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -30,15 +47,54 @@ prior                   pull toward the middle                              50.0
 <sub>[context source](https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-8B/blob/57a73110702e7b05ba3f39fef36297454c680725/config.json): Nous Research official configuration for Hermes-2-Theta-Llama-3-8B (pinned commit 57a7311): max\_position\_embeddings 8192. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-16-bit bf16  ~16.06GB   43.5
+download          size  score
+16-bit bf16   ~16.06GB   43.3
+4-bit Q4_K_M    ~4.9GB   43.3
+8-bit Q8_0      ~8.5GB   43.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='NousResearch/Hermes-2-Theta-Llama-3-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~4.9GB
+llama cli -hf QuantFactory/Hermes-2-Theta-Llama-3-8B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf QuantFactory/Hermes-2-Theta-Llama-3-8B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.5GB
+llama cli -hf QuantFactory/Hermes-2-Theta-Llama-3-8B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf QuantFactory/Hermes-2-Theta-Llama-3-8B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.9GB
+lms get https://huggingface.co/QuantFactory/Hermes-2-Theta-Llama-3-8B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.5GB
+lms get https://huggingface.co/QuantFactory/Hermes-2-Theta-Llama-3-8B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.9GB
+ollama run hf.co/QuantFactory/Hermes-2-Theta-Llama-3-8B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.5GB
+ollama run hf.co/QuantFactory/Hermes-2-Theta-Llama-3-8B-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~16.06GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='NousResearch/Hermes-2-Theta-Llama-3-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/hermes-2-theta-llama-3-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

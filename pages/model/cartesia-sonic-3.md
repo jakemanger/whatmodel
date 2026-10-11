@@ -6,27 +6,46 @@
 
 Cartesia · released 2025-10 · proprietary
 
-**score 60.2** ±2.5 · #40 of 117 · from 4 benchmark results across 3 sources
+**score 57.7** ±2.2 · #47 of 118 · from 5 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Sonic 3 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>     1185.7    59.1   2026-09-25   59% ▇▇▇▇▇▇▇
-<a name="speech-rime-alpha-bench-ccby"></a>Rime Alpha TTS Benchm…  <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired hu…</a>  -0.20 / 2    63.6   2026-09-13   14% ▇▇
-                        <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired hu…</a>  -0.20 / 2    56.1   2026-09-13   13% ▇▇
-<a name="speech-voicefirst-indic-ccby"></a>Preferences of a Voic…  <a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 India…</a>     1050.8    68.5   2026-04-23   11% ▇
-prior                   pull toward the middle                       49.7                 2% ▇
-                        weighted average                           = 60.2
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (5)</summary>
 
-<sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference ([CC BY 4.0](../../licenses/speech-rime-alpha-bench-ccby.txt)) · Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages ([CC BY 4.0](../../licenses/speech-voicefirst-indic-ccby.txt))</sub>
+<pre>
+test                                   result  vs the others in its run  difficulty              counts  why
+<a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terry ra…</a>     1185.7  ▁···▁▃··●▄▁▇ beats 5/18   avg 1078                   47%  typical
+<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>     1096.7  ▃·●▃▃·▃██▃·▃ beats 1/12   avg 1080                   24%  typical
+<a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired human …</a>  -0.20 / 2  ▄·●········█ beats 1/3    medium · avg -0.58 / 2     11%  at its level
+<a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired human …</a>  -0.20 / 2  █·······█·●█ beats 2/3    hard · avg -0.90 / 2       10%  at its level
+<a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 Indian la…</a>     1050.8  ▄····▄·····● beats 2/3    avg 897                   6.9%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-vapi-humanness-20260925"></a><a href="https://humannessindex.vapi.ai/api/models">The Humanness Index by Vapi · September…</a>        1   47% ▇▇▇▇▇▇
+<a name="speech-vapi-humanness-20260610"></a><a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">The Humanness Index by Vapi · June 2026…</a>        1   24% ▇▇▇
+<a name="speech-rime-alpha-bench-ccby"></a><a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime Alpha TTS Benchmark v1.0.0 · Suppo…</a>        2   20% ▇▇
+<a name="speech-voicefirst-indic-ccby"></a><a href="https://arxiv.org/html/2604.21481v2">Preferences of a Voice-First Nation: pa…</a>        1    7% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 57.7
+</pre>
+
+<sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · The Humanness Index by Vapi · June 2026 production export ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference ([CC BY 4.0](../../licenses/speech-rime-alpha-bench-ccby.txt)) · Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages ([CC BY 4.0](../../licenses/speech-voicefirst-indic-ccby.txt))</sub>
 
 ## How to run it
 

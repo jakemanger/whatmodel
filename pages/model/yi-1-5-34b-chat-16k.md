@@ -6,21 +6,37 @@
 
 01.AI · released 2024-05 · 34.39B params · apache-2.0
 
-**score 49.9** ±3.7 · #438 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 49.9** ±3.8 · #445 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Yi-1.5 34B Chat 16K among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   32.1%  ▁▁▁▁▁▂▂▃●▆█▃ beats 36/97    hard · avg 32%       65%  blunt · at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.9%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 189/276  medium · avg 73%     28%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  32.1%    50.1   2025-04-28   68% ▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  71.9%    49.5   2024-05-20   26% ▇▇▇
-prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 49.9
+source                           results  share of the score
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>             1   65% ▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   28% ▇▇▇
+prior: pull toward the middle               7% ▇
+weighted average                          = 49.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -29,15 +45,75 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/01-ai/Yi-1.5-34B-Chat-16K/blob/ff74452e11f0f749ab872dc19b1dd3813c25c4d8/config.json): 01.AI official configuration for Yi-1.5-34B-Chat-16K (pinned commit ff74452): max\_position\_embeddings 16384. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-16-bit bf16  ~68.78GB   49.9
+download                       size  score
+16-bit bf16                ~68.78GB   49.9
+4-bit Q4_K_M                ~20.7GB   49.9
+8-bit Q8_0                  ~36.5GB   49.9
+4-bit mlx-4bit · mac only   ~19.3GB   49.9
+4-bit mlx-8bit · mac only   ~36.5GB   49.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-1.5-34B-Chat-16K', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~20.7GB
+llama cli -hf bartowski/Yi-1.5-34B-Chat-16K-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Yi-1.5-34B-Chat-16K-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~36.5GB
+llama cli -hf bartowski/Yi-1.5-34B-Chat-16K-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Yi-1.5-34B-Chat-16K-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~20.7GB
+lms get https://huggingface.co/bartowski/Yi-1.5-34B-Chat-16K-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~36.5GB
+lms get https://huggingface.co/bartowski/Yi-1.5-34B-Chat-16K-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~19.3GB
+lms get https://huggingface.co/Fmuaddib/Yi-1.5-34B-Chat-16K-mlx-4Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~36.5GB
+lms get https://huggingface.co/Fmuaddib/Yi-1.5-34B-Chat-16K-mlx-8Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~20.7GB
+ollama run hf.co/bartowski/Yi-1.5-34B-Chat-16K-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~36.5GB
+ollama run hf.co/bartowski/Yi-1.5-34B-Chat-16K-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~19.3GB
+mlx_lm.chat --model Fmuaddib/Yi-1.5-34B-Chat-16K-mlx-4Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model Fmuaddib/Yi-1.5-34B-Chat-16K-mlx-4Bit
+# 4-bit mlx-8bit · mac only · ~36.5GB
+mlx_lm.chat --model Fmuaddib/Yi-1.5-34B-Chat-16K-mlx-8Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model Fmuaddib/Yi-1.5-34B-Chat-16K-mlx-8Bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~68.78GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-1.5-34B-Chat-16K', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/yi-1-5-34b-chat-16k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

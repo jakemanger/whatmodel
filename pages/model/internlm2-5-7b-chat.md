@@ -6,44 +6,126 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-06 · 7.74B params · other
 
-**score 48.5** ±1.7 · #480 of 934 · from 7 benchmark results across 2 sources
+**score 48.5** ±1.7 · #485 of 949 · from 7 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks InternLM2.5 7B Chat among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others          rank  counts  tests
+math  ▁▂▃▅●▅▄█▄▁▁▁   #294 of 400*     33%      2
+</pre>
+
+<details><summary>math · #294 of 400 · 33% of its score</summary>
+
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run    difficulty           counts  why
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K (lab)</a>                       86.0%  ▂▂▂▅▅▆▅▇●▇▄▃ beats 109/146  very easy · avg 89%     19%  sharp
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified) (lab)</a>   60.1%  ▂▄▄▃█●▅▆▄▃▄▁ beats 34/80    medium · avg 60%        14%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard (lab)</a>                 71.6%  ▁▁▁▁▂▄▅▅●▃▄▁ beats 96/129   easy · avg 75%       22%  sharp · at its level · small run
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU (lab)</a>                           72.8%  ▁▁▁▁▁▂▃▅█●▆▃ beats 123/183  easy · avg 78%       17%  at its level
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified) (lab)</a>      38.4%  ▂▁▂▂▄▃●▃▅█▄▃ beats 35/104   hard · avg 40%       15%  sharp
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   69.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 159/276  medium · avg 73%    5.7%  at its level · noisy
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU (lab)</a>                          78.0%  ▅·▅····●▃▅█▅ beats 5/14     easy · avg 75%      5.2%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="internlm-github-model-cards"></a>InternLM GitHub repos…  <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard (lab)</a>            71.6%    48.4   2024-07-03   23% ▇▇▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K (lab)</a>                     86.0%    47.6   2024-07-03   20% ▇▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU (lab)</a>                      72.8%    46.4   2024-07-03   17% ▇▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified) (la…</a>  38.4%    48.9   2024-07-03   15% ▇▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified) (la…</a>  60.1%    50.6   2024-07-03   12% ▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU (lab)</a>                     78.0%    53.2   2024-07-03    5% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  69.2%    47.5   2024-07-05    6% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 48.5
+source                                    results  share of the score
+<a name="internlm-github-model-cards"></a><a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">InternLM GitHub repository model cards …</a>        6   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    6% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 48.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: InternLM GitHub repository model cards ([Apache-2.0](https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~5.14GB   48.5
-8-bit q8_0    ~9.79GB   48.5
+download                      size  score
+4-bit q4_k_m               ~5.14GB   48.5
+8-bit q8_0                 ~9.79GB   48.5
+4-bit Q4_K_M                ~4.7GB   48.5
+8-bit Q8_0                  ~8.2GB   48.5
+4-bit mlx-4bit · mac only   ~4.4GB   48.5
+4-bit mlx-8bit · mac only   ~8.2GB   48.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run internlm2:7b-chat-v2.5-q4_K_M
-# 8-bit q8_0
-ollama run internlm2:7b-chat-v2.5-q8_0
+# 4-bit Q4_K_M · ~4.7GB
+llama cli -hf bartowski/internlm2_5-7b-chat-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/internlm2_5-7b-chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.2GB
+llama cli -hf bartowski/internlm2_5-7b-chat-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/internlm2_5-7b-chat-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.7GB
+lms get https://huggingface.co/bartowski/internlm2_5-7b-chat-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.2GB
+lms get https://huggingface.co/bartowski/internlm2_5-7b-chat-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.4GB
+lms get https://huggingface.co/mlx-community/internlm2_5-7b-chat-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~8.2GB
+lms get https://huggingface.co/mlx-community/internlm2_5-7b-chat-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.14GB
+ollama run internlm2:7b-chat-v2.5-q4_K_M
+# 8-bit q8_0 · ~9.79GB
+ollama run internlm2:7b-chat-v2.5-q8_0
+# 4-bit Q4_K_M · ~4.7GB
+ollama run hf.co/bartowski/internlm2_5-7b-chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.2GB
+ollama run hf.co/bartowski/internlm2_5-7b-chat-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.4GB
+mlx_lm.chat --model mlx-community/internlm2_5-7b-chat-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/internlm2_5-7b-chat-4bit
+# 4-bit mlx-8bit · mac only · ~8.2GB
+mlx_lm.chat --model mlx-community/internlm2_5-7b-chat-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/internlm2_5-7b-chat-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/internlm2-5-7b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

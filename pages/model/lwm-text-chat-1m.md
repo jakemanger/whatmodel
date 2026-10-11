@@ -6,36 +6,90 @@
 
 Large World Model (UC Berkeley) · released 2024-02
 
-**score 42.0** ±5.3 · #661 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.1** ±5.1 · #665 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks LWM-Text-Chat-1M among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>    68.1%  ▁▁·●·▂▃▄█▂·▁ beats 2/22   easy · avg 83%     67%  at its level
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>   65.0%  ▄··▂▄▂●██▄▄▂ beats 8/21   easy · avg 68%     22%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>               68.1%    38.5   2025-10-09   65% ▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>              65.0%    48.1   2025-10-09   22% ▇▇▇
-prior                   pull toward the middle           50.0                13% ▇▇
-                        weighted average               = 42.0
+source                                    results  share of the score
+<a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       12% ▇
+weighted average                                   = 42.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE))</sub>
 
 ## How to run it
 
 <pre>
-download        size  score
-4-bit fp16  ~13.48GB   42.0
+download          size  score
+4-bit fp16    ~13.48GB   42.1
+4-bit Q4_K_M    ~4.1GB   42.1
+8-bit Q8_0      ~7.2GB   42.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='LargeWorldModel/LWM-Text-Chat-1M', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~4.1GB
+llama cli -hf mradermacher/LWM-Text-Chat-1M-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/LWM-Text-Chat-1M-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.2GB
+llama cli -hf mradermacher/LWM-Text-Chat-1M-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/LWM-Text-Chat-1M-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.1GB
+lms get https://huggingface.co/mradermacher/LWM-Text-Chat-1M-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~7.2GB
+lms get https://huggingface.co/mradermacher/LWM-Text-Chat-1M-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.1GB
+ollama run hf.co/mradermacher/LWM-Text-Chat-1M-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.2GB
+ollama run hf.co/mradermacher/LWM-Text-Chat-1M-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp16 · ~13.48GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='LargeWorldModel/LWM-Text-Chat-1M', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/lwm-text-chat-1m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

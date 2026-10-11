@@ -6,24 +6,51 @@
 
 SHI Labs · released 2022-11 · mit
 
-**score 28.9** ±4.4 · #133 of 144 · from 3 benchmark results across 2 sources
+**score 29.0** ±4.4 · #133 of 144 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Versatile Diffusion v1.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                    score  implies  date        weight
-<a name="visual-imagereward"></a>ImageReward: Learning…  <a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of …</a>  340.0000 wins    28.0   2023-12-28   76% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30…</a>    18.4000 FID    21.9   2023-12-28   16% ▇▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>          26.6%    38.9   2024-02-21    0% ▇
-prior                   pull toward the middle                           49.9                 8% ▇
-                        weighted average                               = 28.9
+task           vs the others          rank  counts  tests
+text to image  ▂●▅▃▄▄█▃▁▂▁▁   #112 of 126*    0.5%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #112 of 126 · 0.5% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [VILA-U 7B (256px)](vila-u-7b-256.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   26.6%  ▃··▃▅·▅·●▅█▅ beats 7/14   hard · avg 27%    0.5%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                       result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of T2I …</a>  340.0000 wins  ▄·········●▄ beats 1/3    avg 526.557 wins     76%  sharp
+<a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30k at…</a>    18.4000 FID  ▄··········● beats 1/2    avg 7.871 FID        16%  blunt · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-imagereward"></a><a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward: Learning and Evaluating Hu…</a>        2   91% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">tgxs002/HPSv2 repository README</a>                 1    1% ▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 29.0
+</pre>
 
 <sub>Licences: ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 
@@ -31,14 +58,18 @@ prior                   pull toward the middle                           49.9   
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~7.2GB   28.9
+fp16 · nvidia only  ~7.2GB   29.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~7.2GB
 uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from diffusers import VersatileDiffusionTextToImagePipeline; p=VersatileDiffusionTextToImagePipeline.from_pretrained('shi-labs/versatile-diffusion', torch_dtype=torch.float16); p.remove_unused_weights(); p=p.to('cuda'); p('an astronaut riding on a horse on mars', generator=torch.Generator(device='cuda').manual_seed(0)).images[0].save('out.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/versatile-diffusion) · [JSON](https://whatmodel.sh/api?format=json&all=1)

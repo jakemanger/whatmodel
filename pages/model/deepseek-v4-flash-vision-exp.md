@@ -6,27 +6,77 @@
 
 DeepSeek · released 2026-08 · 304.6B params · mit
 
-**score 75.7** ±2.3 · #35 of 934 · from 8 benchmark results across 2 sources
+**score 75.7** ±2.3 · #35 of 949 · from 8 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks DeepSeek V4 Flash Vision (Exp) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+agent tasks         ▁▁▃▆█▆▅▄▄●▂▁     #32 of 334     57%      4
+coding              ▁▁▁▃▆██▇▆●▃▁    #73 of 469*     12%      1
+vision &amp; documents  ▁▁▃▂●▃▄▃▆▇█▄   #123 of 150*    0.8%      1
+</pre>
+
+<details><summary>agent tasks · #32 of 334 · 57% of its score</summary>
+
+Beats [GPT-5.4](gpt-5-4.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Terminal-Bench 2.1 (lab)</a>             83.9%  ▁·▁·▁▁▄▃▄█●▇ beats 43/56  hard · avg 22%           25%  small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>        59.3%  ▂····▁▁▁●██▆ beats 8/28   hard · avg 19%           12%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/harness…</a>   27.3%  ▂·▂·●▂···▂▄▄ beats 4/11   very hard · avg 7.1%     11%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Toolathlon-Verified (lab)</a>            75.9%  ▂·▂▂▅▃···▂●█ beats 12/18  hard · avg 33%          8.4%  blunt · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #73 of 469 · 12% of its score</summary>
+
+Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
+
+<pre>
+test                           result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>   59.3%  ▂····▁▁▁●██▆ beats 8/28   hard · avg 19%     12%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #123 of 150 · 0.8% of its score</summary>
+
+Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [Qwen2.5-VL 7B Instruct](qwen2-5-vl-7b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing (Av…</a>   50.1%  ●·▁·▂▂▅█·▁▂▂ beats 0/22   medium · avg 62%    0.8%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                            result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">NL2Repo (lab)</a>                    57.7%  ▂▂·▂▂▄█▆▆▂●▆ beats 18/21  very hard · avg 12%      17%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">CyberGym (lab)</a>                   75.3%  ▄···▄··▄●▄█▄ beats 3/8    hard · avg 31%           12%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">AutomationBench (Public) (lab)</a>   25.7%  █··········● beats 1/1    very hard · avg 6.2%     10%  at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-deepseek-ai-deepseek-v4-flash-vision-exp"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Terminal-Bench 2.1 (lab)</a>        83.9%    77.7   2026-08-31   25% ▇▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">NL2Repo (lab)</a>                   57.7%    77.9   2026-08-31   18% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>   59.3%    76.3   2026-08-31   13% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">CyberGym (lab)</a>                  75.3%    76.3   2026-08-31   12% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/har…</a>  27.3%    73.4   2026-08-31   11% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">AutomationBench (Public) (lab)</a>  25.7%    74.0   2026-08-31   10% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Toolathlon-Verified (lab)</a>       75.9%    82.0   2026-08-31    8% ▇
-<a name="paper-2605.07492v2-puredocbench"></a>How Far Is Document P…  <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing…</a>  50.1%     6.4   2026-09-27    1% ▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 75.7
+source                                    results  share of the score
+<a name="card3-deepseek-ai-deepseek-v4-flash-vision-exp"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">deepseek-ai/DeepSeek-V4-Flash-Vision-Ex…</a>        7   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2605.07492v2-puredocbench"></a><a href="https://arxiv.org/html/2605.07492v2">How Far Is Document Parsing from Solved…</a>        1    1% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 75.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: deepseek-ai/DeepSeek-V4-Flash-Vision-Exp model card ([MIT](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -41,15 +91,39 @@ download                      size  score
 4-bit fp8 · nvidia only  ~167.82GB   75.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit ud-q4_k_xl
-llama-server -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q2_K_XL
-# 4-bit fp8 · nvidia only
-sglang serve --model-path deepseek-ai/DeepSeek-V4-Flash-Vision-Exp --tp 4 --speculative-algorithm DSPARK
+# 4-bit ud-q4_k_xl · ~156.03GB
+llama cli -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q4_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl · ~97.76GB
+llama cli -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q2_K_XL
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit ud-q4_k_xl · ~156.03GB
+lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF@UD-Q4_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit ud-q2_k_xl · ~97.76GB
+lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp8 · nvidia only · ~167.82GB
+sglang serve --model-path deepseek-ai/DeepSeek-V4-Flash-Vision-Exp --tp 4 --speculative-algorithm DSPARK
+```
 
 [interactive version](https://whatmodel.sh/model/deepseek-v4-flash-vision-exp) · [JSON](https://whatmodel.sh/api?format=json&all=1)

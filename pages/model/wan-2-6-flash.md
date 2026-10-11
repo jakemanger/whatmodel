@@ -8,18 +8,36 @@ Alibaba · released 2026-01 · closed weights
 
 **score 55.2** ±6.9 · #37 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Wan 2.6 Flash among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>  56.0%    56.6   2026-09-10   80% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                20% ▇▇
-                        weighted average                       = 55.2
+task            vs the others        rank  counts  tests
+image to video  ▁▂·▂▅█●▄▅▆▃▄   #30 of 50*     80%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to video · #30 of 50 · 80% of its score</summary>
+
+Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Wan 2.2 I2V A14B](wan-2-2-i2v-a14b.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video reason…</a>   56.0%  ●··▄······▄█ beats 1/5    medium · avg 50%     80%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-vwg-bench"></a><a href="https://arxiv.org/html/2609.11242v1#S4.T2">From Evaluation to Enhancement: Benchma…</a>        1   80% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       20% ▇▇
+weighted average                                   = 55.2
+</pre>
 
 <sub>Licences: From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt))</sub>
 

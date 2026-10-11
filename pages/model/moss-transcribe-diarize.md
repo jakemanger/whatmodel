@@ -6,24 +6,39 @@
 
 OpenMOSS · released 2026-07 · 0.909B params · apache-2.0
 
-**score 53.6** ±3.4 · #80 of 160 · from 3 benchmark results across 1 source
+**score 53.6** ±3.5 · #82 of 162 · from 3 benchmark results across 1 source
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks MOSS-Transcribe-Diarize 0.9B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/moss-transcribe-diarize.json">LibriSpeech test-clean WER</a>       2.1%    52.8   2026-09-15   54% ▇▇▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/moss-transcribe-diarize.json">FLEURS English test WER</a>          5.1%    54.1   2026-09-15   21% ▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/moss-transcribe-diarize.json">FLEURS Mandarin test error ra…</a>   9.2%    56.0   2026-09-15   20% ▇▇
-prior                   pull toward the middle                   49.8                 4% ▇
-                        weighted average                       = 53.6
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                             result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/moss-transcribe-diarize.json">LibriSpeech test-clean WER</a>         2.1%  ▁···▁▁▂·▄▄●█ beats 24/56  avg 2.3%       54%  blunt
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/moss-transcribe-diarize.json">FLEURS English test WER</a>            5.1%  ▁··▁▁▁▁▁▁●█▁ beats 23/56  avg 5.8%       21%  blunt
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/moss-transcribe-diarize.json">FLEURS Mandarin test error rate</a>    9.2%  ▂▂··▂▄▂▂·▆●█ beats 10/17  avg 12%        20%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/moss-transcribe-diarize.json">transcribe.cpp model catalog · LibriSpe…</a>        3   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 53.6
+</pre>
 
 <sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
 
@@ -34,11 +49,15 @@ version                       needs  score
 q8_0-gguf (transcribe.cpp)  ~0.99GB   53.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# q8_0-gguf (transcribe.cpp)
+# q8_0-gguf (transcribe.cpp) · ~0.99GB
 git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/MOSS-Transcribe-Diarize-gguf MOSS-Transcribe-Diarize-Q8_0.gguf --local-dir models/moss-transcribe-diarize && build/bin/transcribe-cli --diarize -m models/moss-transcribe-diarize/MOSS-Transcribe-Diarize-Q8_0.gguf audio.wav
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/moss-transcribe-diarize) · [JSON](https://whatmodel.sh/api?format=json&all=1)

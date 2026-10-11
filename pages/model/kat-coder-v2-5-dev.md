@@ -6,24 +6,56 @@
 
 Kuaishou (Kwaipilot) · released 2026-07 · 35B params (3B active) · apache-2.0
 
-**score 70.3** ±1.6 · #81 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 70.2** ±1.6 · #85 of 949 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks KAT-Coder-V2.5-Dev (35B-A3B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others        rank  counts  tests
+agent tasks  ▁▁▃▆█▆▅●▄▃▂▁   #84 of 334     88%      4
+coding       ▁▁▁▃▆██▇▆●▃▁   #66 of 469     70%      4
+</pre>
+
+<details><summary>agent tasks · #84 of 334 · 88% of its score</summary>
+
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1 (lab)</a>             32.6%  ▄······█▄●█▄ beats 4/7    very hard · avg 7.1%     29%  at its level
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified (lab)</a>             69.4%  ▄▄·····▄▄▄▄● beats 7/7    hard · avg 17%           23%  sharp · at its level
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)…</a>   46.0%  ▄···▄···▄▄█● beats 7/7    very hard · avg 6.5%     23%  sharp · at its level
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual (lab)</a>         63.0%  ▄·▄·····█▄█● beats 7/7    hard · avg 18%           13%  at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #66 of 469 · 70% of its score</summary>
+
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified (lab)</a>             69.4%  ▄▄·····▄▄▄▄● beats 7/7    hard · avg 17%           23%  sharp · at its level
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)…</a>   46.0%  ▄···▄···▄▄█● beats 7/7    very hard · avg 6.5%     23%  sharp · at its level
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual (lab)</a>         63.0%  ▄·▄·····█▄█● beats 7/7    hard · avg 18%           13%  at its level
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SciCode (level unspecified) (lab)</a>    44.2%  ▄···▄▄█▄·▄·● beats 7/7    very hard · avg 13%      11%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-kwaipilot-kat-coder-v2-5-dev"></a>Kwaipilot/KAT-Coder-V…  <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1 (lab)</a>        32.6%    66.7   2026-07-23   29% ▇▇▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified (lab)</a>        69.4%    71.3   2026-07-23   24% ▇▇▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecif…</a>  46.0%    71.1   2026-07-23   23% ▇▇▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual (lab)</a>    63.0%    73.4   2026-07-23   12% ▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SciCode (level unspecified) (…</a>  44.2%    74.3   2026-07-23   11% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 70.3
+source                                    results  share of the score
+<a name="card3-kwaipilot-kat-coder-v2-5-dev"></a><a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Kwaipilot/KAT-Coder-V2.5-Dev model card…</a>        5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 70.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Kwaipilot/KAT-Coder-V2.5-Dev model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -32,18 +64,67 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md): Official card deployment section: 'create an API endpoint with maximum context length 262,144 tokens' (vLLM --max-model-len 262144; config max\_position\_embeddings 262144). Observed 2026-10-09.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~21.39GB   70.3
-8-bit q8_0    ~36.91GB   70.3
+download                       size  score
+4-bit q4_k_m               ~21.39GB   70.2
+8-bit q8_0                 ~36.91GB   70.2
+4-bit mlx-4bit · mac only   ~19.5GB   70.2
+4-bit mlx-8bit · mac only   ~36.8GB   70.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q4_K_M
-# 8-bit q8_0
-llama-server -hf bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q8_0
+# 4-bit q4_k_m · ~21.39GB
+llama cli -hf bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q4_K_M
+# 8-bit q8_0 · ~36.91GB
+llama cli -hf bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~21.39GB
+lms get https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~36.91GB
+lms get https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~19.5GB
+lms get https://huggingface.co/majentik/KAT-Coder-V2.5-Dev-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~36.8GB
+lms get https://huggingface.co/majentik/KAT-Coder-V2.5-Dev-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~21.39GB
+ollama run hf.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q4_K_M
+# 8-bit q8_0 · ~36.91GB
+ollama run hf.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~19.5GB
+mlx_lm.chat --model majentik/KAT-Coder-V2.5-Dev-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model majentik/KAT-Coder-V2.5-Dev-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~36.8GB
+mlx_lm.chat --model majentik/KAT-Coder-V2.5-Dev-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model majentik/KAT-Coder-V2.5-Dev-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/kat-coder-v2-5-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -8,21 +8,60 @@ Lightricks · released 2025-10 · 19B params · ltx-2-community
 
 **score 49.0** ±1.8 · #53 of 93 · from 4 benchmark results across 3 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LTX-2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1154.1    50.6   2026-09-22   53% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1159.4    47.0   2026-09-22   35% ▇▇▇▇
-<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>  1479.0    51.2   2026-05-06    8% ▇
-<a name="visual-phyground"></a>PhyGround: Benchmarki…  <a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evalu…</a>   51.2%    40.4   2026-05-11    3% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 49.0
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄▆●█▃▂▂▂▄   #34 of 68*     61%      2
+image to video  ▁▂·●▅█▅▄▅▆▃▄   #47 of 50*     35%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #34 of 68 · 61% of its score</summary>
+
+Beats [Wan 2.2 A14B](wan-2-2-a14b.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1154.1  ▂▂▃●█▆·▆▅▁▂▇ beats 7/41   avg 1147       53%  typical
+<a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Bradle…</a>  1479.0  █···█●·█··██ beats 2/5    avg 1470      7.6%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #47 of 50 · 35% of its score</summary>
+
+Trails [Wan 2.1 I2V Turbo](wan-2-1-i2v-turbo.md), [HunyuanVideo-I2V](hunyuanvideo-i2v.md), [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md) here, though they rank lower overall.
+
+<pre>
+test                  result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1159.4  ▁▁▁●▄▇▃▆▃▂▄█ beats 3/40   avg 1189       35%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   51.2%  ●▄▄··▄···▄·█ beats 0/7    medium · avg 57%    3.3%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-worldjen"></a><a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen: An End-to-End Multi-Dimension…</a>        1    8% ▇
+<a name="visual-phyground"></a><a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround: Benchmarking Physical Reason…</a>        1    3% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 49.0
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -33,11 +72,15 @@ version                                      needs  score
 bf16 MLX, dev two-stage HQ (mlx-video) …  ~119.6GB   49.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 MLX, dev two-stage HQ (mlx-video) · mac only
+# bf16 MLX, dev two-stage HQ (mlx-video) · mac only · ~119.6GB
 pip install git+https://github.com/Blaizzy/mlx-video.git@87db56a51758fefb748a359b90a5283bb8ba4837 && mlx_video.ltx_2.generate --pipeline dev-two-stage-hq --prompt "A cinematic scene of ocean waves at golden hour" --model-repo prince-canuma/LTX-2-dev
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ltx-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

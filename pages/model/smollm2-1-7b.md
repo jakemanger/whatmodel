@@ -6,37 +6,86 @@
 
 Hugging Face · released 2024-10 · 1.71B params · apache-2.0
 
-**score 30.4** ±1.1 · #841 of 934 · from 18 benchmark results across 5 sources
+**score 30.3** ±1.1 · #856 of 949 · from 18 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks SmolLM2 1.7B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃●██▇▆▄▃▁   #414 of 469*    7.1%      1
+chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂    #439 of 466     19%      4
+math            ▁▂●▅▆▅▄█▄▁▁▁    #371 of 400     28%      2
+</pre>
+
+<details><summary>coding · #414 of 469 · 7.1% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall.
+
+<pre>
+test             result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2502.02737v1">HumanEval (lab)</a>   28.1%  ▁▁▁▁▁●▅▅█▃▂▁ beats 28/190  easy · avg 80%    7.1%  sharp · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #439 of 466 · 19% of its score</summary>
+
+Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Minotaur 13B (fixed)](minotaur-13b-fixed.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1114.6  ▁▁▁●▃▃▃▆▆▇█▃ beats 19/379  avg 1268             11%  blunt
+<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>            51.6%  ▁●▁▃▁▄▁▁█▃▃▁ beats 1/22    easy · avg 80%      3.1%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>        5.8%  ●▃·▁▁█▇▅·▁·▁ beats 0/22    medium · avg 42%    2.3%  too hard for it
+<a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecified) …</a>   56.7%  ▁▁▃●▂▄▄▆█▃▂▁ beats 20/141  easy · avg 77%      2.1%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · #371 of 400 · 28% of its score</summary>
+
+Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       45.3%  ▂●··▃▂▅█▆▃▂▃ beats 1/22   very easy · avg 88%     21%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   20.3%  ●▃█▂▂▆·····▁ beats 0/22   medium · avg 62%       7.9%  small run · several runs
+</pre>
+
+</details>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                       39.8%  ▁●·▁▁·▅█·▄▄▁ beats 2/22    easy · avg 75%       15%  sharp · several runs
+<a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 34.3%  ●▂·▁·▁▁█·▃▃▅ beats 0/22    easy · avg 77%       12%  typical
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   29.9%  ●▂▂▂▃█▃▆▅▄▂▃ beats 1/95    easy · avg 66%      7.5%  at its level
+<a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                      66.1%  ▁▁▁▁▂▂▃●█▆▅▃ beats 33/85   easy · avg 86%      3.4%  at its level · small run
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       45.3%  ▃●▂·▃▃·▅█▂▅▂ beats 2/21    medium · avg 63%    2.4%  blunt · at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   50.2%  ▁▁▁▁▁▁●▂▄█▄▃ beats 19/146  easy · avg 83%      1.6%  at its level · noisy
+<a href="https://arxiv.org/html/2502.02737v1">PIQA (lab)</a>                           74.4%  ▁▁▁▃▃▄●█▄▃▁▁ beats 33/83   easy · avg 86%      1.6%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                16.4%  ▁▁▁●▃▃▁█▁▃·▄ beats 4/21    hard · avg 32%      1.6%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            45.3%    31.0   2025-10-08   12% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             34.3%    23.8   2025-10-08   12% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   39.8%    32.9   2025-10-08    8% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   45.3%    31.5   2025-10-08    5% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>        51.6%    29.0   2025-10-08    3% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        20.3%    30.4   2025-10-08    2% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>    5.8%    27.4   2025-10-08    2% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            16.4%    35.6   2025-10-08    2% ▇
-<a name="paper-2502.02737v1"></a>SmolLM2 paper           <a href="https://arxiv.org/html/2502.02737v1">GSM8K (lab)</a>                      48.8%    32.7   2025-02-04    9% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">BIG-Bench Hard (lab)</a>             32.2%    31.6   2025-02-04    7% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">HumanEval (lab)</a>                  28.1%    31.6   2025-02-04    7% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">MATH (subset unspecified) (la…</a>   21.0%    30.8   2025-02-04    5% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                  66.1%    34.4   2025-02-04    3% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecifi…</a>   56.7%    34.6   2025-02-04    2% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">PIQA (lab)</a>                       74.4%    28.5   2025-02-04    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1114.6    31.7   2026-10-02   10% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   29.9%    26.7   2026-08-11    7% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   50.2%    28.7   2026-04-17    2% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 30.4
+source                         results  share of the score
+<a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious</a>                     8   45% ▇▇▇▇▇
+<a name="paper-2502.02737v1"></a><a href="https://arxiv.org/html/2502.02737v1">SmolLM2 paper (lab)</a>                  7   34% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   11% ▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                     1    8% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                1    2% ▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 30.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · SmolLM2 paper ([CC BY 4.0](../../licenses/paper-2502.02737v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -45,18 +94,63 @@ prior                   pull toward the middle                    50.0          
 <sub>[context source](https://arxiv.org/abs/2502.02737v1): Context length from the maker's technical report.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~1.53GB   30.4
-8-bit q8_0    ~2.55GB   30.4
+download                      size  score
+4-bit q4_k_m               ~1.53GB   30.3
+8-bit q8_0                 ~2.55GB   30.3
+4-bit q4_k_m                ~1.1GB   30.3
+4-bit mlx-4bit · mac only     ~1GB   30.3
+4-bit mlx-8bit · mac only   ~1.8GB   30.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run smollm2:1.7b-instruct-q4_K_M
-# 8-bit q8_0
-ollama run smollm2:1.7b-instruct-q8_0
+# 4-bit q4_k_m · ~1.1GB
+llama cli -hf HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF:q4_k_m
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF:q4_k_m
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~1.1GB
+lms get https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF@q4_k_m -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~1GB
+lms get https://huggingface.co/Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~1.8GB
+lms get https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-Q8-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~1.53GB
+ollama run smollm2:1.7b-instruct-q4_K_M
+# 8-bit q8_0 · ~2.55GB
+ollama run smollm2:1.7b-instruct-q8_0
+# 4-bit q4_k_m · ~1.1GB
+ollama run hf.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF:q4_k_m
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~1GB
+mlx_lm.chat --model Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~1.8GB
+mlx_lm.chat --model HuggingFaceTB/SmolLM2-1.7B-Instruct-Q8-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model HuggingFaceTB/SmolLM2-1.7B-Instruct-Q8-mlx
+```
 
 [interactive version](https://whatmodel.sh/model/smollm2-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

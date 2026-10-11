@@ -6,30 +6,92 @@
 
 DeepSeek · released 2025-09 · 671B params (37B active) · mit
 
-**score 66.6** ±1.3 · #126 of 934 · from 11 benchmark results across 2 sources
+**score 66.5** ±1.3 · #126 of 949 · from 11 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks DeepSeek V3.1 Terminus among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others         rank  counts  tests
+agent tasks     ▁▁▃▆█▆●▄▄▃▂▁   #124 of 334     32%      5
+coding          ▁▁▁▃▆██▇●▄▃▁   #104 of 469     43%      4
+chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #92 of 466*     15%      1
+web search      █········█·●      #1 of 3*     12%      2
+</pre>
+
+<details><summary>agent tasks · #124 of 334 · 32% of its score</summary>
+
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Verified (lab)</a>             68.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 71/131  hard · avg 24%         9.2%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp-ZH (lab)</a>                  45.0%  ▁▁▁▁▁▃·▁●▅▄█ beats 10/23   hard · avg 16%         7.1%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Multilingual (lab)</a>         57.8%  ▁··▁▃▂●▇█▃▃▁ beats 19/60   hard · avg 24%         6.0%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp (lab)</a>                     38.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 12/42   very hard · avg 14%    5.4%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Terminal-Bench (pre-2.0 release) …</a>   36.7%  ▃·▃···▃▃▅·●█ beats 6/10    very hard · avg 14%    4.2%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #104 of 469 · 43% of its score</summary>
+
+Beats [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Aider polyglot (225 exercises, tw…</a>   76.1%  ▂▁▁▃▆▃▄▆█▃●▂ beats 63/71   very hard · avg 13%     22%  sharp · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Verified (lab)</a>             68.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 71/131  hard · avg 24%         9.2%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Multilingual (lab)</a>         57.8%  ▁··▁▃▂●▇█▃▃▁ beats 19/60   hard · avg 24%         6.0%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">LiveCodeBench (version unspecifie…</a>   74.9%  ▁···▁▁▃▅▅█▄● beats 34/37   medium · avg 40%       5.5%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #92 of 466 · 15% of its score</summary>
+
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [Qwen3.5 122B-A10B](qwen3-5-122b-a10b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Kimi K2 Instruct (0905)](kimi-k2-0905.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1417.2  ▁▁▁▂▃▃▃▆▆●█▃ beats 267/379  avg 1268       15%  blunt
+</pre>
+
+</details>
+
+<details><summary>web search · #1 of 3 · 12% of its score</summary>
+
+<pre>
+test                 result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp-ZH (lab)</a>   45.0%  ▁▁▁▁▁▃·▁●▅▄█ beats 10/23  hard · avg 16%         7.1%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp (lab)</a>      38.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 12/42  very hard · avg 14%    5.4%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                        result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">GPQA Diamond (lab)</a>           80.7%  ▁▁▁▁▂▄▅▅█●█▄ beats 201/310  hard · avg 43%           12%  sharp · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Humanity's Last Exam (lab)</a>   21.7%  ▁▁▁▃▆▆●██▆▁▃ beats 51/104   very hard · avg 4.8%    6.5%  small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">MMLU-Pro (lab)</a>               85.0%  ▁▁·▁▁▁▃▂▄▅●▁ beats 170/188  medium · avg 58%        6.0%  small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="card-deepseek-ai-deepseek-v3-1-terminus"></a>DeepSeek-V3.1-Terminu…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Aider polyglot (225 exercises…</a>   76.1%    66.2   2025-09-22   23% ▇▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">GPQA Diamond (lab)</a>               80.7%    65.9   2025-09-22   13% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Verified (lab)</a>         68.4%    67.3   2025-09-22    9% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp-ZH (lab)</a>              45.0%    63.4   2025-09-22    7% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Humanity's Last Exam (lab)</a>       21.7%    68.9   2025-09-22    7% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">MMLU-Pro (lab)</a>                   85.0%    66.4   2025-09-22    6% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Multilingual (lab)</a>     57.8%    66.3   2025-09-22    6% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">LiveCodeBench (version unspec…</a>   74.9%    68.1   2025-09-22    5% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp (lab)</a>                 38.5%    65.3   2025-09-22    5% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Terminal-Bench (pre-2.0 relea…</a>   36.7%    68.4   2025-09-22    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1417.2    68.0   2026-10-02   14% ▇▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 66.6
+source                                   results  share of the score
+<a name="card-deepseek-ai-deepseek-v3-1-terminus"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">DeepSeek-V3.1-Terminus model card (lab)</a>       10   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                    1   15% ▇▇
+prior: pull toward the middle                       1% ▇
+weighted average                                  = 66.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: DeepSeek-V3.1-Terminus model card ([MIT](https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -38,18 +100,69 @@ prior                   pull toward the middle                    50.0          
 <sub>[context source](https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/config.json): DeepSeek official configuration for DeepSeek-V3.1-Terminus (pinned commit): max\_position\_embeddings 163840 (yarn rope scaling, factor 40 over original 4096). Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~403.1GB   66.6
-8-bit q8_0    ~805.7GB   66.6
+download                       size  score
+4-bit q4_k_m               ~403.1GB   66.5
+8-bit q8_0                 ~805.7GB   66.5
+4-bit Q4_K_M               ~405.4GB   66.5
+8-bit Q8_0                 ~713.3GB   66.5
+2-bit UD-IQ2_XXS           ~217.1GB   66.5
+4-bit mlx-4bit · mac only  ~377.6GB   66.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
+# 4-bit Q4_K_M · ~405.4GB
+llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~713.3GB
+llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q8_0
+# 2-bit UD-IQ2_XXS · ~217.1GB
+llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:UD-IQ2_XXS
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:UD-IQ2_XXS
+```
+
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~405.4GB
+lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~713.3GB
+lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit UD-IQ2_XXS · ~217.1GB
+lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@UD-IQ2_XXS -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~377.6GB
+lms get https://huggingface.co/mlx-community/DeepSeek-V3.1-Terminus-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~403.1GB
 ollama run deepseek-v3.1:671b-terminus-q4_K_M
-# 8-bit q8_0
+# 8-bit q8_0 · ~805.7GB
 ollama run deepseek-v3.1:671b-terminus-q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~377.6GB
+mlx_lm.chat --model mlx-community/DeepSeek-V3.1-Terminus-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/DeepSeek-V3.1-Terminus-4bit
+```
 
 [interactive version](https://whatmodel.sh/model/deepseek-v3-1-terminus) · [JSON](https://whatmodel.sh/api?format=json&all=1)

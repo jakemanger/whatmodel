@@ -6,30 +6,56 @@
 
 FireRedTeam (Xiaohongshu) · released 2024-09 · 0.4B params · apache-2.0
 
-**score 48.1** ±2.6 · #70 of 117 · from 9 benchmark results across 3 sources
+**score 47.7** ±2.6 · #72 of 118 · from 9 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks FireRedTTS (v1) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-f5tts-report-ccby"></a>F5-TTS: A Fairytaler …  <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>     47.0%    46.5   2024-10-09   21% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker si…</a>     46.0%    45.3   2024-10-09   20% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker si…</a>     63.0%    50.9   2024-10-09   18% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>      2.7%    59.5   2024-10-09    9% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper la…</a>      3.8%    49.0   2024-10-09    8% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer…</a>      1.5%    58.3   2024-10-09    4% ▇
-<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human spea…</a>  2.36 / 5    48.0   2025-10-15   15% ▇▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.42 / 5     4.1   2026-03-15    2% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.61 / 5    27.4   2026-03-15    2% ▇
-prior                   pull toward the middle                      49.7                 3% ▇
-                        weighted average                          = 48.1
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁●▁▁▇█▃▃   #32 of 37     64%      5
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #32 of 37 · 64% of its score</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker simila…</a>     46.0%  ●·▂▂▂█▆▃▅··▂ beats 0/30   medium · avg 53%          19%  at its level
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker simila…</a>     63.0%  ●·▂··▂·█▄·▃▄ beats 0/25   medium · avg 62%          18%  at its level
+<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human speaker-…</a>  2.36 / 5  ●········█·▄ beats 0/3    medium · avg 2.47 / 5     15%  at its level
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper large-…</a>      3.8%  ▁···●▂▂▂█▆▄▂ beats 1/35   avg 3.6%                 7.2%  blunt
+<a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer CER</a>       1.5%  ▁·▂▁▁▁●▃▅█·▂ beats 8/30   avg 2.1%                 4.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>     47.0%  ●·········█▄ beats 0/3    medium · avg 52%        21%  at its level
+<a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5-TTS…</a>      2.7%  █·····█·●··█ beats 2/3    avg 4.1%               8.8%  typical
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.42 / 5  ▄●█·▄▄▄▄▄·▄█ beats 1/11   easy · avg 4.20 / 5    1.8%  blunt
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.61 / 5  █··●▄██▄·▄▄▄ beats 2/11   easy · avg 3.99 / 5    1.7%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-f5tts-report-ccby"></a><a href="https://arxiv.org/html/2410.06885v1">F5-TTS: A Fairytaler that Fakes Fluent …</a>        6   79% ▇▇▇▇▇▇▇▇▇
+<a name="speech-distar-report-ccby"></a><a href="https://arxiv.org/html/2510.12210v2">DiSTAR: Diffusion over a Scalable Token…</a>        1   15% ▇▇
+<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2    4% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 47.7
+</pre>
 
 <sub>Licences: F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching ([CC BY 4.0](../../licenses/speech-f5tts-report-ccby.txt)) · DiSTAR: Diffusion over a Scalable Token Autoregressive Representation for Speech Generation ([CC BY 4.0](../../licenses/speech-distar-report-ccby.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>
 
@@ -37,14 +63,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                                 needs  score
-fp32 (FireRedTTS repo) · nvidia only  ~3.09GB   48.1
+fp32 (FireRedTTS repo) · nvidia only  ~3.09GB   47.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (FireRedTTS repo) · nvidia only
+# fp32 (FireRedTTS repo) · nvidia only · ~3.09GB
 git clone -b main https://github.com/FireRedTeam/FireRedTTS.git && cd FireRedTTS && conda create --name redtts python=3.10 && conda activate redtts && conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 pytorch-cuda=12.1 -c pytorch -c nvidia && pip install -e . && pip install -r requirements.txt && huggingface-cli download FireRedTeam/FireRedTTS --local-dir pretrained_models && python -c "import os; import torchaudio; from fireredtts.fireredtts import FireRedTTS; tts = FireRedTTS(config_path='configs/config_24k.json', pretrained_path='pretrained_models'); rec_wavs = tts.synthesize(prompt_wav='examples/prompt_1.wav', text='小红书，是中国大陆的网络购物和社交平台，成立于二零一三年六月。', lang='zh'); rec_wavs = rec_wavs.detach().cpu(); out_wav_path = os.path.join('./example.wav'); torchaudio.save(out_wav_path, rec_wavs, 24000)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/fireredtts-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

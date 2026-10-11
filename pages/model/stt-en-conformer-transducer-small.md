@@ -6,25 +6,52 @@
 
 NVIDIA · released 2021-09 · 0.014B params · ngc-terms-of-use
 
-**score 42.5** ±3.1 · #131 of 160 · from 4 benchmark results across 2 sources
+**score 42.6** ±3.2 · #131 of 162 · from 4 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks STT En Conformer-Transducer Small among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.3%    41.1   2026-03-26   35% ▇▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  13.7%    46.5   2026-03-26   34% ▇▇▇▇
-<a name="speech-nemo-asr-scores-apache"></a>NVIDIA NeMo docs: ASR…  <a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-other WER (l…</a>   6.6%    37.9   2023-07-22   22% ▇▇▇
-                        <a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-clean WER (l…</a>   2.5%    40.6   2023-07-22    6% ▇
-prior                   pull toward the middle                   49.8                 4% ▇
-                        weighted average                       = 42.5
+task                    vs the others        rank  counts  tests
+long-form transcripti…  ▁▁▄●·▁▂█▄▁▁▁   #21 of 27*     35%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>long-form transcription · #21 of 27 · 35% of its score</summary>
+
+Beats [Distil-Whisper distil-large-v2](distil-large-v2.md), [STT En Conformer-Transducer Large](stt-en-conformer-transducer-large.md), [STT En FastConformer-Transducer Large](stt-en-fastconformer-transducer-large.md) here, though they rank higher overall.
+
+<pre>
+test                            result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   13.7%  ▁▁▅●·▃▅█▆▁▂▂ beats 6/30   avg 12%        35%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   10.3%  ▁▁▁▃··▁▁●██▆ beats 20/86   avg 8.2%       35%  blunt
+<a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-other WER (lab)</a>      6.6%  ▁▁▁▂●▃▅▄█▂▂▁ beats 7/54    avg 3.5%       21%  typical
+<a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-clean WER (lab)</a>      2.5%  ▁·▁·▁▁▁▁▃●█▆ beats 32/100  avg 1.8%      6.0%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            2   69% ▇▇▇▇▇▇▇▇
+<a name="speech-nemo-asr-scores-apache"></a><a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">NVIDIA NeMo docs: ASR scores tables (la…</a>        2   27% ▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 42.6
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · NVIDIA NeMo docs: ASR scores tables ([Apache-2.0](https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/LICENSE))</sub>
 
@@ -32,14 +59,18 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~0.57GB   42.5
+fp32 · nvidia only  ~0.57GB   42.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 · nvidia only
+# fp32 · nvidia only · ~0.57GB
 uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('stt_en_conformer_transducer_small').transcribe(['audio.wav']))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/stt-en-conformer-transducer-small) · [JSON](https://whatmodel.sh/api?format=json&all=1)

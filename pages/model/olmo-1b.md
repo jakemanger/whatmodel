@@ -6,27 +6,42 @@
 
 Allen Institute for AI · released 2024-02 · 1.18B params · apache-2.0
 
-**score 20.9** ±1.5 · #897 of 934 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 21.0** ±1.5 · #911 of 949 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks OLMo 1B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                 result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>   34.5%  ▃●······▃▅▃█ beats 1/8    easy · avg 88%          18%  sharp
+<a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>      58.9%  ▂····●·▂·▂▂█ beats 1/8    easy · avg 89%          15%  typical
+<a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>            88.1%  ▂·●···▂·▂·█▂ beats 1/8    very easy · avg 98%     14%  typical
+<a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>       62.5%  ▂·····●▂·▂·█ beats 1/8    very easy · avg 92%     13%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>      46.4%  ▄·····▄●▄██▄ beats 2/8    easy · avg 84%          12%  typical
+<a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>        58.1%  ▃···●·▃··▃▅█ beats 1/8    easy · avg 88%          11%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>           60.7%  ●····▃··█▃·▃ beats 0/8    easy · avg 92%          10%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>            73.7%  ▄····●·▄▄▄██ beats 1/8    easy · avg 88%         6.0%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>     34.5%    20.4   2024-06-07   20% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>        58.9%    18.8   2024-06-07   14% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>              88.1%    17.3   2024-06-07   13% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>        46.4%    28.8   2024-06-07   13% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>         62.5%    21.8   2024-06-07   13% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>          58.1%    19.5   2024-06-07   11% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>             60.7%    15.3   2024-06-07    9% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>              73.7%    22.7   2024-06-07    6% ▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 20.9
+source                                    results  share of the score
+<a name="paper-2402.00838v4"></a><a href="https://arxiv.org/html/2402.00838v4">OLMo: Accelerating the Science of Langu…</a>        8   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 21.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt))</sub>
 
@@ -35,15 +50,54 @@ prior                   pull toward the middle           50.0                 1%
 <sub>[context source](https://huggingface.co/allenai/OLMo-1B-hf/blob/aee7752d9c08ee4775e9b0091426d8410e8f6a89/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download       size  score
-4-bit fp32  ~4.71GB   20.9
+download         size  score
+4-bit fp32    ~4.71GB   21.0
+4-bit Q4_K_M   ~0.7GB   21.0
+8-bit Q8_0     ~1.3GB   21.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp32
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/OLMo-1B-hf')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~0.7GB
+llama cli -hf mradermacher/OLMo-1B-hf-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/OLMo-1B-hf-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.3GB
+llama cli -hf mradermacher/OLMo-1B-hf-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/OLMo-1B-hf-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~0.7GB
+lms get https://huggingface.co/mradermacher/OLMo-1B-hf-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~1.3GB
+lms get https://huggingface.co/mradermacher/OLMo-1B-hf-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~0.7GB
+ollama run hf.co/mradermacher/OLMo-1B-hf-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.3GB
+ollama run hf.co/mradermacher/OLMo-1B-hf-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp32 · ~4.71GB
+uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/OLMo-1B-hf')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/olmo-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

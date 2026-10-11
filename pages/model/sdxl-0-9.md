@@ -6,23 +6,42 @@
 
 Stability AI · released 2023-06 · 3.5B params · sdxl-0.9-research
 
-**score 39.6** ±6.3 · #108 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 39.8** ±6.3 · #108 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Stable Diffusion XL 0.9 (base) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  43.0%    37.3   2026-06-02   82% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  27.7%    54.9   2024-02-21    1% ▇
-prior                   pull toward the middle                   49.9                17% ▇▇
-                        weighted average                       = 39.6
+task           vs the others          rank  counts  tests
+text to image  ▂●▅▃▄▄█▃▁▂▁▁   #104 of 126*     83%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #104 of 126 · 83% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall. Trails [Emu3](emu3.md), [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md), [SSD-1B](ssd-1b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   43.0%  ▄·▆▂▆●▄▆▂▄·▄ beats 9/22   medium · avg 60%     82%  at its level
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   27.7%  ▃··▃▅·▅·▅▅█● beats 13/14  hard · avg 27%      1.1%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">tgxs002/HPSv2 repository README</a>                 1    1% ▇
+prior: pull toward the middle                       17% ▇▇
+weighted average                                   = 39.8
+</pre>
 
 <sub>Licences: WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 
@@ -30,17 +49,21 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~8.9GB   39.6
-q8_0 (sd.cpp --type)  ~4.9GB   39.6
+fp16 · nvidia only    ~8.9GB   39.8
+q8_0 (sd.cpp --type)  ~4.9GB   39.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~8.9GB
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-0.9', torch_dtype=torch.float16, use_safetensors=True).to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
-# q8_0 (sd.cpp --type)
+# q8_0 (sd.cpp --type) · ~4.9GB
 sd-cli -m models/sd_xl_base_0.9.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" -v
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/sdxl-0-9) · [JSON](https://whatmodel.sh/api?format=json&all=1)

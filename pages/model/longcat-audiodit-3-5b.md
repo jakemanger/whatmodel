@@ -6,31 +6,58 @@
 
 Meituan · released 2026-03 · 3.5B params · mit
 
-**score 66.0** ±2.0 · #9 of 117 · from 10 benchmark results across 2 sources
+**score 65.8** ±2.0 · #10 of 118 · from 10 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LongCat-AudioDiT-3.5B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>              8.5%    64.4   2026-07-27   19% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (pr…</a>  3.84 / 5    65.3   2026-07-27   15% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>              9.2%    64.8   2026-07-27   13% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · speaker si…</a>     80.6%    66.4   2026-07-27   11% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · speaker si…</a>     77.1%    66.0   2026-07-27   11% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker si…</a>     73.9%    67.8   2026-07-27    7% ▇
-<a name="card3-meituan-longcat-longcat-audiodit-3-5b"></a>meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-en · speaker si…</a>     78.6%    69.9   2026-04-03    9% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-zh · speaker si…</a>     81.8%    68.5   2026-04-03    8% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-en · Whisper la…</a>      1.5%    69.4   2026-04-03    4% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-zh · Paraformer…</a>      1.1%    65.3   2026-04-03    3% ▇
-prior                   pull toward the middle                      49.7                 2% ▇
-                        weighted average                          = 66.0
+task           vs the others      rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁▇█▃●   #4 of 37     43%      6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #4 of 37 · 43% of its score</summary>
+
+Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [dots.tts MF 2B (MeanFlow, NFE 4)](dots-tts-mf.md), [FireRedTTS3 (base)](fireredtts3-base.md) here, though they rank higher overall. Trails [dots.tts SOAR 2B](dots-tts-soar.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · speaker simila…</a>   80.6%  █·····●█···█ beats 1/3    medium · avg 58%     11%  typical
+<a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · speaker simila…</a>   77.1%  █····●··█··█ beats 1/3    medium · avg 54%     11%  typical
+<a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-en · speaker simila…</a>   78.6%  ▁·▂▂▂█▆▃●··▂ beats 27/30  medium · avg 53%    8.3%  at its level · small run
+<a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-zh · speaker simila…</a>   81.8%  ▁·▂··▂·█▄·▃● beats 25/25  medium · avg 62%    7.3%  small run
+<a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-en · Whisper large-…</a>    1.5%  ▁···▂▂▂▂█●▄▂ beats 28/35  avg 3.6%            3.3%  blunt · small run
+<a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-zh · Paraformer CER…</a>    1.1%  ▁·▂▁▁▁▂▃●█·▂ beats 16/30  avg 2.1%            2.5%  blunt · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>                  8.5%  █····●·█████ beats 1/6    avg 26%                   19%  sharp
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (predic…</a>  3.84 / 5  █·▄·●▄·▄···▄ beats 3/6    medium · avg 2.98 / 5     15%  at its level
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>                  9.2%  ▄▄▄···●··▄·█ beats 3/6    avg 23%                   14%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker simila…</a>     73.9%  ▄·····▄▄·▄●█ beats 4/6    medium · avg 49%         7.0%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report</a>             6   77% ▇▇▇▇▇▇▇▇▇
+<a name="card3-meituan-longcat-longcat-audiodit-3-5b"></a><a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">meituan-longcat/LongCat-AudioDiT-3.5B m…</a>        4   21% ▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 65.8
+</pre>
 
 <sub>Licences: Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · meituan-longcat/LongCat-AudioDiT-3.5B model card ([MIT](https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/LICENSE))</sub>
 
@@ -38,14 +65,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                                      needs  score
-fp32 weights (official LongCat-AudioDiT…  ~15.34GB   66.0
+fp32 weights (official LongCat-AudioDiT…  ~15.34GB   65.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 weights (official LongCat-AudioDiT repo, transformers>=5.3)
+# fp32 weights (official LongCat-AudioDiT repo, transformers>=5.3) · ~15.34GB
 git clone https://github.com/meituan-longcat/LongCat-AudioDiT.git && cd LongCat-AudioDiT && pip install -r requirements.txt && python inference.py --text "Today is a sunny day, let's go for a walk in the park." --output_audio output.wav --model_dir meituan-longcat/LongCat-AudioDiT-3.5B
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/longcat-audiodit-3-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

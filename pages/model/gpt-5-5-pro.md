@@ -6,24 +6,75 @@
 
 OpenAI · released 2026-04 · closed weights
 
-**score 82.2** ±1.1 · #8 of 934 · from 5 benchmark results across 2 sources
+**score 82.1** ±1.1 · #8 of 949 · from 5 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks GPT-5.5 Pro among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others         rank  counts  tests
+agent tasks  ▁▁▃▆█▆▅▄▄▃●▁   #15 of 334*     17%      2
+math         ▁▂▃▅▆▅▄█▄▁●▁   #10 of 400*     68%      2
+web search   ▂▂▂▆▄█▃●▁▁·▁    #14 of 81*     17%      2
+</pre>
+
+<details><summary>agent tasks · #15 of 334 · 17% of its score</summary>
+
+Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                     90.1%  ▄··█▄··▄·▄●▄ beats 6/8    hard · avg 32%         9.3%  typical
+<a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with tools (…</a>   57.2%  ▃·▃·▅····▅·● beats 6/8    very hard · avg 12%    7.4%  at its level
+</pre>
+
+</details>
+
+<details><summary>math · #10 of 400 · 68% of its score</summary>
+
+Beats [Claude Opus 5](claude-opus-5.md) here, though they rank higher overall. Trails [Claude Mythos Preview (limited preview)](claude-mythos-preview.md), [Claude Fable 5](claude-fable-5.md), [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      78.0%  ▁▂▁▂█▅▂●▁▁▁▁ beats 55/63  very hard · avg 0.1%     42%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   87.7%  ▂··▁▁▃▄▄█▅●▃ beats 75/82  very hard · avg 1.2%     26%  sharp
+</pre>
+
+</details>
+
+<details><summary>web search · #14 of 81 · 17% of its score</summary>
+
+Beats [Claude Fable 5.1](claude-fable-5-1.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md), [Claude Opus 5](claude-opus-5.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                     90.1%  ▄··█▄··▄·▄●▄ beats 6/8    hard · avg 32%         9.3%  typical
+<a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with tools (…</a>   57.2%  ▃·▃·▅····▅·● beats 6/8    very hard · avg 12%    7.4%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                        result  vs the others in its run  difficulty            counts  why
+<a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam (lab)</a>   43.1%  ▃··▃·▃▃···▃● beats 7/7    very hard · avg 4.4%     14%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          78.0%    83.0   2026-06-12   42% ▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       87.7%    82.4   2026-06-12   27% ▇▇▇
-<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam (lab)</a>      43.1%    79.4   2026-04-23   14% ▇▇
-                        <a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                90.1%    84.8   2026-04-23    9% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with too…</a>  57.2%    81.4   2026-04-23    7% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 82.2
+source                                    results  share of the score
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        2   68% ▇▇▇▇▇▇▇▇
+<a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5-5">OpenAI vendor-reported benchmark scores…</a>        3   31% ▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 82.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

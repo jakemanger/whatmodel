@@ -6,27 +6,75 @@
 
 JetBrains · released 2026-05 · 12.15B params (2.5B active) · apache-2.0
 
-**score 50.4** ±1.7 · #421 of 934 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.2** ±1.7 · #438 of 949 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Mellum2 12B-A2.5B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃▆█●▅▄▄▃▂▁   #189 of 334*     10%      2
+coding          ▁▁▁▃▆●█▇▆▄▃▁   #319 of 469*     26%      2
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #261 of 466*    4.0%      1
+</pre>
+
+<details><summary>agent tasks · #189 of 334 · 10% of its score</summary>
+
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL V4 (December 2025 archive) (…</a>   44.2%  ▁▁▁▂▇▆▆●█▂▄▂ beats 60/111   medium · avg 36%    6.7%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL v3 (lab)</a>                        66.3%  ▁▁▁▁▁▃▅█▆●▄▁ beats 129/170  medium · avg 56%    3.6%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #319 of 469 · 26% of its score</summary>
+
+Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">LiveCodeBench v6 (window unspecif…</a>   37.2%  ▂▃●▄▅██▅▄▇▃▆ beats 6/65   hard · avg 34%       20%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MultiPL-E (lab)</a>                      67.1%  ▃··▄·▅▅●▄█▃▄ beats 17/31  medium · avg 55%    5.1%  at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #261 of 466 · 4.0% of its score</summary>
+
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">IFEval (aggregation unspecified) …</a>   75.8%  ▁▁▃▁▂●▄▆█▃▂▁ beats 45/141  easy · avg 76%    4.0%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GPQA Diamond (lab)</a>   40.9%  ▁▁▁▁▂●▅▅███▄ beats 53/310  hard · avg 47%     34%  sharp · at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MMLU-Redux (lab)</a>     78.1%  ▁▁▃▁●▃▄▅▇▅█▄ beats 8/63    easy · avg 78%     21%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GSM-Plus (lab)</a>       80.5%  ▁··▁▁▁·●▁▄█▁ beats 5/16    easy · avg 82%    4.0%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-jetbrains-mellum2-12b-a2-5b-instruct"></a>JetBrains/Mellum2-12B…  <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GPQA Diamond (lab)</a>              40.9%    46.9   2026-08-13   35% ▇▇▇▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MMLU-Redux (lab)</a>                78.1%    50.0   2026-08-13   21% ▇▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">LiveCodeBench v6 (window unsp…</a>  37.2%    51.9   2026-08-13   20% ▇▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL V4 (December 2025 archiv…</a>  44.2%    56.6   2026-08-13    7% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MultiPL-E (lab)</a>                 67.1%    58.0   2026-08-13    5% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">IFEval (aggregation unspecifi…</a>  75.8%    49.8   2026-08-13    4% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL v3 (lab)</a>                   66.3%    60.6   2026-08-13    4% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GSM-Plus (lab)</a>                  80.5%    46.6   2026-08-13    4% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 50.4
+source                                    results  share of the score
+<a name="card3-jetbrains-mellum2-12b-a2-5b-instruct"></a><a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">JetBrains/Mellum2-12B-A2.5B-Instruct mo…</a>        8   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 50.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: JetBrains/Mellum2-12B-A2.5B-Instruct model card ([Apache-2.0](https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md))</sub>
 
@@ -36,14 +84,74 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~24.3GB   50.4
+16-bit bf16 · nvidia only  ~24.3GB   50.2
+4-bit Q4_K_M                ~8.2GB   50.2
+8-bit Q8_0                 ~12.9GB   50.2
+4-bit mlx-4bit · mac only   ~6.8GB   50.2
+4-bit mlx-8bit · mac only  ~12.9GB   50.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-vllm serve JetBrains/Mellum2-12B-A2.5B-Instruct
+# 4-bit Q4_K_M · ~8.2GB
+llama cli -hf bartowski/Mellum2-12B-A2.5B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Mellum2-12B-A2.5B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~12.9GB
+llama cli -hf bartowski/Mellum2-12B-A2.5B-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Mellum2-12B-A2.5B-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~8.2GB
+lms get https://huggingface.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~12.9GB
+lms get https://huggingface.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~6.8GB
+lms get https://huggingface.co/mlx-community/Mellum2-12B-A2.5B-Instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~12.9GB
+lms get https://huggingface.co/mlx-community/Mellum2-12B-A2.5B-Instruct-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~8.2GB
+ollama run hf.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~12.9GB
+ollama run hf.co/bartowski/Mellum2-12B-A2.5B-Instruct-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~6.8GB
+mlx_lm.chat --model mlx-community/Mellum2-12B-A2.5B-Instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Mellum2-12B-A2.5B-Instruct-4bit
+# 4-bit mlx-8bit · mac only · ~12.9GB
+mlx_lm.chat --model mlx-community/Mellum2-12B-A2.5B-Instruct-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Mellum2-12B-A2.5B-Instruct-8bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~24.3GB
+vllm serve JetBrains/Mellum2-12B-A2.5B-Instruct
+```
 
 [interactive version](https://whatmodel.sh/model/mellum2-12b-a2-5b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

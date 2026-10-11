@@ -6,25 +6,42 @@
 
 PolyAI · released 2024-01 · 0.3B params · cc-by-4.0
 
-**score 37.6** ±3.3 · #92 of 117 · from 4 benchmark results across 3 sources
+**score 37.4** ±3.3 · #92 of 118 · from 4 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Pheme 300M among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  3.35 / 5    36.5   2025-05-11   82% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.99 / 5    38.5   2025-05-11    7% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     87.1%    41.5   2025-05-15    5% ▇
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     84.9%    40.8   2025-04-25    1% ▇
-prior                   pull toward the middle                      49.7                 4% ▇
-                        weighted average                          = 37.6
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  3.35 / 5  ▅·█▅▅·●▃▃▅·▅ beats 9/17   easy · avg 4.03 / 5       82%  at its level
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.99 / 5  ▅··▃▅··▅●▅██ beats 8/17   medium · avg 3.30 / 5    7.2%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     87.1%  ▂▂█·▂·█●▂·▄▂ beats 12/17  very easy · avg 89%      5.3%  blunt
+<a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>     84.9%  ▂▂····▃·▃●▂█ beats 6/14   very easy · avg 86%      1.0%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                 results  share of the score
+<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                2   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>        1    5% ▇
+<a name="speech-ttsds-v1-mit"></a><a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 published results</a>                   1    1% ▇
+prior: pull toward the middle                     4% ▇
+weighted average                                = 37.4
+</pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
 
@@ -32,14 +49,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                                    needs  score
-fp32 (PolyAI-LDN/pheme repo) · nvidia o…  ~3.6GB   37.6
+fp32 (PolyAI-LDN/pheme repo) · nvidia o…  ~3.6GB   37.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (PolyAI-LDN/pheme repo) · nvidia only
+# fp32 (PolyAI-LDN/pheme repo) · nvidia only · ~3.6GB
 git clone https://github.com/PolyAI-LDN/pheme && cd pheme && conda create --name pheme3 python=3.10 && conda activate pheme3 && pip3 install torch torchvision torchaudio && pip3 install -r requirements.txt --no-deps && mkdir -p ckpt/speechtokenizer && wget -P ckpt/speechtokenizer "https://huggingface.co/fnlp/SpeechTokenizer/resolve/main/speechtokenizer_hubert_avg/SpeechTokenizer.pt" "https://huggingface.co/fnlp/SpeechTokenizer/resolve/main/speechtokenizer_hubert_avg/config.json" && wget -P ckpt "https://huggingface.co/fnlp/USLM/resolve/main/USLM_libritts/unique_text_tokens.k2symbols" && export HUGGING_FACE_HUB_TOKEN=YOUR_PRIVATE_TOKEN && git clone https://huggingface.co/PolyAI/pheme ckpt/pheme && mkdir -p ckpt/t2s ckpt/s2a && mv ckpt/pheme/config_t2s.json ckpt/t2s/config.json && mv ckpt/pheme/generation_config.json ckpt/t2s/generation_config.json && mv ckpt/pheme/t2s.bin ckpt/t2s/pytorch_model.bin && mv ckpt/pheme/config_s2a.json ckpt/s2a/config.json && mv ckpt/pheme/s2a.ckpt ckpt/s2a/s2a.ckpt && python transformer_infer.py
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/pheme-300m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

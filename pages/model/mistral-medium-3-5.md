@@ -6,41 +6,117 @@
 
 Mistral · released 2026-04 · 128B params · modified-mit
 
-**score 64.3** ±0.9 · #155 of 934 · from 22 benchmark results across 5 sources
+**score 64.5** ±0.9 · #163 of 949 · from 22 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Mistral Medium 3.5 (128B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+agent tasks         ▁▁▃▆█▆▅●▄▃▂▁    #103 of 334     28%      8
+coding              ▁▁▁▃▆██●▆▄▃▁    #149 of 469     18%      3
+chat &amp; writing      ▁▁▁▄▆▅▆█▆●▆▂    #81 of 466*    7.0%      1
+math                ▁▂▃▅▆▅●█▄▁▁▁   #177 of 400*    9.5%      2
+vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄    #75 of 150*    4.8%      1
+</pre>
+
+<details><summary>agent tasks · #103 of 334 · 28% of its score</summary>
+
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+
+<pre>
+test                                     result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.1238 IPS  ▁●▁▄▂▃▇█▂▂▁▃ beats 1/49   avg -0.312 IPS           14%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>                       33.3%  ▄········█●▄ beats 3/5    very hard · avg 4.5%    3.2%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>                       6.1%  ▄▄····●···█▄ beats 2/5    very hard · avg 1.8%    3.0%  too hard for it
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>                    30.7%  ▄●▄·······█▄ beats 1/5    hard · avg 19%          2.6%  at its level
+<a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-based…</a>        41.9%  ▂·▁▁··●▇█▂·▁ beats 4/25   hard · avg 29%          2.0%  blunt · at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                        69.6%  ▄··········● beats 2/5    hard · avg 16%          1.9%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>                           5.8%  ●·▄▄······▄▄ beats 0/5    very hard · avg 5.1%    0.8%  blunt
+<a href="https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md#agentic-benchmarks">τ³-bench telecom (tau2-bench ≥ v1…</a>        91.4%  ▄·▄●▂··▂▂·▂▄ beats 6/13   medium · avg 62%           —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>coding · #149 of 469 · 18% of its score</summary>
+
+Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1262.9  ▁▂▄●▅█▄▇▆▄▁▁ beats 16/119  avg 981              12%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   84.9%  ▄······●▄▄·█ beats 1/5     medium · avg 50%    3.2%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                   69.6%  ▄··········● beats 2/5     hard · avg 16%      1.9%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #81 of 466 · 7.0% of its score</summary>
+
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1426.9  ▁▁▁▂▃▃▃▆▆●█▃ beats 282/379  avg 1268      7.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #177 of 400 · 9.5% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [Olmo 3 7B Think DPO](olmo-3-7b-think-dpo.md) here, though they rank lower overall.
+
+<pre>
+test                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            89.0%  ▄●··▄····█·▄ beats 1/5    medium · avg 64%    6.5%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>   62.9%  ●▄▄········█ beats 1/5    hard · avg 31%      2.9%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #75 of 150 · 4.8% of its score</summary>
+
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [GPT-4.1](gpt-4-1.md), [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run   difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1199.5  ▁▁▂▂▂▂▄▅●▆██ beats 70/145  avg 1068      4.8%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (9)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                         77.5%  █···█●·█··██ beats 2/5    hard · avg 42%           15%  sharp · at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                             81.2%  ▄·▄●····▄··█ beats 2/5    medium · avg 55%        4.9%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>                 12.8%  █●······▄·▄▄ beats 2/5    very hard · avg 4.7%    4.8%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)</a>    69.0%  ▄···▄●··▄··█ beats 2/5    medium · avg 43%        3.2%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                       49.8%  █··▄·●·····█ beats 3/5    hard · avg 25%          2.6%  at its level
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   14.9%  ▁▁●▂▂▄▁▃▄▄▄█ beats 3/38   very hard · avg 14%     2.2%  at its level
+<a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   90.3%  ▂·▂··▂·▄▂·●▆ beats 9/12   medium · avg 64%        1.3%  noisy
+<a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                              76.7%  ●·▃·▅▅▃···▃▃ beats 1/10   easy · avg 71%          0.6%  blunt
+<a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   75.7%  ▄·▄▄▄·●██▄█▄ beats 4/12   easy · avg 65%          0.5%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                  score  implies  date        weight
-<a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                          77.5%    65.1   2026-07-24   15% ▇▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>                             89.0%    61.2   2026-07-24    7% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                              81.2%    64.7   2026-07-24    5% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>                  12.8%    61.2   2026-07-24    5% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>        69.0%    65.3   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>        84.9%    67.7   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>                    62.9%    59.8   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>                   33.3%    71.8   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>                   6.1%    62.4   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                        49.8%    66.1   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>                30.7%    56.6   2026-07-24    2% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>                       5.8%    57.3   2026-07-24    2% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                    69.6%    72.1   2026-07-24    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.1238 IPS    65.4   2026-10-02   13% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1262.9    62.6   2026-10-01   12% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1426.9    69.1   2026-10-02    7% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>       1199.5    66.2   2026-10-02    5% ▇
-<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>        90.3%    72.5   2026-09-12    1% ▇
-                        <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                               76.7%    63.8   2026-09-12    1% ▇
-                        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>        75.7%    66.5   2026-09-12    0% ▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>        14.9%    53.6   2026-09-26    2% ▇
-<a name="paper-2609.31632v1-eegagentbench"></a>EEGAgentBench: Benchm…  <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-b…</a>        41.9%    65.4   2026-09-10    2% ▇
-prior                   pull toward the middle                         50.0                 0% ▇
-                        weighted average                             = 64.3
+source                                    results  share of the score
+<a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report</a>                  13   55% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   38% ▇▇▇▇▇
+<a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere</a>                                          3    2% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    2% ▇
+<a name="paper-2609.31632v1-eegagentbench"></a><a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench: Benchmarking LLM Agents …</a>        1    2% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 64.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -60,18 +136,52 @@ api (Mistral AI) · $3.00/M blended · $1.5 in / $7.5 out per 1M tokens · [docs
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output.  Product: La Plateforme chat completions. API model: mistral-medium-3-5. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
 <pre>
-download             size  score
-4-bit q4_k_m      ~77.3GB   64.3
-2-bit ud-q2_k_xl  ~38.9GB   64.3
+download                      size  score
+4-bit q4_k_m               ~77.3GB   64.5
+2-bit ud-q2_k_xl           ~38.9GB   64.5
+4-bit mlx-4bit · mac only  ~75.4GB   64.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run mistral-medium-3.5:128b
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/Mistral-Medium-3.5-128B-GGUF:UD-Q2_K_XL
+# 2-bit ud-q2_k_xl · ~38.9GB
+llama cli -hf unsloth/Mistral-Medium-3.5-128B-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Mistral-Medium-3.5-128B-GGUF:UD-Q2_K_XL
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 2-bit ud-q2_k_xl · ~38.9GB
+lms get https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~75.4GB
+lms get https://huggingface.co/froggeric/Mistral-Medium-3.5-128B-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~77.3GB
+ollama run mistral-medium-3.5:128b
+# 2-bit ud-q2_k_xl · ~38.9GB
+ollama run hf.co/unsloth/Mistral-Medium-3.5-128B-GGUF:UD-Q2_K_XL
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~75.4GB
+mlx_lm.chat --model froggeric/Mistral-Medium-3.5-128B-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model froggeric/Mistral-Medium-3.5-128B-MLX-4bit
+```
 
 [interactive version](https://whatmodel.sh/model/mistral-medium-3-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

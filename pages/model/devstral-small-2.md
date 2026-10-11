@@ -6,22 +6,51 @@
 
 Mistral · released 2025-12 · 24B params · apache-2.0
 
-**score 61.2** ±2.7 · #198 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.9** ±2.7 · #207 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Devstral Small 2 24B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ●··········█        #2 of 2     97%      3
+coding       ▁▁▁▃▆██▇●▄▃▁   #130 of 469*     65%      2
+</pre>
+
+<details><summary>agent tasks · #2 of 2 · 97% of its score</summary>
+
+<pre>
+test                          result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       68.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 69/131  hard · avg 32%          40%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>       22.5%  ▂▂●▅████▆▂▃▃ beats 3/36    very hard · avg 11%     32%  at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   55.7%  ▁··▁▃▂●▇█▃▃▁ beats 16/60   hard · avg 30%          25%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #130 of 469 · 65% of its score</summary>
+
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall.
+
+<pre>
+test                          result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       68.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 69/131  hard · avg 32%     40%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   55.7%  ▁··▁▃▂●▇█▃▃▁ beats 16/60   hard · avg 30%     25%  at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                          score  implies  date        weight
-<a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a>mistralai/Devstral-Sm…  <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>      68.0%    63.9   2026-09-25   40% ▇▇▇▇▇
-                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>      22.5%    57.7   2026-09-25   31% ▇▇▇▇
-                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>  55.7%    62.5   2026-09-25   25% ▇▇▇
-prior                   pull toward the middle                 50.0                 3% ▇
-                        weighted average                     = 61.2
+source                                    results  share of the score
+<a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24B-Instruct…</a>        3   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 60.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: mistralai/Devstral-Small-2-24B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt))</sub>
 
@@ -30,18 +59,73 @@ prior                   pull toward the middle                 50.0             
 <sub>[context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/mistral/devstral-small-2.toml): model catalogue context ceiling (not a promise by a hosted API)</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~14.9GB   61.2
-8-bit q8_0    ~29.3GB   61.2
+download                      size  score
+4-bit q4_k_m               ~14.9GB   60.9
+8-bit q8_0                 ~29.3GB   60.9
+4-bit Q4_K_M               ~14.3GB   60.9
+8-bit Q8_0                 ~25.1GB   60.9
+4-bit mlx-4bit · mac only  ~15.1GB   60.9
+4-bit mlx-8bit · mac only  ~26.6GB   60.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run devstral-small-2:24b
-# 8-bit q8_0
-ollama run devstral-small-2:24b-instruct-2512-q8_0
+# 4-bit Q4_K_M · ~14.3GB
+llama cli -hf lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~25.1GB
+llama cli -hf lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~14.3GB
+lms get https://huggingface.co/lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~25.1GB
+lms get https://huggingface.co/lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~15.1GB
+lms get https://huggingface.co/mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~26.6GB
+lms get https://huggingface.co/mlx-community/mistralai_Devstral-Small-2-24B-Instruct-2512-MLX-8Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~14.9GB
+ollama run devstral-small-2:24b
+# 8-bit q8_0 · ~29.3GB
+ollama run devstral-small-2:24b-instruct-2512-q8_0
+# 4-bit Q4_K_M · ~14.3GB
+ollama run hf.co/lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~25.1GB
+ollama run hf.co/lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~15.1GB
+mlx_lm.chat --model mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit
+# 4-bit mlx-8bit · mac only · ~26.6GB
+mlx_lm.chat --model mlx-community/mistralai_Devstral-Small-2-24B-Instruct-2512-MLX-8Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/mistralai_Devstral-Small-2-24B-Instruct-2512-MLX-8Bit
+```
 
 [interactive version](https://whatmodel.sh/model/devstral-small-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,23 +6,51 @@
 
 Ai2 · released 2025-12 · 32.2B params · apache-2.0
 
-**score 54.6** ±2.0 · #320 of 934 · from 4 benchmark results across 3 sources
+**score 54.7** ±2.0 · #326 of 949 · from 4 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Olmo 3.1 32B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #192 of 466*     35%      1
+</pre>
+
+<details><summary>chat &amp; writing · #192 of 466 · 35% of its score</summary>
+
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1329.2  ▁▁▁▂▃▃▃●▆▇█▃ beats 168/379  avg 1268       35%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4560  ▁▄▃▃●▄█▃▅▁▁▁ beats 11/30   avg 0.423            54%  sharp
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   76.7%  ▃·▁▁▂▁▂▅●▇▄▁ beats 64/100  medium · avg 68%    5.5%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   84.5%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 96/146  easy · avg 83%      3.1%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.4560    53.3   2026-05-02   56% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1329.2    57.4   2026-10-02   33% ▇▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   76.7%    54.9   2026-04-17    6% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   84.5%    51.6   2026-04-17    3% ▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 54.6
+source                                    results  share of the score
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        1   54% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   35% ▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    9% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 54.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -31,18 +59,73 @@ prior                   pull toward the middle                    50.0          
 <sub>[context source](https://arxiv.org/abs/2512.13961v2): Context length from the maker's technical report.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~19.82GB   54.6
-8-bit q8_0    ~39.14GB   54.6
+download                       size  score
+4-bit q4_k_m               ~19.82GB   54.7
+8-bit q8_0                 ~39.14GB   54.7
+4-bit Q4_K_M                ~19.5GB   54.7
+8-bit Q8_0                  ~34.3GB   54.7
+4-bit mlx-4bit · mac only   ~18.1GB   54.7
+4-bit mlx-8bit · mac only   ~34.2GB   54.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run olmo-3.1:32b-instruct-q4_K_M
-# 8-bit q8_0
-ollama run olmo-3.1:32b-instruct-q8_0
+# 4-bit Q4_K_M · ~19.5GB
+llama cli -hf lmstudio-community/Olmo-3.1-32B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Olmo-3.1-32B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~34.3GB
+llama cli -hf lmstudio-community/Olmo-3.1-32B-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Olmo-3.1-32B-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~19.5GB
+lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~34.3GB
+lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~18.1GB
+lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Instruct-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~34.2GB
+lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Instruct-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~19.82GB
+ollama run olmo-3.1:32b-instruct-q4_K_M
+# 8-bit q8_0 · ~39.14GB
+ollama run olmo-3.1:32b-instruct-q8_0
+# 4-bit Q4_K_M · ~19.5GB
+ollama run hf.co/lmstudio-community/Olmo-3.1-32B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~34.3GB
+ollama run hf.co/lmstudio-community/Olmo-3.1-32B-Instruct-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~18.1GB
+mlx_lm.chat --model lmstudio-community/Olmo-3.1-32B-Instruct-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Olmo-3.1-32B-Instruct-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~34.2GB
+mlx_lm.chat --model lmstudio-community/Olmo-3.1-32B-Instruct-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Olmo-3.1-32B-Instruct-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/olmo-3-1-32b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,22 +6,42 @@
 
 Cohere · released 2025-03 · 33.1B params · cc-by-nc-4.0
 
-**score 42.6** ±3.0 · #648 of 934 · from 3 benchmark results across 3 sources
+**score 42.4** ±3.0 · #659 of 949 · from 3 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Aya Vision 32B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others         rank  counts  tests
+vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄   #137 of 150     96%      3
+</pre>
+
+<details><summary>vision &amp; documents · #137 of 150 · 96% of its score</summary>
+
+Beats [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Gemma 3 4B](gemma-3-4b.md), [CogVLM2 Llama3 Chat 19B](cogvlm2-llama3-chat-19b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1000.2  ▁▁▂●▂▂▄▅▅▆██ beats 11/145  avg 1068                57%  blunt
+<a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language multimo…</a>   39.3%  █·●···█·█·██ beats 1/5     medium · avg 47%        31%  at its level
+<a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   22.5%  ●······▃·▅·█ beats 1/7     very hard · avg 36%    8.7%  too hard for it · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1000.2    42.0   2026-10-02   57% ▇▇▇▇▇▇▇
-<a name="paper-2504.07072v2-kaleidoscope"></a>Kaleidoscope: In-lang…  <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language mul…</a>   39.3%    45.7   2025-04-29   31% ▇▇▇▇
-<a name="paper-2508.13680v5-vmmu"></a>VMMU: A Vietnamese Mu…  <a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal u…</a>   22.5%    31.6   2026-09-23    9% ▇
-prior                   pull toward the middle                    50.0                 4% ▇
-                        weighted average                        = 42.6
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   57% ▇▇▇▇▇▇▇
+<a name="paper-2504.07072v2-kaleidoscope"></a><a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope: In-language Exams for Mas…</a>        1   31% ▇▇▇▇
+<a name="paper-2508.13680v5-vmmu"></a><a href="https://arxiv.org/html/2508.13680v5">VMMU: A Vietnamese Multitask Multimodal…</a>        1    9% ▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 42.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VMMU: A Vietnamese Multitask Multimodal Understanding and Reasoning Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -33,14 +53,18 @@ api (Cohere) · price unknown · [docs.cohere.com](https://docs.cohere.com/docs/
 
 <pre>
 download        size  score
-4-bit fp16  ~66.28GB   42.6
+4-bit fp16  ~66.28GB   42.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp16
+# 4-bit fp16 · ~66.28GB
 pip install 'git+https://github.com/huggingface/transformers.git@v4.49.0-AyaVision' torch accelerate && python -c "import torch; from transformers import AutoProcessor, AutoModelForImageTextToText; r='CohereLabs/aya-vision-32b'; p=AutoProcessor.from_pretrained(r); m=AutoModelForImageTextToText.from_pretrained(r, device_map='auto', torch_dtype=torch.float16); i=p.apply_chat_template([{'role': 'user', 'content': [{'type': 'image', 'url': 'https://pbs.twimg.com/media/Fx7YvfQWYAIp6rZ?format=jpg&name=medium'}, {'type': 'text', 'text': 'What does the text in the image say?'}]}], padding=True, add_generation_prompt=True, tokenize=True, return_dict=True, return_tensors='pt').to(m.device); g=m.generate(**i, max_new_tokens=300, do_sample=True, temperature=0.3); print(p.tokenizer.decode(g[0][i['input_ids'].shape[-1]:], skip_special_tokens=True))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/aya-vision-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

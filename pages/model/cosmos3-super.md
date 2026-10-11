@@ -8,19 +8,46 @@ NVIDIA · released 2026-05 · 64B params · openmdw-1.1
 
 **score 58.0** ±4.4 · #31 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Cosmos3-Super among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>  89.3%    57.5   2026-06-23   51% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>  89.6%    60.3   2026-06-23   41% ▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 8% ▇
-                        weighted average                       = 58.0
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄▆▅●▃▂▂▂▄   #22 of 68*     51%      1
+image to video  ▁▂·▂▅█●▄▅▆▃▄   #26 of 50*     41%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #22 of 68 · 51% of its score</summary>
+
+Trails [Kling 2.5 Turbo Pro](kling-2-5-turbo-pro.md), [Seedance 1.5 Pro](seedance-1-5-pro.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   89.3%  █▄▄··▄▄▄●▄·▄ beats 7/9    easy · avg 85%     51%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #26 of 50 · 41% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, imag…</a>   89.6%  ▄·█··▄··▄▄▄● beats 7/8    easy · avg 84%     41%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        2   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 58.0
+</pre>
 
 <sub>Licences: Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -31,11 +58,15 @@ version                needs  score
 bf16 · nvidia only  ~159.7GB   58.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~159.7GB
 uvx --from huggingface_hub hf download nvidia/Cosmos3-Super assets/ --local-dir Cosmos3-Super && cd Cosmos3-Super && uv run --python 3.13 --with git+https://github.com/huggingface/diffusers --with accelerate --with av --with cosmos_guardrail --with huggingface_hub --with imageio --with imageio-ffmpeg --with torch --with torchvision --with transformers python -c "import json, torch; from diffusers import Cosmos3OmniPipeline; from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler; from diffusers.utils import export_to_video; p=Cosmos3OmniPipeline.from_pretrained('nvidia/Cosmos3-Super', torch_dtype=torch.bfloat16, device_map='cuda', enable_safety_checker=True); p.scheduler=UniPCMultistepScheduler.from_config(p.scheduler.config, flow_shift=10.0); r=p(prompt=json.dumps(json.load(open('assets/example_t2v_prompt.json'))), negative_prompt=json.dumps(json.load(open('assets/negative_prompt.json'))), num_frames=189, height=720, width=1280, num_inference_steps=35, guidance_scale=6.0, generator=torch.Generator(device='cuda').manual_seed(123)); export_to_video(r.video, 'cosmos3_super_t2v.mp4', fps=24)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cosmos3-super) · [JSON](https://whatmodel.sh/api?format=json&all=1)

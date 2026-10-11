@@ -6,23 +6,42 @@
 
 Meta · released 2025-12 · 2.28B params · apache-2.0
 
-**score 55.1** ±2.9 · #70 of 160 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 55.6** ±2.8 · #64 of 162 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Omnilingual ASR LLM 1B v2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        6.1%    55.0   2026-03-26   95% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-iberian-bench-ccby"></a>Benchmarking Automati…  <a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-lan…</a>  16.6%    69.3   2026-09-29    2% ▇
-prior                   pull toward the middle                   49.8                 3% ▇
-                        weighted average                       = 55.1
+task                    vs the others        rank  counts  tests
+multilingual transcri…  ▂··▃▄█▆●▄▂·▂   #11 of 36*     97%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>multilingual transcription · #11 of 36 · 97% of its score</summary>
+
+Beats [Cohere Transcribe Arabic (07-2026)](cohere-transcribe-arabic-07-2026.md), [Qwen3-ASR-1.7B](qwen3-asr-1-7b.md), [Voxtral Mini Transcribe V2](voxtral-mini-transcribe-2.md) here, though they rank higher overall. Trails [SeamlessM4T v2 Large](seamless-m4t-v2-large.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>             6.1%  ▂··▂▃▂●▃█▂▁▁ beats 13/29  avg 8.9%       92%  typical
+<a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-languag…</a>   16.6%  █▃▃··▅▃●··▃▃ beats 8/10   avg 38%       4.6%  noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                            1   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-iberian-bench-ccby"></a><a href="https://arxiv.org/html/2609.36920v1">Benchmarking Automatic Speech Recogniti…</a>        1    5% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 55.6
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Benchmarking Automatic Speech Recognition Tools for Iberian Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -30,14 +49,18 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version    needs  score
-bf16     ~5.97GB   55.1
+bf16     ~5.97GB   55.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16
+# bf16 · ~5.97GB
 uv run --python 3.12 --with omnilingual-asr python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_LLM_1B_v2').transcribe(['audio.wav'], batch_size=1))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/omniasr-llm-1b-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

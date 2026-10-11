@@ -6,37 +6,94 @@
 
 Cohere · released 2024-08 · 32.3B params · cc-by-nc-4.0
 
-**score 46.1** ±1.0 · #550 of 934 · from 16 benchmark results across 9 sources
+**score 46.0** ±1.0 · #555 of 949 · from 16 benchmark results across 9 sources
+
+## What it's good at
+
+<sub>● marks Command R (08-2024) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁●▆█▆▅▄▄▃▂▁   #313 of 334*    5.7%      1
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #341 of 469     37%      6
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #301 of 466*    8.3%      1
+</pre>
+
+<details><summary>agent tasks · #313 of 334 · 5.7% of its score</summary>
+
+Beats [GLM-4 9B Chat](glm-4-9b-chat.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>   11.6%  ▃···●·▃·▃█·▃ beats 1/7    hard · avg 19%    5.7%  sharp
+</pre>
+
+</details>
+
+<details><summary>coding · #341 of 469 · 37% of its score</summary>
+
+Beats [GLM-4.7-Flash](glm-4-7-flash.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   38.3%  ▁·▁▂●▁▆▄█▆▂▂ beats 9/62   medium · avg 54%         16%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>             11.6%  ▃···●·▃·▃█·▃ beats 1/7    hard · avg 19%          5.7%  sharp
+<a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                          74.3%  █●·██···████ beats 1/7    easy · avg 79%          5.3%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>   11.0%  ▄●·▄·····█▄█ beats 1/7    hard · avg 19%          4.2%  typical
+<a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>                 47.3%  ▄··●·▄·█··▄█ beats 1/7    medium · avg 49%        3.1%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    1.8%  ●▄··█·█····▄ beats 0/7    very hard · avg 6.7%    2.6%  sharp · too hard for it · noisy
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #301 of 466 · 8.3% of its score</summary>
+
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run   difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1250.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 92/379  avg 1268      8.3%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (9)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 30.8%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 29/61    medium · avg 41%        33%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (lab)</a>    73.2%  ▄●▄··▄▄··▄·█ beats 1/7      easy · avg 81%         8.0%  typical
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   59.8%  ▂▄▂▃█▄▃●▃▅▂▂ beats 49/81    medium · avg 58%       3.6%  blunt · at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>        34.3%  ▄··▄●···▄▄█▄ beats 2/7      medium · avg 36%       3.6%  at its level
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            86.6%  ▁▁·▁·▂▃▄●▂·▁ beats 18/22    easy · avg 83%         2.1%  typical
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.4%  ▃▁▁▁▁▁▁▁▂█●▁ beats 218/276  medium · avg 73%       1.9%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   88.2%  ▁▁▁▁▁▁▁▂▄█●▃ beats 109/146  easy · avg 83%         1.1%  at its level · noisy
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           74.7%  ▄··▂▄▂▆█●▄▄▂ beats 13/21    easy · avg 68%         0.8%  at its level · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   95.1%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 60/140   very easy · avg 94%    0.6%  blunt · maxed out · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (…</a>   73.2%    44.6   2025-04-14    8% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>         11.6%    44.8   2025-04-14    6% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                      74.3%    46.1   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   11.0%    42.6   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>    34.3%    49.2   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>             47.3%    49.7   2025-04-14    3% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>    1.8%    43.8   2025-04-14    3% ▇
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>             30.8%    45.1   2024-10-22   32% ▇▇▇▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   38.3%    44.2   2024-09-11   16% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1250.4    48.0   2026-10-02    8% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   59.8%    52.0   2026-09-19    3% ▇
-<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                        86.6%    53.4   2025-10-09    2% ▇
-                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                       74.7%    54.0   2025-10-09    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   74.4%    51.3   2025-08-30    2% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   88.2%    53.9   2026-04-17    1% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   95.1%    53.2   2025-10-16    1% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 46.1
+source                                    results  share of the score
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   33% ▇▇▇▇
+<a name="report-2504.00698v2"></a><a href="https://arxiv.org/pdf/2504.00698v2">Cohere (lab)</a>                                    7   32% ▇▇▇▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   16% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    4% ▇
+<a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2    3% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 46.0
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Cohere ([CC BY 4.0](../../licenses/report-2504.00698v2.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Cohere ([CC BY 4.0](../../licenses/report-2504.00698v2.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
@@ -45,18 +102,73 @@ api (Cohere) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [docs.co
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard input and output (LiteLLM @c19ce71 row 'command-r-08-2024', litellm\_provider cohere\_chat). Product: Cohere Chat API. API model: command-r-08-2024 (Cohere models page: Live). Currency: USD. · [context source](https://huggingface.co/CohereLabs/c4ai-command-r-08-2024/blob/dc835b893cd3fb8f14b24970dbc2a0a6d3c22ee3/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~19.88GB   46.1
-8-bit q8_0    ~39.26GB   46.1
+download                       size  score
+4-bit q4_k_m               ~19.88GB   46.0
+8-bit q8_0                 ~39.26GB   46.0
+4-bit Q4_K_M                ~19.8GB   46.0
+8-bit Q8_0                  ~34.3GB   46.0
+4-bit mlx-4bit · mac only   ~18.2GB   46.0
+4-bit mlx-8bit · mac only   ~34.3GB   46.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run command-r:35b-08-2024-q4_K_M
-# 8-bit q8_0
-ollama run command-r:35b-08-2024-q8_0
+# 4-bit Q4_K_M · ~19.8GB
+llama cli -hf lmstudio-community/c4ai-command-r-08-2024-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/c4ai-command-r-08-2024-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~34.3GB
+llama cli -hf lmstudio-community/c4ai-command-r-08-2024-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/c4ai-command-r-08-2024-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~19.8GB
+lms get https://huggingface.co/lmstudio-community/c4ai-command-r-08-2024-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~34.3GB
+lms get https://huggingface.co/lmstudio-community/c4ai-command-r-08-2024-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~18.2GB
+lms get https://huggingface.co/mlx-community/c4ai-command-r-08-2024-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~34.3GB
+lms get https://huggingface.co/mlx-community/c4ai-command-r-08-2024-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~19.88GB
+ollama run command-r:35b-08-2024-q4_K_M
+# 8-bit q8_0 · ~39.26GB
+ollama run command-r:35b-08-2024-q8_0
+# 4-bit Q4_K_M · ~19.8GB
+ollama run hf.co/lmstudio-community/c4ai-command-r-08-2024-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~34.3GB
+ollama run hf.co/lmstudio-community/c4ai-command-r-08-2024-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~18.2GB
+mlx_lm.chat --model mlx-community/c4ai-command-r-08-2024-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/c4ai-command-r-08-2024-4bit
+# 4-bit mlx-8bit · mac only · ~34.3GB
+mlx_lm.chat --model mlx-community/c4ai-command-r-08-2024-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/c4ai-command-r-08-2024-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/command-r-08-2024) · [JSON](https://whatmodel.sh/api?format=json&all=1)

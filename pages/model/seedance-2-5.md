@@ -6,27 +6,80 @@
 
 ByteDance · released 2026-07 · closed weights
 
-**score 77.4** ±1.5 · #7 of 93 · from 8 benchmark results across 6 sources
+**score 77.4** ±1.4 · #7 of 93 · from 8 benchmark results across 6 sources
+
+## What it's good at
+
+<sub>● marks Dreamina Seedance 2.5 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others       rank  counts  tests
+text to video   ▆▄▃▄▆▅█▃▂▂▂●   #6 of 68*     36%      1
+image to video  ▁▂·▂▅█▅▄▅▆●▄   #5 of 50*     37%      2
+video editing   ▄··█··▄··█▄●    #2 of 9*    7.3%      1
+</pre>
+
+<details><summary>text to video · #6 of 68 · 36% of its score</summary>
+
+Beats [MiniMax H3](minimax-h3.md) here, though they rank higher overall. Trails [FLUX 3 Video](flux-3-video.md) here, though they rank lower overall.
+
+<pre>
+test           result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1473.9  ▂▂▃▆█▆·▆▅▁▂● beats 36/41  avg 1147       36%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #5 of 50 · 37% of its score</summary>
+
+Beats [Wan 3.0](wan-3-0.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1477.4  ▁▁▁▁▄▇▃▆▃▂▄● beats 37/40  avg 1189       24%  typical
+<a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V, wi…</a>  1247.0  ▂··▂▂▆█▆▂●▆▄ beats 14/19  avg 741        14%  sharp
+</pre>
+
+</details>
+
+<details><summary>video editing · #2 of 9 · 7.3% of its score</summary>
+
+Beats [Gemini Omni Flash](gemini-omni-flash.md), [Dreamina Seedance 2.0](seedance-2-0.md), [MiniMax H3](minimax-h3.md) here, though they rank higher overall.
+
+<pre>
+test              result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1409.8  █··█··▄··█▄● beats 8/9    avg 1117      7.3%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard">Rapidata relative camera movement…</a>  1076.3  █···▄▄●█·█▄█ beats 5/12   avg 661       8.4%  sharp · noisy
+<a href="https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking">Rapidata image-to-video realism (…</a>  1175.6  ▂······▃▂●▃█ beats 4/12   avg 871       4.5%  sharp · noisy
+<a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (huma…</a>  1649.6  ▄····██···●█ beats 5/7    avg 1299      3.8%  noisy
+<a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench (overall El…</a>  1049.3  ▃▃·▅·▃·▃··▃● beats 9/9    avg 889       2.0%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1473.9    78.4   2026-09-22   36% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1477.4    78.0   2026-09-22   24% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>                1409.8    82.0   2026-08-27    7% ▇
-<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1247.0    78.5   2026-09-25   14% ▇▇
-<a name="visual-rapid-relative-camera"></a>Rapidata/relative-cam…  <a href="https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard">Rapidata relative camera move…</a>  1076.3    70.2   2026-09-29    8% ▇
-<a name="visual-rapid-i2v-realism"></a>Rapidata/image-to-vid…  <a href="https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking">Rapidata image-to-video reali…</a>  1175.6    71.0   2026-10-01    5% ▇
-<a name="visual-wrop-object-permanence"></a>Training Object Perma…  <a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (…</a>  1649.6    79.9   2026-09-23    4% ▇
-<a name="visual-datapoint-video-bench"></a>Datapoint Video Bench…  <a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench (overal…</a>  1049.3    81.1   2026-09-28    2% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 77.4
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   67% ▇▇▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a><a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata/world-model-physics published …</a>        1   14% ▇▇
+<a name="visual-rapid-relative-camera"></a><a href="https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard">Rapidata/relative-camera-movement-human…</a>        1    8% ▇
+<a name="visual-rapid-i2v-realism"></a><a href="https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking">Rapidata/image-to-video-realism publish…</a>        1    5% ▇
+<a name="visual-wrop-object-permanence"></a><a href="https://arxiv.org/html/2609.28654v1#S5.T2">Training Object Permanence in World Mod…</a>        1    4% ▇
+<a name="visual-datapoint-video-bench"></a><a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench leaderboard</a>               1    2% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 77.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Rapidata/relative-camera-movement-human-preference-900k published dataset-card rankings ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/image-to-video-realism published dataset-card rankings ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Training Object Permanence in World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Datapoint Video Bench leaderboard ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

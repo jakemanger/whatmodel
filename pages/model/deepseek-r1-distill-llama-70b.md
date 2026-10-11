@@ -6,37 +6,77 @@
 
 DeepSeek · released 2025-01 · 70B params · MIT; underlying Llama 3.3 licence applies to weights
 
-**score 58.2** ±1.0 · #243 of 934 · from 18 benchmark results across 7 sources
+**score 58.1** ±1.0 · #250 of 949 · from 18 benchmark results across 7 sources
+
+## What it's good at
+
+<sub>● marks DeepSeek R1 Distill Llama 70B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #246 of 469     14%      5
+math    ▁▂▃▅▆▅●█▄▁▁▁   #167 of 400     37%      5
+</pre>
+
+<details><summary>coding · #246 of 469 · 14% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspecifie…</a>   57.5%  ▄····▄▄··▄●▄ beats 5/6    medium · avg 41%    7.5%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   47.3%  █▂▁▁▂▂▂▃▅▅●▇ beats 35/47  medium · avg 36%    2.8%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   28.7%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 19/47  hard · avg 33%      2.0%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   68.8%  ▃··▁▂▂▃▂█●▄▂ beats 37/47  medium · avg 54%    1.7%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   61.2%  ▁▁▁······▁●█ beats 11/47  easy · avg 67%      0.0%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #167 of 400 · 37% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Nemotron Nano 9B v2](nemotron-nano-9b-v2.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run   difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               89.9%  ▂▂▅▆▄█▆▃▅●▃▄ beats 78/92   hard · avg 32%           17%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   51.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 78/193  very hard · avg 8.5%    7.7%  sharp · at its level · noisy
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>            70.0%  ▃·▃·▃▃···●·▃ beats 5/7     medium · avg 43%        5.6%  sharp · at its level · noisy · several …
+<a href="https://arxiv.org/html/2504.21318v1">AIME 2025</a>                  51.5%  ●··▄··█··▄·▄ beats 0/6     hard · avg 34%          4.3%  sharp · at its level · noisy
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>             94.5%  ▄·▄▄·▄▄●···▄ beats 6/7     very easy · avg 91%     1.9%  maxed out
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         55.7%  ▁▁▁▁▂▄▆●▅▇█▅ beats 79/208  hard · avg 40%       40%  sharp · at its level · several runs
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   39.8%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 70/97   hard · avg 32%      4.5%  blunt · at its level
+<a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge for cr…</a>   59.7%  ▃▃··▃●▅···█▃ beats 3/10    medium · avg 55%    2.8%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   39.8%  ▃·▁▁▂●▂▅█▇▄▁ beats 21/100  medium · avg 68%    1.1%  noisy
+<a href="https://arxiv.org/html/2504.21318v1">Omni-MATH</a>                            63.4%  █·●·█·██··██ beats 1/6     medium · avg 64%    0.5%  blunt · at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    89.9%    63.0   2025-03-10   18% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    55.7%    57.7   2025-03-10   16% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        51.4%    61.9   2025-03-07    8% ▇
-<a name="report-2504.21318v1"></a>Microsoft               <a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond</a>                    66.2%    59.6   2025-04-30   14% ▇▇
-                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2025</a>                       51.5%    55.6   2025-04-30    4% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2024</a>                       69.3%    58.9   2025-04-30    3% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">Omni-MATH</a>                       63.4%    46.8   2025-04-30    0% ▇
-<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              65.2%    57.9   2026-09-25    9% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  57.5%    57.9   2026-09-25    7% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 70.0%    56.8   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  94.5%    55.7   2026-09-25    2% ▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  47.3%    53.4   2025-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  28.7%    47.7   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  68.8%    54.6   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  61.2%    35.9   2025-05-31    0% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  39.8%    58.3   2025-04-28    5% ▇
-<a name="judgemark-v2-results"></a>Judgemark v2 results    <a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge fo…</a>  59.7%    51.3   2025-01-31    3% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  39.8%    29.4   2026-04-17    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 58.2
+source                                    results  share of the score
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        3   40% ▇▇▇▇▇
+<a name="report-2504.21318v1"></a><a href="https://arxiv.org/html/2504.21318v1">Microsoft</a>                                       4   23% ▇▇▇
+<a name="card-deepseek-ai--deepseek-r1"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">deepseek-ai/DeepSeek-R1 model card (lab)</a>        4   22% ▇▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    7% ▇
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    5% ▇
+<a name="judgemark-v2-results"></a><a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 results</a>                            1    3% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 58.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Microsoft ([CC BY 4.0](../../licenses/report-2504.21318v1.txt)) · deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Judgemark v2 results ([MIT](../../licenses/judgemark-v2-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -47,22 +87,69 @@ api (Novita AI) · $0.80/M blended · $0.8 in / $0.8 out per 1M tokens · [novit
 <sub>[price source](https://novita.ai/pricing): USD per 1M tokens, Novita AI serverless chat completions, model deepseek/deepseek-r1-distill-llama-70b (status active): input $0.80, output $0.80. Novita serves it with an 8,192-token context (its own serving limit). Currency: USD. Novita AI official pricing page, observed 2026-09-25. · [context source](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/blob/b1c0b44b4369b597ad119a196caf79a9c40e141e/config.json): DeepSeek official configuration for DeepSeek-R1-Distill-Llama-70B (pinned commit): max\_position\_embeddings 131072 (llama3 rope scaling, factor 8 over original 8192). Configured maximum, not a benchmarked long-context claim: the official card states no context length for the distilled models (its table gives 128K only for DeepSeek-R1/R1-Zero), reports a 32,768-token maximum generation length, and its vLLM example uses --max-model-len 32768. Observed 2026-09-25.</sub>
 
 <pre>
-download              size  score
-4-bit q4_k_m      ~42.52GB   58.2
-8-bit q8_0        ~74.98GB   58.2
-2-bit ud-q2_k_xl  ~26.97GB   58.2
+download                       size  score
+4-bit q4_k_m               ~42.52GB   58.1
+8-bit q8_0                 ~74.98GB   58.1
+2-bit ud-q2_k_xl           ~26.97GB   58.1
+4-bit mlx-4bit · mac only   ~39.7GB   58.1
+4-bit mlx-8bit · mac only     ~75GB   58.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run deepseek-r1:70b
-# 8-bit q8_0
-llama-server -hf unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:Q8_0
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:UD-Q2_K_XL
+# 8-bit q8_0 · ~74.98GB
+llama cli -hf unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:Q8_0
+# 2-bit ud-q2_k_xl · ~26.97GB
+llama cli -hf unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:UD-Q2_K_XL
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 8-bit q8_0 · ~74.98GB
+lms get https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit ud-q2_k_xl · ~26.97GB
+lms get https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~39.7GB
+lms get https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Llama-70B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~75GB
+lms get https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Llama-70B-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~42.52GB
+ollama run deepseek-r1:70b
+# 2-bit ud-q2_k_xl · ~26.97GB
+ollama run hf.co/unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:UD-Q2_K_XL
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~39.7GB
+mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Llama-70B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/DeepSeek-R1-Distill-Llama-70B-4bit
+# 4-bit mlx-8bit · mac only · ~75GB
+mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Llama-70B-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/DeepSeek-R1-Distill-Llama-70B-8bit
+```
 
 ## Quantization evidence
 

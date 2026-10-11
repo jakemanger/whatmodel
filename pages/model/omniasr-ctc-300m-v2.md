@@ -6,22 +6,40 @@
 
 Meta · released 2025-12 · 0.33B params · apache-2.0
 
-**score 42.5** ±2.9 · #132 of 160 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.8** ±2.9 · #130 of 162 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Omnilingual ASR CTC 300M v2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                test                       score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>  14.3%    42.2   2026-03-26   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle              49.8                 3% ▇
-                      weighted average                  = 42.5
+task                    vs the others        rank  counts  tests
+multilingual transcri…  ●··▃▄█▆▅▄▂·▂   #35 of 36*     97%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>multilingual transcription · #35 of 36 · 97% of its score</summary>
+
+Beats [Omnilingual ASR CTC 300M](omniasr-ctc-300m.md) here, though they rank higher overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>   14.3%  ●··▂▃▂█▃█▂▁▁ beats 1/29   avg 8.9%       97%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                 1   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             3% ▇
+weighted average                        = 42.8
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
@@ -29,14 +47,18 @@ prior                 pull toward the middle              49.8                 3
 
 <pre>
 version    needs  score
-bf16     ~1.29GB   42.5
+bf16     ~1.29GB   42.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16
+# bf16 · ~1.29GB
 uv run --python 3.12 --with omnilingual-asr python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_300M_v2').transcribe(['audio.wav'], batch_size=1))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/omniasr-ctc-300m-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

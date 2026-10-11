@@ -6,22 +6,39 @@
 
 TII · released 2024-05 · 11.1B params · falcon-llm
 
-**score 42.0** ±3.4 · #662 of 934 · from 3 benchmark results across 3 sources
+**score 41.8** ±3.3 · #674 of 949 · from 3 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Falcon2 11B (base) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      42.4%  ▁··▁▁▂▂●▅▆█▆ beats 12/70    medium · avg 64%     58%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   64.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 108/276  medium · avg 73%     22%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   73.7%  ▁▁▁▁▁▁▁▂●█▄▃ beats 46/146   easy · avg 83%       15%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  42.4%    40.1   2024-06-20   56% ▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  64.2%    43.8   2024-05-13   23% ▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  73.7%    43.5   2026-04-17   16% ▇▇
-prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 42.0
+source                                  results  share of the score
+<a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>        1   58% ▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>               1   22% ▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                         1   15% ▇▇
+prior: pull toward the middle                      5% ▇
+weighted average                                 = 41.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -30,15 +47,49 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/tiiuae/falcon-11B/blob/a4ab868d7e8d53844009657bf7e755933ccccf8f/config.json): config.json max\_position\_embeddings 8192 (card: context extended from 2048 to 8192 during training). Observed 2026-10-10.</sub>
 
 <pre>
-download      size  score
-4-bit q4_0  ~6.4GB   42.0
+download         size  score
+4-bit q4_0     ~6.4GB   41.8
+4-bit Q4_K_M   ~6.8GB   41.8
+8-bit Q8_0    ~11.8GB   41.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run falcon2:11b
+# 4-bit Q4_K_M · ~6.8GB
+llama cli -hf bartowski/falcon-11B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/falcon-11B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~11.8GB
+llama cli -hf bartowski/falcon-11B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/falcon-11B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~6.8GB
+lms get https://huggingface.co/bartowski/falcon-11B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~11.8GB
+lms get https://huggingface.co/bartowski/falcon-11B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~6.4GB
+ollama run falcon2:11b
+# 4-bit Q4_K_M · ~6.8GB
+ollama run hf.co/bartowski/falcon-11B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~11.8GB
+ollama run hf.co/bartowski/falcon-11B-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/falcon2-11b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

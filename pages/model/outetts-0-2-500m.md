@@ -6,22 +6,37 @@
 
 OuteAI · released 2024-11 · 0.5B params · cc-by-nc-4.0
 
-**score 31.3** ±6.3 · #102 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.1** ±6.3 · #103 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks OuteTTS 0.2 500M among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>  88.4%    27.8   2025-04-09   84% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.7                16% ▇▇
-                        weighted average                       = 31.3
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-clean…</a>   88.4%  ●·█········█ beats 0/2    very easy · avg 97%     84%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-cloneval-space-apache"></a><a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · Open Voice Cloning Leaderboa…</a>        1   84% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       16% ▇▇
+weighted average                                   = 31.1
+</pre>
 
 <sub>Licences: ClonEval · Open Voice Cloning Leaderboard ([Apache-2.0](../../licenses/speech-cloneval-space-apache.txt))</sub>
 
@@ -29,17 +44,21 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                                    needs  score
-fp32 (outetts 0.3.3)                     ~1.35GB   31.3
-q8_0 (outetts 0.3.3 + llama-cpp-python)  ~0.88GB   31.3
+fp32 (outetts 0.3.3)                     ~1.35GB   31.1
+q8_0 (outetts 0.3.3 + llama-cpp-python)  ~0.88GB   31.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (outetts 0.3.3)
+# fp32 (outetts 0.3.3) · ~1.35GB
 pip install outetts==0.3.3 && python -c "import outetts; model_config = outetts.HFModelConfig_v1(model_path='OuteAI/OuteTTS-0.2-500M', language='en'); interface = outetts.InterfaceHF(model_version='0.2', cfg=model_config); speaker = interface.load_default_speaker(name='male_1'); output = interface.generate(text='Speech synthesis is the artificial production of human speech.', temperature=0.1, repetition_penalty=1.1, max_length=4096, speaker=speaker); output.save('output.wav')"
-# q8_0 (outetts 0.3.3 + llama-cpp-python)
+# q8_0 (outetts 0.3.3 + llama-cpp-python) · ~0.88GB
 pip install outetts==0.3.3 llama-cpp-python && huggingface-cli download OuteAI/OuteTTS-0.2-500M-GGUF OuteTTS-0.2-500M-Q8_0.gguf --local-dir . && python -c "import outetts; model_config = outetts.GGUFModelConfig_v1(model_path='OuteTTS-0.2-500M-Q8_0.gguf', language='en', n_gpu_layers=0); interface = outetts.InterfaceGGUF(model_version='0.2', cfg=model_config); speaker = interface.load_default_speaker(name='male_1'); output = interface.generate(text='Speech synthesis is the artificial production of human speech.', temperature=0.1, repetition_penalty=1.1, max_length=4096, speaker=speaker); output.save('output.wav')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/outetts-0-2-500m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

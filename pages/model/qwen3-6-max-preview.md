@@ -6,27 +6,88 @@
 
 Alibaba · released 2026-04 · proprietary
 
-**score 72.5** ±1.2 · #63 of 934 · from 8 benchmark results across 2 sources
+**score 72.4** ±1.2 · #64 of 949 · from 8 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Qwen3.6 Max Preview among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others         rank  counts  tests
+agent tasks     ▁▁▃▆█▆▅▄●▃▂▁   #68 of 334*     24%      1
+coding          ▁▁▁▃▆██▇▆●▃▁   #56 of 469*     46%      2
+chat &amp; writing  ▁▁▁▄▆▅▆█▆▆●▂   #42 of 466*     12%      1
+math            ▁▂▃▅▆▅▄█●▁▁▁   #64 of 400*    3.9%      1
+</pre>
+
+<details><summary>agent tasks · #68 of 334 · 24% of its score</summary>
+
+Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [Ornith 1.5 35B-A3B](ornith-1-5-35b-a3b.md) here, though they rank lower overall.
+
+<pre>
+test                result  vs the others in its run  difficulty      counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>   76.7%  ▁··▁·▁▂▁▄●▄▁ beats 20/29  hard · avg 19%     24%  sharp
+</pre>
+
+</details>
+
+<details><summary>coding · #56 of 469 · 46% of its score</summary>
+
+Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [GLM-5.1](glm-5-1.md), [Mistral Large 4 (public preview)](mistral-large-4.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run   difficulty      counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>          76.7%  ▁··▁·▁▂▁▄●▄▁ beats 20/29   hard · avg 19%     24%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1481.5  ▁▂▄▃▅█●▇▆▄▁▁ beats 66/119  avg 981            22%  sharp
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #42 of 466 · 12% of its score</summary>
+
+Beats [GPT-6 Sol](gpt-6-sol.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5.1](glm-5-1.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1460.3  ▁▁▁▂▃▃▃▆▆▇●▃ beats 330/379  avg 1268       12%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #64 of 400 · 3.9% of its score</summary>
+
+Trails [INTELLECT-3](intellect-3.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   91.1%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 145/193  very hard · avg 8.5%    3.9%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                          result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   87.4%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 156/208  hard · avg 40%           12%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   19.0%  █··▂▃●▄█▂▃▁▁ beats 31/74    very hard · avg 9.4%     11%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          20.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 77/135   very hard · avg 5.9%    8.5%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              52.0%  ▁▁▃▂▃▃▆▆●▃▂▅ beats 57/78    very hard · avg 8.0%    4.8%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                           score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>             76.7%    73.1   2026-05-28   24% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   87.4%    72.0   2026-08-07   13% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   19.0%    71.3   2026-08-27   12% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          20.0%    70.5   2026-08-07    9% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              52.0%    77.7   2026-08-27    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       91.1%    72.1   2026-08-07    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1481.5    72.6   2026-10-01   21% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                1460.3    73.1   2026-10-02   12% ▇
-prior                   pull toward the middle                  50.0                 1% ▇
-                        weighted average                      = 72.5
+source                         results  share of the score
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">Epoch AI</a>                             6   65% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   35% ▇▇▇▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 72.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

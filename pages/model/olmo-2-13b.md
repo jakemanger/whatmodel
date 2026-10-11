@@ -6,30 +6,69 @@
 
 Allen Institute for AI · released 2024-12 · 13.72B params · apache-2.0
 
-**score 46.5** ±1.4 · #536 of 934 · from 11 benchmark results across 3 sources
+**score 46.3** ±1.4 · #546 of 949 · from 11 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks OLMo 2 13B Instruct (1124) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #265 of 466*     15%      2
+math            ▁▂▃●▆▅▄█▄▁▁▁   #323 of 400*     19%      2
+</pre>
+
+<details><summary>chat &amp; writing · #265 of 466 · 15% of its score</summary>
+
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>   39.5%  ▃▃·▁▁█●▅·▁·▁ beats 15/22  medium · avg 42%     11%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (lab)</a>      82.6%  ▁▃▁▃▁▄▁▁●▃▃▁ beats 15/22  easy · avg 80%      3.8%  typical
+</pre>
+
+</details>
+
+<details><summary>math · #323 of 400 · 19% of its score</summary>
+
+Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                       87.4%  ▂▃··▃▂▅█●▃▂▃ beats 14/22  very easy · avg 88%     12%  sharp
+<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>   39.2%  ▃▃●▂▂▆·····▁ beats 6/22   medium · avg 61%       6.9%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (7)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 63.0%  ▁▄·▁▁·●█·▄▄▁ beats 6/22    easy · avg 75%          26%  sharp · at its level
+<a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           68.5%  ▁▂·▁·▁▁●·▃▃▅ beats 7/22    easy · avg 77%          25%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          28.8%  ▁▁▁▃▃▃▁●▁▃·▄ beats 12/21   hard · avg 32%         4.4%  blunt · at its level
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 64.3%  ▃▃▂·▃▃·▅●▂▅▂ beats 13/21   medium · avg 63%       3.7%  blunt · at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   68.5%  ▃·▁▁▂▁▂▅●▇▄▁ beats 45/100  medium · avg 68%       3.2%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 84/146  easy · avg 83%         2.3%  at its level · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   89.2%  ▁▁▂●▄▄█▆▃▂▂▁ beats 22/140  very easy · avg 94%    1.3%  blunt · maxed out · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                      68.5%    45.0   2025-10-08   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            63.0%    44.5   2025-10-08   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                     87.4%    49.1   2025-10-08   12% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>  39.5%    49.3   2025-10-08   10% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>            64.3%    49.7   2025-10-08    8% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>  39.2%    40.4   2025-10-08    6% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                     28.8%    47.7   2025-10-08    4% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>  82.6%    52.9   2025-10-08    4% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  68.5%    50.6   2026-04-17    3% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.0%    50.2   2026-04-17    2% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  89.2%    35.5   2025-10-16    1% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 46.5
+source                             results  share of the score
+<a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious (lab)</a>                   8   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                    2    5% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1    1% ▇
+prior: pull toward the middle                 1% ▇
+weighted average                            = 46.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -38,18 +77,73 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://arxiv.org/abs/2501.00656v3): Training sequence length stated by the maker; no separate serving limit is published.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m   ~8.73GB   46.5
-8-bit q8_0    ~16.96GB   46.5
+download                       size  score
+4-bit q4_k_m                ~8.73GB   46.3
+8-bit q8_0                 ~16.96GB   46.3
+4-bit Q4_K_M                 ~8.4GB   46.3
+8-bit Q8_0                  ~14.6GB   46.3
+4-bit mlx-4bit · mac only    ~7.7GB   46.3
+4-bit mlx-8bit · mac only   ~14.6GB   46.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run olmo2:13b-1124-instruct-q4_K_M
-# 8-bit q8_0
-ollama run olmo2:13b-1124-instruct-q8_0
+# 4-bit Q4_K_M · ~8.4GB
+llama cli -hf allenai/OLMo-2-1124-13B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf allenai/OLMo-2-1124-13B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~14.6GB
+llama cli -hf allenai/OLMo-2-1124-13B-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf allenai/OLMo-2-1124-13B-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~8.4GB
+lms get https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~14.6GB
+lms get https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~7.7GB
+lms get https://huggingface.co/mlx-community/OLMo-2-1124-13B-Instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~14.6GB
+lms get https://huggingface.co/mlx-community/OLMo-2-1124-13B-Instruct-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~8.73GB
+ollama run olmo2:13b-1124-instruct-q4_K_M
+# 8-bit q8_0 · ~16.96GB
+ollama run olmo2:13b-1124-instruct-q8_0
+# 4-bit Q4_K_M · ~8.4GB
+ollama run hf.co/allenai/OLMo-2-1124-13B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~14.6GB
+ollama run hf.co/allenai/OLMo-2-1124-13B-Instruct-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~7.7GB
+mlx_lm.chat --model mlx-community/OLMo-2-1124-13B-Instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/OLMo-2-1124-13B-Instruct-4bit
+# 4-bit mlx-8bit · mac only · ~14.6GB
+mlx_lm.chat --model mlx-community/OLMo-2-1124-13B-Instruct-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/OLMo-2-1124-13B-Instruct-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/olmo-2-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

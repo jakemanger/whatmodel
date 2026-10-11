@@ -6,39 +6,94 @@
 
 Cognitive Computations · released 2023-10 · 7.24B params · apache-2.0
 
-**score 37.0** ±1.9 · #757 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 36.7** ±1.7 · #776 of 949 · from 3 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Dolphin 2.2.1 Mistral 7B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others         rank  counts  tests
+chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #412 of 466     99%      3
+</pre>
+
+<details><summary>chat &amp; writing · #412 of 466 · 99% of its score</summary>
+
+Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       13.1%  ▁▂▂▃●▆█▆▄▄▁▁ beats 31/122  medium · avg 39%     50%  typical
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1060.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 30/95   avg 1201             25%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1152.2  ▁▁▁▂●▃▃▆▆▇█▃ beats 41/379  avg 1268             24%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   13.1%    37.0   2025-08-09   67% ▇▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1152.2    36.2   2026-10-02   31% ▇▇▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 37.0
+source                                    results  share of the score
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             1   50% ▇▇▇▇▇▇
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   25% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   24% ▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 36.7
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.84GB   37.0
-8-bit q8_0    ~9.19GB   37.0
+4-bit q4_k_m  ~4.84GB   36.7
+8-bit q8_0    ~9.19GB   36.7
+4-bit Q4_K_M   ~4.4GB   36.7
+8-bit Q8_0     ~7.7GB   36.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run dolphin-mistral:7b-v2.2.1-q4_K_M
-# 8-bit q8_0
-ollama run dolphin-mistral:7b-v2.2.1-q8_0
+# 4-bit Q4_K_M · ~4.4GB
+llama cli -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.7GB
+llama cli -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.4GB
+lms get https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~7.7GB
+lms get https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~4.84GB
+ollama run dolphin-mistral:7b-v2.2.1-q4_K_M
+# 8-bit q8_0 · ~9.19GB
+ollama run dolphin-mistral:7b-v2.2.1-q8_0
+# 4-bit Q4_K_M · ~4.4GB
+ollama run hf.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.7GB
+ollama run hf.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/dolphin-2-2-1-mistral-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

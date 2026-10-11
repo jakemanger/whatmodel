@@ -6,24 +6,62 @@
 
 Ideogram · released 2025-03 · proprietary
 
-**score 51.8** ±2.0 · #75 of 144 · from 3 benchmark results across 3 sources
+**score 51.9** ±2.0 · #76 of 144 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Ideogram 3.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1048.4    52.1   2026-09-24   62% ▇▇▇▇▇▇▇
-<a name="paper-2604.24023v2-servimage"></a>ServImage: An Image G…  <a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (hu…</a>   25.9%    56.4   2026-06-19   21% ▇▇
-<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>   962.9    45.1   2025-09-03   16% ▇▇
-prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 51.8
+task                    vs the others         rank  counts  tests
+text to image           ▂▅▅▃▄●█▃▁▂▁▁   #64 of 126*     82%      2
+image to image / edit…  ▁▁·▃▂●█▃▃▄▁▁    #45 of 62*     21%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #64 of 126 · 82% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1048.4  ▂▂▃●▇█▄▂▄▂·▂ beats 15/75  avg 1027           62%  typical
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   25.9%  ▂▃··▂··●█··▂ beats 5/11   hard · avg 18%     21%  sharp
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #45 of 62 · 21% of its score</summary>
+
+Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-kontext-max.md), [Qwen-Image](qwen-image.md) here, though they rank higher overall. Trails [GLM-Image](glm-image.md), [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   25.9%  ▂▃··▂··●█··▂ beats 5/11   hard · avg 18%     21%  sharp
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generation al…</a>   962.9  ▃··●▃··▃▃··█ beats 2/8    avg 1012       16%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   62% ▇▇▇▇▇▇▇
+<a name="paper-2604.24023v2-servimage"></a><a href="https://arxiv.org/html/2604.24023v2">ServImage: An Image Generation and Edit…</a>        1   21% ▇▇
+<a name="visual-rapid-face"></a><a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata/Face_Generation_Benchmark</a>              1   16% ▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 51.9
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServImage: An Image Generation and Editing Benchmark from Real-world Commercial Imaging Services ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/Face\_Generation\_Benchmark ([CDLA-Permissive-2.0](../../licenses/visual-rapid-face-CDLA-Permissive-2.0.txt))</sub>
 

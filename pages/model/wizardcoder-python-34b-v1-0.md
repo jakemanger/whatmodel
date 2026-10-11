@@ -6,27 +6,54 @@
 
 WizardLM · released 2023-08 · 34B params · llama2
 
-**score 45.9** ±0.6 · #553 of 934 · from 8 benchmark results across 4 sources
+**score 45.8** ±0.7 · #564 of 949 · from 8 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks WizardCoder Python 34B V1.0 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #312 of 469     88%      5
+</pre>
+
+<details><summary>coding · #312 of 469 · 88% of its score</summary>
+
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
+
+<pre>
+test        result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    73.2%  ▁·▁▁▃▄▆▅●▃▁▁ beats 66/99  easy · avg 79%       54%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   64.6%  ▁·▁▁▁▃▄▄▄●▃▁ beats 59/99  easy · avg 74%       26%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        63.2%  ▁···▁▁▂▅▇●▆▂ beats 44/75  easy · avg 68%      4.6%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   42.7%  ▁··▁▅▂█●▁··▁ beats 15/22  medium · avg 54%    1.6%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   43.4%  ▁·▂▃▁●▁▂···▁ beats 16/22  medium · avg 53%    1.5%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   40.8%  ▂▂▃▄▄█▁●▅▃▁▃ beats 27/42  medium · avg 55%     12%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               73.2%    47.3   2024-12-26   34% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              64.6%    46.5   2024-12-26   26% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   63.2%    47.0   2024-12-26    4% ▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               61.6%    43.7   2024-03-28   17% ▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       40.8%    43.8   2024-03-28   11% ▇
-<a name="first-party-wizardlm-scores"></a>WizardLM team vendor-…  <a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>         73.2%    46.3   2024-01-19    4% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              42.7%    42.5   2024-01-03    2% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              43.4%    42.9   2024-01-03    1% ▇
-prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 45.9
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   63% ▇▇▇▇▇▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   30% ▇▇▇▇
+<a name="first-party-wizardlm-scores"></a><a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">WizardLM team vendor-reported scores fo…</a>        1    4% ▇
+<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    3% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 45.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
 
@@ -35,18 +62,52 @@ prior                   pull toward the middle           50.0                 0%
 <sub>[context source](https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0/blob/897fc6d9e12136c68c441b2350d015902c144b20/config.json): WizardLM official configuration for WizardCoder-Python-34B-V1.0 (pinned commit): max\_position\_embeddings 16384. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
 
 <pre>
-download       size  score
-4-bit q4_k_m  ~20GB   45.9
-8-bit q8_0    ~36GB   45.9
+download         size  score
+4-bit q4_k_m    ~20GB   45.8
+8-bit q8_0      ~36GB   45.8
+4-bit Q4_K_M  ~20.2GB   45.8
+8-bit Q8_0    ~35.9GB   45.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run wizardcoder:34b-python-q4_K_M
-# 8-bit q8_0
-ollama run wizardcoder:34b-python-q8_0
+# 4-bit Q4_K_M · ~20.2GB
+llama cli -hf TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~35.9GB
+llama cli -hf TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~20.2GB
+lms get https://huggingface.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~35.9GB
+lms get https://huggingface.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~20GB
+ollama run wizardcoder:34b-python-q4_K_M
+# 8-bit q8_0 · ~36GB
+ollama run wizardcoder:34b-python-q8_0
+# 4-bit Q4_K_M · ~20.2GB
+ollama run hf.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~35.9GB
+ollama run hf.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/wizardcoder-python-34b-v1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

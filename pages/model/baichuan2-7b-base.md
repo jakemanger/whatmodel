@@ -6,30 +6,46 @@
 
 Baichuan · released 2023-08 · other
 
-**score 30.0** ±0.9 · #845 of 934 · from 11 benchmark results across 2 sources
+**score 29.6** ±0.9 · #862 of 949 · from 11 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Baichuan2-7B-Base among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (11)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">ARC Challenge</a>                        43.2%  ▁·▁··▁▁▇▂●▆▃ beats 18/26   easy · avg 85%          47%  sharp
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">WinoGrande</a>                           67.6%  ▁····▁··▁▂●▄ beats 18/26   easy · avg 89%          12%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">BoolQ</a>                                73.1%  ▂▃▂▅▆▂▅●█▂▂▂ beats 17/26   easy · avg 91%         9.5%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">ARC Easy</a>                             72.8%  ▁▁·▁▁▄▅▄█●▁▃ beats 21/26   easy · avg 88%         6.8%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">HellaSwag</a>                            72.3%  ▃···▁▇▅●▇▃▁▁ beats 15/26   very easy · avg 92%    5.4%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">SciQ</a>                                 94.6%  ▁·▁·▁·▃▅▃█●▁ beats 24/26   very easy · avg 98%    5.1%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">PIQA</a>                                 76.2%  ▁·▁··▁▁▃●▅█▂ beats 10/26   easy · avg 88%         4.3%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">OpenBookQA</a>                           30.4%  █·▁▁▃·▁▃●▇▃▄ beats 16/26   medium · avg 53%       3.6%  too hard for it
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">LAMBADA (OpenAI version), last-wo…</a>   71.0%  ▁··▂▁▁▁▂▆●▅▃ beats 17/26   very easy · avg 89%    2.6%  blunt · at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">Social IQA</a>                           41.8%  ▁···▁▃●▁▁▁·▁ beats 8/26    medium · avg 59%       2.5%  blunt
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   46.8%  ▃▁▁▁▁▁●▁▂█▅▁ beats 61/276  medium · avg 73%       1.2%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">ARC Challenge</a>                   43.2%    29.9   2024-04-08   48% ▇▇▇▇▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">WinoGrande</a>                      67.6%    29.7   2024-04-08   11% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">BoolQ</a>                           73.1%    30.5   2024-04-08    9% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">ARC Easy</a>                        72.8%    33.6   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">OpenBookQA</a>                      30.4%    29.7   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">HellaSwag</a>                       72.3%    28.7   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">SciQ</a>                            94.6%    33.8   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">PIQA</a>                            76.2%    26.4   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">Social IQA</a>                      41.8%    24.1   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">LAMBADA (OpenAI version), las…</a>  71.0%    29.0   2024-04-08    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  46.8%    28.9   2024-02-05    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 30.0
+source                           results  share of the score
+<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">Stability AI</a>                          10   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    1% ▇
+prior: pull toward the middle               0% ▇
+weighted average                          = 29.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -37,14 +53,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~15.01GB   30.0
+16-bit bf16  ~15.01GB   29.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16
+# 16-bit bf16 · ~15.01GB
 uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='baichuan-inc/Baichuan2-7B-Base', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/baichuan2-7b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

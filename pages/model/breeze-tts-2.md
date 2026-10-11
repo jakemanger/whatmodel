@@ -16,10 +16,18 @@ api (BreezeBlue) · $28.00/M chars · [breezeblue.ai](https://breezeblue.ai)
 
 <sub>[price source](https://breezeblue.ai/pricing): USD per 1M characters: BreezeBlue lists $28 / 1M characters on the Pro plan ($99/month; lowest published self-serve rate), $32 Creator, $36 Starter, $40 Free top-up. Docs: TTS metered per character, 10 billable units = 1 credit, credits shared by Studio and API; CJK characters count as two units. Product: Breeze Developer API. API model: breeze-tts-2. Settings: Pro-plan rate, non-CJK text. Price basis: published list rate. Exclusions: monthly plan fee, voice design/clone fees. Currency: USD. BreezeBlue official pricing page and docs, observed 2026-09-25.</sub>
 
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
+# bf16 · ~8.83GB
 git clone https://github.com/breezeblue-ai/breeze-tts.git && cd breeze-tts && python -m pip install -r requirements.txt && hf download BreezeBlue/Breeze-TTS-2 --local-dir ../breeze-tts-2 && python infer.py ../breeze-tts-2 --ref-audio ref.wav --ref-text 'Transcript of ref.wav' --text 'Hello world' --output out.wav
+# mlx-bf16 (mlx-audio 0.5.7) · ~7.63GB
 pip install -U mlx-audio && mlx_audio.tts.generate --model mlx-community/Breeze-TTS-2-mlx --text "(sigh) Welcome aboard. Your journey begins now." --instruction "A warm, thoughtful young woman with a clear voice and a calm, reflective delivery." --cfg-scale 4 --output_path outputs --file_prefix breeze_design
+# mlx-mxfp8 (mlx-audio 0.5.7) · ~4.6GB
 pip install -U mlx-audio && mlx_audio.tts.generate --model mlx-community/Breeze-TTS-2-mlx-8bit --text "(sigh) Welcome aboard. Your journey begins now." --instruction "A warm, thoughtful young woman with a clear voice and a calm, reflective delivery." --cfg-scale 4 --output_path outputs --file_prefix breeze_design
+# mlx-mxfp4 (mlx-audio 0.5.7) · ~3.04GB
 pip install -U mlx-audio && mlx_audio.tts.generate --model mlx-community/Breeze-TTS-2-mlx-4bit --text "(sigh) Welcome aboard. Your journey begins now." --instruction "A warm, thoughtful young woman with a clear voice and a calm, reflective delivery." --cfg-scale 4 --output_path outputs --file_prefix breeze_design
 ```
 

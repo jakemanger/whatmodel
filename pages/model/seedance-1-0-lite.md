@@ -8,21 +8,52 @@ ByteDance Seed · closed weights
 
 **score 48.4** ±1.8 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Seedance 1.0 Lite among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1112.6    46.9   2026-09-22   54% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1185.3    49.6   2026-09-22   36% ▇▇▇▇
-<a name="visual-vabench"></a>VABench: A Comprehens…  <a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench T2AV micro Visual QA</a>     72.7%    55.6   2026-04-06    7% ▇
-<a name="visual-v-reasonbench"></a>V-ReasonBench: Toward…  <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>   10.7%    39.0   2025-11-20    1% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 48.4
+task            vs the others        rank  counts  tests
+text to video   ▇▅▄▆█●▇▂▃▃▂▄   #45 of 94*     61%      2
+image to video  ▁▁▂▂●█▄▃▃▄▂▂   #60 of 74*     37%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #45 of 94 · 61% of its score</summary>
+
+Trails [Wan 2.1 14B](wan-2-1-14b.md) here, though they rank lower overall.
+
+<pre>
+test                          result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                 1112.6  ▂▂●▆█▆·▆▅▁▂▇ beats 5/41   avg 1147           55%  typical
+<a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench T2AV micro Visual QA</a>   72.7%  ▄····●····▄█ beats 1/4    easy · avg 68%    6.6%  at its level
+</pre>
+
+</details>
+
+<details><summary>image to video · #60 of 74 · 37% of its score</summary>
+
+Beats [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall. Trails [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md), [Wan 2.2 TI2V 5B](wan-2-2-5b.md) here, though they rank lower overall.
+
+<pre>
+test                            result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1185.3  ▁▁▁▁●▇▃▆▃▂▄█ beats 6/40   avg 1189           36%  typical
+<a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>   10.7%  ●·····▄···▄▄ beats 0/4    hard · avg 17%    1.4%  noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   91% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-vabench"></a><a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench: A Comprehensive Benchmark for …</a>        1    7% ▇
+<a name="visual-v-reasonbench"></a><a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench: Toward Unified Reasoning…</a>        1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 48.4
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VABench: A Comprehensive Benchmark for Audio-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt))</sub>
 

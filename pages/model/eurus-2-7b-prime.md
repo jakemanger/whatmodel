@@ -6,23 +6,48 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 44.2** ±2.3 · #599 of 934 · from 4 benchmark results across 2 sources
+**score 44.1** ±2.3 · #608 of 949 · from 4 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Eurus-2-7B-PRIME among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others     rank  counts  tests
+math  █··········●   #1 of 2     65%      3
+</pre>
+
+<details><summary>math · #1 of 2 · 65% of its score</summary>
+
+<pre>
+test                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>      26.7%  ▁▁▁▂▁●▁▅███▃ beats 14/85  medium · avg 42%        29%  sharp · at its level · small run
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>       79.2%  ▁▃▂▃●▇▅▇█▅▂▁ beats 21/84  very easy · avg 87%     19%  small run
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>   38.6%  ▄·▂▂·█●▆·▆▄▄ beats 10/21  medium · avg 59%        18%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test          result  vs the others in its run   difficulty      counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   33.9%  ▁▁▁▁●▄▆▄▅▇█▅ beats 25/208  hard · avg 40%     32%  sharp
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="first-party-prime-rl-scores"></a>PRIME-RL Eurus-2-7B-P…  <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>         26.7%    45.3   2024-12-31   29% ▇▇▇▇
-                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>          79.2%    43.4   2024-12-31   18% ▇▇
-                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>      38.6%    39.5   2024-12-31   17% ▇▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            33.9%    45.9   2025-01-27   33% ▇▇▇▇
-prior                   pull toward the middle           50.0                 2% ▇
-                        weighted average               = 44.2
+source                                    results  share of the score
+<a name="first-party-prime-rl-scores"></a><a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">PRIME-RL Eurus-2-7B-PRIME model card (l…</a>        3   65% ▇▇▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        1   32% ▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 44.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -31,15 +56,67 @@ prior                   pull toward the middle           50.0                 2%
 <sub>[context source](https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/config.json): PRIME-RL official configuration for Eurus-2-7B-PRIME (pinned commit): max\_position\_embeddings 4096. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
 
 <pre>
-download                      size  score
-4-bit fp32 · nvidia only  ~37.08GB   44.2
+download                       size  score
+4-bit fp32 · nvidia only   ~37.08GB   44.1
+4-bit Q4_K_M                 ~4.7GB   44.1
+8-bit Q8_0                   ~8.1GB   44.1
+4-bit mlx-8bit · mac only    ~8.1GB   44.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp32 · nvidia only
-vllm serve PRIME-RL/Eurus-2-7B-PRIME
+# 4-bit Q4_K_M · ~4.7GB
+llama cli -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.1GB
+llama cli -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.7GB
+lms get https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.1GB
+lms get https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~8.1GB
+lms get https://huggingface.co/WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.7GB
+ollama run hf.co/bartowski/Eurus-2-7B-PRIME-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.1GB
+ollama run hf.co/bartowski/Eurus-2-7B-PRIME-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-8bit · mac only · ~8.1GB
+mlx_lm.chat --model WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp32 · nvidia only · ~37.08GB
+vllm serve PRIME-RL/Eurus-2-7B-PRIME
+```
 
 [interactive version](https://whatmodel.sh/model/eurus-2-7b-prime) · [JSON](https://whatmodel.sh/api?format=json&all=1)

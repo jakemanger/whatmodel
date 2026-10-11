@@ -6,25 +6,46 @@
 
 Stability AI · released 2024-06 · 2B params · stabilityai-community
 
-**score 39.3** ±2.3 · #109 of 144 · from 4 benchmark results across 4 sources
+**score 39.5** ±2.3 · #109 of 144 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Stable Diffusion 3 Medium among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>          52.1%    40.4   2026-07-01   47% ▇▇▇▇▇▇
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.27 / 5    40.4   2024-12-25   38% ▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>     42.0%    36.6   2026-06-02   11% ▇
-<a name="hpsv3-readme-mit"></a>HPSv3 repository READ…  <a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchm…</a>    5.3100    -8.8   2025-12-05    2% ▇
-prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 39.3
+task           vs the others        rank  counts  tests
+text to image  ▂▅●▃▄▄█▃▁▂▁▁   #94 of 126     98%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #94 of 126 · 98% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [SDXL-Lightning (4-step UNet)](sdxl-lightning-4-step.md), [Stable Cascade](stable-cascade.md) here, though they rank lower overall.
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>              52.1%  ▅▂●▂▂▂····▂▂ beats 4/13   easy · avg 69%          47%  at its level
+<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  3.27 / 5  █▄·▄██▄▄●▄▄▄ beats 11/14  easy · avg 3.83 / 5     38%  at its level
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>     42.0%  ▄·▆▂●█▄▆▂▄·▄ beats 8/22   medium · avg 60%        11%  at its level
+<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>    5.3100  ●·····▃··▃·█ beats 0/5    avg 10.058             1.8%  sharp · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   47% ▇▇▇▇▇▇
+<a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   38% ▇▇▇▇▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   11% ▇
+<a name="hpsv3-readme-mit"></a><a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 repository README</a>                         1    2% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 39.5
+</pre>
 
 <sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · HPSv3 repository README ([MIT](https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/LICENSE))</sub>
 
@@ -36,17 +57,21 @@ api (fal.ai) · $0.035/image · [fal.ai](https://fal.ai/models/fal-ai/stable-dif
 
 <pre>
 version                           needs  score
-fp16 incl. CLIPs + T5 (sd.cpp)  ~19.4GB   39.3
-q8_0 (sd.cpp --type)            ~10.5GB   39.3
+fp16 incl. CLIPs + T5 (sd.cpp)  ~19.4GB   39.5
+q8_0 (sd.cpp --type)            ~10.5GB   39.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 incl. CLIPs + T5 (sd.cpp)
+# fp16 incl. CLIPs + T5 (sd.cpp) · ~19.4GB
 sd-cli -m models/sd3_medium_incl_clips_t5xxlfp16.safetensors -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable Diffusion CPP"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu
-# q8_0 (sd.cpp --type)
+# q8_0 (sd.cpp --type) · ~10.5GB
 sd-cli -m models/sd3_medium_incl_clips_t5xxlfp16.safetensors --type q8_0 -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable Diffusion CPP"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/sd-3-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

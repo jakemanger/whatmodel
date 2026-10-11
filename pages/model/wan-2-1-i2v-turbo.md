@@ -8,18 +8,36 @@ Alibaba · released 2025-02 · proprietary
 
 **score 42.9** ±7.1 · #65 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Wan 2.1 I2V Turbo among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-gap-target-bench"></a>Target-Bench: Can Vid…  <a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT plannin…</a>   5.9%    41.0   2026-04-15   79% ▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                21% ▇▇▇
-                        weighted average                       = 42.9
+task            vs the others        rank  counts  tests
+image to video  ▁▂·▂●█▅▄▅▆▃▄   #44 of 50*     79%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to video · #44 of 50 · 79% of its score</summary>
+
+Beats [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md), [HunyuanVideo-I2V](hunyuanvideo-i2v.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>    5.9%  ●·▃···▃▃█·▃▃ beats 0/8    very hard · avg 9.6%     79%  too hard for it
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-gap-target-bench"></a><a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench: Can Video World Models Ac…</a>        1   79% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       21% ▇▇▇
+weighted average                                   = 42.9
+</pre>
 
 <sub>Licences: Target-Bench: Can Video World Models Achieve Mapless Path Planning with Semantic Targets? ([CC-BY-4.0](../../licenses/visual-gap-target-bench.txt))</sub>
 

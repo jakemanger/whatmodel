@@ -6,22 +6,51 @@
 
 Microsoft · released 2023-09 · 1.42B params · mit
 
-**score 20.6** ±4.3 · #899 of 934 · from 3 benchmark results across 2 sources
+**score 20.7** ±4.2 · #912 of 949 · from 3 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Phi-1 (1.3B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁●▃▆██▇▆▄▃▁   #459 of 469*     76%      4
+</pre>
+
+<details><summary>coding · #459 of 469 · 76% of its score</summary>
+
+Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall.
+
+<pre>
+test             result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>        21.7%  ●·▂▃▁█▁▂···▁ beats 0/22    medium · avg 53%     40%  blunt
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>        13.1%  ●··▁▅▂█▇▁··▁ beats 0/22    medium · avg 54%     37%  typical
+<a href="https://arxiv.org/html/2306.11644v2">HumanEval (lab)</a>   50.6%  ▁▁▁▁▁▃▅●█▃▂▁ beats 81/190  easy · avg 79%         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2306.11644v2">MBPP (lab)</a>        55.5%  ▁▁▁▄▅●▄▅▃▁▂▁ beats 44/81   easy · avg 70%         —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   27.5%  ●▁▁▁▁▁▁▁▂█▅▁ beats 35/276  medium · avg 73%     16%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      21.7%    23.7   2024-01-03   40% ▇▇▇▇▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      13.1%    16.6   2024-01-03   37% ▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  27.5%     6.5   2024-02-05   15% ▇▇
-prior                   pull toward the middle                   50.0                 8% ▇
-                        weighted average                       = 20.6
+source                                 results  share of the score
+<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>        2   76% ▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>              1   16% ▇▇
+prior: pull toward the middle                     8% ▇
+weighted average                                = 20.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -40,15 +69,54 @@ Textbooks Are All You…  <a href="https://arxiv.org/html/2306.11644v2">MBPP</a>
 <sub>[context source](https://arxiv.org/abs/2306.11644v2): Training sequence length stated by the maker; no separate serving limit is published.</sub>
 
 <pre>
-download       size  score
-4-bit fp16  ~2.84GB   20.6
+download         size  score
+4-bit fp16    ~2.84GB   20.7
+4-bit Q4_K_M   ~0.9GB   20.7
+8-bit Q8_0     ~1.5GB   20.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp16
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/phi-1')('def fibonacci(n):', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~0.9GB
+llama cli -hf mradermacher/phi-1-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/phi-1-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.5GB
+llama cli -hf mradermacher/phi-1-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/phi-1-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~0.9GB
+lms get https://huggingface.co/mradermacher/phi-1-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~1.5GB
+lms get https://huggingface.co/mradermacher/phi-1-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~0.9GB
+ollama run hf.co/mradermacher/phi-1-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.5GB
+ollama run hf.co/mradermacher/phi-1-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp16 · ~2.84GB
+uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/phi-1')('def fibonacci(n):', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/phi-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

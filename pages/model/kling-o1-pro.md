@@ -8,19 +8,46 @@ Kuaishou (Kling AI) · closed weights
 
 **score 55.5** ±2.2 · #36 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Kling O1 Pro among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1204.6    54.9   2026-09-22   81% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>        1197.3    58.9   2026-08-27   17% ▇▇
-prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 55.5
+task           vs the others        rank  counts  tests
+text to video  ▆▄▃▄▆▅●▃▂▂▂▄   #25 of 68*     81%      1
+video editing  ●··█··▄··█▄█     #9 of 9*     17%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #25 of 68 · 81% of its score</summary>
+
+Beats [Seedance 1.0 Pro](seedance-1-0-pro.md) here, though they rank higher overall. Trails [Hailuo 2.3](hailuo-2-3.md), [P-Video](p-video.md) here, though they rank lower overall.
+
+<pre>
+test           result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1204.6  ▂▂▃▆●▆·▆▅▁▂▇ beats 14/41  avg 1147       81%  typical
+</pre>
+
+</details>
+
+<details><summary>video editing · #9 of 9 · 17% of its score</summary>
+
+<pre>
+test              result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>  1197.3  ●··█··▄··█▄█ beats 1/9    avg 1117       17%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             2% ▇
+weighted average                        = 55.5
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

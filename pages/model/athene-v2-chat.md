@@ -6,24 +6,53 @@
 
 Nexusflow · released 2024-11 · 72.7B params · nexusflow-research
 
-**score 56.5** ±1.5 · #276 of 934 · from 5 benchmark results across 4 sources
+**score 56.3** ±1.5 · #283 of 949 · from 5 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Athene-V2-Chat 72B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others         rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #214 of 466     89%      4
+</pre>
+
+<details><summary>chat &amp; writing · #214 of 466 · 89% of its score</summary>
+
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   85.0%  ▂▁▁▅█▅▄▃▃▅●▁ beats 57/60    medium · avg 52%        39%  sharp
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   16.4%  ▂·▃▅●·▃█▆▂▂▂ beats 6/22     very hard · avg 12%     25%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1314.1  ▁▁▁▂▃▃▃●▆▇█▃ beats 144/379  avg 1268                19%  blunt
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   18.1%  ▆▂●▆▂▂▃█▂▃·▂ beats 5/22     hard · avg 19%         5.0%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   41.7%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 85/97  hard · avg 32%     10%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   85.0%    59.3   2024-11-14   36% ▇▇▇▇
-<a name="arena-hard-auto-readme-v2"></a>Arena-Hard-Auto v2.0-…  <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts …</a>   16.4%    53.1   2025-05-01   29% ▇▇▇
-                        <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writ…</a>   18.1%    50.6   2025-05-01    5% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1314.1    55.6   2026-10-02   18% ▇▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   41.7%    60.3   2025-04-28   11% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 56.5
+source                                    results  share of the score
+<a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1   39% ▇▇▇▇▇
+<a name="arena-hard-auto-readme-v2"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard-Auto v2.0-Preview leaderboard</a>        2   30% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   19% ▇▇
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1   10% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 56.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
@@ -32,18 +61,69 @@ prior                   pull toward the middle                    50.0          
 <sub>[context source](https://huggingface.co/Nexusflow/Athene-V2-Chat/blob/493f1bbd561a5a7e3d27c4081d4ee47508bf6831/config.json): Nexusflow official configuration for Athene-V2-Chat (pinned commit): max\_position\_embeddings 32768. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~44.12GB   56.5
-8-bit q8_0    ~87.74GB   56.5
+download                       size  score
+4-bit q4_k_m               ~44.12GB   56.3
+8-bit q8_0                 ~87.74GB   56.3
+4-bit Q4_K_M                ~47.4GB   56.3
+8-bit Q8_0                  ~77.3GB   56.3
+4-bit mlx-4bit · mac only   ~40.9GB   56.3
+4-bit mlx-8bit · mac only   ~77.3GB   56.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
+# 4-bit Q4_K_M · ~47.4GB
+llama cli -hf lmstudio-community/Athene-V2-Chat-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Athene-V2-Chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~77.3GB
+llama cli -hf lmstudio-community/Athene-V2-Chat-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Athene-V2-Chat-GGUF:Q8_0
+```
+
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~47.4GB
+lms get https://huggingface.co/lmstudio-community/Athene-V2-Chat-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~77.3GB
+lms get https://huggingface.co/lmstudio-community/Athene-V2-Chat-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~40.9GB
+lms get https://huggingface.co/mlx-community/Athene-V2-Chat-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~77.3GB
+lms get https://huggingface.co/mlx-community/Athene-V2-Chat-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~44.12GB
 ollama run athene-v2:72b-q4_K_M
-# 8-bit q8_0
+# 8-bit q8_0 · ~87.74GB
 ollama run athene-v2:72b-q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~40.9GB
+mlx_lm.chat --model mlx-community/Athene-V2-Chat-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Athene-V2-Chat-4bit
+# 4-bit mlx-8bit · mac only · ~77.3GB
+mlx_lm.chat --model mlx-community/Athene-V2-Chat-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Athene-V2-Chat-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/athene-v2-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

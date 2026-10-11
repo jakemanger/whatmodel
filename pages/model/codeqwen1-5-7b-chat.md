@@ -6,33 +6,57 @@
 
 Alibaba · released 2024-04 · 7.25B params · tongyi-qianwen
 
-**score 50.7** ±0.7 · #413 of 934 · from 14 benchmark results across 3 sources
+**score 50.4** ±0.7 · #428 of 949 · from 14 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks CodeQwen1.5 7B Chat among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #244 of 469     83%      7
+</pre>
+
+<details><summary>coding · #244 of 469 · 83% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
+
+<pre>
+test              result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>          83.5%  ▁·▁▁▃▄▆▅█●▁▁ beats 89/99  easy · avg 79%       36%  sharp · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>         78.7%  ▁·▁▁▁▃▄▄▄█●▁ beats 89/99  easy · avg 74%       31%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>              69.0%  ▁···▁▁▂▅▇█●▂ beats 61/75  easy · avg 68%      7.8%  at its level · several runs
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>         77.7%  █···██●·██·█ beats 3/6    easy · avg 78%      3.4%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>    70.8%  ▄·▄····●▄·▄█ beats 2/6    easy · avg 71%      2.9%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>   44.0%  █·●█·█··█·██ beats 1/6    medium · avg 57%    1.4%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>   38.8%  ▄·●··▄·▄··▄▄ beats 2/6    medium · avg 55%    0.5%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        39.3%  ▃▂·▆▆██●▅▃▃▃ beats 24/33  medium · avg 41%    7.9%  at its level · several runs
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        43.7%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 39/58  medium · avg 50%    5.9%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   74.1%  ▂·▂▂▂▆●▆▆▆▃█ beats 10/29  easy · avg 76%      2.9%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       83.5%    52.2   2024-12-26   31% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      78.7%    52.4   2024-12-26   27% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           69.0%    51.0   2024-12-26    5% ▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  74.1%    48.7   2024-10-27    3% ▇
-<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                 83.5%    48.3   2024-11-12    6% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                78.7%    47.9   2024-11-12    5% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                      77.7%    49.4   2024-11-12    3% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                 70.8%    50.5   2024-11-12    3% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                     67.2%    50.1   2024-11-12    2% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   39.6%    51.3   2024-11-12    2% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                44.0%    40.0   2024-11-12    1% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                38.8%    36.8   2024-11-12    0% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>   39.3%    49.1   2025-04-01    6% ▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   43.7%    45.8   2025-04-01    5% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 50.7
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        4   64% ▇▇▇▇▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                                      8   24% ▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2   12% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 50.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -41,18 +65,65 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat/blob/7b0cc3380fe815e6f08fe2f80c03e05a8b1883d8/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~4.85GB   50.7
-8-bit q8_0     ~9.2GB   50.7
+download                      size  score
+4-bit q4_k_m               ~4.85GB   50.4
+8-bit q8_0                  ~9.2GB   50.4
+4-bit q4_k_m                ~4.7GB   50.4
+8-bit q8_0                  ~7.7GB   50.4
+4-bit mlx-6bit · mac only   ~5.9GB   50.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run codeqwen:7b-chat-v1.5-q4_K_M
-# 8-bit q8_0
-ollama run codeqwen:7b-chat-v1.5-q8_0
+# 4-bit q4_k_m · ~4.7GB
+llama cli -hf Qwen/CodeQwen1.5-7B-Chat-GGUF:q4_k_m
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/CodeQwen1.5-7B-Chat-GGUF:q4_k_m
+# 8-bit q8_0 · ~7.7GB
+llama cli -hf Qwen/CodeQwen1.5-7B-Chat-GGUF:q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/CodeQwen1.5-7B-Chat-GGUF:q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~4.7GB
+lms get https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat-GGUF@q4_k_m -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~7.7GB
+lms get https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat-GGUF@q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-6bit · mac only · ~5.9GB
+lms get https://huggingface.co/Wwayu/CodeQwen1.5-7B-Chat-mlx-6Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~4.85GB
+ollama run codeqwen:7b-chat-v1.5-q4_K_M
+# 8-bit q8_0 · ~9.2GB
+ollama run codeqwen:7b-chat-v1.5-q8_0
+# 4-bit q4_k_m · ~4.7GB
+ollama run hf.co/Qwen/CodeQwen1.5-7B-Chat-GGUF:q4_k_m
+# 8-bit q8_0 · ~7.7GB
+ollama run hf.co/Qwen/CodeQwen1.5-7B-Chat-GGUF:q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-6bit · mac only · ~5.9GB
+mlx_lm.chat --model Wwayu/CodeQwen1.5-7B-Chat-mlx-6Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model Wwayu/CodeQwen1.5-7B-Chat-mlx-6Bit
+```
 
 [interactive version](https://whatmodel.sh/model/codeqwen1-5-7b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

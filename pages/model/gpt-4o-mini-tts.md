@@ -6,33 +6,54 @@
 
 OpenAI · released 2025-03 · closed weights
 
-**score 58.0** ±2.2 · comparison only: no current run option verified · from 12 benchmark results across 7 sources
+**score 57.6** ±2.2 · comparison only: no current run option verified · from 12 benchmark results across 7 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks GPT-4o mini TTS among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                score  implies  date        weight
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>   3.34 / 5    61.5   2026-07-16   13% ▇▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Co…</a>   3.34 / 5    63.6   2026-07-16    9% ▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiven…</a>   3.23 / 5    60.6   2026-07-16    4% ▇
-<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval ZH · mean ins…</a>      51.1%    51.7   2025-06-19   15% ▇▇
-                        <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>      68.5%    51.3   2025-06-19    6% ▇
-<a name="speech-rime-alpha-bench-ccby"></a>Rime Alpha TTS Benchm…  <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired hu…</a>  -0.90 / 2    49.5   2026-09-13   11% ▇
-                        <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired hu…</a>  -0.31 / 2    54.5   2026-09-13   10% ▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>      60.2%    69.1   2025-08-10   15% ▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>        10.8%    65.5   2025-08-10    3% ▇
-<a name="speech-voicefirst-indic-ccby"></a>Preferences of a Voic…  <a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 India…</a>      942.8    55.3   2026-04-23    9% ▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>   4.20 / 5    60.9   2025-05-29    4% ▇
-<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>      18.7%  -222.2   2026-08-12    0% ▇
-prior                   pull toward the middle                       49.7                 2% ▇
-                        weighted average                           = 58.0
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (12)</summary>
+
+<pre>
+test                                   result  vs the others in its run  difficulty              counts  why
+<a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval ZH · mean instruc…</a>      51.1%  ●··········█ beats 0/2    medium · avg 42%           16%  sharp · at its level · small run
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>      60.2%  ▅▅▃▃█▅▅▃·●·▅ beats 14/16  hard · avg 30%             16%  at its level
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qualit…</a>   3.34 / 5  █·●········▄ beats 2/4    medium · avg 2.70 / 5      13%  at its level
+<a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired human …</a>  -0.31 / 2  ●·▄········█ beats 0/3    medium · avg -0.58 / 2     10%  at its level
+<a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired human …</a>  -0.90 / 2  ●·······█·██ beats 0/3    hard · avg -0.90 / 2      9.5%  at its level
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Code-S…</a>   3.34 / 5  ●··▄·······▄ beats 1/3    medium · avg 2.67 / 5     8.8%  at its level
+<a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 Indian la…</a>      942.8  ●····▄·····█ beats 0/3    avg 897                   6.8%  typical
+<a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean instruc…</a>      68.5%  ▄····●··▄··▄ beats 1/4    easy · avg 66%            6.6%  at its level
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiveness …</a>   3.23 / 5  ●██···█····█ beats 0/4    medium · avg 2.87 / 5     4.1%  blunt · at its level
+<a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automatic …</a>   4.20 / 5  ▄·█·█▄····●▄ beats 7/8    easy · avg 3.93 / 5       3.7%  blunt
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>            10.8%  ▂▄··▂▄▄··█▄● beats 14/16  avg 16%                   3.5%  blunt
+<a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (Chir…</a>      18.7%  ▄·····●·▄·██ beats 1/6    avg 8.7%                  0.0%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-rw-voice-eq-report"></a><a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ Bench</a>                               3   26% ▇▇▇
+<a name="speech-instructttseval-ccby"></a><a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval: instruction-following …</a>        2   22% ▇▇▇
+<a name="speech-rime-alpha-bench-ccby"></a><a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime Alpha TTS Benchmark v1.0.0 · Suppo…</a>        2   20% ▇▇
+<a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   19% ▇▇
+<a name="speech-voicefirst-indic-ccby"></a><a href="https://arxiv.org/html/2604.21481v2">Preferences of a Voice-First Nation: pa…</a>        1    7% ▇
+<a name="speech-emergent-v1-paper-ccby"></a><a href="https://arxiv.org/html/2505.23009v1">EmergentTTS-Eval v1 paper</a>                       1    4% ▇
+<a name="speech-amharic-addis-bysa"></a><a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Addis AI Amharic TTS benchmark</a>                  1    0% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 57.6
+</pre>
 
 <sub>Licences: RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · InstructTTSEval: instruction-following TTS benchmark ([CC BY 4.0](../../licenses/speech-instructttseval-ccby.txt)) · Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference ([CC BY 4.0](../../licenses/speech-rime-alpha-bench-ccby.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages ([CC BY 4.0](../../licenses/speech-voicefirst-indic-ccby.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) · Addis AI Amharic TTS benchmark ([CC BY-SA 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
 

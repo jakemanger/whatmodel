@@ -6,21 +6,37 @@
 
 BAAI · released 2024-12 · 0.6B params · apache-2.0
 
-**score 29.1** ±3.3 · #84 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 29.2** ±3.3 · #84 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks NOVA-0.6B T2V among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others        rank  counts  tests
+text to video  ▆●▃▄▆▅█▃▂▂▂▄   #59 of 68*     95%      2
+</pre>
+
+<details><summary>text to video · #59 of 68 · 95% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   41.2%  ▄▄·●··█▄▄▄▄▄ beats 2/10   easy · avg 73%     60%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   47.2%  ▄▄·●▄█▄··▄▄▄ beats 2/10   easy · avg 70%     35%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>  41.2%    27.2   2025-05-17   61% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>  47.2%    29.7   2025-05-17   35% ▇▇▇▇
-prior                   pull toward the middle                   49.9                 5% ▇
-                        weighted average                       = 29.1
+source                                    results  share of the score
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 29.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt))</sub>
 
@@ -28,14 +44,18 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~9.3GB   29.1
+fp16 · nvidia only  ~9.3GB   29.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~9.3GB
 git clone https://github.com/baaivision/NOVA && cd NOVA && pip install diffusers transformers accelerate imageio-ffmpeg omegaconf wandb && pip install . && python -c "import torch; from diffnext.pipelines import NOVAPipeline; from diffnext.utils import export_to_video; p=NOVAPipeline.from_pretrained('BAAI/nova-d48w1024-osp480', torch_dtype=torch.float16, trust_remote_code=True).to('cuda'); export_to_video(p('Many spotted jellyfish pulsating under water.', max_latent_length=9).frames[0], 'nova.mp4', fps=12)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/nova-0-6b-t2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

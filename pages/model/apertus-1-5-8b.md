@@ -6,20 +6,35 @@
 
 Swiss AI · released 2026-07 · 8.9B params · apache-2.0
 
-**score 48.0** ±7.3 · #490 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.5** ±7.4 · #510 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Apertus 1.5 8B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   11.7%  ▁●▃▂▂▄▁▃▄▄▄█ beats 1/38   very hard · avg 14%     76%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>  11.7%    47.4   2026-09-22   77% ▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                23% ▇▇▇
-                        weighted average                       = 48.0
+source                             results  share of the score
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>        1   76% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                24% ▇▇▇
+weighted average                            = 47.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
 
@@ -29,14 +44,44 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~17.8GB   48.0
+16-bit bf16 · nvidia only  ~17.8GB   47.5
+4-bit mlx-4bit · mac only   ~4.5GB   47.5
+4-bit mlx-8bit · mac only   ~8.6GB   47.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
 ```sh
-# 16-bit bf16 · nvidia only
-vllm serve swiss-ai/Apertus-v1.5-8B --chat-template-content-format string --max-model-len 262144 --reasoning-parser apertus --default-chat-template-kwargs.enable_thinking true
+# 4-bit mlx-4bit · mac only · ~4.5GB
+lms get https://huggingface.co/tokimoa/apertus-v1.5-8b-mlx-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~8.6GB
+lms get https://huggingface.co/tokimoa/apertus-v1.5-8b-mlx-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.5GB
+mlx_lm.chat --model tokimoa/apertus-v1.5-8b-mlx-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model tokimoa/apertus-v1.5-8b-mlx-4bit
+# 4-bit mlx-8bit · mac only · ~8.6GB
+mlx_lm.chat --model tokimoa/apertus-v1.5-8b-mlx-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model tokimoa/apertus-v1.5-8b-mlx-8bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~17.8GB
+vllm serve swiss-ai/Apertus-v1.5-8B --chat-template-content-format string --max-model-len 262144 --reasoning-parser apertus --default-chat-template-kwargs.enable_thinking true
+```
 
 [interactive version](https://whatmodel.sh/model/apertus-1-5-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

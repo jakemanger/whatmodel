@@ -6,22 +6,38 @@
 
 TII · released 2025-05 · 7.59B params · other (falcon-llm-license)
 
-**score 46.4** ±3.1 · #542 of 934 · from 3 benchmark results across 2 sources
+**score 46.3** ±3.1 · #549 of 949 · from 3 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Falcon-H1 7B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   35.0%  ▁▁▁▁·●·█▆█▇▁ beats 5/31     medium · avg 48%     43%  at its level
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   24.4%  ▁▁·▁▂▂▄●▄▅▄▄ beats 18/66    hard · avg 31%       34%  typical
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   75.3%  ▃▁▁▁▁▁▁▁▂█●▁ beats 227/276  medium · avg 73%     19%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Incep…</a>  35.0%    43.4   2026-04-06   42% ▇▇▇▇▇
-                        <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  24.4%    46.6   2025-09-28   34% ▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  75.3%    52.0   2025-07-08   19% ▇▇
-prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 46.4
+source                               results  share of the score
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">Inception Arabic/Hindi leaderboards</a>        2   77% ▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1   19% ▇▇
+prior: pull toward the middle                   4% ▇
+weighted average                              = 46.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -30,15 +46,67 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/tiiuae/Falcon-H1-7B-Instruct/blob/41e72f27effbab80cd45b6e884688452253a3686/config.json): TII official configuration for Falcon-H1-7B-Instruct (pinned commit 41e72f2): max\_position\_embeddings 262144. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-16-bit bf16  ~15.17GB   46.4
+download                       size  score
+16-bit bf16                ~15.17GB   46.3
+4-bit Q4_K_M                 ~4.6GB   46.3
+8-bit Q8_0                   ~8.1GB   46.3
+4-bit mlx-4bit · mac only    ~4.3GB   46.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/Falcon-H1-7B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~4.6GB
+llama cli -hf tiiuae/Falcon-H1-7B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf tiiuae/Falcon-H1-7B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.1GB
+llama cli -hf tiiuae/Falcon-H1-7B-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf tiiuae/Falcon-H1-7B-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.6GB
+lms get https://huggingface.co/tiiuae/Falcon-H1-7B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.1GB
+lms get https://huggingface.co/tiiuae/Falcon-H1-7B-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.3GB
+lms get https://huggingface.co/mlx-community/Falcon-H1-7B-Instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.6GB
+ollama run hf.co/tiiuae/Falcon-H1-7B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.1GB
+ollama run hf.co/tiiuae/Falcon-H1-7B-Instruct-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.3GB
+mlx_lm.chat --model mlx-community/Falcon-H1-7B-Instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Falcon-H1-7B-Instruct-4bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~15.17GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/Falcon-H1-7B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/falcon-h1-7b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

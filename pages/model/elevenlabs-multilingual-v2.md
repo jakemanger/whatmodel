@@ -6,24 +6,40 @@
 
 ElevenLabs · released 2023-08 · proprietary
 
-**score 50.8** ±4.6 · #62 of 117 · from 3 benchmark results across 2 sources
+**score 50.5** ±4.5 · #65 of 118 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Eleven Multilingual v2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     33.6%    52.4   2025-08-10   59% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       11.2%    64.3   2025-08-10   15% ▇▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.55 / 5    35.0   2025-05-29   18% ▇▇
-prior                   pull toward the middle                      49.7                 8% ▇
-                        weighted average                          = 50.8
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     33.6%  ▅▅▃▃█●▅▃·▃·▅ beats 10/16  hard · avg 30%          59%  at its level
+<a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automatic …</a>  3.55 / 5  ▄·█·●▄····█▄ beats 3/8    easy · avg 3.93 / 5     18%  blunt · at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           11.2%  ▂▄··▂▄▄··█●▆ beats 13/16  avg 16%                 15%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   74% ▇▇▇▇▇▇▇▇▇
+<a name="speech-emergent-v1-paper-ccby"></a><a href="https://arxiv.org/html/2505.23009v1">EmergentTTS-Eval v1 paper</a>                       1   18% ▇▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 50.5
+</pre>
 
 <sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt))</sub>
 

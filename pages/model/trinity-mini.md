@@ -6,21 +6,36 @@
 
 Arcee AI · released 2025-12 · 26.12B params (3B active) · openmdw-1.1
 
-**score 52.9** ±5.8 · #369 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.8** ±6.0 · #377 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Trinity Mini (26B-A3B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   68.7%  ▃·▁▁▂▁▂▅●▇▄▁ beats 46/100   medium · avg 68%     53%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   91.4%  ▁▁▁▁▁▁▁▂▄█●▃ beats 121/146  easy · avg 83%       31%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  68.7%    50.6   2026-04-17   55% ▇▇▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  91.4%    58.6   2026-04-17   30% ▇▇▇▇
-prior                  pull toward the middle                   50.0                15% ▇▇
-                       weighted average                       = 52.9
+source                         results  share of the score
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   84% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            16% ▇▇
+weighted average                        = 52.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -30,14 +45,35 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~15.94GB   52.9
+4-bit q4_k_m  ~15.94GB   52.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf arcee-ai/Trinity-Mini-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~15.94GB
+llama cli -hf arcee-ai/Trinity-Mini-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf arcee-ai/Trinity-Mini-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~15.94GB
+lms get https://huggingface.co/arcee-ai/Trinity-Mini-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~15.94GB
+ollama run hf.co/arcee-ai/Trinity-Mini-GGUF:Q4_K_M
+```
 
 [interactive version](https://whatmodel.sh/model/trinity-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

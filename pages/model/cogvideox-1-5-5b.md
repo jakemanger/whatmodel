@@ -6,25 +6,55 @@
 
 Zhipu AI (THUDM) · released 2024-11 · 5.57B params · cogvideox
 
-**score 36.0** ±2.4 · #77 of 93 · from 6 benchmark results across 5 sources
+**score 36.1** ±2.4 · #76 of 93 · from 6 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks CogVideoX1.5-5B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others       rank  counts  tests
+text to video  ▆▄●▄▆▅█▃▂▂▂▄   #53 of 68     85%      5
+</pre>
+
+<details><summary>text to video · #53 of 68 · 85% of its score</summary>
+
+Trails [Pika 2.2](pika-2-2.md), [CogVideoX-2B](cogvideox-2b.md) here, though they rank lower overall.
+
+<pre>
+test                                       result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>          50.6%  ▄▄·█··█●▄▄▄▄ beats 6/10   easy · avg 73%               33%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>          49.7%  ▄▄·█▄●▄··▄▄▄ beats 5/10   easy · avg 70%               19%  at its level
+<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  894.05 / 1608  ●·▄··▄·····█ beats 0/5    easy · avg 1103.17 / 16…     14%  at its level
+<a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt ver…</a>          80.3%  ●···█···█··█ beats 0/3    very easy · avg 88%          12%  typical
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>          38.6%  ●·▃█▃·▅▃▅▃▃▃ beats 1/14   hard · avg 44%              6.4%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   75.2%  ●▄·▄█▄▄····▄ beats 1/8    easy · avg 82%     13%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                    score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>          50.6%    33.4   2025-05-17   34% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>          49.7%    31.3   2025-05-17   19% ▇▇
-<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  894.05 / 1608    38.7   2026-05-15   14% ▇▇
-<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>          75.2%    40.7   2026-08-06   13% ▇▇
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>          80.3%    39.6   2025-04-21   11% ▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>          38.6%    37.7   2026-08-10    6% ▇
-prior                   pull toward the middle                           49.9                 3% ▇
-                        weighted average                               = 36.0
+source                                    results  share of the score
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   53% ▇▇▇▇▇▇
+<a name="video-videoverse"></a><a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse: Does Your T2V Generator Hav…</a>        1   14% ▇▇
+<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1   13% ▇▇
+<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T6">SkyReels-V2: Infinite-length Film Gener…</a>        1   12% ▇
+<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    6% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 36.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt)) · VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
 
@@ -32,14 +62,18 @@ prior                   pull toward the middle                           49.9   
 
 <pre>
 version                                     needs  score
-bf16 + sequential CPU offload · nvidia …  ~37.8GB   36.0
+bf16 + sequential CPU offload · nvidia …  ~37.8GB   36.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 + sequential CPU offload · nvidia only
+# bf16 + sequential CPU offload · nvidia only · ~37.8GB
 uv run --with torch --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with imageio-ffmpeg --with sentencepiece python -c "import torch; from diffusers import CogVideoXPipeline; from diffusers.utils import export_to_video; p=CogVideoXPipeline.from_pretrained('zai-org/CogVideoX1.5-5B', torch_dtype=torch.bfloat16); p.enable_sequential_cpu_offload(); p.vae.enable_tiling(); p.vae.enable_slicing(); export_to_video(p(prompt='A panda, dressed in a small, red jacket and a tiny hat, sits on a wooden stool in a serene bamboo forest.', num_videos_per_prompt=1, num_inference_steps=50, num_frames=81, guidance_scale=6, generator=torch.Generator(device='cuda').manual_seed(42)).frames[0], 'output.mp4', fps=8)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cogvideox-1-5-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,41 +6,93 @@
 
 Meta · released 2023-02 · 13B params · llama-1-noncommercial-research
 
-**score 29.0** ±1.0 · comparison only: no current run option verified · from 20 benchmark results across 5 sources
+**score 27.8** ±1.0 · comparison only: no current run option verified · from 21 benchmark results across 6 sources
+
+## What it's good at
+
+<sub>● marks LLaMA 13B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁●▃▅▇█▇▅▄▂▁    #529 of 549     18%      2
+chat &amp; writing  ●▁▁▃▅▅▆█▆▆▆▂    #578 of 579     24%      3
+math            ▁●▃▅▇▅▅█▄▁▁▁   #456 of 464*    8.4%      2
+</pre>
+
+<details><summary>coding · #529 of 549 · 18% of its score</summary>
+
+Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [StarCoderBase 3B](starcoderbase-3b.md) here, though they rank lower overall.
+
+<pre>
+test        result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>    13.4%  ▄··▄····▄▄█● beats 6/6    easy · avg 71%       14%  sharp · several runs
+<a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>   22.0%  ▁●▁▄▅█▄▅▃▁▂▁ beats 2/81   medium · avg 63%    3.7%  typical
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #578 of 579 · 24% of its score</summary>
+
+Trails [Gemma 3 270M IT](gemma-3-270m.md), [FastChat-T5 3B](fastchat-t5-3b.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
+
+<pre>
+test                                                      result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         853.0  ●▁▂▁▃▇█▆▇▄▂▂ beats 1/95   avg 1201                    8.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                             975.0  ●▁▁▂▃▃▃▆▆▇█▃ beats 1/379  avg 1268                    8.2%  blunt
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  2.6100 MT-Bench score (1-10)  ●▂▂▆▆▄██▂▄▄▆ beats 0/28   avg 8.819 MT-Bench scor…    7.2%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #456 of 464 · 8.4% of its score</summary>
+
+Beats [Llama 2 13B Chat](llama-2-13b-chat.md), [DeepSeek-Coder 1.3B Base](deepseek-coder-1-3b-base.md), [StarCoderBase 7B](starcoderbase-7b.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
+
+<pre>
+test         result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>   17.8%  ▂▂●▅▅▆▅▇█▇▄▃ beats 11/146  easy · avg 76%    4.6%  sharp
+<a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>     3.9%  ▃●▂▆▅▃▅▃█▃▃▂ beats 3/29    hard · avg 27%    3.8%  too hard for it
+</pre>
+
+</details>
+
+<details><summary>other tests (12)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                       37.1%  ███··█·●·█·█ beats 4/6    easy · avg 76%         8.3%  sharp
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 46.2%  ▄▄·▄···▄▄·●█ beats 6/8    easy · avg 77%         6.7%  several runs
+<a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                          78.1%  ▁▄▅▆▂▆▄●█▃▄▄ beats 36/58  very easy · avg 93%    4.8%  at its level
+<a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>                  52.7%  ▆▁▁▂▂▅▇●▄▃▃▂ beats 61/97  easy · avg 86%         4.5%  sharp
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   21.3%  ▅····▃▅·●█·█ beats 6/13   medium · avg 59%       4.3%  typical
+<a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                     73.0%  ▁···▂▁▁▅█●▃▁ beats 71/87  easy · avg 90%         4.2%  at its level
+<a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                      79.2%  ▁▁▁▁▂▂▃▇█●▅▃ beats 64/85  very easy · avg 92%    4.0%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   41.2%  ▃▅▃··▅▃·●▃▃▅ beats 8/13   easy · avg 67%         3.8%  at its level
+<a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                     56.4%  █▁▁▁▄▃▃▇●▁▄▂ beats 51/65  easy · avg 80%         3.1%  typical
+<a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                       74.8%  ▁▂▃▂▃▅▇█▇●▄▆ beats 51/65  very easy · avg 90%    2.7%  at its level
+<a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                     50.4%  ▂·▂██▅●▁▂▃▆▁ beats 33/51  medium · avg 65%       1.6%  blunt
+<a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                           80.1%  ▁▁▁▃▃▄▇█●▃▁▁ beats 68/83  easy · avg 88%         1.5%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                                   score  implies  date        weight
-<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                                        15.8%    32.4   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                                            17.8%    26.6   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>                                    52.7%    35.2   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                                            78.1%    31.8   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                                       73.0%    34.2   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                                              3.9%    27.1   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                                             46.9%    32.1   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                                        79.2%    34.8   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                                             22.0%    28.0   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                                       56.4%    38.3   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                                         74.8%    31.9   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                                       50.4%    33.0   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                                             80.1%    33.8   2023-02-27    1% ▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                                         37.1%    30.2   2024-03-10   11% ▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                                              13.4%    28.1   2024-03-10   10% ▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                                   46.2%    33.0   2024-03-10    4% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                         21.3%    32.7   2024-04-24    5% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                         41.2%    36.1   2024-04-24    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                         975.0    15.0   2026-10-08    8% ▇
-<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  2.6100 MT-Bench score (1-10)    11.4   2023-06-19    7% ▇
-prior                   pull toward the middle                                          50.0                 0% ▇
-                        weighted average                                              = 29.0
+source                                    results  share of the score
+<a name="paper-2302.13971v1"></a><a href="https://arxiv.org/html/2302.13971v1">LLaMA: Open and Efficient Foundation La…</a>       13   47% ▇▇▇▇▇▇
+<a name="instruct-eval-readme"></a><a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">InstructEval</a>                                    3   21% ▇▇▇
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    8% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
+<a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    8% ▇
+<a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1    7% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 27.8
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: LLaMA: Open and Efficient Foundation Language Models ([CC BY 4.0](../../licenses/paper-2302.13971v1-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: LLaMA: Open and Efficient Foundation Language Models ([CC BY 4.0](../../licenses/paper-2302.13971v1-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

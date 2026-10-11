@@ -10,18 +10,36 @@ OpenAI · released 2021-12 · 0.3B params · mit
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks GLIDE (filtered) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  23.5%    -6.9   2024-02-21    6% ▇
-prior                   pull toward the middle                   49.9                94% ▇▇▇▇▇▇▇▇▇▇▇
-                        weighted average                       = 46.5
+task           vs the others          rank  counts  tests
+text to image  ▁▂●▇▆▅█▇▂▃▁▁   #148 of 157*    6.1%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #148 of 157 · 6.1% of its score</summary>
+
+Trails [CogView2](cogview2.md), [DALL·E Mega (minDALL-E)](dall-e-mega-min-dalle.md), [Versatile Diffusion v1.0](versatile-diffusion.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   23.5%  ●··▃▅·▅·▅▅█▅ beats 0/14   hard · avg 27%    6.1%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                           results  share of the score
+<a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">tgxs002/HPSv2 repository README</a>        1    6% ▇
+prior: pull toward the middle              94% ▇▇▇▇▇▇▇▇▇▇▇
+weighted average                          = 46.5
+</pre>
 
 <sub>Licences: tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 

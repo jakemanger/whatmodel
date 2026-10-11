@@ -6,24 +6,40 @@
 
 IBM · released 2025-06 · 3.01B params · apache-2.0
 
-**score 59.9** ±2.5 · #32 of 160 · from 3 benchmark results across 2 sources
+**score 59.9** ±2.5 · #34 of 162 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Granite Speech 3.3 2B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                 test                            score  implies  date        weight
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench  <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  25.5%    58.2   2025-11-18   41% ▇▇▇▇▇
-                       <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  20.7%    61.4   2025-11-18   35% ▇▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.0%    61.7   2026-03-26   22% ▇▇▇
-prior                  pull toward the middle                   49.8                 2% ▇
-                       weighted average                       = 59.9
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-region …</a>   25.5%  ▂····▂···▂●█ beats 4/11   avg 46%        41%  typical
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parliamen…</a>   20.7%  ▂▂····▂·▅·●█ beats 7/12   avg 52%        35%  sharp
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    6.0%  ▁▁▁▃··▁▁▂██● beats 79/86  avg 8.2%       22%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-stt-afrispeech-multibench-report"></a><a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench</a>                2   76% ▇▇▇▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   22% ▇▇▇
+prior: pull toward the middle             2% ▇
+weighted average                        = 59.9
+</pre>
 
 <sub>Licences: AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
@@ -34,11 +50,15 @@ version               needs  score
 bf16 · nvidia only  ~7.72GB   59.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~7.72GB
 vllm serve ibm-granite/granite-speech-3.3-2b --max-model-len 2048 --enable-lora --lora-modules speech=ibm-granite/granite-speech-3.3-2b --max-lora-rank 64
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/granite-speech-3-3-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

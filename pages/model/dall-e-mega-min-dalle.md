@@ -6,24 +6,52 @@
 
 DALL·E Mini / minDALL-E · released 2022-07
 
-**score 28.6** ±3.8 · #134 of 144 · from 3 benchmark results across 3 sources
+**score 28.7** ±3.8 · #134 of 144 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks DALL·E Mega (minDALL-E) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-tifa"></a>TIFA: Accurate and In…  <a href="https://arxiv.org/html/2303.11897v3">TIFA v1.0 (overall, mPLUG VQA)</a>  79.4%    27.7                64% ▇▇▇▇▇▇▇▇
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>  58.9%    26.2   2023-11-07   30% ▇▇▇▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">HPS v2 benchmark (4-style ave…</a>  25.8%    27.5                 0% ▇
-prior                   pull toward the middle                   49.9                 6% ▇
-                        weighted average                       = 28.6
+task           vs the others          rank  counts  tests
+text to image  ▂●▅▃▄▄█▃▁▂▁▁   #119 of 126*     64%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #119 of 126 · 64% of its score</summary>
+
+Trails [CogView2](cogview2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2303.11897v3">TIFA v1.0 (overall, mPLUG VQA)</a>       79.4%  █·······▄▄●▄ beats 4/5    very easy · avg 95%     64%  typical
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">HPS v2 benchmark (4-style average)</a>   25.8%  ▃··▃▅·●·▅▅█▅ beats 5/14   hard · avg 27%         0.4%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (aspect…</a>   58.9%  ▁····●▁·▁··▁ beats 5/9    very easy · avg 92%     30%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-tifa"></a><a href="https://arxiv.org/html/2303.11897v3">TIFA: Accurate and Interpretable Text-t…</a>        1   64% ▇▇▇▇▇▇▇▇
+<a name="visual-heim"></a><a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM: Holistic Evaluation of Text-to-Im…</a>        1   30% ▇▇▇▇
+<a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">tgxs002/HPSv2 repository README</a>                 1    0% ▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 28.7
+</pre>
 
 <sub>Licences: TIFA: Accurate and Interpretable Text-to-Image Faithfulness Evaluation with Question Answering ([CC-BY-4.0](../../licenses/visual-tifa.txt)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 
@@ -31,14 +59,18 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version  needs  score
-fp32      ~8GB   28.6
+fp32      ~8GB   28.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32
+# fp32 · ~8GB
 uv run --with torch --with min-dalle python -c "import torch; from min_dalle import MinDalle; m=MinDalle(models_root='./pretrained', dtype=torch.float32, device='cpu', is_mega=True, is_reusable=True); m.generate_image(text='A lighthouse at sunset', seed=1, grid_size=1, is_seamless=False, temperature=1, top_k=256, supercondition_factor=32, is_verbose=False).save('image.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/dall-e-mega-min-dalle) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,33 +6,83 @@
 
 Mistral · released 2025-09 · 24B params · apache-2.0
 
-**score 57.9** ±1.1 · #248 of 934 · from 14 benchmark results across 6 sources
+**score 57.8** ±1.1 · #255 of 949 · from 14 benchmark results across 6 sources
+
+## What it's good at
+
+<sub>● marks Magistral Small 1.2 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others         rank  counts  tests
+coding              ██········●█      #2 of 4*    9.3%      2
+math                ▁▂▃▅▆▅●█▄▁▁▁   #181 of 400     37%      3
+vision &amp; documents  ▁▁▃▂▁▃●▃▆▇█▄   #99 of 150*    8.4%      2
+</pre>
+
+<details><summary>coding · #2 of 4 · 9.3% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   70.9%  ▄█▄······●·▄ beats 4/5    medium · avg 50%    5.5%  at its level
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspecifie…</a>   60.7%  ▁···▁▁▃▅▅●▄▅ beats 25/37  medium · avg 41%    3.9%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · #181 of 400 · 37% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run   difficulty            counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            77.3%  █▃·····●···▃ beats 4/5     medium · avg 49%         15%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>            86.1%  █▃·····●···▃ beats 4/5     medium · avg 60%         12%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   28.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 62/193  very hard · avg 8.5%    9.4%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #99 of 150 · 8.4% of its score</summary>
+
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md) here, though they rank lower overall.
+
+<pre>
+test                           result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/abs/2510.01141v1">CharXiv (reasoning questions)</a>   52.9%  ▂▅▃▅●▆▆▅▆█▆▂ beats 33/100  medium · avg 38%    4.6%  at its level · small run
+<a href="https://arxiv.org/abs/2510.01141v1">CharXiv descriptive questions</a>   82.3%  ▂▄▄▅▇●█▇▇▂▁▂ beats 28/58   easy · avg 72%      3.8%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         47.6%  ▁▁▁▁▂▄●▄▅▇█▅ beats 60/208   hard · avg 40%           34%  sharp · at its level · several runs
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   32.3%  ▁▁·▁▂▂▄●▄▅▄▄ beats 29/66    hard · avg 31%          5.7%  at its level
+<a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text generati…</a>   60.3%  ▄·▄█▄··▄▄·●▄ beats 7/8      medium · avg 41%        2.1%  at its level · small run
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   89.4%  ▃·▁▁▂▁▂▅█▇●▁ beats 90/100   medium · avg 68%        1.4%  at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 3.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 38/135   very hard · avg 5.9%    1.2%  sharp · too hard for it · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   95.5%  ▁▁▁▁▁▁▁▂▄█▄● beats 142/146  easy · avg 83%          0.8%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                 77.3%    60.5   2026-02-23   16% ▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>              70.1%    56.7   2026-02-23   15% ▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>                 86.1%    61.7   2026-02-23   12% ▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>  70.9%    62.9   2026-02-23    5% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    47.6%    54.4   2026-08-30   19% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        28.1%    56.9   2026-08-30    9% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            3.0%    51.0   2026-08-30    1% ▇
-<a name="paper-2510.01141v1-apriel-1-5"></a>Apriel-1.5-15b-Thinker  <a href="https://arxiv.org/abs/2510.01141v1">CharXiv (reasoning questions)</a>   52.9%    57.5   2025-10-01    5% ▇
-                        <a href="https://arxiv.org/abs/2510.01141v1">CharXiv descriptive questions</a>   82.3%    56.7   2025-10-01    4% ▇
-<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspec…</a>  60.7%    60.3   2026-09-25    4% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text gene…</a>  60.3%    64.5   2026-09-25    2% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  32.3%    50.9   2026-04-03    5% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  89.4%    63.2   2026-04-17    2% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  95.5%    65.1   2026-04-17    1% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 57.9
+source                                    results  share of the score
+<a name="card2-mistralai-magistral-small-2509"></a><a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">mistralai/Magistral-Small-2509 model ca…</a>        4   48% ▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   29% ▇▇▇▇
+<a name="paper-2510.01141v1-apriel-1-5"></a><a href="https://arxiv.org/abs/2510.01141v1">Apriel-1.5-15b-Thinker</a>                          2    8% ▇
+<a name="card-mistralai-mistral-small-4-119b-2603"></a><a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">mistralai/Mistral-Small-4-119B-2603 mod…</a>        2    6% ▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1    6% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 57.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Apriel-1.5-15b-Thinker ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -43,18 +93,67 @@ api (Amazon Bedrock) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/amazon-bedrock/models/mistral.magistral-small-2509.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/mistral/magistral-small-2509.toml)</sub>
 
 <pre>
-download              size  score
-4-bit gguf-q4_k_m  ~14.9GB   57.9
-8-bit gguf-q8_0    ~29.3GB   57.9
+download                      size  score
+4-bit gguf-q4_k_m          ~14.9GB   57.8
+8-bit gguf-q8_0            ~29.3GB   57.8
+4-bit mlx-4bit · mac only  ~14.1GB   57.8
+4-bit mlx-8bit · mac only  ~25.9GB   57.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit gguf-q4_k_m
-llama-server -hf mistralai/Magistral-Small-2509-GGUF:Q4_K_M
-# 8-bit gguf-q8_0
-llama-server -hf mistralai/Magistral-Small-2509-GGUF:Q8_0
+# 4-bit gguf-q4_k_m · ~14.9GB
+llama cli -hf mistralai/Magistral-Small-2509-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mistralai/Magistral-Small-2509-GGUF:Q4_K_M
+# 8-bit gguf-q8_0 · ~29.3GB
+llama cli -hf mistralai/Magistral-Small-2509-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mistralai/Magistral-Small-2509-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit gguf-q4_k_m · ~14.9GB
+lms get https://huggingface.co/mistralai/Magistral-Small-2509-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit gguf-q8_0 · ~29.3GB
+lms get https://huggingface.co/mistralai/Magistral-Small-2509-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~14.1GB
+lms get https://huggingface.co/lmstudio-community/Magistral-Small-2509-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~25.9GB
+lms get https://huggingface.co/lmstudio-community/Magistral-Small-2509-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit gguf-q4_k_m · ~14.9GB
+ollama run hf.co/mistralai/Magistral-Small-2509-GGUF:Q4_K_M
+# 8-bit gguf-q8_0 · ~29.3GB
+ollama run hf.co/mistralai/Magistral-Small-2509-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~14.1GB
+mlx_lm.chat --model lmstudio-community/Magistral-Small-2509-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Magistral-Small-2509-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~25.9GB
+mlx_lm.chat --model lmstudio-community/Magistral-Small-2509-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Magistral-Small-2509-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/magistral-small-2509) · [JSON](https://whatmodel.sh/api?format=json&all=1)

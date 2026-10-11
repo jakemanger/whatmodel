@@ -8,20 +8,59 @@ Runway · released 2025-12 · proprietary
 
 **score 58.4** ±2.2 · #29 of 93 · from 3 benchmark results across 3 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Runway Gen-4.5 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1224.7    56.6   2026-09-22   80% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   36.6%    69.4   2026-08-26    9% ▇
-<a name="visual-switch-bench"></a>SWITCH: Benchmarking …  <a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface …</a>   36.0%    65.5   2026-07-07    9% ▇
-prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 58.4
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄▆▅█●▂▂▂▄   #19 of 68*     81%      1
+image to video  ▁▂·▂▅█▅▄●▆▃▄   #18 of 50*    8.9%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #19 of 68 · 81% of its score</summary>
+
+Beats [Kling 2.6 Pro](kling-2-6-pro.md) here, though they rank higher overall. Trails [Seedance 1.5 Pro](seedance-1-5-pro.md) here, though they rank lower overall.
+
+<pre>
+test           result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1224.7  ▂▂▃▆█●·▆▅▁▂▇ beats 20/41  avg 1147       81%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #18 of 50 · 8.9% of its score</summary>
+
+Beats [HappyHorse 1.1](happyhorse-1-1.md), [Vidu Q3 Pro](vidu-q3-pro.md), [Wan 2.6](wan-2-6.md) here, though they rank higher overall.
+
+<pre>
+test                              result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I2V)</a>   36.6%  ▄▄···▄▄●·█·▄ beats 4/8    hard · avg 20%    8.9%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface I2V …</a>   36.0%  █●█··█·····█ beats 1/4    very hard · avg 28%    8.5%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-vgi"></a><a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench: Probing Visual Intelligence …</a>        1    9% ▇
+<a name="visual-switch-bench"></a><a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH: Benchmarking Modeling and Handl…</a>        1    8% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 58.4
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · SWITCH: Benchmarking Modeling and Handling of Tangible Interfaces in Long-horizon Embodied Scenarios ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>
 

@@ -6,22 +6,37 @@
 
 Microsoft AI · released 2026-06 · closed weights
 
-**score 62.2** ±7.9 · #15 of 160 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.2** ±8.0 · #18 of 162 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks MAI-Transcribe-1.5 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1  <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   3.6%    66.1   2026-07-05   76% ▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.8                24% ▇▇▇
-                      weighted average                       = 62.2
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-lang…</a>    3.6%  ▄·····▄··▄█● beats 5/5    avg 7.9%       75%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-stt-koedesk-ccby"></a><a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk STT Bench v1</a>                 1   75% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            25% ▇▇▇
+weighted average                        = 62.2
+</pre>
 
 <sub>Licences: koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt))</sub>
 

@@ -6,43 +6,72 @@
 
 NVIDIA · released 2024-01 · 1.07B params · cc-by-4.0
 
-**score 57.8** ±1.9 · #48 of 160 · from 6 benchmark results across 3 sources
+**score 58.0** ±1.6 · #45 of 162 · from 14 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Parakeet RNNT 1.1B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  25.6%    58.4   2025-11-18   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  26.8%    58.1   2025-11-18   22% ▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.1%    55.1   2026-03-26   13% ▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  10.7%    52.5   2026-03-26   13% ▇▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">LibriSpeech test-clean WER</a>       1.5%    62.7   2026-09-15   18% ▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">FLEURS English test WER</a>          4.5%    58.9   2026-09-15    7% ▇
-prior                   pull toward the middle                   49.8                 1% ▇
-                        weighted average                       = 57.8
+task                    vs the others        rank  counts  tests
+long-form transcripti…  ▁▁▄▁·▁●█▄▁▁▁   #19 of 27*    8.3%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>long-form transcription · #19 of 27 · 8.3% of its score</summary>
 
-<sub>Licences: AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
+Trails [Whisper large (v1)](whisper-large.md), [Whisper large-v2](whisper-large-v2.md), [Rev AI Machine (Reverb ASR)](revai-machine.md) here, though they rank lower overall.
 
-<details><summary>Not counted (9)</summary>
+<pre>
+test                            result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   10.7%  ▁▁▅▁·●▅█▆▁▂▂ beats 9/30   avg 12%       8.3%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (13)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-region …</a>   25.6%  ▂····▂···▂●█ beats 3/11   avg 46%        16%  typical
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parliamen…</a>   26.8%  ▂▂····▂·●·▃█ beats 5/12   avg 52%        13%  sharp
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">LibriSpeech test-clean WER</a>            1.5%  ▁···▁▁▂·▄▄█● beats 48/56  avg 2.3%       12%  blunt · several runs
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">SPGISpeech test WER (lab)</a>             3.1%  ▄▄··▄●█··▄██ beats 3/11   avg 5.4%      8.5%  sharp
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.1%  ▁▁▁▃··▁▁▂█●▆ beats 56/86  avg 8.2%      8.3%  blunt
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Earnings-22 WER (short-form, Open…</a>   14.1%  ●······███·█ beats 0/4    avg 21%       7.0%  typical
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">AMI WER (Open ASR / ESB test spli…</a>   17.1%  ●▄·······█·▄ beats 0/4    avg 24%       6.7%  typical
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">GigaSpeech test WER (lab)</a>            10.0%  ▁····▁··▁▄●▂ beats 10/17  avg 17%       6.2%  typical
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-other WER (lab)</a>      2.5%  ▁▁▁▂▅▃▅▄█▂▂● beats 54/54  avg 5.4%      5.0%  typical
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">FLEURS English test WER</a>               4.5%  ▁··▁▁▁▁▁▁▃●▁ beats 39/56  avg 5.8%      4.2%  blunt
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">VoxPopuli English test WER (lab)</a>      5.4%  █▄▄··████▄●█ beats 13/16  avg 9.0%      3.4%  typical
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">TED-LIUM test WER (short-form) (l…</a>    3.9%  ▁·▁▇█▃·▁▁▃●▄ beats 19/27  avg 5.0%      0.3%  blunt
+<a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Common Voice 9.0 English test WER…</a>    5.8%  no other model yet                         —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="first-party-nvidia-asr-cards"></a><a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">NVIDIA ASR model cards (lab)</a>                    8   39% ▇▇▇▇▇
+<a name="speech-stt-afrispeech-multibench-report"></a><a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench</a>                           2   29% ▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            2   17% ▇▇
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">transcribe.cpp model catalog · LibriSpe…</a>        2   15% ▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 58.0
+</pre>
+
+<sub>Licences: NVIDIA ASR model cards ([CC BY 4.0](../../licenses/nvidia--parakeet-tdt-0.6b-v2.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
+
+<details><summary>Not counted (1)</summary>
 
 <pre>
 source                  test                            score  why
-nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">AMI WER (Open ASR / ESB test …</a>  17.1%  too few models have it yet
-nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Common Voice 9.0 English test…</a>   5.8%  too few models have it yet
-nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Earnings-22 WER (short-form, …</a>  14.1%  too few models have it yet
-nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">GigaSpeech test WER</a>             10.0%  too few models have it yet
-nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-clean WER</a>       1.5%  only model in this source's run
-nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-other WER</a>       2.5%  too few models have it yet
-nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">SPGISpeech test WER</a>              3.1%  too few models have it yet
-nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">TED-LIUM test WER (short-form)</a>   3.9%  too few models have it yet
-nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">VoxPopuli English test WER</a>       5.4%  too few models have it yet
+NVIDIA ASR model cards  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Common Voice 9.0 English test…</a>   5.8%  too few models have it yet
 </pre>
 
 </details>
@@ -51,14 +80,18 @@ nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~5.64GB   57.8
+fp32 · nvidia only  ~5.64GB   58.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 · nvidia only
+# fp32 · nvidia only · ~5.64GB
 uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-rnnt-1.1b').transcribe(['audio.wav']))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/parakeet-rnnt-1-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

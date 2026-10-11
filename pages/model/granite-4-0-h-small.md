@@ -6,58 +6,116 @@
 
 IBM · released 2025-09 · 32.2B params (9B active) · apache-2.0
 
-**score 52.0** ±0.7 · #382 of 934 · from 39 benchmark results across 7 sources
+**score 51.8** ±0.7 · #394 of 949 · from 39 benchmark results across 7 sources
+
+## What it's good at
+
+<sub>● marks Granite 4.0 H Small (32B-A9B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others         rank  counts  tests
+agent tasks     ▄·▄········●      #1 of 4*    0.7%      1
+coding          █···▄······●       #1 of 4     16%      7
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #250 of 466    6.5%      3
+math            ▁▂▃▅▆●▄█▄▁▁▁   #226 of 400     22%      8
+</pre>
+
+<details><summary>agent tasks · #1 of 4 · 0.7% of its score</summary>
+
+<pre>
+test           result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BFCL v3 (lab)</a>   64.7%  ▁▁▁▁▁▃▅█▆●▄▁ beats 123/170  medium · avg 60%    0.7%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #1 of 4 · 16% of its score</summary>
+
+<pre>
+test                result  vs the others in its run    difficulty           counts  why
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval (lab)</a>      88.0%  ▁▁▁▁▁▃▅▅█▃●▁ beats 180/190  very easy · avg 86%    4.1%  sharp
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval+ (lab)</a>     83.0%  ▁·▁▁▂▃▄▄█●▄▃ beats 114/145  easy · avg 81%         3.9%  sharp
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP (lab)</a>           84.0%  ▁▁▁▄▅█▄▅▃▁●▁ beats 77/81    easy · avg 79%         1.9%  typical
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BigCodeBench (lab)</a>   46.2%  ▅····▃·█▃▅█● beats 12/12    medium · avg 42%       1.9%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MultiPL-E (lab)</a>      57.4%  ▃··▄·▅●▇▄█▃▄ beats 12/31    medium · avg 58%       1.7%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP+ (lab)</a>          71.0%  ▁··▁▁▃▄█●▄▁▁ beats 87/120   easy · avg 70%         1.4%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">CRUXEval-O (lab)</a>     50.2%  ▂▂██▅●▁·▁·▁▁ beats 45/51    medium · avg 48%       1.0%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #250 of 466 · 6.5% of its score</summary>
+
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1287.0  ▁▁▁▂▃▃▃●▆▇█▃ beats 117/379  avg 1268               4.2%  blunt
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">IFEval instruction-level strict (…</a>   89.9%  ▄▄····▄▄█▄·● beats 7/8      very easy · avg 88%    1.2%  typical
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">IFEval prompt-level strict (lab)</a>     85.2%  ▁▁··▂··▂▇●▃▃ beats 14/26    easy · avg 81%         1.2%  typical
+</pre>
+
+</details>
+
+<details><summary>math · #226 of 400 · 22% of its score</summary>
+
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                                83.9%  █····●··▄·▄█ beats 2/7    very easy · avg 86%    7.0%  sharp · several runs
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">DeepMind Mathematics (lab)</a>           59.3%  ▅····▅·█●▃·▅ beats 7/10   medium · avg 55%       3.0%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">Minerva MATH (lab)</a>                   74.0%  ▄·▂▂·██▆·▆●▄ beats 19/21  easy · avg 70%         2.6%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>            75.7%  █●··▄█▄····▄ beats 2/7    easy · avg 81%         2.5%  typical
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM-Symbolic (lab)</a>                   87.4%  ▃▃····▃·▅▅█● beats 10/10  easy · avg 83%         2.1%  typical
+<a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>          28.9%  ▄··▄█●··▄··▄ beats 4/7    hard · avg 30%         2.0%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>              75.7%  ▄·▄·▄▄▄·●··█ beats 5/7    easy · avg 70%         1.7%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MGSM, 5 languages (en, es, fr, ja…</a>   38.7%  █·▄▄●█···█·▄ beats 5/10   medium · avg 46%       1.0%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (17)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 76.7%  ▄···▄▄·▄●··█ beats 5/7      easy · avg 75%         7.8%  at its level · several runs
+<a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                         38.6%  ▄···█·▄·●·▄▄ beats 4/7      hard · avg 38%         7.2%  sharp
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             57.1%  ▄····█·▄●·▄▄ beats 4/7      medium · avg 56%       6.5%  at its level · several runs
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4452  ▁▄▃▃●▄█▃▅▁▁▁ beats 10/30    avg 0.423              6.4%  sharp
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (lab)</a>      40.6%  ▂▁▂▂▄▃●▃▅█▄▃ beats 40/104   hard · avg 37%         5.0%  sharp
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>                 81.6%  ▁▁▁▁▂▄▅▅█●▄▁ beats 111/129  easy · avg 76%         3.7%  sharp · at its level
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   44.5%  ▂▃▅▂●▃█▅█▅▃▆ beats 10/34    medium · avg 42%       3.1%  blunt · at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               51.6%  █··▄··█··●·▄ beats 6/7      medium · avg 43%       3.0%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">INCLUDE (lab)</a>                        64.0%  ▂····▂▂▄●▄█▄ beats 14/36    medium · avg 58%       2.6%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        67.4%  ▃··▃▃··▅···● beats 5/7      medium · avg 57%       2.2%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU (lab)</a>                          69.7%  ▂▁▁▂▃▂▄●▅██▃ beats 19/46    medium · avg 63%       2.1%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             68.1%  ▄···▄·█·▄·●█ beats 5/7      medium · avg 60%       1.9%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>    44.7%  ▄··▄●▄··▄··█ beats 2/7      medium · avg 47%       1.5%  blunt · at its level
+<a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   53.2%  ▁··▃▁●▁▅█▅▁▅ beats 4/24     medium · avg 52%       0.8%  blunt · at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   84.8%  ▃·▁▁▂▁▂▅█●▄▁ beats 83/100   medium · avg 68%       0.7%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   86.5%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 103/146  easy · avg 83%         0.4%  noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   94.8%  ▁▂▁▂▅█▂▃▄●▁▁ beats 88/98    very easy · avg 90%    0.0%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="card2-ibm-granite-granite-4-0-h-small"></a>ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (la…</a>   40.6%    53.9   2025-11-03    5% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval (lab)</a>                  88.0%    51.7   2025-11-03    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval+ (lab)</a>                 83.0%    51.5   2025-11-03    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>             81.6%    53.2   2025-11-03    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU (lab)</a>                       78.4%    53.0   2025-11-03    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM8K (lab)</a>                      87.3%    49.5   2025-11-03    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">DeepMind Mathematics (lab)</a>       59.3%    52.1   2025-11-03    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">INCLUDE (lab)</a>                    64.0%    54.3   2025-11-03    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU-Pro (lab)</a>                   55.5%    51.7   2025-11-03    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">Minerva MATH (lab)</a>               74.0%    52.5   2025-11-03    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU (lab)</a>                      69.7%    54.7   2025-11-03    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM-Symbolic (lab)</a>               87.4%    54.2   2025-11-03    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP (lab)</a>                       84.0%    54.8   2025-11-03    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BigCodeBench (lab)</a>               46.2%    52.4   2025-11-03    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MultiPL-E (lab)</a>                  57.4%    49.4   2025-11-03    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP+ (lab)</a>                      71.0%    51.1   2025-11-03    1% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">IFEval instruction-level stri…</a>   89.9%    52.5   2025-11-03    1% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">IFEval prompt-level strict (l…</a>   85.2%    55.8   2025-11-03    1% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MGSM, 5 languages (en, es, fr…</a>   38.7%    43.9   2025-11-03    1% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">CRUXEval-O (lab)</a>                 50.2%    51.6   2025-11-03    1% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BFCL v3 (lab)</a>                    64.7%    54.7   2025-11-03    1% ▇
-<a name="report-marco-moe-260425578v1"></a>Marco-MoE: Open Multi…  <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                     38.6%    50.7   2026-04-28    7% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                             76.7%    51.0   2026-04-28    5% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                            83.9%    47.5   2026-04-28    4% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                         57.1%    50.9   2026-04-28    4% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>           51.6%    54.9   2026-04-28    3% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>        75.7%    45.7   2026-04-28    2% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>    67.4%    56.8   2026-04-28    2% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>      28.9%    49.6   2026-04-28    2% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>         68.1%    56.0   2026-04-28    2% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>          75.7%    53.9   2026-04-28    2% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>   44.7%    48.2   2026-04-28    2% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.4452    52.3   2026-05-02    7% ▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   44.5%    52.6   2026-05-02    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1287.0    52.4   2026-10-02    4% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   84.8%    59.1   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   86.5%    53.7   2026-04-17    0% ▇
-<a name="paper-2605.08614v1-diagnosticiq"></a>DiagnosticIQ: A Bench…  <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maint…</a>   53.2%    52.0   2026-05-09    1% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   94.8%   220.4   2026-09-22    0% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 52.0
+source                                    results  share of the score
+<a name="card2-ibm-granite-granite-4-0-h-small"></a><a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">ibm-granite/granite-4.0-h-small model c…</a>       21   50% ▇▇▇▇▇▇
+<a name="report-marco-moe-260425578v1"></a><a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual Mixture-of…</a>       11   34% ▇▇▇▇
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   10% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    4% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    1% ▇
+<a name="paper-2605.08614v1-diagnosticiq"></a><a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ: A Benchmark for LLM-Based…</a>        1    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 51.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: ibm-granite/granite-4.0-h-small model card ([Apache-2.0](../../licenses/ibm-granite--granite-4.0-h-small.txt)) · Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -68,16 +126,71 @@ api (Replicate) · $0.11/M blended · $0.06 in / $0.25 out per 1M tokens · [rep
 <sub>[price source](https://replicate.com/ibm-granite/granite-4.0-h-small): USD per 1M tokens, Replicate official model ibm-granite/granite-4.0-h-small, billed per input/output token (billing table on the model page; A100 80GB backing hardware not billed separately for this official model). Currency: USD. Replicate official model page, observed 2026-09-25. · [context source](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/config.json): Configured sequence length, corroborated by the official card architecture table. Dense Micro and hybrid H-Small are distinct models.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~19.82GB   52.0
+download                       size  score
+4-bit q4_k_m               ~19.82GB   51.8
+4-bit Q4_K_M                ~19.5GB   51.8
+8-bit Q8_0                  ~34.3GB   51.8
+4-bit mlx-4bit · mac only   ~18.1GB   51.8
+4-bit mlx-8bit · mac only   ~34.2GB   51.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run granite4:small-h
+# 4-bit Q4_K_M · ~19.5GB
+llama cli -hf ibm-granite/granite-4.0-h-small-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ibm-granite/granite-4.0-h-small-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~34.3GB
+llama cli -hf ibm-granite/granite-4.0-h-small-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ibm-granite/granite-4.0-h-small-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~19.5GB
+lms get https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~34.3GB
+lms get https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~18.1GB
+lms get https://huggingface.co/lmstudio-community/granite-4.0-h-small-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~34.2GB
+lms get https://huggingface.co/lmstudio-community/granite-4.0-h-small-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~19.82GB
+ollama run granite4:small-h
+# 4-bit Q4_K_M · ~19.5GB
+ollama run hf.co/ibm-granite/granite-4.0-h-small-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~34.3GB
+ollama run hf.co/ibm-granite/granite-4.0-h-small-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~18.1GB
+mlx_lm.chat --model lmstudio-community/granite-4.0-h-small-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/granite-4.0-h-small-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~34.2GB
+mlx_lm.chat --model lmstudio-community/granite-4.0-h-small-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/granite-4.0-h-small-MLX-8bit
+```
 
 ## Quantization evidence
 

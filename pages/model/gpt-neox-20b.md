@@ -6,39 +6,48 @@
 
 EleutherAI · released 2022-02 · 20.55B params · apache-2.0
 
-**score 28.2** ±0.8 · #861 of 934 · from 20 benchmark results across 3 sources
+**score 28.0** ±0.8 · #877 of 949 · from 20 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks GPT-NeoX-20B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (12)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Challenge</a>                        40.8%  ▁·▁··▁▁▇▂●▆▃ beats 15/26   easy · avg 85%          38%  sharp · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">WinoGrande</a>                           66.1%  ▁····▁··▁▂●▄ beats 15/26   easy · avg 89%          13%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">HellaSwag</a>                            71.4%  ▃···▁▇▅●▇▃▁▁ beats 14/26   very easy · avg 92%    7.9%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Easy</a>                             68.7%  ▁▁·▁▁▄▅▄●▅▁▃ beats 15/26   easy · avg 88%         7.3%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">BoolQ</a>                                69.5%  ▂▃▂▅▆▂●▆█▂▂▂ beats 12/26   easy · avg 91%         6.7%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">SciQ</a>                                 93.1%  ▁·▁·▁·▃▅▃●▄▁ beats 14/26   very easy · avg 98%    5.8%  several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">OpenBookQA</a>                           29.8%  █·▁▁▃·▁▃●▇▃▄ beats 13/26   medium · avg 52%       5.7%  too hard for it · several runs
+<a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                       25.9%  █···█·██●··█ beats 4/5     easy · avg 72%         4.4%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">PIQA</a>                                 77.4%  ▁·▁··▁▁▃█●█▂ beats 16/26   easy · avg 88%         4.4%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">LAMBADA (OpenAI version), last-wo…</a>   72.0%  ▁··▂▁▁▁▂▆█●▃ beats 20/26   very easy · avg 89%    3.6%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">Social IQA</a>                           42.0%  ▁···▁▃●▁▁▁·▁ beats 11/26   medium · avg 59%       1.7%  blunt
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.3%  ●▁▁▁▁▁▁▁▂█▅▁ beats 19/276  medium · avg 73%       0.8%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Challenge</a>                   40.8%    28.4   2024-04-08   31% ▇▇▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">WinoGrande</a>                      66.1%    28.3   2024-04-08    8% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">BoolQ</a>                           69.5%    26.8   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Easy</a>                        68.7%    29.7   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">HellaSwag</a>                       71.4%    28.1   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">SciQ</a>                            93.1%    29.7   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">OpenBookQA</a>                      29.8%    28.5   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">PIQA</a>                            77.4%    28.9   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">Social IQA</a>                      42.0%    24.2   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">LAMBADA (OpenAI version), las…</a>  72.0%    30.0   2024-04-08    2% ▇
-<a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge (lab)</a>             38.0%    30.0   2022-04-14    8% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">WinoGrande (lab)</a>                66.1%    28.5   2022-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA (lab)</a>                29.0%    26.5   2022-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                  25.9%    27.2   2022-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">HellaSwag (lab)</a>                 53.5%    26.5   2022-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">ARC Easy (lab)</a>                  72.3%    29.6   2022-04-14    2% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">SciQ (lab)</a>                      92.8%    27.7   2022-04-14    2% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">LAMBADA (OpenAI version), las…</a>  72.0%    28.0   2022-04-14    2% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">PIQA (lab)</a>                      77.9%    29.4   2022-04-14    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.3%    12.7   2024-02-05    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 28.2
+source                                    results  share of the score
+<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">Stability AI</a>                                   10   67% ▇▇▇▇▇▇▇▇
+<a name="paper-2204.06745v1"></a><a href="https://arxiv.org/html/2204.06745v1">GPT-NeoX-20B: An Open-Source Autoregres…</a>        9   32% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 28.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · GPT-NeoX-20B: An Open-Source Autoregressive Language Model ([CC BY 4.0](../../licenses/paper-2204.06745v1-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -47,15 +56,67 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/EleutherAI/gpt-neox-20b/blob/c292233c833e336628618a88a648727eb3dff0a7/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
 
 <pre>
-download        size  score
-4-bit fp16  ~41.29GB   28.2
+download                       size  score
+4-bit fp16                 ~41.29GB   28.0
+4-bit Q4_K_M                ~13.1GB   28.0
+8-bit Q8_0                  ~21.9GB   28.0
+4-bit mlx-4bit · mac only   ~11.6GB   28.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neox-20b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~13.1GB
+llama cli -hf mradermacher/gpt-neox-20b-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/gpt-neox-20b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~21.9GB
+llama cli -hf mradermacher/gpt-neox-20b-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/gpt-neox-20b-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~13.1GB
+lms get https://huggingface.co/mradermacher/gpt-neox-20b-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~21.9GB
+lms get https://huggingface.co/mradermacher/gpt-neox-20b-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~11.6GB
+lms get https://huggingface.co/nhe-ai/gpt-neox-20b-mlx-4Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~13.1GB
+ollama run hf.co/mradermacher/gpt-neox-20b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~21.9GB
+ollama run hf.co/mradermacher/gpt-neox-20b-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~11.6GB
+mlx_lm.chat --model nhe-ai/gpt-neox-20b-mlx-4Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model nhe-ai/gpt-neox-20b-mlx-4Bit
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp16 · ~41.29GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neox-20b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/gpt-neox-20b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,21 +6,39 @@
 
 BigCode · released 2023-07 · 1.14B params · bigcode-openrail-m
 
-**score 25.1** ±1.1 · #883 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 25.3** ±1.2 · #895 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks StarCoderBase 1B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁●▃▆██▇▆▄▃▁   #457 of 469*     99%      2
+</pre>
+
+<details><summary>coding · #457 of 469 · 99% of its score</summary>
+
+Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md) here, though they rank lower overall.
+
+<pre>
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    14.6%  ▁·▁●▃▄▆▅█▃▁▁ beats 4/99   easy · avg 79%     60%  sharp
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   12.2%  ▁·▁●▁▃▄▄▄█▃▁ beats 4/99   easy · avg 74%     39%  sharp
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               14.6%    25.1   2024-12-26   60% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              12.2%    24.6   2024-12-26   39% ▇▇▇▇▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 25.1
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 25.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>
 
@@ -28,17 +46,29 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download        size  score
-4-bit fp32   ~4.55GB   25.1
-4-bit q4_0  ~0.726GB   25.1
+4-bit fp32   ~4.55GB   25.3
+4-bit q4_0  ~0.726GB   25.3
+4-bit q4_0  ~0.726GB   25.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
 ```sh
-# 4-bit fp32
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-1b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-# 4-bit q4_0
+# 4-bit q4_0 · ~0.726GB
+ollama run starcoder:1b
+# 4-bit q4_0 · ~0.726GB
 ollama run starcoder:1b
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**Other engines**
+
+```sh
+# 4-bit fp32 · ~4.55GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-1b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/starcoderbase-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

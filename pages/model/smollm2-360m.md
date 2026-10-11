@@ -6,25 +6,61 @@
 
 Hugging Face · released 2024-10 · 0.362B params · apache-2.0
 
-**score 18.6** ±2.7 · #906 of 934 · from 6 benchmark results across 2 sources
+**score 18.6** ±2.7 · #921 of 949 · from 6 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks SmolLM2 360M Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #402 of 466*    9.5%      1
+math            ●··········█       #2 of 2*     30%      1
+</pre>
+
+<details><summary>chat &amp; writing · #402 of 466 · 9.5% of its score</summary>
+
+Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecified) …</a>   41.0%  ▁●▃▁▂▄▄▆█▃▂▁ beats 2/141  easy · avg 77%    9.5%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · #2 of 2 · 30% of its score</summary>
+
+<pre>
+test         result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">GSM8K (lab)</a>    7.4%  ●▂▂▅▅▆▅▇█▇▄▃ beats 0/146  easy · avg 83%     30%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">BIG-Bench Hard (lab)</a>                 27.3%  ▁▁●▁▂▄▅▅█▃▄▁ beats 2/129  medium · avg 69%     33%  sharp · too hard for it · small run
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HellaSwag (lab)</a>                      52.1%  ▁▁▁▁▂●▃▇█▆▅▃ beats 13/85  easy · avg 87%       15%  at its level · small run
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">PIQA (lab)</a>                           70.8%  ▁▁▁▃●▄▇█▄▃▁▁ beats 15/83  easy · avg 86%      6.8%  blunt · at its level · small run
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   24.9%  ●·▁▁▂▁▂▅█▇▄▁ beats 6/100  medium · avg 68%    2.3%  too hard for it · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-huggingfacetb-smollm2-360m-instruct"></a>HuggingFaceTB/SmolLM2…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">BIG-Bench Hard (lab)</a>            27.3%    16.0   2025-09-22   33% ▇▇▇▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">GSM8K (lab)</a>                      7.4%    14.1   2025-09-22   31% ▇▇▇▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HellaSwag (lab)</a>                 52.1%    23.3   2025-09-22   14% ▇▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecifi…</a>  41.0%    24.8   2025-09-22    9% ▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">PIQA (lab)</a>                      70.8%    20.8   2025-09-22    7% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  24.9%     8.9   2026-04-17    2% ▇
-prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 18.6
+source                                    results  share of the score
+<a name="card3-huggingfacetb-smollm2-360m-instruct"></a><a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HuggingFaceTB/SmolLM2-360M-Instruct mod…</a>        5   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    2% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 18.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: HuggingFaceTB/SmolLM2-360M-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -33,18 +69,60 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/config.json): config.json max\_position\_embeddings 8192 (paper: context extended to 8k). Observed 2026-10-10.</sub>
 
 <pre>
-download        size  score
-4-bit fp16  ~0.726GB   18.6
-8-bit q8_0   ~0.39GB   18.6
+download                       size  score
+4-bit fp16                 ~0.726GB   18.6
+8-bit q8_0                  ~0.39GB   18.6
+4-bit mlx-4bit · mac only    ~0.2GB   18.6
+4-bit mlx-8bit · mac only    ~0.4GB   18.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp16
-ollama run smollm2:360m
-# 8-bit q8_0
-llama-server -hf HuggingFaceTB/SmolLM2-360M-Instruct-GGUF:Q8_0
+# 8-bit q8_0 · ~0.39GB
+llama cli -hf HuggingFaceTB/SmolLM2-360M-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf HuggingFaceTB/SmolLM2-360M-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 8-bit q8_0 · ~0.39GB
+lms get https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~0.2GB
+lms get https://huggingface.co/Irfanuruchi/SmolLM2-360M-Instruct-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~0.4GB
+lms get https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct-Q8-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit fp16 · ~0.726GB
+ollama run smollm2:360m
+# 8-bit q8_0 · ~0.39GB
+ollama run hf.co/HuggingFaceTB/SmolLM2-360M-Instruct-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~0.2GB
+mlx_lm.chat --model Irfanuruchi/SmolLM2-360M-Instruct-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model Irfanuruchi/SmolLM2-360M-Instruct-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~0.4GB
+mlx_lm.chat --model HuggingFaceTB/SmolLM2-360M-Instruct-Q8-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model HuggingFaceTB/SmolLM2-360M-Instruct-Q8-mlx
+```
 
 [interactive version](https://whatmodel.sh/model/smollm2-360m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

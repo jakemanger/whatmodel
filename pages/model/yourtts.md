@@ -6,28 +6,54 @@
 
 Coqui / Edresson Casanova et al. · released 2021-12 · cc-by-nc-nd-4.0
 
-**score 18.4** ±2.7 · #114 of 117 · from 7 benchmark results across 3 sources
+**score 18.1** ±2.7 · #115 of 118 · from 7 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks YourTTS among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-voicecraft-report-bysa"></a>VoiceCraft: Zero-Shot…  <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS list…</a>  2.79 / 5    12.0   2024-06-14   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>     41.0%    22.6   2024-06-14    9% ▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>      6.6%    21.5   2024-06-14    9% ▇
-<a name="speech-zstts-eval-casanova-mit"></a>ZS-TTS-Evaluation       <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation · English z…</a>      2.9%    14.4   2024-01-28   22% ▇▇▇
-                        <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation · English z…</a>     46.2%    21.7   2024-01-28   10% ▇
-<a name="speech-ditto-tts-report-ccby"></a>DiTTo-TTS: Diffusion …  <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>      7.9%    17.9   2025-02-17   14% ▇▇
-                        <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>     37.5%    23.0   2025-02-17   10% ▇
-prior                   pull toward the middle                      49.7                 3% ▇
-                        weighted average                          = 18.4
+task           vs the others        rank  counts  tests
+voice cloning  ●·▁▁▁▁▁▁▇█▃▃   #37 of 37*     22%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #37 of 37 · 22% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation · English zero-…</a>    2.9%  ●······█··██ beats 0/3    avg 0.0%       22%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS listenin…</a>  2.79 / 5  ●········█·█ beats 0/2    very easy · avg 4.72 / 5     22%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s cro…</a>      7.9%  ●···█··█···█ beats 0/3    avg 0.7%                     14%  typical
+<a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation · English zero-…</a>     46.2%  ●····▄·····▄ beats 0/3    easy · avg 80%               10%  at its level
+<a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s cro…</a>     37.5%  ●··········█ beats 1/3    easy · avg 72%              9.5%  at its level
+<a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set (250…</a>     41.0%  ●····█·····█ beats 0/2    easy · avg 77%              9.4%  at its level · small run
+<a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set (Lib…</a>      6.6%  ●······█···█ beats 0/2    avg 1.0%                    9.4%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-voicecraft-report-bysa"></a><a href="https://arxiv.org/html/2403.16973v3">VoiceCraft: Zero-Shot Speech Editing an…</a>        3   41% ▇▇▇▇▇
+<a name="speech-zstts-eval-casanova-mit"></a><a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation (lab)</a>                         2   32% ▇▇▇▇
+<a name="speech-ditto-tts-report-ccby"></a><a href="https://arxiv.org/html/2406.11427v2">DiTTo-TTS: Diffusion Transformers for S…</a>        2   24% ▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 18.1
+</pre>
 
 <sub>Licences: VoiceCraft: Zero-Shot Speech Editing and Text-to-Speech in the Wild ([CC BY-SA 4.0](../../licenses/speech-voicecraft-report-bysa.txt)) · ZS-TTS-Evaluation ([MIT](../../licenses/speech-zstts-eval-casanova-mit.txt)) · DiTTo-TTS: Diffusion Transformers for Scalable Text-to-Speech without Domain-Specific Factors ([CC BY 4.0](../../licenses/speech-ditto-tts-report-ccby.txt))</sub>
 
@@ -35,14 +61,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version             needs  score
-fp32 (coqui-tts)  ~0.42GB   18.4
+fp32 (coqui-tts)  ~0.42GB   18.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (coqui-tts)
+# fp32 (coqui-tts) · ~0.42GB
 uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --text "This is an example!" --model_name tts_models/multilingual/multi-dataset/your_tts --speaker_wav target_speaker_wav.wav --language_idx "en" --out_path speech.wav --device cpu
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/yourtts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

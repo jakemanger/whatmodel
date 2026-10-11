@@ -6,22 +6,37 @@
 
 SILMA AI · released 2026-03 · 0.15B params · apache-2.0
 
-**score 48.0** ±9.5 · #71 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.0** ±9.7 · #71 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks SILMA TTS v1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source            test                             score  implies  date        weight
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1006.7    47.1   2026-09-24   64% ▇▇▇▇▇▇▇▇
-prior             pull toward the middle                    49.7                36% ▇▇▇▇
-                  weighted average                        = 48.0
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community blin…</a>  1006.7  ▂▂··●·█▅···▂ beats 2/12   avg 1018       62%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                     1   62% ▇▇▇▇▇▇▇
+prior: pull toward the middle            38% ▇▇▇▇▇
+weighted average                        = 48.0
+</pre>
 
 <sub>Licences: Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>
 
@@ -32,11 +47,15 @@ version                              needs  score
 fp32 checkpoint (silma-tts 1.0.5)  ~2.65GB   48.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 checkpoint (silma-tts 1.0.5)
+# fp32 checkpoint (silma-tts 1.0.5) · ~2.65GB
 pip install silma-tts && python -c "from silma_tts.api import SilmaTTS; silma_tts = SilmaTTS(); silma_tts.infer(ref_file='ref.wav', ref_text=None, gen_text='أنا نموذج جديد من سلمى لتحويل النص إلى كلام.', file_wave='generated_audio.wav', seed=None, speed=1)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/silma-tts-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

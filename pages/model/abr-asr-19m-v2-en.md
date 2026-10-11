@@ -6,22 +6,37 @@
 
 Applied Brain Research · released 2025-11 · 0.019B params · applied-brain-research-open-license
 
-**score 40.8** ±5.0 · #134 of 160 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.8** ±5.1 · #136 of 162 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks ABR asr-19m-v2-en among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.6%    39.8   2026-03-26   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.8                10% ▇
-                      weighted average                       = 40.8
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   10.6%  ▁▁▁▃··▁▁●██▆ beats 18/86  avg 8.2%       90%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            10% ▇
+weighted average                        = 40.8
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
@@ -32,11 +47,15 @@ version                                     needs  score
 fp32 TorchScript (transformers remote c…  ~0.08GB   40.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 TorchScript (transformers remote code @ dab6545)
+# fp32 TorchScript (transformers remote code @ dab6545) · ~0.08GB
 uvx --from huggingface_hub hf download abr-ai/niagara-19m-batch.en --revision dab6545337495482f2fc05455432a7a05c88d3cc --local-dir asr-19m-v2-en && uv run --with torch --with transformers --with sentencepiece --with soundfile python -c "import soundfile as sf; from transformers import AutoFeatureExtractor, AutoModel, AutoTokenizer; p = './asr-19m-v2-en'; feature_extractor = AutoFeatureExtractor.from_pretrained(p, trust_remote_code=True); model = AutoModel.from_pretrained(p, trust_remote_code=True); tokenizer = AutoTokenizer.from_pretrained(p, trust_remote_code=True); audio, _ = sf.read('audio.wav', dtype='float32'); print(tokenizer.decode_from_logits(model(feature_extractor(audio)))[0])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/abr-asr-19m-v2-en) · [JSON](https://whatmodel.sh/api?format=json&all=1)

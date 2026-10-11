@@ -6,24 +6,54 @@
 
 Alibaba · released 2026-04 · closed weights
 
-**score 61.6** ±1.8 · #34 of 144 · from 3 benchmark results across 2 sources
+**score 61.7** ±1.7 · #34 of 144 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Wan 2.7 Image among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                         score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>       1101.3    57.6   2026-09-24   46% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>            1301.2    66.3   2026-09-30   17% ▇▇
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   64.6%    65.0   2026-05-13   36% ▇▇▇▇
-prior                   pull toward the middle                49.9                 1% ▇
-                        weighted average                    = 61.6
+task                    vs the others         rank  counts  tests
+text to image           ▂▅▅▃▄●█▃▁▂▁▁   #52 of 126*     46%      1
+image to image / edit…  ▁▁·▃▂▃█●▃▄▁▁    #25 of 62*     53%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #52 of 126 · 46% of its score</summary>
+
+Trails [Qwen-Image-2512](qwen-image-2512.md), [HunyuanImage 3.0](hunyuanimage-3-0.md), [Z-Image (Base)](z-image-base.md) here, though they rank lower overall.
+
+<pre>
+test                   result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1101.1  ▂▂▃▄●█▄▂▄▂·▂ beats 25/75  avg 1027       46%  typical
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #25 of 62 · 53% of its score</summary>
+
+Beats [FLUX.2 \[max\]](flux-2-max.md), [FLUX.2 \[pro\]](flux-2-pro.md), [FLUX.2 \[flex\]](flux-2-flex.md) here, though they rank higher overall.
+
+<pre>
+test                        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   64.6%  ▃▃▂·▃▆▂█·●·▃ beats 18/20  hard · avg 45%     36%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>            1301.2  ▂▁▁▂▆▇●▄▆▅▁▂ beats 28/53  avg 1153           17%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   63% ▇▇▇▇▇▇▇▇
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   36% ▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 61.7
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt))</sub>
 

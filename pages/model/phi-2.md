@@ -6,38 +6,91 @@
 
 Microsoft · released 2023-12 · 2.78B params · mit
 
-**score 38.6** ±0.6 · #725 of 934 · from 19 benchmark results across 8 sources
+**score 38.6** ±0.6 · #735 of 949 · from 19 benchmark results across 8 sources
+
+## What it's good at
+
+<sub>● marks Phi-2 (2.7B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃●██▇▆▄▃▁    #381 of 469     72%      6
+chat &amp; writing  ▁●▁▄▆▅▆█▆▆▆▂   #461 of 466*    7.6%      2
+math            ▁▂▃▅●▅▄█▄▁▁▁   #283 of 400*    1.8%      1
+</pre>
+
+<details><summary>coding · #381 of 469 · 72% of its score</summary>
+
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3B Code Instruct (2K)](granite-3b-code-instruct-2k.md) here, though they rank lower overall.
+
+<pre>
+test        result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    49.4%  ▁·▁▁▃▄●▅█▃▁▁ beats 35/99  easy · avg 79%       45%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   45.1%  ▁·▁▁▁▃▄●▄█▃▁ beats 37/99  easy · avg 74%       19%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        54.2%  ▁···▁▁▂▅●█▆▂ beats 25/75  easy · avg 68%      3.6%  at its level
+<a href="https://arxiv.org/html/2404.06395v3">MBPP</a>         55.0%  ▁▁▁▄▅●▄▅▃▁▂▁ beats 42/81  easy · avg 70%      1.5%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   31.6%  ▁··▁●▂█▇▁··▁ beats 5/22   medium · avg 54%    1.1%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   33.5%  ▁·▂●▁█▁▂···▁ beats 4/22   medium · avg 53%    1.0%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #461 of 466 · 7.6% of its score</summary>
+
+Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Qwen1.5 1.8B Chat](qwen1-5-1-8b-chat.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>        4.4%  ▁●▂▃▆▆█▆▄▄▁▁ beats 7/122  medium · avg 39%       6.6%  typical
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   30.7%  ▂●·▆·▇▃▆█▆▄▂ beats 3/45   very easy · avg 96%    1.0%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #283 of 400 · 1.8% of its score</summary>
+
+Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
+
+<pre>
+test   result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>   57.2%  ▂▂▂▅▅●▅▇█▇▄▃ beats 53/146  easy · avg 74%    1.8%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    31.8%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 16/42   medium · avg 55%       7.6%  at its level
+<a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       43.4%  ▁▁▁▁▂▄●▅█▃▄▁ beats 31/129  medium · avg 68%       4.5%  sharp
+<a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                        71.3%  ▆▁▁▂▂▅▇█▄●▃▂ beats 83/97   easy · avg 88%         2.6%  sharp · at its level
+<a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                                 52.7%  ▁▁▁▁▁▂▃●█▃▆▃ beats 45/183  easy · avg 80%         1.9%  at its level
+<a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               23.4%  ●···▁▁▂▁▂▂▃█ beats 0/33    medium · avg 62%       0.8%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   36.5%  ▃▁▁▁●▁▁▁▂█▅▁ beats 45/276  medium · avg 73%       0.6%  at its level · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   93.3%  ▁▁▂▃▄●█▆▃▂▂▁ beats 45/140  very easy · avg 94%    0.3%  blunt · noisy
+<a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 90.2%  ▅·▃·▃··█●··▃ beats 7/8     easy · avg 92%         0.1%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       49.4%    39.1   2024-12-26   29% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      45.1%    39.7   2024-12-26   20% ▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           54.2%    41.3   2024-12-26    3% ▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       50.0%    40.1   2024-03-28   14% ▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               31.8%    39.7   2024-03-28    7% ▇
-<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  43.4%    37.7   2024-06-03    5% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       47.6%    43.0   2024-06-03    3% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   71.3%    40.4   2024-06-03    2% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           57.2%    44.5   2024-06-03    2% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            52.7%    33.8   2024-06-03    2% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            55.0%    42.5   2024-06-03    1% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          23.4%    20.7   2024-06-03    1% ▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   4.4%    30.7   2025-08-09    6% ▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  30.7%     9.9   2025-08-09    1% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      31.6%    34.7   2024-01-03    1% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      33.5%    34.9   2024-01-03    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  36.5%    22.0   2024-02-05    1% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  93.3%    46.4   2025-10-16    0% ▇
-<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            90.2%    45.2   2024-10-18    0% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 38.6
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   51% ▇▇▇▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   22% ▇▇▇
+<a name="paper-2404.06395v3"></a><a href="https://arxiv.org/html/2404.06395v3">MiniCPM: Unveiling the Potential of Sma…</a>        7   16% ▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2    8% ▇
+<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    2% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
+<a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 38.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -46,18 +99,70 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/microsoft/phi-2/blob/810d367871c1d460086d9f82db8696f2e0a0fcd0/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download       size  score
-4-bit q4_0   ~1.6GB   38.6
-4-bit fp16  ~5.56GB   38.6
+download                      size  score
+4-bit q4_0                  ~1.6GB   38.6
+4-bit fp16                 ~5.56GB   38.6
+4-bit Q4_K_M                ~1.8GB   38.6
+8-bit Q8_0                    ~3GB   38.6
+4-bit mlx-4bit · mac only   ~1.6GB   38.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run phi:2.7b
-# 4-bit fp16
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/phi-2')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~1.8GB
+llama cli -hf TheBloke/phi-2-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/phi-2-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~3GB
+llama cli -hf TheBloke/phi-2-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/phi-2-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~1.8GB
+lms get https://huggingface.co/TheBloke/phi-2-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~3GB
+lms get https://huggingface.co/TheBloke/phi-2-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~1.6GB
+lms get https://huggingface.co/jesusoctavioas/phi-2-mlx-4Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~1.6GB
+ollama run phi:2.7b
+# 4-bit Q4_K_M · ~1.8GB
+ollama run hf.co/TheBloke/phi-2-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~3GB
+ollama run hf.co/TheBloke/phi-2-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~1.6GB
+mlx_lm.chat --model jesusoctavioas/phi-2-mlx-4Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model jesusoctavioas/phi-2-mlx-4Bit
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp16 · ~5.56GB
+uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/phi-2')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/phi-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

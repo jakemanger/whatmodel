@@ -6,24 +6,40 @@
 
 Microsoft · released 2023-02 · mit
 
-**score 23.4** ±3.4 · #112 of 117 · from 3 benchmark results across 2 sources
+**score 23.3** ±3.4 · #113 of 118 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks SpeechT5 TTS among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.63 / 5    24.3   2025-05-11   82% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  1.98 / 5    -1.5   2025-05-11    7% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     82.6%    21.4   2025-05-15    6% ▇
-prior                   pull toward the middle                      49.7                 5% ▇
-                        weighted average                          = 23.4
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  2.63 / 5  ▅·●▅▅·█▃▃▅·▅ beats 4/17   easy · avg 4.03 / 5       82%  at its level
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  1.98 / 5  ●··▃▅··▅█▅██ beats 0/17   medium · avg 3.30 / 5    7.1%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     82.6%  ▂▂●·▂·█▆▂·▄▂ beats 5/17   very easy · avg 89%      6.4%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                 results  share of the score
+<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                2   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>        1    6% ▇
+prior: pull toward the middle                     5% ▇
+weighted average                                = 23.3
+</pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt))</sub>
 
@@ -31,14 +47,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                needs  score
-fp32 (transformers)  ~0.65GB   23.4
+fp32 (transformers)  ~0.65GB   23.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (transformers)
+# fp32 (transformers) · ~0.65GB
 uv run --with transformers --with sentencepiece --with 'datasets[audio]<4' --with soundfile --with torch python -c "from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan; from datasets import load_dataset; import torch; import soundfile as sf; processor = SpeechT5Processor.from_pretrained('microsoft/speecht5_tts'); model = SpeechT5ForTextToSpeech.from_pretrained('microsoft/speecht5_tts'); vocoder = SpeechT5HifiGan.from_pretrained('microsoft/speecht5_hifigan'); inputs = processor(text='Hello, my dog is cute.', return_tensors='pt'); embeddings_dataset = load_dataset('Matthijs/cmu-arctic-xvectors', split='validation'); speaker_embeddings = torch.tensor(embeddings_dataset[7306]['xvector']).unsqueeze(0); speech = model.generate_speech(inputs['input_ids'], speaker_embeddings, vocoder=vocoder); sf.write('speech.wav', speech.numpy(), samplerate=16000)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/speecht5-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

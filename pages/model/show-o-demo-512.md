@@ -6,22 +6,40 @@
 
 Show Lab, NUS · released 2024-10 · 1.3B params · apache-2.0
 
-**score 36.0** ±3.3 · #116 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.1** ±3.3 · #117 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Show-o (show-o-demo-512) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                       score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>  42.8%    35.3   2026-07-01   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle              49.9                 5% ▇
-                        weighted average                  = 36.0
+task           vs the others          rank  counts  tests
+text to image  ▂▅●▃▄▄█▃▁▂▁▁   #101 of 126*     95%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #101 of 126 · 95% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md), [SSD-1B](ssd-1b.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty      counts  why
+<a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>   42.8%  ●▂█▂▂▂····▂▂ beats 2/13   easy · avg 69%     95%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 36.1
+</pre>
 
 <sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt))</sub>
 
@@ -29,14 +47,18 @@ prior                   pull toward the middle              49.9                
 
 <pre>
 version              needs  score
-fp32 · nvidia only  ~7.9GB   36.0
+fp32 · nvidia only  ~7.9GB   36.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 · nvidia only
+# fp32 · nvidia only · ~7.9GB
 git clone https://github.com/showlab/Show-o && cd Show-o && pip3 install -r requirements.txt && wandb login && python3 inference_t2i.py config=configs/showo_demo_512x512.yaml batch_size=1 validation_prompts_file=validation_prompts/showoprompts.txt guidance_scale=5 generation_timesteps=50 mode='t2i'
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/show-o-demo-512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

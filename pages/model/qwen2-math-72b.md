@@ -6,23 +6,50 @@
 
 Alibaba · released 2024-08 · 72.71B params · tongyi-qianwen
 
-**score 49.5** ±1.3 · #451 of 934 · from 4 benchmark results across 2 sources
+**score 49.4** ±1.3 · #462 of 949 · from 4 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Qwen2-Math 72B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others         rank  counts  tests
+math  ▁▂▃▅▆●▄█▄▁▁▁   #225 of 400     37%      3
+</pre>
+
+<details><summary>math · #225 of 400 · 37% of its score</summary>
+
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                40.1%  ▃·····▃··█▅● beats 7/8    medium · avg 37%        16%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       96.7%  ▄···█▄▄·▄·▄● beats 8/8    very easy · avg 92%     12%  sharp
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   84.0%  ▃····▃·▅·▅·● beats 7/8    easy · avg 76%         8.8%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                  result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>   34.2%  ▁▁▁▂▂▃▂█●▃▅▃ beats 35/61  medium · avg 41%     62%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            34.2%    46.9   2024-10-22   62% ▇▇▇▇▇▇▇
-<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>              40.1%    51.9   2024-09-18   16% ▇▇
-                        <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     96.7%    55.4   2024-09-18   14% ▇▇
-                        <a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (la…</a>  84.0%    55.8   2024-09-18    8% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 49.5
+source                         results  share of the score
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>            1   62% ▇▇▇▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (lab)</a>                           3   37% ▇▇▇▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 49.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -31,15 +58,68 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/Qwen/Qwen2-Math-72B-Instruct/blob/5c267882f3377bcfc35882f8609098a894eeeaa8/config.json): config.json max\_position\_embeddings 4096. Observed 2026-10-10.</sub>
 
 <pre>
-download     size  score
-4-bit q4_0  ~41GB   49.5
+download                      size  score
+4-bit q4_0                   ~41GB   49.4
+4-bit Q4_K_M               ~47.4GB   49.4
+2-bit IQ2_M                ~29.3GB   49.4
+4-bit mlx-4bit · mac only  ~40.9GB   49.4
+4-bit mlx-8bit · mac only  ~77.3GB   49.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run qwen2-math:72b
+# 4-bit Q4_K_M · ~47.4GB
+llama cli -hf lmstudio-community/Qwen2-Math-72B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Qwen2-Math-72B-Instruct-GGUF:Q4_K_M
+# 2-bit IQ2_M · ~29.3GB
+llama cli -hf lmstudio-community/Qwen2-Math-72B-Instruct-GGUF:IQ2_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Qwen2-Math-72B-Instruct-GGUF:IQ2_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~47.4GB
+lms get https://huggingface.co/lmstudio-community/Qwen2-Math-72B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit IQ2_M · ~29.3GB
+lms get https://huggingface.co/lmstudio-community/Qwen2-Math-72B-Instruct-GGUF@IQ2_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~40.9GB
+lms get https://huggingface.co/mlx-community/Qwen2-Math-72B-Instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~77.3GB
+lms get https://huggingface.co/mlx-community/Qwen2-Math-72B-Instruct-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~41GB
+ollama run qwen2-math:72b
+# 2-bit IQ2_M · ~29.3GB
+ollama run hf.co/lmstudio-community/Qwen2-Math-72B-Instruct-GGUF:IQ2_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~40.9GB
+mlx_lm.chat --model mlx-community/Qwen2-Math-72B-Instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen2-Math-72B-Instruct-4bit
+# 4-bit mlx-8bit · mac only · ~77.3GB
+mlx_lm.chat --model mlx-community/Qwen2-Math-72B-Instruct-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen2-Math-72B-Instruct-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/qwen2-math-72b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

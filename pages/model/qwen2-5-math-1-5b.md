@@ -6,39 +6,89 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 45.7** ±2.0 · #561 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 45.9** ±2.0 · #560 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Qwen2.5-Math 1.5B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others         rank  counts  tests
+math  ▁▂▃▅●▅▄█▄▁▁▁   #280 of 400     98%      3
+</pre>
+
+<details><summary>math · #280 of 400 · 98% of its score</summary>
+
+Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       84.8%  ▄···●▄▄·▄·▄█ beats 2/8    very easy · avg 92%     40%  sharp
+<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                29.4%  ▃·····▃··●▅▅ beats 2/8    medium · avg 37%        34%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   75.8%  ▃····▃·▅·●·█ beats 5/8    easy · avg 76%          24%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen    <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     84.8%    42.7   2024-09-18   44% ▇▇▇▇▇
-        <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>              29.4%    46.5   2024-09-18   34% ▇▇▇▇
-        <a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (la…</a>  75.8%    50.7   2024-09-18   20% ▇▇
-prior   pull toward the middle                   50.0                 2% ▇
-        weighted average                       = 45.7
+source                         results  share of the score
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (lab)</a>                           3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             2% ▇
+weighted average                        = 45.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
-
-
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct/blob/aafeb0fc6f22cbf0eaeed126eff8be45b0360a35/config.json): config.json max\_position\_embeddings 4096. Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~0.99GB   45.7
+download                      size  score
+4-bit q4_k_m               ~0.99GB   45.9
+4-bit mlx-4bit · mac only   ~0.9GB   45.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~0.99GB
+llama cli -hf bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~0.99GB
+lms get https://huggingface.co/bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~0.9GB
+lms get https://huggingface.co/mlx-community/Qwen2.5-Math-1.5B-Instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~0.99GB
+ollama run hf.co/bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~0.9GB
+mlx_lm.chat --model mlx-community/Qwen2.5-Math-1.5B-Instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen2.5-Math-1.5B-Instruct-4bit
+```
 
 [interactive version](https://whatmodel.sh/model/qwen2-5-math-1-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,23 +6,38 @@
 
 EMA Lightning (canberkkkkkk) · released 2026-10 · 0.0086B params · apache-2.0
 
-**score 40.5** ±2.9 · #85 of 117 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 40.2** ±2.9 · #86 of 118 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks EMA Lightning among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-cloud0day3-antalia-mini"></a>Antalia-2 Mini model …  <a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Freya-TR-Eval Turkish TTS int…</a>   1.0%    39.6   2026-10-09   53% ▇▇▇▇▇▇
-<a name="card3-canberkkkkkk-ema-lightning"></a>EMA Lightning model c…  <a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">Freya-TR-Eval Turkish TTS int…</a>   0.9%    40.8   2026-10-06   43% ▇▇▇▇▇
-prior                   pull toward the middle                   49.7                 3% ▇
-                        weighted average                       = 40.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Freya-TR-Eval Turkish TTS intelli…</a>    1.0%  ▄··▄··▄···▂● beats 10/10  avg 0.3%       97%  several runs
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                          results  share of the score
+<a name="card3-cloud0day3-antalia-mini"></a><a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Antalia-2 Mini model card</a>             1   53% ▇▇▇▇▇▇
+<a name="card3-canberkkkkkk-ema-lightning"></a><a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">EMA Lightning model card (lab)</a>        1   43% ▇▇▇▇▇
+prior: pull toward the middle              3% ▇
+weighted average                         = 40.2
+</pre>
 
 <sub>Licences: Antalia-2 Mini model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EMA Lightning model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -30,14 +45,18 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version           needs  score
-fp32 (PyTorch)  ~0.04GB   40.5
+fp32 (PyTorch)  ~0.04GB   40.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (PyTorch)
+# fp32 (PyTorch) · ~0.04GB
 pip install ema-lightning && python -c "from ema_lightning import EMA; EMA().say('Merhaba, size nasıl yardımcı olabilirim?', path='merhaba.wav')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ema-lightning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

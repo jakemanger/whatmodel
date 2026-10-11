@@ -6,26 +6,42 @@
 
 Meta · released 2020-06 · 0.094B params · apache-2.0
 
-**score 1.4** ±3.4 · #158 of 160 · from 5 benchmark results across 3 sources
+**score 1.8** ±3.4 · #160 of 162 · from 5 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks wav2vec 2.0 Base 960h among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md#evaluation">LibriSpeech test-other WER (l…</a>   8.6%    -1.9   2022-11-14   37% ▇▇▇▇
-                      <a href="https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   3.4%    -3.7   2022-11-14   13% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  29.4%    -0.6   2026-03-26   40% ▇▇▇▇▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  18.8%    -1.9   2024-12-09    3% ▇
-                      <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       3.7%    28.7   2024-12-09    2% ▇
-prior                 pull toward the middle                   49.8                 4% ▇
-                      weighted average                        = 1.4
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   29.4%  ▁●▁▃··▁▁▂██▆ beats 1/86   avg 8.2%       41%  blunt
+<a href="https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md#evaluation">LibriSpeech test-other WER (lab)</a>      8.6%  ●·▂·▂······█ beats 0/6    avg 0.2%       36%  typical
+<a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>            3.7%  ▂··▂·▃▂█●▃▃▃ beats 10/16  avg 0.4%       15%  blunt · several runs
+<a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>       18.8%  ▂····●▂▂█▃▃▂ beats 1/13   avg 9.2%      3.0%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="first-party-meta-asr-cards"></a><a href="https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md#evaluation">Meta (lab)</a>                           2   49% ▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   41% ▇▇▇▇▇
+<a name="speech-stt-srb-report"></a><a href="https://arxiv.org/html/2403.07937v3">Speech Robust Bench</a>                  2    5% ▇
+prior: pull toward the middle             5% ▇
+weighted average                        = 1.8
+</pre>
 
 <sub>Licences: Meta ([Apache-2.0](https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
 
@@ -33,14 +49,18 @@ prior                 pull toward the middle                   49.8             
 
 <pre>
 version    needs  score
-fp32     ~0.95GB    1.4
+fp32     ~0.95GB    1.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32
+# fp32 · ~0.95GB
 uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/wav2vec2-base-960h', chunk_length_s=30)('audio.wav')['text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/wav2vec2-base-960h) · [JSON](https://whatmodel.sh/api?format=json&all=1)

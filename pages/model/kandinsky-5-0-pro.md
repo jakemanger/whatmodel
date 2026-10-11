@@ -8,19 +8,38 @@ Sber · released 2025-11 · 19B params · mit
 
 **score 52.4** ±2.4 · #46 of 93 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Kandinsky 5.0 Pro among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1175.2    52.4   2026-09-22   95% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>         86.5%    56.0   2026-04-22    3% ▇
-prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 52.4
+task           vs the others        rank  counts  tests
+text to video  ▆▄▃▄▆▅●▃▂▂▂▄   #28 of 68*     98%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #28 of 68 · 98% of its score</summary>
+
+Beats [Kling 2.1 Master](kling-2-1-master.md) here, though they rank higher overall.
+
+<pre>
+test              result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>     1175.2  ▂▂▃●█▆·▆▅▁▂▇ beats 11/41  avg 1147           95%  typical
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   86.5%  ▂··▂··█●▂··▆ beats 7/11   easy · avg 84%    3.1%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    3% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 52.4
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 
@@ -35,11 +54,15 @@ version                                   needs  score
 bf16 + model CPU offload · nvidia only  ~75.7GB   52.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 + model CPU offload · nvidia only
+# bf16 + model CPU offload · nvidia only · ~75.7GB
 uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c "import torch; from diffusers import Kandinsky5T2VPipeline; from diffusers.utils import export_to_video; p=Kandinsky5T2VPipeline.from_pretrained('kandinskylab/Kandinsky-5.0-T2V-Pro-sft-5s-Diffusers', torch_dtype=torch.bfloat16); p.transformer.set_attention_backend('flex'); p.enable_model_cpu_offload(); export_to_video(p(prompt='A cat and a dog baking a cake together in a kitchen.', negative_prompt='Static, 2D cartoon, cartoon, 2d animation, paintings, images, worst quality, low quality, ugly, deformed, walking backwards', height=768, width=1024, num_frames=121, num_inference_steps=50, guidance_scale=5.0).frames[0], 'output.mp4', fps=24, quality=9)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/kandinsky-5-0-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,24 +6,39 @@
 
 Moondream · released 2026-09 · cc-by-4.0
 
-**score 56.8** ±3.8 · #56 of 160 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 57.0** ±3.8 · #55 of 162 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Parakeet Redux among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-moondream-parakeet-cards"></a>Moondream parakeet-ul…  <a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">TED-LIUM long-form WER (lab)</a>     2.5%    57.1   2026-09-23   33% ▇▇▇▇
-                        <a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">FLEURS 25 European languages,…</a>  10.6%    57.9   2026-09-23   30% ▇▇▇▇
-                        <a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">Granite 5.0 report · Open ASR…</a>   6.6%    56.7   2026-09-23   30% ▇▇▇▇
-prior                   pull toward the middle                   49.8                 6% ▇
-                        weighted average                       = 56.8
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">TED-LIUM long-form WER (lab)</a>          2.5%  █····█·███●█ beats 5/6    avg 4.6%       35%  sharp · small run
+<a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">FLEURS 25 European languages, mea…</a>   10.6%  █····●·····█ beats 1/2    avg 18%        31%  small run
+<a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">Granite 5.0 report · Open ASR pub…</a>    6.6%  ●···█······█ beats 0/2    avg 11%        29%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="card3-moondream-parakeet-cards"></a><a href="https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md">Moondream parakeet-ultra and parakeet-r…</a>        3   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 57.0
+</pre>
 
 <sub>Licences: Moondream parakeet-ultra and parakeet-redux model cards ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -31,14 +46,18 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version                     needs  score
-ternary 1.58-bit (Photon)  0.18GB   56.8
+ternary 1.58-bit (Photon)  0.18GB   57.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# ternary 1.58-bit (Photon)
+# ternary 1.58-bit (Photon) · 0.18GB
 pip install "moondream>=2.4.0" && python -c "import moondream as md; speech_cm = md.photon('moondream/parakeet-redux', device='cpu'); speech = speech_cm.__enter__(); print(speech.transcribe(audio='speech.wav')['text']); speech_cm.__exit__(None, None, None)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/parakeet-redux) · [JSON](https://whatmodel.sh/api?format=json&all=1)

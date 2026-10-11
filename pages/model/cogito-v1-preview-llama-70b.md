@@ -6,21 +6,36 @@
 
 Deep Cogito · released 2025-03 · 70.55B params · llama3.1
 
-**score 61.1** ±6.9 · #199 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 60.9** ±7.1 · #208 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Cogito v1 Preview Llama 70B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   91.7%  ▃·▁▁▂▁▂▅█▇●▁ beats 96/100   medium · avg 68%     51%  noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   91.9%  ▁▁▁▁▁▁▁▂▄█●▃ beats 124/146  easy · avg 83%       27%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  91.7%    65.9   2026-04-17   53% ▇▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  91.9%    60.5   2026-04-17   26% ▇▇▇
-prior                  pull toward the middle                   50.0                21% ▇▇▇
-                       weighted average                       = 61.1
+source                         results  share of the score
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   77% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            23% ▇▇▇
+weighted average                        = 60.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -29,15 +44,68 @@ prior                  pull toward the middle                   50.0            
 <sub>[context source](https://huggingface.co/deepcogito/cogito-v1-preview-llama-70B/blob/1d624e2293b5b35f9cfd2349f8e02c7ebf32ca83/README.md): Card: 'Each model is trained in over 30 languages and supports a context length of 128k' (config max\_position\_embeddings 131072). Observed 2026-10-10.</sub>
 
 <pre>
-download       size  score
-4-bit q4_k_m  ~43GB   61.1
+download                      size  score
+4-bit q4_k_m                 ~43GB   60.9
+4-bit Q4_K_M               ~42.5GB   60.9
+8-bit Q8_0                   ~75GB   60.9
+4-bit mlx-4bit · mac only  ~39.7GB   60.9
+4-bit mlx-8bit · mac only    ~75GB   60.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run cogito:70b
+# 4-bit Q4_K_M · ~42.5GB
+llama cli -hf lmstudio-community/cogito-v1-preview-llama-70B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/cogito-v1-preview-llama-70B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~75GB
+llama cli -hf lmstudio-community/cogito-v1-preview-llama-70B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/cogito-v1-preview-llama-70B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~42.5GB
+lms get https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-70B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~75GB
+lms get https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-70B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~39.7GB
+lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-llama-70B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~75GB
+lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-llama-70B-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~43GB
+ollama run cogito:70b
+# 4-bit Q4_K_M · ~42.5GB
+ollama run hf.co/lmstudio-community/cogito-v1-preview-llama-70B-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~39.7GB
+mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-llama-70B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/deepcogito-cogito-v1-preview-llama-70B-4bit
+# 4-bit mlx-8bit · mac only · ~75GB
+mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-llama-70B-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/deepcogito-cogito-v1-preview-llama-70B-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/cogito-v1-preview-llama-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

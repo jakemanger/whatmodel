@@ -8,25 +8,58 @@ Tencent · released 2025-11 · 8.3B params · tencent-hunyuan-community
 
 **score 52.7** ±2.1 · #44 of 93 · from 8 benchmark results across 8 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks HunyuanVideo 1.5 (I2V) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  911.0    51.7   2026-05-11   52% ▇▇▇▇▇▇
-<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>  23.0%    51.3   2026-09-30   11% ▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>  85.6%    52.4   2026-06-23   11% ▇
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  19.1%    49.1   2026-08-26    7% ▇
-<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric…</a>  81.1%    57.1   2026-08-06    6% ▇
-<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>  75.6%    66.2   2026-05-14    4% ▇
-<a name="visual-whatif-world-ccby"></a>What-If World: A Caus…  <a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-interven…</a>  27.0%    48.9   2026-05-26    4% ▇
-<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  33.4%    65.9   2026-06-17    3% ▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 52.7
+task            vs the others       rank  counts  tests
+image to video  ▁▂·▂▅●▅▄▅▆▃▄   #39 of 50     77%      5
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to video · #39 of 50 · 77% of its score</summary>
+
+Trails [Cosmos3-Nano](cosmos3-nano.md), [Kling 2.1 Master](kling-2-1-master.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   911.0  ▃▃··●··▃▃▃·▃ beats 3/8    avg 875            52%  sharp
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, imag…</a>   85.6%  ▄·█··●··▄▄▄█ beats 3/8    easy · avg 84%     11%  typical
+<a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I2V)</a>     19.1%  ●▄···▄▄█·█·▄ beats 0/8    hard · avg 20%    7.2%  typical
+<a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-intervention…</a>   27.0%  ●·▄····▄···█ beats 0/5    hard · avg 27%    3.9%  blunt · at its level
+<a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, best-pr…</a>   33.4%  ██···█··█·●█ beats 4/5    hard · avg 25%    3.0%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   23.0%  ▅·▃●·█·▃···▃ beats 4/9    hard · avg 21%       11%  typical
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric-gro…</a>   81.1%  █··▄▄●▄····▄ beats 4/6    easy · avg 77%      6.3%  blunt
+<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>   75.6%  ▂···▂······● beats 2/5    medium · avg 65%    4.1%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   52% ▇▇▇▇▇▇
+<a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1   11% ▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        1   11% ▇
+<a name="visual-vgi"></a><a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench: Probing Visual Intelligence …</a>        1    7% ▇
+<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1    6% ▇
+<a name="visual-mechverse"></a><a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse: Evaluating Physical Motion C…</a>        1    4% ▇
+<a name="visual-whatif-world-ccby"></a><a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World: A Causal Benchmark for G…</a>        1    4% ▇
+<a name="visual-physics-verified"></a><a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified</a>                             1    3% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 52.7
+</pre>
 
 <sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · What-If World: A Causal Benchmark for General World Models in Embodied Scenarios ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>
 
@@ -41,11 +74,15 @@ version                                     needs  score
 bf16 480p I2V + model CPU offload · nvi…  ~65.6GB   52.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 480p I2V + model CPU offload · nvidia only
+# bf16 480p I2V + model CPU offload · nvidia only · ~65.6GB
 uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c "import torch; from diffusers import HunyuanVideo15ImageToVideoPipeline; from diffusers.utils import export_to_video, load_image; p=HunyuanVideo15ImageToVideoPipeline.from_pretrained('hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-480p_i2v', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p.vae.enable_tiling(); image=load_image('https://huggingface.co/datasets/YiYiXu/testing-images/resolve/main/wan_i2v_input.JPG'); export_to_video(p(prompt='Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard.', image=image, generator=torch.Generator(device='cuda:0').manual_seed(1), num_frames=121, num_inference_steps=50).frames[0], 'output.mp4', fps=24)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hunyuanvideo-1-5-i2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

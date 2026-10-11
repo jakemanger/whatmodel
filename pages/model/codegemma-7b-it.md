@@ -6,47 +6,130 @@
 
 Google · released 2024-03 · 8.54B params · gemma
 
-**score 42.5** ±0.6 · #651 of 934 · from 10 benchmark results across 4 sources
+**score 42.5** ±0.7 · #657 of 949 · from 10 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks CodeGemma 7B IT (v1.0) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #355 of 469     91%      7
+</pre>
+
+<details><summary>coding · #355 of 469 · 91% of its score</summary>
+
+Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            60.4%  ▁·▁▁▃▄▆●█▃▁▁ beats 46/99  easy · avg 79%       41%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           51.8%  ▁·▁▁▁▃▄▄●█▃▁ beats 45/99  easy · avg 74%       27%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   41.6%  ▁·▂▁▂▆▅●▄▄▁▂ beats 21/35  medium · avg 64%    7.1%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   38.4%  ▄▇█▃▄▇▄▁●▃·▁ beats 30/35  medium · avg 49%    4.8%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                56.9%  ▁···▁▁▂▅●█▆▂ beats 33/75  easy · avg 68%      4.7%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   45.8%  ▁·▁▁▄██▄█▁●▅ beats 31/35  medium · avg 56%    4.7%  sharp · at its level
+<a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                           54.2%  ▁▁▁▄▅●▄▅▃▁▂▁ beats 40/81  easy · avg 74%      2.1%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                     result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   38.3%  ▂▁▁▄▂▅●█▆▂▂▂ beats 23/58  medium · avg 50%    4.4%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   32.1%  ▃▂·▆●██▆▅▃▃▃ beats 10/33  medium · avg 41%    4.3%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       60.4%    42.7   2024-12-26   37% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      51.8%    42.0   2024-12-26   28% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           56.9%    43.0   2024-12-26    4% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  41.6%    39.2   2024-05-07    7% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  38.4%    45.7   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  45.8%    47.5   2024-05-07    4% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         32.1%    44.1   2025-04-01    4% ▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         38.3%    42.3   2025-04-01    4% ▇
-<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 56.1%    41.6   2024-06-19    5% ▇
-                        <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      54.2%    39.0   2024-06-19    2% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 42.5
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   67% ▇▇▇▇▇▇▇▇
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        3   17% ▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              2    9% ▇
+<a name="paper-2406.11409v2"></a><a href="https://arxiv.org/html/2406.11409v2">CodeGemma: Open Code Models Based on Ge…</a>        2    8% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 42.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
 <pre>
-download        size  score
-4-bit q4_k_m  ~5.3GB   42.5
-8-bit q8_0    ~9.1GB   42.5
+download                     size  score
+4-bit q4_k_m               ~5.3GB   42.5
+8-bit q8_0                 ~9.1GB   42.5
+4-bit Q4_K_M               ~5.3GB   42.5
+8-bit Q8_0                 ~9.1GB   42.5
+4-bit mlx-4bit · mac only  ~5.9GB   42.5
+4-bit mlx-8bit · mac only  ~9.6GB   42.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run codegemma:7b-instruct-q4_K_M
-# 8-bit q8_0
-ollama run codegemma:7b-instruct-q8_0
+# 4-bit Q4_K_M · ~5.3GB
+llama cli -hf lmstudio-community/codegemma-7b-it-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/codegemma-7b-it-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~9.1GB
+llama cli -hf lmstudio-community/codegemma-7b-it-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/codegemma-7b-it-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~5.3GB
+lms get https://huggingface.co/lmstudio-community/codegemma-7b-it-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~9.1GB
+lms get https://huggingface.co/lmstudio-community/codegemma-7b-it-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~5.9GB
+lms get https://huggingface.co/mlx-community/codegemma-7b-it-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~9.6GB
+lms get https://huggingface.co/mlx-community/codegemma-7b-it-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.3GB
+ollama run codegemma:7b-instruct-q4_K_M
+# 8-bit q8_0 · ~9.1GB
+ollama run codegemma:7b-instruct-q8_0
+# 4-bit Q4_K_M · ~5.3GB
+ollama run hf.co/lmstudio-community/codegemma-7b-it-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~9.1GB
+ollama run hf.co/lmstudio-community/codegemma-7b-it-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~5.9GB
+mlx_lm.chat --model mlx-community/codegemma-7b-it-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/codegemma-7b-it-4bit
+# 4-bit mlx-8bit · mac only · ~9.6GB
+mlx_lm.chat --model mlx-community/codegemma-7b-it-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/codegemma-7b-it-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/codegemma-7b-it) · [JSON](https://whatmodel.sh/api?format=json&all=1)

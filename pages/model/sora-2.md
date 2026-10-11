@@ -8,28 +8,65 @@ OpenAI · released 2025-10 · proprietary
 
 **score 65.1** ±1.5 · comparison only: no current run option verified · from 11 benchmark results across 11 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Sora 2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                           1342.6    67.0   2026-09-22   39% ▇▇▇▇▇
-<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>          1118.0    62.4   2026-05-11   27% ▇▇▇
-<a name="visual-gap-target-bench"></a>Target-Bench: Can Vid…  <a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT plannin…</a>           20.7%    65.2   2026-04-15    9% ▇
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>           36.7%    67.9   2026-08-26    5% ▇
-<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>           68.8%    70.9   2026-09-10    4% ▇
-<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  1298.94 / 1608    63.6   2026-05-15    4% ▇
-<a name="visual-vabench"></a>VABench: A Comprehens…  <a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench T2AV micro Visual QA</a>             79.9%    62.6   2026-04-06    3% ▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>           53.6%    67.4   2026-08-10    3% ▇
-<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>           26.5%    51.3   2026-06-17    2% ▇
-<a name="visual-v-reasonbench"></a>V-ReasonBench: Toward…  <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>           43.9%    79.4   2025-11-20    1% ▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                         86.1%    52.4   2026-04-22    1% ▇
-prior                   pull toward the middle                            49.9                 1% ▇
-                        weighted average                                = 65.1
+task            vs the others       rank  counts  tests
+text to video   ▇▅▄▆█▆▇▂●▃▂▄   #18 of 94     51%      5
+image to video  ▁▁▂▂██▄●▃▄▂▂   #23 of 74     48%      6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #18 of 94 · 51% of its score</summary>
+
+<pre>
+test                                        result  vs the others in its run  difficulty                counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                               1342.6  ▂▂▃▆█▆·●▅▁▂▇ beats 28/41  avg 1147                     39%  typical
+<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  1298.94 / 1608  █·▄··▄·····● beats 5/5    easy · avg 1103.17 / 16…    3.7%  typical
+<a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench T2AV micro Visual QA</a>                 79.9%  ▄····▄····▄● beats 3/4    easy · avg 68%              3.4%  typical
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>           53.6%  ▅·▃█▃·▅●▅▃▃▃ beats 9/14   hard · avg 44%              3.4%  blunt · at its level
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                             86.1%  ▂··▂··█●▂··▆ beats 6/11   easy · avg 84%              1.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>image to video · #23 of 74 · 48% of its score</summary>
+
+Beats [HappyHorse 1.1](happyhorse-1-1.md) here, though they rank higher overall. Trails [Runway Gen-4.5](runway-gen-4-5.md), [Kling 2.6 Pro](kling-2-6-pro.md), [Wan 2.6](wan-2-6.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>  1118.0  ▃▃··█··●▃▃·▃ beats 5/8    avg 875                  27%  sharp
+<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>   20.7%  ▃·▃···▃▃●·▃▃ beats 4/8    very hard · avg 9.6%    9.0%  typical
+<a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I2V)</a>     36.7%  ▄▄···▄▄●·█·▄ beats 5/8    hard · avg 20%          4.9%  at its level
+<a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video reason…</a>   68.8%  █··▄······●█ beats 3/5    medium · avg 50%        3.9%  at its level
+<a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, best-pr…</a>   26.5%  █●···█··█·██ beats 1/5    hard · avg 25%          1.8%  blunt · at its level
+<a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>       43.9%  █·····▄···▄● beats 4/4    hard · avg 17%          1.5%  at its level · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   39% ▇▇▇▇▇
+<a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   27% ▇▇▇
+<a name="visual-gap-target-bench"></a><a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench: Can Video World Models Ac…</a>        1    9% ▇
+<a name="visual-vgi"></a><a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench: Probing Visual Intelligence …</a>        1    5% ▇
+<a name="visual-vwg-bench"></a><a href="https://arxiv.org/html/2609.11242v1#S4.T2">From Evaluation to Enhancement: Benchma…</a>        1    4% ▇
+<a name="video-videoverse"></a><a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse: Does Your T2V Generator Hav…</a>        1    4% ▇
+<a name="visual-vabench"></a><a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench: A Comprehensive Benchmark for …</a>        1    3% ▇
+<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    3% ▇
+<a name="visual-physics-verified"></a><a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified</a>                             1    2% ▇
+<a name="visual-v-reasonbench"></a><a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench: Toward Unified Reasoning…</a>        1    1% ▇
+<a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 65.1
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · Target-Bench: Can Video World Models Achieve Mapless Path Planning with Semantic Targets? ([CC-BY-4.0](../../licenses/visual-gap-target-bench.txt)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) · VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt)) · VABench: A Comprehensive Benchmark for Audio-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt)) · V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 

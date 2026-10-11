@@ -6,22 +6,46 @@
 
 Google · released 2022-10 · 0.248B params · apache-2.0
 
-**score 20.4** ±2.5 · #902 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 20.1** ±2.5 · #917 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Flan-T5 Base among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others      rank  counts  tests
+math  █●·█···█···█   #4 of 5*     19%      1
+</pre>
+
+<details><summary>math · #4 of 5 · 19% of its score</summary>
+
+<pre>
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    0.4%  ●·▁·▁··▂▄█▄▄ beats 0/26   hard · avg 22%     19%  too hard for it
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                  result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>   31.3%  ▁▁▁▁●▄▅▅█▃▄▁ beats 8/129   easy · avg 80%     44%  sharp · too hard for it
+<a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>             35.9%  ▁▁▁▁▁●▃▅█▃▆▃ beats 12/183  easy · avg 82%     35%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>    31.3%    21.4   2022-12-06   43% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>              35.9%    20.8   2022-12-06   36% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>               0.4%    13.1   2022-12-06   19% ▇▇
-prior                   pull toward the middle           50.0                 3% ▇
-                        weighted average               = 20.4
+source                                    results  share of the score
+<a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        3   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 20.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt))</sub>
 
@@ -29,14 +53,18 @@ prior                   pull toward the middle           50.0                 3%
 
 <pre>
 download       size  score
-4-bit fp32  ~0.99GB   20.4
+4-bit fp32  ~0.99GB   20.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp32
+# 4-bit fp32 · ~0.99GB
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-base')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/flan-t5-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

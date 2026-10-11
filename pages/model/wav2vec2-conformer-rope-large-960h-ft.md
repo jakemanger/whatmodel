@@ -6,24 +6,40 @@
 
 Meta · released 2022-04 · 0.59B params · apache-2.0
 
-**score 12.2** ±3.5 · #155 of 160 · from 3 benchmark results across 2 sources
+**score 13.1** ±3.5 · #156 of 162 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks wav2vec 2.0 Conformer RoPE Large 960h among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/wav2vec2-conformer-rope-large-960h-ft/blob/6b36ef01c6443c67ae7ed0822876d091ab50e4aa/README.md#evaluation">LibriSpeech test-other WER (l…</a>   4.0%    11.4   2023-03-21   39% ▇▇▇▇▇
-                      <a href="https://huggingface.co/facebook/wav2vec2-conformer-rope-large-960h-ft/blob/6b36ef01c6443c67ae7ed0822876d091ab50e4aa/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   2.0%    13.0   2023-03-21   13% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  23.3%     8.7   2026-03-26   42% ▇▇▇▇▇
-prior                 pull toward the middle                   49.8                 5% ▇
-                      weighted average                       = 12.2
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>   23.3%  ▁▁▁●··▁▁▂██▆ beats 5/86   avg 8.2%       43%  blunt
+<a href="https://huggingface.co/facebook/wav2vec2-conformer-rope-large-960h-ft/blob/6b36ef01c6443c67ae7ed0822876d091ab50e4aa/README.md#evaluation">LibriSpeech test-other WER (lab)</a>      4.0%  ▂·▂·▂······● beats 4/6    avg 0.2%       38%  typical
+<a href="https://huggingface.co/facebook/wav2vec2-conformer-rope-large-960h-ft/blob/6b36ef01c6443c67ae7ed0822876d091ab50e4aa/README.md#evaluation">LibriSpeech test-clean WER (lab)</a>      2.0%  ▂··▂▂·····●█ beats 3/8    avg 0.4%       13%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="first-party-meta-asr-cards"></a><a href="https://huggingface.co/facebook/wav2vec2-conformer-rope-large-960h-ft/blob/6b36ef01c6443c67ae7ed0822876d091ab50e4aa/README.md#evaluation">Meta (lab)</a>                           2   52% ▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   43% ▇▇▇▇▇
+prior: pull toward the middle             5% ▇
+weighted average                        = 13.1
+</pre>
 
 <sub>Licences: Meta ([Apache-2.0](https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
@@ -31,14 +47,18 @@ prior                 pull toward the middle                   49.8             
 
 <pre>
 version    needs  score
-fp32     ~3.33GB   12.2
+fp32     ~3.33GB   13.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32
+# fp32 · ~3.33GB
 uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/wav2vec2-conformer-rope-large-960h-ft', chunk_length_s=30)('audio.wav')['text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/wav2vec2-conformer-rope-large-960h-ft) · [JSON](https://whatmodel.sh/api?format=json&all=1)

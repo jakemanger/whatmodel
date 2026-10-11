@@ -8,27 +8,73 @@ Alibaba · released 2025-07 · 5B params · apache-2.0
 
 **score 47.1** ±2.4 · #57 of 93 · from 10 benchmark results across 9 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Wan 2.2 TI2V 5B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>  80.8%    44.1   2026-06-23   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>  80.4%    44.2   2026-06-23   16% ▇▇
-<a name="visual-vabench"></a>VABench: A Comprehens…  <a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench T2AV micro Visual QA</a>    63.6%    45.4   2026-04-06   12% ▇
-<a name="visual-gap-target-bench"></a>Target-Bench: Can Vid…  <a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT plannin…</a>   8.4%    47.5   2026-04-15   11% ▇
-<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric…</a>  78.2%    52.7   2026-08-06    9% ▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  44.4%    50.4   2026-08-10    7% ▇
-<a name="paper-2512.01989v1-paibench"></a>PAI-Bench: A Comprehe…  <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video…</a>  81.3%    50.9   2025-12-01    7% ▇
-<a name="visual-phyground"></a>PhyGround: Benchmarki…  <a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evalu…</a>  52.6%    42.9   2026-05-11    6% ▇
-<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>  65.6%    51.8   2026-05-14    5% ▇
-<a name="visual-whatif-world-ccby"></a>What-If World: A Caus…  <a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-interven…</a>  28.4%    52.0   2026-05-26    4% ▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 47.1
+task            vs the others       rank  counts  tests
+text to video   ▆▄▃▄●▅█▃▂▂▂▄   #41 of 68     40%      4
+image to video  ▁▂·▂●█▅▄▅▆▃▄   #43 of 50     38%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #41 of 68 · 40% of its score</summary>
+
+Trails [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md), [Cosmos-1.0-Diffusion-7B-Text2World](cosmos-1-0-diffusion-7b-text2world.md), [LTX-2 19B Distilled](ltx-2-19b-distilled.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   80.8%  ●▄▄··▄▄▄▄▄·▄ beats 0/9    easy · avg 85%     21%  typical
+<a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench T2AV micro Visual QA</a>         63.6%  ●····▄····▄█ beats 0/4    easy · avg 68%     12%  at its level
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   44.4%  ▅·▃●▃·▅▃▅▃▃▃ beats 3/14   hard · avg 44%    7.0%  blunt · at its level
+<a href="https://arxiv.org/html/2607.06173v1#A1.T10">VBench T2V total (MobileWan 480p …</a>   81.3%  no other model yet                             —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>image to video · #43 of 50 · 38% of its score</summary>
+
+Beats [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall. Trails [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, imag…</a>   80.4%  ●·█··▄··▄▄▄█ beats 0/8    easy · avg 84%           16%  typical
+<a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT planning sc…</a>    8.4%  ▃·●···▃▃█·▃▃ beats 1/8    very hard · avg 9.6%     11%  typical
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   81.3%  ▃······▅·█●█ beats 7/10   easy · avg 81%          6.6%  blunt
+<a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World causal-intervention…</a>   28.4%  ●·▄····▄···█ beats 1/5    hard · avg 27%          4.5%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric-gro…</a>   78.2%  █··●▄▄▄····▄ beats 2/6    easy · avg 77%      8.8%  blunt · at its level
+<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   52.6%  █●▄··▄···▄·█ beats 2/7    medium · avg 57%    5.8%  blunt · at its level
+<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>   65.6%  ▂···●······█ beats 1/5    medium · avg 65%    5.5%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        2   37% ▇▇▇▇
+<a name="visual-vabench"></a><a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench: A Comprehensive Benchmark for …</a>        1   12% ▇
+<a name="visual-gap-target-bench"></a><a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench: Can Video World Models Ac…</a>        1   11% ▇
+<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1    9% ▇
+<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    7% ▇
+<a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        1    7% ▇
+<a name="visual-phyground"></a><a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround: Benchmarking Physical Reason…</a>        1    6% ▇
+<a name="visual-mechverse"></a><a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse: Evaluating Physical Motion C…</a>        1    5% ▇
+<a name="visual-whatif-world-ccby"></a><a href="https://arxiv.org/html/2605.27589v1#S4.T2">What-If World: A Causal Benchmark for G…</a>        1    5% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 47.1
+</pre>
 
 <sub>Licences: Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VABench: A Comprehensive Benchmark for Audio-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Target-Bench: Can Video World Models Achieve Mapless Path Planning with Semantic Targets? ([CC-BY-4.0](../../licenses/visual-gap-target-bench.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · What-If World: A Causal Benchmark for General World Models in Embodied Scenarios ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -54,20 +100,24 @@ fp16 + umt5 q8_0 (sd.cpp)           ~21.4GB   47.1
 gguf-q4_k_m + umt5 q4_k_m (sd.cpp)  ~10.7GB   47.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~12.5GB
 python generate.py --task ti2v-5B --size 1280*704 --ckpt_dir ./Wan2.2-TI2V-5B --offload_model True --convert_model_dtype --t5_cpu --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage"
-# q8 · mac only
+# q8 · mac only · ~6.5GB
 rapid-mlx serve wan2.2-ti2v-5b-q8
-# bf16 · mac only
+# bf16 · mac only · ~12.5GB
 rapid-mlx serve wan2.2-ti2v-5b-bf16
-# fp16 + umt5 q8_0 (sd.cpp)
+# fp16 + umt5 q8_0 (sd.cpp) · ~21.4GB
 sd-cli -M vid_gen --diffusion-model models/wan2.2_ti2v_5B_fp16.safetensors --vae models/wan2.2_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -n "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走" -W 480 -H 832 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0
-# gguf-q4_k_m + umt5 q4_k_m (sd.cpp)
+# gguf-q4_k_m + umt5 q4_k_m (sd.cpp) · ~10.7GB
 sd-cli -M vid_gen --diffusion-model models/Wan2.2-TI2V-5B-Q4_K_M.gguf --vae models/wan2.2_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q4_K_M.gguf -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -n "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走" -W 480 -H 832 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 

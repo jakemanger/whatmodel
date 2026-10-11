@@ -6,22 +6,60 @@
 
 MiniMax · released 2025-10 · proprietary
 
-**score 54.6** ±1.8 · #40 of 93 · from 3 benchmark results across 2 sources
+**score 54.7** ±1.8 · #40 of 93 · from 3 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Hailuo 2.3 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄▆▅●▃▂▂▂▄   #24 of 68*     54%      1
+image to video  ▁▂·▂▅●▅▄▅▆▃▄   #31 of 50*     36%      1
+</pre>
+
+<details><summary>text to video · #24 of 68 · 54% of its score</summary>
+
+Beats [Seedance 1.0 Pro](seedance-1-0-pro.md), [Kling O1 Pro](kling-o1-pro.md) here, though they rank higher overall.
+
+<pre>
+test           result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1206.0  ▂▂▃▆●▆·▆▅▁▂▇ beats 15/41  avg 1147       54%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #31 of 50 · 36% of its score</summary>
+
+Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Wan 2.2 I2V A14B](wan-2-2-i2v-a14b.md), [P-Video](p-video.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
+
+<pre>
+test                  result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1262.0  ▁▁▁▁▄▇●▆▃▂▄█ beats 15/40  avg 1189       36%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   13.0%  ●·▃▅·█·▃···▃ beats 1/9    hard · avg 21%    8.5%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1206.0    55.0   2026-09-22   54% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1262.0    57.1   2026-09-22   36% ▇▇▇▇
-<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>   13.0%    42.6   2026-09-30    9% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 54.6
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1    8% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 54.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

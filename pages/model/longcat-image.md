@@ -6,25 +6,50 @@
 
 Meituan · released 2025-12 · 6B params · apache-2.0
 
-**score 51.8** ±3.4 · #76 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 53.4** ±3.5 · #71 of 144 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LongCat-Image among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  83.9%    51.3   2026-08-25   71% ▇▇▇▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE (WiScore overall, GPT-4o…</a>  65.0%    53.6   2026-06-02   24% ▇▇▇
-prior                   pull toward the middle                   49.9                 5% ▇
-                        weighted average                       = 51.8
+task           vs the others        rank  counts  tests
+text to image  ▂▅▅▃▄●█▃▁▂▁▁   #59 of 126     95%      7
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #59 of 126 · 95% of its score</summary>
 
-<sub>Licences: QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
+Beats [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [Qwen-Image](qwen-image.md), [LLaDA-Image-Turbo](llada-image-turbo.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    83.9%  ▄····●█▄▄█▄█ beats 1/10   easy · avg 82%       68%  typical
+<a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE (WiScore overall, GPT-4o jud…</a>   65.0%  ▄·▆▂▆█▄▆▂●·▄ beats 20/22  medium · avg 60%     23%  at its level
+<a href="https://arxiv.org/html/2512.07584v1#S5.T7">ChineseWord (LongCat-Image 8,105-…</a>   90.7%  ▄█·········● beats 3/3    medium · avg 58%    3.3%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2512.07584v1">GenEval (lab)</a>                        87.0%  ▇▃▅▇▁▄▅▃█▃●▅ beats 35/39  easy · avg 79%         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2512.07584v1">DPG-Bench (lab)</a>                      86.8%  ▄·▂·▂▆█●▂▄▂▂ beats 12/17                         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2512.07584v1">CVTG-2K word accuracy (lab)</a>          86.6%  ▄▄▄●▄▄·▄···▄ beats 3/8                           —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2512.07584v1">WISE overall (model publisher's r…</a>   65.0%  no other model yet                               —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   68% ▇▇▇▇▇▇▇▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE: A World Knowledge-Informed Semant…</a>        1   23% ▇▇▇
+<a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1#S5.T7">Meituan LongCat (lab)</a>                           1    3% ▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 53.4
+</pre>
+
+<sub>Licences: QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt))</sub>
 
 <details><summary>Not counted (4)</summary>
 
@@ -46,14 +71,18 @@ api (fal.ai) · $0.13/image · [fal.ai](https://fal.ai/models/fal-ai/longcat-ima
 
 <pre>
 version                                 needs  score
-gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)  ~15GB   51.8
+gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)  ~15GB   53.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)
+# gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp) · ~15GB
 sd-cli --diffusion-model models/LongCat-Image-Q4_K_M.gguf --vae models/ae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p "a lovely cat holding a sign says 'longcat.cpp'" --cfg-scale 5.0 --sampling-method euler --flow-shift 3 -v --offload-to-cpu --diffusion-fa
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/longcat-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

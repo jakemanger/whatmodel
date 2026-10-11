@@ -6,21 +6,36 @@
 
 Swiss AI · released 2025-09 · 70.6B params · apache-2.0
 
-**score 54.1** ±5.9 · #341 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.0** ±6.1 · #351 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Apertus 70B Instruct (2509) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   76.1%  ▃·▁▁▂▁▂▅●▇▄▁ beats 62/100   medium · avg 68%     53%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   88.2%  ▁▁▁▁▁▁▁▂▄█●▃ beats 110/146  easy · avg 83%       30%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  76.1%    54.6   2026-04-17   55% ▇▇▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  88.2%    55.5   2026-04-17   29% ▇▇▇
-prior                  pull toward the middle                   50.0                16% ▇▇
-                       weighted average                       = 54.1
+source                         results  share of the score
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   83% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            17% ▇▇
+weighted average                        = 54.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -30,14 +45,61 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~141.2GB   54.1
+16-bit bf16 · nvidia only  ~141.2GB   54.0
+4-bit Q4_K_M                ~43.7GB   54.0
+8-bit Q8_0                    ~75GB   54.0
+2-bit UD-IQ2_XXS            ~19.9GB   54.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-vllm serve swiss-ai/Apertus-70B-Instruct-2509
+# 4-bit Q4_K_M · ~43.7GB
+llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~75GB
+llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q8_0
+# 2-bit UD-IQ2_XXS · ~19.9GB
+llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:UD-IQ2_XXS
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Apertus-70B-Instruct-2509-GGUF:UD-IQ2_XXS
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~43.7GB
+lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~75GB
+lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit UD-IQ2_XXS · ~19.9GB
+lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@UD-IQ2_XXS -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~43.7GB
+ollama run hf.co/unsloth/Apertus-70B-Instruct-2509-GGUF:Q4_K_M
+# 2-bit UD-IQ2_XXS · ~19.9GB
+ollama run hf.co/unsloth/Apertus-70B-Instruct-2509-GGUF:UD-IQ2_XXS
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~141.2GB
+vllm serve swiss-ai/Apertus-70B-Instruct-2509
+```
 
 [interactive version](https://whatmodel.sh/model/apertus-70b-instruct-2509) · [JSON](https://whatmodel.sh/api?format=json&all=1)

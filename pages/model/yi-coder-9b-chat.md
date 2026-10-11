@@ -6,47 +6,132 @@
 
 01.AI · released 2024-08 · 8.83B params · apache-2.0
 
-**score 48.7** ±1.4 · #473 of 934 · from 8 benchmark results across 5 sources
+**score 48.6** ±1.4 · #482 of 949 · from 8 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Yi-Coder 9B Chat among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #290 of 469     83%      6
+</pre>
+
+<details><summary>coding · #290 of 469 · 83% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   23.5%  ▁▁·▁▂●▆█▅▂·▂ beats 8/31   hard · avg 26%       35%  sharp
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   54.1%  ▁·▁▂▄▁●▄█▆▂▂ beats 20/62  medium · avg 54%     34%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    3.9%  █▂▁▁●▂▂▃▅▅▅▇ beats 13/47  medium · avg 36%    5.4%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   33.0%  ▃··▁▂▂▃●█▃▄▂ beats 18/47  medium · avg 54%    5.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   32.4%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 27/47  hard · avg 33%      3.7%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   52.1%  ▁▁▁······●▃█ beats 6/47   easy · avg 67%      0.1%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/01-ai--Yi-Coder-9B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   78.8%  ▂·▂▂▂▆▅▆●▆▃█ beats 15/29   easy · avg 76%       12%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   61.9%  ▃▁▁▁▁▁▁▁●█▅▁ beats 94/276  medium · avg 73%    3.9%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  54.1%    50.2   2024-09-04   35% ▇▇▇▇
-<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>  23.5%    49.1   2024-12-26   34% ▇▇▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   3.9%    39.0   2025-05-31    6% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  33.0%    43.5   2025-05-31    5% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  32.4%    49.9   2025-05-31    4% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  52.1%    14.8   2025-05-31    0% ▇
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/01-ai--Yi-Coder-9B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  78.8%    51.7   2024-10-19   12% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  61.9%    41.9   2024-09-21    4% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 48.7
+source                                    results  share of the score
+<a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1   35% ▇▇▇▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   34% ▇▇▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   14% ▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/01-ai--Yi-Coder-9B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPlus / EvalPerf published evaluatio…</a>        1   12% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    4% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 48.6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/01-ai/Yi-Coder-9B-Chat/blob/356a1f8d4e4a606d0b879e54191ca809918576b8/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m   ~5.8GB   48.7
-8-bit q8_0    ~11.1GB   48.7
+download                      size  score
+4-bit q4_k_m                ~5.8GB   48.6
+8-bit q8_0                 ~11.1GB   48.6
+4-bit Q4_K_M                ~5.3GB   48.6
+8-bit Q8_0                  ~9.4GB   48.6
+4-bit mlx-4bit · mac only     ~5GB   48.6
+4-bit mlx-8bit · mac only   ~9.4GB   48.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run yi-coder:9b-chat-q4_K_M
-# 8-bit q8_0
-ollama run yi-coder:9b-chat-q8_0
+# 4-bit Q4_K_M · ~5.3GB
+llama cli -hf lmstudio-community/Yi-Coder-9B-Chat-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Yi-Coder-9B-Chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~9.4GB
+llama cli -hf lmstudio-community/Yi-Coder-9B-Chat-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Yi-Coder-9B-Chat-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~5.3GB
+lms get https://huggingface.co/lmstudio-community/Yi-Coder-9B-Chat-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~9.4GB
+lms get https://huggingface.co/lmstudio-community/Yi-Coder-9B-Chat-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~5GB
+lms get https://huggingface.co/mlx-community/Yi-Coder-9B-Chat-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~9.4GB
+lms get https://huggingface.co/mlx-community/Yi-Coder-9B-Chat-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.8GB
+ollama run yi-coder:9b-chat-q4_K_M
+# 8-bit q8_0 · ~11.1GB
+ollama run yi-coder:9b-chat-q8_0
+# 4-bit Q4_K_M · ~5.3GB
+ollama run hf.co/lmstudio-community/Yi-Coder-9B-Chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~9.4GB
+ollama run hf.co/lmstudio-community/Yi-Coder-9B-Chat-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~5GB
+mlx_lm.chat --model mlx-community/Yi-Coder-9B-Chat-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Yi-Coder-9B-Chat-4bit
+# 4-bit mlx-8bit · mac only · ~9.4GB
+mlx_lm.chat --model mlx-community/Yi-Coder-9B-Chat-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Yi-Coder-9B-Chat-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/yi-coder-9b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

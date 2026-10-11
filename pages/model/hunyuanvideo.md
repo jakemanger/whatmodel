@@ -8,23 +8,44 @@ Tencent · released 2024-12 · 13B params · tencent-hunyuan-community
 
 **score 39.0** ±2.5 · #71 of 93 · from 6 benchmark results across 4 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks HunyuanVideo among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                    score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>          17.2%    38.5   2026-01-30   26% ▇▇▇
-                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>          35.0%    30.9   2026-01-30   15% ▇▇
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>          56.4%    43.0   2025-04-21   18% ▇▇
-                        <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>          82.7%    42.4   2025-04-21   11% ▇
-<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  898.07 / 1608    38.2   2026-05-15   15% ▇▇
-<a name="visual-gap-jenga"></a>Training-Free Efficie…  <a href="https://arxiv.org/pdf/2505.16864v2#page=8">VBench (T2V total)</a>                      82.7%    39.6   2025-11-22   13% ▇▇
-prior                   pull toward the middle                           49.9                 3% ▇
-                        weighted average                               = 39.0
+task           vs the others       rank  counts  tests
+text to video  ▆▄▃●▆▅█▃▂▂▂▄   #49 of 68     97%      6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #49 of 68 · 97% of its score</summary>
+
+Trails [LTX-2.3](ltx-2-3.md), [T2V-Turbo-v2](t2v-turbo-v2.md) here, though they rank lower overall.
+
+<pre>
+test                                       result  vs the others in its run  difficulty                counts  why
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp; PC)</a>           17.2%  ▄···●·▄·█··▄ beats 1/5    hard · avg 33%               26%  typical
+<a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rating)</a>           56.4%  ▄····●···█·▄ beats 1/4    medium · avg 66%             18%  at its level
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>           35.0%  ▅·▃●··▃█···▃ beats 4/9    medium · avg 56%             15%  at its level
+<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  898.07 / 1608  ●·▄··▄·····█ beats 1/5    easy · avg 1103.17 / 16…     15%  at its level
+<a href="https://arxiv.org/pdf/2505.16864v2#page=8">VBench (T2V total)</a>                          82.7%  █···●▄▄····▄ beats 2/5    very easy · avg 90%          13%  small run
+<a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt ver…</a>          82.7%  █···█···●··█ beats 2/3    very easy · avg 88%          11%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        2   41% ▇▇▇▇▇
+<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-V2: Infinite-length Film Gener…</a>        2   29% ▇▇▇▇
+<a name="video-videoverse"></a><a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse: Does Your T2V Generator Hav…</a>        1   15% ▇▇
+<a name="visual-gap-jenga"></a><a href="https://arxiv.org/pdf/2505.16864v2#page=8">Training-Free Efficient Video Generatio…</a>        1   13% ▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 39.0
+</pre>
 
 <sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt)) · Training-Free Efficient Video Generation via Dynamic Token Carving ([CC-BY-SA-4.0](../../licenses/visual-gap-jenga.txt))</sub>
 
@@ -39,16 +60,20 @@ bf16 · nvidia only          ~31.7GB   39.0
 Draw Things q8p · mac only  ~27.6GB   39.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~31.7GB
 python3 sample_video.py --video-size 544 960 --video-length 129 --infer-steps 50 --prompt "A cat walks on the grass, realistic style." --flow-reverse --use-cpu-offload --save-path ./results
-# bf16 · nvidia only
+# bf16 · nvidia only · ~31.7GB
 python3 sample_video.py --video-size 720 1280 --video-length 129 --infer-steps 50 --prompt "A cat walks on the grass, realistic style." --flow-reverse --use-cpu-offload --save-path ./results
-# Draw Things q8p · mac only
+# Draw Things q8p · mac only · ~27.6GB
 brew install draw-things-cli && draw-things-cli generate --model hunyuan_video_t2v_720p_q8p.ckpt --prompt "Ocean waves at sunset" --frames 49 --seed 42 --video-format h264 --output clip.mp4
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 

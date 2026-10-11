@@ -6,25 +6,52 @@
 
 MGM-Omni (CUHK) · released 2025-09 · 2.15B params · apache-2.0
 
-**score 59.0** ±4.2 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
+**score 58.7** ±4.3 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks MGM-Omni-TTS 2B (0927) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md">Seed-TTS test-en · Whisper la…</a>   2.5%    58.4   2025-11-27   37% ▇▇▇▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md">Seed-TTS test-zh · Paraformer…</a>   1.3%    62.1   2025-11-27   31% ▇▇▇▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  54.0%    58.5   2026-05-24   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>   9.0%    52.4   2026-05-24    0% ▇
-prior                   pull toward the middle                   49.7                 7% ▇
-                        weighted average                       = 59.0
+task           vs the others        rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁●█▃▃   #31 of 43*     66%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #31 of 43 · 66% of its score</summary>
+
+Beats [CosyVoice2-0.5B](cosyvoice2-0-5b.md), [MaskGCT](maskgct.md) here, though they rank higher overall. Trails [Higgs Audio V2](higgs-audio-v2.md), [F5-TTS Base (v0)](f5-tts-base.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md">Seed-TTS test-en · Whisper large-…</a>    2.5%  ▃··▃●··▅·█▃▅ beats 2/11   avg 3.6%       35%  blunt
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md">Seed-TTS test-zh · Paraformer CER</a>     1.3%  ▂··●··▂▂█·▄▂ beats 2/11   avg 2.1%       31%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>   54.0%  ▃·····▂▂▂●█▆ beats 6/15   medium · avg 46%     26%  blunt · at its level
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>    9.0%  ▂▂▂··▂·●▃▃█▂ beats 5/15   avg 8.6%            0.3%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md">UltraEval-Audio</a>                                 2   66% ▇▇▇▇▇▇▇▇
+<a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2   27% ▇▇▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 58.7
+</pre>
 
 <sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>
 

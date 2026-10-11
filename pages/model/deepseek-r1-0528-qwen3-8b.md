@@ -6,48 +6,98 @@
 
 DeepSeek · released 2025-05 · 8.19B params · mit
 
-**score 56.7** ±1.0 · #275 of 934 · from 16 benchmark results across 4 sources
+**score 57.3** ±0.9 · #270 of 949 · from 20 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks DeepSeek R1 0528 Qwen3 8B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ▁▁▃●█▆▅▄▄▃▂▁   #291 of 334*    5.9%      1
+coding       ▁▁▁▃▆█●▇▆▄▃▁    #251 of 469    8.9%      3
+math         ▁▂▃▅▆▅●█▄▁▁▁    #154 of 400     48%      6
+</pre>
+
+<details><summary>agent tasks · #291 of 334 · 5.9% of its score</summary>
+
+Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [Qwen2.5 3B Instruct](qwen2-5-3b.md) here, though they rank lower overall.
+
+<pre>
+test                 result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard</a>    1.4%  ●▅▆▂▂▆▂▂█▅▅▂ beats 0/27   very hard · avg 1.4%    5.9%  sharp · too hard for it
+</pre>
+
+</details>
+
+<details><summary>coding · #251 of 469 · 8.9% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unspecif…</a>   57.2%  █·●·▄····▄·▄ beats 2/5    medium · avg 42%        5.5%  at its level
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">LiveCodeBench v6 (Aug 2024–May 20…</a>   60.5%  ▂●▅▃█▃▂····▂ beats 2/17   medium · avg 48%        2.2%  at its level · small run
+<a href="https://arxiv.org/html/2601.02346v1">SciCode main problems</a>                 2.6%  ●··▄····█▄·▄ beats 0/5    very hard · avg 3.8%    1.2%  too hard for it
+</pre>
+
+</details>
+
+<details><summary>math · #154 of 400 · 48% of its score</summary>
+
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Granite 4.2 3B](granite-4-2-3b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run   difficulty            counts  why
+<a href="https://arxiv.org/html/2601.02346v1">AIME 2024</a>                         83.3%  █▄···●·····▄ beats 4/5     medium · avg 62%         14%  sharp · several runs
+<a href="https://arxiv.org/html/2601.02346v1">AIME 2025</a>                         75.8%  ▄·█··●····▄▄ beats 3/5     medium · avg 53%         13%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified)</a>   54.3%  ▄··▄▄·●····█ beats 3/5     hard · avg 29%           10%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          43.9%  ▃▃▄▃▃●▇▇█▃▂▅ beats 73/193  very hard · avg 8.5%    6.4%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2601.02346v1">MATH-500</a>                          96.8%  ▄·▄·····●··█ beats 3/5     very easy · avg 92%     4.3%  maxed out
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">HMMT February 2025 (lab)</a>          61.5%  ▁▁▁▃▁●▅▃██▁▄ beats 6/31    medium · avg 58%           —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond</a>                         61.4%  ●·········▂▂ beats 3/5     hard · avg 45%           19%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro</a>                             69.1%  █··●··███··█ beats 1/5     medium · avg 57%        5.2%  at its level
+<a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam</a>                  5.6%  █··●█···█·██ beats 1/5     very hard · avg 3.8%    4.7%  too hard for it
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   36.9%  ▁▁▁▁▁▂▂▃▄●█▃ beats 54/97   hard · avg 32%          4.0%  blunt · at its level
+<a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecified)</a>    29.2%  ●██···██···█ beats 0/5     hard · avg 35%          1.5%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   69.0%  ▃·▁▁▂▁▂▅●▇▄▁ beats 48/100  medium · avg 68%        1.0%  at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 3.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 24/135  very hard · avg 5.9%    0.8%  sharp · too hard for it · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 85/146  easy · avg 83%          0.5%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="report-2601.02346v1"></a>Falcon-H1R: Pushing t…  <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond</a>                    61.4%    57.3   2026-01-05   14% ▇▇
-                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2024</a>                       83.3%    59.4   2026-01-05   13% ▇▇
-                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2025</a>                       75.8%    58.6   2026-01-05   11% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  54.3%    58.4   2026-01-05    9% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  57.2%    56.2   2026-01-05    7% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard</a>              1.4%    51.1   2026-01-05    7% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro</a>                        69.1%    56.1   2026-01-05    7% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam</a>             5.6%    54.2   2026-01-05    6% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">MATH-500</a>                        96.8%    60.4   2026-01-05    6% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>  29.2%    47.3   2026-01-05    2% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems</a>            2.6%    46.4   2026-01-05    2% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        43.9%    60.7   2026-08-28    7% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            3.0%    49.8   2026-08-28    1% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  36.9%    55.3   2025-07-22    5% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  69.0%    50.0   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.0%    49.2   2026-04-17    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 56.7
+source                                    results  share of the score
+<a name="report-2601.02346v1"></a><a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reasoning Front…</a>       11   67% ▇▇▇▇▇▇▇▇
+<a name="card-deepseek-ai-deepseek-r1-0528-qwen3-8b"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">deepseek-ai/DeepSeek-R1-0528-Qwen3-8B m…</a>        4   20% ▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">Epoch AI</a>                                        2    7% ▇
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    4% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 57.3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt)) · deepseek-ai/DeepSeek-R1-0528-Qwen3-8B model card ([MIT](../../licenses/card-deepseek-ai-deepseek-r1-0528-qwen3-8b.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
-<sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
-
-<details><summary>Not counted (6)</summary>
+<details><summary>Not counted (2)</summary>
 
 <pre>
-source                  test                            score  why
-Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     9.3%  failed run: 9.3% on a 4-option test (chance 25%) for a model that scores 61% elsewhere; a reasoning model scoring far below guessing points to unparsed or truncated answers, not ability.
-deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">AIME 2024</a>                       86.0%  only model in this source's run
-deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">AIME 2025</a>                       76.3%  only model in this source's run
-deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">HMMT February 2025</a>              61.5%  too few models have it yet
-deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">GPQA Diamond</a>                    61.1%  only model in this source's run
-deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">LiveCodeBench v6 (Aug 2024–Ma…</a>  60.5%  too few models have it yet
+source                  test                score  why
+Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>         9.3%  failed run: 9.3% on a 4-option test (chance 25%) for a model that scores 61% elsewhere; a reasoning model scoring far below guessing points to unparsed or truncated answers, not ability.
+deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">HMMT February 2025</a>  61.5%  too few models have it yet
 </pre>
 
 </details>
@@ -59,18 +109,73 @@ api (Novita AI) · $0.068/M blended · $0.06 in / $0.09 out per 1M tokens · [no
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output. Model endpoint deepseek/deepseek-r1-0528-qwen3-8b.  Product: Serverless chat completions. API model: deepseek/deepseek-r1-0528-qwen3-8b. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m   ~5.41GB   56.7
-8-bit q8_0    ~10.33GB   56.7
+download                       size  score
+4-bit q4_k_m                ~5.41GB   57.3
+8-bit q8_0                 ~10.33GB   57.3
+4-bit Q4_K_M                   ~5GB   57.3
+8-bit Q8_0                   ~8.7GB   57.3
+4-bit mlx-4bit · mac only    ~4.6GB   57.3
+4-bit mlx-8bit · mac only    ~8.7GB   57.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run deepseek-r1:8b
-# 8-bit q8_0
-ollama run deepseek-r1:8b-0528-qwen3-q8_0
+# 4-bit Q4_K_M · ~5GB
+llama cli -hf lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.7GB
+llama cli -hf lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~5GB
+lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.7GB
+lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.6GB
+lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~8.7GB
+lms get https://huggingface.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.41GB
+ollama run deepseek-r1:8b
+# 8-bit q8_0 · ~10.33GB
+ollama run deepseek-r1:8b-0528-qwen3-q8_0
+# 4-bit Q4_K_M · ~5GB
+ollama run hf.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.7GB
+ollama run hf.co/lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.6GB
+mlx_lm.chat --model lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~8.7GB
+mlx_lm.chat --model lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/deepseek-r1-0528-qwen3-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

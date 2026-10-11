@@ -6,33 +6,87 @@
 
 Cohere · released 2024-12 · 8.03B params · cc-by-nc-4.0
 
-**score 44.3** ±1.3 · #597 of 934 · from 14 benchmark results across 4 sources
+**score 44.2** ±1.3 · #603 of 949 · from 14 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Command R7B (12-2024) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃●█▆▅▄▄▃▂▁    #276 of 334     18%      3
+coding          ▁▁▁▃●██▇▆▄▃▁    #370 of 469     35%      5
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #240 of 466*     12%      2
+</pre>
+
+<details><summary>agent tasks · #276 of 334 · 18% of its score</summary>
+
+Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>           3.6%  ●···▃·▃·▃█·▃ beats 0/7     hard · avg 19%      9.0%  sharp
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   32.1%  ▁▁▁▂█●▅▅▆▂▂▂ beats 35/77   hard · avg 32%      5.7%  typical
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           51.7%  ▁▁▁▁▁▃●█▅▄▁▁ beats 42/114  medium · avg 52%    3.4%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #370 of 469 · 35% of its score</summary>
+
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [OpenHermes 2.5 Mistral 7B](openhermes-2-5-mistral-7b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                          72.0%  ●█·██···████ beats 0/7    easy · avg 79%           10%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>              3.6%  ●···▃·▃·▃█·▃ beats 0/7    hard · avg 19%          9.0%  sharp
+<a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>    9.0%  ●▄·▄·····█▄█ beats 0/7    hard · avg 19%          6.9%  typical
+<a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>                 42.2%  ●··▄·▄·█··▄█ beats 0/7    medium · avg 49%        5.6%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    2.7%  █●··█·█····▄ beats 2/7    very hard · avg 6.7%    3.4%  sharp · too hard for it · noisy
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #240 of 466 · 12% of its score</summary>
+
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   56.4%  ▁·▁▁▂▁▄▄▆▄●▄ beats 30/38  medium · avg 49%     12%  sharp · at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">IFEval strict, mean of prompt and…</a>   77.9%  ●··········█ beats 0/1                           —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (7)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (lab)</a>    69.6%  ●▄▄··▄▄··▄·█ beats 0/7     easy · avg 81%       16%  at its level
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   50.4%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 30/81   medium · avg 58%    6.7%  blunt · at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>        30.9%  ▄··●▄···▄▄█▄ beats 1/7     medium · avg 36%    6.4%  at its level
+<a href="https://arxiv.org/pdf/2504.00698v2">MMLU-Pro (lab)</a>                       42.4%  ▁▁·▁▁▁●▂▄▅█▁ beats 33/188  medium · avg 56%    6.3%  at its level · small run
+<a href="https://arxiv.org/pdf/2504.00698v2">GPQA Diamond (simple-evals) (lab)</a>    26.3%  ●·····▄█▂▂▃▃ beats 0/22    hard · avg 36%      5.4%  sharp · too hard for it · small run
+<a href="https://arxiv.org/pdf/2504.00698v2">MMLU (simple-evals, zero-shot CoT…</a>   65.2%  ●···▂▁▅█▂▂▃▁ beats 0/22    easy · avg 78%      3.1%  at its level · small run
+<a href="https://arxiv.org/pdf/2504.00698v2">InFoBench (lab)</a>                      85.6%  ●··········█ beats 0/1                            —  not counted yet: no other model in the …
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (…</a>  69.6%    42.5   2025-04-14   15% ▇▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                     72.0%    44.3   2025-04-14   10% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>         3.6%    37.2   2025-04-14    9% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   9.0%    40.1   2025-04-14    7% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">MMLU-Pro (lab)</a>                  42.4%    42.9   2025-04-14    7% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>   30.9%    46.6   2025-04-14    6% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>            42.2%    46.2   2025-04-14    6% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">GPQA Diamond (simple-evals) (…</a>  26.3%    36.3   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>   2.7%    45.5   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">MMLU (simple-evals, zero-shot…</a>  65.2%    35.1   2025-04-14    3% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  56.4%    53.6   2026-04-06   12% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  32.1%    50.8   2025-12-16    6% ▇
-                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         51.7%    50.0   2025-06-14    4% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.4%    44.0   2026-09-19    6% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 44.3
+source                                    results  share of the score
+<a name="report-2504.00698v2"></a><a href="https://arxiv.org/pdf/2504.00698v2">Cohere (lab)</a>                                   10   72% ▇▇▇▇▇▇▇▇▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards</a>             1   12% ▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2    9% ▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    7% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 44.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Cohere ([CC BY 4.0](../../licenses/report-2504.00698v2.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -51,18 +105,73 @@ Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">InFoBench</a>              
 <sub>[context source](https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024/blob/4f3d0aa6856e322f2f4480fe65420d5d53d297b8/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m   ~5.32GB   44.3
-8-bit q8_0    ~10.14GB   44.3
+download                       size  score
+4-bit q4_k_m                ~5.32GB   44.2
+8-bit q8_0                 ~10.14GB   44.2
+4-bit Q4_K_M                 ~5.1GB   44.2
+8-bit Q8_0                   ~8.5GB   44.2
+4-bit mlx-4bit · mac only    ~4.5GB   44.2
+4-bit mlx-8bit · mac only    ~8.5GB   44.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run command-r7b:7b-12-2024-q4_K_M
-# 8-bit q8_0
-ollama run command-r7b:7b-12-2024-q8_0
+# 4-bit Q4_K_M · ~5.1GB
+llama cli -hf bartowski/c4ai-command-r7b-12-2024-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/c4ai-command-r7b-12-2024-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.5GB
+llama cli -hf bartowski/c4ai-command-r7b-12-2024-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/c4ai-command-r7b-12-2024-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~5.1GB
+lms get https://huggingface.co/bartowski/c4ai-command-r7b-12-2024-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.5GB
+lms get https://huggingface.co/bartowski/c4ai-command-r7b-12-2024-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.5GB
+lms get https://huggingface.co/mlx-community/c4ai-command-r7b-12-2024-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~8.5GB
+lms get https://huggingface.co/mlx-community/c4ai-command-r7b-12-2024-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.32GB
+ollama run command-r7b:7b-12-2024-q4_K_M
+# 8-bit q8_0 · ~10.14GB
+ollama run command-r7b:7b-12-2024-q8_0
+# 4-bit Q4_K_M · ~5.1GB
+ollama run hf.co/bartowski/c4ai-command-r7b-12-2024-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.5GB
+ollama run hf.co/bartowski/c4ai-command-r7b-12-2024-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.5GB
+mlx_lm.chat --model mlx-community/c4ai-command-r7b-12-2024-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/c4ai-command-r7b-12-2024-4bit
+# 4-bit mlx-8bit · mac only · ~8.5GB
+mlx_lm.chat --model mlx-community/c4ai-command-r7b-12-2024-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/c4ai-command-r7b-12-2024-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/command-r7b-12-2024) · [JSON](https://whatmodel.sh/api?format=json&all=1)

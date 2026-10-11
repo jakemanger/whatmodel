@@ -6,32 +6,65 @@
 
 Allen Institute for AI · released 2024-02 · 6.89B params · apache-2.0
 
-**score 28.2** ±1.2 · #862 of 934 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 28.4** ±1.2 · #875 of 949 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks OLMo 7B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others      rank  counts  tests
+coding  ●··········█   #2 of 2*    7.3%      1
+math    ●··········█   #2 of 2*    7.2%      1
+</pre>
+
+<details><summary>coding · #2 of 2 · 7.3% of its score</summary>
+
+<pre>
+test                             result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (lab)</a>   21.4%  ●▃▄▁▄▃▃█▃▁▁▄ beats 0/27   easy · avg 83%    7.3%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>math · #2 of 2 · 7.2% of its score</summary>
+
+<pre>
+test         result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>    8.5%  ●▂▂▅▅▆▅▇█▇▄▃ beats 2/146  easy · avg 68%    7.2%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (11)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>                  48.5%  ▃▃······▃▅▃● beats 7/8    easy · avg 88%          18%  sharp · at its level
+<a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>                     67.9%  ▂····▂·▂·▂●█ beats 4/8    easy · avg 89%          12%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>                     50.4%  ▄·····▄▄▄█●▄ beats 6/8    easy · avg 84%          11%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>                      76.4%  ▂·····▂▂·▂·● beats 6/8    very easy · avg 92%    7.7%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>                          73.4%  █····▃··●▃·▃ beats 4/8    easy · avg 92%         7.1%  at its level
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>                 31.7%  ▁▁▁▁●▄▅▅█▃▄▁ beats 9/129  medium · avg 73%       7.1%  sharp · small run
+<a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>                       65.4%  ▃···▃·▃··●▅█ beats 3/8    easy · avg 88%         6.9%  at its level
+<a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>                           93.8%  ▂·▂···▂·▂·●▂ beats 5/8    very easy · avg 98%    6.2%  typical
+<a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>                           78.4%  ▄····▄·▄▄▄█● beats 7/8    easy · avg 88%         3.8%  blunt · at its level
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                           28.3%  ▁▁●▁▁▂▃▅█▃▆▃ beats 4/183  medium · avg 73%       3.2%  noisy · small run
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, 1-sh…</a>   32.3%  ▃··●▂▃▂▂█▅▁▂ beats 4/27   medium · avg 57%       1.4%  blunt · at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>             48.5%    30.1   2024-06-07   20% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>                50.4%    29.4   2024-06-07   11% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>                67.9%    29.7   2024-06-07   11% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>                      8.5%    22.1   2024-06-07    8% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>  21.4%    25.6   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>            31.7%    24.6   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>                 76.4%    32.3   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>                  65.4%    25.9   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>                     73.4%    29.9   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>                      93.8%    30.1   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>                      78.4%    31.4   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                      28.3%    17.4   2024-06-07    3% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, …</a>  32.3%    29.9   2024-06-07    1% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 28.2
+source                                    results  share of the score
+<a name="paper-2402.00838v4"></a><a href="https://arxiv.org/html/2402.00838v4">OLMo: Accelerating the Science of Langu…</a>       13   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 28.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt))</sub>
 
@@ -41,14 +74,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp32  ~27.55GB   28.2
+4-bit fp32  ~27.55GB   28.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp32
+# 4-bit fp32 · ~27.55GB
 uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/OLMo-7B-hf', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/olmo-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

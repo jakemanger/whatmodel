@@ -6,23 +6,50 @@
 
 FireRedTeam (Xiaohongshu) · released 2026-03 · apache-2.0
 
-**score 58.9** ±3.8 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 58.9** ±3.7 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks FireRed-Image-Edit-1.1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>  56.2%    58.4   2026-07-11   70% ▇▇▇▇▇▇▇▇
-<a name="visual-multitextedit-ccby"></a>MultiTextEdit: Benchm…  <a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual t…</a>  64.1%    62.6   2026-05-18   24% ▇▇▇
-prior                   pull toward the middle                   49.9                 6% ▇
-                        weighted average                       = 58.9
+task                    vs the others        rank  counts  tests
+image to image / edit…  ▁▁▁▃▂▃█●▃▃▁▁   #29 of 81*     23%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #29 of 81 · 23% of its score</summary>
+
+Beats [FLUX.2 \[max\]](flux-2-max.md), [FLUX.2 \[pro\]](flux-2-pro.md), [FLUX.2 \[flex\]](flux-2-flex.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit cross-lingual text-…</a>   64.1%  ▄·▄▄▄▄··●▄·▄ beats 5/8    medium · avg 50%     23%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>   56.2%  ▂··▂█●▄▂▂·▂▂ beats 6/12   medium · avg 41%     71%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   71% ▇▇▇▇▇▇▇▇▇
+<a name="visual-multitextedit-ccby"></a><a href="https://arxiv.org/html/2605.08163v2#S5.T3">MultiTextEdit: Benchmarking Cross-Lingu…</a>        1   23% ▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 58.9
+</pre>
 
 <sub>Licences: ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MultiTextEdit: Benchmarking Cross-Lingual Degradation in Text-in-Image Editing ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

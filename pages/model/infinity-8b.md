@@ -6,22 +6,40 @@
 
 ByteDance (FoundationVision) · released 2025-02 · 8B params · mit
 
-**score 45.8** ±5.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.0** ±5.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Infinity-8B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source           test                            score  implies  date        weight
-<a name="paper-2506.10963v2-mmmg-kg"></a>MMMG: A Massive  <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generati…</a>  19.2%    45.3   2025-06-13   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior            pull toward the middle                   49.9                12% ▇
-                 weighted average                       = 45.8
+task           vs the others         rank  counts  tests
+text to image  ▁▂▇▇●▅█▇▂▃▁▁   #91 of 157*     88%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #91 of 157 · 88% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   19.2%  ▃··▃·█▃▃●··▃ beats 8/9    hard · avg 24%     88%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                      1   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            12% ▇
+weighted average                        = 46.0
+</pre>
 
 <sub>Licences: MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>
 

@@ -6,21 +6,40 @@
 
 HPC-AI Tech · released 2025-03 · 11B params · apache-2.0
 
-**score 42.5** ±4.7 · #66 of 93 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 42.4** ±4.7 · #66 of 93 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Open-Sora 2.0 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others        rank  counts  tests
+text to video  ▆▄▃▄●▅█▃▂▂▂▄   #45 of 68*     91%      2
+</pre>
+
+<details><summary>text to video · #45 of 68 · 91% of its score</summary>
+
+Trails [T2V-Turbo-v2](t2v-turbo-v2.md), [Pyramid Flow (SD3)](pyramid-flow-sd3.md) here, though they rank lower overall.
+
+<pre>
+test                                       result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  988.92 / 1608  █·●··▄·····█ beats 2/5    easy · avg 1103.17 / 16…     53%  at its level
+<a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt ver…</a>          81.5%  █···●···█··█ beats 1/3    very easy · avg 88%          38%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                    score  implies  date        weight
-<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  988.92 / 1608    43.5   2026-05-15   53% ▇▇▇▇▇▇
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>          81.5%    39.2   2025-04-21   37% ▇▇▇▇
-prior                   pull toward the middle                           49.9                10% ▇
-                        weighted average                               = 42.5
+source                                    results  share of the score
+<a name="video-videoverse"></a><a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse: Does Your T2V Generator Hav…</a>        1   53% ▇▇▇▇▇▇
+<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T6">SkyReels-V2: Infinite-length Film Gener…</a>        1   38% ▇▇▇▇▇
+prior: pull toward the middle                        9% ▇
+weighted average                                   = 42.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt)) · SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>
 
@@ -28,17 +47,21 @@ prior                   pull toward the middle                           49.9   
 
 <pre>
 version                                     needs  score
-bf16 256px text-to-image-to-video + off…  ~83.5GB   42.5
-bf16 256px direct text-to-video · nvidi…  ~54.5GB   42.5
+bf16 256px text-to-image-to-video + off…  ~83.5GB   42.4
+bf16 256px direct text-to-video · nvidi…  ~54.5GB   42.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 256px text-to-image-to-video + offload (Flux first frame) · nvidia only
+# bf16 256px text-to-image-to-video + offload (Flux first frame) · nvidia only · ~83.5GB
 git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && pip install -v . && pip install xformers==0.0.27.post2 --index-url https://download.pytorch.org/whl/cu121 && pip install flash-attn --no-build-isolation && pip install "huggingface_hub[cli]" && huggingface-cli download hpcai-tech/Open-Sora-v2 --local-dir ./ckpts && torchrun --nproc_per_node 1 --standalone scripts/diffusion/inference.py configs/diffusion/inference/t2i2v_256px.py --save-dir samples --prompt "raining, sea" --offload True
-# bf16 256px direct text-to-video · nvidia only
+# bf16 256px direct text-to-video · nvidia only · ~54.5GB
 git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && pip install -v . && pip install xformers==0.0.27.post2 --index-url https://download.pytorch.org/whl/cu121 && pip install flash-attn --no-build-isolation && pip install "huggingface_hub[cli]" && huggingface-cli download hpcai-tech/Open-Sora-v2 --local-dir ./ckpts && torchrun --nproc_per_node 1 --standalone scripts/diffusion/inference.py configs/diffusion/inference/256px.py --prompt "raining, sea"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/open-sora-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

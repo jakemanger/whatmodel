@@ -6,27 +6,49 @@
 
 DeepSeek · released 2025-01 · 7B params · deepseek
 
-**score 37.4** ±2.3 · #113 of 144 · from 6 benchmark results across 5 sources
+**score 37.6** ±2.3 · #113 of 144 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Janus-Pro-7B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       42.3%    34.9   2026-07-01   45% ▇▇▇▇▇
-<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   80.0%    46.9   2025-01-29   11% ▇
-                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 84.2%    41.5   2025-01-29    9% ▇
-<a name="paper-2506.10963v2-mmmg-kg"></a>MMMG: A Massive         <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generati…</a>  13.1%    38.4   2025-06-13   11% ▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  35.0%    31.3   2026-06-02   11% ▇
-<a name="paper-2604.25072v1-xtcbench"></a>Beyond Accuracy: Benc…  <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall…</a>  49.9%    36.7   2026-04-27   10% ▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 37.4
+task           vs the others        rank  counts  tests
+text to image  ▂▅●▃▄▄█▃▁▂▁▁   #98 of 126     98%      6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #98 of 126 · 98% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md), [SDXL-Lightning (4-step UNet)](sdxl-lightning-4-step.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>            42.3%  ●▂█▂▂▂····▂▂ beats 1/13   easy · avg 69%          45%  at its level
+<a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                        80.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 27/39  easy · avg 83%          12%  at its level · small run
+<a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   13.1%  ▃··▃·●▃▃▅··▃ beats 4/9    hard · avg 24%          11%  typical
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   35.0%  ▄·▆●▆█▄▆▂▄·▄ beats 5/22   medium · avg 60%        10%  at its level
+<a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall Gen…</a>   49.9%  ▄●·▄·······▄ beats 2/4    easy · avg 70%          10%  at its level
+<a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                      84.2%  ▄·▂·●▆█▄▂▄▂▂ beats 3/17   very easy · avg 89%    9.4%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   45% ▇▇▇▇▇
+<a name="report-2501.17811v1"></a><a href="https://arxiv.org/html/2501.17811v1">DeepSeek-AI (lab)</a>                               2   21% ▇▇▇
+<a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                                 1   11% ▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   10% ▇
+<a name="paper-2604.25072v1-xtcbench"></a><a href="https://arxiv.org/html/2604.25072v1">Beyond Accuracy: Benchmarking Cross-Tas…</a>        1   10% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 37.6
+</pre>
 
 <sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · DeepSeek-AI ([CC BY 4.0](../../licenses/report-2501.17811v1.txt)) · MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -38,14 +60,18 @@ api (DeepInfra) · $0.0020/image · [deepinfra.com](https://deepinfra.com/deepse
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~18.3GB   37.4
+bf16 · nvidia only  ~18.3GB   37.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~18.3GB
 git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && sed -i.bak 's#deepseek-ai/Janus-1.3B#deepseek-ai/Janus-Pro-7B#; s#"role": "User"#"role": "<|User|>"#; s#"role": "Assistant"#"role": "<|Assistant|>"#' generation_inference.py && python generation_inference.py
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/janus-pro-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

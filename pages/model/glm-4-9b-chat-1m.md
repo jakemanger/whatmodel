@@ -6,22 +6,38 @@
 
 Zhipu AI (THUDM) · released 2024-06 · 9.48B params · other (glm-4)
 
-**score 53.6** ±4.8 · #347 of 934 · from 3 benchmark results across 2 sources
+**score 53.4** ±4.7 · #359 of 949 · from 3 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks GLM-4 9B Chat 1M among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.1%  ▃▁▁▁▁▁▁▁▂█●▁ beats 212/276  medium · avg 73%     40%  at its level · noisy
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            86.7%  ▁▁·▁·▂▃▄●▂·▁ beats 19/22    easy · avg 83%       36%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           83.1%  ▄··▂▄▂▆██▄●▂ beats 19/21    easy · avg 68%       15%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                       86.7%    54.7   2025-10-09   34% ▇▇▇▇
-                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                      83.1%    60.7   2025-10-09   14% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  74.1%    51.1   2024-06-05   41% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                10% ▇
-                        weighted average                       = 53.6
+source                                    results  share of the score
+<a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2   50% ▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1   40% ▇▇▇▇▇
+prior: pull toward the middle                       10% ▇
+weighted average                                   = 53.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -30,15 +46,54 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/zai-org/glm-4-9b-chat-1m/blob/f8579ac096986e44ba24a5060d2fb79bedb56ef3/config.json): Zhipu AI (THUDM) official configuration for glm-4-9b-chat-1m (pinned commit f8579ac): seq\_length 1048576. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-16-bit bf16  ~18.97GB   53.6
+download          size  score
+16-bit bf16   ~18.97GB   53.4
+4-bit Q4_K_M    ~6.3GB   53.4
+8-bit Q8_0     ~10.1GB   53.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='zai-org/glm-4-9b-chat-1m', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~6.3GB
+llama cli -hf bartowski/glm-4-9b-chat-1m-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/glm-4-9b-chat-1m-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~10.1GB
+llama cli -hf bartowski/glm-4-9b-chat-1m-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/glm-4-9b-chat-1m-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~6.3GB
+lms get https://huggingface.co/bartowski/glm-4-9b-chat-1m-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~10.1GB
+lms get https://huggingface.co/bartowski/glm-4-9b-chat-1m-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~6.3GB
+ollama run hf.co/bartowski/glm-4-9b-chat-1m-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~10.1GB
+ollama run hf.co/bartowski/glm-4-9b-chat-1m-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~18.97GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='zai-org/glm-4-9b-chat-1m', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/glm-4-9b-chat-1m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

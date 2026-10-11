@@ -6,33 +6,83 @@
 
 Upstage · released 2025-12 · 102.6B params (12B active) · upstage-solar-license
 
-**score 59.8** ±1.1 · #216 of 934 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 59.7** ±1.1 · #223 of 949 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Solar Open 100B (102B-A12B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ▁▁▃▆█●▅▄▄▃▂▁    #170 of 334     20%      6
+coding       ▁▁▁▃▆●█▇▆▄▃▁   #317 of 469*    9.4%      2
+math         ▁▂▃▅▆▅●█▄▁▁▁   #178 of 400*     20%      2
+</pre>
+
+<details><summary>agent tasks · #170 of 334 · 20% of its score</summary>
+
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
+
+<pre>
+test                          result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom (lab)</a>         55.6%  ▁·▅█▆●▂▃▃▂▃▁ beats 46/89  hard · avg 15%          5.4%  sharp · at its level · noisy · small run
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>   34.4%  ▄▄●·······█▄ beats 2/5    hard · avg 19%          4.0%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>       2.3%  ●········██▄ beats 0/5    very hard · avg 4.5%    3.7%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>      2.4%  ▄●····▄···█▄ beats 1/5    very hard · avg 1.8%    3.4%  too hard for it
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>       15.4%  ●··········█ beats 1/5    hard · avg 16%          2.9%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>          7.4%  █·●▄······▄▄ beats 2/5    very hard · avg 5.1%    1.1%  blunt
+</pre>
+
+</details>
+
+<details><summary>coding · #317 of 469 · 9.4% of its score</summary>
+
+Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   56.5%  ●······▄▄▄·█ beats 0/5    medium · avg 50%    6.4%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>             15.4%  ●··········█ beats 1/5    hard · avg 16%      2.9%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #178 of 400 · 20% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [Olmo 3 7B Think DPO](olmo-3-7b-think-dpo.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>            87.7%  ●▄··▄····█·▄ beats 0/5    medium · avg 64%     15%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>   68.9%  █●▄········█ beats 2/5    hard · avg 31%      5.5%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (lab)</a>                   66.2%  ●···██·█··██ beats 0/5    hard · avg 42%           27%  sharp · at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                       80.4%  ▄·●▄····▄··█ beats 1/5    medium · avg 55%        9.5%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>           11.5%  ●▄······▄·▄▄ beats 1/5    very hard · avg 4.7%    5.8%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)…</a>   57.7%  ●···▄▄··▄··█ beats 0/5    medium · avg 43%        5.7%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (lab)</a>                 40.5%  ●··▄·▄·····█ beats 1/5    hard · avg 25%          4.0%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (lab)</a>              66.2%    60.4   2026-07-24   27% ▇▇▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>                 87.7%    61.4   2026-07-24   15% ▇▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                  80.4%    64.6   2026-07-24    9% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>  57.7%    58.8   2026-07-24    7% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>  56.5%    50.1   2026-07-24    6% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>        68.9%    63.5   2026-07-24    6% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>      11.5%    60.0   2026-07-24    5% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (lab)</a>            40.5%    60.7   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>    34.4%    59.2   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>        2.3%    50.9   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>       2.4%    54.1   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>        15.4%    50.4   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>           7.4%    59.9   2026-07-24    2% ▇
-<a name="report-2601.07022v1"></a>Solar Open Technical …  <a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom (lab)</a>          55.6%    65.4   2026-01-11    5% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 59.8
+source                               results  share of the score
+<a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report (lab)</a>       13   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="report-2601.07022v1"></a><a href="https://arxiv.org/html/2601.07022v1">Solar Open Technical Report (lab)</a>          1    5% ▇
+prior: pull toward the middle                   1% ▇
+weighted average                              = 59.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Solar Open Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -42,14 +92,80 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~205.31GB   59.8
+16-bit bf16 · nvidia only  ~205.31GB   59.7
+4-bit q4_k_m                 ~62.3GB   59.7
+8-bit q8_0                  ~109.2GB   59.7
+2-bit q2_k                   ~37.7GB   59.7
+4-bit mlx-4bit · mac only    ~57.8GB   59.7
+4-bit mlx-8bit · mac only   ~109.1GB   59.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-vllm serve upstage/Solar-Open-100B --trust-remote-code --enable-auto-tool-choice --tool-call-parser solar_open --reasoning-parser solar_open --logits-processors vllm.model_executor.models.parallel_tool_call_logits_processor:ParallelToolCallLogitsProcessor --logits-processors vllm.model_executor.models.solar_open_logits_processor:SolarOpenTemplateLogitsProcessor --tensor-parallel-size 8
+# 4-bit q4_k_m · ~62.3GB
+llama cli -hf AaryanK/Solar-Open-100B-GGUF:q4_k_m
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf AaryanK/Solar-Open-100B-GGUF:q4_k_m
+# 8-bit q8_0 · ~109.2GB
+llama cli -hf AaryanK/Solar-Open-100B-GGUF:q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf AaryanK/Solar-Open-100B-GGUF:q8_0
+# 2-bit q2_k · ~37.7GB
+llama cli -hf AaryanK/Solar-Open-100B-GGUF:q2_k
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf AaryanK/Solar-Open-100B-GGUF:q2_k
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~62.3GB
+lms get https://huggingface.co/AaryanK/Solar-Open-100B-GGUF@q4_k_m -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~109.2GB
+lms get https://huggingface.co/AaryanK/Solar-Open-100B-GGUF@q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit q2_k · ~37.7GB
+lms get https://huggingface.co/AaryanK/Solar-Open-100B-GGUF@q2_k -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~57.8GB
+lms get https://huggingface.co/mlx-community/Solar-Open-100B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~109.1GB
+lms get https://huggingface.co/mlx-community/Solar-Open-100B-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 2-bit q2_k · ~37.7GB
+ollama run hf.co/AaryanK/Solar-Open-100B-GGUF:q2_k
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~57.8GB
+mlx_lm.chat --model mlx-community/Solar-Open-100B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Solar-Open-100B-4bit
+# 4-bit mlx-8bit · mac only · ~109.1GB
+mlx_lm.chat --model mlx-community/Solar-Open-100B-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Solar-Open-100B-8bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~205.31GB
+vllm serve upstage/Solar-Open-100B --trust-remote-code --enable-auto-tool-choice --tool-call-parser solar_open --reasoning-parser solar_open --logits-processors vllm.model_executor.models.parallel_tool_call_logits_processor:ParallelToolCallLogitsProcessor --logits-processors vllm.model_executor.models.solar_open_logits_processor:SolarOpenTemplateLogitsProcessor --tensor-parallel-size 8
+```
 
 [interactive version](https://whatmodel.sh/model/solar-open-100b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

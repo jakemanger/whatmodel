@@ -6,65 +6,176 @@
 
 Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
-**score 43.3** ±1.0 · #630 of 934 · from 25 benchmark results across 6 sources
+**score 42.7** ±1.0 · #650 of 949 · from 25 benchmark results across 6 sources
+
+## What it's good at
+
+<sub>● marks SmolLM3 3B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃▆█▆▅●▄▃▂▁    #98 of 334*    1.8%      1
+coding          ▁▁▁▃●██▇▆▄▃▁   #383 of 469*    2.6%      1
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #314 of 466*    7.6%      2
+math            ▁▂▃▅●▅▄█▄▁▁▁    #255 of 400     13%      3
+</pre>
+
+<details><summary>agent tasks · #98 of 334 · 1.8% of its score</summary>
+
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">BFCL (version not stated) (lab)</a>   88.8%  ▄▆▄▂·█▆·●··▂ beats 16/17  very easy · avg 86%    1.8%  blunt · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #383 of 469 · 2.6% of its score</summary>
+
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
+
+<pre>
+test                    result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">LiveCodeBench v4 (lab)</a>   30.0%  ●·█········█ beats 0/2    medium · avg 47%    2.6%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #314 of 466 · 7.6% of its score</summary>
+
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures</a>         72.4%  ●··▄▄·▄····▄ beats 1/5     easy · avg 85%    5.3%  typical
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">IFEval (aggregation unspecified) …</a>   71.2%  ▁▁▃▁▂●▄▆█▃▂▁ beats 33/141  easy · avg 80%    2.3%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · #255 of 400 · 13% of its score</summary>
+
+Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md) here, though they rank lower overall.
+
+<pre>
+test                            result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">AIME 2025 (lab)</a>                  36.7%  ▁·▁▁▁▂●▆█▇▅▁ beats 23/133  medium · avg 53%    7.8%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2511.23404v1">MATH-500</a>                         73.6%  ▃····▃·●···▃ beats 3/5     easy · avg 81%      4.7%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy</a>   81.1%  █·█··●██···█ beats 2/5     easy · avg 84%      0.5%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (16)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.3548  ▁●▃▃▇▄█▃▅▁▁▁ beats 2/30     avg 0.423            14%  sharp
+<a href="https://arxiv.org/html/2511.23404v1">GPQA Diamond</a>                         26.3%  ●█····███··█ beats 0/5      medium · avg 53%     13%  sharp · small run · several runs
+<a href="https://arxiv.org/html/2511.23404v1">MMLU</a>                                 59.8%  ▄●···█·····▄ beats 1/5      easy · avg 74%      7.2%  at its level
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   35.5%  ▂●▅▂▆▃█▅█▅▃▆ beats 2/34     medium · avg 42%    6.1%  blunt · at its level
+<a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro</a>                             23.9%  █●█···██···█ beats 1/5      medium · avg 45%    4.8%  typical
+<a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecified)</a>    17.9%  ●··███··█··█ beats 0/5      hard · avg 33%      4.3%  typical
+<a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average</a>          58.9%  ▄··●▄··▄···▄ beats 2/5      easy · avg 71%      4.3%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid)</a>       50.0%  ▄·●····█···▄ beats 1/5      medium · avg 60%    3.7%  at its level
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   16.2%  ▁▁·▁▂▂●█▄▅▄▄ beats 14/66    hard · avg 31%      2.9%  typical
+<a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Liquid)</a>   68.7%  ▄·●·█···▄··▄ beats 1/5      easy · avg 82%      2.9%  at its level
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">Global-MMLU (lab)</a>                    64.1%  ▃▅●·▃···▅·▅█ beats 3/11     medium · avg 70%    2.7%  at its level · small run
+<a href="https://arxiv.org/html/2511.23404v1">GSM-Plus</a>                             58.9%  █·····█●█·██ beats 2/5      easy · avg 83%      2.1%  blunt · small run · several runs
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.5%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 135/276  medium · avg 73%    2.0%  at its level · noisy
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">MixEval-Hard (lab)</a>                   30.8%  ●····█·····█ beats 0/2      medium · avg 40%    1.9%  at its level · small run
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   59.0%  ▃·▁▁▂▁▂●█▇▄▁ beats 32/100   medium · avg 68%    1.5%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   75.7%  ▁▁▁▁▁▁▁▂●█▄▃ beats 51/146   easy · avg 83%      1.3%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="report-2511.23404v1"></a>LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">MMLU</a>                             59.8%    42.7   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro</a>                         23.9%    36.3   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures</a>     72.4%    40.3   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">GPQA Diamond</a>                     26.3%    37.3   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">MATH-500</a>                         73.6%    45.7   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecif…</a>   17.9%    39.8   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average</a>      58.9%    42.7   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid)</a>   50.0%    42.3   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Li…</a>   68.7%    39.6   2026-09-25    2% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">GSM-Plus</a>                         58.9%    27.9   2026-09-25    1% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy</a>   81.1%    47.9   2026-09-25    0% ▇
-<a name="card2-huggingfacetb-smollm3-3b"></a>HuggingFaceTB/SmolLM3…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">AIME 2025 (lab)</a>                  36.7%    46.6   2025-09-10    8% ▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">GPQA Diamond (lab)</a>               41.7%    46.9   2025-09-10    8% ▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">Global-MMLU (lab)</a>                64.1%    47.5   2025-09-10    3% ▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">LiveCodeBench v4 (lab)</a>           30.0%    40.6   2025-09-10    3% ▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">IFEval (aggregation unspecifi…</a>   71.2%    42.5   2025-09-10    2% ▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">BFCL (version not stated) (la…</a>   88.8%    52.1   2025-09-10    2% ▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">MixEval-Hard (lab)</a>               30.8%    44.9   2025-09-10    2% ▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">GSM-Plus (lab)</a>                   83.4%    51.6   2025-09-10    1% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.3548    43.6   2026-05-02   15% ▇▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   35.5%    44.5   2026-05-02    7% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   59.0%    45.9   2026-04-17    2% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   75.7%    44.8   2026-04-17    1% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   16.2%    41.4   2025-09-30    3% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   67.5%    46.2   2025-07-08    2% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 43.3
+source                                    results  share of the score
+<a name="report-2511.23404v1"></a><a href="https://arxiv.org/html/2511.23404v1">LFM2 Technical Report</a>                          11   43% ▇▇▇▇▇
+<a name="card2-huggingfacetb-smollm3-3b"></a><a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">HuggingFaceTB/SmolLM3-3B model card (la…</a>        8   29% ▇▇▇
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   20% ▇▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1    3% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    3% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 42.7
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: LFM2 Technical Report ([CC BY 4.0](../../licenses/cards-gap-NOTICE.txt)) · HuggingFaceTB/SmolLM3-3B model card ([Apache-2.0](../../licenses/HuggingFaceTB--SmolLM3-3B.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: LFM2 Technical Report ([CC BY 4.0](../../licenses/cards-gap-NOTICE.txt)) · HuggingFaceTB/SmolLM3-3B model card ([Apache-2.0](../../licenses/HuggingFaceTB--SmolLM3-3B.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md): Default configured context. Longer YaRN extrapolation settings are excluded from this baseline.</sub>
 
 <pre>
-download              size  score
-4-bit gguf-q4_k_m  ~2.35GB   43.3
-8-bit gguf-q8_0     ~4.2GB   43.3
+download                      size  score
+4-bit gguf-q4_k_m          ~2.35GB   42.7
+8-bit gguf-q8_0             ~4.2GB   42.7
+4-bit mlx-4bit · mac only   ~1.7GB   42.7
+4-bit mlx-8bit · mac only   ~3.3GB   42.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit gguf-q4_k_m
-llama-server -hf ggml-org/SmolLM3-3B-GGUF:Q4_K_M
-# 8-bit gguf-q8_0
-llama-server -hf ggml-org/SmolLM3-3B-GGUF:Q8_0
+# 4-bit gguf-q4_k_m · ~2.35GB
+llama cli -hf ggml-org/SmolLM3-3B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ggml-org/SmolLM3-3B-GGUF:Q4_K_M
+# 8-bit gguf-q8_0 · ~4.2GB
+llama cli -hf ggml-org/SmolLM3-3B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ggml-org/SmolLM3-3B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit gguf-q4_k_m · ~2.35GB
+lms get https://huggingface.co/ggml-org/SmolLM3-3B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit gguf-q8_0 · ~4.2GB
+lms get https://huggingface.co/ggml-org/SmolLM3-3B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~1.7GB
+lms get https://huggingface.co/lmstudio-community/SmolLM3-3B-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~3.3GB
+lms get https://huggingface.co/lmstudio-community/SmolLM3-3B-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit gguf-q4_k_m · ~2.35GB
+ollama run hf.co/ggml-org/SmolLM3-3B-GGUF:Q4_K_M
+# 8-bit gguf-q8_0 · ~4.2GB
+ollama run hf.co/ggml-org/SmolLM3-3B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~1.7GB
+mlx_lm.chat --model lmstudio-community/SmolLM3-3B-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/SmolLM3-3B-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~3.3GB
+mlx_lm.chat --model lmstudio-community/SmolLM3-3B-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/SmolLM3-3B-MLX-8bit
+```
 
 ## Quantization evidence
 

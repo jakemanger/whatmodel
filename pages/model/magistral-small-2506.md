@@ -6,27 +6,77 @@
 
 Mistral · released 2025-06 · 23.57B params · apache-2.0
 
-**score 55.4** ±1.2 · #299 of 934 · from 8 benchmark results across 4 sources
+**score 55.2** ±1.2 · #309 of 949 · from 8 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Magistral Small 1.0 (2506) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ▁▁●▆█▆▅▄▄▃▂▁   #307 of 334*    2.3%      1
+coding       ●█········██       #4 of 4*    6.7%      1
+math         ▁▂▃▅▆●▄█▄▁▁▁    #200 of 400     45%      3
+</pre>
+
+<details><summary>agent tasks · #307 of 334 · 2.3% of its score</summary>
+
+Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 (act…</a>   16.0%  ●▃·▃▃▅▅█▃█▅▅ beats 1/19   hard · avg 27%    2.3%  at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #4 of 4 · 6.7% of its score</summary>
+
+Trails [Magistral Small 1.1 (2507)](magistral-small-2507.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   55.8%  ●█▄······▄·▄ beats 0/5    medium · avg 50%    6.7%  at its level
+</pre>
+
+</details>
+
+<details><summary>math · #200 of 400 · 45% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [OpenThinker2 7B](openthinker2-7b.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run   difficulty            counts  why
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            62.8%  ●▃·····▃···▃ beats 2/5     medium · avg 49%         20%  sharp · at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>            70.7%  ●▃·····▃···▃ beats 1/5     medium · avg 60%         16%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   30.0%  ▃▃▄▃▃●▇▇█▃▂▅ beats 64/193  very hard · avg 8.5%    8.7%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty      counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         56.1%  ▁▁▁▁▂▄▆●▅▇█▅ beats 80/208  hard · avg 40%     39%  sharp · at its level · several runs
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   37.6%  ▁▁▁▁▁▂▂▃▄●█▃ beats 58/97   hard · avg 32%    6.5%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                 62.8%    54.6   2026-02-23   21% ▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>              68.2%    56.3   2026-02-23   18% ▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>                 70.7%    53.7   2026-02-23   16% ▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>  55.8%    53.1   2026-02-23    6% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    56.1%    58.0   2026-08-06   20% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        30.0%    57.6   2026-08-06    8% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  37.6%    56.0   2025-07-22    7% ▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>  16.0%    42.7   2025-11-18    2% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 55.4
+source                                    results  share of the score
+<a name="card2-mistralai-magistral-small-2509"></a><a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">mistralai/Magistral-Small-2509 model ca…</a>        4   62% ▇▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        2   29% ▇▇▇
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    7% ▇
+<a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard</a>                       1    2% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 55.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>
 
@@ -35,18 +85,65 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/mistralai/Magistral-Small-2506/blob/ad2fce5b4113139e1877dcadfd826c9262ad8e8c/README.md): Mistral official model card: "Context Window: A 128k context window, but performance might degrade past 40k. Hence we recommend setting the maximum model length to 40k." Stored as the stated rounded 128k; config.json sets 40,960. Observed 2026-10-07.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~14.64GB   55.4
-8-bit q8_0    ~28.78GB   55.4
+download                       size  score
+4-bit q4_k_m               ~14.64GB   55.2
+8-bit q8_0                 ~28.78GB   55.2
+4-bit Q4_K_M                ~14.3GB   55.2
+8-bit Q8_0                  ~25.1GB   55.2
+4-bit mlx-4bit · mac only   ~13.3GB   55.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run magistral:24b-small-2506-q4_K_M
-# 8-bit q8_0
-ollama run magistral:24b-small-2506-q8_0
+# 4-bit Q4_K_M · ~14.3GB
+llama cli -hf bartowski/mistralai_Magistral-Small-2506-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/mistralai_Magistral-Small-2506-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~25.1GB
+llama cli -hf bartowski/mistralai_Magistral-Small-2506-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/mistralai_Magistral-Small-2506-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~14.3GB
+lms get https://huggingface.co/bartowski/mistralai_Magistral-Small-2506-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~25.1GB
+lms get https://huggingface.co/bartowski/mistralai_Magistral-Small-2506-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~13.3GB
+lms get https://huggingface.co/lmstudio-community/Magistral-Small-2506-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~14.64GB
+ollama run magistral:24b-small-2506-q4_K_M
+# 8-bit q8_0 · ~28.78GB
+ollama run magistral:24b-small-2506-q8_0
+# 4-bit Q4_K_M · ~14.3GB
+ollama run hf.co/bartowski/mistralai_Magistral-Small-2506-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~25.1GB
+ollama run hf.co/bartowski/mistralai_Magistral-Small-2506-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~13.3GB
+mlx_lm.chat --model lmstudio-community/Magistral-Small-2506-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Magistral-Small-2506-MLX-4bit
+```
 
 [interactive version](https://whatmodel.sh/model/magistral-small-2506) · [JSON](https://whatmodel.sh/api?format=json&all=1)

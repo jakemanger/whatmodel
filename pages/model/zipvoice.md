@@ -6,27 +6,54 @@
 
 k2-fsa (Xiaomi) · released 2025-06 · 0.123B params · apache-2.0
 
-**score 62.0** ±3.3 · #34 of 117 · from 6 benchmark results across 2 sources
+**score 61.9** ±3.4 · #34 of 118 · from 6 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks ZipVoice among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-omnivoice-report-ccby"></a>OmniVoice: Towards Om…  <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · speaker si…</a>  69.7%    62.1   2026-04-01   32% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · speaker si…</a>  75.1%    61.3   2026-04-01   27% ▇▇▇
-                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · Whisper la…</a>   1.7%    66.9   2026-04-01   13% ▇▇
-                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · Paraformer…</a>   1.4%    59.8   2026-04-01    8% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  58.0%    63.3   2026-05-24   15% ▇▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>   5.0%   168.1   2026-05-24    0% ▇
-prior                   pull toward the middle                   49.7                 4% ▇
-                        weighted average                       = 62.0
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁▇●▃▃   #18 of 37     80%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #18 of 37 · 80% of its score</summary>
+
+Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [Fun-CosyVoice3-0.5B-2512](fun-cosyvoice3-0-5b-2512.md), [MOSS-TTS v1.5 (8B)](moss-tts-v1-5.md) here, though they rank higher overall. Trails [Qwen3-TTS 12Hz 0.6B Base](qwen3-tts-12hz-0-6b-base.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · speaker simila…</a>   69.7%  ▁·▂▂▂●▆▃▅··▂ beats 12/30  medium · avg 53%     32%  at its level
+<a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · speaker simila…</a>   75.1%  ▁·▂··▂·●▄·▃▄ beats 6/25   medium · avg 62%     27%  typical
+<a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · Whisper large-…</a>    1.7%  ▁···▂▂▂▂█●▄▂ beats 22/35  avg 3.6%             12%  blunt
+<a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · Paraformer CER</a>     1.4%  ▁·▂▁▁▁▂●▅█·▂ beats 9/30   avg 2.1%            8.1%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>   58.0%  ▃·····▂▂▂▃█● beats 12/15  medium · avg 46%     16%  blunt · at its level
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>    5.0%  ▂▂▂··▂·▃▃▃●▂ beats 12/15  avg 8.6%            0.2%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-omnivoice-report-ccby"></a><a href="https://arxiv.org/html/2604.00688v3">OmniVoice: Towards Omnilingual Zero-Sho…</a>        4   80% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2   16% ▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 61.9
+</pre>
 
 <sub>Licences: OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>
 
@@ -34,20 +61,24 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                      needs  score
-fp32 (ZipVoice repo)       ~0.55GB   62.0
-onnx-fp32 (ZipVoice repo)  ~0.55GB   62.0
-onnx-int8 (ZipVoice repo)  ~0.18GB   62.0
+fp32 (ZipVoice repo)       ~0.55GB   61.9
+onnx-fp32 (ZipVoice repo)  ~0.55GB   61.9
+onnx-int8 (ZipVoice repo)  ~0.18GB   61.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (ZipVoice repo)
+# fp32 (ZipVoice repo) · ~0.55GB
 git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && python3 -m zipvoice.bin.infer_zipvoice --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav
-# onnx-fp32 (ZipVoice repo)
+# onnx-fp32 (ZipVoice repo) · ~0.55GB
 git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && pip install onnxruntime && python3 -m zipvoice.bin.infer_zipvoice_onnx --onnx-int8 False --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav
-# onnx-int8 (ZipVoice repo)
+# onnx-int8 (ZipVoice repo) · ~0.18GB
 git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && pip install onnxruntime && python3 -m zipvoice.bin.infer_zipvoice_onnx --onnx-int8 True --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/zipvoice) · [JSON](https://whatmodel.sh/api?format=json&all=1)

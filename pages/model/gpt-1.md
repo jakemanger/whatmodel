@@ -6,20 +6,36 @@
 
 OpenAI · released 2018-06 · 0.117B params · mit
 
-**score 2.4** ±4.7 · #928 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 2.7** ±4.7 · #943 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks GPT-1 (openai-gpt) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zero-sh…</a>   26.1%  █···●█·█···█ beats 1/4    easy · avg 79%       90%  too hard for it
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>    2.0%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 73%       —  failed run: Already fixed by chance 0.3…
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="acl-2021-findings-acl-404-prost"></a>PROST   <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zer…</a>  26.1%    -2.8   2021-08-01   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior   pull toward the middle                   50.0                10% ▇
-        weighted average                        = 2.4
+source                         results  share of the score
+<a name="acl-2021-findings-acl-404-prost"></a><a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST</a>                                1   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            10% ▇
+weighted average                        = 2.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt))</sub>
 
@@ -38,14 +54,18 @@ Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open
 
 <pre>
 download       size  score
-4-bit fp32  ~0.48GB    2.4
+4-bit fp32  ~0.48GB    2.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp32
+# 4-bit fp32 · ~0.48GB
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/openai-gpt')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/gpt-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

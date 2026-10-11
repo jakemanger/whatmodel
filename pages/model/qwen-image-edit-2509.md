@@ -6,29 +6,59 @@
 
 Alibaba · released 2025-09 · 20.43B params · apache-2.0
 
-**score 58.5** ±2.7 · #50 of 144 · from 6 benchmark results across 5 sources
+**score 58.6** ±2.7 · #51 of 144 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Qwen-Image-Edit-2509 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="report-2512.07584v1"></a>Meituan LongCat         <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, …</a>   73.7%    60.7   2025-12-08   32% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, …</a>   74.8%    57.6   2025-12-08   20% ▇▇
-<a name="visual-hp-edit"></a>HP-Edit: A Human-Pref…  <a href="https://arxiv.org/html/2604.19406v1#S5.T1">RealPref-Bench image editing …</a>   86.7%    60.5   2026-04-21   16% ▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1014.0    57.6   2026-03-30   16% ▇▇
-<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   32.2%    51.2   2026-03-26    7% ▇
-<a name="report-2506.18871v4"></a>BAAI                    <a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 …</a>   76.9%    60.5   2026-04-21    6% ▇
-prior                   pull toward the middle                    49.9                 3% ▇
-                        weighted average                        = 58.5
+task                    vs the others       rank  counts  tests
+image to image / edit…  ▁▁·▃▂▃●▃▃▄▁▁   #31 of 62     74%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #31 of 62 · 74% of its score</summary>
 
-<sub>Licences: Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt)) · HP-Edit: A Human-Preference Post-Training Framework for Image Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BAAI ([CC BY 4.0](../../licenses/report-2506.18871v4.txt))</sub>
+Beats [FLUX.2 \[flex\]](flux-2-flex.md), [GPT Image 1](gpt-image-1.md), [Imagen 4](imagen-4.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, GPT-…</a>   73.7%  ▃·········●▂ beats 3/7    medium · avg 42%     32%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, GPT-…</a>   74.8%  ▄·▄···▄●█··▄ beats 3/7    easy · avg 66%       20%  typical
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1014.0  ▃▂····▂●▂▃▂▃ beats 8/14   avg 956              17%  blunt
+<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   76.9%  ▃▃▃··▃·····● beats 4/6    medium · avg 65%    5.4%  at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2604.19406v1#S5.T1">RealPref-Bench image editing (hum…</a>   86.7%  █▄▄····▄···● beats 5/5    easy · avg 78%     16%  typical
+<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   32.2%  ▂···▂·▂█●▅·▂ beats 9/15   hard · avg 31%    6.8%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1">Meituan LongCat</a>                                 2   52% ▇▇▇▇▇▇
+<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1   17% ▇▇
+<a name="visual-hp-edit"></a><a href="https://arxiv.org/html/2604.19406v1#S5.T1">HP-Edit: A Human-Preference Post-Traini…</a>        1   16% ▇▇
+<a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    7% ▇
+<a name="report-2506.18871v4"></a><a href="https://arxiv.org/html/2506.18871v4">BAAI</a>                                            1    5% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 58.6
+</pre>
+
+<sub>Licences: Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · HP-Edit: A Human-Preference Post-Training Framework for Image Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BAAI ([CC BY 4.0](../../licenses/report-2506.18871v4.txt))</sub>
 
 ## How to run it
 
@@ -38,14 +68,18 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/qwen-image
 
 <pre>
 version                                   needs  score
-gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)  ~26.2GB   58.5
+gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)  ~26.2GB   58.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)
+# gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp) · ~26.2GB
 sd-cli --diffusion-model models/Qwen-Image-Edit-2509-Q4_K_S.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf --llm_vision models/Qwen2.5-VL-7B-Instruct.mmproj-Q8_0.gguf --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu --diffusion-fa --flow-shift 3 -r input.png -p "change 'flux.cpp' to 'Qwen Image Edit 2509'"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/qwen-image-edit-2509) · [JSON](https://whatmodel.sh/api?format=json&all=1)

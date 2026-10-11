@@ -14,7 +14,12 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
+# ternary-packed LM (kittenml 0.9.3) · ~2.07GB
 pip install kittenml && python -c "from kittenml import KittenTTS; import soundfile as sf; m = KittenTTS('KittenML/kitten-tts-2'); audio = m.generate('One day, a little girl named Lily found a needle in her room.', voice='Bruno'); sf.write('output.wav', audio, m.sample_rate)"
 ```
 

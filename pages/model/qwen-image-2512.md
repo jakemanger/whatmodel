@@ -6,31 +6,63 @@
 
 Alibaba · released 2025-12 · 20B params · apache-2.0
 
-**score 55.5** ±1.3 · #62 of 144 · from 10 benchmark results across 7 sources
+**score 55.5** ±1.3 · #63 of 144 · from 10 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Qwen-Image-2512 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                              score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>    35.3%    53.6   2026-05-14   36% ▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            1125.4    60.3   2026-09-24   24% ▇▇▇
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>     5.8%    48.9   2026-09-28   20% ▇▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>    68.0%    64.8   2026-10-07    6% ▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>    84.3%    57.9   2026-06-23    4% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 repor…</a>  11.0300    47.4   2026-06-23    1% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese char…</a>    71.3%    69.2   2026-06-23    0% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-…</a>    90.9%   225.3   2026-06-23    0% ▇
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>    53.2%    58.4   2026-06-09    5% ▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>    52.1%    59.5   2026-05-27    3% ▇
-prior                   pull toward the middle                     49.9                 1% ▇
-                        weighted average                         = 55.5
+task           vs the others        rank  counts  tests
+text to image  ▂▅▅▃▄▄●▃▁▂▁▁   #51 of 126     76%      8
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #51 of 126 · 76% of its score</summary>
+
+Beats [Wan 2.7 Image](wan-2-7-image.md), [HunyuanImage 2.1](hunyuanimage-2-1.md), [Recraft V4.1 Flash](recraft-v4-1-flash.md) here, though they rank higher overall.
+
+<pre>
+test                                 result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>    35.3%  ▄█▂▂●▂▆▄·▂·▂ beats 8/16   hard · avg 26%       36%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1125.4  ▂▂▃▄▇●▄▂▄▂·▂ beats 35/75  avg 1027             24%  typical
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    68.0%  ▁▂▂█▃●▂▃·▁·▁ beats 15/22  hard · avg 28%      6.4%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overall)</a>      53.2%  ▄·····▄●▄·▄█ beats 2/7    medium · avg 41%    4.8%  at its level
+<a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1) (…</a>    52.1%  █▅●·▅▅█·█··▃ beats 6/17   medium · avg 46%    2.6%  blunt · at its level
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.0300  ●···█··▄·▄·▄ beats 0/5    avg 11.076          1.5%  blunt
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese characte…</a>    71.3%  ▄·······▄●▄▄ beats 2/5    medium · avg 60%    0.4%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-prom…</a>    90.9%  █······████● beats 5/5    easy · avg 85%      0.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>    5.8%  ▃·█▅●·▅▃···▃ beats 6/10   very hard · avg 7.6%     20%  sharp
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI prompts…</a>   84.3%  ▄···●··▄···█ beats 2/5    easy · avg 78%          3.5%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   36% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   24% ▇▇▇
+<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   20% ▇▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1    6% ▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T11">Cosmos 3: Omnimodal World Models for Ph…</a>        4    5% ▇
+<a name="visual-imagetime"></a><a href="https://arxiv.org/html/2606.10620v1#S5.T5">Can Image Models Imagine Time? ImageTim…</a>        1    5% ▇
+<a name="visual-qwenbench"></a><a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench: From Generation to Cr…</a>        1    3% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 55.5
+</pre>
 
 <sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
@@ -45,11 +77,15 @@ version                                     needs  score
 gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K…  ~22.4GB   55.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K_XL
+# gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K_XL · ~22.4GB
 sd-cli --diffusion-model models/qwen-image-2512-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-UD-Q4_K_XL.gguf --cfg-scale 2.5 --sampling-method euler -v --steps 40 -H 1024 -W 1024 --diffusion-fa --flow-shift 3 -p 'a cat holding a sign' --offload-to-cpu -o outputs/out.png
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/qwen-image-2512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

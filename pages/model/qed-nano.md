@@ -6,22 +6,40 @@
 
 LM Provers · released 2026-02 · 4.02B params · apache-2.0
 
-**score 57.4** ±2.3 · #265 of 934 · from 3 benchmark results across 1 source
+**score 57.0** ±2.3 · #278 of 949 · from 3 benchmark results across 1 source
+
+## What it's good at
+
+<sub>● marks QED-Nano among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others         rank  counts  tests
+math  ▁▂▃▅▆●▄█▄▁▁▁   #185 of 400     98%      3
+</pre>
+
+<details><summary>math · #185 of 400 · 98% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   37.0%  ▂··●▂▄█▆▆▄▄█ beats 1/23   hard · avg 22%           40%  at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   14.1%  ●▁▁▁█▇▄▃▁▃·▃ beats 0/24   very hard · avg 9.1%     34%  typical
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   26.5%  ●·▃▃█▁·▄·▁▁▁ beats 0/18   hard · avg 19%           23%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>  37.0%    59.3   2026-09-11   39% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  14.1%    55.8   2026-09-11   35% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>  26.5%    57.3   2026-09-11   24% ▇▇▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 57.4
+source                                    results  share of the score
+<a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 57.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt))</sub>
 
@@ -31,14 +49,56 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~8.04GB   57.4
+16-bit bf16 · nvidia only  ~8.04GB   57.0
+4-bit q4_k_m                ~2.5GB   57.0
+4-bit mlx-8bit · mac only   ~4.3GB   57.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-vllm serve lm-provers/QED-Nano
+# 4-bit q4_k_m · ~2.5GB
+llama cli -hf ijohn07/QED-Nano-Q4_K_M-GGUF:q4_k_m
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ijohn07/QED-Nano-Q4_K_M-GGUF:q4_k_m
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~2.5GB
+lms get https://huggingface.co/ijohn07/QED-Nano-Q4_K_M-GGUF@q4_k_m -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~4.3GB
+lms get https://huggingface.co/mlx-community/QED-Nano-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~2.5GB
+ollama run hf.co/ijohn07/QED-Nano-Q4_K_M-GGUF:q4_k_m
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-8bit · mac only · ~4.3GB
+mlx_lm.chat --model mlx-community/QED-Nano-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/QED-Nano-8bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~8.04GB
+vllm serve lm-provers/QED-Nano
+```
 
 [interactive version](https://whatmodel.sh/model/qed-nano) · [JSON](https://whatmodel.sh/api?format=json&all=1)

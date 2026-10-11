@@ -8,26 +8,48 @@ Alibaba DAMO Academy · released 2023-03 · 1.7B params · cc-by-nc-4.0
 
 **score 24.5** ±1.6 · #91 of 93 · from 9 benchmark results across 5 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks ModelScope T2V 1.7B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                  score  implies  date        weight
-<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  52.47 / 100    24.1                12% ▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  53.09 / 100    21.5                12% ▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  57.80 / 100    23.8                12% ▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  54.46 / 100    21.7                11% ▇
-<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>        830.4    21.2   2025-03-22   22% ▇▇▇
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>        38.0%    25.3   2025-05-17   13% ▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>        43.7%    26.9   2025-05-17    8% ▇
-<a name="visual-fetv-ccby"></a>FETV: A Benchmark for…  <a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV manual video quality (me…</a>     3.93 / 5    32.7   2023-12-26    4% ▇
-<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>        60.2%    40.3   2024-10-01    4% ▇
-prior                   pull toward the middle                         49.9                 1% ▇
-                        weighted average                             = 24.5
+task           vs the others       rank  counts  tests
+text to video  ●▄▃▄▆▅█▃▂▂▂▄   #65 of 68     99%      9
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #65 of 68 · 99% of its score</summary>
+
+Beats [LVDM (text-to-video)](lvdm-t2v.md) here, though they rank higher overall.
+
+<pre>
+test                                     result  vs the others in its run  difficulty                counts  why
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>        830.4  ●▃···▅▃·▃▅·█ beats 0/10   avg 1229                     23%  sharp
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>        38.0%  ▄●·█··█▄▄▄▄▄ beats 1/10   easy · avg 73%               13%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quality</a>     52.47 / 100  ▄····●██··▄▄ beats 1/7    very easy · avg 85.14 /…     12%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quality</a>     53.09 / 100  ▄●·····▄·█▄▄ beats 1/7    very easy · avg 87.87 /…     12%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal consist…</a>  57.80 / 100  ▄···▄●▄▄▄··█ beats 2/7    very easy · avg 88.67 /…     12%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video align…</a>  54.46 / 100  ▂··●▂·····▂█ beats 1/7    very easy · avg 87.86 /…     11%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>        43.7%  ▄●·█▄█▄··▄▄▄ beats 1/10   easy · avg 70%              7.8%  at its level
+<a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV manual video quality (mean o…</a>     3.93 / 5  █·····█····● beats 2/2    very easy · avg 4.63 / 5    4.3%  at its level · small run
+<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>        60.2%  ▄·▄█▄▄▄·▄·●█ beats 8/10   medium · avg 71%            4.2%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-evalcrafter-2023"></a><a href="https://arxiv.org/html/2310.11440v3">EvalCrafter: original 2023 text-to-vide…</a>        4   47% ▇▇▇▇▇▇
+<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                                     1   23% ▇▇▇
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   21% ▇▇
+<a name="visual-fetv-ccby"></a><a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV: A Benchmark for Fine-Grained Eval…</a>        1    4% ▇
+<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1    4% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 24.5
+</pre>
 
 <sub>Licences: EvalCrafter: original 2023 text-to-video evaluations ([CC-BY-4.0](../../licenses/visual-evalcrafter-2023.txt)) · GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt)) · FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>
 
@@ -38,11 +60,15 @@ version              needs  score
 fp16 · nvidia only  ~4.6GB   24.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~4.6GB
 python -c "import torch;from diffusers import DiffusionPipeline;from diffusers.utils import export_to_video;p=DiffusionPipeline.from_pretrained('ali-vilab/text-to-video-ms-1.7b',torch_dtype=torch.float16,variant='fp16');p.enable_model_cpu_offload();export_to_video(p('Spiderman is surfing',num_inference_steps=25).frames[0],'modelscope.mp4')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/modelscope-t2v-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

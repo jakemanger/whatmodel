@@ -6,20 +6,35 @@
 
 Swiss AI · released 2026-07 · 72.01B params · apache-2.0
 
-**score 53.1** ±6.5 · #365 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.6** ±6.7 · #384 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Apertus 1.5 70B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   17.5%  ▁▁▃●▂▄▁▃▄▄▄█ beats 5/38   very hard · avg 14%     80%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>  17.5%    53.9   2026-09-22   81% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                19% ▇▇
-                        weighted average                       = 53.1
+source                             results  share of the score
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>        1   80% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                20% ▇▇
+weighted average                            = 52.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
 
@@ -29,14 +44,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                     size  score
-16-bit bf16 · nvidia only  ~144GB   53.1
+16-bit bf16 · nvidia only  ~144GB   52.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16 · nvidia only
+# 16-bit bf16 · nvidia only · ~144GB
 vllm serve swiss-ai/Apertus-v1.5-70B --chat-template-content-format string --tensor-parallel-size 4 --max-model-len 262144 --reasoning-parser apertus --default-chat-template-kwargs.enable_thinking true
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/apertus-1-5-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

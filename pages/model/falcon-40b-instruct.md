@@ -6,37 +6,100 @@
 
 TII · released 2023-05 · 41.8B params · apache-2.0
 
-**score 27.9** ±2.2 · #864 of 934 · from 3 benchmark results across 2 sources
+**score 28.2** ±2.1 · #876 of 949 · from 4 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Falcon 40B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others         rank  counts  tests
+chat &amp; writing  ▁▁●▄▆▅▆█▆▆▆▂   #455 of 466     95%      3
+</pre>
+
+<details><summary>chat &amp; writing · #455 of 466 · 95% of its score</summary>
+
+Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+
+<pre>
+test                                                      result  vs the others in its run   difficulty                counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                              5.6%  ▁▂●▃▆▆█▆▄▄▁▁ beats 10/122  medium · avg 39%             37%  too hard for it
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  5.1700 MT-Bench score (1-10)  ▆▂▂▆●▄██▂▄▄▆ beats 9/28    avg 8.819 MT-Bench scor…     34%  sharp · noisy
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         45.7%  ▂▂·●·▇▃▆█▆▄▂ beats 5/45    very easy · avg 96%          24%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test            result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b-instruct/results_2023-12-25%2018%3A17%3A27.954000.json">TruthfulQA MC2</a>   52.5%  ▅▃█▆▁●▅···▁▁ beats 24/31  medium · avg 64%    3.2%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                                   score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                          5.6%    28.3   2025-08-09   39% ▇▇▇▇▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>                         45.7%    25.4   2025-08-09   24% ▇▇▇
-<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  5.1700 MT-Bench score (1-10)    27.7   2025-08-04   35% ▇▇▇▇
-prior                   pull toward the middle                                          50.0                 2% ▇
-                        weighted average                                              = 27.9
+source                                    results  share of the score
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   61% ▇▇▇▇▇▇▇
+<a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1   34% ▇▇▇▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b-instruct/results_2023-12-25%2018%3A17%3A27.954000.json">Hallucinations Leaderboard results</a>              1    3% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 28.2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
 <pre>
-download     size  score
-4-bit q4_0  ~24GB   27.9
+download       size  score
+4-bit q4_0    ~24GB   28.2
+4-bit Q4_K_M  ~26GB   28.2
+8-bit Q8_0    ~45GB   28.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run falcon:40b
+# 4-bit Q4_K_M · ~26GB
+llama cli -hf mradermacher/falcon-40b-instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/falcon-40b-instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~45GB
+llama cli -hf mradermacher/falcon-40b-instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/falcon-40b-instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~26GB
+lms get https://huggingface.co/mradermacher/falcon-40b-instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~45GB
+lms get https://huggingface.co/mradermacher/falcon-40b-instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~24GB
+ollama run falcon:40b
+# 4-bit Q4_K_M · ~26GB
+ollama run hf.co/mradermacher/falcon-40b-instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~45GB
+ollama run hf.co/mradermacher/falcon-40b-instruct-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/falcon-40b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,24 +6,52 @@
 
 DeepFloyd · released 2023-04 · 0.9B params · deepfloyd-if-license
 
-**score 32.3** ±2.5 · #127 of 144 · from 3 benchmark results across 3 sources
+**score 32.5** ±2.5 · #126 of 144 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks IF-L among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                                        score  implies  date        weight
-<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval</a>                                                     54.0%    31.8   2023-10-17   43% ▇▇▇▇▇
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.2300 mean human alignment score    35.0   2024-10-10   42% ▇▇▇▇▇
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              51.4%    20.8   2023-11-07   12% ▇
-prior                   pull toward the middle                                               49.9                 3% ▇
-                        weighted average                                                   = 32.3
+task           vs the others          rank  counts  tests
+text to image  ▂●▅▃▄▄█▃▁▂▁▁   #108 of 126*     43%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #108 of 126 · 43% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [LCM-SDXL](lcm-sdxl.md) here, though they rank higher overall.
+
+<pre>
+test     result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval</a>   54.0%  ▅█···▅▃●▃··▃ beats 8/10   easy · avg 79%     43%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                                           result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.2300 mean human alignment score  █▄▄·█·▄█▄●·▄ beats 10/11  avg 6.285 mean human al…     42%  typical
+<a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (aspect…</a>                              51.4%  ▁····●▁·▁··▁ beats 1/9    very easy · avg 92%          12%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-geneval"></a><a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval authors' results: djghosh13/gen…</a>        1   43% ▇▇▇▇▇
+<a name="visual-evalalign"></a><a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign: Supervised Fine-Tuning Multi…</a>        1   42% ▇▇▇▇▇
+<a name="visual-heim"></a><a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM: Holistic Evaluation of Text-to-Im…</a>        1   12% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 32.5
+</pre>
 
 <sub>Licences: GenEval authors' results: djghosh13/geneval README and arXiv 2310.11513v1 ([MIT (README); CC-BY-4.0 (arXiv 2310.11513v1)](../../licenses/visual-geneval.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -31,14 +59,18 @@ prior                   pull toward the middle                                  
 
 <pre>
 version                                   needs  score
-fp16 + model CPU offload (stages I+II, …  ~14GB   32.3
+fp16 + model CPU offload (stages I+II, …  ~14GB   32.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 + model CPU offload (stages I+II, 256px) · nvidia only
+# fp16 + model CPU offload (stages I+II, 256px) · nvidia only · ~14GB
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with protobuf python -c "import torch; from diffusers import DiffusionPipeline; s1=DiffusionPipeline.from_pretrained('DeepFloyd/IF-I-L-v1.0', variant='fp16', torch_dtype=torch.float16); s1.enable_model_cpu_offload(); s2=DiffusionPipeline.from_pretrained('DeepFloyd/IF-II-L-v1.0', text_encoder=None, variant='fp16', torch_dtype=torch.float16); s2.enable_model_cpu_offload(); e,n=s1.encode_prompt('a cat holding a sign'); i=s1(prompt_embeds=e, negative_prompt_embeds=n, output_type='pt').images; s2(image=i, prompt_embeds=e, negative_prompt_embeds=n, output_type='pil').images[0].save('out.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/deepfloyd-if-l) · [JSON](https://whatmodel.sh/api?format=json&all=1)

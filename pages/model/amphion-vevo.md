@@ -6,30 +6,48 @@
 
 Amphion (CUHK-Shenzhen) · released 2024-12 · 1.32B params · cc-by-nc-4.0
 
-**score 46.4** ±3.1 · #76 of 117 · from 9 benchmark results across 4 sources
+**score 46.2** ±3.1 · #77 of 118 · from 9 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Vevo (Amphion) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  4.01 / 5    49.5   2025-05-11   61% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.36 / 5    52.7   2025-05-11    6% ▇
-<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>     836.0    27.7   2026-06-19   11% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     84.2%    41.1   2026-06-19    2% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>     34.8%   -39.1   2026-06-19    0% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     86.8%    48.0   2025-05-15    6% ▇
-                        <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     86.5%    38.0   2025-05-15    4% ▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.48 / 5    66.6   2026-03-15    3% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.66 / 5    31.1   2026-03-15    2% ▇
-prior                   pull toward the middle                      49.7                 4% ▇
-                        weighted average                          = 46.4
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (9)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  4.01 / 5  ▅·█▅▅·█▃▃●·▅ beats 14/17  easy · avg 4.03 / 5       61%  at its level
+<a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · human …</a>     836.0  █●█····▄··▄▄ beats 2/7    avg 995                   11%  typical
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.36 / 5  ▅··▃▅··▅█▅█● beats 16/17  medium · avg 3.30 / 5    6.3%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · C…</a>     86.8%  ▄▄·····●··▄█ beats 2/5    very easy · avg 88%      6.1%  blunt
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     86.5%  ▂▂█·▂·●▆▂·▄▂ beats 10/17  very easy · avg 89%      4.1%  blunt
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.48 / 5  ▄▄█·▄▄▄▄▄·●█ beats 9/11   easy · avg 4.20 / 5      2.6%  blunt
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.66 / 5  █··▄●██▄·▄▄▄ beats 3/11   easy · avg 3.99 / 5      2.5%  blunt · at its level
+<a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TTSDS …</a>     84.2%  ▄····▄▄▄●▄·█ beats 4/7    very easy · avg 86%      1.9%  blunt
+<a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WER of…</a>     34.8%  ▄●▄··█▄··▄·▄ beats 1/7    avg 17%                  0.2%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                   2   68% ▇▇▇▇▇▇▇▇
+<a name="speech-sap-voicerecon-ccby"></a><a href="https://arxiv.org/html/2606.21343v1">An Evaluation Framework for TTS Voice R…</a>        3   13% ▇▇
+<a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>           2   10% ▇
+<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2    5% ▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 46.2
+</pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · An Evaluation Framework for TTS Voice Reconstruction ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>
 
@@ -37,14 +55,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                needs  score
-fp32 (Amphion repo)  ~6.78GB   46.4
+fp32 (Amphion repo)  ~6.78GB   46.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (Amphion repo)
+# fp32 (Amphion repo) · ~6.78GB
 git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create -n vevo python=3.10 && conda activate vevo && pip install -r models/vc/vevo/requirements.txt && python -m models.vc.vevo.infer_vevotts
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/amphion-vevo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -4,13 +4,38 @@
 
 # Eleven Turbo v2.5
 
-ElevenLabs · released 2024-07
+ElevenLabs · released 2024-07 · proprietary
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+**score 63.5** ±4.3 · #23 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
+
+## What it's good at
+
+<sub>● marks Eleven Turbo v2.5 among every model on that task or test, worst to best.</sub>
 
 <pre>
-test                                result  reported by  source
-Vapi Humanness · historical Elo, …  1234.2  independent  <a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">The Humanness Index by Vapi ·…</a>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">Vapi Humanness · historical Elo, …</a>  1234.2  ▃·▃▃▃·▃█●▃·▃ beats 10/12  avg 1080       93%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-vapi-humanness-20260610"></a><a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">The Humanness Index by Vapi · June 2026…</a>        1   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 63.5
 </pre>
 
 <sub>Licences: The Humanness Index by Vapi · June 2026 production export ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
@@ -21,4 +46,6 @@ api (ElevenLabs) · $50.00/M chars · [elevenlabs.io](https://elevenlabs.io/pric
 
 <sub>[price source](https://elevenlabs.io/pricing/api): USD per 1M input characters: ElevenLabs lists Flash / Turbo Text to Speech at $0.05 per 1K characters (x1000). Product: ElevenAPI text to speech. API model: eleven\_turbo\_v2\_5. Settings: standard API rate (same per-1K rate on pay-as-you-go and plan tiers shown). Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes. Currency: USD. ElevenLabs official API pricing page, observed 2026-09-25.</sub>
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/elevenlabs-turbo-v2-5)
+no verified local download listed
+
+[interactive version](https://whatmodel.sh/model/elevenlabs-turbo-v2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

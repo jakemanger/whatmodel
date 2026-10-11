@@ -6,29 +6,78 @@
 
 Alibaba · released 2026-09 · proprietary
 
-**score 75.4** ±1.6 · #37 of 934 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 75.3** ±1.5 · #37 of 949 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Qwen3.8-Omni-Flash among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others         rank  counts  tests
+agent tasks         ▁▁▃▆█▆▅▄▄●▂▁    #42 of 334     25%      3
+coding              ▁▁▁▃▆██▇▆▄●▁    #25 of 469     33%      4
+vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄   #14 of 150*     20%      1
+</pre>
+
+<details><summary>agent tasks · #42 of 334 · 25% of its score</summary>
+
+Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>         80.5%  ▁··▁▃▂▅▇█●▃▁ beats 50/60  hard · avg 29%     12%  typical
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwen-re…</a>   63.3%  ▂·····▂·▂█▃● beats 12/12  hard · avg 18%     10%  at its level
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>        57.8%  ▂····▁▁▁●██▆ beats 5/28   hard · avg 15%    3.1%  at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>coding · #25 of 469 · 33% of its score</summary>
+
+Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>         80.5%  ▁··▁▃▂▅▇█●▃▁ beats 50/60  hard · avg 29%       12%  typical
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwen-re…</a>   63.3%  ▂·····▂·▂█▃● beats 12/12  hard · avg 18%       10%  at its level
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unspecif…</a>   92.6%  ▃▅█▅▅▃▅···▃● beats 16/16  medium · avg 35%    8.1%  typical
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>        57.8%  ▂····▁▁▁●██▆ beats 5/28   hard · avg 15%      3.1%  at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #14 of 150 · 20% of its score</summary>
+
+Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall. Trails [Claude Opus 4.7](claude-opus-4-7.md), [Muse Spark 1.2](muse-spark-1-2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">CharXiv (reasoning questions) (la…</a>   83.5%  ▄▂▄▆▄▄▆··▄●▂ beats 17/21  medium · avg 39%     20%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">GPQA Diamond (lab)</a>                   91.0%  ▁▁▁▁▂▄▅▅██●▄ beats 278/310  hard · avg 41%           24%  sharp
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (lab)</a>           36.5%  ▁▁▁▃▆▆▇█●▆▁▃ beats 84/104   very hard · avg 5.1%     14%  at its level
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecified)…</a>   81.5%  ▃▇▂▄▅▅▂▄▄▆█● beats 79/80    medium · avg 42%        8.1%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen    <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">CharXiv (reasoning questions)…</a>  83.5%    74.8   2026-09-18   23% ▇▇▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">GPQA Diamond (lab)</a>              91.0%    73.5   2026-09-18   21% ▇▇▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (lab)</a>      36.5%    75.0   2026-09-18   13% ▇▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>    80.5%    77.2   2026-09-18   10% ▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unsp…</a>  92.6%    80.5   2026-09-18   10% ▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwe…</a>  63.3%    75.6   2026-09-18   10% ▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecif…</a>  81.5%    74.9   2026-09-18    9% ▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>   57.8%    79.7   2026-09-18    4% ▇
-prior   pull toward the middle                   50.0                 1% ▇
-        weighted average                       = 75.4
+source                         results  share of the score
+<a name="first-party-qwen-scores"></a><a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Qwen (lab)</a>                           8   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 75.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
-
-
 
 ## How to run it
 

@@ -10,20 +10,59 @@ DeepGen Team · released 2026-02 · apache-2.0
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks DeepGen 1.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      38.2%    44.0   2026-05-13   55% ▇▇▇▇▇▇▇
-<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>  23.6%    38.8   2026-07-11   29% ▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE (WiScore overall, GPT-4o…</a>  73.0%    59.7   2026-06-02   14% ▇▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 44.8
+task                    vs the others         rank  counts  tests
+text to image           ▁▂▇▇▆▅█●▂▃▁▁   #43 of 157*     13%      1
+image to image / edit…  ▁▁▁▃●▃█▃▃▃▁▁    #66 of 81*     55%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #43 of 157 · 13% of its score</summary>
+
+Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md), [Wan 2.7 Image](wan-2-7-image.md), [Emu3.5-Image](emu3-5-image.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE (WiScore overall, GPT-4o jud…</a>   73.0%  ▄·▆▂▆█▄▆▂▄·● beats 22/22  medium · avg 60%     13%  at its level
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #66 of 81 · 55% of its score</summary>
+
+Beats [FLUX1.1 \[pro\]](flux-1-1-pro.md) here, though they rank higher overall. Trails [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank lower overall.
+
+<pre>
+test                        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   38.2%  ▃▃▂·▃●▂█·▃·▃ beats 8/20   hard · avg 45%     55%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>   23.6%  ●··▂█▂▄▂▂·▂▂ beats 0/12   medium · avg 41%     29%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   55% ▇▇▇▇▇▇▇
+<a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   29% ▇▇▇▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE: A World Knowledge-Informed Semant…</a>        1   13% ▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 44.8
+</pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 

@@ -6,37 +6,77 @@
 
 OpenAI · released 2025-03 · proprietary
 
-**score 55.7** ±1.8 · #64 of 160 · from 16 benchmark results across 4 sources
+**score 55.6** ±1.8 · #63 of 162 · from 16 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks GPT-4o Mini Transcribe among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="report-2507.13264v1"></a>Mistral AI              <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER</a>              4.5%    50.5   2025-07-17    8% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER</a>                 17.3%    53.0   2025-07-17    8% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER</a>                     11.3%    57.4   2025-07-17    8% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER</a>             14.8%    53.5   2025-07-17    7% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>  10.1%    58.2   2025-07-17    7% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  12.3%    59.1   2025-07-17    7% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER</a>       7.3%    59.2   2025-07-17    7% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER</a>       4.7%    54.0   2025-07-17    6% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER</a>       1.9%    55.1   2025-07-17    2% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER</a>          3.2%    64.3   2025-07-17    2% ▇
-<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   7.9%    56.5   2026-02-11    7% ▇
-                        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>  12.8%    54.0   2026-02-11    7% ▇
-                        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   8.0%    55.5   2026-02-11    7% ▇
-                        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   8.0%    54.6   2026-02-11    6% ▇
-<a name="speech-stt-mu-bench-ccby"></a>mu-bench: A Multiling…  <a href="https://arxiv.org/html/2609.32082v1">mu-bench voice-agent caller u…</a>  27.2%    56.3   2026-09-25    5% ▇
-<a name="speech-stt-danish-asr-ryeai-mit"></a>Danish Speech-to-Text…  <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean…</a>  22.2%    59.8   2026-10-04    5% ▇
-prior                   pull toward the middle                   49.8                 1% ▇
-                        weighted average                       = 55.7
+task                    vs the others       rank  counts  tests
+long-form transcripti…  █·····●···██    #3 of 4*    7.0%      1
+multilingual transcri…  ▂··▃●█▆▅▄▂·▂   #31 of 36     18%      3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>long-form transcription · #3 of 4 · 7.0% of its score</summary>
+
+Beats [Kyutai STT 2.6B (en)](kyutai-stt-2-6b-en.md) here, though they rank higher overall. Trails [Voxtral Mini 4B Realtime (2602)](voxtral-mini-4b-realtime.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long-for…</a>    8.0%  ●··█·······▄ beats 0/3    avg 11%       7.0%  typical
+</pre>
+
+</details>
+
+<details><summary>multilingual transcription · #31 of 36 · 18% of its score</summary>
+
+Trails [Omnilingual ASR CTC 1B v2](omniasr-ctc-1b-v2.md), [Omnilingual ASR CTC 7B v2](omniasr-ctc-7b-v2.md), [Voxtral Mini 4B Realtime (2602)](voxtral-mini-4b-realtime.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice 12-…</a>   12.8%  █··●·······█ beats 1/2    avg 18%       7.1%  small run
+<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-langua…</a>    8.0%  █·●········█ beats 1/2    avg 11%       6.5%  small run
+<a href="https://arxiv.org/html/2609.32082v1">mu-bench voice-agent caller utter…</a>   27.2%  ●·····▄····▄ beats 1/3    avg 39%       4.7%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (12)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty  counts  why
+<a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER</a>                   4.5%  ●▄··▄██··▄██ beats 0/11    avg 5.4%       10%  sharp
+<a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER</a>                      17.3%  ●······▄···█ beats 0/3     avg 22%       8.7%  typical
+<a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER</a>                          11.3%  ●··█·█·····█ beats 0/3     avg 18%       8.1%  typical
+<a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-form W…</a>   10.1%  ●···█·····██ beats 0/3     avg 16%       7.5%  typical
+<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English short-fo…</a>    7.9%  █··█·●·····█ beats 2/3     avg 12%       7.4%  typical
+<a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-form W…</a>   12.3%  █····█·●···█ beats 2/3     avg 21%       7.3%  typical
+<a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER</a>                  14.8%  ▁····●··▁▄█▂ beats 1/17    avg 19%       7.1%  typical
+<a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER</a>            4.7%  ▁▁▁▂▅▃●▄█▂▂▁ beats 27/54   avg 6.0%      6.2%  typical
+<a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   22.2%  ▂▂···▃▂▅█●▂▂ beats 13/16   avg 32%       4.4%  blunt
+<a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER</a>            7.3%  █▄▄··●███▄██ beats 4/16    avg 11%       3.7%  typical
+<a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER</a>            1.9%  ▁·▁·▁▁▁▁▃▇●▆ beats 60/100  avg 2.3%      1.9%  blunt
+<a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER</a>               3.2%  ▁··▁▁▁▁▂▃█●▁ beats 63/64   avg 4.8%      1.6%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="report-2507.13264v1"></a><a href="https://arxiv.org/html/2507.13264v1">Mistral AI</a>                                     10   62% ▇▇▇▇▇▇▇
+<a name="speech-voxtral-realtime-report"></a><a href="https://arxiv.org/html/2602.11298v1">Voxtral Realtime</a>                                4   28% ▇▇▇
+<a name="speech-stt-mu-bench-ccby"></a><a href="https://arxiv.org/html/2609.32082v1">mu-bench: A Multilingual Utterance Tran…</a>        1    5% ▇
+<a name="speech-stt-danish-asr-ryeai-mit"></a><a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish Speech-to-Text Leaderboard</a>               1    4% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 55.6
+</pre>
 
 <sub>Licences: Mistral AI ([CC BY 4.0](../../licenses/report-2507.13264v1.txt)) · Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mu-bench: A Multilingual Utterance Transcription Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Danish Speech-to-Text Leaderboard ([MIT](https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE))</sub>
 

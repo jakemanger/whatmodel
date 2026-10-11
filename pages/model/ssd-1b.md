@@ -6,22 +6,40 @@
 
 Segmind · released 2023-10 · 1.3B params · apache-2.0
 
-**score 35.9** ±3.6 · #118 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.1** ±3.6 · #118 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks SSD-1B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.93 / 5    35.1   2024-12-25   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                 6% ▇
-                        weighted average                          = 35.9
+task           vs the others          rank  counts  tests
+text to image  ▂▅●▃▄▄█▃▁▂▁▁   #100 of 126*     94%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #100 of 126 · 94% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md) here, though they rank lower overall.
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  2.93 / 5  █▄·▄█●▄▄█▄▄▄ beats 6/14   easy · avg 3.83 / 5     94%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 36.1
+</pre>
 
 <sub>Licences: EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt))</sub>
 
@@ -29,20 +47,24 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~3.6GB   35.9
-fp16 (sd.cpp)         ~5.9GB   35.9
-q8_0 (sd.cpp --type)  ~3.3GB   35.9
+fp16 · nvidia only    ~3.6GB   36.1
+fp16 (sd.cpp)         ~5.9GB   36.1
+q8_0 (sd.cpp --type)  ~3.3GB   36.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~3.6GB
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionXLPipeline; p=StableDiffusionXLPipeline.from_pretrained('segmind/SSD-1B', torch_dtype=torch.float16, use_safetensors=True, variant='fp16').to('cuda'); p(prompt='a cat holding a sign').images[0].save('out.png')"
-# fp16 (sd.cpp)
+# fp16 (sd.cpp) · ~5.9GB
 sd-cli -m models/SSD-1B-A1111.safetensors -H 1024 -W 1024 -p "a lovely cat" -v
-# q8_0 (sd.cpp --type)
+# q8_0 (sd.cpp --type) · ~3.3GB
 sd-cli -m models/SSD-1B-A1111.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" -v
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ssd-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

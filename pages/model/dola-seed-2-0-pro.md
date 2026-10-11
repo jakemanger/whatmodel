@@ -6,23 +6,63 @@
 
 ByteDance · proprietary
 
-**score 72.2** ±2.6 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 73.6** ±2.1 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Dola Seed 2.0 Pro among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others         rank  counts  tests
+agent tasks         █··········●      #1 of 2*     33%      1
+chat &amp; writing      ▁▁▁▃▅▅▆█▆▆●▂   #54 of 579*     38%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▅▇▇●▃   #46 of 199*     26%      1
+</pre>
+
+<details><summary>agent tasks · #1 of 2 · 33% of its score</summary>
+
+<pre>
+test                    result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/pdf/2607.00248v1">τ²-bench Telecom (lab)</a>   94.2%  ▁·▅█▆▅▂▃●▂▃▁ beats 73/89  hard · avg 25%     33%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #54 of 579 · 38% of its score</summary>
+
+Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Claude Sonnet 4.5](claude-sonnet-4-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5](glm-5.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1456.5  ▁▁▁▂▃▃▃▆▆▇●▃ beats 326/379  avg 1268       38%  blunt
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #46 of 199 · 26% of its score</summary>
+
+Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1256.6  ▁▁▂▂▂▂▄▅▅▆●█ beats 107/145  avg 1068       26%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1456.5    72.7   2026-10-02   56% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1256.6    73.1   2026-10-02   41% ▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 72.2
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   65% ▇▇▇▇▇▇▇▇
+<a name="paper-2607.00248v1-seed2-0"></a><a href="https://arxiv.org/pdf/2607.00248v1">ByteDance Seed - Seed2.0 Model Card (la…</a>        1   33% ▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 73.6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ByteDance Seed - Seed2.0 Model Card ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

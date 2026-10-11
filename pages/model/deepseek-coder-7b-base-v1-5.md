@@ -6,36 +6,101 @@
 
 DeepSeek · released 2024-01 · 6.91B params · deepseek
 
-**score 38.5** ±1.2 · #729 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.5** ±1.2 · #739 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks DeepSeek-Coder 7B Base v1.5 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁▃●██▇▆▄▃▁   #403 of 469*     66%      1
+</pre>
+
+<details><summary>coding · #403 of 469 · 66% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
+
+<pre>
+test       result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>   42.1%  ▁█▄●▇█·▄▇▅▄▄ beats 13/42  easy · avg 78%     66%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   33.0%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 20/42  medium · avg 55%     34%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               42.1%    37.5   2024-03-28   66% ▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       33.0%    40.3   2024-03-28   33% ▇▇▇▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 38.5
+source                                    results  share of the score
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 38.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-16-bit bf16  ~13.82GB   38.5
+download          size  score
+16-bit bf16   ~13.82GB   38.5
+4-bit Q4_K_M    ~4.2GB   38.5
+8-bit Q8_0      ~7.3GB   38.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/deepseek-coder-7b-base-v1.5', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~4.2GB
+llama cli -hf mradermacher/deepseek-coder-7b-base-v1.5-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/deepseek-coder-7b-base-v1.5-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.3GB
+llama cli -hf mradermacher/deepseek-coder-7b-base-v1.5-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/deepseek-coder-7b-base-v1.5-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.2GB
+lms get https://huggingface.co/mradermacher/deepseek-coder-7b-base-v1.5-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~7.3GB
+lms get https://huggingface.co/mradermacher/deepseek-coder-7b-base-v1.5-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.2GB
+ollama run hf.co/mradermacher/deepseek-coder-7b-base-v1.5-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.3GB
+ollama run hf.co/mradermacher/deepseek-coder-7b-base-v1.5-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~13.82GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/deepseek-coder-7b-base-v1.5', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-7b-base-v1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,21 +6,39 @@
 
 LLaVA · released 2024-01 · 13.35B params · llama2
 
-**score 33.6** ±5.6 · #807 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 33.3** ±5.7 · #824 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks LLaVA-v1.6-Vicuna-13B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+vision &amp; documents  ▁●▃▂▁▃▄▃▆▇█▄   #145 of 150*     86%      2
+</pre>
+
+<details><summary>vision &amp; documents · #145 of 150 · 86% of its score</summary>
+
+Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md), [LLaVA-v1.6-34B](llava-v1-6-34b.md) here, though they rank higher overall.
+
+<pre>
+test              result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>   36.2%  ▁····●▁▄█▇▆▆ beats 1/52   medium · avg 59%     74%  small run
+<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>      67.1%  ▁▁▁●▅▁▃·▃▃▃█ beats 3/24   easy · avg 77%       12%  blunt · at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="llava-model-zoo-apache"></a>LLaVA repository mode…  <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>        36.2%    31.1   2024-01-30   74% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>           67.1%    29.5   2024-01-30   12% ▇
-prior                   pull toward the middle           50.0                14% ▇▇
-                        weighted average               = 33.6
+source                            results  share of the score
+<a name="llava-model-zoo-apache"></a><a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">LLaVA repository model zoo (lab)</a>        2   86% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle               14% ▇▇
+weighted average                           = 33.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LLaVA repository model zoo ([Apache-2.0](https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/LICENSE))</sub>
 
@@ -28,14 +46,18 @@ prior                   pull toward the middle           50.0                14%
 
 <pre>
 download    size  score
-4-bit q4_0  ~8GB   33.6
+4-bit q4_0  ~8GB   33.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
 ```sh
-# 4-bit q4_0
+# 4-bit q4_0 · ~8GB
 ollama run llava:13b
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/llava-v1-6-vicuna-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

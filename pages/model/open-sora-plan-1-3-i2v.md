@@ -6,20 +6,35 @@
 
 Peking University (PKU-YuanGroup) · released 2024-10 · 2.78B params · mit
 
-**score 39.4** ±6.8 · #70 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.3** ±6.8 · #70 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Open-Sora Plan v1.3 (I2V) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                              result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.62 / 10  ▅··●▃···▃··█ beats 3/8    easy · avg 7.71 / 10     81%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.62 / 10    36.8   2025-02-28   81% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                19% ▇▇
-                        weighted average                          = 39.4
+source                                    results  share of the score
+<a name="video-worldmodelbench"></a><a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench: Judging Video Generati…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       19% ▇▇
+weighted average                                   = 39.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt))</sub>
 
@@ -27,14 +42,18 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version             needs  score
-bf16 · nvidia only  ~24GB   39.4
+bf16 · nvidia only  ~24GB   39.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~24GB
 git clone https://github.com/PKU-YuanGroup/Open-Sora-Plan && cd Open-Sora-Plan && git checkout v1.3.1 && pip install -e . && hf download LanguageBind/Open-Sora-Plan-v1.3.0 --include 'any93x640x640_i2v/*' 'vae/*' --local-dir osp13 && hf download google/mt5-xxl --local-dir mt5-xxl && torchrun --nnodes=1 --nproc_per_node 1 -m opensora.sample.sample --model_type inpaint --model_path osp13/any93x640x640_i2v --version v1_3 --num_frames 93 --height 352 --width 640 --crop_for_hw --text_encoder_name_1 mt5-xxl --text_prompt examples/cond_prompt.txt --conditional_pixel_values_path examples/cond_pix_path.txt --ae WFVAEModel_D8_4x8x8 --ae_path osp13/vae --save_img_path ./samples --fps 18 --guidance_scale 7.5 --num_sampling_steps 100 --max_sequence_length 512 --sample_method EulerAncestralDiscrete --seed 1234 --num_samples_per_prompt 1 --rescale_betas_zero_snr --prediction_type v_prediction --save_memory
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/open-sora-plan-1-3-i2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

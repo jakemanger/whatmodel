@@ -6,40 +6,107 @@
 
 NVIDIA · released 2025-06 · 7.62B params · nvidia-open-model-license
 
-**score 48.6** ±1.9 · #476 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 48.7** ±1.9 · #479 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks AceReason-Nemotron-1.1-7B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #315 of 469     98%      3
+</pre>
+
+<details><summary>coding · #315 of 469 · 98% of its score</summary>
+
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   42.3%  ●·▄····▄▄▄█▄ beats 0/7    medium · avg 45%         46%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    1.8%  ●▃····▃·█·▃▃ beats 0/7    very hard · avg 2.4%     30%  sharp · too hard for it
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   55.2%  ●▄···▄·▄▄█·▄ beats 0/7    medium · avg 57%         22%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="report-2512.13607v2"></a>NVIDIA  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  42.3%    48.9   2026-03-27   46% ▇▇▇▇▇▇
-        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>   1.8%    47.9   2026-03-27   30% ▇▇▇▇
-        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–Ma…</a>  55.2%    49.0   2026-03-27   22% ▇▇▇
-prior   pull toward the middle                   50.0                 2% ▇
-        weighted average                       = 48.6
+source                         results  share of the score
+<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                         3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             2% ▇
+weighted average                        = 48.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~4.68GB   48.6
-8-bit q8_0     ~8.1GB   48.6
+download                      size  score
+4-bit q4_k_m               ~4.68GB   48.7
+8-bit q8_0                  ~8.1GB   48.7
+4-bit mlx-4bit · mac only   ~4.3GB   48.7
+4-bit mlx-8bit · mac only   ~8.1GB   48.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF:Q4_K_M
-# 8-bit q8_0
-llama-server -hf bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF:Q8_0
+# 4-bit q4_k_m · ~4.68GB
+llama cli -hf bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF:Q4_K_M
+# 8-bit q8_0 · ~8.1GB
+llama cli -hf bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~4.68GB
+lms get https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~8.1GB
+lms get https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.3GB
+lms get https://huggingface.co/mlx-community/AceReason-Nemotron-1.1-7B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~8.1GB
+lms get https://huggingface.co/mlx-community/AceReason-Nemotron-1.1-7B-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~4.68GB
+ollama run hf.co/bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF:Q4_K_M
+# 8-bit q8_0 · ~8.1GB
+ollama run hf.co/bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.3GB
+mlx_lm.chat --model mlx-community/AceReason-Nemotron-1.1-7B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/AceReason-Nemotron-1.1-7B-4bit
+# 4-bit mlx-8bit · mac only · ~8.1GB
+mlx_lm.chat --model mlx-community/AceReason-Nemotron-1.1-7B-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/AceReason-Nemotron-1.1-7B-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/acereason-nemotron-1-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

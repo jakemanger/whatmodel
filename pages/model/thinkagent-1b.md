@@ -6,20 +6,38 @@
 
 ThinkAgents · released 2025-01 · 1.24B params · apache-2.0
 
-**score 25.9** ±6.8 · #877 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 25.5** ±7.0 · #892 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks ThinkAgent-1B (Llama-3.2-1B-FC-v3) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ●▁▃▆█▆▅▄▄▃▂▁   #331 of 334*     78%      1
+</pre>
+
+<details><summary>agent tasks · #331 of 334 · 78% of its score</summary>
+
+Beats [QwQ-32B-Preview](qwq-32b-preview.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank higher overall.
+
+<pre>
+test     result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>   20.8%  ▁●▁▁▁▃▅█▅▄▁▁ beats 3/114  medium · avg 52%     78%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                 20.8%    19.6   2025-06-14   79% ▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle           50.0                21% ▇▇▇
-                        weighted average               = 25.9
+source                                    results  share of the score
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   78% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       22% ▇▇▇
+weighted average                                   = 25.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
@@ -27,14 +45,18 @@ prior                   pull toward the middle           50.0                21%
 
 <pre>
 download        size  score
-16-bit bf16  ~2.47GB   25.9
+16-bit bf16  ~2.47GB   25.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16
+# 16-bit bf16 · ~2.47GB
 uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='AymanTarig/Llama-3.2-1B-FC-v3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/thinkagent-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

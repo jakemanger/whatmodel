@@ -6,24 +6,40 @@
 
 OpenAI · released 2026-07 · proprietary
 
-**score 63.6** ±4.0 · #11 of 160 · from 3 benchmark results across 2 sources
+**score 63.9** ±4.1 · #11 of 162 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks GPT Transcribe among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  89.3%    64.3   2026-09-01   39% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   6.1%    62.4   2026-09-01   31% ▇▇▇▇
-<a name="speech-stt-danish-asr-ryeai-mit"></a>Danish Speech-to-Text…  <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean…</a>  16.7%    67.7   2026-10-04   24% ▇▇▇
-prior                   pull toward the middle                   49.8                 6% ▇
-                        weighted average                       = 63.6
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canonical …</a>   89.3%  ▄···▄··▄▄●·█ beats 4/6    easy · avg 77%     39%  typical
+<a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (300 E…</a>    6.1%  ▄·▄·▄·●█···▄ beats 3/6    avg 12%            32%  typical
+<a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   16.7%  ▂▂···▃▂▅█▃●▂ beats 15/16  avg 32%            22%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                             results  share of the score
+<a name="speech-stt-voicecodebench-report"></a><a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench</a>                           2   71% ▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-danish-asr-ryeai-mit"></a><a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish Speech-to-Text Leaderboard</a>        1   22% ▇▇▇
+prior: pull toward the middle                 6% ▇
+weighted average                            = 63.9
+</pre>
 
 <sub>Licences: VoiceCodeBench ([CC BY 4.0](../../licenses/speech-stt-voicecodebench-report.txt)) · Danish Speech-to-Text Leaderboard ([MIT](https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE))</sub>
 

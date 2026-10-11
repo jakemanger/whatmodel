@@ -6,35 +6,105 @@
 
 Google · released 2026-01 · 28.84B params · gemma
 
-**score 65.6** ±10.4 · #144 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 65.4** ±10.4 · #149 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks TranslateGemma 27B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test           result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/pdf/2601.09012v2">WMT24++ (lab)</a>   84.4%  █···█·█··██● beats 5/5    easy · avg 72%     52%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2601.09012v2-translategemma"></a>TranslateGemma Techni…  <a href="https://arxiv.org/pdf/2601.09012v2">WMT24++ (lab)</a>           84.4%    80.4   2026-01-15   51% ▇▇▇▇▇▇
-prior                   pull toward the middle           50.0                49% ▇▇▇▇▇▇
-                        weighted average               = 65.6
+source                                 results  share of the score
+<a name="paper-2601.09012v2-translategemma"></a><a href="https://arxiv.org/pdf/2601.09012v2">TranslateGemma Technical Report (lab)</a>        1   52% ▇▇▇▇▇▇
+prior: pull toward the middle                    48% ▇▇▇▇▇▇
+weighted average                                = 65.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: TranslateGemma Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
-download       size  score
-4-bit q4_k_m  ~17GB   65.6
+download                      size  score
+4-bit q4_k_m                 ~17GB   65.4
+4-bit Q4_K_M               ~16.5GB   65.4
+8-bit Q8_0                 ~28.7GB   65.4
+4-bit mlx-4bit · mac only  ~15.2GB   65.4
+4-bit mlx-8bit · mac only  ~28.7GB   65.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run translategemma:27b
+# 4-bit Q4_K_M · ~16.5GB
+llama cli -hf mradermacher/translategemma-27b-it-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/translategemma-27b-it-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~28.7GB
+llama cli -hf mradermacher/translategemma-27b-it-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/translategemma-27b-it-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~16.5GB
+lms get https://huggingface.co/mradermacher/translategemma-27b-it-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~28.7GB
+lms get https://huggingface.co/mradermacher/translategemma-27b-it-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~15.2GB
+lms get https://huggingface.co/mlx-community/translategemma-27b-it-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~28.7GB
+lms get https://huggingface.co/mlx-community/translategemma-27b-it-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~17GB
+ollama run translategemma:27b
+# 4-bit Q4_K_M · ~16.5GB
+ollama run hf.co/mradermacher/translategemma-27b-it-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~28.7GB
+ollama run hf.co/mradermacher/translategemma-27b-it-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~15.2GB
+mlx_lm.chat --model mlx-community/translategemma-27b-it-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/translategemma-27b-it-4bit
+# 4-bit mlx-8bit · mac only · ~28.7GB
+mlx_lm.chat --model mlx-community/translategemma-27b-it-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/translategemma-27b-it-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/translategemma-27b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

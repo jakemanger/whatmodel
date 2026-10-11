@@ -6,52 +6,114 @@
 
 Mistral · released 2025-12 · 3.85B params · apache-2.0
 
-**score 45.4** ±0.8 · #570 of 934 · from 33 benchmark results across 8 sources
+**score 45.2** ±0.8 · #581 of 949 · from 33 benchmark results across 8 sources
+
+## What it's good at
+
+<sub>● marks Ministral 3 3B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+agent tasks         ▁▁●▆█▆▅▄▄▃▂▁   #315 of 334*    1.9%      1
+chat &amp; writing      ▁▁▁▄●▅▆█▆▆▆▂   #384 of 466*    3.9%      2
+math                ▁▂▃▅●▅▄█▄▁▁▁    #271 of 400     28%      4
+vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄    #132 of 150     11%      9
+</pre>
+
+<details><summary>agent tasks · #315 of 334 · 1.9% of its score</summary>
+
+Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>    6.1%  ●··▆▄▂▄▂▆▆█▄ beats 0/23   very hard · avg 14%    1.9%  sharp
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #384 of 466 · 3.9% of its score</summary>
+
+Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge unspeci…</a>   30.5%  ▃●▂▅▃▆▅█▅▅▂▃ beats 3/30   medium · avg 48%    2.7%  at its level · small run
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">IFEval (aggregation unspecified)</a>     72.5%  ▄···▄●▄····▄ beats 2/5    easy · avg 79%      1.2%  at its level
+</pre>
+
+</details>
+
+<details><summary>math · #271 of 400 · 28% of its score</summary>
+
+Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-V2.5](deepseek-v2-5.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [InternVL2-4B](internvl2-4b.md) here, though they rank lower overall.
+
+<pre>
+test                         result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>     70.2%  ●▄··▄█▄····▄ beats 0/7    easy · avg 81%          14%  at its level · several runs
+<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                         79.0%  ●····█··▄·▄█ beats 1/7    very easy · avg 86%    9.4%  sharp
+<a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>       47.0%  ●·▄·▄▄▄·▄··█ beats 0/7    easy · avg 70%         3.0%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>   16.3%  ●··▄██··▄··▄ beats 0/7    hard · avg 30%         2.5%  typical
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #132 of 150 · 11% of its score</summary>
+
+Beats [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall.
+
+<pre>
+test                           result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>   76.6%  █·▄·······▄● beats 5/5    easy · avg 78%         3.4%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar</a>                          53.1%  ▄▄▄●·······▄ beats 4/5    medium · avg 62%       2.5%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1</a>             69.2%  ●·····▃··▃·▃ beats 1/5    easy · avg 79%         1.4%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench</a>                  65.2%  ▄▄·▄·····●·▄ beats 3/5    medium · avg 65%       1.2%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA</a>                     58.3%  ▄···●··▄▄··▄ beats 2/5    easy · avg 69%         0.6%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench</a>                      73.7%  ▄··▄··●··▄·▄ beats 3/5    very easy · avg 86%    0.6%  noisy
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">OCRBench</a>                        73.5%  █··█●█·█···█ beats 2/5    easy · avg 81%         0.4%  blunt
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test</a>                       74.1%  █···●▄···▄·▄ beats 2/5    easy · avg 82%         0.3%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">ChartQA</a>                         79.1%  ▄······▄··●█ beats 3/5    easy · avg 80%         0.2%  blunt · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (13)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 69.8%  ▄···●▄·▄█··█ beats 1/7     easy · avg 75%          11%  at its level · several runs
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.3927  ▁▄●▃▇▄█▃▅▁▁▁ beats 4/30    avg 0.423               10%  sharp
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             49.5%  ▄····●·▄█·▄▄ beats 2/7     medium · avg 56%       8.5%  at its level · several runs
+<a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                         31.6%  ▄···●·▄·█·▄▄ beats 1/7     hard · avg 38%         6.0%  sharp
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   39.3%  ▂▃●▂▆▃█▅█▅▃▆ beats 4/34    medium · avg 42%       4.4%  blunt · at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               26.7%  ●··▄··█··█·▄ beats 0/7     medium · avg 43%       4.1%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        38.4%  ●··▃▃··▅···█ beats 0/7     medium · avg 57%       2.9%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             39.4%  ●···▄·█·▄·▄█ beats 0/7     medium · avg 60%       2.6%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>    44.7%  ▄··▄●▄··▄··█ beats 3/7     medium · avg 47%       2.1%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified)</a>   47.0%  ▄·▄··●▄····▄ beats 3/5     medium · avg 58%       1.3%  blunt · at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   69.8%  ▃·▁▁▂▁▂▅●▇▄▁ beats 50/100  medium · avg 68%       1.1%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   81.5%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 72/146  easy · avg 83%         0.9%  at its level · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   75.8%  ●▂▁▂▅█▂▃▄▃▁▁ beats 0/98    very easy · avg 90%    0.0%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="report-marco-moe-260425578v1"></a>Marco-MoE: Open Multi…  <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                            79.0%    45.8   2026-04-28   10% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                             69.8%    47.4   2026-04-28    8% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                     31.6%    44.8   2026-04-28    6% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                         49.5%    47.5   2026-04-28    5% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>        70.2%    43.7   2026-04-28    4% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>           26.7%    41.3   2026-04-28    4% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>          47.0%    38.0   2026-04-28    3% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>    38.4%    37.2   2026-04-28    3% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>         39.4%    35.7   2026-04-28    3% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>      16.3%    39.9   2026-04-28    2% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>   44.7%    49.1   2026-04-28    2% ▇
-<a name="card2-coherelabs-north-micro-vision-instruct"></a>CohereLabs/North-Micr…  <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>    76.6%    49.3   2026-08-10    3% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU-Pro</a>                         47.5%    49.3   2026-08-10    3% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU</a>                             66.0%    48.6   2026-08-10    3% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar</a>                           53.1%    42.8   2026-08-10    3% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspeci…</a>   47.0%    43.3   2026-08-10    2% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1</a>              69.2%    38.9   2026-08-10    1% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">IFEval (aggregation unspecifi…</a>   72.5%    44.4   2026-08-10    1% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench</a>                   65.2%    51.1   2026-08-10    1% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA</a>                      58.3%    36.3   2026-08-10    1% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench</a>                       73.7%    36.6   2026-08-10    1% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">OCRBench</a>                         73.5%    35.0   2026-08-10    0% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test</a>                        74.1%    26.2   2026-08-10    0% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">ChartQA</a>                          79.1%    48.4   2026-08-10    0% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.3927    47.3   2026-05-02   10% ▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   39.3%    48.0   2026-05-02    4% ▇
-<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">MATH (subset unspecified) (la…</a>   83.0%    52.1   2026-09-25    4% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>   30.5%    40.8   2026-09-25    3% ▇
-<a name="card-mistralai-ministral-3-8b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512/blob/5b26027e7b19eeb4b7352e1fed3926375dd2cb4d/README.md">MATH (subset unspecified) (la…</a>   83.0%    52.1   2026-09-25    4% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   69.8%    51.3   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   81.5%    48.9   2026-04-17    1% ▇
-<a name="paper-2605.17281v2-contractbench"></a>ContractBench: Can LL…  <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (3…</a>    6.1%    42.7   2026-09-27    2% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   75.8%  -390.1   2026-09-22    0% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 45.4
+source                                    results  share of the score
+<a name="report-marco-moe-260425578v1"></a><a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual Mixture-of…</a>       11   51% ▇▇▇▇▇▇
+<a name="card2-coherelabs-north-micro-vision-instruct"></a><a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CohereLabs/North-Micro-Vision-Instruct …</a>       13   19% ▇▇
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   14% ▇▇
+<a name="card-mistralai-ministral-3-14b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">mistralai/Ministral-3-14B-Instruct-2512…</a>        2    7% ▇
+<a name="card-mistralai-ministral-3-8b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512/blob/5b26027e7b19eeb4b7352e1fed3926375dd2cb4d/README.md">mistralai/Ministral-3-8B-Instruct-2512 …</a>        1    4% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
+<a name="paper-2605.17281v2-contractbench"></a><a href="https://arxiv.org/html/2605.17281v2">ContractBench: Can LLM Agents Preserve …</a>        1    2% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 45.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · CohereLabs/North-Micro-Vision-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · mistralai/Ministral-3-14B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-8B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -71,18 +133,73 @@ api (Mistral) · $0.10/M blended · $0.1 in / $0.1 out per 1M tokens · [docs.mi
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens. Mistral standard synchronous API; model ministral-3b-2512. Uncached input; output includes generated reasoning where billed.  Batch, cache storage, tools and other modalities excluded. · [context source](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/blob/b35d4dfe56c142746f54dbd64f579faab2744308/config.json): Official Instruct-2512 model configuration; card corroborates 256K. For 3B this replaces a missing value using the first-party record, not LiteLLM’s conflicting 131,072 entry.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~2.81GB   45.4
-8-bit q8_0    ~5.12GB   45.4
+download                      size  score
+4-bit q4_k_m               ~2.81GB   45.2
+8-bit q8_0                 ~5.12GB   45.2
+4-bit Q4_K_M                ~2.1GB   45.2
+8-bit Q8_0                  ~3.7GB   45.2
+4-bit mlx-4bit · mac only   ~1.9GB   45.2
+4-bit mlx-8bit · mac only   ~3.6GB   45.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run ministral-3:3b
-# 8-bit q8_0
-ollama run ministral-3:3b-instruct-2512-q8_0
+# 4-bit Q4_K_M · ~2.1GB
+llama cli -hf mistralai/Ministral-3-3B-Instruct-2512-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mistralai/Ministral-3-3B-Instruct-2512-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~3.7GB
+llama cli -hf mistralai/Ministral-3-3B-Instruct-2512-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mistralai/Ministral-3-3B-Instruct-2512-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~2.1GB
+lms get https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~3.7GB
+lms get https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~1.9GB
+lms get https://huggingface.co/Oscilla/Ministral-3-3B-Instruct-2512-mlx-4Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~3.6GB
+lms get https://huggingface.co/Oscilla/Ministral-3-3B-Instruct-2512-mlx-8Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~2.81GB
+ollama run ministral-3:3b
+# 8-bit q8_0 · ~5.12GB
+ollama run ministral-3:3b-instruct-2512-q8_0
+# 4-bit Q4_K_M · ~2.1GB
+ollama run hf.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~3.7GB
+ollama run hf.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~1.9GB
+mlx_lm.chat --model Oscilla/Ministral-3-3B-Instruct-2512-mlx-4Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model Oscilla/Ministral-3-3B-Instruct-2512-mlx-4Bit
+# 4-bit mlx-8bit · mac only · ~3.6GB
+mlx_lm.chat --model Oscilla/Ministral-3-3B-Instruct-2512-mlx-8Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model Oscilla/Ministral-3-3B-Instruct-2512-mlx-8Bit
+```
 
 [interactive version](https://whatmodel.sh/model/ministral-3-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

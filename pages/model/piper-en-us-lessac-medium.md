@@ -6,23 +6,38 @@
 
 Open Home Foundation (Piper) · released 2023-06 · mit
 
-**score 46.9** ±5.0 · #74 of 117 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.6** ±5.0 · #76 of 118 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Piper (en\_US lessac medium) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-paradee-report-ccby"></a>Paradee: Distilling K…  <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>  4.36 / 5    50.2   2026-10-05   56% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>      8.8%    40.8   2026-10-05   34% ▇▇▇▇
-prior                   pull toward the middle                      49.7                10% ▇
-                        weighted average                          = 46.9
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison · 20…</a>  4.36 / 5  █······●···█ beats 1/2    easy · avg 4.39 / 5     56%  small run
+<a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison · 20…</a>      8.8%  ●··········█ beats 0/2    avg 5.6%                34%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-paradee-report-ccby"></a><a href="https://arxiv.org/html/2610.06817v1">Paradee: Distilling Kokoro-82M into an …</a>        2   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       10% ▇
+weighted average                                   = 46.6
+</pre>
 
 <sub>Licences: Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice TTS Model ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -30,14 +45,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                        needs  score
-onnx-fp32 (piper-tts 1.8.0)  ~0.06GB   46.9
+onnx-fp32 (piper-tts 1.8.0)  ~0.06GB   46.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# onnx-fp32 (piper-tts 1.8.0)
+# onnx-fp32 (piper-tts 1.8.0) · ~0.06GB
 pip install piper-tts && python3 -m piper.download_voices en_US-lessac-medium && python3 -m piper -m en_US-lessac-medium -f test.wav -- 'This is a test.'
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/piper-en-us-lessac-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

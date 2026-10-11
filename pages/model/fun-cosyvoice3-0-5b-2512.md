@@ -6,40 +6,63 @@
 
 Alibaba (FunAudioLLM) · released 2025-12 · 0.5B params · apache-2.0
 
-**score 64.0** ±1.2 · #22 of 117 · from 19 benchmark results across 3 sources
+**score 64.0** ±1.2 · #21 of 118 · from 19 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Fun-CosyVoice3-0.5B-2512 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">CV3-Eval hard-en · WER</a>             11.1%    60.9   2025-12-17    9% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">CV3-Eval ZH (zero-shot Chines…</a>      4.1%    61.9   2025-12-17    8% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">Seed-TTS test-en · speaker si…</a>     69.5%    61.8   2025-12-17    7% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">Seed-TTS test-zh · speaker si…</a>     77.5%    63.8   2025-12-17    7% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">CV3-Eval EN (zero-shot Englis…</a>      5.0%    64.9   2025-12-17    7% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">CV3-Eval hard-zh · CER</a>              7.4%    68.7   2025-12-17    6% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">CV3-Eval hard-en · speaker si…</a>     74.3%    68.2   2025-12-17    5% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">Seed-TTS test-en · Whisper la…</a>      2.1%    62.0   2025-12-17    3% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">Seed-TTS test-zh · Paraformer…</a>      1.1%    64.3   2025-12-17    3% ▇
-<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval EN (zero-shot Englis…</a>      5.0%    65.1   2026-06-15    8% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     69.8%    62.1   2026-06-15    6% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · speaker si…</a>     74.0%    67.9   2026-06-15    5% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (pr…</a>  3.98 / 5    68.4   2026-06-15    5% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall s…</a>     64.7%    64.6   2026-06-15    5% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human spe…</a>  3.58 / 5    63.7   2026-06-15    4% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER</a>             10.8%    61.4   2026-06-15    4% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      2.5%    58.5   2026-06-15    3% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall W…</a>      4.4%    70.4   2026-06-15    2% ▇
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>      7.8%    62.9   2026-07-27    5% ▇
-prior                   pull toward the middle                      49.7                 1% ▇
-                        weighted average                          = 64.0
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁●█▃▃   #20 of 37     28%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #20 of 37 · 28% of its score</summary>
+
+Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md) here, though they rank higher overall. Trails [DMOSpeech 2](dmospeech-2.md), [Qwen3-TTS 12Hz 0.6B Base](qwen3-tts-12hz-0-6b-base.md), [ZipVoice](zipvoice.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">Seed-TTS test-en · speaker simila…</a>   69.5%  █·█·●█·▄·▄·▄ beats 4/10   medium · avg 53%     13%  at its level · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">Seed-TTS test-zh · speaker simila…</a>   77.5%  ▃··▃█▅●··▃·▃ beats 8/10   medium · avg 62%    7.0%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">Seed-TTS test-en · Whisper large-…</a>    2.1%  ▃··▃▅··●·█▃▅ beats 4/11   avg 3.6%            5.6%  blunt · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">Seed-TTS test-zh · Paraformer CER</a>     1.1%  ▂··▄··●▂█·▄▂ beats 3/11   avg 2.1%            2.5%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (10)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">CV3-Eval hard-en · WER</a>                 11.1%  █··●█·██████ beats 1/8    avg 26%                   14%  sharp · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">CV3-Eval hard-en · speaker simila…</a>     74.3%  ▄█▄·▄··▄··▄● beats 8/8    medium · avg 49%          11%  at its level · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">CV3-Eval EN (zero-shot English) ·…</a>      5.0%  ▃·······▃▅●▅ beats 6/8    avg 16%                   11%  several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>      4.1%  ●▄···█▄·█··▄ beats 0/8    avg 9.2%                 7.6%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">CV3-Eval hard-zh · CER</a>                  7.4%  ▃▃·▃··▃▃█··● beats 8/8    avg 23%                  6.1%  typical
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice clone…</a>      7.8%  ▄···●··▄··██ beats 1/6    avg 20%                  5.2%  typical
+<a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (predic…</a>  3.98 / 5  ▄·····█·▄▄·● beats 6/6    medium · avg 2.98 / 5    5.0%  at its level
+<a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall speak…</a>     64.7%  ▄·█·█●·····▄ beats 5/6    medium · avg 44%         4.8%  at its level
+<a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human speaker…</a>  3.58 / 5  █··●█······▄ beats 2/6    medium · avg 2.84 / 5    4.4%  at its level
+<a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall WER (…</a>      4.4%  ▄··▄█····●·█ beats 4/6    avg 20%                  2.4%  noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">UltraEval-Audio</a>                                 9   51% ▇▇▇▇▇▇
+<a name="speech-raon-opentts-report-ccby"></a><a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS: Open Models and Data for …</a>        9   43% ▇▇▇▇▇
+<a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report (la…</a>        1    5% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 64.0
+</pre>
 
 <sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech ([CC BY 4.0](../../licenses/speech-raon-opentts-report-ccby.txt)) · Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt))</sub>
 
@@ -50,11 +73,15 @@ version                  needs  score
 fp32 (CosyVoice repo)  ~5.42GB   64.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (CosyVoice repo)
+# fp32 (CosyVoice repo) · ~5.42GB
 git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git && cd CosyVoice && git submodule update --init --recursive && conda create -n cosyvoice -y python=3.10 && conda activate cosyvoice && pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com && python -c "from huggingface_hub import snapshot_download; snapshot_download('FunAudioLLM/Fun-CosyVoice3-0.5B-2512', local_dir='pretrained_models/Fun-CosyVoice3-0.5B')" && python -c "import sys; sys.path.append('third_party/Matcha-TTS'); from cosyvoice.cli.cosyvoice import AutoModel; import torchaudio; cosyvoice = AutoModel(model_dir='pretrained_models/Fun-CosyVoice3-0.5B'); [torchaudio.save('zero_shot_{}.wav'.format(i), j['tts_speech'], cosyvoice.sample_rate) for i, j in enumerate(cosyvoice.inference_zero_shot('CosyVoice is undergoing a comprehensive upgrade, providing more accurate, stable, faster, and better voice generation capabilities.', 'You are a helpful assistant.<|endofprompt|>希望你以后能够做的比我还好呦。', './asset/zero_shot_prompt.wav', stream=False))]"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/fun-cosyvoice3-0-5b-2512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

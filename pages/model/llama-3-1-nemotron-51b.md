@@ -6,25 +6,63 @@
 
 NVIDIA · released 2024-09 · 51.5B params · nvidia-open-model-license
 
-**score 51.1** ±1.8 · #405 of 934 · from 6 benchmark results across 2 sources
+**score 51.0** ±1.8 · #414 of 949 · from 6 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Llama 3.1 Nemotron 51B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #259 of 466*     28%      1
+math            ▁▂▃▅●▅▄█▄▁▁▁   #234 of 400*     18%      1
+</pre>
+
+<details><summary>chat &amp; writing · #259 of 466 · 28% of its score</summary>
+
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1286.6  ▁▁▁▂▃▃●▆▆▇█▃ beats 116/379  avg 1268       28%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #234 of 400 · 18% of its score</summary>
+
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [OpenThinker 7B](openthinker-7b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank lower overall.
+
+<pre>
+test         result  vs the others in its run    difficulty           counts  why
+<a href="https://arxiv.org/html/2411.19146v5">GSM8K (lab)</a>   91.4%  ▂▂▂▅▅▆▅▇█●▄▃ beats 129/146  very easy · avg 89%     18%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                 result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2411.19146v5">ARC Challenge (lab)</a>   69.2%  ▆▁▁▂▂▅▇█●▃▃▂ beats 79/97    medium · avg 70%     19%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2411.19146v5">MMLU (lab)</a>            80.2%  ▁▁▁▁▁▂▃▅█▃●▃ beats 137/183  easy · avg 78%       14%  at its level · small run
+<a href="https://arxiv.org/html/2411.19146v5">WinoGrande (lab)</a>      84.5%  ▁···▂▁▁▅█▇▃● beats 85/87    easy · avg 85%       12%  at its level · small run
+<a href="https://arxiv.org/html/2411.19146v5">HellaSwag (lab)</a>       85.6%  ▁▁▁▁▂▂▃▇█▆●▃ beats 79/85    easy · avg 86%      8.9%  small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="paper-2411.19146v5-puzzle"></a>Puzzle: Distillation-…  <a href="https://arxiv.org/html/2411.19146v5">ARC Challenge (lab)</a>      69.2%    48.9   2025-06-03   20% ▇▇
-                        <a href="https://arxiv.org/html/2411.19146v5">GSM8K (lab)</a>              91.4%    53.3   2025-06-03   18% ▇▇
-                        <a href="https://arxiv.org/html/2411.19146v5">MMLU (lab)</a>               80.2%    52.2   2025-06-03   14% ▇▇
-                        <a href="https://arxiv.org/html/2411.19146v5">WinoGrande (lab)</a>         84.5%    49.5   2025-06-03   11% ▇
-                        <a href="https://arxiv.org/html/2411.19146v5">HellaSwag (lab)</a>          85.6%    48.7   2025-06-03    9% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1286.6    52.3   2026-10-02   27% ▇▇▇
-prior                   pull toward the middle            50.0                 1% ▇
-                        weighted average                = 51.1
+source                                    results  share of the score
+<a name="paper-2411.19146v5-puzzle"></a><a href="https://arxiv.org/html/2411.19146v5">Puzzle: Distillation-Based NAS for Infe…</a>        5   71% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   28% ▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 51.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Puzzle: Distillation-Based NAS for Inference-Optimized LLMs ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -32,17 +70,43 @@ prior                   pull toward the middle            50.0                 1
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~31.04GB   51.1
-8-bit q8_0    ~54.73GB   51.1
+4-bit q4_k_m  ~31.04GB   51.0
+8-bit q8_0    ~54.73GB   51.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF:Q4_K_M
-# 8-bit q8_0
-llama-server -hf bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF:Q8_0
+# 4-bit q4_k_m · ~31.04GB
+llama cli -hf bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF:Q4_K_M
+# 8-bit q8_0 · ~54.73GB
+llama cli -hf bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~31.04GB
+lms get https://huggingface.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~54.73GB
+lms get https://huggingface.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~31.04GB
+ollama run hf.co/bartowski/Llama-3_1-Nemotron-51B-Instruct-GGUF:Q4_K_M
+```
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-nemotron-51b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,26 +6,58 @@
 
 Black Forest Labs · released 2026-01 · 4B params · apache-2.0
 
-**score 51.2** ±1.8 · #77 of 144 · from 5 benchmark results across 4 sources
+**score 51.5** ±1.7 · #77 of 144 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks FLUX.2 \[klein\] 4B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1030.0    50.1   2026-09-24   46% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1187.5    53.3   2026-09-30   16% ▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   84.3%    51.9   2026-08-25   19% ▇▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>   19.6%    46.2   2026-10-07   11% ▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1031.0    60.6   2026-03-30    7% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 51.2
+task                    vs the others        rank  counts  tests
+text to image           ▂▅▅▃●▄█▃▁▂▁▁   #68 of 126     75%      3
+image to image / edit…  ▁▁·▃▂▃●▃▃▄▁▁   #42 of 62*     24%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #68 of 126 · 75% of its score</summary>
+
+Trails [FLUX.1 Kontext \[pro\]](flux-1-kontext-pro.md), [Photon](luma-photon.md), [P-Image](p-image.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1030.0  ▂▂▃●▇█▄▂▄▂·▂ beats 12/75  avg 1027           45%  typical
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    84.3%  ▄····▄●▄▄█▄█ beats 3/10   easy · avg 82%     18%  typical
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   19.6%  ▁●▂█▃▁▂▃·▁·▁ beats 2/22   hard · avg 28%     11%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #42 of 62 · 24% of its score</summary>
+
+Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-kontext-max.md), [Qwen-Image](qwen-image.md) here, though they rank higher overall.
+
+<pre>
+test                         result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1187.5  ▂▁▁▂●▇█▄▆▅▁▂ beats 10/53  avg 1153       17%  typical
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1031.0  ▃▂····▂█●▃▂▃ beats 9/14   avg 956       6.8%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   63% ▇▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   18% ▇▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   11% ▇
+<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    7% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 51.5
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt))</sub>
 
@@ -37,26 +69,30 @@ api (Cloudflare) · $0.0011/image · [developers.cloudflare.com](https://develop
 
 <pre>
 version                                 needs  score
-bf16 (cpu offload) · nvidia only      ~10.1GB   51.2
-bf16 · nvidia only                    ~10.1GB   51.2
-mlx-4bit · mac only                    ~2.9GB   51.2
-bf16 + Qwen3 4B bf16 (sd.cpp)         ~19.9GB   51.2
-gguf-q4_0 + Qwen3 4B q4_k_m (sd.cpp)   ~6.9GB   51.2
+bf16 (cpu offload) · nvidia only      ~10.1GB   51.5
+bf16 · nvidia only                    ~10.1GB   51.5
+mlx-4bit · mac only                    ~2.9GB   51.5
+bf16 + Qwen3 4B bf16 (sd.cpp)         ~19.9GB   51.5
+gguf-q4_0 + Qwen3 4B q4_k_m (sd.cpp)   ~6.9GB   51.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (cpu offload) · nvidia only
+# bf16 (cpu offload) · nvidia only · ~10.1GB
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2KleinPipeline; p=Flux2KleinPipeline.from_pretrained('black-forest-labs/FLUX.2-klein-4B', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=4, guidance_scale=1.0).images[0].save('out.png')"
-# bf16 · nvidia only
+# bf16 · nvidia only · ~10.1GB
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2KleinPipeline; p=Flux2KleinPipeline.from_pretrained('black-forest-labs/FLUX.2-klein-4B', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=1.0).images[0].save('out.png')"
-# mlx-4bit · mac only
+# mlx-4bit · mac only · ~2.9GB
 uvx --from mflux mflux-generate-flux2 --model flux2-klein-4b --prompt "a cat holding a sign" --steps 4 -q 4
-# bf16 + Qwen3 4B bf16 (sd.cpp)
+# bf16 + Qwen3 4B bf16 (sd.cpp) · ~19.9GB
 sd-cli --diffusion-model models/flux-2-klein-4b.safetensors --vae models/flux2_ae.safetensors --llm models/qwen_3_4b.safetensors -p "a lovely cat" --cfg-scale 1.0 --steps 4 -v --offload-to-cpu --diffusion-fa
-# gguf-q4_0 + Qwen3 4B q4_k_m (sd.cpp)
+# gguf-q4_0 + Qwen3 4B q4_k_m (sd.cpp) · ~6.9GB
 sd-cli --diffusion-model models/flux-2-klein-4b-Q4_0.gguf --vae models/flux2_ae.safetensors --llm models/Qwen3-4B-Q4_K_M.gguf -p "a lovely cat" --cfg-scale 1.0 --steps 4 -v --offload-to-cpu --diffusion-fa
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/flux-2-klein-4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

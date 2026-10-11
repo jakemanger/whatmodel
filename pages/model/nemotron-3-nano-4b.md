@@ -6,45 +6,118 @@
 
 NVIDIA · released 2026-03 · 3.97B params · nvidia-open-model
 
-**score 54.3** ±0.8 · #334 of 934 · from 26 benchmark results across 2 sources
+**score 54.3** ±0.9 · #339 of 949 · from 26 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Nemotron 3 Nano 4B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃●█▆▅▄▄▃▂▁    #269 of 334     21%      7
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #279 of 469     19%      6
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #168 of 466*    0.2%      2
+math            ▁▂▃▅▆●▄█▄▁▁▁    #189 of 400     38%      4
+web search      ●·█▄██·▄▄·▄▄     #13 of 13*    2.4%      1
+</pre>
+
+<details><summary>agent tasks · #269 of 334 · 21% of its score</summary>
+
+Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Sky-T1 32B Preview](sky-t1-32b-preview.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                               result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">τ²-bench Telecom (lab)</a>              33.0%  ▁·▅●▆▅▂▃▃▂▃▁ beats 27/89    hard · avg 19%           10%  sharp · at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BFCL V4 (December 2025 archive)</a>     43.7%  ▄·●·▄▄▄▄·▄·▄ beats 2/8      medium · avg 43%        2.7%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BrowseComp-ZH</a>                        3.3%  ●▄·▄▄▄·█···█ beats 0/8      very hard · avg 13%     2.4%  typical
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified</a>                   3.0%  ▄··▄●█··▄·▄█ beats 2/8      very hard · avg 12%     2.3%  sharp · noisy
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)</a>    0.1%  ●▂···▂···▄·▂ beats 1/8      very hard · avg 4.3%    1.6%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">τ³-bench Banking</a>                     1.2%  ●▂·▅█▂▂▃▂▅▂▃ beats 0/20     very hard · avg 3.7%    1.3%  blunt · too hard for it
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">BFCL v3 (lab)</a>                       61.1%  ▁▁▁▁▁▃▅█●▅▄▁ beats 102/170  medium · avg 58%        0.8%  blunt · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #279 of 469 · 19% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench v6 (window unspecif…</a>   50.7%  ▃····█·●▅▃·▃ beats 4/8    medium · avg 39%        5.2%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Easy)</a>      51.6%  ▄···█▄··▄●▄▄ beats 5/8    hard · avg 33%          4.2%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Medium)</a>     5.3%  █···▂··●▂··▂ beats 5/8    very hard · avg 2.0%    3.1%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified</a>                    3.0%  ▄··▄●█··▄·▄█ beats 2/8    very hard · avg 12%     2.3%  sharp · noisy
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">LiveCodeBench (version unspecifie…</a>   51.8%  ▁···▁▁▃▅▅●▄▅ beats 18/37  medium · avg 44%        2.0%  at its level · small run
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)</a>     0.1%  ●▂···▂···▄·▂ beats 1/8    very hard · avg 4.3%    1.6%  sharp · too hard for it · noisy
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #168 of 466 · 0.2% of its score</summary>
+
+Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">IFEval (aggregation unspecified)</a>     88.0%  ▄▄····▄··●██ beats 4/8    easy · avg 77%    0.2%  noisy
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">IFEval prompt-level (strictness u…</a>   87.9%  no other model yet                             —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>math · #189 of 400 · 38% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank lower overall.
+
+<pre>
+test                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2025</a>            56.3%  █▄▄▄●····█·▄ beats 5/8    medium · avg 60%        16%  sharp · at its level · several runs
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">HMMT February 2026</a>   51.3%  ▅··▃▃·▃··●·█ beats 5/8    hard · avg 30%          10%  sharp · at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2026</a>            62.1%  ▄·▄█·▄●···█▄ beats 5/8    medium · avg 48%       6.6%  sharp · at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MATH-500</a>             91.6%  ██●▄▄··▄···▄ beats 4/8    very easy · avg 89%    6.5%  maxed out · several runs
+</pre>
+
+</details>
+
+<details><summary>web search · #13 of 13 · 2.4% of its score</summary>
+
+Trails [Gemma 4 E2B](gemma-4-e2b.md), [Qwen3.5 2B](qwen3-5-2b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
+
+<pre>
+test           result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BrowseComp-ZH</a>    3.3%  ●▄·▄▄▄·█···█ beats 0/8    very hard · avg 13%    2.4%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">GPQA (subset unspecified) (lab)</a>      53.2%  ▂▁▂▂▄▃▆●▅█▄▃ beats 54/104  hard · avg 48%         7.4%  sharp · at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Pro</a>                             65.7%  ▂··▂●·▂▂···▂ beats 4/8     medium · avg 59%       4.1%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Redux</a>                           79.8%  ▂···●··▂▂··▂ beats 2/8     easy · avg 77%         3.6%  typical
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">OJBench</a>                              20.0%  ▃····▃▅··●▃▃ beats 5/8     very hard · avg 12%    2.9%  typical
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SuperGPQA</a>                            37.8%  ▃·▃·▃●█····▃ beats 3/8     hard · avg 32%         2.5%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LongBench v2</a>                         32.0%  ▃······▅●▃·█ beats 3/8     very hard · avg 32%    2.3%  typical
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">IFBench (aggregation unspecified)</a>    58.3%  ▅····▃▃·●·▃▃ beats 4/8     medium · avg 43%       1.7%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">Multi-IF (aggregation unspecified)</a>   65.9%  ▄▄···▄·●·▄██ beats 3/8     medium · avg 60%       1.2%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-openbmb-minicpm5-2b"></a>openbmb/MiniCPM5-2B m…  <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">HMMT February 2026</a>              51.3%    57.6   2026-09-06    9% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2025</a>                       56.3%    54.4   2026-09-06    8% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2026</a>                       62.1%    54.5   2026-09-06    7% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench v6 (window unsp…</a>  50.7%    54.8   2026-09-06    5% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Eas…</a>  51.6%    58.4   2026-09-06    4% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Pro</a>                        65.7%    53.3   2026-09-06    4% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MATH-500</a>                        91.6%    53.1   2026-09-06    4% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Redux</a>                      79.8%    52.0   2026-09-06    3% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">OJBench</a>                         20.0%    57.9   2026-09-06    3% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Med…</a>   5.3%    58.6   2026-09-06    3% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SuperGPQA</a>                       37.8%    53.6   2026-09-06    3% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BFCL V4 (December 2025 archiv…</a>  43.7%    49.9   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BrowseComp-ZH</a>                    3.3%    43.3   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified</a>               3.0%    44.6   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LongBench v2</a>                    32.0%    49.8   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">τ³-bench Banking</a>                 1.2%    42.1   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">IFBench (aggregation unspecif…</a>  58.3%    58.3   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecif…</a>   0.1%    44.7   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">Multi-IF (aggregation unspeci…</a>  65.9%    54.5   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">IFEval (aggregation unspecifi…</a>  88.0%    62.3   2026-09-06    0% ▇
-<a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">τ²-bench Telecom (lab)</a>          33.0%    56.3   2026-03-20    9% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">AIME 2025 (lab)</a>                 78.5%    58.1   2026-03-16    9% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">GPQA (subset unspecified) (la…</a>  53.2%    52.4   2026-03-16    7% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">MATH-500 (lab)</a>                  95.4%    57.2   2026-03-16    3% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">LiveCodeBench (version unspec…</a>  51.8%    53.6   2026-03-16    2% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">BFCL v3 (lab)</a>                   61.1%    52.4   2026-03-16    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 54.3
+source                                    results  share of the score
+<a name="card3-openbmb-minicpm5-2b"></a><a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">openbmb/MiniCPM5-2B model card</a>                 20   68% ▇▇▇▇▇▇▇▇
+<a name="first-party-nvidia-scores"></a><a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">NVIDIA vendor-reported benchmark scores…</a>        6   31% ▇▇▇▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 54.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: openbmb/MiniCPM5-2B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -67,19 +140,74 @@ nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
 <sub>[context source](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md): NVIDIA official model card: "Context length up to 262K"; the card's serving example uses --max-model-len 262144, which gives the exact token count. Observed 2026-09-25.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~2.88GB   54.3
-8-bit q8_0    ~5.26GB   54.3
+download                      size  score
+4-bit q4_k_m               ~2.88GB   54.3
+8-bit q8_0                 ~5.26GB   54.3
+4-bit Q4_K_M                ~2.8GB   54.3
+8-bit Q8_0                  ~4.2GB   54.3
+4-bit mlx-4bit · mac only   ~2.2GB   54.3
+4-bit mlx-8bit · mac only   ~4.2GB   54.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run nemotron-3-nano:4b
-# 8-bit q8_0
-ollama run nemotron-3-nano:4b-q8_0
+# 4-bit Q4_K_M · ~2.8GB
+llama cli -hf lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~4.2GB
+llama cli -hf lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~2.8GB
+lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~4.2GB
+lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~2.2GB
+lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Nano-4B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~4.2GB
+lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Nano-4B-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~2.88GB
+ollama run nemotron-3-nano:4b
+# 8-bit q8_0 · ~5.26GB
+ollama run nemotron-3-nano:4b-q8_0
+# 4-bit Q4_K_M · ~2.8GB
+ollama run hf.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~4.2GB
+ollama run hf.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~2.2GB
+mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Nano-4B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/NVIDIA-Nemotron-3-Nano-4B-4bit
+# 4-bit mlx-8bit · mac only · ~4.2GB
+mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Nano-4B-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/NVIDIA-Nemotron-3-Nano-4B-8bit
+```
 
 ## Published speed measurements
 

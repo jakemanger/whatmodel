@@ -6,20 +6,35 @@
 
 Alibaba · released 2024-03 · 14.32B params (2.7B active) · tongyi-qianwen
 
-**score 43.9** ±6.4 · #616 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.8** ±6.4 · #623 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Qwen1.5 MoE A2.7B Chat among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   62.6%  ▃▁▁▁▁▁▁▁●█▅▁ beats 97/276  medium · avg 73%     82%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  62.6%    42.6   2024-04-12   82% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                18% ▇▇
-                        weighted average                       = 43.9
+source                           results  share of the score
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   82% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle              18% ▇▇
+weighted average                          = 43.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -29,14 +44,56 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~28.63GB   43.9
+16-bit bf16 · nvidia only  ~28.63GB   43.8
+4-bit Q4_K_M                 ~9.5GB   43.8
+4-bit mlx-4bit · mac only    ~8.5GB   43.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-vllm serve Qwen/Qwen1.5-MoE-A2.7B-Chat
+# 4-bit Q4_K_M · ~9.5GB
+llama cli -hf 1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf 1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~9.5GB
+lms get https://huggingface.co/1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~8.5GB
+lms get https://huggingface.co/mlx-community/Qwen1.5-MoE-A2.7B-Chat-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~9.5GB
+ollama run hf.co/1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~8.5GB
+mlx_lm.chat --model mlx-community/Qwen1.5-MoE-A2.7B-Chat-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen1.5-MoE-A2.7B-Chat-4bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~28.63GB
+vllm serve Qwen/Qwen1.5-MoE-A2.7B-Chat
+```
 
 [interactive version](https://whatmodel.sh/model/qwen1-5-moe-a2-7b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

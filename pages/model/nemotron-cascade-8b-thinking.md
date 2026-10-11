@@ -6,40 +6,99 @@
 
 NVIDIA · released 2025-12 · 8.19B params · nvidia-open-model-license
 
-**score 57.7** ±1.5 · #254 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 57.8** ±1.5 · #256 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Nemotron-Cascade-8B-Thinking among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆██●▆▄▃▁   #196 of 469     99%      3
+</pre>
+
+<details><summary>coding · #196 of 469 · 99% of its score</summary>
+
+Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    6.1%  ▃▃····▃·●·▃▃ beats 3/7    very hard · avg 2.4%     57%  sharp · too hard for it
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   64.8%  ▄·▄····▄▄●█▄ beats 4/7    medium · avg 45%         29%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   71.4%  ▄▄···▄·▄▄●·▄ beats 6/7    medium · avg 57%         13%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="report-2512.13607v2"></a>NVIDIA  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>   6.1%    57.1   2026-03-27   57% ▇▇▇▇▇▇▇
-        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  64.8%    58.3   2026-03-27   29% ▇▇▇
-        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–Ma…</a>  71.4%    59.7   2026-03-27   13% ▇▇
-prior   pull toward the middle                   50.0                 1% ▇
-        weighted average                       = 57.7
+source                         results  share of the score
+<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                         3   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 57.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~5.03GB   57.7
-8-bit q8_0    ~8.71GB   57.7
+download                      size  score
+4-bit q4_k_m               ~5.03GB   57.8
+8-bit q8_0                 ~8.71GB   57.8
+4-bit mlx-4bit · mac only   ~4.6GB   57.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF:Q4_K_M
-# 8-bit q8_0
-llama-server -hf bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF:Q8_0
+# 4-bit q4_k_m · ~5.03GB
+llama cli -hf bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF:Q4_K_M
+# 8-bit q8_0 · ~8.71GB
+llama cli -hf bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~5.03GB
+lms get https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~8.71GB
+lms get https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.6GB
+lms get https://huggingface.co/introvoyz041/Nemotron-Cascade-8B-Thinking-mlx-4Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.03GB
+ollama run hf.co/bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF:Q4_K_M
+# 8-bit q8_0 · ~8.71GB
+ollama run hf.co/bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.6GB
+mlx_lm.chat --model introvoyz041/Nemotron-Cascade-8B-Thinking-mlx-4Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model introvoyz041/Nemotron-Cascade-8B-Thinking-mlx-4Bit
+```
 
 [interactive version](https://whatmodel.sh/model/nemotron-cascade-8b-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

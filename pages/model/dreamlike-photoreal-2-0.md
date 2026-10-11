@@ -6,24 +6,52 @@
 
 Dreamlike.art · released 2023-01 · 0.86B params · dreamlike-modified-creativeml-openrail-m
 
-**score 29.7** ±3.3 · #132 of 144 · from 3 benchmark results across 3 sources
+**score 29.9** ±3.3 · #132 of 144 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Dreamlike Photoreal 2.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                                        score  implies  date        weight
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  4.5600 mean human alignment score    24.9   2024-10-10   73% ▇▇▇▇▇▇▇▇▇
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              85.1%    40.7   2023-11-07   22% ▇▇▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>                              27.9%    57.9   2024-02-21    0% ▇
-prior                   pull toward the middle                                               49.9                 5% ▇
-                        weighted average                                                   = 29.7
+task           vs the others          rank  counts  tests
+text to image  ▂●▅▃▄▄█▃▁▂▁▁   #110 of 126*    0.3%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #110 of 126 · 0.3% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [VILA-U 7B (256px)](vila-u-7b-256.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   27.9%  ▃··▃▅·▅·▅▅█● beats 14/14  hard · avg 27%    0.3%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                                           result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  4.5600 mean human alignment score  █●▄·█·▄█▄▄·▄ beats 2/11   avg 6.285 mean human al…     73%  typical
+<a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (aspect…</a>                              85.1%  ▁····█▁·●··▁ beats 8/9    very easy · avg 92%          22%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-evalalign"></a><a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign: Supervised Fine-Tuning Multi…</a>        1   73% ▇▇▇▇▇▇▇▇▇
+<a name="visual-heim"></a><a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM: Holistic Evaluation of Text-to-Im…</a>        1   22% ▇▇▇
+<a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">tgxs002/HPSv2 repository README</a>                 1    0% ▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 29.9
+</pre>
 
 <sub>Licences: EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 
@@ -31,17 +59,21 @@ prior                   pull toward the middle                                  
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~2.6GB   29.7
-q8_0 (sd.cpp --type)  ~2.1GB   29.7
+fp16 · nvidia only    ~2.6GB   29.9
+q8_0 (sd.cpp --type)  ~2.1GB   29.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~2.6GB
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('dreamlike-art/dreamlike-photoreal-2.0', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
-# q8_0 (sd.cpp --type)
+# q8_0 (sd.cpp --type) · ~2.1GB
 sd-cli -m models/dreamlike-photoreal-2.0.safetensors --type q8_0 -p "a lovely cat"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/dreamlike-photoreal-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

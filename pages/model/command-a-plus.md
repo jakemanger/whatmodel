@@ -6,42 +6,101 @@
 
 Cohere · released 2026-05 · 218B params (25B active) · apache-2.0
 
-**score 64.3** ±1.0 · #156 of 934 · from 23 benchmark results across 3 sources
+**score 64.3** ±1.0 · #164 of 949 · from 23 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Command A+ (05-2026) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others         rank  counts  tests
+agent tasks         ▁▁▃▆█▆●▄▄▃▂▁   #141 of 334     25%      6
+coding              ▁▁▁▃▆██●▆▄▃▁   #153 of 469    9.2%      3
+math                ▁▂▃▅▆▅▄●▄▁▁▁   #104 of 400     17%      3
+vision &amp; documents  ······●·····      #1 of 1*    5.8%      2
+</pre>
+
+<details><summary>agent tasks · #141 of 334 · 25% of its score</summary>
+
+Beats [watt-tool-70B](watt-tool-70b.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+
+<pre>
+test                    result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>      25.0%  ▄········●█▄ beats 1/5    very hard · avg 4.2%    8.6%  sharp · small run · several runs
+<a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>   85.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 63/89  hard · avg 25%          5.9%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>      1.6%  ●▄····▄···█▄ beats 0/5    very hard · avg 1.8%    3.9%  too hard for it
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>   27.2%  ●▄▄·······█▄ beats 0/5    hard · avg 19%          3.4%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>       14.4%  ●··········█ beats 0/5    hard · avg 16%          2.5%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>          5.8%  ●·▄▄······▄▄ beats 1/5    very hard · avg 5.1%    1.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>coding · #153 of 469 · 9.2% of its score</summary>
+
+Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   86.1%  ▄······▄●▄·█ beats 2/5    medium · avg 50%    4.3%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                   14.4%  ●··········█ beats 0/5    hard · avg 16%      2.5%  sharp · at its level · noisy
+<a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (lab)</a>    38.0%  ▁····▃▄▄▄●▆▂ beats 21/34  hard · avg 19%      2.4%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · #104 of 400 · 17% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [gpt-oss-120b](gpt-oss-120b.md), [GLM-4.5-Air](glm-4-5-air.md) here, though they rank lower overall.
+
+<pre>
+test                result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            96.0%  ▄▄··▄····●·▄ beats 4/5      medium · avg 64%    8.7%  sharp
+<a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>      90.0%  ▁·▁▁▁▂▅▆█▇●▁ beats 116/133  medium · avg 47%    4.5%  sharp · small run
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>   73.5%  █▄●········█ beats 3/5      hard · avg 31%      3.8%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #1 of 1 · 5.8% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty      counts  why
+<a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions) (la…</a>   52.7%  ▂▅▃▅●▆▆▅▆█▆▂ beats 32/100  hard · avg 34%    2.9%  at its level · small run
+<a href="https://cohere.com/blog/command-a-plus">CharXiv descriptive questions (la…</a>   88.0%  ▂▄▄▅▇▄█●▇▂▁▂ beats 42/58   easy · avg 71%    2.9%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (9)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                         75.6%  █···●█·█··██ beats 1/5    hard · avg 42%           20%  sharp · at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                             79.0%  ●·▄▄····▄··█ beats 0/5    medium · avg 55%        6.5%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>                 11.4%  ●▄······▄·▄▄ beats 0/5    very hard · avg 4.7%    6.1%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)</a>    73.9%  ▄···▄▄··●··█ beats 3/5    medium · avg 43%        4.2%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                       45.8%  █··●·▄·····█ beats 2/5    hard · avg 25%          3.3%  at its level
+<a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   68.7%  ▂·●··▂·▄▂·█▆ beats 1/12   medium · avg 64%        1.7%  noisy
+<a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) (lab)</a>   74.0%  ▃········●█▅ beats 2/8    medium · avg 41%        1.5%  at its level · small run
+<a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                        81.0%  █·▃·▅▅▃···▃● beats 10/10  easy · avg 71%          0.8%  blunt
+<a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   76.5%  ▄·▄▄▄·▄●█▄█▄ beats 6/12   easy · avg 65%          0.6%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                    75.6%    64.1   2026-07-24   19% ▇▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>                       96.0%    69.9   2026-07-24    9% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                        79.0%    62.8   2026-07-24    6% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>            11.4%    59.9   2026-07-24    6% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>  73.9%    68.6   2026-07-24    5% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>  86.1%    68.6   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>              73.5%    64.9   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>             25.0%    66.9   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>             1.6%    54.6   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                  45.8%    63.5   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>          27.2%    54.6   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>                 5.8%    57.3   2026-07-24    2% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>              14.4%    49.9   2026-07-24    2% ▇
-<a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>          85.0%    71.0   2026-05-20    6% ▇
-                        <a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>                 90.0%    68.8   2026-05-20    5% ▇
-                        <a href="https://cohere.com/blog/command-a-plus">Terminal-Bench Hard (lab)</a>       25.0%    70.6   2026-05-20    4% ▇
-                        <a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions)…</a>  52.7%    57.5   2026-05-20    3% ▇
-                        <a href="https://cohere.com/blog/command-a-plus">CharXiv descriptive questions…</a>  88.0%    62.1   2026-05-20    3% ▇
-                        <a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (…</a>  38.0%    63.9   2026-05-20    2% ▇
-                        <a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) …</a>  74.0%    71.4   2026-05-20    1% ▇
-<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>  68.7%    49.0   2026-09-12    2% ▇
-                        <a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                   81.0%    75.4   2026-09-12    1% ▇
-                        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>  76.5%    68.1   2026-09-12    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 64.3
+source                                    results  share of the score
+<a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report</a>                  13   72% ▇▇▇▇▇▇▇▇▇
+<a name="first-party-cohere-scores"></a><a href="https://cohere.com/blog/command-a-plus">Cohere vendor-reported benchmark scores…</a>        7   25% ▇▇▇
+<a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere (lab)</a>                                    3    3% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 64.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -57,13 +116,32 @@ download          size  score
 2-bit iq2_m    ~65.9GB   64.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf bartowski/command-a-plus-05-2026-GGUF:Q4_K_M
-# 2-bit iq2_m
-llama-server -hf bartowski/command-a-plus-05-2026-GGUF:IQ2_M
+# 4-bit q4_k_m · ~131.3GB
+llama cli -hf bartowski/command-a-plus-05-2026-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/command-a-plus-05-2026-GGUF:Q4_K_M
+# 2-bit iq2_m · ~65.9GB
+llama cli -hf bartowski/command-a-plus-05-2026-GGUF:IQ2_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/command-a-plus-05-2026-GGUF:IQ2_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~131.3GB
+lms get https://huggingface.co/bartowski/command-a-plus-05-2026-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit iq2_m · ~65.9GB
+lms get https://huggingface.co/bartowski/command-a-plus-05-2026-GGUF@IQ2_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
 
 [interactive version](https://whatmodel.sh/model/command-a-plus) · [JSON](https://whatmodel.sh/api?format=json&all=1)

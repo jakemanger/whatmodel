@@ -6,35 +6,116 @@
 
 MedAIBase (Ant Group) · released 2025-12 · 102.89B params (6.1B active) · apache-2.0
 
-**score 54.6** ±4.2 · #322 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.6** ±4.4 · #328 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks AntAngelMed among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   36.6%  ▁▁▁▁▁▂▂▃▄●█▃ beats 52/97  hard · avg 32%     91%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  36.6%    55.0   2026-01-13   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 8% ▇
-                        weighted average                       = 54.6
+source                         results  share of the score
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>           1   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             9% ▇
+weighted average                        = 54.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
 ## How to run it
 
 <pre>
-download          size  score
-16-bit bf16  ~205.78GB   54.6
+download                        size  score
+16-bit bf16                ~205.78GB   54.6
+4-bit Q4_K_M                 ~62.4GB   54.6
+8-bit Q8_0                  ~109.4GB   54.6
+2-bit Q2_K                   ~37.7GB   54.6
+4-bit mlx-4bit · mac only    ~57.9GB   54.6
+4-bit mlx-8bit · mac only   ~109.3GB   54.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MedAIBase/AntAngelMed', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~62.4GB
+llama cli -hf mradermacher/AntAngelMed-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/AntAngelMed-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~109.4GB
+llama cli -hf mradermacher/AntAngelMed-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/AntAngelMed-GGUF:Q8_0
+# 2-bit Q2_K · ~37.7GB
+llama cli -hf mradermacher/AntAngelMed-GGUF:Q2_K
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/AntAngelMed-GGUF:Q2_K
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~62.4GB
+lms get https://huggingface.co/mradermacher/AntAngelMed-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~109.4GB
+lms get https://huggingface.co/mradermacher/AntAngelMed-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit Q2_K · ~37.7GB
+lms get https://huggingface.co/mradermacher/AntAngelMed-GGUF@Q2_K -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~57.9GB
+lms get https://huggingface.co/laukerry/AntAngelMed-mlx-4Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~109.3GB
+lms get https://huggingface.co/laukerry/AntAngelMed-mlx-8Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 2-bit Q2_K · ~37.7GB
+ollama run hf.co/mradermacher/AntAngelMed-GGUF:Q2_K
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~57.9GB
+mlx_lm.chat --model laukerry/AntAngelMed-mlx-4Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model laukerry/AntAngelMed-mlx-4Bit
+# 4-bit mlx-8bit · mac only · ~109.3GB
+mlx_lm.chat --model laukerry/AntAngelMed-mlx-8Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model laukerry/AntAngelMed-mlx-8Bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~205.78GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MedAIBase/AntAngelMed', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/antangelmed) · [JSON](https://whatmodel.sh/api?format=json&all=1)

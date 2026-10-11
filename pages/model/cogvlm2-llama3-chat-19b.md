@@ -6,24 +6,44 @@
 
 Zhipu AI (THUDM) · released 2024-05 · 19.5B params · cogvlm2
 
-**score 43.2** ±2.8 · #634 of 934 · from 5 benchmark results across 3 sources
+**score 43.1** ±2.8 · #639 of 949 · from 5 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks CogVLM2 Llama3 Chat 19B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others         rank  counts  tests
+vision &amp; documents  ▁●▃▂▁▃▄▃▆▇█▄   #142 of 150     96%      5
+</pre>
+
+<details><summary>vision &amp; documents · #142 of 150 · 96% of its score</summary>
+
+Beats [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                                 result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>       963.7  ▁▁●▂▂▂▄▅▅▆██ beats 4/145  avg 1068           49%  blunt
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -8.5000  ▃▃▃·▃●·▅▃▃▃▃ beats 6/12   avg -0.671         33%  typical
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>                         81.0%  ▁··▁▁▁▁▁▂●▅█ beats 15/44  easy · avg 81%    6.5%  blunt · small run
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (lab)</a>                        75.6%  ▁·▃●▆▅▂█▅█▁▃ beats 4/37   easy · avg 82%    5.2%  blunt · small run
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>                         84.2%  ▁▁▁▄▅▁▃·▃▃▃● beats 19/24  easy · avg 78%    3.0%  blunt · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                              score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>    963.7    37.5   2026-10-02   49% ▇▇▇▇▇▇
-<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -8.5000    48.8   2025-03-16   32% ▇▇▇▇
-<a name="first-party-zai-cogvlm2-scores"></a>Zhipu AI                <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>                     81.0%    50.5   2024-09-03    7% ▇
-                        <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (lab)</a>                    75.6%    37.0   2024-09-03    5% ▇
-                        <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>                     84.2%    64.4   2024-09-03    3% ▇
-prior                   pull toward the middle                     50.0                 4% ▇
-                        weighted average                         = 43.2
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   49% ▇▇▇▇▇▇
+<a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1   33% ▇▇▇▇
+<a name="first-party-zai-cogvlm2-scores"></a><a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">Zhipu AI (lab)</a>                                  3   15% ▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 43.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -31,17 +51,21 @@ prior                   pull toward the middle                     50.0         
 
 <pre>
 download                                      size  score
-16-bit bf16 · nvidia only                 ~39.01GB   43.2
-4-bit int4 (bitsandbytes at load) · nvi…  ~39.01GB   43.2
+16-bit bf16 · nvidia only                 ~39.01GB   43.1
+4-bit int4 (bitsandbytes at load) · nvi…  ~39.01GB   43.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16 · nvidia only
+# 16-bit bf16 · nvidia only · ~39.01GB
 git clone https://github.com/zai-org/CogVLM2 && cd CogVLM2/basic_demo && pip install -r requirements.txt && CUDA_VISIBLE_DEVICES=0 python cli_demo.py
-# 4-bit int4 (bitsandbytes at load) · nvidia only
+# 4-bit int4 (bitsandbytes at load) · nvidia only · ~39.01GB
 git clone https://github.com/zai-org/CogVLM2 && cd CogVLM2/basic_demo && pip install -r requirements.txt && CUDA_VISIBLE_DEVICES=0 python cli_demo.py --quant 4
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cogvlm2-llama3-chat-19b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

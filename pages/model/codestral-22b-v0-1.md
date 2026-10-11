@@ -6,26 +6,55 @@
 
 Mistral AI · released 2024-05 · 22.25B params · mnpl
 
-**score 49.9** ±0.8 · #436 of 934 · from 7 benchmark results across 4 sources
+**score 49.7** ±0.8 · #452 of 949 · from 7 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Codestral 22B v0.1 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #264 of 469     91%      4
+</pre>
+
+<details><summary>coding · #264 of 469 · 91% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            79.9%  ▁·▁▁▃▄▆▅●▃▁▁ beats 84/99  easy · avg 79%       40%  sharp
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           73.8%  ▁·▁▁▁▃▄▄▄●▃▁ beats 84/99  easy · avg 74%       34%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   51.1%  ▁·▁▂▄▁●▄█▆▂▂ beats 17/62  medium · avg 54%     12%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                61.9%  ▁···▁▁▂▅▇●▆▂ beats 41/75  easy · avg 68%      6.7%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/mistralai--Codestral-22B-v0.1_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   72.8%  ▂·▂▂▂▆●▆▆▆▃█ beats 8/29     easy · avg 76%      3.8%  typical
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   27.4%  ▅··●▅·█·▃██▃ beats 2/15     hard · avg 24%      3.2%  typical
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.0%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 179/276  medium · avg 73%    1.3%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       79.9%    50.4   2024-12-26   40% ▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      73.8%    50.2   2024-12-26   34% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           61.9%    46.0   2024-12-26    6% ▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/mistralai--Codestral-22B-v0.1_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  72.8%    48.0   2024-10-19    4% ▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  51.1%    49.1   2024-06-09   11% ▇
-<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>  27.4%    53.5   2026-08-31    3% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  71.0%    48.8   2024-07-02    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 49.9
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        4   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   12% ▇
+<a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1    3% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 49.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -34,18 +63,65 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://docs.mistral.ai/models/codestral-24-05): Context limit from the maker's documentation, observed 2026-10-06.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~13.85GB   49.9
-8-bit q8_0     ~27.2GB   49.9
+download                       size  score
+4-bit q4_k_m               ~13.85GB   49.7
+8-bit q8_0                  ~27.2GB   49.7
+4-bit Q4_K_M                ~13.3GB   49.7
+8-bit Q8_0                  ~23.6GB   49.7
+4-bit mlx-4bit · mac only   ~12.5GB   49.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run codestral:22b-v0.1-q4_K_M
-# 8-bit q8_0
-ollama run codestral:22b-v0.1-q8_0
+# 4-bit Q4_K_M · ~13.3GB
+llama cli -hf bartowski/Codestral-22B-v0.1-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Codestral-22B-v0.1-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~23.6GB
+llama cli -hf bartowski/Codestral-22B-v0.1-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Codestral-22B-v0.1-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~13.3GB
+lms get https://huggingface.co/bartowski/Codestral-22B-v0.1-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~23.6GB
+lms get https://huggingface.co/bartowski/Codestral-22B-v0.1-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~12.5GB
+lms get https://huggingface.co/rairahulr1/Codestral-22B-v0.1-mlx-4Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~13.85GB
+ollama run codestral:22b-v0.1-q4_K_M
+# 8-bit q8_0 · ~27.2GB
+ollama run codestral:22b-v0.1-q8_0
+# 4-bit Q4_K_M · ~13.3GB
+ollama run hf.co/bartowski/Codestral-22B-v0.1-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~23.6GB
+ollama run hf.co/bartowski/Codestral-22B-v0.1-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~12.5GB
+mlx_lm.chat --model rairahulr1/Codestral-22B-v0.1-mlx-4Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model rairahulr1/Codestral-22B-v0.1-mlx-4Bit
+```
 
 [interactive version](https://whatmodel.sh/model/codestral-22b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

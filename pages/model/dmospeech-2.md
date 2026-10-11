@@ -6,25 +6,43 @@
 
 Columbia University / NewsBreak (Yinghao Aaron Li, Xilin Jiang et al.) · released 2025-07 · 0.3B params · mit
 
-**score 61.7** ±3.6 · #35 of 117 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 61.5** ±3.7 · #37 of 118 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks DMOSpeech 2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  69.8%    62.2   2025-07-20   37% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  76.0%    62.1   2025-07-20   34% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   1.8%    66.3   2025-07-20   14% ▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   1.5%    57.8   2025-07-20   10% ▇
-prior                   pull toward the middle                   49.7                 5% ▇
-                        weighted average                       = 61.7
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁▇●▃▃   #19 of 37     95%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #19 of 37 · 95% of its score</summary>
+
+Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [Fun-CosyVoice3-0.5B-2512](fun-cosyvoice3-0-5b-2512.md), [MOSS-TTS v1.5 (8B)](moss-tts-v1-5.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker simila…</a>   69.8%  ▁·▂▂▂●▆▃▅··▂ beats 14/30  medium · avg 53%     37%  at its level
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker simila…</a>   76.0%  ▁·▂··▂·●▄·▃▄ beats 9/25   medium · avg 62%     35%  typical
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper large-…</a>    1.8%  ▁···▂▂▂▂█●▄▂ beats 21/35  avg 3.6%             13%  blunt
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer CER…</a>    1.5%  ▁·▂▁▁▁●▃▅█·▂ beats 7/30   avg 2.1%            9.5%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-dmospeech2-report-bysa"></a><a href="https://arxiv.org/html/2507.14988v1">DMOSpeech 2: Reinforcement Learning for…</a>        4   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 61.5
+</pre>
 
 <sub>Licences: DMOSpeech 2: Reinforcement Learning for Duration Prediction in Metric-Optimized Speech Synthesis ([CC BY-SA 4.0](../../licenses/speech-dmospeech2-report-bysa.txt))</sub>
 
@@ -32,14 +50,18 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                                 needs  score
-fp32 (DMOSpeech2 repo) · nvidia only  ~4.34GB   61.7
+fp32 (DMOSpeech2 repo) · nvidia only  ~4.34GB   61.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (DMOSpeech2 repo) · nvidia only
+# fp32 (DMOSpeech2 repo) · nvidia only · ~4.34GB
 conda create -n dmo2 python=3.10 && conda activate dmo2 && git clone https://github.com/yl4579/DMOSpeech2.git && cd DMOSpeech2 && pip install -r requirements.txt && mkdir ckpts && cd ckpts && wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_85000.pt && wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_1500.pt && cd ../src && python -c "from infer import DMOInference; import soundfile as sf; tts = DMOInference(student_checkpoint_path='../ckpts/model_85000.pt', duration_predictor_path='../ckpts/model_1500.pt', device='cuda', model_type='F5TTS_Base'); generated_audio = tts.generate(gen_text='I don\'t really care what you call me. I\'ve been a silent spectator, watching species evolve, empires rise and fall. But always remember, I am mighty and enduring.', audio_path='f5_tts/infer/examples/basic/basic_ref_en.wav', prompt_text='Some call me nature, others call me mother nature.'); sf.write('generated.wav', generated_audio, 24000)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/dmospeech-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,27 +6,56 @@
 
 Poolside · released 2026-04 · 33B params (3B active) · apache-2.0
 
-**score 64.8** ±1.5 · #151 of 934 · from 8 benchmark results across 3 sources
+**score 64.6** ±1.5 · #161 of 949 · from 8 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Laguna XS.2 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others         rank  counts  tests
+agent tasks  ●██········█       #4 of 4     65%      4
+coding       ▁▁▁▃▆██▇●▄▃▁   #129 of 469     79%      4
+</pre>
+
+<details><summary>agent tasks · #4 of 4 · 65% of its score</summary>
+
+<pre>
+test                          result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 75/131  hard · avg 27%          24%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       35.7%  ▂▂▅▅●███▆▂▃▃ beats 8/36    very hard · avg 11%     20%  at its level · small run · several runs
+<a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   57.7%  ▁··▁▃▂●▇█▃▃▁ beats 18/60   hard · avg 28%          18%  at its level · small run · several runs
+<a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Pro (lab)</a>            46.3%  ●▃▃·▃·▅▅▅█▃▃ beats 1/15    hard · avg 30%         3.5%  blunt · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #129 of 469 · 79% of its score</summary>
+
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
+
+<pre>
+test                          result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1301.9  ▁▂▄●▅█▄▇▆▄▁▁ beats 21/119  avg 981            34%  sharp
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 75/131  hard · avg 27%     24%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   57.7%  ▁··▁▃▂●▇█▃▃▁ beats 18/60   hard · avg 28%     18%  at its level · small run · several runs
+<a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Pro (lab)</a>            46.3%  ●▃▃·▃·▅▅▅█▃▃ beats 1/15    hard · avg 30%    3.5%  blunt · at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                           score  implies  date        weight
-<a name="first-party-poolside-scores"></a>Poolside vendor-repor…  <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Verified (lab)</a>       69.9%    66.8   2026-06-20   12% ▇
-                        <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   57.7%    63.8   2026-06-20   10% ▇
-                        <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">Terminal-Bench 2.0 (lab)</a>       35.7%    64.6   2026-06-20   10% ▇
-                        <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Pro (lab)</a>            46.3%    63.7   2026-06-20    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1301.9    64.4   2026-10-01   33% ▇▇▇▇
-<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%    66.7   2026-05-26   12% ▇
-                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       35.7%    63.6   2026-05-26   10% ▇
-                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   57.7%    65.1   2026-05-26    8% ▇
-prior                   pull toward the middle                  50.0                 1% ▇
-                        weighted average                      = 64.8
+source                                    results  share of the score
+<a name="first-party-poolside-scores"></a><a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">Poolside vendor-reported benchmark scor…</a>        4   36% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   34% ▇▇▇▇
+<a name="report-2605.27605v1"></a><a href="https://arxiv.org/html/2605.27605v1">Poolside (lab)</a>                                  3   30% ▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 64.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Poolside ([CC BY-SA 4.0](../../licenses/report-2605.27605v1.txt))</sub>
 
@@ -45,17 +74,70 @@ poolside/Laguna-XS.2 …  <a href="https://huggingface.co/poolside/Laguna-XS.2/b
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  66.89GB   64.8
-4-bit q4_k_m                 ~23GB   64.8
+16-bit bf16 · nvidia only  66.89GB   64.6
+4-bit q4_k_m                 ~23GB   64.6
+4-bit q4_k_m                 ~23GB   64.6
+4-bit Q4_K_M               ~20.3GB   64.6
+4-bit mlx-4bit · mac only  ~18.8GB   64.6
+4-bit mlx-8bit · mac only  ~35.5GB   64.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-vllm serve poolside/Laguna-XS.2 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice
-# 4-bit q4_k_m
-ollama run laguna-xs.2:latest
+# 4-bit Q4_K_M · ~20.3GB
+llama cli -hf Lucebox/Laguna-XS.2-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Lucebox/Laguna-XS.2-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~20.3GB
+lms get https://huggingface.co/Lucebox/Laguna-XS.2-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~18.8GB
+lms get https://huggingface.co/mlx-community/Laguna-XS.2-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~35.5GB
+lms get https://huggingface.co/mlx-community/Laguna-XS.2-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~23GB
+ollama run laguna-xs.2:latest
+# 4-bit q4_k_m · ~23GB
+ollama run laguna-xs.2:latest
+# 4-bit Q4_K_M · ~20.3GB
+ollama run hf.co/Lucebox/Laguna-XS.2-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~18.8GB
+mlx_lm.chat --model mlx-community/Laguna-XS.2-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Laguna-XS.2-4bit
+# 4-bit mlx-8bit · mac only · ~35.5GB
+mlx_lm.chat --model mlx-community/Laguna-XS.2-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Laguna-XS.2-8bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · 66.89GB
+vllm serve poolside/Laguna-XS.2 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice
+```
 
 [interactive version](https://whatmodel.sh/model/laguna-xs-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

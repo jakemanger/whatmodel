@@ -16,7 +16,12 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
+# fp32 · CPU · ~4GB
 uv run --with speechbrain --with soundfile python -c "import soundfile as sf; from speechbrain.inference.TTS import FastSpeech2; from speechbrain.inference.vocoders import HIFIGAN; t=FastSpeech2.from_hparams(source='speechbrain/tts-fastspeech2-ljspeech', savedir='pretrained/fastspeech2'); v=HIFIGAN.from_hparams(source='speechbrain/tts-hifigan-ljspeech', savedir='pretrained/hifigan'); mel,_,_,_=t.encode_text(['Hello world.']); wav=v.decode_batch(mel); sf.write('speech.wav', wav.squeeze().detach().cpu().numpy(), 22050)"
 ```
 

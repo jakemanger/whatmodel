@@ -6,28 +6,61 @@
 
 EleutherAI · released 2021-03 · 1.3B params · mit
 
-**score 13.5** ±2.2 · #918 of 934 · from 7 benchmark results across 3 sources
+**score 13.6** ±2.0 · #933 of 949 · from 11 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks GPT-Neo 1.3B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others      rank  counts  tests
+math  ●···█······█   #3 of 3*    8.7%      1
+</pre>
+
+<details><summary>math · #3 of 3 · 8.7% of its score</summary>
+
+Trails [GPT-2 XL (1.5B)](gpt-2-xl.md) here, though they rank lower overall.
+
+<pre>
+test          result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA (lab)</a>   24.1%  █···●··█···█ beats 1/3    hard · avg 46%    8.7%  too hard for it
+</pre>
+
+</details>
+
+<details><summary>other tests (10)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                      48.9%  ▄·●·█··▄▄··▄ beats 1/7     very easy · avg 92%     26%  at its level
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   57.2%  █·●··█··█··▄ beats 2/7     very easy · avg 90%     15%  blunt · at its level
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                     55.0%  ▄·●·▄▄▄··█·▄ beats 1/7     easy · avg 89%          15%  typical
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2024-02-11%2016%3A59%3A09.001434.json">Natural Questions (closed book)</a>       4.0%  ▁·▁·▁●▁▂·▅▂█ beats 4/28    medium · avg 58%        13%  too hard for it
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                           71.1%  ●··▃··▃▃·▃·▃ beats 2/7     easy · avg 89%          10%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2023-12-23%2012%3A22%3A01.380579.json">TriviaQA</a>                             14.2%  ▁··▁█●▃▁▄▅▄█ beats 9/28    easy · avg 79%         3.0%  noisy
+<a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA (lab)</a>                       54.4%  ●·▄▆·▄▂▄▄▂█▂ beats 2/20    medium · avg 75%       2.8%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2023-12-08%2021%3A38%3A29.151646.json">TruthfulQA MC2</a>                       39.6%  ▅▃●▆▁▂▅···▁▁ beats 8/31    medium · avg 64%       2.6%  blunt · at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   26.7%  ●▁▁▁▁▁▁▁▂█▅▁ beats 22/276  medium · avg 73%       2.1%  too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2023-12-13%2013%3A02%3A51.572572.json">HaluEval QA hallucination detecti…</a>   46.3%  ●▁▁·▁▁·▁▁▁▁▁ beats 15/27   medium · avg 70%       0.4%  sharp · too hard for it · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                 48.9%    12.9   2021-08-06   29% ▇▇▇▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  57.2%    15.4   2021-08-06   18% ▇▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                55.0%    11.1   2021-08-06   17% ▇▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                      71.1%    14.9   2021-08-06   11% ▇
-<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA (lab)</a>                    24.1%    12.6   2021-04-12   10% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA (lab)</a>                  54.4%    11.0   2021-04-12   10% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  26.7%     0.2   2024-02-05    3% ▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 13.5
+source                                    results  share of the score
+<a name="eleutherai-gpt-j-6b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">EleutherAI GPT-J-6B model card (lab)</a>            4   66% ▇▇▇▇▇▇▇▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-1.3B/results_2024-02-11%2016%3A59%3A09.001434.json">Hallucinations Leaderboard results</a>              4   19% ▇▇
+<a name="eleutherai-gpt-neo-2-7b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">EleutherAI GPT-Neo 2.7B model card (lab)</a>        2   12% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 13.6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -35,14 +68,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp32  ~5.31GB   13.5
+4-bit fp32  ~5.31GB   13.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp32
+# 4-bit fp32 · ~5.31GB
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neo-1.3B')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/gpt-neo-1-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

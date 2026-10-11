@@ -6,21 +6,39 @@
 
 ShengShu (Vidu) · released 2024-11 · proprietary
 
-**score 37.8** ±3.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.9** ±3.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Vidu 1.5 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others        rank  counts  tests
+text to video  ▇▅▄●█▆▇▂▃▃▂▄   #69 of 94*     95%      2
+</pre>
+
+<details><summary>text to video · #69 of 94 · 95% of its score</summary>
+
+Trails [Pika 2.2](pika-2-2.md), [LTX-2.3](ltx-2-3.md), [T2V-Turbo (VC2)](t2v-turbo-vc2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   54.6%  ▄▄·█··█▄●▄▄▄ beats 7/10   easy · avg 73%     61%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   58.3%  ▄▄·█▄█▄··▄●▄ beats 9/10   easy · avg 70%     35%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>  54.6%    36.0   2025-05-17   61% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>  58.3%    39.3   2025-05-17   35% ▇▇▇▇
-prior                   pull toward the middle                   49.9                 5% ▇
-                        weighted average                       = 37.8
+source                                    results  share of the score
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 37.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt))</sub>
 

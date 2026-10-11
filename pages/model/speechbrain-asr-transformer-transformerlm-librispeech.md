@@ -6,23 +6,38 @@
 
 SpeechBrain · released 2022-03 · apache-2.0
 
-**score 39.4** ±7.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 40.4** ±7.4 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks SpeechBrain Transformer + TransformerLM (LibriSpeech) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="first-party-speechbrain-asr-cards"></a>SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-other WER (l…</a>   5.5%    36.4   2024-02-19   61% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-clean WER (l…</a>   2.3%    37.3   2024-02-19   18% ▇▇
-prior                   pull toward the middle                   49.8                21% ▇▇▇
-                        weighted average                       = 39.4
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                              result  vs the others in its run   difficulty  counts  why
+<a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-other WER (lab)</a>    5.5%  ▁▁▁▂▅●▅▄█▂▂▁ beats 17/54   avg 2.8%       59%  small run
+<a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-clean WER (lab)</a>    2.3%  ▁·▁·▁▁▁▁▃●█▆ beats 44/100  avg 1.6%       19%  blunt · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="first-party-speechbrain-asr-cards"></a><a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">SpeechBrain Hugging Face ASR model card…</a>        2   79% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       21% ▇▇▇
+weighted average                                   = 40.4
+</pre>
 
 <sub>Licences: SpeechBrain Hugging Face ASR model cards: published LibriSpeech/VoxPopuli WER for its own checkpoints ([Apache-2.0](https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md))</sub>
 

@@ -8,18 +8,33 @@ Runway · released 2026-05 · proprietary
 
 **score 65.3** ±6.7 · #22 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Runway Aleph 2.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="visual-wrop-object-permanence"></a>Training Object Perma…  <a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (…</a>  1518.3    68.9   2026-09-23   81% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    49.9                19% ▇▇
-                        weighted average                        = 65.3
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (huma…</a>  1518.3  ▄····█●···▄█ beats 4/7    avg 1299       81%  noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-wrop-object-permanence"></a><a href="https://arxiv.org/html/2609.28654v1#S5.T2">Training Object Permanence in World Mod…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       19% ▇▇
+weighted average                                   = 65.3
+</pre>
 
 <sub>Licences: Training Object Permanence in World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

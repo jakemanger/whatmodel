@@ -6,44 +6,114 @@
 
 BigScience · released 2022-07 · 1.72B params · bigscience-bloom-rail-1.0
 
-**score 13.8** ±1.5 · #916 of 934 · from 8 benchmark results across 3 sources
+**score 13.8** ±1.4 · #931 of 949 · from 12 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks BLOOM 1.7B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others      rank  counts  tests
+coding  █··█·●·██··█   #4 of 6*     18%      1
+</pre>
+
+<details><summary>coding · #4 of 6 · 18% of its score</summary>
+
+<pre>
+test             result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>    4.0%  ▄···▄·●·█··▄ beats 2/5    easy · avg 78%     18%  sharp · too hard for it
+</pre>
+
+</details>
+
+<details><summary>other tests (11)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                             56.2%  ▃·▅▃▃▅·●█▃██ beats 7/19    very easy · avg 90%     19%  at its level
+<a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 85.1%  ▂··▂▃▂▂●▃▃█▂ beats 9/19    very easy · avg 98%     16%  typical
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           57.2%  ▄····▄▆▂●▆▆█ beats 8/19    easy · avg 89%          10%  typical
+<a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 68.6%  ▂·▄▄·▄●▆▂▄█▄ beats 7/19    easy · avg 88%          10%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   46.2%  ▃··▅▃▃●▅▅███ beats 6/19    very easy · avg 89%    9.1%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b7/results_2024-02-12%2000%3A59%3A11.499700.json">Natural Questions (closed book)</a>       3.5%  ▁·▁·▁●▁▂·▅▂█ beats 3/28    medium · avg 58%       6.3%  too hard for it
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        23.8%  ●··▁·▁▁·▁▂▁▂ beats 3/19    medium · avg 72%       6.2%  sharp · too hard for it
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b7/results_2023-12-21%2013%3A02%3A13.597525.json">TriviaQA</a>                             12.7%  ▁··▁█●▃▁▄▅▄█ beats 8/28    easy · avg 79%         1.4%  noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b7/results_2024-03-15%2020%3A16%3A48.786685.json">TruthfulQA MC2</a>                       41.3%  ▅▃●▆▁▂▅···▁▁ beats 11/31   medium · avg 64%       1.2%  blunt · at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.6%  ●▁▁▁▁▁▁▁▂█▅▁ beats 29/276  medium · avg 73%       1.0%  too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b7/results_2023-12-13%2014%3A06%3A29.091254.json">HaluEval QA hallucination detecti…</a>   49.5%  ●▁▁·▁▁·▁▁▁▁▁ beats 10/27   medium · avg 70%       0.2%  sharp · too hard for it · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        56.2%    15.0   2023-05-31   20% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            85.1%    15.5   2023-05-31   17% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      57.2%    16.7   2023-05-31   11% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            68.6%    12.6   2023-05-31   11% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  46.2%     9.0   2023-05-31   10% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   23.8%     5.5   2023-05-31    7% ▇
-<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>                  4.0%    14.9   2023-06-27   21% ▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.6%     0.5   2024-02-05    1% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 13.8
+source                                    results  share of the score
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   71% ▇▇▇▇▇▇▇▇
+<a name="paper-2211.05100v4"></a><a href="https://arxiv.org/html/2211.05100v4">BLOOM: A 176B-Parameter Open-Access Mul…</a>        1   18% ▇▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b7/results_2024-02-12%2000%3A59%3A11.499700.json">Hallucinations Leaderboard results</a>              4    9% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 13.8
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/bigscience/bloom-1b7/blob/cc72a88036c2fb937d65efeacc57a0c2ef5d6fe5/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
 
 <pre>
-download       size  score
-4-bit fp16  ~3.44GB   13.8
+download         size  score
+4-bit fp16    ~3.44GB   13.8
+4-bit Q4_K_M   ~1.5GB   13.8
+8-bit Q8_0     ~2.4GB   13.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp16
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-1b7')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~1.5GB
+llama cli -hf mradermacher/bloom-1b7-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/bloom-1b7-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~2.4GB
+llama cli -hf mradermacher/bloom-1b7-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/bloom-1b7-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~1.5GB
+lms get https://huggingface.co/mradermacher/bloom-1b7-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~2.4GB
+lms get https://huggingface.co/mradermacher/bloom-1b7-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~1.5GB
+ollama run hf.co/mradermacher/bloom-1b7-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~2.4GB
+ollama run hf.co/mradermacher/bloom-1b7-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp16 · ~3.44GB
+uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-1b7')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/bloom-1b7) · [JSON](https://whatmodel.sh/api?format=json&all=1)

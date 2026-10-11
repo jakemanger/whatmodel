@@ -6,24 +6,40 @@
 
 RVC-Boss · released 2024-08 · 0.2B params · mit
 
-**score 44.2** ±3.5 · #79 of 117 · from 3 benchmark results across 2 sources
+**score 44.0** ±3.5 · #80 of 118 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks GPT-SoVITS v2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  3.82 / 5    45.3   2025-05-11   82% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.81 / 5    31.1   2025-05-11    8% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     87.2%    42.1   2025-05-15    5% ▇
-prior                   pull toward the middle                      49.7                 5% ▇
-                        weighted average                          = 44.2
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  3.82 / 5  ▅·█▅▅·█▃●▅·▅ beats 13/17  easy · avg 4.03 / 5       82%  at its level
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.81 / 5  ▅··▃▅··●█▅██ beats 5/17   medium · avg 3.30 / 5    8.0%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     87.2%  ▂▂█·▂·█●▂·▄▂ beats 13/17  very easy · avg 89%      5.4%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                 results  share of the score
+<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                2   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>        1    5% ▇
+prior: pull toward the middle                     5% ▇
+weighted average                                = 44.0
+</pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt))</sub>
 
@@ -31,17 +47,21 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                               needs  score
-fp32 (repo api_v2.py)                ~1.1GB   44.2
-fp16 (repo api_v2.py) · nvidia only  ~1.1GB   44.2
+fp32 (repo api_v2.py)                ~1.1GB   44.0
+fp16 (repo api_v2.py) · nvidia only  ~1.1GB   44.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (repo api_v2.py)
+# fp32 (repo api_v2.py) · ~1.1GB
 git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && conda create -n GPTSoVits python=3.10 && conda activate GPTSoVits && bash install.sh --device CPU --source HF && python api_v2.py -a 127.0.0.1 -p 9880 -c GPT_SoVITS/configs/tts_infer.yaml
-# fp16 (repo api_v2.py) · nvidia only
+# fp16 (repo api_v2.py) · nvidia only · ~1.1GB
 git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && conda create -n GPTSoVits python=3.10 && conda activate GPTSoVits && bash install.sh --device CU128 --source HF && python api_v2.py -a 127.0.0.1 -p 9880 -c GPT_SoVITS/configs/tts_infer.yaml
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/gpt-sovits-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -8,20 +8,50 @@ Google · released 2025-04 · closed weights
 
 **score 49.5** ±1.8 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Veo 2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1164.4    51.5   2026-09-22   55% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1165.8    47.6   2026-09-22   37% ▇▇▇▇
-<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>   992.0    43.7   2025-05-05    7% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 49.5
+task            vs the others        rank  counts  tests
+text to video   ▇▅▄▆█●▇▂▃▃▂▄   #37 of 94*     55%      1
+image to video  ▁▁▂●██▄▃▃▄▂▂   #65 of 74*     43%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #37 of 94 · 55% of its score</summary>
+
+Beats [Kling 2.1 Master](kling-2-1-master.md), [PixVerse 5.5](pixverse-v5-5.md), [LongCat-Video](longcat-video.md) here, though they rank higher overall.
+
+<pre>
+test           result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1164.4  ▂▂▃●█▆·▆▅▁▂▇ beats 9/41   avg 1147       55%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #65 of 74 · 43% of its score</summary>
+
+Trails [Wan 2.1 I2V Turbo](wan-2-1-i2v-turbo.md), [HunyuanVideo-I2V](hunyuanvideo-i2v.md), [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1165.8  ▁▁▁▁●▇▃▆▃▂▄█ beats 4/40   avg 1189       36%  typical
+<a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo (Se…</a>   992.0  ▄·····●█··▄▄ beats 1/5    avg 1043      7.0%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="video-seaweed-7b"></a><a href="https://arxiv.org/html/2504.08685v2#S4.T3">Seaweed-7B: Cost-Effective Training of …</a>        1    7% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 49.5
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model ([CC-BY-4.0](../../licenses/video-seaweed-7b.txt))</sub>
 

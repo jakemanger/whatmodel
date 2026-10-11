@@ -6,42 +6,79 @@
 
 DeepSeek · released 2023-11 · 7B params · deepseek
 
-**score 34.7** ±1.7 · #792 of 934 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 34.6** ±1.7 · #808 of 949 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks DeepSeek LLM 7B Chat among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁▃●██▇▆▄▃▁   #413 of 469*     27%      2
+math    ●··········█       #2 of 2*     26%      2
+</pre>
+
+<details><summary>coding · #413 of 469 · 27% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall.
+
+<pre>
+test             result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">HumanEval (lab)</a>   45.1%  ▁▁▁▁▁▃●▅█▃▂▁ beats 68/190  easy · avg 84%     18%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MBPP (lab)</a>        39.0%  ▁▁▁●▅█▄▅▃▁▂▁ beats 13/81   easy · avg 71%    9.0%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · #2 of 2 · 26% of its score</summary>
+
+<pre>
+test         result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>   62.6%  ▂▂▂▅▅▆●▇█▇▄▃ beats 59/146  very easy · avg 89%     16%  sharp · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MATH (lab)</a>    14.7%  ▃▅▂▆●▃▅▃█▃▃▂ beats 12/29   medium · avg 47%        10%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                  result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">BIG-Bench Hard (lab)</a>   43.1%  ▁▁▁▁▂▄●▅█▃▄▁ beats 30/129  easy · avg 75%     17%  sharp · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MMLU (lab)</a>             49.7%  ▁▁▁▁▁▂▃●█▃▆▃ beats 35/183  easy · avg 77%     12%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">C-Eval (lab)</a>           44.7%  ▁···▁▁●▁▂▂▃█ beats 4/33    easy · avg 74%    8.8%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">CMMLU (lab)</a>            51.2%  ●·▅····█▃▅█▅ beats 0/14    easy · avg 76%    7.9%  at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="first-party-deepseek-scores"></a>DeepSeek vendor-repor…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">HumanEval (lab)</a>         45.1%    35.7   2024-06-25   18% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">BIG-Bench Hard (lab)</a>    43.1%    35.2   2024-06-25   17% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>             62.6%    36.6   2024-06-25   17% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MMLU (lab)</a>              49.7%    35.1   2024-06-25   12% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MATH (lab)</a>              14.7%    32.7   2024-06-25   10% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MBPP (lab)</a>              39.0%    33.1   2024-06-25    9% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">C-Eval (lab)</a>            44.7%    30.8   2024-06-25    9% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">CMMLU (lab)</a>             51.2%    32.9   2024-06-25    8% ▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 34.7
+source                                    results  share of the score
+<a name="first-party-deepseek-scores"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">DeepSeek vendor-reported benchmark scor…</a>        8   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 34.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
-
-
 
 ## How to run it
 
 <pre>
 download    size  score
-4-bit q4_0  ~4GB   34.7
+4-bit q4_0  ~4GB   34.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
 ```sh
-# 4-bit q4_0
+# 4-bit q4_0 · ~4GB
 ollama run deepseek-llm:7b
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/deepseek-llm-7b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,27 +6,46 @@
 
 Ant Group · released 2026-09 · 6B params · apache-2.0
 
-**score 53.4** ±2.6 · #70 of 144 · from 6 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 53.5** ±2.6 · #70 of 144 · from 6 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LLaDA-Image-Turbo among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-llada-image"></a>LLaDA-Image: Building…  <a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (EN) (lab)</a>       89.9%    52.0   2026-09-03   20% ▇▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (CN) (lab)</a>       91.9%    54.7   2026-09-03   15% ▇▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (lab)</a>                   82.0%    53.0   2026-09-03   14% ▇▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T6">CVTG-2K word accuracy (lab)</a>     84.0%    52.1   2026-09-03   12% ▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>                 88.5%    52.9   2026-09-03   11% ▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>  41.3%    55.0   2026-10-07   26% ▇▇▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 53.4
+task           vs the others        rank  counts  tests
+text to image  ▂▅▅▃▄●█▃▁▂▁▁   #60 of 126     97%      6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #60 of 126 · 97% of its score</summary>
+
+Beats [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md), [Qwen-Image](qwen-image.md) here, though they rank higher overall. Trails [LongCat-Image](longcat-image.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   41.3%  ▁▂▂●▃▁▂▃·▁·▁ beats 9/22   hard · avg 28%          26%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (EN) (lab)</a>            89.9%  ▃·····●██▅▃▃ beats 1/12   very easy · avg 88%     19%  small run
+<a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (CN) (lab)</a>            91.9%  ▃·······█●██ beats 5/12   very easy · avg 89%     15%  small run
+<a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (lab)</a>                        82.0%  ▇▃▅▇▁▄▅▃●▃▃▅ beats 31/39  easy · avg 79%          14%  small run
+<a href="https://arxiv.org/html/2609.03796v1#S5.T6">CVTG-2K word accuracy (lab)</a>          84.0%  ●▄▄█▄▄·▄···▄ beats 0/8    easy · avg 81%          12%  small run
+<a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>                      88.5%  ▄·▂·▂▆█▄▂▄●▂ beats 16/17  very easy · avg 87%     10%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-llada-image"></a><a href="https://arxiv.org/html/2609.03796v1#S5.T5">LLaDA-Image: Building Strong Image Gene…</a>        5   71% ▇▇▇▇▇▇▇▇▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   26% ▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 53.5
+</pre>
 
 <sub>Licences: LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes ([CC-BY-SA-4.0](../../licenses/visual-llada-image.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -34,20 +53,24 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                        ~59.6GB   53.4
-f16 + LLaDA2 text encoder q8_0 (sd.cpp)   ~38.5GB   53.4
-gguf-q8_0 + LLaDA2 text encoder q4_k (s…  ~21.6GB   53.4
+bf16 · nvidia only                        ~59.6GB   53.5
+f16 + LLaDA2 text encoder q8_0 (sd.cpp)   ~38.5GB   53.5
+gguf-q8_0 + LLaDA2 text encoder q4_k (s…  ~21.6GB   53.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~59.6GB
 git clone https://github.com/inclusionAI/LLaDA-Image && cd LLaDA-Image && pip install -r requirements.txt && python -c "import torch; from src import LLaDAImagePipeline; p=LLaDAImagePipeline.from_pretrained('inclusionAI/LLaDA-Image-Turbo', torch_dtype=torch.bfloat16, device='cuda'); p(prompt='A quiet observatory above a sea of clouds at sunrise, golden light, wide-angle photograph', generation_mode='text', height=1024, width=1024, num_inference_steps=4, guidance_scale=1.0, generator=torch.Generator('cuda').manual_seed(42)).images[0].save('out.png')"
-# f16 + LLaDA2 text encoder q8_0 (sd.cpp)
+# f16 + LLaDA2 text encoder q8_0 (sd.cpp) · ~38.5GB
 sd-cli --diffusion-model models/llada-image-turbo-f16.gguf --llm models/llada-image-turbo-text_encoder-q8_0.gguf --tokenizer models/tokenizer.json --vae models/llada_vae.safetensors --embeddings-connectors models/llada-image-turbo-connectors.safetensors --prompt "a lovely cat holding a sign says 'llada.cpp'" --width 1024 --height 1024 --steps 4 --cfg-scale 1.0 --seed 42 --output output.png
-# gguf-q8_0 + LLaDA2 text encoder q4_k (sd.cpp)
+# gguf-q8_0 + LLaDA2 text encoder q4_k (sd.cpp) · ~21.6GB
 sd-cli --diffusion-model models/llada-image-turbo-q8_0.gguf --llm models/llada-image-turbo-text_encoder-q4_K.gguf --tokenizer models/tokenizer.json --vae models/llada_vae.safetensors --embeddings-connectors models/llada-image-turbo-connectors.safetensors --prompt "a lovely cat holding a sign says 'llada.cpp'" --width 1024 --height 1024 --steps 4 --cfg-scale 1.0 --seed 42 --output output.png
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/llada-image-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

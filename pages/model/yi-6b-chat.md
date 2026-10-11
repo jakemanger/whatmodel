@@ -6,21 +6,37 @@
 
 01.AI · released 2023-11 · 6.06B params · apache-2.0
 
-**score 30.2** ±2.4 · #843 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 30.2** ±2.4 · #857 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Yi 6B Chat among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                  9.6%  ▁▁●▂▂▃▂█▆▃▅▃ beats 3/61    medium · avg 41%     89%  typical
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   60.1%  ▃▁▁▁▁▁▁▁●█▅▁ beats 90/276  medium · avg 73%    8.1%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>             9.6%    28.4   2024-10-22   89% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  60.1%    42.8   2024-02-27    8% ▇
-prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 30.2
+source                           results  share of the score
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>              1   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    8% ▇
+prior: pull toward the middle               3% ▇
+weighted average                          = 30.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -29,15 +45,75 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/01-ai/Yi-6B-Chat/blob/2dbf63b0cb7bc493c0243502c6e6111a36e3a093/config.json): 01.AI official configuration for Yi-6B-Chat (pinned commit 2dbf63b): max\_position\_embeddings 4096. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-16-bit bf16  ~12.12GB   30.2
+download                       size  score
+16-bit bf16                ~12.12GB   30.2
+4-bit Q4_K_M                 ~3.7GB   30.2
+8-bit Q8_0                   ~6.4GB   30.2
+4-bit mlx-4bit · mac only    ~3.4GB   30.2
+4-bit mlx-8bit · mac only    ~6.4GB   30.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-6B-Chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~3.7GB
+llama cli -hf mradermacher/Yi-6B-Chat-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Yi-6B-Chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~6.4GB
+llama cli -hf mradermacher/Yi-6B-Chat-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Yi-6B-Chat-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~3.7GB
+lms get https://huggingface.co/mradermacher/Yi-6B-Chat-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~6.4GB
+lms get https://huggingface.co/mradermacher/Yi-6B-Chat-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~3.4GB
+lms get https://huggingface.co/mlx-community/Yi-6B-Chat-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~6.4GB
+lms get https://huggingface.co/mlx-community/Yi-6B-Chat-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~3.7GB
+ollama run hf.co/mradermacher/Yi-6B-Chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~6.4GB
+ollama run hf.co/mradermacher/Yi-6B-Chat-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~3.4GB
+mlx_lm.chat --model mlx-community/Yi-6B-Chat-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Yi-6B-Chat-4bit
+# 4-bit mlx-8bit · mac only · ~6.4GB
+mlx_lm.chat --model mlx-community/Yi-6B-Chat-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Yi-6B-Chat-8bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~12.12GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-6B-Chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/yi-6b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

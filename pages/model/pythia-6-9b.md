@@ -6,46 +6,51 @@
 
 EleutherAI · released 2023-02 · 6.86B params · apache-2.0
 
-**score 23.7** ±0.7 · #890 of 934 · from 27 benchmark results across 5 sources
+**score 23.4** ±0.7 · #906 of 949 · from 27 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Pythia 6.9B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (13)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">ARC Challenge</a>                        35.3%  ▁·▁··▁▁●▂█▆▃ beats 9/26   easy · avg 85%          28%  sharp · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">WinoGrande</a>                           60.6%  ▁····▁··▁●█▄ beats 4/26   easy · avg 89%          15%  several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">ARC Easy</a>                             61.1%  ▁▁·▁▁▄●▄█▅▁▃ beats 7/26   very easy · avg 90%     12%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">SciQ</a>                                 89.8%  ▁·▁·▁·●▅▃█▄▁ beats 5/26   very easy · avg 98%     10%  several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">BoolQ</a>                                64.0%  ▂▃▂●▆▂▅▆█▂▂▂ beats 5/26   easy · avg 91%         7.7%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">PIQA</a>                                 75.1%  ▁·▁··▁▁▃●▅█▂ beats 7/26   easy · avg 88%         7.0%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">HellaSwag</a>                            63.9%  ▃···▁●▅█▇▃▁▁ beats 7/26   very easy · avg 92%    6.7%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">OpenBookQA</a>                           25.8%  █·●▁▃·▁▃▅▇▃▄ beats 6/26   easy · avg 84%         4.6%  several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">LAMBADA (OpenAI version), last-wo…</a>   67.0%  ▁··▂▁▁▁▂●█▅▃ beats 9/26   very easy · avg 89%    4.0%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   21.7%  ▃●▃··▅▃·█▃▃▅ beats 2/13   easy · avg 67%         1.8%  typical
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   11.0%  ▅····●▅·██·█ beats 2/13   medium · avg 59%       1.8%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">Social IQA</a>                           40.7%  ▁···▁●█▁▁▁·▁ beats 3/26   medium · avg 59%       1.2%  blunt
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.0%  ●▁▁▁▁▁▁▁▂█▅▁ beats 6/276  medium · avg 73%       0.5%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">ARC Challenge</a>                   35.3%    24.3   2024-04-08   18% ▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">WinoGrande</a>                      60.6%    21.9   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">BoolQ</a>                           64.0%    20.7   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">ARC Easy</a>                        61.1%    22.8   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">SciQ</a>                            89.8%    22.4   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">HellaSwag</a>                       63.9%    22.6   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">PIQA</a>                            75.1%    24.7   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">OpenBookQA</a>                      25.8%    16.4   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">LAMBADA (OpenAI version), las…</a>  67.0%    25.6   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">Social IQA</a>                      40.7%    21.1   2024-04-08    2% ▇
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   44.1%    28.4   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      62.0%    23.1   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      45.0%    26.5   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       63.8%    22.5   2024-06-07    3% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            91.1%    23.4   2024-06-07    3% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        61.9%    23.0   2024-06-07    3% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           61.1%    16.0   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            75.1%    25.2   2024-06-07    1% ▇
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             31.3%    27.2   2023-05-31    5% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  67.3%    25.0   2023-05-31    5% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                60.9%    22.0   2023-05-31    5% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      89.7%    22.6   2023-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      75.2%    24.9   2023-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  67.3%    25.7   2023-05-31    2% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  11.0%    23.9   2024-04-24    2% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  21.7%    22.4   2024-04-24    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  29.0%     9.1   2024-02-11    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 23.7
+source                                    results  share of the score
+<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">Stability AI</a>                                   10   48% ▇▇▇▇▇▇
+<a name="paper-2402.00838v4"></a><a href="https://arxiv.org/html/2402.00838v4">OLMo: Accelerating the Science of Langu…</a>        8   25% ▇▇▇
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   23% ▇▇▇
+<a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    4% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 23.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -54,15 +59,54 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://arxiv.org/abs/2304.01373v2): Training sequence length stated by the maker; no separate serving limit is published.</sub>
 
 <pre>
-download        size  score
-4-bit fp16  ~13.85GB   23.7
+download          size  score
+4-bit fp16    ~13.85GB   23.4
+4-bit Q4_K_M    ~4.4GB   23.4
+8-bit Q8_0      ~7.3GB   23.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-6.9b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~4.4GB
+llama cli -hf mradermacher/pythia-6.9b-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/pythia-6.9b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.3GB
+llama cli -hf mradermacher/pythia-6.9b-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/pythia-6.9b-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.4GB
+lms get https://huggingface.co/mradermacher/pythia-6.9b-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~7.3GB
+lms get https://huggingface.co/mradermacher/pythia-6.9b-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.4GB
+ollama run hf.co/mradermacher/pythia-6.9b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.3GB
+ollama run hf.co/mradermacher/pythia-6.9b-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp16 · ~13.85GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-6.9b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/pythia-6-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

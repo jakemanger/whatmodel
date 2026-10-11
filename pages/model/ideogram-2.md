@@ -6,25 +6,45 @@
 
 Ideogram · closed weights
 
-**score 46.1** ±2.0 · #92 of 144 · from 4 benchmark results across 3 sources
+**score 46.2** ±1.9 · #92 of 144 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Ideogram 2.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1013.4    48.4   2026-09-24   57% ▇▇▇▇▇▇▇
-<a name="paper-2505.17613v2-mmmg"></a>MMMG: a Comprehensive…  <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                          61.5%    42.4   2026-09-30   20% ▇▇
-                        <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (averag…</a>   50.8%    50.0   2026-09-30   10% ▇
-<a name="paper-2506.10963v2-mmmg-kg"></a>MMMG: A Massive         <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generati…</a>   12.2%    37.4   2025-06-13   12% ▇
-prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 46.1
+task           vs the others        rank  counts  tests
+text to image  ▂▅▅●▄▄█▃▁▂▁▁   #77 of 126     98%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #77 of 126 · 98% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1013.3  ▂▂●▄▇█▄▂▄▂·▂ beats 8/75   avg 1027             57%  typical
+<a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                              61.5%  █●·▄·▄·█···▄ beats 2/8    easy · avg 71%       20%  at its level
+<a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   12.2%  ▃··▃·●▃▃▅··▃ beats 2/9    hard · avg 24%       12%  typical
+<a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>   50.8%  █··█▄●·▄▄·▄▄ beats 5/9    medium · avg 51%     10%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   57% ▇▇▇▇▇▇▇
+<a name="paper-2505.17613v2-mmmg"></a><a href="https://arxiv.org/html/2505.17613v2">MMMG: a Comprehensive and Reliable Benc…</a>        2   30% ▇▇▇▇
+<a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                                 1   12% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 46.2
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MMMG: a Comprehensive and Reliable Benchmark for Multitask Multimodal Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>
 

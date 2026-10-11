@@ -6,23 +6,38 @@
 
 Neuphonic · released 2025-10 · 0.552B params · apache-2.0
 
-**score 36.4** ±10.0 · #96 of 117 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.2** ±10.0 · #97 of 118 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks NeuTTS Air among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.27 / 5     3.0   2026-03-15   31% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.06 / 5    54.0   2026-03-15   28% ▇▇▇
-prior                   pull toward the middle                      49.7                40% ▇▇▇▇▇
-                        weighted average                          = 36.4
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.27 / 5  ●▄█·▄▄▄▄▄·▄█ beats 0/11   easy · avg 4.20 / 5     31%  blunt · at its level
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.06 / 5  █··▄▄██●·▄▄▄ beats 8/11   easy · avg 3.99 / 5     29%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2   60% ▇▇▇▇▇▇▇
+prior: pull toward the middle                       40% ▇▇▇▇▇
+weighted average                                   = 36.2
+</pre>
 
 <sub>Licences: CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>
 
@@ -30,20 +45,24 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                           needs  score
-q4_0 (neutts 1.4.1)             ~4.01GB   36.4
-bf16 (neutts 1.4.1)                ~5GB   36.4
-bf16 (neutts 1.4.1) · mac only  ~4.98GB   36.4
+q4_0 (neutts 1.4.1)             ~4.01GB   36.2
+bf16 (neutts 1.4.1)                ~5GB   36.2
+bf16 (neutts 1.4.1) · mac only  ~4.98GB   36.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# q4_0 (neutts 1.4.1)
+# q4_0 (neutts 1.4.1) · ~4.01GB
 git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install "neutts[llama]" && python -m examples.basic_example --input_text "My name is Dave, and um, I'm from London" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air-q4-gguf
-# bf16 (neutts 1.4.1)
+# bf16 (neutts 1.4.1) · ~5GB
 git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install neutts && python -m examples.basic_example --input_text "My name is Dave, and um, I'm from London" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air
-# bf16 (neutts 1.4.1) · mac only
+# bf16 (neutts 1.4.1) · mac only · ~4.98GB
 git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install neutts && python -m examples.basic_example --input_text "My name is Dave, and um, I'm from London" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air --device mps --codec_device mps
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/neutts-air) · [JSON](https://whatmodel.sh/api?format=json&all=1)

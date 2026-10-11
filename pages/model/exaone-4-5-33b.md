@@ -6,34 +6,93 @@
 
 LG AI Research · released 2026-04 · 34.4B params · exaone
 
-**score 65.0** ±1.9 · #148 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 65.0** ±2.0 · #153 of 949 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks EXAONE 4.5 33B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others            rank  counts  tests
+agent tasks         ▁▁▃▆█▆●▄▄▃▂▁     #117 of 334*     21%      1
+chat &amp; writing      ▁▁▁▄▆▅▆█●▆▆▂     #143 of 466*    5.6%      1
+math                ▁▂▃▅▆▅▄●▄▁▁▁      #68 of 400*     22%      1
+vision &amp; documents                 not ranked yet       —      3
+</pre>
+
+<details><summary>agent tasks · #117 of 334 · 21% of its score</summary>
+
+Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+
+<pre>
+test                    result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">τ²-bench Telecom (lab)</a>   73.0%  ▁·▅█▆▅●▃▃▂▃▁ beats 57/89  hard · avg 17%     21%  sharp · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #143 of 466 · 5.6% of its score</summary>
+
+Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Spark-X2.5 1.7B](spark-x2-5-1-7b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">IFEval (aggregation unspecified) …</a>   89.6%  ▄·▄·▄·▄▄···● beats 5/6    easy · avg 78%    5.6%  typical
+</pre>
+
+</details>
+
+<details><summary>math · #68 of 400 · 22% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md) here, though they rank lower overall.
+
+<pre>
+test             result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">AIME 2025 (lab)</a>   92.9%  █·▄▄····▄··● beats 6/6    medium · avg 53%     22%  sharp
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · 0.0% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">CharXiv (reasoning questions) (la…</a>   71.7%  ▂▅▃▅▅▆▆●▆█▆▂ beats 61/100  medium · avg 36%       —  not counted yet: no other model in the …
+<a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMMU-Pro standard (SqueezeBits lm…</a>   17.6%  no other model yet                                —  not counted yet: no other model in the …
+<a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMMU-Pro vision (SqueezeBits lmms…</a>   21.5%  no other model yet                                —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">GPQA Diamond (lab)</a>   80.5%  █···▄▄···▄·● beats 6/6      hard · avg 51%       34%  sharp
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">MMLU-Pro (lab)</a>       83.3%  ▁▁·▁▁▁▃▂▄▅●▁ beats 155/188  medium · avg 62%     15%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">GPQA Diamond (lab)</a>              80.5%    61.7   2026-04-04   32% ▇▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">τ²-bench Telecom (lab)</a>          73.0%    69.0   2026-07-06   23% ▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">AIME 2025 (lab)</a>                 92.9%    68.7   2026-04-04   23% ▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">MMLU-Pro (lab)</a>                  83.3%    62.4   2026-04-04   15% ▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>  89.6%    64.6   2026-04-04    6% ▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 65.0
+source                                    results  share of the score
+<a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">LG AI Research vendor-reported benchmar…</a>        5   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 65.0
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-
-
-<details><summary>Not counted (3)</summary>
+<details><summary>Not counted (4)</summary>
 
 <pre>
-source       test                            score  why
-SqueezeBits  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMLU-Pro</a>                        72.0%  only model in this source's run
-SqueezeBits  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMMU-Pro standard (SqueezeBit…</a>  17.6%  too few models have it yet
-SqueezeBits  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMMU-Pro vision (SqueezeBits …</a>  21.5%  too few models have it yet
+source                  test                            score  why
+SqueezeBits             <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMLU-Pro</a>                        72.0%  only model in this source's run
+SqueezeBits             <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMMU-Pro standard (SqueezeBit…</a>  17.6%  too few models have it yet
+SqueezeBits             <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMMU-Pro vision (SqueezeBits …</a>  21.5%  too few models have it yet
+LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">CharXiv (reasoning questions)</a>   71.7%  too few models have it yet
 </pre>
 
 </details>
@@ -48,13 +107,41 @@ download               size  score
 8-bit gguf-q8_0    ~41.78GB   65.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit gguf-q4_k_m
-llama-server -hf LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q4_K_M
-# 8-bit gguf-q8_0
-llama-server -hf LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q8_0
+# 4-bit gguf-q4_k_m · ~21.14GB
+llama cli -hf LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q4_K_M
+# 8-bit gguf-q8_0 · ~41.78GB
+llama cli -hf LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit gguf-q4_k_m · ~21.14GB
+lms get https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit gguf-q8_0 · ~41.78GB
+lms get https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit gguf-q4_k_m · ~21.14GB
+ollama run hf.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q4_K_M
+# 8-bit gguf-q8_0 · ~41.78GB
+ollama run hf.co/LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/exaone-4-5-33b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

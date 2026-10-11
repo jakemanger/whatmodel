@@ -4,32 +4,92 @@
 
 # Ling 3.0 Flash (124B-A5B)
 
-inclusionAI (Ant Group) · released 2026-08
+inclusionAI (Ant Group) · released 2026-08 · 124B params (5.1B active) · mit
 
-[Model and usage documentation](https://huggingface.co/inclusionAI/Ling-3.0-flash)
+**score 71.2** ±1.5 · #76 of 949 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+## What it's good at
+
+<sub>● marks Ling 3.0 Flash (124B-A5B) among every model on that task or test, worst to best.</sub>
 
 <pre>
-test                                result  reported by  source
-SWE-bench Pro (split unspecified)    56.6%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-SWE-bench Multilingual               72.4%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-MCP-Atlas v1 public500               65.5%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-SkillsBench 87-task subset           44.8%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-BFCL V4 (December 2025 archive)      73.0%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-WideSearch corrected dataset         73.6%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-BrowseComp single-agent with cont…   72.2%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-IFBench (aggregation unspecified)    74.5%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-SysBench (aggregation unspecified)   93.6%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-AIME 2026                            93.2%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-HMMT February 2026                   87.0%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-IMO-AnswerBench                      83.7%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-Humanity's Last Exam                 22.7%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-LiveCodeBench 2024-08–2025-05 (ve…   82.8%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
-Multi-IF (aggregation unspecified)   87.7%  lab          <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash mo…</a>
+task         vs the others     rank  counts  tests
+agent tasks  ······●·····   #1 of 1     26%      3
+coding       ······●·····   #1 of 1     27%      3
+math         ······●·····   #1 of 1     31%      3
+</pre>
+
+<details><summary>agent tasks · #1 of 1 · 26% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SWE-bench Pro (split unspecified)…</a>   56.6%  ▃·▁▁▁▂▂▃●▇▃▁ beats 34/55    very hard · avg 9.2%     14%  sharp · at its level · small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SWE-bench Multilingual (lab)</a>         72.4%  ▁··▁▃▂▅▇●▃▃▁ beats 38/60    hard · avg 24%          7.2%  at its level · small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">BFCL V4 (December 2025 archive) (…</a>   73.0%  ▁▁▁▂▇▆▆▆█▂▄● beats 109/111  medium · avg 38%        4.5%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #1 of 1 · 27% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SWE-bench Pro (split unspecified)…</a>   56.6%  ▃·▁▁▁▂▂▃●▇▃▁ beats 34/55  very hard · avg 9.2%     14%  sharp · at its level · small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SWE-bench Multilingual (lab)</a>         72.4%  ▁··▁▃▂▅▇●▃▃▁ beats 38/60  hard · avg 24%          7.2%  at its level · small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">LiveCodeBench 2024-08–2025-05 (ve…</a>   82.8%  ▃···█··▅··●▃ beats 6/7    medium · avg 48%        5.8%  small run
+</pre>
+
+</details>
+
+<details><summary>math · #1 of 1 · 31% of its score</summary>
+
+<pre>
+test                      result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">AIME 2026 (lab)</a>            93.2%  ▁▁▁▂▁▂▆●▆▂·▁ beats 34/49  medium · avg 58%     11%  sharp · maxed out · small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">IMO-AnswerBench (lab)</a>      83.7%  ▁▁·▁▁▁▄▅█●▂▃ beats 30/42  medium · avg 38%     10%  small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">HMMT February 2026 (lab)</a>   87.0%  ▃▃▂▃·██▆█●▃▅ beats 27/33  medium · avg 40%     10%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">Humanity's Last Exam (lab)</a>           22.7%  ▁▁▁▃▆▆▇●█▆▁▃ beats 53/104  very hard · avg 4.1%     10%  small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SkillsBench 87-task subset (lab)</a>     44.8%  ▄··▄▄▄···●·█ beats 4/7     very hard · avg 8.2%    7.7%  at its level
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">WideSearch corrected dataset (lab)</a>   73.6%  ▃······▃▃▃●▃ beats 4/7     hard · avg 20%          7.0%  at its level · noisy
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SysBench (aggregation unspecified…</a>   93.6%  █··█····█··● beats 3/3     medium · avg 61%        4.6%  small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">Multi-IF (aggregation unspecified…</a>   87.7%  ▁▁▁▁▁▁▃▄█▄▁● beats 40/41   easy · avg 65%          4.0%  blunt · small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">IFBench (aggregation unspecified)…</a>   74.5%  ▃▇▂▄▅▅▂▄▄▆●▇ beats 61/80   hard · avg 34%          3.2%  at its level · noisy · small run
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">MCP-Atlas v1 public500 (lab)</a>         65.5%  █··········● beats 1/1                                —  not counted yet: no other model in the …
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">BrowseComp single-agent with cont…</a>   72.2%  ●··········█ beats 0/1                                —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="card-final-ling-3-0-flash"></a><a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash model card (…</a>       13   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 71.2
 </pre>
 
 <sub>Licences: inclusionAI/Ling-3.0-flash model card ([MIT](../../licenses/cards-final-NOTICE.txt))</sub>
+
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                            score  why
+inclusionAI/Ling-3.0-…  <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">MCP-Atlas v1 public500</a>          65.5%  too few models have it yet
+inclusionAI/Ling-3.0-…  <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">BrowseComp single-agent with …</a>  72.2%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -37,8 +97,51 @@ api (DeepInfra) · $0.090/M blended · $0.06 in / $0.18 out per 1M tokens · [de
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens. DeepInfra standard synchronous API; model inclusionAI/Ling-3.0-flash. Uncached input; output includes generated reasoning where billed. Provider input limit 131,072 tokens; quantization not specified in the provider record. Batch, cache storage, tools and other modalities excluded. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): DeepInfra API maximum input tokens from exact catalogue record deepinfra/inclusionAI/Ling-3.0-flash; not the legacy max\_tokens field.</sub>
 
+<pre>
+download                       size  score
+4-bit q4_k_m                ~74.9GB   71.2
+4-bit mlx-4bit · mac only     ~70GB   71.2
+4-bit mlx-8bit · mac only  ~132.2GB   71.2
+</pre>
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-llama-server -hf inclusionAI/Ling-3.0-flash-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~74.9GB
+llama cli -hf inclusionAI/Ling-3.0-flash-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf inclusionAI/Ling-3.0-flash-GGUF:Q4_K_M
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/ling-3-0-flash)
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~74.9GB
+lms get https://huggingface.co/inclusionAI/Ling-3.0-flash-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~70GB
+lms get https://huggingface.co/TensorFold/Ling-3.0-flash-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~132.2GB
+lms get https://huggingface.co/TensorFold/Ling-3.0-flash-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~70GB
+mlx_lm.chat --model TensorFold/Ling-3.0-flash-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model TensorFold/Ling-3.0-flash-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~132.2GB
+mlx_lm.chat --model TensorFold/Ling-3.0-flash-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model TensorFold/Ling-3.0-flash-MLX-8bit
+```
+
+[interactive version](https://whatmodel.sh/model/ling-3-0-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

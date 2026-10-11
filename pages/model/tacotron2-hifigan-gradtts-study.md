@@ -10,18 +10,33 @@ Grad-TTS authors / Huawei Noah · released 2021-05 · closed weights
 
 Score within the [Grad-TTS 2021 LJ Speech human MOS](https://whatmodel.sh/tts?set=gradtts2021-ljspeech-mos&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Tacotron2 + HiFi-GAN (Grad-TTS study) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-gradtts-icml2021"></a>Grad-TTS: original IC…  <a href="https://proceedings.mlr.press/v139/popov21a/popov21a.pdf">Grad-TTS 2021 LJ Speech human…</a>  4.32 / 5    67.2   2021-07-18   58% ▇▇▇▇▇▇▇
-prior                   pull toward the middle                      52.1                42% ▇▇▇▇▇
-                        weighted average                          = 60.9
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                 result  vs the others in its run  difficulty           counts  why
+<a href="https://proceedings.mlr.press/v139/popov21a/popov21a.pdf">Grad-TTS 2021 LJ Speech human MOS</a>  4.32 / 5  █·····█···●█ beats 2/3    easy · avg 4.17 / 5     58%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-gradtts-icml2021"></a><a href="https://proceedings.mlr.press/v139/popov21a/popov21a.pdf">Grad-TTS: original ICML 2021 listening …</a>        1   58% ▇▇▇▇▇▇▇
+prior: pull toward the middle                       42% ▇▇▇▇▇
+weighted average                                   = 60.9
+</pre>
 
 <sub>Licences: Grad-TTS: original ICML 2021 listening study ([CC-BY-4.0](../../licenses/speech-gradtts-icml2021.txt))</sub>
 

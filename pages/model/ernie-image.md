@@ -6,28 +6,56 @@
 
 Baidu · released 2026-04 · 8B params · apache-2.0
 
-**score 60.0** ±2.4 · #42 of 144 · from 7 benchmark results across 3 sources
+**score 60.1** ±2.4 · #42 of 144 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks ERNIE-Image among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-ernie-image"></a>ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN) (lab)</a>       96.8%    65.7   2026-09-25   16% ▇▇
-                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN) (lab)</a>       95.9%    62.3   2026-09-25   13% ▇▇
-                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (lab)</a>                   88.6%    62.2   2026-09-25   12% ▇
-                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (lab)</a>          52.1%    59.3   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (lab)</a>          55.4%    60.0   2026-09-25   10% ▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  89.4%    59.3   2026-08-25   24% ▇▇▇
-<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>  896.9    52.3   2026-10-01   13% ▇▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 60.0
+task           vs the others        rank  counts  tests
+text to image  ▂▅▅▃▄▄●▃▁▂▁▁   #29 of 126     84%      6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #29 of 126 · 84% of its score</summary>
+
+Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md), [Cosmos3-Super-Text2Image](cosmos3-super-text2image.md), [Nano Banana (Gemini 2.5 Flash Image)](nano-banana.md) here, though they rank higher overall.
+
+<pre>
+test                               result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>   89.4%  ▄····▄█▄▄█▄● beats 9/10   easy · avg 82%          24%  typical
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN) (lab)</a>           96.8%  ▃·····▅██▅●▃ beats 11/12  very easy · avg 90%     16%  maxed out · small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN) (lab)</a>           95.9%  ▃·······██●█ beats 9/12   very easy · avg 91%     13%  maxed out · small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (lab)</a>                       88.6%  ▇▃▅▇▁▄▅▃█▃▃● beats 37/39  easy · avg 78%          12%  small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (lab)</a>              52.1%  ▃·▃█▃·●··▃·▃ beats 6/8    medium · avg 37%        10%  at its level · small run
+<a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (lab)</a>              55.4%  ▃······▃▅█▅● beats 9/9    medium · avg 39%        10%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   896.9  ▁▁●▄▂█▂▁▁▂▁▁ beats 3/34   avg 875        13%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-ernie-image"></a><a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">ERNIE-Image model repository evaluation…</a>        5   60% ▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   24% ▇▇▇
+<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1   13% ▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 60.1
+</pre>
 
 <sub>Licences: ERNIE-Image model repository evaluation tables ([Apache-2.0](../../licenses/visual-ernie-image.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -39,17 +67,21 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-imag
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                        ~19.7GB   60.0
-gguf-ud-q4_k_m + Ministral 3B (sd.cpp, …  ~17.1GB   60.0
+bf16 · nvidia only                        ~19.7GB   60.1
+gguf-ud-q4_k_m + Ministral 3B (sd.cpp, …  ~17.1GB   60.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~19.7GB
 uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ErnieImagePipeline; p=ErnieImagePipeline.from_pretrained('baidu/ERNIE-Image', torch_dtype=torch.bfloat16).to('cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=4.0).images[0].save('out.png')"
-# gguf-ud-q4_k_m + Ministral 3B (sd.cpp, all files in memory)
+# gguf-ud-q4_k_m + Ministral 3B (sd.cpp, all files in memory) · ~17.1GB
 sd-cli --diffusion-model models/ernie-image-UD-Q4_K_M.gguf --vae models/flux2_ae.safetensors --llm models/ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ernie-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

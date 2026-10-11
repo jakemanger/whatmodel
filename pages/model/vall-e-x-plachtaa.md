@@ -6,26 +6,43 @@
 
 Plachtaa (community) · released 2023-08 · mit
 
-**score 31.6** ±4.2 · #101 of 117 · from 5 benchmark results across 3 sources
+**score 31.4** ±4.2 · #102 of 118 · from 5 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks VALL-E X (Plachtaa open implementation) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  3.38 / 5    33.1   2025-03-27   45% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>     27.3%   -27.3   2025-03-27    1% ▇
-<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>     90.1%    32.0   2025-04-09   36% ▇▇▇▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.86 / 5    33.2   2026-03-15    6% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.07 / 5     3.3   2026-03-15    5% ▇
-prior                   pull toward the middle                      49.7                 7% ▇
-                        weighted average                          = 31.6
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>  3.38 / 5  ▄·····●·▄█·▄ beats 1/5    easy · avg 4.11 / 5     45%  at its level
+<a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-clean…</a>     90.1%  █·█········● beats 2/2    very easy · avg 97%     36%  small run
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.86 / 5  ▄▄█·●▄▄▄▄·▄█ beats 4/11   easy · avg 4.20 / 5    5.7%  blunt · at its level
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.07 / 5  ●··▄▄██▄·▄▄▄ beats 0/11   easy · avg 3.99 / 5    5.1%  blunt · at its level
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>     27.3%  ●··········█ beats 1/5    avg 6.4%               1.2%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-versa-toolkit-ccby"></a><a href="https://arxiv.org/html/2412.17667v2">VERSA toolkit paper: TTS demonstration</a>          2   46% ▇▇▇▇▇▇
+<a name="speech-cloneval-space-apache"></a><a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · Open Voice Cloning Leaderboa…</a>        1   36% ▇▇▇▇
+<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2   11% ▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 31.4
+</pre>
 
 <sub>Licences: VERSA toolkit paper: TTS demonstration ([CC BY 4.0](../../licenses/speech-versa-toolkit-ccby.txt)) · ClonEval · Open Voice Cloning Leaderboard ([Apache-2.0](../../licenses/speech-cloneval-space-apache.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>
 
@@ -33,14 +50,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                          needs  score
-fp32 (Plachtaa/VALL-E-X repo)  ~1.62GB   31.6
+fp32 (Plachtaa/VALL-E-X repo)  ~1.62GB   31.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (Plachtaa/VALL-E-X repo)
+# fp32 (Plachtaa/VALL-E-X repo) · ~1.62GB
 git clone https://github.com/Plachtaa/VALL-E-X.git && cd VALL-E-X && pip install -r requirements.txt && python -c "from utils.generation import SAMPLE_RATE, generate_audio, preload_models; from scipy.io.wavfile import write as write_wav; preload_models(); audio_array = generate_audio('Hello, my name is Nose. And uh, and I like hamburger. Hahaha... But I also have other interests such as playing tactic toast.'); write_wav('vallex_generation.wav', SAMPLE_RATE, audio_array)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/vall-e-x-plachtaa) · [JSON](https://whatmodel.sh/api?format=json&all=1)

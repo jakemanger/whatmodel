@@ -6,58 +6,168 @@
 
 NVIDIA · released 2024-10 · 70.6B params · llama3.1
 
-**score 51.7** ±0.9 · #391 of 934 · from 19 benchmark results across 10 sources
+**score 51.8** ±0.9 · #395 of 949 · from 19 benchmark results across 10 sources
+
+## What it's good at
+
+<sub>● marks Llama 3.1 Nemotron 70B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #270 of 469*     17%      2
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂    #229 of 466     40%      6
+math            ▁▂▃▅●▅▄█▄▁▁▁   #289 of 400*    9.0%      2
+</pre>
+
+<details><summary>coding · #270 of 469 · 17% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   54.9%  ▁·▁▂▄▁●▄█▆▂▂ beats 21/62  medium · avg 54%     14%  at its level
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     22.4%  ▃▁●█▁▄▅▃▄▇▁▄ beats 3/31   medium · avg 44%    3.6%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #229 of 466 · 40% of its score</summary>
+
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   84.9%  ▂▁▁▅█▅▄▃▃▅●▁ beats 56/60    medium · avg 52%        20%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1298.7  ▁▁▁▂▃▃▃●▆▇█▃ beats 127/379  avg 1268               7.3%  blunt
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   10.3%  ▂·●▅▅·▃█▆▂▂▂ beats 2/22     very hard · avg 12%    6.3%  sharp
+<a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlled</a>       66.1%  ▁▁▃▄▆██▆▃●▁▁ beats 146/155  medium · avg 47%       3.6%  at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose</a>            79.9%  ▁▂▁▂▁▃▁●█▂▂▁ beats 11/25    easy · avg 79%         1.9%  small run
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   26.9%  ▆▂▂●▂▂▃█▂▃·▂ beats 8/22     hard · avg 19%         1.5%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #289 of 400 · 9.0% of its score</summary>
+
+Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [StarCoder2 15B](starcoder2-15b.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run    difficulty           counts  why
+<a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified)</a>   55.0%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 31/80    medium · avg 58%       4.5%  at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">GSM8K</a>                       84.7%  ▂▂▂▅▅▆▅▇●▇▄▃ beats 102/146  very easy · avg 87%    4.4%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (9)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard</a>                       78.5%  ▁▁▁▁▂▄▅▅█●▄▁ beats 107/129  easy · avg 77%      6.8%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">DROP</a>                                 68.8%  ▅··▅·█●█▅▃▃▅ beats 8/17     easy · avg 65%      5.7%  at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">MMLU</a>                                 83.8%  ▁▁▁▁▁▂▃▅█▃●▃ beats 151/183  easy · avg 79%      4.8%  small run
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-08-31</a>                 43.1%  ●█·▄·▄▄·▄··▄ beats 0/7      medium · avg 42%    4.5%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/nvidia--Llama-3.1-Nemotron-70B-Instruct-HF_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   61.8%  ▂·▂●▂▆▅▆▆▆▃█ beats 2/29     easy · avg 76%      4.2%  typical
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   32.8%  ▁▁▁▁▁▂▂▃●▆█▃ beats 38/97    hard · avg 32%      3.8%  blunt · at its level
+<a href="https://arxiv.org/html/2411.15124v5">PopQA</a>                                36.4%  ▁▁▂▃▅▃▂█▂●·▄ beats 29/36    hard · avg 35%      1.6%  blunt · at its level · small run
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   93.5%  ▁▁▁▁▁▁▁▂▄█▄● beats 131/146  easy · avg 83%      0.8%  noisy
+<a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2</a>                       62.6%  █▅▇▅▁▄▁●▅▄▁▁ beats 47/73    medium · avg 64%    0.6%  blunt · at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="paper-2411.15124v5"></a>Tülu 3: Pushing Front…  <a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard</a>                   78.5%    50.2   2025-04-14    7% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">DROP</a>                             68.8%    51.5   2025-04-14    6% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">MMLU</a>                             83.8%    54.3   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">GSM8K</a>                            84.7%    46.5   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified)</a>        55.0%    47.4   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlled</a>   66.1%    59.3   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose</a>        79.9%    50.3   2025-04-14    2% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">PopQA</a>                            36.4%    51.2   2025-04-14    2% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2</a>                   62.6%    46.4   2025-04-14    1% ▇
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   84.9%    58.2   2024-11-14   19% ▇▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   54.9%    50.5   2024-10-16   14% ▇▇
-<a name="arena-hard-auto-readme-v2"></a>Arena-Hard-Auto v2.0-…  <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts …</a>   10.3%    49.6   2025-05-01    7% ▇
-                        <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writ…</a>   26.9%    54.2   2025-05-01    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1298.7    53.8   2026-10-02    7% ▇
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/nvidia--Llama-3.1-Nemotron-70B-Instruct-HF_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>   61.8%    40.0   2024-10-24    4% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   32.8%    50.8   2025-04-28    4% ▇
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-08-31</a>             43.1%    49.6   2024-10-22    4% ▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   22.4%    44.5   2024-12-28    4% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   93.5%    60.2   2026-04-17    1% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 51.7
+source                                    results  share of the score
+<a name="paper-2411.15124v5"></a><a href="https://arxiv.org/html/2411.15124v5">Tülu 3: Pushing Frontiers in Open Langu…</a>        9   34% ▇▇▇▇
+<a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1   20% ▇▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   14% ▇▇
+<a name="arena-hard-auto-readme-v2"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard-Auto v2.0-Preview leaderboard</a>        2    8% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    7% ▇
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1    5% ▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/nvidia--Llama-3.1-Nemotron-70B-Instruct-HF_vllm_temp_1.0_evalperf_results.brief.json">EvalPlus / EvalPerf published evaluatio…</a>        1    4% ▇
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    4% ▇
+<a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K models leaderboard</a>                     1    4% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 51.8
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Tülu 3: Pushing Frontiers in Open Language Model Post-Training ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: Tülu 3: Pushing Frontiers in Open Language Model Post-Training ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF/blob/031d4042f36adc1a52cca51b331d25cbe3cf1022/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~42.86GB   51.7
-8-bit q8_0    ~85.22GB   51.7
+download                       size  score
+4-bit q4_k_m               ~42.86GB   51.8
+8-bit q8_0                 ~85.22GB   51.8
+4-bit Q4_K_M                ~42.5GB   51.8
+8-bit Q8_0                    ~75GB   51.8
+4-bit mlx-4bit · mac only   ~39.7GB   51.8
+4-bit mlx-8bit · mac only     ~75GB   51.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run nemotron:70b-instruct-q4_K_M
-# 8-bit q8_0
-ollama run nemotron:70b-instruct-q8_0
+# 4-bit Q4_K_M · ~42.5GB
+llama cli -hf lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~75GB
+llama cli -hf lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~42.5GB
+lms get https://huggingface.co/lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~75GB
+lms get https://huggingface.co/lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~39.7GB
+lms get https://huggingface.co/mlx-community/nvidia_Llama-3.1-Nemotron-70B-Instruct-HF_4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~75GB
+lms get https://huggingface.co/mlx-community/Llama-3.1-Nemotron-70B-Instruct-HF-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~42.86GB
+ollama run nemotron:70b-instruct-q4_K_M
+# 8-bit q8_0 · ~85.22GB
+ollama run nemotron:70b-instruct-q8_0
+# 4-bit Q4_K_M · ~42.5GB
+ollama run hf.co/lmstudio-community/Llama-3.1-Nemotron-70B-Instruct-HF-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~39.7GB
+mlx_lm.chat --model mlx-community/nvidia_Llama-3.1-Nemotron-70B-Instruct-HF_4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/nvidia_Llama-3.1-Nemotron-70B-Instruct-HF_4bit
+# 4-bit mlx-8bit · mac only · ~75GB
+mlx_lm.chat --model mlx-community/Llama-3.1-Nemotron-70B-Instruct-HF-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Llama-3.1-Nemotron-70B-Instruct-HF-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-nemotron-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

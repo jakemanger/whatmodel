@@ -8,19 +8,48 @@ Kuaishou (Kling AI) · released 2025-05 · closed weights
 
 **score 52.5** ±1.9 · #45 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Kling 2.1 Master among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1162.9    51.3   2026-09-22   59% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>    1235.0    54.4   2026-09-22   39% ▇▇▇▇▇
-prior                   pull toward the middle            49.9                 1% ▇
-                        weighted average                = 52.5
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄▆●█▃▂▂▂▄   #32 of 68*     59%      1
+image to video  ▁▂·▂▅●▅▄▅▆▃▄   #36 of 50*     39%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #32 of 68 · 59% of its score</summary>
+
+Trails [PixVerse 5.5](pixverse-v5-5.md), [Cosmos3-Nano](cosmos3-nano.md), [HunyuanVideo 1.5](hunyuanvideo-1-5.md) here, though they rank lower overall.
+
+<pre>
+test           result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1162.9  ▂▂▃●█▆·▆▅▁▂▇ beats 8/41   avg 1147       59%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #36 of 50 · 39% of its score</summary>
+
+Beats [Seedance 1.5 Pro](seedance-1-5-pro.md), [Kling 2.1 Standard](kling-2-1-standard.md), [HunyuanVideo 1.5 (I2V)](hunyuanvideo-1-5-i2v.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
+
+<pre>
+test                  result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1235.0  ▁▁▁▁▄●▃▆▃▂▄█ beats 12/40  avg 1189       39%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 52.5
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

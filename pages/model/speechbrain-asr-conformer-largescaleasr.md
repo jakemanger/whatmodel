@@ -6,23 +6,40 @@
 
 SpeechBrain · released 2025-02 · 0.48B params · apache-2.0
 
-**score 46.2** ±4.4 · #116 of 160 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 46.6** ±4.5 · #113 of 162 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks SpeechBrain Conformer (LargeScaleASR / Loquacious) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.5%    48.5   2026-03-26   70% ▇▇▇▇▇▇▇▇
-<a name="first-party-speechbrain-asr-cards"></a>SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md">LibriSpeech test-other WER (l…</a>   4.6%    37.7   2025-02-06   22% ▇▇▇
-prior                   pull toward the middle                   49.8                 8% ▇
-                        weighted average                       = 46.2
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    8.5%  ▁▁▁▃··▁▁▂●█▆ beats 28/86  avg 8.2%       70%  blunt
+<a href="https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md">LibriSpeech test-other WER (lab)</a>      4.6%  ▁▁▁▂▅▃▅●█▂▂▁ beats 28/54  avg 2.8%       22%  small run
+<a href="https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md">VoxPopuli English test WER (lab)</a>      6.9%  █▄▄··█●██▄██ beats 6/16   avg 7.4%         —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            1   70% ▇▇▇▇▇▇▇▇
+<a name="first-party-speechbrain-asr-cards"></a><a href="https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md">SpeechBrain Hugging Face ASR model card…</a>        1   22% ▇▇▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 46.6
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · SpeechBrain Hugging Face ASR model cards: published LibriSpeech/VoxPopuli WER for its own checkpoints ([Apache-2.0](https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md))</sub>
 
@@ -39,14 +56,18 @@ SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-confor
 
 <pre>
 version   needs  score
-fp32     ~2.8GB   46.2
+fp32     ~2.8GB   46.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32
+# fp32 · ~2.8GB
 uv run --with speechbrain python -c "from speechbrain.inference.ASR import EncoderDecoderASR as A; print(A.from_hparams(source='speechbrain/asr-conformer-loquacious', savedir='pretrained_models/asr-conformer-loquacious').transcribe_file('audio.wav'))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/speechbrain-asr-conformer-largescaleasr) · [JSON](https://whatmodel.sh/api?format=json&all=1)

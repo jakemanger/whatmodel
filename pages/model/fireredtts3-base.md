@@ -6,26 +6,44 @@
 
 FireRedTeam (Xiaohongshu) · released 2026-08 · 2.12B params · apache-2.0
 
-**score 67.2** ±2.5 · #6 of 117 · from 5 benchmark results across 1 source
+**score 67.2** ±2.6 · #7 of 118 · from 5 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks FireRedTTS3 (base) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source           test                            score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio  <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-en · speaker si…</a>  77.2%    68.8   2026-08-22   29% ▇▇▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-zh · speaker si…</a>  80.8%    67.4   2026-08-22   28% ▇▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">MiniMax multilingual test set…</a>   5.4%    67.4   2026-08-22   16% ▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-en · Whisper la…</a>   1.8%    65.5   2026-08-22   13% ▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-zh · Paraformer…</a>   0.9%    68.1   2026-08-22   11% ▇
-prior            pull toward the middle                   49.7                 2% ▇
-                 weighted average                       = 67.2
+task           vs the others      rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁▇█●▃   #6 of 37     97%      5
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #6 of 37 · 97% of its score</summary>
+
+Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md) here, though they rank higher overall. Trails [dots.tts SOAR 2B](dots-tts-soar.md), [LongCat-AudioDiT-3.5B](longcat-audiodit-3-5b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-en · speaker simila…</a>   77.2%  █·█·██·▄·▄·● beats 10/10  medium · avg 53%     29%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-zh · speaker simila…</a>   80.8%  ▃··▃█▅▅··▃·● beats 10/10  medium · avg 62%     28%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">MiniMax multilingual test set · 2…</a>    5.4%  █··█·····█·● beats 3/3    avg 18%              18%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-en · Whisper large-…</a>    1.8%  ▃··▃▅··▅·●▃▅ beats 7/11   avg 3.6%             12%  blunt
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-zh · Paraformer CER</a>     0.9%  ▂··▄··▂▂█·●▂ beats 9/11   avg 2.1%             11%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">UltraEval-Audio</a>                      5   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             3% ▇
+weighted average                        = 67.2
+</pre>
 
 <sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt))</sub>
 
@@ -36,11 +54,15 @@ version                                  needs  score
 bf16 (FireRedTTS3 repo) · nvidia only  ~12.3GB   67.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (FireRedTTS3 repo) · nvidia only
+# bf16 (FireRedTTS3 repo) · nvidia only · ~12.3GB
 git clone https://github.com/FireRedTeam/FireRedTTS3.git && cd FireRedTTS3 && pip install -r requirements.txt && pip install "huggingface_hub[cli]" && hf download FireRedTeam/FireRedTTS3 --local-dir pretrained_models/ && curl -L -o fireredtts3/utils/llm_tn/models/lid.176.ftz https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz && python -c "import torch; import torchaudio; from fireredtts3.core import FireRedTTS3; tts = FireRedTTS3('pretrained_models', use_wetext=True, use_llm_tn=False); prompt_audio, prompt_audio_sr = torchaudio.load('prompt.wav'); gen_audio, gen_audio_sr = tts.generate(language=None, prompt_text='<prompt audio text>', prompt_audio=prompt_audio, prompt_audio_sr=prompt_audio_sr, text='今天天气很好，我们一起去公园散步吧。', do_tn=True); torchaudio.save('gen.wav', gen_audio.cpu(), gen_audio_sr)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/fireredtts3-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

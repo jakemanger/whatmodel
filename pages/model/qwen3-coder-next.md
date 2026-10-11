@@ -6,24 +6,78 @@
 
 Alibaba · released 2026-02 · 79.7B params (3B active) · apache-2.0
 
-**score 67.2** ±1.7 · #114 of 934 · from 5 benchmark results across 2 sources
+**score 66.9** ±1.7 · #122 of 949 · from 5 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Qwen3-Coder-Next (80B-A3B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others            rank  counts  tests
+agent tasks                 not ranked yet       —      4
+coding       ▁▁▁▃▆██●▆▄▃▁     #175 of 469*    8.6%      4
+math         ▁▂▃▅▆▅▄█●▁▁▁      #63 of 400*     17%      1
+</pre>
+
+<details><summary>agent tasks · 0.0% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Verified (lab)</a>             70.6%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 79/131  hard · avg 19%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Multilingual (lab)</a>         62.8%  ▁··▁▃▂▅●█▃▃▁ beats 22/60   hard · avg 18%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Pro (split unspecified)…</a>   44.3%  ▃·▁▁▁▂▂▃●▇▃▁ beats 21/55   very hard · avg 4.3%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">Terminal-Bench 2.0 (lab)</a>             36.2%  ▂▂▅▅●███▆▂▃▃ beats 10/36   very hard · avg 9.5%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>coding · #175 of 469 · 8.6% of its score</summary>
+
+Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">HumanEval (Vector Institute, Insp…</a>   91.5%  ▄·▄·█·●·█·▄▄ beats 5/9     easy · avg 79%          8.6%  maxed out
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Verified (lab)</a>             70.6%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 79/131  hard · avg 19%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Multilingual (lab)</a>         62.8%  ▁··▁▃▂▅●█▃▃▁ beats 22/60   hard · avg 18%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md">SWE-bench Pro (split unspecified)…</a>   44.3%  ▃·▁▁▁▂▂▃●▇▃▁ beats 21/55   very hard · avg 4.3%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>math · #63 of 400 · 17% of its score</summary>
+
+Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MATH (Vector Institute, Inspect E…</a>   97.8%  ▄··██▄··▄·▄● beats 9/9    medium · avg 53%     17%  sharp · maxed out
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">GPQA Diamond (Vector Institute, I…</a>   75.6%  ▃··▃▃▃▃·▃·▃● beats 9/9    hard · avg 41%       39%  sharp · at its level
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   50.5%  ▅··▃▅·█·●██▃ beats 8/15   hard · avg 24%       19%  at its level
+<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, Inspe…</a>   82.5%  ▃····▃▅·▃▅·● beats 7/9    medium · avg 60%     16%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="vector-inspect-evals-leaderboard"></a>Vector Institute Eval…  <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">GPQA Diamond (Vector Institut…</a>  75.6%    68.3   2026-07-16   39% ▇▇▇▇▇
-                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MATH (Vector Institute, Inspe…</a>  97.8%    72.8   2026-07-16   17% ▇▇
-                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, I…</a>  82.5%    65.1   2026-07-16   15% ▇▇
-                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">HumanEval (Vector Institute, …</a>  91.5%    56.3   2026-07-16    8% ▇
-<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>  50.5%    67.7   2026-08-31   19% ▇▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 67.2
+source                                    results  share of the score
+<a name="vector-inspect-evals-leaderboard"></a><a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">Vector Institute Evaluation Leaderboard</a>         4   80% ▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1   19% ▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 66.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Vector Institute Evaluation Leaderboard ([Apache-2.0](../../licenses/vector-inspect-evals-leaderboard-Apache-2.0.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt))</sub>
 
@@ -46,19 +100,61 @@ api (Alibaba Cloud Model Studio) · $0.60/M blended · $0.3 in / $1.5 out per 1M
 <sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per 1M tokens, Alibaba Cloud Model Studio, Singapore (International deployment scope), qwen3-coder-next, lowest input tier (0 \< input tokens per request ≤ 32K). Requests with 32K–128K input are billed $0.5/$2.5 and 128K–256K $0.8/$4. Free quota and context-cache discounts excluded. Currency: USD. Alibaba Cloud official Model Studio pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/alibaba/qwen3-coder-next.toml): model catalogue context ceiling (not a promise by a hosted API)</sub>
 
 <pre>
-download              size  score
-4-bit q4_k_m      ~48.32GB   67.2
-2-bit ud-q2_k_xl  ~24.41GB   67.2
+download                       size  score
+4-bit q4_k_m               ~48.32GB   66.9
+2-bit ud-q2_k_xl           ~24.41GB   66.9
+4-bit mlx-4bit · mac only   ~44.8GB   66.9
+4-bit mlx-8bit · mac only   ~84.7GB   66.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run qwen3-coder-next
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/Qwen3-Coder-Next-GGUF:UD-Q2_K_XL
+# 2-bit ud-q2_k_xl · ~24.41GB
+llama cli -hf unsloth/Qwen3-Coder-Next-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Qwen3-Coder-Next-GGUF:UD-Q2_K_XL
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 2-bit ud-q2_k_xl · ~24.41GB
+lms get https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~44.8GB
+lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-Next-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~84.7GB
+lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-Next-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~48.32GB
+ollama run qwen3-coder-next
+# 2-bit ud-q2_k_xl · ~24.41GB
+ollama run hf.co/unsloth/Qwen3-Coder-Next-GGUF:UD-Q2_K_XL
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~44.8GB
+mlx_lm.chat --model lmstudio-community/Qwen3-Coder-Next-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Qwen3-Coder-Next-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~84.7GB
+mlx_lm.chat --model lmstudio-community/Qwen3-Coder-Next-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Qwen3-Coder-Next-MLX-8bit
+```
 
 ## Published speed measurements
 

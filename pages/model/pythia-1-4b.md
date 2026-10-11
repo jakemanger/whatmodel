@@ -6,42 +6,100 @@
 
 EleutherAI · released 2023-02 · 1.41B params · apache-2.0
 
-**score 17.8** ±1.6 · #909 of 934 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
+**score 17.8** ±1.5 · #924 of 949 · from 9 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Pythia 1.4B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (9)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                       60.6%  ▃·▅▃▃▅·█●▃██ beats 11/19  very easy · avg 90%     23%  at its level
+<a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                           86.5%  ▂··▂▃▂▂▆●▃█▂ beats 11/19  very easy · avg 98%     16%  typical
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                     57.3%  ▄····▄▆▂●▆▆█ beats 9/19   easy · avg 89%          16%  typical
+<a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                           71.1%  ▂·▄▄·▄▂●▂▄█▄ beats 10/19  easy · avg 88%          12%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>                  26.0%  █··●·▁▁·▁▂▁▂ beats 10/19  medium · avg 72%        12%  sharp · too hard for it
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   61.6%  ▃··▅▃▃▅▅▅●██ beats 11/19  very easy · avg 89%     10%  blunt · at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-1.4b/results_2024-05-18%2020%3A54%3A29.972980.json">MedQA (USMLE, 4 options)</a>             27.5%  ▁▁··●▁▁··▄▃█ beats 2/17   easy · avg 76%         4.3%  sharp · too hard for it
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-1.4b/results_2024-05-18%2020%3A54%3A29.972980.json">MedMCQA</a>                              31.5%  ▂▂··▄●▂▂·▄██ beats 4/17   medium · avg 68%       3.8%  too hard for it
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-1.4b/results_2024-05-18%2020%3A54%3A29.972980.json">PubMedQA</a>                             59.4%  ▂·▂●·▄▂▄▄▂█▂ beats 3/17   medium · avg 77%       1.4%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  60.6%    19.0   2023-05-31   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      86.5%    17.4   2023-05-31   18% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                57.3%    16.5   2023-05-31   17% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             26.0%    13.0   2023-05-31   14% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      71.1%    17.4   2023-05-31   14% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  61.6%    21.1   2023-05-31   12% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 17.8
+source                                    results  share of the score
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/EleutherAI/pythia-1.4b/results_2024-05-18%2020%3A54%3A29.972980.json">Open Medical-LLM Leaderboard results</a>            3   10% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 17.8
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt))</sub>
+<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
 <sub>[context source](https://arxiv.org/abs/2304.01373v2): Training sequence length stated by the maker; no separate serving limit is published.</sub>
 
 <pre>
-download       size  score
-4-bit fp16  ~2.93GB   17.8
+download         size  score
+4-bit fp16    ~2.93GB   17.8
+4-bit Q4_K_M   ~0.9GB   17.8
+8-bit Q8_0     ~1.5GB   17.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp16
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-1.4b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~0.9GB
+llama cli -hf mradermacher/pythia-1.4b-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/pythia-1.4b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.5GB
+llama cli -hf mradermacher/pythia-1.4b-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/pythia-1.4b-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~0.9GB
+lms get https://huggingface.co/mradermacher/pythia-1.4b-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~1.5GB
+lms get https://huggingface.co/mradermacher/pythia-1.4b-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~0.9GB
+ollama run hf.co/mradermacher/pythia-1.4b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.5GB
+ollama run hf.co/mradermacher/pythia-1.4b-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp16 · ~2.93GB
+uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-1.4b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/pythia-1-4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,39 +6,120 @@
 
 Alibaba · released 2023-09 · 14.2B params · tongyi-qianwen
 
-**score 38.4** ±1.0 · #733 of 934 · from 5 benchmark results across 4 sources
+**score 38.4** ±0.9 · #743 of 949 · from 6 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Qwen-14B-Chat among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃●██▇▆▄▃▁   #385 of 469*     41%      1
+chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂    #416 of 466     34%      3
+</pre>
+
+<details><summary>coding · #385 of 469 · 41% of its score</summary>
+
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
+
+<pre>
+test       result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>   46.3%  ▁█▄▅●█·▄▇▅▄▄ beats 18/42  easy · avg 78%     41%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #416 of 466 · 34% of its score</summary>
+
+Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       12.4%  ▁▂▂▃●▆█▆▄▄▁▁ beats 30/122  medium · avg 39%     18%  typical
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1081.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 37/95   avg 1201            8.0%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1139.3  ▁▁▁●▃▃▃▆▆▇█▃ beats 32/379  avg 1268            7.9%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    32.1%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 17/42  medium · avg 55%     21%  at its level
+<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   43.8%  ▂··▄·▂▆●▂█·▂ beats 8/14   medium · avg 57%    3.5%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        46.3%    38.9   2024-03-28   45% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                32.1%    39.8   2024-03-28   22% ▇▇▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   12.4%    36.5   2025-08-09   20% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1139.3    34.7   2026-10-02    8% ▇
-<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   43.8%    41.7   2024-01-03    4% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 38.4
+source                                    results  share of the score
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   62% ▇▇▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             1   18% ▇▇
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    8% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
+<a name="paper-2312.06281v2"></a><a href="https://arxiv.org/html/2312.06281v2">EQ-Bench: An Emotional Intelligence Ben…</a>        1    3% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 38.4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt))</sub>
+<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-16-bit bf16  ~28.33GB   38.4
+download          size  score
+16-bit bf16   ~28.33GB   38.4
+4-bit Q4_K_M    ~9.4GB   38.4
+8-bit Q8_0     ~15.1GB   38.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-pip install torch transformers==4.32.0 accelerate tiktoken einops scipy transformers_stream_generator==0.0.4 && python -c "from transformers import AutoModelForCausalLM, AutoTokenizer; t=AutoTokenizer.from_pretrained('Qwen/Qwen-14B-Chat', trust_remote_code=True); m=AutoModelForCausalLM.from_pretrained('Qwen/Qwen-14B-Chat', device_map='auto', trust_remote_code=True).eval(); print(m.chat(t, '你好', history=None)[0])"
+# 4-bit Q4_K_M · ~9.4GB
+llama cli -hf mradermacher/Qwen-14B-Chat-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Qwen-14B-Chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~15.1GB
+llama cli -hf mradermacher/Qwen-14B-Chat-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Qwen-14B-Chat-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~9.4GB
+lms get https://huggingface.co/mradermacher/Qwen-14B-Chat-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~15.1GB
+lms get https://huggingface.co/mradermacher/Qwen-14B-Chat-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~9.4GB
+ollama run hf.co/mradermacher/Qwen-14B-Chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~15.1GB
+ollama run hf.co/mradermacher/Qwen-14B-Chat-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~28.33GB
+pip install torch transformers==4.32.0 accelerate tiktoken einops scipy transformers_stream_generator==0.0.4 && python -c "from transformers import AutoModelForCausalLM, AutoTokenizer; t=AutoTokenizer.from_pretrained('Qwen/Qwen-14B-Chat', trust_remote_code=True); m=AutoModelForCausalLM.from_pretrained('Qwen/Qwen-14B-Chat', device_map='auto', trust_remote_code=True).eval(); print(m.chat(t, '你好', history=None)[0])"
+```
 
 [interactive version](https://whatmodel.sh/model/qwen-14b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

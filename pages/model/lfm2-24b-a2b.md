@@ -6,30 +6,56 @@
 
 Liquid AI · released 2026-02 · 23.8B params (2.3B active) · lfm1.0
 
-**score 50.9** ±1.2 · #410 of 934 · from 11 benchmark results across 1 source
+**score 50.7** ±1.2 · #420 of 949 · from 11 benchmark results across 1 source
+
+## What it's good at
+
+<sub>● marks LFM2 24B-A2B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others         rank  counts  tests
+math  ▁▂▃▅▆●▄█▄▁▁▁   #217 of 400     31%      4
+</pre>
+
+<details><summary>math · #217 of 400 · 31% of its score</summary>
+
+Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+
+<pre>
+test                         result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                         87.2%  █····█··●·▄█ beats 4/7    very easy · avg 86%     13%  sharp
+<a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>     83.9%  █▄··▄●▄····▄ beats 5/7    easy · avg 81%         7.6%  typical
+<a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>   29.3%  ▄··▄█●··▄··▄ beats 5/7    hard · avg 30%         5.6%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>       67.8%  ▄·▄·▄●▄·▄··█ beats 3/7    easy · avg 70%         5.1%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (7)</summary>
+
+<pre>
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                        39.7%  ▄···█·▄·●·▄▄ beats 5/7    hard · avg 38%       19%  sharp
+<a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                74.9%  ▄···▄▄·●█··█ beats 3/7    easy · avg 75%       14%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                            57.6%  ▄····█·▄●·▄▄ beats 5/7    medium · avg 56%     11%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>              43.3%  █··▄··●··█·▄ beats 4/7    medium · avg 43%    8.6%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>       57.0%  ▃··▃▃··●···█ beats 4/7    medium · avg 57%    6.2%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>            62.3%  ▄···▄·█·●·▄█ beats 4/7    medium · avg 60%    5.4%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>   49.0%  ▄··▄█▄··●··█ beats 5/7    medium · avg 47%    4.3%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="report-marco-moe-260425578v1"></a>Marco-MoE: Open Multi…  <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                    39.7%    51.7   2026-09-25   18% ▇▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                            74.9%    49.9   2026-09-25   14% ▇▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                           87.2%    50.8   2026-09-25   14% ▇▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                        57.6%    51.3   2026-09-25   11% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>          43.3%    50.4   2026-09-25    9% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>       83.9%    52.8   2026-09-25    7% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>   57.0%    50.0   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>     29.3%    50.0   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>        62.3%    52.0   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>         67.8%    49.0   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>  49.0%    51.8   2026-09-25    5% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 50.9
+source                                    results  share of the score
+<a name="report-marco-moe-260425578v1"></a><a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual Mixture-of…</a>       11   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 50.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt))</sub>
 
@@ -38,18 +64,73 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/LiquidAI/LFM2-24B-A2B/blob/a3bbacd91a678b97712f0e323e52f8c24ba29542/README.md): Liquid AI official model card: LFM2-24B-A2B context length 32,768 tokens. Observed 2026-09-25.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~14.78GB   50.9
-8-bit q8_0    ~29.06GB   50.9
+download                       size  score
+4-bit q4_k_m               ~14.78GB   50.7
+8-bit q8_0                 ~29.06GB   50.7
+4-bit Q4_K_M                ~14.4GB   50.7
+8-bit Q8_0                  ~25.4GB   50.7
+4-bit mlx-4bit · mac only   ~13.4GB   50.7
+4-bit mlx-8bit · mac only   ~25.3GB   50.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run lfm2:24b
-# 8-bit q8_0
-ollama run lfm2:24b-q8_0
+# 4-bit Q4_K_M · ~14.4GB
+llama cli -hf LiquidAI/LFM2-24B-A2B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf LiquidAI/LFM2-24B-A2B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~25.4GB
+llama cli -hf LiquidAI/LFM2-24B-A2B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf LiquidAI/LFM2-24B-A2B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~14.4GB
+lms get https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~25.4GB
+lms get https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~13.4GB
+lms get https://huggingface.co/LiquidAI/LFM2-24B-A2B-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~25.3GB
+lms get https://huggingface.co/LiquidAI/LFM2-24B-A2B-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~14.78GB
+ollama run lfm2:24b
+# 8-bit q8_0 · ~29.06GB
+ollama run lfm2:24b-q8_0
+# 4-bit Q4_K_M · ~14.4GB
+ollama run hf.co/LiquidAI/LFM2-24B-A2B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~25.4GB
+ollama run hf.co/LiquidAI/LFM2-24B-A2B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~13.4GB
+mlx_lm.chat --model LiquidAI/LFM2-24B-A2B-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model LiquidAI/LFM2-24B-A2B-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~25.3GB
+mlx_lm.chat --model LiquidAI/LFM2-24B-A2B-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model LiquidAI/LFM2-24B-A2B-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/lfm2-24b-a2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

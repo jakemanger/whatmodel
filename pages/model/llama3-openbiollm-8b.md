@@ -6,35 +6,106 @@
 
 Saama AI Labs · released 2024-04 · llama3
 
-**score 27.8** ±5.3 · #865 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.2** ±2.1 · #707 of 949 · from 4 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Llama3-OpenBioLLM-8B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/aaditya/Llama3-OpenBioLLM-8B/results_2024-05-29%2009%3A08%3A41.270228.json">MedQA (USMLE, 4 options)</a>             57.8%  ▁▁··▄▁▁··▄▃● beats 15/17  easy · avg 76%       51%  sharp · at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/aaditya/Llama3-OpenBioLLM-8B/results_2024-05-29%2009%3A08%3A41.270228.json">MedMCQA</a>                              57.8%  ▂▂··▄▄▂▂·▄█● beats 17/17  medium · avg 68%     27%  at its level
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   14.2%  ▁▁●▁▁▂▂▃▄▆█▃ beats 2/97   hard · avg 32%       17%  blunt
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/aaditya/Llama3-OpenBioLLM-8B/results_2024-05-29%2009%3A08%3A41.270228.json">PubMedQA</a>                             72.0%  ▂·▂▆·▄▂▄▄●█▂ beats 12/17  medium · avg 77%    2.9%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  14.2%    24.6   2025-04-28   87% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                13% ▇▇
-                        weighted average                       = 27.8
+source                                results  share of the score
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/aaditya/Llama3-OpenBioLLM-8B/results_2024-05-29%2009%3A08%3A41.270228.json">Open Medical-LLM Leaderboard results</a>        3   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                  1   17% ▇▇
+prior: pull toward the middle                    2% ▇
+weighted average                               = 40.2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
+<sub>Licences: Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-16-bit bf16  ~16.06GB   27.8
+download                       size  score
+16-bit bf16                ~16.06GB   40.2
+4-bit Q4_K_M                 ~4.9GB   40.2
+8-bit Q8_0                   ~8.5GB   40.2
+4-bit mlx-4bit · mac only    ~5.3GB   40.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='aaditya/Llama3-OpenBioLLM-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~4.9GB
+llama cli -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.5GB
+llama cli -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.9GB
+lms get https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.5GB
+lms get https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~5.3GB
+lms get https://huggingface.co/mlx-community/Llama3-OpenBioLLM-8B -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.9GB
+ollama run hf.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.5GB
+ollama run hf.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~5.3GB
+mlx_lm.chat --model mlx-community/Llama3-OpenBioLLM-8B
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Llama3-OpenBioLLM-8B
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~16.06GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='aaditya/Llama3-OpenBioLLM-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/llama3-openbiollm-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

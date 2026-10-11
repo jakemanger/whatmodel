@@ -6,28 +6,47 @@
 
 Suno · released 2023-04 · 0.9B params · mit
 
-**score 25.5** ±2.9 · #111 of 117 · from 7 benchmark results across 5 sources
+**score 25.4** ±2.9 · #112 of 118 · from 7 benchmark results across 5 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Bark among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.51 / 5    21.9   2025-05-11   63% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.49 / 5    19.4   2025-05-11    5% ▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>      9.0%    29.4   2025-08-10    7% ▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       20.7%    39.4   2025-08-10    6% ▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.61 / 5    41.5   2025-05-29    9% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     82.2%    19.7   2025-05-15    5% ▇
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     73.1%   -28.5   2025-04-25    1% ▇
-prior                   pull toward the middle                      49.7                 3% ▇
-                        weighted average                          = 25.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (7)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  2.51 / 5  ▅·●▅▅·█▃▃▅·▅ beats 2/17   easy · avg 4.03 / 5       63%  at its level
+<a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automatic …</a>  3.61 / 5  ▄·█·●▄····█▄ beats 4/8    easy · avg 3.93 / 5      9.1%  blunt · at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>      9.0%  ●▅▃▃█▅▅▃·▃·▅ beats 1/16   hard · avg 30%           7.5%  too hard for it
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           20.7%  ▂▄··●▄▄··█▄▆ beats 3/16   avg 16%                  6.1%  blunt
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.49 / 5  ▅··▃●··▅█▅██ beats 3/17   medium · avg 3.30 / 5    5.4%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     82.2%  ▂▂●·▂·█▆▂·▄▂ beats 3/17   very easy · avg 89%      4.7%  blunt
+<a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>     73.1%  ▂●····▃·▃▅▂█ beats 1/14   very easy · avg 86%      0.8%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                   2   68% ▇▇▇▇▇▇▇▇
+<a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   14% ▇▇
+<a name="speech-emergent-v1-paper-ccby"></a><a href="https://arxiv.org/html/2505.23009v1">EmergentTTS-Eval v1 paper</a>                       1    9% ▇
+<a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>           1    5% ▇
+<a name="speech-ttsds-v1-mit"></a><a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 published results</a>                      1    1% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 25.4
+</pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
 
@@ -35,17 +54,21 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                needs  score
-fp32                   ~12GB   25.5
-fp32 (transformers)  ~4.49GB   25.5
+fp32                   ~12GB   25.4
+fp32 (transformers)  ~4.49GB   25.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32
+# fp32 · ~12GB
 pip install git+https://github.com/suno-ai/bark.git && python -m bark --text "Hello, my name is Suno." --output_filename example.wav
-# fp32 (transformers)
+# fp32 (transformers) · ~4.49GB
 pip install --upgrade transformers scipy torch && python -c "import scipy; from transformers import AutoProcessor, AutoModel; processor = AutoProcessor.from_pretrained('suno/bark'); model = AutoModel.from_pretrained('suno/bark'); inputs = processor(text=['Hello, my name is Suno. And, uh — and I like pizza. [laughs] But I also have other interests such as playing tic tac toe.'], return_tensors='pt'); speech_values = model.generate(**inputs, do_sample=True); scipy.io.wavfile.write('bark_out.wav', rate=model.generation_config.sample_rate, data=speech_values.cpu().numpy().squeeze())"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/bark) · [JSON](https://whatmodel.sh/api?format=json&all=1)

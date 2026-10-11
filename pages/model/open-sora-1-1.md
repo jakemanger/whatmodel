@@ -8,18 +8,36 @@ HPC-AI Tech · released 2024-04 · 0.7B params · apache-2.0
 
 **score 31.9** ±6.7 · #81 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Open-Sora 1.1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>  51.4%    27.7   2024-10-01   81% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                19% ▇▇
-                        weighted average                       = 31.9
+task           vs the others        rank  counts  tests
+text to video  ▆●▃▄▆▅█▃▂▂▂▄   #58 of 68*     81%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #58 of 68 · 81% of its score</summary>
+
+Trails [LTX-Video 0.9 (2B)](ltx-video-0-9.md), [LaVie (base T2V)](lavie.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>   51.4%  ▄·▄█●▄▄·▄·▄█ beats 4/10   medium · avg 71%     81%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       19% ▇▇
+weighted average                                   = 31.9
+</pre>
 
 <sub>Licences: ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>
 
@@ -30,11 +48,15 @@ version               needs  score
 bf16 · nvidia only  ~13.5GB   31.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~13.5GB
 git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && git checkout v1.2.0 && pip install -v . && python scripts/inference.py configs/opensora-v1-1/inference/sample.py --prompt "A beautiful sunset over the city" --num-frames 32 --image-size 480 854
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/open-sora-1-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

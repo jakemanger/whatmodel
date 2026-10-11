@@ -6,23 +6,51 @@
 
 Fish Audio · released 2025-06 · proprietary
 
-**score 71.2** ±7.3 · #2 of 117 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 71.3** ±7.5 · #2 of 118 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks OpenAudio S1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-fish-s2-report"></a>Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-en · Whisper la…</a>   1.1%    75.8   2026-03-11   45% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-zh · Paraformer…</a>   0.5%    78.5   2026-03-11   34% ▇▇▇▇
-prior                   pull toward the middle                   49.7                21% ▇▇▇
-                        weighted average                       = 71.2
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁▇█▃●   #3 of 37*     78%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #3 of 37 · 78% of its score</summary>
+
+Trails [dots.tts SOAR 2B](dots-tts-soar.md), [Qwen-Audio-3.0-TTS-Plus](qwen-audio-3-0-tts-plus.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-en · Whisper large-…</a>    1.1%  ▁···▂▂▂▂█▆▄● beats 34/35  avg 3.6%       44%  blunt · small run
+<a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-zh · Paraformer CER…</a>    0.5%  ▁·▂▁▁▁▂▃▅█·● beats 29/30  avg 2.1%       34%  blunt · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  counts  why
+<a href="https://arxiv.org/html/2603.08823v2">Long-TTS-Eval · Fish truncated En…</a>    6.3%  ●··········█ beats 0/1         —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2603.08823v2">Long-TTS-Eval · Fish truncated Ch…</a>    6.4%  ●··········█ beats 0/1         —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                results  share of the score
+<a name="speech-fish-s2-report"></a><a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report (lab)</a>        2   78% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                   22% ▇▇▇
+weighted average                               = 71.3
+</pre>
 
 <sub>Licences: Fish Audio S2 Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

@@ -6,26 +6,42 @@
 
 Meta · released 2022-05 · 0.125B params · opt-175b-license-noncommercial
 
-**score 2.3** ±1.8 · #930 of 934 · from 7 benchmark results across 2 sources
+**score 2.6** ±1.7 · #945 of 949 · from 7 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks OPT-125M among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (7)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 75.1%  ▂··▂●▂▂▆▃▃█▂ beats 3/19    very easy · avg 98%     35%  at its level
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                             43.5%  ▃·●▃▃▅·██▃██ beats 1/19    very easy · avg 90%     25%  at its level
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   37.9%  ▃··▅●▃▅▅▅███ beats 3/19    very easy · avg 89%     14%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 63.0%  ▂·●▄·▄▂▆▂▄█▄ beats 2/19    easy · avg 88%          14%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           50.3%  ●····▄▆▂▄▆▆█ beats 0/19    easy · avg 89%         7.4%  too hard for it
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        18.9%  ●··▁·▁▁·▁▂▁▂ beats 2/19    medium · avg 72%       2.7%  sharp · too hard for it
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   24.4%  ●▁▁▁▁▁▁▁▂█▅▁ beats 16/276  medium · avg 73%       0.7%  too hard for it · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            75.1%     4.2   2023-05-31   35% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        43.5%     1.9   2023-05-31   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  37.9%     2.9   2023-05-31   15% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            63.0%     0.9   2023-05-31   14% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      50.3%    -8.1   2023-05-31    7% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   18.9%    -5.7   2023-05-31    3% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  24.4%   -10.4   2024-02-05    1% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                        = 2.3
+source                                    results  share of the score
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 2.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -35,14 +51,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~0.25GB    2.3
+4-bit fp16  ~0.25GB    2.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp16
+# 4-bit fp16 · ~0.25GB
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-125m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/opt-125m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

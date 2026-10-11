@@ -6,22 +6,39 @@
 
 01.AI · released 2024-05 · 6.06B params · apache-2.0
 
-**score 37.6** ±2.9 · #749 of 934 · from 3 benchmark results across 3 sources
+**score 37.3** ±2.8 · #766 of 949 · from 3 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Yi-1.5 6B (base) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              27.4%  ▂▁●▄▂▅▇█▆▂▂▂ beats 6/58    medium · avg 50%     72%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   62.4%  ▃▁▁▁▁▁▁▁●█▅▁ beats 95/276  medium · avg 73%     14%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   77.4%  ▁▁▁▁▁▁▁▂●█▄▃ beats 58/146  easy · avg 83%       11%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         27.4%    34.5   2025-04-01   70% ▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  62.4%    42.6   2024-05-16   15% ▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  77.4%    45.6   2026-04-17   12% ▇
-prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 37.6
+source                           results  share of the score
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                     1   72% ▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   14% ▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                  1   11% ▇
+prior: pull toward the middle               3% ▇
+weighted average                          = 37.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -30,15 +47,75 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/01-ai/Yi-1.5-6B/blob/157a3d77ab5a8a8f079510eaa25169b547481f06/config.json): 01.AI official configuration for Yi-1.5-6B (pinned commit 157a3d7): max\_position\_embeddings 4096. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-16-bit bf16  ~12.12GB   37.6
+download                       size  score
+16-bit bf16                ~12.12GB   37.3
+4-bit Q4_K_M                 ~3.7GB   37.3
+8-bit Q8_0                   ~6.4GB   37.3
+4-bit mlx-4bit · mac only    ~3.4GB   37.3
+4-bit mlx-8bit · mac only    ~6.4GB   37.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-1.5-6B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~3.7GB
+llama cli -hf mradermacher/Yi-1.5-6B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Yi-1.5-6B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~6.4GB
+llama cli -hf mradermacher/Yi-1.5-6B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Yi-1.5-6B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~3.7GB
+lms get https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~6.4GB
+lms get https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~3.4GB
+lms get https://huggingface.co/mlx-community/Yi-1.5-6B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~6.4GB
+lms get https://huggingface.co/mlx-community/Yi-1.5-6B-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~3.7GB
+ollama run hf.co/mradermacher/Yi-1.5-6B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~6.4GB
+ollama run hf.co/mradermacher/Yi-1.5-6B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~3.4GB
+mlx_lm.chat --model mlx-community/Yi-1.5-6B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Yi-1.5-6B-4bit
+# 4-bit mlx-8bit · mac only · ~6.4GB
+mlx_lm.chat --model mlx-community/Yi-1.5-6B-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Yi-1.5-6B-8bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~12.12GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-1.5-6B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/yi-1-5-6b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

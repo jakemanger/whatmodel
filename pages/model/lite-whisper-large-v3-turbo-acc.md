@@ -6,23 +6,39 @@
 
 Efficient-Speech (LiteASR) · released 2025-02 · 0.66B params · apache-2.0
 
-**score 52.8** ±3.9 · #83 of 160 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 52.8** ±4.0 · #84 of 162 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LiteWhisper large-v3-turbo-acc among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.8%    51.8   2026-03-26   55% ▇▇▇▇▇▇▇
-<a name="speech-stt-liteasr-report-ccby"></a>LiteASR               <a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set ave…</a>  10.2%    54.6   2025-02-27   39% ▇▇▇▇▇
-prior                 pull toward the middle                   49.8                 6% ▇
-                      weighted average                       = 52.8
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.8%  ▁▁▁▃··▁▁▂●█▆ beats 42/86  avg 8.2%       56%  blunt
+<a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set average…</a>   10.2%  ▂·······▂··● beats 2/6    avg 13%        38%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   56% ▇▇▇▇▇▇▇
+<a name="speech-stt-liteasr-report-ccby"></a><a href="https://arxiv.org/html/2502.20583v2">LiteASR (lab)</a>                        1   38% ▇▇▇▇▇
+prior: pull toward the middle             6% ▇
+weighted average                        = 52.8
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · LiteASR ([CC BY 4.0](../../licenses/speech-stt-liteasr-report-ccby.txt))</sub>
 
@@ -33,11 +49,15 @@ version               needs  score
 fp16 · nvidia only  ~2.08GB   52.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~2.08GB
 uv run --with transformers --with torch --with librosa python -c "import librosa, torch; from transformers import AutoProcessor, AutoModel; m=AutoModel.from_pretrained('efficient-speech/lite-whisper-large-v3-turbo-acc', trust_remote_code=True).to(torch.float16).to('cuda'); p=AutoProcessor.from_pretrained('openai/whisper-large-v3'); f=p(librosa.load('audio.wav', sr=16000)[0], sampling_rate=16000, return_tensors='pt').input_features.to(torch.float16).to('cuda'); print(p.batch_decode(m.generate(f), skip_special_tokens=True)[0])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/lite-whisper-large-v3-turbo-acc) · [JSON](https://whatmodel.sh/api?format=json&all=1)

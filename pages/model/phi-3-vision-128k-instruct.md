@@ -6,28 +6,61 @@
 
 Microsoft · released 2024-05 · 4.15B params · mit
 
-**score 41.4** ±1.8 · #675 of 934 · from 9 benchmark results across 4 sources
+**score 41.4** ±1.8 · #683 of 949 · from 9 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Phi-3-vision-128k-instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+math                ▁▂▃●▆▅▄█▄▁▁▁   #305 of 400*    6.3%      1
+vision &amp; documents  ●▁▃▂▁▃▄▃▆▇█▄    #150 of 150     99%      9
+</pre>
+
+<details><summary>math · #305 of 400 · 6.3% of its score</summary>
+
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
+
+<pre>
+test                        result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>   44.5%  ▁··▁●▄▇█▅▆█▄ beats 4/47   medium · avg 52%    6.3%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #150 of 150 · 99% of its score</summary>
+
+Trails [LLaVA-v1.6-Vicuna-13B](llava-v1-6-vicuna-13b.md), [Qwen2-VL 2B Instruct](qwen2-vl-2b.md), [Phi-3.5-vision-instruct](phi-3-5-vision-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>        60.5%  ▄█●▄▄·██·▄·█ beats 3/12   easy · avg 71%       41%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      881.1  ●▁▂▂▂▂▄▅▅▆██ beats 0/145  avg 1068             20%  blunt
+<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>        31.6%  ▂▂▂●▃▂·▂▂··▂ beats 4/13   medium · avg 36%     15%  typical
+<a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (lab)</a>                     40.4%  ▁····▁●▄█▇▆▆ beats 2/52   medium · avg 50%     10%  small run
+<a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>           44.5%  ▁··▁●▄▇█▅▆█▄ beats 4/47   medium · avg 52%    6.3%  at its level · small run
+<a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>   38.4%  ▅●█··▅▃····▃ beats 2/9    hard · avg 43%      3.4%  blunt
+<a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA (lab)</a>                        81.4%  ▁··▁▁▁▁▁▂●▅█ beats 16/44  easy · avg 79%      1.3%  blunt · at its level · noisy · small run
+<a href="https://arxiv.org/html/2404.14219v3#S7">TextVQA (lab)</a>                        70.9%  ▁▁▁▄●▁▃·▃▃▃█ beats 9/24   easy · avg 76%      1.2%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test (lab)</a>                      76.7%  ▁▁▅●▃▇·▄·█·▃ beats 9/28   easy · avg 83%      0.7%  blunt · at its level · noisy · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="charxiv-readme-apache"></a>CharXiv leaderboard     <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>   60.5%    44.6   2024-07-23   41% ▇▇▇▇▇
-                        <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>   31.6%    48.7   2024-07-23   14% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  881.1    27.4   2026-10-02   21% ▇▇
-<a name="paper-2404.14219v3-phi3"></a>Phi-3 Technical Report  <a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (lab)</a>                40.4%    42.3   2024-05-23   10% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>      44.5%    46.0   2024-05-23    6% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA (lab)</a>                   81.4%    52.4   2024-05-23    1% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">TextVQA (lab)</a>                   70.9%    39.1   2024-05-23    1% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test (lab)</a>                 76.7%    31.9   2024-05-23    1% ▇
-<a name="paper-2501.16411v2-physbench"></a>PhysBench: Benchmarki…  <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world unde…</a>  38.4%    41.8   2025-01-29    3% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 41.4
+source                                    results  share of the score
+<a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   56% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   20% ▇▇
+<a name="paper-2404.14219v3-phi3"></a><a href="https://arxiv.org/html/2404.14219v3#S7">Phi-3 Technical Report (lab)</a>                    5   19% ▇▇
+<a name="paper-2501.16411v2-physbench"></a><a href="https://arxiv.org/html/2501.16411v2">PhysBench: Benchmarking and Enhancing V…</a>        1    3% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 41.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: CharXiv leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Phi-3 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -38,11 +71,15 @@ download                      size  score
 16-bit bf16 · nvidia only  ~8.29GB   41.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16 · nvidia only
+# 16-bit bf16 · nvidia only · ~8.29GB
 vllm serve microsoft/Phi-3-vision-128k-instruct --trust-remote-code
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/phi-3-vision-128k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

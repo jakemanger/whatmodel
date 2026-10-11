@@ -6,23 +6,37 @@
 
 Cohere
 
-**score 56.7** ±3.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 56.7** ±3.8 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Command A Vision (07-2025) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others      rank  counts  tests
+vision &amp; documents  ●··········█   #2 of 2*     94%      2
+</pre>
+
+<details><summary>vision &amp; documents · #2 of 2 · 94% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty      counts  why
+<a href="https://cohere.com/blog/command-a-plus">CharXiv descriptive questions (la…</a>   82.0%  ▂▄▄▅▇●█▇▇▂▁▂ beats 27/58   easy · avg 71%     51%  small run
+<a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions) (la…</a>   46.9%  ▂▅▃●▅▆▆▅▆█▆▂ beats 25/100  hard · avg 34%     43%  at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">CharXiv descriptive questions…</a>  82.0%    57.4   2026-05-20   51% ▇▇▇▇▇▇
-                        <a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions)…</a>  46.9%    56.8   2026-05-20   43% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 56.7
+source                                    results  share of the score
+<a name="first-party-cohere-scores"></a><a href="https://cohere.com/blog/command-a-plus">Cohere vendor-reported benchmark scores…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 56.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
-
-
 
 ## How to run it
 

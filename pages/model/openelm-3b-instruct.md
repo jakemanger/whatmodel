@@ -6,25 +6,81 @@
 
 Apple · released 2024-04 · 3.04B params · apple-amlr
 
-**score 23.9** ±6.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 23.6** ±7.3 · #905 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks OpenELM 3B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   75.2%  ●▁▂▃▄▄█▆▃▂▂▁ beats 3/140  very easy · avg 94%     76%  blunt · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  75.2%    16.8   2025-10-16   79% ▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                21% ▇▇▇
-                        weighted average                       = 23.9
+source                             results  share of the score
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1   76% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                24% ▇▇▇
+weighted average                            = 23.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download        size  score
+4-bit Q4_K_M  ~1.9GB   23.6
+8-bit Q8_0    ~3.2GB   23.6
+</pre>
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
+```sh
+# 4-bit Q4_K_M · ~1.9GB
+llama cli -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~3.2GB
+llama cli -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q8_0
+```
+
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~1.9GB
+lms get https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~3.2GB
+lms get https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~1.9GB
+ollama run hf.co/mradermacher/OpenELM-3B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~3.2GB
+ollama run hf.co/mradermacher/OpenELM-3B-Instruct-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/openelm-3b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

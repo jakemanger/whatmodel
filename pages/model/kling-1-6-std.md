@@ -6,20 +6,38 @@
 
 Kuaishou (Kling AI) · released 2024-12 · closed weights
 
-**score 45.4** ±5.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.3** ±5.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Kling 1.6 (Standard mode) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others        rank  counts  tests
+text to video  ▇▅▄▆●▆▇▂▃▃▂▄   #54 of 94*     88%      1
+</pre>
+
+<details><summary>text to video · #54 of 94 · 88% of its score</summary>
+
+Trails [CogVideoX-5B](cogvideox-5b.md) here, though they rank lower overall.
+
+<pre>
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rating)</a>   59.8%  ▄····▄···●·▄ beats 2/4    medium · avg 66%     88%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>  59.8%    44.8   2025-04-21   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                12% ▇
-                        weighted average                       = 45.4
+source                                    results  share of the score
+<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-V2: Infinite-length Film Gener…</a>        1   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       12% ▇
+weighted average                                   = 45.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>
 

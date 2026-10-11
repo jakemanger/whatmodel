@@ -6,35 +6,73 @@
 
 Nous Research · released 2024-07 · 8.03B params · llama3
 
-**score 41.8** ±1.2 · #666 of 934 · from 16 benchmark results across 4 sources
+**score 41.8** ±1.2 · #673 of 949 · from 16 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Hermes 3 Llama 3.1 8B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃●██▇▆▄▃▁   #363 of 469*     20%      1
+chat &amp; writing  ●········█·█       #3 of 3*    2.6%      1
+</pre>
+
+<details><summary>coding · #363 of 469 · 20% of its score</summary>
+
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   30.1%  ▁·▁●▄▁▆▄█▆▂▂ beats 2/62   medium · avg 54%     20%  at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #3 of 3 · 2.6% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecified) …</a>   62.3%  ▁▁▃●▂▄▄▆█▃▂▁ beats 23/141  easy · avg 79%    2.6%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (14)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (lab)</a>                 52.9%  ▁▁▁▁▂▄▅●█▃▄▁ beats 55/129   medium · avg 72%        11%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>                  58.1%  ▆▁▁▂▂▅▇●▄▃▃▂ beats 70/97    medium · avg 73%       9.4%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                           64.8%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 84/183   easy · avg 80%         8.0%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                     77.7%  ▁···▂▁▁▅█▇●▁ beats 81/87    easy · avg 86%         6.9%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (lab)</a>      29.4%  ▂▁▂▂●▃▆▃▅█▄▃ beats 17/104   hard · avg 41%         6.6%  sharp · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                          85.0%  ▁▄▅▆▂▆▄▄█▃●▄ beats 51/58    easy · avg 90%         5.9%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                       32.1%  ▁▁·▁▁●▃▂▄▅█▁ beats 15/188   medium · avg 52%       5.6%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                      82.8%  ▁▁▁▁▂▂▃▇█▆●▃ beats 72/85    very easy · avg 89%    5.5%  small run
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   50.4%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 31/81    medium · avg 58%       5.2%  blunt · at its level
+<a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                     47.8%  █▁▁▁▄▃▃●▂▁▄▂ beats 41/65    medium · avg 55%       4.4%  small run
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   68.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 154/276  medium · avg 73%       2.6%  at its level · noisy
+<a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                           43.5%  ●······█···█ beats 0/2      medium · avg 53%       2.2%  blunt · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                           80.3%  ▁▁▁▃▃▄▇█●▃▁▁ beats 69/83    easy · avg 86%         2.0%  blunt · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (lab)</a>                 58.7%  █▅▇▅▁▄●▇▅▄▁▁ beats 45/73    medium · avg 64%       1.0%  blunt · at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="first-party-nous-research-scores"></a>Nous Research vendor-…  <a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (lab)</a>            52.9%    41.2   2024-08-15   11% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>             58.1%    44.3   2024-08-15   10% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                      64.8%    41.0   2024-08-15    8% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                77.7%    42.4   2024-08-15    7% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (la…</a>  29.4%    38.0   2024-08-15    7% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                  32.1%    38.7   2024-08-15    6% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                     85.0%    44.2   2024-08-15    6% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                 82.8%    43.3   2024-08-15    5% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                47.8%    47.1   2024-08-15    5% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecifi…</a>  62.3%    34.9   2024-08-15    3% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                      43.5%    43.2   2024-08-15    2% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                      80.3%    37.2   2024-08-15    2% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (lab)</a>            58.7%    42.9   2024-08-15    2% ▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  30.1%    40.8   2024-09-30   20% ▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.4%    44.0   2026-09-19    5% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  68.7%    47.1   2024-08-30    3% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 41.8
+source                                    results  share of the score
+<a name="first-party-nous-research-scores"></a><a href="https://arxiv.org/pdf/2408.11857v1">Nous Research vendor-reported scores fo…</a>       13   71% ▇▇▇▇▇▇▇▇▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   20% ▇▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    5% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    3% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 41.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -43,18 +81,65 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://arxiv.org/abs/2408.11857v1): Nous Research Hermes 3 technical report: Hermes 3 leverages "the 128K token context window provided by Llama 3.1" (base models with "a context length of 131,072 (128K) tokens"). Stated rounded 128K. Observed 2026-10-07.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m   ~5.32GB   41.8
-8-bit q8_0    ~10.14GB   41.8
+download                       size  score
+4-bit q4_k_m                ~5.32GB   41.8
+8-bit q8_0                 ~10.14GB   41.8
+4-bit Q4_K_M                 ~4.9GB   41.8
+8-bit Q8_0                   ~8.5GB   41.8
+4-bit mlx-8bit · mac only    ~8.5GB   41.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run hermes3:8b-llama3.1-q4_K_M
-# 8-bit q8_0
-ollama run hermes3:8b-llama3.1-q8_0
+# 4-bit Q4_K_M · ~4.9GB
+llama cli -hf bartowski/Hermes-3-Llama-3.1-8B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Hermes-3-Llama-3.1-8B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.5GB
+llama cli -hf bartowski/Hermes-3-Llama-3.1-8B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Hermes-3-Llama-3.1-8B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.9GB
+lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.1-8B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.5GB
+lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.1-8B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~8.5GB
+lms get https://huggingface.co/Shaund91/Hermes-3-Llama-3.1-8B-mlx-8Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.32GB
+ollama run hermes3:8b-llama3.1-q4_K_M
+# 8-bit q8_0 · ~10.14GB
+ollama run hermes3:8b-llama3.1-q8_0
+# 4-bit Q4_K_M · ~4.9GB
+ollama run hf.co/bartowski/Hermes-3-Llama-3.1-8B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.5GB
+ollama run hf.co/bartowski/Hermes-3-Llama-3.1-8B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-8bit · mac only · ~8.5GB
+mlx_lm.chat --model Shaund91/Hermes-3-Llama-3.1-8B-mlx-8Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model Shaund91/Hermes-3-Llama-3.1-8B-mlx-8Bit
+```
 
 [interactive version](https://whatmodel.sh/model/hermes-3-llama-3-1-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

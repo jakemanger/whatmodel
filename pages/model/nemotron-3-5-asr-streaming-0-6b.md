@@ -6,30 +6,48 @@
 
 NVIDIA · released 2026-05 · 0.64B params · openmdw-1.1
 
-**score 43.7** ±2.4 · #127 of 160 · from 9 benchmark results across 5 sources
+**score 43.5** ±2.5 · #128 of 162 · from 9 benchmark results across 5 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Nemotron 3.5 ASR Streaming 0.6B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">LibriSpeech test-clean WER</a>       3.0%    41.7   2026-09-15   28% ▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">FLEURS English test WER</a>          7.9%    39.3   2026-09-15   11% ▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">FLEURS Mandarin test error ra…</a>  18.9%    37.6   2026-09-15   11% ▇
-<a name="speech-vibevoice-asr-streaming-report-ccby"></a>VibeVoice-ASR-Streami…  <a href="https://arxiv.org/html/2609.02812v2">GigaSpeech test WER</a>             11.8%    48.0   2026-09-10   10% ▇
-                        <a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-other WER</a>       6.8%    44.5   2026-09-10    9% ▇
-                        <a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-clean WER</a>       3.0%    38.5   2026-09-10    3% ▇
-<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/aea7914706d44d3163c1c0283e05700900abe7af/README.md">Picovoice STT benchmark · Eng…</a>   7.8%    52.7   2026-10-07   11% ▇
-<a name="speech-stt-danish-asr-ryeai-mit"></a>Danish Speech-to-Text…  <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean…</a>  47.4%    38.0   2026-09-26    9% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  35.9%    54.7   2026-07-09    6% ▇
-prior                   pull toward the middle                   49.8                 2% ▇
-                        weighted average                       = 43.7
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">LibriSpeech test-clean WER</a>            3.0%  ▁···▁▁▂·●▄██ beats 11/56  avg 2.3%       31%  blunt · several runs
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">FLEURS English test WER</a>               7.9%  ▁··▁▁▁▁●▁▃█▁ beats 8/56   avg 5.8%       11%  blunt
+<a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/aea7914706d44d3163c1c0283e05700900abe7af/README.md">Picovoice STT benchmark · English…</a>    7.8%  █·█···▄▄▄··● beats 7/7    avg 8.3%       11%  typical
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">FLEURS Mandarin test error rate</a>      18.9%  ▂▂··▂●▂▂·▆██ beats 4/17   avg 12%        11%  typical
+<a href="https://arxiv.org/html/2609.02812v2">GigaSpeech test WER</a>                  11.8%  ▁····▁··●▄█▂ beats 2/17   avg 10.0%      10%  small run
+<a href="https://arxiv.org/html/2609.02812v2">LibriSpeech test-other WER</a>            6.8%  ▁▁▁●▅▃▅▄█▂▂▁ beats 6/54   avg 4.8%      9.5%  small run
+<a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   47.4%  ▂▂···●▂▅█▃▂▂ beats 2/16   avg 32%       8.4%  blunt
+<a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   35.9%  ▃·▂▂▅█●▃▂▅▂▂ beats 14/22  avg 40%       6.3%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">transcribe.cpp model catalog · LibriSpe…</a>        3   50% ▇▇▇▇▇▇
+<a name="speech-vibevoice-asr-streaming-report-ccby"></a><a href="https://arxiv.org/html/2609.02812v2">VibeVoice-ASR-Streaming Technical Report</a>        3   22% ▇▇▇
+<a name="speech-stt-picovoice-apache"></a><a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/aea7914706d44d3163c1c0283e05700900abe7af/README.md">Picovoice speech-to-text-benchmark · En…</a>        1   11% ▇
+<a name="speech-stt-danish-asr-ryeai-mit"></a><a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish Speech-to-Text Leaderboard</a>               1    8% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a><a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderboard</a>           1    6% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 43.5
+</pre>
 
 <sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · VibeVoice-ASR-Streaming Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Picovoice speech-to-text-benchmark · English batch-engine WER ([Apache-2.0](../../licenses/speech-stt-picovoice-apache.txt)) · Danish Speech-to-Text Leaderboard ([MIT](https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
 
@@ -37,17 +55,21 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version                               needs  score
-q8_0-gguf (NVIDIA NeMo-Speech.cpp)  ~0.74GB   43.7
-fp32 (transformers &gt;=5.13.0)        ~2.55GB   43.7
+q8_0-gguf (NVIDIA NeMo-Speech.cpp)  ~0.74GB   43.5
+fp32 (transformers &gt;=5.13.0)        ~2.55GB   43.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# q8_0-gguf (NVIDIA NeMo-Speech.cpp)
+# q8_0-gguf (NVIDIA NeMo-Speech.cpp) · ~0.74GB
 curl -fsSL https://github.com/NVIDIA/NeMo-Speech.cpp/raw/main/scripts/install.sh | sh && export PATH="$HOME/.local/bin:$PATH" && hf download nvidia/nemotron-3.5-asr-streaming-0.6b nemotron-3.5-asr-streaming-0.6b.q8_0.gguf --local-dir models && nemo-speech transcribe audio.wav --model models/nemotron-3.5-asr-streaming-0.6b.q8_0.gguf --language en-US
-# fp32 (transformers >=5.13.0)
+# fp32 (transformers >=5.13.0) · ~2.55GB
 uv run --with 'transformers>=5.13.0' --with torch --with librosa python -c "from transformers import pipeline; pipe = pipeline('automatic-speech-recognition', model='nvidia/nemotron-3.5-asr-streaming-0.6b'); print(pipe('audio.wav'))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/nemotron-3-5-asr-streaming-0-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

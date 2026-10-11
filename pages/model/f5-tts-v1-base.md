@@ -6,30 +6,57 @@
 
 SWivid (SJTU X-LANCE) · released 2025-03 · 0.337B params · cc-by-nc-4.0
 
-**score 62.3** ±2.7 · #33 of 117 · from 9 benchmark results across 2 sources
+**score 62.1** ±2.7 · #32 of 118 · from 9 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks F5-TTS v1 Base among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human spea…</a>  3.08 / 5    59.3   2025-10-15   17% ▇▇
-                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>     68.0%    60.1   2025-10-15   17% ▇▇
-                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · speaker si…</a>     68.0%    60.7   2025-10-15   16% ▇▇
-                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>  3.83 / 5    59.9   2025-10-15   11% ▇
-                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>      2.0%    63.1   2025-10-15   11% ▇
-                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (pre…</a>  3.66 / 5    77.4   2025-10-15    8% ▇
-                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · Whisper la…</a>      1.4%    71.6   2025-10-15    8% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     56.0%    60.8   2026-05-24   10% ▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     12.0%    -6.0   2026-05-24    0% ▇
-prior                   pull toward the middle                      49.7                 3% ▇
-                        weighted average                          = 62.3
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁▇●▃▃   #14 of 37     47%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #14 of 37 · 47% of its score</summary>
+
+Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [Fun-CosyVoice3-0.5B-2512](fun-cosyvoice3-0-5b-2512.md), [IndexTTS-2](indextts-2.md) here, though they rank higher overall.
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human speaker-…</a>  3.08 / 5  ▄········●·▄ beats 2/3    medium · avg 2.47 / 5     17%  at its level
+<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · speaker simila…</a>     68.0%  ▁·▂▂▂●▆▃▅··▂ beats 10/30  medium · avg 53%          15%  at its level · small run
+<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (predict…</a>  3.66 / 5  ▄█▄··▄···●·▄ beats 5/6    medium · avg 2.52 / 5    7.6%  at its level · small run
+<a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · Whisper large-…</a>      1.4%  ▁···▂▂▂▂█▆●▂ beats 30/35  avg 3.6%                 7.1%  blunt · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>     68.0%  ▄······▄·█●▄ beats 4/5    medium · avg 52%          18%  at its level · small run
+<a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>  3.83 / 5  █···●······█ beats 1/2    medium · avg 3.15 / 5     11%  at its level · small run
+<a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS…</a>      2.0%  █····████··● beats 5/5    avg 4.1%                  11%  small run
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>     56.0%  ▃·····▂▂▂▃●▆ beats 8/15   medium · avg 46%          10%  blunt · at its level
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>     12.0%  ▂▂▂··●·▃▃▃█▂ beats 3/15   avg 8.6%                 0.1%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-distar-report-ccby"></a><a href="https://arxiv.org/html/2510.12210v2">DiSTAR: Diffusion over a Scalable Token…</a>        7   87% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2   10% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 62.1
+</pre>
 
 <sub>Licences: DiSTAR: Diffusion over a Scalable Token Autoregressive Representation for Speech Generation ([CC BY 4.0](../../licenses/speech-distar-report-ccby.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>
 
@@ -37,14 +64,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version    needs  score
-fp32     ~1.35GB   62.3
+fp32     ~1.35GB   62.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32
+# fp32 · ~1.35GB
 pip install f5-tts && f5-tts_infer-cli --model F5TTS_v1_Base --gen_text "Hello, world."
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/f5-tts-v1-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

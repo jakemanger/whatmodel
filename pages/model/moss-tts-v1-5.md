@@ -6,38 +6,76 @@
 
 OpenMOSS · released 2026-05 · 8.49B params · apache-2.0
 
-**score 63.2** ±1.5 · #26 of 117 · from 15 benchmark results across 3 sources
+**score 63.2** ±1.5 · #26 of 118 · from 16 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks MOSS-TTS v1.5 (8B) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval hard-en · WER</a>           6.4%    68.3   2026-08-03   13% ▇▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-en · speaker si…</a>  68.0%    60.6   2026-08-03   11% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval ZH (zero-shot Chines…</a>   3.9%    62.5   2026-08-03   11% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-zh · speaker si…</a>  76.1%    62.3   2026-08-03   11% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval EN (zero-shot Englis…</a>   5.5%    63.6   2026-08-03   10% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval hard-zh · CER</a>           8.4%    66.6   2026-08-03    8% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval hard-en · speaker si…</a>  66.4%    61.5   2026-08-03    8% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">MiniMax multilingual test set…</a>   5.9%    67.0   2026-08-03    6% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-en · Whisper la…</a>   2.7%    56.8   2026-08-03    4% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-zh · Paraformer…</a>   1.5%    58.0   2026-08-03    4% ▇
-<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>   1.7%    60.4   2026-06-04    7% ▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>   3.8%    76.5   2026-06-04    1% ▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>   6.1%    66.6   2026-06-04    1% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice…</a>  57.0%    62.0   2026-10-01    3% ▇
-                        <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice…</a>   6.0%   132.6   2026-10-01    0% ▇
-prior                   pull toward the middle                   49.7                 1% ▇
-                        weighted average                       = 63.2
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁●█▃▃   #22 of 37     45%      6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #22 of 37 · 45% of its score</summary>
 
-<sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>
+Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md) here, though they rank higher overall. Trails [E2 TTS Base (F5-TTS reproduction)](e2-tts-base.md), [DMOSpeech 2](dmospeech-2.md), [Qwen3-TTS 12Hz 0.6B Base](qwen3-tts-12hz-0-6b-base.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-en · speaker simila…</a>   68.0%  █·●·██·▄·▄·▄ beats 3/10   medium · avg 53%     11%  at its level
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-zh · speaker simila…</a>   76.1%  ▃··▃●▅▅··▃·▃ beats 4/10   medium · avg 62%     11%  typical
+<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-zh m…</a>    1.7%  ▄··●▄····█▄▄ beats 1/6    avg 3.7%            7.5%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">MiniMax multilingual test set · 2…</a>    5.9%  █··█·····●·█ beats 2/3    avg 18%             6.2%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-en · Whisper large-…</a>    2.7%  ▃··●▅··▅·█▃▅ beats 1/11   avg 3.6%            4.8%  blunt · several runs
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-zh · Paraformer CER</a>     1.5%  ●··▄··▂▂█·▄▂ beats 0/11   avg 2.1%            3.8%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (9)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval hard-en · WER</a>                6.4%  █··██·█████● beats 8/8    avg 26%              15%  sharp
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>    3.9%  █●···█▄·█··▄ beats 2/8    avg 9.2%             12%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval hard-zh · CER</a>                8.4%  ▃▃·▃··▃▃●··▃ beats 5/8    avg 23%             9.4%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval hard-en · speaker simila…</a>   66.4%  ▄●▄·▄··▄··▄█ beats 2/8    medium · avg 49%    8.8%  at its level
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">CV3-Eval EN (zero-shot English) ·…</a>    5.5%  ▃·······▃▅●▅ beats 4/8    avg 16%             3.8%  noisy
+<a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice clo…</a>   57.0%  ▃·····▂▂▂▃●▆ beats 10/15  medium · avg 46%    3.2%  blunt · at its level
+<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set · 2…</a>    3.8%  ▃·▃·▃·····▃● beats 4/6    avg 44%             1.6%  sharp · noisy
+<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice clone…</a>    6.1%  ▃·····▃···●█ beats 3/6    avg 20%             1.2%  noisy
+<a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice clo…</a>    6.0%  ▂▂▂··▂·▃▃●█▂ beats 9/15   avg 8.6%            0.0%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">UltraEval-Audio</a>                                10   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-higgs3-sglang-apache"></a><a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Higgs Audio v3 comparison tables in SGL…</a>        3   10% ▇
+<a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v3">RVCBench: Benchmarking Robustness of Vo…</a>        2    3% ▇
+<a name="speech-sglang-omni-cookbooks-apache"></a><a href="https://github.com/sgl-project/sglang-omni/blob/9641219b320597393d915afb8d03352c629d94a5/docs/cookbook/moss_tts.md">SGLang-Omni serving cookbooks</a>                   1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 63.2
+</pre>
+
+<sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · SGLang-Omni serving cookbooks ([Apache-2.0](https://github.com/sgl-project/sglang-omni/blob/9641219b320597393d915afb8d03352c629d94a5/LICENSE))</sub>
+
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                            score  why
+SGLang-Omni serving c…  <a href="https://github.com/sgl-project/sglang-omni/blob/9641219b320597393d915afb8d03352c629d94a5/docs/cookbook/moss_tts.md">Seed-TTS test-zh · Paraformer…</a>   1.4%  only model in this source's run
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -47,13 +85,17 @@ fp32 (transformers 5)              ~24.08GB   63.2
 bf16 (mlx-audio 0.5.x) · mac only  ~24.08GB   63.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (transformers 5)
+# fp32 (transformers 5) · ~24.08GB
 conda create -n moss-tts python=3.12 -y && conda activate moss-tts && git clone https://github.com/OpenMOSS/MOSS-TTS.git && cd MOSS-TTS && pip install --extra-index-url https://download.pytorch.org/whl/cu128 -e . && python -c "import torch, torchaudio; from transformers import AutoModel, AutoProcessor; torch.backends.cuda.enable_cudnn_sdp(False); pretrained_model_name_or_path = 'OpenMOSS-Team/MOSS-TTS-v1.5'; device = 'cuda' if torch.cuda.is_available() else 'cpu'; dtype = torch.bfloat16 if device == 'cuda' else torch.float32; attn_implementation = 'sdpa' if device == 'cuda' else 'eager'; processor = AutoProcessor.from_pretrained(pretrained_model_name_or_path, trust_remote_code=True); processor.audio_tokenizer = processor.audio_tokenizer.to(device); model = AutoModel.from_pretrained(pretrained_model_name_or_path, trust_remote_code=True, attn_implementation=attn_implementation, torch_dtype=dtype).to(device); model.eval(); torch.set_grad_enabled(False); batch = processor([[processor.build_user_message(text='We stand on the threshold of the AI era.')]], mode='generation'); outputs = model.generate(input_ids=batch['input_ids'].to(device), attention_mask=batch['attention_mask'].to(device), max_new_tokens=4096); [torchaudio.save('sample{}.wav'.format(i), m.audio_codes_list[0].unsqueeze(0), processor.model_config.sampling_rate) for i, m in enumerate(processor.decode(outputs))]"
-# bf16 (mlx-audio 0.5.x) · mac only
+# bf16 (mlx-audio 0.5.x) · mac only · ~24.08GB
 pip install mlx-audio && python -m mlx_audio.tts.generate --model OpenMOSS-Team/MOSS-TTS-v1.5 --text "Hello, this is MOSS-TTS running on MLX." --output_path outputs
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/moss-tts-v1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

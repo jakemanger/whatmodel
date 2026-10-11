@@ -6,23 +6,42 @@
 
 Z.ai · released 2025-03 · 6B params · apache-2.0
 
-**score 40.5** ±5.5 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 40.6** ±5.5 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks CogView4-6B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="paper-2506.10963v2-mmmg-kg"></a>MMMG: A Massive         <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generati…</a>   13.1%    38.2   2025-06-13   77% ▇▇▇▇▇▇▇▇▇
-<a name="hpsv3-readme-mit"></a>HPSv3 repository READ…  <a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchm…</a>  9.6100    45.9   2025-12-05   10% ▇
-prior                   pull toward the middle                    49.9                13% ▇▇
-                        weighted average                        = 40.5
+task           vs the others          rank  counts  tests
+text to image  ▁▂▇●▆▅█▇▂▃▁▁   #110 of 157*     87%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #110 of 157 · 87% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [OmniGen2](omnigen2.md) here, though they rank higher overall. Trails [Show-o2 1.5B-HQ](show-o2-1-5b-hq.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   13.1%  ▃··▃·●▃▃▅··▃ beats 3/9    hard · avg 24%     77%  typical
+<a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchmark …</a>  9.6100  ▃·····▃··●·█ beats 2/5    avg 10.058         10%  sharp · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                      1   77% ▇▇▇▇▇▇▇▇▇
+<a name="hpsv3-readme-mit"></a><a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 repository README</a>              1   10% ▇
+prior: pull toward the middle            13% ▇▇
+weighted average                        = 40.6
+</pre>
 
 <sub>Licences: MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · HPSv3 repository README ([MIT](https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/LICENSE))</sub>
 

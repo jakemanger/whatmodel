@@ -6,24 +6,51 @@
 
 Kyutai · released 2025-06 · 2.6B params · cc-by-4.0
 
-**score 56.9** ±3.5 · #52 of 160 · from 3 benchmark results across 2 sources
+**score 56.9** ±3.5 · #57 of 162 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Kyutai STT 2.6B (en) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   8.1%    55.6   2026-02-11   27% ▇▇▇
-                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.7%    55.8   2026-02-11   26% ▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.4%    59.3   2026-03-26   43% ▇▇▇▇▇
-prior                 pull toward the middle                   49.8                 5% ▇
-                      weighted average                       = 56.9
+task                    vs the others      rank  counts  tests
+long-form transcripti…  ●·····█···██   #4 of 4*     26%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>long-form transcription · #4 of 4 · 26% of its score</summary>
+
+Trails [Voxtral Mini 4B Realtime (2602)](voxtral-mini-4b-realtime.md), [GPT-4o Mini Transcribe](gpt-4o-mini-transcribe.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long-for…</a>    7.7%  ▄··●·······▄ beats 2/3    avg 11%        26%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    6.4%  ▁▁▁▃··▁▁▂██● beats 72/86  avg 8.2%       42%  blunt
+<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English short-fo…</a>    8.1%  █··●·█·····█ beats 1/3    avg 12%        27%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-voxtral-realtime-report"></a><a href="https://arxiv.org/html/2602.11298v1">Voxtral Realtime</a>                     2   53% ▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   42% ▇▇▇▇▇
+prior: pull toward the middle             5% ▇
+weighted average                        = 56.9
+</pre>
 
 <sub>Licences: Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
@@ -35,13 +62,17 @@ bf16 · nvidia only  ~6.74GB   56.9
 bf16 · mac only     ~6.74GB   56.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~6.74GB
 uvx --with moshi python -m moshi.run_inference --hf-repo kyutai/stt-2.6b-en audio.mp3
-# bf16 · mac only
+# bf16 · mac only · ~6.74GB
 uvx --with moshi-mlx python -m moshi_mlx.run_inference --hf-repo kyutai/stt-2.6b-en-mlx audio.mp3 --temp 0
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/kyutai-stt-2-6b-en) · [JSON](https://whatmodel.sh/api?format=json&all=1)

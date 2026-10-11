@@ -6,27 +6,69 @@
 
 Black Forest Labs · released 2024-10 · closed weights
 
-**score 45.4** ±1.6 · #93 of 144 · from 6 benchmark results across 5 sources
+**score 45.6** ±1.6 · #93 of 144 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks FLUX1.1 \[pro\] among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>             1015.6    48.6   2026-09-24   40% ▇▇▇▇▇
-<a name="paper-2505.17613v2-mmmg"></a>MMMG: a Comprehensive…  <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                            58.8%    40.5   2026-09-30   14% ▇▇
-                        <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (averag…</a>     43.1%    44.3   2026-09-30    7% ▇
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.47 / 5    43.4   2024-12-25   18% ▇▇
-<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>     969.6    46.5   2025-09-03   10% ▇
-<a name="paper-2604.24023v2-servimage"></a>ServImage: An Image G…  <a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (hu…</a>     10.0%    42.2   2026-06-19    9% ▇
-prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 45.4
+task                    vs the others        rank  counts  tests
+text to image           ▂▅▅●▄▄█▃▁▂▁▁   #78 of 126     89%      5
+image to image / edit…  ▁▁·●▂▃█▃▃▄▁▁   #54 of 62*    9.4%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #78 of 126 · 89% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                 1015.6  ▂▂●▄▇█▄▂▄▂·▂ beats 9/75   avg 1027                40%  typical
+<a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-B…</a>  3.47 / 5  █▄·▄██▄▄█▄●▄ beats 13/14  easy · avg 3.83 / 5     18%  at its level
+<a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                                58.8%  ●█·▄·▄·█···▄ beats 0/8    easy · avg 71%          14%  at its level
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>     10.0%  ▂●··▂··▃█··▂ beats 2/11   hard · avg 18%         9.4%  sharp
+<a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (average ov…</a>     43.1%  █··●▄▄·▄▄·▄▄ beats 2/9    medium · avg 51%       7.2%  at its level
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #54 of 62 · 9.4% of its score</summary>
+
+Trails [ChronoEdit-14B](chronoedit-14b.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   10.0%  ▂●··▂··▃█··▂ beats 2/11   hard · avg 18%    9.4%  sharp
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generation al…</a>   969.6  ▃··▅●··▃▃··█ beats 3/8    avg 1012       10%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   40% ▇▇▇▇▇
+<a name="paper-2505.17613v2-mmmg"></a><a href="https://arxiv.org/html/2505.17613v2">MMMG: a Comprehensive and Reliable Benc…</a>        2   21% ▇▇▇
+<a name="visual-evalmuse"></a><a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K: A Reliable and Fine-Grain…</a>        1   18% ▇▇
+<a name="visual-rapid-face"></a><a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata/Face_Generation_Benchmark</a>              1   10% ▇
+<a name="paper-2604.24023v2-servimage"></a><a href="https://arxiv.org/html/2604.24023v2">ServImage: An Image Generation and Edit…</a>        1    9% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 45.6
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MMMG: a Comprehensive and Reliable Benchmark for Multitask Multimodal Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · Rapidata/Face\_Generation\_Benchmark ([CDLA-Permissive-2.0](../../licenses/visual-rapid-face-CDLA-Permissive-2.0.txt)) · ServImage: An Image Generation and Editing Benchmark from Real-world Commercial Imaging Services ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

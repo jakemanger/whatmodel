@@ -6,40 +6,91 @@
 
 Ai2 · released 2024-02 · 6.89B params · apache-2.0
 
-**score 28.7** ±1.9 · #855 of 934 · from 6 benchmark results across 2 sources
+**score 29.0** ±1.6 · #863 of 949 · from 7 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks OLMo 7B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          █··········●       #1 of 2*     14%      1
+chat &amp; writing  ▁▁●▄▆▅▆█▆▆▆▂   #452 of 466*     47%      2
+math            █··········●       #1 of 2*     14%      1
+</pre>
+
+<details><summary>coding · #1 of 2 · 14% of its score</summary>
+
+<pre>
+test                             result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (lab)</a>   27.8%  ▃●▄▁▄▃▃█▃▁▁▄ beats 3/27   easy · avg 83%     14%  sharp · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #452 of 466 · 47% of its score</summary>
+
+Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty  counts  why
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>   995.0  ▂▁▂▁●▇█▆▇▄▂▂ beats 13/95   avg 1201       23%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1073.6  ▁▁●▂▃▃▃▆▆▇█▃ beats 13/379  avg 1268       23%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #1 of 2 · 14% of its score</summary>
+
+<pre>
+test         result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>   11.0%  ●▂▂▅▅▆▅▇█▇▄▃ beats 3/146  easy · avg 68%     14%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>                 35.8%  ▁▁▁▁▂●▅▅█▃▄▁ beats 16/129  medium · avg 73%     14%  sharp · small run
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                           46.1%  ▁▁▁▁▁▂●▅█▃▆▃ beats 30/183  medium · avg 73%    6.3%  noisy · small run
+<a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, 1-sh…</a>   21.7%  ●··▂▂▃▂▂█▅▁▂ beats 0/27    medium · avg 57%    2.8%  blunt · at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>                      11.0%    24.5   2024-06-07   20% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>             35.8%    31.4   2024-06-07   19% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>   27.8%    30.0   2024-06-07   19% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                       46.1%    37.8   2024-06-07    8% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, …</a>   21.7%    17.0   2024-06-07    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1073.6    26.8   2026-10-02   29% ▇▇▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 28.7
+source                                    results  share of the score
+<a name="paper-2402.00838v4"></a><a href="https://arxiv.org/html/2402.00838v4#A5.T8">OLMo: Accelerating the Science of Langu…</a>        5   52% ▇▇▇▇▇▇
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   23% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   23% ▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 29.0
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-16-bit bf16  ~13.78GB   28.7
+16-bit bf16  ~13.78GB   29.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16
+# 16-bit bf16 · ~13.78GB
 pip install ai2-olmo && python -c "from hf_olmo import OLMoForCausalLM, OLMoTokenizerFast; o=OLMoForCausalLM.from_pretrained('allenai/OLMo-7B-Instruct'); t=OLMoTokenizerFast.from_pretrained('allenai/OLMo-7B-Instruct'); p=t.apply_chat_template([{'role': 'user', 'content': 'What is language modeling?'}], tokenize=False, add_generation_prompt=True); i=t.encode(p, add_special_tokens=False, return_tensors='pt'); print(t.batch_decode(o.generate(input_ids=i.to(o.device), max_new_tokens=100, do_sample=True, top_k=50, top_p=0.95), skip_special_tokens=True)[0])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/olmo-7b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

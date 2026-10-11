@@ -6,28 +6,59 @@
 
 HiDream · released 2026-05 · 8B params · mit
 
-**score 58.3** ±1.9 · #52 of 144 · from 7 benchmark results across 5 sources
+**score 58.4** ±1.9 · #52 of 144 · from 7 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks HiDream-O1-Image among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1115.8    59.2   2026-09-24   53% ▇▇▇▇▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   86.8%    54.7   2026-08-25   16% ▇▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>   45.6%    56.3   2026-10-07   14% ▇▇
-<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>   988.2    64.1   2026-10-01    8% ▇
-<a name="visual-hidream"></a>HiDream-ai/HiDream-O1…  <a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">DPG-Bench (lab)</a>                  89.8%    53.2   2026-09-25    4% ▇
-                        <a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (EN) (lab)</a>        97.9%    69.4   2026-09-25    2% ▇
-                        <a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (CN) (lab)</a>        97.8%    68.7   2026-09-25    0% ▇
-prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 58.3
+task           vs the others        rank  counts  tests
+text to image  ▂▅▅▃▄▄●▃▁▂▁▁   #49 of 126     90%      7
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #49 of 126 · 90% of its score</summary>
+
+Beats [Wan 2.7 Image](wan-2-7-image.md) here, though they rank higher overall. Trails [Z-Image (Base)](z-image-base.md), [FLUX.2 \[dev\]](flux-2-dev.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1116.2  ▂▂▃▄●█▄▂▄▂·▂ beats 33/75  avg 1027                53%  typical
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    86.8%  ▄····▄█▄●█▄█ beats 5/10   easy · avg 82%          16%  typical
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   45.6%  ▁▂▂●▃▁▂▃·▁·▁ beats 11/22  hard · avg 28%          15%  sharp · at its level · noisy
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">DPG-Bench (lab)</a>                      89.8%  ▄·▂·▂▆█▄▂▄▂● beats 17/17  very easy · avg 87%    4.3%  small run
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (EN) (lab)</a>            97.9%  ▃·····▅██▅▃● beats 12/12  very easy · avg 85%    1.9%  noisy · small run
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (CN) (lab)</a>            97.8%  ▃·······███● beats 11/12  very easy · avg 88%    0.2%  maxed out · noisy · small run
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">GenEval (lab)</a>                        90.0%  ▇▃▅▇▁▄▅▃█▃▃● beats 38/39  easy · avg 79%            —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   988.2  ▁▁▁▄▂●▂▁▁▂▁▁ beats 13/34  avg 875       8.3%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   53% ▇▇▇▇▇▇
+<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   16% ▇▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   15% ▇▇
+<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    8% ▇
+<a name="visual-hidream"></a><a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">HiDream-ai/HiDream-O1-Image repository …</a>        3    6% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 58.4
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · HiDream-ai/HiDream-O1-Image repository README results ([MIT](../../licenses/visual-hidream.txt))</sub>
 
@@ -48,17 +79,21 @@ api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/hidream-o1
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~19.7GB   58.3
-fp8 · nvidia only    ~5.3GB   58.3
+bf16 · nvidia only  ~19.7GB   58.4
+fp8 · nvidia only    ~5.3GB   58.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~19.7GB
 git clone https://github.com/HiDream-ai/HiDream-O1-Image && cd HiDream-O1-Image && uvx --from huggingface_hub hf download HiDream-ai/HiDream-O1-Image --local-dir ckpt && uv run --with-requirements requirements.txt python inference.py --model_path ckpt --prompt "a cat holding a sign" --output_image out.png
-# fp8 · nvidia only
+# fp8 · nvidia only · ~5.3GB
 cd ComfyUI/custom_nodes && git clone https://github.com/Saganaki22/HiDream_O1-ComfyUI && pip install -r HiDream_O1-ComfyUI/requirements.txt && hf download drbaph/HiDream-O1-Image-FP8 --local-dir ../models/diffusion_models/HiDream-O1-Image-fp8  # then load the node's workflow in ComfyUI
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hidream-o1-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

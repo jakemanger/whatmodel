@@ -6,32 +6,52 @@
 
 Alibaba (Tongyi-MAI) · released 2026-01 · 6B params · apache-2.0
 
-**score 57.9** ±2.0 · #54 of 144 · from 11 benchmark results across 3 sources
+**score 58.0** ±2.0 · #54 of 144 · from 11 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Z-Image (Base) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="report-2511.22699v5"></a>Tongyi-MAI              <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>       93.5%    58.6   2026-07-06   11% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>       93.6%    57.4   2026-07-06    8% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                   84.0%    56.1   2026-07-06    8% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>          53.5%    59.0   2026-07-06    7% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>          54.6%    58.1   2026-07-06    7% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>     86.7%    56.0   2026-07-06    7% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                 88.1%    52.6   2026-07-06    6% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long pro…</a>  83.0%    58.4   2026-07-06    6% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>  80.2%    57.6   2026-07-06    5% ▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  88.1%    57.1   2026-08-25   18% ▇▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>  61.9%    62.3   2026-10-07   16% ▇▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 57.9
+task           vs the others        rank  counts  tests
+text to image  ▂▅▅▃▄▄●▃▁▂▁▁   #47 of 126     98%     11
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #47 of 126 · 98% of its score</summary>
+
+Beats [Wan 2.7 Image](wan-2-7-image.md), [Krea 2 Large](krea-2-large.md), [HiDream-O1-Image](hidream-o1-image.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>    88.1%  ▄····▄█▄▄█●█ beats 8/10   easy · avg 82%          18%  typical
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>   61.9%  ▁▂▂█●▁▂▃·▁·▁ beats 14/22  hard · avg 28%          16%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>            93.5%  ▃·····▅█●▅▃▃ beats 6/12   very easy · avg 88%     11%  maxed out · small run
+<a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>            93.6%  ▃·······██●█ beats 7/12   very easy · avg 89%    8.3%  maxed out · small run
+<a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                        84.0%  ▇▃▅▇▁▄▅▃█●▃▅ beats 32/39  easy · avg 77%         7.8%  small run
+<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>               53.5%  ▃·▃█▃·▃··●·▃ beats 7/8    medium · avg 39%       6.9%  at its level · small run
+<a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>               54.6%  ▃······▃▅█●▃ beats 8/9    medium · avg 41%       6.8%  at its level · small run
+<a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>          86.7%  ▄▄▄●▄▄·▄···▄ beats 4/8    easy · avg 81%         6.7%  small run
+<a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                      88.1%  ▄·▂·▂▆█▄▂●▂▂ beats 14/17  very easy · avg 85%    5.8%  small run
+<a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long prompts…</a>   83.0%  ▄······●··▄▄ beats 1/4    easy · avg 74%         5.5%  small run
+<a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short prompt…</a>   80.2%  █···●···██·█ beats 1/4    easy · avg 71%         5.5%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="report-2511.22699v5"></a><a href="https://arxiv.org/html/2511.22699v5">Tongyi-MAI (lab)</a>                                9   64% ▇▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   18% ▇▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   16% ▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 58.0
+</pre>
 
 <sub>Licences: Tongyi-MAI ([CC BY 4.0](../../licenses/report-2511.22699v5.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -43,17 +63,21 @@ api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/z-image/ba
 
 <pre>
 version                                   needs  score
-bf16 + Qwen3 4B bf16 (sd.cpp)           ~25.3GB   57.9
-gguf-q4_k_m + Qwen3 4B q4_k_m (sd.cpp)    ~10GB   57.9
+bf16 + Qwen3 4B bf16 (sd.cpp)           ~25.3GB   58.0
+gguf-q4_k_m + Qwen3 4B q4_k_m (sd.cpp)    ~10GB   58.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 + Qwen3 4B bf16 (sd.cpp)
+# bf16 + Qwen3 4B bf16 (sd.cpp) · ~25.3GB
 sd-cli --diffusion-model models/z_image_bf16.safetensors --vae models/ae.safetensors --llm models/qwen_3_4b.safetensors -p "A cinematic photograph of a solitary hooded figure walking through a rain-slicked metropolis at night, neon reflections on wet asphalt" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 512
-# gguf-q4_k_m + Qwen3 4B q4_k_m (sd.cpp)
+# gguf-q4_k_m + Qwen3 4B q4_k_m (sd.cpp) · ~10GB
 sd-cli --diffusion-model models/z-image-Q4_K_M.gguf --vae models/ae.safetensors --llm models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf -p "A cinematic photograph of a solitary hooded figure walking through a rain-slicked metropolis at night, neon reflections on wet asphalt" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 512
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/z-image-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

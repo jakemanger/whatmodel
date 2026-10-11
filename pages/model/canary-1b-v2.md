@@ -6,48 +6,81 @@
 
 NVIDIA · released 2025-08 · 0.98B params · cc-by-4.0
 
-**score 56.9** ±1.8 · #51 of 160 · from 8 benchmark results across 6 sources
+**score 57.9** ±1.3 · #47 of 162 · from 22 benchmark results across 8 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Canary-1B-v2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.6%    59.1   2026-03-26   39% ▇▇▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.1%    55.0   2026-03-26   12% ▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-v2.json">LibriSpeech test-clean WER</a>       1.9%    55.0   2026-09-15   16% ▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-v2.json">FLEURS English test WER</a>          4.5%    58.8   2026-09-15    6% ▇
-<a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>  11.8%    56.8   2026-05-19   13% ▇▇
-<a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   9.8%    55.3   2025-10-27    6% ▇
-<a name="speech-stt-danish-asr-ryeai-mit"></a>Danish Speech-to-Text…  <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean…</a>  24.7%    56.6   2026-06-22    5% ▇
-<a name="speech-stt-iberian-bench-ccby"></a>Benchmarking Automati…  <a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-lan…</a>  62.1%    30.1   2026-09-29    1% ▇
-prior                   pull toward the middle                   49.8                 1% ▇
-                        weighted average                       = 56.9
+task                    vs the others        rank  counts  tests
+multilingual transcri…  ▂··▃▄●▆▅▄▂·▂   #25 of 36*     22%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>multilingual transcription · #25 of 36 · 22% of its score</summary>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Mega-ASR ([CC BY 4.0](../../licenses/speech-stt-megaasr-report.txt)) · Open ASR Leaderboard – Chilean Spanish ([Apache-2.0](../../licenses/speech-stt-cl-spanish-asr-apache.txt)) · Danish Speech-to-Text Leaderboard ([MIT](https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE)) · Benchmarking Automatic Speech Recognition Tools for Iberian Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
-
-<details><summary>Not counted (12)</summary>
+Beats [Voxtral Mini Transcribe V2](voxtral-mini-transcribe-2.md) here, though they rank higher overall. Trails [Omnilingual ASR CTC 1B v2](omniasr-ctc-1b-v2.md), [Omnilingual ASR CTC 7B v2](omniasr-ctc-7b-v2.md), [SeamlessM4T v2 Large](seamless-m4t-v2-large.md) here, though they rank lower overall.
 
 <pre>
-source                  test                            score  why
-nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">AMI WER (Open ASR / ESB test …</a>  16.0%  too few models have it yet
-nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">CoVoST 2 source speech, 13 la…</a>   8.8%  too few models have it yet
-nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">Earnings-22 long-form WER</a>       13.8%  too few models have it yet
-nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">Earnings-22 WER (short-form, …</a>  11.8%  too few models have it yet
-nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">FLEURS 25 European languages,…</a>   8.4%  too few models have it yet
-nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">GigaSpeech test WER</a>             10.8%  too few models have it yet
-nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">LibriSpeech test-clean WER</a>       2.2%  only model in this source's run
-nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">LibriSpeech test-other WER</a>       3.6%  too few models have it yet
-nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">Multilingual LibriSpeech 6 la…</a>   7.3%  too few models have it yet
-nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">SPGISpeech test WER</a>              2.3%  too few models have it yet
-nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">TED-LIUM test WER (short-form)</a>   4.3%  too few models have it yet
-nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">VoxPopuli English test WER</a>       6.3%  too few models have it yet
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>             4.6%  ▂··▂▃▂█▃●▂▁▁ beats 22/29  avg 8.9%       21%  typical
+<a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-languag…</a>   62.1%  ●▃▃··▅▃▃··▃▃ beats 0/10   avg 38%       1.1%  noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (17)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-v2.json">LibriSpeech test-clean WER</a>            1.9%  ▁···▁▁▂·▄▄●█ beats 29/56  avg 2.3%      9.2%  blunt · several runs
+<a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition suite …</a>   11.8%  ▄····●▄▄···▄ beats 2/5    avg 19%       6.9%  typical
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">SPGISpeech test WER (lab)</a>             2.3%  ▄▄··▄██··●██ beats 7/11   avg 5.4%      6.4%  sharp
+<a href="https://arxiv.org/html/2509.14128v2#A2.T11">FLEURS 25 European languages, mea…</a>    8.4%  ██·········● beats 2/2    avg 18%       6.3%  small run · several runs
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.1%  ▁▁▁▃··▁▁▂█●▆ beats 55/86  avg 8.2%      6.3%  blunt
+<a href="https://arxiv.org/html/2509.14128v2#A2.T13">CoVoST 2 source speech, 13 langua…</a>    8.9%  █·····█····● beats 2/2    avg 17%       6.2%  small run · several runs
+<a href="https://arxiv.org/html/2509.14128v2#A2.T12">Multilingual LibriSpeech 6 langua…</a>    7.3%  █·●········▄ beats 2/3    avg 11%       5.8%  several runs
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">Earnings-22 WER (short-form, Open…</a>   11.8%  █······●██·█ beats 1/4    avg 21%       5.3%  typical
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">AMI WER (Open ASR / ESB test spli…</a>   16.0%  ▄●·······█·▄ beats 1/4    avg 24%       5.0%  typical
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">GigaSpeech test WER (lab)</a>            10.8%  ▁····▁··▁●█▂ beats 3/17   avg 17%       4.6%  typical
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">LibriSpeech test-other WER (lab)</a>      3.6%  ▁▁▁▂▅▃▅▄█●▂▁ beats 48/54  avg 5.4%      3.8%  typical
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-v2.json">FLEURS English test WER</a>               4.5%  ▁··▁▁▁▁▁▁▃●▁ beats 36/56  avg 5.8%      3.2%  blunt
+<a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilean Sp…</a>    9.8%  ▂▂·····●▂·█▂ beats 2/8    avg 13%       3.0%  typical
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">VoxPopuli English test WER (lab)</a>      6.3%  █▄▄··███●▄██ beats 10/16  avg 9.0%      2.5%  typical
+<a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   24.7%  ▂▂···▃▂▅●▃▂▂ beats 11/16  avg 32%       2.4%  blunt
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">TED-LIUM test WER (short-form) (l…</a>    4.3%  ▁·▁▇█▃·▁▁●█▄ beats 18/27  avg 5.0%      0.2%  blunt
+<a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">Earnings-22 long-form WER (lab)</a>      13.8%  █······█·█●█ beats 3/4    avg 20%          —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="first-party-nvidia-asr-cards"></a><a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">NVIDIA ASR model cards (lab)</a>                   11   36% ▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                            2   27% ▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-v2.json">transcribe.cpp model catalog · LibriSpe…</a>        2   11% ▇
+<a name="paper-2509.14128v2-canary-parakeet"></a><a href="https://arxiv.org/html/2509.14128v2#A2.T13">Canary-1B-v2 &amp; Parakeet-TDT-0.6B-v3: Ef…</a>        3   11% ▇
+<a name="speech-stt-megaasr-report"></a><a href="https://arxiv.org/html/2605.19833v1">Mega-ASR</a>                                        1    7% ▇
+<a name="speech-stt-cl-spanish-asr-apache"></a><a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilean Spanish</a>          1    3% ▇
+<a name="speech-stt-danish-asr-ryeai-mit"></a><a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish Speech-to-Text Leaderboard</a>               1    2% ▇
+<a name="speech-stt-iberian-bench-ccby"></a><a href="https://arxiv.org/html/2609.36920v1">Benchmarking Automatic Speech Recogniti…</a>        1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 57.9
+</pre>
+
+<sub>Licences: NVIDIA ASR model cards ([CC BY 4.0](../../licenses/nvidia--parakeet-tdt-0.6b-v2.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Canary-1B-v2 & Parakeet-TDT-0.6B-v3: Efficient and High-Performance Models for Multilingual ASR and AST ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · Mega-ASR ([CC BY 4.0](../../licenses/speech-stt-megaasr-report.txt)) · Open ASR Leaderboard – Chilean Spanish ([Apache-2.0](../../licenses/speech-stt-cl-spanish-asr-apache.txt)) · Danish Speech-to-Text Leaderboard ([MIT](https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE)) · Benchmarking Automatic Speech Recognition Tools for Iberian Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                       score  why
+NVIDIA ASR model cards  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">Earnings-22 long-form WER</a>  13.8%  too few models have it yet
 </pre>
 
 </details>
@@ -56,18 +89,22 @@ nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/bl
 
 <pre>
 version              needs  score
-onnx-fp32           ~5.2GB   56.9
-fp32 · nvidia only  ~5.2GB   56.9
+onnx-fp32           ~5.2GB   57.9
+fp32 · nvidia only  ~5.2GB   57.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# onnx-fp32
+# onnx-fp32 · ~5.2GB
 uvx --from 'onnx-asr[cpu,hub]' onnx-asr nemo-canary-1b-v2 audio.wav
-# fp32 · nvidia only
+# fp32 · nvidia only · ~5.2GB
 uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/canary-1b-v2').transcribe(['audio.wav']))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 

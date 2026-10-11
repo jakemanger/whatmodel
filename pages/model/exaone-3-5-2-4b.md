@@ -6,26 +6,65 @@
 
 LG AI Research · released 2024-12 · 2.41B params · exaone
 
-**score 36.6** ±2.3 · #767 of 934 · from 7 benchmark results across 3 sources
+**score 36.2** ±2.3 · #786 of 949 · from 7 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks EXAONE 3.5 2.4B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃●██▇▆▄▃▁    #404 of 469     20%      4
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #296 of 466*     41%      2
+</pre>
+
+<details><summary>coding · #404 of 469 · 20% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   26.7%  ▃··▁▂▂●▂█▃▄▂ beats 17/47  medium · avg 54%    7.7%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    3.8%  ▁●▁▁▁▁▂▂▃█▅▄ beats 2/47   hard · avg 33%      6.7%  typical
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.8%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 8/47   medium · avg 36%    5.2%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   65.3%  ▁▁▁······▁●█ beats 13/47  easy · avg 67%      0.2%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #296 of 466 · 41% of its score</summary>
+
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">Arena-Hard (version/judge unspeci…</a>   48.2%  ▃▃▂▅●▆▅█▅▅▂▃ beats 8/30   easy · avg 68%     23%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">IFEval (aggregation unspecified) …</a>   73.6%  ▄·●·▄·▄▄···█ beats 1/6    easy · avg 78%     18%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   33.4%  ▁●▂▂▃█▃▆▅▄▂▃ beats 3/95   easy · avg 66%     36%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">Arena-Hard (version/judge uns…</a>  48.2%    41.6   2024-12-01   25% ▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">IFEval (aggregation unspecifi…</a>  73.6%    46.5   2024-12-01   19% ▇▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  33.4%    29.3   2026-08-11   35% ▇▇▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  26.7%    41.9   2025-05-31    8% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   3.8%    22.2   2025-05-31    6% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   0.8%    29.3   2025-05-31    5% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  65.3%    47.2   2025-05-31    0% ▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 36.6
+source                                    results  share of the score
+<a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">LG AI Research vendor-reported benchmar…</a>        2   41% ▇▇▇▇▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   36% ▇▇▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   20% ▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 36.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -34,18 +73,73 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~1.95GB   36.6
-8-bit q8_0    ~3.39GB   36.6
+download                      size  score
+4-bit q4_k_m               ~1.95GB   36.2
+8-bit q8_0                 ~3.39GB   36.2
+4-bit Q4_K_M                ~1.6GB   36.2
+8-bit Q8_0                  ~2.8GB   36.2
+4-bit mlx-4bit · mac only   ~1.4GB   36.2
+4-bit mlx-8bit · mac only   ~2.6GB   36.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run exaone3.5:2.4b-instruct-q4_K_M
-# 8-bit q8_0
-ollama run exaone3.5:2.4b-instruct-q8_0
+# 4-bit Q4_K_M · ~1.6GB
+llama cli -hf lmstudio-community/EXAONE-3.5-2.4B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/EXAONE-3.5-2.4B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~2.8GB
+llama cli -hf lmstudio-community/EXAONE-3.5-2.4B-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/EXAONE-3.5-2.4B-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~1.6GB
+lms get https://huggingface.co/lmstudio-community/EXAONE-3.5-2.4B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~2.8GB
+lms get https://huggingface.co/lmstudio-community/EXAONE-3.5-2.4B-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~1.4GB
+lms get https://huggingface.co/alexgusevski/EXAONE-3.5-2.4B-Instruct-q4-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~2.6GB
+lms get https://huggingface.co/alexgusevski/EXAONE-3.5-2.4B-Instruct-q8-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~1.95GB
+ollama run exaone3.5:2.4b-instruct-q4_K_M
+# 8-bit q8_0 · ~3.39GB
+ollama run exaone3.5:2.4b-instruct-q8_0
+# 4-bit Q4_K_M · ~1.6GB
+ollama run hf.co/lmstudio-community/EXAONE-3.5-2.4B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~2.8GB
+ollama run hf.co/lmstudio-community/EXAONE-3.5-2.4B-Instruct-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~1.4GB
+mlx_lm.chat --model alexgusevski/EXAONE-3.5-2.4B-Instruct-q4-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model alexgusevski/EXAONE-3.5-2.4B-Instruct-q4-mlx
+# 4-bit mlx-8bit · mac only · ~2.6GB
+mlx_lm.chat --model alexgusevski/EXAONE-3.5-2.4B-Instruct-q8-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model alexgusevski/EXAONE-3.5-2.4B-Instruct-q8-mlx
+```
 
 [interactive version](https://whatmodel.sh/model/exaone-3-5-2-4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

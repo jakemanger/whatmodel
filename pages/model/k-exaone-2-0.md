@@ -6,30 +6,90 @@
 
 LG AI Research · released 2026-07 · 750B params (37B active) · apache-2.0
 
-**score 67.0** ±1.3 · #120 of 934 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
+**score 67.2** ±1.3 · #115 of 949 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks K-EXAONE 2.0 (750B-A37B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃▆█▆▅●▄▃▂▁     #97 of 334     23%      3
+coding          ▁▁▁▃▆██▇●▄▃▁    #93 of 469*     11%      1
+chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #106 of 466*    5.1%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁    #109 of 400     38%      3
+</pre>
+
+<details><summary>agent tasks · #97 of 334 · 23% of its score</summary>
+
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md), [Qwen3.5 35B-A3B](qwen3-5-35b-a3b.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run   difficulty            counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>   68.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 70/131  hard · avg 20%           11%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Terminal-Bench 2.1 (lab)</a>   43.8%  ▁·▁·▁▁▄●▄█▃▇ beats 16/56   very hard · avg 11%     8.6%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">τ³-bench Banking (lab)</a>     14.2%  ▂▂·▅█▂▂●▂▅▂▃ beats 13/20   very hard · avg 5.6%    2.7%  blunt · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #93 of 469 · 11% of its score</summary>
+
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>   68.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 70/131  hard · avg 20%     11%  sharp · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #106 of 466 · 5.1% of its score</summary>
+
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFEval (aggregation unspecified) …</a>   92.4%  ▁▁▃▁▂▄▄▆█●▂▁ beats 125/141  easy · avg 80%    5.1%  typical
+</pre>
+
+</details>
+
+<details><summary>math · #109 of 400 · 38% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [gpt-oss-120b](gpt-oss-120b.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">AIME 2026 (lab)</a>            92.3%  ▁▁▁▂▁▂▆●▆▂·▁ beats 29/49  medium · avg 60%     15%  sharp · maxed out · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">HMMT February 2026 (lab)</a>   78.4%  ▃▃▂▃·██●█▅▃▅ beats 17/33  hard · avg 34%       14%  sharp · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IMO-AnswerBench (lab)</a>      78.6%  ▁▁·▁▁▁▄●█▄▂▃ beats 18/42  medium · avg 38%    8.5%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">GPQA Diamond (lab)</a>                   82.2%  ▁▁▁▁▂▄▅▅█●█▄ beats 210/310  hard · avg 43%           13%  sharp · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">MMLU-Pro (lab)</a>                       83.5%  ▁▁·▁▁▁▃▂▄▅●▁ beats 157/188  medium · avg 56%        8.3%  small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Humanity's Last Exam (lab)</a>           18.3%  ▁▁▁▃▆▆●██▆▁▃ beats 44/104   very hard · avg 4.3%    7.3%  small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFBench (aggregation unspecified)…</a>   72.6%  ▃▇▂▄▅▅▂▄▄●█▇ beats 58/80    medium · avg 41%        4.4%  at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-lgai-exaone-k-exaone-2-0-750b-a37b"></a>LGAI-EXAONE/K-EXAONE-…  <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">AIME 2026 (lab)</a>                 92.3%    66.8   2026-07-29   15% ▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">HMMT February 2026 (lab)</a>        78.4%    65.6   2026-07-29   14% ▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">GPQA Diamond (lab)</a>              82.2%    66.7   2026-07-29   13% ▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>        68.2%    69.7   2026-07-29   11% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IMO-AnswerBench (lab)</a>           78.6%    67.0   2026-07-29    9% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">MMLU-Pro (lab)</a>                  83.5%    66.2   2026-07-29    8% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Terminal-Bench 2.1 (lab)</a>        43.8%    66.8   2026-07-29    8% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Humanity's Last Exam (lab)</a>      18.3%    67.2   2026-07-29    7% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFBench (aggregation unspecif…</a>  72.6%    68.7   2026-07-29    5% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFEval (aggregation unspecifi…</a>  92.4%    69.6   2026-07-29    5% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">τ³-bench Banking (lab)</a>          14.2%    66.8   2026-07-29    5% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 67.0
+source                                    results  share of the score
+<a name="card3-lgai-exaone-k-exaone-2-0-750b-a37b"></a><a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">LGAI-EXAONE/K-EXAONE-2.0-750B-A37B mode…</a>       11   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 67.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LGAI-EXAONE/K-EXAONE-2.0-750B-A37B model card ([Apache-2.0](https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/LICENSE))</sub>
 
@@ -39,14 +99,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-4-bit fp8 · nvidia only  ~752.09GB   67.0
+4-bit fp8 · nvidia only  ~752.09GB   67.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp8 · nvidia only
+# 4-bit fp8 · nvidia only · ~752.09GB
 vllm serve LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-FP8 --served-model-name K-EXAONE-2.0-750B-A37B-FP8 --trust-remote-code --tensor-parallel-size 8 --kv-cache-dtype fp8_e4m3 --max-num-seqs 256 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_xml
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/k-exaone-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

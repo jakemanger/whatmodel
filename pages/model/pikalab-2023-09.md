@@ -8,21 +8,39 @@ Pika · released 2023-09 · closed weights
 
 **score 26.6** ±2.3 · comparison only: no current run option verified · from 4 benchmark results across 1 source
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks PikaLab (September 2023) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                  score  implies  weight
-<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  55.77 / 100    26.1    26% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  60.77 / 100    26.6    25% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  65.41 / 100    28.9    24% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  55.80 / 100    22.3    23% ▇▇▇
-prior                   pull toward the middle                         49.9     2% ▇
-                        weighted average                             = 26.6
+task           vs the others       rank  counts  tests
+text to video  ▇●▄▆█▆▇▂▃▃▂▄   #83 of 94     98%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #83 of 94 · 98% of its score</summary>
+
+Beats [ZeroScope v2 576w](zeroscope-v2-576w.md), [Open-Sora 1.2](open-sora-1-2.md) here, though they rank higher overall.
+
+<pre>
+test                                     result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quality</a>     55.77 / 100  ▄····▄██··●▄ beats 6/7    very easy · avg 85.14 /…     26%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quality</a>     60.77 / 100  ▄█·····▄·●▄▄ beats 5/7    very easy · avg 87.87 /…     25%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal consist…</a>  65.41 / 100  ▄···▄▄▄▄▄··● beats 7/7    very easy · avg 88.67 /…     24%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video align…</a>  55.80 / 100  ▂··▂●·····▂█ beats 2/7    very easy · avg 87.86 /…     23%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-evalcrafter-2023"></a><a href="https://arxiv.org/html/2310.11440v3">EvalCrafter: original 2023 text-to-vide…</a>        4   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 26.6
+</pre>
 
 <sub>Licences: EvalCrafter: original 2023 text-to-video evaluations ([CC-BY-4.0](../../licenses/visual-evalcrafter-2023.txt))</sub>
 

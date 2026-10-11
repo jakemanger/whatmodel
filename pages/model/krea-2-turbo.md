@@ -6,22 +6,40 @@
 
 Krea · released 2026-06 · 12B params · krea-2-community-license
 
-**score 58.7** ±2.6 · #48 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.8** ±2.5 · #48 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Krea 2 Turbo among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1112.9    58.9   2026-09-24   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            49.9                 3% ▇
-                        weighted average                = 58.7
+task           vs the others         rank  counts  tests
+text to image  ▂▅▅▃▄▄●▃▁▂▁▁   #46 of 126*     97%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #46 of 126 · 97% of its score</summary>
+
+Beats [Wan 2.7 Image](wan-2-7-image.md) here, though they rank higher overall. Trails [FLUX.2 \[dev\]](flux-2-dev.md), [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank lower overall.
+
+<pre>
+test                   result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>  1113.2  ▂▂▃▄●█▄▂▄▂·▂ beats 29/75  avg 1027       97%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             3% ▇
+weighted average                        = 58.8
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -33,17 +51,21 @@ api (Krea) · $0.015/image · [krea.ai](https://www.krea.ai/docs/api-reference/k
 
 <pre>
 version                                    needs  score
-bf16 · nvidia only                       ~43.3GB   58.7
-gguf-q8_0 + Qwen3-VL 4B q4_k_m (sd.cpp)  ~20.2GB   58.7
+bf16 · nvidia only                       ~43.3GB   58.8
+gguf-q8_0 + Qwen3-VL 4B q4_k_m (sd.cpp)  ~20.2GB   58.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~43.3GB
 uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import Krea2Pipeline; p=Krea2Pipeline.from_pretrained('krea/Krea-2-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p('a fox in the snow', num_inference_steps=8, guidance_scale=0.0).images[0].save('krea2.png')"
-# gguf-q8_0 + Qwen3-VL 4B q4_k_m (sd.cpp)
+# gguf-q8_0 + Qwen3-VL 4B q4_k_m (sd.cpp) · ~20.2GB
 sd-cli --diffusion-model models/Krea-2-Turbo-Q8_0.gguf --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/wan_2.1_vae.safetensors -p "a lovely cat holding a sign says 'krea2.cpp'" --steps 8 --cfg-scale 1.0 --diffusion-fa -v --offload-to-cpu
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/krea-2-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

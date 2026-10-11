@@ -6,24 +6,41 @@
 
 Deepgram · released 2023-09 · closed weights
 
-**score 59.5** ±4.1 · #35 of 160 · from 3 benchmark results across 1 source
+**score 59.7** ±4.1 · #36 of 162 · from 3 benchmark results across 1 source
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Deepgram Nova 2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-ru-mit"></a>Russian STT benchmark…  <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus…</a>   9.3%    57.4   2026-08-07   34% ▇▇▇▇
-                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech c…</a>  10.2%    58.7   2026-08-07   34% ▇▇▇▇
-                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus W…</a>   4.0%    65.8   2026-08-07   26% ▇▇▇
-prior                   pull toward the middle                   49.8                 7% ▇
-                        weighted average                       = 59.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus WER…</a>    9.3%  ●··········▄ beats 1/2    avg 16%        34%  small run
+<a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech corpu…</a>   10.2%  █··●·······█ beats 1/2    avg 19%        34%  small run
+<a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus WER</a>       4.0%  █··█·······● beats 2/2    avg 9.9%       26%  small run
+<a href="https://github.com/Smolevich/stt-benchmarks/blob/b6349a817a84cb0d74369b02ea951f1d6112f4f2/results/summary.csv">Voice memos · RU 10-clip pilot me…</a>   21.4%  █··········● beats 1/1                     —  not counted yet: no other model in the …
+<a href="https://github.com/Smolevich/stt-benchmarks/blob/b6349a817a84cb0d74369b02ea951f1d6112f4f2/results/summary.csv">Voice memos · EN 10-clip pilot me…</a>   20.5%  █··········● beats 1/1                     —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                           results  share of the score
+<a name="speech-stt-ru-mit"></a><a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT benchmark by domain</a>        3   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle               7% ▇
+weighted average                          = 59.7
+</pre>
 
 <sub>Licences: Russian STT benchmark by domain ([MIT](../../licenses/speech-stt-ru-mit.txt))</sub>
 

@@ -6,25 +6,54 @@
 
 PixArt (Huawei Noah's Ark Lab et al.) · released 2023-11 · 0.6B params · openrail++
 
-**score 35.6** ±2.1 · #119 of 144 · from 4 benchmark results across 4 sources
+**score 35.7** ±2.1 · #119 of 144 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks PixArt-α (PixArt-XL-2-1024-MS) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                                        score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>                             1052.0    37.6   2024-06-04   34% ▇▇▇▇
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.1100 mean human alignment score    32.9   2024-10-10   29% ▇▇▇
-<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>                              37.0%    33.1   2024-08-26   26% ▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>                              47.0%    40.7   2026-06-02    9% ▇
-prior                   pull toward the middle                                               49.9                 2% ▇
-                        weighted average                                                   = 35.6
+task           vs the others        rank  counts  tests
+text to image  ▂▅●▃▄▄█▃▁▂▁▁   #97 of 126     69%      3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #97 of 126 · 69% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>  1052.0  ▃▃··▃·▃·●·▃▃ beats 4/8    avg 1237             34%  sharp
+<a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark score)</a>     37.0%  ▄·▄·●▄▄▄···▄ beats 3/7    easy · avg 66%       26%  at its level
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   47.0%  ▄·▆▂▆●▄▆▂▄·▄ beats 12/22  medium · avg 60%    8.9%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                                           result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  5.1100 mean human alignment score  █▄▄·█·▄●▄▄·▄ beats 8/11   avg 6.285 mean human al…     29%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-genai-arena"></a><a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI Arena: An Open Evaluation Platfor…</a>        1   34% ▇▇▇▇
+<a name="visual-evalalign"></a><a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign: Supervised Fine-Tuning Multi…</a>        1   29% ▇▇▇
+<a name="visual-conceptmix"></a><a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix: A Compositional Image Gener…</a>        1   26% ▇▇▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1    9% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 35.7
+</pre>
 
 <sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
@@ -32,14 +61,18 @@ prior                   pull toward the middle                                  
 
 <pre>
 version               needs  score
-fp16 · nvidia only  ~13.6GB   35.6
+fp16 · nvidia only  ~13.6GB   35.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~13.6GB
 uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors --with sentencepiece python -c "import torch; from diffusers import PixArtAlphaPipeline; p=PixArtAlphaPipeline.from_pretrained('PixArt-alpha/PixArt-XL-2-1024-MS', torch_dtype=torch.float16).to('cuda'); p(prompt='An astronaut riding a green horse').images[0].save('out.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/pixart-alpha) · [JSON](https://whatmodel.sh/api?format=json&all=1)

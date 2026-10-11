@@ -6,27 +6,74 @@
 
 Alibaba · released 2024-06 · 0.49B params · apache-2.0
 
-**score 25.4** ±1.7 · #879 of 934 · from 8 benchmark results across 4 sources
+**score 25.3** ±1.7 · #894 of 949 · from 8 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Qwen2 0.5B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ●··········█       #2 of 2*     16%      1
+chat &amp; writing  ●··········█       #2 of 2*    5.2%      1
+math            ▁●▃▅▆▅▄█▄▁▁▁   #384 of 400*     15%      1
+</pre>
+
+<details><summary>coding · #2 of 2 · 16% of its score</summary>
+
+<pre>
+test             result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">HumanEval (lab)</a>   17.1%  ▁▁▁▁●▃▅▅█▃▂▁ beats 19/190  easy · avg 84%     16%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #2 of 2 · 5.2% of its score</summary>
+
+<pre>
+test                              result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (lab)</a>   20.0%  ●▁··▂··▂▇█▃▃ beats 0/26   easy · avg 68%    5.2%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · #384 of 400 · 15% of its score</summary>
+
+Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Qwen2-VL 2B Instruct](qwen2-vl-2b.md) here, though they rank higher overall.
+
+<pre>
+test         result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">GSM8K (lab)</a>   40.1%  ▂▂▂▅●▆▅▇█▇▄▃ beats 34/146  very easy · avg 91%     15%  sharp · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                  7.7%  ▁●▁▂▂▃▂█▆▃▅▃ beats 2/61    medium · avg 41%     32%  too hard for it
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (lab)</a>                           37.9%  ▁▁▁▁▁●▃▅█▃▆▃ beats 17/183  easy · avg 80%       10%  small run
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   30.6%  ●▄▂▃█▄▃▆▃▅▂▂ beats 1/81    medium · avg 58%    9.2%  blunt · at its level
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (lab)</a>                         45.2%  ▁···▁▁●▁▂▂▃█ beats 5/33    easy · avg 82%      8.4%  small run
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   44.4%  ▃▁▁▁▁▁●▁▂█▅▁ beats 57/276  medium · avg 73%    3.2%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card2-qwen-qwen2-0-5b-instruct"></a>Qwen2-0.5B-Instruct m…  <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">GSM8K (lab)</a>                     40.1%    27.2   2024-06-03   16% ▇▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">HumanEval (lab)</a>                 17.1%    24.3   2024-06-03   16% ▇▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (lab)</a>                      37.9%    23.9   2024-06-03   10% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (lab)</a>                    45.2%    27.2   2024-06-03    8% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (l…</a>  20.0%    14.0   2024-06-03    5% ▇
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>             7.7%    25.5   2024-10-22   31% ▇▇▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  30.6%    26.5   2026-09-19    9% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  44.4%    26.0   2024-06-07    3% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 25.4
+source                                results  share of the score
+<a name="card2-qwen-qwen2-0-5b-instruct"></a><a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">Qwen2-0.5B-Instruct model card (lab)</a>        5   55% ▇▇▇▇▇▇▇
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                   1   32% ▇▇▇▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>             1    9% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>             1    3% ▇
+prior: pull toward the middle                    1% ▇
+weighted average                               = 25.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Qwen2-0.5B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -35,18 +82,65 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://arxiv.org/abs/2407.10671v4): Context length from the maker's technical report.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~0.79GB   25.4
-8-bit q8_0    ~1.09GB   25.4
+download                      size  score
+4-bit q4_k_m               ~0.79GB   25.3
+8-bit q8_0                 ~1.09GB   25.3
+4-bit q4_k_m                ~0.4GB   25.3
+8-bit q8_0                  ~0.5GB   25.3
+4-bit mlx-4bit · mac only   ~0.3GB   25.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run qwen2:0.5b-instruct-q4_K_M
-# 8-bit q8_0
-ollama run qwen2:0.5b-instruct-q8_0
+# 4-bit q4_k_m · ~0.4GB
+llama cli -hf Qwen/Qwen2-0.5B-Instruct-GGUF:q4_k_m
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/Qwen2-0.5B-Instruct-GGUF:q4_k_m
+# 8-bit q8_0 · ~0.5GB
+llama cli -hf Qwen/Qwen2-0.5B-Instruct-GGUF:q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/Qwen2-0.5B-Instruct-GGUF:q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~0.4GB
+lms get https://huggingface.co/Qwen/Qwen2-0.5B-Instruct-GGUF@q4_k_m -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~0.5GB
+lms get https://huggingface.co/Qwen/Qwen2-0.5B-Instruct-GGUF@q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~0.3GB
+lms get https://huggingface.co/mlx-community/Qwen2-0.5B-Instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~0.79GB
+ollama run qwen2:0.5b-instruct-q4_K_M
+# 8-bit q8_0 · ~1.09GB
+ollama run qwen2:0.5b-instruct-q8_0
+# 4-bit q4_k_m · ~0.4GB
+ollama run hf.co/Qwen/Qwen2-0.5B-Instruct-GGUF:q4_k_m
+# 8-bit q8_0 · ~0.5GB
+ollama run hf.co/Qwen/Qwen2-0.5B-Instruct-GGUF:q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~0.3GB
+mlx_lm.chat --model mlx-community/Qwen2-0.5B-Instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen2-0.5B-Instruct-4bit
+```
 
 [interactive version](https://whatmodel.sh/model/qwen2-0-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

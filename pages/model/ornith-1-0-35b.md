@@ -6,36 +6,85 @@
 
 DeepReinforce · released 2026-06 · 35B params (3B active) · mit
 
-**score 67.8** ±1.1 · #109 of 934 · from 17 benchmark results across 2 sources
+**score 67.7** ±1.1 · #111 of 949 · from 17 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Ornith 1.0 35B (35B-A3B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others         rank  counts  tests
+agent tasks  ▁▁▃▆█▆▅●▄▃▂▁    #93 of 334     78%      9
+coding       ▁▁▁▃▆██▇●▄▃▁   #103 of 469     50%      4
+web search   ●··········█       #2 of 2    9.0%      3
+</pre>
+
+<details><summary>agent tasks · #93 of 334 · 78% of its score</summary>
+
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>                   36.0%  ▄······█▄▄●▄ beats 6/7    very hard · avg 7.1%     19%  at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                   55.8%  ▄▄·····●▄▄▄█ beats 2/7    hard · avg 17%           18%  sharp · at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>    34.5%  ▄···▄···▄●██ beats 3/7    very hard · avg 6.5%     17%  sharp · at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>               51.7%  ▄·▄·····█●█▄ beats 4/7    hard · avg 18%           10%  at its level · several runs
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">BrowseComp (lab)</a>                     63.5%  ▂·▄▁▂▃▆▄●▂▃▄ beats 28/42  hard · avg 23%          3.8%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">MCP-Atlas (public set) (lab)</a>         64.4%  ▂·▁▂▁·▁▃●▆▆▂ beats 17/37  hard · avg 29%          3.6%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with tools (…</a>   30.1%  ▂▂▂▁●▂▃▆█▇▂▆ beats 9/54   very hard · avg 13%     2.8%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">WideSearch (lab)</a>                     63.4%  █·●▆··▂···▂▂ beats 4/10   medium · avg 35%        2.5%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Toolathlon-Verified (lab)</a>            42.4%  ▂·▂●▅▃···▂██ beats 2/18   hard · avg 27%          1.9%  blunt · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #103 of 469 · 50% of its score</summary>
+
+Beats [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
+
+<pre>
+test                               result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>                  55.8%  ▄▄·····●▄▄▄█ beats 2/7    hard · avg 17%           18%  sharp · at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecified)</a>   34.5%  ▄···▄···▄●██ beats 3/7    very hard · avg 6.5%     17%  sharp · at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>              51.7%  ▄·▄·····█●█▄ beats 4/7    hard · avg 18%           10%  at its level · several runs
+<a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SciCode (level unspecified)</a>         30.3%  ▄···▄▄●▄·▄·▄ beats 3/7    very hard · avg 13%     5.0%  at its level
+</pre>
+
+</details>
+
+<details><summary>web search · #2 of 2 · 9.0% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">BrowseComp (lab)</a>                     63.5%  ▂·▄▁▂▃▆▄●▂▃▄ beats 28/42  hard · avg 23%         3.8%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with tools (…</a>   30.1%  ▂▂▂▁●▂▃▆█▇▂▆ beats 9/54   very hard · avg 13%    2.8%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">WideSearch (lab)</a>                     63.4%  █·●▆··▂···▂▂ beats 4/10   medium · avg 35%       2.5%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                        result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">GPQA Diamond (lab)</a>           86.2%  ▁▁▁▁▂▄▅▅██●▄ beats 237/310  hard · avg 45%          8.6%  sharp · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam (lab)</a>   20.8%  ▁▁▁▃▆▆●██▆▁▃ beats 49/104   very hard · avg 4.8%    4.3%  small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">NL2Repo (lab)</a>                34.6%  ▂▂·▂▂▄●▆▆▂▄▆ beats 6/21     very hard · avg 11%     3.6%  at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-ornith-ai-ornith-1-5-35b-a3b"></a>ornith-ai/Ornith-1.5-…  <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">GPQA Diamond (lab)</a>              86.2%    68.6   2026-08-18    9% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Pro (split unspecif…</a>  50.4%    69.3   2026-08-18    7% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Verified (lab)</a>        75.6%    70.0   2026-08-18    6% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Terminal-Bench 2.1 (lab)</a>        64.2%    70.0   2026-08-18    6% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam (lab)</a>      20.8%    67.7   2026-08-18    4% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Multilingual (lab)</a>    69.3%    70.6   2026-08-18    4% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">NL2Repo (lab)</a>                   34.6%    67.0   2026-08-18    4% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">BrowseComp (lab)</a>                63.5%    72.4   2026-08-18    4% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">MCP-Atlas (public set) (lab)</a>    64.4%    68.6   2026-08-18    4% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with too…</a>  30.1%    64.8   2026-08-18    3% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">WideSearch (lab)</a>                63.4%    67.3   2026-08-18    3% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Toolathlon-Verified (lab)</a>       42.4%    59.3   2026-08-18    2% ▇
-<a name="card3-kwaipilot-kat-coder-v2-5-dev"></a>Kwaipilot/KAT-Coder-V…  <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>              36.0%    68.5   2026-07-23   13% ▇▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>              55.8%    65.7   2026-07-23   12% ▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecif…</a>  34.5%    66.9   2026-07-23   10% ▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>          51.7%    67.7   2026-07-23    6% ▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SciCode (level unspecified)</a>     30.3%    64.9   2026-07-23    5% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 67.8
+source                                    results  share of the score
+<a name="card3-ornith-ai-ornith-1-5-35b-a3b"></a><a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">ornith-ai/Ornith-1.5-35B-A3B model card…</a>       12   54% ▇▇▇▇▇▇
+<a name="card3-kwaipilot-kat-coder-v2-5-dev"></a><a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Kwaipilot/KAT-Coder-V2.5-Dev model card</a>         5   46% ▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 67.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: ornith-ai/Ornith-1.5-35B-A3B model card ([MIT](https://opensource.org/licenses/MIT)) · Kwaipilot/KAT-Coder-V2.5-Dev model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -44,18 +93,73 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/ornith-ai/Ornith-1.0-35B/blob/5df2ed3f675c7beaa490328cc70bb573b65fb660/README.md): Maker card serving recipes: '--max-model-len 262144' (vLLM) / '--context-length 262144' (SGLang); ollama lists a 256K context window. Observed 2026-10-10.</sub>
 
 <pre>
-download       size  score
-4-bit q4_k_m  ~21GB   67.8
-8-bit q8_0    ~37GB   67.8
+download                      size  score
+4-bit q4_k_m                 ~21GB   67.7
+8-bit q8_0                   ~37GB   67.7
+4-bit Q4_K_M               ~21.2GB   67.7
+8-bit Q8_0                 ~36.9GB   67.7
+4-bit mlx-4bit · mac only  ~20.4GB   67.7
+4-bit mlx-8bit · mac only  ~37.7GB   67.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run ornith:35b
-# 8-bit q8_0
-ollama run ornith:35b-q8_0
+# 4-bit Q4_K_M · ~21.2GB
+llama cli -hf ornith-ai/Ornith-1.0-35B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ornith-ai/Ornith-1.0-35B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~36.9GB
+llama cli -hf ornith-ai/Ornith-1.0-35B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ornith-ai/Ornith-1.0-35B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~21.2GB
+lms get https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~36.9GB
+lms get https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~20.4GB
+lms get https://huggingface.co/lmstudio-community/Ornith-1.0-35B-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~37.7GB
+lms get https://huggingface.co/lmstudio-community/Ornith-1.0-35B-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~21GB
+ollama run ornith:35b
+# 8-bit q8_0 · ~37GB
+ollama run ornith:35b-q8_0
+# 4-bit Q4_K_M · ~21.2GB
+ollama run hf.co/ornith-ai/Ornith-1.0-35B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~36.9GB
+ollama run hf.co/ornith-ai/Ornith-1.0-35B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~20.4GB
+mlx_lm.chat --model lmstudio-community/Ornith-1.0-35B-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Ornith-1.0-35B-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~37.7GB
+mlx_lm.chat --model lmstudio-community/Ornith-1.0-35B-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Ornith-1.0-35B-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/ornith-1-0-35b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

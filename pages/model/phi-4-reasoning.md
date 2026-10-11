@@ -6,42 +6,89 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 57.5** ±1.0 · #259 of 934 · from 23 benchmark results across 5 sources
+**score 57.9** ±0.9 · #252 of 949 · from 24 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Phi-4-reasoning 14B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃▆██●▆▄▃▁   #144 of 469*     13%      3
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂    #183 of 466     11%      3
+math            ▁▂▃▅▆▅●█▄▁▁▁    #174 of 400     20%      3
+</pre>
+
+<details><summary>coding · #144 of 469 · 13% of its score</summary>
+
+Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2504.21318v1">HumanEval+ (lab)</a>                     92.9%  ▁·▁▁▂▃▄▄█▅▄● beats 141/145  easy · avg 78%     13%  sharp · several runs
+<a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">LiveCodeBench (Aug 1, 2024–Feb 1,…</a>   53.8%  █··········● beats 1/1                           —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2504.21318v1">LiveCodeBench 2024-08 to 2025-01 …</a>   53.8%  █··········● beats 1/1                           —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #183 of 466 · 11% of its score</summary>
+
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2504.21318v1">Arena-Hard (version/judge unspeci…</a>   73.3%  ▃▃▂▅▃▆▅█●▅▂▃ beats 22/30   medium · avg 60%    7.8%  at its level · several runs
+<a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruction…</a>   83.4%  █·········●█ beats 1/2     easy · avg 67%      1.9%  small run
+<a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecified) …</a>   83.4%  ▁▁▃▁▂▄▄●█▃▂▁ beats 64/141  easy · avg 75%      1.3%  typical
+</pre>
+
+</details>
+
+<details><summary>math · #174 of 400 · 20% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (lab)</a>            63.1%  █··●··█··▄·▄ beats 2/6    medium · avg 46%    8.6%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>            74.6%  ▄···▄●·▄▄··▄ beats 3/6    medium · avg 55%    8.1%  sharp · small run · several runs
+<a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (lab)</a>   43.8%  ▁▁▁●▁▅▅▃██▁▄ beats 4/31   hard · avg 33%      3.6%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (9)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond (lab)</a>                   67.1%  ●··▄··▄···█▄ beats 1/6      hard · avg 44%       20%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4815  ▁▄▃▃▇●█▃▅▁▁▁ beats 15/30    avg 0.423            12%  sharp
+<a href="https://arxiv.org/html/2504.21318v1">MMLU-Pro (lab)</a>                       74.3%  ▁▁·▁▁▁▃▂▄●█▁ beats 100/188  medium · avg 60%    8.5%  at its level · several runs
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   48.1%  ▂▃▅▂▆▃●▅█▅▃▆ beats 14/34    medium · avg 42%    5.8%  blunt · at its level
+<a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>       97.7%  ▄···▄····▄·● beats 3/4      easy · avg 86%      5.0%  sharp · noisy · several runs
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   67.9%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 142/276  medium · avg 73%    1.3%  at its level · noisy
+<a href="https://arxiv.org/html/2504.21318v1">Omni-MATH (lab)</a>                      76.6%  █·█·█·█●··██ beats 4/6      easy · avg 68%      1.1%  blunt · at its level · small run · seve…
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   48.7%  ▃·▁▁▂▁●▅█▇▄▁ beats 25/100   medium · avg 68%    1.0%  noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.5%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 88/146   easy · avg 83%      0.6%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="report-2504.21318v1"></a>Microsoft               <a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond (lab)</a>               67.1%    60.2   2025-04-30   13% ▇▇
-                        <a href="https://arxiv.org/html/2504.21318v1">HumanEval+ (lab)</a>                 92.9%    60.1   2025-04-30    6% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (lab)</a>                  63.1%    60.0   2025-04-30    4% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">MMLU-Pro (lab)</a>                   74.3%    57.0   2025-04-30    4% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (lab)</a>         43.8%    53.4   2025-04-30    4% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>                  74.6%    61.2   2025-04-30    3% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>   97.7%    65.2   2025-04-30    2% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecifi…</a>   83.4%    58.6   2025-04-30    1% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">Omni-MATH (lab)</a>                  76.6%    65.0   2025-04-30    0% ▇
-<a name="card-microsoft--phi-4-reasoning"></a>microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">GPQA Diamond (lab)</a>               65.8%    57.9   2025-04-09    7% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">HumanEval+ (lab)</a>                 92.9%    60.1   2025-04-09    6% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2024 (lab)</a>                  75.3%    56.9   2025-04-09    6% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2025 (lab)</a>                  62.9%    54.1   2025-04-09    5% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">MMLU-Pro (lab)</a>                   74.3%    57.0   2025-04-09    4% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Arena-Hard (version/judge uns…</a>   73.3%    55.6   2025-04-09    4% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">FlenQA (3K-token subset) (lab)</a>   97.7%    65.2   2025-04-09    2% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruc…</a>   83.4%    62.6   2025-04-09    2% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Omni-MATH (lab)</a>                  76.6%    61.9   2025-04-09    1% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.4815    55.7   2026-05-02   14% ▇▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   48.1%    55.7   2026-05-02    7% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   48.7%    36.3   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   83.5%    49.4   2026-04-17    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   67.9%    44.7   2025-05-01    1% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 57.5
+source                                    results  share of the score
+<a name="report-2504.21318v1"></a><a href="https://arxiv.org/html/2504.21318v1">Microsoft (lab)</a>                                10   45% ▇▇▇▇▇
+<a name="card-microsoft--phi-4-reasoning"></a><a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">microsoft/Phi-4-reasoning model card (l…</a>        9   34% ▇▇▇▇
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   18% ▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 57.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Microsoft ([CC BY 4.0](../../licenses/report-2504.21318v1.txt)) · microsoft/Phi-4-reasoning model card ([mit](../../licenses/microsoft--Phi-4-reasoning.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -62,19 +109,74 @@ api (Microsoft Azure) · $0.22/M blended · $0.125 in / $0.5 out per 1M tokens �
 <sub>[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft): USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (Microsoft models table), 'Phi-4-reasoning' (GA; not Phi-4-reasoning-plus), 32K context: input $0.125, output $0.50, region US East. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25. · [context source](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/config.json): Configured context for Phi-4-reasoning, not Phi-4-reasoning-plus or base Phi-4. Card advertises 32K; configuration resolves exact tokens.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m   ~9.32GB   57.5
-8-bit q8_0    ~18.14GB   57.5
+download                       size  score
+4-bit q4_k_m                ~9.32GB   57.9
+8-bit q8_0                 ~18.14GB   57.9
+4-bit Q4_K_M                 ~9.1GB   57.9
+8-bit Q8_0                  ~15.6GB   57.9
+4-bit mlx-4bit · mac only    ~8.2GB   57.9
+4-bit mlx-8bit · mac only   ~15.6GB   57.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run phi4-reasoning:14b
-# 8-bit q8_0
-ollama run phi4-reasoning:14b-q8_0
+# 4-bit Q4_K_M · ~9.1GB
+llama cli -hf lmstudio-community/Phi-4-reasoning-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Phi-4-reasoning-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~15.6GB
+llama cli -hf lmstudio-community/Phi-4-reasoning-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Phi-4-reasoning-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~9.1GB
+lms get https://huggingface.co/lmstudio-community/Phi-4-reasoning-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~15.6GB
+lms get https://huggingface.co/lmstudio-community/Phi-4-reasoning-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~8.2GB
+lms get https://huggingface.co/lmstudio-community/Phi-4-reasoning-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~15.6GB
+lms get https://huggingface.co/mlx-community/Phi-4-reasoning-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~9.32GB
+ollama run phi4-reasoning:14b
+# 8-bit q8_0 · ~18.14GB
+ollama run phi4-reasoning:14b-q8_0
+# 4-bit Q4_K_M · ~9.1GB
+ollama run hf.co/lmstudio-community/Phi-4-reasoning-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~15.6GB
+ollama run hf.co/lmstudio-community/Phi-4-reasoning-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~8.2GB
+mlx_lm.chat --model lmstudio-community/Phi-4-reasoning-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Phi-4-reasoning-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~15.6GB
+mlx_lm.chat --model mlx-community/Phi-4-reasoning-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Phi-4-reasoning-8bit
+```
 
 ## Quantization evidence
 

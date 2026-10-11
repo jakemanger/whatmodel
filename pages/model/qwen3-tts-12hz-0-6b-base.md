@@ -6,32 +6,62 @@
 
 Alibaba (Qwen) · released 2026-01 · 0.6B params · apache-2.0
 
-**score 63.2** ±1.7 · #25 of 117 · from 9 benchmark results across 2 sources
+**score 61.7** ±1.6 · #35 of 118 · from 11 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Qwen3-TTS 12Hz 0.6B Base among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-en · WER</a>          10.7%    61.4   2026-02-01   17% ▇▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · speaker si…</a>  70.5%    62.8   2026-02-01   15% ▇▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval ZH (zero-shot Chines…</a>   3.4%    64.8   2026-02-01   15% ▇▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · speaker si…</a>  76.5%    62.7   2026-02-01   14% ▇▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-zh · CER</a>          10.7%    62.3   2026-02-01   11% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-en · speaker si…</a>  67.0%    62.1   2026-02-01   10% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · Whisper la…</a>   1.7%    67.1   2026-02-01    6% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · Paraformer…</a>   1.0%    67.0   2026-02-01    5% ▇
-<a name="card2-qwen-qwen3-tts-12hz-1-7b-base"></a>Qwen/Qwen3-TTS-12Hz-1…  <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md">Seed-TTS test-en WER (transcr…</a>   1.3%    66.1   2026-01-23    6% ▇
-prior                   pull toward the middle                   49.7                 1% ▇
-                        weighted average                       = 63.2
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁▇●▃▃   #16 of 37     43%      6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #16 of 37 · 43% of its score</summary>
 
-<sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Qwen/Qwen3-TTS-12Hz-1.7B-Base model card ([Apache-2.0](../../licenses/Qwen--Qwen3-TTS-12Hz-1.7B-Base.txt))</sub>
+Beats [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [Fun-CosyVoice3-0.5B-2512](fun-cosyvoice3-0-5b-2512.md), [IndexTTS-2](indextts-2.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · speaker simila…</a>   70.5%  █·█·█●·▄·▄·▄ beats 6/10   medium · avg 53%     14%  at its level
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · speaker simila…</a>   76.5%  ▃··▃█●▅··▃·▃ beats 5/10   medium · avg 62%     13%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · Whisper large-…</a>    1.7%  ▃··▃▅··▅·█●▅ beats 9/11   avg 3.6%            5.6%  blunt · several runs
+<a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md">Seed-TTS test-en WER (transcriber…</a>    1.3%  ▄········█▄● beats 4/5    avg 4.2%            5.4%  small run
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · Paraformer CER</a>     1.0%  ▂··▄··▂▂●·▄▂ beats 8/11   avg 2.1%            4.5%  blunt
+<a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md">Seed-TTS test-zh error rate (tran…</a>    0.9%  ●··········█ beats 0/1                           —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-en · WER</a>               10.7%  █··█●·██████ beats 2/8    avg 26%              17%  sharp
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval ZH (zero-shot Chinese) ·…</a>    3.4%  █▄···█▄·●··▄ beats 6/8    avg 9.2%             14%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-zh · CER</a>               10.7%  ▃●·▃··▃▃█··▃ beats 1/8    avg 23%              11%  typical
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval hard-en · speaker simila…</a>   67.0%  ▄█●·▄··▄··▄█ beats 3/8    medium · avg 49%     11%  at its level
+<a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">CV3-Eval EN (zero-shot English) ·…</a>   33.9%  ●·······▃▅█▅ beats 0/8    avg 16%             4.4%  noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-ultraeval-audio-apache"></a><a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">UltraEval-Audio</a>                                 9   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="card2-qwen-qwen3-tts-12hz-1-7b-base"></a><a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md">Qwen/Qwen3-TTS-12Hz-1.7B-Base model car…</a>        1    5% ▇
+<a name="speech-sglang-omni-cookbooks-apache"></a><a href="https://github.com/sgl-project/sglang-omni/blob/9641219b320597393d915afb8d03352c629d94a5/docs/cookbook/qwen3_tts.md">SGLang-Omni serving cookbooks</a>                   1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 61.7
+</pre>
+
+<sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Qwen/Qwen3-TTS-12Hz-1.7B-Base model card ([Apache-2.0](../../licenses/Qwen--Qwen3-TTS-12Hz-1.7B-Base.txt)) · SGLang-Omni serving cookbooks ([Apache-2.0](https://github.com/sgl-project/sglang-omni/blob/9641219b320597393d915afb8d03352c629d94a5/LICENSE))</sub>
 
 <details><summary>Not counted (1)</summary>
 
@@ -46,20 +76,24 @@ Qwen/Qwen3-TTS-12Hz-1…  <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.
 
 <pre>
 version                            needs  score
-bf16 (qwen-tts)                  ~2.52GB   63.2
-mlx-bf16 (mlx-audio) · mac only  ~2.52GB   63.2
-bf16 (qwen-tts) · nvidia only    ~2.52GB   63.2
+bf16 (qwen-tts)                  ~2.52GB   61.7
+mlx-bf16 (mlx-audio) · mac only  ~2.52GB   61.7
+bf16 (qwen-tts) · nvidia only    ~2.52GB   61.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (qwen-tts)
+# bf16 (qwen-tts) · ~2.52GB
 uv run --python 3.12 --with qwen-tts python -c "import torch, soundfile as sf; from qwen_tts import Qwen3TTSModel; model = Qwen3TTSModel.from_pretrained('Qwen/Qwen3-TTS-12Hz-0.6B-Base', device_map='cpu', dtype=torch.bfloat16); wavs, sr = model.generate_voice_clone(text='Hello, world.', language='English', ref_audio='https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/clone.wav', ref_text='Okay. Yeah. I resent you. I love you. I respect you. But you know what? You blew it! And thanks to you.'); sf.write('output_voice_clone.wav', wavs[0], sr)"
-# mlx-bf16 (mlx-audio) · mac only
+# mlx-bf16 (mlx-audio) · mac only · ~2.52GB
 pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16 --text 'Hello from Sesame.' --ref_audio sample_audio.wav --ref_text 'This is what my voice sounds like.'
-# bf16 (qwen-tts) · nvidia only
+# bf16 (qwen-tts) · nvidia only · ~2.52GB
 pip install -U qwen-tts && pip install -U flash-attn --no-build-isolation && python -c "import torch, soundfile as sf; from qwen_tts import Qwen3TTSModel; model = Qwen3TTSModel.from_pretrained('Qwen/Qwen3-TTS-12Hz-0.6B-Base', device_map='cuda:0', dtype=torch.bfloat16, attn_implementation='flash_attention_2'); wavs, sr = model.generate_voice_clone(text='Hello, world.', language='English', ref_audio='https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/clone.wav', ref_text='Okay. Yeah. I resent you. I love you. I respect you. But you know what? You blew it! And thanks to you.'); sf.write('output_voice_clone.wav', wavs[0], sr)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/qwen3-tts-12hz-0-6b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

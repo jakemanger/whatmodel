@@ -16,8 +16,14 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
+# fp32 (microsoft/NeuralSpeech LightSpeech repo, user text) · ~0.04GB
 git clone https://github.com/microsoft/NeuralSpeech.git && cd NeuralSpeech/LightSpeech && SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True pip install -r requirements.txt && wget https://huggingface.co/neuralspeech/lightspeech/resolve/main/data.tgz && tar -xzf data.tgz && mkdir -p checkpoints/lightspeech wavegan_pretrained && wget -P checkpoints/lightspeech https://huggingface.co/neuralspeech/lightspeech/resolve/main/model_ckpt_steps_100000.ckpt && curl -L -o wavegan_pretrained/checkpoint-1000000steps.pkl 'https://drive.usercontent.google.com/download?id=1FAOTzrVRDi-M_OdtfHRC7tS00YxMbzGz&export=download&confirm=t' && curl -L -o wavegan_pretrained/config.yml 'https://drive.usercontent.google.com/download?id=1Vlp2uM-ljY3nBEc9rDnQ8Z63QKhdRyKs&export=download&confirm=t' && curl -L -o wavegan_pretrained/stats.h5 'https://drive.usercontent.google.com/download?id=1c2AsCT0V95HQkaFqHlwl4q2ODerNa2yD&export=download&confirm=t' && CUDA_VISIBLE_DEVICES=0 PYTHONPATH=. python tasks/lightspeech_inference.py --config configs/tts/lj/lightspeech.yaml --exp_name lightspeech --reset --inference_text inference_text.txt
+# fp32 · CPU (microsoft/NeuralSpeech LightSpeech repo, LJSpeech test set) · ~0.04GB
 git clone https://github.com/microsoft/NeuralSpeech.git && cd NeuralSpeech/LightSpeech && SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True pip install -r requirements.txt && wget https://huggingface.co/neuralspeech/lightspeech/resolve/main/data.tgz && tar -xzf data.tgz && mkdir -p checkpoints/lightspeech wavegan_pretrained && wget -P checkpoints/lightspeech https://huggingface.co/neuralspeech/lightspeech/resolve/main/model_ckpt_steps_100000.ckpt && curl -L -o wavegan_pretrained/checkpoint-1000000steps.pkl 'https://drive.usercontent.google.com/download?id=1FAOTzrVRDi-M_OdtfHRC7tS00YxMbzGz&export=download&confirm=t' && curl -L -o wavegan_pretrained/config.yml 'https://drive.usercontent.google.com/download?id=1Vlp2uM-ljY3nBEc9rDnQ8Z63QKhdRyKs&export=download&confirm=t' && curl -L -o wavegan_pretrained/stats.h5 'https://drive.usercontent.google.com/download?id=1c2AsCT0V95HQkaFqHlwl4q2ODerNa2yD&export=download&confirm=t' && CUDA_VISIBLE_DEVICES= PYTHONPATH=. python tasks/lightspeech.py --config configs/tts/lj/lightspeech.yaml --exp_name lightspeech --reset --infer
 ```
 

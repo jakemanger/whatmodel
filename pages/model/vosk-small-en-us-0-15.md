@@ -6,24 +6,40 @@
 
 Alpha Cephei (Vosk) · released 2020-12 · apache-2.0
 
-**score 32.5** ±6.2 · #142 of 160 · from 3 benchmark results across 2 sources
+**score 30.8** ±6.3 · #144 of 162 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Vosk small en-us 0.15 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  18.4%    33.2   2026-03-19   69% ▇▇▇▇▇▇▇▇
-<a name="first-party-alphacephei-vosk-models"></a>Alpha Cephei Vosk mod…  <a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">LibriSpeech test-clean WER (l…</a>   9.8%    11.9   2026-05-04   13% ▇▇
-                        <a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">TED-LIUM test WER (short-form…</a>  10.4%    20.0   2026-05-04    3% ▇
-prior                   pull toward the middle                   49.8                15% ▇▇
-                        weighted average                       = 32.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · English…</a>   18.4%  █·●···▄▄▄··▄ beats 3/7    avg 8.3%       67%  typical
+<a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">LibriSpeech test-clean WER (lab)</a>      9.8%  ▁·●·▁▁▁▁▃▇█▆ beats 2/100  avg 3.1%       14%  blunt · small run
+<a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">TED-LIUM test WER (short-form) (l…</a>   10.4%  ▁·▁▇█●·▁▁▃█▄ beats 13/27  avg 6.3%      3.3%  blunt · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stt-picovoice-apache"></a><a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice speech-to-text-benchmark · En…</a>        1   67% ▇▇▇▇▇▇▇▇
+<a name="first-party-alphacephei-vosk-models"></a><a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">Alpha Cephei Vosk models page (lab)</a>             2   18% ▇▇
+prior: pull toward the middle                       15% ▇▇
+weighted average                                   = 30.8
+</pre>
 
 <sub>Licences: Picovoice speech-to-text-benchmark · English batch-engine WER ([Apache-2.0](../../licenses/speech-stt-picovoice-apache.txt))</sub>
 
@@ -31,14 +47,18 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version   needs  score
-kaldi    ~0.3GB   32.5
+kaldi    ~0.3GB   30.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# kaldi
+# kaldi · ~0.3GB
 uvx --from vosk vosk-transcriber -n vosk-model-small-en-us-0.15 -i audio.wav -o out.txt
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/vosk-small-en-us-0-15) · [JSON](https://whatmodel.sh/api?format=json&all=1)

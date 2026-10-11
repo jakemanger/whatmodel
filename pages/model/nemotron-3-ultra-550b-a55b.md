@@ -6,50 +6,127 @@
 
 NVIDIA · released 2026-06 · 550B params (55B active) · openmdw
 
-**score 69.5** ±0.7 · #90 of 934 · from 31 benchmark results across 5 sources
+**score 69.4** ±0.7 · #93 of 949 · from 32 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Nemotron 3 Ultra 550B-A55B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others         rank  counts  tests
+agent tasks     ▁▁▃▆█▆▅●▄▃▂▁    #83 of 334     22%      7
+coding          ▁▁▁▃▆██▇●▄▃▁    #85 of 469     20%      6
+chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #82 of 466*    4.4%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁   #108 of 400    6.6%      3
+web search      ▂▂●▆▄█▃▃▁▁·▁    #71 of 81*    4.6%      2
+</pre>
+
+<details><summary>agent tasks · #83 of 334 · 22% of its score</summary>
+
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified (lab)</a>             70.7%  ●····██·████ beats 0/6    hard · avg 22%         6.0%  sharp · at its level
+<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (lab)</a>         67.7%  ●··▄▄···▄▄·█ beats 0/6    hard · avg 30%         4.3%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1 (lab)</a>             56.4%  █··▄●·▄····▄ beats 4/6    very hard · avg 12%    4.2%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">BrowseComp (lab)</a>                     44.4%  ▄·●▄···▄··█▄ beats 1/6    hard · avg 16%         2.4%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with tools (…</a>   37.4%  ●····▄·█·▄·▄ beats 0/5    hard · avg 16%         2.2%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">τ³-bench (lab)</a>                       70.9%  ▄····▄·●·▄·█ beats 2/6    medium · avg 40%       2.0%  blunt · at its level
+<a href="https://arxiv.org/html/2606.15007v1">τ³-bench telecom (tau2-bench ≥ v1…</a>   92.9%  ▄·●···▄·▄·█▄ beats 1/6    easy · avg 77%         1.4%  maxed out
+</pre>
+
+</details>
+
+<details><summary>coding · #85 of 469 · 20% of its score</summary>
+
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GLM-4.7](glm-4-7.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified (lab)</a>             70.7%  ●····██·████ beats 0/6    hard · avg 22%      6.0%  sharp · at its level
+<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (lab)</a>         67.7%  ●··▄▄···▄▄·█ beats 0/6    hard · avg 30%      4.3%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unspecif…</a>   89.0%  ██···█··●███ beats 3/6    medium · avg 45%    2.8%  typical
+<a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems (lab)</a>            44.6%  ▃····●··█·▃▃ beats 1/6    hard · avg 17%      2.7%  at its level
+<a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025)</a>      76.4%  ▄··●····▄▄·█ beats 2/6    medium · avg 45%    2.2%  typical
+<a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified)</a>          39.9%  ▄·····●█▄▄·▄ beats 1/6    hard · avg 16%      2.2%  at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #82 of 466 · 4.4% of its score</summary>
+
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1426.2  ▁▁▁▂▃▃▃▆▆●█▃ beats 279/379  avg 1268      4.4%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #108 of 400 · 6.6% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [gpt-oss-120b](gpt-oss-120b.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run    difficulty            counts  why
+<a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench (lab)</a>      88.6%  ▄····▄·▄●·█▄ beats 3/6      medium · avg 40%        2.4%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 135/193  very hard · avg 8.5%    2.3%  sharp · noisy
+<a href="https://arxiv.org/html/2608.30181v1">AIME 2026</a>                  85.4%  ●·▄·▄▄··█··▄ beats 0/6      medium · avg 56%        1.9%  sharp · maxed out · noisy
+</pre>
+
+</details>
+
+<details><summary>web search · #71 of 81 · 4.6% of its score</summary>
+
+Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2606.15007v1">BrowseComp (lab)</a>                     44.4%  ▄·●▄···▄··█▄ beats 1/6    hard · avg 16%    2.4%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with tools (…</a>   37.4%  ●····▄·█·▄·▄ beats 0/5    hard · avg 16%    2.2%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (15)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         85.4%  ▁▁▁▁▂▄▆▄▅●█▅ beats 147/208  hard · avg 45%           14%  sharp · several runs
+<a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam (lab)</a>           26.7%  ▄··●▄··▄·▄·▄ beats 1/6      very hard · avg 5.6%    8.2%  at its level · several runs
+<a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified) (lab)</a>      87.0%  ▄●▄▄·▄·····▄ beats 2/6      hard · avg 47%          7.6%  sharp
+<a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro (lab)</a>                       86.8%  ▄·····▄▄●·▄█ beats 3/6      medium · avg 53%        4.4%  typical
+<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite</a>                     90.9%  ▃······▅··●▃ beats 5/6      medium · avg 60%        4.1%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         20.0%  █··▂▃●▄█▂▃▁▁ beats 35/74    very hard · avg 9.4%    2.6%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2606.15007v1">LongBench v2 (lab)</a>                   61.9%  ▂·▁·▂▂▁▃▄▁█● beats 25/28    very hard · avg 34%     2.5%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX (lab)</a>                      83.0%  ▄·····●·▄▄█▄ beats 1/6      medium · avg 57%        2.5%  typical
+<a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)</a>    81.4%  ▃······█▃▃·● beats 6/6      medium · avg 44%        2.4%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                12.0%  █▁▁▁▁●▁▄▂▂▁▁ beats 62/135   very hard · avg 5.9%    2.3%  sharp · noisy
+<a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose) (lab)</a>   81.7%  ▄▄·▄··▄▄···● beats 5/6      medium · avg 45%        2.1%  typical
+<a href="https://arxiv.org/html/2606.15007v1">MultiChallenge (lab)</a>                 63.8%  ▁··········● beats 4/6      hard · avg 27%          1.9%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">CritPt (lab)</a>                          3.1%  ▄····▄●···█▄ beats 2/6      very hard · avg 1.0%    1.0%  too hard for it · noisy
+<a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   84.8%  ▂·▂··▂·●▂·█▆ beats 4/12     medium · avg 64%        0.7%  noisy
+<a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   67.1%  ▄·●▄▄·▄██▄█▄ beats 1/12     easy · avg 65%          0.3%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified) (la…</a>   87.0%    70.3   2026-06-12    8% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified (lab)</a>         70.7%    69.1   2026-06-12    6% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro (lab)</a>                   86.8%    71.0   2026-06-12    5% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam (lab)</a>       26.7%    69.2   2026-06-12    5% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1 (lab)</a>         56.4%    70.8   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (lab)</a>     67.7%    67.5   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>   89.0%    73.2   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems (lab)</a>        44.6%    69.2   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX (lab)</a>                  83.0%    69.4   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">LongBench v2 (lab)</a>               61.9%    70.6   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench (lab)</a>            88.6%    73.1   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">BrowseComp (lab)</a>                 44.4%    66.3   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with too…</a>   37.4%    65.4   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose) …</a>   81.7%    74.5   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge (lab)</a>             63.8%    72.8   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">τ³-bench (lab)</a>                   70.9%    72.3   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">CritPt (lab)</a>                      3.1%    63.6   2026-06-12    1% ▇
-<a name="paper-2608.30181v1-ax-k2"></a>A.X K2 Technical Repo…  <a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond</a>                     86.7%    68.8   2026-08-31    8% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite</a>                 90.9%    72.1   2026-08-31    4% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam</a>             26.6%    69.7   2026-08-31    4% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecif…</a>   81.4%    73.8   2026-08-31    3% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 202…</a>   76.4%    66.0   2026-08-31    2% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified)</a>      39.9%    67.6   2026-08-31    2% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">AIME 2026</a>                        85.4%    58.4   2026-08-31    2% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     85.4%    70.7   2026-08-10    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     20.0%    72.3   2026-08-27    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            12.0%    65.7   2026-08-10    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         86.7%    70.0   2026-08-10    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1426.2    69.0   2026-10-02    4% ▇
-<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>   84.8%    66.0   2026-09-12    1% ▇
-                        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>   67.1%    48.3   2026-09-12    0% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 69.5
+source                         results  share of the score
+<a name="report-2606.15007v1"></a><a href="https://arxiv.org/html/2606.15007v1">NVIDIA (lab)</a>                        18   57% ▇▇▇▇▇▇▇
+<a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report</a>              7   25% ▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                             4   13% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1    4% ▇
+<a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere</a>                               2    1% ▇
+prior: pull toward the middle             0% ▇
+weighted average                        = 69.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -60,21 +137,66 @@ api (Together AI) · $1.35/M blended · $0.6 in / $3.6 out per 1M tokens · [doc
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/togetherai/models/nvidia/nemotron-3-ultra-550b-a55b.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-3-ultra-550b-a55b.toml)</sub>
 
 <pre>
-download              size  score
-4-bit ud-q4_k_xl  ~330.5GB   69.5
-2-bit ud-q2_k_xl  ~165.5GB   69.5
-1-bit ud-iq1_m       ~83GB   69.5
+download                       size  score
+4-bit ud-q4_k_xl           ~330.5GB   69.4
+2-bit ud-q2_k_xl           ~165.5GB   69.4
+1-bit ud-iq1_m                ~83GB   69.4
+4-bit mlx-4bit · mac only  ~309.3GB   69.4
+4-bit mlx-8bit · mac only  ~583.8GB   69.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit ud-q4_k_xl
-llama-server -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q2_K_XL
-# 1-bit ud-iq1_m
-llama-server -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-IQ1_M
+# 4-bit ud-q4_k_xl · ~330.5GB
+llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q4_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl · ~165.5GB
+llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q2_K_XL
+# 1-bit ud-iq1_m · ~83GB
+llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-IQ1_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-IQ1_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit ud-q4_k_xl · ~330.5GB
+lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-Q4_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit ud-q2_k_xl · ~165.5GB
+lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 1-bit ud-iq1_m · ~83GB
+lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-IQ1_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~309.3GB
+lms get https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~583.8GB
+lms get https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~309.3GB
+mlx_lm.chat --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~583.8GB
+mlx_lm.chat --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/nemotron-3-ultra-550b-a55b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

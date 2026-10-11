@@ -6,25 +6,42 @@
 
 Hume AI · released 2025-02 · proprietary
 
-**score 58.3** ±4.0 · #45 of 117 · from 4 benchmark results across 3 sources
+**score 57.9** ±3.9 · #46 of 118 · from 4 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Octave TTS (Octave 1) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     46.8%    60.4   2025-08-10   50% ▇▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       12.8%    57.9   2025-08-10   11% ▇
-<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>     71.1%    55.0   2025-06-19   21% ▇▇▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  4.18 / 5    59.9   2025-05-29   12% ▇
-prior                   pull toward the middle                      49.7                 6% ▇
-                        weighted average                          = 58.3
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     46.8%  ▅▅▃▃█▅▅●·▃·▅ beats 13/16  hard · avg 30%          50%  at its level
+<a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean instruc…</a>     71.1%  ▄····●··▄··▄ beats 2/4    easy · avg 66%          21%  at its level
+<a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automatic …</a>  4.18 / 5  ▄·█·█▄····●▄ beats 6/8    easy · avg 3.93 / 5     12%  blunt
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           12.8%  ▂▄··▂▄▄··●▄▆ beats 10/16  avg 16%                 11%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   61% ▇▇▇▇▇▇▇
+<a name="speech-instructttseval-ccby"></a><a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval: instruction-following …</a>        1   21% ▇▇▇
+<a name="speech-emergent-v1-paper-ccby"></a><a href="https://arxiv.org/html/2505.23009v1">EmergentTTS-Eval v1 paper</a>                       1   12% ▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 57.9
+</pre>
 
 <sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · InstructTTSEval: instruction-following TTS benchmark ([CC BY 4.0](../../licenses/speech-instructttseval-ccby.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt))</sub>
 

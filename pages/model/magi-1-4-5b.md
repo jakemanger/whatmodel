@@ -8,19 +8,38 @@ Sand AI · released 2025-04 · 4.5B params · apache-2.0
 
 **score 36.5** ±5.1 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks MAGI-1 4.5B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-cronos-ccby"></a>CRONOS: Benchmarking …  <a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS counterfactual rigid-b…</a>   2.0%    29.1   2026-05-22   53% ▇▇▇▇▇▇
-<a name="paper-2512.01989v1-paibench"></a>PAI-Bench: A Comprehe…  <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video…</a>  77.5%    43.2   2025-12-01   36% ▇▇▇▇
-prior                   pull toward the middle                   49.9                11% ▇
-                        weighted average                       = 36.5
+task            vs the others        rank  counts  tests
+image to video  ▁▁●▂██▄▃▃▄▂▂   #68 of 74*     89%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to video · #68 of 74 · 89% of its score</summary>
+
+Beats [Runway Gen-4 Turbo](runway-gen-4-turbo.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS counterfactual rigid-body …</a>    2.0%  ●·····█··█·█ beats 0/3    very hard · avg 12%     53%  sharp · too hard for it
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   77.5%  ▃······●·█▅█ beats 1/10   easy · avg 81%          36%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-cronos-ccby"></a><a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS: Benchmarking Counterfactual Phy…</a>        1   53% ▇▇▇▇▇▇
+<a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        1   36% ▇▇▇▇
+prior: pull toward the middle                       11% ▇
+weighted average                                   = 36.5
+</pre>
 
 <sub>Licences: CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

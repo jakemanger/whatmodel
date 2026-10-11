@@ -6,23 +6,38 @@
 
 Kyutai · released 2025-07 · 1.8B params · cc-by-4.0
 
-**score 47.3** ±5.2 · #73 of 117 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.0** ±5.2 · #74 of 118 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Kyutai TTS 1.6B en/fr among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>  21.9%    43.7   2025-08-10   69% ▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>    12.7%    59.0   2025-08-10   20% ▇▇
-prior                   pull toward the middle                   49.7                11% ▇
-                        weighted average                       = 47.3
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>   21.9%  ▅▅▃●█▅▅▃·▃·▅ beats 5/16   hard · avg 30%     70%  at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>         12.7%  ▂▄··▂▄▄··●▄▆ beats 11/16  avg 16%            20%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       11% ▇
+weighted average                                   = 47.0
+</pre>
 
 <sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt))</sub>
 
@@ -30,17 +45,21 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                        needs  score
-bf16 (moshi-mlx) · mac only  ~4.07GB   47.3
-bf16 (moshi) · nvidia only   ~4.07GB   47.3
+bf16 (moshi-mlx) · mac only  ~4.07GB   47.0
+bf16 (moshi) · nvidia only   ~4.07GB   47.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (moshi-mlx) · mac only
+# bf16 (moshi-mlx) · mac only · ~4.07GB
 git clone https://github.com/kyutai-labs/delayed-streams-modeling && cd delayed-streams-modeling && echo "Hey, how are you?" | uvx --with moshi-mlx python scripts/tts_mlx.py - audio_output.wav
-# bf16 (moshi) · nvidia only
+# bf16 (moshi) · nvidia only · ~4.07GB
 git clone https://github.com/kyutai-labs/delayed-streams-modeling && cd delayed-streams-modeling && echo "Hey, how are you?" | uvx --with moshi python scripts/tts_pytorch.py - audio_output.wav
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/kyutai-tts-1-6b-en-fr) · [JSON](https://whatmodel.sh/api?format=json&all=1)

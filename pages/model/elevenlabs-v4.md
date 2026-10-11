@@ -6,22 +6,37 @@
 
 ElevenLabs · released 2026-09 · proprietary
 
-**score 36.9** ±4.3 · #94 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.6** ±4.3 · #95 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Eleven v4 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-canberkkkkkk-ema-lightning"></a>EMA Lightning model c…  <a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">Freya-TR-Eval Turkish TTS int…</a>   1.4%    35.9   2026-10-06   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.7                 7% ▇
-                        weighted average                       = 36.9
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">Freya-TR-Eval Turkish TTS intelli…</a>    1.4%  ▄········●██ beats 2/6    avg 0.3%       93%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="card3-canberkkkkkk-ema-lightning"></a><a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">EMA Lightning model card</a>             1   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             7% ▇
+weighted average                        = 36.6
+</pre>
 
 <sub>Licences: EMA Lightning model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 

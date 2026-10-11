@@ -6,26 +6,66 @@
 
 OpenAI · released 2024-12 · closed weights
 
-**score 41.4** ±1.8 · comparison only: no current run option verified · from 5 benchmark results across 4 sources
+**score 41.7** ±1.8 · comparison only: no current run option verified · from 6 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Sora (original, 2024) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others        rank  counts  tests
+text to video   ▇▅▄▆●▆▇▂▃▃▂▄    #56 of 94     86%      4
+image to video  ▁▁●▂██▄▃▃▄▂▂   #69 of 74*    6.7%      1
+</pre>
+
+<details><summary>text to video · #56 of 94 · 86% of its score</summary>
+
+Beats [Open-Sora 2.0](open-sora-2-0.md), [Pyramid Flow (SD3)](pyramid-flow-sd3.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1068.9  ▂●▃▆█▆·▆▅▁▂▇ beats 3/41   avg 1147             53%  typical
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   62.1%  ▄▄·█··█▄▄▄▄● beats 10/10  easy · avg 73%       17%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   59.7%  ▄▄·█▄█▄··▄▄● beats 10/10  easy · avg 70%       10%  at its level
+<a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical cons…</a>   28.0%  ●··█·█·····█ beats 0/3    medium · avg 46%    6.3%  at its level
+</pre>
+
+</details>
+
+<details><summary>image to video · #69 of 74 · 6.7% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo (Se…</a>   903.0  ●·····▄█··▄▄ beats 0/5    avg 1043      6.7%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/blob/a064a6c71f5be440641209c07bf2a5ce7a2ff5e4/README.md">Wan-Bench (Wan2.1 release) weight…</a>   70.0%  █·······●··█ beats 1/2    easy · avg 78%    6.4%  at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1068.9    43.1   2026-09-22   56% ▇▇▇▇▇▇▇
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>   62.1%    41.3   2025-05-17   18% ▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>   59.7%    40.3   2025-05-17   10% ▇
-<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>   903.0    34.4   2025-05-05    7% ▇
-<a name="visual-t2vphysbench"></a>T2VPhysBench: A First…  <a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical …</a>   28.0%    35.0   2025-05-01    7% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 41.4
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   53% ▇▇▇▇▇▇
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   26% ▇▇▇
+<a name="video-seaweed-7b"></a><a href="https://arxiv.org/html/2504.08685v2#S4.T3">Seaweed-7B: Cost-Effective Training of …</a>        1    7% ▇
+<a name="card2-wan-ai-wan2-1-t2v-14b"></a><a href="https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/blob/a064a6c71f5be440641209c07bf2a5ce7a2ff5e4/README.md">Wan-AI/Wan2.1-T2V-14B model card</a>                1    6% ▇
+<a name="visual-t2vphysbench"></a><a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench: A First-Principles Benchm…</a>        1    6% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 41.7
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt)) · Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model ([CC-BY-4.0](../../licenses/video-seaweed-7b.txt)) · T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation ([CC-BY-4.0](../../licenses/visual-t2vphysbench.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt)) · Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model ([CC-BY-4.0](../../licenses/video-seaweed-7b.txt)) · Wan-AI/Wan2.1-T2V-14B model card ([Apache-2.0](../../licenses/Wan-AI--Wan2.1-T2V-14B.txt)) · T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation ([CC-BY-4.0](../../licenses/visual-t2vphysbench.txt))</sub>
 
 ## How to run it
 

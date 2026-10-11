@@ -6,26 +6,53 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 41.8** ±1.2 · #665 of 934 · from 7 benchmark results across 2 sources
+**score 41.7** ±1.2 · #675 of 949 · from 7 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Granite 34B Code Base (8K) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃●██▇▆▄▃▁   #357 of 469     85%      6
+</pre>
+
+<details><summary>coding · #357 of 469 · 85% of its score</summary>
+
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   49.1%  ▁·▂▁▂▆▅█●▄▁▂ beats 28/35  medium · avg 64%     23%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   34.1%  ▄▇█▃▄▇▄●▇▃·▁ beats 27/35  medium · avg 49%     16%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   29.5%  ▁·▁▁▄██▄●▁▅▅ beats 25/35  medium · avg 56%     15%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                           47.2%  █·▅▃▃▃▅▃▃●·▅ beats 12/15  easy · avg 70%       13%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                     43.3%  ▃▅█▃▃▅·▃▃●·▅ beats 13/15  medium · avg 59%     10%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                     44.8%  ▃·▃██▅▃·▃▃●▃ beats 14/15  medium · avg 55%    8.3%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                     result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   38.5%  ▂▁▁▄▂▅●█▆▂▂▂ beats 24/58  medium · avg 50%     14%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  49.1%    42.8   2024-05-07   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  34.1%    43.6   2024-05-07   16% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  29.5%    41.3   2024-05-07   15% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      47.2%    38.3   2024-05-07   13% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                43.3%    39.9   2024-05-07   10% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                44.8%    42.0   2024-05-07    8% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         38.5%    42.5   2025-04-01   13% ▇▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 41.8
+source                                    results  share of the score
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1   14% ▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 41.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -33,14 +60,35 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~21.38GB   41.8
+4-bit q4_k_m  ~21.38GB   41.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf ibm-granite/granite-34b-code-base-8k-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~21.38GB
+llama cli -hf ibm-granite/granite-34b-code-base-8k-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ibm-granite/granite-34b-code-base-8k-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~21.38GB
+lms get https://huggingface.co/ibm-granite/granite-34b-code-base-8k-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~21.38GB
+ollama run hf.co/ibm-granite/granite-34b-code-base-8k-GGUF:Q4_K_M
+```
 
 [interactive version](https://whatmodel.sh/model/granite-34b-code-base-8k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

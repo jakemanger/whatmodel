@@ -6,31 +6,89 @@
 
 AI21 Labs · released 2024-08 · 398B params (94B active) · jamba-open-model-license
 
-**score 50.2** ±1.1 · #424 of 934 · from 12 benchmark results across 3 sources
+**score 50.3** ±1.2 · #430 of 949 · from 12 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Jamba 1.5 Large among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃▆█▆●▄▄▃▂▁   #112 of 334*    2.3%      1
+coding          █··········●       #1 of 2*    8.4%      1
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂    #252 of 466     19%      3
+math            ▁▂▃▅●▅▄█▄▁▁▁   #251 of 400*    9.5%      1
+</pre>
+
+<details><summary>agent tasks · #112 of 334 · 2.3% of its score</summary>
+
+Beats [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">BFCL (version not stated) (lab)</a>   85.5%  ▄▆▄▂·█●·▄··▂ beats 14/17  easy · avg 81%    2.3%  blunt · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #1 of 2 · 8.4% of its score</summary>
+
+<pre>
+test             result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>   71.3%  ▁▁▁▁▁▃▅▅●▃▂▁ beats 123/190  easy · avg 74%    8.4%  sharp · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #252 of 466 · 19% of its score</summary>
+
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1289.4  ▁▁▁▂▃▃▃●▆▇█▃ beats 121/379  avg 1268             12%  blunt
+<a href="https://arxiv.org/html/2408.12570v1#S6.T3">Arena-Hard (version/judge unspeci…</a>   65.4%  ▃▃▂▅▃▆●█▅▅▂▃ beats 15/30    medium · avg 58%    4.3%  at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">IFEval (aggregation unspecified) …</a>   81.5%  ▁▁▃▁▂▄●▆█▃▂▁ beats 56/141   easy · avg 80%      2.9%  small run
+</pre>
+
+</details>
+
+<details><summary>math · #251 of 400 · 9.5% of its score</summary>
+
+Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md), [OpenThinker 7B](openthinker-7b.md) here, though they rank lower overall.
+
+<pre>
+test         result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (lab)</a>   87.0%  ▂▂▂▅▅▆▅▇●▇▄▃ beats 111/146  easy · avg 85%    9.5%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                             result  vs the others in its run    difficulty        counts  why
+<a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro</a>                          49.5%  ▃▂▅█●·█▃▅··▂ beats 12/23    medium · avg 57%     28%  at its level · several runs
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (lab)</a>              65.5%  ▁▁▁▁▂▄▅▅●▃▄▁ beats 76/129   medium · avg 65%     11%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (lab)</a>   36.9%  ▂▁▂▂▄●▆▃▅█▄▃ beats 32/104   hard · avg 37%       11%  sharp · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                        80.0%  ▁▁▁▁▁▂▃▅█▃●▃ beats 135/183  easy · avg 77%      7.6%  at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>               93.0%  ▆▁▁▂▂▅▇█▄▃▃● beats 96/97    easy · avg 81%      2.0%  sharp · noisy · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="paper-2408.12570v1-jamba15"></a>Jamba-1.5: Hybrid Tra…  <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (lab)</a>             65.5%    50.4   2024-08-22   11% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (la…</a>   36.9%    49.9   2024-08-22   11% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (lab)</a>                      87.0%    51.8   2024-08-22   10% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>                  71.3%    48.3   2024-08-22    8% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                       80.0%    52.4   2024-08-22    8% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU-Pro (lab)</a>                   48.3%    49.1   2024-08-22    7% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T3">Arena-Hard (version/judge uns…</a>   65.4%    54.6   2024-08-22    5% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">IFEval (aggregation unspecifi…</a>   81.5%    51.9   2024-08-22    3% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BFCL (version not stated) (la…</a>   85.5%    53.2   2024-08-22    2% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>              93.0%    58.1   2024-08-22    2% ▇
-<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro</a>                         49.5%    46.3                23% ▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1289.4    52.7   2026-10-02   11% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 50.2
+source                                    results  share of the score
+<a name="paper-2408.12570v1-jamba15"></a><a href="https://arxiv.org/html/2408.12570v1#S6.T2">Jamba-1.5: Hybrid Transformer-Mamba Mod…</a>       10   66% ▇▇▇▇▇▇▇▇
+<a name="mmlu-pro-author-runs"></a><a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro author-released evaluation runs</a>        1   21% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   12% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 50.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Jamba-1.5: Hybrid Transformer-Mamba Models at Scale ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -38,14 +96,18 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download                                       size  score
-16-bit bf16 weights, experts_int8 at lo…  ~797.11GB   50.2
+16-bit bf16 weights, experts_int8 at lo…  ~797.11GB   50.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16 weights, experts_int8 at load · nvidia only
+# 16-bit bf16 weights, experts_int8 at load · nvidia only · ~797.11GB
 pip install 'vllm>=0.5.5' && vllm serve ai21labs/AI21-Jamba-Large-1.5 --tensor-parallel-size 8 --max-model-len 225280 --quantization experts_int8
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/jamba-1-5-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

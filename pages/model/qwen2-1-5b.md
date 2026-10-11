@@ -6,33 +6,93 @@
 
 Alibaba · released 2024-06 · 1.54B params · apache-2.0
 
-**score 31.3** ±0.8 · #836 of 934 · from 14 benchmark results across 7 sources
+**score 31.1** ±0.8 · #849 of 949 · from 14 benchmark results across 7 sources
+
+## What it's good at
+
+<sub>● marks Qwen2 1.5B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁●▃▆█▆▅▄▄▃▂▁   #328 of 334*    1.3%      1
+coding          █··········●       #1 of 2*    4.6%      1
+chat &amp; writing  █··········●       #1 of 2*    1.4%      1
+math            ▁●▃▅▆▅▄█▄▁▁▁    #391 of 400     43%      4
+</pre>
+
+<details><summary>agent tasks · #328 of 334 · 1.3% of its score</summary>
+
+Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
+
+<pre>
+test     result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>   28.2%  ▁▁●▁▁▃▅█▅▄▁▁ beats 7/114  medium · avg 52%    1.3%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #1 of 2 · 4.6% of its score</summary>
+
+<pre>
+test             result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">HumanEval (lab)</a>   37.8%  ▁▁▁▁▁▃●▅█▃▂▁ beats 48/190  easy · avg 84%    4.6%  sharp · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #1 of 2 · 1.4% of its score</summary>
+
+<pre>
+test                              result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (lab)</a>   29.0%  ▁●··▂··▂▇█▃▃ beats 1/26   easy · avg 68%    1.4%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · #391 of 400 · 43% of its score</summary>
+
+Beats [Code Llama 7B (base)](codellama-7b.md), [Llama 2 13B Chat](llama-2-13b-chat.md), [DeepSeek-Coder 1.3B Base](deepseek-coder-1-3b-base.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.1 1B-A400M Instruct](granite-3-1-1b-a400m.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       64.1%  ●···█▄▄·▄·▄█ beats 0/8    very easy · avg 92%     18%  sharp · at its level · several runs
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>       43.4%  ●▄·▁▄█▅▅▅███ beats 0/43   very easy · avg 89%     18%  sharp · at its level
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   25.1%  ●····▃·▅·▅·█ beats 0/8    easy · avg 76%         4.4%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                 5.5%  ●·····▃··█▅▅ beats 0/8    medium · avg 37%       2.7%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   41.1%  ●·▁▁▄▄▄▅█▄▂▁ beats 0/53    easy · avg 77%       26%  at its level
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 10.3%  ▁▁●▂▂▃▂█▆▃▅▃ beats 4/61    medium · avg 41%     12%  typical
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (lab)</a>                           52.4%  ▁▁▁▁▁▂▃●█▃▆▃ beats 43/183  easy · avg 80%      3.0%  at its level · small run
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      15.3%  ▁··●▁▂▂▆▅▆█▆ beats 1/70    medium · avg 64%    2.9%  at its level
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   36.8%  ▂●▂▃█▄▃▆▃▅▂▂ beats 10/81   medium · avg 58%    2.6%  blunt · at its level
+<a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (lab)</a>                         63.8%  ▁···▁▁▂▁●▂▃█ beats 9/33    easy · avg 82%      2.4%  at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>     43.4%    32.5                30% ▇▇▇▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>  41.1%    28.3                22% ▇▇▇
-<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     64.1%    34.1   2024-09-18   13% ▇▇
-                        <a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (la…</a>  25.1%    25.8   2024-09-18    3% ▇
-                        <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>               5.5%    26.3   2024-09-18    2% ▇
-<a name="card2-qwen-qwen2-0-5b-instruct"></a>Qwen2-0.5B-Instruct m…  <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">HumanEval (lab)</a>                 37.8%    34.9   2024-06-03    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">GSM8K (lab)</a>                     61.6%    35.5   2024-06-03    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (lab)</a>                      52.4%    36.6   2024-06-03    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (lab)</a>                    63.8%    42.7   2024-06-03    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (l…</a>  29.0%    21.2   2024-06-03    1% ▇
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            10.3%    29.4   2024-10-22   10% ▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  15.3%    25.0   2024-06-19    2% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  36.8%    32.3   2026-09-19    2% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>                         28.2%    28.0   2025-04-13    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 31.3
+source                                    results  share of the score
+<a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>             2   44% ▇▇▇▇▇
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (lab)</a>                                      3   22% ▇▇▇
+<a name="card2-qwen-qwen2-0-5b-instruct"></a><a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">Qwen2-0.5B-Instruct model card (lab)</a>            5   15% ▇▇
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   12% ▇
+<a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>          1    3% ▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    3% ▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 31.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Qwen2-0.5B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
@@ -41,18 +101,73 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://arxiv.org/abs/2407.10671v4): Context length from the maker's technical report.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~1.42GB   31.3
-8-bit q8_0    ~2.35GB   31.3
+download                      size  score
+4-bit q4_k_m               ~1.42GB   31.1
+8-bit q8_0                 ~2.35GB   31.1
+4-bit q4_k_m                  ~1GB   31.1
+8-bit q8_0                  ~1.6GB   31.1
+4-bit mlx-4bit · mac only   ~0.9GB   31.1
+4-bit mlx-8bit · mac only   ~1.6GB   31.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run qwen2:1.5b-instruct-q4_K_M
-# 8-bit q8_0
-ollama run qwen2:1.5b-instruct-q8_0
+# 4-bit q4_k_m · ~1GB
+llama cli -hf Qwen/Qwen2-1.5B-Instruct-GGUF:q4_k_m
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/Qwen2-1.5B-Instruct-GGUF:q4_k_m
+# 8-bit q8_0 · ~1.6GB
+llama cli -hf Qwen/Qwen2-1.5B-Instruct-GGUF:q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/Qwen2-1.5B-Instruct-GGUF:q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~1GB
+lms get https://huggingface.co/Qwen/Qwen2-1.5B-Instruct-GGUF@q4_k_m -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~1.6GB
+lms get https://huggingface.co/Qwen/Qwen2-1.5B-Instruct-GGUF@q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~0.9GB
+lms get https://huggingface.co/mlx-community/Qwen2-1.5B-Instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~1.6GB
+lms get https://huggingface.co/mlx-community/Qwen2-1.5B-Instruct-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~1.42GB
+ollama run qwen2:1.5b-instruct-q4_K_M
+# 8-bit q8_0 · ~2.35GB
+ollama run qwen2:1.5b-instruct-q8_0
+# 4-bit q4_k_m · ~1GB
+ollama run hf.co/Qwen/Qwen2-1.5B-Instruct-GGUF:q4_k_m
+# 8-bit q8_0 · ~1.6GB
+ollama run hf.co/Qwen/Qwen2-1.5B-Instruct-GGUF:q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~0.9GB
+mlx_lm.chat --model mlx-community/Qwen2-1.5B-Instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen2-1.5B-Instruct-4bit
+# 4-bit mlx-8bit · mac only · ~1.6GB
+mlx_lm.chat --model mlx-community/Qwen2-1.5B-Instruct-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen2-1.5B-Instruct-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/qwen2-1-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

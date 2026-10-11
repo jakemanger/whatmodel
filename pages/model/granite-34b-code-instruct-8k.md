@@ -6,30 +6,59 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 45.8** ±1.2 · #556 of 934 · from 11 benchmark results across 4 sources
+**score 45.8** ±1.2 · #563 of 949 · from 11 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Granite 34B Code Instruct (8K) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #302 of 469     66%      7
+</pre>
+
+<details><summary>coding · #302 of 469 · 66% of its score</summary>
+
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   54.8%  ▁·▂▁▂▆▅█▄●▁▂ beats 32/35  medium · avg 64%     23%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   41.9%  ▄▇█▃▄▇▄▁▇●·▁ beats 33/35  medium · avg 49%     17%  at its level
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   50.2%  ▁·▁▁▄██▄█▁▅● beats 32/35  medium · avg 56%     17%  sharp · at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   19.3%  ▃··▁▂▂●▂█▃▄▂ beats 13/47  medium · avg 54%    3.4%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   20.7%  █▂▁▁▂▂▂●▅▅▅▇ beats 20/47  medium · avg 36%    3.2%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   35.4%  ▁▁▁▁▁▁▂▂▃█●▄ beats 33/47  hard · avg 33%      2.4%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   72.3%  ▁▁▁······▁▃● beats 22/47  easy · avg 67%      0.1%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>              35.8%  ▃▂·▆▆█●▆▅▃▃▃ beats 18/33   medium · avg 41%     15%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              43.8%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 40/58   medium · avg 50%     15%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   34.1%  ▃·▁▁●▁▂▅█▇▄▁ beats 18/100  medium · avg 68%    2.2%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   51.5%  ▁▁▁▁▁▁●▂▄█▄▃ beats 20/146  easy · avg 83%      1.7%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  54.8%    45.4   2024-05-07   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  41.9%    47.1   2024-05-07   17% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  50.2%    48.5   2024-05-07   17% ▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         35.8%    46.7   2025-04-01   15% ▇▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         43.8%    46.0   2025-04-01   14% ▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  19.3%    38.9   2025-05-31    4% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  20.7%    44.6   2025-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  35.4%    52.6   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  72.3%    64.1   2025-05-31    0% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  34.1%    33.2   2026-04-17    3% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  51.5%    27.3   2026-04-17    2% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 45.8
+source                                    results  share of the score
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        3   57% ▇▇▇▇▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              2   30% ▇▇▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    9% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    4% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 45.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -39,15 +68,39 @@ prior                   pull toward the middle                   50.0           
 download          size  score
 4-bit q4_k_m  ~21.38GB   45.8
 4-bit q4_0       ~19GB   45.8
+4-bit q4_0       ~19GB   45.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf ibm-granite/granite-34b-code-instruct-8k-GGUF:Q4_K_M
-# 4-bit q4_0
-ollama run granite-code:34b
+# 4-bit q4_k_m · ~21.38GB
+llama cli -hf ibm-granite/granite-34b-code-instruct-8k-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ibm-granite/granite-34b-code-instruct-8k-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~21.38GB
+lms get https://huggingface.co/ibm-granite/granite-34b-code-instruct-8k-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~21.38GB
+ollama run hf.co/ibm-granite/granite-34b-code-instruct-8k-GGUF:Q4_K_M
+# 4-bit q4_0 · ~19GB
+ollama run granite-code:34b
+# 4-bit q4_0 · ~19GB
+ollama run granite-code:34b
+```
 
 [interactive version](https://whatmodel.sh/model/granite-34b-code-instruct-8k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

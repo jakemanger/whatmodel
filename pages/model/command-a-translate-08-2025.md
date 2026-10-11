@@ -6,22 +6,37 @@
 
 Cohere · released 2025-08 · 111B params · cc-by-nc-4.0
 
-**score 51.0** ±4.7 · #409 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 51.1** ±4.7 · #410 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Command A Translate (08-2025) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   56.9%  ●·▂··▂·▄▂·█▆ beats 0/12   medium · avg 64%     55%  at its level · noisy
+<a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                        76.9%  ●·▃·▅▅▃···▃▃ beats 2/10   easy · avg 71%       19%  blunt · at its level
+<a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   70.0%  ▄·▄●▄·▄██▄█▄ beats 2/12   easy · avg 65%       16%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="paper-2609.13916v1-north-small-translate"></a>Cohere  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>  56.9%    44.9   2026-09-12   56% ▇▇▇▇▇▇▇
-        <a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                   76.9%    64.5   2026-09-12   19% ▇▇
-        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>  70.0%    57.1   2026-09-12   15% ▇▇
-prior   pull toward the middle                   50.0                10% ▇
-        weighted average                       = 51.0
+source                         results  share of the score
+<a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere (lab)</a>                         3   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            10% ▇
+weighted average                        = 51.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

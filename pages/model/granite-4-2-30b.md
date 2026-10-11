@@ -6,38 +6,102 @@
 
 IBM · released 2026-08 · 29.3B params · apache-2.0
 
-**score 63.2** ±1.1 · #170 of 934 · from 19 benchmark results across 2 sources
+**score 63.0** ±1.1 · #178 of 949 · from 19 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Granite 4.2 30B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃▆█▆●▄▄▃▂▁    #133 of 334     31%      6
+coding          ▁▁▁▃▆██●▆▄▃▁    #147 of 469     28%      5
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #178 of 466*     18%      2
+math            ▁▂▃▅▆▅▄●▄▁▁▁    #71 of 400*     14%      2
+</pre>
+
+<details><summary>agent tasks · #133 of 334 · 31% of its score</summary>
+
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [watt-tool-70B](watt-tool-70b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Pro (split unspecified)…</a>   33.3%  ▃·▁▁▁▂▂●█▇▃▁ beats 15/55   very hard · avg 8.1%    7.2%  sharp · at its level · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Verified (lab)</a>             57.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 47/131  hard · avg 23%          6.9%  sharp · at its level · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">Terminal-Bench 2.1 (lab)</a>             29.2%  ▁·▁·▁▁●▃▄█▃▇ beats 8/56    very hard · avg 11%     6.5%  at its level · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Multilingual (lab)</a>         41.9%  ▁··▁▃●▅▇█▃▃▁ beats 8/60    hard · avg 20%          4.5%  at its level · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">BFCL V4 (December 2025 archive) (…</a>   61.4%  ▁▁▁▂▇▆▆▆█●▄▂ beats 94/111  medium · avg 39%        3.0%  at its level · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">τ³-bench (lab)</a>                       62.0%  ▁▁▂▁·▁▁·▁▁●█ beats 12/25   medium · avg 37%        2.5%  blunt · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #147 of 469 · 28% of its score</summary>
+
+Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [Devstral Small 2 24B](devstral-small-2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Pro (split unspecified)…</a>   33.3%  ▃·▁▁▁▂▂●█▇▃▁ beats 15/55   very hard · avg 8.1%    7.2%  sharp · at its level · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Verified (lab)</a>             57.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 47/131  hard · avg 23%          6.9%  sharp · at its level · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">LiveCodeBench v6 (window unspecif…</a>   75.8%  ▂▃▄▄▅██●▄▇▃▆ beats 41/65   medium · avg 49%        6.2%  small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Multilingual (lab)</a>         41.9%  ▁··▁▃●▅▇█▃▃▁ beats 8/60    hard · avg 20%          4.5%  at its level · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SciCode (level unspecified) (lab)</a>    38.8%  ▁····▃▄▄▄●▆▂ beats 22/34   hard · avg 19%          3.6%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #178 of 466 · 18% of its score</summary>
+
+Beats [MiniCPM5 2B](minicpm5-2b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+
+<pre>
+test                           result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                 1339.6  ▁▁▁▂▃▃▃▆●▇█▃ beats 177/379  avg 1268           11%  blunt
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">Arena-Hard v2 aggregate (lab)</a>   67.9%  ▁▁··▄▃▁▃●▁▁▇ beats 15/22    hard · avg 27%    6.5%  sharp · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · #71 of 400 · 14% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall.
+
+<pre>
+test                      result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">AIME 2025 (lab)</a>            89.2%  ▁·▁▁▁▂▅▆█▇●▁ beats 112/133  medium · avg 59%    8.9%  sharp · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">HMMT February 2025 (lab)</a>   89.2%  ▁▁▁▃▁▅▅▃●█▁▄ beats 17/31    medium · avg 57%    5.0%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                             result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">GPQA (subset unspecified) (lab)</a>   66.4%  ▂▁▂▂▄▃▆▃▅●▄▃ beats 70/104   hard · avg 42%       10%  sharp · at its level · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">MMLU-Pro (lab)</a>                    77.6%  ▁▁·▁▁▁▃▂▄●█▁ beats 112/188  medium · avg 55%    5.4%  small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">ProfBench (lab)</a>                   42.9%  █·········█● beats 2/2      hard · avg 24%      3.0%  at its level · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">RULER 128k (lab)</a>                  81.4%  ▃··▅▄▇▅█●·▃▃ beats 25/32    medium · avg 58%    2.6%  small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">IFBench prompt-level (lab)</a>        77.2%  █▄▄··●·▄···▄ beats 4/6      medium · avg 62%    2.6%  small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">MMLU-ProX-Lite (lab)</a>              66.6%  █·········█● beats 2/2      hard · avg 33%      2.0%  at its level · small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">RULER 64k (lab)</a>                   90.0%  ▁▁·▂·▂▃▅█▂●▁ beats 24/25    easy · avg 71%      2.0%  small run
+<a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">BIRD (text-to-SQL) (lab)</a>          41.9%  █··········● beats 1/1                             —  not counted yet: no other model in the …
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="card2-ibm-granite-granite-4-2-30b"></a>ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">GPQA (subset unspecified) (la…</a>   66.4%    61.5   2026-09-04   10% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">AIME 2025 (lab)</a>                  89.2%    63.9   2026-09-04   10% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Pro (split unspecif…</a>   33.3%    66.0   2026-09-04    7% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Verified (lab)</a>         57.0%    63.4   2026-09-04    7% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">LiveCodeBench v6 (window unsp…</a>   75.8%    61.6   2026-09-04    7% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">Terminal-Bench 2.1 (lab)</a>         29.2%    60.6   2026-09-04    6% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">MMLU-Pro (lab)</a>                   77.6%    62.1   2026-09-04    6% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">HMMT February 2025 (lab)</a>         89.2%    68.0   2026-09-04    5% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">Arena-Hard v2 aggregate (lab)</a>    67.9%    65.1   2026-09-04    5% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Multilingual (lab)</a>     41.9%    61.0   2026-09-04    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SciCode (level unspecified) (…</a>   38.8%    65.1   2026-09-04    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">BFCL V4 (December 2025 archiv…</a>   61.4%    65.0   2026-09-04    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">ProfBench (lab)</a>                  42.9%    62.5   2026-09-04    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">IFBench prompt-level (lab)</a>       77.2%    61.3   2026-09-04    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">τ³-bench (lab)</a>                   62.0%    69.1   2026-09-04    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">RULER 128k (lab)</a>                 81.4%    66.1   2026-09-04    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">MMLU-ProX-Lite (lab)</a>             66.6%    69.8   2026-09-04    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">RULER 64k (lab)</a>                  90.0%    68.0   2026-09-04    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1339.6    58.7   2026-10-02   11% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 63.2
+source                                    results  share of the score
+<a name="card2-ibm-granite-granite-4-2-30b"></a><a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">ibm-granite/granite-4.2-30b model card …</a>       18   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   11% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 63.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: ibm-granite/granite-4.2-30b model card ([Apache-2.0](../../licenses/ibm-granite--granite-4.2-30b.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -57,18 +121,73 @@ api (DeepInfra) · $0.28/M blended · $0.16 in / $0.65 out per 1M tokens · [dee
 <sub>[price source](https://bertrande.com/en/ai/deepinfra/ibm-granite--granite-4.2-30b): USD per 1M text tokens. DeepInfra standard synchronous API, model ibm-granite/granite-4.2-30b; uncached input, no batch. Tools, cache storage and other modalities excluded. Provider does not specify quantization. Bertrande, https://bertrande.com/en/ai/deepinfra/ibm-granite--granite-4.2-30b; observed 2026-09-22T10:15:02Z. CC BY 4.0; units normalized and model identifier mapped. · [context source](https://bertrande.com/en/ai/deepinfra/ibm-granite--granite-4.2-30b): DeepInfra serving context limit; source parameter context\_length corroborated by provider max\_tokens. This is not an intrinsic training-length claim.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~18.08GB   63.2
-8-bit q8_0    ~35.66GB   63.2
+download                       size  score
+4-bit q4_k_m               ~18.08GB   63.0
+8-bit q8_0                 ~35.66GB   63.0
+4-bit Q4_K_M                ~17.7GB   63.0
+8-bit Q8_0                  ~31.1GB   63.0
+4-bit mlx-4bit · mac only   ~16.5GB   63.0
+4-bit mlx-8bit · mac only   ~31.1GB   63.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run granite4.2:30b
-# 8-bit q8_0
-ollama run granite4.2:30b-q8_0
+# 4-bit Q4_K_M · ~17.7GB
+llama cli -hf ibm-granite/granite-4.2-30b-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ibm-granite/granite-4.2-30b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~31.1GB
+llama cli -hf ibm-granite/granite-4.2-30b-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ibm-granite/granite-4.2-30b-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~17.7GB
+lms get https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~31.1GB
+lms get https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~16.5GB
+lms get https://huggingface.co/ibm-granite/granite-4.2-30b-q4-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~31.1GB
+lms get https://huggingface.co/ibm-granite/granite-4.2-30b-q8-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~18.08GB
+ollama run granite4.2:30b
+# 8-bit q8_0 · ~35.66GB
+ollama run granite4.2:30b-q8_0
+# 4-bit Q4_K_M · ~17.7GB
+ollama run hf.co/ibm-granite/granite-4.2-30b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~31.1GB
+ollama run hf.co/ibm-granite/granite-4.2-30b-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~16.5GB
+mlx_lm.chat --model ibm-granite/granite-4.2-30b-q4-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model ibm-granite/granite-4.2-30b-q4-mlx
+# 4-bit mlx-8bit · mac only · ~31.1GB
+mlx_lm.chat --model ibm-granite/granite-4.2-30b-q8-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model ibm-granite/granite-4.2-30b-q8-mlx
+```
 
 [interactive version](https://whatmodel.sh/model/granite-4-2-30b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

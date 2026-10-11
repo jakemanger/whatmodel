@@ -23,7 +23,12 @@ COCO-30k zero-shot FID ↓ (Kandins…  8.2100 FID  lab          <a href="https:
 
 ## How to run it
 
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
+# fp16 · ~12GB
 uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-2-1', torch_dtype=torch.float16).to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')"
 ```
 

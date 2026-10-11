@@ -6,23 +6,41 @@
 
 AI Forever · released 2023-07 · 1.22B params · apache-2.0
 
-**score 36.5** ±4.6 · #115 of 144 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 36.7** ±4.6 · #115 of 144 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Kandinsky 2.2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source         test                            score  implies  date        weight
-<a name="kandinsky3-original-human-comparison"></a>Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Human text alignment · wins a…</a>  32.0%    32.1   2023-12-11   46% ▇▇▇▇▇▇
-               <a href="https://arxiv.org/html/2312.03511v2">Human visual quality · wins a…</a>  48.0%    38.4   2023-12-11   45% ▇▇▇▇▇
-prior          pull toward the middle                   49.9                 9% ▇
-               weighted average                       = 36.5
+task           vs the others         rank  counts  tests
+text to image  ▂▅●▃▄▄█▃▁▂▁▁   #99 of 126*     91%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #99 of 126 · 91% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2312.03511v2">Human text alignment · wins again…</a>   32.0%  ●·█········█ beats 0/2    medium · avg 58%     46%  at its level · small run
+<a href="https://arxiv.org/html/2312.03511v2">Human visual quality · wins again…</a>   48.0%  █····●·····█ beats 1/2    easy · avg 66%       45%  at its level · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="kandinsky3-original-human-comparison"></a><a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 (lab)</a>                  2   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             9% ▇
+weighted average                        = 36.7
+</pre>
 
 <sub>Licences: Kandinsky 3.0 ([CC BY 4.0](../../licenses/kandinsky3-original-human-comparison-CC-BY-4.0.txt))</sub>
 
@@ -30,14 +48,18 @@ prior          pull toward the middle                   49.9                 9% 
 
 <pre>
 version             needs  score
-fp16 · nvidia only  ~12GB   36.5
+fp16 · nvidia only  ~12GB   36.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~12GB
 uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-2-2-decoder', torch_dtype=torch.float16).to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/kandinsky-2-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

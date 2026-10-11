@@ -6,36 +6,93 @@
 
 Salesforce · released 2025-03 · 3.09B params · cc-by-nc-4.0
 
-**score 57.7** ±3.8 · #255 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.5** ±3.9 · #267 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks xLAM-2-3b-fc-r among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ▁▁▃▆●▆▅▄▄▃▂▁   #197 of 334*     93%      2
+</pre>
+
+<details><summary>agent tasks · #197 of 334 · 93% of its score</summary>
+
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   41.2%  ▁▁▁▂██●▅▆▂▂▂ beats 46/77   hard · avg 32%       65%  at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           64.8%  ▁▁▁▁▁▃▅█▅●▁▁ beats 97/114  medium · avg 52%     28%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  41.2%    56.5   2025-12-16   64% ▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         64.8%    61.8   2025-06-14   30% ▇▇▇▇
-prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 57.7
+source                                    results  share of the score
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 57.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
-download        size  score
-16-bit bf16  ~6.17GB   57.7
+download         size  score
+16-bit bf16   ~6.17GB   57.5
+4-bit Q4_K_M   ~1.9GB   57.5
+8-bit Q8_0     ~3.3GB   57.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Salesforce/xLAM-2-3b-fc-r', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~1.9GB
+llama cli -hf Salesforce/xLAM-2-3b-fc-r-gguf:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Salesforce/xLAM-2-3b-fc-r-gguf:Q4_K_M
+# 8-bit Q8_0 · ~3.3GB
+llama cli -hf Salesforce/xLAM-2-3b-fc-r-gguf:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Salesforce/xLAM-2-3b-fc-r-gguf:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~1.9GB
+lms get https://huggingface.co/Salesforce/xLAM-2-3b-fc-r-gguf@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~3.3GB
+lms get https://huggingface.co/Salesforce/xLAM-2-3b-fc-r-gguf@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~1.9GB
+ollama run hf.co/Salesforce/xLAM-2-3b-fc-r-gguf:Q4_K_M
+# 8-bit Q8_0 · ~3.3GB
+ollama run hf.co/Salesforce/xLAM-2-3b-fc-r-gguf:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~6.17GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Salesforce/xLAM-2-3b-fc-r', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/xlam-2-3b-fc-r) · [JSON](https://whatmodel.sh/api?format=json&all=1)

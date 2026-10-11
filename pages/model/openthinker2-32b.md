@@ -6,25 +6,63 @@
 
 Open Thoughts · released 2025-04 · 32.76B params · apache-2.0
 
-**score 54.4** ±1.4 · #329 of 934 · from 6 benchmark results across 2 sources
+**score 54.4** ±1.4 · #334 of 949 · from 6 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks OpenThinker2 32B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #284 of 466*     24%      2
+math            ▁▂▃▅▆▅●█▄▁▁▁    #169 of 400     49%      3
+</pre>
+
+<details><summary>chat &amp; writing · #284 of 466 · 24% of its score</summary>
+
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>    3.2%  ●·▃▅▅·▃█▆▂▂▂ beats 0/22   very hard · avg 12%     20%  sharp
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   23.6%  ▆▂▂●▂▂▃█▂▃·▂ beats 6/22   hard · avg 19%         4.3%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #169 of 400 · 49% of its score</summary>
+
+Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
+
+<pre>
+test             result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>   58.7%  ▁·▁▁▁▂▅●█▇▅▁ beats 45/133  medium · avg 38%        19%  sharp · at its level
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (lab)</a>   76.7%  ▁▁▁▂▁▃▁▅█●█▃ beats 47/85   medium · avg 56%        18%  sharp · at its level
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>    90.8%  ▁▃▂▃▅▇●▇█▅▂▁ beats 42/84   very easy · avg 86%     12%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>   64.1%  ▁▁▁▁▂▄▅●███▄ beats 125/310  medium · avg 52%     26%  sharp · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-open-thoughts-openthinker2-32b"></a>open-thoughts/OpenThi…  <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>              64.1%    55.2   2025-06-05   26% ▇▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>                 58.7%    57.6   2025-06-05   19% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (lab)</a>                 76.7%    58.2   2025-06-05   17% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>                  90.8%    55.8   2025-06-05   12% ▇
-<a name="arena-hard-auto-readme-v2"></a>Arena-Hard-Auto v2.0-…  <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts …</a>   3.2%    47.6   2025-05-01   22% ▇▇▇
-                        <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writ…</a>  23.6%    52.5   2025-05-01    4% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 54.4
+source                                    results  share of the score
+<a name="card3-open-thoughts-openthinker2-32b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">open-thoughts/OpenThinker2-32B model ca…</a>        4   75% ▇▇▇▇▇▇▇▇▇
+<a name="arena-hard-auto-readme-v2"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard-Auto v2.0-Preview leaderboard</a>        2   24% ▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 54.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: open-thoughts/OpenThinker2-32B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt))</sub>
 
@@ -35,13 +73,73 @@ prior                   pull toward the middle                   50.0           
 <pre>
 download                       size  score
 16-bit bf16 · nvidia only  ~65.53GB   54.4
+4-bit Q4_K_M                ~19.9GB   54.4
+8-bit Q8_0                  ~34.8GB   54.4
+4-bit mlx-4bit · mac only   ~18.4GB   54.4
+4-bit mlx-8bit · mac only   ~34.8GB   54.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-vllm serve open-thoughts/OpenThinker2-32B
+# 4-bit Q4_K_M · ~19.9GB
+llama cli -hf lmstudio-community/OpenThinker2-32B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/OpenThinker2-32B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~34.8GB
+llama cli -hf lmstudio-community/OpenThinker2-32B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/OpenThinker2-32B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~19.9GB
+lms get https://huggingface.co/lmstudio-community/OpenThinker2-32B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~34.8GB
+lms get https://huggingface.co/lmstudio-community/OpenThinker2-32B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~18.4GB
+lms get https://huggingface.co/alexgusevski/OpenThinker2-32B-mlx-4Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~34.8GB
+lms get https://huggingface.co/alexgusevski/OpenThinker2-32B-mlx-8Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~19.9GB
+ollama run hf.co/lmstudio-community/OpenThinker2-32B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~34.8GB
+ollama run hf.co/lmstudio-community/OpenThinker2-32B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~18.4GB
+mlx_lm.chat --model alexgusevski/OpenThinker2-32B-mlx-4Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model alexgusevski/OpenThinker2-32B-mlx-4Bit
+# 4-bit mlx-8bit · mac only · ~34.8GB
+mlx_lm.chat --model alexgusevski/OpenThinker2-32B-mlx-8Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model alexgusevski/OpenThinker2-32B-mlx-8Bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~65.53GB
+vllm serve open-thoughts/OpenThinker2-32B
+```
 
 [interactive version](https://whatmodel.sh/model/openthinker2-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,42 +6,109 @@
 
 Hugging Face · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 45.2** ±2.4 · #578 of 934 · from 3 benchmark results across 2 sources
+**score 44.9** ±1.9 · #588 of 949 · from 4 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Zephyr ORPO 141B-A35B v0.1 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others         rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #341 of 466     74%      3
+</pre>
+
+<details><summary>chat &amp; writing · #341 of 466 · 74% of its score</summary>
+
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1143.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 63/95   avg 1201           34%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1213.0  ▁▁▁▂▃●▃▆▆▇█▃ beats 75/379  avg 1268           33%  blunt
+<a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">IFEval (aggregation unspecified) …</a>   65.1%  ▁▁▃▁●▄▄▆█▃▂▁ beats 27/141  easy · avg 73%    6.7%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                  result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard (lab)</a>   59.0%  ▁▁▁▁▂▄▅●█▃▄▁ beats 63/129  medium · avg 67%     25%  sharp · at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1213.0    43.5   2026-10-02   49% ▇▇▇▇▇▇
-<a name="card-huggingfaceh4-zephyr-orpo-141b-a35b-v0-1"></a>HuggingFaceH4 zephyr-…  <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard (lab)</a>             59.0%    47.4   2024-04-10   38% ▇▇▇▇▇
-                        <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">IFEval (aggregation unspecifi…</a>   65.1%    44.0   2024-04-10   10% ▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 45.2
+source                                    results  share of the score
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   34% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   33% ▇▇▇▇
+<a name="card-huggingfaceh4-zephyr-orpo-141b-a35b-v0-1"></a><a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">HuggingFaceH4 zephyr-orpo-141b-A35b-v0.…</a>        2   31% ▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 44.9
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · HuggingFaceH4 zephyr-orpo-141b-A35b-v0.1 model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · HuggingFaceH4 zephyr-orpo-141b-A35b-v0.1 model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/config.json): Hugging Face H4 official configuration for zephyr-orpo-141b-A35b-v0.1 (pinned commit): max\_position\_embeddings 65536. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
 
 <pre>
-download        size  score
-4-bit q4_0   ~85.1GB   45.2
-8-bit q8_0  ~169.7GB   45.2
+download          size  score
+4-bit q4_0     ~85.1GB   44.9
+8-bit q8_0    ~169.7GB   44.9
+4-bit Q4_K_M   ~85.6GB   44.9
+8-bit Q8_0    ~149.4GB   44.9
+2-bit Q2_K     ~52.1GB   44.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run zephyr:141b-v0.1-q4_0
-# 8-bit q8_0
-ollama run zephyr:141b-v0.1-q8_0
+# 4-bit Q4_K_M · ~85.6GB
+llama cli -hf MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~149.4GB
+llama cli -hf MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF:Q8_0
+# 2-bit Q2_K · ~52.1GB
+llama cli -hf MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF:Q2_K
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF:Q2_K
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~85.6GB
+lms get https://huggingface.co/MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~149.4GB
+lms get https://huggingface.co/MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit Q2_K · ~52.1GB
+lms get https://huggingface.co/MaziyarPanahi/zephyr-orpo-141b-A35b-v0.1-GGUF@Q2_K -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~85.1GB
+ollama run zephyr:141b-v0.1-q4_0
+# 8-bit q8_0 · ~169.7GB
+ollama run zephyr:141b-v0.1-q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/zephyr-orpo-141b-a35b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

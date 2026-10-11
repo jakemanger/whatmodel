@@ -6,23 +6,49 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 43.7** ±1.0 · #623 of 934 · from 4 benchmark results across 2 sources
+**score 43.6** ±1.0 · #628 of 949 · from 4 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Code Llama 70B Python among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #339 of 469     74%      2
+</pre>
+
+<details><summary>coding · #339 of 469 · 74% of its score</summary>
+
+Beats [GLM-4.7-Flash](glm-4-7-flash.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
+
+<pre>
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>    60.4%  ▁█▄▅▇█·●▇▅▄▄ beats 25/42  easy · avg 78%     64%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>   65.6%  ▃▃▃█··▃▅··▅● beats 11/11  easy · avg 73%     10%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   40.1%  ▂▂▃▄▄█▁●▅▃▁▃ beats 26/42  medium · avg 55%     25%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               60.4%    43.4   2024-03-28   42% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       40.1%    43.5   2024-03-28   25% ▇▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         57.3%    43.2   2024-01-31   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              65.6%    46.0   2024-01-31   10% ▇
-prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 43.7
+source                                    results  share of the score
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   67% ▇▇▇▇▇▇▇▇
+<a name="paper-2308.12950v3"></a><a href="https://arxiv.org/html/2308.12950v3">Code Llama: Open Foundation Models for …</a>        2   33% ▇▇▇▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 43.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt))</sub>
 
@@ -31,18 +57,65 @@ prior                   pull toward the middle           50.0                 0%
 <sub>[context source](https://huggingface.co/codellama/CodeLlama-70b-Python-hf/blob/e037619532ec8449a01ecd5b253d065ac81637b6/README.md): Meta official model card: "It was fine-tuned with up to 16k tokens. This variant does not support long context of up to 100k tokens." Stated rounded 16k, as for codellama-70b. The repo's config.json sets max\_position\_embeddings 4096, which the card does not explain. Observed 2026-10-07.</sub>
 
 <pre>
-download       size  score
-4-bit q4_k_m  ~41GB   43.7
-8-bit q8_0    ~73GB   43.7
+download                      size  score
+4-bit q4_k_m                 ~41GB   43.6
+8-bit q8_0                   ~73GB   43.6
+4-bit Q4_K_M               ~41.4GB   43.6
+2-bit Q2_K                 ~25.5GB   43.6
+4-bit mlx-4bit · mac only  ~39.2GB   43.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run codellama:70b-python-q4_K_M
-# 8-bit q8_0
-ollama run codellama:70b-python-q8_0
+# 4-bit Q4_K_M · ~41.4GB
+llama cli -hf TheBloke/CodeLlama-70B-Python-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/CodeLlama-70B-Python-GGUF:Q4_K_M
+# 2-bit Q2_K · ~25.5GB
+llama cli -hf TheBloke/CodeLlama-70B-Python-GGUF:Q2_K
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/CodeLlama-70B-Python-GGUF:Q2_K
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~41.4GB
+lms get https://huggingface.co/TheBloke/CodeLlama-70B-Python-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit Q2_K · ~25.5GB
+lms get https://huggingface.co/TheBloke/CodeLlama-70B-Python-GGUF@Q2_K -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~39.2GB
+lms get https://huggingface.co/mlx-community/CodeLlama-70b-Python-hf-4bit-MLX -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~41GB
+ollama run codellama:70b-python-q4_K_M
+# 8-bit q8_0 · ~73GB
+ollama run codellama:70b-python-q8_0
+# 4-bit Q4_K_M · ~41.4GB
+ollama run hf.co/TheBloke/CodeLlama-70B-Python-GGUF:Q4_K_M
+# 2-bit Q2_K · ~25.5GB
+ollama run hf.co/TheBloke/CodeLlama-70B-Python-GGUF:Q2_K
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~39.2GB
+mlx_lm.chat --model mlx-community/CodeLlama-70b-Python-hf-4bit-MLX
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/CodeLlama-70b-Python-hf-4bit-MLX
+```
 
 [interactive version](https://whatmodel.sh/model/codellama-70b-python) · [JSON](https://whatmodel.sh/api?format=json&all=1)

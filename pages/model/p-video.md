@@ -8,20 +8,50 @@ Pruna · released 2026-02 · closed weights
 
 **score 55.0** ±1.8 · #38 of 93 · from 3 benchmark results across 2 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks P-Video among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1207.3    55.1   2026-09-22   58% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1243.6    55.2   2026-09-22   38% ▇▇▇▇▇
-<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>   25.3%    50.5   2026-06-17    2% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 55.0
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄▆▅●▃▂▂▂▄   #23 of 68*     58%      1
+image to video  ▁▂·▂▅●▅▄▅▆▃▄   #34 of 50*     41%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #23 of 68 · 58% of its score</summary>
+
+Beats [Seedance 1.0 Pro](seedance-1-0-pro.md), [Kling O1 Pro](kling-o1-pro.md) here, though they rank higher overall.
+
+<pre>
+test           result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1207.3  ▂▂▃▆●▆·▆▅▁▂▇ beats 17/41  avg 1147       58%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #34 of 50 · 41% of its score</summary>
+
+Beats [Seedance 1.5 Pro](seedance-1-5-pro.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md), [Hailuo 2.3](hailuo-2-3.md), [Vidu Q2 Turbo](vidu-q2-turbo.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1243.6  ▁▁▁▁▄●▃▆▃▂▄█ beats 14/40  avg 1189           38%  typical
+<a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, best-pr…</a>   25.3%  ●█···█··█·██ beats 0/5    hard · avg 25%    2.4%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-physics-verified"></a><a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified</a>                  1    2% ▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 55.0
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>
 

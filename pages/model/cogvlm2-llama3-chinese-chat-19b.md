@@ -8,22 +8,38 @@ Zhipu AI (THUDM) · released 2024-05 · 19.5B params · cogvlm2
 
 **score 46.6** ±6.7 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks CogVLM2 Llama3 Chinese Chat 19B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source    test                    score  implies  date        weight
-<a name="first-party-zai-cogvlm2-scores"></a>Zhipu AI  <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>           74.7%    39.7   2024-09-03   35% ▇▇▇▇
-          <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (lab)</a>          78.0%    41.3   2024-09-03   28% ▇▇▇
-          <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>           85.0%    66.9   2024-09-03   16% ▇▇
-prior     pull toward the middle           50.0                20% ▇▇
-          weighted average               = 46.6
+task                vs the others         rank  counts  tests
+vision &amp; documents  ▁▁▃▃●▃▅▅▇▇█▃   #159 of 199     80%      3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>vision &amp; documents · #159 of 199 · 80% of its score</summary>
 
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md) here, though they rank higher overall.
 
+<pre>
+test            result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>    74.7%  ▁··▁▁▁▁▁●▅▅█ beats 8/44   easy · avg 81%     35%  blunt · small run
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (lab)</a>   78.0%  ▁·▃▁●▅▂█▅█▁▃ beats 5/37   easy · avg 82%     28%  blunt · small run
+<a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>    85.0%  ▁▁▁▄▅▁▃·▃▃▃● beats 22/24  easy · avg 78%     16%  blunt · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="first-party-zai-cogvlm2-scores"></a><a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">Zhipu AI (lab)</a>                       3   80% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            20% ▇▇
+weighted average                        = 46.6
+</pre>
 
 ## How to run it
 

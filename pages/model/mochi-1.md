@@ -6,26 +6,58 @@
 
 Genmo · released 2024-10 · 10B params · apache-2.0
 
-**score 39.9** ±1.8 · #69 of 93 · from 5 benchmark results across 5 sources
+**score 39.9** ±1.7 · #69 of 93 · from 6 benchmark results across 6 sources
+
+## What it's good at
+
+<sub>● marks Mochi 1 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others       rank  counts  tests
+text to video  ▆▄▃●▆▅█▃▂▂▂▄   #48 of 68     88%      4
+</pre>
+
+<details><summary>text to video · #48 of 68 · 88% of its score</summary>
+
+Trails [LTX-2.3](ltx-2-3.md), [T2V-Turbo-v2](t2v-turbo-v2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1006.6  ●▂▃▆█▆·▆▅▁▂▇ beats 0/41   avg 1147             49%  typical
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1121.3  ▃▃···▅▃·▃▅·● beats 9/10   avg 1229             26%  sharp
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>    41.0%  ▅·▃▅··▃●···▃ beats 8/9    medium · avg 56%    7.0%  at its level
+<a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical cons…</a>   34.0%  █··█·●·····█ beats 2/3    medium · avg 46%    5.7%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                   result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/blob/a064a6c71f5be440641209c07bf2a5ce7a2ff5e4/README.md">Wan-Bench (Wan2.1 release) weight…</a>      63.9%  ●·······█··█ beats 0/2    easy · avg 78%          6.0%  at its level · small run
+<a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>       7.62 / 10  ▅··▅▃···▃··● beats 7/8    easy · avg 7.71 / 10    5.0%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                      1006.6    37.6   2026-09-22   52% ▇▇▇▇▇▇
-<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>     1121.3    42.5   2025-03-22   28% ▇▇▇
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>      41.0%    36.7   2026-01-30    7% ▇
-<a name="visual-t2vphysbench"></a>T2VPhysBench: A First…  <a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical …</a>      34.0%    41.6   2025-05-01    6% ▇
-<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>   7.62 / 10    49.1   2025-02-28    5% ▇
-prior                   pull toward the middle                       49.9                 1% ▇
-                        weighted average                           = 39.9
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   49% ▇▇▇▇▇▇
+<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                                     1   26% ▇▇▇
+<a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        1    7% ▇
+<a name="card2-wan-ai-wan2-1-t2v-14b"></a><a href="https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/blob/a064a6c71f5be440641209c07bf2a5ce7a2ff5e4/README.md">Wan-AI/Wan2.1-T2V-14B model card</a>                1    6% ▇
+<a name="visual-t2vphysbench"></a><a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench: A First-Principles Benchm…</a>        1    6% ▇
+<a name="video-worldmodelbench"></a><a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench: Judging Video Generati…</a>        1    5% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 39.9
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation ([CC-BY-4.0](../../licenses/visual-t2vphysbench.txt)) · WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · Wan-AI/Wan2.1-T2V-14B model card ([Apache-2.0](../../licenses/Wan-AI--Wan2.1-T2V-14B.txt)) · T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation ([CC-BY-4.0](../../licenses/visual-t2vphysbench.txt)) · WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt))</sub>
 
 ## How to run it
 
@@ -39,13 +71,17 @@ bf16 · nvidia only     ~24.5GB   39.9
 default · nvidia only   ~6.5GB   39.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~24.5GB
 python -c "import torch;from diffusers import MochiPipeline;from diffusers.utils import export_to_video;p=MochiPipeline.from_pretrained('genmo/mochi-1-preview',variant='bf16',torch_dtype=torch.bfloat16);p.enable_model_cpu_offload();p.enable_vae_tiling();export_to_video(p('Close-up of a chameleon eye, its scaly skin changing color',num_frames=84).frames[0],'mochi.mp4',fps=30)"
-# default · nvidia only
+# default · nvidia only · ~6.5GB
 python3 ./demos/cli.py --model_dir weights/ --cpu_offload
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/mochi-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

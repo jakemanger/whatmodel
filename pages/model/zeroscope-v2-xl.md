@@ -6,23 +6,39 @@
 
 cerspense · released 2023-06 · cc-by-nc-4.0
 
-**score 23.4** ±2.3 · #92 of 93 · from 4 benchmark results across 1 source
+**score 23.5** ±2.3 · #92 of 93 · from 4 benchmark results across 1 source
+
+## What it's good at
+
+<sub>● marks ZeroScope v2 XL (576w → XL pipeline) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others       rank  counts  tests
+text to video  ●▄▃▄▆▅█▃▂▂▂▄   #67 of 68     98%      4
+</pre>
+
+<details><summary>text to video · #67 of 68 · 98% of its score</summary>
+
+<pre>
+test                                     result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quality</a>     53.61 / 100  ▄····▄█●··▄▄ beats 4/7    very easy · avg 85.14 /…     25%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quality</a>     53.41 / 100  ▄●·····▄·█▄▄ beats 2/7    very easy · avg 87.87 /…     25%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal consist…</a>  58.91 / 100  ▄···▄▄●▄▄··█ beats 3/7    very easy · avg 88.67 /…     24%  at its level
+<a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video align…</a>  51.21 / 100  ●··▂▂·····▂█ beats 0/7    very easy · avg 87.86 /…     23%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                  score  implies  weight
-<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  53.61 / 100    25.0    25% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  53.41 / 100    21.8    25% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  58.91 / 100    24.7    24% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  51.21 / 100    19.5    23% ▇▇▇
-prior                   pull toward the middle                         49.9     2% ▇
-                        weighted average                             = 23.4
+source                                    results  share of the score
+<a name="visual-evalcrafter-2023"></a><a href="https://arxiv.org/html/2310.11440v3">EvalCrafter: original 2023 text-to-vide…</a>        4   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 23.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalCrafter: original 2023 text-to-video evaluations ([CC-BY-4.0](../../licenses/visual-evalcrafter-2023.txt))</sub>
 
@@ -30,14 +46,18 @@ prior                   pull toward the middle                         49.9     
 
 <pre>
 version                                     needs  score
-fp16 + model CPU offload (576w base, th…  ~15.3GB   23.4
+fp16 + model CPU offload (576w base, th…  ~15.3GB   23.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 + model CPU offload (576w base, then XL vid2vid) · nvidia only
+# fp16 + model CPU offload (576w base, then XL vid2vid) · nvidia only · ~15.3GB
 uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from PIL import Image; from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler; from diffusers.utils import export_to_video; p=DiffusionPipeline.from_pretrained('cerspense/zeroscope_v2_576w', torch_dtype=torch.float16); p.scheduler=DPMSolverMultistepScheduler.from_config(p.scheduler.config); p.enable_model_cpu_offload(); p.enable_vae_slicing(); prompt='Darth Vader is surfing on waves'; f=p(prompt, num_inference_steps=40, height=320, width=576, num_frames=36).frames[0]; x=DiffusionPipeline.from_pretrained('cerspense/zeroscope_v2_XL', torch_dtype=torch.float16); x.scheduler=DPMSolverMultistepScheduler.from_config(x.scheduler.config); x.enable_model_cpu_offload(); x.enable_vae_slicing(); v=[Image.fromarray((fr * 255).round().astype('uint8')).resize((1024, 576)) for fr in f]; export_to_video(x(prompt, video=v, strength=0.6).frames[0], 'video_1024.mp4')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/zeroscope-v2-xl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

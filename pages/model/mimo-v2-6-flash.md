@@ -6,32 +6,93 @@
 
 Xiaomi · released 2026-09 · 309B params (15B active) · mit
 
-**score 76.9** ±1.1 · #29 of 934 · from 13 benchmark results across 2 sources
+**score 77.0** ±1.1 · #27 of 949 · from 13 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks MiMo-V2.6-Flash (309B-A15B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others         rank  counts  tests
+agent tasks         ▁▁▃▆█▆▅▄▄●▂▁    #28 of 334     51%      7
+coding              ▁▁▁▃▆██▇▆▄●▁   #16 of 469*     21%      2
+chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #54 of 466*     11%      1
+vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄   #46 of 150*    7.5%      1
+</pre>
+
+<details><summary>agent tasks · #28 of 334 · 51% of its score</summary>
+
+Beats [GPT-5.4](gpt-5-4.md), [Muse Spark 1.3](muse-spark-1-3.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
+
+<pre>
+test                                    result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0035 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 19/49  avg -0.312 IPS           22%  sharp
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 4.0 (lab)</a>                 28.8%  ▁·▁··▁▇▇●██▃ beats 15/30  very hard · avg 0.4%     11%  sharp · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 2.1 (lab)</a>                 87.6%  ▁·▁·▁▁▄▃▄█▃● beats 51/56  hard · avg 21%          6.4%  small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">OSWorld-Verified (lab)</a>                   80.8%  █▄·▂▆▂▄▂▆▄●█ beats 19/25  hard · avg 25%          4.4%  small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Agents' Last Exam (metric/harness…</a>       27.6%  ▂·▂·●▂···▂▄▄ beats 5/11   very hard · avg 6.4%    3.1%  at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Toolathlon-Verified (lab)</a>                73.6%  ▂·▂▂▅▃···▂●█ beats 9/18   hard · avg 31%          1.9%  blunt · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>            67.9%  ▂····▁▁▁▆●█▆ beats 16/28  hard · avg 18%          1.4%  at its level · noisy · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #16 of 469 · 21% of its score</summary>
+
+Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
+
+<pre>
+test                           result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>      1635.7  ▁▂▄▃▅█▄▇▆●▁▁ beats 105/119  avg 981            19%  sharp
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>   67.9%  ▂····▁▁▁▆●█▆ beats 16/28    hard · avg 18%    1.4%  at its level · noisy · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #54 of 466 · 11% of its score</summary>
+
+Trails [Gemma 4 31B](gemma-4-31b.md), [Claude Sonnet 4.5](claude-sonnet-4-5.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1451.8  ▁▁▁▂▃▃▃▆▆▇●▃ beats 316/379  avg 1268       11%  blunt
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #46 of 150 · 7.5% of its score</summary>
+
+Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [Kimi K2.5](kimi-k2-5.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1247.5  ▁▁▂▂▂▂▄▅▅▆●█ beats 100/145  avg 1068      7.5%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                          result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">AutomationBench v1.0.6 (lab)</a>   52.3%  ▃····▃·▃▃··● beats 5/6    very hard · avg 5.6%    4.2%  at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">SEC-Bench Pro (pass@1) (lab)</a>   47.5%  ▄··▄···●·▄·█ beats 2/5    very hard · avg 6.4%    3.7%  at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">ExploitGym (pass@1) (lab)</a>       6.0%  ▄···▄··▄●··█ beats 3/5    very hard · avg 0.6%    2.9%  noisy · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                 score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0035 IPS    76.1   2026-10-08   21% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1635.7    79.7   2026-10-06   19% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1451.8    72.1   2026-10-02   11% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>      1247.5    72.0   2026-10-02    8% ▇
-<a name="first-party-xiaomi"></a>Xiaomi MiMo official …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 4.0 (lab)</a>             28.8%    78.9   2026-09-21   13% ▇▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 2.1 (lab)</a>             87.6%    80.3   2026-09-21    7% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">OSWorld-Verified (lab)</a>               80.8%    79.1   2026-09-21    4% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">SEC-Bench Pro (pass@1) (lab)</a>         47.5%    75.9   2026-09-21    4% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">AutomationBench v1.0.6 (lab)</a>         52.3%    81.9   2026-09-21    4% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">ExploitGym (pass@1) (lab)</a>             6.0%    72.2   2026-09-21    3% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Agents' Last Exam (metric/har…</a>       27.6%    75.4   2026-09-21    3% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Toolathlon-Verified (lab)</a>            73.6%    81.2   2026-09-21    2% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>        67.9%    82.8   2026-09-21    2% ▇
-prior                   pull toward the middle                        50.0                 1% ▇
-                        weighted average                            = 76.9
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   60% ▇▇▇▇▇▇▇
+<a name="first-party-xiaomi"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Xiaomi MiMo official model cards and do…</a>        9   39% ▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 77.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -43,17 +104,36 @@ api (Xiaomi MiMo) · $0.18/M blended · $0.14 in / $0.28 out per 1M tokens · [m
 
 <pre>
 download          size  score
-2-bit q2_k   ~127.77GB   76.9
-MXFP4 mxfp4  ~170.12GB   76.9
+2-bit q2_k   ~127.77GB   77.0
+MXFP4 mxfp4  ~170.12GB   77.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 2-bit q2_k
-llama-server -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF:Q2_K
-# MXFP4 mxfp4
-llama-server -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF:MXFP4
+# 2-bit q2_k · ~127.77GB
+llama cli -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF:Q2_K
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF:Q2_K
+# MXFP4 mxfp4 · ~170.12GB
+llama cli -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF:MXFP4
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF:MXFP4
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 2-bit q2_k · ~127.77GB
+lms get https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF@Q2_K -y
+# then run lms ls to see its name, and lms chat followed by that name
+# MXFP4 mxfp4 · ~170.12GB
+lms get https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF@MXFP4 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
 
 [interactive version](https://whatmodel.sh/model/mimo-v2-6-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

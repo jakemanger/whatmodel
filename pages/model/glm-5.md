@@ -6,79 +6,165 @@
 
 Z.ai · released 2026-02 · 744B params (40B active) · mit
 
-**score 69.9** ±0.6 · #86 of 934 · from 58 benchmark results across 16 sources
+**score 69.8** ±0.6 · #89 of 949 · from 59 benchmark results across 17 sources
+
+## What it's good at
+
+<sub>● marks GLM-5 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others         rank  counts  tests
+agent tasks     ▁▁▃▆█▆▅▄●▃▂▁    #72 of 334     38%     18
+coding          ▁▁▁▃▆██▇▆●▃▁    #71 of 469     20%      6
+chat &amp; writing  ▁▁▁▄▆▅▆█▆▆●▂   #44 of 466*    3.0%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁    #70 of 400     23%     13
+web search      ▂▂▂▆●█▃▃▁▁·▁     #53 of 81    6.0%      4
+</pre>
+
+<details><summary>agent tasks · #72 of 334 · 38% of its score</summary>
+
+Beats [GPT-5 Pro](gpt-5-pro.md), [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   72.1%  ▁··▁·▁▂▁●█▄▁ beats 10/29  hard · avg 19%          8.3%  sharp · at its level · several runs
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">MCP-Atlas (public set) (lab)</a>         67.8%  ▄······▄▄▄▄● beats 5/6    hard · avg 25%          5.2%  at its level · several runs
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">Terminal-Bench 2.0 (lab)</a>             56.2%  ▂▂▅▅███●▆▂▃▃ beats 23/36  very hard · avg 14%     3.0%  at its level · small run · several runs
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp (lab)</a>                     62.0%  ▂·▄▁▂▃▆▄●▂▃▄ beats 27/42  hard · avg 22%          2.2%  at its level · small run · several runs
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">SWE-bench Pro (split unspecified)…</a>   55.1%  ▃·▁▁▁▂▂▃●▇▃▁ beats 31/55  very hard · avg 9.6%    2.0%  sharp · at its level · small run
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ³-bench banking_knowledge (v1.0.…</a>    9.8%  ●▃▂▃·▆▃▂█▅▅▂ beats 1/25   very hard · avg 4.1%    1.8%  typical
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">Toolathlon (Tool Decathlon) (lab)</a>    38.0%  ▂▂▄▂▄▄●▂█▆██ beats 10/27  very hard · avg 12%     1.6%  at its level · small run · several runs
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp with context managemen…</a>   75.9%  ▅·▅▃·●▃·█▅·▃ beats 5/14   medium · avg 43%        1.5%  small run · several runs
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ³-bench airline (tau2-bench ≥ v1…</a>   82.5%  ▃······▃·▃●▃ beats 3/6    medium · avg 49%        1.5%  typical
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">τ²-bench aggregate (lab)</a>             89.7%  ▁▁▁·▂▂▄▃▃▅█● beats 36/37  medium · avg 48%        1.5%  small run
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   23.4%  ▃··▃·▃█●▃▃▃█ beats 8/14   very hard · avg 2.3%    1.4%  sharp · at its level · noisy
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">BrowseComp-ZH (lab)</a>                  72.7%  ▁▁▁▁▁▃·▁▄▅▄● beats 23/23  hard · avg 22%          1.4%  at its level · small run
+<a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test Wri…</a>   24.0%  ▄·▄··●···▄·█ beats 3/6    very hard · avg 6.1%    1.4%  typical
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ³-bench retail (tau2-bench ≥ v1.…</a>   73.7%  ▄●·█··▄·▄··▄ beats 1/6    medium · avg 46%        1.3%  typical
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ³-bench telecom (tau2-bench ≥ v1…</a>   86.8%  ●·▄█▄······▄ beats 1/6    medium · avg 62%        1.2%  typical
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Multilingual (lab)</a>         73.3%  ▁··▁▃▂▅▇●▃▃▁ beats 39/60  hard · avg 28%          1.2%  at its level · small run
+<a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam with tools (…</a>   50.4%  ▂▂▂▁▄▂▃▆●▇▂▆ beats 31/54  hard · avg 16%          0.8%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">τ³-bench (lab)</a>                       69.2%  ▁▁▂▁·▁▁·▁▁▂● beats 18/25  medium · avg 36%        0.6%  blunt · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #71 of 469 · 20% of its score</summary>
+
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   72.1%  ▁··▁·▁▂▁●█▄▁ beats 10/29   hard · avg 19%          8.3%  sharp · at its level · several runs
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1434.0  ▁▂▄▃▅●▄▇▆▄▁▁ beats 53/119  avg 981                 5.3%  sharp
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">SWE-bench Pro (split unspecified)…</a>   55.1%  ▃·▁▁▁▂▂▃●▇▃▁ beats 31/55   very hard · avg 9.6%    2.0%  sharp · at its level · small run
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   23.4%  ▃··▃·▃█●▃▃▃█ beats 8/14    very hard · avg 2.3%    1.4%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test Wri…</a>   24.0%  ▄·▄··●···▄·█ beats 3/6     very hard · avg 6.1%    1.4%  typical
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Multilingual (lab)</a>         73.3%  ▁··▁▃▂▅▇●▃▃▁ beats 39/60   hard · avg 28%          1.2%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #44 of 466 · 3.0% of its score</summary>
+
+Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1457.6  ▁▁▁▂▃▃▃▆▆▇●▃ beats 329/379  avg 1268      3.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #70 of 400 · 23% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [EXAONE 4.5 33B](exaone-4-5-33b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   41.4%  ▁▁▁▁█●▄▃▁▃·▃ beats 14/24    very hard · avg 9.1%    3.7%  at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 2026 (3…</a>   45.8%  ●▃▅·█▃▃·▅·▃▃ beats 2/14     very hard · avg 15%     3.5%  at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2026 …</a>   54.3%  ▂··▄▂▄●▆▆▄▄█ beats 9/23     hard · avg 22%          2.8%  at its level
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">AIME 2026 (lab)</a>                      95.4%  ▁▁▁▂▁▂▆█●▂·▁ beats 41/49    medium · avg 61%        2.1%  sharp · maxed out · small run
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">HMMT February 2026 (lab)</a>             82.8%  ▃▃▂▃·██▆●▅▃▅ beats 22/33    hard · avg 30%          2.1%  sharp · small run
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December 2025…</a>   38.2%  ▃·▃●█▁·▄·▁▁▁ beats 5/18     hard · avg 19%          1.8%  at its level
+<a href="https://arxiv.org/html/2602.15763v2">IMO-AnswerBench (lab)</a>                82.5%  ▁▁·▁▁▁▄▅●▄▂▃ beats 28/42    medium · avg 37%        1.6%  small run
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             80.0%  ▃▃▄▃▃▃▇●█▃▂▅ beats 113/193  very hard · avg 8.5%    1.5%  sharp · noisy
+<a href="https://arxiv.org/html/2602.15763v2">HMMT February 2025 (lab)</a>             97.9%  ▁▁▁▃▁▅▅▃██▁● beats 29/31    easy · avg 77%          1.5%  maxed out · small run
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2026 …</a>   12.1%  █·●█▂·▂▂···▂ beats 6/14     very hard · avg 0.8%    1.0%  sharp · noisy
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   11.7%  ▃▂▂▃●▃▂·▃··▂ beats 8/16     very hard · avg 0.7%    0.9%  sharp · noisy
+<a href="https://arxiv.org/html/2602.15763v2">HMMT November 2025 (lab)</a>             96.9%  ▁▁····▁▅▃█▇● beats 23/23    easy · avg 74%          0.9%  maxed out · small run
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">AIME 2026 I (lab)</a>                    92.7%  ●··········█ beats 0/1                                 —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>web search · #53 of 81 · 6.0% of its score</summary>
+
+Beats [Kimi K2.6](kimi-k2-6.md), [GPT-5 Pro](gpt-5-pro.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp (lab)</a>                     62.0%  ▂·▄▁▂▃▆▄●▂▃▄ beats 27/42  hard · avg 22%      2.2%  at its level · small run · several runs
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp with context managemen…</a>   75.9%  ▅·▅▃·●▃·█▅·▃ beats 5/14   medium · avg 43%    1.5%  small run · several runs
+<a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">BrowseComp-ZH (lab)</a>                  72.7%  ▁▁▁▁▁▃·▁▄▅▄● beats 23/23  hard · avg 22%      1.4%  at its level · small run
+<a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam with tools (…</a>   50.4%  ▂▂▂▁▄▂▃▆●▇▂▆ beats 31/54  hard · avg 16%      0.8%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (16)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         87.8%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 159/208  hard · avg 40%          8.7%  sharp · several runs
+<a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam (lab)</a>           30.5%  ▁▁▁▃▆▆▇█●▆▁▃ beats 72/104   very hard · avg 5.5%    2.7%  at its level · small run · several runs
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/glm-5">ARC-AGI-2 public evaluation set (…</a>    5.4%  █··▂●▁▃▁▃·▁▃ beats 12/24    very hard · avg 0.3%    2.4%  sharp · noisy
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/glm-5">ARC-AGI-1 public evaluation set (…</a>   58.6%  ▁·▇▃▁·●▇▁·▇▃ beats 11/27    very hard · avg 4.1%    2.3%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   35.9%  ▁▁▂▁▃▄█▆●▅▂▃ beats 28/39    very hard · avg 22%     2.2%  blunt · at its level
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1307.3  ▁·▂▁▄▅▅▃●▄▁▁ beats 49/62    avg 1044                1.8%  typical
+<a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                        42.6%  ▃·▅▅█·▅●▅▃▃▃ beats 10/17    very hard · avg 11%     1.6%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                10.0%  █▁▁▁●▂▁▄▂▂▁▁ beats 55/135   very hard · avg 5.9%    1.6%  sharp · noisy
+<a href="https://arxiv.org/html/2602.15763v2">LongBench v2 (lab)</a>                   64.5%  ▂·▁·▂▂▁▃▄▁█● beats 27/28    very hard · avg 35%     1.4%  at its level · small run
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">CyberGym (lab)</a>                       48.3%  ▄···●··▄█▄█▄ beats 1/8      hard · avg 19%          1.3%  at its level · small run · several runs
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   46.0%  ▁▁·▁▂▂▄█●▅▄▄ beats 40/66    hard · avg 31%          1.2%  typical
+<a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   41.5%  ▆▂·▄●·▂▂·▄▄▂ beats 7/16     very hard · avg 36%     1.1%  blunt · at its level
+<a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">NL2Repo (lab)</a>                        35.9%  ▂▂·▂▂▄●▆▆▂▄▆ beats 8/21     very hard · avg 10%     1.1%  at its level · small run
+<a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problems, A…</a>    9.6%  █·█●███··█·█ beats 2/7      very hard · avg 4.1%    0.5%  typical
+<a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Avg@3)</a>    63.1%  ▄··▄·▄·▄●█·▄ beats 4/7      medium · avg 36%        0.4%  blunt · at its level
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   89.9%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 44/98    very easy · avg 90%     0.0%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="card-zai-org--glm-5.1"></a>zai-org/GLM-5.1 model…  <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">GPQA Diamond (lab)</a>               86.0%    69.9   2026-09-25    3% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">AIME 2026 (lab)</a>                  95.4%    71.5   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">HMMT February 2026 (lab)</a>         82.8%    70.0   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">SWE-bench Pro (split unspecif…</a>   55.1%    71.2   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">Terminal-Bench 2.0 (lab)</a>         56.2%    70.1   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">Humanity's Last Exam (lab)</a>       30.5%    71.9   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">NL2Repo (lab)</a>                    35.9%    68.4   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp (lab)</a>                 62.0%    71.6   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">MCP-Atlas (public set) (lab)</a>     69.2%    70.9   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">Toolathlon (Tool Decathlon) (…</a>   38.0%    69.8   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp with context manag…</a>   75.9%    70.0   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">CyberGym (lab)</a>                   48.3%    60.2   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">τ³-bench (lab)</a>                   69.2%    75.2   2026-09-25    1% ▇
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   41.4%    70.9   2026-09-11    4% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>   45.8%    67.8   2026-09-11    4% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   54.3%    67.7   2026-09-11    3% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   38.2%    65.2   2026-09-11    2% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>   12.1%    70.2   2026-09-11    1% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>   11.7%    70.4   2026-09-11    1% ▇
-<a name="report-2602.15763v2"></a>GLM-5 Team              <a href="https://arxiv.org/html/2602.15763v2">GPQA Diamond (lab)</a>               86.0%    68.7   2026-02-24    3% ▇
-                        <a href="https://arxiv.org/html/2602.15763v2">MCP-Atlas (public set) (lab)</a>     67.8%    73.0   2026-02-24    2% ▇
-                        <a href="https://arxiv.org/html/2602.15763v2">IMO-AnswerBench (lab)</a>            82.5%    69.4   2026-02-24    2% ▇
-                        <a href="https://arxiv.org/html/2602.15763v2">HMMT February 2025 (lab)</a>         97.9%    76.4   2026-02-24    2% ▇
-                        <a href="https://arxiv.org/html/2602.15763v2">LongBench v2 (lab)</a>               64.5%    71.3   2026-02-24    1% ▇
-                        <a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam (lab)</a>       30.5%    72.4   2026-02-24    1% ▇
-                        <a href="https://arxiv.org/html/2602.15763v2">BrowseComp (lab)</a>                 62.0%    73.9   2026-02-24    1% ▇
-                        <a href="https://arxiv.org/html/2602.15763v2">HMMT November 2025 (lab)</a>         96.9%    79.5   2026-02-24    1% ▇
-                        <a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam with too…</a>   50.4%    74.4   2026-02-24    1% ▇
-                        <a href="https://arxiv.org/html/2602.15763v2">Toolathlon (Tool Decathlon) (…</a>   39.2%    73.0   2026-02-24    1% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               72.1%    71.0   2026-02-15    7% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     87.8%    72.1   2026-02-12    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            10.0%    64.7   2026-02-12    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         80.0%    67.4   2026-02-12    1% ▇
-<a name="card2-zai-org-glm-5"></a>zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">MCP-Atlas (public set) (lab)</a>     67.8%    73.0   2026-08-11    2% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Verified (lab)</a>         77.8%    71.3   2026-08-11    2% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">BrowseComp-ZH (lab)</a>              72.7%    73.2   2026-08-11    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">τ²-bench aggregate (lab)</a>         89.7%    73.2   2026-08-11    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">Terminal-Bench 2.0 (lab)</a>         56.2%    73.4   2026-08-11    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Multilingual (lab)</a>     73.3%    73.0   2026-08-11    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">BrowseComp with context manag…</a>   75.9%    72.1   2026-08-11    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">CyberGym (lab)</a>                   43.2%    64.3   2026-08-11    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1434.0    70.5   2026-10-01    5% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1457.6    72.8   2026-10-02    3% ▇
-<a name="tau2-bench-leaderboard-sierra"></a>τ²/τ³-bench leaderboa…  <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ³-bench banking_knowledge (v…</a>    9.8%    61.6   2026-02-27    2% ▇
-                        <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ³-bench airline (tau2-bench …</a>   82.5%    73.3   2026-02-27    2% ▇
-                        <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ³-bench retail (tau2-bench ≥…</a>   73.7%    67.6   2026-02-27    1% ▇
-                        <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ³-bench telecom (tau2-bench …</a>   86.8%    64.7   2026-02-27    1% ▇
-<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/glm-5">ARC-AGI-1 public evaluation s…</a>   58.6%    65.8   2026-06-04    4% ▇
-                        <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/glm-5">ARC-AGI-2 public evaluation s…</a>    5.4%    64.9   2026-06-04    1% ▇
-<a name="paper-2606.05104v2-kina"></a>Knowledge Index of No…  <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah…</a>   35.9%    67.6   2026-06-04    2% ▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1307.3    72.3   2026-05-10    2% ▇
-<a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                    42.6%    72.8   2026-05-11    2% ▇
-<a name="paper-2605.08366v1-swe-atlas"></a>SWE Atlas: Benchmarki…  <a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test…</a>   24.0%    70.8   2026-05-08    1% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   46.0%    53.6   2026-03-16    1% ▇
-<a name="paper-2610.04118v1-longsocialbench"></a>LongSocialBench: Do L…  <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context…</a>   41.5%    60.1   2026-10-02    1% ▇
-<a name="paper-2605.09063v3"></a>Soohak: A Mathematici…  <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>    9.6%    63.9   2026-05-19    1% ▇
-                        <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Av…</a>   63.1%    71.4   2026-05-19    0% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   89.9%    60.8   2026-09-22    0% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 69.9
+source                                    results  share of the score
+<a name="card-zai-org--glm-5.1"></a><a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">zai-org/GLM-5.1 model card (lab)</a>               13   18% ▇▇
+<a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        6   14% ▇▇
+<a name="report-2602.15763v2"></a><a href="https://arxiv.org/html/2602.15763v2">GLM-5 Team (lab)</a>                               10   14% ▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">Epoch AI</a>                                        4   13% ▇▇
+<a name="card2-zai-org-glm-5"></a><a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">zai-org/GLM-5 model card (lab)</a>                  8   11% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2    8% ▇
+<a name="tau2-bench-leaderboard-sierra"></a><a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ²/τ³-bench leaderboard: Sierra's own e…</a>        4    6% ▇
+<a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/glm-5">ARC Prize Foundation model_baseline out…</a>        2    5% ▇
+<a name="paper-2606.05104v2-kina"></a><a href="https://arxiv.org/html/2606.05104v2">Knowledge Index of Noah's Ark</a>                   1    2% ▇
+<a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1    2% ▇
+<a name="paper-2605.10912v1-wildclawbench"></a><a href="https://arxiv.org/html/2605.10912v1">WildClawBench: A Benchmark for Real-Wor…</a>        1    2% ▇
+<a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                                 1    1% ▇
+<a name="paper-2605.08366v1-swe-atlas"></a><a href="https://arxiv.org/html/2605.08366v1">SWE Atlas: Benchmarking Coding Agents B…</a>        1    1% ▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1    1% ▇
+<a name="paper-2610.04118v1-longsocialbench"></a><a href="https://arxiv.org/html/2610.04118v1">LongSocialBench: Do Long-Context LLMs U…</a>        1    1% ▇
+<a name="paper-2605.09063v3"></a><a href="https://arxiv.org/html/2605.09063v3">Soohak: A Mathematician-Curated Benchma…</a>        2    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 69.8
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: zai-org/GLM-5.1 model card ([mit](../../licenses/zai-org--GLM-5.1.txt)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · GLM-5 Team ([CC BY 4.0](../../licenses/report-2602.15763v2.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · zai-org/GLM-5 model card ([MIT](../../licenses/zai-org--GLM-5.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SWE Atlas: Benchmarking Coding Agents Beyond Issue Resolution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · LongSocialBench: Do Long-Context LLMs Understand Online Discussion Threads? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: zai-org/GLM-5.1 model card ([mit](../../licenses/zai-org--GLM-5.1.txt)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · GLM-5 Team ([CC BY 4.0](../../licenses/report-2602.15763v2.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · zai-org/GLM-5 model card ([MIT](../../licenses/zai-org--GLM-5.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vibe Code Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SWE Atlas: Benchmarking Coding Agents Beyond Issue Resolution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · LongSocialBench: Do Long-Context LLMs Understand Online Discussion Threads? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 <details><summary>Not counted (1)</summary>
 
@@ -96,21 +182,58 @@ api (Z.AI) · $1.55/M blended · $1 in / $3.2 out per 1M tokens · [docs.z.ai](h
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-5.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/zhipuai/glm-5.toml)</sub>
 
 <pre>
-download              size  score
-4-bit ud-q4_k_xl  ~446.9GB   69.9
-2-bit ud-q2_k_xl  ~223.7GB   69.9
-1-bit ud-iq1_s    ~112.1GB   69.9
+download                       size  score
+4-bit ud-q4_k_xl           ~446.9GB   69.8
+2-bit ud-q2_k_xl           ~223.7GB   69.8
+1-bit ud-iq1_s             ~112.1GB   69.8
+4-bit mlx-4bit · mac only  ~418.6GB   69.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit ud-q4_k_xl
-llama-server -hf unsloth/GLM-5-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/GLM-5-GGUF:UD-Q2_K_XL
-# 1-bit ud-iq1_s
-llama-server -hf unsloth/GLM-5-GGUF:UD-IQ1_S
+# 4-bit ud-q4_k_xl · ~446.9GB
+llama cli -hf unsloth/GLM-5-GGUF:UD-Q4_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/GLM-5-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl · ~223.7GB
+llama cli -hf unsloth/GLM-5-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/GLM-5-GGUF:UD-Q2_K_XL
+# 1-bit ud-iq1_s · ~112.1GB
+llama cli -hf unsloth/GLM-5-GGUF:UD-IQ1_S
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/GLM-5-GGUF:UD-IQ1_S
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit ud-q4_k_xl · ~446.9GB
+lms get https://huggingface.co/unsloth/GLM-5-GGUF@UD-Q4_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit ud-q2_k_xl · ~223.7GB
+lms get https://huggingface.co/unsloth/GLM-5-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 1-bit ud-iq1_s · ~112.1GB
+lms get https://huggingface.co/unsloth/GLM-5-GGUF@UD-IQ1_S -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~418.6GB
+lms get https://huggingface.co/mlx-community/GLM-5-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~418.6GB
+mlx_lm.chat --model mlx-community/GLM-5-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/GLM-5-4bit
+```
 
 [interactive version](https://whatmodel.sh/model/glm-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

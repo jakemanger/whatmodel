@@ -6,50 +6,75 @@
 
 OpenAI · released 2025-03 · proprietary
 
-**score 53.3** ±1.2 · #81 of 160 · from 29 benchmark results across 11 sources
+**score 53.2** ±1.2 · #83 of 162 · from 29 benchmark results across 11 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks GPT-4o Transcribe among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card2-qwen-qwen3-asr-1-7b"></a>Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice English WER (ver…</a>   9.1%    57.1   2026-01-30    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Multilingual LibriSpeech Engl…</a>   5.1%    57.3   2026-01-30    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">AISHELL-2 test error rate</a>        4.2%    54.6   2026-01-30    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_net error ra…</a>  15.3%    45.5   2026-01-30    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">VoxPopuli English test WER</a>      10.3%    56.9   2026-01-30    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-other WER</a>       3.8%    57.6   2026-01-30    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">GigaSpeech test WER</a>             25.5%    40.1   2026-01-30    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice Mandarin error r…</a>   6.3%    60.8   2026-01-30    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_meeting erro…</a>  32.3%    40.4   2026-01-30    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS Mandarin test error ra…</a>   2.4%    64.3   2026-01-30    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-clean WER</a>       1.4%    62.4   2026-01-30    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS English test WER</a>          2.4%    73.7   2026-01-30    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">TED-LIUM test WER (short-form)</a>   7.7%    37.8   2026-01-30    0% ▇
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  38.9%    52.1   2025-11-18   10% ▇
-                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  64.4%    46.6   2025-11-18    9% ▇
-<a name="speech-stt-pipecat-bsd2"></a>Pipecat STT Benchmark…  <a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · poole…</a>   2.9%    56.3   2026-10-01   13% ▇▇
-<a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  50.5%    59.6   2026-06-27    3% ▇
-                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 12 English …</a>  24.8%    51.6   2026-06-27    3% ▇
-                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 6 English a…</a>  39.9%    46.4   2026-06-27    2% ▇
-<a name="speech-stt-qwen-audio3-asr-report"></a>Qwen-Audio-3.0-ASR Te…  <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · C…</a>   6.6%    49.2   2026-09-09    5% ▇
-                        <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · E…</a>   3.7%    57.3   2026-09-09    3% ▇
-<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>  28.7%    53.0   2026-09-24    7% ▇
-<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   1.5%    66.3   2026-07-19    3% ▇
-                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   9.5%    30.1   2026-07-19    1% ▇
-                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  18.6%    43.1   2026-07-19    1% ▇
-<a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>  17.3%    50.8   2026-05-19    6% ▇
-<a name="speech-stt-perle-cs-report"></a>Benchmarking Commerci…  <a href="https://arxiv.org/pdf/2605.19069v3">Perle code-switching benchmar…</a>  38.6%    56.2   2026-05-22    2% ▇
-<a name="speech-stt-danish-asr-ryeai-mit"></a>Danish Speech-to-Text…  <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean…</a>  26.1%    55.2   2026-10-04    2% ▇
-<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1    <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   4.0%    65.8   2026-07-05    2% ▇
-prior                   pull toward the middle                   49.8                 1% ▇
-                        weighted average                       = 53.3
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (29)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty  counts  why
+<a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · pooled se…</a>    2.9%  ▃·▃●·▅▅·▃▅██ beats 3/16    avg 4.8%       14%  typical
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-region …</a>   38.9%  ▂····●···▂▆█ beats 1/11    avg 46%        10%  typical
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parliamen…</a>   64.4%  ▂●····▂·▅·▃█ beats 1/12    avg 52%       8.7%  sharp
+<a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpeech …</a>   28.7%  ●·▄··▄··▄·▄▄ beats 1/6     avg 37%       6.9%  sharp
+<a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition suite …</a>   17.3%  ●····█▄▄···▄ beats 0/5     avg 19%       6.0%  typical
+<a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · Chine…</a>    6.6%  ●········▄·█ beats 0/3     avg 6.7%      4.7%  sharp
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Multilingual LibriSpeech English …</a>    5.1%  █······●·█·█ beats 1/3     avg 7.7%      3.4%  typical
+<a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · Engli…</a>    3.7%  ●···█··█···█ beats 0/3     avg 5.6%      3.3%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_net error rate</a>      15.3%  ●···█·····██ beats 0/3     avg 13%       3.2%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">AISHELL-2 test error rate</a>             4.2%  █··●·····█·█ beats 1/3     avg 5.7%      3.2%  typical
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSpeech…</a>    1.5%  ▃·····▃▅█▃▅● beats 11/11   avg 3.4%      3.2%  typical
+<a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic dialec…</a>   50.5%  █··●·██··█·█ beats 1/5     avg 79%       3.1%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-other WER</a>            3.8%  ▁▁▁▂▅▃▅▄●▂▂▁ beats 43/54   avg 5.5%      2.8%  typical
+<a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 12 English doma…</a>   24.8%  ●·······▄·█▄ beats 0/4     avg 28%       2.7%  typical
+<a href="https://arxiv.org/pdf/2605.19069v3">Perle code-switching benchmark · …</a>   38.6%  ●··········▄ beats 1/2     avg 55%       2.5%  small run
+<a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 6 English accen…</a>   39.9%  ●······▄··▄█ beats 0/4     avg 36%       2.2%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice English WER (version…</a>    9.1%  █··●·······▄ beats 2/3     avg 13%       2.2%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice Mandarin error rate …</a>    6.3%  █·······█●·█ beats 2/3     avg 11%       2.2%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">GigaSpeech test WER</a>                  25.5%  ●····▁··▁▄█▂ beats 0/17    avg 17%       2.1%  typical
+<a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean WER…</a>   26.1%  ▂▂···▃▂▅●▃▂▂ beats 9/16    avg 32%       2.1%  blunt
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_meeting error ra…</a>   32.3%  ●··█······██ beats 0/3     avg 21%       2.0%  sharp · noisy
+<a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-lang…</a>    4.0%  ▄·····▄··▄●▄ beats 3/5     avg 7.9%      1.8%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">VoxPopuli English test WER</a>           10.3%  ●▄▄··████▄██ beats 0/16    avg 13%       1.7%  typical
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpeech …</a>    9.5%  ●·····▄▂█▂▂▄ beats 0/11    avg 4.6%      1.5%  typical
+<a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earnings-22…</a>   18.6%  ●·▃▅··▃▃▅▅█▃ beats 0/13    avg 16%       1.4%  blunt
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS Mandarin test error rate</a>       2.4%  ▄·▂▄▂▄██▂▂·● beats 19/20   avg 4.3%      1.2%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-clean WER</a>            1.4%  ▁·▁·▁▁▁▁▃▇█● beats 94/100  avg 2.1%      0.8%  blunt
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS English test WER</a>               2.4%  ▁··▁▁▁▁▂▃█▂● beats 64/64   avg 4.6%      0.6%  blunt
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">TED-LIUM test WER (short-form)</a>        7.7%  ▁·▁▇█▃·●▁▃█▄ beats 15/27   avg 6.2%      0.1%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="card2-qwen-qwen3-asr-1-7b"></a><a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Qwen/Qwen3-ASR-1.7B model card</a>                 13   26% ▇▇▇
+<a name="speech-stt-afrispeech-multibench-report"></a><a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench</a>                           2   19% ▇▇
+<a name="speech-stt-pipecat-bsd2"></a><a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · semantic WER re…</a>        1   14% ▇▇
+<a name="speech-gigaspeechbench-report"></a><a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench: A Real-World Multiling…</a>        3    8% ▇
+<a name="speech-stt-qwen-audio3-asr-report"></a><a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR Technical Report</a>             2    8% ▇
+<a name="speech-stt-bangla-riverborn-mit"></a><a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla Speech-to-Text Benchmark v1.0</a>            1    7% ▇
+<a name="speech-stt-verli-mit"></a><a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verliapp/stt-benchmark · independent ST…</a>        3    6% ▇
+<a name="speech-stt-megaasr-report"></a><a href="https://arxiv.org/html/2605.19833v1">Mega-ASR</a>                                        1    6% ▇
+<a name="speech-stt-perle-cs-report"></a><a href="https://arxiv.org/pdf/2605.19069v3">Benchmarking Commercial ASR Systems on …</a>        1    3% ▇
+<a name="speech-stt-danish-asr-ryeai-mit"></a><a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish Speech-to-Text Leaderboard</a>               1    2% ▇
+<a name="speech-stt-koedesk-ccby"></a><a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk STT Bench v1</a>                            1    2% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 53.2
+</pre>
 
 <sub>Licences: Qwen/Qwen3-ASR-1.7B model card ([Apache-2.0](../../licenses/Qwen--Qwen3-ASR-1.7B.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Pipecat STT Benchmark · semantic WER results table ([BSD-2-Clause](https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/LICENSE)) · GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen-Audio-3.0-ASR Technical Report ([CC BY 4.0](../../licenses/speech-stt-qwen-audio3-asr-report.txt)) · Bangla Speech-to-Text Benchmark v1.0 ([MIT](../../licenses/speech-stt-bangla-riverborn-mit.txt)) · verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt)) · Mega-ASR ([CC BY 4.0](../../licenses/speech-stt-megaasr-report.txt)) · Benchmarking Commercial ASR Systems on Code-Switching Speech ([CC BY 4.0](../../licenses/speech-stt-perle-cs-report.txt)) · Danish Speech-to-Text Leaderboard ([MIT](https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE)) · koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt))</sub>
 

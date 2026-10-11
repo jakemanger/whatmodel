@@ -6,39 +6,61 @@
 
 Alibaba (FunAudioLLM) · released 2025-12 · 0.83B params · apache-2.0
 
-**score 55.8** ±3.4 · #63 of 160 · from 3 benchmark results across 1 source
+**score 55.4** ±2.6 · #69 of 162 · from 8 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Fun-ASR-Nano-2512 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-nano-2512.json">LibriSpeech test-clean WER</a>       1.8%    57.2   2026-09-15   54% ▇▇▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-nano-2512.json">FLEURS English test WER</a>          5.5%    51.8   2026-09-15   21% ▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-nano-2512.json">FLEURS Mandarin test error ra…</a>   8.6%    57.8   2026-09-15   20% ▇▇
-prior                   pull toward the middle                   49.8                 4% ▇
-                        weighted average                       = 55.8
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (5)</summary>
 
-<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
+<pre>
+test                             result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-nano-2512.json">LibriSpeech test-clean WER</a>         1.8%  ▁···▁▁▂·▄▄●█ beats 37/56  avg 2.3%       36%  blunt · several runs
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-other WER</a>         4.0%  ███·····●█·█ beats 3/5    avg 5.7%       18%  typical
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-nano-2512.json">FLEURS English test WER</a>            5.5%  ▁··▁▁▁▁▁▁●█▁ beats 21/56  avg 5.8%       17%  blunt · several runs
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-nano-2512.json">FLEURS Mandarin test error rate</a>    8.6%  ▂▂··▂▄▂▂·▆●█ beats 12/17  avg 12%        17%  several runs
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">VoxPopuli English test WER</a>         6.5%  ▄··▄··●···█▄ beats 2/5    avg 7.4%      8.5%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-nano-2512.json">transcribe.cpp model catalog · LibriSpe…</a>        3   55% ▇▇▇▇▇▇▇
+<a name="card3-microsoft-vibevoice-asr-bitnet"></a><a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">microsoft/VibeVoice-ASR-BitNet model ca…</a>        5   42% ▇▇▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 55.4
+</pre>
+
+<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · microsoft/VibeVoice-ASR-BitNet model card ([MIT](https://opensource.org/licenses/MIT))</sub>
 
 ## How to run it
 
 <pre>
 version                       needs  score
-q8_0-gguf (transcribe.cpp)  ~0.89GB   55.8
+q8_0-gguf (transcribe.cpp)  ~0.89GB   55.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# q8_0-gguf (transcribe.cpp)
+# q8_0-gguf (transcribe.cpp) · ~0.89GB
 git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/Fun-ASR-Nano-2512-gguf Fun-ASR-Nano-2512-Q8_0.gguf --local-dir models/fun-asr-nano-2512 && build/bin/transcribe-cli -m models/fun-asr-nano-2512/Fun-ASR-Nano-2512-Q8_0.gguf audio.wav
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/fun-asr-nano-2512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

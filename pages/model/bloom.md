@@ -6,21 +6,46 @@
 
 BigScience · released 2022-07 · 176.2B params · bigscience-bloom-rail-1.0
 
-**score 26.5** ±1.9 · #872 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 26.4** ±1.9 · #887 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks BLOOM 176B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others      rank  counts  tests
+coding  █··█·█·██··●   #1 of 6*     96%      1
+</pre>
+
+<details><summary>coding · #1 of 6 · 96% of its score</summary>
+
+<pre>
+test             result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>   15.5%  ▄···▄·▄·█··● beats 5/5    easy · avg 78%     96%  sharp
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test  result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2410.14897v1">COPA</a>   57.6%  ▅·●·▃··█▃··▃ beats 2/8    easy · avg 92%    2.0%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>         15.5%    26.7   2023-06-27   96% ▇▇▇▇▇▇▇▇▇▇▇▇
-<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                    57.6%     3.4   2024-10-18    2% ▇
-prior                   pull toward the middle           50.0                 2% ▇
-                        weighted average               = 26.5
+source                                    results  share of the score
+<a name="paper-2211.05100v4"></a><a href="https://arxiv.org/html/2211.05100v4">BLOOM: A 176B-Parameter Open-Access Mul…</a>        1   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    2% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 26.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -30,14 +55,18 @@ prior                   pull toward the middle           50.0                 2%
 
 <pre>
 download          size  score
-16-bit bf16  ~352.49GB   26.5
+16-bit bf16  ~352.49GB   26.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16
+# 16-bit bf16 · ~352.49GB
 uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/bloom) · [JSON](https://whatmodel.sh/api?format=json&all=1)

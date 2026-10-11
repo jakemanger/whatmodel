@@ -6,40 +6,121 @@
 
 01.AI · released 2024-05 · 8.83B params · apache-2.0
 
-**score 44.2** ±2.6 · #602 of 934 · from 4 benchmark results across 3 sources
+**score 42.1** ±1.7 · #664 of 949 · from 7 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Yi-1.5 9B (base) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (7)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">MedQA (USMLE, 4 options)</a>             55.4%  ▁▁··▄▁▁··▄▃● beats 14/17    easy · avg 76%       34%  sharp · at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              35.5%  ▂▁▁▄▂●▇█▆▂▂▂ beats 16/58    medium · avg 50%     30%  at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">MedMCQA</a>                              53.3%  ▂▂··▄▄▂▂·▄█● beats 14/17    medium · avg 68%     18%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   68.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 145/276  medium · avg 73%    5.8%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   79.4%  ▃·▁▁▂▁▂▅█●▄▁ beats 69/100   medium · avg 68%    4.4%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 83/146   easy · avg 83%      3.9%  at its level · noisy
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">PubMedQA</a>                             71.6%  ▂·▂▆·▄▂▄●▂█▂ beats 11/17    medium · avg 77%    1.9%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         35.5%    40.4   2025-04-01   63% ▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  79.4%    56.4   2026-04-17   12% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.0%    49.9   2026-04-17    9% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  68.1%    46.6   2024-05-15   13% ▇▇
-prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 44.2
+source                                results  share of the score
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">Open Medical-LLM Leaderboard results</a>        3   54% ▇▇▇▇▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                          1   30% ▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                       2    8% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>             1    6% ▇
+prior: pull toward the middle                    1% ▇
+weighted average                               = 42.1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/01-ai/Yi-1.5-9B/blob/80d5471b1eae28beae33e06eadbd4b48e74d4ce1/config.json): 01.AI official configuration for Yi-1.5-9B (pinned commit 80d5471): max\_position\_embeddings 4096. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-16-bit bf16  ~17.66GB   44.2
+download                       size  score
+16-bit bf16                ~17.66GB   42.1
+4-bit Q4_K_M                 ~5.3GB   42.1
+8-bit Q8_0                   ~9.4GB   42.1
+4-bit mlx-4bit · mac only      ~5GB   42.1
+4-bit mlx-8bit · mac only    ~9.4GB   42.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-1.5-9B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~5.3GB
+llama cli -hf mradermacher/Yi-1.5-9B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Yi-1.5-9B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~9.4GB
+llama cli -hf mradermacher/Yi-1.5-9B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Yi-1.5-9B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~5.3GB
+lms get https://huggingface.co/mradermacher/Yi-1.5-9B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~9.4GB
+lms get https://huggingface.co/mradermacher/Yi-1.5-9B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~5GB
+lms get https://huggingface.co/mlx-community/Yi-1.5-9B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~9.4GB
+lms get https://huggingface.co/mlx-community/Yi-1.5-9B-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~5.3GB
+ollama run hf.co/mradermacher/Yi-1.5-9B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~9.4GB
+ollama run hf.co/mradermacher/Yi-1.5-9B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~5GB
+mlx_lm.chat --model mlx-community/Yi-1.5-9B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Yi-1.5-9B-4bit
+# 4-bit mlx-8bit · mac only · ~9.4GB
+mlx_lm.chat --model mlx-community/Yi-1.5-9B-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Yi-1.5-9B-8bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~17.66GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-1.5-9B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/yi-1-5-9b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

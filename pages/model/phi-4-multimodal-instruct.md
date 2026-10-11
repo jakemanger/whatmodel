@@ -6,30 +6,60 @@
 
 Microsoft · released 2025-02 · 5.57B params · mit
 
-**score 57.9** ±1.8 · #47 of 160 · from 7 benchmark results across 5 sources
+**score 57.9** ±1.8 · #48 of 162 · from 7 benchmark results across 5 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Phi-4-multimodal-instruct among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.4%    59.7   2026-03-26   38% ▇▇▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.0%    61.6   2026-03-26   12% ▇
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  25.9%    58.2   2025-11-18   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  36.7%    53.8   2025-11-18   19% ▇▇
-<a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   9.4%    56.1   2025-10-27    6% ▇
-<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  15.8%    57.4   2026-08-18    1% ▇
-<a name="speech-stt-iberian-bench-ccby"></a>Benchmarking Automati…  <a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-lan…</a>  56.3%    32.9   2026-09-29    1% ▇
-prior                   pull toward the middle                   49.8                 1% ▇
-                        weighted average                       = 57.9
+task                    vs the others        rank  counts  tests
+multilingual transcri…  ▂··▃▄●▆▅▄▂·▂   #20 of 36*     41%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>multilingual transcription · #20 of 36 · 41% of its score</summary>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard – Chilean Spanish ([Apache-2.0](../../licenses/speech-stt-cl-spanish-asr-apache.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt)) · Benchmarking Automatic Speech Recognition Tools for Iberian Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+Beats [Qwen3-ASR-1.7B](qwen3-asr-1-7b.md), [Voxtral Mini Transcribe V2](voxtral-mini-transcribe-2.md), [Canary-1B-v2](canary-1b-v2.md) here, though they rank higher overall. Trails [Omnilingual ASR CTC 1B v2](omniasr-ctc-1b-v2.md), [Omnilingual ASR CTC 7B v2](omniasr-ctc-7b-v2.md), [SeamlessM4T v2 Large](seamless-m4t-v2-large.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>             4.4%  ▂··▂▃▂█▃●▂▁▁ beats 23/29  avg 8.9%       39%  typical
+<a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-languag…</a>   56.3%  ●▃▃··▅▃▃··▃▃ beats 1/10   avg 38%       1.9%  noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-region …</a>   25.9%  ▂····▂···●▆█ beats 2/11   avg 46%        22%  typical
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parliamen…</a>   36.7%  ▂▂····●·▅·▃█ beats 2/12   avg 52%        18%  sharp
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    6.0%  ▁▁▁▃··▁▁▂██● beats 78/86  avg 8.2%       11%  blunt
+<a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilean Sp…</a>    9.4%  ▂▂·····▂●·█▂ beats 3/8    avg 13%       5.4%  typical
+<a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project dysa…</a>   15.8%  ▂·▂··▂····●█ beats 4/9    avg 18%       1.3%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                            2   50% ▇▇▇▇▇▇
+<a name="speech-stt-afrispeech-multibench-report"></a><a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench</a>                           2   40% ▇▇▇▇▇
+<a name="speech-stt-cl-spanish-asr-apache"></a><a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilean Spanish</a>          1    5% ▇
+<a name="speech-stt-iberian-bench-ccby"></a><a href="https://arxiv.org/html/2609.36920v1">Benchmarking Automatic Speech Recogniti…</a>        1    2% ▇
+<a name="speech-stt-sap-dysarthric-report"></a><a href="https://arxiv.org/html/2605.02782v2">Dysarthric ASR with clinical context on…</a>        1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 57.9
+</pre>
+
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard – Chilean Spanish ([Apache-2.0](../../licenses/speech-stt-cl-spanish-asr-apache.txt)) · Benchmarking Automatic Speech Recognition Tools for Iberian Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt))</sub>
 
 ## How to run it
 
@@ -38,11 +68,15 @@ version                needs  score
 bf16 · nvidia only  ~13.87GB   57.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~13.87GB
 vllm serve microsoft/Phi-4-multimodal-instruct --trust-remote-code --max-model-len 12800 --enable-lora --max-lora-rank 320 --limit-mm-per-prompt '{"audio":1}' --lora-modules speech=$(hf download microsoft/Phi-4-multimodal-instruct)/speech-lora
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/phi-4-multimodal-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

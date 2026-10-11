@@ -6,26 +6,63 @@
 
 SK Telecom · released 2025-12 · 518.98B params (33B active) · apache-2.0
 
-**score 62.3** ±1.2 · #182 of 934 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 62.1** ±1.3 · #191 of 949 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks A.X K1 (519B-A33B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁▃▆██●▆▄▃▁   #152 of 469*     15%      2
+math    ▁▂▃▅▆▅▄●▄▁▁▁   #122 of 400*     11%      1
+</pre>
+
+<details><summary>coding · #152 of 469 · 15% of its score</summary>
+
+Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025) (…</a>   74.9%  ▄··●····▄▄·█ beats 1/6    medium · avg 45%    9.0%  at its level
+<a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified) (lab)</a>    24.1%  ●·····▄█▄▄·▄ beats 0/6    hard · avg 16%      6.1%  at its level
+</pre>
+
+</details>
+
+<details><summary>math · #122 of 400 · 11% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
+
+<pre>
+test             result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (lab)</a>   91.3%  ▄·▄·●▄··█··▄ beats 2/6    medium · avg 56%     11%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   76.4%  ●·····▄█▄▄·▄ beats 0/6    hard · avg 45%           38%  sharp · at its level
+<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>               77.8%  ●······▅··█▃ beats 0/6    medium · avg 60%         18%  at its level
+<a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)…</a>   63.2%  ●······█▃▃·▃ beats 0/6    medium · avg 44%        8.9%  at its level
+<a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>            8.3%  ●········█·▂ beats 0/6    very hard · avg 5.4%    8.2%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2608.30181v1-ax-k2"></a>A.X K2 Technical Repo…  <a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>              76.4%    63.7   2026-08-31   38% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>          77.8%    59.6   2026-08-31   17% ▇▇
-                        <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecif…</a>  63.2%    61.7   2026-08-31   11% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (lab)</a>                 91.3%    67.5   2026-08-31   11% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 202…</a>  74.9%    66.1   2026-08-31    9% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>       8.3%    56.0   2026-08-31    8% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified) (…</a>  24.1%    57.0   2026-08-31    6% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 62.3
+source                         results  share of the score
+<a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report (lab)</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 62.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -33,14 +70,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~1038GB   62.3
+16-bit bf16 · nvidia only  ~1038GB   62.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16 · nvidia only
+# 16-bit bf16 · nvidia only · ~1038GB
 vllm serve skt/A.X-K1 --tensor-parallel-size 8
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ax-k1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

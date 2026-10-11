@@ -6,20 +6,35 @@
 
 Stability AI · released 2024-04 · 1.64B params · other
 
-**score 36.4** ±6.8 · #771 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.3** ±6.7 · #783 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Stable LM 2 1.6B Chat among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   50.6%  ▃▁▁▁▁▁▁●▂█▅▁ beats 70/276  medium · avg 73%     80%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  50.6%    33.0   2024-04-09   80% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                20% ▇▇
-                        weighted average                       = 36.4
+source                           results  share of the score
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   80% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle              20% ▇▇
+weighted average                          = 36.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -28,15 +43,62 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/stabilityai/stablelm-2-1_6b-chat/blob/f3fe67057c2789ae1bb1fe42b038da99840d4f13/config.json): config.json max\_position\_embeddings 4096. Observed 2026-10-10.</sub>
 
 <pre>
-download        size  score
-4-bit q4_0  ~0.983GB   36.4
+download                       size  score
+4-bit q4_0                 ~0.983GB   36.3
+4-bit Q4_K_M                   ~1GB   36.3
+8-bit Q8_0                   ~1.8GB   36.3
+4-bit mlx-4bit · mac only    ~1.2GB   36.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run stablelm2:1.6b
+# 4-bit Q4_K_M · ~1GB
+llama cli -hf mradermacher/stablelm-2-1_6b-chat-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/stablelm-2-1_6b-chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.8GB
+llama cli -hf mradermacher/stablelm-2-1_6b-chat-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/stablelm-2-1_6b-chat-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~1GB
+lms get https://huggingface.co/mradermacher/stablelm-2-1_6b-chat-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~1.8GB
+lms get https://huggingface.co/mradermacher/stablelm-2-1_6b-chat-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~1.2GB
+lms get https://huggingface.co/mlx-community/stablelm-2-1_6b-chat-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~0.983GB
+ollama run stablelm2:1.6b
+# 4-bit Q4_K_M · ~1GB
+ollama run hf.co/mradermacher/stablelm-2-1_6b-chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.8GB
+ollama run hf.co/mradermacher/stablelm-2-1_6b-chat-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~1.2GB
+mlx_lm.chat --model mlx-community/stablelm-2-1_6b-chat-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/stablelm-2-1_6b-chat-4bit
+```
 
 [interactive version](https://whatmodel.sh/model/stablelm-2-1-6b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

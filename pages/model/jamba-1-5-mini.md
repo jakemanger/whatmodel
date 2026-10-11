@@ -6,33 +6,93 @@
 
 AI21 Labs · released 2024-08 · 52B params (12B active) · jamba-open-model-license
 
-**score 46.2** ±1.3 · #548 of 934 · from 14 benchmark results across 4 sources
+**score 46.4** ±1.3 · #543 of 949 · from 14 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Jamba 1.5 Mini among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃▆█▆●▄▄▃▂▁   #145 of 334*    3.0%      1
+coding          ●··········█       #2 of 2*     11%      1
+chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂    #313 of 466     23%      3
+math            ▁▂▃●▆▅▄█▄▁▁▁   #313 of 400*     13%      1
+</pre>
+
+<details><summary>agent tasks · #145 of 334 · 3.0% of its score</summary>
+
+Beats [watt-tool-70B](watt-tool-70b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">BFCL (version not stated) (lab)</a>   80.7%  ▄▆▄▂·●▆·▄··▂ beats 8/17   easy · avg 81%    3.0%  blunt · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #2 of 2 · 11% of its score</summary>
+
+<pre>
+test             result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>   62.8%  ▁▁▁▁▁▃▅●█▃▂▁ beats 104/190  easy · avg 74%     11%  sharp · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #313 of 466 · 23% of its score</summary>
+
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1239.7  ▁▁▁▂▃▃●▆▆▇█▃ beats 89/379  avg 1268             14%  blunt
+<a href="https://arxiv.org/html/2408.12570v1#S6.T3">Arena-Hard (version/judge unspeci…</a>   46.1%  ▃▃▂●▃▆▅█▅▅▂▃ beats 7/30    medium · avg 58%    5.2%  at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">IFEval (aggregation unspecified) …</a>   75.8%  ▁▁▃▁▂●▄▆█▃▂▁ beats 46/141  easy · avg 80%      3.8%  small run
+</pre>
+
+</details>
+
+<details><summary>math · #313 of 400 · 13% of its score</summary>
+
+Beats [Athene-70B](athene-70b.md), [OLMo 2 32B Instruct (0325)](olmo-2-32b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
+
+<pre>
+test         result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (lab)</a>   75.8%  ▂▂▂▅▅▆▅●█▇▄▃ beats 82/146  easy · avg 85%     13%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (lab)</a>                 53.4%  ▁▁▁▁▂▄▅●█▃▄▁ beats 56/129   medium · avg 65%        13%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (lab)</a>      32.3%  ▂▁▂▂▄●▆▃▅█▄▃ beats 28/104   hard · avg 37%          10%  sharp · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                           69.7%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 111/183  easy · avg 77%          10%  at its level · small run
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU-Pro (lab)</a>                       39.8%  ▁▁·▁▁▁●▂▄▅█▁ beats 25/188   medium · avg 50%       7.3%  at its level · small run
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            92.8%  ▁▁·▁·▂▃▄█▂·● beats 22/22    easy · avg 83%         3.6%  typical
+<a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>                  85.7%  ▆▁▁▂▂▅▇█▄▃●▂ beats 93/97    easy · avg 81%         2.7%  sharp · at its level · noisy · small run
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           90.0%  ▄··▂▄▂▆██▄▄● beats 21/21    easy · avg 68%         1.3%  at its level · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.1%  ▁▁▂▃▄▄█●▃▂▂▁ beats 106/140  very easy · avg 94%    1.0%  blunt · maxed out · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="paper-2408.12570v1-jamba15"></a>Jamba-1.5: Hybrid Tra…  <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (lab)</a>                      75.8%    44.0   2024-08-22   14% ▇▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (lab)</a>             53.4%    44.3   2024-08-22   13% ▇▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>                  62.8%    45.7   2024-08-22   10% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (la…</a>   32.3%    45.1   2024-08-22   10% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                       69.7%    45.4   2024-08-22   10% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU-Pro (lab)</a>                   39.8%    44.5   2024-08-22    7% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T3">Arena-Hard (version/judge uns…</a>   46.1%    44.1   2024-08-22    6% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">IFEval (aggregation unspecifi…</a>   75.8%    45.8   2024-08-22    4% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BFCL (version not stated) (la…</a>   80.7%    46.4   2024-08-22    3% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>              85.7%    53.2   2024-08-22    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1239.7    46.7   2026-10-02   14% ▇▇
-<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                        92.8%    58.9   2025-10-09    3% ▇
-                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                       90.0%    63.4   2025-10-09    1% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   97.1%    59.2   2025-10-16    1% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 46.2
+source                                    results  share of the score
+<a name="paper-2408.12570v1-jamba15"></a><a href="https://arxiv.org/html/2408.12570v1#S6.T2">Jamba-1.5: Hybrid Transformer-Mamba Mod…</a>       10   79% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   14% ▇▇
+<a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2    5% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 46.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Jamba-1.5: Hybrid Transformer-Mamba Models at Scale ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -40,14 +100,43 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~103.14GB   46.2
+16-bit bf16 · nvidia only  ~103.14GB   46.4
+4-bit Q4_K_M                 ~31.2GB   46.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-vllm serve ai21labs/AI21-Jamba-Mini-1.5
+# 4-bit Q4_K_M · ~31.2GB
+llama cli -hf mradermacher/AI21-Jamba-Mini-1.5-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/AI21-Jamba-Mini-1.5-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~31.2GB
+lms get https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~31.2GB
+ollama run hf.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF:Q4_K_M
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~103.14GB
+vllm serve ai21labs/AI21-Jamba-Mini-1.5
+```
 
 [interactive version](https://whatmodel.sh/model/jamba-1-5-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

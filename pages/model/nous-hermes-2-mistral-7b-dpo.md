@@ -6,22 +6,41 @@
 
 Nous Research · released 2024-02 · 7.24B params · apache-2.0
 
-**score 46.4** ±6.4 · #544 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.2** ±2.2 · #708 of 949 · from 4 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Nous Hermes 2 Mistral 7B DPO among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">MedQA (USMLE, 4 options)</a>             53.1%  ▁▁··▄▁▁··▄▃● beats 12/17    easy · avg 76%       56%  sharp · at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">MedMCQA</a>                              49.0%  ▂▂··▄▄▂▂·▄●█ beats 11/17    medium · avg 68%     30%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   66.8%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 129/276  medium · avg 73%    9.5%  at its level · noisy
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">PubMedQA</a>                             74.8%  ▂·▂▆·▄▂▄▄▂●▂ beats 15/17    medium · avg 77%    3.2%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.8%    45.6   2024-02-27   82% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                18% ▇▇
-                        weighted average                       = 46.4
+source                                results  share of the score
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">Open Medical-LLM Leaderboard results</a>        3   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>             1    9% ▇
+prior: pull toward the middle                    2% ▇
+weighted average                               = 40.2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -29,14 +48,35 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.37GB   46.4
+4-bit q4_k_m  ~4.37GB   40.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~4.37GB
+llama cli -hf NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~4.37GB
+lms get https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~4.37GB
+ollama run hf.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M
+```
 
 [interactive version](https://whatmodel.sh/model/nous-hermes-2-mistral-7b-dpo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

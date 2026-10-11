@@ -6,38 +6,113 @@
 
 OpenAI · released 2026-09 · proprietary
 
-**score 85.5** ±0.8 · #3 of 934 · from 19 benchmark results across 6 sources
+**score 85.3** ±0.8 · #3 of 949 · from 19 benchmark results across 6 sources
+
+## What it's good at
+
+<sub>● marks GPT-6.1 Sol among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others         rank  counts  tests
+agent tasks         ▁▁▃▆█▆▅▄▄▃▂●    #4 of 334*     18%      2
+coding              ▁▁▁▃▆██▇▆▄▃●    #4 of 469*     11%      2
+chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●   #17 of 466*    5.0%      1
+math                ▁▂▃▅▆▅▄█▄▁▁●     #2 of 400     18%      3
+vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇█●   #13 of 150*    3.5%      1
+</pre>
+
+<details><summary>agent tasks · #4 of 334 · 18% of its score</summary>
+
+Beats [GPT-6 Astra](gpt-6-astra.md) here, though they rank higher overall. Trails [Claude Sonnet 5.5](claude-sonnet-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank lower overall.
+
+<pre>
+test                                    result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.1123 IPS  ▁▁▁▄▂▃▇█▂▂●▃ beats 45/49  avg -0.312 IPS           10%  sharp
+<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-1-sol-max-codex.json">Terminal-Bench 4.0</a>                       58.2%  █▅▅▅▅·▅▃▃▅●▅ beats 18/20  very hard · avg 0.4%    7.7%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #4 of 469 · 11% of its score</summary>
+
+Trails [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1757.8  ▁▂▄▃▅█▄▇▆▄▁● beats 116/119  avg 981           9.0%  sharp
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   87.0%  ▁▁▁▁·▁▂▃▅▃█● beats 47/49    hard · avg 18%    1.8%  typical
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #17 of 466 · 5.0% of its score</summary>
+
+Beats [GPT-6 Astra](gpt-6-astra.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1483.2  ▁▁▁▂▃▃▃▆▆▇█● beats 362/379  avg 1268      5.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #2 of 400 · 18% of its score</summary>
+
+Beats [Claude Opus 5.5](claude-opus-5-5.md) here, though they rank higher overall.
+
+<pre>
+test                       result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>     100.0%  ▁▂▁▂█▅▂▂▁▁▁● beats 63/63    very hard · avg 0.1%     11%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   93.7%  ▂··▁▁▃▄▄█▅▃● beats 81/82    very hard · avg 1.2%    6.9%  sharp · maxed out
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   100.0%  ▃▃▄▃▃▃▇▇█▃▂● beats 187/193  very hard · avg 8.5%    0.1%  sharp · maxed out · noisy
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #13 of 150 · 3.5% of its score</summary>
+
+Trails [Claude Opus 4.7](claude-opus-4-7.md), [Muse Spark 1.2](muse-spark-1-2.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1290.6  ▁▁▂▂▂▂▄▅▅▆█● beats 138/145  avg 1068      3.5%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (10)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    54.3%  ▄▂·▆█▂▆▄▆●·▄ beats 20/23    very hard · avg 0.3%     15%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         80.0%  █··▂▃▇▄█▂▃▁● beats 73/74    very hard · avg 9.4%    9.3%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           80.0%  █▆▆▆▆▂▅▂▂▂·● beats 28/30    very hard · avg 1.2%    8.4%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                61.0%  █▁▁▁▁▂▁▄▂▂▁● beats 132/135  very hard · avg 5.9%    4.9%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    73.9%  ▁▁▃▂▃▃▆▆█▃▂● beats 77/78    very hard · avg 8.0%    1.7%  at its level
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   68.2%  ▁▁▃▂▂▄▁▃▄▄▄● beats 34/38    very hard · avg 14%     1.6%  at its level
+<a href="https://deploymentsafety.openai.com/gpt-6-1-sol#healthbench">HealthBench Hard (lab)</a>               33.4%  ▂··▂····▂▄·● beats 5/8      very hard · avg 9.7%    1.3%  blunt · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         95.4%  ▁▁▁▁▂▄▆▄▅▇█● beats 205/208  hard · avg 40%          1.2%  sharp · maxed out
+<a href="https://deploymentsafety.openai.com/gpt-6-1-sol#healthbench">HealthBench (lab)</a>                    56.7%  ▃·▃·····█●▃▅ beats 5/8      hard · avg 24%          1.1%  blunt · at its level
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   98.6%  ▁▁▃▁█▄▃▃▆▂▂● beats 48/49    easy · avg 78%          0.7%  maxed out
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                 score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    54.3%    84.8   2026-09-29   15% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>              100.0%    89.9   2026-09-29   11% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         80.0%    88.5   2026-09-29    9% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           80.0%    89.5   2026-09-29    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            93.7%    86.1   2026-09-29    7% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                61.0%    84.0   2026-09-29    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    73.9%    87.7   2026-09-29    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         95.4%    78.3   2026-09-29    1% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>            100.0%    90.1   2026-09-29    0% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.1123 IPS    85.3   2026-10-02   10% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1757.8    85.3   2026-10-01    9% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1483.2    75.8   2026-10-02    5% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>      1290.6    77.2   2026-10-02    4% ▇
-<a name="terminal-bench-leaderboard-submissions"></a>Terminal-Bench 4.0 of…  <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-1-sol-max-codex.json">Terminal-Bench 4.0</a>                   58.2%    86.0   2026-09-30    8% ▇
-<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://deploymentsafety.openai.com/gpt-6-1-sol#healthbench">HealthBench Hard (lab)</a>               33.4%    81.4   2026-09-29    1% ▇
-                        <a href="https://deploymentsafety.openai.com/gpt-6-1-sol#healthbench">HealthBench (lab)</a>                    56.7%    80.3   2026-09-29    1% ▇
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (T…</a>       87.0%    83.9   2026-09-30    2% ▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>       98.6%    92.9   2026-09-30    1% ▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>       68.2%    85.1   2026-09-30    2% ▇
-prior                   pull toward the middle                        50.0                 0% ▇
-                        weighted average                            = 85.5
+source                                    results  share of the score
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">Epoch AI</a>                                        9   58% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   28% ▇▇▇
+<a name="terminal-bench-leaderboard-submissions"></a><a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-1-sol-max-codex.json">Terminal-Bench 4.0 official leaderboard…</a>        1    8% ▇
+<a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2    2% ▇
+<a name="first-party-openai-scores"></a><a href="https://deploymentsafety.openai.com/gpt-6-1-sol#healthbench">OpenAI vendor-reported benchmark scores…</a>        2    2% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    2% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 85.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
 

@@ -8,20 +8,48 @@ Kuaishou (Kling AI) · released 2026-02 · proprietary
 
 **score 67.7** ±4.2 · #19 of 93 · from 3 benchmark results across 3 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Kling 3.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-switch-bench"></a>SWITCH: Benchmarking …  <a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface …</a>  37.4%    65.1   2026-07-07   41% ▇▇▇▇▇
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  44.0%    74.7   2026-08-26   38% ▇▇▇▇▇
-<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>  76.6%    65.9   2026-05-14   13% ▇▇
-prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 67.7
+task            vs the others        rank  counts  tests
+image to video  ▁▂·▂▅█▅▄▅●▃▄   #10 of 50*     38%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to video · #10 of 50 · 38% of its score</summary>
+
+Beats [HappyHorse 1.1](happyhorse-1-1.md), [HappyHorse 1.0](happyhorse-1-0.md), [Wan 2.2 I2V Plus](wan-2-2-i2v-plus.md) here, though they rank higher overall.
+
+<pre>
+test                              result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I2V)</a>   44.0%  ▄▄···▄▄█·●·▄ beats 6/8    hard · avg 20%     38%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface I2V …</a>   37.4%  ██●··█·····█ beats 2/4    very hard · avg 28%     41%  typical
+<a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I2V (…</a>   76.6%  ▂···▂······● beats 5/5    medium · avg 65%        13%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-switch-bench"></a><a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH: Benchmarking Modeling and Handl…</a>        1   41% ▇▇▇▇▇
+<a name="visual-vgi"></a><a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench: Probing Visual Intelligence …</a>        1   38% ▇▇▇▇▇
+<a name="visual-mechverse"></a><a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse: Evaluating Physical Motion C…</a>        1   13% ▇▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 67.7
+</pre>
 
 <sub>Licences: SWITCH: Benchmarking Modeling and Handling of Tangible Interfaces in Long-horizon Embodied Scenarios ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

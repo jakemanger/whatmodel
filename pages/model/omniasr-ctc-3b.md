@@ -6,25 +6,53 @@
 
 Meta · released 2025-11 · 3.08B params · apache-2.0
 
-**score 53.3** ±2.4 · #82 of 160 · from 4 benchmark results across 3 sources
+**score 53.6** ±2.4 · #81 of 162 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Omnilingual ASR CTC 3B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        7.0%    52.9   2026-03-26   67% ▇▇▇▇▇▇▇▇
-<a name="speech-omniasr-paper-bysa"></a>Omnilingual ASR: Open…  <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEUR…</a>   7.8%    56.4   2025-11-12   14% ▇▇
-                        <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Commo…</a>  13.7%    54.0   2025-11-12   10% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  37.8%    51.8   2025-11-13    6% ▇
-prior                   pull toward the middle                   49.8                 2% ▇
-                        weighted average                       = 53.3
+task                    vs the others        rank  counts  tests
+multilingual transcri…  ▂··▃●█▆▅▄▂·▂   #28 of 36*     67%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>multilingual transcription · #28 of 36 · 67% of its score</summary>
+
+Beats [GPT-4o Mini Transcribe](gpt-4o-mini-transcribe.md), [Qwen3-ASR-0.6B](qwen3-asr-0-6b.md) here, though they rank higher overall. Trails [Omnilingual ASR CTC 1B v2](omniasr-ctc-1b-v2.md), [Omnilingual ASR CTC 7B v2](omniasr-ctc-7b-v2.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>    7.0%  ▂··▂▃●█▃█▂▁▁ beats 7/29   avg 8.9%       67%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEURS-81…</a>    7.8%  ▅···▃···▃▃●█ beats 6/10   avg 13%        14%  sharp · noisy
+<a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Common Vo…</a>   13.7%  ▂▂▂····▂●··█ beats 6/10   avg 21%        10%  sharp · noisy
+<a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   37.8%  ▃·▂▂▅█●▃▂▅▂▂ beats 12/22  avg 40%       5.8%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                            1   67% ▇▇▇▇▇▇▇▇
+<a name="speech-omniasr-paper-bysa"></a><a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR: Open-Source Multilingu…</a>        2   25% ▇▇▇
+<a name="speech-stt-arabic-oual-elm-apache"></a><a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderboard</a>           1    6% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 53.6
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Omnilingual ASR: Open-Source Multilingual Speech Recognition for 1600+ Languages ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
 
@@ -32,14 +60,18 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version    needs  score
-bf16     ~7.89GB   53.3
+bf16     ~7.89GB   53.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16
+# bf16 · ~7.89GB
 uv run --python 3.12 --with omnilingual-asr python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_3B').transcribe(['audio.wav'], batch_size=1))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/omniasr-ctc-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

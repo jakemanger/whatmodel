@@ -6,39 +6,97 @@
 
 Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
-**score 52.4** ±2.2 · #379 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 52.3** ±2.2 · #390 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Qwen2.5-Math 7B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others         rank  counts  tests
+math  ▁▂▃▅▆●▄█▄▁▁▁   #232 of 400     98%      3
+</pre>
+
+<details><summary>math · #232 of 400 · 98% of its score</summary>
+
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [OpenThinker 7B](openthinker-7b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>                37.1%  ▃·····▃··█●▅ beats 6/8    medium · avg 37%        48%  at its level
+<a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                       95.2%  ▄···█▄▄·▄·●█ beats 6/8    very easy · avg 92%     28%  sharp · maxed out
+<a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (lab)</a>   83.6%  ▃····▃·▅·▅·● beats 6/8    easy · avg 76%          22%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen    <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>              37.1%    50.0   2024-09-18   48% ▇▇▇▇▇▇
-        <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     95.2%    54.1   2024-09-18   30% ▇▇▇▇
-        <a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (la…</a>  83.6%    55.9   2024-09-18   19% ▇▇
-prior   pull toward the middle                   50.0                 2% ▇
-        weighted average                       = 52.4
+source                         results  share of the score
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12122v1">Qwen (lab)</a>                           3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             2% ▇
+weighted average                        = 52.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
-
-
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct/blob/ef9926d75ab1d54532f6a30dd5e760355eb9aa4d/config.json): config.json max\_position\_embeddings 4096. Observed 2026-10-10.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~4.68GB   52.4
+download                      size  score
+4-bit q4_k_m               ~4.68GB   52.3
+4-bit mlx-4bit · mac only   ~4.3GB   52.3
+4-bit mlx-8bit · mac only   ~8.1GB   52.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf bartowski/Qwen2.5-Math-7B-Instruct-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~4.68GB
+llama cli -hf bartowski/Qwen2.5-Math-7B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Qwen2.5-Math-7B-Instruct-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~4.68GB
+lms get https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.3GB
+lms get https://huggingface.co/mlx-community/Qwen2.5-Math-7B-Instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~8.1GB
+lms get https://huggingface.co/mlx-community/Qwen2.5-Math-7B-Instruct-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~4.68GB
+ollama run hf.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.3GB
+mlx_lm.chat --model mlx-community/Qwen2.5-Math-7B-Instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen2.5-Math-7B-Instruct-4bit
+# 4-bit mlx-8bit · mac only · ~8.1GB
+mlx_lm.chat --model mlx-community/Qwen2.5-Math-7B-Instruct-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Qwen2.5-Math-7B-Instruct-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/qwen2-5-math-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

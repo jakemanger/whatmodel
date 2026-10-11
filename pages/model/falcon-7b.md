@@ -6,69 +6,117 @@
 
 TII · released 2023-04 · 7.22B params · apache-2.0
 
-**score 29.8** ±0.7 · #846 of 934 · from 30 benchmark results across 6 sources
+**score 29.8** ±0.6 · #860 of 949 · from 34 benchmark results across 7 sources
+
+## What it's good at
+
+<sub>● marks Falcon 7B (base) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (18)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">ARC Challenge</a>                        43.7%  ▁·▁··▁▁▇▂█●▃ beats 19/26   easy · avg 85%          34%  sharp · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">WinoGrande</a>                           67.2%  ▁····▁··▁▂●▄ beats 17/26   easy · avg 89%          13%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">BoolQ</a>                                73.5%  ▂▃▂▅▆▂▅●█▂▂▂ beats 18/26   easy · avg 91%          10%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">HellaSwag</a>                            76.3%  ▃···▁▇▅█●▃▁▁ beats 22/26   very easy · avg 92%    7.2%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">ARC Easy</a>                             70.8%  ▁▁·▁▁▄▅▄█●▁▃ beats 20/26   easy · avg 88%         7.1%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">OpenBookQA</a>                           30.6%  █·▁▁▃·▁▃▅●▃▄ beats 17/26   easy · avg 84%         6.7%  at its level · several runs
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b/results_2023-12-29%2010%3A59%3A00.762080.json">Natural Questions (closed book)</a>      22.1%  ▁·▁·▁▂▁▂·▅●█ beats 17/28   medium · avg 58%       4.3%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">PIQA</a>                                 79.5%  ▁·▁··▁▁▃█▅█● beats 25/26   easy · avg 88%         4.3%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">SciQ</a>                                 94.0%  ▁·▁·▁·▃▅▃●▄▁ beats 21/26   very easy · avg 98%    4.2%  several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">Social IQA</a>                           42.1%  ▁···▁▃●▁▁▁·▁ beats 13/26   medium · avg 63%       2.5%  blunt · several runs
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   23.6%  ▅····▃▅·●█·█ beats 7/13    medium · avg 59%       2.1%  typical
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   30.4%  ▃▅▃··●▃·█▃▃▅ beats 5/13    easy · avg 67%         1.8%  at its level
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">LAMBADA (OpenAI version), last-wo…</a>   74.6%  ▁··▂▁▁▁▂▆█▅● beats 24/26   very easy · avg 89%    1.2%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b/results_2024-02-14%2018%3A50%3A25.663061.json">TriviaQA</a>                             58.7%  ▁··▁█▃▃▁▄▅●█ beats 22/28   easy · avg 79%         0.6%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   36.9%  ▃▁▁▁●▁▁▁▂█▅▁ beats 46/276  medium · avg 73%       0.6%  noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b/results_2024-02-13%2021%3A49%3A09.998773.json">TruthfulQA MC2</a>                       34.3%  ●▃█▆▁▂▅···▁▁ beats 2/31    medium · avg 64%       0.3%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b/results_2023-12-16%2002%3A54%3A38.742566.json">HaluEval QA hallucination detecti…</a>   46.7%  ●▁▁·▁▁·▁▁▁▁▁ beats 2/27    medium · avg 70%       0.2%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 53.8%  ●·▃·▃··█▃··▃ beats 1/8     easy · avg 92%         0.2%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">ARC Challenge</a>                   43.7%    30.2   2024-04-08   24% ▇▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">WinoGrande</a>                      67.2%    29.4   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">BoolQ</a>                           73.5%    31.0   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">ARC Easy</a>                        70.8%    31.6   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">OpenBookQA</a>                      30.6%    30.1   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">HellaSwag</a>                       76.3%    32.0   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">SciQ</a>                            94.0%    32.1   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">PIQA</a>                            79.5%    32.8   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">Social IQA</a>                      42.1%    24.6   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">LAMBADA (OpenAI version), las…</a>  74.6%    32.4   2024-04-08    1% ▇
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   47.5%    29.2   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      53.0%    30.8   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      68.9%    30.6   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       75.9%    31.8   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        70.4%    30.8   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           74.6%    31.1   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            93.9%    30.3   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            78.5%    31.4   2024-06-07    1% ▇
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   36.3%    27.8   2023-09-11    6% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      66.2%    26.7   2023-09-11    3% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           68.5%    24.3   2023-09-11    3% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      32.0%    31.9   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       54.2%    27.4   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        71.9%    28.0   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      45.2%    25.9   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            79.4%    32.3   2023-09-11    1% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  23.6%    34.2   2024-04-24    3% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  30.4%    28.6   2024-04-24    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  36.9%    18.3   2024-02-05    1% ▇
-<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            53.8%    -2.2   2024-10-18    0% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 29.8
+source                                    results  share of the score
+<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json">Stability AI</a>                                   10   48% ▇▇▇▇▇▇
+<a name="paper-2402.00838v4"></a><a href="https://arxiv.org/html/2402.00838v4">OLMo: Accelerating the Science of Langu…</a>        8   23% ▇▇▇
+<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   19% ▇▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-7b/results_2023-12-29%2010%3A59%3A00.762080.json">Hallucinations Leaderboard results</a>              4    5% ▇
+<a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    4% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+<a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 29.8
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/tiiuae/falcon-7b/blob/ec89142b67d748a1865ea4451372db8313ada0d8/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
 
 <pre>
-download         size  score
-4-bit q4_0     ~4.2GB   29.8
-16-bit bf16  ~14.43GB   29.8
+download          size  score
+4-bit q4_0      ~4.2GB   29.8
+16-bit bf16   ~14.43GB   29.8
+4-bit Q4_K_M      ~5GB   29.8
+8-bit Q8_0      ~7.7GB   29.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run falcon:7b-text
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~5GB
+llama cli -hf mradermacher/falcon-7b-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/falcon-7b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.7GB
+llama cli -hf mradermacher/falcon-7b-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/falcon-7b-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~5GB
+lms get https://huggingface.co/mradermacher/falcon-7b-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~7.7GB
+lms get https://huggingface.co/mradermacher/falcon-7b-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~4.2GB
+ollama run falcon:7b-text
+# 4-bit Q4_K_M · ~5GB
+ollama run hf.co/mradermacher/falcon-7b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~7.7GB
+ollama run hf.co/mradermacher/falcon-7b-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~14.43GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/falcon-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

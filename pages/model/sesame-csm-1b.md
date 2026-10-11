@@ -6,29 +6,47 @@
 
 Sesame · released 2025-03 · 1B params · apache-2.0
 
-**score 34.5** ±4.5 · #98 of 117 · from 8 benchmark results across 4 sources
+**score 34.2** ±4.5 · #100 of 118 · from 8 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Sesame CSM-1B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     13.4%    35.1   2025-08-10   29% ▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       32.3%    19.3   2025-08-10   14% ▇▇
-<a name="speech-balacoon-baselines-apache"></a>balacoon speech_gen_b…  <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>     67.3%    47.7   2025-03-23    9% ▇
-                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>     65.2%    35.7   2025-03-23    7% ▇
-                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>      1.9%    19.2   2025-03-23    3% ▇
-                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>      8.5%    13.8   2025-03-23    3% ▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.38 / 5    32.8   2025-05-29   21% ▇▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.44 / 5    55.4   2026-07-16    5% ▇
-prior                   pull toward the middle                      49.7                 8% ▇
-                        weighted average                          = 34.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     13.4%  ▅●▃▃█▅▅▃·▃·▅ beats 2/16   hard · avg 30%            30%  typical
+<a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automatic …</a>  3.38 / 5  ▄·●·█▄····█▄ beats 1/8    easy · avg 3.93 / 5       21%  blunt · at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           32.3%  ●▄··▂▄▄··█▄▆ beats 0/16   avg 16%                   15%  blunt
+<a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS-cel…</a>     67.3%  ▄·······●··▄ beats 1/3    easy · avg 71%           8.8%  blunt · at its level
+<a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK · R…</a>     65.2%  █···●····█·█ beats 1/3    easy · avg 74%           7.3%  blunt · at its level
+<a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form Stabi…</a>  3.44 / 5  ●······█·███ beats 0/4    medium · avg 3.42 / 5    4.8%  blunt · at its level
+<a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK · W…</a>      1.9%  ●····█····██ beats 0/3    avg 1.0%                 3.3%  blunt
+<a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS-cel…</a>      8.5%  ●█········██ beats 0/3    avg 4.1%                 3.1%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   44% ▇▇▇▇▇
+<a name="speech-balacoon-baselines-apache"></a><a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/daps_celeb/metrics.yaml">balacoon speech_gen_baselines · zero-sh…</a>        4   22% ▇▇▇
+<a name="speech-emergent-v1-paper-ccby"></a><a href="https://arxiv.org/html/2505.23009v1">EmergentTTS-Eval v1 paper</a>                       1   21% ▇▇
+<a name="speech-rw-voice-eq-report"></a><a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ Bench</a>                               1    5% ▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 34.2
+</pre>
 
 <sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · balacoon speech\_gen\_baselines · zero-shot TTS metrics ([Apache-2.0](../../licenses/speech-balacoon-baselines-apache.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
@@ -40,14 +58,18 @@ api (DeepInfra) · $7.00/M chars · [deepinfra.com](https://deepinfra.com/sesame
 
 <pre>
 version                        needs  score
-fp32 (mlx-audio) · mac only  ~6.61GB   34.5
+fp32 (mlx-audio) · mac only  ~6.61GB   34.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (mlx-audio) · mac only
+# fp32 (mlx-audio) · mac only · ~6.61GB
 pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/csm-1b --text "Hello from Sesame." --ref_audio ./reference_voice.wav --ref_text "This is what my voice sounds like." --play
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/sesame-csm-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

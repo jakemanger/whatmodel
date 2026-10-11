@@ -16,7 +16,12 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
+# fp16 · CPU offload · ~8GB
 uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c "import torch; from diffusers import StableVideoDiffusionPipeline; from diffusers.utils import load_image, export_to_video; p=StableVideoDiffusionPipeline.from_pretrained('stabilityai/stable-video-diffusion-img2vid', torch_dtype=torch.float16, variant='fp16'); p.enable_model_cpu_offload(); p.unet.enable_forward_chunking(); image=load_image('input.png').resize((1024,576)); frames=p(image, num_frames=14, decode_chunk_size=2).frames[0]; export_to_video(frames, 'video.mp4', fps=7)"
 ```
 

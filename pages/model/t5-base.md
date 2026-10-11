@@ -6,22 +6,38 @@
 
 Google · released 2019-10 · 0.223B params · apache-2.0
 
-**score 47.2** ±9.2 · #510 of 934 · from 3 benchmark results across 1 source
+**score 45.9** ±8.7 · #557 of 949 · from 3 benchmark results across 1 source
+
+## What it's good at
+
+<sub>● marks T5 Base among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   42.3%  ▃···▃▃·▃·▃·● beats 6/7    hard · avg 44%          62%  blunt
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>   10.3%  ▄···█···●█·▄ beats 3/7    very hard · avg 11%    2.1%  blunt · too hard for it
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   49.5%  ●·······▁··▁ beats 1/7    very hard · avg 51%    1.5%  blunt · too hard for it · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   13.7%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 73%          —  failed run: Failed run: average 13.68 v…
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  42.3%    47.8   2022-12-07   59% ▇▇▇▇▇▇▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  10.3%    26.8   2022-12-07    2% ▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  49.5%   -19.1   2022-12-07    2% ▇
-prior   pull toward the middle                   50.0                38% ▇▇▇▇▇
-        weighted average                       = 47.2
+source                         results  share of the score
+<a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                3   66% ▇▇▇▇▇▇▇▇
+prior: pull toward the middle            34% ▇▇▇▇
+weighted average                        = 45.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>
 
@@ -40,14 +56,18 @@ Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open
 
 <pre>
 download       size  score
-4-bit fp32  ~0.89GB   47.2
+4-bit fp32  ~0.89GB   45.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp32
+# 4-bit fp32 · ~0.89GB
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google-t5/t5-base')('translate English to German: The house is wonderful.', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/t5-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

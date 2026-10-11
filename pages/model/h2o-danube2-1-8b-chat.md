@@ -6,36 +6,104 @@
 
 H2O.ai · released 2024-04 · 1.83B params · apache-2.0
 
-**score 30.2** ±3.6 · #844 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 30.1** ±3.5 · #858 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks H2O-Danube2 1.8B Chat among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   32.8%  ●▂▂▂▃█▃▆▅▄▂▃ beats 2/95    easy · avg 66%       77%  at its level
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   47.7%  ▃▁▁▁▁▁▁●▂█▅▁ beats 63/276  medium · avg 73%     18%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  32.8%    28.7   2026-08-11   76% ▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  47.7%    29.9   2024-04-09   18% ▇▇
-prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 30.2
+source                           results  share of the score
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                       1   77% ▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   18% ▇▇
+prior: pull toward the middle               6% ▇
+weighted average                          = 30.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
-download        size  score
-16-bit bf16  ~3.66GB   30.2
+download                      size  score
+16-bit bf16                ~3.66GB   30.1
+4-bit Q4_K_M                ~1.1GB   30.1
+8-bit Q8_0                  ~1.9GB   30.1
+4-bit mlx-4bit · mac only   ~1.1GB   30.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='h2oai/h2o-danube2-1.8b-chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~1.1GB
+llama cli -hf h2oai/h2o-danube2-1.8b-chat-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf h2oai/h2o-danube2-1.8b-chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.9GB
+llama cli -hf h2oai/h2o-danube2-1.8b-chat-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf h2oai/h2o-danube2-1.8b-chat-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~1.1GB
+lms get https://huggingface.co/h2oai/h2o-danube2-1.8b-chat-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~1.9GB
+lms get https://huggingface.co/h2oai/h2o-danube2-1.8b-chat-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~1.1GB
+lms get https://huggingface.co/mlx-community/h2o-danube2-1.8b-chat-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~1.1GB
+ollama run hf.co/h2oai/h2o-danube2-1.8b-chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.9GB
+ollama run hf.co/h2oai/h2o-danube2-1.8b-chat-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~1.1GB
+mlx_lm.chat --model mlx-community/h2o-danube2-1.8b-chat-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/h2o-danube2-1.8b-chat-4bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~3.66GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='h2oai/h2o-danube2-1.8b-chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/h2o-danube2-1-8b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

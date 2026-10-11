@@ -6,29 +6,67 @@
 
 Ai2 · released 2024-11 · 70.6B params · llama3.1
 
-**score 53.7** ±1.4 · #343 of 934 · from 10 benchmark results across 2 sources
+**score 53.6** ±1.4 · #356 of 949 · from 10 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Llama 3.1 Tulu 3 70B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂    #258 of 466     32%      3
+math            ▁▂▃▅●▅▄█▄▁▁▁   #243 of 400*     21%      2
+</pre>
+
+<details><summary>chat &amp; writing · #258 of 466 · 32% of its score</summary>
+
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1286.1  ▁▁▁▂▃▃●▆▆▇█▃ beats 113/379  avg 1268             18%  blunt
+<a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlled (l…</a>   49.8%  ▁▁▃▄▆██●▃▃▁▁ beats 128/155  medium · avg 47%    8.9%  at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (lab)</a>      83.2%  ▁▂▁▂▁▃▁▂●▂▂▁ beats 18/25    easy · avg 79%      4.6%  small run
+</pre>
+
+</details>
+
+<details><summary>math · #243 of 400 · 21% of its score</summary>
+
+Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md), [OpenThinker 7B](openthinker-7b.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run    difficulty           counts  why
+<a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (lab)</a>   63.0%  ▂▄▄▃█●▅▆▄▃▄▁ beats 37/80    medium · avg 58%        11%  at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                       93.5%  ▂▂▂▅▅▆▅▇█▇●▃ beats 135/146  very easy · avg 87%     10%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                  result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>   85.0%  ▁▁▁▁▂▄▅▅█▃●▁ beats 119/129  easy · avg 77%       16%  sharp · small run
+<a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>             74.3%  ▅··▅·█▅●▅▃▃▅ beats 11/17    easy · avg 65%       14%  at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>             83.1%  ▁▁▁▁▁▂▃▅█▃●▃ beats 147/183  easy · avg 79%       11%  small run
+<a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>            46.5%  ▁▁▂▃▅▃▂█▂▃·● beats 34/36    hard · avg 35%      4.1%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>   67.6%  █▅▇▅▁▄▁▇●▄▁▁ beats 63/73    medium · avg 64%    1.5%  blunt · at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="paper-2411.15124v5"></a>Tülu 3: Pushing Front…  <a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>             85.0%    54.9   2025-04-14   16% ▇▇
-                        <a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>                       74.3%    54.2   2025-04-14   14% ▇▇
-                        <a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>                       83.1%    52.9   2025-04-14   11% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                      93.5%    57.1   2025-04-14   10% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (la…</a>   63.0%    51.8   2025-04-14   10% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlle…</a>   49.8%    50.4   2025-04-14    9% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (la…</a>   83.2%    54.4   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>                      46.5%    59.9   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>             67.6%    52.3   2025-04-14    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1286.1    52.3   2026-10-02   18% ▇▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 53.7
+source                                    results  share of the score
+<a name="paper-2411.15124v5"></a><a href="https://arxiv.org/html/2411.15124v5">Tülu 3: Pushing Frontiers in Open Langu…</a>        9   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   18% ▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 53.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Tülu 3: Pushing Frontiers in Open Language Model Post-Training ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -37,18 +75,63 @@ prior                   pull toward the middle                    50.0          
 <sub>[context source](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B/blob/cfc1d855e534a0b9b82a9cea6bf9e8dda30b10d7/config.json): Ai2 official configuration for Llama-3.1-Tulu-3-70B (pinned commit): max\_position\_embeddings 131072 (llama3 rope scaling, factor 8.0 over original 8192). Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~42.86GB   53.7
-8-bit q8_0    ~85.22GB   53.7
+download                       size  score
+4-bit q4_k_m               ~42.86GB   53.6
+8-bit q8_0                 ~85.22GB   53.6
+4-bit Q4_K_M                ~42.5GB   53.6
+8-bit Q8_0                    ~75GB   53.6
+4-bit mlx-4bit · mac only   ~39.7GB   53.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run tulu3:70b-q4_K_M
-# 8-bit q8_0
-ollama run tulu3:70b-q8_0
+# 4-bit Q4_K_M · ~42.5GB
+llama cli -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~75GB
+llama cli -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~42.5GB
+lms get https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~75GB
+lms get https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~39.7GB
+lms get https://huggingface.co/mlx-community/Llama-3.1-Tulu-3-70B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~42.86GB
+ollama run tulu3:70b-q4_K_M
+# 8-bit q8_0 · ~85.22GB
+ollama run tulu3:70b-q8_0
+# 4-bit Q4_K_M · ~42.5GB
+ollama run hf.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~39.7GB
+mlx_lm.chat --model mlx-community/Llama-3.1-Tulu-3-70B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Llama-3.1-Tulu-3-70B-4bit
+```
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-tulu-3-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

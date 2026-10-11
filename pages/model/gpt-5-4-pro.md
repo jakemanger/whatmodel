@@ -6,32 +6,87 @@
 
 OpenAI · released 2026-03 · proprietary
 
-**score 80.7** ±0.9 · #13 of 934 · from 11 benchmark results across 4 sources
+**score 80.7** ±0.9 · #13 of 949 · from 12 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks GPT-5.4 Pro among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others         rank  counts  tests
+agent tasks  ▁▁▃▆█▆▅▄▄▃●▁   #16 of 334*     12%      2
+math         ▁▂▃▅▆▅▄█▄●▁▁    #14 of 400     62%      3
+web search   ▂▂▂▆▄█●▃▁▁·▁    #15 of 81*     12%      2
+</pre>
+
+<details><summary>agent tasks · #16 of 334 · 12% of its score</summary>
+
+Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     89.3%  ▄··█▄··▄·●█▄ beats 5/8    hard · avg 32%         6.6%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>   58.7%  ▃·▃·▅····▅·● beats 8/8    very hard · avg 12%    4.9%  at its level
+</pre>
+
+</details>
+
+<details><summary>math · #14 of 400 · 62% of its score</summary>
+
+Trails [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.5](gpt-5-5.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               58.5%  ▁▂▁▂█▅●▂▁▁▁▁ beats 50/63  very hard · avg 0.1%     32%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            82.5%  ▂··▁▁▃▄▄█▅●▃ beats 70/82  very hard · avg 1.2%     21%  sharp
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   75.8%  ▁▁▁▁█▇▄▃▁▃·● beats 24/24  very hard · avg 9.1%    9.2%  at its level
+</pre>
+
+</details>
+
+<details><summary>web search · #15 of 81 · 12% of its score</summary>
+
+Beats [Claude Fable 5.1](claude-fable-5-1.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md), [Claude Opus 5](claude-opus-5.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     89.3%  ▄··█▄··▄·●█▄ beats 5/8    hard · avg 32%         6.6%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with tools (…</a>   58.7%  ▃·▃·▅····▅·● beats 8/8    very hard · avg 12%    4.9%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (7)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>           42.7%  ▃··▃·▃▃···▃● beats 6/7      very hard · avg 4.4%    9.4%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                58.6%  █▁▁▁▁▂▁▄▂▂●▁ beats 131/135  very hard · avg 5.9%    7.9%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         94.6%  ▁▁▁▁▂▄▆▄▅▇█● beats 203/208  hard · avg 40%          3.1%  sharp · maxed out
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    46.3%  ▁▁▃▂▃▃▆▆●▃▂▅ beats 44/78    very hard · avg 8.0%    3.0%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>       36.7%  ██·······█·● beats 3/3      very hard · avg 7.4%    1.5%  at its level · small run
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-pro-xhigh">ARC-AGI-1 public evaluation set (…</a>   98.3%  ▁·▇▃▁·█▇▁·▇● beats 27/27    very hard · avg 4.1%    1.4%  sharp · maxed out · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   91.7%  ▁▂▁▂▅█●▃▄▃▁▁ beats 60/98    very easy · avg 90%     0.0%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          58.5%    79.4   2026-06-13   32% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       82.5%    80.3   2026-06-13   22% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>           58.6%    83.4   2026-03-19    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    94.6%    78.9   2026-03-20    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>               46.3%    74.8   2026-08-27    3% ▇
-<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>      42.7%    79.4   2026-03-05    9% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                89.3%    83.8   2026-03-05    6% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with too…</a>  58.7%    82.5   2026-03-05    5% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>  36.7%    81.8   2026-03-05    1% ▇
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  75.8%    85.9   2026-09-11   10% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  91.7%   123.4   2026-09-22    0% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 80.7
+source                                    results  share of the score
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        5   67% ▇▇▇▇▇▇▇▇
+<a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5-4">OpenAI vendor-reported benchmark scores…</a>        4   22% ▇▇▇
+<a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        1    9% ▇
+<a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-pro-xhigh">ARC Prize Foundation model_baseline out…</a>        1    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 80.7
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

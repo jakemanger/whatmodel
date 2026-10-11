@@ -6,39 +6,72 @@
 
 Cohere · released 2026-07 · 2.07B params · apache-2.0
 
-**score 62.6** ±3.5 · #14 of 160 · from 3 benchmark results across 2 sources
+**score 63.2** ±3.2 · #14 of 162 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Cohere Transcribe Arabic (07-2026) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-arabic-07-2026.json">LibriSpeech test-clean WER</a>       1.3%    64.9   2026-09-15   59% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-arabic-07-2026.json">FLEURS English test WER</a>          4.9%    55.7   2026-09-15   23% ▇▇▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  25.9%    68.9   2026-07-07   13% ▇▇
-prior                   pull toward the middle                   49.8                 5% ▇
-                        weighted average                       = 62.6
+task                    vs the others        rank  counts  tests
+multilingual transcri…  ▂··▃▄█●▅▄▂·▂   #16 of 36*     21%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>multilingual transcription · #16 of 36 · 21% of its score</summary>
 
-<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
+Trails [Omnilingual ASR CTC 1B v2](omniasr-ctc-1b-v2.md), [SeamlessM4T v2 Large](seamless-m4t-v2-large.md), [Omnilingual ASR LLM 1B v2](omniasr-llm-1b-v2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/spaces/QCRI/AURA-Arabic-English-ASR-leaderboard/blob/208ff13439f377131207a2b32bf73364ba0e2d0c/leaderboard.tsv">QCRI Arabic-English ASR leaderboa…</a>   20.9%  █···█······● beats 2/2    avg 53%        21%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-arabic-07-2026.json">LibriSpeech test-clean WER</a>            1.3%  ▁···▁▁▂·▄▄█● beats 52/56  avg 2.3%       46%  blunt
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-arabic-07-2026.json">FLEURS English test WER</a>               4.9%  ▁··▁▁▁▁▁▁▃●▁ beats 26/56  avg 5.8%       18%  blunt
+<a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   25.9%  ▃·▂▂▅█▅▃▂▅▂● beats 22/22  avg 40%        10%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-arabic-07-2026.json">transcribe.cpp model catalog · LibriSpe…</a>        2   65% ▇▇▇▇▇▇▇▇
+<a name="speech-stt-qcri-aura-ccby"></a><a href="https://huggingface.co/spaces/QCRI/AURA-Arabic-English-ASR-leaderboard/blob/208ff13439f377131207a2b32bf73364ba0e2d0c/leaderboard.tsv">QCRI Arabic + English ASR leaderboard</a>           1   21% ▇▇
+<a name="speech-stt-arabic-oual-elm-apache"></a><a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderboard</a>           1   10% ▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 63.2
+</pre>
+
+<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · QCRI Arabic + English ASR leaderboard ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                        needs  score
-bf16 (transformers &gt;=5.4.0)  ~4.13GB   62.6
+bf16 (transformers &gt;=5.4.0)  ~4.13GB   63.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (transformers >=5.4.0)
+# bf16 (transformers >=5.4.0) · ~4.13GB
 uv run --with 'transformers>=5.4.0' --with torch --with huggingface_hub --with soundfile --with librosa --with sentencepiece --with protobuf --with accelerate python -c "from transformers import AutoProcessor, CohereAsrForConditionalGeneration; from transformers.audio_utils import load_audio; processor = AutoProcessor.from_pretrained('CohereLabs/cohere-transcribe-arabic-07-2026'); model = CohereAsrForConditionalGeneration.from_pretrained('CohereLabs/cohere-transcribe-arabic-07-2026', device_map='auto'); audio = load_audio('audio.wav', sampling_rate=16000); inputs = processor(audio, sampling_rate=16000, return_tensors='pt', language='ar'); inputs.to(model.device, dtype=model.dtype); outputs = model.generate(**inputs, max_new_tokens=256); print(processor.decode(outputs, skip_special_tokens=True))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cohere-transcribe-arabic-07-2026) · [JSON](https://whatmodel.sh/api?format=json&all=1)

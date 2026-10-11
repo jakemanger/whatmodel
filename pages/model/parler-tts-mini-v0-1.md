@@ -6,22 +6,37 @@
 
 Hugging Face (Parler-TTS) · released 2024-04 · 0.647B params · apache-2.0
 
-**score 48.8** ±14.4 · #68 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.9** ±14.4 · #69 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Parler-TTS Mini v0.1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  85.6%    44.9   2025-04-25   17% ▇▇
-prior                   pull toward the middle                   49.7                83% ▇▇▇▇▇▇▇▇▇▇
-                        weighted average                       = 48.8
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>   85.6%  ▂▂····▃·▃●▂█ beats 8/14   very easy · avg 86%     17%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-ttsds-v1-mit"></a><a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 published results</a>           1   17% ▇▇
+prior: pull toward the middle            83% ▇▇▇▇▇▇▇▇▇▇
+weighted average                        = 48.9
+</pre>
 
 <sub>Licences: TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
 
@@ -29,14 +44,18 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version    needs  score
-fp32     ~2.59GB   48.8
+fp32     ~2.59GB   48.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32
+# fp32 · ~2.59GB
 pip install git+https://github.com/huggingface/parler-tts.git soundfile && python -c "import torch, soundfile as sf; from parler_tts import ParlerTTSForConditionalGeneration; from transformers import AutoTokenizer; d='cuda:0' if torch.cuda.is_available() else 'cpu'; m=ParlerTTSForConditionalGeneration.from_pretrained('parler-tts/parler_tts_mini_v0.1').to(d); t=AutoTokenizer.from_pretrained('parler-tts/parler_tts_mini_v0.1'); g=m.generate(input_ids=t('A female speaker delivers a slightly expressive speech with a very clear recording.', return_tensors='pt').input_ids.to(d), prompt_input_ids=t('Hello, world!', return_tensors='pt').input_ids.to(d)); sf.write('out.wav', g.cpu().numpy().squeeze(), m.config.sampling_rate)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/parler-tts-mini-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

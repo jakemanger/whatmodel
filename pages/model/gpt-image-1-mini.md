@@ -10,22 +10,62 @@ OpenAI · released 2025-10 · proprietary
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks GPT Image 1 Mini among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1109.8    58.6   2026-09-24   34% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1124.2    45.8   2026-09-30   12% ▇
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   26.4%    63.4   2026-09-28   36% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">VVRBench-Challenge accuracy (…</a>    0.3%    49.5   2026-09-28    2% ▇
-<a name="paper-2604.24023v2-servimage"></a>ServImage: An Image G…  <a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (hu…</a>   32.4%    59.5   2026-06-19   15% ▇▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 58.6
+task                    vs the others         rank  counts  tests
+text to image           ▂▅▅▃▄▄●▃▁▂▁▁   #45 of 126*     48%      2
+image to image / edit…  ▁▁·▃▂●█▃▃▄▁▁    #49 of 62*     27%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #45 of 126 · 48% of its score</summary>
+
+Beats [Wan 2.7 Image](wan-2-7-image.md), [Krea 2 Turbo](krea-2-turbo.md) here, though they rank higher overall. Trails [FLUX.2 \[dev\]](flux-2-dev.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1109.8  ▂▂▃▄●█▄▂▄▂·▂ beats 27/75  avg 1027           34%  typical
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   32.4%  ▂▃··▂··▃●··▂ beats 10/11  hard · avg 18%     15%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #49 of 62 · 27% of its score</summary>
+
+Trails [GLM-Image](glm-image.md), [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md), [Ideogram 3.0](ideogram-3.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   32.4%  ▂▃··▂··▃●··▂ beats 10/11  hard · avg 18%     15%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1124.2  ▂▁●▂▆▇█▄▆▅▁▂ beats 3/53   avg 1153           13%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>   26.4%  ▃·█▅▃·▅●···▃ beats 9/10   very hard · avg 7.6%     35%  sharp
+<a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">VVRBench-Challenge accuracy (720 …</a>    0.3%  ●·▄···█·▄▄·▄ beats 0/6    very hard · avg 0.6%    2.3%  sharp · too hard for it
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   47% ▇▇▇▇▇▇
+<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        2   38% ▇▇▇▇▇
+<a name="paper-2604.24023v2-servimage"></a><a href="https://arxiv.org/html/2604.24023v2">ServImage: An Image Generation and Edit…</a>        1   15% ▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 58.6
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ServImage: An Image Generation and Editing Benchmark from Real-world Commercial Imaging Services ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

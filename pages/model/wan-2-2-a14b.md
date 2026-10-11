@@ -8,23 +8,64 @@ Alibaba · released 2025-07 · 27B params (14B active) · apache-2.0
 
 **score 49.8** ±1.6 · #52 of 93 · from 6 benchmark results across 5 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Wan 2.2 A14B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                           1131.6    48.5   2026-09-22   44% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                    1170.2    48.0   2026-09-22   29% ▇▇▇▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>           88.2%    55.5   2026-06-23    9% ▇
-<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>          1518.0    55.9   2026-05-06    6% ▇
-<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  1085.08 / 1608    48.6   2026-05-15    6% ▇
-<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>           84.1%    54.6   2026-08-06    4% ▇
-prior                   pull toward the middle                            49.9                 1% ▇
-                        weighted average                                = 49.8
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄▆●█▃▂▂▂▄    #35 of 68     65%      4
+image to video  ▁▂·●▅█▅▄▅▆▃▄   #46 of 50*     29%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #35 of 68 · 65% of its score</summary>
+
+Trails [LTX-2](ltx-2.md) here, though they rank lower overall.
+
+<pre>
+test                                        result  vs the others in its run  difficulty                counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                               1131.6  ▂▂●▆█▆·▆▅▁▂▇ beats 6/41   avg 1147                     44%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>           88.2%  █▄▄··▄▄●▄▄·▄ beats 6/9    easy · avg 85%              9.0%  typical
+<a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Bradle…</a>          1518.0  █···██·●··██ beats 3/5    avg 1470                    6.4%  typical
+<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  1085.08 / 1608  █·▄··●·····█ beats 3/5    easy · avg 1103.17 / 16…    5.7%  at its level
+</pre>
+
+</details>
+
+<details><summary>image to video · #46 of 50 · 29% of its score</summary>
+
+Trails [Wan 2.1 I2V Turbo](wan-2-1-i2v-turbo.md), [HunyuanVideo-I2V](hunyuanvideo-i2v.md), [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md) here, though they rank lower overall.
+
+<pre>
+test                  result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1170.2  ▁▁▁▁●▇▃▆▃▂▄█ beats 5/40   avg 1189       29%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   84.1%  █▄·▄●▄▄····▄ beats 5/8    easy · avg 82%    4.3%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   74% ▇▇▇▇▇▇▇▇▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        1    9% ▇
+<a name="visual-worldjen"></a><a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen: An End-to-End Multi-Dimension…</a>        1    6% ▇
+<a name="video-videoverse"></a><a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse: Does Your T2V Generator Hav…</a>        1    6% ▇
+<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1    4% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 49.8
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -42,18 +83,22 @@ gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cp…    ~45GB   49.8
 gguf-q4_k_m ×2 experts + umt5 q8_0 (sd.…  ~31.2GB   49.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~65.3GB
 python generate.py --task t2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-T2V-A14B --offload_model True --convert_model_dtype --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage."
-# bf16 · mac only
+# bf16 · mac only · ~65.3GB
 rapid-mlx serve wan2.2-t2v-a14b-bf16
-# gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cpp)
+# gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cpp) · ~45GB
 sd-cli -M vid_gen --diffusion-model models/Wan2.2-T2V-A14B-LowNoise-Q8_0.gguf --high-noise-diffusion-model models/Wan2.2-T2V-A14B-HighNoise-Q8_0.gguf --vae models/wan_2.1_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p "a lovely cat" --cfg-scale 3.5 --sampling-method euler --steps 10 --high-noise-cfg-scale 3.5 --high-noise-sampling-method euler --high-noise-steps 8 -v -n "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走" -W 832 -H 480 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0
-# gguf-q4_k_m ×2 experts + umt5 q8_0 (sd.cpp)
+# gguf-q4_k_m ×2 experts + umt5 q8_0 (sd.cpp) · ~31.2GB
 sd-cli -M vid_gen --diffusion-model models/Wan2.2-T2V-A14B-LowNoise-Q4_K_M.gguf --high-noise-diffusion-model models/Wan2.2-T2V-A14B-HighNoise-Q4_K_M.gguf --vae models/wan_2.1_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p "a lovely cat" --cfg-scale 3.5 --sampling-method euler --steps 10 --high-noise-cfg-scale 3.5 --high-noise-sampling-method euler --high-noise-steps 8 -v -n "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走" -W 832 -H 480 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 

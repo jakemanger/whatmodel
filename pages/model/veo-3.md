@@ -8,22 +8,61 @@ Google · released 2025-07 · proprietary
 
 **score 64.3** ±1.7 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Veo 3 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1340.2    66.8   2026-09-22   51% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1331.5    63.8   2026-09-22   34% ▇▇▇▇
-<a name="paper-2512.01989v1-paibench"></a>PAI-Bench: A Comprehe…  <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference …</a>  1112.2    59.8   2025-12-01   11% ▇
-                        <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video…</a>   82.2%    50.2   2025-12-01    3% ▇
-<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   20.5%    57.1   2026-03-26    1% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 64.3
+task            vs the others        rank  counts  tests
+text to video   ▇▅▄▆█▆▇▂●▃▂▄   #16 of 94*     51%      1
+image to video  ▁▁▂▂██●▃▃▄▂▂    #29 of 74     47%      3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #16 of 94 · 51% of its score</summary>
+
+Beats [Wan 2.7](wan-2-7.md), [Wan 2.6](wan-2-6.md) here, though they rank higher overall.
+
+<pre>
+test           result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>  1340.2  ▂▂▃▆█▆·●▅▁▂▇ beats 26/41  avg 1147       51%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #29 of 74 · 47% of its score</summary>
+
+Trails [Wan 2.1 I2V Plus](wan-2-1-i2v-plus.md), [Runway Gen-4.5](runway-gen-4-5.md), [PixVerse V5.6](pixverse-v5-6.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                1331.5  ▁▁▁▁▄▇▃▆●▂▄█ beats 24/40  avg 1189           34%  typical
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>  1112.2  ▄······██··● beats 6/6    avg 1002           11%  typical
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   82.2%  ▃······▅·█▅● beats 9/10   easy · avg 81%    2.6%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   20.5%  █··●·······█ beats 1/2    hard · avg 16%    0.9%  blunt · noisy · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        2   13% ▇▇
+<a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 64.3
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

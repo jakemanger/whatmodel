@@ -6,28 +6,49 @@
 
 Meta · released 2022-05 · 13B params · opt-175b-license-noncommercial
 
-**score 26.6** ±1.4 · #871 of 934 · from 7 benchmark results across 2 sources
+**score 26.1** ±1.3 · #889 of 949 · from 11 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks OPT-13B (13 billion parameters) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (11)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        32.9%  █··▁·▁▁·▁▂●▂ beats 17/19   medium · avg 72%        20%  sharp
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           65.2%  ▄····▄▆▂▄▆▆● beats 16/19   easy · avg 89%          17%  at its level
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                             67.1%  ▃·▅▃▃▅·██▃●█ beats 15/19   very easy · avg 90%     17%  at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-23%2005%3A24%3A22.772239.json">Natural Questions (closed book)</a>      13.5%  ▁·▁·▁▂▁▂·●▂█ beats 10/28   medium · avg 58%        14%  typical
+<a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 76.0%  ▂·▄▄·▄▂▆▂▄●▄ beats 15/19   easy · avg 88%         9.4%  blunt · at its level
+<a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 90.8%  ▂··▂▃▂▂▆▃▃●▂ beats 17/19   very easy · avg 98%    8.5%  typical
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   68.6%  ▃··▅▃▃▅▅▅█●█ beats 16/19   very easy · avg 89%    7.0%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2024-05-19%2018%3A26%3A05.712584.json">TriviaQA</a>                             41.0%  ▁··▁█▃▃▁▄●▄█ beats 16/28   easy · avg 79%         2.3%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   28.2%  ●▁▁▁▁▁▁▁▂█▅▁ beats 15/276  medium · avg 73%       1.9%  noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-22%2023%3A28%3A13.543609.json">TruthfulQA MC2</a>                       34.0%  ●▃█▆▁▂▅···▁▁ beats 1/31    medium · avg 64%       1.2%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-28%2004%3A38%3A57.693135.json">HaluEval QA hallucination detecti…</a>   35.3%  ●▁▁·▁▁·▁▁▁▁▁ beats 8/27    medium · avg 70%       0.7%  sharp · too hard for it · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   32.9%    28.9   2023-05-31   27% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      65.2%    27.2   2023-05-31   20% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        67.1%    24.6   2023-05-31   20% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            76.0%    26.3   2023-05-31   11% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            90.8%    24.6   2023-05-31   10% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  68.6%    26.8   2023-05-31    9% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.2%    11.4   2024-02-05    2% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 26.6
+source                                    results  share of the score
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   79% ▇▇▇▇▇▇▇▇▇▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/facebook/opt-13b/results_2023-12-23%2005%3A24%3A22.772239.json">Hallucinations Leaderboard results</a>              4   18% ▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 26.1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -35,14 +56,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~25.71GB   26.6
+4-bit fp16  ~25.71GB   26.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp16
+# 4-bit fp16 · ~25.71GB
 uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-13b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/opt-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

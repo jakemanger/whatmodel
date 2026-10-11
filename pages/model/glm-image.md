@@ -6,25 +6,63 @@
 
 Z.ai · released 2026-01 · 16B params · mit
 
-**score 49.8** ±2.0 · #82 of 144 · from 4 benchmark results across 4 sources
+**score 50.0** ±2.0 · #82 of 144 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks GLM-Image among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1012.0    48.2   2026-09-24   58% ▇▇▇▇▇▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   83.9%    51.5   2026-08-25   25% ▇▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>      979.0    53.1   2026-03-30    9% ▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   48.2%    53.7   2026-05-27    6% ▇
-prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 49.8
+task                    vs the others        rank  counts  tests
+text to image           ▂▅▅▃●▄█▃▁▂▁▁   #70 of 126     90%      9
+image to image / edit…  ▁▁·▃▂▃●▃▃▄▁▁   #43 of 62*    8.8%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #70 of 126 · 90% of its score</summary>
+
+Beats [Recraft V3](recraft-v3.md) here, though they rank higher overall. Trails [Runway Gen-4 Image](runway-gen-4-image.md) here, though they rank lower overall.
+
+<pre>
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>              1012.1  ▂▂●▄▇█▄▂▄▂·▂ beats 6/75   avg 1027             58%  typical
+<a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>   83.9%  ▄····▄●▄▄█▄█ beats 2/10   easy · avg 82%       25%  typical
+<a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>     48.2%  ●▅▅·▅▅█·█··▃ beats 0/17   medium · avg 46%    6.3%  blunt · at its level
+<a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">DPG-Bench (lab)</a>                     84.8%  ▄·▂·▂●█▄▂▄▂▂ beats 4/17                          —  not counted yet: no other model in the …
+<a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">LongText-Bench (EN) (lab)</a>           95.2%  ▃·····▅██●▃▃ beats 9/12                          —  not counted yet: no other model in the …
+<a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">LongText-Bench (CN) (lab)</a>           97.9%  ▃·······███● beats 12/12                         —  not counted yet: no other model in the …
+<a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">OneIG-Bench (EN) (lab)</a>              52.8%  ▃······▃●█▅▃ beats 3/9                           —  not counted yet: no other model in the …
+<a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">OneIG-Bench (CN) (lab)</a>              51.1%  ▃·▃█●·▃··▃·▃ beats 5/8                           —  not counted yet: no other model in the …
+<a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">CVTG-2K word accuracy (lab)</a>         91.2%  ▄▄▄█▄▄·▄···● beats 8/8                           —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #43 of 62 · 8.8% of its score</summary>
+
+Beats [GPT Image 1 Mini](gpt-image-1-mini.md), [FLUX.1 Kontext \[max\]](flux-1-kontext-max.md), [Qwen-Image](qwen-image.md) here, though they rank higher overall.
+
+<pre>
+test                         result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>   979.0  ▃▂····●█▂▃▂▃ beats 3/14   avg 956       8.8%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   58% ▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a><a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench: Scalable Question-Centric…</a>        1   25% ▇▇▇
+<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    9% ▇
+<a name="visual-qwenbench"></a><a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench: From Generation to Cr…</a>        1    6% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 50.0
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
@@ -50,18 +88,22 @@ api (Z.ai) · $0.015/image · [docs.z.ai](https://docs.z.ai/guides/image/glm-ima
 
 <pre>
 version                                   needs  score
-bf16 · nvidia only                      ~38.9GB   49.8
-bf16 (model cpu offload) · nvidia only  ~38.9GB   49.8
+bf16 · nvidia only                      ~38.9GB   50.0
+bf16 (model cpu offload) · nvidia only  ~38.9GB   50.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~38.9GB
 uv run --with git+https://github.com/huggingface/diffusers --with git+https://github.com/huggingface/transformers --with accelerate --with torch python -c "import torch; from diffusers.pipelines.glm_image import GlmImagePipeline; p=GlmImagePipeline.from_pretrained('zai-org/GLM-Image', torch_dtype=torch.bfloat16, device_map='cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=1.5).images[0].save('out.png')"
-# bf16 (model cpu offload) · nvidia only
+# bf16 (model cpu offload) · nvidia only · ~38.9GB
 uv run --with git+https://github.com/huggingface/diffusers --with git+https://github.com/huggingface/transformers --with accelerate --with torch python -c "import torch; from diffusers.pipelines.glm_image import GlmImagePipeline; p=GlmImagePipeline.from_pretrained('zai-org/GLM-Image', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=1.5).images[0].save('out.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 

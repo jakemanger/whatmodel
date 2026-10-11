@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · **video** · [tts](tts.md) · [stt](stt.md)
 
-updated 2026-10-11 00:18 UTC · 142 models · scores combine 54 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
+updated 2026-10-11 02:20 UTC · 142 models · scores combine 55 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
 
 Run `curl "whatmodel.sh/video?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/video` for this list in your terminal.
 
@@ -47,8 +47,8 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
        │  ·P-Video        │     ◇  ·◇       ◇        ·    ◇             ·
        │  ◆─────◆─Wan 2.6 Flash  ◇ ◇◇           ∘        ◇
        │  ·                  ∘   ◇ ·    ◇     ∘      ·    ∘             ·        ◇
-       │                                        ∘                            ∘
-       │  ∘                        ·             ◇   ·                  ·
+       │                                        ∘
+       │  ∘                        ·             ◇   ·                  ·    ∘
        │
     40 ┤ ··· · · · · · · · · ∘ · · · · · · · · · · · · · · · · · · · · ··· · · · · · · · · · ·
        │                     ◇     ◇
@@ -68,8 +68,8 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
        │  ·               ·               ·                │    ·               ·
     60 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · │ · · · · · · · · · · · · · · · · ·
        │  ·               ·        LTX-2.5·          ●─Wan 2.2 I2V A14B         ·          ∘
-       │                          ●───────∘──────────┘      ∘         ∘  ∘
-       │  ·        Wan 2.2 TI2V 5B│       ·    ∘     ∘ ∘        ·               ∘ ∘ ∘
+       │                          ●───────∘──────────┘                ∘  ∘
+       │  ·        Wan 2.2 TI2V 5B│       ·    ∘     ∘ ∘    ∘   ·               ∘ ∘ ∘
        │          ●──────────────∘┘       ∘        ∘∘      ∘       ∘
        │  ·       │  ∘    ·      ∘        ·                     · ∘             ·
     40 ┤ · · · · ·∘· · ·∘· · · · · · · · · · · ∘ ·∘· · · · · · · · · · · · · · · · · · · · · ·
@@ -85,149 +85,149 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
 </details>
 
 <pre>
-  #  model                                     score  where                     RAM  get it
-  1  <a href="model/gemini-omni-1-1-flash.md">Gemini Omni 1.1 Flash</a>                     81±2   api $0.10/sec                  <a href="https://ai.google.dev/gemini-api/docs/pricing">ai.google.dev</a>
-  2  <a href="model/wan-3-0-prime.md">Wan 3.0 Prime</a>                             80±7*  api $0.14/sec                  <a href="https://www.alibabacloud.com/help/en/model-studio/video-generation">alibabacloud.com</a>
-  3  <a href="model/gemini-omni-flash.md">Gemini Omni Flash</a>                         80±2   api $0.10/sec                  <a href="https://ai.google.dev/gemini-api/docs/pricing">ai.google.dev</a>
-  4  <a href="model/wan-3-0.md">Wan 3.0</a>                                   79±2   api $0.10/sec                  <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
-  5  <a href="model/seedance-2-0.md">Dreamina Seedance 2.0</a>                     79±1   api $0.30/sec                  <a href="https://fal.ai/models/bytedance/seedance-2.0/text-to-video">fal.ai</a>
-  6  <a href="model/minimax-h3.md">MiniMax H3</a>                                78±1   api $0.13/sec +local    ~40GB  <a href="https://fal.ai/models/minimax/h3/text-to-video">fal.ai</a>
-  7  <a href="model/seedance-2-5.md">Dreamina Seedance 2.5</a>                     77±2   api $0.30/sec                  <a href="https://docs.dev.runwayml.com/guides/pricing">docs.dev.runwayml.c…</a>
-  8  <a href="model/flux-3-video.md">FLUX 3 Video</a>                              77±2   api $0.17/sec                  <a href="https://docs.bfl.ai/flux_3/flux3_video">docs.bfl.ai</a>
-  9  <a href="model/happyhorse-1-1.md">HappyHorse 1.1</a>                            76±3   api $0.14/sec                  <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
- 10  <a href="model/minimax-h3-max.md">MiniMax H3 Max</a>                            76±4*  api $0.080/sec                 <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">platform.minimax.io</a>
+  #  model                                     score  where                  RAM  get it
+  1  <a href="model/gemini-omni-1-1-flash.md">Gemini Omni 1.1 Flash</a>                     81±2   api $0.10/sec               <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
+  2  <a href="model/wan-3-0-prime.md">Wan 3.0 Prime</a>                             80±7*  api $0.14/sec               <a href="https://www.alibabacloud.com/help/en/model-studio/video-generation">alibabacloud.co…</a>
+  3  <a href="model/gemini-omni-flash.md">Gemini Omni Flash</a>                         80±2   api $0.10/sec               <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
+  4  <a href="model/wan-3-0.md">Wan 3.0</a>                                   79±2   api $0.10/sec               <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
+  5  <a href="model/seedance-2-0.md">Dreamina Seedance 2.0</a>                     79±1   api $0.30/sec               <a href="https://fal.ai/models/bytedance/seedance-2.0/text-to-video">fal.ai ↗</a>
+  6  <a href="model/minimax-h3.md">MiniMax H3</a>                                78±1   api $0.13/sec +lo…   ~40GB  <a href="https://fal.ai/models/minimax/h3/text-to-video">fal.ai ↗</a>
+  7  <a href="model/seedance-2-5.md">Dreamina Seedance 2.5</a>                     77±1   api $0.30/sec               <a href="https://docs.dev.runwayml.com/guides/pricing">dev.runwayml.co…</a>
+  8  <a href="model/flux-3-video.md">FLUX 3 Video</a>                              77±2   api $0.17/sec               <a href="https://docs.bfl.ai/flux_3/flux3_video">bfl.ai ↗</a>
+  9  <a href="model/happyhorse-1-1.md">HappyHorse 1.1</a>                            76±3   api $0.14/sec               <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
+ 10  <a href="model/minimax-h3-max.md">MiniMax H3 Max</a>                            76±4*  api $0.080/sec              <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">minimax.io ↗</a>
  11  <a href="model/muse-video.md">Muse Video</a>                                76±2*  comparison only
- 12  <a href="model/grok-imagine-video-1-5.md">Grok Imagine Video 1.5</a>                    75±2   api $0.080/sec                 <a href="https://docs.x.ai/developers/models/grok-imagine-video-1.5">docs.x.ai</a>
+ 12  <a href="model/grok-imagine-video-1-5.md">Grok Imagine Video 1.5</a>                    75±2   api $0.080/sec              <a href="https://docs.x.ai/developers/models/grok-imagine-video-1.5">x.ai ↗</a>
  13  <a href="model/hidream-o1-video-1-0.md">HiDream-O1-Video 1.0</a>                      75±3*  comparison only
- 14  <a href="model/wan-2-2-i2v-flash.md">Wan 2.2 I2V Flash</a>                         75±4*  api $0.036/sec                 <a href="https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference">alibabacloud.com</a>
- 15  <a href="model/happyhorse-1-0.md">HappyHorse 1.0</a>                            73±2   api $0.14/sec                  <a href="https://replicate.com/alibaba/happyhorse-1.0">replicate.com</a>
- 16  <a href="model/wan-2-2-i2v-plus.md">Wan 2.2 I2V Plus</a>                          71±5*  api $0.10/sec                  <a href="https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference">alibabacloud.com</a>
- 17  <a href="model/grok-imagine-video.md">Grok Imagine Video</a>                        69±2   api $0.050/sec                 <a href="https://docs.x.ai/docs/models/grok-imagine-video">docs.x.ai</a>
- 18  <a href="model/kling-3-0-pro.md">Kling 3.0 Pro</a>                             69±2   api $0.11/sec                  <a href="https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video">fal.ai</a>
- 19  <a href="model/veo-3-1.md">Veo 3.1</a>                                   69±1   api $0.40/sec                  <a href="https://ai.google.dev/gemini-api/docs/pricing">ai.google.dev</a>
+ 14  <a href="model/wan-2-2-i2v-flash.md">Wan 2.2 I2V Flash</a>                         75±4*  api $0.036/sec              <a href="https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference">alibabacloud.co…</a>
+ 15  <a href="model/happyhorse-1-0.md">HappyHorse 1.0</a>                            73±2   api $0.14/sec               <a href="https://replicate.com/alibaba/happyhorse-1.0">replicate.com ↗</a>
+ 16  <a href="model/wan-2-2-i2v-plus.md">Wan 2.2 I2V Plus</a>                          71±5*  api $0.10/sec               <a href="https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference">alibabacloud.co…</a>
+ 17  <a href="model/grok-imagine-video.md">Grok Imagine Video</a>                        69±2   api $0.050/sec              <a href="https://docs.x.ai/docs/models/grok-imagine-video">x.ai ↗</a>
+ 18  <a href="model/kling-3-0-pro.md">Kling 3.0 Pro</a>                             69±2   api $0.11/sec               <a href="https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video">fal.ai ↗</a>
+ 19  <a href="model/veo-3-1.md">Veo 3.1</a>                                   69±1   api $0.40/sec               <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
  20  <a href="model/sora-2-pro.md">Sora 2 Pro</a>                                68±2*  comparison only
- 21  <a href="model/veo-3-1-fast.md">Veo 3.1 Fast</a>                              68±1   api $0.10/sec                  <a href="https://ai.google.dev/gemini-api/docs/pricing">ai.google.dev</a>
- 22  <a href="model/kling-3-0.md">Kling 3.0</a>                                 68±4   api $0.084/sec                 <a href="https://kling.ai/dev/pricing">kling.ai</a>
- 23  <a href="model/wan-2-7.md">Wan 2.7</a>                                   68±2   api $0.10/sec                  <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
- 24  <a href="model/vidu-q3-pro.md">Vidu Q3 Pro</a>                               65±2   api $0.10/sec                  <a href="https://platform.vidu.com/docs/pricing">platform.vidu.com</a>
+ 21  <a href="model/veo-3-1-fast.md">Veo 3.1 Fast</a>                              68±1   api $0.10/sec               <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
+ 22  <a href="model/kling-3-0.md">Kling 3.0</a>                                 68±4   api $0.084/sec              <a href="https://kling.ai/dev/pricing">kling.ai ↗</a>
+ 23  <a href="model/wan-2-7.md">Wan 2.7</a>                                   68±2   api $0.10/sec               <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
+ 24  <a href="model/vidu-q3-pro.md">Vidu Q3 Pro</a>                               65±2   api $0.10/sec               <a href="https://platform.vidu.com/docs/pricing">vidu.com ↗</a>
  25  <a href="model/veo-3-fast.md">Veo 3 Fast</a>                                65±2   comparison only
- 26  <a href="model/runway-aleph-2.md">Runway Aleph 2.0</a>                          65±7*  api $0.28/sec                  <a href="https://docs.dev.runwayml.com/guides/models">docs.dev.runwayml.c…</a>
+ 26  <a href="model/runway-aleph-2.md">Runway Aleph 2.0</a>                          65±7*  api $0.28/sec               <a href="https://docs.dev.runwayml.com/guides/models">dev.runwayml.co…</a>
  27  <a href="model/sora-2.md">Sora 2</a>                                    65±2   comparison only
- 28  <a href="model/wan-2-6.md">Wan 2.6</a>                                   65±1   api $0.10/sec                  <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
+ 28  <a href="model/wan-2-6.md">Wan 2.6</a>                                   65±1   api $0.10/sec               <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
  29  <a href="model/wan-2-1-vace-14b.md">Wan2.1-VACE-14B</a>                           65±7*  comparison only
  30  <a href="model/veo-3.md">Veo 3</a>                                     64±2   comparison only
- 31  <a href="model/kling-o3-pro.md">Kling O3 Pro</a>                              64±4*  api $0.11/sec                  <a href="https://fal.ai/models/fal-ai/kling-video/o3/pro/text-to-video">fal.ai</a>
- 32  <a href="model/seedance-1-0-pro-fast.md">Seedance 1.0 Pro Fast</a>                    62±11*  api $0.049/sec                 <a href="https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/text-to-video">fal.ai</a>
- 33  <a href="model/wan-2-5-preview.md">Wan 2.5 Preview</a>                           60±2   api $0.10/sec                  <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
- 34  <a href="model/kling-2-6-pro.md">Kling 2.6 Pro</a>                             59±2   api $0.070/sec                 <a href="https://fal.ai/models/fal-ai/kling-video/v2.6/pro/text-to-video">fal.ai</a>
- 35  <a href="model/pixverse-v5-6.md">PixVerse V5.6</a>                             59±2   api $0.045/sec                 <a href="https://docs.platform.pixverse.ai/model-pricing-796039m0">docs.platform.pixve…</a>
- 36  <a href="model/runway-gen-4-5.md">Runway Gen-4.5</a>                            58±2   api $0.12/sec                  <a href="https://docs.dev.runwayml.com/guides/pricing/">docs.dev.runwayml.c…</a>
- 37  <a href="model/wan-2-1-i2v-plus.md">Wan 2.1 I2V Plus</a>                          58±5*  api price unknown              <a href="https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference">alibabacloud.com</a>
- 38  <a href="model/cosmos3-super.md">Cosmos3-Super</a>                            58±4*†  local                  ~160GB  uvx --from huggingf…
- 39  <a href="model/seedance-1-5-pro.md">Seedance 1.5 Pro</a>                          58±2   api $0.052/sec                 <a href="https://fal.ai/models/fal-ai/bytedance/seedance/v1.5/pro/text-to-video">fal.ai</a>
- 40  <a href="model/kling-2-5-turbo-pro.md">Kling 2.5 Turbo Pro</a>                       57±2   api $0.070/sec                 <a href="https://fal.ai/models/fal-ai/kling-video/v2.5-turbo/pro/text-to-video">fal.ai</a>
+ 31  <a href="model/kling-o3-pro.md">Kling O3 Pro</a>                              64±4*  api $0.11/sec               <a href="https://fal.ai/models/fal-ai/kling-video/o3/pro/text-to-video">fal.ai ↗</a>
+ 32  <a href="model/seedance-1-0-pro-fast.md">Seedance 1.0 Pro Fast</a>                    62±11*  api $0.049/sec              <a href="https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/text-to-video">fal.ai ↗</a>
+ 33  <a href="model/wan-2-5-preview.md">Wan 2.5 Preview</a>                           61±2   api $0.10/sec               <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
+ 34  <a href="model/kling-2-6-pro.md">Kling 2.6 Pro</a>                             59±2   api $0.070/sec              <a href="https://fal.ai/models/fal-ai/kling-video/v2.6/pro/text-to-video">fal.ai ↗</a>
+ 35  <a href="model/pixverse-v5-6.md">PixVerse V5.6</a>                             59±2   api $0.045/sec              <a href="https://docs.platform.pixverse.ai/model-pricing-796039m0">platform.pixver…</a>
+ 36  <a href="model/runway-gen-4-5.md">Runway Gen-4.5</a>                            58±2   api $0.12/sec               <a href="https://docs.dev.runwayml.com/guides/pricing/">dev.runwayml.co…</a>
+ 37  <a href="model/wan-2-1-i2v-plus.md">Wan 2.1 I2V Plus</a>                          58±5*  api price unknown           <a href="https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference">alibabacloud.co…</a>
+ 38  <a href="model/cosmos3-super.md">Cosmos3-Super</a>                            58±4*†  local               ~160GB  <a href="model/cosmos3-super.md#run-it-on-your-own-machine">how to run ›</a>
+ 39  <a href="model/seedance-1-5-pro.md">Seedance 1.5 Pro</a>                          58±2   api $0.052/sec              <a href="https://fal.ai/models/fal-ai/bytedance/seedance/v1.5/pro/text-to-video">fal.ai ↗</a>
+ 40  <a href="model/kling-2-5-turbo-pro.md">Kling 2.5 Turbo Pro</a>                       57±2   api $0.070/sec              <a href="https://fal.ai/models/fal-ai/kling-video/v2.5-turbo/pro/text-to-video">fal.ai ↗</a>
  41  <a href="model/runway-aleph.md">Runway Aleph</a>                              56±5*  comparison only
- 42  <a href="model/wan-2-2-i2v-a14b.md">Wan 2.2 I2V A14B</a>                          56±2   api $0.080/sec +local   ~31GB  <a href="https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video">fal.ai</a>
- 43  <a href="model/seedance-1-0-pro.md">Seedance 1.0 Pro</a>                          56±2   api $0.052/sec                 <a href="https://docs.byteplus.com/en/docs/ModelArk/1544106">docs.byteplus.com</a>
- 44  <a href="model/kling-o1-pro.md">Kling O1 Pro</a>                              56±2*  api $0.11/sec                  <a href="https://replicate.com/kwaivgi/kling-o1">replicate.com</a>
- 45  <a href="model/wan-2-6-flash.md">Wan 2.6 Flash</a>                             55±7*  api $0.025/sec                 <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
- 46  <a href="model/p-video.md">P-Video</a>                                   55±2   api $0.020/sec                 <a href="https://replicate.com/prunaai/p-video">replicate.com</a>
- 47  <a href="model/vidu-q2-turbo.md">Vidu Q2 Turbo</a>                             55±3*  api $0.050/sec                 <a href="https://fal.ai/models/fal-ai/vidu/q2/image-to-video/turbo">fal.ai</a>
- 48  <a href="model/hailuo-2-3.md">Hailuo 2.3</a>                                55±2   api $0.047/sec                 <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">platform.minimax.io</a>
+ 42  <a href="model/wan-2-2-i2v-a14b.md">Wan 2.2 I2V A14B</a>                          56±2   api $0.080/sec +l…   ~31GB  <a href="https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video">fal.ai ↗</a>
+ 43  <a href="model/seedance-1-0-pro.md">Seedance 1.0 Pro</a>                          56±2   api $0.052/sec              <a href="https://docs.byteplus.com/en/docs/ModelArk/1544106">byteplus.com ↗</a>
+ 44  <a href="model/kling-o1-pro.md">Kling O1 Pro</a>                              56±2*  api $0.11/sec               <a href="https://replicate.com/kwaivgi/kling-o1">replicate.com ↗</a>
+ 45  <a href="model/wan-2-6-flash.md">Wan 2.6 Flash</a>                             55±7*  api $0.025/sec              <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
+ 46  <a href="model/p-video.md">P-Video</a>                                   55±2   api $0.020/sec              <a href="https://replicate.com/prunaai/p-video">replicate.com ↗</a>
+ 47  <a href="model/vidu-q2-turbo.md">Vidu Q2 Turbo</a>                             55±3*  api $0.050/sec              <a href="https://fal.ai/models/fal-ai/vidu/q2/image-to-video/turbo">fal.ai ↗</a>
+ 48  <a href="model/hailuo-2-3.md">Hailuo 2.3</a>                                55±2   api $0.047/sec              <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">minimax.io ↗</a>
  49  <a href="model/luma-ray-3.md">Ray 3</a>                                     55±2   comparison only
  50  <a href="model/vidu-q3.md">Vidu Q3</a>                                  54±12*  comparison only
- 51  <a href="model/kling-2-1-standard.md">Kling 2.1 Standard</a>                        54±3*  api $0.050/sec                 <a href="https://replicate.com/kwaivgi/kling-v2.1">replicate.com</a>
- 52  <a href="model/hailuo-02.md">Hailuo 02</a>                                 53±2   api $0.047/sec                 <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">platform.minimax.io</a>
- 53  <a href="model/ltx-2-5.md">LTX-2.5</a>                                   53±6*  api $0.12/sec +local    ~14GB  <a href="https://docs.ltx.io/pricing.md">docs.ltx.io</a>
+ 51  <a href="model/kling-2-1-standard.md">Kling 2.1 Standard</a>                        54±3*  api $0.050/sec              <a href="https://replicate.com/kwaivgi/kling-v2.1">replicate.com ↗</a>
+ 52  <a href="model/hailuo-02.md">Hailuo 02</a>                                 54±2   api $0.047/sec              <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">minimax.io ↗</a>
+ 53  <a href="model/ltx-2-5.md">LTX-2.5</a>                                   53±6*  api $0.12/sec +lo…   ~14GB  <a href="https://docs.ltx.io/pricing.md">ltx.io ↗</a>
  54  <a href="model/vidu-q2-pro.md">Vidu Q2 Pro</a>                               53±3*  comparison only
- 55  <a href="model/hunyuanvideo-1-5-i2v.md">HunyuanVideo 1.5 (I2V)</a>                    53±2   api $0.075/sec +local   ~66GB  <a href="https://fal.ai/models/fal-ai/hunyuan-video-v1.5/image-to-video">fal.ai</a>
- 56  <a href="model/kling-2-1-master.md">Kling 2.1 Master</a>                          53±2*  api $0.28/sec                  <a href="https://replicate.com/kwaivgi/kling-v2.1-master">replicate.com</a>
- 57  <a href="model/kandinsky-5-0-pro.md">Kandinsky 5.0 Pro</a>                         52±2*  api $0.040/sec +local   ~76GB  <a href="https://fal.ai/models/fal-ai/kandinsky5-pro/text-to-video">fal.ai</a>
+ 55  <a href="model/hunyuanvideo-1-5-i2v.md">HunyuanVideo 1.5 (I2V)</a>                    53±2   api $0.075/sec +l…   ~66GB  <a href="https://fal.ai/models/fal-ai/hunyuan-video-v1.5/image-to-video">fal.ai ↗</a>
+ 56  <a href="model/kling-2-1-master.md">Kling 2.1 Master</a>                          53±2*  api $0.28/sec               <a href="https://replicate.com/kwaivgi/kling-v2.1-master">replicate.com ↗</a>
+ 57  <a href="model/kandinsky-5-0-pro.md">Kandinsky 5.0 Pro</a>                         52±2*  api $0.040/sec +l…   ~76GB  <a href="https://fal.ai/models/fal-ai/kandinsky5-pro/text-to-video">fal.ai ↗</a>
  58  <a href="model/hy-omniweaving.md">HY-OmniWeaving</a>                            52±4   comparison only
- 59  <a href="model/hunyuanvideo-1-5.md">HunyuanVideo 1.5</a>                          52±2   api $0.075/sec +local   ~20GB  <a href="https://fal.ai/models/fal-ai/hunyuan-video-v1.5/text-to-video">fal.ai</a>
- 60  <a href="model/cosmos3-nano.md">Cosmos3-Nano</a>                              52±3   local                   ~42GB  uvx --from huggingf…
- 61  <a href="model/pixverse-v5-5.md">PixVerse 5.5</a>                             52±10*  api $0.060/sec                 <a href="https://docs.platform.pixverse.ai/model-pricing-796039m0">docs.platform.pixve…</a>
+ 59  <a href="model/hunyuanvideo-1-5.md">HunyuanVideo 1.5</a>                          52±2   api $0.075/sec +l…   ~20GB  <a href="https://fal.ai/models/fal-ai/hunyuan-video-v1.5/text-to-video">fal.ai ↗</a>
+ 60  <a href="model/cosmos3-nano.md">Cosmos3-Nano</a>                              52±3   local                ~42GB  <a href="model/cosmos3-nano.md#run-it-on-your-own-machine">how to run ›</a>
+ 61  <a href="model/pixverse-v5-5.md">PixVerse 5.5</a>                             52±10*  api $0.060/sec              <a href="https://docs.platform.pixverse.ai/model-pricing-796039m0">platform.pixver…</a>
  62  <a href="model/kling-1-6-pro.md">Kling 1.6 (Pro mode)</a>                      52±4*  comparison only
- 63  <a href="model/longcat-video.md">LongCat-Video</a>                             51±2   api $0.040/sec +local  ~100GB  <a href="https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p">fal.ai</a>
- 64  <a href="model/kandinsky-6-0-lite.md">Kandinsky 6.0 Video Lite</a>                 51±7*†  local                   ~34GB  uv run --with git+h…
+ 63  <a href="model/longcat-video.md">LongCat-Video</a>                             51±2   api $0.040/sec +l…  ~100GB  <a href="https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p">fal.ai ↗</a>
+ 64  <a href="model/kandinsky-6-0-lite.md">Kandinsky 6.0 Video Lite</a>                 51±7*†  local                ~34GB  <a href="model/kandinsky-6-0-lite.md#run-it-on-your-own-machine">how to run ›</a>
  65  <a href="model/seaweed-7b.md">Seaweed-7B</a>                               50±6*†  comparison only
  66  <a href="model/luma-dream-machine-1-6.md">Luma Dream Machine 1.6</a>                    50±7*  comparison only
- 67  <a href="model/wan-2-2-a14b.md">Wan 2.2 A14B</a>                              50±2   api $0.080/sec +local   ~31GB  <a href="https://fal.ai/models/fal-ai/wan/v2.2-a14b/text-to-video">fal.ai</a>
+ 67  <a href="model/wan-2-2-a14b.md">Wan 2.2 A14B</a>                              50±2   api $0.080/sec +l…   ~31GB  <a href="https://fal.ai/models/fal-ai/wan/v2.2-a14b/text-to-video">fal.ai ↗</a>
  68  <a href="model/runway-gen-4.md">Runway Gen-4</a>                              50±4*  comparison only
  69  <a href="model/veo-2.md">Veo 2</a>                                     50±2   comparison only
- 70  <a href="model/ltx-2.md">LTX-2</a>                                     49±2   local                  ~120GB  pip install git+htt…
- 71  <a href="model/open-sora-plan-1-3.md">Open-Sora Plan v1.3 (T2V)</a>                 49±7*  local                   ~24GB  git clone https://g…
+ 70  <a href="model/ltx-2.md">LTX-2</a>                                     49±2   local               ~120GB  <a href="model/ltx-2.md#run-it-on-your-own-machine">how to run ›</a>
+ 71  <a href="model/open-sora-plan-1-3.md">Open-Sora Plan v1.3 (T2V)</a>                 49±7*  local                ~24GB  <a href="model/open-sora-plan-1-3.md#run-it-on-your-own-machine">how to run ›</a>
  72  <a href="model/cosmos-1-0-diffusion-7b-video2world.md">Cosmos-1.0-Diffusion-7B-V…</a>               49±5*†  comparison only
- 73  <a href="model/cosmos-predict2-5-2b.md">Cosmos-Predict2.5-2B</a>                      49±2   comparison only
- 74  <a href="model/seedance-1-0-lite.md">Seedance 1.0 Lite</a>                         48±2   comparison only
+ 73  <a href="model/seedance-1-0-lite.md">Seedance 1.0 Lite</a>                         48±2   comparison only
+ 74  <a href="model/cosmos-predict2-5-2b.md">Cosmos-Predict2.5-2B</a>                      48±2   comparison only
  75  <a href="model/cosmos-predict2-14b-video2world.md">Cosmos-Predict2-14B-Video…</a>                48±8*  comparison only
  76  <a href="model/magi-1-24b.md">MAGI-1 24B</a>                                48±4*  comparison only
- 77  <a href="model/kandinsky-6-0-pro.md">Kandinsky 6.0 Video Pro</a>                  48±7*†  local                  ~109GB  uv run --with git+h…
+ 77  <a href="model/kandinsky-6-0-pro.md">Kandinsky 6.0 Video Pro</a>                  48±7*†  local               ~109GB  <a href="model/kandinsky-6-0-pro.md#run-it-on-your-own-machine">how to run ›</a>
  78  <a href="model/wan-2-1-i2v-14b-720p.md">Wan2.1-I2V-14B-720P</a>                       48±4*  comparison only
  79  <a href="model/cosmos-predict2-2b-video2world.md">Cosmos-Predict2-2B-Video2…</a>                48±8*  comparison only
- 80  <a href="model/wan-2-1-14b.md">Wan 2.1 14B</a>                               48±2   api $0.24/sec +local    ~20GB  <a href="https://replicate.com/wavespeedai/wan-2.1-t2v-720p">replicate.com</a>
- 81  <a href="model/wan-2-2-5b.md">Wan 2.2 TI2V 5B</a>                           47±2   api price unknown +l…  ~6.5GB  <a href="https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-video">fal.ai</a>
- 82  <a href="model/kandinsky-5-0-t2v-lite.md">Kandinsky 5.0 T2V Lite</a>                    47±2*  local                   ~29GB  uv run --with torch…
- 83  <a href="model/ltx-2-19b-distilled.md">LTX-2 19B Distilled</a>                       47±8*  api $0.020/sec +local   ~41GB  <a href="https://replicate.com/lightricks/ltx-2-distilled">replicate.com</a>
+ 80  <a href="model/wan-2-1-14b.md">Wan 2.1 14B</a>                               47±2   api $0.24/sec +lo…   ~20GB  <a href="https://replicate.com/wavespeedai/wan-2.1-t2v-720p">replicate.com ↗</a>
+ 81  <a href="model/wan-2-2-5b.md">Wan 2.2 TI2V 5B</a>                           47±2   api price unknown…  ~6.5GB  <a href="https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-video">fal.ai ↗</a>
+ 82  <a href="model/kandinsky-5-0-t2v-lite.md">Kandinsky 5.0 T2V Lite</a>                    47±2*  local                ~29GB  <a href="model/kandinsky-5-0-t2v-lite.md#run-it-on-your-own-machine">how to run ›</a>
+ 83  <a href="model/ltx-2-19b-distilled.md">LTX-2 19B Distilled</a>                       47±8*  api $0.020/sec +l…   ~41GB  <a href="https://replicate.com/lightricks/ltx-2-distilled">replicate.com ↗</a>
  84  <a href="model/cosmos-predict2-5-14b.md">Cosmos-Predict2.5-14B</a>                     47±3   comparison only
- 85  <a href="model/cogvideox-5b-i2v.md">CogVideoX-5B-I2V</a>                          46±4   local                   ~13GB  python -c "import t…
- 86  <a href="model/cosmos-1-0-diffusion-7b-text2world.md">Cosmos-1.0-Diffusion-7B-T…</a>                46±3   local                   ~30GB  uv run --with torch…
- 87  <a href="model/hailuo-01.md">Hailuo 01 (MiniMax video-…</a>                46±4*  api $0.083/sec                 <a href="https://fal.ai/models/fal-ai/minimax/video-01/image-to-video">fal.ai</a>
+ 85  <a href="model/cogvideox-5b-i2v.md">CogVideoX-5B-I2V</a>                          46±4   local                ~13GB  <a href="model/cogvideox-5b-i2v.md#run-it-on-your-own-machine">how to run ›</a>
+ 86  <a href="model/cosmos-1-0-diffusion-7b-text2world.md">Cosmos-1.0-Diffusion-7B-T…</a>                46±3   local                ~30GB  <a href="model/cosmos-1-0-diffusion-7b-text2world.md#run-it-on-your-own-machine">how to run ›</a>
+ 87  <a href="model/hailuo-01.md">Hailuo 01 (MiniMax video-…</a>                46±4*  api $0.083/sec              <a href="https://fal.ai/models/fal-ai/minimax/video-01/image-to-video">fal.ai ↗</a>
  88  <a href="model/kling-1-6-std.md">Kling 1.6 (Standard mode)</a>                 45±5*  comparison only
- 89  <a href="model/hunyuanvideo-i2v.md">HunyuanVideo-I2V</a>                          45±4   local                   ~57GB  git clone https://g…
- 90  <a href="model/stepvideo-t2v.md">Step-Video-T2V</a>                            45±7*  comparison only
- 91  <a href="model/cogvideox-5b.md">CogVideoX-5B</a>                              44±2   api price unknown +l…   ~13GB  <a href="https://fal.ai/models/fal-ai/cogvideox-5b">fal.ai</a>
+ 89  <a href="model/stepvideo-t2v.md">Step-Video-T2V</a>                            45±7*  comparison only
+ 90  <a href="model/hunyuanvideo-i2v.md">HunyuanVideo-I2V</a>                          45±4   local                ~57GB  <a href="model/hunyuanvideo-i2v.md#run-it-on-your-own-machine">how to run ›</a>
+ 91  <a href="model/cogvideox-5b.md">CogVideoX-5B</a>                              44±2   api price unknown…   ~13GB  <a href="https://fal.ai/models/fal-ai/cogvideox-5b">fal.ai ↗</a>
  92  <a href="model/stepvideo-ti2v.md">Step-Video-TI2V</a>                           44±7*  comparison only
- 93  <a href="model/wan-2-1-i2v-turbo.md">Wan 2.1 I2V Turbo</a>                         43±7*  api price unknown              <a href="https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference">alibabacloud.com</a>
+ 93  <a href="model/wan-2-1-i2v-turbo.md">Wan 2.1 I2V Turbo</a>                         43±7*  api price unknown           <a href="https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference">alibabacloud.co…</a>
  94  <a href="model/luma-ray-2.md">Ray 2</a>                                     43±2   comparison only
- 95  <a href="model/open-sora-2-0.md">Open-Sora 2.0</a>                             43±5*  local                   ~55GB  git clone https://g…
- 96  <a href="model/pyramid-flow-sd3.md">Pyramid Flow (SD3)</a>                        42±3*  local                    ~8GB  git clone https://g…
+ 95  <a href="model/open-sora-2-0.md">Open-Sora 2.0</a>                             42±5*  local                ~55GB  <a href="model/open-sora-2-0.md#run-it-on-your-own-machine">how to run ›</a>
+ 96  <a href="model/pyramid-flow-sd3.md">Pyramid Flow (SD3)</a>                        42±3*  local                 ~8GB  <a href="model/pyramid-flow-sd3.md#run-it-on-your-own-machine">how to run ›</a>
  97  <a href="model/luma-dream-machine-1-0.md">Luma Dream Machine 1.0</a>                    42±7*  comparison only
- 98  <a href="model/sora.md">Sora (original, 2024)</a>                     41±2   comparison only
- 99  <a href="model/wan-2-1-1-3b.md">Wan 2.1 T2V 1.3B</a>                          40±4   api $0.040/sec +local  ~8.6GB  <a href="https://replicate.com/wan-video/wan-2.1-1.3b">replicate.com</a>
-100  <a href="model/mochi-1.md">Mochi 1</a>                                   40±2   api price unknown +l…  ~6.5GB  <a href="https://replicate.com/genmoai/mochi-1">replicate.com</a>
+ 98  <a href="model/sora.md">Sora (original, 2024)</a>                     42±2   comparison only
+ 99  <a href="model/wan-2-1-1-3b.md">Wan 2.1 T2V 1.3B</a>                          40±4   api $0.040/sec +l…  ~8.6GB  <a href="https://replicate.com/wan-video/wan-2.1-1.3b">replicate.com ↗</a>
+100  <a href="model/mochi-1.md">Mochi 1</a>                                   40±2   api price unknown…  ~6.5GB  <a href="https://replicate.com/genmoai/mochi-1">replicate.com ↗</a>
 101  <a href="model/runway-gen-3-alpha.md">Runway Gen-3 Alpha</a>                        40±3   comparison only
-102  <a href="model/open-sora-plan-1-3-i2v.md">Open-Sora Plan v1.3 (I2V)</a>                 39±7*  local                   ~24GB  git clone https://g…
+102  <a href="model/open-sora-plan-1-3-i2v.md">Open-Sora Plan v1.3 (I2V)</a>                 39±7*  local                ~24GB  <a href="model/open-sora-plan-1-3-i2v.md#run-it-on-your-own-machine">how to run ›</a>
 103  <a href="model/univideo.md">UniVideo</a>                                  39±3*  comparison only
-104  <a href="model/t2v-turbo-ms.md">T2V-Turbo (MS)</a>                           39±7*†  comparison only
-105  <a href="model/hunyuanvideo.md">HunyuanVideo</a>                              39±3   api price unknown +l…   ~28GB  <a href="https://fal.ai/models/fal-ai/hunyuan-video">fal.ai</a>
+104  <a href="model/t2v-turbo-ms.md">T2V-Turbo (MS)</a>                           39±6*†  comparison only
+105  <a href="model/hunyuanvideo.md">HunyuanVideo</a>                              39±3   api price unknown…   ~28GB  <a href="https://fal.ai/models/fal-ai/hunyuan-video">fal.ai ↗</a>
 106  <a href="model/pandora.md">Pandora (world model)</a>                     39±7*  comparison only
-107  <a href="model/t2v-turbo-v2.md">T2V-Turbo-v2</a>                              38±5*  api price unknown +l…  ~9.4GB  <a href="https://replicate.com/chenxwh/t2v-turbo-v2">replicate.com</a>
-108  <a href="model/t2v-turbo-vc2.md">T2V-Turbo (VC2)</a>                           38±3†  local                  ~9.4GB  git clone https://g…
-109  <a href="model/vidu-1-5.md">Vidu 1.5</a>                                  38±3*  comparison only
-110  <a href="model/runway-gen-4-turbo.md">Runway Gen-4 Turbo</a>                        37±3*  api $0.050/sec                 <a href="https://docs.dev.runwayml.com/guides/models">docs.dev.runwayml.c…</a>
+107  <a href="model/t2v-turbo-v2.md">T2V-Turbo-v2</a>                              38±5*  api price unknown…  ~9.4GB  <a href="https://replicate.com/chenxwh/t2v-turbo-v2">replicate.com ↗</a>
+108  <a href="model/vidu-1-5.md">Vidu 1.5</a>                                  38±3*  comparison only
+109  <a href="model/t2v-turbo-vc2.md">T2V-Turbo (VC2)</a>                           38±3†  local               ~9.4GB  <a href="model/t2v-turbo-vc2.md#run-it-on-your-own-machine">how to run ›</a>
+110  <a href="model/runway-gen-4-turbo.md">Runway Gen-4 Turbo</a>                        37±3*  api $0.050/sec              <a href="https://docs.dev.runwayml.com/guides/models">dev.runwayml.co…</a>
 111  <a href="model/magi-1-4-5b.md">MAGI-1 4.5B</a>                               37±5*  comparison only
-112  <a href="model/ltx-2-3.md">LTX-2.3</a>                                   36±3   api $0.040/sec +local   ~34GB  <a href="https://docs.ltx.io/pricing.md">docs.ltx.io</a>
-113  <a href="model/cogvideox-2b.md">CogVideoX-2B</a>                              36±2   local                  ~5.3GB  python -c "import t…
-114  <a href="model/cogvideox-1-5-5b.md">CogVideoX1.5-5B</a>                           36±2   local                   ~38GB  uv run --with torch…
-115  <a href="model/pika-2-2.md">Pika 2.2</a>                                  36±2   api $0.040/sec                 <a href="https://fal.ai/models/fal-ai/pika/v2.2/text-to-video">fal.ai</a>
-116  <a href="model/kling-1-0.md">Kling 1.0</a>                                 35±7*  comparison only
-117  <a href="model/allegro.md">Allegro</a>                                   35±2   local                  ~9.3GB  python -c "import t…
-118  <a href="model/cosmos-1-0-autoregressive-4b.md">Cosmos-1.0-Autoregressive…</a>               34±5*†  comparison only
-119  <a href="model/videocrafter2.md">VideoCrafter2</a>                             34±2   local                  ~9.4GB  git clone https://g…
+112  <a href="model/ltx-2-3.md">LTX-2.3</a>                                   36±3   api $0.040/sec +l…   ~34GB  <a href="https://docs.ltx.io/pricing.md">ltx.io ↗</a>
+113  <a href="model/cogvideox-1-5-5b.md">CogVideoX1.5-5B</a>                           36±2   local                ~38GB  <a href="model/cogvideox-1-5-5b.md#run-it-on-your-own-machine">how to run ›</a>
+114  <a href="model/cogvideox-2b.md">CogVideoX-2B</a>                              36±2   local               ~5.3GB  <a href="model/cogvideox-2b.md#run-it-on-your-own-machine">how to run ›</a>
+115  <a href="model/pika-2-2.md">Pika 2.2</a>                                  36±2   api $0.040/sec              <a href="https://fal.ai/models/fal-ai/pika/v2.2/text-to-video">fal.ai ↗</a>
+116  <a href="model/allegro.md">Allegro</a>                                   35±2   local               ~9.3GB  <a href="model/allegro.md#run-it-on-your-own-machine">how to run ›</a>
+117  <a href="model/kling-1-0.md">Kling 1.0</a>                                 35±7*  comparison only
+118  <a href="model/videocrafter2.md">VideoCrafter2</a>                             34±2   local               ~9.4GB  <a href="model/videocrafter2.md#run-it-on-your-own-machine">how to run ›</a>
+119  <a href="model/cosmos-1-0-autoregressive-4b.md">Cosmos-1.0-Autoregressive…</a>               34±5*†  comparison only
 120  <a href="model/pika-1-0.md">Pika 1.0</a>                                  32±3   comparison only
-121  <a href="model/open-sora-1-1.md">Open-Sora 1.1</a>                             32±7*  local                   ~14GB  git clone https://g…
-122  <a href="model/lavie.md">LaVie (base T2V)</a>                          32±2   local                  ~4.9GB  git clone https://g…
-123  <a href="model/ltx-video-0-9.md">LTX-Video 0.9 (2B)</a>                        32±3*  local                  ~5.3GB  python -c "import t…
+121  <a href="model/open-sora-1-1.md">Open-Sora 1.1</a>                             32±7*  local                ~14GB  <a href="model/open-sora-1-1.md#run-it-on-your-own-machine">how to run ›</a>
+122  <a href="model/lavie.md">LaVie (base T2V)</a>                          32±2   local               ~4.9GB  <a href="model/lavie.md#run-it-on-your-own-machine">how to run ›</a>
+123  <a href="model/ltx-video-0-9.md">LTX-Video 0.9 (2B)</a>                        32±3*  local               ~5.3GB  <a href="model/ltx-video-0-9.md#run-it-on-your-own-machine">how to run ›</a>
 124  <a href="model/cosmos-1-0-autoregressive-5b-video2world.md">Cosmos-1.0-Autoregressive…</a>               31±5*†  comparison only
-125  <a href="model/nova-0-6b-t2v.md">NOVA-0.6B T2V</a>                             29±3*  local                  ~9.3GB  git clone https://g…
-126  <a href="model/zeroscope-v2-576w.md">ZeroScope v2 576w</a>                         27±3   local                  ~7.9GB  python -c "import t…
-127  <a href="model/hotshot-xl.md">Hotshot-XL</a>                                27±2   local                   ~10GB  git clone https://g…
+125  <a href="model/nova-0-6b-t2v.md">NOVA-0.6B T2V</a>                             29±3*  local               ~9.3GB  <a href="model/nova-0-6b-t2v.md#run-it-on-your-own-machine">how to run ›</a>
+126  <a href="model/zeroscope-v2-576w.md">ZeroScope v2 576w</a>                         27±3   local               ~7.9GB  <a href="model/zeroscope-v2-576w.md#run-it-on-your-own-machine">how to run ›</a>
+127  <a href="model/hotshot-xl.md">Hotshot-XL</a>                                27±2   local                ~10GB  <a href="model/hotshot-xl.md#run-it-on-your-own-machine">how to run ›</a>
 128  <a href="model/lumiere-t2v.md">Lumiere (T2V)</a>                             27±4*  comparison only
 129  <a href="model/dynamicrafter-1024.md">DynamiCrafter (1024)</a>                      27±4*  comparison only
-130  <a href="model/open-sora-1-2.md">Open-Sora 1.2</a>                             27±3   local                   ~39GB  git clone https://g…
+130  <a href="model/open-sora-1-2.md">Open-Sora 1.2</a>                             27±3   local                ~39GB  <a href="model/open-sora-1-2.md#run-it-on-your-own-machine">how to run ›</a>
 131  <a href="model/runway-gen-2.md">Runway Gen-2</a>                              27±2   comparison only
 132  <a href="model/pikalab-2023-09.md">PikaLab (September 2023)</a>                  27±2   comparison only
-133  <a href="model/videocrafter1-t2v.md">VideoCrafter1 T2V</a>                         26±2   local                  ~8.1GB  git clone https://g…
-134  <a href="model/show-1.md">Show-1</a>                                    25±2   local                   ~83GB  git clone https://g…
-135  <a href="model/lvdm-t2v.md">LVDM (text-to-video)</a>                      25±3*  local                  ~6.1GB  git clone https://g…
-136  <a href="model/modelscope-t2v-1-7b.md">ModelScope T2V 1.7B</a>                       25±2   local                  ~4.6GB  python -c "import t…
+133  <a href="model/videocrafter1-t2v.md">VideoCrafter1 T2V</a>                         26±2   local               ~8.1GB  <a href="model/videocrafter1-t2v.md#run-it-on-your-own-machine">how to run ›</a>
+134  <a href="model/show-1.md">Show-1</a>                                    25±2   local                ~83GB  <a href="model/show-1.md#run-it-on-your-own-machine">how to run ›</a>
+135  <a href="model/lvdm-t2v.md">LVDM (text-to-video)</a>                      25±3*  local               ~6.1GB  <a href="model/lvdm-t2v.md#run-it-on-your-own-machine">how to run ›</a>
+136  <a href="model/modelscope-t2v-1-7b.md">ModelScope T2V 1.7B</a>                       25±2   local               ~4.6GB  <a href="model/modelscope-t2v-1-7b.md#run-it-on-your-own-machine">how to run ›</a>
 137  <a href="model/floor33-pictures-2023-08.md">Floor33 Pictures (August …</a>                24±2   comparison only
-138  <a href="model/zeroscope-v2-xl.md">ZeroScope v2 XL (576w → X…</a>                23±2   local                   ~15GB  uv run --with torch…
-139  <a href="model/cogvideo-9b.md">CogVideo 9B (original)</a>                    23±7*  local                   ~52GB  git clone -b CogVid…
-  —  <a href="model/animatediff-v1-5-2.md">AnimateDiff SD 1.5 v2 mot…</a>  no reviewed results  local                  ~7.8GB  sd-cli -M vid_gen -…
-  —  <a href="model/stable-video-diffusion.md">Stable Video Diffusion (S…</a>  no reviewed results  local                    ~8GB  uv run --with torch…
-  —  <a href="model/stable-video-diffusion-xt.md">Stable Video Diffusion XT…</a>  no reviewed results  local                    ~8GB  uv run --with torch…
+138  <a href="model/zeroscope-v2-xl.md">ZeroScope v2 XL (576w → X…</a>                24±2   local                ~15GB  <a href="model/zeroscope-v2-xl.md#run-it-on-your-own-machine">how to run ›</a>
+139  <a href="model/cogvideo-9b.md">CogVideo 9B (original)</a>                    23±7*  local                ~52GB  <a href="model/cogvideo-9b.md#run-it-on-your-own-machine">how to run ›</a>
+  —  <a href="model/animatediff-v1-5-2.md">AnimateDiff SD 1.5 v2 mot…</a>  no reviewed results  local               ~7.8GB  <a href="model/animatediff-v1-5-2.md#run-it-on-your-own-machine">how to run ›</a>
+  —  <a href="model/stable-video-diffusion.md">Stable Video Diffusion (S…</a>  no reviewed results  local                 ~8GB  <a href="model/stable-video-diffusion.md#run-it-on-your-own-machine">how to run ›</a>
+  —  <a href="model/stable-video-diffusion-xt.md">Stable Video Diffusion XT…</a>  no reviewed results  local                 ~8GB  <a href="model/stable-video-diffusion-xt.md#run-it-on-your-own-machine">how to run ›</a>
 </pre>
 
 \* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 142 of 142 catalogue models listed here · [sources and licences](method.md#sources)

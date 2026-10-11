@@ -6,22 +6,38 @@
 
 Meituan (OneCAT team) · released 2025-09 · 9B params (3B active) · apache-2.0
 
-**score 24.2** ±5.4 · #141 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 24.1** ±5.4 · #141 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks OneCAT-3B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                        score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>  24.2%    20.5   2026-05-13   87% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle               49.9                13% ▇▇
-                        weighted average                   = 24.2
+task                    vs the others        rank  counts  tests
+image to image / edit…  ●▁·▃▂▃█▃▃▄▁▁   #61 of 62*     88%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #61 of 62 · 88% of its score</summary>
+
+<pre>
+test                        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   24.2%  ●▃▂·▃▆▂█·▃·▃ beats 1/20   hard · avg 45%     88%  too hard for it
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       12% ▇
+weighted average                                   = 24.1
+</pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt))</sub>
 
@@ -29,14 +45,18 @@ prior                   pull toward the middle               49.9               
 
 <pre>
 version                                     needs  score
-bf16 (official generate_txt2img.py) · n…  ~25.1GB   24.2
+bf16 (official generate_txt2img.py) · n…  ~25.1GB   24.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (official generate_txt2img.py) · nvidia only
+# bf16 (official generate_txt2img.py) · nvidia only · ~25.1GB
 git clone https://github.com/onecat-ai/OneCAT && cd OneCAT && pip3 install -r requirements.txt && hf download onecat-ai/OneCAT-3B --local-dir OneCAT-3B && wget -O infinity_vae_d32reg.pth "https://huggingface.co/FoundationVision/Infinity/resolve/main/infinity_vae_d32reg.pth?download=true" && accelerate launch --num_processes=1 generate_txt2img.py --model_name_or_path="OneCAT-3B" --vae_path="infinity_vae_d32reg.pth" --prompt="Fashion model with iridescent makeup, prismatic light reflections, high-fashion studio setting." --output_dir="output/txt2img"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/onecat-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

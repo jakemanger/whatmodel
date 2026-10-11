@@ -6,25 +6,41 @@
 
 Efficient-Speech (LiteASR) · released 2025-02 · 1.4B params · apache-2.0
 
-**score 55.0** ±3.0 · #71 of 160 · from 4 benchmark results across 2 sources
+**score 55.0** ±3.1 · #71 of 162 · from 4 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LiteWhisper large-v3-acc among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="speech-stt-liteasr-report-ccby"></a>LiteASR               <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Fren…</a>   7.4%    55.2   2025-02-27   24% ▇▇▇
-                      <a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set ave…</a>  10.1%    54.4   2025-02-27   23% ▇▇▇
-                      <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Germ…</a>   8.7%    57.2   2025-02-27   17% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.2%    54.6   2026-03-26   33% ▇▇▇▇
-prior                 pull toward the middle                   49.8                 4% ▇
-                      weighted average                       = 55.0
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.2%  ▁▁▁▃··▁▁▂█●▆ beats 53/86  avg 8.2%       33%  blunt
+<a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech French t…</a>    7.4%  █·······●█·█ beats 1/3    avg 11%        25%  typical
+<a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set average…</a>   10.1%  ▂·······▂··● beats 5/6    avg 13%        22%  typical
+<a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech German t…</a>    8.7%  █····█···●·█ beats 2/3    avg 13%        17%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-stt-liteasr-report-ccby"></a><a href="https://arxiv.org/html/2502.20583v2">LiteASR (lab)</a>                        3   64% ▇▇▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                 1   33% ▇▇▇▇
+prior: pull toward the middle             4% ▇
+weighted average                        = 55.0
+</pre>
 
 <sub>Licences: LiteASR ([CC BY 4.0](../../licenses/speech-stt-liteasr-report-ccby.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
@@ -35,11 +51,15 @@ version               needs  score
 fp16 · nvidia only  ~3.86GB   55.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~3.86GB
 uv run --with transformers --with torch --with librosa python -c "import librosa, torch; from transformers import AutoProcessor, AutoModel; m=AutoModel.from_pretrained('efficient-speech/lite-whisper-large-v3-acc', trust_remote_code=True).to(torch.float16).to('cuda'); p=AutoProcessor.from_pretrained('openai/whisper-large-v3'); f=p(librosa.load('audio.wav', sr=16000)[0], sampling_rate=16000, return_tensors='pt').input_features.to(torch.float16).to('cuda'); print(p.batch_decode(m.generate(f), skip_special_tokens=True)[0])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/lite-whisper-large-v3-acc) · [JSON](https://whatmodel.sh/api?format=json&all=1)

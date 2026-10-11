@@ -6,26 +6,41 @@
 
 Microsoft · released 2026-07 · 2.81B params · mit
 
-**score 49.5** ±5.1 · #103 of 160 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.2** ±4.0 · #98 of 162 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks VibeVoice-ASR-BitNet among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-microsoft-vibevoice-asr-bitnet"></a>microsoft/VibeVoice-A…  <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">VoxPopuli English test WER (l…</a>   5.2%    52.5   2026-07-24   29% ▇▇▇▇
-                        <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-other WER (l…</a>   6.3%    48.1   2026-07-24   28% ▇▇▇
-                        <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS Mandarin test error ra…</a>   8.3%    48.7   2026-07-24   15% ▇▇
-                        <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-clean WER (l…</a>   2.4%    46.0   2026-07-24    9% ▇
-                        <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS English test WER (lab)</a>    5.2%    49.1   2026-07-24    8% ▇
-prior                   pull toward the middle                   49.8                10% ▇
-                        weighted average                       = 49.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-other WER (lab)</a>      6.3%  █●█·····██·█ beats 1/5    avg 5.7%       41%  typical
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">VoxPopuli English test WER (lab)</a>      5.2%  ▄··▄··▄···●▄ beats 4/5    avg 7.4%       19%  typical
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-clean WER (lab)</a>      2.4%  █·●·█·█···██ beats 1/5    avg 2.2%       12%  blunt
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS Mandarin test error rate (…</a>    8.3%  ▄·▂▄▂▄█●▂▂·▆ beats 12/20  avg 7.3%       11%  typical
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS English test WER (lab)</a>         5.2%  ▄·····●▄▄··█ beats 1/5    avg 5.5%       11%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="card3-microsoft-vibevoice-asr-bitnet"></a><a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">microsoft/VibeVoice-ASR-BitNet model ca…</a>        5   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 50.2
+</pre>
 
 <sub>Licences: microsoft/VibeVoice-ASR-BitNet model card ([MIT](https://opensource.org/licenses/MIT))</sub>
 
@@ -33,14 +48,18 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version                                    needs  score
-I8_S VAE + I2_S LM (Q6_K embeddings) GG…  ~1.7GB   49.5
+I8_S VAE + I2_S LM (Q6_K embeddings) GG…  ~1.7GB   50.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# I8_S VAE + I2_S LM (Q6_K embeddings) GGUF, VibeASR.cpp
+# I8_S VAE + I2_S LM (Q6_K embeddings) GGUF, VibeASR.cpp · ~1.7GB
 git clone --recursive https://github.com/microsoft/VibeASR.cpp.git && cd VibeASR.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && pip install huggingface_hub && huggingface-cli download microsoft/VibeVoice-ASR-BitNet vibeasr-vae-encoder-i8_s.gguf vibeasr-lm-i2_s-embed-q6_k.gguf --local-dir models/vibeasr && ./build/bin/asr_infer --vae-model models/vibeasr/vibeasr-vae-encoder-i8_s.gguf --lm-model models/vibeasr/vibeasr-lm-i2_s-embed-q6_k.gguf --audio input.wav -t 4
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/vibevoice-asr-bitnet) · [JSON](https://whatmodel.sh/api?format=json&all=1)

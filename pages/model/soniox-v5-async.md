@@ -6,22 +6,37 @@
 
 Soniox · released 2026-06 · proprietary
 
-**score 68.1** ±4.5 · #5 of 160 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 68.2** ±4.6 · #5 of 162 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Soniox v5 Async among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>   8.1%    69.7   2026-09-24   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.8                 8% ▇
-                        weighted average                       = 68.1
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpeech …</a>    8.1%  █·▄··▄··▄·●▄ beats 5/6    avg 37%        92%  sharp
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                results  share of the score
+<a name="speech-stt-bangla-riverborn-mit"></a><a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla Speech-to-Text Benchmark v1.0</a>        1   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                    8% ▇
+weighted average                               = 68.2
+</pre>
 
 <sub>Licences: Bangla Speech-to-Text Benchmark v1.0 ([MIT](../../licenses/speech-stt-bangla-riverborn-mit.txt))</sub>
 

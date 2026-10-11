@@ -6,36 +6,82 @@
 
 Google · released 2025-03 · proprietary
 
-**score 60.8** ±1.7 · #26 of 160 · from 15 benchmark results across 10 sources
+**score 60.8** ±1.7 · #26 of 162 · from 15 benchmark results across 10 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Chirp 3 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.6%    57.9   2026-03-26   10% ▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.6%    55.2   2026-03-26   10% ▇
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  28.2%    57.1   2025-11-18   17% ▇▇
-<a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  38.2%    64.6   2026-06-27    6% ▇
-                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 12 English …</a>  14.7%    62.0   2026-06-27    5% ▇
-                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 6 English a…</a>  17.2%    63.4   2026-06-27    4% ▇
-<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  88.8%    63.8   2026-05-15    8% ▇
-                        <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   5.8%    63.9   2026-05-15    6% ▇
-<a name="speech-stt-botnoi-thai-report"></a>BOTNOI Thai telephony…  <a href="https://arxiv.org/html/2608.24916v1">BOTNOI report · FLEURS Thai C…</a>  10.3%    56.6   2026-08-03    5% ▇
-                        <a href="https://arxiv.org/html/2608.24916v1">BOTNOI Thai telephony · CER</a>     13.4%    74.4   2026-08-03    4% ▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   8.7%    60.2   2026-07-16    8% ▇
-<a name="speech-stt-perle-cs-report"></a>Benchmarking Commerci…  <a href="https://arxiv.org/pdf/2605.19069v3">Perle code-switching benchmar…</a>  39.4%    51.7   2026-05-22    5% ▇
-<a name="speech-stt-mu-bench-ccby"></a>mu-bench: A Multiling…  <a href="https://arxiv.org/html/2609.32082v1">mu-bench voice-agent caller u…</a>  11.9%    73.1   2026-09-25    4% ▇
-<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1    <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   4.2%    63.1   2026-07-05    4% ▇
-<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  10.3%    74.4   2026-08-15    2% ▇
-prior                   pull toward the middle                   49.8                 1% ▇
-                        weighted average                       = 60.8
+task                    vs the others        rank  counts  tests
+long-form transcripti…  ▁▁▄▁·▁▂●▄▁▁▁   #14 of 27*     10%      1
+multilingual transcri…  ▂··▃▄█▆▅▄●·▂    #4 of 36*    4.4%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>long-form transcription · #14 of 27 · 10% of its score</summary>
+
+Trails [Whisper large (v1)](whisper-large.md), [Whisper large-v2](whisper-large-v2.md), [Rev AI Machine (Reverb ASR)](revai-machine.md) here, though they rank lower overall.
+
+<pre>
+test                            result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>    9.6%  ▁▁▅▁·▃▅●▆▁▂▂ beats 14/30  avg 12%        10%  typical
+</pre>
+
+</details>
+
+<details><summary>multilingual transcription · #4 of 36 · 4.4% of its score</summary>
+
+Beats [Cohere Transcribe Arabic (07-2026)](cohere-transcribe-arabic-07-2026.md), [Cohere Transcribe (03-2026)](cohere-transcribe-03-2026.md), [Nova-3](deepgram-nova-3.md) here, though they rank higher overall. Trails [SeamlessM4T v2 Large](seamless-m4t-v2-large.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2609.32082v1">mu-bench voice-agent caller utter…</a>   11.9%  █·····▄····● beats 3/3    avg 39%       4.4%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (13)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parliamen…</a>   28.2%  ▂▂····▂·●·▃█ beats 3/12   avg 52%            17%  sharp
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    6.6%  ▁▁▁▃··▁▁▂█●▆ beats 67/86  avg 8.2%           10%  blunt
+<a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-world En…</a>    8.7%  █▃▃●▃···▃··▃ beats 6/9    avg 15%           8.3%  typical
+<a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canonical …</a>   88.8%  ▄···▄··▄●▄·█ beats 3/6    easy · avg 77%    8.1%  typical
+<a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic dialec…</a>   38.2%  █··█·██··█·● beats 5/5    avg 79%           6.1%  typical
+<a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (300 E…</a>    5.8%  ▄·▄·▄·▄●···▄ beats 5/6    avg 12%           5.7%  typical
+<a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 12 English doma…</a>   14.7%  ▄·······▄·●▄ beats 2/4    avg 28%           5.2%  typical
+<a href="https://arxiv.org/pdf/2605.19069v3">Perle code-switching benchmark · …</a>   39.4%  ●··········▄ beats 0/2    avg 55%           4.9%  small run
+<a href="https://arxiv.org/html/2608.24916v1">BOTNOI report · FLEURS Thai CER</a>      10.3%  ●··█·······█ beats 0/2    avg 17%           4.8%  small run
+<a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 6 English accen…</a>   17.2%  ▄······▄··●█ beats 2/4    avg 36%           4.3%  typical
+<a href="https://arxiv.org/html/2608.24916v1">BOTNOI Thai telephony · CER</a>          13.4%  █·······█··● beats 2/2    avg 52%           4.0%  small run
+<a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-lang…</a>    4.2%  ▄·····▄··●█▄ beats 2/5    avg 7.9%          3.5%  typical
+<a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · held-ou…</a>   10.3%  ▃·▅·▅▃▃·▃▃▃● beats 11/12  avg 24%           1.9%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            2   21% ▇▇▇
+<a name="speech-stt-afrispeech-multibench-report"></a><a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench</a>                           1   17% ▇▇
+<a name="speech-gigaspeechbench-report"></a><a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench: A Real-World Multiling…</a>        3   16% ▇▇
+<a name="speech-stt-voicecodebench-report"></a><a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench</a>                                  2   14% ▇▇
+<a name="speech-stt-botnoi-thai-report"></a><a href="https://arxiv.org/html/2608.24916v1">BOTNOI Thai telephony ASR report</a>                2    9% ▇
+<a name="speech-rw-voice-eq-report"></a><a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ Bench</a>                               1    8% ▇
+<a name="speech-stt-perle-cs-report"></a><a href="https://arxiv.org/pdf/2605.19069v3">Benchmarking Commercial ASR Systems on …</a>        1    5% ▇
+<a name="speech-stt-mu-bench-ccby"></a><a href="https://arxiv.org/html/2609.32082v1">mu-bench: A Multilingual Utterance Tran…</a>        1    4% ▇
+<a name="speech-stt-koedesk-ccby"></a><a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk STT Bench v1</a>                            1    4% ▇
+<a name="speech-stt-quranic-asr-lb-apache"></a><a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard</a>                         1    2% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 60.8
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VoiceCodeBench ([CC BY 4.0](../../licenses/speech-stt-voicecodebench-report.txt)) · BOTNOI Thai telephony ASR report ([CC BY 4.0](../../licenses/speech-stt-botnoi-thai-report.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Benchmarking Commercial ASR Systems on Code-Switching Speech ([CC BY 4.0](../../licenses/speech-stt-perle-cs-report.txt)) · mu-bench: A Multilingual Utterance Transcription Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt))</sub>
 

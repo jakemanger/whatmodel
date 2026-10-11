@@ -6,31 +6,83 @@
 
 Alibaba · released 2024-09 · 0.49B params · apache-2.0
 
-**score 26.5** ±1.8 · #873 of 934 · from 12 benchmark results across 7 sources
+**score 26.5** ±1.8 · #886 of 949 · from 12 benchmark results across 7 sources
+
+## What it's good at
+
+<sub>● marks Qwen2.5 0.5B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁●▆█▆▅▄▄▃▂▁   #323 of 334*    5.0%      1
+chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #415 of 466*    9.3%      2
+math            █··········●       #1 of 2*     16%      1
+</pre>
+
+<details><summary>agent tasks · #323 of 334 · 5.0% of its score</summary>
+
+Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+
+<pre>
+test     result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">BFCL v3</a>   35.6%  ▁▁▁▁●▃▅█▅▄▁▁ beats 10/114  medium · avg 52%    5.0%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #415 of 466 · 9.3% of its score</summary>
+
+Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   13.9%  ▁·▁▁▂▁●▄▆▄█▄ beats 7/38   medium · avg 49%    5.0%  sharp · too hard for it
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecified)</a>     31.6%  ●▁▃▁▂▄▄▆█▃▂▁ beats 0/141  easy · avg 77%      4.3%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · #1 of 2 · 16% of its score</summary>
+
+<pre>
+test   result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">GSM8K</a>   26.8%  ▂▂▂●▅▆▅▇█▇▄▃ beats 17/146  easy · avg 83%     16%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">BIG-Bench Hard</a>                       30.7%  ▁▁▁▁●▄▅▅█▃▄▁ beats 5/129   medium · avg 69%        20%  sharp · too hard for it · small run
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   28.0%  ●▂▂▂▃█▃▆▅▄▂▃ beats 0/95    easy · avg 66%          18%  at its level
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   33.3%  ▂●▂▃█▄▃▆▃▅▂▂ beats 4/81    medium · avg 58%        10%  blunt · at its level
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HellaSwag</a>                            48.0%  ▁▁▁▁▂●▃▇█▆▅▃ beats 10/85   easy · avg 87%         6.7%  at its level · small run
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   74.8%  ●▁▂▃▄▄█▆▃▂▂▁ beats 2/140   very easy · avg 94%    4.1%  blunt · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   50.9%  ▃▁▁▁▁▁▁●▂█▅▁ beats 71/276  medium · avg 73%       3.7%  noisy
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">PIQA</a>                                 67.2%  ▁▁▁●▃▄▇█▄▃▁▁ beats 9/83    easy · avg 86%         3.0%  blunt · at its level · small run
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>    5.2%  ▁▁·▁●▂▄█▄▅▄▄ beats 4/66    hard · avg 31%         2.7%  too hard for it
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-huggingfacetb-smollm2-360m-instruct"></a>HuggingFaceTB/SmolLM2…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">BIG-Bench Hard</a>                  30.7%    25.3   2025-09-22   20% ▇▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">GSM8K</a>                           26.8%    28.4   2025-09-22   17% ▇▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HellaSwag</a>                       48.0%    17.1   2025-09-22    7% ▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecifi…</a>  31.6%    15.4   2025-09-22    4% ▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">PIQA</a>                            67.2%    12.2   2025-09-22    3% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  28.0%    25.2   2026-08-11   17% ▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  33.3%    29.2   2026-09-19    9% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  13.9%    40.6   2026-04-06    5% ▇
-                        <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   5.2%    28.3   2025-10-01    3% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">BFCL v3</a>                         35.6%    36.3   2025-04-25    5% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  74.8%    15.5   2025-10-16    5% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  50.9%    34.2   2024-12-03    4% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 26.5
+source                                    results  share of the score
+<a name="card3-huggingfacetb-smollm2-360m-instruct"></a><a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HuggingFaceTB/SmolLM2-360M-Instruct mod…</a>        5   50% ▇▇▇▇▇▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   18% ▇▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1   10% ▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards</a>             2    8% ▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    5% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    4% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    4% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 26.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: HuggingFaceTB/SmolLM2-360M-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -39,18 +91,73 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/7ae557604adf67be50417f59c2c2f167def9a775/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~0.79GB   26.5
-8-bit q8_0    ~1.09GB   26.5
+download                      size  score
+4-bit q4_k_m               ~0.79GB   26.5
+8-bit q8_0                 ~1.09GB   26.5
+4-bit q4_k_m                ~0.5GB   26.5
+8-bit q8_0                  ~0.7GB   26.5
+4-bit mlx-4bit · mac only   ~0.3GB   26.5
+4-bit mlx-8bit · mac only   ~0.5GB   26.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run qwen2.5:0.5b-instruct-q4_K_M
-# 8-bit q8_0
-ollama run qwen2.5:0.5b-instruct-q8_0
+# 4-bit q4_k_m · ~0.5GB
+llama cli -hf Qwen/Qwen2.5-0.5B-Instruct-GGUF:q4_k_m
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/Qwen2.5-0.5B-Instruct-GGUF:q4_k_m
+# 8-bit q8_0 · ~0.7GB
+llama cli -hf Qwen/Qwen2.5-0.5B-Instruct-GGUF:q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/Qwen2.5-0.5B-Instruct-GGUF:q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~0.5GB
+lms get https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF@q4_k_m -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~0.7GB
+lms get https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF@q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~0.3GB
+lms get https://huggingface.co/lmstudio-community/Qwen2.5-0.5B-Instruct-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~0.5GB
+lms get https://huggingface.co/lmstudio-community/Qwen2.5-0.5B-Instruct-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~0.79GB
+ollama run qwen2.5:0.5b-instruct-q4_K_M
+# 8-bit q8_0 · ~1.09GB
+ollama run qwen2.5:0.5b-instruct-q8_0
+# 4-bit q4_k_m · ~0.5GB
+ollama run hf.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF:q4_k_m
+# 8-bit q8_0 · ~0.7GB
+ollama run hf.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF:q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~0.3GB
+mlx_lm.chat --model lmstudio-community/Qwen2.5-0.5B-Instruct-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Qwen2.5-0.5B-Instruct-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~0.5GB
+mlx_lm.chat --model lmstudio-community/Qwen2.5-0.5B-Instruct-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Qwen2.5-0.5B-Instruct-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/qwen2-5-0-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,49 +6,150 @@
 
 NVIDIA · released 2025-12 · 14.77B params · nvidia-open-model-license
 
-**score 60.4** ±1.0 · #207 of 934 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.5** ±1.0 · #211 of 949 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Nemotron-Cascade-14B-Thinking among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃▆█●▅▄▄▃▂▁   #179 of 334*    7.3%      2
+coding          ▁▁▁▃▆██●▆▄▃▁    #167 of 469     56%      4
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #196 of 466*    1.7%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁   #121 of 400*     16%      2
+</pre>
+
+<details><summary>agent tasks · #179 of 334 · 7.3% of its score</summary>
+
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2512.13607v2">SWE-bench Verified (lab)</a>   43.1%  ▁▁▁▁▁▁▂●█▆▁▁ beats 32/131   hard · avg 19%      6.0%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2512.13607v2">BFCL v3 (lab)</a>              67.5%  ▁▁▁▁▁▃▅█▆●▄▁ beats 135/170  medium · avg 58%    1.4%  blunt · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #167 of 469 · 56% of its score</summary>
+
+Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md), [Qwen3-Next 80B-A3B Instruct](qwen3-next-80b-a3b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>   10.5%  ▃▃····▃·█·▃● beats 7/7     very hard · avg 2.4%     33%  sharp
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   68.9%  ▄·▄····▄▄▄█● beats 7/7     medium · avg 45%         12%  at its level
+<a href="https://arxiv.org/html/2512.13607v2">SWE-bench Verified (lab)</a>             43.1%  ▁▁▁▁▁▁▂●█▆▁▁ beats 32/131  hard · avg 19%          6.0%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   74.6%  ▄▄···▄·▄▄█·● beats 7/7     medium · avg 57%        5.5%  at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #196 of 466 · 1.7% of its score</summary>
+
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+
+<pre>
+test                              result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2512.13607v2">IFEval prompt-level strict (lab)</a>   81.9%  ▁▁··▂··▂●█▃▃ beats 12/26  easy · avg 77%    1.7%  small run
+</pre>
+
+</details>
+
+<details><summary>math · #121 of 400 · 16% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
+
+<pre>
+test             result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2512.13607v2">AIME 2025 (lab)</a>   83.3%  ▁·▁▁▁▂▅▆█●▅▁ beats 93/133  medium · avg 55%    8.6%  sharp · small run
+<a href="https://arxiv.org/html/2512.13607v2">AIME 2024 (lab)</a>   89.7%  ▁▁▁▂▁▃▁▅██●▃ beats 71/85   easy · avg 68%      7.8%  sharp · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2512.13607v2">GPQA Diamond (lab)</a>                   69.6%  ▁▁▁▁▂▄▅▅●██▄ beats 152/310  hard · avg 46%       10%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2512.13607v2">MMLU (lab)</a>                           85.1%  ▁▁▁▁▁▂▃▅█▃●▃ beats 156/183  medium · avg 73%    5.4%  small run
+<a href="https://arxiv.org/html/2512.13607v2">MMLU-Pro (lab)</a>                       77.0%  ▁▁·▁▁▁▃▂▄●█▁ beats 108/188  medium · avg 60%    4.7%  small run
+<a href="https://arxiv.org/html/2512.13607v2">IFBench (aggregation unspecified)…</a>   41.7%  ▃▇▂▄●▅▂▄▄▆█▇ beats 29/80    hard · avg 31%      3.4%  at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="report-2512.13607v2"></a>NVIDIA  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>  10.5%    61.9   2026-03-27   32% ▇▇▇▇
-        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  68.9%    60.1   2026-03-27   12% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">GPQA Diamond (lab)</a>              69.6%    59.1   2026-03-27   10% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">AIME 2025 (lab)</a>                 83.3%    61.2   2026-03-27    9% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">AIME 2024 (lab)</a>                 89.7%    61.4   2026-03-27    8% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">SWE-bench Verified (lab)</a>        43.1%    59.8   2026-03-27    6% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–Ma…</a>  74.6%    62.1   2026-03-27    5% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">MMLU (lab)</a>                      85.1%    57.7   2026-03-27    5% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">MMLU-Pro (lab)</a>                  77.0%    59.3   2026-03-27    5% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">IFBench (aggregation unspecif…</a>  41.7%    55.8   2026-03-27    4% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">IFEval prompt-level strict (l…</a>  81.9%    52.7   2026-03-27    2% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">BFCL v3 (lab)</a>                   67.5%    59.0   2026-03-27    1% ▇
-prior   pull toward the middle                   50.0                 0% ▇
-        weighted average                       = 60.4
+source                         results  share of the score
+<a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                        12  100% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             0% ▇
+weighted average                        = 60.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-4-bit q4_k_m     ~9GB   60.4
-8-bit q8_0    ~15.7GB   60.4
+download                      size  score
+4-bit q4_k_m                  ~9GB   60.5
+8-bit q8_0                 ~15.7GB   60.5
+4-bit mlx-4bit · mac only   ~8.3GB   60.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q4_K_M
-# 8-bit q8_0
-llama-server -hf bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q8_0
+# 4-bit q4_k_m · ~9GB
+llama cli -hf bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q4_K_M
+# 8-bit q8_0 · ~15.7GB
+llama cli -hf bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~9GB
+lms get https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~15.7GB
+lms get https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~8.3GB
+lms get https://huggingface.co/introvoyz041/Nemotron-Cascade-14B-Thinking-mlx-4Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~9GB
+ollama run hf.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q4_K_M
+# 8-bit q8_0 · ~15.7GB
+ollama run hf.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~8.3GB
+mlx_lm.chat --model introvoyz041/Nemotron-Cascade-14B-Thinking-mlx-4Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model introvoyz041/Nemotron-Cascade-14B-Thinking-mlx-4Bit
+```
 
 [interactive version](https://whatmodel.sh/model/nemotron-cascade-14b-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

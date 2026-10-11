@@ -10,18 +10,33 @@ Kakao / KAIST · released 2021-06
 
 Score within the [VITS 2021 LJ Speech human MOS](https://whatmodel.sh/tts?set=vits2021-ljspeech-mos&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks VITS (LJ Speech) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  weight
-<a name="speech-vits-icml2021"></a>VITS: ICML 2021 origi…  <a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 LJ Speech human MOS…</a>  4.43 / 5    81.1    53% ▇▇▇▇▇▇
-prior                   pull toward the middle                      52.1    47% ▇▇▇▇▇▇
-                        weighted average                          = 67.4
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 LJ Speech human MOS (la…</a>  4.43 / 5  █····█·█·█·● beats 4/4    easy · avg 4.22 / 5     53%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-vits-icml2021"></a><a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS: ICML 2021 original listening stud…</a>        1   53% ▇▇▇▇▇▇
+prior: pull toward the middle                       47% ▇▇▇▇▇▇
+weighted average                                   = 67.4
+</pre>
 
 <sub>Licences: VITS: ICML 2021 original listening studies ([CC-BY-4.0](../../licenses/speech-vits-icml2021.txt))</sub>
 
@@ -32,11 +47,15 @@ version                                     needs  score
 fp32 (jaywalnut310/vits repo) · nvidia …  ~0.15GB   67.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (jaywalnut310/vits repo) · nvidia only
+# fp32 (jaywalnut310/vits repo) · nvidia only · ~0.15GB
 git clone https://github.com/jaywalnut310/vits && cd vits && pip install -r requirements.txt && apt-get install espeak && cd monotonic_align && python setup.py build_ext --inplace && cd .. && python -c "import torch, commons, utils; from models import SynthesizerTrn; from text.symbols import symbols; from text import text_to_sequence; from scipy.io.wavfile import write; hps = utils.get_hparams_from_file('./configs/ljs_base.json'); net_g = SynthesizerTrn(len(symbols), hps.data.filter_length // 2 + 1, hps.train.segment_size // hps.data.hop_length, **hps.model).cuda(); _ = net_g.eval(); _ = utils.load_checkpoint('/path/to/pretrained_ljs.pth', net_g, None); text_norm = text_to_sequence('VITS is Awesome!', hps.data.text_cleaners); text_norm = commons.intersperse(text_norm, 0) if hps.data.add_blank else text_norm; stn_tst = torch.LongTensor(text_norm); torch.set_grad_enabled(False); x_tst = stn_tst.cuda().unsqueeze(0); x_tst_lengths = torch.LongTensor([stn_tst.size(0)]).cuda(); audio = net_g.infer(x_tst, x_tst_lengths, noise_scale=.667, noise_scale_w=0.8, length_scale=1)[0][0,0].data.cpu().float().numpy(); write('ljs.wav', hps.data.sampling_rate, audio)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/vits-ljspeech) · [JSON](https://whatmodel.sh/api?format=json&all=1)

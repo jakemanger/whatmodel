@@ -6,26 +6,64 @@
 
 Moonshot AI · released 2026-06 · 1000B params (32B active) · modified-mit
 
-**score 72.2** ±1.0 · #65 of 934 · from 7 benchmark results across 2 sources
+**score 72.1** ±1.0 · #70 of 949 · from 7 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Kimi K2.7 Code among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆██▇▆●▃▁   #58 of 469*     15%      1
+math    ▁▂▃▅▆▅▄█●▁▁▁    #51 of 400     67%      3
+</pre>
+
+<details><summary>coding · #58 of 469 · 15% of its score</summary>
+
+Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md), [Mistral Large 4 (public preview)](mistral-large-4.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run   difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1472.9  ▁▂▄▃▅█●▇▆▄▁▁ beats 64/119  avg 981        15%  sharp
+</pre>
+
+</details>
+
+<details><summary>math · #51 of 400 · 67% of its score</summary>
+
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   54.0%  ▂··▁▁▃▄▄●▅▃▃ beats 38/82    very hard · avg 1.2%     42%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      12.2%  ▁▂▁●█▅▂▂▁▁▁▁ beats 12/63    very hard · avg 0.1%     23%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    95.6%  ▃▃▄▃▃▃▇▇█●▂▅ beats 162/193  very hard · avg 8.5%    2.8%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                   result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            87.9%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 160/208  hard · avg 40%          8.6%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>   21.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 84/135   very hard · avg 5.9%    5.6%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>       36.5%  ▁▁▃▂▃▃●▆█▃▂▅ beats 31/78    very hard · avg 8.0%    3.3%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                        score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   54.0%    73.3   2026-06-13   43% ▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      12.2%    70.8   2026-06-13   23% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                87.9%    72.4   2026-08-07    9% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>       21.0%    70.9   2026-08-07    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>           36.5%    70.6   2026-08-27    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    95.6%    74.7   2026-08-07    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1472.9    72.2   2026-10-01   14% ▇▇
-prior                   pull toward the middle               50.0                 0% ▇
-                        weighted average                   = 72.2
+source                         results  share of the score
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                             6   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   15% ▇▇
+prior: pull toward the middle             0% ▇
+weighted average                        = 72.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -37,17 +75,36 @@ api (Moonshot AI) · $1.71/M blended · $0.95 in / $4 out per 1M tokens · [plat
 
 <pre>
 download               size  score
-4-bit ud-q4_k_xl  ~584.66GB   72.2
-2-bit ud-q2_k_xl  ~340.42GB   72.2
+4-bit ud-q4_k_xl  ~584.66GB   72.1
+2-bit ud-q2_k_xl  ~340.42GB   72.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit ud-q4_k_xl
-llama-server -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q2_K_XL
+# 4-bit ud-q4_k_xl · ~584.66GB
+llama cli -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q4_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl · ~340.42GB
+llama cli -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q2_K_XL
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit ud-q4_k_xl · ~584.66GB
+lms get https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF@UD-Q4_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit ud-q2_k_xl · ~340.42GB
+lms get https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
 
 [interactive version](https://whatmodel.sh/model/kimi-k2-7-code) · [JSON](https://whatmodel.sh/api?format=json&all=1)

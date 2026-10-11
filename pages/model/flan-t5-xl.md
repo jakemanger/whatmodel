@@ -6,24 +6,47 @@
 
 Google · released 2022-10 · 2.85B params · apache-2.0
 
-**score 31.4** ±1.4 · #834 of 934 · from 5 benchmark results across 2 sources
+**score 31.1** ±1.5 · #848 of 949 · from 5 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Flan-T5 XL among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others      rank  counts  tests
+math  ██·█···●···█   #2 of 5*     15%      1
+</pre>
+
+<details><summary>math · #2 of 5 · 15% of its score</summary>
+
+<pre>
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    1.9%  ▃·●·▁··▂▄█▄▄ beats 3/26   hard · avg 22%     15%  too hard for it
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test            result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>   40.2%  ███··█·█·●·█ beats 5/6    easy · avg 80%     56%  sharp · several runs
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>             49.2%  ▄▄·▄···▄▄·█● beats 7/8    easy · avg 82%     28%  at its level · several runs
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>    41.0%    30.5   2022-12-06   30% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>              52.4%    33.4   2022-12-06   18% ▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>               1.9%    24.7   2022-12-06   14% ▇▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>          40.2%    32.6   2024-03-10   27% ▇▇▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                    49.2%    34.8   2024-03-10   10% ▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 31.4
+source                                    results  share of the score
+<a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        3   66% ▇▇▇▇▇▇▇▇
+<a name="instruct-eval-readme"></a><a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">InstructEval</a>                                    2   33% ▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 31.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE))</sub>
 
@@ -31,14 +54,18 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download       size  score
-4-bit fp32  ~11.4GB   31.4
+4-bit fp32  ~11.4GB   31.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp32
+# 4-bit fp32 · ~11.4GB
 uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-xl', torch_dtype='auto', device_map='auto')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/flan-t5-xl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

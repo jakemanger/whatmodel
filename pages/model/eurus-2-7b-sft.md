@@ -6,27 +6,82 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 34.9** ±3.0 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 34.9** ±3.0 · #804 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Eurus-2-7B-SFT among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others     rank  counts  tests
+math  ●··········█   #2 of 2     96%      3
+</pre>
+
+<details><summary>math · #2 of 2 · 96% of its score</summary>
+
+<pre>
+test                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>       65.1%  ▁▃▂●▅▇▅▇█▅▂▁ beats 12/84  very easy · avg 87%     37%  at its level · small run
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>       3.3%  ▁▁●▂▁▃▁▅███▃ beats 5/85   medium · avg 42%        33%  sharp · small run
+<a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>   32.7%  ▄·▂▂·●█▆·▆▄▄ beats 7/21   medium · avg 59%        26%  at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="first-party-prime-rl-scores"></a>PRIME-RL Eurus-2-7B-P…  <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>          65.1%    36.4   2024-12-31   37% ▇▇▇▇
-                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>          3.3%    27.7   2024-12-31   34% ▇▇▇▇
-                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>      32.7%    40.0   2024-12-31   25% ▇▇▇
-prior                   pull toward the middle           50.0                 4% ▇
-                        weighted average               = 34.9
+source                                    results  share of the score
+<a name="first-party-prime-rl-scores"></a><a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">PRIME-RL Eurus-2-7B-PRIME model card (l…</a>        3   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 34.9
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
-
-
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download        size  score
+4-bit Q4_K_M  ~4.7GB   34.9
+8-bit Q8_0    ~8.1GB   34.9
+</pre>
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
+```sh
+# 4-bit Q4_K_M · ~4.7GB
+llama cli -hf mradermacher/Eurus-2-7B-SFT-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Eurus-2-7B-SFT-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.1GB
+llama cli -hf mradermacher/Eurus-2-7B-SFT-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/Eurus-2-7B-SFT-GGUF:Q8_0
+```
+
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.7GB
+lms get https://huggingface.co/mradermacher/Eurus-2-7B-SFT-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.1GB
+lms get https://huggingface.co/mradermacher/Eurus-2-7B-SFT-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~4.7GB
+ollama run hf.co/mradermacher/Eurus-2-7B-SFT-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.1GB
+ollama run hf.co/mradermacher/Eurus-2-7B-SFT-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/eurus-2-7b-sft) · [JSON](https://whatmodel.sh/api?format=json&all=1)

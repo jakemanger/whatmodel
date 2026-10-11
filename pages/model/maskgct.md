@@ -6,56 +6,83 @@
 
 Amphion (CUHK-Shenzhen) · released 2024-10 · 1.43B params · cc-by-nc-4.0
 
-**score 58.9** ±1.2 · #44 of 117 · from 35 benchmark results across 10 sources
+**score 58.8** ±1.2 · #44 of 118 · from 35 benchmark results across 10 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks MaskGCT among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval EN (zero-shot Englis…</a>      7.7%    58.8   2026-06-15    8% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     71.3%    63.4   2026-06-15    7% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · speaker si…</a>     62.4%    58.7   2026-06-15    6% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (pr…</a>  3.48 / 5    58.4   2026-06-15    5% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall s…</a>     63.5%    64.4   2026-06-15    5% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human spe…</a>  3.58 / 5    64.5   2026-06-15    5% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER</a>             41.1%    43.6   2026-06-15    4% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      2.6%    58.0   2026-06-15    3% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall W…</a>      8.6%    61.0   2026-06-15    2% ▇
-<a name="speech-voxcpm-report-ccby"></a>VoxCPM: Tokenizer-Fre…  <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  3.77 / 5    57.4   2025-09-29    4% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  4.00 / 5    60.8   2025-09-29    4% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  3.84 / 5    57.8   2025-09-29    4% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  3.20 / 5    52.6   2025-09-29    4% ▇
-<a name="speech-omnivoice-report-ccby"></a>OmniVoice: Towards Om…  <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · speaker si…</a>     71.3%    63.3   2026-04-01    5% ▇
-                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · speaker si…</a>     77.3%    63.4   2026-04-01    4% ▇
-                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · Whisper la…</a>      2.9%    55.4   2026-04-01    2% ▇
-                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · Paraformer…</a>      2.4%    46.5   2026-04-01    1% ▇
-<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>     71.3%    63.3   2025-07-20    5% ▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>     77.2%    63.2   2025-07-20    4% ▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>      2.6%    57.5   2025-07-20    2% ▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>      2.4%    46.6   2025-07-20    1% ▇
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  4.39 / 5    59.6   2025-05-11    6% ▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.28 / 5    48.4   2025-05-11    1% ▇
-<a name="speech-amphion-maskgct-mit"></a>Amphion MaskGCT READM…  <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-en · Whisper la…</a>      2.6%    57.5   2024-10-20    1% ▇
-                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">LibriSpeech test-clean zero-s…</a>      2.6%    47.2   2024-10-20    1% ▇
-                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-zh · Paraformer…</a>      2.3%    48.0   2024-10-20    1% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     57.0%    62.3   2026-05-24    2% ▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>      9.0%    52.4   2026-05-24    0% ▇
-<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>    1024.5    52.8   2026-06-19    2% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     85.1%    44.5   2026-06-19    0% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>     17.5%    46.5   2026-06-19    0% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     89.1%    54.6   2025-05-15    1% ▇
-                        <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     90.3%    60.0   2025-05-15    1% ▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.76 / 5    33.4   2026-03-15    0% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.59 / 5    76.0   2026-03-15    0% ▇
-prior                   pull toward the middle                      49.7                 1% ▇
-                        weighted average                          = 58.9
+task           vs the others       rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁●█▃▃   #27 of 37     33%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #27 of 37 · 33% of its score</summary>
+
+Beats [CosyVoice2-0.5B](cosyvoice2-0-5b.md) here, though they rank higher overall. Trails [Higgs Audio V2](higgs-audio-v2.md), [F5-TTS Base (v0)](f5-tts-base.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker simila…</a>   71.3%  ▄····▄·█▄●▄▄ beats 5/8    medium · avg 53%     16%  at its level · several runs
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker simila…</a>   77.2%  ▁·▂··▂·█●·▃▄ beats 16/25  medium · avg 62%    8.1%  at its level · several runs
+<a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper large-…</a>    2.6%  ▄···●▄▄·█▄·▄ beats 2/8    avg 3.6%            6.7%  blunt · several runs
+<a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer CER</a>     2.4%  ▁·▂▁●▁▂▃▅█·▂ beats 4/30   avg 2.1%            2.8%  blunt · several runs
+</pre>
+
+</details>
+
+<details><summary>other tests (23)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://arxiv.org/html/2605.20830v2">CV3-Eval EN (zero-shot English) ·…</a>      7.7%  ●··▄··▄▄·█·▄ beats 0/6    avg 16%                  8.3%  typical
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  4.39 / 5  ▅·█▅▅·█▃▃▅·● beats 17/17  easy · avg 4.03 / 5      6.3%  typical
+<a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · speaker simila…</a>     62.4%  ●··█··▄·█··▄ beats 0/6    medium · avg 49%         6.1%  at its level
+<a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (predic…</a>  3.48 / 5  ●·····█·▄▄·█ beats 0/6    medium · avg 2.98 / 5    5.5%  at its level
+<a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall speak…</a>     63.5%  ▄·█·●▄·····▄ beats 3/6    medium · avg 44%         5.0%  at its level
+<a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human speaker…</a>  3.58 / 5  █··●█······▄ beats 3/6    medium · avg 2.84 / 5    4.6%  at its level
+<a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chinese s…</a>  3.77 / 5  ●·······██·█ beats 0/3    medium · avg 3.29 / 5    4.5%  at its level
+<a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · English s…</a>  4.00 / 5  █●········██ beats 1/3    medium · avg 3.43 / 5    4.3%  at its level
+<a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER</a>                 41.1%  ●·······█·██ beats 0/6    avg 26%                  4.1%  sharp
+<a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · English n…</a>  3.84 / 5  ●······█··██ beats 0/3    medium · avg 3.36 / 5    4.1%  at its level
+<a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chinese n…</a>  3.20 / 5  ●█·······█·█ beats 0/3    medium · avg 2.85 / 5    3.5%  sharp · at its level
+<a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall WER (…</a>      8.6%  ▄··▄●····▄·█ beats 3/6    avg 20%                  2.3%  noisy
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>     57.0%  ▃·····▂▂▂▃●▆ beats 11/15  medium · avg 46%         2.1%  blunt · at its level
+<a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · human …</a>    1024.5  █▄█····●··▄▄ beats 5/7    avg 995                  1.7%  typical
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  3.28 / 5  ▅··▃▅··▅█▅●█ beats 14/17  medium · avg 3.30 / 5    0.9%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · C…</a>     89.1%  ▄▄·····▄··●█ beats 3/5    very easy · avg 88%      0.8%  blunt
+<a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">LibriSpeech test-clean zero-shot …</a>      2.6%  █·█········● beats 2/2    avg 2.8%                 0.7%  blunt · small run
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     90.3%  ▂▂█·▂·█▆▂·▄● beats 17/17  very easy · avg 89%      0.5%  blunt
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  3.76 / 5  █··▄▄●█▄·▄▄▄ beats 4/11   easy · avg 3.99 / 5      0.3%  blunt
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.59 / 5  ▄▄█·▄▄▄▄▄·▄● beats 11/11  easy · avg 4.20 / 5      0.3%  blunt
+<a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TTSDS …</a>     85.1%  ▄····▄▄▄▄●·█ beats 5/7    very easy · avg 86%      0.3%  blunt
+<a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WER of…</a>     17.5%  ▄▄▄··●▄··▄·▄ beats 3/7    avg 17%                  0.0%  blunt · noisy
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice clo…</a>      9.0%  ▂▂▂··▂·●▃▃█▂ beats 4/15   avg 8.6%                 0.0%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-raon-opentts-report-ccby"></a><a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS: Open Models and Data for …</a>        9   45% ▇▇▇▇▇
+<a name="speech-voxcpm-report-ccby"></a><a href="https://arxiv.org/html/2509.24650v1">VoxCPM: Tokenizer-Free TTS for Context-…</a>        4   16% ▇▇
+<a name="speech-omnivoice-report-ccby"></a><a href="https://arxiv.org/html/2604.00688v3">OmniVoice: Towards Omnilingual Zero-Sho…</a>        4   11% ▇
+<a name="speech-dmospeech2-report-bysa"></a><a href="https://arxiv.org/html/2507.14988v1">DMOSpeech 2: Reinforcement Learning for…</a>        4   11% ▇
+<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                   2    7% ▇
+<a name="speech-amphion-maskgct-mit"></a><a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Amphion MaskGCT README · zero-shot TTS …</a>        3    2% ▇
+<a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v2">RVCBench: Benchmarking Robustness of Vo…</a>        2    2% ▇
+<a name="speech-sap-voicerecon-ccby"></a><a href="https://arxiv.org/html/2606.21343v1">An Evaluation Framework for TTS Voice R…</a>        3    2% ▇
+<a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>           2    1% ▇
+<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 58.8
+</pre>
 
 <sub>Licences: Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech ([CC BY 4.0](../../licenses/speech-raon-opentts-report-ccby.txt)) · VoxCPM: Tokenizer-Free TTS for Context-Aware Speech Generation and True-to-Life Voice Cloning ([CC BY 4.0](../../licenses/speech-voxcpm-report-ccby.txt)) · OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · DMOSpeech 2: Reinforcement Learning for Duration Prediction in Metric-Optimized Speech Synthesis ([CC BY-SA 4.0](../../licenses/speech-dmospeech2-report-bysa.txt)) · TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · Amphion MaskGCT README · zero-shot TTS results table ([MIT](../../licenses/speech-amphion-maskgct-mit.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · An Evaluation Framework for TTS Voice Reconstruction ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>
 
@@ -63,14 +90,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version              needs  score
-fp32 · nvidia only  ~6.6GB   58.9
+fp32 · nvidia only  ~6.6GB   58.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 · nvidia only
+# fp32 · nvidia only · ~6.6GB
 git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && pip install -r models/tts/maskgct/requirements.txt && python -m models.tts.maskgct.maskgct_inference
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/maskgct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -8,18 +8,36 @@ Sber · released 2026-10 · 3B params · mit
 
 **score 51.1** ±7.4 · #51 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Kandinsky 6.0 Video Lite among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-kandinsky6-report"></a>Kandinsky 6.0 Video: …  <a href="https://arxiv.org/html/2610.05608v1#S7.T11">VABench T2AV micro Visual QA …</a>  69.1%    51.5   2026-10-04   77% ▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                23% ▇▇▇
-                        weighted average                       = 51.1
+task           vs the others      rank  counts  tests
+text to video  █····█·····●   #1 of 3*     76%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #1 of 3 · 76% of its score</summary>
+
+Beats [LTX-2.5](ltx-2-5.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2610.05608v1#S7.T11">VABench T2AV micro Visual QA (lab)</a>   69.1%  ▄█··●·▄···▄█ beats 3/7    easy · avg 68%     76%  at its level · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-kandinsky6-report"></a><a href="https://arxiv.org/html/2610.05608v1#S7.T11">Kandinsky 6.0 Video: Foundation Models …</a>        1   76% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       24% ▇▇▇
+weighted average                                   = 51.1
+</pre>
 
 <sub>Licences: Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -30,11 +48,15 @@ version                                   needs  score
 bf16 + model CPU offload · nvidia only  ~33.8GB   51.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 + model CPU offload · nvidia only
+# bf16 + model CPU offload · nvidia only · ~33.8GB
 uv run --with git+https://github.com/huggingface/diffusers --with torch --with transformers --with accelerate --with av python -c "import torch; from diffusers import Kandinsky6TI2VAPipeline; from diffusers.utils import encode_video; p=Kandinsky6TI2VAPipeline.from_pretrained('kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); o=p(prompt='A red dragon wakes on a mound of gold coins in a sunlit cave and slowly unfolds its wings. Audio: deep rumbling breath, clinking coins.', height=480, width=864, num_frames=121, num_inference_steps=50, guidance_scale=5.0); encode_video(o.frames[0], fps=24, output_path='output.mp4', audio=o.audio[0][None], audio_sample_rate=p.audio_sample_rate)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/kandinsky-6-0-lite) · [JSON](https://whatmodel.sh/api?format=json&all=1)

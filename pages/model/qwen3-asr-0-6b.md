@@ -6,58 +6,93 @@
 
 Alibaba (Qwen) · released 2026-01 · 0.94B params · apache-2.0
 
-**score 54.5** ±1.4 · #76 of 160 · from 22 benchmark results across 7 sources
+**score 54.6** ±1.4 · #76 of 162 · from 23 benchmark results across 8 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Qwen3-ASR-0.6B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card2-qwen-qwen3-asr-1-7b"></a>Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice English WER (ver…</a>   9.9%    54.8   2026-01-30    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Multilingual LibriSpeech Engl…</a>   6.0%    53.5   2026-01-30    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">AISHELL-2 test error rate (la…</a>   3.1%    59.9   2026-01-30    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_net error ra…</a>   6.0%    62.8   2026-01-30    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">VoxPopuli English test WER (l…</a>  10.0%    57.2   2026-01-30    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-other WER (l…</a>   4.5%    53.0   2026-01-30    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">GigaSpeech test WER (lab)</a>        8.9%    62.5   2026-01-30    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice Mandarin error r…</a>   6.9%    58.5   2026-01-30    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_meeting erro…</a>   6.9%    67.5   2026-01-30    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS Mandarin test error ra…</a>   2.9%    59.1   2026-01-30    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-clean WER (l…</a>   2.1%    47.7   2026-01-30    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS English test WER (lab)</a>    4.4%    48.9   2026-01-30    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">TED-LIUM test WER (short-form…</a>   3.9%    97.1   2026-01-30    0% ▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        8.2%    50.4   2026-03-26   23% ▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.4%    59.2   2026-03-26    7% ▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/qwen3-asr-0.6b.json">LibriSpeech test-clean WER</a>       2.1%    52.2   2026-09-15    9% ▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/qwen3-asr-0.6b.json">FLEURS English test WER</a>          4.2%    60.7   2026-09-15    4% ▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/qwen3-asr-0.6b.json">FLEURS Mandarin test error ra…</a>   7.6%    61.2   2026-09-15    4% ▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   8.8%    60.8   2026-07-16    6% ▇
-<a name="speech-stt-persian-triple-threat-apache"></a>Persian ASR Triple Th…  <a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/results.json">Persian ASR Triple Threat · V…</a>  52.2%    43.9   2026-07-06    5% ▇
-<a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>  20.9%    38.7   2026-08-12    4% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  42.2%    46.5   2026-01-30    2% ▇
-prior                   pull toward the middle                   49.8                 1% ▇
-                        weighted average                       = 54.5
+task                    vs the others        rank  counts  tests
+multilingual transcri…  ▂··▃●█▆▅▄▂·▂   #29 of 36*     27%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>multilingual transcription · #29 of 36 · 27% of its score</summary>
 
-<sub>Licences: Qwen/Qwen3-ASR-1.7B model card ([Apache-2.0](../../licenses/Qwen--Qwen3-ASR-1.7B.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Persian ASR Triple Threat Leaderboard ([Apache-2.0](../../licenses/speech-stt-persian-triple-threat-apache.txt)) · PESTE · Persian Speech to Text benchmark ([Apache-2.0](../../licenses/speech-stt-peste-apache.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
+Beats [GPT-4o Mini Transcribe](gpt-4o-mini-transcribe.md) here, though they rank higher overall. Trails [Omnilingual ASR CTC 1B v2](omniasr-ctc-1b-v2.md), [Omnilingual ASR CTC 7B v2](omniasr-ctc-7b-v2.md), [Omnilingual ASR CTC 3B](omniasr-ctc-3b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>             8.2%  ▂··▂●▂█▃█▂▁▁ beats 5/29   avg 8.9%       23%  typical
+<a href="https://huggingface.co/spaces/QCRI/AURA-Arabic-English-ASR-leaderboard/blob/208ff13439f377131207a2b32bf73364ba0e2d0c/leaderboard.tsv">QCRI Arabic-English ASR leaderboa…</a>   36.6%  ●···█······█ beats 0/2    avg 53%       4.0%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (18)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/qwen3-asr-0.6b.json">LibriSpeech test-clean WER</a>            2.1%  ▁···▁▁▂·▄●██ beats 23/56  avg 2.3%       10%  blunt · several runs
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    6.4%  ▁▁▁▃··▁▁▂██● beats 70/86  avg 8.2%      7.0%  blunt
+<a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-world En…</a>    8.8%  █▃▃●▃···▃··▃ beats 5/9    avg 15%       5.5%  typical
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/qwen3-asr-0.6b.json">FLEURS Mandarin test error rate</a>       7.6%  ▂▂··▂▄▂▂·▆█● beats 16/17  avg 12%       5.0%  several runs
+<a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/results.json">Persian ASR Triple Threat · Visua…</a>   52.2%  ●·········██ beats 0/2    avg 43%       4.8%  sharp · noisy · small run
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Multilingual LibriSpeech English …</a>    6.0%  ●······█·█·█ beats 0/3    avg 7.7%      4.4%  typical
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/qwen3-asr-0.6b.json">FLEURS English test WER</a>               4.2%  ▁··▁▁▁▁▁▁▃●▁ beats 46/56  avg 5.8%      4.4%  blunt · several runs
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_net error rate (…</a>    6.0%  █···█·····●█ beats 2/3    avg 13%       4.1%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">AISHELL-2 test error rate (lab)</a>       3.1%  █··█·····●·█ beats 2/3    avg 5.7%      4.1%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-other WER (lab)</a>      4.5%  ▁▁▁▂▅▃▅●█▂▂▁ beats 30/54  avg 5.5%      3.7%  typical
+<a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir) co…</a>   20.9%  ▄··▄·▄●▄··██ beats 3/8    avg 12%       3.4%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice English WER (version…</a>    9.9%  ●··▄·······▄ beats 0/3    avg 13%       2.9%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice Mandarin error rate …</a>    6.9%  █·······●█·█ beats 1/3    avg 11%       2.8%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">GigaSpeech test WER (lab)</a>             8.9%  ▁····▁··▁▄█● beats 16/17  avg 17%       2.8%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_meeting error ra…</a>    6.9%  █··█······●█ beats 2/3    avg 21%       2.7%  sharp · noisy
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">VoxPopuli English test WER (lab)</a>     10.0%  ●▄▄··████▄██ beats 1/16   avg 13%       2.2%  typical
+<a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   42.2%  ▃·▂▂●█▅▃▂▅▂▂ beats 6/22   avg 40%       2.0%  blunt
+<a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">TED-LIUM test WER (short-form) (l…</a>    3.9%  ▁·▁▇█▃·▁▁▃●▄ beats 22/27  avg 6.2%      0.2%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="card2-qwen-qwen3-asr-1-7b"></a><a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Qwen/Qwen3-ASR-1.7B model card (lab)</a>           13   33% ▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                            2   30% ▇▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/qwen3-asr-0.6b.json">transcribe.cpp model catalog · LibriSpe…</a>        3   16% ▇▇
+<a name="speech-rw-voice-eq-report"></a><a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ Bench</a>                               1    6% ▇
+<a name="speech-stt-persian-triple-threat-apache"></a><a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/results.json">Persian ASR Triple Threat Leaderboard</a>           1    5% ▇
+<a name="speech-stt-qcri-aura-ccby"></a><a href="https://huggingface.co/spaces/QCRI/AURA-Arabic-English-ASR-leaderboard/blob/208ff13439f377131207a2b32bf73364ba0e2d0c/leaderboard.tsv">QCRI Arabic + English ASR leaderboard</a>           1    4% ▇
+<a name="speech-stt-peste-apache"></a><a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian Speech to Text benchmark</a>        1    3% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a><a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderboard</a>           1    2% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 54.6
+</pre>
+
+<sub>Licences: Qwen/Qwen3-ASR-1.7B model card ([Apache-2.0](../../licenses/Qwen--Qwen3-ASR-1.7B.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Persian ASR Triple Threat Leaderboard ([Apache-2.0](../../licenses/speech-stt-persian-triple-threat-apache.txt)) · QCRI Arabic + English ASR leaderboard ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · PESTE · Persian Speech to Text benchmark ([Apache-2.0](../../licenses/speech-stt-peste-apache.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
 
 ## How to run it
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~2.76GB   54.5
+bf16 · nvidia only  ~2.76GB   54.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~2.76GB
 uvx --from 'qwen-asr[vllm]' qwen-asr-serve Qwen/Qwen3-ASR-0.6B --gpu-memory-utilization 0.8 --host 0.0.0.0 --port 8000
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/qwen3-asr-0-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

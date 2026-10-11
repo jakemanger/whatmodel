@@ -6,23 +6,39 @@
 
 IBM · released 2025-06 · 8.65B params · apache-2.0
 
-**score 59.4** ±4.8 · #37 of 160 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 59.4** ±4.9 · #37 of 162 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Granite Speech 3.3 8B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.7%    63.4   2026-03-26   82% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  23.7%    33.2   2026-08-18    9% ▇
-prior                   pull toward the middle                   49.8                 9% ▇
-                        weighted average                       = 59.4
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    5.7%  ▁▁▁▃··▁▁▂██● beats 82/86  avg 8.2%       82%  blunt
+<a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project dysa…</a>   23.7%  ▂·▂··●····▆█ beats 2/9    avg 18%       9.4%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            1   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-sap-dysarthric-report"></a><a href="https://arxiv.org/html/2605.02782v2">Dysarthric ASR with clinical context on…</a>        1    9% ▇
+prior: pull toward the middle                        9% ▇
+weighted average                                   = 59.4
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt))</sub>
 
@@ -33,11 +49,15 @@ version                needs  score
 bf16 · nvidia only  ~21.26GB   59.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~21.26GB
 vllm serve ibm-granite/granite-speech-3.3-8b --max-model-len 2048 --enable-lora --lora-modules speech=ibm-granite/granite-speech-3.3-8b --max-lora-rank 64
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/granite-speech-3-3-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

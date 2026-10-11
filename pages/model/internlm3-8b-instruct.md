@@ -6,35 +6,102 @@
 
 Shanghai AI Laboratory (InternLM) · released 2025-01 · 8.8B params · apache-2.0
 
-**score 54.4** ±10.3 · #330 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.3** ±10.6 · #343 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks InternLM3 8B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   96.0%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 86/140  very easy · avg 94%     50%  blunt · maxed out · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  96.0%    58.4   2025-10-16   53% ▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                47% ▇▇▇▇▇▇
-                        weighted average                       = 54.4
+source                             results  share of the score
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1   50% ▇▇▇▇▇▇
+prior: pull toward the middle                50% ▇▇▇▇▇▇
+weighted average                            = 54.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
 <pre>
-download         size  score
-16-bit bf16  ~17.61GB   54.4
+download                       size  score
+16-bit bf16                ~17.61GB   54.3
+4-bit q4_k_m                 ~5.4GB   54.3
+8-bit q8_0                   ~9.4GB   54.3
+4-bit mlx-4bit · mac only      ~5GB   54.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='internlm/internlm3-8b-instruct', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit q4_k_m · ~5.4GB
+llama cli -hf internlm/internlm3-8b-instruct-gguf:q4_k_m
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf internlm/internlm3-8b-instruct-gguf:q4_k_m
+# 8-bit q8_0 · ~9.4GB
+llama cli -hf internlm/internlm3-8b-instruct-gguf:q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf internlm/internlm3-8b-instruct-gguf:q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~5.4GB
+lms get https://huggingface.co/internlm/internlm3-8b-instruct-gguf@q4_k_m -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~9.4GB
+lms get https://huggingface.co/internlm/internlm3-8b-instruct-gguf@q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~5GB
+lms get https://huggingface.co/mlx-community/internlm3-8b-instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.4GB
+ollama run hf.co/internlm/internlm3-8b-instruct-gguf:q4_k_m
+# 8-bit q8_0 · ~9.4GB
+ollama run hf.co/internlm/internlm3-8b-instruct-gguf:q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~5GB
+mlx_lm.chat --model mlx-community/internlm3-8b-instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/internlm3-8b-instruct-4bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~17.61GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='internlm/internlm3-8b-instruct', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/internlm3-8b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

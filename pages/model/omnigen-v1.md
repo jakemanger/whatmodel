@@ -6,24 +6,50 @@
 
 BAAI · released 2024-10 · 3.88B params · mit
 
-**score 35.1** ±4.2 · #121 of 144 · from 3 benchmark results across 3 sources
+**score 34.0** ±4.4 · #124 of 144 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks OmniGen (v1) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  40.4%    28.8   2025-11-14   39% ▇▇▇▇▇
-<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>  29.9%    39.1   2026-03-17   37% ▇▇▇▇
-<a name="report-2506.18871v4"></a>BAAI                    <a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 …</a>  43.4%    33.9   2026-04-21   17% ▇▇
-prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 35.1
+task                    vs the others        rank  counts  tests
+image to image / edit…  ▁▁·●▂▃█▃▃▄▁▁   #59 of 62*     18%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #59 of 62 · 18% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   43.4%  ▃●▃··▃·····█ beats 1/6    medium · avg 65%     18%  at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-turn …</a>   40.4%  ●▄▄·▄▄▄▄█·▄█ beats 0/12   medium · avg 65%     41%  at its level
+<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   29.9%  ▂·▂▃·●·▃▂·▃█ beats 4/14   medium · avg 42%     33%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-weavebench"></a><a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVE: Unleashing and Benchmarking the …</a>        1   41% ▇▇▇▇▇
+<a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1   33% ▇▇▇▇
+<a name="report-2506.18871v4"></a><a href="https://arxiv.org/html/2506.18871v4">BAAI (lab)</a>                                      1   18% ▇▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 34.0
+</pre>
 
 <sub>Licences: WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BAAI ([CC BY 4.0](../../licenses/report-2506.18871v4.txt))</sub>
 
@@ -31,14 +57,18 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                   needs  score
-official OmniGen package, default setti…   ~9GB   35.1
+official OmniGen package, default setti…   ~9GB   34.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# official OmniGen package, default settings · nvidia only
+# official OmniGen package, default settings · nvidia only · ~9GB
 git clone https://github.com/staoxiao/OmniGen.git && cd OmniGen && pip install -e . && python -c "from OmniGen import OmniGenPipeline; pipe = OmniGenPipeline.from_pretrained('Shitao/OmniGen-v1'); pipe(prompt='A curly-haired man in a red shirt is drinking tea.', height=1024, width=1024, guidance_scale=2.5, seed=0)[0].save('example_t2i.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/omnigen-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

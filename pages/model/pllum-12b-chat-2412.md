@@ -6,36 +6,104 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 12.25B params · apache-2.0
 
-**score 43.1** ±3.0 · #639 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 43.0** ±2.9 · #643 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks PLLuM-12B-chat (2412) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   62.7%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 39/95  easy · avg 66%     57%  at its level
+<a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, bias-…</a>   29.5%  ●·▂▂▂··█▂▄·▄ beats 0/13   hard · avg 48%     39%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  62.7%    47.9   2026-08-11   57% ▇▇▇▇▇▇▇
-<a name="paper-2606.12250v1-polish-medical-exams"></a>Reassessing High-Perf…  <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, b…</a>  29.5%    35.3   2026-06-10   39% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 43.1
+source                                    results  share of the score
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   57% ▇▇▇▇▇▇▇
+<a name="paper-2606.12250v1-polish-medical-exams"></a><a href="https://arxiv.org/html/2606.12250v1">Reassessing High-Performing LLMs on Pol…</a>        1   39% ▇▇▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 43.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance? ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>
 
 ## How to run it
 
 <pre>
-download        size  score
-16-bit bf16  ~24.5GB   43.1
+download                      size  score
+16-bit bf16                ~24.5GB   43.0
+4-bit Q4_K_M                ~7.5GB   43.0
+8-bit Q8_0                   ~13GB   43.0
+4-bit mlx-6bit · mac only    ~10GB   43.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/PLLuM-12B-chat-2412', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~7.5GB
+llama cli -hf mradermacher/PLLuM-12B-chat-2412-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/PLLuM-12B-chat-2412-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13GB
+llama cli -hf mradermacher/PLLuM-12B-chat-2412-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/PLLuM-12B-chat-2412-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~7.5GB
+lms get https://huggingface.co/mradermacher/PLLuM-12B-chat-2412-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~13GB
+lms get https://huggingface.co/mradermacher/PLLuM-12B-chat-2412-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-6bit · mac only · ~10GB
+lms get https://huggingface.co/lukagra/PLLuM-12B-chat-Q6-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~7.5GB
+ollama run hf.co/mradermacher/PLLuM-12B-chat-2412-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13GB
+ollama run hf.co/mradermacher/PLLuM-12B-chat-2412-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-6bit · mac only · ~10GB
+mlx_lm.chat --model lukagra/PLLuM-12B-chat-Q6-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lukagra/PLLuM-12B-chat-Q6-mlx
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~24.5GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/PLLuM-12B-chat-2412', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/pllum-12b-chat-2412) · [JSON](https://whatmodel.sh/api?format=json&all=1)

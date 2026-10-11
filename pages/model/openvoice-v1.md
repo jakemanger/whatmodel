@@ -6,22 +6,37 @@
 
 MyShell · released 2024-01 · mit
 
-**score 50.7** ±14.4 · #63 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.7** ±14.4 · #64 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks OpenVoice V1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  87.1%    55.7   2025-04-25   17% ▇▇
-prior                   pull toward the middle                   49.7                83% ▇▇▇▇▇▇▇▇▇▇
-                        weighted average                       = 50.7
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>   87.1%  ▂▂····▃·▃▅▂● beats 10/14  very easy · avg 86%     16%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-ttsds-v1-mit"></a><a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 published results</a>           1   16% ▇▇
+prior: pull toward the middle            84% ▇▇▇▇▇▇▇▇▇▇
+weighted average                        = 50.7
+</pre>
 
 <sub>Licences: TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
 
@@ -32,8 +47,14 @@ version                       needs  score
 fp32 (myshell-ai/OpenVoice)  ~0.3GB   50.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (myshell-ai/OpenVoice)
+# fp32 (myshell-ai/OpenVoice) · ~0.3GB
 conda create -n openvoice python=3.9 && conda activate openvoice && git clone https://github.com/myshell-ai/OpenVoice.git && cd OpenVoice && pip install -e . && huggingface-cli download myshell-ai/OpenVoice --revision c70fc8b939bd1d8213994ff7c88e32be39708271 --include 'checkpoints/*' --local-dir . && python -c "import os, torch
 from openvoice import se_extractor
 from openvoice.api import BaseSpeakerTTS, ToneColorConverter
@@ -56,7 +77,5 @@ base_speaker_tts.tts(text, src_path, speaker='default', language='English', spee
 tone_color_converter.convert(audio_src_path=src_path, src_se=source_se, tgt_se=target_se, output_path=save_path, message='@MyShell')
 "
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/openvoice-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

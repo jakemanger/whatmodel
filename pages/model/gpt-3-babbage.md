@@ -6,32 +6,44 @@
 
 OpenAI · released 2020-06 · proprietary
 
-**score 17.9** ±1.4 · comparison only: no current run option verified · from 13 benchmark results across 2 sources
+**score 18.1** ±1.3 · comparison only: no current run option verified · from 13 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks GPT-3 babbage (API base model) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (9)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                            54.5%  ▄·█·●··▄▄··▄ beats 3/7    very easy · avg 92%     22%  at its level · several runs
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                           59.0%  ▄·▄·▄●▄··█·▄ beats 3/7    easy · avg 89%          19%  several runs
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   62.4%  █·▄··●··█··▄ beats 4/7    very easy · avg 90%     12%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                        27.5%  ▄····●···█▄▄ beats 1/5    easy · avg 79%          10%  sharp · too hard for it
+<a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                             11.5%  █···●·███··█ beats 1/5    easy · avg 72%         8.5%  typical
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                                 75.5%  █··▃··●▃·▃·▃ beats 4/7    easy · avg 89%         8.1%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                                 86.6%  █●····███··█ beats 1/5    very easy · avg 98%    7.8%  typical
+<a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                             59.8%  ▄···●··█·▄·▄ beats 1/5    very easy · avg 90%    7.3%  at its level
+<a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                           22.4%  ●·······█··▃ beats 0/5    medium · avg 52%       4.6%  too hard for it
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                   27.5%    15.2   2022-04-14   10% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">WinoGrande</a>                      59.4%    20.8   2022-04-14   10% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">HellaSwag</a>                       42.9%    17.8   2022-04-14    9% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                        11.5%    15.5   2022-04-14    8% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                            86.6%    15.6   2022-04-14    8% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                        59.8%    18.1   2022-04-14    7% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">LAMBADA (OpenAI version), las…</a>  62.5%    20.2   2022-04-14    6% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                      22.4%     7.8   2022-04-14    6% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">PIQA</a>                            74.5%    23.8   2022-04-14    4% ▇
-<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                       54.5%    17.2   2021-08-06   12% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                      59.0%    18.8   2021-08-06    8% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  62.4%    19.4   2021-08-06    7% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                            75.5%    23.4   2021-08-06    4% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 17.9
+source                                    results  share of the score
+<a name="paper-2204.06745v1"></a><a href="https://arxiv.org/html/2204.06745v1">GPT-NeoX-20B: An Open-Source Autoregres…</a>        9   66% ▇▇▇▇▇▇▇▇
+<a name="eleutherai-gpt-j-6b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">EleutherAI GPT-J-6B model card</a>                  4   33% ▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 18.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: GPT-NeoX-20B: An Open-Source Autoregressive Language Model ([CC BY 4.0](../../licenses/paper-2204.06745v1-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt))</sub>
 

@@ -6,29 +6,72 @@
 
 DeepSeek · released 2024-06 · 15.71B params (2.4B active) · deepseek
 
-**score 45.0** ±1.2 · #580 of 934 · from 10 benchmark results across 7 sources
+**score 45.0** ±1.2 · #586 of 949 · from 10 benchmark results across 7 sources
+
+## What it's good at
+
+<sub>● marks DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ●▁▃▆█▆▅▄▄▃▂▁   #330 of 334*    2.8%      1
+coding       ▁▁▁▃▆●█▇▆▄▃▁    #316 of 469     34%      6
+</pre>
+
+<details><summary>agent tasks · #330 of 334 · 2.8% of its score</summary>
+
+Beats [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
+
+<pre>
+test     result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>   21.0%  ▁●▁▁▁▃▅█▅▄▁▁ beats 4/114  medium · avg 52%    2.8%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #316 of 469 · 34% of its score</summary>
+
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   20.6%  ▁▁·▁▂●▆█▅▂·▂ beats 5/31   hard · avg 26%       20%  sharp
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     46.1%  ▃▁▁█▁●▅▃▄▇▁▄ beats 11/31  medium · avg 44%    4.7%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   12.8%  ▃··▁▂●▃▂█▃▄▂ beats 10/47  medium · avg 54%    3.4%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    6.2%  █▂▁▁▂●▂▃▅▅▅▇ beats 15/47  medium · avg 36%    3.1%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   27.0%  ▁▁▁▁▁▁▂▂●█▅▄ beats 18/47  hard · avg 33%      2.4%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   75.7%  ▁▁▁······▁▃● beats 31/47  easy · avg 67%      0.1%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 29.5%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 26/61  medium · avg 41%     48%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/deepseek-ai--DeepSeek-Coder-V2-Lite-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   79.0%  ▂·▂▂▂▆▅▆●▆▃█ beats 16/29  easy · avg 76%       10%  at its level
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   17.1%  ●··▃▅·█·▃██▃ beats 0/15   hard · avg 24%      5.5%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            29.5%    44.3   2024-10-22   48% ▇▇▇▇▇▇
-<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>  20.6%    47.8   2024-12-26   19% ▇▇
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/deepseek-ai--DeepSeek-Coder-V2-Lite-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  79.0%    51.4   2024-10-19   10% ▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  12.8%    36.6   2025-05-31    4% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   6.2%    38.1   2025-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  27.0%    46.0   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  75.7%    72.2   2025-05-31    0% ▇
-<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>  17.1%    44.3   2026-08-31    6% ▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>  46.1%    51.9   2024-07-22    5% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>                         21.0%    22.6   2025-04-13    3% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 45.0
+source                                    results  share of the score
+<a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                       1   48% ▇▇▇▇▇▇
+<a name="livecodebench-website-20241226"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official website results</a>          1   20% ▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/deepseek-ai--DeepSeek-Coder-V2-Lite-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPlus / EvalPerf published evaluatio…</a>        1   10% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    9% ▇
+<a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1    5% ▇
+<a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K models leaderboard</a>                     1    5% ▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    3% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 45.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
@@ -37,18 +80,73 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct/blob/e434a23f91ba5b4923cf6c9d9a238eb4a08e3a11/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m   ~9.93GB   45.0
-8-bit q8_0    ~19.35GB   45.0
+download                       size  score
+4-bit q4_k_m                ~9.93GB   45.0
+8-bit q8_0                 ~19.35GB   45.0
+4-bit Q4_K_M                ~10.4GB   45.0
+8-bit Q8_0                  ~16.7GB   45.0
+4-bit mlx-4bit · mac only    ~8.8GB   45.0
+4-bit mlx-8bit · mac only   ~16.7GB   45.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run deepseek-coder-v2:16b-lite-instruct-q4_K_M
-# 8-bit q8_0
-ollama run deepseek-coder-v2:16b-lite-instruct-q8_0
+# 4-bit Q4_K_M · ~10.4GB
+llama cli -hf lmstudio-community/DeepSeek-Coder-V2-Lite-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/DeepSeek-Coder-V2-Lite-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~16.7GB
+llama cli -hf lmstudio-community/DeepSeek-Coder-V2-Lite-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/DeepSeek-Coder-V2-Lite-Instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~10.4GB
+lms get https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Lite-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~16.7GB
+lms get https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Lite-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~8.8GB
+lms get https://huggingface.co/mlx-community/DeepSeek-Coder-V2-Lite-Instruct-4bit-mlx -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~16.7GB
+lms get https://huggingface.co/mlx-community/DeepSeek-Coder-V2-Lite-Instruct-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~9.93GB
+ollama run deepseek-coder-v2:16b-lite-instruct-q4_K_M
+# 8-bit q8_0 · ~19.35GB
+ollama run deepseek-coder-v2:16b-lite-instruct-q8_0
+# 4-bit Q4_K_M · ~10.4GB
+ollama run hf.co/lmstudio-community/DeepSeek-Coder-V2-Lite-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~16.7GB
+ollama run hf.co/lmstudio-community/DeepSeek-Coder-V2-Lite-Instruct-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~8.8GB
+mlx_lm.chat --model mlx-community/DeepSeek-Coder-V2-Lite-Instruct-4bit-mlx
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/DeepSeek-Coder-V2-Lite-Instruct-4bit-mlx
+# 4-bit mlx-8bit · mac only · ~16.7GB
+mlx_lm.chat --model mlx-community/DeepSeek-Coder-V2-Lite-Instruct-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/DeepSeek-Coder-V2-Lite-Instruct-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-v2-lite-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

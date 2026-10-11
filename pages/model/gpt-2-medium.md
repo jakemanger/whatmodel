@@ -6,33 +6,52 @@
 
 OpenAI · released 2019-05 · 0.355B params · mit
 
-**score -1.6** ±2.0 · #932 of 934 · from 14 benchmark results across 5 sources
+**score -1.5** ±2.1 · #947 of 949 · from 14 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks GPT-2 Medium (355M) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (14)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">OpenBookQA</a>                           18.6%  ●▁▁▁▄▃▃▇▂▁▄▂ beats 7/65    very hard · avg 26%     18%  too hard for it
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                        22.8%  ●▁▁▂▂▅▇█▄▃▃▂ beats 1/97    hard · avg 46%          16%  sharp · too hard for it
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                            32.2%  ▁●▁▁▂▂▃▇█▆▅▃ beats 1/85    easy · avg 88%          14%  typical
+<a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zero-sh…</a>   26.8%  █···██·●···█ beats 3/4     easy · avg 79%          13%  too hard for it
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                        30.9%  █·····●·█··█ beats 1/3     easy · avg 83%          10%  typical
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                             49.4%  ▁▂▃●▃▅▇█▇▆▄▆ beats 8/65    very easy · avg 92%     10%  at its level
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                                 67.0%  ▄·▄·●··▆▂··▂ beats 5/12    very easy · avg 96%    8.4%  at its level
+<a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                     63.0%  █····●···█·█ beats 1/3     easy · avg 92%         6.8%  blunt · at its level
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   32.0%  ▃···▃●·▃·▃·█ beats 2/7     hard · avg 44%         1.3%  blunt · too hard for it
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   25.9%  ▁●▁▁▁▁▁▂▄█▄▃ beats 2/146   easy · avg 83%         0.8%  too hard for it · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.1%  ●▁▁▁▁▁▁▁▂█▅▁ beats 24/276  medium · avg 73%       0.8%  too hard for it · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   24.9%  ●·▁▁▂▁▂▅█▇▄▁ beats 3/100   medium · avg 68%       0.2%  too hard for it · noisy
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>   10.5%  ▄···█···●█·▄ beats 4/7     very hard · avg 11%    0.1%  blunt · too hard for it
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   47.2%  ●·······▁··▁ beats 5/7     very hard · avg 51%    0.0%  blunt · too hard for it · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="acl-2021-emnlp-main-564"></a>Surface Form Competit…  <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">OpenBookQA</a>                      18.6%   -10.2   2021-11-01   18% ▇▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                   22.8%   -10.0   2021-11-01   16% ▇▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                       32.2%    -1.0   2021-11-01   13% ▇▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                   30.9%    -0.6   2021-11-01   10% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                        49.4%     4.3   2021-11-01    9% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                            67.0%     6.9   2021-11-01    9% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                63.0%    -1.5   2021-11-01    7% ▇
-<a name="acl-2021-findings-acl-404-prost"></a>PROST                   <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zer…</a>  26.8%     3.6   2021-08-01   13% ▇▇
-<a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  32.0%     0.5   2022-12-07    1% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  10.5%    43.5   2022-12-07    0% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.2%   -58.9   2022-12-07    0% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  25.9%    -9.4   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  24.9%   -10.8   2026-04-17    0% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  29.1%   -14.2   2024-02-05    1% ▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = -1.6
+source                           results  share of the score
+<a name="acl-2021-emnlp-main-564"></a><a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Surface Form Competition</a>               7   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="acl-2021-findings-acl-404-prost"></a><a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST</a>                                  1   13% ▇▇
+<a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                  3    1% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                  2    1% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    1% ▇
+prior: pull toward the middle               2% ▇
+weighted average                          = -1.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -41,15 +60,67 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf): Context limit from the maker's documentation, observed 2026-10-06.</sub>
 
 <pre>
-download       size  score
-4-bit fp32  ~1.52GB   -1.6
+download                      size  score
+4-bit fp32                 ~1.52GB   -1.5
+4-bit Q4_K_M                ~0.3GB   -1.5
+8-bit Q8_0                  ~0.4GB   -1.5
+4-bit mlx-8bit · mac only   ~0.4GB   -1.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp32
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2-medium')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~0.3GB
+llama cli -hf mradermacher/gpt2-medium-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/gpt2-medium-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~0.4GB
+llama cli -hf mradermacher/gpt2-medium-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/gpt2-medium-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~0.3GB
+lms get https://huggingface.co/mradermacher/gpt2-medium-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~0.4GB
+lms get https://huggingface.co/mradermacher/gpt2-medium-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~0.4GB
+lms get https://huggingface.co/viktor2698/gpt2-medium-mlx-8Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~0.3GB
+ollama run hf.co/mradermacher/gpt2-medium-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~0.4GB
+ollama run hf.co/mradermacher/gpt2-medium-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-8bit · mac only · ~0.4GB
+mlx_lm.chat --model viktor2698/gpt2-medium-mlx-8Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model viktor2698/gpt2-medium-mlx-8Bit
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp32 · ~1.52GB
+uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2-medium')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/gpt-2-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

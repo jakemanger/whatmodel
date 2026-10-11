@@ -6,43 +6,131 @@
 
 NVIDIA · released 2025-12 · 31.6B params (3.6B active) · nvidia-open-model
 
-**score 57.9** ±0.9 · #249 of 934 · from 20 benchmark results across 8 sources
+**score 57.5** ±0.9 · #265 of 949 · from 22 benchmark results across 9 sources
+
+## What it's good at
+
+<sub>● marks Nemotron 3 Nano 30B-A3B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others            rank  counts  tests
+agent tasks     ▁▁▃▆█●▅▄▄▃▂▁     #187 of 334*     17%      5
+coding          ▁▁▁▃▆█●▇▆▄▃▁      #253 of 469     10%      5
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂     #223 of 466*    7.5%      2
+math            ▁▂▃▅▆▅▄●▄▁▁▁      #143 of 400     25%      4
+web search                     not ranked yet       —      1
+</pre>
+
+<details><summary>agent tasks · #187 of 334 · 17% of its score</summary>
+
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md#reasoning-benchmark-evaluations">τ²-bench Telecom (lab)</a>               42.2%  ▁·▅█●▅▂▃▃▂▃▁ beats 35/89   hard · avg 19%           12%  sharp · at its level
+<a href="https://arxiv.org/html/2512.20848v1#S3.T3">Terminal-Bench Hard (lab)</a>             8.5%  ▂▅▆▂▂●▂▂█▅▅▂ beats 11/27   very hard · avg 4.9%    4.5%  sharp · small run
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">BFCL V4 (December 2025 archive) (…</a>   53.8%  ▁▁▁▂▇▆▆▆●▂▄▂ beats 81/111  hard · avg 32%             —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2512.20848v1">Humanity's Last Exam with tools (…</a>   15.5%  ●▂▂▁▄▂▃▆█▇▂▆ beats 0/54    hard · avg 16%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">τ²-bench aggregate (lab)</a>             49.0%  ▁▁▁·▂●▄▃▃▅█▂ beats 6/37    medium · avg 40%           —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>coding · #253 of 469 · 10% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   54.5%  ▂··▃▂▃●▅█·▃▂ beats 8/20   medium · avg 45%        4.5%  at its level
+<a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    3.5%  █··▄▂●██▄·▄▆ beats 7/22   very hard · avg 3.0%    3.7%  sharp · too hard for it
+<a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified) (lab)</a>    33.3%  ▁····▃▄▄●█▆▂ beats 15/34  hard · avg 19%          2.1%  at its level · small run
+<a href="https://arxiv.org/html/2512.20848v1">LiveCodeBench v6 (Aug 2024–May 20…</a>   68.3%  ▂▅▅●█▃▂····▂ beats 8/17   medium · avg 45%           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">SciCode subproblems (lab)</a>            33.3%  ●··▃▃▃·▃·█·▅ beats 0/9    hard · avg 17%             —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #223 of 466 · 7.5% of its score</summary>
+
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
+
+<pre>
+test                           result  vs the others in its run    difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                 1313.5  ▁▁▁▂▃▃▃●▆▇█▃ beats 143/379  avg 1268          7.5%  blunt
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">Arena-Hard v2 aggregate (lab)</a>   67.7%  ▁▁··▄▃▁▃●▁▁▇ beats 14/22    hard · avg 27%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>math · #143 of 400 · 25% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall.
+
+<pre>
+test                      result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>            89.1%  ▁·▁▁▁▂▅▆█●▅▁ beats 111/133  medium · avg 63%    8.5%  sharp
+<a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>            89.9%  ▁▁▁▂▁▂●█▆▂·▁ beats 22/49    medium · avg 64%    7.0%  sharp
+<a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>      70.4%  ▁▁·▁▁▁●▅█▄▂▃ beats 10/42    medium · avg 42%    6.0%  at its level
+<a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>   84.6%  ▁▁▁▃▁▅▅●██▁▄ beats 15/31    easy · avg 69%      4.0%  small run
+</pre>
+
+</details>
+
+<details><summary>web search · 0.0% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2512.20848v1">Humanity's Last Exam with tools (…</a>   15.5%  ●▂▂▁▄▂▃▆█▇▂▆ beats 0/54   hard · avg 16%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (15)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5114  ▁▄▃▃▇▄●▃▅▁▁▁ beats 19/30    avg 0.423                11%  sharp
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   51.1%  ▂▃▅▂▆▃█●█▅▃▆ beats 19/34    medium · avg 42%        5.7%  blunt · at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   93.0%  ▂·▂▂·▂·▃▃·●▃ beats 9/14     easy · avg 80%          4.5%  typical
+<a href="https://arxiv.org/html/2512.20848v1">MMLU-ProX (lab)</a>                      59.5%  ▁·▁▁●▂▁▃▂█▅▄ beats 3/35     medium · avg 54%        4.2%  at its level · small run · several runs
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   64.9%  ▁▂▂▂▃█●▆▅▄▂▃ beats 43/95    easy · avg 66%          4.2%  typical
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      45.8%  ▁··▁▁▂▂●▅▆█▆ beats 17/70    medium · avg 64%        3.1%  typical
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   69.2%  ▂··▂▂·●▆▆█·▄ beats 3/15     medium · avg 63%        3.0%  at its level
+<a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (lab)</a>                 38.5%  ▁·▁·▁●▆▅▃▁█▅ beats 3/29     hard · avg 27%          2.2%  at its level · small run
+<a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                       12.0%  ●··········▄ beats 0/2      very hard · avg 7.1%    1.2%  blunt · small run
+<a href="https://arxiv.org/html/2512.20848v1">miniF2F (pass@1) (lab)</a>               50.0%  ▃·█▅·····●·▃ beats 7/8      very hard · avg 14%     0.3%  blunt · noisy · small run
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   90.4%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 48/98    very easy · avg 90%     0.0%  blunt
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">MMLU-Pro (lab)</a>                       78.3%  ▁▁·▁▁▁▃▂▄●█▁ beats 116/188  medium · avg 57%           —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">GPQA (subset unspecified) (lab)</a>      73.0%  ▂▁▂▂▄▃▆▃▅●▄▃ beats 81/104   very hard · avg 33%        —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">Humanity's Last Exam (lab)</a>           10.6%  ▁▁▁▃●▆▇██▆▁▃ beats 19/104   very hard · avg 3.8%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">IFBench prompt-level (lab)</a>           71.5%  ●▄▄··▄·▄···▄ beats 0/6                                 —  not counted yet: no other model in the …
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="report-2603.19220v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                  89.1%    63.9   2026-03-22    9% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                  89.9%    64.4   2026-03-22    7% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>            70.4%    62.7   2026-03-22    6% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   54.5%    52.5   2026-03-22    4% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>         84.6%    60.0   2026-03-22    4% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>    3.5%    52.7   2026-03-22    4% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX (lab)</a>                  59.5%    52.7   2026-03-22    2% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (lab)</a>             38.5%    57.8   2026-03-22    2% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified) (…</a>   33.3%    62.4   2026-03-22    2% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                   12.0%    61.6   2026-03-22    1% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5114    58.7   2026-05-02   12% ▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   51.1%    58.3   2026-05-02    6% ▇
-<a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md#reasoning-benchmark-evaluations">τ²-bench Telecom (lab)</a>           42.2%    58.7   2026-08-24   12% ▇
-                        <a href="https://arxiv.org/html/2512.20848v1#S3.T3">Terminal-Bench Hard (lab)</a>         8.5%    55.1   2025-12-23    5% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   93.0%    62.6   2026-04-17    4% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   69.2%    54.1   2026-04-17    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1313.5    55.5   2026-10-02    7% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   64.9%    48.1   2026-08-11    4% ▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   45.8%    36.9   2026-03-26    3% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   90.4%    77.5   2026-09-22    0% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 57.9
+source                                    results  share of the score
+<a name="report-2603.19220v2"></a><a href="https://arxiv.org/html/2603.19220v2">NVIDIA (lab)</a>                                   10   41% ▇▇▇▇▇
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   17% ▇▇
+<a name="first-party-nvidia-scores"></a><a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md#reasoning-benchmark-evaluations">NVIDIA vendor-reported benchmark scores…</a>        2   17% ▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    8% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    7% ▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    4% ▇
+<a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>          1    3% ▇
+<a name="report-2512.20848v1"></a><a href="https://arxiv.org/html/2512.20848v1">NVIDIA (lab)</a>                                    2    2% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 57.5
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2603.19220v2.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · NVIDIA ([CC BY 4.0](../../licenses/report-2512.20848v1.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
-<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2603.19220v2.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
-
-<details><summary>Not counted (14)</summary>
+<details><summary>Not counted (12)</summary>
 
 <pre>
 source                  test                            score  why
@@ -57,8 +145,6 @@ nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
 nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">Arena-Hard v2 aggregate</a>         67.7%  too few models have it yet
 NVIDIA                  <a href="https://arxiv.org/html/2512.20848v1">Humanity's Last Exam with too…</a>  15.5%  too few models have it yet
 NVIDIA                  <a href="https://arxiv.org/html/2512.20848v1">LiveCodeBench v6 (Aug 2024–Ma…</a>  68.3%  too few models have it yet
-NVIDIA                  <a href="https://arxiv.org/html/2512.20848v1">miniF2F (pass@1)</a>                50.0%  too few models have it yet
-NVIDIA                  <a href="https://arxiv.org/html/2512.20848v1">MMLU-ProX</a>                       59.5%  only model in this source's run
 NVIDIA                  <a href="https://arxiv.org/html/2512.20848v1">MultiChallenge</a>                  38.5%  only model in this source's run
 </pre>
 
@@ -71,19 +157,74 @@ api (Deep Infra) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [de
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/nvidia/Nemotron-3-Nano-30B-A3B.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-3-nano-30b-a3b.toml)</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~19.46GB   57.9
-8-bit q8_0    ~38.42GB   57.9
+download                       size  score
+4-bit q4_k_m               ~19.46GB   57.5
+8-bit q8_0                 ~38.42GB   57.5
+4-bit Q4_K_M                ~22.4GB   57.5
+8-bit Q8_0                  ~33.6GB   57.5
+4-bit mlx-4bit · mac only   ~17.8GB   57.5
+4-bit mlx-8bit · mac only   ~33.6GB   57.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run nemotron-3-nano:30b
-# 8-bit q8_0
-ollama run nemotron-3-nano:30b-a3b-q8_0
+# 4-bit Q4_K_M · ~22.4GB
+llama cli -hf ggml-org/NVIDIA-Nemotron-3-Nano-30B-A3B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ggml-org/NVIDIA-Nemotron-3-Nano-30B-A3B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~33.6GB
+llama cli -hf ggml-org/NVIDIA-Nemotron-3-Nano-30B-A3B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ggml-org/NVIDIA-Nemotron-3-Nano-30B-A3B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~22.4GB
+lms get https://huggingface.co/ggml-org/NVIDIA-Nemotron-3-Nano-30B-A3B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~33.6GB
+lms get https://huggingface.co/ggml-org/NVIDIA-Nemotron-3-Nano-30B-A3B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~17.8GB
+lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-30B-A3B-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~33.6GB
+lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-30B-A3B-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~19.46GB
+ollama run nemotron-3-nano:30b
+# 8-bit q8_0 · ~38.42GB
+ollama run nemotron-3-nano:30b-a3b-q8_0
+# 4-bit Q4_K_M · ~22.4GB
+ollama run hf.co/ggml-org/NVIDIA-Nemotron-3-Nano-30B-A3B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~33.6GB
+ollama run hf.co/ggml-org/NVIDIA-Nemotron-3-Nano-30B-A3B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~17.8GB
+mlx_lm.chat --model lmstudio-community/NVIDIA-Nemotron-3-Nano-30B-A3B-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/NVIDIA-Nemotron-3-Nano-30B-A3B-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~33.6GB
+mlx_lm.chat --model lmstudio-community/NVIDIA-Nemotron-3-Nano-30B-A3B-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/NVIDIA-Nemotron-3-Nano-30B-A3B-MLX-8bit
+```
 
 ## Published speed measurements
 

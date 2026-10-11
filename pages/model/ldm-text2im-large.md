@@ -6,22 +6,40 @@
 
 CompVis · released 2022-04 · 1.45B params · apache-2.0
 
-**score 48.5** ±14.9 · #84 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.4** ±14.9 · #85 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  25.8%    25.6   2024-02-21    6% ▇
-prior                   pull toward the middle                   49.9                94% ▇▇▇▇▇▇▇▇▇▇▇
-                        weighted average                       = 48.5
+task           vs the others          rank  counts  tests
+text to image  ▂●▅▃▄▄█▃▁▂▁▁   #116 of 126*    6.1%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #116 of 126 · 6.1% of its score</summary>
+
+Trails [CogView2](cogview2.md), [Versatile Diffusion v1.0](versatile-diffusion.md), [Dreamlike Photoreal 2.0](dreamlike-photoreal-2-0.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   25.8%  ▃··▃▅·●·▅▅█▅ beats 4/14   hard · avg 27%    6.1%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                           results  share of the score
+<a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">tgxs002/HPSv2 repository README</a>        1    6% ▇
+prior: pull toward the middle              94% ▇▇▇▇▇▇▇▇▇▇▇
+weighted average                          = 48.4
+</pre>
 
 <sub>Licences: tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 
@@ -29,14 +47,18 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version              needs  score
-fp32 · nvidia only  ~7.5GB   48.5
+fp32 · nvidia only  ~7.5GB   48.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 · nvidia only
+# fp32 · nvidia only · ~7.5GB
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('CompVis/ldm-text2im-large-256').to('cuda'); p(['a cat holding a sign'], num_inference_steps=50, eta=0.3, guidance_scale=6).images[0].save('out.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ldm-text2im-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,54 +6,97 @@
 
 Google · released 2024-02 · 8.54B params · gemma
 
-**score 35.1** ±0.5 · #788 of 934 · from 33 benchmark results across 7 sources
+**score 35.2** ±0.5 · #801 of 949 · from 37 benchmark results across 9 sources
+
+## What it's good at
+
+<sub>● marks Gemma 7B (base) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁●▆██▇▆▄▃▁   #425 of 469     71%      7
+math    ▁▂▃▅●▅▄█▄▁▁▁   #293 of 400    4.5%      2
+</pre>
+
+<details><summary>coding · #425 of 469 · 71% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            35.4%  ▁·▁▁▃●▆▅█▃▁▁ beats 20/99  easy · avg 79%       41%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           28.7%  ▁·▁▁▁▃●▄▄█▃▁ beats 17/99  easy · avg 74%       16%  sharp · at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   34.4%  ▁·▂▁▂▆●█▄▄▁▂ beats 12/35  medium · avg 64%    4.2%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                43.4%  ▁···▁▁●▅▇█▆▂ beats 9/75   easy · avg 68%      3.1%  at its level
+<a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                           44.4%  ▁▁▁▄●█▄▅▃▁▂▁ beats 21/81  easy · avg 74%      2.6%  at its level · several runs
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   15.0%  ▄▇●▃▄▇▄▁▇▃·▁ beats 9/35   medium · avg 49%    2.3%  typical
+<a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>    7.4%  ▁·▁▁●██▄█▁▅▅ beats 3/35   medium · avg 56%    2.0%  sharp
+</pre>
+
+</details>
+
+<details><summary>math · #293 of 400 · 4.5% of its score</summary>
+
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall.
+
+<pre>
+test   result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>   53.3%  ▄··▄···▄··●▄ beats 4/5    easy · avg 79%      2.6%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2405.04324v1">MATH</a>    24.1%  ▃·▃····▃···● beats 5/5    medium · avg 50%    1.9%  small run · several runs
+</pre>
+
+</details>
+
+<details><summary>other tests (22)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    23.0%  ▂▂▃●▄█▁▄▅▃▁▃ beats 7/42     medium · avg 55%       5.8%  typical
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/google/gemma-7b/results_2024-05-16%2018%3A02%3A08.310603.json">MedQA (USMLE, 4 options)</a>             48.7%  ▁▁··▄▁▁··▄●█ beats 10/17    easy · avg 76%         2.6%  sharp · at its level
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">BIG-Bench Hard (lab)</a>                 55.1%  ▁▁▁▁▂▄▅●█▃▄▁ beats 58/129   easy · avg 82%         1.9%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Challenge (lab)</a>                  53.2%  ▆▁▁▂▂▅▇●▄▃▃▂ beats 62/97    easy · avg 83%         1.8%  sharp · at its level · small run
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/google/gemma-7b/results_2024-05-16%2018%3A02%3A08.310603.json">MedMCQA</a>                              49.3%  ▂▂··▄▄▂▂·▄●█ beats 12/17    medium · avg 68%       1.4%  at its level
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">OpenBookQA (lab)</a>                     52.8%  █▁▁▁▄▃▃●▂▁▄▂ beats 49/65    easy · avg 74%         1.1%  at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">WinoGrande (lab)</a>                     72.3%  ▁···▂▁▁▅█●▃▁ beats 69/87    easy · avg 87%         1.1%  at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">Natural Questions (closed book) (…</a>   23.0%  ▁·▁·▁▂▁▂▁▄●█ beats 19/33    medium · avg 53%       1.1%  small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">MMLU (lab)</a>                           64.3%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 82/183   easy · avg 81%         1.0%  at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">BoolQ (lab)</a>                          83.2%  ▁▄▅▆▂▆▄▄█●▄▄ beats 47/58    easy · avg 92%         1.0%  at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">TriviaQA (lab)</a>                       63.4%  ▁·▁▁▄▁▂▂▅▁●█ beats 27/38    very easy · avg 85%    0.9%  at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (lab)</a>                      81.2%  ▁▁▁▁▂▂▃▇█▆●▃ beats 69/85    very easy · avg 90%    0.8%  at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report) (l…</a>   41.7%  ▄··········● beats 2/2      easy · avg 65%         0.7%  at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">CommonsenseQA (lab)</a>                  71.3%  ▄·▄▄·▄····▄● beats 6/6      easy · avg 84%         0.6%  at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Easy (lab)</a>                       81.5%  ▁▂▃▂▃▅▇█▇▆▄● beats 63/65    very easy · avg 90%    0.5%  at its level · small run
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   64.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 109/276  medium · avg 73%       0.5%  at its level · noisy
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">Social IQA (lab)</a>                     51.8%  ▂·▂██▅●▁▂▃▆▁ beats 34/51    medium · avg 65%       0.5%  blunt · at its level · small run
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   84.9%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 98/146   easy · avg 83%         0.4%  at its level · noisy
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">PIQA (lab)</a>                           81.2%  ▁▁▁▃▃▄▇█●▃▁▁ beats 71/83    easy · avg 87%         0.3%  blunt · at its level · small run
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   33.5%  ▃·▁▁●▁▂▅█▇▄▁ beats 17/100   medium · avg 68%       0.3%  noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/google/gemma-7b/results_2024-03-15%2022%3A12%3A39.316927.json">TruthfulQA MC2</a>                       44.9%  ▅▃█●▁▂▅···▁▁ beats 19/31    medium · avg 64%       0.2%  blunt · at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/google/gemma-7b/results_2024-05-16%2018%3A02%3A08.310603.json">PubMedQA</a>                             75.6%  ▂·▂▆·▄▂▄▄▂●▂ beats 16/17    medium · avg 77%       0.2%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       35.4%    34.5   2024-12-26   25% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      28.7%    33.7   2024-12-26   17% ▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           43.4%    34.6   2024-12-26    3% ▇
-<a name="paper-gemma-2403.08295v4"></a>Gemma report            <a href="https://arxiv.org/html/2403.08295v4#S3.T6">HumanEval (lab)</a>                 32.3%    33.6   2024-04-19    2% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Challenge (lab)</a>             53.2%    36.1   2024-04-19    2% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BIG-Bench Hard (lab)</a>            55.1%    38.6   2024-04-19    2% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">GSM8K (lab)</a>                     46.4%    38.0   2024-04-19    2% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">OpenBookQA (lab)</a>                52.8%    38.9   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MATH (lab)</a>                      24.3%    41.0   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MBPP (lab)</a>                      44.4%    36.3   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">WinoGrande (lab)</a>                72.3%    36.1   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MMLU (lab)</a>                      64.3%    43.2   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">TriviaQA (lab)</a>                  63.4%    37.0   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BoolQ (lab)</a>                     83.2%    39.9   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report…</a>  41.7%    37.7   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (lab)</a>                 81.2%    40.6   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">CommonsenseQA (lab)</a>             71.3%    37.0   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">Natural Questions (closed boo…</a>  23.0%    37.0   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">Social IQA (lab)</a>                51.8%    34.5   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Easy (lab)</a>                  81.5%    39.2   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">PIQA (lab)</a>                      81.2%    37.7   2024-04-19    0% ▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       31.7%    33.9   2024-03-28   12% ▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               23.0%    34.8   2024-03-28    6% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  34.4%    35.7   2024-05-07    4% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  15.0%    32.3   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>   7.4%    29.8   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                           53.3%    41.5   2024-05-07    1% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            24.1%    45.4   2024-05-07    1% ▇
-<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 32.3%    33.7   2024-06-19    4% ▇
-                        <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      44.4%    34.8   2024-06-19    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  84.9%    50.3   2026-04-17    0% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  33.5%    29.8   2026-04-17    0% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  64.2%    44.7   2024-02-21    0% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 35.1
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   42% ▇▇▇▇▇
+<a name="paper-gemma-2403.08295v4"></a><a href="https://arxiv.org/html/2403.08295v4#S3.T6">Gemma report (lab)</a>                             18   19% ▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   18% ▇▇
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        5   10% ▇
+<a name="paper-2406.11409v2"></a><a href="https://arxiv.org/html/2406.11409v2">CodeGemma: Open Code Models Based on Ge…</a>        2    5% ▇
+<a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/google/gemma-7b/results_2024-05-16%2018%3A02%3A08.310603.json">Open Medical-LLM Leaderboard results</a>            3    4% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    1% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/google/gemma-7b/results_2024-03-15%2022%3A12%3A39.316927.json">Hallucinations Leaderboard results</a>              1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 35.2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Gemma report ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Gemma report ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
@@ -61,17 +104,51 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~5.5GB   35.1
-8-bit q8_0    ~9.1GB   35.1
+4-bit q4_k_m  ~5.5GB   35.2
+8-bit q8_0    ~9.1GB   35.2
+4-bit Q4_K_M  ~5.3GB   35.2
+8-bit Q8_0    ~9.1GB   35.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run gemma:7b-text-q4_K_M
-# 8-bit q8_0
-ollama run gemma:7b-text-q8_0
+# 4-bit Q4_K_M · ~5.3GB
+llama cli -hf MaziyarPanahi/gemma-7b-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf MaziyarPanahi/gemma-7b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~9.1GB
+llama cli -hf MaziyarPanahi/gemma-7b-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf MaziyarPanahi/gemma-7b-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~5.3GB
+lms get https://huggingface.co/MaziyarPanahi/gemma-7b-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~9.1GB
+lms get https://huggingface.co/MaziyarPanahi/gemma-7b-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.5GB
+ollama run gemma:7b-text-q4_K_M
+# 8-bit q8_0 · ~9.1GB
+ollama run gemma:7b-text-q8_0
+# 4-bit Q4_K_M · ~5.3GB
+ollama run hf.co/MaziyarPanahi/gemma-7b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~9.1GB
+ollama run hf.co/MaziyarPanahi/gemma-7b-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/gemma-7b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

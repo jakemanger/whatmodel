@@ -6,40 +6,92 @@
 
 Ai2 · released 2025-12 · 32.2B params · apache-2.0
 
-**score 58.1** ±0.9 · #244 of 934 · from 21 benchmark results across 5 sources
+**score 58.2** ±0.9 · #249 of 949 · from 21 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Olmo 3.1 32B Think among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others         rank  counts  tests
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #204 of 469    7.5%      3
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #248 of 466     12%      3
+math            ▁▂▃▅▆▅▄●▄▁▁▁   #113 of 400     22%      4
+</pre>
+
+<details><summary>coding · #204 of 469 · 7.5% of its score</summary>
+
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
+
+<pre>
+test                    result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>              68.3%  ▄▄····▄·▄··● beats 5/5    medium · avg 62%    2.9%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>         91.5%  ▂·······▂·▂● beats 6/6    easy · avg 80%      2.5%  sharp
+<a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>   83.3%  ▃▃·····▃·▃·● beats 4/6    easy · avg 65%      2.2%  typical
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #248 of 466 · 12% of its score</summary>
+
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1286.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 114/379  avg 1268            7.7%  blunt
+<a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled (l…</a>   69.1%  █···█·█·█·●█ beats 4/5      medium · avg 44%    4.2%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecified) …</a>   93.8%  ▄▄·····█▄▄·● beats 6/6      easy · avg 79%      0.5%  noisy
+</pre>
+
+</details>
+
+<details><summary>math · #113 of 400 · 22% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall.
+
+<pre>
+test                               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                     78.1%  ▄··▄····█▄▄● beats 6/6    medium · avg 51%    9.4%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                     80.6%  ▄·····▄··▄█● beats 6/6    medium · avg 59%    9.3%  sharp
+<a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation) (lab)</a>   53.4%  ▅···▃▃···▃▃● beats 8/8    hard · avg 24%      2.6%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">MATH (subset unspecified) (lab)</a>     96.2%  ▅····▃▃··▃▃● beats 7/8    easy · avg 74%      1.0%  noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (11)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (lab)</a>      56.7%  ▃······▃·▅·● beats 5/6      hard · avg 43%       14%  sharp · at its level
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5067  ▁▄▃▃▇▄●▃▅▁▁▁ beats 18/30    avg 0.423            12%  sharp
+<a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>                 88.6%  ▄·····▄·▄·█● beats 5/6      easy · avg 78%      8.7%  sharp
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   50.7%  ▂▃▅▂▆▃█●█▅▃▆ beats 18/34    medium · avg 42%    5.8%  blunt · at its level
+<a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                           86.4%  ▄···▄··█··▄● beats 6/6      easy · avg 77%      5.0%  typical
+<a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>                88.8%  ▄····▄·▄▄··● beats 5/5      easy · avg 76%      3.7%  typical
+<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                     80.1%  █▄····▄·▄·▄● beats 6/6      medium · avg 53%    2.7%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                          30.9%  ▄··█···▄···● beats 4/5      hard · avg 22%      2.6%  blunt · at its level
+<a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)…</a>   68.1%  █·██·██····● beats 5/5      medium · avg 36%    2.0%  at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   74.3%  ▃·▁▁▂▁▂▅●▇▄▁ beats 59/100   medium · avg 68%    1.0%  noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   89.9%  ▁▁▁▁▁▁▁▂▄█●▃ beats 116/146  easy · avg 83%      0.5%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>   56.7%    56.1   2026-09-25   13% ▇▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                  78.1%    59.5   2026-09-25    9% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>             88.6%    56.7   2026-09-25    8% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                  80.6%    58.4   2026-09-25    8% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                       86.4%    56.6   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>   69.1%    59.7   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>            88.8%    61.3   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                 80.1%    63.0   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                      68.3%    53.4   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                      30.9%    57.8   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>   68.1%    67.9   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>           83.3%    60.0   2026-09-25    2% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                 91.5%    58.5   2026-09-25    2% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>   93.8%    69.7   2026-09-25    1% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5067    58.2   2026-05-02   13% ▇▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   50.7%    57.9   2026-05-02    6% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1286.4    52.3   2026-10-02    7% ▇
-<a name="card2-allenai-olmo-3-1-32b-think"></a>allenai/Olmo-3.1-32B-…  <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation) (…</a>   53.4%    63.3   2026-01-05    2% ▇
-                        <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">MATH (subset unspecified) (la…</a>   96.2%    69.4   2026-01-05    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   74.3%    53.0   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   89.9%    57.6   2026-04-17    1% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 58.1
+source                                    results  share of the score
+<a name="report-2512.13961v2"></a><a href="https://arxiv.org/html/2512.13961v2">Olmo 3 (lab)</a>                                   14   69% ▇▇▇▇▇▇▇▇
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   18% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
+<a name="card2-allenai-olmo-3-1-32b-think"></a><a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">allenai/Olmo-3.1-32B-Think model card (…</a>        2    4% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 58.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · allenai/Olmo-3.1-32B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3.1-32B-Think.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
@@ -48,18 +100,73 @@ prior                   pull toward the middle                    50.0          
 <sub>[context source](https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/config.json): Official configured context with bundled YaRN factor 8 and original positions 8,192. Not a claim of a larger extrapolated limit.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~19.82GB   58.1
-8-bit q8_0    ~39.14GB   58.1
+download                       size  score
+4-bit q4_k_m               ~19.82GB   58.2
+8-bit q8_0                 ~39.14GB   58.2
+4-bit Q4_K_M                ~19.5GB   58.2
+8-bit Q8_0                  ~34.3GB   58.2
+4-bit mlx-4bit · mac only   ~18.1GB   58.2
+4-bit mlx-8bit · mac only   ~34.2GB   58.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run olmo-3.1:32b-think
-# 8-bit q8_0
-ollama run olmo-3.1:32b-think-q8_0
+# 4-bit Q4_K_M · ~19.5GB
+llama cli -hf lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~34.3GB
+llama cli -hf lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~19.5GB
+lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~34.3GB
+lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~18.1GB
+lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~34.2GB
+lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~19.82GB
+ollama run olmo-3.1:32b-think
+# 8-bit q8_0 · ~39.14GB
+ollama run olmo-3.1:32b-think-q8_0
+# 4-bit Q4_K_M · ~19.5GB
+ollama run hf.co/lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~34.3GB
+ollama run hf.co/lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~18.1GB
+mlx_lm.chat --model lmstudio-community/Olmo-3.1-32B-Think-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Olmo-3.1-32B-Think-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~34.2GB
+mlx_lm.chat --model lmstudio-community/Olmo-3.1-32B-Think-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Olmo-3.1-32B-Think-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/olmo-3-1-32b-think) · [JSON](https://whatmodel.sh/api?format=json&all=1)

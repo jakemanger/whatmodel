@@ -6,46 +6,143 @@
 
 Prime Intellect · released 2025-11 · 106B params (12B active) · mit
 
-**score 64.8** ±1.1 · #152 of 934 · from 9 benchmark results across 3 sources
+**score 64.8** ±1.1 · #156 of 949 · from 9 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks INTELLECT-3 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃▆██●▆▄▃▁   #154 of 469*    4.6%      1
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #158 of 466*     12%      1
+math            ▁▂▃▅▆▅▄█●▁▁▁     #52 of 400     24%      3
+</pre>
+
+<details><summary>coding · #154 of 469 · 4.6% of its score</summary>
+
+Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–May 20…</a>   69.3%  ▄▄·▄·····●·▄ beats 3/5    medium · avg 45%    4.6%  at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #158 of 466 · 12% of its score</summary>
+
+Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1355.8  ▁▁▁▂▃▃▃▆●▇█▃ beats 200/379  avg 1268       12%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #52 of 400 · 24% of its score</summary>
+
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall.
+
+<pre>
+test             result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024 (lab)</a>   90.8%  █···███·█··● beats 5/5    medium · avg 49%        13%  sharp
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025 (lab)</a>   88.0%  █·█···███··● beats 5/5    medium · avg 43%        11%  sharp
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500 (lab)</a>    98.1%  ▄······▄▄▄·● beats 5/5    very easy · avg 86%    1.3%  maxed out · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty            counts  why
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">GPQA Diamond (lab)</a>                   74.4%  █··█●·██···█ beats 2/5      hard · avg 42%           23%  sharp · at its level
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5660  ▁▄▃▃▇▄█▃●▁▁▁ beats 24/30    avg 0.423                18%  sharp
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam (lab)</a>           14.6%  ▄····▄·●·▄·▄ beats 2/5      very hard · avg 4.3%     12%  typical
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro (lab)</a>                       81.9%  ▁▁·▁▁▁▃▂▄▅●▁ beats 139/188  medium · avg 51%        6.4%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="primeintellect-intellect3-card-eval"></a>Prime Intellect INTEL…  <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">GPQA Diamond (lab)</a>               74.4%    63.4   2025-11-27   23% ▇▇▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024 (lab)</a>                  90.8%    68.7   2025-11-27   13% ▇▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam (lab)</a>       14.6%    64.2   2025-11-27   11% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025 (lab)</a>                  88.0%    68.1   2025-11-27   11% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro (lab)</a>                   81.9%    67.5   2025-11-27    7% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–Ma…</a>   69.3%    65.3   2025-11-27    5% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500 (lab)</a>                   98.1%    71.3   2025-11-27    1% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5660    63.9   2026-05-02   19% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1355.8    60.6   2026-10-02   11% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 64.8
+source                                    results  share of the score
+<a name="primeintellect-intellect3-card-eval"></a><a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Prime Intellect INTELLECT-3 model card:…</a>        7   70% ▇▇▇▇▇▇▇▇
+<a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        1   18% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   12% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 64.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Prime Intellect INTELLECT-3 model card: Evaluation table ([MIT](https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~71.36GB   64.8
-2-bit q2_k    ~44.71GB   64.8
+download                       size  score
+4-bit q4_k_m               ~71.36GB   64.8
+2-bit q2_k                 ~44.71GB   64.8
+4-bit mlx-4bit · mac only   ~60.1GB   64.8
+4-bit mlx-8bit · mac only  ~113.6GB   64.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q4_K_M
-# 2-bit q2_k
-llama-server -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q2_K
+# 4-bit q4_k_m · ~71.36GB
+llama cli -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q4_K_M
+# 2-bit q2_k · ~44.71GB
+llama cli -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q2_K
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q2_K
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~71.36GB
+lms get https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit q2_k · ~44.71GB
+lms get https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF@Q2_K -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~60.1GB
+lms get https://huggingface.co/mlx-community/INTELLECT-3-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~113.6GB
+lms get https://huggingface.co/mlx-community/INTELLECT-3-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 2-bit q2_k · ~44.71GB
+ollama run hf.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q2_K
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~60.1GB
+mlx_lm.chat --model mlx-community/INTELLECT-3-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/INTELLECT-3-4bit
+# 4-bit mlx-8bit · mac only · ~113.6GB
+mlx_lm.chat --model mlx-community/INTELLECT-3-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/INTELLECT-3-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/intellect-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

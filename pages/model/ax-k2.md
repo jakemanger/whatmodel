@@ -6,26 +6,63 @@
 
 SK Telecom · released 2026-07 · 691.69B params (33B active) · apache-2.0
 
-**score 69.3** ±1.4 · #93 of 934 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 69.3** ±1.4 · #95 of 949 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks A.X K2 (688B-A33B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆██▇▆●▃▁   #77 of 469*     18%      2
+math    ▁▂▃▅▆▅▄█●▁▁▁   #43 of 400*    7.7%      1
+</pre>
+
+<details><summary>coding · #77 of 469 · 18% of its score</summary>
+
+Beats [GPT-5.2](gpt-5-2.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md) here, though they rank higher overall. Trails [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025) (…</a>   84.0%  ▄··█····▄●·█ beats 4/6    medium · avg 45%    8.9%  typical
+<a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified) (lab)</a>    41.0%  ▄·····▄●▄▄·▄ beats 2/6    hard · avg 16%      8.6%  at its level
+</pre>
+
+</details>
+
+<details><summary>math · #43 of 400 · 7.7% of its score</summary>
+
+Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Gemini 3.6 Flash](gemini-3-6-flash.md) here, though they rank higher overall.
+
+<pre>
+test             result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (lab)</a>   97.1%  ▄·▄·▄▄··█··● beats 6/6    medium · avg 56%    7.7%  sharp · maxed out · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   85.6%  ▄·····●█▄▄·▄ beats 1/6    hard · avg 45%           33%  sharp
+<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>               87.6%  ▃······●··█▃ beats 2/6    medium · avg 60%         17%  typical
+<a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>           27.8%  ▂········●·▂ beats 3/6    very hard · avg 5.4%     15%  at its level
+<a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)…</a>   75.9%  ▃······●▃▃·▃ beats 2/6    medium · avg 44%        9.5%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2608.30181v1-ax-k2"></a>A.X K2 Technical Repo…  <a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>              85.6%    68.0   2026-08-31   33% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>          87.6%    67.9   2026-08-31   16% ▇▇
-                        <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>      27.8%    70.5   2026-08-31   14% ▇▇
-                        <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecif…</a>  75.9%    69.5   2026-08-31   11% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 202…</a>  84.0%    72.5   2026-08-31    9% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified) (…</a>  41.0%    68.4   2026-08-31    8% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (lab)</a>                 97.1%    74.9   2026-08-31    8% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 69.3
+source                         results  share of the score
+<a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report (lab)</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             1% ▇
+weighted average                        = 69.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -38,11 +75,15 @@ download                        size  score
 16-bit bf16 · nvidia only  ~1383.4GB   69.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 16-bit bf16 · nvidia only
+# 16-bit bf16 · nvidia only · ~1383.4GB
 vllm serve skt/A.X-K2 --tensor-parallel-size 8
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ax-k2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

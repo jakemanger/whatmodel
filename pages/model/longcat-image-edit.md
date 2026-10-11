@@ -10,24 +10,57 @@ Meituan · released 2025-12 · 6.27B params · apache-2.0
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LongCat-Image-Edit among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       53.0%    56.4   2026-05-13   39% ▇▇▇▇▇
-<a name="report-2512.07584v1"></a>Meituan LongCat         <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, …</a>   76.5%    61.9   2025-12-08   16% ▇▇
-                        <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, …</a>   76.7%    60.0   2025-12-08   10% ▇
-<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>   47.3%    53.2   2026-07-11   18% ▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1001.0    55.8   2026-03-30    8% ▇
-<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    3.6%    47.1   2026-05-29    4% ▇
-<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   32.2%    51.2   2026-03-26    3% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 56.4
+task                    vs the others       rank  counts  tests
+image to image / edit…  ▁▁·▃▂▃●▃▃▄▁▁   #35 of 62     73%      6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #35 of 62 · 73% of its score</summary>
+
+Beats [FLUX.2 \[flex\]](flux-2-flex.md), [Imagen 4](imagen-4.md), [GPT Image 1 Mini](gpt-image-1-mini.md) here, though they rank higher overall. Trails [FLUX.2 \[klein\] 9B](flux-2-klein-9b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>           53.0%  ▃▃▂·▃▆▂●·▃·▃ beats 14/20  hard · avg 45%       39%  at its level
+<a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, GPT-…</a>   76.5%  ▃·········●▂ beats 6/7    medium · avg 42%     16%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, GPT-…</a>   76.7%  ▄·▄···▄█●··▄ beats 6/7    easy · avg 66%       10%  at its level
+<a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>         1001.0  ▃▂····▂●▂▃▂▃ beats 5/14   avg 956             7.8%  blunt
+<a href="https://arxiv.org/html/2512.07584v1">GEdit-Bench-EN overall (G_O, GPT-…</a>   76.4%  ▄·····█·▄▄·● beats 5/5                           —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2512.07584v1">ImgEdit-Bench overall (GPT-4.1 ju…</a>   90.0%  no other model yet                               —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Overall)</a>    47.3%  ▂··▂●▂▄▂▂·▂▂ beats 2/12   medium · avg 41%         18%  at its level
+<a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (mIoU,…</a>    3.6%  ▃·····●▅▃·▃▅ beats 2/9    very hard · avg 4.3%    4.2%  too hard for it
+<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   32.2%  ▂···▂·▂█●▅·▂ beats 8/15   hard · avg 31%          3.1%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   39% ▇▇▇▇▇
+<a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1">Meituan LongCat (lab)</a>                           2   26% ▇▇▇
+<a name="visual-chartsync"></a><a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync: A Benchmark for Visuo-Logica…</a>        1   18% ▇▇
+<a name="visual-geditbench-v2"></a><a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2: A Human-Aligned Benchmar…</a>        1    8% ▇
+<a name="visual-paintbench"></a><a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench: Deterministic Evaluation of…</a>        1    4% ▇
+<a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    3% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 56.4
+</pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -52,11 +85,15 @@ version                                   needs  score
 bf16 + model CPU offload · nvidia only  ~35.7GB   56.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 + model CPU offload · nvidia only
+# bf16 + model CPU offload · nvidia only · ~35.7GB
 uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch python -c "import torch; from PIL import Image; from diffusers import LongCatImageEditPipeline; p=LongCatImageEditPipeline.from_pretrained('meituan-longcat/LongCat-Image-Edit', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p(Image.open('input.png').convert('RGB'), 'turn the cat into a dog', negative_prompt='', guidance_scale=4.5, num_inference_steps=50, num_images_per_prompt=1, generator=torch.Generator('cpu').manual_seed(43)).images[0].save('edit_example.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/longcat-image-edit) · [JSON](https://whatmodel.sh/api?format=json&all=1)

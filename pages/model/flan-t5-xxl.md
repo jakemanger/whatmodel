@@ -6,27 +6,63 @@
 
 Google · released 2022-10 · 11.3B params · apache-2.0
 
-**score 33.6** ±1.2 · #806 of 934 · from 8 benchmark results across 4 sources
+**score 33.3** ±1.3 · #822 of 949 · from 8 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Flan-T5 XXL among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #241 of 466*    0.0%      1
+math            ██·█···█···●       #1 of 5*     13%      1
+</pre>
+
+<details><summary>chat &amp; writing · #241 of 466 · 0.0% of its score</summary>
+
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall.
+
+<pre>
+test                                                 result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>  8.8100 mean rank (1-11)  ●···▄··▄···▄ beats 0/4    avg 6.444 mean rank (1-…    0.0%  blunt · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #1 of 5 · 13% of its score</summary>
+
+<pre>
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>    4.9%  ▃·▁·●··▂▄█▄▄ beats 4/26   hard · avg 22%     13%  too hard for it
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                       43.9%  ███··█·█·█·● beats 6/6    easy · avg 80%       47%  sharp · at its level · several runs
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 54.5%  ▄▄·▄···▄▄·█● beats 8/8    easy · avg 82%       23%  at its level · several runs
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.6%  ▅····▃▅·●█·█ beats 5/13   medium · avg 59%     10%  typical
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.9%  ▃●▃··▅▃·█▃▃▅ beats 1/13   easy · avg 67%      7.4%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                              score  implies  date        weight
-<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                              45.3%    33.3   2022-12-06   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                                        55.1%    34.7   2022-12-06   14% ▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>                                         4.9%    34.0   2022-12-06   12% ▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                                    43.9%    35.2   2024-03-10   23% ▇▇▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                              54.5%    38.1   2024-03-10    8% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                    20.6%    31.6   2024-04-24   10% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                    20.9%    22.6   2024-04-24    7% ▇
-<a name="paper-2306.02561v3-llmblender"></a>LLM-Blender: Ensembli…  <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Ble…</a>  8.8100 mean rank (1-11)  -153.4   2023-06-30    0% ▇
-prior                   pull toward the middle                                     50.0                 1% ▇
-                        weighted average                                         = 33.6
+source                                    results  share of the score
+<a name="paper-2210.11416v5"></a><a href="https://arxiv.org/html/2210.11416v5">Scaling Instruction-Finetuned Language …</a>        3   54% ▇▇▇▇▇▇
+<a name="instruct-eval-readme"></a><a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">InstructEval</a>                                    2   28% ▇▇▇
+<a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2   17% ▇▇
+<a name="paper-2306.02561v3-llmblender"></a><a href="https://arxiv.org/html/2306.02561v3">LLM-Blender: Ensembling Large Language …</a>        1    0% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 33.3
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -34,14 +70,18 @@ prior                   pull toward the middle                                  
 
 <pre>
 download        size  score
-4-bit fp32  ~45.07GB   33.6
+4-bit fp32  ~45.07GB   33.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp32
+# 4-bit fp32 · ~45.07GB
 uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-xxl', torch_dtype='auto', device_map='auto')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/flan-t5-xxl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

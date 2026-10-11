@@ -6,23 +6,38 @@
 
 ESPnet · released 2021-12 · cc-by-4.0
 
-**score 45.5** ±3.7 · #119 of 160 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 45.1** ±3.9 · #122 of 162 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks ESPnet wav2vec 2.0 Large + Conformer + Transformer LM among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  weight
-<a name="speech-espnet-librispeech-20260929"></a>ESPnet LibriSpeech AS…  <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (l…</a>   5.1%    44.7    74% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   2.1%    47.3    20% ▇▇
-prior                   pull toward the middle                   49.8     5% ▇
-                        weighted average                       = 45.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                              result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (lab)</a>    5.1%  █▃▃·▃●·▅···▅ beats 6/11   avg 3.7%       73%  typical
+<a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (lab)</a>    2.1%  █··▃▃▅▅●···▅ beats 9/11   avg 1.9%       21%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-espnet-librispeech-20260929"></a><a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">ESPnet LibriSpeech ASR recipe results (…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 45.1
+</pre>
 
 <sub>Licences: ESPnet LibriSpeech ASR recipe results ([Apache-2.0](../../licenses/speech-espnet-librispeech-20260929.txt))</sub>
 
@@ -30,14 +45,18 @@ prior                   pull toward the middle                   49.8     5% ▇
 
 <pre>
 version     needs  score
-fp32 · CPU   ~8GB   45.5
+fp32 · CPU   ~8GB   45.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 · CPU
+# fp32 · CPU · ~8GB
 uv run --python 3.10 --with espnet --with espnet_model_zoo --with librosa --with s3prl python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained(model_tag='espnet/simpleoier_librispeech_asr_train_asr_conformer7_wav2vec2_960hr_large_raw_en_bpe5000_sp', lm_weight=1); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/espnet-wav2vec2-large-conformer-lm) · [JSON](https://whatmodel.sh/api?format=json&all=1)

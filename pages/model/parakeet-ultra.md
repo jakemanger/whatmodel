@@ -6,41 +6,61 @@
 
 Moondream · released 2026-09 · 0.627B params · cc-by-4.0
 
-**score 58.5** ±2.7 · #42 of 160 · from 5 benchmark results across 2 sources
+**score 58.7** ±2.7 · #41 of 162 · from 5 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Parakeet Ultra among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json">LibriSpeech test-clean WER</a>       1.8%    56.8   2026-10-05   36% ▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json">FLEURS English test WER</a>          4.3%    60.4   2026-10-05   14% ▇▇
-<a name="card3-moondream-parakeet-cards"></a>Moondream parakeet-ul…  <a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">TED-LIUM long-form WER (lab)</a>     1.9%    61.0   2026-09-23   17% ▇▇
-                        <a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">FLEURS 25 European languages,…</a>   9.6%    59.3   2026-09-23   15% ▇▇
-                        <a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">Granite 5.0 report · Open ASR…</a>   5.8%    58.5   2026-09-23   15% ▇▇
-prior                   pull toward the middle                   49.8                 3% ▇
-                        weighted average                       = 58.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (5)</summary>
 
-<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Moondream parakeet-ultra and parakeet-redux model cards ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json">LibriSpeech test-clean WER</a>            1.8%  ▁···▁▁▂·▄▄●█ beats 36/56  avg 2.3%       33%  blunt
+<a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">TED-LIUM long-form WER (lab)</a>          1.9%  █····█·████● beats 6/6    avg 4.6%       19%  sharp · small run
+<a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">FLEURS 25 European languages, mea…</a>    9.6%  █····█·····● beats 2/2    avg 18%        17%  small run
+<a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">Granite 5.0 report · Open ASR pub…</a>    5.8%  █···█······● beats 2/2    avg 11%        15%  small run
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json">FLEURS English test WER</a>               4.3%  ▁··▁▁▁▁▁▁▃●▁ beats 44/56  avg 5.8%       13%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="card3-moondream-parakeet-cards"></a><a href="https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md">Moondream parakeet-ultra and parakeet-r…</a>        3   51% ▇▇▇▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json">transcribe.cpp model catalog · LibriSpe…</a>        2   47% ▇▇▇▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 58.7
+</pre>
+
+<sub>Licences: Moondream parakeet-ultra and parakeet-redux model cards ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                       needs  score
-q8_0-gguf (transcribe.cpp)  ~0.74GB   58.5
+q8_0-gguf (transcribe.cpp)  ~0.74GB   58.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# q8_0-gguf (transcribe.cpp)
+# q8_0-gguf (transcribe.cpp) · ~0.74GB
 git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/parakeet-ultra-gguf parakeet-ultra-Q8_0.gguf --local-dir models/parakeet-ultra && build/bin/transcribe-cli -m models/parakeet-ultra/parakeet-ultra-Q8_0.gguf audio.wav
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/parakeet-ultra) · [JSON](https://whatmodel.sh/api?format=json&all=1)

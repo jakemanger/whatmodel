@@ -6,22 +6,40 @@
 
 DeepSeek · released 2024-11 · 1.3B params · deepseek
 
-**score 35.9** ±6.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.1** ±6.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks JanusFlow-1.3B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source           test                            score  implies  date        weight
-<a name="paper-2506.10963v2-mmmg-kg"></a>MMMG: A Massive  <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generati…</a>   9.8%    33.1   2025-06-13   83% ▇▇▇▇▇▇▇▇▇▇
-prior            pull toward the middle                   49.9                17% ▇▇
-                 weighted average                       = 35.9
+task           vs the others          rank  counts  tests
+text to image  ▁▂▇●▆▅█▇▂▃▁▁   #125 of 157*     83%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #125 of 157 · 83% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [Stable Diffusion XL 0.9 (base)](sdxl-0-9.md) here, though they rank higher overall. Trails [PixArt-α (PixArt-XL-2-1024-MS)](pixart-alpha.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>    9.8%  ▃··●·█▃▃▅··▃ beats 1/9    hard · avg 24%     83%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                      1   83% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            17% ▇▇
+weighted average                        = 36.1
+</pre>
 
 <sub>Licences: MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>
 

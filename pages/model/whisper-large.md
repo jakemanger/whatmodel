@@ -6,28 +6,57 @@
 
 OpenAI · released 2022-09 · 1.55B params · apache-2.0
 
-**score 49.4** ±2.4 · #104 of 160 · from 7 benchmark results across 4 sources
+**score 49.4** ±2.4 · #105 of 162 · from 7 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Whisper large (v1) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large.json">LibriSpeech test-clean WER</a>       2.7%    45.0   2026-09-15   27% ▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large.json">FLEURS English test WER</a>          4.5%    59.0   2026-09-15   11% ▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large.json">FLEURS Mandarin test error ra…</a>  19.3%    36.7   2026-09-15   10% ▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.9%    51.0   2026-03-26   20% ▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.4%    56.2   2026-03-26   20% ▇▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  42.6%    46.4   2025-01-12    6% ▇
-<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200          <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  30.6%    48.8   2023-09-30    3% ▇
-prior                   pull toward the middle                   49.8                 2% ▇
-                        weighted average                       = 49.4
+task                    vs the others        rank  counts  tests
+long-form transcripti…  ▁▁▄▁·▁▂●▄▁▁▁   #11 of 27*     21%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>long-form transcription · #11 of 27 · 21% of its score</summary>
+
+Beats [Chirp 3](google-chirp-3.md), [Parakeet TDT 1.1B](parakeet-tdt-1-1b.md), [Parakeet RNNT 1.1B](parakeet-rnnt-1-1b.md) here, though they rank higher overall.
+
+<pre>
+test                            result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>    9.4%  ▁▁▅▁·▃▅●▆▁▂▂ beats 17/30  avg 12%        21%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large.json">LibriSpeech test-clean WER</a>            2.7%  ▁···▁▁▂·●▄██ beats 13/56  avg 2.3%       26%  blunt
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.9%  ▁▁▁▃··▁▁▂●█▆ beats 37/86  avg 8.2%       21%  blunt
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large.json">FLEURS English test WER</a>               4.5%  ▁··▁▁▁▁▁▁▃●▁ beats 38/56  avg 5.8%       11%  blunt
+<a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large.json">FLEURS Mandarin test error rate</a>      19.3%  ▂▂··▂●▂▂·▆██ beats 3/17   avg 12%        10%  typical
+<a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderb…</a>   42.6%  ▃·▂▂●█▅▃▂▅▂▂ beats 5/22   avg 40%       6.0%  blunt
+<a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 African …</a>   30.6%  ███····████● beats 7/7    avg 30%       3.3%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stt-transcribecpp-mit"></a><a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large.json">transcribe.cpp model catalog · LibriSpe…</a>        3   47% ▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            2   41% ▇▇▇▇▇
+<a name="speech-stt-arabic-oual-elm-apache"></a><a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Leaderboard</a>           1    6% ▇
+<a name="speech-stt-afrispeech200-report-ccby"></a><a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200</a>                                  1    3% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 49.4
+</pre>
 
 <sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · AfriSpeech-200 ([CC BY 4.0](../../licenses/speech-stt-afrispeech200-report-ccby.txt))</sub>
 
@@ -39,13 +68,17 @@ fp16     ~4.22GB   49.4
 fp32     ~7.94GB   49.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16
+# fp16 · ~4.22GB
 uvx --from openai-whisper whisper audio.mp3 --model large-v1
-# fp32
+# fp32 · ~7.94GB
 uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-large')('audio.wav', return_timestamps=True)['text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/whisper-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

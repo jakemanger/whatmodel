@@ -6,34 +6,69 @@
 
 Tencent · released 2025-09 · 80B params · tencent-hunyuan-community
 
-**score 57.4** ±1.7 · #58 of 144 · from 11 benchmark results across 8 sources
+**score 57.2** ±1.7 · #59 of 144 · from 12 benchmark results across 9 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks HunyuanImage 3.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                              score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            1149.5    62.9   2026-09-24   42% ▇▇▇▇▇
-<a name="genexam-readme-mit"></a>GenExam leaderboard     <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT…</a>    19.1%    49.8   2026-09-26   15% ▇▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>    29.9%    50.6   2026-10-07   11% ▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>    84.0%    57.1   2026-06-23    6% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 repor…</a>  11.9300    74.4   2026-06-23    3% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese char…</a>    71.3%    69.0   2026-06-23    1% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-…</a>    87.7%   133.0   2026-06-23    0% ▇
-<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>    924.8    56.0   2026-10-01    6% ▇
-<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>    41.0%    54.2   2026-06-05    5% ▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE (WiScore overall, GPT-4o…</a>    57.0%    46.2   2026-06-02    5% ▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>    50.8%    57.4   2026-05-27    5% ▇
-prior                   pull toward the middle                     49.9                 1% ▇
-                        weighted average                         = 57.4
+task           vs the others        rank  counts  tests
+text to image  ▂▅▅▃▄▄●▃▁▂▁▁   #50 of 126     87%     10
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #50 of 126 · 87% of its score</summary>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
+Beats [Wan 2.7 Image](wan-2-7-image.md), [HunyuanImage 2.1](hunyuanimage-2-1.md), [Recraft V4.1 Flash](recraft-v4-1-flash.md) here, though they rank higher overall.
+
+<pre>
+test                                 result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1149.5  ▂▂▃▄▇●▄▂▄▂·▂ beats 44/75  avg 1027             41%  typical
+<a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT-5 j…</a>    19.1%  ●▆·▂▂····▂▂█ beats 2/13   hard · avg 20%       15%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, bilin…</a>    29.9%  ▁▂●█▃▁▂▃·▁·▁ beats 4/22   hard · avg 28%       11%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithfulness</a>     41.0%  ▄·●···▄▄▄▄▄▄ beats 2/8    medium · avg 36%    5.4%  blunt · at its level
+<a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE (WiScore overall, GPT-4o jud…</a>    57.0%  ▄·▆▂▆█▄▆●▄·▄ beats 18/22  medium · avg 60%    4.9%  at its level
+<a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v1)</a>       50.8%  █●▅·▅▅█·█··▃ beats 4/17   medium · avg 46%    4.5%  blunt · at its level
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.9300  ▄···█··▄·▄·● beats 5/5    avg 11.076          2.5%  blunt
+<a href="https://arxiv.org/html/2512.07584v1#S5.T7">ChineseWord (LongCat-Image 8,105-…</a>    49.3%  ●█·········▄ beats 0/3    medium · avg 58%    0.7%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese characte…</a>    71.3%  ▄·······▄●▄▄ beats 3/5    medium · avg 60%    0.7%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-prom…</a>    87.7%  █······██●██ beats 3/5    easy · avg 85%      0.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image bench…</a>   924.8  ▁▁▁●▂█▂▁▁▂▁▁ beats 5/34   avg 875           6.4%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI prompts…</a>   84.0%  ▄···●··▄···█ beats 1/5    easy · avg 78%    5.8%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   41% ▇▇▇▇▇
+<a name="genexam-readme-mit"></a><a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam leaderboard</a>                             1   15% ▇▇
+<a name="paper-2610.09823v1-ultratext"></a><a href="https://arxiv.org/html/2610.09823v1">UltraText Bench: A Comprehensive Biling…</a>        1   11% ▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T11">Cosmos 3: Omnimodal World Models for Ph…</a>        4    9% ▇
+<a name="visual-rapid-benchai-image"></a><a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata/text-to-image-human-preference…</a>        1    6% ▇
+<a name="visual-fepbench"></a><a href="https://arxiv.org/html/2606.05949v2#S4.T2">Faithful</a>                                        1    5% ▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE: A World Knowledge-Informed Semant…</a>        1    5% ▇
+<a name="visual-qwenbench"></a><a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench: From Generation to Cr…</a>        1    4% ▇
+<a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1#S5.T7">Meituan LongCat</a>                                 1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 57.2
+</pre>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) · Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt))</sub>
 
 ## How to run it
 
@@ -43,17 +78,21 @@ api (Replicate (PrunaAI optimized)) · $0.080/image · [replicate.com](https://r
 
 <pre>
 version                                      needs  score
-bf16 (official, multi-GPU) · nvidia only  ~192.5GB   57.4
-nf4 (community, EricRollei/HunyuanImage…   ~48.5GB   57.4
+bf16 (official, multi-GPU) · nvidia only  ~192.5GB   57.2
+nf4 (community, EricRollei/HunyuanImage…   ~48.5GB   57.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (official, multi-GPU) · nvidia only
+# bf16 (official, multi-GPU) · nvidia only · ~192.5GB
 git clone https://github.com/Tencent-Hunyuan/HunyuanImage-3.0.git && cd HunyuanImage-3.0 && pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128 && pip install -r requirements.txt && hf download tencent/HunyuanImage-3.0 --local-dir ./HunyuanImage-3 && python3 run_image_gen.py --model-id ./HunyuanImage-3 --verbose 1 --prompt "a cat holding a sign" --bot-task image --image-size "1024x1024" --save ./image.png --rewrite 0
-# nf4 (community, EricRollei/HunyuanImage-3-NF4-v2) · nvidia only
+# nf4 (community, EricRollei/HunyuanImage-3-NF4-v2) · nvidia only · ~48.5GB
 hf download EricRollei/HunyuanImage-3-NF4-v2 --local-dir ./HunyuanImage-3-NF4 && uv run --with transformers --with accelerate --with torch --with bitsandbytes python -c "from transformers import AutoModelForCausalLM; m=AutoModelForCausalLM.from_pretrained('./HunyuanImage-3-NF4', trust_remote_code=True, device_map='auto'); m.load_tokenizer('./HunyuanImage-3-NF4'); m.generate_image(prompt='a cat holding a sign', stream=True).save('out.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hunyuanimage-3-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,22 +6,37 @@
 
 Meta · released 2023-05 · 0.036B params · cc-by-nc-4.0
 
-**score 49.7** ±15.8 · #67 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.7** ±15.8 · #67 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks MMS TTS Amharic among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   7.9%    86.2   2026-08-12    0% ▇
-prior                   pull toward the middle                   49.7               100% ▇▇▇▇▇▇▇▇▇▇▇▇
-                        weighted average                       = 49.7
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (Chir…</a>    7.9%  ▄·····▄·●·██ beats 2/6    avg 8.7%      0.2%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                          results  share of the score
+<a name="speech-amharic-addis-bysa"></a><a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Addis AI Amharic TTS benchmark</a>        1    0% ▇
+prior: pull toward the middle            100% ▇▇▇▇▇▇▇▇▇▇▇▇
+weighted average                         = 49.7
+</pre>
 
 <sub>Licences: Addis AI Amharic TTS benchmark ([CC BY-SA 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
 
@@ -32,11 +47,15 @@ version                          needs  score
 fp32 (transformers VitsModel)  ~0.15GB   49.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (transformers VitsModel)
+# fp32 (transformers VitsModel) · ~0.15GB
 uv run --python 3.11 --with transformers --with torch --with scipy --with uroman python -c "from transformers import VitsModel, AutoTokenizer; import torch, scipy; model = VitsModel.from_pretrained('facebook/mms-tts-amh'); tokenizer = AutoTokenizer.from_pretrained('facebook/mms-tts-amh'); text = 'ሰላም፣ እንዴት ነህ?'; inputs = tokenizer(text, return_tensors='pt'); torch.set_grad_enabled(False); output = model(**inputs).waveform; scipy.io.wavfile.write('techno.wav', rate=model.config.sampling_rate, data=output.squeeze().numpy())"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/mms-tts-amh) · [JSON](https://whatmodel.sh/api?format=json&all=1)

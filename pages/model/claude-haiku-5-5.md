@@ -6,34 +6,98 @@
 
 Anthropic · released 2026-10 · proprietary
 
-**score 77.5** ±0.7 · #23 of 934 · from 15 benchmark results across 3 sources
+**score 77.4** ±0.7 · #22 of 949 · from 15 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Claude Haiku 5.5 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others        rank  counts  tests
+agent tasks  ▁▁▃▆█▆▅▄▄▃●▁   #13 of 334     28%      5
+coding       ▁▁▁▃▆██▇▆▄●▁   #30 of 469     23%      3
+math         ▁▂▃▅▆▅▄█▄●▁▁   #20 of 400     37%      3
+web search   ▂▂▂▆▄●▃▃▁▁·▁   #28 of 81*    2.7%      1
+</pre>
+
+<details><summary>agent tasks · #13 of 334 · 28% of its score</summary>
+
+Beats [GPT-5.5 Pro](gpt-5-5-pro.md), [GPT-5.4 Pro](gpt-5-4-pro.md), [GPT-5.5](gpt-5-5.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Pro (split unspecified)…</a>   64.8%  ▄●·▄·▄██···▄ beats 2/9    very hard · avg 7.6%     10%  sharp · at its level
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=115">Terminal-Bench 4.0 (lab)</a>             39.2%  ▄·····▄··●██ beats 2/7    very hard · avg 0.5%    5.9%  sharp · at its level
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Multilingual (lab)</a>         83.7%  ▃··▃·●▃▃█··▃ beats 2/9    hard · avg 31%          5.1%  typical
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=124">Chartography with tools (lab)</a>        86.2%  ▃········▃●█ beats 4/7    very hard · avg 4.7%    4.4%  sharp · at its level
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam with tools (…</a>   57.4%  ▁······▁·●·█ beats 3/10   very hard · avg 14%     2.7%  at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #30 of 469 · 23% of its score</summary>
+
+Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Pro (split unspecified)…</a>   64.8%  ▄●·▄·▄██···▄ beats 2/9     very hard · avg 7.6%     10%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1586.9  ▁▂▄▃▅█▄▇●▄▁▁ beats 93/119  avg 981                 7.6%  sharp
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Multilingual (lab)</a>         83.7%  ▃··▃·●▃▃█··▃ beats 2/9     hard · avg 31%          5.1%  typical
+</pre>
+
+</details>
+
+<details><summary>math · #20 of 400 · 37% of its score</summary>
+
+Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      46.3%  ▁▂▁▂█●▂▂▁▁▁▁ beats 44/63    very hard · avg 0.1%     20%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   75.1%  ▂··▁▁▃▄▄█●▃▃ beats 65/82    very hard · avg 1.2%     17%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    98.9%  ▃▃▄▃▃▃▇▇█▃▂● beats 177/193  very hard · avg 8.5%    0.5%  sharp · maxed out · noisy
+</pre>
+
+</details>
+
+<details><summary>web search · #28 of 81 · 2.7% of its score</summary>
+
+Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam with tools (…</a>   57.4%  ▁······▁·●·█ beats 3/10   very hard · avg 14%    2.7%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                          result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>     47.5%  █▆▆▆▆●▅▂▂▂·▅ beats 21/30    very hard · avg 1.2%    7.7%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   30.0%  █··▂▃▇▄●▂▃▁▁ beats 48/74    very hard · avg 9.4%    6.9%  sharp · at its level · noisy
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam (lab)</a>     45.9%  ▂·····▂·●▂█▄ beats 3/10     very hard · avg 5.8%    5.3%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   89.6%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 169/208  hard · avg 40%          2.5%  sharp
+<a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=134">Global-MMLU (lab)</a>              87.8%  ●▄····▄▄··▄█ beats 0/6      medium · avg 63%        2.5%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              23.8%  ▁▁▃▂●▃▆▆█▃▂▅ beats 15/78    very hard · avg 8.0%    1.7%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           46.3%    77.6   2026-10-07   20% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        75.1%    78.0   2026-10-07   18% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       47.5%    79.8   2026-10-07    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     30.0%    76.0   2026-10-07    7% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     89.6%    72.9   2026-10-09    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                23.8%    65.1   2026-10-09    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         98.9%    80.5   2026-10-07    1% ▇
-<a name="first-party-anthropic-scores"></a>Anthropic system card…  <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Pro (split unspecif…</a>   64.8%    75.7   2026-10-07   10% ▇
-                        <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=115">Terminal-Bench 4.0 (lab)</a>         39.2%    80.4   2026-10-07    6% ▇
-                        <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam (lab)</a>       45.9%    78.0   2026-10-07    5% ▇
-                        <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Multilingual (lab)</a>     83.7%    77.4   2026-10-07    5% ▇
-                        <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=124">Chartography with tools (lab)</a>    86.2%    83.4   2026-10-07    4% ▇
-                        <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam with too…</a>   57.4%    79.1   2026-10-07    3% ▇
-                        <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=134">Global-MMLU (lab)</a>                87.8%    72.8   2026-10-07    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1586.9    77.5   2026-10-08    7% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 77.5
+source                                    results  share of the score
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        7   56% ▇▇▇▇▇▇▇
+<a name="first-party-anthropic-scores"></a><a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Anthropic system cards and model announ…</a>        7   36% ▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 77.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

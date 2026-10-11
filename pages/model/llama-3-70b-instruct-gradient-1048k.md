@@ -6,36 +6,110 @@
 
 Gradient AI · released 2024-05 · 70.55B params · llama3
 
-**score 49.7** ±5.9 · #444 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.5** ±5.7 · #459 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Llama-3-70B-Instruct-Gradient-1048k among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>    80.9%  ▁▁·▁·▂▃●█▂·▁ beats 8/22   easy · avg 83%     62%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>   72.1%  ▄··▂▄▂▆●█▄▄▂ beats 12/21  easy · avg 68%     24%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>               80.9%    48.5   2025-10-09   60% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>              72.1%    52.6   2025-10-09   24% ▇▇▇
-prior                   pull toward the middle           50.0                16% ▇▇
-                        weighted average               = 49.7
+source                                    results  share of the score
+<a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2   86% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       14% ▇▇
+weighted average                                   = 49.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE))</sub>
 
 ## How to run it
 
 <pre>
-download          size  score
-16-bit bf16  ~141.11GB   49.7
+download                        size  score
+16-bit bf16                ~141.11GB   49.5
+4-bit Q4_K_M                 ~42.5GB   49.5
+8-bit Q8_0                     ~75GB   49.5
+2-bit Q2_K                   ~26.4GB   49.5
+4-bit mlx-4bit · mac only    ~39.7GB   49.5
+4-bit mlx-8bit · mac only      ~75GB   49.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='gradientai/Llama-3-70B-Instruct-Gradient-1048k', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~42.5GB
+llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~75GB
+llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q8_0
+# 2-bit Q2_K · ~26.4GB
+llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q2_K
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q2_K
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~42.5GB
+lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~75GB
+lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit Q2_K · ~26.4GB
+lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q2_K -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~39.7GB
+lms get https://huggingface.co/mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~75GB
+lms get https://huggingface.co/mlx-community/Llama-3-70B-Instruct-Gradient-1048k-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~39.7GB
+mlx_lm.chat --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit
+# 4-bit mlx-8bit · mac only · ~75GB
+mlx_lm.chat --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-8bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~141.11GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='gradientai/Llama-3-70B-Instruct-Gradient-1048k', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/llama-3-70b-instruct-gradient-1048k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

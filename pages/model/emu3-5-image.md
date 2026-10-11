@@ -6,22 +6,40 @@
 
 BAAI · released 2025-10 · 34.1B params · apache-2.0
 
-**score 60.3** ±4.8 · #41 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 60.4** ±4.8 · #41 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Emu3.5-Image among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  88.4%    61.5   2026-07-12   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                10% ▇
-                        weighted average                       = 60.3
+task           vs the others         rank  counts  tests
+text to image  ▂▅▅▃▄▄●▃▁▂▁▁   #38 of 126*     90%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #38 of 126 · 90% of its score</summary>
+
+Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md), [Wan 2.7 Image](wan-2-7-image.md) here, though they rank higher overall. Trails [ERNIE-Image](ernie-image.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts, TII…</a>   88.4%  ▂█····▄▄●··▂ beats 9/11   easy · avg 79%     90%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-tiif-bench"></a><a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench: How Does Your T2I Model Fol…</a>        1   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       10% ▇
+weighted average                                   = 60.4
+</pre>
 
 <sub>Licences: TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt))</sub>
 
@@ -29,14 +47,18 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                     needs  score
-bf16 (official repo, Transformers backe…  ~84.5GB   60.3
+bf16 (official repo, Transformers backe…  ~84.5GB   60.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (official repo, Transformers backend) · nvidia only
+# bf16 (official repo, Transformers backend) · nvidia only · ~84.5GB
 git clone https://github.com/baaivision/Emu3.5 && cd Emu3.5 && pip install -r requirements/transformers.txt && pip install flash_attn==2.8.3 --no-build-isolation && CUDA_VISIBLE_DEVICES=0 python inference.py --cfg configs/example_config_t2i.py && python src/utils/vis_proto.py --input outputs/emu3p5-image
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/emu3-5-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,61 +6,86 @@
 
 Hugging Face (Distil-Whisper) · released 2025-03 · 0.76B params · mit
 
-**score 58.0** ±1.7 · #45 of 160 · from 15 benchmark results across 4 sources
+**score 57.5** ±1.4 · #51 of 162 · from 17 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Distil-Whisper distil-large-v3.5 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card2-distil-whisper-distil-large-v3-5"></a>distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Meanwhile long-form WER (lab)</a>    6.8%    58.7   2026-04-13    6% ▇
-                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM long-form WER (lab)</a>     4.6%    55.8   2026-04-13    6% ▇
-                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Rev16 long-form WER (lab)</a>       14.0%    55.3   2026-04-13    5% ▇
-                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-21 long-form WER (la…</a>  10.6%    54.9   2026-04-13    5% ▇
-                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-22 long-form WER (la…</a>  14.2%    55.1   2026-04-13    4% ▇
-                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">SPGISpeech test WER (lab)</a>        2.9%    57.6   2026-04-13    4% ▇
-                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">GigaSpeech test WER (lab)</a>        9.8%    56.3   2026-04-13    3% ▇
-                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-other WER (l…</a>   5.0%    53.9   2026-04-13    3% ▇
-                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-clean WER (l…</a>   2.4%    51.1   2026-04-13    1% ▇
-                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM test WER (short-form…</a>   3.6%    97.7   2026-04-13    0% ▇
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  22.3%    60.6   2025-11-18   18% ▇▇
-                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  18.0%    63.4   2025-11-18   16% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.2%    54.7   2026-03-26   10% ▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.7%    55.1   2026-03-26   10% ▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.7%    58.3   2026-07-16    8% ▇
-prior                   pull toward the middle                   49.8                 1% ▇
-                        weighted average                       = 58.0
+task                    vs the others        rank  counts  tests
+long-form transcripti…  ▁▁▄▁·▁▂●▄▁▁▁   #15 of 27*    7.2%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>long-form transcription · #15 of 27 · 7.2% of its score</summary>
 
-<sub>Licences: distil-whisper/distil-large-v3.5 model card ([MIT](../../licenses/distil-whisper--distil-large-v3.5.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
-
-<details><summary>Not counted (2)</summary>
+Beats [Parakeet TDT 1.1B](parakeet-tdt-1-1b.md), [Parakeet RNNT 1.1B](parakeet-rnnt-1-1b.md) here, though they rank higher overall. Trails [Whisper large (v1)](whisper-large.md), [Whisper large-v2](whisper-large-v2.md), [Rev AI Machine (Reverb ASR)](revai-machine.md) here, though they rank lower overall.
 
 <pre>
-source                  test                            score  why
-distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">AMI WER (Open ASR / ESB test …</a>  14.6%  too few models have it yet
-distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-22 WER (short-form, …</a>  11.3%  too few models have it yet
+test                            result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>    9.7%  ▁▁▅▁·▃●█▆▁▂▂ beats 13/30  avg 12%       7.2%  typical
 </pre>
 
 </details>
+
+<details><summary>other tests (16)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty  counts  why
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-region …</a>   22.3%  ▂····▂···▂▆● beats 10/11   avg 46%        14%  typical
+<a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parliamen…</a>   18.0%  ▂▂····▂·▅·▃● beats 12/12   avg 52%        12%  sharp
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.2%  ▁▁▁▃··▁▁▂█●▆ beats 54/86   avg 8.2%      7.3%  blunt
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">SPGISpeech test WER (lab)</a>             2.9%  ▄▄··▄█●··▄██ beats 6/11    avg 5.3%      6.9%  sharp
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Meanwhile long-form WER (lab)</a>         6.8%  █·······█●·█ beats 2/3     avg 11%       6.3%  sharp
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM long-form WER (lab)</a>          4.6%  █······●·█·█ beats 1/3     avg 6.9%      5.9%  sharp
+<a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-world En…</a>    9.7%  ●▃▃▅▃···▃··▃ beats 0/9     avg 15%       5.8%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">AMI WER (Open ASR / ESB test spli…</a>   14.6%  ▃█▃●·····▅·▃ beats 5/8     avg 24%       5.5%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-22 WER (short-form, Open…</a>   11.3%  ▃······█●▃·▃ beats 6/8     avg 18%       5.3%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Rev16 long-form WER (lab)</a>            14.0%  █········●██ beats 1/3     avg 20%       4.9%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">GigaSpeech test WER (lab)</a>             9.8%  ▁····▁··▁▄●▂ beats 11/17   avg 15%       4.6%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-21 long-form WER (lab)</a>      10.6%  █········●██ beats 1/3     avg 15%       4.6%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-22 long-form WER (lab)</a>      14.2%  █······█·●·█ beats 2/3     avg 20%       4.3%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-other WER (lab)</a>      5.0%  ▁▁▁▂▅▃●▄█▂▂▁ beats 23/54   avg 6.6%      3.9%  typical
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-clean WER (lab)</a>      2.4%  ▁·▁·▁▁▁▁▃●█▆ beats 37/100  avg 2.6%      1.2%  blunt
+<a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM test WER (short-form) (l…</a>    3.6%  ▁·▁▇█▃·▁▁▃●▄ beats 23/27   avg 5.3%      0.3%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="card2-distil-whisper-distil-large-v3-5"></a><a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">distil-whisper/distil-large-v3.5 model …</a>       12   54% ▇▇▇▇▇▇
+<a name="speech-stt-afrispeech-multibench-report"></a><a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench</a>                           2   25% ▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            2   15% ▇▇
+<a name="speech-rw-voice-eq-report"></a><a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ Bench</a>                               1    6% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 57.5
+</pre>
+
+<sub>Licences: distil-whisper/distil-large-v3.5 model card ([MIT](../../licenses/distil-whisper--distil-large-v3.5.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
 ## How to run it
 
 <pre>
 version               needs  score
-fp16 · nvidia only  ~2.32GB   58.0
+fp16 · nvidia only  ~2.32GB   57.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~2.32GB
 uvx insanely-fast-whisper --file-name audio.mp3 --model-name distil-whisper/distil-large-v3.5
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/distil-large-v3-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

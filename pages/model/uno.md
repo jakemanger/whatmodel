@@ -6,23 +6,53 @@
 
 ByteDance · released 2025-04 · cc-by-nc-4.0
 
-**score 43.1** ±4.0 · #97 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 43.2** ±4.0 · #96 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks UNO among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  78.0%    44.0   2026-03-29   78% ▇▇▇▇▇▇▇▇▇
-<a name="report-2506.18871v4"></a>BAAI                    <a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 …</a>  47.1%    35.5   2026-04-21   15% ▇▇
-prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 43.1
+task                    vs the others         rank  counts  tests
+text to image           ▂▅▅●▄▄█▃▁▂▁▁   #79 of 126*     79%      1
+image to image / edit…  ▁▁·●▂▃█▃▃▄▁▁    #58 of 62*     14%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #79 of 126 · 79% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided generatio…</a>   78.0%  ▄··█●·▄··▄·▄ beats 3/6    easy · avg 84%     79%  typical
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #58 of 62 · 14% of its score</summary>
+
+Trails [Stable Diffusion 3.5 Large](sd-3-5-large.md), [OmniGen2](omnigen2.md), [BAGEL](bagel.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 judg…</a>   47.1%  ▃▃●··▃·····█ beats 2/6    medium · avg 65%     14%  at its level · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-imagenworld"></a><a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld: Stress-Testing Image Gener…</a>        1   79% ▇▇▇▇▇▇▇▇▇
+<a name="report-2506.18871v4"></a><a href="https://arxiv.org/html/2506.18871v4">BAAI</a>                                            1   14% ▇▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 43.2
+</pre>
 
 <sub>Licences: ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · BAAI ([CC BY 4.0](../../licenses/report-2506.18871v4.txt))</sub>
 
@@ -30,14 +60,18 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                   needs  score
-fp8 FLUX.1-dev base + UNO LoRA, CPU off…  ~16GB   43.1
+fp8 FLUX.1-dev base + UNO LoRA, CPU off…  ~16GB   43.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp8 FLUX.1-dev base + UNO LoRA, CPU offload · nvidia only
+# fp8 FLUX.1-dev base + UNO LoRA, CPU offload · nvidia only · ~16GB
 git clone https://github.com/bytedance/UNO.git && cd UNO && pip install -e . && python inference.py --prompt "A clock on the beach is under a red sun umbrella" --image_paths "assets/clock.png" --width 704 --height 704 --offload --model_type flux-dev-fp8
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/uno) · [JSON](https://whatmodel.sh/api?format=json&all=1)

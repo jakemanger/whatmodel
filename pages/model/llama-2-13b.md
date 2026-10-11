@@ -6,85 +6,141 @@
 
 Meta · released 2023-07 · 13B params · llama2
 
-**score 34.0** ±0.6 · #800 of 934 · from 49 benchmark results across 8 sources
+**score 34.0** ±0.5 · #814 of 949 · from 53 benchmark results across 9 sources
+
+## What it's good at
+
+<sub>● marks Llama 2 13B (base) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁●▃▆██▇▆▄▃▁   #453 of 469     14%      3
+math    ▁●▃▅▆▅▄█▄▁▁▁   #377 of 400    7.8%      2
+</pre>
+
+<details><summary>coding · #453 of 469 · 14% of its score</summary>
+
+Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [StarCoderBase 3B](starcoderbase-3b.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                   18.9%  █···●·███··█ beats 1/5    easy · avg 66%         7.9%  sharp · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                        35.4%  ▄··●·▄··█··▄ beats 1/5    easy · avg 71%         3.7%  at its level · several runs
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   32.5%  ▃●▃·▆▃▃█▃▂▂▅ beats 2/25   very easy · avg 86%    2.2%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>math · #377 of 400 · 7.8% of its score</summary>
+
+Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [LFM2 350M](lfm2-350m.md) here, though they rank lower overall.
+
+<pre>
+test   result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   25.0%  ▆▂●█▅▅▃▆···▂ beats 7/25   easy · avg 82%    5.6%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>     6.0%  █·●·█·██···█ beats 1/5    hard · avg 30%    2.2%  several runs
+</pre>
+
+</details>
+
+<details><summary>other tests (21)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">ARC Challenge</a>                        49.2%  ▁·▁··▁▁▇▂█▆● beats 25/26   easy · avg 85%          27%  sharp · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">WinoGrande</a>                           72.2%  ▁····▁··▁▂█● beats 24/26   easy · avg 89%         7.7%  at its level · several runs
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-13b-hf/results_2024-02-11%2023%3A31%3A13.502617.json">Natural Questions (closed book)</a>      32.2%  ▁·▁·▁▂▁▂·▅▂● beats 28/28   medium · avg 58%       6.6%  several runs
+<a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       48.9%  ▁·····▂●▂▅·▁ beats 9/25    easy · avg 77%         6.5%  sharp · several runs
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 52.0%  ▁▁▃▃▄●▄▁█··▁ beats 12/25   easy · avg 82%         6.1%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">HellaSwag</a>                            79.4%  ▃···▁▇▅█▇●▁▁ beats 23/26   very easy · avg 92%    4.1%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">ARC Easy</a>                             77.6%  ▁▁·▁▁▄▅▄█▅▁● beats 25/26   easy · avg 88%         3.7%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">BoolQ</a>                                80.5%  ▂▃▂▅▆▂▅▆█▂●▂ beats 25/26   easy · avg 91%         3.3%  at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-13b-hf/results_2023-12-23%2021%3A45%3A58.973459.json">TriviaQA</a>                              9.5%  ▁··▁●▃▃▁▄▅▄█ beats 5/28    very easy · avg 86%    3.3%  at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">PIQA</a>                                 79.1%  ▁·▁··▁▁▃█▅●▂ beats 22/26   easy · avg 88%         2.4%  blunt · at its level · several runs
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">OpenBookQA</a>                           35.4%  █·▁▁▃·▁▃▅▇▃● beats 24/26   medium · avg 53%       1.8%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">SciQ</a>                                 94.5%  ▁·▁·▁·▃▅▃█●▁ beats 22/26   very easy · avg 98%    1.4%  maxed out
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">Social IQA</a>                           42.8%  ▁···▁▃█●▁▁·▁ beats 20/26   medium · avg 59%       1.0%  blunt
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">LAMBADA (OpenAI version), last-wo…</a>   76.8%  ▁··▂▁▁▁▂▆█▅● beats 26/26   very easy · avg 89%    0.8%  blunt
+<a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               37.3%  ▁···▁●▂▁▂▂▃█ beats 2/33    medium · avg 62%       0.6%  noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   57.5%  ▃▁▁▁▁▁▁▁●█▅▁ beats 83/276  medium · avg 73%       0.5%  at its level · noisy
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   56.5%  ▂··▁▃▂▂▂█●▁▂ beats 21/25   medium · avg 61%       0.5%  blunt · at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   74.0%  ▁▁▁▁▁▁▁▂●█▄▃ beats 47/146  easy · avg 83%         0.4%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-13b-hf/results_2024-02-13%2003%3A33%3A02.904705.json">HaluEval QA hallucination detecti…</a>   70.0%  █▁▁·▁▁·▁▁▁▁● beats 27/27   medium · avg 70%       0.3%  sharp · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-13b-hf/results_2023-12-08%2021%3A46%3A18.652384.json">TruthfulQA MC2</a>                       36.9%  ▅●█▆▁▂▅···▁▁ beats 5/31    medium · avg 64%       0.2%  blunt · at its level
+<a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 85.0%  ▅·▃·▃··●▃··▃ beats 6/8     easy · avg 92%         0.1%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">ARC Challenge</a>                   49.2%    33.1   2024-04-08   21% ▇▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">WinoGrande</a>                      72.2%    34.1   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">BoolQ</a>                           80.5%    38.0   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">OpenBookQA</a>                      35.4%    37.0   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">ARC Easy</a>                        77.6%    38.3   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">HellaSwag</a>                       79.4%    34.6   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">PIQA</a>                            79.1%    31.8   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">SciQ</a>                            94.5%    33.7   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">Social IQA</a>                      42.8%    26.6   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">LAMBADA (OpenAI version), las…</a>  76.8%    34.7   2024-04-08    1% ▇
-<a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                   48.8%    34.7   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                       18.9%    33.2   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                            55.6%    34.6   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                      72.9%    34.7   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                        64.0%    35.8   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           34.3%    30.7   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                       80.7%    36.2   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                            35.4%    31.4   2024-01-08    1% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  16.7%    30.2   2024-01-08    1% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                        75.2%    33.1   2024-01-08    1% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>                             6.0%    28.6   2024-01-08    1% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                            80.8%    35.8   2024-01-08    1% ▇
-<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  37.9%    34.2   2024-06-03    4% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   58.2%    34.5   2024-06-03    3% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       17.1%    29.8   2024-06-03    2% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           21.1%    29.3   2024-06-03    2% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            54.7%    36.1   2024-06-03    2% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            32.6%    29.9   2024-06-03    1% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          37.3%    31.8   2024-06-03    1% ▇
-<a name="paper-2310.06825v1"></a>Mistral 7B              <a href="https://arxiv.org/html/2310.06825v1">HumanEval</a>                       18.9%    30.5   2023-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">ARC Challenge</a>                   48.8%    35.6   2023-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">GSM8K</a>                           34.3%    33.4   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">MATH</a>                             6.0%    29.7   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">MMLU</a>                            55.6%    38.7   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">WinoGrande</a>                      72.9%    36.9   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">MBPP</a>                            35.4%    30.0   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">HellaSwag</a>                       80.7%    40.2   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">TriviaQA</a>                        69.6%    40.9   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">Natural Questions (closed boo…</a>  29.0%    40.6   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">ARC Easy</a>                        75.2%    35.4   2023-10-10    0% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">PIQA</a>                            80.8%    37.7   2023-10-10    0% ▇
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  48.9%    37.1   2023-11-20    4% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       32.5%    29.0   2023-11-20    2% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           25.0%    31.9   2023-11-20    1% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            52.0%    38.3   2023-11-20    1% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  56.5%    47.1   2023-11-20    0% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  57.5%    39.0   2024-02-05    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  74.0%    43.6   2026-04-17    0% ▇
-<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            85.0%    37.5   2024-10-18    0% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 34.0
+source                                    results  share of the score
+<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">Stability AI</a>                                   10   38% ▇▇▇▇▇
+<a name="paper-mixtral-2401.04088v1"></a><a href="https://arxiv.org/html/2401.04088v1#S3.T2">Mixtral of Experts</a>                             12   22% ▇▇▇
+<a name="paper-2404.06395v3"></a><a href="https://arxiv.org/html/2404.06395v3">MiniCPM: Unveiling the Potential of Sma…</a>        7   13% ▇▇
+<a name="paper-2310.06825v1"></a><a href="https://arxiv.org/html/2310.06825v1">Mistral 7B</a>                                     12   12% ▇
+<a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2</a>                                          5    8% ▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-13b-hf/results_2024-02-11%2023%3A31%3A13.502617.json">Hallucinations Leaderboard results</a>              4    5% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    0% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    0% ▇
+<a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 34.0
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Mixtral of Experts ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Mistral 7B ([CC BY 4.0](../../licenses/paper-2310.06825v1-CC-BY-4.0.txt)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Mixtral of Experts ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Mistral 7B ([CC BY 4.0](../../licenses/paper-2310.06825v1-CC-BY-4.0.txt)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <sub>[context source](https://github.com/meta-llama/llama-models/blob/0e0b8c519242d5833d8c11bffc1232b77ad7f301/models/llama2/MODEL_CARD.md): Context length from the maker's official repository.</sub>
 
 <pre>
-download      size  score
-4-bit q4_0  ~7.4GB   34.0
+download         size  score
+4-bit q4_0     ~7.4GB   34.0
+4-bit Q4_K_M   ~7.9GB   34.0
+8-bit Q8_0    ~13.8GB   34.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run llama2:13b-text
+# 4-bit Q4_K_M · ~7.9GB
+llama cli -hf TheBloke/Llama-2-13B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/Llama-2-13B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+llama cli -hf TheBloke/Llama-2-13B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/Llama-2-13B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~7.9GB
+lms get https://huggingface.co/TheBloke/Llama-2-13B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~13.8GB
+lms get https://huggingface.co/TheBloke/Llama-2-13B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~7.4GB
+ollama run llama2:13b-text
+# 4-bit Q4_K_M · ~7.9GB
+ollama run hf.co/TheBloke/Llama-2-13B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+ollama run hf.co/TheBloke/Llama-2-13B-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/llama-2-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

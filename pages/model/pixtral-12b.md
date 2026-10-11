@@ -6,30 +6,83 @@
 
 Mistral · released 2024-09 · 12.4B params · apache-2.0
 
-**score 48.8** ±1.8 · #471 of 934 · from 11 benchmark results across 4 sources
+**score 48.8** ±1.8 · #475 of 949 · from 11 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Pixtral 12B (2409) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+coding              ▁▁▁▃▆●█▇▆▄▃▁   #280 of 469*     21%      2
+math                ▁▂▃▅●▅▄█▄▁▁▁   #285 of 400*     15%      2
+vision &amp; documents  ▁▁▃●▁▃▄▃▆▇█▄    #125 of 150     65%      8
+</pre>
+
+<details><summary>coding · #280 of 469 · 21% of its score</summary>
+
+Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate (1,…</a>   35.3%  ▄··●·▄··▄█·▄ beats 2/7      hard · avg 34%     14%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval (lab)</a>                      72.0%  ▁▁▁▁▁▃▅▅●▃▂▁ beats 128/190  easy · avg 72%    7.5%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #285 of 400 · 15% of its score</summary>
+
+Beats [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified) (lab)</a>   48.1%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 24/80  medium · avg 55%    8.9%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (lab)</a>        58.3%  ▂····▂···▂●▆ beats 6/9    medium · avg 53%    6.4%  at its level
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #125 of 150 · 65% of its score</summary>
+
+Beats [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md), [Nova Pro](nova-pro.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank lower overall.
+
+<pre>
+test                                                         result  vs the others in its run   difficulty                counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1025.2  ▁▁▂▂●▂▄▅▅▆██ beats 17/145  avg 1068                     19%  blunt
+<a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate (1,…</a>                            35.3%  ▄··●·▄··▄█·▄ beats 2/7     hard · avg 34%               14%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  6.0500 MM-MT-Bench score (1-10)  ▅··▃·█·●▃··▅ beats 6/9     avg 5.740 MM-MT-Bench s…    9.5%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val) (lab)</a>                                              52.0%  ▂·▂······●▄▄ beats 4/9     medium · avg 52%            6.7%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (lab)</a>                                    58.3%  ▂····▂···▂●▆ beats 6/9     medium · avg 53%            6.4%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val) (lab)</a>                                             78.6%  ▃···█▃··▅▃●▃ beats 8/9     easy · avg 74%              5.6%  blunt · at its level
+<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1016.0  ▄▄·▄·●▄▄·▄·█ beats 3/8     avg 1037                    3.1%  blunt
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA (lab)</a>                                                 81.8%  ▄·▄▄▄··▄▄▄●█ beats 7/9     easy · avg 77%              0.5%  blunt · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test        result  vs the others in its run    difficulty      counts  why
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU (lab)</a>   69.2%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 110/183  easy · avg 76%     18%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                                      score  implies  date        weight
-<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU (lab)</a>                                                69.2%    45.0   2024-10-10   18% ▇▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  6.0500 MM-MT-Bench score (1-10)    52.7   2024-10-10    9% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified) (la…</a>                            48.1%    46.6   2024-10-10    8% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval (lab)</a>                                           72.0%    50.5   2024-10-10    7% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val) (lab)</a>                                          52.0%    50.1   2024-10-10    7% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (lab)</a>                                58.3%    53.7   2024-10-10    7% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val) (lab)</a>                                         78.6%    55.8   2024-10-10    6% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA (lab)</a>                                             81.8%    56.3   2024-10-10    0% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1025.2    45.0   2026-10-02   20% ▇▇
-<a name="paper-2608.10408v1-viseditbench"></a>VisEditBench: Can Vis…  <a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate…</a>                            35.3%    51.3   2026-08-11   13% ▇▇
-<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1016.0    46.3   2024-09-25    3% ▇
-prior                   pull toward the middle                                             50.0                 1% ▇
-                        weighted average                                                 = 48.8
+source                                    results  share of the score
+<a name="paper-2410.07073v2-pixtral"></a><a href="https://arxiv.org/html/2410.07073v2#S3.T3">Pixtral 12B (lab)</a>                               8   63% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   19% ▇▇
+<a name="paper-2608.10408v1-viseditbench"></a><a href="https://arxiv.org/html/2608.10408v1">VisEditBench: Can Vision-Language Model…</a>        1   14% ▇▇
+<a name="molmo-card-human-elo"></a><a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo-72B-0924 model card: Human Pr…</a>        1    3% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 48.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VisEditBench: Can Vision-Language Models Edit Visualization Code from Multimodal Feedback? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column ([Apache-2.0](https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md))</sub>
 
@@ -38,13 +91,52 @@ prior                   pull toward the middle                                  
 <pre>
 download                       size  score
 16-bit bf16 · nvidia only  ~25.37GB   48.8
+4-bit Q4_K_M                 ~7.7GB   48.8
+8-bit Q8_0                    ~13GB   48.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-pip install --upgrade vllm mistral_common && vllm serve mistralai/Pixtral-12B-2409 --tokenizer_mode mistral --limit_mm_per_prompt 'image=4'
+# 4-bit Q4_K_M · ~7.7GB
+llama cli -hf EnlistedGhost/Pixtral-12B-2409-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf EnlistedGhost/Pixtral-12B-2409-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13GB
+llama cli -hf EnlistedGhost/Pixtral-12B-2409-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf EnlistedGhost/Pixtral-12B-2409-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~7.7GB
+lms get https://huggingface.co/EnlistedGhost/Pixtral-12B-2409-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~13GB
+lms get https://huggingface.co/EnlistedGhost/Pixtral-12B-2409-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~7.7GB
+ollama run hf.co/EnlistedGhost/Pixtral-12B-2409-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13GB
+ollama run hf.co/EnlistedGhost/Pixtral-12B-2409-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~25.37GB
+pip install --upgrade vllm mistral_common && vllm serve mistralai/Pixtral-12B-2409 --tokenizer_mode mistral --limit_mm_per_prompt 'image=4'
+```
 
 [interactive version](https://whatmodel.sh/model/pixtral-12b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

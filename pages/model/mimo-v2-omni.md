@@ -6,25 +6,80 @@
 
 Xiaomi · released 2026-03 · closed weights
 
-**score 67.7** ±2.1 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 68.1** ±1.8 · comparison only: no current run option verified · from 6 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks MiMo-V2-Omni among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others         rank  counts  tests
+chat &amp; writing      ▁▁▁▃▅▅▆█▆▆●▂   #96 of 579*     30%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▅●▇█▃    #75 of 199     68%      4
+</pre>
+
+<details><summary>chat &amp; writing · #96 of 579 · 30% of its score</summary>
+
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Mistral Large 4 (public preview)](mistral-large-4.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1431.0  ▁▁▁▂▃▃▃▆▆▇●▃ beats 286/379  avg 1268       30%  blunt
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #75 of 199 · 68% of its score</summary>
+
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md), [Qwen3.6 Flash](qwen3-6-flash.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://mimo.xiaomi.com/mimo-v2-omni">CharXiv (reasoning questions) (la…</a>   80.1%  ▂▅▃▅▅▆▆▅▆●▆▂ beats 76/100  medium · avg 44%     22%  small run · several runs
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1216.1  ▁▁▂▂▂▂▄▅▅●██ beats 82/145  avg 1068             21%  blunt
+<a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   43.9%  ▁·▁·▃▃▁▇▃●·▄ beats 15/22   hard · avg 27%       17%  blunt · at its level
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">MMMU Pro (lab)</a>                       76.8%  ▂▃▁▃▆▇▃▇▇█●▅ beats 43/52   medium · avg 47%    9.1%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                result  vs the others in its run  counts  why
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">HR-Bench 4K (lab)</a>    83.3%  ●··········█ beats 0/1         —  not counted yet: no other model in the …
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Daily-Omni (lab)</a>     80.5%  ●··········█ beats 0/1         —  not counted yet: no other model in the …
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Video-Holmes (lab)</a>   59.5%  ●··········█ beats 0/1         —  not counted yet: no other model in the …
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1431.0    69.6   2026-10-02   36% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1216.1    68.2   2026-10-02   27% ▇▇▇
-<a name="paper-2606.01348v3-chartarena"></a>ChartArena: Benchmark…  <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (Eng…</a>   43.9%    63.9   2026-07-05   21% ▇▇▇
-<a name="first-party-xiaomi-scores"></a>Xiaomi MiMo vendor-re…  <a href="https://mimo.xiaomi.com/mimo-v2-omni">CharXiv (reasoning questions)…</a>   80.1%    70.2   2026-03-18   14% ▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 67.7
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   51% ▇▇▇▇▇▇
+<a name="card2-xiaomimimo-mimo-v2-5"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">XiaomiMiMo/MiMo-V2.5 model card (lab)</a>           2   20% ▇▇
+<a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1   17% ▇▇
+<a name="first-party-xiaomi-scores"></a><a href="https://mimo.xiaomi.com/mimo-v2-omni">Xiaomi MiMo vendor-reported benchmark s…</a>        1   11% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 68.1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · XiaomiMiMo/MiMo-V2.5 model card ([MIT](../../licenses/XiaomiMiMo--MiMo-V2.5.txt)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<details><summary>Not counted (3)</summary>
+
+<pre>
+source                  test          score  why
+XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">HR-Bench 4K</a>   83.3%  too few models have it yet
+XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Daily-Omni</a>    80.5%  too few models have it yet
+XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Video-Holmes</a>  59.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 

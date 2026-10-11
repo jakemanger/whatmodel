@@ -16,7 +16,12 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
+# fp32 · CPU · ~4GB
 uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/uk/mai/glow-tts --text "Привіт, світе." --out_path speech.wav --device cpu
 ```
 

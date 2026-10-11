@@ -6,25 +6,42 @@
 
 Fish Audio · released 2025-06 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 40.5** ±5.0 · #84 of 117 · from 4 benchmark results across 3 sources
+**score 40.6** ±5.1 · #84 of 118 · from 4 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks OpenAudio S1 Mini among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-lemas-report-bysa"></a>LEMAS multilingual au…  <a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual TTS eval ·…</a>     12.3%    38.6   2026-01-04   58% ▇▇▇▇▇▇▇
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>     931.4    28.3   2026-09-24   18% ▇▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.16 / 5    47.9   2026-03-15    7% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.29 / 5    66.9   2026-03-15    7% ▇
-prior                   pull toward the middle                      49.7                10% ▇
-                        weighted average                          = 40.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual TTS eval · 9-l…</a>     12.3%  ●········█·█ beats 0/2    avg 5.9%                58%  small run
+<a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community blin…</a>     931.4  ●▂··▃·█▅···▂ beats 0/12   avg 1018                17%  blunt
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.16 / 5  ▄▄█·▄▄●▄▄·▄█ beats 6/11   easy · avg 4.20 / 5    7.6%  blunt
+<a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice clone …</a>  4.29 / 5  █··▄▄██▄·▄●▄ beats 10/11  easy · avg 3.99 / 5    7.0%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-lemas-report-bysa"></a><a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual audio suite report</a>           1   58% ▇▇▇▇▇▇▇
+<a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                                1   17% ▇▇
+<a name="speech-codecmos-accent-ccby"></a><a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent: listening-test MOS of …</a>        2   15% ▇▇
+prior: pull toward the middle                       10% ▇
+weighted average                                   = 40.6
+</pre>
 
 <sub>Licences: LEMAS multilingual audio suite report ([CC BY-SA 4.0](../../licenses/speech-lemas-report-bysa.txt)) · Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>
 
@@ -34,17 +51,21 @@ api  · price unknown · [docs.fish.audio](https://docs.fish.audio/developer-gui
 
 <pre>
 version                                 needs  score
-bf16 · nvidia only                     ~1.7GB   40.5
-bf16 (fish-speech official repo CLI)  ~3.61GB   40.5
+bf16 · nvidia only                     ~1.7GB   40.6
+bf16 (fish-speech official repo CLI)  ~3.61GB   40.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~1.7GB
 git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout d3df50503b36314a964f66cac1af1e19e95bcfa3 && pip install -e ".[cu129]" && hf download fishaudio/openaudio-s1-mini --local-dir checkpoints/openaudio-s1-mini && python fish_speech/models/text2semantic/inference.py --text "Hello world" --compile && python fish_speech/models/dac/inference.py -i temp/codes_0.npy
-# bf16 (fish-speech official repo CLI)
+# bf16 (fish-speech official repo CLI) · ~3.61GB
 git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout d3df50503b36314a964f66cac1af1e19e95bcfa3 && pip install -e ".[cpu]" && hf download fishaudio/openaudio-s1-mini --local-dir checkpoints/openaudio-s1-mini && python fish_speech/models/text2semantic/inference.py --text "Hello world" --device cpu && python fish_speech/models/dac/inference.py -i temp/codes_0.npy --device cpu
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/openaudio-s1-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

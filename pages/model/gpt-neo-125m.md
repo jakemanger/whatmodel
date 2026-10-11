@@ -6,25 +6,46 @@
 
 EleutherAI · released 2021-03 · 0.125B params · mit
 
-**score 9.1** ±9.1 · #923 of 934 · from 4 benchmark results across 2 sources
+**score 5.3** ±5.1 · #939 of 949 · from 8 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks GPT-Neo 125M among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-125m/results_2024-02-12%2009%3A09%3A48.570004.json">Natural Questions (closed book)</a>       0.5%  ●·▁·▁▂▁▂·▅▂█ beats 0/28    medium · avg 58%        42%  too hard for it
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-125m/results_2023-12-08%2019%3A24%3A13.797490.json">TruthfulQA MC2</a>                       45.6%  ▅▃█●▁▂▅···▁▁ beats 21/31   medium · avg 64%        16%  blunt · at its level
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-125m/results_2024-03-01%2012%3A27%3A02.075398.json">TriviaQA</a>                              1.6%  ●··▁█▃▃▁▄▅▄█ beats 0/28    easy · avg 79%          11%  too hard for it · noisy
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   28.8%  ●···▃▃·▃·▃·█ beats 0/7     hard · avg 44%          10%  blunt · too hard for it
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.6%  ●▁▁▁▁▁▁▁▂█▅▁ beats 21/276  medium · avg 73%       7.7%  too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-125m/results_2023-12-15%2008%3A24%3A04.254953.json">HaluEval QA hallucination detecti…</a>   46.5%  ●▁▁·▁▁·▁▁▁▁▁ beats 14/27   medium · avg 70%       1.0%  sharp · too hard for it · noisy
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>    7.9%  ▄···●···██·▄ beats 1/7     very hard · avg 11%    0.6%  blunt · too hard for it
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   47.6%  ●·······▁··▁ beats 2/7     very hard · avg 51%    0.3%  blunt · too hard for it · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  25.6%    -3.9   2024-02-05   32% ▇▇▇▇
-<a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  28.8%   -23.2   2022-12-07   29% ▇▇▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   7.9%   -53.6   2022-12-07    1% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.6%   -49.4   2022-12-07    1% ▇
-prior                   pull toward the middle                   50.0                37% ▇▇▇▇
-                        weighted average                        = 9.1
+source                              results  share of the score
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-125m/results_2024-02-12%2009%3A09%3A48.570004.json">Hallucinations Leaderboard results</a>        4   70% ▇▇▇▇▇▇▇▇
+<a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                     3   11% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>           1    8% ▇
+prior: pull toward the middle                 11% ▇
+weighted average                             = 5.3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>
+<sub>Licences: Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -32,14 +53,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp32  ~0.53GB    9.1
+4-bit fp32  ~0.53GB    5.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp32
+# 4-bit fp32 · ~0.53GB
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neo-125m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/gpt-neo-125m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

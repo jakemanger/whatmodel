@@ -6,24 +6,40 @@
 
 MyShell · released 2024-02 · mit
 
-**score 44.0** ±4.5 · #81 of 117 · from 3 benchmark results across 2 sources
+**score 43.9** ±4.5 · #81 of 118 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks MeloTTS English among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  3.80 / 5    41.5   2025-03-27   45% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>      4.6%    68.8   2025-03-27    1% ▇
-<a name="speech-tts-deepfake-age-ccby"></a>Audio Deepfake Detect…  <a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-lar…</a>      6.4%    44.8   2026-01-28   45% ▇▇▇▇▇
-prior                   pull toward the middle                      49.7                 8% ▇
-                        weighted average                          = 44.0
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>  3.80 / 5  ▄·····▄·▄●·▄ beats 3/5    easy · avg 4.11 / 5     45%  at its level
+<a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-large W…</a>      6.4%  ▄··········● beats 2/2    avg 4.3%                45%  small run
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>      4.6%  ▄··········● beats 4/5    avg 6.4%               1.4%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-versa-toolkit-ccby"></a><a href="https://arxiv.org/html/2412.17667v2">VERSA toolkit paper: TTS demonstration</a>          2   47% ▇▇▇▇▇▇
+<a name="speech-tts-deepfake-age-ccby"></a><a href="https://arxiv.org/html/2601.20510v1">Audio Deepfake Detection in the Age of …</a>        1   45% ▇▇▇▇▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 43.9
+</pre>
 
 <sub>Licences: VERSA toolkit paper: TTS demonstration ([CC BY 4.0](../../licenses/speech-versa-toolkit-ccby.txt)) · Audio Deepfake Detection in the Age of Advanced Text-to-Speech models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -31,17 +47,21 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                        needs  score
-fp32 (MeloTTS repo CLI)      ~0.65GB   44.0
-fp32 (mlx-audio) · mac only  ~0.65GB   44.0
+fp32 (MeloTTS repo CLI)      ~0.65GB   43.9
+fp32 (mlx-audio) · mac only  ~0.65GB   43.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (MeloTTS repo CLI)
+# fp32 (MeloTTS repo CLI) · ~0.65GB
 git clone https://github.com/myshell-ai/MeloTTS.git && cd MeloTTS && pip install -e . && python -m unidic download && melo "Text to read" output.wav
-# fp32 (mlx-audio) · mac only
+# fp32 (mlx-audio) · mac only · ~0.65GB
 pip install mlx-audio g2p_en && mlx_audio.tts.generate --model mlx-community/MeloTTS-English-MLX --text 'Hello, world!' --voice EN-US
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/melotts-english) · [JSON](https://whatmodel.sh/api?format=json&all=1)

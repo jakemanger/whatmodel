@@ -8,21 +8,61 @@ Lightricks · released 2026-03 · 22B params · ltx-2-community
 
 **score 36.3** ±2.5 · #75 of 93 · from 4 benchmark results across 4 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LTX-2.3 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  587.0    34.5   2026-05-11   76% ▇▇▇▇▇▇▇▇▇
-<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>  11.9%    39.9   2026-09-30    8% ▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  38.4%    37.1   2026-08-10    7% ▇
-<a name="visual-phyground"></a>PhyGround: Benchmarki…  <a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evalu…</a>  53.8%    46.8   2026-05-11    6% ▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 36.3
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃●▆▅█▃▂▂▂▄   #47 of 68*    7.0%      1
+image to video  ▁●·▂▅█▅▄▅▆▃▄   #48 of 50*     76%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #47 of 68 · 7.0% of its score</summary>
+
+Beats [Mochi 1](mochi-1.md), [HunyuanVideo](hunyuanvideo.md), [T2V-Turbo (VC2)](t2v-turbo-vc2.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   38.4%  ●·▃█▃·▅▃▅▃▃▃ beats 0/14   hard · avg 44%    7.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>image to video · #48 of 50 · 76% of its score</summary>
+
+Beats [Runway Gen-4 Turbo](runway-gen-4-turbo.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   587.0  ●▃··█··▃▃▃·▃ beats 0/8    avg 875        76%  sharp
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accuracy…</a>   11.9%  ●·▃▅·█·▃···▃ beats 0/9    hard · avg 21%      8.1%  typical
+<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   53.8%  █▄●··▄···▄·█ beats 3/7    medium · avg 57%    6.2%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   76% ▇▇▇▇▇▇▇▇▇
+<a name="visual-mindworldbench"></a><a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench: Evaluating Mental-State…</a>        1    8% ▇
+<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    7% ▇
+<a name="visual-phyground"></a><a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround: Benchmarking Physical Reason…</a>        1    6% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 36.3
+</pre>
 
 <sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -37,11 +77,15 @@ version                                     needs  score
 gguf-ud-q4_k_m 22B dev + Gemma 3 12B q4…  ~34.2GB   36.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# gguf-ud-q4_k_m 22B dev + Gemma 3 12B q4 (sd.cpp)
+# gguf-ud-q4_k_m 22B dev + Gemma 3 12B q4 (sd.cpp) · ~34.2GB
 sd-cli -M vid_gen --diffusion-model models/ltx-2.3-22b-dev-UD-Q4_K_M.gguf --vae models/ltx-2.3-22b-dev_video_vae.safetensors --audio-vae models/ltx-2.3-22b-dev_audio_vae.safetensors --llm models/gemma-3-12b-it-qat-UD-Q4_K_XL.gguf --embeddings-connectors models/ltx-2.3-22b-dev_embeddings_connectors.safetensors -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -n "worst quality, low quality, blurry, distorted, artifacts" -W 1280 -H 720 --diffusion-fa --offload-to-cpu --video-frames 33 --fps 24 -o t2v.webm
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ltx-2-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

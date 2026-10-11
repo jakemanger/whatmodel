@@ -8,18 +8,34 @@ ByteDance · closed weights
 
 **score 61.7** ±10.6 · #25 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Seedance 1.0 Pro Fast among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>        91.1%    72.4   2026-04-22   52% ▇▇▇▇▇▇
-prior                   pull toward the middle           49.9                48% ▇▇▇▇▇▇
-                        weighted average               = 61.7
+task           vs the others        rank  counts  tests
+text to video  ▆▄▃▄▆▅█▃●▂▂▄   #15 of 68*     53%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #15 of 68 · 53% of its score</summary>
+
+<pre>
+test              result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>   91.1%  ▂··▂··█▄▂··● beats 11/11  easy · avg 84%     53%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1   53% ▇▇▇▇▇▇
+prior: pull toward the middle                       47% ▇▇▇▇▇▇
+weighted average                                   = 61.7
+</pre>
 
 <sub>Licences: HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 

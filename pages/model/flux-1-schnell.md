@@ -6,25 +6,55 @@
 
 Black Forest Labs · released 2024-08 · 12B params · apache-2.0
 
-**score 41.4** ±2.3 · #102 of 144 · from 4 benchmark results across 4 sources
+**score 41.6** ±2.3 · #100 of 144 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks FLUX.1 \[schnell\] among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       57.6%    43.5   2026-07-01   48% ▇▇▇▇▇▇
-<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>  885.1    39.4   2025-09-03   21% ▇▇▇
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   2.9%    41.3   2026-09-28   18% ▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  40.0%    35.0   2026-06-02   12% ▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 41.4
+task           vs the others         rank  counts  tests
+text to image  ▂▅▅●▄▄█▃▁▂▁▁   #83 of 126*     59%      3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #83 of 126 · 59% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall. Trails [Playground v2 (1024px aesthetic)](playground-v2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>            57.6%  ▅▂█●▂▂····▂▂ beats 9/13   easy · avg 69%       48%  at its level
+<a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o jud…</a>   40.0%  ▄·▆▂●█▄▆▂▄·▄ beats 7/22   medium · avg 60%     11%  at its level
+<a href="https://github.com/ROCm/rocm-blogs/blob/b3bf907bd73c596c49c77b1d178c7c41bcd2713c/blogs/artificial-intelligence/mxfp-t2i-t2v/README.md#flux1-schnell-benchmark">GenEval</a>                              67.7%  ▇▃▅▇▁●▅▃█▃▃▅ beats 18/39  easy · avg 79%         —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generation al…</a>   885.1  ●··▅▃··▃▃··█ beats 0/8    avg 1012                 21%  typical
+<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>    2.9%  ▃·●▅▃·▅▃···▃ beats 3/10   very hard · avg 7.6%     18%  sharp · too hard for it
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   48% ▇▇▇▇▇▇
+<a name="visual-rapid-face"></a><a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata/Face_Generation_Benchmark</a>              1   21% ▇▇▇
+<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   18% ▇▇
+<a name="visual-wise"></a><a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE: A World Knowledge-Informed Semant…</a>        1   11% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 41.6
+</pre>
 
 <sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · Rapidata/Face\_Generation\_Benchmark ([CDLA-Permissive-2.0](../../licenses/visual-rapid-face-CDLA-Permissive-2.0.txt)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
@@ -45,23 +75,27 @@ api (Replicate) · $0.0030/image · [replicate.com](https://replicate.com/black-
 
 <pre>
 version                needs  score
-bf16 · nvidia only   ~29.3GB   41.4
-gguf-q8_0            ~28.3GB   41.4
-mlx-4bit · mac only   ~7.7GB   41.4
-bf16 · mac only      ~29.3GB   41.4
+bf16 · nvidia only   ~29.3GB   41.6
+gguf-q8_0            ~28.3GB   41.6
+mlx-4bit · mac only   ~7.7GB   41.6
+bf16 · mac only      ~29.3GB   41.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~29.3GB
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-schnell', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=0.0, max_sequence_length=256).images[0].save('out.png')"
-# gguf-q8_0
+# gguf-q8_0 · ~28.3GB
 sd-cli --diffusion-model models/flux1-schnell-q8_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --steps 4 --clip-on-cpu
-# mlx-4bit · mac only
+# mlx-4bit · mac only · ~7.7GB
 uvx --from mflux mflux-generate --model schnell --prompt "a cat holding a sign" --steps 2 -q 4
-# bf16 · mac only
+# bf16 · mac only · ~29.3GB
 uvx --from mflux mflux-generate --model schnell --prompt "a cat holding a sign" --steps 2
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/flux-1-schnell) · [JSON](https://whatmodel.sh/api?format=json&all=1)

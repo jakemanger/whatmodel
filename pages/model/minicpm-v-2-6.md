@@ -6,24 +6,45 @@
 
 OpenBMB · released 2024-08 · 8.1B params · minicpm-model-license
 
-**score 42.9** ±1.9 · #641 of 934 · from 5 benchmark results across 4 sources
+**score 42.8** ±1.9 · #646 of 949 · from 5 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks MiniCPM-V 2.6 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others         rank  counts  tests
+vision &amp; documents  ▁●▃▂▁▃▄▃▆▇█▄   #143 of 150     98%      5
+</pre>
+
+<details><summary>vision &amp; documents · #143 of 150 · 98% of its score</summary>
+
+Beats [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                                  result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>          57.0%  ▄●▄▄▄·██·▄·█ beats 2/12   easy · avg 71%       42%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>        962.7  ▁▁●▂▂▂▄▅▅▆██ beats 3/145  avg 1068             21%  blunt
+<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>          31.0%  ▂▂▂●▃▂·▂▂··▂ beats 3/13   medium · avg 36%     16%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -38.0000  ▃▃●·▃█·▅▃▃▃▃ beats 2/12   avg -0.671           15%  typical
+<a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>     44.9%  ▅▃█··▅●····▃ beats 8/9    hard · avg 43%      3.7%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="charxiv-readme-apache"></a>CharXiv leaderboard     <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>      57.0%    42.7   2024-07-23   42% ▇▇▇▇▇
-                        <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>      31.0%    47.8   2024-07-23   16% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>     962.7    37.4   2026-10-02   22% ▇▇▇
-<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -38.0000    41.6   2025-03-16   14% ▇▇
-<a name="paper-2501.16411v2-physbench"></a>PhysBench: Benchmarki…  <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world unde…</a>     44.9%    57.2   2025-01-29    4% ▇
-prior                   pull toward the middle                      50.0                 2% ▇
-                        weighted average                          = 42.9
+source                                    results  share of the score
+<a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   59% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   21% ▇▇▇
+<a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1   15% ▇▇
+<a name="paper-2501.16411v2-physbench"></a><a href="https://arxiv.org/html/2501.16411v2">PhysBench: Benchmarking and Enhancing V…</a>        1    4% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 42.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: CharXiv leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -31,17 +52,51 @@ prior                   pull toward the middle                      50.0        
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~5.36GB   42.9
-8-bit q8_0    ~10.22GB   42.9
+4-bit q4_k_m   ~5.36GB   42.8
+8-bit q8_0    ~10.22GB   42.8
+4-bit Q4_K_M    ~4.7GB   42.8
+8-bit Q8_0      ~8.1GB   42.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run minicpm-v:8b-2.6-q4_K_M
-# 8-bit q8_0
-ollama run minicpm-v:8b-2.6-q8_0
+# 4-bit Q4_K_M · ~4.7GB
+llama cli -hf openbmb/MiniCPM-V-2_6-gguf:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf openbmb/MiniCPM-V-2_6-gguf:Q4_K_M
+# 8-bit Q8_0 · ~8.1GB
+llama cli -hf openbmb/MiniCPM-V-2_6-gguf:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf openbmb/MiniCPM-V-2_6-gguf:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~4.7GB
+lms get https://huggingface.co/openbmb/MiniCPM-V-2_6-gguf@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.1GB
+lms get https://huggingface.co/openbmb/MiniCPM-V-2_6-gguf@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~5.36GB
+ollama run minicpm-v:8b-2.6-q4_K_M
+# 8-bit q8_0 · ~10.22GB
+ollama run minicpm-v:8b-2.6-q8_0
+# 4-bit Q4_K_M · ~4.7GB
+ollama run hf.co/openbmb/MiniCPM-V-2_6-gguf:Q4_K_M
+# 8-bit Q8_0 · ~8.1GB
+ollama run hf.co/openbmb/MiniCPM-V-2_6-gguf:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/minicpm-v-2-6) · [JSON](https://whatmodel.sh/api?format=json&all=1)

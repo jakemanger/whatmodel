@@ -6,25 +6,59 @@
 
 OpenAI · released 2026-01 · closed weights
 
-**score 67.2** ±1.9 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
+**score 68.5** ±1.7 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks GPT-5.2-Codex among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others         rank  counts  tests
+agent tasks  ▁▁▂▆█▆▅▄●▃▂▁    #63 of 374     52%      4
+coding       ▁▁▁▃▅▇█▇●▄▂▁   #131 of 549     66%      3
+</pre>
+
+<details><summary>agent tasks · #63 of 374 · 52% of its score</summary>
+
+Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>             64.0%  ██···█●··███ beats 3/6    very hard · avg 14%      21%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>               38.2%  ●▄·····▄·▄▄▄ beats 0/6    hard · avg 17%           12%  at its level
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   37.9%  ▃··▃·▃██▃●▃█ beats 10/14  very hard · avg 2.3%     12%  sharp · noisy
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.4%  ▄·····▄·▄●▄█ beats 3/6    hard · avg 28%          7.4%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #131 of 549 · 66% of its score</summary>
+
+Beats [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1338.9  ▁▂▄▃●█▄▇▆▄▁▁ beats 25/119  avg 981                  47%  sharp
+<a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   37.9%  ▃··▃·▃██▃●▃█ beats 10/14   very hard · avg 2.3%     12%  sharp · noisy
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.4%  ▄·····▄·▄●▄█ beats 3/6     hard · avg 28%          7.4%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1338.9    66.1   2026-10-01   54% ▇▇▇▇▇▇▇
-<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>    64.0%    73.3   2026-02-05   21% ▇▇
-                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>      38.2%    61.2   2026-02-05   15% ▇▇
-                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>         56.4%    74.0   2026-02-05    8% ▇
-prior                   pull toward the middle               50.0                 2% ▇
-                        weighted average                   = 67.2
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   47% ▇▇▇▇▇▇
+<a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5-3-codex">OpenAI vendor-reported benchmark scores…</a>        3   40% ▇▇▇▇▇
+<a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                                 1   12% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 68.5
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vibe Code Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

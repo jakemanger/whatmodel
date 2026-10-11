@@ -6,33 +6,69 @@
 
 Nous Research · released 2024-08 · 405.85B params · llama3
 
-**score 51.3** ±1.2 · #402 of 934 · from 14 benchmark results across 2 sources
+**score 51.4** ±1.2 · #407 of 949 · from 14 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Hermes 3 Llama 3.1 405B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #225 of 469*     24%      1
+chat &amp; writing  █········█·●       #1 of 3*    2.2%      1
+</pre>
+
+<details><summary>coding · #225 of 469 · 24% of its score</summary>
+
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   63.9%  ▁·▁▂▄▁▆▄●▆▂▂ beats 32/62  medium · avg 54%     24%  at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #1 of 3 · 2.2% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecified) …</a>   84.9%  ▁▁▃▁▂▄▄●█▃▂▁ beats 72/141  easy · avg 79%    2.2%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (12)</summary>
+
+<pre>
+test                             result  vs the others in its run    difficulty           counts  why
+<a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (lab)</a>   44.8%  ▂▁▂▂▄▃▆●▅█▄▃ beats 48/104   hard · avg 41%          12%  sharp · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (lab)</a>              75.4%  ▁▁▁▁▂▄▅▅█●▄▁ beats 103/129  medium · avg 72%        12%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>               69.5%  ▆▁▁▂▂▅▇█●▃▃▂ beats 80/97    medium · avg 73%        10%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                        85.0%  ▁▁▁▁▁▂▃▅█▃●▃ beats 155/183  easy · avg 80%         7.0%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                    54.1%  ▁▁·▁▁▁▃●▄▅█▁ beats 53/188   medium · avg 52%       6.8%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                  86.3%  ▁···▂▁▁▅█▇▃● beats 87/87    easy · avg 86%         6.3%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                  48.8%  █▁▁▁▄▃▃●▂▁▄▂ beats 45/65    medium · avg 55%       5.9%  at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                       88.9%  ▁▄▅▆▂▆▄▄█▃▄● beats 58/58    easy · avg 90%         4.8%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                   90.2%  ▁▁▁▁▂▂▃▇█▆▅● beats 85/85    very easy · avg 89%    4.3%  small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                        48.3%  █······●···█ beats 1/2      medium · avg 53%       2.3%  blunt · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                        86.0%  ▁▁▁▃▃▄▇█▄▃●▁ beats 81/83    easy · avg 86%         1.8%  blunt · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (lab)</a>              65.6%  █▅▇▅▁▄▁▇●▄▁▁ beats 58/73    medium · avg 64%       1.0%  blunt · at its level · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="first-party-nous-research-scores"></a>Nous Research vendor-…  <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (la…</a>  44.8%    53.3   2024-08-15   12% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (lab)</a>            75.4%    51.7   2024-08-15   11% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>             69.5%    47.4   2024-08-15   10% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                      85.0%    54.4   2024-08-15    7% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                  54.1%    51.2   2024-08-15    7% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                48.8%    44.6   2024-08-15    7% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                86.3%    50.5   2024-08-15    6% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                     88.9%    47.8   2024-08-15    4% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                 90.2%    52.1   2024-08-15    4% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                      48.3%    44.5   2024-08-15    2% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecifi…</a>  84.9%    57.5   2024-08-15    2% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                      86.0%    49.3   2024-08-15    2% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (lab)</a>            65.6%    49.2   2024-08-15    2% ▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  63.9%    54.0   2024-08-30   24% ▇▇▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 51.3
+source                                    results  share of the score
+<a name="first-party-nous-research-scores"></a><a href="https://arxiv.org/pdf/2408.11857v1">Nous Research vendor-reported scores fo…</a>       13   75% ▇▇▇▇▇▇▇▇▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   24% ▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 51.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>
 
@@ -41,15 +77,53 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B/blob/b9fe8ede1f5075f171b2c0a235e20ae4aba33767/config.json): config.json max\_position\_embeddings 131072 (Llama 3.1 base). Observed 2026-10-10.</sub>
 
 <pre>
-download      size  score
-4-bit q4_0  ~229GB   51.3
+download           size  score
+4-bit q4_0       ~229GB   51.4
+4-bit Q4_K_M   ~243.1GB   51.4
+8-bit Q8_0     ~431.2GB   51.4
+2-bit IQ2_XXS  ~107.3GB   51.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run hermes3:405b
+# 4-bit Q4_K_M · ~243.1GB
+llama cli -hf bartowski/Hermes-3-Llama-3.1-405B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Hermes-3-Llama-3.1-405B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~431.2GB
+llama cli -hf bartowski/Hermes-3-Llama-3.1-405B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Hermes-3-Llama-3.1-405B-GGUF:Q8_0
+# 2-bit IQ2_XXS · ~107.3GB
+llama cli -hf bartowski/Hermes-3-Llama-3.1-405B-GGUF:IQ2_XXS
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Hermes-3-Llama-3.1-405B-GGUF:IQ2_XXS
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~243.1GB
+lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.1-405B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~431.2GB
+lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.1-405B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit IQ2_XXS · ~107.3GB
+lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.1-405B-GGUF@IQ2_XXS -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~229GB
+ollama run hermes3:405b
+```
 
 [interactive version](https://whatmodel.sh/model/hermes-3-llama-3-1-405b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

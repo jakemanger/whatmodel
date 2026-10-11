@@ -6,22 +6,40 @@
 
 Meta · released 2025-12 · 3.08B params · apache-2.0
 
-**score 54.7** ±2.9 · #73 of 160 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.0** ±2.9 · #72 of 162 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Omnilingual ASR CTC 3B v2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                test                       score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>   6.2%    54.8   2026-03-26   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle              49.8                 3% ▇
-                      weighted average                  = 54.7
+task                    vs the others        rank  counts  tests
+multilingual transcri…  ▂··▃▄●▆▅▄▂·▂   #22 of 36*     97%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>multilingual transcription · #22 of 36 · 97% of its score</summary>
+
+Beats [Voxtral Mini Transcribe V2](voxtral-mini-transcribe-2.md), [Canary-1B-v2](canary-1b-v2.md), [Omnilingual ASR LLM 3B](omniasr-llm-3b.md) here, though they rank higher overall. Trails [Omnilingual ASR CTC 1B v2](omniasr-ctc-1b-v2.md), [Omnilingual ASR CTC 7B v2](omniasr-ctc-7b-v2.md), [SeamlessM4T v2 Large](seamless-m4t-v2-large.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>    6.2%  ▂··▂▃▂●▃█▂▁▁ beats 12/29  avg 8.9%       97%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR Leaderboard</a>                 1   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             3% ▇
+weighted average                        = 55.0
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
@@ -29,14 +47,18 @@ prior                 pull toward the middle              49.8                 3
 
 <pre>
 version    needs  score
-bf16     ~7.89GB   54.7
+bf16     ~7.89GB   55.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16
+# bf16 · ~7.89GB
 uv run --python 3.12 --with omnilingual-asr python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_3B_v2').transcribe(['audio.wav'], batch_size=1))"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/omniasr-ctc-3b-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

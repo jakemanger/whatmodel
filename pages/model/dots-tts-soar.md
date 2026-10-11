@@ -6,37 +6,63 @@
 
 dots.tts · released 2026-06 · 2B params · apache-2.0
 
-**score 65.2** ±1.5 · #15 of 117 · from 16 benchmark results across 3 sources
+**score 65.2** ±1.5 · #14 of 118 · from 16 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks dots.tts SOAR 2B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>             11.7%    60.1   2026-07-27   12% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (pr…</a>  3.72 / 5    62.6   2026-07-27   10% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>     10.6%    57.7   2026-07-27    8% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>             11.8%    60.7   2026-07-27    8% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · speaker si…</a>     81.8%    68.2   2026-07-27    7% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · speaker si…</a>     79.2%    68.7   2026-07-27    7% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker si…</a>     76.0%    69.6   2026-07-27    4% ▇
-<a name="speech-dots-tts-report"></a>dots.tts Technical Re…  <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-en · WER (lab)</a>        4.5%    72.5   2026-08-10    9% ▇
-                        <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval EN (zero-shot Englis…</a>      4.5%    66.4   2026-08-10    8% ▇
-                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · speaker si…</a>     77.1%    68.5   2026-08-10    7% ▇
-                        <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-zh · CER (lab)</a>        9.2%    64.9   2026-08-10    6% ▇
-                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · speaker si…</a>     81.0%    67.6   2026-08-10    6% ▇
-                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · Whisper la…</a>      1.3%    72.2   2026-08-10    3% ▇
-                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · Paraformer…</a>      0.9%    68.4   2026-08-10    2% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice…</a>     60.0%    65.6   2026-10-01    3% ▇
-                        <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice…</a>      6.0%   132.4   2026-10-01    0% ▇
-prior                   pull toward the middle                      49.7                 1% ▇
-                        weighted average                          = 65.2
+task           vs the others      rank  counts  tests
+voice cloning  ▁·▁▁▁▁▁▁▇█▃●   #2 of 37     30%      6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #2 of 37 · 30% of its score</summary>
+
+Beats [OpenAudio S1](openaudio-s1.md), [Gemini 3.1 Flash TTS Preview](gemini-3-1-flash-tts-preview.md), [dots.tts MF 2B (MeanFlow, NFE 4)](dots-tts-mf.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · speaker simila…</a>   81.8%  █·····█●···█ beats 2/3    medium · avg 58%    6.9%  typical
+<a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · speaker simila…</a>   79.2%  █····█··●··█ beats 2/3    medium · avg 54%    6.8%  typical
+<a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · speaker simila…</a>   77.1%  ▁·▂▂▂█▆▃●··▂ beats 25/30  medium · avg 53%    6.3%  at its level · small run
+<a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · speaker simila…</a>   81.0%  ▁·▂··▂·█▄·▃● beats 23/25  medium · avg 62%    5.5%  small run
+<a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · Whisper large-…</a>    1.3%  ▁···▂▂▂▂█▆●▂ beats 32/35  avg 3.6%            2.4%  blunt · small run
+<a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · Paraformer CER…</a>    0.9%  ▁·▂▁▁▁▂▃▅●·▂ beats 23/30  avg 2.1%            1.8%  blunt · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (8)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>                 11.7%  ●····█·█████ beats 0/6    avg 26%                   21%  sharp · several runs
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>                 11.8%  ●▄▄···▄··▄·█ beats 0/6    avg 23%                   15%  several runs
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (predic…</a>  3.72 / 5  ●·▄·▄▄·▄···▄ beats 0/6    medium · avg 2.98 / 5     10%  at its level
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice clone…</a>     10.6%  ●···▄··▄··██ beats 0/6    avg 20%                  8.2%  typical
+<a href="https://arxiv.org/html/2606.07080v2">CV3-Eval EN (zero-shot English) ·…</a>      4.5%  ▁·······▁▃█● beats 10/14  avg 16%                  8.0%  small run
+<a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker simila…</a>     76.0%  ▄·····▄▄·▄▄● beats 5/6    medium · avg 49%         4.4%  at its level
+<a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice clo…</a>     60.0%  ▃·····▂▂▂▃█● beats 14/15  medium · avg 46%         3.3%  blunt · at its level
+<a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice clo…</a>      6.0%  ▂▂▂··▂·▃▃●█▂ beats 8/15   avg 8.6%                 0.0%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-qwen-audio3-tts-report"></a><a href="https://arxiv.org/html/2607.23938v1">Qwen-Audio-3.0-TTS technical report</a>             7   56% ▇▇▇▇▇▇▇
+<a name="speech-dots-tts-report"></a><a href="https://arxiv.org/html/2606.07080v2">dots.tts Technical Report (lab)</a>                 7   40% ▇▇▇▇▇
+<a name="speech-rvcbench-ccby"></a><a href="https://arxiv.org/html/2602.00443v3">RVCBench: Benchmarking Robustness of Vo…</a>        2    3% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 65.2
+</pre>
 
 <sub>Licences: Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · dots.tts Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>
 
@@ -47,11 +73,15 @@ version                                     needs  score
 bf16 (dots.tts package CLI) · nvidia on…  ~5.16GB   65.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (dots.tts package CLI) · nvidia only
+# bf16 (dots.tts package CLI) · nvidia only · ~5.16GB
 pip install dots.tts && dots.tts --model-name-or-path dots-studio/dots.tts-soar --text "Hello, this is a zero-shot voice cloning demonstration." --prompt-audio /path/to/reference.wav --prompt-text "The exact transcript of the reference audio." --output clone.wav
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/dots-tts-soar) · [JSON](https://whatmodel.sh/api?format=json&all=1)

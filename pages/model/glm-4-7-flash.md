@@ -6,29 +6,109 @@
 
 Z.ai · released 2026-01 · 31.2B params (3B active) · mit
 
-**score 58.9** ±1.3 · #229 of 934 · from 10 benchmark results across 6 sources
+**score 58.8** ±1.3 · #238 of 949 · from 10 benchmark results across 6 sources
+
+## What it's good at
+
+<sub>● marks GLM-4.7-Flash among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others            rank  counts  tests
+agent tasks                    not ranked yet       —      3
+coding          ▁▁▁▃▆●█▇▆▄▃▁     #344 of 469*     12%      3
+chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂     #146 of 466*     15%      1
+math            ▁▂▃▅▆▅●█▄▁▁▁     #161 of 400*     14%      2
+web search                     not ranked yet       —      1
+</pre>
+
+<details><summary>agent tasks · 0.0% of its score</summary>
+
+<pre>
+test                      result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">SWE-bench Verified (lab)</a>   59.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 52/131  hard · avg 19%            —  not counted yet: no other model in the …
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">BrowseComp (lab)</a>           42.8%  ▂·▄▁▂▃●▄█▂▃▄ beats 15/42   very hard · avg 10%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">τ²-bench aggregate (lab)</a>   79.5%  ▁▁▁·▂▂▄▃▃●█▂ beats 22/37   medium · avg 40%          —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>coding · #344 of 469 · 12% of its score</summary>
+
+Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   14.9%  ▁●▁▁·▁▂▃▅▃█▇ beats 1/49    hard · avg 18%       12%  at its level
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">SWE-bench Verified (lab)</a>             59.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 52/131  hard · avg 19%         —  not counted yet: no other model in the …
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">LiveCodeBench v6 (window unspecif…</a>   64.0%  ▂▃▄▄▅●█▅▄▇▃▆ beats 28/65   medium · avg 39%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #146 of 466 · 15% of its score</summary>
+
+Beats [INTELLECT-3](intellect-3.md), [Nemotron 3 Super 120B-A12B](nemotron-3-super-120b-a12b.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1364.9  ▁▁▁▂▃▃▃▆●▇█▃ beats 209/379  avg 1268       15%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #161 of 400 · 14% of its score</summary>
+
+Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Granite 4.2 3B](granite-4-2-3b.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run    difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   58.3%  ▃▃▄▃▃▃●▇█▃▂▅ beats 88/193   very hard · avg 8.5%     14%  sharp · at its level · noisy
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">AIME 2025 (lab)</a>            91.6%  ▁·▁▁▁▂▅▆█▇●▁ beats 118/133  medium · avg 42%           —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>web search · 0.0% of its score</summary>
+
+<pre>
+test              result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">BrowseComp (lab)</a>   42.8%  ▂·▄▁▂▃●▄█▂▃▄ beats 15/42  very hard · avg 10%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (9)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         60.5%  ▁▁▁▁▂▄▆●▅▇█▅ beats 88/208  hard · avg 40%           27%  sharp · at its level
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1151.3  ▁·▂▁▄●▅▃█▄▁▁ beats 20/62   avg 1044                8.9%  typical
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   94.1%  ▂·▂▂·▂·▃▃·█● beats 13/14   easy · avg 80%          8.1%  typical
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   83.1%  ▁▁●▁█▄▃▃▆▂▂▂ beats 3/49    easy · avg 78%          7.4%  typical
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   74.8%  ▂··▂▂·▂▆●█·▄ beats 7/15    medium · avg 63%        5.7%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 0.0%  ●▁▁▁▁▂▁▄▂▂▁▁ beats 31/135  very hard · avg 5.9%    2.0%  sharp · too hard for it · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   90.7%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 51/98   very easy · avg 90%     0.0%  blunt
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">GPQA (subset unspecified) (lab)</a>      75.2%  ▂▁▂▂▄▃▆▃▅●▄▃ beats 87/104  very hard · avg 33%        —  not counted yet: no other model in the …
+<a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">Humanity's Last Exam (lab)</a>           14.4%  ▁▁▁▃▆●▇██▆▁▃ beats 33/104  very hard · avg 3.8%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     60.5%    59.6   2026-08-30   28% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         58.3%    63.1   2026-08-30   14% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             0.0%    51.9   2026-08-28    2% ▇
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   14.9%    48.9   2026-09-07   11% ▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   83.1%    54.8   2026-09-07    7% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1364.9    61.7   2026-10-02   14% ▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   94.1%    64.1   2026-04-17    8% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   74.8%    58.4   2026-04-17    6% ▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1151.3    59.2   2026-05-10    9% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   90.7%    87.5   2026-09-22    0% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 58.9
+source                                    results  share of the score
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   43% ▇▇▇▇▇
+<a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>                          2   19% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   15% ▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   14% ▇▇
+<a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1    9% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 58.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -54,16 +134,71 @@ api (Z.AI) · $0.0000/M blended · $0 in / $0 out per 1M tokens · [docs.z.ai](h
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-4.7-flash.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/zhipuai/glm-4.7-flash.toml)</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~19.22GB   58.9
+download                       size  score
+4-bit q4_k_m               ~19.22GB   58.8
+4-bit Q4_K_M                ~18.1GB   58.8
+8-bit Q8_0                  ~31.8GB   58.8
+4-bit mlx-4bit · mac only   ~16.9GB   58.8
+4-bit mlx-8bit · mac only   ~31.8GB   58.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run glm-4.7-flash:q4_K_M
+# 4-bit Q4_K_M · ~18.1GB
+llama cli -hf lmstudio-community/GLM-4.7-Flash-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/GLM-4.7-Flash-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~31.8GB
+llama cli -hf lmstudio-community/GLM-4.7-Flash-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/GLM-4.7-Flash-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~18.1GB
+lms get https://huggingface.co/lmstudio-community/GLM-4.7-Flash-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~31.8GB
+lms get https://huggingface.co/lmstudio-community/GLM-4.7-Flash-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~16.9GB
+lms get https://huggingface.co/lmstudio-community/GLM-4.7-Flash-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~31.8GB
+lms get https://huggingface.co/lmstudio-community/GLM-4.7-Flash-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~19.22GB
+ollama run glm-4.7-flash:q4_K_M
+# 4-bit Q4_K_M · ~18.1GB
+ollama run hf.co/lmstudio-community/GLM-4.7-Flash-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~31.8GB
+ollama run hf.co/lmstudio-community/GLM-4.7-Flash-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~16.9GB
+mlx_lm.chat --model lmstudio-community/GLM-4.7-Flash-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/GLM-4.7-Flash-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~31.8GB
+mlx_lm.chat --model lmstudio-community/GLM-4.7-Flash-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/GLM-4.7-Flash-MLX-8bit
+```
 
 ## Published speed measurements
 

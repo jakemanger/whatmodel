@@ -14,7 +14,12 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
+# fp32 (pocket-tts 3.3.0) · ~0.23GB
 uvx pocket-tts generate --text "Hello world, this is a test."
 ```
 

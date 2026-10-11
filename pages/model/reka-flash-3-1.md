@@ -6,36 +6,93 @@
 
 Reka AI · released 2025-05 · 20.91B params · apache-2.0
 
-**score 51.8** ±5.7 · #388 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.7** ±5.9 · #399 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Reka Flash 3.1 (21B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   69.1%  ▃·▁▁▂▁▂▅●▇▄▁ beats 49/100   medium · avg 68%     52%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   87.4%  ▁▁▁▁▁▁▁▂▄█●▃ beats 107/146  easy · avg 83%       32%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  69.1%    50.8   2026-04-17   55% ▇▇▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  87.4%    54.5   2026-04-17   31% ▇▇▇▇
-prior                  pull toward the middle                   50.0                14% ▇▇
-                       weighted average                       = 51.8
+source                         results  share of the score
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   85% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle            15% ▇▇
+weighted average                        = 51.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~13.61GB   51.8
+download                       size  score
+4-bit q4_k_m               ~13.61GB   51.7
+4-bit mlx-4bit · mac only   ~11.8GB   51.7
+4-bit mlx-8bit · mac only   ~22.2GB   51.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-llama-server -hf bartowski/RekaAI_reka-flash-3.1-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~13.61GB
+llama cli -hf bartowski/RekaAI_reka-flash-3.1-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/RekaAI_reka-flash-3.1-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~13.61GB
+lms get https://huggingface.co/bartowski/RekaAI_reka-flash-3.1-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~11.8GB
+lms get https://huggingface.co/cnfusion/reka-flash-3.1-mlx-4Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~22.2GB
+lms get https://huggingface.co/cnfusion/reka-flash-3.1-mlx-8Bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~13.61GB
+ollama run hf.co/bartowski/RekaAI_reka-flash-3.1-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~11.8GB
+mlx_lm.chat --model cnfusion/reka-flash-3.1-mlx-4Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model cnfusion/reka-flash-3.1-mlx-4Bit
+# 4-bit mlx-8bit · mac only · ~22.2GB
+mlx_lm.chat --model cnfusion/reka-flash-3.1-mlx-8Bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model cnfusion/reka-flash-3.1-mlx-8Bit
+```
 
 [interactive version](https://whatmodel.sh/model/reka-flash-3-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

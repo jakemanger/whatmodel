@@ -6,26 +6,56 @@
 
 PromptHero · released 2022-11 · 0.86B params · creativeml-openrail-m
 
-**score 27.4** ±2.2 · #135 of 144 · from 5 benchmark results across 5 sources
+**score 27.6** ±2.2 · #135 of 144 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Openjourney among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                                        score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>                              853.0    23.7   2024-06-04   38% ▇▇▇▇▇
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  4.8300 mean human alignment score    29.3   2024-10-10   33% ▇▇▇▇
-<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>                              50.0%    29.1   2024-03-10   16% ▇▇
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              61.7%    27.9   2023-11-07   11% ▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>                              27.5%    52.0   2024-02-21    0% ▇
-prior                   pull toward the middle                                               49.9                 2% ▇
-                        weighted average                                                   = 27.4
+task           vs the others         rank  counts  tests
+text to image  ●▅▅▃▄▄█▃▁▂▁▁   #120 of 126     55%      3
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #120 of 126 · 55% of its score</summary>
+
+Trails [CogView2](cogview2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>   853.0  ▃●··▃·▃·█·▃▃ beats 1/8    avg 1237           38%  sharp
+<a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generation …</a>   50.0%  ●▄·█·······▄ beats 0/4    easy · avg 80%     16%  at its level
+<a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style average)</a>   27.5%  ▃··▃▅·▅·▅▅●▅ beats 12/14  hard · avg 27%    0.1%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                                           result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image alignm…</a>  4.8300 mean human alignment score  █▄▄·●·▄█▄▄·▄ beats 5/11   avg 6.285 mean human al…     33%  typical
+<a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (aspect…</a>                              61.7%  ▁····●▁·▁··▁ beats 6/9    very easy · avg 92%          11%  sharp · at its level · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-genai-arena"></a><a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI Arena: An Open Evaluation Platfor…</a>        1   38% ▇▇▇▇▇
+<a name="visual-evalalign"></a><a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign: Supervised Fine-Tuning Multi…</a>        1   33% ▇▇▇▇
+<a name="visual-imagenhub"></a><a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub: Standardizing the evaluation…</a>        1   16% ▇▇
+<a name="visual-heim"></a><a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM: Holistic Evaluation of Text-to-Im…</a>        1   11% ▇
+<a name="visual-hpsv2-readme"></a><a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">tgxs002/HPSv2 repository README</a>                 1    0% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 27.6
+</pre>
 
 <sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 
@@ -33,17 +63,21 @@ prior                   pull toward the middle                                  
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~2.6GB   27.4
-q8_0 (sd.cpp --type)  ~2.1GB   27.4
+fp16 · nvidia only    ~2.6GB   27.6
+q8_0 (sd.cpp --type)  ~2.1GB   27.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~2.6GB
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('prompthero/openjourney', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
-# q8_0 (sd.cpp --type)
+# q8_0 (sd.cpp --type) · ~2.1GB
 sd-cli -m models/mdjrny-v4.safetensors --type q8_0 -p "a lovely cat"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/openjourney) · [JSON](https://whatmodel.sh/api?format=json&all=1)

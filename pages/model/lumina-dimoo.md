@@ -6,23 +6,48 @@
 
 Alpha-VLLM (Shanghai AI Lab) · released 2025-09 · 8B params · apache-2.0
 
-**score 32.5** ±4.2 · #126 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 32.4** ±4.2 · #127 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Lumina-DiMOO among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      26.6%    27.6   2026-05-13   83% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>  34.0%    61.5   2026-03-26   10% ▇
-prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 32.5
+task                    vs the others        rank  counts  tests
+image to image / edit…  ▁●·▃▂▃█▃▃▄▁▁   #60 of 62*     83%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #60 of 62 · 83% of its score</summary>
+
+<pre>
+test                        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>   26.6%  ▃●▂·▃▆▂█·▃·▃ beats 3/20   hard · avg 45%     83%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual reas…</a>   34.0%  ▂···▂·▂█●▅·▂ beats 10/15  hard · avg 31%    9.4%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-edit-compass"></a><a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass &amp; EditReward-Compass: A Un…</a>        1   83% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-vigor-bench"></a><a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench: How Far Are Visual Generat…</a>        1    9% ▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 32.4
+</pre>
 
 <sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -30,14 +55,18 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                     needs  score
-official inference_t2i.py (checkpoint a…  ~38.9GB   32.5
+official inference_t2i.py (checkpoint a…  ~38.9GB   32.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# official inference_t2i.py (checkpoint as stored) · nvidia only
+# official inference_t2i.py (checkpoint as stored) · nvidia only · ~38.9GB
 git clone https://github.com/Alpha-VLLM/Lumina-DiMOO.git && cd Lumina-DiMOO && conda create -n lumina_dimoo python=3.10 -y && conda activate lumina_dimoo && pip install -r requirements.txt && python inference/inference_t2i.py --checkpoint Alpha-VLLM/Lumina-DiMOO --prompt "A striking photograph of a glass of orange juice on a wooden kitchen table" --height 768 --width 1536 --timesteps 64 --cfg_scale 4.0 --seed 65513 --vae_ckpt Alpha-VLLM/Lumina-DiMOO --output_dir output/results_text_to_image
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/lumina-dimoo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

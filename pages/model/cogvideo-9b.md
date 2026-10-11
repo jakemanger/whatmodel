@@ -8,18 +8,34 @@ Tsinghua / Zhipu · released 2022-05 · 9.4B params · cogvideo-license
 
 **score 23.2** ±6.8 · #93 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks CogVideo 9B (original) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="visual-fetv-ccby"></a>FETV: A Benchmark for…  <a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV manual video quality (me…</a>  3.27 / 5    16.7   2023-12-26   81% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                19% ▇▇
-                        weighted average                          = 23.2
+task           vs the others        rank  counts  tests
+text to video  ●▄▃▄▆▅█▃▂▂▂▄   #68 of 68*     81%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #68 of 68 · 81% of its score</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV manual video quality (mean o…</a>  3.27 / 5  ●·····█····█ beats 0/2    very easy · avg 4.63 / 5     81%  at its level · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-fetv-ccby"></a><a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV: A Benchmark for Fine-Grained Eval…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       19% ▇▇
+weighted average                                   = 23.2
+</pre>
 
 <sub>Licences: FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -30,11 +46,15 @@ version                                     needs  score
 fp16 (--fp16), both stages · nvidia only  ~51.7GB   23.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 (--fp16), both stages · nvidia only
+# fp16 (--fp16), both stages · nvidia only · ~51.7GB
 git clone -b CogVideo https://github.com/zai-org/CogVideo && cd CogVideo && pip install -r requirements.txt && pip install git+https://github.com/Sleepychord/Image-Local-Attention && MASTER_PORT=$(shuf -n 1 -i 10000-65535) SAT_HOME=./sat_models python cogvideo_pipeline.py --input-source interactive --output-path ./output --parallel-size 1 --both-stages --use-guidance-stage1 --guidance-alpha 3.0 --generate-frame-num 5 --tokenizer-type fake --mode inference --distributed-backend nccl --fp16 --model-parallel-size 1 --temperature 1.05 --coglm-temperature2 0.89 --top_k 12 --sandwich-ln --seed 1234 --num-workers 0 --batch-size 4 --max-inference-batch-size 8
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cogvideo-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

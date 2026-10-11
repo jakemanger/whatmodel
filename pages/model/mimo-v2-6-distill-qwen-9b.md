@@ -4,30 +4,124 @@
 
 # MiMo-V2.6-Distill-Qwen-9B
 
-Xiaomi · released 2026-09
+Xiaomi · released 2026-09 · 9.41B params · mit
 
-Xiaomi SFT checkpoint: card 'MiMo-V2.6-Distill-Qwen-9B is a 9B agentic model developed by Xiaomi MiMo through supervised fine-tuning of Qwen3.5-9B on MiMo-generated data' (repo created 2026-09-21, sha 2367e86, licence mit, base\_model Qwen/Qwen3.5-9B). The SFT checkpoint is the released one; the report's 'RL' column in Table 6 is a set of unreleased domain-specific GRPO checkpoints and is not this model. Its card rows are alone in their run unless the owner accepts the Qwen3.5-9B comparator cells (held\_for\_owner).
+**score 65.3** ±2.2 · #150 of 949 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
-[Model and usage documentation](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B)
+## What it's good at
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+<sub>● marks MiMo-V2.6-Distill-Qwen-9B among every model on that task or test, worst to best.</sub>
 
 <pre>
-test                               result  reported by  source
-SWE-bench Verified                  61.1%  lab          <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">XiaomiMiMo/MiMo-V2.6-Distill-…</a>
-SWE-bench Pro (split unspecified)   44.6%  lab          <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">XiaomiMiMo/MiMo-V2.6-Distill-…</a>
-Terminal-Bench 2.1                  37.1%  lab          <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">XiaomiMiMo/MiMo-V2.6-Distill-…</a>
-Toolathlon-Verified                 35.2%  lab          <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">XiaomiMiMo/MiMo-V2.6-Distill-…</a>
-AutomationBench v1.0.6              30.3%  lab          <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">XiaomiMiMo/MiMo-V2.6-Distill-…</a>
+task         vs the others          rank  counts  tests
+agent tasks  ▁▁▃▆█▆●▄▄▃▂▁    #120 of 334     88%      4
+coding       ▁▁▁▃▆██▇●▄▃▁   #122 of 469*     55%      2
+</pre>
+
+<details><summary>agent tasks · #120 of 334 · 88% of its score</summary>
+
+Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Pro (split unspecified)…</a>   44.6%  ▃·▁▁▁▂▂▃●▇▃▁ beats 23/55   very hard · avg 9.6%     29%  sharp · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Verified (lab)</a>             61.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 58/131  hard · avg 23%           26%  sharp · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">Terminal-Bench 2.1 (lab)</a>             37.1%  ▁·▁·▁▁▄●▄█▃▇ beats 13/56   very hard · avg 11%      25%  at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">Toolathlon-Verified (lab)</a>            35.2%  ▂·●▂▅▃···▂██ beats 1/18    hard · avg 24%          8.1%  blunt · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #122 of 469 · 55% of its score</summary>
+
+Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kimi K2 Thinking](kimi-k2-thinking.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty            counts  why
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Pro (split unspecified)…</a>   44.6%  ▃·▁▁▁▂▂▃●▇▃▁ beats 23/55   very hard · avg 9.6%     29%  sharp · at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">SWE-bench Verified (lab)</a>             61.1%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 58/131  hard · avg 23%           26%  sharp · at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                          result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">AutomationBench v1.0.6 (lab)</a>   30.3%  ▃····▃·▃●··█ beats 3/6    very hard · avg 5.5%    9.3%  noisy · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="card3-xiaomimimo-mimo-v2-6-distill-qwen-9b"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md">XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B mo…</a>        5   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 65.3
 </pre>
 
 <sub>Licences: XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B model card ([MIT](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md))</sub>
 
 ## How to run it
 
+<pre>
+download                       size  score
+4-bit q4_k_m                ~6.76GB   65.3
+8-bit q8_0                 ~10.15GB   65.3
+4-bit mlx-4bit · mac only      ~6GB   65.3
+</pre>
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-llama-server -hf bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q4_K_M
-llama-server -hf ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q8_0
+# 4-bit q4_k_m · ~6.76GB
+llama cli -hf bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q4_K_M
+# 8-bit q8_0 · ~10.15GB
+llama cli -hf ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q8_0
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/mimo-v2-6-distill-qwen-9b)
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~6.76GB
+lms get https://huggingface.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~10.15GB
+lms get https://huggingface.co/ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~6GB
+lms get https://huggingface.co/agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~6.76GB
+ollama run hf.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q4_K_M
+# 8-bit q8_0 · ~10.15GB
+ollama run hf.co/ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~6GB
+mlx_lm.chat --model agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit
+```
+
+[interactive version](https://whatmodel.sh/model/mimo-v2-6-distill-qwen-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

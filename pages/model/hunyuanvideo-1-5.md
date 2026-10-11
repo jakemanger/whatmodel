@@ -8,24 +8,66 @@ Tencent · released 2025-11 · 8.3B params · tencent-hunyuan-community
 
 **score 51.9** ±1.6 · #47 of 93 · from 7 benchmark results across 6 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks HunyuanVideo 1.5 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1168.8    51.8   2026-09-22   45% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1197.8    50.7   2026-09-22   30% ▇▇▇▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>   86.5%    52.6   2026-06-23    9% ▇
-<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>  1462.0    48.5   2026-05-06    7% ▇
-<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>   85.4%    57.1   2026-08-06    4% ▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>   46.8%    55.1   2026-08-10    4% ▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                 91.1%    70.5   2026-04-22    1% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 51.9
+task            vs the others        rank  counts  tests
+text to video   ▆▄▃▄▆▅●▃▂▂▂▄    #30 of 68     65%      5
+image to video  ▁▂·▂●█▅▄▅▆▃▄   #42 of 50*     30%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #30 of 68 · 65% of its score</summary>
+
+Beats [Kling 2.1 Master](kling-2-1-master.md) here, though they rank higher overall. Trails [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                       1168.8  ▂▂▃●█▆·▆▅▁▂▇ beats 10/41  avg 1147           45%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   86.5%  █▄▄··●▄▄▄▄·▄ beats 4/9    easy · avg 85%    8.5%  typical
+<a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Bradle…</a>  1462.0  █···●█·█··██ beats 1/5    avg 1470          6.5%  typical
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   46.8%  ▅·▃█●·▅▃▅▃▃▃ beats 6/14   hard · avg 44%    3.5%  blunt · at its level
+<a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                     91.1%  ▂··▂··█▄▂··● beats 10/11  easy · avg 84%    1.5%  blunt
+</pre>
+
+</details>
+
+<details><summary>image to video · #42 of 50 · 30% of its score</summary>
+
+Trails [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md), [LongCat-Video](longcat-video.md), [Cosmos3-Nano](cosmos3-nano.md) here, though they rank lower overall.
+
+<pre>
+test                  result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1197.8  ▁▁▁▁●▇▃▆▃▂▄█ beats 7/40   avg 1189       30%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-grou…</a>   85.4%  █▄·▄█●▄····▄ beats 6/8    easy · avg 82%    4.2%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   75% ▇▇▇▇▇▇▇▇▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        1    9% ▇
+<a name="visual-worldjen"></a><a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen: An End-to-End Multi-Dimension…</a>        1    6% ▇
+<a name="visual-videoargus"></a><a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus: Agentic Rubric-Grounded Uni…</a>        1    4% ▇
+<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1    4% ▇
+<a name="visual-humanscore"></a><a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore: Benchmarking Human Motions …</a>        1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 51.9
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 
@@ -42,15 +84,19 @@ fp16 720p T2V (sd.cpp)                     ~43.9GB   51.9
 fp16 720p T2V + Qwen2.5-VL q8_0 (sd.cpp)   ~33.8GB   51.9
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~20.42GB
 torchrun --nproc_per_node=1 generate.py --prompt "A cat walks on the grass, realistic style." --resolution 480p --rewrite false --model_path ./ckpts
-# fp16 720p T2V (sd.cpp)
+# fp16 720p T2V (sd.cpp) · ~43.9GB
 sd-cli -M vid_gen --diffusion-model models/hunyuanvideo1.5_720p_t2v_fp16.safetensors --vae models/hunyuanvideo15_vae_fp16.safetensors --llm models/qwen_2.5_vl_7b.safetensors --t5xxl models/byt5_small_glyphxl_fp16.safetensors -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -W 1280 -H 720 --offload-to-cpu --diffusion-fa --video-frames 33 --vae-tiling
-# fp16 720p T2V + Qwen2.5-VL q8_0 (sd.cpp)
+# fp16 720p T2V + Qwen2.5-VL q8_0 (sd.cpp) · ~33.8GB
 sd-cli -M vid_gen --diffusion-model models/hunyuanvideo1.5_720p_t2v_fp16.safetensors --vae models/hunyuanvideo15_vae_fp16.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf --t5xxl models/byt5_small_glyphxl_fp16.safetensors -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -W 1280 -H 720 --offload-to-cpu --diffusion-fa --video-frames 33 --vae-tiling
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hunyuanvideo-1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

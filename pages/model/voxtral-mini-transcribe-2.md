@@ -6,27 +6,66 @@
 
 Mistral · released 2026-02 · proprietary
 
-**score 59.2** ±2.8 · #38 of 160 · from 6 benchmark results across 3 sources
+**score 59.3** ±2.8 · #38 of 162 · from 6 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Voxtral Mini Transcribe V2 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                 test                            score  implies  date        weight
-<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime       <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   7.3%    57.1   2026-02-11   18% ▇▇
-                       <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>   8.1%    62.4   2026-02-11   17% ▇▇
-                       <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.1%    56.7   2026-02-11   17% ▇▇
-                       <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   5.9%    59.5   2026-02-11   16% ▇▇
-<a name="speech-stt-dutch-asr-tvosch-apache"></a>Dutch ASR Leaderboard  <a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/voxtral-mini-2602.json">Dutch ASR Leaderboard · avera…</a>   8.2%    62.3   2026-05-12   20% ▇▇
-<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1   <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   5.2%    58.3   2026-07-05   10% ▇
-prior                  pull toward the middle                   49.8                 3% ▇
-                       weighted average                       = 59.2
+task                    vs the others        rank  counts  tests
+long-form transcripti…  █·····█···●█     #2 of 4*     17%      1
+multilingual transcri…  ▂··▃▄●▆▅▄▂·▂   #27 of 36*     33%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>long-form transcription · #2 of 4 · 17% of its score</summary>
+
+Trails [Voxtral Mini 4B Realtime (2602)](voxtral-mini-4b-realtime.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long-for…</a>    7.1%  ▄··█·······● beats 3/3    avg 11%        17%  typical
+</pre>
+
+</details>
+
+<details><summary>multilingual transcription · #27 of 36 · 33% of its score</summary>
+
+Trails [Omnilingual ASR CTC 1B v2](omniasr-ctc-1b-v2.md), [Omnilingual ASR CTC 7B v2](omniasr-ctc-7b-v2.md), [SeamlessM4T v2 Large](seamless-m4t-v2-large.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice 12-…</a>    8.1%  █··█·······● beats 2/2    avg 18%        17%  small run
+<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-langua…</a>    5.9%  █·█········● beats 2/2    avg 11%        16%  small run
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/voxtral-mini-2602.json">Dutch ASR Leaderboard · average W…</a>    8.2%  ▄··▄█···●··▄ beats 5/6    avg 16%        20%  typical
+<a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English short-fo…</a>    7.3%  █··█·█·····● beats 3/3    avg 12%        18%  typical
+<a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-lang…</a>    5.2%  ▄·····●··▄█▄ beats 1/5    avg 7.9%      9.3%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-voxtral-realtime-report"></a><a href="https://arxiv.org/html/2602.11298v1">Voxtral Realtime (lab)</a>               4   68% ▇▇▇▇▇▇▇▇
+<a name="speech-stt-dutch-asr-tvosch-apache"></a><a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/voxtral-mini-2602.json">Dutch ASR Leaderboard</a>                1   20% ▇▇
+<a name="speech-stt-koedesk-ccby"></a><a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk STT Bench v1</a>                 1    9% ▇
+prior: pull toward the middle             3% ▇
+weighted average                        = 59.3
+</pre>
 
 <sub>Licences: Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Dutch ASR Leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt))</sub>
 

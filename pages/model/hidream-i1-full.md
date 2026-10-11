@@ -6,28 +6,58 @@
 
 HiDream · released 2025-04 · 17B params · mit
 
-**score 46.5** ±1.7 · #91 of 144 · from 7 benchmark results across 5 sources
+**score 46.6** ±1.7 · #91 of 144 · from 7 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks HiDream-I1-Full among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  21.2%    47.4   2026-05-14   43% ▇▇▇▇▇
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       64.2%    47.1   2026-07-01   23% ▇▇▇
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   4.2%    44.7   2026-09-28   16% ▇▇
-<a name="paper-2506.10963v2-mmmg-kg"></a>MMMG: A Massive         <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generati…</a>  28.0%    55.0   2025-06-13    9% ▇
-<a name="visual-hidream"></a>HiDream-ai/HiDream-O1…  <a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">DPG-Bench (lab)</a>                 85.9%    48.4   2026-09-25    5% ▇
-                        <a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (EN) (lab)</a>       54.3%    19.3   2026-09-25    3% ▇
-                        <a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (CN) (lab)</a>        2.4%   -52.5   2026-09-25    0% ▇
-prior                   pull toward the middle                   49.9                 1% ▇
-                        weighted average                       = 46.5
+task           vs the others        rank  counts  tests
+text to image  ▂▅▅▃●▄█▃▁▂▁▁   #76 of 126     83%      6
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #76 of 126 · 83% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   21.2%  ▄█▂●▂▂▆▄·▂·▂ beats 7/16   hard · avg 26%          43%  sharp
+<a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>            64.2%  ▅▂█▂●▂····▂▂ beats 10/13  easy · avg 69%          23%  at its level
+<a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generation (…</a>   28.0%  ▃··▃·█▃▃▅··● beats 9/9    hard · avg 24%         8.9%  typical
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">DPG-Bench (lab)</a>                      85.9%  ▄·▂·▂▆●▄▂▄▂▂ beats 8/17   very easy · avg 87%    4.8%  small run
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (EN) (lab)</a>            54.3%  ●·····▅██▅▃▃ beats 0/12   very easy · avg 85%    2.7%  noisy · small run
+<a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">LongText-Bench (CN) (lab)</a>             2.4%  ●·······████ beats 0/12   very easy · avg 88%    0.3%  noisy · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 verifia…</a>    4.2%  ▃·█●▃·▅▃···▃ beats 5/10   very hard · avg 7.6%     16%  sharp · too hard for it
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   43% ▇▇▇▇▇
+<a name="visual-t2i-reasonbench"></a><a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench: Benchmarking Reasoning…</a>        1   23% ▇▇▇
+<a name="visual-vvrbench"></a><a href="https://arxiv.org/html/2609.35641v1#S3.T3">Verifiable Visual Rewards Transfer from…</a>        1   16% ▇▇
+<a name="paper-2506.10963v2-mmmg-kg"></a><a href="https://arxiv.org/html/2506.10963v2">MMMG: A Massive</a>                                 1    9% ▇
+<a name="visual-hidream"></a><a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">HiDream-ai/HiDream-O1-Image repository …</a>        3    8% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 46.6
+</pre>
 
 <sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · HiDream-ai/HiDream-O1-Image repository README results ([MIT](../../licenses/visual-hidream.txt))</sub>
 
@@ -39,14 +69,18 @@ api (fal.ai) · $0.050/image · [fal.ai](https://fal.ai/models/fal-ai/hidream-i1
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~76.4GB   46.5
+bf16 · nvidia only  ~76.4GB   46.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~76.4GB
 git clone https://github.com/HiDream-ai/HiDream-I1 && cd HiDream-I1 && pip install -r requirements.txt && python ./inference.py --model_type full
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hidream-i1-full) · [JSON](https://whatmodel.sh/api?format=json&all=1)

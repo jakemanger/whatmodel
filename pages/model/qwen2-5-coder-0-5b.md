@@ -6,28 +6,55 @@
 
 Alibaba · released 2024-11 · 0.49B params · apache-2.0
 
-**score 37.1** ±1.2 · #756 of 934 · from 9 benchmark results across 2 sources
+**score 37.1** ±1.2 · #771 of 949 · from 9 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Qwen2.5 Coder 0.5B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃●██▇▆▄▃▁   #410 of 469     96%      8
+</pre>
+
+<details><summary>coding · #410 of 469 · 96% of its score</summary>
+
+Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Code Llama 7B Instruct](codellama-7b-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                      61.6%  ●·▄···█··█·▄ beats 0/6    very easy · avg 86%     28%  sharp · at its level
+<a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     57.3%  ●·▄····▄▄·▄█ beats 0/6    easy · avg 82%          21%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   14.3%  ●·▁▂▄▁▆▄█▆▂▂ beats 0/62   medium · avg 54%        16%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           52.4%  ●···███·██·█ beats 0/6    easy · avg 78%          12%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      49.6%  ●·▄····▄▄·▄█ beats 0/6    easy · avg 71%         8.4%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          43.7%  ●····▄▄·▄·█▄ beats 0/6    easy · avg 67%         7.1%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     33.9%  ●·██·█··█·██ beats 0/6    medium · avg 57%       3.3%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     27.8%  ●·█··▄·▄··▄▄ beats 0/6    medium · avg 55%       1.2%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                           result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   11.1%  ●······▄▄█·█ beats 0/6    medium · avg 38%    3.2%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                 61.6%    40.2   2024-11-12   28% ▇▇▇
-                        <a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                57.3%    40.6   2024-11-12   21% ▇▇
-                        <a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                      52.4%    35.1   2024-11-12   12% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                 49.6%    37.5   2024-11-12    8% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                     43.7%    35.0   2024-11-12    7% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   11.1%    26.3   2024-11-12    3% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                33.9%    34.1   2024-11-12    3% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                27.8%    28.3   2024-11-12    1% ▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  14.3%    32.6   2024-10-29   17% ▇▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 37.1
+source                             results  share of the score
+<a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12186v3">Qwen (lab)</a>                               8   83% ▇▇▇▇▇▇▇▇▇▇
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>        1   16% ▇▇
+prior: pull toward the middle                 1% ▇
+weighted average                            = 37.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>
 
@@ -36,18 +63,60 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct/blob/ea3f2471cf1b1f0db85067f1ef93848e38e88c25/README.md): Model card: 'Context Length: Full 32,768 tokens'. Observed 2026-10-10.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~0.398GB   37.1
-4-bit q4_k_m   ~0.49GB   37.1
+download                       size  score
+4-bit q4_k_m               ~0.398GB   37.1
+4-bit q4_k_m                ~0.49GB   37.1
+4-bit mlx-4bit · mac only    ~0.3GB   37.1
+4-bit mlx-8bit · mac only    ~0.5GB   37.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run qwen2.5-coder:0.5b
-# 4-bit q4_k_m
-llama-server -hf Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF:Q4_K_M
+# 4-bit q4_k_m · ~0.49GB
+llama cli -hf Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~0.49GB
+lms get https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~0.3GB
+lms get https://huggingface.co/lmstudio-community/Qwen2.5-Coder-0.5B-Instruct-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~0.5GB
+lms get https://huggingface.co/lmstudio-community/Qwen2.5-Coder-0.5B-Instruct-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~0.398GB
+ollama run qwen2.5-coder:0.5b
+# 4-bit q4_k_m · ~0.49GB
+ollama run hf.co/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF:Q4_K_M
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~0.3GB
+mlx_lm.chat --model lmstudio-community/Qwen2.5-Coder-0.5B-Instruct-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Qwen2.5-Coder-0.5B-Instruct-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~0.5GB
+mlx_lm.chat --model lmstudio-community/Qwen2.5-Coder-0.5B-Instruct-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Qwen2.5-Coder-0.5B-Instruct-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/qwen2-5-coder-0-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,27 +6,45 @@
 
 Amphion (CUHK-Shenzhen) · released 2024-06 · mit
 
-**score 36.5** ±2.9 · #95 of 117 · from 6 benchmark results across 4 sources
+**score 36.3** ±2.9 · #96 of 118 · from 6 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Amphion VALL-E v2 recipe (MLS) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  3.43 / 5    38.1   2025-05-11   64% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.90 / 5    35.0   2025-05-11    6% ▇
-<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  3.65 / 5    38.9   2025-03-27   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>     27.8%   -29.3   2025-03-27    1% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     82.1%    17.0   2025-05-15    4% ▇
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     70.3%   -52.5   2025-04-25    1% ▇
-prior                   pull toward the middle                      49.7                 3% ▇
-                        weighted average                          = 36.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (6)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty             counts  why
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-s…</a>  3.43 / 5  ▅·█▅▅·●▃▃▅·▅ beats 10/17  easy · avg 4.03 / 5       64%  at its level
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>  3.65 / 5  ▄·····▄·●█·▄ beats 2/5    easy · avg 4.11 / 5       21%  at its level
+<a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · naturalne…</a>  2.90 / 5  ▅··▃▅··●█▅██ beats 6/17   medium · avg 3.30 / 5    5.6%  blunt · at its level
+<a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark · E…</a>     82.1%  ▂▂●·▂·█▆▂·▄▂ beats 2/17   very easy · avg 89%      4.1%  blunt
+<a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-factor sc…</a>     70.3%  ●▂····▃·▃▅▂█ beats 0/14   very easy · avg 86%      0.8%  blunt
+<a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech test…</a>     27.8%  ●··········█ beats 0/5    avg 6.4%                 0.6%  blunt · noisy
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                  results  share of the score
+<a name="speech-ttsds2-listening-mit"></a><a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test results</a>                 2   70% ▇▇▇▇▇▇▇▇
+<a name="speech-versa-toolkit-ccby"></a><a href="https://arxiv.org/html/2412.17667v2">VERSA toolkit paper: TTS demonstration</a>        2   22% ▇▇▇
+<a name="speech-ttsds2-multilingual-mit"></a><a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark results</a>         1    4% ▇
+<a name="speech-ttsds-v1-mit"></a><a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 published results</a>                    1    1% ▇
+prior: pull toward the middle                      3% ▇
+weighted average                                 = 36.3
+</pre>
 
 <sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · VERSA toolkit paper: TTS demonstration ([CC BY 4.0](../../licenses/speech-versa-toolkit-ccby.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
 
@@ -34,14 +52,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                needs  score
-fp32 (Amphion repo)  ~2.86GB   36.5
+fp32 (Amphion repo)  ~2.86GB   36.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (Amphion repo)
+# fp32 (Amphion repo) · ~2.86GB
 git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && git checkout 6b1411c7a415af40a775dc940c3b29fc18d37970 && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && pip install -U transformers==4.41.2 && huggingface-cli download amphion/valle valle_ar_mls_196000.bin valle_nar_mls_164000.bin --local-dir ckpts && mkdir -p ckpts/speechtokenizer_hubert_avg && huggingface-cli download amphion/valle SpeechTokenizer.pt config.json --local-dir ckpts/speechtokenizer_hubert_avg && python -c "import librosa, torch, torchaudio; from models.tts.valle_v2.valle_inference import ValleInference; from models.tts.valle_v2.g2p_processor import G2pProcessor; model = ValleInference(ar_path='ckpts/valle_ar_mls_196000.bin', nar_path='ckpts/valle_nar_mls_164000.bin', speechtokenizer_path='ckpts/speechtokenizer_hubert_avg', device='cpu'); wav, _ = librosa.load('./egs/tts/VALLE_V2/example.wav', sr=16000); wav = torch.tensor(wav, dtype=torch.float32); g2p = G2pProcessor(); prompt_transcript = torch.tensor(g2p('and keeping eternity before the eyes', 'en')[1]).long(); target_transcript = torch.tensor(g2p('Hello, world.', 'en')[1]).long(); batch = {'speech': wav.unsqueeze(0), 'phone_ids': torch.cat([prompt_transcript, target_transcript], dim=-1).unsqueeze(0)}; output_wav = model(batch, [dict(top_p=0.9, top_k=5, temperature=0.95, repeat_penalty=1.0, max_length=2000, num_beams=1)]); torchaudio.save('out.wav', output_wav.squeeze(0), 16000)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/amphion-valle-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

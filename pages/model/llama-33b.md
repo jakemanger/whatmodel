@@ -8,44 +8,73 @@ Meta · released 2023-02 · 32.5B params · llama-1-noncommercial-research
 
 **score 36.1** ±0.8 · comparison only: no current run option verified · from 27 benchmark results across 3 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LLaMA 33B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                       25.0%    36.2   2024-01-08    8% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                   54.4%    37.5   2024-01-08    7% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                            56.8%    35.0   2024-01-08    5% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                      76.2%    37.9   2024-01-08    5% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                        68.5%    38.2   2024-01-08    4% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           44.1%    34.4   2024-01-08    4% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                       83.7%    39.2   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                            40.9%    34.3   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  24.1%    37.6   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>                             8.4%    31.8   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                        79.6%    38.1   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                            82.2%    38.5   2024-01-08    1% ▇
-<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                 21.7%    34.3   2023-02-27    7% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                     35.6%    34.6   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                       7.1%    33.2   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>             57.8%    35.8   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                      57.8%    38.2   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                      30.2%    32.8   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                76.0%    35.7   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                     83.1%    36.5   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                58.6%    37.0   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                 82.8%    37.5   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                  80.0%    37.1   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                50.4%    31.6   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                      82.3%    37.6   2023-02-27    1% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  27.3%    35.5   2024-04-24    5% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  48.9%    39.9   2024-04-24    3% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 36.1
+task    vs the others         rank  counts  tests
+coding  ▁▁▁●▅▇█▇▅▄▂▁   #519 of 549     21%      2
+math    ▁▂●▅▇▅▅█▄▁▁▁   #426 of 464     15%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>coding · #519 of 549 · 21% of its score</summary>
+
+Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
+
+<pre>
+test       result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>   25.0%  █···█·●██··█ beats 2/5    easy · avg 66%       14%  sharp · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>        40.9%  ▄··▄·●··█··▄ beats 2/5    medium · avg 63%    6.4%  at its level · several runs
+</pre>
+
+</details>
+
+<details><summary>math · #426 of 464 · 15% of its score</summary>
+
+Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md), [OLMo 2 1B Instruct (0425)](olmo-2-1b.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+
+<pre>
+test   result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>   44.1%  █···█·●█··██ beats 2/5    easy · avg 76%    8.0%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>     8.4%  █·█·●·██···█ beats 2/5    hard · avg 27%    6.8%  several runs
+</pre>
+
+</details>
+
+<details><summary>other tests (13)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                        54.4%  ▄···▄···●▄·▄ beats 2/5    easy · avg 82%          12%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                           76.2%  █··█·█·●█··█ beats 3/5    easy · avg 89%         8.2%  at its level · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                                 56.8%  ▄····▄●·▄··█ beats 2/5    easy · avg 82%         8.1%  at its level · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                            83.7%  █···██···●██ beats 3/5    very easy · avg 92%    6.0%  at its level · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                             68.5%  █···██··●·██ beats 3/5    very easy · avg 86%    4.7%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed book)</a>      24.1%  █·····▄●▄··▄ beats 3/5    medium · avg 51%       4.6%  typical
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   27.3%  ▅····▃▅·█●·█ beats 9/13   medium · avg 59%       4.5%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                             79.6%  ▄···▄···●▄·▄ beats 2/5    very easy · avg 89%    3.8%  at its level · several runs
+<a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                          83.1%  ▁▄▅▆▂▆▄▄█●▄▄ beats 46/58  very easy · avg 93%    3.1%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   48.9%  ▃▅▃··▅▃·█▃●▅ beats 11/13  easy · avg 67%         3.1%  at its level
+<a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                     58.6%  █▁▁▁▄▃▃▇●▁▄▂ beats 53/65  easy · avg 80%         2.7%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                                 82.2%  ▄····▄··●▄·▄ beats 3/5    easy · avg 88%         2.4%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                     50.4%  ▂·▂██▅●▁▂▃▆▁ beats 32/51  medium · avg 65%       1.4%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="paper-mixtral-2401.04088v1"></a><a href="https://arxiv.org/html/2401.04088v1#S3.T2">Mixtral of Experts</a>                             12   52% ▇▇▇▇▇▇
+<a name="paper-2302.13971v1"></a><a href="https://arxiv.org/html/2302.13971v1">LLaMA: Open and Efficient Foundation La…</a>       13   40% ▇▇▇▇▇
+<a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    8% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 36.1
+</pre>
 
 <sub>Licences: Mixtral of Experts ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · LLaMA: Open and Efficient Foundation Language Models ([CC BY 4.0](../../licenses/paper-2302.13971v1-CC-BY-4.0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

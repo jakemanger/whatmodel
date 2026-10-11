@@ -6,22 +6,46 @@
 
 AI Forever · released 2023-11 · 3B params · apache-2.0
 
-**score 48.3** ±10.5 · #86 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.4** ±10.5 · #86 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Kandinsky 3 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2502.10663v1-real"></a>REAL: Realism Evaluat…  <a href="https://arxiv.org/html/2502.10663v1">REAL realism benchmark for T2…</a>  63.2%    46.9   2025-02-15   54% ▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                46% ▇▇▇▇▇▇
-                        weighted average                       = 48.3
+task           vs the others         rank  counts  tests
+text to image  ▂▅▅▃●▄█▃▁▂▁▁   #72 of 126*     54%      7
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #72 of 126 · 54% of its score</summary>
+
+Beats [Lucid Origin](lucid-origin.md), [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2502.10663v1">REAL realism benchmark for T2I (a…</a>   63.2%  █··········● beats 2/2    easy · avg 65%     54%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · text alignment wi…</a>   52.0%  no other model yet                             —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · text alignment wi…</a>   36.0%  no other model yet                             —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · text alignment wi…</a>   53.0%  no other model yet                             —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · visual quality wi…</a>   50.0%  no other model yet                             —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · visual quality wi…</a>   42.0%  no other model yet                             —  not counted yet: no other model in the …
+<a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · visual quality wi…</a>   57.0%  no other model yet                             —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="paper-2502.10663v1-real"></a><a href="https://arxiv.org/html/2502.10663v1">REAL: Realism Evaluation of Text-to-Ima…</a>        1   54% ▇▇▇▇▇▇
+prior: pull toward the middle                       46% ▇▇▇▇▇▇
+weighted average                                   = 48.4
+</pre>
 
 <sub>Licences: REAL: Realism Evaluation of Text-to-Image Generation Models for Effective Data Augmentation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -43,14 +67,18 @@ Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · vi
 
 <pre>
 version             needs  score
-fp16 · nvidia only  ~32GB   48.3
+fp16 · nvidia only  ~32GB   48.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~32GB
 uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-3', torch_dtype=torch.float16, variant='fp16').to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/kandinsky-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

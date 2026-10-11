@@ -8,18 +8,36 @@ Lightricks · released 2026-01 · 19B params · ltx-2-community
 
 **score 47.0** ±7.7 · #59 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LTX-2 19B Distilled among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  42.4%    46.0   2026-08-10   75% ▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                25% ▇▇▇
-                        weighted average                       = 47.0
+task           vs the others        rank  counts  tests
+text to video  ▆▄▃▄●▅█▃▂▂▂▄   #38 of 68*     75%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #38 of 68 · 75% of its score</summary>
+
+Beats [Wan 2.2 TI2V 5B](wan-2-2-5b.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert human…</a>   42.4%  ▅·●█▃·▅▃▅▃▃▃ beats 2/14   hard · avg 44%     75%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-scivbench"></a><a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench: Evaluating Knowledge- and R…</a>        1   75% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       25% ▇▇▇
+weighted average                                   = 47.0
+</pre>
 
 <sub>Licences: Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
 
@@ -35,13 +53,17 @@ Draw Things q6p · mac only        ~40.9GB   47.0
 bf16 MLX (mlx-video) · mac only  ~110.4GB   47.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# Draw Things q6p · mac only
+# Draw Things q6p · mac only · ~40.9GB
 brew install draw-things-cli && draw-things-cli generate --model ltx_2_19b_distilled_q6p.ckpt --prompt "Ocean waves at sunset" --frames 49 --seed 42 --video-format h264 --output clip.mp4
-# bf16 MLX (mlx-video) · mac only
+# bf16 MLX (mlx-video) · mac only · ~110.4GB
 pip install git+https://github.com/Blaizzy/mlx-video.git@87db56a51758fefb748a359b90a5283bb8ba4837 && mlx_video.ltx_2.generate --prompt "Two dogs wearing sunglasses, cinematic, sunset" -n 97 --width 768 --model-repo prince-canuma/LTX-2-distilled
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ltx-2-19b-distilled) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,22 +6,48 @@
 
 Nous Research · released 2024-06 · 70.55B params · llama3
 
-**score 47.9** ±1.9 · #491 of 934 · from 3 benchmark results across 1 source
+**score 47.7** ±1.9 · #501 of 949 · from 3 benchmark results across 1 source
+
+## What it's good at
+
+<sub>● marks Hermes 2 Theta Llama-3 70B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others          rank  counts  tests
+math  ▁▂▃●▆▅▄█▄▁▁▁   #316 of 400*     67%      2
+</pre>
+
+<details><summary>math · #316 of 400 · 67% of its score</summary>
+
+Beats [Athene-70B](athene-70b.md), [OLMo 2 32B Instruct (0325)](olmo-2-32b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
+
+<pre>
+test                      result  vs the others in its run   difficulty            counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               22.7%  ▂▂▅●▄█▆▃▅▂▃▄ beats 19/92   hard · avg 32%           60%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 18/193  very hard · avg 8.5%    6.9%  sharp · too hard for it · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test          result  vs the others in its run   difficulty      counts  why
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>   37.5%  ▁▁▁▁▂●▆▄▅▇█▅ beats 32/208  hard · avg 40%     32%  sharp
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              22.7%    47.7   2025-01-27   59% ▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              37.5%    48.6   2025-01-27   32% ▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   2.5%    45.2   2025-04-01    7% ▇
-prior     pull toward the middle             50.0                 2% ▇
-          weighted average                 = 47.9
+source                         results  share of the score
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                             3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             2% ▇
+weighted average                        = 47.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -31,14 +57,35 @@ prior     pull toward the middle             50.0                 2% ▇
 
 <pre>
 download               size  score
-4-bit gguf-q4_k_m  ~42.83GB   47.9
+4-bit gguf-q4_k_m  ~42.83GB   47.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit gguf-q4_k_m
-llama-server -hf NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF:Q4_K_M
+# 4-bit gguf-q4_k_m · ~42.83GB
+llama cli -hf NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF:Q4_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit gguf-q4_k_m · ~42.83GB
+lms get https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit gguf-q4_k_m · ~42.83GB
+ollama run hf.co/NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF:Q4_K_M
+```
 
 [interactive version](https://whatmodel.sh/model/hermes-2-theta-llama-3-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

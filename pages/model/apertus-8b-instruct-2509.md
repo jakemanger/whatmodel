@@ -6,24 +6,54 @@
 
 Swiss AI · released 2025-08 · 8.05B params · apache-2.0
 
-**score 45.5** ±4.6 · #569 of 934 · from 3 benchmark results across 2 sources
+**score 38.1** ±3.6 · #753 of 949 · from 5 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Apertus 8B Instruct (2509) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task  vs the others          rank  counts  tests
+math  ▁▂●▅▆▅▄█▄▁▁▁   #369 of 400*     48%      2
+</pre>
+
+<details><summary>math · #369 of 400 · 48% of its score</summary>
+
+Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md), [OLMo 2 1B Instruct (0425)](olmo-2-1b.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+
+<pre>
+test                         result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>     21.9%  ●█····██·███ beats 0/6    easy · avg 71%     29%  at its level · noisy
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>    5.0%  ●···▄·▄·▄··█ beats 0/6    hard · avg 20%     19%  typical
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   80.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 68/146  easy · avg 83%          18%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   58.1%  ▃·▁▁▂▁▂●█▇▄▁ beats 31/100  medium · avg 68%        17%  at its level · noisy
+<a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>    7.7%  ●▁▃▂▂▄▁▃▄▄▄█ beats 0/38    very hard · avg 14%     11%  too hard for it
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  58.1%    45.3   2026-04-17   38% ▇▇▇▇▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  80.3%    48.2   2026-04-17   26% ▇▇▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   7.7%    41.7   2026-09-22   27% ▇▇▇
-prior                   pull toward the middle                   50.0                 9% ▇
-                        weighted average                       = 45.5
+source                                 results  share of the score
+<a name="card2-allenai-olmo-3-7b-instruct"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">allenai/Olmo-3-7B-Instruct model card</a>        2   48% ▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                        2   36% ▇▇▇▇
+<a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>            1   11% ▇
+prior: pull toward the middle                     6% ▇
+weighted average                                = 38.1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
+<sub>Licences: allenai/Olmo-3-7B-Instruct model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Instruct.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -31,17 +61,66 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~16.11GB   45.5
-4-bit mlx-4bit · mac only   ~4.53GB   45.5
+16-bit bf16 · nvidia only  ~16.11GB   38.1
+4-bit mlx-4bit · mac only   ~4.53GB   38.1
+4-bit Q4_K_M                 ~5.1GB   38.1
+8-bit Q8_0                   ~8.6GB   38.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16 · nvidia only
-vllm serve swiss-ai/Apertus-8B-Instruct-2509
-# 4-bit mlx-4bit · mac only
-uvx --from mlx-lm mlx_lm.chat --model mlx-community/Apertus-8B-Instruct-2509-4bit
+# 4-bit Q4_K_M · ~5.1GB
+llama cli -hf unsloth/Apertus-8B-Instruct-2509-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Apertus-8B-Instruct-2509-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.6GB
+llama cli -hf unsloth/Apertus-8B-Instruct-2509-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/Apertus-8B-Instruct-2509-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.53GB
+lms get https://huggingface.co/mlx-community/Apertus-8B-Instruct-2509-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit Q4_K_M · ~5.1GB
+lms get https://huggingface.co/unsloth/Apertus-8B-Instruct-2509-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~8.6GB
+lms get https://huggingface.co/unsloth/Apertus-8B-Instruct-2509-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~5.1GB
+ollama run hf.co/unsloth/Apertus-8B-Instruct-2509-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~8.6GB
+ollama run hf.co/unsloth/Apertus-8B-Instruct-2509-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.53GB
+mlx_lm.chat --model mlx-community/Apertus-8B-Instruct-2509-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Apertus-8B-Instruct-2509-4bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · nvidia only · ~16.11GB
+vllm serve swiss-ai/Apertus-8B-Instruct-2509
+```
 
 [interactive version](https://whatmodel.sh/model/apertus-8b-instruct-2509) · [JSON](https://whatmodel.sh/api?format=json&all=1)

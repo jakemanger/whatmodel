@@ -10,22 +10,49 @@ NVIDIA · released 2026-05 · 64B params · openmdw-1.1
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Cosmos3-Super-Text2Image among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                              score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            1151.8    63.1   2026-09-24   82% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>    91.4%    70.1   2026-06-23   10% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 repor…</a>  11.6000    63.2   2026-06-23    5% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese char…</a>    41.2%    11.7   2026-06-23    1% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-…</a>    89.1%   173.8   2026-06-23    0% ▇
-prior                   pull toward the middle                     49.9                 2% ▇
-                        weighted average                         = 62.8
+task           vs the others        rank  counts  tests
+text to image  ▂▅▅▃▄▄●▃▁▂▁▁   #31 of 126     88%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #31 of 126 · 88% of its score</summary>
+
+Beats [Wan 2.7 Image Pro](wan-2-7-image-pro.md) here, though they rank higher overall. Trails [ERNIE-Image](ernie-image.md), [Nano Banana (Gemini 2.5 Flash Image)](nano-banana.md), [FLUX.2 \[flex\]](flux-2-flex.md) here, though they rank lower overall.
+
+<pre>
+test                                 result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>                1151.6  ▂▂▃▄▇●▄▂▄▂·▂ beats 46/75  avg 1027             82%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 report te…</a>  11.6000  ▄···█··●·▄·▄ beats 3/5    avg 11.076          5.1%  blunt
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese characte…</a>    41.2%  ●·······▄█▄▄ beats 0/5    medium · avg 60%    1.3%  blunt · at its level · noisy
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-prom…</a>    89.1%  █······███●█ beats 4/5    easy · avg 85%      0.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI prompts…</a>   91.4%  ▄···█··▄···● beats 5/5    easy · avg 78%     10%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T11">Cosmos 3: Omnimodal World Models for Ph…</a>        4   16% ▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 62.8
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -36,11 +63,15 @@ version                needs  score
 bf16 · nvidia only  ~154.1GB   62.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~154.1GB
 uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with torchvision --with av --with imageio --with imageio-ffmpeg --with cosmos_guardrail python -c "import torch; from diffusers import Cosmos3OmniPipeline; from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler; p=Cosmos3OmniPipeline.from_pretrained('nvidia/Cosmos3-Super-Text2Image', torch_dtype=torch.bfloat16, device_map='cuda', enable_safety_checker=True); p.scheduler=UniPCMultistepScheduler.from_config(p.scheduler.config, flow_shift=3.0); p(prompt='a cat holding a sign', negative_prompt='', num_frames=1, height=1024, width=1024, num_inference_steps=50, guidance_scale=4.0).video[0].save('out.png')"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cosmos3-super-text2image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

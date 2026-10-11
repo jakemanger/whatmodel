@@ -6,47 +6,139 @@
 
 Microsoft · released 2023-07 · 13B params · llama2
 
-**score 35.3** ±1.2 · #786 of 934 · from 13 benchmark results across 4 sources
+**score 35.8** ±1.1 · #792 of 949 · from 14 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks WizardLM 13B V1.2 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃●██▇▆▄▃▁    #372 of 469    4.6%      4
+chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂    #404 of 466     51%      4
+math            ▁▂●▅▆▅▄█▄▁▁▁   #367 of 400*    7.6%      1
+</pre>
+
+<details><summary>coding · #372 of 469 · 4.6% of its score</summary>
+
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    4.6%  ▃··●▂▂▃▂█▃▄▂ beats 5/47   medium · avg 54%    1.8%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   22.9%  ▁▁▁▁▁▁▂▂●█▅▄ beats 15/47  hard · avg 33%      1.6%  typical
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.1%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 0/47   medium · avg 36%    1.2%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   65.1%  ▁▁▁······▁●█ beats 12/47  easy · avg 67%      0.1%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #404 of 466 · 51% of its score</summary>
+
+Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       14.5%  ▁▂▂▃●▆█▆▄▄▁▁ beats 35/122  medium · avg 39%        22%  typical
+<a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1083.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 39/95   avg 1201                12%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1149.5  ▁▁▁▂●▃▃▆▆▇█▃ beats 39/379  avg 1268                12%  blunt
+<a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   89.2%  ▂▂·▆·▇▃▆●▆▄▂ beats 29/45   very easy · avg 96%    5.2%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>math · #367 of 400 · 7.6% of its score</summary>
+
+Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md), [OLMo 2 1B Instruct (0425)](olmo-2-1b.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
+
+<pre>
+test   result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>   48.6%  ▂▂▂▅▅●▅▇█▇▄▃ beats 43/146  easy · avg 82%    7.6%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test             result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>    38.5%  ▁▁▁▁▂●▅▅█▃▄▁ beats 22/129  medium · avg 68%     12%  sharp
+<a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>     50.4%  ▆▁▁▂▂▅▇●▄▃▃▂ beats 59/97   easy · avg 86%       10%  sharp · at its level
+<a href="https://arxiv.org/html/2311.11045v2">MMLU</a>              42.8%  ▁▁▁▁▁▂●▅█▃▆▃ beats 22/183  easy · avg 74%      6.5%  at its level
+<a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>   38.3%  ●▄▄··▄··▄█·█ beats 0/9     easy · avg 69%      5.8%  at its level
+<a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>          69.0%  ▁▂▃▂▃▅▇█●▆▄▆ beats 39/65   easy · avg 88%      3.0%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                   38.5%    34.5   2023-11-21   14% ▇▇
-                        <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                    50.4%    31.6   2023-11-21   11% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                            48.6%    36.5   2023-11-21    9% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                             42.8%    31.0   2023-11-21    8% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                  38.3%    33.4   2023-11-21    6% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                         69.0%    26.2   2023-11-21    3% ▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   14.5%    38.4   2025-08-09   24% ▇▇▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>   89.2%    40.6   2025-08-09    6% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1149.5    35.9   2026-10-02   13% ▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>    4.6%    29.0   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   22.9%    43.9   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>    0.1%    27.5   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   65.1%    46.7   2025-05-31    0% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 35.3
+source                                    results  share of the score
+<a name="paper-2311.11045v2"></a><a href="https://arxiv.org/html/2311.11045v2">Orca 2: Teaching Small Language Models …</a>        6   44% ▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>             2   27% ▇▇▇
+<a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   12% ▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   12% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    5% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 35.8
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Orca 2: Teaching Small Language Models How to Reason ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Orca 2: Teaching Small Language Models How to Reason ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
-download        size  score
-4-bit fp16  ~26.03GB   35.3
+download          size  score
+4-bit fp16    ~26.03GB   35.8
+4-bit Q4_K_M    ~7.9GB   35.8
+8-bit Q8_0     ~13.8GB   35.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='WizardLMTeam/WizardLM-13B-V1.2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~7.9GB
+llama cli -hf TheBloke/WizardLM-13B-V1.2-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/WizardLM-13B-V1.2-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+llama cli -hf TheBloke/WizardLM-13B-V1.2-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/WizardLM-13B-V1.2-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~7.9GB
+lms get https://huggingface.co/TheBloke/WizardLM-13B-V1.2-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~13.8GB
+lms get https://huggingface.co/TheBloke/WizardLM-13B-V1.2-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~7.9GB
+ollama run hf.co/TheBloke/WizardLM-13B-V1.2-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+ollama run hf.co/TheBloke/WizardLM-13B-V1.2-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp16 · ~26.03GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='WizardLMTeam/WizardLM-13B-V1.2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/wizardlm-13b-v1-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

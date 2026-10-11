@@ -6,50 +6,132 @@
 
 TII · released 2023-05 · 41.8B params · apache-2.0
 
-**score 34.0** ±1.3 · #801 of 934 · from 11 benchmark results across 4 sources
+**score 34.8** ±1.2 · #805 of 949 · from 13 benchmark results across 5 sources
+
+## What it's good at
+
+<sub>● marks Falcon 40B (base) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁●▆██▇▆▄▃▁   #444 of 469*     17%      2
+math    ▁▂●▅▆▅▄█▄▁▁▁   #374 of 400*    7.2%      1
+</pre>
+
+<details><summary>coding · #444 of 469 · 17% of its score</summary>
+
+Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
+
+<pre>
+test       result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>   24.4%  ▁▁▁▁▁●▅▅█▃▂▁ beats 25/190  easy · avg 71%     11%  sharp · at its level
+<a href="https://arxiv.org/html/2404.06395v3">MBPP</a>        36.5%  ▁▁▁●▅█▄▅▃▁▂▁ beats 10/81   easy · avg 70%    6.3%  at its level
+</pre>
+
+</details>
+
+<details><summary>math · #374 of 400 · 7.2% of its score</summary>
+
+Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
+
+<pre>
+test   result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>   22.4%  ▂▂●▅▅▆▅▇█▇▄▃ beats 13/146  easy · avg 74%    7.2%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (10)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b/results_2024-01-10%2008%3A05%3A28.458205.json">Natural Questions (closed book)</a>      32.0%  ▁·▁·▁▂▁▂·▅▂● beats 27/28   medium · avg 58%     18%  at its level
+<a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       36.2%  ▁▁▁▁▂●▅▅█▃▄▁ beats 17/129  medium · avg 68%     16%  sharp
+<a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                        57.7%  ▆▁▁▂▂▅▇●▄▃▃▂ beats 68/97   easy · avg 88%       11%  sharp · at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   26.6%  ▅····▃▅·█●·█ beats 8/13    medium · avg 59%    9.0%  at its level
+<a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                                 53.5%  ▁▁▁▁▁▂▃●█▃▆▃ beats 47/183  easy · avg 80%      7.6%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   42.3%  ▃▅▃··▅▃·●▃▃▅ beats 9/13    easy · avg 67%      6.4%  at its level
+<a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               40.3%  ▁···▁▁●▁▂▂▃█ beats 3/33    medium · avg 62%    2.8%  noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   60.3%  ▃▁▁▁▁▁▁▁●█▅▁ beats 91/276  medium · avg 73%    2.3%  at its level · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b/results_2024-01-11%2018%3A15%3A47.309861.json">TruthfulQA MC2</a>                       41.6%  ▅▃●▆▁▂▅···▁▁ beats 12/31   medium · avg 64%    1.0%  blunt · at its level
+<a href="https://arxiv.org/html/2410.14897v1">COPA</a>                                 84.4%  ▅·▃·▃··●▃··▃ beats 5/8     easy · avg 92%      0.7%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  36.2%    32.5   2024-06-03   19% ▇▇
-                        <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   57.7%    34.2   2024-06-03   14% ▇▇
-                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       24.4%    33.6   2024-06-03   13% ▇▇
-                        <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           22.4%    29.9   2024-06-03    9% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            53.5%    35.3   2024-06-03    9% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            36.5%    32.4   2024-06-03    8% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          40.3%    35.0   2024-06-03    3% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  26.6%    35.3   2024-04-24   12% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  42.3%    36.0   2024-04-24    8% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  60.3%    41.5   2024-02-05    3% ▇
-<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            84.4%    36.7   2024-10-18    1% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 34.0
+source                                    results  share of the score
+<a name="paper-2404.06395v3"></a><a href="https://arxiv.org/html/2404.06395v3">MiniCPM: Unveiling the Potential of Sma…</a>        7   62% ▇▇▇▇▇▇▇
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b/results_2024-01-10%2008%3A05%3A28.458205.json">Hallucinations Leaderboard results</a>              2   19% ▇▇
+<a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2   15% ▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
+<a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 34.8
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/tiiuae/falcon-40b/blob/05ab2ee8d6b593bdbab17d728de5c028a7a94d83/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
 
 <pre>
-download         size  score
-4-bit q4_0      ~24GB   34.0
-16-bit bf16  ~83.67GB   34.0
+download          size  score
+4-bit q4_0       ~24GB   34.8
+16-bit bf16   ~83.67GB   34.8
+4-bit Q4_K_M   ~25.5GB   34.8
+8-bit Q8_0     ~44.5GB   34.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_0
-ollama run falcon:40b-text
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-40b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~25.5GB
+llama cli -hf mradermacher/falcon-40b-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/falcon-40b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~44.5GB
+llama cli -hf mradermacher/falcon-40b-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf mradermacher/falcon-40b-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~25.5GB
+lms get https://huggingface.co/mradermacher/falcon-40b-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~44.5GB
+lms get https://huggingface.co/mradermacher/falcon-40b-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_0 · ~24GB
+ollama run falcon:40b-text
+# 4-bit Q4_K_M · ~25.5GB
+ollama run hf.co/mradermacher/falcon-40b-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~44.5GB
+ollama run hf.co/mradermacher/falcon-40b-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~83.67GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-40b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/falcon-40b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

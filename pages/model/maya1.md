@@ -6,22 +6,37 @@
 
 Maya Research · released 2025-11 · 3.3B params · apache-2.0
 
-**score 37.9** ±6.2 · #89 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.7** ±6.2 · #90 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Maya1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-tts-deepfake-age-ccby"></a>Audio Deepfake Detect…  <a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-lar…</a>  11.2%    35.7   2026-01-28   85% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.7                15% ▇▇
-                        weighted average                       = 37.9
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-large W…</a>   11.2%  ●··········█ beats 0/2    avg 4.3%       85%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-tts-deepfake-age-ccby"></a><a href="https://arxiv.org/html/2601.20510v1">Audio Deepfake Detection in the Age of …</a>        1   85% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       15% ▇▇
+weighted average                                   = 37.7
+</pre>
 
 <sub>Licences: Audio Deepfake Detection in the Age of Advanced Text-to-Speech models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -29,17 +44,21 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                       needs  score
-bf16 · nvidia only          ~8.42GB   37.9
-bf16 (transformers + snac)  ~6.71GB   37.9
+bf16 · nvidia only          ~8.42GB   37.7
+bf16 (transformers + snac)  ~6.71GB   37.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~8.42GB
 pip install vllm snac soundfile && wget https://huggingface.co/maya-research/maya1/resolve/main/vllm_streaming_inference.py && python vllm_streaming_inference.py
-# bf16 (transformers + snac)
+# bf16 (transformers + snac) · ~6.71GB
 pip install torch transformers snac soundfile accelerate && python -c "import torch, soundfile as sf; from transformers import AutoModelForCausalLM, AutoTokenizer; from snac import SNAC; model = AutoModelForCausalLM.from_pretrained('maya-research/maya1', torch_dtype=torch.bfloat16, device_map='auto', trust_remote_code=True); tokenizer = AutoTokenizer.from_pretrained('maya-research/maya1', trust_remote_code=True); device = 'cuda' if torch.cuda.is_available() else 'cpu'; snac_model = SNAC.from_pretrained('hubertsiuzdak/snac_24khz').eval().to(device); description = 'Realistic male voice in the 30s age with american accent. Normal pitch, warm timbre, conversational pacing.'; text = 'Hello! This is Maya1 <laugh_harder> the best open source voice AI model with emotions.'; prompt = tokenizer.decode([128259]) + tokenizer.bos_token + f'<description=\"{description}\"> {text}' + tokenizer.decode([128009]) + tokenizer.decode([128260]) + tokenizer.decode([128261]) + tokenizer.decode([128257]); inputs = {k: v.to(device) for k, v in tokenizer(prompt, return_tensors='pt').items()}; outputs = model.generate(**inputs, max_new_tokens=2048, min_new_tokens=28, temperature=0.4, top_p=0.9, repetition_penalty=1.1, do_sample=True, eos_token_id=128258, pad_token_id=tokenizer.pad_token_id); ids = outputs[0, inputs['input_ids'].shape[1]:].tolist(); ids = ids[:ids.index(128258)] if 128258 in ids else ids; codes = [t for t in ids if 128266 <= t <= 156937]; n = len(codes) // 7; levels = [[(codes[7*i] - 128266) % 4096 for i in range(n)], [(codes[7*i+j] - 128266) % 4096 for i in range(n) for j in (1, 4)], [(codes[7*i+j] - 128266) % 4096 for i in range(n) for j in (2, 3, 5, 6)]]; z_q = snac_model.quantizer.from_codes([torch.tensor(l, dtype=torch.long, device=device).unsqueeze(0) for l in levels]); audio = snac_model.decoder(z_q)[0, 0].detach().cpu().numpy(); audio = audio[2048:] if len(audio) > 2048 else audio; sf.write('output.wav', audio, 24000)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/maya1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

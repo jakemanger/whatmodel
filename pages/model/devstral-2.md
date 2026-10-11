@@ -6,24 +6,63 @@
 
 Mistral · released 2025-12 · 123B params · modified-mit
 
-**score 62.3** ±1.7 · #181 of 934 · from 5 benchmark results across 3 sources
+**score 62.2** ±1.7 · #189 of 949 · from 5 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Devstral 2 (2512) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others         rank  counts  tests
+agent tasks  █··········●       #1 of 2     37%      3
+coding       ▁▁▁▃▆██●▆▄▃▁   #181 of 469     69%      3
+</pre>
+
+<details><summary>agent tasks · #1 of 2 · 37% of its score</summary>
+
+<pre>
+test                          result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 85/131  hard · avg 32%          15%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>       32.6%  ▂▂▅●████▆▂▃▃ beats 7/36    very hard · avg 11%     13%  at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   61.3%  ▁··▁▃▂▅●█▃▃▁ beats 21/60   hard · avg 30%          10%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>coding · #181 of 469 · 69% of its score</summary>
+
+Beats [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [OpenThinker 32B](openthinker-32b.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
+
+<pre>
+test                          result  vs the others in its run   difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1196.1  ▁●▄▃▅█▄▇▆▄▁▁ beats 5/119   avg 981            44%  sharp
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 85/131  hard · avg 32%     15%  sharp · at its level · small run
+<a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   61.3%  ▁··▁▃▂▅●█▃▃▁ beats 21/60   hard · avg 30%     10%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   43.0%  ▅··▃▅·●·▃██▃ beats 7/15   hard · avg 24%     17%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1196.1    59.6   2026-10-01   43% ▇▇▇▇▇
-<a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a>mistralai/Devstral-Sm…  <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>         72.2%    65.8   2026-09-25   16% ▇▇
-                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>         32.6%    64.4   2026-09-25   12% ▇
-                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>     61.3%    65.8   2026-09-25   10% ▇
-<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>   43.0%    63.3   2026-08-31   18% ▇▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 62.3
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   44% ▇▇▇▇▇
+<a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24B-Instruct…</a>        3   37% ▇▇▇▇
+<a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1   17% ▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 62.2
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Devstral-Small-2-24B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt))</sub>
 
@@ -32,18 +71,69 @@ prior                   pull toward the middle                    50.0          
 <sub>[context source](https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512/blob/1613bf01adb5e1c6fdc196b46e6b173eae75eb4a/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m   ~74.3GB   62.3
-8-bit q8_0    ~148.1GB   62.3
+download                       size  score
+4-bit q4_k_m                ~74.3GB   62.2
+8-bit q8_0                 ~148.1GB   62.2
+4-bit Q4_K_M                ~74.9GB   62.2
+8-bit Q8_0                 ~132.9GB   62.2
+4-bit mlx-4bit · mac only   ~70.3GB   62.2
+4-bit mlx-8bit · mac only  ~132.8GB   62.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
+# 4-bit Q4_K_M · ~74.9GB
+llama cli -hf lmstudio-community/Devstral-2-123B-Instruct-2512-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Devstral-2-123B-Instruct-2512-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~132.9GB
+llama cli -hf lmstudio-community/Devstral-2-123B-Instruct-2512-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/Devstral-2-123B-Instruct-2512-GGUF:Q8_0
+```
+
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~74.9GB
+lms get https://huggingface.co/lmstudio-community/Devstral-2-123B-Instruct-2512-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~132.9GB
+lms get https://huggingface.co/lmstudio-community/Devstral-2-123B-Instruct-2512-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~70.3GB
+lms get https://huggingface.co/mlx-community/Devstral-2-123B-Instruct-2512-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~132.8GB
+lms get https://huggingface.co/mlx-community/Devstral-2-123B-Instruct-2512-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~74.3GB
 ollama run devstral-2:123b-instruct-2512-q4_K_M
-# 8-bit q8_0
+# 8-bit q8_0 · ~148.1GB
 ollama run devstral-2:123b-instruct-2512-q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~70.3GB
+mlx_lm.chat --model mlx-community/Devstral-2-123B-Instruct-2512-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Devstral-2-123B-Instruct-2512-4bit
+# 4-bit mlx-8bit · mac only · ~132.8GB
+mlx_lm.chat --model mlx-community/Devstral-2-123B-Instruct-2512-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Devstral-2-123B-Instruct-2512-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/devstral-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

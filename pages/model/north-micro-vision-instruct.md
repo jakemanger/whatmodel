@@ -6,32 +6,69 @@
 
 Cohere · released 2026-08 · 2.4B params · apache-2.0
 
-**score 40.9** ±1.8 · #685 of 934 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 40.7** ±1.9 · #699 of 949 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks North Micro Vision Instruct (2.4B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+chat &amp; writing      ▁▁▁▄▆▅●█▆▆▆▂   #275 of 466*    6.8%      1
+vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄    #138 of 150     56%      9
+</pre>
+
+<details><summary>chat &amp; writing · #275 of 466 · 6.8% of its score</summary>
+
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">IFEval (aggregation unspecified) …</a>   74.9%  ▄···▄█●····▄ beats 4/5    easy · avg 79%    6.8%  at its level
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #138 of 150 · 56% of its score</summary>
+
+Beats [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Gemma 3 4B](gemma-3-4b.md), [CogVLM2 Llama3 Chat 19B](cogvlm2-llama3-chat-19b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions (la…</a>   60.0%  ●·▄·······▄█ beats 1/5    easy · avg 78%          19%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar (lab)</a>                         51.8%  ▄▄●█·······▄ beats 2/5    medium · avg 62%        12%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1 (lab)</a>            68.7%  ●·····▃··▃·▃ beats 0/5    easy · avg 79%         7.6%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench (lab)</a>                 61.5%  ▄▄·●·····█·▄ beats 2/5    medium · avg 65%       6.1%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench (lab)</a>                     72.5%  ▄··▄··●··▄·▄ beats 2/5    very easy · avg 86%    3.4%  noisy
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA (lab)</a>                    62.2%  ▄···█··●▄··▄ beats 3/5    easy · avg 69%         3.2%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">OCRBench (lab)</a>                       79.2%  █··███·●···█ beats 4/5    easy · avg 81%         2.4%  blunt
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test (lab)</a>                      77.5%  █···▄▄···●·▄ beats 4/5    easy · avg 82%         1.6%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">ChartQA (lab)</a>                        80.8%  ▄······▄··█● beats 4/5    easy · avg 80%         1.0%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU (lab)</a>                           50.4%  ▄·····●▄··▄█ beats 1/5    medium · avg 70%     15%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU-Pro (lab)</a>                       30.7%  █●·······▄▄▄ beats 2/5    medium · avg 50%     14%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified…</a>   37.3%  ▄·●··█▄····▄ beats 1/5    medium · avg 58%    6.4%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card2-coherelabs-north-micro-vision-instruct"></a>CohereLabs/North-Micr…  <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions…</a>  60.0%    39.8   2026-08-10   18% ▇▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU (lab)</a>                      50.4%    39.4   2026-08-10   14% ▇▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU-Pro (lab)</a>                  30.7%    38.8   2026-08-10   14% ▇▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar (lab)</a>                    51.8%    42.2   2026-08-10   12% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspeci…</a>  37.3%    37.6   2026-08-10    9% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1 (lab)</a>       68.7%    39.4   2026-08-10    7% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">IFEval (aggregation unspecifi…</a>  74.9%    47.0   2026-08-10    6% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench (lab)</a>            61.5%    47.5   2026-08-10    6% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench (lab)</a>                72.5%    36.8   2026-08-10    3% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA (lab)</a>               62.2%    42.0   2026-08-10    3% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">OCRBench (lab)</a>                  79.2%    46.3   2026-08-10    2% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test (lab)</a>                 77.5%    37.0   2026-08-10    2% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">ChartQA (lab)</a>                   80.8%    50.4   2026-08-10    1% ▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 40.9
+source                                    results  share of the score
+<a name="card2-coherelabs-north-micro-vision-instruct"></a><a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CohereLabs/North-Micro-Vision-Instruct …</a>       13   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 40.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: CohereLabs/North-Micro-Vision-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
@@ -41,14 +78,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-4-bit mlx-4bit · mac only  ~2.17GB   40.9
+4-bit mlx-4bit · mac only  ~2.17GB   40.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit mlx-4bit · mac only
+# 4-bit mlx-4bit · mac only · ~2.17GB
 pip install -U "mlx-vlm @ git+https://github.com/Blaizzy/mlx-vlm.git" && mlx_vlm.generate --model mlx-community/North-Micro-Vision-Instruct-4bit --image /path/to/image.jpg --prompt "Describe this image." --max-tokens 512 --temperature 0.0
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/north-micro-vision-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

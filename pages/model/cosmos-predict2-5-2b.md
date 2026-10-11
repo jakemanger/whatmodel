@@ -6,25 +6,65 @@
 
 NVIDIA · released 2025-10 · 2B params · nvidia-open-model-license
 
-**score 48.5** ±2.4 · comparison only: no current run option verified · from 6 benchmark results across 4 sources
+**score 48.4** ±2.4 · comparison only: no current run option verified · from 6 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Cosmos-Predict2.5-2B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others        rank  counts  tests
+text to video   ▇▅▄▆●▆▇▂▃▃▂▄   #51 of 94*     22%      1
+image to video  ▁▁▂▂●█▄▃▃▄▂▂    #50 of 74     69%      4
+</pre>
+
+<details><summary>text to video · #51 of 94 · 22% of its score</summary>
+
+Trails [Hailuo 01 (MiniMax video-01 / I2V-01)](hailuo-01.md), [Cosmos-1.0-Diffusion-7B-Text2World](cosmos-1-0-diffusion-7b-text2world.md), [LTX-2 19B Distilled](ltx-2-19b-distilled.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, text…</a>   81.8%  ●▄▄··▄▄▄▄▄·▄ beats 1/9    easy · avg 85%     22%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #50 of 74 · 69% of its score</summary>
+
+Beats [HunyuanVideo 1.5](hunyuanvideo-1-5.md), [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS counterfactual rigid-body …</a>   12.0%  █·····█··●·█ beats 2/3    very hard · avg 12%     24%  sharp
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference aren…</a>  1008.1  ▄······█●··█ beats 4/6    avg 1002                21%  typical
+<a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, imag…</a>   82.6%  ▄·●··▄··▄▄▄█ beats 1/8    easy · avg 84%          17%  typical
+<a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video gen…</a>   81.4%  ▃······▅·█▅● beats 8/10   easy · avg 81%         7.0%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evaluatio…</a>   51.6%  ●▄▄··▄···▄·█ beats 1/7    medium · avg 57%    6.3%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>   81.8%    45.3   2026-06-23   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>   82.6%    47.6   2026-06-23   17% ▇▇
-<a name="paper-2512.01989v1-paibench"></a>PAI-Bench: A Comprehe…  <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference …</a>  1008.1    50.9   2025-12-01   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video…</a>   81.4%    51.0   2025-12-01    7% ▇
-<a name="visual-cronos-ccby"></a>CRONOS: Benchmarking …  <a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS counterfactual rigid-b…</a>   12.0%    50.8   2026-05-22   24% ▇▇▇
-<a name="visual-phyground"></a>PhyGround: Benchmarki…  <a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evalu…</a>   51.6%    41.1   2026-05-11    6% ▇
-prior                   pull toward the middle                    49.9                 3% ▇
-                        weighted average                        = 48.5
+source                                    results  share of the score
+<a name="visual-cosmos3-report"></a><a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos 3: Omnimodal World Models for Ph…</a>        2   39% ▇▇▇▇▇
+<a name="paper-2512.01989v1-paibench"></a><a href="https://arxiv.org/html/2512.01989v1">PAI-Bench: A Comprehensive Benchmark Fo…</a>        2   28% ▇▇▇
+<a name="visual-cronos-ccby"></a><a href="https://arxiv.org/html/2605.23699v1#S4.T1">CRONOS: Benchmarking Counterfactual Phy…</a>        1   24% ▇▇▇
+<a name="visual-phyground"></a><a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround: Benchmarking Physical Reason…</a>        1    6% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 48.4
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

@@ -6,25 +6,41 @@
 
 Mistral · released 2026-03 · 4B params · cc-by-nc-4.0
 
-**score 71.5** ±3.9 · #1 of 117 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 71.4** ±3.8 · #1 of 118 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Voxtral TTS (4B) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source       test                            score  implies  date        weight
-<a name="speech-voxtral-tts-report"></a>Voxtral TTS  <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>  62.8%    77.5   2026-04-06   33% ▇▇▇▇
-             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>  74.3%    78.3   2026-04-06   29% ▇▇▇▇
-             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>   1.9%    64.1   2026-04-06   17% ▇▇
-             <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>   1.2%    62.1   2026-04-06   15% ▇▇
-prior        pull toward the middle                   49.7                 6% ▇
-             weighted average                       = 71.5
+task           vs the others     rank  counts  tests
+voice cloning  █···█······●   #1 of 3     94%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>voice cloning · #1 of 3 · 94% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspecifi…</a>   62.8%  ██·········● beats 2/2    hard · avg 22%     33%  at its level · small run
+<a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language speaker …</a>   74.3%  ██·········● beats 2/2    hard · avg 31%     30%  at its level · small run
+<a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER (Vox…</a>    1.9%  █····●·····█ beats 1/2    avg 5.4%           17%  small run
+<a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspecifi…</a>    1.2%  ●··········▄ beats 1/2    avg 3.3%           15%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-voxtral-tts-report"></a><a href="https://arxiv.org/html/2603.25551v2">Voxtral TTS (lab)</a>                    4   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             6% ▇
+weighted average                        = 71.4
+</pre>
 
 <sub>Licences: Voxtral TTS ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -36,17 +52,21 @@ api (Mistral AI) · $16.00/M chars · [docs.mistral.ai](https://docs.mistral.ai/
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~10.1GB   71.5
-bf16 · mac only     ~10.1GB   71.5
+bf16 · nvidia only  ~10.1GB   71.4
+bf16 · mac only     ~10.1GB   71.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~10.1GB
 uv pip install -U vllm vllm-omni && vllm serve mistralai/Voxtral-4B-TTS-2603 --omni
-# bf16 · mac only
+# bf16 · mac only · ~10.1GB
 pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Voxtral-4B-TTS-2603-mlx-bf16 --text 'Hello, world!' --voice casual_male
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/voxtral-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

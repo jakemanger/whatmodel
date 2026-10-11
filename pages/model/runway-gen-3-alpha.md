@@ -6,23 +6,54 @@
 
 Runway · released 2024-06 · closed weights
 
-**score 39.6** ±2.6 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 39.7** ±2.6 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Runway Gen-3 Alpha among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others        rank  counts  tests
+text to video   ▇▅▄●█▆▇▂▃▃▂▄    #67 of 94     82%      3
+image to video  ▁▁▂●██▄▃▃▄▂▂   #63 of 74*     15%      1
+</pre>
+
+<details><summary>text to video · #67 of 94 · 82% of its score</summary>
+
+Trails [Pika 2.2](pika-2-2.md), [LTX-2.3](ltx-2-3.md), [T2V-Turbo-v2](t2v-turbo-v2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   59.2%  ▄▄·█··█▄▄▄●▄ beats 9/10   easy · avg 73%       39%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   55.7%  ▄▄·█▄█▄··●▄▄ beats 8/10   easy · avg 70%       22%  at its level
+<a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rating)</a>    50.6%  ●····▄···█·▄ beats 0/4    medium · avg 66%     21%  at its level
+</pre>
+
+</details>
+
+<details><summary>image to video · #63 of 74 · 15% of its score</summary>
+
+Beats [Wan 2.2 A14B](wan-2-2-a14b.md), [LTX-2](ltx-2.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo (Se…</a>  1000.0  ▄·····▄●··▄▄ beats 2/5    avg 1043       15%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>   59.2%    39.3   2025-05-17   39% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>   55.7%    36.6   2025-05-17   22% ▇▇▇
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>   50.6%    36.8   2025-04-21   21% ▇▇
-<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>  1000.0    46.7   2025-05-05   15% ▇▇
-prior                   pull toward the middle                    49.9                 3% ▇
-                        weighted average                        = 39.6
+source                                    results  share of the score
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   61% ▇▇▇▇▇▇▇
+<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-V2: Infinite-length Film Gener…</a>        1   21% ▇▇▇
+<a name="video-seaweed-7b"></a><a href="https://arxiv.org/html/2504.08685v2#S4.T3">Seaweed-7B: Cost-Effective Training of …</a>        1   15% ▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 39.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt)) · SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model ([CC-BY-4.0](../../licenses/video-seaweed-7b.txt))</sub>
 

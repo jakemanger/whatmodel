@@ -6,26 +6,65 @@
 
 TII · released 2024-12 · 3.23B params · falcon-llm
 
-**score 36.7** ±3.1 · #766 of 934 · from 7 benchmark results across 3 sources
+**score 36.5** ±3.1 · #781 of 949 · from 7 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Falcon3 3B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ▁●▃▆█▆▅▄▄▃▂▁   #326 of 334*     43%      2
+coding       ▁▁▁▃●██▇▆▄▃▁    #382 of 469     36%      4
+</pre>
+
+<details><summary>agent tasks · #326 of 334 · 43% of its score</summary>
+
+Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
+
+<pre>
+test                             result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   16.3%  ▁▁●▂██▅▅▆▂▂▂ beats 3/77   hard · avg 32%       24%  typical
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           32.5%  ▁▁▁●▁▃▅█▅▄▁▁ beats 8/114  medium · avg 52%     18%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #382 of 469 · 36% of its score</summary>
+
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   19.5%  ▃··▁▂▂●▂█▃▄▂ beats 14/47  medium · avg 54%     14%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   14.2%  ▁▁▁▁▁▁●▂▃█▅▄ beats 8/47   hard · avg 33%       12%  typical
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    1.7%  █▂●▁▂▂▂▃▅▅▅▇ beats 11/47  medium · avg 36%     10%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   52.0%  ▁▁▁······●▃█ beats 5/47   easy · avg 67%      0.4%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty        counts  why
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   64.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 107/276  medium · avg 73%     17%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  16.3%    36.0   2025-12-16   24% ▇▇▇
-                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         32.5%    32.4   2025-06-14   19% ▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  19.5%    38.0   2025-05-31   14% ▇▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  14.2%    33.8   2025-05-31   12% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   1.7%    30.3   2025-05-31    9% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  52.0%    16.4   2025-05-31    0% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  64.1%    44.2   2025-01-29   17% ▇▇
-prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 36.7
+source                                    results  share of the score
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   43% ▇▇▇▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   36% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1   17% ▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 36.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -34,18 +73,73 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/tiiuae/Falcon3-3B-Instruct/blob/411bb94318f94f7a5735b77109f456b1e74b42a1/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~2.44GB   36.7
-8-bit q8_0    ~4.38GB   36.7
+download                      size  score
+4-bit q4_k_m               ~2.44GB   36.5
+8-bit q8_0                 ~4.38GB   36.5
+4-bit q4_k_m                  ~2GB   36.5
+8-bit q8_0                  ~3.4GB   36.5
+4-bit mlx-4bit · mac only   ~1.8GB   36.5
+4-bit mlx-8bit · mac only   ~3.4GB   36.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run falcon3:3b-instruct-q4_K_M
-# 8-bit q8_0
-ollama run falcon3:3b-instruct-q8_0
+# 4-bit q4_k_m · ~2GB
+llama cli -hf tiiuae/Falcon3-3B-Instruct-GGUF:q4_k_m
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf tiiuae/Falcon3-3B-Instruct-GGUF:q4_k_m
+# 8-bit q8_0 · ~3.4GB
+llama cli -hf tiiuae/Falcon3-3B-Instruct-GGUF:q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf tiiuae/Falcon3-3B-Instruct-GGUF:q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~2GB
+lms get https://huggingface.co/tiiuae/Falcon3-3B-Instruct-GGUF@q4_k_m -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~3.4GB
+lms get https://huggingface.co/tiiuae/Falcon3-3B-Instruct-GGUF@q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~1.8GB
+lms get https://huggingface.co/mlx-community/Falcon3-3B-Instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~3.4GB
+lms get https://huggingface.co/mlx-community/Falcon3-3B-Instruct-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~2.44GB
+ollama run falcon3:3b-instruct-q4_K_M
+# 8-bit q8_0 · ~4.38GB
+ollama run falcon3:3b-instruct-q8_0
+# 4-bit q4_k_m · ~2GB
+ollama run hf.co/tiiuae/Falcon3-3B-Instruct-GGUF:q4_k_m
+# 8-bit q8_0 · ~3.4GB
+ollama run hf.co/tiiuae/Falcon3-3B-Instruct-GGUF:q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~1.8GB
+mlx_lm.chat --model mlx-community/Falcon3-3B-Instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Falcon3-3B-Instruct-4bit
+# 4-bit mlx-8bit · mac only · ~3.4GB
+mlx_lm.chat --model mlx-community/Falcon3-3B-Instruct-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Falcon3-3B-Instruct-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/falcon3-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

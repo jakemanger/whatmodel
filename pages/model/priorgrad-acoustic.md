@@ -16,7 +16,12 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
+# fp32 (microsoft/NeuralSpeech PriorGrad-acoustic repo, T=12 fast sampling) · ~0.28GB
 git clone https://github.com/microsoft/NeuralSpeech.git && cd NeuralSpeech/PriorGrad-acoustic && SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True pip install -r requirements.txt && git submodule init && git submodule update && wget https://huggingface.co/neuralspeech/priorgrad/resolve/main/ljspeech_hfg.zip && unzip ljspeech_hfg.zip -d data && wget https://huggingface.co/neuralspeech/priorgrad/resolve/main/priorgrad_am.zip && unzip priorgrad_am.zip -d checkpoints && mkdir hifigan_pretrained && curl -L -o hifigan_pretrained/generator_v1 'https://drive.usercontent.google.com/download?id=14NENd4equCBLyyCSke114Mv6YR_j_uFs&export=download&confirm=t' && curl -L -o hifigan_pretrained/config.json 'https://drive.usercontent.google.com/download?id=1aDh576AEYA5eTjhx7sew1qcCM_Y526jc&export=download&confirm=t' && CUDA_VISIBLE_DEVICES=0 PYTHONPATH=. python tasks/priorgrad_inference.py --config configs/tts/lj/priorgrad.yaml --exp_name priorgrad --reset --inference_text inference_text.txt --fast --fast_iter 12
 ```
 

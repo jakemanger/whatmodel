@@ -6,22 +6,37 @@
 
 Resemble AI · released 2026-04 · 0.5B params · mit
 
-**score 53.7** ±9.5 · #56 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.7** ±9.7 · #56 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Chatterbox Multilingual V3 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source            test                             score  implies  date        weight
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1043.3    56.1   2026-09-24   64% ▇▇▇▇▇▇▇▇
-prior             pull toward the middle                    49.7                36% ▇▇▇▇
-                  weighted average                        = 53.7
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community blin…</a>  1043.3  ▂▂··▃·●▅···▂ beats 4/12   avg 1018       62%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                     1   62% ▇▇▇▇▇▇▇
+prior: pull toward the middle            38% ▇▇▇▇▇
+weighted average                        = 53.7
+</pre>
 
 <sub>Licences: Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>
 
@@ -34,15 +49,19 @@ fp32 (chatterbox)             ~3.21GB   53.7
 fp32 (chatterbox) · mac only  ~3.21GB   53.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 · nvidia only
+# fp32 · nvidia only · ~3.2GB
 git clone https://github.com/resemble-ai/chatterbox.git && cd chatterbox && pip install -e . && python -c "import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='cuda', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)"
-# fp32 (chatterbox)
+# fp32 (chatterbox) · ~3.21GB
 git clone https://github.com/resemble-ai/chatterbox.git && cd chatterbox && pip install -e . && python -c "import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='cpu', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)"
-# fp32 (chatterbox) · mac only
+# fp32 (chatterbox) · mac only · ~3.21GB
 git clone https://github.com/resemble-ai/chatterbox.git && cd chatterbox && pip install -e . && python -c "import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='mps', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/chatterbox-multilingual-v3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

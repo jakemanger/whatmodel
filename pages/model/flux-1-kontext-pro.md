@@ -6,27 +6,60 @@
 
 Black Forest Labs · released 2025-05 · closed weights
 
-**score 50.1** ±1.7 · #81 of 144 · from 6 benchmark results across 4 sources
+**score 50.2** ±1.7 · #81 of 144 · from 6 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks FLUX.1 Kontext \[pro\] among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1058.7    53.2   2026-09-24   43% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1176.5    52.0   2026-09-30   15% ▇▇
-<a name="report-2512.07584v1"></a>Meituan LongCat         <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, …</a>   14.3%    39.4   2025-12-08   14% ▇▇
-                        <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, …</a>   65.3%    49.3   2025-12-08    9% ▇
-<a name="paper-2604.24023v2-servimage"></a>ServImage: An Image G…  <a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (hu…</a>   16.5%    48.9   2026-06-19   13% ▇▇
-<a name="paper-2603.26174v1-creval"></a>CREval: An Automated …  <a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image e…</a>   74.9%    51.1   2026-03-27    5% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 50.1
+task                    vs the others         rank  counts  tests
+text to image           ▂▅▅▃●▄█▃▁▂▁▁   #65 of 126*     55%      2
+image to image / edit…  ▁▁·▃●▃█▃▃▄▁▁     #51 of 62     57%      5
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #65 of 126 · 55% of its score</summary>
+
+Beats [FLUX.2 \[klein\] 4B](flux-2-klein-4b.md), [P-Image](p-image.md), [Photon](luma-photon.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>               1058.7  ▂▂▃●▇█▄▂▄▂·▂ beats 18/75  avg 1027           42%  typical
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   16.5%  ▂▃··●··▃█··▂ beats 3/11   hard · avg 18%     13%  sharp
+</pre>
+
+</details>
+
+<details><summary>image to image / editing · #51 of 62 · 57% of its score</summary>
+
+Trails [Step1X-Edit v1.1](step1x-edit-v1-1.md), [GLM-Image](glm-image.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                    1176.5  ▂▁▁▂●▇█▄▆▅▁▂ beats 7/53   avg 1153             16%  typical
+<a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, GPT-…</a>   14.3%  ●·········█▂ beats 0/7    medium · avg 42%     14%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (human …</a>   16.5%  ▂▃··●··▃█··▂ beats 3/11   hard · avg 18%       13%  sharp
+<a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, GPT-…</a>   65.3%  ▄·●···▄██··▄ beats 1/7    easy · avg 66%      9.1%  at its level
+<a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image editi…</a>   74.9%  ▄█▄··●··▄·▄▄ beats 5/8    easy · avg 74%      4.9%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   58% ▇▇▇▇▇▇▇
+<a name="report-2512.07584v1"></a><a href="https://arxiv.org/html/2512.07584v1">Meituan LongCat</a>                                 2   23% ▇▇▇
+<a name="paper-2604.24023v2-servimage"></a><a href="https://arxiv.org/html/2604.24023v2">ServImage: An Image Generation and Edit…</a>        1   13% ▇▇
+<a name="paper-2603.26174v1-creval"></a><a href="https://arxiv.org/html/2603.26174v1">CREval: An Automated Interpretable Eval…</a>        1    5% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 50.2
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt)) · ServImage: An Image Generation and Editing Benchmark from Real-world Commercial Imaging Services ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CREval: An Automated Interpretable Evaluation for Creative Image Manipulation under Complex Instructions ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

@@ -6,31 +6,79 @@
 
 TII · released 2026-01 · 7.59B params · falcon-llm
 
-**score 60.0** ±1.1 · #212 of 934 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.0** ±1.1 · #218 of 949 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Falcon-H1R 7B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others          rank  counts  tests
+agent tasks  ▁▁▃▆●▆▅▄▄▃▂▁   #199 of 334*     20%      2
+coding       ▁▁▁▃▆█●▇▆▄▃▁   #206 of 469*    9.0%      2
+math         ▁▂▃▅▆▅▄●▄▁▁▁    #124 of 400     39%      4
+</pre>
+
+<details><summary>agent tasks · #199 of 334 · 20% of its score</summary>
+
+Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2601.02346v1">τ²-bench Telecom (lab)</a>      25.4%  ▁·▅●▆▅▂▃▃▂▃▁ beats 15/89  very hard · avg 12%      10%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard (lab)</a>    4.9%  ▂▅▆●▂▆▂▂█▅▅▂ beats 8/27   very hard · avg 1.4%     10%  sharp · too hard for it
+</pre>
+
+</details>
+
+<details><summary>coding · #206 of 469 · 9.0% of its score</summary>
+
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unspecif…</a>   68.6%  █·▄·▄····●·▄ beats 4/5    medium · avg 42%        7.1%  at its level
+<a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>           3.9%  ▄··●····█▄·▄ beats 1/5    very hard · avg 3.8%    1.9%  too hard for it
+</pre>
+
+</details>
+
+<details><summary>math · #124 of 400 · 39% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified) (…</a>   64.9%  ▄··▄▄·▄····● beats 5/5    hard · avg 29%          13%  sharp · at its level
+<a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                      88.1%  █▄···█·····● beats 5/5    medium · avg 62%        11%  sharp
+<a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                      83.1%  ▄·█··▄····●▄ beats 4/5    medium · avg 53%        10%  sharp
+<a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                       97.4%  ▄·▄·····█··● beats 5/5    very easy · avg 92%    4.9%  maxed out
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>                   61.3%  ●·········▂▂ beats 2/5    hard · avg 45%           15%  sharp · at its level
+<a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>           11.1%  █··██···█·█● beats 5/5    very hard · avg 3.8%    7.7%  typical
+<a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                       72.1%  █··█··●██··█ beats 2/5    medium · avg 57%        6.6%  at its level
+<a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecified)…</a>   53.4%  ███···█●···█ beats 4/5    hard · avg 35%          2.0%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="report-2601.02346v1"></a>Falcon-H1R: Pushing t…  <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>              61.3%    56.6   2026-09-25   15% ▇▇
-                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                 88.1%    62.4   2026-09-25   11% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">τ²-bench Telecom (lab)</a>          25.4%    56.1   2026-01-05   11% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                 83.1%    62.0   2026-09-25   10% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  64.9%    62.1   2026-09-25   10% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard (lab)</a>        4.9%    61.7   2026-01-05   10% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>      11.1%    62.9   2026-09-25    8% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  68.6%    61.4   2026-09-25    7% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                  72.1%    57.4   2026-09-25    7% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                  97.4%    62.7   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>  53.4%    60.8   2026-09-25    2% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>      3.9%    51.4   2026-09-25    2% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 60.0
+source                                    results  share of the score
+<a name="report-2601.02346v1"></a><a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reasoning Front…</a>       12   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 60.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt))</sub>
 
@@ -39,18 +87,67 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/tiiuae/Falcon-H1R-7B/blob/a6f74bf181389908efd6970878d7ee2b42f5d417/config.json): TII official configuration: max\_position\_embeddings 262144; the official card's vLLM notes state the default --max-model-len is 262144. Configured maximum, not a benchmarked long-context claim. Observed 2026-09-25.</sub>
 
 <pre>
-download              size  score
-4-bit gguf-q4_k_m  ~5.05GB   60.0
-8-bit gguf-q8_0    ~9.61GB   60.0
+download                      size  score
+4-bit gguf-q4_k_m          ~5.05GB   60.0
+8-bit gguf-q8_0            ~9.61GB   60.0
+4-bit mlx-4bit · mac only   ~4.3GB   60.0
+4-bit mlx-8bit · mac only   ~8.1GB   60.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit gguf-q4_k_m
-llama-server -hf tiiuae/Falcon-H1R-7B-GGUF:Q4_K_M
-# 8-bit gguf-q8_0
-llama-server -hf tiiuae/Falcon-H1R-7B-GGUF:Q8_0
+# 4-bit gguf-q4_k_m · ~5.05GB
+llama cli -hf tiiuae/Falcon-H1R-7B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf tiiuae/Falcon-H1R-7B-GGUF:Q4_K_M
+# 8-bit gguf-q8_0 · ~9.61GB
+llama cli -hf tiiuae/Falcon-H1R-7B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf tiiuae/Falcon-H1R-7B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit gguf-q4_k_m · ~5.05GB
+lms get https://huggingface.co/tiiuae/Falcon-H1R-7B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit gguf-q8_0 · ~9.61GB
+lms get https://huggingface.co/tiiuae/Falcon-H1R-7B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~4.3GB
+lms get https://huggingface.co/mlx-community/Falcon-H1R-7B-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~8.1GB
+lms get https://huggingface.co/mlx-community/Falcon-H1R-7B-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit gguf-q4_k_m · ~5.05GB
+ollama run hf.co/tiiuae/Falcon-H1R-7B-GGUF:Q4_K_M
+# 8-bit gguf-q8_0 · ~9.61GB
+ollama run hf.co/tiiuae/Falcon-H1R-7B-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~4.3GB
+mlx_lm.chat --model mlx-community/Falcon-H1R-7B-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Falcon-H1R-7B-4bit
+# 4-bit mlx-8bit · mac only · ~8.1GB
+mlx_lm.chat --model mlx-community/Falcon-H1R-7B-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Falcon-H1R-7B-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/falcon-h1r-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

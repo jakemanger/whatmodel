@@ -8,19 +8,37 @@ HKUST / Tencent AI Lab · released 2023-05 · mit
 
 **score 24.6** ±3.4 · #90 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LVDM (text-to-video) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>  33.8%    22.1   2025-05-17   60% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>  42.2%    25.4   2025-05-17   35% ▇▇▇▇
-prior                   pull toward the middle                   49.9                 5% ▇
-                        weighted average                       = 24.6
+task           vs the others        rank  counts  tests
+text to video  ●▄▃▄▆▅█▃▂▂▂▄   #66 of 68*     95%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #66 of 68 · 95% of its score</summary>
+
+Trails [ModelScope T2V 1.7B](modelscope-t2v-1-7b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MOS (L…</a>   33.8%  ●▄·█··█▄▄▄▄▄ beats 0/10   easy · avg 73%     60%  at its level
+<a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video corres…</a>   42.2%  ●▄·█▄█▄··▄▄▄ beats 0/10   easy · avg 70%     35%  at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="video-love-aigve60k"></a><a href="https://arxiv.org/html/2505.12098v1#A6.T8">LOVE: Benchmarking and Evaluating Text-…</a>        2   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 24.6
+</pre>
 
 <sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt))</sub>
 
@@ -31,11 +49,15 @@ version              needs  score
 fp32 · nvidia only  ~6.1GB   24.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 · nvidia only
+# fp32 · nvidia only · ~6.1GB
 git clone https://github.com/YingqingHe/LVDM && cd LVDM && conda create -y -n lvdm python=3.8.5 && conda run -n lvdm pip install -r requirements.txt && mkdir -p models/t2v && wget -O models/t2v/model.ckpt https://huggingface.co/Yingqing/LVDM/resolve/main/lvdm_short/t2v.ckpt && conda run -n lvdm bash shellscripts/sample_lvdm_text2video.sh
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/lvdm-t2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,42 +6,62 @@
 
 Microsoft · released 2026-03 · 8.33B params · mit
 
-**score 51.2** ±3.7 · #91 of 160 · from 6 benchmark results across 2 sources
+**score 51.8** ±3.2 · #91 of 162 · from 6 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks VibeVoice-ASR-HF among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.8%    51.8   2026-03-26   48% ▇▇▇▇▇▇
-<a name="card3-microsoft-vibevoice-asr-bitnet"></a>microsoft/VibeVoice-A…  <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">VoxPopuli English test WER (l…</a>   4.9%    52.6   2026-07-24   15% ▇▇
-                        <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-other WER (l…</a>   5.8%    48.8   2026-07-24   15% ▇▇
-                        <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS Mandarin test error ra…</a>   7.9%    49.6   2026-07-24    8% ▇
-                        <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-clean WER (l…</a>   2.2%    49.7   2026-07-24    5% ▇
-                        <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS English test WER (lab)</a>    4.7%    53.1   2026-07-24    4% ▇
-prior                   pull toward the middle                   49.8                 5% ▇
-                        weighted average                       = 51.2
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (6)</summary>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · microsoft/VibeVoice-ASR-BitNet model card ([MIT](https://opensource.org/licenses/MIT))</sub>
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.8%  ▁▁▁▃··▁▁▂●█▆ beats 43/86  avg 8.2%       35%  blunt
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-other WER (lab)</a>      5.8%  ██●·····██·█ beats 2/5    avg 5.7%       27%  typical
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">VoxPopuli English test WER (lab)</a>      4.9%  ▄··▄··▄···█● beats 5/5    avg 7.4%       12%  typical
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-clean WER (lab)</a>      2.2%  █·█·●·█···██ beats 2/5    avg 2.2%      7.8%  blunt
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS Mandarin test error rate (…</a>    7.9%  ▄·▂▄▂▄█●▂▂·▆ beats 14/20  avg 7.3%      7.4%  typical
+<a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS English test WER (lab)</a>         4.7%  ▄·····▄▄●··█ beats 3/5    avg 5.5%      7.0%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="card3-microsoft-vibevoice-asr-bitnet"></a><a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">microsoft/VibeVoice-ASR-BitNet model ca…</a>        5   61% ▇▇▇▇▇▇▇
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            1   35% ▇▇▇▇
+prior: pull toward the middle                        4% ▇
+weighted average                                   = 51.8
+</pre>
+
+<sub>Licences: microsoft/VibeVoice-ASR-BitNet model card ([MIT](https://opensource.org/licenses/MIT)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                needs  score
-bf16 · nvidia only  ~20.49GB   51.2
+bf16 · nvidia only  ~20.49GB   51.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~20.49GB
 uv run --with transformers --with torch --with accelerate python -c "from transformers import AutoProcessor, VibeVoiceAsrForConditionalGeneration as M; r='microsoft/VibeVoice-ASR-HF'; p=AutoProcessor.from_pretrained(r); m=M.from_pretrained(r, device_map='auto'); i=p.apply_transcription_request(audio='audio.wav').to(m.device, m.dtype); o=m.generate(**i); print(p.decode(o[:, i['input_ids'].shape[1]:], return_format='transcription_only')[0])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/vibevoice-asr-hf) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,22 +6,37 @@
 
 oddadmix · released 2026-07 · 0.082B params · apache-2.0
 
-**score 41.5** ±9.5 · #82 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.5** ±9.7 · #83 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Nabra-82M v0.1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source            test                            score  implies  date        weight
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  965.0    36.9   2026-09-24   64% ▇▇▇▇▇▇▇▇
-prior             pull toward the middle                   49.7                36% ▇▇▇▇
-                  weighted average                       = 41.5
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community blin…</a>   965.0  ▂●··▃·█▅···▂ beats 1/12   avg 1018       62%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                     1   62% ▇▇▇▇▇▇▇
+prior: pull toward the middle            38% ▇▇▇▇▇
+weighted average                        = 41.5
+</pre>
 
 <sub>Licences: Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>
 
@@ -32,11 +47,15 @@ version                                     needs  score
 fp32 (Kokoro KModel, Oddadmix/kokoro fo…  ~0.33GB   41.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (Kokoro KModel, Oddadmix/kokoro fork)
+# fp32 (Kokoro KModel, Oddadmix/kokoro fork) · ~0.33GB
 pip install "kokoro @ git+https://github.com/Oddadmix/kokoro.git@main" torch soundfile huggingface_hub misaki camel-tools && camel_data -i disambig-mle-calima-msa-r13 && wget https://gist.githubusercontent.com/Oddadmix/dc699f7942a9516ce29d4842c7aed756/raw/827b541c892a862f9ef3b44006a6e27b100d1bdd/arabic_g2p.py && python -c "import numpy as np, torch, soundfile as sf; from huggingface_hub import hf_hub_download; from arabic_g2p import ArabicG2P, EXTRA_SYMBOLS, clean_phonemes, normalize_text; from kokoro import KModel, KPipeline; from kokoro import pipeline as kpipeline_mod; R = 'oddadmix/Nabra-82M-v0.1'; kmodel = KModel(repo_id=R, config=hf_hub_download(R, 'config.json'), model=hf_hub_download(R, 'kokoro_arabic.pth'), disable_complex=True).eval(); kmodel.vocab.update(EXTRA_SYMBOLS); kpipeline_mod.LANG_CODES.setdefault('ar', 'ar'); pipeline = KPipeline(lang_code='ar', repo_id=R, model=kmodel); _orig_g2p = pipeline.g2p; pipeline.g2p = lambda t: (clean_phonemes(_orig_g2p(t)[0]), _orig_g2p(t)[1]); voice = torch.load(hf_hub_download(R, 'af_msa.pt'), map_location='cpu', weights_only=True); text_norm, _ = normalize_text('مرحبا بك في نبرة'); diac = ArabicG2P(diacritize=True).diacritize(text_norm); sf.write('nabra.wav', np.concatenate([a.detach().cpu().numpy() for _, _, a in pipeline(diac, voice=voice, speed=1.0)]).astype(np.float32), 24000)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/nabra-82m-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

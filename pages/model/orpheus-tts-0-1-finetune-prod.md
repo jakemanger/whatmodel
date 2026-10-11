@@ -6,24 +6,40 @@
 
 Canopy Labs · released 2025-03 · 3B params · apache-2.0
 
-**score 47.8** ±4.7 · #72 of 117 · from 3 benchmark results across 2 sources
+**score 47.4** ±4.6 · #73 of 118 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Orpheus TTS 3B 0.1 (finetune-prod) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     29.4%    49.6   2025-08-10   56% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       17.7%    44.7   2025-08-10   16% ▇▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.76 / 5    44.0   2025-05-29   20% ▇▇
-prior                   pull toward the middle                      49.7                 9% ▇
-                        weighted average                          = 47.8
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty           counts  why
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category preferen…</a>     29.4%  ▅▅▃▃█●▅▃·▃·▅ beats 9/16   hard · avg 30%          56%  at its level
+<a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automatic …</a>  3.76 / 5  ▄·█·█●····█▄ beats 5/8    easy · avg 3.93 / 5     19%  blunt · at its level
+<a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>           17.7%  ▂▄··▂▄●··█▄▆ beats 6/16   avg 16%                 16%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-emergent-apache"></a><a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS-Eval six-category leaderboa…</a>        2   72% ▇▇▇▇▇▇▇▇▇
+<a name="speech-emergent-v1-paper-ccby"></a><a href="https://arxiv.org/html/2505.23009v1">EmergentTTS-Eval v1 paper</a>                       1   19% ▇▇
+prior: pull toward the middle                        9% ▇
+weighted average                                   = 47.4
+</pre>
 
 <sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt))</sub>
 
@@ -35,13 +51,19 @@ api (Together AI) · $15.00/M chars · [docs.together.ai](https://docs.together.
 
 <pre>
 version                                      needs  score
-bf16 (orpheus-speech package) · nvidia …  ~15.21GB   47.8
-gguf Q4_K_M (orpheus-cpp 0.0.3)            ~2.42GB   47.8
-gguf Q4_K_M (orpheus-cpp 0.0.3) · mac o…   ~2.42GB   47.8
+bf16 (orpheus-speech package) · nvidia …  ~15.21GB   47.4
+gguf Q4_K_M (orpheus-cpp 0.0.3)            ~2.42GB   47.4
+gguf Q4_K_M (orpheus-cpp 0.0.3) · mac o…   ~2.42GB   47.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 (orpheus-speech package) · nvidia only
+# bf16 (orpheus-speech package) · nvidia only · ~15.21GB
 git clone https://github.com/canopyai/Orpheus-TTS.git && cd Orpheus-TTS && pip install orpheus-speech && pip install vllm==0.7.3 && python -c '
 from orpheus_tts import OrpheusModel
 import wave
@@ -62,7 +84,7 @@ with wave.open("output.wav", "wb") as wf:
    for audio_chunk in syn_tokens: # output streaming
       wf.writeframes(audio_chunk)
 '
-# gguf Q4_K_M (orpheus-cpp 0.0.3)
+# gguf Q4_K_M (orpheus-cpp 0.0.3) · ~2.42GB
 pip install orpheus-cpp scipy && pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu && python -c 'from scipy.io.wavfile import write
 from orpheus_cpp import OrpheusCpp
 import numpy as np
@@ -76,7 +98,7 @@ for i, (sr, chunk) in enumerate(orpheus.stream_tts_sync(text, options={"voice_id
    print(f"Generated chunk {i}")
 buffer = np.concatenate(buffer, axis=1)
 write("output.wav", 24_000, np.concatenate(buffer))'
-# gguf Q4_K_M (orpheus-cpp 0.0.3) · mac only
+# gguf Q4_K_M (orpheus-cpp 0.0.3) · mac only · ~2.42GB
 pip install orpheus-cpp scipy && pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/metal && python -c 'from scipy.io.wavfile import write
 from orpheus_cpp import OrpheusCpp
 import numpy as np
@@ -91,7 +113,5 @@ for i, (sr, chunk) in enumerate(orpheus.stream_tts_sync(text, options={"voice_id
 buffer = np.concatenate(buffer, axis=1)
 write("output.wav", 24_000, np.concatenate(buffer))'
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/orpheus-tts-0-1-finetune-prod) · [JSON](https://whatmodel.sh/api?format=json&all=1)

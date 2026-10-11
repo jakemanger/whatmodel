@@ -8,18 +8,36 @@ Lightricks · released 2024-11 · 2B params · ltxv-rail-m
 
 **score 31.8** ±3.2 · #83 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks LTX-Video 0.9 (2B) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source       test                            score  implies  date        weight
-<a name="video-genai-arena-space"></a>GenAI-Arena  <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  964.0    30.9   2025-03-22   96% ▇▇▇▇▇▇▇▇▇▇▇
-prior        pull toward the middle                   49.9                 4% ▇
-             weighted average                       = 31.8
+task           vs the others        rank  counts  tests
+text to video  ▆●▃▄▆▅█▃▂▂▂▄   #57 of 68*     96%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #57 of 68 · 96% of its score</summary>
+
+Beats [Open-Sora 1.1](open-sora-1-1.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>   964.0  ▃▃···●▃·▃▅·█ beats 2/10   avg 1229       96%  sharp
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                          1   96% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             4% ▇
+weighted average                        = 31.8
+</pre>
 
 <sub>Licences: GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt))</sub>
 
@@ -32,15 +50,19 @@ openvino-int8 (OpenVINO GenAI, one-time…  ~34.6GB   31.8
 bf16 (official inference.py, MPS) · mac…  ~34.6GB   31.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16 · nvidia only
+# bf16 · nvidia only · ~5.3GB
 python -c "import torch;from diffusers import AutoencoderKLLTXVideo,LTXPipeline,LTXVideoTransformer3DModel;from diffusers.utils import export_to_video;u='https://huggingface.co/Lightricks/LTX-Video/ltx-video-2b-v0.9.safetensors';t=LTXVideoTransformer3DModel.from_single_file(u,torch_dtype=torch.bfloat16);v=AutoencoderKLLTXVideo.from_single_file(u,torch_dtype=torch.bfloat16);p=LTXPipeline.from_pretrained('Lightricks/LTX-Video',transformer=t,vae=v,torch_dtype=torch.bfloat16);p.enable_model_cpu_offload();export_to_video(p(prompt='A woman with long brown hair walks through a sunlit forest, cinematic',width=704,height=480,num_frames=121,num_inference_steps=50).frames[0],'ltx.mp4',fps=24)"
-# openvino-int8 (OpenVINO GenAI, one-time export)
+# openvino-int8 (OpenVINO GenAI, one-time export) · ~34.6GB
 git clone --depth 1 --branch 2026.4.1.0 https://github.com/openvinotoolkit/openvino.genai && cd openvino.genai/samples/python/video_generation && pip install --upgrade-strategy eager -r ../../export-requirements.txt && optimum-cli export openvino --model Lightricks/LTX-Video --task text-to-video --weight-format int8 ltx_video_ov/INT8 && pip install --upgrade-strategy eager -r ../../deployment-requirements.txt && python text2video.py ./ltx_video_ov/INT8 "A woman with long brown hair and light skin smiles at another woman with long blonde hair"
-# bf16 (official inference.py, MPS) · mac only
+# bf16 (official inference.py, MPS) · mac only · ~34.6GB
 git clone https://github.com/Lightricks/LTX-Video.git && cd LTX-Video && git checkout 727f5d6c2c73e93e4bd004d62dafa46f8b9ce8d6 && python -m venv env && source env/bin/activate && python -m pip install -e .\[inference-script\] && python -c "from huggingface_hub import hf_hub_download; hf_hub_download(repo_id='Lightricks/LTX-Video', filename='ltx-video-2b-v0.9.safetensors', local_dir='models', local_dir_use_symlinks=False, repo_type='model')" && python inference.py --ckpt_path models/ltx-video-2b-v0.9.safetensors --prompt "A clear, turquoise river flows through a rocky canyon, cascading over a small waterfall and forming a pool of water at the bottom." --height 480 --width 704 --num_frames 121 --seed 171198
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ltx-video-0-9) · [JSON](https://whatmodel.sh/api?format=json&all=1)

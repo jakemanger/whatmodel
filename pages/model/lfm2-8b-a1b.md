@@ -6,50 +6,95 @@
 
 Liquid AI · released 2025-10 · 8.3B params (1.5B active) · lfm1.0
 
-**score 46.0** ±0.9 · comparison only: no current run option verified · from 31 benchmark results across 3 sources
+**score 45.6** ±0.8 · comparison only: no current run option verified · from 31 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks LFM2 8B-A1B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁●▆█▆▅▄▄▃▂▁    #361 of 374    3.8%      4
+chat &amp; writing  ▁▁▁▃▅▅●█▆▆▆▂   #339 of 579*    4.8%      2
+math            ▁▂▃▅●▅▅█▄▁▁▁    #279 of 464     31%      7
+</pre>
+
+<details><summary>agent tasks · #361 of 374 · 3.8% of its score</summary>
+
+Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (lab)</a>                 7.0%  ●····▂▁▃▆█▃▁ beats 0/44    hard · avg 31%      1.3%  small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL V4 (December 2025 archive) (…</a>   25.5%  ▁▁▁▂●▆▆▆█▂▄▂ beats 17/111  medium · avg 38%    1.2%  at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL v3 (lab)</a>                        45.1%  ▁▁▁▁▁●▅█▆▅▄▁ beats 25/170  medium · avg 57%    0.7%  blunt · at its level · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (lab)</a>               13.6%  ●█▄········█ beats 0/5     hard · avg 24%      0.6%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #339 of 579 · 4.8% of its score</summary>
+
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty      counts  why
+<a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures (lab)</a>   77.6%  █··▄●·▄····▄ beats 3/5     easy · avg 85%    3.5%  typical
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">IFEval (aggregation unspecified) …</a>   79.4%  ▁▁▃▁▂▄●▆█▃▂▁ beats 50/141  easy · avg 82%    1.3%  small run
+</pre>
+
+</details>
+
+<details><summary>math · #279 of 464 · 31% of its score</summary>
+
+Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md), [OpenThinker 7B](openthinker-7b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                                84.6%  █····●··▄·▄█ beats 3/7     very easy · avg 86%    9.5%  sharp
+<a href="https://arxiv.org/html/2511.23404v1">MATH-500 (lab)</a>                       74.2%  ▃····▃·●···▃ beats 4/5     easy · avg 81%         5.9%  at its level · several runs
+<a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>            82.6%  █▄··●█▄····▄ beats 3/7     easy · avg 81%         5.2%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2025 (lab)</a>                      20.0%  ▁·▁▁▁●▅▆█▇▅▁ beats 11/133  medium · avg 36%       4.2%  sharp · small run
+<a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>              56.5%  ▄·●·▄▄▄·▄··█ beats 1/7     easy · avg 70%         3.1%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>          26.5%  ▄··▄●█··▄··▄ beats 3/7     hard · avg 30%         2.6%  typical
+<a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy (l…</a>   84.4%  █·█··██●···█ beats 4/5     easy · avg 84%         0.3%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (13)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 72.1%  ▄···▄●·▄█··█ beats 2/7    easy · avg 75%       14%  at its level · several runs
+<a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                         31.9%  ▄···●·▄·█·▄▄ beats 2/7    hard · avg 38%       11%  sharp · several runs
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             49.5%  ▄····●·▄█·▄▄ beats 1/7    medium · avg 56%    9.5%  at its level · several runs
+<a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecified)…</a>   25.9%  █··███··●··█ beats 4/5    hard · avg 33%      4.7%  at its level · several runs
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               33.8%  █··●··█··█·▄ beats 2/7    medium · avg 43%    4.3%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        49.0%  ▃··▃●··▅···█ beats 2/7    medium · avg 57%    3.1%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average (lab)</a>    58.2%  ▄··●▄··▄···▄ beats 1/5    easy · avg 71%      3.0%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid) (l…</a>   55.3%  ▄·█····●···▄ beats 3/5    medium · avg 60%    2.7%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             56.5%  ▄···▄·●·▄·▄█ beats 3/7    medium · avg 60%    2.7%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>    45.2%  ▄··▄█●··▄··█ beats 4/7    medium · avg 47%    2.2%  blunt · at its level
+<a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Liquid…</a>   72.4%  ▄·▄·●···▄··▄ beats 2/5    easy · avg 82%      1.9%  typical
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">Multi-IF (aggregation unspecified…</a>   58.5%  ▁▁▁▁●▁▃▄█▄▁▂ beats 5/41   easy · avg 65%      1.1%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2511.23404v1">GSM-Plus (lab)</a>                       64.8%  █·····███·●█ beats 4/5    easy · avg 74%      0.6%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="report-marco-moe-260425578v1"></a>Marco-MoE: Open Multi…  <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                           84.6%    49.2   2026-09-25   10% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                            72.1%    48.7   2026-09-25    9% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                    31.9%    45.1   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                        49.5%    47.5   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>       82.6%    51.7   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>          33.8%    45.6   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>         56.5%    43.2   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>   49.0%    45.1   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>        56.5%    48.6   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>     26.5%    48.6   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>  45.2%    49.5   2026-09-25    2% ▇
-<a name="report-2511.23404v1"></a>LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">MMLU (lab)</a>                      64.8%    45.3   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">GPQA Diamond (lab)</a>              29.3%    43.4   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro (lab)</a>                  37.4%    45.9   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecif…</a>  25.9%    46.0   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures …</a>  77.6%    44.4   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">MATH-500 (lab)</a>                  74.2%    45.6   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average (…</a>  58.2%    41.4   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid…</a>  55.3%    47.6   2026-09-25    2% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Li…</a>  72.4%    42.2   2026-09-25    2% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">GSM-Plus (lab)</a>                  64.8%    35.2   2026-09-25    0% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accurac…</a>  84.4%    55.0   2026-09-25    0% ▇
-<a name="card-liquidai-lfm2-5-8b-a1b"></a>LiquidAI/LFM2.5-8B-A1…  <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2025 (lab)</a>                 20.0%    42.9   2026-09-25    5% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">MATH-500 (lab)</a>                  74.8%    41.2   2026-09-25    3% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">Multi-IF (aggregation unspeci…</a>  58.5%    46.5   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">IFBench (aggregation unspecif…</a>  26.0%    41.0   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">IFEval (aggregation unspecifi…</a>  79.4%    48.6   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL V4 (December 2025 archiv…</a>  25.5%    40.0   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (lab)</a>            7.0%    29.4   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL v3 (lab)</a>                   45.1%    38.0   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (lab)</a>          13.6%    46.0   2026-09-25    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 46.0
+source                                    results  share of the score
+<a name="report-marco-moe-260425578v1"></a><a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual Mixture-of…</a>       11   53% ▇▇▇▇▇▇
+<a name="report-2511.23404v1"></a><a href="https://arxiv.org/html/2511.23404v1">LFM2 Technical Report (lab)</a>                    11   32% ▇▇▇▇
+<a name="card-liquidai-lfm2-5-8b-a1b"></a><a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">LiquidAI/LFM2.5-8B-A1B model card (lab)</a>         9   14% ▇▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 45.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · LFM2 Technical Report ([CC BY 4.0](../../licenses/cards-gap-NOTICE.txt)) · LiquidAI/LFM2.5-8B-A1B model card ([LFM Open License v1.0](../../licenses/cards-gap-NOTICE.txt))</sub>
 

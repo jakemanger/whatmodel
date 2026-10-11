@@ -6,24 +6,39 @@
 
 Puyuan Peng et al. (UT Austin) · released 2024-03 · 0.83B params · coqui-public-model-license
 
-**score 32.6** ±4.2 · #100 of 117 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 32.3** ±4.2 · #101 of 118 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks VoiceCraft 830M (giga830M) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-voicecraft-report-bysa"></a>VoiceCraft: Zero-Shot…  <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS list…</a>  4.17 / 5    34.7   2024-06-14   47% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>     55.0%    31.2   2024-06-14   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>      4.5%    24.1   2024-06-14   23% ▇▇▇
-prior                   pull toward the middle                      49.7                 7% ▇
-                        weighted average                          = 32.6
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS listenin…</a>  4.17 / 5  █········█·● beats 2/2    very easy · avg 4.72 / 5     47%  sharp · small run
+<a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set (250…</a>     55.0%  █····█·····● beats 2/2    easy · avg 77%               24%  at its level · small run
+<a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set (Lib…</a>      4.5%  █······●···█ beats 1/2    avg 1.0%                     23%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-voicecraft-report-bysa"></a><a href="https://arxiv.org/html/2403.16973v3">VoiceCraft: Zero-Shot Speech Editing an…</a>        3   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 32.3
+</pre>
 
 <sub>Licences: VoiceCraft: Zero-Shot Speech Editing and Text-to-Speech in the Wild ([CC BY-SA 4.0](../../licenses/speech-voicecraft-report-bysa.txt))</sub>
 
@@ -31,14 +46,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                   needs  score
-fp32 (VoiceCraft repo)  ~4.53GB   32.6
+fp32 (VoiceCraft repo)  ~4.53GB   32.3
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (VoiceCraft repo)
+# fp32 (VoiceCraft repo) · ~4.53GB
 git clone https://github.com/jasonppy/VoiceCraft && cd VoiceCraft && conda create -n voicecraft python=3.9.16 && conda activate voicecraft && pip install -e git+https://github.com/facebookresearch/audiocraft.git@c5157b5bf14bf83449c17ea1eeb66c19fb4bc7f0#egg=audiocraft && pip install xformers==0.0.22 && pip install torchaudio==2.0.2 torch==2.0.1 && apt-get install ffmpeg && apt-get install espeak-ng && pip install tensorboard==2.16.2 && pip install phonemizer==3.2.1 && pip install datasets==2.16.0 && pip install torchmetrics==0.11.1 && pip install huggingface_hub==0.22.2 && conda install -c conda-forge montreal-forced-aligner=2.2.17 openfst=1.8.2 kaldi=5.5.1068 && mfa model download dictionary english_us_arpa && mfa model download acoustic english_us_arpa && python3 tts_demo.py -m giga830M
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/voicecraft-830m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

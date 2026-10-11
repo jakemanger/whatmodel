@@ -8,18 +8,34 @@ Kuaishou (Kling AI) · released 2026-01 · 13B params · apache-2.0
 
 **score 39.2** ±2.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks UniVideo among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  665.0    38.8   2026-05-11   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 39.2
+task            vs the others        rank  counts  tests
+image to video  ▁▁●▂██▄▃▃▄▂▂   #70 of 74*     97%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to video · #70 of 74 · 97% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (image…</a>   665.0  ▃●··█··▃▃▃·▃ beats 1/8    avg 875        97%  sharp
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="video-worldreasonbench"></a><a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench: Human-Aligned Stress …</a>        1   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 39.2
+</pre>
 
 <sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt))</sub>
 

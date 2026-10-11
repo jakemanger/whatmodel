@@ -6,36 +6,65 @@
 
 Ai2 · released 2024-09 · 73.3B params · apache-2.0
 
-**score 49.9** ±1.7 · #435 of 934 · from 17 benchmark results across 4 sources
+**score 49.7** ±1.8 · #451 of 949 · from 17 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks Molmo 72B (0924) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task                vs the others          rank  counts  tests
+math                ▁▂▃▅●▅▄█▄▁▁▁   #291 of 400*     15%      1
+vision &amp; documents  ▁▁▃▂●▃▄▃▆▇█▄    #124 of 150     99%     13
+</pre>
+
+<details><summary>math · #291 of 400 · 15% of its score</summary>
+
+Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [StarCoder2 15B](starcoder2-15b.md) here, though they rank lower overall.
+
+<pre>
+test                  result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>   52.2%  ▂····▂···▂●▆ beats 4/9    medium · avg 60%     15%  at its level · small run · several runs
+</pre>
+
+</details>
+
+<details><summary>vision &amp; documents · #124 of 150 · 99% of its score</summary>
+
+Beats [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank lower overall.
+
+<pre>
+test                                                         result  vs the others in its run   difficulty                counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1044.9  ▁▁▂▂●▂▄▅▅▆██ beats 21/145  avg 1068                     19%  blunt
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                    52.7%  ▂·▂······●▄▄ beats 5/9     medium · avg 54%             16%  at its level · small run · several runs
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                          52.2%  ▂····▂···▂●▆ beats 4/9     medium · avg 60%             15%  at its level · small run · several runs
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  3.5100 MM-MT-Bench score (1-10)  ●··▃·█·▃▃··▅ beats 0/9     avg 5.740 MM-MT-Bench s…    9.4%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   75.2%  ▃···█▃··●▃▃▃ beats 5/9     easy · avg 74%              9.3%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>                                          81.9%  ▃·▃▅█▃▃●▃▃▃▃ beats 9/13    easy · avg 79%              8.2%  small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                                              91.2%  ▂▂▃▂·▂▂●▃·▅█ beats 7/18    very easy · avg 91%         6.7%  small run
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                       75.6%  ▄·▄▄▄··▄▄●▄█ beats 6/9     easy · avg 83%              3.5%  blunt · small run · several runs
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                                                  93.5%  ▁··▃▁▁▁●█▇▄▅ beats 10/28   very easy · avg 93%         3.1%  blunt · maxed out · small run
+<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1077.0  ▄▄·▄·▄▄▄·▄·● beats 8/8     avg 1037                    3.0%  blunt
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                                             75.2%  ▂▃▂█▃█●▆█▂▆▆ beats 20/38   easy · avg 73%              2.7%  blunt · at its level · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                               96.3%  ▁▁▅▇▃▇·▄·█·● beats 28/28   easy · avg 86%              1.4%  blunt · small run
+<a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                                                 83.1%  ▁▁▁▄▅▁▃·▃▃●█ beats 17/24   easy · avg 79%              1.3%  blunt · small run
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                                                      score  implies  date        weight
-<a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (lab)</a>                                          54.1%    50.2   2026-04-02    9% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (lab)</a>                                58.6%    49.0   2026-04-02    9% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>                                      81.9%    53.4   2026-04-02    8% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                                          91.2%    49.7   2026-04-02    7% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">VQAv2 (val) (lab)</a>                                         86.5%    59.2   2026-04-02    4% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                                              93.5%    51.1   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">ChartQA (lab)</a>                                             87.3%    58.6   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                                         75.2%    53.9   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                           96.3%    88.8   2026-04-02    1% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                                             83.1%    62.2   2026-04-02    1% ▇
-<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  3.5100 MM-MT-Bench score (1-10)    32.9   2024-10-10    9% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                52.7%    50.5   2024-10-10    7% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      52.2%    49.4   2024-10-10    6% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               75.2%    51.8   2024-10-10    5% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   75.6%    47.6   2024-10-10    0% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1044.9    47.4   2026-10-02   19% ▇▇
-<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1077.0    57.6   2024-09-25    3% ▇
-prior                   pull toward the middle                                             50.0                 1% ▇
-                        weighted average                                                 = 49.9
+source                                    results  share of the score
+<a name="paper-2601.10611v4-molmo2"></a><a href="https://arxiv.org/html/2601.10611v4#S4.T6">Molmo2: Open Weights and Data for Visio…</a>       10   48% ▇▇▇▇▇▇
+<a name="paper-2410.07073v2-pixtral"></a><a href="https://arxiv.org/html/2410.07073v2#S3.T2">Pixtral 12B</a>                                     5   28% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   19% ▇▇
+<a name="molmo-card-human-elo"></a><a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo-72B-0924 model card: Human Pr…</a>        1    3% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 49.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Molmo2: Open Weights and Data for Vision-Language Models with Video Understanding and Grounding ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column ([Apache-2.0](https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md))</sub>
 
@@ -43,14 +72,18 @@ prior                   pull toward the middle                                  
 
 <pre>
 download                       size  score
-4-bit fp32 · nvidia only  ~293.23GB   49.9
+4-bit fp32 · nvidia only  ~293.23GB   49.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp32 · nvidia only
+# 4-bit fp32 · nvidia only · ~293.23GB
 vllm serve allenai/Molmo-72B-0924 --trust-remote-code
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/molmo-72b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

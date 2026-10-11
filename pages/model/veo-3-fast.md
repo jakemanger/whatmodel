@@ -8,21 +8,52 @@ Google · released 2025-07 · closed weights
 
 **score 65.3** ±1.8 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Veo 3 Fast among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                           1347.9    67.4   2026-09-22   53% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                    1326.0    63.2   2026-09-22   36% ▇▇▇▇
-<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  1292.03 / 1608    62.8   2026-05-15    5% ▇
-<a name="visual-vabench"></a>VABench: A Comprehens…  <a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench T2AV micro Visual QA</a>             81.0%    64.1   2026-04-06    5% ▇
-prior                   pull toward the middle                            49.9                 1% ▇
-                        weighted average                                = 65.3
+task            vs the others        rank  counts  tests
+text to video   ▇▅▄▆█▆▇▂▃●▂▄    #14 of 94     63%      3
+image to video  ▁▁▂▂██▄●▃▄▂▂   #25 of 74*     35%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to video · #14 of 94 · 63% of its score</summary>
+
+Beats [Grok Imagine Video](grok-imagine-video.md), [Wan 2.7](wan-2-7.md) here, though they rank higher overall.
+
+<pre>
+test                                        result  vs the others in its run  difficulty                counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                               1347.9  ▂▂▃▆█▆·▆●▁▂▇ beats 29/41  avg 1147                     54%  typical
+<a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.5 Pr…</a>  1292.03 / 1608  █·▄··▄·····● beats 4/5    easy · avg 1103.17 / 16…    5.0%  typical
+<a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench T2AV micro Visual QA</a>                 81.0%  ▄····▄····▄● beats 4/4    easy · avg 68%              4.7%  typical
+</pre>
+
+</details>
+
+<details><summary>image to video · #25 of 74 · 35% of its score</summary>
+
+Trails [Runway Gen-4.5](runway-gen-4-5.md), [Kling 2.6 Pro](kling-2-6-pro.md), [Wan 2.6](wan-2-6.md) here, though they rank lower overall.
+
+<pre>
+test                  result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>  1326.0  ▁▁▁▁▄▇▃●▃▂▄█ beats 23/40  avg 1189       35%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="video-videoverse"></a><a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse: Does Your T2V Generator Hav…</a>        1    5% ▇
+<a name="visual-vabench"></a><a href="https://arxiv.org/html/2512.09299v2#S3.T1">VABench: A Comprehensive Benchmark for …</a>        1    5% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 65.3
+</pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt)) · VABench: A Comprehensive Benchmark for Audio-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 

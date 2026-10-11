@@ -6,33 +6,46 @@
 
 Meta · released 2022-05 · 1.3B params · opt-175b-license-noncommercial
 
-**score 15.6** ±1.3 · #912 of 934 · from 14 benchmark results across 3 sources
+**score 15.7** ±1.2 · #927 of 949 · from 14 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks OPT-1.3B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (10)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty           counts  why
+<a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                             57.0%  ▃·▅▃▃▅·●█▃██ beats 9/19    very easy · avg 90%     23%  at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                           59.7%  ▄····▄▆▂▄●▆█ beats 12/19   easy · avg 89%          17%  several runs
+<a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 84.5%  ▂··▂▃▂▂●▃▃█▂ beats 8/19    very easy · avg 98%     12%  typical
+<a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 71.7%  ▂·▄▄·▄▂▆●▄█▄ beats 11/19   easy · avg 88%          12%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                        23.1%  ●··▁·▁▁·▁▂▁▂ beats 0/19    medium · avg 72%        12%  sharp · too hard for it · several runs
+<a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                                59.6%  ●█▄···▄··█▄▄ beats 0/8     easy · avg 92%         7.5%  typical
+<a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   57.9%  ▃··▅▃▃▅▅●███ beats 10/19   very easy · avg 89%    7.5%  blunt · at its level
+<a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                            41.5%  ▃●▃··▅····▃█ beats 1/8     easy · avg 83%         5.8%  typical
+<a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                           24.0%  ●······▂·▆·▂ beats 2/8     medium · avg 54%       1.7%  too hard for it · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.6%  ●▁▁▁▁▁▁▁▂█▅▁ beats 17/276  medium · avg 73%       1.0%  noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        57.0%    15.7   2023-05-31   16% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            84.5%    14.5   2023-05-31   12% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      59.7%    21.5   2023-05-31    9% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            71.7%    18.7   2023-05-31    8% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  57.9%    18.2   2023-05-31    8% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   23.1%     7.1   2023-05-31    7% ▇
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           59.6%    13.5   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      61.0%    22.5   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        57.0%    14.5   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   23.2%     6.9   2023-09-11    6% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       41.5%    16.9   2023-09-11    5% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            69.0%    12.8   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      24.0%     5.8   2023-09-11    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  25.6%     2.1   2024-02-05    1% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 15.6
+source                                    results  share of the score
+<a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   61% ▇▇▇▇▇▇▇
+<a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        7   38% ▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 15.7
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -42,14 +55,18 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~2.63GB   15.6
+4-bit fp16  ~2.63GB   15.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# 4-bit fp16
+# 4-bit fp16 · ~2.63GB
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-1.3b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/opt-1-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

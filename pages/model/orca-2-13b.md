@@ -6,37 +6,96 @@
 
 Microsoft · released 2023-11 · other (microsoft-research-license)
 
-**score 58.0** ±10.7 · #247 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.4** ±2.4 · #835 of 949 · from 5 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Orca 2 13B among every model on that task or test, worst to best.</sub>
+
+<pre>
+
+</pre>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2024-02-12%2011%3A52%3A32.285173.json">Natural Questions (closed book)</a>      17.8%  ▁·▁·▁▂▁▂·●▂█ beats 15/28    medium · avg 58%        72%  typical
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2023-12-21%2023%3A45%3A21.730094.json">TriviaQA</a>                              9.8%  ▁··▁●▃▃▁▄▅▄█ beats 6/28     easy · avg 79%          10%  at its level · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.5%  ▁▁▂▃▄▄█▆●▂▂▁ beats 114/140  very easy · avg 94%    6.5%  blunt · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2024-03-12%2017%3A15%3A42.019083.json">HaluEval QA hallucination detecti…</a>   66.2%  █▁▁·▁▁·▁▁▁▁● beats 26/27    medium · avg 70%       4.5%  sharp · too hard for it · noisy
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2023-12-11%2010%3A45%3A23.033484.json">TruthfulQA MC2</a>                       55.8%  ▅▃█▆▁▂●···▁▁ beats 27/31    medium · avg 64%       4.4%  blunt · at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  97.5%    66.3   2025-10-16   49% ▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                51% ▇▇▇▇▇▇
-                        weighted average                       = 58.0
+source                              results  share of the score
+<a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/microsoft/Orca-2-13b/results_2024-02-12%2011%3A52%3A32.285173.json">Hallucinations Leaderboard results</a>        4   91% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>         1    6% ▇
+prior: pull toward the middle                  3% ▇
+weighted average                             = 32.4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/microsoft/Orca-2-13b/blob/2539ff53e6baa4cc603774ad5a2d646f4041ea4e/config.json): Microsoft official configuration for Orca-2-13b (pinned commit 2539ff5): max\_position\_embeddings 4096. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
 
 <pre>
-download        size  score
-4-bit fp32  ~52.06GB   58.0
+download          size  score
+4-bit fp32    ~52.06GB   32.4
+4-bit Q4_K_M    ~7.9GB   32.4
+8-bit Q8_0     ~13.8GB   32.4
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit fp32
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/Orca-2-13b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~7.9GB
+llama cli -hf TheBloke/Orca-2-13B-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/Orca-2-13B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+llama cli -hf TheBloke/Orca-2-13B-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/Orca-2-13B-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~7.9GB
+lms get https://huggingface.co/TheBloke/Orca-2-13B-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~13.8GB
+lms get https://huggingface.co/TheBloke/Orca-2-13B-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit Q4_K_M · ~7.9GB
+ollama run hf.co/TheBloke/Orca-2-13B-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~13.8GB
+ollama run hf.co/TheBloke/Orca-2-13B-GGUF:Q8_0
+```
+
+**Other engines**
+
+```sh
+# 4-bit fp32 · ~52.06GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/Orca-2-13b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/orca-2-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

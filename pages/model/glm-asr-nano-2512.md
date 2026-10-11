@@ -6,26 +6,42 @@
 
 Z.ai · released 2025-12 · 2.26B params · mit
 
-**score 56.8** ±3.8 · #55 of 160 · from 5 benchmark results across 2 sources
+**score 56.7** ±3.9 · #59 of 162 · from 5 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks GLM-ASR-Nano-2512 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.0%    55.6   2026-03-26   52% ▇▇▇▇▇▇
-<a name="speech-glm-asr-readme-apache"></a>zai-org/GLM-ASR READM…  <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">WenetSpeech test_meeting erro…</a>   6.7%    69.7   2025-12-09   17% ▇▇
-                        <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-other WER (l…</a>   4.2%    52.4   2025-12-09   16% ▇▇
-                        <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-clean WER (l…</a>   2.0%    52.1   2025-12-09    5% ▇
-                        <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">FLEURS English test WER (lab)</a>    5.8%    52.5   2025-12-09    5% ▇
-prior                   pull toward the middle                   49.8                 6% ▇
-                        weighted average                       = 56.8
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty  counts  why
+<a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form WER (…</a>    7.0%  ▁▁▁▃··▁▁▂█●▆ beats 60/86   avg 8.2%       51%  blunt
+<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">WenetSpeech test_meeting error ra…</a>    6.7%  ▄···▄·····▄● beats 3/4     avg 19%        17%  sharp · noisy · small run
+<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-other WER (lab)</a>      4.2%  ▁▁▁▂▅▃▅●█▂▂▁ beats 33/54   avg 5.3%       15%  small run
+<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-clean WER (lab)</a>      2.0%  ▁·▁·▁▁▁▁▃▇●▆ beats 56/100  avg 2.2%      5.5%  blunt · small run
+<a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">FLEURS English test WER (lab)</a>         5.8%  ▁··▁▁▁▁▂●█▂▁ beats 22/64   avg 6.4%      4.9%  blunt · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="open-asr"></a><a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR Leaderboard</a>                            1   51% ▇▇▇▇▇▇
+<a name="speech-glm-asr-readme-apache"></a><a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">zai-org/GLM-ASR README benchmark table …</a>        4   43% ▇▇▇▇▇
+prior: pull toward the middle                        6% ▇
+weighted average                                   = 56.7
+</pre>
 
 <sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · zai-org/GLM-ASR README benchmark table ([Apache-2.0](https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/LICENSE))</sub>
 
@@ -33,14 +49,18 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version    needs  score
-bf16     ~5.92GB   56.8
+bf16     ~5.92GB   56.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# bf16
+# bf16 · ~5.92GB
 uv run --with transformers --with torch --with accelerate python -c "from transformers import AutoModelForSeq2SeqLM, AutoProcessor; r='zai-org/GLM-ASR-Nano-2512'; p=AutoProcessor.from_pretrained(r); m=AutoModelForSeq2SeqLM.from_pretrained(r, dtype='auto', device_map='auto'); i=p.apply_transcription_request('audio.wav').to(m.device, dtype=m.dtype); o=m.generate(**i, do_sample=False, max_new_tokens=500); print(p.batch_decode(o[:, i.input_ids.shape[1]:], skip_special_tokens=True)[0])"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/glm-asr-nano-2512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

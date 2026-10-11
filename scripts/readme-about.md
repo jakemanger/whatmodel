@@ -4,7 +4,10 @@ whatmodel is an open-source AI leaderboard database. The data, scoring and ranki
 and benchmark tools are available here. This README and [pages/](pages) are generated from the
 same data and code with `npm run pages`.
 
-An interactive version of the database can be found at [whatmodel.sh](https://whatmodel.sh).
+An interactive version of the database can be found at [whatmodel.sh](https://whatmodel.sh). Every model has its own page showing
+what it's good at, how each test result compares with other models, and how to run it:
+
+<a href="https://whatmodel.sh/model/qwen3-6-27b"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/model-dark.png"><img alt="A whatmodel.sh model page: ranks by task, each test compared with other models, and commands to run it" src="docs/images/model-light.png"></picture></a>
 
 | Path | Contents |
 |---|---|

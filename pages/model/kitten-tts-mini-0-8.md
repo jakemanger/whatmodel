@@ -14,8 +14,14 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
+# onnx (kittenml 0.9.3) · ~0.08GB
 pip install kittenml && python -c "from kittenml import KittenTTS; import soundfile as sf; model = KittenTTS('KittenML/kitten-tts-mini-0.8'); audio = model.generate('This high-quality TTS model runs without a GPU.', voice='Jasper'); sf.write('output.wav', audio, 24000)"
+# fp32 (mlx-audio) · ~0.29GB
 pip install mlx-audio phonemizer-fork && mlx_audio.tts.generate --model mlx-community/kitten-tts-mini-0.8 --text 'Hello, world!' --voice Jasper
 ```
 

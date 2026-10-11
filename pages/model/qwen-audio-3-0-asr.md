@@ -6,23 +6,38 @@
 
 Alibaba · released 2026-09 · closed weights
 
-**score 62.0** ±4.2 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 61.9** ±4.2 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Qwen-Audio-3.0-ASR among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-stt-qwen-audio3-asr-report"></a>Qwen-Audio-3.0-ASR Te…  <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · C…</a>   2.4%    63.5   2026-09-09   55% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · E…</a>   2.5%    62.1   2026-09-09   38% ▇▇▇▇▇
-prior                   pull toward the middle                   49.8                 7% ▇
-                        weighted average                       = 62.0
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (2)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · Chine…</a>    2.4%  ▄········▄·● beats 3/3    avg 6.7%       55%  sharp
+<a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · Engli…</a>    2.5%  █···█··█···● beats 3/3    avg 5.6%       38%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stt-qwen-audio3-asr-report"></a><a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR Technical Report (la…</a>        2   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        7% ▇
+weighted average                                   = 61.9
+</pre>
 
 <sub>Licences: Qwen-Audio-3.0-ASR Technical Report ([CC BY 4.0](../../licenses/speech-stt-qwen-audio3-asr-report.txt))</sub>
 

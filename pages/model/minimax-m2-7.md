@@ -6,49 +6,131 @@
 
 MiniMax · released 2026-03 · 230B params (10B active) · minimax-non-commercial
 
-**score 67.9** ±0.7 · #106 of 934 · from 28 benchmark results across 7 sources
+**score 67.8** ±0.7 · #109 of 949 · from 31 benchmark results across 8 sources
+
+## What it's good at
+
+<sub>● marks MiniMax-M2.7 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃▆█▆▅▄●▃▂▁     #77 of 334     22%      7
+coding          ▁▁▁▃▆██▇●▄▃▁     #90 of 469     28%      7
+chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂    #94 of 466*    4.3%      1
+math            ▁▂▃▅▆▅●█▄▁▁▁   #166 of 400*    4.7%      2
+web search      ▂▂▂●▄█▃▃▁▁·▁     #67 of 81*    2.3%      1
+</pre>
+
+<details><summary>agent tasks · #77 of 334 · 22% of its score</summary>
+
+Beats [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>                   75.3%  █····██·█●██ beats 4/6    hard · avg 22%         6.2%  sharp · at its level
+<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>               71.8%  ▄··▄●···▄▄·█ beats 2/6    hard · avg 30%         4.4%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>                   55.5%  █··▄●·▄····▄ beats 3/6    very hard · avg 12%    4.1%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">BrowseComp</a>                           54.1%  ▄·▄▄···●··█▄ beats 3/6    hard · avg 16%         2.3%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                             66.1%  ●····▄·█·▄·█ beats 0/6    medium · avg 40%       2.0%  blunt · at its level
+<a href="https://arxiv.org/html/2606.15007v1">τ³-bench telecom (tau2-bench ≥ v1…</a>   89.6%  ●·▄···▄·▄·█▄ beats 0/6    easy · avg 77%         1.5%  maxed out
+<a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 tasks…</a>   49.0%  ●··▄·▄·█···▄ beats 0/5    hard · avg 27%         0.9%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #90 of 469 · 28% of its score</summary>
+
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1397.0  ▁▂▄▃▅●▄▇▆▄▁▁ beats 44/119  avg 981             7.7%  sharp
+<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>                   75.3%  █····██·█●██ beats 4/6     hard · avg 22%      6.2%  sharp · at its level
+<a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>               71.8%  ▄··▄●···▄▄·█ beats 2/6     hard · avg 30%      4.4%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unspecif…</a>   77.2%  ●█···█··████ beats 0/6     medium · avg 45%    3.0%  typical
+<a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems</a>                  38.3%  ●····▃··█·▃▃ beats 0/6     hard · avg 17%      2.6%  at its level
+<a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025)</a>      69.8%  ●··█····▄▄·█ beats 0/6     medium · avg 45%    2.3%  typical
+<a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified)</a>          47.0%  ▄·····▄█▄●·▄ beats 5/6     hard · avg 16%      2.1%  at its level
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #94 of 466 · 4.3% of its score</summary>
+
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Kimi K2 Instruct (0905)](kimi-k2-0905.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
+
+<pre>
+test            result  vs the others in its run    difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1415.0  ▁▁▁▂▃▃▃▆▆●█▃ beats 264/379  avg 1268      4.3%  blunt
+</pre>
+
+</details>
+
+<details><summary>math · #166 of 400 · 4.7% of its score</summary>
+
+Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Nemotron Nano 9B v2](nemotron-nano-9b-v2.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank lower overall.
+
+<pre>
+test             result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>   68.3%  ●····▄·▄▄·█▄ beats 0/6    medium · avg 40%    2.5%  typical
+<a href="https://arxiv.org/html/2608.30181v1">AIME 2026</a>         88.8%  ▄·●·▄▄··█··▄ beats 1/6    medium · avg 56%    2.2%  sharp · noisy
+</pre>
+
+</details>
+
+<details><summary>web search · #67 of 81 · 2.3% of its score</summary>
+
+Beats [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md), [GLM-4.7](glm-4-7.md) here, though they rank higher overall. Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
+
+<pre>
+test        result  vs the others in its run  difficulty      counts  why
+<a href="https://arxiv.org/html/2606.15007v1">BrowseComp</a>   54.1%  ▄·▄▄···●··█▄ beats 3/6    hard · avg 16%    2.3%  at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (15)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond</a>                         87.4%  ▄·····▄█●▄·▄ beats 4/6    hard · avg 45%          9.1%  sharp
+<a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified)</a>            86.6%  ▄●▄▄·▄·····▄ beats 1/6    hard · avg 47%          8.2%  sharp
+<a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>                 23.1%  ●··█▄··▄·▄·▄ beats 0/6    very hard · avg 5.6%    7.5%  several runs
+<a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro</a>                             81.9%  ●·····▄▄▄·▄█ beats 0/6    medium · avg 53%        4.7%  typical
+<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite</a>                     87.3%  ▃······●··█▃ beats 1/6    medium · avg 60%        4.4%  typical
+<a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX</a>                            78.4%  ●·····▄·▄▄█▄ beats 0/6    medium · avg 57%        2.5%  typical
+<a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)</a>    75.7%  ▃······●▃▃·▃ beats 1/6    medium · avg 44%        2.4%  at its level
+<a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md">AgentWorldBench (open-ended, over…</a>   46.1%  ●▄··▄▄·▄█▄██ beats 0/11   hard · avg 25%          2.4%  blunt · at its level
+<a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                        33.8%  ▃·▅▅●·▅█▅▃▃▃ beats 5/17   very hard · avg 11%     2.3%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose)</a>         74.6%  ▄●·▄··▄▄···█ beats 1/6    medium · avg 45%        2.2%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">MultiChallenge</a>                       42.5%  ●··········█ beats 0/6    hard · avg 27%          1.9%  at its level
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">WideSearch corrected dataset</a>         75.2%  ▃······▃▃▃●▃ beats 6/7    hard · avg 20%          1.5%  at its level · noisy
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SkillsBench 87-task subset</a>           28.4%  ▄··▄▄●···█·█ beats 3/7    very hard · avg 8.2%    1.4%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">CritPt</a>                                0.6%  ●····▄█···█▄ beats 0/6    very hard · avg 1.0%    0.9%  too hard for it · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   87.1%  ▁▂▁▂●█▂▃▄▃▁▁ beats 18/98  very easy · avg 90%     0.0%  blunt
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified)</a>        86.6%    70.2   2026-06-12    9% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>               75.3%    71.5   2026-06-12    7% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro</a>                         81.9%    66.3   2026-06-12    5% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>           71.8%    70.4   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>             23.1%    67.1   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>               55.5%    70.6   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>   77.2%    63.3   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX</a>                        78.4%    64.6   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>                  68.3%    58.4   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems</a>              38.3%    65.2   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">BrowseComp</a>                       54.1%    71.9   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose)</a>     74.6%    68.3   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                         66.1%    68.3   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge</a>                   42.5%    59.1   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">CritPt</a>                            0.6%    57.0   2026-06-12    1% ▇
-<a name="paper-2608.30181v1-ax-k2"></a>A.X K2 Technical Repo…  <a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond</a>                     87.4%    69.6   2026-08-31   10% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite</a>                 87.3%    67.9   2026-08-31    5% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam</a>             28.1%    71.1   2026-08-31    4% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecif…</a>   75.7%    69.5   2026-08-31    3% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 202…</a>   69.8%    61.1   2026-08-31    3% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">AIME 2026</a>                        88.8%    64.2   2026-08-31    2% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified)</a>      47.0%    72.7   2026-08-31    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1397.0    68.8   2026-10-01    8% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1415.0    67.7   2026-10-02    4% ▇
-<a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                    33.8%    67.9   2026-05-11    2% ▇
-<a name="card3-qwen-qwen-agentworld-35b-a3b"></a>Qwen/Qwen-AgentWorld-…  <a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md">AgentWorldBench (open-ended, …</a>   46.1%    67.0   2026-06-25    2% ▇
-<a name="paper-2605.22535v1"></a>TerminalWorld: Benchm…  <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 t…</a>   49.0%    68.4   2026-05-21    1% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   87.1%   -34.1   2026-09-22    0% ▇
-prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 67.9
+source                                    results  share of the score
+<a name="report-2606.15007v1"></a><a href="https://arxiv.org/html/2606.15007v1">NVIDIA</a>                                         16   53% ▇▇▇▇▇▇
+<a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report</a>                         7   26% ▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   12% ▇
+<a name="card-final-ling-3-0-flash"></a><a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash model card</a>           2    3% ▇
+<a name="card3-qwen-qwen-agentworld-35b-a3b"></a><a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md">Qwen/Qwen-AgentWorld-35B-A3B model card</a>         1    2% ▇
+<a name="paper-2605.10912v1-wildclawbench"></a><a href="https://arxiv.org/html/2605.10912v1">WildClawBench: A Benchmark for Real-Wor…</a>        1    2% ▇
+<a name="paper-2605.22535v1"></a><a href="https://arxiv.org/html/2605.22535v1">TerminalWorld: Benchmarking Agents on R…</a>        1    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 67.8
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen/Qwen-AgentWorld-35B-A3B model card ([Apache-2.0](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md)) · TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks ([CC BY 4.0](../../licenses/paper-2605.22535v1-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · inclusionAI/Ling-3.0-flash model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · Qwen/Qwen-AgentWorld-35B-A3B model card ([Apache-2.0](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks ([CC BY 4.0](../../licenses/paper-2605.22535v1-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
@@ -57,18 +139,58 @@ api (MiniMax) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [platfor
 <sub>[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md): USD per 1M tokens, MiniMax Open Platform pay-as-you-go, MiniMax-M2.7: input $0.3, output $1.2. Prompt-cache read $0.06 and write $0.375, and MiniMax-M2.7-highspeed ($0.6/$2.4) excluded. Currency: USD. MiniMax pay-as-you-go pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/minimax/MiniMax-M2.7.toml)</sub>
 
 <pre>
-download              size  score
-4-bit ud-q4_k_xl  ~138.5GB   67.9
-2-bit ud-q2_k_xl   ~69.5GB   67.9
+download                       size  score
+4-bit ud-q4_k_xl           ~138.5GB   67.8
+2-bit ud-q2_k_xl            ~69.5GB   67.8
+4-bit mlx-4bit · mac only  ~128.7GB   67.8
+4-bit mlx-8bit · mac only    ~243GB   67.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit ud-q4_k_xl
-llama-server -hf unsloth/MiniMax-M2.7-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl
-llama-server -hf unsloth/MiniMax-M2.7-GGUF:UD-Q2_K_XL
+# 4-bit ud-q4_k_xl · ~138.5GB
+llama cli -hf unsloth/MiniMax-M2.7-GGUF:UD-Q4_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/MiniMax-M2.7-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl · ~69.5GB
+llama cli -hf unsloth/MiniMax-M2.7-GGUF:UD-Q2_K_XL
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf unsloth/MiniMax-M2.7-GGUF:UD-Q2_K_XL
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit ud-q4_k_xl · ~138.5GB
+lms get https://huggingface.co/unsloth/MiniMax-M2.7-GGUF@UD-Q4_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit ud-q2_k_xl · ~69.5GB
+lms get https://huggingface.co/unsloth/MiniMax-M2.7-GGUF@UD-Q2_K_XL -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~128.7GB
+lms get https://huggingface.co/mlx-community/MiniMax-M2.7-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~243GB
+lms get https://huggingface.co/mlx-community/MiniMax-M2.7-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~128.7GB
+mlx_lm.chat --model mlx-community/MiniMax-M2.7-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/MiniMax-M2.7-4bit
+# 4-bit mlx-8bit · mac only · ~243GB
+mlx_lm.chat --model mlx-community/MiniMax-M2.7-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/MiniMax-M2.7-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/minimax-m2-7) · [JSON](https://whatmodel.sh/api?format=json&all=1)

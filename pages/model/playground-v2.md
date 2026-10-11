@@ -6,22 +6,40 @@
 
 Playground · released 2023-12 · 2.57B params · playground-v2-community
 
-**score 41.1** ±3.5 · #104 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.2** ±3.5 · #104 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Playground v2 (1024px aesthetic) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  1101.0    40.6   2024-06-04   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    49.9                 5% ▇
-                        weighted average                        = 41.1
+task           vs the others         rank  counts  tests
+text to image  ▂▅▅●▄▄█▃▁▂▁▁   #81 of 126*     95%      1
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #81 of 126 · 95% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (Elo, 4…</a>  1101.0  ▃▃··▃·▃·█·●▃ beats 7/8    avg 1237       95%  sharp
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-genai-arena"></a><a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI Arena: An Open Evaluation Platfor…</a>        1   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 41.2
+</pre>
 
 <sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt))</sub>
 
@@ -29,20 +47,24 @@ prior                   pull toward the middle                    49.9          
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~8.9GB   41.1
-fp16 (sd.cpp)         ~8.8GB   41.1
-q8_0 (sd.cpp --type)  ~4.9GB   41.1
+fp16 · nvidia only    ~8.9GB   41.2
+fp16 (sd.cpp)         ~8.8GB   41.2
+q8_0 (sd.cpp --type)  ~4.9GB   41.2
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~8.9GB
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('playgroundai/playground-v2-1024px-aesthetic', torch_dtype=torch.float16, use_safetensors=True, add_watermarker=False, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', guidance_scale=3.0).images[0].save('out.png')"
-# fp16 (sd.cpp)
+# fp16 (sd.cpp) · ~8.8GB
 sd-cli -m models/playground-v2.fp16.safetensors -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 3.0 -v
-# q8_0 (sd.cpp --type)
+# q8_0 (sd.cpp --type) · ~4.9GB
 sd-cli -m models/playground-v2.fp16.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 3.0 -v
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/playground-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

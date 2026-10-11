@@ -6,23 +6,43 @@
 
 Zhipu AI (THUDM) · released 2024-08 · 2B params · apache-2.0
 
-**score 36.1** ±2.1 · #76 of 93 · from 4 benchmark results across 3 sources
+**score 36.1** ±2.1 · #77 of 93 · from 4 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks CogVideoX-2B among every model on that task or test, worst to best.</sub>
+
+<pre>
+task           vs the others       rank  counts  tests
+text to video  ▆▄●▄▆▅█▃▂▂▂▄   #52 of 68     98%      4
+</pre>
+
+<details><summary>text to video · #52 of 68 · 98% of its score</summary>
+
+Beats [CogVideoX1.5-5B](cogvideox-1-5-5b.md) here, though they rank higher overall. Trails [Pika 2.2](pika-2-2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (anonym…</a>  1053.5  ▃▃···▅▃·▃●·█ beats 6/10   avg 1229             42%  sharp
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>        18.6%  ▄▄▄·▄●█····▄ beats 4/7    medium · avg 48%     37%  sharp
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator average)</a>    39.0%  ▅·▃▅··●█···▃ beats 5/9    medium · avg 56%     11%  at its level
+<a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-MTSco…</a>   61.8%  ▄·▄█▄▄▄·▄·▄● beats 9/10   medium · avg 71%    8.5%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>    18.6%    33.1   2026-01-30   37% ▇▇▇▇
-                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>   39.0%    35.1   2026-01-30   11% ▇
-<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1053.5    37.5   2025-03-22   42% ▇▇▇▇▇
-<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>   61.8%    40.1   2024-10-01    8% ▇
-prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 36.1
+source                                    results  share of the score
+<a name="visual-videophy-readme"></a><a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy / VideoPhy-2 official reposito…</a>        2   48% ▇▇▇▇▇▇
+<a name="video-genai-arena-space"></a><a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena</a>                                     1   42% ▇▇▇▇▇
+<a name="video-chronomagic-bench"></a><a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench: A Benchmark for Meta…</a>        1    8% ▇
+prior: pull toward the middle                        2% ▇
+weighted average                                   = 36.1
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>
 
@@ -33,11 +53,15 @@ version              needs  score
 fp16 · nvidia only  ~5.3GB   36.1
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp16 · nvidia only
+# fp16 · nvidia only · ~5.3GB
 python -c "import torch;from diffusers import CogVideoXPipeline;from diffusers.utils import export_to_video;p=CogVideoXPipeline.from_pretrained('THUDM/CogVideoX-2b',torch_dtype=torch.float16);p.enable_sequential_cpu_offload();p.vae.enable_slicing();p.vae.enable_tiling();export_to_video(p(prompt='A panda playing a tiny guitar in a bamboo forest',num_inference_steps=50,num_frames=49,guidance_scale=6).frames[0],'output.mp4',fps=8)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cogvideox-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

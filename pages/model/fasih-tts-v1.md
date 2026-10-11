@@ -6,22 +6,37 @@
 
 NightPrince (Yahya Elnawasany) · released 2026-07 · 0.467B params · coqui-public-model-license
 
-**score 54.7** ±9.5 · #54 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.7** ±9.7 · #54 of 118 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Fasih-TTS-V1 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source            test                             score  implies  date        weight
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1049.8    57.6   2026-09-24   64% ▇▇▇▇▇▇▇▇
-prior             pull toward the middle                    49.7                36% ▇▇▇▇
-                  weighted average                        = 54.7
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community blin…</a>  1049.8  ▂▂··▃·●▅···▂ beats 6/12   avg 1018       62%  blunt
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                         results  share of the score
+<a name="speech-arabic-tts-arena-apache"></a><a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena</a>                     1   62% ▇▇▇▇▇▇▇
+prior: pull toward the middle            38% ▇▇▇▇▇
+weighted average                        = 54.7
+</pre>
 
 <sub>Licences: Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>
 
@@ -32,11 +47,15 @@ version                                  needs  score
 fp32 (coqui-tts 0.27.5) · nvidia only  ~1.88GB   54.7
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (coqui-tts 0.27.5) · nvidia only
+# fp32 (coqui-tts 0.27.5) · nvidia only · ~1.88GB
 pip install "coqui-tts==0.27.5" torch torchaudio torchcodec && python -c "import torch, soundfile as sf; from huggingface_hub import snapshot_download; from TTS.tts.configs.xtts_config import XttsConfig; from TTS.tts.models.xtts import Xtts; path = snapshot_download('NightPrince/Fasih-TTS-V1'); config = XttsConfig(); config.load_json(f'{path}/config.json'); model = Xtts.init_from_config(config); model.load_checkpoint(config, checkpoint_path=f'{path}/model.pth', vocab_path=f'{path}/vocab.json', use_deepspeed=False); model.cuda().eval(); lat = torch.load(f'{path}/speaker_latents.pt', map_location='cuda'); out = model.inference('السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ', 'ar', lat['gpt_cond_latent'], lat['speaker_embedding'], temperature=0.65, repetition_penalty=2.0, enable_text_splitting=False); sf.write('fasih.wav', out['wav'], 24000)"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/fasih-tts-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

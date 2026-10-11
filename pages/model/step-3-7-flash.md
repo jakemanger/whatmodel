@@ -6,32 +6,86 @@
 
 StepFun · released 2026-05 · 198B params (11B active) · apache-2.0
 
-**score 67.2** ±1.1 · #115 of 934 · from 11 benchmark results across 1 source
+**score 67.0** ±1.0 · #119 of 949 · from 13 benchmark results across 2 sources
+
+## What it's good at
+
+<sub>● marks Step 3.7 Flash (198B-A11B) among every model on that task or test, worst to best.</sub>
+
+<pre>
+task         vs the others            rank  counts  tests
+agent tasks                 not ranked yet       —      3
+coding                      not ranked yet       —      1
+math         ▁▂▃▅▆▅▄●▄▁▁▁      #102 of 400     93%     11
+</pre>
+
+<details><summary>agent tasks · 0.0% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">Terminal-Bench 2.1 (lab)</a>             59.5%  ▁·▁·▁▁▄▃●█▃▇ beats 23/56  very hard · avg 7.1%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">SWE-bench Pro (split unspecified)…</a>   56.3%  ▃·▁▁▁▂▂▃●▇▃▁ beats 33/55  very hard · avg 4.3%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">Toolathlon (Tool Decathlon) (lab)</a>    49.5%  ▂▂▄▂▄▄▆▂●▆██ beats 16/27                             —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>coding · 0.0% of its score</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">SWE-bench Pro (split unspecified)…</a>   56.3%  ▃·▁▁▁▂▂▃●▇▃▁ beats 33/55  very hard · avg 4.3%       —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>math · #102 of 400 · 93% of its score</summary>
+
+Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026 (48…</a>   30.6%  ▂···●·██▆▆▄▂ beats 2/19   very hard · avg 4.6%     25%  sharp · at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>   35.8%  ▁·····●██▄·▁ beats 3/20   very hard · avg 7.2%     20%  sharp · at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February 2026…</a>   32.0%  ▁▁▁▁●▇▄▃▁▃·▃ beats 7/24   very hard · avg 9.1%     11%  at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 2026 (3…</a>   45.0%  ●▃▅·█▃▃·▅·▃▃ beats 1/14   very hard · avg 15%      11%  at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 (40 …</a>   46.7%  ▁··▁●█▄▁·▃·▁ beats 3/17   very hard · avg 10%     7.9%  at its level
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2026 …</a>   18.9%  ▂▂●█▃▃▂▂▂··▂ beats 5/18   very hard · avg 0.7%    3.9%  sharp · noisy
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 2026 (…</a>   15.7%  ▄··●▂▂▂▆▄··▂ beats 5/14   very hard · avg 1.1%    3.2%  sharp · noisy
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet">MathArena BrokenArXiv May 2026 (5…</a>    8.5%  ●█·▄▄▄····▄▄ beats 0/8    very hard · avg 1.6%    3.1%  sharp
+<a href="https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet">MathArena ArXivLean June 2026 (46…</a>    0.0%  ●····▄▄███·▄ beats 0/9    very hard · avg 0.7%    2.7%  sharp · too hard for it
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2026 …</a>   10.7%  █·●█▂·▂▂···▂ beats 4/14   very hard · avg 0.8%    2.4%  sharp · noisy
+<a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv February 20…</a>   12.1%  ▃▂▂▃●▃▂·▃··▂ beats 9/16   very hard · avg 0.7%    2.3%  sharp · too hard for it · noisy
+</pre>
+
+</details>
+
+<details><summary>other tests (5)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty            counts  why
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">WideSearch corrected dataset</a>         56.8%  ▃······●▃▃█▃ beats 1/7    hard · avg 20%          3.5%  at its level · noisy
+<a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">SkillsBench 87-task subset</a>           24.9%  ▄··▄●▄···█·█ beats 2/7    very hard · avg 8.2%    3.2%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">SimpleVQA with tools (search) (la…</a>   79.2%  no other model yet                                   —  not counted yet: no other model in the …
+<a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">V* Bench with Python tool (lab)</a>      95.3%  no other model yet                                   —  not counted yet: no other model in the …
+<a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">ClawEval 1.1 (metric unspecified)…</a>   67.1%  no other model yet                                   —  not counted yet: no other model in the …
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026…</a>  30.6%    65.7   2026-09-07   26% ▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>  35.8%    68.0   2026-09-11   21% ▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  32.0%    66.6   2026-09-11   13% ▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>  45.0%    67.5   2026-09-11   12% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 …</a>  46.7%    70.0   2026-09-11    8% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2…</a>  18.9%    72.6   2026-09-11    4% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 20…</a>  15.7%    69.0   2026-08-25    3% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet">MathArena BrokenArXiv May 202…</a>   8.5%    65.7   2026-06-23    3% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet">MathArena ArXivLean June 2026…</a>   0.0%    58.7   2026-09-11    3% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>  10.7%    69.5   2026-09-11    3% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>  12.1%    71.6   2026-09-11    2% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 67.2
+source                                    results  share of the score
+<a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>       11   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="card-final-ling-3-0-flash"></a><a href="https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md">inclusionAI/Ling-3.0-flash model card</a>           2    7% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 67.0
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt))</sub>
+<sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · inclusionAI/Ling-3.0-flash model card ([MIT](../../licenses/cards-final-NOTICE.txt))</sub>
 
 <details><summary>Not counted (6)</summary>
 
@@ -55,17 +109,36 @@ api (StepFun) · $0.44/M blended · $0.2 in / $1.15 out per 1M tokens · [platfo
 
 <pre>
 download           size  score
-4-bit q4_k_s  ~115.47GB   67.2
-3-bit q3_k_m   ~97.77GB   67.2
+4-bit q4_k_s  ~115.47GB   67.0
+3-bit q3_k_m   ~97.77GB   67.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_s
-llama-server -hf stepfun-ai/Step-3.7-Flash-GGUF:Q4_K_S
-# 3-bit q3_k_m
-llama-server -hf stepfun-ai/Step-3.7-Flash-GGUF:Q3_K_M
+# 4-bit q4_k_s · ~115.47GB
+llama cli -hf stepfun-ai/Step-3.7-Flash-GGUF:Q4_K_S
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf stepfun-ai/Step-3.7-Flash-GGUF:Q4_K_S
+# 3-bit q3_k_m · ~97.77GB
+llama cli -hf stepfun-ai/Step-3.7-Flash-GGUF:Q3_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf stepfun-ai/Step-3.7-Flash-GGUF:Q3_K_M
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_s · ~115.47GB
+lms get https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF@Q4_K_S -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 3-bit q3_k_m · ~97.77GB
+lms get https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF@Q3_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
 
 [interactive version](https://whatmodel.sh/model/step-3-7-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -8,19 +8,38 @@ Kuaishou (Kling AI) · released 2024-12 · closed weights
 
 **score 51.5** ±4.2 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Kling 1.6 (Pro mode) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>   68.0%    51.1   2025-04-21   53% ▇▇▇▇▇▇
-<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>  1065.0    52.2   2025-05-05   39% ▇▇▇▇▇
-prior                   pull toward the middle                    49.9                 8% ▇
-                        weighted average                        = 51.5
+task            vs the others        rank  counts  tests
+image to video  ▁▁▂▂█●▄▃▃▄▂▂   #46 of 74*     92%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to video · #46 of 74 · 92% of its score</summary>
+
+Beats [HunyuanVideo 1.5 (I2V)](hunyuanvideo-1-5-i2v.md), [HunyuanVideo 1.5](hunyuanvideo-1-5.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rating)</a>    68.0%  ▄···▄······● beats 3/3    medium · avg 66%     54%  at its level
+<a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo (Se…</a>  1065.0  ▄·····▄█··▄● beats 5/5    avg 1043             39%  typical
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-skyreels-v2"></a><a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-V2: Infinite-length Film Gener…</a>        1   54% ▇▇▇▇▇▇
+<a name="video-seaweed-7b"></a><a href="https://arxiv.org/html/2504.08685v2#S4.T3">Seaweed-7B: Cost-Effective Training of …</a>        1   39% ▇▇▇▇▇
+prior: pull toward the middle                        8% ▇
+weighted average                                   = 51.5
+</pre>
 
 <sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model ([CC-BY-4.0](../../licenses/video-seaweed-7b.txt))</sub>
 

@@ -6,24 +6,39 @@
 
 Korea University (Sang-Hoon Lee et al.) · released 2023-11 · 0.097B params · mit
 
-**score 27.9** ±4.9 · #108 of 117 · from 3 benchmark results across 1 source
+**score 27.5** ±4.9 · #109 of 118 · from 3 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks HierSpeech++ (LibriTTS-960) among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="speech-stylettszs-report-bysa"></a>StyleTTS-ZS: Efficien…  <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  3.54 / 5    21.6   2024-09-16   42% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · …</a>      7.8%    17.3   2024-09-16   27% ▇▇▇
-                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  4.27 / 5    43.4   2024-09-16   22% ▇▇▇
-prior                   pull toward the middle                      49.7                10% ▇
-                        weighted average                          = 27.9
+
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>other tests (3)</summary>
+
+<pre>
+test                                  result  vs the others in its run  difficulty                counts  why
+<a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 listen…</a>  3.54 / 5  ●·█········█ beats 0/2    very easy · avg 4.64 / 5     42%  at its level · small run
+<a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · HuBE…</a>      7.8%  ●█·········█ beats 0/2    avg 0.6%                     28%  noisy · small run
+<a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 listen…</a>  4.27 / 5  █··█·······● beats 2/2    very easy · avg 4.55 / 5     21%  at its level · small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="speech-stylettszs-report-bysa"></a><a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS: Efficient High-Quality Zer…</a>        3   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       10% ▇
+weighted average                                   = 27.5
+</pre>
 
 <sub>Licences: StyleTTS-ZS: Efficient High-Quality Zero-Shot Text-to-Speech Synthesis with Distilled Time-Varying Style Diffusion ([CC BY-SA 4.0](../../licenses/speech-stylettszs-report-bysa.txt))</sub>
 
@@ -31,14 +46,18 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                                  needs  score
-fp32 (repo inference.py) · nvidia only  ~2.1GB   27.9
+fp32 (repo inference.py) · nvidia only  ~2.1GB   27.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# fp32 (repo inference.py) · nvidia only
+# fp32 (repo inference.py) · nvidia only · ~2.1GB
 git clone https://github.com/sh-lee-prml/HierSpeechpp && cd HierSpeechpp && pip install -r requirements.txt && pip install phonemizer && sudo apt-get install espeak-ng && CUDA_VISIBLE_DEVICES=0 python3 inference.py --ckpt "logs/hierspeechpp_libritts960/hierspeechpp_lt960_ckpt.pth" --ckpt_text2w2v "logs/ttv_libritts_v1/ttv_lt960_ckpt.pth" --output_dir "tts_results_eng_kor_v2" --noise_scale_vc "0.333" --noise_scale_ttv "0.333" --denoise_ratio "0"
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hierspeechpp-libritts960) · [JSON](https://whatmodel.sh/api?format=json&all=1)

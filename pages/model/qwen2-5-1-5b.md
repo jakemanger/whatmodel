@@ -6,68 +6,190 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 35.6** ±1.0 · #784 of 934 · from 29 benchmark results across 12 sources
+**score 35.5** ±1.0 · #800 of 949 · from 29 benchmark results across 12 sources
+
+## What it's good at
+
+<sub>● marks Qwen2.5 1.5B Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+agent tasks     ▁▁▃●█▆▅▄▄▃▂▁   #292 of 334*    1.7%      1
+coding          ▁▁▁▃●██▇▆▄▃▁    #362 of 469    9.5%      5
+chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂    #442 of 466    6.7%      3
+math            ▁▂●▅▆▅▄█▄▁▁▁    #343 of 400     23%      2
+</pre>
+
+<details><summary>agent tasks · #292 of 334 · 1.7% of its score</summary>
+
+Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall.
+
+<pre>
+test     result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">BFCL v3</a>   47.8%  ▁▁▁▁▁▃●█▅▄▁▁ beats 30/114  medium · avg 52%    1.7%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>coding · #362 of 469 · 9.5% of its score</summary>
+
+Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://arxiv.org/html/2502.02737v1">HumanEval</a>                            30.5%  ▁▁▁▁▁●▅▅█▃▂▁ beats 37/190  easy · avg 80%      6.3%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   37.8%  ▃··▁▂▂▃●█▃▄▂ beats 20/47   medium · avg 54%    1.2%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   20.0%  ▁▁▁▁▁▁▂●▃█▅▄ beats 11/47   hard · avg 33%      1.1%  typical
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    1.2%  █●▁▁▂▂▂▃▅▅▅▇ beats 10/47   medium · avg 36%    0.8%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   78.2%  ▁▁▁······▁▃● beats 40/47   easy · avg 67%      0.0%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #442 of 466 · 6.7% of its score</summary>
+
+Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+
+<pre>
+test                              result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>      7.4%  ●▃·▁▁█▇▅·▁·▁ beats 1/22   medium · avg 42%    2.8%  typical
+<a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>          44.2%  ●▃▁▃▁▄▁▁█▃▃▁ beats 0/22   easy · avg 80%      2.3%  at its level
+<a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecified)</a>   47.4%  ▁▁●▁▂▄▄▆█▃▂▁ beats 7/141  easy · avg 77%      1.6%  at its level · small run
+</pre>
+
+</details>
+
+<details><summary>math · #343 of 400 · 23% of its score</summary>
+
+Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
+
+<pre>
+test                       result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       66.2%  ▂▃··●▂▅█▆▃▂▃ beats 3/22   very easy · avg 88%     16%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   40.6%  ▃▃●▂▂▆·····▁ beats 9/22   medium · avg 62%       7.4%  at its level · small run · several runs
+</pre>
+
+</details>
+
+<details><summary>other tests (15)</summary>
+
+<pre>
+test                                result  vs the others in its run    difficulty           counts  why
+<a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                       45.8%  ▁▄·●▁·▅█·▄▄▁ beats 4/22     easy · avg 75%          16%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 59.7%  ▁▂·▁·●▁█·▃▃▅ beats 4/22     easy · avg 77%          11%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   35.2%  ▁●▂▂▃█▃▆▅▄▂▃ beats 4/95     easy · avg 66%         6.2%  at its level
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      27.8%  ▁··▁▁●▂▆▅▆█▆ beats 6/70     medium · avg 64%       4.4%  at its level
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   36.8%  ▂●▂▃█▄▃▆▃▅▂▂ beats 9/81     medium · avg 58%       3.5%  blunt · at its level
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   22.2%  ▁▁▁▁▁●▂▃▄▆█▃ beats 15/97    hard · avg 32%         3.1%  blunt
+<a href="https://arxiv.org/html/2502.02737v1">HellaSwag</a>                            60.9%  ▁▁▁▁▂▂▃●█▆▅▃ beats 22/85    easy · avg 86%         2.6%  at its level · small run
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       46.5%  ▃●▂·▃▃·▅█▂▅▂ beats 3/21     medium · avg 63%       1.9%  blunt · at its level
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   13.2%  ▁▁·▁▂●▄█▄▅▄▄ beats 9/66     hard · avg 31%         1.7%  typical
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   65.6%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 117/276  medium · avg 73%       1.6%  at its level · noisy
+<a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                15.5%  ▁▁▁●▃▃▁█▁▃·▄ beats 3/21     hard · avg 32%         1.5%  blunt
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   76.0%  ▁▁▁▁▁▁▁▂●█▄▃ beats 52/146   easy · avg 83%         1.3%  at its level · noisy
+<a href="https://arxiv.org/html/2502.02737v1">PIQA</a>                                 73.2%  ▁▁▁▃▃●▇█▄▃▁▁ beats 26/83    easy · avg 86%         1.2%  blunt · at its level · small run
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   64.6%  ▃·▁▁▂▁▂●█▇▄▁ beats 40/100   medium · avg 68%       1.1%  noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   84.2%  ▁▁●▃▄▄█▆▃▂▂▁ beats 12/140   very easy · avg 94%    0.9%  blunt · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                            59.7%    40.9   2025-10-08   11% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                           66.2%    38.5   2025-10-08    9% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                  45.8%    36.4   2025-10-08    9% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                  46.5%    32.5   2025-10-08    4% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>   7.4%    30.6   2025-10-08    3% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>       40.6%    42.0   2025-10-08    2% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>       44.2%    23.1   2025-10-08    2% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                           15.5%    33.9   2025-10-08    1% ▇
-<a name="paper-2502.02737v1"></a>SmolLM2 paper           <a href="https://arxiv.org/html/2502.02737v1">BIG-Bench Hard</a>                  35.3%    34.5   2025-02-04    7% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">GSM8K</a>                           63.3%    37.7   2025-02-04    7% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">HumanEval</a>                       30.5%    31.0   2025-02-04    6% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">MATH (subset unspecified)</a>       19.6%    28.4   2025-02-04    4% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">HellaSwag</a>                       60.9%    28.3   2025-02-04    2% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecifi…</a>  47.4%    25.9   2025-02-04    2% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">PIQA</a>                            73.2%    25.0   2025-02-04    1% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  35.2%    30.4   2026-08-11    6% ▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  27.8%    32.7   2025-03-01    4% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  22.2%    37.7   2025-04-28    3% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  36.8%    32.3   2026-09-19    3% ▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  37.8%    49.1   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  20.0%    40.4   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   1.2%    29.0   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  78.2%    76.9   2025-05-31    0% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  76.0%    44.8   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  64.6%    52.8   2026-04-17    1% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">BFCL v3</a>                         47.8%    47.2   2025-04-25    2% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  13.2%    39.2   2025-10-01    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  65.6%    45.7   2024-12-03    2% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  84.2%    27.7   2025-10-16    1% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 35.6
+source                                    results  share of the score
+<a name="paper-2501.00656v3"></a><a href="https://arxiv.org/html/2501.00656v3">2 OLMo 2 Furious</a>                                8   41% ▇▇▇▇▇
+<a name="paper-2502.02737v1"></a><a href="https://arxiv.org/html/2502.02737v1">SmolLM2 paper</a>                                   7   29% ▇▇▇▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1    6% ▇
+<a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>          1    4% ▇
+<a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    4% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    3% ▇
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    3% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    2% ▇
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1    2% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 35.5
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
-
-<sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · SmolLM2 paper ([CC BY 4.0](../../licenses/paper-2502.02737v1-CC-BY-4.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · SmolLM2 paper ([CC BY 4.0](../../licenses/paper-2502.02737v1-CC-BY-4.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/989aa7980e4cf806f80c7fef2b1adb7bc71aa306/README.md): Context length stated on the official model card.</sub>
 
 <pre>
-download         size  score
-4-bit q4_k_m  ~1.42GB   35.6
-8-bit q8_0    ~2.35GB   35.6
+download                      size  score
+4-bit q4_k_m               ~1.42GB   35.5
+8-bit q8_0                 ~2.35GB   35.5
+4-bit q4_k_m                ~1.1GB   35.5
+8-bit q8_0                  ~1.9GB   35.5
+4-bit mlx-4bit · mac only   ~0.9GB   35.5
+4-bit mlx-8bit · mac only   ~1.6GB   35.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run qwen2.5:1.5b-instruct-q4_K_M
-# 8-bit q8_0
-ollama run qwen2.5:1.5b-instruct-q8_0
+# 4-bit q4_k_m · ~1.1GB
+llama cli -hf Qwen/Qwen2.5-1.5B-Instruct-GGUF:q4_k_m
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/Qwen2.5-1.5B-Instruct-GGUF:q4_k_m
+# 8-bit q8_0 · ~1.9GB
+llama cli -hf Qwen/Qwen2.5-1.5B-Instruct-GGUF:q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf Qwen/Qwen2.5-1.5B-Instruct-GGUF:q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit q4_k_m · ~1.1GB
+lms get https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF@q4_k_m -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit q8_0 · ~1.9GB
+lms get https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF@q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~0.9GB
+lms get https://huggingface.co/lmstudio-community/Qwen2.5-1.5B-Instruct-MLX-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~1.6GB
+lms get https://huggingface.co/lmstudio-community/Qwen2.5-1.5B-Instruct-MLX-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~1.42GB
+ollama run qwen2.5:1.5b-instruct-q4_K_M
+# 8-bit q8_0 · ~2.35GB
+ollama run qwen2.5:1.5b-instruct-q8_0
+# 4-bit q4_k_m · ~1.1GB
+ollama run hf.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF:q4_k_m
+# 8-bit q8_0 · ~1.9GB
+ollama run hf.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF:q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~0.9GB
+mlx_lm.chat --model lmstudio-community/Qwen2.5-1.5B-Instruct-MLX-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Qwen2.5-1.5B-Instruct-MLX-4bit
+# 4-bit mlx-8bit · mac only · ~1.6GB
+mlx_lm.chat --model lmstudio-community/Qwen2.5-1.5B-Instruct-MLX-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model lmstudio-community/Qwen2.5-1.5B-Instruct-MLX-8bit
+```
 
 [interactive version](https://whatmodel.sh/model/qwen2-5-1-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

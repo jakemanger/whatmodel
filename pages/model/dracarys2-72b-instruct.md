@@ -6,35 +6,119 @@
 
 Abacus.AI · released 2024-09 · 72.71B params · other (tongyi-qianwen)
 
-**score 55.1** ±2.5 · #309 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.0** ±2.5 · #317 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## What it's good at
+
+<sub>● marks Dracarys2-72B-Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others          rank  counts  tests
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #208 of 469*     97%      1
+</pre>
+
+<details><summary>coding · #208 of 469 · 97% of its score</summary>
+
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   66.9%  ▁·▁▂▄▁▆▄●▆▂▂ beats 43/62  medium · avg 54%     97%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  66.9%    55.3   2024-10-05   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 55.1
+source                             results  share of the score
+<a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>        1   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                 3% ▇
+weighted average                            = 55.0
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
-download          size  score
-16-bit bf16  ~145.41GB   55.1
+download                        size  score
+16-bit bf16                ~145.41GB   55.0
+4-bit Q4_K_M                 ~47.4GB   55.0
+8-bit Q8_0                   ~77.3GB   55.0
+2-bit IQ2_XXS                ~25.5GB   55.0
+4-bit mlx-4bit · mac only    ~40.9GB   55.0
+4-bit mlx-8bit · mac only    ~77.3GB   55.0
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 16-bit bf16
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='abacusai/Dracarys2-72B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+# 4-bit Q4_K_M · ~47.4GB
+llama cli -hf bartowski/Dracarys2-72B-Instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Dracarys2-72B-Instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~77.3GB
+llama cli -hf bartowski/Dracarys2-72B-Instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Dracarys2-72B-Instruct-GGUF:Q8_0
+# 2-bit IQ2_XXS · ~25.5GB
+llama cli -hf bartowski/Dracarys2-72B-Instruct-GGUF:IQ2_XXS
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf bartowski/Dracarys2-72B-Instruct-GGUF:IQ2_XXS
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~47.4GB
+lms get https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~77.3GB
+lms get https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 2-bit IQ2_XXS · ~25.5GB
+lms get https://huggingface.co/bartowski/Dracarys2-72B-Instruct-GGUF@IQ2_XXS -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-4bit · mac only · ~40.9GB
+lms get https://huggingface.co/mlx-community/Dracarys2-72B-Instruct-4bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~77.3GB
+lms get https://huggingface.co/mlx-community/Dracarys2-72B-Instruct-8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 2-bit IQ2_XXS · ~25.5GB
+ollama run hf.co/bartowski/Dracarys2-72B-Instruct-GGUF:IQ2_XXS
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-4bit · mac only · ~40.9GB
+mlx_lm.chat --model mlx-community/Dracarys2-72B-Instruct-4bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Dracarys2-72B-Instruct-4bit
+# 4-bit mlx-8bit · mac only · ~77.3GB
+mlx_lm.chat --model mlx-community/Dracarys2-72B-Instruct-8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/Dracarys2-72B-Instruct-8bit
+```
+
+**Other engines**
+
+```sh
+# 16-bit bf16 · ~145.41GB
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='abacusai/Dracarys2-72B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
 
 [interactive version](https://whatmodel.sh/model/dracarys2-72b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

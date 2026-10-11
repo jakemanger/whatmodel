@@ -6,25 +6,52 @@
 
 Phind · released 2023-08 · 34B params · llama2
 
-**score 46.7** ±0.7 · #526 of 934 · from 6 benchmark results across 3 sources
+**score 46.6** ±0.7 · #534 of 949 · from 6 benchmark results across 3 sources
+
+## What it's good at
+
+<sub>● marks Phind CodeLlama 34B v2 among every model on that task or test, worst to best.</sub>
+
+<pre>
+task    vs the others         rank  counts  tests
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #303 of 469     86%      4
+</pre>
+
+<details><summary>coding · #303 of 469 · 86% of its score</summary>
+
+Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
+
+<pre>
+test        result  vs the others in its run  difficulty        counts  why
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    71.3%  ▁·▁▁▃▄▆●█▃▁▁ beats 61/99  easy · avg 79%       54%  sharp · at its level · several runs
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   67.1%  ▁·▁▁▁▃▄▄▄●▃▁ beats 64/99  easy · avg 74%       28%  sharp · at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   47.2%  ▁··▁▅▂█●▁··▁ beats 19/22  medium · avg 54%    1.8%  at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   39.7%  ▁·▂▃▁●▁▂···▁ beats 8/22   medium · avg 53%    1.7%  blunt · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test               result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>   45.6%  ▂▂▃▄▄█▁▄●▃▁▃ beats 30/42  medium · avg 55%     14%  at its level
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               71.3%    46.6   2024-12-26   36% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              67.1%    47.4   2024-12-26   29% ▇▇▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               70.7%    47.1   2024-03-28   19% ▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       45.6%    46.0   2024-03-28   13% ▇▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              47.2%    45.5   2024-01-03    2% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              39.7%    39.9   2024-01-03    2% ▇
-prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 46.7
+source                                    results  share of the score
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        2   63% ▇▇▇▇▇▇▇▇
+<a name="paper-2403.19114v1"></a><a href="https://arxiv.org/html/2403.19114v1">Top Leaderboard Ranking = Top Coding Pr…</a>        2   33% ▇▇▇▇
+<a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    4% ▇
+prior: pull toward the middle                        0% ▇
+weighted average                                   = 46.6
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
 
@@ -33,18 +60,52 @@ prior                   pull toward the middle           50.0                 0%
 <sub>[context source](https://huggingface.co/Phind/Phind-CodeLlama-34B-v2/blob/949f61e203f91b412efe8f679c798f09f0ff4b0c/config.json): Phind official configuration for Phind-CodeLlama-34B-v2 (pinned commit): max\_position\_embeddings 16384. Configured maximum, not a benchmarked long-context claim: the official card states no context length; it says fine-tuning used a sequence length of 4096 tokens. Observed 2026-10-07.</sub>
 
 <pre>
-download       size  score
-4-bit q4_k_m  ~20GB   46.7
-8-bit q8_0    ~36GB   46.7
+download         size  score
+4-bit q4_k_m    ~20GB   46.6
+8-bit q8_0      ~36GB   46.6
+4-bit Q4_K_M  ~20.2GB   46.6
+8-bit Q8_0    ~35.9GB   46.6
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run phind-codellama:34b-v2-q4_K_M
-# 8-bit q8_0
-ollama run phind-codellama:34b-v2-q8_0
+# 4-bit Q4_K_M · ~20.2GB
+llama cli -hf TheBloke/Phind-CodeLlama-34B-v2-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/Phind-CodeLlama-34B-v2-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~35.9GB
+llama cli -hf TheBloke/Phind-CodeLlama-34B-v2-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf TheBloke/Phind-CodeLlama-34B-v2-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~20.2GB
+lms get https://huggingface.co/TheBloke/Phind-CodeLlama-34B-v2-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~35.9GB
+lms get https://huggingface.co/TheBloke/Phind-CodeLlama-34B-v2-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~20GB
+ollama run phind-codellama:34b-v2-q4_K_M
+# 8-bit q8_0 · ~36GB
+ollama run phind-codellama:34b-v2-q8_0
+# 4-bit Q4_K_M · ~20.2GB
+ollama run hf.co/TheBloke/Phind-CodeLlama-34B-v2-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~35.9GB
+ollama run hf.co/TheBloke/Phind-CodeLlama-34B-v2-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/phind-codellama-34b-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

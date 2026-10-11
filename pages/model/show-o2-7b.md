@@ -6,25 +6,45 @@
 
 Show Lab, NUS · released 2025-06 · 7B params · apache-2.0
 
-**score 41.3** ±2.5 · #103 of 144 · from 4 benchmark results across 3 sources
+**score 41.5** ±2.5 · #103 of 144 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Show-o2 7B among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  11.2%    40.4   2026-05-14   63% ▇▇▇▇▇▇▇▇
-<a name="first-party-showlab-show-o2-paper"></a>Show Lab Show-o2 paper  <a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (lab)</a>                   76.0%    47.4   2025-09-22   12% ▇
-                        <a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (lab)</a>                 86.1%    47.3   2025-09-22   10% ▇
-<a name="paper-2604.25072v1-xtcbench"></a>Beyond Accuracy: Benc…  <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall…</a>  46.5%    33.0   2026-04-27   12% ▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 41.3
+task           vs the others        rank  counts  tests
+text to image  ▂▅▅●▄▄█▃▁▂▁▁   #84 of 126     97%      4
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>text to image · #84 of 126 · 97% of its score</summary>
+
+Beats [Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)](ldm-text2im-large.md), [VQ-Diffusion (ITHQ)](vq-diffusion-ithq.md), [FLUX.1 Kontext \[dev\]](flux-1-kontext-dev.md) here, though they rank higher overall. Trails [Playground v2 (1024px aesthetic)](playground-v2.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty           counts  why
+<a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT-5 j…</a>   11.2%  ▄●▂▂▂▂▆▄·▂·▂ beats 3/16   hard · avg 26%          63%  sharp
+<a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (lab)</a>                        76.0%  ▇▃▅▇▁▄▅●█▃▃▅ beats 24/39  easy · avg 80%          12%  at its level · small run
+<a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall Gen…</a>   46.5%  ●█·▄·······▄ beats 0/4    easy · avg 70%          12%  at its level
+<a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (lab)</a>                      86.1%  ▄·▂·▂▆●▄▂▄▂▂ beats 9/17   very easy · avg 88%     10%  small run
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="visual-genexam"></a><a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam: A Multidisciplinary Text-to-Im…</a>        1   63% ▇▇▇▇▇▇▇▇
+<a name="first-party-showlab-show-o2-paper"></a><a href="https://arxiv.org/html/2506.15564v3#S4.T5">Show Lab Show-o2 paper (lab)</a>                    2   22% ▇▇▇
+<a name="paper-2604.25072v1-xtcbench"></a><a href="https://arxiv.org/html/2604.25072v1">Beyond Accuracy: Benchmarking Cross-Tas…</a>        1   12% ▇
+prior: pull toward the middle                        3% ▇
+weighted average                                   = 41.5
+</pre>
 
 <sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
@@ -32,14 +52,18 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                     needs  score
-official scripts (checkpoint as stored)…  ~22.5GB   41.3
+official scripts (checkpoint as stored)…  ~22.5GB   41.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**Other engines**
+
 ```sh
-# official scripts (checkpoint as stored) · nvidia only
+# official scripts (checkpoint as stored) · nvidia only · ~22.5GB
 git clone https://github.com/showlab/Show-o && cd Show-o/show-o2 && bash build_env.sh && wandb login && wget https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/resolve/main/Wan2.1_VAE.pth && python3 inference_t2i.py config=configs/showo2_7b_demo_432x432.yaml batch_size=4 guidance_scale=7.5 num_inference_steps=50
 ```
-
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/show-o2-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

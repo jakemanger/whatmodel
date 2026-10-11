@@ -6,26 +6,66 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-08 · 19.9B params · other
 
-**score 45.7** ±1.6 · #560 of 934 · from 7 benchmark results across 4 sources
+**score 45.5** ±1.6 · #572 of 949 · from 7 benchmark results across 4 sources
+
+## What it's good at
+
+<sub>● marks InternLM2.5 20B Chat among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #235 of 469     16%      4
+chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #360 of 466*     78%      2
+</pre>
+
+<details><summary>coding · #235 of 469 · 16% of its score</summary>
+
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   70.7%  ▃··▁▂▂▃▂█●▄▂ beats 38/47  medium · avg 54%    6.0%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   55.3%  █▂▁▁▂▂▂▃▅▅●▇ beats 38/47  medium · avg 36%    5.7%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   33.4%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 32/47  hard · avg 33%      4.3%  at its level
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   75.7%  ▁▁▁······▁▃● beats 30/47  easy · avg 67%      0.1%  blunt · at its level · noisy
+</pre>
+
+</details>
+
+<details><summary>chat &amp; writing · #360 of 466 · 78% of its score</summary>
+
+Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   31.2%  ▂▁▁▅█●▄▃▃▅▃▁ beats 26/60   medium · avg 52%     56%  sharp · at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1190.7  ▁▁▁▂●▃▃▆▆▇█▃ beats 64/379  avg 1268             22%  blunt
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run   difficulty        counts  why
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   56.9%  ▃▁▁▁▁▁▁▁●█▅▁ beats 81/276  medium · avg 73%    5.0%  at its level · noisy
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   31.2%    45.1   2024-11-14   54% ▇▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1190.7    40.8   2026-10-02   23% ▇▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   70.7%    55.9   2025-05-31    6% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   55.3%    59.2   2025-05-31    6% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   33.4%    51.0   2025-05-31    4% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   75.7%    72.3   2025-05-31    0% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   56.9%    38.4   2024-08-09    5% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 45.7
+source                                    results  share of the score
+<a name="arena-hard-auto-readme-v0-1"></a><a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard-Auto v0.1 leaderboard</a>                1   56% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   22% ▇▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   16% ▇▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    5% ▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 45.5
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
@@ -34,18 +74,65 @@ prior                   pull toward the middle                    50.0          
 <sub>[context source](https://huggingface.co/internlm/internlm2_5-20b-chat/blob/13741228cfb01d3a69c8f83169a105de77286b8a/config.json): InternLM official configuration for internlm2\_5-20b-chat (pinned commit): max\_position\_embeddings 32768 (dynamic rope scaling, factor 2.5). Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
 
 <pre>
-download          size  score
-4-bit q4_k_m  ~12.44GB   45.7
-8-bit q8_0    ~24.38GB   45.7
+download                       size  score
+4-bit q4_k_m               ~12.44GB   45.5
+8-bit q8_0                 ~24.38GB   45.5
+4-bit Q4_K_M                  ~12GB   45.5
+8-bit Q8_0                  ~21.1GB   45.5
+4-bit mlx-8bit · mac only   ~21.1GB   45.5
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 4-bit q4_k_m
-ollama run internlm2:20b-chat-v2.5-q4_K_M
-# 8-bit q8_0
-ollama run internlm2:20b-chat-v2.5-q8_0
+# 4-bit Q4_K_M · ~12GB
+llama cli -hf lmstudio-community/internlm2_5-20b-chat-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/internlm2_5-20b-chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~21.1GB
+llama cli -hf lmstudio-community/internlm2_5-20b-chat-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/internlm2_5-20b-chat-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~12GB
+lms get https://huggingface.co/lmstudio-community/internlm2_5-20b-chat-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~21.1GB
+lms get https://huggingface.co/lmstudio-community/internlm2_5-20b-chat-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 4-bit mlx-8bit · mac only · ~21.1GB
+lms get https://huggingface.co/mlx-community/internlm2_5-20b-chat_8bit -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 4-bit q4_k_m · ~12.44GB
+ollama run internlm2:20b-chat-v2.5-q4_K_M
+# 8-bit q8_0 · ~24.38GB
+ollama run internlm2:20b-chat-v2.5-q8_0
+# 4-bit Q4_K_M · ~12GB
+ollama run hf.co/lmstudio-community/internlm2_5-20b-chat-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~21.1GB
+ollama run hf.co/lmstudio-community/internlm2_5-20b-chat-GGUF:Q8_0
+```
+
+**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+
+```sh
+# 4-bit mlx-8bit · mac only · ~21.1GB
+mlx_lm.chat --model mlx-community/internlm2_5-20b-chat_8bit
+# or start an OpenAI-compatible server at http://localhost:8080/v1
+mlx_lm.server --model mlx-community/internlm2_5-20b-chat_8bit
+```
 
 [interactive version](https://whatmodel.sh/model/internlm2-5-20b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

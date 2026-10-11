@@ -6,24 +6,53 @@
 
 StepFun · released 2025-04 · 12.43B params · apache-2.0
 
-**score 48.3** ±5.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.1** ±3.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-## How the score was worked out
+## What it's good at
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+<sub>● marks Step1X-Edit v1.0 among every model on that task or test, worst to best.</sub>
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>  39.0%    48.0   2026-03-17   86% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                14% ▇▇
-                        weighted average                       = 48.3
+task                    vs the others        rank  counts  tests
+image to image / edit…  ▁▁●▃▂▃█▃▃▃▁▁   #77 of 81*     72%      2
 </pre>
 
-<sub>~ averaged with other results for the same test</sub>
+<details><summary>image to image / editing · #77 of 81 · 72% of its score</summary>
 
-<sub>Licences: EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+Trails [OmniGen (v1)](omnigen-v1.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty  counts  why
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                     998.3  ●▁▁▂▆▇█▄▆▅▁▂ beats 0/53   avg 1153       72%  typical
+<a href="https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md">GEdit-Bench-EN overall (G_O, GPT-…</a>   64.4%  ▄·····●·▄▄·▄ beats 1/5                     —  not counted yet: no other model in the …
+</pre>
+
+</details>
+
+<details><summary>other tests (1)</summary>
+
+<pre>
+test                                result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing overall…</a>   39.0%  ▂·▂▃·▂·●▂·▃█ beats 6/14   medium · avg 42%     23%  blunt · at its level
+</pre>
+
+</details>
+
+## How the score was worked out
+
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
+
+<pre>
+source                                    results  share of the score
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   72% ▇▇▇▇▇▇▇▇▇
+<a name="visual-edival"></a><a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal-Agent: An Object-Centric Framewo…</a>        1   23% ▇▇▇
+prior: pull toward the middle                        5% ▇
+weighted average                                   = 37.1
+</pre>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (1)</summary>
 

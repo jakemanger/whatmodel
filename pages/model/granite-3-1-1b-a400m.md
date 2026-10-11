@@ -6,25 +6,62 @@
 
 IBM · released 2024-12 · 1.3B params (0.4B active) · apache-2.0
 
-**score 28.9** ±1.8 · #854 of 934 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
+**score 28.8** ±1.8 · #870 of 949 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
+
+## What it's good at
+
+<sub>● marks Granite 3.1 1B-A400M Instruct among every model on that task or test, worst to best.</sub>
+
+<pre>
+task            vs the others          rank  counts  tests
+chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #408 of 466*    8.5%      1
+math            ▁●▃▅▆▅▄█▄▁▁▁   #382 of 400*     29%      1
+</pre>
+
+<details><summary>chat &amp; writing · #408 of 466 · 8.5% of its score</summary>
+
+Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
+
+<pre>
+test                                result  vs the others in its run  difficulty      counts  why
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">IFEval (aggregation unspecified) …</a>   46.9%  ▁●▃▁▂▄▄▆█▃▂▁ beats 6/141  easy · avg 78%    8.5%  at its level
+</pre>
+
+</details>
+
+<details><summary>math · #382 of 400 · 29% of its score</summary>
+
+Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall.
+
+<pre>
+test         result  vs the others in its run   difficulty           counts  why
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>   33.9%  ▂▂▂●▅▆▅▇█▇▄▃ beats 25/146  very easy · avg 85%     29%  sharp · at its level
+</pre>
+
+</details>
+
+<details><summary>other tests (4)</summary>
+
+<pre>
+test                 result  vs the others in its run  difficulty           counts  why
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (lab)</a>   42.7%  ▆▁▁▂▂▅●█▄▃▃▂ beats 45/97  easy · avg 82%          23%  sharp
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (lab)</a>      62.4%  ▁···▂▁▁▅●▇▃▁ beats 31/87  easy · avg 84%          16%  typical
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (lab)</a>       66.0%  ▁▁▁▁▂▂▃●█▆▅▃ beats 32/85  very easy · avg 89%     15%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">MMLU (lab)</a>            26.1%  ●▁▁▁▁▂▃▅█▃▆▃ beats 1/183  easy · avg 75%         7.4%  typical
+</pre>
+
+</details>
 
 ## How the score was worked out
 
-Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="card3-ibm-granite-granite-3-1-3b-a800m-instruct"></a>ibm-granite/granite-3…  <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>                     33.9%    29.1   2025-01-31   30% ▇▇▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (lab)</a>             42.7%    31.6   2025-01-31   23% ▇▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (lab)</a>                62.4%    29.6   2025-01-31   15% ▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (lab)</a>                 66.0%    29.4   2025-01-31   15% ▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">IFEval (aggregation unspecifi…</a>  46.9%    26.5   2025-01-31    9% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">MMLU (lab)</a>                      26.1%    15.7   2025-01-31    8% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 28.9
+source                                    results  share of the score
+<a name="card3-ibm-granite-granite-3-1-3b-a800m-instruct"></a><a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ibm-granite/granite-3.1-3b-a800m-instru…</a>        6   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 28.8
 </pre>
-
-<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: ibm-granite/granite-3.1-3b-a800m-instruct model card ([Apache-2.0](https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md))</sub>
 
@@ -33,15 +70,49 @@ prior                   pull toward the middle                   50.0           
 <sub>[context source](https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md): Card architecture table (3b-a800m card, same table in the 1b card): 'Sequence length 128K' for the 1B MoE. Observed 2026-10-10.</sub>
 
 <pre>
-download      size  score
-8-bit q8_0  ~1.4GB   28.9
+download        size  score
+8-bit q8_0    ~1.4GB   28.8
+4-bit Q4_K_M  ~0.8GB   28.8
+8-bit Q8_0    ~1.4GB   28.8
 </pre>
 
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+### Run it on your own machine
+
+**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+
 ```sh
-# 8-bit q8_0
-ollama run granite3.1-moe:1b
+# 4-bit Q4_K_M · ~0.8GB
+llama cli -hf lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF:Q4_K_M
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.4GB
+llama cli -hf lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF:Q8_0
+# or start a local server and open the address it prints (http://localhost:9931)
+llama serve -hf lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF:Q8_0
 ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+
+```sh
+# 4-bit Q4_K_M · ~0.8GB
+lms get https://huggingface.co/lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF@Q4_K_M -y
+# then run lms ls to see its name, and lms chat followed by that name
+# 8-bit Q8_0 · ~1.4GB
+lms get https://huggingface.co/lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF@Q8_0 -y
+# then run lms ls to see its name, and lms chat followed by that name
+```
+
+**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+
+```sh
+# 8-bit q8_0 · ~1.4GB
+ollama run granite3.1-moe:1b
+# 4-bit Q4_K_M · ~0.8GB
+ollama run hf.co/lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF:Q4_K_M
+# 8-bit Q8_0 · ~1.4GB
+ollama run hf.co/lmstudio-community/granite-3.1-1b-a400m-instruct-GGUF:Q8_0
+```
 
 [interactive version](https://whatmodel.sh/model/granite-3-1-1b-a400m) · [JSON](https://whatmodel.sh/api?format=json&all=1)
