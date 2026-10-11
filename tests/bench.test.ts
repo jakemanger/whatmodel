@@ -50,13 +50,14 @@ sys.path.insert(0, '.')
 import bench
 kinds = [dict(kind='ollama', model='qwen3:8b', quant='Q4_K_M', params='8.2B', digest='0'*64, engine_version='0.30.8'),
          dict(kind='llama-bench', path='/x/Qwen3-8B-Q4_K_M.gguf', engine_version='version: 6730 (e60f01d9)'),
+         dict(kind='mlx', model='mlx-community/Qwen3-8B-4bit', path='/x/snapshots/abc'),
          dict(kind='openai', model='m', base='http://127.0.0.1:1234/v1'),
          dict(kind='claude', engine_version='2.1.290 (Claude Code)'), dict(kind='codex', engine_version='codex-cli 0.46.0'),
          dict(kind='gemini', engine_version='0.9.0')] + [dict(kind='harness', tool=t) for t in bench.HARNESSES]
 jobs, ids = [], {}
 for t in kinds:
     t.update(group='local', label='x'); job = bench.Run(t, 1, 1)
-    job.samples = [dict(gen_tok_s=12.5, prompt_tok_s=300.0, output_tokens=200, elapsed_s=3.2, ttft_s=0.4, load_s=0.1, cost_usd=0.01)]
+    job.samples = [dict(gen_tok_s=12.5, prompt_tok_s=300.0, output_tokens=200, elapsed_s=3.2, ttft_s=0.4, load_s=0.1, cost_usd=0.01, cpu_busy=0.12)]
     jobs.append(job); ids[id(t)] = 'qwen3-8b'
 hw = dict(os='Darwin', arch='arm64', chip='Apple M2 Pro', ram_gb=16, gpu_cores=19, gpu='NVIDIA GeForce RTX 4090', vram_gb=24, gpus=1)
 print(json.dumps(dict(report=bench.public_report(jobs, 256, 3, 1, 123456, hw, ids), engines=sorted(set(bench.ENGINES.values()) - {'agent-cli'} | set(bench.HARNESSES)))))

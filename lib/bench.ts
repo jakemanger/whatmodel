@@ -24,9 +24,9 @@ const hex64 = text("^[a-f0-9]{64}$", 64);
 const label = (maxLength: number) => text("^[A-Za-z0-9 ._()@+:,/-]*$", maxLength);
 
 // bench.py ENGINES, plus the agent CLIs it can time (HARNESSES).
-export const ENGINES = ["ollama", "openai-compatible", "llama.cpp", "claude-code", "codex-cli", "gemini-cli", "qwen", "opencode", "goose"] as const;
+export const ENGINES = ["ollama", "openai-compatible", "llama.cpp", "mlx-lm", "claude-code", "codex-cli", "gemini-cli", "qwen", "opencode", "goose"] as const;
 // Engines that run the weights on the contributor's machine; only these can become local speeds.
-export const LOCAL_ENGINES: readonly string[] = ["ollama", "llama.cpp"];
+export const LOCAL_ENGINES: readonly string[] = ["ollama", "llama.cpp", "mlx-lm"];
 
 const sample: Schema = {
   type: "object",
@@ -34,6 +34,7 @@ const sample: Schema = {
   properties: {
     elapsed_s: num(3600), output_tokens: int(0, 1e5), reasoning_tokens: int(0, 1e5), gen_tok_s: num(1e5),
     prompt_tok_s: num(1e6), load_s: num(3600), ttft_s: num(3600), e2e_tok_s: num(1e5), cost_usd: num(100),
+    cpu_busy: num(1), // share of the CPU other programs used in the pause before the call (0-1)
   },
 };
 
@@ -85,7 +86,7 @@ export const REPORT_SCHEMA: Schema = {
 
 export const REPORT_MAX_BYTES = 32768;
 
-export type Sample = Partial<Record<"elapsed_s" | "output_tokens" | "reasoning_tokens" | "gen_tok_s" | "prompt_tok_s" | "load_s" | "ttft_s" | "e2e_tok_s" | "cost_usd", number | null>>;
+export type Sample = Partial<Record<"elapsed_s" | "output_tokens" | "reasoning_tokens" | "gen_tok_s" | "prompt_tok_s" | "load_s" | "ttft_s" | "e2e_tok_s" | "cost_usd" | "cpu_busy", number | null>>;
 export type ReportResult = {
   model: string; engine: (typeof ENGINES)[number]; engine_version?: string | null; samples: Sample[];
   quant?: string | null; params?: string | null; digest?: string | null; file?: string | null; settings?: string | null;

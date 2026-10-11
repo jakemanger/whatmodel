@@ -7,7 +7,7 @@ curl -fsSL https://whatmodel.sh/bench.sh | sh
 ```
 
 The launcher downloads the Python runner, verifies its checksum, and reconnects input to your
-terminal so menus work when piped to sh. It installs nothing. To run a checkout directly:
+terminal so menus work when piped to sh. It installs and downloads nothing unless you say yes. To run a checkout directly:
 
 ```sh
 python3 bench.py
@@ -17,7 +17,8 @@ python3 bench.py --plain
 
 ## Select and run
 
-The menu finds models on standard local Ollama, llama.cpp, LM Studio and vLLM ports.
+The menu finds Ollama models, GGUF files for llama.cpp, MLX models (Apple silicon), and models on standard
+local llama.cpp, LM Studio, vLLM and Jan ports. It offers to start Ollama or LM Studio's server for the session.
 It detects installed command-line tools without reading project files or credentials.
 Add a compatible streaming chat API (base URL including `/v1`) and enter its key at the hidden
 prompt, or select an existing GGUF file for `llama-bench`. Endpoints must provide `/models`
@@ -27,7 +28,10 @@ native API supports that contract. A failed call is reported, never retried with
 Type to search, use arrows to move, Space to tick and Enter to confirm. Nothing starts selected.
 Choose repetitions and the output limit, review the destinations/commands, and confirm the plan.
 Progress and each numeric result appear as it runs. Ctrl-C stops the remaining plan.
-No model files or runtimes are downloaded automatically.
+Missing tools are listed with their official install commands. Pick any to install: each command is shown
+first and runs only after you say yes (desktop apps such as LM Studio open their download page instead).
+A runtime with nothing to test is offered one small model (Qwen3 0.6B, under 0.6 GB). Nothing is
+installed or downloaded without asking.
 
 Codex and Claude Code can run a fixed text task using existing authentication, an empty temporary
 directory and restricted CLI options. Recent CLI versions are required. Other detected agents
@@ -39,8 +43,11 @@ system context, and do not have a hard output-token cap. No project content is s
 - Ollama: runtime-reported generation and prompt tokens/sec, load time and wall time.
 - Compatible API: first visible text latency, wall time, and end-to-end tokens/sec when usage is
   returned. End-to-end throughput includes queuing and prompt processing.
-- llama-bench: synthetic 512-token prompt processing and selected-length generation throughput,
-  with one internal repetition per outer run. It does not use the gardening prompt.
+- llama-bench (or `llama bench`): synthetic 512-token prompt processing and selected-length generation
+  throughput, with one internal repetition per outer run. It does not use the gardening prompt.
+- MLX (`mlx_lm.benchmark`): the same synthetic protocol on Apple silicon: a 512-token prompt and the
+  selected number of generated tokens, one trial per outer run after its own warm-up.
+- Reasoning models count their thinking tokens as generated tokens in tokens/sec.
 - Agents: fixed-task completion and elapsed time, not model token throughput or coding quality.
 
 Runs are sequential. The first run is retained; caches and already loaded models are not cleared.

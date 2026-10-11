@@ -1,6 +1,6 @@
 #!/bin/sh
 # curl -fsSL https://whatmodel.sh/bench.sh | sh
-# Requires Python 3.9+ and curl. No sudo, pip installs, model downloads or auto-submission.
+# Requires Python 3.9+ and curl. Installs or downloads nothing unless you say yes, and never submits automatically.
 set -eu
 command -v python3 >/dev/null 2>&1 || { echo 'whatmodel bench needs Python 3.9+.' >&2; exit 1; }
 command -v curl >/dev/null 2>&1 || { echo 'whatmodel bench needs curl.' >&2; exit 1; }
@@ -13,7 +13,7 @@ trap 'exit 143' TERM
 curl -fsSL --proto '=https' --proto-redir '=https' --max-time 60 https://whatmodel.sh/bench.py -o "$bench_tmp/bench.py"
 python3 - "$bench_tmp/bench.py" <<'PY'
 import hashlib,sys
-expected = 'e7bcfe798292096fb3f6ad29bb4a9283179f569336ab80bc4b8379a2cb4a0d89'
+expected = 'c48c132220e6358ded1b66650f60f494333596d8e9e9ed015431c52174f33bca'
 if hashlib.sha256(open(sys.argv[1],'rb').read()).hexdigest() != expected:
     sys.exit('Benchmark download did not match this launcher. Please download a fresh bench.sh and retry.')
 PY

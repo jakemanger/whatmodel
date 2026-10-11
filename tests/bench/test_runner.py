@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[2]
 spec = importlib.util.spec_from_file_location('bench', ROOT / 'bench.py')
 bench = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(bench)
+bench.PAUSE_S = (0, 0)  # no real pauses in tests; the schedule test patches its own range
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -127,15 +128,37 @@ class RunnerTests(unittest.TestCase):
         self.assertEqual(bench.most_tokens(text),120)
         self.assertIsNone(bench.most_tokens('not json'))
 
-    def test_schedule_warms_up_first_then_shuffles_each_round(self):
+    def test_schedule_warms_up_first_then_shuffles_each_round_with_random_pauses(self):
         ts=[dict(label=str(i)) for i in range(4)]
-        order=bench.schedule(ts,3,1,seed=7)
-        self.assertEqual([n for _,n in order[:4]],[0,0,0,0])
+        with patch.object(bench,'PAUSE_S',(1.0,3.0)):
+            order=bench.schedule(ts,3,1,seed=7)
+            self.assertEqual(order,bench.schedule(ts,3,1,seed=7))  # replayable from the seed
+        self.assertEqual([n for _,n,_ in order[:4]],[0,0,0,0])
         for r in range(3):
             chunk=order[4+4*r:8+4*r]
-            self.assertEqual(sorted(t['label'] for t,_ in chunk),['0','1','2','3'])
-            self.assertTrue(all(n==r+1 for _,n in chunk))
-        self.assertEqual(order,bench.schedule(ts,3,1,seed=7))
+            self.assertEqual(sorted(t['label'] for t,_,_ in chunk),['0','1','2','3'])
+            self.assertTrue(all(n==r+1 for _,n,_ in chunk))
+        pauses=[p for _,_,p in order]
+        self.assertTrue(all(1.0<=p<=3.0 for p in pauses) and len(set(pauses))>1)
+
+    def test_installs_run_only_after_a_yes(self):
+        missing=[dict(name='llama.cpp',why='',cmd=bench.INSTALL['llama.cpp'],url=None),dict(name='LM Studio',why='',cmd=None,url='https://lmstudio.ai/download')]
+        for answer,expected in ((False,[]),(True,[['/bin/sh','-c',bench.INSTALL['llama.cpp']]])):
+            with patch.object(bench,'ask',return_value='1 2'), patch.object(bench,'yes',return_value=answer), \
+                 patch.object(bench.subprocess,'run') as run, patch.object(bench.webbrowser,'open') as browser, \
+                 contextlib.redirect_stdout(io.StringIO()):
+                run.return_value.returncode=0
+                bench.offer_installs(missing)
+                self.assertEqual([c.args[0] for c in run.call_args_list],expected)
+                self.assertEqual(browser.call_count,1 if answer else 0)  # a download page opens only after a yes too
+
+    def test_mlx_reads_the_benchmark_averages(self):
+        out='Running warmup..\nTrial 1:  prompt_tps=1504.990, generation_tps=214.803, peak_memory=0.484\nAverages: prompt_tps=1647.454, generation_tps=211.096, peak_memory=0.515\n'
+        with patch.object(bench,'run_process',return_value=(0,out)) as proc:
+            self.assertEqual(bench.run_mlx(dict(path='/m'),64,1),{'gen_tok_s':211.1,'prompt_tok_s':1647.45})
+        self.assertEqual(proc.call_args.args[0][:3],['mlx_lm.benchmark','--model','/m'])
+        with patch.object(bench,'run_process',return_value=(0,'no numbers')), self.assertRaises(ValueError):
+            bench.run_mlx(dict(path='/m'),64,1)
 
     def test_subscription_tools_stop_at_the_token_cap(self):
         t=dict(kind='fake',group='subscription',label='agent')
@@ -193,7 +216,8 @@ class RunnerTests(unittest.TestCase):
         target=dict(kind='ollama',group='local',label='model',model='m',base=self.base)
         with patch.object(bench.sys,'argv',['bench']), patch.object(bench.sys.stdin,'isatty',return_value=True), \
              patch.object(bench,'discover',return_value=found([target])), patch.object(bench,'choose',return_value=[target]), \
-             patch.object(bench,'yes',return_value=False), patch.object(bench,'run_all') as run, \
+             patch.object(bench,'ask',return_value=''), patch.object(bench,'yes',return_value=False), patch.object(bench,'run_all') as run, \
+             patch.object(bench,'offer_installs',return_value=False), patch.object(bench,'offer_test_models',return_value=False), \
              patch.object(bench.webbrowser,'open') as browser, contextlib.redirect_stdout(io.StringIO()):
             self.assertEqual(bench.main(),0)
             run.assert_not_called()
@@ -209,6 +233,7 @@ class RunnerTests(unittest.TestCase):
                  patch.object(bench,'discover',return_value=found([target])), patch.object(bench,'choose',return_value=[target]), \
                  patch.object(bench,'ask',return_value='public-model'), patch.object(bench,'yes',side_effect=[True,True,False]), \
                  patch.object(bench,'load_catalogue',return_value=[]), \
+                 patch.object(bench,'offer_installs',return_value=False), patch.object(bench,'offer_test_models',return_value=False), \
                  patch.object(bench.tempfile,'mkstemp',side_effect=create), patch.object(bench.webbrowser,'open') as browser, \
                  contextlib.redirect_stdout(io.StringIO()):
                 self.assertEqual(bench.main(),0)
