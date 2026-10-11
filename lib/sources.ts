@@ -28,7 +28,12 @@ export const host = (url: string) => new URL(url).hostname.replace(/^www\./, "")
 
 // The ledger entry for a URL: the longest matching prefix wins, so a dataset on
 // huggingface.co isn't mistaken for a model card.
-export const sourceOf = (url: string): Source | undefined => sourceIn(SOURCES, url);
+// The ledger never changes while a process runs, so each URL is looked up once.
+const seen = new Map<string, Source | undefined>();
+export const sourceOf = (url: string): Source | undefined => {
+  if (!seen.has(url)) seen.set(url, sourceIn(SOURCES, url));
+  return seen.get(url);
+};
 
 // The same lookup in any ledger, e.g. one with a proposed entry added (scripts/contrib).
 export function sourceIn(sources: Source[], url: string): Source | undefined {

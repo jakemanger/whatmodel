@@ -1,8 +1,9 @@
 // Plain-text leaderboard for curl and agents, plus labels shared with the web page.
 
 import { CATEGORIES } from "./categories.ts";
+import { primary } from "./runtimes.ts";
 import { hasScore, usable, type Row, type RowSpeed } from "./fit.ts";
-import type { Category, Specs } from "./types.ts";
+import type { Category, Specs, Variant } from "./types.ts";
 
 export const sponsor: { text: string; url: string } | null = null;
 
@@ -130,7 +131,7 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
     const g = hasScore(r) ? `${Math.round(r.score)}±${Math.round(r.pm)}${(r.thin ? "*" : "") + (r.maker_only ? "†" : "") || " "}` : "—";
     const run = whereLabel(r).padEnd(18);
     const color = r.where === "local" ? "32" : r.where === "api" ? "36" : r.where === "local-slow" ? "33" : "2";
-    const line = `  ${String(r.rank ?? "—").padStart(3)}  ${fit(displayName(r))}  ${g.padStart(7)}  ${c(color, run)}  ${speedLabel(r.speed).padStart(12)}  ${(r.mem_gb !== null ? `~${Math.round(r.mem_gb)}GB` : "").padStart(5)}  ${o.cat === "llm" ? `${contextLabel(r.context_k).padStart(7)}  ` : ""}${r.cmd ?? ""}`;
+    const line = `  ${String(r.rank ?? "—").padStart(3)}  ${fit(displayName(r))}  ${g.padStart(7)}  ${c(color, run)}  ${speedLabel(r.speed).padStart(12)}  ${(r.mem_gb !== null ? `~${Math.round(r.mem_gb)}GB` : "").padStart(5)}  ${o.cat === "llm" ? `${contextLabel(r.context_k).padStart(7)}  ` : ""}${!r.cmd || r.cmd.startsWith("http") ? r.cmd ?? "" : primary({ cmd: r.cmd } as Variant).cmd}`;
     out.push(r.where === "none" || r.where === "retired" ? c("2", line) : line);
   }
   out.push("");

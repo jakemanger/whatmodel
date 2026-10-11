@@ -9,6 +9,9 @@ import { contextLabel, curlFor, detect, displayName, price, speedLabel, whereLab
 import { sourceName, sourceOf } from "./sources.ts";
 import type { Category, Model } from "./types.ts";
 import { benchName, boardView, methodView, modelView, pageModels, resultLabel, type BoardView, type ModelView } from "./views.ts";
+import { strengths, type Strengths, type TestRow } from "./strengths.ts";
+import { RUNTIMES, primary, stepsFor } from "./runtimes.ts";
+import type { Variant } from "./types.ts";
 
 const SITE = "https://whatmodel.sh";
 
@@ -77,10 +80,12 @@ const MACHINES: [string, string][] = [
   ["16GB, no graphics card", "ram=16&gpu=none"],
 ];
 
+// Short API host for the table: "docs.anthropic.com" -> "anthropic.com".
+const apiHost = (url: string) => hostOf(url).replace(/^(platform|docs|developers|api-docs|console|cloud|build|ai)\./, "");
 function boardTable(from: string, cat: Category, rows: BoardView["shown"]) {
   return pre(
-    [{ head: "#", right: true }, { head: "model", max: 26 }, { head: "score", right: true }, { head: "where", max: 21 }, { head: "speed", right: true },
-      { head: "RAM", right: true }, { head: "context", right: true }, { head: "get it", max: 20 }],
+    [{ head: "#", right: true }, { head: "model", max: 26 }, { head: "score", right: true }, { head: "where", max: 18 }, { head: "speed", right: true },
+      { head: "RAM", right: true }, { head: "context", right: true }, { head: "get it", max: 16 }],
     rows.map((r) => [
       String(r.rank ?? "—"),
       { text: displayName(r), href: rel(from, files.model(r.id)) },
@@ -89,7 +94,9 @@ function boardTable(from: string, cat: Category, rows: BoardView["shown"]) {
       speedLabel(r.speed),
       r.mem_gb !== null ? `~${r.mem_gb < 10 ? r.mem_gb : Math.round(r.mem_gb)}GB` : "",
       cat === "llm" ? contextLabel(r.context_k) : "",
-      !r.cmd ? "" : r.cmd.startsWith("http") ? { text: hostOf(r.cmd), href: r.cmd } : r.cmd,
+      // Local rows link to the model page's run instructions; API rows to the API's docs.
+      !r.cmd ? "" : r.cmd.startsWith("http") ? { text: `${apiHost(r.cmd)} ↗`, href: r.cmd }
+        : { text: `${primary({ cmd: r.cmd } as Variant).runtime.id === "other" ? "how to run" : primary({ cmd: r.cmd } as Variant).runtime.name} ›`, href: `${rel(from, files.model(r.id))}#run-it-on-your-own-machine` },
     ]));
 }
 
@@ -167,6 +174,53 @@ function licences(from: string, urls: string[]) {
   return seen.size ? `<sub>Licences: ${[...seen.values()].join(" · ")}</sub>` : "";
 }
 
+
+// A model's results by task (lib/strengths.ts): a summary table, then each task's tests.
+const SPARK = " ▁▂▃▄▅▆▇█";
+const sparkText = (t: { spread: number[]; at: number }) => { const top = Math.max(...t.spread, 1); return t.spread.map((n, i) => (i === t.at ? "●" : n ? SPARK[Math.max(1, Math.round((n / top) * 8))] : "·")).join(""); };
+const sharePct = (x: number) => `${x >= 0.095 ? Math.round(x * 100) : (x * 100).toFixed(1)}%`;
+const WHY: Record<TestRow["why"][number], string> = { sharp: "sharp", blunt: "blunt", level: "at its level", maxed: "maxed out", floor: "too hard for it", noisy: "noisy", small: "small run", runs: "several runs", typical: "typical" };
+const testTable = (tests: TestRow[]) => pre(
+  [{ head: "test", max: 34 }, { head: "result", right: true }, { head: "vs the others in its run" }, { head: "difficulty", max: 24 }, { head: "counts", right: true }, { head: "why", max: 40 }],
+  tests.map((t) => [
+    { text: `${benchName(t.bench)}${t.result.by === "lab" ? " (lab)" : ""}`, href: t.result.source }, resultLabel(t.result),
+    t.tested > 1 ? `${sparkText(t)} beats ${t.beaten}/${t.tested - 1}` : "no other model yet",
+    [t.hard, t.typical && `avg ${t.typical}`].filter(Boolean).join(" · "),
+    t.share !== null ? sharePct(t.share) : "—",
+    t.unused ?? t.why.map((w) => WHY[w]).join(" · "),
+  ]));
+function strengthsMarkdown(from: string, s: Strengths, name: string): string[] {
+  if (!s.tasks.length && !s.other.length) return [];
+  const out = [`## What it's good at`, `<sub>● marks ${text(name)} among every model on that task or test, worst to best.</sub>`];
+  out.push(pre([{ head: "task", max: 22 }, { head: "vs the others" }, { head: "rank", right: true }, { head: "counts", right: true }, { head: "tests", right: true }],
+    s.tasks.map((t) => [t.label, t.rank !== null ? sparkText(t) : "", t.rank !== null ? `#${t.rank} of ${t.total}${t.n < 3 ? "*" : ""}` : "not ranked yet", t.share ? sharePct(t.share) : "—", String(t.tests.length)])));
+  for (const t of s.tasks) {
+    const peers = (list: { id: string; name: string }[]) => list.map((p) => `[${text(p.name)}](${rel(from, files.model(p.id))})`).join(", ");
+    const lines = [
+      t.beats.length ? `Beats ${peers(t.beats)} here, though they rank higher overall.` : "",
+      t.trails.length ? `Trails ${peers(t.trails)} here, though they rank lower overall.` : "",
+    ].filter(Boolean).join(" ");
+    out.push(`<details><summary>${html(t.label)}${t.rank !== null ? ` · #${t.rank} of ${t.total}` : ""} · ${sharePct(t.share)} of its score</summary>\n\n${lines ? lines + "\n\n" : ""}${testTable(t.tests)}\n\n</details>`);
+  }
+  if (s.other.length) out.push(`<details><summary>other tests (${s.other.length})</summary>\n\n${testTable(s.other)}\n\n</details>`);
+  return out;
+}
+
+
+// Local downloads by runtime, llama.cpp first: each runtime's install line, then a command block.
+function localMarkdown(variants: { v: Variant; name: string }[]): string[] {
+  const out = [`### Run it on your own machine`];
+  for (const rt of RUNTIMES) {
+    const rows = variants.flatMap(({ v, name }) => stepsFor(v).filter((x) => x.runtime === rt.id).map((x) => ({ v, name, steps: x.steps })));
+    if (!rows.length) continue;
+    const install = rt.install.map((i) => (i.cmd ? `${i.label} \`${i.cmd}\`` : `[${i.label}](${i.href})`)).join(" · ");
+    out.push(`**${rt.id === "other" ? "Other engines" : rt.name}**${install ? ` · install: ${install}` : ""}${rt.note ? ` · ${rt.note}` : ""}`);
+    out.push(["```sh", ...rows.flatMap(({ v, name, steps }) => [`# ${name} · ${v.gb_estimated ? "~" : ""}${v.gb}GB`,
+      ...steps.filter((st) => !st.href).flatMap((st, i) => (st.cmd ? [...(i > 0 ? [`# ${st.label}`] : []), st.cmd] : [`# ${st.label}`]))]), "```"].join("\n"));
+  }
+  return out;
+}
+
 export function modelMarkdown(v: ModelView): string {
   const m = v.model;
   const from = files.model(m.id);
@@ -187,7 +241,7 @@ export function modelMarkdown(v: ModelView): string {
     if (m.api || m.local?.variants.length) {
       out.push(`## How to run it`);
       out.push(...howToRun(m, cat));
-      if (m.local?.variants.length) out.push(["```sh", ...m.local.variants.map((x) => x.cmd), "```"].join("\n"));
+      if (m.local?.variants.length) out.push(...localMarkdown(m.local.variants.map((x) => ({ v: x, name: x.quant }))));
     }
     out.push(`[Sources and licences](${rel(from, files.method)}#sources) · [raw data](${rel(from, "data/results.json")}) · [interactive version](${SITE}/model/${m.id})`);
     return out.filter(Boolean).join("\n\n") + "\n";
@@ -202,17 +256,19 @@ export function modelMarkdown(v: ModelView): string {
   out.push(`**score ${s.g.toFixed(1)}** ±${s.pm.toFixed(1)} · ${v.place ? `#${v.place} of ${v.total}` : "comparison only: no current run option verified"} · from ${pl(s.n, "benchmark result")} across ${pl(v.sources.length, "source")}${s.n < 3 ? " · \\* thinly tested, treat the rank as provisional" : ""}${s.n > 0 && s.lab === s.n ? " · † every result so far was reported by its maker" : ""}`);
   if (v.set) out.push(`Score within the [${text(v.set.label)}](${SITE}${CATEGORIES[cat].path}?set=${encodeURIComponent(v.set.id)}&score=set) comparison set only.`);
 
+  const st = strengths(m.id);
+  if (st) out.push(...strengthsMarkdown(from, st, m.name));
+
   out.push(`## How the score was worked out`);
-  out.push(`Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](${rel(from, files.method)})`);
-  const rows: Cell[][] = v.groups.flatMap((grp) => grp.rows.map(({ r, g, share, avg }, i) => [
-    i === 0 ? { text: shortName(sourceName(r.source)), anchor: grp.id } : "",
-    { text: `${benchName(r.bench)}${r.by === "lab" ? " (lab)" : ""}`, href: r.source },
-    resultLabel(r), `${g.toFixed(1)}${avg > 1 ? "~" : " "}`, r.date ?? "", bar(share),
-  ]));
-  rows.push(["prior", "pull toward the middle", "", `${e.prior.g.toFixed(1)} `, "", bar(e.prior.share)]);
-  rows.push(["", "weighted average", "", `= ${s.g.toFixed(1)} `, "", ""]);
-  out.push(pre([{ head: "source", max: 22 }, { head: "test", max: 30 }, { head: "score", right: true }, { head: "implies", right: true }, { head: "date" }, { head: "weight" }], rows));
-  out.push(`<sub>~ averaged with other results for the same test</sub>\n\n${licences(from, v.groups.flatMap((g) => g.rows.map((x) => x.r.source)))}`);
+  out.push(`Each result implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average, with a small pull toward the middle for thinly tested models. Each test's weight is its *counts* column above; here it is added up by who ran the tests. [Method](${rel(from, files.method)})`);
+  const rows: Cell[][] = v.groups.map((grp) => [
+    { text: shortName(sourceName(grp.rows[0].r.source)) + (grp.rows.every((x) => x.r.by === "lab") ? " (lab)" : ""), href: grp.rows[0].r.source, anchor: grp.id },
+    String(grp.rows.length), bar(grp.share),
+  ]);
+  rows.push(["prior: pull toward the middle", "", bar(e.prior.share)]);
+  rows.push(["weighted average", "", `= ${s.g.toFixed(1)}`]);
+  out.push(pre([{ head: "source", max: 40 }, { head: "results", right: true }, { head: "share of the score" }], rows));
+  out.push(licences(from, v.groups.flatMap((g) => g.rows.map((x) => x.r.source))));
   if (v.unused.length) {
     const why = { untracked: "not a tracked benchmark", "other-source": "only model in this source's run", sparse: "too few models have it yet", failed: "failed run" };
     out.push(`<details><summary>Not counted (${v.unused.length})</summary>\n\n` + pre([{ head: "source", max: 22 }, { head: "test", max: 30 }, { head: "score", right: true }, { head: "why" }],
@@ -225,8 +281,8 @@ export function modelMarkdown(v: ModelView): string {
     const name = (x: (typeof v.variants)[number]) => `${x.label}${x.label !== x.v.quant ? ` ${x.v.quant}` : ""}${x.v.platform && x.v.platform !== "any" ? ` · ${x.v.platform} only` : ""}`;
     out.push(pre([{ head: cat === "llm" ? "download" : "version", max: 40 }, { head: cat === "llm" ? "size" : "needs", right: true }, { head: "score", right: true }],
       v.variants.map((x) => [name(x), `${x.v.gb_estimated ? "~" : ""}${x.v.gb}GB`, x.g.toFixed(1)])));
-    out.push(["```sh", ...v.variants.flatMap((x) => [`# ${name(x)}`, x.v.cmd]), "```"].join("\n"));
     out.push(`<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>`);
+    out.push(...localMarkdown(v.variants.map((x) => ({ v: x.v, name: name(x) }))));
   } else out.push(m.api ? "no verified local download listed" : "no current API or local download verified");
 
   if (v.measured.length) {
