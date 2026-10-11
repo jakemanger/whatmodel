@@ -36,7 +36,9 @@ CALL_TIMEOUT = 180
 # Per-tool caps for subscription and API tools: a run stops early once either is reached.
 AGENT_TOKEN_CAP = 4000
 CLAUDE_USD_PER_CALL = 0.10
-LOCAL_PORTS = [('llama.cpp server', 8080), ('LM Studio', 1234), ('vLLM / SGLang', 8000), ('SGLang', 30000), ('Jan', 1337)]
+# llama.cpp moved its default server port to 9931 in October 2026; 8080 is older builds and MLX-LM.
+LOCAL_PORTS = [('llama.cpp server', 9931), ('llama.cpp / MLX-LM', 8080), ('LM Studio', 1234), ('vLLM / SGLang', 8000),
+               ('SGLang', 30000), ('Jan', 1337), ('Jan', 6767)]
 INSTALL = {
     'Ollama': 'curl -fsSL https://ollama.com/install.sh | sh',
     'llama.cpp': 'curl -LsSf https://llama.app/install.sh | sh',
@@ -338,13 +340,27 @@ def probe_ollama(p):
 
 def gguf_dirs():
     home = Path.home()
+    hf_home = os.environ.get('HF_HOME')
+    # Current llama.cpp saves `-hf` downloads in the Hugging Face cache.
     dirs = [os.environ.get('LLAMA_CACHE'), home / 'Library/Caches/llama.cpp', home / '.cache/llama.cpp',
-            home / '.lmstudio/models', home / '.cache/lm-studio/models']
-    return [Path(d) for d in dirs if d and Path(d).is_dir()]
+            home / '.lmstudio/models', home / '.cache/lm-studio/models',
+            os.environ.get('HF_HUB_CACHE'), hf_home and Path(hf_home) / 'hub', home / '.cache/huggingface/hub']
+    seen, out = set(), []
+    for d in dirs:
+        if d and Path(d).is_dir() and Path(d).resolve() not in seen:
+            seen.add(Path(d).resolve()); out.append(Path(d))
+    return out
+
+
+def bench_command():
+    # llama.app installs ship one `llama` command with a `bench` subcommand instead of llama-bench.
+    if shutil.which('llama-bench'): return ['llama-bench']
+    if shutil.which('llama') and output(['llama', 'bench', '--help'], stderr=True): return ['llama', 'bench']
+    return None
 
 
 def probe_llamacpp(p):
-    bench = shutil.which('llama-bench')
+    bench = bench_command()
     p.extra['installed'] = bool(bench or shutil.which('llama-server') or shutil.which('llama'))
     files = []
     for d in gguf_dirs():
@@ -354,9 +370,9 @@ def probe_llamacpp(p):
                 continue
             files.append(path)
     if bench:
-        version = output(['llama-bench', '--version'])
+        version = output([*bench, '--version'])
         for path in files[:200]:
-            p.targets.append(target('llama-bench', 'local', f'llama.cpp · {clean(path.name, 70)}', path=str(path),
+            p.targets.append(target('llama-bench', 'local', f'llama.cpp · {clean(path.name, 70)}', path=str(path), bench=bench,
                                     model=path.stem, size=path.stat().st_size, detail=gib(path.stat().st_size),
                                     engine_version=clean(version.splitlines()[0] if version else '', 40) or None))
     if not p.extra['installed']:
@@ -506,7 +522,7 @@ def stop_process(proc):
 def recommendations(found):
     missing = []
     if not found['ollama'].extra.get('installed'): missing.append(('Ollama', 'easiest way to run local models; then: ollama pull llama3.2:3b'))
-    if not found['llamacpp'].extra.get('installed'): missing.append(('llama.cpp', 'fastest local engine; then: llama serve -hf ggml-org/Qwen3.5-0.8B-GGUF'))
+    if not found['llamacpp'].extra.get('installed'): missing.append(('llama.cpp', 'fastest local engine; then: llama serve -hf ggml-org/Qwen3.5-0.8B-GGUF:Q8_0'))
     if not shutil.which('claude'): missing.append(('Claude Code', 'uses your Claude subscription'))
     if not shutil.which('codex'): missing.append(('Codex CLI', 'uses your ChatGPT plan'))
     if not shutil.which('gemini'): missing.append(('Gemini CLI', 'free with a Google account'))
@@ -670,7 +686,7 @@ def run_openai(t, tokens, n):
 
 def run_llama_bench(t, tokens, n):
     with tempfile.TemporaryDirectory(prefix='whatmodel-') as work:
-        code, out = run_process(['llama-bench', '-m', t['path'], '-p', '512', '-n', str(tokens), '-r', '1', '-o', 'json'], work)
+        code, out = run_process([*t.get('bench', ['llama-bench']), '-m', t['path'], '-p', '512', '-n', str(tokens), '-r', '1', '-o', 'json'], work)
     if code: raise RuntimeError('llama-bench failed')
     rows = json.loads(out)
     pp = [r['avg_ts'] for r in rows if r.get('n_prompt', 0) > 0 and not r.get('n_gen')]
