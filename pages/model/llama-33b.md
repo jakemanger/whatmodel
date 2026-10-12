@@ -14,11 +14,11 @@ Meta · released 2023-02 · 32.5B params · llama-1-noncommercial-research
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▂▁   #519 of 549     21%      2
-math    ▁▂●▅▇▅▅█▄▁▁▁   #426 of 464     15%      2
+coding  ▁▁▁●▅▇█▇▅▄▃▁   #495 of 524     21%      2
+math    ▁▂●▅▇▅▅█▄▁▁▁   #424 of 462     15%      2
 </pre>
 
-<details><summary>coding · #519 of 549 · 21% of its score</summary>
+<details><summary>coding · #495 of 524 · 21% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test       result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #426 of 464 · 15% of its score</summary>
+<details><summary>math · #424 of 462 · 15% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md), [OLMo 2 1B Instruct (0425)](olmo-2-1b.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 

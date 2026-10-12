@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 123B params · modified-mit
 
-**score 62.2** ±1.7 · #189 of 949 · from 5 benchmark results across 3 sources
+**score 62.2** ±1.7 · #176 of 719 · from 5 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -15,7 +15,7 @@ Mistral · released 2025-12 · 123B params · modified-mit
 <pre>
 task         vs the others         rank  counts  tests
 agent tasks  █··········●       #1 of 2     37%      3
-coding       ▁▁▁▃▆██●▆▄▃▁   #181 of 469     69%      3
+coding       ▁▁▁▃▆██●▆▄▃▁   #179 of 458     69%      3
 </pre>
 
 <details><summary>agent tasks · #1 of 2 · 37% of its score</summary>
@@ -29,7 +29,7 @@ test                          result  vs the others in its run   difficulty     
 
 </details>
 
-<details><summary>coding · #181 of 469 · 69% of its score</summary>
+<details><summary>coding · #179 of 458 · 69% of its score</summary>
 
 Beats [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [OpenThinker 32B](openthinker-32b.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
 

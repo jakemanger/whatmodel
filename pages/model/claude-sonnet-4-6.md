@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-02 · closed weights
 
-**score 72.3** ±0.6 · #65 of 949 · from 41 benchmark results across 22 sources
+**score 72.3** ±0.6 · #62 of 719 · from 41 benchmark results across 22 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Anthropic · released 2026-02 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄●▂▁    #44 of 334     39%     12
-coding              ▁▁▁▃▆██▇▆●▃▁    #45 of 469     28%      5
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #30 of 466*    3.8%      1
-math                ▁▂▃▅▆▅●█▄▁▁▁   #149 of 400    3.5%      3
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄    #31 of 150     11%      7
-web search          ▂▂▂▆▄●▃▃▁▁·▁     #31 of 81    5.2%      3
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #44 of 300     39%     12
+coding              ▁▁▁▃▆██▇▆●▃▁    #45 of 458     28%      5
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #30 of 393*    3.8%      1
+math                ▁▂▃▅▆▅●█▄▁▁▁   #148 of 398    3.5%      3
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #31 of 147     11%      7
+web search          ▂▁▂▆▄●▃▃▁▁·▁     #31 of 80    5.2%      3
 </pre>
 
-<details><summary>agent tasks · #44 of 334 · 39% of its score</summary>
+<details><summary>agent tasks · #44 of 300 · 39% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #45 of 469 · 28% of its score</summary>
+<details><summary>coding · #45 of 458 · 28% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Mistral Large 4 (public preview)](mistral-large-4.md) here, though they rank lower overall.
 
@@ -59,7 +59,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #30 of 466 · 3.8% of its score</summary>
+<details><summary>chat &amp; writing · #30 of 393 · 3.8% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank lower overall.
 
@@ -70,7 +70,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #149 of 400 · 3.5% of its score</summary>
+<details><summary>math · #148 of 398 · 3.5% of its score</summary>
 
 Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Olmo 3 32B Think](olmo-3-32b-think.md) here, though they rank lower overall.
 
@@ -83,7 +83,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #31 of 150 · 11% of its score</summary>
+<details><summary>vision &amp; documents · #31 of 147 · 11% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall. Trails [Qwen3.6 Plus](qwen3-6-plus.md), [Qwen3.7 Plus](qwen3-7-plus.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md) here, though they rank lower overall.
 
@@ -100,7 +100,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #31 of 81 · 5.2% of its score</summary>
+<details><summary>web search · #31 of 80 · 5.2% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [GPT-5.3-Codex](gpt-5-3-codex.md), [Qwen3.7 Max](qwen3-7-max.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

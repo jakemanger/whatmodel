@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 33.4B params · apache-2.0
 
-**score 60.1** ±0.8 · #216 of 949 · from 25 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.1** ±0.8 · #194 of 719 · from 25 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Alibaba · released 2025-10 · 33.4B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▄▄▃▂▁   #169 of 334*    2.1%      1
-coding              ▁▁▁▃▆●█▇▆▄▃▁   #299 of 469*    4.7%      1
-chat &amp; writing      ▁▁▁▄▆▅▆●▆▆▆▂   #188 of 466*    2.7%      1
-math                ▁▂▃▅▆▅●█▄▁▁▁   #160 of 400*     10%      2
-vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄     #86 of 150     49%     13
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #160 of 300*    2.1%      1
+coding              ▁▁▁▃▆●█▇▆▄▃▁   #295 of 458*    4.7%      1
+chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #179 of 393*    2.7%      1
+math                ▁▂▃▅▆▅●█▄▁▁▁   #159 of 398*     10%      2
+vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄     #86 of 147     49%     13
 </pre>
 
-<details><summary>agent tasks · #169 of 334 · 2.1% of its score</summary>
+<details><summary>agent tasks · #160 of 300 · 2.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test           result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #299 of 469 · 4.7% of its score</summary>
+<details><summary>coding · #295 of 458 · 4.7% of its score</summary>
 
 Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #188 of 466 · 2.7% of its score</summary>
+<details><summary>chat &amp; writing · #179 of 393 · 2.7% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #160 of 400 · 10% of its score</summary>
+<details><summary>math · #159 of 398 · 10% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Granite 4.2 3B](granite-4-2-3b.md) here, though they rank lower overall.
 
@@ -66,9 +66,9 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #86 of 150 · 49% of its score</summary>
+<details><summary>vision &amp; documents · #86 of 147 · 49% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md), [GLM-4.6V](glm-4-6v.md) here, though they rank higher overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.6V](glm-4-6v.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why

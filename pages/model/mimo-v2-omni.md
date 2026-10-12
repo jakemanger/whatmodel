@@ -14,11 +14,11 @@ Xiaomi · released 2026-03 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▅▆█▆▆●▂   #96 of 579*     30%      1
-vision &amp; documents  ▁▁▃▃▂▃▅▅●▇█▃    #75 of 199     68%      4
+chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃   #86 of 463*     30%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #73 of 182     68%      4
 </pre>
 
-<details><summary>chat &amp; writing · #96 of 579 · 30% of its score</summary>
+<details><summary>chat &amp; writing · #86 of 463 · 30% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Mistral Large 4 (public preview)](mistral-large-4.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #75 of 199 · 68% of its score</summary>
+<details><summary>vision &amp; documents · #73 of 182 · 68% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md), [Qwen3.6 Flash](qwen3-6-flash.md) here, though they rank lower overall.
 

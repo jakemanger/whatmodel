@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-09 · 9.41B params · mit
 
-**score 65.3** ±2.2 · #150 of 949 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 65.3** ±2.2 · #140 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Xiaomi · released 2026-09 · 9.41B params · mit
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆●▄▄▃▂▁    #120 of 334     88%      4
-coding       ▁▁▁▃▆██▇●▄▃▁   #122 of 469*     55%      2
+agent tasks  ▁▁▃▆█▆●▅▅▄▃▁    #119 of 300     88%      4
+coding       ▁▁▁▃▆██▇●▄▃▁   #121 of 458*     55%      2
 </pre>
 
-<details><summary>agent tasks · #120 of 334 · 88% of its score</summary>
+<details><summary>agent tasks · #119 of 300 · 88% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #122 of 469 · 55% of its score</summary>
+<details><summary>coding · #121 of 458 · 55% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kimi K2 Thinking](kimi-k2-thinking.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md) here, though they rank lower overall.
 

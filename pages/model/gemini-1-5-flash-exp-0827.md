@@ -14,11 +14,11 @@ Google · released 2024-08 · proprietary
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇●▇▅▄▂▁   #307 of 549*     27%      2
-math    ▁▂▃▅●▅▅█▄▁▁▁   #272 of 464*    9.4%      1
+coding  ▁▁▁▃▅▇●▇▅▄▃▁   #294 of 524*     27%      2
+math    ▁▂▃▅●▅▅█▄▁▁▁   #270 of 462*    9.4%      1
 </pre>
 
-<details><summary>coding · #307 of 549 · 27% of its score</summary>
+<details><summary>coding · #294 of 524 · 27% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #272 of 464 · 9.4% of its score</summary>
+<details><summary>math · #270 of 462 · 9.4% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [OpenThinker 7B](openthinker-7b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank lower overall.
 

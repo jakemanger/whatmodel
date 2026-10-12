@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 4.3B params · gemma
 
-**score 44.1** ±0.7 · #607 of 949 · from 57 benchmark results across 17 sources
+**score 44.1** ±0.7 · #455 of 719 · from 57 benchmark results across 17 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Google · released 2025-03 · 4.3B params · gemma
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁●▆█▆▅▄▄▃▂▁   #318 of 334*    2.3%      2
-coding              ▁▁▁▃●██▇▆▄▃▁    #368 of 469     11%      5
-chat &amp; writing      ▁▁▁▄▆▅▆●▆▆▆▂    #236 of 466    7.0%      3
-math                ▁▂▃▅●▅▄█▄▁▁▁    #256 of 400     11%      6
-vision &amp; documents  ●▁▃▂▁▃▄▃▆▇█▄    #149 of 150    8.5%     10
+agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #285 of 300*    2.3%      2
+coding              ▁▁▁▃●██▇▆▄▃▁    #361 of 458     11%      5
+chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃    #219 of 393    7.0%      3
+math                ▁▂▃▅●▅▄█▄▁▁▁    #254 of 398     11%      6
+vision &amp; documents  ●▁▃▂▁▃▄▂▆▇█▄    #146 of 147    8.5%     10
 </pre>
 
-<details><summary>agent tasks · #318 of 334 · 2.3% of its score</summary>
+<details><summary>agent tasks · #285 of 300 · 2.3% of its score</summary>
 
 Beats [DBRX Instruct](dbrx-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #368 of 469 · 11% of its score</summary>
+<details><summary>coding · #361 of 458 · 11% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [OpenHermes 2.5 Mistral 7B](openhermes-2-5-mistral-7b.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #236 of 466 · 7.0% of its score</summary>
+<details><summary>chat &amp; writing · #219 of 393 · 7.0% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
@@ -61,7 +61,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #256 of 400 · 11% of its score</summary>
+<details><summary>math · #254 of 398 · 11% of its score</summary>
 
 Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md) here, though they rank lower overall.
 
@@ -77,9 +77,9 @@ test                             result  vs the others in its run    difficulty 
 
 </details>
 
-<details><summary>vision &amp; documents · #149 of 150 · 8.5% of its score</summary>
+<details><summary>vision &amp; documents · #146 of 147 · 8.5% of its score</summary>
 
-Trails [LLaVA-v1.6-Vicuna-13B](llava-v1-6-vicuna-13b.md), [Qwen2-VL 2B Instruct](qwen2-vl-2b.md), [Phi-3.5-vision-instruct](phi-3-5-vision-instruct.md) here, though they rank lower overall.
+Trails [Qwen2-VL 2B Instruct](qwen2-vl-2b.md), [Phi-3.5-vision-instruct](phi-3-5-vision-instruct.md), [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why

@@ -6,7 +6,7 @@
 
 xDAN-AI · released 2023-12 · 7.24B params · cc-by-4.0
 
-**score 35.7** ±0.8 · #795 of 949 · from 3 benchmark results across 1 source
+**score 35.7** ±0.8 · #595 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ xDAN-AI · released 2023-12 · 7.24B params · cc-by-4.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #417 of 469    100%      3
+coding  ▁▁▁▃●██▇▆▄▃▁   #408 of 458    100%      3
 </pre>
 
-<details><summary>coding · #417 of 469 · 100% of its score</summary>
+<details><summary>coding · #408 of 458 · 100% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [DeepSeek LLM 7B Chat](deepseek-llm-7b-chat.md) here, though they rank lower overall.
 

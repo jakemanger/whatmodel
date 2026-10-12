@@ -6,7 +6,7 @@
 
 BigCode · released 2023-04 · 15.82B params · bigcode-openrail-m
 
-**score 34.5** ±0.7 · #810 of 949 · from 5 benchmark results across 2 sources
+**score 34.5** ±0.7 · #606 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ BigCode · released 2023-04 · 15.82B params · bigcode-openrail-m
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #424 of 469     90%      3
+coding  ▁▁▁●▆██▇▆▄▃▁   #415 of 458     90%      3
 </pre>
 
-<details><summary>coding · #424 of 469 · 90% of its score</summary>
+<details><summary>coding · #415 of 458 · 90% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 

@@ -14,12 +14,12 @@ Mistral · released 2025-08 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▆▅●▄▃▂▁   #114 of 374*     11%      1
-chat &amp; writing      ▁▁▁▃▅▅▆█▆●▆▂   #132 of 579*     50%      1
-vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #118 of 199*     35%      1
+agent tasks         ▁▁▂▆█▆▅●▄▃▂▁   #113 of 340*     11%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #116 of 463*     50%      1
+vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #112 of 182*     35%      1
 </pre>
 
-<details><summary>agent tasks · #114 of 374 · 11% of its score</summary>
+<details><summary>agent tasks · #113 of 340 · 11% of its score</summary>
 
 Beats [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #132 of 579 · 50% of its score</summary>
+<details><summary>chat &amp; writing · #116 of 463 · 50% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [GPT-4.1](gpt-4-1.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #118 of 199 · 35% of its score</summary>
+<details><summary>vision &amp; documents · #112 of 182 · 35% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank lower overall.
 

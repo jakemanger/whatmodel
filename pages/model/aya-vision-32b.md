@@ -6,7 +6,7 @@
 
 Cohere · released 2025-03 · 33.1B params · cc-by-nc-4.0
 
-**score 42.4** ±3.0 · #659 of 949 · from 3 benchmark results across 3 sources
+**score 42.4** ±3.0 · #495 of 719 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Cohere · released 2025-03 · 33.1B params · cc-by-nc-4.0
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄   #137 of 150     96%      3
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄   #135 of 147     96%      3
 </pre>
 
-<details><summary>vision &amp; documents · #137 of 150 · 96% of its score</summary>
+<details><summary>vision &amp; documents · #135 of 147 · 96% of its score</summary>
 
 Beats [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Gemma 3 4B](gemma-3-4b.md), [CogVLM2 Llama3 Chat 19B](cogvlm2-llama3-chat-19b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 

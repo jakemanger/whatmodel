@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-05 · 19.5B params · cogvlm2
 
-**score 43.1** ±2.8 · #639 of 949 · from 5 benchmark results across 3 sources
+**score 43.1** ±2.8 · #480 of 719 · from 5 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Zhipu AI (THUDM) · released 2024-05 · 19.5B params · cogvlm2
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁●▃▂▁▃▄▃▆▇█▄   #142 of 150     96%      5
+vision &amp; documents  ▁●▃▂▁▃▄▂▆▇█▄   #140 of 147     96%      5
 </pre>
 
-<details><summary>vision &amp; documents · #142 of 150 · 96% of its score</summary>
+<details><summary>vision &amp; documents · #140 of 147 · 96% of its score</summary>
 
 Beats [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 

@@ -15,7 +15,7 @@ Mistral · released 2025-09 · proprietary
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▃█······●·▃▃       #3 of 7*     13%      1
-math    ▁▂▃▅▇▅▅●▄▁▁▁   #154 of 464*     54%      2
+math    ▁▂▃▅▇▅▅●▄▁▁▁   #154 of 462*     54%      2
 </pre>
 
 <details><summary>coding · #3 of 7 · 13% of its score</summary>
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #154 of 464 · 54% of its score</summary>
+<details><summary>math · #154 of 462 · 54% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 

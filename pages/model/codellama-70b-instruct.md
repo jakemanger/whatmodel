@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 69B params · llama2
 
-**score 46.1** ±0.6 · #551 of 949 · from 13 benchmark results across 7 sources
+**score 46.1** ±0.6 · #417 of 719 · from 13 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Meta · released 2024-01 · 69B params · llama2
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #307 of 469     78%      6
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #435 of 466*    5.7%      2
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #303 of 458     78%      6
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #369 of 393*    5.7%      2
 </pre>
 
-<details><summary>coding · #307 of 469 · 78% of its score</summary>
+<details><summary>coding · #303 of 458 · 78% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #435 of 466 · 5.7% of its score</summary>
+<details><summary>chat &amp; writing · #369 of 393 · 5.7% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 

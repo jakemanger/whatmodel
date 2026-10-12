@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-01 · 46.7B params (12.9B active) · apache-2.0
 
-**score 40.1** ±1.8 · #709 of 949 · from 4 benchmark results across 4 sources
+**score 40.1** ±1.8 · #530 of 719 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Nous Research · released 2024-01 · 46.7B params (12.9B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #397 of 466*     59%      2
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #339 of 393*     59%      2
 </pre>
 
-<details><summary>chat &amp; writing · #397 of 466 · 59% of its score</summary>
+<details><summary>chat &amp; writing · #339 of 393 · 59% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 

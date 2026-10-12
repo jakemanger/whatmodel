@@ -6,7 +6,7 @@
 
 LG AI Research · released 2026-07 · 750B params (37B active) · apache-2.0
 
-**score 67.2** ±1.3 · #115 of 949 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
+**score 67.2** ±1.3 · #111 of 719 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ LG AI Research · released 2026-07 · 750B params (37B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▄▃▂▁     #97 of 334     23%      3
-coding          ▁▁▁▃▆██▇●▄▃▁    #93 of 469*     11%      1
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #106 of 466*    5.1%      1
-math            ▁▂▃▅▆▅▄●▄▁▁▁    #109 of 400     38%      3
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁     #97 of 300     23%      3
+coding          ▁▁▁▃▆██▇●▄▃▁    #92 of 458*     11%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #104 of 393*    5.1%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁    #109 of 398     38%      3
 </pre>
 
-<details><summary>agent tasks · #97 of 334 · 23% of its score</summary>
+<details><summary>agent tasks · #97 of 300 · 23% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md), [Qwen3.5 35B-A3B](qwen3-5-35b-a3b.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>coding · #93 of 469 · 11% of its score</summary>
+<details><summary>coding · #92 of 458 · 11% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                      result  vs the others in its run   difficulty      cou
 
 </details>
 
-<details><summary>chat &amp; writing · #106 of 466 · 5.1% of its score</summary>
+<details><summary>chat &amp; writing · #104 of 393 · 5.1% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #109 of 400 · 38% of its score</summary>
+<details><summary>math · #109 of 398 · 38% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [gpt-oss-120b](gpt-oss-120b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-12 · 14.7B params · mit
 
-**score 52.7** ±0.7 · #379 of 949 · from 49 benchmark results across 17 sources
+**score 52.7** ±0.7 · #304 of 719 · from 49 benchmark results across 17 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Microsoft · released 2024-12 · 14.7B params · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▄▄▃▂▁   #293 of 334*    2.6%      2
-coding          ▁▁▁▃▆█●▇▆▄▃▁    #228 of 469     19%      7
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂    #292 of 466     12%      4
-math            ▁▂▃▅▆●▄█▄▁▁▁    #221 of 400     16%      5
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #264 of 300*    2.6%      2
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #225 of 458     19%      7
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃    #268 of 393     12%      4
+math            ▁▂▃▅▆●▄█▄▁▁▁    #219 of 398     16%      5
 </pre>
 
-<details><summary>agent tasks · #293 of 334 · 2.6% of its score</summary>
+<details><summary>agent tasks · #264 of 300 · 2.6% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #228 of 469 · 19% of its score</summary>
+<details><summary>coding · #225 of 458 · 19% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #292 of 466 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #268 of 393 · 12% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
@@ -63,7 +63,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #221 of 400 · 16% of its score</summary>
+<details><summary>math · #219 of 398 · 16% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 

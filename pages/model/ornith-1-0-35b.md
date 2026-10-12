@@ -6,7 +6,7 @@
 
 DeepReinforce · released 2026-06 · 35B params (3B active) · mit
 
-**score 67.7** ±1.1 · #111 of 949 · from 17 benchmark results across 2 sources
+**score 67.7** ±1.1 · #107 of 719 · from 17 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ DeepReinforce · released 2026-06 · 35B params (3B active) · mit
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅●▄▃▂▁    #93 of 334     78%      9
-coding       ▁▁▁▃▆██▇●▄▃▁   #103 of 469     50%      4
+agent tasks  ▁▁▃▆█▆▅●▅▄▃▁    #93 of 300     78%      9
+coding       ▁▁▁▃▆██▇●▄▃▁   #102 of 458     50%      4
 web search   ●··········█       #2 of 2    9.0%      3
 </pre>
 
-<details><summary>agent tasks · #93 of 334 · 78% of its score</summary>
+<details><summary>agent tasks · #93 of 300 · 78% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #103 of 469 · 50% of its score</summary>
+<details><summary>coding · #102 of 458 · 50% of its score</summary>
 
 Beats [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 

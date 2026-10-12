@@ -6,7 +6,7 @@
 
 Mistral · released 2025-09 · 24B params · apache-2.0
 
-**score 57.8** ±1.1 · #255 of 949 · from 14 benchmark results across 6 sources
+**score 57.8** ±1.1 · #219 of 719 · from 14 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -15,8 +15,8 @@ Mistral · released 2025-09 · 24B params · apache-2.0
 <pre>
 task                vs the others         rank  counts  tests
 coding              ██········●█      #2 of 4*    9.3%      2
-math                ▁▂▃▅▆▅●█▄▁▁▁   #181 of 400     37%      3
-vision &amp; documents  ▁▁▃▂▁▃●▃▆▇█▄   #99 of 150*    8.4%      2
+math                ▁▂▃▅▆▅●█▄▁▁▁   #179 of 398     37%      3
+vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄   #97 of 147*    8.4%      2
 </pre>
 
 <details><summary>coding · #2 of 4 · 9.3% of its score</summary>
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #181 of 400 · 37% of its score</summary>
+<details><summary>math · #179 of 398 · 37% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>vision &amp; documents · #99 of 150 · 8.4% of its score</summary>
+<details><summary>vision &amp; documents · #97 of 147 · 8.4% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md) here, though they rank lower overall.
 

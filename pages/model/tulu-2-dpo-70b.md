@@ -6,7 +6,7 @@
 
 Ai2 · released 2023-11 · 69B params · ai2-impact-low-risk
 
-**score 42.3** ±1.0 · #662 of 949 · from 12 benchmark results across 7 sources
+**score 42.3** ±1.0 · #496 of 719 · from 12 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Ai2 · released 2023-11 · 69B params · ai2-impact-low-risk
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #384 of 469*    5.7%      1
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂    #372 of 466     59%      5
-math            ▁▂▃▅●▅▄█▄▁▁▁   #236 of 400*    4.4%      1
+coding          ▁▁▁▃●██▇▆▄▃▁   #377 of 458*    5.7%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #317 of 393     59%      5
+math            ▁▂▃▅●▅▄█▄▁▁▁   #234 of 398*    4.4%      1
 </pre>
 
-<details><summary>coding · #384 of 469 · 5.7% of its score</summary>
+<details><summary>coding · #377 of 458 · 5.7% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>chat &amp; writing · #372 of 466 · 59% of its score</summary>
+<details><summary>chat &amp; writing · #317 of 393 · 59% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #236 of 400 · 4.4% of its score</summary>
+<details><summary>math · #234 of 398 · 4.4% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall.
 

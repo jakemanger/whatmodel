@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 2.51B params · gemma
 
-**score 31.7** ±0.7 · #842 of 949 · from 12 benchmark results across 4 sources
+**score 31.7** ±0.7 · #629 of 719 · from 12 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Google · released 2024-03 · 2.51B params · gemma
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #443 of 469     96%      9
+coding  ▁▁▁●▆██▇▆▄▃▁   #433 of 458     96%      9
 </pre>
 
-<details><summary>coding · #443 of 469 · 96% of its score</summary>
+<details><summary>coding · #433 of 458 · 96% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 

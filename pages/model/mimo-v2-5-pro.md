@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-04 · 1023B params (42B active) · mit
 
-**score 69.7** ±1.0 · #90 of 949 · from 21 benchmark results across 6 sources
+**score 69.7** ±1.0 · #87 of 719 · from 21 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Xiaomi · released 2026-04 · 1023B params (42B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▄●▃▂▁    #75 of 334     59%     13
-coding          ▁▁▁▃▆██▇▆●▃▁    #59 of 469     32%      5
-chat &amp; writing  ▁▁▁▄▆▅▆█▆▆●▂   #35 of 466*    8.4%      1
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁    #75 of 300     59%     13
+coding          ▁▁▁▃▆██▇▆●▃▁    #58 of 458     32%      5
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #35 of 393*    8.4%      1
 web search      ······●·····      #1 of 1*    2.2%      1
 </pre>
 
-<details><summary>agent tasks · #75 of 334 · 59% of its score</summary>
+<details><summary>agent tasks · #75 of 300 · 59% of its score</summary>
 
 Beats [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                     result  vs the others in its run    dif
 
 </details>
 
-<details><summary>coding · #59 of 469 · 32% of its score</summary>
+<details><summary>coding · #58 of 458 · 32% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall.
 
@@ -58,7 +58,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #35 of 466 · 8.4% of its score</summary>
+<details><summary>chat &amp; writing · #35 of 393 · 8.4% of its score</summary>
 
 Beats [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall.
 

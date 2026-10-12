@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-09 · 73.3B params · apache-2.0
 
-**score 49.7** ±1.8 · #451 of 949 · from 17 benchmark results across 4 sources
+**score 49.7** ±1.8 · #348 of 719 · from 17 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Ai2 · released 2024-09 · 73.3B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▂▃▅●▅▄█▄▁▁▁   #291 of 400*     15%      1
-vision &amp; documents  ▁▁▃▂●▃▄▃▆▇█▄    #124 of 150     99%     13
+math                ▁▂▃▅●▅▄█▄▁▁▁   #289 of 398*     15%      1
+vision &amp; documents  ▁▁▃▂●▃▄▂▆▇█▄    #122 of 147     99%     13
 </pre>
 
-<details><summary>math · #291 of 400 · 15% of its score</summary>
+<details><summary>math · #289 of 398 · 15% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [StarCoder2 15B](starcoder2-15b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                  result  vs the others in its run  difficulty        counts
 
 </details>
 
-<details><summary>vision &amp; documents · #124 of 150 · 99% of its score</summary>
+<details><summary>vision &amp; documents · #122 of 147 · 99% of its score</summary>
 
 Beats [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank lower overall.
 

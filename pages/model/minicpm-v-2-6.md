@@ -6,7 +6,7 @@
 
 OpenBMB · released 2024-08 · 8.1B params · minicpm-model-license
 
-**score 42.8** ±1.9 · #646 of 949 · from 5 benchmark results across 4 sources
+**score 42.8** ±1.9 · #484 of 719 · from 5 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ OpenBMB · released 2024-08 · 8.1B params · minicpm-model-license
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁●▃▂▁▃▄▃▆▇█▄   #143 of 150     98%      5
+vision &amp; documents  ▁●▃▂▁▃▄▂▆▇█▄   #141 of 147     98%      5
 </pre>
 
-<details><summary>vision &amp; documents · #143 of 150 · 98% of its score</summary>
+<details><summary>vision &amp; documents · #141 of 147 · 98% of its score</summary>
 
 Beats [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 

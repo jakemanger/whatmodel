@@ -6,7 +6,7 @@
 
 UIUC (ise-uiuc) · released 2023-12 · 6.74B params · llama2
 
-**score 46.7** ±0.8 · #530 of 949 · from 3 benchmark results across 1 source
+**score 46.7** ±0.8 · #405 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ UIUC (ise-uiuc) · released 2023-12 · 6.74B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #305 of 469    100%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #301 of 458    100%      3
 </pre>
 
-<details><summary>coding · #305 of 469 · 100% of its score</summary>
+<details><summary>coding · #301 of 458 · 100% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 

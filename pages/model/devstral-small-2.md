@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 24B params · apache-2.0
 
-**score 60.9** ±2.7 · #207 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.9** ±2.7 · #186 of 719 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -15,7 +15,7 @@ Mistral · released 2025-12 · 24B params · apache-2.0
 <pre>
 task         vs the others          rank  counts  tests
 agent tasks  ●··········█        #2 of 2     97%      3
-coding       ▁▁▁▃▆██▇●▄▃▁   #130 of 469*     65%      2
+coding       ▁▁▁▃▆██▇●▄▃▁   #129 of 458*     65%      2
 </pre>
 
 <details><summary>agent tasks · #2 of 2 · 97% of its score</summary>
@@ -29,7 +29,7 @@ test                          result  vs the others in its run   difficulty     
 
 </details>
 
-<details><summary>coding · #130 of 469 · 65% of its score</summary>
+<details><summary>coding · #129 of 458 · 65% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall.
 

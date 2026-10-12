@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-01 · 2.8B params · stability-ai-community
 
-**score 32.7** ±0.6 · #830 of 949 · from 15 benchmark results across 4 sources
+**score 32.7** ±0.6 · #621 of 719 · from 15 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Stability AI · released 2024-01 · 2.8B params · stability-ai-community
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁    #433 of 469     92%     10
-math    ▁▂●▅▆▅▄█▄▁▁▁   #358 of 400*    2.0%      1
+coding  ▁▁▁●▆██▇▆▄▃▁    #423 of 458     92%     10
+math    ▁▂●▅▆▅▄█▄▁▁▁   #356 of 398*    2.0%      1
 </pre>
 
-<details><summary>coding · #433 of 469 · 92% of its score</summary>
+<details><summary>coding · #423 of 458 · 92% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #358 of 400 · 2.0% of its score</summary>
+<details><summary>math · #356 of 398 · 2.0% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 

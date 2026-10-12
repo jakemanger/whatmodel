@@ -6,7 +6,7 @@
 
 Cohere · released 2024-03 · 35B params · cc-by-nc-4.0
 
-**score 41.6** ±0.8 · #678 of 949 · from 15 benchmark results across 12 sources
+**score 41.6** ±0.8 · #506 of 719 · from 15 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Cohere · released 2024-03 · 35B params · cc-by-nc-4.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂    #333 of 466     19%      3
-math            ▁●▃▅▆▅▄█▄▁▁▁   #387 of 400*     12%      1
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #292 of 393     19%      3
+math            ▁●▃▅▆▅▄█▄▁▁▁   #385 of 398*     12%      1
 </pre>
 
-<details><summary>chat &amp; writing · #333 of 466 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #292 of 393 · 19% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #387 of 400 · 12% of its score</summary>
+<details><summary>math · #385 of 398 · 12% of its score</summary>
 
 Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.1 1B-A400M Instruct](granite-3-1-1b-a400m.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 

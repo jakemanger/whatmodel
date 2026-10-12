@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 8.19B params · nvidia-open-model-license
 
-**score 57.8** ±1.5 · #256 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 57.8** ±1.5 · #220 of 719 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ NVIDIA · released 2025-12 · 8.19B params · nvidia-open-model-license
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆██●▆▄▃▁   #196 of 469     99%      3
+coding  ▁▁▁▃▆██●▆▄▃▁   #194 of 458     99%      3
 </pre>
 
-<details><summary>coding · #196 of 469 · 99% of its score</summary>
+<details><summary>coding · #194 of 458 · 99% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank lower overall.
 

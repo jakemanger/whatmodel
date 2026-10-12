@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 8.03B params · llama3.1
 
-**score 44.1** ±0.7 · #609 of 949 · from 26 benchmark results across 4 sources
+**score 44.1** ±0.7 · #457 of 719 · from 26 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Ai2 · released 2024-11 · 8.03B params · llama3.1
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #331 of 466    8.7%      3
-math            ▁▂▃●▆▅▄█▄▁▁▁   #315 of 400     22%      4
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #290 of 393    8.7%      3
+math            ▁▂▃●▆▅▄█▄▁▁▁   #313 of 398     22%      4
 </pre>
 
-<details><summary>chat &amp; writing · #331 of 466 · 8.7% of its score</summary>
+<details><summary>chat &amp; writing · #290 of 393 · 8.7% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #315 of 400 · 22% of its score</summary>
+<details><summary>math · #313 of 398 · 22% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [OLMo 2 32B Instruct (0325)](olmo-2-32b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
 

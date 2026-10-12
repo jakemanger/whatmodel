@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 70B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 45.6** ±1.8 · #568 of 949 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 45.6** ±1.8 · #432 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Allen Institute for AI · released 2023-11 · 70B params · AI2 ImpACT Low-risk;
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #390 of 469*     16%      1
-math    ▁▂▃▅▆●▄█▄▁▁▁   #229 of 400*     14%      1
+coding  ▁▁▁▃●██▇▆▄▃▁   #383 of 458*     16%      1
+math    ▁▂▃▅▆●▄█▄▁▁▁   #227 of 398*     14%      1
 </pre>
 
-<details><summary>coding · #390 of 469 · 16% of its score</summary>
+<details><summary>coding · #383 of 458 · 16% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>math · #229 of 400 · 14% of its score</summary>
+<details><summary>math · #227 of 398 · 14% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 

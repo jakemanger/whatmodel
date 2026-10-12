@@ -14,12 +14,12 @@ OpenAI · released 2023-11 · proprietary
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▂▁   #267 of 549     43%      6
-chat &amp; writing  ▁▁▁▃▅▅▆●▆▆▆▂   #295 of 579     21%      5
-math            ▁▂▃▅●▅▅█▄▁▁▁   #318 of 464     10%      3
+coding          ▁▁▁▃▅▇●▇▅▄▃▁   #256 of 524     43%      6
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #247 of 463     21%      5
+math            ▁▂▃▅●▅▅█▄▁▁▁   #316 of 462     10%      3
 </pre>
 
-<details><summary>coding · #267 of 549 · 43% of its score</summary>
+<details><summary>coding · #256 of 524 · 43% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #295 of 579 · 21% of its score</summary>
+<details><summary>chat &amp; writing · #247 of 463 · 21% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ test                                                      result  vs the others 
 
 </details>
 
-<details><summary>math · #318 of 464 · 10% of its score</summary>
+<details><summary>math · #316 of 462 · 10% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 

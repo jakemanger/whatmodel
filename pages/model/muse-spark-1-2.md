@@ -6,7 +6,7 @@
 
 Meta · released 2026-08 · closed weights
 
-**score 75.1** ±1.4 · #39 of 949 · from 5 benchmark results across 2 sources
+**score 75.1** ±1.4 · #39 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Meta · released 2026-08 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄●▂▁   #50 of 334*     34%      1
-coding              ▁▁▁▃▆██▇▆●▃▁   #42 of 469*     30%      1
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●    #9 of 466*     17%      1
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇█●    #8 of 150*     12%      1
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁   #50 of 300*     34%      1
+coding              ▁▁▁▃▆██▇▆●▃▁   #42 of 458*     30%      1
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●    #9 of 393*     17%      1
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇█●    #8 of 147*     12%      1
 </pre>
 
-<details><summary>agent tasks · #50 of 334 · 34% of its score</summary>
+<details><summary>agent tasks · #50 of 300 · 34% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                     result  vs the others in its run  diffi
 
 </details>
 
-<details><summary>coding · #42 of 469 · 30% of its score</summary>
+<details><summary>coding · #42 of 458 · 30% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall. Trails [Mistral Large 4 (public preview)](mistral-large-4.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                       result  vs the others in its run   difficulty  counts
 
 </details>
 
-<details><summary>chat &amp; writing · #9 of 466 · 17% of its score</summary>
+<details><summary>chat &amp; writing · #9 of 393 · 17% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Claude Opus 4.6](claude-opus-4-6.md), [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #8 of 150 · 12% of its score</summary>
+<details><summary>vision &amp; documents · #8 of 147 · 12% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall. Trails [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank lower overall.
 

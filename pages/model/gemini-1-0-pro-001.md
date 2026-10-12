@@ -14,11 +14,11 @@ Google · released 2023-12 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▅●█▆▆▆▂   #407 of 579*     43%      2
-math            ▁▂●▅▇▅▅█▄▁▁▁   #409 of 464*     34%      2
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #336 of 463*     43%      2
+math            ▁▂●▅▇▅▅█▄▁▁▁   #407 of 462*     34%      2
 </pre>
 
-<details><summary>chat &amp; writing · #407 of 579 · 43% of its score</summary>
+<details><summary>chat &amp; writing · #336 of 463 · 43% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #409 of 464 · 34% of its score</summary>
+<details><summary>math · #407 of 462 · 34% of its score</summary>
 
 Trails [Qwen3 0.6B](qwen3-0-6b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 

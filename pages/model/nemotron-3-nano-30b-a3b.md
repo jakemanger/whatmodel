@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 31.6B params (3.6B active) · nvidia-open-model
 
-**score 57.5** ±0.9 · #265 of 949 · from 22 benchmark results across 9 sources
+**score 57.5** ±0.9 · #227 of 719 · from 22 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ NVIDIA · released 2025-12 · 31.6B params (3.6B active) · nvidia-open-model
 
 <pre>
 task            vs the others            rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▄▄▃▂▁     #187 of 334*     17%      5
-coding          ▁▁▁▃▆█●▇▆▄▃▁      #253 of 469     10%      5
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂     #223 of 466*    7.5%      2
-math            ▁▂▃▅▆▅▄●▄▁▁▁      #143 of 400     25%      4
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁     #175 of 300*     17%      5
+coding          ▁▁▁▃▆█●▇▆▄▃▁      #250 of 458     10%      5
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃     #208 of 393*    7.5%      2
+math            ▁▂▃▅▆▅▄●▄▁▁▁      #143 of 398     25%      4
 web search                     not ranked yet       —      1
 </pre>
 
-<details><summary>agent tasks · #187 of 334 · 17% of its score</summary>
+<details><summary>agent tasks · #175 of 300 · 17% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #253 of 469 · 10% of its score</summary>
+<details><summary>coding · #250 of 458 · 10% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #223 of 466 · 7.5% of its score</summary>
+<details><summary>chat &amp; writing · #208 of 393 · 7.5% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
 
@@ -63,7 +63,7 @@ test                           result  vs the others in its run    difficulty   
 
 </details>
 
-<details><summary>math · #143 of 400 · 25% of its score</summary>
+<details><summary>math · #143 of 398 · 25% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall.
 

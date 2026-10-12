@@ -6,7 +6,7 @@
 
 Google · released 2026-07 · closed weights
 
-**score 73.6** ±0.6 · #54 of 949 · from 27 benchmark results across 8 sources
+**score 73.6** ±0.6 · #53 of 719 · from 27 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Google · released 2026-07 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄●▃▂▁    #70 of 334     14%      4
-coding              ▁▁▁▃▆██▇▆●▃▁   #41 of 469*    8.1%      2
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●   #16 of 466*    3.3%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁    #44 of 400     51%      8
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄    #20 of 150    8.1%      5
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #70 of 300     14%      4
+coding              ▁▁▁▃▆██▇▆●▃▁   #41 of 458*    8.1%      2
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #16 of 393*    3.3%      1
+math                ▁▂▃▅▆▅▄█●▁▁▁    #44 of 398     51%      8
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #20 of 147    8.1%      5
 </pre>
 
-<details><summary>agent tasks · #70 of 334 · 14% of its score</summary>
+<details><summary>agent tasks · #70 of 300 · 14% of its score</summary>
 
 Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [MiniMax-M3](minimax-m3.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                     result  vs the others in its run  diffi
 
 </details>
 
-<details><summary>coding · #41 of 469 · 8.1% of its score</summary>
+<details><summary>coding · #41 of 458 · 8.1% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall. Trails [Mistral Large 4 (public preview)](mistral-large-4.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #16 of 466 · 3.3% of its score</summary>
+<details><summary>chat &amp; writing · #16 of 393 · 3.3% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall.
 
@@ -58,7 +58,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #44 of 400 · 51% of its score</summary>
+<details><summary>math · #44 of 398 · 51% of its score</summary>
 
 Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [Kimi K2.6](kimi-k2-6.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
@@ -76,7 +76,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #20 of 150 · 8.1% of its score</summary>
+<details><summary>vision &amp; documents · #20 of 147 · 8.1% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall.
 

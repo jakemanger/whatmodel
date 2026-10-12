@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 2.51B params · gemma
 
-**score 28.9** ±0.6 · #865 of 949 · from 37 benchmark results across 9 sources
+**score 28.9** ±0.6 · #648 of 719 · from 37 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Google · released 2024-02 · 2.51B params · gemma
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁    #448 of 469     66%      7
-math    ▁▂●▅▆▅▄█▄▁▁▁   #375 of 400*    3.2%      2
+coding  ▁▁▁●▆██▇▆▄▃▁    #438 of 458     66%      7
+math    ▁▂●▅▆▅▄█▄▁▁▁   #373 of 398*    3.2%      2
 </pre>
 
-<details><summary>coding · #448 of 469 · 66% of its score</summary>
+<details><summary>coding · #438 of 458 · 66% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #375 of 400 · 3.2% of its score</summary>
+<details><summary>math · #373 of 398 · 3.2% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall.
 

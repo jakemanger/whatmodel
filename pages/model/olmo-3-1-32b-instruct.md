@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 32.2B params · apache-2.0
 
-**score 54.7** ±2.0 · #326 of 949 · from 4 benchmark results across 3 sources
+**score 54.7** ±2.0 · #272 of 719 · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Ai2 · released 2025-12 · 32.2B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #192 of 466*     35%      1
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #183 of 393*     35%      1
 </pre>
 
-<details><summary>chat &amp; writing · #192 of 466 · 35% of its score</summary>
+<details><summary>chat &amp; writing · #183 of 393 · 35% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 

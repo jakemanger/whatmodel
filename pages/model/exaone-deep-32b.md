@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 32B params · exaone
 
-**score 56.1** ±1.6 · #288 of 949 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 56.1** ±1.6 · #245 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -15,7 +15,7 @@ LG AI Research · released 2025-03 · 32B params · exaone
 <pre>
 task    vs the others         rank  counts  tests
 coding  ██·········●      #1 of 3*     11%      1
-math    ▁▂▃▅▆●▄█▄▁▁▁   #188 of 400     56%      3
+math    ▁▂▃▅▆●▄█▄▁▁▁   #186 of 398     56%      3
 </pre>
 
 <details><summary>coding · #1 of 3 · 11% of its score</summary>
@@ -27,7 +27,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #188 of 400 · 56% of its score</summary>
+<details><summary>math · #186 of 398 · 56% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank lower overall.
 

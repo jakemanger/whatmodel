@@ -6,7 +6,7 @@
 
 SK Telecom · released 2025-12 · 518.98B params (33B active) · apache-2.0
 
-**score 62.1** ±1.3 · #191 of 949 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 62.1** ±1.3 · #177 of 719 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ SK Telecom · released 2025-12 · 518.98B params (33B active) · apache-2.0
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆██●▆▄▃▁   #152 of 469*     15%      2
-math    ▁▂▃▅▆▅▄●▄▁▁▁   #122 of 400*     11%      1
+coding  ▁▁▁▃▆██●▆▄▃▁   #151 of 458*     15%      2
+math    ▁▂▃▅▆▅▄●▄▁▁▁   #122 of 398*     11%      1
 </pre>
 
-<details><summary>coding · #152 of 469 · 15% of its score</summary>
+<details><summary>coding · #151 of 458 · 15% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #122 of 400 · 11% of its score</summary>
+<details><summary>math · #122 of 398 · 11% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
 

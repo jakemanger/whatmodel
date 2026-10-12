@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 36.1** ±0.7 · #787 of 949 · from 14 benchmark results across 5 sources
+**score 36.1** ±0.7 · #589 of 719 · from 14 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Meta · released 2023-08 · 6.74B params · llama2
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁    #406 of 469     65%      6
-math    ▁●▃▅▆▅▄█▄▁▁▁   #380 of 400*    2.5%      1
+coding  ▁▁▁▃●██▇▆▄▃▁    #397 of 458     65%      6
+math    ▁●▃▅▆▅▄█▄▁▁▁   #378 of 398*    2.5%      1
 </pre>
 
-<details><summary>coding · #406 of 469 · 65% of its score</summary>
+<details><summary>coding · #397 of 458 · 65% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #380 of 400 · 2.5% of its score</summary>
+<details><summary>math · #378 of 398 · 2.5% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 

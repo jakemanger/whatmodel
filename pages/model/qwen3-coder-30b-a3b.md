@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 30.5B params (3.3B active) · apache-2.0
 
-**score 57.6** ±1.2 · #262 of 949 · from 13 benchmark results across 3 sources
+**score 57.6** ±1.2 · #224 of 719 · from 13 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Alibaba · released 2025-07 · 30.5B params (3.3B active) · apache-2.0
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▃▂▁   #183 of 334     60%      8
-coding       ▁▁▁▃▆█●▇▆▄▃▁   #211 of 469     71%      7
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁   #171 of 300     60%      8
+coding       ▁▁▁▃▆█●▇▆▄▃▁   #208 of 458     71%      7
 </pre>
 
-<details><summary>agent tasks · #183 of 334 · 60% of its score</summary>
+<details><summary>agent tasks · #171 of 300 · 60% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                               result  vs the others in its run    difficult
 
 </details>
 
-<details><summary>coding · #211 of 469 · 71% of its score</summary>
+<details><summary>coding · #208 of 458 · 71% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 

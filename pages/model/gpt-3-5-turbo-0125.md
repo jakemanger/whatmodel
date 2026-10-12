@@ -6,7 +6,7 @@
 
 OpenAI · released 2024-01 · proprietary
 
-**score 46.4** ±0.5 · #542 of 949 · from 35 benchmark results across 17 sources
+**score 46.4** ±0.5 · #411 of 719 · from 35 benchmark results across 17 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ OpenAI · released 2024-01 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▄▄▃▂▁   #270 of 334*    0.5%      1
-coding          ▁▁▁▃▆█●▇▆▄▃▁    #273 of 469     22%      3
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂    #332 of 466     13%      5
-math            ▁▂●▅▆▅▄█▄▁▁▁    #344 of 400     13%      7
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #243 of 300*    0.5%      1
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #269 of 458     22%      3
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #291 of 393     13%      5
+math            ▁▂●▅▆▅▄█▄▁▁▁    #342 of 398     13%      7
 </pre>
 
-<details><summary>agent tasks · #270 of 334 · 0.5% of its score</summary>
+<details><summary>agent tasks · #243 of 300 · 0.5% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Sky-T1 32B Preview](sky-t1-32b-preview.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #273 of 469 · 22% of its score</summary>
+<details><summary>coding · #269 of 458 · 22% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #332 of 466 · 13% of its score</summary>
+<details><summary>chat &amp; writing · #291 of 393 · 13% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -59,7 +59,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #344 of 400 · 13% of its score</summary>
+<details><summary>math · #342 of 398 · 13% of its score</summary>
 
 Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-04 · 7.25B params · tongyi-qianwen
 
-**score 50.4** ±0.7 · #428 of 949 · from 14 benchmark results across 3 sources
+**score 50.4** ±0.7 · #336 of 719 · from 14 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Alibaba · released 2024-04 · 7.25B params · tongyi-qianwen
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #244 of 469     83%      7
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #241 of 458     83%      7
 </pre>
 
-<details><summary>coding · #244 of 469 · 83% of its score</summary>
+<details><summary>coding · #241 of 458 · 83% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
 

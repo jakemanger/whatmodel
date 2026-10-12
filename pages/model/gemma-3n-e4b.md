@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · 7.85B params (4B active) · gemma
 
-**score 47.7** ±1.4 · #500 of 949 · from 12 benchmark results across 4 sources
+**score 47.7** ±1.4 · #383 of 719 · from 12 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -15,7 +15,7 @@ Google · released 2025-06 · 7.85B params (4B active) · gemma
 <pre>
 task            vs the others          rank  counts  tests
 coding          █··········●        #1 of 2     24%      3
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #216 of 466*     18%      1
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #202 of 393*     18%      1
 math            █··········●       #1 of 2*     22%      2
 </pre>
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #216 of 466 · 18% of its score</summary>
+<details><summary>chat &amp; writing · #202 of 393 · 18% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 

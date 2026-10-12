@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 1.3B params (0.4B active) · apache-2.0
 
-**score 28.8** ±1.8 · #870 of 949 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
+**score 28.8** ±1.8 · #652 of 719 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ IBM · released 2024-12 · 1.3B params (0.4B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #408 of 466*    8.5%      1
-math            ▁●▃▅▆▅▄█▄▁▁▁   #382 of 400*     29%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #347 of 393*    8.5%      1
+math            ▁●▃▅▆▅▄█▄▁▁▁   #380 of 398*     29%      1
 </pre>
 
-<details><summary>chat &amp; writing · #408 of 466 · 8.5% of its score</summary>
+<details><summary>chat &amp; writing · #347 of 393 · 8.5% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #382 of 400 · 29% of its score</summary>
+<details><summary>math · #380 of 398 · 29% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall.
 

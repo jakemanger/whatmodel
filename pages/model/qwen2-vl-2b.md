@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 2.21B params · apache-2.0
 
-**score 37.3** ±1.2 · #767 of 949 · from 16 benchmark results across 2 sources
+**score 37.3** ±1.2 · #573 of 719 · from 16 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Alibaba · released 2024-08 · 2.21B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁●▃▅▆▅▄█▄▁▁▁   #389 of 400*     19%      2
-vision &amp; documents  ●▁▃▂▁▃▄▃▆▇█▄    #148 of 150     85%     12
+math                ▁●▃▅▆▅▄█▄▁▁▁   #387 of 398*     19%      2
+vision &amp; documents  ●▁▃▂▁▃▄▂▆▇█▄    #145 of 147     85%     12
 </pre>
 
-<details><summary>math · #389 of 400 · 19% of its score</summary>
+<details><summary>math · #387 of 398 · 19% of its score</summary>
 
 Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.1 1B-A400M Instruct](granite-3-1-1b-a400m.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
@@ -30,9 +30,9 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #148 of 150 · 85% of its score</summary>
+<details><summary>vision &amp; documents · #145 of 147 · 85% of its score</summary>
 
-Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md) here, though they rank higher overall. Trails [LLaVA-v1.6-Vicuna-13B](llava-v1-6-vicuna-13b.md) here, though they rank lower overall.
+Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md) here, though they rank higher overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty           counts  why

@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 1.71B params · apache-2.0
 
-**score 30.3** ±1.1 · #856 of 949 · from 18 benchmark results across 5 sources
+**score 30.3** ±1.1 · #641 of 719 · from 18 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Hugging Face · released 2024-10 · 1.71B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #414 of 469*    7.1%      1
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂    #439 of 466     19%      4
-math            ▁▂●▅▆▅▄█▄▁▁▁    #371 of 400     28%      2
+coding          ▁▁▁▃●██▇▆▄▃▁   #405 of 458*    7.1%      1
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃    #373 of 393     19%      4
+math            ▁▂●▅▆▅▄█▄▁▁▁    #369 of 398     28%      2
 </pre>
 
-<details><summary>coding · #414 of 469 · 7.1% of its score</summary>
+<details><summary>coding · #405 of 458 · 7.1% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall.
 
@@ -30,9 +30,9 @@ test             result  vs the others in its run   difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #439 of 466 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #373 of 393 · 19% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Minotaur 13B (fixed)](minotaur-13b-fixed.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
@@ -44,7 +44,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #371 of 400 · 28% of its score</summary>
+<details><summary>math · #369 of 398 · 28% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall.
 

@@ -6,7 +6,7 @@
 
 Google · released 2026-04 · 5.1B params (2.3B active) · apache-2.0
 
-**score 46.7** ±0.6 · #529 of 949 · from 78 benchmark results across 12 sources
+**score 46.7** ±0.6 · #404 of 719 · from 78 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Google · released 2026-04 · 5.1B params (2.3B active) · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▄▄▃▂▁   #303 of 334     15%     15
-coding              ▁▁▁▃▆●█▇▆▄▃▁   #354 of 469     10%      8
-chat &amp; writing      ▁▁▁●▆▅▆█▆▆▆▂   #432 of 466    1.8%      2
-math                ▁▂▃▅●▅▄█▄▁▁▁   #279 of 400     25%      6
-vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄   #134 of 150     12%     13
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #273 of 300     15%     15
+coding              ▁▁▁▃▆●█▇▆▄▃▁   #349 of 458     10%      8
+chat &amp; writing      ▁▁▁●▅▄▅█▆▆▇▃   #367 of 393    1.8%      2
+math                ▁▂▃▅●▅▄█▄▁▁▁   #277 of 398     25%      6
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄   #132 of 147     12%     13
 web search          ●·█▄██·▄▄·▄▄    #12 of 13*    1.0%      2
 </pre>
 
-<details><summary>agent tasks · #303 of 334 · 15% of its score</summary>
+<details><summary>agent tasks · #273 of 300 · 15% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [Mixtral 8x22B Instruct v0.1](mixtral-8x22b-instruct-v0-1.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #354 of 469 · 10% of its score</summary>
+<details><summary>coding · #349 of 458 · 10% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -65,7 +65,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #432 of 466 · 1.8% of its score</summary>
+<details><summary>chat &amp; writing · #367 of 393 · 1.8% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -77,7 +77,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #279 of 400 · 25% of its score</summary>
+<details><summary>math · #277 of 398 · 25% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 
@@ -93,7 +93,7 @@ test                result  vs the others in its run  difficulty           count
 
 </details>
 
-<details><summary>vision &amp; documents · #134 of 150 · 12% of its score</summary>
+<details><summary>vision &amp; documents · #132 of 147 · 12% of its score</summary>
 
 Trails [Qwen3-VL 2B Instruct](qwen3-vl-2b-instruct.md), [Ministral 3 3B](ministral-3-3b.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md) here, though they rank lower overall.
 

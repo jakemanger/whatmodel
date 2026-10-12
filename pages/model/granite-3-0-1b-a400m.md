@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 1.3B params (0.4B active) · apache-2.0
 
-**score 27.3** ±1.2 · #879 of 949 · from 16 benchmark results across 2 sources
+**score 27.3** ±1.2 · #659 of 719 · from 16 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ IBM · released 2024-10 · 1.3B params (0.4B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁●▆██▇▆▄▃▁   #442 of 469*     16%      2
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #441 of 466*    4.3%      1
-math            ▁●▃▅▆▅▄█▄▁▁▁   #392 of 400*     16%      2
+coding          ▁▁▁●▆██▇▆▄▃▁   #432 of 458*     16%      2
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #374 of 393*    4.3%      1
+math            ▁●▃▅▆▅▄█▄▁▁▁   #390 of 398*     16%      2
 </pre>
 
-<details><summary>coding · #442 of 469 · 16% of its score</summary>
+<details><summary>coding · #432 of 458 · 16% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall.
 
@@ -31,9 +31,9 @@ test             result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #441 of 466 · 4.3% of its score</summary>
+<details><summary>chat &amp; writing · #374 of 393 · 4.3% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Minotaur 13B (fixed)](minotaur-13b-fixed.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -42,7 +42,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #392 of 400 · 16% of its score</summary>
+<details><summary>math · #390 of 398 · 16% of its score</summary>
 
 Beats [Code Llama 7B (base)](codellama-7b.md), [Llama 2 13B Chat](llama-2-13b-chat.md), [DeepSeek-Coder 1.3B Base](deepseek-coder-1-3b-base.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 35.8** ±1.7 · #793 of 949 · from 6 benchmark results across 2 sources
+**score 35.8** ±1.7 · #594 of 719 · from 6 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; 
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▆██▇▆▄▃▁   #454 of 469*     23%      1
-math    ▁▂●▅▆▅▄█▄▁▁▁   #350 of 400*     13%      1
+coding  ▁▁●▃▆██▇▆▄▃▁   #444 of 458*     23%      1
+math    ▁▂●▅▆▅▄█▄▁▁▁   #348 of 398*     13%      1
 </pre>
 
-<details><summary>coding · #454 of 469 · 23% of its score</summary>
+<details><summary>coding · #444 of 458 · 23% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [StarCoderBase 3B](starcoderbase-3b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>math · #350 of 400 · 13% of its score</summary>
+<details><summary>math · #348 of 398 · 13% of its score</summary>
 
 Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md), [Yi 34B Chat](yi-34b-chat.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 

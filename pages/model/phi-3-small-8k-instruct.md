@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-05 · 7.39B params · mit
 
-**score 42.5** ±1.6 · #656 of 949 · from 4 benchmark results across 4 sources
+**score 42.5** ±1.6 · #493 of 719 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Microsoft · released 2024-05 · 7.39B params · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #382 of 466     94%      3
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #326 of 393     94%      3
 </pre>
 
-<details><summary>chat &amp; writing · #382 of 466 · 94% of its score</summary>
+<details><summary>chat &amp; writing · #326 of 393 · 94% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 

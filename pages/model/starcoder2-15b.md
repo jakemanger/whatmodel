@@ -6,7 +6,7 @@
 
 BigCode · released 2024-02 · 15.96B params · bigcode-openrail-m
 
-**score 38.8** ±0.5 · #729 of 949 · from 17 benchmark results across 5 sources
+**score 38.8** ±0.5 · #547 of 719 · from 17 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ BigCode · released 2024-02 · 15.96B params · bigcode-openrail-m
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁    #398 of 469     88%      9
-math    ▁▂▃▅●▅▄█▄▁▁▁   #286 of 400*    1.9%      1
+coding  ▁▁▁▃●██▇▆▄▃▁    #390 of 458     88%      9
+math    ▁▂▃▅●▅▄█▄▁▁▁   #284 of 398*    1.9%      1
 </pre>
 
-<details><summary>coding · #398 of 469 · 88% of its score</summary>
+<details><summary>coding · #390 of 458 · 88% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #286 of 400 · 1.9% of its score</summary>
+<details><summary>math · #284 of 398 · 1.9% of its score</summary>
 
 Beats [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 

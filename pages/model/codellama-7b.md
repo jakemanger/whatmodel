@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 33.9** ±0.5 · #816 of 949 · from 37 benchmark results across 8 sources
+**score 33.9** ±0.5 · #609 of 719 · from 37 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Meta · released 2023-08 · 6.74B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #419 of 469     80%     11
-math    ▁●▃▅▆▅▄█▄▁▁▁   #393 of 400    6.6%      2
+coding  ▁▁▁▃●██▇▆▄▃▁   #410 of 458     80%     11
+math    ▁●▃▅▆▅▄█▄▁▁▁   #391 of 398    6.6%      2
 </pre>
 
-<details><summary>coding · #419 of 469 · 80% of its score</summary>
+<details><summary>coding · #410 of 458 · 80% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #393 of 400 · 6.6% of its score</summary>
+<details><summary>math · #391 of 398 · 6.6% of its score</summary>
 
 Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Granite 3.1 1B-A400M Instruct](granite-3-1-1b-a400m.md) here, though they rank lower overall.
 

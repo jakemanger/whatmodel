@@ -6,6 +6,12 @@ import { bitsOf } from "./quant.ts";
 import { SLOW_TPS } from "./speed.ts";
 import type { Category, Hardware, Model, Scored, Specs, SpeedUnit, Variant } from "./types.ts";
 
+// Text models with fewer results than this, across every text test, are left off the leaderboards unless
+// asked for (?thin=1): one narrow test, such as a chat judge, translation or tool calls, says little about
+// overall ability. Image, video and speech are ranked mostly by arenas, where one or two results are normal.
+export const LISTED_FROM = 3;
+export const listedByDefault = (cat: Category, n: number | undefined) => cat !== "llm" || n === undefined || n >= LISTED_FROM;
+
 // CUDA-only commands need an NVIDIA card (or one whose make we don't know).
 const isNvidia = (s: Specs) => s.gpu === "card" && (!s.hw || s.hw.kind === "nvidia");
 

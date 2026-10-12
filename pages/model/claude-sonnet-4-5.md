@@ -6,7 +6,7 @@
 
 Anthropic · released 2025-09 · closed weights
 
-**score 68.5** ±0.6 · #104 of 949 · from 50 benchmark results across 24 sources
+**score 68.5** ±0.6 · #100 of 719 · from 50 benchmark results across 24 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Anthropic · released 2025-09 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▄▃▂▁    #89 of 334     26%     14
-coding              ▁▁▁▃▆██▇●▄▃▁    #88 of 469     23%      5
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #45 of 466*    3.0%      1
-math                ▁▂▃▅▆▅▄●▄▁▁▁   #107 of 400     22%      6
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄    #66 of 150    4.1%      6
-web search          ▂▂▂▆●█▃▃▁▁·▁    #45 of 81*    1.2%      1
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #89 of 300     26%     14
+coding              ▁▁▁▃▆██▇●▄▃▁    #87 of 458     23%      5
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #45 of 393*    3.0%      1
+math                ▁▂▃▅▆▅▄●▄▁▁▁   #107 of 398     22%      6
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #66 of 147    4.1%      6
+web search          ▂▁▂▆●█▃▃▁▁·▁    #45 of 80*    1.2%      1
 </pre>
 
-<details><summary>agent tasks · #89 of 334 · 26% of its score</summary>
+<details><summary>agent tasks · #89 of 300 · 26% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [Qwen3.6 35B-A3B](qwen3-6-35b-a3b.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #88 of 469 · 23% of its score</summary>
+<details><summary>coding · #87 of 458 · 23% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GLM-5V-Turbo](glm-5v-turbo.md) here, though they rank lower overall.
 
@@ -61,7 +61,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #45 of 466 · 3.0% of its score</summary>
+<details><summary>chat &amp; writing · #45 of 393 · 3.0% of its score</summary>
 
 Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall.
 
@@ -72,7 +72,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #107 of 400 · 22% of its score</summary>
+<details><summary>math · #107 of 398 · 22% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [gpt-oss-120b](gpt-oss-120b.md) here, though they rank lower overall.
 
@@ -88,7 +88,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #66 of 150 · 4.1% of its score</summary>
+<details><summary>vision &amp; documents · #66 of 147 · 4.1% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md), [Qwen3.6 Flash](qwen3-6-flash.md) here, though they rank lower overall.
 
@@ -104,7 +104,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>web search · #45 of 81 · 1.2% of its score</summary>
+<details><summary>web search · #45 of 80 · 1.2% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.7 Max](qwen3-7-max.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

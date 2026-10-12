@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-04 · 32.76B params · apache-2.0
 
-**score 54.4** ±1.4 · #334 of 949 · from 6 benchmark results across 2 sources
+**score 54.4** ±1.4 · #277 of 719 · from 6 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Open Thoughts · released 2025-04 · 32.76B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #284 of 466*     24%      2
-math            ▁▂▃▅▆▅●█▄▁▁▁    #169 of 400     49%      3
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #261 of 393*     24%      2
+math            ▁▂▃▅▆▅●█▄▁▁▁    #168 of 398     49%      3
 </pre>
 
-<details><summary>chat &amp; writing · #284 of 466 · 24% of its score</summary>
+<details><summary>chat &amp; writing · #261 of 393 · 24% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #169 of 400 · 49% of its score</summary>
+<details><summary>math · #168 of 398 · 49% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 

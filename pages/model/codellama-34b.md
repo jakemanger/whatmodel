@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 33.74B params · llama2
 
-**score 39.9** ±0.5 · #712 of 949 · from 23 benchmark results across 7 sources
+**score 39.9** ±0.5 · #533 of 719 · from 23 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Meta · released 2023-08 · 33.74B params · llama2
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁    #378 of 469     88%     11
-math    ▁▂▃●▆▅▄█▄▁▁▁   #331 of 400*    3.2%      1
+coding  ▁▁▁▃●██▇▆▄▃▁    #371 of 458     88%     11
+math    ▁▂▃●▆▅▄█▄▁▁▁   #329 of 398*    3.2%      1
 </pre>
 
-<details><summary>coding · #378 of 469 · 88% of its score</summary>
+<details><summary>coding · #371 of 458 · 88% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3.0 2B Instruct](granite-3-0-2b.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #331 of 400 · 3.2% of its score</summary>
+<details><summary>math · #329 of 398 · 3.2% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 

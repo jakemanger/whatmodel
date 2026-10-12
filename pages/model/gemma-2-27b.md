@@ -6,7 +6,7 @@
 
 Google · released 2024-06 · 27.23B params · gemma
 
-**score 49.8** ±0.6 · #447 of 949 · from 34 benchmark results across 16 sources
+**score 49.8** ±0.6 · #345 of 719 · from 34 benchmark results across 16 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Google · released 2024-06 · 27.23B params · gemma
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁   #234 of 469     11%      5
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #255 of 466     19%      6
-math            ▁▂▃●▆▅▄█▄▁▁▁   #302 of 400     19%      7
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #231 of 458     11%      5
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #236 of 393     19%      6
+math            ▁▂▃●▆▅▄█▄▁▁▁   #300 of 398     19%      7
 </pre>
 
-<details><summary>coding · #234 of 469 · 11% of its score</summary>
+<details><summary>coding · #231 of 458 · 11% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #255 of 466 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #236 of 393 · 19% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #302 of 400 · 19% of its score</summary>
+<details><summary>math · #300 of 398 · 19% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 

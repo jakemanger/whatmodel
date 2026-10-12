@@ -6,7 +6,7 @@
 
 Amazon · released 2025-11 · closed weights
 
-**score 63.5** ±2.2 · #173 of 949 · from 3 benchmark results across 2 sources
+**score 63.5** ±2.2 · #161 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Amazon · released 2025-11 · closed weights
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅●▄▃▂▁   #94 of 334*    8.7%      1
+agent tasks  ▁▁▃▆█▆▅●▅▄▃▁   #94 of 300*    8.7%      1
 </pre>
 
-<details><summary>agent tasks · #94 of 334 · 8.7% of its score</summary>
+<details><summary>agent tasks · #94 of 300 · 8.7% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall.
 

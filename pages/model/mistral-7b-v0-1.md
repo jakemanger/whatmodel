@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-09 · 7.24B params · apache-2.0
 
-**score 35.5** ±0.4 · #799 of 949 · from 59 benchmark results across 10 sources
+**score 35.5** ±0.4 · #597 of 719 · from 59 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Mistral AI · released 2023-09 · 7.24B params · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #435 of 469     38%      4
-math    ▁▂●▅▆▅▄█▄▁▁▁   #345 of 400    5.9%      2
+coding  ▁▁▁●▆██▇▆▄▃▁   #425 of 458     38%      4
+math    ▁▂●▅▆▅▄█▄▁▁▁   #343 of 398    5.9%      2
 </pre>
 
-<details><summary>coding · #435 of 469 · 38% of its score</summary>
+<details><summary>coding · #425 of 458 · 38% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>math · #345 of 400 · 5.9% of its score</summary>
+<details><summary>math · #343 of 398 · 5.9% of its score</summary>
 
 Beats [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

@@ -10,7 +10,7 @@ export function leaderboardResponse(req: Request, data: BoardData, attributions:
   const url = new URL(req.url);
   const q = url.searchParams;
   const { cat, updated, updatedLabel, models } = data;
-  const { task, specs, max, comparison, scoreMode, scoreSet, sets, rows, all, benches, retiredCount } = boardFromData(data, q);
+  const { task, specs, max, comparison, scoreMode, scoreSet, sets, rows, all, benches, retiredCount, thin, thinCount } = boardFromData(data, q);
   const alternatives = sets.map(({ id, label, models }) => ({ id, label, models: models.length }));
   const limit = Number(q.get("n")) || 40;
 
@@ -30,6 +30,7 @@ export function leaderboardResponse(req: Request, data: BoardData, attributions:
         : "All sets are listed by default. ?set=<id> filters models without changing the score scale; add &score=set for scores within that set. Uncalibrated scores and ranks are null.",
       specs: specs && { ...specs, hw: specs.hw?.id ?? null, usable_gb: usable(specs) },
       max_price: max,
+      thinly_tested: { listed: thin, count: thinCount, note: "Text models with fewer than 3 results are left off unless ?thin=1." },
       updated,
       coverage: rows.length ? "reviewed subset; incomplete coverage" : "no reviewed rankings available",
       data_license: {
@@ -63,6 +64,8 @@ export function leaderboardResponse(req: Request, data: BoardData, attributions:
     comparison: alternatives.length > 1 ? { selected: comparison?.id, scoreMode, sets: alternatives } : undefined,
     updated: updatedLabel,
     retiredCount,
+    thin,
+    thinCount,
   });
   // ?chart=1 draws the plots under the title line.
   const lines = text.split("\n");

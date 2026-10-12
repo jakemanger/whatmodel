@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-06 · 70.55B params · llama3
 
-**score 47.7** ±1.9 · #501 of 949 · from 3 benchmark results across 1 source
+**score 47.7** ±1.9 · #384 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Nous Research · released 2024-06 · 70.55B params · llama3
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃●▆▅▄█▄▁▁▁   #316 of 400*     67%      2
+math  ▁▂▃●▆▅▄█▄▁▁▁   #314 of 398*     67%      2
 </pre>
 
-<details><summary>math · #316 of 400 · 67% of its score</summary>
+<details><summary>math · #314 of 398 · 67% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [OLMo 2 32B Instruct (0325)](olmo-2-32b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
 

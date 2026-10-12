@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-05 · 8.03B params
 
-**score 50.7** ±1.4 · #422 of 949 · from 3 benchmark results across 3 sources
+**score 50.7** ±1.4 · #331 of 719 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Princeton NLP · released 2024-05 · 8.03B params
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #253 of 466*     75%      1
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #234 of 393*     75%      1
 </pre>
 
-<details><summary>chat &amp; writing · #253 of 466 · 75% of its score</summary>
+<details><summary>chat &amp; writing · #234 of 393 · 75% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 

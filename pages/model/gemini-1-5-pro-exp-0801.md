@@ -14,11 +14,11 @@ Google · released 2024-08 · proprietary
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇█●▅▄▂▁   #239 of 549*     17%      1
-math    ▁▂▃▅●▅▅█▄▁▁▁   #278 of 464*    5.1%      1
+coding  ▁▁▁▃▅▇█●▅▄▃▁   #230 of 524*     17%      1
+math    ▁▂▃▅●▅▅█▄▁▁▁   #276 of 462*    5.1%      1
 </pre>
 
-<details><summary>coding · #239 of 549 · 17% of its score</summary>
+<details><summary>coding · #230 of 524 · 17% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>math · #278 of 464 · 5.1% of its score</summary>
+<details><summary>math · #276 of 462 · 5.1% of its score</summary>
 
 Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md), [OpenThinker 7B](openthinker-7b.md) here, though they rank lower overall.
 

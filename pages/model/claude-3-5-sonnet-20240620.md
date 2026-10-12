@@ -14,13 +14,13 @@ Anthropic · released 2024-06 · proprietary
 
 <pre>
 task                vs the others         rank  counts  tests
-coding              ▁▁▁▃▅▇█●▅▄▂▁   #229 of 549     31%      9
-chat &amp; writing      ▁▁▁▃▅▅▆█●▆▆▂   #237 of 579     16%      4
-math                ▁▂▃▅●▅▅█▄▁▁▁   #282 of 464     11%      5
-vision &amp; documents  ▁▁▃▃▂▃●▅▇▇█▃   #137 of 199     11%     14
+coding              ▁▁▁▃▅▇█●▅▄▃▁   #220 of 524     31%      9
+chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #204 of 463     16%      4
+math                ▁▂▃▅●▅▅█▄▁▁▁   #280 of 462     11%      5
+vision &amp; documents  ▁▁▃▃▂▃●▄▇▇█▃   #127 of 182     11%     14
 </pre>
 
-<details><summary>coding · #229 of 549 · 31% of its score</summary>
+<details><summary>coding · #220 of 524 · 31% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-V2.5](deepseek-v2-5.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #237 of 579 · 16% of its score</summary>
+<details><summary>chat &amp; writing · #204 of 463 · 16% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #282 of 464 · 11% of its score</summary>
+<details><summary>math · #280 of 462 · 11% of its score</summary>
 
 Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md), [OpenThinker 7B](openthinker-7b.md) here, though they rank lower overall.
 
@@ -68,7 +68,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>vision &amp; documents · #137 of 199 · 11% of its score</summary>
+<details><summary>vision &amp; documents · #127 of 182 · 11% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Mistral Small 3.2 24B](mistral-small-3-2.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank lower overall.
 

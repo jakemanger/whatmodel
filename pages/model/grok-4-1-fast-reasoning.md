@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-11 · closed weights
 
-**score 66.4** ±1.1 · #129 of 949 · from 15 benchmark results across 10 sources
+**score 66.4** ±1.1 · #124 of 719 · from 15 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ SpaceXAI (xAI) · released 2025-11 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▄▄▃▂▁   #111 of 334     17%      4
-coding              ▁▁▁▃▆██●▆▄▃▁   #164 of 469     28%      3
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #79 of 466*     11%      1
-math                ▁▂▃▅▆▅▄●▄▁▁▁    #90 of 400     30%      4
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄   #78 of 150*    7.3%      1
-web search          ▂▂▂▆▄●▃▃▁▁·▁    #32 of 81*    4.3%      1
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #110 of 300     17%      4
+coding              ▁▁▁▃▆██●▆▄▃▁   #162 of 458     28%      3
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #78 of 393*     11%      1
+math                ▁▂▃▅▆▅▄●▄▁▁▁    #90 of 398     30%      4
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄   #78 of 147*    7.3%      1
+web search          ▂▁▂▆▄●▃▃▁▁·▁    #32 of 80*    4.3%      1
 </pre>
 
-<details><summary>agent tasks · #111 of 334 · 17% of its score</summary>
+<details><summary>agent tasks · #110 of 300 · 17% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #164 of 469 · 28% of its score</summary>
+<details><summary>coding · #162 of 458 · 28% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #79 of 466 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #78 of 393 · 11% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Mistral Large 4 (public preview)](mistral-large-4.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #90 of 400 · 30% of its score</summary>
+<details><summary>math · #90 of 398 · 30% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md) here, though they rank lower overall.
 
@@ -74,7 +74,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>vision &amp; documents · #78 of 150 · 7.3% of its score</summary>
+<details><summary>vision &amp; documents · #78 of 147 · 7.3% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
@@ -85,7 +85,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>web search · #32 of 81 · 4.3% of its score</summary>
+<details><summary>web search · #32 of 80 · 4.3% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [GPT-5.3-Codex](gpt-5-3-codex.md), [Qwen3.7 Max](qwen3-7-max.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

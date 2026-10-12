@@ -6,7 +6,7 @@
 
 Google · released 2025-08 · 0.27B params · gemma
 
-**score 14.7** ±3.7 · #928 of 949 · from 5 benchmark results across 3 sources
+**score 14.7** ±3.7 · #699 of 719 · from 5 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Google · released 2025-08 · 0.27B params · gemma
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #399 of 466*     40%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #340 of 393*     40%      1
 </pre>
 
-<details><summary>chat &amp; writing · #399 of 466 · 40% of its score</summary>
+<details><summary>chat &amp; writing · #340 of 393 · 40% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall.
 

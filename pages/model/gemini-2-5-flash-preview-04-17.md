@@ -14,12 +14,12 @@ Google · released 2025-04 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▃▅▇█●▅▄▂▁    #170 of 549     77%      3
-math                ▁▂▃▅▇▅▅●▄▁▁▁   #142 of 464*     18%      1
-vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #111 of 199*    3.1%      1
+coding              ▁▁▁▃▅▇█●▅▄▃▁    #166 of 524     77%      3
+math                ▁▂▃▅▇▅▅●▄▁▁▁   #142 of 462*     18%      1
+vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #105 of 182*    3.1%      1
 </pre>
 
-<details><summary>coding · #170 of 549 · 77% of its score</summary>
+<details><summary>coding · #166 of 524 · 77% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [Devstral Small 2 24B](devstral-small-2.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #142 of 464 · 18% of its score</summary>
+<details><summary>math · #142 of 462 · 18% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank lower overall.
 
@@ -43,9 +43,9 @@ test                      result  vs the others in its run    difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #111 of 199 · 3.1% of its score</summary>
+<details><summary>vision &amp; documents · #105 of 182 · 3.1% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why

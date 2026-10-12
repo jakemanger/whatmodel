@@ -6,7 +6,7 @@
 
 NovaSky (UC Berkeley) · released 2025-01 · 32.76B params · apache-2.0
 
-**score 56.2** ±4.8 · #285 of 949 · from 3 benchmark results across 2 sources
+**score 56.2** ±4.8 · #242 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ NovaSky (UC Berkeley) · released 2025-01 · 32.76B params · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▄▄▃▂▁   #271 of 334*     44%      1
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #244 of 300*     44%      1
 </pre>
 
-<details><summary>agent tasks · #271 of 334 · 44% of its score</summary>
+<details><summary>agent tasks · #244 of 300 · 44% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Zhipu AI (Z.ai) · released 2024-06 · 9.4B params · glm-4
 
-**score 47.2** ±1.8 · #514 of 949 · from 8 benchmark results across 7 sources
+**score 47.2** ±1.8 · #395 of 719 · from 8 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Zhipu AI (Z.ai) · released 2024-06 · 9.4B params · glm-4
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▄▄▃▂▁   #317 of 334     20%      3
+agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #284 of 300     20%      3
 </pre>
 
-<details><summary>agent tasks · #317 of 334 · 20% of its score</summary>
+<details><summary>agent tasks · #284 of 300 · 20% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 

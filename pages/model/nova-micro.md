@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 45.9** ±2.1 · #556 of 949 · from 7 benchmark results across 5 sources
+**score 45.9** ±2.1 · #422 of 719 · from 7 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Amazon · released 2024-12 · closed weights
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▄▄▃▂▁    #280 of 334     56%      4
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #312 of 466*     39%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #252 of 300     56%      4
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #280 of 393*     39%      1
 </pre>
 
-<details><summary>agent tasks · #280 of 334 · 56% of its score</summary>
+<details><summary>agent tasks · #252 of 300 · 56% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #312 of 466 · 39% of its score</summary>
+<details><summary>chat &amp; writing · #280 of 393 · 39% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 

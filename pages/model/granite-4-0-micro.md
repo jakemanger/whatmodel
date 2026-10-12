@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 3.4B params · apache-2.0
 
-**score 46.0** ±0.9 · #554 of 949 · from 27 benchmark results across 4 sources
+**score 46.0** ±0.9 · #420 of 719 · from 27 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -16,8 +16,8 @@ IBM · released 2025-09 · 3.4B params · apache-2.0
 task            vs the others          rank  counts  tests
 agent tasks     ▄·▄········●       #2 of 4*    1.2%      1
 coding          ●···▄······▄        #3 of 4     32%      7
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #239 of 466*    4.6%      2
-math            ▁▂▃▅●▅▄█▄▁▁▁    #274 of 400     24%      6
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #222 of 393*    4.6%      2
+math            ▁▂▃▅●▅▄█▄▁▁▁    #272 of 398     24%      6
 </pre>
 
 <details><summary>agent tasks · #2 of 4 · 1.2% of its score</summary>
@@ -48,7 +48,7 @@ test                result  vs the others in its run    difficulty           cou
 
 </details>
 
-<details><summary>chat &amp; writing · #239 of 466 · 4.6% of its score</summary>
+<details><summary>chat &amp; writing · #222 of 393 · 4.6% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #274 of 400 · 24% of its score</summary>
+<details><summary>math · #272 of 398 · 24% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [InternVL2-4B](internvl2-4b.md) here, though they rank lower overall.
 

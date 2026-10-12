@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-09 · closed weights
 
-**score 76.8** ±0.7 · #28 of 949 · from 18 benchmark results across 6 sources
+**score 76.8** ±0.7 · #28 of 719 · from 18 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ OpenAI · released 2026-09 · closed weights
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▄▄●▂▁    #35 of 334     17%      3
-coding          ▁▁▁▃▆██▇▆▄●▁    #32 of 469     13%      3
-chat &amp; writing  ▁▁▁▄▆▅▆█▆▆●▂   #59 of 466*    4.5%      1
-math            ▁▂▃▅▆▅▄█▄●▁▁    #16 of 400     40%      3
+agent tasks     ▁▁▃▆█▆▅▅▅●▃▁    #35 of 300     17%      3
+coding          ▁▁▁▃▆██▇▆▄●▁    #32 of 458     13%      3
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #59 of 393*    4.5%      1
+math            ▁▂▃▅▆▅▄█▄●▁▁    #16 of 398     40%      3
 </pre>
 
-<details><summary>agent tasks · #35 of 334 · 17% of its score</summary>
+<details><summary>agent tasks · #35 of 300 · 17% of its score</summary>
 
 Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #32 of 469 · 13% of its score</summary>
+<details><summary>coding · #32 of 458 · 13% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #59 of 466 · 4.5% of its score</summary>
+<details><summary>chat &amp; writing · #59 of 393 · 4.5% of its score</summary>
 
 Trails [Gemma 4 31B](gemma-4-31b.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Claude Sonnet 4.5](claude-sonnet-4-5.md) here, though they rank lower overall.
 
@@ -57,7 +57,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #16 of 400 · 40% of its score</summary>
+<details><summary>math · #16 of 398 · 40% of its score</summary>
 
 Beats [Qwen3.8 Max (2.4T-A95B)](qwen3-8-2-4t-a95b.md), [Claude Opus 4.8](claude-opus-4-8.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank lower overall.
 

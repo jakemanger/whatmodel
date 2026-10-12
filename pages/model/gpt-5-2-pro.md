@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-12 · proprietary
 
-**score 77.1** ±1.0 · #26 of 949 · from 4 benchmark results across 2 sources
+**score 77.1** ±1.0 · #26 of 719 · from 4 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ OpenAI · released 2025-12 · proprietary
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂▃▅▆▅▄█▄●▁▁   #21 of 400*     84%      2
+math  ▁▂▃▅▆▅▄█▄●▁▁   #21 of 398*     84%      2
 </pre>
 
-<details><summary>math · #21 of 400 · 84% of its score</summary>
+<details><summary>math · #21 of 398 · 84% of its score</summary>
 
 Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3-8-flash.md), [Muse Spark 1.3](muse-spark-1-3.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 8.17B params · apache-2.0
 
-**score 42.7** ±1.0 · #651 of 949 · from 19 benchmark results across 6 sources
+**score 42.7** ±1.0 · #488 of 719 · from 19 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ IBM · released 2024-12 · 8.17B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▄▄▃▂▁   #285 of 334*    2.9%      1
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂    #343 of 466     17%      3
-math            ▁▂▃●▆▅▄█▄▁▁▁    #322 of 400     30%      3
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #257 of 300*    2.9%      1
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #298 of 393     17%      3
+math            ▁▂▃●▆▅▄█▄▁▁▁    #320 of 398     30%      3
 </pre>
 
-<details><summary>agent tasks · #285 of 334 · 2.9% of its score</summary>
+<details><summary>agent tasks · #257 of 300 · 2.9% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [Qwen2.5 3B Instruct](qwen2-5-3b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>chat &amp; writing · #343 of 466 · 17% of its score</summary>
+<details><summary>chat &amp; writing · #298 of 393 · 17% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #322 of 400 · 30% of its score</summary>
+<details><summary>math · #320 of 398 · 30% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
 

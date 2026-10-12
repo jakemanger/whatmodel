@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2026-07 · 2800B params (104B active) · kimi-k3-license
 
-**score 77.2** ±0.6 · #25 of 949 · from 28 benchmark results across 12 sources
+**score 77.2** ±0.6 · #25 of 719 · from 28 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Moonshot AI · released 2026-07 · 2800B params (104B active) · kimi-k3-license
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄▃●▁    #23 of 334     17%      6
-coding              ▁▁▁▃▆██▇▆▄●▁    #13 of 469     13%      4
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●   #12 of 466*    3.1%      1
-math                ▁▂▃▅▆▅▄█▄●▁▁    #23 of 400     52%     10
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄   #24 of 150*    1.2%      1
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #23 of 300     17%      6
+coding              ▁▁▁▃▆██▇▆▄●▁    #13 of 458     13%      4
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #12 of 393*    3.1%      1
+math                ▁▂▃▅▆▅▄█▄●▁▁    #23 of 398     52%     10
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #24 of 147*    1.2%      1
 </pre>
 
-<details><summary>agent tasks · #23 of 334 · 17% of its score</summary>
+<details><summary>agent tasks · #23 of 300 · 17% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md), [GLM-5.3](glm-5-3.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #13 of 469 · 13% of its score</summary>
+<details><summary>coding · #13 of 458 · 13% of its score</summary>
 
 Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Fable 5](claude-fable-5.md), [GPT-5.5](gpt-5-5.md) here, though they rank higher overall. Trails [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #12 of 466 · 3.1% of its score</summary>
+<details><summary>chat &amp; writing · #12 of 393 · 3.1% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md), [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #23 of 400 · 52% of its score</summary>
+<details><summary>math · #23 of 398 · 52% of its score</summary>
 
 Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3-8-flash.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.2 Pro](gpt-5-2-pro.md) here, though they rank lower overall.
 
@@ -82,7 +82,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #24 of 150 · 1.2% of its score</summary>
+<details><summary>vision &amp; documents · #24 of 147 · 1.2% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Gemini 3.5 Flash](gemini-3-5-flash.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 

@@ -14,11 +14,11 @@ Databricks · released 2023-04 · 12B params · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁●▃▅▇█▇▅▄▂▁   #541 of 549*     12%      1
-chat &amp; writing  ●▁▁▃▅▅▆█▆▆▆▂    #577 of 579     81%      4
+coding          ▁▁●▃▅▇█▇▅▄▃▁   #516 of 524*     12%      1
+chat &amp; writing  ●▁▁▃▅▄▆█▇▇▇▃    #461 of 463     81%      4
 </pre>
 
-<details><summary>coding · #541 of 549 · 12% of its score</summary>
+<details><summary>coding · #516 of 524 · 12% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall.
 
@@ -29,7 +29,7 @@ test       result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #577 of 579 · 81% of its score</summary>
+<details><summary>chat &amp; writing · #461 of 463 · 81% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md) here, though they rank lower overall.
 

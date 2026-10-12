@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-09 · 671B params (37B active) · mit
 
-**score 66.5** ±1.3 · #126 of 949 · from 11 benchmark results across 2 sources
+**score 66.5** ±1.3 · #121 of 719 · from 11 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ DeepSeek · released 2025-09 · 671B params (37B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▄▄▃▂▁   #124 of 334     32%      5
-coding          ▁▁▁▃▆██▇●▄▃▁   #104 of 469     43%      4
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #92 of 466*     15%      1
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #123 of 300     32%      5
+coding          ▁▁▁▃▆██▇●▄▃▁   #103 of 458     43%      4
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #91 of 393*     15%      1
 web search      █········█·●      #1 of 3*     12%      2
 </pre>
 
-<details><summary>agent tasks · #124 of 334 · 32% of its score</summary>
+<details><summary>agent tasks · #123 of 300 · 32% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #104 of 469 · 43% of its score</summary>
+<details><summary>coding · #103 of 458 · 43% of its score</summary>
 
 Beats [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #92 of 466 · 15% of its score</summary>
+<details><summary>chat &amp; writing · #91 of 393 · 15% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [Qwen3.5 122B-A10B](qwen3-5-122b-a10b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Kimi K2 Instruct (0905)](kimi-k2-0905.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 

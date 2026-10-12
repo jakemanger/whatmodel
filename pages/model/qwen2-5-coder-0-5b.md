@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 0.49B params · apache-2.0
 
-**score 37.1** ±1.2 · #771 of 949 · from 9 benchmark results across 2 sources
+**score 37.1** ±1.2 · #576 of 719 · from 9 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Alibaba · released 2024-11 · 0.49B params · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #410 of 469     96%      8
+coding  ▁▁▁▃●██▇▆▄▃▁   #401 of 458     96%      8
 </pre>
 
-<details><summary>coding · #410 of 469 · 96% of its score</summary>
+<details><summary>coding · #401 of 458 · 96% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Code Llama 7B Instruct](codellama-7b-instruct.md) here, though they rank lower overall.
 

@@ -34,7 +34,7 @@ export const detectExact = (host: string, path = "/") => ({
 // The curl command for a set of picks, keeping only params the API understands.
 export function curlFor(host: string, path: string, q: URLSearchParams) {
   const keep = new URLSearchParams();
-  for (const k of ["mac", "ram", "gpu", "vram", "hw", "max", "sort", "dir", "all", "retired", "set", "score", "chart"]) {
+  for (const k of ["mac", "ram", "gpu", "vram", "hw", "max", "sort", "dir", "all", "retired", "thin", "set", "score", "chart"]) {
     const v = q.get(k);
     if (v) keep.set(k, v);
   }
@@ -85,6 +85,7 @@ export function describeSpecs(s: Specs) {
 type Opts = { color: boolean; base: string; limit: number; all: boolean; benches: number; updated: string; cat: Category;
   comparison?: { selected?: string; scoreMode: "overall" | "set"; sets: { id: string; label: string; models: number }[] };
   retiredCount?: number; // scored models with no verified API or download, listed unless ?retired=0
+  thin?: boolean; thinCount?: number; // text models with fewer than 3 results, listed only with ?thin=1
 };
 
 export function toText(rows: Row[], specs: Specs | null, max: number | null, o: Opts) {
@@ -136,6 +137,7 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   }
   out.push("");
   if (!o.all && hidden > 0) out.push(c("2", `  + ${hidden} more models don't fit your machine or budget (?all=1)`));
+  if (o.thinCount && !o.thin) out.push(c("2", `  + ${o.thinCount} models with fewer than 3 results left off (add ?thin=1 to list them)`));
   if (o.retiredCount && max === null && !specs && !shown.some((r) => r.where === "retired")) out.push(c("2", `  + ${o.retiredCount} comparison-only models hidden (drop ?retired=0 to list them)`));
   if (shown.some((r) => r.thin)) out.push(c("2", `  * new or thinly tested: ranked on too few benchmark results`));
   if (shown.some((r) => r.maker_only)) out.push(c("2", `  † only the maker's own numbers so far`));
@@ -146,7 +148,7 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   out.push(c("2", `  sources and licences: ${host}/method#sources`));
   out.push(c("2", `  score = one number combining ${o.benches} benchmarks (50 = average model, ± = uncertainty) · ${host}/method`));
   out.push(c("2", `  other lists: ${["/", "/image", "/video", "/tts", "/stt"].filter((p) => p !== path).map((p) => host + p).join("  ")}`));
-  out.push(c("2", `  ?max=${o.cat === "llm" ? "1" : "0.05"} (max $/${CATEGORIES[o.cat].priceUnit}, 0 = local only)  ?sort=score|where|speed|ram|context  ?format=json  ?all=1  ?retired=0`));
+  out.push(c("2", `  ?max=${o.cat === "llm" ? "1" : "0.05"} (max $/${CATEGORIES[o.cat].priceUnit}, 0 = local only)  ?sort=score|where|speed|ram|context  ?format=json  ?all=1  ?retired=0  ?thin=1`));
   if (sponsor) out.push(`  ${c("35", "sponsor:")} ${sponsor.text} — ${sponsor.url}`);
   out.push(c("2", `  estimates from public sources; may be wrong or out of date. review commands before running. ${host}/terms`));
   out.push("");

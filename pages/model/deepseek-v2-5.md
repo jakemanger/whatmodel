@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-09 · 236B params (21B active) · deepseek
 
-**score 53.6** ±0.8 · #357 of 949 · from 13 benchmark results across 7 sources
+**score 53.6** ±0.8 · #290 of 719 · from 13 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ DeepSeek · released 2024-09 · 236B params (21B active) · deepseek
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆██●▆▄▃▁    #190 of 469     31%      4
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #230 of 466*    8.9%      2
-math            ▁▂▃▅●▅▄█▄▁▁▁    #272 of 400     16%      3
+coding          ▁▁▁▃▆██●▆▄▃▁    #188 of 458     31%      4
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #214 of 393*    8.9%      2
+math            ▁▂▃▅●▅▄█▄▁▁▁    #270 of 398     16%      3
 </pre>
 
-<details><summary>coding · #190 of 469 · 31% of its score</summary>
+<details><summary>coding · #188 of 458 · 31% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #230 of 466 · 8.9% of its score</summary>
+<details><summary>chat &amp; writing · #214 of 393 · 8.9% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                        result  vs the others in its run    difficulty      
 
 </details>
 
-<details><summary>math · #272 of 400 · 16% of its score</summary>
+<details><summary>math · #270 of 398 · 16% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [InternVL2-4B](internvl2-4b.md) here, though they rank lower overall.
 

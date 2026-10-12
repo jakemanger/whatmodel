@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 32.8B params · apache-2.0
 
-**score 56.6** ±0.7 · #281 of 949 · from 25 benchmark results across 11 sources
+**score 56.6** ±0.7 · #239 of 719 · from 25 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Alibaba · released 2024-11 · 32.8B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆██●▆▄▃▁    #186 of 469     88%     17
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #273 of 466*    4.3%      1
+coding          ▁▁▁▃▆██●▆▄▃▁    #184 of 458     88%     17
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #253 of 393*    4.3%      1
 </pre>
 
-<details><summary>coding · #186 of 469 · 88% of its score</summary>
+<details><summary>coding · #184 of 458 · 88% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [OpenThinker 32B](openthinker-32b.md), [Command A Reasoning (08-2025)](command-a-reasoning-08-2025.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #273 of 466 · 4.3% of its score</summary>
+<details><summary>chat &amp; writing · #253 of 393 · 4.3% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 

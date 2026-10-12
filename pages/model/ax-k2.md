@@ -6,7 +6,7 @@
 
 SK Telecom · released 2026-07 · 691.69B params (33B active) · apache-2.0
 
-**score 69.3** ±1.4 · #95 of 949 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 69.3** ±1.4 · #92 of 719 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ SK Telecom · released 2026-07 · 691.69B params (33B active) · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆██▇▆●▃▁   #77 of 469*     18%      2
-math    ▁▂▃▅▆▅▄█●▁▁▁   #43 of 400*    7.7%      1
+coding  ▁▁▁▃▆██▇▆●▃▁   #76 of 458*     18%      2
+math    ▁▂▃▅▆▅▄█●▁▁▁   #43 of 398*    7.7%      1
 </pre>
 
-<details><summary>coding · #77 of 469 · 18% of its score</summary>
+<details><summary>coding · #76 of 458 · 18% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md) here, though they rank higher overall. Trails [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #43 of 400 · 7.7% of its score</summary>
+<details><summary>math · #43 of 398 · 7.7% of its score</summary>
 
 Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Gemini 3.6 Flash](gemini-3-6-flash.md) here, though they rank higher overall.
 

@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-04 · 7B params · cc-by-nc-sa-4.0
 
-**score 14.0** ±2.0 · #930 of 949 · from 4 benchmark results across 4 sources
+**score 14.0** ±2.0 · #701 of 719 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Stability AI · released 2023-04 · 7B params · cc-by-nc-sa-4.0
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ●▁▁▄▆▅▆█▆▆▆▂   #466 of 466     98%      4
+chat &amp; writing  ●▁▁▃▅▄▅█▆▆▇▃   #393 of 393     98%      4
 </pre>
 
-<details><summary>chat &amp; writing · #466 of 466 · 98% of its score</summary>
+<details><summary>chat &amp; writing · #393 of 393 · 98% of its score</summary>
 
 <pre>
 test                                                      result  vs the others in its run  difficulty                counts  why

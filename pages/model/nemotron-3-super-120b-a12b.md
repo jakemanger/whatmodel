@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 120.6B params (12.7B active) · nvidia-open-model
 
-**score 64.7** ±0.8 · #157 of 949 · from 26 benchmark results across 5 sources
+**score 64.7** ±0.8 · #146 of 719 · from 26 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ NVIDIA · released 2026-03 · 120.6B params (12.7B active) · nvidia-open-model
 
 <pre>
 task            vs the others            rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▄▄▃▂▁      #130 of 334     24%     10
-coding          ▁▁▁▃▆██▇●▄▃▁      #118 of 469     16%      7
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂     #152 of 466*    6.4%      1
-math            ▁▂▃▅▆▅▄●▄▁▁▁      #118 of 400     37%      7
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁      #128 of 300     24%     10
+coding          ▁▁▁▃▆██▇●▄▃▁      #117 of 458     16%      7
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃     #147 of 393*    6.4%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁      #118 of 398     37%      7
 web search                     not ranked yet       —      2
 </pre>
 
-<details><summary>agent tasks · #130 of 334 · 24% of its score</summary>
+<details><summary>agent tasks · #128 of 300 · 24% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [MiniCPM5 2B](minicpm5-2b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #118 of 469 · 16% of its score</summary>
+<details><summary>coding · #117 of 458 · 16% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kimi K2 Thinking](kimi-k2-thinking.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #152 of 466 · 6.4% of its score</summary>
+<details><summary>chat &amp; writing · #147 of 393 · 6.4% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -69,7 +69,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #118 of 400 · 37% of its score</summary>
+<details><summary>math · #118 of 398 · 37% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank lower overall.
 

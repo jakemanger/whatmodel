@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-02 · 72.29B params · tongyi-qianwen
 
-**score 45.4** ±0.5 · #574 of 949 · from 19 benchmark results across 15 sources
+**score 45.4** ±0.5 · #437 of 719 · from 19 benchmark results across 15 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Alibaba · released 2024-02 · 72.29B params · tongyi-qianwen
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁   #327 of 469     47%      3
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #323 of 466     20%      5
+coding          ▁▁▁▃▆●█▇▆▄▃▁   #323 of 458     47%      3
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #287 of 393     20%      5
 </pre>
 
-<details><summary>coding · #327 of 469 · 47% of its score</summary>
+<details><summary>coding · #323 of 458 · 47% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #323 of 466 · 20% of its score</summary>
+<details><summary>chat &amp; writing · #287 of 393 · 20% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 

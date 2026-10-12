@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-03 · 32.76B params · apache-2.0
 
-**score 59.4** ±0.8 · #226 of 949 · from 27 benchmark results across 13 sources
+**score 59.4** ±0.8 · #202 of 719 · from 27 benchmark results across 13 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2025-03 · 32.76B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁   #241 of 334*    2.9%      2
-coding          ▁▁▁▃▆█●▇▆▄▃▁    #205 of 469     28%      7
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂    #172 of 466     23%      5
-math            ▁▂▃▅▆▅●█▄▁▁▁    #146 of 400    9.3%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #222 of 300*    2.9%      2
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #203 of 458     28%      7
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃    #164 of 393     23%      5
+math            ▁▂▃▅▆▅●█▄▁▁▁    #146 of 398    9.3%      3
 </pre>
 
-<details><summary>agent tasks · #241 of 334 · 2.9% of its score</summary>
+<details><summary>agent tasks · #222 of 300 · 2.9% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #205 of 469 · 28% of its score</summary>
+<details><summary>coding · #203 of 458 · 28% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #172 of 466 · 23% of its score</summary>
+<details><summary>chat &amp; writing · #164 of 393 · 23% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
@@ -64,7 +64,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #146 of 400 · 9.3% of its score</summary>
+<details><summary>math · #146 of 398 · 9.3% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 

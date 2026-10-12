@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 67B params · deepseek
 
-**score 40.8** ±1.3 · #695 of 949 · from 11 benchmark results across 5 sources
+**score 40.8** ±1.3 · #518 of 719 · from 11 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ DeepSeek · released 2023-11 · 67B params · deepseek
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁    #255 of 469    8.6%      4
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂    #377 of 466     72%      3
-math            ▁▂●▅▆▅▄█▄▁▁▁   #368 of 400*     11%      2
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #252 of 458    8.6%      4
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #322 of 393     72%      3
+math            ▁▂●▅▆▅▄█▄▁▁▁   #366 of 398*     11%      2
 </pre>
 
-<details><summary>coding · #255 of 469 · 8.6% of its score</summary>
+<details><summary>coding · #252 of 458 · 8.6% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #377 of 466 · 72% of its score</summary>
+<details><summary>chat &amp; writing · #322 of 393 · 72% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #368 of 400 · 11% of its score</summary>
+<details><summary>math · #366 of 398 · 11% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md), [OLMo 2 1B Instruct (0425)](olmo-2-1b.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 

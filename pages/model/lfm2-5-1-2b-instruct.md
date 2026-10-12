@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
-**score 43.5** ±1.8 · #632 of 949 · from 10 benchmark results across 2 sources
+**score 43.5** ±1.8 · #475 of 719 · from 10 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▄▄▃▂▁   #275 of 334*    3.1%      1
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #169 of 466*     10%      1
-math            ▁▂▃●▆▅▄█▄▁▁▁    #301 of 400     43%      3
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #247 of 300*    3.1%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #161 of 393*     10%      1
+math            ▁▂▃●▆▅▄█▄▁▁▁    #299 of 398     43%      3
 </pre>
 
-<details><summary>agent tasks · #275 of 334 · 3.1% of its score</summary>
+<details><summary>agent tasks · #247 of 300 · 3.1% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test           result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #169 of 466 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #161 of 393 · 10% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #301 of 400 · 43% of its score</summary>
+<details><summary>math · #299 of 398 · 43% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 

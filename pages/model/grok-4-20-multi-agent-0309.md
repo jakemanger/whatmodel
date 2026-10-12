@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-03 · closed weights
 
-**score 73.1** ±2.3 · #58 of 949 · from 3 benchmark results across 1 source
+**score 73.1** ±2.3 · #56 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ SpaceXAI (xAI) · released 2026-03 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #33 of 466*     47%      1
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄   #45 of 150*     32%      1
-web search          ▂▂▂▆▄●▃▃▁▁·▁    #25 of 81*     19%      1
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #33 of 393*     47%      1
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄   #45 of 147*     32%      1
+web search          ▂▁▂▆▄●▃▃▁▁·▁    #25 of 80*     19%      1
 </pre>
 
-<details><summary>chat &amp; writing · #33 of 466 · 47% of its score</summary>
+<details><summary>chat &amp; writing · #33 of 393 · 47% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Claude Opus 4.5](claude-opus-4-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #45 of 150 · 32% of its score</summary>
+<details><summary>vision &amp; documents · #45 of 147 · 32% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [Kimi K2.5](kimi-k2-5.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                             result  vs the others in its run    difficulty 
 
 </details>
 
-<details><summary>web search · #25 of 81 · 19% of its score</summary>
+<details><summary>web search · #25 of 80 · 19% of its score</summary>
 
 Beats [Claude Opus 4.8](claude-opus-4-8.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

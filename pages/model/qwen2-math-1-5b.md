@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 1.54B params · apache-2.0
 
-**score 44.9** ±2.0 · #591 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 44.9** ±2.0 · #446 of 719 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Alibaba · released 2024-08 · 1.54B params · apache-2.0
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂▃●▆▅▄█▄▁▁▁   #295 of 400     98%      3
+math  ▁▂▃●▆▅▄█▄▁▁▁   #293 of 398     98%      3
 </pre>
 
-<details><summary>math · #295 of 400 · 98% of its score</summary>
+<details><summary>math · #293 of 398 · 98% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 

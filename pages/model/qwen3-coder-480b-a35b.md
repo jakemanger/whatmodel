@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 480B params (35B active) · apache-2.0
 
-**score 64.0** ±1.2 · #169 of 949 · from 10 benchmark results across 4 sources
+**score 64.0** ±1.2 · #157 of 719 · from 10 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Alibaba · released 2025-07 · 480B params (35B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▄▄▃▂▁    #134 of 334     36%      7
-coding          ▁▁▁▃▆██●▆▄▃▁    #142 of 469     63%      6
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #125 of 466*     13%      1
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #132 of 300     36%      7
+coding          ▁▁▁▃▆██●▆▄▃▁    #141 of 458     63%      6
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #122 of 393*     13%      1
 </pre>
 
-<details><summary>agent tasks · #134 of 334 · 36% of its score</summary>
+<details><summary>agent tasks · #132 of 300 · 36% of its score</summary>
 
-Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [watt-tool-70B](watt-tool-70b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
@@ -36,7 +36,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #142 of 469 · 63% of its score</summary>
+<details><summary>coding · #141 of 458 · 63% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
 
@@ -52,7 +52,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #125 of 466 · 13% of its score</summary>
+<details><summary>chat &amp; writing · #122 of 393 · 13% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [MiMo-V2-Flash (309B-A15B)](mimo-v2-flash.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
 

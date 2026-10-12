@@ -6,7 +6,7 @@
 
 01.AI · released 2024-10 · closed weights
 
-**score 55.4** ±1.3 · #305 of 949 · from 4 benchmark results across 4 sources
+**score 55.4** ±1.3 · #256 of 719 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁   #231 of 469*     53%      2
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #191 of 466*     46%      2
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #228 of 458*     53%      2
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #182 of 393*     46%      2
 </pre>
 
-<details><summary>coding · #231 of 469 · 53% of its score</summary>
+<details><summary>coding · #228 of 458 · 53% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #191 of 466 · 46% of its score</summary>
+<details><summary>chat &amp; writing · #182 of 393 · 46% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 

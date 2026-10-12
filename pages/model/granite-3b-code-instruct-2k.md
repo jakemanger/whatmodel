@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 3.48B params · apache-2.0
 
-**score 38.0** ±1.5 · #754 of 949 · from 6 benchmark results across 3 sources
+**score 38.0** ±1.5 · #564 of 719 · from 6 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ IBM · released 2024-04 · 3.48B params · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #380 of 469     73%      3
+coding  ▁▁▁▃●██▇▆▄▃▁   #373 of 458     73%      3
 </pre>
 
-<details><summary>coding · #380 of 469 · 73% of its score</summary>
+<details><summary>coding · #373 of 458 · 73% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md) here, though they rank lower overall.
 

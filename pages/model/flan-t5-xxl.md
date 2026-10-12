@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 11.3B params · apache-2.0
 
-**score 33.3** ±1.3 · #822 of 949 · from 8 benchmark results across 4 sources
+**score 33.3** ±1.3 · #615 of 719 · from 8 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Google · released 2022-10 · 11.3B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #241 of 466*    0.0%      1
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #224 of 393*    0.0%      1
 math            ██·█···█···●       #1 of 5*     13%      1
 </pre>
 
-<details><summary>chat &amp; writing · #241 of 466 · 0.0% of its score</summary>
+<details><summary>chat &amp; writing · #224 of 393 · 0.0% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall.
 

@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 32.2B params · apache-2.0
 
-**score 57.9** ±1.0 · #253 of 949 · from 18 benchmark results across 4 sources
+**score 57.9** ±1.0 · #218 of 719 · from 18 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Ai2 · released 2025-11 · 32.2B params · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁   #207 of 469    8.2%      3
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #226 of 466     13%      3
-math            ▁▂▃▅▆▅▄●▄▁▁▁   #134 of 400     24%      4
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #205 of 458    8.2%      3
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #211 of 393     13%      3
+math            ▁▂▃▅▆▅▄●▄▁▁▁   #134 of 398     24%      4
 </pre>
 
-<details><summary>coding · #207 of 469 · 8.2% of its score</summary>
+<details><summary>coding · #205 of 458 · 8.2% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                    result  vs the others in its run  difficulty        coun
 
 </details>
 
-<details><summary>chat &amp; writing · #226 of 466 · 13% of its score</summary>
+<details><summary>chat &amp; writing · #211 of 393 · 13% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #134 of 400 · 24% of its score</summary>
+<details><summary>math · #134 of 398 · 24% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall.
 

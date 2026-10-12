@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-06 · 236B params (21B active) · deepseek
 
-**score 53.0** ±0.7 · #368 of 949 · from 12 benchmark results across 8 sources
+**score 53.0** ±0.7 · #298 of 719 · from 12 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ DeepSeek · released 2024-06 · 236B params (21B active) · deepseek
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁    #215 of 469     55%      6
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂    #282 of 466     18%      3
-math            ▁▂▃▅●▅▄█▄▁▁▁   #264 of 400*    3.4%      1
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #212 of 458     55%      6
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃    #259 of 393     18%      3
+math            ▁▂▃▅●▅▄█▄▁▁▁   #262 of 398*    3.4%      1
 </pre>
 
-<details><summary>coding · #215 of 469 · 55% of its score</summary>
+<details><summary>coding · #212 of 458 · 55% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #282 of 466 · 18% of its score</summary>
+<details><summary>chat &amp; writing · #259 of 393 · 18% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #264 of 400 · 3.4% of its score</summary>
+<details><summary>math · #262 of 398 · 3.4% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [InternVL2-4B](internvl2-4b.md) here, though they rank lower overall.
 

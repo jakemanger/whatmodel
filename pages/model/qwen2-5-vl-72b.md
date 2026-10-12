@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 73.4B params · qwen
 
-**score 55.9** ±0.9 · #290 of 949 · from 29 benchmark results across 9 sources
+**score 55.9** ±0.9 · #247 of 719 · from 29 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Alibaba · released 2025-01 · 73.4B params · qwen
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▂▃▅▆●▄█▄▁▁▁   #194 of 400*    7.8%      1
-vision &amp; documents  ▁▁▃▂▁▃●▃▆▇█▄    #105 of 150     92%     20
+math                ▁▂▃▅▆●▄█▄▁▁▁   #192 of 398*    7.8%      1
+vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄    #103 of 147     92%     20
 </pre>
 
-<details><summary>math · #194 of 400 · 7.8% of its score</summary>
+<details><summary>math · #192 of 398 · 7.8% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #105 of 150 · 92% of its score</summary>
+<details><summary>vision &amp; documents · #103 of 147 · 92% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank higher overall. Trails [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Mistral Small 3.2 24B](mistral-small-3-2.md) here, though they rank lower overall.
 

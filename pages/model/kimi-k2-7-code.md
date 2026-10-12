@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2026-06 · 1000B params (32B active) · modified-mit
 
-**score 72.1** ±1.0 · #70 of 949 · from 7 benchmark results across 2 sources
+**score 72.1** ±1.0 · #67 of 719 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Moonshot AI · released 2026-06 · 1000B params (32B active) · modified-mit
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆██▇▆●▃▁   #58 of 469*     15%      1
-math    ▁▂▃▅▆▅▄█●▁▁▁    #51 of 400     67%      3
+coding  ▁▁▁▃▆██▇▆●▃▁   #57 of 458*     15%      1
+math    ▁▂▃▅▆▅▄█●▁▁▁    #51 of 398     67%      3
 </pre>
 
-<details><summary>coding · #58 of 469 · 15% of its score</summary>
+<details><summary>coding · #57 of 458 · 15% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md), [Mistral Large 4 (public preview)](mistral-large-4.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                       result  vs the others in its run   difficulty  counts
 
 </details>
 
-<details><summary>math · #51 of 400 · 67% of its score</summary>
+<details><summary>math · #51 of 398 · 67% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank lower overall.
 

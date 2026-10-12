@@ -6,7 +6,7 @@
 
 Mistral · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
-**score 40.5** ±0.5 · #702 of 949 · from 32 benchmark results across 21 sources
+**score 40.5** ±0.5 · #524 of 719 · from 32 benchmark results across 21 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Mistral · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▄▄▃▂▁   #308 of 334*    0.4%      1
-coding          ▁▁▁▃●██▇▆▄▃▁    #394 of 469     55%      8
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂    #358 of 466     12%      6
-math            ▁▂●▅▆▅▄█▄▁▁▁   #359 of 400*    5.7%      2
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #277 of 300*    0.4%      1
+coding          ▁▁▁▃●██▇▆▄▃▁    #386 of 458     55%      8
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #307 of 393     12%      6
+math            ▁▂●▅▆▅▄█▄▁▁▁   #357 of 398*    5.7%      2
 </pre>
 
-<details><summary>agent tasks · #308 of 334 · 0.4% of its score</summary>
+<details><summary>agent tasks · #277 of 300 · 0.4% of its score</summary>
 
 Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [Mixtral 8x22B Instruct v0.1](mixtral-8x22b-instruct-v0-1.md), [GLM-4 9B Chat](glm-4-9b-chat.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #394 of 469 · 55% of its score</summary>
+<details><summary>coding · #386 of 458 · 55% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #358 of 466 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #307 of 393 · 12% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -65,7 +65,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #359 of 400 · 5.7% of its score</summary>
+<details><summary>math · #357 of 398 · 5.7% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md), [Stable Code 3B](stable-code-3b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 

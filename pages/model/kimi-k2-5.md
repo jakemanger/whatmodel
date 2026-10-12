@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2026-01 · 1000B params (32B active) · modified-mit
 
-**score 69.8** ±0.7 · #88 of 949 · from 36 benchmark results across 21 sources
+**score 69.8** ±0.7 · #85 of 719 · from 36 benchmark results across 21 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Moonshot AI · released 2026-01 · 1000B params (32B active) · modified-mit
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▄▃▂▁    #87 of 334     31%      7
-coding              ▁▁▁▃▆██▇▆●▃▁    #74 of 469     22%      4
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #55 of 466*    4.5%      1
-math                ▁▂▃▅▆▅▄●▄▁▁▁    #69 of 400     12%      5
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄    #42 of 150     14%      7
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #87 of 300     31%      7
+coding              ▁▁▁▃▆██▇▆●▃▁    #73 of 458     22%      4
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #55 of 393*    4.5%      1
+math                ▁▂▃▅▆▅▄●▄▁▁▁    #69 of 398     12%      5
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #42 of 147     14%      7
 web search          ██···●····██      #3 of 5*    3.0%      1
 </pre>
 
-<details><summary>agent tasks · #87 of 334 · 31% of its score</summary>
+<details><summary>agent tasks · #87 of 300 · 31% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #74 of 469 · 22% of its score</summary>
+<details><summary>coding · #73 of 458 · 22% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #55 of 466 · 4.5% of its score</summary>
+<details><summary>chat &amp; writing · #55 of 393 · 4.5% of its score</summary>
 
 Beats [GPT-6 Luna](gpt-6-luna.md), [Grok 4.7](grok-4-7.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [Gemma 4 31B](gemma-4-31b.md), [Claude Sonnet 4.5](claude-sonnet-4-5.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 
@@ -64,7 +64,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #69 of 400 · 12% of its score</summary>
+<details><summary>math · #69 of 398 · 12% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [EXAONE 4.5 33B](exaone-4-5-33b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
 
@@ -79,7 +79,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #42 of 150 · 14% of its score</summary>
+<details><summary>vision &amp; documents · #42 of 147 · 14% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 

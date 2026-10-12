@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-06 · 33B params · non-commercial
 
-**score 39.1** ±1.1 · #725 of 949 · from 10 benchmark results across 8 sources
+**score 39.1** ±1.1 · #543 of 719 · from 10 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ LMSYS · released 2023-06 · 33B params · non-commercial
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #388 of 466     77%      6
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #331 of 393     77%      6
 </pre>
 
-<details><summary>chat &amp; writing · #388 of 466 · 77% of its score</summary>
+<details><summary>chat &amp; writing · #331 of 393 · 77% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 

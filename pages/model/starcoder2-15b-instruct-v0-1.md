@@ -6,7 +6,7 @@
 
 BigCode · released 2024-04 · 15.96B params · bigcode-openrail-m
 
-**score 45.5** ±0.8 · #573 of 949 · from 5 benchmark results across 2 sources
+**score 45.5** ±0.8 · #436 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ BigCode · released 2024-04 · 15.96B params · bigcode-openrail-m
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #330 of 469     87%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #326 of 458     87%      3
 </pre>
 
-<details><summary>coding · #330 of 469 · 87% of its score</summary>
+<details><summary>coding · #326 of 458 · 87% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 

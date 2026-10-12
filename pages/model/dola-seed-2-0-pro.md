@@ -14,12 +14,12 @@ ByteDance · proprietary
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         █··········●      #1 of 2*     33%      1
-chat &amp; writing      ▁▁▁▃▅▅▆█▆▆●▂   #54 of 579*     38%      1
-vision &amp; documents  ▁▁▃▃▂▃▅▅▇▇●▃   #46 of 199*     26%      1
+agent tasks         ······●·····      #1 of 1*     33%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃   #49 of 463*     38%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▄▇▇●▃   #45 of 182*     26%      1
 </pre>
 
-<details><summary>agent tasks · #1 of 2 · 33% of its score</summary>
+<details><summary>agent tasks · #1 of 1 · 33% of its score</summary>
 
 <pre>
 test                    result  vs the others in its run  difficulty      counts  why
@@ -28,7 +28,7 @@ test                    result  vs the others in its run  difficulty      counts
 
 </details>
 
-<details><summary>chat &amp; writing · #54 of 579 · 38% of its score</summary>
+<details><summary>chat &amp; writing · #49 of 463 · 38% of its score</summary>
 
 Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Claude Sonnet 4.5](claude-sonnet-4-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5](glm-5.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #46 of 199 · 26% of its score</summary>
+<details><summary>vision &amp; documents · #45 of 182 · 26% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank lower overall.
 

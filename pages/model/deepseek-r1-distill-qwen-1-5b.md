@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 1.78B params · mit
 
-**score 37.2** ±1.7 · #768 of 949 · from 16 benchmark results across 7 sources
+**score 37.2** ±1.7 · #574 of 719 · from 16 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ DeepSeek · released 2025-01 · 1.78B params · mit
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁●▁▃▆██▇▆▄▃▁   #466 of 469     26%      5
-math    ▁▂▃▅●▅▄█▄▁▁▁   #240 of 400     34%      4
+coding  ▁●▁▃▆██▇▆▄▃▁   #455 of 458     26%      5
+math    ▁▂▃▅●▅▄█▄▁▁▁   #238 of 398     34%      4
 </pre>
 
-<details><summary>coding · #466 of 469 · 26% of its score</summary>
+<details><summary>coding · #455 of 458 · 26% of its score</summary>
 
 Trails [GPT-Neo 2.7B](gpt-neo-2-7b.md), [Phi-1 (1.3B)](phi-1.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #240 of 400 · 34% of its score</summary>
+<details><summary>math · #238 of 398 · 34% of its score</summary>
 
 Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall.
 

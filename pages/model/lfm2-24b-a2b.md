@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-02 · 23.8B params (2.3B active) · lfm1.0
 
-**score 50.7** ±1.2 · #420 of 949 · from 11 benchmark results across 1 source
+**score 50.7** ±1.2 · #329 of 719 · from 11 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Liquid AI · released 2026-02 · 23.8B params (2.3B active) · lfm1.0
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂▃▅▆●▄█▄▁▁▁   #217 of 400     31%      4
+math  ▁▂▃▅▆●▄█▄▁▁▁   #215 of 398     31%      4
 </pre>
 
-<details><summary>math · #217 of 400 · 31% of its score</summary>
+<details><summary>math · #215 of 398 · 31% of its score</summary>
 
 Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 

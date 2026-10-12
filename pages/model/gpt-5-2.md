@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-12 · closed weights
 
-**score 73.8** ±0.5 · #52 of 949 · from 50 benchmark results across 26 sources
+**score 73.8** ±0.5 · #51 of 719 · from 50 benchmark results across 26 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ OpenAI · released 2025-12 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄●▃▂▁    #58 of 334     23%     14
-coding              ▁▁▁▃▆██▇●▄▃▁    #80 of 469     10%      3
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #70 of 466*    2.5%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁    #31 of 400     31%      9
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄    #44 of 150    4.9%      5
-web search          ▂▂▂▆●█▃▃▁▁·▁    #51 of 81*    1.0%      1
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #58 of 300     23%     14
+coding              ▁▁▁▃▆██▇●▄▃▁    #79 of 458     10%      3
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #70 of 393*    2.5%      1
+math                ▁▂▃▅▆▅▄█●▁▁▁    #31 of 398     31%      9
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #44 of 147    4.9%      5
+web search          ▂▁▂▆●█▃▃▁▁·▁    #51 of 80*    1.0%      1
 </pre>
 
-<details><summary>agent tasks · #58 of 334 · 23% of its score</summary>
+<details><summary>agent tasks · #58 of 300 · 23% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #80 of 469 · 10% of its score</summary>
+<details><summary>coding · #79 of 458 · 10% of its score</summary>
 
 Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 
@@ -59,7 +59,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #70 of 466 · 2.5% of its score</summary>
+<details><summary>chat &amp; writing · #70 of 393 · 2.5% of its score</summary>
 
 Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [Gemma 4 31B](gemma-4-31b.md) here, though they rank lower overall.
 
@@ -70,7 +70,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #31 of 400 · 31% of its score</summary>
+<details><summary>math · #31 of 398 · 31% of its score</summary>
 
 Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [DeepSeek V4 Pro (0813)](deepseek-v4-pro.md), [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank higher overall.
 
@@ -89,7 +89,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #44 of 150 · 4.9% of its score</summary>
+<details><summary>vision &amp; documents · #44 of 147 · 4.9% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [Kimi K2.5](kimi-k2-5.md) here, though they rank lower overall.
 
@@ -104,7 +104,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>web search · #51 of 81 · 1.0% of its score</summary>
+<details><summary>web search · #51 of 80 · 1.0% of its score</summary>
 
 Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

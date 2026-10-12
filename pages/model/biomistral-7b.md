@@ -6,7 +6,7 @@
 
 BioMistral · released 2024-02 · apache-2.0
 
-**score 38.0** ±3.3 · #756 of 949 · from 3 benchmark results across 3 sources
+**score 38.0** ±3.3 · #566 of 719 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 

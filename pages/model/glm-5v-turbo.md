@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-04 · closed weights
 
-**score 68.5** ±1.7 · #106 of 949 · from 4 benchmark results across 1 source
+**score 68.5** ±1.7 · #102 of 719 · from 4 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Z.ai · released 2026-04 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-coding              ▁▁▁▃▆██▇●▄▃▁   #86 of 469*     46%      1
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #76 of 466*     26%      1
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄   #64 of 150*     27%      2
+coding              ▁▁▁▃▆██▇●▄▃▁   #85 of 458*     46%      1
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #75 of 393*     26%      1
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄   #64 of 147*     27%      2
 </pre>
 
-<details><summary>coding · #86 of 469 · 46% of its score</summary>
+<details><summary>coding · #85 of 458 · 46% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                       result  vs the others in its run   difficulty  counts
 
 </details>
 
-<details><summary>chat &amp; writing · #76 of 466 · 26% of its score</summary>
+<details><summary>chat &amp; writing · #75 of 393 · 26% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Mistral Large 4 (public preview)](mistral-large-4.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #64 of 150 · 27% of its score</summary>
+<details><summary>vision &amp; documents · #64 of 147 · 27% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md), [Qwen3.6 Flash](qwen3-6-flash.md) here, though they rank lower overall.
 

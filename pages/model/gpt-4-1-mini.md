@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-04 · closed weights
 
-**score 60.3** ±0.6 · #213 of 949 · from 43 benchmark results across 19 sources
+**score 60.3** ±0.6 · #191 of 719 · from 43 benchmark results across 19 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ OpenAI · released 2025-04 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▄▄▃▂▁    #175 of 334     16%     10
-coding              ▁▁▁▃▆██●▆▄▃▁   #177 of 469*     10%      2
-chat &amp; writing      ▁▁▁▄▆▅▆█●▆▆▂    #131 of 466    9.4%      3
-math                ▁▂▃▅▆▅●█▄▁▁▁    #176 of 400     18%      5
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄     #77 of 150    7.0%      3
-web search          ▂▂▂▆▄█▃▃▁●·▁      #5 of 81*    2.0%      1
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #165 of 300     16%     10
+coding              ▁▁▁▃▆██●▆▄▃▁   #175 of 458*     10%      2
+chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃    #128 of 393    9.4%      3
+math                ▁▂▃▅▆▅●█▄▁▁▁    #174 of 398     18%      5
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄     #77 of 147    7.0%      3
+web search          ▂▁▂▆▄█▃▃▁●·▁      #5 of 80*    2.0%      1
 </pre>
 
-<details><summary>agent tasks · #175 of 334 · 16% of its score</summary>
+<details><summary>agent tasks · #165 of 300 · 16% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #177 of 469 · 10% of its score</summary>
+<details><summary>coding · #175 of 458 · 10% of its score</summary>
 
 Beats [Qwen3.5 9B](qwen3-5-9b.md), [Devstral 2 (2512)](devstral-2.md), [Apriel 1.6 15B Thinker](apriel-1-6-15b-thinker.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #131 of 466 · 9.4% of its score</summary>
+<details><summary>chat &amp; writing · #128 of 393 · 9.4% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [o3-mini](o3-mini.md), [K-EXAONE (236B-A23B)](k-exaone-236b-a23b.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
@@ -67,9 +67,9 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #176 of 400 · 18% of its score</summary>
+<details><summary>math · #174 of 398 · 18% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [Olmo 3 7B Think DPO](olmo-3-7b-think-dpo.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 
 <pre>
 test                           result  vs the others in its run   difficulty            counts  why
@@ -82,7 +82,7 @@ test                           result  vs the others in its run   difficulty    
 
 </details>
 
-<details><summary>vision &amp; documents · #77 of 150 · 7.0% of its score</summary>
+<details><summary>vision &amp; documents · #77 of 147 · 7.0% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall.
 
@@ -95,7 +95,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>web search · #5 of 81 · 2.0% of its score</summary>
+<details><summary>web search · #5 of 80 · 2.0% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall.
 

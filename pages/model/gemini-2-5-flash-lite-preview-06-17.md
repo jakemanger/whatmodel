@@ -14,12 +14,12 @@ Google · released 2025-06 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂●█▆▅▄▄▃▂▁   #290 of 374*     12%      1
-chat &amp; writing      ▁▁▁▃▅▅▆█●▆▆▂   #177 of 579*     51%      1
-vision &amp; documents  ▁▁▃▃▂▃▅▅●▇█▃   #101 of 199*     35%      1
+agent tasks         ▁▁▂●█▆▅▄▄▃▂▁   #267 of 340*     12%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #155 of 463*     51%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #98 of 182*     35%      1
 </pre>
 
-<details><summary>agent tasks · #290 of 374 · 12% of its score</summary>
+<details><summary>agent tasks · #267 of 340 · 12% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #177 of 579 · 51% of its score</summary>
+<details><summary>chat &amp; writing · #155 of 463 · 51% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [EXAONE 4.5 33B](exaone-4-5-33b.md), [INTELLECT-3](intellect-3.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Spark-X2.5 1.7B](spark-x2-5-1-7b.md) here, though they rank lower overall.
 
@@ -41,9 +41,9 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #101 of 199 · 35% of its score</summary>
+<details><summary>vision &amp; documents · #98 of 182 · 35% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 mini](gpt-5-mini.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Qwen3.5 4B](qwen3-5-4b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 mini](gpt-5-mini.md), [GLM-4.6V](glm-4-6v.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Qwen3.5 4B](qwen3-5-4b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why

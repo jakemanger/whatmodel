@@ -6,7 +6,7 @@
 
 LAION (OpenAssistant) · released 2023-04 · 12B params · apache-2.0
 
-**score 21.8** ±1.4 · #907 of 949 · from 9 benchmark results across 6 sources
+**score 21.8** ±1.4 · #682 of 719 · from 9 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ LAION (OpenAssistant) · released 2023-04 · 12B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁●▃▆██▇▆▄▃▁   #458 of 469*     12%      1
-chat &amp; writing  ▁●▁▄▆▅▆█▆▆▆▂    #462 of 466     71%      6
+coding          ▁▁●▃▆██▇▆▄▃▁   #447 of 458*     12%      1
+chat &amp; writing  ▁●▁▃▅▄▅█▆▆▇▃    #390 of 393     71%      6
 </pre>
 
-<details><summary>coding · #458 of 469 · 12% of its score</summary>
+<details><summary>coding · #447 of 458 · 12% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall.
 
@@ -29,7 +29,7 @@ test       result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #462 of 466 · 71% of its score</summary>
+<details><summary>chat &amp; writing · #390 of 393 · 71% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 

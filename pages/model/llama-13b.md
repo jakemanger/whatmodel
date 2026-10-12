@@ -14,12 +14,12 @@ Meta · released 2023-02 · 13B params · llama-1-noncommercial-research
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁●▃▅▇█▇▅▄▂▁    #529 of 549     18%      2
-chat &amp; writing  ●▁▁▃▅▅▆█▆▆▆▂    #578 of 579     24%      3
-math            ▁●▃▅▇▅▅█▄▁▁▁   #456 of 464*    8.4%      2
+coding          ▁▁●▃▅▇█▇▅▄▃▁    #505 of 524     18%      2
+chat &amp; writing  ●▁▁▃▅▄▆█▇▇▇▃    #462 of 463     24%      3
+math            ▁●▃▅▇▅▅█▄▁▁▁   #454 of 462*    8.4%      2
 </pre>
 
-<details><summary>coding · #529 of 549 · 18% of its score</summary>
+<details><summary>coding · #505 of 524 · 18% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [StarCoderBase 3B](starcoderbase-3b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #578 of 579 · 24% of its score</summary>
+<details><summary>chat &amp; writing · #462 of 463 · 24% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [FastChat-T5 3B](fastchat-t5-3b.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                                      result  vs the others 
 
 </details>
 
-<details><summary>math · #456 of 464 · 8.4% of its score</summary>
+<details><summary>math · #454 of 462 · 8.4% of its score</summary>
 
 Beats [Llama 2 13B Chat](llama-2-13b-chat.md), [DeepSeek-Coder 1.3B Base](deepseek-coder-1-3b-base.md), [StarCoderBase 7B](starcoderbase-7b.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 

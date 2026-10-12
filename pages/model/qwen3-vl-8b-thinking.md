@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 8.77B params · apache-2.0
 
-**score 57.8** ±0.7 · #258 of 949 · from 28 benchmark results across 3 sources
+**score 57.8** ±0.7 · #222 of 719 · from 28 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Alibaba · released 2025-10 · 8.77B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▄▄▃▂▁   #216 of 334*    1.9%      1
-coding              ▁▁▁▃▆█●▇▆▄▃▁   #213 of 469*    4.2%      1
-chat &amp; writing      ▁▁▁▄▆▅▆●▆▆▆▂   #206 of 466*    2.5%      1
-math                ▁▂▃▅▆▅●█▄▁▁▁    #148 of 400     16%      4
-vision &amp; documents  ▁▁▃▂▁▃●▃▆▇█▄     #95 of 150     47%     14
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #201 of 300*    1.9%      1
+coding              ▁▁▁▃▆█●▇▆▄▃▁   #210 of 458*    4.2%      1
+chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #196 of 393*    2.5%      1
+math                ▁▂▃▅▆▅●█▄▁▁▁    #147 of 398     16%      4
+vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄     #94 of 147     47%     14
 </pre>
 
-<details><summary>agent tasks · #216 of 334 · 1.9% of its score</summary>
+<details><summary>agent tasks · #201 of 300 · 1.9% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test           result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #213 of 469 · 4.2% of its score</summary>
+<details><summary>coding · #210 of 458 · 4.2% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #206 of 466 · 2.5% of its score</summary>
+<details><summary>chat &amp; writing · #196 of 393 · 2.5% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #148 of 400 · 16% of its score</summary>
+<details><summary>math · #147 of 398 · 16% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md) here, though they rank lower overall.
 
@@ -68,9 +68,9 @@ test                         result  vs the others in its run  difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #95 of 150 · 47% of its score</summary>
+<details><summary>vision &amp; documents · #94 of 147 · 47% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Step 3](step-3.md), [Magistral Small 1.2](magistral-small-2509.md) here, though they rank higher overall. Trails [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Magistral Small 1.2](magistral-small-2509.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why

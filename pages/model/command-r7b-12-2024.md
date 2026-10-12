@@ -6,7 +6,7 @@
 
 Cohere · released 2024-12 · 8.03B params · cc-by-nc-4.0
 
-**score 44.2** ±1.3 · #603 of 949 · from 14 benchmark results across 4 sources
+**score 44.2** ±1.3 · #453 of 719 · from 14 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Cohere · released 2024-12 · 8.03B params · cc-by-nc-4.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▄▄▃▂▁    #276 of 334     18%      3
-coding          ▁▁▁▃●██▇▆▄▃▁    #370 of 469     35%      5
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #240 of 466*     12%      2
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #248 of 300     18%      3
+coding          ▁▁▁▃●██▇▆▄▃▁    #363 of 458     35%      5
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #223 of 393*     12%      2
 </pre>
 
-<details><summary>agent tasks · #276 of 334 · 18% of its score</summary>
+<details><summary>agent tasks · #248 of 300 · 18% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #370 of 469 · 35% of its score</summary>
+<details><summary>coding · #363 of 458 · 35% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [OpenHermes 2.5 Mistral 7B](openhermes-2-5-mistral-7b.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #240 of 466 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #223 of 393 · 12% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 

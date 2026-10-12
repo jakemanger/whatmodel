@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 0.352B params · apache-2.0
 
-**score 25.9** ±1.1 · #891 of 949 · from 24 benchmark results across 3 sources
+**score 25.9** ±1.1 · #669 of 719 · from 24 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ IBM · released 2025-10 · 0.352B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▄▄▃▂▁   #320 of 334*    3.5%      2
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #287 of 300*    3.5%      2
 coding          ●··········█        #3 of 4     39%      7
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #420 of 466*    7.6%      2
-math            ●▂▃▅▆▅▄█▄▁▁▁    #395 of 400     25%      6
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #358 of 393*    7.6%      2
+math            ●▂▃▅▆▅▄█▄▁▁▁    #393 of 398     25%      6
 </pre>
 
-<details><summary>agent tasks · #320 of 334 · 3.5% of its score</summary>
+<details><summary>agent tasks · #287 of 300 · 3.5% of its score</summary>
 
 Beats [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md) here, though they rank higher overall.
 
@@ -49,7 +49,7 @@ test                result  vs the others in its run   difficulty           coun
 
 </details>
 
-<details><summary>chat &amp; writing · #420 of 466 · 7.6% of its score</summary>
+<details><summary>chat &amp; writing · #358 of 393 · 7.6% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Code Llama 34B Instruct](codellama-34b-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 
@@ -61,7 +61,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #395 of 400 · 25% of its score</summary>
+<details><summary>math · #393 of 398 · 25% of its score</summary>
 
 Beats [Llama 2 13B Chat](llama-2-13b-chat.md), [DeepSeek-Coder 1.3B Base](deepseek-coder-1-3b-base.md), [StarCoderBase 7B](starcoderbase-7b.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · proprietary
 
-**score 75.3** ±1.5 · #37 of 949 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 75.3** ±1.5 · #37 of 719 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Alibaba · released 2026-09 · proprietary
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄●▂▁    #42 of 334     25%      3
-coding              ▁▁▁▃▆██▇▆▄●▁    #25 of 469     33%      4
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄   #14 of 150*     20%      1
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #42 of 300     25%      3
+coding              ▁▁▁▃▆██▇▆▄●▁    #25 of 458     33%      4
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #14 of 147*     20%      1
 </pre>
 
-<details><summary>agent tasks · #42 of 334 · 25% of its score</summary>
+<details><summary>agent tasks · #42 of 300 · 25% of its score</summary>
 
 Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #25 of 469 · 33% of its score</summary>
+<details><summary>coding · #25 of 458 · 33% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>vision &amp; documents · #14 of 150 · 20% of its score</summary>
+<details><summary>vision &amp; documents · #14 of 147 · 20% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall. Trails [Claude Opus 4.7](claude-opus-4-7.md), [Muse Spark 1.2](muse-spark-1-2.md) here, though they rank lower overall.
 

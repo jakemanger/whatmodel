@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-06 · 9.48B params · other (glm-4)
 
-**score 53.4** ±4.7 · #359 of 949 · from 3 benchmark results across 2 sources
+**score 53.4** ±4.7 · #292 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 

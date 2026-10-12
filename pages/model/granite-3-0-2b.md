@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 2.63B params · apache-2.0
 
-**score 38.6** ±0.9 · #736 of 949 · from 22 benchmark results across 5 sources
+**score 38.6** ±0.9 · #551 of 719 · from 22 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ IBM · released 2024-10 · 2.63B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁    #374 of 469     16%      6
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #401 of 466*    9.4%      2
-math            ▁▂▃●▆▅▄█▄▁▁▁   #340 of 400*     14%      2
+coding          ▁▁▁▃●██▇▆▄▃▁    #367 of 458     16%      6
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #341 of 393*    9.4%      2
+math            ▁▂▃●▆▅▄█▄▁▁▁   #338 of 398*     14%      2
 </pre>
 
-<details><summary>coding · #374 of 469 · 16% of its score</summary>
+<details><summary>coding · #367 of 458 · 16% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #401 of 466 · 9.4% of its score</summary>
+<details><summary>chat &amp; writing · #341 of 393 · 9.4% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #340 of 400 · 14% of its score</summary>
+<details><summary>math · #338 of 398 · 14% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 

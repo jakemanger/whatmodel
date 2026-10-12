@@ -14,10 +14,10 @@ Google · released 2025-06 · proprietary
 
 <pre>
 task    vs the others        rank  counts  tests
-coding  ▁▁▁▃▅▇█▇●▄▂▁   #88 of 549     60%      3
+coding  ▁▁▁▃▅▇█▇●▄▃▁   #86 of 524     60%      3
 </pre>
 
-<details><summary>coding · #88 of 549 · 60% of its score</summary>
+<details><summary>coding · #86 of 524 · 60% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 

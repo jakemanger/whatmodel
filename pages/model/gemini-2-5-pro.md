@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · closed weights
 
-**score 67.2** ±0.6 · #114 of 949 · from 52 benchmark results across 22 sources
+**score 67.2** ±0.6 · #110 of 719 · from 52 benchmark results across 22 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Google · released 2025-06 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▄▄▃▂▁   #137 of 334     21%     12
-coding              ▁▁▁▃▆██●▆▄▃▁   #166 of 469     16%      4
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #57 of 466*    3.8%      2
-math                ▁▂▃▅▆▅▄●▄▁▁▁   #119 of 400     26%      7
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄    #54 of 150     12%      9
-web search          ▂▂▂●▄█▃▃▁▁·▁    #59 of 81*    1.2%      1
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #134 of 300     21%     12
+coding              ▁▁▁▃▆██●▆▄▃▁   #164 of 458     16%      4
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #57 of 393*    3.8%      2
+math                ▁▂▃▅▆▅▄●▄▁▁▁   #119 of 398     26%      7
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #54 of 147     12%      9
+web search          ▂▁▂●▄█▃▃▁▁·▁    #59 of 80*    1.2%      1
 </pre>
 
-<details><summary>agent tasks · #137 of 334 · 21% of its score</summary>
+<details><summary>agent tasks · #134 of 300 · 21% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #166 of 469 · 16% of its score</summary>
+<details><summary>coding · #164 of 458 · 16% of its score</summary>
 
 Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #57 of 466 · 3.8% of its score</summary>
+<details><summary>chat &amp; writing · #57 of 393 · 3.8% of its score</summary>
 
 Beats [GPT-6 Luna](gpt-6-luna.md), [Grok 4.7](grok-4-7.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [Gemma 4 31B](gemma-4-31b.md) here, though they rank lower overall.
 
@@ -70,7 +70,7 @@ test                        result  vs the others in its run    difficulty      
 
 </details>
 
-<details><summary>math · #119 of 400 · 26% of its score</summary>
+<details><summary>math · #119 of 398 · 26% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank lower overall.
 
@@ -87,7 +87,7 @@ test                             result  vs the others in its run    difficulty 
 
 </details>
 
-<details><summary>vision &amp; documents · #54 of 150 · 12% of its score</summary>
+<details><summary>vision &amp; documents · #54 of 147 · 12% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Qwen3.5 35B-A3B](qwen3-5-35b-a3b.md), [Gemma 4 31B](gemma-4-31b.md) here, though they rank lower overall.
 
@@ -106,7 +106,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #59 of 81 · 1.2% of its score</summary>
+<details><summary>web search · #59 of 80 · 1.2% of its score</summary>
 
 Beats [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [GPT-5.4 mini](gpt-5-4-mini.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

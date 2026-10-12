@@ -14,13 +14,13 @@ Google · released 2026-06 · 25.82B params (3.8B active) · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█●▅▄▄▃▂▁   #202 of 374*     10%      1
-coding              ▁▁▁▃▅▇█●▅▄▂▁   #220 of 549*    9.2%      1
-math                ▁▂▃▅▇●▅█▄▁▁▁   #211 of 464*     19%      2
-vision &amp; documents  ▁▁▃▃▂▃●▅▇▇█▃    #127 of 199     15%      3
+agent tasks         ▁▁▂▆█●▅▄▄▃▂▁   #190 of 340*     10%      1
+coding              ▁▁▁▃▅▇█●▅▄▃▁   #211 of 524*    9.2%      1
+math                ▁▂▃▅▇●▅█▄▁▁▁   #209 of 462*     19%      2
+vision &amp; documents  ▁▁▃▃▂▃●▄▇▇█▃    #117 of 182     15%      3
 </pre>
 
-<details><summary>agent tasks · #202 of 374 · 10% of its score</summary>
+<details><summary>agent tasks · #190 of 340 · 10% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                      result  vs the others in its run  difficulty        co
 
 </details>
 
-<details><summary>coding · #220 of 549 · 9.2% of its score</summary>
+<details><summary>coding · #211 of 524 · 9.2% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [OpenThinker 32B](openthinker-32b.md), [Command A Reasoning (08-2025)](command-a-reasoning-08-2025.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #211 of 464 · 19% of its score</summary>
+<details><summary>math · #209 of 462 · 19% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test               result  vs the others in its run  difficulty        counts  w
 
 </details>
 
-<details><summary>vision &amp; documents · #127 of 199 · 15% of its score</summary>
+<details><summary>vision &amp; documents · #117 of 182 · 15% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-05 · 8.19B params · mit
 
-**score 57.3** ±0.9 · #270 of 949 · from 20 benchmark results across 5 sources
+**score 57.3** ±0.9 · #230 of 719 · from 20 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ DeepSeek · released 2025-05 · 8.19B params · mit
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▄▄▃▂▁   #291 of 334*    5.9%      1
-coding       ▁▁▁▃▆█●▇▆▄▃▁    #251 of 469    8.9%      3
-math         ▁▂▃▅▆▅●█▄▁▁▁    #154 of 400     48%      6
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #262 of 300*    5.9%      1
+coding       ▁▁▁▃▆█●▇▆▄▃▁    #248 of 458    8.9%      3
+math         ▁▂▃▅▆▅●█▄▁▁▁    #153 of 398     48%      6
 </pre>
 
-<details><summary>agent tasks · #291 of 334 · 5.9% of its score</summary>
+<details><summary>agent tasks · #262 of 300 · 5.9% of its score</summary>
 
 Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [Qwen2.5 3B Instruct](qwen2-5-3b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                 result  vs the others in its run  difficulty            cou
 
 </details>
 
-<details><summary>coding · #251 of 469 · 8.9% of its score</summary>
+<details><summary>coding · #248 of 458 · 8.9% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #154 of 400 · 48% of its score</summary>
+<details><summary>math · #153 of 398 · 48% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Granite 4.2 3B](granite-4-2-3b.md) here, though they rank lower overall.
 

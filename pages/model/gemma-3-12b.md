@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 12.2B params · gemma
 
-**score 51.6** ±0.6 · #400 of 949 · from 56 benchmark results across 16 sources
+**score 51.6** ±0.6 · #317 of 719 · from 56 benchmark results across 16 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Google · released 2025-03 · 12.2B params · gemma
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▄▄▃▂▁   #278 of 334*    2.3%      2
-coding              ▁▁▁▃▆●█▇▆▄▃▁    #297 of 469    9.0%      5
-chat &amp; writing      ▁▁▁▄▆▅▆█●▆▆▂   #177 of 466*    4.0%      2
-math                ▁▂▃▅▆●▄█▄▁▁▁    #205 of 400     15%      6
-vision &amp; documents  ▁▁▃●▁▃▄▃▆▇█▄    #126 of 150    7.2%      9
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #250 of 300*    2.3%      2
+coding              ▁▁▁▃▆●█▇▆▄▃▁    #293 of 458    9.0%      5
+chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #168 of 393*    4.0%      2
+math                ▁▂▃▅▆●▄█▄▁▁▁    #203 of 398     15%      6
+vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄    #124 of 147    7.2%      9
 </pre>
 
-<details><summary>agent tasks · #278 of 334 · 2.3% of its score</summary>
+<details><summary>agent tasks · #250 of 300 · 2.3% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #297 of 469 · 9.0% of its score</summary>
+<details><summary>coding · #293 of 458 · 9.0% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #177 of 466 · 4.0% of its score</summary>
+<details><summary>chat &amp; writing · #168 of 393 · 4.0% of its score</summary>
 
 Beats [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #205 of 400 · 15% of its score</summary>
+<details><summary>math · #203 of 398 · 15% of its score</summary>
 
 Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank lower overall.
 
@@ -76,7 +76,7 @@ test                         result  vs the others in its run   difficulty      
 
 </details>
 
-<details><summary>vision &amp; documents · #126 of 150 · 7.2% of its score</summary>
+<details><summary>vision &amp; documents · #124 of 147 · 7.2% of its score</summary>
 
 Trails [Qwen3.5 2B](qwen3-5-2b.md), [Pixtral 12B (2409)](pixtral-12b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank lower overall.
 

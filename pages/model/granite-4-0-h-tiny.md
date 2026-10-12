@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 6.94B params (1B active) · apache-2.0
 
-**score 47.7** ±0.9 · #502 of 949 · from 24 benchmark results across 3 sources
+**score 47.7** ±0.9 · #385 of 719 · from 24 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -16,8 +16,8 @@ IBM · released 2025-09 · 6.94B params (1B active) · apache-2.0
 task            vs the others          rank  counts  tests
 agent tasks     ▄·●········█       #3 of 4*    1.3%      1
 coding          █···●······▄        #2 of 4     33%      7
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #254 of 466*    4.8%      2
-math            ▁▂▃▅●▅▄█▄▁▁▁    #239 of 400     24%      5
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #235 of 393*    4.8%      2
+math            ▁▂▃▅●▅▄█▄▁▁▁    #237 of 398     24%      5
 </pre>
 
 <details><summary>agent tasks · #3 of 4 · 1.3% of its score</summary>
@@ -46,7 +46,7 @@ test                result  vs the others in its run    difficulty           cou
 
 </details>
 
-<details><summary>chat &amp; writing · #254 of 466 · 4.8% of its score</summary>
+<details><summary>chat &amp; writing · #235 of 393 · 4.8% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #239 of 400 · 24% of its score</summary>
+<details><summary>math · #237 of 398 · 24% of its score</summary>
 
 Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [Tulu 2 DPO 70B](tulu-2-dpo-70b.md), [OpenThinker 7B](openthinker-7b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 1.54B params · apache-2.0
 
-**score 31.1** ±0.8 · #849 of 949 · from 14 benchmark results across 7 sources
+**score 31.1** ±0.8 · #634 of 719 · from 14 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2024-06 · 1.54B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁●▃▆█▆▅▄▄▃▂▁   #328 of 334*    1.3%      1
+agent tasks     ▁●▃▆█▆▅▅▅▄▃▁   #295 of 300*    1.3%      1
 coding          █··········●       #1 of 2*    4.6%      1
 chat &amp; writing  █··········●       #1 of 2*    1.4%      1
-math            ▁●▃▅▆▅▄█▄▁▁▁    #391 of 400     43%      4
+math            ▁●▃▅▆▅▄█▄▁▁▁    #389 of 398     43%      4
 </pre>
 
-<details><summary>agent tasks · #328 of 334 · 1.3% of its score</summary>
+<details><summary>agent tasks · #295 of 300 · 1.3% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #391 of 400 · 43% of its score</summary>
+<details><summary>math · #389 of 398 · 43% of its score</summary>
 
 Beats [Code Llama 7B (base)](codellama-7b.md), [Llama 2 13B Chat](llama-2-13b-chat.md), [DeepSeek-Coder 1.3B Base](deepseek-coder-1-3b-base.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.1 1B-A400M Instruct](granite-3-1-1b-a400m.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 

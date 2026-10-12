@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 34.39B params · apache-2.0
 
-**score 45.8** ±0.7 · #561 of 949 · from 20 benchmark results across 11 sources
+**score 45.8** ±0.7 · #427 of 719 · from 20 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #298 of 469     17%      5
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #344 of 466*    9.1%      2
-math            ▁▂▃●▆▅▄█▄▁▁▁    #314 of 400     19%      3
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #294 of 458     17%      5
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #299 of 393*    9.1%      2
+math            ▁▂▃●▆▅▄█▄▁▁▁    #312 of 398     19%      3
 </pre>
 
-<details><summary>coding · #298 of 469 · 17% of its score</summary>
+<details><summary>coding · #294 of 458 · 17% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #344 of 466 · 9.1% of its score</summary>
+<details><summary>chat &amp; writing · #299 of 393 · 9.1% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #314 of 400 · 19% of its score</summary>
+<details><summary>math · #312 of 398 · 19% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [OLMo 2 32B Instruct (0325)](olmo-2-32b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
 

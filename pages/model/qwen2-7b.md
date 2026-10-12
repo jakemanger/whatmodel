@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 7.62B params · apache-2.0
 
-**score 44.0** ±0.6 · #614 of 949 · from 22 benchmark results across 10 sources
+**score 44.0** ±0.6 · #461 of 719 · from 22 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2024-06 · 7.62B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▄▄▃▂▁   #310 of 334*    0.8%      1
-coding          ▁▁▁▃▆●█▇▆▄▃▁   #349 of 469*     11%      1
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #300 of 466*    2.8%      1
-math            ▁▂▃●▆▅▄█▄▁▁▁    #332 of 400     28%      5
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #279 of 300*    0.8%      1
+coding          ▁▁▁▃▆●█▇▆▄▃▁   #344 of 458*     11%      1
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #274 of 393*    2.8%      1
+math            ▁▂▃●▆▅▄█▄▁▁▁    #330 of 398     28%      5
 </pre>
 
-<details><summary>agent tasks · #310 of 334 · 0.8% of its score</summary>
+<details><summary>agent tasks · #279 of 300 · 0.8% of its score</summary>
 
 Beats [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [GLM-4 9B Chat](glm-4-9b-chat.md), [Command R (08-2024)](command-r-08-2024.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #349 of 469 · 11% of its score</summary>
+<details><summary>coding · #344 of 458 · 11% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [OpenChat 3.5](openchat-3-5.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>chat &amp; writing · #300 of 466 · 2.8% of its score</summary>
+<details><summary>chat &amp; writing · #274 of 393 · 2.8% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #332 of 400 · 28% of its score</summary>
+<details><summary>math · #330 of 398 · 28% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 

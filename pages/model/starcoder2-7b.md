@@ -6,7 +6,7 @@
 
 BigCode · released 2024-02 · 7.17B params · bigcode-openrail-m
 
-**score 34.8** ±0.6 · #806 of 949 · from 19 benchmark results across 5 sources
+**score 34.8** ±0.6 · #603 of 719 · from 19 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ BigCode · released 2024-02 · 7.17B params · bigcode-openrail-m
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #422 of 469     87%      9
-math    ▁▂●▅▆▅▄█▄▁▁▁   #360 of 400    3.6%      2
+coding  ▁▁▁●▆██▇▆▄▃▁   #413 of 458     87%      9
+math    ▁▂●▅▆▅▄█▄▁▁▁   #358 of 398    3.6%      2
 </pre>
 
-<details><summary>coding · #422 of 469 · 87% of its score</summary>
+<details><summary>coding · #413 of 458 · 87% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #360 of 400 · 3.6% of its score</summary>
+<details><summary>math · #358 of 398 · 3.6% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md), [Stable Code 3B](stable-code-3b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 

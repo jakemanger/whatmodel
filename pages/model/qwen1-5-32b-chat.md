@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-04 · 32.51B params · tongyi-qianwen
 
-**score 44.0** ±1.4 · #612 of 949 · from 7 benchmark results across 6 sources
+**score 44.0** ±1.4 · #459 of 719 · from 7 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Alibaba · released 2024-04 · 32.51B params · tongyi-qianwen
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #353 of 466*     34%      2
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #303 of 393*     34%      2
 </pre>
 
-<details><summary>chat &amp; writing · #353 of 466 · 34% of its score</summary>
+<details><summary>chat &amp; writing · #303 of 393 · 34% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 

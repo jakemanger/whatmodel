@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 7.22B params · apache-2.0
 
-**score 25.4** ±2.0 · #893 of 949 · from 7 benchmark results across 3 sources
+**score 25.4** ±2.0 · #670 of 719 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ TII · released 2023-04 · 7.22B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁●▄▆▅▆█▆▆▆▂   #457 of 466*     49%      2
+chat &amp; writing  ▁▁●▃▅▄▅█▆▆▇▃   #386 of 393*     49%      2
 </pre>
 
-<details><summary>chat &amp; writing · #457 of 466 · 49% of its score</summary>
+<details><summary>chat &amp; writing · #386 of 393 · 49% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [OpenAssistant Pythia 12B SFT v8 (7k steps)](oasst-pythia-12b-sft-v8-7k-steps.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why

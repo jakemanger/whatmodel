@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 13B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 39.6** ±1.7 · #716 of 949 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 39.6** ±1.7 · #536 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Allen Institute for AI · released 2023-11 · 13B params · AI2 ImpACT Low-risk;
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #351 of 469*     21%      1
-math    ▁▂▃●▆▅▄█▄▁▁▁   #334 of 400*     14%      1
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #346 of 458*     21%      1
+math    ▁▂▃●▆▅▄█▄▁▁▁   #332 of 398*     14%      1
 </pre>
 
-<details><summary>coding · #351 of 469 · 21% of its score</summary>
+<details><summary>coding · #346 of 458 · 21% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>math · #334 of 400 · 14% of its score</summary>
+<details><summary>math · #332 of 398 · 14% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 

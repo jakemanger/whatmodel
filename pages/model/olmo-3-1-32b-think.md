@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 32.2B params · apache-2.0
 
-**score 58.2** ±0.9 · #249 of 949 · from 21 benchmark results across 5 sources
+**score 58.2** ±0.9 · #215 of 719 · from 21 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Ai2 · released 2025-12 · 32.2B params · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁   #204 of 469    7.5%      3
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #248 of 466     12%      3
-math            ▁▂▃▅▆▅▄●▄▁▁▁   #113 of 400     22%      4
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #202 of 458    7.5%      3
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #229 of 393     12%      3
+math            ▁▂▃▅▆▅▄●▄▁▁▁   #113 of 398     22%      4
 </pre>
 
-<details><summary>coding · #204 of 469 · 7.5% of its score</summary>
+<details><summary>coding · #202 of 458 · 7.5% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                    result  vs the others in its run  difficulty        coun
 
 </details>
 
-<details><summary>chat &amp; writing · #248 of 466 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #229 of 393 · 12% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #113 of 400 · 22% of its score</summary>
+<details><summary>math · #113 of 398 · 22% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall.
 

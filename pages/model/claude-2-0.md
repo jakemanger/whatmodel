@@ -14,12 +14,12 @@ Anthropic · released 2023-07 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅●█▇▅▄▂▁   #387 of 549*     59%      2
-chat &amp; writing  ▁▁▁▃▅●▆█▆▆▆▂    #432 of 579     31%      5
-math            ▁▂●▅▇▅▅█▄▁▁▁   #405 of 464*    5.7%      2
+coding          ▁▁▁▃▅●█▇▅▄▃▁   #371 of 524*     59%      2
+chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃    #349 of 463     31%      5
+math            ▁▂●▅▇▅▅█▄▁▁▁   #403 of 462*    5.7%      2
 </pre>
 
-<details><summary>coding · #387 of 549 · 59% of its score</summary>
+<details><summary>coding · #371 of 524 · 59% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #432 of 579 · 31% of its score</summary>
+<details><summary>chat &amp; writing · #349 of 463 · 31% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                                      result  vs the others 
 
 </details>
 
-<details><summary>math · #405 of 464 · 5.7% of its score</summary>
+<details><summary>math · #403 of 462 · 5.7% of its score</summary>
 
 Beats [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

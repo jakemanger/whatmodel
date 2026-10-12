@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 8.29B params · apache-2.0
 
-**score 45.9** ±1.0 · #559 of 949 · from 27 benchmark results across 6 sources
+**score 45.9** ±1.0 · #425 of 719 · from 27 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Alibaba · released 2024-08 · 8.29B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▃▆●█▇▆▄▃▁   #324 of 469*    2.4%      1
-math                ▁▂▃●▆▅▄█▄▁▁▁    #337 of 400     19%      3
-vision &amp; documents  ▁▁▃●▁▃▄▃▆▇█▄    #130 of 150     79%     17
+coding              ▁▁▁▃▆●█▇▆▄▃▁   #320 of 458*    2.4%      1
+math                ▁▂▃●▆▅▄█▄▁▁▁    #335 of 398     19%      3
+vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄    #128 of 147     79%     17
 </pre>
 
-<details><summary>coding · #324 of 469 · 2.4% of its score</summary>
+<details><summary>coding · #320 of 458 · 2.4% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test       result  vs the others in its run    difficulty      counts  why
 
 </details>
 
-<details><summary>math · #337 of 400 · 19% of its score</summary>
+<details><summary>math · #335 of 398 · 19% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #130 of 150 · 79% of its score</summary>
+<details><summary>vision &amp; documents · #128 of 147 · 79% of its score</summary>
 
 Beats [Nova Lite](nova-lite.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall.
 

@@ -6,7 +6,7 @@
 
 M-A-P · released 2024-02 · 6.74B params · apache-2.0
 
-**score 49.2** ±0.9 · #467 of 949 · from 3 benchmark results across 1 source
+**score 49.2** ±0.9 · #360 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ M-A-P · released 2024-02 · 6.74B params · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #272 of 469    100%      3
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #268 of 458    100%      3
 </pre>
 
-<details><summary>coding · #272 of 469 · 100% of its score</summary>
+<details><summary>coding · #268 of 458 · 100% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 

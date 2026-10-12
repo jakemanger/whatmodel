@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-02 · 14.2B params · tongyi-qianwen
 
-**score 41.1** ±0.8 · #689 of 949 · from 11 benchmark results across 9 sources
+**score 41.1** ±0.8 · #513 of 719 · from 11 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Alibaba · released 2024-02 · 14.2B params · tongyi-qianwen
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #373 of 469*     32%      1
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂    #365 of 466     33%      4
+coding          ▁▁▁▃●██▇▆▄▃▁   #366 of 458*     32%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #313 of 393     33%      4
 </pre>
 
-<details><summary>coding · #373 of 469 · 32% of its score</summary>
+<details><summary>coding · #366 of 458 · 32% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test       result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #365 of 466 · 33% of its score</summary>
+<details><summary>chat &amp; writing · #313 of 393 · 33% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 

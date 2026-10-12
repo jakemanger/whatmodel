@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 8.66B params · apache-2.0
 
-**score 55.2** ±1.8 · #311 of 949 · from 15 benchmark results across 2 sources
+**score 55.2** ±1.8 · #262 of 719 · from 15 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Ai2 · released 2025-12 · 8.66B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▄▆▅▆●▆▆▆▂   #205 of 466*     28%      1
-math                ▁▂▃▅●▅▄█▄▁▁▁   #284 of 400*    8.6%      1
-vision &amp; documents  ▁▁▃▂▁●▄▃▆▇█▄    #111 of 150     70%     14
+chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #195 of 393*     28%      1
+math                ▁▂▃▅●▅▄█▄▁▁▁   #282 of 398*    8.6%      1
+vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄    #109 of 147     70%     14
 </pre>
 
-<details><summary>chat &amp; writing · #205 of 466 · 28% of its score</summary>
+<details><summary>chat &amp; writing · #195 of 393 · 28% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #284 of 400 · 8.6% of its score</summary>
+<details><summary>math · #282 of 398 · 8.6% of its score</summary>
 
 Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #111 of 150 · 70% of its score</summary>
+<details><summary>vision &amp; documents · #109 of 147 · 70% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [Gemma 3 27B](gemma-3-27b.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Nova Premier](nova-premier.md) here, though they rank lower overall.
 

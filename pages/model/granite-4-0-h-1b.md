@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 1.46B params · apache-2.0
 
-**score 40.4** ±0.8 · #705 of 949 · from 29 benchmark results across 2 sources
+**score 40.4** ±0.8 · #527 of 719 · from 29 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ IBM · released 2025-10 · 1.46B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▄▄▃▂▁   #273 of 334*    1.8%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #245 of 300*    1.8%      1
 coding          █··········●        #1 of 4     26%      7
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂    #256 of 466    6.2%      3
-math            ▁▂▃●▆▅▄█▄▁▁▁    #327 of 400     29%      7
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #237 of 393    6.2%      3
+math            ▁▂▃●▆▅▄█▄▁▁▁    #325 of 398     29%      7
 </pre>
 
-<details><summary>agent tasks · #273 of 334 · 1.8% of its score</summary>
+<details><summary>agent tasks · #245 of 300 · 1.8% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall.
 
@@ -48,7 +48,7 @@ test                result  vs the others in its run    difficulty           cou
 
 </details>
 
-<details><summary>chat &amp; writing · #256 of 466 · 6.2% of its score</summary>
+<details><summary>chat &amp; writing · #237 of 393 · 6.2% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -61,7 +61,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #327 of 400 · 29% of its score</summary>
+<details><summary>math · #325 of 398 · 29% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
 

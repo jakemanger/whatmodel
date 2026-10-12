@@ -6,7 +6,7 @@
 
 iFLYTEK (SparkLLM) · released 2026-08 · 1.71B params · apache-2.0
 
-**score 55.1** ±1.1 · #316 of 949 · from 17 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.1** ±1.1 · #266 of 719 · from 17 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ iFLYTEK (SparkLLM) · released 2026-08 · 1.71B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁    #210 of 334     36%      9
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #310 of 469     20%      4
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #137 of 466*    0.4%      1
-math            ▁▂▃▅▆●▄█▄▁▁▁    #191 of 400     40%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #196 of 300     36%      9
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #306 of 458     20%      4
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #133 of 393*    0.4%      1
+math            ▁▂▃▅▆●▄█▄▁▁▁    #189 of 398     40%      3
 web search      █·█▄██·▄▄·●▄      #2 of 13*    1.8%      1
 </pre>
 
-<details><summary>agent tasks · #210 of 334 · 36% of its score</summary>
+<details><summary>agent tasks · #196 of 300 · 36% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #310 of 469 · 20% of its score</summary>
+<details><summary>coding · #306 of 458 · 20% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #137 of 466 · 0.4% of its score</summary>
+<details><summary>chat &amp; writing · #133 of 393 · 0.4% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [EXAONE 4.5 33B](exaone-4-5-33b.md), [INTELLECT-3](intellect-3.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -65,7 +65,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #191 of 400 · 40% of its score</summary>
+<details><summary>math · #189 of 398 · 40% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank lower overall.
 

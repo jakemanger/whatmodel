@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2024-08 · 52B params (12B active) · jamba-open-model-license
 
-**score 46.4** ±1.3 · #543 of 949 · from 14 benchmark results across 4 sources
+**score 46.4** ±1.3 · #412 of 719 · from 14 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ AI21 Labs · released 2024-08 · 52B params (12B active) · jamba-open-model-lic
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▄▄▃▂▁   #145 of 334*    3.0%      1
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #141 of 300*    3.0%      1
 coding          ●··········█       #2 of 2*     11%      1
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂    #313 of 466     23%      3
-math            ▁▂▃●▆▅▄█▄▁▁▁   #313 of 400*     13%      1
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃    #281 of 393     23%      3
+math            ▁▂▃●▆▅▄█▄▁▁▁   #311 of 398*     13%      1
 </pre>
 
-<details><summary>agent tasks · #145 of 334 · 3.0% of its score</summary>
+<details><summary>agent tasks · #141 of 300 · 3.0% of its score</summary>
 
-Beats [watt-tool-70B](watt-tool-70b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
+Beats [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty      counts  why
@@ -40,7 +40,7 @@ test             result  vs the others in its run    difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #313 of 466 · 23% of its score</summary>
+<details><summary>chat &amp; writing · #281 of 393 · 23% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #313 of 400 · 13% of its score</summary>
+<details><summary>math · #311 of 398 · 13% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [OLMo 2 32B Instruct (0325)](olmo-2-32b.md), [Hermes 2 Theta Llama-3 70B](hermes-2-theta-llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-01 · 31.2B params (3B active) · mit
 
-**score 58.8** ±1.3 · #238 of 949 · from 10 benchmark results across 6 sources
+**score 58.8** ±1.3 · #208 of 719 · from 10 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -15,9 +15,9 @@ Z.ai · released 2026-01 · 31.2B params (3B active) · mit
 <pre>
 task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      3
-coding          ▁▁▁▃▆●█▇▆▄▃▁     #344 of 469*     12%      3
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂     #146 of 466*     15%      1
-math            ▁▂▃▅▆▅●█▄▁▁▁     #161 of 400*     14%      2
+coding          ▁▁▁▃▆●█▇▆▄▃▁     #339 of 458*     12%      3
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃     #142 of 393*     15%      1
+math            ▁▂▃▅▆▅●█▄▁▁▁     #160 of 398*     14%      2
 web search                     not ranked yet       —      1
 </pre>
 
@@ -32,7 +32,7 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>coding · #344 of 469 · 12% of its score</summary>
+<details><summary>coding · #339 of 458 · 12% of its score</summary>
 
 Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #146 of 466 · 15% of its score</summary>
+<details><summary>chat &amp; writing · #142 of 393 · 15% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [Nemotron 3 Super 120B-A12B](nemotron-3-super-120b-a12b.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #161 of 400 · 14% of its score</summary>
+<details><summary>math · #160 of 398 · 14% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Granite 4.2 3B](granite-4-2-3b.md) here, though they rank lower overall.
 

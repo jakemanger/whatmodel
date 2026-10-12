@@ -545,8 +545,8 @@ test (evaluator)                                          models     a     σ  w
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (internlm-github-model-cards)</a>                   3  1.82  0.37    24.6   0.0%
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">HumanEval (first-party-deepseek-scores)</a>                        2  1.89  0.39    23.7   0.0%
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (paper-2408.12570v1-jamba15)</a>                    3  1.82  0.36    25.8   0.0%
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (card-mistralai-ministral-3-8b-reasoning-2512)</a>       3  1.84  0.35    26.9   0.0%
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (card-mistralai-ministral-3-3b-reasoning-2512)</a>       3  1.84  0.35    26.9   0.0%
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (card-mistralai-ministral-3-8b-reasoning-2512)</a>       3  1.84  0.35    26.9   0.0%
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">Humanity's Last Exam with tools (first-party-anthropic-…</a>      11  1.07  0.30    13.1   0.0%
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge (paper-2311.11045v2)</a>                             4  1.84  0.41    20.3   0.0%
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">BrowseComp-ZH (card2-stepfun-ai-step-3-5-flash)</a>                4  1.51  0.36    17.7   0.0%

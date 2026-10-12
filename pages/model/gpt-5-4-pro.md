@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · proprietary
 
-**score 80.7** ±0.9 · #13 of 949 · from 12 benchmark results across 5 sources
+**score 80.7** ±0.9 · #13 of 719 · from 12 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ OpenAI · released 2026-03 · proprietary
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▄▄▃●▁   #16 of 334*     12%      2
-math         ▁▂▃▅▆▅▄█▄●▁▁    #14 of 400     62%      3
-web search   ▂▂▂▆▄█●▃▁▁·▁    #15 of 81*     12%      2
+agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #16 of 300*     12%      2
+math         ▁▂▃▅▆▅▄█▄●▁▁    #14 of 398     62%      3
+web search   ▂▁▂▆▄█●▃▁▁·▁    #15 of 80*     12%      2
 </pre>
 
-<details><summary>agent tasks · #16 of 334 · 12% of its score</summary>
+<details><summary>agent tasks · #16 of 300 · 12% of its score</summary>
 
 Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #14 of 400 · 62% of its score</summary>
+<details><summary>math · #14 of 398 · 62% of its score</summary>
 
 Trails [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.5](gpt-5-5.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>web search · #15 of 81 · 12% of its score</summary>
+<details><summary>web search · #15 of 80 · 12% of its score</summary>
 
 Beats [Claude Fable 5.1](claude-fable-5-1.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md), [Claude Opus 5](claude-opus-5.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

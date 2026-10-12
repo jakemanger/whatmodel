@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
-**score 48.9** ±1.8 · #471 of 949 · from 10 benchmark results across 2 sources
+**score 48.9** ±1.8 · #362 of 719 · from 10 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁   #233 of 334*    3.1%      1
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #144 of 466*    8.0%      1
-math            ▁▂▃▅▆●▄█▄▁▁▁    #212 of 400     38%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #216 of 300*    3.1%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #140 of 393*    8.0%      1
+math            ▁▂▃▅▆●▄█▄▁▁▁    #210 of 398     38%      3
 </pre>
 
-<details><summary>agent tasks · #233 of 334 · 3.1% of its score</summary>
+<details><summary>agent tasks · #216 of 300 · 3.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test           result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #144 of 466 · 8.0% of its score</summary>
+<details><summary>chat &amp; writing · #140 of 393 · 8.0% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [Nemotron 3 Super 120B-A12B](nemotron-3-super-120b-a12b.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #212 of 400 · 38% of its score</summary>
+<details><summary>math · #210 of 398 · 38% of its score</summary>
 
 Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Amazon · released 2025-04 · closed weights
 
-**score 54.2** ±1.6 · #344 of 949 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 54.2** ±1.6 · #285 of 719 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Amazon · released 2025-04 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▄▄▃▂▁   #164 of 334*     25%      2
-coding              ▁▁▁▃▆█●▇▆▄▃▁   #254 of 469*    6.2%      1
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #157 of 300*     25%      2
+coding              ▁▁▁▃▆█●▇▆▄▃▁   #251 of 458*    6.2%      1
 math                █··········●       #1 of 2*     25%      2
-vision &amp; documents  ▁▁▃▂▁●▄▃▆▇█▄   #110 of 150*     15%      2
+vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #108 of 147*     15%      2
 </pre>
 
-<details><summary>agent tasks · #164 of 334 · 25% of its score</summary>
+<details><summary>agent tasks · #157 of 300 · 25% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #254 of 469 · 6.2% of its score</summary>
+<details><summary>coding · #251 of 458 · 6.2% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ test             result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #110 of 150 · 15% of its score</summary>
+<details><summary>vision &amp; documents · #108 of 147 · 15% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [Gemma 3 27B](gemma-3-27b.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 

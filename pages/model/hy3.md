@@ -6,7 +6,7 @@
 
 Tencent · released 2026-07 · 299B params (21B active) · apache-2.0
 
-**score 73.7** ±0.8 · #53 of 949 · from 39 benchmark results across 4 sources
+**score 73.7** ±0.8 · #52 of 719 · from 39 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Tencent · released 2026-07 · 299B params (21B active) · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▄▄●▂▁    #48 of 334     52%     13
-coding          ▁▁▁▃▆██▇▆●▃▁    #50 of 469     24%      4
-chat &amp; writing  ▁▁▁▄▆▅▆█▆▆●▂   #48 of 466*    5.6%      1
+agent tasks     ▁▁▃▆█▆▅▅▅●▃▁    #48 of 300     52%     13
+coding          ▁▁▁▃▆██▇▆●▃▁    #50 of 458     24%      4
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #48 of 393*    5.6%      1
 math            █····●·····█       #2 of 3    7.6%      3
 web search      █·······●··█       #2 of 3    8.2%      4
 </pre>
 
-<details><summary>agent tasks · #48 of 334 · 52% of its score</summary>
+<details><summary>agent tasks · #48 of 300 · 52% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                     result  vs the others in its run    dif
 
 </details>
 
-<details><summary>coding · #50 of 469 · 24% of its score</summary>
+<details><summary>coding · #50 of 458 · 24% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Mistral Large 4 (public preview)](mistral-large-4.md), [Qwen3.7 Plus](qwen3-7-plus.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #48 of 466 · 5.6% of its score</summary>
+<details><summary>chat &amp; writing · #48 of 393 · 5.6% of its score</summary>
 
 Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Claude Sonnet 4.5](claude-sonnet-4-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5](glm-5.md) here, though they rank lower overall.
 

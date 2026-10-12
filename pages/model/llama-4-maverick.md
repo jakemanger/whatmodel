@@ -6,7 +6,7 @@
 
 Meta · released 2025-04 · 402B params (17B active) · llama-4
 
-**score 56.8** ±0.8 · #280 of 949 · from 27 benchmark results across 20 sources
+**score 56.8** ±0.8 · #238 of 719 · from 27 benchmark results across 20 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Meta · released 2025-04 · 402B params (17B active) · llama-4
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▄▄▃▂▁   #266 of 334    8.8%      5
-coding              ▁▁▁▃▆█●▇▆▄▃▁   #218 of 469     17%      3
-chat &amp; writing      ▁▁▁▄▆▅▆●▆▆▆▂   #199 of 466     15%      3
-math                ▁▂▃▅▆●▄█▄▁▁▁   #197 of 400     20%      3
-vision &amp; documents  ▁▁▃▂▁▃●▃▆▇█▄    #97 of 150     11%      4
-web search          ▂▂▂●▄█▃▃▁▁·▁    #54 of 81*    2.7%      1
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #239 of 300    8.8%      5
+coding              ▁▁▁▃▆█●▇▆▄▃▁   #215 of 458     17%      3
+chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #190 of 393     15%      3
+math                ▁▂▃▅▆●▄█▄▁▁▁   #195 of 398     20%      3
+vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄    #95 of 147     11%      4
+web search          ▂▁▂●▄█▃▃▁▁·▁    #54 of 80*    2.7%      1
 </pre>
 
-<details><summary>agent tasks · #266 of 334 · 8.8% of its score</summary>
+<details><summary>agent tasks · #239 of 300 · 8.8% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #218 of 469 · 17% of its score</summary>
+<details><summary>coding · #215 of 458 · 17% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #199 of 466 · 15% of its score</summary>
+<details><summary>chat &amp; writing · #190 of 393 · 15% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -63,7 +63,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #197 of 400 · 20% of its score</summary>
+<details><summary>math · #195 of 398 · 20% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [OpenThinker2 7B](openthinker2-7b.md) here, though they rank lower overall.
 
@@ -76,7 +76,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>vision &amp; documents · #97 of 150 · 11% of its score</summary>
+<details><summary>vision &amp; documents · #95 of 147 · 11% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Magistral Small 1.2](magistral-small-2509.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall.
 
@@ -90,7 +90,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>web search · #54 of 81 · 2.7% of its score</summary>
+<details><summary>web search · #54 of 80 · 2.7% of its score</summary>
 
 Beats [Kimi K2.6](kimi-k2-6.md), [GPT-5 Pro](gpt-5-pro.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Prime Intellect · released 2025-11 · 106B params (12B active) · mit
 
-**score 64.8** ±1.1 · #156 of 949 · from 9 benchmark results across 3 sources
+**score 64.8** ±1.1 · #145 of 719 · from 9 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Prime Intellect · released 2025-11 · 106B params (12B active) · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆██●▆▄▃▁   #154 of 469*    4.6%      1
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #158 of 466*     12%      1
-math            ▁▂▃▅▆▅▄█●▁▁▁     #52 of 400     24%      3
+coding          ▁▁▁▃▆██●▆▄▃▁   #153 of 458*    4.6%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #153 of 393*     12%      1
+math            ▁▂▃▅▆▅▄█●▁▁▁     #52 of 398     24%      3
 </pre>
 
-<details><summary>coding · #154 of 469 · 4.6% of its score</summary>
+<details><summary>coding · #153 of 458 · 4.6% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #158 of 466 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #153 of 393 · 12% of its score</summary>
 
 Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #52 of 400 · 24% of its score</summary>
+<details><summary>math · #52 of 398 · 24% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall.
 

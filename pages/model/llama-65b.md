@@ -14,11 +14,11 @@ Meta · released 2023-02 · 65.2B params · llama-1-noncommercial-research
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▅▇█▇▅▄▂▁   #506 of 549*     20%      2
-math    ▁▂▃●▇▅▅█▄▁▁▁   #388 of 464*     19%      2
+coding  ▁▁▁●▅▇█▇▅▄▃▁   #482 of 524*     20%      2
+math    ▁▂▃●▇▅▅█▄▁▁▁   #386 of 462*     19%      2
 </pre>
 
-<details><summary>coding · #506 of 549 · 20% of its score</summary>
+<details><summary>coding · #482 of 524 · 20% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 </details>
 
-<details><summary>math · #388 of 464 · 19% of its score</summary>
+<details><summary>math · #386 of 462 · 19% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 

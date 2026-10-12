@@ -6,7 +6,7 @@
 
 IBM · released 2025-04 · 8.17B params · apache-2.0
 
-**score 45.6** ±1.2 · #567 of 949 · from 13 benchmark results across 4 sources
+**score 45.6** ±1.2 · #431 of 719 · from 13 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ IBM · released 2025-04 · 8.17B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #288 of 466*     11%      2
-math            ▁▂▃▅●▅▄█▄▁▁▁    #259 of 400     45%      5
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #265 of 393*     11%      2
+math            ▁▂▃▅●▅▄█▄▁▁▁    #257 of 398     45%      5
 </pre>
 
-<details><summary>chat &amp; writing · #288 of 466 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #265 of 393 · 11% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #259 of 400 · 45% of its score</summary>
+<details><summary>math · #257 of 398 · 45% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [Mistral Large 2 (2407)](mistral-large-2407.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 01.AI · released 2023-11 · 34.39B params · apache-2.0
 
-**score 43.2** ±1.1 · #637 of 949 · from 8 benchmark results across 7 sources
+**score 43.2** ±1.1 · #479 of 719 · from 8 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂    #364 of 466     81%      5
-math            ▁▂●▅▆▅▄█▄▁▁▁   #372 of 400*     11%      1
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃    #312 of 393     81%      5
+math            ▁▂●▅▆▅▄█▄▁▁▁   #370 of 398*     11%      1
 </pre>
 
-<details><summary>chat &amp; writing · #364 of 466 · 81% of its score</summary>
+<details><summary>chat &amp; writing · #312 of 393 · 81% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #372 of 400 · 11% of its score</summary>
+<details><summary>math · #370 of 398 · 11% of its score</summary>
 
 Trails [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Gemma 3 1B](gemma-3-1b.md), [OLMo 2 1B Instruct (0425)](olmo-2-1b.md) here, though they rank lower overall.
 

@@ -14,12 +14,12 @@ OpenAI · released 2024-01 · proprietary
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▂▁   #269 of 549     19%      3
-chat &amp; writing  ▁▁▁▃▅▅▆●▆▆▆▂   #281 of 579     18%      3
-math            ▁▂▃▅●▅▅█▄▁▁▁   #326 of 464     13%      3
+coding          ▁▁▁▃▅▇●▇▅▄▃▁   #258 of 524     19%      3
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #237 of 463     18%      3
+math            ▁▂▃▅●▅▅█▄▁▁▁   #324 of 462     13%      3
 </pre>
 
-<details><summary>coding · #269 of 549 · 19% of its score</summary>
+<details><summary>coding · #258 of 524 · 19% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #281 of 579 · 18% of its score</summary>
+<details><summary>chat &amp; writing · #237 of 463 · 18% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3n E4B](gemma-3n-e4b.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #326 of 464 · 13% of its score</summary>
+<details><summary>math · #324 of 462 · 13% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 

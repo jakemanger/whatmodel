@@ -6,7 +6,7 @@
 
 Tencent · released 2026-04 · 295B params (21B active) · tencent-hy-community
 
-**score 67.6** ±1.0 · #112 of 949 · from 24 benchmark results across 2 sources
+**score 67.6** ±1.0 · #108 of 719 · from 24 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Tencent · released 2026-04 · 295B params (21B active) · tencent-hy-community
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▄▃▂▁     #82 of 334     39%     11
-coding          ▁▁▁▃▆██▇●▄▃▁    #107 of 469     32%      4
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #103 of 466*    9.2%      1
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁     #82 of 300     39%     11
+coding          ▁▁▁▃▆██▇●▄▃▁    #106 of 458     32%      4
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #102 of 393*    9.2%      1
 math            ●····█·····█        #3 of 3     11%      3
 web search      ●·······█··█        #3 of 3    9.4%      4
 </pre>
 
-<details><summary>agent tasks · #82 of 334 · 39% of its score</summary>
+<details><summary>agent tasks · #82 of 300 · 39% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall.
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #107 of 469 · 32% of its score</summary>
+<details><summary>coding · #106 of 458 · 32% of its score</summary>
 
 Beats [Grok 4.3](grok-4-3.md), [Qwen3.5 Plus](qwen3-5-plus.md), [DeepSeek V3.2](deepseek-v3-2.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #103 of 466 · 9.2% of its score</summary>
+<details><summary>chat &amp; writing · #102 of 393 · 9.2% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [GPT-4.1](gpt-4-1.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 

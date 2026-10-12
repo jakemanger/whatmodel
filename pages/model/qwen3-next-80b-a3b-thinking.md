@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 80B params (3B active) · apache-2.0
 
-**score 63.2** ±0.7 · #175 of 949 · from 52 benchmark results across 9 sources
+**score 63.2** ±0.7 · #163 of 719 · from 52 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2025-09 · 80B params (3B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▄▄▃▂▁    #153 of 334     16%      8
-coding          ▁▁▁▃▆██●▆▄▃▁   #140 of 469*    3.2%      1
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂    #141 of 466    8.8%      3
-math            ▁▂▃▅▆▅▄●▄▁▁▁    #125 of 400     13%      5
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁    #147 of 300     16%      8
+coding          ▁▁▁▃▆██●▆▄▃▁   #139 of 458*    3.2%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃    #137 of 393    8.8%      3
+math            ▁▂▃▅▆▅▄●▄▁▁▁    #125 of 398     13%      5
 </pre>
 
-<details><summary>agent tasks · #153 of 334 · 16% of its score</summary>
+<details><summary>agent tasks · #147 of 300 · 16% of its score</summary>
 
 Beats [o4-mini](o4-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #140 of 469 · 3.2% of its score</summary>
+<details><summary>coding · #139 of 458 · 3.2% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #141 of 466 · 8.8% of its score</summary>
+<details><summary>chat &amp; writing · #137 of 393 · 8.8% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [EXAONE 4.5 33B](exaone-4-5-33b.md), [INTELLECT-3](intellect-3.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Spark-X2.5 1.7B](spark-x2-5-1-7b.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #125 of 400 · 13% of its score</summary>
+<details><summary>math · #125 of 398 · 13% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Granite 4.2 8B](granite-4-2-8b.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-07 · 8.03B params · llama3
 
-**score 41.8** ±1.2 · #673 of 949 · from 16 benchmark results across 4 sources
+**score 41.8** ±1.2 · #502 of 719 · from 16 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Nous Research · released 2024-07 · 8.03B params · llama3
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #363 of 469*     20%      1
+coding          ▁▁▁▃●██▇▆▄▃▁   #357 of 458*     20%      1
 chat &amp; writing  ●········█·█       #3 of 3*    2.6%      1
 </pre>
 
-<details><summary>coding · #363 of 469 · 20% of its score</summary>
+<details><summary>coding · #357 of 458 · 20% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md) here, though they rank lower overall.
 

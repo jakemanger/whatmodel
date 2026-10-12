@@ -6,7 +6,7 @@
 
 LLaVA · released 2024-01 · 34.8B params · apache-2.0
 
-**score 39.5** ±1.6 · #718 of 949 · from 8 benchmark results across 5 sources
+**score 39.5** ±1.6 · #537 of 719 · from 8 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ LLaVA · released 2024-01 · 34.8B params · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁●▃▂▁▃▄▃▆▇█▄   #146 of 150     99%      8
+vision &amp; documents  ▁●▃▂▁▃▄▂▆▇█▄   #143 of 147     99%      8
 </pre>
 
-<details><summary>vision &amp; documents · #146 of 150 · 99% of its score</summary>
+<details><summary>vision &amp; documents · #143 of 147 · 99% of its score</summary>
 
-Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md) here, though they rank higher overall. Trails [LLaVA-v1.6-Vicuna-13B](llava-v1-6-vicuna-13b.md), [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
+Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 
 <pre>
 test                                  result  vs the others in its run  difficulty        counts  why

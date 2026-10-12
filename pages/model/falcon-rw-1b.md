@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 1.3B params · apache-2.0
 
-**score 20.1** ±1.6 · #918 of 949 · from 12 benchmark results across 2 sources
+**score 20.1** ±1.6 · #691 of 719 · from 12 benchmark results across 2 sources
 
 ## What it's good at
 

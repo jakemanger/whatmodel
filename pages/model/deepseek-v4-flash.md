@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-07 · 284B params (13B active) · mit
 
-**score 74.1** ±0.6 · #47 of 949 · from 40 benchmark results across 8 sources
+**score 74.1** ±0.6 · #47 of 719 · from 40 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ DeepSeek · released 2026-07 · 284B params (13B active) · mit
 
 <pre>
 task         vs the others        rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▄▄●▂▁   #43 of 334     17%      9
-coding       ▁▁▁▃▆██▇▆▄●▁   #33 of 469     14%      4
-math         ▁▂▃▅▆▅▄█●▁▁▁   #39 of 400     33%      4
+agent tasks  ▁▁▃▆█▆▅▅▅●▃▁   #43 of 300     17%      9
+coding       ▁▁▁▃▆██▇▆▄●▁   #33 of 458     14%      4
+math         ▁▂▃▅▆▅▄█●▁▁▁   #39 of 398     33%      4
 web search   ●█·········█     #3 of 3*    1.2%      1
 </pre>
 
-<details><summary>agent tasks · #43 of 334 · 17% of its score</summary>
+<details><summary>agent tasks · #43 of 300 · 17% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #33 of 469 · 14% of its score</summary>
+<details><summary>coding · #33 of 458 · 14% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #39 of 400 · 33% of its score</summary>
+<details><summary>math · #39 of 398 · 33% of its score</summary>
 
 Beats [Grok 4.7](grok-4-7.md) here, though they rank higher overall. Trails [GPT-5.2](gpt-5-2.md), [Qwen3.7 Max](qwen3-7-max.md) here, though they rank lower overall.
 

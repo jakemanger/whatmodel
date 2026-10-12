@@ -6,7 +6,7 @@
 
 Google · released 2024-06 · 9.24B params · gemma
 
-**score 47.2** ±0.5 · #512 of 949 · from 56 benchmark results across 20 sources
+**score 47.2** ±0.5 · #393 of 719 · from 56 benchmark results across 20 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Google · released 2024-06 · 9.24B params · gemma
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁   #266 of 469    7.8%      5
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #279 of 466    8.5%      6
-math            ▁▂▃●▆▅▄█▄▁▁▁   #324 of 400     21%      8
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #262 of 458    7.8%      5
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #257 of 393    8.5%      6
+math            ▁▂▃●▆▅▄█▄▁▁▁   #322 of 398     21%      8
 </pre>
 
-<details><summary>coding · #266 of 469 · 7.8% of its score</summary>
+<details><summary>coding · #262 of 458 · 7.8% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #279 of 466 · 8.5% of its score</summary>
+<details><summary>chat &amp; writing · #257 of 393 · 8.5% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #324 of 400 · 21% of its score</summary>
+<details><summary>math · #322 of 398 · 21% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
 

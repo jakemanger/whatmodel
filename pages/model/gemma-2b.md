@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 2.51B params · gemma
 
-**score 26.6** ±0.9 · #884 of 949 · from 12 benchmark results across 9 sources
+**score 26.6** ±0.9 · #664 of 719 · from 12 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Google · released 2024-02 · 2.51B params · gemma
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁●▃▆██▇▆▄▃▁   #455 of 469     72%      5
-chat &amp; writing  ▁▁●▄▆▅▆█▆▆▆▂   #450 of 466     19%      4
+coding          ▁▁●▃▆██▇▆▄▃▁   #445 of 458     72%      5
+chat &amp; writing  ▁▁●▃▅▄▅█▆▆▇▃   #381 of 393     19%      4
 </pre>
 
-<details><summary>coding · #455 of 469 · 72% of its score</summary>
+<details><summary>coding · #445 of 458 · 72% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md) here, though they rank lower overall.
 
@@ -33,9 +33,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #450 of 466 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #381 of 393 · 19% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [OLMo 7B Instruct](olmo-7b-instruct.md), [Baize v2 7B](baize-v2-7b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md), [OLMo 7B Instruct](olmo-7b-instruct.md), [Falcon 40B Instruct](falcon-40b-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why

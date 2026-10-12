@@ -6,7 +6,7 @@
 
 WizardLM · released 2023-08 · 13B params · llama2
 
-**score 41.9** ±2.4 · #672 of 949 · from 3 benchmark results across 2 sources
+**score 41.9** ±2.4 · #501 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ WizardLM · released 2023-08 · 13B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #352 of 469     97%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #347 of 458     97%      3
 </pre>
 
-<details><summary>coding · #352 of 469 · 97% of its score</summary>
+<details><summary>coding · #347 of 458 · 97% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 

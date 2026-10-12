@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 34B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 43.8** ±1.7 · #621 of 949 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 43.8** ±1.7 · #468 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Allen Institute for AI · released 2023-11 · 34B params · AI2 ImpACT Low-risk;
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #314 of 469*     17%      1
-math    ▁▂▃●▆▅▄█▄▁▁▁   #297 of 400*     14%      1
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #310 of 458*     17%      1
+math    ▁▂▃●▆▅▄█▄▁▁▁   #295 of 398*     14%      1
 </pre>
 
-<details><summary>coding · #314 of 469 · 17% of its score</summary>
+<details><summary>coding · #310 of 458 · 17% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>math · #297 of 400 · 14% of its score</summary>
+<details><summary>math · #295 of 398 · 14% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-07 · closed weights
 
-**score 67.0** ±1.3 · #118 of 949 · from 5 benchmark results across 1 source
+**score 67.0** ±1.3 · #114 of 719 · from 5 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Alibaba · released 2026-07 · closed weights
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▅▆▅▄●▄▁▁▁   #132 of 400*     66%      2
+math  ▁▂▃▅▆▅▄●▄▁▁▁   #132 of 398*     66%      2
 </pre>
 
-<details><summary>math · #132 of 400 · 66% of its score</summary>
+<details><summary>math · #132 of 398 · 66% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank lower overall.
 

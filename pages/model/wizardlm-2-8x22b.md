@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 49.5** ±1.3 · #456 of 949 · from 7 benchmark results across 6 sources
+**score 49.5** ±1.3 · #351 of 719 · from 7 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Microsoft · released 2024-04 · 141B params (39B active) · apache-2.0
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #311 of 469*     28%      1
-math    ▁▂▃●▆▅▄█▄▁▁▁   #303 of 400*     31%      1
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #307 of 458*     28%      1
+math    ▁▂▃●▆▅▄█▄▁▁▁   #301 of 398*     31%      1
 </pre>
 
-<details><summary>coding · #311 of 469 · 28% of its score</summary>
+<details><summary>coding · #307 of 458 · 28% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #303 of 400 · 31% of its score</summary>
+<details><summary>math · #301 of 398 · 31% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 

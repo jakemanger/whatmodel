@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 45.9** ±2.0 · #560 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 45.9** ±2.0 · #426 of 719 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂▃▅●▅▄█▄▁▁▁   #280 of 400     98%      3
+math  ▁▂▃▅●▅▄█▄▁▁▁   #278 of 398     98%      3
 </pre>
 
-<details><summary>math · #280 of 400 · 98% of its score</summary>
+<details><summary>math · #278 of 398 · 98% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 

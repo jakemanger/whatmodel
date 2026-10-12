@@ -6,7 +6,7 @@
 
 IBM · released 2026-08 · 29.3B params · apache-2.0
 
-**score 63.0** ±1.1 · #178 of 949 · from 19 benchmark results across 2 sources
+**score 63.0** ±1.1 · #166 of 719 · from 19 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ IBM · released 2026-08 · 29.3B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▄▄▃▂▁    #133 of 334     31%      6
-coding          ▁▁▁▃▆██●▆▄▃▁    #147 of 469     28%      5
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #178 of 466*     18%      2
-math            ▁▂▃▅▆▅▄●▄▁▁▁    #71 of 400*     14%      2
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #131 of 300     31%      6
+coding          ▁▁▁▃▆██●▆▄▃▁    #146 of 458     28%      5
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #169 of 393*     18%      2
+math            ▁▂▃▅▆▅▄●▄▁▁▁    #71 of 398*     14%      2
 </pre>
 
-<details><summary>agent tasks · #133 of 334 · 31% of its score</summary>
+<details><summary>agent tasks · #131 of 300 · 31% of its score</summary>
 
-Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [watt-tool-70B](watt-tool-70b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
@@ -36,7 +36,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #147 of 469 · 28% of its score</summary>
+<details><summary>coding · #146 of 458 · 28% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [Devstral Small 2 24B](devstral-small-2.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #178 of 466 · 18% of its score</summary>
+<details><summary>chat &amp; writing · #169 of 393 · 18% of its score</summary>
 
 Beats [MiniCPM5 2B](minicpm5-2b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -63,7 +63,7 @@ test                           result  vs the others in its run    difficulty   
 
 </details>
 
-<details><summary>math · #71 of 400 · 14% of its score</summary>
+<details><summary>math · #71 of 398 · 14% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall.
 

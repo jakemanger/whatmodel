@@ -6,7 +6,7 @@
 
 Mistral · released 2023-09 · 7.24B params · apache-2.0
 
-**score 32.0** ±1.0 · #837 of 949 · from 12 benchmark results across 8 sources
+**score 32.0** ±1.0 · #626 of 719 · from 12 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Mistral · released 2023-09 · 7.24B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁●▆██▇▆▄▃▁   #430 of 469*     36%      1
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #443 of 466*     17%      2
+coding          ▁▁▁●▆██▇▆▄▃▁   #420 of 458*     36%      1
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #376 of 393*     17%      2
 </pre>
 
-<details><summary>coding · #430 of 469 · 36% of its score</summary>
+<details><summary>coding · #420 of 458 · 36% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -29,9 +29,9 @@ test       result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #443 of 466 · 17% of its score</summary>
+<details><summary>chat &amp; writing · #376 of 393 · 17% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [Minotaur 13B (fixed)](minotaur-13b-fixed.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why

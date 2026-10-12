@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-08 · 19.9B params · other
 
-**score 45.5** ±1.6 · #572 of 949 · from 7 benchmark results across 4 sources
+**score 45.5** ±1.6 · #435 of 719 · from 7 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Shanghai AI Laboratory (InternLM) · released 2024-08 · 19.9B params · other
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁    #235 of 469     16%      4
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #360 of 466*     78%      2
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #232 of 458     16%      4
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #309 of 393*     78%      2
 </pre>
 
-<details><summary>coding · #235 of 469 · 16% of its score</summary>
+<details><summary>coding · #232 of 458 · 16% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #360 of 466 · 78% of its score</summary>
+<details><summary>chat &amp; writing · #309 of 393 · 78% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 

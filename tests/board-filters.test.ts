@@ -38,6 +38,23 @@ test('announced previews appear on default and task boards without implying publ
   }
 });
 
+test('text models with fewer than 3 results are left off unless ?thin=1, and ranks close up', () => {
+  const n = new Map(comparisonSets.llm[0].fit.scores.entries().map(([id, x]) => [id, x.n]));
+  const scored = (v: ReturnType<typeof view>) => v.shown.filter((r) => r.score !== null);
+  const off = view(), on = view('thin=1');
+  assert.ok(off.thinCount > 0 && off.thinCount === on.thinCount);
+  assert.ok(scored(off).every((r) => (n.get(r.id) ?? 0) >= 3));
+  assert.ok(scored(on).some((r) => (n.get(r.id) ?? 0) < 3));
+  assert.deepEqual(scored(off).map((r) => r.rank), scored(off).map((_, i) => i + 1));
+  // Task boards judge by the model's results across all text tests, not just the task's.
+  const chat = view('task=chat');
+  assert.ok(scored(chat).length > 0 && scored(chat).every((r) => (n.get(r.id) ?? 0) >= 3));
+  // Image, video and speech are ranked by arenas, where one or two results are normal.
+  const image = boardView('image', new URLSearchParams());
+  assert.equal(image.thinCount, 0);
+  assert.ok(image.shown.some((r) => r.thin));
+});
+
 test('models listed by their API also say when a download runs locally', () => {
   const glm = (q: string) => view(q).rows.find((r) => r.id === 'glm-5-3')!;
   assert.equal(glm('').where, 'api');

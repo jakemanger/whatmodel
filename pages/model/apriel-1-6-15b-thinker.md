@@ -6,7 +6,7 @@
 
 ServiceNow · released 2025-11 · 14.9B params · mit
 
-**score 61.7** ±1.5 · #200 of 949 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 61.7** ±1.5 · #182 of 719 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ ServiceNow · released 2025-11 · 14.9B params · mit
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▄▄▃▂▁    #209 of 334     31%      3
-coding              ▁▁▁▃▆██●▆▄▃▁   #178 of 469*     61%      2
-vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄    #89 of 150*     11%      2
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #195 of 300     31%      3
+coding              ▁▁▁▃▆██●▆▄▃▁   #176 of 458*     61%      2
+vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄    #89 of 147*     11%      2
 </pre>
 
-<details><summary>agent tasks · #209 of 334 · 31% of its score</summary>
+<details><summary>agent tasks · #195 of 300 · 31% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                      result  vs the others in its run  difficulty          
 
 </details>
 
-<details><summary>coding · #178 of 469 · 61% of its score</summary>
+<details><summary>coding · #176 of 458 · 61% of its score</summary>
 
 Beats [Qwen3.5 9B](qwen3-5-9b.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -44,9 +44,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>vision &amp; documents · #89 of 150 · 11% of its score</summary>
+<details><summary>vision &amp; documents · #89 of 147 · 11% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why

@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-08 · 70B params · llama2
 
-**score 41.9** ±1.1 · #671 of 949 · from 14 benchmark results across 6 sources
+**score 41.9** ±1.1 · #500 of 719 · from 14 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Microsoft · released 2023-08 · 70B params · llama2
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #285 of 469    6.1%      4
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂    #370 of 466     50%      3
-math            ▁▂▃●▆▅▄█▄▁▁▁   #299 of 400*    6.3%      1
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #281 of 458    6.1%      4
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #315 of 393     50%      3
+math            ▁▂▃●▆▅▄█▄▁▁▁   #297 of 398*    6.3%      1
 </pre>
 
-<details><summary>coding · #285 of 469 · 6.1% of its score</summary>
+<details><summary>coding · #281 of 458 · 6.1% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #370 of 466 · 50% of its score</summary>
+<details><summary>chat &amp; writing · #315 of 393 · 50% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #299 of 400 · 6.3% of its score</summary>
+<details><summary>math · #297 of 398 · 6.3% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 

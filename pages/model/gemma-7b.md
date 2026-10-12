@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 8.54B params · gemma
 
-**score 32.1** ±0.6 · #836 of 949 · from 17 benchmark results across 11 sources
+**score 32.1** ±0.6 · #625 of 719 · from 17 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Google · released 2024-02 · 8.54B params · gemma
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁●▆██▇▆▄▃▁   #436 of 469     74%      6
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #429 of 466     13%      4
+coding          ▁▁▁●▆██▇▆▄▃▁   #426 of 458     74%      6
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #364 of 393     13%      4
 </pre>
 
-<details><summary>coding · #436 of 469 · 74% of its score</summary>
+<details><summary>coding · #426 of 458 · 74% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #429 of 466 · 13% of its score</summary>
+<details><summary>chat &amp; writing · #364 of 393 · 13% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-08 · 2400B params (95B active) · qwen3.8-max-license
 
-**score 78.2** ±0.6 · #18 of 949 · from 23 benchmark results across 8 sources
+**score 78.2** ±0.6 · #18 of 719 · from 23 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Alibaba · released 2026-08 · 2400B params (95B active) · qwen3.8-max-license
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄▃●▁    #18 of 334     13%      3
-coding              ▁▁▁▃▆██▇▆▄●▁    #10 of 469     11%      3
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●   #18 of 466*    3.6%      1
-math                ▁▂▃▅▆▅▄█▄●▁▁    #19 of 400     54%      9
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇█●    #2 of 150*    5.5%      2
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #18 of 300     13%      3
+coding              ▁▁▁▃▆██▇▆▄●▁    #10 of 458     11%      3
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #18 of 393*    3.6%      1
+math                ▁▂▃▅▆▅▄█▄●▁▁    #19 of 398     54%      9
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇█●    #2 of 147*    5.5%      2
 </pre>
 
-<details><summary>agent tasks · #18 of 334 · 13% of its score</summary>
+<details><summary>agent tasks · #18 of 300 · 13% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [Hy4 preview (770B-A49B)](hy4-preview.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #10 of 469 · 11% of its score</summary>
+<details><summary>coding · #10 of 458 · 11% of its score</summary>
 
 Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Fable 5](claude-fable-5.md), [GPT-5.5](gpt-5-5.md) here, though they rank higher overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #18 of 466 · 3.6% of its score</summary>
+<details><summary>chat &amp; writing · #18 of 393 · 3.6% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #19 of 400 · 54% of its score</summary>
+<details><summary>math · #19 of 398 · 54% of its score</summary>
 
 Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.4](gpt-5-4.md) here, though they rank lower overall.
 
@@ -77,7 +77,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #2 of 150 · 5.5% of its score</summary>
+<details><summary>vision &amp; documents · #2 of 147 · 5.5% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall.
 

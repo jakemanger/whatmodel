@@ -15,9 +15,9 @@ OpenAI · released 2024-09 · proprietary
 <pre>
 task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      1
-coding          ▁▁▁▃▅▇█●▅▄▂▁      #155 of 549     41%     11
-chat &amp; writing  ▁▁▁▃▅▅▆█▆●▆▂     #158 of 579*    6.8%      2
-math            ▁▂▃▅▇▅●█▄▁▁▁      #202 of 464     15%      5
+coding          ▁▁▁▃▅▇█●▅▄▃▁      #151 of 524     41%     11
+chat &amp; writing  ▁▁▁▃▅▄▆█▇●▇▃     #140 of 463*    6.8%      2
+math            ▁▂▃▅▇▅●█▄▁▁▁      #200 of 462     15%      5
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
@@ -29,7 +29,7 @@ test                      result  vs the others in its run   difficulty      cou
 
 </details>
 
-<details><summary>coding · #155 of 549 · 41% of its score</summary>
+<details><summary>coding · #151 of 524 · 41% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #158 of 579 · 6.8% of its score</summary>
+<details><summary>chat &amp; writing · #140 of 463 · 6.8% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [MiMo-V2-Flash (309B-A15B)](mimo-v2-flash.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #202 of 464 · 15% of its score</summary>
+<details><summary>math · #200 of 462 · 15% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-06 · 6.05B params · apache-2.0
 
-**score 24.5** ±0.6 · #899 of 949 · from 30 benchmark results across 6 sources
+**score 24.5** ±0.6 · #675 of 719 · from 30 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ EleutherAI · released 2021-06 · 6.05B params · apache-2.0
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▆██▇▆▄▃▁   #460 of 469*     28%      2
+coding  ▁▁●▃▆██▇▆▄▃▁   #449 of 458*     28%      2
 </pre>
 
-<details><summary>coding · #460 of 469 · 28% of its score</summary>
+<details><summary>coding · #449 of 458 · 28% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md), [Falcon3 1B Instruct](falcon3-1b.md) here, though they rank lower overall.
 

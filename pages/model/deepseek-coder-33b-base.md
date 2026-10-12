@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 33.34B params · deepseek
 
-**score 40.9** ±0.6 · #693 of 949 · from 11 benchmark results across 5 sources
+**score 40.9** ±0.6 · #516 of 719 · from 11 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ DeepSeek · released 2023-10 · 33.34B params · deepseek
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁    #375 of 469     85%      6
-math    ▁▂▃●▆▅▄█▄▁▁▁   #309 of 400*    2.2%      1
+coding  ▁▁▁▃●██▇▆▄▃▁    #368 of 458     85%      6
+math    ▁▂▃●▆▅▄█▄▁▁▁   #307 of 398*    2.2%      1
 </pre>
 
-<details><summary>coding · #375 of 469 · 85% of its score</summary>
+<details><summary>coding · #368 of 458 · 85% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3.0 2B Instruct](granite-3-0-2b.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #309 of 400 · 2.2% of its score</summary>
+<details><summary>math · #307 of 398 · 2.2% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-3.5-vision-instruct](phi-3-5-vision-instruct.md) here, though they rank lower overall.
 

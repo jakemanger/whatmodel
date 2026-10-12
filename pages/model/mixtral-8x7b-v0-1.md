@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
-**score 40.7** ±0.9 · #698 of 949 · from 19 benchmark results across 5 sources
+**score 40.7** ±0.9 · #520 of 719 · from 19 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Mistral AI · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁    #399 of 469     49%      7
-math    ▁▂▃▅●▅▄█▄▁▁▁   #252 of 400*    7.6%      2
+coding  ▁▁▁▃●██▇▆▄▃▁    #391 of 458     49%      7
+math    ▁▂▃▅●▅▄█▄▁▁▁   #250 of 398*    7.6%      2
 </pre>
 
-<details><summary>coding · #399 of 469 · 49% of its score</summary>
+<details><summary>coding · #391 of 458 · 49% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #252 of 400 · 7.6% of its score</summary>
+<details><summary>math · #250 of 398 · 7.6% of its score</summary>
 
 Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 

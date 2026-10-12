@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-08 · 8.89B params · nvidia-open-model
 
-**score 55.7** ±0.7 · #298 of 949 · from 34 benchmark results across 5 sources
+**score 55.7** ±0.7 · #254 of 719 · from 34 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ NVIDIA · released 2025-08 · 8.89B params · nvidia-open-model
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▄▄▃▂▁   #190 of 334*    1.1%      1
-coding          ▁▁▁▃▆█●▇▆▄▃▁    #220 of 469     23%      7
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂    #190 of 466    3.5%      4
-math            ▁▂▃▅▆▅●█▄▁▁▁    #164 of 400     33%      5
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁   #178 of 300*    1.1%      1
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #217 of 458     23%      7
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #181 of 393    3.5%      4
+math            ▁▂▃▅▆▅●█▄▁▁▁    #163 of 398     33%      5
 </pre>
 
-<details><summary>agent tasks · #190 of 334 · 1.1% of its score</summary>
+<details><summary>agent tasks · #178 of 300 · 1.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test           result  vs the others in its run    difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #220 of 469 · 23% of its score</summary>
+<details><summary>coding · #217 of 458 · 23% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #190 of 466 · 3.5% of its score</summary>
+<details><summary>chat &amp; writing · #181 of 393 · 3.5% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #164 of 400 · 33% of its score</summary>
+<details><summary>math · #163 of 398 · 33% of its score</summary>
 
 Beats [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 

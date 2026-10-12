@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
-**score 47.2** ±1.0 · #513 of 949 · from 17 benchmark results across 7 sources
+**score 47.2** ±1.0 · #394 of 719 · from 17 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▄▄▃▂▁   #294 of 334*    6.0%      1
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #331 of 469     37%      6
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #268 of 466*    8.1%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #265 of 300*    6.0%      1
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #327 of 458     37%      6
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #249 of 393*    8.1%      1
 </pre>
 
-<details><summary>agent tasks · #294 of 334 · 6.0% of its score</summary>
+<details><summary>agent tasks · #265 of 300 · 6.0% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                      result  vs the others in its run  difficulty      coun
 
 </details>
 
-<details><summary>coding · #331 of 469 · 37% of its score</summary>
+<details><summary>coding · #327 of 458 · 37% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #268 of 466 · 8.1% of its score</summary>
+<details><summary>chat &amp; writing · #249 of 393 · 8.1% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 

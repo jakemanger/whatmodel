@@ -6,7 +6,7 @@
 
 Cohere For AI · released 2024-05 · 8.03B params · cc-by-nc-4.0
 
-**score 42.6** ±2.8 · #655 of 949 · from 4 benchmark results across 4 sources
+**score 42.6** ±2.8 · #492 of 719 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 

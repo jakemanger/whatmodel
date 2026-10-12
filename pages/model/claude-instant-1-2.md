@@ -14,11 +14,11 @@ Anthropic · released 2023-08 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●▇█▇▅▄▂▁   #433 of 549*     85%      2
-chat &amp; writing  ▁▁▁▃▅●▆█▆▆▆▂   #431 of 579*     15%      1
+coding          ▁▁▁▃●▇█▇▅▄▃▁   #413 of 524*     85%      2
+chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃   #348 of 463*     15%      1
 </pre>
 
-<details><summary>coding · #433 of 549 · 85% of its score</summary>
+<details><summary>coding · #413 of 524 · 85% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #431 of 579 · 15% of its score</summary>
+<details><summary>chat &amp; writing · #348 of 463 · 15% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 

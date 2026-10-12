@@ -6,7 +6,7 @@
 
 01.AI · released 2024-08 · 8.83B params · apache-2.0
 
-**score 48.6** ±1.4 · #482 of 949 · from 8 benchmark results across 5 sources
+**score 48.6** ±1.4 · #370 of 719 · from 8 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #290 of 469     83%      6
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #286 of 458     83%      6
 </pre>
 
-<details><summary>coding · #290 of 469 · 83% of its score</summary>
+<details><summary>coding · #286 of 458 · 83% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 

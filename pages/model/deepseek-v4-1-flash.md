@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-09 · 552B params (16B active) · mit
 
-**score 77.5** ±0.7 · #21 of 949 · from 24 benchmark results across 4 sources
+**score 77.5** ±0.7 · #21 of 719 · from 24 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ DeepSeek · released 2026-09 · 552B params (16B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▄▄▃●▁    #12 of 334     21%      9
-coding          ▁▁▁▃▆██▇▆▄●▁   #22 of 469*    8.5%      2
-chat &amp; writing  ▁▁▁▄▆▅▆█▆▆●▂   #27 of 466*    4.1%      1
-math            ▁▂▃▅▆▅▄█●▁▁▁    #32 of 400     38%      4
+agent tasks     ▁▁▃▆█▆▅▅▅▄●▁    #12 of 300     21%      9
+coding          ▁▁▁▃▆██▇▆▄●▁   #22 of 458*    8.5%      2
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #27 of 393*    4.1%      1
+math            ▁▂▃▅▆▅▄█●▁▁▁    #32 of 398     38%      4
 web search      ██·········●      #1 of 3*    1.4%      1
 </pre>
 
-<details><summary>agent tasks · #12 of 334 · 21% of its score</summary>
+<details><summary>agent tasks · #12 of 300 · 21% of its score</summary>
 
 Beats [GPT-5.5 Pro](gpt-5-5-pro.md), [GPT-5.4 Pro](gpt-5-4-pro.md), [GPT-5.5](gpt-5-5.md) here, though they rank higher overall.
 
@@ -40,7 +40,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #22 of 469 · 8.5% of its score</summary>
+<details><summary>coding · #22 of 458 · 8.5% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
@@ -52,7 +52,7 @@ test                           result  vs the others in its run    difficulty   
 
 </details>
 
-<details><summary>chat &amp; writing · #27 of 466 · 4.1% of its score</summary>
+<details><summary>chat &amp; writing · #27 of 393 · 4.1% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [Gemini 3.6 Flash](gemini-3-6-flash.md), [Gemini 3.5 Flash](gemini-3-5-flash.md) here, though they rank lower overall.
 
@@ -63,7 +63,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #32 of 400 · 38% of its score</summary>
+<details><summary>math · #32 of 398 · 38% of its score</summary>
 
 Trails [GPT-5.2](gpt-5-2.md), [Qwen3.7 Max](qwen3-7-max.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank lower overall.
 

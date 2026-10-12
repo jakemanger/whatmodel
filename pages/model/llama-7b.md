@@ -14,13 +14,13 @@ Meta · released 2023-02 · 6.7B params · llama-1-noncommercial-research
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▅▇█▇▅▄▂▁    #536 of 549    7.0%      2
-math    ●▂▃▅▇▅▅█▄▁▁▁   #461 of 464*    3.3%      2
+coding  ▁▁●▃▅▇█▇▅▄▃▁    #511 of 524    7.0%      2
+math    ●▂▃▅▇▅▅█▄▁▁▁   #459 of 462*    3.3%      2
 </pre>
 
-<details><summary>coding · #536 of 549 · 7.0% of its score</summary>
+<details><summary>coding · #511 of 524 · 7.0% of its score</summary>
 
-Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [StarCoderBase 1B](starcoderbase-1b.md), [Gemma 2B IT](gemma-2b.md) here, though they rank lower overall.
+Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Gemma 2B IT](gemma-2b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
 <pre>
 test        result  vs the others in its run  difficulty        counts  why
@@ -30,7 +30,7 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #461 of 464 · 3.3% of its score</summary>
+<details><summary>math · #459 of 462 · 3.3% of its score</summary>
 
 Beats [DeepSeek-Coder 1.3B Base](deepseek-coder-1-3b-base.md), [StarCoderBase 7B](starcoderbase-7b.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

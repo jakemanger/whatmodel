@@ -6,7 +6,7 @@
 
 Google · released 2026-05 · closed weights
 
-**score 74.0** ±0.6 · #50 of 949 · from 30 benchmark results across 9 sources
+**score 74.0** ±0.6 · #50 of 719 · from 30 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Google · released 2026-05 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄●▂▁    #49 of 334    8.0%      4
-coding              ▁▁▁▃▆██▇▆●▃▁   #53 of 469*     11%      2
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #24 of 466*    3.0%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁    #40 of 400     60%     13
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄    #16 of 150    6.7%      4
-web search          ▂▂▂▆▄●▃▃▁▁·▁    #42 of 81*    1.1%      1
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #49 of 300    8.0%      4
+coding              ▁▁▁▃▆██▇▆●▃▁   #52 of 458*     11%      2
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #24 of 393*    3.0%      1
+math                ▁▂▃▅▆▅▄█●▁▁▁    #40 of 398     60%     13
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #16 of 147    6.7%      4
+web search          ▂▁▂▆▄●▃▃▁▁·▁    #42 of 80*    1.1%      1
 </pre>
 
-<details><summary>agent tasks · #49 of 334 · 8.0% of its score</summary>
+<details><summary>agent tasks · #49 of 300 · 8.0% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #53 of 469 · 11% of its score</summary>
+<details><summary>coding · #52 of 458 · 11% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Mistral Large 4 (public preview)](mistral-large-4.md), [Qwen3.7 Plus](qwen3-7-plus.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                       result  vs the others in its run   difficulty      co
 
 </details>
 
-<details><summary>chat &amp; writing · #24 of 466 · 3.0% of its score</summary>
+<details><summary>chat &amp; writing · #24 of 393 · 3.0% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md) here, though they rank lower overall.
 
@@ -59,7 +59,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #40 of 400 · 60% of its score</summary>
+<details><summary>math · #40 of 398 · 60% of its score</summary>
 
 Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank higher overall. Trails [GPT-5.2](gpt-5-2.md) here, though they rank lower overall.
 
@@ -82,7 +82,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #16 of 150 · 6.7% of its score</summary>
+<details><summary>vision &amp; documents · #16 of 147 · 6.7% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall.
 
@@ -96,7 +96,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #42 of 81 · 1.1% of its score</summary>
+<details><summary>web search · #42 of 80 · 1.1% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.7 Max](qwen3-7-max.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

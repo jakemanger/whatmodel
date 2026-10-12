@@ -7,7 +7,7 @@ import {
 import { CATEGORIES, CATEGORY_IDS, catOf } from "./categories.ts";
 import { catalogueOnly, rank } from "./fit.ts";
 import { boardFromData } from "./board.ts";
-import { boardData } from "./board-data.ts";
+import { boardData, listedModel } from "./board-data.ts";
 import type { QuantFinding } from "./quant.ts";
 import type { Explained } from "./score.ts";
 import { SOURCES, sourceId } from "./sources.ts";
@@ -78,7 +78,9 @@ export function modelView(id: string): ModelView | null {
   }
 
   const cat = catOf(model);
-  const all = rank(modelsIn(cat), fitFor(id).scores, { specs: null });
+  // Ranked among the models the leaderboards list, or all of them for a thinly tested model (as ?thin=1 shows).
+  const thin = !listedModel(cat, id);
+  const all = rank(modelsIn(cat).filter((x) => thin || listedModel(cat, x.id)), fitFor(id).scores, { specs: null });
 
   // One row per raw result, grouped by the source it came from.
   const bySource = new Map<string, { share: number; rows: ScoreRow[] }>();

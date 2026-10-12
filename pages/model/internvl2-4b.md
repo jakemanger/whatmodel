@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 4.15B params · mit
 
-**score 41.2** ±1.9 · #687 of 949 · from 19 benchmark results across 4 sources
+**score 41.2** ±1.9 · #512 of 719 · from 19 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 4.15B params · mit
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▂▃▅●▅▄█▄▁▁▁   #263 of 400*     15%      1
-vision &amp; documents  ▁●▃▂▁▃▄▃▆▇█▄    #144 of 150     84%     13
+math                ▁▂▃▅●▅▄█▄▁▁▁   #261 of 398*     15%      1
+vision &amp; documents  ▁●▃▂▁▃▄▂▆▇█▄    #142 of 147     84%     13
 </pre>
 
-<details><summary>math · #263 of 400 · 15% of its score</summary>
+<details><summary>math · #261 of 398 · 15% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                  result  vs the others in its run  difficulty        counts
 
 </details>
 
-<details><summary>vision &amp; documents · #144 of 150 · 84% of its score</summary>
+<details><summary>vision &amp; documents · #142 of 147 · 84% of its score</summary>
 
 Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 

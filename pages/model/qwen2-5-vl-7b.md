@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 8.29B params · apache-2.0
 
-**score 49.8** ±1.0 · #449 of 949 · from 14 benchmark results across 2 sources
+**score 49.8** ±1.0 · #347 of 719 · from 14 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Alibaba · released 2025-01 · 8.29B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▂▃▅●▅▄█▄▁▁▁   #244 of 400*     12%      1
-vision &amp; documents  ▁▁▃▂●▃▄▃▆▇█▄    #121 of 150    100%     14
+math                ▁▂▃▅●▅▄█▄▁▁▁   #242 of 398*     12%      1
+vision &amp; documents  ▁▁▃▂●▃▄▂▆▇█▄    #119 of 147    100%     14
 </pre>
 
-<details><summary>math · #244 of 400 · 12% of its score</summary>
+<details><summary>math · #242 of 398 · 12% of its score</summary>
 
 Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md), [OpenThinker 7B](openthinker-7b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #121 of 150 · 100% of its score</summary>
+<details><summary>vision &amp; documents · #119 of 147 · 100% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank lower overall.
 

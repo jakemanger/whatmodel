@@ -6,7 +6,7 @@
 
 BigCode · released 2023-05 · 15.5B params · bigcode-openrail-m
 
-**score 33.0** ±1.0 · #827 of 949 · from 12 benchmark results across 3 sources
+**score 33.0** ±1.0 · #618 of 719 · from 12 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ BigCode · released 2023-05 · 15.5B params · bigcode-openrail-m
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁    #429 of 469     94%      8
-math    ▁●▃▅▆▅▄█▄▁▁▁   #390 of 400*    5.4%      1
+coding  ▁▁▁●▆██▇▆▄▃▁    #419 of 458     94%      8
+math    ▁●▃▅▆▅▄█▄▁▁▁   #388 of 398*    5.4%      1
 </pre>
 
-<details><summary>coding · #429 of 469 · 94% of its score</summary>
+<details><summary>coding · #419 of 458 · 94% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #390 of 400 · 5.4% of its score</summary>
+<details><summary>math · #388 of 398 · 5.4% of its score</summary>
 
 Beats [Code Llama 7B (base)](codellama-7b.md), [Llama 2 13B Chat](llama-2-13b-chat.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.1 1B-A400M Instruct](granite-3-1-1b-a400m.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 

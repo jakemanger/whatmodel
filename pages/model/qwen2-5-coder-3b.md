@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 3.09B params · qwen-research
 
-**score 47.6** ±1.2 · #506 of 949 · from 9 benchmark results across 2 sources
+**score 47.6** ±1.2 · #388 of 719 · from 9 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Alibaba · released 2024-11 · 3.09B params · qwen-research
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #306 of 469     95%      8
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #302 of 458     95%      8
 </pre>
 
-<details><summary>coding · #306 of 469 · 95% of its score</summary>
+<details><summary>coding · #302 of 458 · 95% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 

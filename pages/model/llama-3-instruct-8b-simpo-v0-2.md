@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-07 · 8.03B params
 
-**score 38.5** ±1.1 · #741 of 949 · from 4 benchmark results across 3 sources
+**score 38.5** ±1.1 · #555 of 719 · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Princeton NLP · released 2024-07 · 8.03B params
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁●▃▅▆▅▄█▄▁▁▁   #381 of 400*     29%      1
+math  ▁●▃▅▆▅▄█▄▁▁▁   #379 of 398*     29%      1
 </pre>
 
-<details><summary>math · #381 of 400 · 29% of its score</summary>
+<details><summary>math · #379 of 398 · 29% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 

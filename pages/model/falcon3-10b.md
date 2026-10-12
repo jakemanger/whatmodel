@@ -6,7 +6,7 @@
 
 TII · released 2024-12 · 10.31B params · falcon-llm
 
-**score 43.8** ±2.7 · #620 of 949 · from 7 benchmark results across 3 sources
+**score 43.8** ±2.7 · #467 of 719 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ TII · released 2024-12 · 10.31B params · falcon-llm
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▄▄▃▂▁   #299 of 334*     39%      2
-coding       ▁▁▁▃▆●█▇▆▄▃▁    #350 of 469     44%      4
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #270 of 300*     39%      2
+coding       ▁▁▁▃▆●█▇▆▄▃▁    #345 of 458     44%      4
 </pre>
 
-<details><summary>agent tasks · #299 of 334 · 39% of its score</summary>
+<details><summary>agent tasks · #270 of 300 · 39% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #350 of 469 · 44% of its score</summary>
+<details><summary>coding · #345 of 458 · 44% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [OpenChat 3.5](openchat-3-5.md) here, though they rank lower overall.
 

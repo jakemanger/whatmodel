@@ -6,7 +6,7 @@
 
 Swiss AI · released 2025-08 · 8.05B params · apache-2.0
 
-**score 38.1** ±3.6 · #753 of 949 · from 5 benchmark results across 3 sources
+**score 38.1** ±3.6 · #563 of 719 · from 5 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Swiss AI · released 2025-08 · 8.05B params · apache-2.0
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂●▅▆▅▄█▄▁▁▁   #369 of 400*     48%      2
+math  ▁▂●▅▆▅▄█▄▁▁▁   #367 of 398*     48%      2
 </pre>
 
-<details><summary>math · #369 of 400 · 48% of its score</summary>
+<details><summary>math · #367 of 398 · 48% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md), [OLMo 2 1B Instruct (0425)](olmo-2-1b.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 

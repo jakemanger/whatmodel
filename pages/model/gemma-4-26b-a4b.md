@@ -6,7 +6,7 @@
 
 Google · released 2026-04 · 25.2B params (3.8B active) · apache-2.0
 
-**score 63.9** ±0.6 · #170 of 949 · from 62 benchmark results across 18 sources
+**score 63.9** ±0.6 · #158 of 719 · from 62 benchmark results across 18 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Google · released 2026-04 · 25.2B params (3.8B active) · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▄▄▃▂▁   #160 of 334     26%     13
-coding              ▁▁▁▃▆██▇●▄▃▁   #121 of 469     21%     10
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #69 of 466*    3.3%      2
-math                ▁▂▃▅▆▅▄●▄▁▁▁    #98 of 400    7.9%      3
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄    #56 of 150    9.1%      5
-web search          ●▂▂▆▄█▃▃▁▁·▁    #78 of 81*    0.8%      1
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #153 of 300     26%     13
+coding              ▁▁▁▃▆██▇●▄▃▁   #120 of 458     21%     10
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #69 of 393*    3.3%      2
+math                ▁▂▃▅▆▅▄●▄▁▁▁    #98 of 398    7.9%      3
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #56 of 147    9.1%      5
+web search          ●▁▂▆▄█▃▃▁▁·▁    #77 of 80*    0.8%      1
 </pre>
 
-<details><summary>agent tasks · #160 of 334 · 26% of its score</summary>
+<details><summary>agent tasks · #153 of 300 · 26% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #121 of 469 · 21% of its score</summary>
+<details><summary>coding · #120 of 458 · 21% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kimi K2 Thinking](kimi-k2-thinking.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
@@ -65,7 +65,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #69 of 466 · 3.3% of its score</summary>
+<details><summary>chat &amp; writing · #69 of 393 · 3.3% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5](gpt-5.md) here, though they rank higher overall.
 
@@ -77,7 +77,7 @@ test            result  vs the others in its run    difficulty           counts 
 
 </details>
 
-<details><summary>math · #98 of 400 · 7.9% of its score</summary>
+<details><summary>math · #98 of 398 · 7.9% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
@@ -90,7 +90,7 @@ test                      result  vs the others in its run    difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #56 of 150 · 9.1% of its score</summary>
+<details><summary>vision &amp; documents · #56 of 147 · 9.1% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall.
 
@@ -105,9 +105,9 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>web search · #78 of 81 · 0.8% of its score</summary>
+<details><summary>web search · #77 of 80 · 0.8% of its score</summary>
 
-Beats [GLM-4.5](glm-4-5.md), [Claude Haiku 4.5](claude-haiku-4-5.md) here, though they rank higher overall. Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [GPT-4o Search Preview (2025-03-11)](gpt-4o-search-preview.md) here, though they rank lower overall.
+Beats [GLM-4.5](glm-4-5.md), [Claude Haiku 4.5](claude-haiku-4-5.md) here, though they rank higher overall. Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why

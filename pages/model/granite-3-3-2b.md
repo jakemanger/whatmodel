@@ -6,7 +6,7 @@
 
 IBM · released 2025-04 · 2.53B params · apache-2.0
 
-**score 39.4** ±1.3 · #721 of 949 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 39.4** ±1.3 · #540 of 719 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ IBM · released 2025-04 · 2.53B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #366 of 466*     12%      2
-math            ▁▂▃●▆▅▄█▄▁▁▁    #307 of 400     41%      3
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #314 of 393*     12%      2
+math            ▁▂▃●▆▅▄█▄▁▁▁    #305 of 398     41%      3
 </pre>
 
-<details><summary>chat &amp; writing · #366 of 466 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #314 of 393 · 12% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #307 of 400 · 41% of its score</summary>
+<details><summary>math · #305 of 398 · 41% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 

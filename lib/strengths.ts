@@ -2,7 +2,7 @@
 // it beats or trails there, and for each test how it compares with the other models in the same
 // run, how hard the test is, and why the test counts as much as it does toward the overall score.
 import { benchmarkById, comparisonForModel, models, modelsIn, results } from "./data.ts";
-import { boardData } from "./board-data.ts";
+import { boardData, listedModel } from "./board-data.ts";
 import { catOf } from "./categories.ts";
 import { catalogueOnly, rank } from "./fit.ts";
 import { aboveChance, fromLatent, toLatent, type Fit } from "./score.ts";
@@ -45,10 +45,11 @@ export type Strengths = { tasks: TaskRow[]; other: TestRow[]; best: TaskRow | nu
 const byId = new Map(models.map((m) => [m.id, m]));
 const peer = (id: string): Peer => ({ id, name: byId.get(id)?.name ?? id });
 // Rankings are the same for every model page, so compute each once.
+// Like the leaderboards, text models with fewer than three results are left out, unless the page is one of theirs.
 const rankCache = new Map<string, ReturnType<typeof rank>>();
-const ranked = (key: string, cat: Category, scores: Map<string, Scored>, retired: boolean) => {
-  const k = `${cat}|${key}|${retired}`;
-  if (!rankCache.has(k)) rankCache.set(k, rank(modelsIn(cat), scores, { specs: null, retired }));
+const ranked = (key: string, cat: Category, scores: Map<string, Scored>, retired: boolean, thin: boolean) => {
+  const k = `${cat}|${key}|${retired}|${thin}`;
+  if (!rankCache.has(k)) rankCache.set(k, rank(modelsIn(cat).filter((m) => thin || listedModel(cat, m.id)), scores, { specs: null, retired }));
   return rankCache.get(k)!;
 };
 // Values in 12 bins from worst to best, and the bin of one of them.
@@ -189,8 +190,8 @@ export function strengths(id: string): Strengths | null {
   const rows = new Map([...byBench].map(([bench, rs]) => [bench, testRow(id, bench, rs, f, shares, why, keysOf.get(bench), implied.get(bench))]));
   const order = (a: TestRow, b: TestRow) => (b.share ?? -1) - (a.share ?? -1) || b.tested - a.tested;
 
-  const retired = catalogueOnly(m);
-  const overallRows = f && set ? ranked(`overall:${set.id}`, cat, f.scores, retired) : [];
+  const retired = catalogueOnly(m), thin = !listedModel(cat, id);
+  const overallRows = f && set ? ranked(`overall:${set.id}`, cat, f.scores, retired, thin) : [];
   const overallRank = new Map(overallRows.map((r) => [r.id, r.rank!]));
   const me = overallRank.get(id);
   const current = (x: string) => { const mm = byId.get(x); return !!mm && !catalogueOnly(mm); };
@@ -204,7 +205,7 @@ export function strengths(id: string): Strengths | null {
     let ahead: Peer[] = [], behind: Peer[] = [], beats: Peer[] = [], trails: Peer[] = [], spread: number[] = [], atBin = -1;
     if (tset) {
       const scores = new Map<string, Scored>(tset.scores.map((s) => [s.id, s]));
-      const list = ranked(`task:${t.id}:${tset.id}`, cat, scores, retired);
+      const list = ranked(`task:${t.id}:${tset.id}`, cat, scores, retired, thin);
       const i = list.findIndex((r) => r.id === id);
       total = list.length;
       ({ spread, at: atBin } = bins(list.map((r) => scores.get(r.id)!.g), i >= 0 ? scores.get(id)!.g : undefined));

@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-10 · 230B params (10B active) · modified-mit
 
-**score 64.6** ±1.2 · #160 of 949 · from 7 benchmark results across 5 sources
+**score 64.6** ±1.2 · #149 of 719 · from 7 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ MiniMax · released 2025-10 · 230B params (10B active) · modified-mit
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▄▃▂▁    #104 of 334     34%      3
-coding          ▁▁▁▃▆██●▆▄▃▁   #134 of 469*     23%      1
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #175 of 466*     13%      1
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #104 of 300     34%      3
+coding          ▁▁▁▃▆██●▆▄▃▁   #133 of 458*     23%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #166 of 393*     13%      1
 </pre>
 
-<details><summary>agent tasks · #104 of 334 · 34% of its score</summary>
+<details><summary>agent tasks · #104 of 300 · 34% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #134 of 469 · 23% of its score</summary>
+<details><summary>coding · #133 of 458 · 23% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                       result  vs the others in its run   difficulty  counts
 
 </details>
 
-<details><summary>chat &amp; writing · #175 of 466 · 13% of its score</summary>
+<details><summary>chat &amp; writing · #166 of 393 · 13% of its score</summary>
 
 Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 

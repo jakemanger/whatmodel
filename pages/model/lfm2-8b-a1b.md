@@ -14,12 +14,12 @@ Liquid AI · released 2025-10 · 8.3B params (1.5B active) · lfm1.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▄▄▃▂▁    #361 of 374    3.8%      4
-chat &amp; writing  ▁▁▁▃▅▅●█▆▆▆▂   #339 of 579*    4.8%      2
-math            ▁▂▃▅●▅▅█▄▁▁▁    #279 of 464     31%      7
+agent tasks     ▁▁●▆█▆▅▄▄▃▂▁    #328 of 340    3.8%      4
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #284 of 463*    4.8%      2
+math            ▁▂▃▅●▅▅█▄▁▁▁    #277 of 462     31%      7
 </pre>
 
-<details><summary>agent tasks · #361 of 374 · 3.8% of its score</summary>
+<details><summary>agent tasks · #328 of 340 · 3.8% of its score</summary>
 
 Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #339 of 579 · 4.8% of its score</summary>
+<details><summary>chat &amp; writing · #284 of 463 · 4.8% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #279 of 464 · 31% of its score</summary>
+<details><summary>math · #277 of 462 · 31% of its score</summary>
 
 Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md), [OpenThinker 7B](openthinker-7b.md) here, though they rank lower overall.
 

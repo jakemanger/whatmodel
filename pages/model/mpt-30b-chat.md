@@ -14,10 +14,10 @@ MosaicML · released 2023-06 · 30B params · cc-by-nc-sa-4.0
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▃●▅▆█▆▆▆▂   #518 of 579     98%      3
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃   #416 of 463     98%      3
 </pre>
 
-<details><summary>chat &amp; writing · #518 of 579 · 98% of its score</summary>
+<details><summary>chat &amp; writing · #416 of 463 · 98% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 

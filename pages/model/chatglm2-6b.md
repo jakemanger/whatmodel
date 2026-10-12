@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2023-06 · 6B params · chatglm2-6b-license
 
-**score 24.8** ±1.6 · #898 of 949 · from 6 benchmark results across 5 sources
+**score 24.8** ±1.6 · #674 of 719 · from 6 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Zhipu AI (THUDM) · released 2023-06 · 6B params · chatglm2-6b-license
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁●▁▄▆▅▆█▆▆▆▂   #459 of 466     96%      5
+chat &amp; writing  ▁●▁▃▅▄▅█▆▆▇▃   #387 of 393     96%      5
 </pre>
 
-<details><summary>chat &amp; writing · #459 of 466 · 96% of its score</summary>
+<details><summary>chat &amp; writing · #387 of 393 · 96% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 

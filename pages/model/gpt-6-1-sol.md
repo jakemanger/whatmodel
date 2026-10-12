@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-09 · proprietary
 
-**score 85.3** ±0.8 · #3 of 949 · from 19 benchmark results across 6 sources
+**score 85.3** ±0.8 · #3 of 719 · from 19 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ OpenAI · released 2026-09 · proprietary
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄▃▂●    #4 of 334*     18%      2
-coding              ▁▁▁▃▆██▇▆▄▃●    #4 of 469*     11%      2
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●   #17 of 466*    5.0%      1
-math                ▁▂▃▅▆▅▄█▄▁▁●     #2 of 400     18%      3
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇█●   #13 of 150*    3.5%      1
+agent tasks         ▁▁▃▆█▆▅▅▅▄▃●    #4 of 300*     18%      2
+coding              ▁▁▁▃▆██▇▆▄▃●    #4 of 458*     11%      2
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #17 of 393*    5.0%      1
+math                ▁▂▃▅▆▅▄█▄▁▁●     #2 of 398     18%      3
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇█●   #13 of 147*    3.5%      1
 </pre>
 
-<details><summary>agent tasks · #4 of 334 · 18% of its score</summary>
+<details><summary>agent tasks · #4 of 300 · 18% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md) here, though they rank higher overall. Trails [Claude Sonnet 5.5](claude-sonnet-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #4 of 469 · 11% of its score</summary>
+<details><summary>coding · #4 of 458 · 11% of its score</summary>
 
 Trails [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #17 of 466 · 5.0% of its score</summary>
+<details><summary>chat &amp; writing · #17 of 393 · 5.0% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #2 of 400 · 18% of its score</summary>
+<details><summary>math · #2 of 398 · 18% of its score</summary>
 
 Beats [Claude Opus 5.5](claude-opus-5-5.md) here, though they rank higher overall.
 
@@ -69,7 +69,7 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #13 of 150 · 3.5% of its score</summary>
+<details><summary>vision &amp; documents · #13 of 147 · 3.5% of its score</summary>
 
 Trails [Claude Opus 4.7](claude-opus-4-7.md), [Muse Spark 1.2](muse-spark-1-2.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md) here, though they rank lower overall.
 

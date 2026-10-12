@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 44.9** ±1.9 · #588 of 949 · from 4 benchmark results across 3 sources
+**score 44.9** ±1.9 · #444 of 719 · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Hugging Face · released 2024-04 · 141B params (39B active) · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #341 of 466     74%      3
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #296 of 393     74%      3
 </pre>
 
-<details><summary>chat &amp; writing · #341 of 466 · 74% of its score</summary>
+<details><summary>chat &amp; writing · #296 of 393 · 74% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 

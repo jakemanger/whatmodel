@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-08 · 31.6B params (3.6B active) · openmdw-1.1
 
-**score 62.2** ±2.2 · #187 of 949 · from 3 benchmark results across 2 sources
+**score 62.2** ±2.2 · #174 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ NVIDIA · released 2026-08 · 31.6B params (3.6B active) · openmdw-1.1
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆██▇●▄▃▁   #127 of 469*     37%      1
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #165 of 466*     42%      1
+coding          ▁▁▁▃▆██▇●▄▃▁   #126 of 458*     37%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #158 of 393*     42%      1
 </pre>
 
-<details><summary>coding · #127 of 469 · 37% of its score</summary>
+<details><summary>coding · #126 of 458 · 37% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #165 of 466 · 42% of its score</summary>
+<details><summary>chat &amp; writing · #158 of 393 · 42% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 

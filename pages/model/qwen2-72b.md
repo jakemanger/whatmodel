@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 72.71B params · tongyi-qianwen
 
-**score 50.5** ±0.5 · #424 of 949 · from 29 benchmark results across 20 sources
+**score 50.5** ±0.5 · #333 of 719 · from 29 benchmark results across 20 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Alibaba · released 2024-06 · 72.71B params · tongyi-qianwen
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁   #258 of 469     17%      4
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #286 of 466     22%      4
-math            ▁▂▃▅●▅▄█▄▁▁▁   #277 of 400     18%      6
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #255 of 458     17%      4
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #263 of 393     22%      4
+math            ▁▂▃▅●▅▄█▄▁▁▁   #275 of 398     18%      6
 </pre>
 
-<details><summary>coding · #258 of 469 · 17% of its score</summary>
+<details><summary>coding · #255 of 458 · 17% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #286 of 466 · 22% of its score</summary>
+<details><summary>chat &amp; writing · #263 of 393 · 22% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #277 of 400 · 18% of its score</summary>
+<details><summary>math · #275 of 398 · 18% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 

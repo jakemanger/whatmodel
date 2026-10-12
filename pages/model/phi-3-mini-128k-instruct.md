@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 3.82B params · mit
 
-**score 39.3** ±1.6 · #723 of 949 · from 10 benchmark results across 7 sources
+**score 39.3** ±1.6 · #541 of 719 · from 10 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Microsoft · released 2024-04 · 3.82B params · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁   #325 of 469     11%      4
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #426 of 466     77%      3
+coding          ▁▁▁▃▆●█▇▆▄▃▁   #321 of 458     11%      4
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #363 of 393     77%      3
 </pre>
 
-<details><summary>coding · #325 of 469 · 11% of its score</summary>
+<details><summary>coding · #321 of 458 · 11% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #426 of 466 · 77% of its score</summary>
+<details><summary>chat &amp; writing · #363 of 393 · 77% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 

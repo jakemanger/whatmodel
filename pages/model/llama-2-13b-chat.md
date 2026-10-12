@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 13.02B params · llama2
 
-**score 33.4** ±0.9 · #821 of 949 · from 28 benchmark results across 15 sources
+**score 33.4** ±0.9 · #614 of 719 · from 28 benchmark results across 15 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Meta · released 2023-07 · 13.02B params · llama2
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁●▃▆██▇▆▄▃▁   #456 of 469*    5.4%      1
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂    #421 of 466     34%      6
-math            ●▂▃▅▆▅▄█▄▁▁▁   #396 of 400*    7.0%      1
+coding          ▁▁●▃▆██▇▆▄▃▁   #446 of 458*    5.4%      1
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃    #359 of 393     34%      6
+math            ●▂▃▅▆▅▄█▄▁▁▁   #394 of 398*    7.0%      1
 </pre>
 
-<details><summary>coding · #456 of 469 · 5.4% of its score</summary>
+<details><summary>coding · #446 of 458 · 5.4% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Gemma 2B IT](gemma-2b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                       result  vs the others in its run  difficulty         
 
 </details>
 
-<details><summary>chat &amp; writing · #421 of 466 · 34% of its score</summary>
+<details><summary>chat &amp; writing · #359 of 393 · 34% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Code Llama 34B Instruct](codellama-34b-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                                      result  vs the others 
 
 </details>
 
-<details><summary>math · #396 of 400 · 7.0% of its score</summary>
+<details><summary>math · #394 of 398 · 7.0% of its score</summary>
 
 Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

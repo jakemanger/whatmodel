@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 8.8B params · apache-2.0
 
-**score 55.2** ±1.1 · #308 of 949 · from 11 benchmark results across 4 sources
+**score 55.2** ±1.1 · #259 of 719 · from 11 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Mistral · released 2025-12 · 8.8B params · apache-2.0
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆██●▆▄▃▁   #148 of 469*     10%      1
+coding  ▁▁▁▃▆██●▆▄▃▁   #147 of 458*     10%      1
 math    █·····●····█        #2 of 3     39%      2
 </pre>
 
-<details><summary>coding · #148 of 469 · 10% of its score</summary>
+<details><summary>coding · #147 of 458 · 10% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall.
 

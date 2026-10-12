@@ -6,7 +6,7 @@
 
 LLaVA (lmms-lab) · released 2024-08 · 73.2B params · apache-2.0
 
-**score 44.3** ±2.9 · #600 of 949 · from 3 benchmark results across 3 sources
+**score 44.3** ±2.9 · #450 of 719 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ LLaVA (lmms-lab) · released 2024-08 · 73.2B params · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄   #140 of 150     96%      3
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄   #138 of 147     96%      3
 </pre>
 
-<details><summary>vision &amp; documents · #140 of 150 · 96% of its score</summary>
+<details><summary>vision &amp; documents · #138 of 147 · 96% of its score</summary>
 
 Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 

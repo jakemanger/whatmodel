@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 20.07B params · apache-2.0
 
-**score 44.0** ±1.2 · #613 of 949 · from 7 benchmark results across 3 sources
+**score 44.0** ±1.2 · #460 of 719 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ IBM · released 2024-04 · 20.07B params · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #333 of 469     63%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #329 of 458     63%      3
 </pre>
 
-<details><summary>coding · #333 of 469 · 63% of its score</summary>
+<details><summary>coding · #329 of 458 · 63% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 

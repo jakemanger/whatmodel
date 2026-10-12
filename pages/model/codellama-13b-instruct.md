@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 13.02B params · llama2
 
-**score 38.5** ±0.7 · #738 of 949 · from 14 benchmark results across 5 sources
+**score 38.5** ±0.7 · #553 of 719 · from 14 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Meta · released 2023-08 · 13.02B params · llama2
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁    #386 of 469     65%      6
-math    ▁▂●▅▆▅▄█▄▁▁▁   #370 of 400*    2.5%      1
+coding  ▁▁▁▃●██▇▆▄▃▁    #379 of 458     65%      6
+math    ▁▂●▅▆▅▄█▄▁▁▁   #368 of 398*    2.5%      1
 </pre>
 
-<details><summary>coding · #386 of 469 · 65% of its score</summary>
+<details><summary>coding · #379 of 458 · 65% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #370 of 400 · 2.5% of its score</summary>
+<details><summary>math · #368 of 398 · 2.5% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md), [OLMo 2 1B Instruct (0425)](olmo-2-1b.md), [Stable Code 3B](stable-code-3b.md) here, though they rank lower overall.
 

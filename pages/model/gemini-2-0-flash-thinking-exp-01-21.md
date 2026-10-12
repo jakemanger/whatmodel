@@ -14,12 +14,12 @@ Google · released 2025-01 · proprietary
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▆▅▄▄▃▂▁   #263 of 374*    4.1%      1
-coding       ▁▁▁▃▅▇●▇▅▄▂▁   #274 of 549*     45%      1
-math         ▁▂▃▅▇▅●█▄▁▁▁   #176 of 464*     17%      1
+agent tasks  ▁▁▂▆●▆▅▄▄▃▂▁   #246 of 340*    4.1%      1
+coding       ▁▁▁▃▅▇●▇▅▄▃▁   #263 of 524*     45%      1
+math         ▁▂▃▅▇▅●█▄▁▁▁   #175 of 462*     17%      1
 </pre>
 
-<details><summary>agent tasks · #263 of 374 · 4.1% of its score</summary>
+<details><summary>agent tasks · #246 of 340 · 4.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #274 of 549 · 45% of its score</summary>
+<details><summary>coding · #263 of 524 · 45% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #176 of 464 · 17% of its score</summary>
+<details><summary>math · #175 of 462 · 17% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Granite 4.2 3B](granite-4-2-3b.md) here, though they rank lower overall.
 

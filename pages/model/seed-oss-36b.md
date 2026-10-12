@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-08 · 36.2B params · apache-2.0
 
-**score 62.6** ±1.0 · #182 of 949 · from 21 benchmark results across 2 sources
+**score 62.6** ±1.0 · #169 of 719 · from 21 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ ByteDance Seed · released 2025-08 · 36.2B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▄▄▃▂▁    #139 of 334     15%      4
-coding          ▁▁▁▃▆██▇●▄▃▁    #123 of 469     12%      3
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #200 of 466*    1.6%      1
-math            ▁▂▃▅▆▅▄●▄▁▁▁    #140 of 400     20%      3
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #136 of 300     15%      4
+coding          ▁▁▁▃▆██▇●▄▃▁    #122 of 458     12%      3
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #191 of 393*    1.6%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁    #140 of 398     20%      3
 </pre>
 
-<details><summary>agent tasks · #139 of 334 · 15% of its score</summary>
+<details><summary>agent tasks · #136 of 300 · 15% of its score</summary>
 
-Beats [watt-tool-70B](watt-tool-70b.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
@@ -34,7 +34,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #123 of 469 · 12% of its score</summary>
+<details><summary>coding · #122 of 458 · 12% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kimi K2 Thinking](kimi-k2-thinking.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #200 of 466 · 1.6% of its score</summary>
+<details><summary>chat &amp; writing · #191 of 393 · 1.6% of its score</summary>
 
 Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #140 of 400 · 20% of its score</summary>
+<details><summary>math · #140 of 398 · 20% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
 

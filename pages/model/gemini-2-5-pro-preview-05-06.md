@@ -14,13 +14,13 @@ Google · released 2025-05 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▆▅▄▄▃▂▁   #254 of 374*    2.1%      1
-coding              ▁▁▁▃▅▇█▇●▄▂▁    #106 of 549     41%      3
-math                ▁▂▃▅▇▅▅●▄▁▁▁   #109 of 464*    7.3%      1
-vision &amp; documents  ▁▁▃▃▂▃▅▅●▇█▃    #87 of 199*    1.9%      1
+agent tasks         ▁▁▂▆●▆▅▄▄▃▂▁   #238 of 340*    2.1%      1
+coding              ▁▁▁▃▅▇█▇●▄▃▁    #104 of 524     41%      3
+math                ▁▂▃▅▇▅▅●▄▁▁▁   #109 of 462*    7.3%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #84 of 182*    1.9%      1
 </pre>
 
-<details><summary>agent tasks · #254 of 374 · 2.1% of its score</summary>
+<details><summary>agent tasks · #238 of 340 · 2.1% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #106 of 549 · 41% of its score</summary>
+<details><summary>coding · #104 of 524 · 41% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [o4-mini](o4-mini.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #109 of 464 · 7.3% of its score</summary>
+<details><summary>math · #109 of 462 · 7.3% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ test          result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #87 of 199 · 1.9% of its score</summary>
+<details><summary>vision &amp; documents · #84 of 182 · 1.9% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [GPT-4.1](gpt-4-1.md), [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank lower overall.
 

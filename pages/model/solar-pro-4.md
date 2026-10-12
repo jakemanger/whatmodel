@@ -6,7 +6,7 @@
 
 Upstage · released 2026-08 · closed weights
 
-**score 64.6** ±1.5 · #159 of 949 · from 3 benchmark results across 1 source
+**score 64.6** ±1.5 · #148 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Upstage · released 2026-08 · closed weights
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▄▄▃▂▁   #119 of 334*     42%      1
-coding          ▁▁▁▃▆██▇●▄▃▁   #102 of 469*     37%      1
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #126 of 466*     21%      1
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #118 of 300*     42%      1
+coding          ▁▁▁▃▆██▇●▄▃▁   #101 of 458*     37%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #123 of 393*     21%      1
 </pre>
 
-<details><summary>agent tasks · #119 of 334 · 42% of its score</summary>
+<details><summary>agent tasks · #118 of 300 · 42% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                     result  vs the others in its run  diffi
 
 </details>
 
-<details><summary>coding · #102 of 469 · 37% of its score</summary>
+<details><summary>coding · #101 of 458 · 37% of its score</summary>
 
 Beats [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                       result  vs the others in its run   difficulty  counts
 
 </details>
 
-<details><summary>chat &amp; writing · #126 of 466 · 21% of its score</summary>
+<details><summary>chat &amp; writing · #123 of 393 · 21% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [MiMo-V2-Flash (309B-A15B)](mimo-v2-flash.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Cohere · released 2024-10 · 32.3B params · cc-by-nc-4.0
 
-**score 51.7** ±1.8 · #397 of 949 · from 10 benchmark results across 7 sources
+**score 51.7** ±1.8 · #316 of 719 · from 10 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Cohere · released 2024-10 · 32.3B params · cc-by-nc-4.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #274 of 466*     52%      2
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #254 of 393*     52%      2
 </pre>
 
-<details><summary>chat &amp; writing · #274 of 466 · 52% of its score</summary>
+<details><summary>chat &amp; writing · #254 of 393 · 52% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 

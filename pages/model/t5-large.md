@@ -6,7 +6,7 @@
 
 Google · released 2019-10 · 0.738B params · apache-2.0
 
-**score 48.1** ±8.6 · #496 of 949 · from 3 benchmark results across 1 source
+**score 48.1** ±8.6 · #380 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 

@@ -14,13 +14,13 @@ Meituan · released 2025-09 · 560B params (27B active) · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂▆█▆▅●▄▃▂▁    #104 of 374     16%      4
-coding          ▁▁▁▃▅▇█▇▅●▂▁    #59 of 549*    5.9%      1
-chat &amp; writing  ▁▁▁▃▅▅▆█▆●▆▂   #166 of 579*    3.0%      1
-math            ▁▂▃▅▇▅▅●▄▁▁▁     #76 of 464     30%      4
+agent tasks     ▁▁▂▆█▆▅●▄▃▂▁    #104 of 340     16%      4
+coding          ▁▁▁▃▅▇█▇▅●▃▁    #57 of 524*    5.9%      1
+chat &amp; writing  ▁▁▁▃▅▄▆█▇●▇▃   #147 of 463*    3.0%      1
+math            ▁▂▃▅▇▅▅●▄▁▁▁     #76 of 462     30%      4
 </pre>
 
-<details><summary>agent tasks · #104 of 374 · 16% of its score</summary>
+<details><summary>agent tasks · #104 of 340 · 16% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                    result  vs the others in its run    difficulty          
 
 </details>
 
-<details><summary>coding · #59 of 549 · 5.9% of its score</summary>
+<details><summary>coding · #57 of 524 · 5.9% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #166 of 579 · 3.0% of its score</summary>
+<details><summary>chat &amp; writing · #147 of 463 · 3.0% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #76 of 464 · 30% of its score</summary>
+<details><summary>math · #76 of 462 · 30% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md), [EXAONE 4.5 33B](exaone-4-5-33b.md) here, though they rank lower overall.
 

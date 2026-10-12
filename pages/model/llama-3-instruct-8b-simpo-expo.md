@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-05 · 8.03B params · llama3
 
-**score 50.8** ±1.4 · #419 of 949 · from 3 benchmark results across 3 sources
+**score 50.8** ±1.4 · #328 of 719 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Chujie Zheng (ExPO) · released 2024-05 · 8.03B params · llama3
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #245 of 466*     75%      1
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #226 of 393*     75%      1
 </pre>
 
-<details><summary>chat &amp; writing · #245 of 466 · 75% of its score</summary>
+<details><summary>chat &amp; writing · #226 of 393 · 75% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 

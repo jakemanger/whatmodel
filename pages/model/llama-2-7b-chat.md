@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 6.74B params · llama2
 
-**score 29.7** ±0.9 · #861 of 949 · from 25 benchmark results across 17 sources
+**score 29.7** ±0.9 · #644 of 719 · from 25 benchmark results across 17 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Meta · released 2023-07 · 6.74B params · llama2
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁●▁▃▆██▇▆▄▃▁   #463 of 469*    5.6%      1
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂    #444 of 466     38%      7
-math            ▁●▃▅▆▅▄█▄▁▁▁   #388 of 400*    2.7%      1
+coding          ▁●▁▃▆██▇▆▄▃▁   #452 of 458*    5.6%      1
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃    #377 of 393     38%      7
+math            ▁●▃▅▆▅▄█▄▁▁▁   #386 of 398*    2.7%      1
 </pre>
 
-<details><summary>coding · #463 of 469 · 5.6% of its score</summary>
+<details><summary>coding · #452 of 458 · 5.6% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md), [Falcon3 1B Instruct](falcon3-1b.md) here, though they rank lower overall.
 
@@ -30,9 +30,9 @@ test                       result  vs the others in its run  difficulty         
 
 </details>
 
-<details><summary>chat &amp; writing · #444 of 466 · 38% of its score</summary>
+<details><summary>chat &amp; writing · #377 of 393 · 38% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [Minotaur 13B (fixed)](minotaur-13b-fixed.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md), [Nous-Hermes-13b](nous-hermes-13b.md), [Qwen1.5 4B Chat](qwen1-5-4b-chat.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run   difficulty                counts  why
@@ -47,7 +47,7 @@ test                                                      result  vs the others 
 
 </details>
 
-<details><summary>math · #388 of 400 · 2.7% of its score</summary>
+<details><summary>math · #386 of 398 · 2.7% of its score</summary>
 
 Beats [Qwen2-VL 2B Instruct](qwen2-vl-2b.md), [Code Llama 7B (base)](codellama-7b.md), [Llama 2 13B Chat](llama-2-13b-chat.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.1 1B-A400M Instruct](granite-3-1-1b-a400m.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 

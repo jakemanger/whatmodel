@@ -14,12 +14,12 @@ OpenAI · released 2026-05 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▅▆█▆▆●▂   #34 of 579*    9.2%      1
-math                ▁▂▃▅▇▅▅●▄▁▁▁   #138 of 464     59%      3
-vision &amp; documents  ▁▁▃▃▂▃▅▅▇▇●▃    #30 of 199     15%      3
+chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃   #32 of 463*    9.2%      1
+math                ▁▂▃▅▇▅▅●▄▁▁▁   #138 of 462     59%      3
+vision &amp; documents  ▁▁▃▃▂▃▅▄▇▇●▃    #30 of 182     15%      3
 </pre>
 
-<details><summary>chat &amp; writing · #34 of 579 · 9.2% of its score</summary>
+<details><summary>chat &amp; writing · #32 of 463 · 9.2% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall.
 
@@ -30,7 +30,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #138 of 464 · 59% of its score</summary>
+<details><summary>math · #138 of 462 · 59% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                       result  vs the others in its run   difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #30 of 199 · 15% of its score</summary>
+<details><summary>vision &amp; documents · #30 of 182 · 15% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall.
 

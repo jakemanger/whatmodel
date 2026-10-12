@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-04 · closed weights
 
-**score 71.6** ±0.8 · #72 of 949 · from 15 benchmark results across 6 sources
+**score 71.6** ±0.8 · #69 of 719 · from 15 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ SpaceXAI (xAI) · released 2026-04 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▄▃▂▁   #107 of 334*    3.8%      1
-coding              ▁▁▁▃▆██▇●▄▃▁   #100 of 469*     10%      1
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂    #32 of 466*    5.8%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁     #53 of 400     45%      3
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄    #41 of 150*    6.0%      2
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁   #106 of 300*    3.8%      1
+coding              ▁▁▁▃▆██▇●▄▃▁    #99 of 458*     10%      1
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #32 of 393*    5.8%      1
+math                ▁▂▃▅▆▅▄█●▁▁▁     #53 of 398     45%      3
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #41 of 147*    6.0%      2
 </pre>
 
-<details><summary>agent tasks · #107 of 334 · 3.8% of its score</summary>
+<details><summary>agent tasks · #106 of 300 · 3.8% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #100 of 469 · 10% of its score</summary>
+<details><summary>coding · #99 of 458 · 10% of its score</summary>
 
 Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                       result  vs the others in its run   difficulty  counts
 
 </details>
 
-<details><summary>chat &amp; writing · #32 of 466 · 5.8% of its score</summary>
+<details><summary>chat &amp; writing · #32 of 393 · 5.8% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall.
 
@@ -54,7 +54,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #53 of 400 · 45% of its score</summary>
+<details><summary>math · #53 of 398 · 45% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [A.X K2 (688B-A33B)](ax-k2.md) here, though they rank lower overall.
 
@@ -67,7 +67,7 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #41 of 150 · 6.0% of its score</summary>
+<details><summary>vision &amp; documents · #41 of 147 · 6.0% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [Qwen3.6 Plus](qwen3-6-plus.md) here, though they rank lower overall.
 

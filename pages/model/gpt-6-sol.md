@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-09 · closed weights
 
-**score 82.6** ±0.7 · #7 of 949 · from 20 benchmark results across 7 sources
+**score 82.6** ±0.7 · #7 of 719 · from 20 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ OpenAI · released 2026-09 · closed weights
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▄▄▃▂●     #7 of 334     21%      4
-coding          ▁▁▁▃▆██▇▆▄●▁     #7 of 469     13%      3
-chat &amp; writing  ▁▁▁▄▆▅▆█▆▆●▂   #43 of 466*    4.6%      1
-math            ▁▂▃▅▆▅▄█▄▁●▁     #5 of 400     25%      3
+agent tasks     ▁▁▃▆█▆▅▅▅▄▃●     #7 of 300     21%      4
+coding          ▁▁▁▃▆██▇▆▄●▁     #7 of 458     13%      3
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #43 of 393*    4.6%      1
+math            ▁▂▃▅▆▅▄█▄▁●▁     #5 of 398     25%      3
 </pre>
 
-<details><summary>agent tasks · #7 of 334 · 21% of its score</summary>
+<details><summary>agent tasks · #7 of 300 · 21% of its score</summary>
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
@@ -32,7 +32,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #7 of 469 · 13% of its score</summary>
+<details><summary>coding · #7 of 458 · 13% of its score</summary>
 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
@@ -43,7 +43,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #43 of 466 · 4.6% of its score</summary>
+<details><summary>chat &amp; writing · #43 of 393 · 4.6% of its score</summary>
 
 Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5.1](glm-5-1.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #5 of 400 · 25% of its score</summary>
+<details><summary>math · #5 of 398 · 25% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [Claude Opus 5](claude-opus-5.md) here, though they rank higher overall.
 

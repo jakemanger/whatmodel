@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 13B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 37.4** ±1.3 · #765 of 949 · from 8 benchmark results across 3 sources
+**score 37.4** ±1.3 · #571 of 719 · from 8 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Allen Institute for AI · released 2023-11 · 13B params · AI2 ImpACT Low-risk;
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁●▆██▇▆▄▃▁   #441 of 469*     13%      1
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #407 of 466*     40%      2
-math            ▁▂▃●▆▅▄█▄▁▁▁   #311 of 400*    8.2%      1
+coding          ▁▁▁●▆██▇▆▄▃▁   #431 of 458*     13%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #346 of 393*     40%      2
+math            ▁▂▃●▆▅▄█▄▁▁▁   #309 of 398*    8.2%      1
 </pre>
 
-<details><summary>coding · #441 of 469 · 13% of its score</summary>
+<details><summary>coding · #431 of 458 · 13% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>chat &amp; writing · #407 of 466 · 40% of its score</summary>
+<details><summary>chat &amp; writing · #346 of 393 · 40% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #311 of 400 · 8.2% of its score</summary>
+<details><summary>math · #309 of 398 · 8.2% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md), [OLMo 2 32B Instruct (0325)](olmo-2-32b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 

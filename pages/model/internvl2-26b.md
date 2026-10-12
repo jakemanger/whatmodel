@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 25.5B params · mit
 
-**score 46.8** ±1.5 · #527 of 949 · from 17 benchmark results across 5 sources
+**score 46.8** ±1.5 · #402 of 719 · from 17 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 25.5B params · mit
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▂▃▅●▅▄█▄▁▁▁   #261 of 400*    6.3%      1
-vision &amp; documents  ▁▁▃●▁▃▄▃▆▇█▄    #128 of 150     89%     14
+math                ▁▂▃▅●▅▄█▄▁▁▁   #259 of 398*    6.3%      1
+vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄    #126 of 147     89%     14
 </pre>
 
-<details><summary>math · #261 of 400 · 6.3% of its score</summary>
+<details><summary>math · #259 of 398 · 6.3% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #128 of 150 · 89% of its score</summary>
+<details><summary>vision &amp; documents · #126 of 147 · 89% of its score</summary>
 
 Beats [Nova Pro](nova-pro.md), [Nova Lite](nova-lite.md) here, though they rank higher overall.
 

@@ -6,7 +6,7 @@
 
 Meta · released 2025-04 · 109B params (17B active) · llama-4
 
-**score 54.3** ±1.0 · #338 of 949 · from 19 benchmark results across 14 sources
+**score 54.3** ±1.0 · #280 of 719 · from 19 benchmark results across 14 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Meta · released 2025-04 · 109B params (17B active) · llama-4
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▄▄▃▂▁    #300 of 334     11%      4
-chat &amp; writing      ▁▁▁▄▆▅▆●▆▆▆▂   #203 of 466*    9.3%      1
-math                ▁▂▃▅▆●▄█▄▁▁▁   #224 of 400*     29%      2
-vision &amp; documents  ▁▁▃▂▁▃●▃▆▇█▄   #102 of 150*    8.6%      2
-web search          ▂▂▂▆▄●▃▃▁▁·▁     #33 of 81*    3.4%      1
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁    #271 of 300     11%      4
+chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #193 of 393*    9.3%      1
+math                ▁▂▃▅▆●▄█▄▁▁▁   #222 of 398*     29%      2
+vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄   #100 of 147*    8.6%      2
+web search          ▂▁▂▆▄●▃▃▁▁·▁     #33 of 80*    3.4%      1
 </pre>
 
-<details><summary>agent tasks · #300 of 334 · 11% of its score</summary>
+<details><summary>agent tasks · #271 of 300 · 11% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #203 of 466 · 9.3% of its score</summary>
+<details><summary>chat &amp; writing · #193 of 393 · 9.3% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #224 of 400 · 29% of its score</summary>
+<details><summary>math · #222 of 398 · 29% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>vision &amp; documents · #102 of 150 · 8.6% of its score</summary>
+<details><summary>vision &amp; documents · #100 of 147 · 8.6% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank higher overall.
 
@@ -70,7 +70,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>web search · #33 of 81 · 3.4% of its score</summary>
+<details><summary>web search · #33 of 80 · 3.4% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [GPT-5.3-Codex](gpt-5-3-codex.md), [Qwen3.7 Max](qwen3-7-max.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 

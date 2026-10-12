@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-06 · 428B params (23B active) · minimax-community
 
-**score 70.2** ±1.0 · #82 of 949 · from 16 benchmark results across 8 sources
+**score 70.2** ±1.0 · #79 of 719 · from 16 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ MiniMax · released 2026-06 · 428B params (23B active) · minimax-community
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄●▃▂▁     #57 of 334     35%      5
-coding              ▁▁▁▃▆██▇▆●▃▁    #57 of 469*     21%      2
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂    #66 of 466*    8.8%      1
-math                ▁▂▃▅▆▅▄●▄▁▁▁   #139 of 400*    4.0%      1
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄     #59 of 150    9.1%      3
-web search          ▂▂▂▆●█▃▃▁▁·▁     #43 of 81*    2.8%      1
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁     #57 of 300     35%      5
+coding              ▁▁▁▃▆██▇▆●▃▁    #56 of 458*     21%      2
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #66 of 393*    8.8%      1
+math                ▁▂▃▅▆▅▄●▄▁▁▁   #139 of 398*    4.0%      1
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄     #59 of 147    9.1%      3
+web search          ▂▁▂▆●█▃▃▁▁·▁     #43 of 80*    2.8%      1
 </pre>
 
-<details><summary>agent tasks · #57 of 334 · 35% of its score</summary>
+<details><summary>agent tasks · #57 of 300 · 35% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [GPT-5.2](gpt-5-2.md), [Gemini 3.6 Flash](gemini-3-6-flash.md) here, though they rank higher overall.
 
@@ -37,7 +37,7 @@ test                                     result  vs the others in its run  diffi
 
 </details>
 
-<details><summary>coding · #57 of 469 · 21% of its score</summary>
+<details><summary>coding · #56 of 458 · 21% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #66 of 466 · 8.8% of its score</summary>
+<details><summary>chat &amp; writing · #66 of 393 · 8.8% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [Qwen3.8 27B](qwen3-8-27b.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [Gemma 4 31B](gemma-4-31b.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #139 of 400 · 4.0% of its score</summary>
+<details><summary>math · #139 of 398 · 4.0% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
 
@@ -71,7 +71,7 @@ test                      result  vs the others in its run    difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #59 of 150 · 9.1% of its score</summary>
+<details><summary>vision &amp; documents · #59 of 147 · 9.1% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Qwen3.6 Flash](qwen3-6-flash.md), [Qwen3.5 35B-A3B](qwen3-5-35b-a3b.md) here, though they rank lower overall.
 
@@ -84,7 +84,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>web search · #43 of 81 · 2.8% of its score</summary>
+<details><summary>web search · #43 of 80 · 2.8% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.7 Max](qwen3-7-max.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

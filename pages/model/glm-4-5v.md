@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-08 · 106B params (12B active) · mit
 
-**score 61.2** ±1.6 · #205 of 949 · from 12 benchmark results across 4 sources
+**score 61.2** ±1.6 · #184 of 719 · from 12 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Z.ai · released 2025-08 · 106B params (12B active) · mit
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▄▆▅▆█●▆▆▂   #161 of 466*     22%      1
-vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄     #90 of 150     68%      8
+chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #155 of 393*     22%      1
+vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄     #90 of 147     68%      8
 </pre>
 
-<details><summary>chat &amp; writing · #161 of 466 · 22% of its score</summary>
+<details><summary>chat &amp; writing · #155 of 393 · 22% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -29,9 +29,9 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #90 of 150 · 68% of its score</summary>
+<details><summary>vision &amp; documents · #90 of 147 · 68% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why

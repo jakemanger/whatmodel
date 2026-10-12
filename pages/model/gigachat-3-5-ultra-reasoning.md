@@ -6,7 +6,7 @@
 
 Sber · released 2026-09 · 438.09B params (28B active) · mit
 
-**score 66.7** ±1.4 · #124 of 949 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
+**score 66.7** ±1.4 · #119 of 719 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Sber · released 2026-09 · 438.09B params (28B active) · mit
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆●▄▄▃▂▁    #126 of 334     27%      3
-coding       ▁▁▁▃▆██▇●▄▃▁   #115 of 469*     22%      2
-math         ▁▂▃▅▆▅▄●▄▁▁▁     #88 of 400     42%      4
+agent tasks  ▁▁▃▆█▆●▅▅▄▃▁    #125 of 300     27%      3
+coding       ▁▁▁▃▆██▇●▄▃▁   #114 of 458*     22%      2
+math         ▁▂▃▅▆▅▄●▄▁▁▁     #88 of 398     42%      4
 </pre>
 
-<details><summary>agent tasks · #126 of 334 · 27% of its score</summary>
+<details><summary>agent tasks · #125 of 300 · 27% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>coding · #115 of 469 · 22% of its score</summary>
+<details><summary>coding · #114 of 458 · 22% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kimi K2 Thinking](kimi-k2-thinking.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #88 of 400 · 42% of its score</summary>
+<details><summary>math · #88 of 398 · 42% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md) here, though they rank lower overall.
 

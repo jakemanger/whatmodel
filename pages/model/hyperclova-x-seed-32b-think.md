@@ -14,13 +14,13 @@ NAVER Cloud · released 2025-12 · 33.31B params · hyperclovax
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆█▆●▄▄▃▂▁   #145 of 374     81%      5
-web search   ●▁▂▇▅█▃▄▁▂▁▁    #96 of 96*     12%      1
+agent tasks  ▁▁▂▆█▆●▄▄▃▂▁   #143 of 340     81%      5
+web search   ●·▂▇▅█▃▄▁▂▁▁    #92 of 92*     12%      1
 </pre>
 
-<details><summary>agent tasks · #145 of 374 · 81% of its score</summary>
+<details><summary>agent tasks · #143 of 340 · 81% of its score</summary>
 
-Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [watt-tool-70B](watt-tool-70b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
@@ -33,9 +33,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>web search · #96 of 96 · 12% of its score</summary>
+<details><summary>web search · #92 of 92 · 12% of its score</summary>
 
-Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [GPT-4o Search Preview (2025-03-11)](gpt-4o-search-preview.md) here, though they rank lower overall.
+Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why

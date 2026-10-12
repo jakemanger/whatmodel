@@ -14,10 +14,10 @@ DeepSeek · 685B params (37B active) · mit
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂▃▅▇▅▅█▄●▁▁   #20 of 464*     67%      2
+math  ▁▂▃▅▇▅▅█▄●▁▁   #20 of 462*     67%      2
 </pre>
 
-<details><summary>math · #20 of 464 · 67% of its score</summary>
+<details><summary>math · #20 of 462 · 67% of its score</summary>
 
 Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [Gemini 3.8 Flash](gemini-3-8-flash.md) here, though they rank higher overall.
 

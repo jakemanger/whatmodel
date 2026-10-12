@@ -14,10 +14,10 @@ Google · released 2023-05 · closed weights
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁●▅▅▆█▆▆▆▂   #535 of 579     98%      3
+chat &amp; writing  ▁▁▁●▅▄▆█▇▇▇▃   #429 of 463     98%      3
 </pre>
 
-<details><summary>chat &amp; writing · #535 of 579 · 98% of its score</summary>
+<details><summary>chat &amp; writing · #429 of 463 · 98% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 

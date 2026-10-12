@@ -14,12 +14,12 @@ OpenAI · released 2023-03 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅●█▇▅▄▂▁    #360 of 549     64%      4
-chat &amp; writing  ▁▁▁▃●▅▆█▆▆▆▂    #478 of 579     24%      3
-math            ▁▂▃▅▇●▅█▄▁▁▁   #254 of 464*    1.9%      1
+coding          ▁▁▁▃▅●█▇▅▄▃▁    #344 of 524     64%      4
+chat &amp; writing  ▁▁▁▃●▄▆█▇▇▇▃    #383 of 463     24%      3
+math            ▁▂▃▅▇●▅█▄▁▁▁   #252 of 462*    1.9%      1
 </pre>
 
-<details><summary>coding · #360 of 549 · 64% of its score</summary>
+<details><summary>coding · #344 of 524 · 64% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #478 of 579 · 24% of its score</summary>
+<details><summary>chat &amp; writing · #383 of 463 · 24% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #254 of 464 · 1.9% of its score</summary>
+<details><summary>math · #252 of 462 · 1.9% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 

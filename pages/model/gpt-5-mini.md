@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · closed weights
 
-**score 67.4** ±0.6 · #113 of 949 · from 53 benchmark results across 22 sources
+**score 67.4** ±0.6 · #109 of 719 · from 53 benchmark results across 22 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ OpenAI · released 2025-08 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▄▄▃▂▁    #122 of 334     37%     17
-coding              ▁▁▁▃▆██▇●▄▃▁    #111 of 469     19%      5
-chat &amp; writing      ▁▁▁▄▆▅▆█▆●▆▂   #124 of 466*    3.0%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁     #61 of 400     21%      7
-vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄     #85 of 150    7.8%      7
-web search          ▂▂●▆▄█▃▃▁▁·▁     #73 of 81*    1.7%      1
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁    #121 of 300     37%     17
+coding              ▁▁▁▃▆██▇●▄▃▁    #110 of 458     19%      5
+chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #121 of 393*    3.0%      1
+math                ▁▂▃▅▆▅▄█●▁▁▁     #61 of 398     21%      7
+vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄     #85 of 147    7.8%      7
+web search          ▂▁●▆▄█▃▃▁▁·▁     #73 of 80*    1.7%      1
 </pre>
 
-<details><summary>agent tasks · #122 of 334 · 37% of its score</summary>
+<details><summary>agent tasks · #121 of 300 · 37% of its score</summary>
 
 Beats [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #111 of 469 · 19% of its score</summary>
+<details><summary>coding · #110 of 458 · 19% of its score</summary>
 
 Beats [Grok 4.3](grok-4-3.md), [Qwen3.5 Plus](qwen3-5-plus.md), [DeepSeek V3.2](deepseek-v3-2.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
 
@@ -64,7 +64,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #124 of 466 · 3.0% of its score</summary>
+<details><summary>chat &amp; writing · #121 of 393 · 3.0% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
 
@@ -75,7 +75,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #61 of 400 · 21% of its score</summary>
+<details><summary>math · #61 of 398 · 21% of its score</summary>
 
 Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md) here, though they rank lower overall.
 
@@ -92,7 +92,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #85 of 150 · 7.8% of its score</summary>
+<details><summary>vision &amp; documents · #85 of 147 · 7.8% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Qwen3.5 4B](qwen3-5-4b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
 
@@ -109,7 +109,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>web search · #73 of 81 · 1.7% of its score</summary>
+<details><summary>web search · #73 of 80 · 1.7% of its score</summary>
 
 Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 

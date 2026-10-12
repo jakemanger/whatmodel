@@ -6,7 +6,7 @@
 
 uukuguy · released 2023-12 · apache-2.0
 
-**score 46.8** ±0.9 · #528 of 949 · from 3 benchmark results across 1 source
+**score 46.8** ±0.9 · #403 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ uukuguy · released 2023-12 · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #309 of 469    100%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #305 of 458    100%      3
 </pre>
 
-<details><summary>coding · #309 of 469 · 100% of its score</summary>
+<details><summary>coding · #305 of 458 · 100% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 

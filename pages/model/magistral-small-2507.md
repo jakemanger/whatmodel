@@ -6,7 +6,7 @@
 
 Mistral · released 2025-07 · 23.57B params · apache-2.0
 
-**score 54.5** ±1.5 · #331 of 949 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 54.5** ±1.5 · #274 of 719 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -15,7 +15,7 @@ Mistral · released 2025-07 · 23.57B params · apache-2.0
 <pre>
 task    vs the others          rank  counts  tests
 coding  █●········██       #3 of 4*     11%      1
-math    ▁▂▃▅▆●▄█▄▁▁▁   #207 of 400*     59%      2
+math    ▁▂▃▅▆●▄█▄▁▁▁   #205 of 398*     59%      2
 </pre>
 
 <details><summary>coding · #3 of 4 · 11% of its score</summary>
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #207 of 400 · 59% of its score</summary>
+<details><summary>math · #205 of 398 · 59% of its score</summary>
 
 Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 

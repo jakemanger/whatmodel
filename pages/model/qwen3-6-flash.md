@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · closed weights
 
-**score 66.2** ±1.3 · #134 of 949 · from 7 benchmark results across 2 sources
+**score 66.2** ±1.3 · #126 of 719 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Alibaba · released 2026-04 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▂▃▅▆▅▄●▄▁▁▁   #142 of 400*     61%      2
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄    #34 of 150*    1.3%      1
+math                ▁▂▃▅▆▅▄●▄▁▁▁   #142 of 398*     61%      2
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #34 of 147*    1.3%      1
 </pre>
 
-<details><summary>math · #142 of 400 · 61% of its score</summary>
+<details><summary>math · #142 of 398 · 61% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #34 of 150 · 1.3% of its score</summary>
+<details><summary>vision &amp; documents · #34 of 147 · 1.3% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall.
 

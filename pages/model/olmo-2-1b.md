@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2025-04 · 1.48B params · apache-2.0
 
-**score 32.6** ±1.5 · #831 of 949 · from 9 benchmark results across 2 sources
+**score 32.6** ±1.5 · #622 of 719 · from 9 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Allen Institute for AI · released 2025-04 · 1.48B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #394 of 466*     12%      2
-math            ▁▂●▅▆▅▄█▄▁▁▁   #364 of 400*     30%      2
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #336 of 393*     12%      2
+math            ▁▂●▅▆▅▄█▄▁▁▁   #362 of 398*     30%      2
 </pre>
 
-<details><summary>chat &amp; writing · #394 of 466 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #336 of 393 · 12% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #364 of 400 · 30% of its score</summary>
+<details><summary>math · #362 of 398 · 30% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 

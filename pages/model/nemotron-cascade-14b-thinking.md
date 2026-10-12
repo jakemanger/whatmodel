@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 14.77B params · nvidia-open-model-license
 
-**score 60.5** ±1.0 · #211 of 949 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.5** ±1.0 · #189 of 719 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ NVIDIA · released 2025-12 · 14.77B params · nvidia-open-model-license
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▄▄▃▂▁   #179 of 334*    7.3%      2
-coding          ▁▁▁▃▆██●▆▄▃▁    #167 of 469     56%      4
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #196 of 466*    1.7%      1
-math            ▁▂▃▅▆▅▄●▄▁▁▁   #121 of 400*     16%      2
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁   #169 of 300*    7.3%      2
+coding          ▁▁▁▃▆██●▆▄▃▁    #165 of 458     56%      4
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #187 of 393*    1.7%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁   #121 of 398*     16%      2
 </pre>
 
-<details><summary>agent tasks · #179 of 334 · 7.3% of its score</summary>
+<details><summary>agent tasks · #169 of 300 · 7.3% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                      result  vs the others in its run    difficulty        
 
 </details>
 
-<details><summary>coding · #167 of 469 · 56% of its score</summary>
+<details><summary>coding · #165 of 458 · 56% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md), [Qwen3-Next 80B-A3B Instruct](qwen3-next-80b-a3b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #196 of 466 · 1.7% of its score</summary>
+<details><summary>chat &amp; writing · #187 of 393 · 1.7% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -57,7 +57,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #121 of 400 · 16% of its score</summary>
+<details><summary>math · #121 of 398 · 16% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 

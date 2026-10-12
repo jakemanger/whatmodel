@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-08 · 4.15B params · mit
 
-**score 37.4** ±1.6 · #764 of 949 · from 21 benchmark results across 5 sources
+**score 37.4** ±1.6 · #570 of 719 · from 21 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Microsoft · released 2024-08 · 4.15B params · mit
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▄▆●▆█▆▆▆▂   #357 of 466*    5.0%      1
-math                ▁▂▃●▆▅▄█▄▁▁▁   #308 of 400*    3.0%      1
-vision &amp; documents  ●▁▃▂▁▃▄▃▆▇█▄    #147 of 150     72%     15
+chat &amp; writing      ▁▁▁▃▅●▅█▆▆▇▃   #306 of 393*    5.0%      1
+math                ▁▂▃●▆▅▄█▄▁▁▁   #306 of 398*    3.0%      1
+vision &amp; documents  ●▁▃▂▁▃▄▂▆▇█▄    #144 of 147     72%     15
 </pre>
 
-<details><summary>chat &amp; writing · #357 of 466 · 5.0% of its score</summary>
+<details><summary>chat &amp; writing · #306 of 393 · 5.0% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #308 of 400 · 3.0% of its score</summary>
+<details><summary>math · #306 of 398 · 3.0% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 
@@ -41,9 +41,9 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #147 of 150 · 72% of its score</summary>
+<details><summary>vision &amp; documents · #144 of 147 · 72% of its score</summary>
 
-Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md) here, though they rank higher overall. Trails [LLaVA-v1.6-Vicuna-13B](llava-v1-6-vicuna-13b.md) here, though they rank lower overall.
+Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128k-instruct.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why

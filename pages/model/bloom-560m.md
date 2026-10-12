@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 0.559B params · bigscience-bloom-rail-1.0
 
-**score 5.2** ±1.6 · #940 of 949 · from 12 benchmark results across 4 sources
+**score 5.2** ±1.6 · #711 of 719 · from 12 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ BigScience · released 2022-07 · 0.559B params · bigscience-bloom-rail-1.0
 
 <pre>
 task    vs the others      rank  counts  tests
-coding  ●··█·█·██··█   #6 of 6*    9.2%      1
+coding  ●···█··█··██   #5 of 5*    9.2%      1
 </pre>
 
-<details><summary>coding · #6 of 6 · 9.2% of its score</summary>
+<details><summary>coding · #5 of 5 · 9.2% of its score</summary>
 
 <pre>
 test             result  vs the others in its run  difficulty      counts  why

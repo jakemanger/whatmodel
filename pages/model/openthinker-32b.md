@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-02 · 32.76B params · apache-2.0
 
-**score 54.6** ±1.3 · #330 of 949 · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 54.6** ±1.3 · #273 of 719 · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Open Thoughts · released 2025-02 · 32.76B params · apache-2.0
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆██●▆▄▃▁   #180 of 469*    4.6%      1
-math    ▁▂▃▅▆▅●█▄▁▁▁    #182 of 400     59%      3
+coding  ▁▁▁▃▆██●▆▄▃▁   #178 of 458*    4.6%      1
+math    ▁▂▃▅▆▅●█▄▁▁▁    #180 of 398     59%      3
 </pre>
 
-<details><summary>coding · #180 of 469 · 4.6% of its score</summary>
+<details><summary>coding · #178 of 458 · 4.6% of its score</summary>
 
 Beats [Qwen3.5 9B](qwen3-5-9b.md), [Devstral 2 (2512)](devstral-2.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                    result  vs the others in its run  difficulty        coun
 
 </details>
 
-<details><summary>math · #182 of 400 · 59% of its score</summary>
+<details><summary>math · #180 of 398 · 59% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 

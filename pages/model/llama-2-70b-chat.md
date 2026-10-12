@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 68.98B params · llama2
 
-**score 38.5** ±0.8 · #737 of 949 · from 28 benchmark results across 16 sources
+**score 38.5** ±0.8 · #552 of 719 · from 28 benchmark results across 16 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Meta · released 2023-07 · 68.98B params · llama2
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁●▆██▇▆▄▃▁   #431 of 469*    4.3%      1
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂    #393 of 466     39%      7
-math            ▁●▃▅▆▅▄█▄▁▁▁    #376 of 400    8.9%      3
+coding          ▁▁▁●▆██▇▆▄▃▁   #421 of 458*    4.3%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #335 of 393     39%      7
+math            ▁●▃▅▆▅▄█▄▁▁▁    #374 of 398    8.9%      3
 </pre>
 
-<details><summary>coding · #431 of 469 · 4.3% of its score</summary>
+<details><summary>coding · #421 of 458 · 4.3% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                       result  vs the others in its run  difficulty         
 
 </details>
 
-<details><summary>chat &amp; writing · #393 of 466 · 39% of its score</summary>
+<details><summary>chat &amp; writing · #335 of 393 · 39% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                                      result  vs the others 
 
 </details>
 
-<details><summary>math · #376 of 400 · 8.9% of its score</summary>
+<details><summary>math · #374 of 398 · 8.9% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [Gemma 2B (base)](gemma-2b-base.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [LFM2 350M](lfm2-350m.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-02 · 3.95B params · tongyi-qianwen-research
 
-**score 31.9** ±1.6 · #839 of 949 · from 5 benchmark results across 5 sources
+**score 31.9** ±1.6 · #627 of 719 · from 5 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Alibaba · released 2024-02 · 3.95B params · tongyi-qianwen-research
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁●▄▆▅▆█▆▆▆▂   #449 of 466*     46%      2
+chat &amp; writing  ▁▁●▃▅▄▅█▆▆▇▃   #380 of 393*     46%      2
 </pre>
 
-<details><summary>chat &amp; writing · #449 of 466 · 46% of its score</summary>
+<details><summary>chat &amp; writing · #380 of 393 · 46% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 

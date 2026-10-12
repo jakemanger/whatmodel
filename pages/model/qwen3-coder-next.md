@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · 79.7B params (3B active) · apache-2.0
 
-**score 66.9** ±1.7 · #122 of 949 · from 5 benchmark results across 2 sources
+**score 66.9** ±1.7 · #118 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -15,8 +15,8 @@ Alibaba · released 2026-02 · 79.7B params (3B active) · apache-2.0
 <pre>
 task         vs the others            rank  counts  tests
 agent tasks                 not ranked yet       —      4
-coding       ▁▁▁▃▆██●▆▄▃▁     #175 of 469*    8.6%      4
-math         ▁▂▃▅▆▅▄█●▁▁▁      #63 of 400*     17%      1
+coding       ▁▁▁▃▆██●▆▄▃▁     #173 of 458*    8.6%      4
+math         ▁▂▃▅▆▅▄█●▁▁▁      #63 of 398*     17%      1
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
@@ -31,7 +31,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #175 of 469 · 8.6% of its score</summary>
+<details><summary>coding · #173 of 458 · 8.6% of its score</summary>
 
 Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #63 of 400 · 17% of its score</summary>
+<details><summary>math · #63 of 398 · 17% of its score</summary>
 
 Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md) here, though they rank lower overall.
 

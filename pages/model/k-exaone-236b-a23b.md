@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-12 · 236B params (23B active) · k-exaone
 
-**score 65.3** ±0.9 · #151 of 949 · from 25 benchmark results across 3 sources
+**score 65.3** ±0.9 · #141 of 719 · from 25 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ LG AI Research · released 2025-12 · 236B params (23B active) · k-exaone
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▄▄▃▂▁    #123 of 334     24%      7
-coding          ▁▁▁▃▆██▇●▄▃▁    #126 of 469     14%      3
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #136 of 466*    3.9%      1
-math            ▁▂▃▅▆▅▄●▄▁▁▁     #97 of 400     31%      5
-web search      ▂●▂▆▄█▃▃▁▁·▁     #76 of 81*    3.9%      1
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #122 of 300     24%      7
+coding          ▁▁▁▃▆██▇●▄▃▁    #125 of 458     14%      3
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #132 of 393*    3.9%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁     #97 of 398     31%      5
+web search      ▂●▂▆▄█▃▃▁▁·▁     #76 of 80*    3.9%      1
 </pre>
 
-<details><summary>agent tasks · #123 of 334 · 24% of its score</summary>
+<details><summary>agent tasks · #122 of 300 · 24% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #126 of 469 · 14% of its score</summary>
+<details><summary>coding · #125 of 458 · 14% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #136 of 466 · 3.9% of its score</summary>
+<details><summary>chat &amp; writing · #132 of 393 · 3.9% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #97 of 400 · 31% of its score</summary>
+<details><summary>math · #97 of 398 · 31% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 
@@ -77,7 +77,7 @@ test                      result  vs the others in its run  difficulty        co
 
 </details>
 
-<details><summary>web search · #76 of 81 · 3.9% of its score</summary>
+<details><summary>web search · #76 of 80 · 3.9% of its score</summary>
 
 Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 0.49B params · apache-2.0
 
-**score 26.5** ±1.8 · #886 of 949 · from 12 benchmark results across 7 sources
+**score 26.5** ±1.8 · #666 of 719 · from 12 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Alibaba · released 2024-09 · 0.49B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▄▄▃▂▁   #323 of 334*    5.0%      1
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #415 of 466*    9.3%      2
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #290 of 300*    5.0%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #354 of 393*    9.3%      2
 math            █··········●       #1 of 2*     16%      1
 </pre>
 
-<details><summary>agent tasks · #323 of 334 · 5.0% of its score</summary>
+<details><summary>agent tasks · #290 of 300 · 5.0% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #415 of 466 · 9.3% of its score</summary>
+<details><summary>chat &amp; writing · #354 of 393 · 9.3% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 

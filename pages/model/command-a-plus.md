@@ -6,7 +6,7 @@
 
 Cohere · released 2026-05 · 218B params (25B active) · apache-2.0
 
-**score 64.3** ±1.0 · #164 of 949 · from 23 benchmark results across 3 sources
+**score 64.3** ±1.0 · #153 of 719 · from 23 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Cohere · released 2026-05 · 218B params (25B active) · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▄▄▃▂▁   #141 of 334     25%      6
-coding              ▁▁▁▃▆██●▆▄▃▁   #153 of 469    9.2%      3
-math                ▁▂▃▅▆▅▄●▄▁▁▁   #104 of 400     17%      3
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #138 of 300     25%      6
+coding              ▁▁▁▃▆██●▆▄▃▁   #152 of 458    9.2%      3
+math                ▁▂▃▅▆▅▄●▄▁▁▁   #104 of 398     17%      3
 vision &amp; documents  ······●·····      #1 of 1*    5.8%      2
 </pre>
 
-<details><summary>agent tasks · #141 of 334 · 25% of its score</summary>
+<details><summary>agent tasks · #138 of 300 · 25% of its score</summary>
 
-Beats [watt-tool-70B](watt-tool-70b.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                    result  vs the others in its run  difficulty            counts  why
@@ -36,7 +36,7 @@ test                    result  vs the others in its run  difficulty            
 
 </details>
 
-<details><summary>coding · #153 of 469 · 9.2% of its score</summary>
+<details><summary>coding · #152 of 458 · 9.2% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #104 of 400 · 17% of its score</summary>
+<details><summary>math · #104 of 398 · 17% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [gpt-oss-120b](gpt-oss-120b.md), [GLM-4.5-Air](glm-4-5-air.md) here, though they rank lower overall.
 

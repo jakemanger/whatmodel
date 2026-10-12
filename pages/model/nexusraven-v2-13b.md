@@ -6,7 +6,7 @@
 
 Nexusflow · released 2023-12 · 13.02B params · other
 
-**score 28.7** ±2.6 · #872 of 949 · from 5 benchmark results across 2 sources
+**score 28.7** ±2.6 · #654 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Nexusflow · released 2023-12 · 13.02B params · other
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▄▄▃▂▁   #322 of 334*     11%      1
+agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #289 of 300*     11%      1
 </pre>
 
-<details><summary>agent tasks · #322 of 334 · 11% of its score</summary>
+<details><summary>agent tasks · #289 of 300 · 11% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank lower overall.
 

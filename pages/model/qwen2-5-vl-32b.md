@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-03 · 33.5B params · apache-2.0
 
-**score 53.0** ±1.5 · #367 of 949 · from 16 benchmark results across 7 sources
+**score 53.0** ±1.5 · #297 of 719 · from 16 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Alibaba · released 2025-03 · 33.5B params · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁▁▃▂▁●▄▃▆▇█▄   #112 of 150     77%     11
+vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #110 of 147     77%     11
 </pre>
 
-<details><summary>vision &amp; documents · #112 of 150 · 77% of its score</summary>
+<details><summary>vision &amp; documents · #110 of 147 · 77% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Pixtral Large (2411)](pixtral-large.md) here, though they rank higher overall. Trails [Gemma 3 27B](gemma-3-27b.md) here, though they rank lower overall.
 
