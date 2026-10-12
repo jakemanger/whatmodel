@@ -153,4 +153,15 @@ Other versions: 8bit (~11 GB, Mac only) `mlx_lm.chat --model mlx-community/Falco
 
 Official weights and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon3-10B-Instruct)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision       speed  engine and settings
+Ryzen 7 H 255 (Radeon 780M)…  q4_k_m     <a href="https://whatmodel.sh/data/bench.json#gh8-1">12.8 tok/s</a>  llama.cpp · whatmodel bench.py 3.…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 [interactive version](https://whatmodel.sh/model/falcon3-10b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

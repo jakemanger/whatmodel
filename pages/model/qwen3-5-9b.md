@@ -326,6 +326,17 @@ Other versions: 8bit (~10.4 GB, Mac only) `mlx_lm.chat --model lmstudio-communit
 
 Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3.5-9B)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision        speed  engine and settings
+Ryzen 7 H 255 (Radeon 780M)…  Q4_K_M     <a href="https://whatmodel.sh/data/bench.json#gh8-0">14.86 tok/s</a>  llama.cpp · whatmodel bench.py 3.…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
