@@ -655,5 +655,83 @@
     ],
     "tg_median": 9.68,
     "pp_median": null
+  },
+  {
+    "id": "gh8-0",
+    "issue": 8,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.1",
+    "hardware": null,
+    "hardware_label": "AMD Ryzen 7 H 255 w/ Radeon 780M Graphics · 15 GB RAM · Linux",
+    "gpus": null,
+    "os": "Linux x86_64",
+    "engine": "llama.cpp",
+    "model": "Qwen3.5-9B-Q4_K_M.gguf",
+    "model_id": "qwen3-5-9b",
+    "digest": null,
+    "quant": "Q4_K_M",
+    "bytes": 5600000000,
+    "settings": null,
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "gen_tok_s": 14.86,
+        "prompt_tok_s": 339.91,
+        "cpu_busy": 0.001
+      },
+      {
+        "gen_tok_s": 14.86,
+        "prompt_tok_s": 339.52,
+        "cpu_busy": 0.001
+      },
+      {
+        "gen_tok_s": 14.86,
+        "prompt_tok_s": 336.84,
+        "cpu_busy": 0.002
+      }
+    ],
+    "tg_median": 14.86,
+    "pp_median": 339.52
+  },
+  {
+    "id": "gh8-1",
+    "issue": 8,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.1",
+    "hardware": null,
+    "hardware_label": "AMD Ryzen 7 H 255 w/ Radeon 780M Graphics · 15 GB RAM · Linux",
+    "gpus": null,
+    "os": "Linux x86_64",
+    "engine": "llama.cpp",
+    "model": "Falcon3-10B-Instruct-q4_k_m.gguf",
+    "model_id": "falcon3-10b",
+    "digest": null,
+    "quant": "q4_k_m",
+    "bytes": 6300000000,
+    "settings": null,
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "gen_tok_s": 12.8,
+        "prompt_tok_s": 292.31,
+        "cpu_busy": 0.002
+      },
+      {
+        "gen_tok_s": 12.8,
+        "prompt_tok_s": 293.83,
+        "cpu_busy": 0.002
+      },
+      {
+        "gen_tok_s": 12.81,
+        "prompt_tok_s": 292.89,
+        "cpu_busy": 0.001
+      }
+    ],
+    "tg_median": 12.8,
+    "pp_median": 292.89
   }
 ]
