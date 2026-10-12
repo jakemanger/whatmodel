@@ -811,100 +811,141 @@ def build_choices(found, catalogue, hw):
             ('Billed to an API key', [t for t in agents if t['group'] == 'api'])]
 
 
-def search_add(text, catalogue, found, hw, sections):
-    """Add models matching the search that this machine can run, to an 'Added from search' section.
-    Returns what was added and a line saying what happened."""
-    ready, added, listed_hits, too_big = ready_runtimes(found), [], [], []
-    listed = {t.get('model_id') for _, items in sections for t in items}
-    matches = search_catalogue(text, catalogue, limit=400)
-    for m in matches:
-        if m['id'] in listed:
-            listed_hits.append(m); continue
-        v = best_variant(m, ready, hw)
-        if not v:
-            if m.get('variants'): too_big.append(m)
+FITS = 'Fits this machine · downloads first'
+
+
+def fit_pool(catalogue, found, hw, exclude=()):
+    """A test for every whatmodel.sh model this machine can run (its best download), well-tested models first."""
+    ready, out = ready_runtimes(found), []
+    for m in sorted(catalogue, key=lambda m: (m.get('n', 0) < 8, -(m.get('score') or 0))):
+        if m['id'] in exclude or not m.get('variants'):
             continue
-        t = download_target(m, v, found)
-        if t: added.append(t)
-        if len(added) >= 8: break
-    if added:
-        for i, (title, items) in enumerate(sections):
-            if title == 'Added from search':
-                sections[i] = (title, items + added); break
-        else:
-            sections.insert(0, ('Added from search', added))
-        note = f'added {len(added)} model{"s" if len(added) != 1 else ""} matching "{text}" at the top (not ticked)'
-    elif listed_hits:
-        note = f'{listed_hits[0]["name"]} is already in the list'
-    elif too_big:
-        small = min(too_big, key=lambda m: min(v['gb'] for v in m['variants']))
-        note = f'nothing matching "{text}" fits in this machine\'s ~{usable_gb(hw):.0f} GB (the smallest, {small["name"]}, needs {need_gb(min(v["gb"] for v in small["variants"])):.0f} GB)'
-    elif matches:
-        note = f'{matches[0]["name"]} has no download to run locally (API only)'
-    else:
-        note = f'nothing on whatmodel.sh matches "{text}"'
-    return added, note
+        v = best_variant(m, ready, hw)
+        t = v and download_target(m, v, found)
+        if t: out.append(t)
+    return out
+
+
+def filter_tests(text, tests):
+    """Tests matching every typed word: a word matches the start of a word in the model's name, runtime or
+    quantisation; a bare number matches a whole number or version ('4' finds Gemma 4, not Q4_K_M or E4B)."""
+    words = re.findall(r'[a-z0-9.]+', text.lower())
+    def hit(w, tokens):
+        if re.fullmatch(r'\d+', w):
+            return any(tok == w or tok.startswith(w + '.') for tok in tokens)
+        return any(tok.startswith(w) for tok in tokens)
+    setting = re.compile(r'^(mlx|ollama|llama\.cpp|lm|studio|gguf|i?q\d.*|\d+bit|bf16|f16)$')  # runtime or quantisation words
+    out = []
+    for t in tests:
+        name, _, rest = t['label'].partition(' · ')
+        tokens, extra = re.findall(r'[a-z0-9.]+', name.lower()), re.findall(r'[a-z0-9.]+', rest.lower())
+        if all(hit(w, tokens) or (setting.match(w) and hit(w, extra)) for w in words):
+            out.append(t)
+    return out
+
+
+def search_note(text, catalogue, hw):
+    """Why a search found nothing this machine can test."""
+    found = search_catalogue(text, catalogue, limit=400)
+    big = [m for m in found if m.get('variants')]
+    if big:
+        small = min(big, key=lambda m: min(v['gb'] for v in m['variants']))
+        return f'nothing matching "{text}" fits in this machine\'s ~{usable_gb(hw):.0f} GB (the smallest, {small["name"]}, needs {need_gb(min(v["gb"] for v in small["variants"])):.0f} GB)'
+    if found:
+        return f'{found[0]["name"]} has no download to run locally (API only)'
+    return f'nothing on whatmodel.sh matches "{text}"'
 
 
 def choose(sections, catalogue, found, hw):
-    """Tick what to test. Models already on this machine start ticked; '/' searches every whatmodel.sh model."""
+    """Tick what to test. Models already on this machine start ticked. '/' filters live over everything this
+    machine can test, including every whatmodel.sh model that fits; ticked ones join 'Fits this machine'."""
     picked = {id(t) for title, items in sections if title == 'On this machine' for t in items if t.get('model_id')}
-    def rows():
-        out = []
+    listed = [t for _, items in sections for t in items]
+    pool = []  # every other model that fits, built on the first search
+    def everything():
+        if not pool:
+            pool.extend(fit_pool(catalogue, found, hw, exclude={t.get('model_id') for t in listed}))
+        return listed + pool
+    def list_rows():
+        extra = [t for t in pool if id(t) in picked]
+        rows, placed = [], False
         for title, items in sections:
-            if items:
-                out.append(('header', title)); out += [('item', t) for t in items]
-        return out
+            if title == FITS: items, placed = items + extra, True
+            if items: rows += [('header', title)] + [('item', t) for t in items]
+        if extra and not placed: rows = [('header', FITS)] + [('item', t) for t in extra] + rows
+        return rows
+    def search_rows(q):
+        hits = filter_tests(q, everything())
+        return [('header', f'{len(hits)} match{"es" if len(hits) != 1 else ""}' + (f' for "{q}"' if q.strip() else ''))] + [('item', t) for t in hits]
+
     if PLAIN or not sys.stdin.isatty() or os.name == 'nt':
         while True:
-            items = [r[1] for r in rows() if r[0] == 'item']
+            items = [r[1] for r in list_rows() if r[0] == 'item']
             n = 0
-            for title, sec in sections:
-                if sec: print('  ' + yellow(title))
-                for t in sec:
-                    n += 1; print(f'  {n:>2}. {t["label"]}  {dim(t.get("detail", ""))}')
-            default = ' '.join(str(i) for i, t in enumerate(items, 1) if any(id(t) == p for p in picked))
-            answer = ask('Numbers to test, separated by spaces (or type a model name to search whatmodel.sh)', default)
+            for r in list_rows():
+                if r[0] == 'header': print('  ' + yellow(r[1])); continue
+                n += 1; print(f'  {n:>2}. {r[1]["label"]}  {dim(r[1].get("detail", ""))}')
+            default = ' '.join(str(i) for i, t in enumerate(items, 1) if id(t) in picked)
+            answer = ask('Numbers to test, separated by spaces (or type a model name to search)', default)
             if answer and not re.fullmatch(r'[\d\s]+', answer):
-                _, note = search_add(answer, catalogue, found, hw, sections)
-                print(dim(f'  {note}'))
+                hits = filter_tests(answer, everything())[:20]
+                if not hits:
+                    print(dim('  ' + search_note(answer, catalogue, hw))); continue
+                for i, t in enumerate(hits, 1): print(f'  {i:>2}. {t["label"]}  {dim(t.get("detail", ""))}')
+                for k in ask('Numbers to add (Enter for none)').split():
+                    if k.isdigit() and 1 <= int(k) <= len(hits): picked.add(id(hits[int(k) - 1]))
                 continue
-            return [t for i, t in enumerate(items, 1) if str(i) in answer.split()]
-    cursor, message = 0, ''
+            picked = {id(t) for i, t in enumerate(items, 1) if str(i) in answer.split()}
+            return [t for t in items if id(t) in picked]
+
+    state = {'query': None, 'cursor': 0}
+    def current():
+        q = state['query']
+        return search_rows(q) if q is not None else list_rows()
     def render():
-        rs = rows()
+        rs, q = current(), state['query']
+        items_at = [i for i, r in enumerate(rs) if r[0] == 'item']
+        if items_at and state['cursor'] not in items_at:
+            state['cursor'] = min(items_at, key=lambda i: abs(i - state['cursor']))
+        cursor = state['cursor']
         height = max(8, shutil.get_terminal_size((100, 24)).lines - 7)
         start = max(0, min(cursor - height // 2, len(rs) - height))
-        out = [bold('Pick what to test') + dim('   ↑/↓ move · space tick · / search all whatmodel.sh models · enter continue · q quit')]
+        if q is None:
+            out = [bold('Pick what to test') + dim('   ↑/↓ move · space tick · / search every model that fits · enter continue · q quit')]
+        else:
+            out = [bold('Search ') + q + c('7', ' ') + dim('   type to filter · ↑/↓ move · enter tick · esc back to the list')]
         for i, r in enumerate(rs[start:start + height], start):
             if r[0] == 'header':
                 out.append('  ' + yellow(r[1])); continue
             t = r[1]
             line = f'{green("[x]") if id(t) in picked else "[ ]"} {t["label"]}  {dim(t.get("detail", ""))}'
             out.append(('› ' if i == cursor else '  ') + (c('7', ANSI.sub('', line)) if i == cursor and COLOR else line))
+        if q is not None and not items_at and q.strip():
+            out.append('  ' + yellow(search_note(q, catalogue, hw)))
         out.append(dim(f'  {len(picked)} selected'))
-        if message: out.append('  ' + yellow(message))
         return out
     live = Live(render); live.live = True
-    rs = rows(); cursor = next((i for i, r in enumerate(rs) if r[0] == 'item'), 0)
     sys.stdout.write('\x1b[?25l')
     try:
         while True:
             live.draw()
-            rs = rows()
-            key = read_key()
+            rs = current()
             items_at = [i for i, r in enumerate(rs) if r[0] == 'item']
-            if key in ('up', 'k'): cursor = max([i for i in items_at if i < cursor], default=cursor)
-            elif key in ('down', 'j'): cursor = min([i for i in items_at if i > cursor], default=cursor)
+            cursor, key = state['cursor'], read_key()
+            if key == 'up': state['cursor'] = max([i for i in items_at if i < cursor], default=cursor)
+            elif key == 'down': state['cursor'] = min([i for i in items_at if i > cursor], default=cursor)
+            elif state['query'] is not None:  # live search: typing filters, enter ticks, esc goes back
+                if key == 'esc': state.update(query=None, cursor=0)
+                elif key in ('enter', '\t') and cursor in items_at: picked ^= {id(rs[cursor][1])}
+                elif key in ('\x7f', '\x08'): state['query'] = state['query'][:-1]
+                elif key == 'space': state['query'] += ' '
+                elif len(key) == 1 and key.isprintable(): state.update(query=state['query'] + key, cursor=0)
+            elif key == 'k': state['cursor'] = max([i for i in items_at if i < cursor], default=cursor)
+            elif key == 'j': state['cursor'] = min([i for i in items_at if i > cursor], default=cursor)
             elif key == 'space' and cursor in items_at: picked ^= {id(rs[cursor][1])}
-            elif key == '/':
-                sys.stdout.write('\x1b[?25h'); sys.stdout.flush()
-                text = ask('\n  Search whatmodel.sh models (e.g. "qwen 9b", "gemma")')
-                message = search_add(text, catalogue, found, hw, sections)[1] if text else ''
-                live.lines = 0; sys.stdout.write('\x1b[?25l')
-                rs = rows(); cursor = next((i for i, r in enumerate(rs) if r[0] == 'item'), 0)
+            elif key == '/': state.update(query='', cursor=0)
             elif key == 'enter':
-                return [r[1] for r in rows() if r[0] == 'item' and id(r[1]) in picked]
+                return [r[1] for r in list_rows() if r[0] == 'item' and id(r[1]) in picked]
             elif key in ('q', 'esc'):
                 return []
     finally:
