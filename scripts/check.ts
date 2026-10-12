@@ -153,7 +153,7 @@ for (const [url, what] of cited) {
 for (const [why, whats] of bad) errors.push(`${whats.length} item(s) from a source we can't use: ${why}\n      e.g. ${whats.slice(0, 3).join(", ")}`);
 
 // Fast, complete schema/provenance gate for local data work. The default command
-// still performs the exhaustive leave-one-out calibration evaluation below.
+// also runs the leave-one-out calibration evaluation below.
 if (process.argv.includes("--validate-only")) {
   if (iconWarnings.length) console.log(`${iconWarnings.length} icon warning(s):\n  ${iconWarnings.join("\n  ")}`);
   if (errors.length) {
@@ -165,6 +165,17 @@ if (process.argv.includes("--validate-only")) {
 }
 
 const warnings: string[] = [...iconWarnings];
+// Leave-one-out refits a set once per held-out result: every result in the text set took ~6h. Sets
+// over 2,000 results hold out a fixed random sample of 300, the same each run; --full holds out all.
+const heldOutCount = (n: number) => (process.argv.includes("--full") || n <= 2000 ? n : 300);
+function sample(n: number, k: number): number[] {
+  const idx = [...Array(n).keys()];
+  if (n <= k) return idx;
+  let s = 1; // mulberry32
+  const rand = () => { s = (s + 0x6d2b79f5) >>> 0; let t = Math.imul(s ^ (s >>> 15), s | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  for (let i = 0; i < k; i++) { const j = i + Math.floor(rand() * (n - i)); [idx[i], idx[j]] = [idx[j], idx[i]]; }
+  return idx.slice(0, k).sort((a, b) => a - b);
+}
 const corr = (xy: [number, number][]) => {
   const n = xy.length, mx = xy.reduce((s, [x]) => s + x, 0) / n, my = xy.reduce((s, [, y]) => s + y, 0) / n;
   let sxy = 0, sxx = 0, syy = 0;
@@ -187,7 +198,8 @@ for (const cat of CATEGORY_IDS) {
     const errs = { acc: [] as number[], err: [] as number[], elo: [] as number[], linear: [] as number[] };
     const zs: [number, number][] = [];
     const zsWeighted: [number, number][] = []; // without series whose fitted a sits at the 0.05 floor
-    for (let i = 0; i < cells.length; i++) {
+    const held = sample(cells.length, heldOutCount(cells.length));
+    for (const i of held) {
       const c = cells[i];
       const b = bench.get(c.bench)!;
       const rest = cells.filter((_, j) => j !== i);
@@ -203,7 +215,8 @@ for (const cat of CATEGORY_IDS) {
     console.log(`\n== ${cat} set ${groupIndex + 1}/${groups.length}: ${f.scores.size} scored models, ${cells.length} cells across ${f.params.size} benchmark keys`);
     for (const [k, p] of [...f.params].sort((x, y) => y[1].a - x[1].a))
       console.log(`  ${k.padEnd(34)} n=${String(p.n).padStart(3)}  a=${p.a.toFixed(2).padStart(5)}  noise=${p.sigma.toFixed(2)}`);
-    if (zs.length > 2) console.log(`  leave-one-out: r = ${corr(zs).toFixed(3)} (n=${zs.length})`);
+    const of = held.length < cells.length ? `, a fixed sample of ${held.length} of ${cells.length} results; --full for all` : "";
+    if (zs.length > 2) console.log(`  leave-one-out: r = ${corr(zs).toFixed(3)} (n=${zs.length}${of})`);
     // Dividing by a floor-level a inflates those residuals ~20x, so one such series can swamp r.
     if (zsWeighted.length > 2 && zsWeighted.length < zs.length)
       console.log(`  leave-one-out without floor-weight series (a = 0.05): r = ${corr(zsWeighted).toFixed(3)} (n=${zsWeighted.length})`);
