@@ -43,6 +43,6 @@ weighted average                        = 46.6
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/cogvlm2-llama3-chinese-chat-19b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

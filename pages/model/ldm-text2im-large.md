@@ -45,20 +45,14 @@ weighted average                          = 48.4
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp32 · nvidia only  ~7.5GB   48.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~7.5 GB, NVIDIA only, from [huggingface.co/CompVis](https://huggingface.co/CompVis/ldm-text2im-large-256))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch python -c "from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('CompVis/ldm-text2im-large-256').to('cuda'); p(['a cat holding a sign'], num_inference_steps=50, eta=0.3, guidance_scale=6).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · nvidia only · ~7.5GB
-uv run --with diffusers --with transformers --with accelerate --with torch python -c "from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('CompVis/ldm-text2im-large-256').to('cuda'); p(['a cat holding a sign'], num_inference_steps=50, eta=0.3, guidance_scale=6).images[0].save('out.png')"
-```
+Official weights and documentation: [huggingface.co/CompVis](https://huggingface.co/CompVis/ldm-text2im-large-256)
 
 [interactive version](https://whatmodel.sh/model/ldm-text2im-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -45,23 +45,16 @@ weighted average                                = 44.0
 
 ## How to run it
 
-<pre>
-version                               needs  score
-fp32 (repo api_v2.py)                ~1.1GB   44.0
-fp16 (repo api_v2.py) · nvidia only  ~1.1GB   44.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (repo api_v2.py), needs ~1.1 GB, from [github.com/RVC-Boss](https://github.com/RVC-Boss/GPT-SoVITS/blob/48b1a0169a28582a8984402f82cf438d3bfa6aca/api_v2.py))
+   
+   ```sh
+   git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && conda create -n GPTSoVits python=3.10 && conda activate GPTSoVits && bash install.sh --device CPU --source HF && python api_v2.py -a 127.0.0.1 -p 9880 -c GPT_SoVITS/configs/tts_infer.yaml
+   ```
 
-### Run it on your own machine
+Other versions: fp16 (repo api_v2.py) (~1.1 GB, NVIDIA only) `git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && conda create -n GPTSoVits python=3.10 && conda activate GPTSoVits && bash install.sh --device CU128 --source HF && python api_v2.py -a 127.0.0.1 -p 9880 -c GPT_SoVITS/configs/tts_infer.yaml`
 
-**Other engines**
-
-```sh
-# fp32 (repo api_v2.py) · ~1.1GB
-git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && conda create -n GPTSoVits python=3.10 && conda activate GPTSoVits && bash install.sh --device CPU --source HF && python api_v2.py -a 127.0.0.1 -p 9880 -c GPT_SoVITS/configs/tts_infer.yaml
-# fp16 (repo api_v2.py) · nvidia only · ~1.1GB
-git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && conda create -n GPTSoVits python=3.10 && conda activate GPTSoVits && bash install.sh --device CU128 --source HF && python api_v2.py -a 127.0.0.1 -p 9880 -c GPT_SoVITS/configs/tts_infer.yaml
-```
+Official weights and documentation: [huggingface.co/lj1995](https://huggingface.co/lj1995/GPT-SoVITS)
 
 [interactive version](https://whatmodel.sh/model/gpt-sovits-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

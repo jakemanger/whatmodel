@@ -41,20 +41,14 @@ weighted average                                   = 23.2
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp16 (--fp16), both stages · nvidia only  ~51.7GB   23.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16 (--fp16), both stages, needs ~51.7 GB, NVIDIA only, from [github.com/zai-org](https://github.com/zai-org/CogVideo/blob/5f914b772b7e220ee6ae84deb562fb9a1f54c5f8/README.md))
+   
+   ```sh
+   git clone -b CogVideo https://github.com/zai-org/CogVideo && cd CogVideo && pip install -r requirements.txt && pip install git+https://github.com/Sleepychord/Image-Local-Attention && MASTER_PORT=$(shuf -n 1 -i 10000-65535) SAT_HOME=./sat_models python cogvideo_pipeline.py --input-source interactive --output-path ./output --parallel-size 1 --both-stages --use-guidance-stage1 --guidance-alpha 3.0 --generate-frame-num 5 --tokenizer-type fake --mode inference --distributed-backend nccl --fp16 --model-parallel-size 1 --temperature 1.05 --coglm-temperature2 0.89 --top_k 12 --sandwich-ln --seed 1234 --num-workers 0 --batch-size 4 --max-inference-batch-size 8
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 (--fp16), both stages · nvidia only · ~51.7GB
-git clone -b CogVideo https://github.com/zai-org/CogVideo && cd CogVideo && pip install -r requirements.txt && pip install git+https://github.com/Sleepychord/Image-Local-Attention && MASTER_PORT=$(shuf -n 1 -i 10000-65535) SAT_HOME=./sat_models python cogvideo_pipeline.py --input-source interactive --output-path ./output --parallel-size 1 --both-stages --use-guidance-stage1 --guidance-alpha 3.0 --generate-frame-num 5 --tokenizer-type fake --mode inference --distributed-backend nccl --fp16 --model-parallel-size 1 --temperature 1.05 --coglm-temperature2 0.89 --top_k 12 --sandwich-ln --seed 1234 --num-workers 0 --batch-size 4 --max-inference-batch-size 8
-```
+Official weights and documentation: [huggingface.co/THUDM](https://huggingface.co/THUDM/CogVideo)
 
 [interactive version](https://whatmodel.sh/model/cogvideo-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

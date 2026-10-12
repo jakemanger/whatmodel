@@ -182,79 +182,94 @@ weighted average                                   = 44.6
 
 ## How to run it
 
+### Through an API
+
 api (Amazon Bedrock) · $0.22/M blended · $0.22 in / $0.22 out per 1M tokens · [docs.aws.amazon.com](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/amazon-bedrock/models/meta.llama3-1-8b-instruct-v1:0.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/meta/llama-3.1-8b-instruct.toml): model catalogue context ceiling (not a promise by a hosted API)</sub>
 
-<pre>
-download                       size  score
-4-bit q4_k_m                ~5.32GB   44.6
-8-bit q8_0                 ~10.14GB   44.6
-4-bit Q4_K_M                 ~4.9GB   44.6
-8-bit Q8_0                   ~8.5GB   44.6
-4-bit mlx-4bit · mac only    ~4.5GB   44.6
-4-bit mlx-8bit · mac only    ~8.5GB   44.6
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Llama 3.1 8B Instruct (Q4_K_M, needs ~4.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/tree/8601e6db71269a2b12255ebdf09ab75becf22cc8))
+   
+   ```sh
+   llama cli -hf lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-llama cli -hf lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.5GB
-llama cli -hf lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF:Q8_0
-```
+Other versions: Q8_0 (~8.5 GB) `llama cli -hf lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-lms get https://huggingface.co/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~8.5GB
-lms get https://huggingface.co/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~4.5GB
-lms get https://huggingface.co/mlx-community/Llama-3.1-8B-Instruct-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~8.5GB
-lms get https://huggingface.co/mlx-community/Meta-Llama-3.1-8B-Instruct-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Llama 3.1 8B Instruct (Q4_K_M, needs ~4.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/tree/8601e6db71269a2b12255ebdf09ab75becf22cc8))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~5.32GB
-ollama run llama3.1:8b
-# 8-bit q8_0 · ~10.14GB
-ollama run llama3.1:8b-instruct-q8_0
-# 4-bit Q4_K_M · ~4.9GB
-ollama run hf.co/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.5GB
-ollama run hf.co/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF@Q8_0 -y` · 4bit (~4.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3.1-8B-Instruct-4bit -y` · 8bit (~8.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/Meta-Llama-3.1-8B-Instruct-8bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~4.5GB
-mlx_lm.chat --model mlx-community/Llama-3.1-8B-Instruct-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Llama-3.1-8B-Instruct-4bit
-# 4-bit mlx-8bit · mac only · ~8.5GB
-mlx_lm.chat --model mlx-community/Meta-Llama-3.1-8B-Instruct-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Meta-Llama-3.1-8B-Instruct-8bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Llama 3.1 8B Instruct (Q4_K_M, needs ~5.32 GB, from [ollama.com](https://ollama.com/library/llama3.1/tags))
+   
+   ```sh
+   ollama run llama3.1:8b
+   ```
+
+Other versions: Q8_0 (~10.14 GB) `ollama run llama3.1:8b-instruct-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Llama 3.1 8B Instruct (4bit, needs ~4.5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3.1-8B-Instruct-4bit/tree/90215b22ec18e72f623dde2ea7af4097025160e2))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Llama-3.1-8B-Instruct-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Llama-3.1-8B-Instruct-4bit
+   ```
+
+Other versions: 8bit (~8.5 GB, Mac only) `mlx_lm.chat --model mlx-community/Meta-Llama-3.1-8B-Instruct-8bit`
+
+Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 
 ## Quantization evidence
 

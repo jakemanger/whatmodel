@@ -43,20 +43,14 @@ weighted average                                   = 44.8
 
 ## How to run it
 
-<pre>
-version     needs  score
-fp32 · CPU   ~8GB   44.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 · CPU, needs ~8 GB, from [huggingface.co/espnet](https://huggingface.co/espnet/kmiyazaki_librispeech_asr_s4_decoder/blob/5e2d7b3c8fb84fb2cc835c31c0c965caa474f0ca/README.md))
+   
+   ```sh
+   uv run --python 3.10 --with espnet --with espnet_model_zoo --with librosa python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained(model_tag='espnet/kmiyazaki_librispeech_asr_s4_decoder', lm_weight=0); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · CPU · ~8GB
-uv run --python 3.10 --with espnet --with espnet_model_zoo --with librosa python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained(model_tag='espnet/kmiyazaki_librispeech_asr_s4_decoder', lm_weight=0); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
-```
+Official weights and documentation: [huggingface.co/espnet](https://huggingface.co/espnet/kmiyazaki_librispeech_asr_s4_decoder)
 
 [interactive version](https://whatmodel.sh/model/espnet-conformer-s4-decoder) · [JSON](https://whatmodel.sh/api?format=json&all=1)

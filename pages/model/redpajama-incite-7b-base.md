@@ -53,22 +53,14 @@ weighted average                                   = 27.2
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/blob/78f7e482443971f4873ba3239f0ac810a367833b/config.json): Together official configuration for RedPajama-INCITE-7B-Base (pinned commit): max\_position\_embeddings 2048. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+### Other ways to run it
 
-<pre>
-download        size  score
-4-bit fp16  ~13.85GB   27.2
-</pre>
+1. Run it as published (fp16, needs ~13.85 GB, from [huggingface.co/togethercomputer](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/78f7e482443971f4873ba3239f0ac810a367833b))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='togethercomputer/RedPajama-INCITE-7B-Base', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp16 · ~13.85GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='togethercomputer/RedPajama-INCITE-7B-Base', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/togethercomputer](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base)
 
 [interactive version](https://whatmodel.sh/model/redpajama-incite-7b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

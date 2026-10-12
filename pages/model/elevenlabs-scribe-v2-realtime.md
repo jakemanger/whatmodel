@@ -42,10 +42,10 @@ weighted average                                   = 55.2
 
 ## How to run it
 
+### Through an API
+
 api (ElevenLabs) · $0.0065/audio min · [elevenlabs.io](https://elevenlabs.io/docs/overview/models)
 
 <sub>[price source](https://elevenlabs.io/pricing/api): USD per input audio minute: ElevenLabs API pricing lists 'Scribe v2 Realtime Speech to Text $0.39 Price per hour' (÷60), same rate on every tier shown. Product: ElevenAPI realtime speech to text. API model: scribe\_v2\_realtime. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: keyterm prompting ($0.08/hr) and transcript editing add-ons, subscription fees. Currency: USD. ElevenLabs official API pricing page, observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/elevenlabs-scribe-v2-realtime) · [JSON](https://whatmodel.sh/api?format=json&all=1)

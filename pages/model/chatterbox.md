@@ -46,31 +46,23 @@ weighted average                                   = 49.5
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $25.00/M chars · [replicate.com](https://replicate.com/resemble-ai/chatterbox)
 
 <sub>[price source](https://replicate.com/resemble-ai/chatterbox): USD per 1M input characters: Replicate's resemble-ai/chatterbox model page bills $0.025 per thousand input characters (x1000). Resemble's own pricing page lists no per-character TTS rate. Product: Replicate hosted model (official resemble-ai account). API model: resemble-ai/chatterbox. Settings: standard. Price basis: published per-unit billing, not hardware time. Exclusions: taxes. Currency: USD. Replicate official model page, observed 2026-09-25.</sub>
 
-<pre>
-version                        needs  score
-fp32 · nvidia only            ~2.9GB   49.5
-fp32 · mac only               ~2.9GB   49.5
-fp32 (chatterbox-tts 0.1.7)  ~3.19GB   49.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~2.9 GB, NVIDIA only, from [github.com/resemble-ai](https://github.com/resemble-ai/chatterbox))
+   
+   ```sh
+   pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='cuda'); ta.save('out.wav', m.generate('Hello world'), m.sr)"
+   ```
 
-### Run it on your own machine
+Other versions: fp32 (~2.9 GB, Mac only) `pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='mps'); ta.save('out.wav', m.generate('Hello world'), m.sr)"` · fp32 (chatterbox-tts 0.1.7) (~3.19 GB) `pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='cpu'); ta.save('out.wav', m.generate('Hello world'), m.sr)"`
 
-**Other engines**
-
-```sh
-# fp32 · nvidia only · ~2.9GB
-pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='cuda'); ta.save('out.wav', m.generate('Hello world'), m.sr)"
-# fp32 · mac only · ~2.9GB
-pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='mps'); ta.save('out.wav', m.generate('Hello world'), m.sr)"
-# fp32 (chatterbox-tts 0.1.7) · ~3.19GB
-pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='cpu'); ta.save('out.wav', m.generate('Hello world'), m.sr)"
-```
+Official weights and documentation: [huggingface.co/ResembleAI](https://huggingface.co/ResembleAI/chatterbox)
 
 ## Published speed measurements
 

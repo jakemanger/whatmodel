@@ -44,20 +44,14 @@ weighted average                                   = 47.2
 
 ## How to run it
 
-<pre>
-version                                      needs  score
-bf16 (official VibeVoice repo) · nvidia…  ~17.36GB   47.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (OFFICIAL VIBEVOICE REPO), needs ~17.36 GB, NVIDIA only, from [github.com/microsoft](https://github.com/microsoft/VibeVoice/blob/16fb2cb1217c9934a886e1948ffb06120caa2df5/docs/vibevoice-asr-streaming.md))
+   
+   ```sh
+   git clone https://github.com/microsoft/VibeVoice.git && cd VibeVoice && pip install -e . && python demo/vibevoice_asr_streaming_inference_from_file.py --model_path microsoft/VibeVoice-ASR-Streaming-7B --audio_files audio.wav
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (official VibeVoice repo) · nvidia only · ~17.36GB
-git clone https://github.com/microsoft/VibeVoice.git && cd VibeVoice && pip install -e . && python demo/vibevoice_asr_streaming_inference_from_file.py --model_path microsoft/VibeVoice-ASR-Streaming-7B --audio_files audio.wav
-```
+Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B)
 
 [interactive version](https://whatmodel.sh/model/vibevoice-asr-streaming-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

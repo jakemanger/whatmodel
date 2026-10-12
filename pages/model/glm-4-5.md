@@ -154,63 +154,74 @@ zai-org/GLM-4.6 model…  <a href="https://huggingface.co/zai-org/GLM-4.6/blob/b
 
 ## How to run it
 
+### Through an API
+
 api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai](https://docs.z.ai/guides/overview/pricing)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-4.5.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/zhipuai/glm-4.5.toml)</sub>
 
-<pre>
-download                       size  score
-4-bit ud-q4_k_xl           ~213.5GB   64.7
-2-bit ud-q2_k_xl             ~107GB   64.7
-1-bit ud-iq1_s             ~53.75GB   64.7
-4-bit mlx-4bit · mac only  ~198.6GB   64.7
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run GLM-4.5 (ud-q4_k_xl, needs ~213.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-4.5-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/GLM-4.5-GGUF:UD-Q4_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/GLM-4.5-GGUF:UD-Q4_K_XL
+   ```
 
-```sh
-# 4-bit ud-q4_k_xl · ~213.5GB
-llama cli -hf unsloth/GLM-4.5-GGUF:UD-Q4_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/GLM-4.5-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl · ~107GB
-llama cli -hf unsloth/GLM-4.5-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/GLM-4.5-GGUF:UD-Q2_K_XL
-# 1-bit ud-iq1_s · ~53.75GB
-llama cli -hf unsloth/GLM-4.5-GGUF:UD-IQ1_S
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/GLM-4.5-GGUF:UD-IQ1_S
-```
+Other versions: ud-q2_k_xl (~107 GB) `llama cli -hf unsloth/GLM-4.5-GGUF:UD-Q2_K_XL` · ud-iq1_s (~53.75 GB) `llama cli -hf unsloth/GLM-4.5-GGUF:UD-IQ1_S`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit ud-q4_k_xl · ~213.5GB
-lms get https://huggingface.co/unsloth/GLM-4.5-GGUF@UD-Q4_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit ud-q2_k_xl · ~107GB
-lms get https://huggingface.co/unsloth/GLM-4.5-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 1-bit ud-iq1_s · ~53.75GB
-lms get https://huggingface.co/unsloth/GLM-4.5-GGUF@UD-IQ1_S -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~198.6GB
-lms get https://huggingface.co/mlx-community/GLM-4.5-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+2. Run GLM-4.5 (ud-q4_k_xl, needs ~213.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-4.5-GGUF/tree/main))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/GLM-4.5-GGUF@UD-Q4_K_XL -y
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~198.6GB
-mlx_lm.chat --model mlx-community/GLM-4.5-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/GLM-4.5-4bit
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: ud-q2_k_xl (~107 GB) `lms get https://huggingface.co/unsloth/GLM-4.5-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (~53.75 GB) `lms get https://huggingface.co/unsloth/GLM-4.5-GGUF@UD-IQ1_S -y` · 4bit (~198.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/GLM-4.5-4bit -y`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run GLM-4.5 (4bit, needs ~198.6 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/GLM-4.5-4bit/tree/61cf8ee56baf09205b3885f56fd1653df4a60a9f))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/GLM-4.5-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/GLM-4.5-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.5)
 
 [interactive version](https://whatmodel.sh/model/glm-4-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

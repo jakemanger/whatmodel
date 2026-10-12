@@ -44,68 +44,93 @@ weighted average                               = 40.2
 
 ## How to run it
 
-<pre>
-download                       size  score
-16-bit bf16                ~16.06GB   40.2
-4-bit Q4_K_M                 ~4.9GB   40.2
-8-bit Q8_0                   ~8.5GB   40.2
-4-bit mlx-4bit · mac only    ~5.3GB   40.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Llama3-OpenBioLLM-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF/tree/fed5b00257a0b698ae427d9fc520ae49a3c88c37))
+   
+   ```sh
+   llama cli -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-llama cli -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.5GB
-llama cli -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~8.5 GB) `llama cli -hf mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-lms get https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~8.5GB
-lms get https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~5.3GB
-lms get https://huggingface.co/mlx-community/Llama3-OpenBioLLM-8B -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Llama3-OpenBioLLM-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF/tree/fed5b00257a0b698ae427d9fc520ae49a3c88c37))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-ollama run hf.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.5GB
-ollama run hf.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF@Q8_0 -y` · 4bit (~5.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama3-OpenBioLLM-8B -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~5.3GB
-mlx_lm.chat --model mlx-community/Llama3-OpenBioLLM-8B
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Llama3-OpenBioLLM-8B
-```
+### Ollama
 
-**Other engines**
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 16-bit bf16 · ~16.06GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='aaditya/Llama3-OpenBioLLM-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+2. Run Llama3-OpenBioLLM-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF/tree/fed5b00257a0b698ae427d9fc520ae49a3c88c37))
+   
+   ```sh
+   ollama run hf.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/Llama3-OpenBioLLM-8B-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Llama3-OpenBioLLM-8B (4bit, needs ~5.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama3-OpenBioLLM-8B/tree/0ede5ea7a61964dac781e660cce8706ae091c4ac))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Llama3-OpenBioLLM-8B
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Llama3-OpenBioLLM-8B
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/aaditya](https://huggingface.co/aaditya/Llama3-OpenBioLLM-8B/tree/70d6bb521cab6ca755b675ade38831eedf89d31c))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='aaditya/Llama3-OpenBioLLM-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/aaditya](https://huggingface.co/aaditya/Llama3-OpenBioLLM-8B)
 
 [interactive version](https://whatmodel.sh/model/llama3-openbiollm-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

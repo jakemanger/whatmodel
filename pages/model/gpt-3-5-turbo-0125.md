@@ -134,10 +134,10 @@ weighted average                                   = 46.4
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [developers.openai.com](https://developers.openai.com/api/docs/models/gpt-3.5-turbo)
 
 <sub>[price source](https://developers.openai.com/api/docs/models/gpt-3.5-turbo): USD per 1M tokens, OpenAI API standard processing, model page 'gpt-3.5-turbo' whose default snapshot is gpt-3.5-turbo-0125: input $0.5, output $1.5; cached-input, Batch and other tiers excluded. Currency: USD. OpenAI official model page, observed 2026-09-28. · [context source](https://developers.openai.com/api/docs/models/gpt-3.5-turbo): OpenAI model page for gpt-3.5-turbo (default snapshot gpt-3.5-turbo-0125): 16,385 context window. Observed 2026-09-28.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-3-5-turbo-0125) · [JSON](https://whatmodel.sh/api?format=json&all=1)

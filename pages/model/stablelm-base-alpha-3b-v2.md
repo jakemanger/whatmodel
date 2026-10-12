@@ -52,22 +52,14 @@ weighted average                          = 23.9
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/stabilityai/stablelm-base-alpha-3b-v2/blob/997d95943eee0697ba9e9cd2b981b9fad6962d9e/config.json): Stability AI official configuration for stablelm-base-alpha-3b-v2 (pinned commit 997d959): max\_position\_embeddings 4096. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
+### Other ways to run it
 
-<pre>
-download        size  score
-4-bit fp32  ~11.18GB   23.9
-</pre>
+1. Run it as published (fp32, needs ~11.18 GB, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-base-alpha-3b-v2/tree/997d95943eee0697ba9e9cd2b981b9fad6962d9e))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='stabilityai/stablelm-base-alpha-3b-v2', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp32 · ~11.18GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='stabilityai/stablelm-base-alpha-3b-v2', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-base-alpha-3b-v2)
 
 [interactive version](https://whatmodel.sh/model/stablelm-base-alpha-3b-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

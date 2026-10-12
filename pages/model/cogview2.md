@@ -58,23 +58,16 @@ weighted average                                   = 1.4
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp16 (--fp16), 3 stages · nvidia only     ~43.7GB    1.4
-fp16 (--fp16), first stage only · nvidi…  ~13.5GB    1.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16 (--fp16), 3 stages, needs ~43.7 GB, NVIDIA only, from [github.com/zai-org](https://github.com/zai-org/CogView2/blob/d92dbad03020b3d1a3ddc195a7c915f333597f95/README.md))
+   
+   ```sh
+   git clone https://github.com/zai-org/CogView2 && cd CogView2 && pip install -r requirements.txt && git clone https://github.com/Sleepychord/Image-Local-Attention && (cd Image-Local-Attention && python setup.py install) && SAT_HOME=./sat_models python cogview2_text2image.py --mode inference --fp16 --input-source input.txt --output-path samples_sat_v0.2 --batch-size 16 --max-inference-batch-size 8
+   ```
 
-### Run it on your own machine
+Other versions: fp16 (--fp16), first stage only (~13.5 GB, NVIDIA only) `git clone https://github.com/zai-org/CogView2 && cd CogView2 && pip install -r requirements.txt && SAT_HOME=./sat_models python cogview2_text2image.py --mode inference --fp16 --input-source input.txt --output-path samples_sat_v0.2 --batch-size 16 --max-inference-batch-size 8 --only-first-stage`
 
-**Other engines**
-
-```sh
-# fp16 (--fp16), 3 stages · nvidia only · ~43.7GB
-git clone https://github.com/zai-org/CogView2 && cd CogView2 && pip install -r requirements.txt && git clone https://github.com/Sleepychord/Image-Local-Attention && (cd Image-Local-Attention && python setup.py install) && SAT_HOME=./sat_models python cogview2_text2image.py --mode inference --fp16 --input-source input.txt --output-path samples_sat_v0.2 --batch-size 16 --max-inference-batch-size 8
-# fp16 (--fp16), first stage only · nvidia only · ~13.5GB
-git clone https://github.com/zai-org/CogView2 && cd CogView2 && pip install -r requirements.txt && SAT_HOME=./sat_models python cogview2_text2image.py --mode inference --fp16 --input-source input.txt --output-path samples_sat_v0.2 --batch-size 16 --max-inference-batch-size 8 --only-first-stage
-```
+Official weights and documentation: [github.com/zai-org](https://github.com/zai-org/CogView2)
 
 [interactive version](https://whatmodel.sh/model/cogview2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

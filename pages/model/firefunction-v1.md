@@ -43,20 +43,14 @@ weighted average                                   = 41.5
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit fp16  ~93.41GB   41.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~93.41 GB, from [huggingface.co/fireworks-ai](https://huggingface.co/fireworks-ai/firefunction-v1/tree/d19325377a5b137c3f178ad8561febfd75a2f771))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='fireworks-ai/firefunction-v1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp16 · ~93.41GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='fireworks-ai/firefunction-v1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/fireworks-ai](https://huggingface.co/fireworks-ai/firefunction-v1)
 
 [interactive version](https://whatmodel.sh/model/firefunction-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

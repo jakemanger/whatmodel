@@ -40,20 +40,14 @@ weighted average                        = 37.7
 
 ## How to run it
 
-<pre>
-download         size  score
-16-bit bf16  ~15.59GB   37.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~15.59 GB, from [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/neo_7b_instruct_v0.1-ExPO/tree/2b427687c60cd1e8972d8c9aa199ad935b244712))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/neo_7b_instruct_v0.1-ExPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~15.59GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/neo_7b_instruct_v0.1-ExPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/neo_7b_instruct_v0.1-ExPO)
 
 [interactive version](https://whatmodel.sh/model/neo-7b-instruct-v0-1-expo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

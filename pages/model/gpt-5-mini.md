@@ -182,10 +182,10 @@ weighted average                                   = 67.4
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $0.69/M blended · $0.25 in / $2 out per 1M tokens · [platform.openai.com](https://platform.openai.com/docs/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-5-mini.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-5-mini.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-5-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

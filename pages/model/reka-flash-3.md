@@ -41,50 +41,81 @@ weighted average                        = 52.4
 
 ## How to run it
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~13.61GB   52.4
-4-bit mlx-4bit · mac only   ~11.8GB   52.4
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Reka Flash 3 (21B) (Q4_K_M, needs ~13.61 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/RekaAI_reka-flash-3-GGUF/tree/02951df8711b30e85faaa672a4ec4c3c3c6c0e37))
+   
+   ```sh
+   llama cli -hf bartowski/RekaAI_reka-flash-3-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/RekaAI_reka-flash-3-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit q4_k_m · ~13.61GB
-llama cli -hf bartowski/RekaAI_reka-flash-3-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/RekaAI_reka-flash-3-GGUF:Q4_K_M
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit q4_k_m · ~13.61GB
-lms get https://huggingface.co/bartowski/RekaAI_reka-flash-3-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~11.8GB
-lms get https://huggingface.co/mlx-community/reka-flash-3-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Reka Flash 3 (21B) (Q4_K_M, needs ~13.61 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/RekaAI_reka-flash-3-GGUF/tree/02951df8711b30e85faaa672a4ec4c3c3c6c0e37))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/RekaAI_reka-flash-3-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~13.61GB
-ollama run hf.co/bartowski/RekaAI_reka-flash-3-GGUF:Q4_K_M
-```
+Other versions: 4bit (~11.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/reka-flash-3-4bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~11.8GB
-mlx_lm.chat --model mlx-community/reka-flash-3-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/reka-flash-3-4bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Reka Flash 3 (21B) (Q4_K_M, needs ~13.61 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/RekaAI_reka-flash-3-GGUF/tree/02951df8711b30e85faaa672a4ec4c3c3c6c0e37))
+   
+   ```sh
+   ollama run hf.co/bartowski/RekaAI_reka-flash-3-GGUF:Q4_K_M
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Reka Flash 3 (21B) (4bit, needs ~11.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/reka-flash-3-4bit/tree/71df73313e59100f658a289f4a6f3e6e84b5f542))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/reka-flash-3-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/reka-flash-3-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/RekaAI](https://huggingface.co/RekaAI/reka-flash-3)
 
 [interactive version](https://whatmodel.sh/model/reka-flash-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

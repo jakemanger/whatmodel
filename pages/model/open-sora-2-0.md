@@ -45,23 +45,16 @@ weighted average                                   = 42.4
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-bf16 256px text-to-image-to-video + off…  ~83.5GB   42.4
-bf16 256px direct text-to-video · nvidi…  ~54.5GB   42.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 256PX TEXT-TO-IMAGE-TO-VIDEO + OFFLOAD (FLUX FIRST FRAME), needs ~83.5 GB, NVIDIA only, from [github.com/hpcaitech](https://github.com/hpcaitech/Open-Sora/blob/7ad6a96a135feb81f755c84fb391818718f6beb2/README.md))
+   
+   ```sh
+   git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && pip install -v . && pip install xformers==0.0.27.post2 --index-url https://download.pytorch.org/whl/cu121 && pip install flash-attn --no-build-isolation && pip install "huggingface_hub[cli]" && huggingface-cli download hpcai-tech/Open-Sora-v2 --local-dir ./ckpts && torchrun --nproc_per_node 1 --standalone scripts/diffusion/inference.py configs/diffusion/inference/t2i2v_256px.py --save-dir samples --prompt "raining, sea" --offload True
+   ```
 
-### Run it on your own machine
+Other versions: BF16 256PX DIRECT TEXT-TO-VIDEO (~54.5 GB, NVIDIA only) `git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && pip install -v . && pip install xformers==0.0.27.post2 --index-url https://download.pytorch.org/whl/cu121 && pip install flash-attn --no-build-isolation && pip install "huggingface_hub[cli]" && huggingface-cli download hpcai-tech/Open-Sora-v2 --local-dir ./ckpts && torchrun --nproc_per_node 1 --standalone scripts/diffusion/inference.py configs/diffusion/inference/256px.py --prompt "raining, sea"`
 
-**Other engines**
-
-```sh
-# bf16 256px text-to-image-to-video + offload (Flux first frame) · nvidia only · ~83.5GB
-git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && pip install -v . && pip install xformers==0.0.27.post2 --index-url https://download.pytorch.org/whl/cu121 && pip install flash-attn --no-build-isolation && pip install "huggingface_hub[cli]" && huggingface-cli download hpcai-tech/Open-Sora-v2 --local-dir ./ckpts && torchrun --nproc_per_node 1 --standalone scripts/diffusion/inference.py configs/diffusion/inference/t2i2v_256px.py --save-dir samples --prompt "raining, sea" --offload True
-# bf16 256px direct text-to-video · nvidia only · ~54.5GB
-git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && pip install -v . && pip install xformers==0.0.27.post2 --index-url https://download.pytorch.org/whl/cu121 && pip install flash-attn --no-build-isolation && pip install "huggingface_hub[cli]" && huggingface-cli download hpcai-tech/Open-Sora-v2 --local-dir ./ckpts && torchrun --nproc_per_node 1 --standalone scripts/diffusion/inference.py configs/diffusion/inference/256px.py --prompt "raining, sea"
-```
+Official weights and documentation: [huggingface.co/hpcai-tech](https://huggingface.co/hpcai-tech/Open-Sora-v2)
 
 [interactive version](https://whatmodel.sh/model/open-sora-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

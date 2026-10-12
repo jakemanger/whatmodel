@@ -80,50 +80,60 @@ weighted average                              = 43.9
 
 ## How to run it
 
-<pre>
-download          size  score
-4-bit q4_0    ~38.87GB   43.9
-4-bit Q4_K_M   ~41.4GB   43.9
-2-bit Q2_K     ~25.5GB   43.9
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Xwin-LM 70B v0.1 (Q4_K_M, needs ~41.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF/tree/5f9be9552236a08b7af62b8149cc01761b6dfee2))
+   
+   ```sh
+   llama cli -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~41.4GB
-llama cli -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q4_K_M
-# 2-bit Q2_K · ~25.5GB
-llama cli -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q2_K
-```
+Other versions: Q2_K (~25.5 GB) `llama cli -hf mradermacher/Xwin-LM-70B-V0.1-GGUF:Q2_K`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~41.4GB
-lms get https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit Q2_K · ~25.5GB
-lms get https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Xwin-LM 70B v0.1 (Q4_K_M, needs ~41.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF/tree/5f9be9552236a08b7af62b8149cc01761b6dfee2))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_0 · ~38.87GB
-ollama run xwinlm:70b-v0.1
-# 4-bit Q4_K_M · ~41.4GB
-ollama run hf.co/mradermacher/Xwin-LM-70B-V0.1-GGUF:Q4_K_M
-# 2-bit Q2_K · ~25.5GB
-ollama run hf.co/mradermacher/Xwin-LM-70B-V0.1-GGUF:Q2_K
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: Q2_K (~25.5 GB) `lms get https://huggingface.co/mradermacher/Xwin-LM-70B-V0.1-GGUF@Q2_K -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Xwin-LM 70B v0.1 (Q4_0, needs ~38.87 GB, from [ollama.com](https://ollama.com/library/xwinlm/tags))
+   
+   ```sh
+   ollama run xwinlm:70b-v0.1
+   ```
+
+Official weights and documentation: [huggingface.co/Xwin-LM](https://huggingface.co/Xwin-LM/Xwin-LM-70B-V0.1)
 
 [interactive version](https://whatmodel.sh/model/xwin-lm-70b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

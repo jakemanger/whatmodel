@@ -55,23 +55,16 @@ IBM Granite Speech 4.…  <a href="https://huggingface.co/ibm-granite/granite-sp
 
 ## How to run it
 
-<pre>
-version               needs  score
-bf16 · mac only     ~6.04GB   62.3
-bf16 · nvidia only  ~6.04GB   62.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~6.04 GB, Mac only, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-speech-4.1-2b))
+   
+   ```sh
+   uvx --from mlx-audio mlx_audio.stt.generate --model ibm-granite/granite-speech-4.1-2b --audio audio.wav --output-path transcript
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~6.04 GB, NVIDIA only) `vllm serve ibm-granite/granite-speech-4.1-2b --max-model-len 2048`
 
-**Other engines**
-
-```sh
-# bf16 · mac only · ~6.04GB
-uvx --from mlx-audio mlx_audio.stt.generate --model ibm-granite/granite-speech-4.1-2b --audio audio.wav --output-path transcript
-# bf16 · nvidia only · ~6.04GB
-vllm serve ibm-granite/granite-speech-4.1-2b --max-model-len 2048
-```
+Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-speech-4.1-2b)
 
 [interactive version](https://whatmodel.sh/model/granite-speech-4-1-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

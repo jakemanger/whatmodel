@@ -42,6 +42,8 @@ weighted average                                   = 28.7
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/vinesmsuic](https://huggingface.co/vinesmsuic/magicbrush-jul7)
 
 [interactive version](https://whatmodel.sh/model/magicbrush) · [JSON](https://whatmodel.sh/api?format=json&all=1)

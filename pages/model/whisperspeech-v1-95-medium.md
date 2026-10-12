@@ -45,20 +45,14 @@ weighted average                                = 28.0
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp16 (whisperspeech 0.8.9) · nvidia only  ~3.18GB   28.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16 (whisperspeech 0.8.9), needs ~3.18 GB, NVIDIA only, from [github.com/WhisperSpeech](https://github.com/WhisperSpeech/WhisperSpeech/blob/a45964589f0a5c7b8518b2fda1b60e334872c4bd/examples/minimal.py))
+   
+   ```sh
+   uv run --python 3.12 --with whisperspeech==0.8.9 --with webdataset --with torchcodec python -c "from whisperspeech.pipeline import Pipeline; pipe = Pipeline(t2s_ref='WhisperSpeech/WhisperSpeech:t2s-v1.95-medium-7lang.model', s2a_ref='WhisperSpeech/WhisperSpeech:s2a-v1.95-medium-7lang.model'); pipe.generate_to_file('output.wav', 'This is a test')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 (whisperspeech 0.8.9) · nvidia only · ~3.18GB
-uv run --python 3.12 --with whisperspeech==0.8.9 --with webdataset --with torchcodec python -c "from whisperspeech.pipeline import Pipeline; pipe = Pipeline(t2s_ref='WhisperSpeech/WhisperSpeech:t2s-v1.95-medium-7lang.model', s2a_ref='WhisperSpeech/WhisperSpeech:s2a-v1.95-medium-7lang.model'); pipe.generate_to_file('output.wav', 'This is a test')"
-```
+Official weights and documentation: [huggingface.co/WhisperSpeech](https://huggingface.co/WhisperSpeech/WhisperSpeech)
 
 [interactive version](https://whatmodel.sh/model/whisperspeech-v1-95-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

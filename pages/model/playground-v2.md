@@ -45,26 +45,16 @@ weighted average                                   = 41.2
 
 ## How to run it
 
-<pre>
-version                needs  score
-fp16 · nvidia only    ~8.9GB   41.2
-fp16 (sd.cpp)         ~8.8GB   41.2
-q8_0 (sd.cpp --type)  ~4.9GB   41.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~8.9 GB, NVIDIA only, from [huggingface.co/playgroundai](https://huggingface.co/playgroundai/playground-v2-1024px-aesthetic))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('playgroundai/playground-v2-1024px-aesthetic', torch_dtype=torch.float16, use_safetensors=True, add_watermarker=False, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', guidance_scale=3.0).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
+Other versions: fp16 (sd.cpp) (~8.8 GB) `sd-cli -m models/playground-v2.fp16.safetensors -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 3.0 -v` · Q8_0 (SD.CPP --TYPE) (~4.9 GB) `sd-cli -m models/playground-v2.fp16.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 3.0 -v`
 
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~8.9GB
-uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('playgroundai/playground-v2-1024px-aesthetic', torch_dtype=torch.float16, use_safetensors=True, add_watermarker=False, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', guidance_scale=3.0).images[0].save('out.png')"
-# fp16 (sd.cpp) · ~8.8GB
-sd-cli -m models/playground-v2.fp16.safetensors -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 3.0 -v
-# q8_0 (sd.cpp --type) · ~4.9GB
-sd-cli -m models/playground-v2.fp16.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 3.0 -v
-```
+Official weights and documentation: [huggingface.co/playgroundai](https://huggingface.co/playgroundai/playground-v2-1024px-aesthetic)
 
 [interactive version](https://whatmodel.sh/model/playground-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

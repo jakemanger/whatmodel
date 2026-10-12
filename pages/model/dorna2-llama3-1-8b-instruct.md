@@ -40,45 +40,64 @@ weighted average                          = 43.4
 
 ## How to run it
 
-<pre>
-download          size  score
-16-bit bf16   ~16.06GB   43.4
-4-bit q4_k_m    ~4.9GB   43.4
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Dorna2-Llama3.1-8B-Instruct (Q4_K_M, needs ~4.9 GB, from [huggingface.co/aeranginkaman](https://huggingface.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF/tree/0e6b14900c1598ad1ec89eb611fc062edd15bb46))
+   
+   ```sh
+   llama cli -hf aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF:q4_k_m
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF:q4_k_m
+   ```
 
-```sh
-# 4-bit q4_k_m · ~4.9GB
-llama cli -hf aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF:q4_k_m
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF:q4_k_m
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit q4_k_m · ~4.9GB
-lms get https://huggingface.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF@q4_k_m -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Dorna2-Llama3.1-8B-Instruct (Q4_K_M, needs ~4.9 GB, from [huggingface.co/aeranginkaman](https://huggingface.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF/tree/0e6b14900c1598ad1ec89eb611fc062edd15bb46))
+   
+   ```sh
+   lms get https://huggingface.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF@q4_k_m -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~4.9GB
-ollama run hf.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF:q4_k_m
-```
+### Ollama
 
-**Other engines**
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 16-bit bf16 · ~16.06GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='PartAI/Dorna2-Llama3.1-8B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+2. Run Dorna2-Llama3.1-8B-Instruct (Q4_K_M, needs ~4.9 GB, from [huggingface.co/aeranginkaman](https://huggingface.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF/tree/0e6b14900c1598ad1ec89eb611fc062edd15bb46))
+   
+   ```sh
+   ollama run hf.co/aeranginkaman/Dorna2-Llama3.1-8B-Instruct-Q4_K_M-GGUF:q4_k_m
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/PartAI](https://huggingface.co/PartAI/Dorna2-Llama3.1-8B-Instruct/tree/b78e4bd261100c96e511ed5090ca0ce0e1f4b340))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='PartAI/Dorna2-Llama3.1-8B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/PartAI](https://huggingface.co/PartAI/Dorna2-Llama3.1-8B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/dorna2-llama3-1-8b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

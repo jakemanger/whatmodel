@@ -66,20 +66,14 @@ weighted average                        = 43.8
 
 ## How to run it
 
-<pre>
-download         size  score
-16-bit bf16  ~67.49GB   43.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~67.49 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/codetulu-2-34b/tree/20b3389675862e961649b2b031680f20855dcfaf))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/codetulu-2-34b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~67.49GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/codetulu-2-34b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/codetulu-2-34b)
 
 [interactive version](https://whatmodel.sh/model/code-tulu-2-34b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

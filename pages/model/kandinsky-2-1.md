@@ -23,13 +23,14 @@ COCO-30k zero-shot FID ↓ (Kandins…  8.2100 FID  lab          <a href="https:
 
 ## How to run it
 
-### Run it on your own machine
+### Other ways to run it
 
-**Other engines**
+1. Run it as published (fp16, needs ~12 GB, NVIDIA only, from [huggingface.co/kandinsky-community](https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md))
+   
+   ```sh
+   uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-2-1', torch_dtype=torch.float16).to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')"
+   ```
 
-```sh
-# fp16 · ~12GB
-uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-2-1', torch_dtype=torch.float16).to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')"
-```
+Official weights and documentation: [huggingface.co/kandinsky-community](https://huggingface.co/kandinsky-community/kandinsky-2-1)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/kandinsky-2-1)

@@ -42,20 +42,14 @@ weighted average                        = 41.5
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp32 (Kokoro KModel, Oddadmix/kokoro fo…  ~0.33GB   41.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (Kokoro KModel, Oddadmix/kokoro fork), needs ~0.33 GB, from [huggingface.co/oddadmix](https://huggingface.co/oddadmix/Nabra-82M-v0.1/blob/adf6abf35c46db5f2b08803b5067a12c759b1ee1/README.md))
+   
+   ```sh
+   pip install "kokoro @ git+https://github.com/Oddadmix/kokoro.git@main" torch soundfile huggingface_hub misaki camel-tools && camel_data -i disambig-mle-calima-msa-r13 && wget https://gist.githubusercontent.com/Oddadmix/dc699f7942a9516ce29d4842c7aed756/raw/827b541c892a862f9ef3b44006a6e27b100d1bdd/arabic_g2p.py && python -c "import numpy as np, torch, soundfile as sf; from huggingface_hub import hf_hub_download; from arabic_g2p import ArabicG2P, EXTRA_SYMBOLS, clean_phonemes, normalize_text; from kokoro import KModel, KPipeline; from kokoro import pipeline as kpipeline_mod; R = 'oddadmix/Nabra-82M-v0.1'; kmodel = KModel(repo_id=R, config=hf_hub_download(R, 'config.json'), model=hf_hub_download(R, 'kokoro_arabic.pth'), disable_complex=True).eval(); kmodel.vocab.update(EXTRA_SYMBOLS); kpipeline_mod.LANG_CODES.setdefault('ar', 'ar'); pipeline = KPipeline(lang_code='ar', repo_id=R, model=kmodel); _orig_g2p = pipeline.g2p; pipeline.g2p = lambda t: (clean_phonemes(_orig_g2p(t)[0]), _orig_g2p(t)[1]); voice = torch.load(hf_hub_download(R, 'af_msa.pt'), map_location='cpu', weights_only=True); text_norm, _ = normalize_text('مرحبا بك في نبرة'); diac = ArabicG2P(diacritize=True).diacritize(text_norm); sf.write('nabra.wav', np.concatenate([a.detach().cpu().numpy() for _, _, a in pipeline(diac, voice=voice, speed=1.0)]).astype(np.float32), 24000)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (Kokoro KModel, Oddadmix/kokoro fork) · ~0.33GB
-pip install "kokoro @ git+https://github.com/Oddadmix/kokoro.git@main" torch soundfile huggingface_hub misaki camel-tools && camel_data -i disambig-mle-calima-msa-r13 && wget https://gist.githubusercontent.com/Oddadmix/dc699f7942a9516ce29d4842c7aed756/raw/827b541c892a862f9ef3b44006a6e27b100d1bdd/arabic_g2p.py && python -c "import numpy as np, torch, soundfile as sf; from huggingface_hub import hf_hub_download; from arabic_g2p import ArabicG2P, EXTRA_SYMBOLS, clean_phonemes, normalize_text; from kokoro import KModel, KPipeline; from kokoro import pipeline as kpipeline_mod; R = 'oddadmix/Nabra-82M-v0.1'; kmodel = KModel(repo_id=R, config=hf_hub_download(R, 'config.json'), model=hf_hub_download(R, 'kokoro_arabic.pth'), disable_complex=True).eval(); kmodel.vocab.update(EXTRA_SYMBOLS); kpipeline_mod.LANG_CODES.setdefault('ar', 'ar'); pipeline = KPipeline(lang_code='ar', repo_id=R, model=kmodel); _orig_g2p = pipeline.g2p; pipeline.g2p = lambda t: (clean_phonemes(_orig_g2p(t)[0]), _orig_g2p(t)[1]); voice = torch.load(hf_hub_download(R, 'af_msa.pt'), map_location='cpu', weights_only=True); text_norm, _ = normalize_text('مرحبا بك في نبرة'); diac = ArabicG2P(diacritize=True).diacritize(text_norm); sf.write('nabra.wav', np.concatenate([a.detach().cpu().numpy() for _, _, a in pipeline(diac, voice=voice, speed=1.0)]).astype(np.float32), 24000)"
-```
+Official weights and documentation: [huggingface.co/oddadmix](https://huggingface.co/oddadmix/Nabra-82M-v0.1)
 
 [interactive version](https://whatmodel.sh/model/nabra-82m-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

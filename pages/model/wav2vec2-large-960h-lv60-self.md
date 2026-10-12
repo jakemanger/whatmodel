@@ -49,20 +49,14 @@ weighted average                        = 15.8
 
 ## How to run it
 
-<pre>
-version    needs  score
-fp32     ~2.04GB   15.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~2.04 GB, from [huggingface.co/facebook](https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self))
+   
+   ```sh
+   uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/wav2vec2-large-960h-lv60-self', chunk_length_s=30)('audio.wav')['text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · ~2.04GB
-uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/wav2vec2-large-960h-lv60-self', chunk_length_s=30)('audio.wav')['text'])"
-```
+Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self)
 
 [interactive version](https://whatmodel.sh/model/wav2vec2-large-960h-lv60-self) · [JSON](https://whatmodel.sh/api?format=json&all=1)

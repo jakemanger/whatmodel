@@ -59,26 +59,16 @@ weighted average                                   = 33.5
 
 ## How to run it
 
-<pre>
-version                needs  score
-fp16 · nvidia only    ~8.9GB   33.5
-fp16 (sd.cpp)         ~8.8GB   33.5
-q8_0 (sd.cpp --type)  ~4.9GB   33.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~8.9 GB, NVIDIA only, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/sdxl-turbo))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('stabilityai/sdxl-turbo', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', num_inference_steps=1, guidance_scale=0.0).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
+Other versions: fp16 (sd.cpp) (~8.8 GB) `sd-cli -m models/sd_xl_turbo_1.0_fp16.safetensors -H 512 -W 512 -p "a lovely cat" --cfg-scale 1 --steps 1 -v` · Q8_0 (SD.CPP --TYPE) (~4.9 GB) `sd-cli -m models/sd_xl_turbo_1.0_fp16.safetensors --type q8_0 -H 512 -W 512 -p "a lovely cat" --cfg-scale 1 --steps 1 -v`
 
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~8.9GB
-uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('stabilityai/sdxl-turbo', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', num_inference_steps=1, guidance_scale=0.0).images[0].save('out.png')"
-# fp16 (sd.cpp) · ~8.8GB
-sd-cli -m models/sd_xl_turbo_1.0_fp16.safetensors -H 512 -W 512 -p "a lovely cat" --cfg-scale 1 --steps 1 -v
-# q8_0 (sd.cpp --type) · ~4.9GB
-sd-cli -m models/sd_xl_turbo_1.0_fp16.safetensors --type q8_0 -H 512 -W 512 -p "a lovely cat" --cfg-scale 1 --steps 1 -v
-```
+Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/sdxl-turbo)
 
 [interactive version](https://whatmodel.sh/model/sdxl-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

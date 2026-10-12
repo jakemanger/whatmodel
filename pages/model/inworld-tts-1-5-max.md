@@ -44,10 +44,10 @@ weighted average                                   = 61.9
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $10.00/M chars · [fal.ai](https://fal.ai/models/fal-ai/inworld-tts)
 
 <sub>[price source](https://fal.ai/models/fal-ai/inworld-tts): USD per 1M input characters: fal prices its 'Text to Speech Endpoint for Inworld's TTS-1.5 Max' (fal-ai/inworld-tts) at $0.01 per 1000 characters (x1000; endpoint billing record: billing\_unit 1000 characters, price 0.01). Inworld's own pricing page lists only TTS-2 models, and Inworld's docs mark inworld-tts-1.5-max as deprecated (not recommended for new projects) but not discontinued. Product: fal text-to-speech endpoint. API model: fal-ai/inworld-tts (Inworld TTS-1.5 Max). Settings: standard. Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: DeepInfra lists inworld-ai/realtime-tts-1.5-max (its replacement id for inworld-tts-1.5-max) at $50.00/1M characters. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/inworld-tts-1-5-max) · [JSON](https://whatmodel.sh/api?format=json&all=1)

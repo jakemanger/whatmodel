@@ -83,27 +83,22 @@ weighted average                                   = 52.7
 
 ## How to run it
 
+### Through an API
+
 api (Mistral AI) · $0.0060/audio min · [docs.mistral.ai](https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-realtime-26-02)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per input audio minute. Realtime 2602; not batch Voxtral Mini Transcribe V2. Product: Audio transcription. API model: voxtral-mini-transcribe-realtime-2602. Settings: endpoint=/v1/audio/transcriptions, streaming=yes. Price basis: published rate. Currency: USD.</sub>
 
-<pre>
-version                needs  score
-bf16 · nvidia only  ~11.13GB   52.7
-4bit · mac only      ~3.16GB   52.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (4bit, needs ~3.16 GB, Mac only, from [github.com/Blaizzy](https://github.com/Blaizzy/mlx-audio))
+   
+   ```sh
+   uvx --from mlx-audio mlx_audio.stt.generate --model mlx-community/Voxtral-Mini-4B-Realtime-2602-4bit --audio audio.wav --output-path out
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~11.13 GB, NVIDIA only) `VLLM_DISABLE_COMPILE_CACHE=1 vllm serve mistralai/Voxtral-Mini-4B-Realtime-2602 --compilation_config '{"cudagraph_mode": "PIECEWISE"}'`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~11.13GB
-VLLM_DISABLE_COMPILE_CACHE=1 vllm serve mistralai/Voxtral-Mini-4B-Realtime-2602 --compilation_config '{"cudagraph_mode": "PIECEWISE"}'
-# 4bit · mac only · ~3.16GB
-uvx --from mlx-audio mlx_audio.stt.generate --model mlx-community/Voxtral-Mini-4B-Realtime-2602-4bit --audio audio.wav --output-path out
-```
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602)
 
 [interactive version](https://whatmodel.sh/model/voxtral-mini-4b-realtime) · [JSON](https://whatmodel.sh/api?format=json&all=1)

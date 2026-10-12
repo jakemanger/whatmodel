@@ -45,27 +45,22 @@ weighted average                        = 58.8
 
 ## How to run it
 
+### Through an API
+
 api (Krea) · $0.015/image · [krea.ai](https://www.krea.ai/docs/api-reference/krea/krea-2-turbo.md)
 
 <sub>[price source](https://www.krea.ai/docs/api-reference/krea/krea-2-turbo.md): USD per generated image, Krea 2 Turbo text-to-image on the Krea API: fixed price $0.015 (style references $0.0175, moodboards $0.02). Product: Krea API. API model: Krea 2 Turbo (POST /generate/image/krea/krea-2/medium-turbo). Settings: resolution=1K (the only option), no references, one image. Price basis: published fixed list price. Identity: the open-weights card (krea/Krea-2-Turbo) describes Turbo as the post-trained, distilled release checkpoint with 'Open-weight release and Krea-hosted product integrations'; fal also serves the open weights (fal-ai/krea-2/turbo) at $0.008 per megapixel. Currency: USD. Krea official API documentation, observed 2026-09-25.</sub>
 
-<pre>
-version                                    needs  score
-bf16 · nvidia only                       ~43.3GB   58.8
-gguf-q8_0 + Qwen3-VL 4B q4_k_m (sd.cpp)  ~20.2GB   58.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf-q8_0 + Qwen3-VL 4B q4_k_m (sd.cpp), needs ~20.2 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/krea2.md))
+   
+   ```sh
+   sd-cli --diffusion-model models/Krea-2-Turbo-Q8_0.gguf --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/wan_2.1_vae.safetensors -p "a lovely cat holding a sign says 'krea2.cpp'" --steps 8 --cfg-scale 1.0 --diffusion-fa -v --offload-to-cpu
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~43.3 GB, NVIDIA only) `uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import Krea2Pipeline; p=Krea2Pipeline.from_pretrained('krea/Krea-2-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p('a fox in the snow', num_inference_steps=8, guidance_scale=0.0).images[0].save('krea2.png')"`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~43.3GB
-uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import Krea2Pipeline; p=Krea2Pipeline.from_pretrained('krea/Krea-2-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p('a fox in the snow', num_inference_steps=8, guidance_scale=0.0).images[0].save('krea2.png')"
-# gguf-q8_0 + Qwen3-VL 4B q4_k_m (sd.cpp) · ~20.2GB
-sd-cli --diffusion-model models/Krea-2-Turbo-Q8_0.gguf --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/wan_2.1_vae.safetensors -p "a lovely cat holding a sign says 'krea2.cpp'" --steps 8 --cfg-scale 1.0 --diffusion-fa -v --offload-to-cpu
-```
+Official weights and documentation: [huggingface.co/krea](https://huggingface.co/krea/Krea-2-Turbo)
 
 [interactive version](https://whatmodel.sh/model/krea-2-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

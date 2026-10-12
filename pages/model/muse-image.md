@@ -67,10 +67,10 @@ weighted average                                   = 76.0
 
 ## How to run it
 
+### Through an API
+
 api (Meta) · $0.010/image · [dev.meta.ai](https://dev.meta.ai/docs/pricing-rate-limits)
 
 <sub>[price source](https://dev.meta.ai/docs/pricing-rate-limits): USD per successfully generated image on Meta Model API; flat rate regardless of prompt length, reasoning\_strength or built-in web/image search; n images billed as n. Product: Meta Model API image generation. API model: muse-image-1.0. Settings: n=1. Price basis: published list rate. Currency: USD. Meta official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/muse-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -45,47 +45,64 @@ weighted average                          = 24.9
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1/blob/094fbdd0c911feb485ce55de1952ab2e75277e1e/config.json): Together official configuration for RedPajama-INCITE-Base-3B-v1 (pinned commit): max\_position\_embeddings 2048. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download         size  score
-4-bit fp16    ~5.69GB   24.9
-4-bit q4_k_m   ~1.8GB   24.9
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run RedPajama-INCITE Base 3B v1 (Q4_K_M, needs ~1.8 GB, from [huggingface.co/kikimuncher2](https://huggingface.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF/tree/875d39f7f31a56cd37ad5f89261c886c27944314))
+   
+   ```sh
+   llama cli -hf kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF:q4_k_m
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF:q4_k_m
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~1.8GB
-llama cli -hf kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF:q4_k_m
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF:q4_k_m
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run RedPajama-INCITE Base 3B v1 (Q4_K_M, needs ~1.8 GB, from [huggingface.co/kikimuncher2](https://huggingface.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF/tree/875d39f7f31a56cd37ad5f89261c886c27944314))
+   
+   ```sh
+   lms get https://huggingface.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF@q4_k_m -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~1.8GB
-lms get https://huggingface.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF@q4_k_m -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+### Ollama
 
-```sh
-# 4-bit q4_k_m · ~1.8GB
-ollama run hf.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF:q4_k_m
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-**Other engines**
+2. Run RedPajama-INCITE Base 3B v1 (Q4_K_M, needs ~1.8 GB, from [huggingface.co/kikimuncher2](https://huggingface.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF/tree/875d39f7f31a56cd37ad5f89261c886c27944314))
+   
+   ```sh
+   ollama run hf.co/kikimuncher2/RedPajama-INCITE-Base-3B-v1-Q4_K_M-GGUF:q4_k_m
+   ```
 
-```sh
-# 4-bit fp16 · ~5.69GB
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='togethercomputer/RedPajama-INCITE-Base-3B-v1')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### Other ways to run it
+
+1. Run it as published (fp16, needs ~5.69 GB, from [huggingface.co/togethercomputer](https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1/tree/094fbdd0c911feb485ce55de1952ab2e75277e1e))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='togethercomputer/RedPajama-INCITE-Base-3B-v1')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/togethercomputer](https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1)
 
 [interactive version](https://whatmodel.sh/model/redpajama-incite-base-3b-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

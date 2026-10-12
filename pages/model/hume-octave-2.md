@@ -10,6 +10,8 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Through an API
+
 api (Hume AI) · $25.00/M chars · [hume.ai](https://www.hume.ai/pricing)
 
 <sub>[price source](https://www.hume.ai/pricing): USD per 1M characters: Hume lists Octave 2 additional-character usage at $0.025 per 1,000 characters on the Business plan ($500/month; lowest published self-serve rate); Creator $0.075, Pro $0.06, Scale $0.05 per 1,000 on lower plans (x1000). Product: Octave text-to-speech API. API model: Octave 2. Settings: Business-plan usage-based overage. Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: monthly plan fee, included characters, EVI. Currency: USD. Hume official pricing page, observed 2026-09-25.</sub>

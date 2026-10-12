@@ -40,20 +40,14 @@ weighted average                        = 34.2
 
 ## How to run it
 
-<pre>
-download         size  score
-16-bit bf16  ~16.06GB   34.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/UCSC-VLAA](https://huggingface.co/UCSC-VLAA/MedReason-8B/tree/2730640542b2629e26bdc31938da7ee2a85ebd03))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='UCSC-VLAA/MedReason-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~16.06GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='UCSC-VLAA/MedReason-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/UCSC-VLAA](https://huggingface.co/UCSC-VLAA/MedReason-8B)
 
 [interactive version](https://whatmodel.sh/model/medreason-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

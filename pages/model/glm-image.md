@@ -82,28 +82,23 @@ zai-org/GLM-Image  <a href="https://github.com/zai-org/GLM-Image/blob/69b87db287
 
 ## How to run it
 
+### Through an API
+
 api (Z.ai) · $0.015/image · [docs.z.ai](https://docs.z.ai/guides/image/glm-image)
 
 <sub>[price source](https://docs.z.ai/guides/overview/pricing): USD per generated image on the Z.ai API (all Z.ai list prices in USD). Product: Z.ai image generation API. API model: glm-image. Settings: one image; recommended sizes such as 1280×1280. Price basis: published list rate. Currency: USD. Z.ai official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/zhipuai/glm-image.toml)</sub>
 
-<pre>
-version                                   needs  score
-bf16 · nvidia only                      ~38.9GB   50.0
-bf16 (model cpu offload) · nvidia only  ~38.9GB   50.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~38.9 GB, NVIDIA only, from [github.com/zai-org](https://github.com/zai-org/GLM-Image))
+   
+   ```sh
+   uv run --with git+https://github.com/huggingface/diffusers --with git+https://github.com/huggingface/transformers --with accelerate --with torch python -c "import torch; from diffusers.pipelines.glm_image import GlmImagePipeline; p=GlmImagePipeline.from_pretrained('zai-org/GLM-Image', torch_dtype=torch.bfloat16, device_map='cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=1.5).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (MODEL CPU OFFLOAD) (~38.9 GB, NVIDIA only) `uv run --with git+https://github.com/huggingface/diffusers --with git+https://github.com/huggingface/transformers --with accelerate --with torch python -c "import torch; from diffusers.pipelines.glm_image import GlmImagePipeline; p=GlmImagePipeline.from_pretrained('zai-org/GLM-Image', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=1.5).images[0].save('out.png')"`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~38.9GB
-uv run --with git+https://github.com/huggingface/diffusers --with git+https://github.com/huggingface/transformers --with accelerate --with torch python -c "import torch; from diffusers.pipelines.glm_image import GlmImagePipeline; p=GlmImagePipeline.from_pretrained('zai-org/GLM-Image', torch_dtype=torch.bfloat16, device_map='cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=1.5).images[0].save('out.png')"
-# bf16 (model cpu offload) · nvidia only · ~38.9GB
-uv run --with git+https://github.com/huggingface/diffusers --with git+https://github.com/huggingface/transformers --with accelerate --with torch python -c "import torch; from diffusers.pipelines.glm_image import GlmImagePipeline; p=GlmImagePipeline.from_pretrained('zai-org/GLM-Image', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=1.5).images[0].save('out.png')"
-```
+Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-Image)
 
 ## Published speed measurements
 

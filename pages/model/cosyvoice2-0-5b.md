@@ -80,20 +80,14 @@ weighted average                                   = 61.0
 
 ## How to run it
 
-<pre>
-version                  needs  score
-fp32 (CosyVoice repo)  ~4.07GB   61.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (CosyVoice repo), needs ~4.07 GB, from [huggingface.co/FunAudioLLM](https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/blob/eec1ae6c79877dbd9379285cf8789c9e0879293d/README.md))
+   
+   ```sh
+   git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git && cd CosyVoice && git submodule update --init --recursive && conda create -n cosyvoice -y python=3.10 && conda activate cosyvoice && pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com && python -c "from huggingface_hub import snapshot_download; snapshot_download('FunAudioLLM/CosyVoice2-0.5B', local_dir='pretrained_models/CosyVoice2-0.5B')" && python -c "import sys; sys.path.append('third_party/Matcha-TTS'); from cosyvoice.cli.cosyvoice import AutoModel; import torchaudio; cosyvoice = AutoModel(model_dir='pretrained_models/CosyVoice2-0.5B'); [torchaudio.save('zero_shot_{}.wav'.format(i), j['tts_speech'], cosyvoice.sample_rate) for i, j in enumerate(cosyvoice.inference_zero_shot('CosyVoice is undergoing a comprehensive upgrade, providing more accurate, stable, faster, and better voice generation capabilities.', '希望你以后能够做的比我还好呦。', './asset/zero_shot_prompt.wav'))]"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (CosyVoice repo) · ~4.07GB
-git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git && cd CosyVoice && git submodule update --init --recursive && conda create -n cosyvoice -y python=3.10 && conda activate cosyvoice && pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com && python -c "from huggingface_hub import snapshot_download; snapshot_download('FunAudioLLM/CosyVoice2-0.5B', local_dir='pretrained_models/CosyVoice2-0.5B')" && python -c "import sys; sys.path.append('third_party/Matcha-TTS'); from cosyvoice.cli.cosyvoice import AutoModel; import torchaudio; cosyvoice = AutoModel(model_dir='pretrained_models/CosyVoice2-0.5B'); [torchaudio.save('zero_shot_{}.wav'.format(i), j['tts_speech'], cosyvoice.sample_rate) for i, j in enumerate(cosyvoice.inference_zero_shot('CosyVoice is undergoing a comprehensive upgrade, providing more accurate, stable, faster, and better voice generation capabilities.', '希望你以后能够做的比我还好呦。', './asset/zero_shot_prompt.wav'))]"
-```
+Official weights and documentation: [huggingface.co/FunAudioLLM](https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B)
 
 [interactive version](https://whatmodel.sh/model/cosyvoice2-0-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

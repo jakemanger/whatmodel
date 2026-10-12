@@ -71,10 +71,10 @@ weighted average                                   = 74.6
 
 ## How to run it
 
+### Through an API
+
 api (DeepInfra) · $0.050/image · [deepinfra.com](https://deepinfra.com/ByteDance/Seedream-5.0-Pro)
 
 <sub>[price source](https://deepinfra.com/ByteDance/Seedream-5.0-Pro): USD per generated image on DeepInfra at the 1K/1.5K size tier (outputs up to 1.5K cost $0.0495; above 1.5K, including the endpoint's 2K default, $0.099/image). Additional input images after the first cost $0.0033 each. Product: DeepInfra text-to-image. API model: ByteDance/Seedream-5.0-Pro. Settings: size=1K or 1.5K tier, n=1, text-to-image without reference images. Price basis: published list rate. Currency: USD. Not the BytePlus ModelArk direct tariff. DeepInfra official model page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/seedream-5-0-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

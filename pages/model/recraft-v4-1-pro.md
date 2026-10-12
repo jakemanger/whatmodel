@@ -45,10 +45,10 @@ weighted average                        = 60.8
 
 ## How to run it
 
+### Through an API
+
 api (Recraft) · $0.21/image · [recraft.ai](https://www.recraft.ai/docs/api-reference/pricing)
 
 <sub>[price source](https://www.recraft.ai/docs/api-reference/pricing): USD per generated raster image, Recraft V4.1 Pro (same rate as V4.1 Utility Pro; V4.1 and V4.1 Utility $0.035; vector output priced separately at $0.30). Billed as 210 API units per image from pre-purchased unit packages. Product: Recraft API raster image generation. API model: Recraft V4.1 Pro. Settings: raster, n=1. Price basis: published list rate. Currency: USD. Recraft official API pricing page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/recraft-v4-1-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

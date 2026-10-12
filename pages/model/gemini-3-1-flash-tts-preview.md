@@ -72,10 +72,10 @@ weighted average                                   = 68.5
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $50.00/M chars · [fal.ai](https://fal.ai/models/fal-ai/gemini-3.1-flash-tts)
 
 <sub>[price source](https://fal.ai/models/fal-ai/gemini-3.1-flash-tts): USD per 1M input characters: fal prices its Gemini 3.1 Flash TTS endpoint (fal-ai/gemini-3.1-flash-tts; input schema: 'Input for Gemini 3.1 Flash TTS preview speech generation') at $0.05 per 1000 characters (x1000; endpoint billing record: billing\_unit 1000 characters, partner API). Google's own Gemini API prices this model per token only, which is not converted. Product: fal text-to-speech endpoint (Google partner API). API model: fal-ai/gemini-3.1-flash-tts (Gemini 3.1 Flash TTS preview). Settings: standard. Price basis: published list rate, per-1K to per-1M scaling only. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gemini-3-1-flash-tts-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

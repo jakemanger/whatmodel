@@ -46,26 +46,16 @@ weighted average                                = 40.5
 
 ## How to run it
 
-<pre>
-version                                  needs  score
-bf16 (fish-speech repo)                ~1.47GB   40.5
-bf16 (fish-speech repo) · mac only     ~1.47GB   40.5
-bf16 (fish-speech repo) · nvidia only  ~1.47GB   40.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (FISH-SPEECH REPO), needs ~1.47 GB, from [github.com/fishaudio](https://github.com/fishaudio/fish-speech/blob/7902e408c85b37193ce3f3c2361ca3c76be0d533/docs/en/inference.md))
+   
+   ```sh
+   git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout v1.5.0 && pip3 install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 && pip3 install -e .[stable] && huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-speech-1.5 && python -m tools.run_webui --llama-checkpoint-path "checkpoints/fish-speech-1.5" --decoder-checkpoint-path "checkpoints/fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth" --decoder-config-name firefly_gan_vq
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (FISH-SPEECH REPO) (~1.47 GB, Mac only) `git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout v1.5.0 && pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 && pip install -e .[stable] && huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-speech-1.5 && python tools/llama/generate.py --text "Hello, world." --checkpoint-path "checkpoints/fish-speech-1.5" --num-samples 2 --device mps && python tools/vqgan/inference.py -i "codes_0.npy" --checkpoint-path "checkpoints/fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth" --device mps` · BF16 (FISH-SPEECH REPO) (~1.47 GB, NVIDIA only) `git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout v1.5.0 && pip3 install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 && pip3 install -e .[stable] && huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-speech-1.5 && python tools/llama/generate.py --text "Hello, world." --checkpoint-path "checkpoints/fish-speech-1.5" --num-samples 2 --compile && python tools/vqgan/inference.py -i "codes_0.npy" --checkpoint-path "checkpoints/fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth"`
 
-**Other engines**
-
-```sh
-# bf16 (fish-speech repo) · ~1.47GB
-git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout v1.5.0 && pip3 install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 && pip3 install -e .[stable] && huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-speech-1.5 && python -m tools.run_webui --llama-checkpoint-path "checkpoints/fish-speech-1.5" --decoder-checkpoint-path "checkpoints/fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth" --decoder-config-name firefly_gan_vq
-# bf16 (fish-speech repo) · mac only · ~1.47GB
-git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout v1.5.0 && pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 && pip install -e .[stable] && huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-speech-1.5 && python tools/llama/generate.py --text "Hello, world." --checkpoint-path "checkpoints/fish-speech-1.5" --num-samples 2 --device mps && python tools/vqgan/inference.py -i "codes_0.npy" --checkpoint-path "checkpoints/fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth" --device mps
-# bf16 (fish-speech repo) · nvidia only · ~1.47GB
-git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout v1.5.0 && pip3 install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 && pip3 install -e .[stable] && huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-speech-1.5 && python tools/llama/generate.py --text "Hello, world." --checkpoint-path "checkpoints/fish-speech-1.5" --num-samples 2 --compile && python tools/vqgan/inference.py -i "codes_0.npy" --checkpoint-path "checkpoints/fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth"
-```
+Official weights and documentation: [huggingface.co/fishaudio](https://huggingface.co/fishaudio/fish-speech-1.5)
 
 [interactive version](https://whatmodel.sh/model/fish-speech-1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

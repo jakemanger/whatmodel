@@ -45,6 +45,8 @@ weighted average                                   = 52.4
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HY-OmniWeaving)
 
 [interactive version](https://whatmodel.sh/model/hy-omniweaving) · [JSON](https://whatmodel.sh/api?format=json&all=1)

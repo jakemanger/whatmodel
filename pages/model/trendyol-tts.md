@@ -43,6 +43,8 @@ weighted average                        = 39.3
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/Trendyol](https://huggingface.co/Trendyol/Trendyol-TTS)
 
 [interactive version](https://whatmodel.sh/model/trendyol-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

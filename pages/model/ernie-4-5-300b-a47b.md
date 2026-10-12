@@ -84,53 +84,68 @@ weighted average                                   = 59.9
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-PT/blob/47bbaf1c9e356313c3cb2ded9078a494fb152f0e/README.md): Baidu official model card (ERNIE-4.5-300B-A47B-PT): configuration table Context Length 131072. Observed 2026-09-25.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit ud-q4_k_xl           ~180.5GB   59.9
-2-bit ud-q2_k_xl            ~90.5GB   59.9
-4-bit mlx-4bit · mac only  ~168.5GB   59.9
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run ERNIE 4.5 300B-A47B (ud-q4_k_xl, needs ~180.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q4_K_XL
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q4_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: ud-q2_k_xl (~90.5 GB) `llama cli -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q2_K_XL`
 
-```sh
-# 4-bit ud-q4_k_xl · ~180.5GB
-llama cli -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q4_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl · ~90.5GB
-llama cli -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q2_K_XL
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit ud-q4_k_xl · ~180.5GB
-lms get https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF@UD-Q4_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit ud-q2_k_xl · ~90.5GB
-lms get https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~168.5GB
-lms get https://huggingface.co/mlx-community/ERNIE-4.5-300B-A47B-PT-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run ERNIE 4.5 300B-A47B (ud-q4_k_xl, needs ~180.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF/tree/main))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF@UD-Q4_K_XL -y
+   ```
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit mlx-4bit · mac only · ~168.5GB
-mlx_lm.chat --model mlx-community/ERNIE-4.5-300B-A47B-PT-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/ERNIE-4.5-300B-A47B-PT-4bit
-```
+Other versions: ud-q2_k_xl (~90.5 GB) `lms get https://huggingface.co/unsloth/ERNIE-4.5-300B-A47B-PT-GGUF@UD-Q2_K_XL -y` · 4bit (~168.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/ERNIE-4.5-300B-A47B-PT-4bit -y`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run ERNIE 4.5 300B-A47B (4bit, needs ~168.5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/ERNIE-4.5-300B-A47B-PT-4bit/tree/2ae73139f81d4c7ae52fc5060cc3dce46f9d0fec))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/ERNIE-4.5-300B-A47B-PT-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/ERNIE-4.5-300B-A47B-PT-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/baidu](https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-PT)
 
 [interactive version](https://whatmodel.sh/model/ernie-4-5-300b-a47b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

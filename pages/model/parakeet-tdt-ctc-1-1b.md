@@ -43,20 +43,14 @@ weighted average                                   = 55.9
 
 ## How to run it
 
-<pre>
-version                       needs  score
-q8_0-gguf (transcribe.cpp)  ~1.27GB   55.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (Q8_0-GGUF (TRANSCRIBE.CPP), needs ~1.27 GB, from [github.com/handy-computer](https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md))
+   
+   ```sh
+   git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/parakeet-tdt_ctc-1.1b-gguf parakeet-tdt_ctc-1.1b-Q8_0.gguf --local-dir models/parakeet-tdt_ctc-1.1b && build/bin/transcribe-cli -m models/parakeet-tdt_ctc-1.1b/parakeet-tdt_ctc-1.1b-Q8_0.gguf audio.wav
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# q8_0-gguf (transcribe.cpp) · ~1.27GB
-git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/parakeet-tdt_ctc-1.1b-gguf parakeet-tdt_ctc-1.1b-Q8_0.gguf --local-dir models/parakeet-tdt_ctc-1.1b && build/bin/transcribe-cli -m models/parakeet-tdt_ctc-1.1b/parakeet-tdt_ctc-1.1b-Q8_0.gguf audio.wav
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-tdt_ctc-1.1b)
 
 [interactive version](https://whatmodel.sh/model/parakeet-tdt-ctc-1-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

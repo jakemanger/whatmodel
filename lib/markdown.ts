@@ -7,12 +7,11 @@ import { results, updatedLabel } from "./data.ts";
 import { hasScore } from "./fit.ts";
 import { contextLabel, curlFor, detect, displayName, price, speedLabel, whereLabel } from "./format.ts";
 import { sourceName, sourceOf } from "./sources.ts";
-import type { Category, Model } from "./types.ts";
+import type { Category, Model, Variant } from "./types.ts";
 import { benchName, boardView, methodView, modelView, pageModels, resultLabel, type BoardView, type ModelView } from "./views.ts";
 import { strengths, type Strengths, type TestRow } from "./strengths.ts";
-import { RUNTIMES, primary, stepsFor } from "./runtimes.ts";
+import { primary, runGuide, versionLabel } from "./runtimes.ts";
 import { benchCatalogue } from "./bench-catalogue.ts";
-import type { Variant } from "./types.ts";
 
 const SITE = "https://whatmodel.sh";
 
@@ -208,17 +207,38 @@ function strengthsMarkdown(from: string, s: Strengths, name: string): string[] {
 }
 
 
-// Local downloads by runtime, llama.cpp first: each runtime's install line, then a command block.
-function localMarkdown(variants: { v: Variant; name: string }[]): string[] {
-  const out = [`### Run it on your own machine`];
-  for (const rt of RUNTIMES) {
-    const rows = variants.flatMap(({ v, name }) => stepsFor(v).filter((x) => x.runtime === rt.id).map((x) => ({ v, name, steps: x.steps })));
-    if (!rows.length) continue;
-    const install = rt.install.map((i) => (i.cmd ? `${i.label} \`${i.cmd}\`` : `[${i.label}](${i.href})`)).join(" · ");
-    out.push(`**${rt.id === "other" ? "Other engines" : rt.name}**${install ? ` · install: ${install}` : ""}${rt.note ? ` · ${rt.note}` : ""}`);
-    out.push(["```sh", ...rows.flatMap(({ v, name, steps }) => [`# ${name} · ${v.gb_estimated ? "~" : ""}${v.gb}GB`,
-      ...steps.filter((st) => !st.href).flatMap((st, i) => (st.cmd ? [...(i > 0 ? [`# ${st.label}`] : []), st.cmd] : [`# ${st.label}`]))]), "```"].join("\n"));
-  }
+// How to run a model, laid out like the site's model page: an API line, then one section per runtime with
+// numbered steps (lib/runtimes.ts runGuide decides the sections, versions and the one to start on).
+const fence = (lines: string[]) => ["```sh", ...lines, "```"].join("\n");
+const indent = (text: string) => text.split("\n").join("\n   ");
+const capital = (s: string) => s[0].toUpperCase() + s.slice(1);
+const repoLabel = (url?: string) => { if (!url) return ""; const u = new URL(url); const org = u.pathname.split("/").filter(Boolean)[0]; return `[${u.hostname.replace(/^www\./, "")}${org && u.hostname !== "ollama.com" ? `/${org}` : ""}](${url})`; };
+const needsLabel = (x: Variant) => `${x.gb_estimated ? "~" : ""}${x.gb} GB${x.platform && x.platform !== "any" ? `, ${x.platform === "mac" ? "Mac" : "NVIDIA"} only` : ""}`;
+function runMarkdown(m: Model, cat: Category): string[] {
+  const out = [`## How to run it`];
+  if (m.api) out.push(`### Through an API`, ...howToRun(m, cat));
+  const guide = runGuide(m.local?.variants ?? []);
+  guide.forEach((sec, n) => {
+    const rt = sec.runtime, main = sec.versions[sec.preferred];
+    out.push(`### ${rt.id === "other" ? "Other ways to run it" : rt.name}${n === 0 && rt.id !== "other" ? " (recommended)" : ""}`);
+    const steps: string[] = [];
+    if (rt.install.length) {
+      const cmds = rt.install.filter((i) => i.cmd), links = rt.install.filter((i) => i.href);
+      steps.push(`Install ${rt.name}.${rt.note ? ` ${rt.note}` : ""}` +
+        (links.length ? ` ${links.map((l) => `[${l.label === "other ways" ? "Other ways to install" : `Download it (${l.label})`}](${l.href})`).join(" · ")}` : "") +
+        (cmds.length ? `\n\n${fence(cmds.flatMap((i) => [`# ${i.label}`, i.cmd!]))}` : ""));
+    }
+    const shown = main.steps.filter((x) => !x.href); // app links don't work on GitHub; the command does the same
+    const [first, ...more] = shown;
+    steps.push(`${rt.id === "other" ? "Run it as published" : `Run ${text(m.name)}`} (${versionLabel(main.v)}, needs ${needsLabel(main.v)}${main.v.source ? `, from ${repoLabel(main.v.source)}` : ""})` +
+      (first?.cmd ? `\n\n${fence([first.cmd])}` : ""));
+    for (const st of more) steps.push(st.cmd ? `${capital(st.label)}\n\n${fence([st.cmd])}` : capital(st.label));
+    out.push(steps.map((x, i) => `${i + 1}. ${indent(x)}`).join("\n\n"));
+    const others = sec.versions.filter((_, i) => i !== sec.preferred);
+    if (others.length) out.push(`Other versions: ${others.map((x) => `${versionLabel(x.v)} (${needsLabel(x.v)}) \`${x.steps.find((st) => st.cmd)?.cmd}\``).join(" · ")}`);
+  });
+  if (!m.api && !guide.length) out.push("No verified API or local download yet.");
+  if (m.model_repo) out.push(`Official weights and documentation: ${repoLabel(m.model_repo)}`);
   return out;
 }
 
@@ -239,11 +259,7 @@ export function modelMarkdown(v: ModelView): string {
     if (v.raw.length) out.push(pre([{ head: "test", max: 34 }, { head: "result", right: true }, { head: "reported by" }, { head: "source", max: 30 }],
       v.raw.map((r) => [benchName(r.bench), resultLabel(r), (r.by === "lab" ? "lab" : "independent") + (r.invalid ? " · failed run, not counted" : ""), { text: shortName(sourceName(r.source)), href: r.source }])));
     out.push(licences(from, v.raw.map((r) => r.source)));
-    if (m.api || m.local?.variants.length) {
-      out.push(`## How to run it`);
-      out.push(...howToRun(m, cat));
-      if (m.local?.variants.length) out.push(...localMarkdown(m.local.variants.map((x) => ({ v: x, name: x.quant }))));
-    }
+    out.push(...runMarkdown(m, cat));
     out.push(`[Sources and licences](${rel(from, files.method)}#sources) · [raw data](${rel(from, "data/results.json")}) · [interactive version](${SITE}/model/${m.id})`);
     return out.filter(Boolean).join("\n\n") + "\n";
   }
@@ -276,15 +292,7 @@ export function modelMarkdown(v: ModelView): string {
       v.unused.map(({ r, reason }) => [shortName(sourceName(r.source)), { text: benchName(r.bench), href: r.source }, resultLabel(r), reason === "failed" ? `failed run: ${r.invalid}` : why[reason]])) + `\n\n</details>`);
   }
 
-  out.push(`## How to run it`);
-  out.push(...howToRun(m, cat));
-  if (v.variants.length) {
-    const name = (x: (typeof v.variants)[number]) => `${x.label}${x.label !== x.v.quant ? ` ${x.v.quant}` : ""}${x.v.platform && x.v.platform !== "any" ? ` · ${x.v.platform} only` : ""}`;
-    out.push(pre([{ head: cat === "llm" ? "download" : "version", max: 40 }, { head: cat === "llm" ? "size" : "needs", right: true }, { head: "score", right: true }],
-      v.variants.map((x) => [name(x), `${x.v.gb_estimated ? "~" : ""}${x.v.gb}GB`, x.g.toFixed(1)])));
-    out.push(`<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>`);
-    out.push(...localMarkdown(v.variants.map((x) => ({ v: x.v, name: name(x) }))));
-  } else out.push(m.api ? "no verified local download listed" : "no current API or local download verified");
+  out.push(...runMarkdown(m, cat));
 
   if (v.measured.length) {
     out.push(`## Published speed measurements`);
@@ -374,7 +382,7 @@ export function methodMarkdown(): string {
 export const generatedNote = `<!-- Generated by \`npm run pages\` from data/ and lib/. Edit scripts/pages.ts or lib/markdown.ts, not this file. -->`;
 
 // Every page, keyed by its path in the repo. `about` is appended to README.md.
-export function renderPages(about: string): Map<string, string> {
+export function renderPages(about: string, bench = { page: "", details: "" }): Map<string, string> {
   // README: a screenshot of the site in the reader's colour scheme, then what this is in one line.
   const shot = (name: string, alt: string) => `<picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/${name}-dark.png"><img alt="${alt}" src="docs/images/${name}-light.png"></picture>`;
   const intro = `<a href="${SITE}">${shot("board", "The whatmodel.sh leaderboard: AI models ranked by score, with price, memory and the command to run each")}</a>\n\n` +
@@ -386,6 +394,8 @@ export function renderPages(about: string): Map<string, string> {
     pages.set(files.board(c), `${generatedNote}\n\n${md}${c === "llm" ? `\n${about}` : ""}`);
   }
   pages.set(files.method, `${generatedNote}\n\n${methodMarkdown()}`);
+  // BENCHMARKING.md: the site's /bench page (content/site/bench.md), then the technical details.
+  if (bench.page) pages.set("BENCHMARKING.md", `${generatedNote.replace("scripts/pages.ts or lib/markdown.ts", "content/site/bench.md or scripts/benchmarking-details.md")}\n\n# Benchmark your machine\n\n${bench.page.trim()}\n\n${bench.details.trim()}\n`);
   // The bench script's model list (one compact line per model, so diffs stay readable).
   pages.set("pages/bench-models.json", `[\n${benchCatalogue().map((m) => JSON.stringify(m)).join(",\n")}\n]\n`);
   for (const x of pageModels()) pages.set(files.model(x.id), `${generatedNote}\n\n${modelMarkdown(modelView(x.id)!)}`);

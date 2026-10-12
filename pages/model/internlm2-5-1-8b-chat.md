@@ -40,52 +40,60 @@ weighted average                          = 31.9
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/internlm/internlm2_5-1_8b-chat/blob/57dcbc5455bf050d27a80f0ebd7808387caa714d/config.json): config.json max\_position\_embeddings 32768. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download        size  score
-4-bit q4_0    ~1.1GB   31.9
-4-bit Q4_K_M  ~1.2GB   31.9
-8-bit Q8_0      ~2GB   31.9
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run InternLM2.5 1.8B Chat (Q4_K_M, needs ~1.2 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF/tree/f5dbdc487d2fa53d1fd75251e7414d102e983467))
+   
+   ```sh
+   llama cli -hf lmstudio-community/internlm2_5-1_8b-chat-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/internlm2_5-1_8b-chat-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~2 GB) `llama cli -hf lmstudio-community/internlm2_5-1_8b-chat-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~1.2GB
-llama cli -hf lmstudio-community/internlm2_5-1_8b-chat-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/internlm2_5-1_8b-chat-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~2GB
-llama cli -hf lmstudio-community/internlm2_5-1_8b-chat-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/internlm2_5-1_8b-chat-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~1.2GB
-lms get https://huggingface.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~2GB
-lms get https://huggingface.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run InternLM2.5 1.8B Chat (Q4_K_M, needs ~1.2 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF/tree/f5dbdc487d2fa53d1fd75251e7414d102e983467))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_0 · ~1.1GB
-ollama run internlm2:1.8b
-# 4-bit Q4_K_M · ~1.2GB
-ollama run hf.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~2GB
-ollama run hf.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF:Q8_0
-```
+Other versions: Q8_0 (~2 GB) `lms get https://huggingface.co/lmstudio-community/internlm2_5-1_8b-chat-GGUF@Q8_0 -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run InternLM2.5 1.8B Chat (Q4_0, needs ~1.1 GB, from [ollama.com](https://ollama.com/library/internlm2/tags))
+   
+   ```sh
+   ollama run internlm2:1.8b
+   ```
+
+Official weights and documentation: [huggingface.co/internlm](https://huggingface.co/internlm/internlm2_5-1_8b-chat)
 
 [interactive version](https://whatmodel.sh/model/internlm2-5-1-8b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

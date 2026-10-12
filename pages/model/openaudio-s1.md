@@ -66,10 +66,10 @@ Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Long-TTS
 
 ## How to run it
 
+### Through an API
+
 api (Fish Audio) · $15.00/M chars · [docs.fish.audio](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits)
 
 <sub>[price source](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits): Fish Audio lists s1 at $15.00 per 1M UTF-8 bytes of input text. Stored as per 1M characters, which equals bytes only for ASCII (e.g. English) text; non-ASCII characters take 2-4 bytes, so per-character cost is higher for those scripts. Product: Fish Audio TTS API. API model: s1. Settings: pay-as-you-go. Price basis: published list rate (byte-billed). Exclusions: none stated. Currency: USD. Fish Audio official pricing docs, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/openaudio-s1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

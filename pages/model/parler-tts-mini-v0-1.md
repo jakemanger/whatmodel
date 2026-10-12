@@ -42,20 +42,14 @@ weighted average                        = 48.9
 
 ## How to run it
 
-<pre>
-version    needs  score
-fp32     ~2.59GB   48.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~2.59 GB, from [github.com/huggingface](https://github.com/huggingface/parler-tts/blob/d108732cd57788ec86bc857d99a6cabd66663d68/README.md))
+   
+   ```sh
+   pip install git+https://github.com/huggingface/parler-tts.git soundfile && python -c "import torch, soundfile as sf; from parler_tts import ParlerTTSForConditionalGeneration; from transformers import AutoTokenizer; d='cuda:0' if torch.cuda.is_available() else 'cpu'; m=ParlerTTSForConditionalGeneration.from_pretrained('parler-tts/parler_tts_mini_v0.1').to(d); t=AutoTokenizer.from_pretrained('parler-tts/parler_tts_mini_v0.1'); g=m.generate(input_ids=t('A female speaker delivers a slightly expressive speech with a very clear recording.', return_tensors='pt').input_ids.to(d), prompt_input_ids=t('Hello, world!', return_tensors='pt').input_ids.to(d)); sf.write('out.wav', g.cpu().numpy().squeeze(), m.config.sampling_rate)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · ~2.59GB
-pip install git+https://github.com/huggingface/parler-tts.git soundfile && python -c "import torch, soundfile as sf; from parler_tts import ParlerTTSForConditionalGeneration; from transformers import AutoTokenizer; d='cuda:0' if torch.cuda.is_available() else 'cpu'; m=ParlerTTSForConditionalGeneration.from_pretrained('parler-tts/parler_tts_mini_v0.1').to(d); t=AutoTokenizer.from_pretrained('parler-tts/parler_tts_mini_v0.1'); g=m.generate(input_ids=t('A female speaker delivers a slightly expressive speech with a very clear recording.', return_tensors='pt').input_ids.to(d), prompt_input_ids=t('Hello, world!', return_tensors='pt').input_ids.to(d)); sf.write('out.wav', g.cpu().numpy().squeeze(), m.config.sampling_rate)"
-```
+Official weights and documentation: [huggingface.co/parler-tts](https://huggingface.co/parler-tts/parler_tts_mini_v0.1)
 
 [interactive version](https://whatmodel.sh/model/parler-tts-mini-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

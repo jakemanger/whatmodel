@@ -44,20 +44,14 @@ weighted average                                   = 23.5
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp16 + model CPU offload (576w base, th…  ~15.3GB   23.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16 + model CPU offload (576w base, then XL vid2vid), needs ~15.3 GB, NVIDIA only, from [huggingface.co/cerspense](https://huggingface.co/cerspense/zeroscope_v2_XL/blob/6934ce594c2a8b39eec8bfece9d630a7ec93f642/README.md))
+   
+   ```sh
+   uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from PIL import Image; from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler; from diffusers.utils import export_to_video; p=DiffusionPipeline.from_pretrained('cerspense/zeroscope_v2_576w', torch_dtype=torch.float16); p.scheduler=DPMSolverMultistepScheduler.from_config(p.scheduler.config); p.enable_model_cpu_offload(); p.enable_vae_slicing(); prompt='Darth Vader is surfing on waves'; f=p(prompt, num_inference_steps=40, height=320, width=576, num_frames=36).frames[0]; x=DiffusionPipeline.from_pretrained('cerspense/zeroscope_v2_XL', torch_dtype=torch.float16); x.scheduler=DPMSolverMultistepScheduler.from_config(x.scheduler.config); x.enable_model_cpu_offload(); x.enable_vae_slicing(); v=[Image.fromarray((fr * 255).round().astype('uint8')).resize((1024, 576)) for fr in f]; export_to_video(x(prompt, video=v, strength=0.6).frames[0], 'video_1024.mp4')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 + model CPU offload (576w base, then XL vid2vid) · nvidia only · ~15.3GB
-uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from PIL import Image; from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler; from diffusers.utils import export_to_video; p=DiffusionPipeline.from_pretrained('cerspense/zeroscope_v2_576w', torch_dtype=torch.float16); p.scheduler=DPMSolverMultistepScheduler.from_config(p.scheduler.config); p.enable_model_cpu_offload(); p.enable_vae_slicing(); prompt='Darth Vader is surfing on waves'; f=p(prompt, num_inference_steps=40, height=320, width=576, num_frames=36).frames[0]; x=DiffusionPipeline.from_pretrained('cerspense/zeroscope_v2_XL', torch_dtype=torch.float16); x.scheduler=DPMSolverMultistepScheduler.from_config(x.scheduler.config); x.enable_model_cpu_offload(); x.enable_vae_slicing(); v=[Image.fromarray((fr * 255).round().astype('uint8')).resize((1024, 576)) for fr in f]; export_to_video(x(prompt, video=v, strength=0.6).frames[0], 'video_1024.mp4')"
-```
+Official weights and documentation: [huggingface.co/cerspense](https://huggingface.co/cerspense/zeroscope_v2_XL)
 
 [interactive version](https://whatmodel.sh/model/zeroscope-v2-xl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

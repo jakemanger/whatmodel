@@ -73,76 +73,87 @@ Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_c
 
 ## How to run it
 
-<sub>[context source](https://ai.google.dev/gemma/docs/core/model_card_3): Publisher advertises 32K total context, shared between input and output. Stored as the stated rounded 32K; no unsupported 32,768-token precision inferred.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-8-bit q8_0                 ~0.82GB   14.7
-4-bit QAT qat              ~0.66GB   14.7
-4-bit Q4_K_M                ~0.3GB   14.7
-8-bit Q8_0                  ~0.3GB   14.7
-4-bit mlx-4bit · mac only   ~0.2GB   14.7
-4-bit mlx-8bit · mac only   ~0.5GB   14.7
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Gemma 3 270M IT (Q4_K_M, needs ~0.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-3-270m-it-GGUF/tree/2a3f11cd1f383dc6fa7d34c34aef9e44d5bdedf2))
+   
+   ```sh
+   llama cli -hf lmstudio-community/gemma-3-270m-it-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/gemma-3-270m-it-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~0.3 GB) `llama cli -hf lmstudio-community/gemma-3-270m-it-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~0.3GB
-llama cli -hf lmstudio-community/gemma-3-270m-it-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/gemma-3-270m-it-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~0.3GB
-llama cli -hf lmstudio-community/gemma-3-270m-it-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/gemma-3-270m-it-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~0.3GB
-lms get https://huggingface.co/lmstudio-community/gemma-3-270m-it-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~0.3GB
-lms get https://huggingface.co/lmstudio-community/gemma-3-270m-it-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~0.2GB
-lms get https://huggingface.co/lmstudio-community/gemma-3-270m-it-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~0.5GB
-lms get https://huggingface.co/lmstudio-community/gemma-3-270m-it-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Gemma 3 270M IT (Q4_K_M, needs ~0.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-3-270m-it-GGUF/tree/2a3f11cd1f383dc6fa7d34c34aef9e44d5bdedf2))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/gemma-3-270m-it-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 8-bit q8_0 · ~0.82GB
-ollama run gemma3:270m
-# 4-bit QAT qat · ~0.66GB
-ollama run gemma3:270m-it-qat
-# 4-bit Q4_K_M · ~0.3GB
-ollama run hf.co/lmstudio-community/gemma-3-270m-it-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~0.3GB
-ollama run hf.co/lmstudio-community/gemma-3-270m-it-GGUF:Q8_0
-```
+Other versions: Q8_0 (~0.3 GB) `lms get https://huggingface.co/lmstudio-community/gemma-3-270m-it-GGUF@Q8_0 -y` · 4bit (~0.2 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/gemma-3-270m-it-MLX-4bit -y` · 8bit (~0.5 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/gemma-3-270m-it-MLX-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~0.2GB
-mlx_lm.chat --model lmstudio-community/gemma-3-270m-it-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/gemma-3-270m-it-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~0.5GB
-mlx_lm.chat --model lmstudio-community/gemma-3-270m-it-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/gemma-3-270m-it-MLX-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Gemma 3 270M IT (Q8_0, needs ~0.82 GB, from [ollama.com](https://ollama.com/library/gemma3/tags))
+   
+   ```sh
+   ollama run gemma3:270m
+   ```
+
+Other versions: qat (~0.66 GB) `ollama run gemma3:270m-it-qat`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Gemma 3 270M IT (4bit, needs ~0.2 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-3-270m-it-MLX-4bit/tree/99d11aebe39a4437f97e21a5216bd1eb3b8f7607))
+   
+   ```sh
+   mlx_lm.chat --model lmstudio-community/gemma-3-270m-it-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lmstudio-community/gemma-3-270m-it-MLX-4bit
+   ```
+
+Other versions: 8bit (~0.5 GB, Mac only) `mlx_lm.chat --model lmstudio-community/gemma-3-270m-it-MLX-8bit`
+
+Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-3-270m-it)
 
 [interactive version](https://whatmodel.sh/model/gemma-3-270m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

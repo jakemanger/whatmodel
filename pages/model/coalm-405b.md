@@ -43,20 +43,14 @@ weighted average                                   = 59.1
 
 ## How to run it
 
-<pre>
-download          size  score
-16-bit bf16  ~811.71GB   59.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~811.71 GB, from [huggingface.co/uiuc-convai](https://huggingface.co/uiuc-convai/CoALM-405B/tree/34d882bb8d18be73532804ab7a73f651e61a63a1))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='uiuc-convai/CoALM-405B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~811.71GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='uiuc-convai/CoALM-405B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/uiuc-convai](https://huggingface.co/uiuc-convai/CoALM-405B)
 
 [interactive version](https://whatmodel.sh/model/coalm-405b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

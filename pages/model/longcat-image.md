@@ -65,24 +65,20 @@ Meituan LongCat  <a href="https://arxiv.org/html/2512.07584v1">WISE overall (mod
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.13/image · [fal.ai](https://fal.ai/models/fal-ai/longcat-image)
 
 <sub>[price source](https://fal.ai/models/fal-ai/longcat-image): USD for one 1-megapixel output: fal bills this endpoint $0.13 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/longcat-image (LongCat Image, 6B). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Meituan direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-<pre>
-version                                 needs  score
-gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)  ~15GB   53.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp), needs ~15 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/longcat_image.md))
+   
+   ```sh
+   sd-cli --diffusion-model models/LongCat-Image-Q4_K_M.gguf --vae models/ae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p "a lovely cat holding a sign says 'longcat.cpp'" --cfg-scale 5.0 --sampling-method euler --flow-shift 3 -v --offload-to-cpu --diffusion-fa
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp) · ~15GB
-sd-cli --diffusion-model models/LongCat-Image-Q4_K_M.gguf --vae models/ae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p "a lovely cat holding a sign says 'longcat.cpp'" --cfg-scale 5.0 --sampling-method euler --flow-shift 3 -v --offload-to-cpu --diffusion-fa
-```
+Official weights and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-Image)
 
 [interactive version](https://whatmodel.sh/model/longcat-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

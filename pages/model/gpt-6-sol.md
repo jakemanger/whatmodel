@@ -106,10 +106,10 @@ weighted average                                   = 82.6
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $4.00/M blended · $2 in / $10 out per 1M tokens · [platform.openai.com](https://platform.openai.com/docs/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-6-sol.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-6-sol.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-6-sol) · [JSON](https://whatmodel.sh/api?format=json&all=1)

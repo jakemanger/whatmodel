@@ -93,41 +93,57 @@ weighted average                                   = 75.4
 
 ## How to run it
 
-<sub>[context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/alibaba/qwen3.8-flash-next.toml)</sub>
+### llama.cpp (recommended)
 
-<pre>
-download              size  score
-4-bit q4_k_m      ~108.5GB   75.4
-2-bit ud-q2_k_xl   ~54.5GB   75.4
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Qwen3.8-Flash-Next (ud-q2_k_xl, needs ~54.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/Qwen3.8-Flash-Next-GGUF:UD-Q2_K_XL
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/Qwen3.8-Flash-Next-GGUF:UD-Q2_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 2-bit ud-q2_k_xl · ~54.5GB
-llama cli -hf unsloth/Qwen3.8-Flash-Next-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Qwen3.8-Flash-Next-GGUF:UD-Q2_K_XL
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run Qwen3.8-Flash-Next (ud-q2_k_xl, needs ~54.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/tree/main))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF@UD-Q2_K_XL -y
+   ```
 
-```sh
-# 2-bit ud-q2_k_xl · ~54.5GB
-lms get https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+### Ollama
 
-```sh
-# 4-bit q4_k_m · ~108.5GB
-ollama run qwen3.8-flash-next:125b-a6b-q4_K_M
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Qwen3.8-Flash-Next (Q4_K_M, needs ~108.5 GB, from [ollama.com](https://ollama.com/library/qwen3.8-flash-next/tags))
+   
+   ```sh
+   ollama run qwen3.8-flash-next:125b-a6b-q4_K_M
+   ```
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 
 ## Published speed measurements
 

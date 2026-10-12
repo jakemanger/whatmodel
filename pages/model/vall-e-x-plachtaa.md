@@ -48,20 +48,14 @@ weighted average                                   = 31.4
 
 ## How to run it
 
-<pre>
-version                          needs  score
-fp32 (Plachtaa/VALL-E-X repo)  ~1.62GB   31.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (Plachtaa/VALL-E-X repo), needs ~1.62 GB, from [github.com/Plachtaa](https://github.com/Plachtaa/VALL-E-X/blob/3faaf8ccadb154d63b38070caf518ce9309ea0f4/README.md))
+   
+   ```sh
+   git clone https://github.com/Plachtaa/VALL-E-X.git && cd VALL-E-X && pip install -r requirements.txt && python -c "from utils.generation import SAMPLE_RATE, generate_audio, preload_models; from scipy.io.wavfile import write as write_wav; preload_models(); audio_array = generate_audio('Hello, my name is Nose. And uh, and I like hamburger. Hahaha... But I also have other interests such as playing tactic toast.'); write_wav('vallex_generation.wav', SAMPLE_RATE, audio_array)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (Plachtaa/VALL-E-X repo) · ~1.62GB
-git clone https://github.com/Plachtaa/VALL-E-X.git && cd VALL-E-X && pip install -r requirements.txt && python -c "from utils.generation import SAMPLE_RATE, generate_audio, preload_models; from scipy.io.wavfile import write as write_wav; preload_models(); audio_array = generate_audio('Hello, my name is Nose. And uh, and I like hamburger. Hahaha... But I also have other interests such as playing tactic toast.'); write_wav('vallex_generation.wav', SAMPLE_RATE, audio_array)"
-```
+Official weights and documentation: [huggingface.co/Plachta](https://huggingface.co/Plachta/VALL-E-X)
 
 [interactive version](https://whatmodel.sh/model/vall-e-x-plachtaa) · [JSON](https://whatmodel.sh/api?format=json&all=1)

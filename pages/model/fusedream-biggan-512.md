@@ -45,6 +45,8 @@ weighted average                          = 48.0
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [github.com/gnobitab](https://github.com/gnobitab/FuseDream)
 
 [interactive version](https://whatmodel.sh/model/fusedream-biggan-512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

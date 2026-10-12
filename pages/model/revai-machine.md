@@ -56,10 +56,10 @@ weighted average                                   = 52.0
 
 ## How to run it
 
+### Through an API
+
 api (Rev) · $0.0033/audio min · [docs.rev.ai](https://docs.rev.ai/api/asynchronous/transcribers/)
 
 <sub>[price source](https://www.rev.ai/pricing): USD per input audio minute: Rev AI lists 'Reverb Transcription' (English) at $0.20 per hour (÷60). Rev's transcriber docs state that transcriber=machine (the default) is performed by the Reverb ASR model. Product: Rev AI asynchronous speech-to-text. API model: transcriber=machine (Reverb ASR). Settings: English, pay-as-you-go. Price basis: published list rate, per-hour to per-minute scaling only; billed rounded up to the nearest second with a 15-second minimum. Exclusions: Reverb Foreign Language ($0.30/hr), Whisper Large, human transcription, free credits. Currency: USD. Rev AI official pricing page, observed 2026-10-07.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/revai-machine) · [JSON](https://whatmodel.sh/api?format=json&all=1)

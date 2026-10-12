@@ -42,10 +42,10 @@ weighted average                                   = 71.0
 
 ## How to run it
 
+### Through an API
+
 api (Meta) · $0.0030/audio min · [developer.meta.com](https://developer.meta.com/ai/models/muse-voice-transcribe)
 
 <sub>[price source](https://developer.meta.com/ai/models/muse-voice-transcribe): USD per input audio minute: Meta's model page pricing table lists muse-voice-transcribe-1.0 at $3.00 per 1,000 min / $0.18 per hour (÷1000). Product: Meta Model API speech-to-text (streaming wss://api.meta.ai/v1/asr/realtime and file https://api.meta.ai/v1/asr/transcribe). API model: muse-voice-transcribe-1.0. Price basis: published list rate. Currency: USD. Meta official model page, observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/muse-voice-transcribe-1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

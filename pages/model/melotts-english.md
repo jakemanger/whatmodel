@@ -45,23 +45,16 @@ weighted average                                   = 43.9
 
 ## How to run it
 
-<pre>
-version                        needs  score
-fp32 (MeloTTS repo CLI)      ~0.65GB   43.9
-fp32 (mlx-audio) · mac only  ~0.65GB   43.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (MeloTTS repo CLI), needs ~0.65 GB, from [github.com/myshell-ai](https://github.com/myshell-ai/MeloTTS/blob/209145371cff8fc3bd60d7be902ea69cbdb7965a/docs/install.md))
+   
+   ```sh
+   git clone https://github.com/myshell-ai/MeloTTS.git && cd MeloTTS && pip install -e . && python -m unidic download && melo "Text to read" output.wav
+   ```
 
-### Run it on your own machine
+Other versions: fp32 (mlx-audio) (~0.65 GB, Mac only) `pip install mlx-audio g2p_en && mlx_audio.tts.generate --model mlx-community/MeloTTS-English-MLX --text 'Hello, world!' --voice EN-US`
 
-**Other engines**
-
-```sh
-# fp32 (MeloTTS repo CLI) · ~0.65GB
-git clone https://github.com/myshell-ai/MeloTTS.git && cd MeloTTS && pip install -e . && python -m unidic download && melo "Text to read" output.wav
-# fp32 (mlx-audio) · mac only · ~0.65GB
-pip install mlx-audio g2p_en && mlx_audio.tts.generate --model mlx-community/MeloTTS-English-MLX --text 'Hello, world!' --voice EN-US
-```
+Official weights and documentation: [huggingface.co/myshell-ai](https://huggingface.co/myshell-ai/MeloTTS-English)
 
 [interactive version](https://whatmodel.sh/model/melotts-english) · [JSON](https://whatmodel.sh/api?format=json&all=1)

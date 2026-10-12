@@ -45,55 +45,70 @@ weighted average                                   = 38.5
 
 ## How to run it
 
-<pre>
-download          size  score
-16-bit bf16   ~14.48GB   38.5
-4-bit Q4_K_M    ~4.4GB   38.5
-8-bit Q8_0      ~7.7GB   38.5
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run MistralHermes-CodePro-7B-v1 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/MistralHermes-CodePro-7B-v1-GGUF/tree/6f00cb9d9d6b20446582dd611f69afcef376e2e7))
+   
+   ```sh
+   llama cli -hf mradermacher/MistralHermes-CodePro-7B-v1-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/MistralHermes-CodePro-7B-v1-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.4GB
-llama cli -hf mradermacher/MistralHermes-CodePro-7B-v1-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/MistralHermes-CodePro-7B-v1-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~7.7GB
-llama cli -hf mradermacher/MistralHermes-CodePro-7B-v1-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/MistralHermes-CodePro-7B-v1-GGUF:Q8_0
-```
+Other versions: Q8_0 (~7.7 GB) `llama cli -hf mradermacher/MistralHermes-CodePro-7B-v1-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~4.4GB
-lms get https://huggingface.co/mradermacher/MistralHermes-CodePro-7B-v1-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~7.7GB
-lms get https://huggingface.co/mradermacher/MistralHermes-CodePro-7B-v1-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run MistralHermes-CodePro-7B-v1 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/MistralHermes-CodePro-7B-v1-GGUF/tree/6f00cb9d9d6b20446582dd611f69afcef376e2e7))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/MistralHermes-CodePro-7B-v1-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.4GB
-ollama run hf.co/mradermacher/MistralHermes-CodePro-7B-v1-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~7.7GB
-ollama run hf.co/mradermacher/MistralHermes-CodePro-7B-v1-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/mradermacher/MistralHermes-CodePro-7B-v1-GGUF@Q8_0 -y`
 
-```sh
-# 16-bit bf16 · ~14.48GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='beowolx/MistralHermes-CodePro-7B-v1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run MistralHermes-CodePro-7B-v1 (Q4_K_M, needs ~4.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/MistralHermes-CodePro-7B-v1-GGUF/tree/6f00cb9d9d6b20446582dd611f69afcef376e2e7))
+   
+   ```sh
+   ollama run hf.co/mradermacher/MistralHermes-CodePro-7B-v1-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/mradermacher/MistralHermes-CodePro-7B-v1-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~14.48 GB, from [huggingface.co/beowolx](https://huggingface.co/beowolx/MistralHermes-CodePro-7B-v1/tree/3430a864f7366cfbe06653a0fa655e36da85d481))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='beowolx/MistralHermes-CodePro-7B-v1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/beowolx](https://huggingface.co/beowolx/MistralHermes-CodePro-7B-v1)
 
 [interactive version](https://whatmodel.sh/model/mistralhermes-codepro-7b-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

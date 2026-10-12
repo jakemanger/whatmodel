@@ -53,6 +53,6 @@ weighted average                                   = 62.8
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/cartesia-sonic-3-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

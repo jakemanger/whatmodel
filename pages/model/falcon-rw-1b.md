@@ -52,22 +52,14 @@ weighted average                                   = 20.1
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/tiiuae/falcon-rw-1b/blob/e4b9872bb803165eb22f0a867d4e6a64d34fce19/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+### Other ways to run it
 
-<pre>
-download        size  score
-16-bit bf16  ~2.62GB   20.1
-</pre>
+1. Run it as published (BF16, needs ~2.62 GB, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-rw-1b/tree/e4b9872bb803165eb22f0a867d4e6a64d34fce19))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-rw-1b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~2.62GB
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-rw-1b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-rw-1b)
 
 [interactive version](https://whatmodel.sh/model/falcon-rw-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

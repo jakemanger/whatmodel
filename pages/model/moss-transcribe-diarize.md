@@ -44,20 +44,14 @@ weighted average                                   = 53.6
 
 ## How to run it
 
-<pre>
-version                       needs  score
-q8_0-gguf (transcribe.cpp)  ~0.99GB   53.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (Q8_0-GGUF (TRANSCRIBE.CPP), needs ~0.99 GB, from [github.com/handy-computer](https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md))
+   
+   ```sh
+   git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/MOSS-Transcribe-Diarize-gguf MOSS-Transcribe-Diarize-Q8_0.gguf --local-dir models/moss-transcribe-diarize && build/bin/transcribe-cli --diarize -m models/moss-transcribe-diarize/MOSS-Transcribe-Diarize-Q8_0.gguf audio.wav
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# q8_0-gguf (transcribe.cpp) · ~0.99GB
-git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/MOSS-Transcribe-Diarize-gguf MOSS-Transcribe-Diarize-Q8_0.gguf --local-dir models/moss-transcribe-diarize && build/bin/transcribe-cli --diarize -m models/moss-transcribe-diarize/MOSS-Transcribe-Diarize-Q8_0.gguf audio.wav
-```
+Official weights and documentation: [huggingface.co/OpenMOSS-Team](https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize)
 
 [interactive version](https://whatmodel.sh/model/moss-transcribe-diarize) · [JSON](https://whatmodel.sh/api?format=json&all=1)

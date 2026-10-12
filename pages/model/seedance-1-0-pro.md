@@ -65,10 +65,10 @@ weighted average                                   = 55.7
 
 ## How to run it
 
+### Through an API
+
 api (BytePlus ModelArk) · $0.052/sec · [docs.byteplus.com](https://docs.byteplus.com/en/docs/ModelArk/1544106)
 
 <sub>[price source](https://docs.byteplus.com/en/docs/ModelArk/1544106): USD per second of 720p video, derived from BytePlus's own price example for Seedance 1.0 Pro: a 720p 16:9 (1248×704) 24 fps 5-second video (102,960 tokens) costs $0.26 (÷ 5 = $0.052). Product: BytePlus ModelArk video generation (online inference). API model: seedance-1-0-pro-250528. Settings: resolution=720p, ratio=16:9, duration=5 s, no input video. Price basis: provider-printed per-video example; underlying billing is $2.5 per 1M video tokens (offline inference $1.25), and BytePlus labels the examples as estimates (actual tokens per usage.completion\_tokens). Other examples: 10-s 720p 16:9 $0.51; 5-s 480p $0.12; 5-s 1080p $0.61. Only successfully generated videos are billed. Currency: USD. BytePlus official pricing page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/seedance-1-0-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

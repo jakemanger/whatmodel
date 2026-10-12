@@ -47,20 +47,14 @@ weighted average                                   = 56.7
 
 ## How to run it
 
-<pre>
-version    needs  score
-bf16     ~5.92GB   56.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~5.92 GB, from [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-ASR-Nano-2512))
+   
+   ```sh
+   uv run --with transformers --with torch --with accelerate python -c "from transformers import AutoModelForSeq2SeqLM, AutoProcessor; r='zai-org/GLM-ASR-Nano-2512'; p=AutoProcessor.from_pretrained(r); m=AutoModelForSeq2SeqLM.from_pretrained(r, dtype='auto', device_map='auto'); i=p.apply_transcription_request('audio.wav').to(m.device, dtype=m.dtype); o=m.generate(**i, do_sample=False, max_new_tokens=500); print(p.batch_decode(o[:, i.input_ids.shape[1]:], skip_special_tokens=True)[0])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · ~5.92GB
-uv run --with transformers --with torch --with accelerate python -c "from transformers import AutoModelForSeq2SeqLM, AutoProcessor; r='zai-org/GLM-ASR-Nano-2512'; p=AutoProcessor.from_pretrained(r); m=AutoModelForSeq2SeqLM.from_pretrained(r, dtype='auto', device_map='auto'); i=p.apply_transcription_request('audio.wav').to(m.device, dtype=m.dtype); o=m.generate(**i, do_sample=False, max_new_tokens=500); print(p.batch_decode(o[:, i.input_ids.shape[1]:], skip_special_tokens=True)[0])"
-```
+Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-ASR-Nano-2512)
 
 [interactive version](https://whatmodel.sh/model/glm-asr-nano-2512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

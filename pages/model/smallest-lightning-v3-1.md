@@ -44,10 +44,10 @@ weighted average                                   = 53.3
 
 ## How to run it
 
+### Through an API
+
 api (Smallest.ai) · $17.50/M chars · [smallest.ai](https://smallest.ai/pricing)
 
 <sub>[price source](https://smallest.ai/pricing/models): USD per 1M characters: Smallest.ai lists Lightning v3.1 (not Pro) at approximately $0.175 per 10,000 characters, pay as you go (x100). Product: Lightning text-to-speech API. API model: lightning\_v3.1. Settings: pay-as-you-go. Price basis: published (approximate) list rate, per-10K to per-1M scaling only. Exclusions: Lightning v3.1 Pro (~$0.195/10K), enterprise/custom pricing. Currency: USD. Smallest.ai official model pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/smallest-lightning-v3-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

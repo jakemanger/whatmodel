@@ -92,10 +92,10 @@ weighted average                                   = 78.5
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.30/sec · [fal.ai](https://fal.ai/models/bytedance/seedance-2.0/text-to-video)
 
 <sub>[price source](https://fal.ai/models/bytedance/seedance-2.0/text-to-video): USD per second of generated 720p video on fal.ai (standard, not fast tier). Product: fal Seedance 2.0 text-to-video endpoint. API model: bytedance/seedance-2.0/text-to-video. Settings: resolution=720p (endpoint default), audio on or off (fal states the cost is the same either way). Price basis: per-second figure printed by fal; fal bills $0.014 per 1,000 tokens underneath. 1080p $0.682/s; fast tier 720p $0.2419/s. Not the BytePlus direct tariff. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/seedance-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

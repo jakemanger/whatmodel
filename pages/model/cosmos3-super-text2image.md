@@ -58,20 +58,14 @@ weighted average                                   = 62.8
 
 ## How to run it
 
-<pre>
-version                needs  score
-bf16 · nvidia only  ~154.1GB   62.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~154.1 GB, NVIDIA only, from [huggingface.co/nvidia](https://huggingface.co/nvidia/Cosmos3-Super-Text2Image-4Step))
+   
+   ```sh
+   uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with torchvision --with av --with imageio --with imageio-ffmpeg --with cosmos_guardrail python -c "import torch; from diffusers import Cosmos3OmniPipeline; from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler; p=Cosmos3OmniPipeline.from_pretrained('nvidia/Cosmos3-Super-Text2Image', torch_dtype=torch.bfloat16, device_map='cuda', enable_safety_checker=True); p.scheduler=UniPCMultistepScheduler.from_config(p.scheduler.config, flow_shift=3.0); p(prompt='a cat holding a sign', negative_prompt='', num_frames=1, height=1024, width=1024, num_inference_steps=50, guidance_scale=4.0).video[0].save('out.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~154.1GB
-uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with torchvision --with av --with imageio --with imageio-ffmpeg --with cosmos_guardrail python -c "import torch; from diffusers import Cosmos3OmniPipeline; from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler; p=Cosmos3OmniPipeline.from_pretrained('nvidia/Cosmos3-Super-Text2Image', torch_dtype=torch.bfloat16, device_map='cuda', enable_safety_checker=True); p.scheduler=UniPCMultistepScheduler.from_config(p.scheduler.config, flow_shift=3.0); p(prompt='a cat holding a sign', negative_prompt='', num_frames=1, height=1024, width=1024, num_inference_steps=50, guidance_scale=4.0).video[0].save('out.png')"
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Cosmos3-Super-Text2Image)
 
 [interactive version](https://whatmodel.sh/model/cosmos3-super-text2image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

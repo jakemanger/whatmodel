@@ -61,27 +61,22 @@ weighted average                                   = 39.9
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · price unknown · [replicate.com](https://replicate.com/genmoai/mochi-1)
 
 <sub>Price unknown. Public model run/API page. Compute-time pricing, where applicable, is not converted to output-unit pricing.</sub>
 
-<pre>
-version                  needs  score
-bf16 · nvidia only     ~24.5GB   39.9
-default · nvidia only   ~6.5GB   39.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~24.5 GB, NVIDIA only, from [huggingface.co/genmo](https://huggingface.co/genmo/mochi-1-preview))
+   
+   ```sh
+   python -c "import torch;from diffusers import MochiPipeline;from diffusers.utils import export_to_video;p=MochiPipeline.from_pretrained('genmo/mochi-1-preview',variant='bf16',torch_dtype=torch.bfloat16);p.enable_model_cpu_offload();p.enable_vae_tiling();export_to_video(p('Close-up of a chameleon eye, its scaly skin changing color',num_frames=84).frames[0],'mochi.mp4',fps=30)"
+   ```
 
-### Run it on your own machine
+Other versions: default (~6.5 GB, NVIDIA only) `python3 ./demos/cli.py --model_dir weights/ --cpu_offload`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~24.5GB
-python -c "import torch;from diffusers import MochiPipeline;from diffusers.utils import export_to_video;p=MochiPipeline.from_pretrained('genmo/mochi-1-preview',variant='bf16',torch_dtype=torch.bfloat16);p.enable_model_cpu_offload();p.enable_vae_tiling();export_to_video(p('Close-up of a chameleon eye, its scaly skin changing color',num_frames=84).frames[0],'mochi.mp4',fps=30)"
-# default · nvidia only · ~6.5GB
-python3 ./demos/cli.py --model_dir weights/ --cpu_offload
-```
+Official weights and documentation: [huggingface.co/genmo](https://huggingface.co/genmo/mochi-1-preview)
 
 [interactive version](https://whatmodel.sh/model/mochi-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

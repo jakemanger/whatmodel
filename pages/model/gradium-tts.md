@@ -44,10 +44,10 @@ weighted average                                   = 50.9
 
 ## How to run it
 
+### Through an API
+
 api (Gradium) · $38.00/M chars · [docs.gradium.ai](https://docs.gradium.ai/api-reference/endpoint/tts-post)
 
 <sub>[price source](https://gradium.ai/pricing): USD per 1M characters: Gradium states Text-to-Speech uses 1 credit / character and sells additional credits at $3.8 per 100k on the L plan ($1,615/month; lowest published self-serve rate), $4.0 M, $5.0 S, $6.9 XS (x10). Gradium's TTS API has a single default model (model\_name 'default'); credits are not model-specific. Product: Gradium text-to-speech API. API model: default Gradium TTS (Vapi id gradiumtts). Settings: L-plan usage-based rate. Price basis: vendor USD-per-credit rate x vendor-stated 1 credit per character. Exclusions: monthly plan fee, included credits, voice cloning. Currency: USD. Gradium official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gradium-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

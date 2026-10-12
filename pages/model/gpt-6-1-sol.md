@@ -118,10 +118,10 @@ weighted average                                   = 85.3
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $4.00/M blended · $2 in / $10 out per 1M tokens · [developers.openai.com](https://developers.openai.com/api/docs/models/gpt-6.1-sol)
 
 <sub>[price source](https://developers.openai.com/api/docs/models/gpt-6.1-sol): Observed 2026-10-06. USD per million tokens, Standard, prompts up to 272K input tokens; longer prompts 2x input and 1.5x output. Fast/regional premiums excluded. · [context source](https://developers.openai.com/api/docs/models/gpt-6.1-sol): Official 1,050,000-token total window; maximum input 922,000 and maximum output 128,000. Observed 2026-10-06.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-6-1-sol) · [JSON](https://whatmodel.sh/api?format=json&all=1)

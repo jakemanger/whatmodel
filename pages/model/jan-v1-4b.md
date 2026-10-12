@@ -40,58 +40,83 @@ weighted average                          = 51.5
 
 ## How to run it
 
-<pre>
-download                     size  score
-4-bit q4_k_m               ~2.5GB   51.5
-4-bit mlx-4bit · mac only  ~2.3GB   51.5
-4-bit mlx-8bit · mac only  ~4.3GB   51.5
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Jan v1 4B (Q4_K_M, needs ~2.5 GB, from [huggingface.co/janhq](https://huggingface.co/janhq/Jan-v1-4B-GGUF/tree/a567ac3bab9d26fc0ddce96c2c21439b1ea7d115))
+   
+   ```sh
+   llama cli -hf janhq/Jan-v1-4B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf janhq/Jan-v1-4B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit q4_k_m · ~2.5GB
-llama cli -hf janhq/Jan-v1-4B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf janhq/Jan-v1-4B-GGUF:Q4_K_M
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit q4_k_m · ~2.5GB
-lms get https://huggingface.co/janhq/Jan-v1-4B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~2.3GB
-lms get https://huggingface.co/mlx-community/Jan-v1-4B-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~4.3GB
-lms get https://huggingface.co/mlx-community/Jan-v1-4B-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Jan v1 4B (Q4_K_M, needs ~2.5 GB, from [huggingface.co/janhq](https://huggingface.co/janhq/Jan-v1-4B-GGUF/tree/a567ac3bab9d26fc0ddce96c2c21439b1ea7d115))
+   
+   ```sh
+   lms get https://huggingface.co/janhq/Jan-v1-4B-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~2.5GB
-ollama run hf.co/janhq/Jan-v1-4B-GGUF:Q4_K_M
-```
+Other versions: 4bit (~2.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Jan-v1-4B-4bit -y` · 8bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Jan-v1-4B-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~2.3GB
-mlx_lm.chat --model mlx-community/Jan-v1-4B-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Jan-v1-4B-4bit
-# 4-bit mlx-8bit · mac only · ~4.3GB
-mlx_lm.chat --model mlx-community/Jan-v1-4B-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Jan-v1-4B-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Jan v1 4B (Q4_K_M, needs ~2.5 GB, from [huggingface.co/janhq](https://huggingface.co/janhq/Jan-v1-4B-GGUF/tree/a567ac3bab9d26fc0ddce96c2c21439b1ea7d115))
+   
+   ```sh
+   ollama run hf.co/janhq/Jan-v1-4B-GGUF:Q4_K_M
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Jan v1 4B (4bit, needs ~2.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Jan-v1-4B-4bit/tree/d5b7283074eaf122e4fcde8eda41f6a90cf54b71))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Jan-v1-4B-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Jan-v1-4B-4bit
+   ```
+
+Other versions: 8bit (~4.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Jan-v1-4B-8bit`
+
+Official weights and documentation: [huggingface.co/janhq](https://huggingface.co/janhq/Jan-v1-4B)
 
 [interactive version](https://whatmodel.sh/model/jan-v1-4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

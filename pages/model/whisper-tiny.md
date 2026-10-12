@@ -55,23 +55,16 @@ weighted average                                   = 14.2
 
 ## How to run it
 
-<pre>
-version   needs  score
-fp16     ~0.6GB   14.2
-fp32     ~0.7GB   14.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~0.6 GB, from [github.com/openai](https://github.com/openai/whisper))
+   
+   ```sh
+   uvx --from openai-whisper whisper audio.mp3 --model tiny
+   ```
 
-### Run it on your own machine
+Other versions: fp32 (~0.7 GB) `uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-tiny')('audio.wav', return_timestamps=True)['text'])"`
 
-**Other engines**
-
-```sh
-# fp16 · ~0.6GB
-uvx --from openai-whisper whisper audio.mp3 --model tiny
-# fp32 · ~0.7GB
-uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-tiny')('audio.wav', return_timestamps=True)['text'])"
-```
+Official weights and documentation: [huggingface.co/openai](https://huggingface.co/openai/whisper-tiny)
 
 [interactive version](https://whatmodel.sh/model/whisper-tiny) · [JSON](https://whatmodel.sh/api?format=json&all=1)

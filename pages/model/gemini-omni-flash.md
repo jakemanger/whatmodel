@@ -69,10 +69,10 @@ weighted average                                   = 79.5
 
 ## How to run it
 
+### Through an API
+
 api (Google) · $0.10/sec · [ai.google.dev](https://ai.google.dev/gemini-api/docs/pricing)
 
 <sub>[price source](https://ai.google.dev/gemini-api/docs/pricing): USD per generated second of 720p video (with audio) on the Gemini Developer API, paid Standard tier. Product: Gemini Developer API. API model: gemini-omni-flash-preview (Gemini Omni Flash Preview; the GA successor gemini-omni-1.1-flash has the same rate). Price basis: Google bills $17.50 per 1M video output tokens and itself states the conversion of 5,792 tokens per second of 720p video ("effective price of approximately $0.10 per second"); 5,792 × $17.50/1M = $0.10136. Input tokens ($1.50/1M) and text output ($9.00/1M) are additional; other resolutions use other token rates. Currency: USD. Google Gemini API pricing page (last updated 2026-09-24), observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gemini-omni-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

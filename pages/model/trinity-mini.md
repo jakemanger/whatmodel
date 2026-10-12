@@ -41,39 +41,56 @@ weighted average                        = 52.8
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/arcee-ai/Trinity-Mini/blob/cdb81e8130815fec299cccc8f8700004b8366e1e/config.json): config.json max\_position\_embeddings 131072. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download          size  score
-4-bit q4_k_m  ~15.94GB   52.8
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Trinity Mini (26B-A3B) (Q4_K_M, needs ~15.94 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Mini-GGUF/tree/a11737ef4b6f89d958d3f6ab670a9aa26e4b8ad7))
+   
+   ```sh
+   llama cli -hf arcee-ai/Trinity-Mini-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf arcee-ai/Trinity-Mini-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~15.94GB
-llama cli -hf arcee-ai/Trinity-Mini-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf arcee-ai/Trinity-Mini-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run Trinity Mini (26B-A3B) (Q4_K_M, needs ~15.94 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Mini-GGUF/tree/a11737ef4b6f89d958d3f6ab670a9aa26e4b8ad7))
+   
+   ```sh
+   lms get https://huggingface.co/arcee-ai/Trinity-Mini-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~15.94GB
-lms get https://huggingface.co/arcee-ai/Trinity-Mini-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+### Ollama
 
-```sh
-# 4-bit q4_k_m · ~15.94GB
-ollama run hf.co/arcee-ai/Trinity-Mini-GGUF:Q4_K_M
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Trinity Mini (26B-A3B) (Q4_K_M, needs ~15.94 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Mini-GGUF/tree/a11737ef4b6f89d958d3f6ab670a9aa26e4b8ad7))
+   
+   ```sh
+   ollama run hf.co/arcee-ai/Trinity-Mini-GGUF:Q4_K_M
+   ```
+
+Official weights and documentation: [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Mini)
 
 [interactive version](https://whatmodel.sh/model/trinity-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

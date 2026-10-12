@@ -93,61 +93,68 @@ NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
 
 ## How to run it
 
-<pre>
-download                       size  score
-16-bit bf16 · nvidia only  ~150.7GB   64.2
-4-bit Q4_K_M                ~51.6GB   64.2
-8-bit Q8_0                  ~83.5GB   64.2
-2-bit Q2_K                  ~31.5GB   64.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Nemotron-Labs-3 Puzzle 75B-A9B (Q4_K_M, needs ~51.6 GB, from [huggingface.co/RemySkye](https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF/tree/ff442763e62d5ef3cb8337c09826bb4a21924e34))
+   
+   ```sh
+   llama cli -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~51.6GB
-llama cli -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~83.5GB
-llama cli -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q8_0
-# 2-bit Q2_K · ~31.5GB
-llama cli -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q2_K
-```
+Other versions: Q8_0 (~83.5 GB) `llama cli -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q8_0` · Q2_K (~31.5 GB) `llama cli -hf RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q2_K`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~51.6GB
-lms get https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~83.5GB
-lms get https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit Q2_K · ~31.5GB
-lms get https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Nemotron-Labs-3 Puzzle 75B-A9B (Q4_K_M, needs ~51.6 GB, from [huggingface.co/RemySkye](https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF/tree/ff442763e62d5ef3cb8337c09826bb4a21924e34))
+   
+   ```sh
+   lms get https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 2-bit Q2_K · ~31.5GB
-ollama run hf.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q2_K
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q8_0 (~83.5 GB) `lms get https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF@Q8_0 -y` · Q2_K (~31.5 GB) `lms get https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF@Q2_K -y`
 
-```sh
-# 16-bit bf16 · nvidia only · ~150.7GB
-vllm serve nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16 --tensor-parallel-size 2
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Nemotron-Labs-3 Puzzle 75B-A9B (Q2_K, needs ~31.5 GB, from [huggingface.co/RemySkye](https://huggingface.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF/tree/ff442763e62d5ef3cb8337c09826bb4a21924e34))
+   
+   ```sh
+   ollama run hf.co/RemySkye/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-GGUF:Q2_K
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~150.7 GB, NVIDIA only, from [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/tree/8fe5546888e9bd03fdbf52d808adebdfca901b52))
+   
+   ```sh
+   vllm serve nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16 --tensor-parallel-size 2
+   ```
+
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16)
 
 [interactive version](https://whatmodel.sh/model/nemotron-labs-3-puzzle-75b-a9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -71,8 +71,8 @@ weighted average                                   = 61.0
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/3c2b6338613c4e5ede30788d868363125a262934/README.md): NAVER model card: 'Context Length : 128K' (stated rounded). Observed 2026-10-09.</sub>
+No verified API or local download yet.
 
-no current API or local download verified
+Official weights and documentation: [huggingface.co/naver-hyperclovax](https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B)
 
 [interactive version](https://whatmodel.sh/model/hyperclova-x-seed-32b-think) · [JSON](https://whatmodel.sh/api?format=json&all=1)

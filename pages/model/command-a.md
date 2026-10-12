@@ -137,65 +137,89 @@ Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">MATH</a>                   
 
 ## How to run it
 
+### Through an API
+
 api (Microsoft Azure) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [azure.microsoft.com](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/cohere)
 
 <sub>[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/cohere): USD per 1M tokens, Azure AI Foundry Models pay-as-you-go, 'Cohere Command A Global' (Azure model id cohere-command-a, version 1, GA with no retirement date on Azure's schedule): input $2.50, output $10.00, region US East. Cohere's own pricing page lists no Command A per-token rate. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25. · [context source](https://docs.cohere.com/docs/models): Cohere API model table: command-a-03-2025 context length 256k (stated rounded), maximum output 8k tokens. Observed 2026-09-25.</sub>
 
-<pre>
-download                      size  score
-4-bit q4_k_m               ~67.1GB   57.2
-2-bit q2_k                 ~33.8GB   57.2
-4-bit mlx-4bit · mac only  ~62.5GB   57.2
-4-bit mlx-8bit · mac only   ~118GB   57.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Command A (03-2025) (Q2_K, needs ~33.8 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/c4ai-command-a-03-2025-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/c4ai-command-a-03-2025-GGUF:Q2_K
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/c4ai-command-a-03-2025-GGUF:Q2_K
+   ```
 
-```sh
-# 2-bit q2_k · ~33.8GB
-llama cli -hf unsloth/c4ai-command-a-03-2025-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/c4ai-command-a-03-2025-GGUF:Q2_K
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 2-bit q2_k · ~33.8GB
-lms get https://huggingface.co/unsloth/c4ai-command-a-03-2025-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~62.5GB
-lms get https://huggingface.co/mlx-community/c4ai-command-a-03-2025-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~118GB
-lms get https://huggingface.co/mlx-community/c4ai-command-a-03-2025-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Command A (03-2025) (4bit, needs ~62.5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/c4ai-command-a-03-2025-4bit/tree/a4c0a1f6fd2a921bdb5f3a77f855ee9f44850fb5))
+   
+   ```sh
+   lms get https://huggingface.co/mlx-community/c4ai-command-a-03-2025-4bit -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~67.1GB
-ollama run command-a:111b
-# 2-bit q2_k · ~33.8GB
-ollama run hf.co/unsloth/c4ai-command-a-03-2025-GGUF:Q2_K
-```
+Other versions: Q2_K (~33.8 GB) `lms get https://huggingface.co/unsloth/c4ai-command-a-03-2025-GGUF@Q2_K -y` · 8bit (~118 GB, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-a-03-2025-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~62.5GB
-mlx_lm.chat --model mlx-community/c4ai-command-a-03-2025-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/c4ai-command-a-03-2025-4bit
-# 4-bit mlx-8bit · mac only · ~118GB
-mlx_lm.chat --model mlx-community/c4ai-command-a-03-2025-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/c4ai-command-a-03-2025-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Command A (03-2025) (Q4_K_M, needs ~67.1 GB, from [ollama.com](https://ollama.com/library/command-a/tags))
+   
+   ```sh
+   ollama run command-a:111b
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Command A (03-2025) (4bit, needs ~62.5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/c4ai-command-a-03-2025-4bit/tree/a4c0a1f6fd2a921bdb5f3a77f855ee9f44850fb5))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/c4ai-command-a-03-2025-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/c4ai-command-a-03-2025-4bit
+   ```
+
+Other versions: 8bit (~118 GB, Mac only) `mlx_lm.chat --model mlx-community/c4ai-command-a-03-2025-8bit`
+
+Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-a-03-2025)
 
 [interactive version](https://whatmodel.sh/model/command-a) · [JSON](https://whatmodel.sh/api?format=json&all=1)

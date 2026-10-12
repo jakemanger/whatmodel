@@ -57,20 +57,14 @@ weighted average                                   = 28.7
 
 ## How to run it
 
-<pre>
-version  needs  score
-fp32      ~8GB   28.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~8 GB, from [github.com/kuprel](https://github.com/kuprel/min-dalle))
+   
+   ```sh
+   uv run --with torch --with min-dalle python -c "import torch; from min_dalle import MinDalle; m=MinDalle(models_root='./pretrained', dtype=torch.float32, device='cpu', is_mega=True, is_reusable=True); m.generate_image(text='A lighthouse at sunset', seed=1, grid_size=1, is_seamless=False, temperature=1, top_k=256, supercondition_factor=32, is_verbose=False).save('image.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · ~8GB
-uv run --with torch --with min-dalle python -c "import torch; from min_dalle import MinDalle; m=MinDalle(models_root='./pretrained', dtype=torch.float32, device='cpu', is_mega=True, is_reusable=True); m.generate_image(text='A lighthouse at sunset', seed=1, grid_size=1, is_seamless=False, temperature=1, top_k=256, supercondition_factor=32, is_verbose=False).save('image.png')"
-```
+Official weights and documentation: [github.com/kuprel](https://github.com/kuprel/min-dalle)
 
 [interactive version](https://whatmodel.sh/model/dall-e-mega-min-dalle) · [JSON](https://whatmodel.sh/api?format=json&all=1)

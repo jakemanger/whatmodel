@@ -40,76 +40,87 @@ weighted average                        = 38.1
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/NousResearch/Hermes-3-Llama-3.2-3B/blob/7f1a6bec8cdce6551014fd5bbeb4cd8c0f1fbeab/config.json): Nous Research official configuration for Hermes-3-Llama-3.2-3B (pinned commit): max\_position\_embeddings 131072 (llama3 rope scaling, factor 32.0 over original 8192). Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_k_m               ~2.43GB   38.1
-8-bit q8_0                 ~4.35GB   38.1
-4-bit Q4_K_M                  ~2GB   38.1
-8-bit Q8_0                  ~3.4GB   38.1
-4-bit mlx-4bit · mac only   ~1.8GB   38.1
-4-bit mlx-8bit · mac only   ~3.4GB   38.1
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Hermes 3 Llama 3.2 3B (Q4_K_M, needs ~2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hermes-3-Llama-3.2-3B-GGUF/tree/aa0b91e1dd59f2fb0d9bf8cda7e167b86b8655a2))
+   
+   ```sh
+   llama cli -hf bartowski/Hermes-3-Llama-3.2-3B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/Hermes-3-Llama-3.2-3B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~3.4 GB) `llama cli -hf bartowski/Hermes-3-Llama-3.2-3B-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~2GB
-llama cli -hf bartowski/Hermes-3-Llama-3.2-3B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Hermes-3-Llama-3.2-3B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~3.4GB
-llama cli -hf bartowski/Hermes-3-Llama-3.2-3B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Hermes-3-Llama-3.2-3B-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~2GB
-lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.2-3B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~3.4GB
-lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.2-3B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~1.8GB
-lms get https://huggingface.co/mlx-community/Hermes-3-Llama-3.2-3B-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~3.4GB
-lms get https://huggingface.co/mlx-community/Hermes-3-Llama-3.2-3B-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Hermes 3 Llama 3.2 3B (Q4_K_M, needs ~2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Hermes-3-Llama-3.2-3B-GGUF/tree/aa0b91e1dd59f2fb0d9bf8cda7e167b86b8655a2))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.2-3B-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~2.43GB
-ollama run hermes3:3b-llama3.2-q4_K_M
-# 8-bit q8_0 · ~4.35GB
-ollama run hermes3:3b-llama3.2-q8_0
-# 4-bit Q4_K_M · ~2GB
-ollama run hf.co/bartowski/Hermes-3-Llama-3.2-3B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~3.4GB
-ollama run hf.co/bartowski/Hermes-3-Llama-3.2-3B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~3.4 GB) `lms get https://huggingface.co/bartowski/Hermes-3-Llama-3.2-3B-GGUF@Q8_0 -y` · 4bit (~1.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Hermes-3-Llama-3.2-3B-4bit -y` · 8bit (~3.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/Hermes-3-Llama-3.2-3B-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~1.8GB
-mlx_lm.chat --model mlx-community/Hermes-3-Llama-3.2-3B-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Hermes-3-Llama-3.2-3B-4bit
-# 4-bit mlx-8bit · mac only · ~3.4GB
-mlx_lm.chat --model mlx-community/Hermes-3-Llama-3.2-3B-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Hermes-3-Llama-3.2-3B-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Hermes 3 Llama 3.2 3B (Q4_K_M, needs ~2.43 GB, from [ollama.com](https://ollama.com/library/hermes3/tags))
+   
+   ```sh
+   ollama run hermes3:3b-llama3.2-q4_K_M
+   ```
+
+Other versions: Q8_0 (~4.35 GB) `ollama run hermes3:3b-llama3.2-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Hermes 3 Llama 3.2 3B (4bit, needs ~1.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Hermes-3-Llama-3.2-3B-4bit/tree/bf618b1572ca7b6d23841a3eb5e99bfb81fcf70c))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Hermes-3-Llama-3.2-3B-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Hermes-3-Llama-3.2-3B-4bit
+   ```
+
+Other versions: 8bit (~3.4 GB, Mac only) `mlx_lm.chat --model mlx-community/Hermes-3-Llama-3.2-3B-8bit`
+
+Official weights and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Hermes-3-Llama-3.2-3B)
 
 [interactive version](https://whatmodel.sh/model/hermes-3-llama-3-2-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

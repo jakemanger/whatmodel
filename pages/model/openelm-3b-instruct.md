@@ -40,47 +40,62 @@ weighted average                            = 23.6
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit Q4_K_M  ~1.9GB   23.6
-8-bit Q8_0    ~3.2GB   23.6
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run OpenELM 3B Instruct (Q4_K_M, needs ~1.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF/tree/6d63f98f7ce03c9705f6d197eb92d506f6ac56df))
+   
+   ```sh
+   llama cli -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~1.9GB
-llama cli -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~3.2GB
-llama cli -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q8_0
-```
+Other versions: Q8_0 (~3.2 GB) `llama cli -hf mradermacher/OpenELM-3B-Instruct-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~1.9GB
-lms get https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~3.2GB
-lms get https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run OpenELM 3B Instruct (Q4_K_M, needs ~1.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF/tree/6d63f98f7ce03c9705f6d197eb92d506f6ac56df))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~1.9GB
-ollama run hf.co/mradermacher/OpenELM-3B-Instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~3.2GB
-ollama run hf.co/mradermacher/OpenELM-3B-Instruct-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: Q8_0 (~3.2 GB) `lms get https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF@Q8_0 -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run OpenELM 3B Instruct (Q4_K_M, needs ~1.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/OpenELM-3B-Instruct-GGUF/tree/6d63f98f7ce03c9705f6d197eb92d506f6ac56df))
+   
+   ```sh
+   ollama run hf.co/mradermacher/OpenELM-3B-Instruct-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~3.2 GB) `ollama run hf.co/mradermacher/OpenELM-3B-Instruct-GGUF:Q8_0`
+
+Official weights and documentation: [huggingface.co/apple](https://huggingface.co/apple/OpenELM-3B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/openelm-3b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

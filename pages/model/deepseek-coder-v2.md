@@ -91,51 +91,68 @@ weighted average                                   = 53.0
 
 ## How to run it
 
-<pre>
-download                        size  score
-4-bit q4_k_m               ~142.45GB   53.0
-2-bit q2_k                  ~85.95GB   53.0
-4-bit mlx-4bit · mac only   ~132.7GB   53.0
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run DeepSeek-Coder-V2 Instruct (0614) (Q4_K_M, needs ~142.45 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF/tree/899b543bb21c3a4c146139a7e52c5deb47ad20e3))
+   
+   ```sh
+   llama cli -hf bartowski/DeepSeek-Coder-V2-Instruct-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/DeepSeek-Coder-V2-Instruct-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit q4_k_m · ~142.45GB
-llama cli -hf bartowski/DeepSeek-Coder-V2-Instruct-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/DeepSeek-Coder-V2-Instruct-GGUF:Q4_K_M
-# 2-bit q2_k · ~85.95GB
-llama cli -hf bartowski/DeepSeek-Coder-V2-Instruct-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/DeepSeek-Coder-V2-Instruct-GGUF:Q2_K
-```
+Other versions: Q2_K (~85.95 GB) `llama cli -hf bartowski/DeepSeek-Coder-V2-Instruct-GGUF:Q2_K`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~142.45GB
-lms get https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit q2_k · ~85.95GB
-lms get https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~132.7GB
-lms get https://huggingface.co/GGorman/DeepSeek-Coder-V2-Instruct-Q4-mlx -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+2. Run DeepSeek-Coder-V2 Instruct (0614) (Q4_K_M, needs ~142.45 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF/tree/899b543bb21c3a4c146139a7e52c5deb47ad20e3))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~132.7GB
-mlx_lm.chat --model GGorman/DeepSeek-Coder-V2-Instruct-Q4-mlx
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model GGorman/DeepSeek-Coder-V2-Instruct-Q4-mlx
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: Q2_K (~85.95 GB) `lms get https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF@Q2_K -y` · 4bit (~132.7 GB, Mac only) `lms get https://huggingface.co/GGorman/DeepSeek-Coder-V2-Instruct-Q4-mlx -y`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run DeepSeek-Coder-V2 Instruct (0614) (4bit, needs ~132.7 GB, Mac only, from [huggingface.co/GGorman](https://huggingface.co/GGorman/DeepSeek-Coder-V2-Instruct-Q4-mlx/tree/26f5b71c868892128eb35b2872664296649af982))
+   
+   ```sh
+   mlx_lm.chat --model GGorman/DeepSeek-Coder-V2-Instruct-Q4-mlx
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model GGorman/DeepSeek-Coder-V2-Instruct-Q4-mlx
+   ```
+
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct)
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

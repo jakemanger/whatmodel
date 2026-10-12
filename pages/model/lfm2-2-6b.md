@@ -75,60 +75,83 @@ weighted average                        = 42.8
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md): LFM2 card model-property table: 'Context length 32,768 tokens' for LFM2-350M/700M/1.2B/2.6B (config allows 128000). Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_k_m               ~1.56GB   42.8
-4-bit mlx-4bit · mac only   ~1.4GB   42.8
-4-bit mlx-8bit · mac only   ~2.7GB   42.8
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run LFM2 2.6B (Q4_K_M, needs ~1.56 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF/tree/a759abdc5955d4ca97763e5cb7ff3940589ba898))
+   
+   ```sh
+   llama cli -hf LiquidAI/LFM2-2.6B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf LiquidAI/LFM2-2.6B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~1.56GB
-llama cli -hf LiquidAI/LFM2-2.6B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf LiquidAI/LFM2-2.6B-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run LFM2 2.6B (Q4_K_M, needs ~1.56 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF/tree/a759abdc5955d4ca97763e5cb7ff3940589ba898))
+   
+   ```sh
+   lms get https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~1.56GB
-lms get https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~1.4GB
-lms get https://huggingface.co/mlx-community/LFM2-2.6B-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~2.7GB
-lms get https://huggingface.co/mlx-community/LFM2-2.6B-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: 4bit (~1.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/LFM2-2.6B-4bit -y` · 8bit (~2.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/LFM2-2.6B-8bit -y`
 
-```sh
-# 4-bit q4_k_m · ~1.56GB
-ollama run hf.co/LiquidAI/LFM2-2.6B-GGUF:Q4_K_M
-```
+### Ollama
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~1.4GB
-mlx_lm.chat --model mlx-community/LFM2-2.6B-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/LFM2-2.6B-4bit
-# 4-bit mlx-8bit · mac only · ~2.7GB
-mlx_lm.chat --model mlx-community/LFM2-2.6B-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/LFM2-2.6B-8bit
-```
+2. Run LFM2 2.6B (Q4_K_M, needs ~1.56 GB, from [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF/tree/a759abdc5955d4ca97763e5cb7ff3940589ba898))
+   
+   ```sh
+   ollama run hf.co/LiquidAI/LFM2-2.6B-GGUF:Q4_K_M
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run LFM2 2.6B (4bit, needs ~1.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/LFM2-2.6B-4bit/tree/493071ebca3592c63085e19612ded87192a2a0dd))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/LFM2-2.6B-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/LFM2-2.6B-4bit
+   ```
+
+Other versions: 8bit (~2.7 GB, Mac only) `mlx_lm.chat --model mlx-community/LFM2-2.6B-8bit`
+
+Official weights and documentation: [huggingface.co/LiquidAI](https://huggingface.co/LiquidAI/LFM2-2.6B)
 
 [interactive version](https://whatmodel.sh/model/lfm2-2-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

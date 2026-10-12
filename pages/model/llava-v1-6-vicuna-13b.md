@@ -44,20 +44,19 @@ weighted average                           = 33.3
 
 ## How to run it
 
-<pre>
-download    size  score
-4-bit q4_0  ~8GB   33.3
-</pre>
+### Ollama (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-### Run it on your own machine
-
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
-
-```sh
-# 4-bit q4_0 · ~8GB
-ollama run llava:13b
-```
+2. Run LLaVA-v1.6-Vicuna-13B (Q4_0, needs ~8 GB, from [ollama.com](https://ollama.com/library/llava/tags))
+   
+   ```sh
+   ollama run llava:13b
+   ```
 
 [interactive version](https://whatmodel.sh/model/llava-v1-6-vicuna-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

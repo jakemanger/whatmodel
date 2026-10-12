@@ -65,8 +65,6 @@ weighted average                                   = 55.2
 
 ## How to run it
 
-<sub>[context source](https://docs.mistral.ai/models/model-cards/magistral-medium-1-1-25-07): Mistral docs model card: context 40k. Observed 2026-10-10.</sub>
-
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/magistral-medium-2507) · [JSON](https://whatmodel.sh/api?format=json&all=1)

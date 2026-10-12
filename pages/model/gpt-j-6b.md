@@ -72,22 +72,14 @@ weighted average                                   = 24.5
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md): Context length stated on the official model card.</sub>
+### Other ways to run it
 
-<pre>
-download        size  score
-4-bit fp16  ~12.11GB   24.5
-</pre>
+1. Run it as published (fp16, needs ~12.11 GB, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-j-6b/tree/float16))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-j-6b', torch_dtype='auto', device_map='auto', revision='float16')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp16 · ~12.11GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-j-6b', torch_dtype='auto', device_map='auto', revision='float16')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-j-6b)
 
 [interactive version](https://whatmodel.sh/model/gpt-j-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

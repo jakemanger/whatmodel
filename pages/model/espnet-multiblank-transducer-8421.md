@@ -43,20 +43,14 @@ weighted average                                   = 39.9
 
 ## How to run it
 
-<pre>
-version     needs  score
-fp32 · CPU   ~8GB   39.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 · CPU, needs ~8 GB, from [huggingface.co/espnet](https://huggingface.co/espnet/librispeech_multiblank_transducer_8421/blob/9b61b744529c1dfc2c190c5ead3b039888965686/README.md))
+   
+   ```sh
+   uv run --python 3.10 --with espnet --with espnet_model_zoo --with librosa python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained(model_tag='espnet/librispeech_multiblank_transducer_8421', lm_weight=0); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · CPU · ~8GB
-uv run --python 3.10 --with espnet --with espnet_model_zoo --with librosa python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained(model_tag='espnet/librispeech_multiblank_transducer_8421', lm_weight=0); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
-```
+Official weights and documentation: [huggingface.co/espnet](https://huggingface.co/espnet/librispeech_multiblank_transducer_8421)
 
 [interactive version](https://whatmodel.sh/model/espnet-multiblank-transducer-8421) · [JSON](https://whatmodel.sh/api?format=json&all=1)

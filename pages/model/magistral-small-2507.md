@@ -65,78 +65,95 @@ weighted average                                   = 54.5
 
 ## How to run it
 
-<sub>[context source](https://docs.mistral.ai/models/model-cards/magistral-small-1-1-25-07): Mistral docs model card: context 40k (API retired 11/30/2025). Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-16-bit bf16 · nvidia only  ~47.14GB   54.5
-4-bit Q4_K_M                ~14.3GB   54.5
-8-bit Q8_0                  ~25.1GB   54.5
-4-bit mlx-4bit · mac only   ~13.3GB   54.5
-4-bit mlx-8bit · mac only     ~25GB   54.5
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Magistral Small 1.1 (2507) (Q4_K_M, needs ~14.3 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2507-GGUF/tree/129d7a005ec2180c7b6a56b8f175032d48ff78d9))
+   
+   ```sh
+   llama cli -hf mistralai/Magistral-Small-2507-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mistralai/Magistral-Small-2507-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~25.1 GB) `llama cli -hf mistralai/Magistral-Small-2507-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~14.3GB
-llama cli -hf mistralai/Magistral-Small-2507-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mistralai/Magistral-Small-2507-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~25.1GB
-llama cli -hf mistralai/Magistral-Small-2507-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mistralai/Magistral-Small-2507-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~14.3GB
-lms get https://huggingface.co/mistralai/Magistral-Small-2507-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~25.1GB
-lms get https://huggingface.co/mistralai/Magistral-Small-2507-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~13.3GB
-lms get https://huggingface.co/lmstudio-community/Magistral-Small-2507-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~25GB
-lms get https://huggingface.co/lmstudio-community/Magistral-Small-2507-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Magistral Small 1.1 (2507) (Q4_K_M, needs ~14.3 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2507-GGUF/tree/129d7a005ec2180c7b6a56b8f175032d48ff78d9))
+   
+   ```sh
+   lms get https://huggingface.co/mistralai/Magistral-Small-2507-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~14.3GB
-ollama run hf.co/mistralai/Magistral-Small-2507-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~25.1GB
-ollama run hf.co/mistralai/Magistral-Small-2507-GGUF:Q8_0
-```
+Other versions: Q8_0 (~25.1 GB) `lms get https://huggingface.co/mistralai/Magistral-Small-2507-GGUF@Q8_0 -y` · 4bit (~13.3 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Magistral-Small-2507-MLX-4bit -y` · 8bit (~25 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Magistral-Small-2507-MLX-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~13.3GB
-mlx_lm.chat --model lmstudio-community/Magistral-Small-2507-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Magistral-Small-2507-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~25GB
-mlx_lm.chat --model lmstudio-community/Magistral-Small-2507-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Magistral-Small-2507-MLX-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-**Other engines**
+2. Run Magistral Small 1.1 (2507) (Q4_K_M, needs ~14.3 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2507-GGUF/tree/129d7a005ec2180c7b6a56b8f175032d48ff78d9))
+   
+   ```sh
+   ollama run hf.co/mistralai/Magistral-Small-2507-GGUF:Q4_K_M
+   ```
 
-```sh
-# 16-bit bf16 · nvidia only · ~47.14GB
-vllm serve mistralai/Magistral-Small-2507 --reasoning-parser mistral --tokenizer_mode mistral --config_format mistral --load_format mistral --tool-call-parser mistral --enable-auto-tool-choice --tensor-parallel-size 2
-```
+Other versions: Q8_0 (~25.1 GB) `ollama run hf.co/mistralai/Magistral-Small-2507-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Magistral Small 1.1 (2507) (4bit, needs ~13.3 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Magistral-Small-2507-MLX-4bit/tree/5cfe953b7292617b92a01d8a791e2e048d1d6e07))
+   
+   ```sh
+   mlx_lm.chat --model lmstudio-community/Magistral-Small-2507-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lmstudio-community/Magistral-Small-2507-MLX-4bit
+   ```
+
+Other versions: 8bit (~25 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Magistral-Small-2507-MLX-8bit`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~47.14 GB, NVIDIA only, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2507/blob/b3583a426ca23186681c4297926dfe9219be6161/README.md))
+   
+   ```sh
+   vllm serve mistralai/Magistral-Small-2507 --reasoning-parser mistral --tokenizer_mode mistral --config_format mistral --load_format mistral --tool-call-parser mistral --enable-auto-tool-choice --tensor-parallel-size 2
+   ```
+
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Magistral-Small-2507)
 
 [interactive version](https://whatmodel.sh/model/magistral-small-2507) · [JSON](https://whatmodel.sh/api?format=json&all=1)

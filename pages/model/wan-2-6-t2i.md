@@ -45,10 +45,10 @@ weighted average                        = 61.3
 
 ## How to run it
 
+### Through an API
+
 api (DeepInfra) · $0.030/image · [deepinfra.com](https://deepinfra.com/Wan-AI/Wan2.6-T2I)
 
 <sub>[price source](https://deepinfra.com/Wan-AI/Wan2.6-T2I): USD per generated image on DeepInfra; single per-image rate listed (default size 1280\*1280, 1-4 images per request billed per image). Product: DeepInfra text-to-image. API model: Wan-AI/Wan2.6-T2I. Settings: num\_images=1. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/wan-2-6-t2i) · [JSON](https://whatmodel.sh/api?format=json&all=1)

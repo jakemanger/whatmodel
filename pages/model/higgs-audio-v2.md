@@ -61,23 +61,16 @@ weighted average                                   = 54.7
 
 ## How to run it
 
-<pre>
-version                                      needs  score
-bf16 (transformers &gt;=5.3.0) · nvidia on…  ~12.37GB   54.7
-mlx-8bit (mlx-audio) · mac only               ~7GB   54.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (TRANSFORMERS >=5.3.0), needs ~12.37 GB, NVIDIA only, from [huggingface.co/bosonai](https://huggingface.co/bosonai/higgs-tts-2-3b-base/blob/d80c511612b3040ff2877ce3d408747df1739f11/README.md))
+   
+   ```sh
+   uv run --with 'transformers>=5.3.0' --with torch --with accelerate python -c "from transformers import AutoProcessor, HiggsAudioV2ForConditionalGeneration; model_id = 'bosonai/higgs-audio-v2-generation-3B-base'; processor = AutoProcessor.from_pretrained(model_id, device_map='auto'); model = HiggsAudioV2ForConditionalGeneration.from_pretrained(model_id, device_map='auto'); conversation = [{'role': 'system', 'content': [{'type': 'text', 'text': 'Generate audio following instruction.'}]}, {'role': 'scene', 'content': [{'type': 'text', 'text': 'Audio is recorded from a quiet room.'}]}, {'role': 'user', 'content': [{'type': 'text', 'text': 'The sun rises in the east and sets in the west. This simple fact has been observed by humans for thousands of years.'}]}]; inputs = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=True, return_dict=True, sampling_rate=24000, return_tensors='pt').to(model.device); outputs = model.generate(**inputs, max_new_tokens=1000, do_sample=False); decoded = processor.batch_decode(outputs); processor.save_audio(decoded, 'output_single_speaker.wav')"
+   ```
 
-### Run it on your own machine
+Other versions: 8bit (mlx-audio) (~7 GB, Mac only) `pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/higgs-audio-v2-3B-mlx-q8 --text "Hello from Higgs Audio on MLX." --ref_audio path/to/reference.wav --ref_text "Transcript of the reference clip."`
 
-**Other engines**
-
-```sh
-# bf16 (transformers >=5.3.0) · nvidia only · ~12.37GB
-uv run --with 'transformers>=5.3.0' --with torch --with accelerate python -c "from transformers import AutoProcessor, HiggsAudioV2ForConditionalGeneration; model_id = 'bosonai/higgs-audio-v2-generation-3B-base'; processor = AutoProcessor.from_pretrained(model_id, device_map='auto'); model = HiggsAudioV2ForConditionalGeneration.from_pretrained(model_id, device_map='auto'); conversation = [{'role': 'system', 'content': [{'type': 'text', 'text': 'Generate audio following instruction.'}]}, {'role': 'scene', 'content': [{'type': 'text', 'text': 'Audio is recorded from a quiet room.'}]}, {'role': 'user', 'content': [{'type': 'text', 'text': 'The sun rises in the east and sets in the west. This simple fact has been observed by humans for thousands of years.'}]}]; inputs = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=True, return_dict=True, sampling_rate=24000, return_tensors='pt').to(model.device); outputs = model.generate(**inputs, max_new_tokens=1000, do_sample=False); decoded = processor.batch_decode(outputs); processor.save_audio(decoded, 'output_single_speaker.wav')"
-# mlx-8bit (mlx-audio) · mac only · ~7GB
-pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/higgs-audio-v2-3B-mlx-q8 --text "Hello from Higgs Audio on MLX." --ref_audio path/to/reference.wav --ref_text "Transcript of the reference clip."
-```
+Official weights and documentation: [huggingface.co/bosonai](https://huggingface.co/bosonai/higgs-tts-2-3b-base)
 
 [interactive version](https://whatmodel.sh/model/higgs-audio-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

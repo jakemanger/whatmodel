@@ -65,80 +65,95 @@ Poolside vendor-repor…  <a href="https://huggingface.co/poolside/Laguna-S-2.1/
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md): Card: 'Context window: 1,048,576 tokens'; the ollama GGUF tags are listed with 256K. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                        size  score
-4-bit q4_k_m                   ~96GB   73.4
-8-bit q8_0                    ~128GB   73.4
-16-bit bf16 · nvidia only  ~235.13GB   73.4
-4-bit Q4_K_M                   ~96GB   73.4
-8-bit Q8_0                  ~128.8GB   73.4
-4-bit mlx-4bit · mac only    ~66.1GB   73.4
-4-bit mlx-8bit · mac only   ~124.9GB   73.4
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Laguna S 2.1 (118B-A8B) (Q4_K_M, needs ~96 GB, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-S-2.1-GGUF/tree/19036076775e9ba6758595f78af99cb976ef8ff0))
+   
+   ```sh
+   llama cli -hf poolside/Laguna-S-2.1-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf poolside/Laguna-S-2.1-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~128.8 GB) `llama cli -hf poolside/Laguna-S-2.1-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~96GB
-llama cli -hf poolside/Laguna-S-2.1-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf poolside/Laguna-S-2.1-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~128.8GB
-llama cli -hf poolside/Laguna-S-2.1-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf poolside/Laguna-S-2.1-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~96GB
-lms get https://huggingface.co/poolside/Laguna-S-2.1-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~128.8GB
-lms get https://huggingface.co/poolside/Laguna-S-2.1-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~66.1GB
-lms get https://huggingface.co/TensorFold/Laguna-S-2.1-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~124.9GB
-lms get https://huggingface.co/TensorFold/Laguna-S-2.1-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Laguna S 2.1 (118B-A8B) (Q4_K_M, needs ~96 GB, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-S-2.1-GGUF/tree/19036076775e9ba6758595f78af99cb976ef8ff0))
+   
+   ```sh
+   lms get https://huggingface.co/poolside/Laguna-S-2.1-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~96GB
-ollama run laguna-s-2.1:q4_K_M
-# 8-bit q8_0 · ~128GB
-ollama run laguna-s-2.1:q8_0
-```
+Other versions: Q8_0 (~128.8 GB) `lms get https://huggingface.co/poolside/Laguna-S-2.1-GGUF@Q8_0 -y` · 4bit (~66.1 GB, Mac only) `lms get https://huggingface.co/TensorFold/Laguna-S-2.1-MLX-4bit -y` · 8bit (~124.9 GB, Mac only) `lms get https://huggingface.co/TensorFold/Laguna-S-2.1-MLX-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~66.1GB
-mlx_lm.chat --model TensorFold/Laguna-S-2.1-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model TensorFold/Laguna-S-2.1-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~124.9GB
-mlx_lm.chat --model TensorFold/Laguna-S-2.1-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model TensorFold/Laguna-S-2.1-MLX-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-**Other engines**
+2. Run Laguna S 2.1 (118B-A8B) (Q4_K_M, needs ~96 GB, from [ollama.com](https://ollama.com/library/laguna-s-2.1/tags))
+   
+   ```sh
+   ollama run laguna-s-2.1:q4_K_M
+   ```
 
-```sh
-# 16-bit bf16 · nvidia only · ~235.13GB
-vllm serve --model poolside/Laguna-S-2.1 --tensor-parallel-size 4 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'
-```
+Other versions: Q8_0 (~128 GB) `ollama run laguna-s-2.1:q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Laguna S 2.1 (118B-A8B) (4bit, needs ~66.1 GB, Mac only, from [huggingface.co/TensorFold](https://huggingface.co/TensorFold/Laguna-S-2.1-MLX-4bit/tree/df803a073dfef42c3e90cd795ad490aef65846b9))
+   
+   ```sh
+   mlx_lm.chat --model TensorFold/Laguna-S-2.1-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model TensorFold/Laguna-S-2.1-MLX-4bit
+   ```
+
+Other versions: 8bit (~124.9 GB, Mac only) `mlx_lm.chat --model TensorFold/Laguna-S-2.1-MLX-8bit`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~235.13 GB, NVIDIA only, from [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md))
+   
+   ```sh
+   vllm serve --model poolside/Laguna-S-2.1 --tensor-parallel-size 4 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'
+   ```
+
+Official weights and documentation: [huggingface.co/poolside](https://huggingface.co/poolside/Laguna-S-2.1)
 
 [interactive version](https://whatmodel.sh/model/laguna-s-2-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

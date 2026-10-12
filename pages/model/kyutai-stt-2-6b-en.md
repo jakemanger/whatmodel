@@ -56,23 +56,16 @@ weighted average                        = 56.9
 
 ## How to run it
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~6.74GB   56.9
-bf16 · mac only     ~6.74GB   56.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~6.74 GB, NVIDIA only, from [github.com/kyutai-labs](https://github.com/kyutai-labs/delayed-streams-modeling))
+   
+   ```sh
+   uvx --with moshi python -m moshi.run_inference --hf-repo kyutai/stt-2.6b-en audio.mp3
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~6.74 GB, Mac only) `uvx --with moshi-mlx python -m moshi_mlx.run_inference --hf-repo kyutai/stt-2.6b-en-mlx audio.mp3 --temp 0`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~6.74GB
-uvx --with moshi python -m moshi.run_inference --hf-repo kyutai/stt-2.6b-en audio.mp3
-# bf16 · mac only · ~6.74GB
-uvx --with moshi-mlx python -m moshi_mlx.run_inference --hf-repo kyutai/stt-2.6b-en-mlx audio.mp3 --temp 0
-```
+Official weights and documentation: [huggingface.co/kyutai](https://huggingface.co/kyutai/stt-2.6b-en)
 
 [interactive version](https://whatmodel.sh/model/kyutai-stt-2-6b-en) · [JSON](https://whatmodel.sh/api?format=json&all=1)

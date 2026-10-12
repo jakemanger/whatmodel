@@ -41,65 +41,70 @@ weighted average                        = 54.0
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509/blob/0f2767662a013c0fb631079cea883155252bc3b6/README.md): Card: 'Apertus by default supports a context length up to 65,536 tokens' (config max\_position\_embeddings 65536). Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-16-bit bf16 · nvidia only  ~141.2GB   54.0
-4-bit Q4_K_M                ~43.7GB   54.0
-8-bit Q8_0                    ~75GB   54.0
-2-bit UD-IQ2_XXS            ~19.9GB   54.0
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Apertus 70B Instruct (2509) (Q4_K_M, needs ~43.7 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF/tree/aff98136df0e7c01a23a2e706deb489895b86879))
+   
+   ```sh
+   llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~75 GB) `llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q8_0` · UD-IQ2_XXS (~19.9 GB) `llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:UD-IQ2_XXS`
 
-```sh
-# 4-bit Q4_K_M · ~43.7GB
-llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~75GB
-llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Apertus-70B-Instruct-2509-GGUF:Q8_0
-# 2-bit UD-IQ2_XXS · ~19.9GB
-llama cli -hf unsloth/Apertus-70B-Instruct-2509-GGUF:UD-IQ2_XXS
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Apertus-70B-Instruct-2509-GGUF:UD-IQ2_XXS
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~43.7GB
-lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~75GB
-lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit UD-IQ2_XXS · ~19.9GB
-lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@UD-IQ2_XXS -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Apertus 70B Instruct (2509) (Q4_K_M, needs ~43.7 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF/tree/aff98136df0e7c01a23a2e706deb489895b86879))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~43.7GB
-ollama run hf.co/unsloth/Apertus-70B-Instruct-2509-GGUF:Q4_K_M
-# 2-bit UD-IQ2_XXS · ~19.9GB
-ollama run hf.co/unsloth/Apertus-70B-Instruct-2509-GGUF:UD-IQ2_XXS
-```
+Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@Q8_0 -y` · UD-IQ2_XXS (~19.9 GB) `lms get https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF@UD-IQ2_XXS -y`
 
-**Other engines**
+### Ollama
 
-```sh
-# 16-bit bf16 · nvidia only · ~141.2GB
-vllm serve swiss-ai/Apertus-70B-Instruct-2509
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Apertus 70B Instruct (2509) (Q4_K_M, needs ~43.7 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Apertus-70B-Instruct-2509-GGUF/tree/aff98136df0e7c01a23a2e706deb489895b86879))
+   
+   ```sh
+   ollama run hf.co/unsloth/Apertus-70B-Instruct-2509-GGUF:Q4_K_M
+   ```
+
+Other versions: UD-IQ2_XXS (~19.9 GB) `ollama run hf.co/unsloth/Apertus-70B-Instruct-2509-GGUF:UD-IQ2_XXS`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~141.2 GB, NVIDIA only, from [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509/tree/0f2767662a013c0fb631079cea883155252bc3b6))
+   
+   ```sh
+   vllm serve swiss-ai/Apertus-70B-Instruct-2509
+   ```
+
+Official weights and documentation: [huggingface.co/swiss-ai](https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509)
 
 [interactive version](https://whatmodel.sh/model/apertus-70b-instruct-2509) · [JSON](https://whatmodel.sh/api?format=json&all=1)

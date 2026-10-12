@@ -42,20 +42,12 @@ weighted average                        = 40.8
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp32 TorchScript (transformers remote c…  ~0.08GB   40.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 TorchScript (transformers remote code @ dab6545) · ~0.08GB
-uvx --from huggingface_hub hf download abr-ai/niagara-19m-batch.en --revision dab6545337495482f2fc05455432a7a05c88d3cc --local-dir asr-19m-v2-en && uv run --with torch --with transformers --with sentencepiece --with soundfile python -c "import soundfile as sf; from transformers import AutoFeatureExtractor, AutoModel, AutoTokenizer; p = './asr-19m-v2-en'; feature_extractor = AutoFeatureExtractor.from_pretrained(p, trust_remote_code=True); model = AutoModel.from_pretrained(p, trust_remote_code=True); tokenizer = AutoTokenizer.from_pretrained(p, trust_remote_code=True); audio, _ = sf.read('audio.wav', dtype='float32'); print(tokenizer.decode_from_logits(model(feature_extractor(audio)))[0])"
-```
+1. Run it as published (fp32 TorchScript (transformers remote code @ dab6545), needs ~0.08 GB, from [huggingface.co/abr-ai](https://huggingface.co/abr-ai/niagara-19m-batch.en/blob/dab6545337495482f2fc05455432a7a05c88d3cc/README.md))
+   
+   ```sh
+   uvx --from huggingface_hub hf download abr-ai/niagara-19m-batch.en --revision dab6545337495482f2fc05455432a7a05c88d3cc --local-dir asr-19m-v2-en && uv run --with torch --with transformers --with sentencepiece --with soundfile python -c "import soundfile as sf; from transformers import AutoFeatureExtractor, AutoModel, AutoTokenizer; p = './asr-19m-v2-en'; feature_extractor = AutoFeatureExtractor.from_pretrained(p, trust_remote_code=True); model = AutoModel.from_pretrained(p, trust_remote_code=True); tokenizer = AutoTokenizer.from_pretrained(p, trust_remote_code=True); audio, _ = sf.read('audio.wav', dtype='float32'); print(tokenizer.decode_from_logits(model(feature_extractor(audio)))[0])"
+   ```
 
 [interactive version](https://whatmodel.sh/model/abr-asr-19m-v2-en) · [JSON](https://whatmodel.sh/api?format=json&all=1)

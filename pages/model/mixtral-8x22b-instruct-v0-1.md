@@ -106,80 +106,87 @@ weighted average                                   = 48.6
 
 ## How to run it
 
-<sub>[context source](https://docs.mistral.ai/models/mixtral-8x22b-0-1-0-3): Context limit from the maker's documentation, observed 2026-10-06.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit q4_k_m                ~85.1GB   48.6
-8-bit q8_0                 ~169.7GB   48.6
-4-bit Q4_K_M                ~85.6GB   48.6
-8-bit Q8_0                 ~149.4GB   48.6
-2-bit Q2_K                  ~52.1GB   48.6
-4-bit mlx-4bit · mac only   ~79.1GB   48.6
-4-bit mlx-8bit · mac only  ~149.6GB   48.6
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Mixtral 8x22B Instruct v0.1 (Q4_K_M, needs ~85.6 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF/tree/9f2f6c5ec37f9bce5f5f3a7ff07b11d573443e62))
+   
+   ```sh
+   llama cli -hf MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~149.4 GB) `llama cli -hf MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF:Q8_0` · Q2_K (~52.1 GB) `llama cli -hf MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF:Q2_K`
 
-```sh
-# 4-bit Q4_K_M · ~85.6GB
-llama cli -hf MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~149.4GB
-llama cli -hf MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF:Q8_0
-# 2-bit Q2_K · ~52.1GB
-llama cli -hf MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF:Q2_K
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~85.6GB
-lms get https://huggingface.co/MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~149.4GB
-lms get https://huggingface.co/MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit Q2_K · ~52.1GB
-lms get https://huggingface.co/MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~79.1GB
-lms get https://huggingface.co/mlx-community/Mixtral-8x22B-Instruct-v0.1-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~149.6GB
-lms get https://huggingface.co/mlx-community/Mixtral-8x22B-Instruct-v0.1-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Mixtral 8x22B Instruct v0.1 (Q4_K_M, needs ~85.6 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF/tree/9f2f6c5ec37f9bce5f5f3a7ff07b11d573443e62))
+   
+   ```sh
+   lms get https://huggingface.co/MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~85.1GB
-ollama run mixtral:8x22b-instruct-v0.1-q4_K_M
-# 8-bit q8_0 · ~169.7GB
-ollama run mixtral:8x22b-instruct-v0.1-q8_0
-```
+Other versions: Q8_0 (~149.4 GB) `lms get https://huggingface.co/MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF@Q8_0 -y` · Q2_K (~52.1 GB) `lms get https://huggingface.co/MaziyarPanahi/Mixtral-8x22B-Instruct-v0.1-GGUF@Q2_K -y` · 4bit (~79.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mixtral-8x22B-Instruct-v0.1-4bit -y` · 8bit (~149.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mixtral-8x22B-Instruct-v0.1-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~79.1GB
-mlx_lm.chat --model mlx-community/Mixtral-8x22B-Instruct-v0.1-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Mixtral-8x22B-Instruct-v0.1-4bit
-# 4-bit mlx-8bit · mac only · ~149.6GB
-mlx_lm.chat --model mlx-community/Mixtral-8x22B-Instruct-v0.1-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Mixtral-8x22B-Instruct-v0.1-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Mixtral 8x22B Instruct v0.1 (Q4_K_M, needs ~85.1 GB, from [ollama.com](https://ollama.com/library/mixtral/tags))
+   
+   ```sh
+   ollama run mixtral:8x22b-instruct-v0.1-q4_K_M
+   ```
+
+Other versions: Q8_0 (~169.7 GB) `ollama run mixtral:8x22b-instruct-v0.1-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Mixtral 8x22B Instruct v0.1 (4bit, needs ~79.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mixtral-8x22B-Instruct-v0.1-4bit/tree/0ec04c0321fbcde42ac53fe51587d75d7328ba85))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Mixtral-8x22B-Instruct-v0.1-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Mixtral-8x22B-Instruct-v0.1-4bit
+   ```
+
+Other versions: 8bit (~149.6 GB, Mac only) `mlx_lm.chat --model mlx-community/Mixtral-8x22B-Instruct-v0.1-8bit`
+
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1)
 
 [interactive version](https://whatmodel.sh/model/mixtral-8x22b-instruct-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -68,20 +68,14 @@ stepfun-ai/Step1X-Edi…  <a href="https://github.com/stepfun-ai/Step1X-Edit/blo
 
 ## How to run it
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~50.6GB   48.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~50.6 GB, NVIDIA only, from [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step1X-Edit-v1p1-diffusers/blob/378a128282f4b1b95c9d3bf9bc6c8aab8e71508d/README.md))
+   
+   ```sh
+   git clone -b step1xedit https://github.com/Peyton-Chen/diffusers.git && cd diffusers && pip install -e . && pip install transformers==4.55.0 && python -c "import torch; from diffusers import Step1XEditPipeline; from diffusers.utils import load_image; p=Step1XEditPipeline.from_pretrained('stepfun-ai/Step1X-Edit-v1p1-diffusers', torch_dtype=torch.bfloat16); p.to('cuda'); p(image=load_image('input.png').convert('RGB'), prompt='add a ruby pendant to the neck of the girl', num_inference_steps=28, true_cfg_scale=6.0, generator=torch.Generator().manual_seed(42)).images[0].save('0000.jpg')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~50.6GB
-git clone -b step1xedit https://github.com/Peyton-Chen/diffusers.git && cd diffusers && pip install -e . && pip install transformers==4.55.0 && python -c "import torch; from diffusers import Step1XEditPipeline; from diffusers.utils import load_image; p=Step1XEditPipeline.from_pretrained('stepfun-ai/Step1X-Edit-v1p1-diffusers', torch_dtype=torch.bfloat16); p.to('cuda'); p(image=load_image('input.png').convert('RGB'), prompt='add a ruby pendant to the neck of the girl', num_inference_steps=28, true_cfg_scale=6.0, generator=torch.Generator().manual_seed(42)).images[0].save('0000.jpg')"
-```
+Official weights and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step1X-Edit)
 
 [interactive version](https://whatmodel.sh/model/step1x-edit-v1-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

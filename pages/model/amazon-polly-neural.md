@@ -42,10 +42,10 @@ weighted average                        = 44.6
 
 ## How to run it
 
+### Through an API
+
 api (Amazon Web Services) · $16.00/M chars · [aws.amazon.com](https://aws.amazon.com/polly/pricing)
 
 <sub>[price source](https://aws.amazon.com/polly/pricing): USD per 1M characters: Amazon Polly Neural voices are priced at $16.00 per 1 million characters (outside the free tier). Product: Amazon Polly. API model: engine=neural. Settings: standard AWS regions. Price basis: published list rate. Exclusions: free tier, GovCloud ($19.20). Currency: USD. AWS official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/amazon-polly-neural) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -70,20 +70,14 @@ weighted average                                   = 49.7
 
 ## How to run it
 
-<pre>
-download                       size  score
-4-bit fp32 · nvidia only  ~293.23GB   49.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~293.23 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+   
+   ```sh
+   vllm serve allenai/Molmo-72B-0924 --trust-remote-code
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp32 · nvidia only · ~293.23GB
-vllm serve allenai/Molmo-72B-0924 --trust-remote-code
-```
+Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Molmo-72B-0924)
 
 [interactive version](https://whatmodel.sh/model/molmo-72b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

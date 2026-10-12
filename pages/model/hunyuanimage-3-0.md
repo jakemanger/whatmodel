@@ -72,27 +72,22 @@ weighted average                                   = 57.2
 
 ## How to run it
 
+### Through an API
+
 api (Replicate (PrunaAI optimized)) · $0.080/image · [replicate.com](https://replicate.com/tencent/hunyuan-image-3)
 
 <sub>[price source](https://replicate.com/tencent/hunyuan-image-3): USD per output image on Replicate's tencent/hunyuan-image-3 model (billing: per output image; hardware time not added). Current version served from replicate-pruna/hunyuan-image-3 (PrunaAI optimized). Product: Replicate model API. API model: tencent/hunyuan-image-3. Settings: one output image. Price basis: published list rate. Currency: USD. Replicate official model page, observed 2026-09-25.</sub>
 
-<pre>
-version                                      needs  score
-bf16 (official, multi-GPU) · nvidia only  ~192.5GB   57.2
-nf4 (community, EricRollei/HunyuanImage…   ~48.5GB   57.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (OFFICIAL, MULTI-GPU), needs ~192.5 GB, NVIDIA only, from [github.com/Tencent-Hunyuan](https://github.com/Tencent-Hunyuan/HunyuanImage-3.0))
+   
+   ```sh
+   git clone https://github.com/Tencent-Hunyuan/HunyuanImage-3.0.git && cd HunyuanImage-3.0 && pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128 && pip install -r requirements.txt && hf download tencent/HunyuanImage-3.0 --local-dir ./HunyuanImage-3 && python3 run_image_gen.py --model-id ./HunyuanImage-3 --verbose 1 --prompt "a cat holding a sign" --bot-task image --image-size "1024x1024" --save ./image.png --rewrite 0
+   ```
 
-### Run it on your own machine
+Other versions: nf4 (community, EricRollei/HunyuanImage-3-NF4-v2) (~48.5 GB, NVIDIA only) `hf download EricRollei/HunyuanImage-3-NF4-v2 --local-dir ./HunyuanImage-3-NF4 && uv run --with transformers --with accelerate --with torch --with bitsandbytes python -c "from transformers import AutoModelForCausalLM; m=AutoModelForCausalLM.from_pretrained('./HunyuanImage-3-NF4', trust_remote_code=True, device_map='auto'); m.load_tokenizer('./HunyuanImage-3-NF4'); m.generate_image(prompt='a cat holding a sign', stream=True).save('out.png')"`
 
-**Other engines**
-
-```sh
-# bf16 (official, multi-GPU) · nvidia only · ~192.5GB
-git clone https://github.com/Tencent-Hunyuan/HunyuanImage-3.0.git && cd HunyuanImage-3.0 && pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128 && pip install -r requirements.txt && hf download tencent/HunyuanImage-3.0 --local-dir ./HunyuanImage-3 && python3 run_image_gen.py --model-id ./HunyuanImage-3 --verbose 1 --prompt "a cat holding a sign" --bot-task image --image-size "1024x1024" --save ./image.png --rewrite 0
-# nf4 (community, EricRollei/HunyuanImage-3-NF4-v2) · nvidia only · ~48.5GB
-hf download EricRollei/HunyuanImage-3-NF4-v2 --local-dir ./HunyuanImage-3-NF4 && uv run --with transformers --with accelerate --with torch --with bitsandbytes python -c "from transformers import AutoModelForCausalLM; m=AutoModelForCausalLM.from_pretrained('./HunyuanImage-3-NF4', trust_remote_code=True, device_map='auto'); m.load_tokenizer('./HunyuanImage-3-NF4'); m.generate_image(prompt='a cat holding a sign', stream=True).save('out.png')"
-```
+Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanImage-3.0)
 
 [interactive version](https://whatmodel.sh/model/hunyuanimage-3-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

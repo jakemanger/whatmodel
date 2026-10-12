@@ -42,20 +42,14 @@ weighted average                                   = 64.8
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp32 (huawei-noah/Speech-Backbones Grad…  ~0.12GB   64.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (huawei-noah/Speech-Backbones Grad-TTS repo), needs ~0.12 GB, NVIDIA only, from [github.com/huawei-noah](https://github.com/huawei-noah/Speech-Backbones/blob/7782c7a223dd25df47b4538698ee9756774e2924/Grad-TTS/README.md))
+   
+   ```sh
+   git clone https://github.com/huawei-noah/Speech-Backbones && cd Speech-Backbones/Grad-TTS && pip install -r requirements.txt && cd model/monotonic_align && python setup.py build_ext --inplace && cd ../.. && sed -i 's/^pe_scale = 1000/pe_scale = 1/' params.py && python inference.py -f resources/filelists/synthesis.txt -c checkpts/grad-tts-old.pt -t 10
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (huawei-noah/Speech-Backbones Grad-TTS repo) · nvidia only · ~0.12GB
-git clone https://github.com/huawei-noah/Speech-Backbones && cd Speech-Backbones/Grad-TTS && pip install -r requirements.txt && cd model/monotonic_align && python setup.py build_ext --inplace && cd ../.. && sed -i 's/^pe_scale = 1000/pe_scale = 1/' params.py && python inference.py -f resources/filelists/synthesis.txt -c checkpts/grad-tts-old.pt -t 10
-```
+Official weights and documentation: [github.com/huawei-noah](https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS)
 
 [interactive version](https://whatmodel.sh/model/grad-tts-10-hifigan) · [JSON](https://whatmodel.sh/api?format=json&all=1)

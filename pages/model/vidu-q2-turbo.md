@@ -43,10 +43,10 @@ weighted average                        = 55.0
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.050/sec · [fal.ai](https://fal.ai/models/fal-ai/vidu/q2/image-to-video/turbo)
 
 <sub>[price source](https://fal.ai/models/fal-ai/vidu/q2/image-to-video/turbo): USD per second of generated video at 720p on fal.ai: fal states 'For 720p each video second will cost $0.05' (1080p: $0.20 per request plus $0.05 per video second). Product: fal Vidu Q2 Turbo image-to-video endpoint. API model: fal-ai/vidu/q2/image-to-video/turbo. Settings: resolution=720p, image-to-video. Price basis: per-second rate printed by fal. Vidu's own API prices Q2-turbo 720P per task (starts at $0.04, $0.05 at 2 s, then +$0.05/s), which has no single per-second figure. Currency: USD. Not a Vidu direct tariff. fal.ai model page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/vidu-q2-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

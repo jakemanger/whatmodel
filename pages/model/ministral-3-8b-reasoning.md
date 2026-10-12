@@ -69,60 +69,83 @@ weighted average                                   = 55.2
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md): Mistral official model card: "Supports a 256k context window"; the card's serving notes give the default --max-model-len 262144 (exact tokens). Reasoning-2512 checkpoint. Observed 2026-09-25.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                     size  score
-4-bit q4_k_m                5.2GB   55.2
-4-bit mlx-4bit · mac only  ~4.8GB   55.2
-4-bit mlx-8bit · mac only    ~9GB   55.2
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Ministral 3 8B Reasoning 2512 (Q4_K_M, needs 5.2 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF/blob/4413bc9b7b091ddad28101650d1395f5e045a328/Ministral-3-8B-Reasoning-2512-Q4_K_M.gguf))
+   
+   ```sh
+   llama cli -hf mistralai/Ministral-3-8B-Reasoning-2512-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mistralai/Ministral-3-8B-Reasoning-2512-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · 5.2GB
-llama cli -hf mistralai/Ministral-3-8B-Reasoning-2512-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mistralai/Ministral-3-8B-Reasoning-2512-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run Ministral 3 8B Reasoning 2512 (Q4_K_M, needs 5.2 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF/blob/4413bc9b7b091ddad28101650d1395f5e045a328/Ministral-3-8B-Reasoning-2512-Q4_K_M.gguf))
+   
+   ```sh
+   lms get https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · 5.2GB
-lms get https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~4.8GB
-lms get https://huggingface.co/alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~9GB
-lms get https://huggingface.co/alexgusevski/Ministral-3-8B-Reasoning-2512-q8-mlx -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: 4bit (~4.8 GB, Mac only) `lms get https://huggingface.co/alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx -y` · 8bit (~9 GB, Mac only) `lms get https://huggingface.co/alexgusevski/Ministral-3-8B-Reasoning-2512-q8-mlx -y`
 
-```sh
-# 4-bit q4_k_m · 5.2GB
-ollama run hf.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF:Q4_K_M
-```
+### Ollama
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~4.8GB
-mlx_lm.chat --model alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx
-# 4-bit mlx-8bit · mac only · ~9GB
-mlx_lm.chat --model alexgusevski/Ministral-3-8B-Reasoning-2512-q8-mlx
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model alexgusevski/Ministral-3-8B-Reasoning-2512-q8-mlx
-```
+2. Run Ministral 3 8B Reasoning 2512 (Q4_K_M, needs 5.2 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF/blob/4413bc9b7b091ddad28101650d1395f5e045a328/Ministral-3-8B-Reasoning-2512-Q4_K_M.gguf))
+   
+   ```sh
+   ollama run hf.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF:Q4_K_M
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Ministral 3 8B Reasoning 2512 (4bit, needs ~4.8 GB, Mac only, from [huggingface.co/alexgusevski](https://huggingface.co/alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx/tree/168bd5f8ab87901e1133aabd3080b9353776f768))
+   
+   ```sh
+   mlx_lm.chat --model alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model alexgusevski/Ministral-3-8B-Reasoning-2512-q4-mlx
+   ```
+
+Other versions: 8bit (~9 GB, Mac only) `mlx_lm.chat --model alexgusevski/Ministral-3-8B-Reasoning-2512-q8-mlx`
+
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512)
 
 [interactive version](https://whatmodel.sh/model/ministral-3-8b-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

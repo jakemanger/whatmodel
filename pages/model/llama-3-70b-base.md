@@ -46,38 +46,49 @@ weighted average                                 = 46.1
 
 ## How to run it
 
-<pre>
-download                        size  score
-16-bit bf16                ~141.11GB   46.1
-4-bit mlx-4bit · mac only    ~39.7GB   46.1
-</pre>
+### LM Studio (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-### Run it on your own machine
+2. Run Llama 3 70B (base) (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Meta-Llama-3-70B-4bit/tree/fb4021fd52b19efd694e09c7c4aff3b5cbe5081b))
+   
+   ```sh
+   lms get https://huggingface.co/mlx-community/Meta-Llama-3-70B-4bit -y
+   ```
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit mlx-4bit · mac only · ~39.7GB
-lms get https://huggingface.co/mlx-community/Meta-Llama-3-70B-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+### MLX (Mac)
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~39.7GB
-mlx_lm.chat --model mlx-community/Meta-Llama-3-70B-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Meta-Llama-3-70B-4bit
-```
+2. Run Llama 3 70B (base) (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Meta-Llama-3-70B-4bit/tree/fb4021fd52b19efd694e09c7c4aff3b5cbe5081b))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Meta-Llama-3-70B-4bit
+   ```
 
-**Other engines**
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Meta-Llama-3-70B-4bit
+   ```
 
-```sh
-# 16-bit bf16 · ~141.11GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='meta-llama/Meta-Llama-3-70B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~141.11 GB, from [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Meta-Llama-3-70B/tree/c82494877ce7f6d7d317c56ec081328e382c72fe))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='meta-llama/Meta-Llama-3-70B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Meta-Llama-3-70B)
 
 [interactive version](https://whatmodel.sh/model/llama-3-70b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

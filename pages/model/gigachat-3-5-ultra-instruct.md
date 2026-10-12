@@ -83,22 +83,14 @@ weighted average                                   = 55.0
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md): Card: 'The maximum supported context length is 262K tokens.' Observed 2026-10-10.</sub>
+### Other ways to run it
 
-<pre>
-download                   size  score
-4-bit fp8 · nvidia only  ~434GB   55.0
-</pre>
+1. Run it as published (fp8, needs ~434 GB, NVIDIA only, from [huggingface.co/ai-sage](https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B/tree/d10dcaeccb04ca3186fdfa3bb3874b4474e6b41b))
+   
+   ```sh
+   vllm serve ai-sage/GigaChat3.5-432B-A28B --tensor-parallel-size 8
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp8 · nvidia only · ~434GB
-vllm serve ai-sage/GigaChat3.5-432B-A28B --tensor-parallel-size 8
-```
+Official weights and documentation: [huggingface.co/ai-sage](https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B)
 
 [interactive version](https://whatmodel.sh/model/gigachat-3-5-ultra-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

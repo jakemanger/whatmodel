@@ -61,10 +61,10 @@ weighted average                                   = 66.4
 
 ## How to run it
 
+### Through an API
+
 api (Alibaba Cloud Model Studio) · $0.075/image · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
 <sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per output image, Singapore (international) deployment; all listed qwen-image-2.0-pro snapshots (2026-03-03, 2026-04-22, 2026-06-22) have the same rate; Beijing lists $0.071676. Free quota and promotions excluded. Product: Alibaba Cloud Model Studio image generation. API model: qwen-image-2.0-pro. Settings: region=Singapore (international), n=1. Price basis: published list rate. Currency: USD. Alibaba Cloud official model pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/qwen-image-2-0-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -91,6 +91,8 @@ inclusionAI/Ling-3.0-…  <a href="https://huggingface.co/inclusionAI/Ling-3.0-f
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ring-2.6-1T)
 
 [interactive version](https://whatmodel.sh/model/ring-2-6-1t) · [JSON](https://whatmodel.sh/api?format=json&all=1)

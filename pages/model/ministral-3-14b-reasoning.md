@@ -113,52 +113,81 @@ mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512/blob/51f9210f3cd20f3452a80d5819d15dc61cc50630/README.md): Mistral official model card: "Supports a 256k context window"; the card's serving notes give the default --max-model-len 262144 (exact tokens). Reasoning-2512 checkpoint. Observed 2026-09-25.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                     size  score
-4-bit q4_k_m               8.24GB   57.5
-4-bit mlx-4bit · mac only  ~8.4GB   57.5
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Ministral 3 14B Reasoning 2512 (Q4_K_M, needs 8.24 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF/blob/fe3b038f30334729263d860d5dadbaa34e0f2a18/Ministral-3-14B-Reasoning-2512-Q4_K_M.gguf))
+   
+   ```sh
+   llama cli -hf mistralai/Ministral-3-14B-Reasoning-2512-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mistralai/Ministral-3-14B-Reasoning-2512-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · 8.24GB
-llama cli -hf mistralai/Ministral-3-14B-Reasoning-2512-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mistralai/Ministral-3-14B-Reasoning-2512-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run Ministral 3 14B Reasoning 2512 (Q4_K_M, needs 8.24 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF/blob/fe3b038f30334729263d860d5dadbaa34e0f2a18/Ministral-3-14B-Reasoning-2512-Q4_K_M.gguf))
+   
+   ```sh
+   lms get https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · 8.24GB
-lms get https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~8.4GB
-lms get https://huggingface.co/hunterbown/Ministral-3-14B-Reasoning-2512-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: 4bit (~8.4 GB, Mac only) `lms get https://huggingface.co/hunterbown/Ministral-3-14B-Reasoning-2512-MLX-4bit -y`
 
-```sh
-# 4-bit q4_k_m · 8.24GB
-ollama run hf.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF:Q4_K_M
-```
+### Ollama
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~8.4GB
-mlx_lm.chat --model hunterbown/Ministral-3-14B-Reasoning-2512-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model hunterbown/Ministral-3-14B-Reasoning-2512-MLX-4bit
-```
+2. Run Ministral 3 14B Reasoning 2512 (Q4_K_M, needs 8.24 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF/blob/fe3b038f30334729263d860d5dadbaa34e0f2a18/Ministral-3-14B-Reasoning-2512-Q4_K_M.gguf))
+   
+   ```sh
+   ollama run hf.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF:Q4_K_M
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Ministral 3 14B Reasoning 2512 (4bit, needs ~8.4 GB, Mac only, from [huggingface.co/hunterbown](https://huggingface.co/hunterbown/Ministral-3-14B-Reasoning-2512-MLX-4bit/tree/885cdcb8abdf453ac743e6dfb68263c39b5bed35))
+   
+   ```sh
+   mlx_lm.chat --model hunterbown/Ministral-3-14B-Reasoning-2512-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model hunterbown/Ministral-3-14B-Reasoning-2512-MLX-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512)
 
 [interactive version](https://whatmodel.sh/model/ministral-3-14b-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

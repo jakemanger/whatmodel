@@ -82,10 +82,10 @@ weighted average                                   = 84.5
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.053/image · [fal.ai](https://fal.ai/models/openai/gpt-image-2)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): fal.ai openai/gpt-image-2, 1024×1024 medium output price. Input tokens and any billed text output are additional; not OpenAI direct endpoint tariff. Product: Text-to-image endpoint. API model: openai/gpt-image-2. Settings: quality=medium, width=1024, height=1024, n=1. Price basis: image output component. Currency: USD.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-image-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

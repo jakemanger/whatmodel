@@ -63,20 +63,14 @@ weighted average                                   = 57.9
 
 ## How to run it
 
-<pre>
-version                needs  score
-bf16 · nvidia only  ~13.87GB   57.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~13.87 GB, NVIDIA only, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-4-multimodal-instruct))
+   
+   ```sh
+   vllm serve microsoft/Phi-4-multimodal-instruct --trust-remote-code --max-model-len 12800 --enable-lora --max-lora-rank 320 --limit-mm-per-prompt '{"audio":1}' --lora-modules speech=$(hf download microsoft/Phi-4-multimodal-instruct)/speech-lora
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~13.87GB
-vllm serve microsoft/Phi-4-multimodal-instruct --trust-remote-code --max-model-len 12800 --enable-lora --max-lora-rank 320 --limit-mm-per-prompt '{"audio":1}' --lora-modules speech=$(hf download microsoft/Phi-4-multimodal-instruct)/speech-lora
-```
+Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-4-multimodal-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-4-multimodal-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

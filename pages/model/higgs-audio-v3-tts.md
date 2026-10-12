@@ -62,27 +62,22 @@ weighted average                                   = 65.0
 
 ## How to run it
 
+### Through an API
+
 api (Boson AI) · $15.00/M chars · [docs.boson.ai](https://docs.boson.ai)
 
 <sub>[price source](https://docs.boson.ai/pricing.md): USD per 1M characters: Boson AI lists Higgs TTS 3 text input at $0.015 / 1K characters; generated audio free (x1000). Prepaid usage-based credits. Product: Boson API. API model: Higgs TTS 3. Settings: standard. Price basis: published list rate. Exclusions: taxes. Currency: USD. Boson AI official pricing docs, observed 2026-09-25.</sub>
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~10.1GB   65.0
-bf16 · mac only     ~10.1GB   65.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~10.1 GB, NVIDIA only, from [github.com/boson-ai](https://github.com/boson-ai/higgs-audio))
+   
+   ```sh
+   hf download bosonai/higgs-audio-v3-tts-4b && sgl-omni serve --model-path bosonai/higgs-audio-v3-tts-4b --port 8000
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~10.1 GB, Mac only) `pip install mlx-audio && mlx_audio.tts.generate --model bosonai/higgs-audio-v3-tts-4b --text 'Hello, world!'`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~10.1GB
-hf download bosonai/higgs-audio-v3-tts-4b && sgl-omni serve --model-path bosonai/higgs-audio-v3-tts-4b --port 8000
-# bf16 · mac only · ~10.1GB
-pip install mlx-audio && mlx_audio.tts.generate --model bosonai/higgs-audio-v3-tts-4b --text 'Hello, world!'
-```
+Official weights and documentation: [huggingface.co/bosonai](https://huggingface.co/bosonai/higgs-tts-3-4b)
 
 [interactive version](https://whatmodel.sh/model/higgs-audio-v3-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

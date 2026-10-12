@@ -104,25 +104,21 @@ weighted average                                   = 45.8
 
 ## How to run it
 
-<sub>[context source](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm): Databricks official DBRX announcement: "DBRX Instruct was trained with up to a 32K token context window" (pretraining used a maximum context length of 32k tokens). Stated rounded 32K. Observed 2026-10-07.</sub>
+### Ollama (recommended)
 
-<pre>
-download        size  score
-4-bit q4_0   ~79.7GB   45.8
-8-bit q8_0  ~158.9GB   45.8
-</pre>
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run DBRX Instruct (Q4_0, needs ~79.7 GB, from [ollama.com](https://ollama.com/library/dbrx/tags))
+   
+   ```sh
+   ollama run dbrx:132b
+   ```
 
-### Run it on your own machine
-
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
-
-```sh
-# 4-bit q4_0 · ~79.7GB
-ollama run dbrx:132b
-# 8-bit q8_0 · ~158.9GB
-ollama run dbrx:132b-instruct-q8_0
-```
+Other versions: Q8_0 (~158.9 GB) `ollama run dbrx:132b-instruct-q8_0`
 
 [interactive version](https://whatmodel.sh/model/dbrx-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

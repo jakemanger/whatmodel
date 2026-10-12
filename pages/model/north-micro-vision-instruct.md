@@ -74,22 +74,14 @@ weighted average                                   = 40.7
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md): Model card: 'LM Backbone context window 128K tokens'; 'Multimodal training context 8K tokens' (longer multimodal contexts not validated). Observed 2026-10-10.</sub>
+### Other ways to run it
 
-<pre>
-download                      size  score
-4-bit mlx-4bit · mac only  ~2.17GB   40.7
-</pre>
+1. Run it as published (4bit, needs ~2.17 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/North-Micro-Vision-Instruct-4bit/blob/87466363e6c5f57adf91c18c3a62c3c74765f8df/README.md))
+   
+   ```sh
+   pip install -U "mlx-vlm @ git+https://github.com/Blaizzy/mlx-vlm.git" && mlx_vlm.generate --model mlx-community/North-Micro-Vision-Instruct-4bit --image /path/to/image.jpg --prompt "Describe this image." --max-tokens 512 --temperature 0.0
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit mlx-4bit · mac only · ~2.17GB
-pip install -U "mlx-vlm @ git+https://github.com/Blaizzy/mlx-vlm.git" && mlx_vlm.generate --model mlx-community/North-Micro-Vision-Instruct-4bit --image /path/to/image.jpg --prompt "Describe this image." --max-tokens 512 --temperature 0.0
-```
+Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct)
 
 [interactive version](https://whatmodel.sh/model/north-micro-vision-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

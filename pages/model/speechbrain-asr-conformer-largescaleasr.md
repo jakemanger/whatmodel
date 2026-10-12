@@ -54,20 +54,14 @@ SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-confor
 
 ## How to run it
 
-<pre>
-version   needs  score
-fp32     ~2.8GB   46.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~2.8 GB, from [huggingface.co/speechbrain](https://huggingface.co/speechbrain/asr-conformer-loquacious))
+   
+   ```sh
+   uv run --with speechbrain python -c "from speechbrain.inference.ASR import EncoderDecoderASR as A; print(A.from_hparams(source='speechbrain/asr-conformer-loquacious', savedir='pretrained_models/asr-conformer-loquacious').transcribe_file('audio.wav'))"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · ~2.8GB
-uv run --with speechbrain python -c "from speechbrain.inference.ASR import EncoderDecoderASR as A; print(A.from_hparams(source='speechbrain/asr-conformer-loquacious', savedir='pretrained_models/asr-conformer-loquacious').transcribe_file('audio.wav'))"
-```
+Official weights and documentation: [huggingface.co/speechbrain](https://huggingface.co/speechbrain/asr-conformer-loquacious)
 
 [interactive version](https://whatmodel.sh/model/speechbrain-asr-conformer-largescaleasr) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -42,68 +42,93 @@ weighted average                                   = 44.9
 
 ## How to run it
 
-<pre>
-download                      size  score
-16-bit bf16                ~24.5GB   44.9
-4-bit Q4_K_M                ~7.5GB   44.9
-8-bit Q8_0                   ~13GB   44.9
-4-bit mlx-6bit · mac only    ~10GB   44.9
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run PLLuM-12B-instruct (2412) (Q4_K_M, needs ~7.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/PLLuM-12B-instruct-2412-GGUF/tree/c889b6e53dd567bf09f29f4511f5dae599b244ef))
+   
+   ```sh
+   llama cli -hf mradermacher/PLLuM-12B-instruct-2412-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/PLLuM-12B-instruct-2412-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~7.5GB
-llama cli -hf mradermacher/PLLuM-12B-instruct-2412-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/PLLuM-12B-instruct-2412-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~13GB
-llama cli -hf mradermacher/PLLuM-12B-instruct-2412-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/PLLuM-12B-instruct-2412-GGUF:Q8_0
-```
+Other versions: Q8_0 (~13 GB) `llama cli -hf mradermacher/PLLuM-12B-instruct-2412-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~7.5GB
-lms get https://huggingface.co/mradermacher/PLLuM-12B-instruct-2412-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~13GB
-lms get https://huggingface.co/mradermacher/PLLuM-12B-instruct-2412-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-6bit · mac only · ~10GB
-lms get https://huggingface.co/lukagra/PLLuM-12B-instruct-Q6-mlx -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run PLLuM-12B-instruct (2412) (Q4_K_M, needs ~7.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/PLLuM-12B-instruct-2412-GGUF/tree/c889b6e53dd567bf09f29f4511f5dae599b244ef))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/PLLuM-12B-instruct-2412-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~7.5GB
-ollama run hf.co/mradermacher/PLLuM-12B-instruct-2412-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~13GB
-ollama run hf.co/mradermacher/PLLuM-12B-instruct-2412-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~13 GB) `lms get https://huggingface.co/mradermacher/PLLuM-12B-instruct-2412-GGUF@Q8_0 -y` · 6bit (~10 GB, Mac only) `lms get https://huggingface.co/lukagra/PLLuM-12B-instruct-Q6-mlx -y`
 
-```sh
-# 4-bit mlx-6bit · mac only · ~10GB
-mlx_lm.chat --model lukagra/PLLuM-12B-instruct-Q6-mlx
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lukagra/PLLuM-12B-instruct-Q6-mlx
-```
+### Ollama
 
-**Other engines**
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 16-bit bf16 · ~24.5GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/PLLuM-12B-instruct-2412', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+2. Run PLLuM-12B-instruct (2412) (Q4_K_M, needs ~7.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/PLLuM-12B-instruct-2412-GGUF/tree/c889b6e53dd567bf09f29f4511f5dae599b244ef))
+   
+   ```sh
+   ollama run hf.co/mradermacher/PLLuM-12B-instruct-2412-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~13 GB) `ollama run hf.co/mradermacher/PLLuM-12B-instruct-2412-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run PLLuM-12B-instruct (2412) (6bit, needs ~10 GB, Mac only, from [huggingface.co/lukagra](https://huggingface.co/lukagra/PLLuM-12B-instruct-Q6-mlx/tree/a206db95112906101725080c8f00f4775b67055b))
+   
+   ```sh
+   mlx_lm.chat --model lukagra/PLLuM-12B-instruct-Q6-mlx
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lukagra/PLLuM-12B-instruct-Q6-mlx
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~24.5 GB, from [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/PLLuM-12B-instruct-2412/tree/a123ff5ca9788883dd7c326e5fefd7eefc134cb1))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/PLLuM-12B-instruct-2412', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/PLLuM-12B-instruct-2412)
 
 [interactive version](https://whatmodel.sh/model/pllum-12b-instruct-2412) · [JSON](https://whatmodel.sh/api?format=json&all=1)

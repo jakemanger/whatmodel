@@ -56,10 +56,10 @@ Live voice-memo STT p…  <a href="https://github.com/Smolevich/stt-benchmarks/b
 
 ## How to run it
 
+### Through an API
+
 api (Deepgram) · $0.0058/audio min · [deepgram.com](https://deepgram.com/pricing)
 
 <sub>[price source](https://deepgram.com/pricing): USD per input audio minute: Deepgram states Nova-2 remains available at unchanged rates, 'Nova-2 streaming at $0.35/hour' (÷60). This is the only Nova-2 rate on the page (streaming); a separate pre-recorded Nova-2 rate is not published there. Product: Deepgram STT API. API model: nova-2. Settings: pay-as-you-go, streaming. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: Growth-plan discount (~12.5%), add-ons. Currency: USD. Deepgram official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/deepgram-nova-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

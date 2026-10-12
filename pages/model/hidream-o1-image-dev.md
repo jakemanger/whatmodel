@@ -45,6 +45,8 @@ weighted average                                   = 54.3
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/HiDream-ai](https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev)
 
 [interactive version](https://whatmodel.sh/model/hidream-o1-image-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

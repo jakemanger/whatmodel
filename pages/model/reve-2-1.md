@@ -67,10 +67,10 @@ weighted average                                   = 77.8
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.25/image · [fal.ai](https://fal.ai/models/reve/2.1/text-to-image)
 
 <sub>[price source](https://fal.ai/models/reve/2.1/text-to-image): USD per generated image: fal bills reve/2.1/text-to-image at $0.25 per image (billing unit images), flat across aspect ratios. Product: fal.ai partner API (Reve's model served through fal). API model: reve/2.1/text-to-image (Reve 2.1). Settings: text-to-image, default aspect ratio, one image. Price basis: published per-image list rate. The fal endpoint is live but unlisted in fal's catalogue (status unlisted, published 2026-07-14, not deprecated). Not a Reve direct tariff (Reve's own pricing page did not render a public API price). Currency: USD. fal.ai official model page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/reve-2-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

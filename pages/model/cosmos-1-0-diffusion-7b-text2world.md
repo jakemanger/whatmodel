@@ -46,20 +46,14 @@ weighted average                                   = 45.9
 
 ## How to run it
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~29.8GB   45.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~29.8 GB, NVIDIA only, from [huggingface.co/nvidia](https://huggingface.co/nvidia/Cosmos-1.0-Diffusion-7B-Text2World/blob/749ad047f60de0ab405ed078fd050ab2d35856f7/README.md))
+   
+   ```sh
+   uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg --with cosmos_guardrail python -c "import torch; from diffusers import CosmosTextToWorldPipeline; from diffusers.utils import export_to_video; p=CosmosTextToWorldPipeline.from_pretrained('nvidia/Cosmos-1.0-Diffusion-7B-Text2World', torch_dtype=torch.bfloat16); p.to('cuda'); export_to_video(p(prompt='A sleek, humanoid robot stands in a vast warehouse filled with neatly stacked cardboard boxes on industrial shelves.').frames[0], 'output.mp4', fps=30)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~29.8GB
-uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg --with cosmos_guardrail python -c "import torch; from diffusers import CosmosTextToWorldPipeline; from diffusers.utils import export_to_video; p=CosmosTextToWorldPipeline.from_pretrained('nvidia/Cosmos-1.0-Diffusion-7B-Text2World', torch_dtype=torch.bfloat16); p.to('cuda'); export_to_video(p(prompt='A sleek, humanoid robot stands in a vast warehouse filled with neatly stacked cardboard boxes on industrial shelves.').frames[0], 'output.mp4', fps=30)"
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Cosmos-1.0-Diffusion-7B-Text2World)
 
 [interactive version](https://whatmodel.sh/model/cosmos-1-0-diffusion-7b-text2world) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -10,6 +10,8 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Through an API
+
 api (Cartesia) · $38.00/M chars · [cartesia.ai](https://cartesia.ai/pricing)
 
 <sub>[price source](https://cartesia.ai/pricing): USD per 1M characters for Sonic TTS: Cartesia states 1 credit = 1 character and publishes overage at $38 per 1M credits on the Scale plan ($299/month, lowest published self-serve rate); Startup $45 and Pro $65 per 1M credits. Product: Sonic text-to-speech API. API model: sonic-3.6. Settings: Scale-plan overage rate. Price basis: vendor USD-per-credit rate x vendor-stated 1 credit per character. Exclusions: monthly plan fee, voice agents, telephony. Currency: USD. Cartesia official pricing page, observed 2026-09-25.</sub>

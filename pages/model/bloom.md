@@ -51,22 +51,14 @@ weighted average                                   = 26.4
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/bigscience/bloom/blob/7f10a99ce7c08f03c7719a586cb2cbda1433ac05/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+### Other ways to run it
 
-<pre>
-download          size  score
-16-bit bf16  ~352.49GB   26.4
-</pre>
+1. Run it as published (BF16, needs ~352.49 GB, from [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom/tree/7f10a99ce7c08f03c7719a586cb2cbda1433ac05))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~352.49GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom)
 
 [interactive version](https://whatmodel.sh/model/bloom) · [JSON](https://whatmodel.sh/api?format=json&all=1)

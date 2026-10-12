@@ -47,23 +47,16 @@ weighted average                                   = 39.8
 
 ## How to run it
 
-<pre>
-version                needs  score
-fp16 · nvidia only    ~8.9GB   39.8
-q8_0 (sd.cpp --type)  ~4.9GB   39.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~8.9 GB, NVIDIA only, from [stability.ai/news-updates](https://stability.ai/news-updates/sdxl-09-stable-diffusion))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-0.9', torch_dtype=torch.float16, use_safetensors=True).to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
+Other versions: Q8_0 (SD.CPP --TYPE) (~4.9 GB) `sd-cli -m models/sd_xl_base_0.9.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" -v`
 
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~8.9GB
-uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-0.9', torch_dtype=torch.float16, use_safetensors=True).to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
-# q8_0 (sd.cpp --type) · ~4.9GB
-sd-cli -m models/sd_xl_base_0.9.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" -v
-```
+Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-xl-base-0.9)
 
 [interactive version](https://whatmodel.sh/model/sdxl-0-9) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -62,24 +62,20 @@ weighted average                                   = 58.6
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/qwen-image-edit-2509)
 
 <sub>[price source](https://fal.ai/models/fal-ai/qwen-image-edit-2509): USD for one 1-megapixel output: fal bills this endpoint $0.03 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/qwen-image-edit-2509 (fal describes it as Qwen's Image Editing Plus model also known as Qwen-Image-Edit-2509). Settings: one input image, 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio's own qwen-image-edit/-plus API models are not used because Alibaba does not state which open checkpoint they correspond to. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-<pre>
-version                                   needs  score
-gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)  ~26.2GB   58.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp), needs ~26.2 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_edit.md))
+   
+   ```sh
+   sd-cli --diffusion-model models/Qwen-Image-Edit-2509-Q4_K_S.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf --llm_vision models/Qwen2.5-VL-7B-Instruct.mmproj-Q8_0.gguf --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu --diffusion-fa --flow-shift 3 -r input.png -p "change 'flux.cpp' to 'Qwen Image Edit 2509'"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp) · ~26.2GB
-sd-cli --diffusion-model models/Qwen-Image-Edit-2509-Q4_K_S.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf --llm_vision models/Qwen2.5-VL-7B-Instruct.mmproj-Q8_0.gguf --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu --diffusion-fa --flow-shift 3 -r input.png -p "change 'flux.cpp' to 'Qwen Image Edit 2509'"
-```
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image-Edit-2509)
 
 [interactive version](https://whatmodel.sh/model/qwen-image-edit-2509) · [JSON](https://whatmodel.sh/api?format=json&all=1)

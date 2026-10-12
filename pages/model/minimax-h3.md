@@ -89,27 +89,22 @@ weighted average                                   = 78.2
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.13/sec · [fal.ai](https://fal.ai/models/minimax/h3/text-to-video)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per generated second, fal.ai MiniMax H3 text-to-video at 2K. This is not MiniMax direct API or a reference-to-video tariff. Product: MiniMax H3 text-to-video. API model: minimax/h3/text-to-video. Settings: resolution=2K, input=text only, duration seconds=5–15, audio=not specified by endpoint pricing; no audio-product claim. Price basis: published rate. Currency: USD.</sub>
 
-<pre>
-version                                     needs  score
-int8 · nvidia only                        ~40.1GB   78.2
-gguf-q4_k_m fl2va + Qwen3-VL 32B q4_k_m…  ~51.9GB   78.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf-q4_k_m fl2va + Qwen3-VL 32B q4_k_m (sd.cpp), needs ~51.9 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/minimax_h3.md))
+   
+   ```sh
+   sd-cli -M vid_gen --diffusion-model models/minimax_h3_fl2va-Q4_K_M.gguf --vae models/minimax_h3_video_vae_fp16.safetensors --audio-vae models/minimax_h3_audio_vae_fp32.safetensors --llm models/qwen3vl_32b_minimax_h3-Q4_K_M.gguf -p "A cute American Shorthair silver tabby kitten surfs on a tropical ocean wave, riding a white surfboard. Cinematic tracking shot, realistic water, bright sunlight, smooth motion. Add upbeat tropical surf-rock background music." --cfg-scale 1.0 -v -W 864 -H 480 --diffusion-fa --offload-to-cpu --rng cpu --fps 24 --video-frames 56
+   ```
 
-### Run it on your own machine
+Other versions: int8 (~40.1 GB, NVIDIA only) `pip install comfy-kitchen && sglang generate --model-path MiniMaxAI/MiniMax-H3 --model-variant fl2va --quantization kitchen_int8 --attention-backend fa --performance-mode memory --layerwise-offload-components dit,text_encoder --dit-offload-prefetch-size 1 --dit-layerwise-resident-layers 0 --enable-torch-compile false --prompt "A cat walking on a sunny beach, gentle waves." --save-output`
 
-**Other engines**
-
-```sh
-# int8 · nvidia only · ~40.1GB
-pip install comfy-kitchen && sglang generate --model-path MiniMaxAI/MiniMax-H3 --model-variant fl2va --quantization kitchen_int8 --attention-backend fa --performance-mode memory --layerwise-offload-components dit,text_encoder --dit-offload-prefetch-size 1 --dit-layerwise-resident-layers 0 --enable-torch-compile false --prompt "A cat walking on a sunny beach, gentle waves." --save-output
-# gguf-q4_k_m fl2va + Qwen3-VL 32B q4_k_m (sd.cpp) · ~51.9GB
-sd-cli -M vid_gen --diffusion-model models/minimax_h3_fl2va-Q4_K_M.gguf --vae models/minimax_h3_video_vae_fp16.safetensors --audio-vae models/minimax_h3_audio_vae_fp32.safetensors --llm models/qwen3vl_32b_minimax_h3-Q4_K_M.gguf -p "A cute American Shorthair silver tabby kitten surfs on a tropical ocean wave, riding a white surfboard. Cinematic tracking shot, realistic water, bright sunlight, smooth motion. Add upbeat tropical surf-rock background music." --cfg-scale 1.0 -v -W 864 -H 480 --diffusion-fa --offload-to-cpu --rng cpu --fps 24 --video-frames 56
-```
+Official weights and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-H3)
 
 [interactive version](https://whatmodel.sh/model/minimax-h3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -91,51 +91,62 @@ weighted average                                   = 53.6
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/deepseek-ai/DeepSeek-V2.5/blob/c85b5ede86f2a598af339624cac5723861e557ed/config.json): DeepSeek official configuration for DeepSeek-V2.5 (pinned commit): max\_position\_embeddings 163840 (yarn rope scaling, factor 40 over original 4096). Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download          size  score
-4-bit q4_0    ~142.1GB   53.6
-8-bit q8_0    ~283.7GB   53.6
-4-bit Q4_K_M  ~142.5GB   53.6
-8-bit Q8_0    ~250.6GB   53.6
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run DeepSeek-V2.5 (Q4_K_M, needs ~142.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-V2.5-GGUF/tree/29ed5ced5bc86827a9ef071836b8de50434045ed))
+   
+   ```sh
+   llama cli -hf lmstudio-community/DeepSeek-V2.5-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/DeepSeek-V2.5-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~250.6 GB) `llama cli -hf lmstudio-community/DeepSeek-V2.5-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~142.5GB
-llama cli -hf lmstudio-community/DeepSeek-V2.5-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/DeepSeek-V2.5-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~250.6GB
-llama cli -hf lmstudio-community/DeepSeek-V2.5-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/DeepSeek-V2.5-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~142.5GB
-lms get https://huggingface.co/lmstudio-community/DeepSeek-V2.5-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~250.6GB
-lms get https://huggingface.co/lmstudio-community/DeepSeek-V2.5-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run DeepSeek-V2.5 (Q4_K_M, needs ~142.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-V2.5-GGUF/tree/29ed5ced5bc86827a9ef071836b8de50434045ed))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/DeepSeek-V2.5-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_0 · ~142.1GB
-ollama run deepseek-v2.5:236b-q4_0
-# 8-bit q8_0 · ~283.7GB
-ollama run deepseek-v2.5:236b-q8_0
-```
+Other versions: Q8_0 (~250.6 GB) `lms get https://huggingface.co/lmstudio-community/DeepSeek-V2.5-GGUF@Q8_0 -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run DeepSeek-V2.5 (Q4_0, needs ~142.1 GB, from [ollama.com](https://ollama.com/library/deepseek-v2.5/tags))
+   
+   ```sh
+   ollama run deepseek-v2.5:236b-q4_0
+   ```
+
+Other versions: Q8_0 (~283.7 GB) `ollama run deepseek-v2.5:236b-q8_0`
+
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2.5)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

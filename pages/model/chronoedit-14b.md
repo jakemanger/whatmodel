@@ -45,20 +45,14 @@ weighted average                                   = 43.1
 
 ## How to run it
 
-<pre>
-version                                   needs  score
-bf16 + model offload (official script) …  ~34GB   43.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 + MODEL OFFLOAD (OFFICIAL SCRIPT), needs ~34 GB, NVIDIA only, from [github.com/nv-tlabs](https://github.com/nv-tlabs/ChronoEdit/blob/37b0da51d8a42928b23e84cc998bba200c246e57/README.md))
+   
+   ```sh
+   git clone https://github.com/nv-tlabs/ChronoEdit && cd ChronoEdit && conda env create -f environment.yml -n chronoedit_mini && conda activate chronoedit_mini && pip install torch==2.7.1 torchvision==0.22.1 && pip install -r requirements_minimal.txt && hf download nvidia/ChronoEdit-14B-Diffusers --local-dir checkpoints/ChronoEdit-14B-Diffusers && PYTHONPATH=$(pwd) python scripts/run_inference_diffusers.py --input assets/images/input_2.png --offload_model --prompt "Add a sunglasses to the cat's face" --output output.mp4 --model-path ./checkpoints/ChronoEdit-14B-Diffusers
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 + model offload (official script) · nvidia only · ~34GB
-git clone https://github.com/nv-tlabs/ChronoEdit && cd ChronoEdit && conda env create -f environment.yml -n chronoedit_mini && conda activate chronoedit_mini && pip install torch==2.7.1 torchvision==0.22.1 && pip install -r requirements_minimal.txt && hf download nvidia/ChronoEdit-14B-Diffusers --local-dir checkpoints/ChronoEdit-14B-Diffusers && PYTHONPATH=$(pwd) python scripts/run_inference_diffusers.py --input assets/images/input_2.png --offload_model --prompt "Add a sunglasses to the cat's face" --output output.mp4 --model-path ./checkpoints/ChronoEdit-14B-Diffusers
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/ChronoEdit-14B-Diffusers)
 
 [interactive version](https://whatmodel.sh/model/chronoedit-14b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

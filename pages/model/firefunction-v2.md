@@ -43,58 +43,60 @@ weighted average                                   = 50.2
 
 ## How to run it
 
-<pre>
-download         size  score
-4-bit q4_0      ~40GB   50.2
-4-bit Q4_K_M  ~42.5GB   50.2
-8-bit Q8_0      ~75GB   50.2
-2-bit IQ2_XS  ~21.1GB   50.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run FireFunction v2 (70B) (Q4_K_M, needs ~42.5 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF/tree/e48d670a217a6e6fbbc3d929dbd8cb0ea25d80f8))
+   
+   ```sh
+   llama cli -hf MaziyarPanahi/firefunction-v2-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf MaziyarPanahi/firefunction-v2-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~42.5GB
-llama cli -hf MaziyarPanahi/firefunction-v2-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf MaziyarPanahi/firefunction-v2-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~75GB
-llama cli -hf MaziyarPanahi/firefunction-v2-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf MaziyarPanahi/firefunction-v2-GGUF:Q8_0
-# 2-bit IQ2_XS · ~21.1GB
-llama cli -hf MaziyarPanahi/firefunction-v2-GGUF:IQ2_XS
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf MaziyarPanahi/firefunction-v2-GGUF:IQ2_XS
-```
+Other versions: Q8_0 (~75 GB) `llama cli -hf MaziyarPanahi/firefunction-v2-GGUF:Q8_0` · IQ2_XS (~21.1 GB) `llama cli -hf MaziyarPanahi/firefunction-v2-GGUF:IQ2_XS`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~42.5GB
-lms get https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~75GB
-lms get https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit IQ2_XS · ~21.1GB
-lms get https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF@IQ2_XS -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run FireFunction v2 (70B) (Q4_K_M, needs ~42.5 GB, from [huggingface.co/MaziyarPanahi](https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF/tree/e48d670a217a6e6fbbc3d929dbd8cb0ea25d80f8))
+   
+   ```sh
+   lms get https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_0 · ~40GB
-ollama run firefunction-v2:70b
-# 4-bit Q4_K_M · ~42.5GB
-ollama run hf.co/MaziyarPanahi/firefunction-v2-GGUF:Q4_K_M
-# 2-bit IQ2_XS · ~21.1GB
-ollama run hf.co/MaziyarPanahi/firefunction-v2-GGUF:IQ2_XS
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF@Q8_0 -y` · IQ2_XS (~21.1 GB) `lms get https://huggingface.co/MaziyarPanahi/firefunction-v2-GGUF@IQ2_XS -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run FireFunction v2 (70B) (Q4_0, needs ~40 GB, from [ollama.com](https://ollama.com/library/firefunction-v2/tags))
+   
+   ```sh
+   ollama run firefunction-v2:70b
+   ```
+
+Official weights and documentation: [huggingface.co/fireworks-ai](https://huggingface.co/fireworks-ai/llama-3-firefunction-v2)
 
 [interactive version](https://whatmodel.sh/model/firefunction-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -40,20 +40,14 @@ weighted average                        = 54.9
 
 ## How to run it
 
-<pre>
-download        size  score
-16-bit bf16  ~24.5GB   54.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~24.5 GB, from [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/PLLuM-12b-nc-chat-2507/tree/025e26b3fc5ac1fa8714298e671a6cf2418123d7))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/PLLuM-12b-nc-chat-2507', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~24.5GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/PLLuM-12b-nc-chat-2507', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/PLLuM-12b-nc-chat-2507)
 
 [interactive version](https://whatmodel.sh/model/pllum-12b-nc-chat-2507) · [JSON](https://whatmodel.sh/api?format=json&all=1)

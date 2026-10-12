@@ -45,10 +45,10 @@ weighted average                        = 74.2
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $0.034/image · [developers.openai.com](https://developers.openai.com/api/docs/models/chatgpt-image-latest)
 
 <sub>[price source](https://developers.openai.com/api/docs/models/chatgpt-image-latest): USD for one generated 1024x1024 medium-quality image on the OpenAI API: the model page's Image generation tables list 1024x1024 at Low $0.009, Medium $0.034, High $0.133 per image (1024x1536/1536x1024: $0.013 / $0.05 / $0.2). Text input ($5 per 1M) and image input ($8 per 1M) tokens are additional. Product: OpenAI Image API (v1/images/generations and v1/images/edits; Batch supported). API model: chatgpt-image-latest (only alias listed; no dated snapshot). Settings: quality=medium, 1024x1024, n=1. Price basis: published per-image list rate. Currency: USD. OpenAI official model page, observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/chatgpt-image-latest) · [JSON](https://whatmodel.sh/api?format=json&all=1)

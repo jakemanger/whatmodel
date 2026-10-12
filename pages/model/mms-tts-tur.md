@@ -42,20 +42,14 @@ weighted average                        = 18.0
 
 ## How to run it
 
-<pre>
-version                          needs  score
-fp32 (transformers VitsModel)  ~0.15GB   18.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (transformers VitsModel), needs ~0.15 GB, from [huggingface.co/facebook](https://huggingface.co/facebook/mms-tts-tur/blob/7e364479c307f06733ca865b0a5269e0209cf82d/README.md))
+   
+   ```sh
+   uv run --python 3.11 --with transformers --with torch --with scipy python -c "from transformers import VitsModel, AutoTokenizer; import torch, scipy; model = VitsModel.from_pretrained('facebook/mms-tts-tur'); tokenizer = AutoTokenizer.from_pretrained('facebook/mms-tts-tur'); inputs = tokenizer('Merhaba, nasılsınız?', return_tensors='pt'); torch.set_grad_enabled(False); output = model(**inputs).waveform; scipy.io.wavfile.write('out.wav', rate=model.config.sampling_rate, data=output.squeeze().numpy())"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (transformers VitsModel) · ~0.15GB
-uv run --python 3.11 --with transformers --with torch --with scipy python -c "from transformers import VitsModel, AutoTokenizer; import torch, scipy; model = VitsModel.from_pretrained('facebook/mms-tts-tur'); tokenizer = AutoTokenizer.from_pretrained('facebook/mms-tts-tur'); inputs = tokenizer('Merhaba, nasılsınız?', return_tensors='pt'); torch.set_grad_enabled(False); output = model(**inputs).waveform; scipy.io.wavfile.write('out.wav', rate=model.config.sampling_rate, data=output.squeeze().numpy())"
-```
+Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/mms-tts-tur)
 
 [interactive version](https://whatmodel.sh/model/mms-tts-tur) · [JSON](https://whatmodel.sh/api?format=json&all=1)

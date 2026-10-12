@@ -45,57 +45,70 @@ weighted average                                   = 48.2
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/HuggingFaceH4/starchat2-15b-v0.1/blob/837a7b6ac3df5f91de138e3592258f93c80d93d3/config.json): Hugging Face official configuration for starchat2-15b-v0.1 (pinned commit 837a7b6): max\_position\_embeddings 16384. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download          size  score
-16-bit bf16   ~31.92GB   48.2
-4-bit Q4_K_M    ~9.9GB   48.2
-8-bit Q8_0       ~17GB   48.2
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run StarChat2 15B v0.1 (Q4_K_M, needs ~9.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF/tree/b4d1329ea256b8041732d9ff6ceb7640c71b277c))
+   
+   ```sh
+   llama cli -hf mradermacher/starchat2-15b-v0.1-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/starchat2-15b-v0.1-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~17 GB) `llama cli -hf mradermacher/starchat2-15b-v0.1-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~9.9GB
-llama cli -hf mradermacher/starchat2-15b-v0.1-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/starchat2-15b-v0.1-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~17GB
-llama cli -hf mradermacher/starchat2-15b-v0.1-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/starchat2-15b-v0.1-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~9.9GB
-lms get https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~17GB
-lms get https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run StarChat2 15B v0.1 (Q4_K_M, needs ~9.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF/tree/b4d1329ea256b8041732d9ff6ceb7640c71b277c))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~9.9GB
-ollama run hf.co/mradermacher/starchat2-15b-v0.1-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~17GB
-ollama run hf.co/mradermacher/starchat2-15b-v0.1-GGUF:Q8_0
-```
+Other versions: Q8_0 (~17 GB) `lms get https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF@Q8_0 -y`
 
-**Other engines**
+### Ollama
 
-```sh
-# 16-bit bf16 · ~31.92GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='HuggingFaceH4/starchat2-15b-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run StarChat2 15B v0.1 (Q4_K_M, needs ~9.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/starchat2-15b-v0.1-GGUF/tree/b4d1329ea256b8041732d9ff6ceb7640c71b277c))
+   
+   ```sh
+   ollama run hf.co/mradermacher/starchat2-15b-v0.1-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~17 GB) `ollama run hf.co/mradermacher/starchat2-15b-v0.1-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~31.92 GB, from [huggingface.co/HuggingFaceH4](https://huggingface.co/HuggingFaceH4/starchat2-15b-v0.1/tree/837a7b6ac3df5f91de138e3592258f93c80d93d3))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='HuggingFaceH4/starchat2-15b-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/HuggingFaceH4](https://huggingface.co/HuggingFaceH4/starchat2-15b-v0.1)
 
 [interactive version](https://whatmodel.sh/model/starchat2-15b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

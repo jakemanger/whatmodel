@@ -57,20 +57,14 @@ weighted average                                   = 40.8
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp16 · nvidia only  ~8.8GB   40.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~8.8 GB, NVIDIA only, from [huggingface.co/playgroundai](https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic/blob/1e032f13f2fe6db2dc49947dbdbd196e753de573/README.md))
+   
+   ```sh
+   uv run --with torch --with 'diffusers>=0.27.0' --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('playgroundai/playground-v2.5-1024px-aesthetic', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='Astronaut in a jungle, cold color palette, muted colors, detailed, 8k', num_inference_steps=50, guidance_scale=3).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~8.8GB
-uv run --with torch --with 'diffusers>=0.27.0' --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('playgroundai/playground-v2.5-1024px-aesthetic', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='Astronaut in a jungle, cold color palette, muted colors, detailed, 8k', num_inference_steps=50, guidance_scale=3).images[0].save('out.png')"
-```
+Official weights and documentation: [huggingface.co/playgroundai](https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic)
 
 [interactive version](https://whatmodel.sh/model/playground-v2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

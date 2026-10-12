@@ -136,24 +136,20 @@ deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V
 
 ## How to run it
 
+### Through an API
+
 api (DeepSeek) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [api-docs.deepseek.com](https://api-docs.deepseek.com/quick_start/pricing)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepseek/models/deepseek-v4-flash-vision-exp.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/deepseek/deepseek-v4.1-flash.toml)</sub>
 
-<pre>
-download                                   size  score
-4-bit fp8 + fp4 experts · nvidia only  ~510.3GB   77.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp8 + fp4 experts, needs ~510.3 GB, NVIDIA only, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/2cba9e42aa026125f3ed06c6d98c1db82f7ca027/inference/README.md))
+   
+   ```sh
+   hf download deepseek-ai/DeepSeek-V4.1-Flash --local-dir DeepSeek-V4.1-Flash-HF && cd DeepSeek-V4.1-Flash-HF/inference && python -m pip install -r requirements.txt && python convert.py --hf-ckpt-path .. --save-path ../../DeepSeek-V4.1-Flash-TP8 --model-parallel 8 --expert-dtype fp4 --tokenizer-path .. && torchrun --nproc-per-node 8 generate.py --ckpt-path ../../DeepSeek-V4.1-Flash-TP8 --config config.json --interactive --temperature 0.6
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp8 + fp4 experts · nvidia only · ~510.3GB
-hf download deepseek-ai/DeepSeek-V4.1-Flash --local-dir DeepSeek-V4.1-Flash-HF && cd DeepSeek-V4.1-Flash-HF/inference && python -m pip install -r requirements.txt && python convert.py --hf-ckpt-path .. --save-path ../../DeepSeek-V4.1-Flash-TP8 --model-parallel 8 --expert-dtype fp4 --tokenizer-path .. && torchrun --nproc-per-node 8 generate.py --ckpt-path ../../DeepSeek-V4.1-Flash-TP8 --config config.json --interactive --temperature 0.6
-```
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v4-1-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

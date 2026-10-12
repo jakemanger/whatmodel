@@ -54,20 +54,14 @@ weighted average                                   = 19.8
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-bf16 (metavoiceio/metavoice-src) · nvid…  ~9.72GB   19.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (METAVOICEIO/METAVOICE-SRC), needs ~9.72 GB, NVIDIA only, from [github.com/metavoiceio](https://github.com/metavoiceio/metavoice-src/blob/de3fa211ac4621e03a5f990651aeecc64da418f5/README.md))
+   
+   ```sh
+   git clone https://github.com/metavoiceio/metavoice-src.git && cd metavoice-src && pip install -r requirements.txt && pip install torch==2.2.1 torchaudio==2.2.1 && pip install -e . && python -c "from fam.llm.fast_inference import TTS; tts = TTS(); tts.synthesise(text='This is a demo of text to speech by MetaVoice-1B, an open-source foundational audio model.', spk_ref_path='assets/bria.mp3')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (metavoiceio/metavoice-src) · nvidia only · ~9.72GB
-git clone https://github.com/metavoiceio/metavoice-src.git && cd metavoice-src && pip install -r requirements.txt && pip install torch==2.2.1 torchaudio==2.2.1 && pip install -e . && python -c "from fam.llm.fast_inference import TTS; tts = TTS(); tts.synthesise(text='This is a demo of text to speech by MetaVoice-1B, an open-source foundational audio model.', spk_ref_path='assets/bria.mp3')"
-```
+Official weights and documentation: [huggingface.co/metavoiceio](https://huggingface.co/metavoiceio/metavoice-1B-v0.1)
 
 [interactive version](https://whatmodel.sh/model/metavoice-1b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

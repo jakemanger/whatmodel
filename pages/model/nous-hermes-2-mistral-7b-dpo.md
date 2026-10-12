@@ -44,39 +44,56 @@ weighted average                               = 40.2
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/blob/ebec0a691037d38955727d6949798429a63929dd/config.json): config.json max\_position\_embeddings 32768. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download         size  score
-4-bit q4_k_m  ~4.37GB   40.2
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Nous Hermes 2 Mistral 7B DPO (Q4_K_M, needs ~4.37 GB, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF/tree/eb85cf06e8663157611e8ee472e61b43f50ee49f))
+   
+   ```sh
+   llama cli -hf NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~4.37GB
-llama cli -hf NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run Nous Hermes 2 Mistral 7B DPO (Q4_K_M, needs ~4.37 GB, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF/tree/eb85cf06e8663157611e8ee472e61b43f50ee49f))
+   
+   ```sh
+   lms get https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~4.37GB
-lms get https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+### Ollama
 
-```sh
-# 4-bit q4_k_m · ~4.37GB
-ollama run hf.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Nous Hermes 2 Mistral 7B DPO (Q4_K_M, needs ~4.37 GB, from [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF/tree/eb85cf06e8663157611e8ee472e61b43f50ee49f))
+   
+   ```sh
+   ollama run hf.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M
+   ```
+
+Official weights and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO)
 
 [interactive version](https://whatmodel.sh/model/nous-hermes-2-mistral-7b-dpo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

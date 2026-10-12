@@ -42,20 +42,14 @@ weighted average                                   = 29.2
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp16 · nvidia only  ~9.3GB   29.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~9.3 GB, NVIDIA only, from [github.com/baaivision](https://github.com/baaivision/NOVA/blob/63c5a724fc4e264e229a95c893184434f00c9413/README.md))
+   
+   ```sh
+   git clone https://github.com/baaivision/NOVA && cd NOVA && pip install diffusers transformers accelerate imageio-ffmpeg omegaconf wandb && pip install . && python -c "import torch; from diffnext.pipelines import NOVAPipeline; from diffnext.utils import export_to_video; p=NOVAPipeline.from_pretrained('BAAI/nova-d48w1024-osp480', torch_dtype=torch.float16, trust_remote_code=True).to('cuda'); export_to_video(p('Many spotted jellyfish pulsating under water.', max_latent_length=9).frames[0], 'nova.mp4', fps=12)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~9.3GB
-git clone https://github.com/baaivision/NOVA && cd NOVA && pip install diffusers transformers accelerate imageio-ffmpeg omegaconf wandb && pip install . && python -c "import torch; from diffnext.pipelines import NOVAPipeline; from diffnext.utils import export_to_video; p=NOVAPipeline.from_pretrained('BAAI/nova-d48w1024-osp480', torch_dtype=torch.float16, trust_remote_code=True).to('cuda'); export_to_video(p('Many spotted jellyfish pulsating under water.', max_latent_length=9).frames[0], 'nova.mp4', fps=12)"
-```
+Official weights and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/nova-d48w1024-osp480)
 
 [interactive version](https://whatmodel.sh/model/nova-0-6b-t2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

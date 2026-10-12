@@ -90,55 +90,70 @@ weighted average                                   = 42.3
 
 ## How to run it
 
-<pre>
-download           size  score
-16-bit bf16   ~137.95GB   42.3
-4-bit Q4_K_M    ~41.4GB   42.3
-2-bit Q2_K      ~29.3GB   42.3
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Tulu 2 DPO 70B (Q4_K_M, needs ~41.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF/tree/0f390651b9c7930543c3cca150881d028e115338))
+   
+   ```sh
+   llama cli -hf TheBloke/tulu-2-dpo-70B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf TheBloke/tulu-2-dpo-70B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~41.4GB
-llama cli -hf TheBloke/tulu-2-dpo-70B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/tulu-2-dpo-70B-GGUF:Q4_K_M
-# 2-bit Q2_K · ~29.3GB
-llama cli -hf TheBloke/tulu-2-dpo-70B-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/tulu-2-dpo-70B-GGUF:Q2_K
-```
+Other versions: Q2_K (~29.3 GB) `llama cli -hf TheBloke/tulu-2-dpo-70B-GGUF:Q2_K`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~41.4GB
-lms get https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit Q2_K · ~29.3GB
-lms get https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Tulu 2 DPO 70B (Q4_K_M, needs ~41.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF/tree/0f390651b9c7930543c3cca150881d028e115338))
+   
+   ```sh
+   lms get https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~41.4GB
-ollama run hf.co/TheBloke/tulu-2-dpo-70B-GGUF:Q4_K_M
-# 2-bit Q2_K · ~29.3GB
-ollama run hf.co/TheBloke/tulu-2-dpo-70B-GGUF:Q2_K
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q2_K (~29.3 GB) `lms get https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF@Q2_K -y`
 
-```sh
-# 16-bit bf16 · ~137.95GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/tulu-2-dpo-70b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Tulu 2 DPO 70B (Q4_K_M, needs ~41.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/tulu-2-dpo-70B-GGUF/tree/0f390651b9c7930543c3cca150881d028e115338))
+   
+   ```sh
+   ollama run hf.co/TheBloke/tulu-2-dpo-70B-GGUF:Q4_K_M
+   ```
+
+Other versions: Q2_K (~29.3 GB) `ollama run hf.co/TheBloke/tulu-2-dpo-70B-GGUF:Q2_K`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~137.95 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/tulu-2-dpo-70b/tree/0ab5c875f0070d5aee8d36bc55f41de440a13f02))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/tulu-2-dpo-70b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/tulu-2-dpo-70b)
 
 [interactive version](https://whatmodel.sh/model/tulu-2-dpo-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

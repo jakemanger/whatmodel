@@ -117,53 +117,74 @@ weighted average                                   = 65.3
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md): LG model card: 'Context Length: 262,144 tokens'. Observed 2026-10-09.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                        size  score
-4-bit q4_k_m               ~143.47GB   65.3
-16-bit bf16 · nvidia only   ~474.2GB   65.3
-4-bit mlx-8bit · mac only   ~251.4GB   65.3
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run K-EXAONE (236B-A23B) (Q4_K_M, needs ~143.47 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF/tree/5bd0394e4f42c00df63e207b9c434387523a6b77))
+   
+   ```sh
+   llama cli -hf LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~143.47GB
-llama cli -hf LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run K-EXAONE (236B-A23B) (Q4_K_M, needs ~143.47 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF/tree/5bd0394e4f42c00df63e207b9c434387523a6b77))
+   
+   ```sh
+   lms get https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~143.47GB
-lms get https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~251.4GB
-lms get https://huggingface.co/mlx-community/K-EXAONE-236B-A23B-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: 8bit (~251.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/K-EXAONE-236B-A23B-8bit -y`
 
-```sh
-# 4-bit mlx-8bit · mac only · ~251.4GB
-mlx_lm.chat --model mlx-community/K-EXAONE-236B-A23B-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/K-EXAONE-236B-A23B-8bit
-```
+### MLX (Mac)
 
-**Other engines**
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
 
-```sh
-# 16-bit bf16 · nvidia only · ~474.2GB
-vllm serve LGAI-EXAONE/K-EXAONE-236B-A23B --reasoning-parser deepseek_v3 --tensor-parallel-size 4 --enable-auto-tool-choice --tool-call-parser hermes
-```
+2. Run K-EXAONE (236B-A23B) (8bit, needs ~251.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/K-EXAONE-236B-A23B-8bit/tree/c09f6395a23fc0a9e92e10569a3e2f2ea3fb3c5e))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/K-EXAONE-236B-A23B-8bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/K-EXAONE-236B-A23B-8bit
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~474.2 GB, NVIDIA only, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/tree/61e6d578eb102b578e5704e2916ac841df9eca0a))
+   
+   ```sh
+   vllm serve LGAI-EXAONE/K-EXAONE-236B-A23B --reasoning-parser deepseek_v3 --tensor-parallel-size 4 --enable-auto-tool-choice --tool-call-parser hermes
+   ```
+
+Official weights and documentation: [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B)
 
 [interactive version](https://whatmodel.sh/model/k-exaone-236b-a23b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -54,25 +54,23 @@ weighted average                                   = 39.5
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/liuhaotian/llava-v1.6-34b/blob/6754aa86582435ae12ef47db2de51180f0968aa7/config.json): LLaVA official configuration for llava-v1.6-34b (pinned commit): max\_position\_embeddings 4096. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+### Ollama (recommended)
 
-<pre>
-download          size  score
-4-bit q4_k_m  ~21.38GB   39.5
-8-bit q8_0    ~42.26GB   39.5
-</pre>
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run LLaVA-v1.6-34B (Q4_K_M, needs ~21.38 GB, from [ollama.com](https://ollama.com/library/llava/tags))
+   
+   ```sh
+   ollama run llava:34b-v1.6-q4_K_M
+   ```
 
-### Run it on your own machine
+Other versions: Q8_0 (~42.26 GB) `ollama run llava:34b-v1.6-q8_0`
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
-
-```sh
-# 4-bit q4_k_m · ~21.38GB
-ollama run llava:34b-v1.6-q4_K_M
-# 8-bit q8_0 · ~42.26GB
-ollama run llava:34b-v1.6-q8_0
-```
+Official weights and documentation: [huggingface.co/liuhaotian](https://huggingface.co/liuhaotian/llava-v1.6-34b)
 
 [interactive version](https://whatmodel.sh/model/llava-v1-6-34b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

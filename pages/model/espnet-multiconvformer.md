@@ -43,20 +43,14 @@ weighted average                                   = 45.8
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp32 (espnet 202610.post2 + espnet_mode…  ~0.81GB   45.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (espnet 202610.post2 + espnet_model_zoo 0.1.11), needs ~0.81 GB, from [github.com/espnet](https://github.com/espnet/espnet_model_zoo/blob/07c8a151baff4197dba2ac269e410f79783f2987/README.md))
+   
+   ```sh
+   uv run --python 3.12 --with espnet==202610.post2 --with espnet_model_zoo==0.1.11 --with librosa python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained('Darshan7575/librispeech_960_multiconvformer_ctcatt_conv_fusion@188c1ed6adf687ed93ff68297335d6d07caabfd3', beam_size=60, ctc_weight=0.3, lm_weight=0); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (espnet 202610.post2 + espnet_model_zoo 0.1.11) · ~0.81GB
-uv run --python 3.12 --with espnet==202610.post2 --with espnet_model_zoo==0.1.11 --with librosa python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained('Darshan7575/librispeech_960_multiconvformer_ctcatt_conv_fusion@188c1ed6adf687ed93ff68297335d6d07caabfd3', beam_size=60, ctc_weight=0.3, lm_weight=0); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
-```
+Official weights and documentation: [huggingface.co/Darshan7575](https://huggingface.co/Darshan7575/librispeech_960_multiconvformer_ctcatt_conv_fusion)
 
 [interactive version](https://whatmodel.sh/model/espnet-multiconvformer) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -58,70 +58,87 @@ weighted average                        = 57.5
 
 ## How to run it
 
-<sub>[context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/llama-3.3-nemotron-super-49b-v1.5.toml)</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit ud-q4_k_xl           ~29.9GB   57.5
-2-bit ud-q2_k_xl           ~15.2GB   57.5
-4-bit mlx-4bit · mac only  ~28.1GB   57.5
-4-bit mlx-8bit · mac only    ~53GB   57.5
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Llama 3.3 Nemotron Super 49B v1.5 (ud-q4_k_xl, needs ~29.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q4_K_XL
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q4_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: ud-q2_k_xl (~15.2 GB) `llama cli -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q2_K_XL`
 
-```sh
-# 4-bit ud-q4_k_xl · ~29.9GB
-llama cli -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q4_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl · ~15.2GB
-llama cli -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q2_K_XL
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit ud-q4_k_xl · ~29.9GB
-lms get https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF@UD-Q4_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit ud-q2_k_xl · ~15.2GB
-lms get https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~28.1GB
-lms get https://huggingface.co/jesusoctavioas/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-4Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~53GB
-lms get https://huggingface.co/LogicBombaklot/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-8Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Llama 3.3 Nemotron Super 49B v1.5 (ud-q4_k_xl, needs ~29.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF/tree/main))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF@UD-Q4_K_XL -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit ud-q4_k_xl · ~29.9GB
-ollama run hf.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl · ~15.2GB
-ollama run hf.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q2_K_XL
-```
+Other versions: ud-q2_k_xl (~15.2 GB) `lms get https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF@UD-Q2_K_XL -y` · 4bit (~28.1 GB, Mac only) `lms get https://huggingface.co/jesusoctavioas/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-4Bit -y` · 8bit (~53 GB, Mac only) `lms get https://huggingface.co/LogicBombaklot/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-8Bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~28.1GB
-mlx_lm.chat --model jesusoctavioas/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-4Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model jesusoctavioas/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-4Bit
-# 4-bit mlx-8bit · mac only · ~53GB
-mlx_lm.chat --model LogicBombaklot/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-8Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model LogicBombaklot/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-8Bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Llama 3.3 Nemotron Super 49B v1.5 (ud-q4_k_xl, needs ~29.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF/tree/main))
+   
+   ```sh
+   ollama run hf.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q4_K_XL
+   ```
+
+Other versions: ud-q2_k_xl (~15.2 GB) `ollama run hf.co/unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q2_K_XL`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Llama 3.3 Nemotron Super 49B v1.5 (4bit, needs ~28.1 GB, Mac only, from [huggingface.co/jesusoctavioas](https://huggingface.co/jesusoctavioas/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-4Bit/tree/1d51cdfe2a6c188d4d565754effb6ae8ec43bdad))
+   
+   ```sh
+   mlx_lm.chat --model jesusoctavioas/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-4Bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model jesusoctavioas/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-4Bit
+   ```
+
+Other versions: 8bit (~53 GB, Mac only) `mlx_lm.chat --model LogicBombaklot/Llama-3_3-Nemotron-Super-49B-v1_5-mlx-8Bit`
+
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1_5)
 
 [interactive version](https://whatmodel.sh/model/llama-3-3-nemotron-super-49b-v1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

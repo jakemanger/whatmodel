@@ -115,31 +115,23 @@ CoSE-E: A Benchmark f…  <a href="https://arxiv.org/html/2609.35645v1">CoSE-E e
 
 ## How to run it
 
+### Through an API
+
 api (Cloudflare) · $0.0005/audio min · [developers.cloudflare.com](https://developers.cloudflare.com/workers-ai/platform/pricing/)
 
 <sub>[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx): Cloudflare Workers AI published USD per input audio minute; file transcription, not WebSocket streaming. Plan base fees excluded. USD table is rounded; backend bills Neurons. Product: Workers AI file transcription. API model: @cf/openai/whisper-large-v3-turbo. Settings: streaming=no, plan=paid, free allocation=excluded. Price basis: published rounded USD/audio-minute. Currency: USD. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/whisper-large-v3-turbo.toml)</sub>
 
-<pre>
-version               needs  score
-fp16                ~2.44GB   57.2
-fp16 · mac only     ~2.44GB   57.2
-fp16 · nvidia only  ~2.44GB   57.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~2.44 GB, from [github.com/openai](https://github.com/openai/whisper))
+   
+   ```sh
+   uvx --from openai-whisper whisper audio.mp3 --model turbo
+   ```
 
-### Run it on your own machine
+Other versions: fp16 (~2.44 GB, Mac only) `uvx --from mlx-whisper mlx_whisper audio.mp3 --model mlx-community/whisper-large-v3-turbo` · fp16 (~2.44 GB, NVIDIA only) `uvx insanely-fast-whisper --file-name audio.mp3 --model-name openai/whisper-large-v3-turbo`
 
-**Other engines**
-
-```sh
-# fp16 · ~2.44GB
-uvx --from openai-whisper whisper audio.mp3 --model turbo
-# fp16 · mac only · ~2.44GB
-uvx --from mlx-whisper mlx_whisper audio.mp3 --model mlx-community/whisper-large-v3-turbo
-# fp16 · nvidia only · ~2.44GB
-uvx insanely-fast-whisper --file-name audio.mp3 --model-name openai/whisper-large-v3-turbo
-```
+Official weights and documentation: [huggingface.co/openai](https://huggingface.co/openai/whisper-large-v3-turbo)
 
 ## Published speed measurements
 

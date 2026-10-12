@@ -77,20 +77,14 @@ weighted average                                   = 39.3
 
 ## How to run it
 
-<pre>
-download        size  score
-16-bit bf16  ~7.64GB   39.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~7.64 GB, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct/tree/bb5bf1e4001277a606e11debca0ef80323e5f824))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/Phi-3-mini-128k-instruct', revision='bb5bf1e4001277a606e11debca0ef80323e5f824', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~7.64GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/Phi-3-mini-128k-instruct', revision='bb5bf1e4001277a606e11debca0ef80323e5f824', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-3-mini-128k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

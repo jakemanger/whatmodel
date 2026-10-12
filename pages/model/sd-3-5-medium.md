@@ -57,24 +57,20 @@ weighted average                                   = 40.7
 
 ## How to run it
 
+### Through an API
+
 api (Stability AI) · $0.035/image · [platform.stability.ai](https://platform.stability.ai/pricing)
 
 <sub>[price source](https://platform.stability.ai/pricing): USD per generated image on the Stability AI Developer Platform API: the pricing table lists Stable Diffusion 3.5 Medium at 3.5 credits and states 'API usage is based on credits. 1 credit = $0.01' (3.5 x $0.01 = $0.035). Product: Stability AI REST API (v2beta stable-image/generate/sd3). API model: sd3.5-medium. Settings: text-to-image, one image per request. Price basis: credits x Stability's own USD per credit. The pricing page is client-rendered; the table (column 'Price (credits)') is in the page's own script bundle. SD 3.5 Large 6.5 credits, Large Turbo 4, Flash 2.5. Replicate's official stability-ai/stable-diffusion-3.5-medium lists the same $0.035 per output image. Currency: USD. Stability AI official pricing page, observed 2026-09-26.</sub>
 
-<pre>
-version             needs  score
-bf16 · nvidia only  ~20GB   40.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~20 GB, NVIDIA only, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium/blob/b940f670f0eda2d07fbb75229e779da1ad11eb80/README.md))
+   
+   ```sh
+   uv run --with torch --with diffusers --with transformers --with accelerate --with sentencepiece --with protobuf python -c "import torch; from diffusers import StableDiffusion3Pipeline; p=StableDiffusion3Pipeline.from_pretrained('stabilityai/stable-diffusion-3.5-medium', torch_dtype=torch.bfloat16).to('cuda'); p('A capybara holding a sign that reads Hello World', num_inference_steps=40, guidance_scale=4.5).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~20GB
-uv run --with torch --with diffusers --with transformers --with accelerate --with sentencepiece --with protobuf python -c "import torch; from diffusers import StableDiffusion3Pipeline; p=StableDiffusion3Pipeline.from_pretrained('stabilityai/stable-diffusion-3.5-medium', torch_dtype=torch.bfloat16).to('cuda'); p('A capybara holding a sign that reads Hello World', num_inference_steps=40, guidance_scale=4.5).images[0].save('out.png')"
-```
+Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium)
 
 [interactive version](https://whatmodel.sh/model/sd-3-5-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -42,10 +42,12 @@ weighted average                        = 71.4
 
 ## How to run it
 
+### Through an API
+
 api (Cohere) · price unknown · [docs.cohere.com](https://docs.cohere.com/docs/models)
 
 <sub>[context source](https://docs.cohere.com/docs/models): Cohere API model table: north-small-translate-1-0, Live, context length 16k, maximum output 16k tokens. Observed 2026-10-10.</sub>
 
-no verified local download listed
+Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/North-Small-Translate-1.0)
 
 [interactive version](https://whatmodel.sh/model/north-small-translate-1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

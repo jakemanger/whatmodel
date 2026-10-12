@@ -43,20 +43,14 @@ weighted average                                   = 53.9
 
 ## How to run it
 
-<pre>
-download         size  score
-16-bit bf16  ~15.23GB   53.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~15.23 GB, from [huggingface.co/ZJared](https://huggingface.co/ZJared/Haha-7B/tree/22db1d145a3a7b7c2a1976b3f19a623731f2719f))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ZJared/Haha-7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~15.23GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ZJared/Haha-7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/ZJared](https://huggingface.co/ZJared/Haha-7B)
 
 [interactive version](https://whatmodel.sh/model/haha-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

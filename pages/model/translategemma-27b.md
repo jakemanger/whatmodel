@@ -40,71 +40,85 @@ weighted average                                = 65.4
 
 ## How to run it
 
-<pre>
-download                      size  score
-4-bit q4_k_m                 ~17GB   65.4
-4-bit Q4_K_M               ~16.5GB   65.4
-8-bit Q8_0                 ~28.7GB   65.4
-4-bit mlx-4bit · mac only  ~15.2GB   65.4
-4-bit mlx-8bit · mac only  ~28.7GB   65.4
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run TranslateGemma 27B (Q4_K_M, needs ~16.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/translategemma-27b-it-GGUF/tree/22fb50537007ccd41c41a0f0f0482e0fdb3335ab))
+   
+   ```sh
+   llama cli -hf mradermacher/translategemma-27b-it-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/translategemma-27b-it-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~16.5GB
-llama cli -hf mradermacher/translategemma-27b-it-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/translategemma-27b-it-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~28.7GB
-llama cli -hf mradermacher/translategemma-27b-it-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/translategemma-27b-it-GGUF:Q8_0
-```
+Other versions: Q8_0 (~28.7 GB) `llama cli -hf mradermacher/translategemma-27b-it-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~16.5GB
-lms get https://huggingface.co/mradermacher/translategemma-27b-it-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~28.7GB
-lms get https://huggingface.co/mradermacher/translategemma-27b-it-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~15.2GB
-lms get https://huggingface.co/mlx-community/translategemma-27b-it-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~28.7GB
-lms get https://huggingface.co/mlx-community/translategemma-27b-it-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run TranslateGemma 27B (Q4_K_M, needs ~16.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/translategemma-27b-it-GGUF/tree/22fb50537007ccd41c41a0f0f0482e0fdb3335ab))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/translategemma-27b-it-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~17GB
-ollama run translategemma:27b
-# 4-bit Q4_K_M · ~16.5GB
-ollama run hf.co/mradermacher/translategemma-27b-it-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~28.7GB
-ollama run hf.co/mradermacher/translategemma-27b-it-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~28.7 GB) `lms get https://huggingface.co/mradermacher/translategemma-27b-it-GGUF@Q8_0 -y` · 4bit (~15.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/translategemma-27b-it-4bit -y` · 8bit (~28.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/translategemma-27b-it-8bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~15.2GB
-mlx_lm.chat --model mlx-community/translategemma-27b-it-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/translategemma-27b-it-4bit
-# 4-bit mlx-8bit · mac only · ~28.7GB
-mlx_lm.chat --model mlx-community/translategemma-27b-it-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/translategemma-27b-it-8bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run TranslateGemma 27B (Q4_K_M, needs ~17 GB, from [ollama.com](https://ollama.com/library/translategemma/tags))
+   
+   ```sh
+   ollama run translategemma:27b
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run TranslateGemma 27B (4bit, needs ~15.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/translategemma-27b-it-4bit/tree/050947f9ea5a93df6cdbbc964e03c6e97894978c))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/translategemma-27b-it-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/translategemma-27b-it-4bit
+   ```
+
+Other versions: 8bit (~28.7 GB, Mac only) `mlx_lm.chat --model mlx-community/translategemma-27b-it-8bit`
+
+Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/translategemma-27b-it)
 
 [interactive version](https://whatmodel.sh/model/translategemma-27b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

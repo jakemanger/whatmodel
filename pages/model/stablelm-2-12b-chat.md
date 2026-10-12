@@ -40,65 +40,83 @@ weighted average                          = 47.1
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/stabilityai/stablelm-2-12b-chat/blob/b6b62cd451b84e848514c00fafa66d9ead9297c5/config.json): config.json max\_position\_embeddings 4096. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_0                    ~7GB   47.1
-4-bit Q4_K_M                ~7.4GB   47.1
-8-bit Q8_0                 ~12.9GB   47.1
-4-bit mlx-4bit · mac only   ~7.6GB   47.1
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Stable LM 2 12B Chat (Q4_K_M, needs ~7.4 GB, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-2-12b-chat-GGUF/tree/cfeb7eef6745169ce68debb7017d5df79ddbfc71))
+   
+   ```sh
+   llama cli -hf stabilityai/stablelm-2-12b-chat-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf stabilityai/stablelm-2-12b-chat-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~12.9 GB) `llama cli -hf stabilityai/stablelm-2-12b-chat-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~7.4GB
-llama cli -hf stabilityai/stablelm-2-12b-chat-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf stabilityai/stablelm-2-12b-chat-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~12.9GB
-llama cli -hf stabilityai/stablelm-2-12b-chat-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf stabilityai/stablelm-2-12b-chat-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~7.4GB
-lms get https://huggingface.co/stabilityai/stablelm-2-12b-chat-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~12.9GB
-lms get https://huggingface.co/stabilityai/stablelm-2-12b-chat-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~7.6GB
-lms get https://huggingface.co/mlx-community/stablelm-2-12b-chat-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Stable LM 2 12B Chat (Q4_K_M, needs ~7.4 GB, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-2-12b-chat-GGUF/tree/cfeb7eef6745169ce68debb7017d5df79ddbfc71))
+   
+   ```sh
+   lms get https://huggingface.co/stabilityai/stablelm-2-12b-chat-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_0 · ~7GB
-ollama run stablelm2:12b
-# 4-bit Q4_K_M · ~7.4GB
-ollama run hf.co/stabilityai/stablelm-2-12b-chat-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~12.9GB
-ollama run hf.co/stabilityai/stablelm-2-12b-chat-GGUF:Q8_0
-```
+Other versions: Q8_0 (~12.9 GB) `lms get https://huggingface.co/stabilityai/stablelm-2-12b-chat-GGUF@Q8_0 -y` · 4bit (~7.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/stablelm-2-12b-chat-4bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~7.6GB
-mlx_lm.chat --model mlx-community/stablelm-2-12b-chat-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/stablelm-2-12b-chat-4bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Stable LM 2 12B Chat (Q4_0, needs ~7 GB, from [ollama.com](https://ollama.com/library/stablelm2/tags))
+   
+   ```sh
+   ollama run stablelm2:12b
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Stable LM 2 12B Chat (4bit, needs ~7.6 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/stablelm-2-12b-chat-4bit/tree/d07140b2549974230b45c06b033898e500dd1d27))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/stablelm-2-12b-chat-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/stablelm-2-12b-chat-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-2-12b-chat)
 
 [interactive version](https://whatmodel.sh/model/stablelm-2-12b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

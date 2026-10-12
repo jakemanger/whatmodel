@@ -154,10 +154,10 @@ weighted average                                   = 87.4
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $20.00/M blended · $10 in / $50 out per 1M tokens · [platform.openai.com](https://platform.openai.com/docs/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-6-astra.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-6-astra.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-6-astra) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -44,10 +44,10 @@ weighted average                                   = 61.4
 
 ## How to run it
 
+### Through an API
+
 api (ElevenLabs) · $50.00/M chars · [elevenlabs.io](https://elevenlabs.io/pricing/api)
 
 <sub>[price source](https://elevenlabs.io/pricing/api): USD per 1M input characters: ElevenLabs lists Flash / Turbo Text to Speech at $0.05 per 1K characters (x1000); the page's tooltip states 'Our Flash/Turbo models include ElevenLabs Flash/Turbo V2 and V2.5'. Product: ElevenAPI text to speech. API model: eleven\_turbo\_v2. Settings: standard API rate (same per-1K rate on pay-as-you-go and plan tiers shown). Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes. Currency: USD. ElevenLabs official API pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/elevenlabs-turbo-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

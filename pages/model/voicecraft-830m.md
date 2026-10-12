@@ -44,20 +44,14 @@ weighted average                                   = 32.3
 
 ## How to run it
 
-<pre>
-version                   needs  score
-fp32 (VoiceCraft repo)  ~4.53GB   32.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (VoiceCraft repo), needs ~4.53 GB, from [github.com/jasonppy](https://github.com/jasonppy/VoiceCraft/blob/f0a7a971363905883a21c466a3aa4ea2d4c0b690/README.md))
+   
+   ```sh
+   git clone https://github.com/jasonppy/VoiceCraft && cd VoiceCraft && conda create -n voicecraft python=3.9.16 && conda activate voicecraft && pip install -e git+https://github.com/facebookresearch/audiocraft.git@c5157b5bf14bf83449c17ea1eeb66c19fb4bc7f0#egg=audiocraft && pip install xformers==0.0.22 && pip install torchaudio==2.0.2 torch==2.0.1 && apt-get install ffmpeg && apt-get install espeak-ng && pip install tensorboard==2.16.2 && pip install phonemizer==3.2.1 && pip install datasets==2.16.0 && pip install torchmetrics==0.11.1 && pip install huggingface_hub==0.22.2 && conda install -c conda-forge montreal-forced-aligner=2.2.17 openfst=1.8.2 kaldi=5.5.1068 && mfa model download dictionary english_us_arpa && mfa model download acoustic english_us_arpa && python3 tts_demo.py -m giga830M
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (VoiceCraft repo) · ~4.53GB
-git clone https://github.com/jasonppy/VoiceCraft && cd VoiceCraft && conda create -n voicecraft python=3.9.16 && conda activate voicecraft && pip install -e git+https://github.com/facebookresearch/audiocraft.git@c5157b5bf14bf83449c17ea1eeb66c19fb4bc7f0#egg=audiocraft && pip install xformers==0.0.22 && pip install torchaudio==2.0.2 torch==2.0.1 && apt-get install ffmpeg && apt-get install espeak-ng && pip install tensorboard==2.16.2 && pip install phonemizer==3.2.1 && pip install datasets==2.16.0 && pip install torchmetrics==0.11.1 && pip install huggingface_hub==0.22.2 && conda install -c conda-forge montreal-forced-aligner=2.2.17 openfst=1.8.2 kaldi=5.5.1068 && mfa model download dictionary english_us_arpa && mfa model download acoustic english_us_arpa && python3 tts_demo.py -m giga830M
-```
+Official weights and documentation: [huggingface.co/pyp1](https://huggingface.co/pyp1/VoiceCraft_giga830M)
 
 [interactive version](https://whatmodel.sh/model/voicecraft-830m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

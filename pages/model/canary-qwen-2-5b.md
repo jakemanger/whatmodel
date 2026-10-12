@@ -72,20 +72,14 @@ weighted average                                   = 61.2
 
 ## How to run it
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~6.64GB   61.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~6.64 GB, NVIDIA only, from [huggingface.co/nvidia](https://huggingface.co/nvidia/canary-qwen-2.5b))
+   
+   ```sh
+   python examples/speechlm2/salm_generate.py pretrained_name=nvidia/canary-qwen-2.5b inputs=input_manifest.json output_manifest=generations.jsonl batch_size=128 user_prompt="Transcribe the following:"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~6.64GB
-python examples/speechlm2/salm_generate.py pretrained_name=nvidia/canary-qwen-2.5b inputs=input_manifest.json output_manifest=generations.jsonl batch_size=128 user_prompt="Transcribe the following:"
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/canary-qwen-2.5b)
 
 [interactive version](https://whatmodel.sh/model/canary-qwen-2-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

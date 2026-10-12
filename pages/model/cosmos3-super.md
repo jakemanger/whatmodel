@@ -53,20 +53,14 @@ weighted average                                   = 58.0
 
 ## How to run it
 
-<pre>
-version                needs  score
-bf16 · nvidia only  ~159.7GB   58.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~159.7 GB, NVIDIA only, from [huggingface.co/nvidia](https://huggingface.co/nvidia/Cosmos3-Super/blob/f543c56225b2e04d0ad141e29655be3a45d9c455/README.md))
+   
+   ```sh
+   uvx --from huggingface_hub hf download nvidia/Cosmos3-Super assets/ --local-dir Cosmos3-Super && cd Cosmos3-Super && uv run --python 3.13 --with git+https://github.com/huggingface/diffusers --with accelerate --with av --with cosmos_guardrail --with huggingface_hub --with imageio --with imageio-ffmpeg --with torch --with torchvision --with transformers python -c "import json, torch; from diffusers import Cosmos3OmniPipeline; from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler; from diffusers.utils import export_to_video; p=Cosmos3OmniPipeline.from_pretrained('nvidia/Cosmos3-Super', torch_dtype=torch.bfloat16, device_map='cuda', enable_safety_checker=True); p.scheduler=UniPCMultistepScheduler.from_config(p.scheduler.config, flow_shift=10.0); r=p(prompt=json.dumps(json.load(open('assets/example_t2v_prompt.json'))), negative_prompt=json.dumps(json.load(open('assets/negative_prompt.json'))), num_frames=189, height=720, width=1280, num_inference_steps=35, guidance_scale=6.0, generator=torch.Generator(device='cuda').manual_seed(123)); export_to_video(r.video, 'cosmos3_super_t2v.mp4', fps=24)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~159.7GB
-uvx --from huggingface_hub hf download nvidia/Cosmos3-Super assets/ --local-dir Cosmos3-Super && cd Cosmos3-Super && uv run --python 3.13 --with git+https://github.com/huggingface/diffusers --with accelerate --with av --with cosmos_guardrail --with huggingface_hub --with imageio --with imageio-ffmpeg --with torch --with torchvision --with transformers python -c "import json, torch; from diffusers import Cosmos3OmniPipeline; from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler; from diffusers.utils import export_to_video; p=Cosmos3OmniPipeline.from_pretrained('nvidia/Cosmos3-Super', torch_dtype=torch.bfloat16, device_map='cuda', enable_safety_checker=True); p.scheduler=UniPCMultistepScheduler.from_config(p.scheduler.config, flow_shift=10.0); r=p(prompt=json.dumps(json.load(open('assets/example_t2v_prompt.json'))), negative_prompt=json.dumps(json.load(open('assets/negative_prompt.json'))), num_frames=189, height=720, width=1280, num_inference_steps=35, guidance_scale=6.0, generator=torch.Generator(device='cuda').manual_seed(123)); export_to_video(r.video, 'cosmos3_super_t2v.mp4', fps=24)"
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Cosmos3-Super)
 
 [interactive version](https://whatmodel.sh/model/cosmos3-super) · [JSON](https://whatmodel.sh/api?format=json&all=1)

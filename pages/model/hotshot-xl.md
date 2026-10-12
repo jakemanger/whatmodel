@@ -49,20 +49,14 @@ weighted average                                   = 27.0
 
 ## How to run it
 
-<pre>
-version             needs  score
-fp16 · nvidia only  ~10GB   27.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~10 GB, NVIDIA only, from [github.com/hotshotco](https://github.com/hotshotco/Hotshot-XL/blob/cc01f7f82acff985a45f6214152c4a0ba033759f/README.md))
+   
+   ```sh
+   git clone https://github.com/hotshotco/Hotshot-XL && cd Hotshot-XL && pip install -r requirements.txt && python inference.py --prompt="a bulldog in the captains chair of a spaceship, hd, high quality" --output="output.gif"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~10GB
-git clone https://github.com/hotshotco/Hotshot-XL && cd Hotshot-XL && pip install -r requirements.txt && python inference.py --prompt="a bulldog in the captains chair of a spaceship, hd, high quality" --output="output.gif"
-```
+Official weights and documentation: [huggingface.co/hotshotco](https://huggingface.co/hotshotco/Hotshot-XL)
 
 [interactive version](https://whatmodel.sh/model/hotshot-xl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

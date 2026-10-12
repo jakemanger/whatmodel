@@ -138,61 +138,68 @@ deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V
 
 ## How to run it
 
-<sub>[context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/deepseek/deepseek-v3-0324.toml)</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                        size  score
-4-bit ud-q4_k_xl            ~403.1GB   60.3
-2-bit ud-q2_k_xl            ~201.8GB   60.3
-1-bit ud-iq1_s             ~101.15GB   60.3
-4-bit mlx-5bit · mac only   ~461.5GB   60.3
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run DeepSeek V3 0324 (ud-q4_k_xl, needs ~403.1 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V3-0324-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/DeepSeek-V3-0324-GGUF:UD-Q4_K_XL
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/DeepSeek-V3-0324-GGUF:UD-Q4_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: ud-q2_k_xl (~201.8 GB) `llama cli -hf unsloth/DeepSeek-V3-0324-GGUF:UD-Q2_K_XL` · ud-iq1_s (~101.15 GB) `llama cli -hf unsloth/DeepSeek-V3-0324-GGUF:UD-IQ1_S`
 
-```sh
-# 4-bit ud-q4_k_xl · ~403.1GB
-llama cli -hf unsloth/DeepSeek-V3-0324-GGUF:UD-Q4_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/DeepSeek-V3-0324-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl · ~201.8GB
-llama cli -hf unsloth/DeepSeek-V3-0324-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/DeepSeek-V3-0324-GGUF:UD-Q2_K_XL
-# 1-bit ud-iq1_s · ~101.15GB
-llama cli -hf unsloth/DeepSeek-V3-0324-GGUF:UD-IQ1_S
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/DeepSeek-V3-0324-GGUF:UD-IQ1_S
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit ud-q4_k_xl · ~403.1GB
-lms get https://huggingface.co/unsloth/DeepSeek-V3-0324-GGUF@UD-Q4_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit ud-q2_k_xl · ~201.8GB
-lms get https://huggingface.co/unsloth/DeepSeek-V3-0324-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 1-bit ud-iq1_s · ~101.15GB
-lms get https://huggingface.co/unsloth/DeepSeek-V3-0324-GGUF@UD-IQ1_S -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-5bit · mac only · ~461.5GB
-lms get https://huggingface.co/mlx-community/DeepSeek-V3-0324-5bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run DeepSeek V3 0324 (ud-q4_k_xl, needs ~403.1 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V3-0324-GGUF/tree/main))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/DeepSeek-V3-0324-GGUF@UD-Q4_K_XL -y
+   ```
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit mlx-5bit · mac only · ~461.5GB
-mlx_lm.chat --model mlx-community/DeepSeek-V3-0324-5bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/DeepSeek-V3-0324-5bit
-```
+Other versions: ud-q2_k_xl (~201.8 GB) `lms get https://huggingface.co/unsloth/DeepSeek-V3-0324-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (~101.15 GB) `lms get https://huggingface.co/unsloth/DeepSeek-V3-0324-GGUF@UD-IQ1_S -y` · 5bit (~461.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-V3-0324-5bit -y`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run DeepSeek V3 0324 (5bit, needs ~461.5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-V3-0324-5bit/tree/35e9c4c166642a8ec12857286e67ec6a5f503be6))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/DeepSeek-V3-0324-5bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/DeepSeek-V3-0324-5bit
+   ```
+
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V3-0324)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v3-0324) · [JSON](https://whatmodel.sh/api?format=json&all=1)

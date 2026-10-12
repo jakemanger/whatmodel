@@ -54,20 +54,14 @@ weighted average                              = 40.1
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit fp32  ~28.97GB   40.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~28.97 GB, from [huggingface.co/hkust-nlp](https://huggingface.co/hkust-nlp/deita-7b-v1.0/tree/de16c0994d14f18a59fd41f1fb6cc1bc96aa1663))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='hkust-nlp/deita-7b-v1.0', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp32 · ~28.97GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='hkust-nlp/deita-7b-v1.0', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/hkust-nlp](https://huggingface.co/hkust-nlp/deita-7b-v1.0)
 
 [interactive version](https://whatmodel.sh/model/deita-7b-v1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

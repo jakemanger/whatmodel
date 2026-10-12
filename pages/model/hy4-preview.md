@@ -99,53 +99,61 @@ weighted average                               = 79.1
 
 ## How to run it
 
+### Through an API
+
 api (Tencent Cloud TokenHub) · $1.25/M blended · $0.834 in / $2.501 out per 1M tokens · [cloud.tencent.com](https://cloud.tencent.com/document/product/1823/130051)
 
 <sub>[price source](https://www.tencentcloud.com/document/product/1300/78937): USD per 1M tokens, Tencent Cloud TokenHub (international site) model pricing, Hy4 preview, Singapore region tab: input $0.834, output $2.501; cache $0.042 excluded. The same rate appears under the other region tabs. The China site (cloud.tencent.com/document/product/1823/130055) lists CNY 6/18. Currency: USD. Tencent Cloud official pricing page (last updated 2026-10-03), observed 2026-10-07. · [context source](https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md): Context length stated on the official model card.</sub>
 
-<pre>
-download                         size  score
-4-bit fp8 · nvidia only     ~813.77GB   79.1
-16-bit bf16 · nvidia only  ~1559.98GB   79.1
-4-bit IQ4_XS                   ~417GB   79.1
-2-bit IQ2_XS                 ~235.1GB   79.1
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Hy4 preview (770B-A49B) (IQ4_XS, needs ~417 GB, from [huggingface.co/6block](https://huggingface.co/6block/Hy4-preview-GGUF/tree/70f220329e9c6dbd9715f6e3a2b37b9f9291cf4e))
+   
+   ```sh
+   llama cli -hf 6block/Hy4-preview-GGUF:IQ4_XS
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf 6block/Hy4-preview-GGUF:IQ4_XS
+   ```
 
-```sh
-# 4-bit IQ4_XS · ~417GB
-llama cli -hf 6block/Hy4-preview-GGUF:IQ4_XS
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf 6block/Hy4-preview-GGUF:IQ4_XS
-# 2-bit IQ2_XS · ~235.1GB
-llama cli -hf 6block/Hy4-preview-GGUF:IQ2_XS
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf 6block/Hy4-preview-GGUF:IQ2_XS
-```
+Other versions: IQ2_XS (~235.1 GB) `llama cli -hf 6block/Hy4-preview-GGUF:IQ2_XS`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit IQ4_XS · ~417GB
-lms get https://huggingface.co/6block/Hy4-preview-GGUF@IQ4_XS -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit IQ2_XS · ~235.1GB
-lms get https://huggingface.co/6block/Hy4-preview-GGUF@IQ2_XS -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Other engines**
+2. Run Hy4 preview (770B-A49B) (IQ4_XS, needs ~417 GB, from [huggingface.co/6block](https://huggingface.co/6block/Hy4-preview-GGUF/tree/70f220329e9c6dbd9715f6e3a2b37b9f9291cf4e))
+   
+   ```sh
+   lms get https://huggingface.co/6block/Hy4-preview-GGUF@IQ4_XS -y
+   ```
 
-```sh
-# 4-bit fp8 · nvidia only · ~813.77GB
-docker run --gpus all -p 8000:8000 --ipc=host -v ~/.cache/huggingface:/root/.cache/huggingface vllm/vllm-openai:hy4-preview tencent/Hy4-preview-FP8 --tensor-parallel-size 8 --speculative-config '{"num_speculative_tokens":3,"method":"mtp"}' --attention-backend FLASHMLA_SPARSE --tool-call-parser hy_v4 --reasoning-parser hy_v4 --enable-auto-tool-choice --port 8000 --served-model-name hy4-preview
-# 16-bit bf16 · nvidia only · ~1559.98GB
-vllm serve tencent/Hy4-preview
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: IQ2_XS (~235.1 GB) `lms get https://huggingface.co/6block/Hy4-preview-GGUF@IQ2_XS -y`
+
+### Other ways to run it
+
+1. Run it as published (fp8, needs ~813.77 GB, NVIDIA only, from [huggingface.co/tencent](https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md))
+   
+   ```sh
+   docker run --gpus all -p 8000:8000 --ipc=host -v ~/.cache/huggingface:/root/.cache/huggingface vllm/vllm-openai:hy4-preview tencent/Hy4-preview-FP8 --tensor-parallel-size 8 --speculative-config '{"num_speculative_tokens":3,"method":"mtp"}' --attention-backend FLASHMLA_SPARSE --tool-call-parser hy_v4 --reasoning-parser hy_v4 --enable-auto-tool-choice --port 8000 --served-model-name hy4-preview
+   ```
+
+Other versions: BF16 (~1559.98 GB, NVIDIA only) `vllm serve tencent/Hy4-preview`
+
+Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/Hy4-preview)
 
 [interactive version](https://whatmodel.sh/model/hy4-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

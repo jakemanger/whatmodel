@@ -47,25 +47,20 @@ weighted average                                   = 40.6
 
 ## How to run it
 
+### Through an API
+
 api  · price unknown · [docs.fish.audio](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits)
 
-<pre>
-version                                 needs  score
-bf16 · nvidia only                     ~1.7GB   40.6
-bf16 (fish-speech official repo CLI)  ~3.61GB   40.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~1.7 GB, NVIDIA only, from [github.com/fishaudio](https://github.com/fishaudio/fish-speech/blob/d3df50503b36314a964f66cac1af1e19e95bcfa3/docs/en/inference.md))
+   
+   ```sh
+   git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout d3df50503b36314a964f66cac1af1e19e95bcfa3 && pip install -e ".[cu129]" && hf download fishaudio/openaudio-s1-mini --local-dir checkpoints/openaudio-s1-mini && python fish_speech/models/text2semantic/inference.py --text "Hello world" --compile && python fish_speech/models/dac/inference.py -i temp/codes_0.npy
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (FISH-SPEECH OFFICIAL REPO CLI) (~3.61 GB) `git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout d3df50503b36314a964f66cac1af1e19e95bcfa3 && pip install -e ".[cpu]" && hf download fishaudio/openaudio-s1-mini --local-dir checkpoints/openaudio-s1-mini && python fish_speech/models/text2semantic/inference.py --text "Hello world" --device cpu && python fish_speech/models/dac/inference.py -i temp/codes_0.npy --device cpu`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~1.7GB
-git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout d3df50503b36314a964f66cac1af1e19e95bcfa3 && pip install -e ".[cu129]" && hf download fishaudio/openaudio-s1-mini --local-dir checkpoints/openaudio-s1-mini && python fish_speech/models/text2semantic/inference.py --text "Hello world" --compile && python fish_speech/models/dac/inference.py -i temp/codes_0.npy
-# bf16 (fish-speech official repo CLI) · ~3.61GB
-git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout d3df50503b36314a964f66cac1af1e19e95bcfa3 && pip install -e ".[cpu]" && hf download fishaudio/openaudio-s1-mini --local-dir checkpoints/openaudio-s1-mini && python fish_speech/models/text2semantic/inference.py --text "Hello world" --device cpu && python fish_speech/models/dac/inference.py -i temp/codes_0.npy --device cpu
-```
+Official weights and documentation: [huggingface.co/fishaudio](https://huggingface.co/fishaudio/s1-mini)
 
 [interactive version](https://whatmodel.sh/model/openaudio-s1-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

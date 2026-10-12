@@ -45,20 +45,12 @@ weighted average                                   = 36.1
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp32 · nvidia only  ~7.9GB   36.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · nvidia only · ~7.9GB
-git clone https://github.com/showlab/Show-o && cd Show-o && pip3 install -r requirements.txt && wandb login && python3 inference_t2i.py config=configs/showo_demo_512x512.yaml batch_size=1 validation_prompts_file=validation_prompts/showoprompts.txt guidance_scale=5 generation_timesteps=50 mode='t2i'
-```
+1. Run it as published (fp32, needs ~7.9 GB, NVIDIA only, from [github.com/showlab](https://github.com/showlab/Show-o/blob/45a5a2de01d1ebd10cd5864d29310a76476cdf23/README.md))
+   
+   ```sh
+   git clone https://github.com/showlab/Show-o && cd Show-o && pip3 install -r requirements.txt && wandb login && python3 inference_t2i.py config=configs/showo_demo_512x512.yaml batch_size=1 validation_prompts_file=validation_prompts/showoprompts.txt guidance_scale=5 generation_timesteps=50 mode='t2i'
+   ```
 
 [interactive version](https://whatmodel.sh/model/show-o-demo-512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

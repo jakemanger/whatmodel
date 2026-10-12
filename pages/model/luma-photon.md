@@ -58,10 +58,10 @@ weighted average                                   = 50.6
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.019/image · [fal.ai](https://fal.ai/models/fal-ai/luma-photon)
 
 <sub>[price source](https://fal.ai/models/fal-ai/luma-photon): USD for one 1-megapixel output: fal bills fal-ai/luma-photon at $0.019 per output megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai partner API (Luma's model served through fal). API model: fal-ai/luma-photon (Luma Photon, not Photon Flash). Settings: text-to-image, 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. The fal endpoint is public and not marked deprecated; Luma's own current Agents API lists only uni-1, uni-1-max and ray-3.2, so this is not a Luma direct tariff. Currency: USD. fal.ai official model page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/luma-photon) · [JSON](https://whatmodel.sh/api?format=json&all=1)

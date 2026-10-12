@@ -107,10 +107,10 @@ weighted average                                   = 76.8
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $0.20/M blended · $0.1 in / $0.5 out per 1M tokens · [platform.openai.com](https://platform.openai.com/docs/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-6-luna.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-6-luna.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-6-luna) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -143,56 +143,75 @@ stepfun-ai/Step-3.5-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.5-Fl
 
 ## How to run it
 
+### Through an API
+
 api (StepFun) · $0.15/M blended · $0.1 in / $0.3 out per 1M tokens · [platform.stepfun.ai](https://platform.stepfun.ai/docs/en/guides/models/step-3.5-flash.md)
 
 <sub>[price source](https://platform.stepfun.ai/docs/en/guides/pricing/details.md): USD per 1M tokens, StepFun Open Platform (international) step-3.5-flash: input on cache miss and output (output includes reasoning). Cache-hit input $0.02/1M excluded. Currency: USD. StepFun official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/stepfun/step-3.5-flash.toml)</sub>
 
-<pre>
-download                       size  score
-4-bit q4_k                 ~118.1GB   68.3
-4-bit mlx-4bit · mac only  ~110.8GB   68.3
-4-bit mlx-8bit · mac only  ~209.3GB   68.3
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Step 3.5 Flash (196B-A11B) (Q4_K, needs ~118.1 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Step-3.5-Flash-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf ggml-org/Step-3.5-Flash-GGUF:Q4_K
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf ggml-org/Step-3.5-Flash-GGUF:Q4_K
+   ```
 
-```sh
-# 4-bit q4_k · ~118.1GB
-llama cli -hf ggml-org/Step-3.5-Flash-GGUF:Q4_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf ggml-org/Step-3.5-Flash-GGUF:Q4_K
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit q4_k · ~118.1GB
-lms get https://huggingface.co/ggml-org/Step-3.5-Flash-GGUF@Q4_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~110.8GB
-lms get https://huggingface.co/mlx-community/Step-3.5-Flash-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~209.3GB
-lms get https://huggingface.co/mlx-community/Step-3.5-Flash-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Step 3.5 Flash (196B-A11B) (Q4_K, needs ~118.1 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Step-3.5-Flash-GGUF/tree/main))
+   
+   ```sh
+   lms get https://huggingface.co/ggml-org/Step-3.5-Flash-GGUF@Q4_K -y
+   ```
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit mlx-4bit · mac only · ~110.8GB
-mlx_lm.chat --model mlx-community/Step-3.5-Flash-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Step-3.5-Flash-4bit
-# 4-bit mlx-8bit · mac only · ~209.3GB
-mlx_lm.chat --model mlx-community/Step-3.5-Flash-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Step-3.5-Flash-8bit
-```
+Other versions: 4bit (~110.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Step-3.5-Flash-4bit -y` · 8bit (~209.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Step-3.5-Flash-8bit -y`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Step 3.5 Flash (196B-A11B) (4bit, needs ~110.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Step-3.5-Flash-4bit/tree/caad23b0411c27d08aa3967822e61e5efcdd175c))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Step-3.5-Flash-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Step-3.5-Flash-4bit
+   ```
+
+Other versions: 8bit (~209.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Step-3.5-Flash-8bit`
+
+Official weights and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step-3.5-Flash)
 
 ## Published speed measurements
 

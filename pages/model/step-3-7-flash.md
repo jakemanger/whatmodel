@@ -103,42 +103,51 @@ stepfun-ai/Step-3.7-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.7-Fl
 
 ## How to run it
 
+### Through an API
+
 api (StepFun) · $0.44/M blended · $0.2 in / $1.15 out per 1M tokens · [platform.stepfun.ai](https://platform.stepfun.ai/docs/en/guides/models/step-3.7-flash.md)
 
 <sub>[price source](https://platform.stepfun.ai/docs/en/guides/pricing/details.md): USD per 1M tokens, StepFun Open Platform (international), step-3.7-flash (Multimodal Reasoning Models table): input on cache miss $0.20, output $1.15 (output includes reasoning). Cache-hit input ($0.04/1M) excluded. Currency: USD. StepFun official pricing page, observed 2026-09-26. · [context source](https://platform.stepfun.ai/docs/en/guides/models/step-3.7-flash.md): StepFun official model page, step-3.7-flash: 'Context length 256K tokens' (a rounded figure; models.dev @a668908 gives 256,000). Observed 2026-09-26.</sub>
 
-<pre>
-download           size  score
-4-bit q4_k_s  ~115.47GB   67.0
-3-bit q3_k_m   ~97.77GB   67.0
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Step 3.7 Flash (198B-A11B) (Q4_K_S, needs ~115.47 GB, from [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF/tree/0b69336d2fd2adfdef9c66e425f7778196c31482))
+   
+   ```sh
+   llama cli -hf stepfun-ai/Step-3.7-Flash-GGUF:Q4_K_S
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf stepfun-ai/Step-3.7-Flash-GGUF:Q4_K_S
+   ```
 
-```sh
-# 4-bit q4_k_s · ~115.47GB
-llama cli -hf stepfun-ai/Step-3.7-Flash-GGUF:Q4_K_S
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf stepfun-ai/Step-3.7-Flash-GGUF:Q4_K_S
-# 3-bit q3_k_m · ~97.77GB
-llama cli -hf stepfun-ai/Step-3.7-Flash-GGUF:Q3_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf stepfun-ai/Step-3.7-Flash-GGUF:Q3_K_M
-```
+Other versions: Q3_K_M (~97.77 GB) `llama cli -hf stepfun-ai/Step-3.7-Flash-GGUF:Q3_K_M`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit q4_k_s · ~115.47GB
-lms get https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF@Q4_K_S -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 3-bit q3_k_m · ~97.77GB
-lms get https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF@Q3_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
+
+2. Run Step 3.7 Flash (198B-A11B) (Q4_K_S, needs ~115.47 GB, from [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF/tree/0b69336d2fd2adfdef9c66e425f7778196c31482))
+   
+   ```sh
+   lms get https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF@Q4_K_S -y
+   ```
+
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: Q3_K_M (~97.77 GB) `lms get https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF@Q3_K_M -y`
+
+Official weights and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step-3.7-Flash)
 
 [interactive version](https://whatmodel.sh/model/step-3-7-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -10,6 +10,8 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Through an API
+
 api (Amazon Web Services) · $30.00/M chars · [aws.amazon.com](https://aws.amazon.com/polly/pricing/)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M input characters for Polly Generative voices; other voice engines and free tier excluded. Product: Amazon Polly Generative voices. API model: engine=generative. Settings: engine=generative, free tier=excluded. Price basis: published rate. Currency: USD.</sub>

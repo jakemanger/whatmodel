@@ -102,23 +102,16 @@ weighted average                                   = 66.5
 
 ## How to run it
 
-<pre>
-download                      size  score
-4-bit fp8 · nvidia only  ~689.48GB   66.5
-4-bit fp8 · nvidia only  ~689.48GB   66.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp8, needs ~689.48 GB, NVIDIA only, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp/blob/194c67e12b1b0d6df0ef373ddcf215bc84027409/README.md))
+   
+   ```sh
+   python -m sglang.launch_server --model deepseek-ai/DeepSeek-V3.2-Exp --tp 8 --dp 8 --enable-dp-attention
+   ```
 
-### Run it on your own machine
+Other versions: fp8 (~689.48 GB, NVIDIA only) `vllm serve deepseek-ai/DeepSeek-V3.2-Exp`
 
-**Other engines**
-
-```sh
-# 4-bit fp8 · nvidia only · ~689.48GB
-python -m sglang.launch_server --model deepseek-ai/DeepSeek-V3.2-Exp --tp 8 --dp 8 --enable-dp-attention
-# 4-bit fp8 · nvidia only · ~689.48GB
-vllm serve deepseek-ai/DeepSeek-V3.2-Exp
-```
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v3-2-exp) · [JSON](https://whatmodel.sh/api?format=json&all=1)

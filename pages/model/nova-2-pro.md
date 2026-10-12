@@ -54,10 +54,10 @@ weighted average                                = 63.5
 
 ## How to run it
 
+### Through an API
+
 api (Amazon Bedrock) · $3.78/M blended · $1.375 in / $11 out per 1M tokens · [aws.amazon.com](https://aws.amazon.com/nova/pricing/)
 
 <sub>[price source](https://aws.amazon.com/nova/pricing): USD per 1M text tokens, Amazon Bedrock Standard tier, geo cross-Region inference and in-Region, Amazon Nova 2 Pro (Preview). Global cross-Region inference is listed lower. Page table values are rendered from AWS's own price data file for the page (b0.p.awsstatic.com meteredUnitMaps, bedrock USD, published 2026-09-25T06:55:02Z); US East (N. Virginia) selected. Priority/Flex/Batch tiers, cached tokens and non-text modalities excluded. Currency: USD. AWS official Amazon Nova pricing page, observed 2026-09-25. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): LiteLLM (MIT, pinned commit c19ce71) Amazon Bedrock row amazon.nova-2-pro-preview-20251202-v1:0 (also its us./eu./apac. cross-Region ids): max\_input\_tokens 1,000,000, max\_output\_tokens 64,000. Provider maximum input tokens on Bedrock, the route this model is priced on. models.dev @a668908 (providers/nova/models/nova-2-pro-v1.toml) also gives context 1,000,000 for Nova 2 Pro. AWS's Nova 2 user guide says 'All models support up to 1 million tokens of context' but its model table lists only Nova 2 Lite, Sonic and Multimodal Embeddings. Observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/nova-2-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -113,10 +113,10 @@ weighted average                                   = 49.5
 
 ## How to run it
 
+### Through an API
+
 api (Amazon Bedrock) · $1.40/M blended · $0.8 in / $3.2 out per 1M tokens · [docs.aws.amazon.com](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-pro.html)
 
 <sub>[price source](https://aws.amazon.com/nova/pricing): USD per 1M tokens, Standard tier, geo cross-Region inference and in-Region, US East (N. Virginia). Amazon Nova Pro (amazon.nova-pro-v1:0). Observed 2026-09-28 (page price data $0.0008/$0.0032 per 1K tokens). · [context source](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html): Context limit from the maker's documentation, observed 2026-10-06.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/nova-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

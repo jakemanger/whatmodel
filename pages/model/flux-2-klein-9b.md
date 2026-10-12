@@ -75,30 +75,22 @@ weighted average                                   = 54.8
 
 ## How to run it
 
+### Through an API
+
 api (Cloudflare) · $0.015/image · [developers.cloudflare.com](https://developers.cloudflare.com/workers-ai/platform/pricing/)
 
 <sub>[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx): Cloudflare Workers AI; USD0.015 for first MP (explicitly 1024×1024 in source); no input-image MP. Workers plan fee excluded; published USD equivalent is rounded, service bills Neurons. Product: Workers AI text-to-image. API model: @cf/black-forest-labs/flux-2-klein-9b. Settings: width=1024, height=1024, input images=0. Price basis: derived fixed-setting output cost using published rounded USD rates. Additional/excluded charges: Workers Paid plan base fee, input images and usage beyond this setting. Currency: USD.</sub>
 
-<pre>
-version                                   needs  score
-bf16 (cpu offload) · nvidia only        ~22.1GB   54.8
-mlx-qint8 (Flux2CLI, Swift) · mac only  ~11.3GB   54.8
-gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp)    ~13.7GB   54.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp), needs ~13.7 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/flux2.md))
+   
+   ```sh
+   sd-cli --diffusion-model models/flux-2-klein-9b-Q4_0.gguf --vae models/flux2_ae.safetensors --llm models/Qwen3-8B-Q4_K_M.gguf -p "a lovely cat" --cfg-scale 1.0 --steps 4 -v --offload-to-cpu --diffusion-fa
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (CPU OFFLOAD) (~22.1 GB, NVIDIA only) `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2KleinPipeline; p=Flux2KleinPipeline.from_pretrained('black-forest-labs/FLUX.2-klein-9B', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=4, guidance_scale=1.0).images[0].save('out.png')"` · qint8 (Flux2CLI, Swift) (~11.3 GB, Mac only) `./Flux2CLI t2i "a cat holding a sign" --model klein-9b --transformer-quant qint8`
 
-**Other engines**
-
-```sh
-# bf16 (cpu offload) · nvidia only · ~22.1GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2KleinPipeline; p=Flux2KleinPipeline.from_pretrained('black-forest-labs/FLUX.2-klein-9B', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=4, guidance_scale=1.0).images[0].save('out.png')"
-# mlx-qint8 (Flux2CLI, Swift) · mac only · ~11.3GB
-./Flux2CLI t2i "a cat holding a sign" --model klein-9b --transformer-quant qint8
-# gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp) · ~13.7GB
-sd-cli --diffusion-model models/flux-2-klein-9b-Q4_0.gguf --vae models/flux2_ae.safetensors --llm models/Qwen3-8B-Q4_K_M.gguf -p "a lovely cat" --cfg-scale 1.0 --steps 4 -v --offload-to-cpu --diffusion-fa
-```
+Official weights and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B)
 
 [interactive version](https://whatmodel.sh/model/flux-2-klein-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

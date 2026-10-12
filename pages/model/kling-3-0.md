@@ -55,10 +55,10 @@ weighted average                                   = 67.7
 
 ## How to run it
 
+### Through an API
+
 api (Kling AI) · $0.084/sec · [kling.ai](https://kling.ai/dev/pricing)
 
 <sub>[price source](https://kling.ai/dev/pricing): USD per second of generated video, 720P without native audio, Kling developer API list price. Product: Kling Video Generation API. API model: Kling 3.0. Settings: resolution=720P, native audio=off. Price basis: 0.6 units/s × $0.14 per unit (list price); Kling prints $0.084/s. With native audio 720P $0.126/s; 1080P $0.112/s without / $0.168/s with audio; 4K $0.42/s. Kling 3.0 Turbo and Omni excluded. Prepaid resource packages. Currency: USD. Kling AI developer pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/kling-3-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

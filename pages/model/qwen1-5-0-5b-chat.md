@@ -44,55 +44,81 @@ weighted average                          = 20.7
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat/blob/4d14e384a4b037942bb3f3016665157c8bcb70ea/README.md): Model card: 'Stable support of 32K context length for models of all sizes'; config max\_position\_embeddings 32768. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit q4_0                 ~0.395GB   20.7
-4-bit q4_k_m                ~0.41GB   20.7
-4-bit mlx-4bit · mac only    ~0.3GB   20.7
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Qwen1.5 0.5B Chat (Q4_K_M, needs ~0.41 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat-GGUF/tree/cfab082d2fef4a8736ef384dc764c2fb6887f387))
+   
+   ```sh
+   llama cli -hf Qwen/Qwen1.5-0.5B-Chat-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf Qwen/Qwen1.5-0.5B-Chat-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~0.41GB
-llama cli -hf Qwen/Qwen1.5-0.5B-Chat-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf Qwen/Qwen1.5-0.5B-Chat-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run Qwen1.5 0.5B Chat (Q4_K_M, needs ~0.41 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat-GGUF/tree/cfab082d2fef4a8736ef384dc764c2fb6887f387))
+   
+   ```sh
+   lms get https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~0.41GB
-lms get https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~0.3GB
-lms get https://huggingface.co/mlx-community/Qwen1.5-0.5B-Chat-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: 4bit (~0.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen1.5-0.5B-Chat-4bit -y`
 
-```sh
-# 4-bit q4_0 · ~0.395GB
-ollama run qwen:0.5b
-# 4-bit q4_k_m · ~0.41GB
-ollama run hf.co/Qwen/Qwen1.5-0.5B-Chat-GGUF:Q4_K_M
-```
+### Ollama
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~0.3GB
-mlx_lm.chat --model mlx-community/Qwen1.5-0.5B-Chat-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Qwen1.5-0.5B-Chat-4bit
-```
+2. Run Qwen1.5 0.5B Chat (Q4_0, needs ~0.395 GB, from [ollama.com](https://ollama.com/library/qwen/tags))
+   
+   ```sh
+   ollama run qwen:0.5b
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Qwen1.5 0.5B Chat (4bit, needs ~0.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen1.5-0.5B-Chat-4bit/tree/659d8dafc39202a6688bb46242d60440702489b1))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Qwen1.5-0.5B-Chat-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Qwen1.5-0.5B-Chat-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat)
 
 [interactive version](https://whatmodel.sh/model/qwen1-5-0-5b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

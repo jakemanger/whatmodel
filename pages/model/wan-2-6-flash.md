@@ -43,10 +43,10 @@ weighted average                                   = 55.2
 
 ## How to run it
 
+### Through an API
+
 api (Alibaba Cloud Model Studio) · $0.025/sec · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
 <sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per second of output video, 720P silent video (audio=false), International deployment (Singapore). Product: Model Studio Wan image-to-video (first frame). API model: wan2.6-i2v-flash (Model Studio's only Wan 2.6 Flash video model). Settings: resolution=720P, audio=false. Price basis: published list price; only output is billed. With audio (audio=true) 720P $0.05/s; 1080P $0.0375/s silent, $0.075/s with audio. Free quota and other regions excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/wan-2-6-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

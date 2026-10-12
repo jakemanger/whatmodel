@@ -112,55 +112,62 @@ weighted average                                   = 38.5
 
 ## How to run it
 
-<sub>[context source](https://github.com/meta-llama/llama-models/blob/0e0b8c519242d5833d8c11bffc1232b77ad7f301/models/llama2/MODEL_CARD.md): Context length from the maker's official repository.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download          size  score
-4-bit q4_0    ~41.89GB   38.5
-8-bit q8_0    ~83.28GB   38.5
-4-bit Q4_K_M   ~41.4GB   38.5
-2-bit Q2_K     ~29.3GB   38.5
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Llama 2 70B Chat (Q4_K_M, needs ~41.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Llama-2-70B-Chat-GGUF/tree/798ec30fbdbdde983a1189c8396ea41b8980aa16))
+   
+   ```sh
+   llama cli -hf TheBloke/Llama-2-70B-Chat-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf TheBloke/Llama-2-70B-Chat-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q2_K (~29.3 GB) `llama cli -hf TheBloke/Llama-2-70B-Chat-GGUF:Q2_K`
 
-```sh
-# 4-bit Q4_K_M · ~41.4GB
-llama cli -hf TheBloke/Llama-2-70B-Chat-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/Llama-2-70B-Chat-GGUF:Q4_K_M
-# 2-bit Q2_K · ~29.3GB
-llama cli -hf TheBloke/Llama-2-70B-Chat-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/Llama-2-70B-Chat-GGUF:Q2_K
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~41.4GB
-lms get https://huggingface.co/TheBloke/Llama-2-70B-Chat-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit Q2_K · ~29.3GB
-lms get https://huggingface.co/TheBloke/Llama-2-70B-Chat-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Llama 2 70B Chat (Q4_K_M, needs ~41.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Llama-2-70B-Chat-GGUF/tree/798ec30fbdbdde983a1189c8396ea41b8980aa16))
+   
+   ```sh
+   lms get https://huggingface.co/TheBloke/Llama-2-70B-Chat-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_0 · ~41.89GB
-ollama run llama2:70b-chat
-# 8-bit q8_0 · ~83.28GB
-ollama run llama2:70b-chat-q8_0
-# 4-bit Q4_K_M · ~41.4GB
-ollama run hf.co/TheBloke/Llama-2-70B-Chat-GGUF:Q4_K_M
-# 2-bit Q2_K · ~29.3GB
-ollama run hf.co/TheBloke/Llama-2-70B-Chat-GGUF:Q2_K
-```
+Other versions: Q2_K (~29.3 GB) `lms get https://huggingface.co/TheBloke/Llama-2-70B-Chat-GGUF@Q2_K -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Llama 2 70B Chat (Q4_0, needs ~41.89 GB, from [ollama.com](https://ollama.com/library/llama2/tags))
+   
+   ```sh
+   ollama run llama2:70b-chat
+   ```
+
+Other versions: Q8_0 (~83.28 GB) `ollama run llama2:70b-chat-q8_0`
+
+Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf)
 
 [interactive version](https://whatmodel.sh/model/llama-2-70b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

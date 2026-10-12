@@ -59,20 +59,14 @@ weighted average                                   = 35.7
 
 ## How to run it
 
-<pre>
-version               needs  score
-fp16 · nvidia only  ~13.6GB   35.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~13.6 GB, NVIDIA only, from [huggingface.co/PixArt-alpha](https://huggingface.co/PixArt-alpha/PixArt-XL-2-1024-MS/blob/b89adadeccd9ead2adcb9fa2825d3fabec48d404/README.md))
+   
+   ```sh
+   uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors --with sentencepiece python -c "import torch; from diffusers import PixArtAlphaPipeline; p=PixArtAlphaPipeline.from_pretrained('PixArt-alpha/PixArt-XL-2-1024-MS', torch_dtype=torch.float16).to('cuda'); p(prompt='An astronaut riding a green horse').images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~13.6GB
-uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors --with sentencepiece python -c "import torch; from diffusers import PixArtAlphaPipeline; p=PixArtAlphaPipeline.from_pretrained('PixArt-alpha/PixArt-XL-2-1024-MS', torch_dtype=torch.float16).to('cuda'); p(prompt='An astronaut riding a green horse').images[0].save('out.png')"
-```
+Official weights and documentation: [huggingface.co/PixArt-alpha](https://huggingface.co/PixArt-alpha/PixArt-XL-2-1024-MS)
 
 [interactive version](https://whatmodel.sh/model/pixart-alpha) · [JSON](https://whatmodel.sh/api?format=json&all=1)

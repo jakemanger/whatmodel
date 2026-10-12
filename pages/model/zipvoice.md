@@ -59,26 +59,16 @@ weighted average                                   = 61.9
 
 ## How to run it
 
-<pre>
-version                      needs  score
-fp32 (ZipVoice repo)       ~0.55GB   61.9
-onnx-fp32 (ZipVoice repo)  ~0.55GB   61.9
-onnx-int8 (ZipVoice repo)  ~0.18GB   61.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (ZipVoice repo), needs ~0.55 GB, from [github.com/k2-fsa](https://github.com/k2-fsa/ZipVoice/blob/2f7326fbfe999a3ad179e3f1af82a424d4a62819/README.md))
+   
+   ```sh
+   git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && python3 -m zipvoice.bin.infer_zipvoice --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav
+   ```
 
-### Run it on your own machine
+Other versions: onnx-fp32 (ZipVoice repo) (~0.55 GB) `git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && pip install onnxruntime && python3 -m zipvoice.bin.infer_zipvoice_onnx --onnx-int8 False --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav` · onnx-int8 (ZipVoice repo) (~0.18 GB) `git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && pip install onnxruntime && python3 -m zipvoice.bin.infer_zipvoice_onnx --onnx-int8 True --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav`
 
-**Other engines**
-
-```sh
-# fp32 (ZipVoice repo) · ~0.55GB
-git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && python3 -m zipvoice.bin.infer_zipvoice --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav
-# onnx-fp32 (ZipVoice repo) · ~0.55GB
-git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && pip install onnxruntime && python3 -m zipvoice.bin.infer_zipvoice_onnx --onnx-int8 False --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav
-# onnx-int8 (ZipVoice repo) · ~0.18GB
-git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && pip install onnxruntime && python3 -m zipvoice.bin.infer_zipvoice_onnx --onnx-int8 True --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav
-```
+Official weights and documentation: [huggingface.co/k2-fsa](https://huggingface.co/k2-fsa/ZipVoice)
 
 [interactive version](https://whatmodel.sh/model/zipvoice) · [JSON](https://whatmodel.sh/api?format=json&all=1)

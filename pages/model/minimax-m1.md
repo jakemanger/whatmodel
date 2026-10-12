@@ -104,24 +104,20 @@ MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-8
 
 ## How to run it
 
+### Through an API
+
 api (Novita AI) · $0.96/M blended · $0.55 in / $2.2 out per 1M tokens · [novita.ai](https://novita.ai/models)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output. Model endpoint minimaxai/minimax-m1-80k.  Product: Serverless chat completions. API model: minimaxai/minimax-m1-80k. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-<pre>
-download          size  score
-16-bit bf16  ~912.21GB   62.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~912.21 GB, from [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/docs/transformers_deployment_guide.md))
+   
+   ```sh
+   pip install transformers torch accelerate && python -c "from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig; p='MiniMaxAI/MiniMax-M1-80k'; m=AutoModelForCausalLM.from_pretrained(p, device_map='auto', trust_remote_code=True); t=AutoTokenizer.from_pretrained(p, trust_remote_code=True); x=t(t.apply_chat_template([{'role': 'user', 'content': [{'type': 'text', 'text': 'Do you have mayonnaise recipes?'}]}], tokenize=False, add_generation_prompt=True), return_tensors='pt').to(m.device); o=m.generate(**x, generation_config=GenerationConfig(max_new_tokens=20, eos_token_id=t.eos_token_id, use_cache=True)); print(t.batch_decode([o[0][x.input_ids.shape[1]:]], skip_special_tokens=True)[0])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~912.21GB
-pip install transformers torch accelerate && python -c "from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig; p='MiniMaxAI/MiniMax-M1-80k'; m=AutoModelForCausalLM.from_pretrained(p, device_map='auto', trust_remote_code=True); t=AutoTokenizer.from_pretrained(p, trust_remote_code=True); x=t(t.apply_chat_template([{'role': 'user', 'content': [{'type': 'text', 'text': 'Do you have mayonnaise recipes?'}]}], tokenize=False, add_generation_prompt=True), return_tensors='pt').to(m.device); o=m.generate(**x, generation_config=GenerationConfig(max_new_tokens=20, eos_token_id=t.eos_token_id, use_cache=True)); print(t.batch_decode([o[0][x.input_ids.shape[1]:]], skip_special_tokens=True)[0])"
-```
+Official weights and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k)
 
 [interactive version](https://whatmodel.sh/model/minimax-m1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

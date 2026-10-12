@@ -108,32 +108,41 @@ weighted average                                   = 65.5
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md): LongCat-Flash card: mid-training extended 'the context length to 128k'. Observed 2026-10-10.</sub>
+### LM Studio (recommended)
 
-<pre>
-download                       size  score
-4-bit mlx-4bit · mac only  ~315.4GB   65.5
-</pre>
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run LongCat-Flash-Chat (560B-A27B) (4bit, needs ~315.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/LongCat-Flash-Chat-4bit/tree/96c65642f3643fa2f72f2c49d5e105a4a1e1051b))
+   
+   ```sh
+   lms get https://huggingface.co/mlx-community/LongCat-Flash-Chat-4bit -y
+   ```
 
-### Run it on your own machine
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### MLX (Mac)
 
-```sh
-# 4-bit mlx-4bit · mac only · ~315.4GB
-lms get https://huggingface.co/mlx-community/LongCat-Flash-Chat-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+2. Run LongCat-Flash-Chat (560B-A27B) (4bit, needs ~315.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/LongCat-Flash-Chat-4bit/tree/96c65642f3643fa2f72f2c49d5e105a4a1e1051b))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/LongCat-Flash-Chat-4bit
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~315.4GB
-mlx_lm.chat --model mlx-community/LongCat-Flash-Chat-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/LongCat-Flash-Chat-4bit
-```
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/LongCat-Flash-Chat-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-Flash-Chat)
 
 [interactive version](https://whatmodel.sh/model/longcat-flash-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

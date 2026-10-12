@@ -62,55 +62,81 @@ weighted average                                   = 54.5
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B/blob/8a120673fc7309b55be2175a2e61f9a0839e4f61/README.md): Model card: 'Context Length: 32,768 tokens'. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_k_m                ~4.8GB   54.5
-4-bit q4_k_m               ~4.77GB   54.5
-4-bit mlx-8bit · mac only   ~8.3GB   54.5
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run EXAONE Deep 7.8B (Q4_K_M, needs ~4.77 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF/tree/b317545742931021fc291324c30cefb649e3dcad))
+   
+   ```sh
+   llama cli -hf LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~4.77GB
-llama cli -hf LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run EXAONE Deep 7.8B (Q4_K_M, needs ~4.77 GB, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF/tree/b317545742931021fc291324c30cefb649e3dcad))
+   
+   ```sh
+   lms get https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~4.77GB
-lms get https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~8.3GB
-lms get https://huggingface.co/sinbal/EXAONE-Deep-7.8B-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: 8bit (~8.3 GB, Mac only) `lms get https://huggingface.co/sinbal/EXAONE-Deep-7.8B-MLX-8bit -y`
 
-```sh
-# 4-bit q4_k_m · ~4.8GB
-ollama run exaone-deep:7.8b
-# 4-bit q4_k_m · ~4.77GB
-ollama run hf.co/LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF:Q4_K_M
-```
+### Ollama
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit mlx-8bit · mac only · ~8.3GB
-mlx_lm.chat --model sinbal/EXAONE-Deep-7.8B-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model sinbal/EXAONE-Deep-7.8B-MLX-8bit
-```
+2. Run EXAONE Deep 7.8B (Q4_K_M, needs ~4.8 GB, from [ollama.com](https://ollama.com/library/exaone-deep/tags))
+   
+   ```sh
+   ollama run exaone-deep:7.8b
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run EXAONE Deep 7.8B (8bit, needs ~8.3 GB, Mac only, from [huggingface.co/sinbal](https://huggingface.co/sinbal/EXAONE-Deep-7.8B-MLX-8bit/tree/931074a8ba025dc4cab44076c76c6b9f74c2feee))
+   
+   ```sh
+   mlx_lm.chat --model sinbal/EXAONE-Deep-7.8B-MLX-8bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model sinbal/EXAONE-Deep-7.8B-MLX-8bit
+   ```
+
+Official weights and documentation: [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B)
 
 [interactive version](https://whatmodel.sh/model/exaone-deep-7-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

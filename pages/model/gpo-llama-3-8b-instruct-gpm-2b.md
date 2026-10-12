@@ -43,20 +43,14 @@ weighted average                              = 50.0
 
 ## How to run it
 
-<pre>
-download         size  score
-16-bit bf16  ~16.06GB   50.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/general-preference](https://huggingface.co/general-preference/GPO-Llama-3-8B-Instruct-GPM-2B/tree/f6fae483d744106e5366d78fadd19dba7542b14a))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='general-preference/GPO-Llama-3-8B-Instruct-GPM-2B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~16.06GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='general-preference/GPO-Llama-3-8B-Instruct-GPM-2B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/general-preference](https://huggingface.co/general-preference/GPO-Llama-3-8B-Instruct-GPM-2B)
 
 [interactive version](https://whatmodel.sh/model/gpo-llama-3-8b-instruct-gpm-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

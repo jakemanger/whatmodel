@@ -43,6 +43,8 @@ weighted average                        = 40.7
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/Efficient-Large-Model](https://huggingface.co/Efficient-Large-Model/NVILA-15B)
 
 [interactive version](https://whatmodel.sh/model/nvila-15b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -14,13 +14,14 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
-### Run it on your own machine
+### Other ways to run it
 
-**Other engines**
+1. Run it as published (fp32 (pocket-tts 3.3.0), needs ~0.23 GB, from [github.com/kyutai-labs](https://github.com/kyutai-labs/pocket-tts/blob/41cbc84af539ea78a804ffca5f9c6edc1a22ce44/README.md))
+   
+   ```sh
+   uvx pocket-tts generate --text "Hello world, this is a test."
+   ```
 
-```sh
-# fp32 (pocket-tts 3.3.0) · ~0.23GB
-uvx pocket-tts generate --text "Hello world, this is a test."
-```
+Official weights and documentation: [huggingface.co/kyutai](https://huggingface.co/kyutai/pocket-tts)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/pocket-tts)

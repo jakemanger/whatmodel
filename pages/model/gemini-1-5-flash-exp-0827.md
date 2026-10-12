@@ -69,6 +69,6 @@ weighted average                              = 53.2
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/gemini-1-5-flash-exp-0827) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -82,59 +82,70 @@ weighted average                                   = 55.8
 
 ## How to run it
 
-<pre>
-download                        size  score
-4-bit q4_k_m               ~142.45GB   55.8
-2-bit iq2_m                 ~76.92GB   55.8
-4-bit mlx-4bit · mac only   ~132.7GB   55.8
-4-bit mlx-8bit · mac only   ~250.5GB   55.8
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run DeepSeek-V2.5 (1210) (Q4_K_M, needs ~142.45 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-V2.5-1210-GGUF/tree/fb3b91fa0262ceae59a8055b297497cddabdbcdf))
+   
+   ```sh
+   llama cli -hf bartowski/DeepSeek-V2.5-1210-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/DeepSeek-V2.5-1210-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit q4_k_m · ~142.45GB
-llama cli -hf bartowski/DeepSeek-V2.5-1210-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/DeepSeek-V2.5-1210-GGUF:Q4_K_M
-# 2-bit iq2_m · ~76.92GB
-llama cli -hf bartowski/DeepSeek-V2.5-1210-GGUF:IQ2_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/DeepSeek-V2.5-1210-GGUF:IQ2_M
-```
+Other versions: IQ2_M (~76.92 GB) `llama cli -hf bartowski/DeepSeek-V2.5-1210-GGUF:IQ2_M`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~142.45GB
-lms get https://huggingface.co/bartowski/DeepSeek-V2.5-1210-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit iq2_m · ~76.92GB
-lms get https://huggingface.co/bartowski/DeepSeek-V2.5-1210-GGUF@IQ2_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~132.7GB
-lms get https://huggingface.co/mlx-community/DeepSeek-V2.5-1210-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~250.5GB
-lms get https://huggingface.co/dong-99/DeepSeek-V2.5-1210-mlx-8Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+2. Run DeepSeek-V2.5 (1210) (Q4_K_M, needs ~142.45 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-V2.5-1210-GGUF/tree/fb3b91fa0262ceae59a8055b297497cddabdbcdf))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/DeepSeek-V2.5-1210-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~132.7GB
-mlx_lm.chat --model mlx-community/DeepSeek-V2.5-1210-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/DeepSeek-V2.5-1210-4bit
-# 4-bit mlx-8bit · mac only · ~250.5GB
-mlx_lm.chat --model dong-99/DeepSeek-V2.5-1210-mlx-8Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model dong-99/DeepSeek-V2.5-1210-mlx-8Bit
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: IQ2_M (~76.92 GB) `lms get https://huggingface.co/bartowski/DeepSeek-V2.5-1210-GGUF@IQ2_M -y` · 4bit (~132.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-V2.5-1210-4bit -y` · 8bit (~250.5 GB, Mac only) `lms get https://huggingface.co/dong-99/DeepSeek-V2.5-1210-mlx-8Bit -y`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run DeepSeek-V2.5 (1210) (4bit, needs ~132.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-V2.5-1210-4bit/tree/3b6ce93c9c4cb6d390377d183f66aaf5e3b4f507))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/DeepSeek-V2.5-1210-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/DeepSeek-V2.5-1210-4bit
+   ```
+
+Other versions: 8bit (~250.5 GB, Mac only) `mlx_lm.chat --model dong-99/DeepSeek-V2.5-1210-mlx-8Bit`
+
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v2-5-1210) · [JSON](https://whatmodel.sh/api?format=json&all=1)

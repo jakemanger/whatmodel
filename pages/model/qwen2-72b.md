@@ -120,82 +120,87 @@ weighted average                                   = 50.5
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/Qwen/Qwen2-72B-Instruct/blob/c867f763ef53f2ea9d9b31ee8501273dedd391eb/README.md): Qwen official model card: "Qwen2-72B-Instruct supports a context length of up to 131,072 tokens". Full supported model-card context requires the documented YaRN configuration beyond the default 32,768 tokens (config.json). This does not promise the same limit on every hosted API. Observed 2026-10-07.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit q4_0                 ~44.13GB   50.5
-8-bit q8_0                 ~87.75GB   50.5
-4-bit q4_k_m                ~47.4GB   50.5
-8-bit q8_0                  ~77.3GB   50.5
-2-bit q2_k                  ~29.8GB   50.5
-4-bit mlx-4bit · mac only   ~40.9GB   50.5
-4-bit mlx-8bit · mac only   ~77.3GB   50.5
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Qwen2 72B Instruct (Q4_K_M, needs ~47.4 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-72B-Instruct-GGUF/tree/ea5316198ecee4a842976893b2bd2bd2231c5571))
+   
+   ```sh
+   llama cli -hf Qwen/Qwen2-72B-Instruct-GGUF:q4_k_m
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf Qwen/Qwen2-72B-Instruct-GGUF:q4_k_m
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~77.3 GB) `llama cli -hf Qwen/Qwen2-72B-Instruct-GGUF:q8_0` · Q2_K (~29.8 GB) `llama cli -hf Qwen/Qwen2-72B-Instruct-GGUF:q2_k`
 
-```sh
-# 4-bit q4_k_m · ~47.4GB
-llama cli -hf Qwen/Qwen2-72B-Instruct-GGUF:q4_k_m
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf Qwen/Qwen2-72B-Instruct-GGUF:q4_k_m
-# 8-bit q8_0 · ~77.3GB
-llama cli -hf Qwen/Qwen2-72B-Instruct-GGUF:q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf Qwen/Qwen2-72B-Instruct-GGUF:q8_0
-# 2-bit q2_k · ~29.8GB
-llama cli -hf Qwen/Qwen2-72B-Instruct-GGUF:q2_k
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf Qwen/Qwen2-72B-Instruct-GGUF:q2_k
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit q4_k_m · ~47.4GB
-lms get https://huggingface.co/Qwen/Qwen2-72B-Instruct-GGUF@q4_k_m -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit q8_0 · ~77.3GB
-lms get https://huggingface.co/Qwen/Qwen2-72B-Instruct-GGUF@q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit q2_k · ~29.8GB
-lms get https://huggingface.co/Qwen/Qwen2-72B-Instruct-GGUF@q2_k -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~40.9GB
-lms get https://huggingface.co/mlx-community/Qwen2-72B-Instruct-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~77.3GB
-lms get https://huggingface.co/mlx-community/Qwen2-72B-Instruct-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Qwen2 72B Instruct (Q4_K_M, needs ~47.4 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-72B-Instruct-GGUF/tree/ea5316198ecee4a842976893b2bd2bd2231c5571))
+   
+   ```sh
+   lms get https://huggingface.co/Qwen/Qwen2-72B-Instruct-GGUF@q4_k_m -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_0 · ~44.13GB
-ollama run qwen2:72b-instruct
-# 8-bit q8_0 · ~87.75GB
-ollama run qwen2:72b-instruct-q8_0
-# 2-bit q2_k · ~29.8GB
-ollama run hf.co/Qwen/Qwen2-72B-Instruct-GGUF:q2_k
-```
+Other versions: Q8_0 (~77.3 GB) `lms get https://huggingface.co/Qwen/Qwen2-72B-Instruct-GGUF@q8_0 -y` · Q2_K (~29.8 GB) `lms get https://huggingface.co/Qwen/Qwen2-72B-Instruct-GGUF@q2_k -y` · 4bit (~40.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-72B-Instruct-4bit -y` · 8bit (~77.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2-72B-Instruct-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~40.9GB
-mlx_lm.chat --model mlx-community/Qwen2-72B-Instruct-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Qwen2-72B-Instruct-4bit
-# 4-bit mlx-8bit · mac only · ~77.3GB
-mlx_lm.chat --model mlx-community/Qwen2-72B-Instruct-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Qwen2-72B-Instruct-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Qwen2 72B Instruct (Q4_0, needs ~44.13 GB, from [ollama.com](https://ollama.com/library/qwen2/tags))
+   
+   ```sh
+   ollama run qwen2:72b-instruct
+   ```
+
+Other versions: Q8_0 (~87.75 GB) `ollama run qwen2:72b-instruct-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Qwen2 72B Instruct (4bit, needs ~40.9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2-72B-Instruct-4bit/tree/d410561c1c344604ce87755257bc90922b8aa2f6))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Qwen2-72B-Instruct-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Qwen2-72B-Instruct-4bit
+   ```
+
+Other versions: 8bit (~77.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen2-72B-Instruct-8bit`
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2-72B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen2-72b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

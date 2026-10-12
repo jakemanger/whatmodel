@@ -57,23 +57,16 @@ weighted average                                   = 29.9
 
 ## How to run it
 
-<pre>
-version                needs  score
-fp16 · nvidia only    ~2.6GB   29.9
-q8_0 (sd.cpp --type)  ~2.1GB   29.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~2.6 GB, NVIDIA only, from [huggingface.co/dreamlike-art](https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('dreamlike-art/dreamlike-photoreal-2.0', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
+Other versions: Q8_0 (SD.CPP --TYPE) (~2.1 GB) `sd-cli -m models/dreamlike-photoreal-2.0.safetensors --type q8_0 -p "a lovely cat"`
 
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~2.6GB
-uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('dreamlike-art/dreamlike-photoreal-2.0', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
-# q8_0 (sd.cpp --type) · ~2.1GB
-sd-cli -m models/dreamlike-photoreal-2.0.safetensors --type q8_0 -p "a lovely cat"
-```
+Official weights and documentation: [huggingface.co/dreamlike-art](https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0)
 
 [interactive version](https://whatmodel.sh/model/dreamlike-photoreal-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

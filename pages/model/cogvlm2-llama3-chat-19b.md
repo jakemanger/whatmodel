@@ -49,23 +49,16 @@ weighted average                                   = 43.1
 
 ## How to run it
 
-<pre>
-download                                      size  score
-16-bit bf16 · nvidia only                 ~39.01GB   43.1
-4-bit int4 (bitsandbytes at load) · nvi…  ~39.01GB   43.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~39.01 GB, NVIDIA only, from [github.com/zai-org](https://github.com/zai-org/CogVLM2/blob/6700ae7ca23ba87f13796f3f427cbda64f71aaef/basic_demo/README.md))
+   
+   ```sh
+   git clone https://github.com/zai-org/CogVLM2 && cd CogVLM2/basic_demo && pip install -r requirements.txt && CUDA_VISIBLE_DEVICES=0 python cli_demo.py
+   ```
 
-### Run it on your own machine
+Other versions: int4 (bitsandbytes at load) (~39.01 GB, NVIDIA only) `git clone https://github.com/zai-org/CogVLM2 && cd CogVLM2/basic_demo && pip install -r requirements.txt && CUDA_VISIBLE_DEVICES=0 python cli_demo.py --quant 4`
 
-**Other engines**
-
-```sh
-# 16-bit bf16 · nvidia only · ~39.01GB
-git clone https://github.com/zai-org/CogVLM2 && cd CogVLM2/basic_demo && pip install -r requirements.txt && CUDA_VISIBLE_DEVICES=0 python cli_demo.py
-# 4-bit int4 (bitsandbytes at load) · nvidia only · ~39.01GB
-git clone https://github.com/zai-org/CogVLM2 && cd CogVLM2/basic_demo && pip install -r requirements.txt && CUDA_VISIBLE_DEVICES=0 python cli_demo.py --quant 4
-```
+Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B)
 
 [interactive version](https://whatmodel.sh/model/cogvlm2-llama3-chat-19b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

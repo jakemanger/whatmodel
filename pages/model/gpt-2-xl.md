@@ -78,70 +78,93 @@ weighted average                                   = 11.4
 
 ## How to run it
 
-<sub>[context source](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf): Context limit from the maker's documentation, observed 2026-10-06.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit fp32                  ~6.43GB   11.4
-4-bit Q4_K_M                 ~1.2GB   11.4
-8-bit Q8_0                   ~1.7GB   11.4
-16-bit mlx-bf16 · mac only   ~3.1GB   11.4
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run GPT-2 XL (1.5B) (Q4_K_M, needs ~1.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-xl-GGUF/tree/a6a1b25a992d7541b185b0cd1227b47311f4eab6))
+   
+   ```sh
+   llama cli -hf mradermacher/gpt2-xl-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/gpt2-xl-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~1.7 GB) `llama cli -hf mradermacher/gpt2-xl-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~1.2GB
-llama cli -hf mradermacher/gpt2-xl-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/gpt2-xl-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~1.7GB
-llama cli -hf mradermacher/gpt2-xl-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/gpt2-xl-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~1.2GB
-lms get https://huggingface.co/mradermacher/gpt2-xl-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~1.7GB
-lms get https://huggingface.co/mradermacher/gpt2-xl-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 16-bit mlx-bf16 · mac only · ~3.1GB
-lms get https://huggingface.co/warshanks/gpt2-xl-bf16 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run GPT-2 XL (1.5B) (Q4_K_M, needs ~1.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-xl-GGUF/tree/a6a1b25a992d7541b185b0cd1227b47311f4eab6))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/gpt2-xl-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~1.2GB
-ollama run hf.co/mradermacher/gpt2-xl-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~1.7GB
-ollama run hf.co/mradermacher/gpt2-xl-GGUF:Q8_0
-```
+Other versions: Q8_0 (~1.7 GB) `lms get https://huggingface.co/mradermacher/gpt2-xl-GGUF@Q8_0 -y` · BF16 (~3.1 GB, Mac only) `lms get https://huggingface.co/warshanks/gpt2-xl-bf16 -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 16-bit mlx-bf16 · mac only · ~3.1GB
-mlx_lm.chat --model warshanks/gpt2-xl-bf16
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model warshanks/gpt2-xl-bf16
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-**Other engines**
+2. Run GPT-2 XL (1.5B) (Q4_K_M, needs ~1.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/gpt2-xl-GGUF/tree/a6a1b25a992d7541b185b0cd1227b47311f4eab6))
+   
+   ```sh
+   ollama run hf.co/mradermacher/gpt2-xl-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit fp32 · ~6.43GB
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2-xl')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Other versions: Q8_0 (~1.7 GB) `ollama run hf.co/mradermacher/gpt2-xl-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run GPT-2 XL (1.5B) (BF16, needs ~3.1 GB, Mac only, from [huggingface.co/warshanks](https://huggingface.co/warshanks/gpt2-xl-bf16/tree/496e535a68bc1775d18c6acdaa66358cdb5ea1aa))
+   
+   ```sh
+   mlx_lm.chat --model warshanks/gpt2-xl-bf16
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model warshanks/gpt2-xl-bf16
+   ```
+
+### Other ways to run it
+
+1. Run it as published (fp32, needs ~6.43 GB, from [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2-xl/tree/15ea56dee5df4983c59b2538573817e1667135e2))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2-xl')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2-xl)
 
 [interactive version](https://whatmodel.sh/model/gpt-2-xl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

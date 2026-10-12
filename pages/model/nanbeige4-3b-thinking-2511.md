@@ -53,68 +53,93 @@ weighted average                                   = 54.2
 
 ## How to run it
 
-<pre>
-download                       size  score
-16-bit bf16                 ~7.87GB   54.2
-4-bit Q4_K_M                 ~2.4GB   54.2
-8-bit Q8_0                   ~4.2GB   54.2
-MXFP4 mlx-mxfp4 · mac only   ~2.1GB   54.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Nanbeige4-3B-Thinking-2511 (Q4_K_M, needs ~2.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF/tree/16bb1fbc22aca1d48574567145ffa8094646173a))
+   
+   ```sh
+   llama cli -hf bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~2.4GB
-llama cli -hf bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~4.2GB
-llama cli -hf bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF:Q8_0
-```
+Other versions: Q8_0 (~4.2 GB) `llama cli -hf bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~2.4GB
-lms get https://huggingface.co/bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~4.2GB
-lms get https://huggingface.co/bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# MXFP4 mlx-mxfp4 · mac only · ~2.1GB
-lms get https://huggingface.co/RepublicOfKorokke/Nanbeige4-3B-Thinking-2511-mlx-mxfp4 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Nanbeige4-3B-Thinking-2511 (Q4_K_M, needs ~2.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF/tree/16bb1fbc22aca1d48574567145ffa8094646173a))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~2.4GB
-ollama run hf.co/bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~4.2GB
-ollama run hf.co/bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~4.2 GB) `lms get https://huggingface.co/bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF@Q8_0 -y` · mxfp4 (~2.1 GB, Mac only) `lms get https://huggingface.co/RepublicOfKorokke/Nanbeige4-3B-Thinking-2511-mlx-mxfp4 -y`
 
-```sh
-# MXFP4 mlx-mxfp4 · mac only · ~2.1GB
-mlx_lm.chat --model RepublicOfKorokke/Nanbeige4-3B-Thinking-2511-mlx-mxfp4
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model RepublicOfKorokke/Nanbeige4-3B-Thinking-2511-mlx-mxfp4
-```
+### Ollama
 
-**Other engines**
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 16-bit bf16 · ~7.87GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Nanbeige/Nanbeige4-3B-Thinking-2511', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+2. Run Nanbeige4-3B-Thinking-2511 (Q4_K_M, needs ~2.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF/tree/16bb1fbc22aca1d48574567145ffa8094646173a))
+   
+   ```sh
+   ollama run hf.co/bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~4.2 GB) `ollama run hf.co/bartowski/Nanbeige_Nanbeige4-3B-Thinking-2511-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Nanbeige4-3B-Thinking-2511 (mxfp4, needs ~2.1 GB, Mac only, from [huggingface.co/RepublicOfKorokke](https://huggingface.co/RepublicOfKorokke/Nanbeige4-3B-Thinking-2511-mlx-mxfp4/tree/df654bf93d659e2eb6d4866cf5c26909be9879b1))
+   
+   ```sh
+   mlx_lm.chat --model RepublicOfKorokke/Nanbeige4-3B-Thinking-2511-mlx-mxfp4
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model RepublicOfKorokke/Nanbeige4-3B-Thinking-2511-mlx-mxfp4
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~7.87 GB, from [huggingface.co/Nanbeige](https://huggingface.co/Nanbeige/Nanbeige4-3B-Thinking-2511/tree/396a1fb7a5e1a87941b321b4da85bc510b424d00))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Nanbeige/Nanbeige4-3B-Thinking-2511', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/Nanbeige](https://huggingface.co/Nanbeige/Nanbeige4-3B-Thinking-2511)
 
 [interactive version](https://whatmodel.sh/model/nanbeige4-3b-thinking-2511) · [JSON](https://whatmodel.sh/api?format=json&all=1)

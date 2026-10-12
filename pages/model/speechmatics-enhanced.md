@@ -74,10 +74,10 @@ weighted average                                   = 59.7
 
 ## How to run it
 
+### Through an API
+
 api (Speechmatics) · $0.0067/audio min · [speechmatics.com](https://www.speechmatics.com/pricing)
 
 <sub>[price source](https://www.speechmatics.com/pricing): USD per input audio minute: Speechmatics Pro plan (no commitment) lists Batch Enhanced at $0.40/hr (÷60). Product: Speechmatics batch speech-to-text. API model: enhanced operating point. Settings: Pro plan, batch. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: 20% volume discount over 500 hr/month, real-time Enhanced ($0.43/hr), bolt-ons. Currency: USD. Speechmatics official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/speechmatics-enhanced) · [JSON](https://whatmodel.sh/api?format=json&all=1)

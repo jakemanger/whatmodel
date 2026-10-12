@@ -68,10 +68,10 @@ weighted average                        = 68.5
 
 ## How to run it
 
+### Through an API
+
 api (SiliconFlow) · $1.90/M blended · $1.2 in / $4 out per 1M tokens · [siliconflow.com](https://www.siliconflow.com/models/glm-5v-turbo)
 
 <sub>[price source](https://www.siliconflow.com/models/glm-5v-turbo): USD per 1M tokens, SiliconFlow serverless pay-as-you-go, model zai-org/GLM-5V-Turbo (page state 'Available'; SiliconFlow names Z.ai as the model provider; served in FP8): input $1.20, output $4.00; cache-read input $0.24 excluded. Z.ai's own pricing page no longer lists GLM-5V-Turbo (its Vision Models table shows GLM-4.6V, GLM-OCR, GLM-4.6V-FlashX, GLM-4.5V and GLM-4.6V-Flash only); the same $1.20/$4.00 appears for Z.ai in models.dev @a668908. Not a Z.ai direct tariff. Currency: USD. SiliconFlow official model page, observed 2026-09-26. · [context source](https://docs.z.ai/guides/vlm/glm-5v-turbo.md): Z.ai GLM-5V-Turbo model guide: Context Length 200K (stated rounded), Maximum Output Tokens 128K. Observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/glm-5v-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

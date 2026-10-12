@@ -16,13 +16,14 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
-### Run it on your own machine
+### Other ways to run it
 
-**Other engines**
+1. Run it as published (fp32 · CPU, needs ~4 GB, from [github.com/idiap](https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json))
+   
+   ```sh
+   uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/de/thorsten/vits --text "Hallo Welt." --out_path speech.wav --device cpu
+   ```
 
-```sh
-# fp32 · CPU · ~4GB
-uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/de/thorsten/vits --text "Hallo Welt." --out_path speech.wav --device cpu
-```
+Official weights and documentation: [github.com/idiap](https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/coqui-de-thorsten-vits)

@@ -66,24 +66,20 @@ weighted average                                   = 51.1
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.040/sec · [fal.ai](https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p)
 
 <sub>[price source](https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p): USD per generated second of 720p video on fal.ai: fal states 'Your request will cost $0.04 per generated second of video. Generated seconds are calculated at 30 frames per second.' Product: fal LongCat Video text-to-video (720p/30fps) endpoint. API model: fal-ai/longcat-video/text-to-video/720p (the base model; the distilled endpoints are separate). Settings: resolution=720p, 30 fps. Price basis: per-second rate printed by fal. 480p endpoint $0.025 per generated second (counted at 15 fps). Currency: USD. Not a Meituan direct tariff. fal.ai model page, observed 2026-09-26.</sub>
 
-<pre>
-version                needs  score
-bf16 · nvidia only  ~100.4GB   51.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~100.4 GB, NVIDIA only, from [github.com/meituan-longcat](https://github.com/meituan-longcat/LongCat-Video/blob/6b3f4b8582a8bc3f20f795735f5383716c4ba794/README.md))
+   
+   ```sh
+   git clone https://github.com/meituan-longcat/LongCat-Video && cd LongCat-Video && pip install torch==2.6.0+cu124 torchvision==0.21.0+cu124 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124 && pip install ninja psutil packaging && pip install flash_attn==2.7.4.post1 && pip install -r requirements.txt && pip install "huggingface_hub[cli]" && huggingface-cli download meituan-longcat/LongCat-Video --local-dir ./weights/LongCat-Video && torchrun run_demo_text_to_video.py --checkpoint_dir=./weights/LongCat-Video --enable_compile
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~100.4GB
-git clone https://github.com/meituan-longcat/LongCat-Video && cd LongCat-Video && pip install torch==2.6.0+cu124 torchvision==0.21.0+cu124 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124 && pip install ninja psutil packaging && pip install flash_attn==2.7.4.post1 && pip install -r requirements.txt && pip install "huggingface_hub[cli]" && huggingface-cli download meituan-longcat/LongCat-Video --local-dir ./weights/LongCat-Video && torchrun run_demo_text_to_video.py --checkpoint_dir=./weights/LongCat-Video --enable_compile
-```
+Official weights and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-Video)
 
 [interactive version](https://whatmodel.sh/model/longcat-video) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -66,10 +66,10 @@ weighted average                                   = 58.4
 
 ## How to run it
 
+### Through an API
+
 api (Runway) · $0.12/sec · [docs.dev.runwayml.com](https://docs.dev.runwayml.com/guides/pricing/)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per generated second, standard Gen-4.5 output. 12 credits × USD0.01/credit; professional/HDR format surcharges and sales tax excluded. Product: Runway developer API. API model: gen4.5. Settings: output format=standard, prores=no, hdr=no. Price basis: published rate. Currency: USD.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/runway-gen-4-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

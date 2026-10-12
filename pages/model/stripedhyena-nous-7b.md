@@ -45,6 +45,8 @@ weighted average                                   = 33.2
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/togethercomputer](https://huggingface.co/togethercomputer/StripedHyena-Nous-7B)
 
 [interactive version](https://whatmodel.sh/model/stripedhyena-nous-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -42,10 +42,10 @@ weighted average                        = 65.1
 
 ## How to run it
 
+### Through an API
+
 api (Google Cloud) · $30.00/M chars · [cloud.google.com](https://cloud.google.com/text-to-speech/pricing)
 
 <sub>[price source](https://cloud.google.com/text-to-speech/pricing): USD per 1M characters: Google Cloud lists Chirp 3: HD voices at US$0.00003 per character (US$30 per 1 million characters) after the first 1M free characters per month. Product: Cloud Text-to-Speech. API model: Chirp 3: HD voices. Settings: standard. Price basis: published list rate. Exclusions: monthly free tier, instant custom voice. Currency: USD. Google Cloud official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/google-chirp-3-hd) · [JSON](https://whatmodel.sh/api?format=json&all=1)

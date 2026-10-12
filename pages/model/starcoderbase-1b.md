@@ -44,31 +44,31 @@ weighted average                                   = 25.3
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit fp32   ~4.55GB   25.3
-4-bit q4_0  ~0.726GB   25.3
-4-bit q4_0  ~0.726GB   25.3
-</pre>
+### Ollama (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-### Run it on your own machine
+2. Run StarCoderBase 1B (Q4_0, needs ~0.726 GB, from [ollama.com](https://ollama.com/library/starcoder/tags))
+   
+   ```sh
+   ollama run starcoder:1b
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: Q4_0 (~0.726 GB) `ollama run starcoder:1b`
 
-```sh
-# 4-bit q4_0 · ~0.726GB
-ollama run starcoder:1b
-# 4-bit q4_0 · ~0.726GB
-ollama run starcoder:1b
-```
+### Other ways to run it
 
-**Other engines**
+1. Run it as published (fp32, needs ~4.55 GB, from [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase-1b/tree/182f0165fdf8da9c9935901eec65c94337f01c11))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-1b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-```sh
-# 4-bit fp32 · ~4.55GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-1b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase-1b)
 
 [interactive version](https://whatmodel.sh/model/starcoderbase-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

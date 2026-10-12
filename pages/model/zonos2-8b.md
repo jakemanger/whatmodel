@@ -68,35 +68,16 @@ ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">Seed-TTS
 
 ## How to run it
 
-<pre>
-version                                      needs  score
-q4_k (zonos2.cpp)                          ~5.17GB   56.5
-q8_0 (zonos2.cpp)                           ~8.8GB   56.5
-q4_k (zonos2.cpp) · mac only               ~5.17GB   56.5
-q8_0 (zonos2.cpp) · mac only                ~8.8GB   56.5
-mlx-bf16 (mlx-audio) · mac only           ~15.64GB   56.5
-bf16 (Zyphra ZONOS2 PyTorch server) · n…  ~15.67GB   56.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (Q4_K (ZONOS2.CPP), needs ~5.17 GB, from [github.com/Zyphra](https://github.com/Zyphra/zonos2.cpp/blob/adce4ffb97e9c9c9e85de798175cb9d8711f3a1c/README.md))
+   
+   ```sh
+   git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q4_k.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q4_k.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --seed 1
+   ```
 
-### Run it on your own machine
+Other versions: Q8_0 (ZONOS2.CPP) (~8.8 GB) `git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q8_0.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q8_0.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --seed 1` · Q4_K (ZONOS2.CPP) (~5.17 GB, Mac only) `git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q4_k.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q4_k.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --gpu --seed 1` · Q8_0 (ZONOS2.CPP) (~8.8 GB, Mac only) `git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q8_0.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q8_0.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --gpu --seed 1` · BF16 (MLX-AUDIO) (~15.64 GB, Mac only) `pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/Zyphra-ZONOS2 --text "Hello, this is ZONOS two running with MLX audio." --output_path outputs --file_prefix zonos2` · BF16 (ZYPHRA ZONOS2 PYTORCH SERVER) (~15.67 GB, NVIDIA only) `git clone https://github.com/Zyphra/Zonos2.git && cd Zonos2 && uv sync && uv run python -m zonos2 --model-path Zyphra/ZONOS2 --tts-default-voices-dir ./default_voices/`
 
-**Other engines**
-
-```sh
-# q4_k (zonos2.cpp) · ~5.17GB
-git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q4_k.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q4_k.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --seed 1
-# q8_0 (zonos2.cpp) · ~8.8GB
-git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q8_0.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q8_0.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --seed 1
-# q4_k (zonos2.cpp) · mac only · ~5.17GB
-git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q4_k.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q4_k.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --gpu --seed 1
-# q8_0 (zonos2.cpp) · mac only · ~8.8GB
-git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q8_0.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q8_0.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --gpu --seed 1
-# mlx-bf16 (mlx-audio) · mac only · ~15.64GB
-pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/Zyphra-ZONOS2 --text "Hello, this is ZONOS two running with MLX audio." --output_path outputs --file_prefix zonos2
-# bf16 (Zyphra ZONOS2 PyTorch server) · nvidia only · ~15.67GB
-git clone https://github.com/Zyphra/Zonos2.git && cd Zonos2 && uv sync && uv run python -m zonos2 --model-path Zyphra/ZONOS2 --tts-default-voices-dir ./default_voices/
-```
+Official weights and documentation: [huggingface.co/Zyphra](https://huggingface.co/Zyphra/ZONOS2)
 
 [interactive version](https://whatmodel.sh/model/zonos2-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

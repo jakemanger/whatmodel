@@ -56,65 +56,83 @@ weighted average                                   = 28.7
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/Nexusflow/NexusRaven-V2-13B/blob/a6b84dc52f4c8f2cd61637f840066f376c629271/config.json): config.json max\_position\_embeddings 16384. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_0                  ~7.4GB   28.7
-4-bit Q4_K_M                ~7.9GB   28.7
-8-bit Q8_0                 ~13.8GB   28.7
-4-bit mlx-6bit · mac only  ~10.6GB   28.7
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run NexusRaven V2 13B (Q4_K_M, needs ~7.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/NexusRaven-V2-13B-GGUF/tree/a2fd992cf9ade1dc9d04205278ace8b77dae8730))
+   
+   ```sh
+   llama cli -hf TheBloke/NexusRaven-V2-13B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf TheBloke/NexusRaven-V2-13B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~13.8 GB) `llama cli -hf TheBloke/NexusRaven-V2-13B-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~7.9GB
-llama cli -hf TheBloke/NexusRaven-V2-13B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/NexusRaven-V2-13B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~13.8GB
-llama cli -hf TheBloke/NexusRaven-V2-13B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/NexusRaven-V2-13B-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~7.9GB
-lms get https://huggingface.co/TheBloke/NexusRaven-V2-13B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~13.8GB
-lms get https://huggingface.co/TheBloke/NexusRaven-V2-13B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-6bit · mac only · ~10.6GB
-lms get https://huggingface.co/k8smee/NexusRaven-V2-13B-mlx-6Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run NexusRaven V2 13B (Q4_K_M, needs ~7.9 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/NexusRaven-V2-13B-GGUF/tree/a2fd992cf9ade1dc9d04205278ace8b77dae8730))
+   
+   ```sh
+   lms get https://huggingface.co/TheBloke/NexusRaven-V2-13B-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_0 · ~7.4GB
-ollama run nexusraven:13b
-# 4-bit Q4_K_M · ~7.9GB
-ollama run hf.co/TheBloke/NexusRaven-V2-13B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~13.8GB
-ollama run hf.co/TheBloke/NexusRaven-V2-13B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/TheBloke/NexusRaven-V2-13B-GGUF@Q8_0 -y` · 6bit (~10.6 GB, Mac only) `lms get https://huggingface.co/k8smee/NexusRaven-V2-13B-mlx-6Bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-6bit · mac only · ~10.6GB
-mlx_lm.chat --model k8smee/NexusRaven-V2-13B-mlx-6Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model k8smee/NexusRaven-V2-13B-mlx-6Bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run NexusRaven V2 13B (Q4_0, needs ~7.4 GB, from [ollama.com](https://ollama.com/library/nexusraven/tags))
+   
+   ```sh
+   ollama run nexusraven:13b
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run NexusRaven V2 13B (6bit, needs ~10.6 GB, Mac only, from [huggingface.co/k8smee](https://huggingface.co/k8smee/NexusRaven-V2-13B-mlx-6Bit/tree/e7735b8cc33742ca2dbe5e0ef75cc96f73056666))
+   
+   ```sh
+   mlx_lm.chat --model k8smee/NexusRaven-V2-13B-mlx-6Bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model k8smee/NexusRaven-V2-13B-mlx-6Bit
+   ```
+
+Official weights and documentation: [huggingface.co/Nexusflow](https://huggingface.co/Nexusflow/NexusRaven-V2-13B)
 
 [interactive version](https://whatmodel.sh/model/nexusraven-v2-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

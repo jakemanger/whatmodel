@@ -42,6 +42,8 @@ weighted average                        = 48.5
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/fixie-ai](https://huggingface.co/fixie-ai/ultravox-v0_6-llama-3_1-8b)
 
 [interactive version](https://whatmodel.sh/model/ultravox-v0-6-llama-3-1-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

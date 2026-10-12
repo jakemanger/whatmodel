@@ -42,10 +42,10 @@ weighted average                                   = 59.7
 
 ## How to run it
 
+### Through an API
+
 api (MiniMax) · $60.00/M chars · [platform.minimax.io](https://platform.minimax.io/docs/guides/pricing-paygo.md)
 
 <sub>[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md): USD per 1M input characters: MiniMax's pay-as-you-go page lists T2A speech-2.6-turbo / speech-02-turbo at $60/M characters under Legacy Models. Product: MiniMax pay-as-you-go text-to-audio (T2A). API model: speech-02-turbo. Settings: pay-as-you-go. Price basis: published list rate. Exclusions: voice design/cloning fees. Currency: USD. MiniMax official pay-as-you-go pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/minimax-speech-02-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

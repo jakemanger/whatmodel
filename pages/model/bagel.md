@@ -118,27 +118,22 @@ ByteDance Seed  <a href="https://arxiv.org/html/2505.14683v3">WISE overall (mode
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.10/image · [fal.ai](https://fal.ai/models/fal-ai/bagel)
 
 <sub>[price source](https://fal.ai/models/fal-ai/bagel): USD per generated image: fal bills fal-ai/bagel at $0.10 per image (billing unit images); the fal-ai/bagel/edit endpoint is also $0.10 per image. Product: fal.ai serverless text-to-image. API model: fal-ai/bagel (ByteDance-Seed BAGEL, described by fal as a 7B-parameter multimodal model). Settings: text-to-image, one image. Price basis: published per-image list rate. Not a ByteDance direct tariff. Currency: USD. fal.ai official model page, observed 2026-09-26.</sub>
 
-<pre>
-version                                   needs  score
-bf16 (app.py mode 1) · nvidia only        ~32GB   42.0
-nf4 (app.py --mode 2, bitsandbytes) · n…  ~12GB   42.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (APP.PY MODE 1), needs ~32 GB, NVIDIA only, from [github.com/ByteDance-Seed](https://github.com/ByteDance-Seed/Bagel/blob/a2fa77dd8caeefc41e6607ae0ec17408d3f4ee9f/README.md))
+   
+   ```sh
+   git clone https://github.com/bytedance-seed/BAGEL.git && cd BAGEL && conda create -n bagel python=3.10 -y && conda activate bagel && pip install -r requirements.txt && pip install flash_attn==2.5.8 --no-build-isolation && python -c "from huggingface_hub import snapshot_download; snapshot_download(cache_dir='models/BAGEL-7B-MoT/cache', local_dir='models/BAGEL-7B-MoT', repo_id='ByteDance-Seed/BAGEL-7B-MoT', local_dir_use_symlinks=False, resume_download=True, allow_patterns=['*.json', '*.safetensors', '*.bin', '*.py', '*.md', '*.txt'])" && python app.py
+   ```
 
-### Run it on your own machine
+Other versions: nf4 (app.py --mode 2, bitsandbytes) (~12 GB, NVIDIA only) `git clone https://github.com/bytedance-seed/BAGEL.git && cd BAGEL && conda create -n bagel python=3.10 -y && conda activate bagel && pip install -r requirements.txt && pip install flash_attn==2.5.8 --no-build-isolation && python -c "from huggingface_hub import snapshot_download; snapshot_download(cache_dir='models/BAGEL-7B-MoT/cache', local_dir='models/BAGEL-7B-MoT', repo_id='ByteDance-Seed/BAGEL-7B-MoT', local_dir_use_symlinks=False, resume_download=True, allow_patterns=['*.json', '*.safetensors', '*.bin', '*.py', '*.md', '*.txt'])" && python app.py --mode 2`
 
-**Other engines**
-
-```sh
-# bf16 (app.py mode 1) · nvidia only · ~32GB
-git clone https://github.com/bytedance-seed/BAGEL.git && cd BAGEL && conda create -n bagel python=3.10 -y && conda activate bagel && pip install -r requirements.txt && pip install flash_attn==2.5.8 --no-build-isolation && python -c "from huggingface_hub import snapshot_download; snapshot_download(cache_dir='models/BAGEL-7B-MoT/cache', local_dir='models/BAGEL-7B-MoT', repo_id='ByteDance-Seed/BAGEL-7B-MoT', local_dir_use_symlinks=False, resume_download=True, allow_patterns=['*.json', '*.safetensors', '*.bin', '*.py', '*.md', '*.txt'])" && python app.py
-# nf4 (app.py --mode 2, bitsandbytes) · nvidia only · ~12GB
-git clone https://github.com/bytedance-seed/BAGEL.git && cd BAGEL && conda create -n bagel python=3.10 -y && conda activate bagel && pip install -r requirements.txt && pip install flash_attn==2.5.8 --no-build-isolation && python -c "from huggingface_hub import snapshot_download; snapshot_download(cache_dir='models/BAGEL-7B-MoT/cache', local_dir='models/BAGEL-7B-MoT', repo_id='ByteDance-Seed/BAGEL-7B-MoT', local_dir_use_symlinks=False, resume_download=True, allow_patterns=['*.json', '*.safetensors', '*.bin', '*.py', '*.md', '*.txt'])" && python app.py --mode 2
-```
+Official weights and documentation: [huggingface.co/ByteDance-Seed](https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT)
 
 [interactive version](https://whatmodel.sh/model/bagel) · [JSON](https://whatmodel.sh/api?format=json&all=1)

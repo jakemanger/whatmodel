@@ -127,45 +127,63 @@ weighted average                                   = 54.3
 
 ## How to run it
 
+### Through an API
+
 api (DeepInfra) · $0.15/M blended · $0.1 in / $0.3 out per 1M tokens · [deepinfra.com](https://deepinfra.com/meta-llama/Llama-4-Scout-17B-16E-Instruct)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output.  Product: Serverless text generation. API model: meta-llama/Llama-4-Scout-17B-16E-Instruct. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-<pre>
-download             size  score
-4-bit q4_k_m      ~65.9GB   54.3
-2-bit ud-q2_k_xl  ~33.2GB   54.3
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Llama 4 Scout (109B-A17B) (ud-q2_k_xl, needs ~33.2 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF:UD-Q2_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF:UD-Q2_K_XL
+   ```
 
-```sh
-# 2-bit ud-q2_k_xl · ~33.2GB
-llama cli -hf unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF:UD-Q2_K_XL
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 2-bit ud-q2_k_xl · ~33.2GB
-lms get https://huggingface.co/unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Llama 4 Scout (109B-A17B) (ud-q2_k_xl, needs ~33.2 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF/tree/main))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF@UD-Q2_K_XL -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~65.9GB
-ollama run llama4:scout
-# 2-bit ud-q2_k_xl · ~33.2GB
-ollama run hf.co/unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF:UD-Q2_K_XL
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Llama 4 Scout (109B-A17B) (Q4_K_M, needs ~65.9 GB, from [ollama.com](https://ollama.com/library/llama4/tags))
+   
+   ```sh
+   ollama run llama4:scout
+   ```
+
+Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct)
 
 ## Published speed measurements
 

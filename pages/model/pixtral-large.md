@@ -59,38 +59,49 @@ weighted average                                   = 54.3
 
 ## How to run it
 
-<pre>
-download                        size  score
-16-bit bf16 · nvidia only  ~248.27GB   54.3
-2-bit Q2_K                   ~46.7GB   54.3
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Pixtral Large (2411) (Q2_K, needs ~46.7 GB, from [huggingface.co/EnlistedGhost](https://huggingface.co/EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF/tree/eb0bab060427583f90d6edca2536d1be6e3d088d))
+   
+   ```sh
+   llama cli -hf EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF:Q2_K
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF:Q2_K
+   ```
 
-```sh
-# 2-bit Q2_K · ~46.7GB
-llama cli -hf EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF:Q2_K
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 2-bit Q2_K · ~46.7GB
-lms get https://huggingface.co/EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Pixtral Large (2411) (Q2_K, needs ~46.7 GB, from [huggingface.co/EnlistedGhost](https://huggingface.co/EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF/tree/eb0bab060427583f90d6edca2536d1be6e3d088d))
+   
+   ```sh
+   lms get https://huggingface.co/EnlistedGhost/Pixtral-Large-Instruct-2411-GGUF@Q2_K -y
+   ```
 
-**Other engines**
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 16-bit bf16 · nvidia only · ~248.27GB
-pip install --upgrade vllm mistral_common && vllm serve mistralai/Pixtral-Large-Instruct-2411 --config-format mistral --load-format mistral --tokenizer_mode mistral --limit_mm_per_prompt 'image=10' --tensor-parallel-size 8
-```
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~248.27 GB, NVIDIA only, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md))
+   
+   ```sh
+   pip install --upgrade vllm mistral_common && vllm serve mistralai/Pixtral-Large-Instruct-2411 --config-format mistral --load-format mistral --tokenizer_mode mistral --limit_mm_per_prompt 'image=10' --tensor-parallel-size 8
+   ```
+
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411)
 
 [interactive version](https://whatmodel.sh/model/pixtral-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

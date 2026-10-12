@@ -43,45 +43,64 @@ weighted average                        = 56.2
 
 ## How to run it
 
-<pre>
-download                        size  score
-16-bit bf16 · nvidia only  ~205.78GB   56.2
-2-bit Q2_K                   ~37.7GB   56.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Ring-flash-2.0 (Q2_K, needs ~37.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ring-flash-2.0-GGUF/tree/3d64997986b78b0d4b47c58e355678201abacd8d))
+   
+   ```sh
+   llama cli -hf mradermacher/Ring-flash-2.0-GGUF:Q2_K
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/Ring-flash-2.0-GGUF:Q2_K
+   ```
 
-```sh
-# 2-bit Q2_K · ~37.7GB
-llama cli -hf mradermacher/Ring-flash-2.0-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Ring-flash-2.0-GGUF:Q2_K
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 2-bit Q2_K · ~37.7GB
-lms get https://huggingface.co/mradermacher/Ring-flash-2.0-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Ring-flash-2.0 (Q2_K, needs ~37.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ring-flash-2.0-GGUF/tree/3d64997986b78b0d4b47c58e355678201abacd8d))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/Ring-flash-2.0-GGUF@Q2_K -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 2-bit Q2_K · ~37.7GB
-ollama run hf.co/mradermacher/Ring-flash-2.0-GGUF:Q2_K
-```
+### Ollama
 
-**Other engines**
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 16-bit bf16 · nvidia only · ~205.78GB
-vllm serve inclusionAI/Ring-flash-2.0
-```
+2. Run Ring-flash-2.0 (Q2_K, needs ~37.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Ring-flash-2.0-GGUF/tree/3d64997986b78b0d4b47c58e355678201abacd8d))
+   
+   ```sh
+   ollama run hf.co/mradermacher/Ring-flash-2.0-GGUF:Q2_K
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~205.78 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+   
+   ```sh
+   vllm serve inclusionAI/Ring-flash-2.0
+   ```
+
+Official weights and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/Ring-flash-2.0)
 
 [interactive version](https://whatmodel.sh/model/ring-flash-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

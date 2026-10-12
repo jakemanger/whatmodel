@@ -97,72 +97,85 @@ weighted average                                  = 66.5
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/config.json): DeepSeek official configuration for DeepSeek-V3.1-Terminus (pinned commit): max\_position\_embeddings 163840 (yarn rope scaling, factor 40 over original 4096). Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~403.1GB   66.5
-8-bit q8_0                 ~805.7GB   66.5
-4-bit Q4_K_M               ~405.4GB   66.5
-8-bit Q8_0                 ~713.3GB   66.5
-2-bit UD-IQ2_XXS           ~217.1GB   66.5
-4-bit mlx-4bit · mac only  ~377.6GB   66.5
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run DeepSeek V3.1 Terminus (Q4_K_M, needs ~405.4 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF/tree/fe48342e95b8b3ca863189919605651fc2e88f4e))
+   
+   ```sh
+   llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~713.3 GB) `llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q8_0` · UD-IQ2_XXS (~217.1 GB) `llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:UD-IQ2_XXS`
 
-```sh
-# 4-bit Q4_K_M · ~405.4GB
-llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~713.3GB
-llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:Q8_0
-# 2-bit UD-IQ2_XXS · ~217.1GB
-llama cli -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:UD-IQ2_XXS
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/DeepSeek-V3.1-Terminus-GGUF:UD-IQ2_XXS
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~405.4GB
-lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~713.3GB
-lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit UD-IQ2_XXS · ~217.1GB
-lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@UD-IQ2_XXS -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~377.6GB
-lms get https://huggingface.co/mlx-community/DeepSeek-V3.1-Terminus-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run DeepSeek V3.1 Terminus (Q4_K_M, needs ~405.4 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF/tree/fe48342e95b8b3ca863189919605651fc2e88f4e))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~403.1GB
-ollama run deepseek-v3.1:671b-terminus-q4_K_M
-# 8-bit q8_0 · ~805.7GB
-ollama run deepseek-v3.1:671b-terminus-q8_0
-```
+Other versions: Q8_0 (~713.3 GB) `lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@Q8_0 -y` · UD-IQ2_XXS (~217.1 GB) `lms get https://huggingface.co/unsloth/DeepSeek-V3.1-Terminus-GGUF@UD-IQ2_XXS -y` · 4bit (~377.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-V3.1-Terminus-4bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~377.6GB
-mlx_lm.chat --model mlx-community/DeepSeek-V3.1-Terminus-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/DeepSeek-V3.1-Terminus-4bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run DeepSeek V3.1 Terminus (Q4_K_M, needs ~403.1 GB, from [ollama.com](https://ollama.com/library/deepseek-v3.1/tags))
+   
+   ```sh
+   ollama run deepseek-v3.1:671b-terminus-q4_K_M
+   ```
+
+Other versions: Q8_0 (~805.7 GB) `ollama run deepseek-v3.1:671b-terminus-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run DeepSeek V3.1 Terminus (4bit, needs ~377.6 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-V3.1-Terminus-4bit/tree/90d058816d4a3592924c3650447e2f995f698204))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/DeepSeek-V3.1-Terminus-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/DeepSeek-V3.1-Terminus-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v3-1-terminus) · [JSON](https://whatmodel.sh/api?format=json&all=1)

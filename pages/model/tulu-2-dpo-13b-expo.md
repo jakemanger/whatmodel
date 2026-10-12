@@ -43,55 +43,70 @@ weighted average                              = 40.3
 
 ## How to run it
 
-<pre>
-download          size  score
-16-bit bf16   ~26.03GB   40.3
-4-bit Q4_K_M    ~7.9GB   40.3
-8-bit Q8_0     ~13.8GB   40.3
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run tulu-2-dpo-13b-ExPO (Q4_K_M, needs ~7.9 GB, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF/tree/e3a58c5c491e90237082af56c7d2da1ae3287bff))
+   
+   ```sh
+   llama cli -hf featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~7.9GB
-llama cli -hf featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~13.8GB
-llama cli -hf featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF:Q8_0
-```
+Other versions: Q8_0 (~13.8 GB) `llama cli -hf featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~7.9GB
-lms get https://huggingface.co/featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~13.8GB
-lms get https://huggingface.co/featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run tulu-2-dpo-13b-ExPO (Q4_K_M, needs ~7.9 GB, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF/tree/e3a58c5c491e90237082af56c7d2da1ae3287bff))
+   
+   ```sh
+   lms get https://huggingface.co/featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~7.9GB
-ollama run hf.co/featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~13.8GB
-ollama run hf.co/featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q8_0 (~13.8 GB) `lms get https://huggingface.co/featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF@Q8_0 -y`
 
-```sh
-# 16-bit bf16 · ~26.03GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/tulu-2-dpo-13b-ExPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run tulu-2-dpo-13b-ExPO (Q4_K_M, needs ~7.9 GB, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF/tree/e3a58c5c491e90237082af56c7d2da1ae3287bff))
+   
+   ```sh
+   ollama run hf.co/featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~13.8 GB) `ollama run hf.co/featherless-ai-quants/chujiezheng-tulu-2-dpo-13b-ExPO-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~26.03 GB, from [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/tulu-2-dpo-13b-ExPO/tree/5980971045cdaf4cd423a83cdb9d609573f0c4bf))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/tulu-2-dpo-13b-ExPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/tulu-2-dpo-13b-ExPO)
 
 [interactive version](https://whatmodel.sh/model/tulu-2-dpo-13b-expo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

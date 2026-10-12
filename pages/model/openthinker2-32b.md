@@ -68,78 +68,95 @@ weighted average                                   = 54.4
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/config.json): Open Thoughts configuration for OpenThinker2-32B (pinned commit): max\_position\_embeddings 32768. Configured maximum, not a benchmarked long-context claim: the card states no context length. Observed 2026-10-09.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-16-bit bf16 · nvidia only  ~65.53GB   54.4
-4-bit Q4_K_M                ~19.9GB   54.4
-8-bit Q8_0                  ~34.8GB   54.4
-4-bit mlx-4bit · mac only   ~18.4GB   54.4
-4-bit mlx-8bit · mac only   ~34.8GB   54.4
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run OpenThinker2 32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/OpenThinker2-32B-GGUF/tree/4e404631501e91ff8e25818db98bfcea9f1b42b8))
+   
+   ```sh
+   llama cli -hf lmstudio-community/OpenThinker2-32B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/OpenThinker2-32B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~34.8 GB) `llama cli -hf lmstudio-community/OpenThinker2-32B-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~19.9GB
-llama cli -hf lmstudio-community/OpenThinker2-32B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/OpenThinker2-32B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.8GB
-llama cli -hf lmstudio-community/OpenThinker2-32B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/OpenThinker2-32B-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~19.9GB
-lms get https://huggingface.co/lmstudio-community/OpenThinker2-32B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~34.8GB
-lms get https://huggingface.co/lmstudio-community/OpenThinker2-32B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~18.4GB
-lms get https://huggingface.co/alexgusevski/OpenThinker2-32B-mlx-4Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~34.8GB
-lms get https://huggingface.co/alexgusevski/OpenThinker2-32B-mlx-8Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run OpenThinker2 32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/OpenThinker2-32B-GGUF/tree/4e404631501e91ff8e25818db98bfcea9f1b42b8))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/OpenThinker2-32B-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~19.9GB
-ollama run hf.co/lmstudio-community/OpenThinker2-32B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.8GB
-ollama run hf.co/lmstudio-community/OpenThinker2-32B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/lmstudio-community/OpenThinker2-32B-GGUF@Q8_0 -y` · 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/alexgusevski/OpenThinker2-32B-mlx-4Bit -y` · 8bit (~34.8 GB, Mac only) `lms get https://huggingface.co/alexgusevski/OpenThinker2-32B-mlx-8Bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~18.4GB
-mlx_lm.chat --model alexgusevski/OpenThinker2-32B-mlx-4Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model alexgusevski/OpenThinker2-32B-mlx-4Bit
-# 4-bit mlx-8bit · mac only · ~34.8GB
-mlx_lm.chat --model alexgusevski/OpenThinker2-32B-mlx-8Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model alexgusevski/OpenThinker2-32B-mlx-8Bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-**Other engines**
+2. Run OpenThinker2 32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/OpenThinker2-32B-GGUF/tree/4e404631501e91ff8e25818db98bfcea9f1b42b8))
+   
+   ```sh
+   ollama run hf.co/lmstudio-community/OpenThinker2-32B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 16-bit bf16 · nvidia only · ~65.53GB
-vllm serve open-thoughts/OpenThinker2-32B
-```
+Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/lmstudio-community/OpenThinker2-32B-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run OpenThinker2 32B (4bit, needs ~18.4 GB, Mac only, from [huggingface.co/alexgusevski](https://huggingface.co/alexgusevski/OpenThinker2-32B-mlx-4Bit/tree/98ccf4eb104298284163ff2e7d652039e3f41570))
+   
+   ```sh
+   mlx_lm.chat --model alexgusevski/OpenThinker2-32B-mlx-4Bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model alexgusevski/OpenThinker2-32B-mlx-4Bit
+   ```
+
+Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model alexgusevski/OpenThinker2-32B-mlx-8Bit`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~65.53 GB, NVIDIA only, from [huggingface.co/open-thoughts](https://huggingface.co/open-thoughts/OpenThinker2-32B/tree/0aefafe3ee27e073e14fb94a0563795fddf38c50))
+   
+   ```sh
+   vllm serve open-thoughts/OpenThinker2-32B
+   ```
+
+Official weights and documentation: [huggingface.co/open-thoughts](https://huggingface.co/open-thoughts/OpenThinker2-32B)
 
 [interactive version](https://whatmodel.sh/model/openthinker2-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

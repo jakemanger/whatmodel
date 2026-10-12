@@ -14,13 +14,14 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
-### Run it on your own machine
+### Other ways to run it
 
-**Other engines**
+1. Run it as published (ternary-packed LM (kittenml 0.9.3), needs ~2.07 GB, from [github.com/KittenML](https://github.com/KittenML/KittenTTS/blob/ab5592c28b6f376ea4c3963e84ce6d6688241eca/README.md))
+   
+   ```sh
+   pip install kittenml && python -c "from kittenml import KittenTTS; import soundfile as sf; m = KittenTTS('KittenML/kitten-tts-2'); audio = m.generate('One day, a little girl named Lily found a needle in her room.', voice='Bruno'); sf.write('output.wav', audio, m.sample_rate)"
+   ```
 
-```sh
-# ternary-packed LM (kittenml 0.9.3) · ~2.07GB
-pip install kittenml && python -c "from kittenml import KittenTTS; import soundfile as sf; m = KittenTTS('KittenML/kitten-tts-2'); audio = m.generate('One day, a little girl named Lily found a needle in her room.', voice='Bruno'); sf.write('output.wav', audio, m.sample_rate)"
-```
+Official weights and documentation: [huggingface.co/KittenML](https://huggingface.co/KittenML/kitten-tts-2)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/kitten-tts-2)

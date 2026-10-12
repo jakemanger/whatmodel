@@ -45,26 +45,33 @@ weighted average                                   = 47.4
 
 ## How to run it
 
+### Through an API
+
 api (Together AI) · $15.00/M chars · [docs.together.ai](https://docs.together.ai/docs/serverless/models)
 
 <sub>[price source](https://docs.together.ai/docs/serverless/models.md): USD per 1M input characters: Together's serverless model list gives Canopy Labs Orpheus 3B, API model canopylabs/orpheus-3b-0.1-ft, at $15.00 per 1M chars. Identity: the Hugging Face repo canopylabs/orpheus-tts-0.1-finetune-prod redirects to canopylabs/orpheus-3b-0.1-ft (same repo id), so this is the same checkpoint. Product: Together serverless text-to-speech. API model: canopylabs/orpheus-3b-0.1-ft. Settings: standard. Price basis: published list rate. Exclusions: DeepInfra lists the same checkpoint at $7.00/1M characters (smaller host, not used). Currency: USD. Together official docs, observed 2026-09-25.</sub>
 
-<pre>
-version                                      needs  score
-bf16 (orpheus-speech package) · nvidia …  ~15.21GB   47.4
-gguf Q4_K_M (orpheus-cpp 0.0.3)            ~2.42GB   47.4
-gguf Q4_K_M (orpheus-cpp 0.0.3) · mac o…   ~2.42GB   47.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf Q4_K_M (orpheus-cpp 0.0.3), needs ~2.42 GB, from [github.com/canopyai](https://github.com/canopyai/Orpheus-TTS/blob/e64661fe6d02c414fc77c53578c9d64082614861/additional_inference_options/no_gpu/README.md))
+   
+   ```sh
+   pip install orpheus-cpp scipy && pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu && python -c 'from scipy.io.wavfile import write
+   from orpheus_cpp import OrpheusCpp
+   import numpy as np
+   
+   orpheus = OrpheusCpp(verbose=False, lang="en")
+   
+   text = "Hello, world."
+   buffer = []
+   for i, (sr, chunk) in enumerate(orpheus.stream_tts_sync(text, options={"voice_id": "tara"})):
+      buffer.append(chunk)
+      print(f"Generated chunk {i}")
+   buffer = np.concatenate(buffer, axis=1)
+   write("output.wav", 24_000, np.concatenate(buffer))'
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (orpheus-speech package) · nvidia only · ~15.21GB
-git clone https://github.com/canopyai/Orpheus-TTS.git && cd Orpheus-TTS && pip install orpheus-speech && pip install vllm==0.7.3 && python -c '
+Other versions: BF16 (ORPHEUS-SPEECH PACKAGE) (~15.21 GB, NVIDIA only) `git clone https://github.com/canopyai/Orpheus-TTS.git && cd Orpheus-TTS && pip install orpheus-speech && pip install vllm==0.7.3 && python -c '
 from orpheus_tts import OrpheusModel
 import wave
 import time
@@ -83,9 +90,7 @@ with wave.open("output.wav", "wb") as wf:
    wf.setframerate(24000)
    for audio_chunk in syn_tokens: # output streaming
       wf.writeframes(audio_chunk)
-'
-# gguf Q4_K_M (orpheus-cpp 0.0.3) · ~2.42GB
-pip install orpheus-cpp scipy && pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu && python -c 'from scipy.io.wavfile import write
+'` · gguf Q4_K_M (orpheus-cpp 0.0.3) (~2.42 GB, Mac only) `pip install orpheus-cpp scipy && pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/metal && python -c 'from scipy.io.wavfile import write
 from orpheus_cpp import OrpheusCpp
 import numpy as np
 
@@ -97,21 +102,8 @@ for i, (sr, chunk) in enumerate(orpheus.stream_tts_sync(text, options={"voice_id
    buffer.append(chunk)
    print(f"Generated chunk {i}")
 buffer = np.concatenate(buffer, axis=1)
-write("output.wav", 24_000, np.concatenate(buffer))'
-# gguf Q4_K_M (orpheus-cpp 0.0.3) · mac only · ~2.42GB
-pip install orpheus-cpp scipy && pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/metal && python -c 'from scipy.io.wavfile import write
-from orpheus_cpp import OrpheusCpp
-import numpy as np
+write("output.wav", 24_000, np.concatenate(buffer))'`
 
-orpheus = OrpheusCpp(verbose=False, lang="en")
-
-text = "Hello, world."
-buffer = []
-for i, (sr, chunk) in enumerate(orpheus.stream_tts_sync(text, options={"voice_id": "tara"})):
-   buffer.append(chunk)
-   print(f"Generated chunk {i}")
-buffer = np.concatenate(buffer, axis=1)
-write("output.wav", 24_000, np.concatenate(buffer))'
-```
+Official weights and documentation: [huggingface.co/canopylabs](https://huggingface.co/canopylabs/orpheus-3b-0.1-ft)
 
 [interactive version](https://whatmodel.sh/model/orpheus-tts-0-1-finetune-prod) · [JSON](https://whatmodel.sh/api?format=json&all=1)

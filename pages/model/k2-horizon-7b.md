@@ -25,41 +25,62 @@ BrowseComp with context management   59.0%  lab          <a href="https://huggin
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md): Institute of Foundation Models official model card: native 524,288-token context ("512K"). Observed 2026-09-25.</sub>
+### llama.cpp (recommended)
 
-### Run it on your own machine
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+2. Run K2 Horizon 7B (gguf-q4_k_m, needs ~5.9 GB, from [huggingface.co/IFM](https://huggingface.co/IFM/K2-Horizon-7B-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf IFM/K2-Horizon-7B-GGUF:Q4_K_M
+   ```
 
-```sh
-# gguf-q4_k_m · ~5.9GB
-llama cli -hf IFM/K2-Horizon-7B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf IFM/K2-Horizon-7B-GGUF:Q4_K_M
-# gguf-q8_0 · ~11.3GB
-llama cli -hf IFM/K2-Horizon-7B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf IFM/K2-Horizon-7B-GGUF:Q8_0
-```
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf IFM/K2-Horizon-7B-GGUF:Q4_K_M
+   ```
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+Other versions: gguf-q8_0 (~11.3 GB) `llama cli -hf IFM/K2-Horizon-7B-GGUF:Q8_0`
 
-```sh
-# gguf-q4_k_m · ~5.9GB
-lms get https://huggingface.co/IFM/K2-Horizon-7B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# gguf-q8_0 · ~11.3GB
-lms get https://huggingface.co/IFM/K2-Horizon-7B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+### LM Studio
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# gguf-q4_k_m · ~5.9GB
-ollama run hf.co/IFM/K2-Horizon-7B-GGUF:Q4_K_M
-# gguf-q8_0 · ~11.3GB
-ollama run hf.co/IFM/K2-Horizon-7B-GGUF:Q8_0
-```
+2. Run K2 Horizon 7B (gguf-q4_k_m, needs ~5.9 GB, from [huggingface.co/IFM](https://huggingface.co/IFM/K2-Horizon-7B-GGUF/tree/main))
+   
+   ```sh
+   lms get https://huggingface.co/IFM/K2-Horizon-7B-GGUF@Q4_K_M -y
+   ```
+
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: gguf-q8_0 (~11.3 GB) `lms get https://huggingface.co/IFM/K2-Horizon-7B-GGUF@Q8_0 -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run K2 Horizon 7B (gguf-q4_k_m, needs ~5.9 GB, from [huggingface.co/IFM](https://huggingface.co/IFM/K2-Horizon-7B-GGUF/tree/main))
+   
+   ```sh
+   ollama run hf.co/IFM/K2-Horizon-7B-GGUF:Q4_K_M
+   ```
+
+Other versions: gguf-q8_0 (~11.3 GB) `ollama run hf.co/IFM/K2-Horizon-7B-GGUF:Q8_0`
+
+Official weights and documentation: [huggingface.co/IFM](https://huggingface.co/IFM/K2-Horizon-7B)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/k2-horizon-7b)

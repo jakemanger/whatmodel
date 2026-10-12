@@ -52,45 +52,64 @@ weighted average                          = 28.9
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit fp16  ~13.48GB   28.9
-8-bit q8_0    ~7.2GB   28.9
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run OpenLLaMA 7B v2 (Q8_0, needs ~7.2 GB, from [huggingface.co/exocet25](https://huggingface.co/exocet25/open_llama_7b_v2-Q8_0-GGUF/tree/b5def4aaf21a24f437346bdb9ba42d738f226bd7))
+   
+   ```sh
+   llama cli -hf exocet25/open_llama_7b_v2-Q8_0-GGUF:q8_0
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf exocet25/open_llama_7b_v2-Q8_0-GGUF:q8_0
+   ```
 
-```sh
-# 8-bit q8_0 · ~7.2GB
-llama cli -hf exocet25/open_llama_7b_v2-Q8_0-GGUF:q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf exocet25/open_llama_7b_v2-Q8_0-GGUF:q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 8-bit q8_0 · ~7.2GB
-lms get https://huggingface.co/exocet25/open_llama_7b_v2-Q8_0-GGUF@q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run OpenLLaMA 7B v2 (Q8_0, needs ~7.2 GB, from [huggingface.co/exocet25](https://huggingface.co/exocet25/open_llama_7b_v2-Q8_0-GGUF/tree/b5def4aaf21a24f437346bdb9ba42d738f226bd7))
+   
+   ```sh
+   lms get https://huggingface.co/exocet25/open_llama_7b_v2-Q8_0-GGUF@q8_0 -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 8-bit q8_0 · ~7.2GB
-ollama run hf.co/exocet25/open_llama_7b_v2-Q8_0-GGUF:q8_0
-```
+### Ollama
 
-**Other engines**
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit fp16 · ~13.48GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='openlm-research/open_llama_7b_v2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+2. Run OpenLLaMA 7B v2 (Q8_0, needs ~7.2 GB, from [huggingface.co/exocet25](https://huggingface.co/exocet25/open_llama_7b_v2-Q8_0-GGUF/tree/b5def4aaf21a24f437346bdb9ba42d738f226bd7))
+   
+   ```sh
+   ollama run hf.co/exocet25/open_llama_7b_v2-Q8_0-GGUF:q8_0
+   ```
+
+### Other ways to run it
+
+1. Run it as published (fp16, needs ~13.48 GB, from [huggingface.co/openlm-research](https://huggingface.co/openlm-research/open_llama_7b_v2/tree/e5961def23172a2384543940e773ab676033c963))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='openlm-research/open_llama_7b_v2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/openlm-research](https://huggingface.co/openlm-research/open_llama_7b_v2)
 
 [interactive version](https://whatmodel.sh/model/open-llama-7b-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

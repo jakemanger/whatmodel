@@ -83,66 +83,85 @@ weighted average                                   = 64.8
 
 ## How to run it
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~71.36GB   64.8
-2-bit q2_k                 ~44.71GB   64.8
-4-bit mlx-4bit · mac only   ~60.1GB   64.8
-4-bit mlx-8bit · mac only  ~113.6GB   64.8
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run INTELLECT-3 (Q4_K_M, needs ~71.36 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF/tree/1827cd1b39b3f3ced9319c94079d71bad75ee8c3))
+   
+   ```sh
+   llama cli -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit q4_k_m · ~71.36GB
-llama cli -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q4_K_M
-# 2-bit q2_k · ~44.71GB
-llama cli -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q2_K
-```
+Other versions: Q2_K (~44.71 GB) `llama cli -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q2_K`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~71.36GB
-lms get https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit q2_k · ~44.71GB
-lms get https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~60.1GB
-lms get https://huggingface.co/mlx-community/INTELLECT-3-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~113.6GB
-lms get https://huggingface.co/mlx-community/INTELLECT-3-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run INTELLECT-3 (Q4_K_M, needs ~71.36 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF/tree/1827cd1b39b3f3ced9319c94079d71bad75ee8c3))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 2-bit q2_k · ~44.71GB
-ollama run hf.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q2_K
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q2_K (~44.71 GB) `lms get https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF@Q2_K -y` · 4bit (~60.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/INTELLECT-3-4bit -y` · 8bit (~113.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/INTELLECT-3-8bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~60.1GB
-mlx_lm.chat --model mlx-community/INTELLECT-3-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/INTELLECT-3-4bit
-# 4-bit mlx-8bit · mac only · ~113.6GB
-mlx_lm.chat --model mlx-community/INTELLECT-3-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/INTELLECT-3-8bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run INTELLECT-3 (Q2_K, needs ~44.71 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF/tree/1827cd1b39b3f3ced9319c94079d71bad75ee8c3))
+   
+   ```sh
+   ollama run hf.co/bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q2_K
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run INTELLECT-3 (4bit, needs ~60.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/INTELLECT-3-4bit/tree/8b6e6c7751c39f87f871451f243d1b0d0f5fbade))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/INTELLECT-3-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/INTELLECT-3-4bit
+   ```
+
+Other versions: 8bit (~113.6 GB, Mac only) `mlx_lm.chat --model mlx-community/INTELLECT-3-8bit`
+
+Official weights and documentation: [huggingface.co/PrimeIntellect](https://huggingface.co/PrimeIntellect/INTELLECT-3)
 
 [interactive version](https://whatmodel.sh/model/intellect-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -61,20 +61,14 @@ weighted average                        = 62.9
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp32 (official GLM-TTS repo) · nvidia o…  ~8.89GB   62.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (official GLM-TTS repo), needs ~8.89 GB, NVIDIA only, from [github.com/zai-org](https://github.com/zai-org/GLM-TTS/blob/4b944f4be7b6c55454751715081f4dc83992897a/README.md))
+   
+   ```sh
+   git clone https://github.com/zai-org/GLM-TTS.git && cd GLM-TTS && pip install -r requirements.txt && pip install -U huggingface_hub && huggingface-cli download zai-org/GLM-TTS --local-dir ckpt && python glmtts_inference.py --data=example_zh --exp_name=_test --use_cache
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (official GLM-TTS repo) · nvidia only · ~8.89GB
-git clone https://github.com/zai-org/GLM-TTS.git && cd GLM-TTS && pip install -r requirements.txt && pip install -U huggingface_hub && huggingface-cli download zai-org/GLM-TTS --local-dir ckpt && python glmtts_inference.py --data=example_zh --exp_name=_test --use_cache
-```
+Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-TTS)
 
 [interactive version](https://whatmodel.sh/model/glm-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

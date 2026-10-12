@@ -40,6 +40,8 @@ weighted average                                   = 44.7
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/stepvideo-t2v)
 
 [interactive version](https://whatmodel.sh/model/stepvideo-t2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

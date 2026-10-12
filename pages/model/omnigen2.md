@@ -99,24 +99,20 @@ BAAI    <a href="https://arxiv.org/html/2506.18871v4">OneIG-Bench (EN)</a>      
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.15/image · [fal.ai](https://fal.ai/models/fal-ai/omnigen-v2)
 
 <sub>[price source](https://fal.ai/models/fal-ai/omnigen-v2): USD for one 1-megapixel output: fal bills fal-ai/omnigen-v2 (OmniGen V2 / OmniGen2) $0.15 per megapixel (price = rate x 1 MP; fal's rounding for 1024x1024 ~1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image generation and editing. API model: fal-ai/omnigen-v2. Settings: 1 MP output, one image. Price basis: published per-megapixel list rate x 1 MP. Currency: USD. Not a BAAI direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-<pre>
-version                             needs  score
-bf16 (official repo) · nvidia only  ~17GB   41.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (OFFICIAL REPO), needs ~17 GB, NVIDIA only, from [github.com/VectorSpaceLab](https://github.com/VectorSpaceLab/OmniGen2/blob/18e6f9d5271b517fcb32e999f10df943ae9b8f20/README.md))
+   
+   ```sh
+   git clone https://github.com/VectorSpaceLab/OmniGen2.git && cd OmniGen2 && pip install torch==2.6.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu124 && pip install -r requirements.txt && bash example_t2i.sh
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (official repo) · nvidia only · ~17GB
-git clone https://github.com/VectorSpaceLab/OmniGen2.git && cd OmniGen2 && pip install torch==2.6.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu124 && pip install -r requirements.txt && bash example_t2i.sh
-```
+Official weights and documentation: [huggingface.co/OmniGen2](https://huggingface.co/OmniGen2/OmniGen2)
 
 [interactive version](https://whatmodel.sh/model/omnigen2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

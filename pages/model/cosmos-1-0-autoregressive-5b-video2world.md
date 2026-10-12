@@ -42,6 +42,8 @@ weighted average                                   = 30.5
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/Cosmos-1.0-Autoregressive-5B-Video2World)
 
 [interactive version](https://whatmodel.sh/model/cosmos-1-0-autoregressive-5b-video2world) · [JSON](https://whatmodel.sh/api?format=json&all=1)

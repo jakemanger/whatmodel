@@ -73,42 +73,51 @@ weighted average                                   = 62.2
 
 ## How to run it
 
+### Through an API
+
 api (Z.ai) · $0.45/M blended · $0.3 in / $0.9 out per 1M tokens · [docs.z.ai](https://docs.z.ai/guides/vlm/glm-4.6v.md)
 
 <sub>[price source](https://docs.z.ai/guides/overview/pricing): USD per 1M tokens, Z.ai API pricing page, Vision Models table, GLM-4.6V: input $0.3, output $0.9; cached input $0.05 excluded. Currency: USD. Z.ai official pricing page, observed 2026-09-28. · [context source](https://huggingface.co/zai-org/GLM-4.6V/blob/4e2d47eb0b41c5280d8294b17cef9e94fdcfff46/README.md): Context length stated on the official model card.</sub>
 
-<pre>
-download              size  score
-4-bit ud-q4_k_xl  ~67.22GB   62.2
-2-bit ud-q2_k_xl  ~47.55GB   62.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run GLM-4.6V (ud-q4_k_xl, needs ~67.22 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-4.6V-GGUF/tree/7bea17af309193ebd3dd31edbc40a7ddc301cf35))
+   
+   ```sh
+   llama cli -hf unsloth/GLM-4.6V-GGUF:UD-Q4_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/GLM-4.6V-GGUF:UD-Q4_K_XL
+   ```
 
-```sh
-# 4-bit ud-q4_k_xl · ~67.22GB
-llama cli -hf unsloth/GLM-4.6V-GGUF:UD-Q4_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/GLM-4.6V-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl · ~47.55GB
-llama cli -hf unsloth/GLM-4.6V-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/GLM-4.6V-GGUF:UD-Q2_K_XL
-```
+Other versions: ud-q2_k_xl (~47.55 GB) `llama cli -hf unsloth/GLM-4.6V-GGUF:UD-Q2_K_XL`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit ud-q4_k_xl · ~67.22GB
-lms get https://huggingface.co/unsloth/GLM-4.6V-GGUF@UD-Q4_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit ud-q2_k_xl · ~47.55GB
-lms get https://huggingface.co/unsloth/GLM-4.6V-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
+
+2. Run GLM-4.6V (ud-q4_k_xl, needs ~67.22 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/GLM-4.6V-GGUF/tree/7bea17af309193ebd3dd31edbc40a7ddc301cf35))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/GLM-4.6V-GGUF@UD-Q4_K_XL -y
+   ```
+
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: ud-q2_k_xl (~47.55 GB) `lms get https://huggingface.co/unsloth/GLM-4.6V-GGUF@UD-Q2_K_XL -y`
+
+Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.6V)
 
 [interactive version](https://whatmodel.sh/model/glm-4-6v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

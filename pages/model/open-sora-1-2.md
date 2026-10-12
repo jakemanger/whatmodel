@@ -55,20 +55,14 @@ weighted average                                   = 26.6
 
 ## How to run it
 
-<pre>
-version             needs  score
-bf16 · nvidia only  ~39GB   26.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~39 GB, NVIDIA only, from [github.com/hpcaitech](https://github.com/hpcaitech/Open-Sora/blob/17cce908b22283acc3c946816c81f46dd442a453/README.md))
+   
+   ```sh
+   git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && git checkout v1.2.0 && pip install -v . && python scripts/inference.py configs/opensora-v1-2/inference/sample.py --num-frames 4s --resolution 720p --aspect-ratio 9:16 --prompt "a beautiful waterfall"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~39GB
-git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && git checkout v1.2.0 && pip install -v . && python scripts/inference.py configs/opensora-v1-2/inference/sample.py --num-frames 4s --resolution 720p --aspect-ratio 9:16 --prompt "a beautiful waterfall"
-```
+Official weights and documentation: [huggingface.co/hpcai-tech](https://huggingface.co/hpcai-tech/OpenSora-STDiT-v3)
 
 [interactive version](https://whatmodel.sh/model/open-sora-1-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

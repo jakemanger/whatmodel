@@ -51,20 +51,14 @@ weighted average                                   = 31.8
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp16 · nvidia only  ~4.9GB   31.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~4.9 GB, NVIDIA only, from [github.com/Vchitect](https://github.com/Vchitect/LaVie/blob/6ce851e98be2ad2ddb7df177ab31f18194b0ceff/README.md))
+   
+   ```sh
+   git clone https://github.com/Vchitect/LaVie && cd LaVie && hf download Vchitect/LaVie lavie_base.pt --local-dir pretrained_models && hf download CompVis/stable-diffusion-v1-4 --local-dir pretrained_models/stable-diffusion-v1-4 && cd base && python pipelines/sample.py --config configs/sample.yaml
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~4.9GB
-git clone https://github.com/Vchitect/LaVie && cd LaVie && hf download Vchitect/LaVie lavie_base.pt --local-dir pretrained_models && hf download CompVis/stable-diffusion-v1-4 --local-dir pretrained_models/stable-diffusion-v1-4 && cd base && python pipelines/sample.py --config configs/sample.yaml
-```
+Official weights and documentation: [huggingface.co/Vchitect](https://huggingface.co/Vchitect/LaVie)
 
 [interactive version](https://whatmodel.sh/model/lavie) · [JSON](https://whatmodel.sh/api?format=json&all=1)

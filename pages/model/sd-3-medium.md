@@ -51,27 +51,22 @@ weighted average                                   = 39.5
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.035/image · [fal.ai](https://fal.ai/models/fal-ai/stable-diffusion-v3-medium)
 
 <sub>[price source](https://fal.ai/models/fal-ai/stable-diffusion-v3-medium): USD per generated image: fal bills fal-ai/stable-diffusion-v3-medium at $0.035 per image (billing unit images; fal-hosted serverless deployment of Stable Diffusion 3 Medium). Product: fal.ai serverless text-to-image. API model: fal-ai/stable-diffusion-v3-medium (Stable Diffusion 3 Medium; the page's image-to-image sibling hides its pricing and is not used). Settings: text-to-image, default size, one image. Price basis: published per-image list rate. Stability AI's own API no longer serves this checkpoint: its API deprecation notice of April 17, 2025 transitioned sd3-medium to sd3.5-medium. Currency: USD. Not a Stability AI direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-<pre>
-version                           needs  score
-fp16 incl. CLIPs + T5 (sd.cpp)  ~19.4GB   39.5
-q8_0 (sd.cpp --type)            ~10.5GB   39.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16 incl. CLIPs + T5 (sd.cpp), needs ~19.4 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md))
+   
+   ```sh
+   sd-cli -m models/sd3_medium_incl_clips_t5xxlfp16.safetensors -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable Diffusion CPP"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu
+   ```
 
-### Run it on your own machine
+Other versions: Q8_0 (SD.CPP --TYPE) (~10.5 GB) `sd-cli -m models/sd3_medium_incl_clips_t5xxlfp16.safetensors --type q8_0 -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable Diffusion CPP"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu`
 
-**Other engines**
-
-```sh
-# fp16 incl. CLIPs + T5 (sd.cpp) · ~19.4GB
-sd-cli -m models/sd3_medium_incl_clips_t5xxlfp16.safetensors -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable Diffusion CPP"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu
-# q8_0 (sd.cpp --type) · ~10.5GB
-sd-cli -m models/sd3_medium_incl_clips_t5xxlfp16.safetensors --type q8_0 -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable Diffusion CPP"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu
-```
+Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-3-medium)
 
 [interactive version](https://whatmodel.sh/model/sd-3-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

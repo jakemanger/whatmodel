@@ -53,23 +53,16 @@ weighted average                                   = 43.5
 
 ## How to run it
 
-<pre>
-version                               needs  score
-q8_0-gguf (NVIDIA NeMo-Speech.cpp)  ~0.74GB   43.5
-fp32 (transformers &gt;=5.13.0)        ~2.55GB   43.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (Q8_0-GGUF (NVIDIA NEMO-SPEECH.CPP), needs ~0.74 GB, from [huggingface.co/nvidia](https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/blob/ea30d66debe3740a08b573244286791d423d6b3e/README.md))
+   
+   ```sh
+   curl -fsSL https://github.com/NVIDIA/NeMo-Speech.cpp/raw/main/scripts/install.sh | sh && export PATH="$HOME/.local/bin:$PATH" && hf download nvidia/nemotron-3.5-asr-streaming-0.6b nemotron-3.5-asr-streaming-0.6b.q8_0.gguf --local-dir models && nemo-speech transcribe audio.wav --model models/nemotron-3.5-asr-streaming-0.6b.q8_0.gguf --language en-US
+   ```
 
-### Run it on your own machine
+Other versions: fp32 (transformers >=5.13.0) (~2.55 GB) `uv run --with 'transformers>=5.13.0' --with torch --with librosa python -c "from transformers import pipeline; pipe = pipeline('automatic-speech-recognition', model='nvidia/nemotron-3.5-asr-streaming-0.6b'); print(pipe('audio.wav'))"`
 
-**Other engines**
-
-```sh
-# q8_0-gguf (NVIDIA NeMo-Speech.cpp) · ~0.74GB
-curl -fsSL https://github.com/NVIDIA/NeMo-Speech.cpp/raw/main/scripts/install.sh | sh && export PATH="$HOME/.local/bin:$PATH" && hf download nvidia/nemotron-3.5-asr-streaming-0.6b nemotron-3.5-asr-streaming-0.6b.q8_0.gguf --local-dir models && nemo-speech transcribe audio.wav --model models/nemotron-3.5-asr-streaming-0.6b.q8_0.gguf --language en-US
-# fp32 (transformers >=5.13.0) · ~2.55GB
-uv run --with 'transformers>=5.13.0' --with torch --with librosa python -c "from transformers import pipeline; pipe = pipeline('automatic-speech-recognition', model='nvidia/nemotron-3.5-asr-streaming-0.6b'); print(pipe('audio.wav'))"
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b)
 
 [interactive version](https://whatmodel.sh/model/nemotron-3-5-asr-streaming-0-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

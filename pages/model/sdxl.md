@@ -80,34 +80,23 @@ weighted average                                   = 34.1
 
 ## How to run it
 
+### Through an API
+
 api (Together AI) · $0.0019/image · [together.ai](https://www.together.ai/models/sd-xl)
 
 <sub>[price source](https://www.together.ai/models/sd-xl): USD for one 1-megapixel output: Together bills stabilityai/stable-diffusion-xl-base-1.0 at $0.0019 per output megapixel (price = rate × 1 MP; a 1024×1024 image is ~1.05 MP). Together states prices include default steps and extra steps cost more; the default step count for SD XL is not listed. Product: Together AI serverless image generation. API model: stabilityai/stable-diffusion-xl-base-1.0. Settings: 1 MP output, n=1, default steps. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Replaces a Replicate link whose SDXL endpoint is billed by hardware time only. Together AI official model page, observed 2026-09-25.</sub>
 
-<pre>
-version                                  needs  score
-fp16 · nvidia only                      ~8.9GB   34.1
-fp16 + model CPU offload · nvidia only  ~8.9GB   34.1
-fp16 (sd.cpp)                           ~8.8GB   34.1
-q8_0 (sd.cpp --type)                    ~4.9GB   34.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~8.9 GB, NVIDIA only, from [stability.ai/news-updates](https://stability.ai/news-updates/stable-diffusion-sdxl-1-announcement))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', torch_dtype=torch.float16, use_safetensors=True, variant='fp16').to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
+Other versions: fp16 + model CPU offload (~8.9 GB, NVIDIA only) `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', torch_dtype=torch.float16, use_safetensors=True, variant='fp16'); p.enable_model_cpu_offload(); p('a cat holding a sign').images[0].save('out.png')"` · fp16 (sd.cpp) (~8.8 GB) `sd-cli -m models/sd_xl_base_1.0.safetensors --vae models/sdxl_vae-fp16-fix.safetensors -H 1024 -W 1024 -p "a lovely cat" -v` · Q8_0 (SD.CPP --TYPE) (~4.9 GB) `sd-cli -m models/sd_xl_base_1.0.safetensors --type q8_0 --vae models/sdxl_vae-fp16-fix.safetensors -H 1024 -W 1024 -p "a lovely cat" -v`
 
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~8.9GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', torch_dtype=torch.float16, use_safetensors=True, variant='fp16').to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
-# fp16 + model CPU offload · nvidia only · ~8.9GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', torch_dtype=torch.float16, use_safetensors=True, variant='fp16'); p.enable_model_cpu_offload(); p('a cat holding a sign').images[0].save('out.png')"
-# fp16 (sd.cpp) · ~8.8GB
-sd-cli -m models/sd_xl_base_1.0.safetensors --vae models/sdxl_vae-fp16-fix.safetensors -H 1024 -W 1024 -p "a lovely cat" -v
-# q8_0 (sd.cpp --type) · ~4.9GB
-sd-cli -m models/sd_xl_base_1.0.safetensors --type q8_0 --vae models/sdxl_vae-fp16-fix.safetensors -H 1024 -W 1024 -p "a lovely cat" -v
-```
+Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
 
 ## Published speed measurements
 

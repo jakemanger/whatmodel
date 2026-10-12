@@ -44,20 +44,14 @@ weighted average                                   = 63.8
 
 ## How to run it
 
-<pre>
-version                    needs  score
-fp32 (wayu-tts package)  ~0.33GB   63.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (wayu-tts package), needs ~0.33 GB, from [huggingface.co/wayu-ai](https://huggingface.co/wayu-ai/wayu-paxa-tts-edge/blob/8196688df56a8d08ccfa186505343adff412ab6b/README.md))
+   
+   ```sh
+   pip install git+https://github.com/wayu-research/wayu-tts-inference && wayu-tts "สวัสดีค่ะ" --voice f_young_clear --out hello.wav
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (wayu-tts package) · ~0.33GB
-pip install git+https://github.com/wayu-research/wayu-tts-inference && wayu-tts "สวัสดีค่ะ" --voice f_young_clear --out hello.wav
-```
+Official weights and documentation: [huggingface.co/wayu-ai](https://huggingface.co/wayu-ai/wayu-paxa-tts-edge)
 
 [interactive version](https://whatmodel.sh/model/wayu-paxa-tts-edge) · [JSON](https://whatmodel.sh/api?format=json&all=1)

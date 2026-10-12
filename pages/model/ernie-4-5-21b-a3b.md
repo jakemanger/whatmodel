@@ -100,6 +100,6 @@ weighted average                                   = 52.0
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/ernie-4-5-21b-a3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

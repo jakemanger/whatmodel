@@ -43,10 +43,10 @@ weighted average                        = 37.1
 
 ## How to run it
 
+### Through an API
+
 api (Runway) · $0.050/sec · [docs.dev.runwayml.com](https://docs.dev.runwayml.com/guides/models)
 
 <sub>[price source](https://docs.dev.runwayml.com/guides/pricing): USD per second of generated video: Runway lists gen4\_turbo at 5 credits per second; credits cost $0.01 each. Runway states one per-second rate for the model (no resolution tiers are listed). Product: Runway developer API video generation (image-to-video; gen4\_turbo takes an image input). API model: gen4\_turbo. Settings: standard mp4 output. Price basis: 5 credits × $0.01 per credit; sales tax excluded. Currency: USD. Runway official API pricing page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/runway-gen-4-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

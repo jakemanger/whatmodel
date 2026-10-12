@@ -71,26 +71,16 @@ weighted average                                   = 29.2
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp32 (coqui-tts 0.27.5)                   ~4.53GB   29.2
-fp16 (neonbjb/tortoise-tts) · mac only    ~5.64GB   29.2
-fp16 (neonbjb/tortoise-tts) · nvidia on…  ~5.64GB   29.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (coqui-tts 0.27.5), needs ~4.53 GB, from [github.com/idiap](https://github.com/idiap/coqui-ai-TTS/blob/29b391cbd7ebf599e85b5232958daf39987a08e3/docs/source/models/tortoise.md))
+   
+   ```sh
+   uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --model_name tts_models/en/multi-dataset/tortoise-v2 --text "This is an example." --out_path "output.wav" --device cpu
+   ```
 
-### Run it on your own machine
+Other versions: fp16 (neonbjb/tortoise-tts) (~5.64 GB, Mac only) `python3.10 -m venv .venv && source .venv/bin/activate && pip install numba inflect psutil && pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu && pip install transformers && git clone https://github.com/neonbjb/tortoise-tts.git && cd tortoise-tts && pip install . && PYTORCH_ENABLE_MPS_FALLBACK=1 python tortoise/do_tts.py --text "I'm going to speak this" --voice random --preset fast` · fp16 (neonbjb/tortoise-tts) (~5.64 GB, NVIDIA only) `conda create --name tortoise python=3.9 numba inflect && conda activate tortoise && conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia && conda install transformers=4.29.2 && git clone https://github.com/neonbjb/tortoise-tts.git && cd tortoise-tts && python setup.py install && python tortoise/do_tts.py --text "I'm going to speak this" --voice random --preset fast`
 
-**Other engines**
-
-```sh
-# fp32 (coqui-tts 0.27.5) · ~4.53GB
-uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --model_name tts_models/en/multi-dataset/tortoise-v2 --text "This is an example." --out_path "output.wav" --device cpu
-# fp16 (neonbjb/tortoise-tts) · mac only · ~5.64GB
-python3.10 -m venv .venv && source .venv/bin/activate && pip install numba inflect psutil && pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu && pip install transformers && git clone https://github.com/neonbjb/tortoise-tts.git && cd tortoise-tts && pip install . && PYTORCH_ENABLE_MPS_FALLBACK=1 python tortoise/do_tts.py --text "I'm going to speak this" --voice random --preset fast
-# fp16 (neonbjb/tortoise-tts) · nvidia only · ~5.64GB
-conda create --name tortoise python=3.9 numba inflect && conda activate tortoise && conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia && conda install transformers=4.29.2 && git clone https://github.com/neonbjb/tortoise-tts.git && cd tortoise-tts && python setup.py install && python tortoise/do_tts.py --text "I'm going to speak this" --voice random --preset fast
-```
+Official weights and documentation: [huggingface.co/jbetker](https://huggingface.co/jbetker/tortoise-tts-v2)
 
 [interactive version](https://whatmodel.sh/model/tortoise-tts-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

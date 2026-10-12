@@ -56,22 +56,21 @@ weighted average                                   = 38.2
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/tiiuae/falcon-180B-chat/blob/6882299beda36df40e683c4478edfcc94f2cde5f/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+### Ollama (recommended)
 
-<pre>
-download        size  score
-4-bit q4_0  ~108.5GB   38.2
-</pre>
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Falcon-180B-Chat (Q4_0, needs ~108.5 GB, from [ollama.com](https://ollama.com/library/falcon/tags))
+   
+   ```sh
+   ollama run falcon:180b-chat-q4_0
+   ```
 
-### Run it on your own machine
-
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
-
-```sh
-# 4-bit q4_0 · ~108.5GB
-ollama run falcon:180b-chat-q4_0
-```
+Official weights and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/falcon-180B-chat)
 
 [interactive version](https://whatmodel.sh/model/falcon-180b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

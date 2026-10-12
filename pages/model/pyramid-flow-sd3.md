@@ -43,20 +43,14 @@ weighted average                        = 42.0
 
 ## How to run it
 
-<pre>
-version             needs  score
-bf16 · nvidia only   ~8GB   42.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~8 GB, NVIDIA only, from [github.com/jy0205](https://github.com/jy0205/Pyramid-Flow/blob/a012faa1dc4d71301a7a153c7f9554c081947ea2/README.md))
+   
+   ```sh
+   git clone https://github.com/jy0205/Pyramid-Flow && cd Pyramid-Flow && pip install -r requirements.txt && python -c "import torch;from huggingface_hub import snapshot_download;from pyramid_dit import PyramidDiTForVideoGeneration;from diffusers.utils import export_to_video;snapshot_download('rain1011/pyramid-flow-sd3',local_dir='pyramid-flow-sd3');m=PyramidDiTForVideoGeneration('pyramid-flow-sd3',model_name='pyramid_mmdit',model_dtype='bf16',model_variant='diffusion_transformer_768p');m.vae.enable_tiling();m.enable_sequential_cpu_offload();torch.set_grad_enabled(False);torch.autocast('cuda',dtype=torch.bfloat16).__enter__();export_to_video(m.generate(prompt='A movie trailer featuring the adventures of the 30 year old space man wearing a red wool knitted motorcycle helmet, blue sky, salt desert, cinematic style',num_inference_steps=[20,20,20],video_num_inference_steps=[10,10,10],height=768,width=1280,temp=16,guidance_scale=9.0,video_guidance_scale=5.0,output_type='pil',save_memory=True),'pyramid.mp4',fps=24)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~8GB
-git clone https://github.com/jy0205/Pyramid-Flow && cd Pyramid-Flow && pip install -r requirements.txt && python -c "import torch;from huggingface_hub import snapshot_download;from pyramid_dit import PyramidDiTForVideoGeneration;from diffusers.utils import export_to_video;snapshot_download('rain1011/pyramid-flow-sd3',local_dir='pyramid-flow-sd3');m=PyramidDiTForVideoGeneration('pyramid-flow-sd3',model_name='pyramid_mmdit',model_dtype='bf16',model_variant='diffusion_transformer_768p');m.vae.enable_tiling();m.enable_sequential_cpu_offload();torch.set_grad_enabled(False);torch.autocast('cuda',dtype=torch.bfloat16).__enter__();export_to_video(m.generate(prompt='A movie trailer featuring the adventures of the 30 year old space man wearing a red wool knitted motorcycle helmet, blue sky, salt desert, cinematic style',num_inference_steps=[20,20,20],video_num_inference_steps=[10,10,10],height=768,width=1280,temp=16,guidance_scale=9.0,video_guidance_scale=5.0,output_type='pil',save_memory=True),'pyramid.mp4',fps=24)"
-```
+Official weights and documentation: [huggingface.co/rain1011](https://huggingface.co/rain1011/pyramid-flow-sd3)
 
 [interactive version](https://whatmodel.sh/model/pyramid-flow-sd3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

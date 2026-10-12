@@ -46,10 +46,10 @@ weighted average                                   = 67.6
 
 ## How to run it
 
+### Through an API
+
 api (xAI) · $15.00/M chars · [docs.x.ai](https://docs.x.ai/developers/model-capabilities/audio/text-to-speech)
 
 <sub>[price source](https://docs.x.ai/developers/models.md): USD per 1M input characters: xAI Voice Pricing lists Text to Speech at $15.00 / 1M chars. The xAI TTS REST endpoint (POST /v1/tts) takes no model parameter, so this single published rate covers it. Product: xAI Text to Speech API. API model: xAI TTS (REST /v1/tts, no model id). Settings: REST. Price basis: published list rate. Currency: USD. xAI official models/pricing docs, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/xai-grok-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

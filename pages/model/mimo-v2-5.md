@@ -137,42 +137,51 @@ XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/b
 
 ## How to run it
 
+### Through an API
+
 api (Novita AI) · $0.21/M blended · $0.168 in / $0.336 out per 1M tokens · [novita.ai](https://novita.ai/models/llm/xiaomimimo-mimo-v2.5)
 
 <sub>[price source](https://novita.ai/pricing): USD per 1M tokens, Novita AI serverless chat completions, model xiaomimimo/mimo-v2.5 (status active; 1M context): input $0.168, output $0.336; cache read $0.0034 excluded. Xiaomi's own API lists mimo-v2.5 at $0.14/$0.28 (overseas, cache miss) but marks it 'to be deprecated' on 2026-10-21. Currency: USD. Novita AI official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/xiaomi/mimo-v2.5.toml)</sub>
 
-<pre>
-download              size  score
-4-bit ud-q4_k_xl  ~186.5GB   69.0
-2-bit ud-q2_k_xl   ~93.5GB   69.0
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run MiMo-V2.5 (310B-A15B) (ud-q4_k_xl, needs ~186.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2.5-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/MiMo-V2.5-GGUF:UD-Q4_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/MiMo-V2.5-GGUF:UD-Q4_K_XL
+   ```
 
-```sh
-# 4-bit ud-q4_k_xl · ~186.5GB
-llama cli -hf unsloth/MiMo-V2.5-GGUF:UD-Q4_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/MiMo-V2.5-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl · ~93.5GB
-llama cli -hf unsloth/MiMo-V2.5-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/MiMo-V2.5-GGUF:UD-Q2_K_XL
-```
+Other versions: ud-q2_k_xl (~93.5 GB) `llama cli -hf unsloth/MiMo-V2.5-GGUF:UD-Q2_K_XL`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit ud-q4_k_xl · ~186.5GB
-lms get https://huggingface.co/unsloth/MiMo-V2.5-GGUF@UD-Q4_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit ud-q2_k_xl · ~93.5GB
-lms get https://huggingface.co/unsloth/MiMo-V2.5-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
+
+2. Run MiMo-V2.5 (310B-A15B) (ud-q4_k_xl, needs ~186.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2.5-GGUF/tree/main))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/MiMo-V2.5-GGUF@UD-Q4_K_XL -y
+   ```
+
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: ud-q2_k_xl (~93.5 GB) `lms get https://huggingface.co/unsloth/MiMo-V2.5-GGUF@UD-Q2_K_XL -y`
+
+Official weights and documentation: [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo/MiMo-V2.5)
 
 [interactive version](https://whatmodel.sh/model/mimo-v2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

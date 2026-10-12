@@ -68,6 +68,6 @@ weighted average                        = 64.8
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/chatgpt-4o-latest-20250326) · [JSON](https://whatmodel.sh/api?format=json&all=1)

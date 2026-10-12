@@ -47,20 +47,14 @@ weighted average                                   = 51.5
 
 ## How to run it
 
-<pre>
-version                                      needs  score
-bf16 (transformers + xcodec2) · nvidia …  ~20.43GB   51.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (TRANSFORMERS + XCODEC2), needs ~20.43 GB, NVIDIA only, from [huggingface.co/HKUSTAudio](https://huggingface.co/HKUSTAudio/Llasa-8B/blob/2a8339e387348a5cad5160b978a6f364fa06ad74/README.md))
+   
+   ```sh
+   pip install xcodec2==0.1.5 && python -c "from transformers import AutoTokenizer, AutoModelForCausalLM; import torch; import soundfile as sf; from xcodec2.modeling_xcodec2 import XCodec2Model; torch.set_grad_enabled(False); llasa_8b = 'HKUSTAudio/Llasa-8B'; tokenizer = AutoTokenizer.from_pretrained(llasa_8b); model = AutoModelForCausalLM.from_pretrained(llasa_8b); model.eval(); model.to('cuda'); Codec_model = XCodec2Model.from_pretrained('HKUSTAudio/xcodec2'); Codec_model.eval().cuda(); input_text = 'Hello, world.'; formatted_text = f'<|TEXT_UNDERSTANDING_START|>{input_text}<|TEXT_UNDERSTANDING_END|>'; chat = [{'role': 'user', 'content': 'Convert the text to speech:' + formatted_text}, {'role': 'assistant', 'content': '<|SPEECH_GENERATION_START|>'}]; input_ids = tokenizer.apply_chat_template(chat, tokenize=True, return_tensors='pt', continue_final_message=True).to('cuda'); speech_end_id = tokenizer.convert_tokens_to_ids('<|SPEECH_GENERATION_END|>'); outputs = model.generate(input_ids, max_length=2048, eos_token_id=speech_end_id, do_sample=True, top_p=1, temperature=1); speech_tokens = tokenizer.batch_decode(outputs[0][input_ids.shape[1]:-1], skip_special_tokens=True); speech_tokens = torch.tensor([int(t[4:-2]) for t in speech_tokens if t.startswith('<|s_') and t.endswith('|>')]).cuda().unsqueeze(0).unsqueeze(0); gen_wav = Codec_model.decode_code(speech_tokens); sf.write('gen.wav', gen_wav[0, 0, :].cpu().numpy(), 16000)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (transformers + xcodec2) · nvidia only · ~20.43GB
-pip install xcodec2==0.1.5 && python -c "from transformers import AutoTokenizer, AutoModelForCausalLM; import torch; import soundfile as sf; from xcodec2.modeling_xcodec2 import XCodec2Model; torch.set_grad_enabled(False); llasa_8b = 'HKUSTAudio/Llasa-8B'; tokenizer = AutoTokenizer.from_pretrained(llasa_8b); model = AutoModelForCausalLM.from_pretrained(llasa_8b); model.eval(); model.to('cuda'); Codec_model = XCodec2Model.from_pretrained('HKUSTAudio/xcodec2'); Codec_model.eval().cuda(); input_text = 'Hello, world.'; formatted_text = f'<|TEXT_UNDERSTANDING_START|>{input_text}<|TEXT_UNDERSTANDING_END|>'; chat = [{'role': 'user', 'content': 'Convert the text to speech:' + formatted_text}, {'role': 'assistant', 'content': '<|SPEECH_GENERATION_START|>'}]; input_ids = tokenizer.apply_chat_template(chat, tokenize=True, return_tensors='pt', continue_final_message=True).to('cuda'); speech_end_id = tokenizer.convert_tokens_to_ids('<|SPEECH_GENERATION_END|>'); outputs = model.generate(input_ids, max_length=2048, eos_token_id=speech_end_id, do_sample=True, top_p=1, temperature=1); speech_tokens = tokenizer.batch_decode(outputs[0][input_ids.shape[1]:-1], skip_special_tokens=True); speech_tokens = torch.tensor([int(t[4:-2]) for t in speech_tokens if t.startswith('<|s_') and t.endswith('|>')]).cuda().unsqueeze(0).unsqueeze(0); gen_wav = Codec_model.decode_code(speech_tokens); sf.write('gen.wav', gen_wav[0, 0, :].cpu().numpy(), 16000)"
-```
+Official weights and documentation: [huggingface.co/HKUSTAudio](https://huggingface.co/HKUSTAudio/Llasa-8B)
 
 [interactive version](https://whatmodel.sh/model/llasa-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

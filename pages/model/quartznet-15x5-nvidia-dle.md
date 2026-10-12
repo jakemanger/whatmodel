@@ -43,6 +43,6 @@ weighted average                                   = 35.0
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/quartznet-15x5-nvidia-dle) · [JSON](https://whatmodel.sh/api?format=json&all=1)

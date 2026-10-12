@@ -43,76 +43,87 @@ weighted average                          = 51.4
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/deepcogito/cogito-v1-preview-llama-8B/blob/64c42369b3f322fbffb277bfff146551dd2823cc/README.md): Context length stated on the official model card.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit q4_k_m                ~5.32GB   51.4
-8-bit q8_0                 ~10.14GB   51.4
-4-bit Q4_K_M                 ~4.9GB   51.4
-8-bit Q8_0                   ~8.5GB   51.4
-4-bit mlx-4bit · mac only    ~4.5GB   51.4
-4-bit mlx-8bit · mac only    ~8.5GB   51.4
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Cogito v1 Preview Llama 8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-8B-GGUF/tree/520d91e6aa70b38525af1258b5d410a96b9a3456))
+   
+   ```sh
+   llama cli -hf lmstudio-community/cogito-v1-preview-llama-8B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/cogito-v1-preview-llama-8B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~8.5 GB) `llama cli -hf lmstudio-community/cogito-v1-preview-llama-8B-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-llama cli -hf lmstudio-community/cogito-v1-preview-llama-8B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/cogito-v1-preview-llama-8B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.5GB
-llama cli -hf lmstudio-community/cogito-v1-preview-llama-8B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/cogito-v1-preview-llama-8B-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-lms get https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-8B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~8.5GB
-lms get https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-8B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~4.5GB
-lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-llama-8B-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~8.5GB
-lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-llama-8B-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Cogito v1 Preview Llama 8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-8B-GGUF/tree/520d91e6aa70b38525af1258b5d410a96b9a3456))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-8B-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~5.32GB
-ollama run cogito:8b-v1-preview-llama-q4_K_M
-# 8-bit q8_0 · ~10.14GB
-ollama run cogito:8b-v1-preview-llama-q8_0
-# 4-bit Q4_K_M · ~4.9GB
-ollama run hf.co/lmstudio-community/cogito-v1-preview-llama-8B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.5GB
-ollama run hf.co/lmstudio-community/cogito-v1-preview-llama-8B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/lmstudio-community/cogito-v1-preview-llama-8B-GGUF@Q8_0 -y` · 4bit (~4.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-llama-8B-4bit -y` · 8bit (~8.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-llama-8B-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~4.5GB
-mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-llama-8B-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/deepcogito-cogito-v1-preview-llama-8B-4bit
-# 4-bit mlx-8bit · mac only · ~8.5GB
-mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-llama-8B-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/deepcogito-cogito-v1-preview-llama-8B-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Cogito v1 Preview Llama 8B (Q4_K_M, needs ~5.32 GB, from [ollama.com](https://ollama.com/library/cogito/tags))
+   
+   ```sh
+   ollama run cogito:8b-v1-preview-llama-q4_K_M
+   ```
+
+Other versions: Q8_0 (~10.14 GB) `ollama run cogito:8b-v1-preview-llama-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Cogito v1 Preview Llama 8B (4bit, needs ~4.5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/deepcogito-cogito-v1-preview-llama-8B-4bit/tree/bad322ab4dd3e2f0d063607d9b409d6cf7ad8a9d))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-llama-8B-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/deepcogito-cogito-v1-preview-llama-8B-4bit
+   ```
+
+Other versions: 8bit (~8.5 GB, Mac only) `mlx_lm.chat --model mlx-community/deepcogito-cogito-v1-preview-llama-8B-8bit`
+
+Official weights and documentation: [huggingface.co/deepcogito](https://huggingface.co/deepcogito/cogito-v1-preview-llama-8B)
 
 [interactive version](https://whatmodel.sh/model/cogito-v1-preview-llama-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

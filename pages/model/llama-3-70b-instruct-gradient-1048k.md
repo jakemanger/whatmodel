@@ -41,75 +41,78 @@ weighted average                                   = 49.5
 
 ## How to run it
 
-<pre>
-download                        size  score
-16-bit bf16                ~141.11GB   49.5
-4-bit Q4_K_M                 ~42.5GB   49.5
-8-bit Q8_0                     ~75GB   49.5
-2-bit Q2_K                   ~26.4GB   49.5
-4-bit mlx-4bit · mac only    ~39.7GB   49.5
-4-bit mlx-8bit · mac only      ~75GB   49.5
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Llama-3-70B-Instruct-Gradient-1048k (Q4_K_M, needs ~42.5 GB, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF/tree/8ac18418298354147a9adf591a4b94c5ea942323))
+   
+   ```sh
+   llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~42.5GB
-llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~75GB
-llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q8_0
-# 2-bit Q2_K · ~26.4GB
-llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q2_K
-```
+Other versions: Q8_0 (~75 GB) `llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q8_0` · Q2_K (~26.4 GB) `llama cli -hf featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF:Q2_K`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~42.5GB
-lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~75GB
-lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit Q2_K · ~26.4GB
-lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~39.7GB
-lms get https://huggingface.co/mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~75GB
-lms get https://huggingface.co/mlx-community/Llama-3-70B-Instruct-Gradient-1048k-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+2. Run Llama-3-70B-Instruct-Gradient-1048k (Q4_K_M, needs ~42.5 GB, from [huggingface.co/featherless-ai-quants](https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF/tree/8ac18418298354147a9adf591a4b94c5ea942323))
+   
+   ```sh
+   lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~39.7GB
-mlx_lm.chat --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit
-# 4-bit mlx-8bit · mac only · ~75GB
-mlx_lm.chat --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-8bit
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q8_0 -y` · Q2_K (~26.4 GB) `lms get https://huggingface.co/featherless-ai-quants/gradientai-Llama-3-70B-Instruct-Gradient-1048k-GGUF@Q2_K -y` · 4bit (~39.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit -y` · 8bit (~75 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3-70B-Instruct-Gradient-1048k-8bit -y`
 
-```sh
-# 16-bit bf16 · ~141.11GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='gradientai/Llama-3-70B-Instruct-Gradient-1048k', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Llama-3-70B-Instruct-Gradient-1048k (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit/tree/83a33885f626f6ec53350f9753c6a810aa4abc18))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-4bit
+   ```
+
+Other versions: 8bit (~75 GB, Mac only) `mlx_lm.chat --model mlx-community/Llama-3-70B-Instruct-Gradient-1048k-8bit`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~141.11 GB, from [huggingface.co/gradientai](https://huggingface.co/gradientai/Llama-3-70B-Instruct-Gradient-1048k/tree/51bcb55df343f8e9df8484a84be39e1464642400))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='gradientai/Llama-3-70B-Instruct-Gradient-1048k', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/gradientai](https://huggingface.co/gradientai/Llama-3-70B-Instruct-Gradient-1048k)
 
 [interactive version](https://whatmodel.sh/model/llama-3-70b-instruct-gradient-1048k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

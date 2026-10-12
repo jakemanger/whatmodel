@@ -55,6 +55,8 @@ weighted average                                   = 29.9
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/WeiChow](https://huggingface.co/WeiChow/AnySD)
 
 [interactive version](https://whatmodel.sh/model/anyedit) · [JSON](https://whatmodel.sh/api?format=json&all=1)

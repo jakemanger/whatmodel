@@ -69,42 +69,51 @@ weighted average                        = 72.1
 
 ## How to run it
 
+### Through an API
+
 api (Moonshot AI) · $1.71/M blended · $0.95 in / $4 out per 1M tokens · [platform.kimi.ai](https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart)
 
 <sub>[price source](https://platform.kimi.ai/docs/pricing/chat.md): USD per 1M tokens, Kimi API (Moonshot AI) pay-as-you-go, kimi-k2.7-code: input (cache miss) $0.95, output $4.00; cache-hit input $0.19 and kimi-k2.7-code-highspeed ($1.90/$8.00) excluded; taxes excluded. Currency: USD. Moonshot AI Kimi official pricing page, observed 2026-09-25. · [context source](https://platform.kimi.ai/docs/pricing/chat.md): Moonshot AI Kimi API pricing page: kimi-k2.7-code context window 262,144 tokens (the model card at @74797c9 states 'Context Length 256K'). API serving limit of the maker's own service. Observed 2026-09-25.</sub>
 
-<pre>
-download               size  score
-4-bit ud-q4_k_xl  ~584.66GB   72.1
-2-bit ud-q2_k_xl  ~340.42GB   72.1
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Kimi K2.7 Code (ud-q4_k_xl, needs ~584.66 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF/tree/46352ca8dc32aa60f9754f5bd3fb778deeb9e430))
+   
+   ```sh
+   llama cli -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q4_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q4_K_XL
+   ```
 
-```sh
-# 4-bit ud-q4_k_xl · ~584.66GB
-llama cli -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q4_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl · ~340.42GB
-llama cli -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q2_K_XL
-```
+Other versions: ud-q2_k_xl (~340.42 GB) `llama cli -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q2_K_XL`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit ud-q4_k_xl · ~584.66GB
-lms get https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF@UD-Q4_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit ud-q2_k_xl · ~340.42GB
-lms get https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
+
+2. Run Kimi K2.7 Code (ud-q4_k_xl, needs ~584.66 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF/tree/46352ca8dc32aa60f9754f5bd3fb778deeb9e430))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF@UD-Q4_K_XL -y
+   ```
+
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: ud-q2_k_xl (~340.42 GB) `lms get https://huggingface.co/unsloth/Kimi-K2.7-Code-GGUF@UD-Q2_K_XL -y`
+
+Official weights and documentation: [huggingface.co/moonshotai](https://huggingface.co/moonshotai/Kimi-K2.7-Code)
 
 [interactive version](https://whatmodel.sh/model/kimi-k2-7-code) · [JSON](https://whatmodel.sh/api?format=json&all=1)

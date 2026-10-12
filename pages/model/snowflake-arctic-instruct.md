@@ -58,20 +58,14 @@ weighted average                                   = 41.4
 
 ## How to run it
 
-<pre>
-download                                       size  score
-16-bit bf16 weights, DeepSpeed fp8 at l…  ~957.17GB   41.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 WEIGHTS, DEEPSPEED FP8 AT LOAD, needs ~957.17 GB, NVIDIA only, from [huggingface.co/Snowflake](https://huggingface.co/Snowflake/snowflake-arctic-instruct/blob/be318cae5aba5291208f27d30991a5150500887d/README.md))
+   
+   ```sh
+   pip install 'transformers>=4.39.0' 'deepspeed>=0.14.2' accelerate && python -c "import torch; from transformers import AutoModelForCausalLM, AutoTokenizer; from deepspeed.linear.config import QuantizationConfig; r='Snowflake/snowflake-arctic-instruct'; t=AutoTokenizer.from_pretrained(r, trust_remote_code=True); m=AutoModelForCausalLM.from_pretrained(r, trust_remote_code=True, low_cpu_mem_usage=True, device_map='auto', ds_quantization_config=QuantizationConfig(q_bits=8), max_memory={i: '150GiB' for i in range(8)}, torch_dtype=torch.bfloat16); x=t.apply_chat_template([{'role': 'user', 'content': '5x + 35 = 7x - 60 + 10. Solve for x'}], add_generation_prompt=True, return_tensors='pt').to('cuda'); print(t.decode(m.generate(input_ids=x, max_new_tokens=256)[0]))"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 weights, DeepSpeed fp8 at load · nvidia only · ~957.17GB
-pip install 'transformers>=4.39.0' 'deepspeed>=0.14.2' accelerate && python -c "import torch; from transformers import AutoModelForCausalLM, AutoTokenizer; from deepspeed.linear.config import QuantizationConfig; r='Snowflake/snowflake-arctic-instruct'; t=AutoTokenizer.from_pretrained(r, trust_remote_code=True); m=AutoModelForCausalLM.from_pretrained(r, trust_remote_code=True, low_cpu_mem_usage=True, device_map='auto', ds_quantization_config=QuantizationConfig(q_bits=8), max_memory={i: '150GiB' for i in range(8)}, torch_dtype=torch.bfloat16); x=t.apply_chat_template([{'role': 'user', 'content': '5x + 35 = 7x - 60 + 10. Solve for x'}], add_generation_prompt=True, return_tensors='pt').to('cuda'); print(t.decode(m.generate(input_ids=x, max_new_tokens=256)[0]))"
-```
+Official weights and documentation: [huggingface.co/Snowflake](https://huggingface.co/Snowflake/snowflake-arctic-instruct)
 
 [interactive version](https://whatmodel.sh/model/snowflake-arctic-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

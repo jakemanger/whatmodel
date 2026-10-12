@@ -43,10 +43,10 @@ weighted average                                   = 51.6
 
 ## How to run it
 
+### Through an API
+
 api (PixVerse) · $0.060/sec · [docs.platform.pixverse.ai](https://docs.platform.pixverse.ai/model-pricing-796039m0)
 
 <sub>[price source](https://docs.platform.pixverse.ai/model-pricing-796039m0): USD per second of generated video, 720p, 5-second single clip, no audio. Product: PixVerse platform API text-to-video / image-to-video. API model: V5.5. Price basis: 60 credits per 5-s 720p clip × $0.005 per credit (pay-as-you-go credit purchase: $10 = 2,000 credits) ÷ 5 s. With audio: 70 credits per 5-s clip; multi-clip modes, 8-s and 10-s clips and membership credit rates differ. Currency: USD. PixVerse platform model pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/pixverse-v5-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

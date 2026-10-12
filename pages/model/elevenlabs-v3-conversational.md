@@ -10,6 +10,8 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Through an API
+
 api (ElevenLabs) · $40.00/M chars · [elevenlabs.io](https://elevenlabs.io/pricing/api)
 
 <sub>[price source](https://elevenlabs.io/pricing/api): USD per 1M input characters: ElevenLabs lists v3 Conversational Text to Speech at $0.04 per 1K characters (x1000), with no discount label (the 72%-off launch offer on the same page applies only to v4 / v4 Turbo). Product: ElevenAPI text to speech. API model: eleven\_v3\_conversational. Settings: standard API rate (same per-1K rate on the pay-as-you-go and plan tiers shown). Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes. Currency: USD. ElevenLabs official API pricing page, observed 2026-10-11 (was $0.05 per 1K when observed 2026-09-25).</sub>

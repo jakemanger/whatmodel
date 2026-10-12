@@ -45,6 +45,8 @@ weighted average                        = 36.1
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/JanusFlow-1.3B)
 
 [interactive version](https://whatmodel.sh/model/janusflow-1-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

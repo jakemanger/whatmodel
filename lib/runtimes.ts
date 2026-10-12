@@ -103,3 +103,22 @@ export function primary(v: Variant) {
   const first = ORDER.map((id) => all.find((x) => x.runtime === id)).find(Boolean)!;
   return { runtime: RUNTIMES.find((r) => r.id === first.runtime)!, cmd: first.steps.find((s) => s.cmd)?.cmd ?? v.cmd };
 }
+
+// The "how to run it" guide both the site and the markdown pages show: one section per runtime that can
+// load one of the downloads (llama.cpp first), each with its versions and the one to start on (4-bit).
+// Ollama lists its own library tags when it has them, rather than the same GGUFs again via hf.co.
+export type GuideSection = { runtime: Runtime; versions: { v: Variant; steps: Step[] }[]; preferred: number };
+export function runGuide(variants: Variant[]): GuideSection[] {
+  return RUNTIMES.flatMap((runtime) => {
+    let versions = variants.flatMap((v) => stepsFor(v).filter((x) => x.runtime === runtime.id).map((x) => ({ v, steps: x.steps })));
+    if (runtime.id === "ollama") {
+      const tags = versions.filter((x) => !x.steps[0].cmd?.includes("hf.co/"));
+      if (tags.length) versions = tags;
+    }
+    if (!versions.length) return [];
+    return [{ runtime, versions, preferred: Math.max(0, versions.findIndex((x) => /q4|4.?bit/i.test(x.v.quant))) }];
+  });
+}
+
+// A version's name as shown: quantisation codes in capitals, MLX bit widths as they are.
+export const versionLabel = (v: Variant) => { const q = v.quant.replace(/^mlx-/, ""); return /^(i?q\d|bf16|f16|f32)/i.test(q) ? q.toUpperCase() : q; };

@@ -128,10 +128,10 @@ weighted average                                   = 72.1
 
 ## How to run it
 
+### Through an API
+
 api (Alibaba Cloud Model Studio) · $0.70/M blended · $0.4 in / $1.6 out per 1M tokens · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/models)
 
 <sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per 1M tokens, Singapore (International), qwen3.7-plus, ≤256K input tier list price (a limited-time 20% discount is also advertised and not applied); 256K–1M input tier priced higher. Observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/alibaba/qwen3.7-plus.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/qwen3-7-plus) · [JSON](https://whatmodel.sh/api?format=json&all=1)

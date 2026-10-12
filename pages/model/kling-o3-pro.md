@@ -51,10 +51,10 @@ weighted average                                   = 63.7
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.11/sec · [fal.ai](https://fal.ai/models/fal-ai/kling-video/o3/pro/text-to-video)
 
 <sub>[price source](https://fal.ai/models/fal-ai/kling-video/o3/pro/text-to-video): USD per second of generated video on fal.ai, audio off. Product: fal Kling O3 Pro text-to-video endpoint ('Kling O3 Text to Video \[Pro\]'). API model: fal-ai/kling-video/o3/pro/text-to-video. Settings: generate\_audio=false (the endpoint default is true, $0.14/s). Price basis: per-second rate printed by fal. The O3 Pro video-edit endpoint (fal-ai/kling-video/o3/pro/video-to-video/edit, input video) is $0.168/s. fal does not state the output resolution on this page. Kling's own developer page lists 'Kling 3.0 Omni' without an O3 or Pro label, so the explicitly named fal endpoint is used. Currency: USD. Not the Kling direct tariff. fal.ai model page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/kling-o3-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -64,55 +64,62 @@ weighted average                                   = 47.5
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct/blob/e5d64addd26a6a1db0f9b863abf6ee3141936807/README.md): Context length stated on the official model card.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download        size  score
-4-bit q4_k_m  ~4.1GB   47.5
-8-bit q8_0    ~7.2GB   47.5
-4-bit Q4_K_M  ~4.1GB   47.5
-8-bit Q8_0    ~7.2GB   47.5
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run DeepSeek-Coder 6.7B Instruct (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/tree/9e221e6b41cb1bf1c5d8f9718e81e3dc781f7557))
+   
+   ```sh
+   llama cli -hf TheBloke/deepseek-coder-6.7B-instruct-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf TheBloke/deepseek-coder-6.7B-instruct-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~7.2 GB) `llama cli -hf TheBloke/deepseek-coder-6.7B-instruct-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~4.1GB
-llama cli -hf TheBloke/deepseek-coder-6.7B-instruct-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/deepseek-coder-6.7B-instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~7.2GB
-llama cli -hf TheBloke/deepseek-coder-6.7B-instruct-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/deepseek-coder-6.7B-instruct-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~4.1GB
-lms get https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~7.2GB
-lms get https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run DeepSeek-Coder 6.7B Instruct (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF/tree/9e221e6b41cb1bf1c5d8f9718e81e3dc781f7557))
+   
+   ```sh
+   lms get https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~4.1GB
-ollama run deepseek-coder:6.7b-instruct-q4_K_M
-# 8-bit q8_0 · ~7.2GB
-ollama run deepseek-coder:6.7b-instruct-q8_0
-# 4-bit Q4_K_M · ~4.1GB
-ollama run hf.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~7.2GB
-ollama run hf.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF:Q8_0
-```
+Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-GGUF@Q8_0 -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run DeepSeek-Coder 6.7B Instruct (Q4_K_M, needs ~4.1 GB, from [ollama.com](https://ollama.com/library/deepseek-coder/tags))
+   
+   ```sh
+   ollama run deepseek-coder:6.7b-instruct-q4_K_M
+   ```
+
+Other versions: Q8_0 (~7.2 GB) `ollama run deepseek-coder:6.7b-instruct-q8_0`
+
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct)
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-6-7b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

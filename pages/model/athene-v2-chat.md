@@ -58,72 +58,87 @@ weighted average                                   = 56.3
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/Nexusflow/Athene-V2-Chat/blob/493f1bbd561a5a7e3d27c4081d4ee47508bf6831/config.json): Nexusflow official configuration for Athene-V2-Chat (pinned commit): max\_position\_embeddings 32768. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~44.12GB   56.3
-8-bit q8_0                 ~87.74GB   56.3
-4-bit Q4_K_M                ~47.4GB   56.3
-8-bit Q8_0                  ~77.3GB   56.3
-4-bit mlx-4bit · mac only   ~40.9GB   56.3
-4-bit mlx-8bit · mac only   ~77.3GB   56.3
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Athene-V2-Chat 72B (Q4_K_M, needs ~47.4 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Athene-V2-Chat-GGUF/tree/738b7c23ea1ae327fa76d915c98fbeceebfbe77f))
+   
+   ```sh
+   llama cli -hf lmstudio-community/Athene-V2-Chat-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/Athene-V2-Chat-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~77.3 GB) `llama cli -hf lmstudio-community/Athene-V2-Chat-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~47.4GB
-llama cli -hf lmstudio-community/Athene-V2-Chat-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/Athene-V2-Chat-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~77.3GB
-llama cli -hf lmstudio-community/Athene-V2-Chat-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/Athene-V2-Chat-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~47.4GB
-lms get https://huggingface.co/lmstudio-community/Athene-V2-Chat-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~77.3GB
-lms get https://huggingface.co/lmstudio-community/Athene-V2-Chat-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~40.9GB
-lms get https://huggingface.co/mlx-community/Athene-V2-Chat-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~77.3GB
-lms get https://huggingface.co/mlx-community/Athene-V2-Chat-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Athene-V2-Chat 72B (Q4_K_M, needs ~47.4 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Athene-V2-Chat-GGUF/tree/738b7c23ea1ae327fa76d915c98fbeceebfbe77f))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/Athene-V2-Chat-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~44.12GB
-ollama run athene-v2:72b-q4_K_M
-# 8-bit q8_0 · ~87.74GB
-ollama run athene-v2:72b-q8_0
-```
+Other versions: Q8_0 (~77.3 GB) `lms get https://huggingface.co/lmstudio-community/Athene-V2-Chat-GGUF@Q8_0 -y` · 4bit (~40.9 GB, Mac only) `lms get https://huggingface.co/mlx-community/Athene-V2-Chat-4bit -y` · 8bit (~77.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Athene-V2-Chat-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~40.9GB
-mlx_lm.chat --model mlx-community/Athene-V2-Chat-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Athene-V2-Chat-4bit
-# 4-bit mlx-8bit · mac only · ~77.3GB
-mlx_lm.chat --model mlx-community/Athene-V2-Chat-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Athene-V2-Chat-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Athene-V2-Chat 72B (Q4_K_M, needs ~44.12 GB, from [ollama.com](https://ollama.com/library/athene-v2/tags))
+   
+   ```sh
+   ollama run athene-v2:72b-q4_K_M
+   ```
+
+Other versions: Q8_0 (~87.74 GB) `ollama run athene-v2:72b-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Athene-V2-Chat 72B (4bit, needs ~40.9 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Athene-V2-Chat-4bit/tree/a1dbe1a33db6ac95dbca93094916f3012fef532e))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Athene-V2-Chat-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Athene-V2-Chat-4bit
+   ```
+
+Other versions: 8bit (~77.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Athene-V2-Chat-8bit`
+
+Official weights and documentation: [huggingface.co/Nexusflow](https://huggingface.co/Nexusflow/Athene-V2-Chat)
 
 [interactive version](https://whatmodel.sh/model/athene-v2-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

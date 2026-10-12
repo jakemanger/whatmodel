@@ -43,20 +43,14 @@ weighted average                                 = 43.9
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp32 (parler-tts)  ~3.51GB   43.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (parler-tts), needs ~3.51 GB, from [huggingface.co/parler-tts](https://huggingface.co/parler-tts/parler-tts-mini-v1/blob/0392b9451a601e528fd863bbb0598431fee810d9/README.md))
+   
+   ```sh
+   pip install git+https://github.com/huggingface/parler-tts.git soundfile && python -c "import torch, soundfile as sf; from parler_tts import ParlerTTSForConditionalGeneration; from transformers import AutoTokenizer; d = 'cuda:0' if torch.cuda.is_available() else 'cpu'; m = ParlerTTSForConditionalGeneration.from_pretrained('parler-tts/parler-tts-mini-v1').to(d); t = AutoTokenizer.from_pretrained('parler-tts/parler-tts-mini-v1'); desc = 'A female speaker delivers a slightly expressive and animated speech with a moderate speed and pitch. The recording is of very high quality, with the speaker voice sounding clear and very close up.'; g = m.generate(input_ids=t(desc, return_tensors='pt').input_ids.to(d), prompt_input_ids=t('Hey, how are you doing today?', return_tensors='pt').input_ids.to(d)); sf.write('parler_tts_out.wav', g.cpu().numpy().squeeze(), m.config.sampling_rate)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (parler-tts) · ~3.51GB
-pip install git+https://github.com/huggingface/parler-tts.git soundfile && python -c "import torch, soundfile as sf; from parler_tts import ParlerTTSForConditionalGeneration; from transformers import AutoTokenizer; d = 'cuda:0' if torch.cuda.is_available() else 'cpu'; m = ParlerTTSForConditionalGeneration.from_pretrained('parler-tts/parler-tts-mini-v1').to(d); t = AutoTokenizer.from_pretrained('parler-tts/parler-tts-mini-v1'); desc = 'A female speaker delivers a slightly expressive and animated speech with a moderate speed and pitch. The recording is of very high quality, with the speaker voice sounding clear and very close up.'; g = m.generate(input_ids=t(desc, return_tensors='pt').input_ids.to(d), prompt_input_ids=t('Hey, how are you doing today?', return_tensors='pt').input_ids.to(d)); sf.write('parler_tts_out.wav', g.cpu().numpy().squeeze(), m.config.sampling_rate)"
-```
+Official weights and documentation: [huggingface.co/parler-tts](https://huggingface.co/parler-tts/parler-tts-mini-v1)
 
 [interactive version](https://whatmodel.sh/model/parler-tts-mini-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

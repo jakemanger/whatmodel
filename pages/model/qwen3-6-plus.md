@@ -115,10 +115,10 @@ weighted average                                   = 70.0
 
 ## How to run it
 
+### Through an API
+
 api (Together AI) · $1.13/M blended · $0.5 in / $3 out per 1M tokens · [docs.together.ai](https://docs.together.ai/docs/serverless-models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/togetherai/models/Qwen/Qwen3.6-Plus.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/alibaba/qwen3.6-plus.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/qwen3-6-plus) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -45,20 +45,14 @@ weighted average                                   = 34.9
 
 ## How to run it
 
-<pre>
-version    needs  score
-fp32     ~2.04GB   34.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~2.04 GB, from [huggingface.co/speechbrain](https://huggingface.co/speechbrain/asr-wav2vec2-librispeech))
+   
+   ```sh
+   uv run --with speechbrain --with transformers python -c "from speechbrain.inference.ASR import EncoderASR as A; print(A.from_hparams(source='speechbrain/asr-wav2vec2-librispeech', savedir='pretrained_models/asr-wav2vec2-librispeech').transcribe_file('audio.wav'))"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · ~2.04GB
-uv run --with speechbrain --with transformers python -c "from speechbrain.inference.ASR import EncoderASR as A; print(A.from_hparams(source='speechbrain/asr-wav2vec2-librispeech', savedir='pretrained_models/asr-wav2vec2-librispeech').transcribe_file('audio.wav'))"
-```
+Official weights and documentation: [huggingface.co/speechbrain](https://huggingface.co/speechbrain/asr-wav2vec2-librispeech)
 
 [interactive version](https://whatmodel.sh/model/speechbrain-asr-wav2vec2-librispeech) · [JSON](https://whatmodel.sh/api?format=json&all=1)

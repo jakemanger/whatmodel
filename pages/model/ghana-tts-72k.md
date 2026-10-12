@@ -45,6 +45,8 @@ weighted average                        = 61.8
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/ghananlpcommunity](https://huggingface.co/ghananlpcommunity/ghana-tts-72k)
 
 [interactive version](https://whatmodel.sh/model/ghana-tts-72k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

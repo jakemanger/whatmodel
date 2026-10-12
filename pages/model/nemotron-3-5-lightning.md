@@ -65,81 +65,93 @@ weighted average                        = 62.2
 
 ## How to run it
 
+### Through an API
+
 api (Fireworks AI) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [fireworks.ai](https://fireworks.ai/docs/)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/fireworks-ai/models/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-3.5-lightning.toml)</sub>
 
-<pre>
-download                        size  score
-4-bit q4_k_m                ~19.46GB   62.2
-8-bit q8_0                  ~38.42GB   62.2
-4-bit mlx-nvfp4 · mac only  ~19.46GB   62.2
-4-bit Q4_K_M                 ~25.5GB   62.2
-8-bit Q8_0                     ~35GB   62.2
-4-bit mlx-4bit · mac only    ~17.8GB   62.2
-4-bit mlx-8bit · mac only    ~33.6GB   62.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Nemotron 3.5 Lightning 30B-A3B (Q4_K_M, needs ~25.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF/tree/f0eec2267ae843d9eb21ea3926ab0046da0a8628))
+   
+   ```sh
+   llama cli -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~25.5GB
-llama cli -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~35GB
-llama cli -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~35 GB) `llama cli -hf bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~25.5GB
-lms get https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~35GB
-lms get https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~17.8GB
-lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~33.6GB
-lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Nemotron 3.5 Lightning 30B-A3B (Q4_K_M, needs ~25.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF/tree/f0eec2267ae843d9eb21ea3926ab0046da0a8628))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~19.46GB
-ollama run nemotron-3.5-lightning:30b
-# 8-bit q8_0 · ~38.42GB
-ollama run nemotron-3.5-lightning:30b-a3b-q8_0
-# 4-bit mlx-nvfp4 · mac only · ~19.46GB
-ollama run nemotron-3.5-lightning:30b-a3b-mlx
-# 4-bit Q4_K_M · ~25.5GB
-ollama run hf.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~35GB
-ollama run hf.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~35 GB) `lms get https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF@Q8_0 -y` · 4bit (~17.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit -y` · 8bit (~33.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-8bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~17.8GB
-mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit
-# 4-bit mlx-8bit · mac only · ~33.6GB
-mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-8bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Nemotron 3.5 Lightning 30B-A3B (Q4_K_M, needs ~19.46 GB, from [ollama.com](https://ollama.com/library/nemotron-3.5-lightning/tags))
+   
+   ```sh
+   ollama run nemotron-3.5-lightning:30b
+   ```
+
+Other versions: Q8_0 (~38.42 GB) `ollama run nemotron-3.5-lightning:30b-a3b-q8_0` · nvfp4 (~19.46 GB, Mac only) `ollama run nemotron-3.5-lightning:30b-a3b-mlx`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Nemotron 3.5 Lightning 30B-A3B (4bit, needs ~17.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit/tree/55ac8c89261109b36c04371cd3f479a4594208c8))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit
+   ```
+
+Other versions: 8bit (~33.6 GB, Mac only) `mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-8bit`
+
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
 
 [interactive version](https://whatmodel.sh/model/nemotron-3-5-lightning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

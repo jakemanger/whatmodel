@@ -156,54 +156,53 @@ weighted average                                   = 72.3
 
 ## How to run it
 
-<pre>
-download                                  size  score
-4-bit fp4 + fp8 mixed · nvidia only  ~864.72GB   72.3
-4-bit Q4_K_M                          ~954.6GB   72.3
-8-bit Q8_0                           ~1671.8GB   72.3
-2-bit Q2_K                            ~574.1GB   72.3
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run DeepSeek V4 Pro (Preview, Apr 2026) (Q4_K_M, needs ~954.6 GB, from [huggingface.co/teamblobfish](https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF/tree/4c14720bf7315ecbb9304f0bf4339cc294d5a00d))
+   
+   ```sh
+   llama cli -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~954.6GB
-llama cli -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~1671.8GB
-llama cli -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q8_0
-# 2-bit Q2_K · ~574.1GB
-llama cli -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q2_K
-```
+Other versions: Q8_0 (~1671.8 GB) `llama cli -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q8_0` · Q2_K (~574.1 GB) `llama cli -hf teamblobfish/DeepSeek-V4-Pro-GGUF:Q2_K`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~954.6GB
-lms get https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~1671.8GB
-lms get https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit Q2_K · ~574.1GB
-lms get https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Other engines**
+2. Run DeepSeek V4 Pro (Preview, Apr 2026) (Q4_K_M, needs ~954.6 GB, from [huggingface.co/teamblobfish](https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF/tree/4c14720bf7315ecbb9304f0bf4339cc294d5a00d))
+   
+   ```sh
+   lms get https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit fp4 + fp8 mixed · nvidia only · ~864.72GB
-vllm serve deepseek-ai/DeepSeek-V4-Pro
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: Q8_0 (~1671.8 GB) `lms get https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF@Q8_0 -y` · Q2_K (~574.1 GB) `lms get https://huggingface.co/teamblobfish/DeepSeek-V4-Pro-GGUF@Q2_K -y`
+
+### Other ways to run it
+
+1. Run it as published (fp4 + fp8 mixed, needs ~864.72 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+   
+   ```sh
+   vllm serve deepseek-ai/DeepSeek-V4-Pro
+   ```
+
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v4-pro-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

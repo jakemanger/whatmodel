@@ -57,10 +57,10 @@ weighted average                        = 55.0
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.020/sec · [replicate.com](https://replicate.com/prunaai/p-video)
 
 <sub>[price source](https://replicate.com/prunaai/p-video): USD per second of output video, 720p standard (draft mode off). Product: Replicate model prunaai/p-video (Pruna's official model on Replicate). Price basis: Replicate per-output-second tariff (not hardware time). 720p draft $0.005/s; 1080p $0.04/s standard, $0.01/s draft. The page notes paid pricing resumes after an extended free launch period; the listed paid rate is recorded. Currency: USD. Replicate model page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/p-video) · [JSON](https://whatmodel.sh/api?format=json&all=1)

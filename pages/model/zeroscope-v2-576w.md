@@ -48,20 +48,14 @@ weighted average                                   = 27.3
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp16 · nvidia only  ~7.9GB   27.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~7.9 GB, NVIDIA only, from [huggingface.co/cerspense](https://huggingface.co/cerspense/zeroscope_v2_576w))
+   
+   ```sh
+   python -c "import torch;from diffusers import DiffusionPipeline;from diffusers.utils import export_to_video;p=DiffusionPipeline.from_pretrained('cerspense/zeroscope_v2_576w',torch_dtype=torch.float16);p.enable_model_cpu_offload();export_to_video(p('Darth Vader is surfing on waves',num_inference_steps=40,height=320,width=576,num_frames=24).frames[0],'zeroscope.mp4')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~7.9GB
-python -c "import torch;from diffusers import DiffusionPipeline;from diffusers.utils import export_to_video;p=DiffusionPipeline.from_pretrained('cerspense/zeroscope_v2_576w',torch_dtype=torch.float16);p.enable_model_cpu_offload();export_to_video(p('Darth Vader is surfing on waves',num_inference_steps=40,height=320,width=576,num_frames=24).frames[0],'zeroscope.mp4')"
-```
+Official weights and documentation: [huggingface.co/cerspense](https://huggingface.co/cerspense/zeroscope_v2_576w)
 
 [interactive version](https://whatmodel.sh/model/zeroscope-v2-576w) · [JSON](https://whatmodel.sh/api?format=json&all=1)

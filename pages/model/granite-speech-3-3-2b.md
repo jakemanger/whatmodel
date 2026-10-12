@@ -45,20 +45,14 @@ weighted average                        = 59.9
 
 ## How to run it
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~7.72GB   59.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~7.72 GB, NVIDIA only, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-speech-3.3-2b))
+   
+   ```sh
+   vllm serve ibm-granite/granite-speech-3.3-2b --max-model-len 2048 --enable-lora --lora-modules speech=ibm-granite/granite-speech-3.3-2b --max-lora-rank 64
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~7.72GB
-vllm serve ibm-granite/granite-speech-3.3-2b --max-model-len 2048 --enable-lora --lora-modules speech=ibm-granite/granite-speech-3.3-2b --max-lora-rank 64
-```
+Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-speech-3.3-2b)
 
 [interactive version](https://whatmodel.sh/model/granite-speech-3-3-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

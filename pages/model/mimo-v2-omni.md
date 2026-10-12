@@ -83,8 +83,6 @@ XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/b
 
 ## How to run it
 
-<sub>[context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/xiaomi/mimo-v2-omni.toml): models.dev (MIT, pinned commit a668908) MiMo-V2-Omni limit.context 262,144 tokens (output 131,072). Xiaomi's own docs no longer list the model (deprecated 2026-06-30). Observed 2026-09-25.</sub>
-
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/mimo-v2-omni) · [JSON](https://whatmodel.sh/api?format=json&all=1)

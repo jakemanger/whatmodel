@@ -55,20 +55,14 @@ weighted average                                   = 34.0
 
 ## How to run it
 
-<pre>
-version                                   needs  score
-official OmniGen package, default setti…   ~9GB   34.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (official OmniGen package, default settings, needs ~9 GB, NVIDIA only, from [huggingface.co/Shitao](https://huggingface.co/Shitao/OmniGen-v1/blob/58e249c7c7634423c0ba41c34a774af79aa87889/README.md))
+   
+   ```sh
+   git clone https://github.com/staoxiao/OmniGen.git && cd OmniGen && pip install -e . && python -c "from OmniGen import OmniGenPipeline; pipe = OmniGenPipeline.from_pretrained('Shitao/OmniGen-v1'); pipe(prompt='A curly-haired man in a red shirt is drinking tea.', height=1024, width=1024, guidance_scale=2.5, seed=0)[0].save('example_t2i.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# official OmniGen package, default settings · nvidia only · ~9GB
-git clone https://github.com/staoxiao/OmniGen.git && cd OmniGen && pip install -e . && python -c "from OmniGen import OmniGenPipeline; pipe = OmniGenPipeline.from_pretrained('Shitao/OmniGen-v1'); pipe(prompt='A curly-haired man in a red shirt is drinking tea.', height=1024, width=1024, guidance_scale=2.5, seed=0)[0].save('example_t2i.png')"
-```
+Official weights and documentation: [huggingface.co/Shitao](https://huggingface.co/Shitao/OmniGen-v1)
 
 [interactive version](https://whatmodel.sh/model/omnigen-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

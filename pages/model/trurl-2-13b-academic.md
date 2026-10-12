@@ -42,20 +42,14 @@ weighted average                                 = 35.6
 
 ## How to run it
 
-<pre>
-download         size  score
-16-bit bf16  ~26.03GB   35.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~26.03 GB, from [huggingface.co/Voicelab](https://huggingface.co/Voicelab/trurl-2-13b-academic/tree/cdbd008db827f27831b736289d543e12fe17eb2e))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Voicelab/trurl-2-13b-academic', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~26.03GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Voicelab/trurl-2-13b-academic', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/Voicelab](https://huggingface.co/Voicelab/trurl-2-13b-academic)
 
 [interactive version](https://whatmodel.sh/model/trurl-2-13b-academic) · [JSON](https://whatmodel.sh/api?format=json&all=1)

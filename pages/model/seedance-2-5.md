@@ -85,10 +85,10 @@ weighted average                                   = 77.4
 
 ## How to run it
 
+### Through an API
+
 api (Runway) · $0.30/sec · [docs.dev.runwayml.com](https://docs.dev.runwayml.com/guides/pricing)
 
 <sub>[price source](https://docs.dev.runwayml.com/guides/pricing): USD per second of output video, 720p, on the Runway developer API. Product: Runway API video generation. API model: seedance2\_5 (Seedance 2.5). Settings: resolution=720p, no input/reference video. Price basis: 30 credits per output second × $0.01 per credit. Input and reference video add 15 credits/s; 80-credit minimum per generation; 480p 20 credits/s, 1080p 68 credits/s. BytePlus bills Seedance per token and prints no exact per-second rate; fal lists roughly $0.4730/s at 720p. Sales tax excluded. Currency: USD. Runway API pricing documentation, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/seedance-2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

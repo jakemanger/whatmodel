@@ -42,20 +42,14 @@ weighted average                        = 54.7
 
 ## How to run it
 
-<pre>
-version                                  needs  score
-fp32 (coqui-tts 0.27.5) · nvidia only  ~1.88GB   54.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (coqui-tts 0.27.5), needs ~1.88 GB, NVIDIA only, from [huggingface.co/NightPrince](https://huggingface.co/NightPrince/Fasih-TTS-V1/blob/348f715a4fe52fd4dd39240f420ace2ea29150a3/README.md))
+   
+   ```sh
+   pip install "coqui-tts==0.27.5" torch torchaudio torchcodec && python -c "import torch, soundfile as sf; from huggingface_hub import snapshot_download; from TTS.tts.configs.xtts_config import XttsConfig; from TTS.tts.models.xtts import Xtts; path = snapshot_download('NightPrince/Fasih-TTS-V1'); config = XttsConfig(); config.load_json(f'{path}/config.json'); model = Xtts.init_from_config(config); model.load_checkpoint(config, checkpoint_path=f'{path}/model.pth', vocab_path=f'{path}/vocab.json', use_deepspeed=False); model.cuda().eval(); lat = torch.load(f'{path}/speaker_latents.pt', map_location='cuda'); out = model.inference('السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ', 'ar', lat['gpt_cond_latent'], lat['speaker_embedding'], temperature=0.65, repetition_penalty=2.0, enable_text_splitting=False); sf.write('fasih.wav', out['wav'], 24000)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (coqui-tts 0.27.5) · nvidia only · ~1.88GB
-pip install "coqui-tts==0.27.5" torch torchaudio torchcodec && python -c "import torch, soundfile as sf; from huggingface_hub import snapshot_download; from TTS.tts.configs.xtts_config import XttsConfig; from TTS.tts.models.xtts import Xtts; path = snapshot_download('NightPrince/Fasih-TTS-V1'); config = XttsConfig(); config.load_json(f'{path}/config.json'); model = Xtts.init_from_config(config); model.load_checkpoint(config, checkpoint_path=f'{path}/model.pth', vocab_path=f'{path}/vocab.json', use_deepspeed=False); model.cuda().eval(); lat = torch.load(f'{path}/speaker_latents.pt', map_location='cuda'); out = model.inference('السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ', 'ar', lat['gpt_cond_latent'], lat['speaker_embedding'], temperature=0.65, repetition_penalty=2.0, enable_text_splitting=False); sf.write('fasih.wav', out['wav'], 24000)"
-```
+Official weights and documentation: [huggingface.co/NightPrince](https://huggingface.co/NightPrince/Fasih-TTS-V1)
 
 [interactive version](https://whatmodel.sh/model/fasih-tts-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

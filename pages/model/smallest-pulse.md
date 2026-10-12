@@ -42,10 +42,10 @@ weighted average                                   = 61.0
 
 ## How to run it
 
+### Through an API
+
 api (Smallest.ai) · $0.0040/audio min · [docs.smallest.ai](https://docs.smallest.ai/waves/model-cards/speech-to-text/pulse.md)
 
 <sub>[price source](https://docs.smallest.ai/waves/model-cards/speech-to-text/pulse.md): USD per input audio minute: Smallest AI's Pulse model card, Model Overview 'Pricing (Standard Plan) \| Realtime: $0.004/min · Batch: $0.003/min'; realtime rate used (Pipecat ran the WebSocket). Note: the 2026-05-28 changelog listed Pulse streaming at $0.006/min; the current model card is used. Product: Smallest AI Waves STT (unified /waves/v1/stt/, ?model=pulse). API model: pulse. Settings: Standard plan, realtime. Price basis: published list rate. Currency: USD. Smallest AI official model card, observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/smallest-pulse) · [JSON](https://whatmodel.sh/api?format=json&all=1)

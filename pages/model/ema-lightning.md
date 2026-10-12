@@ -43,20 +43,14 @@ weighted average                         = 40.2
 
 ## How to run it
 
-<pre>
-version           needs  score
-fp32 (PyTorch)  ~0.04GB   40.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (PyTorch), needs ~0.04 GB, from [huggingface.co/canberkkkkkk](https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md))
+   
+   ```sh
+   pip install ema-lightning && python -c "from ema_lightning import EMA; EMA().say('Merhaba, size nasıl yardımcı olabilirim?', path='merhaba.wav')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (PyTorch) · ~0.04GB
-pip install ema-lightning && python -c "from ema_lightning import EMA; EMA().say('Merhaba, size nasıl yardımcı olabilirim?', path='merhaba.wav')"
-```
+Official weights and documentation: [huggingface.co/canberkkkkkk](https://huggingface.co/canberkkkkkk/ema-lightning)
 
 [interactive version](https://whatmodel.sh/model/ema-lightning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

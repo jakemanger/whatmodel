@@ -44,60 +44,89 @@ weighted average                          = 26.6
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct/blob/a25c7fa65fc2a644e6270b8940dbe295b51da681/README.md): Card hyper-parameter table: 'Sequence Length 4,096'. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_k_m               ~1.05GB   26.6
-16-bit bf16 · nvidia only  ~3.31GB   26.6
-4-bit mlx-4bit · mac only   ~0.9GB   26.6
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run EuroLLM 1.7B Instruct (Q4_K_M, needs ~1.05 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF/tree/2951f08f66429c934c8b01a94347161362430808))
+   
+   ```sh
+   llama cli -hf mradermacher/EuroLLM-1.7B-Instruct-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/EuroLLM-1.7B-Instruct-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~1.05GB
-llama cli -hf mradermacher/EuroLLM-1.7B-Instruct-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/EuroLLM-1.7B-Instruct-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run EuroLLM 1.7B Instruct (Q4_K_M, needs ~1.05 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF/tree/2951f08f66429c934c8b01a94347161362430808))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~1.05GB
-lms get https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~0.9GB
-lms get https://huggingface.co/jevoma4362/EuroLLM-1.7B-Instruct-mlx-4Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: 4bit (~0.9 GB, Mac only) `lms get https://huggingface.co/jevoma4362/EuroLLM-1.7B-Instruct-mlx-4Bit -y`
 
-```sh
-# 4-bit q4_k_m · ~1.05GB
-ollama run hf.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF:Q4_K_M
-```
+### Ollama
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~0.9GB
-mlx_lm.chat --model jevoma4362/EuroLLM-1.7B-Instruct-mlx-4Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model jevoma4362/EuroLLM-1.7B-Instruct-mlx-4Bit
-```
+2. Run EuroLLM 1.7B Instruct (Q4_K_M, needs ~1.05 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF/tree/2951f08f66429c934c8b01a94347161362430808))
+   
+   ```sh
+   ollama run hf.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF:Q4_K_M
+   ```
 
-**Other engines**
+### MLX (Mac)
 
-```sh
-# 16-bit bf16 · nvidia only · ~3.31GB
-vllm serve utter-project/EuroLLM-1.7B-Instruct
-```
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run EuroLLM 1.7B Instruct (4bit, needs ~0.9 GB, Mac only, from [huggingface.co/jevoma4362](https://huggingface.co/jevoma4362/EuroLLM-1.7B-Instruct-mlx-4Bit/tree/6564fac274047a98b97c54287607626553f5647f))
+   
+   ```sh
+   mlx_lm.chat --model jevoma4362/EuroLLM-1.7B-Instruct-mlx-4Bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model jevoma4362/EuroLLM-1.7B-Instruct-mlx-4Bit
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~3.31 GB, NVIDIA only, from [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct/tree/a25c7fa65fc2a644e6270b8940dbe295b51da681))
+   
+   ```sh
+   vllm serve utter-project/EuroLLM-1.7B-Instruct
+   ```
+
+Official weights and documentation: [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/eurollm-1-7b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

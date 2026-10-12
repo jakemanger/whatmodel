@@ -53,70 +53,93 @@ weighted average                                   = 44.1
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/config.json): PRIME-RL official configuration for Eurus-2-7B-PRIME (pinned commit): max\_position\_embeddings 4096. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit fp32 · nvidia only   ~37.08GB   44.1
-4-bit Q4_K_M                 ~4.7GB   44.1
-8-bit Q8_0                   ~8.1GB   44.1
-4-bit mlx-8bit · mac only    ~8.1GB   44.1
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Eurus-2-7B-PRIME (Q4_K_M, needs ~4.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF/tree/82a7007d3fe800366e5eeaf7602515a6021fcd62))
+   
+   ```sh
+   llama cli -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~8.1 GB) `llama cli -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~4.7GB
-llama cli -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.1GB
-llama cli -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Eurus-2-7B-PRIME-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~4.7GB
-lms get https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~8.1GB
-lms get https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~8.1GB
-lms get https://huggingface.co/WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Eurus-2-7B-PRIME (Q4_K_M, needs ~4.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF/tree/82a7007d3fe800366e5eeaf7602515a6021fcd62))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~4.7GB
-ollama run hf.co/bartowski/Eurus-2-7B-PRIME-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.1GB
-ollama run hf.co/bartowski/Eurus-2-7B-PRIME-GGUF:Q8_0
-```
+Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF@Q8_0 -y` · 8bit (~8.1 GB, Mac only) `lms get https://huggingface.co/WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-8bit · mac only · ~8.1GB
-mlx_lm.chat --model WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-**Other engines**
+2. Run Eurus-2-7B-PRIME (Q4_K_M, needs ~4.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Eurus-2-7B-PRIME-GGUF/tree/82a7007d3fe800366e5eeaf7602515a6021fcd62))
+   
+   ```sh
+   ollama run hf.co/bartowski/Eurus-2-7B-PRIME-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit fp32 · nvidia only · ~37.08GB
-vllm serve PRIME-RL/Eurus-2-7B-PRIME
-```
+Other versions: Q8_0 (~8.1 GB) `ollama run hf.co/bartowski/Eurus-2-7B-PRIME-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Eurus-2-7B-PRIME (8bit, needs ~8.1 GB, Mac only, from [huggingface.co/WaveCut](https://huggingface.co/WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx/tree/58bb62b06dae2a628b4ab31ca4f3f49ae954eba8))
+   
+   ```sh
+   mlx_lm.chat --model WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model WaveCut/PRIME-RL_Eurus-2-7B-PRIME-Q8-mlx
+   ```
+
+### Other ways to run it
+
+1. Run it as published (fp32, needs ~37.08 GB, NVIDIA only, from [huggingface.co/PRIME-RL](https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME))
+   
+   ```sh
+   vllm serve PRIME-RL/Eurus-2-7B-PRIME
+   ```
+
+Official weights and documentation: [huggingface.co/PRIME-RL](https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME)
 
 [interactive version](https://whatmodel.sh/model/eurus-2-7b-prime) · [JSON](https://whatmodel.sh/api?format=json&all=1)

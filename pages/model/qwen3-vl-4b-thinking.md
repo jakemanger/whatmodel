@@ -124,76 +124,87 @@ weighted average                                   = 56.1
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking/blob/1de27d8c51f12e819435303b9e84c4e25ba8401e/README.md): Official Qwen model card: 'Native 256K context, expandable to 1M'. Observed 2026-10-09.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                     size  score
-4-bit q4_k_m               ~3.3GB   56.1
-8-bit q8_0                 ~5.1GB   56.1
-4-bit Q4_K_M               ~2.5GB   56.1
-8-bit Q8_0                 ~4.3GB   56.1
-4-bit mlx-4bit · mac only  ~3.1GB   56.1
-4-bit mlx-8bit · mac only  ~5.1GB   56.1
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Qwen3-VL 4B Thinking (Q4_K_M, needs ~2.5 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking-GGUF/tree/a55c03cbb1dad5a0c678efa066a8dbccf5a8d30e))
+   
+   ```sh
+   llama cli -hf Qwen/Qwen3-VL-4B-Thinking-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf Qwen/Qwen3-VL-4B-Thinking-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~4.3 GB) `llama cli -hf Qwen/Qwen3-VL-4B-Thinking-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~2.5GB
-llama cli -hf Qwen/Qwen3-VL-4B-Thinking-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf Qwen/Qwen3-VL-4B-Thinking-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~4.3GB
-llama cli -hf Qwen/Qwen3-VL-4B-Thinking-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf Qwen/Qwen3-VL-4B-Thinking-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~2.5GB
-lms get https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~4.3GB
-lms get https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~3.1GB
-lms get https://huggingface.co/lmstudio-community/Qwen3-VL-4B-Thinking-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~5.1GB
-lms get https://huggingface.co/lmstudio-community/Qwen3-VL-4B-Thinking-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Qwen3-VL 4B Thinking (Q4_K_M, needs ~2.5 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking-GGUF/tree/a55c03cbb1dad5a0c678efa066a8dbccf5a8d30e))
+   
+   ```sh
+   lms get https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~3.3GB
-ollama run qwen3-vl:4b-thinking
-# 8-bit q8_0 · ~5.1GB
-ollama run qwen3-vl:4b-thinking-q8_0
-# 4-bit Q4_K_M · ~2.5GB
-ollama run hf.co/Qwen/Qwen3-VL-4B-Thinking-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~4.3GB
-ollama run hf.co/Qwen/Qwen3-VL-4B-Thinking-GGUF:Q8_0
-```
+Other versions: Q8_0 (~4.3 GB) `lms get https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking-GGUF@Q8_0 -y` · 4bit (~3.1 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-VL-4B-Thinking-MLX-4bit -y` · 8bit (~5.1 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-VL-4B-Thinking-MLX-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~3.1GB
-mlx_lm.chat --model lmstudio-community/Qwen3-VL-4B-Thinking-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Qwen3-VL-4B-Thinking-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~5.1GB
-mlx_lm.chat --model lmstudio-community/Qwen3-VL-4B-Thinking-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Qwen3-VL-4B-Thinking-MLX-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Qwen3-VL 4B Thinking (Q4_K_M, needs ~3.3 GB, from [ollama.com](https://ollama.com/library/qwen3-vl/tags))
+   
+   ```sh
+   ollama run qwen3-vl:4b-thinking
+   ```
+
+Other versions: Q8_0 (~5.1 GB) `ollama run qwen3-vl:4b-thinking-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Qwen3-VL 4B Thinking (4bit, needs ~3.1 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-VL-4B-Thinking-MLX-4bit/tree/f90f31f2561a8eb79a1b9aabc757d5b5682527ff))
+   
+   ```sh
+   mlx_lm.chat --model lmstudio-community/Qwen3-VL-4B-Thinking-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lmstudio-community/Qwen3-VL-4B-Thinking-MLX-4bit
+   ```
+
+Other versions: 8bit (~5.1 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-VL-4B-Thinking-MLX-8bit`
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking)
 
 [interactive version](https://whatmodel.sh/model/qwen3-vl-4b-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -44,55 +44,70 @@ weighted average                                   = 59.1
 
 ## How to run it
 
-<pre>
-download          size  score
-16-bit bf16   ~16.06GB   59.1
-4-bit Q4_K_M    ~4.9GB   59.1
-8-bit Q8_0      ~8.5GB   59.1
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run ToolACE-2-Llama-3.1-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/ToolACE-2-Llama-3.1-8B-GGUF/tree/f5f244eb5fd53cbf4be615588f5167d3f00598f9))
+   
+   ```sh
+   llama cli -hf mradermacher/ToolACE-2-Llama-3.1-8B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/ToolACE-2-Llama-3.1-8B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-llama cli -hf mradermacher/ToolACE-2-Llama-3.1-8B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/ToolACE-2-Llama-3.1-8B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.5GB
-llama cli -hf mradermacher/ToolACE-2-Llama-3.1-8B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/ToolACE-2-Llama-3.1-8B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~8.5 GB) `llama cli -hf mradermacher/ToolACE-2-Llama-3.1-8B-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-lms get https://huggingface.co/mradermacher/ToolACE-2-Llama-3.1-8B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~8.5GB
-lms get https://huggingface.co/mradermacher/ToolACE-2-Llama-3.1-8B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run ToolACE-2-Llama-3.1-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/ToolACE-2-Llama-3.1-8B-GGUF/tree/f5f244eb5fd53cbf4be615588f5167d3f00598f9))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/ToolACE-2-Llama-3.1-8B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-ollama run hf.co/mradermacher/ToolACE-2-Llama-3.1-8B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.5GB
-ollama run hf.co/mradermacher/ToolACE-2-Llama-3.1-8B-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/mradermacher/ToolACE-2-Llama-3.1-8B-GGUF@Q8_0 -y`
 
-```sh
-# 16-bit bf16 · ~16.06GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Team-ACE/ToolACE-2-Llama-3.1-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run ToolACE-2-Llama-3.1-8B (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/ToolACE-2-Llama-3.1-8B-GGUF/tree/f5f244eb5fd53cbf4be615588f5167d3f00598f9))
+   
+   ```sh
+   ollama run hf.co/mradermacher/ToolACE-2-Llama-3.1-8B-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/mradermacher/ToolACE-2-Llama-3.1-8B-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/Team-ACE](https://huggingface.co/Team-ACE/ToolACE-2-Llama-3.1-8B/tree/06c43a399fa3a3e3d553d4f5b58f5f082a5b7cb8))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Team-ACE/ToolACE-2-Llama-3.1-8B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/Team-ACE](https://huggingface.co/Team-ACE/ToolACE-2-Llama-3.1-8B)
 
 [interactive version](https://whatmodel.sh/model/toolace-2-llama-3-1-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

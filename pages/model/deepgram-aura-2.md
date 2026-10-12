@@ -50,10 +50,10 @@ weighted average                                   = 56.5
 
 ## How to run it
 
+### Through an API
+
 api (Deepgram) · $30.00/M chars · [deepgram.com](https://deepgram.com/pricing)
 
 <sub>[price source](https://deepgram.com/pricing): USD per 1M input characters: Deepgram lists Aura-2 text-to-speech at $0.030 per 1k characters, pay as you go (x1000); Growth plan $0.027 per 1k. Product: Deepgram TTS API. API model: aura-2. Settings: pay-as-you-go. Price basis: published list rate. Exclusions: Growth-plan prepay discount. Currency: USD. Deepgram official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/deepgram-aura-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

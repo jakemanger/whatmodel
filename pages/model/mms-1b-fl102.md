@@ -45,20 +45,14 @@ weighted average                        = -9.4
 
 ## How to run it
 
-<pre>
-version    needs  score
-fp32     ~5.11GB   -9.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~5.11 GB, from [huggingface.co/facebook](https://huggingface.co/facebook/mms-1b-fl102))
+   
+   ```sh
+   uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/mms-1b-fl102', chunk_length_s=30)('audio.wav')['text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · ~5.11GB
-uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/mms-1b-fl102', chunk_length_s=30)('audio.wav')['text'])"
-```
+Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/mms-1b-fl102)
 
 [interactive version](https://whatmodel.sh/model/mms-1b-fl102) · [JSON](https://whatmodel.sh/api?format=json&all=1)

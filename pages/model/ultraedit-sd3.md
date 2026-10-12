@@ -42,6 +42,8 @@ weighted average                                   = 32.4
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/BleachNick](https://huggingface.co/BleachNick/SD3_UltraEdit_w_mask)
 
 [interactive version](https://whatmodel.sh/model/ultraedit-sd3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

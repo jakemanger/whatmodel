@@ -40,22 +40,14 @@ weighted average                        = 47.0
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/mistralai/Mixtral-8x22B-v0.1/blob/e1cd34ff1747406fb2277635ed25242803009bc2/config.json): Mistral official configuration for Mixtral-8x22B-v0.1 (pinned commit e1cd34f): max\_position\_embeddings 65536. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
+### Other ways to run it
 
-<pre>
-download          size  score
-16-bit bf16  ~281.24GB   47.0
-</pre>
+1. Run it as published (BF16, needs ~281.24 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Mixtral-8x22B-v0.1/tree/e1cd34ff1747406fb2277635ed25242803009bc2))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='mistralai/Mixtral-8x22B-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~281.24GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='mistralai/Mixtral-8x22B-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mixtral-8x22B-v0.1)
 
 [interactive version](https://whatmodel.sh/model/mixtral-8x22b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

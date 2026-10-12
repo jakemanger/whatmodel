@@ -109,42 +109,22 @@ Qwen/Qwen-Image model…  <a href="https://huggingface.co/Qwen/Qwen-Image/blob/7
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/qwen/qwen-image)
 
 <sub>[price source](https://replicate.com/qwen/qwen-image): USD per output image on Replicate's qwen/qwen-image model (billing: per output image; hardware time not added). The page's current version is served from replicate-pruna/qwen-image (Pruna-optimized deployment). Product: Replicate model API. API model: qwen/qwen-image. Settings: one output image. Price basis: published list rate. Currency: USD. Replicate official model page, observed 2026-09-25.</sub>
 
-<pre>
-version                                     needs  score
-nf4 (bitsandbytes 4-bit transformer + t…  ~12.5GB   54.4
-nf4 + model CPU offload · nvidia only     ~12.5GB   54.4
-fp8_e4m3fn safetensors (sd.cpp) · nvidi…    ~35GB   54.4
-gguf-q4_k_s · nvidia only                 ~25.1GB   54.4
-fp8 onload + disk/CPU offload (DiffSynt…  ~12.5GB   54.4
-gguf-q8_0 + Qwen2.5-VL Q8_0 (sd.cpp)      ~36.6GB   54.4
-gguf-q4_k_m + Qwen2.5-VL Q4_K_M (sd.cpp)  ~22.1GB   54.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (nf4 (bitsandbytes 4-bit transformer + text encoder), needs ~12.5 GB, NVIDIA only, from [huggingface.co/docs](https://huggingface.co/docs/diffusers/en/quicktour))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import DiffusionPipeline; from diffusers.quantizers import PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_4bit', quant_kwargs={'load_in_4bit':True,'bnb_4bit_quant_type':'nf4','bnb_4bit_compute_dtype':torch.bfloat16}, components_to_quantize=['transformer','text_encoder']); p=DiffusionPipeline.from_pretrained('Qwen/Qwen-Image', torch_dtype=torch.bfloat16, quantization_config=q, device_map='cuda'); p('a cat holding a sign', negative_prompt=' ', num_inference_steps=50, true_cfg_scale=4.0).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
+Other versions: nf4 + model CPU offload (~12.5 GB, NVIDIA only) `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import DiffusionPipeline; from diffusers.quantizers import PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_4bit', quant_kwargs={'load_in_4bit':True,'bnb_4bit_quant_type':'nf4','bnb_4bit_compute_dtype':torch.bfloat16}, components_to_quantize=['transformer','text_encoder']); p=DiffusionPipeline.from_pretrained('Qwen/Qwen-Image', torch_dtype=torch.bfloat16, quantization_config=q, device_map='cuda'); p.enable_model_cpu_offload(); p('a cat holding a sign', negative_prompt=' ', num_inference_steps=50, true_cfg_scale=4.0).images[0].save('out.png')"` · fp8_e4m3fn safetensors (sd.cpp) (~35 GB, NVIDIA only) `sd-cli --diffusion-model models/qwen_image_fp8_e4m3fn.safetensors --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p 'a cat holding a sign' --cfg-scale 2.5 --sampling-method euler -v -H 1024 -W 1024 --diffusion-fa --flow-shift 3` · gguf-q4_k_s (~25.1 GB, NVIDIA only) `sd-cli --diffusion-model models/Qwen_Image-Q4_K_S.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p 'a cat holding a sign' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3` · fp8 onload + disk/CPU offload (DiffSynth-Studio VRAM management) (~12.5 GB, NVIDIA only) `git clone https://github.com/modelscope/DiffSynth-Studio.git && cd DiffSynth-Studio && pip install -e . && python examples/qwen_image/model_inference_low_vram/Qwen-Image.py` · gguf-q8_0 + Qwen2.5-VL Q8_0 (sd.cpp) (~36.6 GB) `sd-cli --diffusion-model models/Qwen_Image-Q8_0.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p 'a cat holding a sign that says "Qwen-Image"' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3` · gguf-q4_k_m + Qwen2.5-VL Q4_K_M (sd.cpp) (~22.1 GB) `sd-cli --diffusion-model models/Qwen_Image-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q4_K_M.gguf -p 'a cat holding a sign that says "Qwen-Image"' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3`
 
-**Other engines**
-
-```sh
-# nf4 (bitsandbytes 4-bit transformer + text encoder) · nvidia only · ~12.5GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import DiffusionPipeline; from diffusers.quantizers import PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_4bit', quant_kwargs={'load_in_4bit':True,'bnb_4bit_quant_type':'nf4','bnb_4bit_compute_dtype':torch.bfloat16}, components_to_quantize=['transformer','text_encoder']); p=DiffusionPipeline.from_pretrained('Qwen/Qwen-Image', torch_dtype=torch.bfloat16, quantization_config=q, device_map='cuda'); p('a cat holding a sign', negative_prompt=' ', num_inference_steps=50, true_cfg_scale=4.0).images[0].save('out.png')"
-# nf4 + model CPU offload · nvidia only · ~12.5GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import DiffusionPipeline; from diffusers.quantizers import PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_4bit', quant_kwargs={'load_in_4bit':True,'bnb_4bit_quant_type':'nf4','bnb_4bit_compute_dtype':torch.bfloat16}, components_to_quantize=['transformer','text_encoder']); p=DiffusionPipeline.from_pretrained('Qwen/Qwen-Image', torch_dtype=torch.bfloat16, quantization_config=q, device_map='cuda'); p.enable_model_cpu_offload(); p('a cat holding a sign', negative_prompt=' ', num_inference_steps=50, true_cfg_scale=4.0).images[0].save('out.png')"
-# fp8_e4m3fn safetensors (sd.cpp) · nvidia only · ~35GB
-sd-cli --diffusion-model models/qwen_image_fp8_e4m3fn.safetensors --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p 'a cat holding a sign' --cfg-scale 2.5 --sampling-method euler -v -H 1024 -W 1024 --diffusion-fa --flow-shift 3
-# gguf-q4_k_s · nvidia only · ~25.1GB
-sd-cli --diffusion-model models/Qwen_Image-Q4_K_S.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p 'a cat holding a sign' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3
-# fp8 onload + disk/CPU offload (DiffSynth-Studio VRAM management) · nvidia only · ~12.5GB
-git clone https://github.com/modelscope/DiffSynth-Studio.git && cd DiffSynth-Studio && pip install -e . && python examples/qwen_image/model_inference_low_vram/Qwen-Image.py
-# gguf-q8_0 + Qwen2.5-VL Q8_0 (sd.cpp) · ~36.6GB
-sd-cli --diffusion-model models/Qwen_Image-Q8_0.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p 'a cat holding a sign that says "Qwen-Image"' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3
-# gguf-q4_k_m + Qwen2.5-VL Q4_K_M (sd.cpp) · ~22.1GB
-sd-cli --diffusion-model models/Qwen_Image-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q4_K_M.gguf -p 'a cat holding a sign that says "Qwen-Image"' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3
-```
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image)
 
 [interactive version](https://whatmodel.sh/model/qwen-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -48,20 +48,14 @@ weighted average                                   = 36.1
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp16 · nvidia only  ~5.3GB   36.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~5.3 GB, NVIDIA only, from [huggingface.co/THUDM](https://huggingface.co/THUDM/CogVideoX-2b))
+   
+   ```sh
+   python -c "import torch;from diffusers import CogVideoXPipeline;from diffusers.utils import export_to_video;p=CogVideoXPipeline.from_pretrained('THUDM/CogVideoX-2b',torch_dtype=torch.float16);p.enable_sequential_cpu_offload();p.vae.enable_slicing();p.vae.enable_tiling();export_to_video(p(prompt='A panda playing a tiny guitar in a bamboo forest',num_inference_steps=50,num_frames=49,guidance_scale=6).frames[0],'output.mp4',fps=8)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~5.3GB
-python -c "import torch;from diffusers import CogVideoXPipeline;from diffusers.utils import export_to_video;p=CogVideoXPipeline.from_pretrained('THUDM/CogVideoX-2b',torch_dtype=torch.float16);p.enable_sequential_cpu_offload();p.vae.enable_slicing();p.vae.enable_tiling();export_to_video(p(prompt='A panda playing a tiny guitar in a bamboo forest',num_inference_steps=50,num_frames=49,guidance_scale=6).frames[0],'output.mp4',fps=8)"
-```
+Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/CogVideoX-2b)
 
 [interactive version](https://whatmodel.sh/model/cogvideox-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

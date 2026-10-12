@@ -40,22 +40,14 @@ weighted average                          = 32.4
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf/blob/838af31020e1ebe5d627c9888e090b1fe4d2576e/README.md): Context length stated on the official model card.</sub>
+### Other ways to run it
 
-<pre>
-download        size  score
-4-bit fp32  ~27.55GB   32.4
-</pre>
+1. Run it as published (fp32, needs ~27.55 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf/tree/838af31020e1ebe5d627c9888e090b1fe4d2576e))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/OLMo-7B-Twin-2T-hf', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp32 · ~27.55GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/OLMo-7B-Twin-2T-hf', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf)
 
 [interactive version](https://whatmodel.sh/model/olmo-7b-twin-2t) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -40,68 +40,93 @@ weighted average                        = 55.9
 
 ## How to run it
 
-<pre>
-download                       size  score
-16-bit bf16                ~65.53GB   55.9
-4-bit Q4_K_M                ~19.9GB   55.9
-8-bit Q8_0                  ~34.8GB   55.9
-4-bit mlx-8bit · mac only   ~34.8GB   55.9
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Baichuan-M2-32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF/tree/bc548b0d0cd3fbf1713bfbf2b0f5302c31120b69))
+   
+   ```sh
+   llama cli -hf bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~19.9GB
-llama cli -hf bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.8GB
-llama cli -hf bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~34.8 GB) `llama cli -hf bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~19.9GB
-lms get https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~34.8GB
-lms get https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~34.8GB
-lms get https://huggingface.co/laukerry/Baichuan-M2-32B-mlx-8Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Baichuan-M2-32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF/tree/bc548b0d0cd3fbf1713bfbf2b0f5302c31120b69))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~19.9GB
-ollama run hf.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.8GB
-ollama run hf.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF@Q8_0 -y` · 8bit (~34.8 GB, Mac only) `lms get https://huggingface.co/laukerry/Baichuan-M2-32B-mlx-8Bit -y`
 
-```sh
-# 4-bit mlx-8bit · mac only · ~34.8GB
-mlx_lm.chat --model laukerry/Baichuan-M2-32B-mlx-8Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model laukerry/Baichuan-M2-32B-mlx-8Bit
-```
+### Ollama
 
-**Other engines**
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 16-bit bf16 · ~65.53GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='baichuan-inc/Baichuan-M2-32B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+2. Run Baichuan-M2-32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF/tree/bc548b0d0cd3fbf1713bfbf2b0f5302c31120b69))
+   
+   ```sh
+   ollama run hf.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/bartowski/baichuan-inc_Baichuan-M2-32B-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Baichuan-M2-32B (8bit, needs ~34.8 GB, Mac only, from [huggingface.co/laukerry](https://huggingface.co/laukerry/Baichuan-M2-32B-mlx-8Bit/tree/ddce5e89fc7dc0ca5632f0dd237756c43a6c8810))
+   
+   ```sh
+   mlx_lm.chat --model laukerry/Baichuan-M2-32B-mlx-8Bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model laukerry/Baichuan-M2-32B-mlx-8Bit
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~65.53 GB, from [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan-M2-32B/tree/360f684d3cd527a4ef986c54071015eb0e6def58))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='baichuan-inc/Baichuan-M2-32B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan-M2-32B)
 
 [interactive version](https://whatmodel.sh/model/baichuan-m2-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

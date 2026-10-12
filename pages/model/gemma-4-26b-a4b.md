@@ -179,79 +179,94 @@ weighted average                                   = 63.9
 
 ## How to run it
 
+### Through an API
+
 api (DeepInfra) · $0.14/M blended · $0.07 in / $0.34 out per 1M tokens · [deepinfra.com](https://deepinfra.com/google/gemma-4-26B-A4B-it)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output.  Product: Serverless text generation. API model: google/gemma-4-26B-A4B-it. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~15.62GB   63.9
-4-bit QAT qat              ~15.62GB   63.9
-4-bit Q4_K_M                ~16.8GB   63.9
-8-bit Q8_0                  ~26.9GB   63.9
-4-bit mlx-4bit · mac only   ~15.6GB   63.9
-4-bit mlx-8bit · mac only     ~28GB   63.9
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Gemma 4 26B-A4B (Q4_K_M, needs ~16.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF/tree/f6e6747823b2912661935db7e0009287c4838073))
+   
+   ```sh
+   llama cli -hf lmstudio-community/gemma-4-26B-A4B-it-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/gemma-4-26B-A4B-it-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~16.8GB
-llama cli -hf lmstudio-community/gemma-4-26B-A4B-it-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/gemma-4-26B-A4B-it-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~26.9GB
-llama cli -hf lmstudio-community/gemma-4-26B-A4B-it-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/gemma-4-26B-A4B-it-GGUF:Q8_0
-```
+Other versions: Q8_0 (~26.9 GB) `llama cli -hf lmstudio-community/gemma-4-26B-A4B-it-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~16.8GB
-lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~26.9GB
-lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~15.6GB
-lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~28GB
-lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Gemma 4 26B-A4B (Q4_K_M, needs ~16.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF/tree/f6e6747823b2912661935db7e0009287c4838073))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~15.62GB
-ollama run gemma4:26b
-# 4-bit QAT qat · ~15.62GB
-ollama run gemma4:26b-a4b-it-qat
-# 4-bit Q4_K_M · ~16.8GB
-ollama run hf.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~26.9GB
-ollama run hf.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~26.9 GB) `lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-GGUF@Q8_0 -y` · 4bit (~15.6 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit -y` · 8bit (~28 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-MLX-8bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~15.6GB
-mlx_lm.chat --model lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~28GB
-mlx_lm.chat --model lmstudio-community/gemma-4-26B-A4B-it-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/gemma-4-26B-A4B-it-MLX-8bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Gemma 4 26B-A4B (Q4_K_M, needs ~15.62 GB, from [ollama.com](https://ollama.com/library/gemma4/tags))
+   
+   ```sh
+   ollama run gemma4:26b
+   ```
+
+Other versions: qat (~15.62 GB) `ollama run gemma4:26b-a4b-it-qat`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Gemma 4 26B-A4B (4bit, needs ~15.6 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit/tree/79290e197d238113e50abe4cbd4731b65288f88e))
+   
+   ```sh
+   mlx_lm.chat --model lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lmstudio-community/gemma-4-26B-A4B-it-MLX-4bit
+   ```
+
+Other versions: 8bit (~28 GB, Mac only) `mlx_lm.chat --model lmstudio-community/gemma-4-26B-A4B-it-MLX-8bit`
+
+Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-4-26B-A4B-it)
 
 ## Published speed measurements
 

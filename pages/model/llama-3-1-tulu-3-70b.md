@@ -72,66 +72,85 @@ weighted average                                   = 53.6
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B/blob/cfc1d855e534a0b9b82a9cea6bf9e8dda30b10d7/config.json): Ai2 official configuration for Llama-3.1-Tulu-3-70B (pinned commit): max\_position\_embeddings 131072 (llama3 rope scaling, factor 8.0 over original 8192). Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~42.86GB   53.6
-8-bit q8_0                 ~85.22GB   53.6
-4-bit Q4_K_M                ~42.5GB   53.6
-8-bit Q8_0                    ~75GB   53.6
-4-bit mlx-4bit · mac only   ~39.7GB   53.6
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Llama 3.1 Tulu 3 70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF/tree/ddb937290558ba8fb8587c7c42c7ca041fc1aa2d))
+   
+   ```sh
+   llama cli -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~75 GB) `llama cli -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~42.5GB
-llama cli -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~75GB
-llama cli -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~42.5GB
-lms get https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~75GB
-lms get https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~39.7GB
-lms get https://huggingface.co/mlx-community/Llama-3.1-Tulu-3-70B-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Llama 3.1 Tulu 3 70B (Q4_K_M, needs ~42.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF/tree/ddb937290558ba8fb8587c7c42c7ca041fc1aa2d))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~42.86GB
-ollama run tulu3:70b-q4_K_M
-# 8-bit q8_0 · ~85.22GB
-ollama run tulu3:70b-q8_0
-# 4-bit Q4_K_M · ~42.5GB
-ollama run hf.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF:Q4_K_M
-```
+Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/lmstudio-community/Llama-3.1-Tulu-3-70B-GGUF@Q8_0 -y` · 4bit (~39.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/Llama-3.1-Tulu-3-70B-4bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~39.7GB
-mlx_lm.chat --model mlx-community/Llama-3.1-Tulu-3-70B-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Llama-3.1-Tulu-3-70B-4bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Llama 3.1 Tulu 3 70B (Q4_K_M, needs ~42.86 GB, from [ollama.com](https://ollama.com/library/tulu3/tags))
+   
+   ```sh
+   ollama run tulu3:70b-q4_K_M
+   ```
+
+Other versions: Q8_0 (~85.22 GB) `ollama run tulu3:70b-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Llama 3.1 Tulu 3 70B (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Llama-3.1-Tulu-3-70B-4bit/tree/6a2fcbb258f7b01f0a9885f319cee5c9813e4738))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Llama-3.1-Tulu-3-70B-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Llama-3.1-Tulu-3-70B-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B)
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-tulu-3-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

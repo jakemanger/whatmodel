@@ -51,26 +51,16 @@ weighted average                                   = 55.1
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-bf16 · nvidia only                        ~59.6GB   55.1
-f16 + LLaDA2 text encoder q8_0 (sd.cpp)   ~38.5GB   55.1
-gguf-q8_0 + LLaDA2 text encoder q4_k (s…  ~21.6GB   55.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf-q8_0 + LLaDA2 text encoder q4_k (sd.cpp), needs ~21.6 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/llada_image.md))
+   
+   ```sh
+   sd-cli --diffusion-model models/llada-image-q8_0.gguf --llm models/llada-image-text_encoder-q4_K.gguf --tokenizer models/tokenizer.json --vae models/llada_vae.safetensors --embeddings-connectors models/llada-image-connectors.safetensors --prompt "a lovely cat holding a sign says 'llada.cpp'" --width 1024 --height 1024 --steps 50 --cfg-scale 5.0 --seed 42 --output output.png
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~59.6 GB, NVIDIA only) `git clone https://github.com/inclusionAI/LLaDA-Image && cd LLaDA-Image && pip install -r requirements.txt && python -c "import torch; from src import LLaDAImagePipeline; p=LLaDAImagePipeline.from_pretrained('inclusionAI/LLaDA-Image', torch_dtype=torch.bfloat16, device='cuda'); p(prompt='A cinematic photograph of a red fox standing in fresh snow, soft winter light, detailed fur, shallow depth of field', negative_prompt='', generation_mode='text', height=1024, width=1024, num_inference_steps=50, guidance_scale=5.0, generator=torch.Generator('cuda').manual_seed(42)).images[0].save('out.png')"` · F16 + LLADA2 TEXT ENCODER Q8_0 (SD.CPP) (~38.5 GB) `sd-cli --diffusion-model models/llada-image-f16.gguf --llm models/llada-image-text_encoder-q8_0.gguf --tokenizer models/tokenizer.json --vae models/llada_vae.safetensors --embeddings-connectors models/llada-image-connectors.safetensors --prompt "a lovely cat holding a sign says 'llada.cpp'" --width 1024 --height 1024 --steps 50 --cfg-scale 5.0 --seed 42 --output output.png`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~59.6GB
-git clone https://github.com/inclusionAI/LLaDA-Image && cd LLaDA-Image && pip install -r requirements.txt && python -c "import torch; from src import LLaDAImagePipeline; p=LLaDAImagePipeline.from_pretrained('inclusionAI/LLaDA-Image', torch_dtype=torch.bfloat16, device='cuda'); p(prompt='A cinematic photograph of a red fox standing in fresh snow, soft winter light, detailed fur, shallow depth of field', negative_prompt='', generation_mode='text', height=1024, width=1024, num_inference_steps=50, guidance_scale=5.0, generator=torch.Generator('cuda').manual_seed(42)).images[0].save('out.png')"
-# f16 + LLaDA2 text encoder q8_0 (sd.cpp) · ~38.5GB
-sd-cli --diffusion-model models/llada-image-f16.gguf --llm models/llada-image-text_encoder-q8_0.gguf --tokenizer models/tokenizer.json --vae models/llada_vae.safetensors --embeddings-connectors models/llada-image-connectors.safetensors --prompt "a lovely cat holding a sign says 'llada.cpp'" --width 1024 --height 1024 --steps 50 --cfg-scale 5.0 --seed 42 --output output.png
-# gguf-q8_0 + LLaDA2 text encoder q4_k (sd.cpp) · ~21.6GB
-sd-cli --diffusion-model models/llada-image-q8_0.gguf --llm models/llada-image-text_encoder-q4_K.gguf --tokenizer models/tokenizer.json --vae models/llada_vae.safetensors --embeddings-connectors models/llada-image-connectors.safetensors --prompt "a lovely cat holding a sign says 'llada.cpp'" --width 1024 --height 1024 --steps 50 --cfg-scale 5.0 --seed 42 --output output.png
-```
+Official weights and documentation: [huggingface.co/inclusionAI](https://huggingface.co/inclusionAI/LLaDA-Image)
 
 [interactive version](https://whatmodel.sh/model/llada-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

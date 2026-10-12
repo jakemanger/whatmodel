@@ -53,27 +53,22 @@ weighted average                                   = 37.9
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · price unknown · [replicate.com](https://replicate.com/chenxwh/t2v-turbo-v2)
 
 <sub>Price unknown. Run/API page linked from the authors' README; compute-time pricing is not converted to output-unit pricing.</sub>
 
-<pre>
-version                                     needs  score
-fp32 · nvidia only                         ~9.4GB   37.9
-fp32 checkpoints (official Gradio demo,…  ~16.2GB   37.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~9.4 GB, NVIDIA only, from [github.com/Ji4chenLi](https://github.com/Ji4chenLi/t2v-turbo/blob/eaae323f10d136796a33e8f5304ed50e40def570/README.md))
+   
+   ```sh
+   git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-v2 unet_mg.pt --local-dir t2v-turbo-v2 && python app.py --unet_dir t2v-turbo-v2/unet_mg.pt --base_model_dir vc2/model.ckpt --version v2 --motion_gs 0.0
+   ```
 
-### Run it on your own machine
+Other versions: fp32 checkpoints (official Gradio demo, MPS) (~16.2 GB, Mac only) `git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-v2 unet_mg.pt --local-dir t2v-turbo-v2 && sed -i '' 's/^device = "cuda"/device = "mps"/' app.py && python app.py --unet_dir t2v-turbo-v2/unet_mg.pt --base_model_dir vc2/model.ckpt --version v2 --motion_gs 0.0`
 
-**Other engines**
-
-```sh
-# fp32 · nvidia only · ~9.4GB
-git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-v2 unet_mg.pt --local-dir t2v-turbo-v2 && python app.py --unet_dir t2v-turbo-v2/unet_mg.pt --base_model_dir vc2/model.ckpt --version v2 --motion_gs 0.0
-# fp32 checkpoints (official Gradio demo, MPS) · mac only · ~16.2GB
-git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-v2 unet_mg.pt --local-dir t2v-turbo-v2 && sed -i '' 's/^device = "cuda"/device = "mps"/' app.py && python app.py --unet_dir t2v-turbo-v2/unet_mg.pt --base_model_dir vc2/model.ckpt --version v2 --motion_gs 0.0
-```
+Official weights and documentation: [huggingface.co/jiachenli-ucsb](https://huggingface.co/jiachenli-ucsb/T2V-Turbo-v2)
 
 [interactive version](https://whatmodel.sh/model/t2v-turbo-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

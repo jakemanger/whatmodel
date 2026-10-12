@@ -84,66 +84,85 @@ weighted average                                   = 40.7
 
 ## How to run it
 
-<sub>[context source](https://docs.mistral.ai/models/mixtral-8x7b-0-1): Context limit from the maker's documentation, observed 2026-10-06.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_k_m                 ~28GB   40.7
-8-bit q8_0                   ~50GB   40.7
-4-bit Q4_K_M               ~26.4GB   40.7
-8-bit Q8_0                 ~49.6GB   40.7
-4-bit mlx-4bit · mac only  ~26.5GB   40.7
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Mixtral 8x7B v0.1 (base) (Q4_K_M, needs ~26.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mixtral-8x7B-v0.1-GGUF/tree/38762deaceb8f976428ab44e4c3ccf927a91132a))
+   
+   ```sh
+   llama cli -hf TheBloke/Mixtral-8x7B-v0.1-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf TheBloke/Mixtral-8x7B-v0.1-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~49.6 GB) `llama cli -hf TheBloke/Mixtral-8x7B-v0.1-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~26.4GB
-llama cli -hf TheBloke/Mixtral-8x7B-v0.1-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/Mixtral-8x7B-v0.1-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~49.6GB
-llama cli -hf TheBloke/Mixtral-8x7B-v0.1-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/Mixtral-8x7B-v0.1-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~26.4GB
-lms get https://huggingface.co/TheBloke/Mixtral-8x7B-v0.1-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~49.6GB
-lms get https://huggingface.co/TheBloke/Mixtral-8x7B-v0.1-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~26.5GB
-lms get https://huggingface.co/mlx-community/Mixtral-8x7B-v0.1-hf-4bit-mlx -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Mixtral 8x7B v0.1 (base) (Q4_K_M, needs ~26.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Mixtral-8x7B-v0.1-GGUF/tree/38762deaceb8f976428ab44e4c3ccf927a91132a))
+   
+   ```sh
+   lms get https://huggingface.co/TheBloke/Mixtral-8x7B-v0.1-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~28GB
-ollama run mixtral:8x7b-text-v0.1-q4_K_M
-# 8-bit q8_0 · ~50GB
-ollama run mixtral:8x7b-text-v0.1-q8_0
-# 4-bit Q4_K_M · ~26.4GB
-ollama run hf.co/TheBloke/Mixtral-8x7B-v0.1-GGUF:Q4_K_M
-```
+Other versions: Q8_0 (~49.6 GB) `lms get https://huggingface.co/TheBloke/Mixtral-8x7B-v0.1-GGUF@Q8_0 -y` · 4bit (~26.5 GB, Mac only) `lms get https://huggingface.co/mlx-community/Mixtral-8x7B-v0.1-hf-4bit-mlx -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~26.5GB
-mlx_lm.chat --model mlx-community/Mixtral-8x7B-v0.1-hf-4bit-mlx
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Mixtral-8x7B-v0.1-hf-4bit-mlx
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Mixtral 8x7B v0.1 (base) (Q4_K_M, needs ~28 GB, from [ollama.com](https://ollama.com/library/mixtral/tags))
+   
+   ```sh
+   ollama run mixtral:8x7b-text-v0.1-q4_K_M
+   ```
+
+Other versions: Q8_0 (~50 GB) `ollama run mixtral:8x7b-text-v0.1-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Mixtral 8x7B v0.1 (base) (4bit, needs ~26.5 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Mixtral-8x7B-v0.1-hf-4bit-mlx/tree/fc07711a141e4636987f2fba4ebd8ee59dc2a4fb))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Mixtral-8x7B-v0.1-hf-4bit-mlx
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Mixtral-8x7B-v0.1-hf-4bit-mlx
+   ```
+
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mixtral-8x7B-v0.1)
 
 [interactive version](https://whatmodel.sh/model/mixtral-8x7b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

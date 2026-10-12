@@ -10,6 +10,8 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Through an API
+
 api (Microsoft Azure) · $22.00/M chars · [azure.microsoft.com](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/)
 
 <sub>[price source](https://azure.microsoft.com/en-us/pricing/details/speech): USD per 1M characters, Azure Speech Neural HD voices (real-time and batch), standard pay-as-you-go, US East. Azure release notes identify Neural HD 2.5 as the Latest-in-Production HD model. Product: Azure AI Speech text to speech. API model: Neural HD (DragonHD) voices. Settings: S0 pay-as-you-go, region=us-east. Price basis: published list rate (price embedded in the official page's regional price data). Exclusions: free tier, commitment tiers, HD Flash ($15/1M), custom voice. Currency: USD. Microsoft Azure official pricing page, observed 2026-09-25.</sub>

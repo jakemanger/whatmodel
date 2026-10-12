@@ -88,6 +88,8 @@ PKU-YuanGroup  <a href="https://arxiv.org/html/2506.03147v4">ImgEdit-Bench overa
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/LanguageBind](https://huggingface.co/LanguageBind/UniWorld-V1)
 
 [interactive version](https://whatmodel.sh/model/uniworld-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

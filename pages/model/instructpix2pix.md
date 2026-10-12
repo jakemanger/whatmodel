@@ -61,20 +61,14 @@ weighted average                                   = 18.8
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp16 · nvidia only  ~2.6GB   18.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~2.6 GB, NVIDIA only, from [huggingface.co/timbrooks](https://huggingface.co/timbrooks/instruct-pix2pix/blob/31519b5cb02a7fd89b906d88731cd4d6a7bbf88d/README.md))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionInstructPix2PixPipeline; from diffusers.utils import load_image; p=StableDiffusionInstructPix2PixPipeline.from_pretrained('timbrooks/instruct-pix2pix', torch_dtype=torch.float16, safety_checker=None).to('cuda'); p('turn him into cyborg', image=load_image('https://raw.githubusercontent.com/timothybrooks/instruct-pix2pix/main/imgs/example.jpg'), num_inference_steps=10, image_guidance_scale=1).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~2.6GB
-uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionInstructPix2PixPipeline; from diffusers.utils import load_image; p=StableDiffusionInstructPix2PixPipeline.from_pretrained('timbrooks/instruct-pix2pix', torch_dtype=torch.float16, safety_checker=None).to('cuda'); p('turn him into cyborg', image=load_image('https://raw.githubusercontent.com/timothybrooks/instruct-pix2pix/main/imgs/example.jpg'), num_inference_steps=10, image_guidance_scale=1).images[0].save('out.png')"
-```
+Official weights and documentation: [huggingface.co/timbrooks](https://huggingface.co/timbrooks/instruct-pix2pix)
 
 [interactive version](https://whatmodel.sh/model/instructpix2pix) · [JSON](https://whatmodel.sh/api?format=json&all=1)

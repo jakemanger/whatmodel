@@ -95,42 +95,51 @@ Arcee AI vendor-repor…  <a href="https://huggingface.co/arcee-ai/Trinity-Large
 
 ## How to run it
 
+### Through an API
+
 api (Arcee AI) · $0.39/M blended · $0.25 in / $0.8 out per 1M tokens · [docs.arcee.ai](https://docs.arcee.ai/arcee-language-models/trinity-large-thinking.md)
 
 <sub>[price source](https://docs.arcee.ai/get-started/pricing.md): USD per 1M tokens, Arcee Platform text-model pricing table, model trinity-large-thinking: input $0.25, output $0.80; cached input $0.06 excluded. Currency: USD. Arcee official pricing docs, observed 2026-10-07. · [context source](https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md): Context length stated on the official model card.</sub>
 
-<pre>
-download           size  score
-4-bit q4_k_m  ~241.85GB   62.6
-2-bit iq2_m   ~133.01GB   62.6
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Trinity-Large-Thinking (Q4_K_M, needs ~241.85 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF/tree/352ed5f50f0148466e596950c29aecb51bed4cb3))
+   
+   ```sh
+   llama cli -hf arcee-ai/Trinity-Large-Thinking-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf arcee-ai/Trinity-Large-Thinking-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit q4_k_m · ~241.85GB
-llama cli -hf arcee-ai/Trinity-Large-Thinking-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf arcee-ai/Trinity-Large-Thinking-GGUF:Q4_K_M
-# 2-bit iq2_m · ~133.01GB
-llama cli -hf arcee-ai/Trinity-Large-Thinking-GGUF:IQ2_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf arcee-ai/Trinity-Large-Thinking-GGUF:IQ2_M
-```
+Other versions: IQ2_M (~133.01 GB) `llama cli -hf arcee-ai/Trinity-Large-Thinking-GGUF:IQ2_M`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~241.85GB
-lms get https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit iq2_m · ~133.01GB
-lms get https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF@IQ2_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
+
+2. Run Trinity-Large-Thinking (Q4_K_M, needs ~241.85 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF/tree/352ed5f50f0148466e596950c29aecb51bed4cb3))
+   
+   ```sh
+   lms get https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF@Q4_K_M -y
+   ```
+
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: IQ2_M (~133.01 GB) `lms get https://huggingface.co/arcee-ai/Trinity-Large-Thinking-GGUF@IQ2_M -y`
+
+Official weights and documentation: [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/Trinity-Large-Thinking)
 
 [interactive version](https://whatmodel.sh/model/trinity-large-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

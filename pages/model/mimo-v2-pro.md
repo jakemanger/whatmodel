@@ -109,6 +109,6 @@ Xiaomi MiMo vendor-re…  <a href="https://mimo.xiaomi.com/mimo-v2-pro">τ²-ben
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/mimo-v2-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -120,24 +120,20 @@ meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCa
 
 ## How to run it
 
+### Through an API
+
 api (LongCat API Platform (Meituan)) · $1.30/M blended · $0.75 in / $2.95 out per 1M tokens · [longcat.chat](https://longcat.chat/platform/docs/pricing/longcat-2.0)
 
 <sub>[price source](https://longcat.chat/platform/docs/pricing/longcat-2.0): USD per 1M tokens, LongCat API Platform pay-as-you-go list price for LongCat-2.0 (uncached input / output). A limited-time discounted price ($0.30 / $1.20) was also shown and is not used; cached input $0.015/1M excluded; CNY price table not used. Currency: USD. Meituan LongCat official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/meituan/longcat-2.0.toml)</sub>
 
-<pre>
-download                       size  score
-4-bit fp8 · nvidia only  ~2051.18GB   72.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp8, needs ~2051.18 GB, NVIDIA only, from [docs.sglang.io/cookbook](https://docs.sglang.io/cookbook/autoregressive/Meituan/LongCat-2.0))
+   
+   ```sh
+   sglang serve --trust-remote-code --model-path meituan-longcat/LongCat-2.0-FP8 --tp 8 --ep 8 --max-running-requests 64 --mem-fraction-static 0.92 --chunked-prefill-size 2048 --dsa-prefill-backend fa3 --kv-cache-dtype bfloat16 --model-loader-extra-config '{"enable_multithread_load":true,"num_threads":12}' --host 0.0.0.0 --port 30000
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp8 · nvidia only · ~2051.18GB
-sglang serve --trust-remote-code --model-path meituan-longcat/LongCat-2.0-FP8 --tp 8 --ep 8 --max-running-requests 64 --mem-fraction-static 0.92 --chunked-prefill-size 2048 --dsa-prefill-backend fa3 --kv-cache-dtype bfloat16 --model-loader-extra-config '{"enable_multithread_load":true,"num_threads":12}' --host 0.0.0.0 --port 30000
-```
+Official weights and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-2.0)
 
 [interactive version](https://whatmodel.sh/model/longcat-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -48,20 +48,14 @@ weighted average                                   = 51.8
 
 ## How to run it
 
-<pre>
-version                needs  score
-bf16 · nvidia only  ~20.49GB   51.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~20.49 GB, NVIDIA only, from [huggingface.co/microsoft](https://huggingface.co/microsoft/VibeVoice-ASR-HF))
+   
+   ```sh
+   uv run --with transformers --with torch --with accelerate python -c "from transformers import AutoProcessor, VibeVoiceAsrForConditionalGeneration as M; r='microsoft/VibeVoice-ASR-HF'; p=AutoProcessor.from_pretrained(r); m=M.from_pretrained(r, device_map='auto'); i=p.apply_transcription_request(audio='audio.wav').to(m.device, m.dtype); o=m.generate(**i); print(p.decode(o[:, i['input_ids'].shape[1]:], return_format='transcription_only')[0])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~20.49GB
-uv run --with transformers --with torch --with accelerate python -c "from transformers import AutoProcessor, VibeVoiceAsrForConditionalGeneration as M; r='microsoft/VibeVoice-ASR-HF'; p=AutoProcessor.from_pretrained(r); m=M.from_pretrained(r, device_map='auto'); i=p.apply_transcription_request(audio='audio.wav').to(m.device, m.dtype); o=m.generate(**i); print(p.decode(o[:, i['input_ids'].shape[1]:], return_format='transcription_only')[0])"
-```
+Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/VibeVoice-ASR-HF)
 
 [interactive version](https://whatmodel.sh/model/vibevoice-asr-hf) · [JSON](https://whatmodel.sh/api?format=json&all=1)

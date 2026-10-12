@@ -45,10 +45,10 @@ weighted average                        = 58.6
 
 ## How to run it
 
+### Through an API
+
 api (Krea) · $0.060/image · [krea.ai](https://www.krea.ai/docs/developers/krea-2/overview.md)
 
 <sub>[price source](https://www.krea.ai/docs/developers/krea-2/overview.md): USD per generated image, Krea 2 Large text-to-image on the Krea API: fixed per-generation price $0.060 (with style references $0.065, with moodboards $0.070). Product: Krea API. API model: krea-2/large (POST /generate/image/krea/krea-2/large). Settings: resolution=1K (the only resolution offered), no style references or moodboards, one image. Price basis: published fixed list price. Paid from a prepaid USD API balance. Currency: USD. Krea official API documentation, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/krea-2-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

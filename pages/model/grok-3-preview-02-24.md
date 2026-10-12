@@ -43,6 +43,6 @@ weighted average                        = 66.3
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/grok-3-preview-02-24) · [JSON](https://whatmodel.sh/api?format=json&all=1)

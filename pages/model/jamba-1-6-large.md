@@ -40,20 +40,14 @@ weighted average                            = 58.1
 
 ## How to run it
 
-<pre>
-download          size  score
-16-bit bf16  ~797.11GB   58.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~797.11 GB, from [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Large-1.6/tree/f75d35d1cd26af70ad1ecc813009cd45ae8f8e13))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ai21labs/AI21-Jamba-Large-1.6', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~797.11GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ai21labs/AI21-Jamba-Large-1.6', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Large-1.6)
 
 [interactive version](https://whatmodel.sh/model/jamba-1-6-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

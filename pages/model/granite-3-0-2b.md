@@ -98,68 +98,85 @@ weighted average                                   = 38.6
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/ibm-granite/granite-3.0-2b-instruct/blob/5ad66c190631382717bd92d7b052adb1a7b669e7/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_k_m               ~2.08GB   38.6
-8-bit q8_0                 ~3.66GB   38.6
-4-bit Q4_K_M                ~1.6GB   38.6
-8-bit Q8_0                  ~2.8GB   38.6
-4-bit mlx-4bit · mac only   ~1.8GB   38.6
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Granite 3.0 2B Instruct (Q4_K_M, needs ~1.6 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-3.0-2b-instruct-GGUF/tree/0f35cb534c61d4f1ea9a8e266efc522db70dc2fa))
+   
+   ```sh
+   llama cli -hf lmstudio-community/granite-3.0-2b-instruct-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/granite-3.0-2b-instruct-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~2.8 GB) `llama cli -hf lmstudio-community/granite-3.0-2b-instruct-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~1.6GB
-llama cli -hf lmstudio-community/granite-3.0-2b-instruct-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/granite-3.0-2b-instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~2.8GB
-llama cli -hf lmstudio-community/granite-3.0-2b-instruct-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/granite-3.0-2b-instruct-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~1.6GB
-lms get https://huggingface.co/lmstudio-community/granite-3.0-2b-instruct-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~2.8GB
-lms get https://huggingface.co/lmstudio-community/granite-3.0-2b-instruct-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~1.8GB
-lms get https://huggingface.co/ekryski/granite-3.0-2b-instruct-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Granite 3.0 2B Instruct (Q4_K_M, needs ~1.6 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-3.0-2b-instruct-GGUF/tree/0f35cb534c61d4f1ea9a8e266efc522db70dc2fa))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/granite-3.0-2b-instruct-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~2.08GB
-ollama run granite3-dense:2b-instruct-q4_K_M
-# 8-bit q8_0 · ~3.66GB
-ollama run granite3-dense:2b-instruct-q8_0
-# 4-bit Q4_K_M · ~1.6GB
-ollama run hf.co/lmstudio-community/granite-3.0-2b-instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~2.8GB
-ollama run hf.co/lmstudio-community/granite-3.0-2b-instruct-GGUF:Q8_0
-```
+Other versions: Q8_0 (~2.8 GB) `lms get https://huggingface.co/lmstudio-community/granite-3.0-2b-instruct-GGUF@Q8_0 -y` · 4bit (~1.8 GB, Mac only) `lms get https://huggingface.co/ekryski/granite-3.0-2b-instruct-4bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~1.8GB
-mlx_lm.chat --model ekryski/granite-3.0-2b-instruct-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model ekryski/granite-3.0-2b-instruct-4bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Granite 3.0 2B Instruct (Q4_K_M, needs ~2.08 GB, from [ollama.com](https://ollama.com/library/granite3-dense/tags))
+   
+   ```sh
+   ollama run granite3-dense:2b-instruct-q4_K_M
+   ```
+
+Other versions: Q8_0 (~3.66 GB) `ollama run granite3-dense:2b-instruct-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Granite 3.0 2B Instruct (4bit, needs ~1.8 GB, Mac only, from [huggingface.co/ekryski](https://huggingface.co/ekryski/granite-3.0-2b-instruct-4bit/tree/ffef3dffc738f5ec8ec984a1504202c9c1537859))
+   
+   ```sh
+   mlx_lm.chat --model ekryski/granite-3.0-2b-instruct-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model ekryski/granite-3.0-2b-instruct-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.0-2b-instruct)
 
 [interactive version](https://whatmodel.sh/model/granite-3-0-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

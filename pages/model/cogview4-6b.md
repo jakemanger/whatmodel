@@ -47,6 +47,8 @@ weighted average                        = 40.6
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/CogView4-6B)
 
 [interactive version](https://whatmodel.sh/model/cogview4-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

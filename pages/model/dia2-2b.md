@@ -42,20 +42,14 @@ weighted average                                   = 44.8
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-bf16 (nari-labs/dia2 repo CLI) · nvidia…  ~8.07GB   44.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (NARI-LABS/DIA2 REPO CLI), needs ~8.07 GB, NVIDIA only, from [github.com/nari-labs](https://github.com/nari-labs/dia2/blob/8687268f4ed3ed20704638fd353b51491de3b476/README.md))
+   
+   ```sh
+   git clone https://github.com/nari-labs/dia2.git && cd dia2 && uv sync && uv run -m dia2.cli --hf nari-labs/Dia2-2B --input input.txt --cfg 6.0 --temperature 0.8 --cuda-graph --verbose output.wav
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (nari-labs/dia2 repo CLI) · nvidia only · ~8.07GB
-git clone https://github.com/nari-labs/dia2.git && cd dia2 && uv sync && uv run -m dia2.cli --hf nari-labs/Dia2-2B --input input.txt --cfg 6.0 --temperature 0.8 --cuda-graph --verbose output.wav
-```
+Official weights and documentation: [huggingface.co/nari-labs](https://huggingface.co/nari-labs/Dia2-2B)
 
 [interactive version](https://whatmodel.sh/model/dia2-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

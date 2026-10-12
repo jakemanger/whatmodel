@@ -81,20 +81,14 @@ weighted average                                   = 63.2
 
 ## How to run it
 
-<pre>
-version                  needs  score
-fp32 (index-tts repo)  ~8.86GB   63.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (index-tts repo), needs ~8.86 GB, from [github.com/index-tts](https://github.com/index-tts/index-tts/blob/d9e41aac89fd00b3d71497fddb287b7f24613712/README.md))
+   
+   ```sh
+   git clone https://github.com/index-tts/index-tts.git && cd index-tts && pip install -U uv && uv sync && uv tool install "huggingface-hub" && hf download IndexTeam/IndexTTS-2 --local-dir=checkpoints_2 && uv run python -c "from indextts.utils.examples_downloader import ensure_examples_available; ensure_examples_available()" && PYTHONPATH="$PYTHONPATH:." uv run python -c "from indextts.infer_v2 import IndexTTS2; tts = IndexTTS2(cfg_path='checkpoints_2/config.yaml', model_dir='checkpoints_2', use_fp16=False, use_cuda_kernel=False, use_deepspeed=False); tts.infer(spk_audio_prompt='examples/voice_01.wav', text='Translate for me, what is a surprise!', output_path='gen.wav', verbose=True)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (index-tts repo) · ~8.86GB
-git clone https://github.com/index-tts/index-tts.git && cd index-tts && pip install -U uv && uv sync && uv tool install "huggingface-hub" && hf download IndexTeam/IndexTTS-2 --local-dir=checkpoints_2 && uv run python -c "from indextts.utils.examples_downloader import ensure_examples_available; ensure_examples_available()" && PYTHONPATH="$PYTHONPATH:." uv run python -c "from indextts.infer_v2 import IndexTTS2; tts = IndexTTS2(cfg_path='checkpoints_2/config.yaml', model_dir='checkpoints_2', use_fp16=False, use_cuda_kernel=False, use_deepspeed=False); tts.infer(spk_audio_prompt='examples/voice_01.wav', text='Translate for me, what is a surprise!', output_path='gen.wav', verbose=True)"
-```
+Official weights and documentation: [huggingface.co/IndexTeam](https://huggingface.co/IndexTeam/IndexTTS-2)
 
 [interactive version](https://whatmodel.sh/model/indextts-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

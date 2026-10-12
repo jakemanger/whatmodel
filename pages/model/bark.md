@@ -52,23 +52,16 @@ weighted average                                   = 25.4
 
 ## How to run it
 
-<pre>
-version                needs  score
-fp32                   ~12GB   25.4
-fp32 (transformers)  ~4.49GB   25.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~12 GB, from [github.com/suno-ai](https://github.com/suno-ai/bark/blob/f4f32d4cd480dfec1c245d258174bc9bde3c2148/README.md))
+   
+   ```sh
+   pip install git+https://github.com/suno-ai/bark.git && python -m bark --text "Hello, my name is Suno." --output_filename example.wav
+   ```
 
-### Run it on your own machine
+Other versions: fp32 (transformers) (~4.49 GB) `pip install --upgrade transformers scipy torch && python -c "import scipy; from transformers import AutoProcessor, AutoModel; processor = AutoProcessor.from_pretrained('suno/bark'); model = AutoModel.from_pretrained('suno/bark'); inputs = processor(text=['Hello, my name is Suno. And, uh — and I like pizza. [laughs] But I also have other interests such as playing tic tac toe.'], return_tensors='pt'); speech_values = model.generate(**inputs, do_sample=True); scipy.io.wavfile.write('bark_out.wav', rate=model.generation_config.sample_rate, data=speech_values.cpu().numpy().squeeze())"`
 
-**Other engines**
-
-```sh
-# fp32 · ~12GB
-pip install git+https://github.com/suno-ai/bark.git && python -m bark --text "Hello, my name is Suno." --output_filename example.wav
-# fp32 (transformers) · ~4.49GB
-pip install --upgrade transformers scipy torch && python -c "import scipy; from transformers import AutoProcessor, AutoModel; processor = AutoProcessor.from_pretrained('suno/bark'); model = AutoModel.from_pretrained('suno/bark'); inputs = processor(text=['Hello, my name is Suno. And, uh — and I like pizza. [laughs] But I also have other interests such as playing tic tac toe.'], return_tensors='pt'); speech_values = model.generate(**inputs, do_sample=True); scipy.io.wavfile.write('bark_out.wav', rate=model.generation_config.sample_rate, data=speech_values.cpu().numpy().squeeze())"
-```
+Official weights and documentation: [huggingface.co/suno](https://huggingface.co/suno/bark)
 
 [interactive version](https://whatmodel.sh/model/bark) · [JSON](https://whatmodel.sh/api?format=json&all=1)

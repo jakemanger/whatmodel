@@ -51,46 +51,40 @@ weighted average                                   = 25.7
 
 ## How to run it
 
-<pre>
-version                        needs  score
-fp32 (myshell-ai/OpenVoice)  ~0.79GB   25.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (myshell-ai/OpenVoice), needs ~0.79 GB, from [github.com/myshell-ai](https://github.com/myshell-ai/OpenVoice/blob/74a1d147b17a8c3092dd5430504bd83ef6c7eb23/demo_part3.ipynb (install: https://github.com/myshell-ai/OpenVoice/blob/74a1d147b17a8c3092dd5430504bd83ef6c7eb23/docs/USAGE.md)))
+   
+   ```sh
+   conda create -n openvoice python=3.9 && conda activate openvoice && git clone https://github.com/myshell-ai/OpenVoice.git && cd OpenVoice && pip install -e . && pip install git+https://github.com/myshell-ai/MeloTTS.git && python -m unidic download && huggingface-cli download myshell-ai/OpenVoiceV2 --revision f36e7edfe1684461a8343844af60babc2efbb727 --local-dir checkpoints_v2 && python -c "import os, torch
+   from openvoice import se_extractor
+   from openvoice.api import ToneColorConverter
+   ckpt_converter = 'checkpoints_v2/converter'
+   device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
+   output_dir = 'outputs_v2'
+   tone_color_converter = ToneColorConverter(f'{ckpt_converter}/config.json', device=device)
+   tone_color_converter.load_ckpt(f'{ckpt_converter}/checkpoint.pth')
+   os.makedirs(output_dir, exist_ok=True)
+   reference_speaker = 'resources/example_reference.mp3'
+   target_se, audio_name = se_extractor.get_se(reference_speaker, tone_color_converter, vad=True)
+   from melo.api import TTS
+   language, text = 'EN_NEWEST', 'Did you ever hear a folk tale about a giant turtle?'
+   src_path = f'{output_dir}/tmp.wav'
+   speed = 1.0
+   model = TTS(language=language, device=device)
+   speaker_ids = model.hps.data.spk2id
+   for speaker_key in speaker_ids.keys():
+       speaker_id = speaker_ids[speaker_key]
+       speaker_key = speaker_key.lower().replace('_', '-')
+       source_se = torch.load(f'checkpoints_v2/base_speakers/ses/{speaker_key}.pth', map_location=device)
+       if torch.backends.mps.is_available() and device == 'cpu':
+           torch.backends.mps.is_available = lambda: False
+       model.tts_to_file(text, speaker_id, src_path, speed=speed)
+       save_path = f'{output_dir}/output_v2_{speaker_key}.wav'
+       tone_color_converter.convert(audio_src_path=src_path, src_se=source_se, tgt_se=target_se, output_path=save_path, message='@MyShell')
+   "
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (myshell-ai/OpenVoice) · ~0.79GB
-conda create -n openvoice python=3.9 && conda activate openvoice && git clone https://github.com/myshell-ai/OpenVoice.git && cd OpenVoice && pip install -e . && pip install git+https://github.com/myshell-ai/MeloTTS.git && python -m unidic download && huggingface-cli download myshell-ai/OpenVoiceV2 --revision f36e7edfe1684461a8343844af60babc2efbb727 --local-dir checkpoints_v2 && python -c "import os, torch
-from openvoice import se_extractor
-from openvoice.api import ToneColorConverter
-ckpt_converter = 'checkpoints_v2/converter'
-device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
-output_dir = 'outputs_v2'
-tone_color_converter = ToneColorConverter(f'{ckpt_converter}/config.json', device=device)
-tone_color_converter.load_ckpt(f'{ckpt_converter}/checkpoint.pth')
-os.makedirs(output_dir, exist_ok=True)
-reference_speaker = 'resources/example_reference.mp3'
-target_se, audio_name = se_extractor.get_se(reference_speaker, tone_color_converter, vad=True)
-from melo.api import TTS
-language, text = 'EN_NEWEST', 'Did you ever hear a folk tale about a giant turtle?'
-src_path = f'{output_dir}/tmp.wav'
-speed = 1.0
-model = TTS(language=language, device=device)
-speaker_ids = model.hps.data.spk2id
-for speaker_key in speaker_ids.keys():
-    speaker_id = speaker_ids[speaker_key]
-    speaker_key = speaker_key.lower().replace('_', '-')
-    source_se = torch.load(f'checkpoints_v2/base_speakers/ses/{speaker_key}.pth', map_location=device)
-    if torch.backends.mps.is_available() and device == 'cpu':
-        torch.backends.mps.is_available = lambda: False
-    model.tts_to_file(text, speaker_id, src_path, speed=speed)
-    save_path = f'{output_dir}/output_v2_{speaker_key}.wav'
-    tone_color_converter.convert(audio_src_path=src_path, src_se=source_se, tgt_se=target_se, output_path=save_path, message='@MyShell')
-"
-```
+Official weights and documentation: [huggingface.co/myshell-ai](https://huggingface.co/myshell-ai/OpenVoiceV2)
 
 [interactive version](https://whatmodel.sh/model/openvoice-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

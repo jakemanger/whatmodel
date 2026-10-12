@@ -163,10 +163,10 @@ weighted average                                   = 65.4
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $1.93/M blended · $1.1 in / $4.4 out per 1M tokens · [developers.openai.com](https://developers.openai.com/api/docs/models/o3-mini)
 
 <sub>[price source](https://developers.openai.com/api/docs/models/o3-mini): USD per 1M tokens, OpenAI API standard processing, model page 'o3-mini' whose default snapshot is o3-mini-2025-01-31: input $1.1, output $4.4; cached-input, Batch and other tiers excluded. Currency: USD. OpenAI official model page, observed 2026-09-28. · [context source](https://developers.openai.com/api/docs/models/o3-mini): OpenAI model page for o3-mini (default snapshot o3-mini-2025-01-31): 200,000 context window. Observed 2026-09-28.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/o3-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

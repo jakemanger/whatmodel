@@ -44,20 +44,14 @@ weighted average                                   = 54.4
 
 ## How to run it
 
-<pre>
-version                       needs  score
-q8_0-gguf (transcribe.cpp)  ~1.67GB   54.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (Q8_0-GGUF (TRANSCRIBE.CPP), needs ~1.67 GB, from [github.com/handy-computer](https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md))
+   
+   ```sh
+   git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/Breeze-ASR-25-gguf Breeze-ASR-25-Q8_0.gguf --local-dir models/breeze-asr-25 && build/bin/transcribe-cli -m models/breeze-asr-25/Breeze-ASR-25-Q8_0.gguf audio.wav
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# q8_0-gguf (transcribe.cpp) · ~1.67GB
-git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/Breeze-ASR-25-gguf Breeze-ASR-25-Q8_0.gguf --local-dir models/breeze-asr-25 && build/bin/transcribe-cli -m models/breeze-asr-25/Breeze-ASR-25-Q8_0.gguf audio.wav
-```
+Official weights and documentation: [huggingface.co/MediaTek-Research](https://huggingface.co/MediaTek-Research/Breeze-ASR-25)
 
 [interactive version](https://whatmodel.sh/model/breeze-asr-25) · [JSON](https://whatmodel.sh/api?format=json&all=1)

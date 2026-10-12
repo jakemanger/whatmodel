@@ -45,6 +45,8 @@ weighted average                                   = 56.7
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/jdopensource](https://huggingface.co/jdopensource/JoyAI-Image-Edit)
 
 [interactive version](https://whatmodel.sh/model/joyai-image-edit) · [JSON](https://whatmodel.sh/api?format=json&all=1)

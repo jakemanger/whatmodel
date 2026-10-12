@@ -40,58 +40,59 @@ weighted average                            = 50.2
 
 ## How to run it
 
+### Through an API
+
 api (AI21 Labs) · price unknown · [docs.ai21.com](https://docs.ai21.com/docs/jamba-foundation-models)
 
 <sub>[context source](https://docs.ai21.com/docs/jamba-foundation-models): AI21 docs Model Details: 'Max Tokens 256K' for Jamba Large 1.7. Observed 2026-10-09.</sub>
 
-<pre>
-download                        size  score
-16-bit bf16 · nvidia only  ~797.11GB   50.2
-4-bit Q4_K_M                ~240.4GB   50.2
-8-bit Q8_0                  ~423.6GB   50.2
-2-bit IQ2_XXS                ~96.4GB   50.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Jamba Large 1.7 (Q4_K_M, needs ~240.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF/tree/fc641f1de375d834dd2a1ca12072387ac71350a1))
+   
+   ```sh
+   llama cli -hf bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~240.4GB
-llama cli -hf bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~423.6GB
-llama cli -hf bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF:Q8_0
-# 2-bit IQ2_XXS · ~96.4GB
-llama cli -hf bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF:IQ2_XXS
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF:IQ2_XXS
-```
+Other versions: Q8_0 (~423.6 GB) `llama cli -hf bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF:Q8_0` · IQ2_XXS (~96.4 GB) `llama cli -hf bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF:IQ2_XXS`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~240.4GB
-lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~423.6GB
-lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit IQ2_XXS · ~96.4GB
-lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF@IQ2_XXS -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Other engines**
+2. Run Jamba Large 1.7 (Q4_K_M, needs ~240.4 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF/tree/fc641f1de375d834dd2a1ca12072387ac71350a1))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 16-bit bf16 · nvidia only · ~797.11GB
-vllm serve ai21labs/AI21-Jamba-Large-1.7 --tensor-parallel-size 8 --quantization experts_int8
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: Q8_0 (~423.6 GB) `lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF@Q8_0 -y` · IQ2_XXS (~96.4 GB) `lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Large-1.7-GGUF@IQ2_XXS -y`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~797.11 GB, NVIDIA only, from [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Large-1.7/tree/f95d1c3c9ac9028a9306e717047b5515e73c1dd1))
+   
+   ```sh
+   vllm serve ai21labs/AI21-Jamba-Large-1.7 --tensor-parallel-size 8 --quantization experts_int8
+   ```
+
+Official weights and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Large-1.7)
 
 [interactive version](https://whatmodel.sh/model/jamba-large-1-7) · [JSON](https://whatmodel.sh/api?format=json&all=1)

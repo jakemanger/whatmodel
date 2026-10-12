@@ -64,20 +64,14 @@ weighted average                                   = 53.0
 
 ## How to run it
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~50.7GB   53.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~50.7 GB, NVIDIA only, from [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md))
+   
+   ```sh
+   git clone -b step1xedit_v1p2 https://github.com/Peyton-Chen/diffusers.git && cd diffusers && pip install -e . && pip install transformers==4.55.0 && python -c "import torch; from diffusers import Step1XEditPipelineV1P2; from diffusers.utils import load_image; p=Step1XEditPipelineV1P2.from_pretrained('stepfun-ai/Step1X-Edit-v1p2', torch_dtype=torch.bfloat16); p.to('cuda'); o=p(image=load_image('input.png').convert('RGB'), prompt='add a ruby pendant on the neck of the girl.', num_inference_steps=50, true_cfg_scale=6, generator=torch.Generator().manual_seed(42), enable_thinking_mode=True, enable_reflection_mode=True); o.final_images[0].save('0001-final.jpg')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~50.7GB
-git clone -b step1xedit_v1p2 https://github.com/Peyton-Chen/diffusers.git && cd diffusers && pip install -e . && pip install transformers==4.55.0 && python -c "import torch; from diffusers import Step1XEditPipelineV1P2; from diffusers.utils import load_image; p=Step1XEditPipelineV1P2.from_pretrained('stepfun-ai/Step1X-Edit-v1p2', torch_dtype=torch.bfloat16); p.to('cuda'); o=p(image=load_image('input.png').convert('RGB'), prompt='add a ruby pendant on the neck of the girl.', num_inference_steps=50, true_cfg_scale=6, generator=torch.Generator().manual_seed(42), enable_thinking_mode=True, enable_reflection_mode=True); o.final_images[0].save('0001-final.jpg')"
-```
+Official weights and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2)
 
 [interactive version](https://whatmodel.sh/model/step1x-edit-v1-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

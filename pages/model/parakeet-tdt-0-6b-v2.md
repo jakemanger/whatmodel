@@ -74,27 +74,17 @@ weighted average                                   = 60.4
 
 ## How to run it
 
-<pre>
-version               needs  score
-bf16 · mac only     ~1.94GB   60.4
-fp32 · nvidia only  ~3.38GB   60.4
-onnx-fp32           ~3.38GB   60.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~1.94 GB, Mac only, from [github.com/senstella](https://github.com/senstella/parakeet-mlx))
+   
+   ```sh
+   uvx parakeet-mlx audio.mp3 --model mlx-community/parakeet-tdt-0.6b-v2
+   ```
 
-### Run it on your own machine
+Other versions: fp32 (~3.38 GB, NVIDIA only) `uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-tdt-0.6b-v2').transcribe(['audio.wav']))"` · onnx-fp32 (~3.38 GB) `uvx --from 'onnx-asr[cpu,hub]' onnx-asr nemo-parakeet-tdt-0.6b-v2 audio.wav`
 
-**Other engines**
-
-```sh
-# bf16 · mac only · ~1.94GB
-uvx parakeet-mlx audio.mp3 --model mlx-community/parakeet-tdt-0.6b-v2
-# fp32 · nvidia only · ~3.38GB
-uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-tdt-0.6b-v2').transcribe(['audio.wav']))"
-# onnx-fp32 · ~3.38GB
-uvx --from 'onnx-asr[cpu,hub]' onnx-asr nemo-parakeet-tdt-0.6b-v2 audio.wav
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2)
 
 ## Published speed measurements
 

@@ -58,75 +58,91 @@ weighted average                                   = 47.0
 
 ## How to run it
 
+### Through an API
+
 api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens · [azure.microsoft.com](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft)
 
 <sub>[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft): USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (Microsoft models table), 'Phi-4-mini-reasoning' (GA), 128K context: input $0.075, output $0.30, region US East. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25. · [context source](https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md): Microsoft official model card: Phi-4-mini-reasoning context length 128K tokens (stated rounded). Observed 2026-09-25.</sub>
 
-<pre>
-download                      size  score
-4-bit q4_k_m               ~2.49GB   47.0
-8-bit q8_0                 ~4.08GB   47.0
-4-bit q4_k_m               ~3.15GB   47.0
-4-bit mlx-4bit · mac only   ~2.2GB   47.0
-4-bit mlx-8bit · mac only   ~4.1GB   47.0
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Phi-4-mini-reasoning 3.8B (Q4_K_M, needs ~2.49 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF/tree/6b9cfad9419cad66996ad42ebddbff9b34446479))
+   
+   ```sh
+   llama cli -hf unsloth/Phi-4-mini-reasoning-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/Phi-4-mini-reasoning-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit q4_k_m · ~2.49GB
-llama cli -hf unsloth/Phi-4-mini-reasoning-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Phi-4-mini-reasoning-GGUF:Q4_K_M
-# 8-bit q8_0 · ~4.08GB
-llama cli -hf unsloth/Phi-4-mini-reasoning-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Phi-4-mini-reasoning-GGUF:Q8_0
-```
+Other versions: Q8_0 (~4.08 GB) `llama cli -hf unsloth/Phi-4-mini-reasoning-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~2.49GB
-lms get https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit q8_0 · ~4.08GB
-lms get https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~2.2GB
-lms get https://huggingface.co/lmstudio-community/Phi-4-mini-reasoning-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~4.1GB
-lms get https://huggingface.co/mlx-community/Phi-4-mini-reasoning-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Phi-4-mini-reasoning 3.8B (Q4_K_M, needs ~2.49 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF/tree/6b9cfad9419cad66996ad42ebddbff9b34446479))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~2.49GB
-ollama run hf.co/unsloth/Phi-4-mini-reasoning-GGUF:Q4_K_M
-# 8-bit q8_0 · ~4.08GB
-ollama run hf.co/unsloth/Phi-4-mini-reasoning-GGUF:Q8_0
-# 4-bit q4_k_m · ~3.15GB
-ollama run phi4-mini-reasoning:3.8b
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~4.08 GB) `lms get https://huggingface.co/unsloth/Phi-4-mini-reasoning-GGUF@Q8_0 -y` · 4bit (~2.2 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Phi-4-mini-reasoning-MLX-4bit -y` · 8bit (~4.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Phi-4-mini-reasoning-8bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~2.2GB
-mlx_lm.chat --model lmstudio-community/Phi-4-mini-reasoning-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Phi-4-mini-reasoning-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~4.1GB
-mlx_lm.chat --model mlx-community/Phi-4-mini-reasoning-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Phi-4-mini-reasoning-8bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Phi-4-mini-reasoning 3.8B (Q4_K_M, needs ~3.15 GB, from [ollama.com](https://ollama.com/library/phi4-mini-reasoning/tags))
+   
+   ```sh
+   ollama run phi4-mini-reasoning:3.8b
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Phi-4-mini-reasoning 3.8B (4bit, needs ~2.2 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Phi-4-mini-reasoning-MLX-4bit/tree/10906e3b888052ad3c7b83ffad45ed576cacc905))
+   
+   ```sh
+   mlx_lm.chat --model lmstudio-community/Phi-4-mini-reasoning-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lmstudio-community/Phi-4-mini-reasoning-MLX-4bit
+   ```
+
+Other versions: 8bit (~4.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Phi-4-mini-reasoning-8bit`
+
+Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-4-mini-reasoning)
 
 [interactive version](https://whatmodel.sh/model/phi-4-mini-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

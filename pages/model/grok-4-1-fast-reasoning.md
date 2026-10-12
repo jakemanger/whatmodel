@@ -130,10 +130,10 @@ weighted average                                   = 66.4
 
 ## How to run it
 
+### Through an API
+
 api (Microsoft Azure) · $0.28/M blended · $0.2 in / $0.5 out per 1M tokens · [azure.microsoft.com](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/grok)
 
 <sub>[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/grok): USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (xAI Grok table), 'Grok 4.1 Fast Global': input $0.20, output $0.50, region US East. The Azure model id is grok-4-1-fast-reasoning, version 1, GA, with no retirement date on Azure's schedule; the same row covers grok-4-1-fast-non-reasoning. Azure lists a 128,000-token input limit for this deployment. xAI's own price table no longer lists grok-4-1-fast-reasoning, and Google Cloud shut its Vertex endpoint down on 2026-08-20. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-26. · [context source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure): Context limit from the maker's documentation, observed 2026-10-06.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/grok-4-1-fast-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

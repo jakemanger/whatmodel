@@ -42,10 +42,12 @@ weighted average                        = 51.1
 
 ## How to run it
 
+### Through an API
+
 api (Cohere) · price unknown · [docs.cohere.com](https://docs.cohere.com/docs/models)
 
 <sub>[context source](https://docs.cohere.com/docs/models): Cohere API model table: command-a-translate-08-2025, Live, context length 8K, maximum output 8k tokens. Observed 2026-10-10.</sub>
 
-no verified local download listed
+Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/command-a-translate-08-2025)
 
 [interactive version](https://whatmodel.sh/model/command-a-translate-08-2025) · [JSON](https://whatmodel.sh/api?format=json&all=1)

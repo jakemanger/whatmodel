@@ -94,30 +94,22 @@ Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Long-TTS
 
 ## How to run it
 
+### Through an API
+
 api (Fish Audio) · $15.00/M chars · [docs.fish.audio](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits)
 
 <sub>[price source](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits): Fish Audio lists s2-pro at $15.00 per 1M UTF-8 bytes of input text. Stored as per 1M characters, which equals bytes only for ASCII (e.g. English) text; non-ASCII characters take 2-4 bytes, so per-character cost is higher for those scripts. Product: Fish Audio TTS API. API model: s2-pro. Settings: pay-as-you-go. Price basis: published list rate (byte-billed). Exclusions: none stated. Currency: USD. Fish Audio official pricing docs, observed 2026-09-25.</sub>
 
-<pre>
-version                                  needs  score
-bf16 · nvidia only                    ~11.44GB   62.6
-bf16 (fish-speech official repo CLI)  ~11.01GB   62.6
-bf16 (mlx-audio) · mac only           ~11.01GB   62.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~11.44 GB, NVIDIA only, from [github.com/fishaudio](https://github.com/fishaudio/fish-speech/blob/214da3cd841bda85da2496b96cd3c4d7edb1337e/docs/en/inference.md))
+   
+   ```sh
+   git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e . && hf download fishaudio/s2-pro --local-dir checkpoints/s2-pro && python fish_speech/models/text2semantic/inference.py --text 'Hello world' && python fish_speech/models/dac/inference.py -i output/codes_0.npy --checkpoint-path checkpoints/s2-pro/codec.pth
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (FISH-SPEECH OFFICIAL REPO CLI) (~11.01 GB) `git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e ".[cpu]" && hf download fishaudio/s2-pro --local-dir checkpoints/s2-pro && python fish_speech/models/text2semantic/inference.py --text "Hello world" --device cpu && python fish_speech/models/dac/inference.py -i output/codes_0.npy --checkpoint-path checkpoints/s2-pro/codec.pth --device cpu` · BF16 (MLX-AUDIO) (~11.01 GB, Mac only) `pip install -U mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/fish-audio-s2-pro-bf16 --text "Hello, this is a test."`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~11.44GB
-git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e . && hf download fishaudio/s2-pro --local-dir checkpoints/s2-pro && python fish_speech/models/text2semantic/inference.py --text 'Hello world' && python fish_speech/models/dac/inference.py -i output/codes_0.npy --checkpoint-path checkpoints/s2-pro/codec.pth
-# bf16 (fish-speech official repo CLI) · ~11.01GB
-git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e ".[cpu]" && hf download fishaudio/s2-pro --local-dir checkpoints/s2-pro && python fish_speech/models/text2semantic/inference.py --text "Hello world" --device cpu && python fish_speech/models/dac/inference.py -i output/codes_0.npy --checkpoint-path checkpoints/s2-pro/codec.pth --device cpu
-# bf16 (mlx-audio) · mac only · ~11.01GB
-pip install -U mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/fish-audio-s2-pro-bf16 --text "Hello, this is a test."
-```
+Official weights and documentation: [huggingface.co/fishaudio](https://huggingface.co/fishaudio/s2-pro)
 
 [interactive version](https://whatmodel.sh/model/fish-audio-s2-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

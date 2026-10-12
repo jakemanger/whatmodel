@@ -59,20 +59,14 @@ weighted average                                   = 18.1
 
 ## How to run it
 
-<pre>
-version             needs  score
-fp32 (coqui-tts)  ~0.42GB   18.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (coqui-tts), needs ~0.42 GB, from [github.com/Edresson](https://github.com/Edresson/YourTTS/blob/23904e6b7158d42cacf2a94dba0791ef69f1e2a9/README.md))
+   
+   ```sh
+   uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --text "This is an example!" --model_name tts_models/multilingual/multi-dataset/your_tts --speaker_wav target_speaker_wav.wav --language_idx "en" --out_path speech.wav --device cpu
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (coqui-tts) · ~0.42GB
-uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --text "This is an example!" --model_name tts_models/multilingual/multi-dataset/your_tts --speaker_wav target_speaker_wav.wav --language_idx "en" --out_path speech.wav --device cpu
-```
+Official weights and documentation: [github.com/Edresson](https://github.com/Edresson/YourTTS)
 
 [interactive version](https://whatmodel.sh/model/yourtts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

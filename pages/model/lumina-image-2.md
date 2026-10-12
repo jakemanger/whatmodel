@@ -45,24 +45,20 @@ weighted average                                   = 42.7
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.075/image · [fal.ai](https://fal.ai/models/fal-ai/lumina-image/v2)
 
 <sub>[price source](https://fal.ai/models/fal-ai/lumina-image/v2): USD for one 1-megapixel output: fal bills fal-ai/lumina-image/v2 (Lumina Image 2.0) $0.075 per output megapixel (price = rate x 1 MP; fal's rounding for 1024x1024 ~1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/lumina-image/v2. Settings: 1 MP output, one image. Price basis: published per-megapixel list rate x 1 MP. Currency: USD. Not an Alpha-VLLM direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-<pre>
-version                                   needs  score
-bf16 + model CPU offload · nvidia only  ~13.2GB   42.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 + MODEL CPU OFFLOAD, needs ~13.2 GB, NVIDIA only, from [huggingface.co/Alpha-VLLM](https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0/blob/53504abd8178b30685b6c4c7a4cd181ff78b73e9/README.md))
+   
+   ```sh
+   uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from diffusers import Lumina2Pipeline; p=Lumina2Pipeline.from_pretrained('Alpha-VLLM/Lumina-Image-2.0', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('A serene photograph of golden sunlight reflecting on a vast expanse of water', height=1024, width=1024, guidance_scale=4.0, num_inference_steps=50, cfg_trunc_ratio=0.25, cfg_normalization=True, generator=torch.Generator('cpu').manual_seed(0)).images[0].save('lumina_demo.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 + model CPU offload · nvidia only · ~13.2GB
-uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from diffusers import Lumina2Pipeline; p=Lumina2Pipeline.from_pretrained('Alpha-VLLM/Lumina-Image-2.0', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('A serene photograph of golden sunlight reflecting on a vast expanse of water', height=1024, width=1024, guidance_scale=4.0, num_inference_steps=50, cfg_trunc_ratio=0.25, cfg_normalization=True, generator=torch.Generator('cpu').manual_seed(0)).images[0].save('lumina_demo.png')"
-```
+Official weights and documentation: [huggingface.co/Alpha-VLLM](https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0)
 
 [interactive version](https://whatmodel.sh/model/lumina-image-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

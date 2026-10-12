@@ -68,24 +68,20 @@ weighted average                                   = 36.3
 
 ## How to run it
 
+### Through an API
+
 api (Lightricks (LTX API)) · $0.040/sec · [docs.ltx.io](https://docs.ltx.io/pricing.md)
 
 <sub>[price source](https://docs.ltx.io/pricing.md): USD per second of generated video, LTX API text-to-video, LTX-2.3 pro model at 1280x720. Product: LTX API v2/text-to-video. API model: ltx-2-3-pro. Settings: resolution=1280x720, tier=pro (same tier as the ltx-2-5 row). Price basis: published cost per second of output video. ltx-2-3-fast $0.03/s at 720p; pro 1080p $0.08/s, 1440p $0.16/s, 2160p $0.32/s (image-to-video the same; audio-to-video pro 720p $0.06/s). fal's partner endpoint fal-ai/ltx-2.3/text-to-video starts at 1080p ($0.08/s) and is not used. Currency: USD. LTX API pricing documentation, observed 2026-09-26.</sub>
 
-<pre>
-version                                     needs  score
-gguf-ud-q4_k_m 22B dev + Gemma 3 12B q4…  ~34.2GB   36.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf-ud-q4_k_m 22B dev + Gemma 3 12B q4 (sd.cpp), needs ~34.2 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ltx2.md))
+   
+   ```sh
+   sd-cli -M vid_gen --diffusion-model models/ltx-2.3-22b-dev-UD-Q4_K_M.gguf --vae models/ltx-2.3-22b-dev_video_vae.safetensors --audio-vae models/ltx-2.3-22b-dev_audio_vae.safetensors --llm models/gemma-3-12b-it-qat-UD-Q4_K_XL.gguf --embeddings-connectors models/ltx-2.3-22b-dev_embeddings_connectors.safetensors -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -n "worst quality, low quality, blurry, distorted, artifacts" -W 1280 -H 720 --diffusion-fa --offload-to-cpu --video-frames 33 --fps 24 -o t2v.webm
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# gguf-ud-q4_k_m 22B dev + Gemma 3 12B q4 (sd.cpp) · ~34.2GB
-sd-cli -M vid_gen --diffusion-model models/ltx-2.3-22b-dev-UD-Q4_K_M.gguf --vae models/ltx-2.3-22b-dev_video_vae.safetensors --audio-vae models/ltx-2.3-22b-dev_audio_vae.safetensors --llm models/gemma-3-12b-it-qat-UD-Q4_K_XL.gguf --embeddings-connectors models/ltx-2.3-22b-dev_embeddings_connectors.safetensors -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -n "worst quality, low quality, blurry, distorted, artifacts" -W 1280 -H 720 --diffusion-fa --offload-to-cpu --video-frames 33 --fps 24 -o t2v.webm
-```
+Official weights and documentation: [huggingface.co/Lightricks](https://huggingface.co/Lightricks/LTX-2.3)
 
 [interactive version](https://whatmodel.sh/model/ltx-2-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

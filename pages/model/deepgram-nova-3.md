@@ -92,10 +92,10 @@ Live voice-memo STT p…  <a href="https://github.com/Smolevich/stt-benchmarks/b
 
 ## How to run it
 
+### Through an API
+
 api (Cloudflare) · $0.0052/audio min · [developers.cloudflare.com](https://developers.cloudflare.com/workers-ai/platform/pricing/)
 
 <sub>[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx): Cloudflare Workers AI published USD per input audio minute; file transcription, not WebSocket streaming. Plan base fees excluded. USD table is rounded; backend bills Neurons. Product: Workers AI file transcription. API model: @cf/deepgram/nova-3. Settings: streaming=no, plan=paid, free allocation=excluded. Price basis: published rounded USD/audio-minute. Currency: USD.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/deepgram-nova-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -49,20 +49,14 @@ weighted average                                   = 38.6
 
 ## How to run it
 
-<pre>
-version               needs  score
-fp16 · nvidia only  ~21.6GB   38.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~21.6 GB, NVIDIA only, from [huggingface.co/Kwai-Kolors](https://huggingface.co/Kwai-Kolors/Kolors-diffusers))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import KolorsPipeline; p=KolorsPipeline.from_pretrained('Kwai-Kolors/Kolors-diffusers', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', guidance_scale=5.0, num_inference_steps=50).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~21.6GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import KolorsPipeline; p=KolorsPipeline.from_pretrained('Kwai-Kolors/Kolors-diffusers', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', guidance_scale=5.0, num_inference_steps=50).images[0].save('out.png')"
-```
+Official weights and documentation: [huggingface.co/Kwai-Kolors](https://huggingface.co/Kwai-Kolors/Kolors)
 
 [interactive version](https://whatmodel.sh/model/kolors) · [JSON](https://whatmodel.sh/api?format=json&all=1)

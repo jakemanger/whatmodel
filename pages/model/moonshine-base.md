@@ -45,20 +45,14 @@ weighted average                                   = 37.8
 
 ## How to run it
 
-<pre>
-version   needs  score
-fp32     ~0.8GB   37.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~0.8 GB, from [huggingface.co/moonshine-ai](https://huggingface.co/moonshine-ai/moonshine-base))
+   
+   ```sh
+   uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='moonshine-ai/moonshine-base')('audio.wav')['text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · ~0.8GB
-uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='moonshine-ai/moonshine-base')('audio.wav')['text'])"
-```
+Official weights and documentation: [huggingface.co/moonshine-ai](https://huggingface.co/moonshine-ai/moonshine-base)
 
 [interactive version](https://whatmodel.sh/model/moonshine-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

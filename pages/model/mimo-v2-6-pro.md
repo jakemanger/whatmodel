@@ -98,42 +98,51 @@ weighted average                                   = 79.2
 
 ## How to run it
 
+### Through an API
+
 api (Xiaomi MiMo) · $0.54/M blended · $0.435 in / $0.87 out per 1M tokens · [mimo.mi.com](https://mimo.mi.com/docs/en-US/quick-start/summary/model)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/6b32416340759c52202fef2b0e69cd89adb74bbe/providers/xiaomi/models/mimo-v2.6-pro.toml): Standard base token rate from models.dev (revision 6b32416, observed 2026-10-07). Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/73875d00b30a89ef8cc353a0b60b0e9f9561952d/README.md): Context length stated on the official model card.</sub>
 
-<pre>
-download          size  score
-2-bit q2_k   ~420.38GB   79.2
-MXFP4 mxfp4  ~557.05GB   79.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run MiMo-V2.6-Pro (Q2_K, needs ~420.38 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF/tree/5f387f5260fc110678396a3076a140c469b41eaa))
+   
+   ```sh
+   llama cli -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF:Q2_K
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF:Q2_K
+   ```
 
-```sh
-# 2-bit q2_k · ~420.38GB
-llama cli -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF:Q2_K
-# MXFP4 mxfp4 · ~557.05GB
-llama cli -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF:MXFP4
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF:MXFP4
-```
+Other versions: mxfp4 (~557.05 GB) `llama cli -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF:MXFP4`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 2-bit q2_k · ~420.38GB
-lms get https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-# MXFP4 mxfp4 · ~557.05GB
-lms get https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF@MXFP4 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
+
+2. Run MiMo-V2.6-Pro (Q2_K, needs ~420.38 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF/tree/5f387f5260fc110678396a3076a140c469b41eaa))
+   
+   ```sh
+   lms get https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF@Q2_K -y
+   ```
+
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: mxfp4 (~557.05 GB) `lms get https://huggingface.co/ggml-org/MiMo-V2.6-Pro-RL-GGUF@MXFP4 -y`
+
+Official weights and documentation: [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL)
 
 [interactive version](https://whatmodel.sh/model/mimo-v2-6-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

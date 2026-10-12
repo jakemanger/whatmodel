@@ -23,13 +23,14 @@ FastPitch 1.0 vs 1.1 pairwise pre…   56.5%  lab          <a href="https://gith
 
 ## How to run it
 
-### Run it on your own machine
+### Other ways to run it
 
-**Other engines**
+1. Run it as published (fp32 (NVIDIA DeepLearningExamples FastPitch, NGC container), needs ~1.24 GB, NVIDIA only, from [github.com/NVIDIA](https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md))
+   
+   ```sh
+   git clone https://github.com/NVIDIA/DeepLearningExamples.git && cd DeepLearningExamples/PyTorch/SpeechSynthesis/FastPitch && bash scripts/docker/build.sh && docker run --gpus=all --rm --ipc=host -v $PWD:/workspace/fastpitch/ fastpitch:latest bash -c "bash scripts/download_cmudict.sh && HIFIGAN= WAVEGLOW=pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt bash scripts/inference_example.sh"
+   ```
 
-```sh
-# fp32 (NVIDIA DeepLearningExamples FastPitch, NGC container) · ~1.24GB
-git clone https://github.com/NVIDIA/DeepLearningExamples.git && cd DeepLearningExamples/PyTorch/SpeechSynthesis/FastPitch && bash scripts/docker/build.sh && docker run --gpus=all --rm --ipc=host -v $PWD:/workspace/fastpitch/ fastpitch:latest bash -c "bash scripts/download_cmudict.sh && HIFIGAN= WAVEGLOW=pretrained_models/waveglow/nvidia_waveglow256pyt_fp16.pt bash scripts/inference_example.sh"
-```
+Official weights and documentation: [github.com/NVIDIA](https://github.com/NVIDIA/DeepLearningExamples/tree/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/fastpitch-1-1-waveglow)

@@ -57,20 +57,14 @@ DeepSeek-AI  <a href="https://arxiv.org/html/2410.13848v1">GenEval</a>  61.0%  o
 
 ## How to run it
 
-<pre>
-version              needs  score
-bf16 · nvidia only  ~5.5GB   31.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~5.5 GB, NVIDIA only, from [github.com/deepseek-ai](https://github.com/deepseek-ai/Janus/blob/1daa72fa409002d40931bd7b36a9280362469ead/README.md))
+   
+   ```sh
+   git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && python generation_inference.py
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~5.5GB
-git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && python generation_inference.py
-```
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/Janus-1.3B)
 
 [interactive version](https://whatmodel.sh/model/janus-1-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

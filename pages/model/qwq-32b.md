@@ -122,76 +122,87 @@ weighted average                                   = 59.4
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/Qwen/QwQ-32B/blob/976055f8c83f394f35dbd3ab09a285a984907bd0/README.md): Qwen official model card: "Context Length: Full 131,072 tokens"; for prompts exceeding 8,192 tokens the card says YaRN must be enabled as documented. This does not promise the same limit on every hosted API. Observed 2026-10-07.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~20.16GB   59.4
-8-bit q8_0                 ~39.81GB   59.4
-4-bit q4_k_m                ~19.9GB   59.4
-8-bit q8_0                  ~34.8GB   59.4
-4-bit mlx-4bit · mac only   ~18.4GB   59.4
-4-bit mlx-8bit · mac only   ~34.8GB   59.4
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run QwQ-32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/QwQ-32B-GGUF/tree/8728e66249190b78dee8404869827328527f6b3b))
+   
+   ```sh
+   llama cli -hf Qwen/QwQ-32B-GGUF:q4_k_m
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf Qwen/QwQ-32B-GGUF:q4_k_m
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~34.8 GB) `llama cli -hf Qwen/QwQ-32B-GGUF:q8_0`
 
-```sh
-# 4-bit q4_k_m · ~19.9GB
-llama cli -hf Qwen/QwQ-32B-GGUF:q4_k_m
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf Qwen/QwQ-32B-GGUF:q4_k_m
-# 8-bit q8_0 · ~34.8GB
-llama cli -hf Qwen/QwQ-32B-GGUF:q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf Qwen/QwQ-32B-GGUF:q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit q4_k_m · ~19.9GB
-lms get https://huggingface.co/Qwen/QwQ-32B-GGUF@q4_k_m -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit q8_0 · ~34.8GB
-lms get https://huggingface.co/Qwen/QwQ-32B-GGUF@q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~18.4GB
-lms get https://huggingface.co/mlx-community/QwQ-32B-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~34.8GB
-lms get https://huggingface.co/mlx-community/QwQ-32B-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run QwQ-32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/QwQ-32B-GGUF/tree/8728e66249190b78dee8404869827328527f6b3b))
+   
+   ```sh
+   lms get https://huggingface.co/Qwen/QwQ-32B-GGUF@q4_k_m -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~20.16GB
-ollama run qwq:32b
-# 8-bit q8_0 · ~39.81GB
-ollama run qwq:32b-q8_0
-# 4-bit q4_k_m · ~19.9GB
-ollama run hf.co/Qwen/QwQ-32B-GGUF:q4_k_m
-# 8-bit q8_0 · ~34.8GB
-ollama run hf.co/Qwen/QwQ-32B-GGUF:q8_0
-```
+Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/Qwen/QwQ-32B-GGUF@q8_0 -y` · 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/QwQ-32B-4bit -y` · 8bit (~34.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/QwQ-32B-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~18.4GB
-mlx_lm.chat --model mlx-community/QwQ-32B-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/QwQ-32B-4bit
-# 4-bit mlx-8bit · mac only · ~34.8GB
-mlx_lm.chat --model mlx-community/QwQ-32B-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/QwQ-32B-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run QwQ-32B (Q4_K_M, needs ~20.16 GB, from [ollama.com](https://ollama.com/library/qwq/tags))
+   
+   ```sh
+   ollama run qwq:32b
+   ```
+
+Other versions: Q8_0 (~39.81 GB) `ollama run qwq:32b-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run QwQ-32B (4bit, needs ~18.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/QwQ-32B-4bit/tree/0e98026e38d9957ffdabff95384fd9ee096bb10d))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/QwQ-32B-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/QwQ-32B-4bit
+   ```
+
+Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model mlx-community/QwQ-32B-8bit`
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/QwQ-32B)
 
 [interactive version](https://whatmodel.sh/model/qwq-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

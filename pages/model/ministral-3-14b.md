@@ -105,71 +105,92 @@ weighted average                                   = 55.7
 
 ## How to run it
 
+### Through an API
+
 api (Mistral) · $0.20/M blended · $0.2 in / $0.2 out per 1M tokens · [docs.mistral.ai](https://docs.mistral.ai/models/ministral-3-14b-25-12)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens. Mistral standard synchronous API; model ministral-14b-2512. Uncached input; output includes generated reasoning where billed.  Batch, cache storage, tools and other modalities excluded. · [context source](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/config.json): Official Instruct-2512 model configuration; card corroborates 256K. For 3B this replaces a missing value using the first-party record, not LiteLLM’s conflicting 131,072 entry.</sub>
 
-<pre>
-download                        size  score
-4-bit q4_k_m                 ~8.84GB   55.7
-8-bit q8_0                  ~17.18GB   55.7
-4-bit Q4_K_M                  ~8.2GB   55.7
-8-bit Q8_0                   ~14.4GB   55.7
-MXFP4 mlx-mxfp4 · mac only    ~7.2GB   55.7
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Ministral 3 14B (Q4_K_M, needs ~8.2 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF/tree/74fac473c43357d7fb2671713608183cc72496d0))
+   
+   ```sh
+   llama cli -hf mistralai/Ministral-3-14B-Instruct-2512-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mistralai/Ministral-3-14B-Instruct-2512-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~8.2GB
-llama cli -hf mistralai/Ministral-3-14B-Instruct-2512-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mistralai/Ministral-3-14B-Instruct-2512-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~14.4GB
-llama cli -hf mistralai/Ministral-3-14B-Instruct-2512-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mistralai/Ministral-3-14B-Instruct-2512-GGUF:Q8_0
-```
+Other versions: Q8_0 (~14.4 GB) `llama cli -hf mistralai/Ministral-3-14B-Instruct-2512-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~8.2GB
-lms get https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~14.4GB
-lms get https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# MXFP4 mlx-mxfp4 · mac only · ~7.2GB
-lms get https://huggingface.co/mlx-community/mistralai_Ministral-3-14B-Instruct-2512-MLX-MXFP4 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Ministral 3 14B (Q4_K_M, needs ~8.2 GB, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF/tree/74fac473c43357d7fb2671713608183cc72496d0))
+   
+   ```sh
+   lms get https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~8.84GB
-ollama run ministral-3:14b
-# 8-bit q8_0 · ~17.18GB
-ollama run ministral-3:14b-instruct-2512-q8_0
-# 4-bit Q4_K_M · ~8.2GB
-ollama run hf.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~14.4GB
-ollama run hf.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~14.4 GB) `lms get https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF@Q8_0 -y` · mxfp4 (~7.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/mistralai_Ministral-3-14B-Instruct-2512-MLX-MXFP4 -y`
 
-```sh
-# MXFP4 mlx-mxfp4 · mac only · ~7.2GB
-mlx_lm.chat --model mlx-community/mistralai_Ministral-3-14B-Instruct-2512-MLX-MXFP4
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/mistralai_Ministral-3-14B-Instruct-2512-MLX-MXFP4
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Ministral 3 14B (Q4_K_M, needs ~8.84 GB, from [ollama.com](https://ollama.com/library/ministral-3/tags))
+   
+   ```sh
+   ollama run ministral-3:14b
+   ```
+
+Other versions: Q8_0 (~17.18 GB) `ollama run ministral-3:14b-instruct-2512-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Ministral 3 14B (mxfp4, needs ~7.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/mistralai_Ministral-3-14B-Instruct-2512-MLX-MXFP4/tree/df992b14e4490b0b9eb496015f402b9449e44e08))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/mistralai_Ministral-3-14B-Instruct-2512-MLX-MXFP4
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/mistralai_Ministral-3-14B-Instruct-2512-MLX-MXFP4
+   ```
+
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512)
 
 ## Quantization evidence
 

@@ -42,10 +42,10 @@ weighted average                             = 52.7
 
 ## How to run it
 
+### Through an API
+
 api (MiniMax) · $0.0035/image · [platform.minimax.io](https://platform.minimax.io/docs/guides/pricing-paygo.md)
 
 <sub>[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md): USD per generated image: MiniMax pay-as-you-go pricing, Image section, 'image-01 \| $0.0035 per image'. Product: MiniMax Image Generation API. API model: image-01. Settings: one image. Price basis: published list rate. Currency: USD. Official MiniMax pricing doc, observed 2026-10-10.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/minimax-image-01) · [JSON](https://whatmodel.sh/api?format=json&all=1)

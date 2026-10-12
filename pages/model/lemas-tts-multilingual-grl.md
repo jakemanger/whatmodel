@@ -42,20 +42,14 @@ weighted average                                   = 50.1
 
 ## How to run it
 
-<pre>
-version                                    needs  score
-official checkpoint (LEMAS-TTS repo, F5…  ~1.4GB   50.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (official checkpoint (LEMAS-TTS repo, F5-TTS-based), needs ~1.4 GB, from [github.com/LEMAS-Project](https://github.com/LEMAS-Project/LEMAS-TTS/blob/305f7e31a874140d141987909a062e57f2807321/README.md))
+   
+   ```sh
+   git clone https://github.com/LEMAS-Project/LEMAS-TTS.git && cd LEMAS-TTS && pip install -r requirements.txt && hf download LEMAS-Project/LEMAS-TTS --include "pretrained_models/*" --local-dir . && PYTHONPATH=$PWD python -m lemas_tts.scripts.tts_multilingual --model multilingual_grl --ckpt_file pretrained_models/ckpts/multilingual_grl/multilingual_grl.safetensors --vocab_file pretrained_models/data/multilingual_grl/vocab.txt --frontend phone --use_ema --ref_audio pretrained_models/demos/lemas_tts_test/es.wav --ref_text "Te voy a dar un tip que le copié a John Rockefeller, uno de los empresarios más picudos de la historia. " --text "I want to give you a tip I copied from John Rockefeller." --output_wave out.wav --nfe_step 64 --cfg_strength 5.0 --sway_sampling_coef 3.0 --ref_ratio 1.0 --separate_langs --speed 1.0 --seed -1
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# official checkpoint (LEMAS-TTS repo, F5-TTS-based) · ~1.4GB
-git clone https://github.com/LEMAS-Project/LEMAS-TTS.git && cd LEMAS-TTS && pip install -r requirements.txt && hf download LEMAS-Project/LEMAS-TTS --include "pretrained_models/*" --local-dir . && PYTHONPATH=$PWD python -m lemas_tts.scripts.tts_multilingual --model multilingual_grl --ckpt_file pretrained_models/ckpts/multilingual_grl/multilingual_grl.safetensors --vocab_file pretrained_models/data/multilingual_grl/vocab.txt --frontend phone --use_ema --ref_audio pretrained_models/demos/lemas_tts_test/es.wav --ref_text "Te voy a dar un tip que le copié a John Rockefeller, uno de los empresarios más picudos de la historia. " --text "I want to give you a tip I copied from John Rockefeller." --output_wave out.wav --nfe_step 64 --cfg_strength 5.0 --sway_sampling_coef 3.0 --ref_ratio 1.0 --separate_langs --speed 1.0 --seed -1
-```
+Official weights and documentation: [huggingface.co/LEMAS-Project](https://huggingface.co/LEMAS-Project/LEMAS-TTS)
 
 [interactive version](https://whatmodel.sh/model/lemas-tts-multilingual-grl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

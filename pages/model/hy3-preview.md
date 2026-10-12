@@ -140,20 +140,14 @@ tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc
 
 ## How to run it
 
-<pre>
-download                        size  score
-16-bit bf16 · nvidia only  ~597.58GB   67.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~597.58 GB, NVIDIA only, from [huggingface.co/tencent](https://huggingface.co/tencent/Hy3-preview/blob/549c2b3a0fd5b9a6c6059a9935bf0d59ab69d75a/README.md))
+   
+   ```sh
+   vllm serve tencent/Hy3-preview --tensor-parallel-size 8 --speculative-config.method mtp --speculative-config.num_speculative_tokens 1 --tool-call-parser hy_v3 --reasoning-parser hy_v3 --enable-auto-tool-choice --served-model-name hy3-preview
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · nvidia only · ~597.58GB
-vllm serve tencent/Hy3-preview --tensor-parallel-size 8 --speculative-config.method mtp --speculative-config.num_speculative_tokens 1 --tool-call-parser hy_v3 --reasoning-parser hy_v3 --enable-auto-tool-choice --served-model-name hy3-preview
-```
+Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/Hy3-preview)
 
 [interactive version](https://whatmodel.sh/model/hy3-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

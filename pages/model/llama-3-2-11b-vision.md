@@ -87,25 +87,23 @@ weighted average                              = 42.7
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct/blob/9eb2daaa8597bf192a8b0e73f848f3a102794df5/README.md): Context length stated on the official model card.</sub>
+### Ollama (recommended)
 
-<pre>
-download          size  score
-4-bit q4_k_m   ~6.92GB   42.7
-8-bit q8_0    ~13.34GB   42.7
-</pre>
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Llama 3.2 11B Vision Instruct (Q4_K_M, needs ~6.92 GB, from [ollama.com](https://ollama.com/library/llama3.2-vision/tags))
+   
+   ```sh
+   ollama run llama3.2-vision:11b-instruct-q4_K_M
+   ```
 
-### Run it on your own machine
+Other versions: Q8_0 (~13.34 GB) `ollama run llama3.2-vision:11b-instruct-q8_0`
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
-
-```sh
-# 4-bit q4_k_m · ~6.92GB
-ollama run llama3.2-vision:11b-instruct-q4_K_M
-# 8-bit q8_0 · ~13.34GB
-ollama run llama3.2-vision:11b-instruct-q8_0
-```
+Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct)
 
 [interactive version](https://whatmodel.sh/model/llama-3-2-11b-vision) · [JSON](https://whatmodel.sh/api?format=json&all=1)

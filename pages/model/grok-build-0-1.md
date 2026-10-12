@@ -10,6 +10,8 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Through an API
+
 api (xAI) · $1.25/M blended · $1 in / $2 out per 1M tokens · [docs.x.ai](https://docs.x.ai/docs/models)
 
 <sub>[price source](https://docs.x.ai/developers/models.md): USD per 1M tokens, xAI API grok-build-0.1 for requests under 200K prompt tokens; requests at or above 200K prompt tokens are billed $2.00 in / $4.00 out for all tokens; cached input $0.20/1M and batch discounts excluded. Currency: USD. xAI official models/pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/xai/grok-build-0.1.toml): model catalogue context ceiling (not a promise by a hosted API)</sub>

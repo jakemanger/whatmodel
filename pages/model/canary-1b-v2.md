@@ -87,24 +87,17 @@ NVIDIA ASR model cards  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob
 
 ## How to run it
 
-<pre>
-version              needs  score
-onnx-fp32           ~5.2GB   57.9
-fp32 · nvidia only  ~5.2GB   57.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (onnx-fp32, needs ~5.2 GB, from [github.com/istupakov](https://github.com/istupakov/onnx-asr))
+   
+   ```sh
+   uvx --from 'onnx-asr[cpu,hub]' onnx-asr nemo-canary-1b-v2 audio.wav
+   ```
 
-### Run it on your own machine
+Other versions: fp32 (~5.2 GB, NVIDIA only) `uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/canary-1b-v2').transcribe(['audio.wav']))"`
 
-**Other engines**
-
-```sh
-# onnx-fp32 · ~5.2GB
-uvx --from 'onnx-asr[cpu,hub]' onnx-asr nemo-canary-1b-v2 audio.wav
-# fp32 · nvidia only · ~5.2GB
-uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/canary-1b-v2').transcribe(['audio.wav']))"
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/canary-1b-v2)
 
 ## Published speed measurements
 

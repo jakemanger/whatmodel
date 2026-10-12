@@ -45,10 +45,10 @@ weighted average                                   = 62.6
 
 ## How to run it
 
+### Through an API
+
 api (MiniMax) · $100.00/M chars · [platform.minimax.io](https://platform.minimax.io/docs/guides/pricing-paygo.md)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M input characters, HD model. No tokens-to-characters conversion. Product: Pay-as-you-go text-to-audio. API model: speech-02-hd. Settings: mode=T2A, quality=HD. Price basis: published rate. Currency: USD.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/minimax-speech-02-hd) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -52,20 +52,14 @@ weighted average                              = 43.6
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit fp16  ~43.65GB   43.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~43.65 GB, from [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/AceGPT-13B-chat/tree/ab87ccbc2c4a05969957755aaabc04400bb20052))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FreedomIntelligence/AceGPT-13B-chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp16 · ~43.65GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='FreedomIntelligence/AceGPT-13B-chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/FreedomIntelligence](https://huggingface.co/FreedomIntelligence/AceGPT-13B-chat)
 
 [interactive version](https://whatmodel.sh/model/acegpt-13b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

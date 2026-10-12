@@ -131,10 +131,10 @@ weighted average                                   = 75.0
 
 ## How to run it
 
+### Through an API
+
 api (xAI) · $3.00/M blended · $2 in / $6 out per 1M tokens · [docs.x.ai](https://docs.x.ai/docs/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/xai/models/grok-4.5.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/xai/grok-4.5.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/grok-4-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

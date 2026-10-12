@@ -6,7 +6,8 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync
 import { renderPages } from "../lib/markdown.ts";
 
 const root = new URL("../", import.meta.url);
-const pages = renderPages(readFileSync(new URL("scripts/readme-about.md", root), "utf8"));
+const read = (f: string) => readFileSync(new URL(f, root), "utf8");
+const pages = renderPages(read("scripts/readme-about.md"), { page: read("content/site/bench.md"), details: read("scripts/benchmarking-details.md") });
 
 const at = (f: string) => new URL(f, root);
 const stale = [...pages.keys()].filter((f) => !existsSync(at(f)) || readFileSync(at(f), "utf8") !== pages.get(f));

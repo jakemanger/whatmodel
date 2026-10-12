@@ -44,55 +44,70 @@ weighted average                              = 39.4
 
 ## How to run it
 
-<pre>
-download         size  score
-16-bit bf16  ~28.33GB   39.4
-4-bit Q4_0     ~8.2GB   39.4
-8-bit Q8_0    ~15.1GB   39.4
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run CausalLM 14B (Q4_0, needs ~8.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CausalLM-14B-GGUF/tree/fe9e233d83851a081204be55a8812bb4af1da2f9))
+   
+   ```sh
+   llama cli -hf TheBloke/CausalLM-14B-GGUF:Q4_0
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf TheBloke/CausalLM-14B-GGUF:Q4_0
+   ```
 
-```sh
-# 4-bit Q4_0 · ~8.2GB
-llama cli -hf TheBloke/CausalLM-14B-GGUF:Q4_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/CausalLM-14B-GGUF:Q4_0
-# 8-bit Q8_0 · ~15.1GB
-llama cli -hf TheBloke/CausalLM-14B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/CausalLM-14B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~15.1 GB) `llama cli -hf TheBloke/CausalLM-14B-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_0 · ~8.2GB
-lms get https://huggingface.co/TheBloke/CausalLM-14B-GGUF@Q4_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~15.1GB
-lms get https://huggingface.co/TheBloke/CausalLM-14B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run CausalLM 14B (Q4_0, needs ~8.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CausalLM-14B-GGUF/tree/fe9e233d83851a081204be55a8812bb4af1da2f9))
+   
+   ```sh
+   lms get https://huggingface.co/TheBloke/CausalLM-14B-GGUF@Q4_0 -y
+   ```
 
-```sh
-# 4-bit Q4_0 · ~8.2GB
-ollama run hf.co/TheBloke/CausalLM-14B-GGUF:Q4_0
-# 8-bit Q8_0 · ~15.1GB
-ollama run hf.co/TheBloke/CausalLM-14B-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q8_0 (~15.1 GB) `lms get https://huggingface.co/TheBloke/CausalLM-14B-GGUF@Q8_0 -y`
 
-```sh
-# 16-bit bf16 · ~28.33GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CausalLM/14B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run CausalLM 14B (Q4_0, needs ~8.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CausalLM-14B-GGUF/tree/fe9e233d83851a081204be55a8812bb4af1da2f9))
+   
+   ```sh
+   ollama run hf.co/TheBloke/CausalLM-14B-GGUF:Q4_0
+   ```
+
+Other versions: Q8_0 (~15.1 GB) `ollama run hf.co/TheBloke/CausalLM-14B-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~28.33 GB, from [huggingface.co/CausalLM](https://huggingface.co/CausalLM/14B/tree/cc054cf5953252d0709cb3267d1a85246e489e95))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CausalLM/14B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/CausalLM](https://huggingface.co/CausalLM/14B)
 
 [interactive version](https://whatmodel.sh/model/causallm-14b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

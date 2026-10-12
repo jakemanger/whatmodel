@@ -71,23 +71,16 @@ Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS
 
 ## How to run it
 
-<pre>
-version                                  needs  score
-fp32 (Spark-TTS repo CLI)              ~3.92GB   51.7
-mlx-bf16 (mlx-audio 0.5.x) · mac only   ~2.9GB   51.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (Spark-TTS repo CLI), needs ~3.92 GB, from [github.com/SparkAudio](https://github.com/SparkAudio/Spark-TTS/blob/2f1ea9082400547242641f5271b6f941c9f439d1/README.md))
+   
+   ```sh
+   git clone https://github.com/SparkAudio/Spark-TTS.git && cd Spark-TTS && conda create -n sparktts -y python=3.12 && conda activate sparktts && pip install -r requirements.txt && python -c "from huggingface_hub import snapshot_download; snapshot_download('SparkAudio/Spark-TTS-0.5B', local_dir='pretrained_models/Spark-TTS-0.5B')" && cd example && bash infer.sh
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (MLX-AUDIO 0.5.X) (~2.9 GB, Mac only) `pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Spark-TTS-0.5B-bf16 --text 'Hello, world!'`
 
-**Other engines**
-
-```sh
-# fp32 (Spark-TTS repo CLI) · ~3.92GB
-git clone https://github.com/SparkAudio/Spark-TTS.git && cd Spark-TTS && conda create -n sparktts -y python=3.12 && conda activate sparktts && pip install -r requirements.txt && python -c "from huggingface_hub import snapshot_download; snapshot_download('SparkAudio/Spark-TTS-0.5B', local_dir='pretrained_models/Spark-TTS-0.5B')" && cd example && bash infer.sh
-# mlx-bf16 (mlx-audio 0.5.x) · mac only · ~2.9GB
-pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Spark-TTS-0.5B-bf16 --text 'Hello, world!'
-```
+Official weights and documentation: [huggingface.co/SparkAudio](https://huggingface.co/SparkAudio/Spark-TTS-0.5B)
 
 [interactive version](https://whatmodel.sh/model/spark-tts-0-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -65,24 +65,20 @@ weighted average                                   = 52.7
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.075/sec · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-video-v1.5/image-to-video)
 
 <sub>[price source](https://fal.ai/models/fal-ai/hunyuan-video-v1.5/image-to-video): USD per second of generated video, 480p (the only resolution offered on this endpoint). Product: fal HunyuanVideo 1.5 image-to-video endpoint. API model: fal-ai/hunyuan-video-v1.5/image-to-video. Price basis: rate printed by fal ("$0.075 per second"), matching the endpoint billing record. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
-<pre>
-version                                     needs  score
-bf16 480p I2V + model CPU offload · nvi…  ~65.6GB   52.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 480P I2V + MODEL CPU OFFLOAD, needs ~65.6 GB, NVIDIA only, from [huggingface.co/hunyuanvideo-community](https://huggingface.co/hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-480p_i2v/blob/5a700ee883ff4c1b3d887ec4188755a7a5e2f698/README.md))
+   
+   ```sh
+   uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c "import torch; from diffusers import HunyuanVideo15ImageToVideoPipeline; from diffusers.utils import export_to_video, load_image; p=HunyuanVideo15ImageToVideoPipeline.from_pretrained('hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-480p_i2v', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p.vae.enable_tiling(); image=load_image('https://huggingface.co/datasets/YiYiXu/testing-images/resolve/main/wan_i2v_input.JPG'); export_to_video(p(prompt='Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard.', image=image, generator=torch.Generator(device='cuda:0').manual_seed(1), num_frames=121, num_inference_steps=50).frames[0], 'output.mp4', fps=24)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 480p I2V + model CPU offload · nvidia only · ~65.6GB
-uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c "import torch; from diffusers import HunyuanVideo15ImageToVideoPipeline; from diffusers.utils import export_to_video, load_image; p=HunyuanVideo15ImageToVideoPipeline.from_pretrained('hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-480p_i2v', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p.vae.enable_tiling(); image=load_image('https://huggingface.co/datasets/YiYiXu/testing-images/resolve/main/wan_i2v_input.JPG'); export_to_video(p(prompt='Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard.', image=image, generator=torch.Generator(device='cuda:0').manual_seed(1), num_frames=121, num_inference_steps=50).frames[0], 'output.mp4', fps=24)"
-```
+Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanVideo-1.5)
 
 [interactive version](https://whatmodel.sh/model/hunyuanvideo-1-5-i2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -55,30 +55,22 @@ weighted average                                   = 66.4
 
 ## How to run it
 
+### Through an API
+
 api (Together AI) · $0.060/image · [together.ai](https://www.together.ai/models/ideogram-40)
 
 <sub>[price source](https://www.together.ai/models/ideogram-40): USD per generated image on Together AI serverless (endpoint ideogram/ideogram-4.0, released June 2, 2026). Together's pricing overview notes displayed prices refer to the lowest resolution settings, so higher resolutions may cost more. Product: Together AI serverless image generation. API model: ideogram/ideogram-4.0. Settings: default/lowest resolution, n=1. Price basis: published list rate. Currency: USD. Not Ideogram's own API tariff (not shown in its fetched pricing HTML). Together AI official model page, observed 2026-09-25.</sub>
 
-<pre>
-version                              needs  score
-nf4 · nvidia only                  ~6.08GB   66.4
-mlx-q4 · mac only                  ~6.08GB   66.4
-fp8 + Qwen3-VL 8B q4_k_m (sd.cpp)  ~29.2GB   66.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (Q4, needs ~6.08 GB, Mac only, from [huggingface.co/mflux-community](https://huggingface.co/mflux-community/ideogram-4-mflux-q4))
+   
+   ```sh
+   uvx --from mflux mflux-save --model ideogram-4-fp8 -q 4 --path ideogram-4-mflux-q4 && uvx --from mflux mflux-generate-ideogram4 --model ideogram-4-mflux-q4 --prompt-file caption.json --width 1024 --height 1024 --preset V4_DEFAULT_20
+   ```
 
-### Run it on your own machine
+Other versions: nf4 (~6.08 GB, NVIDIA only) `uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with bitsandbytes --with sentencepiece python -c "import torch; from diffusers import Ideogram4Pipeline; p=Ideogram4Pipeline.from_pretrained('ideogram-ai/ideogram-4-nf4', dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', height=1024, width=1024).images[0].save('out.png')"` · fp8 + Qwen3-VL 8B q4_k_m (sd.cpp) (~29.2 GB) `sd-cli --diffusion-model models/ideogram4_fp8.safetensors --uncond-diffusion-model models/ideogram4_uncond_fp8.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf --vae models/flux2_ae.safetensors -p "$(cat caption.json)" --diffusion-fa -v --offload-to-cpu -H 1024 -W 1024`
 
-**Other engines**
-
-```sh
-# nf4 · nvidia only · ~6.08GB
-uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with bitsandbytes --with sentencepiece python -c "import torch; from diffusers import Ideogram4Pipeline; p=Ideogram4Pipeline.from_pretrained('ideogram-ai/ideogram-4-nf4', dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', height=1024, width=1024).images[0].save('out.png')"
-# mlx-q4 · mac only · ~6.08GB
-uvx --from mflux mflux-save --model ideogram-4-fp8 -q 4 --path ideogram-4-mflux-q4 && uvx --from mflux mflux-generate-ideogram4 --model ideogram-4-mflux-q4 --prompt-file caption.json --width 1024 --height 1024 --preset V4_DEFAULT_20
-# fp8 + Qwen3-VL 8B q4_k_m (sd.cpp) · ~29.2GB
-sd-cli --diffusion-model models/ideogram4_fp8.safetensors --uncond-diffusion-model models/ideogram4_uncond_fp8.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf --vae models/flux2_ae.safetensors -p "$(cat caption.json)" --diffusion-fa -v --offload-to-cpu -H 1024 -W 1024
-```
+Official weights and documentation: [huggingface.co/ideogram-ai](https://huggingface.co/ideogram-ai/ideogram-4-fp8)
 
 [interactive version](https://whatmodel.sh/model/ideogram-4) · [JSON](https://whatmodel.sh/api?format=json&all=1)

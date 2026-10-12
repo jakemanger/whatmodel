@@ -45,10 +45,10 @@ weighted average                        = 49.6
 
 ## How to run it
 
+### Through an API
+
 api (Runway) · $0.050/image · [docs.dev.runwayml.com](https://docs.dev.runwayml.com/guides/models)
 
 <sub>[price source](https://docs.dev.runwayml.com/guides/pricing): USD per generated 720p image: Runway lists gen4\_image at 5 credits per 720p image (8 credits, $0.08, per 1080p image); credits cost $0.01 each. Product: Runway developer API image generation. API model: gen4\_image (not gen4\_image\_turbo, 2 credits). Settings: 720p, one image. Price basis: 5 credits × $0.01 per credit; sales tax excluded. Currency: USD. Runway official API pricing page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/runway-gen-4-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

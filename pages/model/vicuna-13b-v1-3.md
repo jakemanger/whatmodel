@@ -44,22 +44,14 @@ weighted average                              = 35.8
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/lmsys/vicuna-13b-v1.3/blob/6566e9cb1787585d1147dcf4f9bc48f29e1328d2/config.json): LMSYS official configuration for vicuna-13b-v1.3 (pinned commit 6566e9c): max\_position\_embeddings 2048. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
+### Other ways to run it
 
-<pre>
-download        size  score
-4-bit fp16  ~26.03GB   35.8
-</pre>
+1. Run it as published (fp16, needs ~26.03 GB, from [huggingface.co/lmsys](https://huggingface.co/lmsys/vicuna-13b-v1.3/tree/6566e9cb1787585d1147dcf4f9bc48f29e1328d2))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='lmsys/vicuna-13b-v1.3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp16 · ~26.03GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='lmsys/vicuna-13b-v1.3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/lmsys](https://huggingface.co/lmsys/vicuna-13b-v1.3)
 
 [interactive version](https://whatmodel.sh/model/vicuna-13b-v1-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

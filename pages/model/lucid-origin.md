@@ -45,10 +45,10 @@ weighted average                        = 48.5
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.017/image · [replicate.com](https://replicate.com/leonardoai/lucid-origin)
 
 <sub>[price source](https://replicate.com/leonardoai/lucid-origin): USD per output image, Standard generation mode, on Replicate's official model leonardoai/lucid-origin (billing table: Standard $0.0167 per output image, Ultra $0.0765 per output image; generation\_mode defaults to standard; no hardware-time charge). Product: Replicate model API (Leonardo.Ai's Lucid Origin). API model: leonardoai/lucid-origin. Settings: generation\_mode=standard, default aspect ratio 16:9, one image. Price basis: published per-output-image list rate. Leonardo's own API bills from a USD balance but its per-image rates are only in the logged-in pricing calculator (leonardo.ai pricing pages return a Cloudflare challenge). Currency: USD. Not a Leonardo.Ai direct tariff. Replicate official model page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/lucid-origin) · [JSON](https://whatmodel.sh/api?format=json&all=1)

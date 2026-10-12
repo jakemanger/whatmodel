@@ -45,20 +45,14 @@ weighted average                                = 23.3
 
 ## How to run it
 
-<pre>
-version                needs  score
-fp32 (transformers)  ~0.65GB   23.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (transformers), needs ~0.65 GB, from [huggingface.co/microsoft](https://huggingface.co/microsoft/speecht5_tts/blob/30fcde30f19b87502b8435427b5f5068e401d5f6/README.md))
+   
+   ```sh
+   uv run --with transformers --with sentencepiece --with 'datasets[audio]<4' --with soundfile --with torch python -c "from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan; from datasets import load_dataset; import torch; import soundfile as sf; processor = SpeechT5Processor.from_pretrained('microsoft/speecht5_tts'); model = SpeechT5ForTextToSpeech.from_pretrained('microsoft/speecht5_tts'); vocoder = SpeechT5HifiGan.from_pretrained('microsoft/speecht5_hifigan'); inputs = processor(text='Hello, my dog is cute.', return_tensors='pt'); embeddings_dataset = load_dataset('Matthijs/cmu-arctic-xvectors', split='validation'); speaker_embeddings = torch.tensor(embeddings_dataset[7306]['xvector']).unsqueeze(0); speech = model.generate_speech(inputs['input_ids'], speaker_embeddings, vocoder=vocoder); sf.write('speech.wav', speech.numpy(), samplerate=16000)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (transformers) · ~0.65GB
-uv run --with transformers --with sentencepiece --with 'datasets[audio]<4' --with soundfile --with torch python -c "from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan; from datasets import load_dataset; import torch; import soundfile as sf; processor = SpeechT5Processor.from_pretrained('microsoft/speecht5_tts'); model = SpeechT5ForTextToSpeech.from_pretrained('microsoft/speecht5_tts'); vocoder = SpeechT5HifiGan.from_pretrained('microsoft/speecht5_hifigan'); inputs = processor(text='Hello, my dog is cute.', return_tensors='pt'); embeddings_dataset = load_dataset('Matthijs/cmu-arctic-xvectors', split='validation'); speaker_embeddings = torch.tensor(embeddings_dataset[7306]['xvector']).unsqueeze(0); speech = model.generate_speech(inputs['input_ids'], speaker_embeddings, vocoder=vocoder); sf.write('speech.wav', speech.numpy(), samplerate=16000)"
-```
+Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/speecht5_tts)
 
 [interactive version](https://whatmodel.sh/model/speecht5-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -107,59 +107,68 @@ weighted average                                   = 66.2
 
 ## How to run it
 
-<pre>
-download                       size  score
-4-bit Q4_K_M               ~186.8GB   66.2
-8-bit Q8_0                 ~328.2GB   66.2
-2-bit UD-IQ2_XXS           ~101.6GB   66.2
-4-bit mlx-4bit · mac only  ~173.8GB   66.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run MiMo-V2-Flash (309B-A15B) (Q4_K_M, needs ~186.8 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF/tree/04c761fbebcf4f3239b1cfdafec85533dcc0dea3))
+   
+   ```sh
+   llama cli -hf unsloth/MiMo-V2-Flash-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/MiMo-V2-Flash-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~186.8GB
-llama cli -hf unsloth/MiMo-V2-Flash-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/MiMo-V2-Flash-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~328.2GB
-llama cli -hf unsloth/MiMo-V2-Flash-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/MiMo-V2-Flash-GGUF:Q8_0
-# 2-bit UD-IQ2_XXS · ~101.6GB
-llama cli -hf unsloth/MiMo-V2-Flash-GGUF:UD-IQ2_XXS
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/MiMo-V2-Flash-GGUF:UD-IQ2_XXS
-```
+Other versions: Q8_0 (~328.2 GB) `llama cli -hf unsloth/MiMo-V2-Flash-GGUF:Q8_0` · UD-IQ2_XXS (~101.6 GB) `llama cli -hf unsloth/MiMo-V2-Flash-GGUF:UD-IQ2_XXS`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~186.8GB
-lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~328.2GB
-lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit UD-IQ2_XXS · ~101.6GB
-lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@UD-IQ2_XXS -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~173.8GB
-lms get https://huggingface.co/mlx-community/MiMo-V2-Flash-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+2. Run MiMo-V2-Flash (309B-A15B) (Q4_K_M, needs ~186.8 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF/tree/04c761fbebcf4f3239b1cfdafec85533dcc0dea3))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~173.8GB
-mlx_lm.chat --model mlx-community/MiMo-V2-Flash-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/MiMo-V2-Flash-4bit
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: Q8_0 (~328.2 GB) `lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@Q8_0 -y` · UD-IQ2_XXS (~101.6 GB) `lms get https://huggingface.co/unsloth/MiMo-V2-Flash-GGUF@UD-IQ2_XXS -y` · 4bit (~173.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/MiMo-V2-Flash-4bit -y`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run MiMo-V2-Flash (309B-A15B) (4bit, needs ~173.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/MiMo-V2-Flash-4bit/tree/65d2673628480cc377aaeefc1b409f1d750bc9df))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/MiMo-V2-Flash-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/MiMo-V2-Flash-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/XiaomiMiMo](https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash)
 
 [interactive version](https://whatmodel.sh/model/mimo-v2-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

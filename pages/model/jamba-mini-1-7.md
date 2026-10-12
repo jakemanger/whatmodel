@@ -40,55 +40,68 @@ weighted average                            = 48.7
 
 ## How to run it
 
-<sub>[context source](https://docs.ai21.com/docs/jamba-foundation-models): AI21 docs: Jamba models 'feature the longest context window (256K tokens)'; Jamba Mini 1.7 API snapshot deprecated 2026-02-01. Observed 2026-10-09.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                        size  score
-16-bit bf16 · nvidia only  ~103.14GB   48.7
-4-bit Q4_K_M                 ~31.2GB   48.7
-8-bit Q8_0                   ~54.8GB   48.7
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Jamba Mini 1.7 (Q4_K_M, needs ~31.2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF/tree/ff9388cc4d054cf7f437ea6e47c678475b0016b9))
+   
+   ```sh
+   llama cli -hf bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~54.8 GB) `llama cli -hf bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~31.2GB
-llama cli -hf bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~54.8GB
-llama cli -hf bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~31.2GB
-lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~54.8GB
-lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Jamba Mini 1.7 (Q4_K_M, needs ~31.2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF/tree/ff9388cc4d054cf7f437ea6e47c678475b0016b9))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~31.2GB
-ollama run hf.co/bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF:Q4_K_M
-```
+Other versions: Q8_0 (~54.8 GB) `lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF@Q8_0 -y`
 
-**Other engines**
+### Ollama
 
-```sh
-# 16-bit bf16 · nvidia only · ~103.14GB
-vllm serve ai21labs/AI21-Jamba-Mini-1.7
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Jamba Mini 1.7 (Q4_K_M, needs ~31.2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF/tree/ff9388cc4d054cf7f437ea6e47c678475b0016b9))
+   
+   ```sh
+   ollama run hf.co/bartowski/ai21labs_AI21-Jamba-Mini-1.7-GGUF:Q4_K_M
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~103.14 GB, NVIDIA only, from [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Mini-1.7/tree/e8986f3aa2e7ce119329cde6120238f8802f92cb))
+   
+   ```sh
+   vllm serve ai21labs/AI21-Jamba-Mini-1.7
+   ```
+
+Official weights and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Mini-1.7)
 
 [interactive version](https://whatmodel.sh/model/jamba-mini-1-7) · [JSON](https://whatmodel.sh/api?format=json&all=1)

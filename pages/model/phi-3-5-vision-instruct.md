@@ -96,20 +96,14 @@ weighted average                                   = 37.4
 
 ## How to run it
 
-<pre>
-download                      size  score
-16-bit bf16 · nvidia only  ~8.29GB   37.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~8.29 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+   
+   ```sh
+   vllm serve microsoft/Phi-3.5-vision-instruct --trust-remote-code
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · nvidia only · ~8.29GB
-vllm serve microsoft/Phi-3.5-vision-instruct --trust-remote-code
-```
+Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3.5-vision-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-3-5-vision-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -45,20 +45,14 @@ weighted average                                   = 40.0
 
 ## How to run it
 
-<pre>
-version                                    needs  score
-official scripts (checkpoint as stored)…  ~7.9GB   40.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (official scripts (checkpoint as stored), needs ~7.9 GB, NVIDIA only, from [github.com/showlab](https://github.com/showlab/Show-o/blob/45a5a2de01d1ebd10cd5864d29310a76476cdf23/show-o2/README.md))
+   
+   ```sh
+   git clone https://github.com/showlab/Show-o && cd Show-o/show-o2 && bash build_env.sh && wandb login && wget https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/resolve/main/Wan2.1_VAE.pth && python3 inference_t2i.py config=configs/showo2_1.5b_demo_1024x1024.yaml batch_size=4 guidance_scale=7.5 num_inference_steps=50
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# official scripts (checkpoint as stored) · nvidia only · ~7.9GB
-git clone https://github.com/showlab/Show-o && cd Show-o/show-o2 && bash build_env.sh && wandb login && wget https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/resolve/main/Wan2.1_VAE.pth && python3 inference_t2i.py config=configs/showo2_1.5b_demo_1024x1024.yaml batch_size=4 guidance_scale=7.5 num_inference_steps=50
-```
+Official weights and documentation: [huggingface.co/showlab](https://huggingface.co/showlab/show-o2-1.5B-HQ)
 
 [interactive version](https://whatmodel.sh/model/show-o2-1-5b-hq) · [JSON](https://whatmodel.sh/api?format=json&all=1)

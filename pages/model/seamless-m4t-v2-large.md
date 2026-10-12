@@ -66,20 +66,14 @@ weighted average                                   = 54.8
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp32 on CPU, fp16 on CUDA (seamless_com…  ~9.24GB   54.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 on CPU, fp16 on CUDA (seamless_communication m4t_predict), needs ~9.24 GB, from [github.com/facebookresearch](https://github.com/facebookresearch/seamless_communication/blob/9a081e935c29c6b1e0e05bcbf3fcb623ad306524/src/seamless_communication/cli/m4t/predict/README.md))
+   
+   ```sh
+   git clone https://github.com/facebookresearch/seamless_communication && cd seamless_communication && pip install . && m4t_predict audio.wav --task asr --tgt_lang eng --model_name seamlessM4T_v2_large
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 on CPU, fp16 on CUDA (seamless_communication m4t_predict) · ~9.24GB
-git clone https://github.com/facebookresearch/seamless_communication && cd seamless_communication && pip install . && m4t_predict audio.wav --task asr --tgt_lang eng --model_name seamlessM4T_v2_large
-```
+Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/seamless-m4t-v2-large)
 
 [interactive version](https://whatmodel.sh/model/seamless-m4t-v2-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

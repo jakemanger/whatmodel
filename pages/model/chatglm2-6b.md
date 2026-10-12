@@ -60,20 +60,14 @@ weighted average                                   = 24.8
 
 ## How to run it
 
-<pre>
-download                      size  score
-4-bit fp16 · nvidia only  ~12.49GB   24.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~12.49 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+   
+   ```sh
+   vllm serve zai-org/chatglm2-6b --trust-remote-code
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp16 · nvidia only · ~12.49GB
-vllm serve zai-org/chatglm2-6b --trust-remote-code
-```
+Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/chatglm2-6b)
 
 [interactive version](https://whatmodel.sh/model/chatglm2-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

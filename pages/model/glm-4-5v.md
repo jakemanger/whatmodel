@@ -75,34 +75,47 @@ weighted average                                   = 61.2
 
 ## How to run it
 
+### Through an API
+
 api (Z.ai) · $0.90/M blended · $0.6 in / $1.8 out per 1M tokens · [docs.z.ai](https://docs.z.ai/guides/vlm/glm-4.5v.md)
 
 <sub>[price source](https://docs.z.ai/guides/overview/pricing): USD per 1M tokens, Z.ai API pricing page, Vision Models table, GLM-4.5V: input $0.6, output $1.8; cached input $0.11 excluded. Currency: USD. Z.ai official pricing page, observed 2026-09-28. · [context source](https://huggingface.co/zai-org/GLM-4.5V/blob/ed47433b37111465ec527affaaddceff371bca04/README.md): Context length stated on the official model card.</sub>
 
-<pre>
-download          size  score
-4-bit q4_k_m  ~64.63GB   61.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run GLM-4.5V (Q4_K_M, needs ~64.63 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/GLM-4.5V-GGUF/tree/401d1a7a3b6a28971d7b0884eb05c50445d8852e))
+   
+   ```sh
+   llama cli -hf ggml-org/GLM-4.5V-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf ggml-org/GLM-4.5V-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit q4_k_m · ~64.63GB
-llama cli -hf ggml-org/GLM-4.5V-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf ggml-org/GLM-4.5V-GGUF:Q4_K_M
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit q4_k_m · ~64.63GB
-lms get https://huggingface.co/ggml-org/GLM-4.5V-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run GLM-4.5V (Q4_K_M, needs ~64.63 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/GLM-4.5V-GGUF/tree/401d1a7a3b6a28971d7b0884eb05c50445d8852e))
+   
+   ```sh
+   lms get https://huggingface.co/ggml-org/GLM-4.5V-GGUF@Q4_K_M -y
+   ```
+
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/GLM-4.5V)
 
 [interactive version](https://whatmodel.sh/model/glm-4-5v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

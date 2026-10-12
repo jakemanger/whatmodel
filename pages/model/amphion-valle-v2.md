@@ -50,20 +50,14 @@ weighted average                                 = 36.3
 
 ## How to run it
 
-<pre>
-version                needs  score
-fp32 (Amphion repo)  ~2.86GB   36.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (Amphion repo), needs ~2.86 GB, from [github.com/open-mmlab](https://github.com/open-mmlab/Amphion/blob/6b1411c7a415af40a775dc940c3b29fc18d37970/egs/tts/VALLE_V2/demo.ipynb))
+   
+   ```sh
+   git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && git checkout 6b1411c7a415af40a775dc940c3b29fc18d37970 && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && pip install -U transformers==4.41.2 && huggingface-cli download amphion/valle valle_ar_mls_196000.bin valle_nar_mls_164000.bin --local-dir ckpts && mkdir -p ckpts/speechtokenizer_hubert_avg && huggingface-cli download amphion/valle SpeechTokenizer.pt config.json --local-dir ckpts/speechtokenizer_hubert_avg && python -c "import librosa, torch, torchaudio; from models.tts.valle_v2.valle_inference import ValleInference; from models.tts.valle_v2.g2p_processor import G2pProcessor; model = ValleInference(ar_path='ckpts/valle_ar_mls_196000.bin', nar_path='ckpts/valle_nar_mls_164000.bin', speechtokenizer_path='ckpts/speechtokenizer_hubert_avg', device='cpu'); wav, _ = librosa.load('./egs/tts/VALLE_V2/example.wav', sr=16000); wav = torch.tensor(wav, dtype=torch.float32); g2p = G2pProcessor(); prompt_transcript = torch.tensor(g2p('and keeping eternity before the eyes', 'en')[1]).long(); target_transcript = torch.tensor(g2p('Hello, world.', 'en')[1]).long(); batch = {'speech': wav.unsqueeze(0), 'phone_ids': torch.cat([prompt_transcript, target_transcript], dim=-1).unsqueeze(0)}; output_wav = model(batch, [dict(top_p=0.9, top_k=5, temperature=0.95, repeat_penalty=1.0, max_length=2000, num_beams=1)]); torchaudio.save('out.wav', output_wav.squeeze(0), 16000)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (Amphion repo) · ~2.86GB
-git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && git checkout 6b1411c7a415af40a775dc940c3b29fc18d37970 && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && pip install -U transformers==4.41.2 && huggingface-cli download amphion/valle valle_ar_mls_196000.bin valle_nar_mls_164000.bin --local-dir ckpts && mkdir -p ckpts/speechtokenizer_hubert_avg && huggingface-cli download amphion/valle SpeechTokenizer.pt config.json --local-dir ckpts/speechtokenizer_hubert_avg && python -c "import librosa, torch, torchaudio; from models.tts.valle_v2.valle_inference import ValleInference; from models.tts.valle_v2.g2p_processor import G2pProcessor; model = ValleInference(ar_path='ckpts/valle_ar_mls_196000.bin', nar_path='ckpts/valle_nar_mls_164000.bin', speechtokenizer_path='ckpts/speechtokenizer_hubert_avg', device='cpu'); wav, _ = librosa.load('./egs/tts/VALLE_V2/example.wav', sr=16000); wav = torch.tensor(wav, dtype=torch.float32); g2p = G2pProcessor(); prompt_transcript = torch.tensor(g2p('and keeping eternity before the eyes', 'en')[1]).long(); target_transcript = torch.tensor(g2p('Hello, world.', 'en')[1]).long(); batch = {'speech': wav.unsqueeze(0), 'phone_ids': torch.cat([prompt_transcript, target_transcript], dim=-1).unsqueeze(0)}; output_wav = model(batch, [dict(top_p=0.9, top_k=5, temperature=0.95, repeat_penalty=1.0, max_length=2000, num_beams=1)]); torchaudio.save('out.wav', output_wav.squeeze(0), 16000)"
-```
+Official weights and documentation: [huggingface.co/amphion](https://huggingface.co/amphion/valle)
 
 [interactive version](https://whatmodel.sh/model/amphion-valle-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

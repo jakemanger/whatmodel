@@ -40,20 +40,14 @@ weighted average                          = 31.7
 
 ## How to run it
 
-<pre>
-download         size  score
-16-bit bf16  ~14.48GB   31.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~14.48 GB, from [huggingface.co/MaralGPT](https://huggingface.co/MaralGPT/Maral-7B-alpha-1/tree/2ab5ca2a0d1a4454a78b4ca911e595bb9da2fe2f))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MaralGPT/Maral-7B-alpha-1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~14.48GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MaralGPT/Maral-7B-alpha-1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/MaralGPT](https://huggingface.co/MaralGPT/Maral-7B-alpha-1)
 
 [interactive version](https://whatmodel.sh/model/maral-7b-alpha-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

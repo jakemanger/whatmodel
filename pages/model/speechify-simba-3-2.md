@@ -42,10 +42,10 @@ weighted average                                   = 66.8
 
 ## How to run it
 
+### Through an API
+
 api (Speechify) · $6.00/M chars · [speechify.ai](https://speechify.ai/pricing)
 
 <sub>[price source](https://speechify.ai/pricing): USD per 1M characters: SpeechifyAI lists usage after the included balance at $6 per 1M characters on Scale ($499/month; 'our lowest published rate'), $8 on Pro, $10 on Starter. Self-serve English uses Simba 3.2. Product: SpeechifyAI text-to-speech API. API model: Simba 3.2. Settings: Scale-plan rate. Price basis: published list rate. Exclusions: monthly plan fee; the page's third-party modelled estimates are not used. Currency: USD. Speechify official API pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/speechify-simba-3-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

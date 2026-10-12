@@ -43,20 +43,14 @@ weighted average                              = 55.5
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit fp32  ~32.12GB   55.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~32.12 GB, from [huggingface.co/wzhouad](https://huggingface.co/wzhouad/Llama3-Instruct-8B-WPO-HB-v2/tree/62b1483e900575ab1764b75f31d068c6120974a4))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='wzhouad/Llama3-Instruct-8B-WPO-HB-v2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp32 · ~32.12GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='wzhouad/Llama3-Instruct-8B-WPO-HB-v2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/wzhouad](https://huggingface.co/wzhouad/Llama3-Instruct-8B-WPO-HB-v2)
 
 [interactive version](https://whatmodel.sh/model/llama3-instruct-8b-wpo-hb-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

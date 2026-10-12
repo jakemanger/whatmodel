@@ -52,10 +52,10 @@ raven.eval · German A…  <a href="https://github.com/PhilflowIO/raven.eval/blo
 
 ## How to run it
 
+### Through an API
+
 api (xAI) · $0.0017/audio min · [docs.x.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text)
 
 <sub>[price source](https://docs.x.ai/developers/models.md): USD per input audio minute: xAI Voice Pricing lists Speech to Text at $0.10 / hr (REST) (÷60); $0.20/hr streaming. xAI STT docs name grok-voice-transcribe-2.0 as the default model. Product: xAI Speech to Text API. API model: grok-voice-transcribe-2.0. Settings: REST (file). Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: streaming. Currency: USD. xAI official models/pricing docs, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/grok-voice-transcribe-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

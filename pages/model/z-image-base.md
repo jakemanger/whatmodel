@@ -57,27 +57,22 @@ weighted average                                   = 58.0
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/z-image/base)
 
 <sub>[price source](https://fal.ai/models/fal-ai/z-image/base): USD for one 1-megapixel output: fal bills this endpoint $0.01 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/z-image/base (fal: 'the foundation model of the Z-Image family'; the Turbo endpoints are separate). Settings: 1 MP output, one image, no LoRA. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio sells only z-image-turbo. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-<pre>
-version                                   needs  score
-bf16 + Qwen3 4B bf16 (sd.cpp)           ~25.3GB   58.0
-gguf-q4_k_m + Qwen3 4B q4_k_m (sd.cpp)    ~10GB   58.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf-q4_k_m + Qwen3 4B q4_k_m (sd.cpp), needs ~10 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/z_image.md))
+   
+   ```sh
+   sd-cli --diffusion-model models/z-image-Q4_K_M.gguf --vae models/ae.safetensors --llm models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf -p "A cinematic photograph of a solitary hooded figure walking through a rain-slicked metropolis at night, neon reflections on wet asphalt" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 512
+   ```
 
-### Run it on your own machine
+Other versions: BF16 + QWEN3 4B BF16 (SD.CPP) (~25.3 GB) `sd-cli --diffusion-model models/z_image_bf16.safetensors --vae models/ae.safetensors --llm models/qwen_3_4b.safetensors -p "A cinematic photograph of a solitary hooded figure walking through a rain-slicked metropolis at night, neon reflections on wet asphalt" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 512`
 
-**Other engines**
-
-```sh
-# bf16 + Qwen3 4B bf16 (sd.cpp) · ~25.3GB
-sd-cli --diffusion-model models/z_image_bf16.safetensors --vae models/ae.safetensors --llm models/qwen_3_4b.safetensors -p "A cinematic photograph of a solitary hooded figure walking through a rain-slicked metropolis at night, neon reflections on wet asphalt" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 512
-# gguf-q4_k_m + Qwen3 4B q4_k_m (sd.cpp) · ~10GB
-sd-cli --diffusion-model models/z-image-Q4_K_M.gguf --vae models/ae.safetensors --llm models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf -p "A cinematic photograph of a solitary hooded figure walking through a rain-slicked metropolis at night, neon reflections on wet asphalt" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 512
-```
+Official weights and documentation: [huggingface.co/Tongyi-MAI](https://huggingface.co/Tongyi-MAI/Z-Image)
 
 [interactive version](https://whatmodel.sh/model/z-image-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

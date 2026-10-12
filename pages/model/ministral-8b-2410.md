@@ -136,78 +136,95 @@ Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blo
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md): Context length stated on the official model card.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-16-bit bf16 · nvidia only  ~19.75GB   43.7
-4-bit Q4_K_M                 ~4.9GB   43.7
-8-bit Q8_0                   ~8.5GB   43.7
-4-bit mlx-4bit · mac only    ~4.5GB   43.7
-4-bit mlx-8bit · mac only    ~8.5GB   43.7
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Ministral 8B (2410) (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Ministral-8B-Instruct-2410-GGUF/tree/b4e2ea74eb4eecb178aa88d482c3126b34ad0157))
+   
+   ```sh
+   llama cli -hf bartowski/Ministral-8B-Instruct-2410-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/Ministral-8B-Instruct-2410-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~8.5 GB) `llama cli -hf bartowski/Ministral-8B-Instruct-2410-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-llama cli -hf bartowski/Ministral-8B-Instruct-2410-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Ministral-8B-Instruct-2410-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.5GB
-llama cli -hf bartowski/Ministral-8B-Instruct-2410-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Ministral-8B-Instruct-2410-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-lms get https://huggingface.co/bartowski/Ministral-8B-Instruct-2410-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~8.5GB
-lms get https://huggingface.co/bartowski/Ministral-8B-Instruct-2410-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~4.5GB
-lms get https://huggingface.co/alexgusevski/Ministral-8B-Instruct-2410-q4-mlx -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~8.5GB
-lms get https://huggingface.co/alexgusevski/Ministral-8B-Instruct-2410-q8-mlx -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Ministral 8B (2410) (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Ministral-8B-Instruct-2410-GGUF/tree/b4e2ea74eb4eecb178aa88d482c3126b34ad0157))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/Ministral-8B-Instruct-2410-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-ollama run hf.co/bartowski/Ministral-8B-Instruct-2410-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.5GB
-ollama run hf.co/bartowski/Ministral-8B-Instruct-2410-GGUF:Q8_0
-```
+Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/bartowski/Ministral-8B-Instruct-2410-GGUF@Q8_0 -y` · 4bit (~4.5 GB, Mac only) `lms get https://huggingface.co/alexgusevski/Ministral-8B-Instruct-2410-q4-mlx -y` · 8bit (~8.5 GB, Mac only) `lms get https://huggingface.co/alexgusevski/Ministral-8B-Instruct-2410-q8-mlx -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~4.5GB
-mlx_lm.chat --model alexgusevski/Ministral-8B-Instruct-2410-q4-mlx
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model alexgusevski/Ministral-8B-Instruct-2410-q4-mlx
-# 4-bit mlx-8bit · mac only · ~8.5GB
-mlx_lm.chat --model alexgusevski/Ministral-8B-Instruct-2410-q8-mlx
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model alexgusevski/Ministral-8B-Instruct-2410-q8-mlx
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-**Other engines**
+2. Run Ministral 8B (2410) (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Ministral-8B-Instruct-2410-GGUF/tree/b4e2ea74eb4eecb178aa88d482c3126b34ad0157))
+   
+   ```sh
+   ollama run hf.co/bartowski/Ministral-8B-Instruct-2410-GGUF:Q4_K_M
+   ```
 
-```sh
-# 16-bit bf16 · nvidia only · ~19.75GB
-vllm serve mistralai/Ministral-8B-Instruct-2410 --tokenizer_mode mistral --config_format mistral --load_format mistral
-```
+Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/bartowski/Ministral-8B-Instruct-2410-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Ministral 8B (2410) (4bit, needs ~4.5 GB, Mac only, from [huggingface.co/alexgusevski](https://huggingface.co/alexgusevski/Ministral-8B-Instruct-2410-q4-mlx/tree/8c556d59b1672d3b541d1a089acec7ba058e78fe))
+   
+   ```sh
+   mlx_lm.chat --model alexgusevski/Ministral-8B-Instruct-2410-q4-mlx
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model alexgusevski/Ministral-8B-Instruct-2410-q4-mlx
+   ```
+
+Other versions: 8bit (~8.5 GB, Mac only) `mlx_lm.chat --model alexgusevski/Ministral-8B-Instruct-2410-q8-mlx`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~19.75 GB, NVIDIA only, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410))
+   
+   ```sh
+   vllm serve mistralai/Ministral-8B-Instruct-2410 --tokenizer_mode mistral --config_format mistral --load_format mistral
+   ```
+
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410)
 
 [interactive version](https://whatmodel.sh/model/ministral-8b-2410) · [JSON](https://whatmodel.sh/api?format=json&all=1)

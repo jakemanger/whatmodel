@@ -22,4 +22,10 @@ FastPitch 1.0 vs 1.1 pairwise pre…     43.5%  lab          <a href="https://gi
 
 <sub>Licences: NVIDIA FastPitch: original listening studies in committed README ([BSD-3-Clause](../../licenses/speech-nvidia-fastpitch-readme.txt))</sub>
 
+## How to run it
+
+No verified API or local download yet.
+
+Official weights and documentation: [github.com/NVIDIA](https://github.com/NVIDIA/DeepLearningExamples/tree/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch)
+
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/fastpitch-1-0-waveglow)

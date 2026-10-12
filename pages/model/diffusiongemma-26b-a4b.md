@@ -96,8 +96,8 @@ weighted average                                   = 58.5
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md): Card: 'Context Length: Up to 256K tokens'. Observed 2026-10-10.</sub>
+No verified API or local download yet.
 
-no current API or local download verified
+Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/diffusiongemma-26B-A4B-it)
 
 [interactive version](https://whatmodel.sh/model/diffusiongemma-26b-a4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

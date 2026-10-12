@@ -107,63 +107,83 @@ weighted average                                   = 47.7
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md): Granite 4.0 model-card architecture table (h-small card): 'Sequence length 128K' for H Tiny MoE. ollama lists a 1M context window. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_k_m                ~4.2GB   47.7
-4-bit q4_k_m               ~4.23GB   47.7
-4-bit mlx-4bit · mac only   ~3.9GB   47.7
-4-bit mlx-8bit · mac only   ~7.4GB   47.7
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Granite 4.0 H Tiny (7B-A1B) (Q4_K_M, needs ~4.23 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/tree/08d5a8a9741dd5c1a95d2d39e25253226aa1464e))
+   
+   ```sh
+   llama cli -hf ibm-granite/granite-4.0-h-tiny-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf ibm-granite/granite-4.0-h-tiny-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~4.23GB
-llama cli -hf ibm-granite/granite-4.0-h-tiny-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf ibm-granite/granite-4.0-h-tiny-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run Granite 4.0 H Tiny (7B-A1B) (Q4_K_M, needs ~4.23 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/tree/08d5a8a9741dd5c1a95d2d39e25253226aa1464e))
+   
+   ```sh
+   lms get https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~4.23GB
-lms get https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~3.9GB
-lms get https://huggingface.co/lmstudio-community/granite-4.0-h-tiny-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~7.4GB
-lms get https://huggingface.co/lmstudio-community/granite-4.0-h-tiny-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: 4bit (~3.9 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/granite-4.0-h-tiny-MLX-4bit -y` · 8bit (~7.4 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/granite-4.0-h-tiny-MLX-8bit -y`
 
-```sh
-# 4-bit q4_k_m · ~4.2GB
-ollama run granite4:tiny-h
-# 4-bit q4_k_m · ~4.23GB
-ollama run hf.co/ibm-granite/granite-4.0-h-tiny-GGUF:Q4_K_M
-```
+### Ollama
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~3.9GB
-mlx_lm.chat --model lmstudio-community/granite-4.0-h-tiny-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/granite-4.0-h-tiny-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~7.4GB
-mlx_lm.chat --model lmstudio-community/granite-4.0-h-tiny-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/granite-4.0-h-tiny-MLX-8bit
-```
+2. Run Granite 4.0 H Tiny (7B-A1B) (Q4_K_M, needs ~4.2 GB, from [ollama.com](https://ollama.com/library/granite4/tags))
+   
+   ```sh
+   ollama run granite4:tiny-h
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Granite 4.0 H Tiny (7B-A1B) (4bit, needs ~3.9 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-4.0-h-tiny-MLX-4bit/tree/a0f1fb8fdb387c4bd90e23e5e3f7ba9f7438b921))
+   
+   ```sh
+   mlx_lm.chat --model lmstudio-community/granite-4.0-h-tiny-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lmstudio-community/granite-4.0-h-tiny-MLX-4bit
+   ```
+
+Other versions: 8bit (~7.4 GB, Mac only) `mlx_lm.chat --model lmstudio-community/granite-4.0-h-tiny-MLX-8bit`
+
+Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-h-tiny)
 
 [interactive version](https://whatmodel.sh/model/granite-4-0-h-tiny) · [JSON](https://whatmodel.sh/api?format=json&all=1)

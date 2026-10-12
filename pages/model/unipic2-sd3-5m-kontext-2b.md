@@ -42,6 +42,8 @@ weighted average                                   = 44.0
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/Skywork](https://huggingface.co/Skywork/UniPic2-SD3.5M-Kontext-2B)
 
 [interactive version](https://whatmodel.sh/model/unipic2-sd3-5m-kontext-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

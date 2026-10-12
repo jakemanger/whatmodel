@@ -42,10 +42,10 @@ weighted average                                   = 63.4
 
 ## How to run it
 
+### Through an API
+
 api (Fish Audio) · $15.00/M chars · [docs.fish.audio](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits)
 
 <sub>[price source](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits): Fish Audio lists s2.1-pro at $15.00 per 1M UTF-8 bytes of input text. Stored as per 1M characters, which equals bytes only for ASCII (e.g. English) text; non-ASCII characters take 2-4 bytes, so per-character cost is higher for those scripts. Product: Fish Audio TTS API. API model: s2.1-pro. Settings: pay-as-you-go (not s2.1-pro-free). Price basis: published list rate (byte-billed). Exclusions: none stated. Currency: USD. Fish Audio official pricing docs, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/fish-audio-s2-1-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

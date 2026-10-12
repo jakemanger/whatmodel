@@ -71,10 +71,10 @@ weighted average                        = 59.3
 
 ## How to run it
 
+### Through an API
+
 api (Mistral AI) · $0.0030/audio min · [docs.mistral.ai](https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-26-02)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per input audio minute. Exact endpoint mistral/voxtral-mini-2602. Product: Audio transcription. API model: voxtral-mini-2602. Settings: endpoint=/v1/audio/transcriptions, streaming=no. Price basis: published rate. Currency: USD.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/voxtral-mini-transcribe-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

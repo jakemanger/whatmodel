@@ -173,10 +173,10 @@ weighted average                                   = 66.3
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $1.93/M blended · $1.1 in / $4.4 out per 1M tokens · [platform.openai.com](https://platform.openai.com/docs/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/o4-mini.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/o4-mini.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/o4-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

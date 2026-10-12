@@ -43,20 +43,14 @@ weighted average                                   = 46.5
 
 ## How to run it
 
-<pre>
-version                           needs  score
-fp32 (transformers remote code)  2.34GB   46.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (transformers remote code), needs 2.34 GB, from [huggingface.co/ai-sage](https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md))
+   
+   ```sh
+   pip install "transformers>=5" torch torchaudio hydra-core omegaconf && python -c "from transformers import AutoModel; model = AutoModel.from_pretrained('ai-sage/GigaAM-Multilingual', revision='large_ctc', trust_remote_code=True); print(model.transcribe('example.wav'))"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (transformers remote code) · 2.34GB
-pip install "transformers>=5" torch torchaudio hydra-core omegaconf && python -c "from transformers import AutoModel; model = AutoModel.from_pretrained('ai-sage/GigaAM-Multilingual', revision='large_ctc', trust_remote_code=True); print(model.transcribe('example.wav'))"
-```
+Official weights and documentation: [huggingface.co/ai-sage](https://huggingface.co/ai-sage/GigaAM-Multilingual)
 
 [interactive version](https://whatmodel.sh/model/gigaam-multilingual-large-ctc) · [JSON](https://whatmodel.sh/api?format=json&all=1)

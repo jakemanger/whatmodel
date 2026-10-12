@@ -82,74 +82,92 @@ weighted average                                   = 58.1
 
 ## How to run it
 
+### Through an API
+
 api (Novita AI) · $0.80/M blended · $0.8 in / $0.8 out per 1M tokens · [novita.ai](https://novita.ai/models/llm/deepseek-deepseek-r1-distill-llama-70b)
 
 <sub>[price source](https://novita.ai/pricing): USD per 1M tokens, Novita AI serverless chat completions, model deepseek/deepseek-r1-distill-llama-70b (status active): input $0.80, output $0.80. Novita serves it with an 8,192-token context (its own serving limit). Currency: USD. Novita AI official pricing page, observed 2026-09-25. · [context source](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/blob/b1c0b44b4369b597ad119a196caf79a9c40e141e/config.json): DeepSeek official configuration for DeepSeek-R1-Distill-Llama-70B (pinned commit): max\_position\_embeddings 131072 (llama3 rope scaling, factor 8 over original 8192). Configured maximum, not a benchmarked long-context claim: the official card states no context length for the distilled models (its table gives 128K only for DeepSeek-R1/R1-Zero), reports a 32,768-token maximum generation length, and its vLLM example uses --max-model-len 32768. Observed 2026-09-25.</sub>
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~42.52GB   58.1
-8-bit q8_0                 ~74.98GB   58.1
-2-bit ud-q2_k_xl           ~26.97GB   58.1
-4-bit mlx-4bit · mac only   ~39.7GB   58.1
-4-bit mlx-8bit · mac only     ~75GB   58.1
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run DeepSeek R1 Distill Llama 70B (Q8_0, needs ~74.98 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF/tree/732dd974083ea5877d7b6d788b36fe7c2e5eab36))
+   
+   ```sh
+   llama cli -hf unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:Q8_0
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:Q8_0
+   ```
 
-```sh
-# 8-bit q8_0 · ~74.98GB
-llama cli -hf unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:Q8_0
-# 2-bit ud-q2_k_xl · ~26.97GB
-llama cli -hf unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:UD-Q2_K_XL
-```
+Other versions: ud-q2_k_xl (~26.97 GB) `llama cli -hf unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:UD-Q2_K_XL`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 8-bit q8_0 · ~74.98GB
-lms get https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit ud-q2_k_xl · ~26.97GB
-lms get https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~39.7GB
-lms get https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Llama-70B-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~75GB
-lms get https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Llama-70B-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run DeepSeek R1 Distill Llama 70B (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Llama-70B-4bit/tree/6b0c127e00720c480ae36462bb15e71eeb521e80))
+   
+   ```sh
+   lms get https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Llama-70B-4bit -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~42.52GB
-ollama run deepseek-r1:70b
-# 2-bit ud-q2_k_xl · ~26.97GB
-ollama run hf.co/unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF:UD-Q2_K_XL
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~74.98 GB) `lms get https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF@Q8_0 -y` · ud-q2_k_xl (~26.97 GB) `lms get https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-70B-GGUF@UD-Q2_K_XL -y` · 8bit (~75 GB, Mac only) `lms get https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Llama-70B-8bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~39.7GB
-mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Llama-70B-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/DeepSeek-R1-Distill-Llama-70B-4bit
-# 4-bit mlx-8bit · mac only · ~75GB
-mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Llama-70B-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/DeepSeek-R1-Distill-Llama-70B-8bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run DeepSeek R1 Distill Llama 70B (Q4_K_M, needs ~42.52 GB, from [ollama.com](https://ollama.com/library/deepseek-r1/tags))
+   
+   ```sh
+   ollama run deepseek-r1:70b
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run DeepSeek R1 Distill Llama 70B (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/DeepSeek-R1-Distill-Llama-70B-4bit/tree/6b0c127e00720c480ae36462bb15e71eeb521e80))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Llama-70B-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/DeepSeek-R1-Distill-Llama-70B-4bit
+   ```
+
+Other versions: 8bit (~75 GB, Mac only) `mlx_lm.chat --model mlx-community/DeepSeek-R1-Distill-Llama-70B-8bit`
+
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B)
 
 ## Quantization evidence
 

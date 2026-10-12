@@ -50,20 +50,14 @@ weighted average                                   = 32.7
 
 ## How to run it
 
-<pre>
-download         size  score
-16-bit bf16  ~65.06GB   32.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~65.06 GB, from [huggingface.co/timdettmers](https://huggingface.co/timdettmers/guanaco-33b-merged/tree/b2e78a916582935b6616d184b22ea5e9e1eb4c34))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='timdettmers/guanaco-33b-merged', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~65.06GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='timdettmers/guanaco-33b-merged', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/timdettmers](https://huggingface.co/timdettmers/guanaco-33b-merged)
 
 [interactive version](https://whatmodel.sh/model/guanaco-33b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

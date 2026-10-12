@@ -87,6 +87,6 @@ Google DeepMind Gemin…  <a href="https://deepmind.google/models/gemini/#perfor
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/gemini-4-argon) · [JSON](https://whatmodel.sh/api?format=json&all=1)

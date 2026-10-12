@@ -42,10 +42,10 @@ weighted average                               = 68.2
 
 ## How to run it
 
+### Through an API
+
 api (Soniox) · $0.0017/audio min · [soniox.com](https://soniox.com/pricing)
 
 <sub>[price source](https://soniox.com/pricing): USD per input audio minute: Soniox bills tokens but itself publishes Speech-to-Text at $0.10/hour for async (file uploads) (÷60); vendor-published per-hour equivalent. Product: Soniox async STT API. API model: stt-async-v5. Settings: async file transcription. Price basis: vendor-published hourly equivalent, per-hour to per-minute scaling only. Exclusions: real-time ($0.12/hr), translation/custom token usage. Currency: USD. Soniox official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/soniox-v5-async) · [JSON](https://whatmodel.sh/api?format=json&all=1)

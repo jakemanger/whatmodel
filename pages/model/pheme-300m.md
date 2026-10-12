@@ -47,20 +47,14 @@ weighted average                                = 37.4
 
 ## How to run it
 
-<pre>
-version                                    needs  score
-fp32 (PolyAI-LDN/pheme repo) · nvidia o…  ~3.6GB   37.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (PolyAI-LDN/pheme repo), needs ~3.6 GB, NVIDIA only, from [github.com/PolyAI-LDN](https://github.com/PolyAI-LDN/pheme/blob/3a520340b5094db0aa7275f28942dad2fc2cf7a3/README.md))
+   
+   ```sh
+   git clone https://github.com/PolyAI-LDN/pheme && cd pheme && conda create --name pheme3 python=3.10 && conda activate pheme3 && pip3 install torch torchvision torchaudio && pip3 install -r requirements.txt --no-deps && mkdir -p ckpt/speechtokenizer && wget -P ckpt/speechtokenizer "https://huggingface.co/fnlp/SpeechTokenizer/resolve/main/speechtokenizer_hubert_avg/SpeechTokenizer.pt" "https://huggingface.co/fnlp/SpeechTokenizer/resolve/main/speechtokenizer_hubert_avg/config.json" && wget -P ckpt "https://huggingface.co/fnlp/USLM/resolve/main/USLM_libritts/unique_text_tokens.k2symbols" && export HUGGING_FACE_HUB_TOKEN=YOUR_PRIVATE_TOKEN && git clone https://huggingface.co/PolyAI/pheme ckpt/pheme && mkdir -p ckpt/t2s ckpt/s2a && mv ckpt/pheme/config_t2s.json ckpt/t2s/config.json && mv ckpt/pheme/generation_config.json ckpt/t2s/generation_config.json && mv ckpt/pheme/t2s.bin ckpt/t2s/pytorch_model.bin && mv ckpt/pheme/config_s2a.json ckpt/s2a/config.json && mv ckpt/pheme/s2a.ckpt ckpt/s2a/s2a.ckpt && python transformer_infer.py
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (PolyAI-LDN/pheme repo) · nvidia only · ~3.6GB
-git clone https://github.com/PolyAI-LDN/pheme && cd pheme && conda create --name pheme3 python=3.10 && conda activate pheme3 && pip3 install torch torchvision torchaudio && pip3 install -r requirements.txt --no-deps && mkdir -p ckpt/speechtokenizer && wget -P ckpt/speechtokenizer "https://huggingface.co/fnlp/SpeechTokenizer/resolve/main/speechtokenizer_hubert_avg/SpeechTokenizer.pt" "https://huggingface.co/fnlp/SpeechTokenizer/resolve/main/speechtokenizer_hubert_avg/config.json" && wget -P ckpt "https://huggingface.co/fnlp/USLM/resolve/main/USLM_libritts/unique_text_tokens.k2symbols" && export HUGGING_FACE_HUB_TOKEN=YOUR_PRIVATE_TOKEN && git clone https://huggingface.co/PolyAI/pheme ckpt/pheme && mkdir -p ckpt/t2s ckpt/s2a && mv ckpt/pheme/config_t2s.json ckpt/t2s/config.json && mv ckpt/pheme/generation_config.json ckpt/t2s/generation_config.json && mv ckpt/pheme/t2s.bin ckpt/t2s/pytorch_model.bin && mv ckpt/pheme/config_s2a.json ckpt/s2a/config.json && mv ckpt/pheme/s2a.ckpt ckpt/s2a/s2a.ckpt && python transformer_infer.py
-```
+Official weights and documentation: [huggingface.co/PolyAI](https://huggingface.co/PolyAI/pheme)
 
 [interactive version](https://whatmodel.sh/model/pheme-300m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

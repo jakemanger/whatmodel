@@ -94,33 +94,22 @@ weighted average                                   = 58.3
 
 ## How to run it
 
+### Through an API
+
 api (Cloudflare) · $0.046/image · [developers.cloudflare.com](https://developers.cloudflare.com/workers-ai/platform/pricing/)
 
 <sub>[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx): Cloudflare Workers AI; 4 output tiles × 28 steps × USD0.00041/output tile/step; zero input-image tiles. Workers plan fee excluded; published USD equivalent is rounded, service bills Neurons. Product: Workers AI text-to-image. API model: @cf/black-forest-labs/flux-2-dev. Settings: width=1024, height=1024, steps=28, input images=0, output tiles=4. Price basis: derived fixed-setting output cost using published rounded USD rates. Additional/excluded charges: Workers Paid plan base fee, input images and usage beyond this setting. Currency: USD.</sub>
 
-<pre>
-version                                     needs  score
-bf16 (cpu offload) · nvidia only          ~77.3GB   58.3
-nf4 (bnb-4bit DiT + text encoder) · nvi…  ~19.7GB   58.3
-mlx-int4 (Flux2CLI, Swift) · mac only     ~19.7GB   58.3
-gguf-q4_k_s + Mistral Small 3.2 q4_k_m …  ~41.3GB   58.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (nf4 (bnb-4bit DiT + text encoder), needs ~19.7 GB, NVIDIA only, from [huggingface.co/blog](https://huggingface.co/blog/flux-2))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import Flux2Pipeline; p=Flux2Pipeline.from_pretrained('diffusers/FLUX.2-dev-bnb-4bit', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=28, guidance_scale=4).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (CPU OFFLOAD) (~77.3 GB, NVIDIA only) `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2Pipeline; p=Flux2Pipeline.from_pretrained('black-forest-labs/FLUX.2-dev', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=28, guidance_scale=4).images[0].save('out.png')"` · int4 (Flux2CLI, Swift) (~19.7 GB, Mac only) `./Flux2CLI t2i "a cat holding a sign" --model dev --transformer-quant int4` · gguf-q4_k_s + Mistral Small 3.2 q4_k_m (sd.cpp) (~41.3 GB) `sd-cli --diffusion-model models/flux2-dev-Q4_K_S.gguf --vae models/flux2_ae.safetensors --llm models/Mistral-Small-3.2-24B-Instruct-2506-Q4_K_M.gguf -p "a lovely cat" --cfg-scale 1.0 --sampling-method euler -v --diffusion-fa --offload-to-cpu`
 
-**Other engines**
-
-```sh
-# bf16 (cpu offload) · nvidia only · ~77.3GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2Pipeline; p=Flux2Pipeline.from_pretrained('black-forest-labs/FLUX.2-dev', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=28, guidance_scale=4).images[0].save('out.png')"
-# nf4 (bnb-4bit DiT + text encoder) · nvidia only · ~19.7GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import Flux2Pipeline; p=Flux2Pipeline.from_pretrained('diffusers/FLUX.2-dev-bnb-4bit', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=28, guidance_scale=4).images[0].save('out.png')"
-# mlx-int4 (Flux2CLI, Swift) · mac only · ~19.7GB
-./Flux2CLI t2i "a cat holding a sign" --model dev --transformer-quant int4
-# gguf-q4_k_s + Mistral Small 3.2 q4_k_m (sd.cpp) · ~41.3GB
-sd-cli --diffusion-model models/flux2-dev-Q4_K_S.gguf --vae models/flux2_ae.safetensors --llm models/Mistral-Small-3.2-24B-Instruct-2506-Q4_K_M.gguf -p "a lovely cat" --cfg-scale 1.0 --sampling-method euler -v --diffusion-fa --offload-to-cpu
-```
+Official weights and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.2-dev)
 
 [interactive version](https://whatmodel.sh/model/flux-2-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

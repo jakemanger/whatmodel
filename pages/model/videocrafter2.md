@@ -50,20 +50,14 @@ weighted average                                   = 34.1
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp32 · nvidia only  ~9.4GB   34.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~9.4 GB, NVIDIA only, from [github.com/AILab-CVC](https://github.com/AILab-CVC/VideoCrafter/blob/f6c7f7f28f71d3069a9ee0e002d2f4b019eb78f6/README.md))
+   
+   ```sh
+   git clone https://github.com/AILab-CVC/VideoCrafter && cd VideoCrafter && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir checkpoints/base_512_v2 && sh scripts/run_text2video.sh
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · nvidia only · ~9.4GB
-git clone https://github.com/AILab-CVC/VideoCrafter && cd VideoCrafter && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir checkpoints/base_512_v2 && sh scripts/run_text2video.sh
-```
+Official weights and documentation: [huggingface.co/VideoCrafter](https://huggingface.co/VideoCrafter/VideoCrafter2)
 
 [interactive version](https://whatmodel.sh/model/videocrafter2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

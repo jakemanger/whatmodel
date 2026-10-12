@@ -57,10 +57,10 @@ weighted average                                   = 36.0
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.040/sec · [fal.ai](https://fal.ai/models/fal-ai/pika/v2.2/text-to-video)
 
 <sub>[price source](https://fal.ai/models/fal-ai/pika/v2.2/text-to-video): USD per second, derived from fal's price of $0.20 for a 5-second 720p video (÷ 5). Product: fal Pika 2.2 text-to-video endpoint. API model: fal-ai/pika/v2.2/text-to-video. Settings: resolution=720p, duration=5 s (endpoint default). 5-s 1080p costs $0.45; other durations are not separately priced on the page. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/pika-2-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

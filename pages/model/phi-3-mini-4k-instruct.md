@@ -59,47 +59,62 @@ weighted average                                   = 38.1
 
 ## How to run it
 
-<pre>
-download         size  score
-4-bit q4_k_m  ~2.39GB   38.1
-4-bit fp16    ~7.64GB   38.1
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Phi-3-mini-4k-instruct (Apr 2024) (Q4_K_M, needs ~2.39 GB, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/tree/a64113399c2f6b8ad3e11c394733a2ddadaa7f33))
+   
+   ```sh
+   llama cli -hf microsoft/Phi-3-mini-4k-instruct-gguf
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf microsoft/Phi-3-mini-4k-instruct-gguf
+   ```
 
-```sh
-# 4-bit q4_k_m · ~2.39GB
-llama cli -hf microsoft/Phi-3-mini-4k-instruct-gguf
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf microsoft/Phi-3-mini-4k-instruct-gguf
-# 4-bit fp16 · ~7.64GB
-llama cli -hf microsoft/Phi-3-mini-4k-instruct-gguf
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf microsoft/Phi-3-mini-4k-instruct-gguf
-```
+Other versions: fp16 (~7.64 GB) `llama cli -hf microsoft/Phi-3-mini-4k-instruct-gguf`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~2.39GB
-lms get https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit fp16 · ~7.64GB
-lms get https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Phi-3-mini-4k-instruct (Apr 2024) (Q4_K_M, needs ~2.39 GB, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/tree/a64113399c2f6b8ad3e11c394733a2ddadaa7f33))
+   
+   ```sh
+   lms get https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~2.39GB
-ollama run hf.co/microsoft/Phi-3-mini-4k-instruct-gguf
-# 4-bit fp16 · ~7.64GB
-ollama run hf.co/microsoft/Phi-3-mini-4k-instruct-gguf
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: fp16 (~7.64 GB) `lms get https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Phi-3-mini-4k-instruct (Apr 2024) (Q4_K_M, needs ~2.39 GB, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/tree/a64113399c2f6b8ad3e11c394733a2ddadaa7f33))
+   
+   ```sh
+   ollama run hf.co/microsoft/Phi-3-mini-4k-instruct-gguf
+   ```
+
+Other versions: fp16 (~7.64 GB) `ollama run hf.co/microsoft/Phi-3-mini-4k-instruct-gguf`
+
+Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-3-mini-4k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

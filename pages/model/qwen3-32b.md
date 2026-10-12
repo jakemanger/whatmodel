@@ -170,79 +170,94 @@ weighted average                                   = 57.6
 
 ## How to run it
 
+### Through an API
+
 api (Deep Infra) · $0.13/M blended · $0.08 in / $0.28 out per 1M tokens · [deepinfra.com](https://deepinfra.com/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/Qwen/Qwen3-32B.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/alibaba/qwen3-32b.toml)</sub>
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~20.18GB   57.6
-8-bit q8_0                 ~39.86GB   57.6
-4-bit Q4_K_M                ~19.8GB   57.6
-8-bit Q8_0                  ~34.8GB   57.6
-4-bit mlx-4bit · mac only   ~17.4GB   57.6
-4-bit mlx-8bit · mac only   ~33.8GB   57.6
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Qwen3 32B (Q4_K_M, needs ~19.8 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-32B-GGUF/tree/938a7432affaec9157f883a87164e2646ae17555))
+   
+   ```sh
+   llama cli -hf Qwen/Qwen3-32B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf Qwen/Qwen3-32B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~19.8GB
-llama cli -hf Qwen/Qwen3-32B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf Qwen/Qwen3-32B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.8GB
-llama cli -hf Qwen/Qwen3-32B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf Qwen/Qwen3-32B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~34.8 GB) `llama cli -hf Qwen/Qwen3-32B-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~19.8GB
-lms get https://huggingface.co/Qwen/Qwen3-32B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~34.8GB
-lms get https://huggingface.co/Qwen/Qwen3-32B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~17.4GB
-lms get https://huggingface.co/Qwen/Qwen3-32B-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~33.8GB
-lms get https://huggingface.co/Qwen/Qwen3-32B-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Qwen3 32B (Q4_K_M, needs ~19.8 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-32B-GGUF/tree/938a7432affaec9157f883a87164e2646ae17555))
+   
+   ```sh
+   lms get https://huggingface.co/Qwen/Qwen3-32B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~20.18GB
-ollama run qwen3:32b
-# 8-bit q8_0 · ~39.86GB
-ollama run qwen3:32b-q8_0
-# 4-bit Q4_K_M · ~19.8GB
-ollama run hf.co/Qwen/Qwen3-32B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.8GB
-ollama run hf.co/Qwen/Qwen3-32B-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/Qwen/Qwen3-32B-GGUF@Q8_0 -y` · 4bit (~17.4 GB, Mac only) `lms get https://huggingface.co/Qwen/Qwen3-32B-MLX-4bit -y` · 8bit (~33.8 GB, Mac only) `lms get https://huggingface.co/Qwen/Qwen3-32B-MLX-8bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~17.4GB
-mlx_lm.chat --model Qwen/Qwen3-32B-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model Qwen/Qwen3-32B-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~33.8GB
-mlx_lm.chat --model Qwen/Qwen3-32B-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model Qwen/Qwen3-32B-MLX-8bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Qwen3 32B (Q4_K_M, needs ~20.18 GB, from [ollama.com](https://ollama.com/library/qwen3/tags))
+   
+   ```sh
+   ollama run qwen3:32b
+   ```
+
+Other versions: Q8_0 (~39.86 GB) `ollama run qwen3:32b-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Qwen3 32B (4bit, needs ~17.4 GB, Mac only, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-32B-MLX-4bit/tree/ceb4c4aad0164033af0c8dd37a0641693d0d6321))
+   
+   ```sh
+   mlx_lm.chat --model Qwen/Qwen3-32B-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model Qwen/Qwen3-32B-MLX-4bit
+   ```
+
+Other versions: 8bit (~33.8 GB, Mac only) `mlx_lm.chat --model Qwen/Qwen3-32B-MLX-8bit`
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-32B)
 
 ## Quantization evidence
 

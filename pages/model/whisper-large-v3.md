@@ -150,31 +150,23 @@ weighted average                                   = 56.7
 
 ## How to run it
 
+### Through an API
+
 api (Groq) · $0.0018/audio min · [console.groq.com](https://console.groq.com/docs/speech-to-text)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per input audio minute, converted from the rounded LiteLLM per-second rate. 10-second minimum charge per request; published tariff $0.111/hour. Product: Batch/file speech transcription. API model: whisper-large-v3. Settings: streaming=no, minimum billed seconds=10. Price basis: rounded catalogue rate (not a new estimate of speech length). Currency: USD. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/whisper-large-v3.toml)</sub>
 
-<pre>
-version               needs  score
-fp16                ~4.22GB   56.7
-fp16 · mac only     ~4.22GB   56.7
-fp16 · nvidia only  ~4.22GB   56.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~4.22 GB, from [github.com/openai](https://github.com/openai/whisper))
+   
+   ```sh
+   uvx --from openai-whisper whisper audio.mp3 --model large-v3
+   ```
 
-### Run it on your own machine
+Other versions: fp16 (~4.22 GB, Mac only) `uvx --from mlx-whisper mlx_whisper audio.mp3 --model mlx-community/whisper-large-v3-mlx` · fp16 (~4.22 GB, NVIDIA only) `uvx insanely-fast-whisper --file-name audio.mp3 --model-name openai/whisper-large-v3`
 
-**Other engines**
-
-```sh
-# fp16 · ~4.22GB
-uvx --from openai-whisper whisper audio.mp3 --model large-v3
-# fp16 · mac only · ~4.22GB
-uvx --from mlx-whisper mlx_whisper audio.mp3 --model mlx-community/whisper-large-v3-mlx
-# fp16 · nvidia only · ~4.22GB
-uvx insanely-fast-whisper --file-name audio.mp3 --model-name openai/whisper-large-v3
-```
+Official weights and documentation: [huggingface.co/openai](https://huggingface.co/openai/whisper-large-v3)
 
 ## Quantization evidence
 

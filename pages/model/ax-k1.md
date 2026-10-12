@@ -68,20 +68,14 @@ weighted average                        = 62.1
 
 ## How to run it
 
-<pre>
-download                      size  score
-16-bit bf16 · nvidia only  ~1038GB   62.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~1038 GB, NVIDIA only, from [huggingface.co/skt](https://huggingface.co/skt/A.X-K1/tree/bb56f50f36b6c0b7b0c108da02db47a5e3bd9ee1))
+   
+   ```sh
+   vllm serve skt/A.X-K1 --tensor-parallel-size 8
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · nvidia only · ~1038GB
-vllm serve skt/A.X-K1 --tensor-parallel-size 8
-```
+Official weights and documentation: [huggingface.co/skt](https://huggingface.co/skt/A.X-K1)
 
 [interactive version](https://whatmodel.sh/model/ax-k1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

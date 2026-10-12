@@ -106,10 +106,10 @@ weighted average                                   = 74.1
 
 ## How to run it
 
+### Through an API
+
 api (Deep Infra) · $3.75/M blended · $2.5 in / $7.5 out per 1M tokens · [deepinfra.com](https://deepinfra.com/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/Qwen/Qwen3.7-Max.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/alibaba/qwen3.7-max.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/qwen3-7-max) · [JSON](https://whatmodel.sh/api?format=json&all=1)

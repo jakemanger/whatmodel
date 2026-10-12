@@ -53,10 +53,10 @@ weighted average                        = 55.5
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.11/sec · [replicate.com](https://replicate.com/kwaivgi/kling-o1)
 
 <sub>[price source](https://replicate.com/kwaivgi/kling-o1): USD per second of output video on Replicate's official kwaivgi/kling-o1 model, pro mode without video input. Other variants: std $0.084/s, std with video input $0.126/s, pro with video input (e.g. video editing) $0.168/s. Replicate does not state the output resolution per mode. Product: Replicate model API. API model: kwaivgi/kling-o1. Settings: mode=pro (the default), text prompt, no reference or edit video. Price basis: published per-second-of-output list rate. Kling's own developer pricing page lists no Kling O1 video price. Currency: USD. Not a Kling direct tariff. Replicate official model page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/kling-o1-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

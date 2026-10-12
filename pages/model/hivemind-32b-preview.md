@@ -40,20 +40,14 @@ weighted average                                   = 73.9
 
 ## How to run it
 
-<pre>
-download         size  score
-16-bit bf16  ~65.52GB   73.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~65.52 GB, from [huggingface.co/PrentisAI](https://huggingface.co/PrentisAI/hivemind-32b-preview/tree/78df78b54df86a50855abbcaccd6632b4c6ebfba))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='PrentisAI/hivemind-32b-preview', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~65.52GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='PrentisAI/hivemind-32b-preview', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/PrentisAI](https://huggingface.co/PrentisAI/hivemind-32b-preview)
 
 [interactive version](https://whatmodel.sh/model/hivemind-32b-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

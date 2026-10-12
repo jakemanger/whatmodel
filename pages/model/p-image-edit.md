@@ -45,10 +45,10 @@ weighted average                        = 55.9
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.010/image · [replicate.com](https://replicate.com/prunaai/p-image-edit)
 
 <sub>[price source](https://replicate.com/prunaai/p-image-edit): USD per output image on Replicate: the model's billing config lists '$0.01 per output image' ('or 100 images for $1'). Product: Replicate model API (Pruna's official model). API model: prunaai/p-image-edit. Settings: one output image. Price basis: per-output tariff (not hardware time). Currency: USD. Replicate model page, observed 2026-10-07.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/p-image-edit) · [JSON](https://whatmodel.sh/api?format=json&all=1)

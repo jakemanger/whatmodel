@@ -46,20 +46,14 @@ weighted average                                   = 50.2
 
 ## How to run it
 
-<pre>
-version                                    needs  score
-I8_S VAE + I2_S LM (Q6_K embeddings) GG…  ~1.7GB   50.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (I8_S VAE + I2_S LM (Q6_K embeddings) GGUF, VibeASR.cpp, needs ~1.7 GB, from [github.com/microsoft](https://github.com/microsoft/VibeASR.cpp/blob/c4334009c88060f86cdbbd684b62662f710b6c20/README.md))
+   
+   ```sh
+   git clone --recursive https://github.com/microsoft/VibeASR.cpp.git && cd VibeASR.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && pip install huggingface_hub && huggingface-cli download microsoft/VibeVoice-ASR-BitNet vibeasr-vae-encoder-i8_s.gguf vibeasr-lm-i2_s-embed-q6_k.gguf --local-dir models/vibeasr && ./build/bin/asr_infer --vae-model models/vibeasr/vibeasr-vae-encoder-i8_s.gguf --lm-model models/vibeasr/vibeasr-lm-i2_s-embed-q6_k.gguf --audio input.wav -t 4
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# I8_S VAE + I2_S LM (Q6_K embeddings) GGUF, VibeASR.cpp · ~1.7GB
-git clone --recursive https://github.com/microsoft/VibeASR.cpp.git && cd VibeASR.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && pip install huggingface_hub && huggingface-cli download microsoft/VibeVoice-ASR-BitNet vibeasr-vae-encoder-i8_s.gguf vibeasr-lm-i2_s-embed-q6_k.gguf --local-dir models/vibeasr && ./build/bin/asr_infer --vae-model models/vibeasr/vibeasr-vae-encoder-i8_s.gguf --lm-model models/vibeasr/vibeasr-lm-i2_s-embed-q6_k.gguf --audio input.wav -t 4
-```
+Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/VibeVoice-ASR-BitNet)
 
 [interactive version](https://whatmodel.sh/model/vibevoice-asr-bitnet) · [JSON](https://whatmodel.sh/api?format=json&all=1)

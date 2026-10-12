@@ -60,20 +60,14 @@ weighted average                                   = 36.1
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-bf16 + sequential CPU offload · nvidia …  ~37.8GB   36.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 + SEQUENTIAL CPU OFFLOAD, needs ~37.8 GB, NVIDIA only, from [huggingface.co/zai-org](https://huggingface.co/zai-org/CogVideoX1.5-5B/blob/fdc5267c90b5c06492985b966e43aae984e189e0/README.md))
+   
+   ```sh
+   uv run --with torch --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with imageio-ffmpeg --with sentencepiece python -c "import torch; from diffusers import CogVideoXPipeline; from diffusers.utils import export_to_video; p=CogVideoXPipeline.from_pretrained('zai-org/CogVideoX1.5-5B', torch_dtype=torch.bfloat16); p.enable_sequential_cpu_offload(); p.vae.enable_tiling(); p.vae.enable_slicing(); export_to_video(p(prompt='A panda, dressed in a small, red jacket and a tiny hat, sits on a wooden stool in a serene bamboo forest.', num_videos_per_prompt=1, num_inference_steps=50, num_frames=81, guidance_scale=6, generator=torch.Generator(device='cuda').manual_seed(42)).frames[0], 'output.mp4', fps=8)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 + sequential CPU offload · nvidia only · ~37.8GB
-uv run --with torch --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with imageio-ffmpeg --with sentencepiece python -c "import torch; from diffusers import CogVideoXPipeline; from diffusers.utils import export_to_video; p=CogVideoXPipeline.from_pretrained('zai-org/CogVideoX1.5-5B', torch_dtype=torch.bfloat16); p.enable_sequential_cpu_offload(); p.vae.enable_tiling(); p.vae.enable_slicing(); export_to_video(p(prompt='A panda, dressed in a small, red jacket and a tiny hat, sits on a wooden stool in a serene bamboo forest.', num_videos_per_prompt=1, num_inference_steps=50, num_frames=81, guidance_scale=6, generator=torch.Generator(device='cuda').manual_seed(42)).frames[0], 'output.mp4', fps=8)"
-```
+Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/CogVideoX1.5-5B)
 
 [interactive version](https://whatmodel.sh/model/cogvideox-1-5-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

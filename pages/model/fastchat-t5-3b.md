@@ -47,23 +47,16 @@ weighted average                                   = 17.4
 
 ## How to run it
 
-<pre>
-download                     size  score
-4-bit fp16 · nvidia only  ~6.71GB   17.4
-4-bit fp16 · mac only     ~6.71GB   17.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~6.71 GB, NVIDIA only, from [github.com/lm-sys](https://github.com/lm-sys/FastChat/blob/587d5cfa1609a43d192cedb8441cac3c17db105d/README.md))
+   
+   ```sh
+   pip3 install "fschat[model_worker,webui]" && python3 -m fastchat.serve.cli --model-path lmsys/fastchat-t5-3b-v1.0
+   ```
 
-### Run it on your own machine
+Other versions: fp16 (~6.71 GB, Mac only) `pip3 install "fschat[model_worker,webui]" && python3 -m fastchat.serve.cli --model-path lmsys/fastchat-t5-3b-v1.0 --device mps`
 
-**Other engines**
-
-```sh
-# 4-bit fp16 · nvidia only · ~6.71GB
-pip3 install "fschat[model_worker,webui]" && python3 -m fastchat.serve.cli --model-path lmsys/fastchat-t5-3b-v1.0
-# 4-bit fp16 · mac only · ~6.71GB
-pip3 install "fschat[model_worker,webui]" && python3 -m fastchat.serve.cli --model-path lmsys/fastchat-t5-3b-v1.0 --device mps
-```
+Official weights and documentation: [huggingface.co/lmsys](https://huggingface.co/lmsys/fastchat-t5-3b-v1.0)
 
 [interactive version](https://whatmodel.sh/model/fastchat-t5-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

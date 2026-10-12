@@ -42,6 +42,6 @@ weighted average                        = 84.0
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/seed-tts-2-0-standard) · [JSON](https://whatmodel.sh/api?format=json&all=1)

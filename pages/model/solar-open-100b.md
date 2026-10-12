@@ -88,84 +88,93 @@ weighted average                              = 59.7
 
 ## How to run it
 
-<sub>[context source](https://arxiv.org/html/2601.07022v1): Solar Open Technical Report (arXiv 2601.07022v1) Table 2: 'Context Length 131,072'; model card: '128k'. Observed 2026-10-09.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                        size  score
-16-bit bf16 · nvidia only  ~205.31GB   59.7
-4-bit q4_k_m                 ~62.3GB   59.7
-8-bit q8_0                  ~109.2GB   59.7
-2-bit q2_k                   ~37.7GB   59.7
-4-bit mlx-4bit · mac only    ~57.8GB   59.7
-4-bit mlx-8bit · mac only   ~109.1GB   59.7
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Solar Open 100B (102B-A12B) (Q4_K_M, needs ~62.3 GB, from [huggingface.co/AaryanK](https://huggingface.co/AaryanK/Solar-Open-100B-GGUF/tree/cfe3fc26a5bfa6401071c97126130bfd25d5ace5))
+   
+   ```sh
+   llama cli -hf AaryanK/Solar-Open-100B-GGUF:q4_k_m
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf AaryanK/Solar-Open-100B-GGUF:q4_k_m
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~109.2 GB) `llama cli -hf AaryanK/Solar-Open-100B-GGUF:q8_0` · Q2_K (~37.7 GB) `llama cli -hf AaryanK/Solar-Open-100B-GGUF:q2_k`
 
-```sh
-# 4-bit q4_k_m · ~62.3GB
-llama cli -hf AaryanK/Solar-Open-100B-GGUF:q4_k_m
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf AaryanK/Solar-Open-100B-GGUF:q4_k_m
-# 8-bit q8_0 · ~109.2GB
-llama cli -hf AaryanK/Solar-Open-100B-GGUF:q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf AaryanK/Solar-Open-100B-GGUF:q8_0
-# 2-bit q2_k · ~37.7GB
-llama cli -hf AaryanK/Solar-Open-100B-GGUF:q2_k
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf AaryanK/Solar-Open-100B-GGUF:q2_k
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit q4_k_m · ~62.3GB
-lms get https://huggingface.co/AaryanK/Solar-Open-100B-GGUF@q4_k_m -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit q8_0 · ~109.2GB
-lms get https://huggingface.co/AaryanK/Solar-Open-100B-GGUF@q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit q2_k · ~37.7GB
-lms get https://huggingface.co/AaryanK/Solar-Open-100B-GGUF@q2_k -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~57.8GB
-lms get https://huggingface.co/mlx-community/Solar-Open-100B-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~109.1GB
-lms get https://huggingface.co/mlx-community/Solar-Open-100B-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Solar Open 100B (102B-A12B) (Q4_K_M, needs ~62.3 GB, from [huggingface.co/AaryanK](https://huggingface.co/AaryanK/Solar-Open-100B-GGUF/tree/cfe3fc26a5bfa6401071c97126130bfd25d5ace5))
+   
+   ```sh
+   lms get https://huggingface.co/AaryanK/Solar-Open-100B-GGUF@q4_k_m -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 2-bit q2_k · ~37.7GB
-ollama run hf.co/AaryanK/Solar-Open-100B-GGUF:q2_k
-```
+Other versions: Q8_0 (~109.2 GB) `lms get https://huggingface.co/AaryanK/Solar-Open-100B-GGUF@q8_0 -y` · Q2_K (~37.7 GB) `lms get https://huggingface.co/AaryanK/Solar-Open-100B-GGUF@q2_k -y` · 4bit (~57.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Solar-Open-100B-4bit -y` · 8bit (~109.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Solar-Open-100B-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~57.8GB
-mlx_lm.chat --model mlx-community/Solar-Open-100B-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Solar-Open-100B-4bit
-# 4-bit mlx-8bit · mac only · ~109.1GB
-mlx_lm.chat --model mlx-community/Solar-Open-100B-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Solar-Open-100B-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-**Other engines**
+2. Run Solar Open 100B (102B-A12B) (Q2_K, needs ~37.7 GB, from [huggingface.co/AaryanK](https://huggingface.co/AaryanK/Solar-Open-100B-GGUF/tree/cfe3fc26a5bfa6401071c97126130bfd25d5ace5))
+   
+   ```sh
+   ollama run hf.co/AaryanK/Solar-Open-100B-GGUF:q2_k
+   ```
 
-```sh
-# 16-bit bf16 · nvidia only · ~205.31GB
-vllm serve upstage/Solar-Open-100B --trust-remote-code --enable-auto-tool-choice --tool-call-parser solar_open --reasoning-parser solar_open --logits-processors vllm.model_executor.models.parallel_tool_call_logits_processor:ParallelToolCallLogitsProcessor --logits-processors vllm.model_executor.models.solar_open_logits_processor:SolarOpenTemplateLogitsProcessor --tensor-parallel-size 8
-```
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Solar Open 100B (102B-A12B) (4bit, needs ~57.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Solar-Open-100B-4bit/tree/3a1944e955dc1dc8e03354929189e5ad9ee9f895))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Solar-Open-100B-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Solar-Open-100B-4bit
+   ```
+
+Other versions: 8bit (~109.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Solar-Open-100B-8bit`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~205.31 GB, NVIDIA only, from [huggingface.co/upstage](https://huggingface.co/upstage/Solar-Open-100B/tree/1f591439b14055004d1a5d1a975608953a022fea))
+   
+   ```sh
+   vllm serve upstage/Solar-Open-100B --trust-remote-code --enable-auto-tool-choice --tool-call-parser solar_open --reasoning-parser solar_open --logits-processors vllm.model_executor.models.parallel_tool_call_logits_processor:ParallelToolCallLogitsProcessor --logits-processors vllm.model_executor.models.solar_open_logits_processor:SolarOpenTemplateLogitsProcessor --tensor-parallel-size 8
+   ```
+
+Official weights and documentation: [huggingface.co/upstage](https://huggingface.co/upstage/Solar-Open-100B)
 
 [interactive version](https://whatmodel.sh/model/solar-open-100b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

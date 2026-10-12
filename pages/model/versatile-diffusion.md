@@ -56,20 +56,14 @@ weighted average                                   = 29.0
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp16 · nvidia only  ~7.2GB   29.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~7.2 GB, NVIDIA only, from [huggingface.co/shi-labs](https://huggingface.co/shi-labs/versatile-diffusion/blob/2926f8e11ea526b562cd592b099fcf9c2985d0b7/README.md))
+   
+   ```sh
+   uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from diffusers import VersatileDiffusionTextToImagePipeline; p=VersatileDiffusionTextToImagePipeline.from_pretrained('shi-labs/versatile-diffusion', torch_dtype=torch.float16); p.remove_unused_weights(); p=p.to('cuda'); p('an astronaut riding on a horse on mars', generator=torch.Generator(device='cuda').manual_seed(0)).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~7.2GB
-uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from diffusers import VersatileDiffusionTextToImagePipeline; p=VersatileDiffusionTextToImagePipeline.from_pretrained('shi-labs/versatile-diffusion', torch_dtype=torch.float16); p.remove_unused_weights(); p=p.to('cuda'); p('an astronaut riding on a horse on mars', generator=torch.Generator(device='cuda').manual_seed(0)).images[0].save('out.png')"
-```
+Official weights and documentation: [huggingface.co/shi-labs](https://huggingface.co/shi-labs/versatile-diffusion)
 
 [interactive version](https://whatmodel.sh/model/versatile-diffusion) · [JSON](https://whatmodel.sh/api?format=json&all=1)

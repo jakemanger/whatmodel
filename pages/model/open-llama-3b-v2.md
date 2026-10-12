@@ -52,45 +52,64 @@ weighted average                          = 24.5
 
 ## How to run it
 
-<pre>
-download         size  score
-4-bit fp16    ~6.85GB   24.5
-4-bit q4_k_m   ~2.6GB   24.5
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run OpenLLaMA 3B v2 (Q4_K_M, needs ~2.6 GB, from [huggingface.co/lstgst](https://huggingface.co/lstgst/open_llama_3b_v2-Q4_K_M-GGUF/tree/8728b2275ba163d674202dc1080f05208edc0100))
+   
+   ```sh
+   llama cli -hf lstgst/open_llama_3b_v2-Q4_K_M-GGUF:q4_k_m
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lstgst/open_llama_3b_v2-Q4_K_M-GGUF:q4_k_m
+   ```
 
-```sh
-# 4-bit q4_k_m · ~2.6GB
-llama cli -hf lstgst/open_llama_3b_v2-Q4_K_M-GGUF:q4_k_m
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lstgst/open_llama_3b_v2-Q4_K_M-GGUF:q4_k_m
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit q4_k_m · ~2.6GB
-lms get https://huggingface.co/lstgst/open_llama_3b_v2-Q4_K_M-GGUF@q4_k_m -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run OpenLLaMA 3B v2 (Q4_K_M, needs ~2.6 GB, from [huggingface.co/lstgst](https://huggingface.co/lstgst/open_llama_3b_v2-Q4_K_M-GGUF/tree/8728b2275ba163d674202dc1080f05208edc0100))
+   
+   ```sh
+   lms get https://huggingface.co/lstgst/open_llama_3b_v2-Q4_K_M-GGUF@q4_k_m -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~2.6GB
-ollama run hf.co/lstgst/open_llama_3b_v2-Q4_K_M-GGUF:q4_k_m
-```
+### Ollama
 
-**Other engines**
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit fp16 · ~6.85GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='openlm-research/open_llama_3b_v2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+2. Run OpenLLaMA 3B v2 (Q4_K_M, needs ~2.6 GB, from [huggingface.co/lstgst](https://huggingface.co/lstgst/open_llama_3b_v2-Q4_K_M-GGUF/tree/8728b2275ba163d674202dc1080f05208edc0100))
+   
+   ```sh
+   ollama run hf.co/lstgst/open_llama_3b_v2-Q4_K_M-GGUF:q4_k_m
+   ```
+
+### Other ways to run it
+
+1. Run it as published (fp16, needs ~6.85 GB, from [huggingface.co/openlm-research](https://huggingface.co/openlm-research/open_llama_3b_v2/tree/bce5d60d3b0c68318862270ec4e794d83308d80a))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='openlm-research/open_llama_3b_v2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/openlm-research](https://huggingface.co/openlm-research/open_llama_3b_v2)
 
 [interactive version](https://whatmodel.sh/model/open-llama-3b-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

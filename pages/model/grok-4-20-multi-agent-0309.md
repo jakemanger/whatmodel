@@ -67,10 +67,10 @@ weighted average                        = 73.1
 
 ## How to run it
 
+### Through an API
+
 api (xAI) · $1.56/M blended · $1.25 in / $2.5 out per 1M tokens · [docs.x.ai](https://docs.x.ai/developers/models/grok-4.20-multi-agent-0309.md)
 
 <sub>[price source](https://docs.x.ai/developers/models.md): USD per 1M tokens, xAI API text pricing table, grok-4.20-multi-agent-0309 (\< 200k prompt tokens): input $1.25, output $2.50; cached input $0.20 and the ≥200k long-context tier ($2.50/$5.00) excluded. Currency: USD. xAI official models and pricing page, observed 2026-09-28. · [context source](https://docs.x.ai/developers/models.md): Context limit from the maker's documentation, observed 2026-10-06.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/grok-4-20-multi-agent-0309) · [JSON](https://whatmodel.sh/api?format=json&all=1)

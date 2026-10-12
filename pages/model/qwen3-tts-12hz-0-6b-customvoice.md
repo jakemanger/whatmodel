@@ -42,6 +42,8 @@ weighted average                                   = 45.7
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice)
 
 [interactive version](https://whatmodel.sh/model/qwen3-tts-12hz-0-6b-customvoice) · [JSON](https://whatmodel.sh/api?format=json&all=1)

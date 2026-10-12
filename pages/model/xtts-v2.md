@@ -92,23 +92,16 @@ weighted average                                   = 30.0
 
 ## How to run it
 
-<pre>
-version                                  needs  score
-fp32 (coqui-tts 0.27.5)                ~1.88GB   30.0
-fp32 (coqui-tts 0.27.5) · nvidia only  ~1.88GB   30.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (coqui-tts 0.27.5), needs ~1.88 GB, from [github.com/idiap](https://github.com/idiap/coqui-ai-TTS/blob/29b391cbd7ebf599e85b5232958daf39987a08e3/docs/source/models/xtts.md))
+   
+   ```sh
+   uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --model_name tts_models/multilingual/multi-dataset/xtts_v2 --text "It took me quite a long time to develop a voice, and now that I have it I'm not going to be silent." --speaker_idx "Ana Florence" --language_idx en --out_path speech.wav --device cpu
+   ```
 
-### Run it on your own machine
+Other versions: fp32 (coqui-tts 0.27.5) (~1.88 GB, NVIDIA only) `uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --model_name tts_models/multilingual/multi-dataset/xtts_v2 --text "It took me quite a long time to develop a voice, and now that I have it I'm not going to be silent." --speaker_idx "Ana Florence" --language_idx en --use_cuda --out_path speech.wav`
 
-**Other engines**
-
-```sh
-# fp32 (coqui-tts 0.27.5) · ~1.88GB
-uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --model_name tts_models/multilingual/multi-dataset/xtts_v2 --text "It took me quite a long time to develop a voice, and now that I have it I'm not going to be silent." --speaker_idx "Ana Florence" --language_idx en --out_path speech.wav --device cpu
-# fp32 (coqui-tts 0.27.5) · nvidia only · ~1.88GB
-uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --model_name tts_models/multilingual/multi-dataset/xtts_v2 --text "It took me quite a long time to develop a voice, and now that I have it I'm not going to be silent." --speaker_idx "Ana Florence" --language_idx en --use_cuda --out_path speech.wav
-```
+Official weights and documentation: [huggingface.co/coqui](https://huggingface.co/coqui/XTTS-v2)
 
 [interactive version](https://whatmodel.sh/model/xtts-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

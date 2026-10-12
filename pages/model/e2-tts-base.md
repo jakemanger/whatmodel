@@ -72,20 +72,14 @@ weighted average                                   = 59.8
 
 ## How to run it
 
-<pre>
-version    needs  score
-fp32     ~1.33GB   59.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~1.33 GB, from [github.com/SWivid](https://github.com/SWivid/F5-TTS/blob/283252563dbf91be625e0c27926acfaac449186c/src/f5_tts/infer/infer_cli.py))
+   
+   ```sh
+   pip install f5-tts && f5-tts_infer-cli --model E2TTS_Base --gen_text "Hello, world."
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · ~1.33GB
-pip install f5-tts && f5-tts_infer-cli --model E2TTS_Base --gen_text "Hello, world."
-```
+Official weights and documentation: [huggingface.co/SWivid](https://huggingface.co/SWivid/E2-TTS)
 
 [interactive version](https://whatmodel.sh/model/e2-tts-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

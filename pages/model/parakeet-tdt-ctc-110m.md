@@ -45,20 +45,14 @@ weighted average                                   = 50.0
 
 ## How to run it
 
-<pre>
-version               needs  score
-fp32 · nvidia only  ~1.05GB   50.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~1.05 GB, NVIDIA only, from [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-tdt_ctc-110m))
+   
+   ```sh
+   uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-tdt_ctc-110m').transcribe(['audio.wav']))"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · nvidia only · ~1.05GB
-uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-tdt_ctc-110m').transcribe(['audio.wav']))"
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-tdt_ctc-110m)
 
 [interactive version](https://whatmodel.sh/model/parakeet-tdt-ctc-110m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -53,10 +53,10 @@ weighted average                        = 80.7
 
 ## How to run it
 
+### Through an API
+
 api (Google) · $0.034/image · [ai.google.dev](https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1)
 
 <sub>[price source](https://ai.google.dev/gemini-api/docs/pricing): USD per 1K (1024x1024) generated image on the Gemini Developer API Standard paid tier: image output is $30.00 per 1M tokens and Google states that 1K output images consume 1,120 tokens and are 'equivalent to $0.0336 per image' (2K $0.0504, 4K $0.113; Batch $0.0168 per 1K image). Input ($1.50 per 1M text/image/video) and text/thinking output ($7.50 per 1M) are additional; free tier 'Not available'. Product: Gemini Developer API. API model: gemini-nano-banana-2.1. Settings: tier=Standard paid, resolution=1K, batch=no, n=1. Price basis: provider-published per-image equivalent of the image-output rate. Currency: USD. Google Gemini API official pricing page (page footer 'Last updated 2026-10-07 UTC'), observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/nano-banana-2-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

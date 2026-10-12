@@ -59,10 +59,10 @@ weighted average                                   = 61.4
 
 ## How to run it
 
+### Through an API
+
 api (Google Cloud) · $0.060/image · [cloud.google.com](https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing)
 
 <sub>[price source](https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing): USD per generated image, Imagen 4 Ultra text-to-image on Google Cloud generative AI (Vertex AI / Gemini Enterprise Agent Platform) pricing; upscaling billed separately. Not the Gemini Developer API (its pricing page no longer lists Imagen). Product: Google Cloud generative AI image generation. API model: Imagen 4 Ultra. Settings: text prompt, one image. Price basis: published list rate. Currency: USD. Google Cloud official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/imagen-4-ultra) · [JSON](https://whatmodel.sh/api?format=json&all=1)

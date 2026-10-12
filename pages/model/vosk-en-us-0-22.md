@@ -45,20 +45,14 @@ weighted average                                   = 42.2
 
 ## How to run it
 
-<pre>
-version  needs  score
-kaldi    ~16GB   42.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (kaldi, needs ~16 GB, from [github.com/alphacep](https://github.com/alphacep/vosk-api/blob/05adbfcc0df27a1535913c6accd4b7fc60ffd59d/python/vosk/transcriber/cli.py))
+   
+   ```sh
+   uvx --from vosk vosk-transcriber -n vosk-model-en-us-0.22 -i audio.wav -o out.txt
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# kaldi · ~16GB
-uvx --from vosk vosk-transcriber -n vosk-model-en-us-0.22 -i audio.wav -o out.txt
-```
+Official weights and documentation: [alphacephei.com/vosk](https://alphacephei.com/vosk/models)
 
 [interactive version](https://whatmodel.sh/model/vosk-en-us-0-22) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -40,20 +40,14 @@ weighted average                              = 55.7
 
 ## How to run it
 
-<pre>
-download      size  score
-16-bit bf16  ~14GB   55.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~14 GB, from [huggingface.co/JasperV13](https://huggingface.co/JasperV13/Yehia-7B-Reasoning-preview/tree/f761e889b9ab71929307470e6a29479da35bb6a9))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='JasperV13/Yehia-7B-Reasoning-preview', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~14GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='JasperV13/Yehia-7B-Reasoning-preview', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/JasperV13](https://huggingface.co/JasperV13/Yehia-7B-Reasoning-preview)
 
 [interactive version](https://whatmodel.sh/model/yehia-7b-reasoning-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

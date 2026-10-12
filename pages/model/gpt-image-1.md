@@ -98,10 +98,10 @@ weighted average                                   = 61.3
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $0.042/image · [developers.openai.com](https://developers.openai.com/api/docs/models/gpt-image-1)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD for one generated 1024×1024 medium-quality image. Output-only published price; input text/image token charges are additional. Scheduled deprecation 2026-10-23. Product: Image generation API. API model: gpt-image-1. Settings: quality=medium, width=1024, height=1024, n=1. Price basis: generated image output component. Additional/excluded charges: input text/image tokens. Currency: USD.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-image-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

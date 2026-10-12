@@ -64,22 +64,14 @@ weighted average                                   = 13.6
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/EleutherAI/gpt-neo-1.3B/blob/dbe59a7f4a88d01d1ba9798d78dbe3fe038792c8/config.json): EleutherAI official configuration for gpt-neo-1.3B (pinned commit): max\_position\_embeddings 2048. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+### Other ways to run it
 
-<pre>
-download       size  score
-4-bit fp32  ~5.31GB   13.6
-</pre>
+1. Run it as published (fp32, needs ~5.31 GB, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-neo-1.3B/tree/dbe59a7f4a88d01d1ba9798d78dbe3fe038792c8))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neo-1.3B')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp32 · ~5.31GB
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neo-1.3B')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/gpt-neo-1.3B)
 
 [interactive version](https://whatmodel.sh/model/gpt-neo-1-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

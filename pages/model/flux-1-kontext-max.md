@@ -69,10 +69,10 @@ weighted average                                   = 54.7
 
 ## How to run it
 
+### Through an API
+
 api (Black Forest Labs) · $0.080/image · [docs.bfl.ai](https://docs.bfl.ai/quick_start/pricing)
 
 <sub>[price source](https://bfl.ai/pricing): USD per generated image, flat: BFL lists FLUX.1 Kontext \[max\] at $0.08 per image (8 credits at $0.01), for text-to-image and image editing alike. Product: BFL API. API model: flux-kontext-max. Settings: one image. Price basis: published per-image list rate. BFL's docs list FLUX.1 Kontext under "Legacy Models" / "FLUX.1 Models (Previous Generation)"; it is still sold and no end date is published. Currency: USD. Black Forest Labs official pricing page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/flux-1-kontext-max) · [JSON](https://whatmodel.sh/api?format=json&all=1)

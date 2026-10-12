@@ -51,10 +51,10 @@ weighted average                                   = 61.0
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $25.00/M chars · [replicate.com](https://replicate.com/inworld/realtime-tts-2)
 
 <sub>[price source](https://bertrande.com/en/ai/replicate/inworld--realtime-tts-2): USD per 1M input characters. Realtime TTS 2.0, standard hosted endpoint. Character billing, not a token conversion. Replicate output/character billing; hardware-time rates are not added to this tariff. Taxes and separate services excluded. Bertrande, https://bertrande.com/en/ai/replicate/inworld--realtime-tts-2; observed 2026-09-20T01:44:15Z. CC BY 4.0; units normalized and model identifier mapped.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/inworld-realtime-tts-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

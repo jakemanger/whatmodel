@@ -67,20 +67,14 @@ weighted average                                   = 49.0
 
 ## How to run it
 
-<pre>
-version                                      needs  score
-bf16 MLX, dev two-stage HQ (mlx-video) …  ~119.6GB   49.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 MLX, DEV TWO-STAGE HQ (MLX-VIDEO), needs ~119.6 GB, Mac only, from [github.com/Blaizzy](https://github.com/Blaizzy/mlx-video/blob/87db56a51758fefb748a359b90a5283bb8ba4837/README.md))
+   
+   ```sh
+   pip install git+https://github.com/Blaizzy/mlx-video.git@87db56a51758fefb748a359b90a5283bb8ba4837 && mlx_video.ltx_2.generate --pipeline dev-two-stage-hq --prompt "A cinematic scene of ocean waves at golden hour" --model-repo prince-canuma/LTX-2-dev
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 MLX, dev two-stage HQ (mlx-video) · mac only · ~119.6GB
-pip install git+https://github.com/Blaizzy/mlx-video.git@87db56a51758fefb748a359b90a5283bb8ba4837 && mlx_video.ltx_2.generate --pipeline dev-two-stage-hq --prompt "A cinematic scene of ocean waves at golden hour" --model-repo prince-canuma/LTX-2-dev
-```
+Official weights and documentation: [huggingface.co/Lightricks](https://huggingface.co/Lightricks/LTX-2)
 
 [interactive version](https://whatmodel.sh/model/ltx-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

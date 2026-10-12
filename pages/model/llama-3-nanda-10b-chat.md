@@ -40,20 +40,14 @@ weighted average                                   = 42.4
 
 ## How to run it
 
-<pre>
-download         size  score
-16-bit bf16  ~39.94GB   42.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~39.94 GB, from [huggingface.co/MBZUAI](https://huggingface.co/MBZUAI/Llama-3-Nanda-10B-Chat/tree/96c2ec3845f889446e24f23bb972deedfa7ed865))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MBZUAI/Llama-3-Nanda-10B-Chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~39.94GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MBZUAI/Llama-3-Nanda-10B-Chat', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/MBZUAI](https://huggingface.co/MBZUAI/Llama-3-Nanda-10B-Chat)
 
 [interactive version](https://whatmodel.sh/model/llama-3-nanda-10b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

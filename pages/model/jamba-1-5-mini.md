@@ -98,45 +98,64 @@ weighted average                                   = 46.4
 
 ## How to run it
 
-<pre>
-download                        size  score
-16-bit bf16 · nvidia only  ~103.14GB   46.4
-4-bit Q4_K_M                 ~31.2GB   46.4
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Jamba 1.5 Mini (Q4_K_M, needs ~31.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF/tree/861a3e7a117f4d9da7cb4e952e37105a007364ce))
+   
+   ```sh
+   llama cli -hf mradermacher/AI21-Jamba-Mini-1.5-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/AI21-Jamba-Mini-1.5-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~31.2GB
-llama cli -hf mradermacher/AI21-Jamba-Mini-1.5-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/AI21-Jamba-Mini-1.5-GGUF:Q4_K_M
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~31.2GB
-lms get https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Jamba 1.5 Mini (Q4_K_M, needs ~31.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF/tree/861a3e7a117f4d9da7cb4e952e37105a007364ce))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~31.2GB
-ollama run hf.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF:Q4_K_M
-```
+### Ollama
 
-**Other engines**
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 16-bit bf16 · nvidia only · ~103.14GB
-vllm serve ai21labs/AI21-Jamba-Mini-1.5
-```
+2. Run Jamba 1.5 Mini (Q4_K_M, needs ~31.2 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF/tree/861a3e7a117f4d9da7cb4e952e37105a007364ce))
+   
+   ```sh
+   ollama run hf.co/mradermacher/AI21-Jamba-Mini-1.5-GGUF:Q4_K_M
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~103.14 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+   
+   ```sh
+   vllm serve ai21labs/AI21-Jamba-Mini-1.5
+   ```
+
+Official weights and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Mini-1.5)
 
 [interactive version](https://whatmodel.sh/model/jamba-1-5-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

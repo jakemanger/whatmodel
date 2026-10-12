@@ -71,20 +71,14 @@ weighted average                                   = 65.7
 
 ## How to run it
 
-<pre>
-version    needs  score
-fp32     ~3.26GB   65.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~3.26 GB, from [github.com/k2-fsa](https://github.com/k2-fsa/OmniVoice/blob/08be0b4ccbac3e13e374e86fbfead4b4cac343e2/README.md))
+   
+   ```sh
+   pip install omnivoice && omnivoice-infer --model k2-fsa/OmniVoice --text "This is a test for text to speech." --output hello.wav
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · ~3.26GB
-pip install omnivoice && omnivoice-infer --model k2-fsa/OmniVoice --text "This is a test for text to speech." --output hello.wav
-```
+Official weights and documentation: [huggingface.co/k2-fsa](https://huggingface.co/k2-fsa/OmniVoice)
 
 [interactive version](https://whatmodel.sh/model/omnivoice) · [JSON](https://whatmodel.sh/api?format=json&all=1)

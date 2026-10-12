@@ -67,10 +67,10 @@ weighted average                                   = 68.1
 
 ## How to run it
 
+### Through an API
+
 api (Google) · $0.10/sec · [ai.google.dev](https://ai.google.dev/gemini-api/docs/pricing)
 
 <sub>[price source](https://ai.google.dev/gemini-api/docs/pricing): USD per generated video second at 720p WITH audio on Gemini Developer API. Only successfully generated videos billed; other resolutions differ. Product: Gemini Developer API. API model: veo-3.1-fast-generate-preview. Settings: resolution=720p, audio=yes, tier=paid. Price basis: per second of successfully generated output. Currency: USD.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/veo-3-1-fast) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -160,8 +160,6 @@ weighted average                                   = 72.6
 
 ## How to run it
 
-<sub>[context source](https://ai.google.dev/gemini-api/docs/models/gemini-3-pro-preview): Gemini Developer API model page, gemini-3-pro-preview: input token limit 1,048,576 (the 65,536-token output limit is separate). The same page says the model was shut down on March 9, 2026; the limit is recorded as a model fact. Observed 2026-09-26.</sub>
-
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/gemini-3-pro-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

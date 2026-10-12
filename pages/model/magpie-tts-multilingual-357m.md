@@ -102,21 +102,15 @@ NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multil
 
 ## How to run it
 
-<pre>
-version                              needs  score
-f16-gguf (NVIDIA NeMo-Speech.cpp)  ~0.65GB   39.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (F16-GGUF (NVIDIA NEMO-SPEECH.CPP), needs ~0.65 GB, from [huggingface.co/nvidia](https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md))
+   
+   ```sh
+   curl -fsSL https://github.com/NVIDIA/NeMo-Speech.cpp/raw/main/scripts/install.sh | sh && export PATH="$HOME/.local/bin:$PATH" && nemo-speech synthesize "Hello from Magpie Multilingual." --output speech.wav
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# f16-gguf (NVIDIA NeMo-Speech.cpp) · ~0.65GB
-curl -fsSL https://github.com/NVIDIA/NeMo-Speech.cpp/raw/main/scripts/install.sh | sh && export PATH="$HOME/.local/bin:$PATH" && nemo-speech synthesize "Hello from Magpie Multilingual." --output speech.wav
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/magpie_tts_multilingual_357m)
 
 ## Published speed measurements
 

@@ -95,22 +95,14 @@ weighted average                                   = 67.2
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md): LG model card: 'Context Length 262,144'. Observed 2026-10-09.</sub>
+### Other ways to run it
 
-<pre>
-download                      size  score
-4-bit fp8 · nvidia only  ~752.09GB   67.2
-</pre>
+1. Run it as published (fp8, needs ~752.09 GB, NVIDIA only, from [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-FP8/tree/b219707595c1330a95964abf9a06e38dae2f062c))
+   
+   ```sh
+   vllm serve LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-FP8 --served-model-name K-EXAONE-2.0-750B-A37B-FP8 --trust-remote-code --tensor-parallel-size 8 --kv-cache-dtype fp8_e4m3 --max-num-seqs 256 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_xml
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp8 · nvidia only · ~752.09GB
-vllm serve LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-FP8 --served-model-name K-EXAONE-2.0-750B-A37B-FP8 --trust-remote-code --tensor-parallel-size 8 --kv-cache-dtype fp8_e4m3 --max-num-seqs 256 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_xml
-```
+Official weights and documentation: [huggingface.co/LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B)
 
 [interactive version](https://whatmodel.sh/model/k-exaone-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

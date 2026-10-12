@@ -106,6 +106,6 @@ weighted average                                   = 59.9
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/mistral-medium-2505) · [JSON](https://whatmodel.sh/api?format=json&all=1)

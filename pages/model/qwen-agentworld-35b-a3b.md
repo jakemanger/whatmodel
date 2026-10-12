@@ -40,68 +40,91 @@ weighted average                                   = 72.5
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md): Card: 'Context Length: 262,144 tokens'. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit q4_k_xl              ~22.32GB   72.5
-16-bit bf16 · nvidia only   ~69.3GB   72.5
-4-bit mlx-4bit · mac only   ~19.5GB   72.5
-4-bit mlx-8bit · mac only   ~36.8GB   72.5
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Qwen-AgentWorld 35B-A3B (Q4_K_XL, needs ~22.32 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF/tree/3a305abf5cfd119ee999dfe929c433746edd8d63))
+   
+   ```sh
+   llama cli -hf unsloth/Qwen-AgentWorld-35B-A3B-GGUF:UD-Q4_K_XL
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/Qwen-AgentWorld-35B-A3B-GGUF:UD-Q4_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_xl · ~22.32GB
-llama cli -hf unsloth/Qwen-AgentWorld-35B-A3B-GGUF:UD-Q4_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Qwen-AgentWorld-35B-A3B-GGUF:UD-Q4_K_XL
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run Qwen-AgentWorld 35B-A3B (Q4_K_XL, needs ~22.32 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF/tree/3a305abf5cfd119ee999dfe929c433746edd8d63))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF@UD-Q4_K_XL -y
+   ```
 
-```sh
-# 4-bit q4_k_xl · ~22.32GB
-lms get https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF@UD-Q4_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~19.5GB
-lms get https://huggingface.co/erobey/Qwen-AgentWorld-35B-A3B-mlx-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~36.8GB
-lms get https://huggingface.co/DreamFoundries/Qwen-AgentWorld-35B-A3B-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: 4bit (~19.5 GB, Mac only) `lms get https://huggingface.co/erobey/Qwen-AgentWorld-35B-A3B-mlx-4bit -y` · 8bit (~36.8 GB, Mac only) `lms get https://huggingface.co/DreamFoundries/Qwen-AgentWorld-35B-A3B-8bit -y`
 
-```sh
-# 4-bit q4_k_xl · ~22.32GB
-ollama run hf.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF:UD-Q4_K_XL
-```
+### Ollama
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~19.5GB
-mlx_lm.chat --model erobey/Qwen-AgentWorld-35B-A3B-mlx-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model erobey/Qwen-AgentWorld-35B-A3B-mlx-4bit
-# 4-bit mlx-8bit · mac only · ~36.8GB
-mlx_lm.chat --model DreamFoundries/Qwen-AgentWorld-35B-A3B-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model DreamFoundries/Qwen-AgentWorld-35B-A3B-8bit
-```
+2. Run Qwen-AgentWorld 35B-A3B (Q4_K_XL, needs ~22.32 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF/tree/3a305abf5cfd119ee999dfe929c433746edd8d63))
+   
+   ```sh
+   ollama run hf.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF:UD-Q4_K_XL
+   ```
 
-**Other engines**
+### MLX (Mac)
 
-```sh
-# 16-bit bf16 · nvidia only · ~69.3GB
-vllm serve Qwen/Qwen-AgentWorld-35B-A3B
-```
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Qwen-AgentWorld 35B-A3B (4bit, needs ~19.5 GB, Mac only, from [huggingface.co/erobey](https://huggingface.co/erobey/Qwen-AgentWorld-35B-A3B-mlx-4bit/tree/75f1243916e17c6a5fe6d8fa908d5eb947b53f31))
+   
+   ```sh
+   mlx_lm.chat --model erobey/Qwen-AgentWorld-35B-A3B-mlx-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model erobey/Qwen-AgentWorld-35B-A3B-mlx-4bit
+   ```
+
+Other versions: 8bit (~36.8 GB, Mac only) `mlx_lm.chat --model DreamFoundries/Qwen-AgentWorld-35B-A3B-8bit`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~69.3 GB, NVIDIA only, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/tree/60d2b0434a53d2e62a7c00a489586815d94ebffb))
+   
+   ```sh
+   vllm serve Qwen/Qwen-AgentWorld-35B-A3B
+   ```
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B)
 
 [interactive version](https://whatmodel.sh/model/qwen-agentworld-35b-a3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

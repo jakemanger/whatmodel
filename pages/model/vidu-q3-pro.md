@@ -59,10 +59,10 @@ weighted average                                   = 65.3
 
 ## How to run it
 
+### Through an API
+
 api (Vidu) · $0.10/sec · [platform.vidu.com](https://platform.vidu.com/docs/pricing)
 
 <sub>[price source](https://platform.vidu.com/docs/pricing): USD per second of generated video, 720P, standard (peak) rate. Product: Vidu API video generation (text2video/img2video/start-end2video). API model: Vidu Q3-pro (viduq3-pro). Settings: resolution=720P, 1–16 s. Price basis: 20 credits/s at $0.005 per credit; Vidu prints $0.1/s. Off-peak $0.05/s; 1080P $0.12/s. Sales tax excluded. Currency: USD. Vidu platform pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/vidu-q3-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

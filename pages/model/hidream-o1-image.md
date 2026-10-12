@@ -73,27 +73,22 @@ HiDream-ai/HiDream-O1…  <a href="https://github.com/HiDream-ai/HiDream-O1-Imag
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/hidream-o1-image)
 
 <sub>[price source](https://fal.ai/models/fal-ai/hidream-o1-image): USD for one 1-megapixel output: fal bills this endpoint $0.01 per output megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs up to ~2K cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hidream-o1-image (full model: 50 denoising steps and guidance 5.0 by default; the separate /dev endpoint is not used). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a HiDream direct tariff. fal.ai official model page, observed 2026-09-25.</sub>
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~19.7GB   58.4
-fp8 · nvidia only    ~5.3GB   58.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~19.7 GB, NVIDIA only, from [huggingface.co/drbaph](https://huggingface.co/drbaph/HiDream-O1-Image-FP8))
+   
+   ```sh
+   git clone https://github.com/HiDream-ai/HiDream-O1-Image && cd HiDream-O1-Image && uvx --from huggingface_hub hf download HiDream-ai/HiDream-O1-Image --local-dir ckpt && uv run --with-requirements requirements.txt python inference.py --model_path ckpt --prompt "a cat holding a sign" --output_image out.png
+   ```
 
-### Run it on your own machine
+Other versions: fp8 (~5.3 GB, NVIDIA only) `cd ComfyUI/custom_nodes && git clone https://github.com/Saganaki22/HiDream_O1-ComfyUI && pip install -r HiDream_O1-ComfyUI/requirements.txt && hf download drbaph/HiDream-O1-Image-FP8 --local-dir ../models/diffusion_models/HiDream-O1-Image-fp8  # then load the node's workflow in ComfyUI`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~19.7GB
-git clone https://github.com/HiDream-ai/HiDream-O1-Image && cd HiDream-O1-Image && uvx --from huggingface_hub hf download HiDream-ai/HiDream-O1-Image --local-dir ckpt && uv run --with-requirements requirements.txt python inference.py --model_path ckpt --prompt "a cat holding a sign" --output_image out.png
-# fp8 · nvidia only · ~5.3GB
-cd ComfyUI/custom_nodes && git clone https://github.com/Saganaki22/HiDream_O1-ComfyUI && pip install -r HiDream_O1-ComfyUI/requirements.txt && hf download drbaph/HiDream-O1-Image-FP8 --local-dir ../models/diffusion_models/HiDream-O1-Image-fp8  # then load the node's workflow in ComfyUI
-```
+Official weights and documentation: [huggingface.co/HiDream-ai](https://huggingface.co/HiDream-ai/HiDream-O1-Image)
 
 [interactive version](https://whatmodel.sh/model/hidream-o1-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

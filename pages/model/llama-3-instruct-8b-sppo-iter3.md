@@ -53,55 +53,70 @@ weighted average                              = 49.9
 
 ## How to run it
 
-<pre>
-download          size  score
-16-bit bf16   ~16.06GB   49.9
-4-bit Q4_K_M    ~4.9GB   49.9
-8-bit Q8_0      ~8.5GB   49.9
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Llama-3-Instruct-8B-SPPO-Iter3 (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF/tree/3774077a704732ffe0b567abdb02799e89343bcd))
+   
+   ```sh
+   llama cli -hf bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-llama cli -hf bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.5GB
-llama cli -hf bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF:Q8_0
-```
+Other versions: Q8_0 (~8.5 GB) `llama cli -hf bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-lms get https://huggingface.co/bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~8.5GB
-lms get https://huggingface.co/bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Llama-3-Instruct-8B-SPPO-Iter3 (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF/tree/3774077a704732ffe0b567abdb02799e89343bcd))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-ollama run hf.co/bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.5GB
-ollama run hf.co/bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q8_0 (~8.5 GB) `lms get https://huggingface.co/bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF@Q8_0 -y`
 
-```sh
-# 16-bit bf16 · ~16.06GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Llama-3-Instruct-8B-SPPO-Iter3 (Q4_K_M, needs ~4.9 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF/tree/3774077a704732ffe0b567abdb02799e89343bcd))
+   
+   ```sh
+   ollama run hf.co/bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~8.5 GB) `ollama run hf.co/bartowski/Llama-3-Instruct-8B-SPPO-Iter3-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/UCLA-AGI](https://huggingface.co/UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3/tree/48c29bf2d9d68113255df9a47a9dabff6c67a13f))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/UCLA-AGI](https://huggingface.co/UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3)
 
 [interactive version](https://whatmodel.sh/model/llama-3-instruct-8b-sppo-iter3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

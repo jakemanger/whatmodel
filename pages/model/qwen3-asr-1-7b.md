@@ -97,27 +97,22 @@ weighted average                                   = 60.1
 
 ## How to run it
 
+### Through an API
+
 api (DeepInfra) · $0.0004/audio min · [deepinfra.com](https://deepinfra.com/Qwen/Qwen3-ASR-1.7B)
 
 <sub>[price source](https://deepinfra.com/Qwen/Qwen3-ASR-1.7B): USD per input audio minute: DeepInfra lists Qwen/Qwen3-ASR-1.7B at $0.00045 / minute (page pricing data: input\_length billing). Product: DeepInfra hosted inference. API model: Qwen/Qwen3-ASR-1.7B. Settings: standard serverless. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.</sub>
 
-<pre>
-version               needs  score
-8bit · mac only     ~3.32GB   60.1
-bf16 · nvidia only  ~6.14GB   60.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (8bit, needs ~3.32 GB, Mac only, from [github.com/Blaizzy](https://github.com/Blaizzy/mlx-audio/blob/main/mlx_audio/stt/models/qwen3_asr/README.md))
+   
+   ```sh
+   uvx --from mlx-audio mlx_audio.stt.generate --model mlx-community/Qwen3-ASR-1.7B-8bit --audio audio.wav --output-path out --language English
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~6.14 GB, NVIDIA only) `uvx --from 'qwen-asr[vllm]' qwen-asr-serve Qwen/Qwen3-ASR-1.7B --gpu-memory-utilization 0.8 --host 0.0.0.0 --port 8000`
 
-**Other engines**
-
-```sh
-# 8bit · mac only · ~3.32GB
-uvx --from mlx-audio mlx_audio.stt.generate --model mlx-community/Qwen3-ASR-1.7B-8bit --audio audio.wav --output-path out --language English
-# bf16 · nvidia only · ~6.14GB
-uvx --from 'qwen-asr[vllm]' qwen-asr-serve Qwen/Qwen3-ASR-1.7B --gpu-memory-utilization 0.8 --host 0.0.0.0 --port 8000
-```
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-ASR-1.7B)
 
 [interactive version](https://whatmodel.sh/model/qwen3-asr-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

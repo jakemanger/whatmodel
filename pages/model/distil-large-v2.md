@@ -62,20 +62,14 @@ weighted average                                   = 47.9
 
 ## How to run it
 
-<pre>
-version    needs  score
-fp16     ~2.32GB   47.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~2.32 GB, from [huggingface.co/distil-whisper](https://huggingface.co/distil-whisper/distil-large-v2))
+   
+   ```sh
+   uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='distil-whisper/distil-large-v2')('audio.wav', return_timestamps=True)['text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · ~2.32GB
-uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='distil-whisper/distil-large-v2')('audio.wav', return_timestamps=True)['text'])"
-```
+Official weights and documentation: [huggingface.co/distil-whisper](https://huggingface.co/distil-whisper/distil-large-v2)
 
 [interactive version](https://whatmodel.sh/model/distil-large-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

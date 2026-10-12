@@ -49,20 +49,14 @@ weighted average                        = 67.2
 
 ## How to run it
 
-<pre>
-version                                  needs  score
-bf16 (FireRedTTS3 repo) · nvidia only  ~12.3GB   67.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (FIREREDTTS3 REPO), needs ~12.3 GB, NVIDIA only, from [huggingface.co/FireRedTeam](https://huggingface.co/FireRedTeam/FireRedTTS3/blob/dcf1bdcd1b8b25b382fa84c3e34eb82e3054a610/README.md))
+   
+   ```sh
+   git clone https://github.com/FireRedTeam/FireRedTTS3.git && cd FireRedTTS3 && pip install -r requirements.txt && pip install "huggingface_hub[cli]" && hf download FireRedTeam/FireRedTTS3 --local-dir pretrained_models/ && curl -L -o fireredtts3/utils/llm_tn/models/lid.176.ftz https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz && python -c "import torch; import torchaudio; from fireredtts3.core import FireRedTTS3; tts = FireRedTTS3('pretrained_models', use_wetext=True, use_llm_tn=False); prompt_audio, prompt_audio_sr = torchaudio.load('prompt.wav'); gen_audio, gen_audio_sr = tts.generate(language=None, prompt_text='<prompt audio text>', prompt_audio=prompt_audio, prompt_audio_sr=prompt_audio_sr, text='今天天气很好，我们一起去公园散步吧。', do_tn=True); torchaudio.save('gen.wav', gen_audio.cpu(), gen_audio_sr)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (FireRedTTS3 repo) · nvidia only · ~12.3GB
-git clone https://github.com/FireRedTeam/FireRedTTS3.git && cd FireRedTTS3 && pip install -r requirements.txt && pip install "huggingface_hub[cli]" && hf download FireRedTeam/FireRedTTS3 --local-dir pretrained_models/ && curl -L -o fireredtts3/utils/llm_tn/models/lid.176.ftz https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz && python -c "import torch; import torchaudio; from fireredtts3.core import FireRedTTS3; tts = FireRedTTS3('pretrained_models', use_wetext=True, use_llm_tn=False); prompt_audio, prompt_audio_sr = torchaudio.load('prompt.wav'); gen_audio, gen_audio_sr = tts.generate(language=None, prompt_text='<prompt audio text>', prompt_audio=prompt_audio, prompt_audio_sr=prompt_audio_sr, text='今天天气很好，我们一起去公园散步吧。', do_tn=True); torchaudio.save('gen.wav', gen_audio.cpu(), gen_audio_sr)"
-```
+Official weights and documentation: [huggingface.co/FireRedTeam](https://huggingface.co/FireRedTeam/FireRedTTS3)
 
 [interactive version](https://whatmodel.sh/model/fireredtts3-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

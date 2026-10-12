@@ -46,20 +46,14 @@ weighted average                                   = 44.6
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-bf16 720p + CPU offload (official scrip…  ~57.3GB   44.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 720P + CPU OFFLOAD (OFFICIAL SCRIPT), needs ~57.3 GB, NVIDIA only, from [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanVideo-I2V/blob/3914f209367854b5e470f062c33159d5ab139e1e/README.md))
+   
+   ```sh
+   git clone https://github.com/Tencent-Hunyuan/HunyuanVideo-I2V && cd HunyuanVideo-I2V && conda create -y -n HunyuanVideo-I2V python==3.11.9 && conda install -y -n HunyuanVideo-I2V pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=12.4 -c pytorch -c nvidia && conda run -n HunyuanVideo-I2V python -m pip install -r requirements.txt "huggingface_hub[cli]" && conda run -n HunyuanVideo-I2V huggingface-cli download tencent/HunyuanVideo-I2V --local-dir ./ckpts && conda run -n HunyuanVideo-I2V huggingface-cli download xtuner/llava-llama-3-8b-v1_1-transformers --local-dir ./ckpts/text_encoder_i2v && conda run -n HunyuanVideo-I2V huggingface-cli download openai/clip-vit-large-patch14 --local-dir ./ckpts/text_encoder_2 && conda run -n HunyuanVideo-I2V python3 sample_image2video.py --model HYVideo-T/2 --prompt "An Asian man with short hair in black tactical uniform and white clothes waves a firework stick." --i2v-mode --i2v-image-path ./assets/demo/i2v/imgs/0.jpg --i2v-resolution 720p --i2v-stability --infer-steps 50 --video-length 129 --flow-reverse --flow-shift 7.0 --seed 0 --embedded-cfg-scale 6.0 --use-cpu-offload --save-path ./results
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 720p + CPU offload (official script) · nvidia only · ~57.3GB
-git clone https://github.com/Tencent-Hunyuan/HunyuanVideo-I2V && cd HunyuanVideo-I2V && conda create -y -n HunyuanVideo-I2V python==3.11.9 && conda install -y -n HunyuanVideo-I2V pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=12.4 -c pytorch -c nvidia && conda run -n HunyuanVideo-I2V python -m pip install -r requirements.txt "huggingface_hub[cli]" && conda run -n HunyuanVideo-I2V huggingface-cli download tencent/HunyuanVideo-I2V --local-dir ./ckpts && conda run -n HunyuanVideo-I2V huggingface-cli download xtuner/llava-llama-3-8b-v1_1-transformers --local-dir ./ckpts/text_encoder_i2v && conda run -n HunyuanVideo-I2V huggingface-cli download openai/clip-vit-large-patch14 --local-dir ./ckpts/text_encoder_2 && conda run -n HunyuanVideo-I2V python3 sample_image2video.py --model HYVideo-T/2 --prompt "An Asian man with short hair in black tactical uniform and white clothes waves a firework stick." --i2v-mode --i2v-image-path ./assets/demo/i2v/imgs/0.jpg --i2v-resolution 720p --i2v-stability --infer-steps 50 --video-length 129 --flow-reverse --flow-shift 7.0 --seed 0 --embedded-cfg-scale 6.0 --use-cpu-offload --save-path ./results
-```
+Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanVideo-I2V)
 
 [interactive version](https://whatmodel.sh/model/hunyuanvideo-i2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -59,55 +59,62 @@ weighted average                                   = 45.8
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0/blob/897fc6d9e12136c68c441b2350d015902c144b20/config.json): WizardLM official configuration for WizardCoder-Python-34B-V1.0 (pinned commit): max\_position\_embeddings 16384. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download         size  score
-4-bit q4_k_m    ~20GB   45.8
-8-bit q8_0      ~36GB   45.8
-4-bit Q4_K_M  ~20.2GB   45.8
-8-bit Q8_0    ~35.9GB   45.8
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run WizardCoder Python 34B V1.0 (Q4_K_M, needs ~20.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF/tree/19e229180b810e370d279a6d751becc664c65138))
+   
+   ```sh
+   llama cli -hf TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~35.9 GB) `llama cli -hf TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~20.2GB
-llama cli -hf TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~35.9GB
-llama cli -hf TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~20.2GB
-lms get https://huggingface.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~35.9GB
-lms get https://huggingface.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run WizardCoder Python 34B V1.0 (Q4_K_M, needs ~20.2 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF/tree/19e229180b810e370d279a6d751becc664c65138))
+   
+   ```sh
+   lms get https://huggingface.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~20GB
-ollama run wizardcoder:34b-python-q4_K_M
-# 8-bit q8_0 · ~36GB
-ollama run wizardcoder:34b-python-q8_0
-# 4-bit Q4_K_M · ~20.2GB
-ollama run hf.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~35.9GB
-ollama run hf.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF:Q8_0
-```
+Other versions: Q8_0 (~35.9 GB) `lms get https://huggingface.co/TheBloke/WizardCoder-Python-34B-V1.0-GGUF@Q8_0 -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run WizardCoder Python 34B V1.0 (Q4_K_M, needs ~20 GB, from [ollama.com](https://ollama.com/library/wizardcoder/tags))
+   
+   ```sh
+   ollama run wizardcoder:34b-python-q4_K_M
+   ```
+
+Other versions: Q8_0 (~36 GB) `ollama run wizardcoder:34b-python-q8_0`
+
+Official weights and documentation: [huggingface.co/WizardLM](https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0)
 
 [interactive version](https://whatmodel.sh/model/wizardcoder-python-34b-v1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

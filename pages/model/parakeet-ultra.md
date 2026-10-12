@@ -47,20 +47,14 @@ weighted average                                   = 58.7
 
 ## How to run it
 
-<pre>
-version                       needs  score
-q8_0-gguf (transcribe.cpp)  ~0.74GB   58.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (Q8_0-GGUF (TRANSCRIBE.CPP), needs ~0.74 GB, from [github.com/handy-computer](https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md))
+   
+   ```sh
+   git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/parakeet-ultra-gguf parakeet-ultra-Q8_0.gguf --local-dir models/parakeet-ultra && build/bin/transcribe-cli -m models/parakeet-ultra/parakeet-ultra-Q8_0.gguf audio.wav
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# q8_0-gguf (transcribe.cpp) · ~0.74GB
-git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/parakeet-ultra-gguf parakeet-ultra-Q8_0.gguf --local-dir models/parakeet-ultra && build/bin/transcribe-cli -m models/parakeet-ultra/parakeet-ultra-Q8_0.gguf audio.wav
-```
+Official weights and documentation: [huggingface.co/moondream](https://huggingface.co/moondream/parakeet-ultra)
 
 [interactive version](https://whatmodel.sh/model/parakeet-ultra) · [JSON](https://whatmodel.sh/api?format=json&all=1)

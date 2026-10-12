@@ -55,20 +55,14 @@ weighted average                        = 59.3
 
 ## How to run it
 
-<pre>
-download                      size  score
-4-bit fp8 · nvidia only  ~327.59GB   59.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp8, needs ~327.59 GB, NVIDIA only, from [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/step3/blob/e2d67fc936dc60f8f606f2429728f1dea503e10d/docs/deploy_guidance.md))
+   
+   ```sh
+   uv pip install -U vllm --torch-backend=auto --extra-index-url https://wheels.vllm.ai/nightly && vllm serve stepfun-ai/step3-fp8 --tensor-parallel-size 8 --reasoning-parser step3 --enable-auto-tool-choice --tool-call-parser step3 --gpu-memory-utilization 0.85 --max-num-batched-tokens 4096 --trust-remote-code
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp8 · nvidia only · ~327.59GB
-uv pip install -U vllm --torch-backend=auto --extra-index-url https://wheels.vllm.ai/nightly && vllm serve stepfun-ai/step3-fp8 --tensor-parallel-size 8 --reasoning-parser step3 --enable-auto-tool-choice --tool-call-parser step3 --gpu-memory-utilization 0.85 --max-num-batched-tokens 4096 --trust-remote-code
-```
+Official weights and documentation: [huggingface.co/stepfun-ai](https://huggingface.co/stepfun-ai/step3)
 
 [interactive version](https://whatmodel.sh/model/step-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

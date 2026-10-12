@@ -52,22 +52,14 @@ Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open
 
 ## How to run it
 
-<sub>[context source](https://arxiv.org/abs/1910.10683v4): Training sequence length stated by the maker (T5 paper, final models: "pre-train our models for 1 million steps on a batch size of 2^11 sequences of length 512"). T5 uses relative position embeddings, so no hard positional limit or serving limit is published. Observed 2026-10-07.</sub>
+### Other ways to run it
 
-<pre>
-download       size  score
-4-bit fp32  ~0.24GB   42.8
-</pre>
+1. Run it as published (fp32, needs ~0.24 GB, from [huggingface.co/google-t5](https://huggingface.co/google-t5/t5-small/tree/df1b051c49625cf57a3d0d8d3863ed4d13564fe4))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google-t5/t5-small')('translate English to German: The house is wonderful.', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp32 · ~0.24GB
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google-t5/t5-small')('translate English to German: The house is wonderful.', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/google-t5](https://huggingface.co/google-t5/t5-small)
 
 [interactive version](https://whatmodel.sh/model/t5-small) · [JSON](https://whatmodel.sh/api?format=json&all=1)

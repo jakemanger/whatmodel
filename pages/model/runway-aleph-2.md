@@ -40,10 +40,10 @@ weighted average                                   = 65.3
 
 ## How to run it
 
+### Through an API
+
 api (Runway) · $0.28/sec · [docs.dev.runwayml.com](https://docs.dev.runwayml.com/guides/models)
 
 <sub>[price source](https://docs.dev.runwayml.com/guides/pricing): USD per second of output video on the Runway developer API. Product: Runway API video-to-video. API model: aleph2 (listed as 'Aleph 2.0'). Price basis: 28 credits per second × $0.01 per credit; 56-credit minimum per generation. Professional/HDR output formats (prores, png\_sequence, 10-bit/HDR profiles) add 5–40 credits per second; sales tax excluded. Currency: USD. Runway API pricing documentation, observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/runway-aleph-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

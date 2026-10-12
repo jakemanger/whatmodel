@@ -44,20 +44,14 @@ weighted average                                   = 24.6
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp32 · nvidia only  ~6.1GB   24.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~6.1 GB, NVIDIA only, from [github.com/YingqingHe](https://github.com/YingqingHe/LVDM/blob/d251dccfbf6352826f5c5681abd86e87ed7e6371/README.md))
+   
+   ```sh
+   git clone https://github.com/YingqingHe/LVDM && cd LVDM && conda create -y -n lvdm python=3.8.5 && conda run -n lvdm pip install -r requirements.txt && mkdir -p models/t2v && wget -O models/t2v/model.ckpt https://huggingface.co/Yingqing/LVDM/resolve/main/lvdm_short/t2v.ckpt && conda run -n lvdm bash shellscripts/sample_lvdm_text2video.sh
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · nvidia only · ~6.1GB
-git clone https://github.com/YingqingHe/LVDM && cd LVDM && conda create -y -n lvdm python=3.8.5 && conda run -n lvdm pip install -r requirements.txt && mkdir -p models/t2v && wget -O models/t2v/model.ckpt https://huggingface.co/Yingqing/LVDM/resolve/main/lvdm_short/t2v.ckpt && conda run -n lvdm bash shellscripts/sample_lvdm_text2video.sh
-```
+Official weights and documentation: [github.com/YingqingHe](https://github.com/YingqingHe/LVDM)
 
 [interactive version](https://whatmodel.sh/model/lvdm-t2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

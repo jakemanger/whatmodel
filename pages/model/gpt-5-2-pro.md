@@ -55,10 +55,10 @@ weighted average                                   = 77.1
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $57.75/M blended · $21 in / $168 out per 1M tokens · [developers.openai.com](https://developers.openai.com/api/docs/models/gpt-5.2-pro)
 
 <sub>[price source](https://developers.openai.com/api/docs/models/gpt-5.2-pro): USD per 1M tokens, OpenAI API standard processing, model page 'gpt-5.2-pro' whose default snapshot is gpt-5.2-pro-2025-12-11: input $21, output $168; cached-input, Batch and other tiers excluded. Currency: USD. OpenAI official model page, observed 2026-09-28. · [context source](https://developers.openai.com/api/docs/models/gpt-5.2-pro): OpenAI model page for gpt-5.2-pro (default snapshot gpt-5.2-pro-2025-12-11): 400,000 context window. Observed 2026-09-28.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-5-2-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

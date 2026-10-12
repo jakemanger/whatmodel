@@ -42,6 +42,8 @@ weighted average                                   = 55.6
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/FireRedTeam](https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.0)
 
 [interactive version](https://whatmodel.sh/model/firered-image-edit-1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

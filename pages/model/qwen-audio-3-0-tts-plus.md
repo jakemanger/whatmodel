@@ -72,10 +72,10 @@ Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS
 
 ## How to run it
 
+### Through an API
+
 api (Alibaba Cloud Model Studio) · $20.00/M chars · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
 <sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per 1M characters: Model Studio lists qwen-audio-3.0-tts-plus at $0.2 per 10,000 input characters, International (Singapore) deployment; output not billed (x100). Each Chinese character counts as 2 characters. Product: Alibaba Cloud Model Studio speech synthesis. API model: qwen-audio-3.0-tts-plus. Settings: International deployment. Price basis: published list rate. Exclusions: free quota; Mainland China deployment lists $0.19253 per 10,000. Currency: USD. Alibaba Cloud official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/qwen-audio-3-0-tts-plus) · [JSON](https://whatmodel.sh/api?format=json&all=1)

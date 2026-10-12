@@ -44,10 +44,10 @@ weighted average                                   = 62.2
 
 ## How to run it
 
+### Through an API
+
 api (Fish Audio) · $0.0060/audio min · [docs.fish.audio](https://docs.fish.audio/api-reference/endpoint/openapi-v1/speech-to-text)
 
 <sub>[price source](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits): USD per input audio minute: Fish Audio's Pricing & Rate Limits page, 'Automatic Speech Recognition (ASR) Models' table, lists \`transcribe-1\` at $0.36 / audio hour (÷60); \`transcribe-1-pro\` costs the same. Product: Fish Audio Speech to Text API (POST /v1/asr). API model: transcribe-1 (served when the model header is missing). Price basis: published pay-as-you-go list rate. Currency: USD. Fish Audio official docs, observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/fish-audio-transcribe-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

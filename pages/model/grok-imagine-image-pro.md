@@ -68,10 +68,10 @@ weighted average                                   = 64.7
 
 ## How to run it
 
+### Through an API
+
 api (xAI) · $0.050/image · [docs.x.ai](https://docs.x.ai/developers/models/grok-imagine-image-quality.md)
 
 <sub>[price source](https://docs.x.ai/developers/models.md): USD per generated image on the xAI API (output $0.05 per image). Product: xAI API image generation. API model: grok-imagine-image-quality; xAI's model page lists grok-imagine-image-pro as an alias of this model (with grok-imagine-image-quality-20260403 and -latest). Settings: one image. Price basis: published per-image list rate. xAI's pages show no end date; LiteLLM @c19ce71 records a 2026-11-02 deprecation date for this model (not confirmed on an xAI page). Currency: USD. xAI official models and pricing page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/grok-imagine-image-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

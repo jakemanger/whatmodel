@@ -73,23 +73,21 @@ weighted average                                 = 49.5
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit q4_0   ~85.1GB   49.5
-8-bit q8_0  ~169.7GB   49.5
-</pre>
+### Ollama (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-### Run it on your own machine
+2. Run WizardLM-2 8x22B (Q4_0, needs ~85.1 GB, from [ollama.com](https://ollama.com/library/wizardlm2/tags))
+   
+   ```sh
+   ollama run wizardlm2:8x22b
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
-
-```sh
-# 4-bit q4_0 · ~85.1GB
-ollama run wizardlm2:8x22b
-# 8-bit q8_0 · ~169.7GB
-ollama run wizardlm2:8x22b-q8_0
-```
+Other versions: Q8_0 (~169.7 GB) `ollama run wizardlm2:8x22b-q8_0`
 
 [interactive version](https://whatmodel.sh/model/wizardlm-2-8x22b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

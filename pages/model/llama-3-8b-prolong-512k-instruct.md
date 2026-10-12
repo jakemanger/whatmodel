@@ -43,20 +43,14 @@ weighted average                                   = 50.2
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit fp32  ~32.12GB   50.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~32.12 GB, from [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/Llama-3-8B-ProLong-512k-Instruct/tree/bf92e493b7b0ef1db0242bfa97f1d8f92be02e9c))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='princeton-nlp/Llama-3-8B-ProLong-512k-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp32 · ~32.12GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='princeton-nlp/Llama-3-8B-ProLong-512k-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/princeton-nlp](https://huggingface.co/princeton-nlp/Llama-3-8B-ProLong-512k-Instruct)
 
 [interactive version](https://whatmodel.sh/model/llama-3-8b-prolong-512k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

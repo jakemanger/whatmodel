@@ -150,10 +150,10 @@ weighted average                                   = 64.2
 
 ## How to run it
 
+### Through an API
+
 api (Anthropic) · $2.00/M blended · $1 in / $5 out per 1M tokens · [docs.anthropic.com](https://docs.anthropic.com/en/docs/about-claude/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/anthropic/models/claude-haiku-4-5.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/anthropic/claude-haiku-4-5.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/claude-haiku-4-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

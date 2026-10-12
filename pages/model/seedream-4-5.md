@@ -77,10 +77,10 @@ weighted average                                   = 63.9
 
 ## How to run it
 
+### Through an API
+
 api (BytePlus ModelArk) · $0.040/image · [docs.byteplus.com](https://docs.byteplus.com/en/docs/ModelArk/1544106)
 
 <sub>[price source](https://docs.byteplus.com/en/docs/ModelArk/1544106): USD per output image on BytePlus ModelArk; input images free; failed/moderated images not billed; sequential generation billed per generated image. Product: BytePlus ModelArk image generation. API model: seedream-4-5-251128. Settings: n=1. Price basis: published list rate. Currency: USD. BytePlus official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/seedream-4-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -57,20 +57,14 @@ weighted average                                   = 42.5
 
 ## How to run it
 
-<pre>
-download                       size  score
-16-bit bf16 · nvidia only  ~14.78GB   42.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~14.78 GB, NVIDIA only, from [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-small-8k-instruct/blob/188b876e997ee4055df01afe46274c14c400fe40/README.md))
+   
+   ```sh
+   pip install tiktoken==0.6.0 triton==2.3.0 transformers==4.40.2 torch && python -c "import torch; from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline; r='microsoft/Phi-3-small-8k-instruct'; d=torch.cuda.current_device(); m=AutoModelForCausalLM.from_pretrained(r, torch_dtype='auto', trust_remote_code=True).to(d); t=AutoTokenizer.from_pretrained(r, trust_remote_code=True); print(pipeline('text-generation', model=m, tokenizer=t, device=d)([{'role': 'user', 'content': 'What about solving an 2x + 3 = 7 equation?'}], max_new_tokens=500, return_full_text=False, do_sample=False)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · nvidia only · ~14.78GB
-pip install tiktoken==0.6.0 triton==2.3.0 transformers==4.40.2 torch && python -c "import torch; from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline; r='microsoft/Phi-3-small-8k-instruct'; d=torch.cuda.current_device(); m=AutoModelForCausalLM.from_pretrained(r, torch_dtype='auto', trust_remote_code=True).to(d); t=AutoTokenizer.from_pretrained(r, trust_remote_code=True); print(pipeline('text-generation', model=m, tokenizer=t, device=d)([{'role': 'user', 'content': 'What about solving an 2x + 3 = 7 equation?'}], max_new_tokens=500, return_full_text=False, do_sample=False)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/Phi-3-small-8k-instruct)
 
 [interactive version](https://whatmodel.sh/model/phi-3-small-8k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

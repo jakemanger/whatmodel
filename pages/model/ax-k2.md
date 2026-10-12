@@ -68,22 +68,14 @@ weighted average                        = 69.3
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/skt/A.X-K2/blob/2287ca456927eed33b899c404c0b2ffaf17aa09f/README.md): Card: 'Context length: 262,144 tokens (256K) — 128K trained natively, extended to 256K via YaRN scaling'. Observed 2026-10-10.</sub>
+### Other ways to run it
 
-<pre>
-download                        size  score
-16-bit bf16 · nvidia only  ~1383.4GB   69.3
-</pre>
+1. Run it as published (BF16, needs ~1383.4 GB, NVIDIA only, from [huggingface.co/skt](https://huggingface.co/skt/A.X-K2/tree/2287ca456927eed33b899c404c0b2ffaf17aa09f))
+   
+   ```sh
+   vllm serve skt/A.X-K2 --tensor-parallel-size 8
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · nvidia only · ~1383.4GB
-vllm serve skt/A.X-K2 --tensor-parallel-size 8
-```
+Official weights and documentation: [huggingface.co/skt](https://huggingface.co/skt/A.X-K2)
 
 [interactive version](https://whatmodel.sh/model/ax-k2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -41,6 +41,8 @@ weighted average                                   = 39.2
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/KlingTeam](https://huggingface.co/KlingTeam/UniVideo)
 
 [interactive version](https://whatmodel.sh/model/univideo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

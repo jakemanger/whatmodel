@@ -16,13 +16,14 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
-### Run it on your own machine
+### Other ways to run it
 
-**Other engines**
+1. Run it as published (fp32 motion module + SD 1.5 (sd.cpp), needs ~7.8 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/animatediff.md))
+   
+   ```sh
+   sd-cli -M vid_gen --model models/v1-5-pruned-emaonly.safetensors --motion-module models/mm_sd_v15_v2.ckpt --offload-to-cpu --diffusion-fa -p "a red apple on a wooden table" --cfg-scale 8.0 --sampling-method euler --scheduler discrete -H 384 -W 384 --video-frames 16 --fps 8 --steps 20 -s 42 -o out.avi
+   ```
 
-```sh
-# fp32 motion module + SD 1.5 (sd.cpp) · ~7.8GB
-sd-cli -M vid_gen --model models/v1-5-pruned-emaonly.safetensors --motion-module models/mm_sd_v15_v2.ckpt --offload-to-cpu --diffusion-fa -p "a red apple on a wooden table" --cfg-scale 8.0 --sampling-method euler --scheduler discrete -H 384 -W 384 --video-frames 16 --fps 8 --steps 20 -s 42 -o out.avi
-```
+Official weights and documentation: [huggingface.co/guoyww](https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-2)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/animatediff-v1-5-2)

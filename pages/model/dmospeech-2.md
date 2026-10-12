@@ -48,20 +48,14 @@ weighted average                                   = 61.5
 
 ## How to run it
 
-<pre>
-version                                 needs  score
-fp32 (DMOSpeech2 repo) · nvidia only  ~4.34GB   61.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (DMOSpeech2 repo), needs ~4.34 GB, NVIDIA only, from [github.com/yl4579](https://github.com/yl4579/DMOSpeech2/blob/10c2255a59b96c311c317536603a18672e69ac84/src/demo.ipynb))
+   
+   ```sh
+   conda create -n dmo2 python=3.10 && conda activate dmo2 && git clone https://github.com/yl4579/DMOSpeech2.git && cd DMOSpeech2 && pip install -r requirements.txt && mkdir ckpts && cd ckpts && wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_85000.pt && wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_1500.pt && cd ../src && python -c "from infer import DMOInference; import soundfile as sf; tts = DMOInference(student_checkpoint_path='../ckpts/model_85000.pt', duration_predictor_path='../ckpts/model_1500.pt', device='cuda', model_type='F5TTS_Base'); generated_audio = tts.generate(gen_text='I don\'t really care what you call me. I\'ve been a silent spectator, watching species evolve, empires rise and fall. But always remember, I am mighty and enduring.', audio_path='f5_tts/infer/examples/basic/basic_ref_en.wav', prompt_text='Some call me nature, others call me mother nature.'); sf.write('generated.wav', generated_audio, 24000)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (DMOSpeech2 repo) · nvidia only · ~4.34GB
-conda create -n dmo2 python=3.10 && conda activate dmo2 && git clone https://github.com/yl4579/DMOSpeech2.git && cd DMOSpeech2 && pip install -r requirements.txt && mkdir ckpts && cd ckpts && wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_85000.pt && wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_1500.pt && cd ../src && python -c "from infer import DMOInference; import soundfile as sf; tts = DMOInference(student_checkpoint_path='../ckpts/model_85000.pt', duration_predictor_path='../ckpts/model_1500.pt', device='cuda', model_type='F5TTS_Base'); generated_audio = tts.generate(gen_text='I don\'t really care what you call me. I\'ve been a silent spectator, watching species evolve, empires rise and fall. But always remember, I am mighty and enduring.', audio_path='f5_tts/infer/examples/basic/basic_ref_en.wav', prompt_text='Some call me nature, others call me mother nature.'); sf.write('generated.wav', generated_audio, 24000)"
-```
+Official weights and documentation: [huggingface.co/yl4579](https://huggingface.co/yl4579/DMOSpeech2)
 
 [interactive version](https://whatmodel.sh/model/dmospeech-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

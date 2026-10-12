@@ -73,10 +73,10 @@ weighted average                                   = 76.9
 
 ## How to run it
 
+### Through an API
+
 api (Black Forest Labs) · $0.17/sec · [docs.bfl.ai](https://docs.bfl.ai/flux_3/flux3_video)
 
 <sub>[price source](https://docs.bfl.ai/quick_start/pricing): USD per second of output video, text-to-video full render at the hd resolution class (default; 1280×704 at 16:9), with synchronized audio. Product: BFL API FLUX 3 video. API model: FLUX 3 t2v. Price basis: published per-second rate; 1 credit = $0.01. fhd $0.29/s, qhd $0.40/s, uhd $0.80/s; draft mode $0.06/s. HD dimensions from BFL's FLUX 3 video docs. Currency: USD. Black Forest Labs API pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/flux-3-video) · [JSON](https://whatmodel.sh/api?format=json&all=1)

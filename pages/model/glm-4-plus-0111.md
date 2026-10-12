@@ -43,6 +43,6 @@ weighted average                        = 58.5
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/glm-4-plus-0111) · [JSON](https://whatmodel.sh/api?format=json&all=1)

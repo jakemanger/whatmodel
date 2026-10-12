@@ -69,46 +69,53 @@ weighted average                              = 53.5
 
 ## How to run it
 
-<pre>
-download            size  score
-16-bit bf16    ~471.49GB   53.5
-4-bit Q4_K_M    ~142.5GB   53.5
-2-bit IQ2_XXS    ~61.5GB   53.5
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run DeepSeek-V2 Chat (0628) (Q4_K_M, needs ~142.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-V2-Chat-0628-GGUF/tree/930dbf63a11aa75b1f696ba640bb170f8d75c57d))
+   
+   ```sh
+   llama cli -hf bartowski/DeepSeek-V2-Chat-0628-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/DeepSeek-V2-Chat-0628-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~142.5GB
-llama cli -hf bartowski/DeepSeek-V2-Chat-0628-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/DeepSeek-V2-Chat-0628-GGUF:Q4_K_M
-# 2-bit IQ2_XXS · ~61.5GB
-llama cli -hf bartowski/DeepSeek-V2-Chat-0628-GGUF:IQ2_XXS
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/DeepSeek-V2-Chat-0628-GGUF:IQ2_XXS
-```
+Other versions: IQ2_XXS (~61.5 GB) `llama cli -hf bartowski/DeepSeek-V2-Chat-0628-GGUF:IQ2_XXS`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~142.5GB
-lms get https://huggingface.co/bartowski/DeepSeek-V2-Chat-0628-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit IQ2_XXS · ~61.5GB
-lms get https://huggingface.co/bartowski/DeepSeek-V2-Chat-0628-GGUF@IQ2_XXS -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Other engines**
+2. Run DeepSeek-V2 Chat (0628) (Q4_K_M, needs ~142.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/DeepSeek-V2-Chat-0628-GGUF/tree/930dbf63a11aa75b1f696ba640bb170f8d75c57d))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/DeepSeek-V2-Chat-0628-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 16-bit bf16 · ~471.49GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/DeepSeek-V2-Chat-0628', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: IQ2_XXS (~61.5 GB) `lms get https://huggingface.co/bartowski/DeepSeek-V2-Chat-0628-GGUF@IQ2_XXS -y`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~471.49 GB, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat-0628/tree/5d09e272c2b223830f4e84359cd9dd047a5d7c78))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/DeepSeek-V2-Chat-0628', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat-0628)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v2-chat-0628) · [JSON](https://whatmodel.sh/api?format=json&all=1)

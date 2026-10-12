@@ -14,13 +14,14 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
-### Run it on your own machine
+### Other ways to run it
 
-**Other engines**
+1. Run it as published (fp32 (chatterbox-tts 0.1.7), needs ~2.99 GB, from [github.com/resemble-ai](https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0182dde554908b48b85c2/README.md))
+   
+   ```sh
+   pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts_turbo import ChatterboxTurboTTS; m = ChatterboxTurboTTS.from_pretrained(device='cpu'); ta.save('test-turbo.wav', m.generate('Hi there, Sarah here from MochaFone calling you back [chuckle], have you got one minute to chat about the billing issue?'), m.sr)"
+   ```
 
-```sh
-# fp32 (chatterbox-tts 0.1.7) · ~2.99GB
-pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts_turbo import ChatterboxTurboTTS; m = ChatterboxTurboTTS.from_pretrained(device='cpu'); ta.save('test-turbo.wav', m.generate('Hi there, Sarah here from MochaFone calling you back [chuckle], have you got one minute to chat about the billing issue?'), m.sr)"
-```
+Official weights and documentation: [huggingface.co/ResembleAI](https://huggingface.co/ResembleAI/chatterbox-turbo)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/chatterbox-turbo)

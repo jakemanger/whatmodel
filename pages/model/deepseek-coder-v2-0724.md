@@ -80,46 +80,53 @@ weighted average                                   = 53.0
 
 ## How to run it
 
-<pre>
-download           size  score
-16-bit bf16   ~471.49GB   53.0
-4-bit Q4_K_M   ~142.5GB   53.0
-8-bit Q8_0     ~250.6GB   53.0
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run DeepSeek-Coder-V2 Instruct (0724) (Q4_K_M, needs ~142.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF/tree/c174826c543bed5a2225f2eab8bc2e76a94f6dce))
+   
+   ```sh
+   llama cli -hf lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~142.5GB
-llama cli -hf lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~250.6GB
-llama cli -hf lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF:Q8_0
-```
+Other versions: Q8_0 (~250.6 GB) `llama cli -hf lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~142.5GB
-lms get https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~250.6GB
-lms get https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Other engines**
+2. Run DeepSeek-Coder-V2 Instruct (0724) (Q4_K_M, needs ~142.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF/tree/c174826c543bed5a2225f2eab8bc2e76a94f6dce))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 16-bit bf16 · ~471.49GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/DeepSeek-Coder-V2-Instruct-0724', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: Q8_0 (~250.6 GB) `lms get https://huggingface.co/lmstudio-community/DeepSeek-Coder-V2-Instruct-0724-GGUF@Q8_0 -y`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~471.49 GB, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct-0724/tree/80378f79777fd4d713ecc3e387de5512d84f1b87))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/DeepSeek-Coder-V2-Instruct-0724', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct-0724)
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-v2-0724) · [JSON](https://whatmodel.sh/api?format=json&all=1)

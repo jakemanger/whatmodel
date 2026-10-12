@@ -47,20 +47,14 @@ weighted average                                   = 55.6
 
 ## How to run it
 
-<pre>
-version    needs  score
-bf16     ~5.97GB   55.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~5.97 GB, from [github.com/facebookresearch](https://github.com/facebookresearch/omnilingual-asr))
+   
+   ```sh
+   uv run --python 3.12 --with omnilingual-asr python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_LLM_1B_v2').transcribe(['audio.wav'], batch_size=1))"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · ~5.97GB
-uv run --python 3.12 --with omnilingual-asr python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_LLM_1B_v2').transcribe(['audio.wav'], batch_size=1))"
-```
+Official weights and documentation: [github.com/facebookresearch](https://github.com/facebookresearch/omnilingual-asr)
 
 [interactive version](https://whatmodel.sh/model/omniasr-llm-1b-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

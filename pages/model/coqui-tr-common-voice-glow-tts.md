@@ -42,20 +42,14 @@ weighted average                        = 10.5
 
 ## How to run it
 
-<pre>
-version     needs  score
-fp32 · CPU   ~4GB   10.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 · CPU, needs ~4 GB, from [github.com/idiap](https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json))
+   
+   ```sh
+   uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/tr/common-voice/glow-tts --text "Merhaba dünya." --out_path speech.wav --device cpu
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · CPU · ~4GB
-uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/tr/common-voice/glow-tts --text "Merhaba dünya." --out_path speech.wav --device cpu
-```
+Official weights and documentation: [github.com/idiap](https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json)
 
 [interactive version](https://whatmodel.sh/model/coqui-tr-common-voice-glow-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

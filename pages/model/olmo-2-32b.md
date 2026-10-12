@@ -78,60 +78,85 @@ weighted average                                   = 49.3
 
 ## How to run it
 
-<pre>
-download                       size  score
-4-bit q4_k_s               ~18.42GB   49.3
-8-bit q8_0                 ~34.26GB   49.3
-4-bit mlx-4bit · mac only   ~18.1GB   49.3
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run OLMo 2 32B Instruct (0325) (Q4_K_S, needs ~18.42 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct-GGUF/tree/66b39389b9c7839798fb4c9b85c849f194ad8c67))
+   
+   ```sh
+   llama cli -hf allenai/OLMo-2-0325-32B-Instruct-GGUF:Q4_K_S
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf allenai/OLMo-2-0325-32B-Instruct-GGUF:Q4_K_S
+   ```
 
-```sh
-# 4-bit q4_k_s · ~18.42GB
-llama cli -hf allenai/OLMo-2-0325-32B-Instruct-GGUF:Q4_K_S
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf allenai/OLMo-2-0325-32B-Instruct-GGUF:Q4_K_S
-# 8-bit q8_0 · ~34.26GB
-llama cli -hf allenai/OLMo-2-0325-32B-Instruct-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf allenai/OLMo-2-0325-32B-Instruct-GGUF:Q8_0
-```
+Other versions: Q8_0 (~34.26 GB) `llama cli -hf allenai/OLMo-2-0325-32B-Instruct-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit q4_k_s · ~18.42GB
-lms get https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct-GGUF@Q4_K_S -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit q8_0 · ~34.26GB
-lms get https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~18.1GB
-lms get https://huggingface.co/mlx-community/OLMo-2-0325-32B-Instruct-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run OLMo 2 32B Instruct (0325) (Q4_K_S, needs ~18.42 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct-GGUF/tree/66b39389b9c7839798fb4c9b85c849f194ad8c67))
+   
+   ```sh
+   lms get https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct-GGUF@Q4_K_S -y
+   ```
 
-```sh
-# 4-bit q4_k_s · ~18.42GB
-ollama run hf.co/allenai/OLMo-2-0325-32B-Instruct-GGUF:Q4_K_S
-# 8-bit q8_0 · ~34.26GB
-ollama run hf.co/allenai/OLMo-2-0325-32B-Instruct-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~34.26 GB) `lms get https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct-GGUF@Q8_0 -y` · 4bit (~18.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/OLMo-2-0325-32B-Instruct-4bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~18.1GB
-mlx_lm.chat --model mlx-community/OLMo-2-0325-32B-Instruct-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/OLMo-2-0325-32B-Instruct-4bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run OLMo 2 32B Instruct (0325) (Q4_K_S, needs ~18.42 GB, from [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct-GGUF/tree/66b39389b9c7839798fb4c9b85c849f194ad8c67))
+   
+   ```sh
+   ollama run hf.co/allenai/OLMo-2-0325-32B-Instruct-GGUF:Q4_K_S
+   ```
+
+Other versions: Q8_0 (~34.26 GB) `ollama run hf.co/allenai/OLMo-2-0325-32B-Instruct-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run OLMo 2 32B Instruct (0325) (4bit, needs ~18.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/OLMo-2-0325-32B-Instruct-4bit/tree/bcf85817c3502e1f974b5abc586f1fc3f81b1632))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/OLMo-2-0325-32B-Instruct-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/OLMo-2-0325-32B-Instruct-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/olmo-2-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -16,13 +16,14 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
-### Run it on your own machine
+### Other ways to run it
 
-**Other engines**
+1. Run it as published (fp32 (microsoft/NeuralSpeech PriorGrad-acoustic repo, T=12 fast sampling), needs ~0.28 GB, NVIDIA only, from [github.com/microsoft](https://github.com/microsoft/NeuralSpeech/blob/8cf4fbcbf451c3affc68ecfa6c970327e927062f/PriorGrad-acoustic/README.md))
+   
+   ```sh
+   git clone https://github.com/microsoft/NeuralSpeech.git && cd NeuralSpeech/PriorGrad-acoustic && SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True pip install -r requirements.txt && git submodule init && git submodule update && wget https://huggingface.co/neuralspeech/priorgrad/resolve/main/ljspeech_hfg.zip && unzip ljspeech_hfg.zip -d data && wget https://huggingface.co/neuralspeech/priorgrad/resolve/main/priorgrad_am.zip && unzip priorgrad_am.zip -d checkpoints && mkdir hifigan_pretrained && curl -L -o hifigan_pretrained/generator_v1 'https://drive.usercontent.google.com/download?id=14NENd4equCBLyyCSke114Mv6YR_j_uFs&export=download&confirm=t' && curl -L -o hifigan_pretrained/config.json 'https://drive.usercontent.google.com/download?id=1aDh576AEYA5eTjhx7sew1qcCM_Y526jc&export=download&confirm=t' && CUDA_VISIBLE_DEVICES=0 PYTHONPATH=. python tasks/priorgrad_inference.py --config configs/tts/lj/priorgrad.yaml --exp_name priorgrad --reset --inference_text inference_text.txt --fast --fast_iter 12
+   ```
 
-```sh
-# fp32 (microsoft/NeuralSpeech PriorGrad-acoustic repo, T=12 fast sampling) · ~0.28GB
-git clone https://github.com/microsoft/NeuralSpeech.git && cd NeuralSpeech/PriorGrad-acoustic && SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True pip install -r requirements.txt && git submodule init && git submodule update && wget https://huggingface.co/neuralspeech/priorgrad/resolve/main/ljspeech_hfg.zip && unzip ljspeech_hfg.zip -d data && wget https://huggingface.co/neuralspeech/priorgrad/resolve/main/priorgrad_am.zip && unzip priorgrad_am.zip -d checkpoints && mkdir hifigan_pretrained && curl -L -o hifigan_pretrained/generator_v1 'https://drive.usercontent.google.com/download?id=14NENd4equCBLyyCSke114Mv6YR_j_uFs&export=download&confirm=t' && curl -L -o hifigan_pretrained/config.json 'https://drive.usercontent.google.com/download?id=1aDh576AEYA5eTjhx7sew1qcCM_Y526jc&export=download&confirm=t' && CUDA_VISIBLE_DEVICES=0 PYTHONPATH=. python tasks/priorgrad_inference.py --config configs/tts/lj/priorgrad.yaml --exp_name priorgrad --reset --inference_text inference_text.txt --fast --fast_iter 12
-```
+Official weights and documentation: [github.com/microsoft](https://github.com/microsoft/NeuralSpeech/tree/8cf4fbcbf451c3affc68ecfa6c970327e927062f/PriorGrad-acoustic)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/priorgrad-acoustic)

@@ -53,10 +53,10 @@ weighted average                                   = 65.7
 
 ## How to run it
 
+### Through an API
+
 api (Microsoft Azure) · $0.28/M blended · $0.2 in / $0.5 out per 1M tokens · [learn.microsoft.com](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure)
 
 <sub>[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/grok): USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (xAI Grok table), row 'Grok 4.1 Fast Global': input $0.20, output $0.50 (us-east; the amounts are in the page's price-data attributes). The row is not split by reasoning mode; Azure's Foundry models page lists grok-4.1-fast-non-reasoning and grok-4.1-fast-reasoning as separate deployable chat-completion models. Same price row as the catalogued grok-4-1-fast-reasoning. Microsoft Azure official pricing page, observed 2026-10-09. · [context source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure): Azure's Foundry models page lists grok-4.1-fast-non-reasoning with input text, image (128,000 tokens) and output text (128,000 tokens), observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/grok-4-1-fast-non-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

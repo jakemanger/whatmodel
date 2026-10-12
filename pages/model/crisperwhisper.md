@@ -45,20 +45,14 @@ weighted average                        = 47.2
 
 ## How to run it
 
-<pre>
-version    needs  score
-fp16     ~4.36GB   47.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~4.36 GB, from [huggingface.co/nyralabs](https://huggingface.co/nyralabs/CrisperWhisper))
+   
+   ```sh
+   uv run --with 'transformers @ git+https://github.com/nyrahealth/transformers.git@crisper_whisper' --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='nyrahealth/CrisperWhisper', chunk_length_s=30)('audio.wav')['text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · ~4.36GB
-uv run --with 'transformers @ git+https://github.com/nyrahealth/transformers.git@crisper_whisper' --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='nyrahealth/CrisperWhisper', chunk_length_s=30)('audio.wav')['text'])"
-```
+Official weights and documentation: [huggingface.co/nyralabs](https://huggingface.co/nyralabs/CrisperWhisper)
 
 [interactive version](https://whatmodel.sh/model/crisperwhisper) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -47,70 +47,93 @@ weighted average                                   = 2.6
 
 ## How to run it
 
-<sub>[context source](https://arxiv.org/abs/2304.01373v2): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit fp16                 ~0.37GB    2.6
-4-bit Q4_K_M                ~0.1GB    2.6
-8-bit Q8_0                  ~0.2GB    2.6
-4-bit mlx-fp16 · mac only   ~0.3GB    2.6
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Pythia 160M (Q4_K_M, needs ~0.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-160m-GGUF/tree/7a79d8f693376ce9f1ba21e2c0586c3bc874e68c))
+   
+   ```sh
+   llama cli -hf mradermacher/pythia-160m-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/pythia-160m-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~0.2 GB) `llama cli -hf mradermacher/pythia-160m-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~0.1GB
-llama cli -hf mradermacher/pythia-160m-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/pythia-160m-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~0.2GB
-llama cli -hf mradermacher/pythia-160m-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/pythia-160m-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~0.1GB
-lms get https://huggingface.co/mradermacher/pythia-160m-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~0.2GB
-lms get https://huggingface.co/mradermacher/pythia-160m-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-fp16 · mac only · ~0.3GB
-lms get https://huggingface.co/masahiroid/pythia-160m-mlx -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Pythia 160M (Q4_K_M, needs ~0.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-160m-GGUF/tree/7a79d8f693376ce9f1ba21e2c0586c3bc874e68c))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/pythia-160m-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~0.1GB
-ollama run hf.co/mradermacher/pythia-160m-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~0.2GB
-ollama run hf.co/mradermacher/pythia-160m-GGUF:Q8_0
-```
+Other versions: Q8_0 (~0.2 GB) `lms get https://huggingface.co/mradermacher/pythia-160m-GGUF@Q8_0 -y` · fp16 (~0.3 GB, Mac only) `lms get https://huggingface.co/masahiroid/pythia-160m-mlx -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-fp16 · mac only · ~0.3GB
-mlx_lm.chat --model masahiroid/pythia-160m-mlx
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model masahiroid/pythia-160m-mlx
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-**Other engines**
+2. Run Pythia 160M (Q4_K_M, needs ~0.1 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-160m-GGUF/tree/7a79d8f693376ce9f1ba21e2c0586c3bc874e68c))
+   
+   ```sh
+   ollama run hf.co/mradermacher/pythia-160m-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit fp16 · ~0.37GB
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-160m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Other versions: Q8_0 (~0.2 GB) `ollama run hf.co/mradermacher/pythia-160m-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Pythia 160M (fp16, needs ~0.3 GB, Mac only, from [huggingface.co/masahiroid](https://huggingface.co/masahiroid/pythia-160m-mlx/tree/423ac1eacd63a9b421143288136aaaf1f838fb74))
+   
+   ```sh
+   mlx_lm.chat --model masahiroid/pythia-160m-mlx
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model masahiroid/pythia-160m-mlx
+   ```
+
+### Other ways to run it
+
+1. Run it as published (fp16, needs ~0.37 GB, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-160m/tree/50f5173d932e8e61f858120bcb800b97af589f46))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-160m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-160m)
 
 [interactive version](https://whatmodel.sh/model/pythia-160m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

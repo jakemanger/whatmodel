@@ -45,24 +45,20 @@ weighted average                                   = 52.4
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.040/sec · [fal.ai](https://fal.ai/models/fal-ai/kandinsky5-pro/text-to-video)
 
 <sub>[price source](https://fal.ai/models/fal-ai/kandinsky5-pro/text-to-video): USD per video second at 512P (endpoint default) on fal.ai. Product: fal Kandinsky5 Pro text-to-video endpoint. API model: fal-ai/kandinsky5-pro/text-to-video (5-s clips). Price basis: rate printed by fal; 1024P $0.12 per video second. No Sber USD API tariff was used. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
-<pre>
-version                                   needs  score
-bf16 + model CPU offload · nvidia only  ~75.7GB   52.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 + MODEL CPU OFFLOAD, needs ~75.7 GB, NVIDIA only, from [huggingface.co/kandinskylab](https://huggingface.co/kandinskylab/Kandinsky-5.0-T2V-Pro-sft-5s-Diffusers/blob/e6ba8ead850da18b9cfcd698e9749c12d24794aa/README.md))
+   
+   ```sh
+   uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c "import torch; from diffusers import Kandinsky5T2VPipeline; from diffusers.utils import export_to_video; p=Kandinsky5T2VPipeline.from_pretrained('kandinskylab/Kandinsky-5.0-T2V-Pro-sft-5s-Diffusers', torch_dtype=torch.bfloat16); p.transformer.set_attention_backend('flex'); p.enable_model_cpu_offload(); export_to_video(p(prompt='A cat and a dog baking a cake together in a kitchen.', negative_prompt='Static, 2D cartoon, cartoon, 2d animation, paintings, images, worst quality, low quality, ugly, deformed, walking backwards', height=768, width=1024, num_frames=121, num_inference_steps=50, guidance_scale=5.0).frames[0], 'output.mp4', fps=24, quality=9)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 + model CPU offload · nvidia only · ~75.7GB
-uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c "import torch; from diffusers import Kandinsky5T2VPipeline; from diffusers.utils import export_to_video; p=Kandinsky5T2VPipeline.from_pretrained('kandinskylab/Kandinsky-5.0-T2V-Pro-sft-5s-Diffusers', torch_dtype=torch.bfloat16); p.transformer.set_attention_backend('flex'); p.enable_model_cpu_offload(); export_to_video(p(prompt='A cat and a dog baking a cake together in a kitchen.', negative_prompt='Static, 2D cartoon, cartoon, 2d animation, paintings, images, worst quality, low quality, ugly, deformed, walking backwards', height=768, width=1024, num_frames=121, num_inference_steps=50, guidance_scale=5.0).frames[0], 'output.mp4', fps=24, quality=9)"
-```
+Official weights and documentation: [github.com/kandinskylab](https://github.com/kandinskylab/kandinsky-5)
 
 [interactive version](https://whatmodel.sh/model/kandinsky-5-0-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

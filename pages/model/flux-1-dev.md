@@ -73,46 +73,23 @@ weighted average                                   = 44.1
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/black-forest-labs/flux-dev)
 
 <sub>[price source](https://bertrande.com/en/ai/replicate/black-forest-labs--flux-dev): USD per output image. Text-to-image; one output image, standard FLUX.1 dev endpoint. Replicate output/character billing; hardware-time rates are not added to this tariff. Taxes and separate services excluded. Bertrande, https://bertrande.com/en/ai/replicate/black-forest-labs--flux-dev; observed 2026-09-20T01:44:15Z. CC BY 4.0; units normalized and model identifier mapped.</sub>
 
-<pre>
-version                                  needs  score
-bf16 · nvidia only                     ~29.3GB   44.1
-fp8 (layerwise casting) · nvidia only   ~7.7GB   44.1
-bnb-8bit · nvidia only                 ~14.9GB   44.1
-nf4 (bnb-4bit) · nvidia only            ~7.7GB   44.1
-gguf-q8_0                              ~28.4GB   44.1
-gguf-q4_0                              ~21.3GB   44.1
-mlx-4bit · mac only                     ~7.7GB   44.1
-bf16 · mac only                        ~29.3GB   44.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (nf4 (bnb-4bit), needs ~7.7 GB, NVIDIA only, from [huggingface.co/blog](https://huggingface.co/blog/diffusers-quantization))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import FluxPipeline, PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_4bit', quant_kwargs={'load_in_4bit':True,'bnb_4bit_quant_type':'nf4','bnb_4bit_compute_dtype':torch.bfloat16}, components_to_quantize=['transformer','text_encoder_2']); p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', quantization_config=q, torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~29.3 GB, NVIDIA only) `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"` · fp8 (layerwise casting) (~7.7 GB, NVIDIA only) `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', torch_dtype=torch.bfloat16); p.transformer.enable_layerwise_casting(storage_dtype=torch.float8_e4m3fn, compute_dtype=torch.bfloat16); p.to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"` · bnb-8bit (~14.9 GB, NVIDIA only) `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import FluxPipeline, PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_8bit', quant_kwargs={'load_in_8bit':True}, components_to_quantize=['transformer','text_encoder_2']); p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', quantization_config=q, torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"` · gguf-q8_0 (~28.4 GB) `sd-cli --diffusion-model models/flux1-dev-q8_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu` · gguf-q4_0 (~21.3 GB) `sd-cli --diffusion-model models/flux1-dev-q4_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu` · 4bit (~7.7 GB, Mac only) `uvx --from mflux mflux-generate --model dev --prompt "a cat holding a sign" --steps 20 -q 4` · BF16 (~29.3 GB, Mac only) `uvx --from mflux mflux-generate --model dev --prompt "a cat holding a sign" --steps 20`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~29.3GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"
-# fp8 (layerwise casting) · nvidia only · ~7.7GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', torch_dtype=torch.bfloat16); p.transformer.enable_layerwise_casting(storage_dtype=torch.float8_e4m3fn, compute_dtype=torch.bfloat16); p.to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"
-# bnb-8bit · nvidia only · ~14.9GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import FluxPipeline, PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_8bit', quant_kwargs={'load_in_8bit':True}, components_to_quantize=['transformer','text_encoder_2']); p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', quantization_config=q, torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"
-# nf4 (bnb-4bit) · nvidia only · ~7.7GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import FluxPipeline, PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_4bit', quant_kwargs={'load_in_4bit':True,'bnb_4bit_quant_type':'nf4','bnb_4bit_compute_dtype':torch.bfloat16}, components_to_quantize=['transformer','text_encoder_2']); p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', quantization_config=q, torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"
-# gguf-q8_0 · ~28.4GB
-sd-cli --diffusion-model models/flux1-dev-q8_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu
-# gguf-q4_0 · ~21.3GB
-sd-cli --diffusion-model models/flux1-dev-q4_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu
-# mlx-4bit · mac only · ~7.7GB
-uvx --from mflux mflux-generate --model dev --prompt "a cat holding a sign" --steps 20 -q 4
-# bf16 · mac only · ~29.3GB
-uvx --from mflux mflux-generate --model dev --prompt "a cat holding a sign" --steps 20
-```
+Official weights and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.1-dev)
 
 ## Published speed measurements
 

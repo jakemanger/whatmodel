@@ -45,8 +45,8 @@ weighted average                                   = 54.6
 
 ## How to run it
 
-api (Cartesia) · price unknown · [docs.cartesia.ai](https://docs.cartesia.ai/build-with-cartesia/stt-models/older-models)
+### Through an API
 
-no verified local download listed
+api (Cartesia) · price unknown · [docs.cartesia.ai](https://docs.cartesia.ai/build-with-cartesia/stt-models/older-models)
 
 [interactive version](https://whatmodel.sh/model/cartesia-ink-whisper) · [JSON](https://whatmodel.sh/api?format=json&all=1)

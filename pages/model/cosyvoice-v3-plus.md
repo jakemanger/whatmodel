@@ -42,10 +42,10 @@ weighted average                        = 58.0
 
 ## How to run it
 
+### Through an API
+
 api (Alibaba Cloud Model Studio) · $26.00/M chars · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
 <sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per 1M characters: Model Studio lists cosyvoice-v3-plus at $0.26 per 10,000 input characters, International (Singapore) deployment; output free (x100). Each Chinese character counts as 2 characters. Product: Alibaba Cloud Model Studio speech synthesis. API model: cosyvoice-v3-plus. Settings: International deployment. Price basis: published list rate. Exclusions: free quota; China (Beijing) lists $0.286706 per 10,000. Currency: USD. Alibaba Cloud official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/cosyvoice-v3-plus) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -40,76 +40,95 @@ weighted average                        = 57.0
 
 ## How to run it
 
-<pre>
-download                       size  score
-16-bit bf16                ~65.53GB   57.0
-4-bit Q4_K_M                ~19.9GB   57.0
-8-bit Q8_0                  ~34.8GB   57.0
-4-bit mlx-4bit · mac only   ~18.4GB   57.0
-4-bit mlx-8bit · mac only   ~34.8GB   57.0
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run QwenLong-L1-32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/QwenLong-L1-32B-GGUF/tree/4f72194efadeac2249777ce14a11253bd1f132a1))
+   
+   ```sh
+   llama cli -hf mradermacher/QwenLong-L1-32B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/QwenLong-L1-32B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~19.9GB
-llama cli -hf mradermacher/QwenLong-L1-32B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/QwenLong-L1-32B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.8GB
-llama cli -hf mradermacher/QwenLong-L1-32B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/QwenLong-L1-32B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~34.8 GB) `llama cli -hf mradermacher/QwenLong-L1-32B-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~19.9GB
-lms get https://huggingface.co/mradermacher/QwenLong-L1-32B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~34.8GB
-lms get https://huggingface.co/mradermacher/QwenLong-L1-32B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~18.4GB
-lms get https://huggingface.co/cnfusion/QwenLong-L1-32B-mlx-4Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~34.8GB
-lms get https://huggingface.co/WaveCut/QwenLong-L1-32B-mlx-8Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run QwenLong-L1-32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/QwenLong-L1-32B-GGUF/tree/4f72194efadeac2249777ce14a11253bd1f132a1))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/QwenLong-L1-32B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~19.9GB
-ollama run hf.co/mradermacher/QwenLong-L1-32B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.8GB
-ollama run hf.co/mradermacher/QwenLong-L1-32B-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~34.8 GB) `lms get https://huggingface.co/mradermacher/QwenLong-L1-32B-GGUF@Q8_0 -y` · 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/cnfusion/QwenLong-L1-32B-mlx-4Bit -y` · 8bit (~34.8 GB, Mac only) `lms get https://huggingface.co/WaveCut/QwenLong-L1-32B-mlx-8Bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~18.4GB
-mlx_lm.chat --model cnfusion/QwenLong-L1-32B-mlx-4Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model cnfusion/QwenLong-L1-32B-mlx-4Bit
-# 4-bit mlx-8bit · mac only · ~34.8GB
-mlx_lm.chat --model WaveCut/QwenLong-L1-32B-mlx-8Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model WaveCut/QwenLong-L1-32B-mlx-8Bit
-```
+### Ollama
 
-**Other engines**
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 16-bit bf16 · ~65.53GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Tongyi-Zhiwen/QwenLong-L1-32B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+2. Run QwenLong-L1-32B (Q4_K_M, needs ~19.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/QwenLong-L1-32B-GGUF/tree/4f72194efadeac2249777ce14a11253bd1f132a1))
+   
+   ```sh
+   ollama run hf.co/mradermacher/QwenLong-L1-32B-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~34.8 GB) `ollama run hf.co/mradermacher/QwenLong-L1-32B-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run QwenLong-L1-32B (4bit, needs ~18.4 GB, Mac only, from [huggingface.co/cnfusion](https://huggingface.co/cnfusion/QwenLong-L1-32B-mlx-4Bit/tree/9dad190225be34357cb367b8f479090336cd158c))
+   
+   ```sh
+   mlx_lm.chat --model cnfusion/QwenLong-L1-32B-mlx-4Bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model cnfusion/QwenLong-L1-32B-mlx-4Bit
+   ```
+
+Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model WaveCut/QwenLong-L1-32B-mlx-8Bit`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~65.53 GB, from [huggingface.co/Tongyi-Zhiwen](https://huggingface.co/Tongyi-Zhiwen/QwenLong-L1-32B/tree/a232c10eec63ed2d1c24bff6fa1eeef5ce61a1b2))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Tongyi-Zhiwen/QwenLong-L1-32B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/Tongyi-Zhiwen](https://huggingface.co/Tongyi-Zhiwen/QwenLong-L1-32B)
 
 [interactive version](https://whatmodel.sh/model/qwenlong-l1-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -90,76 +90,87 @@ weighted average                                   = 67.7
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/ornith-ai/Ornith-1.0-35B/blob/5df2ed3f675c7beaa490328cc70bb573b65fb660/README.md): Maker card serving recipes: '--max-model-len 262144' (vLLM) / '--context-length 262144' (SGLang); ollama lists a 256K context window. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_k_m                 ~21GB   67.7
-8-bit q8_0                   ~37GB   67.7
-4-bit Q4_K_M               ~21.2GB   67.7
-8-bit Q8_0                 ~36.9GB   67.7
-4-bit mlx-4bit · mac only  ~20.4GB   67.7
-4-bit mlx-8bit · mac only  ~37.7GB   67.7
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Ornith 1.0 35B (35B-A3B) (Q4_K_M, needs ~21.2 GB, from [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF/tree/383064f72a1ef3087b779f268d3ca117eb989aac))
+   
+   ```sh
+   llama cli -hf ornith-ai/Ornith-1.0-35B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf ornith-ai/Ornith-1.0-35B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~36.9 GB) `llama cli -hf ornith-ai/Ornith-1.0-35B-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~21.2GB
-llama cli -hf ornith-ai/Ornith-1.0-35B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf ornith-ai/Ornith-1.0-35B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~36.9GB
-llama cli -hf ornith-ai/Ornith-1.0-35B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf ornith-ai/Ornith-1.0-35B-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~21.2GB
-lms get https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~36.9GB
-lms get https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~20.4GB
-lms get https://huggingface.co/lmstudio-community/Ornith-1.0-35B-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~37.7GB
-lms get https://huggingface.co/lmstudio-community/Ornith-1.0-35B-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Ornith 1.0 35B (35B-A3B) (Q4_K_M, needs ~21.2 GB, from [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF/tree/383064f72a1ef3087b779f268d3ca117eb989aac))
+   
+   ```sh
+   lms get https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~21GB
-ollama run ornith:35b
-# 8-bit q8_0 · ~37GB
-ollama run ornith:35b-q8_0
-# 4-bit Q4_K_M · ~21.2GB
-ollama run hf.co/ornith-ai/Ornith-1.0-35B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~36.9GB
-ollama run hf.co/ornith-ai/Ornith-1.0-35B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~36.9 GB) `lms get https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF@Q8_0 -y` · 4bit (~20.4 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Ornith-1.0-35B-MLX-4bit -y` · 8bit (~37.7 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Ornith-1.0-35B-MLX-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~20.4GB
-mlx_lm.chat --model lmstudio-community/Ornith-1.0-35B-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Ornith-1.0-35B-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~37.7GB
-mlx_lm.chat --model lmstudio-community/Ornith-1.0-35B-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Ornith-1.0-35B-MLX-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Ornith 1.0 35B (35B-A3B) (Q4_K_M, needs ~21 GB, from [ollama.com](https://ollama.com/library/ornith/tags))
+   
+   ```sh
+   ollama run ornith:35b
+   ```
+
+Other versions: Q8_0 (~37 GB) `ollama run ornith:35b-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Ornith 1.0 35B (35B-A3B) (4bit, needs ~20.4 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Ornith-1.0-35B-MLX-4bit/tree/f5d815a19138fc9a75091688303a4abb959ac408))
+   
+   ```sh
+   mlx_lm.chat --model lmstudio-community/Ornith-1.0-35B-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lmstudio-community/Ornith-1.0-35B-MLX-4bit
+   ```
+
+Other versions: 8bit (~37.7 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Ornith-1.0-35B-MLX-8bit`
+
+Official weights and documentation: [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.0-35B)
 
 [interactive version](https://whatmodel.sh/model/ornith-1-0-35b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

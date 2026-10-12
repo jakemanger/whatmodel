@@ -109,8 +109,6 @@ weighted average                                   = 81.3
 
 ## How to run it
 
-<sub>[context source](https://platform.claude.com/docs/en/about-claude/pricing): Anthropic pricing page, 'Long context pricing': 'Claude 4.6 and later models (except Claude Haiku 5.5) and Claude Mythos Preview include the full 1M token context window at standard pricing'. Observed 2026-10-09.</sub>
-
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/claude-mythos-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

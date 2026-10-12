@@ -132,71 +132,76 @@ weighted average                        = 69.4
 
 ## How to run it
 
+### Through an API
+
 api (Together AI) · $1.35/M blended · $0.6 in / $3.6 out per 1M tokens · [docs.together.ai](https://docs.together.ai/docs/serverless-models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/togetherai/models/nvidia/nemotron-3-ultra-550b-a55b.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-3-ultra-550b-a55b.toml)</sub>
 
-<pre>
-download                       size  score
-4-bit ud-q4_k_xl           ~330.5GB   69.4
-2-bit ud-q2_k_xl           ~165.5GB   69.4
-1-bit ud-iq1_m                ~83GB   69.4
-4-bit mlx-4bit · mac only  ~309.3GB   69.4
-4-bit mlx-8bit · mac only  ~583.8GB   69.4
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Nemotron 3 Ultra 550B-A55B (ud-q4_k_xl, needs ~330.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q4_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q4_K_XL
+   ```
 
-```sh
-# 4-bit ud-q4_k_xl · ~330.5GB
-llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q4_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl · ~165.5GB
-llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q2_K_XL
-# 1-bit ud-iq1_m · ~83GB
-llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-IQ1_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-IQ1_M
-```
+Other versions: ud-q2_k_xl (~165.5 GB) `llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q2_K_XL` · ud-iq1_m (~83 GB) `llama cli -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-IQ1_M`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit ud-q4_k_xl · ~330.5GB
-lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-Q4_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit ud-q2_k_xl · ~165.5GB
-lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 1-bit ud-iq1_m · ~83GB
-lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-IQ1_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~309.3GB
-lms get https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~583.8GB
-lms get https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+2. Run Nemotron 3 Ultra 550B-A55B (ud-q4_k_xl, needs ~330.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF/tree/main))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-Q4_K_XL -y
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~309.3GB
-mlx_lm.chat --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~583.8GB
-mlx_lm.chat --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-8bit
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: ud-q2_k_xl (~165.5 GB) `lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-Q2_K_XL -y` · ud-iq1_m (~83 GB) `lms get https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF@UD-IQ1_M -y` · 4bit (~309.3 GB, Mac only) `lms get https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit -y` · 8bit (~583.8 GB, Mac only) `lms get https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-8bit -y`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Nemotron 3 Ultra 550B-A55B (4bit, needs ~309.3 GB, Mac only, from [huggingface.co/pipenetwork](https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit/tree/d64007dfeb7eb87eba579f34fdb03cf329077fd8))
+   
+   ```sh
+   mlx_lm.chat --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-4bit
+   ```
+
+Other versions: 8bit (~583.8 GB, Mac only) `mlx_lm.chat --model pipenetwork/NVIDIA-Nemotron-3-Ultra-550B-A55B-MLX-8bit`
+
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16)
 
 [interactive version](https://whatmodel.sh/model/nemotron-3-ultra-550b-a55b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

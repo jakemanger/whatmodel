@@ -163,6 +163,6 @@ weighted average                                   = 65.3
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/claude-3-7-sonnet-20250219) · [JSON](https://whatmodel.sh/api?format=json&all=1)

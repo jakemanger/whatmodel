@@ -93,63 +93,76 @@ weighted average                                   = 65.9
 
 ## How to run it
 
+### Through an API
+
 api (MiniMax) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [platform.minimax.io](https://platform.minimax.io/docs/guides/text-generation)
 
 <sub>[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md): USD per 1M tokens, MiniMax Open Platform pay-as-you-go, MiniMax-M2.5 (listed under 'Legacy Models'): input $0.3, output $1.2. Prompt-cache read $0.03 and write $0.375, and MiniMax-M2.5-highspeed ($0.6/$2.4) excluded. Currency: USD. MiniMax pay-as-you-go pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/minimax/MiniMax-M2.5.toml)</sub>
 
-<pre>
-download                       size  score
-4-bit ud-q4_k_xl           ~138.5GB   65.9
-2-bit ud-q2_k_xl            ~69.5GB   65.9
-4-bit mlx-4bit · mac only  ~128.7GB   65.9
-4-bit mlx-8bit · mac only    ~243GB   65.9
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run MiniMax-M2.5 (ud-q4_k_xl, needs ~138.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiniMax-M2.5-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/MiniMax-M2.5-GGUF:UD-Q4_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/MiniMax-M2.5-GGUF:UD-Q4_K_XL
+   ```
 
-```sh
-# 4-bit ud-q4_k_xl · ~138.5GB
-llama cli -hf unsloth/MiniMax-M2.5-GGUF:UD-Q4_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/MiniMax-M2.5-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl · ~69.5GB
-llama cli -hf unsloth/MiniMax-M2.5-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/MiniMax-M2.5-GGUF:UD-Q2_K_XL
-```
+Other versions: ud-q2_k_xl (~69.5 GB) `llama cli -hf unsloth/MiniMax-M2.5-GGUF:UD-Q2_K_XL`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit ud-q4_k_xl · ~138.5GB
-lms get https://huggingface.co/unsloth/MiniMax-M2.5-GGUF@UD-Q4_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit ud-q2_k_xl · ~69.5GB
-lms get https://huggingface.co/unsloth/MiniMax-M2.5-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~128.7GB
-lms get https://huggingface.co/lmstudio-community/MiniMax-M2.5-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~243GB
-lms get https://huggingface.co/lmstudio-community/MiniMax-M2.5-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+2. Run MiniMax-M2.5 (ud-q4_k_xl, needs ~138.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/MiniMax-M2.5-GGUF/tree/main))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/MiniMax-M2.5-GGUF@UD-Q4_K_XL -y
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~128.7GB
-mlx_lm.chat --model lmstudio-community/MiniMax-M2.5-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/MiniMax-M2.5-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~243GB
-mlx_lm.chat --model lmstudio-community/MiniMax-M2.5-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/MiniMax-M2.5-MLX-8bit
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: ud-q2_k_xl (~69.5 GB) `lms get https://huggingface.co/unsloth/MiniMax-M2.5-GGUF@UD-Q2_K_XL -y` · 4bit (~128.7 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/MiniMax-M2.5-MLX-4bit -y` · 8bit (~243 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/MiniMax-M2.5-MLX-8bit -y`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run MiniMax-M2.5 (4bit, needs ~128.7 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/MiniMax-M2.5-MLX-4bit/tree/9af822e97aaa5d3d8f9a635ec2b967b0c0a9a09f))
+   
+   ```sh
+   mlx_lm.chat --model lmstudio-community/MiniMax-M2.5-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lmstudio-community/MiniMax-M2.5-MLX-4bit
+   ```
+
+Other versions: 8bit (~243 GB, Mac only) `mlx_lm.chat --model lmstudio-community/MiniMax-M2.5-MLX-8bit`
+
+Official weights and documentation: [huggingface.co/MiniMaxAI](https://huggingface.co/MiniMaxAI/MiniMax-M2.5)
 
 [interactive version](https://whatmodel.sh/model/minimax-m2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -80,55 +80,62 @@ weighted average                                   = 36.2
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/ibm-granite/granite-3.1-2b-instruct/blob/bbc2aed595bd38bd770263dc3ab831db9794441d/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download         size  score
-4-bit q4_k_m  ~2.02GB   36.2
-8-bit q8_0    ~3.54GB   36.2
-4-bit Q4_K_M   ~1.5GB   36.2
-8-bit Q8_0     ~2.7GB   36.2
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Granite 3.1 2B Instruct (Q4_K_M, needs ~1.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-3.1-2b-instruct-GGUF/tree/b1c08369dcf04fb238a116f647fba35a9a03f978))
+   
+   ```sh
+   llama cli -hf lmstudio-community/granite-3.1-2b-instruct-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/granite-3.1-2b-instruct-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~2.7 GB) `llama cli -hf lmstudio-community/granite-3.1-2b-instruct-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~1.5GB
-llama cli -hf lmstudio-community/granite-3.1-2b-instruct-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/granite-3.1-2b-instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~2.7GB
-llama cli -hf lmstudio-community/granite-3.1-2b-instruct-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/granite-3.1-2b-instruct-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~1.5GB
-lms get https://huggingface.co/lmstudio-community/granite-3.1-2b-instruct-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~2.7GB
-lms get https://huggingface.co/lmstudio-community/granite-3.1-2b-instruct-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Granite 3.1 2B Instruct (Q4_K_M, needs ~1.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/granite-3.1-2b-instruct-GGUF/tree/b1c08369dcf04fb238a116f647fba35a9a03f978))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/granite-3.1-2b-instruct-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~2.02GB
-ollama run granite3.1-dense:2b-instruct-q4_K_M
-# 8-bit q8_0 · ~3.54GB
-ollama run granite3.1-dense:2b-instruct-q8_0
-# 4-bit Q4_K_M · ~1.5GB
-ollama run hf.co/lmstudio-community/granite-3.1-2b-instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~2.7GB
-ollama run hf.co/lmstudio-community/granite-3.1-2b-instruct-GGUF:Q8_0
-```
+Other versions: Q8_0 (~2.7 GB) `lms get https://huggingface.co/lmstudio-community/granite-3.1-2b-instruct-GGUF@Q8_0 -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Granite 3.1 2B Instruct (Q4_K_M, needs ~2.02 GB, from [ollama.com](https://ollama.com/library/granite3.1-dense/tags))
+   
+   ```sh
+   ollama run granite3.1-dense:2b-instruct-q4_K_M
+   ```
+
+Other versions: Q8_0 (~3.54 GB) `ollama run granite3.1-dense:2b-instruct-q8_0`
+
+Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.1-2b-instruct)
 
 [interactive version](https://whatmodel.sh/model/granite-3-1-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

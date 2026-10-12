@@ -82,48 +82,53 @@ weighted average                                   = 75.7
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/config.json): config.json max\_position\_embeddings 1,048,576 at the pinned revision (the card states no context length). Observed 2026-10-09.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit ud-q4_k_xl         ~156.03GB   75.7
-2-bit ud-q2_k_xl          ~97.76GB   75.7
-4-bit fp8 · nvidia only  ~167.82GB   75.7
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run DeepSeek V4 Flash Vision (Exp) (ud-q4_k_xl, needs ~156.03 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF/tree/87ce15810931a270f165e5e50439cd446f6b4ba5))
+   
+   ```sh
+   llama cli -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q4_K_XL
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q4_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: ud-q2_k_xl (~97.76 GB) `llama cli -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q2_K_XL`
 
-```sh
-# 4-bit ud-q4_k_xl · ~156.03GB
-llama cli -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q4_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl · ~97.76GB
-llama cli -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q2_K_XL
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit ud-q4_k_xl · ~156.03GB
-lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF@UD-Q4_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit ud-q2_k_xl · ~97.76GB
-lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run DeepSeek V4 Flash Vision (Exp) (ud-q4_k_xl, needs ~156.03 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF/tree/87ce15810931a270f165e5e50439cd446f6b4ba5))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF@UD-Q4_K_XL -y
+   ```
 
-**Other engines**
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit fp8 · nvidia only · ~167.82GB
-sglang serve --model-path deepseek-ai/DeepSeek-V4-Flash-Vision-Exp --tp 4 --speculative-algorithm DSPARK
-```
+Other versions: ud-q2_k_xl (~97.76 GB) `lms get https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF@UD-Q2_K_XL -y`
+
+### Other ways to run it
+
+1. Run it as published (fp8, needs ~167.82 GB, NVIDIA only, from [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/tree/6821d6ad3681a4b137b066b76094fa82ebd0a380))
+   
+   ```sh
+   sglang serve --model-path deepseek-ai/DeepSeek-V4-Flash-Vision-Exp --tp 4 --speculative-algorithm DSPARK
+   ```
+
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v4-flash-vision-exp) · [JSON](https://whatmodel.sh/api?format=json&all=1)

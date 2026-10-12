@@ -58,20 +58,14 @@ weighted average                                   = 63.2
 
 ## How to run it
 
-<pre>
-version                        needs  score
-bf16 (transformers &gt;=5.4.0)  ~4.13GB   63.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (TRANSFORMERS >=5.4.0), needs ~4.13 GB, from [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026/blob/c3e911b42149bf7a1e53d5cef9878aee87515a23/README.md))
+   
+   ```sh
+   uv run --with 'transformers>=5.4.0' --with torch --with huggingface_hub --with soundfile --with librosa --with sentencepiece --with protobuf --with accelerate python -c "from transformers import AutoProcessor, CohereAsrForConditionalGeneration; from transformers.audio_utils import load_audio; processor = AutoProcessor.from_pretrained('CohereLabs/cohere-transcribe-arabic-07-2026'); model = CohereAsrForConditionalGeneration.from_pretrained('CohereLabs/cohere-transcribe-arabic-07-2026', device_map='auto'); audio = load_audio('audio.wav', sampling_rate=16000); inputs = processor(audio, sampling_rate=16000, return_tensors='pt', language='ar'); inputs.to(model.device, dtype=model.dtype); outputs = model.generate(**inputs, max_new_tokens=256); print(processor.decode(outputs, skip_special_tokens=True))"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (transformers >=5.4.0) · ~4.13GB
-uv run --with 'transformers>=5.4.0' --with torch --with huggingface_hub --with soundfile --with librosa --with sentencepiece --with protobuf --with accelerate python -c "from transformers import AutoProcessor, CohereAsrForConditionalGeneration; from transformers.audio_utils import load_audio; processor = AutoProcessor.from_pretrained('CohereLabs/cohere-transcribe-arabic-07-2026'); model = CohereAsrForConditionalGeneration.from_pretrained('CohereLabs/cohere-transcribe-arabic-07-2026', device_map='auto'); audio = load_audio('audio.wav', sampling_rate=16000); inputs = processor(audio, sampling_rate=16000, return_tensors='pt', language='ar'); inputs.to(model.device, dtype=model.dtype); outputs = model.generate(**inputs, max_new_tokens=256); print(processor.decode(outputs, skip_special_tokens=True))"
-```
+Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026)
 
 [interactive version](https://whatmodel.sh/model/cohere-transcribe-arabic-07-2026) · [JSON](https://whatmodel.sh/api?format=json&all=1)

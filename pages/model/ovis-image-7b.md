@@ -45,23 +45,16 @@ weighted average                        = 47.5
 
 ## How to run it
 
-<pre>
-version                          needs  score
-bf16 · nvidia only               ~20GB   47.5
-gguf-q4_0 + Ovis 2.5 (sd.cpp)  ~12.1GB   47.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf-q4_0 + Ovis 2.5 (sd.cpp), needs ~12.1 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ovis_image.md))
+   
+   ```sh
+   sd-cli --diffusion-model models/ovis_image-Q4_0.gguf --vae models/ae.safetensors --llm models/ovis_2.5.safetensors -p "a lovely cat" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~20 GB, NVIDIA only) `uv run --with 'diffusers>=0.36.0' --with transformers --with accelerate --with torch python -c "import torch; from diffusers import OvisImagePipeline; p=OvisImagePipeline.from_pretrained('ATH-MaaS/Ovis-Image-7B', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', negative_prompt='', num_inference_steps=50, guidance_scale=5.0).images[0].save('out.png')"`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~20GB
-uv run --with 'diffusers>=0.36.0' --with transformers --with accelerate --with torch python -c "import torch; from diffusers import OvisImagePipeline; p=OvisImagePipeline.from_pretrained('ATH-MaaS/Ovis-Image-7B', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', negative_prompt='', num_inference_steps=50, guidance_scale=5.0).images[0].save('out.png')"
-# gguf-q4_0 + Ovis 2.5 (sd.cpp) · ~12.1GB
-sd-cli --diffusion-model models/ovis_image-Q4_0.gguf --vae models/ae.safetensors --llm models/ovis_2.5.safetensors -p "a lovely cat" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa
-```
+Official weights and documentation: [huggingface.co/ATH-MaaS](https://huggingface.co/ATH-MaaS/Ovis-Image-7B)
 
 [interactive version](https://whatmodel.sh/model/ovis-image-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

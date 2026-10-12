@@ -43,8 +43,8 @@ weighted average                                   = 42.9
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · price unknown · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference)
+### Through an API
 
-no verified local download listed
+api (Alibaba Cloud Model Studio) · price unknown · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference)
 
 [interactive version](https://whatmodel.sh/model/wan-2-1-i2v-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

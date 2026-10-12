@@ -65,10 +65,10 @@ weighted average                                   = 87.9
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.013/image · [fal.ai](https://fal.ai/models/openai/gpt-image-2.5/flare/text-to-image)
 
 <sub>[price source](https://fal.ai/models/openai/gpt-image-2.5/flare/text-to-image): USD per generated image, 1024×1024 medium quality: fal's per-size/per-quality table for ChatGPT Images 2.5 on this endpoint lists 1024×1024 at low $0.00588, medium $0.01317, high $0.05268, xhigh $0.09366, max $0.21072 (fal default quality is high). Product: fal.ai proxy of the OpenAI image model. API model: openai/gpt-image-2.5/flare/text-to-image (OpenAI gpt-image-2.5-flare). Settings: 1024×1024, quality=medium, num\_images=1. Price basis: fal's own published per-image figure (fal bills tokens underneath at $5/1M text input and $8/$30 per 1M image input/output tokens; fal states longer or more complex prompts cost more, so input text tokens are additional). Not an OpenAI direct tariff (OpenAI publishes token prices only). Currency: USD. fal.ai official model page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-image-2-5-flare) · [JSON](https://whatmodel.sh/api?format=json&all=1)

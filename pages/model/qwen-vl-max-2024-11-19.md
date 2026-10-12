@@ -43,6 +43,6 @@ weighted average                        = 51.9
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/qwen-vl-max-2024-11-19) · [JSON](https://whatmodel.sh/api?format=json&all=1)

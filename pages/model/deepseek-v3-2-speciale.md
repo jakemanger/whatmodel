@@ -53,6 +53,8 @@ weighted average                                   = 75.8
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale)
 
 [interactive version](https://whatmodel.sh/model/deepseek-v3-2-speciale) · [JSON](https://whatmodel.sh/api?format=json&all=1)

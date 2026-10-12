@@ -63,24 +63,20 @@ weighted average                                   = 46.6
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.050/image · [fal.ai](https://fal.ai/models/fal-ai/hidream-i1-full)
 
 <sub>[price source](https://fal.ai/models/fal-ai/hidream-i1-full): USD for one 1-megapixel output: fal bills this endpoint $0.05 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hidream-i1-full (HiDream I1 Full, 17B; the dev and fast endpoints are separate). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a HiDream direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~76.4GB   46.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~76.4 GB, NVIDIA only, from [huggingface.co/HiDream-ai](https://huggingface.co/HiDream-ai/HiDream-I1-Full/blob/8ccbbfb270ccdae26d6bb0081df67dc81e4033bf/README.md))
+   
+   ```sh
+   git clone https://github.com/HiDream-ai/HiDream-I1 && cd HiDream-I1 && pip install -r requirements.txt && python ./inference.py --model_type full
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~76.4GB
-git clone https://github.com/HiDream-ai/HiDream-I1 && cd HiDream-I1 && pip install -r requirements.txt && python ./inference.py --model_type full
-```
+Official weights and documentation: [huggingface.co/HiDream-ai](https://huggingface.co/HiDream-ai/HiDream-I1-Full)
 
 [interactive version](https://whatmodel.sh/model/hidream-i1-full) · [JSON](https://whatmodel.sh/api?format=json&all=1)

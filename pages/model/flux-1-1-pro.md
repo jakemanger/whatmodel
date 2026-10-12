@@ -74,10 +74,10 @@ weighted average                                   = 45.6
 
 ## How to run it
 
+### Through an API
+
 api (Black Forest Labs) · $0.040/image · [docs.bfl.ai](https://docs.bfl.ai/quick_start/pricing)
 
 <sub>[price source](https://bfl.ai/pricing): USD per generated image, flat: BFL lists FLUX 1.1 \[pro\] at $0.04 per image (4 credits at $0.01); Ultra and Raw modes are $0.06. Product: BFL API. API model: flux-pro-1.1. Settings: standard mode (not Ultra/Raw), text-to-image, one image. Price basis: published per-image list rate. BFL's docs list FLUX1.1 \[pro\] under "Legacy Models" / "FLUX.1 Models (Previous Generation)"; still sold, no end date published. Currency: USD. Black Forest Labs official pricing page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/flux-1-1-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

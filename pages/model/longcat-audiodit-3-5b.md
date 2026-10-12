@@ -63,20 +63,14 @@ weighted average                                   = 65.8
 
 ## How to run it
 
-<pre>
-version                                      needs  score
-fp32 weights (official LongCat-AudioDiT…  ~15.34GB   65.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 weights (official LongCat-AudioDiT repo, transformers>=5.3), needs ~15.34 GB, from [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md))
+   
+   ```sh
+   git clone https://github.com/meituan-longcat/LongCat-AudioDiT.git && cd LongCat-AudioDiT && pip install -r requirements.txt && python inference.py --text "Today is a sunny day, let's go for a walk in the park." --output_audio output.wav --model_dir meituan-longcat/LongCat-AudioDiT-3.5B
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 weights (official LongCat-AudioDiT repo, transformers>=5.3) · ~15.34GB
-git clone https://github.com/meituan-longcat/LongCat-AudioDiT.git && cd LongCat-AudioDiT && pip install -r requirements.txt && python inference.py --text "Today is a sunny day, let's go for a walk in the park." --output_audio output.wav --model_dir meituan-longcat/LongCat-AudioDiT-3.5B
-```
+Official weights and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B)
 
 [interactive version](https://whatmodel.sh/model/longcat-audiodit-3-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

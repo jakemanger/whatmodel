@@ -58,68 +58,85 @@ weighted average                                   = 43.1
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/codellama/CodeLlama-70b-hf/blob/cc11b0f79c8a072bd1e1f32ec280e1ff8ec018f6/README.md): Context length stated on the official model card.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_k_m                 ~41GB   43.1
-8-bit q8_0                   ~73GB   43.1
-4-bit Q4_K_M               ~41.4GB   43.1
-2-bit Q2_K                 ~25.5GB   43.1
-4-bit mlx-4bit · mac only  ~39.2GB   43.1
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Code Llama 70B (base) (Q4_K_M, needs ~41.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-70B-hf-GGUF/tree/e7f061988e6622bae8cda6cb04e5e0a070f9c077))
+   
+   ```sh
+   llama cli -hf TheBloke/CodeLlama-70B-hf-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf TheBloke/CodeLlama-70B-hf-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q2_K (~25.5 GB) `llama cli -hf TheBloke/CodeLlama-70B-hf-GGUF:Q2_K`
 
-```sh
-# 4-bit Q4_K_M · ~41.4GB
-llama cli -hf TheBloke/CodeLlama-70B-hf-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/CodeLlama-70B-hf-GGUF:Q4_K_M
-# 2-bit Q2_K · ~25.5GB
-llama cli -hf TheBloke/CodeLlama-70B-hf-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/CodeLlama-70B-hf-GGUF:Q2_K
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~41.4GB
-lms get https://huggingface.co/TheBloke/CodeLlama-70B-hf-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit Q2_K · ~25.5GB
-lms get https://huggingface.co/TheBloke/CodeLlama-70B-hf-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~39.2GB
-lms get https://huggingface.co/mlx-community/CodeLlama-70b-hf-4bit-MLX -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Code Llama 70B (base) (Q4_K_M, needs ~41.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/CodeLlama-70B-hf-GGUF/tree/e7f061988e6622bae8cda6cb04e5e0a070f9c077))
+   
+   ```sh
+   lms get https://huggingface.co/TheBloke/CodeLlama-70B-hf-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~41GB
-ollama run codellama:70b-code-q4_K_M
-# 8-bit q8_0 · ~73GB
-ollama run codellama:70b-code-q8_0
-# 4-bit Q4_K_M · ~41.4GB
-ollama run hf.co/TheBloke/CodeLlama-70B-hf-GGUF:Q4_K_M
-# 2-bit Q2_K · ~25.5GB
-ollama run hf.co/TheBloke/CodeLlama-70B-hf-GGUF:Q2_K
-```
+Other versions: Q2_K (~25.5 GB) `lms get https://huggingface.co/TheBloke/CodeLlama-70B-hf-GGUF@Q2_K -y` · 4bit (~39.2 GB, Mac only) `lms get https://huggingface.co/mlx-community/CodeLlama-70b-hf-4bit-MLX -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~39.2GB
-mlx_lm.chat --model mlx-community/CodeLlama-70b-hf-4bit-MLX
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/CodeLlama-70b-hf-4bit-MLX
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Code Llama 70B (base) (Q4_K_M, needs ~41 GB, from [ollama.com](https://ollama.com/library/codellama/tags))
+   
+   ```sh
+   ollama run codellama:70b-code-q4_K_M
+   ```
+
+Other versions: Q8_0 (~73 GB) `ollama run codellama:70b-code-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Code Llama 70B (base) (4bit, needs ~39.2 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/CodeLlama-70b-hf-4bit-MLX/tree/2fd732eb3a2685a22a03258b8191af356566c203))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/CodeLlama-70b-hf-4bit-MLX
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/CodeLlama-70b-hf-4bit-MLX
+   ```
+
+Official weights and documentation: [huggingface.co/codellama](https://huggingface.co/codellama/CodeLlama-70b-hf)
 
 [interactive version](https://whatmodel.sh/model/codellama-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

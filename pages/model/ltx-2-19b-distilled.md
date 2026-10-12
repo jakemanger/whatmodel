@@ -43,27 +43,22 @@ weighted average                                   = 47.0
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.020/sec · [replicate.com](https://replicate.com/lightricks/ltx-2-distilled)
 
 <sub>[price source](https://replicate.com/lightricks/ltx-2-distilled): USD per second of output video on Replicate's official model lightricks/ltx-2-distilled ('LTX-2 Distilled is a 19 billion parameter model'; billing table: $0.02 per second of output video, one flat tier; no hardware-time charge). Product: Replicate model API. API model: lightricks/ltx-2-distilled. Settings: text-to-video, default 1080p (the page says it generates 1080p by default and can render up to 4K; the flat rate applies to all sizes), audio generated. Price basis: published output-based list rate. Note: LTX's own API removed ltx-2-fast/ltx-2-pro (2026-08-16 changelog) and fal's fal-ai/ltx-2-19b/ endpoints carry an 'will be deprecated on August 15, 2026' notice; the Replicate official model shows no deprecation. Currency: USD. Not a Lightricks direct tariff. Replicate official model page, observed 2026-09-26.</sub>
 
-<pre>
-version                             needs  score
-Draw Things q6p · mac only        ~40.9GB   47.0
-bf16 MLX (mlx-video) · mac only  ~110.4GB   47.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (Draw Things q6p, needs ~40.9 GB, Mac only, from [github.com/drawthingsai](https://github.com/drawthingsai/draw-things-community/blob/e51089d5229b3147e13a21cfe0c379deff851715/.agents/skills/use-drawthings-cli/SKILL.md))
+   
+   ```sh
+   brew install draw-things-cli && draw-things-cli generate --model ltx_2_19b_distilled_q6p.ckpt --prompt "Ocean waves at sunset" --frames 49 --seed 42 --video-format h264 --output clip.mp4
+   ```
 
-### Run it on your own machine
+Other versions: BF16 MLX (MLX-VIDEO) (~110.4 GB, Mac only) `pip install git+https://github.com/Blaizzy/mlx-video.git@87db56a51758fefb748a359b90a5283bb8ba4837 && mlx_video.ltx_2.generate --prompt "Two dogs wearing sunglasses, cinematic, sunset" -n 97 --width 768 --model-repo prince-canuma/LTX-2-distilled`
 
-**Other engines**
-
-```sh
-# Draw Things q6p · mac only · ~40.9GB
-brew install draw-things-cli && draw-things-cli generate --model ltx_2_19b_distilled_q6p.ckpt --prompt "Ocean waves at sunset" --frames 49 --seed 42 --video-format h264 --output clip.mp4
-# bf16 MLX (mlx-video) · mac only · ~110.4GB
-pip install git+https://github.com/Blaizzy/mlx-video.git@87db56a51758fefb748a359b90a5283bb8ba4837 && mlx_video.ltx_2.generate --prompt "Two dogs wearing sunglasses, cinematic, sunset" -n 97 --width 768 --model-repo prince-canuma/LTX-2-distilled
-```
+Official weights and documentation: [huggingface.co/Lightricks](https://huggingface.co/Lightricks/LTX-2)
 
 [interactive version](https://whatmodel.sh/model/ltx-2-19b-distilled) · [JSON](https://whatmodel.sh/api?format=json&all=1)

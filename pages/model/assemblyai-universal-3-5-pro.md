@@ -59,10 +59,10 @@ weighted average                                   = 67.4
 
 ## How to run it
 
+### Through an API
+
 api (AssemblyAI) · $0.0035/audio min · [assemblyai.com](https://www.assemblyai.com/pricing)
 
 <sub>[price source](https://www.assemblyai.com/pricing): USD per input audio minute: AssemblyAI lists Universal-3.5 Pro (async pre-recorded) at $0.21/hr pay as you go (÷60). Product: AssemblyAI async speech-to-text API. API model: universal-3.5-pro. Settings: pay-as-you-go, async. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: add-ons (keyterms/prompting $0.05/hr, diarization $0.02/hr, etc.), Realtime/Sync APIs. Currency: USD. AssemblyAI official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/assemblyai-universal-3-5-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

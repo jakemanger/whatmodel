@@ -43,20 +43,14 @@ weighted average                              = 47.2
 
 ## How to run it
 
-<pre>
-download         size  score
-16-bit bf16  ~16.06GB   47.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~16.06 GB, from [huggingface.co/Cornell-AGI](https://huggingface.co/Cornell-AGI/REBEL-Llama-3/tree/ce3a0395a3ca89d086ab185d5f3cb15a8cde3f03))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Cornell-AGI/REBEL-Llama-3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~16.06GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Cornell-AGI/REBEL-Llama-3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/Cornell-AGI](https://huggingface.co/Cornell-AGI/REBEL-Llama-3)
 
 [interactive version](https://whatmodel.sh/model/rebel-llama-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -147,6 +147,6 @@ weighted average                                   = 47.8
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/claude-3-haiku-20240307) · [JSON](https://whatmodel.sh/api?format=json&all=1)

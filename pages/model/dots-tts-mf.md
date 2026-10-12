@@ -59,20 +59,14 @@ weighted average                          = 68.3
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-bf16 (dots.tts package CLI) · nvidia on…  ~5.16GB   68.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (DOTS.TTS PACKAGE CLI), needs ~5.16 GB, NVIDIA only, from [huggingface.co/dots-studio](https://huggingface.co/dots-studio/dots.tts-mf/blob/c28105adc8228143392b4e346994ff613ee48a06/README.md))
+   
+   ```sh
+   pip install dots.tts && dots.tts --model-name-or-path dots-studio/dots.tts-mf --text "Hello, this is a zero-shot voice cloning demonstration." --prompt-audio /path/to/reference.wav --prompt-text "The exact transcript of the reference audio." --num-steps 4 --output clone.wav
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (dots.tts package CLI) · nvidia only · ~5.16GB
-pip install dots.tts && dots.tts --model-name-or-path dots-studio/dots.tts-mf --text "Hello, this is a zero-shot voice cloning demonstration." --prompt-audio /path/to/reference.wav --prompt-text "The exact transcript of the reference audio." --num-steps 4 --output clone.wav
-```
+Official weights and documentation: [huggingface.co/dots-studio](https://huggingface.co/dots-studio/dots.tts-mf)
 
 [interactive version](https://whatmodel.sh/model/dots-tts-mf) · [JSON](https://whatmodel.sh/api?format=json&all=1)

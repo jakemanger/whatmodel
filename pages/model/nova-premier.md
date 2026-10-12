@@ -91,10 +91,10 @@ weighted average                                   = 54.2
 
 ## How to run it
 
+### Through an API
+
 api (Amazon Bedrock) · $5.00/M blended · $2.5 in / $12.5 out per 1M tokens · [aws.amazon.com](https://aws.amazon.com/nova/pricing/)
 
 <sub>[price source](https://aws.amazon.com/nova/pricing): USD per 1M tokens, Amazon Bedrock Standard tier, geo cross-Region inference and in-Region, Amazon Nova Premier. Page table values are rendered from AWS's own price data file for the page (b0.p.awsstatic.com meteredUnitMaps, bedrock USD, published 2026-09-25T06:55:02Z); US East (N. Virginia) selected. Priority/Flex/Batch tiers, cached tokens and non-text modalities excluded. Currency: USD. AWS official Amazon Nova pricing page, observed 2026-09-25. · [context source](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html): Amazon Nova user guide model specifications: Nova Premier context window 1M (stated rounded; max output 10K tokens). Observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/nova-premier) · [JSON](https://whatmodel.sh/api?format=json&all=1)

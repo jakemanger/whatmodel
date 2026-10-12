@@ -65,10 +65,10 @@ weighted average                                   = 78.6
 
 ## How to run it
 
+### Through an API
+
 api (xAI) · $0.040/image · [docs.x.ai](https://docs.x.ai/docs/models)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per output image, 1K low quality. Image input billed separately at the provider tariff; text-to-image setting has no input images. Product: Image generation API. API model: grok-imagine-image-2.0. Settings: quality=low, resolution=1K, width=1024, height=1024, n=1. Price basis: generated image output component. Currency: USD.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/grok-imagine-image-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

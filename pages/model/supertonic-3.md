@@ -42,23 +42,16 @@ weighted average                        = 55.0
 
 ## How to run it
 
-<pre>
-version                                   needs  score
-onnx-fp32 (supertonic Python SDK 1.3.x)  ~0.4GB   55.0
-onnx-fp32 (Supertonic sample code)       ~0.4GB   55.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (onnx-fp32 (supertonic Python SDK 1.3.x), needs ~0.4 GB, from [github.com/supertone-oss-archive](https://github.com/supertone-oss-archive/supertonic-py/blob/df0f9686dac7fbbde391b759e2ee5286a3737622/docs/quickstart.md))
+   
+   ```sh
+   pip install supertonic && supertonic tts 'Supertonic is a lightning fast, on-device TTS system.' -o output.wav --lang en
+   ```
 
-### Run it on your own machine
+Other versions: onnx-fp32 (Supertonic sample code) (~0.4 GB) `git clone https://github.com/supertone-oss-archive/supertonic.git && cd supertonic && python3.11 -m venv .venv && source .venv/bin/activate && python -m pip install huggingface_hub && hf download supertone-oss-archive/supertonic-3 --revision aafc6e32416a594460b32413efc49d7fe4ce6d46 --local-dir assets && python -m pip install -r py/requirements.txt && cd py && python example_onnx.py --n-test 1 --text "This speech was generated locally with the archived Supertonic model." --lang en`
 
-**Other engines**
-
-```sh
-# onnx-fp32 (supertonic Python SDK 1.3.x) · ~0.4GB
-pip install supertonic && supertonic tts 'Supertonic is a lightning fast, on-device TTS system.' -o output.wav --lang en
-# onnx-fp32 (Supertonic sample code) · ~0.4GB
-git clone https://github.com/supertone-oss-archive/supertonic.git && cd supertonic && python3.11 -m venv .venv && source .venv/bin/activate && python -m pip install huggingface_hub && hf download supertone-oss-archive/supertonic-3 --revision aafc6e32416a594460b32413efc49d7fe4ce6d46 --local-dir assets && python -m pip install -r py/requirements.txt && cd py && python example_onnx.py --n-test 1 --text "This speech was generated locally with the archived Supertonic model." --lang en
-```
+Official weights and documentation: [huggingface.co/Supertone](https://huggingface.co/Supertone/supertonic-3)
 
 [interactive version](https://whatmodel.sh/model/supertonic-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

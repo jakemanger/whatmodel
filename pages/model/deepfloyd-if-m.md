@@ -57,20 +57,14 @@ weighted average                                   = 31.4
 
 ## How to run it
 
-<pre>
-version                                   needs  score
-fp16 + model CPU offload (stages I+II, …  ~14GB   31.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16 + model CPU offload (stages I+II, 256px), needs ~14 GB, NVIDIA only, from [github.com/deep-floyd](https://github.com/deep-floyd/IF))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with protobuf python -c "import torch; from diffusers import DiffusionPipeline; s1=DiffusionPipeline.from_pretrained('DeepFloyd/IF-I-M-v1.0', variant='fp16', torch_dtype=torch.float16); s1.enable_model_cpu_offload(); s2=DiffusionPipeline.from_pretrained('DeepFloyd/IF-II-M-v1.0', text_encoder=None, variant='fp16', torch_dtype=torch.float16); s2.enable_model_cpu_offload(); e,n=s1.encode_prompt('a cat holding a sign'); i=s1(prompt_embeds=e, negative_prompt_embeds=n, output_type='pt').images; s2(image=i, prompt_embeds=e, negative_prompt_embeds=n, output_type='pil').images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 + model CPU offload (stages I+II, 256px) · nvidia only · ~14GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with protobuf python -c "import torch; from diffusers import DiffusionPipeline; s1=DiffusionPipeline.from_pretrained('DeepFloyd/IF-I-M-v1.0', variant='fp16', torch_dtype=torch.float16); s1.enable_model_cpu_offload(); s2=DiffusionPipeline.from_pretrained('DeepFloyd/IF-II-M-v1.0', text_encoder=None, variant='fp16', torch_dtype=torch.float16); s2.enable_model_cpu_offload(); e,n=s1.encode_prompt('a cat holding a sign'); i=s1(prompt_embeds=e, negative_prompt_embeds=n, output_type='pt').images; s2(image=i, prompt_embeds=e, negative_prompt_embeds=n, output_type='pil').images[0].save('out.png')"
-```
+Official weights and documentation: [huggingface.co/DeepFloyd](https://huggingface.co/DeepFloyd/IF-I-M-v1.0)
 
 [interactive version](https://whatmodel.sh/model/deepfloyd-if-m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -80,10 +80,10 @@ weighted average                                   = 70.2
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $35.00/M blended · $20 in / $80 out per 1M tokens · [developers.openai.com](https://developers.openai.com/api/docs/models/o3-pro)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output. LiteLLM record 'o3-pro-2025-06-10' (litellm\_provider openai, mode responses): input\_cost\_per\_token 2e-05, output\_cost\_per\_token 8e-05; Batch and search-context charges excluded. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens (LiteLLM record o3-pro-2025-06-10); not an intrinsic model maximum</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/o3-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -42,10 +42,10 @@ weighted average                                   = 59.0
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $0.017/audio min · [developers.openai.com](https://developers.openai.com/api/docs/models/gpt-realtime-whisper)
 
 <sub>[price source](https://developers.openai.com/api/docs/pricing): USD per input audio minute: OpenAI pricing, Transcription models table, 'gpt-realtime-whisper \| Live transcription \| $0.017 / minute'; the model page states it 'is priced by audio duration rather than text tokens'. Product: Realtime API transcription. API model: gpt-realtime-whisper. Price basis: published per-minute rate. Currency: USD. OpenAI official pricing docs, observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-realtime-whisper) · [JSON](https://whatmodel.sh/api?format=json&all=1)

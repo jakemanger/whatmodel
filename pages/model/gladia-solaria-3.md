@@ -10,6 +10,8 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+### Through an API
+
 api (Gladia) · $0.010/audio min · [gladia.io](https://www.gladia.io/pricing)
 
 <sub>[price source](https://www.gladia.io/pricing): USD per input audio minute: Gladia lists Starter pay-as-you-go async transcription at $0.61/hr (÷60); the pricing page gives one async rate for its STT API rather than per model. Product: Gladia async STT API. API model: Solaria-3. Settings: Starter plan, async. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: Growth-plan committed discounts, real-time ($0.75/hr). Currency: USD. Gladia official pricing page, observed 2026-09-25.</sub>

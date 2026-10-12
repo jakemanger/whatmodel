@@ -52,24 +52,20 @@ weighted average                                   = 34.2
 
 ## How to run it
 
+### Through an API
+
 api (DeepInfra) · $7.00/M chars · [deepinfra.com](https://deepinfra.com/sesame/csm-1b)
 
 <sub>[price source](https://deepinfra.com/sesame/csm-1b): USD per 1M input characters: DeepInfra lists sesame/csm-1b at $7.00 / 1M characters (page pricing data: input\_character\_length billing; not deprecated in DeepInfra's catalogue). Product: DeepInfra hosted inference (text to speech). API model: sesame/csm-1b (Sesame CSM 1B checkpoint). Settings: standard serverless. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.</sub>
 
-<pre>
-version                        needs  score
-fp32 (mlx-audio) · mac only  ~6.61GB   34.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (mlx-audio), needs ~6.61 GB, Mac only, from [github.com/Blaizzy](https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/docs/models/tts/csm.md))
+   
+   ```sh
+   pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/csm-1b --text "Hello from Sesame." --ref_audio ./reference_voice.wav --ref_text "This is what my voice sounds like." --play
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (mlx-audio) · mac only · ~6.61GB
-pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/csm-1b --text "Hello from Sesame." --ref_audio ./reference_voice.wav --ref_text "This is what my voice sounds like." --play
-```
+Official weights and documentation: [huggingface.co/sesame](https://huggingface.co/sesame/csm-1b)
 
 [interactive version](https://whatmodel.sh/model/sesame-csm-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

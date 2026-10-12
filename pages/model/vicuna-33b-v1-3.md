@@ -67,25 +67,23 @@ weighted average                                   = 39.1
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/lmsys/vicuna-33b-v1.3/blob/ef8d6becf883fb3ce52e3706885f761819477ab4/config.json): LMSYS official configuration for vicuna-33b-v1.3 (pinned commit): max\_position\_embeddings 2048. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+### Ollama (recommended)
 
-<pre>
-download         size  score
-4-bit q4_k_m  ~20.3GB   39.1
-8-bit q8_0    ~40.1GB   39.1
-</pre>
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Vicuna 33B v1.3 (Q4_K_M, needs ~20.3 GB, from [ollama.com](https://ollama.com/library/vicuna/tags))
+   
+   ```sh
+   ollama run vicuna:33b-q4_K_M
+   ```
 
-### Run it on your own machine
+Other versions: Q8_0 (~40.1 GB) `ollama run vicuna:33b-q8_0`
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
-
-```sh
-# 4-bit q4_k_m · ~20.3GB
-ollama run vicuna:33b-q4_K_M
-# 8-bit q8_0 · ~40.1GB
-ollama run vicuna:33b-q8_0
-```
+Official weights and documentation: [huggingface.co/lmsys](https://huggingface.co/lmsys/vicuna-33b-v1.3)
 
 [interactive version](https://whatmodel.sh/model/vicuna-33b-v1-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

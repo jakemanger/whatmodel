@@ -45,6 +45,8 @@ weighted average                                   = 66.6
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/Boogu](https://huggingface.co/Boogu/Boogu-Image-0.1-Base)
 
 [interactive version](https://whatmodel.sh/model/boogu-image-0-1-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

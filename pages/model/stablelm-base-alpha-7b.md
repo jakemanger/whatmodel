@@ -66,22 +66,14 @@ weighted average                                   = 9.3
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/stabilityai/stablelm-base-alpha-7b/blob/1d43a3b40d7d708d8084d07dfae0c4e9fd95c04f/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+### Other ways to run it
 
-<pre>
-download        size  score
-4-bit fp32  ~31.74GB    9.3
-</pre>
+1. Run it as published (fp32, needs ~31.74 GB, from [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-base-alpha-7b/tree/1d43a3b40d7d708d8084d07dfae0c4e9fd95c04f))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='stabilityai/stablelm-base-alpha-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp32 · ~31.74GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='stabilityai/stablelm-base-alpha-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stablelm-base-alpha-7b)
 
 [interactive version](https://whatmodel.sh/model/stablelm-base-alpha-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

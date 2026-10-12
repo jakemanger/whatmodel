@@ -42,10 +42,10 @@ weighted average                        = 36.6
 
 ## How to run it
 
+### Through an API
+
 api (ElevenLabs) · $80.00/M chars · [elevenlabs.io](https://elevenlabs.io/pricing/api)
 
 <sub>[price source](https://elevenlabs.io/pricing/api): USD per 1M input characters: ElevenLabs lists Eleven v4 Text to Speech at $0.08 per 1K characters (x1000), shown struck through with a launch promotion of $0.022 per 1K characters ('72% off until Oct 12'); the list rate is recorded. Product: ElevenAPI text to speech. API model: eleven\_v4. Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes, the temporary promotion. Currency: USD. ElevenLabs official API pricing page, observed 2026-10-10.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/elevenlabs-v4) · [JSON](https://whatmodel.sh/api?format=json&all=1)

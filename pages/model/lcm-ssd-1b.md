@@ -45,20 +45,14 @@ weighted average                                   = 32.1
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp16 · nvidia only  ~3.6GB   32.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~3.6 GB, NVIDIA only, from [huggingface.co/latent-consistency](https://huggingface.co/latent-consistency/lcm-ssd-1b))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import UNet2DConditionModel, DiffusionPipeline, LCMScheduler; u=UNet2DConditionModel.from_pretrained('latent-consistency/lcm-ssd-1b', torch_dtype=torch.float16, variant='fp16'); p=DiffusionPipeline.from_pretrained('segmind/SSD-1B', unet=u, torch_dtype=torch.float16, variant='fp16'); p.scheduler=LCMScheduler.from_config(p.scheduler.config); p.to('cuda'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=1.0).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~3.6GB
-uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import UNet2DConditionModel, DiffusionPipeline, LCMScheduler; u=UNet2DConditionModel.from_pretrained('latent-consistency/lcm-ssd-1b', torch_dtype=torch.float16, variant='fp16'); p=DiffusionPipeline.from_pretrained('segmind/SSD-1B', unet=u, torch_dtype=torch.float16, variant='fp16'); p.scheduler=LCMScheduler.from_config(p.scheduler.config); p.to('cuda'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=1.0).images[0].save('out.png')"
-```
+Official weights and documentation: [huggingface.co/latent-consistency](https://huggingface.co/latent-consistency/lcm-ssd-1b)
 
 [interactive version](https://whatmodel.sh/model/lcm-ssd-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

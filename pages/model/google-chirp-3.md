@@ -87,8 +87,8 @@ weighted average                                   = 60.8
 
 ## How to run it
 
-api  · price unknown · [cloud.google.com](https://cloud.google.com/speech-to-text/pricing)
+### Through an API
 
-no verified local download listed
+api  · price unknown · [cloud.google.com](https://cloud.google.com/speech-to-text/pricing)
 
 [interactive version](https://whatmodel.sh/model/google-chirp-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

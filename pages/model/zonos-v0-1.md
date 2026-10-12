@@ -50,22 +50,18 @@ weighted average                                   = 39.1
 
 ## How to run it
 
+### Through an API
+
 api  · price unknown · [zyphra.com](https://zyphra.com)
 
-<pre>
-version    needs  score
-bf16     ~4.34GB   39.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~4.34 GB, from [github.com/Zyphra](https://github.com/Zyphra/Zonos))
+   
+   ```sh
+   git clone https://github.com/Zyphra/Zonos && cd Zonos && uv sync && uv pip install -e . && uv run sample.py
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · ~4.34GB
-git clone https://github.com/Zyphra/Zonos && cd Zonos && uv sync && uv pip install -e . && uv run sample.py
-```
+Official weights and documentation: [huggingface.co/Zyphra](https://huggingface.co/Zyphra/Zonos-v0.1-transformer)
 
 [interactive version](https://whatmodel.sh/model/zonos-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

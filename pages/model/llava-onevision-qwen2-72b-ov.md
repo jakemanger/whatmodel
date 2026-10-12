@@ -47,20 +47,14 @@ weighted average                                   = 44.3
 
 ## How to run it
 
-<pre>
-download                       size  score
-4-bit fp16 · nvidia only  ~146.36GB   44.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~146.36 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+   
+   ```sh
+   vllm serve llava-hf/llava-onevision-qwen2-72b-ov-hf
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp16 · nvidia only · ~146.36GB
-vllm serve llava-hf/llava-onevision-qwen2-72b-ov-hf
-```
+Official weights and documentation: [huggingface.co/lmms-lab](https://huggingface.co/lmms-lab/llava-onevision-qwen2-72b-ov-sft)
 
 [interactive version](https://whatmodel.sh/model/llava-onevision-qwen2-72b-ov) · [JSON](https://whatmodel.sh/api?format=json&all=1)

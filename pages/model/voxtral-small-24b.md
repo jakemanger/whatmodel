@@ -74,25 +74,21 @@ weighted average                                   = 60.8
 
 ## How to run it
 
+### Through an API
+
 api (Mistral AI) · $0.0040/audio min · [docs.mistral.ai](https://docs.mistral.ai/getting-started/models/models_overview/)
 
 <sub>[price source](https://mistral.ai/pricing/api): USD per input audio minute: Mistral lists Voxtral Small audio input at $0.004 per minute on /v1/chat/completions; transcript output is billed separately as output tokens ($0.4 / M tokens), text input $0.1 / M. Docs list Voxtral Small v25.07 as the current audio model. Product: Mistral API. API model: voxtral-small (25.07). Settings: standard (non-batch). Price basis: published audio-input component. Exclusions: output/text tokens, regional endpoint surcharge. Currency: USD. Mistral official API pricing page, observed 2026-09-25.</sub>
 
-<pre>
-version                needs  score
-bf16 · nvidia only  ~58.82GB   60.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~58.82 GB, NVIDIA only, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Voxtral-Small-24B-2507))
+   
+   ```sh
+   vllm serve mistralai/Voxtral-Small-24B-2507 --tokenizer_mode mistral --config_format mistral --load_format mistral --tensor-parallel-size 2 --tool-call-parser mistral --enable-auto-tool-choice
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~58.82GB
-vllm serve mistralai/Voxtral-Small-24B-2507 --tokenizer_mode mistral --config_format mistral --load_format mistral --tensor-parallel-size 2 --tool-call-parser mistral --enable-auto-tool-choice
-```
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Voxtral-Small-24B-2507)
 
 ## Quantization evidence
 

@@ -43,10 +43,10 @@ weighted average                        = 62.1
 
 ## How to run it
 
+### Through an API
+
 api (StreamLake) · price unknown · [streamlake.ai](https://www.streamlake.ai/document/DOC/mh1gbfvrdn6hpbzxixv)
 
 <sub>[context source](https://www.streamlake.ai/document/DOC/mh1gbfvrdn6hpbzxixv): Context limit from the maker's documentation, observed 2026-10-06.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/kat-coder-pro-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

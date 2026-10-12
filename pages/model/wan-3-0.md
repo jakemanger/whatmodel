@@ -85,10 +85,10 @@ weighted average                                   = 78.7
 
 ## How to run it
 
+### Through an API
+
 api (Alibaba Cloud Model Studio) · $0.10/sec · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
 <sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per second of output video, 720P, International deployment (Singapore) list price. Product: Model Studio Wan 3.0 video generation. API model: wan3.0-video (not wan3.0-video-prime, $0.14/s at 720P). Settings: resolution=720P, text-to-video (no input video). Price basis: published list price; a limited-time 30% discount was shown and is not applied. Wan 3.0 bills input video duration too (billable duration = input + output), so video-to-video costs more. 480P $0.05/s, 1080P $0.2/s. Chinese-mainland and other regions list different USD rates. Free quota excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-25. Replaces the held Replicate route (conflicting README).</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/wan-3-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -43,20 +43,14 @@ weighted average                                   = 48.8
 
 ## How to run it
 
-<pre>
-version                       needs  score
-q8_0-gguf (transcribe.cpp)  ~0.73GB   48.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (Q8_0-GGUF (TRANSCRIBE.CPP), needs ~0.73 GB, from [github.com/handy-computer](https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md))
+   
+   ```sh
+   git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/nemotron-speech-streaming-en-0.6b-gguf nemotron-speech-streaming-en-0.6b-Q8_0.gguf --local-dir models/nemotron-speech-streaming-en-0.6b && build/bin/transcribe-cli -m models/nemotron-speech-streaming-en-0.6b/nemotron-speech-streaming-en-0.6b-Q8_0.gguf audio.wav
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# q8_0-gguf (transcribe.cpp) · ~0.73GB
-git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/nemotron-speech-streaming-en-0.6b-gguf nemotron-speech-streaming-en-0.6b-Q8_0.gguf --local-dir models/nemotron-speech-streaming-en-0.6b && build/bin/transcribe-cli -m models/nemotron-speech-streaming-en-0.6b/nemotron-speech-streaming-en-0.6b-Q8_0.gguf audio.wav
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b)
 
 [interactive version](https://whatmodel.sh/model/nemotron-speech-streaming-en-0-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

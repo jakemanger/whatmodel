@@ -46,20 +46,14 @@ weighted average                        = 36.7
 
 ## How to run it
 
-<pre>
-version             needs  score
-fp16 · nvidia only  ~12GB   36.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~12 GB, NVIDIA only, from [huggingface.co/kandinsky-community](https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder/blob/9ae140d347fed8ce6e8bb3005dcc1f48543bb8e3/README.md))
+   
+   ```sh
+   uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-2-2-decoder', torch_dtype=torch.float16).to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~12GB
-uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-2-2-decoder', torch_dtype=torch.float16).to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')"
-```
+Official weights and documentation: [huggingface.co/kandinsky-community](https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder)
 
 [interactive version](https://whatmodel.sh/model/kandinsky-2-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

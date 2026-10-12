@@ -45,6 +45,8 @@ weighted average                          = 46.5
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [github.com/openai](https://github.com/openai/glide-text2im)
 
 [interactive version](https://whatmodel.sh/model/glide-filtered) · [JSON](https://whatmodel.sh/api?format=json&all=1)

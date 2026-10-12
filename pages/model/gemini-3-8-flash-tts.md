@@ -43,8 +43,8 @@ weighted average                        = 37.4
 
 ## How to run it
 
-api  · price unknown · [ai.google.dev](https://ai.google.dev/gemini-api/docs/pricing)
+### Through an API
 
-no verified local download listed
+api  · price unknown · [ai.google.dev](https://ai.google.dev/gemini-api/docs/pricing)
 
 [interactive version](https://whatmodel.sh/model/gemini-3-8-flash-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

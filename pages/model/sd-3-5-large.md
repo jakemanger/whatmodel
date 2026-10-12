@@ -84,33 +84,22 @@ weighted average                                   = 41.5
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.065/image · [replicate.com](https://replicate.com/stability-ai/stable-diffusion-3.5-large)
 
 <sub>[price source](https://replicate.com/stability-ai/stable-diffusion-3.5-large): USD per output image on Replicate's stability-ai/stable-diffusion-3.5-large model (billing: per output image; hardware time not added). Product: Replicate model API. API model: stability-ai/stable-diffusion-3.5-large. Settings: one output image. Price basis: published list rate. Currency: USD. Not a Stability AI direct API tariff. Replicate official model page, observed 2026-09-25.</sub>
 
-<pre>
-version                          needs  score
-bf16 · nvidia only            ~19.94GB   41.5
-fp8 (TensorRT) · nvidia only   ~5.36GB   41.5
-bf16 + T5 fp16 (sd.cpp)          ~34GB   41.5
-q8_0 (sd.cpp --type)           ~18.2GB   41.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~19.94 GB, NVIDIA only, from [stability.ai/news-updates](https://stability.ai/news-updates/stable-diffusion-35-models-optimized-with-tensorrt-deliver-2x-faster-performance-and-40-less-memory-on-nvidia-rtx-gpus))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with protobuf python -c "import torch; from diffusers import StableDiffusion3Pipeline; p=StableDiffusion3Pipeline.from_pretrained('stabilityai/stable-diffusion-3.5-large', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=28, guidance_scale=3.5).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
+Other versions: fp8 (TensorRT) (~5.36 GB, NVIDIA only) `git clone https://github.com/NVIDIA/TensorRT.git && cd TensorRT && git checkout release/sd35 && docker run --rm --gpus all -e HF_TOKEN -v $PWD:/workspace nvcr.io/nvidia/pytorch:25.01-py3 bash -c "cd /workspace/demo/Diffusion && source setup.sh && python3 demo_txt2img_sd35.py 'a cat holding a sign' --version=3.5-large --fp8 --denoising-steps=30 --guidance-scale 3.5 --download-onnx-models --build-static-batch --use-cuda-graph --hf-token=\$HF_TOKEN --onnx-dir onnx_fp8 --engine-dir engine_fp8"` · BF16 + T5 FP16 (SD.CPP) (~34 GB) `sd-cli -m models/sd3.5_large.safetensors --clip_l models/clip_l.safetensors --clip_g models/clip_g.safetensors --t5xxl models/t5xxl_fp16.safetensors -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable diffusion 3.5 Large"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu` · Q8_0 (SD.CPP --TYPE) (~18.2 GB) `sd-cli -m models/sd3.5_large.safetensors --clip_l models/clip_l.safetensors --clip_g models/clip_g.safetensors --t5xxl models/t5xxl_fp16.safetensors --type q8_0 -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable diffusion 3.5 Large"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~19.94GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with protobuf python -c "import torch; from diffusers import StableDiffusion3Pipeline; p=StableDiffusion3Pipeline.from_pretrained('stabilityai/stable-diffusion-3.5-large', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=28, guidance_scale=3.5).images[0].save('out.png')"
-# fp8 (TensorRT) · nvidia only · ~5.36GB
-git clone https://github.com/NVIDIA/TensorRT.git && cd TensorRT && git checkout release/sd35 && docker run --rm --gpus all -e HF_TOKEN -v $PWD:/workspace nvcr.io/nvidia/pytorch:25.01-py3 bash -c "cd /workspace/demo/Diffusion && source setup.sh && python3 demo_txt2img_sd35.py 'a cat holding a sign' --version=3.5-large --fp8 --denoising-steps=30 --guidance-scale 3.5 --download-onnx-models --build-static-batch --use-cuda-graph --hf-token=\$HF_TOKEN --onnx-dir onnx_fp8 --engine-dir engine_fp8"
-# bf16 + T5 fp16 (sd.cpp) · ~34GB
-sd-cli -m models/sd3.5_large.safetensors --clip_l models/clip_l.safetensors --clip_g models/clip_g.safetensors --t5xxl models/t5xxl_fp16.safetensors -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable diffusion 3.5 Large"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu
-# q8_0 (sd.cpp --type) · ~18.2GB
-sd-cli -m models/sd3.5_large.safetensors --clip_l models/clip_l.safetensors --clip_g models/clip_g.safetensors --t5xxl models/t5xxl_fp16.safetensors --type q8_0 -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable diffusion 3.5 Large"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu
-```
+Official weights and documentation: [huggingface.co/stabilityai](https://huggingface.co/stabilityai/stable-diffusion-3.5-large)
 
 [interactive version](https://whatmodel.sh/model/sd-3-5-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

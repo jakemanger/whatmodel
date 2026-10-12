@@ -66,39 +66,56 @@ weighted average                                   = 49.3
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/config.json): config.json max\_position\_embeddings 32768. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download         size  score
-4-bit q4_k_m  ~4.68GB   49.3
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run OpenThinker2 7B (Q4_K_M, needs ~4.68 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF/tree/894134150cf4e8a58cebd62c27b8998c764bff33))
+   
+   ```sh
+   llama cli -hf bartowski/open-thoughts_OpenThinker2-7B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/open-thoughts_OpenThinker2-7B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~4.68GB
-llama cli -hf bartowski/open-thoughts_OpenThinker2-7B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/open-thoughts_OpenThinker2-7B-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run OpenThinker2 7B (Q4_K_M, needs ~4.68 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF/tree/894134150cf4e8a58cebd62c27b8998c764bff33))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~4.68GB
-lms get https://huggingface.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+### Ollama
 
-```sh
-# 4-bit q4_k_m · ~4.68GB
-ollama run hf.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF:Q4_K_M
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run OpenThinker2 7B (Q4_K_M, needs ~4.68 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF/tree/894134150cf4e8a58cebd62c27b8998c764bff33))
+   
+   ```sh
+   ollama run hf.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF:Q4_K_M
+   ```
+
+Official weights and documentation: [huggingface.co/open-thoughts](https://huggingface.co/open-thoughts/OpenThinker2-7B)
 
 [interactive version](https://whatmodel.sh/model/openthinker2-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

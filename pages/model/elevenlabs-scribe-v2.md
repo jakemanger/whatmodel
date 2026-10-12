@@ -96,10 +96,10 @@ weighted average                                   = 66.4
 
 ## How to run it
 
+### Through an API
+
 api (ElevenLabs) · $0.0037/audio min · [elevenlabs.io](https://elevenlabs.io/pricing/api)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per input audio minute, converted from the rounded LiteLLM per-second rate. File transcription; published tariff $0.22/hour. Not Scribe Realtime or Medical. Product: Batch/file speech transcription. API model: scribe\_v2. Settings: streaming=no, minimum billed seconds=not specified. Price basis: rounded catalogue rate (not a new estimate of speech length). Currency: USD.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/elevenlabs-scribe-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

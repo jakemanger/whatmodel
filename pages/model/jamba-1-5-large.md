@@ -94,20 +94,14 @@ weighted average                                   = 50.3
 
 ## How to run it
 
-<pre>
-download                                       size  score
-16-bit bf16 weights, experts_int8 at lo…  ~797.11GB   50.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 WEIGHTS, EXPERTS_INT8 AT LOAD, needs ~797.11 GB, NVIDIA only, from [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Large-1.5/blob/57d0bbccd09d9f56fb8ad2c3f2353ef61717f906/README.md))
+   
+   ```sh
+   pip install 'vllm>=0.5.5' && vllm serve ai21labs/AI21-Jamba-Large-1.5 --tensor-parallel-size 8 --max-model-len 225280 --quantization experts_int8
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 weights, experts_int8 at load · nvidia only · ~797.11GB
-pip install 'vllm>=0.5.5' && vllm serve ai21labs/AI21-Jamba-Large-1.5 --tensor-parallel-size 8 --max-model-len 225280 --quantization experts_int8
-```
+Official weights and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba-Large-1.5)
 
 [interactive version](https://whatmodel.sh/model/jamba-1-5-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

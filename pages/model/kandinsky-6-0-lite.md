@@ -43,20 +43,14 @@ weighted average                                   = 51.1
 
 ## How to run it
 
-<pre>
-version                                   needs  score
-bf16 + model CPU offload · nvidia only  ~33.8GB   51.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 + MODEL CPU OFFLOAD, needs ~33.8 GB, NVIDIA only, from [huggingface.co/kandinskylab](https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers/blob/5686616f04318cbec7b0a4978b4ff1697395de15/README.md))
+   
+   ```sh
+   uv run --with git+https://github.com/huggingface/diffusers --with torch --with transformers --with accelerate --with av python -c "import torch; from diffusers import Kandinsky6TI2VAPipeline; from diffusers.utils import encode_video; p=Kandinsky6TI2VAPipeline.from_pretrained('kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); o=p(prompt='A red dragon wakes on a mound of gold coins in a sunlit cave and slowly unfolds its wings. Audio: deep rumbling breath, clinking coins.', height=480, width=864, num_frames=121, num_inference_steps=50, guidance_scale=5.0); encode_video(o.frames[0], fps=24, output_path='output.mp4', audio=o.audio[0][None], audio_sample_rate=p.audio_sample_rate)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 + model CPU offload · nvidia only · ~33.8GB
-uv run --with git+https://github.com/huggingface/diffusers --with torch --with transformers --with accelerate --with av python -c "import torch; from diffusers import Kandinsky6TI2VAPipeline; from diffusers.utils import encode_video; p=Kandinsky6TI2VAPipeline.from_pretrained('kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); o=p(prompt='A red dragon wakes on a mound of gold coins in a sunlit cave and slowly unfolds its wings. Audio: deep rumbling breath, clinking coins.', height=480, width=864, num_frames=121, num_inference_steps=50, guidance_scale=5.0); encode_video(o.frames[0], fps=24, output_path='output.mp4', audio=o.audio[0][None], audio_sample_rate=p.audio_sample_rate)"
-```
+Official weights and documentation: [huggingface.co/kandinskylab](https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers)
 
 [interactive version](https://whatmodel.sh/model/kandinsky-6-0-lite) · [JSON](https://whatmodel.sh/api?format=json&all=1)

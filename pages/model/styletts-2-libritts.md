@@ -75,20 +75,14 @@ weighted average                                   = 30.3
 
 ## How to run it
 
-<pre>
-version                                needs  score
-fp32 (styletts2 PyPI package 0.1.6)  ~0.91GB   30.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (styletts2 PyPI package 0.1.6), needs ~0.91 GB, from [github.com/sidharthrajaram](https://github.com/sidharthrajaram/StyleTTS2/blob/350b8889d75a52c2c695dafa7ba4682386be0b96/README.md))
+   
+   ```sh
+   uv run --python 3.10 --with styletts2 python -c "from styletts2 import tts; my_tts = tts.StyleTTS2(); out = my_tts.inference('Hello there, I am now a python package.', output_wav_file='test.wav')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (styletts2 PyPI package 0.1.6) · ~0.91GB
-uv run --python 3.10 --with styletts2 python -c "from styletts2 import tts; my_tts = tts.StyleTTS2(); out = my_tts.inference('Hello there, I am now a python package.', output_wav_file='test.wav')"
-```
+Official weights and documentation: [huggingface.co/yl4579](https://huggingface.co/yl4579/StyleTTS2-LibriTTS)
 
 [interactive version](https://whatmodel.sh/model/styletts-2-libritts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

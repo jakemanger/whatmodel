@@ -72,20 +72,14 @@ weighted average                                   = 57.5
 
 ## How to run it
 
-<pre>
-version               needs  score
-fp16 · nvidia only  ~2.32GB   57.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~2.32 GB, NVIDIA only, from [github.com/Vaibhavs10](https://github.com/Vaibhavs10/insanely-fast-whisper))
+   
+   ```sh
+   uvx insanely-fast-whisper --file-name audio.mp3 --model-name distil-whisper/distil-large-v3.5
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~2.32GB
-uvx insanely-fast-whisper --file-name audio.mp3 --model-name distil-whisper/distil-large-v3.5
-```
+Official weights and documentation: [huggingface.co/distil-whisper](https://huggingface.co/distil-whisper/distil-large-v3.5)
 
 [interactive version](https://whatmodel.sh/model/distil-large-v3-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

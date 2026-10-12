@@ -51,29 +51,21 @@ weighted average                                   = 39.0
 
 ## How to run it
 
+### Through an API
+
 api (fal) · price unknown · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-video)
 
-<pre>
-version                       needs  score
-bf16 · nvidia only          ~31.7GB   39.0
-bf16 · nvidia only          ~31.7GB   39.0
-Draw Things q8p · mac only  ~27.6GB   39.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~31.7 GB, NVIDIA only, from [github.com/Tencent-Hunyuan](https://github.com/Tencent-Hunyuan/HunyuanVideo))
+   
+   ```sh
+   python3 sample_video.py --video-size 544 960 --video-length 129 --infer-steps 50 --prompt "A cat walks on the grass, realistic style." --flow-reverse --use-cpu-offload --save-path ./results
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~31.7 GB, NVIDIA only) `python3 sample_video.py --video-size 720 1280 --video-length 129 --infer-steps 50 --prompt "A cat walks on the grass, realistic style." --flow-reverse --use-cpu-offload --save-path ./results` · Draw Things q8p (~27.6 GB, Mac only) `brew install draw-things-cli && draw-things-cli generate --model hunyuan_video_t2v_720p_q8p.ckpt --prompt "Ocean waves at sunset" --frames 49 --seed 42 --video-format h264 --output clip.mp4`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~31.7GB
-python3 sample_video.py --video-size 544 960 --video-length 129 --infer-steps 50 --prompt "A cat walks on the grass, realistic style." --flow-reverse --use-cpu-offload --save-path ./results
-# bf16 · nvidia only · ~31.7GB
-python3 sample_video.py --video-size 720 1280 --video-length 129 --infer-steps 50 --prompt "A cat walks on the grass, realistic style." --flow-reverse --use-cpu-offload --save-path ./results
-# Draw Things q8p · mac only · ~27.6GB
-brew install draw-things-cli && draw-things-cli generate --model hunyuan_video_t2v_720p_q8p.ckpt --prompt "Ocean waves at sunset" --frames 49 --seed 42 --video-format h264 --output clip.mp4
-```
+Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanVideo)
 
 ## Published speed measurements
 

@@ -66,6 +66,6 @@ weighted average                                   = 73.6
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/dola-seed-2-0-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

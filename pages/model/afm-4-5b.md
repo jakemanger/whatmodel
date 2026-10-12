@@ -41,39 +41,56 @@ weighted average                        = 49.0
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/arcee-ai/AFM-4.5B/blob/e84d19711eca5817c1608cb344d931bf05c966dd/config.json): config.json max\_position\_embeddings 65536. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download         size  score
-4-bit q4_k_m  ~2.92GB   49.0
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run AFM-4.5B (Q4_K_M, needs ~2.92 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/AFM-4.5B-GGUF/tree/741fded55739927f94be7934a174c2bcfc751969))
+   
+   ```sh
+   llama cli -hf arcee-ai/AFM-4.5B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf arcee-ai/AFM-4.5B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~2.92GB
-llama cli -hf arcee-ai/AFM-4.5B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf arcee-ai/AFM-4.5B-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run AFM-4.5B (Q4_K_M, needs ~2.92 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/AFM-4.5B-GGUF/tree/741fded55739927f94be7934a174c2bcfc751969))
+   
+   ```sh
+   lms get https://huggingface.co/arcee-ai/AFM-4.5B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~2.92GB
-lms get https://huggingface.co/arcee-ai/AFM-4.5B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+### Ollama
 
-```sh
-# 4-bit q4_k_m · ~2.92GB
-ollama run hf.co/arcee-ai/AFM-4.5B-GGUF:Q4_K_M
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run AFM-4.5B (Q4_K_M, needs ~2.92 GB, from [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/AFM-4.5B-GGUF/tree/741fded55739927f94be7934a174c2bcfc751969))
+   
+   ```sh
+   ollama run hf.co/arcee-ai/AFM-4.5B-GGUF:Q4_K_M
+   ```
+
+Official weights and documentation: [huggingface.co/arcee-ai](https://huggingface.co/arcee-ai/AFM-4.5B)
 
 [interactive version](https://whatmodel.sh/model/afm-4-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

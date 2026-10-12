@@ -83,20 +83,14 @@ VoxCPM: Tokenizer-Fre…  <a href="https://arxiv.org/html/2509.24650v1">Seed-TTS
 
 ## How to run it
 
-<pre>
-version             needs  score
-bf16 · nvidia only   ~5GB   64.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~5 GB, NVIDIA only, from [github.com/OpenBMB](https://github.com/OpenBMB/VoxCPM/blob/f772e498a45fbb5fb8e13fbf9b9c48be9fe33e69/README.md))
+   
+   ```sh
+   pip install voxcpm && voxcpm design --text "Hello, world." --hf-model-id openbmb/VoxCPM-0.5B --output out.wav
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~5GB
-pip install voxcpm && voxcpm design --text "Hello, world." --hf-model-id openbmb/VoxCPM-0.5B --output out.wav
-```
+Official weights and documentation: [huggingface.co/openbmb](https://huggingface.co/openbmb/VoxCPM-0.5B)
 
 [interactive version](https://whatmodel.sh/model/voxcpm-0-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

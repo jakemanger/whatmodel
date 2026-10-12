@@ -113,10 +113,10 @@ weighted average                                   = 77.2
 
 ## How to run it
 
+### Through an API
+
 api (Meta) · $2.00/M blended · $1.25 in / $4.25 out per 1M tokens · [dev.meta.ai](https://dev.meta.ai/docs/pricing-rate-limits)
 
 <sub>[price source](https://dev.meta.ai/docs/pricing-rate-limits): USD per 1M tokens, Meta Developer Platform Standard tier (prompts not used for training) for muse-spark-1.3; cached input $0.15/1M and the cheaper Contributor tier (muse-spark-1.3-contributor, data used for training) excluded; web-search grounding billed separately; page states no long-context premium. Currency: USD. Meta official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/meta/muse-spark-1.3.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/muse-spark-1-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

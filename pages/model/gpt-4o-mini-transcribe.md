@@ -82,10 +82,10 @@ weighted average                                   = 55.6
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $0.0030/audio min · [developers.openai.com](https://developers.openai.com/api/docs/pricing)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): Provider-published estimated cost per audio minute; underlying billing uses audio/text tokens. Exact endpoint gpt-4o-mini-transcribe. Product: Audio transcription. API model: gpt-4o-mini-transcribe. Settings: endpoint=/v1/audio/transcriptions, streaming=no. Price basis: provider-published estimate. Currency: USD.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-4o-mini-transcribe) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -51,20 +51,14 @@ weighted average                                   = 48.1
 
 ## How to run it
 
-<pre>
-version                               needs  score
-bf16 + Qwen3-VL 4B q4_k_m (sd.cpp)  ~13.8GB   48.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 + QWEN3-VL 4B Q4_K_M (SD.CPP), needs ~13.8 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/mage_flow.md))
+   
+   ```sh
+   sd-cli --diffusion-model models/mage_flow_base_bf16.safetensors --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/mage_flow_vae_bf16.safetensors -p "a lovely cat holding a sign says 'mage.cpp'" --cfg-scale 5.0 --steps 30 --diffusion-fa -v --offload-to-cpu
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 + Qwen3-VL 4B q4_k_m (sd.cpp) · ~13.8GB
-sd-cli --diffusion-model models/mage_flow_base_bf16.safetensors --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/mage_flow_vae_bf16.safetensors -p "a lovely cat holding a sign says 'mage.cpp'" --cfg-scale 5.0 --steps 30 --diffusion-fa -v --offload-to-cpu
-```
+Official weights and documentation: [github.com/microsoft](https://github.com/microsoft/Mage)
 
 [interactive version](https://whatmodel.sh/model/mage-flow-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

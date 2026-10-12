@@ -45,23 +45,16 @@ weighted average                                   = 62.3
 
 ## How to run it
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~6.04GB   62.3
-bf16 · mac only     ~6.04GB   62.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~6.04 GB, NVIDIA only, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-1b-speech))
+   
+   ```sh
+   vllm serve ibm-granite/granite-4.0-1b-speech --max-model-len 2048
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~6.04 GB, Mac only) `uvx --from mlx-audio mlx_audio.stt.generate --model ibm-granite/granite-4.0-1b-speech --audio audio.wav --output-path transcript`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~6.04GB
-vllm serve ibm-granite/granite-4.0-1b-speech --max-model-len 2048
-# bf16 · mac only · ~6.04GB
-uvx --from mlx-audio mlx_audio.stt.generate --model ibm-granite/granite-4.0-1b-speech --audio audio.wav --output-path transcript
-```
+Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.0-1b-speech)
 
 [interactive version](https://whatmodel.sh/model/granite-4-0-1b-speech) · [JSON](https://whatmodel.sh/api?format=json&all=1)

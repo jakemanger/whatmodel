@@ -45,26 +45,16 @@ weighted average                                   = 36.1
 
 ## How to run it
 
-<pre>
-version                needs  score
-fp16 · nvidia only    ~3.6GB   36.1
-fp16 (sd.cpp)         ~5.9GB   36.1
-q8_0 (sd.cpp --type)  ~3.3GB   36.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~3.6 GB, NVIDIA only, from [huggingface.co/segmind](https://huggingface.co/segmind/SSD-1B))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionXLPipeline; p=StableDiffusionXLPipeline.from_pretrained('segmind/SSD-1B', torch_dtype=torch.float16, use_safetensors=True, variant='fp16').to('cuda'); p(prompt='a cat holding a sign').images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
+Other versions: fp16 (sd.cpp) (~5.9 GB) `sd-cli -m models/SSD-1B-A1111.safetensors -H 1024 -W 1024 -p "a lovely cat" -v` · Q8_0 (SD.CPP --TYPE) (~3.3 GB) `sd-cli -m models/SSD-1B-A1111.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" -v`
 
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~3.6GB
-uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionXLPipeline; p=StableDiffusionXLPipeline.from_pretrained('segmind/SSD-1B', torch_dtype=torch.float16, use_safetensors=True, variant='fp16').to('cuda'); p(prompt='a cat holding a sign').images[0].save('out.png')"
-# fp16 (sd.cpp) · ~5.9GB
-sd-cli -m models/SSD-1B-A1111.safetensors -H 1024 -W 1024 -p "a lovely cat" -v
-# q8_0 (sd.cpp --type) · ~3.3GB
-sd-cli -m models/SSD-1B-A1111.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" -v
-```
+Official weights and documentation: [huggingface.co/segmind](https://huggingface.co/segmind/SSD-1B)
 
 [interactive version](https://whatmodel.sh/model/ssd-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

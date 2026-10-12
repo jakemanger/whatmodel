@@ -41,78 +41,95 @@ weighted average                        = 52.5
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/8c6ed5c8d18527d9daed994f645032b86c53f0bb/README.md): Card hyper-parameter table: 'Sequence Length 32,768'. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-16-bit bf16 · nvidia only  ~45.27GB   52.5
-4-bit Q4_K_M                ~13.7GB   52.5
-8-bit Q8_0                  ~24.1GB   52.5
-4-bit mlx-4bit · mac only   ~12.7GB   52.5
-4-bit mlx-8bit · mac only   ~24.1GB   52.5
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run EuroLLM 22B Instruct (2512) (Q4_K_M, needs ~13.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF/tree/1dbd312ffa10e83e5faa855e3727cbf4abc45f08))
+   
+   ```sh
+   llama cli -hf bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~24.1 GB) `llama cli -hf bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~13.7GB
-llama cli -hf bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~24.1GB
-llama cli -hf bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~13.7GB
-lms get https://huggingface.co/bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~24.1GB
-lms get https://huggingface.co/bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~12.7GB
-lms get https://huggingface.co/mlx-community/EuroLLM-22B-Instruct-2512-mlx-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~24.1GB
-lms get https://huggingface.co/mlx-community/EuroLLM-22B-Instruct-2512-mlx-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run EuroLLM 22B Instruct (2512) (Q4_K_M, needs ~13.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF/tree/1dbd312ffa10e83e5faa855e3727cbf4abc45f08))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~13.7GB
-ollama run hf.co/bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~24.1GB
-ollama run hf.co/bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF:Q8_0
-```
+Other versions: Q8_0 (~24.1 GB) `lms get https://huggingface.co/bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF@Q8_0 -y` · 4bit (~12.7 GB, Mac only) `lms get https://huggingface.co/mlx-community/EuroLLM-22B-Instruct-2512-mlx-4bit -y` · 8bit (~24.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/EuroLLM-22B-Instruct-2512-mlx-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~12.7GB
-mlx_lm.chat --model mlx-community/EuroLLM-22B-Instruct-2512-mlx-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/EuroLLM-22B-Instruct-2512-mlx-4bit
-# 4-bit mlx-8bit · mac only · ~24.1GB
-mlx_lm.chat --model mlx-community/EuroLLM-22B-Instruct-2512-mlx-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/EuroLLM-22B-Instruct-2512-mlx-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-**Other engines**
+2. Run EuroLLM 22B Instruct (2512) (Q4_K_M, needs ~13.7 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF/tree/1dbd312ffa10e83e5faa855e3727cbf4abc45f08))
+   
+   ```sh
+   ollama run hf.co/bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF:Q4_K_M
+   ```
 
-```sh
-# 16-bit bf16 · nvidia only · ~45.27GB
-vllm serve utter-project/EuroLLM-22B-Instruct-2512
-```
+Other versions: Q8_0 (~24.1 GB) `ollama run hf.co/bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run EuroLLM 22B Instruct (2512) (4bit, needs ~12.7 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/EuroLLM-22B-Instruct-2512-mlx-4bit/tree/dcb329c32383c834402db9c0dc569593a6bc529c))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/EuroLLM-22B-Instruct-2512-mlx-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/EuroLLM-22B-Instruct-2512-mlx-4bit
+   ```
+
+Other versions: 8bit (~24.1 GB, Mac only) `mlx_lm.chat --model mlx-community/EuroLLM-22B-Instruct-2512-mlx-8bit`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~45.27 GB, NVIDIA only, from [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/tree/8c6ed5c8d18527d9daed994f645032b86c53f0bb))
+   
+   ```sh
+   vllm serve utter-project/EuroLLM-22B-Instruct-2512
+   ```
+
+Official weights and documentation: [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512)
 
 [interactive version](https://whatmodel.sh/model/eurollm-22b-instruct-2512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -54,58 +54,83 @@ weighted average                                   = 56.2
 
 ## How to run it
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~19.85GB   56.2
-4-bit mlx-4bit · mac only   ~18.4GB   56.2
-4-bit mlx-8bit · mac only   ~34.8GB   56.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Sky-T1 32B Preview (Q4_K_M, needs ~19.85 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Sky-T1-32B-Preview-GGUF/tree/4e54d0a46412fce56f2dc0a561c999a0378b1244))
+   
+   ```sh
+   llama cli -hf bartowski/Sky-T1-32B-Preview-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/Sky-T1-32B-Preview-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit q4_k_m · ~19.85GB
-llama cli -hf bartowski/Sky-T1-32B-Preview-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Sky-T1-32B-Preview-GGUF:Q4_K_M
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit q4_k_m · ~19.85GB
-lms get https://huggingface.co/bartowski/Sky-T1-32B-Preview-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~18.4GB
-lms get https://huggingface.co/mlx-community/Sky-T1-32B-Preview-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~34.8GB
-lms get https://huggingface.co/mlx-community/Sky-T1-32B-Preview-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Sky-T1 32B Preview (Q4_K_M, needs ~19.85 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Sky-T1-32B-Preview-GGUF/tree/4e54d0a46412fce56f2dc0a561c999a0378b1244))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/Sky-T1-32B-Preview-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~19.85GB
-ollama run hf.co/bartowski/Sky-T1-32B-Preview-GGUF:Q4_K_M
-```
+Other versions: 4bit (~18.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/Sky-T1-32B-Preview-4bit -y` · 8bit (~34.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Sky-T1-32B-Preview-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~18.4GB
-mlx_lm.chat --model mlx-community/Sky-T1-32B-Preview-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Sky-T1-32B-Preview-4bit
-# 4-bit mlx-8bit · mac only · ~34.8GB
-mlx_lm.chat --model mlx-community/Sky-T1-32B-Preview-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Sky-T1-32B-Preview-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Sky-T1 32B Preview (Q4_K_M, needs ~19.85 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Sky-T1-32B-Preview-GGUF/tree/4e54d0a46412fce56f2dc0a561c999a0378b1244))
+   
+   ```sh
+   ollama run hf.co/bartowski/Sky-T1-32B-Preview-GGUF:Q4_K_M
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Sky-T1 32B Preview (4bit, needs ~18.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Sky-T1-32B-Preview-4bit/tree/ab7b2707012796ab42815581df96c684a915712c))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Sky-T1-32B-Preview-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Sky-T1-32B-Preview-4bit
+   ```
+
+Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model mlx-community/Sky-T1-32B-Preview-8bit`
+
+Official weights and documentation: [huggingface.co/NovaSky-AI](https://huggingface.co/NovaSky-AI/Sky-T1-32B-Preview)
 
 [interactive version](https://whatmodel.sh/model/sky-t1-32b-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

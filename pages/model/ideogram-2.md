@@ -50,10 +50,10 @@ weighted average                                   = 46.2
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.080/image · [replicate.com](https://replicate.com/ideogram-ai/ideogram-v2)
 
 <sub>[price source](https://replicate.com/ideogram-ai/ideogram-v2): USD per output image on Replicate's official ideogram-ai/ideogram-v2 model (billing: $0.08 per output image, "or around 12 images for $1"; hardware time not added). Product: Replicate model API. API model: ideogram-ai/ideogram-v2 (Ideogram 2.0, not the Turbo variant). Settings: one output image. Price basis: published list rate. fal's fal-ai/ideogram/v2 also bills $0.08 per image. Ideogram's own API still serves V\_2 through its legacy /generate endpoint, but its API pricing page did not render a price. Currency: USD. Not an Ideogram direct tariff. Replicate official model page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/ideogram-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

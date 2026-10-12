@@ -63,20 +63,14 @@ BAAI    <a href="https://arxiv.org/html/2409.18869v1">GenEval</a>    54.0%  too 
 
 ## How to run it
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~22.2GB   35.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~22.2 GB, NVIDIA only, from [github.com/baaivision](https://github.com/baaivision/Emu3/blob/dbbf9858194d70b8c58293e219ecffe22df0f9c7/README.md))
+   
+   ```sh
+   git clone https://github.com/baaivision/Emu3 && cd Emu3 && pip install -r requirements.txt && python image_generation.py
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~22.2GB
-git clone https://github.com/baaivision/Emu3 && cd Emu3 && pip install -r requirements.txt && python image_generation.py
-```
+Official weights and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/Emu3-Gen)
 
 [interactive version](https://whatmodel.sh/model/emu3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

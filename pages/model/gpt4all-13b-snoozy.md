@@ -47,20 +47,14 @@ weighted average                                   = 26.3
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit fp32  ~52.06GB   26.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~52.06 GB, from [huggingface.co/nomic-ai](https://huggingface.co/nomic-ai/gpt4all-13b-snoozy/tree/8e4f7bb712d579c820fdeb75ba81a8c48ad96b1e))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='nomic-ai/gpt4all-13b-snoozy', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp32 · ~52.06GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='nomic-ai/gpt4all-13b-snoozy', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/nomic-ai](https://huggingface.co/nomic-ai/gpt4all-13b-snoozy)
 
 [interactive version](https://whatmodel.sh/model/gpt4all-13b-snoozy) · [JSON](https://whatmodel.sh/api?format=json&all=1)

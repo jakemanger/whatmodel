@@ -44,78 +44,95 @@ weighted average                          = 37.3
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/01-ai/Yi-1.5-6B/blob/157a3d77ab5a8a8f079510eaa25169b547481f06/config.json): 01.AI official configuration for Yi-1.5-6B (pinned commit 157a3d7): max\_position\_embeddings 4096. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-16-bit bf16                ~12.12GB   37.3
-4-bit Q4_K_M                 ~3.7GB   37.3
-8-bit Q8_0                   ~6.4GB   37.3
-4-bit mlx-4bit · mac only    ~3.4GB   37.3
-4-bit mlx-8bit · mac only    ~6.4GB   37.3
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Yi-1.5 6B (base) (Q4_K_M, needs ~3.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF/tree/186db1015cb53ea94e23e9663ae9524c97304b24))
+   
+   ```sh
+   llama cli -hf mradermacher/Yi-1.5-6B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/Yi-1.5-6B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~6.4 GB) `llama cli -hf mradermacher/Yi-1.5-6B-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~3.7GB
-llama cli -hf mradermacher/Yi-1.5-6B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Yi-1.5-6B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~6.4GB
-llama cli -hf mradermacher/Yi-1.5-6B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Yi-1.5-6B-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~3.7GB
-lms get https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~6.4GB
-lms get https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~3.4GB
-lms get https://huggingface.co/mlx-community/Yi-1.5-6B-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~6.4GB
-lms get https://huggingface.co/mlx-community/Yi-1.5-6B-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Yi-1.5 6B (base) (Q4_K_M, needs ~3.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF/tree/186db1015cb53ea94e23e9663ae9524c97304b24))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~3.7GB
-ollama run hf.co/mradermacher/Yi-1.5-6B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~6.4GB
-ollama run hf.co/mradermacher/Yi-1.5-6B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~6.4 GB) `lms get https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF@Q8_0 -y` · 4bit (~3.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/Yi-1.5-6B-4bit -y` · 8bit (~6.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/Yi-1.5-6B-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~3.4GB
-mlx_lm.chat --model mlx-community/Yi-1.5-6B-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Yi-1.5-6B-4bit
-# 4-bit mlx-8bit · mac only · ~6.4GB
-mlx_lm.chat --model mlx-community/Yi-1.5-6B-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Yi-1.5-6B-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-**Other engines**
+2. Run Yi-1.5 6B (base) (Q4_K_M, needs ~3.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Yi-1.5-6B-GGUF/tree/186db1015cb53ea94e23e9663ae9524c97304b24))
+   
+   ```sh
+   ollama run hf.co/mradermacher/Yi-1.5-6B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 16-bit bf16 · ~12.12GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-1.5-6B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Other versions: Q8_0 (~6.4 GB) `ollama run hf.co/mradermacher/Yi-1.5-6B-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Yi-1.5 6B (base) (4bit, needs ~3.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Yi-1.5-6B-4bit/tree/42eb4fbd31077f4263c1416e3c2b858e94304545))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Yi-1.5-6B-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Yi-1.5-6B-4bit
+   ```
+
+Other versions: 8bit (~6.4 GB, Mac only) `mlx_lm.chat --model mlx-community/Yi-1.5-6B-8bit`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~12.12 GB, from [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-1.5-6B/tree/157a3d77ab5a8a8f079510eaa25169b547481f06))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='01-ai/Yi-1.5-6B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/01-ai](https://huggingface.co/01-ai/Yi-1.5-6B)
 
 [interactive version](https://whatmodel.sh/model/yi-1-5-6b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

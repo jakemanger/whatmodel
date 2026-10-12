@@ -83,20 +83,14 @@ weighted average                                   = 46.8
 
 ## How to run it
 
-<pre>
-download                       size  score
-16-bit bf16 · nvidia only  ~51.03GB   46.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~51.03 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+   
+   ```sh
+   vllm serve OpenGVLab/InternVL2-26B --trust-remote-code
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · nvidia only · ~51.03GB
-vllm serve OpenGVLab/InternVL2-26B --trust-remote-code
-```
+Official weights and documentation: [huggingface.co/OpenGVLab](https://huggingface.co/OpenGVLab/InternVL2-26B)
 
 [interactive version](https://whatmodel.sh/model/internvl2-26b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

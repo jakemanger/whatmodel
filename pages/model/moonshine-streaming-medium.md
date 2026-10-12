@@ -47,20 +47,14 @@ weighted average                                   = 50.4
 
 ## How to run it
 
-<pre>
-version   needs  score
-fp32     ~1.8GB   50.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~1.8 GB, from [huggingface.co/moonshine-ai](https://huggingface.co/moonshine-ai/moonshine-streaming-medium))
+   
+   ```sh
+   uv run --with transformers --with torch --with librosa python -c "import librosa; from transformers import MoonshineStreamingForConditionalGeneration as M, AutoProcessor as P; r='moonshine-ai/moonshine-streaming-medium'; m=M.from_pretrained(r); p=P.from_pretrained(r); i=p(librosa.load('audio.wav', sr=16000)[0], return_tensors='pt', sampling_rate=16000); print(p.decode(m.generate(**i, max_length=int(i.attention_mask.sum()*6.5/16000))[0], skip_special_tokens=True))"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · ~1.8GB
-uv run --with transformers --with torch --with librosa python -c "import librosa; from transformers import MoonshineStreamingForConditionalGeneration as M, AutoProcessor as P; r='moonshine-ai/moonshine-streaming-medium'; m=M.from_pretrained(r); p=P.from_pretrained(r); i=p(librosa.load('audio.wav', sr=16000)[0], return_tensors='pt', sampling_rate=16000); print(p.decode(m.generate(**i, max_length=int(i.attention_mask.sum()*6.5/16000))[0], skip_special_tokens=True))"
-```
+Official weights and documentation: [huggingface.co/moonshine-ai](https://huggingface.co/moonshine-ai/moonshine-streaming-medium)
 
 [interactive version](https://whatmodel.sh/model/moonshine-streaming-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -43,6 +43,8 @@ weighted average                                   = 31.0
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [github.com/asappresearch](https://github.com/asappresearch/simple-tts)
 
 [interactive version](https://whatmodel.sh/model/simple-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

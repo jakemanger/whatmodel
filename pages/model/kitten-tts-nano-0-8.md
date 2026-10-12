@@ -43,6 +43,8 @@ weighted average                                   = 44.4
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/KittenML](https://huggingface.co/KittenML/kitten-tts-nano-0.8-fp32/tree/7a1db645b1f3ab9420761d87428e042b9cec3f26)
 
 [interactive version](https://whatmodel.sh/model/kitten-tts-nano-0-8) · [JSON](https://whatmodel.sh/api?format=json&all=1)

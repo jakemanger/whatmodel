@@ -40,78 +40,99 @@ weighted average                            = 51.6
 
 ## How to run it
 
+### Through an API
+
 api (AI21 Labs) · price unknown · [docs.ai21.com](https://docs.ai21.com/docs/jamba-foundation-models)
 
 <sub>[context source](https://docs.ai21.com/docs/jamba-foundation-models): AI21 docs Model Details: 'Max Tokens 256K' for Jamba Mini version 2 (snapshot 2026-01); config.json max\_position\_embeddings 262144. Observed 2026-10-09.</sub>
 
-<pre>
-download                                       size  score
-16-bit bf16 weights, experts_int8 at lo…  ~103.14GB   51.6
-4-bit Q4_K_M                                ~31.2GB   51.6
-8-bit Q8_0                                  ~54.8GB   51.6
-4-bit mlx-4bit · mac only                     ~29GB   51.6
-4-bit mlx-8bit · mac only                   ~54.8GB   51.6
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Jamba2 Mini (Q4_K_M, needs ~31.2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ai21labs_AI21-Jamba2-Mini-GGUF/tree/867828fd45f0c97816d26b27ca14d9b40ee12f91))
+   
+   ```sh
+   llama cli -hf bartowski/ai21labs_AI21-Jamba2-Mini-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/ai21labs_AI21-Jamba2-Mini-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~31.2GB
-llama cli -hf bartowski/ai21labs_AI21-Jamba2-Mini-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/ai21labs_AI21-Jamba2-Mini-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~54.8GB
-llama cli -hf bartowski/ai21labs_AI21-Jamba2-Mini-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/ai21labs_AI21-Jamba2-Mini-GGUF:Q8_0
-```
+Other versions: Q8_0 (~54.8 GB) `llama cli -hf bartowski/ai21labs_AI21-Jamba2-Mini-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~31.2GB
-lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba2-Mini-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~54.8GB
-lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba2-Mini-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~29GB
-lms get https://huggingface.co/ncls-p/AI21-Jamba2-Mini-mlx-4Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~54.8GB
-lms get https://huggingface.co/ncls-p/AI21-Jamba2-Mini-mlx-8Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Jamba2 Mini (Q4_K_M, needs ~31.2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ai21labs_AI21-Jamba2-Mini-GGUF/tree/867828fd45f0c97816d26b27ca14d9b40ee12f91))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba2-Mini-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~31.2GB
-ollama run hf.co/bartowski/ai21labs_AI21-Jamba2-Mini-GGUF:Q4_K_M
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~54.8 GB) `lms get https://huggingface.co/bartowski/ai21labs_AI21-Jamba2-Mini-GGUF@Q8_0 -y` · 4bit (~29 GB, Mac only) `lms get https://huggingface.co/ncls-p/AI21-Jamba2-Mini-mlx-4Bit -y` · 8bit (~54.8 GB, Mac only) `lms get https://huggingface.co/ncls-p/AI21-Jamba2-Mini-mlx-8Bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~29GB
-mlx_lm.chat --model ncls-p/AI21-Jamba2-Mini-mlx-4Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model ncls-p/AI21-Jamba2-Mini-mlx-4Bit
-# 4-bit mlx-8bit · mac only · ~54.8GB
-mlx_lm.chat --model ncls-p/AI21-Jamba2-Mini-mlx-8Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model ncls-p/AI21-Jamba2-Mini-mlx-8Bit
-```
+### Ollama
 
-**Other engines**
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 16-bit bf16 weights, experts_int8 at load · nvidia only · ~103.14GB
-vllm serve ai21labs/AI21-Jamba2-Mini --mamba-ssm-cache-dtype float32 --enable-auto-tool-choice --tool-call-parser hermes --enable-prefix-caching --quantization experts_int8
-```
+2. Run Jamba2 Mini (Q4_K_M, needs ~31.2 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/ai21labs_AI21-Jamba2-Mini-GGUF/tree/867828fd45f0c97816d26b27ca14d9b40ee12f91))
+   
+   ```sh
+   ollama run hf.co/bartowski/ai21labs_AI21-Jamba2-Mini-GGUF:Q4_K_M
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Jamba2 Mini (4bit, needs ~29 GB, Mac only, from [huggingface.co/ncls-p](https://huggingface.co/ncls-p/AI21-Jamba2-Mini-mlx-4Bit/tree/77ad6c2fc5fe4babd25903035dba9fea75c11a3a))
+   
+   ```sh
+   mlx_lm.chat --model ncls-p/AI21-Jamba2-Mini-mlx-4Bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model ncls-p/AI21-Jamba2-Mini-mlx-4Bit
+   ```
+
+Other versions: 8bit (~54.8 GB, Mac only) `mlx_lm.chat --model ncls-p/AI21-Jamba2-Mini-mlx-8Bit`
+
+### Other ways to run it
+
+1. Run it as published (BF16 WEIGHTS, EXPERTS_INT8 AT LOAD, needs ~103.14 GB, NVIDIA only, from [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba2-Mini/blob/24cbbd23e3df170f254aa601d907cdf416ffd344/README.md))
+   
+   ```sh
+   vllm serve ai21labs/AI21-Jamba2-Mini --mamba-ssm-cache-dtype float32 --enable-auto-tool-choice --tool-call-parser hermes --enable-prefix-caching --quantization experts_int8
+   ```
+
+Official weights and documentation: [huggingface.co/ai21labs](https://huggingface.co/ai21labs/AI21-Jamba2-Mini)
 
 [interactive version](https://whatmodel.sh/model/jamba2-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

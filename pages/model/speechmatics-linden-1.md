@@ -42,10 +42,10 @@ weighted average                                   = 68.5
 
 ## How to run it
 
+### Through an API
+
 api (Speechmatics) · $0.0050/audio min · [speechmatics.com](https://www.speechmatics.com/company/articles-and-news/meet-agent-stt-powered-by-linden-1-fast-accurate-speech-recognition)
 
 <sub>[price source](https://www.speechmatics.com/pricing): USD per input audio minute: Speechmatics pricing page model data for 'Linden 1' (Voice agents, 'Only available as a Real-time model') gives realtime baseHourly 0.3, i.e. $0.30/hr (÷60); the launch article states 'Launch pricing is $0.30 per hour'. Product: Speechmatics Agent STT (wss /v2/agent). API model: linden-1. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: volume and model-training discounts (down to $0.16/hr). Currency: USD. Speechmatics official pricing page, observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/speechmatics-linden-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

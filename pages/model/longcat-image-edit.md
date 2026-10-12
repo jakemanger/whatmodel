@@ -76,24 +76,20 @@ Meituan LongCat  <a href="https://arxiv.org/html/2512.07584v1">ImgEdit-Bench ove
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.15/image · [fal.ai](https://fal.ai/models/fal-ai/longcat-image/edit)
 
 <sub>[price source](https://fal.ai/models/fal-ai/longcat-image/edit): USD for one 1-megapixel output: fal bills this endpoint $0.15 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/longcat-image/edit (LongCat Image Edit). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Meituan direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-<pre>
-version                                   needs  score
-bf16 + model CPU offload · nvidia only  ~35.7GB   56.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 + MODEL CPU OFFLOAD, needs ~35.7 GB, NVIDIA only, from [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-Image-Edit/blob/7b54ef423aa7854be7861600024be5c56ab7875a/README.md))
+   
+   ```sh
+   uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch python -c "import torch; from PIL import Image; from diffusers import LongCatImageEditPipeline; p=LongCatImageEditPipeline.from_pretrained('meituan-longcat/LongCat-Image-Edit', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p(Image.open('input.png').convert('RGB'), 'turn the cat into a dog', negative_prompt='', guidance_scale=4.5, num_inference_steps=50, num_images_per_prompt=1, generator=torch.Generator('cpu').manual_seed(43)).images[0].save('edit_example.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 + model CPU offload · nvidia only · ~35.7GB
-uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch python -c "import torch; from PIL import Image; from diffusers import LongCatImageEditPipeline; p=LongCatImageEditPipeline.from_pretrained('meituan-longcat/LongCat-Image-Edit', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p(Image.open('input.png').convert('RGB'), 'turn the cat into a dog', negative_prompt='', guidance_scale=4.5, num_inference_steps=50, num_images_per_prompt=1, generator=torch.Generator('cpu').manual_seed(43)).images[0].save('edit_example.png')"
-```
+Official weights and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-Image-Edit)
 
 [interactive version](https://whatmodel.sh/model/longcat-image-edit) · [JSON](https://whatmodel.sh/api?format=json&all=1)

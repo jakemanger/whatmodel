@@ -42,6 +42,8 @@ weighted average                        = 47.6
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/ShoukanLabs](https://huggingface.co/ShoukanLabs/Vokan)
 
 [interactive version](https://whatmodel.sh/model/vokan) · [JSON](https://whatmodel.sh/api?format=json&all=1)

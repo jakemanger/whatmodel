@@ -42,10 +42,10 @@ weighted average                                   = 76.2
 
 ## How to run it
 
+### Through an API
+
 api (MiniMax) · $0.080/sec · [platform.minimax.io](https://platform.minimax.io/docs/guides/pricing-paygo.md)
 
 <sub>[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md): USD per generated second at 768P on MiniMax's pay-as-you-go Video Generation pricing: 'MiniMax-H3-Max \| 768P \| Billed per second \| $0.08 / second' (480P $0.05/s; input images: first 2 free then $0.074 each; input video billed separately). Product: MiniMax Video Generation API. API model: MiniMax-H3-Max. Settings: 768P, text or first/last-frame image input. Price basis: published list rate. Currency: USD. MiniMax official pricing doc, observed 2026-10-10.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/minimax-h3-max) · [JSON](https://whatmodel.sh/api?format=json&all=1)

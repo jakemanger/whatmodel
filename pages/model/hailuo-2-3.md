@@ -65,10 +65,10 @@ weighted average                                   = 54.7
 
 ## How to run it
 
+### Through an API
+
 api (MiniMax) · $0.047/sec · [platform.minimax.io](https://platform.minimax.io/docs/guides/pricing-paygo.md)
 
 <sub>[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md): USD per second of output video, 768P, derived from MiniMax's pay-as-you-go price of $0.28 per 768P 6-second video (÷ 6). Product: MiniMax video generation (listed under Legacy Models). API model: MiniMax-Hailuo-2.3. Settings: resolution=768P, duration=6 s. A 10-s 768P video costs $0.56 ($0.056/s); a 6-s 1080P video costs $0.49. Hailuo-2.3-Fast excluded. Currency: USD. MiniMax pay-as-you-go pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/hailuo-2-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

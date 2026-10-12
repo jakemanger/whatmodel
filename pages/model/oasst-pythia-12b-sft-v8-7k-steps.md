@@ -44,20 +44,14 @@ weighted average                              = 26.1
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit fp16  ~23.84GB   26.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~23.84 GB, from [huggingface.co/OpenAssistant](https://huggingface.co/OpenAssistant/pythia-12b-sft-v8-7k-steps/tree/275c9b71bfab4e271d1ed85515c61e317b6ef65e))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='OpenAssistant/pythia-12b-sft-v8-7k-steps', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp16 · ~23.84GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='OpenAssistant/pythia-12b-sft-v8-7k-steps', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/OpenAssistant](https://huggingface.co/OpenAssistant/pythia-12b-sft-v8-7k-steps)
 
 [interactive version](https://whatmodel.sh/model/oasst-pythia-12b-sft-v8-7k-steps) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -119,66 +119,90 @@ weighted average                                   = 63.1
 
 ## How to run it
 
+### Through an API
+
 api (Deep Infra) · $0.34/M blended · $0.09 in / $1.1 out per 1M tokens · [deepinfra.com](https://deepinfra.com/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/Qwen/Qwen3-Next-80B-A3B-Instruct.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/alibaba/qwen3-next-80b-a3b-instruct.toml)</sub>
 
-<pre>
-download                      size  score
-4-bit q4_k_m               ~48.5GB   63.1
-2-bit ud-q2_k_xl           ~24.5GB   63.1
-4-bit mlx-4bit · mac only  ~44.8GB   63.1
-4-bit mlx-8bit · mac only  ~84.7GB   63.1
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Qwen3-Next 80B-A3B Instruct (ud-q2_k_xl, needs ~24.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3-Next-80B-A3B-Instruct-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/Qwen3-Next-80B-A3B-Instruct-GGUF:UD-Q2_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/Qwen3-Next-80B-A3B-Instruct-GGUF:UD-Q2_K_XL
+   ```
 
-```sh
-# 2-bit ud-q2_k_xl · ~24.5GB
-llama cli -hf unsloth/Qwen3-Next-80B-A3B-Instruct-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Qwen3-Next-80B-A3B-Instruct-GGUF:UD-Q2_K_XL
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 2-bit ud-q2_k_xl · ~24.5GB
-lms get https://huggingface.co/unsloth/Qwen3-Next-80B-A3B-Instruct-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~44.8GB
-lms get https://huggingface.co/lmstudio-community/Qwen3-Next-80B-A3B-Instruct-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~84.7GB
-lms get https://huggingface.co/lmstudio-community/Qwen3-Next-80B-A3B-Instruct-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Qwen3-Next 80B-A3B Instruct (4bit, needs ~44.8 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-Next-80B-A3B-Instruct-MLX-4bit/tree/6d14222d4664dba1aa9f3251696c8254c6e994af))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/Qwen3-Next-80B-A3B-Instruct-MLX-4bit -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~48.5GB
-ollama run qwen3-next:80b-a3b-instruct-q4_K_M
-# 2-bit ud-q2_k_xl · ~24.5GB
-ollama run hf.co/unsloth/Qwen3-Next-80B-A3B-Instruct-GGUF:UD-Q2_K_XL
-```
+Other versions: ud-q2_k_xl (~24.5 GB) `lms get https://huggingface.co/unsloth/Qwen3-Next-80B-A3B-Instruct-GGUF@UD-Q2_K_XL -y` · 8bit (~84.7 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-Next-80B-A3B-Instruct-MLX-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~44.8GB
-mlx_lm.chat --model lmstudio-community/Qwen3-Next-80B-A3B-Instruct-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Qwen3-Next-80B-A3B-Instruct-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~84.7GB
-mlx_lm.chat --model lmstudio-community/Qwen3-Next-80B-A3B-Instruct-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Qwen3-Next-80B-A3B-Instruct-MLX-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Qwen3-Next 80B-A3B Instruct (Q4_K_M, needs ~48.5 GB, from [ollama.com](https://ollama.com/library/qwen3-next/tags))
+   
+   ```sh
+   ollama run qwen3-next:80b-a3b-instruct-q4_K_M
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Qwen3-Next 80B-A3B Instruct (4bit, needs ~44.8 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-Next-80B-A3B-Instruct-MLX-4bit/tree/6d14222d4664dba1aa9f3251696c8254c6e994af))
+   
+   ```sh
+   mlx_lm.chat --model lmstudio-community/Qwen3-Next-80B-A3B-Instruct-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lmstudio-community/Qwen3-Next-80B-A3B-Instruct-MLX-4bit
+   ```
+
+Other versions: 8bit (~84.7 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-Next-80B-A3B-Instruct-MLX-8bit`
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct)
 
 ## Published speed measurements
 

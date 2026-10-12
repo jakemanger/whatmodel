@@ -52,20 +52,14 @@ weighted average                                   = 31.1
 
 ## How to run it
 
-<pre>
-download       size  score
-4-bit fp32  ~11.4GB   31.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~11.4 GB, from [huggingface.co/google](https://huggingface.co/google/flan-t5-xl/tree/7d6315df2c2fb742f0f5b556879d730926ca9001))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-xl', torch_dtype='auto', device_map='auto')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp32 · ~11.4GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-xl', torch_dtype='auto', device_map='auto')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/flan-t5-xl)
 
 [interactive version](https://whatmodel.sh/model/flan-t5-xl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

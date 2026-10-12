@@ -65,20 +65,19 @@ weighted average                                   = 34.6
 
 ## How to run it
 
-<pre>
-download    size  score
-4-bit q4_0  ~4GB   34.6
-</pre>
+### Ollama (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-### Run it on your own machine
-
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
-
-```sh
-# 4-bit q4_0 · ~4GB
-ollama run deepseek-llm:7b
-```
+2. Run DeepSeek LLM 7B Chat (Q4_0, needs ~4 GB, from [ollama.com](https://ollama.com/library/deepseek-llm/tags))
+   
+   ```sh
+   ollama run deepseek-llm:7b
+   ```
 
 [interactive version](https://whatmodel.sh/model/deepseek-llm-7b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

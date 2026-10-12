@@ -53,20 +53,14 @@ weighted average                                   = 46.2
 
 ## How to run it
 
-<pre>
-version                needs  score
-fp32 (Amphion repo)  ~6.78GB   46.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (Amphion repo), needs ~6.78 GB, from [github.com/open-mmlab](https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/vc/vevo/README.md))
+   
+   ```sh
+   git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create -n vevo python=3.10 && conda activate vevo && pip install -r models/vc/vevo/requirements.txt && python -m models.vc.vevo.infer_vevotts
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (Amphion repo) · ~6.78GB
-git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create -n vevo python=3.10 && conda activate vevo && pip install -r models/vc/vevo/requirements.txt && python -m models.vc.vevo.infer_vevotts
-```
+Official weights and documentation: [huggingface.co/amphion](https://huggingface.co/amphion/Vevo)
 
 [interactive version](https://whatmodel.sh/model/amphion-vevo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

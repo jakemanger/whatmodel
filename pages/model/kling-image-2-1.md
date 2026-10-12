@@ -43,10 +43,10 @@ weighted average                                   = 52.9
 
 ## How to run it
 
+### Through an API
+
 api (Kling AI) · $0.014/image · [kling.ai](https://kling.ai/dev/pricing)
 
 <sub>[price source](https://kling.ai/dev/pricing): USD per generated image, Kling Image 2.1 text-to-image at 1K or 2K: Kling lists 4 Units ($0.014) per image (1 Unit = $0.0035 list price); image-to-image is 8 Units ($0.028) per image. Product: Kling Image Generation API. API model: Kling Image 2.1. Settings: text-to-image, resolution 1K/2K, one image. Price basis: 4 units × $0.0035 per unit; Kling prints $0.014. Prepaid resource packages. Currency: USD. Kling AI developer pricing page (price table embedded in the page's configuration data), observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/kling-image-2-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

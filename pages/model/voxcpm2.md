@@ -80,32 +80,16 @@ weighted average                              = 64.0
 
 ## How to run it
 
-<pre>
-version                            needs  score
-bf16 (voxcpm)                    ~4.96GB   64.0
-q8_0 (llama.cpp-omni)            ~3.55GB   64.0
-mlx-bf16 (mlx-audio) · mac only  ~4.96GB   64.0
-mlx-8bit (mlx-audio) · mac only  ~3.23GB   64.0
-mlx-4bit (mlx-audio) · mac only   ~2.3GB   64.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (4bit (mlx-audio), needs ~2.3 GB, Mac only, from [github.com/Blaizzy](https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/mlx_audio/tts/models/voxcpm2/README.md))
+   
+   ```sh
+   pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/VoxCPM2-4bit --text "Hello world" --play
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (VOXCPM) (~4.96 GB) `pip install voxcpm && voxcpm design --text "VoxCPM2 brings studio-quality multilingual speech synthesis." --output out.wav` · Q8_0 (LLAMA.CPP-OMNI) (~3.55 GB) `git clone https://github.com/tc-mb/llama.cpp-omni.git && cd llama.cpp-omni && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build --target voxcpm2-cli -j && huggingface-cli download DennisHuang648/VoxCPM2-GGUF VoxCPM2-BaseLM-Q8_0.gguf VoxCPM2-Acoustic-F16.gguf --local-dir . && ./build/bin/voxcpm2-cli -t "Hello, this is VoxCPM2 running through llama.cpp-omni." -o output.wav VoxCPM2-BaseLM-Q8_0.gguf VoxCPM2-Acoustic-F16.gguf` · BF16 (MLX-AUDIO) (~4.96 GB, Mac only) `pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/VoxCPM2-bf16 --text "Hello world" --play` · 8bit (mlx-audio) (~3.23 GB, Mac only) `pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/VoxCPM2-8bit --text "Hello world" --play`
 
-**Other engines**
-
-```sh
-# bf16 (voxcpm) · ~4.96GB
-pip install voxcpm && voxcpm design --text "VoxCPM2 brings studio-quality multilingual speech synthesis." --output out.wav
-# q8_0 (llama.cpp-omni) · ~3.55GB
-git clone https://github.com/tc-mb/llama.cpp-omni.git && cd llama.cpp-omni && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build --target voxcpm2-cli -j && huggingface-cli download DennisHuang648/VoxCPM2-GGUF VoxCPM2-BaseLM-Q8_0.gguf VoxCPM2-Acoustic-F16.gguf --local-dir . && ./build/bin/voxcpm2-cli -t "Hello, this is VoxCPM2 running through llama.cpp-omni." -o output.wav VoxCPM2-BaseLM-Q8_0.gguf VoxCPM2-Acoustic-F16.gguf
-# mlx-bf16 (mlx-audio) · mac only · ~4.96GB
-pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/VoxCPM2-bf16 --text "Hello world" --play
-# mlx-8bit (mlx-audio) · mac only · ~3.23GB
-pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/VoxCPM2-8bit --text "Hello world" --play
-# mlx-4bit (mlx-audio) · mac only · ~2.3GB
-pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/VoxCPM2-4bit --text "Hello world" --play
-```
+Official weights and documentation: [huggingface.co/openbmb](https://huggingface.co/openbmb/VoxCPM2)
 
 [interactive version](https://whatmodel.sh/model/voxcpm2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

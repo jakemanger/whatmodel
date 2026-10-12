@@ -43,20 +43,14 @@ weighted average                                   = 25.5
 
 ## How to run it
 
-<pre>
-download        size  score
-16-bit bf16  ~2.47GB   25.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~2.47 GB, from [huggingface.co/AymanTarig](https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v3/tree/5fad8275596b0bffff6bf2a61fd5db9d54f94ccc))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='AymanTarig/Llama-3.2-1B-FC-v3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~2.47GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='AymanTarig/Llama-3.2-1B-FC-v3', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/AymanTarig](https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v3)
 
 [interactive version](https://whatmodel.sh/model/thinkagent-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

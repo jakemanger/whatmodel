@@ -43,20 +43,14 @@ weighted average                                   = 38.4
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit fp32  ~11.82GB   38.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~11.82 GB, from [huggingface.co/inception42](https://huggingface.co/inception42/jais-family-2p7b-chat/tree/b2bf5d1bcd969ce868f66fb1ad8c3480289ea6b2))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='inception42/jais-family-2p7b-chat', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp32 · ~11.82GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='inception42/jais-family-2p7b-chat', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/inception42](https://huggingface.co/inception42/jais-family-2p7b-chat)
 
 [interactive version](https://whatmodel.sh/model/jais-family-2p7b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

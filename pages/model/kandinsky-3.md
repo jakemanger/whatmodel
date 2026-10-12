@@ -65,20 +65,14 @@ Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · vi
 
 ## How to run it
 
-<pre>
-version             needs  score
-fp16 · nvidia only  ~32GB   48.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~32 GB, NVIDIA only, from [huggingface.co/kandinsky-community](https://huggingface.co/kandinsky-community/kandinsky-3/blob/bf79e6c219da8a94abb50235fdc4567eb8fb4632/README.md))
+   
+   ```sh
+   uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-3', torch_dtype=torch.float16, variant='fp16').to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~32GB
-uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-3', torch_dtype=torch.float16, variant='fp16').to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')"
-```
+Official weights and documentation: [huggingface.co/kandinsky-community](https://huggingface.co/kandinsky-community/kandinsky-3)
 
 [interactive version](https://whatmodel.sh/model/kandinsky-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -47,53 +47,62 @@ weighted average                                   = 36.7
 
 ## How to run it
 
-<pre>
-download         size  score
-4-bit q4_k_m  ~4.84GB   36.7
-8-bit q8_0    ~9.19GB   36.7
-4-bit Q4_K_M   ~4.4GB   36.7
-8-bit Q8_0     ~7.7GB   36.7
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Dolphin 2.2.1 Mistral 7B (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF/tree/34548d6105f2ffdc35b066364a954d42c24a2d87))
+   
+   ```sh
+   llama cli -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.4GB
-llama cli -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~7.7GB
-llama cli -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~7.7 GB) `llama cli -hf TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~4.4GB
-lms get https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~7.7GB
-lms get https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Dolphin 2.2.1 Mistral 7B (Q4_K_M, needs ~4.4 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF/tree/34548d6105f2ffdc35b066364a954d42c24a2d87))
+   
+   ```sh
+   lms get https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~4.84GB
-ollama run dolphin-mistral:7b-v2.2.1-q4_K_M
-# 8-bit q8_0 · ~9.19GB
-ollama run dolphin-mistral:7b-v2.2.1-q8_0
-# 4-bit Q4_K_M · ~4.4GB
-ollama run hf.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~7.7GB
-ollama run hf.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF@Q8_0 -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Dolphin 2.2.1 Mistral 7B (Q4_K_M, needs ~4.84 GB, from [ollama.com](https://ollama.com/library/dolphin-mistral/tags))
+   
+   ```sh
+   ollama run dolphin-mistral:7b-v2.2.1-q4_K_M
+   ```
+
+Other versions: Q8_0 (~9.19 GB) `ollama run dolphin-mistral:7b-v2.2.1-q8_0`
+
+Official weights and documentation: [huggingface.co/dphn](https://huggingface.co/dphn/dolphin-2.2.1-mistral-7b)
 
 [interactive version](https://whatmodel.sh/model/dolphin-2-2-1-mistral-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

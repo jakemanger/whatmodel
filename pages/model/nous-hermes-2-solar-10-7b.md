@@ -42,52 +42,60 @@ weighted average                                 = 45.3
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/NousResearch/Nous-Hermes-2-SOLAR-10.7B/blob/14c1fbe2f71acdcd58247b30d5439bd572d52386/config.json): config.json max\_position\_embeddings 4096. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download         size  score
-4-bit q4_0     ~6.1GB   45.3
-4-bit Q4_K_M   ~6.5GB   45.3
-8-bit Q8_0    ~11.4GB   45.3
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Nous Hermes 2 SOLAR 10.7B (Q4_K_M, needs ~6.5 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF/tree/914258b1348bd7db9f5828c187c20901db5ac739))
+   
+   ```sh
+   llama cli -hf TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~11.4 GB) `llama cli -hf TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~6.5GB
-llama cli -hf TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~11.4GB
-llama cli -hf TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~6.5GB
-lms get https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~11.4GB
-lms get https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Nous Hermes 2 SOLAR 10.7B (Q4_K_M, needs ~6.5 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF/tree/914258b1348bd7db9f5828c187c20901db5ac739))
+   
+   ```sh
+   lms get https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_0 · ~6.1GB
-ollama run nous-hermes2:10.7b
-# 4-bit Q4_K_M · ~6.5GB
-ollama run hf.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~11.4GB
-ollama run hf.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~11.4 GB) `lms get https://huggingface.co/TheBloke/Nous-Hermes-2-SOLAR-10.7B-GGUF@Q8_0 -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Nous Hermes 2 SOLAR 10.7B (Q4_0, needs ~6.1 GB, from [ollama.com](https://ollama.com/library/nous-hermes2/tags))
+   
+   ```sh
+   ollama run nous-hermes2:10.7b
+   ```
+
+Official weights and documentation: [huggingface.co/NousResearch](https://huggingface.co/NousResearch/Nous-Hermes-2-SOLAR-10.7B)
 
 [interactive version](https://whatmodel.sh/model/nous-hermes-2-solar-10-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

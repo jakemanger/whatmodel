@@ -55,20 +55,14 @@ weighted average                                   = 24.5
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp16 · nvidia only  ~4.6GB   24.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~4.6 GB, NVIDIA only, from [huggingface.co/ali-vilab](https://huggingface.co/ali-vilab/text-to-video-ms-1.7b))
+   
+   ```sh
+   python -c "import torch;from diffusers import DiffusionPipeline;from diffusers.utils import export_to_video;p=DiffusionPipeline.from_pretrained('ali-vilab/text-to-video-ms-1.7b',torch_dtype=torch.float16,variant='fp16');p.enable_model_cpu_offload();export_to_video(p('Spiderman is surfing',num_inference_steps=25).frames[0],'modelscope.mp4')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~4.6GB
-python -c "import torch;from diffusers import DiffusionPipeline;from diffusers.utils import export_to_video;p=DiffusionPipeline.from_pretrained('ali-vilab/text-to-video-ms-1.7b',torch_dtype=torch.float16,variant='fp16');p.enable_model_cpu_offload();export_to_video(p('Spiderman is surfing',num_inference_steps=25).frames[0],'modelscope.mp4')"
-```
+Official weights and documentation: [huggingface.co/ali-vilab](https://huggingface.co/ali-vilab/text-to-video-ms-1.7b)
 
 [interactive version](https://whatmodel.sh/model/modelscope-t2v-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

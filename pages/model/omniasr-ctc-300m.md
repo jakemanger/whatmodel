@@ -58,20 +58,14 @@ weighted average                                   = 44.6
 
 ## How to run it
 
-<pre>
-version    needs  score
-bf16     ~1.29GB   44.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~1.29 GB, from [huggingface.co/facebook](https://huggingface.co/facebook/omniASR-CTC-300M))
+   
+   ```sh
+   uv run --python 3.12 --with omnilingual-asr python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_300M').transcribe(['audio.wav'], batch_size=1))"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · ~1.29GB
-uv run --python 3.12 --with omnilingual-asr python -c "from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_300M').transcribe(['audio.wav'], batch_size=1))"
-```
+Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/omniASR-CTC-300M)
 
 [interactive version](https://whatmodel.sh/model/omniasr-ctc-300m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

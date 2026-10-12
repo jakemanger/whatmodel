@@ -53,45 +53,64 @@ weighted average                              = 42.5
 
 ## How to run it
 
-<pre>
-download          size  score
-16-bit bf16   ~17.66GB   42.5
-4-bit q4_k_m    ~5.3GB   42.5
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Infinity-Instruct-3M-0625-Yi-1.5-9B (Q4_K_M, needs ~5.3 GB, from [huggingface.co/Cran-May](https://huggingface.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF/tree/702baff29bd8dcc6ded2a609237754157177128a))
+   
+   ```sh
+   llama cli -hf Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF:q4_k_m
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF:q4_k_m
+   ```
 
-```sh
-# 4-bit q4_k_m · ~5.3GB
-llama cli -hf Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF:q4_k_m
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF:q4_k_m
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit q4_k_m · ~5.3GB
-lms get https://huggingface.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF@q4_k_m -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Infinity-Instruct-3M-0625-Yi-1.5-9B (Q4_K_M, needs ~5.3 GB, from [huggingface.co/Cran-May](https://huggingface.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF/tree/702baff29bd8dcc6ded2a609237754157177128a))
+   
+   ```sh
+   lms get https://huggingface.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF@q4_k_m -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~5.3GB
-ollama run hf.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF:q4_k_m
-```
+### Ollama
 
-**Other engines**
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 16-bit bf16 · ~17.66GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='BAAI/Infinity-Instruct-3M-0625-Yi-1.5-9B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+2. Run Infinity-Instruct-3M-0625-Yi-1.5-9B (Q4_K_M, needs ~5.3 GB, from [huggingface.co/Cran-May](https://huggingface.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF/tree/702baff29bd8dcc6ded2a609237754157177128a))
+   
+   ```sh
+   ollama run hf.co/Cran-May/Infinity-Instruct-3M-0625-Yi-1.5-9B-Q4_K_M-GGUF:q4_k_m
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~17.66 GB, from [huggingface.co/BAAI](https://huggingface.co/BAAI/Infinity-Instruct-3M-0625-Yi-1.5-9B/tree/a42c86c61b98ca4fdf238d688fe6ea11cf414d29))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='BAAI/Infinity-Instruct-3M-0625-Yi-1.5-9B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/Infinity-Instruct-3M-0625-Yi-1.5-9B)
 
 [interactive version](https://whatmodel.sh/model/infinity-instruct-3m-0625-yi-1-5-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

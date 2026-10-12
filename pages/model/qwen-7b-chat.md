@@ -51,57 +51,70 @@ weighted average                          = 30.9
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/Qwen/Qwen-7B-Chat/blob/93a65d34827a3cc269b727e67004743b723e2f83/config.json): Alibaba official configuration for Qwen-7B-Chat (pinned commit 93a65d3): max\_position\_embeddings 32768. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download          size  score
-16-bit bf16   ~15.44GB   30.9
-4-bit Q4_K_M    ~4.9GB   30.9
-8-bit Q8_0      ~8.2GB   30.9
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Qwen-7B-Chat (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-7B-Chat-GGUF/tree/69d68724e3d87914b0a4ce7400aec996a92b130a))
+   
+   ```sh
+   llama cli -hf mradermacher/Qwen-7B-Chat-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/Qwen-7B-Chat-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~8.2 GB) `llama cli -hf mradermacher/Qwen-7B-Chat-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-llama cli -hf mradermacher/Qwen-7B-Chat-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Qwen-7B-Chat-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.2GB
-llama cli -hf mradermacher/Qwen-7B-Chat-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Qwen-7B-Chat-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-lms get https://huggingface.co/mradermacher/Qwen-7B-Chat-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~8.2GB
-lms get https://huggingface.co/mradermacher/Qwen-7B-Chat-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Qwen-7B-Chat (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-7B-Chat-GGUF/tree/69d68724e3d87914b0a4ce7400aec996a92b130a))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/Qwen-7B-Chat-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~4.9GB
-ollama run hf.co/mradermacher/Qwen-7B-Chat-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.2GB
-ollama run hf.co/mradermacher/Qwen-7B-Chat-GGUF:Q8_0
-```
+Other versions: Q8_0 (~8.2 GB) `lms get https://huggingface.co/mradermacher/Qwen-7B-Chat-GGUF@Q8_0 -y`
 
-**Other engines**
+### Ollama
 
-```sh
-# 16-bit bf16 · ~15.44GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Qwen/Qwen-7B-Chat', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Qwen-7B-Chat (Q4_K_M, needs ~4.9 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Qwen-7B-Chat-GGUF/tree/69d68724e3d87914b0a4ce7400aec996a92b130a))
+   
+   ```sh
+   ollama run hf.co/mradermacher/Qwen-7B-Chat-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~8.2 GB) `ollama run hf.co/mradermacher/Qwen-7B-Chat-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~15.44 GB, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-7B-Chat/tree/93a65d34827a3cc269b727e67004743b723e2f83))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='Qwen/Qwen-7B-Chat', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-7B-Chat)
 
 [interactive version](https://whatmodel.sh/model/qwen-7b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

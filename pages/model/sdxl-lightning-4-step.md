@@ -55,26 +55,16 @@ weighted average                                   = 36.9
 
 ## How to run it
 
-<pre>
-version                needs  score
-fp16 · nvidia only    ~8.9GB   36.9
-fp16 (sd.cpp)         ~8.8GB   36.9
-q8_0 (sd.cpp --type)  ~4.9GB   36.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~8.9 GB, NVIDIA only, from [huggingface.co/ByteDance](https://huggingface.co/ByteDance/SDXL-Lightning))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch --with safetensors python -c "import torch; from diffusers import StableDiffusionXLPipeline, UNet2DConditionModel, EulerDiscreteScheduler; from huggingface_hub import hf_hub_download; from safetensors.torch import load_file; b='stabilityai/stable-diffusion-xl-base-1.0'; u=UNet2DConditionModel.from_config(b, subfolder='unet').to('cuda', torch.float16); u.load_state_dict(load_file(hf_hub_download('ByteDance/SDXL-Lightning', 'sdxl_lightning_4step_unet.safetensors'), device='cuda')); p=StableDiffusionXLPipeline.from_pretrained(b, unet=u, torch_dtype=torch.float16, variant='fp16').to('cuda'); p.scheduler=EulerDiscreteScheduler.from_config(p.scheduler.config, timestep_spacing='trailing'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=0).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
+Other versions: fp16 (sd.cpp) (~8.8 GB) `sd-cli -m models/sdxl_lightning_4step.safetensors -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 1 --steps 4 --sampling-method euler --scheduler sgm_uniform -v` · Q8_0 (SD.CPP --TYPE) (~4.9 GB) `sd-cli -m models/sdxl_lightning_4step.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 1 --steps 4 --sampling-method euler --scheduler sgm_uniform -v`
 
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~8.9GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with safetensors python -c "import torch; from diffusers import StableDiffusionXLPipeline, UNet2DConditionModel, EulerDiscreteScheduler; from huggingface_hub import hf_hub_download; from safetensors.torch import load_file; b='stabilityai/stable-diffusion-xl-base-1.0'; u=UNet2DConditionModel.from_config(b, subfolder='unet').to('cuda', torch.float16); u.load_state_dict(load_file(hf_hub_download('ByteDance/SDXL-Lightning', 'sdxl_lightning_4step_unet.safetensors'), device='cuda')); p=StableDiffusionXLPipeline.from_pretrained(b, unet=u, torch_dtype=torch.float16, variant='fp16').to('cuda'); p.scheduler=EulerDiscreteScheduler.from_config(p.scheduler.config, timestep_spacing='trailing'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=0).images[0].save('out.png')"
-# fp16 (sd.cpp) · ~8.8GB
-sd-cli -m models/sdxl_lightning_4step.safetensors -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 1 --steps 4 --sampling-method euler --scheduler sgm_uniform -v
-# q8_0 (sd.cpp --type) · ~4.9GB
-sd-cli -m models/sdxl_lightning_4step.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 1 --steps 4 --sampling-method euler --scheduler sgm_uniform -v
-```
+Official weights and documentation: [huggingface.co/ByteDance](https://huggingface.co/ByteDance/SDXL-Lightning)
 
 [interactive version](https://whatmodel.sh/model/sdxl-lightning-4-step) · [JSON](https://whatmodel.sh/api?format=json&all=1)

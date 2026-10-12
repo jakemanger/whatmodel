@@ -76,27 +76,22 @@ weighted average                                   = 55.4
 
 ## How to run it
 
+### Through an API
+
 api (Replicate (PrunaAI optimized)) · $0.0050/image · [replicate.com](https://replicate.com/prunaai/z-image-turbo)
 
 <sub>[price source](https://replicate.com/prunaai/z-image-turbo): USD per output image up to 1 MP (1,000,000 pixels) on Replicate, as stated on the model page (target resolution 1; billed $5 per 1,000 output megapixels). Up to 0.5 MP costs $0.0025 and up to 2 MP $0.01. PrunaAI optimized serving. Product: Replicate model API. API model: prunaai/z-image-turbo. Settings: target resolution=1 MP, one output image. Price basis: published list rate. Currency: USD. Replicate official model page, observed 2026-09-25.</sub>
 
-<pre>
-version                                     needs  score
-bf16 · nvidia only                        ~14.9GB   55.4
-gguf-q3_k (+ Qwen3-4B Q4_K_M text encod…   ~7.7GB   55.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf-q3_k (+ Qwen3-4B Q4_K_M text encoder), needs ~7.7 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/z_image.md))
+   
+   ```sh
+   sd-cli --diffusion-model models/z_image_turbo-Q3_K.gguf --vae models/ae.safetensors --llm models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf -p 'a cat holding a sign' --cfg-scale 1.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 1024 --steps 8
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~14.9 GB, NVIDIA only) `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ZImagePipeline; p=ZImagePipeline.from_pretrained('Tongyi-MAI/Z-Image-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=9, guidance_scale=0.0).images[0].save('out.png')"`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~14.9GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ZImagePipeline; p=ZImagePipeline.from_pretrained('Tongyi-MAI/Z-Image-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=9, guidance_scale=0.0).images[0].save('out.png')"
-# gguf-q3_k (+ Qwen3-4B Q4_K_M text encoder) · ~7.7GB
-sd-cli --diffusion-model models/z_image_turbo-Q3_K.gguf --vae models/ae.safetensors --llm models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf -p 'a cat holding a sign' --cfg-scale 1.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 1024 --steps 8
-```
+Official weights and documentation: [huggingface.co/Tongyi-MAI](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)
 
 [interactive version](https://whatmodel.sh/model/z-image-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -60,60 +60,85 @@ weighted average                                   = 49.8
 
 ## How to run it
 
-<pre>
-download                       size  score
-4-bit q4_k_m                ~6.72GB   49.8
-8-bit q8_0                 ~11.87GB   49.8
-4-bit mlx-8bit · mac only   ~11.9GB   49.8
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Bielik 11B v2.3 Instruct (Q4_K_M, needs ~6.72 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct-GGUF/tree/b6b2f467358d9eca16fddcc2f0fd506ea3e87858))
+   
+   ```sh
+   llama cli -hf speakleash/Bielik-11B-v2.3-Instruct-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf speakleash/Bielik-11B-v2.3-Instruct-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit q4_k_m · ~6.72GB
-llama cli -hf speakleash/Bielik-11B-v2.3-Instruct-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf speakleash/Bielik-11B-v2.3-Instruct-GGUF:Q4_K_M
-# 8-bit q8_0 · ~11.87GB
-llama cli -hf speakleash/Bielik-11B-v2.3-Instruct-GGUF
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf speakleash/Bielik-11B-v2.3-Instruct-GGUF
-```
+Other versions: Q8_0 (~11.87 GB) `llama cli -hf speakleash/Bielik-11B-v2.3-Instruct-GGUF`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~6.72GB
-lms get https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit q8_0 · ~11.87GB
-lms get https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct-GGUF -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~11.9GB
-lms get https://huggingface.co/lknik/Bielik-11B-v2.3-Instruct-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Bielik 11B v2.3 Instruct (Q4_K_M, needs ~6.72 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct-GGUF/tree/b6b2f467358d9eca16fddcc2f0fd506ea3e87858))
+   
+   ```sh
+   lms get https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~6.72GB
-ollama run hf.co/speakleash/Bielik-11B-v2.3-Instruct-GGUF:Q4_K_M
-# 8-bit q8_0 · ~11.87GB
-ollama run hf.co/speakleash/Bielik-11B-v2.3-Instruct-GGUF
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~11.87 GB) `lms get https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct-GGUF -y` · 8bit (~11.9 GB, Mac only) `lms get https://huggingface.co/lknik/Bielik-11B-v2.3-Instruct-8bit -y`
 
-```sh
-# 4-bit mlx-8bit · mac only · ~11.9GB
-mlx_lm.chat --model lknik/Bielik-11B-v2.3-Instruct-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lknik/Bielik-11B-v2.3-Instruct-8bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Bielik 11B v2.3 Instruct (Q4_K_M, needs ~6.72 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct-GGUF/tree/b6b2f467358d9eca16fddcc2f0fd506ea3e87858))
+   
+   ```sh
+   ollama run hf.co/speakleash/Bielik-11B-v2.3-Instruct-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~11.87 GB) `ollama run hf.co/speakleash/Bielik-11B-v2.3-Instruct-GGUF`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Bielik 11B v2.3 Instruct (8bit, needs ~11.9 GB, Mac only, from [huggingface.co/lknik](https://huggingface.co/lknik/Bielik-11B-v2.3-Instruct-8bit/tree/0b58b4ba6c082741b474b03e80ab047b196564c8))
+   
+   ```sh
+   mlx_lm.chat --model lknik/Bielik-11B-v2.3-Instruct-8bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lknik/Bielik-11B-v2.3-Instruct-8bit
+   ```
+
+Official weights and documentation: [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct)
 
 [interactive version](https://whatmodel.sh/model/bielik-11b-v2-3-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -42,10 +42,10 @@ weighted average                                   = 58.3
 
 ## How to run it
 
+### Through an API
+
 api (AssemblyAI) · $0.0025/audio min · [assemblyai.com](https://www.assemblyai.com/blog/introducing-universal-streaming)
 
 <sub>[price source](https://www.assemblyai.com/pricing): USD per input audio minute: AssemblyAI pricing page, Realtime Speech-to-Text API, 'Universal-Streaming ... High-quality realtime model for English only transcription ... $0.15 /hr' (÷60), billed on session duration. Product: AssemblyAI Realtime STT API. API model: universal-streaming-english. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: add-ons. Currency: USD. AssemblyAI official pricing page, observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/assemblyai-universal-streaming-english) · [JSON](https://whatmodel.sh/api?format=json&all=1)

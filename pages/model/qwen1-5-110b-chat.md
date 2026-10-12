@@ -75,74 +75,85 @@ weighted average                                   = 47.0
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/85f86cec25901f2dbd870a86e06756903c9a876a/README.md): Context length stated on the official model card.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit q4_k_m                ~67.1GB   47.0
-8-bit q8_0                 ~133.7GB   47.0
-4-bit Q4_K_M                ~67.2GB   47.0
-8-bit Q8_0                 ~118.2GB   47.0
-2-bit Q2_K                  ~41.2GB   47.0
-4-bit mlx-4bit · mac only   ~62.6GB   47.0
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Qwen1.5 110B Chat (Q4_K_M, needs ~67.2 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/Qwen1.5-110B-Chat-GGUF/tree/6b1cec5e0989862ee45ddc5916e1357ec3d06097))
+   
+   ```sh
+   llama cli -hf second-state/Qwen1.5-110B-Chat-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf second-state/Qwen1.5-110B-Chat-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~118.2 GB) `llama cli -hf second-state/Qwen1.5-110B-Chat-GGUF:Q8_0` · Q2_K (~41.2 GB) `llama cli -hf second-state/Qwen1.5-110B-Chat-GGUF:Q2_K`
 
-```sh
-# 4-bit Q4_K_M · ~67.2GB
-llama cli -hf second-state/Qwen1.5-110B-Chat-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf second-state/Qwen1.5-110B-Chat-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~118.2GB
-llama cli -hf second-state/Qwen1.5-110B-Chat-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf second-state/Qwen1.5-110B-Chat-GGUF:Q8_0
-# 2-bit Q2_K · ~41.2GB
-llama cli -hf second-state/Qwen1.5-110B-Chat-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf second-state/Qwen1.5-110B-Chat-GGUF:Q2_K
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~67.2GB
-lms get https://huggingface.co/second-state/Qwen1.5-110B-Chat-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~118.2GB
-lms get https://huggingface.co/second-state/Qwen1.5-110B-Chat-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit Q2_K · ~41.2GB
-lms get https://huggingface.co/second-state/Qwen1.5-110B-Chat-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~62.6GB
-lms get https://huggingface.co/mlx-community/Qwen1.5-110B-Chat-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Qwen1.5 110B Chat (Q4_K_M, needs ~67.2 GB, from [huggingface.co/second-state](https://huggingface.co/second-state/Qwen1.5-110B-Chat-GGUF/tree/6b1cec5e0989862ee45ddc5916e1357ec3d06097))
+   
+   ```sh
+   lms get https://huggingface.co/second-state/Qwen1.5-110B-Chat-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~67.1GB
-ollama run qwen:110b-chat-v1.5-q4_K_M
-# 8-bit q8_0 · ~133.7GB
-ollama run qwen:110b-chat-v1.5-q8_0
-# 2-bit Q2_K · ~41.2GB
-ollama run hf.co/second-state/Qwen1.5-110B-Chat-GGUF:Q2_K
-```
+Other versions: Q8_0 (~118.2 GB) `lms get https://huggingface.co/second-state/Qwen1.5-110B-Chat-GGUF@Q8_0 -y` · Q2_K (~41.2 GB) `lms get https://huggingface.co/second-state/Qwen1.5-110B-Chat-GGUF@Q2_K -y` · 4bit (~62.6 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen1.5-110B-Chat-4bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~62.6GB
-mlx_lm.chat --model mlx-community/Qwen1.5-110B-Chat-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Qwen1.5-110B-Chat-4bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Qwen1.5 110B Chat (Q4_K_M, needs ~67.1 GB, from [ollama.com](https://ollama.com/library/qwen/tags))
+   
+   ```sh
+   ollama run qwen:110b-chat-v1.5-q4_K_M
+   ```
+
+Other versions: Q8_0 (~133.7 GB) `ollama run qwen:110b-chat-v1.5-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Qwen1.5 110B Chat (4bit, needs ~62.6 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen1.5-110B-Chat-4bit/tree/3d5fb9b2e76488b117578291dce066220251205f))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Qwen1.5-110B-Chat-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Qwen1.5-110B-Chat-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen1.5-110B-Chat)
 
 [interactive version](https://whatmodel.sh/model/qwen1-5-110b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

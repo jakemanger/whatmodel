@@ -43,55 +43,70 @@ weighted average                              = 37.9
 
 ## How to run it
 
-<pre>
-download          size  score
-16-bit bf16   ~14.48GB   37.9
-4-bit Q4_K_M    ~4.4GB   37.9
-8-bit Q8_0      ~7.7GB   37.9
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run zephyr-7b-beta-ExPO (Q4_K_M, needs ~4.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/zephyr-7b-beta-ExPO-GGUF/tree/905bee599641b6f5222afd997d717e357a29d880))
+   
+   ```sh
+   llama cli -hf mradermacher/zephyr-7b-beta-ExPO-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/zephyr-7b-beta-ExPO-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.4GB
-llama cli -hf mradermacher/zephyr-7b-beta-ExPO-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/zephyr-7b-beta-ExPO-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~7.7GB
-llama cli -hf mradermacher/zephyr-7b-beta-ExPO-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/zephyr-7b-beta-ExPO-GGUF:Q8_0
-```
+Other versions: Q8_0 (~7.7 GB) `llama cli -hf mradermacher/zephyr-7b-beta-ExPO-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~4.4GB
-lms get https://huggingface.co/mradermacher/zephyr-7b-beta-ExPO-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~7.7GB
-lms get https://huggingface.co/mradermacher/zephyr-7b-beta-ExPO-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run zephyr-7b-beta-ExPO (Q4_K_M, needs ~4.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/zephyr-7b-beta-ExPO-GGUF/tree/905bee599641b6f5222afd997d717e357a29d880))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/zephyr-7b-beta-ExPO-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.4GB
-ollama run hf.co/mradermacher/zephyr-7b-beta-ExPO-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~7.7GB
-ollama run hf.co/mradermacher/zephyr-7b-beta-ExPO-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q8_0 (~7.7 GB) `lms get https://huggingface.co/mradermacher/zephyr-7b-beta-ExPO-GGUF@Q8_0 -y`
 
-```sh
-# 16-bit bf16 · ~14.48GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/zephyr-7b-beta-ExPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run zephyr-7b-beta-ExPO (Q4_K_M, needs ~4.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/zephyr-7b-beta-ExPO-GGUF/tree/905bee599641b6f5222afd997d717e357a29d880))
+   
+   ```sh
+   ollama run hf.co/mradermacher/zephyr-7b-beta-ExPO-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~7.7 GB) `ollama run hf.co/mradermacher/zephyr-7b-beta-ExPO-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~14.48 GB, from [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/zephyr-7b-beta-ExPO/tree/aeb7177ac09ce2d32ddf67c8e6efa23f29635f86))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='chujiezheng/zephyr-7b-beta-ExPO', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/chujiezheng](https://huggingface.co/chujiezheng/zephyr-7b-beta-ExPO)
 
 [interactive version](https://whatmodel.sh/model/zephyr-7b-beta-expo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

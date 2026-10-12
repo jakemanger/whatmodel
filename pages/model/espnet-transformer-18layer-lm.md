@@ -43,20 +43,14 @@ weighted average                                   = 41.5
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp32 (espnet 202610.post2 + espnet_mode…  ~1.02GB   41.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (espnet 202610.post2 + espnet_model_zoo 0.1.11), needs ~1.02 GB, from [github.com/espnet](https://github.com/espnet/espnet_model_zoo/blob/07c8a151baff4197dba2ac269e410f79783f2987/README.md))
+   
+   ```sh
+   uv run --python 3.12 --with espnet==202610.post2 --with espnet_model_zoo==0.1.11 --with librosa python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained('Shinji Watanabe/librispeech_asr_train_asr_transformer_e18_raw_bpe_sp_valid.acc.best', beam_size=20, ctc_weight=0.4, lm_weight=0.6); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (espnet 202610.post2 + espnet_model_zoo 0.1.11) · ~1.02GB
-uv run --python 3.12 --with espnet==202610.post2 --with espnet_model_zoo==0.1.11 --with librosa python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained('Shinji Watanabe/librispeech_asr_train_asr_transformer_e18_raw_bpe_sp_valid.acc.best', beam_size=20, ctc_weight=0.4, lm_weight=0.6); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
-```
+Official weights and documentation: [zenodo.org/record](https://zenodo.org/record/3966501)
 
 [interactive version](https://whatmodel.sh/model/espnet-transformer-18layer-lm) · [JSON](https://whatmodel.sh/api?format=json&all=1)

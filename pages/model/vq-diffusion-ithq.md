@@ -45,20 +45,14 @@ weighted average                          = 47.8
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp16 · nvidia only  ~4.1GB   47.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~4.1 GB, NVIDIA only, from [huggingface.co/microsoft](https://huggingface.co/microsoft/vq-diffusion-ithq/blob/3f796fb49ee559370dc638dea1d8116af131d993/README.md))
+   
+   ```sh
+   uv run --with torch --with diffusers --with transformers python -c "import torch; from diffusers import VQDiffusionPipeline; p=VQDiffusionPipeline.from_pretrained('microsoft/vq-diffusion-ithq', torch_dtype=torch.float16).to('cuda'); p('teddy bear playing in the pool', truncation_rate=1.0).images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~4.1GB
-uv run --with torch --with diffusers --with transformers python -c "import torch; from diffusers import VQDiffusionPipeline; p=VQDiffusionPipeline.from_pretrained('microsoft/vq-diffusion-ithq', torch_dtype=torch.float16).to('cuda'); p('teddy bear playing in the pool', truncation_rate=1.0).images[0].save('out.png')"
-```
+Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/vq-diffusion-ithq)
 
 [interactive version](https://whatmodel.sh/model/vq-diffusion-ithq) · [JSON](https://whatmodel.sh/api?format=json&all=1)

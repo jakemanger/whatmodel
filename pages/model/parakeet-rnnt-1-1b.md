@@ -78,20 +78,14 @@ NVIDIA ASR model cards  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1
 
 ## How to run it
 
-<pre>
-version               needs  score
-fp32 · nvidia only  ~5.64GB   58.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~5.64 GB, NVIDIA only, from [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-rnnt-1.1b))
+   
+   ```sh
+   uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-rnnt-1.1b').transcribe(['audio.wav']))"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · nvidia only · ~5.64GB
-uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-rnnt-1.1b').transcribe(['audio.wav']))"
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-rnnt-1.1b)
 
 [interactive version](https://whatmodel.sh/model/parakeet-rnnt-1-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

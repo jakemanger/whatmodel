@@ -131,57 +131,87 @@ Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Mistral-Medi
 
 ## How to run it
 
+### Through an API
+
 api (Mistral AI) · $3.00/M blended · $1.5 in / $7.5 out per 1M tokens · [docs.mistral.ai](https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output.  Product: La Plateforme chat completions. API model: mistral-medium-3-5. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-<pre>
-download                      size  score
-4-bit q4_k_m               ~77.3GB   64.5
-2-bit ud-q2_k_xl           ~38.9GB   64.5
-4-bit mlx-4bit · mac only  ~75.4GB   64.5
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Mistral Medium 3.5 (128B) (ud-q2_k_xl, needs ~38.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/Mistral-Medium-3.5-128B-GGUF:UD-Q2_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/Mistral-Medium-3.5-128B-GGUF:UD-Q2_K_XL
+   ```
 
-```sh
-# 2-bit ud-q2_k_xl · ~38.9GB
-llama cli -hf unsloth/Mistral-Medium-3.5-128B-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Mistral-Medium-3.5-128B-GGUF:UD-Q2_K_XL
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 2-bit ud-q2_k_xl · ~38.9GB
-lms get https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~75.4GB
-lms get https://huggingface.co/froggeric/Mistral-Medium-3.5-128B-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Mistral Medium 3.5 (128B) (4bit, needs ~75.4 GB, Mac only, from [huggingface.co/froggeric](https://huggingface.co/froggeric/Mistral-Medium-3.5-128B-MLX-4bit/tree/648c1b42c13087814da310f9fcbebf3af55212b5))
+   
+   ```sh
+   lms get https://huggingface.co/froggeric/Mistral-Medium-3.5-128B-MLX-4bit -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~77.3GB
-ollama run mistral-medium-3.5:128b
-# 2-bit ud-q2_k_xl · ~38.9GB
-ollama run hf.co/unsloth/Mistral-Medium-3.5-128B-GGUF:UD-Q2_K_XL
-```
+Other versions: ud-q2_k_xl (~38.9 GB) `lms get https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF@UD-Q2_K_XL -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~75.4GB
-mlx_lm.chat --model froggeric/Mistral-Medium-3.5-128B-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model froggeric/Mistral-Medium-3.5-128B-MLX-4bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Mistral Medium 3.5 (128B) (Q4_K_M, needs ~77.3 GB, from [ollama.com](https://ollama.com/library/mistral-medium-3.5/tags))
+   
+   ```sh
+   ollama run mistral-medium-3.5:128b
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Mistral Medium 3.5 (128B) (4bit, needs ~75.4 GB, Mac only, from [huggingface.co/froggeric](https://huggingface.co/froggeric/Mistral-Medium-3.5-128B-MLX-4bit/tree/648c1b42c13087814da310f9fcbebf3af55212b5))
+   
+   ```sh
+   mlx_lm.chat --model froggeric/Mistral-Medium-3.5-128B-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model froggeric/Mistral-Medium-3.5-128B-MLX-4bit
+   ```
+
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B)
 
 [interactive version](https://whatmodel.sh/model/mistral-medium-3-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

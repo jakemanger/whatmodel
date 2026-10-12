@@ -55,10 +55,10 @@ weighted average                        = 63.0
 
 ## How to run it
 
+### Through an API
+
 api (Tencent Cloud TokenHub) · price unknown · [cloud.tencent.com](https://cloud.tencent.com/document/product/1823/130051)
 
 <sub>[context source](https://cloud.tencent.com/document/product/1823/130051): Context limit from the maker's documentation, observed 2026-10-06.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/hunyuan-vision-1-5-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

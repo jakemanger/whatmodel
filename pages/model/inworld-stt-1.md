@@ -43,10 +43,10 @@ weighted average                                   = 62.0
 
 ## How to run it
 
+### Through an API
+
 api (Inworld) · $0.0025/audio min · [docs.inworld.ai](https://docs.inworld.ai/stt/overview)
 
 <sub>[price source](https://inworld.ai/pricing): USD per input audio minute: Inworld's pricing page lists 'STT 1 $0.15/hr' on the On-Demand plan (÷60); paid plans list $0.10/hr after plan discounts. Product: Inworld Speech-to-Text API (sync /stt/v1/transcribe and WebSocket streaming). API model: inworld/inworld-stt-1. Settings: On-Demand plan. Price basis: published list rate. Exclusions: monthly plan fees and plan discounts. Currency: USD. Inworld official pricing page, observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/inworld-stt-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -42,55 +42,70 @@ weighted average                                   = 53.2
 
 ## How to run it
 
-<pre>
-download          size  score
-4-bit fp16    ~22.34GB   53.2
-4-bit Q4_K_M    ~6.7GB   53.2
-8-bit Q8_0     ~11.9GB   53.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Bielik 11B v2.5 Instruct (Q4_K_M, needs ~6.7 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-11B-v2.5-Instruct-GGUF/tree/89539c1d408226d601a7e66ee4078f79e9261f81))
+   
+   ```sh
+   llama cli -hf speakleash/Bielik-11B-v2.5-Instruct-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf speakleash/Bielik-11B-v2.5-Instruct-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~6.7GB
-llama cli -hf speakleash/Bielik-11B-v2.5-Instruct-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf speakleash/Bielik-11B-v2.5-Instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~11.9GB
-llama cli -hf speakleash/Bielik-11B-v2.5-Instruct-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf speakleash/Bielik-11B-v2.5-Instruct-GGUF:Q8_0
-```
+Other versions: Q8_0 (~11.9 GB) `llama cli -hf speakleash/Bielik-11B-v2.5-Instruct-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~6.7GB
-lms get https://huggingface.co/speakleash/Bielik-11B-v2.5-Instruct-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~11.9GB
-lms get https://huggingface.co/speakleash/Bielik-11B-v2.5-Instruct-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Bielik 11B v2.5 Instruct (Q4_K_M, needs ~6.7 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-11B-v2.5-Instruct-GGUF/tree/89539c1d408226d601a7e66ee4078f79e9261f81))
+   
+   ```sh
+   lms get https://huggingface.co/speakleash/Bielik-11B-v2.5-Instruct-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~6.7GB
-ollama run hf.co/speakleash/Bielik-11B-v2.5-Instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~11.9GB
-ollama run hf.co/speakleash/Bielik-11B-v2.5-Instruct-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q8_0 (~11.9 GB) `lms get https://huggingface.co/speakleash/Bielik-11B-v2.5-Instruct-GGUF@Q8_0 -y`
 
-```sh
-# 4-bit fp16 · ~22.34GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='speakleash/Bielik-11B-v2.5-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Bielik 11B v2.5 Instruct (Q4_K_M, needs ~6.7 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-11B-v2.5-Instruct-GGUF/tree/89539c1d408226d601a7e66ee4078f79e9261f81))
+   
+   ```sh
+   ollama run hf.co/speakleash/Bielik-11B-v2.5-Instruct-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~11.9 GB) `ollama run hf.co/speakleash/Bielik-11B-v2.5-Instruct-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (fp16, needs ~22.34 GB, from [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-11B-v2.5-Instruct/tree/5dc964aa254bec13c8126aaf177ffa355db3ddc0))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='speakleash/Bielik-11B-v2.5-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/speakleash](https://huggingface.co/speakleash/Bielik-11B-v2.5-Instruct)
 
 [interactive version](https://whatmodel.sh/model/bielik-11b-v2-5-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

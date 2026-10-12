@@ -62,23 +62,16 @@ weighted average                                   = 49.4
 
 ## How to run it
 
-<pre>
-version    needs  score
-fp16     ~4.22GB   49.4
-fp32     ~7.94GB   49.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~4.22 GB, from [github.com/openai](https://github.com/openai/whisper))
+   
+   ```sh
+   uvx --from openai-whisper whisper audio.mp3 --model large-v1
+   ```
 
-### Run it on your own machine
+Other versions: fp32 (~7.94 GB) `uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-large')('audio.wav', return_timestamps=True)['text'])"`
 
-**Other engines**
-
-```sh
-# fp16 · ~4.22GB
-uvx --from openai-whisper whisper audio.mp3 --model large-v1
-# fp32 · ~7.94GB
-uv run --with transformers --with torch python -c "from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-large')('audio.wav', return_timestamps=True)['text'])"
-```
+Official weights and documentation: [huggingface.co/openai](https://huggingface.co/openai/whisper-large)
 
 [interactive version](https://whatmodel.sh/model/whisper-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

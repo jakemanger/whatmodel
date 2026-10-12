@@ -66,70 +66,91 @@ weighted average                                   = 51.7
 
 ## How to run it
 
+### Through an API
+
 api (Cohere) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [docs.cohere.com](https://docs.cohere.com/docs/models)
 
 <sub>[price source](https://cohere.com/pricing): USD per 1M tokens, Cohere API: the pricing page FAQ states 'Aya Expanse models (8B and 32B) on the API are charged at $0.50/1M tokens for input and $1.50/1M tokens for output'. Cohere's models page lists c4ai-aya-expanse-32b on the Chat endpoint. Trial-key free usage excluded. Currency: USD. Cohere official pricing page, observed 2026-10-07. · [context source](https://huggingface.co/CohereLabs/aya-expanse-32b/blob/b306ea27e360683b50c005d7fcbad6a242317910/README.md): Context length stated on the official model card.</sub>
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~19.88GB   51.7
-8-bit q8_0                 ~39.26GB   51.7
-4-bit Q4_K_M                ~19.8GB   51.7
-8-bit Q8_0                  ~34.3GB   51.7
-4-bit mlx-8bit · mac only   ~34.3GB   51.7
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Aya Expanse 32B (Q4_K_M, needs ~19.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/aya-expanse-32b-GGUF/tree/ed1c028722d48e88385b421c2649a18495b77d07))
+   
+   ```sh
+   llama cli -hf lmstudio-community/aya-expanse-32b-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/aya-expanse-32b-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~19.8GB
-llama cli -hf lmstudio-community/aya-expanse-32b-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/aya-expanse-32b-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.3GB
-llama cli -hf lmstudio-community/aya-expanse-32b-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/aya-expanse-32b-GGUF:Q8_0
-```
+Other versions: Q8_0 (~34.3 GB) `llama cli -hf lmstudio-community/aya-expanse-32b-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~19.8GB
-lms get https://huggingface.co/lmstudio-community/aya-expanse-32b-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~34.3GB
-lms get https://huggingface.co/lmstudio-community/aya-expanse-32b-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~34.3GB
-lms get https://huggingface.co/mlx-community/aya-expanse-32b-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Aya Expanse 32B (Q4_K_M, needs ~19.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/aya-expanse-32b-GGUF/tree/ed1c028722d48e88385b421c2649a18495b77d07))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/aya-expanse-32b-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~19.88GB
-ollama run aya-expanse:32b-q4_K_M
-# 8-bit q8_0 · ~39.26GB
-ollama run aya-expanse:32b-q8_0
-# 4-bit Q4_K_M · ~19.8GB
-ollama run hf.co/lmstudio-community/aya-expanse-32b-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.3GB
-ollama run hf.co/lmstudio-community/aya-expanse-32b-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~34.3 GB) `lms get https://huggingface.co/lmstudio-community/aya-expanse-32b-GGUF@Q8_0 -y` · 8bit (~34.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/aya-expanse-32b-8bit -y`
 
-```sh
-# 4-bit mlx-8bit · mac only · ~34.3GB
-mlx_lm.chat --model mlx-community/aya-expanse-32b-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/aya-expanse-32b-8bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Aya Expanse 32B (Q4_K_M, needs ~19.88 GB, from [ollama.com](https://ollama.com/library/aya-expanse/tags))
+   
+   ```sh
+   ollama run aya-expanse:32b-q4_K_M
+   ```
+
+Other versions: Q8_0 (~39.26 GB) `ollama run aya-expanse:32b-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Aya Expanse 32B (8bit, needs ~34.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/aya-expanse-32b-8bit/tree/3f42e199f54b88cb749dc0810d32902102f4a2e7))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/aya-expanse-32b-8bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/aya-expanse-32b-8bit
+   ```
+
+Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/aya-expanse-32b)
 
 [interactive version](https://whatmodel.sh/model/aya-expanse-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

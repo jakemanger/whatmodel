@@ -42,63 +42,70 @@ weighted average                                   = 53.2
 
 ## How to run it
 
-<pre>
-download           size  score
-16-bit bf16   ~141.11GB   53.2
-4-bit Q4_K_M    ~42.5GB   53.2
-8-bit Q8_0        ~75GB   53.2
-2-bit Q2_K      ~26.4GB   53.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Llama-PLLuM-70B-instruct (2412) (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF/tree/2fa943e36f5f911de351df53f2b731f86c357cdc))
+   
+   ```sh
+   llama cli -hf mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~42.5GB
-llama cli -hf mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~75GB
-llama cli -hf mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q8_0
-# 2-bit Q2_K · ~26.4GB
-llama cli -hf mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q2_K
-```
+Other versions: Q8_0 (~75 GB) `llama cli -hf mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q8_0` · Q2_K (~26.4 GB) `llama cli -hf mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q2_K`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~42.5GB
-lms get https://huggingface.co/mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~75GB
-lms get https://huggingface.co/mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit Q2_K · ~26.4GB
-lms get https://huggingface.co/mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Llama-PLLuM-70B-instruct (2412) (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF/tree/2fa943e36f5f911de351df53f2b731f86c357cdc))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~42.5GB
-ollama run hf.co/mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q4_K_M
-# 2-bit Q2_K · ~26.4GB
-ollama run hf.co/mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q2_K
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF@Q8_0 -y` · Q2_K (~26.4 GB) `lms get https://huggingface.co/mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF@Q2_K -y`
 
-```sh
-# 16-bit bf16 · ~141.11GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/Llama-PLLuM-70B-instruct-2412', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Llama-PLLuM-70B-instruct (2412) (Q4_K_M, needs ~42.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF/tree/2fa943e36f5f911de351df53f2b731f86c357cdc))
+   
+   ```sh
+   ollama run hf.co/mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q4_K_M
+   ```
+
+Other versions: Q2_K (~26.4 GB) `ollama run hf.co/mradermacher/Llama-PLLuM-70B-instruct-2412-GGUF:Q2_K`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~141.11 GB, from [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-instruct-2412/tree/2e5e4b4936c44e448dad51ec721095ab648bf6de))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='CYFRAGOVPL/Llama-PLLuM-70B-instruct-2412', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/CYFRAGOVPL](https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-instruct-2412)
 
 [interactive version](https://whatmodel.sh/model/llama-pllum-70b-instruct-2412) · [JSON](https://whatmodel.sh/api?format=json&all=1)

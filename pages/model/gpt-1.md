@@ -50,22 +50,14 @@ Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open
 
 ## How to run it
 
-<sub>[context source](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf): Context limit from the maker's documentation, observed 2026-10-06.</sub>
+### Other ways to run it
 
-<pre>
-download       size  score
-4-bit fp32  ~0.48GB    2.7
-</pre>
+1. Run it as published (fp32, needs ~0.48 GB, from [huggingface.co/openai-community](https://huggingface.co/openai-community/openai-gpt/tree/1e0d4f3028acbffb47fe933cea64619c5ec1a002))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/openai-gpt')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp32 · ~0.48GB
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/openai-gpt')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/openai-community](https://huggingface.co/openai-community/openai-gpt)
 
 [interactive version](https://whatmodel.sh/model/gpt-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

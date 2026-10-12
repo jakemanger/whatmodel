@@ -59,6 +59,8 @@ weighted average                          = 66.6
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/dots-studio](https://huggingface.co/dots-studio/dots.tts-base)
 
 [interactive version](https://whatmodel.sh/model/dots-tts-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

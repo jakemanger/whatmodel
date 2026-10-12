@@ -49,10 +49,10 @@ weighted average                                   = 57.7
 
 ## How to run it
 
+### Through an API
+
 api (Together AI) · $65.00/M chars · [together.ai](https://www.together.ai/models/cartesia-sonic-3)
 
 <sub>[price source](https://docs.together.ai/docs/serverless/models.md): USD per 1M input characters: Together's serverless model list gives Cartesia Sonic 3, API model cartesia/sonic-3, at $65.00 per 1M chars (the Together pricing page also lists 'Cartesia Sonic-3 $65.00' per 1M characters). Cartesia's own pricing page prices credits and names only Sonic-3.6, so Together's per-model rate is used. Product: Together serverless text-to-speech. API model: cartesia/sonic-3. Settings: standard. Price basis: published list rate. Currency: USD. Together official docs, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/cartesia-sonic-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -46,20 +46,14 @@ weighted average                                   = 25.2
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp16 + model CPU offload (official run_…  ~83.2GB   25.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16 + model CPU offload (official run_inference.py), needs ~83.2 GB, NVIDIA only, from [github.com/showlab](https://github.com/showlab/Show-1/blob/35a71b6b107d7b73b730d26eeaacf64aa0e58d39/README.md))
+   
+   ```sh
+   git clone https://github.com/showlab/Show-1 && cd Show-1 && pip install -r requirements.txt && python run_inference.py
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 + model CPU offload (official run_inference.py) · nvidia only · ~83.2GB
-git clone https://github.com/showlab/Show-1 && cd Show-1 && pip install -r requirements.txt && python run_inference.py
-```
+Official weights and documentation: [github.com/showlab](https://github.com/showlab/Show-1)
 
 [interactive version](https://whatmodel.sh/model/show-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

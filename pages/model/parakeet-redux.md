@@ -44,20 +44,14 @@ weighted average                                   = 57.0
 
 ## How to run it
 
-<pre>
-version                     needs  score
-ternary 1.58-bit (Photon)  0.18GB   57.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (ternary 1.58-bit (Photon), needs 0.18 GB, from [huggingface.co/moondream](https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md))
+   
+   ```sh
+   pip install "moondream>=2.4.0" && python -c "import moondream as md; speech_cm = md.photon('moondream/parakeet-redux', device='cpu'); speech = speech_cm.__enter__(); print(speech.transcribe(audio='speech.wav')['text']); speech_cm.__exit__(None, None, None)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# ternary 1.58-bit (Photon) · 0.18GB
-pip install "moondream>=2.4.0" && python -c "import moondream as md; speech_cm = md.photon('moondream/parakeet-redux', device='cpu'); speech = speech_cm.__enter__(); print(speech.transcribe(audio='speech.wav')['text']); speech_cm.__exit__(None, None, None)"
-```
+Official weights and documentation: [huggingface.co/moondream](https://huggingface.co/moondream/parakeet-redux)
 
 [interactive version](https://whatmodel.sh/model/parakeet-redux) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -57,6 +57,8 @@ weighted average                                   = 58.7
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/wcy1122](https://huggingface.co/wcy1122/MGM-Omni-TTS-2B-0927)
 
 [interactive version](https://whatmodel.sh/model/mgm-omni-tts-2b-0927) · [JSON](https://whatmodel.sh/api?format=json&all=1)

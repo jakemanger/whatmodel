@@ -54,6 +54,6 @@ raven.eval · German A…  <a href="https://github.com/PhilflowIO/raven.eval/blo
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/grok-voice-transcribe-1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

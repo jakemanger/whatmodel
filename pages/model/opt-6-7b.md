@@ -52,22 +52,14 @@ weighted average                                   = 24.3
 
 ## How to run it
 
-<sub>[context source](https://arxiv.org/abs/2205.01068v4): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+### Other ways to run it
 
-<pre>
-download        size  score
-4-bit fp16  ~13.32GB   24.3
-</pre>
+1. Run it as published (fp16, needs ~13.32 GB, from [huggingface.co/facebook](https://huggingface.co/facebook/opt-6.7b/tree/a45aa65bbeb77c1558bc99bedc6779195462dab0))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-6.7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp16 · ~13.32GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-6.7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/opt-6.7b)
 
 [interactive version](https://whatmodel.sh/model/opt-6-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

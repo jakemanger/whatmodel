@@ -47,22 +47,14 @@ weighted average                                   = 4.6
 
 ## How to run it
 
-<sub>[context source](https://arxiv.org/abs/2205.01068v4): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+### Other ways to run it
 
-<pre>
-download       size  score
-4-bit fp16  ~0.66GB    4.6
-</pre>
+1. Run it as published (fp16, needs ~0.66 GB, from [huggingface.co/facebook](https://huggingface.co/facebook/opt-350m/tree/08ab08cc4b72ff5593870b5d527cf4230323703c))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-350m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp16 · ~0.66GB
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-350m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/facebook](https://huggingface.co/facebook/opt-350m)
 
 [interactive version](https://whatmodel.sh/model/opt-350m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

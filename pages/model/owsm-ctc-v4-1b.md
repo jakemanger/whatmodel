@@ -45,20 +45,14 @@ weighted average                         = 51.8
 
 ## How to run it
 
-<pre>
-version               needs  score
-fp32 · nvidia only  ~5.35GB   51.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~5.35 GB, NVIDIA only, from [huggingface.co/espnet](https://huggingface.co/espnet/owsm_ctc_v4_1B))
+   
+   ```sh
+   uv run --python 3.12 --with espnet --with espnet_model_zoo --with librosa python -c "from espnet2.bin.s2t_inference import Speech2Text; s=Speech2Text.from_pretrained('espnet/owsm_ctc_v4_1B', device='cuda', lang_sym='<eng>', task_sym='<asr>'); print(' '.join(t for _, _, t in s.decode_long('audio.wav', batch_size=16)))"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · nvidia only · ~5.35GB
-uv run --python 3.12 --with espnet --with espnet_model_zoo --with librosa python -c "from espnet2.bin.s2t_inference import Speech2Text; s=Speech2Text.from_pretrained('espnet/owsm_ctc_v4_1B', device='cuda', lang_sym='<eng>', task_sym='<asr>'); print(' '.join(t for _, _, t in s.decode_long('audio.wav', batch_size=16)))"
-```
+Official weights and documentation: [huggingface.co/espnet](https://huggingface.co/espnet/owsm_ctc_v4_1B)
 
 [interactive version](https://whatmodel.sh/model/owsm-ctc-v4-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

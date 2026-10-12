@@ -54,24 +54,20 @@ weighted average                                   = 37.6
 
 ## How to run it
 
+### Through an API
+
 api (DeepInfra) · $0.0020/image · [deepinfra.com](https://deepinfra.com/deepseek-ai/Janus-Pro-7B)
 
 <sub>[price source](https://deepinfra.com/deepseek-ai/Janus-Pro-7B): USD per generated image on DeepInfra (model page header '$0.002 / image'; catalogue pricing type image\_units at 0.2 cents, not deprecated). Product: DeepInfra inference API, text-to-image. API model: deepseek-ai/Janus-Pro-7B. Settings: default output size (Janus-Pro generates at its native resolution), one image. Price basis: published per-image list rate. Currency: USD. Not a DeepSeek direct tariff (DeepSeek's own API serves no image generation). DeepInfra official model page, observed 2026-09-26.</sub>
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~18.3GB   37.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~18.3 GB, NVIDIA only, from [github.com/deepseek-ai](https://github.com/deepseek-ai/Janus/blob/1daa72fa409002d40931bd7b36a9280362469ead/README.md))
+   
+   ```sh
+   git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && sed -i.bak 's#deepseek-ai/Janus-1.3B#deepseek-ai/Janus-Pro-7B#; s#"role": "User"#"role": "<|User|>"#; s#"role": "Assistant"#"role": "<|Assistant|>"#' generation_inference.py && python generation_inference.py
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~18.3GB
-git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && sed -i.bak 's#deepseek-ai/Janus-1.3B#deepseek-ai/Janus-Pro-7B#; s#"role": "User"#"role": "<|User|>"#; s#"role": "Assistant"#"role": "<|Assistant|>"#' generation_inference.py && python generation_inference.py
-```
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/Janus-Pro-7B)
 
 [interactive version](https://whatmodel.sh/model/janus-pro-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

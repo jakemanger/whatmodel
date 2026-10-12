@@ -122,31 +122,23 @@ NVIDIA ASR model cards  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b
 
 ## How to run it
 
+### Through an API
+
 api (Together AI) · $0.0015/audio min · [together.ai](https://www.together.ai/models/parakeet-tdt-0-6b-v3)
 
 <sub>[price source](https://www.together.ai/pricing): USD per input audio minute: Together lists NVIDIA Parakeet TDT 0.6B v3 at $0.0015 in its 'Price per audio minute' table (serverless transcription; no separate batch price shown). Product: Together serverless audio transcription. API model: nvidia/parakeet-tdt-0.6b-v3. Settings: standard. Price basis: published list rate. Exclusions: 'Realtime' variant. Currency: USD. Together official pricing page, observed 2026-09-25.</sub>
 
-<pre>
-version               needs  score
-bf16 · mac only     ~2.01GB   56.9
-fp32 · nvidia only  ~3.52GB   56.9
-onnx-fp32           ~3.52GB   56.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~2.01 GB, Mac only, from [github.com/senstella](https://github.com/senstella/parakeet-mlx))
+   
+   ```sh
+   uvx parakeet-mlx audio.mp3
+   ```
 
-### Run it on your own machine
+Other versions: fp32 (~3.52 GB, NVIDIA only) `uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-tdt-0.6b-v3').transcribe(['audio.wav']))"` · onnx-fp32 (~3.52 GB) `uvx --from 'onnx-asr[cpu,hub]' onnx-asr nemo-parakeet-tdt-0.6b-v3 audio.wav`
 
-**Other engines**
-
-```sh
-# bf16 · mac only · ~2.01GB
-uvx parakeet-mlx audio.mp3
-# fp32 · nvidia only · ~3.52GB
-uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-tdt-0.6b-v3').transcribe(['audio.wav']))"
-# onnx-fp32 · ~3.52GB
-uvx --from 'onnx-asr[cpu,hub]' onnx-asr nemo-parakeet-tdt-0.6b-v3 audio.wav
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)
 
 ## Published speed measurements
 

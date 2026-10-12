@@ -75,10 +75,10 @@ weighted average                                   = 72.7
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.14/sec · [replicate.com](https://replicate.com/alibaba/happyhorse-1.0)
 
 <sub>[price source](https://bertrande.com/en/ai/replicate/alibaba--happyhorse-1.0): USD per output video second. Text-to-video, 720p output, no starting image; 3–15 second clips. 1080p costs $0.28/output-second. Replicate output/character billing; hardware-time rates are not added to this tariff. Taxes and separate services excluded. Bertrande, https://bertrande.com/en/ai/replicate/alibaba--happyhorse-1.0; observed 2026-09-20T01:44:15Z. CC BY 4.0; units normalized and model identifier mapped.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/happyhorse-1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

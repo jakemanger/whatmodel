@@ -46,20 +46,14 @@ weighted average                        = 51.9
 
 ## How to run it
 
-<pre>
-version               needs  score
-fp16 · nvidia only  ~3.57GB   51.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~3.57 GB, NVIDIA only, from [huggingface.co/efficient-speech](https://huggingface.co/efficient-speech/lite-whisper-large-v3-fast))
+   
+   ```sh
+   uv run --with transformers --with torch --with librosa python -c "import librosa, torch; from transformers import AutoProcessor, AutoModel; m=AutoModel.from_pretrained('efficient-speech/lite-whisper-large-v3-fast', trust_remote_code=True).to(torch.float16).to('cuda'); p=AutoProcessor.from_pretrained('openai/whisper-large-v3'); f=p(librosa.load('audio.wav', sr=16000)[0], sampling_rate=16000, return_tensors='pt').input_features.to(torch.float16).to('cuda'); print(p.batch_decode(m.generate(f), skip_special_tokens=True)[0])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~3.57GB
-uv run --with transformers --with torch --with librosa python -c "import librosa, torch; from transformers import AutoProcessor, AutoModel; m=AutoModel.from_pretrained('efficient-speech/lite-whisper-large-v3-fast', trust_remote_code=True).to(torch.float16).to('cuda'); p=AutoProcessor.from_pretrained('openai/whisper-large-v3'); f=p(librosa.load('audio.wav', sr=16000)[0], sampling_rate=16000, return_tensors='pt').input_features.to(torch.float16).to('cuda'); print(p.batch_decode(m.generate(f), skip_special_tokens=True)[0])"
-```
+Official weights and documentation: [huggingface.co/efficient-speech](https://huggingface.co/efficient-speech/lite-whisper-large-v3-fast)
 
 [interactive version](https://whatmodel.sh/model/lite-whisper-large-v3-fast) · [JSON](https://whatmodel.sh/api?format=json&all=1)

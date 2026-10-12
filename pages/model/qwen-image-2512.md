@@ -68,24 +68,20 @@ weighted average                                   = 55.5
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.020/image · [replicate.com](https://replicate.com/qwen/qwen-image-2512)
 
 <sub>[price source](https://replicate.com/qwen/qwen-image-2512): USD per output image on Replicate's qwen/qwen-image-2512 model (billing: per output image; hardware time not added). Current version served from replicate-pruna/qwen-image-2512 (Pruna-optimized deployment). Product: Replicate model API. API model: qwen/qwen-image-2512. Settings: one output image. Price basis: published list rate. Currency: USD. Replicate official model page, observed 2026-09-25.</sub>
 
-<pre>
-version                                     needs  score
-gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K…  ~22.4GB   55.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K_XL, needs ~22.4 GB, from [unsloth.ai/docs](https://unsloth.ai/docs/models/tutorials/qwen-image-2512/stable-diffusion.cpp))
+   
+   ```sh
+   sd-cli --diffusion-model models/qwen-image-2512-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-UD-Q4_K_XL.gguf --cfg-scale 2.5 --sampling-method euler -v --steps 40 -H 1024 -W 1024 --diffusion-fa --flow-shift 3 -p 'a cat holding a sign' --offload-to-cpu -o outputs/out.png
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K_XL · ~22.4GB
-sd-cli --diffusion-model models/qwen-image-2512-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-UD-Q4_K_XL.gguf --cfg-scale 2.5 --sampling-method euler -v --steps 40 -H 1024 -W 1024 --diffusion-fa --flow-shift 3 -p 'a cat holding a sign' --offload-to-cpu -o outputs/out.png
-```
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image-2512)
 
 [interactive version](https://whatmodel.sh/model/qwen-image-2512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

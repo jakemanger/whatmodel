@@ -91,66 +91,85 @@ weighted average                        = 30.3
 
 ## How to run it
 
-<sub>[context source](https://arxiv.org/abs/2502.02737v1): Context length from the maker's technical report.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_k_m               ~1.53GB   30.3
-8-bit q8_0                 ~2.55GB   30.3
-4-bit q4_k_m                ~1.1GB   30.3
-4-bit mlx-4bit · mac only     ~1GB   30.3
-4-bit mlx-8bit · mac only   ~1.8GB   30.3
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run SmolLM2 1.7B Instruct (Q4_K_M, needs ~1.1 GB, from [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF/tree/2d4a76a30b4af41ecd395c35725ac11688d4cfe4))
+   
+   ```sh
+   llama cli -hf HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF:q4_k_m
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF:q4_k_m
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~1.1GB
-llama cli -hf HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF:q4_k_m
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF:q4_k_m
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run SmolLM2 1.7B Instruct (Q4_K_M, needs ~1.1 GB, from [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF/tree/2d4a76a30b4af41ecd395c35725ac11688d4cfe4))
+   
+   ```sh
+   lms get https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF@q4_k_m -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~1.1GB
-lms get https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF@q4_k_m -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~1GB
-lms get https://huggingface.co/Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~1.8GB
-lms get https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-Q8-mlx -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: 4bit (~1 GB, Mac only) `lms get https://huggingface.co/Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit -y` · 8bit (~1.8 GB, Mac only) `lms get https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-Q8-mlx -y`
 
-```sh
-# 4-bit q4_k_m · ~1.53GB
-ollama run smollm2:1.7b-instruct-q4_K_M
-# 8-bit q8_0 · ~2.55GB
-ollama run smollm2:1.7b-instruct-q8_0
-# 4-bit q4_k_m · ~1.1GB
-ollama run hf.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF:q4_k_m
-```
+### Ollama
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~1GB
-mlx_lm.chat --model Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~1.8GB
-mlx_lm.chat --model HuggingFaceTB/SmolLM2-1.7B-Instruct-Q8-mlx
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model HuggingFaceTB/SmolLM2-1.7B-Instruct-Q8-mlx
-```
+2. Run SmolLM2 1.7B Instruct (Q4_K_M, needs ~1.53 GB, from [ollama.com](https://ollama.com/library/smollm2/tags))
+   
+   ```sh
+   ollama run smollm2:1.7b-instruct-q4_K_M
+   ```
+
+Other versions: Q8_0 (~2.55 GB) `ollama run smollm2:1.7b-instruct-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run SmolLM2 1.7B Instruct (4bit, needs ~1 GB, Mac only, from [huggingface.co/Irfanuruchi](https://huggingface.co/Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit/tree/8804903a4d9dc29fd7edf893168988760f4e73a6))
+   
+   ```sh
+   mlx_lm.chat --model Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model Irfanuruchi/SmolLM2-1.7B-Instruct-MLX-4bit
+   ```
+
+Other versions: 8bit (~1.8 GB, Mac only) `mlx_lm.chat --model HuggingFaceTB/SmolLM2-1.7B-Instruct-Q8-mlx`
+
+Official weights and documentation: [huggingface.co/HuggingFaceTB](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/smollm2-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -153,50 +153,66 @@ weighted average                                   = 56.8
 
 ## How to run it
 
+### Through an API
+
 api (Amazon Bedrock) · $0.42/M blended · $0.24 in / $0.97 out per 1M tokens · [docs.aws.amazon.com](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-maverick-17b-instruct.html)
 
 <sub>[price source](https://aws.amazon.com/bedrock/pricing): USD per 1M tokens, Amazon Bedrock on-demand Llama 4 Maverick 17B (Meta Llama 4 On-Demand table), US East (N. Virginia)/Ohio and US West (Oregon/N. California). Batch pricing excluded. Table cells are rendered from AWS's own price data file for the page (published 2026-09-25T06:55:02Z). Currency: USD. Amazon Bedrock official pricing page, observed 2026-09-25. · [context source](https://github.com/meta-llama/llama-models/blob/0e0b8c519242d5833d8c11bffc1232b77ad7f301/models/llama4/MODEL_CARD.md): Meta Llama 4 model card (llama-models repo, pinned): Llama 4 Maverick (17Bx128E) context length 1M (stated rounded). Model ceiling, not a promise by any hosted API. Observed 2026-09-25.</sub>
 
-<pre>
-download              size  score
-4-bit q4_k_m      ~241.7GB   56.8
-2-bit ud-q2_k_xl  ~121.1GB   56.8
-1-bit ud-iq1_s     ~60.8GB   56.8
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Llama 4 Maverick (402B-A17B) (ud-q2_k_xl, needs ~121.1 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF:UD-Q2_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF:UD-Q2_K_XL
+   ```
 
-```sh
-# 2-bit ud-q2_k_xl · ~121.1GB
-llama cli -hf unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF:UD-Q2_K_XL
-# 1-bit ud-iq1_s · ~60.8GB
-llama cli -hf unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF:UD-IQ1_S
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF:UD-IQ1_S
-```
+Other versions: ud-iq1_s (~60.8 GB) `llama cli -hf unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF:UD-IQ1_S`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 2-bit ud-q2_k_xl · ~121.1GB
-lms get https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 1-bit ud-iq1_s · ~60.8GB
-lms get https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF@UD-IQ1_S -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Llama 4 Maverick (402B-A17B) (ud-q2_k_xl, needs ~121.1 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF/tree/main))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF@UD-Q2_K_XL -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~241.7GB
-ollama run llama4:maverick
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: ud-iq1_s (~60.8 GB) `lms get https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF@UD-IQ1_S -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Llama 4 Maverick (402B-A17B) (Q4_K_M, needs ~241.7 GB, from [ollama.com](https://ollama.com/library/llama4/tags))
+   
+   ```sh
+   ollama run llama4:maverick
+   ```
+
+Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct)
 
 [interactive version](https://whatmodel.sh/model/llama-4-maverick) · [JSON](https://whatmodel.sh/api?format=json&all=1)

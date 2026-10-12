@@ -72,20 +72,14 @@ weighted average                                   = 20.3
 
 ## How to run it
 
-<pre>
-download                      size  score
-4-bit fp16 · nvidia only  ~13.42GB   20.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~13.42 GB, NVIDIA only, from [huggingface.co/zai-org](https://huggingface.co/zai-org/chatglm-6b/blob/bf0f5cfb575eebebf9b655c5861177acfee03f16/README.md))
+   
+   ```sh
+   pip install protobuf==3.20.0 transformers==4.27.1 icetk cpm_kernels torch && python -c "from transformers import AutoTokenizer, AutoModel; t=AutoTokenizer.from_pretrained('THUDM/chatglm-6b', trust_remote_code=True); m=AutoModel.from_pretrained('THUDM/chatglm-6b', trust_remote_code=True).half().cuda().eval(); print(m.chat(t, '你好', history=[])[0])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp16 · nvidia only · ~13.42GB
-pip install protobuf==3.20.0 transformers==4.27.1 icetk cpm_kernels torch && python -c "from transformers import AutoTokenizer, AutoModel; t=AutoTokenizer.from_pretrained('THUDM/chatglm-6b', trust_remote_code=True); m=AutoModel.from_pretrained('THUDM/chatglm-6b', trust_remote_code=True).half().cuda().eval(); print(m.chat(t, '你好', history=[])[0])"
-```
+Official weights and documentation: [huggingface.co/zai-org](https://huggingface.co/zai-org/chatglm-6b)
 
 [interactive version](https://whatmodel.sh/model/chatglm-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

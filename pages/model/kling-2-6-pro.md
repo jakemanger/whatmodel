@@ -59,10 +59,10 @@ weighted average                                   = 59.3
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.070/sec · [fal.ai](https://fal.ai/models/fal-ai/kling-video/v2.6/pro/text-to-video)
 
 <sub>[price source](https://fal.ai/models/fal-ai/kling-video/v2.6/pro/text-to-video): USD per second of generated video on fal.ai, audio off. Product: fal Kling 2.6 Pro text-to-video endpoint. API model: fal-ai/kling-video/v2.6/pro/text-to-video. Settings: generate\_audio=false (the endpoint default is true, which costs $0.14/s). Price basis: per-second rate printed by fal. Not the Kling direct tariff. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/kling-2-6-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -43,70 +43,93 @@ weighted average                              = 38.7
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/tiiuae/Falcon-H1-3B-Instruct/blob/01087ec4c132d7f186908716b3530ea187f062a1/config.json): TII official configuration for Falcon-H1-3B-Instruct (pinned commit 01087ec): max\_position\_embeddings 131072. Configured maximum, not a benchmarked long-context claim. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                     size  score
-16-bit bf16                ~6.3GB   38.7
-4-bit Q4_K_M               ~1.9GB   38.7
-8-bit Q8_0                 ~3.4GB   38.7
-4-bit mlx-4bit · mac only  ~1.8GB   38.7
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Falcon-H1 3B Instruct (Q4_K_M, needs ~1.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF/tree/02cb641c60514333e2d46288a55a27b83905f0eb))
+   
+   ```sh
+   llama cli -hf unsloth/Falcon-H1-3B-Instruct-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/Falcon-H1-3B-Instruct-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~3.4 GB) `llama cli -hf unsloth/Falcon-H1-3B-Instruct-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~1.9GB
-llama cli -hf unsloth/Falcon-H1-3B-Instruct-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Falcon-H1-3B-Instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~3.4GB
-llama cli -hf unsloth/Falcon-H1-3B-Instruct-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Falcon-H1-3B-Instruct-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~1.9GB
-lms get https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~3.4GB
-lms get https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~1.8GB
-lms get https://huggingface.co/mlx-community/Falcon-H1-3B-Instruct-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Falcon-H1 3B Instruct (Q4_K_M, needs ~1.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF/tree/02cb641c60514333e2d46288a55a27b83905f0eb))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~1.9GB
-ollama run hf.co/unsloth/Falcon-H1-3B-Instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~3.4GB
-ollama run hf.co/unsloth/Falcon-H1-3B-Instruct-GGUF:Q8_0
-```
+Other versions: Q8_0 (~3.4 GB) `lms get https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF@Q8_0 -y` · 4bit (~1.8 GB, Mac only) `lms get https://huggingface.co/mlx-community/Falcon-H1-3B-Instruct-4bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~1.8GB
-mlx_lm.chat --model mlx-community/Falcon-H1-3B-Instruct-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Falcon-H1-3B-Instruct-4bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-**Other engines**
+2. Run Falcon-H1 3B Instruct (Q4_K_M, needs ~1.9 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Falcon-H1-3B-Instruct-GGUF/tree/02cb641c60514333e2d46288a55a27b83905f0eb))
+   
+   ```sh
+   ollama run hf.co/unsloth/Falcon-H1-3B-Instruct-GGUF:Q4_K_M
+   ```
 
-```sh
-# 16-bit bf16 · ~6.3GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/Falcon-H1-3B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Other versions: Q8_0 (~3.4 GB) `ollama run hf.co/unsloth/Falcon-H1-3B-Instruct-GGUF:Q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Falcon-H1 3B Instruct (4bit, needs ~1.8 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Falcon-H1-3B-Instruct-4bit/tree/1028ffefe5e7dfdd7b470ac1db4cb4f1eb20555e))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Falcon-H1-3B-Instruct-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Falcon-H1-3B-Instruct-4bit
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~6.3 GB, from [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1-3B-Instruct/tree/01087ec4c132d7f186908716b3530ea187f062a1))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/Falcon-H1-3B-Instruct', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/tiiuae](https://huggingface.co/tiiuae/Falcon-H1-3B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/falcon-h1-3b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

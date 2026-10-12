@@ -42,20 +42,14 @@ weighted average                        = 48.0
 
 ## How to run it
 
-<pre>
-version                              needs  score
-fp32 checkpoint (silma-tts 1.0.5)  ~2.65GB   48.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 checkpoint (silma-tts 1.0.5), needs ~2.65 GB, from [huggingface.co/silma-ai](https://huggingface.co/silma-ai/silma-tts/blob/226dd7a65cadf51f9a6dbe3953fc89003b3844d5/README.md))
+   
+   ```sh
+   pip install silma-tts && python -c "from silma_tts.api import SilmaTTS; silma_tts = SilmaTTS(); silma_tts.infer(ref_file='ref.wav', ref_text=None, gen_text='أنا نموذج جديد من سلمى لتحويل النص إلى كلام.', file_wave='generated_audio.wav', seed=None, speed=1)"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 checkpoint (silma-tts 1.0.5) · ~2.65GB
-pip install silma-tts && python -c "from silma_tts.api import SilmaTTS; silma_tts = SilmaTTS(); silma_tts.infer(ref_file='ref.wav', ref_text=None, gen_text='أنا نموذج جديد من سلمى لتحويل النص إلى كلام.', file_wave='generated_audio.wav', seed=None, speed=1)"
-```
+Official weights and documentation: [huggingface.co/silma-ai](https://huggingface.co/silma-ai/silma-tts)
 
 [interactive version](https://whatmodel.sh/model/silma-tts-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

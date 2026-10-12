@@ -69,10 +69,10 @@ weighted average                                   = 66.2
 
 ## How to run it
 
+### Through an API
+
 api (Alibaba Cloud Model Studio) · $0.56/M blended · $0.25 in / $1.5 out per 1M tokens · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/text-generation-model)
 
 <sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per 1M tokens, Singapore (International), qwen3.6-flash (currently equivalent to qwen3.6-flash-2026-04-16), 0\<Token\<=256K input tier: input $0.25, output $1.5; the 256K-1M tier ($1/$4) is priced higher. Batch (50%) and context-cache discounts and free quota excluded. Observed 2026-09-25. · [context source](https://www.alibabacloud.com/help/en/model-studio/text-generation-model): Alibaba Cloud Model Studio text-generation models table: qwen3.6-flash (snapshot qwen3.6-flash-2026-04-16) context 1M (stated rounded). Observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/qwen3-6-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

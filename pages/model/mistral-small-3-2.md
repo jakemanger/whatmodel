@@ -139,79 +139,94 @@ mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Smal
 
 ## How to run it
 
+### Through an API
+
 api (DeepInfra) · $0.11/M blended · $0.075 in / $0.2 out per 1M tokens · [deepinfra.com](https://deepinfra.com/mistralai/Mistral-Small-3.2-24B-Instruct-2506)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output.  Product: Serverless text generation. API model: mistralai/Mistral-Small-3.2-24B-Instruct-2506. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-<pre>
-download                      size  score
-4-bit q4_k_m               ~14.9GB   55.8
-8-bit q8_0                 ~29.3GB   55.8
-4-bit Q4_K_M               ~14.3GB   55.8
-8-bit Q8_0                 ~25.1GB   55.8
-4-bit mlx-4bit · mac only  ~13.5GB   55.8
-4-bit mlx-8bit · mac only  ~25.9GB   55.8
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Mistral Small 3.2 24B (Q4_K_M, needs ~14.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF/tree/36798e8b853bcf0ce899aeba9f8a7530ff1991fe))
+   
+   ```sh
+   llama cli -hf lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~14.3GB
-llama cli -hf lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~25.1GB
-llama cli -hf lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF:Q8_0
-```
+Other versions: Q8_0 (~25.1 GB) `llama cli -hf lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~14.3GB
-lms get https://huggingface.co/lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~25.1GB
-lms get https://huggingface.co/lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~13.5GB
-lms get https://huggingface.co/lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~25.9GB
-lms get https://huggingface.co/lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Mistral Small 3.2 24B (Q4_K_M, needs ~14.3 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF/tree/36798e8b853bcf0ce899aeba9f8a7530ff1991fe))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~14.9GB
-ollama run mistral-small3.2:24b
-# 8-bit q8_0 · ~29.3GB
-ollama run mistral-small3.2:24b-instruct-2506-q8_0
-# 4-bit Q4_K_M · ~14.3GB
-ollama run hf.co/lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~25.1GB
-ollama run hf.co/lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~25.1 GB) `lms get https://huggingface.co/lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF@Q8_0 -y` · 4bit (~13.5 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-MLX-4bit -y` · 8bit (~25.9 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-MLX-8bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~13.5GB
-mlx_lm.chat --model lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~25.9GB
-mlx_lm.chat --model lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-MLX-8bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Mistral Small 3.2 24B (Q4_K_M, needs ~14.9 GB, from [ollama.com](https://ollama.com/library/mistral-small3.2/tags))
+   
+   ```sh
+   ollama run mistral-small3.2:24b
+   ```
+
+Other versions: Q8_0 (~29.3 GB) `ollama run mistral-small3.2:24b-instruct-2506-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Mistral Small 3.2 24B (4bit, needs ~13.5 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-MLX-4bit/tree/61d29b9c1c12db05b4d156ea4bd743e9f00be8e6))
+   
+   ```sh
+   mlx_lm.chat --model lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-MLX-4bit
+   ```
+
+Other versions: 8bit (~25.9 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-MLX-8bit`
+
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506)
 
 ## Quantization evidence
 

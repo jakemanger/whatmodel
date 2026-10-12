@@ -49,6 +49,6 @@ weighted average                                   = 47.8
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/gpt-4o-mini-audio-preview-2024-12-17) · [JSON](https://whatmodel.sh/api?format=json&all=1)

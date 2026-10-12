@@ -95,66 +95,91 @@ weighted average                                   = 47.2
 
 ## How to run it
 
+### Through an API
+
 api (Cohere) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [docs.cohere.com](https://docs.cohere.com/docs/models)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard input and output (LiteLLM @c19ce71 row 'command-r-plus-08-2024', litellm\_provider cohere\_chat). Product: Cohere Chat API. API model: command-r-plus-08-2024 (Cohere models page: Live). Currency: USD. · [context source](https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024/blob/e808c1a2249354ca211c9f08d1338e5039f633f8/README.md): Context length stated on the official model card.</sub>
 
-<pre>
-download                       size  score
-4-bit q4_k_m                ~62.9GB   47.2
-8-bit q8_0                 ~125.3GB   47.2
-4-bit Q4_K_M                ~62.8GB   47.2
-4-bit mlx-4bit · mac only   ~58.4GB   47.2
-4-bit mlx-8bit · mac only  ~110.3GB   47.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Command R Plus (08-2024) (Q4_K_M, needs ~62.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/c4ai-command-r-plus-08-2024-GGUF/tree/059dd2d209151aafb863c7d3bdf07d1055b362e1))
+   
+   ```sh
+   llama cli -hf lmstudio-community/c4ai-command-r-plus-08-2024-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/c4ai-command-r-plus-08-2024-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~62.8GB
-llama cli -hf lmstudio-community/c4ai-command-r-plus-08-2024-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/c4ai-command-r-plus-08-2024-GGUF:Q4_K_M
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~62.8GB
-lms get https://huggingface.co/lmstudio-community/c4ai-command-r-plus-08-2024-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~58.4GB
-lms get https://huggingface.co/mlx-community/c4ai-command-r-plus-08-2024-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~110.3GB
-lms get https://huggingface.co/mlx-community/c4ai-command-r-plus-08-2024-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Command R Plus (08-2024) (Q4_K_M, needs ~62.8 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/c4ai-command-r-plus-08-2024-GGUF/tree/059dd2d209151aafb863c7d3bdf07d1055b362e1))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/c4ai-command-r-plus-08-2024-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~62.9GB
-ollama run command-r-plus:104b-08-2024-q4_K_M
-# 8-bit q8_0 · ~125.3GB
-ollama run command-r-plus:104b-08-2024-q8_0
-```
+Other versions: 4bit (~58.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-plus-08-2024-4bit -y` · 8bit (~110.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/c4ai-command-r-plus-08-2024-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~58.4GB
-mlx_lm.chat --model mlx-community/c4ai-command-r-plus-08-2024-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/c4ai-command-r-plus-08-2024-4bit
-# 4-bit mlx-8bit · mac only · ~110.3GB
-mlx_lm.chat --model mlx-community/c4ai-command-r-plus-08-2024-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/c4ai-command-r-plus-08-2024-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Command R Plus (08-2024) (Q4_K_M, needs ~62.9 GB, from [ollama.com](https://ollama.com/library/command-r-plus/tags))
+   
+   ```sh
+   ollama run command-r-plus:104b-08-2024-q4_K_M
+   ```
+
+Other versions: Q8_0 (~125.3 GB) `ollama run command-r-plus:104b-08-2024-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Command R Plus (08-2024) (4bit, needs ~58.4 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/c4ai-command-r-plus-08-2024-4bit/tree/c1793cf166ecc2e82bca7979d72cc91a95dd4d76))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/c4ai-command-r-plus-08-2024-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/c4ai-command-r-plus-08-2024-4bit
+   ```
+
+Other versions: 8bit (~110.3 GB, Mac only) `mlx_lm.chat --model mlx-community/c4ai-command-r-plus-08-2024-8bit`
+
+Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024)
 
 [interactive version](https://whatmodel.sh/model/command-r-plus-08-2024) · [JSON](https://whatmodel.sh/api?format=json&all=1)

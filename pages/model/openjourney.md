@@ -61,23 +61,16 @@ weighted average                                   = 27.6
 
 ## How to run it
 
-<pre>
-version                needs  score
-fp16 · nvidia only    ~2.6GB   27.6
-q8_0 (sd.cpp --type)  ~2.1GB   27.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~2.6 GB, NVIDIA only, from [huggingface.co/prompthero](https://huggingface.co/prompthero/openjourney))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('prompthero/openjourney', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
+   ```
 
-### Run it on your own machine
+Other versions: Q8_0 (SD.CPP --TYPE) (~2.1 GB) `sd-cli -m models/mdjrny-v4.safetensors --type q8_0 -p "a lovely cat"`
 
-**Other engines**
-
-```sh
-# fp16 · nvidia only · ~2.6GB
-uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('prompthero/openjourney', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
-# q8_0 (sd.cpp --type) · ~2.1GB
-sd-cli -m models/mdjrny-v4.safetensors --type q8_0 -p "a lovely cat"
-```
+Official weights and documentation: [huggingface.co/prompthero](https://huggingface.co/prompthero/openjourney)
 
 [interactive version](https://whatmodel.sh/model/openjourney) · [JSON](https://whatmodel.sh/api?format=json&all=1)

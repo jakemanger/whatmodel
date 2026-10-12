@@ -54,6 +54,6 @@ weighted average                                   = 26.4
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/text-davinci-001) · [JSON](https://whatmodel.sh/api?format=json&all=1)

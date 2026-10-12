@@ -42,8 +42,8 @@ weighted average                        = 63.6
 
 ## How to run it
 
-api (Zoom) · price unknown · [developers.zoom.us](https://developers.zoom.us/docs/ai-services/scribe/)
+### Through an API
 
-no verified local download listed
+api (Zoom) · price unknown · [developers.zoom.us](https://developers.zoom.us/docs/ai-services/scribe/)
 
 [interactive version](https://whatmodel.sh/model/zoom-scribe-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

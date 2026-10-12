@@ -43,20 +43,14 @@ weighted average                                   = 24.1
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-bf16 (official generate_txt2img.py) · n…  ~25.1GB   24.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (OFFICIAL GENERATE_TXT2IMG.PY), needs ~25.1 GB, NVIDIA only, from [github.com/onecat-ai](https://github.com/onecat-ai/OneCAT/blob/fc971e408327c733224e8ebfb69569fada602e8b/README.md))
+   
+   ```sh
+   git clone https://github.com/onecat-ai/OneCAT && cd OneCAT && pip3 install -r requirements.txt && hf download onecat-ai/OneCAT-3B --local-dir OneCAT-3B && wget -O infinity_vae_d32reg.pth "https://huggingface.co/FoundationVision/Infinity/resolve/main/infinity_vae_d32reg.pth?download=true" && accelerate launch --num_processes=1 generate_txt2img.py --model_name_or_path="OneCAT-3B" --vae_path="infinity_vae_d32reg.pth" --prompt="Fashion model with iridescent makeup, prismatic light reflections, high-fashion studio setting." --output_dir="output/txt2img"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (official generate_txt2img.py) · nvidia only · ~25.1GB
-git clone https://github.com/onecat-ai/OneCAT && cd OneCAT && pip3 install -r requirements.txt && hf download onecat-ai/OneCAT-3B --local-dir OneCAT-3B && wget -O infinity_vae_d32reg.pth "https://huggingface.co/FoundationVision/Infinity/resolve/main/infinity_vae_d32reg.pth?download=true" && accelerate launch --num_processes=1 generate_txt2img.py --model_name_or_path="OneCAT-3B" --vae_path="infinity_vae_d32reg.pth" --prompt="Fashion model with iridescent makeup, prismatic light reflections, high-fashion studio setting." --output_dir="output/txt2img"
-```
+Official weights and documentation: [huggingface.co/onecat-ai](https://huggingface.co/onecat-ai/OneCAT-3B)
 
 [interactive version](https://whatmodel.sh/model/onecat-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

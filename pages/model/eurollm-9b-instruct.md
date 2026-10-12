@@ -46,60 +46,89 @@ weighted average                                 = 46.6
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/utter-project/EuroLLM-9B-Instruct/blob/f7ae2bc3bcbb538c0b93fa6cfbf388d9898b1ace/README.md): Card hyper-parameter table: 'Sequence Length 4,096' (card visible on the gated repo page). Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_k_m               ~5.58GB   46.6
-16-bit bf16 · nvidia only  ~18.3GB   46.6
-4-bit mlx-4bit · mac only   ~5.1GB   46.6
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run EuroLLM 9B Instruct (Q4_K_M, needs ~5.58 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/EuroLLM-9B-Instruct-GGUF/tree/55e5590cc457e42ed197c34c5b10403472b05d54))
+   
+   ```sh
+   llama cli -hf bartowski/EuroLLM-9B-Instruct-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/EuroLLM-9B-Instruct-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~5.58GB
-llama cli -hf bartowski/EuroLLM-9B-Instruct-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/EuroLLM-9B-Instruct-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run EuroLLM 9B Instruct (Q4_K_M, needs ~5.58 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/EuroLLM-9B-Instruct-GGUF/tree/55e5590cc457e42ed197c34c5b10403472b05d54))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/EuroLLM-9B-Instruct-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~5.58GB
-lms get https://huggingface.co/bartowski/EuroLLM-9B-Instruct-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~5.1GB
-lms get https://huggingface.co/stelterlab/EuroLLM-9B-Instruct-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: 4bit (~5.1 GB, Mac only) `lms get https://huggingface.co/stelterlab/EuroLLM-9B-Instruct-MLX-4bit -y`
 
-```sh
-# 4-bit q4_k_m · ~5.58GB
-ollama run hf.co/bartowski/EuroLLM-9B-Instruct-GGUF:Q4_K_M
-```
+### Ollama
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~5.1GB
-mlx_lm.chat --model stelterlab/EuroLLM-9B-Instruct-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model stelterlab/EuroLLM-9B-Instruct-MLX-4bit
-```
+2. Run EuroLLM 9B Instruct (Q4_K_M, needs ~5.58 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/EuroLLM-9B-Instruct-GGUF/tree/55e5590cc457e42ed197c34c5b10403472b05d54))
+   
+   ```sh
+   ollama run hf.co/bartowski/EuroLLM-9B-Instruct-GGUF:Q4_K_M
+   ```
 
-**Other engines**
+### MLX (Mac)
 
-```sh
-# 16-bit bf16 · nvidia only · ~18.3GB
-vllm serve utter-project/EuroLLM-9B-Instruct
-```
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run EuroLLM 9B Instruct (4bit, needs ~5.1 GB, Mac only, from [huggingface.co/stelterlab](https://huggingface.co/stelterlab/EuroLLM-9B-Instruct-MLX-4bit/tree/38b6a2993c2942dad5efb406198b10ba5250545d))
+   
+   ```sh
+   mlx_lm.chat --model stelterlab/EuroLLM-9B-Instruct-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model stelterlab/EuroLLM-9B-Instruct-MLX-4bit
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~18.3 GB, NVIDIA only, from [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-9B-Instruct/tree/f7ae2bc3bcbb538c0b93fa6cfbf388d9898b1ace))
+   
+   ```sh
+   vllm serve utter-project/EuroLLM-9B-Instruct
+   ```
+
+Official weights and documentation: [huggingface.co/utter-project](https://huggingface.co/utter-project/EuroLLM-9B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/eurollm-9b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

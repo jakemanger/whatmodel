@@ -43,10 +43,10 @@ weighted average                        = 53.8
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [developers.openai.com](https://developers.openai.com/api/docs/models/gpt-4o-search-preview)
 
 <sub>[price source](https://developers.openai.com/api/docs/models/gpt-4o-search-preview): Observed 2026-10-10 on OpenAI's own GPT-4o Search Preview model page (Text tokens): input $2.5, output $10 per 1M tokens. Web search calls carry an extra per-call fee, which is not included (the page refers to the pricing page). Chat Completions only. · [context source](https://developers.openai.com/api/docs/models/gpt-4o-search-preview): OpenAI model page: '128,000 context window', '16,384 max output tokens'. Observed 2026-10-10.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-4o-search-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

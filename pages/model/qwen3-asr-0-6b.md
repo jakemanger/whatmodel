@@ -79,20 +79,14 @@ weighted average                                   = 54.6
 
 ## How to run it
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~2.76GB   54.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~2.76 GB, NVIDIA only, from [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-ASR-0.6B))
+   
+   ```sh
+   uvx --from 'qwen-asr[vllm]' qwen-asr-serve Qwen/Qwen3-ASR-0.6B --gpu-memory-utilization 0.8 --host 0.0.0.0 --port 8000
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~2.76GB
-uvx --from 'qwen-asr[vllm]' qwen-asr-serve Qwen/Qwen3-ASR-0.6B --gpu-memory-utilization 0.8 --host 0.0.0.0 --port 8000
-```
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-ASR-0.6B)
 
 [interactive version](https://whatmodel.sh/model/qwen3-asr-0-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

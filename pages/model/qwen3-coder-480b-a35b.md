@@ -97,71 +97,91 @@ Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A
 
 ## How to run it
 
+### Through an API
+
 api (Novita AI) · $0.67/M blended · $0.38 in / $1.55 out per 1M tokens · [novita.ai](https://novita.ai/models)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output. Model endpoint qwen/qwen3-coder-480b-a35b-instruct.  Product: Serverless chat completions. API model: qwen/qwen3-coder-480b-a35b-instruct. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~288.5GB   64.0
-2-bit ud-q2_k_xl           ~144.5GB   64.0
-1-bit ud-iq1_m              ~72.5GB   64.0
-4-bit mlx-4bit · mac only  ~270.1GB   64.0
-4-bit mlx-8bit · mac only  ~510.2GB   64.0
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Qwen3-Coder 480B-A35B Instruct (ud-q2_k_xl, needs ~144.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-Q2_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-Q2_K_XL
+   ```
 
-```sh
-# 2-bit ud-q2_k_xl · ~144.5GB
-llama cli -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-Q2_K_XL
-# 1-bit ud-iq1_m · ~72.5GB
-llama cli -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-IQ1_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-IQ1_M
-```
+Other versions: ud-iq1_m (~72.5 GB) `llama cli -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-IQ1_M`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 2-bit ud-q2_k_xl · ~144.5GB
-lms get https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 1-bit ud-iq1_m · ~72.5GB
-lms get https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF@UD-IQ1_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~270.1GB
-lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~510.2GB
-lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Qwen3-Coder 480B-A35B Instruct (4bit, needs ~270.1 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit/tree/a13176858e9594b24a5ab04298d6d0939e51ab66))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~288.5GB
-ollama run qwen3-coder:480b
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: ud-q2_k_xl (~144.5 GB) `lms get https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF@UD-Q2_K_XL -y` · ud-iq1_m (~72.5 GB) `lms get https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF@UD-IQ1_M -y` · 8bit (~510.2 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-8bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~270.1GB
-mlx_lm.chat --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~510.2GB
-mlx_lm.chat --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-8bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Qwen3-Coder 480B-A35B Instruct (Q4_K_M, needs ~288.5 GB, from [ollama.com](https://ollama.com/library/qwen3-coder/tags))
+   
+   ```sh
+   ollama run qwen3-coder:480b
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Qwen3-Coder 480B-A35B Instruct (4bit, needs ~270.1 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit/tree/a13176858e9594b24a5ab04298d6d0939e51ab66))
+   
+   ```sh
+   mlx_lm.chat --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-4bit
+   ```
+
+Other versions: 8bit (~510.2 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Qwen3-Coder-480B-A35B-Instruct-MLX-8bit`
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen3-coder-480b-a35b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

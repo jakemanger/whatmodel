@@ -61,10 +61,10 @@ weighted average                                   = 57.1
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.070/sec · [fal.ai](https://fal.ai/models/fal-ai/kling-video/v2.5-turbo/pro/text-to-video)
 
 <sub>[price source](https://fal.ai/models/fal-ai/kling-video/v2.5-turbo/pro/text-to-video): USD per second of generated video on fal.ai. Product: fal Kling 2.5 Turbo Pro text-to-video endpoint. API model: fal-ai/kling-video/v2.5-turbo/pro/text-to-video. Price basis: fal prices a 5-s video at $0.35 and each additional second at $0.07, i.e. $0.07 per output second. Kling's own developer pricing page does not list a per-model price for V2.5 Turbo. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/kling-2-5-turbo-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

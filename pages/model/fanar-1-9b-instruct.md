@@ -40,55 +40,70 @@ weighted average                              = 42.4
 
 ## How to run it
 
-<pre>
-download                      size  score
-16-bit bf16 · nvidia only  ~17.6GB   42.4
-4-bit Q4_K_M                ~5.4GB   42.4
-8-bit Q8_0                  ~9.3GB   42.4
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Fanar 1 9B Instruct (Q4_K_M, needs ~5.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF/tree/63b1f77e1ef4f91bca3c8e1db4511f6f62620b58))
+   
+   ```sh
+   llama cli -hf mradermacher/Fanar-1-9B-Instruct-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/Fanar-1-9B-Instruct-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~5.4GB
-llama cli -hf mradermacher/Fanar-1-9B-Instruct-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Fanar-1-9B-Instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~9.3GB
-llama cli -hf mradermacher/Fanar-1-9B-Instruct-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/Fanar-1-9B-Instruct-GGUF:Q8_0
-```
+Other versions: Q8_0 (~9.3 GB) `llama cli -hf mradermacher/Fanar-1-9B-Instruct-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~5.4GB
-lms get https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~9.3GB
-lms get https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Fanar 1 9B Instruct (Q4_K_M, needs ~5.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF/tree/63b1f77e1ef4f91bca3c8e1db4511f6f62620b58))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~5.4GB
-ollama run hf.co/mradermacher/Fanar-1-9B-Instruct-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~9.3GB
-ollama run hf.co/mradermacher/Fanar-1-9B-Instruct-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q8_0 (~9.3 GB) `lms get https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF@Q8_0 -y`
 
-```sh
-# 16-bit bf16 · nvidia only · ~17.6GB
-vllm serve QCRI/Fanar-1-9B-Instruct
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Fanar 1 9B Instruct (Q4_K_M, needs ~5.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/Fanar-1-9B-Instruct-GGUF/tree/63b1f77e1ef4f91bca3c8e1db4511f6f62620b58))
+   
+   ```sh
+   ollama run hf.co/mradermacher/Fanar-1-9B-Instruct-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~9.3 GB) `ollama run hf.co/mradermacher/Fanar-1-9B-Instruct-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~17.6 GB, NVIDIA only, from [huggingface.co/QCRI](https://huggingface.co/QCRI/Fanar-1-9B-Instruct/tree/d30938d0efb1fd251727ee96df6987802ff84662))
+   
+   ```sh
+   vllm serve QCRI/Fanar-1-9B-Instruct
+   ```
+
+Official weights and documentation: [huggingface.co/QCRI](https://huggingface.co/QCRI/Fanar-1-9B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/fanar-1-9b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

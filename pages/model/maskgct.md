@@ -88,20 +88,14 @@ weighted average                                   = 58.8
 
 ## How to run it
 
-<pre>
-version              needs  score
-fp32 · nvidia only  ~6.6GB   58.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~6.6 GB, NVIDIA only, from [github.com/open-mmlab](https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md))
+   
+   ```sh
+   git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && pip install -r models/tts/maskgct/requirements.txt && python -m models.tts.maskgct.maskgct_inference
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · nvidia only · ~6.6GB
-git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && pip install -r models/tts/maskgct/requirements.txt && python -m models.tts.maskgct.maskgct_inference
-```
+Official weights and documentation: [huggingface.co/amphion](https://huggingface.co/amphion/MaskGCT)
 
 [interactive version](https://whatmodel.sh/model/maskgct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

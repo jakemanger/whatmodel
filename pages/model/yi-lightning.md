@@ -60,10 +60,10 @@ weighted average                            = 55.4
 
 ## How to run it
 
+### Through an API
+
 api (01.AI (Lingyiwanwu platform)) · price unknown · [platform.lingyiwanwu.com](https://platform.lingyiwanwu.com/docs)
 
 <sub>[context source](https://platform.lingyiwanwu.com/docs): 01.AI platform model table: yi-lightning context length 16K (stated rounded). The same row now describes the yi-lightning endpoint as routing requests to DeepSeek-V3, Qwen3-30B-A3B, Yi-Lightning and others, so this is the 01.AI service limit for the yi-lightning API name rather than a statement about the original model's architecture. Observed 2026-10-07.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/yi-lightning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

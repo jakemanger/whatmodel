@@ -45,10 +45,10 @@ weighted average                        = 59.0
 
 ## How to run it
 
+### Through an API
+
 api (Alibaba Cloud Model Studio) · $0.030/image · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
 <sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per output image, Singapore (international) deployment; only output is billed; China (Beijing) lists $0.028671. Free quota and promotions excluded. Product: Alibaba Cloud Model Studio image generation. API model: wan2.5-t2i-preview. Settings: region=Singapore (international), n=1. Price basis: published list rate. Currency: USD. Alibaba Cloud official model pricing page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/wan-2-5-t2i-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

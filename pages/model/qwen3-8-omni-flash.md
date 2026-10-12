@@ -81,10 +81,10 @@ weighted average                        = 75.3
 
 ## How to run it
 
+### Through an API
+
 api (Alibaba Cloud Model Studio) · $0.23/M blended · $0.15 in / $0.47 out per 1M tokens · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/qwen-omni)
 
 <sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): Observed 2026-10-09 on Alibaba Cloud Model Studio 'Model pricing', Qwen-Omni table, Singapore region, model ID qwen3.8-omni-flash, deployment scope International: input USD 0.15, cache-hit input USD 0.016, output USD 0.47 per million tokens. Other regions (e.g. China (Beijing)) price differently; realtime API excluded. · [context source](https://www.alibabacloud.com/help/en/model-studio/qwen-omni): Alibaba Cloud Model Studio Qwen-Omni page: 'The context length is 1M tokens' for qwen3.8-omni-flash. Observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/qwen3-8-omni-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

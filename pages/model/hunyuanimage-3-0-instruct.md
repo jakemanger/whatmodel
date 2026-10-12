@@ -55,24 +55,20 @@ weighted average                                   = 62.2
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.090/image · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-image/v3/instruct/text-to-image)
 
 <sub>[price source](https://fal.ai/models/fal-ai/hunyuan-image/v3/instruct/text-to-image): USD for one 1-megapixel output: fal bills this endpoint $0.09 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hunyuan-image/v3/instruct/text-to-image ('Instruct version of Hunyuan-Image 3.0'); the edit endpoint fal-ai/hunyuan-image/v3/instruct/edit has the same $0.09/MP rate. Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Tencent direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-<pre>
-version                                      needs  score
-bf16 (official, multi-GPU) · nvidia only  ~202.7GB   62.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (OFFICIAL, MULTI-GPU), needs ~202.7 GB, NVIDIA only, from [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanImage-3.0-Instruct/blob/2ec2c78bee7d4b94157341fba86c4c2c7b1858b2/README.md))
+   
+   ```sh
+   git clone https://github.com/Tencent-Hunyuan/HunyuanImage-3.0.git && cd HunyuanImage-3.0 && pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128 && pip install -r requirements.txt && hf download tencent/HunyuanImage-3.0-Instruct --local-dir ./HunyuanImage-3-Instruct && python3 -c "from transformers import AutoModelForCausalLM; m=AutoModelForCausalLM.from_pretrained('./HunyuanImage-3-Instruct', attn_implementation='sdpa', trust_remote_code=True, torch_dtype='auto', device_map='auto', moe_impl='eager', moe_drop_tokens=True); m.load_tokenizer('./HunyuanImage-3-Instruct'); cot,s=m.generate_image(prompt='Make a new fridge magnet from the logo in image 1 using the fridge-magnet material in image 2', image=['./assets/demo_instruct_imgs/input_1_0.png','./assets/demo_instruct_imgs/input_1_1.png'], seed=42, image_size='auto', use_system_prompt='en_unified', bot_task='think_recaption', infer_align_image_size=True, diff_infer_steps=50, verbose=2); s[0].save('image_edit.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (official, multi-GPU) · nvidia only · ~202.7GB
-git clone https://github.com/Tencent-Hunyuan/HunyuanImage-3.0.git && cd HunyuanImage-3.0 && pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128 && pip install -r requirements.txt && hf download tencent/HunyuanImage-3.0-Instruct --local-dir ./HunyuanImage-3-Instruct && python3 -c "from transformers import AutoModelForCausalLM; m=AutoModelForCausalLM.from_pretrained('./HunyuanImage-3-Instruct', attn_implementation='sdpa', trust_remote_code=True, torch_dtype='auto', device_map='auto', moe_impl='eager', moe_drop_tokens=True); m.load_tokenizer('./HunyuanImage-3-Instruct'); cot,s=m.generate_image(prompt='Make a new fridge magnet from the logo in image 1 using the fridge-magnet material in image 2', image=['./assets/demo_instruct_imgs/input_1_0.png','./assets/demo_instruct_imgs/input_1_1.png'], seed=42, image_size='auto', use_system_prompt='en_unified', bot_task='think_recaption', infer_align_image_size=True, diff_infer_steps=50, verbose=2); s[0].save('image_edit.png')"
-```
+Official weights and documentation: [huggingface.co/tencent](https://huggingface.co/tencent/HunyuanImage-3.0-Instruct)
 
 [interactive version](https://whatmodel.sh/model/hunyuanimage-3-0-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

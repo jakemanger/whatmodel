@@ -59,23 +59,16 @@ weighted average                        = 68.8
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-int8 convrot + Qwen3-VL 8B q4_k_m (sd.c…  ~16.1GB   68.8
-gguf-q4_k + Qwen3-VL 8B q4_k_m (sd.cpp)   ~12.4GB   68.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (int8 convrot + Qwen3-VL 8B q4_k_m (sd.cpp), needs ~16.1 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_2.1.md))
+   
+   ```sh
+   sd-cli --diffusion-model models/qwen_image_2.1_int8_convrot.safetensors --vae models/qwen_image_2.1_vae_bf16.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf -p "a lovely cat holding a sign says 'qwen2.1.cpp'" --cfg-scale 6.0 --sampling-method euler -v --offload-to-cpu --fa -o qwen_image_2.1.png
+   ```
 
-### Run it on your own machine
+Other versions: gguf-q4_k + Qwen3-VL 8B q4_k_m (sd.cpp) (~12.4 GB) `sd-cli --diffusion-model models/qwen_image_2.1-Q4_K.gguf --vae models/qwen_image_2.1_vae_bf16.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf -p "a lovely cat holding a sign says 'qwen2.1.cpp'" --cfg-scale 6.0 --sampling-method euler -v --offload-to-cpu --fa -o qwen_image_2.1.png`
 
-**Other engines**
-
-```sh
-# int8 convrot + Qwen3-VL 8B q4_k_m (sd.cpp) · ~16.1GB
-sd-cli --diffusion-model models/qwen_image_2.1_int8_convrot.safetensors --vae models/qwen_image_2.1_vae_bf16.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf -p "a lovely cat holding a sign says 'qwen2.1.cpp'" --cfg-scale 6.0 --sampling-method euler -v --offload-to-cpu --fa -o qwen_image_2.1.png
-# gguf-q4_k + Qwen3-VL 8B q4_k_m (sd.cpp) · ~12.4GB
-sd-cli --diffusion-model models/qwen_image_2.1-Q4_K.gguf --vae models/qwen_image_2.1_vae_bf16.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf -p "a lovely cat holding a sign says 'qwen2.1.cpp'" --cfg-scale 6.0 --sampling-method euler -v --offload-to-cpu --fa -o qwen_image_2.1.png
-```
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen-Image-2.1)
 
 [interactive version](https://whatmodel.sh/model/qwen-image-2-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

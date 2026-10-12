@@ -77,10 +77,10 @@ weighted average                        = 71.1
 
 ## How to run it
 
+### Through an API
+
 api (Mistral AI) · $2.06/M blended · $1.36 in / $4.18 out per 1M tokens · [docs.mistral.ai](https://docs.mistral.ai/models/mistral-large-4)
 
 <sub>[price source](https://docs.mistral.ai/models/mistral-large-4): Observed 2026-10-10 on Mistral's own Mistral Large 4 model page (Price, USD): original (list) price $1.36 input / $4.18 output per million tokens; cached input $0.14. The page also shows a sale price of $0.68 input / $0.07 cached / $2.09 output, which is not used here. API names mistral-large-4 and mistral-large-4-0, version 26.10, status 'Public Preview'. · [context source](https://docs.mistral.ai/models/mistral-large-4): Mistral's model page: Context '1M'. Observed 2026-10-10.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/mistral-large-4) · [JSON](https://whatmodel.sh/api?format=json&all=1)

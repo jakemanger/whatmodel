@@ -42,10 +42,10 @@ weighted average                        = 62.2
 
 ## How to run it
 
+### Through an API
+
 api (Microsoft Azure) · $0.0060/audio min · [azure.microsoft.com](https://azure.microsoft.com/en-us/pricing/details/speech)
 
 <sub>[price source](https://azure.microsoft.com/en-us/pricing/details/speech): USD per input audio minute: Azure Speech lists MAI Transcribe-1.5 at $0.36 per hour (÷60), US East standard pay-as-you-go (Speech to Text, Standard Transcription). Unlike MAI Transcribe-2, it carries no promotional footnote. Product: Azure AI Speech speech to text. API model: MAI-Transcribe-1.5. Settings: S0 pay-as-you-go, region=us-east. Price basis: published list rate (price embedded in the official page's regional price data), per-hour to per-minute scaling only. Exclusions: add-ons, commitment tiers, US Gov regions ($0.45/hr). Currency: USD. Microsoft Azure official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/mai-transcribe-1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

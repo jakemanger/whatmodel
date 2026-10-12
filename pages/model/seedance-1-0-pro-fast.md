@@ -41,10 +41,10 @@ weighted average                                   = 61.7
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.049/sec · [fal.ai](https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/text-to-video)
 
 <sub>[price source](https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/text-to-video): USD per second, 1080p, derived from fal's own figure that a 1080p 5-second video costs roughly $0.245 (÷ 5); provider-published approximation. Product: fal Seedance 1.0 Pro Fast text-to-video endpoint. API model: fal-ai/bytedance/seedance/v1/pro/fast/text-to-video. Underlying billing is $1 per 1M video tokens; no per-second figure is printed for other resolutions, so none is derived. Not the BytePlus direct tariff. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/seedance-1-0-pro-fast) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -65,31 +65,31 @@ weighted average                                   = 27.6
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit fp32  ~12.17GB   27.6
-4-bit q4_0    ~1.8GB   27.6
-4-bit q4_0    ~1.8GB   27.6
-</pre>
+### Ollama (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-### Run it on your own machine
+2. Run StarCoderBase 3B (Q4_0, needs ~1.8 GB, from [ollama.com](https://ollama.com/library/starcoder/tags))
+   
+   ```sh
+   ollama run starcoder:3b
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: Q4_0 (~1.8 GB) `ollama run starcoder:3b`
 
-```sh
-# 4-bit q4_0 · ~1.8GB
-ollama run starcoder:3b
-# 4-bit q4_0 · ~1.8GB
-ollama run starcoder:3b
-```
+### Other ways to run it
 
-**Other engines**
+1. Run it as published (fp32, needs ~12.17 GB, from [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase-3b/tree/e1c5ef4ebb97afa0db09ec3e520f0487ca350bbe))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-3b', torch_dtype='auto', device_map='auto')('def print_hello_world():', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-```sh
-# 4-bit fp32 · ~12.17GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-3b', torch_dtype='auto', device_map='auto')('def print_hello_world():', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/bigcode](https://huggingface.co/bigcode/starcoderbase-3b)
 
 [interactive version](https://whatmodel.sh/model/starcoderbase-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

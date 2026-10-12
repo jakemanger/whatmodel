@@ -61,27 +61,22 @@ weighted average                                   = 60.1
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-image)
 
 <sub>[price source](https://fal.ai/models/fal-ai/ernie-image): USD for one 1-megapixel output: fal bills this endpoint $0.03 per output megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/ernie-image. Settings: 1 MP output, num\_images=1. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Baidu direct tariff. fal.ai official model page, observed 2026-09-25.</sub>
 
-<pre>
-version                                     needs  score
-bf16 · nvidia only                        ~19.7GB   60.1
-gguf-ud-q4_k_m + Ministral 3B (sd.cpp, …  ~17.1GB   60.1
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf-ud-q4_k_m + Ministral 3B (sd.cpp, all files in memory), needs ~17.1 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ernie_image.md))
+   
+   ```sh
+   sd-cli --diffusion-model models/ernie-image-UD-Q4_K_M.gguf --vae models/flux2_ae.safetensors --llm models/ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~19.7 GB, NVIDIA only) `uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ErnieImagePipeline; p=ErnieImagePipeline.from_pretrained('baidu/ERNIE-Image', torch_dtype=torch.bfloat16).to('cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=4.0).images[0].save('out.png')"`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~19.7GB
-uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ErnieImagePipeline; p=ErnieImagePipeline.from_pretrained('baidu/ERNIE-Image', torch_dtype=torch.bfloat16).to('cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=4.0).images[0].save('out.png')"
-# gguf-ud-q4_k_m + Ministral 3B (sd.cpp, all files in memory) · ~17.1GB
-sd-cli --diffusion-model models/ernie-image-UD-Q4_K_M.gguf --vae models/flux2_ae.safetensors --llm models/ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa
-```
+Official weights and documentation: [huggingface.co/baidu](https://huggingface.co/baidu/ERNIE-Image)
 
 [interactive version](https://whatmodel.sh/model/ernie-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

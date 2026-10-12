@@ -67,10 +67,10 @@ weighted average                                   = 51.9
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.060/image · [fal.ai](https://fal.ai/models/fal-ai/ideogram/v3)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per generated image, Ideogram 3 BALANCED setting on fal.ai. TURBO/QUALITY excluded. Product: Ideogram 3 text-to-image. API model: fal-ai/ideogram/v3. Settings: rendering speed=BALANCED, n=1. Price basis: published rate. Currency: USD.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/ideogram-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

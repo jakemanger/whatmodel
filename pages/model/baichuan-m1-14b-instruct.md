@@ -40,46 +40,53 @@ weighted average                        = 54.0
 
 ## How to run it
 
-<pre>
-download                       size  score
-16-bit bf16                ~28.94GB   54.0
-4-bit mlx-4bit · mac only    ~8.1GB   54.0
-4-bit mlx-8bit · mac only   ~15.4GB   54.0
-</pre>
+### LM Studio (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-### Run it on your own machine
+2. Run Baichuan-M1-14B-Instruct (4bit, needs ~8.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Baichuan-M1-14B-Instruct-4bit/tree/0ee8eb113181221a8b20e4aaab1ef0be8b904a8b))
+   
+   ```sh
+   lms get https://huggingface.co/mlx-community/Baichuan-M1-14B-Instruct-4bit -y
+   ```
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit mlx-4bit · mac only · ~8.1GB
-lms get https://huggingface.co/mlx-community/Baichuan-M1-14B-Instruct-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~15.4GB
-lms get https://huggingface.co/mlx-community/Baichuan-M1-14B-Instruct-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+Other versions: 8bit (~15.4 GB, Mac only) `lms get https://huggingface.co/mlx-community/Baichuan-M1-14B-Instruct-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### MLX (Mac)
 
-```sh
-# 4-bit mlx-4bit · mac only · ~8.1GB
-mlx_lm.chat --model mlx-community/Baichuan-M1-14B-Instruct-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Baichuan-M1-14B-Instruct-4bit
-# 4-bit mlx-8bit · mac only · ~15.4GB
-mlx_lm.chat --model mlx-community/Baichuan-M1-14B-Instruct-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Baichuan-M1-14B-Instruct-8bit
-```
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
 
-**Other engines**
+2. Run Baichuan-M1-14B-Instruct (4bit, needs ~8.1 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Baichuan-M1-14B-Instruct-4bit/tree/0ee8eb113181221a8b20e4aaab1ef0be8b904a8b))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Baichuan-M1-14B-Instruct-4bit
+   ```
 
-```sh
-# 16-bit bf16 · ~28.94GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='baichuan-inc/Baichuan-M1-14B-Instruct', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Baichuan-M1-14B-Instruct-4bit
+   ```
+
+Other versions: 8bit (~15.4 GB, Mac only) `mlx_lm.chat --model mlx-community/Baichuan-M1-14B-Instruct-8bit`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~28.94 GB, from [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan-M1-14B-Instruct/tree/c1798dfc9dab0270eb10180a0611cb607d5276d2))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='baichuan-inc/Baichuan-M1-14B-Instruct', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan-M1-14B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/baichuan-m1-14b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

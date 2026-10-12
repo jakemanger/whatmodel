@@ -43,23 +43,16 @@ weighted average                                   = 47.0
 
 ## How to run it
 
-<pre>
-version                        needs  score
-bf16 (moshi-mlx) · mac only  ~4.07GB   47.0
-bf16 (moshi) · nvidia only   ~4.07GB   47.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (MOSHI-MLX), needs ~4.07 GB, Mac only, from [github.com/kyutai-labs](https://github.com/kyutai-labs/delayed-streams-modeling/blob/4c4f65e147df056adf3346290d64c7b9649b18c9/README.md))
+   
+   ```sh
+   git clone https://github.com/kyutai-labs/delayed-streams-modeling && cd delayed-streams-modeling && echo "Hey, how are you?" | uvx --with moshi-mlx python scripts/tts_mlx.py - audio_output.wav
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (MOSHI) (~4.07 GB, NVIDIA only) `git clone https://github.com/kyutai-labs/delayed-streams-modeling && cd delayed-streams-modeling && echo "Hey, how are you?" | uvx --with moshi python scripts/tts_pytorch.py - audio_output.wav`
 
-**Other engines**
-
-```sh
-# bf16 (moshi-mlx) · mac only · ~4.07GB
-git clone https://github.com/kyutai-labs/delayed-streams-modeling && cd delayed-streams-modeling && echo "Hey, how are you?" | uvx --with moshi-mlx python scripts/tts_mlx.py - audio_output.wav
-# bf16 (moshi) · nvidia only · ~4.07GB
-git clone https://github.com/kyutai-labs/delayed-streams-modeling && cd delayed-streams-modeling && echo "Hey, how are you?" | uvx --with moshi python scripts/tts_pytorch.py - audio_output.wav
-```
+Official weights and documentation: [huggingface.co/kyutai](https://huggingface.co/kyutai/tts-1.6b-en_fr)
 
 [interactive version](https://whatmodel.sh/model/kyutai-tts-1-6b-en-fr) · [JSON](https://whatmodel.sh/api?format=json&all=1)

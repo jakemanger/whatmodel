@@ -40,82 +40,93 @@ weighted average                        = 54.6
 
 ## How to run it
 
-<pre>
-download                        size  score
-16-bit bf16                ~205.78GB   54.6
-4-bit Q4_K_M                 ~62.4GB   54.6
-8-bit Q8_0                  ~109.4GB   54.6
-2-bit Q2_K                   ~37.7GB   54.6
-4-bit mlx-4bit · mac only    ~57.9GB   54.6
-4-bit mlx-8bit · mac only   ~109.3GB   54.6
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run AntAngelMed (Q4_K_M, needs ~62.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AntAngelMed-GGUF/tree/df06b716416a496ab41ef58e5f4a9815d9802ba3))
+   
+   ```sh
+   llama cli -hf mradermacher/AntAngelMed-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/AntAngelMed-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~62.4GB
-llama cli -hf mradermacher/AntAngelMed-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/AntAngelMed-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~109.4GB
-llama cli -hf mradermacher/AntAngelMed-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/AntAngelMed-GGUF:Q8_0
-# 2-bit Q2_K · ~37.7GB
-llama cli -hf mradermacher/AntAngelMed-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/AntAngelMed-GGUF:Q2_K
-```
+Other versions: Q8_0 (~109.4 GB) `llama cli -hf mradermacher/AntAngelMed-GGUF:Q8_0` · Q2_K (~37.7 GB) `llama cli -hf mradermacher/AntAngelMed-GGUF:Q2_K`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~62.4GB
-lms get https://huggingface.co/mradermacher/AntAngelMed-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~109.4GB
-lms get https://huggingface.co/mradermacher/AntAngelMed-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit Q2_K · ~37.7GB
-lms get https://huggingface.co/mradermacher/AntAngelMed-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~57.9GB
-lms get https://huggingface.co/laukerry/AntAngelMed-mlx-4Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~109.3GB
-lms get https://huggingface.co/laukerry/AntAngelMed-mlx-8Bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run AntAngelMed (Q4_K_M, needs ~62.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AntAngelMed-GGUF/tree/df06b716416a496ab41ef58e5f4a9815d9802ba3))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/AntAngelMed-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 2-bit Q2_K · ~37.7GB
-ollama run hf.co/mradermacher/AntAngelMed-GGUF:Q2_K
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~109.4 GB) `lms get https://huggingface.co/mradermacher/AntAngelMed-GGUF@Q8_0 -y` · Q2_K (~37.7 GB) `lms get https://huggingface.co/mradermacher/AntAngelMed-GGUF@Q2_K -y` · 4bit (~57.9 GB, Mac only) `lms get https://huggingface.co/laukerry/AntAngelMed-mlx-4Bit -y` · 8bit (~109.3 GB, Mac only) `lms get https://huggingface.co/laukerry/AntAngelMed-mlx-8Bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~57.9GB
-mlx_lm.chat --model laukerry/AntAngelMed-mlx-4Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model laukerry/AntAngelMed-mlx-4Bit
-# 4-bit mlx-8bit · mac only · ~109.3GB
-mlx_lm.chat --model laukerry/AntAngelMed-mlx-8Bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model laukerry/AntAngelMed-mlx-8Bit
-```
+### Ollama
 
-**Other engines**
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 16-bit bf16 · ~205.78GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MedAIBase/AntAngelMed', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+2. Run AntAngelMed (Q2_K, needs ~37.7 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/AntAngelMed-GGUF/tree/df06b716416a496ab41ef58e5f4a9815d9802ba3))
+   
+   ```sh
+   ollama run hf.co/mradermacher/AntAngelMed-GGUF:Q2_K
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run AntAngelMed (4bit, needs ~57.9 GB, Mac only, from [huggingface.co/laukerry](https://huggingface.co/laukerry/AntAngelMed-mlx-4Bit/tree/feacebe8677b9511758bc560f49270c102b9b3f9))
+   
+   ```sh
+   mlx_lm.chat --model laukerry/AntAngelMed-mlx-4Bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model laukerry/AntAngelMed-mlx-4Bit
+   ```
+
+Other versions: 8bit (~109.3 GB, Mac only) `mlx_lm.chat --model laukerry/AntAngelMed-mlx-8Bit`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~205.78 GB, from [huggingface.co/MedAIBase](https://huggingface.co/MedAIBase/AntAngelMed/tree/5325cdd8cf7b05e300890b43380be393e6edf4ad))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='MedAIBase/AntAngelMed', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/MedAIBase](https://huggingface.co/MedAIBase/AntAngelMed)
 
 [interactive version](https://whatmodel.sh/model/antangelmed) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -90,27 +90,22 @@ weighted average                                   = 44.3
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/black-forest-labs/flux-kontext-dev)
 
 <sub>[price source](https://replicate.com/black-forest-labs/flux-kontext-dev): USD per output image on Replicate's official black-forest-labs/flux-kontext-dev model (billing: $0.025 per output image, "or 40 images for $1"; hardware time not added). The current version is served from replicate-pruna/flux-kontext-dev (Pruna-optimized deployment). Product: Replicate model API. API model: black-forest-labs/flux-kontext-dev. Settings: one output image. Price basis: published list rate. fal's fal-ai/flux-kontext/dev bills $0.025 per megapixel, rounded up to the nearest megapixel. Currency: USD. Not a BFL direct tariff. Replicate official model page, observed 2026-09-26.</sub>
 
-<pre>
-version                 needs  score
-gguf-q8_0 (sd.cpp)    ~28.2GB   44.3
-gguf-q4_k_m (sd.cpp)  ~21.3GB   44.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (gguf-q4_k_m (sd.cpp), needs ~21.3 GB, from [github.com/leejet](https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/kontext.md))
+   
+   ```sh
+   sd-cli -r input.png --diffusion-model models/flux1-kontext-dev-Q4_K_M.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "change 'flux.cpp' to 'kontext.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu
+   ```
 
-### Run it on your own machine
+Other versions: gguf-q8_0 (sd.cpp) (~28.2 GB) `sd-cli -r input.png --diffusion-model models/flux1-kontext-dev-Q8_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "change 'flux.cpp' to 'kontext.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu`
 
-**Other engines**
-
-```sh
-# gguf-q8_0 (sd.cpp) · ~28.2GB
-sd-cli -r input.png --diffusion-model models/flux1-kontext-dev-Q8_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "change 'flux.cpp' to 'kontext.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu
-# gguf-q4_k_m (sd.cpp) · ~21.3GB
-sd-cli -r input.png --diffusion-model models/flux1-kontext-dev-Q4_K_M.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "change 'flux.cpp' to 'kontext.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu
-```
+Official weights and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev)
 
 [interactive version](https://whatmodel.sh/model/flux-1-kontext-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

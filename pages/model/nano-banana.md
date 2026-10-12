@@ -98,10 +98,10 @@ weighted average                                   = 62.0
 
 ## How to run it
 
+### Through an API
+
 api (Google) · $0.039/image · [ai.google.dev](https://ai.google.dev/gemini-api/docs/pricing)
 
 <sub>[price source](https://ai.google.dev/gemini-api/docs/pricing): Google Gemini Developer API Standard paid tier; up to 1024x1024 generated image output only. Input/text/thinking/tool charges additional. Scheduled shutdown 2026-10-02. Product: Gemini Developer API. API model: gemini-2.5-flash-image. Settings: tier=Standard paid, resolution=up to 1024x1024, batch=no, n=1. Price basis: provider-published approximate image OUTPUT cost. Additional/excluded charges: Input tokens, text/thinking output tokens and optional tools. Currency: USD.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/nano-banana) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -97,76 +97,87 @@ weighted average                                   = 58.2
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/config.json): Official configured context with bundled YaRN factor 8 and original positions 8,192. Not a claim of a larger extrapolated limit.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~19.82GB   58.2
-8-bit q8_0                 ~39.14GB   58.2
-4-bit Q4_K_M                ~19.5GB   58.2
-8-bit Q8_0                  ~34.3GB   58.2
-4-bit mlx-4bit · mac only   ~18.1GB   58.2
-4-bit mlx-8bit · mac only   ~34.2GB   58.2
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Olmo 3.1 32B Think (Q4_K_M, needs ~19.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-GGUF/tree/87e2c446c9505e8dd96670715350fe7020075974))
+   
+   ```sh
+   llama cli -hf lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~34.3 GB) `llama cli -hf lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~19.5GB
-llama cli -hf lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.3GB
-llama cli -hf lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~19.5GB
-lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~34.3GB
-lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~18.1GB
-lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-MLX-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~34.2GB
-lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-MLX-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Olmo 3.1 32B Think (Q4_K_M, needs ~19.5 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-GGUF/tree/87e2c446c9505e8dd96670715350fe7020075974))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~19.82GB
-ollama run olmo-3.1:32b-think
-# 8-bit q8_0 · ~39.14GB
-ollama run olmo-3.1:32b-think-q8_0
-# 4-bit Q4_K_M · ~19.5GB
-ollama run hf.co/lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.3GB
-ollama run hf.co/lmstudio-community/Olmo-3.1-32B-Think-GGUF:Q8_0
-```
+Other versions: Q8_0 (~34.3 GB) `lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-GGUF@Q8_0 -y` · 4bit (~18.1 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-MLX-4bit -y` · 8bit (~34.2 GB, Mac only) `lms get https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-MLX-8bit -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~18.1GB
-mlx_lm.chat --model lmstudio-community/Olmo-3.1-32B-Think-MLX-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Olmo-3.1-32B-Think-MLX-4bit
-# 4-bit mlx-8bit · mac only · ~34.2GB
-mlx_lm.chat --model lmstudio-community/Olmo-3.1-32B-Think-MLX-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model lmstudio-community/Olmo-3.1-32B-Think-MLX-8bit
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Olmo 3.1 32B Think (Q4_K_M, needs ~19.82 GB, from [ollama.com](https://ollama.com/library/olmo-3.1/tags))
+   
+   ```sh
+   ollama run olmo-3.1:32b-think
+   ```
+
+Other versions: Q8_0 (~39.14 GB) `ollama run olmo-3.1:32b-think-q8_0`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Olmo 3.1 32B Think (4bit, needs ~18.1 GB, Mac only, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/Olmo-3.1-32B-Think-MLX-4bit/tree/64ebeae314fcc35f69e0eec5f352444feebf1a61))
+   
+   ```sh
+   mlx_lm.chat --model lmstudio-community/Olmo-3.1-32B-Think-MLX-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model lmstudio-community/Olmo-3.1-32B-Think-MLX-4bit
+   ```
+
+Other versions: 8bit (~34.2 GB, Mac only) `mlx_lm.chat --model lmstudio-community/Olmo-3.1-32B-Think-MLX-8bit`
+
+Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Olmo-3.1-32B-Think)
 
 [interactive version](https://whatmodel.sh/model/olmo-3-1-32b-think) · [JSON](https://whatmodel.sh/api?format=json&all=1)

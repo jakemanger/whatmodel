@@ -84,28 +84,23 @@ weighted average                                   = 58.4
 
 ## How to run it
 
+### Through an API
+
 api (DeepInfra) · $0.0010/audio min · [deepinfra.com](https://deepinfra.com/mistralai/Voxtral-Mini-3B-2507)
 
 <sub>[price source](https://deepinfra.com/mistralai/Voxtral-Mini-3B-2507): USD per input audio minute: DeepInfra lists mistralai/Voxtral-Mini-3B-2507 at $0.00100 / minute (page pricing data: input\_length billing; not deprecated in DeepInfra's catalogue). Mistral's own API retired voxtral-mini-2507 on 2026-05-31; DeepInfra serves the same open-weights checkpoint. Product: DeepInfra hosted inference (automatic speech recognition). API model: mistralai/Voxtral-Mini-3B-2507. Settings: standard serverless. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.</sub>
 
-<pre>
-version                needs  score
-bf16 · nvidia only  ~11.73GB   58.4
-bf16 · mac only     ~11.73GB   58.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~11.73 GB, NVIDIA only, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507))
+   
+   ```sh
+   vllm serve mistralai/Voxtral-Mini-3B-2507 --tokenizer_mode mistral --config_format mistral --load_format mistral
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~11.73 GB, Mac only) `uvx --from mlx-audio mlx_audio.stt.generate --model mlx-community/Voxtral-Mini-3B-2507-bf16 --audio audio.wav --output-path out`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~11.73GB
-vllm serve mistralai/Voxtral-Mini-3B-2507 --tokenizer_mode mistral --config_format mistral --load_format mistral
-# bf16 · mac only · ~11.73GB
-uvx --from mlx-audio mlx_audio.stt.generate --model mlx-community/Voxtral-Mini-3B-2507-bf16 --audio audio.wav --output-path out
-```
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507)
 
 ## Quantization evidence
 

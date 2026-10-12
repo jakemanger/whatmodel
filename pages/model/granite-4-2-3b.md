@@ -130,75 +130,91 @@ weighted average                                   = 57.2
 
 ## How to run it
 
+### Through an API
+
 api (DeepInfra) · $0.052/M blended · $0.03 in / $0.12 out per 1M tokens · [deepinfra.com](https://deepinfra.com/ibm-granite/granite-4.2-3b)
 
 <sub>[price source](https://bertrande.com/en/ai/deepinfra/ibm-granite--granite-4.2-3b): USD per 1M text tokens. DeepInfra standard synchronous API, model ibm-granite/granite-4.2-3b; uncached input, no batch. Tools, cache storage and other modalities excluded. Provider does not specify quantization. Bertrande, https://bertrande.com/en/ai/deepinfra/ibm-granite--granite-4.2-3b; observed 2026-09-22T10:15:02Z. CC BY 4.0; units normalized and model identifier mapped. · [context source](https://bertrande.com/en/ai/deepinfra/ibm-granite--granite-4.2-3b): DeepInfra serving context limit; source parameter context\_length corroborated by provider max\_tokens. This is not an intrinsic training-length claim.</sub>
 
-<pre>
-download                     size  score
-4-bit q4_k_m               ~2.7GB   57.2
-4-bit Q4_K_M               ~2.2GB   57.2
-8-bit Q8_0                 ~3.9GB   57.2
-4-bit mlx-4bit · mac only  ~2.1GB   57.2
-4-bit mlx-8bit · mac only  ~3.9GB   57.2
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Granite 4.2 3B (Q4_K_M, needs ~2.2 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/tree/c40945d71cd90f249a56985e8155551a9188dc30))
+   
+   ```sh
+   llama cli -hf ibm-granite/granite-4.2-3b-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf ibm-granite/granite-4.2-3b-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~2.2GB
-llama cli -hf ibm-granite/granite-4.2-3b-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf ibm-granite/granite-4.2-3b-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~3.9GB
-llama cli -hf ibm-granite/granite-4.2-3b-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf ibm-granite/granite-4.2-3b-GGUF:Q8_0
-```
+Other versions: Q8_0 (~3.9 GB) `llama cli -hf ibm-granite/granite-4.2-3b-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~2.2GB
-lms get https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~3.9GB
-lms get https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~2.1GB
-lms get https://huggingface.co/ibm-granite/granite-4.2-3b-q4-mlx -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~3.9GB
-lms get https://huggingface.co/ibm-granite/granite-4.2-3b-q8-mlx -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Granite 4.2 3B (Q4_K_M, needs ~2.2 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/tree/c40945d71cd90f249a56985e8155551a9188dc30))
+   
+   ```sh
+   lms get https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~2.7GB
-ollama run granite4.2:3b
-# 4-bit Q4_K_M · ~2.2GB
-ollama run hf.co/ibm-granite/granite-4.2-3b-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~3.9GB
-ollama run hf.co/ibm-granite/granite-4.2-3b-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~3.9 GB) `lms get https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF@Q8_0 -y` · 4bit (~2.1 GB, Mac only) `lms get https://huggingface.co/ibm-granite/granite-4.2-3b-q4-mlx -y` · 8bit (~3.9 GB, Mac only) `lms get https://huggingface.co/ibm-granite/granite-4.2-3b-q8-mlx -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~2.1GB
-mlx_lm.chat --model ibm-granite/granite-4.2-3b-q4-mlx
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model ibm-granite/granite-4.2-3b-q4-mlx
-# 4-bit mlx-8bit · mac only · ~3.9GB
-mlx_lm.chat --model ibm-granite/granite-4.2-3b-q8-mlx
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model ibm-granite/granite-4.2-3b-q8-mlx
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Granite 4.2 3B (Q4_K_M, needs ~2.7 GB, from [ollama.com](https://ollama.com/library/granite4.2/tags))
+   
+   ```sh
+   ollama run granite4.2:3b
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Granite 4.2 3B (4bit, needs ~2.1 GB, Mac only, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.2-3b-q4-mlx/tree/0c6f39b1827afd5eb2c1c3b13751929857434953))
+   
+   ```sh
+   mlx_lm.chat --model ibm-granite/granite-4.2-3b-q4-mlx
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model ibm-granite/granite-4.2-3b-q4-mlx
+   ```
+
+Other versions: 8bit (~3.9 GB, Mac only) `mlx_lm.chat --model ibm-granite/granite-4.2-3b-q8-mlx`
+
+Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-4.2-3b)
 
 [interactive version](https://whatmodel.sh/model/granite-4-2-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

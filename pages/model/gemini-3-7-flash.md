@@ -134,10 +134,10 @@ weighted average                                   = 76.3
 
 ## How to run it
 
+### Through an API
+
 api (Google) · $1.50/M blended · $0.75 in / $3.75 out per 1M tokens · [ai.google.dev](https://ai.google.dev/gemini-api/docs/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/google/models/gemini-3.7-flash.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/google/gemini-3.7-flash.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gemini-3-7-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

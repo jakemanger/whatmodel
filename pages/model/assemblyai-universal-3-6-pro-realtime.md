@@ -42,10 +42,10 @@ weighted average                                   = 70.2
 
 ## How to run it
 
+### Through an API
+
 api (AssemblyAI) · $0.0075/audio min · [assemblyai.com](https://www.assemblyai.com/blog/universal-3-6-pro-realtime)
 
 <sub>[price source](https://www.assemblyai.com/pricing): USD per input audio minute: AssemblyAI pricing page, Realtime Speech-to-Text API, 'Universal-3.6 Pro Realtime New ... $0.45 /hr' pay as you go (÷60). Product: AssemblyAI Realtime (streaming) STT API. API model: universal-3-6-pro. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: add-ons (keyterms, diarization etc.), Voice Agent API ($4.50/hr). Currency: USD. AssemblyAI official pricing page, observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/assemblyai-universal-3-6-pro-realtime) · [JSON](https://whatmodel.sh/api?format=json&all=1)

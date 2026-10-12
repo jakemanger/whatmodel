@@ -103,10 +103,10 @@ weighted average                                   = 77.4
 
 ## How to run it
 
+### Through an API
+
 api (Anthropic) · $0.20/M blended · $0.1 in / $0.5 out per 1M tokens · [platform.claude.com](https://platform.claude.com/docs/en/models/haiku-5-5/overview)
 
 <sub>[price source](https://platform.claude.com/docs/en/models/haiku-5-5/overview): Observed 2026-10-09 on Anthropic's own Claude Haiku 5.5 model page (Pricing table; same rows on platform.claude.com/docs/en/about-claude/pricing): USD per million tokens, standard uncached input/output 'for prompts up to 100,000 tokens'. Prompts over 100,000 tokens cost $0.50 input / $2.50 output; batch (50% off) and cache rates excluded. · [context source](https://platform.claude.com/docs/en/models/haiku-5-5/overview): Anthropic model page: 'Context window: 1M tokens · Max output: 128K tokens' (300K output on the Batch API with a beta header). Observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/claude-haiku-5-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

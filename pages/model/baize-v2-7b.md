@@ -44,20 +44,14 @@ weighted average                              = 28.8
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit fp16  ~13.48GB   28.8
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp16, needs ~13.48 GB, from [huggingface.co/project-baize](https://huggingface.co/project-baize/baize-v2-7b/tree/e4731c2c2671e2d0b47b5eba08c753ca21671fab))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='project-baize/baize-v2-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 4-bit fp16 · ~13.48GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='project-baize/baize-v2-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/project-baize](https://huggingface.co/project-baize/baize-v2-7b)
 
 [interactive version](https://whatmodel.sh/model/baize-v2-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

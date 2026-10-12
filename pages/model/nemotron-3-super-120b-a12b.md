@@ -155,72 +155,92 @@ NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
 
 ## How to run it
 
+### Through an API
+
 api (Amazon Bedrock) · $0.28/M blended · $0.15 in / $0.65 out per 1M tokens · [docs.aws.amazon.com](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/amazon-bedrock/models/nvidia.nemotron-super-3-120b.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-3-super-120b-a12b.toml)</sub>
 
-<pre>
-download                       size  score
-4-bit q4_k_m               ~72.86GB   64.7
-4-bit Q4_K_M                ~86.1GB   64.7
-8-bit Q8_0                 ~128.5GB   64.7
-4-bit mlx-4bit · mac only     ~68GB   64.7
-4-bit mlx-8bit · mac only  ~128.3GB   64.7
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Nemotron 3 Super 120B-A12B (Q4_K_M, needs ~86.1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF/tree/16410500b9bdc62081c34cc2dff52471e001f970))
+   
+   ```sh
+   llama cli -hf lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~86.1GB
-llama cli -hf lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~128.5GB
-llama cli -hf lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~128.5 GB) `llama cli -hf lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~86.1GB
-lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~128.5GB
-lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~68GB
-lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~128.3GB
-lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Nemotron 3 Super 120B-A12B (Q4_K_M, needs ~86.1 GB, from [huggingface.co/lmstudio-community](https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF/tree/16410500b9bdc62081c34cc2dff52471e001f970))
+   
+   ```sh
+   lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~72.86GB
-ollama run nemotron-3-super:120b
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+Other versions: Q8_0 (~128.5 GB) `lms get https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF@Q8_0 -y` · 4bit (~68 GB, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit -y` · 8bit (~128.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-8bit -y`
 
-```sh
-# 4-bit mlx-4bit · mac only · ~68GB
-mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit
-# 4-bit mlx-8bit · mac only · ~128.3GB
-mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-8bit
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Nemotron 3 Super 120B-A12B (Q4_K_M, needs ~72.86 GB, from [ollama.com](https://ollama.com/library/nemotron-3-super/tags))
+   
+   ```sh
+   ollama run nemotron-3-super:120b
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Nemotron 3 Super 120B-A12B (4bit, needs ~68 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit/tree/46d2ec99579734e0da13b6189bb7ea500b7a1e00))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit
+   ```
+
+Other versions: 8bit (~128.3 GB, Mac only) `mlx_lm.chat --model mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-8bit`
+
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16)
 
 ## Published speed measurements
 

@@ -139,10 +139,10 @@ weighted average                                   = 83.9
 
 ## How to run it
 
+### Through an API
+
 api (Anthropic) · $4.00/M blended · $2 in / $10 out per 1M tokens · [platform.claude.com](https://platform.claude.com/docs/en/models/sonnet-5-5/overview)
 
 <sub>[price source](https://platform.claude.com/docs/en/models/sonnet-5-5/overview): Observed 2026-10-06. USD per million tokens, standard uncached input/output; batch and cache discounts excluded. · [context source](https://platform.claude.com/docs/en/models/sonnet-5-5/overview): Official 1M-token context window, 128K maximum output; observed 2026-10-06.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/claude-sonnet-5-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

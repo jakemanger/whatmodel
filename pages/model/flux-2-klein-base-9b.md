@@ -42,6 +42,8 @@ weighted average                                   = 55.0
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B)
 
 [interactive version](https://whatmodel.sh/model/flux-2-klein-base-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

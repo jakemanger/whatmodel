@@ -91,20 +91,14 @@ OpenGVLab  <a href="https://arxiv.org/html/2412.05271v5#S5.T7">CharXiv descripti
 
 ## How to run it
 
-<pre>
-download                      size  score
-16-bit bf16 · nvidia only  ~8.29GB   41.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~8.29 GB, NVIDIA only, from [github.com/vllm-project](https://github.com/vllm-project/vllm/blob/64cb68384241f046d07ba3797e1b14dbc82a0b2d/docs/models/supported_models.md))
+   
+   ```sh
+   vllm serve OpenGVLab/InternVL2-4B --trust-remote-code
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · nvidia only · ~8.29GB
-vllm serve OpenGVLab/InternVL2-4B --trust-remote-code
-```
+Official weights and documentation: [huggingface.co/OpenGVLab](https://huggingface.co/OpenGVLab/InternVL2-4B)
 
 [interactive version](https://whatmodel.sh/model/internvl2-4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -114,10 +114,10 @@ weighted average                                   = 71.6
 
 ## How to run it
 
+### Through an API
+
 api (xAI) · $1.56/M blended · $1.25 in / $2.5 out per 1M tokens · [docs.x.ai](https://docs.x.ai/docs/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/xai/models/grok-4.20-0309-reasoning.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://docs.x.ai/developers/models.md): xAI API context for grok-4.20-0309-reasoning as listed (1M) on the official models/pricing table; prompts from 200K tokens use long-context pricing. Observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/grok-4-20) · [JSON](https://whatmodel.sh/api?format=json&all=1)

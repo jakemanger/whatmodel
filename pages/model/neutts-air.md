@@ -43,26 +43,16 @@ weighted average                                   = 36.2
 
 ## How to run it
 
-<pre>
-version                           needs  score
-q4_0 (neutts 1.4.1)             ~4.01GB   36.2
-bf16 (neutts 1.4.1)                ~5GB   36.2
-bf16 (neutts 1.4.1) · mac only  ~4.98GB   36.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (Q4_0 (NEUTTS 1.4.1), needs ~4.01 GB, from [huggingface.co/neuphonic](https://huggingface.co/neuphonic/neutts-air/blob/3bf9403646f0ca46a3f2250355d2ce4d1f70559c/README.md))
+   
+   ```sh
+   git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install "neutts[llama]" && python -m examples.basic_example --input_text "My name is Dave, and um, I'm from London" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air-q4-gguf
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (NEUTTS 1.4.1) (~5 GB) `git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install neutts && python -m examples.basic_example --input_text "My name is Dave, and um, I'm from London" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air` · BF16 (NEUTTS 1.4.1) (~4.98 GB, Mac only) `git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install neutts && python -m examples.basic_example --input_text "My name is Dave, and um, I'm from London" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air --device mps --codec_device mps`
 
-**Other engines**
-
-```sh
-# q4_0 (neutts 1.4.1) · ~4.01GB
-git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install "neutts[llama]" && python -m examples.basic_example --input_text "My name is Dave, and um, I'm from London" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air-q4-gguf
-# bf16 (neutts 1.4.1) · ~5GB
-git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install neutts && python -m examples.basic_example --input_text "My name is Dave, and um, I'm from London" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air
-# bf16 (neutts 1.4.1) · mac only · ~4.98GB
-git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install neutts && python -m examples.basic_example --input_text "My name is Dave, and um, I'm from London" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air --device mps --codec_device mps
-```
+Official weights and documentation: [huggingface.co/neuphonic](https://huggingface.co/neuphonic/neutts-air)
 
 [interactive version](https://whatmodel.sh/model/neutts-air) · [JSON](https://whatmodel.sh/api?format=json&all=1)

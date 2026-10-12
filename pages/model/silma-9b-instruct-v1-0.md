@@ -52,55 +52,70 @@ weighted average                              = 42.1
 
 ## How to run it
 
-<pre>
-download          size  score
-16-bit bf16   ~18.48GB   42.1
-4-bit Q4_K_M    ~5.8GB   42.1
-8-bit Q8_0      ~9.8GB   42.1
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run SILMA 9B Instruct v1.0 (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF/tree/5e2825b6d83604d4d7e712ab4c5b94f91ea57c22))
+   
+   ```sh
+   llama cli -hf bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~5.8GB
-llama cli -hf bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~9.8GB
-llama cli -hf bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q8_0
-```
+Other versions: Q8_0 (~9.8 GB) `llama cli -hf bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~5.8GB
-lms get https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~9.8GB
-lms get https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run SILMA 9B Instruct v1.0 (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF/tree/5e2825b6d83604d4d7e712ab4c5b94f91ea57c22))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~5.8GB
-ollama run hf.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~9.8GB
-ollama run hf.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q8_0 (~9.8 GB) `lms get https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF@Q8_0 -y`
 
-```sh
-# 16-bit bf16 · ~18.48GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='silma-ai/SILMA-9B-Instruct-v1.0', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run SILMA 9B Instruct v1.0 (Q4_K_M, needs ~5.8 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF/tree/5e2825b6d83604d4d7e712ab4c5b94f91ea57c22))
+   
+   ```sh
+   ollama run hf.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~9.8 GB) `ollama run hf.co/bartowski/SILMA-9B-Instruct-v1.0-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~18.48 GB, from [huggingface.co/silma-ai](https://huggingface.co/silma-ai/SILMA-9B-Instruct-v1.0/tree/d8f4d2b11a71e10f4231d38f0a343ee49715f392))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='silma-ai/SILMA-9B-Instruct-v1.0', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/silma-ai](https://huggingface.co/silma-ai/SILMA-9B-Instruct-v1.0)
 
 [interactive version](https://whatmodel.sh/model/silma-9b-instruct-v1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

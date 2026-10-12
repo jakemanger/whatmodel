@@ -172,10 +172,10 @@ weighted average                                   = 82.7
 
 ## How to run it
 
+### Through an API
+
 api (Anthropic) · $10.00/M blended · $5 in / $25 out per 1M tokens · [docs.anthropic.com](https://docs.anthropic.com/en/docs/about-claude/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/anthropic/models/claude-opus-5.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/anthropic/claude-opus-5.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/claude-opus-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

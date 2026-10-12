@@ -74,78 +74,93 @@ weighted average                                   = 53.1
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO/blob/2dab5183da9252bedf6039a0b09c86b9ca4d0ba9/config.json): Ai2 official configuration for Llama-3.1-Tulu-3-70B-DPO (pinned commit): max\_position\_embeddings 131072 (llama3 rope scaling, factor 8.0 over original 8192). Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                        size  score
-16-bit bf16 · nvidia only  ~169.82GB   53.1
-4-bit Q4_K_M                 ~42.5GB   53.1
-8-bit Q8_0                     ~75GB   53.1
-2-bit IQ2_XXS                ~19.1GB   53.1
-4-bit mlx-4bit · mac only    ~39.7GB   53.1
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Llama 3.1 Tulu 3 70B DPO (Q4_K_M, needs ~42.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF/tree/467fa02d523d470e6eba3101b86c667ded5aa795))
+   
+   ```sh
+   llama cli -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~75 GB) `llama cli -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q8_0` · IQ2_XXS (~19.1 GB) `llama cli -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:IQ2_XXS`
 
-```sh
-# 4-bit Q4_K_M · ~42.5GB
-llama cli -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~75GB
-llama cli -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q8_0
-# 2-bit IQ2_XXS · ~19.1GB
-llama cli -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:IQ2_XXS
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:IQ2_XXS
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~42.5GB
-lms get https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~75GB
-lms get https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit IQ2_XXS · ~19.1GB
-lms get https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF@IQ2_XXS -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~39.7GB
-lms get https://huggingface.co/Scotto2025/Llama-3.1-Tulu-3-70B-DPO-Q4-mlx -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Llama 3.1 Tulu 3 70B DPO (Q4_K_M, needs ~42.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF/tree/467fa02d523d470e6eba3101b86c667ded5aa795))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~42.5GB
-ollama run hf.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q4_K_M
-# 2-bit IQ2_XXS · ~19.1GB
-ollama run hf.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:IQ2_XXS
-```
+Other versions: Q8_0 (~75 GB) `lms get https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF@Q8_0 -y` · IQ2_XXS (~19.1 GB) `lms get https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF@IQ2_XXS -y` · 4bit (~39.7 GB, Mac only) `lms get https://huggingface.co/Scotto2025/Llama-3.1-Tulu-3-70B-DPO-Q4-mlx -y`
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+### Ollama
 
-```sh
-# 4-bit mlx-4bit · mac only · ~39.7GB
-mlx_lm.chat --model Scotto2025/Llama-3.1-Tulu-3-70B-DPO-Q4-mlx
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model Scotto2025/Llama-3.1-Tulu-3-70B-DPO-Q4-mlx
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-**Other engines**
+2. Run Llama 3.1 Tulu 3 70B DPO (Q4_K_M, needs ~42.5 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF/tree/467fa02d523d470e6eba3101b86c667ded5aa795))
+   
+   ```sh
+   ollama run hf.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:Q4_K_M
+   ```
 
-```sh
-# 16-bit bf16 · nvidia only · ~169.82GB
-vllm serve allenai/Llama-3.1-Tulu-3-70B-DPO
-```
+Other versions: IQ2_XXS (~19.1 GB) `ollama run hf.co/bartowski/Llama-3.1-Tulu-3-70B-DPO-GGUF:IQ2_XXS`
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Llama 3.1 Tulu 3 70B DPO (4bit, needs ~39.7 GB, Mac only, from [huggingface.co/Scotto2025](https://huggingface.co/Scotto2025/Llama-3.1-Tulu-3-70B-DPO-Q4-mlx/tree/b50472183075ec0f87938540fa63b7ebec5561af))
+   
+   ```sh
+   mlx_lm.chat --model Scotto2025/Llama-3.1-Tulu-3-70B-DPO-Q4-mlx
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model Scotto2025/Llama-3.1-Tulu-3-70B-DPO-Q4-mlx
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~169.82 GB, NVIDIA only, from [huggingface.co/allenai](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO))
+   
+   ```sh
+   vllm serve allenai/Llama-3.1-Tulu-3-70B-DPO
+   ```
+
+Official weights and documentation: [huggingface.co/allenai](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO)
 
 [interactive version](https://whatmodel.sh/model/llama-3-1-tulu-3-70b-dpo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

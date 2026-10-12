@@ -23,13 +23,14 @@ FastPitch 2020 LJ Speech human MOS  3.95 / 5  lab          <a href="https://gith
 
 ## How to run it
 
-### Run it on your own machine
+### Other ways to run it
 
-**Other engines**
+1. Run it as published (fp32 (torch.hub NVIDIA/DeepLearningExamples:torchhub), needs ~1.19 GB, NVIDIA only, from [github.com/pytorch](https://github.com/pytorch/hub/blob/c3beaae7d32fca2a23fec30aa7938ef5c9b6e5d5/nvidia_deeplearningexamples_tacotron2.md))
+   
+   ```sh
+   pip install torch numpy scipy librosa unidecode inflect && apt-get update && apt-get install -y libsndfile1 && python -c "import torch; from scipy.io.wavfile import write; tacotron2 = torch.hub.load('NVIDIA/DeepLearningExamples:torchhub', 'nvidia_tacotron2', model_math='fp16', trust_repo=True); tacotron2 = tacotron2.to('cuda'); tacotron2.eval(); waveglow = torch.hub.load('NVIDIA/DeepLearningExamples:torchhub', 'nvidia_waveglow', model_math='fp16', trust_repo=True); waveglow = waveglow.remove_weightnorm(waveglow); waveglow = waveglow.to('cuda'); waveglow.eval(); utils = torch.hub.load('NVIDIA/DeepLearningExamples:torchhub', 'nvidia_tts_utils', trust_repo=True); sequences, lengths = utils.prepare_input_sequence(['Hello world, I missed you so much.']); torch.set_grad_enabled(False); mel, _, _ = tacotron2.infer(sequences, lengths); audio = waveglow.infer(mel); write('audio.wav', 22050, audio[0].data.cpu().numpy())"
+   ```
 
-```sh
-# fp32 (torch.hub NVIDIA/DeepLearningExamples:torchhub) · ~1.19GB
-pip install torch numpy scipy librosa unidecode inflect && apt-get update && apt-get install -y libsndfile1 && python -c "import torch; from scipy.io.wavfile import write; tacotron2 = torch.hub.load('NVIDIA/DeepLearningExamples:torchhub', 'nvidia_tacotron2', model_math='fp16', trust_repo=True); tacotron2 = tacotron2.to('cuda'); tacotron2.eval(); waveglow = torch.hub.load('NVIDIA/DeepLearningExamples:torchhub', 'nvidia_waveglow', model_math='fp16', trust_repo=True); waveglow = waveglow.remove_weightnorm(waveglow); waveglow = waveglow.to('cuda'); waveglow.eval(); utils = torch.hub.load('NVIDIA/DeepLearningExamples:torchhub', 'nvidia_tts_utils', trust_repo=True); sequences, lengths = utils.prepare_input_sequence(['Hello world, I missed you so much.']); torch.set_grad_enabled(False); mel, _, _ = tacotron2.infer(sequences, lengths); audio = waveglow.infer(mel); write('audio.wav', 22050, audio[0].data.cpu().numpy())"
-```
+Official weights and documentation: [github.com/NVIDIA](https://github.com/NVIDIA/DeepLearningExamples/tree/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/nvidia-tacotron2-waveglow)

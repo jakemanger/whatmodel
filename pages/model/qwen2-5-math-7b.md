@@ -43,60 +43,83 @@ weighted average                        = 52.3
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct/blob/ef9926d75ab1d54532f6a30dd5e760355eb9aa4d/config.json): config.json max\_position\_embeddings 4096. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-4-bit q4_k_m               ~4.68GB   52.3
-4-bit mlx-4bit · mac only   ~4.3GB   52.3
-4-bit mlx-8bit · mac only   ~8.1GB   52.3
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Qwen2.5-Math 7B Instruct (Q4_K_M, needs ~4.68 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF/tree/22e2c9c42470193b2b643636564765c84bcb06cb))
+   
+   ```sh
+   llama cli -hf bartowski/Qwen2.5-Math-7B-Instruct-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/Qwen2.5-Math-7B-Instruct-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~4.68GB
-llama cli -hf bartowski/Qwen2.5-Math-7B-Instruct-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Qwen2.5-Math-7B-Instruct-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run Qwen2.5-Math 7B Instruct (Q4_K_M, needs ~4.68 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF/tree/22e2c9c42470193b2b643636564765c84bcb06cb))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~4.68GB
-lms get https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-4bit · mac only · ~4.3GB
-lms get https://huggingface.co/mlx-community/Qwen2.5-Math-7B-Instruct-4bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~8.1GB
-lms get https://huggingface.co/mlx-community/Qwen2.5-Math-7B-Instruct-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: 4bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2.5-Math-7B-Instruct-4bit -y` · 8bit (~8.1 GB, Mac only) `lms get https://huggingface.co/mlx-community/Qwen2.5-Math-7B-Instruct-8bit -y`
 
-```sh
-# 4-bit q4_k_m · ~4.68GB
-ollama run hf.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF:Q4_K_M
-```
+### Ollama
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit mlx-4bit · mac only · ~4.3GB
-mlx_lm.chat --model mlx-community/Qwen2.5-Math-7B-Instruct-4bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Qwen2.5-Math-7B-Instruct-4bit
-# 4-bit mlx-8bit · mac only · ~8.1GB
-mlx_lm.chat --model mlx-community/Qwen2.5-Math-7B-Instruct-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/Qwen2.5-Math-7B-Instruct-8bit
-```
+2. Run Qwen2.5-Math 7B Instruct (Q4_K_M, needs ~4.68 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF/tree/22e2c9c42470193b2b643636564765c84bcb06cb))
+   
+   ```sh
+   ollama run hf.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF:Q4_K_M
+   ```
+
+### MLX (Mac)
+
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run Qwen2.5-Math 7B Instruct (4bit, needs ~4.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/Qwen2.5-Math-7B-Instruct-4bit/tree/b144b9b952f8aa481cadb47e2eb6151d18a4de55))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/Qwen2.5-Math-7B-Instruct-4bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/Qwen2.5-Math-7B-Instruct-4bit
+   ```
+
+Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwen2.5-Math-7B-Instruct-8bit`
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct)
 
 [interactive version](https://whatmodel.sh/model/qwen2-5-math-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

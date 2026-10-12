@@ -53,20 +53,14 @@ Design of the IBM Gra…  <a href="https://arxiv.org/html/2609.20104v1">Granite 
 
 ## How to run it
 
-<pre>
-version            needs  score
-bf16 · mac only  ~1.63GB   62.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~1.63 GB, Mac only, from [github.com/Blaizzy](https://github.com/Blaizzy/mlx-audio/blob/main/mlx_audio/stt/models/granite_speech5_ctc/README.md))
+   
+   ```sh
+   uvx --from mlx-audio mlx_audio.stt.generate --model ibm-granite/granite-speech-5.0-470m-turboctc --audio audio.wav --output-path out
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · mac only · ~1.63GB
-uvx --from mlx-audio mlx_audio.stt.generate --model ibm-granite/granite-speech-5.0-470m-turboctc --audio audio.wav --output-path out
-```
+Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc)
 
 [interactive version](https://whatmodel.sh/model/granite-speech-5-0-470m-turboctc) · [JSON](https://whatmodel.sh/api?format=json&all=1)

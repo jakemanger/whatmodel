@@ -43,20 +43,14 @@ weighted average                                   = 44.0
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp32 (espnet 202610.post2 + espnet_mode…  ~0.68GB   44.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (espnet 202610.post2 + espnet_model_zoo 0.1.11), needs ~0.68 GB, from [github.com/espnet](https://github.com/espnet/espnet_model_zoo/blob/07c8a151baff4197dba2ac269e410f79783f2987/README.md))
+   
+   ```sh
+   uv run --python 3.12 --with espnet==202610.post2 --with espnet_model_zoo==0.1.11 --with librosa python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained('pyf98/librispeech_branchformer_e18_linear3072@f37570da7c3e4c6432e1ce29963f39c0c8127c83', beam_size=60, ctc_weight=0.3, lm_weight=0); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (espnet 202610.post2 + espnet_model_zoo 0.1.11) · ~0.68GB
-uv run --python 3.12 --with espnet==202610.post2 --with espnet_model_zoo==0.1.11 --with librosa python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained('pyf98/librispeech_branchformer_e18_linear3072@f37570da7c3e4c6432e1ce29963f39c0c8127c83', beam_size=60, ctc_weight=0.3, lm_weight=0); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
-```
+Official weights and documentation: [huggingface.co/pyf98](https://huggingface.co/pyf98/librispeech_branchformer_e18_linear3072)
 
 [interactive version](https://whatmodel.sh/model/espnet-branchformer-18layer) · [JSON](https://whatmodel.sh/api?format=json&all=1)

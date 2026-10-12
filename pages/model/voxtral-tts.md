@@ -46,27 +46,22 @@ weighted average                        = 71.4
 
 ## How to run it
 
+### Through an API
+
 api (Mistral AI) · $16.00/M chars · [docs.mistral.ai](https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M input characters for Voxtral TTS March 2026 (voxtral-mini-tts-2603). Product: La Plateforme text-to-speech. API model: voxtral-mini-tts-2603. Settings: endpoint=/v1/audio/speech. Price basis: published rate. Currency: USD.</sub>
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~10.1GB   71.4
-bf16 · mac only     ~10.1GB   71.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~10.1 GB, NVIDIA only, from [huggingface.co/mistralai](https://huggingface.co/mistralai/Voxtral-4B-TTS-2603))
+   
+   ```sh
+   uv pip install -U vllm vllm-omni && vllm serve mistralai/Voxtral-4B-TTS-2603 --omni
+   ```
 
-### Run it on your own machine
+Other versions: BF16 (~10.1 GB, Mac only) `pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Voxtral-4B-TTS-2603-mlx-bf16 --text 'Hello, world!' --voice casual_male`
 
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~10.1GB
-uv pip install -U vllm vllm-omni && vllm serve mistralai/Voxtral-4B-TTS-2603 --omni
-# bf16 · mac only · ~10.1GB
-pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Voxtral-4B-TTS-2603-mlx-bf16 --text 'Hello, world!' --voice casual_male
-```
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Voxtral-4B-TTS-2603)
 
 [interactive version](https://whatmodel.sh/model/voxtral-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

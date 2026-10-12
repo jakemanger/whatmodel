@@ -51,20 +51,14 @@ weighted average                          = 29.6
 
 ## How to run it
 
-<pre>
-download         size  score
-16-bit bf16  ~15.01GB   29.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~15.01 GB, from [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan2-7B-Base/tree/f9d4d8dd2f7a3dbede3bda3b0cf0224e9272bbe5))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='baichuan-inc/Baichuan2-7B-Base', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · ~15.01GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='baichuan-inc/Baichuan2-7B-Base', torch_dtype='auto', device_map='auto', trust_remote_code=True)('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+Official weights and documentation: [huggingface.co/baichuan-inc](https://huggingface.co/baichuan-inc/Baichuan2-7B-Base)
 
 [interactive version](https://whatmodel.sh/model/baichuan2-7b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

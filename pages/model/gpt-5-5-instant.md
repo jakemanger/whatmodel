@@ -83,6 +83,6 @@ weighted average                                   = 68.7
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/gpt-5-5-instant) · [JSON](https://whatmodel.sh/api?format=json&all=1)

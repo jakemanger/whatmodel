@@ -42,20 +42,14 @@ weighted average                        = 48.7
 
 ## How to run it
 
-<pre>
-version                                  needs  score
-bf16 (fish-speech repo) · nvidia only  ~1.15GB   48.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (FISH-SPEECH REPO), needs ~1.15 GB, NVIDIA only, from [github.com/fishaudio](https://github.com/fishaudio/fish-speech/blob/5dd593fef32546f2c0a7d99babbbb27a9478d759/docs/en/inference.md))
+   
+   ```sh
+   git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout 5dd593fef32546f2c0a7d99babbbb27a9478d759 && pip3 install torch torchvision torchaudio && pip3 install -e . && huggingface-cli download fishaudio/fish-speech-1.2 --local-dir checkpoints/fish-speech-1.2 && python tools/llama/generate.py --text "Hello, world." --checkpoint-path "checkpoints/fish-speech-1.2" --num-samples 2 --compile && python tools/vqgan/inference.py -i "codes_0.npy" --checkpoint-path "checkpoints/fish-speech-1.2/firefly-gan-vq-fsq-4x1024-42hz-generator.pth"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (fish-speech repo) · nvidia only · ~1.15GB
-git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout 5dd593fef32546f2c0a7d99babbbb27a9478d759 && pip3 install torch torchvision torchaudio && pip3 install -e . && huggingface-cli download fishaudio/fish-speech-1.2 --local-dir checkpoints/fish-speech-1.2 && python tools/llama/generate.py --text "Hello, world." --checkpoint-path "checkpoints/fish-speech-1.2" --num-samples 2 --compile && python tools/vqgan/inference.py -i "codes_0.npy" --checkpoint-path "checkpoints/fish-speech-1.2/firefly-gan-vq-fsq-4x1024-42hz-generator.pth"
-```
+Official weights and documentation: [huggingface.co/fishaudio](https://huggingface.co/fishaudio/fish-speech-1.2)
 
 [interactive version](https://whatmodel.sh/model/fish-speech-1-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

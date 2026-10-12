@@ -55,10 +55,10 @@ weighted average                                   = 45.7
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.083/sec · [fal.ai](https://fal.ai/models/fal-ai/minimax/video-01/image-to-video)
 
 <sub>[price source](https://fal.ai/models/fal-ai/minimax/video-01/image-to-video): USD per second of 720p video, derived from fal's $0.50 per video for MiniMax Video 01 image-to-video, whose page states Resolution 1280x720 (720p), 25 fps, Video Duration 6 sec (÷ 6 = $0.083333). Product: fal partner API (MiniMax Hailuo AI Video 01). API model: fal-ai/minimax/video-01/image-to-video. Settings: 720p, 6 s, one video. Price basis: published per-video price ÷ the duration fal states. MiniMax's own pay-as-you-go page no longer lists video-01 (only Hailuo-02/2.3 as legacy). Currency: USD. Not a MiniMax direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/hailuo-01) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -49,47 +49,62 @@ weighted average                                   = 57.1
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit Q4_K_M  ~4.7GB   57.1
-8-bit Q8_0    ~8.1GB   57.1
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Qwen2.5-Omni 7B (Q4_K_M, needs ~4.7 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF/tree/89b785438c8901d4635e42f50480ba5985a1bbf1))
+   
+   ```sh
+   llama cli -hf ggml-org/Qwen2.5-Omni-7B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf ggml-org/Qwen2.5-Omni-7B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.7GB
-llama cli -hf ggml-org/Qwen2.5-Omni-7B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf ggml-org/Qwen2.5-Omni-7B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.1GB
-llama cli -hf ggml-org/Qwen2.5-Omni-7B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf ggml-org/Qwen2.5-Omni-7B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~8.1 GB) `llama cli -hf ggml-org/Qwen2.5-Omni-7B-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~4.7GB
-lms get https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~8.1GB
-lms get https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Qwen2.5-Omni 7B (Q4_K_M, needs ~4.7 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF/tree/89b785438c8901d4635e42f50480ba5985a1bbf1))
+   
+   ```sh
+   lms get https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~4.7GB
-ollama run hf.co/ggml-org/Qwen2.5-Omni-7B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~8.1GB
-ollama run hf.co/ggml-org/Qwen2.5-Omni-7B-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: Q8_0 (~8.1 GB) `lms get https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF@Q8_0 -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Qwen2.5-Omni 7B (Q4_K_M, needs ~4.7 GB, from [huggingface.co/ggml-org](https://huggingface.co/ggml-org/Qwen2.5-Omni-7B-GGUF/tree/89b785438c8901d4635e42f50480ba5985a1bbf1))
+   
+   ```sh
+   ollama run hf.co/ggml-org/Qwen2.5-Omni-7B-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~8.1 GB) `ollama run hf.co/ggml-org/Qwen2.5-Omni-7B-GGUF:Q8_0`
+
+Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Omni-7B)
 
 [interactive version](https://whatmodel.sh/model/qwen2-5-omni-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

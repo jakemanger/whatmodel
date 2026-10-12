@@ -98,52 +98,60 @@ weighted average                                   = 30.6
 
 ## How to run it
 
-<sub>[context source](https://github.com/meta-llama/llama-models/blob/0e0b8c519242d5833d8c11bffc1232b77ad7f301/models/llama2/MODEL_CARD.md): Context length from the maker's official repository.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download        size  score
-4-bit q4_0    ~3.8GB   30.6
-4-bit Q4_K_M  ~4.1GB   30.6
-8-bit Q8_0    ~7.2GB   30.6
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Llama 2 7B (base) (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Llama-2-7B-GGUF/tree/b4e04e128f421c93a5f1e34ac4d7ca9b0af47b80))
+   
+   ```sh
+   llama cli -hf TheBloke/Llama-2-7B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf TheBloke/Llama-2-7B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~7.2 GB) `llama cli -hf TheBloke/Llama-2-7B-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~4.1GB
-llama cli -hf TheBloke/Llama-2-7B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/Llama-2-7B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~7.2GB
-llama cli -hf TheBloke/Llama-2-7B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/Llama-2-7B-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~4.1GB
-lms get https://huggingface.co/TheBloke/Llama-2-7B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~7.2GB
-lms get https://huggingface.co/TheBloke/Llama-2-7B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Llama 2 7B (base) (Q4_K_M, needs ~4.1 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Llama-2-7B-GGUF/tree/b4e04e128f421c93a5f1e34ac4d7ca9b0af47b80))
+   
+   ```sh
+   lms get https://huggingface.co/TheBloke/Llama-2-7B-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_0 · ~3.8GB
-ollama run llama2:7b-text
-# 4-bit Q4_K_M · ~4.1GB
-ollama run hf.co/TheBloke/Llama-2-7B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~7.2GB
-ollama run hf.co/TheBloke/Llama-2-7B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~7.2 GB) `lms get https://huggingface.co/TheBloke/Llama-2-7B-GGUF@Q8_0 -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Llama 2 7B (base) (Q4_0, needs ~3.8 GB, from [ollama.com](https://ollama.com/library/llama2/tags))
+   
+   ```sh
+   ollama run llama2:7b-text
+   ```
+
+Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-2-7b-hf)
 
 [interactive version](https://whatmodel.sh/model/llama-2-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

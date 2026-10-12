@@ -42,20 +42,14 @@ weighted average                        = 26.3
 
 ## How to run it
 
-<pre>
-version                  needs  score
-onnx-fp32 (piper-tts)  ~0.06GB   26.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (onnx-fp32 (piper-tts), needs ~0.06 GB, from [github.com/OHF-Voice](https://github.com/OHF-Voice/piper1-gpl/blob/efffbfb226bfb511ebbcf55d0cecd8b35a89743d/docs/CLI.md))
+   
+   ```sh
+   pip install piper-tts && python3 -m piper.download_voices tr_TR-dfki-medium && python3 -m piper -m tr_TR-dfki-medium -f test.wav -- 'Merhaba, nasılsınız?'
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# onnx-fp32 (piper-tts) · ~0.06GB
-pip install piper-tts && python3 -m piper.download_voices tr_TR-dfki-medium && python3 -m piper -m tr_TR-dfki-medium -f test.wav -- 'Merhaba, nasılsınız?'
-```
+Official weights and documentation: [huggingface.co/rhasspy](https://huggingface.co/rhasspy/piper-voices)
 
 [interactive version](https://whatmodel.sh/model/piper-tr-tr-dfki-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

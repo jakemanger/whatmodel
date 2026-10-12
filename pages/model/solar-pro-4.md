@@ -67,10 +67,10 @@ weighted average                        = 64.6
 
 ## How to run it
 
+### Through an API
+
 api (Upstage) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [developers.upstage.ai](https://developers.upstage.ai/docs/apis/chat)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/upstage/models/solar-pro4.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/upstage/solar-pro4.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/solar-pro-4) · [JSON](https://whatmodel.sh/api?format=json&all=1)

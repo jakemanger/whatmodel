@@ -45,20 +45,14 @@ weighted average                                   = 53.3
 
 ## How to run it
 
-<pre>
-version                         needs  score
-bf16 (transformers &gt;=5.17.0)  ~5.42GB   53.3
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (TRANSFORMERS >=5.17.0), needs ~5.42 GB, from [github.com/huggingface](https://github.com/huggingface/transformers/blob/a906d3c4b65095f2308b6a6a193e934d03b8eb5d/docs/source/en/model_doc/vibevoice.md))
+   
+   ```sh
+   pip install "transformers[torch]>=5.17.0" diffusers soundfile && python -c "import os; from transformers import AutoProcessor, AutoModelForTextToWaveform; model_id='vibevoice/VibeVoice-1.5B-hf'; processor=AutoProcessor.from_pretrained(model_id); model=AutoModelForTextToWaveform.from_pretrained(model_id, device_map='auto'); conversation=[{'role':'0','content':[{'type':'text','text':'Hello, nice to meet you. How are you?'}]}]; inputs=processor.apply_chat_template(conversation, return_dict=True, tokenize=True, add_generation_prompt=True).to(model.device, model.dtype); audio=model.generate(**inputs); processor.save_audio(audio, 'VibeVoice-1.5B-hf_tts.wav')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (transformers >=5.17.0) · ~5.42GB
-pip install "transformers[torch]>=5.17.0" diffusers soundfile && python -c "import os; from transformers import AutoProcessor, AutoModelForTextToWaveform; model_id='vibevoice/VibeVoice-1.5B-hf'; processor=AutoProcessor.from_pretrained(model_id); model=AutoModelForTextToWaveform.from_pretrained(model_id, device_map='auto'); conversation=[{'role':'0','content':[{'type':'text','text':'Hello, nice to meet you. How are you?'}]}]; inputs=processor.apply_chat_template(conversation, return_dict=True, tokenize=True, add_generation_prompt=True).to(model.device, model.dtype); audio=model.generate(**inputs); processor.save_audio(audio, 'VibeVoice-1.5B-hf_tts.wav')"
-```
+Official weights and documentation: [huggingface.co/microsoft](https://huggingface.co/microsoft/VibeVoice-1.5B)
 
 [interactive version](https://whatmodel.sh/model/vibevoice-1-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -43,6 +43,6 @@ weighted average                        = 68.1
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/amazon-nova-experimental-chat-26-02-10) · [JSON](https://whatmodel.sh/api?format=json&all=1)

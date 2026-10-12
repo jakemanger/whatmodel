@@ -131,6 +131,6 @@ OpenAI  <a href="https://arxiv.org/html/2412.16720v2#S5.SS8.SSS2">SWE-bench Veri
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
 
 [interactive version](https://whatmodel.sh/model/o1-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

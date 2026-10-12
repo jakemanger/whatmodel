@@ -44,55 +44,70 @@ weighted average                                   = 41.0
 
 ## How to run it
 
-<pre>
-download          size  score
-16-bit bf16   ~65.06GB   41.0
-4-bit Q4_K_M   ~19.6GB   41.0
-8-bit Q8_0     ~34.6GB   41.0
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Code-33B (ajibawa-2023) (Q4_K_M, needs ~19.6 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Code-33B-GGUF/tree/f512badb357d58d97d5dd0d3dfadb44795e8835a))
+   
+   ```sh
+   llama cli -hf TheBloke/Code-33B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf TheBloke/Code-33B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~19.6GB
-llama cli -hf TheBloke/Code-33B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/Code-33B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.6GB
-llama cli -hf TheBloke/Code-33B-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf TheBloke/Code-33B-GGUF:Q8_0
-```
+Other versions: Q8_0 (~34.6 GB) `llama cli -hf TheBloke/Code-33B-GGUF:Q8_0`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit Q4_K_M · ~19.6GB
-lms get https://huggingface.co/TheBloke/Code-33B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~34.6GB
-lms get https://huggingface.co/TheBloke/Code-33B-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Code-33B (ajibawa-2023) (Q4_K_M, needs ~19.6 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Code-33B-GGUF/tree/f512badb357d58d97d5dd0d3dfadb44795e8835a))
+   
+   ```sh
+   lms get https://huggingface.co/TheBloke/Code-33B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit Q4_K_M · ~19.6GB
-ollama run hf.co/TheBloke/Code-33B-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~34.6GB
-ollama run hf.co/TheBloke/Code-33B-GGUF:Q8_0
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Other engines**
+Other versions: Q8_0 (~34.6 GB) `lms get https://huggingface.co/TheBloke/Code-33B-GGUF@Q8_0 -y`
 
-```sh
-# 16-bit bf16 · ~65.06GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ajibawa-2023/Code-33B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Code-33B (ajibawa-2023) (Q4_K_M, needs ~19.6 GB, from [huggingface.co/TheBloke](https://huggingface.co/TheBloke/Code-33B-GGUF/tree/f512badb357d58d97d5dd0d3dfadb44795e8835a))
+   
+   ```sh
+   ollama run hf.co/TheBloke/Code-33B-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~34.6 GB) `ollama run hf.co/TheBloke/Code-33B-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~65.06 GB, from [huggingface.co/ajibawa-2023](https://huggingface.co/ajibawa-2023/Code-33B/tree/cec263dab5b7bee3fa3280acab0898070c975ef6))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ajibawa-2023/Code-33B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/ajibawa-2023](https://huggingface.co/ajibawa-2023/Code-33B)
 
 [interactive version](https://whatmodel.sh/model/ajibawa-code-33b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -44,20 +44,14 @@ weighted average                                   = 27.5
 
 ## How to run it
 
-<pre>
-version                                  needs  score
-fp32 (repo inference.py) · nvidia only  ~2.1GB   27.5
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (repo inference.py), needs ~2.1 GB, NVIDIA only, from [github.com/sh-lee-prml](https://github.com/sh-lee-prml/HierSpeechpp/blob/318c633cdc24cf3239d62c95ea8afae200ed2d13/README.md))
+   
+   ```sh
+   git clone https://github.com/sh-lee-prml/HierSpeechpp && cd HierSpeechpp && pip install -r requirements.txt && pip install phonemizer && sudo apt-get install espeak-ng && CUDA_VISIBLE_DEVICES=0 python3 inference.py --ckpt "logs/hierspeechpp_libritts960/hierspeechpp_lt960_ckpt.pth" --ckpt_text2w2v "logs/ttv_libritts_v1/ttv_lt960_ckpt.pth" --output_dir "tts_results_eng_kor_v2" --noise_scale_vc "0.333" --noise_scale_ttv "0.333" --denoise_ratio "0"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (repo inference.py) · nvidia only · ~2.1GB
-git clone https://github.com/sh-lee-prml/HierSpeechpp && cd HierSpeechpp && pip install -r requirements.txt && pip install phonemizer && sudo apt-get install espeak-ng && CUDA_VISIBLE_DEVICES=0 python3 inference.py --ckpt "logs/hierspeechpp_libritts960/hierspeechpp_lt960_ckpt.pth" --ckpt_text2w2v "logs/ttv_libritts_v1/ttv_lt960_ckpt.pth" --output_dir "tts_results_eng_kor_v2" --noise_scale_vc "0.333" --noise_scale_ttv "0.333" --denoise_ratio "0"
-```
+Official weights and documentation: [github.com/sh-lee-prml](https://github.com/sh-lee-prml/HierSpeechpp)
 
 [interactive version](https://whatmodel.sh/model/hierspeechpp-libritts960) · [JSON](https://whatmodel.sh/api?format=json&all=1)

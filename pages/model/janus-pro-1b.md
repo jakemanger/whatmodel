@@ -48,24 +48,20 @@ weighted average                                   = 36.2
 
 ## How to run it
 
+### Through an API
+
 api (DeepInfra) · $0.0005/image · [deepinfra.com](https://deepinfra.com/deepseek-ai/Janus-Pro-1B)
 
 <sub>[price source](https://deepinfra.com/deepseek-ai/Janus-Pro-1B): USD per generated image on DeepInfra (model page header '$0.0005 / image'; catalogue pricing type image\_units at 0.05 cents, not deprecated). Product: DeepInfra inference API, text-to-image. API model: deepseek-ai/Janus-Pro-1B. Settings: default output size, one image. Price basis: published per-image list rate. Currency: USD. Not a DeepSeek direct tariff. DeepInfra official model page, observed 2026-09-26.</sub>
 
-<pre>
-version              needs  score
-bf16 · nvidia only  ~5.5GB   36.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~5.5 GB, NVIDIA only, from [github.com/deepseek-ai](https://github.com/deepseek-ai/Janus/blob/1daa72fa409002d40931bd7b36a9280362469ead/README.md))
+   
+   ```sh
+   git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && sed -i.bak 's#deepseek-ai/Janus-1.3B#deepseek-ai/Janus-Pro-1B#; s#"role": "User"#"role": "<|User|>"#; s#"role": "Assistant"#"role": "<|Assistant|>"#' generation_inference.py && python generation_inference.py
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~5.5GB
-git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && sed -i.bak 's#deepseek-ai/Janus-1.3B#deepseek-ai/Janus-Pro-1B#; s#"role": "User"#"role": "<|User|>"#; s#"role": "Assistant"#"role": "<|Assistant|>"#' generation_inference.py && python generation_inference.py
-```
+Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/Janus-Pro-1B)
 
 [interactive version](https://whatmodel.sh/model/janus-pro-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

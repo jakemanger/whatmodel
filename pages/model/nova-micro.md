@@ -72,10 +72,10 @@ weighted average                                   = 45.9
 
 ## How to run it
 
+### Through an API
+
 api (Amazon Bedrock) · $0.061/M blended · $0.035 in / $0.14 out per 1M tokens · [docs.aws.amazon.com](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html)
 
 <sub>[price source](https://aws.amazon.com/nova/pricing): USD per 1M tokens, Standard tier, geo cross-Region inference and in-Region, US East (N. Virginia). Observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/amazon/nova-micro.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/nova-micro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

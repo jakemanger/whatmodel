@@ -78,24 +78,20 @@ weighted average                                   = 61.7
 
 ## How to run it
 
+### Through an API
+
 api (fal.ai) · $0.0042/audio min · [fal.ai](https://fal.ai/models/fal-ai/cohere-transcribe)
 
 <sub>[price source](https://fal.ai/models/fal-ai/cohere-transcribe): USD per input audio minute: fal prices Cohere Transcribe (fal-ai/cohere-transcribe) at $0.00006944444 per second (x60 = $0.0041667/min; endpoint billing record: billing\_unit seconds). Cohere's docs give Cohere Transcribe's model name as cohere-transcribe-03-2026 (its only general Transcribe model; Cohere Transcribe Arabic is separate). Cohere's own API bills Transcribe per token, which is not converted. Product: fal speech-to-text endpoint. API model: fal-ai/cohere-transcribe. Settings: standard. Price basis: published list rate, per-second to per-minute scaling only. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
-<pre>
-version               needs  score
-bf16 · nvidia only  ~5.47GB   61.7
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~5.47 GB, NVIDIA only, from [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/cohere-transcribe-03-2026))
+   
+   ```sh
+   vllm serve CohereLabs/cohere-transcribe-03-2026 --trust-remote-code
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 · nvidia only · ~5.47GB
-vllm serve CohereLabs/cohere-transcribe-03-2026 --trust-remote-code
-```
+Official weights and documentation: [huggingface.co/CohereLabs](https://huggingface.co/CohereLabs/cohere-transcribe-03-2026)
 
 [interactive version](https://whatmodel.sh/model/cohere-transcribe-03-2026) · [JSON](https://whatmodel.sh/api?format=json&all=1)

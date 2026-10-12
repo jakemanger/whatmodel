@@ -14,15 +14,16 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
-### Run it on your own machine
+### Other ways to run it
 
-**Other engines**
+1. Run it as published (onnx (kittenml 0.9.3), needs ~0.08 GB, from [github.com/KittenML](https://github.com/KittenML/KittenTTS/blob/ab5592c28b6f376ea4c3963e84ce6d6688241eca/docs/onnx-models.md))
+   
+   ```sh
+   pip install kittenml && python -c "from kittenml import KittenTTS; import soundfile as sf; model = KittenTTS('KittenML/kitten-tts-mini-0.8'); audio = model.generate('This high-quality TTS model runs without a GPU.', voice='Jasper'); sf.write('output.wav', audio, 24000)"
+   ```
 
-```sh
-# onnx (kittenml 0.9.3) · ~0.08GB
-pip install kittenml && python -c "from kittenml import KittenTTS; import soundfile as sf; model = KittenTTS('KittenML/kitten-tts-mini-0.8'); audio = model.generate('This high-quality TTS model runs without a GPU.', voice='Jasper'); sf.write('output.wav', audio, 24000)"
-# fp32 (mlx-audio) · ~0.29GB
-pip install mlx-audio phonemizer-fork && mlx_audio.tts.generate --model mlx-community/kitten-tts-mini-0.8 --text 'Hello, world!' --voice Jasper
-```
+Other versions: fp32 (mlx-audio) (~0.29 GB, Mac only) `pip install mlx-audio phonemizer-fork && mlx_audio.tts.generate --model mlx-community/kitten-tts-mini-0.8 --text 'Hello, world!' --voice Jasper`
+
+Official weights and documentation: [huggingface.co/KittenML](https://huggingface.co/KittenML/kitten-tts-mini-0.8)
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/kitten-tts-mini-0-8)

@@ -19,4 +19,10 @@ COCO-30k zero-shot FID ↓ (Kandins…  20.0000 FID  lab          <a href="https
 
 <sub>Licences: Kandinsky 2.1 card ([Apache-2.0](../../licenses/kandinsky21-card-original-fid-Apache-2.0.txt))</sub>
 
+## How to run it
+
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/ai-forever](https://huggingface.co/ai-forever/Kandinsky_2.0)
+
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/kandinsky-2-0)

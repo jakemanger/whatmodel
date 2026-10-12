@@ -53,20 +53,14 @@ weighted average                                   = 32.4
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-official inference_t2i.py (checkpoint a…  ~38.9GB   32.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (official inference_t2i.py (checkpoint as stored), needs ~38.9 GB, NVIDIA only, from [github.com/Alpha-VLLM](https://github.com/Alpha-VLLM/Lumina-DiMOO/blob/81344e60545ae8d70f11039d3450717d974f831b/README.md))
+   
+   ```sh
+   git clone https://github.com/Alpha-VLLM/Lumina-DiMOO.git && cd Lumina-DiMOO && conda create -n lumina_dimoo python=3.10 -y && conda activate lumina_dimoo && pip install -r requirements.txt && python inference/inference_t2i.py --checkpoint Alpha-VLLM/Lumina-DiMOO --prompt "A striking photograph of a glass of orange juice on a wooden kitchen table" --height 768 --width 1536 --timesteps 64 --cfg_scale 4.0 --seed 65513 --vae_ckpt Alpha-VLLM/Lumina-DiMOO --output_dir output/results_text_to_image
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# official inference_t2i.py (checkpoint as stored) · nvidia only · ~38.9GB
-git clone https://github.com/Alpha-VLLM/Lumina-DiMOO.git && cd Lumina-DiMOO && conda create -n lumina_dimoo python=3.10 -y && conda activate lumina_dimoo && pip install -r requirements.txt && python inference/inference_t2i.py --checkpoint Alpha-VLLM/Lumina-DiMOO --prompt "A striking photograph of a glass of orange juice on a wooden kitchen table" --height 768 --width 1536 --timesteps 64 --cfg_scale 4.0 --seed 65513 --vae_ckpt Alpha-VLLM/Lumina-DiMOO --output_dir output/results_text_to_image
-```
+Official weights and documentation: [huggingface.co/Alpha-VLLM](https://huggingface.co/Alpha-VLLM/Lumina-DiMOO)
 
 [interactive version](https://whatmodel.sh/model/lumina-dimoo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -57,24 +57,20 @@ weighted average                                   = 47.0
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/black-forest-labs/flux-krea-dev)
 
 <sub>[price source](https://replicate.com/black-forest-labs/flux-krea-dev): USD per output image on Replicate's official black-forest-labs/flux-krea-dev model (billing: $0.025 per output image, "or 40 images for $1"; hardware time not added). The current version is served from replicate-pruna/flux-krea-dev (Pruna-optimized deployment). Product: Replicate model API. API model: black-forest-labs/flux-krea-dev. Settings: one output image. Price basis: published list rate. fal's fal-ai/flux/krea bills $0.025 per megapixel, rounded up to the nearest megapixel. Currency: USD. Not a BFL or Krea direct tariff. Replicate official model page, observed 2026-09-26.</sub>
 
-<pre>
-version                                 needs  score
-bf16 + model CPU offload · nvidia only  ~41GB   47.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 + MODEL CPU OFFLOAD, needs ~41 GB, NVIDIA only, from [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev/blob/8162a9c7b05a641be098422bf2fcf335615c2f28/README.md))
+   
+   ```sh
+   uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-Krea-dev', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('A frog holding a sign that says hello world', height=1024, width=1024, guidance_scale=4.5).images[0].save('flux-krea-dev.png')"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 + model CPU offload · nvidia only · ~41GB
-uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-Krea-dev', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('A frog holding a sign that says hello world', height=1024, width=1024, guidance_scale=4.5).images[0].save('flux-krea-dev.png')"
-```
+Official weights and documentation: [huggingface.co/black-forest-labs](https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev)
 
 [interactive version](https://whatmodel.sh/model/flux-1-krea-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

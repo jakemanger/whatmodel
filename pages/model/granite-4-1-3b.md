@@ -102,20 +102,19 @@ weighted average                                   = 49.2
 
 ## How to run it
 
-<pre>
-download        size  score
-4-bit q4_k_m  ~2.1GB   49.2
-</pre>
+### Ollama (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-### Run it on your own machine
-
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
-
-```sh
-# 4-bit q4_k_m · ~2.1GB
-ollama run granite4.1:3b
-```
+2. Run Granite 4.1 3B (Q4_K_M, needs ~2.1 GB, from [ollama.com](https://ollama.com/library/granite4.1/tags))
+   
+   ```sh
+   ollama run granite4.1:3b
+   ```
 
 [interactive version](https://whatmodel.sh/model/granite-4-1-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

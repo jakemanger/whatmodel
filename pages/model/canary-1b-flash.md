@@ -48,20 +48,14 @@ weighted average                                   = 59.9
 
 ## How to run it
 
-<pre>
-version               needs  score
-fp32 · nvidia only  ~4.39GB   59.9
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32, needs ~4.39 GB, NVIDIA only, from [huggingface.co/nvidia](https://huggingface.co/nvidia/canary-1b-flash))
+   
+   ```sh
+   uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/canary-1b-flash').transcribe(['audio.wav']))"
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · nvidia only · ~4.39GB
-uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/canary-1b-flash').transcribe(['audio.wav']))"
-```
+Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/canary-1b-flash)
 
 [interactive version](https://whatmodel.sh/model/canary-1b-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

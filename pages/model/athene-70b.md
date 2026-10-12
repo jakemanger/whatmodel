@@ -83,47 +83,62 @@ weighted average                              = 50.6
 
 ## How to run it
 
-<pre>
-download          size  score
-4-bit q4_k_m  ~42.52GB   50.6
-2-bit q2_k    ~26.38GB   50.6
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Athene-70B (Q4_K_M, needs ~42.52 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Athene-70B-GGUF/tree/c7912e4ec93accee2e2b3f5d4bcb547ee2ed3bc8))
+   
+   ```sh
+   llama cli -hf bartowski/Athene-70B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf bartowski/Athene-70B-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit q4_k_m · ~42.52GB
-llama cli -hf bartowski/Athene-70B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Athene-70B-GGUF:Q4_K_M
-# 2-bit q2_k · ~26.38GB
-llama cli -hf bartowski/Athene-70B-GGUF:Q2_K
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf bartowski/Athene-70B-GGUF:Q2_K
-```
+Other versions: Q2_K (~26.38 GB) `llama cli -hf bartowski/Athene-70B-GGUF:Q2_K`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~42.52GB
-lms get https://huggingface.co/bartowski/Athene-70B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit q2_k · ~26.38GB
-lms get https://huggingface.co/bartowski/Athene-70B-GGUF@Q2_K -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+2. Run Athene-70B (Q4_K_M, needs ~42.52 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Athene-70B-GGUF/tree/c7912e4ec93accee2e2b3f5d4bcb547ee2ed3bc8))
+   
+   ```sh
+   lms get https://huggingface.co/bartowski/Athene-70B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~42.52GB
-ollama run hf.co/bartowski/Athene-70B-GGUF:Q4_K_M
-# 2-bit q2_k · ~26.38GB
-ollama run hf.co/bartowski/Athene-70B-GGUF:Q2_K
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: Q2_K (~26.38 GB) `lms get https://huggingface.co/bartowski/Athene-70B-GGUF@Q2_K -y`
+
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Athene-70B (Q4_K_M, needs ~42.52 GB, from [huggingface.co/bartowski](https://huggingface.co/bartowski/Athene-70B-GGUF/tree/c7912e4ec93accee2e2b3f5d4bcb547ee2ed3bc8))
+   
+   ```sh
+   ollama run hf.co/bartowski/Athene-70B-GGUF:Q4_K_M
+   ```
+
+Other versions: Q2_K (~26.38 GB) `ollama run hf.co/bartowski/Athene-70B-GGUF:Q2_K`
+
+Official weights and documentation: [huggingface.co/Nexusflow](https://huggingface.co/Nexusflow/Athene-70B)
 
 [interactive version](https://whatmodel.sh/model/athene-70b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

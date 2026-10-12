@@ -57,20 +57,12 @@ weighted average                                   = 42.6
 
 ## How to run it
 
-<pre>
-version               needs  score
-fp32 · nvidia only  ~0.57GB   42.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 · nvidia only · ~0.57GB
-uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('stt_en_conformer_transducer_small').transcribe(['audio.wav']))"
-```
+1. Run it as published (fp32, needs ~0.57 GB, NVIDIA only, from [catalog.ngc.nvidia.com/orgs](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/stt_en_conformer_transducer_small))
+   
+   ```sh
+   uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('stt_en_conformer_transducer_small').transcribe(['audio.wav']))"
+   ```
 
 [interactive version](https://whatmodel.sh/model/stt-en-conformer-transducer-small) · [JSON](https://whatmodel.sh/api?format=json&all=1)

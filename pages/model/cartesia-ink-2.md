@@ -42,10 +42,10 @@ weighted average                                   = 67.9
 
 ## How to run it
 
+### Through an API
+
 api (Cartesia) · $0.0065/audio min · [docs.cartesia.ai](https://docs.cartesia.ai/build-with-cartesia/stt-models)
 
 <sub>[price source](https://cartesia.ai/pricing): USD per input audio minute: Cartesia's pricing page FAQ states 'Ink speech-to-text: One hour of audio is only $0.39 on the Scale plan. 3 credits equals 1 second of audio.' ($0.39/hr ÷ 60); the plan table lists Ink-2 as the STT model. Product: Cartesia Ink STT API (streaming). API model: ink-2. Settings: Scale plan ($299/month, 8M credits). Price basis: vendor-stated hourly cost on the Scale plan. Exclusions: plan fee, other plans' credit rates. Currency: USD. Cartesia official pricing page, observed 2026-10-09.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/cartesia-ink-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

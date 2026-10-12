@@ -51,27 +51,22 @@ weighted average                                   = 52.2
 
 ## How to run it
 
+### Through an API
+
 api (DeepInfra) · $0.62/M chars · [deepinfra.com](https://deepinfra.com/hexgrad/Kokoro-82M)
 
 <sub>[price source](https://deepinfra.com/hexgrad/Kokoro-82M): USD per 1M input characters: DeepInfra lists hexgrad/Kokoro-82M at $0.62 / 1M characters (page pricing data: input\_character\_length billing). Product: DeepInfra hosted inference. API model: hexgrad/Kokoro-82M. Settings: standard serverless. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.</sub>
 
-<pre>
-version                        needs  score
-bf16 · mac only               ~0.7GB   52.2
-fp32 (kokoro package 0.9.4)  ~0.33GB   52.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16, needs ~0.7 GB, Mac only, from [github.com/Blaizzy](https://github.com/Blaizzy/mlx-audio))
+   
+   ```sh
+   pip install mlx-audio misaki && mlx_audio.tts.generate --model mlx-community/Kokoro-82M-bf16 --text 'Hello, world!' --voice af_heart
+   ```
 
-### Run it on your own machine
+Other versions: fp32 (kokoro package 0.9.4) (~0.33 GB) `pip install "kokoro>=0.9.4" soundfile && python3 -m kokoro --text "The sky above the port was the color of television, tuned to a dead channel." -o file.wav`
 
-**Other engines**
-
-```sh
-# bf16 · mac only · ~0.7GB
-pip install mlx-audio misaki && mlx_audio.tts.generate --model mlx-community/Kokoro-82M-bf16 --text 'Hello, world!' --voice af_heart
-# fp32 (kokoro package 0.9.4) · ~0.33GB
-pip install "kokoro>=0.9.4" soundfile && python3 -m kokoro --text "The sky above the port was the color of television, tuned to a dead channel." -o file.wav
-```
+Official weights and documentation: [huggingface.co/hexgrad](https://huggingface.co/hexgrad/Kokoro-82M)
 
 [interactive version](https://whatmodel.sh/model/kokoro-82m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

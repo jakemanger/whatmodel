@@ -56,57 +56,70 @@ weighted average                                   = 23.4
 
 ## How to run it
 
-<sub>[context source](https://arxiv.org/abs/2304.01373v2): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download          size  score
-4-bit fp16    ~13.85GB   23.4
-4-bit Q4_K_M    ~4.4GB   23.4
-8-bit Q8_0      ~7.3GB   23.4
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Pythia 6.9B (Q4_K_M, needs ~4.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-6.9b-GGUF/tree/d8e5050a875b7bfd5de881d30b33abc3d492cb60))
+   
+   ```sh
+   llama cli -hf mradermacher/pythia-6.9b-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/pythia-6.9b-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~7.3 GB) `llama cli -hf mradermacher/pythia-6.9b-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~4.4GB
-llama cli -hf mradermacher/pythia-6.9b-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/pythia-6.9b-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~7.3GB
-llama cli -hf mradermacher/pythia-6.9b-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/pythia-6.9b-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~4.4GB
-lms get https://huggingface.co/mradermacher/pythia-6.9b-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~7.3GB
-lms get https://huggingface.co/mradermacher/pythia-6.9b-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Pythia 6.9B (Q4_K_M, needs ~4.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-6.9b-GGUF/tree/d8e5050a875b7bfd5de881d30b33abc3d492cb60))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/pythia-6.9b-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~4.4GB
-ollama run hf.co/mradermacher/pythia-6.9b-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~7.3GB
-ollama run hf.co/mradermacher/pythia-6.9b-GGUF:Q8_0
-```
+Other versions: Q8_0 (~7.3 GB) `lms get https://huggingface.co/mradermacher/pythia-6.9b-GGUF@Q8_0 -y`
 
-**Other engines**
+### Ollama
 
-```sh
-# 4-bit fp16 · ~13.85GB
-uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-6.9b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Pythia 6.9B (Q4_K_M, needs ~4.4 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/pythia-6.9b-GGUF/tree/d8e5050a875b7bfd5de881d30b33abc3d492cb60))
+   
+   ```sh
+   ollama run hf.co/mradermacher/pythia-6.9b-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~7.3 GB) `ollama run hf.co/mradermacher/pythia-6.9b-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (fp16, needs ~13.85 GB, from [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-6.9b/tree/c0e3eee36dc47af0c49f361c74cfe459c09f7f23))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-6.9b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/EleutherAI](https://huggingface.co/EleutherAI/pythia-6.9b)
 
 [interactive version](https://whatmodel.sh/model/pythia-6-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

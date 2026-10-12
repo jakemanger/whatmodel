@@ -146,10 +146,10 @@ weighted average                                   = 72.3
 
 ## How to run it
 
+### Through an API
+
 api (Google) · $1.13/M blended · $0.5 in / $3 out per 1M tokens · [ai.google.dev](https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview)
 
 <sub>[price source](https://ai.google.dev/gemini-api/docs/pricing): USD per 1M tokens, Gemini Developer API Standard paid tier, gemini-3-flash-preview (Gemini 3 Flash Preview, which Google calls 'our legacy Flash model'; the deprecations table lists 'No shutdown date announced'): input $0.50 (text/image/video), output $3.00 (including thinking tokens). Audio input ($1.00), context caching, Batch and Flex ($0.25 in / $1.50 out) and the free tier are excluded. Currency: USD. Google Gemini API official pricing page, observed 2026-09-26. · [context source](https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview): Gemini Developer API model page, gemini-3-flash-preview: input token limit 1,048,576 (the 65,536-token output limit is separate). Observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gemini-3-flash-preview) · [JSON](https://whatmodel.sh/api?format=json&all=1)

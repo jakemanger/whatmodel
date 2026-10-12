@@ -104,50 +104,51 @@ weighted average                                   = 61.7
 
 ## How to run it
 
+### Through an API
+
 api (Mistral AI) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [docs.mistral.ai](https://docs.mistral.ai/models/mistral-large-3-25-12)
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output.  Product: La Plateforme chat completions. API model: mistral-large-2512. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-<pre>
-download               size  score
-4-bit ud-q4_k_xl   ~405.5GB   61.7
-2-bit ud-q2_k_xl     ~203GB   61.7
-1-bit ud-iq1_s    ~101.75GB   61.7
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Mistral Large 3 (675B-A41B) (ud-q4_k_xl, needs ~405.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF/tree/main))
+   
+   ```sh
+   llama cli -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-Q4_K_XL
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-Q4_K_XL
+   ```
 
-```sh
-# 4-bit ud-q4_k_xl · ~405.5GB
-llama cli -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-Q4_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-Q4_K_XL
-# 2-bit ud-q2_k_xl · ~203GB
-llama cli -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-Q2_K_XL
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-Q2_K_XL
-# 1-bit ud-iq1_s · ~101.75GB
-llama cli -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-IQ1_S
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-IQ1_S
-```
+Other versions: ud-q2_k_xl (~203 GB) `llama cli -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-Q2_K_XL` · ud-iq1_s (~101.75 GB) `llama cli -hf unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF:UD-IQ1_S`
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+### LM Studio
 
-```sh
-# 4-bit ud-q4_k_xl · ~405.5GB
-lms get https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF@UD-Q4_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 2-bit ud-q2_k_xl · ~203GB
-lms get https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF@UD-Q2_K_XL -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 1-bit ud-iq1_s · ~101.75GB
-lms get https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF@UD-IQ1_S -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
+
+2. Run Mistral Large 3 (675B-A41B) (ud-q4_k_xl, needs ~405.5 GB, from [huggingface.co/unsloth](https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF/tree/main))
+   
+   ```sh
+   lms get https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF@UD-Q4_K_XL -y
+   ```
+
+3. Then run lms ls to see its name, and lms chat followed by that name
+
+Other versions: ud-q2_k_xl (~203 GB) `lms get https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF@UD-Q2_K_XL -y` · ud-iq1_s (~101.75 GB) `lms get https://huggingface.co/unsloth/Mistral-Large-3-675B-Instruct-2512-GGUF@UD-IQ1_S -y`
+
+Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512)
 
 [interactive version](https://whatmodel.sh/model/mistral-large-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -101,8 +101,8 @@ weighted average                                   = 68.5
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md): LongCat-Flash card: mid-training extended 'the context length to 128k'. Observed 2026-10-10.</sub>
+No verified API or local download yet.
 
-no current API or local download verified
+Official weights and documentation: [huggingface.co/meituan-longcat](https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking)
 
 [interactive version](https://whatmodel.sh/model/longcat-flash-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

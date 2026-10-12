@@ -45,60 +45,89 @@ weighted average                                   = 57.0
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/lm-provers/QED-Nano/blob/1016ddef8dd40552b97216ce34e3fece2fffa2bb/config.json): Official configuration at the pinned revision: max\_position\_embeddings 262144 (as its Qwen3-4B-Thinking-2507 base). Configured maximum, not a benchmarked long-context claim: the card states no context window (RL rollouts were 49,152 tokens). Observed 2026-10-09.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download                      size  score
-16-bit bf16 · nvidia only  ~8.04GB   57.0
-4-bit q4_k_m                ~2.5GB   57.0
-4-bit mlx-8bit · mac only   ~4.3GB   57.0
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run QED-Nano (Q4_K_M, needs ~2.5 GB, from [huggingface.co/ijohn07](https://huggingface.co/ijohn07/QED-Nano-Q4_K_M-GGUF/tree/89ba3761fbf39d184255a8625969cd745c16d505))
+   
+   ```sh
+   llama cli -hf ijohn07/QED-Nano-Q4_K_M-GGUF:q4_k_m
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf ijohn07/QED-Nano-Q4_K_M-GGUF:q4_k_m
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~2.5GB
-llama cli -hf ijohn07/QED-Nano-Q4_K_M-GGUF:q4_k_m
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf ijohn07/QED-Nano-Q4_K_M-GGUF:q4_k_m
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run QED-Nano (Q4_K_M, needs ~2.5 GB, from [huggingface.co/ijohn07](https://huggingface.co/ijohn07/QED-Nano-Q4_K_M-GGUF/tree/89ba3761fbf39d184255a8625969cd745c16d505))
+   
+   ```sh
+   lms get https://huggingface.co/ijohn07/QED-Nano-Q4_K_M-GGUF@q4_k_m -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~2.5GB
-lms get https://huggingface.co/ijohn07/QED-Nano-Q4_K_M-GGUF@q4_k_m -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 4-bit mlx-8bit · mac only · ~4.3GB
-lms get https://huggingface.co/mlx-community/QED-Nano-8bit -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+Other versions: 8bit (~4.3 GB, Mac only) `lms get https://huggingface.co/mlx-community/QED-Nano-8bit -y`
 
-```sh
-# 4-bit q4_k_m · ~2.5GB
-ollama run hf.co/ijohn07/QED-Nano-Q4_K_M-GGUF:q4_k_m
-```
+### Ollama
 
-**MLX (Mac)** · install: with uv `uv tool install mlx-lm` · or `pip install mlx-lm` · Apple silicon Macs only, text only.
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
 
-```sh
-# 4-bit mlx-8bit · mac only · ~4.3GB
-mlx_lm.chat --model mlx-community/QED-Nano-8bit
-# or start an OpenAI-compatible server at http://localhost:8080/v1
-mlx_lm.server --model mlx-community/QED-Nano-8bit
-```
+2. Run QED-Nano (Q4_K_M, needs ~2.5 GB, from [huggingface.co/ijohn07](https://huggingface.co/ijohn07/QED-Nano-Q4_K_M-GGUF/tree/89ba3761fbf39d184255a8625969cd745c16d505))
+   
+   ```sh
+   ollama run hf.co/ijohn07/QED-Nano-Q4_K_M-GGUF:q4_k_m
+   ```
 
-**Other engines**
+### MLX (Mac)
 
-```sh
-# 16-bit bf16 · nvidia only · ~8.04GB
-vllm serve lm-provers/QED-Nano
-```
+1. Install MLX (Mac). Apple silicon Macs only, text only.
+   
+   ```sh
+   # with uv
+   uv tool install mlx-lm
+   # or
+   pip install mlx-lm
+   ```
+
+2. Run QED-Nano (8bit, needs ~4.3 GB, Mac only, from [huggingface.co/mlx-community](https://huggingface.co/mlx-community/QED-Nano-8bit/tree/980adf7e0d31d04205a5d593669bc1ce0606dc51))
+   
+   ```sh
+   mlx_lm.chat --model mlx-community/QED-Nano-8bit
+   ```
+
+3. Or start an OpenAI-compatible server at http://localhost:8080/v1
+   
+   ```sh
+   mlx_lm.server --model mlx-community/QED-Nano-8bit
+   ```
+
+### Other ways to run it
+
+1. Run it as published (BF16, needs ~8.04 GB, NVIDIA only, from [huggingface.co/lm-provers](https://huggingface.co/lm-provers/QED-Nano/tree/1016ddef8dd40552b97216ce34e3fece2fffa2bb))
+   
+   ```sh
+   vllm serve lm-provers/QED-Nano
+   ```
+
+Official weights and documentation: [huggingface.co/lm-provers](https://huggingface.co/lm-provers/QED-Nano)
 
 [interactive version](https://whatmodel.sh/model/qed-nano) · [JSON](https://whatmodel.sh/api?format=json&all=1)

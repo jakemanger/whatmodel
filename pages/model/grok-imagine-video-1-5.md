@@ -61,10 +61,10 @@ weighted average                                   = 75.2
 
 ## How to run it
 
+### Through an API
+
 api (xAI) · $0.080/sec · [docs.x.ai](https://docs.x.ai/developers/models/grok-imagine-video-1.5)
 
 <sub>[price source](https://docs.x.ai/developers/models.md): USD per second of output video. Product: xAI Imagine video API. API model: grok-imagine-video-1.5 (aliases grok-imagine-video-1.5-preview, grok-imagine-video-1.5-2026-05-30). Price basis: published flat output rate; no resolution tiers listed. Not grok-imagine-video ($0.050/s). Currency: USD. xAI models and pricing documentation, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/grok-imagine-video-1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

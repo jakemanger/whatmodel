@@ -42,10 +42,10 @@ weighted average                                = 66.8
 
 ## How to run it
 
+### Through an API
+
 api (Google) · $0.0050/audio min · [ai.google.dev](https://ai.google.dev/gemini-api/docs/pricing)
 
 <sub>[price source](https://ai.google.dev/gemini-api/docs/pricing): Provider-published estimated cost per audio minute: Google lists gemini-3.5-transcribe at $2.00/1M audio input tokens or $0.003/min and $12.00/1M text output tokens or $0.002/min, with 'an effective blended rate of ~$0.005 per min for Transcribe'; underlying billing is per token. Product: Gemini Developer API. API model: gemini-3.5-transcribe. Settings: Standard paid tier. Price basis: vendor-published per-minute estimate (25 audio tokens/s, 175 text tokens/min). Exclusions: free tier, Transcribe Live. Currency: USD. Google Gemini API pricing page (CC BY 4.0), observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gemini-3-5-transcribe) · [JSON](https://whatmodel.sh/api?format=json&all=1)

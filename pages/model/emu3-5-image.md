@@ -45,20 +45,14 @@ weighted average                                   = 60.4
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-bf16 (official repo, Transformers backe…  ~84.5GB   60.4
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (BF16 (OFFICIAL REPO, TRANSFORMERS BACKEND), needs ~84.5 GB, NVIDIA only, from [huggingface.co/BAAI](https://huggingface.co/BAAI/Emu3.5-Image/blob/b94be7d41ff2b9c971e4e0dd43bcbb5b21c28e6b/README.md))
+   
+   ```sh
+   git clone https://github.com/baaivision/Emu3.5 && cd Emu3.5 && pip install -r requirements/transformers.txt && pip install flash_attn==2.8.3 --no-build-isolation && CUDA_VISIBLE_DEVICES=0 python inference.py --cfg configs/example_config_t2i.py && python src/utils/vis_proto.py --input outputs/emu3p5-image
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# bf16 (official repo, Transformers backend) · nvidia only · ~84.5GB
-git clone https://github.com/baaivision/Emu3.5 && cd Emu3.5 && pip install -r requirements/transformers.txt && pip install flash_attn==2.8.3 --no-build-isolation && CUDA_VISIBLE_DEVICES=0 python inference.py --cfg configs/example_config_t2i.py && python src/utils/vis_proto.py --input outputs/emu3p5-image
-```
+Official weights and documentation: [huggingface.co/BAAI](https://huggingface.co/BAAI/Emu3.5-Image)
 
 [interactive version](https://whatmodel.sh/model/emu3-5-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

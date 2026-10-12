@@ -63,57 +63,70 @@ weighted average                                   = 13.8
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/bigscience/bloom-1b7/blob/cc72a88036c2fb937d65efeacc57a0c2ef5d6fe5/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download         size  score
-4-bit fp16    ~3.44GB   13.8
-4-bit Q4_K_M   ~1.5GB   13.8
-8-bit Q8_0     ~2.4GB   13.8
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run BLOOM 1.7B (Q4_K_M, needs ~1.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/bloom-1b7-GGUF/tree/44b567abb1107979da1de4b66b736e47ef75ff49))
+   
+   ```sh
+   llama cli -hf mradermacher/bloom-1b7-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf mradermacher/bloom-1b7-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+Other versions: Q8_0 (~2.4 GB) `llama cli -hf mradermacher/bloom-1b7-GGUF:Q8_0`
 
-```sh
-# 4-bit Q4_K_M · ~1.5GB
-llama cli -hf mradermacher/bloom-1b7-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/bloom-1b7-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~2.4GB
-llama cli -hf mradermacher/bloom-1b7-GGUF:Q8_0
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf mradermacher/bloom-1b7-GGUF:Q8_0
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit Q4_K_M · ~1.5GB
-lms get https://huggingface.co/mradermacher/bloom-1b7-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-# 8-bit Q8_0 · ~2.4GB
-lms get https://huggingface.co/mradermacher/bloom-1b7-GGUF@Q8_0 -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run BLOOM 1.7B (Q4_K_M, needs ~1.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/bloom-1b7-GGUF/tree/44b567abb1107979da1de4b66b736e47ef75ff49))
+   
+   ```sh
+   lms get https://huggingface.co/mradermacher/bloom-1b7-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit Q4_K_M · ~1.5GB
-ollama run hf.co/mradermacher/bloom-1b7-GGUF:Q4_K_M
-# 8-bit Q8_0 · ~2.4GB
-ollama run hf.co/mradermacher/bloom-1b7-GGUF:Q8_0
-```
+Other versions: Q8_0 (~2.4 GB) `lms get https://huggingface.co/mradermacher/bloom-1b7-GGUF@Q8_0 -y`
 
-**Other engines**
+### Ollama
 
-```sh
-# 4-bit fp16 · ~3.44GB
-uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-1b7')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run BLOOM 1.7B (Q4_K_M, needs ~1.5 GB, from [huggingface.co/mradermacher](https://huggingface.co/mradermacher/bloom-1b7-GGUF/tree/44b567abb1107979da1de4b66b736e47ef75ff49))
+   
+   ```sh
+   ollama run hf.co/mradermacher/bloom-1b7-GGUF:Q4_K_M
+   ```
+
+Other versions: Q8_0 (~2.4 GB) `ollama run hf.co/mradermacher/bloom-1b7-GGUF:Q8_0`
+
+### Other ways to run it
+
+1. Run it as published (fp16, needs ~3.44 GB, from [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom-1b7/tree/cc72a88036c2fb937d65efeacc57a0c2ef5d6fe5))
+   
+   ```sh
+   uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-1b7')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+   ```
+
+Official weights and documentation: [huggingface.co/bigscience](https://huggingface.co/bigscience/bloom-1b7)
 
 [interactive version](https://whatmodel.sh/model/bloom-1b7) · [JSON](https://whatmodel.sh/api?format=json&all=1)

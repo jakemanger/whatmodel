@@ -67,10 +67,10 @@ weighted average                                   = 65.4
 
 ## How to run it
 
+### Through an API
+
 api (Luma AI) · $0.10/image · [lumalabs.ai](https://lumalabs.ai/api)
 
 <sub>[price source](https://docs.agents.lumalabs.ai/guides/pricing): USD per generated 2K (2048-pixel) image, text-to-image, Luma Agents API pay-as-you-go. Product: Luma Agents API image generation. API model: uni-1-max (Luma's API page labels this price column "Uni-1.1 Max"). Settings: text-to-image, 2048px output, no reference images, one image. Image edit or one reference image $0.1030; each extra reference +$0.003. Price basis: Luma's published per-image figure; Luma notes prices are approximate and based on billing tokens. Currency: USD. Luma official API pricing documentation, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/uni-1-1-max) · [JSON](https://whatmodel.sh/api?format=json&all=1)

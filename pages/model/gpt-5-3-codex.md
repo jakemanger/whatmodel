@@ -79,10 +79,10 @@ weighted average                                   = 74.3
 
 ## How to run it
 
+### Through an API
+
 api (OpenAI) · $4.81/M blended · $1.75 in / $14 out per 1M tokens · [platform.openai.com](https://platform.openai.com/docs/models)
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-5.3-codex.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-5.3-codex.toml)</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/gpt-5-3-codex) · [JSON](https://whatmodel.sh/api?format=json&all=1)

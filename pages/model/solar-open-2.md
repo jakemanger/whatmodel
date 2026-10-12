@@ -86,22 +86,14 @@ weighted average                              = 71.6
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/upstage/Solar-Open2-250B/blob/9190fbe63a2ad8e17fc766ccceb36de7c66f004b/README.md): Upstage model card: 'Context Length \| 1M'; technical report (arXiv 2607.20062v2) Table 1: '1,048,576 (1M)'. Observed 2026-10-09.</sub>
+### Other ways to run it
 
-<pre>
-download                        size  score
-16-bit bf16 · nvidia only  ~500.58GB   71.6
-</pre>
+1. Run it as published (BF16, needs ~500.58 GB, NVIDIA only, from [huggingface.co/upstage](https://huggingface.co/upstage/Solar-Open2-250B/tree/9190fbe63a2ad8e17fc766ccceb36de7c66f004b))
+   
+   ```sh
+   vllm serve upstage/Solar-Open2-250B --served-model-name solar-open2-250b --tensor-parallel-size 8 --enable-expert-parallel --moe-backend triton --default-chat-template-kwargs '{"think_render_option":"preserved"}' --reasoning-parser solar_open2 --tool-call-parser solar_open2 --enable-auto-tool-choice --logits-processors vllm.v1.sample.logits_processor.solar_open2:SolarOpen2TemplateLogitsProcessor
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
-
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# 16-bit bf16 · nvidia only · ~500.58GB
-vllm serve upstage/Solar-Open2-250B --served-model-name solar-open2-250b --tensor-parallel-size 8 --enable-expert-parallel --moe-backend triton --default-chat-template-kwargs '{"think_render_option":"preserved"}' --reasoning-parser solar_open2 --tool-call-parser solar_open2 --enable-auto-tool-choice --logits-processors vllm.v1.sample.logits_processor.solar_open2:SolarOpen2TemplateLogitsProcessor
-```
+Official weights and documentation: [huggingface.co/upstage](https://huggingface.co/upstage/Solar-Open2-250B)
 
 [interactive version](https://whatmodel.sh/model/solar-open-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

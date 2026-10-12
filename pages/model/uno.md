@@ -58,20 +58,14 @@ weighted average                                   = 43.2
 
 ## How to run it
 
-<pre>
-version                                   needs  score
-fp8 FLUX.1-dev base + UNO LoRA, CPU off…  ~16GB   43.2
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp8 FLUX.1-dev base + UNO LoRA, CPU offload, needs ~16 GB, NVIDIA only, from [github.com/bytedance](https://github.com/bytedance/UNO/blob/a563432dcfb4caf98df4368facb8102bf97d376c/README.md))
+   
+   ```sh
+   git clone https://github.com/bytedance/UNO.git && cd UNO && pip install -e . && python inference.py --prompt "A clock on the beach is under a red sun umbrella" --image_paths "assets/clock.png" --width 704 --height 704 --offload --model_type flux-dev-fp8
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp8 FLUX.1-dev base + UNO LoRA, CPU offload · nvidia only · ~16GB
-git clone https://github.com/bytedance/UNO.git && cd UNO && pip install -e . && python inference.py --prompt "A clock on the beach is under a red sun umbrella" --image_paths "assets/clock.png" --width 704 --height 704 --offload --model_type flux-dev-fp8
-```
+Official weights and documentation: [huggingface.co/bytedance-research](https://huggingface.co/bytedance-research/UNO)
 
 [interactive version](https://whatmodel.sh/model/uno) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -46,20 +46,14 @@ weighted average                                   = 25.6
 
 ## How to run it
 
-<pre>
-version                                    needs  score
-official script (checkpoint as stored) …  ~8.1GB   25.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (official script (checkpoint as stored), needs ~8.1 GB, NVIDIA only, from [github.com/AILab-CVC](https://github.com/AILab-CVC/VideoCrafter/blob/a11f5ae2b18db91d2c1b191153ebc0c3a5dd87e8/README.md))
+   
+   ```sh
+   git clone https://github.com/AILab-CVC/VideoCrafter && cd VideoCrafter && git checkout a11f5ae2b18db91d2c1b191153ebc0c3a5dd87e8 && conda create -n videocrafter python=3.8.5 -y && conda activate videocrafter && pip install -r requirements.txt && mkdir -p checkpoints/base_1024_v1 && wget -O checkpoints/base_1024_v1/model.ckpt https://huggingface.co/VideoCrafter/Text2Video-1024/resolve/main/model.ckpt && sh scripts/run_text2video.sh
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# official script (checkpoint as stored) · nvidia only · ~8.1GB
-git clone https://github.com/AILab-CVC/VideoCrafter && cd VideoCrafter && git checkout a11f5ae2b18db91d2c1b191153ebc0c3a5dd87e8 && conda create -n videocrafter python=3.8.5 -y && conda activate videocrafter && pip install -r requirements.txt && mkdir -p checkpoints/base_1024_v1 && wget -O checkpoints/base_1024_v1/model.ckpt https://huggingface.co/VideoCrafter/Text2Video-1024/resolve/main/model.ckpt && sh scripts/run_text2video.sh
-```
+Official weights and documentation: [github.com/AILab-CVC](https://github.com/AILab-CVC/VideoCrafter)
 
 [interactive version](https://whatmodel.sh/model/videocrafter1-t2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -115,42 +115,56 @@ weighted average                                 = 55.1
 
 ## How to run it
 
-<sub>[context source](https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md): Card (4B repo, describing both sizes): 'native context windows of up to 1M tokens'. Observed 2026-10-10.</sub>
+### llama.cpp (recommended)
 
-<pre>
-download         size  score
-16-bit bf16    ~3.4GB   55.1
-4-bit q4_k_m  ~1.11GB   55.1
-</pre>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+2. Run Spark-X2.5 1.7B (Q4_K_M, needs ~1.11 GB, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.5-1.7B-GGUF/tree/1f7fa33b1245c14730da39e125714ad3a327901b))
+   
+   ```sh
+   llama cli -hf XHToken/Spark-X2.5-1.7B-GGUF:Q4_K_M
+   ```
 
-### Run it on your own machine
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf XHToken/Spark-X2.5-1.7B-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+### LM Studio
 
-```sh
-# 4-bit q4_k_m · ~1.11GB
-llama cli -hf XHToken/Spark-X2.5-1.7B-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf XHToken/Spark-X2.5-1.7B-GGUF:Q4_K_M
-```
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+2. Run Spark-X2.5 1.7B (Q4_K_M, needs ~1.11 GB, from [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.5-1.7B-GGUF/tree/1f7fa33b1245c14730da39e125714ad3a327901b))
+   
+   ```sh
+   lms get https://huggingface.co/XHToken/Spark-X2.5-1.7B-GGUF@Q4_K_M -y
+   ```
 
-```sh
-# 4-bit q4_k_m · ~1.11GB
-lms get https://huggingface.co/XHToken/Spark-X2.5-1.7B-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+### Ollama
 
-```sh
-# 16-bit bf16 · ~3.4GB
-ollama run SparkLLM/Spark-X2.5-1.7B
-# 4-bit q4_k_m · ~1.11GB
-ollama run hf.co/XHToken/Spark-X2.5-1.7B-GGUF:Q4_K_M
-```
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Spark-X2.5 1.7B (BF16, needs ~3.4 GB, from [ollama.com](https://ollama.com/SparkLLM/Spark-X2.5-1.7B/tags))
+   
+   ```sh
+   ollama run SparkLLM/Spark-X2.5-1.7B
+   ```
+
+Official weights and documentation: [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.5-1.7B)
 
 [interactive version](https://whatmodel.sh/model/spark-x2-5-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

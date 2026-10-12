@@ -44,6 +44,8 @@ weighted average                                   = 35.4
 
 ## How to run it
 
-no current API or local download verified
+No verified API or local download yet.
+
+Official weights and documentation: [huggingface.co/AIDC-AI](https://huggingface.co/AIDC-AI/Ovis-U1-3B)
 
 [interactive version](https://whatmodel.sh/model/ovis-u1-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

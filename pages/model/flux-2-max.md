@@ -75,10 +75,10 @@ weighted average                                   = 63.6
 
 ## How to run it
 
+### Through an API
+
 api (Black Forest Labs) · $0.070/image · [docs.bfl.ai](https://docs.bfl.ai/quick_start/pricing)
 
 <sub>[price source](https://bfl.ai/pricing): USD for a text-to-image output of up to 1 megapixel (the first-megapixel rate; each additional output megapixel adds $0.03). Matches the "from $0.07" text-to-image figure in the BFL API docs (1 credit = $0.01). Product: BFL API. API model: flux-2-max. Settings: output \<=1 MP (e.g. 1024×1024), no input images, single image. Price basis: published first-megapixel list rate. Currency: USD. Black Forest Labs official pricing page, observed 2026-09-25.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/flux-2-max) · [JSON](https://whatmodel.sh/api?format=json&all=1)

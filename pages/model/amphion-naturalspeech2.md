@@ -50,20 +50,14 @@ weighted average                                 = 14.0
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp32 (Amphion repo recipe) · nvidia only  ~1.66GB   14.0
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (Amphion repo recipe), needs ~1.66 GB, NVIDIA only, from [huggingface.co/amphion](https://huggingface.co/amphion/naturalspeech2_libritts/blob/12d88cd539fa1829f01febd8f7d4d71d940d6538/README.md))
+   
+   ```sh
+   git lfs install && git clone https://huggingface.co/amphion/naturalspeech2_libritts && git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && mkdir -p ckpts && ln -s ../../../naturalspeech2_libritts ckpts/tts/ && bash egs/tts/NaturalSpeech2/run_inference.sh --text "Hello, world."
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (Amphion repo recipe) · nvidia only · ~1.66GB
-git lfs install && git clone https://huggingface.co/amphion/naturalspeech2_libritts && git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && mkdir -p ckpts && ln -s ../../../naturalspeech2_libritts ckpts/tts/ && bash egs/tts/NaturalSpeech2/run_inference.sh --text "Hello, world."
-```
+Official weights and documentation: [huggingface.co/amphion](https://huggingface.co/amphion/naturalspeech2_libritts)
 
 [interactive version](https://whatmodel.sh/model/amphion-naturalspeech2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

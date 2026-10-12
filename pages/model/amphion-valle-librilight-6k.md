@@ -42,20 +42,14 @@ weighted average                        = 46.6
 
 ## How to run it
 
-<pre>
-version                                     needs  score
-fp32 (Amphion repo recipe) · nvidia only  ~1.56GB   46.6
-</pre>
+### Other ways to run it
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Run it as published (fp32 (Amphion repo recipe), needs ~1.56 GB, NVIDIA only, from [huggingface.co/amphion](https://huggingface.co/amphion/valle_librilight_6k/blob/73979654834196d13f4cc78fb5a90043c1868bdc/README.md))
+   
+   ```sh
+   git lfs install && git clone https://huggingface.co/amphion/valle_librilight_6k && git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && mkdir -p ckpts/tts && ln -s ../../../valle_librilight_6k ckpts/tts/ && sh egs/tts/VALLE/run.sh --stage 3 --gpu "0" --config "ckpts/tts/valle_librilight_6k/args.json" --infer_expt_dir ckpts/tts/valle_librilight_6k --infer_output_dir ckpts/tts/valle_librilight_6k/result --infer_mode "single" --infer_text "This is a clip of generated speech with the given text from Amphion Vall-E model." --infer_text_prompt "But even the unsuccessful dramatist has his moments." --infer_audio_prompt egs/tts/VALLE/prompt_examples/7176_92135_000004_000000.wav
+   ```
 
-### Run it on your own machine
-
-**Other engines**
-
-```sh
-# fp32 (Amphion repo recipe) · nvidia only · ~1.56GB
-git lfs install && git clone https://huggingface.co/amphion/valle_librilight_6k && git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && mkdir -p ckpts/tts && ln -s ../../../valle_librilight_6k ckpts/tts/ && sh egs/tts/VALLE/run.sh --stage 3 --gpu "0" --config "ckpts/tts/valle_librilight_6k/args.json" --infer_expt_dir ckpts/tts/valle_librilight_6k --infer_output_dir ckpts/tts/valle_librilight_6k/result --infer_mode "single" --infer_text "This is a clip of generated speech with the given text from Amphion Vall-E model." --infer_text_prompt "But even the unsuccessful dramatist has his moments." --infer_audio_prompt egs/tts/VALLE/prompt_examples/7176_92135_000004_000000.wav
-```
+Official weights and documentation: [huggingface.co/amphion](https://huggingface.co/amphion/valle_librilight_6k)
 
 [interactive version](https://whatmodel.sh/model/amphion-valle-librilight-6k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

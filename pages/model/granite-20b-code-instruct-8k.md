@@ -59,43 +59,58 @@ weighted average                                   = 44.0
 
 ## How to run it
 
-<pre>
-download          size  score
-4-bit q4_k_m  ~12.82GB   44.0
-4-bit q4_0       ~12GB   44.0
-4-bit q4_0       ~12GB   44.0
-</pre>
+### llama.cpp (recommended)
 
-<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+1. Install llama.cpp. Homebrew and winget installs name the commands llama-cli and llama-server instead. [Other ways to install](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md)
+   
+   ```sh
+   # macOS / Linux
+   curl -LsSf https://llama.app/install.sh | sh
+   # Windows
+   irm https://llama.app/install.ps1 | iex
+   ```
 
-### Run it on your own machine
+2. Run Granite 20B Code Instruct (8K) (Q4_K_M, needs ~12.82 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k-GGUF/tree/6e9f892709473675166a5f71d9c07e14d65d67ca))
+   
+   ```sh
+   llama cli -hf ibm-granite/granite-20b-code-instruct-8k-GGUF:Q4_K_M
+   ```
 
-**llama.cpp** · install: macOS / Linux `curl -LsSf https://llama.app/install.sh | sh` · Windows `irm https://llama.app/install.ps1 | iex` · [other ways](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md) · Homebrew and winget installs name the commands llama-cli and llama-server instead.
+3. Or start a local server and open the address it prints (http://localhost:9931)
+   
+   ```sh
+   llama serve -hf ibm-granite/granite-20b-code-instruct-8k-GGUF:Q4_K_M
+   ```
 
-```sh
-# 4-bit q4_k_m · ~12.82GB
-llama cli -hf ibm-granite/granite-20b-code-instruct-8k-GGUF:Q4_K_M
-# or start a local server and open the address it prints (http://localhost:9931)
-llama serve -hf ibm-granite/granite-20b-code-instruct-8k-GGUF:Q4_K_M
-```
+### LM Studio
 
-**LM Studio** · install: [macOS / Windows / Linux](https://lmstudio.ai/download) · Open the app once before using the lms command.
+1. Install LM Studio. Open the app once before using the lms command. [Download it (macOS / Windows / Linux)](https://lmstudio.ai/download)
 
-```sh
-# 4-bit q4_k_m · ~12.82GB
-lms get https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k-GGUF@Q4_K_M -y
-# then run lms ls to see its name, and lms chat followed by that name
-```
+2. Run Granite 20B Code Instruct (8K) (Q4_K_M, needs ~12.82 GB, from [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k-GGUF/tree/6e9f892709473675166a5f71d9c07e14d65d67ca))
+   
+   ```sh
+   lms get https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k-GGUF@Q4_K_M -y
+   ```
 
-**Ollama** · install: [macOS / Windows](https://ollama.com/download) · Linux `curl -fsSL https://ollama.com/install.sh | sh`
+3. Then run lms ls to see its name, and lms chat followed by that name
 
-```sh
-# 4-bit q4_k_m · ~12.82GB
-ollama run hf.co/ibm-granite/granite-20b-code-instruct-8k-GGUF:Q4_K_M
-# 4-bit q4_0 · ~12GB
-ollama run granite-code:20b
-# 4-bit q4_0 · ~12GB
-ollama run granite-code:20b
-```
+### Ollama
+
+1. Install Ollama. [Download it (macOS / Windows)](https://ollama.com/download)
+   
+   ```sh
+   # Linux
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. Run Granite 20B Code Instruct (8K) (Q4_0, needs ~12 GB, from [ollama.com](https://ollama.com/library/granite-code/tags))
+   
+   ```sh
+   ollama run granite-code:20b
+   ```
+
+Other versions: Q4_0 (~12 GB) `ollama run granite-code:20b`
+
+Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k)
 
 [interactive version](https://whatmodel.sh/model/granite-20b-code-instruct-8k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

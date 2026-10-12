@@ -55,10 +55,10 @@ weighted average                        = 52.5
 
 ## How to run it
 
+### Through an API
+
 api (Replicate) · $0.28/sec · [replicate.com](https://replicate.com/kwaivgi/kling-v2.1-master)
 
 <sub>[price source](https://replicate.com/kwaivgi/kling-v2.1-master): USD per second of output video, 1080p: Replicate's official kwaivgi/kling-v2.1-master ('Generate 1080p 5s and 10s videos from text or an image') is billed $0.28 per second of output video. Product: Replicate model API. API model: kwaivgi/kling-v2.1-master. Settings: 1080p, text-to-video or image-to-video. Price basis: published per-second-of-output list rate. Flag: fal lists its Kling 2.1 Master endpoints as deprecated and Kling's own developer pricing page no longer prices 2.1; the Replicate model is online. Currency: USD. Not a Kling direct tariff. Replicate official model page, observed 2026-09-26.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/kling-2-1-master) · [JSON](https://whatmodel.sh/api?format=json&all=1)

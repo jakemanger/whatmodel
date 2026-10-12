@@ -53,10 +53,10 @@ weighted average                                   = 61.3
 
 ## How to run it
 
+### Through an API
+
 api (Alibaba Cloud Model Studio) · $1.20/M blended · $0.8 in / $2.4 out per 1M tokens · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/text-generation-model)
 
 <sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per 1M tokens, Singapore (International), qwq-plus, single tier: input $0.8, output $2.4. Batch and context-cache discounts, higher tiers and free quota excluded. Observed 2026-09-28. · [context source](https://www.alibabacloud.com/help/en/model-studio/text-generation-model): Alibaba Cloud Model Studio text-generation models table: qwq-plus context 128k (stated rounded). Observed 2026-09-28.</sub>
-
-no verified local download listed
 
 [interactive version](https://whatmodel.sh/model/qwq-plus) · [JSON](https://whatmodel.sh/api?format=json&all=1)
