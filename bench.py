@@ -1383,8 +1383,7 @@ def public_report(jobs, tokens, runs, warmups, seed, hw, ids):
 REPORTS = Path.home() / '.whatmodel'
 
 
-REPO = 'jakemanger/whatmodel'
-URL_SAFE = 2500  # browsers send the URL with your GitHub cookies; long prefilled drafts get rejected (HTTP 400)
+URL_SAFE = 2500  # browsers send the link with your GitHub cookies; long prefilled issues get rejected (HTTP 400)
 
 
 def copy_to_clipboard(text):
@@ -1397,28 +1396,67 @@ def copy_to_clipboard(text):
     return False
 
 
-def open_upload(report, path):
-    """Send the report as a GitHub issue: directly with the GitHub CLI when you're signed in to it, otherwise
-    through a prefilled draft in your browser (pasted from the clipboard when it's too long for a link)."""
-    body = '### Benchmark results\n\n```json\n' + json.dumps(report, separators=(',', ':')) + '\n```\n\nI reviewed this report and release these measurements under CC0 1.0.\n'
-    title = 'Benchmark measurements'
-    if shutil.which('gh') and subprocess.run(['gh', 'auth', 'status'], capture_output=True, timeout=20).returncode == 0:
-        with tempfile.NamedTemporaryFile('w', suffix='.md', delete=False) as f:
-            f.write(body); body_file = f.name
-        try:
-            done = subprocess.run(['gh', 'issue', 'create', '--repo', REPO, '--title', title, '--body-file', body_file], capture_output=True, text=True, timeout=60)
-        finally:
-            os.unlink(body_file)
-        if done.returncode == 0:
-            print(green('Uploaded: ') + done.stdout.strip().splitlines()[-1]); return
-        print(yellow('GitHub CLI could not create the issue; opening your browser instead.'))
-    url = ISSUES + '?' + urllib.parse.urlencode({'title': title, 'body': body})
-    if len(url) > URL_SAFE:
-        copied = copy_to_clipboard(body)
-        url = ISSUES + '?' + urllib.parse.urlencode({'title': title, 'body': 'Paste your benchmark report here (it was copied to your clipboard).' if copied else f'Paste the contents of {path} here.'})
-        print('Your report is too long for a link, so ' + ('it is on your clipboard: paste it into the issue that opens.' if copied else f'paste the contents of {path} into the issue that opens.'))
-    print('Read it in your browser and press Submit; nothing is sent until you do.')
+def issue_text(report, names):
+    """The issue as people read it: a results table, the machine and method, then the full report folded away."""
+    hw, p = report.get('hardware', {}), report.get('protocol', {})
+    med = lambda r, k: statistics.median([x[k] for x in r['samples'] if x.get(k) is not None]) if any(x.get(k) is not None for x in r['samples']) else None
+    num = lambda v, unit='': '—' if v is None else f'{v:.1f}{unit}' if v < 100 else f'{v:.0f}{unit}'
+    rows = ['| Model | Runtime | Quantisation | Tokens/s | Prefill tokens/s | First token |', '|---|---|---|--:|--:|--:|']
+    for r in report['results']:
+        runtime = ' '.join(x for x in (ENGINE_NAMES.get(r['engine'], r['engine']), r.get('engine_version')) if x)
+        rows.append(f'| {names.get(r["model"], r["model"])} | {runtime} | {r.get("quant") or "—"} | {num(med(r, "gen_tok_s") or med(r, "e2e_tok_s"))} '
+                    f'| {num(med(r, "prompt_tok_s"))} | {num(med(r, "ttft_s"), " s")} |')
+    os_name = {'Darwin': 'macOS', 'Linux': 'Linux', 'Windows': 'Windows'}.get(hw.get('os'), hw.get('os') or '')
+    machine = ' · '.join(x for x in (hw.get('chip'), hw.get('ram_gb') and f'{hw["ram_gb"]} GB RAM',
+                                     hw.get('gpu') and f'{hw["gpu"]} ({hw.get("vram_gb")} GB)', os_name) if x)
+    how = (f'{p.get("runs")} measured runs after {p.get("warmups")} warm-up, up to {p.get("max_output_tokens")} tokens each, '
+           f'one at a time in a shuffled order with random pauses (seed {p.get("order_seed")}) · bench.py {report.get("script_version")}')
+    head = '\n'.join(['### Results', '', *rows, '', f'**Machine:** {machine}  ', f'**Method:** {how}', '', '### Full report', ''])
+    full = '\n'.join(['<details><summary>The exact report bench.py made (for the maintainers)</summary>', '', '```json', json.dumps(report, indent=2), '```', '', '</details>'])
+    tail = '\n\nI release these measurements under CC0 1.0.\n'
+    n = len(report['results'])
+    return f'Bench results: {machine_name(hw)} ({n} test{"s" if n != 1 else ""})', head, full, tail
+
+
+ENGINE_NAMES = {'ollama': 'Ollama', 'llama.cpp': 'llama.cpp', 'mlx-lm': 'MLX', 'lm-studio': 'LM Studio', 'openai-compatible': 'OpenAI-compatible server',
+                'claude-code': 'Claude Code', 'codex-cli': 'Codex', 'gemini-cli': 'Gemini CLI'}
+
+
+def machine_name(hw):
+    """The machine as people name it: 'Mac M2 Pro, 16 GB', 'GeForce GTX 1060 6 GB, 32 GB RAM', or the CPU."""
+    ram = f'{hw["ram_gb"]} GB' if hw.get('ram_gb') else ''
+    chip = re.sub(r'\s*\(R\)|\s*\(TM\)|\s+CPU\b|\s*@.*$|\s+\d+-Core Processor$', '', hw.get('chip') or '').strip()
+    if hw.get('gpu'):
+        gpu = re.sub(r'^NVIDIA\s+|^AMD\s+', '', hw['gpu'])
+        if hw.get('vram_gb') and not re.search(r'\d+\s*GB', gpu, re.I): gpu += f' {hw["vram_gb"]} GB'
+        return gpu + (f', {ram} RAM' if ram else '')
+    if hw.get('os') == 'Darwin' and chip.startswith('Apple '):
+        return f'Mac {chip[6:]}' + (f', {ram}' if ram else '')
+    return ', '.join(x for x in (chip or 'my machine', ram and f'{ram} RAM') if x)
+
+
+def open_upload(report, path, names):
+    """Open a GitHub issue in your browser with everything a link can carry; put the rest on your clipboard.
+    You read it and press Submit there: nothing is sent from here."""
+    title, head, full, tail = issue_text(report, names)
+    link = lambda body: ISSUES + '?' + urllib.parse.urlencode({'title': title, 'body': body})
+    url, paste = link(head + full + tail), None
+    if len(url) > URL_SAFE:  # the table goes in the link, the full report on the clipboard
+        url, paste = link(head + '<!-- Paste the full report here: bench.py copied it to your clipboard. -->' + tail), full
+        if len(url) > URL_SAFE:  # too many results for even the table: everything on the clipboard
+            url, paste = link('<!-- Paste your results here: bench.py copied them to your clipboard. -->'), head + full + tail
+    copied = paste is not None and copy_to_clipboard(paste)
+    print('Opening GitHub with your results filled in.')
     if not webbrowser.open(url): print('Open this link:\n' + url)
+    if paste is not None:
+        if copied:
+            print(yellow('Part of the report is too long for a link and is on your clipboard: paste it where the issue says (Cmd+V or Ctrl+V).'))
+        else:
+            print(yellow(f'Part of the report is too long for a link: paste the contents of {path} where the issue says.'))
+    if yes('Check it on GitHub and press Submit. Did you submit it', default=True):
+        print(green('Thanks! It will appear on whatmodel.sh once it has been checked.'))
+    else:
+        print('No problem. Upload it any time with:\n' + upload_later(path))
 
 
 def upload_later(path):
@@ -1458,7 +1496,7 @@ def share(jobs, tokens, runs, warmups, seed, hw, catalogue=None):
     with os.fdopen(fd, 'w') as f: json.dump(report, f, indent=2)
     shown = str(path).replace(str(Path.home()), '~')
     if yes('Upload these results', default=True):
-        open_upload(report, shown)
+        open_upload(report, shown, names)
     else:
         print(f'Not uploaded. Your results are saved in {shown}. Upload them any time with:\n' + upload_later(shown))
 
@@ -1471,8 +1509,7 @@ def upload_saved(path):
         assert report.get('schema') == 'whatmodel-bench-v3' and report.get('results')
     except (OSError, ValueError, AssertionError):
         print(f'{path} is not a saved whatmodel bench report.'); return 1
-    print(json.dumps(report, indent=2))
-    open_upload(report, path)
+    open_upload(report, path, {m['id']: m['name'] for m in load_catalogue()})
     return 0
 
 

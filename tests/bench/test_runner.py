@@ -257,18 +257,23 @@ class RunnerTests(unittest.TestCase):
         self.assertEqual(cmds[0],['/bin/sh','-c','uv tool install mlx-lm'])
         self.assertEqual(cmds[1][:3],['mlx_lm.generate','--model','o/M-4bit'])
 
-    def test_upload_uses_the_github_cli_or_the_clipboard_for_long_reports(self):
-        report={'schema':'whatmodel-bench-v3','results':[{'model':'m','samples':[{'gen_tok_s':1.0}]*20}]*8}
-        gh=lambda *a,**k: unittest.mock.Mock(returncode=0,stdout='https://github.com/x/y/issues/9\n')
-        with patch.object(bench.shutil,'which',side_effect=lambda n,*a,**k:'/bin/'+n), patch.object(bench.subprocess,'run',side_effect=gh) as run, \
-             patch.object(bench.webbrowser,'open') as browser, contextlib.redirect_stdout(io.StringIO()) as out:
-            bench.open_upload(report,'~/r.json')
-        self.assertIn(['gh','issue','create','--repo',bench.REPO],[c.args[0][:5] for c in run.call_args_list])
-        self.assertIn('issues/9',out.getvalue()); browser.assert_not_called()
+    def test_upload_opens_a_readable_issue_and_puts_the_rest_on_the_clipboard(self):
+        sample={'gen_tok_s':25.4,'prompt_tok_s':154.0,'ttft_s':0.6}
+        report={'schema':'whatmodel-bench-v3','script_version':'3.2.0','protocol':{'runs':3,'warmups':1,'max_output_tokens':256,'order_seed':7},
+                'hardware':{'os':'Darwin','arch':'arm64','chip':'Apple M2 Pro','ram_gb':16},
+                'results':[{'model':'qwen3-8b','engine':'ollama','engine_version':'0.30.8','quant':'Q4_K_M','samples':[sample]*3}]*8}
+        title,head,full,tail=bench.issue_text(report,{'qwen3-8b':'Qwen3 8B'})
+        self.assertEqual(title,'Bench results: Mac M2 Pro, 16 GB (8 tests)')
+        self.assertIn('| Qwen3 8B | Ollama 0.30.8 | Q4_K_M | 25.4 | 154 | 0.6 s |',head)
+        self.assertEqual(json.loads(full.split('```json')[1].split('```')[0]),report)  # the exact report, folded away
         with patch.object(bench,'copy_to_clipboard',return_value=True) as clip, patch.object(bench.webbrowser,'open',return_value=True) as browser, \
-             contextlib.redirect_stdout(io.StringIO()):
-            bench.open_upload(report,'~/r.json')  # gh looks uninstalled in tests
-        self.assertTrue(clip.called); self.assertLess(len(browser.call_args.args[0]),bench.URL_SAFE)
+             patch.object(bench,'yes',return_value=True) as confirm, contextlib.redirect_stdout(io.StringIO()):
+            bench.open_upload(report,'~/r.json',{'qwen3-8b':'Qwen3 8B'})
+        url=browser.call_args.args[0]
+        self.assertLess(len(url),bench.URL_SAFE); self.assertIn('Qwen3+8B',url)  # the table is in the link
+        self.assertIn('"schema"',clip.call_args.args[0])  # the full report is on the clipboard
+        self.assertTrue(confirm.called)  # and you confirm you submitted it
+        self.assertFalse(any('gh' in str(c) for c in clip.call_args_list))
 
     def test_declining_the_plan_runs_nothing(self):
         target=dict(kind='ollama',group='local',label='model',model='m',base=self.base,model_id='m')
@@ -298,6 +303,7 @@ class RunnerTests(unittest.TestCase):
             self.assertIn('Q4_K_M',report)  # quantisation is recorded
             self.assertEqual(saved.stat().st_mode & 0o777,0o600)
             self.assertIn('--upload',out.getvalue())  # how to upload it later
-            with patch.object(bench.webbrowser,'open',return_value=True) as browser, contextlib.redirect_stdout(io.StringIO()):
+            with patch.object(bench.webbrowser,'open',return_value=True) as browser, patch.object(bench,'yes',return_value=True), \
+                 patch.object(bench,'copy_to_clipboard',return_value=True), contextlib.redirect_stdout(io.StringIO()):
                 self.assertEqual(bench.upload_saved(str(saved)),0)
             self.assertIn('github.com',browser.call_args.args[0])

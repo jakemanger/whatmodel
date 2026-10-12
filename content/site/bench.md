@@ -28,7 +28,7 @@ curl -fsSL https://whatmodel.sh/bench.sh | sh -s -- --demo
 
 ## What's shared
 
-Model names, speeds, runtime versions, and your chip, RAM and OS. Never file paths, prompts, answers, keys or your computer's name. Results go to GitHub as an issue you can read first: directly through the GitHub CLI if you're signed in to it, otherwise as a draft in your browser that you submit yourself. They're released under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) and checked before they appear.
+Model names, speeds, runtime versions, and your chip, RAM and OS. Never file paths, prompts, answers, keys or your computer's name. Uploading opens a GitHub issue in your browser with your results filled in (anything too long for the link is put on your clipboard to paste), and you press Submit yourself. They're released under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) and checked before they appear.
 
 ---
 

@@ -32,7 +32,7 @@ curl -fsSL https://whatmodel.sh/bench.sh | sh -s -- --demo
 
 ## What's shared
 
-Model names, speeds, runtime versions, and your chip, RAM and OS. Never file paths, prompts, answers, keys or your computer's name. Results go to GitHub as an issue you can read first: directly through the GitHub CLI if you're signed in to it, otherwise as a draft in your browser that you submit yourself. They're released under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) and checked before they appear.
+Model names, speeds, runtime versions, and your chip, RAM and OS. Never file paths, prompts, answers, keys or your computer's name. Uploading opens a GitHub issue in your browser with your results filled in (anything too long for the link is put on your clipboard to paste), and you press Submit yourself. They're released under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) and checked before they appear.
 
 ---
 
@@ -56,7 +56,9 @@ Only what a ticked test needs, after you start the plan: a runtime's official in
 
 ### The report
 
-It records each result's whatmodel.sh model, runtime, version and quantisation, the per-run numbers, and the machine's OS family, architecture, chip, RAM and GPU. It's saved to `~/.whatmodel/` (readable only by you). To upload a saved report later:
+It records each result's whatmodel.sh model, runtime, version and quantisation, the per-run numbers, and the machine's OS family, architecture, chip, RAM and GPU. It's saved to `~/.whatmodel/` (readable only by you).
+
+Uploading opens a GitHub issue titled with your machine (for example "Bench results: Mac M2 Pro, 16 GB (6 tests)"): a results table, the machine and method, and the exact report folded away for the maintainers. A link can only carry so much, so a long report is copied to your clipboard to paste where the issue says. You read it and press Submit; nothing is sent from the script. To upload a saved report later:
 
 ```sh
 python3 bench.py --upload ~/.whatmodel/bench-YYYYMMDD-HHMMSS.json

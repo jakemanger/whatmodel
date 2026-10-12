@@ -16,7 +16,9 @@ Only what a ticked test needs, after you start the plan: a runtime's official in
 
 ### The report
 
-It records each result's whatmodel.sh model, runtime, version and quantisation, the per-run numbers, and the machine's OS family, architecture, chip, RAM and GPU. It's saved to `~/.whatmodel/` (readable only by you). To upload a saved report later:
+It records each result's whatmodel.sh model, runtime, version and quantisation, the per-run numbers, and the machine's OS family, architecture, chip, RAM and GPU. It's saved to `~/.whatmodel/` (readable only by you).
+
+Uploading opens a GitHub issue titled with your machine (for example "Bench results: Mac M2 Pro, 16 GB (6 tests)"): a results table, the machine and method, and the exact report folded away for the maintainers. A link can only carry so much, so a long report is copied to your clipboard to paste where the issue says. You read it and press Submit; nothing is sent from the script. To upload a saved report later:
 
 ```sh
 python3 bench.py --upload ~/.whatmodel/bench-YYYYMMDD-HHMMSS.json
