@@ -24,9 +24,9 @@ const hex64 = text("^[a-f0-9]{64}$", 64);
 const label = (maxLength: number) => text("^[A-Za-z0-9 ._()@+:,/-]*$", maxLength);
 
 // bench.py ENGINES, plus the agent CLIs it can time (HARNESSES).
-export const ENGINES = ["ollama", "openai-compatible", "llama.cpp", "mlx-lm", "claude-code", "codex-cli", "gemini-cli", "qwen", "opencode", "goose"] as const;
+export const ENGINES = ["ollama", "openai-compatible", "lm-studio", "llama.cpp", "mlx-lm", "claude-code", "codex-cli", "gemini-cli", "qwen", "opencode", "goose"] as const;
 // Engines that run the weights on the contributor's machine; only these can become local speeds.
-export const LOCAL_ENGINES: readonly string[] = ["ollama", "llama.cpp", "mlx-lm"];
+export const LOCAL_ENGINES: readonly string[] = ["ollama", "llama.cpp", "mlx-lm", "lm-studio"];
 
 const sample: Schema = {
   type: "object",

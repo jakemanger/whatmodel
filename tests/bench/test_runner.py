@@ -141,35 +141,6 @@ class RunnerTests(unittest.TestCase):
         pauses=[p for _,_,p in order]
         self.assertTrue(all(1.0<=p<=3.0 for p in pauses) and len(set(pauses))>1)
 
-    def test_results_are_matched_to_catalogue_names_with_confirmation(self):
-        catalogue=[dict(id='qwen3-0-6b',name='Qwen3 0.6B'),dict(id='qwen3-8b',name='Qwen3 8B'),dict(id='qwen3-8b-base',name='Qwen3 8B (base)'),
-                   dict(id='m',name='MLX one',local=dict(variants=[dict(cmd='mlx_lm.chat --model mlx-community/Qwen3-0.6B-4bit')]))]
-        self.assertEqual(bench.suggest_id(dict(kind='openai',model='qwen3-0.6b'),catalogue,'qwen3-0.6b'),'qwen3-0-6b')  # LM Studio's key
-        self.assertEqual(bench.suggest_id(dict(kind='mlx',model='mlx-community/Qwen3-0.6B-4bit'),catalogue,'mlx-community/Qwen3-0.6B-4bit'),'m')
-        other=[dict(id='qwen3-0-6b',name='Qwen3 0.6B')]  # a different MLX build of the same model is listed
-        self.assertEqual(bench.suggest_id(dict(kind='mlx',model='mlx-community/Qwen3-0.6B-4bit'),other,'mlx-community/Qwen3-0.6B-4bit'),'qwen3-0-6b')
-        self.assertEqual([m['id'] for m in bench.search_catalogue('qwen3 8b',catalogue)],['qwen3-8b','qwen3-8b-base'])
-        out=io.StringIO()
-        with contextlib.redirect_stdout(out):
-            with patch.object(bench,'ask',side_effect=['']) as asked:
-                self.assertEqual(bench.pick_model('x',catalogue,'qwen3-0-6b'),'qwen3-0-6b')
-                self.assertIn('Qwen3 0.6B',asked.call_args.args[0])  # the question names the model, not an id
-            with patch.object(bench,'ask',side_effect=['-']): self.assertIsNone(bench.pick_model('x',catalogue,'qwen3-0-6b'))
-            with patch.object(bench,'ask',side_effect=['qwen3 8b','2','']): self.assertEqual(bench.pick_model('x',catalogue,None),'qwen3-8b-base')
-            with patch.object(bench,'ask',side_effect=['']): self.assertIsNone(bench.pick_model('x',catalogue,None))
-        self.assertIn('2. Qwen3 8B (base)',out.getvalue())
-
-    def test_installs_run_only_after_a_yes(self):
-        missing=[dict(name='llama.cpp',why='',cmd=bench.INSTALL['llama.cpp'],url=None),dict(name='LM Studio',why='',cmd=None,url='https://lmstudio.ai/download')]
-        for answer,expected in ((False,[]),(True,[['/bin/sh','-c',bench.INSTALL['llama.cpp']]])):
-            with patch.object(bench,'ask',return_value='1 2'), patch.object(bench,'yes',return_value=answer), \
-                 patch.object(bench.subprocess,'run') as run, patch.object(bench.webbrowser,'open') as browser, \
-                 contextlib.redirect_stdout(io.StringIO()):
-                run.return_value.returncode=0
-                bench.offer_installs(missing)
-                self.assertEqual([c.args[0] for c in run.call_args_list],expected)
-                self.assertEqual(browser.call_count,1 if answer else 0)  # a download page opens only after a yes too
-
     def test_mlx_reads_the_benchmark_averages(self):
         out='Running warmup..\nTrial 1:  prompt_tps=1504.990, generation_tps=214.803, peak_memory=0.484\nAverages: prompt_tps=1647.454, generation_tps=211.096, peak_memory=0.515\n'
         with patch.object(bench,'run_process',return_value=(0,out)) as proc:
@@ -213,15 +184,6 @@ class RunnerTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             bench.public_report([job],32,1,1,5,{},{id(t):'https://private.example'})
 
-    def test_catalogue_ids_come_from_recorded_commands_and_model_names(self):
-        catalogue=[{'id':'qwen-2-5-3b','local':{'variants':[{'cmd':'ollama run qwen2.5:3b'}]}},
-                   {'id':'glm-5-3','local':{'variants':[{'cmd':'llama-server -hf unsloth/GLM-5.3-GGUF:UD-Q4_K_XL'}]}},
-                   {'id':'claude-opus-5-5'}]
-        self.assertEqual(bench.suggest_id(dict(kind='ollama',model='qwen2.5:3b'),catalogue),'qwen-2-5-3b')
-        self.assertEqual(bench.suggest_id(dict(kind='llama-bench',path='/x/unsloth_GLM-5.3-GGUF_UD-Q4_K_XL-00001-of-00009.gguf'),catalogue),'glm-5-3')
-        self.assertEqual(bench.suggest_id(dict(kind='claude'),catalogue,'claude-opus-5-5'),'claude-opus-5-5')
-        self.assertIsNone(bench.suggest_id(dict(kind='ollama',model='unknown:1b'),catalogue))
-
     def test_urls_and_launcher_hash(self):
         for url in ['http://remote.example/v1','https://user:secret@example.com','file:///tmp/file','https://example.org?key=secret']:
             with self.assertRaises(ValueError): bench.endpoint(url)
@@ -230,37 +192,74 @@ class RunnerTests(unittest.TestCase):
         digest=hashlib.sha256((ROOT/'bench.py').read_bytes()).hexdigest()
         self.assertIn("expected = '"+digest+"'",(ROOT/'bench.sh').read_text())
 
+    def test_tests_know_their_model_and_quant_without_asking(self):
+        catalogue=[{'id':'qwen-2-5-3b','name':'Qwen2.5 3B','variants':[{'rt':'ollama','ref':'qwen2.5:3b','quant':'Q4_K_M','gb':1.9}]},
+                   {'id':'glm-5-3','name':'GLM-5.3','variants':[{'rt':'gguf','ref':'unsloth/GLM-5.3-GGUF','quant':'UD-Q4_K_XL','gb':400}]},
+                   {'id':'qwen3-0-6b','name':'Qwen3 0.6B','variants':[]},
+                   {'id':'claude-opus-5-5','name':'Claude Opus 5.5','variants':[]}]
+        mid=lambda t:(bench.match_model(t,catalogue)[0] or {}).get('id')
+        self.assertEqual(mid(dict(kind='ollama',model='qwen2.5:3b')),'qwen-2-5-3b')
+        self.assertEqual(mid(dict(kind='llama-bench',path='/x/unsloth_GLM-5.3-GGUF_UD-Q4_K_XL-00001-of-00009.gguf')),'glm-5-3')
+        self.assertEqual(mid(dict(kind='mlx',model='mlx-community/Qwen3-0.6B-4bit')),'qwen3-0-6b')  # another build of a listed model
+        self.assertEqual(mid(dict(kind='llama-bench',path='/x/Qwen3-0.6B-Q4_K_M.gguf')),'qwen3-0-6b')
+        self.assertEqual(mid(dict(kind='agent',measured_model='claude-opus-5-5-20260901')),'claude-opus-5-5')  # what the CLI reported
+        self.assertIsNone(mid(dict(kind='ollama',model='unknown:1b')))
+        self.assertEqual(bench.quant_of_file('Qwen3-0.6B-Q4_K_M.gguf'),'Q4_K_M')
+        self.assertEqual(bench.quant_of_file('GLM-5.3-UD-Q2_K_XL-00001-of-00003.gguf'),'UD-Q2_K_XL')
+
+    def test_models_that_fit_are_offered_with_their_download_and_install_disclosed(self):
+        catalogue=[{'id':'big','name':'Big','score':90,'n':20,'variants':[{'rt':'gguf','ref':'o/Big-GGUF','quant':'Q4_K_M','gb':200}]},
+                   {'id':'small','name':'Small','score':60,'n':20,'variants':[{'rt':'gguf','ref':'o/Small-GGUF','quant':'Q4_K_M','gb':2.5},{'rt':'gguf','ref':'o/Small-GGUF','quant':'Q8_0','gb':4.8}]}]
+        hw=dict(os='Linux',ram_gb=16)
+        with patch.object(bench,'bench_command',return_value=None), patch.object(bench.platform,'system',return_value='Linux'):
+            sections=dict(bench.build_choices({'hardware':Probe(hardware=hw)},catalogue,hw))
+            fits=sections['Fits this machine · downloads first']
+            self.assertEqual([t['model_id'] for t in fits],['small'])  # 200 GB doesn't fit 16 GB
+            self.assertEqual(fits[0]['quant'],'Q4_K_M')
+            out=io.StringIO()
+            with contextlib.redirect_stdout(out): bench.show_plan(fits,3,1,256)
+        plan=out.getvalue()
+        self.assertIn(bench.INSTALL['llama.cpp'],plan)  # the exact install command, before anything runs
+        self.assertIn('downloads 2.5 GB first from huggingface.co/o/Small-GGUF',plan)
+        self.assertIn('-p 512 -n 256',plan)
+
+    def test_installs_and_downloads_happen_only_in_prepare(self):
+        t=dict(kind='mlx',group='local',label='m',model='o/M-4bit',path='o/M-4bit',prep=[('install','MLX','uv tool install mlx-lm'),('download','mlx','o/M-4bit','4bit',0.4)])
+        with patch.object(bench.shutil,'which',return_value=None), patch.object(bench.subprocess,'run') as run, contextlib.redirect_stdout(io.StringIO()):
+            run.return_value.returncode=0
+            self.assertEqual(bench.prepare([t]),[t])
+        cmds=[c.args[0] for c in run.call_args_list]
+        self.assertEqual(cmds[0],['/bin/sh','-c','uv tool install mlx-lm'])
+        self.assertEqual(cmds[1][:3],['mlx_lm.generate','--model','o/M-4bit'])
+
     def test_declining_the_plan_runs_nothing(self):
-        target=dict(kind='ollama',group='local',label='model',model='m',base=self.base)
+        target=dict(kind='ollama',group='local',label='model',model='m',base=self.base,model_id='m')
         with patch.object(bench.sys,'argv',['bench']), patch.object(bench.sys.stdin,'isatty',return_value=True), \
              patch.object(bench,'discover',return_value=found([target])), patch.object(bench,'choose',return_value=[target]), \
-             patch.object(bench,'ask',return_value=''), patch.object(bench,'yes',return_value=False), patch.object(bench,'run_all') as run, \
-             patch.object(bench,'offer_installs',return_value=False), patch.object(bench,'offer_test_models',return_value=False), \
+             patch.object(bench,'load_catalogue',return_value=[]), patch.object(bench,'yes',return_value=False), \
+             patch.object(bench,'prepare') as prep, patch.object(bench,'run_all') as run, \
              patch.object(bench.webbrowser,'open') as browser, contextlib.redirect_stdout(io.StringIO()):
             self.assertEqual(bench.main(),0)
-            run.assert_not_called()
-            browser.assert_not_called()
+            prep.assert_not_called(); run.assert_not_called(); browser.assert_not_called()
 
-    def test_reviewed_report_can_stay_local_without_opening_browser(self):
-        target=dict(kind='ollama',group='local',label='private alias',model='m',base=self.base)
+    def test_results_are_saved_and_can_be_uploaded_later(self):
+        target=dict(kind='ollama',group='local',label='private alias',model='m',base=self.base,model_id='public-model',quant='Q4_K_M')
         with tempfile.TemporaryDirectory() as directory:
-            destination=Path(directory)/'report.json'
-            def create(**kwargs):
-                return os.open(destination,os.O_CREAT|os.O_WRONLY,0o600),str(destination)
+            out=io.StringIO()
             with patch.object(bench.sys,'argv',['bench','--runs','1']), patch.object(bench.sys.stdin,'isatty',return_value=True), \
                  patch.object(bench,'discover',return_value=found([target])), patch.object(bench,'choose',return_value=[target]), \
-                 patch.object(bench,'ask',side_effect=['public model','']), patch.object(bench,'yes',side_effect=[True,True,False]), \
-                 patch.object(bench,'load_catalogue',return_value=[dict(id='public-model',name='Public Model'),dict(id='other',name='Other')]), \
-                 patch.object(bench,'offer_installs',return_value=False), patch.object(bench,'offer_test_models',return_value=False), \
-                 patch.object(bench.tempfile,'mkstemp',side_effect=create), patch.object(bench.webbrowser,'open') as browser, \
-                 contextlib.redirect_stdout(io.StringIO()):
+                 patch.object(bench,'yes',side_effect=[True,False]), patch.object(bench,'REPORTS',Path(directory)), \
+                 patch.object(bench,'load_catalogue',return_value=[dict(id='public-model',name='Public Model',variants=[])]), \
+                 patch.object(bench.webbrowser,'open') as browser, contextlib.redirect_stdout(out):
                 self.assertEqual(bench.main(),0)
                 browser.assert_not_called()
-            report=destination.read_text()
+            saved=next(Path(directory).glob('bench-*.json'))
+            report=saved.read_text()
             self.assertNotIn('private alias',report)
             self.assertIn('public-model',report)
-            self.assertEqual(destination.stat().st_mode & 0o777,0o600)
-
-
-if __name__=='__main__':
-    unittest.main()
+            self.assertIn('Q4_K_M',report)  # quantisation is recorded
+            self.assertEqual(saved.stat().st_mode & 0o777,0o600)
+            self.assertIn('--upload',out.getvalue())  # how to upload it later
+            with patch.object(bench.webbrowser,'open',return_value=True) as browser, contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(bench.upload_saved(str(saved)),0)
+            self.assertIn('github.com',browser.call_args.args[0])

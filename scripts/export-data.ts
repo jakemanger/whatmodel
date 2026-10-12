@@ -40,7 +40,9 @@ const write = (file: string, text: string) => {
   return { file, bytes: Buffer.byteLength(text), sha256: createHash("sha256").update(text).digest("hex") };
 };
 const csv = Object.entries(csvTables(data.bench));
+const benchModels = readFileSync(new URL("../pages/bench-models.json", import.meta.url), "utf8"); // npm run pages
 const manifest = [
+  write("bench-models.json", benchModels),
   ...exported.map((name) => write(`${name}.json`, JSON.stringify(clean(data[name]), null, 2) + "\n")),
   ...csv.map(([file, text]) => write(file, text)),
 ];

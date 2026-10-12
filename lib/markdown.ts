@@ -11,6 +11,7 @@ import type { Category, Model } from "./types.ts";
 import { benchName, boardView, methodView, modelView, pageModels, resultLabel, type BoardView, type ModelView } from "./views.ts";
 import { strengths, type Strengths, type TestRow } from "./strengths.ts";
 import { RUNTIMES, primary, stepsFor } from "./runtimes.ts";
+import { benchCatalogue } from "./bench-catalogue.ts";
 import type { Variant } from "./types.ts";
 
 const SITE = "https://whatmodel.sh";
@@ -385,6 +386,8 @@ export function renderPages(about: string): Map<string, string> {
     pages.set(files.board(c), `${generatedNote}\n\n${md}${c === "llm" ? `\n${about}` : ""}`);
   }
   pages.set(files.method, `${generatedNote}\n\n${methodMarkdown()}`);
+  // The bench script's model list (one compact line per model, so diffs stay readable).
+  pages.set("pages/bench-models.json", `[\n${benchCatalogue().map((m) => JSON.stringify(m)).join(",\n")}\n]\n`);
   for (const x of pageModels()) pages.set(files.model(x.id), `${generatedNote}\n\n${modelMarkdown(modelView(x.id)!)}`);
   return pages;
 }

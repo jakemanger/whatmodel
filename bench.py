@@ -22,7 +22,7 @@ import urllib.request
 import webbrowser
 from pathlib import Path
 
-VERSION = '3.1.0'
+VERSION = '3.2.0'
 PROMPT = ('Write a practical guide to starting a vegetable garden. Explain soil preparation, '
           'watering, planting easy vegetables and managing pests. Use short clear sections. '
           'Do not use tools, files, browsing, or external information. Aim for 300 words.')
@@ -31,7 +31,7 @@ AGENT_PROMPT = ('Without using any tools, files or browsing, write about 120 wor
                 'advice on starting a small vegetable garden. Plain text only.')
 LIMIT = 4 * 1024 * 1024
 ISSUES = 'https://github.com/jakemanger/whatmodel/issues/new'
-CATALOGUE_URL = 'https://whatmodel.sh/data/models.json'
+CATALOGUE_URL = 'https://whatmodel.sh/data/bench-models.json'
 CALL_TIMEOUT = 180
 # Per-tool caps for subscription and API tools: a run stops early once either is reached.
 AGENT_TOKEN_CAP = 4000
@@ -390,7 +390,7 @@ def probe_llamacpp(p):
     if bench:
         version = output([*bench, '--version'])
         for path in files[:200]:
-            p.targets.append(target('llama-bench', 'local', f'llama.cpp · {clean(path.name, 70)}', path=str(path), bench=bench,
+            p.targets.append(target('llama-bench', 'local', f'llama.cpp · {clean(path.name, 70)}', path=str(path), bench=bench, quant=quant_of_file(path.name),
                                     model=path.stem, size=path.stat().st_size, detail=gib(path.stat().st_size),
                                     engine_version=clean(version.splitlines()[0] if version else '', 40) or None))
     if not p.extra['installed']:
@@ -425,7 +425,8 @@ def mlx_models():
             return
         if quantized or 'mlx' in repo.lower():
             seen.add(repo)
-            found.append((repo, folder, sum(w.stat().st_size for w in weights if w.is_file())))
+            bits = (json.loads(cfg.read_text()).get('quantization') or {}).get('bits')
+            found.append((repo, folder, sum(w.stat().st_size for w in weights if w.is_file()), f'{bits}bit' if bits else None))
     for hub in hub_dirs():
         for d in sorted(hub.glob('models--*'))[:400]:
             snaps = sorted((d / 'snapshots').glob('*'), key=lambda x: x.stat().st_mtime, reverse=True)
@@ -442,8 +443,8 @@ def probe_mlx(p):
     p.extra['installed'] = bool(shutil.which('mlx_lm.benchmark'))
     models = mlx_models()
     if p.extra['installed']:
-        for repo, folder, size in models[:200]:
-            p.targets.append(target('mlx', 'local', f'MLX · {clean(repo, 70)}', path=str(folder), model=repo, size=size, detail=gib(size)))
+        for repo, folder, size, bits in models[:200]:
+            p.targets.append(target('mlx', 'local', f'MLX · {clean(repo, 70)}', path=str(folder), model=repo, size=size, detail=gib(size), quant=bits))
     if not p.extra['installed']:
         p.state, p.detail = ('note', f'mlx-lm not installed · {len(models)} MLX models found') if models else ('missing', 'not installed')
     else:
@@ -483,7 +484,8 @@ def probe_servers(p):
         for m in models[:200]:
             mid = m.get('id')
             if isinstance(mid, str) and mid and 'embed' not in mid.lower():  # embedding models can't chat
-                p.targets.append(target('openai', 'local', f'{label} :{port} · {clean(mid, 60)}', model=mid, base=base, server=label))
+                kind = 'lmstudio' if label == 'LM Studio' else 'openai'
+                p.targets.append(target(kind, 'local', f'{label} :{port} · {clean(mid, 60)}', model=mid, base=base, server=label))
     p.detail = (f'{len(p.targets)} model{"s" if len(p.targets) != 1 else ""} served on this machine' if p.targets
                 else 'no local servers on the usual ports')
 
@@ -507,8 +509,9 @@ def probe_claude(p):
     version = output(['claude', '--version']).split(' ')[0]
     api = any(os.environ.get(k) for k in ('ANTHROPIC_API_KEY', 'ANTHROPIC_AUTH_TOKEN', 'CLAUDE_CODE_USE_BEDROCK', 'CLAUDE_CODE_USE_VERTEX'))
     group = 'api' if api else 'subscription'
-    p.targets.append(target('claude', group, 'Claude Code · your default model', engine_version=clean(version, 40),
-                            detail='API key in your environment: bills your account' if api else 'your Claude subscription · capped'))
+    for flag, family in (('opus', 'Opus'), ('sonnet', 'Sonnet'), ('haiku', 'Haiku')):  # Claude Code's own model aliases
+        p.targets.append(target('claude', group, f'Claude {family} (latest) · Claude Code', model_flag=flag, engine_version=clean(version, 40),
+                                detail='API key in your environment: bills your account' if api else 'your Claude subscription · capped'))
     p.detail = f'v{version} · ' + ('API key billing' if api else 'subscription login')
 
 
@@ -615,54 +618,6 @@ def has(found, key):
     return bool(key in found and found[key].extra.get('installed'))
 
 
-def recommendations(found):
-    """Tools worth adding, each with its official install command (or download page) for this OS."""
-    mac, linux = platform.system() == 'Darwin', platform.system() == 'Linux'
-    npm = shutil.which('npm')
-    out = []
-    def add(name, why, cmd=None, url=None):
-        out.append({'name': name, 'why': why, 'cmd': cmd, 'url': url})
-    if not has(found, 'llamacpp') and (mac or linux):
-        add('llama.cpp', 'fastest local engine for GGUF models', INSTALL['llama.cpp'])
-    if not has(found, 'ollama'):
-        if linux: add('Ollama', 'easiest way to run local models', INSTALL['Ollama'])
-        elif mac: add('Ollama', 'easiest way to run local models', url=DOWNLOAD_PAGES['Ollama'])
-    if apple_silicon() and 'mlx' in found and not has(found, 'mlx'):
-        add('MLX', "Apple's own engine, often the fastest on a Mac", INSTALL['MLX'] if shutil.which('uv') else f"{UV_INSTALL} && ~/.local/bin/uv tool install mlx-lm")
-    if 'lmstudio' in found and not has(found, 'lmstudio') and (mac or linux):
-        add('LM Studio', 'desktop app for GGUF and MLX models', url=DOWNLOAD_PAGES['LM Studio'])
-    if not shutil.which('claude'): add('Claude Code', 'uses your Claude subscription', INSTALL['Claude Code'])
-    if not shutil.which('codex'): add('Codex CLI', 'uses your ChatGPT plan', INSTALL['Codex CLI'] if npm else None, None if npm else 'https://nodejs.org')
-    if not shutil.which('gemini'): add('Gemini CLI', 'free with a Google account', INSTALL['Gemini CLI'] if npm else None, None if npm else 'https://nodejs.org')
-    if not shutil.which('kimi'): add('Kimi Code', 'coding agent; no headless mode yet, so it can be found but not timed', INSTALL['Kimi Code'])
-    return out
-
-
-def offer_installs(missing):
-    """Install picked tools with their official commands, one at a time, each only after a yes."""
-    print('\n' + bold('Worth trying') + dim('  (pick any to install now; each command is shown before it runs)'))
-    for i, m in enumerate(missing, 1):
-        how = cyan(m['cmd']) if m['cmd'] else dim(f'download page: {m["url"]}' + (' (needs Node.js for npm)' if m['url'] == 'https://nodejs.org' else ''))
-        print(f'  {i:>2}. {m["name"]:<12} {how}  {dim(m["why"])}')
-    picks = ask('Numbers to install, separated by spaces (Enter to skip)').split()
-    done = False
-    for n in picks:
-        if not n.isdigit() or not 1 <= int(n) <= len(missing):
-            continue
-        m = missing[int(n) - 1]
-        if m['cmd']:
-            print(f'\n  {bold(m["name"])} will run:\n    {cyan(m["cmd"])}')
-            if yes('  Run it now'):
-                code = subprocess.run(['/bin/sh', '-c', m['cmd']]).returncode  # in your terminal, so installers can ask you things
-                print('  ' + (green('installed') if code == 0 else red(f'the installer stopped with exit code {code}')))
-                done |= code == 0
-        elif m['url']:
-            print(f'\n  {bold(m["name"])} installs from its download page: {m["url"]}')
-            if yes('  Open it in your browser'):
-                webbrowser.open(m['url']); ask('  Press Enter once it is installed'); done = True
-    return done
-
-
 def download(url, dest, size):
     """Download a file with a progress line; keep it only if it has the expected size."""
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -673,101 +628,62 @@ def download(url, dest, size):
             chunk = r.read(1 << 20)
             if not chunk: break
             f.write(chunk); got += len(chunk)
-            sys.stdout.write(f'\r  {got / 1e9:.2f} / {size / 1e9:.2f} GB'); sys.stdout.flush()
+            sys.stdout.write(f'\r    {got / 1e9:.2f} / {size / 1e9:.2f} GB'); sys.stdout.flush()
     print()
     if part.stat().st_size != size:
         part.unlink(); raise ValueError('download was incomplete')
     part.rename(dest)
 
 
-def offer_test_models(found):
-    """For a runtime with nothing to test yet, offer one small model (Qwen3 0.6B)."""
-    offers = []
-    if has(found, 'llamacpp') and not found['llamacpp'].targets and bench_command():
-        g_repo, g_sha, g_name, g_size = TEST_GGUF
-        folder = Path(os.environ.get('LLAMA_CACHE') or (Path.home() / ('Library/Caches/llama.cpp' if platform.system() == 'Darwin' else '.cache/llama.cpp')))
-        offers.append(('llama.cpp', f'{g_name}, {g_size / 1e9:.1f} GB from huggingface.co/{g_repo}',
-                       lambda: download(f'https://huggingface.co/{g_repo}/resolve/{g_sha}/{g_name}', folder / g_name, g_size)))
-    if 'ollama' in found and found['ollama'].state == 'found' and not found['ollama'].targets:
-        tag, o_gb = TEST_OLLAMA
-        offers.append(('Ollama', f'{tag}, {o_gb} GB', lambda: subprocess.run(['ollama', 'pull', tag], check=True)))
-    if has(found, 'mlx') and not found['mlx'].targets:
-        m_repo, m_gb = TEST_MLX
-        offers.append(('MLX', f'{m_repo}, {m_gb} GB',
-                       lambda: subprocess.run(['mlx_lm.generate', '--model', m_repo, '--prompt', 'Hi', '--max-tokens', '1'], check=True, stdout=subprocess.DEVNULL)))
-    lms_models = [t for t in (found['servers'].targets if 'servers' in found else []) if t.get('server') == 'LM Studio']
-    if has(found, 'lmstudio') and not lms_models and not found['lmstudio'].extra.get('declined'):
-        l_repo, _, l_name, l_size = TEST_GGUF
-        offers.append(('LM Studio', f'{l_name}, {l_size / 1e9:.1f} GB',
-                       lambda: subprocess.run(['lms', 'get', f'https://huggingface.co/{l_repo}@Q4_K_M', '-y'], check=True)))
-    got = False
-    for name, what, fetch in offers:
-        if yes(f'\n{name} has nothing to test yet. Download a small test model ({what})'):
-            try:
-                fetch(); got = True; print('  ' + green('ready'))
-            except Exception as e:
-                print('  ' + red(f'download failed: {clean(e, 100)}'))
-    return got
+# ---------------------------------------------------------------- what to test: whatmodel.sh models this machine can run
 
-
-# ---------------------------------------------------------------- catalogue mapping
-
-def load_catalogue():
-    local = Path(__file__).resolve().parent / 'data' / 'models.json'
-    try:
-        if local.is_file():
-            return json.loads(local.read_text())
-        with urllib.request.urlopen(CATALOGUE_URL, timeout=5) as r:
-            return json.loads(r.read(64 * 1024 * 1024))
-    except Exception:
-        return []
+RUNTIME = {'gguf': 'llama.cpp', 'mlx': 'MLX', 'ollama': 'Ollama'}
 
 
 def norm(s):
     return re.sub(r'[^a-z0-9]+', '', str(s).lower())
 
 
-def suggest_id(t, catalogue, model_name=None):
-    """Best guess at the public catalogue id for what was measured; the user confirms it."""
-    ids = {m.get('id') for m in catalogue}
-    if t['kind'] == 'ollama':
-        tag = t['model'] if ':' in t['model'] else t['model'] + ':latest'
-        for m in catalogue:
-            for v in (m.get('local') or {}).get('variants', []):
-                cmd = v.get('cmd', '')
-                if cmd.startswith('ollama run ') and cmd.split()[2] in (t['model'], tag, tag.replace(':latest', '')):
-                    return m['id']
-    if t['kind'] == 'llama-bench':
-        name = norm(Path(t['path']).name)
-        best = None
-        for m in catalogue:
-            for v in (m.get('local') or {}).get('variants', []):
-                hf = re.search(r'-hf\s+([\w.-]+)/([\w.-]+?)(?::([\w.-]+))?(\s|$)', v.get('cmd', ''))
-                if hf and norm(hf.group(2).replace('-GGUF', '')) in name and (not hf.group(3) or norm(hf.group(3)) in name):
-                    best = best or m['id']
-        if best:
-            return best
-    if t['kind'] == 'mlx':
-        for m in catalogue:
-            for v in (m.get('local') or {}).get('variants', []):
-                mlx = re.search(r'mlx_lm[._](?:chat|generate|server)\b.*?--model\s+([\w.-]+/[\w.-]+)', v.get('cmd', ''))
-                if mlx and mlx.group(1).lower() == t['model'].lower():
-                    return m['id']
-    if t['kind'] in ('mlx', 'llama-bench'):
-        # Another build of the same model: drop format and quantisation from the file or repo name.
-        base = Path(t.get('path', '')).stem if t['kind'] == 'llama-bench' else t['model'].split('/')[-1]
-        base = re.sub(r'(?i)([-_.](gguf|mlx|(ud-)?i?q\d\w*|\d+bit|bf16|f16|fp16|f32|mxfp4|dwq))+$', '', base)
-        model_name = base  # the local file or repo name is the best evidence for these
-    if model_name:
-        guess = re.sub(r'[^a-z0-9]+', '-', model_name.lower()).strip('-')
-        if guess in ids:
-            return guess
-        # e.g. LM Studio's 'qwen3-0.6b' or a dated API name: same letters and digits as a catalogue id or name
-        key = norm(model_name.split('/')[-1])
-        same = [m['id'] for m in catalogue if key and key in (norm(m.get('id')), norm(m.get('name')))]
-        if len(same) == 1:
-            return same[0]
-    return None
+def base_name(s):
+    """A model's name without its file format, quantisation or date: 'Qwen3-0.6B-Q4_K_M' -> 'Qwen3-0.6B'."""
+    s = re.sub(r'(?i)\.gguf$', '', s.split('/')[-1])
+    return re.sub(r'(?i)([-_.](gguf|mlx|(ud-)?i?q\d\w*|\d+bit|bf16|f16|fp16|f32|mxfp4|dwq|\d{8}))+$', '', s)
+
+
+def quant_of_file(name):
+    found = re.findall(r'(?i)(?:ud-)?i?q\d(?:_[a-z0-9]+)*|bf16|f16|f32|mxfp4', Path(name).stem)
+    return found[-1].upper() if found else None
+
+
+def load_catalogue():
+    """whatmodel.sh's model list for the bench: ids, names, scores and their downloads."""
+    local = Path(__file__).resolve().parent / 'pages' / 'bench-models.json'
+    try:
+        if local.is_file():
+            return json.loads(local.read_text())
+        with urllib.request.urlopen(CATALOGUE_URL, timeout=10) as r:
+            return json.loads(r.read(LIMIT * 2))
+    except Exception:
+        return []
+
+
+def match_model(t, catalogue):
+    """The whatmodel.sh model (and download) a test runs: by its exact file, repo or tag, else by name."""
+    kind = t['kind']
+    for m in catalogue:
+        for v in m.get('variants', []):
+            if kind == 'ollama' and v['rt'] == 'ollama' and v['ref'] in (t['model'], t['model'][:-7] if t['model'].endswith(':latest') else t['model']):
+                return m, v
+            if kind == 'mlx' and v['rt'] == 'mlx' and v['ref'].lower() == t['model'].lower():
+                return m, v
+            if kind == 'llama-bench' and v['rt'] == 'gguf':
+                file, repo = norm(Path(t['path']).name), norm(re.sub(r'(?i)-gguf$', '', v['ref'].split('/')[-1]))
+                if repo and repo in file and norm(v['quant']) in file:
+                    return m, v
+    name = t.get('measured_model') or (Path(t['path']).name if kind == 'llama-bench' else t.get('model')) or ''
+    key = norm(base_name(name))
+    same = [m for m in catalogue if key and key in (norm(m['id']), norm(m['name']))]
+    return (same[0], None) if len(same) == 1 else (None, None)
 
 
 def search_catalogue(text, catalogue, limit=8):
@@ -777,102 +693,273 @@ def search_catalogue(text, catalogue, limit=8):
     for m in catalogue:
         key = norm(m.get('name')) + ' ' + norm(m.get('id'))
         exact = norm(text) in (norm(m.get('id')), norm(m.get('name')))
-        if exact or all(w in key for w in words):
-            scored.append((not exact, len(m.get('name', '')), m))  # an exact name or id first, then shorter names
+        if exact or (words and all(w in key for w in words)):
+            scored.append((not exact, -(m.get('score') or 0), m))
     return [m for *_, m in sorted(scored, key=lambda x: x[:2])][:limit]
 
 
-def pick_model(label, catalogue, guess):
-    """Ask which catalogue model a result belongs to; returns its id, or None to leave it out."""
-    by_id = {m.get('id'): m for m in catalogue}
-    current = by_id.get(guess)
-    print(f'\n  {label}')
-    while True:
-        if current:
-            answer = ask(f'    is this {bold(current.get("name", current["id"]))}? Enter for yes, type another name to change it, or - to leave it out')
-            if not answer: return current['id']
-        else:
-            answer = ask("    which model is this? Type its name (or part of it), or press Enter to leave it out")
-            if not answer: return None
-        if answer.strip() == '-': return None
-        found = search_catalogue(answer, catalogue)
-        if not found:
-            print(dim('    nothing on whatmodel.sh matches that; try fewer words, e.g. "qwen3 0.6b"')); current = None; continue
-        if len(found) == 1:
-            current = found[0]; continue
-        for i, m in enumerate(found, 1): print(f'      {i}. {m.get("name", m["id"])}')
-        n = ask('    which one? (number, or Enter to search again)')
-        current = found[int(n) - 1] if n.isdigit() and 1 <= int(n) <= len(found) else None
+def usable_gb(hw):
+    """Memory a model can use: most of a graphics card, or part of RAM (unified memory on a Mac)."""
+    if hw.get('vram_gb'): return hw['vram_gb'] * 0.9
+    return (hw.get('ram_gb') or 8) * (0.7 if hw.get('os') == 'Darwin' else 0.6)
 
 
-# ---------------------------------------------------------------- selection
+def install_for(rt):
+    """(runtime, official install command) for a runtime this machine lacks, or None."""
+    mac, linux = platform.system() == 'Darwin', platform.system() == 'Linux'
+    if rt == 'gguf' and (mac or linux): return 'llama.cpp', INSTALL['llama.cpp']
+    if rt == 'mlx' and apple_silicon():
+        return 'MLX', INSTALL['MLX'] if shutil.which('uv') else f'{UV_INSTALL} && ~/.local/bin/uv tool install mlx-lm'
+    if rt == 'ollama' and linux: return 'Ollama', INSTALL['Ollama']
+    return None
 
-def choose(targets):
-    groups = [('local', 'Local models · free, runs on this machine'),
-              ('subscription', 'Your subscriptions · no extra cost, tiny capped prompts'),
-              ('api', 'Billed to an API key · off by default')]
-    rows = []
-    for g, title in groups:
-        items = [t for t in targets if t['group'] == g]
-        if items:
-            rows.append(('header', title))
-            rows += [('item', t) for t in items]
-    picked = set()
-    local = [t for t in targets if t['group'] == 'local']
-    for t in sorted(local, key=lambda t: t.get('size') or 0)[:3]:
-        picked.add(id(t))  # the three smallest local models start ticked
-    for t in targets:
-        if t['group'] == 'subscription':
-            picked.add(id(t))
-    items = [r for r in rows if r[0] == 'item']
-    if not items:
-        return []
-    if PLAIN or not sys.stdin.isatty() or os.name == 'nt':
-        for i, (_, t) in enumerate(items, 1):
-            print(f'  {i:>2}. {t["label"]}  {dim(t.get("detail", ""))}')
-        default = ' '.join(str(i) for i, (_, t) in enumerate(items, 1) if id(t) in picked)
-        chosen = ask('Numbers to run, separated by spaces', default).split()
-        return [t for i, (_, t) in enumerate(items, 1) if str(i) in chosen]
-    cursor = next(i for i, r in enumerate(rows) if r[0] == 'item')
 
-    def render():
-        height = max(8, shutil.get_terminal_size((100, 24)).lines - 6)
-        start = max(0, min(cursor - height // 2, len(rows) - height))
-        out = [bold('Pick what to test') + dim('   ↑/↓ move · space tick · a all · n none · enter start · q quit')]
-        for i, r in enumerate(rows[start:start + height], start):
-            if r[0] == 'header':
-                out.append('  ' + yellow(r[1]))
+def ready_runtimes(found):
+    ready = set()
+    if bench_command(): ready.add('gguf')
+    if has(found, 'mlx'): ready.add('mlx')
+    if 'ollama' in found and found['ollama'].state == 'found': ready.add('ollama')
+    return ready
+
+
+def gguf_folder():
+    return Path(os.environ.get('LLAMA_CACHE') or (Path.home() / ('Library/Caches/llama.cpp' if platform.system() == 'Darwin' else '.cache/llama.cpp')))
+
+
+def download_target(m, v, found):
+    """A test of a catalogue download that isn't on this machine yet: fetched (and its runtime installed) first."""
+    ready = ready_runtimes(found)
+    label = f'{m["name"]} · {RUNTIME[v["rt"]]} {v["quant"]}'
+    prep = []
+    if v['rt'] not in ready:
+        how = install_for(v['rt'])
+        if not how: return None
+        prep.append(('install', *how))
+    prep.append(('download', v['rt'], v['ref'], v['quant'], v['gb']))
+    kind = {'gguf': 'llama-bench', 'mlx': 'mlx', 'ollama': 'ollama'}[v['rt']]
+    t = target(kind, 'local', label, model=v['ref'], path=v['ref'] if v['rt'] == 'mlx' else None, size=v['gb'] * 1e9,
+               detail=f'{v["gb"]} GB download' + (f' · installs {prep[0][1]} first' if prep[0][0] == 'install' else ''),
+               model_id=m['id'], quant=v['quant'], prep=prep, base='http://127.0.0.1:11434')
+    return t
+
+
+def best_variant(m, ready, hw):
+    """The download to offer for a model: one that fits, on a runtime you have (llama.cpp first), 4-bit first."""
+    fits = [v for v in m.get('variants', []) if v['gb'] <= usable_gb(hw) and not (v['rt'] == 'mlx' and not apple_silicon())]
+    order = lambda v: (v['rt'] not in ready, install_for(v['rt']) is None, ['gguf', 'mlx', 'ollama'].index(v['rt']), not re.search(r'(?i)q4|4bit', v['quant']), -v['gb'])
+    fits = [v for v in fits if v['rt'] in ready or install_for(v['rt'])]
+    return min(fits, key=order) if fits else None
+
+
+def lmstudio_models():
+    """LM Studio's downloaded models: key -> (file name, quantisation), from `lms ls --json`."""
+    try:
+        rows = json.loads(output(['lms', 'ls', '--json'], timeout=30) or '[]')
+    except ValueError:
+        return {}
+    return {r['modelKey']: (Path(r.get('path', '')).name, ((r.get('quantization') or {}).get('name'))) for r in rows if isinstance(r, dict) and r.get('modelKey')}
+
+
+def build_choices(found, catalogue, hw):
+    """Sections of tests: models already on this machine, models that fit it, and your subscriptions."""
+    lms = lmstudio_models() if shutil.which('lms') else {}
+    for t in (found['servers'].targets if 'servers' in found else []):
+        if t.get('server') == 'LM Studio' and t['model'] in lms:
+            t['file'], t['quant'] = lms[t['model']]
+            t['measured_model'] = t['file'] or t['model']
+    local, unknown = [], []
+    for p in found.values():
+        for t in p.targets:
+            if t['group'] != 'local':
                 continue
-            t = r[1]
-            box = green('[x]') if id(t) in picked else '[ ]'
-            line = f'{box} {t["label"]}  {dim(t.get("detail", ""))}'
-            out.append(('› ' if i == cursor else '  ') + (c('7', ANSI.sub('', line)) if i == cursor and COLOR else line))
-        out.append(dim(f'  {sum(id(t) in picked for _, t in items)} selected'))
-        return out
+            m, v = match_model(t, catalogue)
+            if m:
+                t['quant'] = t.get('quant') or (v or {}).get('quant')
+                runtime = {'llama-bench': 'llama.cpp', 'mlx': 'MLX', 'ollama': 'Ollama', 'lmstudio': 'LM Studio'}.get(t['kind'], t.get('server') or t['kind'])
+                where = Path(t['path']).name if t['kind'] == 'llama-bench' else t.get('model', '')
+                t.update(model_id=m['id'], label=f'{m["name"]} · {runtime}' + (f' {t["quant"]}' if t.get('quant') else ''),
+                         detail=' · '.join(x for x in (t.get('detail'), where) if x))
+                local.append(t)
+            else:
+                t['detail'] = (t.get('detail') or '') + ' · not on whatmodel.sh yet, so it can be tested but not uploaded'
+                unknown.append(t)
+    have = {t['model_id'] for t in local}
+    ready = ready_runtimes(found)
+    fits, makers = [], set()
+    for m in sorted(catalogue, key=lambda m: -(m.get('score') or 0)):  # well-tested models, one per maker
+        if m['id'] in have or not m.get('variants') or m.get('n', 0) < 8 or m.get('provider') in makers:
+            continue
+        v = best_variant(m, ready, hw)
+        t = v and download_target(m, v, found)
+        if t: fits.append(t); makers.add(m.get('provider'))
+        if len(fits) >= 8: break
+    agents = [t for p in found.values() for t in p.targets if t['group'] != 'local']
+    for t in agents:
+        m, _ = match_model(dict(t, kind='agent', measured_model=t.get('model')), catalogue) if t.get('model') else (None, None)
+        if m: t['model_id'], t['label'] = m['id'], f'{m["name"]} · {t["label"].split(" · ")[0]}'
+    return [('On this machine', local + unknown), ('Fits this machine · downloads first', fits),
+            ('Your subscriptions · no extra cost, short capped prompts', [t for t in agents if t['group'] == 'subscription']),
+            ('Billed to an API key', [t for t in agents if t['group'] == 'api'])]
 
-    live = Live(render)
-    live.live = True
+
+def search_add(text, catalogue, found, hw, sections):
+    """Add the best download of each model matching the search to an 'Added' section."""
+    ready, added = ready_runtimes(found), []
+    listed = {t.get('model_id') for _, items in sections for t in items}
+    for m in search_catalogue(text, catalogue):
+        if m['id'] in listed:
+            continue
+        v = best_variant(m, ready, hw)
+        t = v and download_target(m, v, found)
+        if t: added.append(t)
+    if added:
+        for i, (title, items) in enumerate(sections):
+            if title == 'Added from search':
+                sections[i] = (title, items + added); break
+        else:
+            sections.insert(0, ('Added from search', added))
+    return added
+
+
+def choose(sections, catalogue, found, hw):
+    """Tick what to test. Models already on this machine start ticked; '/' searches every whatmodel.sh model."""
+    picked = {id(t) for title, items in sections if title == 'On this machine' for t in items if t.get('model_id')}
+    def rows():
+        out = []
+        for title, items in sections:
+            if items:
+                out.append(('header', title)); out += [('item', t) for t in items]
+        return out
+    if PLAIN or not sys.stdin.isatty() or os.name == 'nt':
+        while True:
+            items = [r[1] for r in rows() if r[0] == 'item']
+            n = 0
+            for title, sec in sections:
+                if sec: print('  ' + yellow(title))
+                for t in sec:
+                    n += 1; print(f'  {n:>2}. {t["label"]}  {dim(t.get("detail", ""))}')
+            default = ' '.join(str(i) for i, t in enumerate(items, 1) if any(id(t) == p for p in picked))
+            answer = ask('Numbers to test, separated by spaces (or type a model name to search whatmodel.sh)', default)
+            if answer and not re.fullmatch(r'[\d\s]+', answer):
+                added = search_add(answer, catalogue, found, hw, sections)
+                print(dim(f'  added {len(added)} match{"es" if len(added) != 1 else ""} at the top (not ticked)') if added else dim('  nothing new that fits this machine matches that'))
+                continue
+            return [t for i, t in enumerate(items, 1) if str(i) in answer.split()]
+    cursor = 0
+    def render():
+        rs = rows()
+        height = max(8, shutil.get_terminal_size((100, 24)).lines - 7)
+        start = max(0, min(cursor - height // 2, len(rs) - height))
+        out = [bold('Pick what to test') + dim('   ↑/↓ move · space tick · / search all whatmodel.sh models · enter continue · q quit')]
+        for i, r in enumerate(rs[start:start + height], start):
+            if r[0] == 'header':
+                out.append('  ' + yellow(r[1])); continue
+            t = r[1]
+            line = f'{green("[x]") if id(t) in picked else "[ ]"} {t["label"]}  {dim(t.get("detail", ""))}'
+            out.append(('› ' if i == cursor else '  ') + (c('7', ANSI.sub('', line)) if i == cursor and COLOR else line))
+        out.append(dim(f'  {len(picked)} selected'))
+        return out
+    live = Live(render); live.live = True
+    rs = rows(); cursor = next((i for i, r in enumerate(rs) if r[0] == 'item'), 0)
     sys.stdout.write('\x1b[?25l')
     try:
         while True:
             live.draw()
+            rs = rows()
             key = read_key()
-            if key in ('up', 'k'):
-                cursor = next((i for i in range(cursor - 1, -1, -1) if rows[i][0] == 'item'), cursor)
-            elif key in ('down', 'j'):
-                cursor = next((i for i in range(cursor + 1, len(rows)) if rows[i][0] == 'item'), cursor)
-            elif key == 'space':
-                tid = id(rows[cursor][1]); picked.symmetric_difference_update({tid})
-            elif key == 'a':
-                picked |= {id(t) for _, t in items}
-            elif key == 'n':
-                picked.clear()
+            items_at = [i for i, r in enumerate(rs) if r[0] == 'item']
+            if key in ('up', 'k'): cursor = max([i for i in items_at if i < cursor], default=cursor)
+            elif key in ('down', 'j'): cursor = min([i for i in items_at if i > cursor], default=cursor)
+            elif key == 'space' and cursor in items_at: picked ^= {id(rs[cursor][1])}
+            elif key == '/':
+                sys.stdout.write('\x1b[?25h'); sys.stdout.flush()
+                text = ask('\n  Search whatmodel.sh models (e.g. "qwen 9b", "gemma")')
+                if text: search_add(text, catalogue, found, hw, sections)
+                live.lines = 0; sys.stdout.write('\x1b[?25l')
+                rs = rows(); cursor = next((i for i, r in enumerate(rs) if r[0] == 'item'), 0)
             elif key == 'enter':
-                return [t for _, t in items if id(t) in picked]
+                return [r[1] for r in rows() if r[0] == 'item' and id(r[1]) in picked]
             elif key in ('q', 'esc'):
                 return []
     finally:
         sys.stdout.write('\x1b[?25h'); sys.stdout.flush()
+
+
+def command_of(t, tokens):
+    """What a test runs, as the user would type it (for the plan)."""
+    k = t['kind']
+    if k == 'llama-bench':
+        path = t.get('path') or str(gguf_folder() / f'<{t["model"]} {t["quant"]}.gguf>')
+        return f'{" ".join(t.get("bench") or bench_command() or ["llama-bench"])} -m {path.replace(str(Path.home()), "~")} -p 512 -n {tokens} -r 1 -o json'
+    if k == 'mlx': return f'mlx_lm.benchmark --model {str(t["path"]).replace(str(Path.home()), "~")} -p 512 -g {tokens} -n 1'
+    if k == 'ollama': return f'POST localhost:11434/api/generate  model {t["model"]}, the gardening prompt, up to {tokens} tokens'
+    if k in ('openai', 'lmstudio'): return f'POST {t["base"].replace("http://127.0.0.1", "localhost")}/chat/completions  model {t["model"]}, the gardening prompt, up to {tokens} tokens'
+    if k == 'claude': return f'claude -p "{AGENT_PROMPT[:48]}…"' + (f' --model {t["model_flag"]}' if t.get('model_flag') else '') + ' --output-format json --tools ""'
+    if k == 'codex': return f'codex exec --sandbox read-only --json "{AGENT_PROMPT[:48]}…"'
+    if k == 'gemini': return f'gemini -p "{AGENT_PROMPT[:48]}…" -o json --approval-mode plan'
+    if k == 'harness': return f'{t["tool"]} … "{AGENT_PROMPT[:48]}…"'
+    return k
+
+
+def show_plan(selected, runs, warmups, tokens):
+    calls = runs + warmups
+    print('\n' + bold('Plan') + dim(f'  each test: {warmups} warm-up + {runs} measured, one at a time, shuffled, with random 1-3 s pauses'))
+    dl = sum(x[4] for t in selected for x in t.get('prep', []) if x[0] == 'download')
+    usd = 0.0
+    for t in selected:
+        print(f'\n  {bold(t["label"])}')
+        for x in t.get('prep', []):
+            if x[0] == 'install': print(f'    installs {x[1]} first:  {cyan(x[2])}')
+            if x[0] == 'download': print(f'    downloads {x[4]} GB first from ' + (f'huggingface.co/{x[2]}' if x[1] != 'ollama' else f'ollama.com/library/{x[2]}'))
+        print(f'    runs {calls}×:  {cyan(command_of(t, tokens))}')
+        if t['group'] == 'local':
+            print(dim(f'    free · up to {tokens} output tokens per run'))
+        else:
+            cap = f'stops at {AGENT_TOKEN_CAP:,} tokens in total'
+            if t['kind'] == 'claude':
+                usd += CLAUDE_USD_PER_CALL * calls; cap += f' or ${CLAUDE_USD_PER_CALL:.2f} per run (at most ${CLAUDE_USD_PER_CALL * calls:.2f} of {"plan usage" if t["group"] == "subscription" else "API spend"})'
+            print(dim(f'    {calls} prompts of ~120 words · {cap}' + (' · bills your API account' if t['group'] == 'api' else '')))
+    total = [f'{len(selected)} test{"s" if len(selected) != 1 else ""}', f'{len(selected) * calls} runs']
+    if dl: total.append(f'{dl:.1f} GB to download')
+    if usd: total.append(f'at most ${usd:.2f} of Claude usage')
+    print('\n  ' + ' · '.join(total) + dim(' · Ctrl-C stops at any time and keeps finished results'))
+
+
+def prepare(selected):
+    """Install runtimes and download models the plan needs, before anything is timed."""
+    for t in list(selected):
+        try:
+            for x in t.get('prep', []):
+                if x[0] == 'install' and not ((x[1] == 'llama.cpp' and bench_command()) or (x[1] == 'MLX' and shutil.which('mlx_lm.benchmark')) or (x[1] == 'Ollama' and shutil.which('ollama'))):
+                    print(f'\n  installing {x[1]}:  {cyan(x[2])}')
+                    if subprocess.run(['/bin/sh', '-c', x[2]]).returncode: raise RuntimeError(f'{x[1]} did not install')
+                if x[0] == 'download':
+                    print(f'\n  downloading {t["label"]}')
+                    if x[1] == 'gguf':
+                        t['path'], t['bench'] = fetch_gguf(x[2], x[3]), bench_command()
+                    elif x[1] == 'mlx':
+                        subprocess.run(['mlx_lm.generate', '--model', x[2], '--prompt', 'Hi', '--max-tokens', '1'], check=True, stdout=subprocess.DEVNULL)
+                    elif x[1] == 'ollama':
+                        subprocess.run(['ollama', 'pull', x[2]], check=True)
+            t['prep'] = []
+        except Exception as e:
+            print('  ' + red(f'skipping {t["label"]}: {clean(e, 120)}')); selected.remove(t)
+    return selected
+
+
+def fetch_gguf(repo, quant):
+    """Download a GGUF quant (all parts if split) into llama.cpp's cache; returns the first file's path."""
+    with urllib.request.urlopen(f'https://huggingface.co/api/models/{repo}/tree/main?recursive=true', timeout=20) as r:
+        files = json.loads(r.read(LIMIT))
+    want = sorted((f for f in files if f.get('type') == 'file' and f['path'].lower().endswith('.gguf') and 'mmproj' not in f['path'].lower()
+                   and norm(quant) in norm(Path(f['path']).name)), key=lambda f: f['path'])
+    if not want: raise ValueError(f'{quant} not found in {repo}')
+    folder = gguf_folder()
+    for f in want:
+        dest = folder / Path(f['path']).name
+        if not (dest.is_file() and dest.stat().st_size == f.get('size')):
+            download(f'https://huggingface.co/{repo}/resolve/main/{f["path"]}', dest, f['size'])
+    return str(folder / Path(want[0]['path']).name)
 
 
 # ---------------------------------------------------------------- runners
@@ -938,16 +1025,16 @@ def run_mlx(t, tokens, n):
     return {'gen_tok_s': round(float(m.group(2)), 2), 'prompt_tok_s': round(float(m.group(1)), 2)}
 
 
-def claude_args(prompt):
+def claude_args(prompt, model=None):
     # No tools, MCP servers, hooks, project settings or saved session: just the model answering.
-    return ['claude', '-p', prompt, '--output-format', 'json', '--tools', '', '--strict-mcp-config',
+    return ['claude', '-p', prompt, *(['--model', model] if model else []), '--output-format', 'json', '--tools', '', '--strict-mcp-config',
             '--mcp-config', '{"mcpServers":{}}', '--settings', '{"disableAllHooks":true}', '--setting-sources', '',
             '--no-session-persistence', '--max-budget-usd', str(CLAUDE_USD_PER_CALL)]
 
 
 def run_claude(t, tokens, n):
     with tempfile.TemporaryDirectory(prefix='whatmodel-') as work:
-        code, out = run_process(claude_args(f'Run {n}. ' + AGENT_PROMPT), work)
+        code, out = run_process(claude_args(f'Run {n}. ' + AGENT_PROMPT, t.get('model_flag')), work)
     data = json.loads(out)
     if data.get('is_error') or data.get('type') != 'result':
         raise RuntimeError('Claude Code reported an error')
@@ -1024,9 +1111,9 @@ def run_harness(t, tokens, n):
     return {'elapsed_s': round(elapsed, 3), 'output_tokens': count, 'e2e_tok_s': round(count / elapsed, 2) if count else None}
 
 
-RUNNERS = {'ollama': run_ollama, 'openai': run_openai, 'llama-bench': run_llama_bench, 'mlx': run_mlx,
+RUNNERS = {'ollama': run_ollama, 'openai': run_openai, 'lmstudio': run_openai, 'llama-bench': run_llama_bench, 'mlx': run_mlx,
            'claude': run_claude, 'codex': run_codex, 'gemini': run_gemini, 'harness': run_harness}
-ENGINES = {'ollama': 'ollama', 'openai': 'openai-compatible', 'llama-bench': 'llama.cpp', 'mlx': 'mlx-lm',
+ENGINES = {'ollama': 'ollama', 'openai': 'openai-compatible', 'lmstudio': 'lm-studio', 'llama-bench': 'llama.cpp', 'mlx': 'mlx-lm',
            'claude': 'claude-code', 'codex': 'codex-cli', 'gemini': 'gemini-cli', 'harness': 'agent-cli'}
 
 
@@ -1191,12 +1278,16 @@ def public_report(jobs, tokens, runs, warmups, seed, hw, ids):
         t = job.t
         row = {'model': public_id, 'engine': ENGINES[t['kind']], 'engine_version': t.get('engine_version'),
                'samples': [{k: v for k, v in x.items() if k in allowed and (v is None or number(v) is not None)} for x in job.samples]}
+        if t['group'] == 'local' and t.get('quant'):
+            row['quant'] = clean(re.sub(r'[^A-Za-z0-9_.-]', '', str(t['quant'])), 20)  # quantisation changes speed a lot
         if t['kind'] == 'ollama':
-            row.update({k: t.get(k) for k in ('quant', 'params', 'digest')})
+            row.update({k: t.get(k) for k in ('params', 'digest')})
         if t['kind'] == 'llama-bench':
             row['file'] = clean(Path(t['path']).name, 120)  # the GGUF's published file name, not its path
         if t['kind'] == 'mlx':
             row['file'] = clean(t['model'].replace('/', '--'), 120)  # the Hugging Face repo, not the local path
+        if t['kind'] in ('openai', 'lmstudio') and t.get('file'):
+            row['file'] = clean(re.sub(r'[^A-Za-z0-9._+-]', '', t['file']), 120)
         if t['kind'] == 'codex':
             row['settings'] = 'model_reasoning_effort=low'
         if t['kind'] == 'harness':
@@ -1211,36 +1302,73 @@ def public_report(jobs, tokens, runs, warmups, seed, hw, ids):
             'hardware': hardware_public, 'results': rows}
 
 
-def share(jobs, tokens, runs, warmups, seed, hw):
-    measured = [j for j in jobs if j.samples]
-    if not measured:
-        print('No successful measurements, so there is nothing to share.'); return
-    if not yes('\nShare these speeds with whatmodel.sh? You will review the exact report first'):
-        print('Nothing shared.'); return
-    catalogue = load_catalogue()
-    ids = {}
-    print('\n' + bold('Which models did you test?') + dim(" Results are published under whatmodel.sh's model names, never your file names or aliases."))
-    for job in measured:
-        guess = suggest_id(job.t, catalogue, job.t.get('measured_model') or job.t.get('model'))
-        chosen = pick_model(job.t['label'], catalogue, guess)
-        if chosen: ids[id(job.t)] = chosen
-    report = public_report(jobs, tokens, runs, warmups, seed, hw, ids)
-    if not report['results']:
-        print('No results kept. Nothing shared.'); return
-    print('\n' + bold('Exact public report') + dim(' (no keys, file paths, host names or generated text):\n'))
-    print(json.dumps(report, indent=2))
-    fd, path = tempfile.mkstemp(prefix='whatmodel-results-', suffix='.json')
-    with os.fdopen(fd, 'w') as f: json.dump(report, f, indent=2)
-    print(dim('\nSaved a copy for you: ' + path))
-    if not yes('Open a GitHub issue draft with this report, released under CC0 1.0'):
-        print('Kept local only.'); return
+REPORTS = Path.home() / '.whatmodel'
+
+
+def open_upload(report, path):
+    """Open a prefilled GitHub issue with the report; the user reads it and presses Submit."""
     body = '### Benchmark results\n\n```json\n' + json.dumps(report, separators=(',', ':')) + '\n```\n\nI reviewed this report and release these measurements under CC0 1.0.\n'
     url = ISSUES + '?' + urllib.parse.urlencode({'title': 'Benchmark measurements', 'body': body})
     if len(url) > 7500:
-        url = ISSUES + '?' + urllib.parse.urlencode({'title': 'Benchmark measurements', 'body': 'Report attached (saved JSON). I release these measurements under CC0 1.0.'})
-        print('The report is too long for a link; attach the saved JSON to the issue.')
-    print('Read the draft in your browser and click Submit if you are happy. Nothing is sent from here.')
+        url = ISSUES + '?' + urllib.parse.urlencode({'title': 'Benchmark measurements', 'body': 'Report attached. I release these measurements under CC0 1.0.'})
+        print(f'The report is too long for a link: attach {path} to the issue.')
+    print('Opening GitHub with your results filled in. Read them and press Submit; nothing is sent until you do.')
     if not webbrowser.open(url): print('Open this link:\n' + url)
+
+
+def upload_later(path):
+    return (f'  python3 bench.py --upload {path}\n'
+            f'  or: curl -fsSL https://whatmodel.sh/bench.sh | sh -s -- --upload {path}')
+
+
+def share(jobs, tokens, runs, warmups, seed, hw, catalogue=None):
+    measured = [j for j in jobs if j.samples]
+    if not measured:
+        print('No successful measurements, so there is nothing to upload.'); return
+    catalogue = catalogue if catalogue is not None else load_catalogue()
+    ids, left_out = {}, []
+    for job in measured:
+        t = job.t
+        model_id = t.get('model_id')
+        if not model_id and t.get('measured_model'):  # a subscription tool reports which model answered
+            m, _ = match_model(dict(t, kind='agent'), catalogue)
+            model_id = m and m['id']
+        if model_id: ids[id(t)] = model_id
+        else: left_out.append(t['label'])
+    report = public_report(jobs, tokens, runs, warmups, seed, hw, ids)
+    if not report['results']:
+        print('None of these models are on whatmodel.sh yet, so there is nothing to upload.'); return
+    names = {m['id']: m['name'] for m in catalogue}
+    print('\n' + bold('Upload to whatmodel.sh'))
+    for r in report['results']:
+        rates = [x.get('gen_tok_s') or x.get('e2e_tok_s') for x in r['samples'] if x.get('gen_tok_s') or x.get('e2e_tok_s')]
+        speed = f'{statistics.median(rates):.1f} tok/s' if rates else ''
+        print(f'  {names.get(r["model"], r["model"]):<34.34} {r["engine"]:<12} {r.get("quant", ""):<10} {speed}')
+    for label in left_out:
+        print(dim(f'  left out: {label} (not on whatmodel.sh yet)'))
+    print(dim('  Also sent: chip, RAM, OS and runtime versions. Never file paths, host names, prompts or answers.'))
+    REPORTS.mkdir(mode=0o700, exist_ok=True)
+    path = REPORTS / f'bench-{time.strftime("%Y%m%d-%H%M%S")}.json'
+    fd = os.open(path, os.O_CREAT | os.O_WRONLY | os.O_EXCL, 0o600)
+    with os.fdopen(fd, 'w') as f: json.dump(report, f, indent=2)
+    shown = str(path).replace(str(Path.home()), '~')
+    if yes('Upload these results', default=True):
+        open_upload(report, shown)
+    else:
+        print(f'Not uploaded. Your results are saved in {shown}. Upload them any time with:\n' + upload_later(shown))
+
+
+def upload_saved(path):
+    """--upload: open the GitHub draft for a report saved by an earlier run."""
+    file = Path(os.path.expanduser(path))
+    try:
+        report = json.loads(file.read_text())
+        assert report.get('schema') == 'whatmodel-bench-v3' and report.get('results')
+    except (OSError, ValueError, AssertionError):
+        print(f'{path} is not a saved whatmodel bench report.'); return 1
+    print(json.dumps(report, indent=2))
+    open_upload(report, path)
+    return 0
 
 
 # ---------------------------------------------------------------- demo mode (no models needed)
@@ -1272,14 +1400,17 @@ def main():
     global PLAIN
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--version', action='version', version=VERSION)
-    parser.add_argument('--list', action='store_true', help='only show what was found, then exit')
+    parser.add_argument('--list', action='store_true', help='only show what can be tested, then exit')
     parser.add_argument('--plain', action='store_true', help='print line by line instead of redrawing the screen')
     parser.add_argument('--demo', action='store_true', help='try the interface with simulated models (no calls are made)')
-    parser.add_argument('--runs', type=int, default=3, help='measured runs per selection, 1-5 (default 3)')
+    parser.add_argument('--runs', type=int, default=3, help='measured runs per test, 1-5 (default 3)')
     parser.add_argument('--tokens', type=int, default=256, help='output tokens per local model call, 32-1024 (default 256)')
+    parser.add_argument('--upload', metavar='FILE', help='upload results saved by an earlier run')
     args = parser.parse_args()
     PLAIN = args.plain
-    # A closed terminal or kill stops runs like Ctrl-C, so the cleanup below (stopping Ollama) still happens.
+    if args.upload:
+        return upload_saved(args.upload)
+    # A closed terminal or kill stops runs like Ctrl-C, so the cleanup below (stopping servers) still happens.
     def stop(signum, frame):
         raise KeyboardInterrupt
     for sig in (signal.SIGTERM, getattr(signal, 'SIGHUP', None)):
@@ -1293,17 +1424,14 @@ def main():
     started, lmstudio = None, False
     try:
         if args.demo:
-            found, targets, hw = None, demo_targets(), {'os': 'Darwin', 'arch': 'arm64', 'chip': 'Demo chip', 'ram_gb': 32}
+            found, catalogue, hw = {}, [], {'os': 'Darwin', 'arch': 'arm64', 'chip': 'Demo chip', 'ram_gb': 32}
+            ts = demo_targets()
+            sections = [('On this machine', [t for t in ts if t['group'] == 'local']),
+                        ('Your subscriptions · no extra cost, short capped prompts', [t for t in ts if t['group'] != 'local'])]
             print(dim('Demo mode: simulated models, nothing is called.\n'))
         else:
             found = discover()
             hw = found['hardware'].extra.get('hardware', {})
-            missing = recommendations(found)
-            if missing and args.list:
-                print('\n' + bold('Worth trying'))
-                for m in missing: print(f'  {m["name"]:<12} {cyan(m["cmd"]) if m["cmd"] else dim(m["url"])}  {dim(m["why"])}')
-            elif missing and offer_installs(missing):
-                found = discover()
             if found['ollama'].state == 'note' and found['ollama'].extra.get('installed') and not args.list:
                 if yes('\nOllama is installed but not running. Start it just for this session'):
                     started = start_ollama()
@@ -1313,47 +1441,40 @@ def main():
                     else:
                         print(yellow('  Could not start Ollama; continuing without it.'))
             if 'lmstudio' in found and found['lmstudio'].state == 'note' and not args.list:
-                if not yes("\nLM Studio is installed but its server isn't running. Start it just for this session"):
-                    found['lmstudio'].extra['declined'] = True
-                else:
+                if yes("\nLM Studio is installed but its server isn't running. Start it just for this session"):
                     lmstudio = start_lmstudio()
                     if lmstudio:
                         found['servers'] = Probe('servers', 'Local servers', probe_servers); found['servers'].run()
                         print('  ' + found['servers'].row())
                     else:
                         print(yellow("  Could not start LM Studio's server; open the app once, then try again."))
-            if not args.list and offer_test_models(found):
-                found.update({k: v for k, v in discover().items() if k != 'hardware'})
-            targets = [t for p in found.values() for t in p.targets]
+            catalogue = load_catalogue()
+            sections = build_choices(found, catalogue, hw)
             if args.list:
-                print()
-                for t in targets: print(f'  {t["group"]:<12} {t["label"]}  {dim(t.get("detail", ""))}')
+                for title, items in sections:
+                    if items: print('\n' + yellow(title))
+                    for t in items: print(f'  {t["label"]}  {dim(t.get("detail", ""))}')
                 return 0
-            if not targets:
-                print('\nNothing to test yet. Install one of the tools above (or say yes to a test model), then run this again.'); return 0
         print()
-        selected = choose(targets)
+        selected = choose(sections, catalogue, found, hw)
         if not selected:
             print('Nothing selected.'); return 0
         warmups = 1
-        calls = len(selected) * (args.runs + warmups)
-        print('\n' + bold('Plan'))
-        print(f'  {len(selected)} selection{"s" if len(selected) != 1 else ""} × ({args.runs} measured + {warmups} warm-up) = {calls} calls, one at a time, shuffled')
-        for t in selected:
-            note = {'local': f'up to {args.tokens} output tokens per call · free',
-                    'subscription': f'~120-word answers · stops at {AGENT_TOKEN_CAP:,} tokens' + (f' or ${CLAUDE_USD_PER_CALL:.2f} equivalent per call' if t['kind'] == 'claude' else ''),
-                    'api': 'bills your API account'}[t['group']]
-            print(f'  {t["label"]:<46.46} {dim(note)}')
+        show_plan(selected, args.runs, warmups, args.tokens)
         if any(t['group'] == 'api' for t in selected):
-            print(yellow('  Some selections bill an API key. Untick them unless you mean to pay for this.'))
-        if not args.demo and not yes('Start', default=True):
-            print('Cancelled.'); return 0
+            print(yellow('  Some tests bill an API key. Untick them unless you mean to pay for this.'))
+        if not yes('\nStart', default=True):
+            print('Cancelled. Nothing was installed, downloaded or run.'); return 0
+        if not args.demo:
+            selected = prepare(selected)
+            if not selected:
+                print('Nothing left to run.'); return 0
         seed = random.randrange(1, 10**6)
         print()
         jobs = run_all(selected, args.runs, warmups, args.tokens, seed)
         summary(jobs)
         if not args.demo:
-            share(jobs, args.tokens, args.runs, warmups, seed, hw)
+            share(jobs, args.tokens, args.runs, warmups, seed, hw, catalogue)
         return 0
     finally:
         stop_process(started)

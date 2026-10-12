@@ -17,26 +17,22 @@ python3 bench.py --plain
 
 ## Select and run
 
-The menu finds Ollama models, GGUF files for llama.cpp, MLX models (Apple silicon), and models on standard
-local llama.cpp, LM Studio, vLLM and Jan ports. It offers to start Ollama or LM Studio's server for the session.
-It detects installed command-line tools without reading project files or credentials.
-Add a compatible streaming chat API (base URL including `/v1`) and enter its key at the hidden
-prompt, or select an existing GGUF file for `llama-bench`. Endpoints must provide `/models`
-and streaming `/chat/completions` with `stream_options.include_usage`; not every provider's
-native API supports that contract. A failed call is reported, never retried with extra paid requests.
+1. **Look.** It finds this machine's chip and memory, llama.cpp, MLX (Apple silicon), Ollama, LM Studio,
+   local llama.cpp / LM Studio / vLLM / Jan servers, and the Claude Code, Codex and Gemini CLIs. It offers to
+   start Ollama or LM Studio's server just for the session. It reads no project files or credentials.
+2. **Pick.** A tick list of whatmodel.sh models this machine can run, from the published model list
+   ([pages/bench-models.json](pages/bench-models.json), also at `/data/bench-models.json`):
+   - models already on this machine, matched to their whatmodel.sh model and quantisation (ticked);
+   - well-tested models that fit its memory, one per maker (downloaded first if you tick them);
+   - your subscriptions: Claude Code's Opus, Sonnet and Haiku, and Codex's or Gemini's configured model.
+   Press `/` (or type a name in plain mode) to search every whatmodel.sh model and add it.
+3. **Plan.** Before anything runs it lists, for each test, the exact command, any runtime it installs
+   (with the official install command), any download and its size, the prompts and token caps, and the
+   most a Claude test can use. Start with Enter; Ctrl-C stops at any time and keeps finished results.
+4. **Run.** Installs and downloads happen first, then every test runs one call at a time.
 
-Type to search, use arrows to move, Space to tick and Enter to confirm. Nothing starts selected.
-Choose repetitions and the output limit, review the destinations/commands, and confirm the plan.
-Progress and each numeric result appear as it runs. Ctrl-C stops the remaining plan.
-Missing tools are listed with their official install commands. Pick any to install: each command is shown
-first and runs only after you say yes (desktop apps such as LM Studio open their download page instead).
-A runtime with nothing to test is offered one small model (Qwen3 0.6B, under 0.6 GB). Nothing is
-installed or downloaded without asking.
-
-Codex and Claude Code can run a fixed text task using existing authentication, an empty temporary
-directory and restricted CLI options. Recent CLI versions are required. Other detected agents
-are listed but do not have direct adapters. Agent calls can incur charges, include the CLI's normal
-system context, and do not have a hard output-token cap. No project content is supplied.
+Nothing is installed, downloaded or run until you start the plan. A failed call is reported and retried
+once, never with extra paid requests.
 
 ## Read the measurements
 
@@ -56,16 +52,22 @@ protocol and prompt hash. Measurements from different protocols should not be av
 Hardware collection is limited to OS family, architecture and RAM; GPU, exact quantization and
 runtime version may need clarification during review before a result enters the catalogue.
 
-## Review and share
+## Upload
 
-Select results to include, supply their public catalogue model ids, and inspect the exact JSON.
-Unselected results and blank model ids are omitted. The report is written to an owner-only local
-file. Keys, endpoint URLs, hostnames, paths, generated answers and raw errors are not serialized.
-Check the public labels yourself: the script cannot know whether a valid-looking model id is private.
+Every result already knows its whatmodel.sh model, runtime and quantisation, so nothing is typed. The
+script shows what will be uploaded (model, runtime, quantisation and speed, plus chip, RAM, OS and runtime
+versions) and asks once; Enter uploads. It never sends file paths, host names, prompts, answers or keys.
+Models that aren't on whatmodel.sh yet are left out and listed.
 
-After an explicit confirmation it opens a prefilled GitHub issue. Read it and press Submit in the
-browser yourself. Opening the draft sends its contents to GitHub; the CLI does not publish it.
-Large reports are saved as JSON for manual attachment instead of exceeding browser URL limits.
+Uploading opens a prefilled GitHub issue: read it and press Submit in the browser. The report is also saved
+to `~/.whatmodel/` (readable only by you). If you skip the upload, the script prints a command to send that
+saved report later:
+
+```sh
+python3 bench.py --upload ~/.whatmodel/bench-YYYYMMDD-HHMMSS.json
+curl -fsSL https://whatmodel.sh/bench.sh | sh -s -- --upload ~/.whatmodel/bench-YYYYMMDD-HHMMSS.json
+```
+
 Submitted measurements use CC0 1.0 and require maintainer review.
 
 ## Local validation
