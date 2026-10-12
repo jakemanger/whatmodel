@@ -627,7 +627,7 @@
   "side_effects": [
     "Homebrew upgraded llama.cpp 0.4.1 -> 0.6.0_1 and its deps; openssl@4 was installed and openssl@3 was unlinked (still installed).",
     "On PATH, `llama` resolves to the user's earlier llama.app install ~/.local/bin/llama (0.4.0-dev, build 10909, port 8080), not Homebrew's 0.6.0. Run `llama update` or reorder PATH to change that.",
-    "LM Studio first launch appended `export PATH=\"$PATH:/Users/jakemanger/.lmstudio/bin\"` to ~/.zshrc, ~/.bash_profile and ~/.profile.",
+    "LM Studio first launch appended `export PATH=\"$PATH:$HOME/.lmstudio/bin\"` to ~/.zshrc, ~/.bash_profile and ~/.profile.",
     "Ollama 0.30.8 was started with `ollama serve` for the tests and stopped afterwards. It was not upgraded (latest is 0.40.2).",
     "LM Studio was quit after the tests. No llama, mlx_lm, ollama or LM Studio processes were left running."
   ]
