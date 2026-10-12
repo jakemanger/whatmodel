@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 32.2B params (9B active) · apache-2.0
 
-**score 51.8** ±0.7 · #394 of 949 · from 39 benchmark results across 7 sources
+**score 51.8** ±0.7 · #314 of 719 · from 39 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -16,8 +16,8 @@ IBM · released 2025-09 · 32.2B params (9B active) · apache-2.0
 task            vs the others         rank  counts  tests
 agent tasks     ▄·▄········●      #1 of 4*    0.7%      1
 coding          █···▄······●       #1 of 4     16%      7
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #250 of 466    6.5%      3
-math            ▁▂▃▅▆●▄█▄▁▁▁   #226 of 400     22%      8
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #231 of 393    6.5%      3
+math            ▁▂▃▅▆●▄█▄▁▁▁   #224 of 398     22%      8
 </pre>
 
 <details><summary>agent tasks · #1 of 4 · 0.7% of its score</summary>
@@ -44,7 +44,7 @@ test                result  vs the others in its run    difficulty           cou
 
 </details>
 
-<details><summary>chat &amp; writing · #250 of 466 · 6.5% of its score</summary>
+<details><summary>chat &amp; writing · #231 of 393 · 6.5% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
@@ -57,7 +57,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #226 of 400 · 22% of its score</summary>
+<details><summary>math · #224 of 398 · 22% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 

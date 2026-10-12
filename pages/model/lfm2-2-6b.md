@@ -6,7 +6,7 @@
 
 Liquid AI · released 2025-09 · 2.57B params · lfm1.0
 
-**score 42.8** ±1.5 · #649 of 949 · from 13 benchmark results across 2 sources
+**score 42.8** ±1.5 · #486 of 719 · from 13 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Liquid AI · released 2025-09 · 2.57B params · lfm1.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #262 of 466*     11%      1
-math            ▁▂▃▅●▅▄█▄▁▁▁   #287 of 400*     11%      2
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #243 of 393*     11%      1
+math            ▁▂▃▅●▅▄█▄▁▁▁   #285 of 398*     11%      2
 </pre>
 
-<details><summary>chat &amp; writing · #262 of 466 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #243 of 393 · 11% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #287 of 400 · 11% of its score</summary>
+<details><summary>math · #285 of 398 · 11% of its score</summary>
 
 Beats [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [StarCoder2 15B](starcoder2-15b.md) here, though they rank lower overall.
 

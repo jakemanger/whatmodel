@@ -6,7 +6,7 @@
 
 uukuguy · released 2024-03 · 15.96B params · bigcode-openrail-m
 
-**score 45.4** ±0.8 · #575 of 949 · from 3 benchmark results across 1 source
+**score 45.4** ±0.8 · #438 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ uukuguy · released 2024-03 · 15.96B params · bigcode-openrail-m
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #322 of 469    100%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #318 of 458    100%      3
 </pre>
 
-<details><summary>coding · #322 of 469 · 100% of its score</summary>
+<details><summary>coding · #318 of 458 · 100% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 41.7** ±1.2 · #675 of 949 · from 7 benchmark results across 2 sources
+**score 41.7** ±1.2 · #504 of 719 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ IBM · released 2024-04 · 33.72B params · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #357 of 469     85%      6
+coding  ▁▁▁▃●██▇▆▄▃▁   #352 of 458     85%      6
 </pre>
 
-<details><summary>coding · #357 of 469 · 85% of its score</summary>
+<details><summary>coding · #352 of 458 · 85% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-09 · closed weights
 
-**score 74.7** ±0.8 · #44 of 949 · from 12 benchmark results across 3 sources
+**score 74.7** ±0.8 · #44 of 719 · from 12 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ SpaceXAI (xAI) · released 2026-09 · closed weights
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▄▄▃●▁   #20 of 334*     12%      2
-coding          ▁▁▁▃▆██▇▆▄●▁   #15 of 469*    9.5%      1
-chat &amp; writing  ▁▁▁▄▆▅▆█▆▆●▂   #60 of 466*    5.3%      1
-math            ▁▂▃▅▆▅▄█●▁▁▁    #49 of 400     47%      3
+agent tasks     ▁▁▃▆█▆▅▅▅▄●▁   #20 of 300*     12%      2
+coding          ▁▁▁▃▆██▇▆▄●▁   #15 of 458*    9.5%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #60 of 393*    5.3%      1
+math            ▁▂▃▅▆▅▄█●▁▁▁    #49 of 398     47%      3
 </pre>
 
-<details><summary>agent tasks · #20 of 334 · 12% of its score</summary>
+<details><summary>agent tasks · #20 of 300 · 12% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [Hy4 preview (770B-A49B)](hy4-preview.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall.
 
@@ -32,7 +32,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #15 of 469 · 9.5% of its score</summary>
+<details><summary>coding · #15 of 458 · 9.5% of its score</summary>
 
 Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall.
 
@@ -43,7 +43,7 @@ test                       result  vs the others in its run    difficulty  count
 
 </details>
 
-<details><summary>chat &amp; writing · #60 of 466 · 5.3% of its score</summary>
+<details><summary>chat &amp; writing · #60 of 393 · 5.3% of its score</summary>
 
 Trails [Gemma 4 31B](gemma-4-31b.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Claude Sonnet 4.5](claude-sonnet-4-5.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #49 of 400 · 47% of its score</summary>
+<details><summary>math · #49 of 398 · 47% of its score</summary>
 
 Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [GPT-5](gpt-5.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 IBM · released 2026-04 · 3B params · apache-2.0
 
-**score 49.2** ±1.0 · #466 of 949 · from 21 benchmark results across 1 source · † every result so far was reported by its maker
+**score 49.2** ±1.0 · #359 of 719 · from 21 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ IBM · released 2026-04 · 3B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁   #224 of 334*    1.4%      1
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #281 of 469     33%      7
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #237 of 466*    2.5%      1
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #208 of 300*    1.4%      1
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #277 of 458     33%      7
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #220 of 393*    2.5%      1
 math            ●··········█        #3 of 3     25%      5
 </pre>
 
-<details><summary>agent tasks · #224 of 334 · 1.4% of its score</summary>
+<details><summary>agent tasks · #208 of 300 · 1.4% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test           result  vs the others in its run    difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #281 of 469 · 33% of its score</summary>
+<details><summary>coding · #277 of 458 · 33% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                result  vs the others in its run    difficulty        counts
 
 </details>
 
-<details><summary>chat &amp; writing · #237 of 466 · 2.5% of its score</summary>
+<details><summary>chat &amp; writing · #220 of 393 · 2.5% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 

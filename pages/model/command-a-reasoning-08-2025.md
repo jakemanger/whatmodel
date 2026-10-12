@@ -6,7 +6,7 @@
 
 Cohere
 
-**score 54.8** ±2.1 · #323 of 949 · from 6 benchmark results across 2 sources
+**score 54.8** ±2.1 · #270 of 719 · from 6 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Cohere
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▃▂▁    #154 of 334     58%      3
-coding       ▁▁▁▃▆██●▆▄▃▁   #185 of 469*    8.9%      1
-math         ▁▂▃▅▆●▄█▄▁▁▁   #211 of 400*     25%      1
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #148 of 300     58%      3
+coding       ▁▁▁▃▆██●▆▄▃▁   #183 of 458*    8.9%      1
+math         ▁▂▃▅▆●▄█▄▁▁▁   #209 of 398*     25%      1
 </pre>
 
-<details><summary>agent tasks · #154 of 334 · 58% of its score</summary>
+<details><summary>agent tasks · #148 of 300 · 58% of its score</summary>
 
 Beats [o4-mini](o4-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>coding · #185 of 469 · 8.9% of its score</summary>
+<details><summary>coding · #183 of 458 · 8.9% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>math · #211 of 400 · 25% of its score</summary>
+<details><summary>math · #209 of 398 · 25% of its score</summary>
 
 Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-01 · 19.86B params · other
 
-**score 40.9** ±1.4 · #694 of 949 · from 5 benchmark results across 5 sources
+**score 40.9** ±1.4 · #517 of 719 · from 5 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Shanghai AI Laboratory (InternLM) · released 2024-01 · 19.86B params · other
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #362 of 466*     73%      2
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #310 of 393*     73%      2
 </pre>
 
-<details><summary>chat &amp; writing · #362 of 466 · 73% of its score</summary>
+<details><summary>chat &amp; writing · #310 of 393 · 73% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 

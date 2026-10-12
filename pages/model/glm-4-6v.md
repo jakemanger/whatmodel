@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 106B params · mit
 
-**score 62.2** ±1.7 · #188 of 949 · from 10 benchmark results across 3 sources
+**score 62.2** ±1.7 · #175 of 719 · from 10 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Z.ai · released 2025-12 · 106B params · mit
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▄▆▅▆█●▆▆▂   #133 of 466*     27%      1
-vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄     #88 of 150     61%      7
+chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #129 of 393*     27%      1
+vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄     #88 of 147     61%      7
 </pre>
 
-<details><summary>chat &amp; writing · #133 of 466 · 27% of its score</summary>
+<details><summary>chat &amp; writing · #129 of 393 · 27% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [o3-mini](o3-mini.md), [K-EXAONE (236B-A23B)](k-exaone-236b-a23b.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
@@ -29,9 +29,9 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #88 of 150 · 61% of its score</summary>
+<details><summary>vision &amp; documents · #88 of 147 · 61% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why

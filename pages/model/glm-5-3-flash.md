@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-08 · 320B params (18B active) · mit
 
-**score 74.0** ±0.7 · #49 of 949 · from 21 benchmark results across 8 sources
+**score 74.0** ±0.7 · #49 of 719 · from 21 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Z.ai · released 2026-08 · 320B params (18B active) · mit
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄▃●▁    #24 of 334     22%      7
-coding              ▁▁▁▃▆██▇▆▄●▁    #24 of 469     13%      3
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #28 of 466*    4.7%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁    #48 of 400     41%      3
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄   #23 of 150*    3.3%      2
-web search          ▂▂▂▆▄●▃▃▁▁·▁    #36 of 81*    1.3%      1
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #24 of 300     22%      7
+coding              ▁▁▁▃▆██▇▆▄●▁    #24 of 458     13%      3
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #28 of 393*    4.7%      1
+math                ▁▂▃▅▆▅▄█●▁▁▁    #48 of 398     41%      3
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #23 of 147*    3.3%      2
+web search          ▂▁▂▆▄●▃▃▁▁·▁    #36 of 80*    1.3%      1
 </pre>
 
-<details><summary>agent tasks · #24 of 334 · 22% of its score</summary>
+<details><summary>agent tasks · #24 of 300 · 22% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall.
 
@@ -39,7 +39,7 @@ test                                     result  vs the others in its run  diffi
 
 </details>
 
-<details><summary>coding · #24 of 469 · 13% of its score</summary>
+<details><summary>coding · #24 of 458 · 13% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall.
 
@@ -52,7 +52,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #28 of 466 · 4.7% of its score</summary>
+<details><summary>chat &amp; writing · #28 of 393 · 4.7% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [Gemini 3.6 Flash](gemini-3-6-flash.md), [Gemini 3.5 Flash](gemini-3-5-flash.md) here, though they rank lower overall.
 
@@ -63,7 +63,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #48 of 400 · 41% of its score</summary>
+<details><summary>math · #48 of 398 · 41% of its score</summary>
 
 Beats [Grok 4.7](grok-4-7.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [GPT-5](gpt-5.md) here, though they rank lower overall.
 
@@ -76,7 +76,7 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #23 of 150 · 3.3% of its score</summary>
+<details><summary>vision &amp; documents · #23 of 147 · 3.3% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Gemini 3.5 Flash](gemini-3-5-flash.md) here, though they rank lower overall.
 
@@ -88,7 +88,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #36 of 81 · 1.3% of its score</summary>
+<details><summary>web search · #36 of 80 · 1.3% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.7 Max](qwen3-7-max.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

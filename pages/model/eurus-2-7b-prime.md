@@ -6,7 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 44.1** ±2.3 · #608 of 949 · from 4 benchmark results across 2 sources
+**score 44.1** ±2.3 · #456 of 719 · from 4 benchmark results across 2 sources
 
 ## What it's good at
 

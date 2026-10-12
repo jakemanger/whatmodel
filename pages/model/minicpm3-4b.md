@@ -6,7 +6,7 @@
 
 OpenBMB · released 2024-09 · minicpm-model-license
 
-**score 47.5** ±2.1 · #508 of 949 · from 3 benchmark results across 2 sources
+**score 47.5** ±2.1 · #390 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ OpenBMB · released 2024-09 · minicpm-model-license
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▄▄▃▂▁   #286 of 334*     25%      2
-coding       ▁▁▁▃▆●█▇▆▄▃▁   #291 of 469*     73%      1
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #258 of 300*     25%      2
+coding       ▁▁▁▃▆●█▇▆▄▃▁   #287 of 458*     73%      1
 </pre>
 
-<details><summary>agent tasks · #286 of 334 · 25% of its score</summary>
+<details><summary>agent tasks · #258 of 300 · 25% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [Qwen2.5 3B Instruct](qwen2-5-3b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #291 of 469 · 73% of its score</summary>
+<details><summary>coding · #287 of 458 · 73% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 

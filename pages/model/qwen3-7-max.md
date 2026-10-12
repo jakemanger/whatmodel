@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-05 · closed weights
 
-**score 74.1** ±0.7 · #48 of 949 · from 16 benchmark results across 6 sources
+**score 74.1** ±0.7 · #48 of 719 · from 16 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2026-05 · closed weights
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▄●▃▂▁    #53 of 334     27%      6
-coding       ▁▁▁▃▆██▇▆●▃▁   #47 of 469*     16%      2
-math         ▁▂▃▅▆▅▄█●▁▁▁    #26 of 400     40%      3
-web search   ▂▂▂▆●█▃▃▁▁·▁    #47 of 81*    1.7%      1
+agent tasks  ▁▁▃▆█▆▅▅●▄▃▁    #53 of 300     27%      6
+coding       ▁▁▁▃▆██▇▆●▃▁   #47 of 458*     16%      2
+math         ▁▂▃▅▆▅▄█●▁▁▁    #26 of 398     40%      3
+web search   ▂▁▂▆●█▃▃▁▁·▁    #47 of 80*    1.7%      1
 </pre>
 
-<details><summary>agent tasks · #53 of 334 · 27% of its score</summary>
+<details><summary>agent tasks · #53 of 300 · 27% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Kimi K2.6](kimi-k2-6.md), [Qwen3.8 27B](qwen3-8-27b.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                     result  vs the others in its run  diffi
 
 </details>
 
-<details><summary>coding · #47 of 469 · 16% of its score</summary>
+<details><summary>coding · #47 of 458 · 16% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Mistral Large 4 (public preview)](mistral-large-4.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                       result  vs the others in its run   difficulty      co
 
 </details>
 
-<details><summary>math · #26 of 400 · 40% of its score</summary>
+<details><summary>math · #26 of 398 · 40% of its score</summary>
 
 Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3-8-flash.md), [Grok 4.6](grok-4-6.md) here, though they rank higher overall.
 
@@ -61,7 +61,7 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>web search · #47 of 81 · 1.7% of its score</summary>
+<details><summary>web search · #47 of 80 · 1.7% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

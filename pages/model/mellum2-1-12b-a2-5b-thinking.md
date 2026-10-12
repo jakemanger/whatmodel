@@ -6,7 +6,7 @@
 
 JetBrains · released 2026-09 · 12.15B params (2.5B active) · apache-2.0
 
-**score 60.4** ±1.5 · #212 of 949 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.4** ±1.5 · #190 of 719 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ JetBrains · released 2026-09 · 12.15B params (2.5B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▄▄▃▂▁    #149 of 334     35%      4
-coding          ▁▁▁▃▆██●▆▄▃▁    #168 of 469     40%      5
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #173 of 466*    3.4%      1
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁    #144 of 300     35%      4
+coding          ▁▁▁▃▆██●▆▄▃▁    #166 of 458     40%      5
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #165 of 393*    3.4%      1
 </pre>
 
-<details><summary>agent tasks · #149 of 334 · 35% of its score</summary>
+<details><summary>agent tasks · #144 of 300 · 35% of its score</summary>
 
-Beats [watt-tool-70B](watt-tool-70b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
+Beats [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
@@ -33,7 +33,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #168 of 469 · 40% of its score</summary>
+<details><summary>coding · #166 of 458 · 40% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md), [Qwen3-Next 80B-A3B Instruct](qwen3-next-80b-a3b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #173 of 466 · 3.4% of its score</summary>
+<details><summary>chat &amp; writing · #165 of 393 · 3.4% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 

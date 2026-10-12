@@ -54,18 +54,21 @@ export function estimateTps(fileGb: number, paramsB: number, activeB: number, mc
 const APPLE_BW: [number, number][] = [[16, 100], [32, 120], [64, 273], [128, 400], [Infinity, 800]];
 const CARD_BW: [number, number][] = [[8, 350], [12, 450], [16, 500], [24, 950], [32, 1790], [48, 900], [96, 2000], [Infinity, 3000]];
 export const CPU_BW = 80; // dual-channel DDR5
+const UNIFIED_BW = 256; // 256-bit LPDDR5x: Ryzen AI Max 256, DGX Spark 273
 const tier = (t: [number, number][], gb: number) => t.find(([max]) => gb <= max)![1];
 
 // Bandwidth of the user's fast memory: their exact chip / card if we know it, else the typical one.
 export function fastBandwidth(s: Specs): number {
   if (s.hw && (s.gpu === "apple" ? s.hw.kind === "apple" : s.hw.kind !== "apple")) return s.hw.bandwidth_gbs;
   if (s.gpu === "apple") return tier(APPLE_BW, s.ram);
+  if (s.gpu === "unified") return UNIFIED_BW;
   if (s.vram > 0) return tier(CARD_BW, s.vram);
   return CPU_BW;
 }
 
 export function machineFor(s: Specs, fastGb: number): Machine {
   if (s.gpu === "apple") return { fastGb: Infinity, fastBw: fastBandwidth(s), cpuBw: CPU_BW, kind: "apple" };
+  if (s.gpu === "unified") return { fastGb: Infinity, fastBw: fastBandwidth(s), cpuBw: CPU_BW, kind: "gpu" };
   if (s.vram > 0) return { fastGb, fastBw: fastBandwidth(s), cpuBw: CPU_BW, kind: "gpu" };
   return { fastGb: 0, fastBw: CPU_BW, cpuBw: CPU_BW, kind: "cpu" };
 }

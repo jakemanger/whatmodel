@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-05 · 8.03B params · apache-2.0
 
-**score 43.3** ±2.4 · #636 of 949 · from 3 benchmark results across 3 sources
+**score 43.3** ±2.4 · #478 of 719 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 

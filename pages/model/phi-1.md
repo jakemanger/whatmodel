@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-09 · 1.42B params · mit
 
-**score 20.7** ±4.2 · #912 of 949 · from 3 benchmark results across 2 sources
+**score 20.7** ±4.2 · #686 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Microsoft · released 2023-09 · 1.42B params · mit
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁●▃▆██▇▆▄▃▁   #459 of 469*     76%      4
+coding  ▁▁●▃▆██▇▆▄▃▁   #448 of 458*     76%      4
 </pre>
 
-<details><summary>coding · #459 of 469 · 76% of its score</summary>
+<details><summary>coding · #448 of 458 · 76% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall.
 

@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 33.74B params · llama2
 
-**score 41.0** ±0.9 · #690 of 949 · from 6 benchmark results across 3 sources
+**score 41.0** ±0.9 · #514 of 719 · from 6 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Meta · released 2023-08 · 33.74B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #360 of 469     77%      4
+coding  ▁▁▁▃●██▇▆▄▃▁   #354 of 458     77%      4
 </pre>
 
-<details><summary>coding · #360 of 469 · 77% of its score</summary>
+<details><summary>coding · #354 of 458 · 77% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 

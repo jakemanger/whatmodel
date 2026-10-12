@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2023-10 · 6.24B params · chatglm3-6b-license
 
-**score 27.0** ±2.1 · #881 of 949 · from 4 benchmark results across 4 sources
+**score 27.0** ±2.1 · #661 of 719 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Zhipu AI (THUDM) · released 2023-10 · 6.24B params · chatglm3-6b-license
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▄▄▃▂▁   #316 of 334*     10%      1
-chat &amp; writing  ▁▁●▄▆▅▆█▆▆▆▂   #456 of 466*     82%      2
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #283 of 300*     10%      1
+chat &amp; writing  ▁▁●▃▅▄▅█▆▆▇▃   #385 of 393*     82%      2
 </pre>
 
-<details><summary>agent tasks · #316 of 334 · 10% of its score</summary>
+<details><summary>agent tasks · #283 of 300 · 10% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>chat &amp; writing · #456 of 466 · 82% of its score</summary>
+<details><summary>chat &amp; writing · #385 of 393 · 82% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 

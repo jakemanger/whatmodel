@@ -14,11 +14,11 @@ OpenAI · released 2026-01 · closed weights
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▂▆█▆▅▄●▃▂▁    #63 of 374     52%      4
-coding       ▁▁▁▃▅▇█▇●▄▂▁   #131 of 549     66%      3
+agent tasks  ▁▁▂▆█▆▅▄●▃▂▁    #63 of 340     52%      4
+coding       ▁▁▁▃▅▇█▇●▄▃▁   #128 of 524     66%      3
 </pre>
 
-<details><summary>agent tasks · #63 of 374 · 52% of its score</summary>
+<details><summary>agent tasks · #63 of 340 · 52% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #131 of 549 · 66% of its score</summary>
+<details><summary>coding · #128 of 524 · 66% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank lower overall.
 

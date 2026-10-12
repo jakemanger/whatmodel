@@ -6,7 +6,7 @@
 
 Google · released 2026-07 · closed weights
 
-**score 68.7** ±0.9 · #100 of 949 · from 11 benchmark results across 4 sources
+**score 68.7** ±0.9 · #97 of 719 · from 11 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Google · released 2026-07 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-coding              ▁▁▁▃▆██▇▆●▃▁   #67 of 469*     13%      1
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #49 of 466*    7.2%      1
-math                ▁▂▃▅▆▅▄●▄▁▁▁   #136 of 400     46%      3
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄   #40 of 150*     15%      2
+coding              ▁▁▁▃▆██▇▆●▃▁   #66 of 458*     13%      1
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #49 of 393*    7.2%      1
+math                ▁▂▃▅▆▅▄●▄▁▁▁   #136 of 398     46%      3
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #40 of 147*     15%      2
 </pre>
 
-<details><summary>coding · #67 of 469 · 13% of its score</summary>
+<details><summary>coding · #66 of 458 · 13% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall.
 
@@ -31,7 +31,7 @@ test                       result  vs the others in its run   difficulty  counts
 
 </details>
 
-<details><summary>chat &amp; writing · #49 of 466 · 7.2% of its score</summary>
+<details><summary>chat &amp; writing · #49 of 393 · 7.2% of its score</summary>
 
 Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Claude Sonnet 4.5](claude-sonnet-4-5.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #136 of 400 · 46% of its score</summary>
+<details><summary>math · #136 of 398 · 46% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #40 of 150 · 15% of its score</summary>
+<details><summary>vision &amp; documents · #40 of 147 · 15% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md) here, though they rank lower overall.
 

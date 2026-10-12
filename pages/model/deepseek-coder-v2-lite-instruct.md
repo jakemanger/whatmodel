@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-06 · 15.71B params (2.4B active) · deepseek
 
-**score 45.0** ±1.2 · #586 of 949 · from 10 benchmark results across 7 sources
+**score 45.0** ±1.2 · #443 of 719 · from 10 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ DeepSeek · released 2024-06 · 15.71B params (2.4B active) · deepseek
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ●▁▃▆█▆▅▄▄▃▂▁   #330 of 334*    2.8%      1
-coding       ▁▁▁▃▆●█▇▆▄▃▁    #316 of 469     34%      6
+agent tasks  ●▁▃▆█▆▅▅▅▄▃▁   #297 of 300*    2.8%      1
+coding       ▁▁▁▃▆●█▇▆▄▃▁    #312 of 458     34%      6
 </pre>
 
-<details><summary>agent tasks · #330 of 334 · 2.8% of its score</summary>
+<details><summary>agent tasks · #297 of 300 · 2.8% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test     result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #316 of 469 · 34% of its score</summary>
+<details><summary>coding · #312 of 458 · 34% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
 

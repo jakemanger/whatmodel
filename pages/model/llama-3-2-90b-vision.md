@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 88.59B params · llama3.2
 
-**score 49.9** ±1.3 · #442 of 949 · from 13 benchmark results across 7 sources
+**score 49.9** ±1.3 · #342 of 719 · from 13 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Meta · released 2024-09 · 88.59B params · llama3.2
 
 <pre>
 task                vs the others         rank  counts  tests
-math                ▁▂▃▅●▅▄█▄▁▁▁   #276 of 400     40%      3
-vision &amp; documents  ▁▁▃●▁▃▄▃▆▇█▄   #127 of 150     32%      7
+math                ▁▂▃▅●▅▄█▄▁▁▁   #274 of 398     40%      3
+vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄   #125 of 147     32%      7
 </pre>
 
-<details><summary>math · #276 of 400 · 40% of its score</summary>
+<details><summary>math · #274 of 398 · 40% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 70B Instruct](llama-3-1-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>vision &amp; documents · #127 of 150 · 32% of its score</summary>
+<details><summary>vision &amp; documents · #125 of 147 · 32% of its score</summary>
 
 Trails [Qwen3.5 2B](qwen3-5-2b.md), [Pixtral 12B (2409)](pixtral-12b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank lower overall.
 

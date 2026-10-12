@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · proprietary
 
-**score 64.8** ±1.1 · #155 of 949 · from 9 benchmark results across 3 sources
+**score 64.8** ±1.1 · #144 of 719 · from 9 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Alibaba · released 2026-02 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆██●▆▄▃▁   #165 of 469*     19%      1
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #115 of 466*     11%      1
-math            ▁▂▃▅▆▅●█▄▁▁▁   #157 of 400*     42%      2
+coding          ▁▁▁▃▆██●▆▄▃▁   #163 of 458*     19%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #113 of 393*     11%      1
+math            ▁▂▃▅▆▅●█▄▁▁▁   #156 of 398*     42%      2
 </pre>
 
-<details><summary>coding · #165 of 469 · 19% of its score</summary>
+<details><summary>coding · #163 of 458 · 19% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                       result  vs the others in its run   difficulty  counts
 
 </details>
 
-<details><summary>chat &amp; writing · #115 of 466 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #113 of 393 · 11% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #157 of 400 · 42% of its score</summary>
+<details><summary>math · #156 of 398 · 42% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Granite 4.2 3B](granite-4-2-3b.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank lower overall.
 

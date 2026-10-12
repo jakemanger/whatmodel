@@ -6,7 +6,7 @@
 
 Thinking Machines · released 2026-07 · 266B params (12B active) · apache-2.0
 
-**score 70.0** ±0.7 · #87 of 949 · from 34 benchmark results across 5 sources
+**score 70.0** ±0.7 · #84 of 719 · from 34 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Thinking Machines · released 2026-07 · 266B params (12B active) · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄●▃▂▁     #76 of 334     19%      9
-coding              ▁▁▁▃▆██▇●▄▃▁     #82 of 469     12%      4
-chat &amp; writing      ▁▁▁▄▆▅▆█▆●▆▂   #107 of 466*    4.3%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁     #54 of 400     36%      5
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄     #70 of 150    5.8%      3
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁     #76 of 300     19%      9
+coding              ▁▁▁▃▆██▇●▄▃▁     #81 of 458     12%      4
+chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #105 of 393*    4.3%      1
+math                ▁▂▃▅▆▅▄█●▁▁▁     #54 of 398     36%      5
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄     #70 of 147    5.8%      3
 web search          █··········●       #1 of 2*    2.3%      2
 </pre>
 
-<details><summary>agent tasks · #76 of 334 · 19% of its score</summary>
+<details><summary>agent tasks · #76 of 300 · 19% of its score</summary>
 
 Beats [GPT-5](gpt-5.md), [Gemini 3 Flash (Preview)](gemini-3-flash-preview.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                     result  vs the others in its run    dif
 
 </details>
 
-<details><summary>coding · #82 of 469 · 12% of its score</summary>
+<details><summary>coding · #81 of 458 · 12% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ test                               result  vs the others in its run    difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #107 of 466 · 4.3% of its score</summary>
+<details><summary>chat &amp; writing · #105 of 393 · 4.3% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
@@ -66,7 +66,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #54 of 400 · 36% of its score</summary>
+<details><summary>math · #54 of 398 · 36% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [A.X K2 (688B-A33B)](ax-k2.md) here, though they rank lower overall.
 
@@ -81,7 +81,7 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #70 of 150 · 5.8% of its score</summary>
+<details><summary>vision &amp; documents · #70 of 147 · 5.8% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md) here, though they rank lower overall.
 

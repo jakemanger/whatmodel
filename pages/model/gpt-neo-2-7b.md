@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 2.7B params · mit
 
-**score 18.2** ±1.0 · #923 of 949 · from 25 benchmark results across 7 sources
+**score 18.2** ±1.0 · #694 of 719 · from 25 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ EleutherAI · released 2021-03 · 2.7B params · mit
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁●▁▃▆██▇▆▄▃▁   #465 of 469*     34%      2
+coding  ▁●▁▃▆██▇▆▄▃▁   #454 of 458*     34%      2
 math    █···█······●       #1 of 3*    2.4%      1
 </pre>
 
-<details><summary>coding · #465 of 469 · 34% of its score</summary>
+<details><summary>coding · #454 of 458 · 34% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [ChatGLM-6B](chatglm-6b.md) here, though they rank higher overall.
 

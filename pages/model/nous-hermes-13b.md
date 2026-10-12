@@ -6,7 +6,7 @@
 
 Nous Research · released 2023-06 · gpl
 
-**score 33.9** ±2.2 · #817 of 949 · from 3 benchmark results across 2 sources
+**score 33.9** ±2.2 · #610 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Nous Research · released 2023-06 · gpl
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #447 of 466*     90%      2
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #379 of 393*     90%      2
 </pre>
 
-<details><summary>chat &amp; writing · #447 of 466 · 90% of its score</summary>
+<details><summary>chat &amp; writing · #379 of 393 · 90% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 

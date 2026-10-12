@@ -14,13 +14,13 @@ SpaceXAI (xAI) · released 2025-04 · proprietary
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▆▅▄▄▃▂▁   #230 of 374*     11%      2
-coding       ▁▁▁▃▅▇█●▅▄▂▁   #159 of 549*     39%      2
-math         ▁▂▃▅▇▅●█▄▁▁▁   #183 of 464*     24%      2
-web search   ▂▁▂▇▅█▃▄▁●▁▁      #6 of 96*    8.5%      1
+agent tasks  ▁▁▂▆●▆▅▄▄▃▂▁   #216 of 340*     11%      2
+coding       ▁▁▁▃▅▇█●▅▄▃▁   #155 of 524*     39%      2
+math         ▁▂▃▅▇▅●█▄▁▁▁   #182 of 462*     24%      2
+web search   ▂·▂▇▅█▃▄▁●▁▁      #6 of 92*    8.5%      1
 </pre>
 
-<details><summary>agent tasks · #230 of 374 · 11% of its score</summary>
+<details><summary>agent tasks · #216 of 340 · 11% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #159 of 549 · 39% of its score</summary>
+<details><summary>coding · #155 of 524 · 39% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #183 of 464 · 24% of its score</summary>
+<details><summary>math · #182 of 462 · 24% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Nemotron Nano 9B v2](nemotron-nano-9b-v2.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>web search · #6 of 96 · 8.5% of its score</summary>
+<details><summary>web search · #6 of 92 · 8.5% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall. Trails [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 

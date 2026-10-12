@@ -14,10 +14,10 @@ Alibaba · released 2024-11 · proprietary
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▅●▅▅█▄▁▁▁   #271 of 464*     64%      2
+math  ▁▂▃▅●▅▅█▄▁▁▁   #269 of 462*     64%      2
 </pre>
 
-<details><summary>math · #271 of 464 · 64% of its score</summary>
+<details><summary>math · #269 of 462 · 64% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [OpenThinker 7B](openthinker-7b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank lower overall.
 

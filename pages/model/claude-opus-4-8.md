@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-05 · closed weights
 
-**score 78.1** ±0.4 · #19 of 949 · from 62 benchmark results across 17 sources
+**score 78.1** ±0.4 · #19 of 719 · from 62 benchmark results across 17 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Anthropic · released 2026-05 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄▃●▁    #19 of 334     28%     19
-coding              ▁▁▁▃▆██▇▆▄●▁    #34 of 469     15%      7
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●   #21 of 466*    2.0%      2
-math                ▁▂▃▅▆▅▄█▄●▁▁    #17 of 400     37%     16
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄    #15 of 150    3.4%      4
-web search          ▂▂▂▆▄●▃▃▁▁·▁     #26 of 81    4.0%      5
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #19 of 300     28%     19
+coding              ▁▁▁▃▆██▇▆▄●▁    #34 of 458     15%      7
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #21 of 393*    2.0%      2
+math                ▁▂▃▅▆▅▄█▄●▁▁    #17 of 398     37%     16
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #15 of 147    3.4%      4
+web search          ▂▁▂▆▄●▃▃▁▁·▁     #26 of 80    4.0%      5
 </pre>
 
-<details><summary>agent tasks · #19 of 334 · 28% of its score</summary>
+<details><summary>agent tasks · #19 of 300 · 28% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [Hy4 preview (770B-A49B)](hy4-preview.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                                    result  vs the others in its run    diff
 
 </details>
 
-<details><summary>coding · #34 of 469 · 15% of its score</summary>
+<details><summary>coding · #34 of 458 · 15% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
@@ -68,7 +68,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #21 of 466 · 2.0% of its score</summary>
+<details><summary>chat &amp; writing · #21 of 393 · 2.0% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank lower overall.
 
@@ -80,7 +80,7 @@ test                              result  vs the others in its run    difficulty
 
 </details>
 
-<details><summary>math · #17 of 400 · 37% of its score</summary>
+<details><summary>math · #17 of 398 · 37% of its score</summary>
 
 Beats [Qwen3.8 Max (2.4T-A95B)](qwen3-8-2-4t-a95b.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank lower overall.
 
@@ -106,7 +106,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #15 of 150 · 3.4% of its score</summary>
+<details><summary>vision &amp; documents · #15 of 147 · 3.4% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall. Trails [Claude Opus 4.7](claude-opus-4-7.md), [Muse Spark 1.2](muse-spark-1-2.md), [Qwen3.8-Omni-Flash](qwen3-8-omni-flash.md) here, though they rank lower overall.
 
@@ -120,7 +120,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #26 of 81 · 4.0% of its score</summary>
+<details><summary>web search · #26 of 80 · 4.0% of its score</summary>
 
 Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-01
 
-**score 33.6** ±4.1 · #818 of 949 · from 3 benchmark results across 2 sources
+**score 33.6** ±4.1 · #611 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 

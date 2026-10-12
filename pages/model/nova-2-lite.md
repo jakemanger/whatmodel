@@ -6,7 +6,7 @@
 
 Amazon · released 2025-10 · closed weights
 
-**score 57.5** ±1.5 · #263 of 949 · from 7 benchmark results across 5 sources
+**score 57.5** ±1.5 · #225 of 719 · from 7 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Amazon · released 2025-10 · closed weights
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁   #251 of 334*     15%      2
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #184 of 466*     21%      1
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #229 of 300*     15%      2
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #175 of 393*     21%      1
 </pre>
 
-<details><summary>agent tasks · #251 of 334 · 15% of its score</summary>
+<details><summary>agent tasks · #229 of 300 · 15% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #184 of 466 · 21% of its score</summary>
+<details><summary>chat &amp; writing · #175 of 393 · 21% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 

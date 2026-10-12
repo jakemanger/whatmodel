@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 31.6B params (3B active) · nvidia-open-model
 
-**score 65.6** ±1.4 · #145 of 949 · from 13 benchmark results across 2 sources
+**score 65.6** ±1.4 · #136 of 719 · from 13 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -15,9 +15,9 @@ NVIDIA · released 2026-03 · 31.6B params (3B active) · nvidia-open-model
 <pre>
 task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      4
-coding          ▁▁▁▃▆██▇●▄▃▁       #99 of 469     29%      5
-chat &amp; writing  ▁▁▁▄▆▅▆█▆▆●▂      #64 of 466*    7.3%      1
-math            ▁▂▃▅▆▅▄●▄▁▁▁       #96 of 400     39%      4
+coding          ▁▁▁▃▆██▇●▄▃▁       #98 of 458     29%      5
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃      #64 of 393*    7.3%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁       #96 of 398     39%      4
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
@@ -32,7 +32,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #99 of 469 · 29% of its score</summary>
+<details><summary>coding · #98 of 458 · 29% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #64 of 466 · 7.3% of its score</summary>
+<details><summary>chat &amp; writing · #64 of 393 · 7.3% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [Qwen3.8 27B](qwen3-8-27b.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall.
 
@@ -58,7 +58,7 @@ test                           result  vs the others in its run  difficulty     
 
 </details>
 
-<details><summary>math · #96 of 400 · 39% of its score</summary>
+<details><summary>math · #96 of 398 · 39% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 

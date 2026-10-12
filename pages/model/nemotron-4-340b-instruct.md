@@ -14,10 +14,10 @@ NVIDIA · released 2024-06 · 340B params · nvidia-open-model-license
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▃▅▅●█▆▆▆▂   #348 of 579*     59%      2
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #292 of 463*     59%      2
 </pre>
 
-<details><summary>chat &amp; writing · #348 of 579 · 59% of its score</summary>
+<details><summary>chat &amp; writing · #292 of 463 · 59% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 

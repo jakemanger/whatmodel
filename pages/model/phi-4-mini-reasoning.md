@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 3.8B params · mit
 
-**score 47.0** ±2.2 · #521 of 949 · from 6 benchmark results across 3 sources
+**score 47.0** ±2.2 · #397 of 719 · from 6 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Microsoft · released 2025-04 · 3.8B params · mit
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▅▆▅●█▄▁▁▁   #180 of 400*     32%      2
+math  ▁▂▃▅▆▅●█▄▁▁▁   #178 of 398*     32%      2
 </pre>
 
-<details><summary>math · #180 of 400 · 32% of its score</summary>
+<details><summary>math · #178 of 398 · 32% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall.
 

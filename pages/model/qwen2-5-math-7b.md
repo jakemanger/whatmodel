@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
-**score 52.3** ±2.2 · #390 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 52.3** ±2.2 · #311 of 719 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂▃▅▆●▄█▄▁▁▁   #232 of 400     98%      3
+math  ▁▂▃▅▆●▄█▄▁▁▁   #230 of 398     98%      3
 </pre>
 
-<details><summary>math · #232 of 400 · 98% of its score</summary>
+<details><summary>math · #230 of 398 · 98% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [OpenThinker 7B](openthinker-7b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank lower overall.
 

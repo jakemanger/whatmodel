@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-12 · 2.78B params · mit
 
-**score 38.6** ±0.6 · #735 of 949 · from 19 benchmark results across 8 sources
+**score 38.6** ±0.6 · #550 of 719 · from 19 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Microsoft · released 2023-12 · 2.78B params · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁    #381 of 469     72%      6
-chat &amp; writing  ▁●▁▄▆▅▆█▆▆▆▂   #461 of 466*    7.6%      2
-math            ▁▂▃▅●▅▄█▄▁▁▁   #283 of 400*    1.8%      1
+coding          ▁▁▁▃●██▇▆▄▃▁    #374 of 458     72%      6
+chat &amp; writing  ▁●▁▃▅▄▅█▆▆▇▃   #389 of 393*    7.6%      2
+math            ▁▂▃▅●▅▄█▄▁▁▁   #281 of 398*    1.8%      1
 </pre>
 
-<details><summary>coding · #381 of 469 · 72% of its score</summary>
+<details><summary>coding · #374 of 458 · 72% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Granite 3B Code Instruct (2K)](granite-3b-code-instruct-2k.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #461 of 466 · 7.6% of its score</summary>
+<details><summary>chat &amp; writing · #389 of 393 · 7.6% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Qwen1.5 1.8B Chat](qwen1-5-1-8b-chat.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #283 of 400 · 1.8% of its score</summary>
+<details><summary>math · #281 of 398 · 1.8% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 

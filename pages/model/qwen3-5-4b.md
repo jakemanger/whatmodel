@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-03 · 4.66B params · apache-2.0
 
-**score 60.5** ±0.5 · #210 of 949 · from 128 benchmark results across 16 sources
+**score 60.5** ±0.5 · #188 of 719 · from 128 benchmark results across 16 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Alibaba · released 2026-03 · 4.66B params · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▄▄▃▂▁   #165 of 334     11%     13
-coding              ▁▁▁▃▆█●▇▆▄▃▁   #236 of 469     13%      9
-chat &amp; writing      ▁▁▁▄▆▅▆█●▆▆▂   #167 of 466    0.9%      1
-math                ▁▂▃▅▆▅●█▄▁▁▁   #150 of 400     23%     13
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄    #84 of 150     10%     21
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #158 of 300     11%     13
+coding              ▁▁▁▃▆█●▇▆▄▃▁   #233 of 458     13%      9
+chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #159 of 393    0.9%      1
+math                ▁▂▃▅▆▅●█▄▁▁▁   #149 of 398     23%     13
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #84 of 147     10%     21
 web search          █·█▄██·●▄·▄▄     #4 of 13*    1.4%      2
 </pre>
 
-<details><summary>agent tasks · #165 of 334 · 11% of its score</summary>
+<details><summary>agent tasks · #158 of 300 · 11% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                               result  vs the others in its run    difficult
 
 </details>
 
-<details><summary>coding · #236 of 469 · 13% of its score</summary>
+<details><summary>coding · #233 of 458 · 13% of its score</summary>
 
 Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank lower overall.
 
@@ -64,7 +64,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #167 of 466 · 0.9% of its score</summary>
+<details><summary>chat &amp; writing · #159 of 393 · 0.9% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -75,7 +75,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #150 of 400 · 23% of its score</summary>
+<details><summary>math · #149 of 398 · 23% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Qwen3-VL 8B Thinking](qwen3-vl-8b-thinking.md), [Olmo 3 32B Think](olmo-3-32b-think.md) here, though they rank lower overall.
 
@@ -98,9 +98,9 @@ test                        result  vs the others in its run   difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #84 of 150 · 10% of its score</summary>
+<details><summary>vision &amp; documents · #84 of 147 · 10% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 mini](gpt-5-mini.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 mini](gpt-5-mini.md), [GLM-4.6V](glm-4-6v.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why

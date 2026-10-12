@@ -14,12 +14,12 @@ Google · released 2024-10 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▅●█▆▆▆▂   #378 of 579*     31%      1
-math                ▁▂▃▅●▅▅█▄▁▁▁   #322 of 464*    7.1%      1
-vision &amp; documents  ▁▁▃▃●▃▅▅▇▇█▃   #158 of 199*     22%      1
+chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #317 of 463*     31%      1
+math                ▁▂▃▅●▅▅█▄▁▁▁   #320 of 462*    7.1%      1
+vision &amp; documents  ▁▁▃▃●▃▅▄▇▇█▃   #146 of 182*     22%      1
 </pre>
 
-<details><summary>chat &amp; writing · #378 of 579 · 31% of its score</summary>
+<details><summary>chat &amp; writing · #317 of 463 · 31% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test            result  vs the others in its run   difficulty  counts  why
 
 </details>
 
-<details><summary>math · #322 of 464 · 7.1% of its score</summary>
+<details><summary>math · #320 of 462 · 7.1% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>vision &amp; documents · #158 of 199 · 22% of its score</summary>
+<details><summary>vision &amp; documents · #146 of 182 · 22% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank lower overall.
 

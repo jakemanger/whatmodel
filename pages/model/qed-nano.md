@@ -6,7 +6,7 @@
 
 LM Provers · released 2026-02 · 4.02B params · apache-2.0
 
-**score 57.0** ±2.3 · #278 of 949 · from 3 benchmark results across 1 source
+**score 57.0** ±2.3 · #237 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ LM Provers · released 2026-02 · 4.02B params · apache-2.0
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂▃▅▆●▄█▄▁▁▁   #185 of 400     98%      3
+math  ▁▂▃▅▆●▄█▄▁▁▁   #183 of 398     98%      3
 </pre>
 
-<details><summary>math · #185 of 400 · 98% of its score</summary>
+<details><summary>math · #183 of 398 · 98% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 

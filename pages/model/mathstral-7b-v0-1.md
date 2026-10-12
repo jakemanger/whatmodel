@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-07 · 7.25B params · apache-2.0
 
-**score 42.3** ±1.4 · #663 of 949 · from 4 benchmark results across 4 sources
+**score 42.3** ±1.4 · #497 of 719 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Mistral AI · released 2024-07 · 7.25B params · apache-2.0
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃●▆▅▄█▄▁▁▁   #306 of 400*    4.8%      1
+math  ▁▂▃●▆▅▄█▄▁▁▁   #304 of 398*    4.8%      1
 </pre>
 
-<details><summary>math · #306 of 400 · 4.8% of its score</summary>
+<details><summary>math · #304 of 398 · 4.8% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-04 · 310B params (15B active) · mit
 
-**score 69.0** ±0.9 · #97 of 949 · from 23 benchmark results across 6 sources
+**score 69.0** ±0.9 · #94 of 719 · from 23 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Xiaomi · released 2026-04 · 310B params (15B active) · mit
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄●▃▂▁     #64 of 334     27%      8
-coding              ▁▁▁▃▆██▇▆●▃▁     #68 of 469     22%      4
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂    #74 of 466*    7.2%      1
-math                ▁▂▃▅▆▅●█▄▁▁▁   #163 of 400*    6.9%      2
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄     #63 of 150     15%      4
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁     #64 of 300     27%      8
+coding              ▁▁▁▃▆██▇▆●▃▁     #67 of 458     22%      4
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #73 of 393*    7.2%      1
+math                ▁▂▃▅▆▅●█▄▁▁▁   #162 of 398*    6.9%      2
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄     #63 of 147     15%      4
 </pre>
 
-<details><summary>agent tasks · #64 of 334 · 27% of its score</summary>
+<details><summary>agent tasks · #64 of 300 · 27% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall.
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #68 of 469 · 22% of its score</summary>
+<details><summary>coding · #67 of 458 · 22% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #74 of 466 · 7.2% of its score</summary>
+<details><summary>chat &amp; writing · #73 of 393 · 7.2% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Mistral Large 4 (public preview)](mistral-large-4.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [Gemma 4 31B](gemma-4-31b.md) here, though they rank lower overall.
 
@@ -64,7 +64,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #163 of 400 · 6.9% of its score</summary>
+<details><summary>math · #162 of 398 · 6.9% of its score</summary>
 
 Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Granite 4.2 3B](granite-4-2-3b.md) here, though they rank lower overall.
 
@@ -76,7 +76,7 @@ test                result  vs the others in its run  difficulty        counts  
 
 </details>
 
-<details><summary>vision &amp; documents · #63 of 150 · 15% of its score</summary>
+<details><summary>vision &amp; documents · #63 of 147 · 15% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md), [Qwen3.6 Flash](qwen3-6-flash.md) here, though they rank lower overall.
 

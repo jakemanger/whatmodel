@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-08 · 405.85B params · llama3
 
-**score 51.4** ±1.2 · #407 of 949 · from 14 benchmark results across 2 sources
+**score 51.4** ±1.2 · #321 of 719 · from 14 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Nous Research · released 2024-08 · 405.85B params · llama3
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁   #225 of 469*     24%      1
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #222 of 458*     24%      1
 chat &amp; writing  █········█·●       #1 of 3*    2.2%      1
 </pre>
 
-<details><summary>coding · #225 of 469 · 24% of its score</summary>
+<details><summary>coding · #222 of 458 · 24% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 

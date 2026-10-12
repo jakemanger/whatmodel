@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-12 · 7.3B params · apache-2.0
 
-**score 41.5** ±1.3 · #679 of 949 · from 14 benchmark results across 5 sources
+**score 41.5** ±1.3 · #507 of 719 · from 14 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Allen Institute for AI · released 2024-12 · 7.3B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #322 of 466*     12%      2
-math            ▁▂▃●▆▅▄█▄▁▁▁    #341 of 400     27%      3
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #286 of 393*     12%      2
+math            ▁▂▃●▆▅▄█▄▁▁▁    #339 of 398     27%      3
 </pre>
 
-<details><summary>chat &amp; writing · #322 of 466 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #286 of 393 · 12% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #341 of 400 · 27% of its score</summary>
+<details><summary>math · #339 of 398 · 27% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 

@@ -14,11 +14,11 @@ Mistral · released 2023-12 · closed weights
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂●█▆▅▄▄▃▂▁   #311 of 374*    2.6%      1
-chat &amp; writing  ▁▁▁▃▅●▆█▆▆▆▂    #422 of 579     97%      5
+agent tasks     ▁▁▂●█▆▅▄▄▃▂▁   #283 of 340*    2.6%      1
+chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃    #344 of 463     97%      5
 </pre>
 
-<details><summary>agent tasks · #311 of 374 · 2.6% of its score</summary>
+<details><summary>agent tasks · #283 of 340 · 2.6% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #422 of 579 · 97% of its score</summary>
+<details><summary>chat &amp; writing · #344 of 463 · 97% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 

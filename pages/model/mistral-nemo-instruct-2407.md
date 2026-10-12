@@ -6,7 +6,7 @@
 
 Mistral · released 2024-07 · 12.25B params · apache-2.0
 
-**score 44.4** ±0.8 · #597 of 949 · from 23 benchmark results across 15 sources
+**score 44.4** ±0.8 · #449 of 719 · from 23 benchmark results across 15 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Mistral · released 2024-07 · 12.25B params · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▄▄▃▂▁    #284 of 334    4.2%      3
-coding       ▁▁▁▃▆█●▇▆▄▃▁    #269 of 469    3.5%      4
-math         ▁▂●▅▆▅▄█▄▁▁▁   #347 of 400*     16%      2
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁    #256 of 300    4.2%      3
+coding       ▁▁▁▃▆█●▇▆▄▃▁    #265 of 458    3.5%      4
+math         ▁▂●▅▆▅▄█▄▁▁▁   #345 of 398*     16%      2
 </pre>
 
-<details><summary>agent tasks · #284 of 334 · 4.2% of its score</summary>
+<details><summary>agent tasks · #256 of 300 · 4.2% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [Qwen2.5 3B Instruct](qwen2-5-3b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #269 of 469 · 3.5% of its score</summary>
+<details><summary>coding · #265 of 458 · 3.5% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #347 of 400 · 16% of its score</summary>
+<details><summary>math · #345 of 398 · 16% of its score</summary>
 
 Beats [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

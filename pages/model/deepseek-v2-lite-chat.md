@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-05 · 15.71B params (2.4B active) · deepseek
 
-**score 38.0** ±1.2 · #755 of 949 · from 15 benchmark results across 5 sources
+**score 38.0** ±1.2 · #565 of 719 · from 15 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ DeepSeek · released 2024-05 · 15.71B params (2.4B active) · deepseek
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #389 of 469     29%      7
+coding  ▁▁▁▃●██▇▆▄▃▁   #382 of 458     29%      7
 math    █··········●      #1 of 2*     12%      2
 </pre>
 
-<details><summary>coding · #389 of 469 · 29% of its score</summary>
+<details><summary>coding · #382 of 458 · 29% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 

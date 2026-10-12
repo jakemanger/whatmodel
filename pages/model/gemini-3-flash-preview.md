@@ -6,7 +6,7 @@
 
 Google · released 2025-12 · closed weights
 
-**score 72.3** ±0.7 · #66 of 949 · from 28 benchmark results across 12 sources
+**score 72.3** ±0.7 · #63 of 719 · from 28 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Google · released 2025-12 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄●▃▂▁    #78 of 334     17%      6
-coding              ▁▁▁▃▆██▇▆●▃▁    #69 of 469     17%      3
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #31 of 466*    4.0%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁    #50 of 400     39%      6
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄    #29 of 150     10%      5
-web search          ▂▂▂▆▄●▃▃▁▁·▁    #35 of 81*    1.6%      1
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #78 of 300     17%      6
+coding              ▁▁▁▃▆██▇▆●▃▁    #68 of 458     17%      3
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #31 of 393*    4.0%      1
+math                ▁▂▃▅▆▅▄█●▁▁▁    #50 of 398     39%      6
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #29 of 147     10%      5
+web search          ▂▁▂▆▄●▃▃▁▁·▁    #35 of 80*    1.6%      1
 </pre>
 
-<details><summary>agent tasks · #78 of 334 · 17% of its score</summary>
+<details><summary>agent tasks · #78 of 300 · 17% of its score</summary>
 
 Beats [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [MiniMax-M2.7](minimax-m2-7.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #69 of 469 · 17% of its score</summary>
+<details><summary>coding · #68 of 458 · 17% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #31 of 466 · 4.0% of its score</summary>
+<details><summary>chat &amp; writing · #31 of 393 · 4.0% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #50 of 400 · 39% of its score</summary>
+<details><summary>math · #50 of 398 · 39% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank lower overall.
 
@@ -78,7 +78,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #29 of 150 · 10% of its score</summary>
+<details><summary>vision &amp; documents · #29 of 147 · 10% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Qwen3.6 Plus](qwen3-6-plus.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank lower overall.
 
@@ -93,7 +93,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #35 of 81 · 1.6% of its score</summary>
+<details><summary>web search · #35 of 80 · 1.6% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.7 Max](qwen3-7-max.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

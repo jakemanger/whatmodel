@@ -14,15 +14,15 @@ Anthropic · released 2025-02 · proprietary
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▂▆█●▅▄▄▃▂▁   #211 of 374     28%      9
-coding              ▁▁▁▃▅▇█▇●▄▂▁   #138 of 549     26%      4
-chat &amp; writing      ▁▁▁▃▅▅▆█▆●▆▂   #156 of 579     14%      4
-math                ▁▂▃▅▇▅●█▄▁▁▁   #171 of 464     11%      5
-vision &amp; documents  ▁▁▃▃▂▃▅▅●▇█▃    #91 of 199    6.0%      4
-web search          ▂▁▂▇▅█▃▄▁▂▁●     #1 of 96*    3.7%      1
+agent tasks         ▁▁▂▆█●▅▄▄▃▂▁   #199 of 340     28%      9
+coding              ▁▁▁▃▅▇█▇●▄▃▁   #134 of 524     26%      4
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #138 of 463     14%      4
+math                ▁▂▃▅▇▅●█▄▁▁▁   #170 of 462     11%      5
+vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #88 of 182    6.0%      4
+web search          ▂·▂▇▅█▃▄▁▂▁●     #1 of 92*    3.7%      1
 </pre>
 
-<details><summary>agent tasks · #211 of 374 · 28% of its score</summary>
+<details><summary>agent tasks · #199 of 340 · 28% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #138 of 549 · 26% of its score</summary>
+<details><summary>coding · #134 of 524 · 26% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kimi K2 Thinking](kimi-k2-thinking.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #156 of 579 · 14% of its score</summary>
+<details><summary>chat &amp; writing · #138 of 463 · 14% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 mini](gpt-5-mini.md), [MiMo-V2-Flash (309B-A15B)](mimo-v2-flash.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
 
@@ -69,7 +69,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #171 of 464 · 11% of its score</summary>
+<details><summary>math · #170 of 462 · 11% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Granite 4.2 3B](granite-4-2-3b.md) here, though they rank lower overall.
 
@@ -84,7 +84,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>vision &amp; documents · #91 of 199 · 6.0% of its score</summary>
+<details><summary>vision &amp; documents · #88 of 182 · 6.0% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [GPT-4.1](gpt-4-1.md), [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank lower overall.
 
@@ -98,7 +98,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>web search · #1 of 96 · 3.7% of its score</summary>
+<details><summary>web search · #1 of 92 · 3.7% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall.
 

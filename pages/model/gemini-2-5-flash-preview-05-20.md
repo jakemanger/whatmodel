@@ -14,12 +14,12 @@ Google · released 2025-05 · proprietary
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆●▆▅▄▄▃▂▁   #243 of 374*     11%      1
-coding       ▁▁▁▃▅▇█▇●▄▂▁    #151 of 549     49%      3
-math         ▁▂▃▅▇▅▅●▄▁▁▁   #151 of 464*     12%      1
+agent tasks  ▁▁▂▆●▆▅▄▄▃▂▁   #228 of 340*     11%      1
+coding       ▁▁▁▃▅▇█▇●▄▃▁    #147 of 524     49%      3
+math         ▁▂▃▅▇▅▅●▄▁▁▁   #151 of 462*     12%      1
 </pre>
 
-<details><summary>agent tasks · #243 of 374 · 11% of its score</summary>
+<details><summary>agent tasks · #228 of 340 · 11% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test              result  vs the others in its run  difficulty            counts
 
 </details>
 
-<details><summary>coding · #151 of 549 · 49% of its score</summary>
+<details><summary>coding · #147 of 524 · 49% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #151 of 464 · 12% of its score</summary>
+<details><summary>math · #151 of 462 · 12% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [gpt-oss-20b](gpt-oss-20b.md) here, though they rank lower overall.
 

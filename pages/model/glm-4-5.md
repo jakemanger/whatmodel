@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-07 · 355B params (32B active) · mit
 
-**score 64.7** ±0.6 · #158 of 949 · from 52 benchmark results across 9 sources
+**score 64.7** ±0.6 · #147 of 719 · from 52 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Z.ai · released 2025-07 · 355B params (32B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▄▄▃▂▁   #127 of 334     18%     11
-coding          ▁▁▁▃▆██●▆▄▃▁   #146 of 469     10%      6
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #102 of 466    5.3%      2
-math            ▁▂▃▅▆▅▄●▄▁▁▁   #111 of 400     27%      4
-web search      ●▂▂▆▄█▃▃▁▁·▁    #79 of 81*    2.3%      1
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #126 of 300     18%     11
+coding          ▁▁▁▃▆██●▆▄▃▁   #145 of 458     10%      6
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #101 of 393    5.3%      2
+math            ▁▂▃▅▆▅▄●▄▁▁▁   #111 of 398     27%      4
+web search      ●▁▂▆▄█▃▃▁▁·▁    #78 of 80*    2.3%      1
 </pre>
 
-<details><summary>agent tasks · #127 of 334 · 18% of its score</summary>
+<details><summary>agent tasks · #126 of 300 · 18% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #146 of 469 · 10% of its score</summary>
+<details><summary>coding · #145 of 458 · 10% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 0324](deepseek-v3-0324.md), [Devstral Small 2 24B](devstral-small-2.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #102 of 466 · 5.3% of its score</summary>
+<details><summary>chat &amp; writing · #101 of 393 · 5.3% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [GPT-4.1](gpt-4-1.md), [Gemma 4 12B](gemma-4-12b.md) here, though they rank lower overall.
 
@@ -70,7 +70,7 @@ test                        result  vs the others in its run    difficulty      
 
 </details>
 
-<details><summary>math · #111 of 400 · 27% of its score</summary>
+<details><summary>math · #111 of 398 · 27% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [gpt-oss-120b](gpt-oss-120b.md) here, though they rank lower overall.
 
@@ -84,9 +84,9 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>web search · #79 of 81 · 2.3% of its score</summary>
+<details><summary>web search · #78 of 80 · 2.3% of its score</summary>
 
-Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [GPT-4o Search Preview (2025-03-11)](gpt-4o-search-preview.md) here, though they rank lower overall.
+Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 
 <pre>
 test              result  vs the others in its run  difficulty           counts  why

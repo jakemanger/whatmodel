@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-04 · closed weights
 
-**score 66.3** ±0.6 · #131 of 949 · from 54 benchmark results across 18 sources
+**score 66.3** ±0.6 · #125 of 719 · from 54 benchmark results across 18 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ OpenAI · released 2025-04 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▄▄▃▂▁   #156 of 334     17%      6
-coding              ▁▁▁▃▆██▇●▄▃▁    #94 of 469     13%      5
-chat &amp; writing      ▁▁▁▄▆▅▆█▆●▆▂   #118 of 466     11%      5
-math                ▁▂▃▅▆▅▄●▄▁▁▁    #80 of 400     23%      8
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄   #73 of 150*    2.1%      1
-web search          ▂▂▂▆▄█▃▃▁▁·●     #2 of 81*    2.6%      1
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #150 of 300     17%      6
+coding              ▁▁▁▃▆██▇●▄▃▁    #93 of 458     13%      5
+chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #115 of 393     11%      5
+math                ▁▂▃▅▆▅▄●▄▁▁▁    #80 of 398     23%      8
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄   #73 of 147*    2.1%      1
+web search          ▂▁▂▆▄█▃▃▁▁·●     #2 of 80*    2.6%      1
 </pre>
 
-<details><summary>agent tasks · #156 of 334 · 17% of its score</summary>
+<details><summary>agent tasks · #150 of 300 · 17% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #94 of 469 · 13% of its score</summary>
+<details><summary>coding · #93 of 458 · 13% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #118 of 466 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #115 of 393 · 11% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
 
@@ -68,7 +68,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #80 of 400 · 23% of its score</summary>
+<details><summary>math · #80 of 398 · 23% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank higher overall. Trails [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md), [EXAONE 4.5 33B](exaone-4-5-33b.md) here, though they rank lower overall.
 
@@ -86,7 +86,7 @@ test                             result  vs the others in its run    difficulty 
 
 </details>
 
-<details><summary>vision &amp; documents · #73 of 150 · 2.1% of its score</summary>
+<details><summary>vision &amp; documents · #73 of 147 · 2.1% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [GPT-4.1](gpt-4-1.md), [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank lower overall.
 
@@ -97,7 +97,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>web search · #2 of 81 · 2.6% of its score</summary>
+<details><summary>web search · #2 of 80 · 2.6% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall.
 

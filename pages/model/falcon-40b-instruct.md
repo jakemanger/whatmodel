@@ -6,7 +6,7 @@
 
 TII · released 2023-05 · 41.8B params · apache-2.0
 
-**score 28.2** ±2.1 · #876 of 949 · from 4 benchmark results across 3 sources
+**score 28.2** ±2.1 · #656 of 719 · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ TII · released 2023-05 · 41.8B params · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁●▄▆▅▆█▆▆▆▂   #455 of 466     95%      3
+chat &amp; writing  ▁▁●▃▅▄▅█▆▆▇▃   #384 of 393     95%      3
 </pre>
 
-<details><summary>chat &amp; writing · #455 of 466 · 95% of its score</summary>
+<details><summary>chat &amp; writing · #384 of 393 · 95% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 

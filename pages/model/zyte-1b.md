@@ -6,7 +6,7 @@
 
 venkycs (aihub-app) · released 2024-01 · 1.1B params · apache-2.0
 
-**score 8.2** ±2.4 · #938 of 949 · from 3 benchmark results across 1 source
+**score 8.2** ±2.4 · #709 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ venkycs (aihub-app) · released 2024-01 · 1.1B params · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ●▁▁▃▆██▇▆▄▃▁   #469 of 469     97%      3
+coding  ●▁▁▃▆██▇▆▄▃▁   #458 of 458     97%      3
 </pre>
 
-<details><summary>coding · #469 of 469 · 97% of its score</summary>
+<details><summary>coding · #458 of 458 · 97% of its score</summary>
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why

@@ -6,7 +6,7 @@
 
 IBM · released 2025-02 · 2.53B params · apache-2.0
 
-**score 36.0** ±1.3 · #790 of 949 · from 10 benchmark results across 2 sources
+**score 36.0** ±1.3 · #591 of 719 · from 10 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ IBM · released 2025-02 · 2.53B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #390 of 466*     12%      2
-math            ▁▂●▅▆▅▄█▄▁▁▁    #356 of 400     41%      3
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #333 of 393*     12%      2
+math            ▁▂●▅▆▅▄█▄▁▁▁    #354 of 398     41%      3
 </pre>
 
-<details><summary>chat &amp; writing · #390 of 466 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #333 of 393 · 12% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #356 of 400 · 41% of its score</summary>
+<details><summary>math · #354 of 398 · 41% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md), [Qwen3 0.6B](qwen3-0-6b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md) here, though they rank lower overall.
 

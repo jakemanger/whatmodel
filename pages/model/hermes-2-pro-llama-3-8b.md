@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-04 · 8.03B params · llama3
 
-**score 46.1** ±3.2 · #552 of 949 · from 3 benchmark results across 3 sources
+**score 46.1** ±3.2 · #418 of 719 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Nous Research · released 2024-04 · 8.03B params · llama3
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▄▄▃▂▁   #296 of 334*     21%      1
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #267 of 300*     21%      1
 </pre>
 
-<details><summary>agent tasks · #296 of 334 · 21% of its score</summary>
+<details><summary>agent tasks · #267 of 300 · 21% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 

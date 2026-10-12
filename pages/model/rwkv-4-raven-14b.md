@@ -14,12 +14,12 @@ RWKV (BlinkDL) · released 2023-04 · 14B params · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁●▁▃▅▅▆█▆▆▆▂   #567 of 579     98%      3
+chat &amp; writing  ▁●▁▃▅▄▆█▇▇▇▃   #453 of 463     98%      3
 </pre>
 
-<details><summary>chat &amp; writing · #567 of 579 · 98% of its score</summary>
+<details><summary>chat &amp; writing · #453 of 463 · 98% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [OpenAssistant Pythia 12B SFT v8 (7k steps)](oasst-pythia-12b-sft-v8-7k-steps.md), [ChatGLM2-6B](chatglm2-6b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md), [ChatGLM2-6B](chatglm2-6b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run  difficulty                counts  why

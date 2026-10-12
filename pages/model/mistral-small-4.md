@@ -6,7 +6,7 @@
 
 Mistral · released 2026-03 · 119B params (6.5B active) · apache-2.0
 
-**score 59.6** ±1.6 · #225 of 949 · from 10 benchmark results across 4 sources
+**score 59.6** ±1.6 · #201 of 719 · from 10 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Mistral · released 2026-03 · 119B params (6.5B active) · apache-2.0
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▄▄▃▂▁     #140 of 334*     20%      1
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁     #137 of 300*     20%      1
 coding              ██········█●         #1 of 4*    8.4%      1
-chat &amp; writing      ▁▁▁▄▆▅●█▆▆▆▂     #276 of 466*    7.9%      1
+chat &amp; writing      ▁▁▁▃▅▄●█▆▆▇▃     #256 of 393*    7.9%      1
 math                               not ranked yet       —      1
-vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄      #87 of 150*    8.0%      1
+vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄      #87 of 147*    8.0%      1
 </pre>
 
-<details><summary>agent tasks · #140 of 334 · 20% of its score</summary>
+<details><summary>agent tasks · #137 of 300 · 20% of its score</summary>
 
-Beats [watt-tool-70B](watt-tool-70b.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #276 of 466 · 7.9% of its score</summary>
+<details><summary>chat &amp; writing · #256 of 393 · 7.9% of its score</summary>
 
 Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -61,9 +61,9 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 </details>
 
-<details><summary>vision &amp; documents · #87 of 150 · 8.0% of its score</summary>
+<details><summary>vision &amp; documents · #87 of 147 · 8.0% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md), [GLM-4.6V](glm-4-6v.md) here, though they rank higher overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.6V](glm-4-6v.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run  difficulty      counts  why

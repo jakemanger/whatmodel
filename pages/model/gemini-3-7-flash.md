@@ -6,7 +6,7 @@
 
 Google · released 2026-08 · closed weights
 
-**score 76.3** ±0.6 · #32 of 949 · from 31 benchmark results across 9 sources
+**score 76.3** ±0.6 · #32 of 719 · from 31 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Google · released 2026-08 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄●▂▁    #41 of 334     18%      8
-coding              ▁▁▁▃▆██▇▆▄●▁    #27 of 469     10%      4
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●   #13 of 466*    3.0%      1
-math                ▁▂▃▅▆▅▄█▄●▁▁    #24 of 400     48%      8
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇█●    #5 of 150*    4.9%      2
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #41 of 300     18%      8
+coding              ▁▁▁▃▆██▇▆▄●▁    #27 of 458     10%      4
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #13 of 393*    3.0%      1
+math                ▁▂▃▅▆▅▄█▄●▁▁    #24 of 398     48%      8
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇█●    #5 of 147*    4.9%      2
 </pre>
 
-<details><summary>agent tasks · #41 of 334 · 18% of its score</summary>
+<details><summary>agent tasks · #41 of 300 · 18% of its score</summary>
 
 Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                                     result  vs the others in its run  diffi
 
 </details>
 
-<details><summary>coding · #27 of 469 · 10% of its score</summary>
+<details><summary>coding · #27 of 458 · 10% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #13 of 466 · 3.0% of its score</summary>
+<details><summary>chat &amp; writing · #13 of 393 · 3.0% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md), [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank lower overall.
 
@@ -64,7 +64,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #24 of 400 · 48% of its score</summary>
+<details><summary>math · #24 of 398 · 48% of its score</summary>
 
 Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3-8-flash.md), [Grok 4.6](grok-4-6.md) here, though they rank higher overall.
 
@@ -82,7 +82,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #5 of 150 · 4.9% of its score</summary>
+<details><summary>vision &amp; documents · #5 of 147 · 4.9% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall. Trails [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank lower overall.
 

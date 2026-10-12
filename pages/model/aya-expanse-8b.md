@@ -6,7 +6,7 @@
 
 Cohere · released 2024-10 · 8.03B params · cc-by-nc-4.0
 
-**score 46.6** ±2.0 · #533 of 949 · from 7 benchmark results across 6 sources
+**score 46.6** ±2.0 · #406 of 719 · from 7 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Cohere · released 2024-10 · 8.03B params · cc-by-nc-4.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #325 of 466*     67%      2
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #289 of 393*     67%      2
 </pre>
 
-<details><summary>chat &amp; writing · #325 of 466 · 67% of its score</summary>
+<details><summary>chat &amp; writing · #289 of 393 · 67% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.55B params · llama3.1
 
-**score 53.1** ±1.1 · #366 of 949 · from 12 benchmark results across 2 sources
+**score 53.1** ±1.1 · #296 of 719 · from 12 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Ai2 · released 2024-11 · 70.55B params · llama3.1
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #249 of 466*    8.2%      2
-math            ▁▂▃▅●▅▄█▄▁▁▁    #269 of 400     47%      4
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #230 of 393*    8.2%      2
+math            ▁▂▃▅●▅▄█▄▁▁▁    #267 of 398     47%      4
 </pre>
 
-<details><summary>chat &amp; writing · #249 of 466 · 8.2% of its score</summary>
+<details><summary>chat &amp; writing · #230 of 393 · 8.2% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #269 of 400 · 47% of its score</summary>
+<details><summary>math · #267 of 398 · 47% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [InternVL2-4B](internvl2-4b.md) here, though they rank lower overall.
 

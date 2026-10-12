@@ -6,7 +6,7 @@
 
 Arcee AI · released 2026-04 · 398B params (13B active) · openmdw-1.1
 
-**score 62.6** ±1.6 · #183 of 949 · from 5 benchmark results across 2 sources
+**score 62.6** ±1.6 · #170 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -15,8 +15,8 @@ Arcee AI · released 2026-04 · 398B params (13B active) · openmdw-1.1
 <pre>
 task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      1
-coding          ▁▁▁▃▆██●▆▄▃▁     #171 of 469*     43%      1
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂     #145 of 466*     24%      1
+coding          ▁▁▁▃▆██●▆▄▃▁     #169 of 458*     43%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃     #141 of 393*     24%      1
 math            █··········●         #1 of 2*    3.2%      1
 </pre>
 
@@ -29,7 +29,7 @@ test                    result  vs the others in its run  difficulty            
 
 </details>
 
-<details><summary>coding · #171 of 469 · 43% of its score</summary>
+<details><summary>coding · #169 of 458 · 43% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md), [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ test                       result  vs the others in its run  difficulty  counts 
 
 </details>
 
-<details><summary>chat &amp; writing · #145 of 466 · 24% of its score</summary>
+<details><summary>chat &amp; writing · #141 of 393 · 24% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [Nemotron 3 Super 120B-A12B](nemotron-3-super-120b-a12b.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 

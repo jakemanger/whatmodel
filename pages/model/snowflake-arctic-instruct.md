@@ -6,7 +6,7 @@
 
 Snowflake · released 2024-04 · 480B params (17B active) · apache-2.0
 
-**score 41.4** ±1.7 · #682 of 949 · from 5 benchmark results across 4 sources
+**score 41.4** ±1.7 · #509 of 719 · from 5 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Snowflake · released 2024-04 · 480B params (17B active) · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #374 of 466     97%      3
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #319 of 393     97%      3
 </pre>
 
-<details><summary>chat &amp; writing · #374 of 466 · 97% of its score</summary>
+<details><summary>chat &amp; writing · #319 of 393 · 97% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Mistral · released 2026-04 · 128B params · modified-mit
 
-**score 64.5** ±0.9 · #163 of 949 · from 22 benchmark results across 5 sources
+**score 64.5** ±0.9 · #152 of 719 · from 22 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Mistral · released 2026-04 · 128B params · modified-mit
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▄▃▂▁    #103 of 334     28%      8
-coding              ▁▁▁▃▆██●▆▄▃▁    #149 of 469     18%      3
-chat &amp; writing      ▁▁▁▄▆▅▆█▆●▆▂    #81 of 466*    7.0%      1
-math                ▁▂▃▅▆▅●█▄▁▁▁   #177 of 400*    9.5%      2
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄    #75 of 150*    4.8%      1
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #103 of 300     28%      8
+coding              ▁▁▁▃▆██●▆▄▃▁    #148 of 458     18%      3
+chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃    #80 of 393*    7.0%      1
+math                ▁▂▃▅▆▅●█▄▁▁▁   #175 of 398*    9.5%      2
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #75 of 147*    4.8%      1
 </pre>
 
-<details><summary>agent tasks · #103 of 334 · 28% of its score</summary>
+<details><summary>agent tasks · #103 of 300 · 28% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                                     result  vs the others in its run  diffi
 
 </details>
 
-<details><summary>coding · #149 of 469 · 18% of its score</summary>
+<details><summary>coding · #148 of 458 · 18% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
 
@@ -52,7 +52,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #81 of 466 · 7.0% of its score</summary>
+<details><summary>chat &amp; writing · #80 of 393 · 7.0% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 
@@ -63,9 +63,9 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #177 of 400 · 9.5% of its score</summary>
+<details><summary>math · #175 of 398 · 9.5% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [Olmo 3 7B Think DPO](olmo-3-7b-think-dpo.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
@@ -75,7 +75,7 @@ test                result  vs the others in its run  difficulty        counts  
 
 </details>
 
-<details><summary>vision &amp; documents · #75 of 150 · 4.8% of its score</summary>
+<details><summary>vision &amp; documents · #75 of 147 · 4.8% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [GPT-4.1](gpt-4-1.md), [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 OpenLM Research · released 2023-07 · apache-2.0
 
-**score 28.9** ±0.9 · #866 of 949 · from 12 benchmark results across 2 sources
+**score 28.9** ±0.9 · #649 of 719 · from 12 benchmark results across 2 sources
 
 ## What it's good at
 

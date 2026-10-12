@@ -14,13 +14,13 @@ Xiaomi · released 2026-03 · closed weights
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▂▆█▆▅▄●▃▂▁    #71 of 374     45%      6
-coding          ▁▁▁▃▅▇█▇▅●▂▁    #78 of 549     50%      3
-chat &amp; writing  ▁▁▁▃▅▅▆█▆▆●▂   #69 of 579*     14%      1
+agent tasks     ▁▁▂▆█▆▅▄●▃▂▁    #71 of 340     45%      6
+coding          ▁▁▁▃▅▇█▇▅●▃▁    #76 of 524     50%      3
+chat &amp; writing  ▁▁▁▃▅▄▆█▇▇●▃   #62 of 463*     14%      1
 web search      ●··········█      #2 of 2*    3.6%      1
 </pre>
 
-<details><summary>agent tasks · #71 of 374 · 45% of its score</summary>
+<details><summary>agent tasks · #71 of 340 · 45% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #78 of 549 · 50% of its score</summary>
+<details><summary>coding · #76 of 524 · 50% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #69 of 579 · 14% of its score</summary>
+<details><summary>chat &amp; writing · #62 of 463 · 14% of its score</summary>
 
 Beats [GPT-6 Luna](gpt-6-luna.md), [Grok 4.7](grok-4-7.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [Gemma 4 31B](gemma-4-31b.md), [Claude Sonnet 4.5](claude-sonnet-4-5.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 

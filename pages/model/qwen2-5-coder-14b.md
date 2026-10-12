@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 14.77B params · apache-2.0
 
-**score 55.1** ±1.2 · #313 of 949 · from 15 benchmark results across 5 sources
+**score 55.1** ±1.2 · #264 of 719 · from 15 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Alibaba · released 2024-11 · 14.77B params · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #214 of 469     83%     12
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #211 of 458     83%     12
 </pre>
 
-<details><summary>coding · #214 of 469 · 83% of its score</summary>
+<details><summary>coding · #211 of 458 · 83% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 

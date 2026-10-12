@@ -14,10 +14,10 @@ Mistral · released 2024-02 · proprietary
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂●█▆▅▄▄▃▂▁   #335 of 374*    3.5%      1
+agent tasks  ▁▁▂●█▆▅▄▄▃▂▁   #306 of 340*    3.5%      1
 </pre>
 
-<details><summary>agent tasks · #335 of 374 · 3.5% of its score</summary>
+<details><summary>agent tasks · #306 of 340 · 3.5% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 

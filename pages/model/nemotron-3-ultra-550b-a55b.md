@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-06 · 550B params (55B active) · openmdw
 
-**score 69.4** ±0.7 · #93 of 949 · from 32 benchmark results across 5 sources
+**score 69.4** ±0.7 · #90 of 719 · from 32 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ NVIDIA · released 2026-06 · 550B params (55B active) · openmdw
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▄▃▂▁    #83 of 334     22%      7
-coding          ▁▁▁▃▆██▇●▄▃▁    #85 of 469     20%      6
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #82 of 466*    4.4%      1
-math            ▁▂▃▅▆▅▄●▄▁▁▁   #108 of 400    6.6%      3
-web search      ▂▂●▆▄█▃▃▁▁·▁    #71 of 81*    4.6%      2
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #83 of 300     22%      7
+coding          ▁▁▁▃▆██▇●▄▃▁    #84 of 458     20%      6
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #81 of 393*    4.4%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁   #108 of 398    6.6%      3
+web search      ▂▁●▆▄█▃▃▁▁·▁    #71 of 80*    4.6%      2
 </pre>
 
-<details><summary>agent tasks · #83 of 334 · 22% of its score</summary>
+<details><summary>agent tasks · #83 of 300 · 22% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #85 of 469 · 20% of its score</summary>
+<details><summary>coding · #84 of 458 · 20% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GLM-4.7](glm-4-7.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #82 of 466 · 4.4% of its score</summary>
+<details><summary>chat &amp; writing · #81 of 393 · 4.4% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
@@ -65,7 +65,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #108 of 400 · 6.6% of its score</summary>
+<details><summary>math · #108 of 398 · 6.6% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [gpt-oss-120b](gpt-oss-120b.md) here, though they rank lower overall.
 
@@ -78,7 +78,7 @@ test                      result  vs the others in its run    difficulty        
 
 </details>
 
-<details><summary>web search · #71 of 81 · 4.6% of its score</summary>
+<details><summary>web search · #71 of 80 · 4.6% of its score</summary>
 
 Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 

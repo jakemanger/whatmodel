@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 31.1B params (3B active) · apache-2.0
 
-**score 59.7** ±0.8 · #224 of 949 · from 26 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.7** ±0.8 · #200 of 719 · from 26 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Alibaba · released 2025-09 · 31.1B params (3B active) · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▄▄▃▂▁   #194 of 334*     10%      2
-coding              ▁▁▁▃▆██●▆▄▃▁   #182 of 469*    4.3%      1
-chat &amp; writing      ▁▁▁▄▆▅▆●▆▆▆▂   #224 of 466*    2.5%      1
-math                ▁▂▃▅▆▅▄●▄▁▁▁   #126 of 400*    8.9%      2
-vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄     #91 of 150     45%     13
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #182 of 300*     10%      2
+coding              ▁▁▁▃▆██●▆▄▃▁   #180 of 458*    4.3%      1
+chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #209 of 393*    2.5%      1
+math                ▁▂▃▅▆▅▄●▄▁▁▁   #126 of 398*    8.9%      2
+vision &amp; documents  ▁▁▃▂▁▃▄●▆▇█▄     #91 of 147     45%     13
 </pre>
 
-<details><summary>agent tasks · #194 of 334 · 10% of its score</summary>
+<details><summary>agent tasks · #182 of 300 · 10% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                    result  vs the others in its run  difficulty           c
 
 </details>
 
-<details><summary>coding · #182 of 469 · 4.3% of its score</summary>
+<details><summary>coding · #180 of 458 · 4.3% of its score</summary>
 
 Beats [Qwen3.5 9B](qwen3-5-9b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3 30B-A3B Thinking 2507](qwen3-30b-a3b-thinking-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [OpenThinker 32B](openthinker-32b.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #224 of 466 · 2.5% of its score</summary>
+<details><summary>chat &amp; writing · #209 of 393 · 2.5% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #126 of 400 · 8.9% of its score</summary>
+<details><summary>math · #126 of 398 · 8.9% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 
@@ -67,9 +67,9 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #91 of 150 · 45% of its score</summary>
+<details><summary>vision &amp; documents · #91 of 147 · 45% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why

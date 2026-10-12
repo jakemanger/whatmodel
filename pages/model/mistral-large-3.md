@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 675B params (41B active) · apache-2.0
 
-**score 61.7** ±1.3 · #199 of 949 · from 15 benchmark results across 7 sources
+**score 61.7** ±1.3 · #181 of 719 · from 15 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Mistral · released 2025-12 · 675B params (41B active) · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▄▄▃▂▁   #225 of 334*    3.9%      1
-coding              ▁▁▁▃▆██●▆▄▃▁   #172 of 469*     26%      1
-chat &amp; writing      ▁▁▁▄▆▅▆█▆●▆▂    #97 of 466*     20%      2
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄    #81 of 150*     15%      2
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁   #209 of 300*    3.9%      1
+coding              ▁▁▁▃▆██●▆▄▃▁   #170 of 458*     26%      1
+chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃    #96 of 393*     20%      2
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #81 of 147*     15%      2
 </pre>
 
-<details><summary>agent tasks · #225 of 334 · 3.9% of its score</summary>
+<details><summary>agent tasks · #209 of 300 · 3.9% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #172 of 469 · 26% of its score</summary>
+<details><summary>coding · #170 of 458 · 26% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md), [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                       result  vs the others in its run  difficulty  counts 
 
 </details>
 
-<details><summary>chat &amp; writing · #97 of 466 · 20% of its score</summary>
+<details><summary>chat &amp; writing · #96 of 393 · 20% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall.
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #81 of 150 · 15% of its score</summary>
+<details><summary>vision &amp; documents · #81 of 147 · 15% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 mini](gpt-5-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Gemini 2.5 Flash](gemini-2-5-flash.md) here, though they rank lower overall.
 

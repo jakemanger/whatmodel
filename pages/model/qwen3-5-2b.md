@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-03 · 2.27B params · apache-2.0
 
-**score 47.2** ±0.6 · #511 of 949 · from 109 benchmark results across 13 sources
+**score 47.2** ±0.6 · #392 of 719 · from 109 benchmark results across 13 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Alibaba · released 2026-03 · 2.27B params · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁●▆█▆▅▄▄▃▂▁   #305 of 334    9.3%     10
-coding              ▁▁▁●▆██▇▆▄▃▁   #449 of 469    8.3%      7
-chat &amp; writing      ▁▁▁▄▆▅●█▆▆▆▂   #266 of 466    1.0%      1
-math                ▁▂▃▅●▅▄█▄▁▁▁   #288 of 400     26%     13
-vision &amp; documents  ▁▁▃▂▁●▄▃▆▇█▄   #116 of 150     14%     20
+agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #275 of 300    9.3%     10
+coding              ▁▁▁●▆██▇▆▄▃▁   #439 of 458    8.3%      7
+chat &amp; writing      ▁▁▁▃▅▄●█▆▆▇▃   #247 of 393    1.0%      1
+math                ▁▂▃▅●▅▄█▄▁▁▁   #286 of 398     26%     13
+vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #114 of 147     14%     20
 web search          █·█▄●█·▄▄·▄▄     #8 of 13*    0.9%      2
 </pre>
 
-<details><summary>agent tasks · #305 of 334 · 9.3% of its score</summary>
+<details><summary>agent tasks · #275 of 300 · 9.3% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md), [Mixtral 8x22B Instruct v0.1](mixtral-8x22b-instruct-v0-1.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>coding · #449 of 469 · 8.3% of its score</summary>
+<details><summary>coding · #439 of 458 · 8.3% of its score</summary>
 
 Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
@@ -59,7 +59,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #266 of 466 · 1.0% of its score</summary>
+<details><summary>chat &amp; writing · #247 of 393 · 1.0% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -70,7 +70,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #288 of 400 · 26% of its score</summary>
+<details><summary>math · #286 of 398 · 26% of its score</summary>
 
 Beats [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [StarCoder2 15B](starcoder2-15b.md) here, though they rank lower overall.
 
@@ -93,7 +93,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>vision &amp; documents · #116 of 150 · 14% of its score</summary>
+<details><summary>vision &amp; documents · #114 of 147 · 14% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Qwen2-VL 72B Instruct](qwen2-vl-72b.md) here, though they rank higher overall.
 

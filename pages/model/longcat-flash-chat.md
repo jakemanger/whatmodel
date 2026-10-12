@@ -6,7 +6,7 @@
 
 Meituan · released 2025-08 · 560B params (27B active) · mit
 
-**score 65.5** ±1.0 · #147 of 949 · from 23 benchmark results across 2 sources
+**score 65.5** ±1.0 · #138 of 719 · from 23 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Meituan · released 2025-08 · 560B params (27B active) · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▄▃▂▁    #102 of 334     21%      5
-coding          ▁▁▁▃▆██●▆▄▃▁    #161 of 469     22%      4
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #109 of 466*     11%      2
-math            ▁▂▃▅▆▅▄●▄▁▁▁    #129 of 400    7.7%      3
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #102 of 300     21%      5
+coding          ▁▁▁▃▆██●▆▄▃▁    #159 of 458     22%      4
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #107 of 393*     11%      2
+math            ▁▂▃▅▆▅▄●▄▁▁▁    #129 of 398    7.7%      3
 </pre>
 
-<details><summary>agent tasks · #102 of 334 · 21% of its score</summary>
+<details><summary>agent tasks · #102 of 300 · 21% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #161 of 469 · 22% of its score</summary>
+<details><summary>coding · #159 of 458 · 22% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Grok 4.1 Fast (Reasoning)](grok-4-1-fast-reasoning.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #109 of 466 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #107 of 393 · 11% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5.4 nano](gpt-5-4-nano.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
@@ -61,7 +61,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #129 of 400 · 7.7% of its score</summary>
+<details><summary>math · #129 of 398 · 7.7% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-06 · 7.74B params · other
 
-**score 46.6** ±4.3 · #535 of 949 · from 3 benchmark results across 2 sources
+**score 46.6** ±4.3 · #408 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 

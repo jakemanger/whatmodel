@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 2.13B params · apache-2.0
 
-**score 43.9** ±0.7 · #617 of 949 · from 41 benchmark results across 5 sources
+**score 43.9** ±0.7 · #464 of 719 · from 41 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Alibaba · released 2025-10 · 2.13B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃●█▆▅▄▄▃▂▁   #258 of 334*    1.8%      1
-coding              ▁▁▁●▆██▇▆▄▃▁   #423 of 469*    2.6%      1
-chat &amp; writing      ▁▁▁▄▆▅●█▆▆▆▂   #309 of 466*    4.2%      1
-math                ▁▂▃▅●▅▄█▄▁▁▁   #292 of 400*    9.1%      2
-vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄    #133 of 150     53%     19
+agent tasks         ▁▁▃●█▆▅▅▅▄▃▁   #235 of 300*    1.8%      1
+coding              ▁▁▁●▆██▇▆▄▃▁   #414 of 458*    2.6%      1
+chat &amp; writing      ▁▁▁▃▅▄●█▆▆▇▃   #279 of 393*    4.2%      1
+math                ▁▂▃▅●▅▄█▄▁▁▁   #290 of 398*    9.1%      2
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #131 of 147     53%     19
 </pre>
 
-<details><summary>agent tasks · #258 of 334 · 1.8% of its score</summary>
+<details><summary>agent tasks · #235 of 300 · 1.8% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test           result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #423 of 469 · 2.6% of its score</summary>
+<details><summary>coding · #414 of 458 · 2.6% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #309 of 466 · 4.2% of its score</summary>
+<details><summary>chat &amp; writing · #279 of 393 · 4.2% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #292 of 400 · 9.1% of its score</summary>
+<details><summary>math · #290 of 398 · 9.1% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [StarCoder2 15B](starcoder2-15b.md) here, though they rank lower overall.
 
@@ -66,7 +66,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #133 of 150 · 53% of its score</summary>
+<details><summary>vision &amp; documents · #131 of 147 · 53% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall.
 

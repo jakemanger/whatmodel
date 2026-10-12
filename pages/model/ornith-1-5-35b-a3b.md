@@ -6,7 +6,7 @@
 
 DeepReinforce · released 2026-08 · 35.95B params (3B active) · mit
 
-**score 70.6** ±1.5 · #81 of 949 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 70.6** ±1.5 · #78 of 719 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ DeepReinforce · released 2026-08 · 35.95B params (3B active) · mit
 
 <pre>
 task         vs the others        rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▄●▃▂▁   #67 of 334     68%      9
-coding       ▁▁▁▃▆██▇▆●▃▁   #62 of 469     31%      3
+agent tasks  ▁▁▃▆█▆▅▅●▄▃▁   #67 of 300     68%      9
+coding       ▁▁▁▃▆██▇▆●▃▁   #61 of 458     31%      3
 web search   █··········●      #1 of 2     17%      3
 </pre>
 
-<details><summary>agent tasks · #67 of 334 · 68% of its score</summary>
+<details><summary>agent tasks · #67 of 300 · 68% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #62 of 469 · 31% of its score</summary>
+<details><summary>coding · #61 of 458 · 31% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [MiniMax-M3](minimax-m3.md) here, though they rank lower overall.
 

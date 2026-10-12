@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-12 · 228.7B params (10B active) · other
 
-**score 65.7** ±1.2 · #143 of 949 · from 12 benchmark results across 5 sources
+**score 65.7** ±1.2 · #135 of 719 · from 12 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ MiniMax · released 2025-12 · 228.7B params (10B active) · other
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▄▃▂▁     #96 of 334     43%      4
-coding          ▁▁▁▃▆██▇●▄▃▁    #97 of 469*     24%      1
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #128 of 466*     13%      1
-math            ▁▂▃▅▆●▄█▄▁▁▁    #203 of 400     10%      3
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁     #96 of 300     43%      4
+coding          ▁▁▁▃▆██▇●▄▃▁    #96 of 458*     24%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #125 of 393*     13%      1
+math            ▁▂▃▅▆●▄█▄▁▁▁    #201 of 398     10%      3
 web search      ●█···█····██       #5 of 5*    9.4%      1
 </pre>
 
-<details><summary>agent tasks · #96 of 334 · 43% of its score</summary>
+<details><summary>agent tasks · #96 of 300 · 43% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #97 of 469 · 24% of its score</summary>
+<details><summary>coding · #96 of 458 · 24% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                       result  vs the others in its run   difficulty  counts
 
 </details>
 
-<details><summary>chat &amp; writing · #128 of 466 · 13% of its score</summary>
+<details><summary>chat &amp; writing · #125 of 393 · 13% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
 
@@ -57,7 +57,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #203 of 400 · 10% of its score</summary>
+<details><summary>math · #201 of 398 · 10% of its score</summary>
 
 Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank lower overall.
 

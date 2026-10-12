@@ -14,15 +14,15 @@ Anthropic · released 2025-05 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█▆●▄▄▃▂▁    #132 of 374     31%      4
-coding              ▁▁▁▃▅▇█▇●▄▂▁    #114 of 549     42%      4
-chat &amp; writing      ▁▁▁▃▅▅▆█▆●▆▂   #104 of 579*    6.9%      1
-math                ▁▂▃▅▇▅●█▄▁▁▁   #195 of 464*    9.1%      2
-vision &amp; documents  ▁▁▃▃▂▃▅▅●▇█▃    #84 of 199*    4.8%      1
-web search          ▂▁▂▇●█▃▄▁▂▁▁     #64 of 96*    2.8%      1
+agent tasks         ▁▁▂▆█▆●▄▄▃▂▁    #131 of 340     31%      4
+coding              ▁▁▁▃▅▇█▇●▄▃▁    #111 of 524     42%      4
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃    #92 of 463*    6.9%      1
+math                ▁▂▃▅▇▅●█▄▁▁▁   #193 of 462*    9.1%      2
+vision &amp; documents  ▁▁▃▃▂▃▅▄●▇█▃    #81 of 182*    4.8%      1
+web search          ▂·▂▇●█▃▄▁▂▁▁     #63 of 92*    2.8%      1
 </pre>
 
-<details><summary>agent tasks · #132 of 374 · 31% of its score</summary>
+<details><summary>agent tasks · #131 of 340 · 31% of its score</summary>
 
 Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                   result  vs the others in its run  difficulty            c
 
 </details>
 
-<details><summary>coding · #114 of 549 · 42% of its score</summary>
+<details><summary>coding · #111 of 524 · 42% of its score</summary>
 
 Beats [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #104 of 579 · 6.9% of its score</summary>
+<details><summary>chat &amp; writing · #92 of 463 · 6.9% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
@@ -61,9 +61,9 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #195 of 464 · 9.1% of its score</summary>
+<details><summary>math · #193 of 462 · 9.1% of its score</summary>
 
-Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [Olmo 3 7B Think DPO](olmo-3-7b-think-dpo.md) here, though they rank lower overall.
+Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
@@ -73,7 +73,7 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>vision &amp; documents · #84 of 199 · 4.8% of its score</summary>
+<details><summary>vision &amp; documents · #81 of 182 · 4.8% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Qwen3.5 9B](qwen3-5-9b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 
@@ -84,7 +84,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>web search · #64 of 96 · 2.8% of its score</summary>
+<details><summary>web search · #63 of 92 · 2.8% of its score</summary>
 
 Beats [Kimi K2.6](kimi-k2-6.md), [GPT-5 Pro](gpt-5-pro.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

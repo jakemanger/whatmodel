@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-06 · 3.82B params · mit
 
-**score 44.2** ±0.9 · #601 of 949 · from 7 benchmark results across 3 sources
+**score 44.2** ±0.9 · #451 of 719 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Microsoft · released 2024-06 · 3.82B params · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁   #328 of 469*     22%      1
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #417 of 466*    7.7%      1
-math            ▁▂●▅▆▅▄█▄▁▁▁   #351 of 400*     22%      2
+coding          ▁▁▁▃▆●█▇▆▄▃▁   #324 of 458*     22%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #356 of 393*    7.7%      1
+math            ▁▂●▅▆▅▄█▄▁▁▁   #349 of 398*     22%      2
 </pre>
 
-<details><summary>coding · #328 of 469 · 22% of its score</summary>
+<details><summary>coding · #324 of 458 · 22% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>chat &amp; writing · #417 of 466 · 7.7% of its score</summary>
+<details><summary>chat &amp; writing · #356 of 393 · 7.7% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test            result  vs the others in its run   difficulty  counts  why
 
 </details>
 
-<details><summary>math · #351 of 400 · 22% of its score</summary>
+<details><summary>math · #349 of 398 · 22% of its score</summary>
 
 Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 

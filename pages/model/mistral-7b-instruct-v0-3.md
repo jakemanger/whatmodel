@@ -6,7 +6,7 @@
 
 Mistral · released 2024-05 · 7.25B params · apache-2.0
 
-**score 39.1** ±1.1 · #724 of 949 · from 15 benchmark results across 10 sources
+**score 39.1** ±1.1 · #542 of 719 · from 15 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -15,8 +15,8 @@ Mistral · released 2024-05 · 7.25B params · apache-2.0
 <pre>
 task            vs the others          rank  counts  tests
 coding          ●··········█       #2 of 2*    8.9%      2
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #363 of 466*     28%      2
-math            ▁●▃▅▆▅▄█▄▁▁▁    #383 of 400    8.4%      3
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #311 of 393*     28%      2
+math            ▁●▃▅▆▅▄█▄▁▁▁    #381 of 398    8.4%      3
 </pre>
 
 <details><summary>coding · #2 of 2 · 8.9% of its score</summary>
@@ -29,7 +29,7 @@ test             result  vs the others in its run   difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #363 of 466 · 28% of its score</summary>
+<details><summary>chat &amp; writing · #311 of 393 · 28% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #383 of 400 · 8.4% of its score</summary>
+<details><summary>math · #381 of 398 · 8.4% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md) here, though they rank higher overall. Trails [Granite 3.1 1B-A400M Instruct](granite-3-1-1b-a400m.md), [Gemma 2B (base)](gemma-2b-base.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md) here, though they rank lower overall.
 

@@ -14,11 +14,11 @@ Google · released 2025-02 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▅▆█●▆▆▂   #206 of 579*     56%      1
-vision &amp; documents  ▁▁▃▃▂▃●▅▇▇█▃   #132 of 199*     39%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #181 of 463*     56%      1
+vision &amp; documents  ▁▁▃▃▂▃●▄▇▇█▃   #122 of 182*     39%      1
 </pre>
 
-<details><summary>chat &amp; writing · #206 of 579 · 56% of its score</summary>
+<details><summary>chat &amp; writing · #181 of 463 · 56% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #132 of 199 · 39% of its score</summary>
+<details><summary>vision &amp; documents · #122 of 182 · 39% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Llama 4 Maverick (402B-A17B)](llama-4-maverick.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank lower overall.
 

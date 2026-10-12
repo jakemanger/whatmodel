@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 2.41B params · exaone
 
-**score 36.2** ±2.3 · #786 of 949 · from 7 benchmark results across 3 sources
+**score 36.2** ±2.3 · #588 of 719 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ LG AI Research · released 2024-12 · 2.41B params · exaone
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁    #404 of 469     20%      4
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #296 of 466*     41%      2
+coding          ▁▁▁▃●██▇▆▄▃▁    #395 of 458     20%      4
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #271 of 393*     41%      2
 </pre>
 
-<details><summary>coding · #404 of 469 · 20% of its score</summary>
+<details><summary>coding · #395 of 458 · 20% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #296 of 466 · 41% of its score</summary>
+<details><summary>chat &amp; writing · #271 of 393 · 41% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 

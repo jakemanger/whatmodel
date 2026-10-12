@@ -14,12 +14,12 @@ Mistral · released 2024-02 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅●█▇▅▄▂▁    #386 of 549     46%      3
-chat &amp; writing  ▁▁▁▃▅▅●█▆▆▆▂    #402 of 579     24%      4
-math            ▁▂▃●▇▅▅█▄▁▁▁   #356 of 464*    5.0%      2
+coding          ▁▁▁▃▅●█▇▅▄▃▁    #370 of 524     46%      3
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃    #332 of 463     24%      4
+math            ▁▂▃●▇▅▅█▄▁▁▁   #354 of 462*    5.0%      2
 </pre>
 
-<details><summary>coding · #386 of 549 · 46% of its score</summary>
+<details><summary>coding · #370 of 524 · 46% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #402 of 579 · 24% of its score</summary>
+<details><summary>chat &amp; writing · #332 of 463 · 24% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #356 of 464 · 5.0% of its score</summary>
+<details><summary>math · #354 of 462 · 5.0% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 

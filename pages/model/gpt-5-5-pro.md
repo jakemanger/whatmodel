@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-04 · closed weights
 
-**score 82.1** ±1.1 · #8 of 949 · from 5 benchmark results across 2 sources
+**score 82.1** ±1.1 · #8 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ OpenAI · released 2026-04 · closed weights
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▄▄▃●▁   #15 of 334*     17%      2
-math         ▁▂▃▅▆▅▄█▄▁●▁   #10 of 400*     68%      2
-web search   ▂▂▂▆▄█▃●▁▁·▁    #14 of 81*     17%      2
+agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #15 of 300*     17%      2
+math         ▁▂▃▅▆▅▄█▄▁●▁   #10 of 398*     68%      2
+web search   ▂▁▂▆▄█▃●▁▁·▁    #14 of 80*     17%      2
 </pre>
 
-<details><summary>agent tasks · #15 of 334 · 17% of its score</summary>
+<details><summary>agent tasks · #15 of 300 · 17% of its score</summary>
 
 Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #10 of 400 · 68% of its score</summary>
+<details><summary>math · #10 of 398 · 68% of its score</summary>
 
 Beats [Claude Opus 5](claude-opus-5.md) here, though they rank higher overall. Trails [Claude Mythos Preview (limited preview)](claude-mythos-preview.md), [Claude Fable 5](claude-fable-5.md), [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                       result  vs the others in its run  difficulty         
 
 </details>
 
-<details><summary>web search · #14 of 81 · 17% of its score</summary>
+<details><summary>web search · #14 of 80 · 17% of its score</summary>
 
 Beats [Claude Fable 5.1](claude-fable-5-1.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md), [Claude Opus 5](claude-opus-5.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

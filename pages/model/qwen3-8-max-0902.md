@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · closed weights
 
-**score 76.0** ±0.8 · #34 of 949 · from 10 benchmark results across 4 sources
+**score 76.0** ±0.8 · #34 of 719 · from 10 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Alibaba · released 2026-09 · closed weights
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▄▄▃●▁   #22 of 334*     10%      2
-coding       ▁▁▁▃▆██▇▆▄●▁   #11 of 469*     11%      1
-math         ▁▂▃▅▆▅▄█●▁▁▁    #25 of 400     56%      3
+agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #22 of 300*     10%      2
+coding       ▁▁▁▃▆██▇▆▄●▁   #11 of 458*     11%      1
+math         ▁▂▃▅▆▅▄█●▁▁▁    #25 of 398     56%      3
 </pre>
 
-<details><summary>agent tasks · #22 of 334 · 10% of its score</summary>
+<details><summary>agent tasks · #22 of 300 · 10% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #11 of 469 · 11% of its score</summary>
+<details><summary>coding · #11 of 458 · 11% of its score</summary>
 
 Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Fable 5](claude-fable-5.md), [GPT-5.5](gpt-5-5.md) here, though they rank higher overall.
 
@@ -42,7 +42,7 @@ test                       result  vs the others in its run    difficulty  count
 
 </details>
 
-<details><summary>math · #25 of 400 · 56% of its score</summary>
+<details><summary>math · #25 of 398 · 56% of its score</summary>
 
 Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3-8-flash.md), [Grok 4.6](grok-4-6.md) here, though they rank higher overall.
 

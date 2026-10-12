@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 72.71B params · tongyi-qianwen
 
-**score 49.4** ±1.3 · #462 of 949 · from 4 benchmark results across 2 sources
+**score 49.4** ±1.3 · #355 of 719 · from 4 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Alibaba · released 2024-08 · 72.71B params · tongyi-qianwen
 
 <pre>
 task  vs the others         rank  counts  tests
-math  ▁▂▃▅▆●▄█▄▁▁▁   #225 of 400     37%      3
+math  ▁▂▃▅▆●▄█▄▁▁▁   #223 of 398     37%      3
 </pre>
 
-<details><summary>math · #225 of 400 · 37% of its score</summary>
+<details><summary>math · #223 of 398 · 37% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 

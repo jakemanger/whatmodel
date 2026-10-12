@@ -14,11 +14,11 @@ Google · released 2025-02 · proprietary
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇█●▅▄▂▁   #207 of 549*     45%      1
-math    ▁▂▃▅▇▅●█▄▁▁▁   #201 of 464*     25%      1
+coding  ▁▁▁▃▅▇█●▅▄▃▁   #199 of 524*     45%      1
+math    ▁▂▃▅▇▅●█▄▁▁▁   #199 of 462*     25%      1
 </pre>
 
-<details><summary>coding · #207 of 549 · 45% of its score</summary>
+<details><summary>coding · #199 of 524 · 45% of its score</summary>
 
 Beats [Qwen3.5 9B](qwen3-5-9b.md), [Devstral 2 (2512)](devstral-2.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #201 of 464 · 25% of its score</summary>
+<details><summary>math · #199 of 462 · 25% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 

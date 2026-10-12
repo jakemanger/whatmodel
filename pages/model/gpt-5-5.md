@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-04 · closed weights
 
-**score 80.1** ±0.5 · #14 of 949 · from 68 benchmark results across 21 sources
+**score 80.1** ±0.5 · #14 of 719 · from 68 benchmark results across 21 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ OpenAI · released 2026-04 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄▃●▁    #25 of 334     26%     22
-coding              ▁▁▁▃▆██▇▆●▃▁    #46 of 469    9.0%      6
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●   #19 of 466*    2.1%      2
-math                ▁▂▃▅▆▅▄█▄▁●▁    #11 of 400     37%     18
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄    #21 of 150    3.0%      3
-web search          ▂▂▂▆▄●▃▃▁▁·▁     #22 of 81    6.7%      6
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #25 of 300     26%     22
+coding              ▁▁▁▃▆██▇▆●▃▁    #46 of 458    9.0%      6
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #19 of 393*    2.1%      2
+math                ▁▂▃▅▆▅▄█▄▁●▁    #11 of 398     37%     18
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #21 of 147    3.0%      3
+web search          ▂▁▂▆▄●▃▃▁▁·▁     #22 of 80    6.7%      6
 </pre>
 
-<details><summary>agent tasks · #25 of 334 · 26% of its score</summary>
+<details><summary>agent tasks · #25 of 300 · 26% of its score</summary>
 
 Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #46 of 469 · 9.0% of its score</summary>
+<details><summary>coding · #46 of 458 · 9.0% of its score</summary>
 
 Trails [Mistral Large 4 (public preview)](mistral-large-4.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md) here, though they rank lower overall.
 
@@ -70,7 +70,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #19 of 466 · 2.1% of its score</summary>
+<details><summary>chat &amp; writing · #19 of 393 · 2.1% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank lower overall.
 
@@ -82,7 +82,7 @@ test                              result  vs the others in its run    difficulty
 
 </details>
 
-<details><summary>math · #11 of 400 · 37% of its score</summary>
+<details><summary>math · #11 of 398 · 37% of its score</summary>
 
 Beats [Claude Opus 5](claude-opus-5.md), [GPT-5.4 Pro](gpt-5-4-pro.md) here, though they rank higher overall.
 
@@ -110,7 +110,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #21 of 150 · 3.0% of its score</summary>
+<details><summary>vision &amp; documents · #21 of 147 · 3.0% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Gemini 3.5 Flash](gemini-3-5-flash.md), [Claude Opus 4.6](claude-opus-4-6.md) here, though they rank lower overall.
 
@@ -123,7 +123,7 @@ test                               result  vs the others in its run    difficult
 
 </details>
 
-<details><summary>web search · #22 of 81 · 6.7% of its score</summary>
+<details><summary>web search · #22 of 80 · 6.7% of its score</summary>
 
 Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

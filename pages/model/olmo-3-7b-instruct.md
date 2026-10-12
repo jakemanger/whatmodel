@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 45.5** ±0.8 · #571 of 949 · from 29 benchmark results across 5 sources
+**score 45.5** ±0.8 · #434 of 719 · from 29 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▄▄▃▂▁   #321 of 334    3.4%      3
-coding          ▁▁▁▃▆●█▇▆▄▃▁   #345 of 469     14%      5
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #235 of 466    4.4%      2
-math            ▁▂▃▅▆●▄█▄▁▁▁   #202 of 400     20%      4
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #288 of 300    3.4%      3
+coding          ▁▁▁▃▆●█▇▆▄▃▁   #340 of 458     14%      5
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #218 of 393    4.4%      2
+math            ▁▂▃▅▆●▄█▄▁▁▁   #200 of 398     20%      4
 </pre>
 
-<details><summary>agent tasks · #321 of 334 · 3.4% of its score</summary>
+<details><summary>agent tasks · #288 of 300 · 3.4% of its score</summary>
 
 Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #345 of 469 · 14% of its score</summary>
+<details><summary>coding · #340 of 458 · 14% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #235 of 466 · 4.4% of its score</summary>
+<details><summary>chat &amp; writing · #218 of 393 · 4.4% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #202 of 400 · 20% of its score</summary>
+<details><summary>math · #200 of 398 · 20% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall.
 

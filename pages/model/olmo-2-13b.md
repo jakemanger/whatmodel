@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-12 · 13.72B params · apache-2.0
 
-**score 46.3** ±1.4 · #546 of 949 · from 11 benchmark results across 3 sources
+**score 46.3** ±1.4 · #414 of 719 · from 11 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Allen Institute for AI · released 2024-12 · 13.72B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #265 of 466*     15%      2
-math            ▁▂▃●▆▅▄█▄▁▁▁   #323 of 400*     19%      2
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #246 of 393*     15%      2
+math            ▁▂▃●▆▅▄█▄▁▁▁   #321 of 398*     19%      2
 </pre>
 
-<details><summary>chat &amp; writing · #265 of 466 · 15% of its score</summary>
+<details><summary>chat &amp; writing · #246 of 393 · 15% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #323 of 400 · 19% of its score</summary>
+<details><summary>math · #321 of 398 · 19% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [Gemma 2 9B IT](gemma-2-9b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
 

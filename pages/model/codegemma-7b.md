@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 8.54B params · gemma
 
-**score 38.2** ±0.6 · #748 of 949 · from 14 benchmark results across 4 sources
+**score 38.2** ±0.6 · #559 of 719 · from 14 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Google · released 2024-03 · 8.54B params · gemma
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁    #401 of 469     94%      9
-math    ▁▂▃●▆▅▄█▄▁▁▁   #296 of 400*    2.5%      2
+coding  ▁▁▁▃●██▇▆▄▃▁    #393 of 458     94%      9
+math    ▁▂▃●▆▅▄█▄▁▁▁   #294 of 398*    2.5%      2
 </pre>
 
-<details><summary>coding · #401 of 469 · 94% of its score</summary>
+<details><summary>coding · #393 of 458 · 94% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #296 of 400 · 2.5% of its score</summary>
+<details><summary>math · #294 of 398 · 2.5% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 

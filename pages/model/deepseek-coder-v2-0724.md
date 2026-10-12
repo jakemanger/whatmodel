@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-09 · 235.74B params (21B active) · other (deepseek-license)
 
-**score 53.0** ±1.0 · #370 of 949 · from 6 benchmark results across 3 sources
+**score 53.0** ±1.0 · #300 of 719 · from 6 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ DeepSeek · released 2024-09 · 235.74B params (21B active) · other (deepseek-l
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆●▆▅▄▄▃▂▁   #256 of 334*    2.0%      1
-coding       ▁▁▁▃▆██●▆▄▃▁   #193 of 469*     38%      2
-math         ▁▂▃▅●▅▄█▄▁▁▁   #282 of 400*    7.6%      1
+agent tasks  ▁▁▃▆●▆▅▅▅▄▃▁   #233 of 300*    2.0%      1
+coding       ▁▁▁▃▆██●▆▄▃▁   #191 of 458*     38%      2
+math         ▁▂▃▅●▅▄█▄▁▁▁   #280 of 398*    7.6%      1
 </pre>
 
-<details><summary>agent tasks · #256 of 334 · 2.0% of its score</summary>
+<details><summary>agent tasks · #233 of 300 · 2.0% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #193 of 469 · 38% of its score</summary>
+<details><summary>coding · #191 of 458 · 38% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #282 of 400 · 7.6% of its score</summary>
+<details><summary>math · #280 of 398 · 7.6% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 

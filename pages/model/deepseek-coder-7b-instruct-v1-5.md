@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-01 · 6.91B params · deepseek
 
-**score 47.6** ±0.7 · #503 of 949 · from 9 benchmark results across 3 sources
+**score 47.6** ±0.7 · #386 of 719 · from 9 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ DeepSeek · released 2024-01 · 6.91B params · deepseek
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #295 of 469     86%      7
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #291 of 458     86%      7
 </pre>
 
-<details><summary>coding · #295 of 469 · 86% of its score</summary>
+<details><summary>coding · #291 of 458 · 86% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 

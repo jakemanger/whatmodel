@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-07 · 1.28B params · exaone
 
-**score 46.9** ±1.5 · #526 of 949 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 46.9** ±1.5 · #401 of 719 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ LG AI Research · released 2025-07 · 1.28B params · exaone
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▄▄▃▂▁    #298 of 334     16%      3
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #316 of 466*    6.0%      1
-math            ▁▂▃▅●▅▄█▄▁▁▁   #253 of 400*     34%      2
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁    #269 of 300     16%      3
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #283 of 393*    6.0%      1
+math            ▁▂▃▅●▅▄█▄▁▁▁   #251 of 398*     34%      2
 </pre>
 
-<details><summary>agent tasks · #298 of 334 · 16% of its score</summary>
+<details><summary>agent tasks · #269 of 300 · 16% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                   result  vs the others in its run   difficulty        coun
 
 </details>
 
-<details><summary>chat &amp; writing · #316 of 466 · 6.0% of its score</summary>
+<details><summary>chat &amp; writing · #283 of 393 · 6.0% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #253 of 400 · 34% of its score</summary>
+<details><summary>math · #251 of 398 · 34% of its score</summary>
 
 Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-10 · 70.6B params · llama3.1
 
-**score 51.8** ±0.9 · #395 of 949 · from 19 benchmark results across 10 sources
+**score 51.8** ±0.9 · #315 of 719 · from 19 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ NVIDIA · released 2024-10 · 70.6B params · llama3.1
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁   #270 of 469*     17%      2
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂    #229 of 466     40%      6
-math            ▁▂▃▅●▅▄█▄▁▁▁   #289 of 400*    9.0%      2
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #266 of 458*     17%      2
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #213 of 393     40%      6
+math            ▁▂▃▅●▅▄█▄▁▁▁   #287 of 398*    9.0%      2
 </pre>
 
-<details><summary>coding · #270 of 469 · 17% of its score</summary>
+<details><summary>coding · #266 of 458 · 17% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #229 of 466 · 40% of its score</summary>
+<details><summary>chat &amp; writing · #213 of 393 · 40% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Gemma 2 9B IT SimPO](gemma-2-9b-simpo.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #289 of 400 · 9.0% of its score</summary>
+<details><summary>math · #287 of 398 · 9.0% of its score</summary>
 
 Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [StarCoder2 15B](starcoder2-15b.md) here, though they rank lower overall.
 

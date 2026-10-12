@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-08 · 7B params · llama2
 
-**score 32.8** ±1.2 · #828 of 949 · from 10 benchmark results across 7 sources
+**score 32.8** ±1.2 · #619 of 719 · from 10 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ LMSYS · released 2023-08 · 7B params · llama2
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #437 of 466     52%      4
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #371 of 393     52%      4
 </pre>
 
-<details><summary>chat &amp; writing · #437 of 466 · 52% of its score</summary>
+<details><summary>chat &amp; writing · #371 of 393 · 52% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Minotaur 13B (fixed)](minotaur-13b-fixed.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run   difficulty                counts  why

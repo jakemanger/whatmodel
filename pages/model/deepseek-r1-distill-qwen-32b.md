@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 32.8B params · mit
 
-**score 55.9** ±0.9 · #289 of 949 · from 28 benchmark results across 11 sources
+**score 55.9** ±0.9 · #246 of 719 · from 28 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ DeepSeek · released 2025-01 · 32.8B params · mit
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #250 of 469     19%      8
-math    ▁▂▃▅▆▅●█▄▁▁▁   #172 of 400     39%      7
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #247 of 458     19%      8
+math    ▁▂▃▅▆▅●█▄▁▁▁   #171 of 398     39%      7
 </pre>
 
-<details><summary>coding · #250 of 469 · 19% of its score</summary>
+<details><summary>coding · #247 of 458 · 19% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #172 of 400 · 39% of its score</summary>
+<details><summary>math · #171 of 398 · 39% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Tencent · released 2026-08 · 770B params (49B active) · apache-2.0
 
-**score 79.1** ±1.1 · #16 of 949 · from 15 benchmark results across 2 sources
+**score 79.1** ±1.1 · #16 of 719 · from 15 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Tencent · released 2026-08 · 770B params (49B active) · apache-2.0
 
 <pre>
 task         vs the others        rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▄▄▃●▁   #21 of 334     55%      8
-coding       ▁▁▁▃▆██▇▆▄●▁   #18 of 469     32%      3
+agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #21 of 300     55%      8
+coding       ▁▁▁▃▆██▇▆▄●▁   #18 of 458     32%      3
 math         █····█·····●     #1 of 3*    2.5%      1
 web search   █·······█··●     #1 of 3*    5.6%      2
 </pre>
 
-<details><summary>agent tasks · #21 of 334 · 55% of its score</summary>
+<details><summary>agent tasks · #21 of 300 · 55% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md), [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #18 of 469 · 32% of its score</summary>
+<details><summary>coding · #18 of 458 · 32% of its score</summary>
 
 Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 

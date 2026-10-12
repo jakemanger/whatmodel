@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 52.9** ±0.8 · #373 of 949 · from 25 benchmark results across 5 sources
+**score 52.9** ±0.8 · #301 of 719 · from 25 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁   #233 of 469     10%      4
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #209 of 466    4.7%      2
-math            ▁▂▃▅▆▅●█▄▁▁▁   #158 of 400     29%      4
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #230 of 458     10%      4
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #197 of 393    4.7%      2
+math            ▁▂▃▅▆▅●█▄▁▁▁   #157 of 398     29%      4
 </pre>
 
-<details><summary>coding · #233 of 469 · 10% of its score</summary>
+<details><summary>coding · #230 of 458 · 10% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #209 of 466 · 4.7% of its score</summary>
+<details><summary>chat &amp; writing · #197 of 393 · 4.7% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #158 of 400 · 29% of its score</summary>
+<details><summary>math · #157 of 398 · 29% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall.
 

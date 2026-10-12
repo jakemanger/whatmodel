@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 8.19B params · nvidia-open-model-license
 
-**score 58.6** ±1.0 · #244 of 949 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 58.6** ±1.0 · #211 of 719 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ NVIDIA · released 2025-12 · 8.19B params · nvidia-open-model-license
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁   #208 of 334*    7.4%      2
-coding          ▁▁▁▃▆██●▆▄▃▁    #194 of 469     53%      4
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #110 of 466*    1.9%      1
-math            ▁▂▃▅▆▅▄●▄▁▁▁   #131 of 400*     18%      2
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #194 of 300*    7.4%      2
+coding          ▁▁▁▃▆██●▆▄▃▁    #192 of 458     53%      4
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #108 of 393*    1.9%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁   #131 of 398*     18%      2
 </pre>
 
-<details><summary>agent tasks · #208 of 334 · 7.4% of its score</summary>
+<details><summary>agent tasks · #194 of 300 · 7.4% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                      result  vs the others in its run    difficulty        
 
 </details>
 
-<details><summary>coding · #194 of 469 · 53% of its score</summary>
+<details><summary>coding · #192 of 458 · 53% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #110 of 466 · 1.9% of its score</summary>
+<details><summary>chat &amp; writing · #108 of 393 · 1.9% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5.4 nano](gpt-5-4-nano.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank higher overall.
 
@@ -57,7 +57,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #131 of 400 · 18% of its score</summary>
+<details><summary>math · #131 of 398 · 18% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 

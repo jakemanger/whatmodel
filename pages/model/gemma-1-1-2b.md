@@ -6,7 +6,7 @@
 
 Google · released 2024-04 · 2.51B params · gemma
 
-**score 28.8** ±0.9 · #867 of 949 · from 9 benchmark results across 7 sources
+**score 28.8** ±0.9 · #650 of 719 · from 9 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Google · released 2024-04 · 2.51B params · gemma
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁●▆██▇▆▄▃▁   #450 of 469     80%      3
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #438 of 466     15%      3
+coding          ▁▁▁●▆██▇▆▄▃▁   #440 of 458     80%      3
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #372 of 393     15%      3
 </pre>
 
-<details><summary>coding · #450 of 469 · 80% of its score</summary>
+<details><summary>coding · #440 of 458 · 80% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -31,9 +31,9 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #438 of 466 · 15% of its score</summary>
+<details><summary>chat &amp; writing · #372 of 393 · 15% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Minotaur 13B (fixed)](minotaur-13b-fixed.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why

@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-07 · closed weights
 
-**score 81.7** ±0.5 · #10 of 949 · from 54 benchmark results across 20 sources
+**score 81.7** ±0.5 · #10 of 719 · from 54 benchmark results across 20 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ OpenAI · released 2026-07 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄▃●▁    #11 of 334     27%     14
-coding              ▁▁▁▃▆██▇▆▄●▁    #19 of 469     12%      6
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●   #15 of 466*    2.2%      1
-math                ▁▂▃▅▆▅▄█▄▁●▁     #7 of 400     32%      7
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇█●    #11 of 150    4.4%      6
-web search          ▂▂▂▆▄█▃●▁▁·▁     #7 of 81*    2.7%      2
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #11 of 300     27%     14
+coding              ▁▁▁▃▆██▇▆▄●▁    #19 of 458     12%      6
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #15 of 393*    2.2%      1
+math                ▁▂▃▅▆▅▄█▄▁●▁     #7 of 398     32%      7
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇█●    #11 of 147    4.4%      6
+web search          ▂▁▂▆▄█▃●▁▁·▁     #7 of 80*    2.7%      2
 </pre>
 
-<details><summary>agent tasks · #11 of 334 · 27% of its score</summary>
+<details><summary>agent tasks · #11 of 300 · 27% of its score</summary>
 
 Beats [GPT-5.5 Pro](gpt-5-5-pro.md) here, though they rank higher overall. Trails [Claude Mythos Preview (limited preview)](claude-mythos-preview.md), [Claude Fable 5](claude-fable-5.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #19 of 469 · 12% of its score</summary>
+<details><summary>coding · #19 of 458 · 12% of its score</summary>
 
 Trails [Grok 4.7](grok-4-7.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #15 of 466 · 2.2% of its score</summary>
+<details><summary>chat &amp; writing · #15 of 393 · 2.2% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md), [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank lower overall.
 
@@ -73,7 +73,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #7 of 400 · 32% of its score</summary>
+<details><summary>math · #7 of 398 · 32% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [Claude Opus 5](claude-opus-5.md), [GPT-5.5 Pro](gpt-5-5-pro.md) here, though they rank higher overall. Trails [Claude Fable 5](claude-fable-5.md) here, though they rank lower overall.
 
@@ -90,7 +90,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #11 of 150 · 4.4% of its score</summary>
+<details><summary>vision &amp; documents · #11 of 147 · 4.4% of its score</summary>
 
 Beats [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Fable 5.1](claude-fable-5-1.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Claude Opus 4.7](claude-opus-4-7.md), [Muse Spark 1.2](muse-spark-1-2.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md) here, though they rank lower overall.
 
@@ -106,7 +106,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #7 of 81 · 2.7% of its score</summary>
+<details><summary>web search · #7 of 80 · 2.7% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall. Trails [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4.1 mini](gpt-4-1-mini.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 32.3B params · cc-by-nc-4.0
 
-**score 46.0** ±1.0 · #555 of 949 · from 16 benchmark results across 9 sources
+**score 46.0** ±1.0 · #421 of 719 · from 16 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Cohere · released 2024-08 · 32.3B params · cc-by-nc-4.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁●▆█▆▅▄▄▃▂▁   #313 of 334*    5.7%      1
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #341 of 469     37%      6
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #301 of 466*    8.3%      1
+agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #281 of 300*    5.7%      1
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #336 of 458     37%      6
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #275 of 393*    8.3%      1
 </pre>
 
-<details><summary>agent tasks · #313 of 334 · 5.7% of its score</summary>
+<details><summary>agent tasks · #281 of 300 · 5.7% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                      result  vs the others in its run  difficulty      coun
 
 </details>
 
-<details><summary>coding · #341 of 469 · 37% of its score</summary>
+<details><summary>coding · #336 of 458 · 37% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #301 of 466 · 8.3% of its score</summary>
+<details><summary>chat &amp; writing · #275 of 393 · 8.3% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
 

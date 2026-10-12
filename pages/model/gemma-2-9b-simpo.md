@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-07 · 9.24B params · mit
 
-**score 59.2** ±1.3 · #232 of 949 · from 4 benchmark results across 4 sources
+**score 59.2** ±1.3 · #205 of 719 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Princeton NLP · released 2024-07 · 9.24B params · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #232 of 466*     79%      2
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #216 of 393*     79%      2
 </pre>
 
-<details><summary>chat &amp; writing · #232 of 466 · 79% of its score</summary>
+<details><summary>chat &amp; writing · #216 of 393 · 79% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md), [Gemma 3n E4B](gemma-3n-e4b.md) here, though they rank lower overall.
 

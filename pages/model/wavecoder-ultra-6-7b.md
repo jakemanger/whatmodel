@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · mit
 
-**score 48.1** ±0.9 · #497 of 949 · from 3 benchmark results across 1 source
+**score 48.1** ±0.9 · #381 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Microsoft · released 2024-04 · mit
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #288 of 469    100%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #284 of 458    100%      3
 </pre>
 
-<details><summary>coding · #288 of 469 · 100% of its score</summary>
+<details><summary>coding · #284 of 458 · 100% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 

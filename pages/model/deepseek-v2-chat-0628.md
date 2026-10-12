@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-07 · 235.74B params (21B active) · other (deepseek)
 
-**score 53.5** ±1.0 · #358 of 949 · from 6 benchmark results across 3 sources
+**score 53.5** ±1.0 · #291 of 719 · from 6 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ DeepSeek · released 2024-07 · 235.74B params (21B active) · other (deepseek)
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #201 of 469*     35%      2
-math    ▁▂▃▅●▅▄█▄▁▁▁   #262 of 400*    6.7%      1
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #199 of 458*     35%      2
+math    ▁▂▃▅●▅▄█▄▁▁▁   #260 of 398*    6.7%      1
 </pre>
 
-<details><summary>coding · #201 of 469 · 35% of its score</summary>
+<details><summary>coding · #199 of 458 · 35% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #262 of 400 · 6.7% of its score</summary>
+<details><summary>math · #260 of 398 · 6.7% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md) here, though they rank lower overall.
 

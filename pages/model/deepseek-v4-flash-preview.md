@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-04 · 284B params (13B active) · mit
 
-**score 71.7** ±0.5 · #71 of 949 · from 58 benchmark results across 10 sources
+**score 71.7** ±0.5 · #68 of 719 · from 58 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ DeepSeek · released 2026-04 · 284B params (13B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▄●▃▂▁    #65 of 334     24%     13
-coding          ▁▁▁▃▆██▇▆●▃▁    #72 of 469     22%      7
-chat &amp; writing  ▁▁▁▄▆▅▆█▆▆●▂   #67 of 466*    2.7%      1
-math            ▁▂▃▅▆▅▄█●▁▁▁    #46 of 400     28%     13
-web search      ▂▂●▆▄█▃▃▁▁·▁    #70 of 81*    2.8%      2
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁    #65 of 300     24%     13
+coding          ▁▁▁▃▆██▇▆●▃▁    #71 of 458     22%      7
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #67 of 393*    2.7%      1
+math            ▁▂▃▅▆▅▄█●▁▁▁    #46 of 398     28%     13
+web search      ▂▁●▆▄█▃▃▁▁·▁    #70 of 80*    2.8%      2
 </pre>
 
-<details><summary>agent tasks · #65 of 334 · 24% of its score</summary>
+<details><summary>agent tasks · #65 of 300 · 24% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #72 of 469 · 22% of its score</summary>
+<details><summary>coding · #71 of 458 · 22% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
 
@@ -61,7 +61,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #67 of 466 · 2.7% of its score</summary>
+<details><summary>chat &amp; writing · #67 of 393 · 2.7% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [Qwen3.8 27B](qwen3-8-27b.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [Gemma 4 31B](gemma-4-31b.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank lower overall.
 
@@ -72,7 +72,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #46 of 400 · 28% of its score</summary>
+<details><summary>math · #46 of 398 · 28% of its score</summary>
 
 Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [GPT-5 Pro](gpt-5-pro.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md) here, though they rank lower overall.
 
@@ -95,7 +95,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #70 of 81 · 2.8% of its score</summary>
+<details><summary>web search · #70 of 80 · 2.8% of its score</summary>
 
 Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 

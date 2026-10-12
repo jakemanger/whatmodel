@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 3.82B params · mit
 
-**score 38.1** ±1.6 · #751 of 949 · from 5 benchmark results across 5 sources
+**score 38.1** ±1.6 · #562 of 719 · from 5 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Microsoft · released 2024-04 · 3.82B params · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #430 of 466*     48%      2
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #365 of 393*     48%      2
 </pre>
 
-<details><summary>chat &amp; writing · #430 of 466 · 48% of its score</summary>
+<details><summary>chat &amp; writing · #365 of 393 · 48% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 

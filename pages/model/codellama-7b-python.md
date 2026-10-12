@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 36.8** ±1.0 · #774 of 949 · from 6 benchmark results across 3 sources
+**score 36.8** ±1.0 · #579 of 719 · from 6 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Meta · released 2023-08 · 6.74B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃●██▇▆▄▃▁   #407 of 469     79%      4
+coding  ▁▁▁▃●██▇▆▄▃▁   #398 of 458     79%      4
 </pre>
 
-<details><summary>coding · #407 of 469 · 79% of its score</summary>
+<details><summary>coding · #398 of 458 · 79% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Code Llama 7B Instruct](codellama-7b-instruct.md) here, though they rank lower overall.
 

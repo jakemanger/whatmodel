@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-03 · 32.2B params · apache-2.0
 
-**score 49.3** ±1.3 · #463 of 949 · from 14 benchmark results across 5 sources
+**score 49.3** ±1.3 · #356 of 719 · from 14 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Ai2 · released 2025-03 · 32.2B params · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #293 of 466     27%      3
-math            ▁▂▃●▆▅▄█▄▁▁▁   #320 of 400     20%      3
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #269 of 393     27%      3
+math            ▁▂▃●▆▅▄█▄▁▁▁   #318 of 398     20%      3
 </pre>
 
-<details><summary>chat &amp; writing · #293 of 466 · 27% of its score</summary>
+<details><summary>chat &amp; writing · #269 of 393 · 27% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #320 of 400 · 20% of its score</summary>
+<details><summary>math · #318 of 398 · 20% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
 

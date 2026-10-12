@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-05 · 4.15B params · mit
 
-**score 41.4** ±1.8 · #683 of 949 · from 9 benchmark results across 4 sources
+**score 41.4** ±1.8 · #510 of 719 · from 9 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Microsoft · released 2024-05 · 4.15B params · mit
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▂▃●▆▅▄█▄▁▁▁   #305 of 400*    6.3%      1
-vision &amp; documents  ●▁▃▂▁▃▄▃▆▇█▄    #150 of 150     99%      9
+math                ▁▂▃●▆▅▄█▄▁▁▁   #303 of 398*    6.3%      1
+vision &amp; documents  ●▁▃▂▁▃▄▂▆▇█▄    #147 of 147     99%      9
 </pre>
 
-<details><summary>math · #305 of 400 · 6.3% of its score</summary>
+<details><summary>math · #303 of 398 · 6.3% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
@@ -29,9 +29,9 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #150 of 150 · 99% of its score</summary>
+<details><summary>vision &amp; documents · #147 of 147 · 99% of its score</summary>
 
-Trails [LLaVA-v1.6-Vicuna-13B](llava-v1-6-vicuna-13b.md), [Qwen2-VL 2B Instruct](qwen2-vl-2b.md), [Phi-3.5-vision-instruct](phi-3-5-vision-instruct.md) here, though they rank lower overall.
+Trails [Qwen2-VL 2B Instruct](qwen2-vl-2b.md), [Phi-3.5-vision-instruct](phi-3-5-vision-instruct.md), [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why

@@ -14,14 +14,14 @@ SpaceXAI (xAI) · released 2025-04 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂●█▆▅▄▄▃▂▁   #294 of 374*    9.3%      2
-coding          ▁▁▁▃▅▇█●▅▄▂▁   #162 of 549*     36%      2
-chat &amp; writing  ▁▁▁▃▅▅▆█●▆▆▂   #191 of 579*     10%      1
-math            ▁▂▃▅▇▅●█▄▁▁▁    #179 of 464     22%      3
-web search      ▂▁▂▇▅█▃▄▁▂●▁      #4 of 96*    7.4%      1
+agent tasks     ▁▁▂●█▆▅▄▄▃▂▁   #270 of 340*    9.3%      2
+coding          ▁▁▁▃▅▇█●▅▄▃▁   #158 of 524*     36%      2
+chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #168 of 463*     10%      1
+math            ▁▂▃▅▇▅●█▄▁▁▁    #178 of 462     22%      3
+web search      ▂·▂▇▅█▃▄▁▂●▁      #4 of 92*    7.4%      1
 </pre>
 
-<details><summary>agent tasks · #294 of 374 · 9.3% of its score</summary>
+<details><summary>agent tasks · #270 of 340 · 9.3% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #162 of 549 · 36% of its score</summary>
+<details><summary>coding · #158 of 524 · 36% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #191 of 579 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #168 of 463 · 10% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [Nemotron 3 Super 120B-A12B](nemotron-3-super-120b-a12b.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #179 of 464 · 22% of its score</summary>
+<details><summary>math · #178 of 462 · 22% of its score</summary>
 
 Beats [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Nemotron Nano 9B v2](nemotron-nano-9b-v2.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank lower overall.
 
@@ -69,7 +69,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #4 of 96 · 7.4% of its score</summary>
+<details><summary>web search · #4 of 92 · 7.4% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall.
 

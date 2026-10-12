@@ -6,7 +6,7 @@
 
 TII · released 2023-09 · 180B params · falcon-180b-tii-license
 
-**score 38.2** ±1.8 · #747 of 949 · from 4 benchmark results across 3 sources
+**score 38.2** ±1.8 · #558 of 719 · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ TII · released 2023-09 · 180B params · falcon-180b-tii-license
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #414 of 466*     58%      2
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #353 of 393*     58%      2
 </pre>
 
-<details><summary>chat &amp; writing · #414 of 466 · 58% of its score</summary>
+<details><summary>chat &amp; writing · #353 of 393 · 58% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

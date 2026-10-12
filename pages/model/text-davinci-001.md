@@ -14,10 +14,10 @@ OpenAI · released 2022-01 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ●▁▁▃▅▅▆█▆▆▆▂   #573 of 579*     78%      2
+chat &amp; writing  ●▁▁▃▅▄▆█▇▇▇▃   #458 of 463*     78%      2
 </pre>
 
-<details><summary>chat &amp; writing · #573 of 579 · 78% of its score</summary>
+<details><summary>chat &amp; writing · #458 of 463 · 78% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md) here, though they rank lower overall.
 

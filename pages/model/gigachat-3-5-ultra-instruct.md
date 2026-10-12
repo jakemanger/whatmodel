@@ -6,7 +6,7 @@
 
 Sber · released 2026-07 · 433.77B params (28B active) · mit
 
-**score 55.0** ±1.3 · #318 of 949 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.0** ±1.3 · #267 of 719 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Sber · released 2026-07 · 433.77B params (28B active) · mit
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▃▂▁    #174 of 334     20%      3
-coding       ▁▁▁▃▆█●▇▆▄▃▁   #239 of 469*     22%      2
-math         ▁▂▃▅▆●▄█▄▁▁▁    #209 of 400     48%      4
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #164 of 300     20%      3
+coding       ▁▁▁▃▆█●▇▆▄▃▁   #236 of 458*     22%      2
+math         ▁▂▃▅▆●▄█▄▁▁▁    #207 of 398     48%      4
 </pre>
 
-<details><summary>agent tasks · #174 of 334 · 20% of its score</summary>
+<details><summary>agent tasks · #164 of 300 · 20% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>coding · #239 of 469 · 22% of its score</summary>
+<details><summary>coding · #236 of 458 · 22% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #209 of 400 · 48% of its score</summary>
+<details><summary>math · #207 of 398 · 48% of its score</summary>
 
 Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 

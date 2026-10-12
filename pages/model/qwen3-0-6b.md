@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 0.75B params · apache-2.0
 
-**score 33.4** ±1.0 · #820 of 949 · from 26 benchmark results across 10 sources
+**score 33.4** ±1.0 · #613 of 719 · from 26 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2025-04 · 0.75B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▄▄▃▂▁   #295 of 334*    3.7%      2
-coding          ▁▁●▃▆██▇▆▄▃▁   #462 of 469*    9.3%      2
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #351 of 466*    4.0%      1
-math            ▁▂▃●▆▅▄█▄▁▁▁    #329 of 400     26%      4
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #266 of 300*    3.7%      2
+coding          ▁▁●▃▆██▇▆▄▃▁   #451 of 458*    9.3%      2
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #301 of 393*    4.0%      1
+math            ▁▂▃●▆▅▄█▄▁▁▁    #327 of 398     26%      4
 </pre>
 
-<details><summary>agent tasks · #295 of 334 · 3.7% of its score</summary>
+<details><summary>agent tasks · #266 of 300 · 3.7% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Bielik 11B v2.3 Instruct](bielik-11b-v2-3-instruct.md) here, though they rank higher overall.
 
@@ -32,7 +32,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #462 of 469 · 9.3% of its score</summary>
+<details><summary>coding · #451 of 458 · 9.3% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md), [Falcon3 1B Instruct](falcon3-1b.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test              result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #351 of 466 · 4.0% of its score</summary>
+<details><summary>chat &amp; writing · #301 of 393 · 4.0% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #329 of 400 · 26% of its score</summary>
+<details><summary>math · #327 of 398 · 26% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall.
 

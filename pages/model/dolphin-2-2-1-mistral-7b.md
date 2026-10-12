@@ -6,7 +6,7 @@
 
 Cognitive Computations · released 2023-10 · 7.24B params · apache-2.0
 
-**score 36.7** ±1.7 · #776 of 949 · from 3 benchmark results across 3 sources
+**score 36.7** ±1.7 · #580 of 719 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Cognitive Computations · released 2023-10 · 7.24B params · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #412 of 466     99%      3
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #351 of 393     99%      3
 </pre>
 
-<details><summary>chat &amp; writing · #412 of 466 · 99% of its score</summary>
+<details><summary>chat &amp; writing · #351 of 393 · 99% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

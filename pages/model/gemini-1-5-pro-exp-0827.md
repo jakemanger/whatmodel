@@ -14,11 +14,11 @@ Google · released 2024-08 · proprietary
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▅▇█●▅▄▂▁   #240 of 549*     24%      2
-math    ▁▂▃▅▇●▅█▄▁▁▁   #229 of 464*     10%      1
+coding  ▁▁▁▃▅▇█●▅▄▃▁   #231 of 524*     24%      2
+math    ▁▂▃▅▇●▅█▄▁▁▁   #227 of 462*     10%      1
 </pre>
 
-<details><summary>coding · #240 of 549 · 24% of its score</summary>
+<details><summary>coding · #231 of 524 · 24% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #229 of 464 · 10% of its score</summary>
+<details><summary>math · #227 of 462 · 10% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [OpenThinker2 7B](openthinker2-7b.md) here, though they rank lower overall.
 

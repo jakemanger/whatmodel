@@ -6,7 +6,7 @@
 
 Cohere · released 2025-03 · 111B params · cc-by-nc-4.0
 
-**score 57.2** ±1.0 · #273 of 949 · from 22 benchmark results across 6 sources
+**score 57.2** ±1.0 · #232 of 719 · from 22 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Cohere · released 2025-03 · 111B params · cc-by-nc-4.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁    #198 of 334     27%      6
-coding          ▁▁▁▃▆█●▇▆▄▃▁    #223 of 469     38%      5
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #160 of 466*    8.9%      2
-math            ▁▂▃▅●▅▄█▄▁▁▁   #245 of 400*    9.0%      2
-web search      ▂▂▂▆●█▃▃▁▁·▁     #44 of 81*    4.3%      1
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #185 of 300     27%      6
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #220 of 458     38%      5
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #154 of 393*    8.9%      2
+math            ▁▂▃▅●▅▄█▄▁▁▁   #243 of 398*    9.0%      2
+web search      ▂▁▂▆●█▃▃▁▁·▁     #44 of 80*    4.3%      1
 </pre>
 
-<details><summary>agent tasks · #198 of 334 · 27% of its score</summary>
+<details><summary>agent tasks · #185 of 300 · 27% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #223 of 469 · 38% of its score</summary>
+<details><summary>coding · #220 of 458 · 38% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -52,7 +52,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #160 of 466 · 8.9% of its score</summary>
+<details><summary>chat &amp; writing · #154 of 393 · 8.9% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -64,7 +64,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #245 of 400 · 9.0% of its score</summary>
+<details><summary>math · #243 of 398 · 9.0% of its score</summary>
 
 Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md), [OpenThinker 7B](openthinker-7b.md) here, though they rank lower overall.
 
@@ -76,7 +76,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>web search · #44 of 81 · 4.3% of its score</summary>
+<details><summary>web search · #44 of 80 · 4.3% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.7 Max](qwen3-7-max.md), [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

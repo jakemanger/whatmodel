@@ -6,7 +6,7 @@
 
 Meituan · released 2026-06 · 1600B params (48B active) · mit
 
-**score 72.6** ±2.0 · #61 of 949 · from 7 benchmark results across 2 sources
+**score 72.6** ±2.0 · #59 of 719 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Meituan · released 2026-06 · 1600B params (48B active) · mit
 
 <pre>
 task            vs the others            rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▄●▃▂▁      #71 of 334*     23%      6
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁      #71 of 300*     23%      6
 coding                         not ranked yet       —      2
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂     #135 of 466*    4.9%      1
-math            ▁▂▃▅▆▅▄█●▁▁▁      #57 of 400*     14%      1
-web search      ▂▂▂▆▄●▃▃▁▁·▁       #38 of 81*     13%      2
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃     #131 of 393*    4.9%      1
+math            ▁▂▃▅▆▅▄█●▁▁▁      #57 of 398*     14%      1
+web search      ▂▁▂▆▄●▃▃▁▁·▁       #38 of 80*     13%      2
 </pre>
 
-<details><summary>agent tasks · #71 of 334 · 23% of its score</summary>
+<details><summary>agent tasks · #71 of 300 · 23% of its score</summary>
 
 Beats [GPT-5 Pro](gpt-5-pro.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [MiniMax-M3](minimax-m3.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                          result  vs the others in its run  difficulty      
 
 </details>
 
-<details><summary>chat &amp; writing · #135 of 466 · 4.9% of its score</summary>
+<details><summary>chat &amp; writing · #131 of 393 · 4.9% of its score</summary>
 
 Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #57 of 400 · 14% of its score</summary>
+<details><summary>math · #57 of 398 · 14% of its score</summary>
 
 Trails [INTELLECT-3](intellect-3.md), [GLM-4.7](glm-4-7.md), [A.X K2 (688B-A33B)](ax-k2.md) here, though they rank lower overall.
 
@@ -69,7 +69,7 @@ test                   result  vs the others in its run  difficulty      counts 
 
 </details>
 
-<details><summary>web search · #38 of 81 · 13% of its score</summary>
+<details><summary>web search · #38 of 80 · 13% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.7 Max](qwen3-7-max.md), [Gemini 3.5 Flash](gemini-3-5-flash.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

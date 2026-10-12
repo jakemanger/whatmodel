@@ -14,13 +14,13 @@ OpenAI · released 2024-09 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂▆█●▅▄▄▃▂▁    #180 of 374    5.6%      4
-coding          ▁▁▁▃▅▇█●▅▄▂▁    #175 of 549     41%     12
-chat &amp; writing  ▁▁▁▃▅▅▆█●▆▆▂   #227 of 579*    5.6%      2
-math            ▁▂▃▅▇▅●█▄▁▁▁    #184 of 464     15%      9
+agent tasks     ▁▁▂▆█●▅▄▄▃▂▁    #173 of 340    5.6%      4
+coding          ▁▁▁▃▅▇█●▅▄▃▁    #171 of 524     41%     12
+chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #196 of 463*    5.6%      2
+math            ▁▂▃▅▇▅●█▄▁▁▁    #183 of 462     15%      9
 </pre>
 
-<details><summary>agent tasks · #180 of 374 · 5.6% of its score</summary>
+<details><summary>agent tasks · #173 of 340 · 5.6% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #175 of 549 · 41% of its score</summary>
+<details><summary>coding · #171 of 524 · 41% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #227 of 579 · 5.6% of its score</summary>
+<details><summary>chat &amp; writing · #196 of 463 · 5.6% of its score</summary>
 
 Beats [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 
@@ -68,7 +68,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #184 of 464 · 15% of its score</summary>
+<details><summary>math · #183 of 462 · 15% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Nemotron Nano 9B v2](nemotron-nano-9b-v2.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank lower overall.
 

@@ -3,6 +3,7 @@ import { benchmarks, comparisonSets, hardware, modelsIn, results, setsForCells, 
 import type { BoardData } from "./board.ts";
 import { modelIcon } from "./icons.ts";
 import type { Category } from "./types.ts";
+import { listedByDefault } from "./fit.ts";
 import type { BenchSpeed } from "./measured.ts";
 import { TASKS } from "./tasks.ts";
 import { toCells } from "./score.ts";
@@ -43,4 +44,11 @@ export function boardData(cat: Category): BoardData {
   };
   cache.set(cat, data);
   return data;
+}
+
+// Whether a model is on its category's leaderboards by default (lib/fit.ts listedByDefault).
+const counts = new Map<Category, Map<string, number>>();
+export function listedModel(cat: Category, id: string) {
+  if (!counts.has(cat)) counts.set(cat, new Map(boardData(cat).sets[0]?.scores.map((s) => [s.id, s.n]) ?? []));
+  return listedByDefault(cat, counts.get(cat)!.get(id));
 }

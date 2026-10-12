@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 357B params (32B active) · mit
 
-**score 68.7** ±0.7 · #101 of 949 · from 48 benchmark results across 11 sources
+**score 68.7** ±0.7 · #98 of 719 · from 48 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Z.ai · released 2025-12 · 357B params (32B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▄▃▂▁    #90 of 334     37%     11
-coding          ▁▁▁▃▆██▇▆●▃▁    #75 of 469     17%      4
-chat &amp; writing  ▁▁▁▄▆▅▆█▆▆●▂   #62 of 466*    4.1%      1
-math            ▁▂▃▅▆▅▄█●▁▁▁    #55 of 400     16%      7
-web search      ▂▂▂●▄█▃▃▁▁·▁     #68 of 81     11%      4
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #90 of 300     37%     11
+coding          ▁▁▁▃▆██▇▆●▃▁    #74 of 458     17%      4
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #62 of 393*    4.1%      1
+math            ▁▂▃▅▆▅▄█●▁▁▁    #55 of 398     16%      7
+web search      ▂▁▂●▄█▃▃▁▁·▁     #68 of 80     11%      4
 </pre>
 
-<details><summary>agent tasks · #90 of 334 · 37% of its score</summary>
+<details><summary>agent tasks · #90 of 300 · 37% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [Qwen3.6 35B-A3B](qwen3-6-35b-a3b.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #75 of 469 · 17% of its score</summary>
+<details><summary>coding · #74 of 458 · 17% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank higher overall.
 
@@ -56,7 +56,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #62 of 466 · 4.1% of its score</summary>
+<details><summary>chat &amp; writing · #62 of 393 · 4.1% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [Qwen3.8 27B](qwen3-8-27b.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Gemma 4 31B](gemma-4-31b.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Claude Sonnet 4.5](claude-sonnet-4-5.md) here, though they rank lower overall.
 
@@ -67,7 +67,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #55 of 400 · 16% of its score</summary>
+<details><summary>math · #55 of 398 · 16% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md) here, though they rank lower overall.
 
@@ -84,7 +84,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #68 of 81 · 11% of its score</summary>
+<details><summary>web search · #68 of 80 · 11% of its score</summary>
 
 Beats [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 

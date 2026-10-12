@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-09 · 1020B params (42B active) · mit
 
-**score 79.2** ±1.1 · #15 of 949 · from 13 benchmark results across 2 sources
+**score 79.2** ±1.1 · #15 of 719 · from 13 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Xiaomi · released 2026-09 · 1020B params (42B active) · mit
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄▃●▁    #17 of 334     50%      7
-coding              ▁▁▁▃▆██▇▆▄●▁   #23 of 469*     21%      2
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●   #20 of 466*     11%      1
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄   #50 of 150*    7.5%      1
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁    #17 of 300     50%      7
+coding              ▁▁▁▃▆██▇▆▄●▁   #23 of 458*     21%      2
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #20 of 393*     11%      1
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄   #50 of 147*    7.5%      1
 </pre>
 
-<details><summary>agent tasks · #17 of 334 · 50% of its score</summary>
+<details><summary>agent tasks · #17 of 300 · 50% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md) here, though they rank higher overall. Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #23 of 469 · 21% of its score</summary>
+<details><summary>coding · #23 of 458 · 21% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                           result  vs the others in its run   difficulty    
 
 </details>
 
-<details><summary>chat &amp; writing · #20 of 466 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #20 of 393 · 11% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #50 of 150 · 7.5% of its score</summary>
+<details><summary>vision &amp; documents · #50 of 147 · 7.5% of its score</summary>
 
 Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Gemma 4 31B](gemma-4-31b.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 

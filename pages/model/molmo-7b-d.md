@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-09 · 8.02B params · apache-2.0
 
-**score 40.5** ±1.4 · #703 of 949 · from 21 benchmark results across 5 sources
+**score 40.5** ±1.4 · #525 of 719 · from 21 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Ai2 · released 2024-09 · 8.02B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁●▁▃▆██▇▆▄▃▁   #464 of 469*    5.6%      1
-math                ▁●▃▅▆▅▄█▄▁▁▁    #385 of 400     14%      2
-vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄    #139 of 150     75%     14
+coding              ▁●▁▃▆██▇▆▄▃▁   #453 of 458*    5.6%      1
+math                ▁●▃▅▆▅▄█▄▁▁▁    #383 of 398     14%      2
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #137 of 147     75%     14
 </pre>
 
-<details><summary>coding · #464 of 469 · 5.6% of its score</summary>
+<details><summary>coding · #453 of 458 · 5.6% of its score</summary>
 
 Trails [Phi-1 (1.3B)](phi-1.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md), [Falcon3 1B Instruct](falcon3-1b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test       result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>math · #385 of 400 · 14% of its score</summary>
+<details><summary>math · #383 of 398 · 14% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.1 1B-A400M Instruct](granite-3-1-1b-a400m.md), [Gemma 2B (base)](gemma-2b-base.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                       result  vs the others in its run  difficulty        c
 
 </details>
 
-<details><summary>vision &amp; documents · #139 of 150 · 75% of its score</summary>
+<details><summary>vision &amp; documents · #137 of 147 · 75% of its score</summary>
 
 Beats [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Gemma 3 4B](gemma-3-4b.md), [CogVLM2 Llama3 Chat 19B](cogvlm2-llama3-chat-19b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 

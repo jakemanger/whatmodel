@@ -6,7 +6,7 @@
 
 INF (infly) · released 2024-11 · 7.77B params · other (inf)
 
-**score 51.2** ±0.9 · #409 of 949 · from 5 benchmark results across 2 sources
+**score 51.2** ±0.9 · #323 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ INF (infly) · released 2024-11 · 7.77B params · other (inf)
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #245 of 469     94%      3
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #242 of 458     94%      3
 </pre>
 
-<details><summary>coding · #245 of 469 · 94% of its score</summary>
+<details><summary>coding · #242 of 458 · 94% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
 

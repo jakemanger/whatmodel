@@ -6,7 +6,7 @@
 
 Xwin-LM · released 2023-09 · 70B params · llama2
 
-**score 43.9** ±1.2 · #616 of 949 · from 7 benchmark results across 2 sources
+**score 43.9** ±1.2 · #463 of 719 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Xwin-LM · released 2023-09 · 70B params · llama2
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #400 of 469*    8.9%      1
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #337 of 466*     49%      2
-math            ▁▂▃▅●▅▄█▄▁▁▁   #265 of 400*    7.4%      1
+coding          ▁▁▁▃●██▇▆▄▃▁   #392 of 458*    8.9%      1
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #293 of 393*     49%      2
+math            ▁▂▃▅●▅▄█▄▁▁▁   #263 of 398*    7.4%      1
 </pre>
 
-<details><summary>coding · #400 of 469 · 8.9% of its score</summary>
+<details><summary>coding · #392 of 458 · 8.9% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                       result  vs the others in its run  difficulty         
 
 </details>
 
-<details><summary>chat &amp; writing · #337 of 466 · 49% of its score</summary>
+<details><summary>chat &amp; writing · #293 of 393 · 49% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #265 of 400 · 7.4% of its score</summary>
+<details><summary>math · #263 of 398 · 7.4% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [InternVL2-4B](internvl2-4b.md) here, though they rank lower overall.
 

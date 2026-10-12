@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-09 · 51.5B params · nvidia-open-model-license
 
-**score 51.0** ±1.8 · #414 of 949 · from 6 benchmark results across 2 sources
+**score 51.0** ±1.8 · #325 of 719 · from 6 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ NVIDIA · released 2024-09 · 51.5B params · nvidia-open-model-license
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #259 of 466*     28%      1
-math            ▁▂▃▅●▅▄█▄▁▁▁   #234 of 400*     18%      1
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #240 of 393*     28%      1
+math            ▁▂▃▅●▅▄█▄▁▁▁   #232 of 398*     18%      1
 </pre>
 
-<details><summary>chat &amp; writing · #259 of 466 · 28% of its score</summary>
+<details><summary>chat &amp; writing · #240 of 393 · 28% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #234 of 400 · 18% of its score</summary>
+<details><summary>math · #232 of 398 · 18% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [OpenThinker 7B](openthinker-7b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Mistral · released 2024-11 · 124B params · mistral-research
 
-**score 54.3** ±2.7 · #341 of 949 · from 4 benchmark results across 2 sources
+**score 54.3** ±2.7 · #283 of 719 · from 4 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Mistral · released 2024-11 · 124B params · mistral-research
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▂▃▅▆●▄█▄▁▁▁   #219 of 400*     22%      1
-vision &amp; documents  ▁▁▃▂▁●▄▃▆▇█▄    #114 of 150     97%      4
+math                ▁▂▃▅▆●▄█▄▁▁▁   #217 of 398*     22%      1
+vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄    #112 of 147     97%      4
 </pre>
 
-<details><summary>math · #219 of 400 · 22% of its score</summary>
+<details><summary>math · #217 of 398 · 22% of its score</summary>
 
 Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #114 of 150 · 97% of its score</summary>
+<details><summary>vision &amp; documents · #112 of 147 · 97% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [Gemma 4 E4B](gemma-4-e4b.md), [Gemma 3 27B](gemma-3-27b.md), [Qwen2.5-VL 32B Instruct](qwen2-5-vl-32b.md) here, though they rank lower overall.
 

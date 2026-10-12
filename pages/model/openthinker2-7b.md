@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-04 · 7.62B params · apache-2.0
 
-**score 49.3** ±1.7 · #464 of 949 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 49.3** ±1.7 · #357 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Open Thoughts · released 2025-04 · 7.62B params · apache-2.0
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #294 of 469*    7.5%      1
-math    ▁▂▃▅▆●▄█▄▁▁▁    #196 of 400     59%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #290 of 458*    7.5%      1
+math    ▁▂▃▅▆●▄█▄▁▁▁    #194 of 398     59%      3
 </pre>
 
-<details><summary>coding · #294 of 469 · 7.5% of its score</summary>
+<details><summary>coding · #290 of 458 · 7.5% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                    result  vs the others in its run  difficulty        coun
 
 </details>
 
-<details><summary>math · #196 of 400 · 59% of its score</summary>
+<details><summary>math · #194 of 398 · 59% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank lower overall.
 

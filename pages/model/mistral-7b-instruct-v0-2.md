@@ -6,7 +6,7 @@
 
 Mistral · released 2023-12 · 7.24B params · apache-2.0
 
-**score 35.9** ±0.5 · #791 of 949 · from 24 benchmark results across 15 sources
+**score 35.9** ±0.5 · #592 of 719 · from 24 benchmark results across 15 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Mistral · released 2023-12 · 7.24B params · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #415 of 469     63%      6
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #405 of 466     11%      4
+coding          ▁▁▁▃●██▇▆▄▃▁   #406 of 458     63%      6
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #345 of 393     11%      4
 </pre>
 
-<details><summary>coding · #415 of 469 · 63% of its score</summary>
+<details><summary>coding · #406 of 458 · 63% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [DeepSeek LLM 7B Chat](deepseek-llm-7b-chat.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #405 of 466 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #345 of 393 · 11% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

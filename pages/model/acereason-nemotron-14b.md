@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-05 · 14.77B params · nvidia-open-model-license
 
-**score 50.7** ±1.8 · #421 of 949 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.7** ±1.8 · #330 of 719 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ NVIDIA · released 2025-05 · 14.77B params · nvidia-open-model-license
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #287 of 469     99%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #283 of 458     99%      3
 </pre>
 
-<details><summary>coding · #287 of 469 · 99% of its score</summary>
+<details><summary>coding · #283 of 458 · 99% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Google · released 2026-02 · closed weights
 
-**score 75.2** ±0.5 · #38 of 949 · from 63 benchmark results across 29 sources
+**score 75.2** ±0.5 · #38 of 719 · from 63 benchmark results across 29 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Google · released 2026-02 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄●▃▂▁    #59 of 334     14%     10
-coding              ▁▁▁▃▆██▇▆●▃▁    #64 of 469    7.1%      4
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●   #14 of 466*    2.2%      2
-math                ▁▂▃▅▆▅▄█●▁▁▁    #29 of 400     46%     20
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄    #19 of 150    6.0%      7
-web search          ▂▂▂▆●█▃▃▁▁·▁     #50 of 81    2.3%      3
+agent tasks         ▁▁▃▆█▆▅▅●▄▃▁    #59 of 300     14%     10
+coding              ▁▁▁▃▆██▇▆●▃▁    #63 of 458    7.1%      4
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #14 of 393*    2.2%      2
+math                ▁▂▃▅▆▅▄█●▁▁▁    #29 of 398     46%     20
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #19 of 147    6.0%      7
+web search          ▂▁▂▆●█▃▃▁▁·▁     #50 of 80    2.3%      3
 </pre>
 
-<details><summary>agent tasks · #59 of 334 · 14% of its score</summary>
+<details><summary>agent tasks · #59 of 300 · 14% of its score</summary>
 
 Trails [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                                     result  vs the others in its run  diffi
 
 </details>
 
-<details><summary>coding · #64 of 469 · 7.1% of its score</summary>
+<details><summary>coding · #63 of 458 · 7.1% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [MiniMax-M3](minimax-m3.md), [Ornith 1.5 35B-A3B](ornith-1-5-35b-a3b.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #14 of 466 · 2.2% of its score</summary>
+<details><summary>chat &amp; writing · #14 of 393 · 2.2% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Claude Opus 4.6](claude-opus-4-6.md), [Muse Spark 1.1](muse-spark-1-1.md), [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank lower overall.
 
@@ -68,7 +68,7 @@ test                              result  vs the others in its run    difficulty
 
 </details>
 
-<details><summary>math · #29 of 400 · 46% of its score</summary>
+<details><summary>math · #29 of 398 · 46% of its score</summary>
 
 Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3-8-flash.md), [DeepSeek V4 Pro (0813)](deepseek-v4-pro.md) here, though they rank higher overall. Trails [Qwen3.7 Max](qwen3-7-max.md) here, though they rank lower overall.
 
@@ -98,7 +98,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #19 of 150 · 6.0% of its score</summary>
+<details><summary>vision &amp; documents · #19 of 147 · 6.0% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash](gemini-3-5-flash.md), [Claude Opus 4.6](claude-opus-4-6.md), [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank lower overall.
 
@@ -115,7 +115,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #50 of 81 · 2.3% of its score</summary>
+<details><summary>web search · #50 of 80 · 2.3% of its score</summary>
 
 Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

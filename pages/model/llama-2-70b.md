@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 69B params · llama2
 
-**score 40.7** ±0.9 · #697 of 949 · from 22 benchmark results across 6 sources
+**score 40.7** ±0.9 · #519 of 719 · from 22 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Meta · released 2023-07 · 69B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #420 of 469     20%      3
-math    ▁▂▃●▆▅▄█▄▁▁▁   #304 of 400     11%      2
+coding  ▁▁▁●▆██▇▆▄▃▁   #411 of 458     20%      3
+math    ▁▂▃●▆▅▄█▄▁▁▁   #302 of 398     11%      2
 </pre>
 
-<details><summary>coding · #420 of 469 · 20% of its score</summary>
+<details><summary>coding · #411 of 458 · 20% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Code Llama 7B (base)](codellama-7b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                       result  vs the others in its run  difficulty         
 
 </details>
 
-<details><summary>math · #304 of 400 · 11% of its score</summary>
+<details><summary>math · #302 of 398 · 11% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 

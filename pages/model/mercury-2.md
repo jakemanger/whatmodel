@@ -14,11 +14,11 @@ Inception · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▂▁   #241 of 549*     63%      1
-chat &amp; writing  ▁▁▁▃▅▅▆█●▆▆▂   #228 of 579*     35%      1
+coding          ▁▁▁▃▅▇●▇▅▄▃▁   #232 of 524*     63%      1
+chat &amp; writing  ▁▁▁▃▅▄▆█●▇▇▃   #197 of 463*     35%      1
 </pre>
 
-<details><summary>coding · #241 of 549 · 63% of its score</summary>
+<details><summary>coding · #232 of 524 · 63% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                       result  vs the others in its run  difficulty  counts 
 
 </details>
 
-<details><summary>chat &amp; writing · #228 of 579 · 35% of its score</summary>
+<details><summary>chat &amp; writing · #197 of 463 · 35% of its score</summary>
 
 Beats [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank lower overall.
 

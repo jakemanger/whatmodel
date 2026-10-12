@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 35.1** ±1.4 · #802 of 949 · from 8 benchmark results across 3 sources
+**score 35.1** ±1.4 · #600 of 719 · from 8 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; 
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁●▃▆██▇▆▄▃▁   #451 of 469*     15%      1
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #425 of 466*     38%      2
-math            ▁▂●▅▆▅▄█▄▁▁▁   #349 of 400*    8.3%      1
+coding          ▁▁●▃▆██▇▆▄▃▁   #441 of 458*     15%      1
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #362 of 393*     38%      2
+math            ▁▂●▅▆▅▄█▄▁▁▁   #347 of 398*    8.3%      1
 </pre>
 
-<details><summary>coding · #451 of 469 · 15% of its score</summary>
+<details><summary>coding · #441 of 458 · 15% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Gemma 1.1 2B IT](gemma-1-1-2b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>chat &amp; writing · #425 of 466 · 38% of its score</summary>
+<details><summary>chat &amp; writing · #362 of 393 · 38% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #349 of 400 · 8.3% of its score</summary>
+<details><summary>math · #347 of 398 · 8.3% of its score</summary>
 
 Beats [Command R Plus (04-2024)](command-r-plus-04-2024.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md), [Yi 34B Chat](yi-34b-chat.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 

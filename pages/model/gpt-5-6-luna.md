@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-07 · closed weights
 
-**score 76.8** ±0.5 · #29 of 949 · from 37 benchmark results across 10 sources
+**score 76.8** ±0.5 · #29 of 719 · from 37 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ OpenAI · released 2026-07 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄●▂▁    #37 of 334     21%      9
-coding              ▁▁▁▃▆██▇▆●▃▁    #44 of 469     10%      4
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #53 of 466*    2.6%      1
-math                ▁▂▃▅▆▅▄█▄●▁▁    #15 of 400     40%      3
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄    #38 of 150    5.5%      5
-web search          ▂▂▂▆▄█●▃▁▁·▁    #21 of 81*    2.7%      1
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #37 of 300     21%      9
+coding              ▁▁▁▃▆██▇▆●▃▁    #44 of 458     10%      4
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #53 of 393*    2.6%      1
+math                ▁▂▃▅▆▅▄█▄●▁▁    #15 of 398     40%      3
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #38 of 147    5.5%      5
+web search          ▂▁▂▆▄█●▃▁▁·▁    #21 of 80*    2.7%      1
 </pre>
 
-<details><summary>agent tasks · #37 of 334 · 21% of its score</summary>
+<details><summary>agent tasks · #37 of 300 · 21% of its score</summary>
 
 Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Claude Sonnet 5](claude-sonnet-5.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                     result  vs the others in its run  diffi
 
 </details>
 
-<details><summary>coding · #44 of 469 · 10% of its score</summary>
+<details><summary>coding · #44 of 458 · 10% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall. Trails [Mistral Large 4 (public preview)](mistral-large-4.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #53 of 466 · 2.6% of its score</summary>
+<details><summary>chat &amp; writing · #53 of 393 · 2.6% of its score</summary>
 
 Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [Gemma 4 31B](gemma-4-31b.md), [Claude Sonnet 4.5](claude-sonnet-4-5.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md) here, though they rank lower overall.
 
@@ -66,7 +66,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #15 of 400 · 40% of its score</summary>
+<details><summary>math · #15 of 398 · 40% of its score</summary>
 
 Beats [Qwen3.8 Max (2.4T-A95B)](qwen3-8-2-4t-a95b.md), [Claude Opus 4.8](claude-opus-4-8.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall.
 
@@ -79,7 +79,7 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #38 of 150 · 5.5% of its score</summary>
+<details><summary>vision &amp; documents · #38 of 147 · 5.5% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Qwen3.6 Plus](qwen3-6-plus.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank lower overall.
 
@@ -94,7 +94,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #21 of 81 · 2.7% of its score</summary>
+<details><summary>web search · #21 of 80 · 2.7% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [Claude Opus 4.8](claude-opus-4-8.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

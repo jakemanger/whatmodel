@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 70B params · MIT; underlying Llama 3.3 licence applies to weights
 
-**score 58.1** ±1.0 · #250 of 949 · from 18 benchmark results across 7 sources
+**score 58.1** ±1.0 · #216 of 719 · from 18 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ DeepSeek · released 2025-01 · 70B params · MIT; underlying Llama 3.3 licence 
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁   #246 of 469     14%      5
-math    ▁▂▃▅▆▅●█▄▁▁▁   #167 of 400     37%      5
+coding  ▁▁▁▃▆█●▇▆▄▃▁   #243 of 458     14%      5
+math    ▁▂▃▅▆▅●█▄▁▁▁   #166 of 398     37%      5
 </pre>
 
-<details><summary>coding · #246 of 469 · 14% of its score</summary>
+<details><summary>coding · #243 of 458 · 14% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md), [Mistral Small Instruct 22B (2409)](mistral-small-2409.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #167 of 400 · 37% of its score</summary>
+<details><summary>math · #166 of 398 · 37% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Nemotron Nano 9B v2](nemotron-nano-9b-v2.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md) here, though they rank lower overall.
 

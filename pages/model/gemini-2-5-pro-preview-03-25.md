@@ -14,11 +14,11 @@ Google · released 2025-04 · proprietary
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▂▆█▆●▄▄▃▂▁   #155 of 374*    3.1%      1
-coding       ▁▁▁▃▅▇█▇●▄▂▁   #124 of 549*     95%      2
+agent tasks  ▁▁▂▆█▆●▄▄▃▂▁   #152 of 340*    3.1%      1
+coding       ▁▁▁▃▅▇█▇●▄▃▁   #121 of 524*     95%      2
 </pre>
 
-<details><summary>agent tasks · #155 of 374 · 3.1% of its score</summary>
+<details><summary>agent tasks · #152 of 340 · 3.1% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #124 of 549 · 95% of its score</summary>
+<details><summary>coding · #121 of 524 · 95% of its score</summary>
 
 Beats [Grok 4.3](grok-4-3.md), [Qwen3.5 Plus](qwen3-5-plus.md), [DeepSeek V3.2](deepseek-v3-2.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-05 · 7.62B params · apache-2.0
 
-**score 50.4** ±0.9 · #427 of 949 · from 17 benchmark results across 3 sources
+**score 50.4** ±0.9 · #335 of 719 · from 17 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Open Thoughts · released 2025-05 · 7.62B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁    #256 of 469     10%      3
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #396 of 466*    5.0%      2
-math            ▁▂▃▅▆▅●█▄▁▁▁    #168 of 400     37%      4
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #253 of 458     10%      3
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #338 of 393*    5.0%      2
+math            ▁▂▃▅▆▅●█▄▁▁▁    #167 of 398     37%      4
 </pre>
 
-<details><summary>coding · #256 of 469 · 10% of its score</summary>
+<details><summary>coding · #253 of 458 · 10% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test              result  vs the others in its run  difficulty        counts  wh
 
 </details>
 
-<details><summary>chat &amp; writing · #396 of 466 · 5.0% of its score</summary>
+<details><summary>chat &amp; writing · #338 of 393 · 5.0% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #168 of 400 · 37% of its score</summary>
+<details><summary>math · #167 of 398 · 37% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall.
 

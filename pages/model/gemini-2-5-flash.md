@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · closed weights
 
-**score 61.5** ±0.7 · #202 of 949 · from 42 benchmark results across 16 sources
+**score 61.5** ±0.7 · #183 of 719 · from 42 benchmark results across 16 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Google · released 2025-06 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▄▄▃▂▁    #192 of 334     24%     10
-coding              ▁▁▁▃▆██●▆▄▃▁    #200 of 469     14%      4
-chat &amp; writing      ▁▁▁▄▆▅▆█▆●▆▂   #105 of 466*    6.8%      2
-math                ▁▂▃▅▆▅▄●▄▁▁▁     #85 of 400    6.5%      4
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄     #76 of 150     16%      7
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #180 of 300     24%     10
+coding              ▁▁▁▃▆██●▆▄▃▁    #198 of 458     14%      4
+chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #103 of 393*    6.8%      2
+math                ▁▂▃▅▆▅▄●▄▁▁▁     #85 of 398    6.5%      4
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄     #76 of 147     16%      7
 </pre>
 
-<details><summary>agent tasks · #192 of 334 · 24% of its score</summary>
+<details><summary>agent tasks · #180 of 300 · 24% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #200 of 469 · 14% of its score</summary>
+<details><summary>coding · #198 of 458 · 14% of its score</summary>
 
 Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #105 of 466 · 6.8% of its score</summary>
+<details><summary>chat &amp; writing · #103 of 393 · 6.8% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall.
 
@@ -67,7 +67,7 @@ test                              result  vs the others in its run    difficulty
 
 </details>
 
-<details><summary>math · #85 of 400 · 6.5% of its score</summary>
+<details><summary>math · #85 of 398 · 6.5% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall.
 
@@ -81,7 +81,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>vision &amp; documents · #76 of 150 · 16% of its score</summary>
+<details><summary>vision &amp; documents · #76 of 147 · 16% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall.
 

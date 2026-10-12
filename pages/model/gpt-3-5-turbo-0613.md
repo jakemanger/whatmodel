@@ -14,12 +14,12 @@ OpenAI · released 2023-06 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▂▁    #340 of 549     18%      4
-chat &amp; writing  ▁▁▁▃▅●▆█▆▆▆▂    #436 of 579     45%      4
-math            ▁▂▃▅▇●▅█▄▁▁▁   #252 of 464*    2.9%      1
+coding          ▁▁▁▃▅▇●▇▅▄▃▁    #324 of 524     18%      4
+chat &amp; writing  ▁▁▁▃▅●▆█▇▇▇▃    #352 of 463     45%      4
+math            ▁▂▃▅▇●▅█▄▁▁▁   #250 of 462*    2.9%      1
 </pre>
 
-<details><summary>coding · #340 of 549 · 18% of its score</summary>
+<details><summary>coding · #324 of 524 · 18% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #436 of 579 · 45% of its score</summary>
+<details><summary>chat &amp; writing · #352 of 463 · 45% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                                      result  vs the others 
 
 </details>
 
-<details><summary>math · #252 of 464 · 2.9% of its score</summary>
+<details><summary>math · #250 of 462 · 2.9% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 

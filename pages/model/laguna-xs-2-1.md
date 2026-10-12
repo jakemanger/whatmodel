@@ -6,7 +6,7 @@
 
 Poolside · released 2026-06 · 33B params (3B active) · openmdw-1.1
 
-**score 65.6** ±2.4 · #146 of 949 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 65.6** ±2.4 · #137 of 719 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Poolside · released 2026-06 · 33B params (3B active) · openmdw-1.1
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  █●█········█       #3 of 4     97%      4
-coding       ▁▁▁▃▆██▇●▄▃▁   #108 of 469     69%      3
+agent tasks  █···●······█       #2 of 3     97%      4
+coding       ▁▁▁▃▆██▇●▄▃▁   #107 of 458     69%      3
 </pre>
 
-<details><summary>agent tasks · #3 of 4 · 97% of its score</summary>
+<details><summary>agent tasks · #2 of 3 · 97% of its score</summary>
 
 <pre>
 test                          result  vs the others in its run   difficulty           counts  why
@@ -30,7 +30,7 @@ test                          result  vs the others in its run   difficulty     
 
 </details>
 
-<details><summary>coding · #108 of 469 · 69% of its score</summary>
+<details><summary>coding · #107 of 458 · 69% of its score</summary>
 
 Beats [Grok 4.3](grok-4-3.md), [Qwen3.5 Plus](qwen3-5-plus.md), [DeepSeek V3.2](deepseek-v3-2.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md) here, though they rank lower overall.
 

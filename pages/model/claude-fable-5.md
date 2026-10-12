@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-06 · closed weights
 
-**score 81.4** ±0.5 · #11 of 949 · from 47 benchmark results across 11 sources
+**score 81.4** ±0.5 · #11 of 719 · from 47 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Anthropic · released 2026-06 · closed weights
 
 <pre>
 task                vs the others        rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄▃▂●    #8 of 334     32%     14
-coding              ▁▁▁▃▆██▇▆▄●▁   #14 of 469     16%      7
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●   #2 of 466*    2.2%      1
-math                ▁▂▃▅▆▅▄█▄▁●▁    #6 of 400     31%     11
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇█●    #3 of 150    3.4%      4
-web search          ▂▂▂▆▄█●▃▁▁·▁    #19 of 81    3.1%      3
+agent tasks         ▁▁▃▆█▆▅▅▅▄▃●    #8 of 300     32%     14
+coding              ▁▁▁▃▆██▇▆▄●▁   #14 of 458     16%      7
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #2 of 393*    2.2%      1
+math                ▁▂▃▅▆▅▄█▄▁●▁    #6 of 398     31%     11
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇█●    #3 of 147    3.4%      4
+web search          ▂▁▂▆▄█●▃▁▁·▁    #19 of 80    3.1%      3
 </pre>
 
-<details><summary>agent tasks · #8 of 334 · 32% of its score</summary>
+<details><summary>agent tasks · #8 of 300 · 32% of its score</summary>
 
 Beats [GPT-5.5 Pro](gpt-5-5-pro.md), [Gemini 4 Argon (limited preview)](gemini-4-argon.md), [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank higher overall.
 
@@ -46,7 +46,7 @@ test                                    result  vs the others in its run    diff
 
 </details>
 
-<details><summary>coding · #14 of 469 · 16% of its score</summary>
+<details><summary>coding · #14 of 458 · 16% of its score</summary>
 
 Beats [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank higher overall. Trails [Qwen3.8 Max (0902)](qwen3-8-max-0902.md), [Kimi K3](kimi-k3.md), [Muse Spark 1.3](muse-spark-1-3.md) here, though they rank lower overall.
 
@@ -63,7 +63,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #2 of 466 · 2.2% of its score</summary>
+<details><summary>chat &amp; writing · #2 of 393 · 2.2% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [GPT-6.1 Sol](gpt-6-1-sol.md) here, though they rank higher overall.
 
@@ -74,7 +74,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #6 of 400 · 31% of its score</summary>
+<details><summary>math · #6 of 398 · 31% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [Claude Opus 5](claude-opus-5.md), [GPT-5.5 Pro](gpt-5-5-pro.md) here, though they rank higher overall.
 
@@ -95,7 +95,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #3 of 150 · 3.4% of its score</summary>
+<details><summary>vision &amp; documents · #3 of 147 · 3.4% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall. Trails [Qwen3.8 Max (2.4T-A95B)](qwen3-8-2-4t-a95b.md), [Claude Mythos Preview (limited preview)](claude-mythos-preview.md) here, though they rank lower overall.
 
@@ -109,7 +109,7 @@ test                               result  vs the others in its run    difficult
 
 </details>
 
-<details><summary>web search · #19 of 81 · 3.1% of its score</summary>
+<details><summary>web search · #19 of 80 · 3.1% of its score</summary>
 
 Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

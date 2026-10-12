@@ -14,12 +14,12 @@
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▅▇●▇▅▄▂▁   #322 of 549*     20%      1
-chat &amp; writing  ▁▁▁▃▅▅▆●▆▆▆▂   #317 of 579*     20%      1
-math            ▁▂▃●▇▅▅█▄▁▁▁   #397 of 464*    7.8%      1
+coding          ▁▁▁▃▅▇●▇▅▄▃▁   #306 of 524*     20%      1
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #264 of 463*     20%      1
+math            ▁▂▃●▇▅▅█▄▁▁▁   #395 of 462*    7.8%      1
 </pre>
 
-<details><summary>coding · #322 of 549 · 20% of its score</summary>
+<details><summary>coding · #306 of 524 · 20% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md), [Phi-3 Medium 128K Instruct](phi-3-medium-128k-instruct.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                               result  vs the others in its run  difficulty 
 
 </details>
 
-<details><summary>chat &amp; writing · #317 of 579 · 20% of its score</summary>
+<details><summary>chat &amp; writing · #264 of 463 · 20% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #397 of 464 · 7.8% of its score</summary>
+<details><summary>math · #395 of 462 · 7.8% of its score</summary>
 
 Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 

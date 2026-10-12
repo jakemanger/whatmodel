@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-05 · 8.47B params (1.5B active) · lfm1.0
 
-**score 52.2** ±1.0 · #391 of 949 · from 29 benchmark results across 2 sources
+**score 52.2** ±1.0 · #312 of 719 · from 29 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Liquid AI · released 2026-05 · 8.47B params (1.5B active) · lfm1.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁    #230 of 334     17%      8
-coding          ▁▁▁▃●██▇▆▄▃▁    #388 of 469     18%      5
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #129 of 466*    1.7%      1
-math            ▁▂▃▅▆●▄█▄▁▁▁    #214 of 400     42%      4
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #213 of 300     17%      8
+coding          ▁▁▁▃●██▇▆▄▃▁    #381 of 458     18%      5
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #126 of 393*    1.7%      1
+math            ▁▂▃▅▆●▄█▄▁▁▁    #212 of 398     42%      4
 web search      █·█●██·▄▄·▄▄      #9 of 13*    2.5%      1
 </pre>
 
-<details><summary>agent tasks · #230 of 334 · 17% of its score</summary>
+<details><summary>agent tasks · #213 of 300 · 17% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                               result  vs the others in its run    difficult
 
 </details>
 
-<details><summary>coding · #388 of 469 · 18% of its score</summary>
+<details><summary>coding · #381 of 458 · 18% of its score</summary>
 
 Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #129 of 466 · 1.7% of its score</summary>
+<details><summary>chat &amp; writing · #126 of 393 · 1.7% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [o3-mini](o3-mini.md), [K-EXAONE (236B-A23B)](k-exaone-236b-a23b.md) here, though they rank higher overall.
 
@@ -65,7 +65,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #214 of 400 · 42% of its score</summary>
+<details><summary>math · #212 of 398 · 42% of its score</summary>
 
 Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 

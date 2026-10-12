@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-06 · 75.35B params (9.3B active) · openmdw-1.1
 
-**score 64.2** ±1.2 · #166 of 949 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 64.2** ±1.2 · #155 of 719 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ NVIDIA · released 2026-06 · 75.35B params (9.3B active) · openmdw-1.1
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆●▄▄▃▂▁    #138 of 334     51%      5
-coding       ▁▁▁▃▆██▇●▄▃▁   #132 of 469*     12%      3
-math         ▁▂▃▅▆▅▄●▄▁▁▁   #110 of 400*     17%      2
+agent tasks  ▁▁▃▆█▆●▅▅▄▃▁    #135 of 300     51%      5
+coding       ▁▁▁▃▆██▇●▄▃▁   #131 of 458*     12%      3
+math         ▁▂▃▅▆▅▄●▄▁▁▁   #110 of 398*     17%      2
 </pre>
 
-<details><summary>agent tasks · #138 of 334 · 51% of its score</summary>
+<details><summary>agent tasks · #135 of 300 · 51% of its score</summary>
 
-Beats [watt-tool-70B](watt-tool-70b.md), [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
+Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [GPT-4o (2024-05-13)](gpt-4o-2024-05-13.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run   difficulty            counts  why
@@ -34,7 +34,7 @@ test                       result  vs the others in its run   difficulty        
 
 </details>
 
-<details><summary>coding · #132 of 469 · 12% of its score</summary>
+<details><summary>coding · #131 of 458 · 12% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #110 of 400 · 17% of its score</summary>
+<details><summary>math · #110 of 398 · 17% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md), [gpt-oss-120b](gpt-oss-120b.md) here, though they rank lower overall.
 

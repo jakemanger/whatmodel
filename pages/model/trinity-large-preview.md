@@ -6,7 +6,7 @@
 
 Arcee AI · released 2026-01 · 398B params (13B active) · openmdw-1.1
 
-**score 58.9** ±2.1 · #237 of 949 · from 5 benchmark results across 3 sources
+**score 58.9** ±2.1 · #207 of 719 · from 5 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Arcee AI · released 2026-01 · 398B params (13B active) · openmdw-1.1
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #134 of 466*     41%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #130 of 393*     41%      1
 math            ●··········█       #2 of 2*    6.3%      1
 </pre>
 
-<details><summary>chat &amp; writing · #134 of 466 · 41% of its score</summary>
+<details><summary>chat &amp; writing · #130 of 393 · 41% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [o3-mini](o3-mini.md), [K-EXAONE (236B-A23B)](k-exaone-236b-a23b.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 

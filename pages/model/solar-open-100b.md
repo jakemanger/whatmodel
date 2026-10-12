@@ -6,7 +6,7 @@
 
 Upstage · released 2025-12 · 102.6B params (12B active) · upstage-solar-license
 
-**score 59.7** ±1.1 · #223 of 949 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 59.7** ±1.1 · #199 of 719 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Upstage · released 2025-12 · 102.6B params (12B active) · upstage-solar-licen
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▃▂▁    #170 of 334     20%      6
-coding       ▁▁▁▃▆●█▇▆▄▃▁   #317 of 469*    9.4%      2
-math         ▁▂▃▅▆▅●█▄▁▁▁   #178 of 400*     20%      2
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #161 of 300     20%      6
+coding       ▁▁▁▃▆●█▇▆▄▃▁   #313 of 458*    9.4%      2
+math         ▁▂▃▅▆▅●█▄▁▁▁   #176 of 398*     20%      2
 </pre>
 
-<details><summary>agent tasks · #170 of 334 · 20% of its score</summary>
+<details><summary>agent tasks · #161 of 300 · 20% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                          result  vs the others in its run  difficulty      
 
 </details>
 
-<details><summary>coding · #317 of 469 · 9.4% of its score</summary>
+<details><summary>coding · #313 of 458 · 9.4% of its score</summary>
 
 Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank lower overall.
 
@@ -47,9 +47,9 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #178 of 400 · 20% of its score</summary>
+<details><summary>math · #176 of 398 · 20% of its score</summary>
 
-Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [Olmo 3 7B Think DPO](olmo-3-7b-think-dpo.md) here, though they rank lower overall.
+Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why

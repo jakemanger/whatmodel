@@ -6,7 +6,7 @@
 
 TII · released 2023-05 · 41.8B params · apache-2.0
 
-**score 34.8** ±1.2 · #805 of 949 · from 13 benchmark results across 5 sources
+**score 34.8** ±1.2 · #602 of 719 · from 13 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ TII · released 2023-05 · 41.8B params · apache-2.0
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #444 of 469*     17%      2
-math    ▁▂●▅▆▅▄█▄▁▁▁   #374 of 400*    7.2%      1
+coding  ▁▁▁●▆██▇▆▄▃▁   #434 of 458*     17%      2
+math    ▁▂●▅▆▅▄█▄▁▁▁   #372 of 398*    7.2%      1
 </pre>
 
-<details><summary>coding · #444 of 469 · 17% of its score</summary>
+<details><summary>coding · #434 of 458 · 17% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test       result  vs the others in its run   difficulty      counts  why
 
 </details>
 
-<details><summary>math · #374 of 400 · 7.2% of its score</summary>
+<details><summary>math · #372 of 398 · 7.2% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Mistral 7B Instruct v0.3](mistral-7b-instruct-v0-3.md) here, though they rank higher overall. Trails [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 

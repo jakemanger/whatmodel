@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 14.8B params · apache-2.0
 
-**score 58.5** ±1.1 · #245 of 949 · from 17 benchmark results across 12 sources
+**score 58.5** ±1.1 · #212 of 719 · from 17 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Alibaba · released 2025-04 · 14.8B params · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█●▅▄▄▃▂▁    #181 of 334     31%      3
-math         ▁▂▃▅▆▅●█▄▁▁▁   #145 of 400*     10%      1
+agent tasks  ▁▁▃▆█●▅▅▅▄▃▁    #170 of 300     31%      3
+math         ▁▂▃▅▆▅●█▄▁▁▁   #145 of 398*     10%      1
 </pre>
 
-<details><summary>agent tasks · #181 of 334 · 31% of its score</summary>
+<details><summary>agent tasks · #170 of 300 · 31% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                             result  vs the others in its run    difficulty 
 
 </details>
 
-<details><summary>math · #145 of 400 · 10% of its score</summary>
+<details><summary>math · #145 of 398 · 10% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 

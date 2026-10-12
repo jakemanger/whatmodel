@@ -6,7 +6,7 @@
 
 LG AI Research · released 2026-04 · 34.4B params · exaone
 
-**score 65.0** ±2.0 · #153 of 949 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 65.0** ±2.0 · #143 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ LG AI Research · released 2026-04 · 34.4B params · exaone
 
 <pre>
 task                vs the others            rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▄▄▃▂▁     #117 of 334*     21%      1
-chat &amp; writing      ▁▁▁▄▆▅▆█●▆▆▂     #143 of 466*    5.6%      1
-math                ▁▂▃▅▆▅▄●▄▁▁▁      #68 of 400*     22%      1
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁     #116 of 300*     21%      1
+chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃     #139 of 393*    5.6%      1
+math                ▁▂▃▅▆▅▄●▄▁▁▁      #68 of 398*     22%      1
 vision &amp; documents                 not ranked yet       —      3
 </pre>
 
-<details><summary>agent tasks · #117 of 334 · 21% of its score</summary>
+<details><summary>agent tasks · #116 of 300 · 21% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                    result  vs the others in its run  difficulty      counts
 
 </details>
 
-<details><summary>chat &amp; writing · #143 of 466 · 5.6% of its score</summary>
+<details><summary>chat &amp; writing · #139 of 393 · 5.6% of its score</summary>
 
 Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Spark-X2.5 1.7B](spark-x2-5-1-7b.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #68 of 400 · 22% of its score</summary>
+<details><summary>math · #68 of 398 · 22% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md) here, though they rank lower overall.
 

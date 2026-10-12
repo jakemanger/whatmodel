@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-02 · closed weights
 
-**score 74.3** ±1.4 · #46 of 949 · from 8 benchmark results across 4 sources
+**score 74.3** ±1.4 · #46 of 719 · from 8 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ OpenAI · released 2026-02 · closed weights
 
 <pre>
 task         vs the others        rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▄▄●▂▁   #46 of 334     99%      8
-coding       ▁▁▁▃▆██▇▆●▃▁   #52 of 469     43%      3
-web search   ▂▂▂▆▄●▃▃▁▁·▁   #34 of 81*     20%      1
+agent tasks  ▁▁▃▆█▆▅▅▅●▃▁   #46 of 300     99%      8
+coding       ▁▁▁▃▆██▇▆●▃▁   #51 of 458     43%      3
+web search   ▂▁▂▆▄●▃▃▁▁·▁   #34 of 80*     20%      1
 </pre>
 
-<details><summary>agent tasks · #46 of 334 · 99% of its score</summary>
+<details><summary>agent tasks · #46 of 300 · 99% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #52 of 469 · 43% of its score</summary>
+<details><summary>coding · #51 of 458 · 43% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Mistral Large 4 (public preview)](mistral-large-4.md), [Qwen3.7 Plus](qwen3-7-plus.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
 
@@ -50,7 +50,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>web search · #34 of 81 · 20% of its score</summary>
+<details><summary>web search · #34 of 80 · 20% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

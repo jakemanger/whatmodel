@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 32.8B params · apache-2.0
 
-**score 45.0** ±1.8 · #585 of 949 · from 8 benchmark results across 8 sources
+**score 45.0** ±1.8 · #442 of 719 · from 8 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Alibaba · released 2024-11 · 32.8B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ●▁▃▆█▆▅▄▄▃▂▁   #332 of 334*    6.7%      1
-coding          ▁▁▁▃▆██●▆▄▃▁   #156 of 469*    3.1%      1
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #403 of 466*     30%      1
+agent tasks     ●▁▃▆█▆▅▅▅▄▃▁   #298 of 300*    6.7%      1
+coding          ▁▁▁▃▆██●▆▄▃▁   #155 of 458*    3.1%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #343 of 393*     30%      1
 </pre>
 
-<details><summary>agent tasks · #332 of 334 · 6.7% of its score</summary>
+<details><summary>agent tasks · #298 of 300 · 6.7% of its score</summary>
 
-Trails [ThinkAgent-1B (Llama-3.2-1B-FC-v3)](thinkagent-1b.md), [Granite 4.0 350M](granite-4-0-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
+Trails [Granite 4.0 350M](granite-4-0-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run  difficulty        counts  why
@@ -30,7 +30,7 @@ test     result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #156 of 469 · 3.1% of its score</summary>
+<details><summary>coding · #155 of 458 · 3.1% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #403 of 466 · 30% of its score</summary>
+<details><summary>chat &amp; writing · #343 of 393 · 30% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

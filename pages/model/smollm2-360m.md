@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 0.362B params · apache-2.0
 
-**score 18.6** ±2.7 · #921 of 949 · from 6 benchmark results across 2 sources
+**score 18.6** ±2.7 · #693 of 719 · from 6 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Hugging Face · released 2024-10 · 0.362B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #402 of 466*    9.5%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #342 of 393*    9.5%      1
 math            ●··········█       #2 of 2*     30%      1
 </pre>
 
-<details><summary>chat &amp; writing · #402 of 466 · 9.5% of its score</summary>
+<details><summary>chat &amp; writing · #342 of 393 · 9.5% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md) here, though they rank lower overall.
 

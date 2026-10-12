@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 1.35B params · deepseek
 
-**score 42.6** ±0.6 · #654 of 949 · from 14 benchmark results across 6 sources
+**score 42.6** ±0.6 · #491 of 719 · from 14 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ DeepSeek · released 2023-10 · 1.35B params · deepseek
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #342 of 469     83%     10
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #337 of 458     83%     10
 </pre>
 
-<details><summary>coding · #342 of 469 · 83% of its score</summary>
+<details><summary>coding · #337 of 458 · 83% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 

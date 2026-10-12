@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 58.7** ±0.8 · #242 of 949 · from 32 benchmark results across 5 sources
+**score 58.7** ±0.8 · #210 of 719 · from 32 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Microsoft · released 2025-04 · 14.7B params · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃▆██●▆▄▃▁   #174 of 469     13%      5
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #155 of 466    7.5%      3
-math            ▁▂▃▅▆▅●█▄▁▁▁   #159 of 400     36%      5
+coding          ▁▁▁▃▆██●▆▄▃▁   #172 of 458     13%      5
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #150 of 393    7.5%      3
+math            ▁▂▃▅▆▅●█▄▁▁▁   #158 of 398     36%      5
 </pre>
 
-<details><summary>coding · #174 of 469 · 13% of its score</summary>
+<details><summary>coding · #172 of 458 · 13% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3.5 9B](qwen3-5-9b.md), [Devstral 2 (2512)](devstral-2.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #155 of 466 · 7.5% of its score</summary>
+<details><summary>chat &amp; writing · #150 of 393 · 7.5% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #159 of 400 · 36% of its score</summary>
+<details><summary>math · #158 of 398 · 36% of its score</summary>
 
 Beats [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Olmo 3 7B Think](olmo-3-7b-think.md), [Qwen3-VL 4B Thinking](qwen3-vl-4b-thinking.md), [Granite 4.2 3B](granite-4-2-3b.md) here, though they rank lower overall.
 

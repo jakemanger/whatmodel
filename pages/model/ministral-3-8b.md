@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 8.92B params · apache-2.0
 
-**score 52.7** ±0.9 · #381 of 949 · from 21 benchmark results across 8 sources
+**score 52.7** ±0.9 · #306 of 719 · from 21 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Mistral · released 2025-12 · 8.92B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁   #226 of 334*    4.1%      1
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #319 of 466*    3.2%      1
-math            ▁▂▃▅▆●▄█▄▁▁▁    #213 of 400     24%      4
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #210 of 300*    4.1%      1
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #285 of 393*    3.2%      1
+math            ▁▂▃▅▆●▄█▄▁▁▁    #211 of 398     24%      4
 </pre>
 
-<details><summary>agent tasks · #226 of 334 · 4.1% of its score</summary>
+<details><summary>agent tasks · #210 of 300 · 4.1% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Granite 4.1 3B](granite-4-1-3b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #319 of 466 · 3.2% of its score</summary>
+<details><summary>chat &amp; writing · #285 of 393 · 3.2% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #213 of 400 · 24% of its score</summary>
+<details><summary>math · #211 of 398 · 24% of its score</summary>
 
 Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 

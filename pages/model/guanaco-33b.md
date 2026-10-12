@@ -6,7 +6,7 @@
 
 University of Washington · released 2023-05 · 33B params · llama-1-noncommercial-research
 
-**score 32.7** ±1.5 · #829 of 949 · from 5 benchmark results across 4 sources
+**score 32.7** ±1.5 · #620 of 719 · from 5 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ University of Washington · released 2023-05 · 33B params · llama-1-noncommerc
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #436 of 466     99%      5
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #370 of 393     99%      5
 </pre>
 
-<details><summary>chat &amp; writing · #436 of 466 · 99% of its score</summary>
+<details><summary>chat &amp; writing · #370 of 393 · 99% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Minotaur 13B (fixed)](minotaur-13b-fixed.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-Hermes-13b](nous-hermes-13b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run   difficulty                counts  why

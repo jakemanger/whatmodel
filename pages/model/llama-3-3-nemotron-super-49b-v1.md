@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-03 · 49.9B params · nvidia-open-model-license
 
-**score 58.3** ±1.6 · #247 of 949 · from 7 benchmark results across 2 sources
+**score 58.3** ±1.6 · #214 of 719 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -16,7 +16,7 @@ NVIDIA · released 2025-03 · 49.9B params · nvidia-open-model-license
 task            vs the others            rank  counts  tests
 agent tasks                    not ranked yet       —      1
 coding                         not ranked yet       —      1
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂      #189 of 466     37%      3
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃      #180 of 393     37%      3
 math            █··········●          #1 of 2     43%      3
 </pre>
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run  counts  wh
 
 </details>
 
-<details><summary>chat &amp; writing · #189 of 466 · 37% of its score</summary>
+<details><summary>chat &amp; writing · #180 of 393 · 37% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 

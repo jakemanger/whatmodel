@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-08 · 13B params · llama2
 
-**score 36.2** ±1.5 · #784 of 949 · from 5 benchmark results across 5 sources
+**score 36.2** ±1.5 · #586 of 719 · from 5 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ LMSYS · released 2023-08 · 13B params · llama2
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂   #418 of 466     95%      4
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #357 of 393     95%      4
 </pre>
 
-<details><summary>chat &amp; writing · #418 of 466 · 95% of its score</summary>
+<details><summary>chat &amp; writing · #357 of 393 · 95% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Code Llama 34B Instruct](codellama-34b-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md) here, though they rank lower overall.
 

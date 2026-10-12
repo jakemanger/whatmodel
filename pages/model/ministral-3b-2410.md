@@ -15,8 +15,8 @@ Mistral · released 2024-10 · proprietary
 <pre>
 task            vs the others          rank  counts  tests
 coding          ▄··········●       #2 of 3*    4.7%      2
-chat &amp; writing  ▁▁▁▃▅▅●█▆▆▆▂   #343 of 579*    1.9%      1
-math            ▁▂▃●▇▅▅█▄▁▁▁    #393 of 464     27%      5
+chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #287 of 463*    1.9%      1
+math            ▁▂▃●▇▅▅█▄▁▁▁    #391 of 462     27%      5
 </pre>
 
 <details><summary>coding · #2 of 3 · 4.7% of its score</summary>
@@ -29,7 +29,7 @@ test             result  vs the others in its run    difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #343 of 579 · 1.9% of its score</summary>
+<details><summary>chat &amp; writing · #287 of 463 · 1.9% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #393 of 464 · 27% of its score</summary>
+<details><summary>math · #391 of 462 · 27% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 

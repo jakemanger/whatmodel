@@ -14,11 +14,11 @@ UC Berkeley (BAIR) · released 2023-04 · 13B params · koala-academic-research-
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁●▃▅▇█▇▅▄▂▁   #533 of 549*     19%      1
-chat &amp; writing  ▁▁●▃▅▅▆█▆▆▆▂    #558 of 579     50%      3
+coding          ▁▁●▃▅▇█▇▅▄▃▁   #509 of 524*     19%      1
+chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃    #446 of 463     50%      3
 </pre>
 
-<details><summary>coding · #533 of 549 · 19% of its score</summary>
+<details><summary>coding · #509 of 524 · 19% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Gemma 2B IT](gemma-2b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md) here, though they rank lower overall.
 
@@ -29,9 +29,9 @@ test       result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #558 of 579 · 50% of its score</summary>
+<details><summary>chat &amp; writing · #446 of 463 · 50% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [MiniChat-3B](minichat-3b.md), [Falcon 40B Instruct](falcon-40b-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md), [Falcon 40B Instruct](falcon-40b-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run   difficulty                counts  why

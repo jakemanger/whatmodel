@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 6.74B params · llama2
 
-**score 30.6** ±0.5 · #853 of 949 · from 71 benchmark results across 11 sources
+**score 30.6** ±0.5 · #638 of 719 · from 71 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Meta · released 2023-07 · 6.74B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁●▃▆██▇▆▄▃▁   #461 of 469     10%      3
-math    ●▂▃▅▆▅▄█▄▁▁▁   #397 of 400    5.5%      2
+coding  ▁▁●▃▆██▇▆▄▃▁   #450 of 458     10%      3
+math    ●▂▃▅▆▅▄█▄▁▁▁   #395 of 398    5.5%      2
 </pre>
 
-<details><summary>coding · #461 of 469 · 10% of its score</summary>
+<details><summary>coding · #450 of 458 · 10% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md), [Falcon3 1B Instruct](falcon3-1b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                       result  vs the others in its run  difficulty         
 
 </details>
 
-<details><summary>math · #397 of 400 · 5.5% of its score</summary>
+<details><summary>math · #395 of 398 · 5.5% of its score</summary>
 
 Beats [DeepSeek-Coder 1.3B Base](deepseek-coder-1-3b-base.md), [StarCoderBase 7B](starcoderbase-7b.md) here, though they rank higher overall. Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

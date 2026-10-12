@@ -6,7 +6,7 @@
 
 Bud Ecosystem · released 2024-01 · 33.75B params · llama2
 
-**score 48.2** ±0.9 · #494 of 949 · from 3 benchmark results across 1 source
+**score 48.2** ±0.9 · #379 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Bud Ecosystem · released 2024-01 · 33.75B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #284 of 469    100%      3
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #280 of 458    100%      3
 </pre>
 
-<details><summary>coding · #284 of 469 · 100% of its score</summary>
+<details><summary>coding · #280 of 458 · 100% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank lower overall.
 

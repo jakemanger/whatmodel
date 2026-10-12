@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 2.41B params · exaone
 
-**score 50.2** ±1.5 · #436 of 949 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.2** ±1.5 · #339 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -15,7 +15,7 @@ LG AI Research · released 2025-03 · 2.41B params · exaone
 <pre>
 task    vs the others         rank  counts  tests
 coding  ●█·········█      #3 of 3*     10%      1
-math    ▁▂▃▅●▅▄█▄▁▁▁   #231 of 400     61%      3
+math    ▁▂▃▅●▅▄█▄▁▁▁   #229 of 398     61%      3
 </pre>
 
 <details><summary>coding · #3 of 3 · 10% of its score</summary>
@@ -27,7 +27,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #231 of 400 · 61% of its score</summary>
+<details><summary>math · #229 of 398 · 61% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [OpenThinker 7B](openthinker-7b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank lower overall.
 

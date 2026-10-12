@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 57.9** ±0.9 · #252 of 949 · from 24 benchmark results across 5 sources
+**score 57.9** ±0.9 · #217 of 719 · from 24 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Microsoft · released 2025-04 · 14.7B params · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆██●▆▄▃▁   #144 of 469*     13%      3
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂    #183 of 466     11%      3
-math            ▁▂▃▅▆▅●█▄▁▁▁    #174 of 400     20%      3
+coding          ▁▁▁▃▆██●▆▄▃▁   #143 of 458*     13%      3
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃    #174 of 393     11%      3
+math            ▁▂▃▅▆▅●█▄▁▁▁    #173 of 398     20%      3
 </pre>
 
-<details><summary>coding · #144 of 469 · 13% of its score</summary>
+<details><summary>coding · #143 of 458 · 13% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #183 of 466 · 11% of its score</summary>
+<details><summary>chat &amp; writing · #174 of 393 · 11% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #174 of 400 · 20% of its score</summary>
+<details><summary>math · #173 of 398 · 20% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md), [OpenThinker2 32B](openthinker2-32b.md) here, though they rank lower overall.
 

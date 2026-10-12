@@ -6,7 +6,7 @@
 
 StepFun · released 2026-05 · 198B params (11B active) · apache-2.0
 
-**score 67.0** ±1.0 · #119 of 949 · from 13 benchmark results across 2 sources
+**score 67.0** ±1.0 · #115 of 719 · from 13 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -16,7 +16,7 @@ StepFun · released 2026-05 · 198B params (11B active) · apache-2.0
 task         vs the others            rank  counts  tests
 agent tasks                 not ranked yet       —      3
 coding                      not ranked yet       —      1
-math         ▁▂▃▅▆▅▄●▄▁▁▁      #102 of 400     93%     11
+math         ▁▂▃▅▆▅▄●▄▁▁▁      #102 of 398     93%     11
 </pre>
 
 <details><summary>agent tasks · 0.0% of its score</summary>
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #102 of 400 · 93% of its score</summary>
+<details><summary>math · #102 of 398 · 93% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 

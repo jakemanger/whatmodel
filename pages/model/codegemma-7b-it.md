@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 8.54B params · gemma
 
-**score 42.5** ±0.7 · #657 of 949 · from 10 benchmark results across 4 sources
+**score 42.5** ±0.7 · #494 of 719 · from 10 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Google · released 2024-03 · 8.54B params · gemma
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #355 of 469     91%      7
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #350 of 458     91%      7
 </pre>
 
-<details><summary>coding · #355 of 469 · 91% of its score</summary>
+<details><summary>coding · #350 of 458 · 91% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [Code Tulu 2 13B](code-tulu-2-13b.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 

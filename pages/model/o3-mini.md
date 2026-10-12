@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-01 · proprietary
 
-**score 65.4** ±0.6 · #148 of 949 · from 50 benchmark results across 19 sources
+**score 65.4** ±0.6 · #139 of 719 · from 50 benchmark results across 19 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ OpenAI · released 2025-01 · proprietary
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▄▄▃▂▁   #265 of 334    8.3%      7
-coding          ▁▁▁▃▆██▇●▄▃▁   #124 of 469     27%     10
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #142 of 466    9.0%      5
-math            ▁▂▃▅▆▅▄●▄▁▁▁   #120 of 400     21%      9
-web search      ▂▂▂▆▄█▃●▁▁·▁     #8 of 81*    2.3%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #238 of 300    8.3%      7
+coding          ▁▁▁▃▆██▇●▄▃▁   #123 of 458     27%     10
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #138 of 393    9.0%      5
+math            ▁▂▃▅▆▅▄●▄▁▁▁   #120 of 398     21%      9
+web search      ▂▁▂▆▄█▃●▁▁·▁     #8 of 80*    2.3%      1
 </pre>
 
-<details><summary>agent tasks · #265 of 334 · 8.3% of its score</summary>
+<details><summary>agent tasks · #238 of 300 · 8.3% of its score</summary>
 
 Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #124 of 469 · 27% of its score</summary>
+<details><summary>coding · #123 of 458 · 27% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kimi K2 Thinking](kimi-k2-thinking.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Seed-OSS 36B Instruct](seed-oss-36b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #142 of 466 · 9.0% of its score</summary>
+<details><summary>chat &amp; writing · #138 of 393 · 9.0% of its score</summary>
 
 Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Spark-X2.5 1.7B](spark-x2-5-1-7b.md) here, though they rank lower overall.
 
@@ -73,7 +73,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #120 of 400 · 21% of its score</summary>
+<details><summary>math · #120 of 398 · 21% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank lower overall.
 
@@ -92,7 +92,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #8 of 81 · 2.3% of its score</summary>
+<details><summary>web search · #8 of 80 · 2.3% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall. Trails [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4.1 mini](gpt-4-1-mini.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 

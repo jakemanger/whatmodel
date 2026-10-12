@@ -6,7 +6,7 @@
 
 Nexusflow · released 2024-11 · 72.7B params · nexusflow-research
 
-**score 56.3** ±1.5 · #283 of 949 · from 5 benchmark results across 4 sources
+**score 56.3** ±1.5 · #241 of 719 · from 5 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Nexusflow · released 2024-11 · 72.7B params · nexusflow-research
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #214 of 466     89%      4
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #200 of 393     89%      4
 </pre>
 
-<details><summary>chat &amp; writing · #214 of 466 · 89% of its score</summary>
+<details><summary>chat &amp; writing · #200 of 393 · 89% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 

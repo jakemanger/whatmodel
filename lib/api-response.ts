@@ -1,5 +1,7 @@
+import { CATEGORIES } from "./categories.ts";
 import { usable } from "./fit.ts";
-import { DISCLOSURE, sponsor, toText } from "./format.ts";
+import { curlFor, DISCLOSURE, sponsor, terminalHelp, toText } from "./format.ts";
+import { terminalColumns, terminalWrap } from "./terminal-layout.ts";
 import { chartsFor, chartToText } from "./chart.ts";
 import { boardFromData, type BoardData } from "./board.ts";
 
@@ -10,11 +12,15 @@ export function leaderboardResponse(req: Request, data: BoardData, attributions:
   const url = new URL(req.url);
   const q = url.searchParams;
   const { cat, updated, updatedLabel, models } = data;
-  const { task, specs, max, comparison, scoreMode, scoreSet, sets, rows, all, benches, retiredCount } = boardFromData(data, q);
+  const json = q.get("format") === "json" || req.headers.get("accept")?.includes("application/json");
+  const width = terminalColumns(q.get("width"));
+  if (q.get('help') === '1' && !json) return new Response(terminalHelp(url.origin, cat, width), { headers: { 'content-type': 'text/plain; charset=utf-8' } });
+  const { task, specs, max, comparison, scoreMode, scoreSet, sets, rows, all, benches, retiredCount, thin, thinCount } = boardFromData(data, q);
   const alternatives = sets.map(({ id, label, models }) => ({ id, label, models: models.length }));
-  const limit = Number(q.get("n")) || 40;
+  const requestedLimit = Number(q.get('n'));
+  const limit = Number.isFinite(requestedLimit) && requestedLimit > 0 ? Math.floor(requestedLimit) : json ? 40 : 10;
 
-  if (q.get("format") === "json" || req.headers.get("accept")?.includes("application/json")) {
+  if (json) {
     return Response.json({
       category: cat,
       task: task?.id ?? null,
@@ -30,6 +36,7 @@ export function leaderboardResponse(req: Request, data: BoardData, attributions:
         : "All sets are listed by default. ?set=<id> filters models without changing the score scale; add &score=set for scores within that set. Uncalibrated scores and ranks are null.",
       specs: specs && { ...specs, hw: specs.hw?.id ?? null, usable_gb: usable(specs) },
       max_price: max,
+      thinly_tested: { listed: thin, count: thinCount, note: "Text models with fewer than 3 results are left off unless ?thin=1." },
       updated,
       coverage: rows.length ? "reviewed subset; incomplete coverage" : "no reviewed rankings available",
       data_license: {
@@ -55,6 +62,8 @@ export function leaderboardResponse(req: Request, data: BoardData, attributions:
 
   const text = toText(rows, specs, max, {
     cat,
+    width,
+    task: task?.label,
     color: q.get("color") === "1",
     base: url.origin,
     limit,
@@ -63,10 +72,15 @@ export function leaderboardResponse(req: Request, data: BoardData, attributions:
     comparison: alternatives.length > 1 ? { selected: comparison?.id, scoreMode, sets: alternatives } : undefined,
     updated: updatedLabel,
     retiredCount,
+    thin,
+    thinCount,
+    withApis: specs && max === 0 && !q.has("max") ? curlFor(url.host, CATEGORIES[cat].path, new URLSearchParams([...q, ["max", "any"]])) : undefined,
   });
-  // ?chart=1 draws the plots under the title line.
+  // Optional plots follow the compact table and fit the requested terminal.
   const lines = text.split("\n");
-  if (task) lines.splice(2, 0, `Task: ${task.label}. Scores compare within this task only.`, '');
-  if (q.has("chart")) lines.splice(3, 0, ...chartsFor(rows.filter((r) => all || r.where !== "none"), cat).flatMap(({ title, chart }) => [...chartToText(title, chart, q.get("color") === "1"), ""]));
+  if (q.get("chart") === '1') lines.push(...chartsFor(rows.filter((r) => all || r.where !== "none"), cat, width - 2).flatMap(({ title, chart }) => [
+    ...terminalWrap(title, width - 2).map((line) => '  ' + line),
+    ...chartToText(title, chart, q.get('color') === '1').slice(1), '',
+  ]), '');
   return new Response(lines.join("\n"), { headers: { "content-type": "text/plain; charset=utf-8" } });
 }

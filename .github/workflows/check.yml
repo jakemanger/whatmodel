@@ -5,9 +5,14 @@ on:
     branches: [main]
 permissions:
   contents: read
+# A newer push to the same branch or pull request replaces a run still going.
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

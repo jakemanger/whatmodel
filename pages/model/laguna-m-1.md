@@ -6,7 +6,7 @@
 
 Poolside · released 2026-04 · 225B params (23B active) · apache-2.0
 
-**score 67.0** ±1.8 · #117 of 949 · from 4 benchmark results across 2 sources
+**score 67.0** ±1.8 · #113 of 719 · from 4 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Poolside · released 2026-04 · 225B params (23B active) · apache-2.0
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ██●········█       #2 of 4     46%      4
-coding       ▁▁▁▃▆██▇●▄▃▁   #114 of 469     83%      4
+agent tasks  █···█······●       #1 of 3     46%      4
+coding       ▁▁▁▃▆██▇●▄▃▁   #113 of 458     83%      4
 </pre>
 
-<details><summary>agent tasks · #2 of 4 · 46% of its score</summary>
+<details><summary>agent tasks · #1 of 3 · 46% of its score</summary>
 
 <pre>
 test                          result  vs the others in its run   difficulty           counts  why
@@ -30,7 +30,7 @@ test                          result  vs the others in its run   difficulty     
 
 </details>
 
-<details><summary>coding · #114 of 469 · 83% of its score</summary>
+<details><summary>coding · #113 of 458 · 83% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kimi K2 Thinking](kimi-k2-thinking.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
 

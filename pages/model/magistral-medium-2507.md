@@ -15,7 +15,7 @@ Mistral · released 2025-07 · proprietary
 <pre>
 task    vs the others          rank  counts  tests
 coding  ▃●······▃·▃▃       #5 of 7*     11%      1
-math    ▁▂▃▅▇●▅█▄▁▁▁   #228 of 464*     58%      2
+math    ▁▂▃▅▇●▅█▄▁▁▁   #226 of 462*     58%      2
 </pre>
 
 <details><summary>coding · #5 of 7 · 11% of its score</summary>
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #228 of 464 · 58% of its score</summary>
+<details><summary>math · #226 of 462 · 58% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [OpenThinker2 7B](openthinker2-7b.md) here, though they rank lower overall.
 

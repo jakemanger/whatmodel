@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-03 · 9.65B params · apache-2.0
 
-**score 62.6** ±0.5 · #181 of 949 · from 135 benchmark results across 23 sources
+**score 62.6** ±0.5 · #168 of 719 · from 135 benchmark results across 23 sources
 
 ## What it's good at
 
@@ -14,17 +14,17 @@ Alibaba · released 2026-03 · 9.65B params · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆●▄▄▃▂▁   #146 of 334     16%     15
-coding              ▁▁▁▃▆██●▆▄▃▁   #183 of 469     13%      9
-chat &amp; writing      ▁▁▁▄▆▅▆█●▆▆▂   #148 of 466    1.0%      1
-math                ▁▂▃▅▆▅▄●▄▁▁▁   #144 of 400     19%     15
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄    #69 of 150    9.0%     21
+agent tasks         ▁▁▃▆█▆●▅▅▄▃▁   #142 of 300     16%     15
+coding              ▁▁▁▃▆██●▆▄▃▁   #181 of 458     13%      9
+chat &amp; writing      ▁▁▁▃▅▄▅█●▆▇▃   #144 of 393    1.0%      1
+math                ▁▂▃▅▆▅▄●▄▁▁▁   #144 of 398     19%     15
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #69 of 147    9.0%     21
 web search          █·█▄●█·▄▄·▄▄     #7 of 13*    0.4%      1
 </pre>
 
-<details><summary>agent tasks · #146 of 334 · 16% of its score</summary>
+<details><summary>agent tasks · #142 of 300 · 16% of its score</summary>
 
-Beats [watt-tool-70B](watt-tool-70b.md), [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
+Beats [Qwen3 235B-A22B Thinking 2507](qwen3-235b-a22b-thinking-2507.md), [o4-mini](o4-mini.md), [o1 (2024-12-17)](o1-2024-12-17.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
@@ -47,7 +47,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #183 of 469 · 13% of its score</summary>
+<details><summary>coding · #181 of 458 · 13% of its score</summary>
 
 Trails [QwQ-32B-Preview](qwq-32b-preview.md), [OpenThinker 32B](openthinker-32b.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md) here, though they rank lower overall.
 
@@ -66,7 +66,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>chat &amp; writing · #148 of 466 · 1.0% of its score</summary>
+<details><summary>chat &amp; writing · #144 of 393 · 1.0% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [Nemotron 3 Super 120B-A12B](nemotron-3-super-120b-a12b.md), [MiniMax-M2](minimax-m2.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -77,7 +77,7 @@ test                              result  vs the others in its run    difficulty
 
 </details>
 
-<details><summary>math · #144 of 400 · 19% of its score</summary>
+<details><summary>math · #144 of 398 · 19% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 
@@ -102,7 +102,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>vision &amp; documents · #69 of 150 · 9.0% of its score</summary>
+<details><summary>vision &amp; documents · #69 of 147 · 9.0% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall.
 

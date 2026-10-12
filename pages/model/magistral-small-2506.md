@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · 23.57B params · apache-2.0
 
-**score 55.2** ±1.2 · #309 of 949 · from 8 benchmark results across 4 sources
+**score 55.2** ±1.2 · #260 of 719 · from 8 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Mistral · released 2025-06 · 23.57B params · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▄▄▃▂▁   #307 of 334*    2.3%      1
+agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #276 of 300*    2.3%      1
 coding       ●█········██       #4 of 4*    6.7%      1
-math         ▁▂▃▅▆●▄█▄▁▁▁    #200 of 400     45%      3
+math         ▁▂▃▅▆●▄█▄▁▁▁    #198 of 398     45%      3
 </pre>
 
-<details><summary>agent tasks · #307 of 334 · 2.3% of its score</summary>
+<details><summary>agent tasks · #276 of 300 · 2.3% of its score</summary>
 
 Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #200 of 400 · 45% of its score</summary>
+<details><summary>math · #198 of 398 · 45% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [OpenThinker2 7B](openthinker2-7b.md) here, though they rank lower overall.
 

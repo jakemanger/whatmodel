@@ -6,7 +6,7 @@
 
 Google · released 2024-04 · 8.54B params · gemma
 
-**score 36.9** ±0.7 · #773 of 949 · from 12 benchmark results across 8 sources
+**score 36.9** ±0.7 · #578 of 719 · from 12 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Google · released 2024-04 · 8.54B params · gemma
 
 <pre>
 task            vs the others         rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #411 of 469     69%      3
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #379 of 466     12%      3
+coding          ▁▁▁▃●██▇▆▄▃▁   #402 of 458     69%      3
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #324 of 393     12%      3
 </pre>
 
-<details><summary>coding · #411 of 469 · 69% of its score</summary>
+<details><summary>coding · #402 of 458 · 69% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Code Llama 7B Instruct](codellama-7b-instruct.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #379 of 466 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #324 of 393 · 12% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 

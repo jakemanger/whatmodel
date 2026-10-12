@@ -6,7 +6,7 @@
 
 Google · released 2026-09 · proprietary
 
-**score 81.8** ±1.4 · #9 of 949 · from 5 benchmark results across 2 sources
+**score 81.8** ±1.4 · #9 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Google · released 2026-09 · proprietary
 
 <pre>
 task            vs the others        rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▄▄▃●▁   #9 of 334*     43%      3
-coding          ▁▁▁▃▆██▇▆▄●▁   #8 of 469*     38%      2
-chat &amp; writing  ▁▁▁▄▆▅▆█▆▆▆●   #1 of 466*     18%      1
+agent tasks     ▁▁▃▆█▆▅▅▅▄●▁   #9 of 300*     43%      3
+coding          ▁▁▁▃▆██▇▆▄●▁   #8 of 458*     38%      2
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆▇●   #1 of 393*     18%      1
 </pre>
 
-<details><summary>agent tasks · #9 of 334 · 43% of its score</summary>
+<details><summary>agent tasks · #9 of 300 · 43% of its score</summary>
 
 Beats [GPT-5.5 Pro](gpt-5-5-pro.md) here, though they rank higher overall. Trails [Claude Fable 5](claude-fable-5.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #8 of 469 · 38% of its score</summary>
+<details><summary>coding · #8 of 458 · 38% of its score</summary>
 
 <pre>
 test                           result  vs the others in its run    difficulty      counts  why
@@ -42,7 +42,7 @@ test                           result  vs the others in its run    difficulty   
 
 </details>
 
-<details><summary>chat &amp; writing · #1 of 466 · 18% of its score</summary>
+<details><summary>chat &amp; writing · #1 of 393 · 18% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [GPT-6.1 Sol](gpt-6-1-sol.md) here, though they rank higher overall.
 

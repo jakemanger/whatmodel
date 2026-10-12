@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 8.83B params · apache-2.0
 
-**score 44.2** ±0.8 · #602 of 949 · from 15 benchmark results across 7 sources
+**score 44.2** ±0.8 · #452 of 719 · from 15 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁    #278 of 469     21%      5
-math    ▁▂▃●▆▅▄█▄▁▁▁   #339 of 400*     17%      2
+coding  ▁▁▁▃▆█●▇▆▄▃▁    #274 of 458     21%      5
+math    ▁▂▃●▆▅▄█▄▁▁▁   #337 of 398*     17%      2
 </pre>
 
-<details><summary>coding · #278 of 469 · 21% of its score</summary>
+<details><summary>coding · #274 of 458 · 21% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #339 of 400 · 17% of its score</summary>
+<details><summary>math · #337 of 398 · 17% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 

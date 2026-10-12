@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 3.75B params · qwen-research
 
-**score 44.1** ±1.0 · #610 of 949 · from 14 benchmark results across 2 sources
+**score 44.1** ±1.0 · #458 of 719 · from 14 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Alibaba · released 2025-01 · 3.75B params · qwen-research
 
 <pre>
 task                vs the others          rank  counts  tests
-math                ▁▂▃▅●▅▄█▄▁▁▁   #290 of 400*     13%      1
-vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄    #135 of 150    100%     14
+math                ▁▂▃▅●▅▄█▄▁▁▁   #288 of 398*     13%      1
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #133 of 147    100%     14
 </pre>
 
-<details><summary>math · #290 of 400 · 13% of its score</summary>
+<details><summary>math · #288 of 398 · 13% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [StarCoder2 15B](starcoder2-15b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #135 of 150 · 100% of its score</summary>
+<details><summary>vision &amp; documents · #133 of 147 · 100% of its score</summary>
 
 Beats [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall. Trails [Qwen3-VL 2B Instruct](qwen3-vl-2b-instruct.md) here, though they rank lower overall.
 

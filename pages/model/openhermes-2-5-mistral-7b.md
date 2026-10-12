@@ -6,7 +6,7 @@
 
 Nous Research · released 2023-10 · 7.24B params · apache-2.0
 
-**score 39.4** ±0.9 · #720 of 949 · from 14 benchmark results across 8 sources
+**score 39.4** ±0.9 · #539 of 719 · from 14 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Nous Research · released 2023-10 · 7.24B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #367 of 469*    6.9%      1
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂    #389 of 466     34%      3
+coding          ▁▁▁▃●██▇▆▄▃▁   #360 of 458*    6.9%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #332 of 393     34%      3
 math            ●··········█       #2 of 2*    4.8%      1
 </pre>
 
-<details><summary>coding · #367 of 469 · 6.9% of its score</summary>
+<details><summary>coding · #360 of 458 · 6.9% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test       result  vs the others in its run   difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #389 of 466 · 34% of its score</summary>
+<details><summary>chat &amp; writing · #332 of 393 · 34% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 

@@ -14,15 +14,15 @@ Anthropic · released 2024-10 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂●█▆▅▄▄▃▂▁    #303 of 374    4.1%      4
-coding              ▁▁▁▃▅▇█●▅▄▂▁    #224 of 549     22%      3
-chat &amp; writing      ▁▁▁▃▅▅▆●▆▆▆▂   #254 of 579*    7.1%      2
-math                ▁▂▃▅●▅▅█▄▁▁▁    #300 of 464     21%      4
-vision &amp; documents  ▁▁▃▃▂▃●▅▇▇█▃   #140 of 199*    3.3%      2
-web search          ▂▁▂▇▅█▃●▁▂▁▁     #12 of 96*    1.3%      1
+agent tasks         ▁▁▂●█▆▅▄▄▃▂▁    #276 of 340    4.1%      4
+coding              ▁▁▁▃▅▇█●▅▄▃▁    #215 of 524     22%      3
+chat &amp; writing      ▁▁▁▃▅▄▆●▇▇▇▃   #218 of 463*    7.1%      2
+math                ▁▂▃▅●▅▅█▄▁▁▁    #298 of 462     21%      4
+vision &amp; documents  ▁▁▃▃▂▃●▄▇▇█▃   #130 of 182*    3.3%      2
+web search          ▂·▂▇▅█▃●▁▂▁▁     #12 of 92*    1.3%      1
 </pre>
 
-<details><summary>agent tasks · #303 of 374 · 4.1% of its score</summary>
+<details><summary>agent tasks · #276 of 340 · 4.1% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Sky-T1 32B Preview](sky-t1-32b-preview.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #224 of 549 · 22% of its score</summary>
+<details><summary>coding · #215 of 524 · 22% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #254 of 579 · 7.1% of its score</summary>
+<details><summary>chat &amp; writing · #218 of 463 · 7.1% of its score</summary>
 
 Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Nemotron-Cascade-14B-Thinking](nemotron-cascade-14b-thinking.md), [Granite 4.2 8B](granite-4-2-8b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -61,7 +61,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #300 of 464 · 21% of its score</summary>
+<details><summary>math · #298 of 462 · 21% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [Mistral Large 2 (2407)](mistral-large-2407.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md) here, though they rank lower overall.
 
@@ -75,7 +75,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>vision &amp; documents · #140 of 199 · 3.3% of its score</summary>
+<details><summary>vision &amp; documents · #130 of 182 · 3.3% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall.
 
@@ -87,7 +87,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>web search · #12 of 96 · 1.3% of its score</summary>
+<details><summary>web search · #12 of 92 · 1.3% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall.
 

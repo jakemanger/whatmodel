@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-10 · proprietary
 
-**score 77.4** ±0.7 · #22 of 949 · from 15 benchmark results across 3 sources
+**score 77.4** ±0.7 · #22 of 719 · from 15 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Anthropic · released 2026-10 · proprietary
 
 <pre>
 task         vs the others        rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▄▄▃●▁   #13 of 334     28%      5
-coding       ▁▁▁▃▆██▇▆▄●▁   #30 of 469     23%      3
-math         ▁▂▃▅▆▅▄█▄●▁▁   #20 of 400     37%      3
-web search   ▂▂▂▆▄●▃▃▁▁·▁   #28 of 81*    2.7%      1
+agent tasks  ▁▁▃▆█▆▅▅▅▄●▁   #13 of 300     28%      5
+coding       ▁▁▁▃▆██▇▆▄●▁   #30 of 458     23%      3
+math         ▁▂▃▅▆▅▄█▄●▁▁   #20 of 398     37%      3
+web search   ▂▁▂▆▄●▃▃▁▁·▁   #28 of 80*    2.7%      1
 </pre>
 
-<details><summary>agent tasks · #13 of 334 · 28% of its score</summary>
+<details><summary>agent tasks · #13 of 300 · 28% of its score</summary>
 
 Beats [GPT-5.5 Pro](gpt-5-5-pro.md), [GPT-5.4 Pro](gpt-5-4-pro.md), [GPT-5.5](gpt-5-5.md) here, though they rank higher overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #30 of 469 · 23% of its score</summary>
+<details><summary>coding · #30 of 458 · 23% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #20 of 400 · 37% of its score</summary>
+<details><summary>math · #20 of 398 · 37% of its score</summary>
 
 Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank lower overall.
 
@@ -61,7 +61,7 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>web search · #28 of 81 · 2.7% of its score</summary>
+<details><summary>web search · #28 of 80 · 2.7% of its score</summary>
 
 Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 8.17B params · apache-2.0
 
-**score 43.4** ±0.8 · #633 of 949 · from 22 benchmark results across 5 sources
+**score 43.4** ±0.8 · #476 of 719 · from 22 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ IBM · released 2024-10 · 8.17B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #323 of 469     16%      6
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #375 of 466*    8.6%      2
-math            ▁▂▃●▆▅▄█▄▁▁▁   #326 of 400*     13%      2
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #319 of 458     16%      6
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #320 of 393*    8.6%      2
+math            ▁▂▃●▆▅▄█▄▁▁▁   #324 of 398*     13%      2
 </pre>
 
-<details><summary>coding · #323 of 469 · 16% of its score</summary>
+<details><summary>coding · #319 of 458 · 16% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Llama 3.2 11B Vision Instruct](llama-3-2-11b-vision.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #375 of 466 · 8.6% of its score</summary>
+<details><summary>chat &amp; writing · #320 of 393 · 8.6% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #326 of 400 · 13% of its score</summary>
+<details><summary>math · #324 of 398 · 13% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md), [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
 

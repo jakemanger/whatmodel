@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 80B params (3B active) · apache-2.0
 
-**score 63.1** ±0.8 · #177 of 949 · from 31 benchmark results across 6 sources
+**score 63.1** ±0.8 · #165 of 719 · from 31 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2025-09 · 80B params (3B active) · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁   #205 of 334     16%      6
-coding          ▁▁▁▃▆██●▆▄▃▁   #170 of 469     17%      3
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #113 of 466     10%      3
-math            ▁▂▃▅▆▅▄●▄▁▁▁    #99 of 400    8.4%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #191 of 300     16%      6
+coding          ▁▁▁▃▆██●▆▄▃▁   #168 of 458     17%      3
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #111 of 393     10%      3
+math            ▁▂▃▅▆▅▄●▄▁▁▁    #99 of 398    8.4%      3
 </pre>
 
-<details><summary>agent tasks · #205 of 334 · 16% of its score</summary>
+<details><summary>agent tasks · #191 of 300 · 16% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                    result  vs the others in its run    difficulty          
 
 </details>
 
-<details><summary>coding · #170 of 469 · 17% of its score</summary>
+<details><summary>coding · #168 of 458 · 17% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #113 of 466 · 10% of its score</summary>
+<details><summary>chat &amp; writing · #111 of 393 · 10% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #99 of 400 · 8.4% of its score</summary>
+<details><summary>math · #99 of 398 · 8.4% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-04 · closed weights
 
-**score 70.2** ±0.9 · #83 of 949 · from 15 benchmark results across 6 sources
+**score 70.2** ±0.9 · #80 of 719 · from 15 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ SpaceXAI (xAI) · released 2026-04 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▄▃▂▁    #109 of 334     11%      4
-coding              ▁▁▁▃▆██▇●▄▃▁   #112 of 469*     12%      1
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂    #61 of 466*    6.6%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁     #60 of 400     47%      3
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆●█▄    #52 of 150*    4.5%      1
-web search          ▂▂▂●▄█▃▃▁▁·▁     #63 of 81*    4.8%      2
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #108 of 300     11%      4
+coding              ▁▁▁▃▆██▇●▄▃▁   #111 of 458*     12%      1
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃    #61 of 393*    6.6%      1
+math                ▁▂▃▅▆▅▄█●▁▁▁     #60 of 398     47%      3
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆●█▄    #52 of 147*    4.5%      1
+web search          ▂▁▂●▄█▃▃▁▁·▁     #63 of 80*    4.8%      2
 </pre>
 
-<details><summary>agent tasks · #109 of 334 · 11% of its score</summary>
+<details><summary>agent tasks · #108 of 300 · 11% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #112 of 469 · 12% of its score</summary>
+<details><summary>coding · #111 of 458 · 12% of its score</summary>
 
 Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md), [Laguna XS 2.1 (33B-A3B)](laguna-xs-2-1.md) here, though they rank lower overall.
 
@@ -47,7 +47,7 @@ test                       result  vs the others in its run   difficulty  counts
 
 </details>
 
-<details><summary>chat &amp; writing · #61 of 466 · 6.6% of its score</summary>
+<details><summary>chat &amp; writing · #61 of 393 · 6.6% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [Qwen3.8 27B](qwen3-8-27b.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Gemma 4 31B](gemma-4-31b.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Claude Sonnet 4.5](claude-sonnet-4-5.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #60 of 400 · 47% of its score</summary>
+<details><summary>math · #60 of 398 · 47% of its score</summary>
 
 Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GLM-4.7](glm-4-7.md), [A.X K2 (688B-A33B)](ax-k2.md) here, though they rank lower overall.
 
@@ -71,7 +71,7 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #52 of 150 · 4.5% of its score</summary>
+<details><summary>vision &amp; documents · #52 of 147 · 4.5% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Qwen3.5 35B-A3B](qwen3-5-35b-a3b.md), [Gemma 4 31B](gemma-4-31b.md) here, though they rank lower overall.
 
@@ -82,7 +82,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>web search · #63 of 81 · 4.8% of its score</summary>
+<details><summary>web search · #63 of 80 · 4.8% of its score</summary>
 
 Beats [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

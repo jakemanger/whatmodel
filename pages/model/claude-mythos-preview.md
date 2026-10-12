@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-04 · proprietary
 
-**score 81.3** ±1.1 · #12 of 949 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 81.3** ±1.1 · #12 of 719 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Anthropic · released 2026-04 · proprietary
 
 <pre>
 task                vs the others        rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄▃●▁   #10 of 334     67%      7
-coding              ▁▁▁▃▆██▇▆▄●▁    #9 of 469     43%      3
-math                ▁▂▃▅▆▅▄█▄▁●▁   #9 of 400*    2.6%      1
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇█●   #1 of 150*    5.5%      1
-web search          ▂▂▂▆▄█●▃▁▁·▁   #20 of 81*     12%      2
+agent tasks         ▁▁▃▆█▆▅▅▅▄●▁   #10 of 300     67%      7
+coding              ▁▁▁▃▆██▇▆▄●▁    #9 of 458     43%      3
+math                ▁▂▃▅▆▅▄█▄▁●▁   #9 of 398*    2.6%      1
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇█●   #1 of 147*    5.5%      1
+web search          ▂▁▂▆▄█●▃▁▁·▁   #20 of 80*     12%      2
 </pre>
 
-<details><summary>agent tasks · #10 of 334 · 67% of its score</summary>
+<details><summary>agent tasks · #10 of 300 · 67% of its score</summary>
 
 Beats [GPT-5.5 Pro](gpt-5-5-pro.md), [GPT-5.6 Sol](gpt-5-6-sol.md) here, though they rank higher overall.
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #9 of 469 · 43% of its score</summary>
+<details><summary>coding · #9 of 458 · 43% of its score</summary>
 
 Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Fable 5](claude-fable-5.md) here, though they rank higher overall.
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #9 of 400 · 2.6% of its score</summary>
+<details><summary>math · #9 of 398 · 2.6% of its score</summary>
 
 Beats [Claude Opus 5](claude-opus-5.md), [GPT-5.5 Pro](gpt-5-5-pro.md) here, though they rank higher overall.
 
@@ -62,7 +62,7 @@ test              result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #1 of 150 · 5.5% of its score</summary>
+<details><summary>vision &amp; documents · #1 of 147 · 5.5% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall.
 
@@ -73,7 +73,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>web search · #20 of 81 · 12% of its score</summary>
+<details><summary>web search · #20 of 80 · 12% of its score</summary>
 
 Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

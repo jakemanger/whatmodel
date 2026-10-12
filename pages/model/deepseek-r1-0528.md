@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-05 · 685B params (37B active) · mit
 
-**score 65.2** ±0.6 · #152 of 949 · from 51 benchmark results across 12 sources
+**score 65.2** ±0.6 · #142 of 719 · from 51 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ DeepSeek · released 2025-05 · 685B params (37B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁   #207 of 334     13%     13
-coding          ▁▁▁▃▆██▇●▄▃▁   #116 of 469     38%      7
-chat &amp; writing  ▁▁▁▄▆▅▆█▆●▆▂   #88 of 466*    3.0%      1
-math            ▁▂▃▅▆▅▄●▄▁▁▁   #100 of 400     20%      6
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #193 of 300     13%     13
+coding          ▁▁▁▃▆██▇●▄▃▁   #115 of 458     38%      7
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #87 of 393*    3.0%      1
+math            ▁▂▃▅▆▅▄●▄▁▁▁   #100 of 398     20%      6
 web search      ●········█·█       #3 of 3    2.8%      3
 </pre>
 
-<details><summary>agent tasks · #207 of 334 · 13% of its score</summary>
+<details><summary>agent tasks · #193 of 300 · 13% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #116 of 469 · 38% of its score</summary>
+<details><summary>coding · #115 of 458 · 38% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kimi K2 Thinking](kimi-k2-thinking.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Solar Pro 4](solar-pro-4.md) here, though they rank lower overall.
 
@@ -61,7 +61,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #88 of 466 · 3.0% of its score</summary>
+<details><summary>chat &amp; writing · #87 of 393 · 3.0% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [Qwen3.5 122B-A10B](qwen3-5-122b-a10b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
@@ -72,7 +72,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #100 of 400 · 20% of its score</summary>
+<details><summary>math · #100 of 398 · 20% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [GLM-4.5-Air](glm-4-5-air.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank lower overall.
 

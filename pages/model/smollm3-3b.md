@@ -6,7 +6,7 @@
 
 Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
-**score 42.7** ±1.0 · #650 of 949 · from 25 benchmark results across 6 sources
+**score 42.7** ±1.0 · #487 of 719 · from 25 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅●▄▃▂▁    #98 of 334*    1.8%      1
-coding          ▁▁▁▃●██▇▆▄▃▁   #383 of 469*    2.6%      1
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #314 of 466*    7.6%      2
-math            ▁▂▃▅●▅▄█▄▁▁▁    #255 of 400     13%      3
+agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #98 of 300*    1.8%      1
+coding          ▁▁▁▃●██▇▆▄▃▁   #376 of 458*    2.6%      1
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #282 of 393*    7.6%      2
+math            ▁▂▃▅●▅▄█▄▁▁▁    #253 of 398     13%      3
 </pre>
 
-<details><summary>agent tasks · #98 of 334 · 1.8% of its score</summary>
+<details><summary>agent tasks · #98 of 300 · 1.8% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall.
 
@@ -31,7 +31,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>coding · #383 of 469 · 2.6% of its score</summary>
+<details><summary>coding · #376 of 458 · 2.6% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                    result  vs the others in its run  difficulty        coun
 
 </details>
 
-<details><summary>chat &amp; writing · #314 of 466 · 7.6% of its score</summary>
+<details><summary>chat &amp; writing · #282 of 393 · 7.6% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #255 of 400 · 13% of its score</summary>
+<details><summary>math · #253 of 398 · 13% of its score</summary>
 
 Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md) here, though they rank lower overall.
 

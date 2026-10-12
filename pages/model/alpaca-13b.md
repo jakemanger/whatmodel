@@ -14,12 +14,12 @@ Stanford CRFM · released 2023-03 · 13B params · closed weights
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ▁▁●▃▅▅▆█▆▆▆▂   #559 of 579     98%      3
+chat &amp; writing  ▁▁●▃▅▄▆█▇▇▇▃   #447 of 463     98%      3
 </pre>
 
-<details><summary>chat &amp; writing · #559 of 579 · 98% of its score</summary>
+<details><summary>chat &amp; writing · #447 of 463 · 98% of its score</summary>
 
-Beats [Phi-2 (2.7B)](phi-2.md), [MiniChat-3B](minichat-3b.md), [Falcon 40B Instruct](falcon-40b-instruct.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
+Beats [Phi-2 (2.7B)](phi-2.md), [Falcon 40B Instruct](falcon-40b-instruct.md), [ChatGLM3-6B](chatglm3-6b.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md) here, though they rank lower overall.
 
 <pre>
 test                                                      result  vs the others in its run   difficulty                counts  why

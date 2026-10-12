@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 3.3B params (0.8B active) · apache-2.0
 
-**score 34.7** ±1.0 · #807 of 949 · from 16 benchmark results across 2 sources
+**score 34.7** ±1.0 · #604 of 719 · from 16 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ IBM · released 2024-10 · 3.3B params (0.8B active) · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #418 of 469*     16%      2
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #409 of 466*    3.3%      1
-math            ▁▂●▅▆▅▄█▄▁▁▁   #363 of 400*     16%      2
+coding          ▁▁▁▃●██▇▆▄▃▁   #409 of 458*     16%      2
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #348 of 393*    3.3%      1
+math            ▁▂●▅▆▅▄█▄▁▁▁   #361 of 398*     16%      2
 </pre>
 
-<details><summary>coding · #418 of 469 · 16% of its score</summary>
+<details><summary>coding · #409 of 458 · 16% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [DeepSeek LLM 7B Chat](deepseek-llm-7b-chat.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #409 of 466 · 3.3% of its score</summary>
+<details><summary>chat &amp; writing · #348 of 393 · 3.3% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #363 of 400 · 16% of its score</summary>
+<details><summary>math · #361 of 398 · 16% of its score</summary>
 
 Beats [Yi 34B Chat](yi-34b-chat.md), [Llama 3 8B Instruct](llama-3-8b.md), [Command R (03-2024)](command-r-03-2024.md) here, though they rank higher overall. Trails [Gemma 3 1B](gemma-3-1b.md), [Stable Code 3B](stable-code-3b.md), [Qwen3 0.6B](qwen3-0-6b.md) here, though they rank lower overall.
 

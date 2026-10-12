@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · closed weights
 
-**score 72.4** ±0.6 · #63 of 949 · from 53 benchmark results across 28 sources
+**score 72.4** ±0.6 · #60 of 719 · from 53 benchmark results across 28 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ OpenAI · released 2025-08 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▄▃▂▁    #81 of 334     20%     10
-coding              ▁▁▁▃▆██▇▆●▃▁    #76 of 469     20%      6
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #72 of 466*    2.9%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁    #45 of 400     26%      6
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄    #68 of 150    7.7%      8
-web search          ▂▂▂▆▄●▃▃▁▁·▁    #41 of 81*    1.2%      1
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #81 of 300     20%     10
+coding              ▁▁▁▃▆██▇▆●▃▁    #75 of 458     20%      6
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #72 of 393*    2.9%      1
+math                ▁▂▃▅▆▅▄█●▁▁▁    #45 of 398     26%      6
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #68 of 147    7.7%      8
+web search          ▂▁▂▆▄●▃▃▁▁·▁    #41 of 80*    1.2%      1
 </pre>
 
-<details><summary>agent tasks · #81 of 334 · 20% of its score</summary>
+<details><summary>agent tasks · #81 of 300 · 20% of its score</summary>
 
 Trails [MiniMax-M2.7](minimax-m2-7.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #76 of 469 · 20% of its score</summary>
+<details><summary>coding · #75 of 458 · 20% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
 
@@ -58,7 +58,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #72 of 466 · 2.9% of its score</summary>
+<details><summary>chat &amp; writing · #72 of 393 · 2.9% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [Gemma 4 31B](gemma-4-31b.md) here, though they rank lower overall.
 
@@ -69,7 +69,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #45 of 400 · 26% of its score</summary>
+<details><summary>math · #45 of 398 · 26% of its score</summary>
 
 Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md), [GPT-5 Pro](gpt-5-pro.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md) here, though they rank lower overall.
 
@@ -85,7 +85,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #68 of 150 · 7.7% of its score</summary>
+<details><summary>vision &amp; documents · #68 of 147 · 7.7% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Claude Haiku 4.5](claude-haiku-4-5.md), [Qwen3.6 Flash](qwen3-6-flash.md) here, though they rank lower overall.
 
@@ -103,7 +103,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>web search · #41 of 81 · 1.2% of its score</summary>
+<details><summary>web search · #41 of 80 · 1.2% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.7 Max](qwen3-7-max.md), [Gemini 3.5 Flash](gemini-3-5-flash.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

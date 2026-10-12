@@ -6,7 +6,7 @@
 
 TII · released 2024-12 · 1.67B params · falcon-llm
 
-**score 23.9** ±4.2 · #902 of 949 · from 7 benchmark results across 3 sources
+**score 23.9** ±4.2 · #678 of 719 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ TII · released 2024-12 · 1.67B params · falcon-llm
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ●▁▃▆█▆▅▄▄▃▂▁   #333 of 334*     51%      2
-coding       ▁▁▁●▆██▇▆▄▃▁    #446 of 469     23%      4
+agent tasks  ●▁▃▆█▆▅▅▅▄▃▁   #299 of 300*     51%      2
+coding       ▁▁▁●▆██▇▆▄▃▁    #436 of 458     23%      4
 </pre>
 
-<details><summary>agent tasks · #333 of 334 · 51% of its score</summary>
+<details><summary>agent tasks · #299 of 300 · 51% of its score</summary>
 
 Beats [Gemma 3 1B](gemma-3-1b.md) here, though they rank higher overall.
 
@@ -30,7 +30,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>coding · #446 of 469 · 23% of its score</summary>
+<details><summary>coding · #436 of 458 · 23% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall.
 

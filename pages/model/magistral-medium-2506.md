@@ -14,13 +14,13 @@ Mistral · released 2025-06 · closed weights
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▂▆●▆▅▄▄▃▂▁   #248 of 374*    3.0%      1
+agent tasks     ▁▁▂▆●▆▅▄▄▃▂▁   #232 of 340*    3.0%      1
 coding          ▃●······▃·▃▃       #4 of 7*    8.7%      1
-chat &amp; writing  ▁▁▁▃▅▅▆●▆▆▆▂   #308 of 579*     16%      1
-math            ▁▂▃▅▇●▅█▄▁▁▁   #218 of 464*     47%      2
+chat &amp; writing  ▁▁▁▃▅▄▆●▇▇▇▃   #257 of 463*     16%      1
+math            ▁▂▃▅▇●▅█▄▁▁▁   #216 of 462*     47%      2
 </pre>
 
-<details><summary>agent tasks · #248 of 374 · 3.0% of its score</summary>
+<details><summary>agent tasks · #232 of 340 · 3.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #308 of 579 · 16% of its score</summary>
+<details><summary>chat &amp; writing · #257 of 463 · 16% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Granite 4.0 H Micro 3B](granite-4-0-h-micro.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #218 of 464 · 47% of its score</summary>
+<details><summary>math · #216 of 462 · 47% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen3-235b-a22b.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-04 · closed weights
 
-**score 62.3** ±0.5 · #186 of 949 · from 69 benchmark results across 23 sources
+**score 62.3** ±0.5 · #173 of 719 · from 69 benchmark results across 23 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ OpenAI · released 2025-04 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▄▄▃▂▁   #161 of 334     26%     11
-coding              ▁▁▁▃▆██●▆▄▃▁   #143 of 469     19%      7
-chat &amp; writing      ▁▁▁▄▆▅▆█▆●▆▂   #100 of 466    6.8%      4
-math                ▁▂▃▅▆▅●█▄▁▁▁   #184 of 400     14%      9
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄    #72 of 150    4.1%      3
-web search          ▂▂▂▆▄█▃▃▁●·▁     #3 of 81*    1.4%      1
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁   #154 of 300     26%     11
+coding              ▁▁▁▃▆██●▆▄▃▁   #142 of 458     19%      7
+chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃    #99 of 393    6.8%      4
+math                ▁▂▃▅▆▅●█▄▁▁▁   #182 of 398     14%      9
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #72 of 147    4.1%      3
+web search          ▂▁▂▆▄█▃▃▁●·▁     #3 of 80*    1.4%      1
 </pre>
 
-<details><summary>agent tasks · #161 of 334 · 26% of its score</summary>
+<details><summary>agent tasks · #154 of 300 · 26% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>coding · #143 of 469 · 19% of its score</summary>
+<details><summary>coding · #142 of 458 · 19% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #100 of 466 · 6.8% of its score</summary>
+<details><summary>chat &amp; writing · #99 of 393 · 6.8% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [GPT-5.4 nano](gpt-5-4-nano.md) here, though they rank higher overall. Trails [Mistral Large 3 (675B-A41B)](mistral-large-3.md) here, though they rank lower overall.
 
@@ -74,7 +74,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #184 of 400 · 14% of its score</summary>
+<details><summary>math · #182 of 398 · 14% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
@@ -93,7 +93,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>vision &amp; documents · #72 of 150 · 4.1% of its score</summary>
+<details><summary>vision &amp; documents · #72 of 147 · 4.1% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall.
 
@@ -106,7 +106,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>web search · #3 of 81 · 1.4% of its score</summary>
+<details><summary>web search · #3 of 80 · 1.4% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall.
 

@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-02 · 3.84B params · mit
 
-**score 43.7** ±0.7 · #625 of 949 · from 40 benchmark results across 10 sources
+**score 43.7** ±0.7 · #470 of 719 · from 40 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Microsoft · released 2025-02 · 3.84B params · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁●▃▆█▆▅▄▄▃▂▁   #327 of 334    2.3%      3
-coding          ▁▁▁▃▆●█▇▆▄▃▁   #313 of 469    8.0%      4
+agent tasks     ▁●▃▆█▆▅▅▅▄▃▁   #294 of 300    2.3%      3
+coding          ▁▁▁▃▆●█▇▆▄▃▁   #309 of 458    8.0%      4
 chat &amp; writing  █··········●      #1 of 2*    0.6%      1
-math            ▁▂▃▅●▅▄█▄▁▁▁   #281 of 400     17%      5
+math            ▁▂▃▅●▅▄█▄▁▁▁   #279 of 398     17%      5
 </pre>
 
-<details><summary>agent tasks · #327 of 334 · 2.3% of its score</summary>
+<details><summary>agent tasks · #294 of 300 · 2.3% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #313 of 469 · 8.0% of its score</summary>
+<details><summary>coding · #309 of 458 · 8.0% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3 4B Instruct 2507](qwen3-4b-instruct-2507.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>math · #281 of 400 · 17% of its score</summary>
+<details><summary>math · #279 of 398 · 17% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md), [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md) here, though they rank lower overall.
 

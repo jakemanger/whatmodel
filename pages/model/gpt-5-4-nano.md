@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · closed weights
 
-**score 68.6** ±0.8 · #103 of 949 · from 23 benchmark results across 7 sources
+**score 68.6** ±0.8 · #99 of 719 · from 23 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ OpenAI · released 2026-03 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▄▃▂▁     #91 of 334     18%      7
-coding              ▁▁▁▃▆██▇●▄▃▁    #84 of 469*    6.2%      2
-chat &amp; writing      ▁▁▁▄▆▅▆█▆●▆▂   #111 of 466*    5.4%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁     #62 of 400     34%      3
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄    #80 of 150*    8.4%      2
-web search          ▂▂▂●▄█▃▃▁▁·▁     #69 of 81*    3.3%      1
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁     #91 of 300     18%      7
+coding              ▁▁▁▃▆██▇●▄▃▁    #83 of 458*    6.2%      2
+chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #109 of 393*    5.4%      1
+math                ▁▂▃▅▆▅▄█●▁▁▁     #62 of 398     34%      3
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #80 of 147*    8.4%      2
+web search          ▂▁▂●▄█▃▃▁▁·▁     #69 of 80*    3.3%      1
 </pre>
 
-<details><summary>agent tasks · #91 of 334 · 18% of its score</summary>
+<details><summary>agent tasks · #91 of 300 · 18% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [Qwen3.6 35B-A3B](qwen3-6-35b-a3b.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank lower overall.
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #84 of 469 · 6.2% of its score</summary>
+<details><summary>coding · #83 of 458 · 6.2% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md), [GPT-5.1](gpt-5-1.md) here, though they rank higher overall. Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #111 of 466 · 5.4% of its score</summary>
+<details><summary>chat &amp; writing · #109 of 393 · 5.4% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #62 of 400 · 34% of its score</summary>
+<details><summary>math · #62 of 398 · 34% of its score</summary>
 
 Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
 
@@ -75,7 +75,7 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #80 of 150 · 8.4% of its score</summary>
+<details><summary>vision &amp; documents · #80 of 147 · 8.4% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
@@ -87,7 +87,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>web search · #69 of 81 · 3.3% of its score</summary>
+<details><summary>web search · #69 of 80 · 3.3% of its score</summary>
 
 Beats [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [Nemotron 3 Ultra 550B-A55B](nemotron-3-ultra-550b-a55b.md) here, though they rank higher overall. Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md) here, though they rank lower overall.
 

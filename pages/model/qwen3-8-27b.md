@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-08 · 27.3B params · apache-2.0
 
-**score 73.4** ±0.8 · #56 of 949 · from 33 benchmark results across 9 sources
+**score 73.4** ±0.8 · #55 of 719 · from 33 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2026-08 · 27.3B params · apache-2.0
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄●▂▁    #45 of 334     29%      8
-coding              ▁▁▁▃▆██▇▆▄●▁    #31 of 469     27%      6
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #68 of 466*    5.1%      1
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄    #39 of 150     15%      6
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #45 of 300     29%      8
+coding              ▁▁▁▃▆██▇▆▄●▁    #31 of 458     27%      6
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #68 of 393*    5.1%      1
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #39 of 147     15%      6
 </pre>
 
-<details><summary>agent tasks · #45 of 334 · 29% of its score</summary>
+<details><summary>agent tasks · #45 of 300 · 29% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
 
@@ -38,7 +38,7 @@ test                                     result  vs the others in its run  diffi
 
 </details>
 
-<details><summary>coding · #31 of 469 · 27% of its score</summary>
+<details><summary>coding · #31 of 458 · 27% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall.
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #68 of 466 · 5.1% of its score</summary>
+<details><summary>chat &amp; writing · #68 of 393 · 5.1% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md) here, though they rank higher overall. Trails [Nemotron Cascade 2 30B-A3B](nemotron-cascade-2-30b-a3b.md), [Gemma 4 31B](gemma-4-31b.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank lower overall.
 
@@ -65,7 +65,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #39 of 150 · 15% of its score</summary>
+<details><summary>vision &amp; documents · #39 of 147 · 15% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Qwen3.6 Plus](qwen3-6-plus.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank lower overall.
 

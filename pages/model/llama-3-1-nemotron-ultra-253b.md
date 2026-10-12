@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-04 · 253B params · nvidia-open-model
 
-**score 61.0** ±1.5 · #206 of 949 · from 10 benchmark results across 5 sources
+**score 61.0** ±1.5 · #185 of 719 · from 10 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ NVIDIA · released 2025-04 · 253B params · nvidia-open-model
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁   #246 of 334*    4.1%      3
-coding          ▁▁▁▃▆██▇●▄▃▁    #78 of 469*    1.9%      2
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂    #164 of 466     30%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #225 of 300*    4.1%      3
+coding          ▁▁▁▃▆██▇●▄▃▁    #77 of 458*    1.9%      2
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃    #157 of 393     30%      3
 math            ●··········█        #2 of 2     34%      3
 </pre>
 
-<details><summary>agent tasks · #246 of 334 · 4.1% of its score</summary>
+<details><summary>agent tasks · #225 of 300 · 4.1% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #78 of 469 · 1.9% of its score</summary>
+<details><summary>coding · #77 of 458 · 1.9% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md) here, though they rank higher overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #164 of 466 · 30% of its score</summary>
+<details><summary>chat &amp; writing · #157 of 393 · 30% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 

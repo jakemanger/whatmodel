@@ -131,6 +131,7 @@ export function boardMarkdown(v: BoardView, intro = "", head = ""): string {
 
     out.push(boardTable(from, cat, v.shown));
     if (v.hidden > 0) out.push(`\\+ ${v.hidden} more don't fit your machine or budget · [show them](${SITE}${path}?all=1)`);
+    if (v.thinCount > 0) out.push(`\\+ ${v.thinCount} models with fewer than 3 results aren't ranked here · [show them](${SITE}${path}?thin=1)`);
   }
 
   // Comparison-only models with a score are in the table above; the rest are listed below.

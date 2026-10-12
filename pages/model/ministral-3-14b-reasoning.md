@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 13.9B params · apache-2.0
 
-**score 57.5** ±1.0 · #266 of 949 · from 20 benchmark results across 6 sources
+**score 57.5** ±1.0 · #228 of 719 · from 20 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Mistral · released 2025-12 · 13.9B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▄▄▃▂▁   #263 of 334*    3.0%      2
-coding          ▁▁▁▃▆█●▇▆▄▃▁    #227 of 469     11%      2
-chat &amp; writing  ▁▁▁▄▆●▆█▆▆▆▂   #352 of 466*    0.7%      1
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #237 of 300*    3.0%      2
+coding          ▁▁▁▃▆█●▇▆▄▃▁    #224 of 458     11%      2
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #302 of 393*    0.7%      1
 math            █·····█····●        #1 of 3     28%      2
 </pre>
 
-<details><summary>agent tasks · #263 of 334 · 3.0% of its score</summary>
+<details><summary>agent tasks · #237 of 300 · 3.0% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [Granite 4.0 1B](granite-4-0-1b.md), [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>coding · #227 of 469 · 11% of its score</summary>
+<details><summary>coding · #224 of 458 · 11% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #352 of 466 · 0.7% of its score</summary>
+<details><summary>chat &amp; writing · #302 of 393 · 0.7% of its score</summary>
 
 Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 

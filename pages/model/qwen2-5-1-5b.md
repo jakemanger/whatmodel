@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 35.5** ±1.0 · #800 of 949 · from 29 benchmark results across 12 sources
+**score 35.5** ±1.0 · #598 of 719 · from 29 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃●█▆▅▄▄▃▂▁   #292 of 334*    1.7%      1
-coding          ▁▁▁▃●██▇▆▄▃▁    #362 of 469    9.5%      5
-chat &amp; writing  ▁▁▁●▆▅▆█▆▆▆▂    #442 of 466    6.7%      3
-math            ▁▂●▅▆▅▄█▄▁▁▁    #343 of 400     23%      2
+agent tasks     ▁▁▃●█▆▅▅▅▄▃▁   #263 of 300*    1.7%      1
+coding          ▁▁▁▃●██▇▆▄▃▁    #356 of 458    9.5%      5
+chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃    #375 of 393    6.7%      3
+math            ▁▂●▅▆▅▄█▄▁▁▁    #341 of 398     23%      2
 </pre>
 
-<details><summary>agent tasks · #292 of 334 · 1.7% of its score</summary>
+<details><summary>agent tasks · #263 of 300 · 1.7% of its score</summary>
 
 Beats [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall.
 
@@ -31,7 +31,7 @@ test     result  vs the others in its run   difficulty        counts  why
 
 </details>
 
-<details><summary>coding · #362 of 469 · 9.5% of its score</summary>
+<details><summary>coding · #356 of 458 · 9.5% of its score</summary>
 
 Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md) here, though they rank higher overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #442 of 466 · 6.7% of its score</summary>
+<details><summary>chat &amp; writing · #375 of 393 · 6.7% of its score</summary>
 
 Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 350M](granite-4-0-350m.md) here, though they rank lower overall.
 
@@ -59,7 +59,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #343 of 400 · 23% of its score</summary>
+<details><summary>math · #341 of 398 · 23% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md) here, though they rank lower overall.
 

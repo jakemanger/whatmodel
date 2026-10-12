@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-12 · 236B params (21B active) · deepseek
 
-**score 55.8** ±1.4 · #294 of 949 · from 6 benchmark results across 5 sources
+**score 55.8** ±1.4 · #250 of 719 · from 6 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ DeepSeek · released 2024-12 · 236B params (21B active) · deepseek
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆█●▇▆▄▃▁   #203 of 469*     65%      2
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #201 of 466*     26%      2
-math            ▁▂▃▅▆●▄█▄▁▁▁   #227 of 400*    6.9%      1
+coding          ▁▁▁▃▆█●▇▆▄▃▁   #201 of 458*     65%      2
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #192 of 393*     26%      2
+math            ▁▂▃▅▆●▄█▄▁▁▁   #225 of 398*    6.9%      1
 </pre>
 
-<details><summary>coding · #203 of 469 · 65% of its score</summary>
+<details><summary>coding · #201 of 458 · 65% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Falcon-H1R 7B](falcon-h1r-7b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #201 of 466 · 26% of its score</summary>
+<details><summary>chat &amp; writing · #192 of 393 · 26% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                        result  vs the others in its run    difficulty      
 
 </details>
 
-<details><summary>math · #227 of 400 · 6.9% of its score</summary>
+<details><summary>math · #225 of 398 · 6.9% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 

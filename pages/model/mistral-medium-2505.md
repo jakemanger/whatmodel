@@ -14,14 +14,14 @@ Mistral · released 2025-05 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▆▅▄▄▃▂▁   #240 of 374*    6.6%      1
-coding              ▁▁▁▃▅▇█●▅▄▂▁   #208 of 549*    6.9%      1
-chat &amp; writing      ▁▁▁▃▅▅▆█▆●▆▂   #160 of 579*     13%      1
-math                ▁▂▃▅▇▅●█▄▁▁▁   #207 of 464*     37%      2
-vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #121 of 199*    9.1%      1
+agent tasks         ▁▁▂▆●▆▅▄▄▃▂▁   #225 of 340*    6.6%      1
+coding              ▁▁▁▃▅▇█●▅▄▃▁   #200 of 524*    6.9%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #142 of 463*     13%      1
+math                ▁▂▃▅▇▅●█▄▁▁▁   #205 of 462*     37%      2
+vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #113 of 182*    9.1%      1
 </pre>
 
-<details><summary>agent tasks · #240 of 374 · 6.6% of its score</summary>
+<details><summary>agent tasks · #225 of 340 · 6.6% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>coding · #208 of 549 · 6.9% of its score</summary>
+<details><summary>coding · #200 of 524 · 6.9% of its score</summary>
 
 Beats [Qwen3.5 9B](qwen3-5-9b.md), [Devstral 2 (2512)](devstral-2.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #160 of 579 · 13% of its score</summary>
+<details><summary>chat &amp; writing · #142 of 463 · 13% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [MiMo-V2-Flash (309B-A15B)](mimo-v2-flash.md), [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #207 of 464 · 37% of its score</summary>
+<details><summary>math · #205 of 462 · 37% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
@@ -66,7 +66,7 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>vision &amp; documents · #121 of 199 · 9.1% of its score</summary>
+<details><summary>vision &amp; documents · #113 of 182 · 9.1% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank lower overall.
 

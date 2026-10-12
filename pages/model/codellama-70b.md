@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 43.1** ±1.1 · #640 of 949 · from 6 benchmark results across 3 sources
+**score 43.1** ±1.1 · #481 of 719 · from 6 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Meta · released 2024-01 · 68.98B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #348 of 469     87%      5
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #343 of 458     87%      5
 </pre>
 
-<details><summary>coding · #348 of 469 · 87% of its score</summary>
+<details><summary>coding · #343 of 458 · 87% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [OpenChat 3.5](openchat-3-5.md) here, though they rank lower overall.
 

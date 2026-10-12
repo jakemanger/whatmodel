@@ -6,7 +6,7 @@
 
 BigCode · released 2023-07 · 7.53B params · bigcode-openrail-m
 
-**score 30.8** ±0.7 · #852 of 949 · from 16 benchmark results across 4 sources
+**score 30.8** ±0.7 · #637 of 719 · from 16 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ BigCode · released 2023-07 · 7.53B params · bigcode-openrail-m
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #445 of 469     95%      9
-math    ●▂▃▅▆▅▄█▄▁▁▁   #399 of 400    4.6%      2
+coding  ▁▁▁●▆██▇▆▄▃▁   #435 of 458     95%      9
+math    ●▂▃▅▆▅▄█▄▁▁▁   #397 of 398    4.6%      2
 </pre>
 
-<details><summary>coding · #445 of 469 · 95% of its score</summary>
+<details><summary>coding · #435 of 458 · 95% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #399 of 400 · 4.6% of its score</summary>
+<details><summary>math · #397 of 398 · 4.6% of its score</summary>
 
 Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 3.85B params · apache-2.0
 
-**score 45.2** ±0.8 · #581 of 949 · from 33 benchmark results across 8 sources
+**score 45.2** ±0.8 · #439 of 719 · from 33 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Mistral · released 2025-12 · 3.85B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁●▆█▆▅▄▄▃▂▁   #315 of 334*    1.9%      1
-chat &amp; writing      ▁▁▁▄●▅▆█▆▆▆▂   #384 of 466*    3.9%      2
-math                ▁▂▃▅●▅▄█▄▁▁▁    #271 of 400     28%      4
-vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄    #132 of 150     11%      9
+agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #282 of 300*    1.9%      1
+chat &amp; writing      ▁▁▁▃●▄▅█▆▆▇▃   #328 of 393*    3.9%      2
+math                ▁▂▃▅●▅▄█▄▁▁▁    #269 of 398     28%      4
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #130 of 147     11%      9
 </pre>
 
-<details><summary>agent tasks · #315 of 334 · 1.9% of its score</summary>
+<details><summary>agent tasks · #282 of 300 · 1.9% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #384 of 466 · 3.9% of its score</summary>
+<details><summary>chat &amp; writing · #328 of 393 · 3.9% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #271 of 400 · 28% of its score</summary>
+<details><summary>math · #269 of 398 · 28% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-V2.5](deepseek-v2-5.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [InternVL2-4B](internvl2-4b.md) here, though they rank lower overall.
 
@@ -57,7 +57,7 @@ test                         result  vs the others in its run  difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #132 of 150 · 11% of its score</summary>
+<details><summary>vision &amp; documents · #130 of 147 · 11% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall.
 

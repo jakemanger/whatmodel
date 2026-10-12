@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · proprietary
 
-**score 72.4** ±1.2 · #64 of 949 · from 8 benchmark results across 2 sources
+**score 72.4** ±1.2 · #61 of 719 · from 8 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2026-04 · proprietary
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆█▆▅▄●▃▂▁   #68 of 334*     24%      1
-coding          ▁▁▁▃▆██▇▆●▃▁   #56 of 469*     46%      2
-chat &amp; writing  ▁▁▁▄▆▅▆█▆▆●▂   #42 of 466*     12%      1
-math            ▁▂▃▅▆▅▄█●▁▁▁   #64 of 400*    3.9%      1
+agent tasks     ▁▁▃▆█▆▅▅●▄▃▁   #68 of 300*     24%      1
+coding          ▁▁▁▃▆██▇▆●▃▁   #55 of 458*     46%      2
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃   #42 of 393*     12%      1
+math            ▁▂▃▅▆▅▄█●▁▁▁   #64 of 398*    3.9%      1
 </pre>
 
-<details><summary>agent tasks · #68 of 334 · 24% of its score</summary>
+<details><summary>agent tasks · #68 of 300 · 24% of its score</summary>
 
 Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [Ornith 1.5 35B-A3B](ornith-1-5-35b-a3b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                result  vs the others in its run  difficulty      counts  wh
 
 </details>
 
-<details><summary>coding · #56 of 469 · 46% of its score</summary>
+<details><summary>coding · #55 of 458 · 46% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [GLM-5.1](glm-5-1.md), [Mistral Large 4 (public preview)](mistral-large-4.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                       result  vs the others in its run   difficulty      co
 
 </details>
 
-<details><summary>chat &amp; writing · #42 of 466 · 12% of its score</summary>
+<details><summary>chat &amp; writing · #42 of 393 · 12% of its score</summary>
 
 Beats [GPT-6 Sol](gpt-6-sol.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [GLM-5.1](glm-5-1.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md) here, though they rank lower overall.
 
@@ -54,7 +54,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #64 of 400 · 3.9% of its score</summary>
+<details><summary>math · #64 of 398 · 3.9% of its score</summary>
 
 Trails [INTELLECT-3](intellect-3.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
 

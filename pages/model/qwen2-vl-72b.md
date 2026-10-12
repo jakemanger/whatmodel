@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 73.4B params · tongyi-qianwen
 
-**score 53.2** ±1.0 · #362 of 949 · from 29 benchmark results across 6 sources
+**score 53.2** ±1.0 · #294 of 719 · from 29 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Alibaba · released 2024-09 · 73.4B params · tongyi-qianwen
 
 <pre>
 task                vs the others         rank  counts  tests
-math                ▁▂▃▅●▅▄█▄▁▁▁   #248 of 400     17%      2
-vision &amp; documents  ▁▁▃▂▁●▄▃▆▇█▄   #118 of 150     87%     18
+math                ▁▂▃▅●▅▄█▄▁▁▁   #246 of 398     17%      2
+vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄   #116 of 147     87%     18
 </pre>
 
-<details><summary>math · #248 of 400 · 17% of its score</summary>
+<details><summary>math · #246 of 398 · 17% of its score</summary>
 
 Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md), [OpenThinker 7B](openthinker-7b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                        result  vs the others in its run  difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #118 of 150 · 87% of its score</summary>
+<details><summary>vision &amp; documents · #116 of 147 · 87% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank lower overall.
 

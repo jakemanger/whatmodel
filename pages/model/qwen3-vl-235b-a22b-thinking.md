@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 235B params (22B active) · apache-2.0
 
-**score 64.1** ±0.8 · #167 of 949 · from 50 benchmark results across 4 sources
+**score 64.1** ±0.8 · #156 of 719 · from 50 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ Alibaba · released 2025-09 · 235B params (22B active) · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█●▅▄▄▃▂▁    #158 of 334     13%      3
-coding              ▁▁▁▃▆██▇●▄▃▁   #131 of 469*    1.8%      1
-chat &amp; writing      ▁▁▁▄▆▅▆█▆●▆▂   #121 of 466*    6.2%      2
-math                ▁▂▃▅▆▅▄●▄▁▁▁    #117 of 400     15%      6
-vision &amp; documents  ▁▁▃▂▁▃▄▃●▇█▄     #79 of 150     32%     18
+agent tasks         ▁▁▃▆█●▅▅▅▄▃▁    #152 of 300     13%      3
+coding              ▁▁▁▃▆██▇●▄▃▁   #130 of 458*    1.8%      1
+chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #118 of 393*    6.2%      2
+math                ▁▂▃▅▆▅▄●▄▁▁▁    #117 of 398     15%      6
+vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄     #79 of 147     32%     18
 </pre>
 
-<details><summary>agent tasks · #158 of 334 · 13% of its score</summary>
+<details><summary>agent tasks · #152 of 300 · 13% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                    result  vs the others in its run  difficulty           c
 
 </details>
 
-<details><summary>coding · #131 of 469 · 1.8% of its score</summary>
+<details><summary>coding · #130 of 458 · 1.8% of its score</summary>
 
 Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md) here, though they rank higher overall. Trails [Devstral Small 2 24B](devstral-small-2.md), [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Nemotron 3.5 Lightning 30B-A3B](nemotron-3-5-lightning.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #121 of 466 · 6.2% of its score</summary>
+<details><summary>chat &amp; writing · #118 of 393 · 6.2% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5 mini](gpt-5-mini.md), [Qwen3.5 35B-A3B](qwen3-5-35b-a3b.md) here, though they rank higher overall. Trails [LFM2.5 2.6B](lfm2-5-2-6b.md), [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank lower overall.
 
@@ -57,7 +57,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #117 of 400 · 15% of its score</summary>
+<details><summary>math · #117 of 398 · 15% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3-VL 32B Thinking](qwen3-vl-32b-thinking.md) here, though they rank lower overall.
 
@@ -73,7 +73,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #79 of 150 · 32% of its score</summary>
+<details><summary>vision &amp; documents · #79 of 147 · 32% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.4 nano](gpt-5-4-nano.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank higher overall. Trails [GPT-4.1 mini](gpt-4-1-mini.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 

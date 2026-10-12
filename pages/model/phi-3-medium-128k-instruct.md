@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 13.96B params · mit
 
-**score 45.1** ±1.2 · #583 of 949 · from 10 benchmark results across 5 sources
+**score 45.1** ±1.2 · #441 of 719 · from 10 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Microsoft · released 2024-04 · 13.96B params · mit
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁▃▆█●▇▆▄▃▁    #259 of 469     10%      4
-math    ▁▂▃●▆▅▄█▄▁▁▁   #330 of 400*     18%      1
+coding  ▁▁▁▃▆█●▇▆▄▃▁    #256 of 458     10%      4
+math    ▁▂▃●▆▅▄█▄▁▁▁   #328 of 398*     18%      1
 </pre>
 
-<details><summary>coding · #259 of 469 · 10% of its score</summary>
+<details><summary>coding · #256 of 458 · 10% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [QwQ-32B-Preview](qwq-32b-preview.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #330 of 400 · 18% of its score</summary>
+<details><summary>math · #328 of 398 · 18% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-06 · proprietary
 
-**score 70.2** ±1.6 · #84 of 949 · from 5 benchmark results across 4 sources
+**score 70.2** ±1.6 · #81 of 719 · from 5 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ OpenAI · released 2025-06 · proprietary
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃▆█▆●▄▄▃▂▁   #121 of 334*    9.4%      1
-coding       ▁▁▁▃▆██▇▆●▃▁    #70 of 469*     41%      1
-math         ▁▂▃▅▆▅▄█●▁▁▁    #65 of 400*     15%      1
+agent tasks  ▁▁▃▆█▆●▅▅▄▃▁   #120 of 300*    9.4%      1
+coding       ▁▁▁▃▆██▇▆●▃▁    #69 of 458*     41%      1
+math         ▁▂▃▅▆▅▄█●▁▁▁    #65 of 398*     15%      1
 </pre>
 
-<details><summary>agent tasks · #121 of 334 · 9.4% of its score</summary>
+<details><summary>agent tasks · #120 of 300 · 9.4% of its score</summary>
 
 Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Large](jamba-1-5-large.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #70 of 469 · 41% of its score</summary>
+<details><summary>coding · #69 of 458 · 41% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.2](gpt-5-2.md), [GPT-5](gpt-5.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #65 of 400 · 15% of its score</summary>
+<details><summary>math · #65 of 398 · 15% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4-5.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [GPT-5 mini](gpt-5-mini.md) here, though they rank lower overall.
 

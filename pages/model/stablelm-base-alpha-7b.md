@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-04 · 7.9B params · cc-by-sa-4.0
 
-**score 9.3** ±1.2 · #937 of 949 · from 16 benchmark results across 4 sources
+**score 9.3** ±1.2 · #708 of 719 · from 16 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Stability AI · released 2023-04 · 7.9B params · cc-by-sa-4.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ●▁▁▃▆██▇▆▄▃▁   #468 of 469     20%      2
+coding  ●▁▁▃▆██▇▆▄▃▁   #457 of 458     20%      2
 </pre>
 
-<details><summary>coding · #468 of 469 · 20% of its score</summary>
+<details><summary>coding · #457 of 458 · 20% of its score</summary>
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why

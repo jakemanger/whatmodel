@@ -14,12 +14,12 @@ Meta · released 2026-04 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▅▆█▆▆▆●   #12 of 579*     33%      1
-math                ▁▂▃▅▇▅▅●▄▁▁▁   #78 of 464*    6.4%      1
-vision &amp; documents  ▁▁▃▃▂▃▅▅▇▇●▃   #14 of 199*     34%      2
+chat &amp; writing      ▁▁▁▃▅▄▆█▇▇▇●   #12 of 463*     33%      1
+math                ▁▂▃▅▇▅▅●▄▁▁▁   #78 of 462*    6.4%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▄▇▇●▃   #14 of 182*     34%      2
 </pre>
 
-<details><summary>chat &amp; writing · #12 of 579 · 33% of its score</summary>
+<details><summary>chat &amp; writing · #12 of 463 · 33% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [GPT-6.1 Sol](gpt-6-1-sol.md), [Claude Sonnet 5.5](claude-sonnet-5-5.md) here, though they rank higher overall. Trails [Claude Opus 4.6](claude-opus-4-6.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #78 of 464 · 6.4% of its score</summary>
+<details><summary>math · #78 of 462 · 6.4% of its score</summary>
 
 Trails [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md), [EXAONE 4.5 33B](exaone-4-5-33b.md) here, though they rank lower overall.
 
@@ -41,7 +41,7 @@ test                      result  vs the others in its run    difficulty        
 
 </details>
 
-<details><summary>vision &amp; documents · #14 of 199 · 34% of its score</summary>
+<details><summary>vision &amp; documents · #14 of 182 · 34% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall.
 

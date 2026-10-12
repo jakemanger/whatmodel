@@ -6,7 +6,7 @@
 
 OpenChat · released 2023-10 · 7B params · apache-2.0
 
-**score 41.3** ±1.5 · #686 of 949 · from 7 benchmark results across 4 sources
+**score 41.3** ±1.5 · #511 of 719 · from 7 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ OpenChat · released 2023-10 · 7B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆●█▇▆▄▃▁   #346 of 469*     18%      1
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #376 of 466*     39%      2
+coding          ▁▁▁▃▆●█▇▆▄▃▁   #341 of 458*     18%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #321 of 393*     39%      2
 math            █··········●       #1 of 2*     12%      1
 </pre>
 
-<details><summary>coding · #346 of 469 · 18% of its score</summary>
+<details><summary>coding · #341 of 458 · 18% of its score</summary>
 
 Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test             result  vs the others in its run   difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #376 of 466 · 39% of its score</summary>
+<details><summary>chat &amp; writing · #321 of 393 · 39% of its score</summary>
 
 Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md), [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 

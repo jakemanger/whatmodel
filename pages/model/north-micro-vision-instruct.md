@@ -6,7 +6,7 @@
 
 Cohere · released 2026-08 · 2.4B params · apache-2.0
 
-**score 40.7** ±1.9 · #699 of 949 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 40.7** ±1.9 · #521 of 719 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Cohere · released 2026-08 · 2.4B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▄▆▅●█▆▆▆▂   #275 of 466*    6.8%      1
-vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄    #138 of 150     56%      9
+chat &amp; writing      ▁▁▁▃▅▄●█▆▆▇▃   #255 of 393*    6.8%      1
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #136 of 147     56%      9
 </pre>
 
-<details><summary>chat &amp; writing · #275 of 466 · 6.8% of its score</summary>
+<details><summary>chat &amp; writing · #255 of 393 · 6.8% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>vision &amp; documents · #138 of 150 · 56% of its score</summary>
+<details><summary>vision &amp; documents · #136 of 147 · 56% of its score</summary>
 
 Beats [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Gemma 3 4B](gemma-3-4b.md), [CogVLM2 Llama3 Chat 19B](cogvlm2-llama3-chat-19b.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md) here, though they rank lower overall.
 

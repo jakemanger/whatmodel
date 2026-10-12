@@ -6,7 +6,7 @@
 
 Upstage · released 2023-12 · 10.7B params · cc-by-nc-4.0
 
-**score 37.4** ±0.7 · #763 of 949 · from 13 benchmark results across 8 sources
+**score 37.4** ±0.7 · #569 of 719 · from 13 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Upstage · released 2023-12 · 10.7B params · cc-by-nc-4.0
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁    #409 of 469     76%      3
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #410 of 466*    8.6%      2
+coding          ▁▁▁▃●██▇▆▄▃▁    #400 of 458     76%      3
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃   #349 of 393*    8.6%      2
 </pre>
 
-<details><summary>coding · #409 of 469 · 76% of its score</summary>
+<details><summary>coding · #400 of 458 · 76% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Code Llama 7B Instruct](codellama-7b-instruct.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #410 of 466 · 8.6% of its score</summary>
+<details><summary>chat &amp; writing · #349 of 393 · 8.6% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

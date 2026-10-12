@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-04 · 3B params · apache-2.0
 
-**score 17.4** ±2.0 · #926 of 949 · from 3 benchmark results across 3 sources
+**score 17.4** ±2.0 · #697 of 719 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ LMSYS · released 2023-04 · 3B params · apache-2.0
 
 <pre>
 task            vs the others         rank  counts  tests
-chat &amp; writing  ●▁▁▄▆▅▆█▆▆▆▂   #465 of 466     98%      3
+chat &amp; writing  ●▁▁▃▅▄▅█▆▆▇▃   #392 of 393     98%      3
 </pre>
 
-<details><summary>chat &amp; writing · #465 of 466 · 98% of its score</summary>
+<details><summary>chat &amp; writing · #392 of 393 · 98% of its score</summary>
 
 Trails [Gemma 3 270M IT](gemma-3-270m.md) here, though they rank lower overall.
 

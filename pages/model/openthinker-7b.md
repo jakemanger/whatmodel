@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-01 · 7.62B params · apache-2.0
 
-**score 45.2** ±1.6 · #582 of 949 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 45.2** ±1.6 · #440 of 719 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Open Thoughts · released 2025-01 · 7.62B params · apache-2.0
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #434 of 469*     13%      1
-math    ▁▂▃▅▆●▄█▄▁▁▁    #230 of 400     56%      3
+coding  ▁▁▁●▆██▇▆▄▃▁   #424 of 458*     13%      1
+math    ▁▂▃▅▆●▄█▄▁▁▁    #228 of 398     56%      3
 </pre>
 
-<details><summary>coding · #434 of 469 · 13% of its score</summary>
+<details><summary>coding · #424 of 458 · 13% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                    result  vs the others in its run  difficulty        coun
 
 </details>
 
-<details><summary>math · #230 of 400 · 56% of its score</summary>
+<details><summary>math · #228 of 398 · 56% of its score</summary>
 
 Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall.
 

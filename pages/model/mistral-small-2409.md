@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-09 · 22.25B params · mistral-research
 
-**score 49.4** ±1.9 · #460 of 949 · from 9 benchmark results across 6 sources
+**score 49.4** ±1.9 · #354 of 719 · from 9 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Mistral AI · released 2024-09 · 22.25B params · mistral-research
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁▃●█▆▅▄▄▃▂▁   #283 of 334*    6.1%      1
-coding       ▁▁▁▃▆█●▇▆▄▃▁    #242 of 469     26%      4
+agent tasks  ▁▁▃●█▆▅▅▅▄▃▁   #255 of 300*    6.1%      1
+coding       ▁▁▁▃▆█●▇▆▄▃▁    #239 of 458     26%      4
 </pre>
 
-<details><summary>agent tasks · #283 of 334 · 6.1% of its score</summary>
+<details><summary>agent tasks · #255 of 300 · 6.1% of its score</summary>
 
 Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall. Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md), [Qwen2.5 3B Instruct](qwen2-5-3b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #242 of 469 · 26% of its score</summary>
+<details><summary>coding · #239 of 458 · 26% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [InternLM2.5 20B Chat](internlm2-5-20b-chat.md) here, though they rank lower overall.
 

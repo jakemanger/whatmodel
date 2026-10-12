@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 43.6** ±1.0 · #628 of 949 · from 4 benchmark results across 2 sources
+**score 43.6** ±1.0 · #473 of 719 · from 4 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Meta · released 2024-01 · 68.98B params · llama2
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #339 of 469     74%      2
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #334 of 458     74%      2
 </pre>
 
-<details><summary>coding · #339 of 469 · 74% of its score</summary>
+<details><summary>coding · #334 of 458 · 74% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 3.19B params · apache-2.0
 
-**score 46.5** ±0.9 · #541 of 949 · from 24 benchmark results across 3 sources
+**score 46.5** ±0.9 · #410 of 719 · from 24 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -16,8 +16,8 @@ IBM · released 2025-09 · 3.19B params · apache-2.0
 task            vs the others          rank  counts  tests
 agent tasks     ●·▄········█       #4 of 4*    1.3%      1
 coding          ●···▄······▄        #4 of 4     34%      7
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #220 of 466*    4.9%      2
-math            ▁▂▃▅●▅▄█▄▁▁▁    #268 of 400     24%      5
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #206 of 393*    4.9%      2
+math            ▁▂▃▅●▅▄█▄▁▁▁    #266 of 398     24%      5
 </pre>
 
 <details><summary>agent tasks · #4 of 4 · 1.3% of its score</summary>
@@ -48,7 +48,7 @@ test                result  vs the others in its run    difficulty           cou
 
 </details>
 
-<details><summary>chat &amp; writing · #220 of 466 · 4.9% of its score</summary>
+<details><summary>chat &amp; writing · #206 of 393 · 4.9% of its score</summary>
 
 Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
@@ -60,7 +60,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #268 of 400 · 24% of its score</summary>
+<details><summary>math · #266 of 398 · 24% of its score</summary>
 
 Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [DeepSeek-V2.5](deepseek-v2-5.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Mixtral 8x7B v0.1 (base)](mixtral-8x7b-v0-1.md), [InternVL2-4B](internvl2-4b.md) here, though they rank lower overall.
 

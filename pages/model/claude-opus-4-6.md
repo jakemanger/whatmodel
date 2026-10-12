@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-02 · closed weights
 
-**score 74.7** ±0.5 · #45 of 949 · from 53 benchmark results across 27 sources
+**score 74.7** ±0.5 · #45 of 719 · from 53 benchmark results across 27 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ Anthropic · released 2026-02 · closed weights
 
 <pre>
 task                vs the others        rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄●▂▁   #47 of 334     20%     14
-coding              ▁▁▁▃▆██▇▆●▃▁   #37 of 469     13%      5
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆▆●   #3 of 466*    2.7%      2
-math                ▁▂▃▅▆▅▄█●▁▁▁   #37 of 400     33%     10
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄   #18 of 150    5.1%      5
-web search          ▂▂▂▆▄●▃▃▁▁·▁   #23 of 81*    1.9%      2
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁   #47 of 300     20%     14
+coding              ▁▁▁▃▆██▇▆●▃▁   #37 of 458     13%      5
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆▇●   #3 of 393*    2.7%      2
+math                ▁▂▃▅▆▅▄█●▁▁▁   #37 of 398     33%     10
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #18 of 147    5.1%      5
+web search          ▂▁▂▆▄●▃▃▁▁·▁   #23 of 80*    1.9%      2
 </pre>
 
-<details><summary>agent tasks · #47 of 334 · 20% of its score</summary>
+<details><summary>agent tasks · #47 of 300 · 20% of its score</summary>
 
 Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark-1-2.md), [Muse Spark 1.1](muse-spark-1-1.md) here, though they rank higher overall. Trails [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #37 of 469 · 13% of its score</summary>
+<details><summary>coding · #37 of 458 · 13% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall. Trails [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
@@ -61,7 +61,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #3 of 466 · 2.7% of its score</summary>
+<details><summary>chat &amp; writing · #3 of 393 · 2.7% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [GPT-6.1 Sol](gpt-6-1-sol.md) here, though they rank higher overall.
 
@@ -73,7 +73,7 @@ test                              result  vs the others in its run    difficulty
 
 </details>
 
-<details><summary>math · #37 of 400 · 33% of its score</summary>
+<details><summary>math · #37 of 398 · 33% of its score</summary>
 
 Beats [Claude Opus 4.7](claude-opus-4-7.md), [Grok 4.7](grok-4-7.md) here, though they rank higher overall. Trails [GPT-5.2](gpt-5-2.md), [Qwen3.7 Max](qwen3-7-max.md) here, though they rank lower overall.
 
@@ -93,7 +93,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #18 of 150 · 5.1% of its score</summary>
+<details><summary>vision &amp; documents · #18 of 147 · 5.1% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md) here, though they rank higher overall. Trails [Gemini 3.5 Flash](gemini-3-5-flash.md) here, though they rank lower overall.
 
@@ -108,7 +108,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #23 of 81 · 1.9% of its score</summary>
+<details><summary>web search · #23 of 80 · 1.9% of its score</summary>
 
 Beats [Claude Opus 4.8](claude-opus-4-8.md), [GPT-5.4](gpt-5-4.md), [Claude Haiku 5.5](claude-haiku-5-5.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

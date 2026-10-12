@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 45.8** ±1.2 · #563 of 949 · from 11 benchmark results across 4 sources
+**score 45.8** ±1.2 · #429 of 719 · from 11 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ IBM · released 2024-04 · 33.72B params · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆●█▇▆▄▃▁   #302 of 469     66%      7
+coding  ▁▁▁▃▆●█▇▆▄▃▁   #298 of 458     66%      7
 </pre>
 
-<details><summary>coding · #302 of 469 · 66% of its score</summary>
+<details><summary>coding · #298 of 458 · 66% of its score</summary>
 
 Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 30B-A3B Instruct](qwen3-vl-30b-a3b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 

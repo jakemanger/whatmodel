@@ -14,13 +14,13 @@ Google · released 2025-09 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆█●▅▄▄▃▂▁    #188 of 374     26%      3
-coding              ▁▁▁▃▅▇█●▅▄▂▁   #203 of 549*     51%      2
-chat &amp; writing      ▁▁▁▃▅▅▆█▆●▆▂   #138 of 579*     15%      1
-vision &amp; documents  ▁▁▃▃▂▃▅▅▇●█▃    #71 of 199*     11%      1
+agent tasks         ▁▁▂▆█●▅▄▄▃▂▁    #179 of 340     26%      3
+coding              ▁▁▁▃▅▇█●▅▄▃▁   #195 of 524*     51%      2
+chat &amp; writing      ▁▁▁▃▅▄▆█▇●▇▃   #122 of 463*     15%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▄▇●█▃    #70 of 182*     11%      1
 </pre>
 
-<details><summary>agent tasks · #188 of 374 · 26% of its score</summary>
+<details><summary>agent tasks · #179 of 340 · 26% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                result  vs the others in its run  difficulty           count
 
 </details>
 
-<details><summary>coding · #203 of 549 · 51% of its score</summary>
+<details><summary>coding · #195 of 524 · 51% of its score</summary>
 
 Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Instruct](qwen3-vl-235b-a22b-instruct.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #138 of 579 · 15% of its score</summary>
+<details><summary>chat &amp; writing · #122 of 463 · 15% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [GPT-5.4 nano](gpt-5-4-nano.md), [Step 3.5 Flash (196B-A11B)](step-3-5-flash.md) here, though they rank higher overall. Trails [Gemini 2.5 Flash](gemini-2-5-flash.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md), [GPT-4.1](gpt-4-1.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #71 of 199 · 11% of its score</summary>
+<details><summary>vision &amp; documents · #70 of 182 · 11% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [Inkling Small (266B-A12B)](inkling-small.md) here, though they rank higher overall.
 

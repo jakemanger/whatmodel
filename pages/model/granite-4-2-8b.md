@@ -6,7 +6,7 @@
 
 IBM · released 2026-08 · 8.79B params · apache-2.0
 
-**score 59.7** ±1.1 · #222 of 949 · from 19 benchmark results across 2 sources
+**score 59.7** ±1.1 · #198 of 719 · from 19 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ IBM · released 2026-08 · 8.79B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█●▅▄▄▃▂▁    #163 of 334     28%      6
-coding          ▁▁▁▃▆██●▆▄▃▁    #192 of 469     27%      5
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #247 of 466*     17%      2
-math            ▁▂▃▅▆▅▄●▄▁▁▁   #123 of 400*     16%      2
+agent tasks     ▁▁▃▆█●▅▅▅▄▃▁    #156 of 300     28%      6
+coding          ▁▁▁▃▆██●▆▄▃▁    #190 of 458     27%      5
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #228 of 393*     17%      2
+math            ▁▂▃▅▆▅▄●▄▁▁▁   #123 of 398*     16%      2
 </pre>
 
-<details><summary>agent tasks · #163 of 334 · 28% of its score</summary>
+<details><summary>agent tasks · #156 of 300 · 28% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0528](deepseek-r1-0528.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Jamba 1.5 Large](jamba-1-5-large.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>coding · #192 of 469 · 27% of its score</summary>
+<details><summary>coding · #190 of 458 · 27% of its score</summary>
 
 Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3 30B-A3B Instruct 2507](qwen3-30b-a3b-instruct-2507.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-V2.5](deepseek-v2-5.md), [OpenThinker 32B](openthinker-32b.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #247 of 466 · 17% of its score</summary>
+<details><summary>chat &amp; writing · #228 of 393 · 17% of its score</summary>
 
 Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
@@ -63,7 +63,7 @@ test                           result  vs the others in its run    difficulty   
 
 </details>
 
-<details><summary>math · #123 of 400 · 16% of its score</summary>
+<details><summary>math · #123 of 398 · 16% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank higher overall. Trails [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 

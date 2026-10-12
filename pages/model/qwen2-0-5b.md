@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 0.49B params · apache-2.0
 
-**score 25.3** ±1.7 · #894 of 949 · from 8 benchmark results across 4 sources
+**score 25.3** ±1.7 · #671 of 719 · from 8 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -16,7 +16,7 @@ Alibaba · released 2024-06 · 0.49B params · apache-2.0
 task            vs the others          rank  counts  tests
 coding          ●··········█       #2 of 2*     16%      1
 chat &amp; writing  ●··········█       #2 of 2*    5.2%      1
-math            ▁●▃▅▆▅▄█▄▁▁▁   #384 of 400*     15%      1
+math            ▁●▃▅▆▅▄█▄▁▁▁   #382 of 398*     15%      1
 </pre>
 
 <details><summary>coding · #2 of 2 · 16% of its score</summary>
@@ -37,7 +37,7 @@ test                              result  vs the others in its run  difficulty  
 
 </details>
 
-<details><summary>math · #384 of 400 · 15% of its score</summary>
+<details><summary>math · #382 of 398 · 15% of its score</summary>
 
 Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Qwen2-VL 2B Instruct](qwen2-vl-2b.md) here, though they rank higher overall.
 

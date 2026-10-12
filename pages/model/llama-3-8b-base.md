@@ -6,7 +6,7 @@
 
 Meta · released 2024-04 · 8.03B params · llama3
 
-**score 35.6** ±0.7 · #796 of 949 · from 9 benchmark results across 5 sources
+**score 35.6** ±0.7 · #596 of 719 · from 9 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Meta · released 2024-04 · 8.03B params · llama3
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #426 of 469     83%      3
+coding  ▁▁▁●▆██▇▆▄▃▁   #417 of 458     83%      3
 </pre>
 
-<details><summary>coding · #426 of 469 · 83% of its score</summary>
+<details><summary>coding · #417 of 458 · 83% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Granite 3B Code Base (2K)](granite-3b-code-base-2k.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-08 · closed weights
 
-**score 76.5** ±0.7 · #30 of 949 · from 18 benchmark results across 5 sources
+**score 76.5** ±0.7 · #30 of 719 · from 18 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ SpaceXAI (xAI) · released 2026-08 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄●▂▁    #30 of 334     14%      3
-coding              ▁▁▁▃▆██▇▆▄●▁   #20 of 469*     10%      2
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #51 of 466*    4.1%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁    #27 of 400     36%      3
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄   #35 of 150*    4.2%      2
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #30 of 300     14%      3
+coding              ▁▁▁▃▆██▇▆▄●▁   #20 of 458*     10%      2
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #51 of 393*    4.1%      1
+math                ▁▂▃▅▆▅▄█●▁▁▁    #27 of 398     36%      3
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #35 of 147*    4.2%      2
 </pre>
 
-<details><summary>agent tasks · #30 of 334 · 14% of its score</summary>
+<details><summary>agent tasks · #30 of 300 · 14% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #20 of 469 · 10% of its score</summary>
+<details><summary>coding · #20 of 458 · 10% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Grok 4.7](grok-4-7.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #51 of 466 · 4.1% of its score</summary>
+<details><summary>chat &amp; writing · #51 of 393 · 4.1% of its score</summary>
 
 Beats [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Claude Sonnet 4.5](claude-sonnet-4-5.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
 
@@ -57,7 +57,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #27 of 400 · 36% of its score</summary>
+<details><summary>math · #27 of 398 · 36% of its score</summary>
 
 Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3-8-flash.md) here, though they rank higher overall. Trails [Qwen3.7 Max](qwen3-7-max.md), [Qwen3.8 Max (0902)](qwen3-8-max-0902.md), [Gemini 3.7 Flash](gemini-3-7-flash.md) here, though they rank lower overall.
 
@@ -70,7 +70,7 @@ test                       result  vs the others in its run    difficulty       
 
 </details>
 
-<details><summary>vision &amp; documents · #35 of 150 · 4.2% of its score</summary>
+<details><summary>vision &amp; documents · #35 of 147 · 4.2% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Qwen3.6 Plus](qwen3-6-plus.md), [Qwen3.7 Plus](qwen3-7-plus.md) here, though they rank lower overall.
 

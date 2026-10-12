@@ -14,12 +14,12 @@ OpenAI · released 2025-03 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▃▅▇█●▅▄▂▁   #183 of 549*     62%      1
-chat &amp; writing      ▁▁▁▃▅▅▆█▆▆●▂    #76 of 579*     22%      1
-vision &amp; documents  ▁▁▃▃▂▃▅▅▇●█▃    #64 of 199*     15%      1
+coding              ▁▁▁▃▅▇█●▅▄▃▁   #179 of 524*     62%      1
+chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃    #68 of 463*     22%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▄▇●█▃    #63 of 182*     15%      1
 </pre>
 
-<details><summary>coding · #183 of 549 · 62% of its score</summary>
+<details><summary>coding · #179 of 524 · 62% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #76 of 579 · 22% of its score</summary>
+<details><summary>chat &amp; writing · #68 of 463 · 22% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [Qwen3.8 27B](qwen3-8-27b.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall.
 
@@ -41,7 +41,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #64 of 199 · 15% of its score</summary>
+<details><summary>vision &amp; documents · #63 of 182 · 15% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5](gpt-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank higher overall. Trails [Gemma 4 26B-A4B](gemma-4-26b-a4b.md) here, though they rank lower overall.
 

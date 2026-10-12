@@ -14,14 +14,14 @@ Google · released 2025-02 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▂▆●▆▅▄▄▃▂▁    #239 of 374    8.0%      3
-chat &amp; writing      ▁▁▁▃▅▅▆█●▆▆▂   #198 of 579*    8.5%      1
-math                ▁▂▃▅▇▅●█▄▁▁▁   #206 of 464*     24%      2
-vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #110 of 199*    5.9%      1
-web search          ▂▁▂▇▅█▃▄●▂▁▁     #10 of 96*    5.1%      1
+agent tasks         ▁▁▂▆●▆▅▄▄▃▂▁    #224 of 340    8.0%      3
+chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #174 of 463*    8.5%      1
+math                ▁▂▃▅▇▅●█▄▁▁▁   #204 of 462*     24%      2
+vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #104 of 182*    5.9%      1
+web search          ▂·▂▇▅█▃▄●▂▁▁     #10 of 92*    5.1%      1
 </pre>
 
-<details><summary>agent tasks · #239 of 374 · 8.0% of its score</summary>
+<details><summary>agent tasks · #224 of 340 · 8.0% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (Jan '25)](deepseek-r1.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
@@ -34,7 +34,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #198 of 579 · 8.5% of its score</summary>
+<details><summary>chat &amp; writing · #174 of 463 · 8.5% of its score</summary>
 
 Beats [INTELLECT-3](intellect-3.md), [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -45,7 +45,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #206 of 464 · 24% of its score</summary>
+<details><summary>math · #204 of 462 · 24% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) here, though they rank higher overall. Trails [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 
@@ -57,9 +57,9 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>vision &amp; documents · #110 of 199 · 5.9% of its score</summary>
+<details><summary>vision &amp; documents · #104 of 182 · 5.9% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md), [GLM-4.6V](glm-4-6v.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.6V](glm-4-6v.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
@@ -68,7 +68,7 @@ test                             result  vs the others in its run   difficulty  
 
 </details>
 
-<details><summary>web search · #10 of 96 · 5.1% of its score</summary>
+<details><summary>web search · #10 of 92 · 5.1% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [Claude Fable 5.1](claude-fable-5-1.md) here, though they rank higher overall. Trails [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

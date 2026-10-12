@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-07 · 9.24B params
 
-**score 59.1** ±1.4 · #235 of 949 · from 3 benchmark results across 3 sources
+**score 59.1** ±1.4 · #206 of 719 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Princeton NLP · released 2024-07 · 9.24B params
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆█●▆▆▂   #140 of 466*     76%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #136 of 393*     76%      1
 </pre>
 
-<details><summary>chat &amp; writing · #140 of 466 · 76% of its score</summary>
+<details><summary>chat &amp; writing · #136 of 393 · 76% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [EXAONE 4.5 33B](exaone-4-5-33b.md), [INTELLECT-3](intellect-3.md) here, though they rank higher overall. Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Spark-X2.5 1.7B](spark-x2-5-1-7b.md) here, though they rank lower overall.
 

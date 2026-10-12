@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-02 · 7.72B params · tongyi-qianwen
 
-**score 36.6** ±0.8 · #778 of 949 · from 13 benchmark results across 10 sources
+**score 36.6** ±0.8 · #582 of 719 · from 13 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Alibaba · released 2024-02 · 7.72B params · tongyi-qianwen
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃●██▇▆▄▃▁   #402 of 469*     26%      1
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂    #413 of 466     21%      3
+coding          ▁▁▁▃●██▇▆▄▃▁   #394 of 458*     26%      1
+chat &amp; writing  ▁▁▁▃●▄▅█▆▆▇▃    #352 of 393     21%      3
 </pre>
 
-<details><summary>coding · #402 of 469 · 26% of its score</summary>
+<details><summary>coding · #394 of 458 · 26% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [WizardLM 13B V1.2](wizardlm-13b-v1-2.md), [Falcon3 3B Instruct](falcon3-3b.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test       result  vs the others in its run  difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #413 of 466 · 21% of its score</summary>
+<details><summary>chat &amp; writing · #352 of 393 · 21% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

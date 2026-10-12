@@ -14,13 +14,13 @@ Google · released 2024-09 · proprietary
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▃▅▇●▇▅▄▂▁    #257 of 549     51%      5
-chat &amp; writing      ▁▁▁▃▅▅▆█●▆▆▂   #209 of 579*    4.0%      1
-math                ▁▂▃▅▇●▅█▄▁▁▁   #236 of 464*     13%      2
-vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #106 of 199*    4.7%      2
+coding              ▁▁▁▃▅▇●▇▅▄▃▁    #246 of 524     51%      5
+chat &amp; writing      ▁▁▁▃▅▄▆█●▇▇▃   #184 of 463*    4.0%      1
+math                ▁▂▃▅▇●▅█▄▁▁▁   #234 of 462*     13%      2
+vision &amp; documents  ▁▁▃▃▂▃▅●▇▇█▃   #102 of 182*    4.7%      2
 </pre>
 
-<details><summary>coding · #257 of 549 · 51% of its score</summary>
+<details><summary>coding · #246 of 524 · 51% of its score</summary>
 
 Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-coder-v2-0724.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #209 of 579 · 4.0% of its score</summary>
+<details><summary>chat &amp; writing · #184 of 463 · 4.0% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #236 of 464 · 13% of its score</summary>
+<details><summary>math · #234 of 462 · 13% of its score</summary>
 
 Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
@@ -58,9 +58,9 @@ test                      result  vs the others in its run   difficulty         
 
 </details>
 
-<details><summary>vision &amp; documents · #106 of 199 · 4.7% of its score</summary>
+<details><summary>vision &amp; documents · #102 of 182 · 4.7% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Hunyuan-Vision-1.5-Thinking](hunyuan-vision-1-5-thinking.md), [GLM-4.6V](glm-4-6v.md) here, though they rank higher overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.6V](glm-4-6v.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall.
 
 <pre>
 test                                 result  vs the others in its run   difficulty  counts  why

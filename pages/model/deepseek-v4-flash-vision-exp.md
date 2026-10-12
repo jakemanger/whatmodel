@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-08 · 304.6B params · mit
 
-**score 75.7** ±2.3 · #35 of 949 · from 8 benchmark results across 2 sources
+**score 75.7** ±2.3 · #35 of 719 · from 8 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ DeepSeek · released 2026-08 · 304.6B params · mit
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄●▂▁     #32 of 334     57%      4
-coding              ▁▁▁▃▆██▇▆●▃▁    #73 of 469*     12%      1
-vision &amp; documents  ▁▁▃▂●▃▄▃▆▇█▄   #123 of 150*    0.8%      1
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁     #32 of 300     57%      4
+coding              ▁▁▁▃▆██▇▆●▃▁    #72 of 458*     12%      1
+vision &amp; documents  ▁▁▃▂●▃▄▂▆▇█▄   #121 of 147*    0.8%      1
 </pre>
 
-<details><summary>agent tasks · #32 of 334 · 57% of its score</summary>
+<details><summary>agent tasks · #32 of 300 · 57% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6-luna.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #73 of 469 · 12% of its score</summary>
+<details><summary>coding · #72 of 458 · 12% of its score</summary>
 
 Trails [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test                           result  vs the others in its run  difficulty     
 
 </details>
 
-<details><summary>vision &amp; documents · #123 of 150 · 0.8% of its score</summary>
+<details><summary>vision &amp; documents · #121 of 147 · 0.8% of its score</summary>
 
 Trails [Qwen3.5 2B](qwen3-5-2b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thinking.md), [Qwen2.5-VL 7B Instruct](qwen2-5-vl-7b.md) here, though they rank lower overall.
 

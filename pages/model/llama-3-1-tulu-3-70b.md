@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.6B params · llama3.1
 
-**score 53.6** ±1.4 · #356 of 949 · from 10 benchmark results across 2 sources
+**score 53.6** ±1.4 · #289 of 719 · from 10 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Ai2 · released 2024-11 · 70.6B params · llama3.1
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂    #258 of 466     32%      3
-math            ▁▂▃▅●▅▄█▄▁▁▁   #243 of 400*     21%      2
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #239 of 393     32%      3
+math            ▁▂▃▅●▅▄█▄▁▁▁   #241 of 398*     21%      2
 </pre>
 
-<details><summary>chat &amp; writing · #258 of 466 · 32% of its score</summary>
+<details><summary>chat &amp; writing · #239 of 393 · 32% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #243 of 400 · 21% of its score</summary>
+<details><summary>math · #241 of 398 · 21% of its score</summary>
 
 Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md), [OpenThinker 7B](openthinker-7b.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-06 · 7.74B params · other
 
-**score 48.5** ±1.7 · #485 of 949 · from 7 benchmark results across 2 sources
+**score 48.5** ±1.7 · #373 of 719 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,10 +14,10 @@ Shanghai AI Laboratory (InternLM) · released 2024-06 · 7.74B params · other
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▅●▅▄█▄▁▁▁   #294 of 400*     33%      2
+math  ▁▂▃▅●▅▄█▄▁▁▁   #292 of 398*     33%      2
 </pre>
 
-<details><summary>math · #294 of 400 · 33% of its score</summary>
+<details><summary>math · #292 of 398 · 33% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md) here, though they rank lower overall.
 

@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 48.8** ±2.1 · #476 of 949 · from 8 benchmark results across 4 sources
+**score 48.8** ±2.1 · #366 of 719 · from 8 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Amazon · released 2024-12 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆●▆▅▄▄▃▂▁    #253 of 334     31%      4
-chat &amp; writing      ▁▁▁▄▆▅●█▆▆▆▂   #287 of 466*     39%      1
-vision &amp; documents  ▁▁▃●▁▃▄▃▆▇█▄   #131 of 150*     27%      1
+agent tasks         ▁▁▃▆●▆▅▅▅▄▃▁    #230 of 300     31%      4
+chat &amp; writing      ▁▁▁▃▅▄●█▆▆▇▃   #264 of 393*     39%      1
+vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄   #129 of 147*     27%      1
 </pre>
 
-<details><summary>agent tasks · #253 of 334 · 31% of its score</summary>
+<details><summary>agent tasks · #230 of 300 · 31% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Phi-3.5-mini-instruct](phi-3-5-mini-instruct.md), [Jamba 1.5 Mini](jamba-1-5-mini.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #287 of 466 · 39% of its score</summary>
+<details><summary>chat &amp; writing · #264 of 393 · 39% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -44,7 +44,7 @@ test            result  vs the others in its run   difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #131 of 150 · 27% of its score</summary>
+<details><summary>vision &amp; documents · #129 of 147 · 27% of its score</summary>
 
 Trails [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [InternVL2-26B](internvl2-26b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank lower overall.
 

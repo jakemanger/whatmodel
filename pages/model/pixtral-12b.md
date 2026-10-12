@@ -6,7 +6,7 @@
 
 Mistral · released 2024-09 · 12.4B params · apache-2.0
 
-**score 48.8** ±1.8 · #475 of 949 · from 11 benchmark results across 4 sources
+**score 48.8** ±1.8 · #365 of 719 · from 11 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Mistral · released 2024-09 · 12.4B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▃▆●█▇▆▄▃▁   #280 of 469*     21%      2
-math                ▁▂▃▅●▅▄█▄▁▁▁   #285 of 400*     15%      2
-vision &amp; documents  ▁▁▃●▁▃▄▃▆▇█▄    #125 of 150     65%      8
+coding              ▁▁▁▃▆●█▇▆▄▃▁   #276 of 458*     21%      2
+math                ▁▂▃▅●▅▄█▄▁▁▁   #283 of 398*     15%      2
+vision &amp; documents  ▁▁▃●▁▃▄▂▆▇█▄    #123 of 147     65%      8
 </pre>
 
-<details><summary>coding · #280 of 469 · 21% of its score</summary>
+<details><summary>coding · #276 of 458 · 21% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md), [Mistral NeMo Instruct (2407)](mistral-nemo-instruct-2407.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #285 of 400 · 15% of its score</summary>
+<details><summary>math · #283 of 398 · 15% of its score</summary>
 
 Beats [Llama 3.1 Nemotron 70B Instruct](llama-3-1-nemotron-70b.md), [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Phi-2 (2.7B)](phi-2.md), [Granite 8B Code Base (4K)](granite-8b-code-base-4k.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>vision &amp; documents · #125 of 150 · 65% of its score</summary>
+<details><summary>vision &amp; documents · #123 of 147 · 65% of its score</summary>
 
 Beats [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md), [Nova Pro](nova-pro.md) here, though they rank higher overall. Trails [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank lower overall.
 

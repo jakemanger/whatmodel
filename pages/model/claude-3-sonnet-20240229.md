@@ -14,13 +14,13 @@ Anthropic · released 2024-02 · proprietary
 
 <pre>
 task                vs the others         rank  counts  tests
-coding              ▁▁▁▃▅●█▇▅▄▂▁   #364 of 549     40%      7
-chat &amp; writing      ▁▁▁▃▅▅●█▆▆▆▂   #356 of 579     17%      4
-math                ▁▂▃●▇▅▅█▄▁▁▁   #378 of 464    6.7%      3
-vision &amp; documents  ▁▁▃●▂▃▅▅▇▇█▃   #174 of 199    9.2%      8
+coding              ▁▁▁▃▅●█▇▅▄▃▁   #348 of 524     40%      7
+chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #300 of 463     17%      4
+math                ▁▂▃●▇▅▅█▄▁▁▁   #376 of 462    6.7%      3
+vision &amp; documents  ▁▁▃●▂▃▅▄▇▇█▃   #160 of 182    9.2%      8
 </pre>
 
-<details><summary>coding · #364 of 549 · 40% of its score</summary>
+<details><summary>coding · #348 of 524 · 40% of its score</summary>
 
 Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7-flash.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md), [Yi 1.5 9B Chat](yi-1-5-9b-chat.md) here, though they rank lower overall.
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #356 of 579 · 17% of its score</summary>
+<details><summary>chat &amp; writing · #300 of 463 · 17% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md), [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank lower overall.
 
@@ -51,7 +51,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #378 of 464 · 6.7% of its score</summary>
+<details><summary>math · #376 of 462 · 6.7% of its score</summary>
 
 Beats [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 13B](tulu-2-dpo-13b.md) here, though they rank lower overall.
 
@@ -64,7 +64,7 @@ test                         result  vs the others in its run   difficulty      
 
 </details>
 
-<details><summary>vision &amp; documents · #174 of 199 · 9.2% of its score</summary>
+<details><summary>vision &amp; documents · #160 of 182 · 9.2% of its score</summary>
 
 Beats [Nova Lite](nova-lite.md) here, though they rank higher overall. Trails [InternVL2-26B](internvl2-26b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank lower overall.
 

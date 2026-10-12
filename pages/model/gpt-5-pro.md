@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-10 · proprietary
 
-**score 72.8** ±0.9 · #60 of 949 · from 7 benchmark results across 3 sources
+**score 72.8** ±0.9 · #58 of 719 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ OpenAI · released 2025-10 · proprietary
 
 <pre>
 task         vs the others         rank  counts  tests
-agent tasks  ▁▁▃▆█▆▅▄●▃▂▁   #74 of 334*    5.1%      1
-math         ▁▂▃▅▆▅▄█●▁▁▁   #47 of 400*     63%      2
-web search   ▂▂▂●▄█▃▃▁▁·▁    #57 of 81*    5.1%      1
+agent tasks  ▁▁▃▆█▆▅▅●▄▃▁   #74 of 300*    5.1%      1
+math         ▁▂▃▅▆▅▄█●▁▁▁   #47 of 398*     63%      2
+web search   ▂▁▂●▄█▃▃▁▁·▁    #57 of 80*    5.1%      1
 </pre>
 
-<details><summary>agent tasks · #74 of 334 · 5.1% of its score</summary>
+<details><summary>agent tasks · #74 of 300 · 5.1% of its score</summary>
 
 Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Qwen3.6 27B](qwen3-6-27b.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #47 of 400 · 63% of its score</summary>
+<details><summary>math · #47 of 398 · 63% of its score</summary>
 
 Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank higher overall. Trails [A.X K2 (688B-A33B)](ax-k2.md), [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md), [GPT-5](gpt-5.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                       result  vs the others in its run  difficulty         
 
 </details>
 
-<details><summary>web search · #57 of 81 · 5.1% of its score</summary>
+<details><summary>web search · #57 of 80 · 5.1% of its score</summary>
 
 Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
 

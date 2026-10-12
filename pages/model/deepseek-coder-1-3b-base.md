@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 1.3B params · deepseek
 
-**score 32.4** ±0.6 · #834 of 949 · from 12 benchmark results across 5 sources
+**score 32.4** ±0.6 · #623 of 719 · from 12 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ DeepSeek · released 2023-10 · 1.3B params · deepseek
 
 <pre>
 task    vs the others          rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁    #432 of 469     87%      7
-math    ●▂▃▅▆▅▄█▄▁▁▁   #398 of 400*    2.2%      1
+coding  ▁▁▁●▆██▇▆▄▃▁    #422 of 458     87%      7
+math    ●▂▃▅▆▅▄█▄▁▁▁   #396 of 398*    2.2%      1
 </pre>
 
-<details><summary>coding · #432 of 469 · 87% of its score</summary>
+<details><summary>coding · #422 of 458 · 87% of its score</summary>
 
 Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B](qwen3-5-2b.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -35,7 +35,7 @@ test        result  vs the others in its run  difficulty        counts  why
 
 </details>
 
-<details><summary>math · #398 of 400 · 2.2% of its score</summary>
+<details><summary>math · #396 of 398 · 2.2% of its score</summary>
 
 Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 

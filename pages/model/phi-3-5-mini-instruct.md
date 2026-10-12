@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-08 · 3.82B params · mit
 
-**score 43.3** ±0.6 · #635 of 949 · from 38 benchmark results across 10 sources
+**score 43.3** ±0.6 · #477 of 719 · from 38 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Microsoft · released 2024-08 · 3.82B params · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▄▄▃▂▁   #248 of 334*    0.4%      1
-coding          ▁▁▁▃▆●█▇▆▄▃▁    #334 of 469     13%      5
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #227 of 300*    0.4%      1
+coding          ▁▁▁▃▆●█▇▆▄▃▁    #330 of 458     13%      5
 chat &amp; writing  ●··········█       #2 of 2*    0.4%      1
-math            ▁▂▃●▆▅▄█▄▁▁▁    #336 of 400     18%      5
+math            ▁▂▃●▆▅▄█▄▁▁▁    #334 of 398     18%      5
 </pre>
 
-<details><summary>agent tasks · #248 of 334 · 0.4% of its score</summary>
+<details><summary>agent tasks · #227 of 300 · 0.4% of its score</summary>
 
 Beats [o3-mini](o3-mini.md), [Nova 2 Lite](nova-2-lite.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -31,7 +31,7 @@ test                             result  vs the others in its run  difficulty   
 
 </details>
 
-<details><summary>coding · #334 of 469 · 13% of its score</summary>
+<details><summary>coding · #330 of 458 · 13% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank higher overall. Trails [Phi-3-mini-128k-instruct (Apr 2024)](phi-3-mini-128k-instruct.md), [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -55,7 +55,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #336 of 400 · 18% of its score</summary>
+<details><summary>math · #334 of 398 · 18% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen2-vl-7b.md), [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 

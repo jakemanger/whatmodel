@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 10.7B params · llama3.2
 
-**score 42.7** ±1.8 · #652 of 949 · from 11 benchmark results across 4 sources
+**score 42.7** ±1.8 · #489 of 719 · from 11 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Meta · released 2024-09 · 10.7B params · llama3.2
 
 <pre>
 task                vs the others          rank  counts  tests
-coding              ▁▁▁▃▆●█▇▆▄▃▁   #321 of 469*    8.5%      1
-math                ▁▂▃●▆▅▄█▄▁▁▁   #300 of 400*     14%      2
-vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄    #141 of 150     47%      6
+coding              ▁▁▁▃▆●█▇▆▄▃▁   #317 of 458*    8.5%      1
+math                ▁▂▃●▆▅▄█▄▁▁▁   #298 of 398*     14%      2
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #139 of 147     47%      6
 </pre>
 
-<details><summary>coding · #321 of 469 · 8.5% of its score</summary>
+<details><summary>coding · #317 of 458 · 8.5% of its score</summary>
 
 Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-instruct.md), [Qwen3-VL 4B Instruct](qwen3-vl-4b-instruct.md) here, though they rank higher overall. Trails [DeepSeek LLM 67B Chat](deepseek-llm-67b-chat.md), [WizardLM 70B V1.0](wizardlm-70b-v1-0.md) here, though they rank lower overall.
 
@@ -30,7 +30,7 @@ test       result  vs the others in its run    difficulty      counts  why
 
 </details>
 
-<details><summary>math · #300 of 400 · 14% of its score</summary>
+<details><summary>math · #298 of 398 · 14% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
@@ -42,7 +42,7 @@ test                       result  vs the others in its run  difficulty        c
 
 </details>
 
-<details><summary>vision &amp; documents · #141 of 150 · 47% of its score</summary>
+<details><summary>vision &amp; documents · #139 of 147 · 47% of its score</summary>
 
 Beats [Gemma 3 4B](gemma-3-4b.md), [CogVLM2 Llama3 Chat 19B](cogvlm2-llama3-chat-19b.md), [MiniCPM-V 2.6](minicpm-v-2-6.md) here, though they rank higher overall. Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [North Micro Vision Instruct (2.4B)](north-micro-vision-instruct.md) here, though they rank lower overall.
 

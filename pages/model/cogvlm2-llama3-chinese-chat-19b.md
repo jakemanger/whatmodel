@@ -14,10 +14,10 @@ Zhipu AI (THUDM) · released 2024-05 · 19.5B params · cogvlm2
 
 <pre>
 task                vs the others         rank  counts  tests
-vision &amp; documents  ▁▁▃▃●▃▅▅▇▇█▃   #159 of 199     80%      3
+vision &amp; documents  ▁▁▃▃●▃▅▄▇▇█▃   #147 of 182     80%      3
 </pre>
 
-<details><summary>vision &amp; documents · #159 of 199 · 80% of its score</summary>
+<details><summary>vision &amp; documents · #147 of 182 · 80% of its score</summary>
 
 Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemma 3 12B](gemma-3-12b.md), [Llama 3.2 90B Vision Instruct](llama-3-2-90b-vision.md) here, though they rank higher overall.
 

@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2024-08 · 398B params (94B active) · jamba-open-model-license
 
-**score 50.3** ±1.2 · #430 of 949 · from 12 benchmark results across 3 sources
+**score 50.3** ±1.2 · #337 of 719 · from 12 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ AI21 Labs · released 2024-08 · 398B params (94B active) · jamba-open-model-li
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆█▆●▄▄▃▂▁   #112 of 334*    2.3%      1
+agent tasks     ▁▁▃▆█▆●▅▅▄▃▁   #111 of 300*    2.3%      1
 coding          █··········●       #1 of 2*    8.4%      1
-chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂    #252 of 466     19%      3
-math            ▁▂▃▅●▅▄█▄▁▁▁   #251 of 400*    9.5%      1
+chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃    #233 of 393     19%      3
+math            ▁▂▃▅●▅▄█▄▁▁▁   #249 of 398*    9.5%      1
 </pre>
 
-<details><summary>agent tasks · #112 of 334 · 2.3% of its score</summary>
+<details><summary>agent tasks · #111 of 300 · 2.3% of its score</summary>
 
 Beats [o3-pro](o3-pro.md), [Qwen3.6 Plus](qwen3-6-plus.md), [o3](o3.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md) here, though they rank lower overall.
 
@@ -40,7 +40,7 @@ test             result  vs the others in its run    difficulty      counts  why
 
 </details>
 
-<details><summary>chat &amp; writing · #252 of 466 · 19% of its score</summary>
+<details><summary>chat &amp; writing · #233 of 393 · 19% of its score</summary>
 
 Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>math · #251 of 400 · 9.5% of its score</summary>
+<details><summary>math · #249 of 398 · 9.5% of its score</summary>
 
 Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 DPO 70B](tulu-2-dpo-70b.md), [OpenThinker 7B](openthinker-7b.md) here, though they rank lower overall.
 

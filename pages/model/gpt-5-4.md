@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · closed weights
 
-**score 77.6** ±0.5 · #20 of 949 · from 54 benchmark results across 20 sources
+**score 77.6** ±0.5 · #20 of 719 · from 54 benchmark results across 20 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ OpenAI · released 2026-03 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄●▂▁    #33 of 334     24%     16
-coding              ▁▁▁▃▆██▇▆●▃▁    #60 of 469    8.9%      4
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #26 of 466*    2.2%      1
-math                ▁▂▃▅▆▅▄█▄●▁▁    #18 of 400     31%     10
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄    #25 of 150    4.0%      4
-web search          ▂▂▂▆▄●▃▃▁▁·▁     #24 of 81    4.7%      3
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #33 of 300     24%     16
+coding              ▁▁▁▃▆██▇▆●▃▁    #59 of 458    8.9%      4
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #26 of 393*    2.2%      1
+math                ▁▂▃▅▆▅▄█▄●▁▁    #18 of 398     31%     10
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄    #25 of 147    4.0%      4
+web search          ▂▁▂▆▄●▃▃▁▁·▁     #24 of 80    4.7%      3
 </pre>
 
-<details><summary>agent tasks · #33 of 334 · 24% of its score</summary>
+<details><summary>agent tasks · #33 of 300 · 24% of its score</summary>
 
 Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #60 of 469 · 8.9% of its score</summary>
+<details><summary>coding · #59 of 458 · 8.9% of its score</summary>
 
 Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [MiniMax-M3](minimax-m3.md), [GLM-5.1](glm-5-1.md) here, though they rank lower overall.
 
@@ -62,7 +62,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #26 of 466 · 2.2% of its score</summary>
+<details><summary>chat &amp; writing · #26 of 393 · 2.2% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-6 Sol](gpt-6-sol.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [GLM-5.2](glm-5-2.md), [Gemini 3.6 Flash](gemini-3-6-flash.md), [Gemini 3.5 Flash](gemini-3-5-flash.md) here, though they rank lower overall.
 
@@ -73,7 +73,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #18 of 400 · 31% of its score</summary>
+<details><summary>math · #18 of 398 · 31% of its score</summary>
 
 Beats [Qwen3.8 Max (2.4T-A95B)](qwen3-8-2-4t-a95b.md) here, though they rank higher overall. Trails [GPT-5.6 Luna](gpt-5-6-luna.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank lower overall.
 
@@ -93,7 +93,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #25 of 150 · 4.0% of its score</summary>
+<details><summary>vision &amp; documents · #25 of 147 · 4.0% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Gemini 3.5 Flash](gemini-3-5-flash.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
@@ -107,7 +107,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>web search · #24 of 81 · 4.7% of its score</summary>
+<details><summary>web search · #24 of 80 · 4.7% of its score</summary>
 
 Beats [Claude Opus 4.8](claude-opus-4-8.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

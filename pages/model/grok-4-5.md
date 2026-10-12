@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-07 · closed weights
 
-**score 75.0** ±0.7 · #41 of 949 · from 20 benchmark results across 7 sources
+**score 75.0** ±0.7 · #41 of 719 · from 20 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,15 +14,15 @@ SpaceXAI (xAI) · released 2026-07 · closed weights
 
 <pre>
 task                vs the others         rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅▄▄●▂▁    #38 of 334     16%      4
-coding              ▁▁▁▃▆██▇▆●▃▁   #36 of 469*     10%      2
-chat &amp; writing      ▁▁▁▄▆▅▆█▆▆●▂   #37 of 466*    4.0%      1
-math                ▁▂▃▅▆▅▄█●▁▁▁    #36 of 400     48%      5
-vision &amp; documents  ▁▁▃▂▁▃▄▃▆▇●▄   #26 of 150*    4.1%      2
-web search          ▂▂▂▆▄●▃▃▁▁·▁    #27 of 81*    1.6%      1
+agent tasks         ▁▁▃▆█▆▅▅▅●▃▁    #38 of 300     16%      4
+coding              ▁▁▁▃▆██▇▆●▃▁   #36 of 458*     10%      2
+chat &amp; writing      ▁▁▁▃▅▄▅█▆▆●▃   #37 of 393*    4.0%      1
+math                ▁▂▃▅▆▅▄█●▁▁▁    #36 of 398     48%      5
+vision &amp; documents  ▁▁▃▂▁▃▄▂▆▇●▄   #26 of 147*    4.1%      2
+web search          ▂▁▂▆▄●▃▃▁▁·▁    #27 of 80*    1.6%      1
 </pre>
 
-<details><summary>agent tasks · #38 of 334 · 16% of its score</summary>
+<details><summary>agent tasks · #38 of 300 · 16% of its score</summary>
 
 Beats [Gemini 3.7 Flash](gemini-3-7-flash.md), [Qwen3.8-Flash-Next](qwen3-8-flash-next.md), [Qwen3.8-Omni-Flash](qwen3-8-omni-flash.md) here, though they rank higher overall. Trails [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok-4-7.md), [Claude Sonnet 5](claude-sonnet-5.md) here, though they rank lower overall.
 
@@ -36,7 +36,7 @@ test                                    result  vs the others in its run  diffic
 
 </details>
 
-<details><summary>coding · #36 of 469 · 10% of its score</summary>
+<details><summary>coding · #36 of 458 · 10% of its score</summary>
 
 Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-4.md) here, though they rank higher overall. Trails [Qwen3.8 27B](qwen3-8-27b.md), [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #37 of 466 · 4.0% of its score</summary>
+<details><summary>chat &amp; writing · #37 of 393 · 4.0% of its score</summary>
 
 Beats [GPT-6 Sol](gpt-6-sol.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [GPT-6 Luna](gpt-6-luna.md) here, though they rank higher overall. Trails [MiMo-V2.5-Pro (1T-A42B)](mimo-v2-5-pro.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Claude Opus 4.5](claude-opus-4-5.md) here, though they rank lower overall.
 
@@ -59,7 +59,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #36 of 400 · 48% of its score</summary>
+<details><summary>math · #36 of 398 · 48% of its score</summary>
 
 Beats [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank higher overall. Trails [GPT-5.2](gpt-5-2.md), [Qwen3.7 Max](qwen3-7-max.md), [Claude Sonnet 5](claude-sonnet-5.md) here, though they rank lower overall.
 
@@ -74,7 +74,7 @@ test                                result  vs the others in its run    difficul
 
 </details>
 
-<details><summary>vision &amp; documents · #26 of 150 · 4.1% of its score</summary>
+<details><summary>vision &amp; documents · #26 of 147 · 4.1% of its score</summary>
 
 Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [GPT-5.6 Terra](gpt-5-6-terra.md) here, though they rank higher overall. Trails [Gemini 3.6 Flash](gemini-3-6-flash.md), [Gemini 3.5 Flash](gemini-3-5-flash.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though they rank lower overall.
 
@@ -86,7 +86,7 @@ test                               result  vs the others in its run    difficult
 
 </details>
 
-<details><summary>web search · #27 of 81 · 1.6% of its score</summary>
+<details><summary>web search · #27 of 80 · 1.6% of its score</summary>
 
 Beats [Claude Haiku 5.5](claude-haiku-5-5.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Claude Opus 4.7](claude-opus-4-7.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md) here, though they rank lower overall.
 

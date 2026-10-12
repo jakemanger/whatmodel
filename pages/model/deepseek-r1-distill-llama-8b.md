@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 8.03B params · mit
 
-**score 46.9** ±1.2 · #525 of 949 · from 18 benchmark results across 7 sources
+**score 46.9** ±1.2 · #400 of 719 · from 18 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ DeepSeek · released 2025-01 · 8.03B params · mit
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁●▆██▇▆▄▃▁   #439 of 469     22%      5
-math    ▁▂▃▅▆●▄█▄▁▁▁   #206 of 400     31%      2
+coding  ▁▁▁●▆██▇▆▄▃▁   #429 of 458     22%      5
+math    ▁▂▃▅▆●▄█▄▁▁▁   #204 of 398     31%      2
 </pre>
 
-<details><summary>coding · #439 of 469 · 22% of its score</summary>
+<details><summary>coding · #429 of 458 · 22% of its score</summary>
 
 Beats [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank higher overall. Trails [Llama 3.2 1B Instruct](llama-3-2-1b.md), [SmolLM2 1.7B Instruct](smollm2-1-7b.md), [Mistral 7B Instruct v0.1](mistral-7b-instruct-v0-1.md) here, though they rank lower overall.
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #206 of 400 · 31% of its score</summary>
+<details><summary>math · #204 of 398 · 31% of its score</summary>
 
 Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 

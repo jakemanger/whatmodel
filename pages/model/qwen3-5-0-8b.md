@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-03 · 0.87B params · apache-2.0
 
-**score 37.7** ±0.9 · #758 of 949 · from 56 benchmark results across 8 sources
+**score 37.7** ±0.9 · #567 of 719 · from 56 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -14,13 +14,13 @@ Alibaba · released 2026-03 · 0.87B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁●▆█▆▅▄▄▃▂▁   #324 of 334*    3.6%      2
-chat &amp; writing      ▁▁▁▄●▅▆█▆▆▆▂   #411 of 466*    1.2%      1
-math                ▁▂●▅▆▅▄█▄▁▁▁    #342 of 400    5.9%      3
-vision &amp; documents  ▁▁●▂▁▃▄▃▆▇█▄    #136 of 150     24%     18
+agent tasks         ▁▁●▆█▆▅▅▅▄▃▁   #291 of 300*    3.6%      2
+chat &amp; writing      ▁▁▁▃●▄▅█▆▆▇▃   #350 of 393*    1.2%      1
+math                ▁▂●▅▆▅▄█▄▁▁▁    #340 of 398    5.9%      3
+vision &amp; documents  ▁▁●▂▁▃▄▂▆▇█▄    #134 of 147     24%     18
 </pre>
 
-<details><summary>agent tasks · #324 of 334 · 3.6% of its score</summary>
+<details><summary>agent tasks · #291 of 300 · 3.6% of its score</summary>
 
 Beats [QwQ-32B-Preview](qwq-32b-preview.md), [DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)](deepseek-coder-v2-lite-instruct.md), [Phi-4-mini 3.8B](phi-4-mini.md) here, though they rank higher overall. Trails [Granite 4.0 350M](granite-4-0-350m.md), [Qwen2.5 0.5B Instruct](qwen2-5-0-5b.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run   difficult
 
 </details>
 
-<details><summary>chat &amp; writing · #411 of 466 · 1.2% of its score</summary>
+<details><summary>chat &amp; writing · #350 of 393 · 1.2% of its score</summary>
 
 Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md), [Phi-3-mini-4k-instruct (June 2024 update)](phi-3-mini-4k-instruct-june-2024.md) here, though they rank higher overall. Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.md), [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank lower overall.
 
@@ -43,7 +43,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #342 of 400 · 5.9% of its score</summary>
+<details><summary>math · #340 of 398 · 5.9% of its score</summary>
 
 Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instruct.md), [Command R Plus (04-2024)](command-r-plus-04-2024.md) here, though they rank higher overall. Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ test                        result  vs the others in its run  difficulty      co
 
 </details>
 
-<details><summary>vision &amp; documents · #136 of 150 · 24% of its score</summary>
+<details><summary>vision &amp; documents · #134 of 147 · 24% of its score</summary>
 
 Beats [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Gemma 3 4B](gemma-3-4b.md), [CogVLM2 Llama3 Chat 19B](cogvlm2-llama3-chat-19b.md) here, though they rank higher overall.
 

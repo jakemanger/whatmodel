@@ -6,7 +6,7 @@
 
 Liquid AI · released 2025-07 · 1.17B params · lfm1.0
 
-**score 39.7** ±1.5 · #715 of 949 · from 10 benchmark results across 3 sources
+**score 39.7** ±1.5 · #535 of 719 · from 10 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ Liquid AI · released 2025-07 · 1.17B params · lfm1.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #289 of 466*    6.8%      1
-math            ▁▂▃●▆▅▄█▄▁▁▁   #298 of 400*     31%      2
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #266 of 393*    6.8%      1
+math            ▁▂▃●▆▅▄█▄▁▁▁   #296 of 398*     31%      2
 </pre>
 
-<details><summary>chat &amp; writing · #289 of 466 · 6.8% of its score</summary>
+<details><summary>chat &amp; writing · #266 of 393 · 6.8% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Phi-4 14B](phi-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>math · #298 of 400 · 31% of its score</summary>
+<details><summary>math · #296 of 398 · 31% of its score</summary>
 
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B IT](gemma-2-27b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
