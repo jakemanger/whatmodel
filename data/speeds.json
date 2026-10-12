@@ -15471,5 +15471,47 @@
       "artifact_reference_as_reported": "Qwen3-0.6B-Q4_K_M.gguf",
       "artifact_sha256": null
     }
+  },
+  {
+    "model": "qwen3-5-9b",
+    "quant": "Q4_K_M",
+    "hardware": "Ryzen 7 H 255 (Radeon 780M), 15 GB",
+    "hardware_id": "ryzen-7-h-255",
+    "kind": "amd",
+    "offload": "none",
+    "value": 14.86,
+    "unit": "tok/s",
+    "engine": "llama.cpp",
+    "settings": "whatmodel bench.py 3.2.1: fixed prompt, up to 256 generated tokens, temperature 0, median of 3 runs in shuffled order after 1 discarded warm-up",
+    "source": "https://whatmodel.sh/data/bench.json#gh8-0",
+    "source_id": "whatmodel-bench",
+    "note": "Community submission (issue #8), reviewed 2026-10-12.",
+    "applicability": {
+      "display_as": "measured with the exact download listed on this site",
+      "selected_download_eligible": true,
+      "artifact_reference_as_reported": "Qwen3.5-9B-Q4_K_M.gguf",
+      "artifact_sha256": null
+    }
+  },
+  {
+    "model": "falcon3-10b",
+    "quant": "q4_k_m",
+    "hardware": "Ryzen 7 H 255 (Radeon 780M), 15 GB",
+    "hardware_id": "ryzen-7-h-255",
+    "kind": "amd",
+    "offload": "none",
+    "value": 12.8,
+    "unit": "tok/s",
+    "engine": "llama.cpp",
+    "settings": "whatmodel bench.py 3.2.1: fixed prompt, up to 256 generated tokens, temperature 0, median of 3 runs in shuffled order after 1 discarded warm-up",
+    "source": "https://whatmodel.sh/data/bench.json#gh8-1",
+    "source_id": "whatmodel-bench",
+    "note": "Community submission (issue #8), reviewed 2026-10-12.",
+    "applicability": {
+      "display_as": "measured with the exact download listed on this site",
+      "selected_download_eligible": true,
+      "artifact_reference_as_reported": "Falcon3-10B-Instruct-q4_k_m.gguf",
+      "artifact_sha256": null
+    }
   }
 ]

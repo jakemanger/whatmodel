@@ -139,7 +139,7 @@ export function writeRows(items: { source: Source; report: Report; results: Iden
       const source_url = `https://whatmodel.sh/data/bench.json#${id}`;
       for (let j = speeds.length - 1; j >= 0; j--) if (speeds[j].source === source_url) speeds.splice(j, 1);
       if (c.speed || !c.download || !hw) continue;
-      const offload = hw.kind === "apple" || hw.kind === "cpu" || (c.download.bytes ?? Infinity) / 1e9 < (h.vram_gb ?? 0) * Math.max(1, h.gpus ?? 1) * 0.95 ? "none" : "layers";
+      const offload = hw.kind === "apple" || hw.kind === "cpu" || hw.unified || (c.download.bytes ?? Infinity) / 1e9 < (h.vram_gb ?? 0) * Math.max(1, h.gpus ?? 1) * 0.95 ? "none" : "layers";
       speeds.push({
         model: r.model, quant: c.download.variant.quant, hardware: hwLabel, hardware_id: hw.id, kind: hw.kind,
         offload, value: c.gen, unit: "tok/s", engine: row.engine,
