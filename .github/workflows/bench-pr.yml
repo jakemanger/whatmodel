@@ -1,0 +1,55 @@
+name: bench results to a pull request
+# Turns a bench results issue into a pull request that adds its results to data/bench.json and
+# data/speeds.json (scripts/bench-import.ts). Trigger it by commenting /accept on the issue (the repo
+# owner only), or from the Actions tab with the issue number. Merging the pull request closes the issue.
+on:
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: Number of the issue with the bench results
+        required: true
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+concurrency:
+  group: bench-pr-${{ github.event.issue.number || inputs.issue }}
+jobs:
+  pull-request:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (!github.event.issue.pull_request && github.event.comment.author_association == 'OWNER' &&
+       startsWith(github.event.comment.body, '/accept'))
+    runs-on: ubuntu-latest
+    env:
+      ISSUE: ${{ github.event.issue.number || inputs.issue }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - name: Add the issue's results to the data
+        run: |
+          [[ "$ISSUE" =~ ^[0-9]+$ ]] || { echo "Not an issue number: $ISSUE"; exit 1; }
+          node scripts/bench-import.ts "$ISSUE" | tee "$RUNNER_TEMP/import.txt"
+      - name: Open the pull request, or say why nothing was added
+        run: |
+          import="$(cat "$RUNNER_TEMP/import.txt")"
+          if git diff --quiet -- data/bench.json data/speeds.json; then
+            printf 'Nothing from this issue could be added:\n\n~~~\n%s\n~~~\n' "$import" > "$RUNNER_TEMP/comment.md"
+            gh issue comment "$ISSUE" --body-file "$RUNNER_TEMP/comment.md"
+            exit 0
+          fi
+          branch="bench/issue-$ISSUE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add data/bench.json data/speeds.json
+          git commit -m "Add bench results from #$ISSUE"
+          git push --force origin "$branch"
+          printf 'Adds the bench results from #%s.\n\n~~~\n%s\n~~~\n\nCloses #%s\n' "$ISSUE" "$import" "$ISSUE" > "$RUNNER_TEMP/pr.md"
+          url="$(gh pr list --head "$branch" --json url --jq '.[0].url')"
+          if [ -n "$url" ]; then gh pr edit "$url" --body-file "$RUNNER_TEMP/pr.md"; else url="$(gh pr create --head "$branch" --title "Bench results from #$ISSUE" --body-file "$RUNNER_TEMP/pr.md")"; fi
+          gh issue comment "$ISSUE" --body "Thanks! Your results are in $url and will appear on whatmodel.sh once it's merged."

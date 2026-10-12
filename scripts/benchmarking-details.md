@@ -32,3 +32,10 @@ sh -n bench.sh
 ```
 
 Tests use a loopback fixture and mocked tools, never paid calls or the real GitHub. After changing `bench.py`, update the SHA-256 in `bench.sh`; the tests check they agree. Deploy both files together.
+
+### For maintainers
+
+Comment `/accept` on a results issue (repo owner only), or run the "bench results to a pull request" workflow
+with the issue number. It adds the issue's results to `data/bench.json` and `data/speeds.json` with
+`scripts/bench-import.ts`, opens a pull request, and comments on the issue with the link. Check the numbers
+in the pull request before merging; merging closes the issue.

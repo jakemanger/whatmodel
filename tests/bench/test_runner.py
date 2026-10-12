@@ -268,15 +268,17 @@ class RunnerTests(unittest.TestCase):
         self.assertIn('| Qwen3 8B | Ollama 0.30.8 | Q4_K_M | 25.4 | 154 | 0.6 s |',head)
         self.assertEqual(json.loads(full.split('```json')[1].split('```')[0]),report)  # the exact report, folded away
         with patch.object(bench,'copy_to_clipboard',return_value=True) as clip, patch.object(bench.webbrowser,'open',return_value=True) as browser, \
-             patch.object(bench,'yes',return_value=True) as confirm, contextlib.redirect_stdout(io.StringIO()):
+             patch.object(bench,'ask',side_effect=['l','c','o','']) as confirm, contextlib.redirect_stdout(io.StringIO()):
             bench.open_upload(report,'~/r.json',{'qwen3-8b':'Qwen3 8B'})
-        url=browser.call_args.args[0]
+        url=browser.call_args_list[0].args[0]
+        self.assertEqual(browser.call_count,2)  # opened, then opened again from the menu
+        self.assertEqual([c.args[0] for c in clip.call_args_list][1:],[url,head+full+tail])  # copy the link, copy the results
         self.assertLess(len(url),bench.URL_SAFE); self.assertNotIn('Qwen3',url)  # too long: nothing partial in the link
         self.assertEqual(clip.call_args.args[0],head+full+tail)  # the whole issue is on the clipboard
-        self.assertTrue(confirm.called)  # and you confirm you submitted it
+        self.assertEqual(confirm.call_count,4)  # it waits until you say you're done
         small=dict(report,results=report['results'][:1])
         with patch.object(bench,'copy_to_clipboard') as clip, patch.object(bench.webbrowser,'open',return_value=True) as browser, \
-             patch.object(bench,'yes',return_value=True), contextlib.redirect_stdout(io.StringIO()):
+             patch.object(bench,'ask',return_value=''), contextlib.redirect_stdout(io.StringIO()):
             bench.open_upload(small,'~/r.json',{'qwen3-8b':'Qwen3 8B'})
         self.assertIn('Qwen3+8B',browser.call_args.args[0]); self.assertIn('schema',urllib.parse.unquote_plus(browser.call_args.args[0]))  # fits: all of it in the link
         clip.assert_not_called()
@@ -310,7 +312,7 @@ class RunnerTests(unittest.TestCase):
             self.assertIn('Q4_K_M',report)  # quantisation is recorded
             self.assertEqual(saved.stat().st_mode & 0o777,0o600)
             self.assertIn('--upload',out.getvalue())  # how to upload it later
-            with patch.object(bench.webbrowser,'open',return_value=True) as browser, patch.object(bench,'yes',return_value=True), \
+            with patch.object(bench.webbrowser,'open',return_value=True) as browser, patch.object(bench,'ask',return_value=''), \
                  patch.object(bench,'copy_to_clipboard',return_value=True), contextlib.redirect_stdout(io.StringIO()):
                 self.assertEqual(bench.upload_saved(str(saved)),0)
             self.assertIn('github.com',browser.call_args.args[0])

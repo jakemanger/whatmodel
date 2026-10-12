@@ -1436,26 +1436,37 @@ def machine_name(hw):
 
 
 def open_upload(report, path, names):
-    """Open a GitHub issue in your browser with everything a link can carry; put the rest on your clipboard.
-    You read it and press Submit there: nothing is sent from here."""
+    """Open a GitHub issue with your results, then stay here until you're done, so nothing is lost if the browser
+    isn't signed in to GitHub: open it again, copy the link or the results, or show them. You press Submit there."""
     title, head, full, tail = issue_text(report, names)
-    link = lambda body: ISSUES + '?' + urllib.parse.urlencode({'title': title, 'body': body})
     body = head + full + tail
-    url, paste = link(body), None
+    link = lambda text: ISSUES + '?' + urllib.parse.urlencode({'title': title, 'body': text})
+    url, paste = link(body), False
     if len(url) > URL_SAFE:  # all or nothing: a half-filled issue could be submitted without its report
-        url, paste = link('Paste your results here (Cmd+V or Ctrl+V): bench.py copied them to your clipboard.'), body
-    copied = paste is not None and copy_to_clipboard(paste)
-    print('Opening GitHub with your results filled in.')
-    if not webbrowser.open(url): print('Open this link:\n' + url)
-    if paste is not None:
-        if copied:
-            print(yellow('Your results are too long for a link, so they are on your clipboard: replace the text in the issue with them (Cmd+V or Ctrl+V).'))
-        else:
-            print(yellow('Your results are too long for a link: copy the text below into the issue.\n') + body)
-    if yes('Check it on GitHub and press Submit. Did you submit it', default=True):
-        print(green('Thanks! It will appear on whatmodel.sh once it has been checked.'))
+        url, paste = link('Paste your results here (Cmd+V or Ctrl+V): bench.py copied them to your clipboard.'), True
+    print('\n' + bold('Upload on GitHub') + dim('  (use a browser where you are signed in to GitHub)'))
+    print(f'  {url if len(url) < 200 else url[:120] + "…"}')
+    webbrowser.open(url)
+    if paste and copy_to_clipboard(body):
+        print(yellow('  Your results are on your clipboard: replace the text in the issue with them (Cmd+V or Ctrl+V), then press Submit.'))
+    elif paste:
+        print(yellow('  Your results are too long for the link: press s to show them, copy them into the issue, then press Submit.'))
     else:
-        print('No problem. Upload it any time with:\n' + upload_later(path))
+        print('  Your results are filled in: check them and press Submit.')
+    while True:
+        choice = ask(dim('  Enter: I submitted it · o: open GitHub again · l: copy the link · c: copy the results · s: show the results · n: not now')).lower()
+        if choice == '':
+            print(green('Thanks! Your results will appear on whatmodel.sh once they have been checked.')); return
+        if choice == 'o':
+            if not webbrowser.open(url): print(f'  Open this link: {url}')
+        elif choice == 'l':
+            print('  ' + ('Link copied: paste it into a browser where you are signed in to GitHub.' if copy_to_clipboard(url) else f'Copy this link:\n{url}'))
+        elif choice == 'c':
+            print('  ' + ('Results copied.' if copy_to_clipboard(body) else 'No clipboard tool found: press s and copy them from here.'))
+        elif choice == 's':
+            print('\n' + body)
+        elif choice == 'n':
+            print('Not uploaded. Your results are saved; upload them any time with:\n' + upload_later(path)); return
 
 
 def upload_later(path):
