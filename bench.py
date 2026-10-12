@@ -676,14 +676,23 @@ def match_model(t, catalogue):
                 return m, v
             if kind == 'mlx' and v['rt'] == 'mlx' and v['ref'].lower() == t['model'].lower():
                 return m, v
-            if kind == 'llama-bench' and v['rt'] == 'gguf':
-                file, repo = norm(Path(t['path']).name), norm(re.sub(r'(?i)-gguf$', '', v['ref'].split('/')[-1]))
-                if repo and repo in file and norm(v['quant']) in file:
-                    return m, v
+            if kind == 'llama-bench' and v['rt'] == 'gguf' and gguf_matches(Path(t['path']).name, v):
+                return m, v
     name = t.get('measured_model') or (Path(t['path']).name if kind == 'llama-bench' else t.get('model')) or ''
     key = norm(base_name(name))
     same = [m for m in catalogue if key and key in (norm(m['id']), norm(m['name']))]
     return (same[0], None) if len(same) == 1 else (None, None)
+
+
+def gguf_matches(file, v):
+    """Whether a GGUF file is this download: llama.cpp's cache names files after the repo (org_repo_file), other
+    folders keep the published name ('gpt2-xl.Q4_K_M.gguf'), whose model name must match the repo's exactly."""
+    name = re.sub(r'(?i)-\d{5}-of-\d{5}(?=\.gguf$)', '', file)
+    if norm(v['quant']) not in norm(name):
+        return False
+    if norm(v['ref'].replace('/', '_')) in norm(name):
+        return True
+    return norm(base_name(name)) == norm(re.sub(r'(?i)[-_.]gguf$', '', v['ref'].split('/')[-1]))
 
 
 def search_catalogue(text, catalogue, limit=8):
@@ -1107,9 +1116,16 @@ def run_claude(t, tokens, n):
     data = json.loads(out)
     if data.get('is_error') or data.get('type') != 'result':
         raise RuntimeError('Claude Code reported an error')
-    usage, ms, api_ms, ttft = data.get('usage') or {}, data.get('duration_ms'), data.get('duration_api_ms'), data.get('ttft_ms')
+    usage, ms, api_ms = data.get('usage') or {}, data.get('duration_ms'), data.get('duration_api_ms')
     tokens_out = number(usage.get('output_tokens'))
-    gen = round(tokens_out / ((api_ms - ttft) / 1000), 2) if tokens_out and number(api_ms) and number(ttft) and api_ms > ttft else None
+    # Newer Claude Code reports when the first streamed text arrived (ttft_ms became the whole turn); generation
+    # runs from then to the end. Older versions only have ttft_ms, measured against the API time.
+    first = number(data.get('first_content_frame_ms')) or number(data.get('ttft_stream_ms'))
+    if first and number(ms) and ms > first:
+        ttft, gen = first, round(tokens_out / ((ms - first) / 1000), 2) if tokens_out else None
+    else:
+        ttft = data.get('ttft_ms')
+        gen = round(tokens_out / ((api_ms - ttft) / 1000), 2) if tokens_out and number(api_ms) and number(ttft) and api_ms > ttft else None
     models = list((data.get('modelUsage') or {}).keys())
     return {'elapsed_s': round(ms / 1000, 3) if number(ms) else None, 'ttft_s': round(ttft / 1000, 3) if number(ttft) else None,
             'output_tokens': tokens_out, 'gen_tok_s': gen, 'cost_usd': number(data.get('total_cost_usd')),

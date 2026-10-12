@@ -108,6 +108,11 @@ class RunnerTests(unittest.TestCase):
         self.assertEqual(r['ttft_s'],1.5)
         self.assertEqual(r['_model'],'claude-opus-5-5')
         self.assertNotIn('PRIVATE',json.dumps(r))
+        # Newer Claude Code: ttft_ms is the whole turn; the first streamed text has its own field.
+        payload.update(duration_ms=1490,duration_api_ms=1429,ttft_ms=1450,first_content_frame_ms=1065,ttft_stream_ms=1065,usage=dict(output_tokens=85))
+        with fake_tool('claude',"echo '"+json.dumps(payload)+"'\n"):
+            r=bench.run_claude({},32,1)
+        self.assertEqual(r['ttft_s'],1.065); self.assertEqual(r['gen_tok_s'],200.0)
 
     def test_codex_reads_usage_from_its_event_stream(self):
         lines=[{'type':'thread.started','thread_id':'x'},{'type':'item.completed','item':{'text':'PRIVATE'}},
@@ -209,6 +214,10 @@ class RunnerTests(unittest.TestCase):
         self.assertEqual(mid(dict(kind='llama-bench',path='/x/Qwen3-0.6B-Q4_K_M.gguf')),'qwen3-0-6b')
         self.assertEqual(mid(dict(kind='agent',measured_model='claude-opus-5-5-20260901')),'claude-opus-5-5')  # what the CLI reported
         self.assertIsNone(mid(dict(kind='ollama',model='unknown:1b')))
+        gpt2=[{'id':'gpt-2-small','name':'GPT-2 Small','variants':[{'rt':'gguf','ref':'mradermacher/gpt2-GGUF','quant':'Q4_K_M','gb':0.1}]},
+              {'id':'gpt-2-xl','name':'GPT-2 XL','variants':[{'rt':'gguf','ref':'mradermacher/gpt2-xl-GGUF','quant':'Q4_K_M','gb':1.2}]}]
+        self.assertEqual(bench.match_model(dict(kind='llama-bench',path='/x/gpt2-xl.Q4_K_M.gguf'),gpt2)[0]['id'],'gpt-2-xl')  # not GPT-2 Small
+        self.assertEqual(bench.match_model(dict(kind='llama-bench',path='/x/gpt2.Q4_K_M.gguf'),gpt2)[0]['id'],'gpt-2-small')
         self.assertEqual(bench.quant_of_file('Qwen3-0.6B-Q4_K_M.gguf'),'Q4_K_M')
         self.assertEqual(bench.quant_of_file('GLM-5.3-UD-Q2_K_XL-00001-of-00003.gguf'),'UD-Q2_K_XL')
 
