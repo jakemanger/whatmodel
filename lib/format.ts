@@ -1,9 +1,9 @@
 // Plain-text leaderboard for curl and agents, plus labels shared with the web page.
 
 import { CATEGORIES } from "./categories.ts";
-import { primary } from "./runtimes.ts";
+import { terminalCell, terminalColumns, terminalWrap } from "./terminal-layout.ts";
 import { hasScore, usable, type Row, type RowSpeed } from "./fit.ts";
-import type { Category, Specs, Variant } from "./types.ts";
+import type { Category, Specs } from "./types.ts";
 
 export const sponsor: { text: string; url: string } | null = null;
 
@@ -34,7 +34,7 @@ export const detectExact = (host: string, path = "/") => ({
 // The curl command for a set of picks, keeping only params the API understands.
 export function curlFor(host: string, path: string, q: URLSearchParams) {
   const keep = new URLSearchParams();
-  for (const k of ["mac", "ram", "gpu", "vram", "hw", "max", "sort", "dir", "all", "retired", "thin", "set", "score", "chart"]) {
+  for (const k of ["mac", "ram", "gpu", "vram", "hw", "max", "sort", "dir", "all", "retired", "thin", "set", "score", "chart", "n", "width", "help"]) {
     const v = q.get(k);
     if (v) keep.set(k, v);
   }
@@ -82,75 +82,97 @@ export function describeSpecs(s: Specs) {
   return `${s.ram ? `${s.ram}GB RAM · ` : ""}${gpu} → ${avail}`;
 }
 
-type Opts = { color: boolean; base: string; limit: number; all: boolean; benches: number; updated: string; cat: Category;
+type Opts = { width?: number; task?: string; color: boolean; base: string; limit: number; all: boolean; benches: number; updated: string; cat: Category;
   comparison?: { selected?: string; scoreMode: "overall" | "set"; sets: { id: string; label: string; models: number }[] };
   retiredCount?: number; // scored models with no verified API or download, listed unless ?retired=0
   thin?: boolean; thinCount?: number; // text models with fewer than 3 results, listed only with ?thin=1
 };
 
+export function terminalHelp(base: string, cat: Category, width = 80) {
+  const host = base.replace(/^https?:\/\//, "");
+  const path = CATEGORIES[cat].path;
+  const lines = [
+    `whatmodel.sh${path === '/' ? '' : path} · terminal help`, '',
+    `curl "${host}${path}?ram=32&gpu=apple&max=0"`, '',
+    'ram=32       RAM in GB',
+    'gpu=apple    Apple Silicon (or card / none)',
+    'vram=24      Graphics card memory in GB',
+    'hw=<id>      Exact chip or GPU; see the website hardware picker',
+    'max=0        Local models only; max=1 caps API price',
+    `             API price unit: USD/${CATEGORIES[cat].priceUnit}`,
+    'sort=speed   Sort by score, speed, where, ram or context',
+    'dir=asc      Reverse the usual sort order',
+    'n=20         Show more rows (default: 10; JSON: 40)',
+    'width=120    Wider table with speed and context (default: 80)',
+    'all=1        Include models outside your hardware or budget',
+    'thin=1       Include models with fewer than 3 results',
+    'retired=0    Hide models available for comparison only',
+    'set=<id>     Filter to a comparison set; add score=set to rescore',
+    'format=json  Full names, commands, links and source attribution',
+    'color=1      ANSI colour (off by default)',
+    'chart=1      Add text charts', '',
+    'Lists: /  /image  /video  /tts  /stt',
+    `Sources and scoring: ${host}/method`,
+    `Terms: ${host}/terms`, '',
+    'curl does not send your terminal size. Set width explicitly, or:',
+    `curl "${host}${path}?width=$(tput cols)"`,
+  ];
+  return '\n' + lines.flatMap((line) => line ? (line.length <= terminalColumns(width) - 2 ? [line] : terminalWrap(line, terminalColumns(width) - 2)).map((s) => '  ' + s) : ['']).join('\n') + '\n';
+}
+
 export function toText(rows: Row[], specs: Specs | null, max: number | null, o: Opts) {
   const c = (code: string, s: string) => (o.color ? `\x1b[${code}m${s}\x1b[0m` : s);
+  const width = terminalColumns(o.width);
   const host = o.base.replace(/^https?:\/\//, "");
   const path = CATEGORIES[o.cat].path;
-  const shown = rows.filter((r) => o.all || r.where !== "none").slice(0, o.limit);
-  const hidden = rows.filter((r) => r.where === "none").length;
-
-  const out: string[] = [""];
-  out.push(`  ${c("1;32", "whatmodel.sh")}${o.cat === "llm" ? "" : c("1;32", path)} ${c("2", `· find the best ${CATEGORIES[o.cat].title} you can run · updated ${o.updated}`)}`);
-  out.push("");
+  const eligible = rows.filter((r) => o.all || r.where !== "none");
+  const shown = eligible.slice(0, o.limit);
+  const out: string[] = [''];
+  const say = (s: string, code = '') => {
+    for (const line of terminalWrap(s, width - 2)) out.push('  ' + (code ? c(code, line) : line));
+  };
+  say(`whatmodel.sh${path === '/' ? '' : path} · ${CATEGORIES[o.cat].title}`, '1;32');
+  say(`Updated ${o.updated} · ${shown.length} of ${eligible.length} models`, '2');
+  if (o.task) say(`Task: ${o.task}`);
+  if (specs) say(`${describeSpecs(specs)}${max !== null ? ` · ${describeMax(max, o.cat)}` : ''}`);
+  else if (max !== null) say(describeMax(max, o.cat));
   if (o.comparison) {
-    out.push(o.comparison.scoreMode === "set" ? "  Scores within the selected set only." : "  Overall scores; uncalibrated models have no score or rank.");
-    out.push("  Extra: ?set=<id> filters models; add &score=set for scores within that set.");
-    for (const set of o.comparison.sets) out.push(`  ${set.id === o.comparison.selected ? "*" : " "} ${set.label} (${set.models} models): ?set=${set.id}`);
-    out.push("");
+    const set = o.comparison.sets.find((s) => s.id === o.comparison?.selected);
+    say(o.comparison.scoreMode === 'set' ? `Scores within ${set?.label ?? 'the selected set'} only.` : set ? `Set: ${set.label} · overall scores` : 'Overall scores; uncalibrated models have no score or rank.');
   }
-  if (specs) {
-    out.push(`  your machine: ${describeSpecs(specs)}${max !== null ? ` · ${describeMax(max, o.cat)}` : ""}`);
-    if (max === null) out.push(c("2", `  add &max=0 for local only, or &max=${o.cat === "llm" ? "1" : "0.05"} to cap API price`));
-  }
-  else if (max !== null) out.push(`  ${describeMax(max, o.cat)}`);
+  out.push('');
+  if (!shown.length) say(rows.length ? 'No models match. Try a larger budget or ?all=1.' : 'No reviewed rankings available for this category yet.');
   else {
-    const ex = `curl "${host}${path}?ram=32&gpu=apple&max=0"`;
-    out.push(`  showing reviewed models, best first. add params to see what you can run:`);
-    out.push(`    ${c("33", "ram=32")}                  your RAM in GB`);
-    out.push(`    ${c("33", "gpu=apple|card|none")}     Apple Silicon, a graphics card (add ${c("33", "vram=24")}, its memory in GB), or none`);
-    out.push(`    ${c("33", "max=0")}                   local only. or ${c("33", `max=${o.cat === "llm" ? "1" : "0.05"}`)} to include APIs up to $${o.cat === "llm" ? "1" : "0.05"}/${CATEGORIES[o.cat].priceUnit}`);
-    out.push(`    ${c("33", "sort=speed")}              or score, where, ram${o.cat === "llm" ? ", context" : ""}`);
-    out.push(`    ${c("33", "chart=1")}                 plot score against price and memory`);
-    out.push(`  e.g. run ${c("33", ex)}`);
-    out.push("");
-    out.push(`  or run the line for your system to fill in your machine:`);
-    for (const [os, cmd] of Object.entries(detect(host, path))) out.push(`    ${os.padEnd(8)} ${c("33", cmd)}`);
+    // At 80 columns: rank, name, score, availability/price and RAM. Wider
+    // terminals get speed and context; narrow ones keep the essential fields.
+    const wide = width >= 100;
+    const ram = width >= 76;
+    const runWidth = width < 60 ? 14 : 23;
+    const nameWidth = width - (2 + 3 + 8 + runWidth + 6 + (ram ? 8 : 0) + (wide ? 23 : 0));
+    const columns = (rank: string, name: string, score: string, run: string, memory: string, speed: string, context: string) =>
+      '  ' + [terminalCell(rank, 3, true), terminalCell(name, nameWidth), terminalCell(score, 8, true), terminalCell(run, runWidth),
+        ...(ram ? [terminalCell(memory, 6, true)] : []),
+        ...(wide ? [terminalCell(speed, 12, true), terminalCell(context, 7, true)] : [])].join('  ').trimEnd();
+    out.push(c('2', columns('#', 'MODEL', 'SCORE', 'RUN / PRICE', 'RAM', 'SPEED', o.cat === 'llm' ? 'CONTEXT' : '')));
+    for (const r of shown) {
+      const score = hasScore(r) ? `${Math.round(r.score)}±${Math.round(r.pm)}${r.thin ? '*' : ''}${r.maker_only ? '†' : ''}` : '—';
+      // Prices share one unit per category, explained once below the table.
+      const run = r.where === 'api' ? `api${r.also_local ? '+local' : ''} ${r.price === null ? 'price unknown' : '$' + money(r.price)}` : whereLabel(r);
+      const color = r.where === 'local' ? '32' : r.where === 'api' ? '36' : r.where === 'local-slow' ? '33' : '2';
+      out.push(c(color, columns(String(r.rank ?? '—'), displayName(r), score, run,
+        r.mem_gb === null ? '' : `~${Math.round(r.mem_gb)}GB`, speedLabel(r.speed), o.cat === 'llm' ? contextLabel(r.context_k) : '')));
+    }
   }
-  out.push("");
-
-  if (!rows.length) out.push("  No reviewed rankings available for this category yet.");
-  const w = Math.min(34, Math.max(5, ...shown.map((r) => displayName(r).length)));
-  const fit = (s: string) => (s.length > w ? s.slice(0, w - 1) + "…" : s.padEnd(w));
-  out.push(c("2", `  ${"#".padStart(3)}  ${"MODEL".padEnd(w)}  ${"SCORE".padStart(7)}  ${"WHERE".padEnd(18)}  ${"SPEED".padStart(12)}  ${"RAM".padStart(5)}  ${o.cat === "llm" ? `${"CONTEXT".padStart(7)}  ` : ""}GET IT`));
-  for (const r of shown) {
-    const g = hasScore(r) ? `${Math.round(r.score)}±${Math.round(r.pm)}${(r.thin ? "*" : "") + (r.maker_only ? "†" : "") || " "}` : "—";
-    const run = whereLabel(r).padEnd(18);
-    const color = r.where === "local" ? "32" : r.where === "api" ? "36" : r.where === "local-slow" ? "33" : "2";
-    const line = `  ${String(r.rank ?? "—").padStart(3)}  ${fit(displayName(r))}  ${g.padStart(7)}  ${c(color, run)}  ${speedLabel(r.speed).padStart(12)}  ${(r.mem_gb !== null ? `~${Math.round(r.mem_gb)}GB` : "").padStart(5)}  ${o.cat === "llm" ? `${contextLabel(r.context_k).padStart(7)}  ` : ""}${!r.cmd || r.cmd.startsWith("http") ? r.cmd ?? "" : primary({ cmd: r.cmd } as Variant).cmd}`;
-    out.push(r.where === "none" || r.where === "retired" ? c("2", line) : line);
-  }
-  out.push("");
-  if (!o.all && hidden > 0) out.push(c("2", `  + ${hidden} more models don't fit your machine or budget (?all=1)`));
-  if (o.thinCount && !o.thin) out.push(c("2", `  + ${o.thinCount} models with fewer than 3 results left off (add ?thin=1 to list them)`));
-  if (o.retiredCount && max === null && !specs && !shown.some((r) => r.where === "retired")) out.push(c("2", `  + ${o.retiredCount} comparison-only models hidden (drop ?retired=0 to list them)`));
-  if (shown.some((r) => r.thin)) out.push(c("2", `  * new or thinly tested: ranked on too few benchmark results`));
-  if (shown.some((r) => r.maker_only)) out.push(c("2", `  † only the maker's own numbers so far`));
-  if (shown.some((r) => r.score === null && r.evidence !== "none")) out.push(c("2", "  — not yet calibrated on the overall score scale; use ?set=<id>&score=set for set scores where available"));
-  if (shown.some((r) => r.evidence === "none")) out.push(c("2", "  — catalogue entries without reviewed results have no score or rank"));
-  if (shown.some((r) => r.speed && r.speed.how !== "measured")) out.push(c("2", `  ~speed: measured on other hardware, or estimated. send your chip/GPU name for exact matches: ${host}/method#speed`));
-  out.push(c("2", `  RAM is estimated; listed context is a provider ceiling, not a promise that it fits.`));
-  out.push(c("2", `  sources and licences: ${host}/method#sources`));
-  out.push(c("2", `  score = one number combining ${o.benches} benchmarks (50 = average model, ± = uncertainty) · ${host}/method`));
-  out.push(c("2", `  other lists: ${["/", "/image", "/video", "/tts", "/stt"].filter((p) => p !== path).map((p) => host + p).join("  ")}`));
-  out.push(c("2", `  ?max=${o.cat === "llm" ? "1" : "0.05"} (max $/${CATEGORIES[o.cat].priceUnit}, 0 = local only)  ?sort=score|where|speed|ram|context  ?format=json  ?all=1  ?retired=0  ?thin=1`));
-  if (sponsor) out.push(`  ${c("35", "sponsor:")} ${sponsor.text} — ${sponsor.url}`);
-  out.push(c("2", `  estimates from public sources; may be wrong or out of date. review commands before running. ${host}/terms`));
-  out.push("");
-  return out.join("\n");
+  out.push('');
+  say(`Score ± uncertainty · API $/${CATEGORIES[o.cat].priceUnit} · RAM estimated`, '2');
+  if (shown.some((r) => r.thin)) say('* Few benchmark results; ranking is uncertain.', '2');
+  if (shown.some((r) => r.maker_only)) say("† Only the maker's own results.", '2');
+  if (shown.some((r) => r.score === null)) say('— not yet calibrated. See ?help=1 for comparison sets.', '2');
+  if (width >= 100 && shown.some((r) => r.speed && r.speed.how !== 'measured')) say('~speed is estimated or measured on different hardware.', '2');
+  if (!specs && max === null) say(`Your machine: curl "${host}${path}?ram=32&gpu=apple&max=0"`);
+  say('?help=1 options · ?n=20 more · ?format=json full details', '2');
+  say(`Sources: ${host}/method · Lists: /image /video /tts /stt`, '2');
+  if (sponsor) say(`Sponsor: ${sponsor.text} — ${sponsor.url}`, '35');
+  out.push('');
+  return out.join('\n');
 }
