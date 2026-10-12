@@ -223,6 +223,21 @@ class RunnerTests(unittest.TestCase):
         self.assertIn('downloads 2.5 GB first from huggingface.co/o/Small-GGUF',plan)
         self.assertIn('-p 512 -n 256',plan)
 
+    def test_search_adds_models_that_fit_and_says_why_when_it_cannot(self):
+        catalogue=[{'id':'huge','name':'Huge 400B','n':20,'score':90,'variants':[{'rt':'gguf','ref':'o/Huge-GGUF','quant':'Q4_K_M','gb':240}]},
+                   {'id':'small','name':'Small 4B','n':20,'score':60,'variants':[{'rt':'gguf','ref':'o/Small-GGUF','quant':'Q4_K_M','gb':2.5}]},
+                   {'id':'api','name':'Api Model','n':20,'score':95,'variants':[]}]
+        hw=dict(os='Linux',ram_gb=16)
+        with patch.object(bench,'bench_command',return_value=['llama-bench']):
+            sections=[('On this machine',[])]
+            added,note=bench.search_add('b',catalogue,{},hw,sections)  # 'b' matches both sizes; only the small one fits
+            self.assertEqual([t['model_id'] for t in added],['small']); self.assertIn('added 1 model',note)
+            self.assertEqual(sections[0][0],'Added from search')
+            self.assertIn('already in the list',bench.search_add('small',catalogue,{},hw,sections)[1])
+            self.assertIn('needs',bench.search_add('huge',catalogue,{},hw,sections)[1])
+            self.assertIn('API only',bench.search_add('api model',catalogue,{},hw,sections)[1])
+            self.assertIn('nothing on whatmodel.sh matches',bench.search_add('zzz',catalogue,{},hw,sections)[1])
+
     def test_installs_and_downloads_happen_only_in_prepare(self):
         t=dict(kind='mlx',group='local',label='m',model='o/M-4bit',path='o/M-4bit',prep=[('install','MLX','uv tool install mlx-lm'),('download','mlx','o/M-4bit','4bit',0.4)])
         with patch.object(bench.shutil,'which',return_value=None), patch.object(bench.subprocess,'run') as run, contextlib.redirect_stdout(io.StringIO()):

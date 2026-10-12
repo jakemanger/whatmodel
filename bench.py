@@ -694,14 +694,23 @@ def search_catalogue(text, catalogue, limit=8):
         key = norm(m.get('name')) + ' ' + norm(m.get('id'))
         exact = norm(text) in (norm(m.get('id')), norm(m.get('name')))
         if exact or (words and all(w in key for w in words)):
-            scored.append((not exact, -(m.get('score') or 0), m))
-    return [m for *_, m in sorted(scored, key=lambda x: x[:2])][:limit]
+            scored.append((not exact, m.get('n', 0) < 8, -(m.get('score') or 0), m))  # exact, then well-tested, then best
+    return [m for *_, m in sorted(scored, key=lambda x: x[:3])][:limit]
 
 
 def usable_gb(hw):
-    """Memory a model can use: most of a graphics card, or part of RAM (unified memory on a Mac)."""
-    if hw.get('vram_gb'): return hw['vram_gb'] * 0.9
-    return (hw.get('ram_gb') or 8) * (0.7 if hw.get('os') == 'Darwin' else 0.6)
+    """Memory a model can run in, by the same rule as whatmodel.sh's machine filter (lib/fit.ts usable)."""
+    ram = hw.get('ram_gb') or 8
+    if hw.get('os') == 'Darwin' and hw.get('arch') == 'arm64':
+        return ram * (0.67 if ram <= 36 else 0.75)  # macOS lets the GPU wire ~2/3 of RAM up to 36 GB, ~3/4 above
+    if hw.get('vram_gb'):
+        return hw['vram_gb'] - 0.5
+    return max(0, ram - 4) * 0.8
+
+
+def need_gb(gb):
+    """A download plus room for its context, as whatmodel.sh counts it (lib/fit.ts needGb)."""
+    return gb + gb * 0.05 + 1.5
 
 
 def install_for(rt):
@@ -745,7 +754,7 @@ def download_target(m, v, found):
 
 def best_variant(m, ready, hw):
     """The download to offer for a model: one that fits, on a runtime you have (llama.cpp first), 4-bit first."""
-    fits = [v for v in m.get('variants', []) if v['gb'] <= usable_gb(hw) and not (v['rt'] == 'mlx' and not apple_silicon())]
+    fits = [v for v in m.get('variants', []) if need_gb(v['gb']) <= usable_gb(hw) and not (v['rt'] == 'mlx' and not apple_silicon())]
     order = lambda v: (v['rt'] not in ready, install_for(v['rt']) is None, ['gguf', 'mlx', 'ollama'].index(v['rt']), not re.search(r'(?i)q4|4bit', v['quant']), -v['gb'])
     fits = [v for v in fits if v['rt'] in ready or install_for(v['rt'])]
     return min(fits, key=order) if fits else None
@@ -803,22 +812,38 @@ def build_choices(found, catalogue, hw):
 
 
 def search_add(text, catalogue, found, hw, sections):
-    """Add the best download of each model matching the search to an 'Added' section."""
-    ready, added = ready_runtimes(found), []
+    """Add models matching the search that this machine can run, to an 'Added from search' section.
+    Returns what was added and a line saying what happened."""
+    ready, added, listed_hits, too_big = ready_runtimes(found), [], [], []
     listed = {t.get('model_id') for _, items in sections for t in items}
-    for m in search_catalogue(text, catalogue):
+    matches = search_catalogue(text, catalogue, limit=400)
+    for m in matches:
         if m['id'] in listed:
-            continue
+            listed_hits.append(m); continue
         v = best_variant(m, ready, hw)
-        t = v and download_target(m, v, found)
+        if not v:
+            if m.get('variants'): too_big.append(m)
+            continue
+        t = download_target(m, v, found)
         if t: added.append(t)
+        if len(added) >= 8: break
     if added:
         for i, (title, items) in enumerate(sections):
             if title == 'Added from search':
                 sections[i] = (title, items + added); break
         else:
             sections.insert(0, ('Added from search', added))
-    return added
+        note = f'added {len(added)} model{"s" if len(added) != 1 else ""} matching "{text}" at the top (not ticked)'
+    elif listed_hits:
+        note = f'{listed_hits[0]["name"]} is already in the list'
+    elif too_big:
+        small = min(too_big, key=lambda m: min(v['gb'] for v in m['variants']))
+        note = f'nothing matching "{text}" fits in this machine\'s ~{usable_gb(hw):.0f} GB (the smallest, {small["name"]}, needs {need_gb(min(v["gb"] for v in small["variants"])):.0f} GB)'
+    elif matches:
+        note = f'{matches[0]["name"]} has no download to run locally (API only)'
+    else:
+        note = f'nothing on whatmodel.sh matches "{text}"'
+    return added, note
 
 
 def choose(sections, catalogue, found, hw):
@@ -841,11 +866,11 @@ def choose(sections, catalogue, found, hw):
             default = ' '.join(str(i) for i, t in enumerate(items, 1) if any(id(t) == p for p in picked))
             answer = ask('Numbers to test, separated by spaces (or type a model name to search whatmodel.sh)', default)
             if answer and not re.fullmatch(r'[\d\s]+', answer):
-                added = search_add(answer, catalogue, found, hw, sections)
-                print(dim(f'  added {len(added)} match{"es" if len(added) != 1 else ""} at the top (not ticked)') if added else dim('  nothing new that fits this machine matches that'))
+                _, note = search_add(answer, catalogue, found, hw, sections)
+                print(dim(f'  {note}'))
                 continue
             return [t for i, t in enumerate(items, 1) if str(i) in answer.split()]
-    cursor = 0
+    cursor, message = 0, ''
     def render():
         rs = rows()
         height = max(8, shutil.get_terminal_size((100, 24)).lines - 7)
@@ -858,6 +883,7 @@ def choose(sections, catalogue, found, hw):
             line = f'{green("[x]") if id(t) in picked else "[ ]"} {t["label"]}  {dim(t.get("detail", ""))}'
             out.append(('› ' if i == cursor else '  ') + (c('7', ANSI.sub('', line)) if i == cursor and COLOR else line))
         out.append(dim(f'  {len(picked)} selected'))
+        if message: out.append('  ' + yellow(message))
         return out
     live = Live(render); live.live = True
     rs = rows(); cursor = next((i for i, r in enumerate(rs) if r[0] == 'item'), 0)
@@ -874,7 +900,7 @@ def choose(sections, catalogue, found, hw):
             elif key == '/':
                 sys.stdout.write('\x1b[?25h'); sys.stdout.flush()
                 text = ask('\n  Search whatmodel.sh models (e.g. "qwen 9b", "gemma")')
-                if text: search_add(text, catalogue, found, hw, sections)
+                message = search_add(text, catalogue, found, hw, sections)[1] if text else ''
                 live.lines = 0; sys.stdout.write('\x1b[?25l')
                 rs = rows(); cursor = next((i for i, r in enumerate(rs) if r[0] == 'item'), 0)
             elif key == 'enter':
