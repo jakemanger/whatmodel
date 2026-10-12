@@ -11,12 +11,16 @@ import threading
 import unittest
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from unittest.mock import patch
+import unittest.mock
 
 ROOT = Path(__file__).resolve().parents[2]
 spec = importlib.util.spec_from_file_location('bench', ROOT / 'bench.py')
 bench = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(bench)
 bench.PAUSE_S = (0, 0)  # no real pauses in tests; the schedule test patches its own range
+# Never reach the real GitHub from a test: the upload path uses the GitHub CLI when it's signed in.
+_which = bench.shutil.which
+bench.shutil.which = lambda name, *a, **k: None if name == 'gh' else _which(name, *a, **k)
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -252,6 +256,19 @@ class RunnerTests(unittest.TestCase):
         cmds=[c.args[0] for c in run.call_args_list]
         self.assertEqual(cmds[0],['/bin/sh','-c','uv tool install mlx-lm'])
         self.assertEqual(cmds[1][:3],['mlx_lm.generate','--model','o/M-4bit'])
+
+    def test_upload_uses_the_github_cli_or_the_clipboard_for_long_reports(self):
+        report={'schema':'whatmodel-bench-v3','results':[{'model':'m','samples':[{'gen_tok_s':1.0}]*20}]*8}
+        gh=lambda *a,**k: unittest.mock.Mock(returncode=0,stdout='https://github.com/x/y/issues/9\n')
+        with patch.object(bench.shutil,'which',side_effect=lambda n,*a,**k:'/bin/'+n), patch.object(bench.subprocess,'run',side_effect=gh) as run, \
+             patch.object(bench.webbrowser,'open') as browser, contextlib.redirect_stdout(io.StringIO()) as out:
+            bench.open_upload(report,'~/r.json')
+        self.assertIn(['gh','issue','create','--repo',bench.REPO],[c.args[0][:5] for c in run.call_args_list])
+        self.assertIn('issues/9',out.getvalue()); browser.assert_not_called()
+        with patch.object(bench,'copy_to_clipboard',return_value=True) as clip, patch.object(bench.webbrowser,'open',return_value=True) as browser, \
+             contextlib.redirect_stdout(io.StringIO()):
+            bench.open_upload(report,'~/r.json')  # gh looks uninstalled in tests
+        self.assertTrue(clip.called); self.assertLess(len(browser.call_args.args[0]),bench.URL_SAFE)
 
     def test_declining_the_plan_runs_nothing(self):
         target=dict(kind='ollama',group='local',label='model',model='m',base=self.base,model_id='m')

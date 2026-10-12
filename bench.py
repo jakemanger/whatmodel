@@ -1039,6 +1039,8 @@ def run_ollama(t, tokens, n):
     return {'gen_tok_s': rate(data.get('eval_count'), data.get('eval_duration')),
             'prompt_tok_s': rate(data.get('prompt_eval_count'), data.get('prompt_eval_duration')),
             'load_s': round(data.get('load_duration', 0) / 1e9, 3), 'output_tokens': number(data.get('eval_count')),
+            # Ollama's own timings: loading the model and reading the prompt come before the first token.
+            'ttft_s': round((data.get('load_duration', 0) + data.get('prompt_eval_duration', 0)) / 1e9, 3) or None,
             'elapsed_s': round(data.get('total_duration', 0) / 1e9, 3) or None}
 
 
@@ -1320,8 +1322,17 @@ def summary(jobs):
             print(f'  {job.t["label"]:<{w}.{w}} {red(job.note or "no measurements")}'); continue
         med = lambda k: statistics.median([x[k] for x in s if x.get(k) is not None]) if any(x.get(k) is not None for x in s) else None
         tok = med('gen_tok_s') or med('e2e_tok_s')
-        use = '' if job.t['group'] == 'local' else f'{job.used_tokens:,} tok' + (f' ≈ ${job.used_usd:.2f}' if job.used_usd else '')
-        print(f'  {job.t["label"]:<{w}.{w}} {fmt(tok):>9} {fmt(med("prompt_tok_s")):>9} {fmt(med("ttft_s"), "s", 2):>10} {fmt(med("elapsed_s"), "s"):>8}  {dim(use)}')
+        use = 'free' if job.t['group'] == 'local' else f'{job.used_tokens:,} tok' + (f' ≈ ${job.used_usd:.2f}' if job.used_usd else '')
+        cell = lambda v, unit='', digits=1: fmt(v, unit, digits) or '—'  # — : this runtime doesn't report it
+        print(f'  {job.t["label"]:<{w}.{w}} {cell(tok):>9} {cell(med("prompt_tok_s")):>9} {cell(med("ttft_s"), "s", 2):>10} {cell(med("elapsed_s"), "s"):>8}  {dim(use)}')
+    kinds = {j.t['kind'] for j in jobs if j.samples}
+    notes = []
+    if kinds & {'llama-bench', 'mlx'}:
+        notes.append('llama.cpp and MLX time prompt reading (prefill) and generation separately on a fixed 512-token prompt, so they have no first token or total')
+    if kinds & {'openai', 'lmstudio', 'claude', 'codex', 'gemini', 'harness'}:
+        notes.append("chat APIs and agent tools don't report prefill speed")
+    if notes:
+        print(dim('  — not reported: ' + '; '.join(notes) + '.'))
     busy = [x.get('cpu_busy') for j in jobs for x in j.samples if x.get('cpu_busy') is not None]
     if busy and max(busy) > BUSY_WARN:
         print(yellow(f'\n  Other programs were using up to {max(busy):.0%} of the CPU between tests. Close other apps and run again for steadier numbers.'))
@@ -1372,14 +1383,41 @@ def public_report(jobs, tokens, runs, warmups, seed, hw, ids):
 REPORTS = Path.home() / '.whatmodel'
 
 
+REPO = 'jakemanger/whatmodel'
+URL_SAFE = 2500  # browsers send the URL with your GitHub cookies; long prefilled drafts get rejected (HTTP 400)
+
+
+def copy_to_clipboard(text):
+    for cmd in (['pbcopy'], ['wl-copy'], ['xclip', '-selection', 'clipboard'], ['xsel', '--clipboard', '--input'], ['clip.exe']):
+        if shutil.which(cmd[0]):
+            try:
+                subprocess.run(cmd, input=text.encode(), check=True, timeout=10); return True
+            except (OSError, subprocess.SubprocessError):
+                pass
+    return False
+
+
 def open_upload(report, path):
-    """Open a prefilled GitHub issue with the report; the user reads it and presses Submit."""
+    """Send the report as a GitHub issue: directly with the GitHub CLI when you're signed in to it, otherwise
+    through a prefilled draft in your browser (pasted from the clipboard when it's too long for a link)."""
     body = '### Benchmark results\n\n```json\n' + json.dumps(report, separators=(',', ':')) + '\n```\n\nI reviewed this report and release these measurements under CC0 1.0.\n'
-    url = ISSUES + '?' + urllib.parse.urlencode({'title': 'Benchmark measurements', 'body': body})
-    if len(url) > 7500:
-        url = ISSUES + '?' + urllib.parse.urlencode({'title': 'Benchmark measurements', 'body': 'Report attached. I release these measurements under CC0 1.0.'})
-        print(f'The report is too long for a link: attach {path} to the issue.')
-    print('Opening GitHub with your results filled in. Read them and press Submit; nothing is sent until you do.')
+    title = 'Benchmark measurements'
+    if shutil.which('gh') and subprocess.run(['gh', 'auth', 'status'], capture_output=True, timeout=20).returncode == 0:
+        with tempfile.NamedTemporaryFile('w', suffix='.md', delete=False) as f:
+            f.write(body); body_file = f.name
+        try:
+            done = subprocess.run(['gh', 'issue', 'create', '--repo', REPO, '--title', title, '--body-file', body_file], capture_output=True, text=True, timeout=60)
+        finally:
+            os.unlink(body_file)
+        if done.returncode == 0:
+            print(green('Uploaded: ') + done.stdout.strip().splitlines()[-1]); return
+        print(yellow('GitHub CLI could not create the issue; opening your browser instead.'))
+    url = ISSUES + '?' + urllib.parse.urlencode({'title': title, 'body': body})
+    if len(url) > URL_SAFE:
+        copied = copy_to_clipboard(body)
+        url = ISSUES + '?' + urllib.parse.urlencode({'title': title, 'body': 'Paste your benchmark report here (it was copied to your clipboard).' if copied else f'Paste the contents of {path} here.'})
+        print('Your report is too long for a link, so ' + ('it is on your clipboard: paste it into the issue that opens.' if copied else f'paste the contents of {path} into the issue that opens.'))
+    print('Read it in your browser and press Submit; nothing is sent until you do.')
     if not webbrowser.open(url): print('Open this link:\n' + url)
 
 
