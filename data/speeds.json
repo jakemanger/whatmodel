@@ -15324,5 +15324,152 @@
       "artifact_reference_as_reported": "ollama qwen3:8b",
       "artifact_sha256": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41"
     }
+  },
+  {
+    "model": "qwen3-8b",
+    "quant": "q4_k_m",
+    "hardware": "Apple M2 Pro (16-core GPU), 16 GB",
+    "hardware_id": "m2-pro",
+    "kind": "apple",
+    "offload": "none",
+    "value": 27.94,
+    "unit": "tok/s",
+    "engine": "ollama 0.30.8",
+    "settings": "whatmodel bench.py 3.2.0: fixed prompt, up to 256 generated tokens, temperature 0, median of 3 runs in shuffled order after 1 discarded warm-up",
+    "source": "https://whatmodel.sh/data/bench.json#gh4-0",
+    "source_id": "whatmodel-bench",
+    "note": "Community submission (issue #4), reviewed 2026-10-12.",
+    "applicability": {
+      "display_as": "measured with the exact download listed on this site",
+      "selected_download_eligible": true,
+      "artifact_reference_as_reported": "ollama qwen3:8b",
+      "artifact_sha256": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41"
+    }
+  },
+  {
+    "model": "qwen2-5-3b",
+    "quant": "q4_k_m",
+    "hardware": "Apple M2 Pro (16-core GPU), 16 GB",
+    "hardware_id": "m2-pro",
+    "kind": "apple",
+    "offload": "none",
+    "value": 60.74,
+    "unit": "tok/s",
+    "engine": "ollama 0.30.8",
+    "settings": "whatmodel bench.py 3.2.0: fixed prompt, up to 256 generated tokens, temperature 0, median of 3 runs in shuffled order after 1 discarded warm-up",
+    "source": "https://whatmodel.sh/data/bench.json#gh4-1",
+    "source_id": "whatmodel-bench",
+    "note": "Community submission (issue #4), reviewed 2026-10-12.",
+    "applicability": {
+      "display_as": "measured with the exact download listed on this site",
+      "selected_download_eligible": true,
+      "artifact_reference_as_reported": "ollama qwen2.5:3b-instruct-q4_K_M",
+      "artifact_sha256": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b"
+    }
+  },
+  {
+    "model": "qwen2-5-1-5b",
+    "quant": "q4_k_m",
+    "hardware": "Apple M2 Pro (16-core GPU), 16 GB",
+    "hardware_id": "m2-pro",
+    "kind": "apple",
+    "offload": "none",
+    "value": 97.54,
+    "unit": "tok/s",
+    "engine": "ollama 0.30.8",
+    "settings": "whatmodel bench.py 3.2.0: fixed prompt, up to 256 generated tokens, temperature 0, median of 3 runs in shuffled order after 1 discarded warm-up",
+    "source": "https://whatmodel.sh/data/bench.json#gh4-2",
+    "source_id": "whatmodel-bench",
+    "note": "Community submission (issue #4), reviewed 2026-10-12.",
+    "applicability": {
+      "display_as": "measured with the exact download listed on this site",
+      "selected_download_eligible": true,
+      "artifact_reference_as_reported": "ollama qwen2.5:1.5b-instruct-q4_K_M",
+      "artifact_sha256": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b"
+    }
+  },
+  {
+    "model": "qwen3-0-6b",
+    "quant": "Q4_K_M",
+    "hardware": "Apple M2 Pro (16-core GPU), 16 GB",
+    "hardware_id": "m2-pro",
+    "kind": "apple",
+    "offload": "none",
+    "value": 214.58,
+    "unit": "tok/s",
+    "engine": "llama.cpp",
+    "settings": "whatmodel bench.py 3.2.0: fixed prompt, up to 256 generated tokens, temperature 0, median of 3 runs in shuffled order after 1 discarded warm-up",
+    "source": "https://whatmodel.sh/data/bench.json#gh4-3",
+    "source_id": "whatmodel-bench",
+    "note": "Community submission (issue #4), reviewed 2026-10-12.",
+    "applicability": {
+      "display_as": "measured with the exact download listed on this site",
+      "selected_download_eligible": true,
+      "artifact_reference_as_reported": "Qwen3-0.6B-Q4_K_M.gguf",
+      "artifact_sha256": null
+    }
+  },
+  {
+    "model": "gpt-2-large",
+    "quant": "Q4_K_M",
+    "hardware": "Apple M2 Pro (16-core GPU), 16 GB",
+    "hardware_id": "m2-pro",
+    "kind": "apple",
+    "offload": "none",
+    "value": 137.11,
+    "unit": "tok/s",
+    "engine": "llama.cpp",
+    "settings": "whatmodel bench.py 3.2.0: fixed prompt, up to 256 generated tokens, temperature 0, median of 3 runs in shuffled order after 1 discarded warm-up",
+    "source": "https://whatmodel.sh/data/bench.json#gh4-4",
+    "source_id": "whatmodel-bench",
+    "note": "Community submission (issue #4), reviewed 2026-10-12.",
+    "applicability": {
+      "display_as": "measured with the exact download listed on this site",
+      "selected_download_eligible": true,
+      "artifact_reference_as_reported": "gpt2-large.Q4_K_M.gguf",
+      "artifact_sha256": null
+    }
+  },
+  {
+    "model": "gpt-2-xl",
+    "quant": "Q4_K_M",
+    "hardware": "Apple M2 Pro (16-core GPU), 16 GB",
+    "hardware_id": "m2-pro",
+    "kind": "apple",
+    "offload": "none",
+    "value": 74.96,
+    "unit": "tok/s",
+    "engine": "llama.cpp",
+    "settings": "whatmodel bench.py 3.2.0: fixed prompt, up to 256 generated tokens, temperature 0, median of 3 runs in shuffled order after 1 discarded warm-up",
+    "source": "https://whatmodel.sh/data/bench.json#gh4-5",
+    "source_id": "whatmodel-bench",
+    "note": "Community submission (issue #4), reviewed 2026-10-12.",
+    "applicability": {
+      "display_as": "measured with the exact download listed on this site",
+      "selected_download_eligible": true,
+      "artifact_reference_as_reported": "gpt2-xl.Q4_K_M.gguf",
+      "artifact_sha256": null
+    }
+  },
+  {
+    "model": "qwen3-0-6b",
+    "quant": "Q4_K_M",
+    "hardware": "Apple M2 Pro (16-core GPU), 16 GB",
+    "hardware_id": "m2-pro",
+    "kind": "apple",
+    "offload": "none",
+    "value": 167.16,
+    "unit": "tok/s",
+    "engine": "lm-studio",
+    "settings": "whatmodel bench.py 3.2.0: fixed prompt, up to 256 generated tokens, temperature 0, median of 3 runs in shuffled order after 1 discarded warm-up",
+    "source": "https://whatmodel.sh/data/bench.json#gh4-7",
+    "source_id": "whatmodel-bench",
+    "note": "Community submission (issue #4), reviewed 2026-10-12.",
+    "applicability": {
+      "display_as": "measured with the exact download listed on this site",
+      "selected_download_eligible": true,
+      "artifact_reference_as_reported": "Qwen3-0.6B-Q4_K_M.gguf",
+      "artifact_sha256": null
+    }
   }
 ]
