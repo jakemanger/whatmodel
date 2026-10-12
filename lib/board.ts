@@ -51,7 +51,7 @@ export function boardFromData(data: BoardData, q: URLSearchParams) {
   const { sets, sources } = evidence;
   const list = task ? data.models.filter((m) => index.results.has(m.id)) : data.models;
   const specs = parseSpecs(q, hardware);
-  const max = parseMax(q);
+  const max = parseMax(q, specs);
   const comparison = sets.find((set) => set.id === q.get("set"));
   const scoreMode: "set" | "overall" = comparison && q.get("score") === "set" ? "set" : "overall";
   const scoreSet = scoreMode === "set" ? comparison : sets[0];

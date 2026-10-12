@@ -24,11 +24,11 @@ export type OS = keyof ReturnType<typeof detect>;
 
 // Same, but also sends the chip / GPU name so speeds can come from measurements on that exact hardware.
 const SMI_NAME = "nvidia-smi --query-gpu=name,memory.total --format=csv,noheader";
-// These default to max=0: what that machine can run locally.
+// With a machine given, boards list what runs on it locally unless max=any.
 export const detectExact = (host: string, path = "/") => ({
-  mac: `curl -G ${host}${path} -d max=0 --data-urlencode "mac=$(sysctl -n hw.memsize machdep.cpu.brand_string)"`,
-  linux: `curl -G ${host}${path} -d max=0 --data-urlencode "ram=$(awk '/MemT/{print $2}' /proc/meminfo)" --data-urlencode "nv=$(${SMI_NAME} 2>/dev/null)"`,
-  windows: `curl.exe -G ${host}${path} -d max=0 --data-urlencode "ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)" --data-urlencode "nv=$(${SMI_NAME} 2>$null)"`,
+  mac: `curl -G ${host}${path} --data-urlencode "mac=$(sysctl -n hw.memsize machdep.cpu.brand_string)"`,
+  linux: `curl -G ${host}${path} --data-urlencode "ram=$(awk '/MemT/{print $2}' /proc/meminfo)" --data-urlencode "nv=$(${SMI_NAME} 2>/dev/null)"`,
+  windows: `curl.exe -G ${host}${path} --data-urlencode "ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)" --data-urlencode "nv=$(${SMI_NAME} 2>$null)"`,
 });
 
 // The curl command for a set of picks, keeping only params the API understands.
@@ -76,7 +76,7 @@ export function speedNote(s: RowSpeed | null) {
 export const describeMax = (max: number, cat: Category = "llm") => (max === 0 ? "local only" : `up to ${price(max, cat)}`);
 
 export function describeSpecs(s: Specs) {
-  const gpu = s.hw ? s.hw.name : s.gpu === "apple" ? "Apple Silicon" : s.gpu === "card" ? `${s.vram}GB graphics card` : "no GPU";
+  const gpu = s.hw ? s.hw.name : s.gpu === "apple" ? "Apple Silicon" : s.gpu === "card" ? `${s.vram}GB graphics card` : s.gpu === "unified" ? "unified memory" : "no GPU";
   const u = usable(s);
   const avail = s.gpu === "none" ? `~${Math.round(u.total)}GB for models (CPU, slow)` : `~${Math.round(u.fast)}GB fast`;
   return `${s.ram ? `${s.ram}GB RAM · ` : ""}${gpu} → ${avail}`;
@@ -86,6 +86,7 @@ type Opts = { width?: number; task?: string; color: boolean; base: string; limit
   comparison?: { selected?: string; scoreMode: "overall" | "set"; sets: { id: string; label: string; models: number }[] };
   retiredCount?: number; // scored models with no verified API or download, listed unless ?retired=0
   thin?: boolean; thinCount?: number; // text models with fewer than 3 results, listed only with ?thin=1
+  withApis?: string; // the command that adds API models to a local-only list
 };
 
 export function terminalHelp(base: string, cat: Category, width = 80) {
@@ -93,12 +94,13 @@ export function terminalHelp(base: string, cat: Category, width = 80) {
   const path = CATEGORIES[cat].path;
   const lines = [
     `whatmodel.sh${path === '/' ? '' : path} · terminal help`, '',
-    `curl "${host}${path}?ram=32&gpu=apple&max=0"`, '',
+    `curl "${host}${path}?ram=32&gpu=apple"`, '',
     'ram=32       RAM in GB',
-    'gpu=apple    Apple Silicon (or card / none)',
+    'gpu=apple    Apple Silicon (or card / unified / none)',
     'vram=24      Graphics card memory in GB',
     'hw=<id>      Exact chip or GPU; see the website hardware picker',
-    'max=0        Local models only; max=1 caps API price',
+    'max=any      Include API models (local only once a machine is given)',
+    'max=1        Cap API price; max=0 local only',
     `             API price unit: USD/${CATEGORIES[cat].priceUnit}`,
     'sort=speed   Sort by score, speed, where, ram or context',
     'dir=asc      Reverse the usual sort order',
@@ -169,7 +171,8 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   if (shown.some((r) => r.maker_only)) say("† Only the maker's own results.", '2');
   if (shown.some((r) => r.score === null)) say('— not yet calibrated. See ?help=1 for comparison sets.', '2');
   if (width >= 100 && shown.some((r) => r.speed && r.speed.how !== 'measured')) say('~speed is estimated or measured on different hardware.', '2');
-  if (!specs && max === null) say(`Your machine: curl "${host}${path}?ram=32&gpu=apple&max=0"`);
+  if (!specs && max === null) say(`Your machine: curl "${host}${path}?ram=32&gpu=apple"`);
+  if (o.withApis) say(`Include API models: ${o.withApis}`);
   say('?help=1 options · ?n=20 more · ?format=json full details', '2');
   say(`Sources: ${host}/method · Lists: /image /video /tts /stt`, '2');
   if (sponsor) say(`Sponsor: ${sponsor.text} — ${sponsor.url}`, '35');

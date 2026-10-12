@@ -1,5 +1,6 @@
+import { CATEGORIES } from "./categories.ts";
 import { usable } from "./fit.ts";
-import { DISCLOSURE, sponsor, terminalHelp, toText } from "./format.ts";
+import { curlFor, DISCLOSURE, sponsor, terminalHelp, toText } from "./format.ts";
 import { terminalColumns, terminalWrap } from "./terminal-layout.ts";
 import { chartsFor, chartToText } from "./chart.ts";
 import { boardFromData, type BoardData } from "./board.ts";
@@ -73,6 +74,7 @@ export function leaderboardResponse(req: Request, data: BoardData, attributions:
     retiredCount,
     thin,
     thinCount,
+    withApis: specs && max === 0 && !q.has("max") ? curlFor(url.host, CATEGORIES[cat].path, new URLSearchParams([...q, ["max", "any"]])) : undefined,
   });
   // Optional plots follow the compact table and fit the requested terminal.
   const lines = text.split("\n");

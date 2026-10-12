@@ -102,7 +102,9 @@ export type Hardware = {
   released?: string;
   released_source?: string;
   source: string;
+  unified?: boolean; // a non-Apple chip whose GPU shares system RAM
 };
 
 // gpu "card": a graphics card with its own memory (NVIDIA, AMD or Intel).
-export type Specs = { ram: number; vram: number; gpu: "apple" | "card" | "none"; hw?: Hardware | null };
+// gpu "unified": a non-Apple chip whose GPU shares system RAM (DGX Spark, Ryzen AI Max).
+export type Specs = { ram: number; vram: number; gpu: "apple" | "card" | "unified" | "none"; hw?: Hardware | null };

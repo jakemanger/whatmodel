@@ -114,6 +114,549 @@
     "pp_median": 1143.8
   },
   {
+    "id": "gh4-0",
+    "issue": 4,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.0",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": null,
+    "os": "Darwin arm64",
+    "engine": "ollama 0.30.8",
+    "model": "ollama qwen3:8b",
+    "model_id": "qwen3-8b",
+    "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "quant": "Q4_K_M",
+    "bytes": 5225374496,
+    "settings": null,
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "gen_tok_s": 27.94,
+        "prompt_tok_s": 217.74,
+        "load_s": 0.161,
+        "output_tokens": 256,
+        "ttft_s": 0.451,
+        "elapsed_s": 9.632,
+        "cpu_busy": 0.394
+      },
+      {
+        "gen_tok_s": 28.06,
+        "prompt_tok_s": 231.86,
+        "load_s": 0.136,
+        "output_tokens": 256,
+        "ttft_s": 0.408,
+        "elapsed_s": 9.543,
+        "cpu_busy": 0.177
+      },
+      {
+        "gen_tok_s": 27.71,
+        "prompt_tok_s": 209.67,
+        "load_s": 0.194,
+        "output_tokens": 256,
+        "ttft_s": 0.495,
+        "elapsed_s": 9.761,
+        "cpu_busy": 0.391
+      }
+    ],
+    "tg_median": 27.94,
+    "pp_median": 217.74
+  },
+  {
+    "id": "gh4-1",
+    "issue": 4,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.0",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": null,
+    "os": "Darwin arm64",
+    "engine": "ollama 0.30.8",
+    "model": "ollama qwen2.5:3b-instruct-q4_K_M",
+    "model_id": "qwen2-5-3b",
+    "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "quant": "Q4_K_M",
+    "bytes": 1929903008,
+    "settings": null,
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "gen_tok_s": 60.74,
+        "prompt_tok_s": 653.13,
+        "load_s": 0.171,
+        "output_tokens": 256,
+        "ttft_s": 0.297,
+        "elapsed_s": 4.525,
+        "cpu_busy": 0.456
+      },
+      {
+        "gen_tok_s": 61.13,
+        "prompt_tok_s": 633.77,
+        "load_s": 0.157,
+        "output_tokens": 256,
+        "ttft_s": 0.287,
+        "elapsed_s": 4.48,
+        "cpu_busy": 0.144
+      },
+      {
+        "gen_tok_s": 59.46,
+        "prompt_tok_s": 572.34,
+        "load_s": 0.168,
+        "output_tokens": 256,
+        "ttft_s": 0.311,
+        "elapsed_s": 4.627,
+        "cpu_busy": 0.468
+      }
+    ],
+    "tg_median": 60.74,
+    "pp_median": 633.77
+  },
+  {
+    "id": "gh4-2",
+    "issue": 4,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.0",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": null,
+    "os": "Darwin arm64",
+    "engine": "ollama 0.30.8",
+    "model": "ollama qwen2.5:1.5b-instruct-q4_K_M",
+    "model_id": "qwen2-5-1-5b",
+    "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+    "quant": "Q4_K_M",
+    "bytes": 986048512,
+    "settings": null,
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "gen_tok_s": 98.7,
+        "prompt_tok_s": 959.15,
+        "load_s": 0.191,
+        "output_tokens": 256,
+        "ttft_s": 0.276,
+        "elapsed_s": 2.891,
+        "cpu_busy": 0.53
+      },
+      {
+        "gen_tok_s": 97.54,
+        "prompt_tok_s": 1129.01,
+        "load_s": 0.182,
+        "output_tokens": 256,
+        "ttft_s": 0.255,
+        "elapsed_s": 2.891,
+        "cpu_busy": 0.154
+      },
+      {
+        "gen_tok_s": 97.01,
+        "prompt_tok_s": 1216.62,
+        "load_s": 0.147,
+        "output_tokens": 256,
+        "ttft_s": 0.214,
+        "elapsed_s": 2.859,
+        "cpu_busy": 0.143
+      }
+    ],
+    "tg_median": 97.54,
+    "pp_median": 1129.01
+  },
+  {
+    "id": "gh4-3",
+    "issue": 4,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.0",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": null,
+    "os": "Darwin arm64",
+    "engine": "llama.cpp",
+    "model": "Qwen3-0.6B-Q4_K_M.gguf",
+    "model_id": "qwen3-0-6b",
+    "digest": null,
+    "quant": "Q4_K_M",
+    "bytes": 500000000,
+    "settings": null,
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "gen_tok_s": 214.58,
+        "prompt_tok_s": 3430.89,
+        "cpu_busy": 0.455
+      },
+      {
+        "gen_tok_s": 206.06,
+        "prompt_tok_s": 3458.43,
+        "cpu_busy": 0.176
+      },
+      {
+        "gen_tok_s": 216.6,
+        "prompt_tok_s": 3445.73,
+        "cpu_busy": 0.405
+      }
+    ],
+    "tg_median": 214.58,
+    "pp_median": 3445.73
+  },
+  {
+    "id": "gh4-4",
+    "issue": 4,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.0",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": null,
+    "os": "Darwin arm64",
+    "engine": "llama.cpp",
+    "model": "gpt2-large.Q4_K_M.gguf",
+    "model_id": "gpt-2-large",
+    "digest": null,
+    "quant": "Q4_K_M",
+    "bytes": 500000000,
+    "settings": null,
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "gen_tok_s": 137.19,
+        "prompt_tok_s": 2203.57,
+        "cpu_busy": 0.15
+      },
+      {
+        "gen_tok_s": 137.1,
+        "prompt_tok_s": 2196.87,
+        "cpu_busy": 0.159
+      },
+      {
+        "gen_tok_s": 137.11,
+        "prompt_tok_s": 2189.29,
+        "cpu_busy": 0.352
+      }
+    ],
+    "tg_median": 137.11,
+    "pp_median": 2196.87
+  },
+  {
+    "id": "gh4-5",
+    "issue": 4,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.0",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": null,
+    "os": "Darwin arm64",
+    "engine": "llama.cpp",
+    "model": "gpt2-xl.Q4_K_M.gguf",
+    "model_id": "gpt-2-xl",
+    "digest": null,
+    "quant": "Q4_K_M",
+    "bytes": 1200000000,
+    "settings": null,
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "gen_tok_s": 74.96,
+        "prompt_tok_s": 1076.2,
+        "cpu_busy": 0.136
+      },
+      {
+        "gen_tok_s": 74.8,
+        "prompt_tok_s": 1073.52,
+        "cpu_busy": 0.139
+      },
+      {
+        "gen_tok_s": 75.09,
+        "prompt_tok_s": 1075.68,
+        "cpu_busy": 0.139
+      }
+    ],
+    "tg_median": 74.96,
+    "pp_median": 1075.68
+  },
+  {
+    "id": "gh4-6",
+    "issue": 4,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.0",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": null,
+    "os": "Darwin arm64",
+    "engine": "mlx-lm",
+    "model": null,
+    "model_id": "qwen3-0-6b",
+    "digest": null,
+    "quant": "4bit",
+    "bytes": null,
+    "settings": null,
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "gen_tok_s": 162.57,
+        "prompt_tok_s": 2599.64,
+        "cpu_busy": 0.144
+      },
+      {
+        "gen_tok_s": 168.64,
+        "prompt_tok_s": 2491.83,
+        "cpu_busy": 0.19
+      },
+      {
+        "gen_tok_s": 167.09,
+        "prompt_tok_s": 2599.01,
+        "cpu_busy": 0.15
+      }
+    ],
+    "tg_median": 167.09,
+    "pp_median": 2599.01
+  },
+  {
+    "id": "gh4-7",
+    "issue": 4,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.0",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": null,
+    "os": "Darwin arm64",
+    "engine": "lm-studio",
+    "model": "Qwen3-0.6B-Q4_K_M.gguf",
+    "model_id": "qwen3-0-6b",
+    "digest": null,
+    "quant": "Q4_K_M",
+    "bytes": 500000000,
+    "settings": null,
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "ttft_s": 0.501,
+        "elapsed_s": 2.033,
+        "output_tokens": 256,
+        "gen_tok_s": 167.16,
+        "cpu_busy": 0.22
+      },
+      {
+        "ttft_s": 0.399,
+        "elapsed_s": 1.733,
+        "output_tokens": 256,
+        "gen_tok_s": 191.81,
+        "cpu_busy": 0.163
+      },
+      {
+        "ttft_s": 0.508,
+        "elapsed_s": 2.43,
+        "output_tokens": 256,
+        "gen_tok_s": 133.16,
+        "cpu_busy": 0.369
+      }
+    ],
+    "tg_median": 167.16,
+    "pp_median": null
+  },
+  {
+    "id": "gh4-8",
+    "issue": 4,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.0",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": null,
+    "os": "Darwin arm64",
+    "engine": "claude-code 2.1.296",
+    "model": null,
+    "model_id": "claude-opus-5-5",
+    "digest": null,
+    "quant": null,
+    "bytes": null,
+    "settings": null,
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "elapsed_s": 4.26,
+        "ttft_s": 1.222,
+        "output_tokens": 260,
+        "gen_tok_s": 85.58,
+        "cost_usd": 0.023371,
+        "cpu_busy": 0.135
+      },
+      {
+        "elapsed_s": 3.967,
+        "ttft_s": 1.347,
+        "output_tokens": 241,
+        "gen_tok_s": 91.98,
+        "cost_usd": 0.022990999999999998,
+        "cpu_busy": 0.163
+      },
+      {
+        "elapsed_s": 4.015,
+        "ttft_s": 1.365,
+        "output_tokens": 259,
+        "gen_tok_s": 97.74,
+        "cost_usd": 0.023335,
+        "cpu_busy": 0.276
+      }
+    ],
+    "tg_median": 91.98,
+    "pp_median": null
+  },
+  {
+    "id": "gh4-9",
+    "issue": 4,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.0",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": null,
+    "os": "Darwin arm64",
+    "engine": "claude-code 2.1.296",
+    "model": null,
+    "model_id": "claude-sonnet-5-5",
+    "digest": null,
+    "quant": null,
+    "bytes": null,
+    "settings": null,
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "elapsed_s": 3.737,
+        "ttft_s": 1.415,
+        "output_tokens": 269,
+        "gen_tok_s": 115.85,
+        "cost_usd": 0.0117995,
+        "cpu_busy": 0.146
+      },
+      {
+        "elapsed_s": 3.634,
+        "ttft_s": 1.336,
+        "output_tokens": 253,
+        "gen_tok_s": 110.1,
+        "cost_usd": 0.0116155,
+        "cpu_busy": 0.177
+      },
+      {
+        "elapsed_s": 3.987,
+        "ttft_s": 1.476,
+        "output_tokens": 261,
+        "gen_tok_s": 103.94,
+        "cost_usd": 0.011719499999999999,
+        "cpu_busy": 0.154
+      }
+    ],
+    "tg_median": 110.1,
+    "pp_median": null
+  },
+  {
+    "id": "gh4-10",
+    "issue": 4,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.0",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": null,
+    "os": "Darwin arm64",
+    "engine": "claude-code 2.1.296",
+    "model": null,
+    "model_id": "claude-haiku-5-5",
+    "digest": null,
+    "quant": null,
+    "bytes": null,
+    "settings": null,
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "elapsed_s": 2.552,
+        "ttft_s": 0.836,
+        "output_tokens": 283,
+        "gen_tok_s": 164.92,
+        "cost_usd": 0.0007544500000000002,
+        "cpu_busy": 0.196
+      },
+      {
+        "elapsed_s": 2.606,
+        "ttft_s": 0.957,
+        "output_tokens": 273,
+        "gen_tok_s": 165.55,
+        "cost_usd": 0.00074985,
+        "cpu_busy": 0.179
+      },
+      {
+        "elapsed_s": 2.636,
+        "ttft_s": 0.859,
+        "output_tokens": 295,
+        "gen_tok_s": 166.01,
+        "cost_usd": 0.00076085,
+        "cpu_busy": 0.521
+      }
+    ],
+    "tg_median": 165.55,
+    "pp_median": null
+  },
+  {
+    "id": "gh4-11",
+    "issue": 4,
+    "submitted": "2026-10-12",
+    "schema": "whatmodel-bench-v3",
+    "script_version": "3.2.0",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": null,
+    "os": "Darwin arm64",
+    "engine": "codex-cli 0.160.0",
+    "model": null,
+    "model_id": "gpt-6-astra",
+    "digest": null,
+    "quant": null,
+    "bytes": null,
+    "settings": "model_reasoning_effort=low",
+    "max_output_tokens": 256,
+    "warmups": 1,
+    "samples": [
+      {
+        "elapsed_s": 14.871,
+        "output_tokens": 144,
+        "reasoning_tokens": 0,
+        "e2e_tok_s": 9.68,
+        "cpu_busy": 0.275
+      },
+      {
+        "elapsed_s": 15.376,
+        "output_tokens": 145,
+        "reasoning_tokens": 0,
+        "e2e_tok_s": 9.43,
+        "cpu_busy": 0.186
+      },
+      {
+        "elapsed_s": 12.981,
+        "output_tokens": 144,
+        "reasoning_tokens": 0,
+        "e2e_tok_s": 11.09,
+        "cpu_busy": 0.141
+      }
+    ],
+    "tg_median": 9.68,
+    "pp_median": null
+  },
+  {
     "id": "gh8-0",
     "issue": 8,
     "submitted": "2026-10-12",

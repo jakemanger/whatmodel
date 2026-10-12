@@ -13,7 +13,7 @@ export const LISTED_FROM = 3;
 export const listedByDefault = (cat: Category, n: number | undefined) => cat !== "llm" || n === undefined || n >= LISTED_FROM;
 
 // CUDA-only commands need an NVIDIA card (or one whose make we don't know).
-const isNvidia = (s: Specs) => s.gpu === "card" && (!s.hw || s.hw.kind === "nvidia");
+const isNvidia = (s: Specs) => (s.gpu === "card" || s.gpu === "unified") && (!s.hw || s.hw.kind === "nvidia");
 
 export type Where = "local" | "local-slow" | "api" | "preview" | "none" | "retired";
 
@@ -62,8 +62,9 @@ export const needGb = (v: Variant, cat: Category = "llm") => (cat === "llm" ? v.
 
 // Memory available to a model, split into "fast" (GPU / unified) and total (with CPU offload).
 export function usable(s: Specs): { fast: number; total: number } {
-  if (s.gpu === "apple") {
-    // macOS lets the GPU wire ~2/3 of RAM up to 36GB, ~3/4 above that.
+  if (s.gpu === "apple" || s.gpu === "unified") {
+    // macOS lets the GPU wire ~2/3 of RAM up to 36GB, ~3/4 above that. Other unified-memory
+    // machines are assumed to leave the GPU the same share.
     const fast = s.ram * (s.ram <= 36 ? 0.67 : 0.75);
     return { fast, total: fast };
   }
@@ -203,9 +204,11 @@ export function parseSort(q: URLSearchParams, rows: Row[]): { sort: Sort; dir: D
   return { sort, dir: d === "asc" || d === "desc" ? d : defaultDir(sort, rows) };
 }
 
-export function parseMax(q: URLSearchParams): number | null {
+// Highest price. Given a machine, the default is what runs on it (0, local only); max=any adds APIs.
+export function parseMax(q: URLSearchParams, specs: Specs | null = null): number | null {
   const v = q.get("max");
-  return v !== null && v !== "" && Number(v) >= 0 ? Number(v) : null;
+  if (v === "any") return null;
+  return v !== null && v !== "" && Number(v) >= 0 ? Number(v) : specs ? 0 : null;
 }
 
 // Accept GB, or whatever number the OS reports so detect commands need no math:
@@ -220,7 +223,7 @@ export function ramGb(v: number) {
 export const vramGb = (v: number) => (v > 1e8 ? Math.ceil(v / 2 ** 30) : v > 2048 ? Math.ceil(v / 1024) : v);
 
 // Params:
-//   ram, vram (GB or raw OS units), gpu=apple|card|none (nvidia, amd, intel also mean card)
+//   ram, vram (GB or raw OS units), gpu=apple|card|unified|none (nvidia, amd, intel also mean card)
 //   mac=<bytes>[\n<chip name>]         from `sysctl -n hw.memsize machdep.cpu.brand_string`
 //   nv=<name>, <MiB> MiB[\n...]         from `nvidia-smi --query-gpu=name,memory.total --format=csv,noheader`
 //   hw=<hardware id or name>            exact chip / card, for bandwidth and measured speeds
@@ -234,10 +237,10 @@ export function parseSpecs(q: URLSearchParams, hardware: Hardware[] = []): Specs
   const vram = nvVram || vramGb(Number(q.get("vram") ?? 0));
   if (!(ram > 0) && !(vram > 0)) return null;
   const g = q.get("gpu");
-  const gpu =
-    g === "apple" || g === "none" ? g
-    : g === "card" || g === "nvidia" || g === "amd" || g === "intel" || g === "gpu" ? "card"
-    : mac > 0 ? "apple" : vram > 0 ? "card" : "none";
   const hw = findHardware(hardware, q.get("hw") ?? (chip.join(" ").trim() || gpus[0]?.[0]?.trim()), mac ? ram : vram);
+  const gpu =
+    g === "apple" || g === "none" || g === "unified" ? g
+    : g === "card" || g === "nvidia" || g === "amd" || g === "intel" || g === "gpu" ? "card"
+    : mac > 0 ? "apple" : hw?.unified ? "unified" : vram > 0 ? "card" : "none"; // a detected GB10 shares RAM, whatever VRAM it reports
   return { ram: Math.max(0, ram), vram: Math.max(0, vram), gpu, hw };
 }
