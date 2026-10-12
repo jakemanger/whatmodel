@@ -747,11 +747,62 @@ def suggest_id(t, catalogue, model_name=None):
                     best = best or m['id']
         if best:
             return best
+    if t['kind'] == 'mlx':
+        for m in catalogue:
+            for v in (m.get('local') or {}).get('variants', []):
+                mlx = re.search(r'mlx_lm[._](?:chat|generate|server)\b.*?--model\s+([\w.-]+/[\w.-]+)', v.get('cmd', ''))
+                if mlx and mlx.group(1).lower() == t['model'].lower():
+                    return m['id']
+    if t['kind'] in ('mlx', 'llama-bench'):
+        # Another build of the same model: drop format and quantisation from the file or repo name.
+        base = Path(t.get('path', '')).stem if t['kind'] == 'llama-bench' else t['model'].split('/')[-1]
+        base = re.sub(r'(?i)([-_.](gguf|mlx|(ud-)?i?q\d\w*|\d+bit|bf16|f16|fp16|f32|mxfp4|dwq))+$', '', base)
+        model_name = base  # the local file or repo name is the best evidence for these
     if model_name:
         guess = re.sub(r'[^a-z0-9]+', '-', model_name.lower()).strip('-')
         if guess in ids:
             return guess
+        # e.g. LM Studio's 'qwen3-0.6b' or a dated API name: same letters and digits as a catalogue id or name
+        key = norm(model_name.split('/')[-1])
+        same = [m['id'] for m in catalogue if key and key in (norm(m.get('id')), norm(m.get('name')))]
+        if len(same) == 1:
+            return same[0]
     return None
+
+
+def search_catalogue(text, catalogue, limit=8):
+    """Catalogue models whose name or id contains the typed words, best matches first."""
+    words = [norm(w) for w in re.split(r'[\s,/]+', text) if norm(w)]
+    scored = []
+    for m in catalogue:
+        key = norm(m.get('name')) + ' ' + norm(m.get('id'))
+        exact = norm(text) in (norm(m.get('id')), norm(m.get('name')))
+        if exact or all(w in key for w in words):
+            scored.append((not exact, len(m.get('name', '')), m))  # an exact name or id first, then shorter names
+    return [m for *_, m in sorted(scored, key=lambda x: x[:2])][:limit]
+
+
+def pick_model(label, catalogue, guess):
+    """Ask which catalogue model a result belongs to; returns its id, or None to leave it out."""
+    by_id = {m.get('id'): m for m in catalogue}
+    current = by_id.get(guess)
+    print(f'\n  {label}')
+    while True:
+        if current:
+            answer = ask(f'    is this {bold(current.get("name", current["id"]))}? Enter for yes, type another name to change it, or - to leave it out')
+            if not answer: return current['id']
+        else:
+            answer = ask("    which model is this? Type its name (or part of it), or press Enter to leave it out")
+            if not answer: return None
+        if answer.strip() == '-': return None
+        found = search_catalogue(answer, catalogue)
+        if not found:
+            print(dim('    nothing on whatmodel.sh matches that; try fewer words, e.g. "qwen3 0.6b"')); current = None; continue
+        if len(found) == 1:
+            current = found[0]; continue
+        for i, m in enumerate(found, 1): print(f'      {i}. {m.get("name", m["id"])}')
+        n = ask('    which one? (number, or Enter to search again)')
+        current = found[int(n) - 1] if n.isdigit() and 1 <= int(n) <= len(found) else None
 
 
 # ---------------------------------------------------------------- selection
@@ -1168,14 +1219,11 @@ def share(jobs, tokens, runs, warmups, seed, hw):
         print('Nothing shared.'); return
     catalogue = load_catalogue()
     ids = {}
-    print(dim('Public model ids come from the whatmodel catalogue. Blank leaves a result out.'))
+    print('\n' + bold('Which models did you test?') + dim(" Results are published under whatmodel.sh's model names, never your file names or aliases."))
     for job in measured:
         guess = suggest_id(job.t, catalogue, job.t.get('measured_model') or job.t.get('model'))
-        while True:
-            answer = ask(f'  id for {job.t["label"]}', guess or '')
-            if not answer or re.fullmatch(r'[a-z0-9][a-z0-9.-]{0,79}', answer): break
-            print('  Use a catalogue id like llama-3-2-3b, not a path or private name.')
-        if answer: ids[id(job.t)] = answer
+        chosen = pick_model(job.t['label'], catalogue, guess)
+        if chosen: ids[id(job.t)] = chosen
     report = public_report(jobs, tokens, runs, warmups, seed, hw, ids)
     if not report['results']:
         print('No results kept. Nothing shared.'); return

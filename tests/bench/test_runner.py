@@ -141,6 +141,24 @@ class RunnerTests(unittest.TestCase):
         pauses=[p for _,_,p in order]
         self.assertTrue(all(1.0<=p<=3.0 for p in pauses) and len(set(pauses))>1)
 
+    def test_results_are_matched_to_catalogue_names_with_confirmation(self):
+        catalogue=[dict(id='qwen3-0-6b',name='Qwen3 0.6B'),dict(id='qwen3-8b',name='Qwen3 8B'),dict(id='qwen3-8b-base',name='Qwen3 8B (base)'),
+                   dict(id='m',name='MLX one',local=dict(variants=[dict(cmd='mlx_lm.chat --model mlx-community/Qwen3-0.6B-4bit')]))]
+        self.assertEqual(bench.suggest_id(dict(kind='openai',model='qwen3-0.6b'),catalogue,'qwen3-0.6b'),'qwen3-0-6b')  # LM Studio's key
+        self.assertEqual(bench.suggest_id(dict(kind='mlx',model='mlx-community/Qwen3-0.6B-4bit'),catalogue,'mlx-community/Qwen3-0.6B-4bit'),'m')
+        other=[dict(id='qwen3-0-6b',name='Qwen3 0.6B')]  # a different MLX build of the same model is listed
+        self.assertEqual(bench.suggest_id(dict(kind='mlx',model='mlx-community/Qwen3-0.6B-4bit'),other,'mlx-community/Qwen3-0.6B-4bit'),'qwen3-0-6b')
+        self.assertEqual([m['id'] for m in bench.search_catalogue('qwen3 8b',catalogue)],['qwen3-8b','qwen3-8b-base'])
+        out=io.StringIO()
+        with contextlib.redirect_stdout(out):
+            with patch.object(bench,'ask',side_effect=['']) as asked:
+                self.assertEqual(bench.pick_model('x',catalogue,'qwen3-0-6b'),'qwen3-0-6b')
+                self.assertIn('Qwen3 0.6B',asked.call_args.args[0])  # the question names the model, not an id
+            with patch.object(bench,'ask',side_effect=['-']): self.assertIsNone(bench.pick_model('x',catalogue,'qwen3-0-6b'))
+            with patch.object(bench,'ask',side_effect=['qwen3 8b','2','']): self.assertEqual(bench.pick_model('x',catalogue,None),'qwen3-8b-base')
+            with patch.object(bench,'ask',side_effect=['']): self.assertIsNone(bench.pick_model('x',catalogue,None))
+        self.assertIn('2. Qwen3 8B (base)',out.getvalue())
+
     def test_installs_run_only_after_a_yes(self):
         missing=[dict(name='llama.cpp',why='',cmd=bench.INSTALL['llama.cpp'],url=None),dict(name='LM Studio',why='',cmd=None,url='https://lmstudio.ai/download')]
         for answer,expected in ((False,[]),(True,[['/bin/sh','-c',bench.INSTALL['llama.cpp']]])):
@@ -231,8 +249,8 @@ class RunnerTests(unittest.TestCase):
                 return os.open(destination,os.O_CREAT|os.O_WRONLY,0o600),str(destination)
             with patch.object(bench.sys,'argv',['bench','--runs','1']), patch.object(bench.sys.stdin,'isatty',return_value=True), \
                  patch.object(bench,'discover',return_value=found([target])), patch.object(bench,'choose',return_value=[target]), \
-                 patch.object(bench,'ask',return_value='public-model'), patch.object(bench,'yes',side_effect=[True,True,False]), \
-                 patch.object(bench,'load_catalogue',return_value=[]), \
+                 patch.object(bench,'ask',side_effect=['public model','']), patch.object(bench,'yes',side_effect=[True,True,False]), \
+                 patch.object(bench,'load_catalogue',return_value=[dict(id='public-model',name='Public Model'),dict(id='other',name='Other')]), \
                  patch.object(bench,'offer_installs',return_value=False), patch.object(bench,'offer_test_models',return_value=False), \
                  patch.object(bench.tempfile,'mkstemp',side_effect=create), patch.object(bench.webbrowser,'open') as browser, \
                  contextlib.redirect_stdout(io.StringIO()):
