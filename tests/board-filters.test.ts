@@ -6,7 +6,7 @@ import { comparisonSets, modelsIn, speedFor } from '../lib/data.ts';
 import { boardData } from '../lib/board-data.ts';
 import { boardFromData } from '../lib/board.ts';
 import { CATEGORY_IDS } from '../lib/categories.ts';
-import { parseSpecs } from '../lib/fit.ts';
+import { parseSpecs, usable } from '../lib/fit.ts';
 import { measuredSpeed } from '../lib/measured.ts';
 import { curlFor, toText, whereLabel } from '../lib/format.ts';
 import { boardView, modelView, pageModels } from '../lib/views.ts';
@@ -36,6 +36,35 @@ test('announced previews appear on default and task boards without implying publ
   for (const query of ['max=0', 'ram=16&gpu=apple&max=0', 'max=10', 'max=0&retired=1']) {
     assert.ok(!view(query).shown.some((r) => r.id === 'gemini-4-argon'), 'A preview with no run route cannot satisfy a local or price filter');
   }
+});
+
+test('a machine without a price lists what runs on it locally; max=any adds API models', async () => {
+  const local = view('ram=16&gpu=apple');
+  assert.equal(local.max, 0);
+  assert.ok(local.shown.length && local.shown.every((r) => r.where.startsWith('local')));
+  const any = view('ram=16&gpu=apple&max=any');
+  assert.equal(any.max, null);
+  assert.ok(any.shown.some((r) => r.where === 'api'));
+  assert.equal(view('ram=16&gpu=apple&max=1').max, 1);
+  assert.equal(view('').max, null);
+  assert.equal(view('max=any').max, null);
+  const text = async (query: string) => (await leaderboard(new Request(`https://whatmodel.sh/api?${query}`), 'llm')).text();
+  const mac = await text('mac=17179869184&n=20');
+  assert.match(mac, /local only/);
+  assert.match(mac, /Include API models: curl "whatmodel\.sh\/\?mac=17179869184&max=any&n=20"/);
+  assert.doesNotMatch(await text('mac=17179869184&max=0'), /Include API models/);
+  assert.doesNotMatch(await text('mac=17179869184&max=any'), /local only|Include API models/);
+});
+
+test('unified memory machines give the GPU a share of RAM, and a detected GB10 is one', () => {
+  const { hardware } = boardData('llm');
+  const spark = parseSpecs(new URLSearchParams({ ram: '128', nv: 'NVIDIA GB10, [N/A]' }), hardware)!;
+  assert.equal(spark.gpu, 'unified');
+  assert.equal(spark.hw?.id, 'dgx-spark');
+  assert.deepEqual(usable(spark), { fast: 96, total: 96 });
+  const board = view('ram=128&gpu=unified');
+  assert.equal(board.specs?.gpu, 'unified');
+  assert.ok(board.shown.length > 0 && board.shown.every((r) => r.where.startsWith('local') && (r.mem_gb ?? 0) <= 96));
 });
 
 test('text models with fewer than 3 results are left off unless ?thin=1, and ranks close up', () => {
