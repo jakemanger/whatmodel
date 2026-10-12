@@ -1440,19 +1440,18 @@ def open_upload(report, path, names):
     You read it and press Submit there: nothing is sent from here."""
     title, head, full, tail = issue_text(report, names)
     link = lambda body: ISSUES + '?' + urllib.parse.urlencode({'title': title, 'body': body})
-    url, paste = link(head + full + tail), None
-    if len(url) > URL_SAFE:  # the table goes in the link, the full report on the clipboard
-        url, paste = link(head + '<!-- Paste the full report here: bench.py copied it to your clipboard. -->' + tail), full
-        if len(url) > URL_SAFE:  # too many results for even the table: everything on the clipboard
-            url, paste = link('<!-- Paste your results here: bench.py copied them to your clipboard. -->'), head + full + tail
+    body = head + full + tail
+    url, paste = link(body), None
+    if len(url) > URL_SAFE:  # all or nothing: a half-filled issue could be submitted without its report
+        url, paste = link('Paste your results here (Cmd+V or Ctrl+V): bench.py copied them to your clipboard.'), body
     copied = paste is not None and copy_to_clipboard(paste)
     print('Opening GitHub with your results filled in.')
     if not webbrowser.open(url): print('Open this link:\n' + url)
     if paste is not None:
         if copied:
-            print(yellow('Part of the report is too long for a link and is on your clipboard: paste it where the issue says (Cmd+V or Ctrl+V).'))
+            print(yellow('Your results are too long for a link, so they are on your clipboard: replace the text in the issue with them (Cmd+V or Ctrl+V).'))
         else:
-            print(yellow(f'Part of the report is too long for a link: paste the contents of {path} where the issue says.'))
+            print(yellow('Your results are too long for a link: copy the text below into the issue.\n') + body)
     if yes('Check it on GitHub and press Submit. Did you submit it', default=True):
         print(green('Thanks! It will appear on whatmodel.sh once it has been checked.'))
     else:

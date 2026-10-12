@@ -9,6 +9,7 @@ import stat
 import tempfile
 import threading
 import unittest
+import urllib.parse
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from unittest.mock import patch
 import unittest.mock
@@ -257,7 +258,7 @@ class RunnerTests(unittest.TestCase):
         self.assertEqual(cmds[0],['/bin/sh','-c','uv tool install mlx-lm'])
         self.assertEqual(cmds[1][:3],['mlx_lm.generate','--model','o/M-4bit'])
 
-    def test_upload_opens_a_readable_issue_and_puts_the_rest_on_the_clipboard(self):
+    def test_upload_prefills_the_whole_issue_or_puts_all_of_it_on_the_clipboard(self):
         sample={'gen_tok_s':25.4,'prompt_tok_s':154.0,'ttft_s':0.6}
         report={'schema':'whatmodel-bench-v3','script_version':'3.2.0','protocol':{'runs':3,'warmups':1,'max_output_tokens':256,'order_seed':7},
                 'hardware':{'os':'Darwin','arch':'arm64','chip':'Apple M2 Pro','ram_gb':16},
@@ -270,9 +271,15 @@ class RunnerTests(unittest.TestCase):
              patch.object(bench,'yes',return_value=True) as confirm, contextlib.redirect_stdout(io.StringIO()):
             bench.open_upload(report,'~/r.json',{'qwen3-8b':'Qwen3 8B'})
         url=browser.call_args.args[0]
-        self.assertLess(len(url),bench.URL_SAFE); self.assertIn('Qwen3+8B',url)  # the table is in the link
-        self.assertIn('"schema"',clip.call_args.args[0])  # the full report is on the clipboard
+        self.assertLess(len(url),bench.URL_SAFE); self.assertNotIn('Qwen3',url)  # too long: nothing partial in the link
+        self.assertEqual(clip.call_args.args[0],head+full+tail)  # the whole issue is on the clipboard
         self.assertTrue(confirm.called)  # and you confirm you submitted it
+        small=dict(report,results=report['results'][:1])
+        with patch.object(bench,'copy_to_clipboard') as clip, patch.object(bench.webbrowser,'open',return_value=True) as browser, \
+             patch.object(bench,'yes',return_value=True), contextlib.redirect_stdout(io.StringIO()):
+            bench.open_upload(small,'~/r.json',{'qwen3-8b':'Qwen3 8B'})
+        self.assertIn('Qwen3+8B',browser.call_args.args[0]); self.assertIn('schema',urllib.parse.unquote_plus(browser.call_args.args[0]))  # fits: all of it in the link
+        clip.assert_not_called()
         self.assertFalse(any('gh' in str(c) for c in clip.call_args_list))
 
     def test_declining_the_plan_runs_nothing(self):

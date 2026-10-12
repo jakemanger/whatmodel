@@ -13,7 +13,7 @@ trap 'exit 143' TERM
 curl -fsSL --proto '=https' --proto-redir '=https' --max-time 60 https://whatmodel.sh/bench.py -o "$bench_tmp/bench.py"
 python3 - "$bench_tmp/bench.py" <<'PY'
 import hashlib,sys
-expected = '4d0c9c3ebad15e27ce0bea88c78acdb8b3425e43f41517509334201f753ee5bd'
+expected = '049ef8ec5db22e074e28d40cb389c3cdb8986f34d6c3658b8ee3dbcda4cc73d3'
 if hashlib.sha256(open(sys.argv[1],'rb').read()).hexdigest() != expected:
     sys.exit('Benchmark download did not match this launcher. Please download a fresh bench.sh and retry.')
 PY
