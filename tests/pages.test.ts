@@ -25,7 +25,7 @@ test('every relative link and image in the generated pages resolves', () => {
 
 test('the README is the LLM leaderboard and stays small enough for GitHub to render', () => {
   const readme = pages.get('README.md')!;
-  assert.match(readme, /^# whatmodel\.sh · find the best AI models you can run$/m);
+  assert.match(readme, /^<h1 align="center">.*alt="whatmodel\.sh: find the best AI models you can run" src="docs\/images\/banner-light\.svg"/m);
   assert.match(readme, /^## About this repo$/m);
   assert.ok(readme.length < 400_000, `README is ${readme.length} bytes`);
 });
