@@ -146,4 +146,15 @@ Other versions: Q8_0 (~0.9 GB) `ollama run hf.co/mradermacher/gpt2-large-GGUF:Q8
 
 Official weights and documentation: [huggingface.co/openai-community](https://huggingface.co/openai-community/gpt2-large)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision         speed  engine and settings
+Apple M2 Pro (16-core GPU),…  Q4_K_M     <a href="https://whatmodel.sh/data/bench.json#gh4-4">137.11 tok/s</a>  llama.cpp · whatmodel bench.py 3.…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 [interactive version](https://whatmodel.sh/model/gpt-2-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)
