@@ -13,6 +13,7 @@ import urllib.parse
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from unittest.mock import patch
 import unittest.mock
+import warnings
 
 ROOT = Path(__file__).resolve().parents[2]
 spec = importlib.util.spec_from_file_location('bench', ROOT / 'bench.py')
@@ -201,6 +202,33 @@ class RunnerTests(unittest.TestCase):
         with self.assertRaises(ValueError): bench.NoRedirect().redirect_request(None,None,None,None,None,None)
         digest=hashlib.sha256((ROOT/'bench.py').read_bytes()).hexdigest()
         self.assertIn("expected = '"+digest+"'",(ROOT/'bench.sh').read_text())
+
+    def test_launcher_offers_python_and_installs_nothing_on_no(self):
+        import pty
+        with tempfile.TemporaryDirectory() as home:
+            tools=Path(home)/'bin'; tools.mkdir()
+            for name in ('uname','curl'): os.symlink(_which(name),tools/name)  # no python3, python or uv
+            with warnings.catch_warnings():  # the child execs at once, so forking beside the fixture's server thread is safe
+                warnings.simplefilter('ignore',DeprecationWarning); pid,fd=pty.fork()
+            if pid==0: os.execve('/bin/sh',['sh',str(ROOT/'bench.sh')],{'HOME':home,'PATH':str(tools)})
+            out,answered=b'',False
+            while True:
+                try: data=os.read(fd,4096)
+                except OSError: break
+                if not data: break
+                out+=data
+                if not answered and out.rstrip().endswith(b'[y/N]'): os.write(fd,b'n\n'); answered=True
+            _,status=os.waitpid(pid,0)
+            self.assertEqual(os.waitstatus_to_exitcode(status),1)
+            self.assertIn(b'curl -LsSf https://astral.sh/uv/install.sh | sh',out)
+            self.assertIn(b'uv python install 3.12',out)
+            self.assertIn(b'Nothing was installed',out)
+            self.assertEqual(sorted(p.name for p in Path(home).iterdir()),['bin'])
+
+    def test_windows_points_to_wsl(self):
+        with patch.object(bench.os,'name','nt'), patch.object(bench.sys,'argv',['bench.py']), contextlib.redirect_stdout(io.StringIO()) as out:
+            self.assertEqual(bench.main(),1)
+        self.assertIn('WSL',out.getvalue())
 
     def test_tests_know_their_model_and_quant_without_asking(self):
         catalogue=[{'id':'qwen-2-5-3b','name':'Qwen2.5 3B','variants':[{'rt':'ollama','ref':'qwen2.5:3b','quant':'Q4_K_M','gb':1.9}]},

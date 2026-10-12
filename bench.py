@@ -22,7 +22,7 @@ import urllib.request
 import webbrowser
 from pathlib import Path
 
-VERSION = '3.2.0'
+VERSION = '3.2.1'
 PROMPT = ('Write a practical guide to starting a vegetable garden. Explain soil preparation, '
           'watering, planting easy vegetables and managing pests. Use short clear sections. '
           'Do not use tools, files, browsing, or external information. Aim for 300 words.')
@@ -1576,6 +1576,8 @@ def main():
     parser.add_argument('--upload', metavar='FILE', help='upload results saved by an earlier run')
     args = parser.parse_args()
     PLAIN = args.plain
+    if os.name == 'nt':
+        print('On Windows, run whatmodel bench inside WSL: run "wsl --install" in PowerShell, restart, then run it in the Ubuntu app.'); return 1
     if args.upload:
         return upload_saved(args.upload)
     # A closed terminal or kill stops runs like Ctrl-C, so the cleanup below (stopping servers) still happens.

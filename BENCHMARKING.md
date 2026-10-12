@@ -10,7 +10,7 @@ See how fast AI models run on your computer, and add your results to whatmodel.s
 curl -fsSL https://whatmodel.sh/bench.sh | sh
 ```
 
-Needs macOS or Linux (WSL works) with Python 3.9+. Want to read the script before it runs?
+Works on macOS and Linux. On Windows, run it in [WSL](https://learn.microsoft.com/windows/wsl/install). No Python? It offers to set it up for you. Want to read the script before it runs?
 
 ```sh
 curl -fsSL https://whatmodel.sh/bench.sh -o bench.sh && less bench.sh && sh bench.sh
@@ -52,7 +52,9 @@ Every test gets a warm-up that isn't counted, then shuffled rounds with a random
 
 ### What it installs or downloads
 
-Only what a ticked test needs, after you start the plan: a runtime's official installer (llama.cpp from llama.app, MLX with `uv tool install mlx-lm`, Ollama's Linux script) and the model download shown in the plan. Desktop apps such as LM Studio open their download page instead. The model list comes from [pages/bench-models.json](pages/bench-models.json), published at `/data/bench-models.json` and generated with the rest of the data.
+The script needs Python 3.9 or newer. If there isn't one (or on a Mac without Apple's command line tools, where `python3` only opens an install dialog), the launcher offers to install [uv](https://docs.astral.sh/uv/) and run `uv python install 3.12`: about 40 MB in your home folder, no admin password. Later runs reuse it. To remove it, run `uv python uninstall 3.12` and delete `~/.local/bin/uv` and `~/.local/bin/uvx`.
+
+After that, only what a ticked test needs, after you start the plan: a runtime's official installer (llama.cpp from llama.app, MLX with `uv tool install mlx-lm`, Ollama's Linux script) and the model download shown in the plan. Desktop apps such as LM Studio open their download page instead. The model list comes from [pages/bench-models.json](pages/bench-models.json), published at `/data/bench-models.json` and generated with the rest of the data.
 
 ### The report
 

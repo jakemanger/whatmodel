@@ -6,7 +6,7 @@ See how fast AI models run on your computer, and add your results to whatmodel.s
 curl -fsSL https://whatmodel.sh/bench.sh | sh
 ```
 
-Needs macOS or Linux (WSL works) with Python 3.9+. Want to read the script before it runs?
+Works on macOS and Linux. On Windows, run it in [WSL](https://learn.microsoft.com/windows/wsl/install). No Python? It offers to set it up for you. Want to read the script before it runs?
 
 ```sh
 curl -fsSL https://whatmodel.sh/bench.sh -o bench.sh && less bench.sh && sh bench.sh

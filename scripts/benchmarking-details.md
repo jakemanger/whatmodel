@@ -12,7 +12,9 @@ Every test gets a warm-up that isn't counted, then shuffled rounds with a random
 
 ### What it installs or downloads
 
-Only what a ticked test needs, after you start the plan: a runtime's official installer (llama.cpp from llama.app, MLX with `uv tool install mlx-lm`, Ollama's Linux script) and the model download shown in the plan. Desktop apps such as LM Studio open their download page instead. The model list comes from [pages/bench-models.json](pages/bench-models.json), published at `/data/bench-models.json` and generated with the rest of the data.
+The script needs Python 3.9 or newer. If there isn't one (or on a Mac without Apple's command line tools, where `python3` only opens an install dialog), the launcher offers to install [uv](https://docs.astral.sh/uv/) and run `uv python install 3.12`: about 40 MB in your home folder, no admin password. Later runs reuse it. To remove it, run `uv python uninstall 3.12` and delete `~/.local/bin/uv` and `~/.local/bin/uvx`.
+
+After that, only what a ticked test needs, after you start the plan: a runtime's official installer (llama.cpp from llama.app, MLX with `uv tool install mlx-lm`, Ollama's Linux script) and the model download shown in the plan. Desktop apps such as LM Studio open their download page instead. The model list comes from [pages/bench-models.json](pages/bench-models.json), published at `/data/bench-models.json` and generated with the rest of the data.
 
 ### The report
 

@@ -69,9 +69,10 @@ can check the ranking against the code here.
 
 ### The bench script
 
-The benchmark runner discovers local models and supported agents, and lets you add compatible APIs
-or a GGUF file. Search and select what to test, confirm the plan, then review the measurements.
-No models or dependencies are installed. Python 3.9+ and curl are required.
+The bench measures how fast models run on your machine. It finds the models and AI tools you have and
+the whatmodel.sh models that fit your memory; you tick what to test, confirm the plan, then review the
+measurements. It installs or downloads nothing without asking, and offers to set up Python if it's
+missing. Works on macOS and Linux; on Windows, run it in WSL.
 
 ```sh
 curl -fsSL https://whatmodel.sh/bench.sh | sh
