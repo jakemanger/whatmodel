@@ -16261,5 +16261,21 @@
     "verdict": "allowed",
     "checked": "2026-10-11",
     "icon": "huggingface.co"
+  },
+  {
+    "id": "speed-local-model-explorer",
+    "name": "Local Model Explorer data (LocalLLaMA/local-model-explorer-data): community llama-bench runs",
+    "kind": "dataset",
+    "license": "CC BY 4.0",
+    "terms_url": "https://huggingface.co/datasets/LocalLLaMA/local-model-explorer-data/blob/3054602af21aa2a797a89f6455c879924a109581/README.md",
+    "license_url": "/licenses/local-model-explorer-data-CC-BY-4.0.txt",
+    "checked": "2026-10-13",
+    "verdict": "allowed",
+    "icon": "huggingface.co",
+    "attribution": "LocalLLaMA, Local Model Explorer Data (huggingface.co/datasets/LocalLLaMA/local-model-explorer-data), CC BY 4.0. Selected llama_bench rows that passed the explorer’s own checks and match a model and GPU on whatmodel.sh; tokens per second rounded to 2 decimal places, model and hardware names mapped. No endorsement.",
+    "quote": "Dataset card at this revision: front matter \"license: cc-by-4.0\", and its License section reads \"CC BY 4.0.\" Rows are numbers parsed by the Space from llama-bench output that visitors chose to share; the Space stores only the numbers and settings.",
+    "match": [
+      "huggingface.co/datasets/LocalLLaMA/local-model-explorer-data/blob/3054602af21aa2a797a89f6455c879924a109581/data"
+    ]
   }
 ]
