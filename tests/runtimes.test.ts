@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { artifactOf, primary, stepsFor } from "../lib/runtimes.ts";
+import { artifactOf, needsLabel, primary, stepsFor } from "../lib/runtimes.ts";
 import { models } from "../lib/data.ts";
 import type { Variant } from "../lib/types.ts";
 
@@ -30,4 +30,16 @@ test("every catalogue download parses to a runtime with a command", () => {
     const steps = stepsFor(x);
     assert.ok(steps.length > 0 && steps.every((s) => s.steps.some((st) => st.cmd || st.href)), `${m.id}: ${x.cmd}`);
   }
+});
+
+test('Strata downloads get their own setup steps and say what GPU memory and RAM they need', () => {
+  const v = { quant: 'UD-IQ4_XS', gb: 93.7, platform: 'gpu' as const, needs: [{ vram_gb: 12, ram_gb: 80 }, { vram_gb: 12, ram_gb: 48, slow: true }],
+    cmd: 'git clone https://github.com/Niko1221/Strata.git && cd Strata && ./setup.sh --yes --family unsloth --model UD-IQ4_XS --no-start && ./run-unsloth-ud-iq4_xs.sh' };
+  assert.deepEqual(artifactOf(v), { kind: 'strata', family: 'unsloth', model: 'UD-IQ4_XS' });
+  const [{ runtime, steps }] = stepsFor(v);
+  assert.equal(runtime, 'strata');
+  assert.equal(steps[0].cmd, './setup.sh --yes --family unsloth --model UD-IQ4_XS --no-start && ./run-unsloth-ud-iq4_xs.sh');
+  assert.equal(steps[2].cmd, 'run-unsloth-ud-iq4_xs.bat');
+  assert.equal(needsLabel(v), '12 GB VRAM + 80 GB RAM, 93.7 GB download, NVIDIA or AMD card only');
+  assert.equal(needsLabel({ quant: 'q4_k_m', gb: 5.2, gb_estimated: true, cmd: 'ollama run x' }), '~5.2 GB');
 });

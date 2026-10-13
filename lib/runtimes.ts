@@ -9,9 +9,10 @@ export type Artifact =
   | { kind: "gguf"; repo: string; quant: string | null }
   | { kind: "mlx"; repo: string }
   | { kind: "ollama"; tag: string }
+  | { kind: "strata"; family: string; model: string }
   | { kind: "other" };
 
-export type RuntimeId = "llamacpp" | "lmstudio" | "ollama" | "mlx" | "other";
+export type RuntimeId = "llamacpp" | "lmstudio" | "ollama" | "mlx" | "strata" | "other";
 export type Step = { label: string; cmd?: string; href?: string }; // a command to copy, a link to open, or just a sentence
 export type Runtime = {
   id: RuntimeId; name: string; url: string;
@@ -46,6 +47,11 @@ export const RUNTIMES: Runtime[] = [
     install: [{ label: "with uv", cmd: "uv tool install mlx-lm" }, { label: "or", cmd: "pip install mlx-lm" }],
     note: "Apple silicon Macs only, text only.",
   },
+  {
+    id: "strata", name: "Strata", url: "https://github.com/Niko1221/Strata",
+    install: [{ label: "Windows / Linux", cmd: "git clone https://github.com/Niko1221/Strata.git && cd Strata" }],
+    note: "Runs Qwen3.8-Flash-Next split across your graphics card, RAM and SSD: an NVIDIA or AMD card with 12 GB or more, Windows or Linux.",
+  },
   { id: "other", name: "other", url: "", install: [] },
 ];
 
@@ -63,6 +69,8 @@ export function artifactOf(v: Variant): Artifact {
   if (hf) return { kind: "gguf", repo: hf[1], quant: hf[2] ?? null };
   const mlx = cmd.match(/mlx_lm[._](?:chat|generate|server)\b.*?--model\s+([\w.-]+\/[\w.-]+)/);
   if (mlx) return { kind: "mlx", repo: mlx[1] };
+  const strata = /Niko1221\/Strata\b.*--family\s+(\w+)\s+--model\s+([\w.-]+)/.exec(cmd);
+  if (strata) return { kind: "strata", family: strata[1], model: strata[2] };
   return { kind: "other" };
 }
 
@@ -93,11 +101,22 @@ export function stepsFor(v: Variant): { runtime: RuntimeId; steps: Step[] }[] {
     { runtime: "lmstudio", steps: lms(a.repo) },
   ];
   if (a.kind === "ollama") return [{ runtime: "ollama", steps: [{ label: "chat in the terminal", cmd: v.cmd }] }];
+  if (a.kind === "strata") {
+    // setup writes run-<family tag><size>; the original model's family has no tag.
+    const run = `run-${a.family === "qwen" ? "" : `${a.family}-`}${a.model.toLowerCase()}`;
+    const setup = `--yes --family ${a.family} --model ${a.model} --no-start`;
+    return [{ runtime: "strata", steps: [
+      { label: "Linux: download and set up this size, then start it", cmd: `./setup.sh ${setup} && ./${run}.sh` },
+      { label: "Windows (cmd): set up this size", cmd: `START-HERE.bat ${setup}` },
+      { label: "then start it", cmd: `${run}.bat` },
+      { label: "and open http://127.0.0.1:8080 (an OpenAI-compatible API at /v1)" },
+    ] }];
+  }
   return [{ runtime: "other", steps: [{ label: "as published", cmd: v.cmd }] }];
 }
 
 // The runtime a page shows first for a download: llama.cpp whenever it can load the file.
-export const ORDER: RuntimeId[] = ["llamacpp", "lmstudio", "ollama", "mlx", "other"];
+export const ORDER: RuntimeId[] = ["llamacpp", "lmstudio", "ollama", "mlx", "strata", "other"];
 export function primary(v: Variant) {
   const all = stepsFor(v);
   const first = ORDER.map((id) => all.find((x) => x.runtime === id)).find(Boolean)!;
@@ -122,3 +141,12 @@ export function runGuide(variants: Variant[]): GuideSection[] {
 
 // A version's name as shown: quantisation codes in capitals, MLX bit widths as they are.
 export const versionLabel = (v: Variant) => { const q = v.quant.replace(/^mlx-/, ""); return /^(i?q\d|bf16|f16|f32)/i.test(q) ? q.toUpperCase() : q; };
+
+// What a download needs: its size, or for a split download (Strata) the GPU memory and RAM it runs
+// well with, and the machines it runs on.
+const ONLY = { mac: "Mac", nvidia: "NVIDIA", gpu: "NVIDIA or AMD card" } as const;
+export const needsLabel = (v: Variant) => {
+  const n = v.needs?.find((x) => !x.slow);
+  const size = n ? `${n.vram_gb} GB VRAM + ${n.ram_gb} GB RAM, ${v.gb} GB download` : `${v.gb_estimated ? "~" : ""}${v.gb} GB`;
+  return `${size}${v.platform && v.platform !== "any" ? `, ${ONLY[v.platform]} only` : ""}`;
+};

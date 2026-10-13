@@ -5,7 +5,11 @@ export type Variant = {
   gb: number; // LLMs: download size. Other categories: memory needed to run it
   gb_estimated?: boolean; // no source gave it: params × bytes per weight (see data.ts)
   cmd: string;
-  platform?: "any" | "mac" | "nvidia";
+  platform?: "any" | "mac" | "nvidia" | "gpu"; // gpu: an NVIDIA or AMD graphics card, Windows or Linux
+  // Runtimes that split a model across GPU memory, system RAM and SSD (Strata) state what they need
+  // as GPU memory and RAM, not one size: any one of these runs it, those marked slow only slowly.
+  needs?: { vram_gb: number; ram_gb: number; slow?: boolean }[];
+  offload?: "experts"; // keeps the MoE experts in system RAM by design
   source?: string;
   split?: boolean; // a GGUF published in several files (Ollama can't load these)
 };

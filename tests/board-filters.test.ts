@@ -258,3 +258,29 @@ test('a known KV cache sizes the memory a download needs; other models keep the 
   assert.equal(where(m), 'local');
   assert.equal(where({ ...m, kv: llama2 }), 'local-slow');
 });
+
+test('a split download (Strata) runs when the machine has one of its GPU memory and RAM pairs, on a PC graphics card only', () => {
+  const strata = { quant: 'Q2_0', gb: 66.4, platform: 'gpu' as const, offload: 'experts' as const,
+    cmd: 'git clone https://github.com/Niko1221/Strata.git && cd Strata && ./setup.sh --yes --family qwen --model Q2_0 --no-start && ./run-q2_0.sh',
+    needs: [{ vram_gb: 12, ram_gb: 48 }, { vram_gb: 24, ram_gb: 32 }, { vram_gb: 8, ram_gb: 48, slow: true }] };
+  const whole = { quant: 'q4_k_m', gb: 108.5, cmd: 'ollama run big:q4_K_M' };
+  const m = { id: 'x', name: 'X', provider: 'p', open_weights: true, params_b: 180, active_b: 6, local: { variants: [whole, strata] } };
+  const scores = new Map([['x', { id: 'x', g: 50, pm: 1, n: 5, lab: 0 }]]);
+  const row = (q: string) => rank([m as never], scores as never, { specs: parseSpecs(new URLSearchParams(q))! })[0];
+  assert.equal(row('ram=64&gpu=card&vram=12').where, 'local');
+  assert.equal(row('ram=64&gpu=card&vram=12').cmd, strata.cmd);
+  assert.equal(row('ram=64&gpu=card&vram=12').mem_gb, 48);
+  assert.equal(row('ram=32&gpu=card&vram=24').where, 'local');
+  assert.equal(row('ram=64&gpu=card&vram=8').where, 'local-slow');
+  assert.equal(row('ram=32&gpu=card&vram=12').cmd, null);
+  assert.notEqual(row('ram=128&gpu=apple').cmd, strata.cmd);
+});
+
+test('Qwen3.8-Flash-Next runs at full speed through Strata on a 12 GB card with 64 GB of RAM', () => {
+  const data = boardData('llm');
+  const flash = (q: string) => (boardFromData(data, new URLSearchParams(`${q}&n=2000`)) as { rows: { id: string; where: string; cmd: string | null }[] }).rows.find((r) => r.id === 'qwen3-8-flash-next')!;
+  const pc = flash('ram=64&gpu=card&vram=12');
+  assert.equal(pc.where, 'local');
+  assert.match(pc.cmd!, /Niko1221\/Strata.*--model IQ3_S/);
+  assert.doesNotMatch(flash('ram=128&gpu=apple').cmd ?? '', /Strata/);
+});

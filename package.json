@@ -26,6 +26,7 @@
     "calibrate": "node scripts/calibrate.ts",
     "icons": "node scripts/icons.ts",
     "kv": "node scripts/kv.ts",
+    "llmfit": "node scripts/llmfit.ts",
     "measure-api": "node --env-file=.env.local scripts/measure-api.ts"
   },
   "devDependencies": {

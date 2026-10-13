@@ -11,7 +11,7 @@ import { sourceName, sourceOf } from "./sources.ts";
 import type { Category, Model, Variant } from "./types.ts";
 import { benchName, boardView, methodView, modelView, pageModels, resultLabel, type BoardView, type ModelView } from "./views.ts";
 import { strengths, type Strengths, type TestRow } from "./strengths.ts";
-import { primary, runGuide, versionLabel } from "./runtimes.ts";
+import { needsLabel, primary, runGuide, versionLabel } from "./runtimes.ts";
 import { benchCatalogue } from "./bench-catalogue.ts";
 
 const SITE = "https://whatmodel.sh";
@@ -215,7 +215,6 @@ const fence = (lines: string[]) => ["```sh", ...lines, "```"].join("\n");
 const indent = (text: string) => text.split("\n").join("\n   ");
 const capital = (s: string) => s[0].toUpperCase() + s.slice(1);
 const repoLabel = (url?: string) => { if (!url) return ""; const u = new URL(url); const org = u.pathname.split("/").filter(Boolean)[0]; return `[${u.hostname.replace(/^www\./, "")}${org && u.hostname !== "ollama.com" ? `/${org}` : ""}](${url})`; };
-const needsLabel = (x: Variant) => `${x.gb_estimated ? "~" : ""}${x.gb} GB${x.platform && x.platform !== "any" ? `, ${x.platform === "mac" ? "Mac" : "NVIDIA"} only` : ""}`;
 function runMarkdown(m: Model, cat: Category): string[] {
   const out = [`## How to run it`];
   if (m.api) out.push(`### Through an API`, ...howToRun(m, cat));
@@ -359,6 +358,7 @@ export function methodMarkdown(): string {
   ].map((l) => `- ${l}`).join("\n"));
   out.push(`## Running models locally`);
   out.push(`Memory needed is the download plus room to run it with an 8k-token conversation. For ${kvModels} text models we know the KV cache size from the model's GGUF header, read by [Local Model Explorer](https://huggingface.co/spaces/codelion/local-model-explorer) (MIT), so that room is the KV cache as llama.cpp sizes it, sliding-window layers included, plus llama.cpp's scratch buffers. For the rest it is a flat allowance of 5% of the download plus 1.5 GB. It is an estimate, not a measured peak: longer conversations need more, and a listed context window is the provider's ceiling, not a promise that the full window fits on your machine.`);
+  out.push(`Some downloads split a model across the graphics card, system RAM and SSD, such as [Strata](https://github.com/Niko1221/Strata) for Qwen3.8-Flash-Next. They list the GPU memory and RAM their maker says they run with instead of one size, and only run on an NVIDIA or AMD graphics card under Windows or Linux.`);
   out.push(`Scores describe the published model evaluation. A quantized download may perform differently; we currently apply no numeric quantization penalty. Unknown prices and speeds are left blank or marked unknown. Unknown prices never pass a finite budget filter. API prices use base token rates blended three input tokens to one output token; check the provider for tiers and surcharges.`);
   out.push(`Model pages include sourced reference speed measurements with their hardware, engine, precision and workload. They are not automatically assigned to another download or machine. The main speed column stays blank when no matching measurement is verified; bandwidth predictions remain disabled.`);
   out.push(`API speeds are our own measurements: we stream a fixed prompt to each model three times, pinned to the provider whose price we list, and publish the raw runs in [api-speed.json](${rel(from, "data/api-speed.json")}). You can add local speeds for your own machine with the [bench script](${rel(from, "bench.sh")}); submissions are checked and reviewed before they appear.`);

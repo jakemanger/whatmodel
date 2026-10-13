@@ -84,7 +84,15 @@ export function usable(s: Specs): { fast: number; total: number } {
 }
 
 const runsOn = (v: Variant, s: Specs | null) =>
-  !s || !v.platform || v.platform === "any" || (v.platform === "mac" ? s.gpu === "apple" : isNvidia(s));
+  !s || !v.platform || v.platform === "any" || (v.platform === "mac" ? s.gpu === "apple"
+    : v.platform === "gpu" ? s.gpu === "card" && (!s.hw || s.hw.kind === "nvidia" || s.hw.kind === "amd") : isNvidia(s));
+// A split download runs when the machine has one of its stated GPU memory and RAM pairs: the first
+// that runs it at full speed, else one that runs it slowly. Without a machine, the first (the maker's
+// main requirement).
+const pairFor = (v: Variant, s: Specs | null, slowOk = true) => {
+  const ok = (n: NonNullable<Variant["needs"]>[number]) => !!s && s.vram >= n.vram_gb && s.ram >= n.ram_gb;
+  return v.needs!.find((n) => !n.slow && ok(n)) ?? (slowOk ? v.needs!.find(ok) : undefined);
+};
 
 type Opts = {
   specs: Specs | null;
@@ -106,15 +114,16 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
     const cat = catOf(m);
     const variants = (m.local?.variants ?? []).filter((v) => runsOn(v, specs)).sort((x, y) => y.gb - x.gb);
     const smallest = variants.at(-1);
-    const need = (v: Variant) => needGb(v, cat, m.kv);
-    const best = (limit: number) => variants.find((v) => need(v) <= limit);
+    // A split download's memory is the RAM of the pair this machine runs it with.
+    const need = (v: Variant) => (v.needs ? (pairFor(v, specs) ?? v.needs[0]).ram_gb : needGb(v, cat, m.kv));
+    const fits = (v: Variant, limit: number, slowOk: boolean) => (v.needs ? !!pairFor(v, specs, slowOk) : need(v) <= limit);
     const price = priceOf(m.api);
     const api = m.api && max !== 0 && (max === null || (price !== null && price <= max)) ? m.api : null;
 
     // Best-quality variant that fits in fast memory. Otherwise part of it has to run from system
     // RAM, so for LLMs take the smallest variant that's still 4-bit or better: it offloads the least.
-    const inFast = mem ? best(mem.fast) : undefined;
-    const fitsTotal = mem ? variants.filter((v) => need(v) <= mem.total) : [];
+    const inFast = mem ? variants.find((v) => fits(v, mem.fast, false)) : undefined;
+    const fitsTotal = mem ? variants.filter((v) => fits(v, mem.total, true)) : [];
     const b4 = (v: Variant) => { const b = bitsOf(v); return typeof b !== "number" || b >= 4; };
     const offload = cat === "llm" ? (fitsTotal.filter(b4).at(-1) ?? fitsTotal[0]) : fitsTotal[0];
     const pick = inFast ?? offload ?? null;

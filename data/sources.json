@@ -16294,5 +16294,37 @@
       "huggingface.co/spaces/codelion/local-model-explorer/blob/405c793036543e306be10de31b8187d067cdc149/data/geometry_snapshot.json.gz"
     ],
     "exact": true
+  },
+  {
+    "id": "speed-llmfit-community",
+    "name": "llmfit community benchmarks (AlexsJones/llmfit, llmfit-core/data/community)",
+    "kind": "dataset",
+    "license": "MIT",
+    "terms_url": "https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/LICENSE",
+    "license_url": "/licenses/llmfit-community-MIT.txt",
+    "checked": "2026-10-13",
+    "verdict": "allowed",
+    "icon": "github.com",
+    "attribution": "llmfit community benchmarks, Copyright (c) 2026 Alex Jones and contributors, MIT. Selected Ollama runs (generation tokens ÷ Ollama eval_duration) whose tag is a download listed on whatmodel.sh; llama.cpp, MLX and vLLM runs, timed by wall clock, are not used. Hardware names mapped, values rounded. No endorsement.",
+    "quote": "LICENSE: MIT, Copyright (c) 2026 Alex Jones. CONTRIBUTING.md: contributions are licensed under the project licence. Submissions are made by users with `llmfit bench --share`, which opens a pull request adding the JSON files.",
+    "match": [
+      "github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community"
+    ]
+  },
+  {
+    "id": "speed-strata",
+    "name": "Strata (Niko1221/Strata): Qwen3.8-Flash-Next sizes, requirements and benchmark results",
+    "kind": "dataset",
+    "license": "MIT",
+    "terms_url": "https://github.com/Niko1221/Strata/blob/a0116b2782a5b82622358c04a06496485d12b2d6/LICENSE",
+    "license_url": "/licenses/strata-MIT.txt",
+    "checked": "2026-10-13",
+    "verdict": "allowed",
+    "icon": "github.com",
+    "attribution": "Strata by Niko1221, MIT. Download sizes and RAM needs per size from setup.py, GPU and RAM requirements from the README and docs, and Qwen3.8-Flash-Next speeds from bench/results (the author’s 0.1.26 matrix on an RTX 5070 and a community 0.1.41 run on an RTX 3060). The pruned Coder model’s rows are excluded. No endorsement.",
+    "quote": "LICENSE: MIT. The benchmark results are files in the same repository; the only carve-outs (docs/HOW_IT_WORKS.md) are third_party/ggml, a font and the experimental speed-projection vector.",
+    "match": [
+      "github.com/Niko1221/Strata/blob/a0116b2782a5b82622358c04a06496485d12b2d6"
+    ]
   }
 ]

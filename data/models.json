@@ -1101,6 +1101,109 @@
           "cmd": "llama-server -hf unsloth/Qwen3.8-Flash-Next-GGUF:UD-Q2_K_XL",
           "source": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/tree/main",
           "gb_estimated": true
+        },
+        {
+          "quant": "IQ3_S",
+          "gb": 83.6,
+          "cmd": "git clone https://github.com/Niko1221/Strata.git && cd Strata && ./setup.sh --yes --family qwen --model IQ3_S --no-start && ./run-iq3_s.sh",
+          "platform": "gpu",
+          "source": "https://github.com/Niko1221/Strata/blob/a0116b2782a5b82622358c04a06496485d12b2d6/setup.py#L210",
+          "needs": [
+            {
+              "vram_gb": 12,
+              "ram_gb": 62
+            },
+            {
+              "vram_gb": 8,
+              "ram_gb": 62,
+              "slow": true
+            }
+          ],
+          "offload": "experts"
+        },
+        {
+          "quant": "IQ3_XXS",
+          "gb": 75.8,
+          "cmd": "git clone https://github.com/Niko1221/Strata.git && cd Strata && ./setup.sh --yes --family qwen --model IQ3_XXS --no-start && ./run-iq3_xxs.sh",
+          "platform": "gpu",
+          "source": "https://github.com/Niko1221/Strata/blob/a0116b2782a5b82622358c04a06496485d12b2d6/setup.py#L207",
+          "needs": [
+            {
+              "vram_gb": 12,
+              "ram_gb": 60
+            },
+            {
+              "vram_gb": 8,
+              "ram_gb": 60,
+              "slow": true
+            }
+          ],
+          "offload": "experts"
+        },
+        {
+          "quant": "IQ2_XS",
+          "gb": 68,
+          "cmd": "git clone https://github.com/Niko1221/Strata.git && cd Strata && ./setup.sh --yes --family qwen --model IQ2_XS --no-start && ./run-iq2_xs.sh",
+          "platform": "gpu",
+          "source": "https://github.com/Niko1221/Strata/blob/a0116b2782a5b82622358c04a06496485d12b2d6/setup.py#L205",
+          "needs": [
+            {
+              "vram_gb": 12,
+              "ram_gb": 48
+            },
+            {
+              "vram_gb": 24,
+              "ram_gb": 32
+            },
+            {
+              "vram_gb": 8,
+              "ram_gb": 48,
+              "slow": true
+            }
+          ],
+          "offload": "experts"
+        },
+        {
+          "quant": "Q2_0",
+          "gb": 66.4,
+          "cmd": "git clone https://github.com/Niko1221/Strata.git && cd Strata && ./setup.sh --yes --family qwen --model Q2_0 --no-start && ./run-q2_0.sh",
+          "platform": "gpu",
+          "source": "https://github.com/Niko1221/Strata/blob/a0116b2782a5b82622358c04a06496485d12b2d6/setup.py#L204",
+          "needs": [
+            {
+              "vram_gb": 12,
+              "ram_gb": 48
+            },
+            {
+              "vram_gb": 24,
+              "ram_gb": 32
+            },
+            {
+              "vram_gb": 8,
+              "ram_gb": 48,
+              "slow": true
+            }
+          ],
+          "offload": "experts"
+        },
+        {
+          "quant": "UD-IQ4_XS",
+          "gb": 93.7,
+          "cmd": "git clone https://github.com/Niko1221/Strata.git && cd Strata && ./setup.sh --yes --family unsloth --model UD-IQ4_XS --no-start && ./run-unsloth-ud-iq4_xs.sh",
+          "platform": "gpu",
+          "source": "https://github.com/Niko1221/Strata/blob/a0116b2782a5b82622358c04a06496485d12b2d6/setup.py#L228",
+          "needs": [
+            {
+              "vram_gb": 12,
+              "ram_gb": 80
+            },
+            {
+              "vram_gb": 12,
+              "ram_gb": 48,
+              "slow": true
+            }
+          ],
+          "offload": "experts"
         }
       ]
     },
