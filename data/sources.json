@@ -16277,5 +16277,22 @@
     "match": [
       "huggingface.co/datasets/LocalLLaMA/local-model-explorer-data/blob/3054602af21aa2a797a89f6455c879924a109581/data"
     ]
+  },
+  {
+    "id": "geometry-local-model-explorer",
+    "name": "Local Model Explorer (codelion/local-model-explorer): KV cache geometry read from GGUF headers",
+    "kind": "dataset",
+    "license": "MIT",
+    "terms_url": "https://huggingface.co/spaces/codelion/local-model-explorer/blob/405c793036543e306be10de31b8187d067cdc149/README.md",
+    "license_url": "/licenses/local-model-explorer-MIT.txt",
+    "checked": "2026-10-13",
+    "verdict": "allowed",
+    "icon": "huggingface.co",
+    "attribution": "Local Model Explorer by codelion (huggingface.co/spaces/codelion/local-model-explorer), MIT. From data/geometry_snapshot.json.gz: per-layer KV cache bytes per token summed over full-attention layers and per sliding window, and vocabulary size, for models matched by repository; geometries the Space estimated from parameter counts are not used. No endorsement.",
+    "quote": "The Space card at this revision declares \"license: mit\". The snapshot holds values the Space read from each model’s GGUF header (layer count, attention layout, per-tensor sizes).",
+    "match": [
+      "huggingface.co/spaces/codelion/local-model-explorer/blob/405c793036543e306be10de31b8187d067cdc149/data/geometry_snapshot.json.gz"
+    ],
+    "exact": true
   }
 ]

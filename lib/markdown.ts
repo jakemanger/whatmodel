@@ -324,7 +324,7 @@ export function modelMarkdown(v: ModelView): string {
 
 export function methodMarkdown(): string {
   const from = files.method;
-  const { categories, examples, frontiermath, results, sources } = methodView();
+  const { categories, examples, frontiermath, results, sources, kvModels } = methodView();
   const llm = categories.find((c) => c.cat === "llm")!;
   const pct = (x: number) => `${x >= 0.095 ? Math.round(x * 100) : (x * 100).toFixed(1)}%`;
   const name = (id: string) => categories.flatMap((c) => c.rows).find((r) => r.id === id)?.benchmark?.name ?? id;
@@ -358,7 +358,7 @@ export function methodMarkdown(): string {
     "How we chose (7 October 2026): we hid whole tests and checked whether each method put models in the same order as the hidden test. This method got about 85% of text-model pairs right; an average win rate got about 77%, and a Bayesian model with extra hidden skills about 82%. On 8 October we pooled run levels: scoring 181 text models from their makers' own numbers alone, pooled levels landed closer to their full-data scores (typical error 2.3 points against 2.7), at a small cost in predicting results within the same run.",
   ].map((l) => `- ${l}`).join("\n"));
   out.push(`## Running models locally`);
-  out.push(`RAM is a rough estimate from parameter count, precision and runtime headroom, not a measured peak. Actual use depends on the engine, batch size, context and KV cache. A listed context window is the provider ceiling; the RAM estimate does not promise that the full window fits on your machine.`);
+  out.push(`Memory needed is the download plus room to run it with an 8k-token conversation. For ${kvModels} text models we know the KV cache size from the model's GGUF header, read by [Local Model Explorer](https://huggingface.co/spaces/codelion/local-model-explorer) (MIT), so that room is the KV cache as llama.cpp sizes it, sliding-window layers included, plus llama.cpp's scratch buffers. For the rest it is a flat allowance of 5% of the download plus 1.5 GB. It is an estimate, not a measured peak: longer conversations need more, and a listed context window is the provider's ceiling, not a promise that the full window fits on your machine.`);
   out.push(`Scores describe the published model evaluation. A quantized download may perform differently; we currently apply no numeric quantization penalty. Unknown prices and speeds are left blank or marked unknown. Unknown prices never pass a finite budget filter. API prices use base token rates blended three input tokens to one output token; check the provider for tiers and surcharges.`);
   out.push(`Model pages include sourced reference speed measurements with their hardware, engine, precision and workload. They are not automatically assigned to another download or machine. The main speed column stays blank when no matching measurement is verified; bandwidth predictions remain disabled.`);
   out.push(`API speeds are our own measurements: we stream a fixed prompt to each model three times, pinned to the provider whose price we list, and publish the raw runs in [api-speed.json](${rel(from, "data/api-speed.json")}). You can add local speeds for your own machine with the [bench script](${rel(from, "bench.sh")}); submissions are checked and reviewed before they appear.`);

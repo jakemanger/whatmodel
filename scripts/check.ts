@@ -19,6 +19,7 @@ const meta = load<{ updated: string }>("meta.json");
 const speeds = load<Speed[]>("speeds.json");
 const quant = load<{ findings: { source: string }[]; memory?: { source: string }[] }>("quant.json");
 const calibration = load<{ measurements: { source: string }[] }>("speed-calibration.json");
+const kv = load<{ source: string; models: Record<string, { full: number; swa?: [number, number][] }> }>("kv.json");
 const UNITS = ["image", "video-second", "1M-chars", "audio-minute"];
 
 const errors: string[] = [];
@@ -48,6 +49,10 @@ for (const m of models) {
   if (m.api && catOf(m) !== "llm" && m.api.price !== undefined && !UNITS.includes(m.api.unit ?? "")) errors.push(`${m.id}: api price needs a unit (${UNITS.join("|")})`);
   if (m.api && catOf(m) !== "llm" && m.api.price === undefined) noPrice.push(m.id);
   if (m.category && !CATEGORY_IDS.includes(m.category)) errors.push(`${m.id}: unknown category ${m.category}`);
+}
+for (const [id, g] of Object.entries(kv.models)) {
+  if (!ids.has(id)) errors.push(`kv.json: unknown model ${id}`);
+  if (!(g.full >= 0) || !(g.swa ?? []).every(([b, w]) => b > 0 && w > 0)) errors.push(`kv.json ${id}: needs non-negative bytes per token and positive windows`);
 }
 for (const x of speeds) {
   if (!ids.has(x.model)) errors.push(`speed for unknown model ${x.model}`);
@@ -132,6 +137,7 @@ const cited: [string, string][] = [
   ...quant.findings.map((x): [string, string] => [x.source, "quantization finding"]),
   ...(quant.memory ?? []).map((x): [string, string] => [x.source, "memory finding"]),
   ...calibration.measurements.map((x): [string, string] => [x.source, "speed calibration"]),
+  [kv.source, "KV cache sizes"],
   ...models.flatMap((m) => [
     ...[m.api?.price_source, m.api?.tps_source, m.api?.speed_source, m.context_source].filter(Boolean).map((u): [string, string] => [u!, `metadata ${m.id}`]),
     ...(m.local?.variants ?? []).filter((v) => !v.gb_estimated).map((v): [string, string] => [v.source ?? "", `measured memory ${m.id}/${v.quant}`]),

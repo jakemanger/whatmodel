@@ -42,30 +42,30 @@ Source links pin each row's parquet file at the revision above (`#row-N` is the 
 Space compacts `data/incoming/` into monthly files, so later revisions move these rows; re-import from
 the new files rather than editing the links.
 
-## The Space's snapshots: memory geometry (not used yet)
+## The Space's snapshots: KV cache sizes (used)
 
 The Space's app, [`codelion/local-model-explorer`](https://huggingface.co/spaces/codelion/local-model-explorer)
-(MIT), bundles three snapshots read from Hugging Face: GGUF repos with their base model
-(`catalogue`), every quant's file size (`files`, 1,979 repos) and each model's geometry from its GGUF
-header (`geometry`, 1,126 models: layers, KV cache bytes per token per layer with sliding windows, MoE
-expert sizes).
+(MIT, revision `405c793036543e306be10de31b8187d067cdc149`), bundles three snapshots read from Hugging Face:
+GGUF repos with their base model (`catalogue`), every quant's file size (`files`, 1,979 repos) and each
+model's geometry from its GGUF header (`geometry`, 1,126 models: layers, KV cache bytes per token per
+layer with sliding windows, MoE expert sizes).
 
 - **File sizes:** nothing to gain. Our download sizes already come from the Hugging Face file listings
   at the pinned commits; they carry `gb_estimated` because those listings aren't a registered
   measurement source.
-- **KV cache:** this is new. `lib/fit.ts` allows a flat `5% of the download + 1.5 GB` for the KV cache
-  and runtime. 230 of our 846 open models with a download match a geometry entry (215 by `model_repo`,
-  15 by GGUF repo). For the 227 of them with a 4-bit download, real f16 KV cache plus about 0.5 GB of
-  compute buffers compares with that allowance like this:
+- **KV cache:** used. `npm run kv` (`scripts/kv.ts`) reads the geometry snapshot and writes
+  `data/kv.json`: per model, f16 KV bytes per token summed over full-attention layers and per sliding
+  window, and the vocabulary size. 229 of our open models with a download match an entry (by
+  `model_repo`, or a GGUF repo in a llama.cpp command); 212 are kept. The other 17 (DeepSeek V4 Pro and
+  Flash, Kimi K2.6 and K3, GLM 5.2 and 5.3, Qwen3.8 Flash Next and others) only have a geometry the Space
+  estimated from the parameter count, so they keep the flat allowance.
+- **MoE experts:** `expert_bytes` would allow an "experts in system RAM" placement (`--n-cpu-moe`). Not
+  used.
 
-  | Context | Median difference | Allowance short by over 2 GB |
-  |---|---|---|
-  | 8k | −0.8 GB | 12 models (e.g. Command R: 10.7 GB of KV, allowed 2.6) |
-  | 32k | +1.3 GB | 99 models |
-
-  Very large MoE models go the other way: DeepSeek V4 Pro is allowed 49.5 GB for about 1 GB of KV
-  (latent attention), so it is kept off machines it fits on.
-- **MoE experts:** `expert_bytes` would allow an "experts in system RAM" placement (`--n-cpu-moe`).
-
-Using the geometry means storing KV bytes per token per model (with its source) and changing how much
-memory a download needs, which moves which models fit. That is a decision for the maintainer.
+`lib/fit.ts` now sizes the memory a download needs as the download, plus the KV cache for an 8k-token
+conversation as llama.cpp sizes it (sliding-window layers hold llama-server's 4 slots' windows plus a
+512-token batch), plus llama.cpp's scratch buffers (logits for a 512-token batch, 0.3 GB, 4 kB per
+token), following the Space's own `fit.py`. Models without a geometry keep `5% of the download + 1.5 GB`.
+Against that allowance, real KV cache plus about 0.5 GB of buffers for the 4-bit downloads of the matched
+models differs by a median of −0.8 GB at 8k (more than 2 GB short for 12 models, e.g. Command R: 10.7 GB
+of KV, allowed 2.6) and +1.3 GB at 32k (more than 2 GB short for 99).

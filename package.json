@@ -25,6 +25,7 @@
     "score-coverage": "node scripts/score-coverage.ts",
     "calibrate": "node scripts/calibrate.ts",
     "icons": "node scripts/icons.ts",
+    "kv": "node scripts/kv.ts",
     "measure-api": "node --env-file=.env.local scripts/measure-api.ts"
   },
   "devDependencies": {

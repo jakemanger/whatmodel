@@ -6,6 +6,7 @@ import quantJson from "../data/quant.json" with { type: "json" };
 import hardwareJson from "../data/hardware.json" with { type: "json" };
 import speedsJson from "../data/speeds.json" with { type: "json" };
 import contributorsJson from "../data/contributors.json" with { type: "json" };
+import kvJson from "../data/kv.json" with { type: "json" };
 import { CATEGORY_IDS, catOf } from "./categories.ts";
 import type { Contributor } from "./contributors.ts";
 import { measuredSpeed } from "./measured.ts";
@@ -13,7 +14,7 @@ import { bitsLabel, bitsOf, type QuantFinding, type QuantRow } from "./quant.ts"
 import { fit, toCells, type Fit } from "./score.ts";
 import { connectedCells } from "./comparisons.ts";
 import { sourceIcon, sourceId, sourceName, sourceOf } from "./sources.ts";
-import type { Benchmark, Category, Hardware, Model, Result, Specs, Speed, Variant } from "./types.ts";
+import type { Benchmark, Category, Hardware, Kv, Model, Result, Specs, Speed, Variant } from "./types.ts";
 
 // Bytes per weight by precision name, for variants whose sources give no memory figure.
 const BYTES: [RegExp, number][] = [[/fp32|f32/, 4], [/fp16|bf16|f16/, 2], [/8.?bit|q8|int8|fp8/, 1], [/4.?bit|q4|int4|nf4|fp4/, 0.5], [/2.?bit|q2/, 0.25], [/1.?bit|iq1/, 0.125]];
@@ -27,7 +28,10 @@ const withMemory = (m: Model): Model => {
   return { ...m, local: { variants: variants.filter((v) => v.gb > 0) } };
 };
 
-export const models = (modelsJson as Model[]).map(withMemory);
+// KV cache sizes from GGUF headers (data/kv.json, npm run kv), for the memory a download needs.
+export const kvSource = kvJson.source;
+const kv = kvJson.models as unknown as Record<string, Kv>;
+export const models = (modelsJson as Model[]).map(withMemory).map((m) => (kv[m.id] ? { ...m, kv: kv[m.id] } : m));
 export const results = resultsJson as Result[];
 export const benchmarks = benchmarksJson as Benchmark[];
 export const benchmarkById = new Map(benchmarks.map((b) => [b.id, b]));

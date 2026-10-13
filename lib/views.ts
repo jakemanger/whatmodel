@@ -185,5 +185,6 @@ export function methodView() {
   return {
     categories, examples, frontiermath: { top20: fm, all: allFm },
     results: results.length, sources: SOURCES.filter((x) => x.verdict === "allowed"),
+    kvModels: models.filter((m) => m.kv).length,
   };
 }

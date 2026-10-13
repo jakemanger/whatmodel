@@ -6,7 +6,7 @@ import { comparisonSets, modelsIn, speedFor } from '../lib/data.ts';
 import { boardData } from '../lib/board-data.ts';
 import { boardFromData } from '../lib/board.ts';
 import { CATEGORY_IDS } from '../lib/categories.ts';
-import { parseSpecs, usable } from '../lib/fit.ts';
+import { kvGb, llmOverheadGb, needGb, parseSpecs, rank, usable } from '../lib/fit.ts';
 import { measuredSpeed } from '../lib/measured.ts';
 import { curlFor, toText, whereLabel } from '../lib/format.ts';
 import { boardView, modelView, pageModels } from '../lib/views.ts';
@@ -238,4 +238,23 @@ test('API, terminal output, charts and copied commands use the selected score mo
   assert.match(output, /not yet calibrated/);
   assert.doesNotMatch(output, /NaN|Infinity|0±0/);
   assert.match(curlFor('whatmodel.sh', '/', new URLSearchParams(`${setQuery}&score=set`)), /score=set/);
+});
+
+test('a known KV cache sizes the memory a download needs; other models keep the flat allowance', () => {
+  // Llama 2 13B: 40 layers × 40 KV heads × 128 × (K+V) × 2 bytes, no grouped-query attention.
+  const llama2 = { full: 819200, vocab: 32000 };
+  assert.equal(Math.round(kvGb(llama2) * 10) / 10, 6.7);
+  // gpt-oss: sliding-window layers keep 4 slots' windows plus a batch (1,024 tokens), not the whole conversation.
+  assert.equal(Math.round(kvGb({ full: 24576, swa: [[24576, 128]] }) * 1000), Math.round((24576 * 8192 + 24576 * 1024) / 1e6));
+  const v = { quant: 'Q4_K_M', gb: 7.9, cmd: 'llama-server -hf x/y:Q4_K_M' };
+  assert.equal(needGb(v), 7.9 + llmOverheadGb(7.9));
+  assert.ok(needGb(v, 'llm', llama2) > 7.9 + 6.7 && needGb(v, 'llm', llama2) < needGb(v) + 6);
+  assert.equal(needGb({ ...v, gb: 12 }, 'image', llama2), 12);
+  // On a 12 GB card the flat allowance says it fits; its real KV cache doesn't.
+  const m = { id: 'x', name: 'X', provider: 'p', open_weights: true, local: { variants: [v] } };
+  const scores = new Map([['x', { id: 'x', g: 50, pm: 1, n: 5, lab: 0 }]]);
+  const specs = parseSpecs(new URLSearchParams('ram=16&gpu=card&vram=12'))!;
+  const where = (model: object) => rank([model as never], scores as never, { specs })[0].where;
+  assert.equal(where(m), 'local');
+  assert.equal(where({ ...m, kv: llama2 }), 'local-slow');
 });

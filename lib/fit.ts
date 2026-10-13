@@ -4,7 +4,7 @@ import { catOf, priceOf } from "./categories.ts";
 import { findHardware } from "./hardware.ts";
 import { bitsOf } from "./quant.ts";
 import { SLOW_TPS } from "./speed.ts";
-import type { Category, Hardware, Model, Scored, Specs, SpeedUnit, Variant } from "./types.ts";
+import type { Category, Hardware, Kv, Model, Scored, Specs, SpeedUnit, Variant } from "./types.ts";
 
 // Text models with fewer results than this, across every text test, are left off the leaderboards unless
 // asked for (?thin=1): one narrow test, such as a chat judge, translation or tool calls, says little about
@@ -55,10 +55,20 @@ export type Row = {
 export type ScoredRow = Row & { rank: number; score: number; score_full: number; pm: number };
 export const hasScore = (r: Row): r is ScoredRow => r.score !== null;
 
-// Memory a variant needs. LLM sizes are downloads, so add room for the KV cache at a modest
-// context and the runtime; other categories list the memory needed to run directly.
+// Memory a variant needs. LLM sizes are downloads, so add the KV cache for an 8k-token conversation
+// and llama.cpp's scratch buffers; other categories list the memory needed to run directly.
+export const CONTEXT_TOKENS = 8192;
+// With the model's KV cache size from its GGUF header (data/kv.json), as Local Model Explorer sizes it:
+// full-attention layers hold every token; sliding-window layers hold llama-server's 4 slots' windows
+// plus a 512-token batch, padded to 256 (n_swa * n_seq_max + n_ubatch); scratch is the logits for a
+// 512-token batch plus 0.3 GB and 4 kB per token.
+export const kvGb = (kv: Kv, ctx = CONTEXT_TOKENS) =>
+  (kv.full * ctx + (kv.swa ?? []).reduce((t, [bytes, w]) => t + bytes * Math.min(ctx, Math.ceil((w * 4 + 512) / 256) * 256), 0)) / 1e9;
+const scratchGb = (kv: Kv, ctx = CONTEXT_TOKENS) => (512 * (kv.vocab ?? 152_064) * 4 + 0.3e9 + ctx * 4000) / 1e9;
+// Without one, a flat allowance.
 export const llmOverheadGb = (gb: number) => gb * 0.05 + 1.5;
-export const needGb = (v: Variant, cat: Category = "llm") => (cat === "llm" ? v.gb + llmOverheadGb(v.gb) : v.gb);
+export const needGb = (v: Variant, cat: Category = "llm", kv?: Kv) =>
+  cat !== "llm" ? v.gb : kv ? v.gb + kvGb(kv) + scratchGb(kv) : v.gb + llmOverheadGb(v.gb);
 
 // Memory available to a model, split into "fast" (GPU / unified) and total (with CPU offload).
 export function usable(s: Specs): { fast: number; total: number } {
@@ -96,14 +106,15 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
     const cat = catOf(m);
     const variants = (m.local?.variants ?? []).filter((v) => runsOn(v, specs)).sort((x, y) => y.gb - x.gb);
     const smallest = variants.at(-1);
-    const best = (limit: number) => variants.find((v) => needGb(v, cat) <= limit);
+    const need = (v: Variant) => needGb(v, cat, m.kv);
+    const best = (limit: number) => variants.find((v) => need(v) <= limit);
     const price = priceOf(m.api);
     const api = m.api && max !== 0 && (max === null || (price !== null && price <= max)) ? m.api : null;
 
     // Best-quality variant that fits in fast memory. Otherwise part of it has to run from system
     // RAM, so for LLMs take the smallest variant that's still 4-bit or better: it offloads the least.
     const inFast = mem ? best(mem.fast) : undefined;
-    const fitsTotal = mem ? variants.filter((v) => needGb(v, cat) <= mem.total) : [];
+    const fitsTotal = mem ? variants.filter((v) => need(v) <= mem.total) : [];
     const b4 = (v: Variant) => { const b = bitsOf(v); return typeof b !== "number" || b >= 4; };
     const offload = cat === "llm" ? (fitsTotal.filter(b4).at(-1) ?? fitsTotal[0]) : fitsTotal[0];
     const pick = inFast ?? offload ?? null;
@@ -146,11 +157,11 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
       cmd,
       quant: q?.label ?? chosen?.quant ?? null,
       speed: chosen ? local : apiSpeed,
-      need_gb: smallest ? Math.round(needGb(smallest, cat)) : null,
+      need_gb: smallest ? Math.round(need(smallest)) : null,
       // Listed by its API but downloadable too: show what running it locally needs.
       mem_gb:
-        chosen ? Math.round(needGb(chosen, cat) * 10) / 10
-        : run === "none" || (run === "local" && smallest) || (run === "api" && (pick ?? smallest)) ? ((pick ?? smallest) ? Math.round(needGb((pick ?? smallest)!, cat) * 10) / 10 : null)
+        chosen ? Math.round(need(chosen) * 10) / 10
+        : run === "none" || (run === "local" && smallest) || (run === "api" && (pick ?? smallest)) ? ((pick ?? smallest) ? Math.round(need((pick ?? smallest)!) * 10) / 10 : null)
         : null,
       price: price === null ? null : Math.round(price * 10000) / 10000,
       over_budget: !!m.api && !api,

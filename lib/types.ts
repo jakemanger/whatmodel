@@ -50,7 +50,11 @@ export type Model = {
   context_note?: string;
   api?: Api | null;
   local?: { variants: Variant[] } | null;
+  kv?: Kv; // from data/kv.json, attached when the data loads
 };
+// A model's KV cache from its GGUF header: f16 bytes per token summed over full-attention layers,
+// the same summed per sliding window ([bytes, window]), and the vocabulary size.
+export type Kv = { full: number; swa?: [number, number][]; vocab?: number };
 
 export type Result = {
   model: string;
