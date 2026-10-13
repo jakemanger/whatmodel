@@ -191,6 +191,17 @@ Other versions: 8bit (~34.8 GB, Mac only) `mlx_lm.chat --model mlx-community/Dee
 
 Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware             precision       speed  engine and settings
+Apple M2 Pro, 32 GB  q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m2-pro/1789260385-30914f7b.json#L22">7.29 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.

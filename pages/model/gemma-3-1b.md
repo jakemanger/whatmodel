@@ -216,4 +216,16 @@ Other versions: 8bit (~1.4 GB, Mac only) `mlx_lm.chat --model mlx-community/gemm
 
 Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-3-1b-it)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision         speed  engine and settings
+Intel CoffeeLake-S GT2 [UHD…  q4_k_m      <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/intel-coffeelake-s-gt2-uhd-graphics-630-integrated/1788309433-ab6592e9.json#L22">14.84 tok/s</a>  ollama (version not recorded) · l…
+DGX Spark (GB10), 122 GB      qat        <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/nvidia-gb10/1788882219-d4186849.json#L22">180.37 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 [interactive version](https://whatmodel.sh/model/gemma-3-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

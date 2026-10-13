@@ -229,6 +229,7 @@ Reference results for the hardware, engine and settings below. These are not ver
 <pre>
 hardware                      precision               speed  engine and settings
 AMD Ryzen AI Max+ 395 (Stri…  Gemma QAT GGUF …  <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-11/latest-llamacpp-ac4cddeb-vulkan-clean/gemma-4-12b-it-qat-udq4kxl-r10.csv#L3">29.34 tok/s</a>  llama.cpp ac4cddeb0 (build_number…
+AMD Radeon 780M Graphics, 6…  q4_k_m · layers…   <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/amd-radeon-780m-graphics/1787552186-4a7944ba.json#L33">6.49 tok/s</a>  ollama (version not recorded) · l…
 </pre>
 
 <sub>Each speed links to its source, which has the full settings.</sub>

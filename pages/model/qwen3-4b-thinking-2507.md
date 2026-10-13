@@ -205,6 +205,21 @@ Other versions: 8bit (~4.3 GB, Mac only) `mlx_lm.chat --model lmstudio-community
 
 Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision               speed  engine and settings
+Apple M4, 16 GB               q4_k_m            <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m4/1788955575-34cd68e1.json#L33">35.05 tok/s</a>  ollama (version not recorded) · l…
+Intel CoffeeLake-S GT2 [UHD…  q4_k_m              <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/intel-coffeelake-s-gt2-uhd-graphics-630-integrated/1788307781-a65d2ea0.json#L22">5.9 tok/s</a>  ollama (version not recorded) · l…
+Intel(R) Arc(TM) B390 GPU, …  q4_k_m · layers…  <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/intel-r-arc-tm-b390-gpu/1788314219-e5e7141c.json#L22">35.53 tok/s</a>  ollama (version not recorded) · l…
+RTX 2080                      q4_k_m            <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/nvidia-geforce-rtx-2080/1789224996-89ccff69.json#L22">99.02 tok/s</a>  ollama (version not recorded) · l…
+RTX 2080                      q4_k_m            <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/nvidia-geforce-rtx-2080/1789225042-b929e9eb.json#L22">99.47 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.

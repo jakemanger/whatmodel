@@ -271,6 +271,19 @@ Other versions: 8bit (~8.5 GB, Mac only) `mlx_lm.chat --model mlx-community/Meta
 
 Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision        speed  engine and settings
+Apple M2 Pro, 32 GB           q8_0       <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m2-pro/1789233033-57dab5d2.json#L22">22.29 tok/s</a>  ollama (version not recorded) · l…
+Apple M5 Max (40-core GPU),…  q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m5-max/1785638798-d689b0c3.json#L44">89.26 tok/s</a>  ollama (version not recorded) · l…
+RTX 4060 Laptop               q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/nvidia-geforce-rtx-4060-laptop-gpu/1787829695-4755d3c9.json#L33">47.17 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.

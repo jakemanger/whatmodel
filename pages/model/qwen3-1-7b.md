@@ -232,6 +232,17 @@ Other versions: 8bit (~1.8 GB, Mac only) `mlx_lm.chat --model lmstudio-community
 
 Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3-1.7B)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision        speed  engine and settings
+NVIDIA GeForce RTX 3050 Ti …  q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/nvidia-geforce-rtx-3050-ti-laptop-gpu/1787389800-f717a862.json#L44">95.98 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.

@@ -246,8 +246,9 @@ Official weights and documentation: [huggingface.co/nvidia](https://huggingface.
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
 <pre>
-hardware                      precision        speed  engine and settings
-AMD Ryzen AI Max+ 395 (Stri…  IQ4_XS     <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-05/latest-llamacpp-intdot-regression/nemotron-3-nano-30b-a3b-iq4xs-b2016bf2-r5.csv#L3">75.97 tok/s</a>  llama.cpp 2016bf2 (build_number 1…
+hardware                      precision         speed  engine and settings
+AMD Ryzen AI Max+ 395 (Stri…  IQ4_XS      <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-05/latest-llamacpp-intdot-regression/nemotron-3-nano-30b-a3b-iq4xs-b2016bf2-r5.csv#L3">75.97 tok/s</a>  llama.cpp 2016bf2 (build_number 1…
+Apple M5 Max (40-core GPU),…  q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m5-max/1785638798-d689b0c3.json#L66">104.78 tok/s</a>  ollama (version not recorded) · l…
 </pre>
 
 <sub>Each speed links to its source, which has the full settings.</sub>

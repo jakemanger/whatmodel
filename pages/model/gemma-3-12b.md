@@ -248,6 +248,20 @@ Other versions: qat (~7.82 GB) `ollama run gemma3:12b-it-qat` · Q8_0 (~15.14 GB
 
 Official weights and documentation: [huggingface.co/google](https://huggingface.co/google/gemma-3-12b-it)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware             precision        speed  engine and settings
+Apple M2 Pro, 32 GB  q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m2-pro/1789233221-997a1fb4.json#L22">20.88 tok/s</a>  ollama (version not recorded) · l…
+Apple M3 Pro, 18 GB  q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m3-pro/1789055717-c4c15918.json#L22">12.49 tok/s</a>  ollama (version not recorded) · l…
+Apple M3 Pro, 18 GB  q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m3-pro/1789055869-52db7ec9.json#L22">13.28 tok/s</a>  ollama (version not recorded) · l…
+Apple M4, 16 GB      qat        <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m4/1788955575-34cd68e1.json#L22">11.12 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.

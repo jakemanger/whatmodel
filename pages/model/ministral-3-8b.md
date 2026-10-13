@@ -187,4 +187,15 @@ Other versions: 8bit (~9 GB, Mac only) `mlx_lm.chat --model alexgusevski/Ministr
 
 Official weights and documentation: [huggingface.co/mistralai](https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision        speed  engine and settings
+Apple M5 Max (40-core GPU),…  q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m5-max/1785638798-d689b0c3.json#L99">67.76 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 [interactive version](https://whatmodel.sh/model/ministral-3-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

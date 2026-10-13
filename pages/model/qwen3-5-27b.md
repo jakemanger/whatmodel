@@ -318,4 +318,15 @@ Other versions: 8bit (~29.5 GB, Mac only) `mlx_lm.chat --model mlx-community/Qwe
 
 Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen3.5-27B)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision        speed  engine and settings
+Apple M5 Max (40-core GPU),…  mlx-nvfp4  <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m5-max/1785638798-d689b0c3.json#L275">29.29 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 [interactive version](https://whatmodel.sh/model/qwen3-5-27b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

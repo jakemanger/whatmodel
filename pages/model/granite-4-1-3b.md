@@ -117,4 +117,15 @@ weighted average                                   = 49.2
    ollama run granite4.1:3b
    ```
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision         speed  engine and settings
+Apple M5 Max (40-core GPU),…  q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m5-max/1785638798-d689b0c3.json#L176">130.75 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 [interactive version](https://whatmodel.sh/model/granite-4-1-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

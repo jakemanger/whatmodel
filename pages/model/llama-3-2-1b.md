@@ -246,4 +246,17 @@ Other versions: 8bit (~1.3 GB, Mac only) `mlx_lm.chat --model mlx-community/Llam
 
 Official weights and documentation: [huggingface.co/meta-llama](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision        speed  engine and settings
+Apple M5 Max (40-core GPU),…  q8_0       <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m5-max/1785638798-d689b0c3.json#L33">250.8 tok/s</a>  ollama (version not recorded) · l…
+Intel Arc Graphics 130V/140…  q8_0       <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/intel-arc-graphics-130v-140v-integrated/1787215420-9250955b.json#L22">27.86 tok/s</a>  ollama (version not recorded) · l…
+Intel CoffeeLake-S GT2 [UHD…  q8_0       <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/intel-coffeelake-s-gt2-uhd-graphics-630-integrated/1788309337-0f68971f.json#L22">13.36 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 [interactive version](https://whatmodel.sh/model/llama-3-2-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

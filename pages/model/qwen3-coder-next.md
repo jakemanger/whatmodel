@@ -187,6 +187,7 @@ Reference results for the hardware, engine and settings below. These are not ver
 <pre>
 hardware                      precision        speed  engine and settings
 AMD Ryzen AI Max+ 395 (Stri…  IQ4_XS     <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-02/modern-model-clean-followup/qwen3-coder-next-iq4xs-b9467-r10.csv#L3">61.91 tok/s</a>  llama.cpp 1fd5f4803 (build_number…
+DGX Spark (GB10), 122 GB      q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/nvidia-gb10/1788882219-d4186849.json#L55">61.97 tok/s</a>  ollama (version not recorded) · l…
 </pre>
 
 <sub>Each speed links to its source, which has the full settings.</sub>

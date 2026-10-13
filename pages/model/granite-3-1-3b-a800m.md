@@ -123,4 +123,15 @@ Other versions: Q8_0 (~3.5 GB) `lms get https://huggingface.co/lmstudio-communit
 
 Official weights and documentation: [huggingface.co/ibm-granite](https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision        speed  engine and settings
+Intel CoffeeLake-S GT2 [UHD…  q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/intel-coffeelake-s-gt2-uhd-graphics-630-integrated/1788309959-a9b77926.json#L22">23.01 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 [interactive version](https://whatmodel.sh/model/granite-3-1-3b-a800m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

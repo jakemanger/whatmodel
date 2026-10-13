@@ -169,4 +169,15 @@ Other versions: 8bit (~36.8 GB, Mac only) `mlx_lm.chat --model ornith-ai/Ornith-
 
 Official weights and documentation: [huggingface.co/ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                  precision        speed  engine and settings
+DGX Spark (GB10), 122 GB  q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/nvidia-gb10/1788898137-829d5421.json#L22">79.87 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 [interactive version](https://whatmodel.sh/model/ornith-1-5-35b-a3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

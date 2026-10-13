@@ -152,6 +152,19 @@ Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model lmstudio-community
 
 Official weights and documentation: [huggingface.co/Qwen](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision        speed  engine and settings
+Intel 3rd Gen Core processo…  q4_k_m      <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/intel-3rd-gen-core-processor-graphics-controller-integrated/1788754915-1021444d.json#L22">2.26 tok/s</a>  ollama (version not recorded) · l…
+Intel CoffeeLake-S GT2 [UHD…  q4_k_m      <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/intel-coffeelake-s-gt2-uhd-graphics-630-integrated/1788304560-904ca957.json#L22">3.78 tok/s</a>  ollama (version not recorded) · l…
+RTX 4060 Laptop               q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/nvidia-geforce-rtx-4060-laptop-gpu/1787829695-4755d3c9.json#L55">47.73 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.

@@ -4,7 +4,7 @@
 
 [llm](../README.md) · **image** · [video](video.md) · [tts](tts.md) · [stt](stt.md)
 
-updated 2026-10-13 07:00 UTC · 201 models · scores combine 73 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/image)
+updated 2026-10-13 07:40 UTC · 201 models · scores combine 73 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/image)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 
@@ -93,208 +93,208 @@ curl.exe "whatmodel.sh/image?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
 </details>
 
 <pre>
-  #  model                                    score  where                  RAM  get it
-  1  <a href="model/gpt-image-2-5-sunburst.md">GPT Image 2.5 Sunburst</a>                   92±2   api $0.013/image            <a href="https://fal.ai/models/openai/gpt-image-2.5/sunburst/text-to-image">fal.ai ↗</a>
-  2  <a href="model/gpt-image-2-5-flare.md">GPT Image 2.5 Flare</a>                      88±2   api $0.013/image            <a href="https://fal.ai/models/openai/gpt-image-2.5/flare/text-to-image">fal.ai ↗</a>
-  3  <a href="model/gpt-image-2.md">GPT Image 2</a>                              85±1   api $0.053/image            <a href="https://fal.ai/models/openai/gpt-image-2">fal.ai ↗</a>
+  #  model                                    score  where                  RAM        speed  get it
+  1  <a href="model/gpt-image-2-5-sunburst.md">GPT Image 2.5 Sunburst</a>                   92±2   api $0.013/image                         <a href="https://fal.ai/models/openai/gpt-image-2.5/sunburst/text-to-image">fal.ai ↗</a>
+  2  <a href="model/gpt-image-2-5-flare.md">GPT Image 2.5 Flare</a>                      88±2   api $0.013/image                         <a href="https://fal.ai/models/openai/gpt-image-2.5/flare/text-to-image">fal.ai ↗</a>
+  3  <a href="model/gpt-image-2.md">GPT Image 2</a>                              85±1   api $0.053/image                         <a href="https://fal.ai/models/openai/gpt-image-2">fal.ai ↗</a>
   4  <a href="model/mai-image-2-6.md">MAI-Image-2.6</a>                            81±2*  comparison only
-  5  <a href="model/nano-banana-2-1.md">Nano Banana 2.1</a>                          81±2*  api $0.034/image            <a href="https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1">google.dev ↗</a>
-  6  <a href="model/grok-imagine-image-2.md">Grok Imagine Image 2.0</a>                   79±2   api $0.040/image            <a href="https://docs.x.ai/docs/models">x.ai ↗</a>
-  7  <a href="model/reve-2-1.md">Reve 2.1</a>                                 78±2   api $0.25/image             <a href="https://fal.ai/models/reve/2.1/text-to-image">fal.ai ↗</a>
-  8  <a href="model/muse-image.md">Muse Image</a>                               76±2   api $0.010/image            <a href="https://dev.meta.ai/docs/pricing-rate-limits">dev.meta.ai ↗</a>
-  9  <a href="model/nano-banana-2.md">Nano Banana 2 (Gemini 3.1…</a>               76±1   api $0.067/image            <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
- 10  <a href="model/nano-banana-pro.md">Nano Banana Pro (Gemini 3…</a>               76±1   api $0.13/image             <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
- 11  <a href="model/qwen-image-3-0-pro.md">Qwen-Image-3.0-Pro</a>                       75±2   api $0.040/image            <a href="https://www.alibabacloud.com/help/en/model-studio/qwen-image-3-0-pro">alibabacloud.co…</a>
- 12  <a href="model/seedream-5-0-pro.md">Seedream 5.0 Pro</a>                         75±2   api $0.050/image            <a href="https://deepinfra.com/ByteDance/Seedream-5.0-Pro">deepinfra.com ↗</a>
- 13  <a href="model/reve-2-0.md">Reve 2.0</a>                                 74±2*  api $0.25/image             <a href="https://fal.ai/models/reve/2.0/text-to-image">fal.ai ↗</a>
- 14  <a href="model/chatgpt-image-latest.md">ChatGPT Image Latest (cha…</a>               74±4*  api $0.034/image            <a href="https://developers.openai.com/api/docs/models/chatgpt-image-latest">openai.com ↗</a>
+  5  <a href="model/nano-banana-2-1.md">Nano Banana 2.1</a>                          81±2*  api $0.034/image                         <a href="https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1">google.dev ↗</a>
+  6  <a href="model/grok-imagine-image-2.md">Grok Imagine Image 2.0</a>                   79±2   api $0.040/image                         <a href="https://docs.x.ai/docs/models">x.ai ↗</a>
+  7  <a href="model/reve-2-1.md">Reve 2.1</a>                                 78±2   api $0.25/image                          <a href="https://fal.ai/models/reve/2.1/text-to-image">fal.ai ↗</a>
+  8  <a href="model/muse-image.md">Muse Image</a>                               76±2   api $0.010/image                         <a href="https://dev.meta.ai/docs/pricing-rate-limits">dev.meta.ai ↗</a>
+  9  <a href="model/nano-banana-2.md">Nano Banana 2 (Gemini 3.1…</a>               76±1   api $0.067/image                         <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
+ 10  <a href="model/nano-banana-pro.md">Nano Banana Pro (Gemini 3…</a>               76±1   api $0.13/image                          <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
+ 11  <a href="model/qwen-image-3-0-pro.md">Qwen-Image-3.0-Pro</a>                       75±2   api $0.040/image                         <a href="https://www.alibabacloud.com/help/en/model-studio/qwen-image-3-0-pro">alibabacloud.co…</a>
+ 12  <a href="model/seedream-5-0-pro.md">Seedream 5.0 Pro</a>                         75±2   api $0.050/image                         <a href="https://deepinfra.com/ByteDance/Seedream-5.0-Pro">deepinfra.com ↗</a>
+ 13  <a href="model/reve-2-0.md">Reve 2.0</a>                                 74±2*  api $0.25/image                          <a href="https://fal.ai/models/reve/2.0/text-to-image">fal.ai ↗</a>
+ 14  <a href="model/chatgpt-image-latest.md">ChatGPT Image Latest (cha…</a>               74±4*  api $0.034/image                         <a href="https://developers.openai.com/api/docs/models/chatgpt-image-latest">openai.com ↗</a>
  15  <a href="model/mai-image-2-5.md">MAI-Image-2.5</a>                            74±2   comparison only
- 16  <a href="model/nano-banana-2-lite.md">Nano Banana 2 Lite (Gemin…</a>               73±2   api $0.034/image            <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
- 17  <a href="model/gpt-image-1-5.md">GPT Image 1.5</a>                            71±1   api $0.034/image            <a href="https://developers.openai.com/api/docs/models/gpt-image-1.5">openai.com ↗</a>
- 18  <a href="model/qwen-image-2-1.md">Qwen-Image-2.1</a>                           69±2   local                ~12GB  <a href="model/qwen-image-2-1.md#run-it-on-your-own-machine">how to run ›</a>
+ 16  <a href="model/nano-banana-2-lite.md">Nano Banana 2 Lite (Gemin…</a>               73±2   api $0.034/image                         <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
+ 17  <a href="model/gpt-image-1-5.md">GPT Image 1.5</a>                            71±1   api $0.034/image                         <a href="https://developers.openai.com/api/docs/models/gpt-image-1.5">openai.com ↗</a>
+ 18  <a href="model/qwen-image-2-1.md">Qwen-Image-2.1</a>                           69±2   local                ~12GB               <a href="model/qwen-image-2-1.md#run-it-on-your-own-machine">how to run ›</a>
  19  <a href="model/ideogram-4-5.md">Ideogram 4.5</a>                             68±3*  comparison only
- 20  <a href="model/qwen-image-2-0-pro-2026-06-22.md">Qwen-Image-2.0-Pro (2026-…</a>               67±2*  api $0.075/image            <a href="https://www.alibabacloud.com/help/en/model-studio/image-model">alibabacloud.co…</a>
- 21  <a href="model/uni-1-1.md">Uni-1.1</a>                                  67±2*  api $0.040/image            <a href="https://lumalabs.ai/api">lumalabs.ai ↗</a>
+ 20  <a href="model/qwen-image-2-0-pro-2026-06-22.md">Qwen-Image-2.0-Pro (2026-…</a>               67±2*  api $0.075/image                         <a href="https://www.alibabacloud.com/help/en/model-studio/image-model">alibabacloud.co…</a>
+ 21  <a href="model/uni-1-1.md">Uni-1.1</a>                                  67±2*  api $0.040/image                         <a href="https://lumalabs.ai/api">lumalabs.ai ↗</a>
  22  <a href="model/boogu-image-0-1-base.md">Boogu-Image-0.1 Base</a>                     67±5*  comparison only
- 23  <a href="model/ideogram-4.md">Ideogram 4.0</a>                             66±2*  api $0.060/image …  ~6.1GB  <a href="https://www.together.ai/models/ideogram-40">together.ai ↗</a>
- 24  <a href="model/qwen-image-2-0-pro.md">Qwen-Image 2.0 Pro</a>                       66±3   api $0.075/image            <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
+ 23  <a href="model/ideogram-4.md">Ideogram 4.0</a>                             66±2*  api $0.060/image …  ~6.1GB               <a href="https://www.together.ai/models/ideogram-40">together.ai ↗</a>
+ 24  <a href="model/qwen-image-2-0-pro.md">Qwen-Image 2.0 Pro</a>                       66±3   api $0.075/image                         <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
  25  <a href="model/mai-image-2.md">MAI-Image-2</a>                              66±3*  comparison only
- 26  <a href="model/grok-imagine-image.md">Grok Imagine Image</a>                       66±2   api $0.020/image            <a href="https://docs.x.ai/developers/models/grok-imagine-image.md">x.ai ↗</a>
- 27  <a href="model/uni-1-1-max.md">Uni-1.1 Max</a>                              65±2   api $0.10/image             <a href="https://lumalabs.ai/api">lumalabs.ai ↗</a>
- 28  <a href="model/grok-imagine-image-pro.md">Grok Imagine Image Pro</a>                   65±2   api $0.050/image            <a href="https://docs.x.ai/developers/models/grok-imagine-image-quality.md">x.ai ↗</a>
- 29  <a href="model/seedream-5-0-lite.md">Seedream 5.0 Lite</a>                        65±2   api $0.035/image            <a href="https://docs.byteplus.com/en/docs/ModelArk/1544106">byteplus.com ↗</a>
- 30  <a href="model/seedream-4-5.md">Seedream 4.5</a>                             64±1   api $0.040/image            <a href="https://docs.byteplus.com/en/docs/ModelArk/1544106">byteplus.com ↗</a>
- 31  <a href="model/recraft-v4-1-utility-pro.md">Recraft V4.1 Utility Pro</a>                 64±2*  api $0.21/image             <a href="https://www.recraft.ai/docs/api-reference/pricing">recraft.ai ↗</a>
- 32  <a href="model/flux-2-max.md">FLUX.2 [max]</a>                             64±1   api $0.070/image            <a href="https://docs.bfl.ai/quick_start/pricing">bfl.ai ↗</a>
- 33  <a href="model/wan-2-7-image-pro.md">Wan 2.7 Image Pro</a>                        63±2   api $0.075/image            <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
+ 26  <a href="model/grok-imagine-image.md">Grok Imagine Image</a>                       66±2   api $0.020/image                         <a href="https://docs.x.ai/developers/models/grok-imagine-image.md">x.ai ↗</a>
+ 27  <a href="model/uni-1-1-max.md">Uni-1.1 Max</a>                              65±2   api $0.10/image                          <a href="https://lumalabs.ai/api">lumalabs.ai ↗</a>
+ 28  <a href="model/grok-imagine-image-pro.md">Grok Imagine Image Pro</a>                   65±2   api $0.050/image                         <a href="https://docs.x.ai/developers/models/grok-imagine-image-quality.md">x.ai ↗</a>
+ 29  <a href="model/seedream-5-0-lite.md">Seedream 5.0 Lite</a>                        65±2   api $0.035/image                         <a href="https://docs.byteplus.com/en/docs/ModelArk/1544106">byteplus.com ↗</a>
+ 30  <a href="model/seedream-4-5.md">Seedream 4.5</a>                             64±1   api $0.040/image                         <a href="https://docs.byteplus.com/en/docs/ModelArk/1544106">byteplus.com ↗</a>
+ 31  <a href="model/recraft-v4-1-utility-pro.md">Recraft V4.1 Utility Pro</a>                 64±2*  api $0.21/image                          <a href="https://www.recraft.ai/docs/api-reference/pricing">recraft.ai ↗</a>
+ 32  <a href="model/flux-2-max.md">FLUX.2 [max]</a>                             64±1   api $0.070/image                         <a href="https://docs.bfl.ai/quick_start/pricing">bfl.ai ↗</a>
+ 33  <a href="model/wan-2-7-image-pro.md">Wan 2.7 Image Pro</a>                        63±2   api $0.075/image                         <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
  34  <a href="model/reve-v1-5.md">Reve V1.5</a>                                63±3*  comparison only
- 35  <a href="model/cosmos3-super-text2image.md">Cosmos3-Super-Text2Image</a>                 63±2   local               ~154GB  <a href="model/cosmos3-super-text2image.md#run-it-on-your-own-machine">how to run ›</a>
- 36  <a href="model/flux-2-pro.md">FLUX.2 [pro]</a>                             63±2   api $0.030/image            <a href="https://docs.bfl.ai/quick_start/pricing">bfl.ai ↗</a>
- 37  <a href="model/flux-2-flex.md">FLUX.2 [flex]</a>                            62±2   api $0.050/image            <a href="https://docs.bfl.ai/quick_start/pricing">bfl.ai ↗</a>
- 38  <a href="model/hunyuanimage-3-0-instruct.md">HunyuanImage 3.0-Instruct</a>                62±3*  api $0.090/image …  ~203GB  <a href="https://fal.ai/models/fal-ai/hunyuan-image/v3/instruct/text-to-image">fal.ai ↗</a>
- 39  <a href="model/nano-banana.md">Nano Banana (Gemini 2.5 F…</a>               62±1   api $0.039/image            <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
- 40  <a href="model/wan-2-7-image.md">Wan 2.7 Image</a>                            62±2   api $0.030/image            <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
- 41  <a href="model/imagen-4-ultra.md">Imagen 4 Ultra</a>                           61±2   api $0.060/image            <a href="https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing">google.com ↗</a>
- 42  <a href="model/gpt-image-1.md">GPT Image 1</a>                              61±1   api $0.042/image            <a href="https://developers.openai.com/api/docs/models/gpt-image-1">openai.com ↗</a>
- 43  <a href="model/wan-2-6-t2i.md">Wan 2.6 Text-to-Image</a>                    61±3*  api $0.030/image            <a href="https://deepinfra.com/Wan-AI/Wan2.6-T2I">deepinfra.com ↗</a>
+ 35  <a href="model/cosmos3-super-text2image.md">Cosmos3-Super-Text2Image</a>                 63±2   local               ~154GB               <a href="model/cosmos3-super-text2image.md#run-it-on-your-own-machine">how to run ›</a>
+ 36  <a href="model/flux-2-pro.md">FLUX.2 [pro]</a>                             63±2   api $0.030/image                         <a href="https://docs.bfl.ai/quick_start/pricing">bfl.ai ↗</a>
+ 37  <a href="model/flux-2-flex.md">FLUX.2 [flex]</a>                            62±2   api $0.050/image                         <a href="https://docs.bfl.ai/quick_start/pricing">bfl.ai ↗</a>
+ 38  <a href="model/hunyuanimage-3-0-instruct.md">HunyuanImage 3.0-Instruct</a>                62±3*  api $0.090/image …  ~203GB               <a href="https://fal.ai/models/fal-ai/hunyuan-image/v3/instruct/text-to-image">fal.ai ↗</a>
+ 39  <a href="model/nano-banana.md">Nano Banana (Gemini 2.5 F…</a>               62±1   api $0.039/image                         <a href="https://ai.google.dev/gemini-api/docs/pricing">google.dev ↗</a>
+ 40  <a href="model/wan-2-7-image.md">Wan 2.7 Image</a>                            62±2   api $0.030/image                         <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
+ 41  <a href="model/imagen-4-ultra.md">Imagen 4 Ultra</a>                           61±2   api $0.060/image                         <a href="https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing">google.com ↗</a>
+ 42  <a href="model/gpt-image-1.md">GPT Image 1</a>                              61±1   api $0.042/image                         <a href="https://developers.openai.com/api/docs/models/gpt-image-1">openai.com ↗</a>
+ 43  <a href="model/wan-2-6-t2i.md">Wan 2.6 Text-to-Image</a>                    61±3*  api $0.030/image                         <a href="https://deepinfra.com/Wan-AI/Wan2.6-T2I">deepinfra.com ↗</a>
  44  <a href="model/reve-v1-1.md">Reve V1.1</a>                                61±4*  comparison only
- 45  <a href="model/seedream-4-0.md">Seedream 4.0</a>                             61±1   api $0.040/image            <a href="https://deepinfra.com/ByteDance/Seedream-4">deepinfra.com ↗</a>
- 46  <a href="model/recraft-v4-1-pro.md">Recraft V4.1 Pro</a>                         61±3*  api $0.21/image             <a href="https://www.recraft.ai/docs/api-reference/pricing">recraft.ai ↗</a>
- 47  <a href="model/ernie-image-turbo.md">ERNIE-Image-Turbo</a>                        61±3†  api $0.010/image …   ~17GB  <a href="https://fal.ai/models/fal-ai/ernie-image/turbo">fal.ai ↗</a>
- 48  <a href="model/emu3-5-image.md">Emu3.5-Image</a>                             60±5*  local                ~85GB  <a href="model/emu3-5-image.md#run-it-on-your-own-machine">how to run ›</a>
- 49  <a href="model/ernie-image.md">ERNIE-Image</a>                              60±2   api $0.030/image …   ~17GB  <a href="https://fal.ai/models/fal-ai/ernie-image">fal.ai ↗</a>
- 50  <a href="model/kling-image-o1.md">Kling Image O1</a>                           60±4*  api $0.028/image            <a href="https://kling.ai/dev/pricing">kling.ai ↗</a>
- 51  <a href="model/krea-2-medium.md">Krea 2 Medium</a>                            60±3*  api $0.030/image            <a href="https://www.krea.ai/docs/developers/krea-2/overview.md">krea.ai ↗</a>
- 52  <a href="model/imagen-4.md">Imagen 4</a>                                 59±2   api $0.040/image            <a href="https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing">google.com ↗</a>
- 53  <a href="model/wan-2-5-t2i-preview.md">Wan 2.5 Text-to-Image Pre…</a>               59±3*  api $0.030/image            <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
- 54  <a href="model/recraft-v4.md">Recraft V4</a>                               59±3*  api $0.040/image            <a href="https://www.recraft.ai/docs/api-reference/pricing">recraft.ai ↗</a>
+ 45  <a href="model/seedream-4-0.md">Seedream 4.0</a>                             61±1   api $0.040/image                         <a href="https://deepinfra.com/ByteDance/Seedream-4">deepinfra.com ↗</a>
+ 46  <a href="model/recraft-v4-1-pro.md">Recraft V4.1 Pro</a>                         61±3*  api $0.21/image                          <a href="https://www.recraft.ai/docs/api-reference/pricing">recraft.ai ↗</a>
+ 47  <a href="model/ernie-image-turbo.md">ERNIE-Image-Turbo</a>                        61±3†  api $0.010/image …   ~17GB               <a href="https://fal.ai/models/fal-ai/ernie-image/turbo">fal.ai ↗</a>
+ 48  <a href="model/emu3-5-image.md">Emu3.5-Image</a>                             60±5*  local                ~85GB               <a href="model/emu3-5-image.md#run-it-on-your-own-machine">how to run ›</a>
+ 49  <a href="model/ernie-image.md">ERNIE-Image</a>                              60±2   api $0.030/image …   ~17GB               <a href="https://fal.ai/models/fal-ai/ernie-image">fal.ai ↗</a>
+ 50  <a href="model/kling-image-o1.md">Kling Image O1</a>                           60±4*  api $0.028/image                         <a href="https://kling.ai/dev/pricing">kling.ai ↗</a>
+ 51  <a href="model/krea-2-medium.md">Krea 2 Medium</a>                            60±3*  api $0.030/image                         <a href="https://www.krea.ai/docs/developers/krea-2/overview.md">krea.ai ↗</a>
+ 52  <a href="model/imagen-4.md">Imagen 4</a>                                 59±2   api $0.040/image                         <a href="https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing">google.com ↗</a>
+ 53  <a href="model/wan-2-5-t2i-preview.md">Wan 2.5 Text-to-Image Pre…</a>               59±3*  api $0.030/image                         <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
+ 54  <a href="model/recraft-v4.md">Recraft V4</a>                               59±3*  api $0.040/image                         <a href="https://www.recraft.ai/docs/api-reference/pricing">recraft.ai ↗</a>
  55  <a href="model/firered-image-edit-1-1.md">FireRed-Image-Edit-1.1</a>                   59±4*  comparison only
- 56  <a href="model/krea-2-turbo.md">Krea 2 Turbo</a>                             59±3*  api $0.015/image …   ~20GB  <a href="https://www.krea.ai/docs/api-reference/krea/krea-2-turbo.md">krea.ai ↗</a>
- 57  <a href="model/gpt-image-1-mini.md">GPT Image 1 Mini</a>                         59±2   api $0.011/image            <a href="https://developers.openai.com/api/docs/models/gpt-image-1-mini">openai.com ↗</a>
- 58  <a href="model/krea-2-large.md">Krea 2 Large</a>                             59±3*  api $0.060/image            <a href="https://www.krea.ai/docs/developers/krea-2/overview.md">krea.ai ↗</a>
- 59  <a href="model/qwen-image-edit-2509.md">Qwen-Image-Edit-2509</a>                     59±3   api $0.030/image …   ~26GB  <a href="https://fal.ai/models/fal-ai/qwen-image-edit-2509">fal.ai ↗</a>
- 60  <a href="model/hidream-o1-image.md">HiDream-O1-Image</a>                         58±2   api $0.010/image …  ~5.3GB  <a href="https://fal.ai/models/fal-ai/hidream-o1-image">fal.ai ↗</a>
- 61  <a href="model/flux-2-dev.md">FLUX.2 [dev]</a>                             58±1   api $0.046/image …   ~20GB  <a href="https://developers.cloudflare.com/workers-ai/platform/pricing/">cloudflare.com ↗</a>
+ 56  <a href="model/krea-2-turbo.md">Krea 2 Turbo</a>                             59±3*  api $0.015/image …   ~20GB               <a href="https://www.krea.ai/docs/api-reference/krea/krea-2-turbo.md">krea.ai ↗</a>
+ 57  <a href="model/gpt-image-1-mini.md">GPT Image 1 Mini</a>                         59±2   api $0.011/image                         <a href="https://developers.openai.com/api/docs/models/gpt-image-1-mini">openai.com ↗</a>
+ 58  <a href="model/krea-2-large.md">Krea 2 Large</a>                             59±3*  api $0.060/image                         <a href="https://www.krea.ai/docs/developers/krea-2/overview.md">krea.ai ↗</a>
+ 59  <a href="model/qwen-image-edit-2509.md">Qwen-Image-Edit-2509</a>                     59±3   api $0.030/image …   ~26GB               <a href="https://fal.ai/models/fal-ai/qwen-image-edit-2509">fal.ai ↗</a>
+ 60  <a href="model/hidream-o1-image.md">HiDream-O1-Image</a>                         58±2   api $0.010/image …  ~5.3GB               <a href="https://fal.ai/models/fal-ai/hidream-o1-image">fal.ai ↗</a>
+ 61  <a href="model/flux-2-dev.md">FLUX.2 [dev]</a>                             58±1   api $0.046/image …   ~20GB               <a href="https://developers.cloudflare.com/workers-ai/platform/pricing/">cloudflare.com ↗</a>
  62  <a href="model/reve-v1.md">Reve V1</a>                                  58±4*  comparison only
- 63  <a href="model/z-image-base.md">Z-Image (Base)</a>                           58±2   api $0.010/image …   ~10GB  <a href="https://fal.ai/models/fal-ai/z-image/base">fal.ai ↗</a>
- 64  <a href="model/wan-2-6-image.md">Wan 2.6 Image</a>                            58±4*  api $0.030/image            <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
- 65  <a href="model/hunyuanimage-2-1.md">HunyuanImage 2.1</a>                         58±2*  api $0.10/image +…   ~64GB  <a href="https://fal.ai/models/fal-ai/hunyuan-image/v2.1/text-to-image">fal.ai ↗</a>
- 66  <a href="model/qwen-image-edit-2511.md">Qwen-Image-Edit-2511</a>                     58±2   api $0.030/image …   ~37GB  <a href="https://fal.ai/models/fal-ai/qwen-image-edit-2511">fal.ai ↗</a>
- 67  <a href="model/recraft-v4-1-flash.md">Recraft V4.1 Flash</a>                       57±3*  api $0.0070/image           <a href="https://www.recraft.ai/docs/api-reference/pricing">recraft.ai ↗</a>
- 68  <a href="model/hunyuanimage-3-0.md">HunyuanImage 3.0</a>                         57±2   api $0.080/image …   ~49GB  <a href="https://replicate.com/tencent/hunyuan-image-3">replicate.com ↗</a>
- 69  <a href="model/emu3-5.md">Emu3.5</a>                                   57±5*  local                ~85GB  <a href="model/emu3-5.md#run-it-on-your-own-machine">how to run ›</a>
+ 63  <a href="model/z-image-base.md">Z-Image (Base)</a>                           58±2   api $0.010/image …   ~10GB               <a href="https://fal.ai/models/fal-ai/z-image/base">fal.ai ↗</a>
+ 64  <a href="model/wan-2-6-image.md">Wan 2.6 Image</a>                            58±4*  api $0.030/image                         <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
+ 65  <a href="model/hunyuanimage-2-1.md">HunyuanImage 2.1</a>                         58±2*  api $0.10/image +…   ~64GB               <a href="https://fal.ai/models/fal-ai/hunyuan-image/v2.1/text-to-image">fal.ai ↗</a>
+ 66  <a href="model/qwen-image-edit-2511.md">Qwen-Image-Edit-2511</a>                     58±2   api $0.030/image …   ~37GB               <a href="https://fal.ai/models/fal-ai/qwen-image-edit-2511">fal.ai ↗</a>
+ 67  <a href="model/recraft-v4-1-flash.md">Recraft V4.1 Flash</a>                       57±3*  api $0.0070/image                        <a href="https://www.recraft.ai/docs/api-reference/pricing">recraft.ai ↗</a>
+ 68  <a href="model/hunyuanimage-3-0.md">HunyuanImage 3.0</a>                         57±2   api $0.080/image …   ~49GB               <a href="https://replicate.com/tencent/hunyuan-image-3">replicate.com ↗</a>
+ 69  <a href="model/emu3-5.md">Emu3.5</a>                                   57±5*  local                ~85GB               <a href="model/emu3-5.md#run-it-on-your-own-machine">how to run ›</a>
  70  <a href="model/joyai-image-edit.md">JoyAI-Image-Edit</a>                         57±3*  comparison only
  71  <a href="model/mai-image-1.md">MAI-Image-1</a>                              57±3*  comparison only
- 72  <a href="model/longcat-image-edit.md">LongCat-Image-Edit</a>                       56±2   api $0.15/image +…   ~36GB  <a href="https://fal.ai/models/fal-ai/longcat-image/edit">fal.ai ↗</a>
+ 72  <a href="model/longcat-image-edit.md">LongCat-Image-Edit</a>                       56±2   api $0.15/image +…   ~36GB               <a href="https://fal.ai/models/fal-ai/longcat-image/edit">fal.ai ↗</a>
  73  <a href="model/seedream-3-0.md">Seedream 3.0</a>                             56±2   comparison only
- 74  <a href="model/p-image-edit.md">P-Image-Edit</a>                             56±4*  api $0.010/image            <a href="https://replicate.com/prunaai/p-image-edit">replicate.com ↗</a>
+ 74  <a href="model/p-image-edit.md">P-Image-Edit</a>                             56±4*  api $0.010/image                         <a href="https://replicate.com/prunaai/p-image-edit">replicate.com ↗</a>
  75  <a href="model/firered-image-edit-1-0.md">FireRed-Image-Edit-1.0</a>                   56±4*  comparison only
- 76  <a href="model/qwen-image-2512.md">Qwen-Image-2512</a>                          56±1   api $0.020/image …   ~22GB  <a href="https://replicate.com/qwen/qwen-image-2512">replicate.com ↗</a>
+ 76  <a href="model/qwen-image-2512.md">Qwen-Image-2512</a>                          56±1   api $0.020/image …   ~22GB               <a href="https://replicate.com/qwen/qwen-image-2512">replicate.com ↗</a>
  77  <a href="model/reve-v1-1-fast.md">Reve V1.1 Fast</a>                           56±4*  comparison only
- 78  <a href="model/z-image-turbo.md">Z-Image-Turbo</a>                            55±1   api $0.0050/image…  ~7.7GB  <a href="https://replicate.com/prunaai/z-image-turbo">replicate.com ↗</a>
- 79  <a href="model/llada-image.md">LLaDA-Image</a>                              55±3†  local                ~22GB  <a href="model/llada-image.md#run-it-on-your-own-machine">how to run ›</a>
- 80  <a href="model/qwen-image-edit.md">Qwen-Image-Edit</a>                          55±2   api $0.030/image …   ~27GB  <a href="https://fal.ai/models/fal-ai/qwen-image-edit">fal.ai ↗</a>
+ 78  <a href="model/z-image-turbo.md">Z-Image-Turbo</a>                            55±1   api $0.0050/image…  ~7.7GB               <a href="https://replicate.com/prunaai/z-image-turbo">replicate.com ↗</a>
+ 79  <a href="model/llada-image.md">LLaDA-Image</a>                              55±3†  local                ~22GB               <a href="model/llada-image.md#run-it-on-your-own-machine">how to run ›</a>
+ 80  <a href="model/qwen-image-edit.md">Qwen-Image-Edit</a>                          55±2   api $0.030/image …   ~27GB               <a href="https://fal.ai/models/fal-ai/qwen-image-edit">fal.ai ↗</a>
  81  <a href="model/flux-2-klein-base-9b.md">FLUX.2 [klein] Base 9B</a>                   55±4*  comparison only
- 82  <a href="model/flux-2-klein-9b.md">FLUX.2 [klein] 9B</a>                        55±2   api $0.015/image …   ~11GB  <a href="https://developers.cloudflare.com/workers-ai/platform/pricing/">cloudflare.com ↗</a>
- 83  <a href="model/flux-1-kontext-max.md">FLUX.1 Kontext [max]</a>                     55±2   api $0.080/image            <a href="https://docs.bfl.ai/quick_start/pricing">bfl.ai ↗</a>
+ 82  <a href="model/flux-2-klein-9b.md">FLUX.2 [klein] 9B</a>                        55±2   api $0.015/image …   ~11GB               <a href="https://developers.cloudflare.com/workers-ai/platform/pricing/">cloudflare.com ↗</a>
+ 83  <a href="model/flux-1-kontext-max.md">FLUX.1 Kontext [max]</a>                     55±2   api $0.080/image                         <a href="https://docs.bfl.ai/quick_start/pricing">bfl.ai ↗</a>
  84  <a href="model/reve-edit-fast.md">Reve Edit Fast</a>                           55±4*  comparison only
- 85  <a href="model/qwen-image.md">Qwen-Image</a>                               54±1   api $0.025/image …   ~13GB  <a href="https://replicate.com/qwen/qwen-image">replicate.com ↗</a>
+ 85  <a href="model/qwen-image.md">Qwen-Image</a>                               54±1   api $0.025/image …   ~13GB               <a href="https://replicate.com/qwen/qwen-image">replicate.com ↗</a>
  86  <a href="model/hidream-o1-image-dev.md">HiDream-O1-Image-Dev</a>                     54±5*  comparison only
- 87  <a href="model/llada-image-turbo.md">LLaDA-Image-Turbo</a>                        54±3†  local                ~22GB  <a href="model/llada-image-turbo.md#run-it-on-your-own-machine">how to run ›</a>
- 88  <a href="model/longcat-image.md">LongCat-Image</a>                            53±4   api $0.13/image +…   ~15GB  <a href="https://fal.ai/models/fal-ai/longcat-image">fal.ai ↗</a>
- 89  <a href="model/step1x-edit-v1-2.md">Step1X-Edit v1.2</a>                         53±2   local                ~51GB  <a href="model/step1x-edit-v1-2.md#run-it-on-your-own-machine">how to run ›</a>
- 90  <a href="model/kling-image-2-1.md">Kling Image 2.1</a>                          53±7*  api $0.014/image            <a href="https://kling.ai/dev/pricing">kling.ai ↗</a>
+ 87  <a href="model/llada-image-turbo.md">LLaDA-Image-Turbo</a>                        54±3†  local                ~22GB               <a href="model/llada-image-turbo.md#run-it-on-your-own-machine">how to run ›</a>
+ 88  <a href="model/longcat-image.md">LongCat-Image</a>                            53±4   api $0.13/image +…   ~15GB               <a href="https://fal.ai/models/fal-ai/longcat-image">fal.ai ↗</a>
+ 89  <a href="model/step1x-edit-v1-2.md">Step1X-Edit v1.2</a>                         53±2   local                ~51GB               <a href="model/step1x-edit-v1-2.md#run-it-on-your-own-machine">how to run ›</a>
+ 90  <a href="model/kling-image-2-1.md">Kling Image 2.1</a>                          53±7*  api $0.014/image                         <a href="https://kling.ai/dev/pricing">kling.ai ↗</a>
  91  <a href="model/imagen-4-fast.md">Imagen 4 Fast</a>                            53±4*  comparison only
- 92  <a href="model/wan-2-5-i2i-preview.md">Wan 2.5 Image-to-Image Pr…</a>               53±4*  api $0.030/image            <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
- 93  <a href="model/minimax-image-01.md">MiniMax image-01</a>                         53±5*  api $0.0035/image           <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">minimax.io ↗</a>
- 94  <a href="model/ideogram-3.md">Ideogram 3.0</a>                             52±2   api $0.060/image            <a href="https://fal.ai/models/fal-ai/ideogram/v3">fal.ai ↗</a>
+ 92  <a href="model/wan-2-5-i2i-preview.md">Wan 2.5 Image-to-Image Pr…</a>               53±4*  api $0.030/image                         <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.co…</a>
+ 93  <a href="model/minimax-image-01.md">MiniMax image-01</a>                         53±5*  api $0.0035/image                        <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">minimax.io ↗</a>
+ 94  <a href="model/ideogram-3.md">Ideogram 3.0</a>                             52±2   api $0.060/image                         <a href="https://fal.ai/models/fal-ai/ideogram/v3">fal.ai ↗</a>
  95  <a href="model/unipic3.md">UniPic 3</a>                                 52±3*  comparison only
  96  <a href="model/imagen-3.md">Imagen 3 (imagen-3.0-gene…</a>               52±2   comparison only
- 97  <a href="model/flux-2-klein-4b.md">FLUX.2 [klein] 4B</a>                        52±2   api $0.0011/image…  ~2.9GB  <a href="https://developers.cloudflare.com/workers-ai/platform/pricing/">cloudflare.com ↗</a>
- 98  <a href="model/p-image.md">P-Image</a>                                  51±2*  api $0.0050/image           <a href="https://replicate.com/prunaai/p-image">replicate.com ↗</a>
- 99  <a href="model/luma-photon.md">Photon</a>                                   51±2   api $0.019/image            <a href="https://fal.ai/models/fal-ai/luma-photon">fal.ai ↗</a>
-100  <a href="model/recraft-v3.md">Recraft V3</a>                               50±2   api $0.040/image            <a href="https://www.recraft.ai/docs/api-reference/pricing">recraft.ai ↗</a>
-101  <a href="model/flux-1-kontext-pro.md">FLUX.1 Kontext [pro]</a>                     50±2   api $0.040/image            <a href="https://docs.bfl.ai/quick_start/pricing">bfl.ai ↗</a>
-102  <a href="model/glm-image.md">GLM-Image</a>                                50±2   api $0.015/image …   ~39GB  <a href="https://docs.z.ai/guides/image/glm-image">z.ai ↗</a>
+ 97  <a href="model/flux-2-klein-4b.md">FLUX.2 [klein] 4B</a>                        52±2   api $0.0011/image…  ~2.9GB               <a href="https://developers.cloudflare.com/workers-ai/platform/pricing/">cloudflare.com ↗</a>
+ 98  <a href="model/p-image.md">P-Image</a>                                  51±2*  api $0.0050/image                        <a href="https://replicate.com/prunaai/p-image">replicate.com ↗</a>
+ 99  <a href="model/luma-photon.md">Photon</a>                                   51±2   api $0.019/image                         <a href="https://fal.ai/models/fal-ai/luma-photon">fal.ai ↗</a>
+100  <a href="model/recraft-v3.md">Recraft V3</a>                               50±2   api $0.040/image                         <a href="https://www.recraft.ai/docs/api-reference/pricing">recraft.ai ↗</a>
+101  <a href="model/flux-1-kontext-pro.md">FLUX.1 Kontext [pro]</a>                     50±2   api $0.040/image                         <a href="https://docs.bfl.ai/quick_start/pricing">bfl.ai ↗</a>
+102  <a href="model/glm-image.md">GLM-Image</a>                                50±2   api $0.015/image …   ~39GB  ~64 s/image  <a href="https://docs.z.ai/guides/image/glm-image">z.ai ↗</a>
 103  <a href="model/step1x-edit-v1-2-preview.md">Step1X-Edit v1.2 Preview</a>                50±5*†  comparison only
-104  <a href="model/runway-gen-4-image.md">Runway Gen-4 Image</a>                       50±3*  api $0.050/image            <a href="https://docs.dev.runwayml.com/guides/models">dev.runwayml.co…</a>
-105  <a href="model/lucid-origin.md">Lucid Origin</a>                             49±3*  api $0.017/image            <a href="https://replicate.com/leonardoai/lucid-origin">replicate.com ↗</a>
-106  <a href="model/ldm-text2im-large.md">Latent Diffusion text2img…</a>              48±15*  local               ~7.5GB  <a href="model/ldm-text2im-large.md#run-it-on-your-own-machine">how to run ›</a>
-107  <a href="model/kandinsky-3.md">Kandinsky 3</a>                             48±11*  local                ~32GB  <a href="model/kandinsky-3.md#run-it-on-your-own-machine">how to run ›</a>
-108  <a href="model/step1x-edit-v1-1.md">Step1X-Edit v1.1</a>                         48±3   local                ~51GB  <a href="model/step1x-edit-v1-1.md#run-it-on-your-own-machine">how to run ›</a>
+104  <a href="model/runway-gen-4-image.md">Runway Gen-4 Image</a>                       50±3*  api $0.050/image                         <a href="https://docs.dev.runwayml.com/guides/models">dev.runwayml.co…</a>
+105  <a href="model/lucid-origin.md">Lucid Origin</a>                             49±3*  api $0.017/image                         <a href="https://replicate.com/leonardoai/lucid-origin">replicate.com ↗</a>
+106  <a href="model/ldm-text2im-large.md">Latent Diffusion text2img…</a>              48±15*  local               ~7.5GB               <a href="model/ldm-text2im-large.md#run-it-on-your-own-machine">how to run ›</a>
+107  <a href="model/kandinsky-3.md">Kandinsky 3</a>                             48±11*  local                ~32GB               <a href="model/kandinsky-3.md#run-it-on-your-own-machine">how to run ›</a>
+108  <a href="model/step1x-edit-v1-1.md">Step1X-Edit v1.1</a>                         48±3   local                ~51GB               <a href="model/step1x-edit-v1-1.md#run-it-on-your-own-machine">how to run ›</a>
 109  <a href="model/fusedream-biggan-512.md">FuseDream (BigGAN 512)</a>                  48±15*  comparison only
-110  <a href="model/vq-diffusion-ithq.md">VQ-Diffusion (ITHQ)</a>                     48±15*  local               ~4.1GB  <a href="model/vq-diffusion-ithq.md#run-it-on-your-own-machine">how to run ›</a>
+110  <a href="model/vq-diffusion-ithq.md">VQ-Diffusion (ITHQ)</a>                     48±15*  local               ~4.1GB               <a href="model/vq-diffusion-ithq.md#run-it-on-your-own-machine">how to run ›</a>
 111  <a href="model/lafite-hps2023.md">LAFITE (HPS v2 checkpoint)</a>              48±15*  comparison only
 112  <a href="model/seededit-3-0.md">SeedEdit 3.0</a>                             48±3   comparison only
-113  <a href="model/ovis-image-7b.md">Ovis-Image-7B</a>                            48±7*  local                ~12GB  <a href="model/ovis-image-7b.md#run-it-on-your-own-machine">how to run ›</a>
-114  <a href="model/flux-1-krea-dev.md">FLUX.1 Krea [dev]</a>                        47±3   api $0.025/image …   ~41GB  <a href="https://replicate.com/black-forest-labs/flux-krea-dev">replicate.com ↗</a>
+113  <a href="model/ovis-image-7b.md">Ovis-Image-7B</a>                            48±7*  local                ~12GB               <a href="model/ovis-image-7b.md#run-it-on-your-own-machine">how to run ›</a>
+114  <a href="model/flux-1-krea-dev.md">FLUX.1 Krea [dev]</a>                        47±3   api $0.025/image …   ~41GB               <a href="https://replicate.com/black-forest-labs/flux-krea-dev">replicate.com ↗</a>
 115  <a href="model/metaquery-xl.md">MetaQuery-XL</a>                             47±6*  comparison only
-116  <a href="model/hidream-i1-full.md">HiDream-I1-Full</a>                          47±2   api $0.050/image …   ~76GB  <a href="https://fal.ai/models/fal-ai/hidream-i1-full">fal.ai ↗</a>
+116  <a href="model/hidream-i1-full.md">HiDream-I1-Full</a>                          47±2   api $0.050/image …   ~76GB               <a href="https://fal.ai/models/fal-ai/hidream-i1-full">fal.ai ↗</a>
 117  <a href="model/glide-filtered.md">GLIDE (filtered)</a>                        47±15*  comparison only
-118  <a href="model/ideogram-2.md">Ideogram 2.0</a>                             46±2   api $0.080/image            <a href="https://replicate.com/ideogram-ai/ideogram-v2">replicate.com ↗</a>
+118  <a href="model/ideogram-2.md">Ideogram 2.0</a>                             46±2   api $0.080/image                         <a href="https://replicate.com/ideogram-ai/ideogram-v2">replicate.com ↗</a>
 119  <a href="model/infinity-8b.md">Infinity-8B</a>                              46±5*  comparison only
-120  <a href="model/flux-1-1-pro.md">FLUX1.1 [pro]</a>                            46±2   api $0.040/image            <a href="https://docs.bfl.ai/quick_start/pricing">bfl.ai ↗</a>
+120  <a href="model/flux-1-1-pro.md">FLUX1.1 [pro]</a>                            46±2   api $0.040/image                         <a href="https://docs.bfl.ai/quick_start/pricing">bfl.ai ↗</a>
 121  <a href="model/midjourney-v6.md">Midjourney V6</a>                            45±7*  comparison only
 122  <a href="model/gemini-2-0-flash-image.md">Gemini 2.0 Flash Image Ge…</a>               45±2   comparison only
 123  <a href="model/show-o2-1-5b.md">Show-o2 1.5B</a>                            45±5*†  comparison only
 124  <a href="model/deepgen-1-0.md">DeepGen 1.0</a>                              45±3   comparison only
 125  <a href="model/dall-e-3.md">DALL·E 3</a>                                 44±1   comparison only
-126  <a href="model/flux-1-kontext-dev.md">FLUX.1 Kontext [dev]</a>                     44±1   api $0.025/image …   ~21GB  <a href="https://replicate.com/black-forest-labs/flux-kontext-dev">replicate.com ↗</a>
-127  <a href="model/flux-1-dev.md">FLUX.1 [dev]</a>                             44±1   api $0.025/image …  ~7.7GB  <a href="https://replicate.com/black-forest-labs/flux-dev">replicate.com ↗</a>
+126  <a href="model/flux-1-kontext-dev.md">FLUX.1 Kontext [dev]</a>                     44±1   api $0.025/image …   ~21GB               <a href="https://replicate.com/black-forest-labs/flux-kontext-dev">replicate.com ↗</a>
+127  <a href="model/flux-1-dev.md">FLUX.1 [dev]</a>                             44±1   api $0.025/image …  ~7.7GB  ~20 s/image  <a href="https://replicate.com/black-forest-labs/flux-dev">replicate.com ↗</a>
 128  <a href="model/unipic2-sd3-5m-kontext-2b.md">UniPic2-SD3.5M-Kontext-2B</a>                44±6*  comparison only
-129  <a href="model/uno.md">UNO</a>                                      43±4*  local                ~16GB  <a href="model/uno.md#run-it-on-your-own-machine">how to run ›</a>
-130  <a href="model/chronoedit-14b.md">ChronoEdit-14B</a>                           43±3*  local                ~34GB  <a href="model/chronoedit-14b.md#run-it-on-your-own-machine">how to run ›</a>
-131  <a href="model/lumina-image-2.md">Lumina-Image 2.0</a>                         43±4*  api $0.075/image …   ~13GB  <a href="https://fal.ai/models/fal-ai/lumina-image/v2">fal.ai ↗</a>
+129  <a href="model/uno.md">UNO</a>                                      43±4*  local                ~16GB               <a href="model/uno.md#run-it-on-your-own-machine">how to run ›</a>
+130  <a href="model/chronoedit-14b.md">ChronoEdit-14B</a>                           43±3*  local                ~34GB               <a href="model/chronoedit-14b.md#run-it-on-your-own-machine">how to run ›</a>
+131  <a href="model/lumina-image-2.md">Lumina-Image 2.0</a>                         43±4*  api $0.075/image …   ~13GB               <a href="https://fal.ai/models/fal-ai/lumina-image/v2">fal.ai ↗</a>
 132  <a href="model/blip3o-next-grpo-text-3b.md">BLIP3o-NEXT-GRPO-Text-3B</a>                 42±3*  comparison only
-133  <a href="model/bagel.md">BAGEL</a>                                    42±1   api $0.10/image +…   ~12GB  <a href="https://fal.ai/models/fal-ai/bagel">fal.ai ↗</a>
+133  <a href="model/bagel.md">BAGEL</a>                                    42±1   api $0.10/image +…   ~12GB               <a href="https://fal.ai/models/fal-ai/bagel">fal.ai ↗</a>
 134  <a href="model/midjourney-v6-1.md">Midjourney V6.1</a>                          42±4*  comparison only
-135  <a href="model/flux-1-schnell.md">FLUX.1 [schnell]</a>                         42±2   api $0.0030/image…  ~7.7GB  <a href="https://replicate.com/black-forest-labs/flux-schnell">replicate.com ↗</a>
-136  <a href="model/omnigen2.md">OmniGen2</a>                                 42±2   api $0.15/image +…   ~17GB  <a href="https://fal.ai/models/fal-ai/omnigen-v2">fal.ai ↗</a>
-137  <a href="model/sd-3-5-large.md">Stable Diffusion 3.5 Large</a>               42±1   api $0.065/image …  ~5.4GB  <a href="https://replicate.com/stability-ai/stable-diffusion-3.5-large">replicate.com ↗</a>
-138  <a href="model/show-o2-7b.md">Show-o2 7B</a>                               42±3   local                ~23GB  <a href="model/show-o2-7b.md#run-it-on-your-own-machine">how to run ›</a>
-139  <a href="model/playground-v2.md">Playground v2 (1024px aes…</a>               41±4*  local               ~4.9GB  <a href="model/playground-v2.md#run-it-on-your-own-machine">how to run ›</a>
-140  <a href="model/playground-v2-5.md">Playground v2.5</a>                          41±2   local               ~8.8GB  <a href="model/playground-v2-5.md#run-it-on-your-own-machine">how to run ›</a>
-141  <a href="model/sd-3-5-medium.md">Stable Diffusion 3.5 Medi…</a>               41±3   api $0.035/image …   ~20GB  <a href="https://platform.stability.ai/pricing">stability.ai ↗</a>
+135  <a href="model/flux-1-schnell.md">FLUX.1 [schnell]</a>                         42±2   api $0.0030/image…  ~7.7GB               <a href="https://replicate.com/black-forest-labs/flux-schnell">replicate.com ↗</a>
+136  <a href="model/omnigen2.md">OmniGen2</a>                                 42±2   api $0.15/image +…   ~17GB               <a href="https://fal.ai/models/fal-ai/omnigen-v2">fal.ai ↗</a>
+137  <a href="model/sd-3-5-large.md">Stable Diffusion 3.5 Large</a>               42±1   api $0.065/image …  ~5.4GB               <a href="https://replicate.com/stability-ai/stable-diffusion-3.5-large">replicate.com ↗</a>
+138  <a href="model/show-o2-7b.md">Show-o2 7B</a>                               42±3   local                ~23GB               <a href="model/show-o2-7b.md#run-it-on-your-own-machine">how to run ›</a>
+139  <a href="model/playground-v2.md">Playground v2 (1024px aes…</a>               41±4*  local               ~4.9GB               <a href="model/playground-v2.md#run-it-on-your-own-machine">how to run ›</a>
+140  <a href="model/playground-v2-5.md">Playground v2.5</a>                          41±2   local               ~8.8GB               <a href="model/playground-v2-5.md#run-it-on-your-own-machine">how to run ›</a>
+141  <a href="model/sd-3-5-medium.md">Stable Diffusion 3.5 Medi…</a>               41±3   api $0.035/image …   ~20GB               <a href="https://platform.stability.ai/pricing">stability.ai ↗</a>
 142  <a href="model/cogview4-6b.md">CogView4-6B</a>                              41±6*  comparison only
 143  <a href="model/midjourney-v7.md">Midjourney V7</a>                            40±3*  comparison only
 144  <a href="model/uniworld-v1.md">UniWorld-V1</a>                              40±2   comparison only
 145  <a href="model/unipic2-metaquery-9b.md">UniPic2-Metaquery-9B</a>                     40±6*  comparison only
-146  <a href="model/show-o2-1-5b-hq.md">Show-o2 1.5B-HQ</a>                          40±3*  local               ~7.9GB  <a href="model/show-o2-1-5b-hq.md#run-it-on-your-own-machine">how to run ›</a>
+146  <a href="model/show-o2-1-5b-hq.md">Show-o2 1.5B-HQ</a>                          40±3*  local               ~7.9GB               <a href="model/show-o2-1-5b-hq.md#run-it-on-your-own-machine">how to run ›</a>
 147  <a href="model/skywork-unipic-1-5b.md">Skywork UniPic 1.5B</a>                      40±6*  comparison only
-148  <a href="model/sdxl-0-9.md">Stable Diffusion XL 0.9 (…</a>               40±6*  local               ~4.9GB  <a href="model/sdxl-0-9.md#run-it-on-your-own-machine">how to run ›</a>
-149  <a href="model/sd-3-medium.md">Stable Diffusion 3 Medium</a>                40±2   api $0.035/image …   ~11GB  <a href="https://fal.ai/models/fal-ai/stable-diffusion-v3-medium">fal.ai ↗</a>
-150  <a href="model/kolors.md">Kolors</a>                                   39±3   local                ~22GB  <a href="model/kolors.md#run-it-on-your-own-machine">how to run ›</a>
-151  <a href="model/blip3o-8b.md">BLIP3-o 8B</a>                               38±3   local                ~41GB  <a href="model/blip3o-8b.md#run-it-on-your-own-machine">how to run ›</a>
-152  <a href="model/stable-cascade.md">Stable Cascade</a>                           38±4*  local                ~13GB  <a href="model/stable-cascade.md#run-it-on-your-own-machine">how to run ›</a>
-153  <a href="model/janus-pro-7b.md">Janus-Pro-7B</a>                             38±2   api $0.0020/image…   ~18GB  <a href="https://deepinfra.com/deepseek-ai/Janus-Pro-7B">deepinfra.com ↗</a>
+148  <a href="model/sdxl-0-9.md">Stable Diffusion XL 0.9 (…</a>               40±6*  local               ~4.9GB               <a href="model/sdxl-0-9.md#run-it-on-your-own-machine">how to run ›</a>
+149  <a href="model/sd-3-medium.md">Stable Diffusion 3 Medium</a>                40±2   api $0.035/image …   ~11GB               <a href="https://fal.ai/models/fal-ai/stable-diffusion-v3-medium">fal.ai ↗</a>
+150  <a href="model/kolors.md">Kolors</a>                                   39±3   local                ~22GB               <a href="model/kolors.md#run-it-on-your-own-machine">how to run ›</a>
+151  <a href="model/blip3o-8b.md">BLIP3-o 8B</a>                               38±3   local                ~41GB               <a href="model/blip3o-8b.md#run-it-on-your-own-machine">how to run ›</a>
+152  <a href="model/stable-cascade.md">Stable Cascade</a>                           38±4*  local                ~13GB               <a href="model/stable-cascade.md#run-it-on-your-own-machine">how to run ›</a>
+153  <a href="model/janus-pro-7b.md">Janus-Pro-7B</a>                             38±2   api $0.0020/image…   ~18GB               <a href="https://deepinfra.com/deepseek-ai/Janus-Pro-7B">deepinfra.com ↗</a>
 154  <a href="model/nextstep-1-large-edit.md">NextStep-1-Large-Edit</a>                    37±3   comparison only
 155  <a href="model/step1x-edit-v1-0.md">Step1X-Edit v1.0</a>                         37±4*  comparison only
-156  <a href="model/sdxl-lightning-4-step.md">SDXL-Lightning (4-step UN…</a>               37±3*  local               ~4.9GB  <a href="model/sdxl-lightning-4-step.md#run-it-on-your-own-machine">how to run ›</a>
-157  <a href="model/kandinsky-2-2.md">Kandinsky 2.2</a>                           37±5*†  local                ~12GB  <a href="model/kandinsky-2-2.md#run-it-on-your-own-machine">how to run ›</a>
-158  <a href="model/janus-pro-1b.md">Janus-Pro-1B</a>                             36±4   api $0.0005/image…  ~5.5GB  <a href="https://deepinfra.com/deepseek-ai/Janus-Pro-1B">deepinfra.com ↗</a>
-159  <a href="model/show-o-demo-512.md">Show-o (show-o-demo-512)</a>                 36±3*  local               ~7.9GB  <a href="model/show-o-demo-512.md#run-it-on-your-own-machine">how to run ›</a>
+156  <a href="model/sdxl-lightning-4-step.md">SDXL-Lightning (4-step UN…</a>               37±3*  local               ~4.9GB               <a href="model/sdxl-lightning-4-step.md#run-it-on-your-own-machine">how to run ›</a>
+157  <a href="model/kandinsky-2-2.md">Kandinsky 2.2</a>                           37±5*†  local                ~12GB               <a href="model/kandinsky-2-2.md#run-it-on-your-own-machine">how to run ›</a>
+158  <a href="model/janus-pro-1b.md">Janus-Pro-1B</a>                             36±4   api $0.0005/image…  ~5.5GB               <a href="https://deepinfra.com/deepseek-ai/Janus-Pro-1B">deepinfra.com ↗</a>
+159  <a href="model/show-o-demo-512.md">Show-o (show-o-demo-512)</a>                 36±3*  local               ~7.9GB               <a href="model/show-o-demo-512.md#run-it-on-your-own-machine">how to run ›</a>
 160  <a href="model/dall-e-2.md">DALL·E 2</a>                                 36±3   comparison only
-161  <a href="model/ssd-1b.md">SSD-1B</a>                                   36±4*  local               ~3.3GB  <a href="model/ssd-1b.md#run-it-on-your-own-machine">how to run ›</a>
+161  <a href="model/ssd-1b.md">SSD-1B</a>                                   36±4*  local               ~3.3GB               <a href="model/ssd-1b.md#run-it-on-your-own-machine">how to run ›</a>
 162  <a href="model/janusflow-1-3b.md">JanusFlow-1.3B</a>                           36±6*  comparison only
-163  <a href="model/pixart-alpha.md">PixArt-α (PixArt-XL-2-102…</a>               36±2   local                ~14GB  <a href="model/pixart-alpha.md#run-it-on-your-own-machine">how to run ›</a>
-164  <a href="model/emu3.md">Emu3</a>                                     36±2   local                ~22GB  <a href="model/emu3.md#run-it-on-your-own-machine">how to run ›</a>
+163  <a href="model/pixart-alpha.md">PixArt-α (PixArt-XL-2-102…</a>               36±2   local                ~14GB               <a href="model/pixart-alpha.md#run-it-on-your-own-machine">how to run ›</a>
+164  <a href="model/emu3.md">Emu3</a>                                     36±2   local                ~22GB               <a href="model/emu3.md#run-it-on-your-own-machine">how to run ›</a>
 165  <a href="model/ovis-u1-3b.md">Ovis-U1-3B</a>                               35±6*  comparison only
-166  <a href="model/deepfloyd-if-xl.md">IF-XL</a>                                    35±2   local                ~29GB  <a href="model/deepfloyd-if-xl.md#run-it-on-your-own-machine">how to run ›</a>
-167  <a href="model/sdxl.md">Stable Diffusion XL 1.0</a>                  34±1   api $0.0019/image…  ~4.9GB  <a href="https://www.together.ai/models/sd-xl">together.ai ↗</a>
-168  <a href="model/lcm-sdxl.md">LCM-SDXL</a>                                 34±3   local               ~8.9GB  <a href="model/lcm-sdxl.md#run-it-on-your-own-machine">how to run ›</a>
-169  <a href="model/omnigen-v1.md">OmniGen (v1)</a>                             34±4   local                 ~9GB  <a href="model/omnigen-v1.md#run-it-on-your-own-machine">how to run ›</a>
-170  <a href="model/sdxl-turbo.md">SDXL-Turbo</a>                               34±2   local               ~4.9GB  <a href="model/sdxl-turbo.md#run-it-on-your-own-machine">how to run ›</a>
-171  <a href="model/deepfloyd-if-l.md">IF-L</a>                                     33±3   local                ~14GB  <a href="model/deepfloyd-if-l.md#run-it-on-your-own-machine">how to run ›</a>
-172  <a href="model/lumina-dimoo.md">Lumina-DiMOO</a>                             32±4*  local                ~39GB  <a href="model/lumina-dimoo.md#run-it-on-your-own-machine">how to run ›</a>
+166  <a href="model/deepfloyd-if-xl.md">IF-XL</a>                                    35±2   local                ~29GB               <a href="model/deepfloyd-if-xl.md#run-it-on-your-own-machine">how to run ›</a>
+167  <a href="model/sdxl.md">Stable Diffusion XL 1.0</a>                  34±1   api $0.0019/image…  ~4.9GB  ~31 s/image  <a href="https://www.together.ai/models/sd-xl">together.ai ↗</a>
+168  <a href="model/lcm-sdxl.md">LCM-SDXL</a>                                 34±3   local               ~8.9GB               <a href="model/lcm-sdxl.md#run-it-on-your-own-machine">how to run ›</a>
+169  <a href="model/omnigen-v1.md">OmniGen (v1)</a>                             34±4   local                 ~9GB               <a href="model/omnigen-v1.md#run-it-on-your-own-machine">how to run ›</a>
+170  <a href="model/sdxl-turbo.md">SDXL-Turbo</a>                               34±2   local               ~4.9GB               <a href="model/sdxl-turbo.md#run-it-on-your-own-machine">how to run ›</a>
+171  <a href="model/deepfloyd-if-l.md">IF-L</a>                                     33±3   local                ~14GB               <a href="model/deepfloyd-if-l.md#run-it-on-your-own-machine">how to run ›</a>
+172  <a href="model/lumina-dimoo.md">Lumina-DiMOO</a>                             32±4*  local                ~39GB               <a href="model/lumina-dimoo.md#run-it-on-your-own-machine">how to run ›</a>
 173  <a href="model/ultraedit-sd3.md">UltraEdit (SD3, with mask)</a>               32±7*  comparison only
-174  <a href="model/vila-u-7b-256.md">VILA-U 7B (256px)</a>                        32±7*  local                ~20GB  <a href="model/vila-u-7b-256.md#run-it-on-your-own-machine">how to run ›</a>
-175  <a href="model/lcm-ssd-1b.md">LCM-SSD-1B</a>                               32±4*  local               ~3.6GB  <a href="model/lcm-ssd-1b.md#run-it-on-your-own-machine">how to run ›</a>
-176  <a href="model/janus-1-3b.md">Janus-1.3B</a>                               32±4   local               ~5.5GB  <a href="model/janus-1-3b.md#run-it-on-your-own-machine">how to run ›</a>
-177  <a href="model/deepfloyd-if-m.md">IF-M</a>                                     31±3   local                ~14GB  <a href="model/deepfloyd-if-m.md#run-it-on-your-own-machine">how to run ›</a>
-178  <a href="model/dreamlike-photoreal-2-0.md">Dreamlike Photoreal 2.0</a>                  30±3   local               ~2.1GB  <a href="model/dreamlike-photoreal-2-0.md#run-it-on-your-own-machine">how to run ›</a>
+174  <a href="model/vila-u-7b-256.md">VILA-U 7B (256px)</a>                        32±7*  local                ~20GB               <a href="model/vila-u-7b-256.md#run-it-on-your-own-machine">how to run ›</a>
+175  <a href="model/lcm-ssd-1b.md">LCM-SSD-1B</a>                               32±4*  local               ~3.6GB               <a href="model/lcm-ssd-1b.md#run-it-on-your-own-machine">how to run ›</a>
+176  <a href="model/janus-1-3b.md">Janus-1.3B</a>                               32±4   local               ~5.5GB               <a href="model/janus-1-3b.md#run-it-on-your-own-machine">how to run ›</a>
+177  <a href="model/deepfloyd-if-m.md">IF-M</a>                                     31±3   local                ~14GB               <a href="model/deepfloyd-if-m.md#run-it-on-your-own-machine">how to run ›</a>
+178  <a href="model/dreamlike-photoreal-2-0.md">Dreamlike Photoreal 2.0</a>                  30±3   local               ~2.1GB               <a href="model/dreamlike-photoreal-2-0.md#run-it-on-your-own-machine">how to run ›</a>
 179  <a href="model/anyedit.md">AnyEdit (AnySD)</a>                          30±4   comparison only
 180  <a href="model/sd-2-1.md">Stable Diffusion v2.1</a>                    29±2   comparison only
 181  <a href="model/sd-2-0.md">Stable Diffusion v2.0</a>                    29±3   comparison only
-182  <a href="model/versatile-diffusion.md">Versatile Diffusion v1.0</a>                 29±4   local               ~7.2GB  <a href="model/versatile-diffusion.md#run-it-on-your-own-machine">how to run ›</a>
-183  <a href="model/dall-e-mega-min-dalle.md">DALL·E Mega (minDALL-E)</a>                  29±4   local                 ~8GB  <a href="model/dall-e-mega-min-dalle.md#run-it-on-your-own-machine">how to run ›</a>
+182  <a href="model/versatile-diffusion.md">Versatile Diffusion v1.0</a>                 29±4   local               ~7.2GB               <a href="model/versatile-diffusion.md#run-it-on-your-own-machine">how to run ›</a>
+183  <a href="model/dall-e-mega-min-dalle.md">DALL·E Mega (minDALL-E)</a>                  29±4   local                 ~8GB               <a href="model/dall-e-mega-min-dalle.md#run-it-on-your-own-machine">how to run ›</a>
 184  <a href="model/magicbrush.md">MagicBrush (InstructPix2P…</a>               29±7*  comparison only
-185  <a href="model/openjourney.md">Openjourney</a>                              28±2   local               ~2.1GB  <a href="model/openjourney.md#run-it-on-your-own-machine">how to run ›</a>
-186  <a href="model/sd-1-4.md">Stable Diffusion v1.4</a>                    27±2   local               ~2.1GB  <a href="model/sd-1-4.md#run-it-on-your-own-machine">how to run ›</a>
-187  <a href="model/sd-1-3.md">Stable Diffusion v1.3</a>                    27±4*  local               ~2.1GB  <a href="model/sd-1-3.md#run-it-on-your-own-machine">how to run ›</a>
-188  <a href="model/sd-1-1.md">Stable Diffusion v1.1</a>                    26±3   local               ~2.1GB  <a href="model/sd-1-1.md#run-it-on-your-own-machine">how to run ›</a>
-189  <a href="model/sd-1-2.md">Stable Diffusion v1.2</a>                    26±3*  local               ~2.1GB  <a href="model/sd-1-2.md#run-it-on-your-own-machine">how to run ›</a>
+185  <a href="model/openjourney.md">Openjourney</a>                              28±2   local               ~2.1GB               <a href="model/openjourney.md#run-it-on-your-own-machine">how to run ›</a>
+186  <a href="model/sd-1-4.md">Stable Diffusion v1.4</a>                    27±2   local               ~2.1GB               <a href="model/sd-1-4.md#run-it-on-your-own-machine">how to run ›</a>
+187  <a href="model/sd-1-3.md">Stable Diffusion v1.3</a>                    27±4*  local               ~2.1GB               <a href="model/sd-1-3.md#run-it-on-your-own-machine">how to run ›</a>
+188  <a href="model/sd-1-1.md">Stable Diffusion v1.1</a>                    26±3   local               ~2.1GB               <a href="model/sd-1-1.md#run-it-on-your-own-machine">how to run ›</a>
+189  <a href="model/sd-1-2.md">Stable Diffusion v1.2</a>                    26±3*  local               ~2.1GB               <a href="model/sd-1-2.md#run-it-on-your-own-machine">how to run ›</a>
 190  <a href="model/hidream-e1-1.md">HiDream-E1.1</a>                            26±11*  comparison only
-191  <a href="model/sd-1-5.md">Stable Diffusion v1.5</a>                    26±2   local               ~2.1GB  <a href="model/sd-1-5.md#run-it-on-your-own-machine">how to run ›</a>
-192  <a href="model/onecat-3b.md">OneCAT-3B</a>                                24±5*  local                ~25GB  <a href="model/onecat-3b.md#run-it-on-your-own-machine">how to run ›</a>
-193  <a href="model/lcm-dreamshaper-v7.md">LCM Dreamshaper v7</a>                       23±4*  local               ~1.7GB  <a href="model/lcm-dreamshaper-v7.md#run-it-on-your-own-machine">how to run ›</a>
-194  <a href="model/instructpix2pix.md">InstructPix2Pix</a>                          19±3   local               ~2.6GB  <a href="model/instructpix2pix.md#run-it-on-your-own-machine">how to run ›</a>
+191  <a href="model/sd-1-5.md">Stable Diffusion v1.5</a>                    26±2   local               ~2.1GB               <a href="model/sd-1-5.md#run-it-on-your-own-machine">how to run ›</a>
+192  <a href="model/onecat-3b.md">OneCAT-3B</a>                                24±5*  local                ~25GB               <a href="model/onecat-3b.md#run-it-on-your-own-machine">how to run ›</a>
+193  <a href="model/lcm-dreamshaper-v7.md">LCM Dreamshaper v7</a>                       23±4*  local               ~1.7GB               <a href="model/lcm-dreamshaper-v7.md#run-it-on-your-own-machine">how to run ›</a>
+194  <a href="model/instructpix2pix.md">InstructPix2Pix</a>                          19±3   local               ~2.6GB               <a href="model/instructpix2pix.md#run-it-on-your-own-machine">how to run ›</a>
 195  <a href="model/x-lxmert.md">X-LXMERT</a>                                 17±4*  comparison only
 196  <a href="model/attngan-coco.md">AttnGAN (COCO)</a>                           16±4*  comparison only
-197  <a href="model/cogview2.md">CogView2</a>                                  1±4   local                ~14GB  <a href="model/cogview2.md#run-it-on-your-own-machine">how to run ›</a>
-  —  <a href="model/kandinsky-2-1.md">Kandinsky 2.1</a>                   not scored yet  local                ~12GB  <a href="model/kandinsky-2-1.md#run-it-on-your-own-machine">how to run ›</a>
-  —  <a href="model/mage-flow.md">Mage-Flow</a>                   not yet calibrated  local               ~8.9GB  <a href="model/mage-flow.md#run-it-on-your-own-machine">how to run ›</a>
-  —  <a href="model/mage-flow-base.md">Mage-Flow-Base</a>              not yet calibrated  local                ~14GB  <a href="model/mage-flow-base.md#run-it-on-your-own-machine">how to run ›</a>
-  —  <a href="model/mage-flow-turbo.md">Mage-Flow-Turbo</a>             not yet calibrated  local               ~8.9GB  <a href="model/mage-flow-turbo.md#run-it-on-your-own-machine">how to run ›</a>
+197  <a href="model/cogview2.md">CogView2</a>                                  1±4   local                ~14GB               <a href="model/cogview2.md#run-it-on-your-own-machine">how to run ›</a>
+  —  <a href="model/kandinsky-2-1.md">Kandinsky 2.1</a>                   not scored yet  local                ~12GB               <a href="model/kandinsky-2-1.md#run-it-on-your-own-machine">how to run ›</a>
+  —  <a href="model/mage-flow.md">Mage-Flow</a>                   not yet calibrated  local               ~8.9GB               <a href="model/mage-flow.md#run-it-on-your-own-machine">how to run ›</a>
+  —  <a href="model/mage-flow-base.md">Mage-Flow-Base</a>              not yet calibrated  local                ~14GB               <a href="model/mage-flow-base.md#run-it-on-your-own-machine">how to run ›</a>
+  —  <a href="model/mage-flow-turbo.md">Mage-Flow-Turbo</a>             not yet calibrated  local               ~8.9GB               <a href="model/mage-flow-turbo.md#run-it-on-your-own-machine">how to run ›</a>
 </pre>
 
 \* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 201 of 202 catalogue models listed here · [sources and licences](method.md#sources)

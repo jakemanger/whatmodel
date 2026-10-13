@@ -193,4 +193,16 @@ Other versions: 8bit (~8.7 GB, Mac only) `mlx_lm.chat --model lmstudio-community
 
 Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision               speed  engine and settings
+Apple M3 Pro, 18 GB           q4_k_m            <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m3-pro/1789055869-52db7ec9.json#L33">21.42 tok/s</a>  ollama (version not recorded) · l…
+NVIDIA GeForce GTX 1650 wit…  q4_k_m · layers…   <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/nvidia-geforce-gtx-1650-with-max-q-design/1788295253-fdd4c24b.json#L22">3.58 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 [interactive version](https://whatmodel.sh/model/deepseek-r1-0528-qwen3-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

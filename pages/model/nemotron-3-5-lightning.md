@@ -154,4 +154,16 @@ Other versions: 8bit (~33.6 GB, Mac only) `mlx_lm.chat --model mlx-community/NVI
 
 Official weights and documentation: [huggingface.co/nvidia](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                  precision        speed  engine and settings
+Apple M2 Pro, 32 GB       q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m2-pro/1789243977-c0d46da2.json#L22">40.53 tok/s</a>  ollama (version not recorded) · l…
+DGX Spark (GB10), 122 GB  q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/nvidia-gb10/1788882219-d4186849.json#L33">87.08 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 [interactive version](https://whatmodel.sh/model/nemotron-3-5-lightning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

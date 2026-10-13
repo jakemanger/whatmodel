@@ -173,6 +173,20 @@ Other versions: 8bit (~8.1 GB, Mac only) `mlx_lm.chat --model mlx-community/Deep
 
 Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision        speed  engine and settings
+Intel Arc Graphics 130V/140…  q4_k_m       <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/intel-arc-graphics-130v-140v-integrated/1787303582-0e345a84.json#L22">6.7 tok/s</a>  ollama (version not recorded) · l…
+Intel Arc Graphics 130V/140…  q4_k_m      <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/intel-arc-graphics-130v-140v-integrated/1787303941-f5edf0aa.json#L22">6.67 tok/s</a>  ollama (version not recorded) · l…
+RTX 2080                      q4_k_m     <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/nvidia-geforce-rtx-2080/1789222086-4cb295d9.json#L22">64.27 tok/s</a>  ollama (version not recorded) · l…
+RTX 2080                      q4_k_m      <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/nvidia-geforce-rtx-2080/1789222199-1730015c.json#L22">64.3 tok/s</a>  ollama (version not recorded) · l…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.

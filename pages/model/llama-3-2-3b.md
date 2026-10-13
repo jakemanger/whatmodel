@@ -240,8 +240,9 @@ Official weights and documentation: [huggingface.co/meta-llama](https://huggingf
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
 <pre>
-hardware                      precision               speed  engine and settings
-Apple M4 Pro (12-core CPU /…  GGUF Q4_K_M (Ol…  <a href="https://arxiv.org/html/2608.28667v1#S4.T4">115.2 tok/s</a>  Ollama v0.21.2 (llama.cpp, Metal)…
+hardware                      precision                speed  engine and settings
+Apple M4 Pro (12-core CPU /…  GGUF Q4_K_M (Ol…   <a href="https://arxiv.org/html/2608.28667v1#S4.T4">115.2 tok/s</a>  Ollama v0.21.2 (llama.cpp, Metal)…
+Apple M5 Max (40-core GPU),…  q4_k_m            <a href="https://github.com/AlexsJones/llmfit/blob/e897fa5062e0eddff1a136e57483d467c6658617/llmfit-core/data/community/apple-m5-max/1785638798-d689b0c3.json#L22">161.81 tok/s</a>  ollama (version not recorded) · l…
 </pre>
 
 <sub>Each speed links to its source, which has the full settings.</sub>
