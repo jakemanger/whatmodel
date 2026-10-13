@@ -145,16 +145,18 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   out.push('');
   if (!shown.length) say(rows.length ? 'No models match. Try a larger budget or ?all=1.' : 'No reviewed rankings available for this category yet.');
   else {
-    // At 80 columns: rank, name, score, availability/price and RAM. Wider
-    // terminals get speed and context; narrow ones keep the essential fields.
+    // At 80 columns: rank, name, score, availability/price, RAM and speed. Wider
+    // terminals add context; narrow ones keep the essential fields.
     const wide = width >= 100;
     const ram = width >= 76;
-    const runWidth = width < 60 ? 14 : 23;
-    const nameWidth = width - (2 + 3 + 8 + runWidth + 6 + (ram ? 8 : 0) + (wide ? 23 : 0));
+    const speedCol = width >= 80;
+    const runWidth = width < 60 ? 14 : width < 100 ? 15 : 23;
+    const nameWidth = width - (2 + 3 + 8 + runWidth + 6 + (ram ? 8 : 0) + (speedCol ? 13 : 0) + (wide ? 9 : 0));
     const columns = (rank: string, name: string, score: string, run: string, memory: string, speed: string, context: string) =>
       '  ' + [terminalCell(rank, 3, true), terminalCell(name, nameWidth), terminalCell(score, 8, true), terminalCell(run, runWidth),
         ...(ram ? [terminalCell(memory, 6, true)] : []),
-        ...(wide ? [terminalCell(speed, 12, true), terminalCell(context, 7, true)] : [])].join('  ').trimEnd();
+        ...(speedCol ? [terminalCell(speed, 11, true)] : []),
+        ...(wide ? [terminalCell(context, 7, true)] : [])].join('  ').trimEnd();
     out.push(c('2', columns('#', 'MODEL', 'SCORE', 'RUN / PRICE', 'RAM', 'SPEED', o.cat === 'llm' ? 'CONTEXT' : '')));
     for (const r of shown) {
       const score = hasScore(r) ? `${Math.round(r.score)}±${Math.round(r.pm)}${r.thin ? '*' : ''}${r.maker_only ? '†' : ''}` : '—';
@@ -170,7 +172,7 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   if (shown.some((r) => r.thin)) say('* Few benchmark results; ranking is uncertain.', '2');
   if (shown.some((r) => r.maker_only)) say("† Only the maker's own results.", '2');
   if (shown.some((r) => r.score === null)) say('— not yet calibrated. See ?help=1 for comparison sets.', '2');
-  if (width >= 100 && shown.some((r) => r.speed && r.speed.how !== 'measured')) say('~speed is estimated or measured on different hardware.', '2');
+  if (width >= 80 && shown.some((r) => r.speed && r.speed.how !== 'measured')) say('~speed: measured on other machines (?format=json says which)', '2');
   if (!specs && max === null) say(`Your machine: curl "${host}${path}?ram=32&gpu=apple"`);
   if (o.withApis) say(`Include API models: ${o.withApis}`);
   say('?help=1 options · ?n=20 more · ?format=json full details', '2');
