@@ -2,7 +2,8 @@ name: thank a contributor
 # Comment /contributor on an issue or pull request (the repo owner only) to add its author to the
 # README's contributors list, linked to that issue, and reply. To name someone else or the kind of
 # contribution: /contributor @username docs. Kinds: bench, data, code, docs, bugs, ideas; without
-# one, bench results issues count as bench, pull requests as code and other issues as data.
+# one, bench results issues count as bench, pull requests as code and other issues as data. /accept
+# already adds bench submitters (bench-pr.yml).
 on:
   issue_comment:
     types: [created]

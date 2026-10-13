@@ -2,6 +2,7 @@ name: bench results to a pull request
 # Turns a bench results issue into a pull request that adds its results to data/bench.json and
 # data/speeds.json (scripts/bench-import.ts). Trigger it by commenting /accept on the issue (the repo
 # owner only), or from the Actions tab with the issue number. Merging the pull request closes the issue.
+# It also adds the issue's author to data/contributors.json, which the README thanks.
 on:
   issue_comment:
     types: [created]
@@ -42,14 +43,23 @@ jobs:
             gh issue comment "$ISSUE" --body-file "$RUNNER_TEMP/comment.md"
             exit 0
           fi
+          # Thank the submitter in the README's contributors (the pages workflow rewrites the README
+          # after the merge). The owner's own runs aren't listed.
+          author="$(gh issue view "$ISSUE" --json author --jq .author.login)"
+          thanks=""
+          if [ "$author" != "$GITHUB_REPOSITORY_OWNER" ] && node scripts/contributor.ts "$author" bench "$ISSUE" && ! git diff --quiet -- data/contributors.json; then
+            thanks="$author"
+          fi
           branch="bench/issue-$ISSUE"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$branch"
-          git add data/bench.json data/speeds.json
+          git add data/bench.json data/speeds.json data/contributors.json
           git commit -m "Add bench results from #$ISSUE"
           git push --force origin "$branch"
-          printf 'Adds the bench results from #%s.\n\n~~~\n%s\n~~~\n\nCloses #%s\n' "$ISSUE" "$import" "$ISSUE" > "$RUNNER_TEMP/pr.md"
+          printf 'Adds the bench results from #%s%s.\n\n~~~\n%s\n~~~\n\nCloses #%s\n' "$ISSUE" "${thanks:+, and $thanks to the contributors}" "$import" "$ISSUE" > "$RUNNER_TEMP/pr.md"
           url="$(gh pr list --head "$branch" --json url --jq '.[0].url')"
           if [ -n "$url" ]; then gh pr edit "$url" --body-file "$RUNNER_TEMP/pr.md"; else url="$(gh pr create --head "$branch" --title "Bench results from #$ISSUE" --body-file "$RUNNER_TEMP/pr.md")"; fi
-          gh issue comment "$ISSUE" --body "Thanks! Your results are in $url and will appear on whatmodel.sh once it's merged."
+          listed=""
+          if [ -n "$thanks" ]; then listed=", and you'll be in the [contributors list](https://github.com/$GITHUB_REPOSITORY#contributors)"; fi
+          gh issue comment "$ISSUE" --body "Thanks! Your results are in $url. Once it's merged they'll appear on whatmodel.sh$listed."
