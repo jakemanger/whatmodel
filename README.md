@@ -1016,6 +1016,12 @@ Submitted results are released under CC0 1.0 and reviewed before they're added.
 Corrections and new results are welcome, and you don't need to write code. See
 [CONTRIBUTING.md](CONTRIBUTING.md).
 
+### Contributors
+
+Thanks to everyone who has contributed:
+
+- <img src="https://github.com/sto0ka.png?size=40" width="20" height="20" alt=""> [@sto0ka](https://github.com/sto0ka): bench results ([#8](https://github.com/jakemanger/whatmodel/issues/8))
+
 ### Licences
 
 Code: [MIT](LICENSE). Data: [CC BY-SA 4.0](DATA-LICENSE.md). Bench results: CC0 1.0.

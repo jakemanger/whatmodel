@@ -5,7 +5,9 @@ import metaJson from "../data/meta.json" with { type: "json" };
 import quantJson from "../data/quant.json" with { type: "json" };
 import hardwareJson from "../data/hardware.json" with { type: "json" };
 import speedsJson from "../data/speeds.json" with { type: "json" };
+import contributorsJson from "../data/contributors.json" with { type: "json" };
 import { CATEGORY_IDS, catOf } from "./categories.ts";
+import type { Contributor } from "./contributors.ts";
 import { measuredSpeed } from "./measured.ts";
 import { bitsLabel, bitsOf, type QuantFinding, type QuantRow } from "./quant.ts";
 import { fit, toCells, type Fit } from "./score.ts";
@@ -31,6 +33,7 @@ export const benchmarks = benchmarksJson as Benchmark[];
 export const benchmarkById = new Map(benchmarks.map((b) => [b.id, b]));
 export const hardware = hardwareJson as Hardware[];
 export const speeds = speedsJson as Speed[];
+export const contributors = contributorsJson as Contributor[];
 export const modelById = new Map(models.map((m) => [m.id, m]));
 
 // Separate categories and connected comparison sets have separate score scales.

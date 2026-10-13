@@ -141,7 +141,8 @@ A code licence does not automatically license a live service's ratings. Public a
 - API speed is measured by us: `node --env-file=.env.local scripts/measure-api.ts` (needs `OPENROUTER_API_KEY`;
   targets in `data/api-targets.json`, pinned to the provider whose price we list). Raw runs go to `data/api-speed.json`.
 - Community local speeds come from bench submissions. The maintainer reviews each one with checks kept outside
-  this repo before it is merged. Never import an unreviewed submission.
+  this repo before it is merged. Never import an unreviewed submission. Thank the submitter in the README by
+  commenting `/contributor` on their issue, or with `npm run contributor -- <GitHub username> bench <issue number>`.
 - `api.url` is an outbound link, not evidence. A numeric price needs a separate approved `price_source`.
   Unknown prices are permitted; do not invent zero. Keep the served provider consistent with the price.
 - Context needs `context_source`. Label estimated memory; do not imply it covers the maximum context.

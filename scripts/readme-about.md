@@ -90,6 +90,8 @@ Submitted results are released under CC0 1.0 and reviewed before they're added.
 Corrections and new results are welcome, and you don't need to write code. See
 [CONTRIBUTING.md](CONTRIBUTING.md).
 
+<!-- contributors -->
+
 ### Licences
 
 Code: [MIT](LICENSE). Data: [CC BY-SA 4.0](DATA-LICENSE.md). Bench results: CC0 1.0.

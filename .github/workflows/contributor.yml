@@ -1,0 +1,48 @@
+name: thank a contributor
+# Comment /contributor on an issue or pull request (the repo owner only) to add its author to the
+# README's contributors list, linked to that issue, and reply. To name someone else or the kind of
+# contribution: /contributor @username docs. Kinds: bench, data, code, docs, bugs, ideas; without
+# one, bench results issues count as bench, pull requests as code and other issues as data.
+on:
+  issue_comment:
+    types: [created]
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+jobs:
+  thank:
+    if: github.event.comment.author_association == 'OWNER' && startsWith(github.event.comment.body, '/contributor')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      COMMENT: ${{ github.event.comment.body }}
+      ISSUE: ${{ github.event.issue.number }}
+      AUTHOR: ${{ github.event.issue.user.login }}
+      TITLE: ${{ github.event.issue.title }}
+      PR: ${{ github.event.issue.pull_request && 'true' || 'false' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - name: Add them to the list and reply
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Starts again from the latest main if another push lands first.
+          for try in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            if ! reply="$(node scripts/contributor.ts --comment 2>"$RUNNER_TEMP/error.txt")"; then
+              cat "$RUNNER_TEMP/error.txt"
+              printf 'Nothing was added: %s\n' "$(cat "$RUNNER_TEMP/error.txt")" > "$RUNNER_TEMP/reply.md"
+              gh issue comment "$ISSUE" --body-file "$RUNNER_TEMP/reply.md"
+              exit 1
+            fi
+            git diff --quiet -- data/contributors.json README.md && break
+            git add data/contributors.json README.md
+            git commit -q -m "Add a contributor from #$ISSUE"
+            git push -q origin HEAD:main && break
+            [ "$try" = 3 ] && exit 1
+          done
+          printf '%s\n' "$reply" > "$RUNNER_TEMP/reply.md"
+          gh issue comment "$ISSUE" --body-file "$RUNNER_TEMP/reply.md"

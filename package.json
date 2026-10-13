@@ -9,6 +9,7 @@
   "scripts": {
     "contrib:review": "node scripts/contrib/cli.ts",
     "contrib:forms": "node scripts/contrib/forms.ts",
+    "contributor": "node scripts/contributor.ts",
     "check": "node scripts/check.ts",
     "validate-data": "node scripts/check.ts --validate-only",
     "test": "node --test tests/*.test.ts",
