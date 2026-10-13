@@ -167,4 +167,17 @@ weighted average                                 = 55.1
 
 Official weights and documentation: [huggingface.co/XHToken](https://huggingface.co/XHToken/Spark-X2.5-1.7B)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision         speed  engine and settings
+AMD Radeon 890M (unified me…  Q8_0        <a href="https://huggingface.co/datasets/LocalLLaMA/local-model-explorer-data/blob/3054602af21aa2a797a89f6455c879924a109581/data/incoming/2026/09/21/d05a2d53-20260921T235129-13c167.parquet#row-6">28.89 tok/s</a>  llama.cpp 4c9233c034fc, Vulkan · …
+NVIDIA GeForce RTX 3090       Q8_0       <a href="https://huggingface.co/datasets/LocalLLaMA/local-model-explorer-data/blob/3054602af21aa2a797a89f6455c879924a109581/data/incoming/2026/09/23/d05a2d53-20260923T165205-7ba973.parquet#row-1">314.12 tok/s</a>  llama.cpp 4c9233c034fc, CUDA · ll…
+NVIDIA GeForce RTX 2080       Q8_0       <a href="https://huggingface.co/datasets/LocalLLaMA/local-model-explorer-data/blob/3054602af21aa2a797a89f6455c879924a109581/data/incoming/2026/09/23/d05a2d53-20260923T175206-130dbc.parquet#row-0">166.01 tok/s</a>  llama.cpp 4c9233c034fc, CUDA · ll…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 [interactive version](https://whatmodel.sh/model/spark-x2-5-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

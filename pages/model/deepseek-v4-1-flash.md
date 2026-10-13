@@ -152,4 +152,15 @@ api (DeepSeek) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [api-d
 
 Official weights and documentation: [huggingface.co/deepseek-ai](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash)
 
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                    precision               speed  engine and settings
+2× NVIDIA H200, 768 GB RAM  GSQ-RCO 3bit-CP…  <a href="https://huggingface.co/datasets/LocalLLaMA/local-model-explorer-data/blob/3054602af21aa2a797a89f6455c879924a109581/data/incoming/2026/09/25/d05a2d53-20260925T085236-9c4c27.parquet#row-1">12.08 tok/s</a>  llama.cpp 5210c7c5ed61, CUDA · ll…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
 [interactive version](https://whatmodel.sh/model/deepseek-v4-1-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

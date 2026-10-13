@@ -42,7 +42,7 @@ A score is a weighted average of what each result says on its own. A result's we
 
 ## Running models locally
 
-RAM is a rough estimate from parameter count, precision and runtime headroom, not a measured peak. Actual use depends on the engine, batch size, context and KV cache. A listed context window is the provider ceiling; the RAM estimate does not promise that the full window fits on your machine.
+Memory needed is the download plus room to run it with an 8k-token conversation. For 212 text models we know the KV cache size from the model's GGUF header, read by [Local Model Explorer](https://huggingface.co/spaces/codelion/local-model-explorer) (MIT), so that room is the KV cache as llama.cpp sizes it, sliding-window layers included, plus llama.cpp's scratch buffers. For the rest it is a flat allowance of 5% of the download plus 1.5 GB. It is an estimate, not a measured peak: longer conversations need more, and a listed context window is the provider's ceiling, not a promise that the full window fits on your machine.
 
 Scores describe the published model evaluation. A quantized download may perform differently; we currently apply no numeric quantization penalty. Unknown prices and speeds are left blank or marked unknown. Unknown prices never pass a finite budget filter. API prices use base token rates blended three input tokens to one output token; check the provider for tiers and surcharges.
 
@@ -4712,5 +4712,9 @@ Changes: selected numerical cells (Table 5 macro averages) transcribed into JSON
   <sub>Hallucinations Leaderboard (Hong, Minervini et al.), hallucinations-leaderboard/results @30f7592, Apache-2.0. Selected task scores (nq8, tqa8, truthfulqa\_mc2, halueval\_qa), latest run per model and task; model repos mapped to catalogue ids. No endorsement.</sub>
 - **Open Medical-LLM Leaderboard results (HF dataset openlifescienceai/results)** · leaderboard · [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) · [terms](https://huggingface.co/datasets/openlifescienceai/results) · checked 2026-10-11  
   <sub>Open Medical-LLM Leaderboard (Open Life Science AI), openlifescienceai/results @62d7322, Apache-2.0. MedQA (4 options), MedMCQA and PubMedQA accuracies from harness result files; model repos mapped to catalogue ids. No endorsement.</sub>
+- **Local Model Explorer data (LocalLLaMA/local-model-explorer-data): community llama-bench runs** · dataset · [CC BY 4.0](../licenses/local-model-explorer-data-CC-BY-4.0.txt) · [terms](https://huggingface.co/datasets/LocalLLaMA/local-model-explorer-data/blob/3054602af21aa2a797a89f6455c879924a109581/README.md) · checked 2026-10-13  
+  <sub>LocalLLaMA, Local Model Explorer Data (huggingface.co/datasets/LocalLLaMA/local-model-explorer-data), CC BY 4.0. Selected llama\_bench rows that passed the explorer’s own checks and match a model and GPU on whatmodel.sh; tokens per second rounded to 2 decimal places, model and hardware names mapped. No endorsement.</sub>
+- **Local Model Explorer (codelion/local-model-explorer): KV cache geometry read from GGUF headers** · dataset · [MIT](../licenses/local-model-explorer-MIT.txt) · [terms](https://huggingface.co/spaces/codelion/local-model-explorer/blob/405c793036543e306be10de31b8187d067cdc149/README.md) · checked 2026-10-13  
+  <sub>Local Model Explorer by codelion (huggingface.co/spaces/codelion/local-model-explorer), MIT. From data/geometry\_snapshot.json.gz: per-layer KV cache bytes per token summed over full-attention layers and per sliding window, and vocabulary size, for models matched by repository; geometries the Space estimated from parameter counts are not used. No endorsement.</sub>
 
 [interactive version](https://whatmodel.sh/method)
