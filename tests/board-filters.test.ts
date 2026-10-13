@@ -7,7 +7,7 @@ import { boardData } from '../lib/board-data.ts';
 import { boardFromData } from '../lib/board.ts';
 import { CATEGORY_IDS } from '../lib/categories.ts';
 import { kvGb, llmOverheadGb, needGb, parseSpecs, rank, usable } from '../lib/fit.ts';
-import { measuredSpeed } from '../lib/measured.ts';
+import { measuredFor } from '../lib/measured.ts';
 import { curlFor, toText, whereLabel } from '../lib/format.ts';
 import { boardView, modelView, pageModels } from '../lib/views.ts';
 import { TASKS } from '../lib/tasks.ts';
@@ -147,7 +147,7 @@ test('serialized board inputs preserve scores and measured speeds across categor
     for (const hw of original.hardware) {
       const specs = parseSpecs(new URLSearchParams({ ram: '32', gpu: hw.kind === 'apple' ? 'apple' : hw.kind === 'cpu' ? 'none' : 'card', vram: String(hw.memory_gb?.[0] ?? 0), hw: hw.id }), original.hardware)!;
       for (const model of modelsIn(cat)) for (const variant of model.local?.variants ?? []) {
-        assert.deepEqual(measuredSpeed(snapshot.speeds, model, variant, specs), speedFor(model, variant, specs));
+        assert.deepEqual(measuredFor(snapshot.speeds, snapshot.hardware, model, variant, specs, false), speedFor(model, variant, specs, false));
       }
     }
   }

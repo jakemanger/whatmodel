@@ -3,12 +3,12 @@ import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import { ENGINES, median, reportFromText, validateReport, type Report } from '../lib/bench.ts';
 import { readFileSync } from 'node:fs';
-import { measuredSpeed } from '../lib/measured.ts';
+import { measuredFor } from '../lib/measured.ts';
 import type { Hardware, Model, Specs, Speed, Variant } from '../lib/types.ts';
 
 const load = <T>(f: string): T => JSON.parse(readFileSync(new URL(`../data/${f}.json`, import.meta.url), 'utf8'));
 const models = load<Model[]>('models'), hardware = load<Hardware[]>('hardware'), speeds = load<Speed[]>('speeds');
-const speedFor = (m: Model, v: Variant, s: Specs) => measuredSpeed(speeds, m, v, s);
+const speedFor = (m: Model, v: Variant, s: Specs | null) => measuredFor(speeds, hardware, m, v, s, s ? false : null);
 
 const report = (): Report => ({
   schema: 'whatmodel-bench-v3', script_version: '3.0.0',
@@ -70,13 +70,17 @@ print(json.dumps(dict(report=bench.public_report(jobs, 256, 3, 1, 123456, hw, id
   assert.deepEqual([...ENGINES].sort(), out.engines);
 });
 
-test('board speeds come only from exact download + exact chip measurements', () => {
+test('board speeds are measured: on your chip if we have it, else elsewhere and say where', () => {
   const m = models.find((x) => x.id === 'qwen3-8b')!;
   const v = m.local!.variants.find((x) => x.cmd === 'ollama run qwen3:8b')!;
   const m2pro: Specs = { ram: 16, vram: 0, gpu: 'apple', hw: hardware.find((h) => h.id === 'm2-pro') };
   const m3: Specs = { ...m2pro, hw: hardware.find((h) => h.id === 'm3') };
-  assert.equal(speedFor(m, v, m2pro)?.how, 'measured');
-  assert.equal(speedFor(m, v, m3), null);
-  assert.equal(speedFor(m, v, { ...m2pro, hw: null }), null);
-  assert.equal(speedFor(m, { ...v, cmd: 'ollama run qwen3:8b-q8_0' }, m2pro), null);
+  const mine = speedFor(m, v, m2pro)!;
+  assert.equal(mine.basis, 'exact');
+  assert.equal(mine.speed.how, 'measured');
+  assert.match(mine.speed.on!, /M2 Pro/);
+  // Not measured on an M3: a run from elsewhere is still shown, and says where.
+  assert.notEqual(speedFor(m, v, m3)!.basis, 'exact');
+  assert.equal(speedFor(m, v, m3)!.speed.how, 'elsewhere');
+  assert.ok(speedFor(m, v, null)!.speed.value > 0);
 });

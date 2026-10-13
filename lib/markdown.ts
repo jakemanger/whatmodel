@@ -85,15 +85,15 @@ const MACHINES: [string, string][] = [
 const apiHost = (url: string) => hostOf(url).replace(/^(platform|docs|developers|api-docs|console|cloud|build|ai)\./, "");
 function boardTable(from: string, cat: Category, rows: BoardView["shown"]) {
   return pre(
-    [{ head: "#", right: true }, { head: "model", max: 26 }, { head: "score", right: true }, { head: "where", max: 18 }, { head: "speed", right: true },
-      { head: "RAM", right: true }, { head: "context", right: true }, { head: "get it", max: 16 }],
+    [{ head: "#", right: true }, { head: "model", max: 26 }, { head: "score", right: true }, { head: "where", max: 18 }, { head: "RAM", right: true },
+      { head: "speed", right: true }, { head: "context", right: true }, { head: "get it", max: 16 }],
     rows.map((r) => [
       String(r.rank ?? "—"),
       { text: displayName(r), href: rel(from, files.model(r.id)) },
       hasScore(r) ? `${Math.round(r.score)}±${Math.round(r.pm)}${(r.thin ? "*" : "") + (r.maker_only ? "†" : "") || " "}` : r.evidence === "none" ? "no reviewed results" : r.evidence === "raw" ? "not scored yet" : "not yet calibrated",
       whereLabel(r),
-      speedLabel(r.speed),
       r.mem_gb !== null ? `~${r.mem_gb < 10 ? r.mem_gb : Math.round(r.mem_gb)}GB` : "",
+      speedLabel(r.speed),
       cat === "llm" ? contextLabel(r.context_k) : "",
       // Local rows link to the model page's run instructions; API rows to the API's docs.
       !r.cmd ? "" : r.cmd.startsWith("http") ? { text: `${apiHost(r.cmd)} ↗`, href: r.cmd }
@@ -360,7 +360,7 @@ export function methodMarkdown(): string {
   out.push(`Memory needed is the download plus room to run it with an 8k-token conversation. For ${kvModels} text models we know the KV cache size from the model's GGUF header, read by [Local Model Explorer](https://huggingface.co/spaces/codelion/local-model-explorer) (MIT), so that room is the KV cache as llama.cpp sizes it, sliding-window layers included, plus llama.cpp's scratch buffers. For the rest it is a flat allowance of 5% of the download plus 1.5 GB. It is an estimate, not a measured peak: longer conversations need more, and a listed context window is the provider's ceiling, not a promise that the full window fits on your machine.`);
   out.push(`Some downloads split a model across the graphics card, system RAM and SSD, such as [Strata](https://github.com/Niko1221/Strata) for Qwen3.8-Flash-Next. They list the GPU memory and RAM their maker says they run with instead of one size, and only run on an NVIDIA or AMD graphics card under Windows or Linux.`);
   out.push(`Scores describe the published model evaluation. A quantized download may perform differently; we currently apply no numeric quantization penalty. Unknown prices and speeds are left blank or marked unknown. Unknown prices never pass a finite budget filter. API prices use base token rates blended three input tokens to one output token; check the provider for tiers and surcharges.`);
-  out.push(`Model pages include sourced reference speed measurements with their hardware, engine, precision and workload. They are not automatically assigned to another download or machine. The main speed column stays blank when no matching measurement is verified; bandwidth predictions remain disabled.`);
+  out.push(`Model pages list every speed measurement with its hardware, engine, precision and workload. The board's speed column shows the median measured speed for each model we have one for: on your chip when we have it (no ~), otherwise on the closest comparable machines we have, marked ~ with the machines named on hover. Nothing is estimated. A model that doesn't fit in your GPU's memory counts as slow unless a measurement on your chip, or on a comparable machine running it the same way, shows a usable speed.`);
   out.push(`API speeds are our own measurements: we stream a fixed prompt to each model three times, pinned to the provider whose price we list, and publish the raw runs in [api-speed.json](${rel(from, "data/api-speed.json")}). You can add local speeds for your own machine with the [bench script](${rel(from, "bench.sh")}); submissions are checked and reviewed before they appear.`);
   out.push(`## Benchmarks`);
   out.push(`${results} results, each with a source link. Download the [raw results](${rel(from, "data/results.json")}), [benchmark definitions](${rel(from, "data/benchmarks.json")}), or [rankings as JSON](${SITE}/api?format=json&all=1).`);

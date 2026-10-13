@@ -30,14 +30,11 @@ export function boardData(cat: Category): BoardData {
   });
   const data: BoardData = {
     cat, updated, updatedLabel, models, hardware,
-    // Only exact-download measurements are used by measuredSpeed. Research notes
-    // and measurements on unrelated hardware belong on the model detail pages.
+    // Every measured speed, with what lib/measured.ts needs to pick the one a row shows.
     speeds: (speeds as BenchSpeed[])
-      .filter((s) => ids.has(s.model) && s.hardware_id && s.applicability?.selected_download_eligible)
-      .map(({ model, hardware, hardware_id, kind, offload, value, unit, source, applicability }) => ({
-        model, hardware, hardware_id, kind, offload, value, unit, source,
-        applicability: { selected_download_eligible: true, artifact_reference_as_reported: applicability?.artifact_reference_as_reported },
-      })), sets, tasks,
+      .filter((s) => ids.has(s.model))
+      .map(({ model, quant, hardware, hardware_id, kind, offload, value, unit, source, context_tokens }) => ({ model, quant, hardware, hardware_id, kind, offload, value, unit, source, context_tokens })),
+    sets, tasks,
     resultModels: [...new Set(results.filter((r) => ids.has(r.model)).map((r) => r.model))],
     sources: Object.fromEntries(models.map((m) => [m.id, sourcesFor(m.id)])),
     icons: Object.fromEntries(models.flatMap((m) => { const icon = modelIcon(m); return icon ? [[m.id, icon]] : []; })),

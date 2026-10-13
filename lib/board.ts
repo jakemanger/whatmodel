@@ -2,7 +2,7 @@
 // benchmark results, source matching rules, or the statistical fitting engine.
 import { catOf } from "./categories.ts";
 import { catalogueOnly, listedByDefault, parseMax, parseSort, parseSpecs, rank, sortRows } from "./fit.ts";
-import { measuredSpeed } from "./measured.ts";
+import { measuredFor } from "./measured.ts";
 import { bitsLabel, bitsOf } from "./quant.ts";
 import type { Category, Hardware, Model, Scored, Speed } from "./types.ts";
 import type { SourceSummary } from "./data.ts";
@@ -66,7 +66,7 @@ export function boardFromData(data: BoardData, q: URLSearchParams) {
   let ranked = rank(filtered, scores, {
     specs, max, thinBelow: 3, retired, includeUnscored: true,
     gFor: (m, v) => ({ g: scores.get(m.id)!.g, label: catOf(m) === "llm" ? bitsLabel(bitsOf(v)) : v.quant }),
-    speedFor: (m, v, s) => measuredSpeed(data.speeds, m, v, s),
+    speedFor: (m, v, s, offloaded) => measuredFor(data.speeds, data.hardware, m, v, s, offloaded),
   }).filter((r) => allRetired || r.where !== "retired" || scores.has(r.id));
   // Text models with fewer than three results are only listed with ?thin=1; the rest are renumbered without them.
   const all = q.has("all");

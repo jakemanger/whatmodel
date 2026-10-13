@@ -3,6 +3,7 @@
 import { catOf, priceOf } from "./categories.ts";
 import { findHardware } from "./hardware.ts";
 import { bitsOf } from "./quant.ts";
+import type { Measured } from "./measured.ts";
 import { SLOW_TPS } from "./speed.ts";
 import type { Category, Hardware, Kv, Model, Scored, Specs, SpeedUnit, Variant } from "./types.ts";
 
@@ -98,7 +99,9 @@ type Opts = {
   specs: Specs | null;
   max?: number | null; // highest price in the category's unit; local runs are free, so 0 = local only
   gFor?: (m: Model, v: Variant) => { g: number; label: string }; // score of a quantized variant
-  speedFor?: (m: Model, v: Variant, s: Specs, fastGb: number) => RowSpeed | null;
+  // The measured speed to show for a model (lib/measured.ts), given the download this machine runs and
+  // whether part of it runs from system RAM (null without a machine).
+  speedFor?: (m: Model, v: Variant | null, s: Specs | null, offloaded: boolean | null) => Measured | null;
   thinBelow?: number; // results needed to not be "thin": 3, or fewer in categories with fewer benchmarks
   retired?: boolean; // also list models with no API or weights left, for history
   includeUnscored?: boolean; // keep models whose score is unavailable on this scale
@@ -112,7 +115,8 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
     const gone = !m.api && !m.local?.variants.length;
     if ((!s && !includeUnscored) || (catalogueOnly(m) && !retired)) return [];
     const cat = catOf(m);
-    const variants = (m.local?.variants ?? []).filter((v) => runsOn(v, specs)).sort((x, y) => y.gb - x.gb);
+    const all = [...(m.local?.variants ?? [])].sort((x, y) => y.gb - x.gb);
+    const variants = all.filter((v) => runsOn(v, specs));
     const smallest = variants.at(-1);
     // A split download's memory is the RAM of the pair this machine runs it with.
     const need = (v: Variant) => (v.needs ? (pairFor(v, specs) ?? v.needs[0]).ram_gb : needGb(v, cat, m.kv));
@@ -127,8 +131,12 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
     const b4 = (v: Variant) => { const b = bitsOf(v); return typeof b !== "number" || b >= 4; };
     const offload = cat === "llm" ? (fitsTotal.filter(b4).at(-1) ?? fitsTotal[0]) : fitsTotal[0];
     const pick = inFast ?? offload ?? null;
-    const local = pick && specs && mem && speedFor ? speedFor(m, pick, specs, mem.fast) : null;
-    const slow = cat === "llm" ? local ? local.value < SLOW_TPS : !inFast : !inFast;
+    const measured = speedFor ? speedFor(m, pick ?? smallest ?? all.at(-1) ?? null, specs, specs && pick ? !inFast : null) : null;
+    // Slow when it doesn't fit in fast memory, unless measurements say otherwise: a run on this chip
+    // decides either way; a run on a comparable machine can show it runs at a usable speed.
+    const slow = cat !== "llm" ? !inFast
+      : measured?.basis === "exact" ? measured.speed.value < SLOW_TPS
+      : !inFast && !(measured?.basis === "comparable" && measured.speed.value >= SLOW_TPS);
 
     let run: Where = "none";
     let cmd: string | null = null;
@@ -165,13 +173,12 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
       where: run,
       cmd,
       quant: q?.label ?? chosen?.quant ?? null,
-      speed: chosen ? local : apiSpeed,
-      need_gb: smallest ? Math.round(need(smallest)) : null,
-      // Listed by its API but downloadable too: show what running it locally needs.
-      mem_gb:
-        chosen ? Math.round(need(chosen) * 10) / 10
-        : run === "none" || (run === "local" && smallest) || (run === "api" && (pick ?? smallest)) ? ((pick ?? smallest) ? Math.round(need((pick ?? smallest)!) * 10) / 10 : null)
-        : null,
+      // Whatever we have, whichever filters are on: the API's speed for an API row, else a measured run.
+      speed: (run === "api" ? apiSpeed : null) ?? (measured && run === "api" ? { ...measured.speed, on: `${measured.speed.on}, run locally` } : measured?.speed ?? null),
+      need_gb: (smallest ?? all.at(-1)) ? Math.round(need((smallest ?? all.at(-1))!)) : null,
+      // The memory its download needs, for every model with one: the download this machine runs, else
+      // the smallest (one that runs on this machine if there is one).
+      mem_gb: (chosen ?? pick ?? smallest ?? all.at(-1)) ? Math.round(need((chosen ?? pick ?? smallest ?? all.at(-1))!) * 10) / 10 : null,
       price: price === null ? null : Math.round(price * 10000) / 10000,
       over_budget: !!m.api && !api,
       also_local: run === "api" && (mem ? !!pick : !!smallest),

@@ -9,7 +9,7 @@ import contributorsJson from "../data/contributors.json" with { type: "json" };
 import kvJson from "../data/kv.json" with { type: "json" };
 import { CATEGORY_IDS, catOf } from "./categories.ts";
 import type { Contributor } from "./contributors.ts";
-import { measuredSpeed } from "./measured.ts";
+import { measuredFor } from "./measured.ts";
 import { bitsLabel, bitsOf, type QuantFinding, type QuantRow } from "./quant.ts";
 import { fit, toCells, type Fit } from "./score.ts";
 import { connectedCells } from "./comparisons.ts";
@@ -83,7 +83,7 @@ export function gFor(m: Model, v: Variant) {
   return { g: fitFor(m.id).scores.get(m.id)!.g, label: catOf(m) === "llm" ? bitsLabel(bitsOf(v)) : v.quant, kept: null };
 }
 
-export const speedFor = (m: Model, v: Variant, s: Specs) => measuredSpeed(speeds, m, v, s);
+export const speedFor = (m: Model, v: Variant | null, s: Specs | null, offloaded: boolean | null = null) => measuredFor(speeds, hardware, m, v, s, offloaded);
 
 // When the data last changed (set by whoever edits data/, see UPDATING.md).
 export const updated = metaJson.updated;
