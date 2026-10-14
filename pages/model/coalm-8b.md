@@ -6,7 +6,7 @@
 
 UIUC ConvAI & Oumi (CoALM) · released 2025-02 · 8.03B params · cc-by-nc-4.0
 
-**score 48.3** ±4.0 · #491 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.3** ±4.0 · #492 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 7.62B params · mit
 
-**score 48.3** ±0.9 · #376 of 719 · from 31 benchmark results across 12 sources
+**score 48.2** ±0.9 · #376 of 719 · from 31 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                       92.8%  ▄·▄▄·●▄█···▄ beats 3/7     very easy · avg 89%     10%  small run · several runs
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>            87.9%  ●·····▃···▅█ beats 0/6     very easy · avg 90%    7.9%  typical
 <a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">AIME 2025</a>                            33.3%  ▁·▁▁▁▂●▆█▇▅▁ beats 20/133  medium · avg 38%       6.8%  sharp · at its level · small run
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>          28.5%  ●······█▄▄·█ beats 0/6     hard · avg 30%         4.6%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>          28.5%  ●······█▄▄·█ beats 0/6     hard · avg 31%         4.6%  at its level
 <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   68.5%  ▄●·▄····▄▄·█ beats 1/7     easy · avg 76%         1.8%  at its level
 </pre>
 
@@ -54,7 +54,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>                   49.1%  ▄·····●·█▄▄▄ beats 2/7     hard · avg 50%       29%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>                   49.1%  ▄·····●·█▄▄▄ beats 2/7     hard · avg 51%       29%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   25.3%  ▁▁▁▁▁▂●▃▄▆█▃ beats 19/97   hard · avg 32%      3.3%  blunt · at its level
 <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   34.0%  ▂···●▂·▃▂▃██ beats 1/17    medium · avg 53%    1.5%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   50.4%  ▃▁▁▁▁▁▁●▂█▅▁ beats 69/276  medium · avg 73%    1.5%  at its level · noisy
@@ -81,9 +81,9 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
 <a name="paper-2505.22113v1-thinkbench"></a><a href="https://arxiv.org/html/2505.22113v1">THINK-Bench: Evaluating Thinking Effici…</a>        1    2% ▇
 <a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1    2% ▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 48.3
+weighted average                                   = 48.2
 </pre>
 
 <sub>Licences: open-thoughts/OpenThinker2-7B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · allenai/Olmo-3-7B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Think.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2503.01743v2.txt)) · microsoft/Phi-4-mini-reasoning model card ([MIT](../../licenses/card-microsoft-phi-4-mini-reasoning.txt)) · open-thoughts/OpenThinker-7B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

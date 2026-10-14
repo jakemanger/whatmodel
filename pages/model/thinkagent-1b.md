@@ -6,7 +6,7 @@
 
 ThinkAgents · released 2025-01 · 1.24B params · apache-2.0
 
-**score 25.5** ±7.0 · #892 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 25.5** ±7.0 · #894 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

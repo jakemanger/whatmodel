@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-03 · proprietary
 
-**score 39.5** ±4.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.5** ±4.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

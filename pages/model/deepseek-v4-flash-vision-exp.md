@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-08 · 304.6B params · mit
 
-**score 75.7** ±2.3 · #35 of 719 · from 8 benchmark results across 2 sources
+**score 75.5** ±2.3 · #35 of 719 · from 8 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -27,8 +27,8 @@ Beats [GPT-5.4](gpt-5-4.md), [GPT-6 Luna](gpt-6-luna.md), [GPT-5.6 Luna](gpt-5-6
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Terminal-Bench 2.1 (lab)</a>             83.9%  ▁·▁·▁▁▄▃▄█●▇ beats 43/56  hard · avg 22%           25%  small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>        59.3%  ▂····▁▁▁●██▆ beats 8/28   hard · avg 19%           12%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/harness…</a>   27.3%  ▂·▂·●▂···▂▄▄ beats 4/11   very hard · avg 7.1%     11%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Toolathlon-Verified (lab)</a>            75.9%  ▂·▂▂▅▃···▂●█ beats 12/18  hard · avg 33%          8.4%  blunt · at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/harness…</a>   27.3%  ▂·▂·●▂···▂▄▄ beats 4/11   very hard · avg 7.2%     11%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Toolathlon-Verified (lab)</a>            75.9%  ▂·▂▂▅▃···▂●█ beats 12/18  hard · avg 34%          8.4%  blunt · at its level · small run
 </pre>
 
 </details>
@@ -75,7 +75,7 @@ source                                    results  share of the score
 <a name="card3-deepseek-ai-deepseek-v4-flash-vision-exp"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">deepseek-ai/DeepSeek-V4-Flash-Vision-Ex…</a>        7   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2605.07492v2-puredocbench"></a><a href="https://arxiv.org/html/2605.07492v2">How Far Is Document Parsing from Solved…</a>        1    1% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 75.7
+weighted average                                   = 75.5
 </pre>
 
 <sub>Licences: deepseek-ai/DeepSeek-V4-Flash-Vision-Exp model card ([MIT](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

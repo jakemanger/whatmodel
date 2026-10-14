@@ -25,7 +25,7 @@ Beats [LLaVA-OneVision Qwen2 72B (ov-sft)](llava-onevision-qwen2-72b-ov.md), [Ge
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1000.2  ▁▁▂●▂▂▄▅▅▆██ beats 11/145  avg 1068                57%  blunt
 <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language multimo…</a>   39.3%  █·●···█·█·██ beats 1/5     medium · avg 47%        31%  at its level
-<a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   22.5%  ●······▃·▅·█ beats 1/7     very hard · avg 36%    8.7%  too hard for it · noisy
+<a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   22.5%  ●······▃·▅·█ beats 1/7     very hard · avg 37%    8.6%  too hard for it · noisy
 </pre>
 
 </details>

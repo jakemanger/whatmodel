@@ -39,8 +39,8 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval</a>                            36.0%  ▄·●█·▄·▄···█ beats 1/7    easy · avg 81%      6.0%  sharp · at its level · several runs
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP</a>                                 37.0%  ▄···▄·▄●█··█ beats 3/7    medium · avg 64%    1.8%  at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval</a>                            36.0%  ▄·●█·▄·▄···█ beats 1/7    easy · avg 82%      6.0%  sharp · at its level · several runs
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP</a>                                 37.0%  ▄···▄·▄●█··█ beats 3/7    medium · avg 65%    1.8%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    5.7%  ▁▁▁●▁▁▂▂▃█▅▄ beats 4/47   hard · avg 33%      0.4%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    0.8%  ●··▁▂▂▃▂█▃▄▂ beats 4/47   medium · avg 54%    0.3%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.0%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 5/47   medium · avg 36%    0.2%  sharp · too hard for it · noisy
@@ -60,7 +60,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures</a>         52.4%  ●·█··█·██·██ beats 0/6     very easy · avg 87%    1.9%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>            54.0%  ▁●▁▃▁▄▁▁█▃▃▁ beats 2/22    easy · avg 80%         1.0%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   11.1%  ▁·▁▁▂●▄▄▆▄█▄ beats 5/38    medium · avg 49%       0.9%  sharp · too hard for it
-<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>       10.1%  ▃●·▁▁█▇▅·▁·▁ beats 3/22    medium · avg 42%       0.7%  too hard for it
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>       10.1%  ▃●·▁▁█▇▅·▁·▁ beats 3/22    medium · avg 43%       0.7%  too hard for it
 </pre>
 
 </details>
@@ -76,7 +76,7 @@ test                       result  vs the others in its run  difficulty         
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MGSM</a>                        29.1%  ●···█▄··▄··▄ beats 0/6    easy · avg 77%          3.3%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                    23.4%  ●··█▄·▄···▄▄ beats 0/6    easy · avg 80%          1.2%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025</a>                    0.3%  ●█··▄···▄··█ beats 0/6    hard · avg 33%          0.4%  sharp · too hard for it · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>     0.6%  ●▃▄▃▃▃▇▇█▃▂▅ beats 5/193  very hard · avg 8.5%    0.0%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>     0.6%  ●▃▄▃▃▃▇▇█▃▂▅ beats 5/193  very hard · avg 8.6%    0.0%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -90,9 +90,9 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HellaSwag</a>                            59.7%  ●·▄··█▄·▄·▄▄ beats 0/7     easy · avg 87%          3.7%  at its level · several runs
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">WinoGrande</a>                           61.0%  ●···▄▄▄▄···█ beats 0/7     easy · avg 84%          3.5%  at its level
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU-Pro</a>                             19.5%  ▄·····●··█▄█ beats 1/7     medium · avg 47%        2.7%  several runs
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BoolQ</a>                                66.7%  ●▄····▄▄·█·█ beats 0/7     easy · avg 91%          2.5%  at its level
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   38.4%  ▁●▂▂▃█▃▆▅▄▂▃ beats 6/95    easy · avg 66%          2.5%  at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>   856.9  ●·▂▁▄▅▅▃█▄▁▁ beats 0/62    avg 1044                2.2%  typical
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BoolQ</a>                                66.7%  ●▄····▄▄·█·█ beats 0/7     easy · avg 91%          2.5%  at its level
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>   856.9  ●·▂▁▄▅▅▃█▄▁▁ beats 0/62    avg 1045                2.2%  typical
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GPQA (subset unspecified)</a>            25.7%  ▄·●··▄··▄█·█ beats 1/7     hard · avg 39%          2.2%  sharp · too hard for it · several runs
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecified)</a>    15.9%  ●·█·█······█ beats 0/6     medium · avg 40%        2.0%  several runs
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      20.6%  ▁··▁●▂▂▆▅▆█▆ beats 3/70    medium · avg 64%        1.5%  typical
@@ -101,10 +101,10 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">ARC Challenge</a>                        41.4%  ▄····●··▄▄▄█ beats 2/7     easy · avg 78%          1.2%  sharp · noisy
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   12.7%  ▁●▁▁▁▂▂▃▄▆█▃ beats 1/97    hard · avg 32%          1.2%  blunt
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA</a>                           34.6%  ●▄··▄··▄·█▄▄ beats 0/7     medium · avg 60%        1.1%  typical
-<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       41.5%  ●▃▂·▃▃·▅█▂▅▂ beats 0/21    medium · avg 63%        0.8%  blunt · at its level
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       41.5%  ●▃▂·▃▃·▅█▂▅▂ beats 0/21    medium · avg 64%        0.8%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   35.9%  ▃▁▁▁●▁▁▁▂█▅▁ beats 44/276  medium · avg 73%        0.6%  noisy
-<a href="https://arxiv.org/html/2502.02737v1">PIQA</a>                                 72.3%  ▁▁▁▃▃●▇█▄▃▁▁ beats 21/83   easy · avg 86%          0.5%  blunt · at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   32.4%  ▁▁▁▁●▁▁▂▄█▄▃ beats 7/146   easy · avg 83%          0.5%  at its level · noisy
+<a href="https://arxiv.org/html/2502.02737v1">PIQA</a>                                 72.3%  ▁▁▁▃▃●▇█▄▃▁▁ beats 21/83   easy · avg 86%          0.5%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                13.8%  ▁▁●▃▃▃▁█▁▃·▄ beats 2/21    hard · avg 32%          0.5%  blunt
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   79.3%  ▁●▂▃▄▄█▆▃▂▂▁ beats 4/140   very easy · avg 94%     0.5%  blunt · noisy
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   10.5%  ▁▁·▁▂●▄█▄▅▄▄ beats 7/66    hard · avg 31%          0.5%  too hard for it

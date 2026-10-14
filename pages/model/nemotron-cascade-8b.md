@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 8.19B params · nvidia-open-model-license
 
-**score 58.6** ±1.0 · #211 of 719 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 58.5** ±1.0 · #211 of 719 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -26,7 +26,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (
 
 <pre>
 test                      result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13607v2">SWE-bench Verified (lab)</a>   37.2%  ▁▁▁▁▁▁●▄█▆▁▁ beats 26/131   hard · avg 19%      5.9%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2512.13607v2">SWE-bench Verified (lab)</a>   37.2%  ▁▁▁▁▁▁●▄█▆▁▁ beats 26/131   hard · avg 20%      6.0%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2512.13607v2">BFCL v3 (lab)</a>              64.4%  ▁▁▁▁▁▃▅█●▅▄▁ beats 122/170  medium · avg 58%    1.4%  blunt · at its level · small run
 </pre>
 
@@ -40,7 +40,7 @@ Beats [Gemini 2.5 Flash](gemini-2-5-flash.md), [Qwen3.5 4B](qwen3-5-4b.md), [Qwe
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Medium)…</a>    6.4%  ▃▃····▃·●·▃▃ beats 5/7     very hard · avg 2.4%     28%  sharp · too hard for it
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Easy) (…</a>   65.7%  ▄·▄····▄▄▄●▄ beats 5/7     medium · avg 45%         13%  at its level
-<a href="https://arxiv.org/html/2512.13607v2">SWE-bench Verified (lab)</a>             37.2%  ▁▁▁▁▁▁●▄█▆▁▁ beats 26/131  hard · avg 19%          5.9%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2512.13607v2">SWE-bench Verified (lab)</a>             37.2%  ▁▁▁▁▁▁●▄█▆▁▁ beats 26/131  hard · avg 20%          6.0%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–May 20…</a>   71.1%  ▄▄···▄·▄▄●·▄ beats 5/7     medium · avg 57%        5.8%  at its level
 </pre>
 
@@ -73,8 +73,8 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13607v2">GPQA Diamond (lab)</a>                   66.5%  ▁▁▁▁▂▄▅▅●██▄ beats 138/310  hard · avg 46%       11%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2512.13607v2">MMLU (lab)</a>                           83.7%  ▁▁▁▁▁▂▃▅█▃●▃ beats 150/183  medium · avg 73%    5.9%  small run
+<a href="https://arxiv.org/html/2512.13607v2">GPQA Diamond (lab)</a>                   66.5%  ▁▁▁▁▂▄▅▅●██▄ beats 138/310  hard · avg 47%       11%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2512.13607v2">MMLU (lab)</a>                           83.7%  ▁▁▁▁▁▂▃▅█▃●▃ beats 150/183  medium · avg 73%    6.0%  small run
 <a href="https://arxiv.org/html/2512.13607v2">MMLU-Pro (lab)</a>                       75.7%  ▁▁·▁▁▁▃▂▄●█▁ beats 104/188  medium · avg 60%    5.0%  at its level · small run
 <a href="https://arxiv.org/html/2512.13607v2">IFBench (aggregation unspecified)…</a>   40.8%  ▃▇▂▄●▅▂▄▄▆█▇ beats 27/80    hard · avg 31%      3.4%  at its level · small run
 </pre>
@@ -89,7 +89,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                        12  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             0% ▇
-weighted average                        = 58.6
+weighted average                        = 58.5
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

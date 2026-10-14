@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 0.125B params · mit
 
-**score 5.3** ±5.1 · #710 of 719 · from 8 benchmark results across 3 sources
+**score 5.4** ±5.1 · #710 of 719 · from 8 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ EleutherAI · released 2021-03 · 0.125B params · mit
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-125m/results_2024-02-12%2009%3A09%3A48.570004.json">Natural Questions (closed book)</a>       0.5%  ●·▁·▁▂▁▂·▅▂█ beats 0/28    medium · avg 58%        42%  too hard for it
+<a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-125m/results_2024-02-12%2009%3A09%3A48.570004.json">Natural Questions (closed book)</a>       0.5%  ●·▁·▁▂▁▂·▅▂█ beats 0/28    medium · avg 58%        43%  too hard for it
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-125m/results_2023-12-08%2019%3A24%3A13.797490.json">TruthfulQA MC2</a>                       45.6%  ▅▃█●▁▂▅···▁▁ beats 21/31   medium · avg 64%        16%  blunt · at its level
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/EleutherAI/gpt-neo-125m/results_2024-03-01%2012%3A27%3A02.075398.json">TriviaQA</a>                              1.6%  ●··▁█▃▃▁▄▅▄█ beats 0/28    easy · avg 79%          11%  too hard for it · noisy
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   28.8%  ●···▃▃·▃·▃·█ beats 0/7     hard · avg 44%          10%  blunt · too hard for it
@@ -42,7 +42,7 @@ source                              results  share of the score
 <a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                     3   11% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>           1    8% ▇
 prior: pull toward the middle                 11% ▇
-weighted average                             = 5.3
+weighted average                             = 5.4
 </pre>
 
 <sub>Licences: Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

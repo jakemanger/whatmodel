@@ -6,7 +6,7 @@
 
 Salesforce · released 2025-03 · 32.76B params · cc-by-nc-4.0
 
-**score 66.4** ±3.9 · #130 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.3** ±3.9 · #132 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -37,7 +37,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 66.4
+weighted average                                   = 66.3
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

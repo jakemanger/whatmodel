@@ -6,7 +6,7 @@
 
 Google · released 2024-08 · proprietary
 
-**score 55.2** ±0.9 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 55.1** ±0.9 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -60,7 +60,7 @@ source                               results  share of the score
 <a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>        4   66% ▇▇▇▇▇▇▇▇
 <a name="livebench-model-judgment-apache"></a><a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench model judgments</a>                  1   34% ▇▇▇▇
 prior: pull toward the middle                   0% ▇
-weighted average                              = 55.2
+weighted average                              = 55.1
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0))</sub>

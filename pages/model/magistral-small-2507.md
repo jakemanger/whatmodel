@@ -6,7 +6,7 @@
 
 Mistral · released 2025-07 · 23.57B params · apache-2.0
 
-**score 54.5** ±1.5 · #274 of 719 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 54.4** ±1.5 · #276 of 719 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -31,7 +31,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>math · #205 of 398 · 59% of its score</summary>
 
-Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
@@ -58,7 +58,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-mistralai-magistral-small-2509"></a><a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">mistralai/Magistral-Small-2509 model ca…</a>        4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.5
+weighted average                                   = 54.4
 </pre>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt))</sub>

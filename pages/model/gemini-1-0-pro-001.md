@@ -6,7 +6,7 @@
 
 Google · released 2023-12 · proprietary
 
-**score 45.7** ±1.6 · comparison only: no current run option verified · from 6 benchmark results across 4 sources
+**score 45.7** ±1.5 · comparison only: no current run option verified · from 6 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ math            ▁▂●▅▇▅▅█▄▁▁▁   #407 of 462*     34%     
 
 <details><summary>chat &amp; writing · #336 of 463 · 43% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
@@ -36,8 +36,8 @@ Trails [Qwen3 0.6B](qwen3-0-6b.md), [Tulu 2 DPO 7B](tulu-2-dpo-7b.md), [Gemma 7B
 
 <pre>
 test                      result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               11.2%  ▂▂●▆▄█▆▃▅▂▃▄ beats 7/92   hard · avg 32%           31%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    1.1%  ●▃▄▃▃▃▇▇█▃▂▅ beats 9/193  very hard · avg 8.5%    3.1%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               11.2%  ▂▂●▆▄█▆▃▅▂▃▄ beats 7/92   hard · avg 33%           31%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    1.1%  ●▃▄▃▃▃▇▇█▃▂▅ beats 9/193  very hard · avg 8.6%    3.1%  sharp · too hard for it · noisy
 </pre>
 
 </details>

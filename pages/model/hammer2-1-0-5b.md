@@ -6,7 +6,7 @@
 
 MadeAgents · released 2024-12 · 0.49B params · cc-by-nc-4.0
 
-**score 42.8** ±4.2 · #648 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.8** ±4.2 · #649 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-04 · closed weights
 
-**score 70.2** ±0.9 · #80 of 719 · from 15 benchmark results across 6 sources
+**score 70.1** ±0.9 · #80 of 719 · from 15 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -29,8 +29,8 @@ Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mist
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall full-pa…</a>    4.3%  ●···█▄▄▄█▄·█ beats 0/10   very hard · avg 1.7%    4.6%  typical
-<a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>   14.4%  ▅··●·▃·█▃▅██ beats 2/15   very hard · avg 4.9%    2.8%  at its level
-<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   15.3%  ▄●··▄▄▄██·▄█ beats 1/12   very hard · avg 5.8%    2.1%  typical
+<a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507 sta…</a>   14.4%  ▅··●·▃·█▃▅██ beats 2/15   very hard · avg 5.0%    2.8%  at its level
+<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   15.3%  ▄●··▄▄▄██·▄█ beats 1/12   very hard · avg 5.9%    2.1%  typical
 <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>   21.3%  ▁▁·▁▁▁▁▅▃█●█ beats 19/27  very hard · avg 2.4%    1.4%  typical
 </pre>
 
@@ -42,7 +42,7 @@ Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [So
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1356.6  ▁▂▄▃●█▄▇▆▄▁▁ beats 30/119  avg 981        12%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1356.6  ▁▂▄▃●█▄▇▆▄▁▁ beats 30/119  avg 983        12%  sharp
 </pre>
 
 </details>
@@ -65,8 +65,8 @@ Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   42.8%  ▂··▁▁▃▄●█▅▃▃ beats 29/82    very hard · avg 1.2%     31%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      14.6%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 15/63    very hard · avg 0.1%     12%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    93.3%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 153/193  very hard · avg 8.5%    3.0%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      14.6%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 15/63    very hard · avg 0.1%     13%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    93.3%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 153/193  very hard · avg 8.6%    3.0%  sharp · noisy
 </pre>
 
 </details>
@@ -84,12 +84,12 @@ test                             result  vs the others in its run   difficulty  
 
 <details><summary>web search · #63 of 80 · 4.8% of its score</summary>
 
-Beats [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash (Preview, Apr 2026)](deepseek-v4-flash-preview.md) here, though they rank higher overall. Trails [GPT-4o mini (2024-07-18)](gpt-4o-mini-2024-07-18.md), [Mistral Small 3.1 24B (2503)](mistral-small-3-1.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style contr…</a>  1193.2  ▁·▁▁▂▂▂●▅▂▁▁ beats 15/30  avg 1055                2.7%  blunt
-<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   15.3%  ▄●··▄▄▄██·▄█ beats 1/12   very hard · avg 5.8%    2.1%  typical
+<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic, al…</a>   15.3%  ▄●··▄▄▄██·▄█ beats 1/12   very hard · avg 5.9%    2.1%  typical
 </pre>
 
 </details>
@@ -100,8 +100,8 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         88.8%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 166/208  hard · avg 40%          7.9%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                25.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 95/135   very hard · avg 5.9%    3.7%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    33.2%  ▁▁▃▂▃▃●▆█▃▂▅ beats 24/78    very hard · avg 8.0%    2.5%  at its level
-<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (single-shot…</a>    4.1%  ▃▃█▃·●···█▃▃ beats 6/12     very hard · avg 0.8%    2.3%  too hard for it
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    33.2%  ▁▁▃▂▃▃●▆█▃▂▅ beats 24/78    very hard · avg 8.1%    2.5%  at its level
+<a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (single-shot…</a>    4.1%  ▃▃█▃·●···█▃▃ beats 6/12     very hard · avg 0.8%    2.2%  too hard for it
 </pre>
 
 </details>
@@ -119,7 +119,7 @@ source                                    results  share of the score
 <a name="paper-2608.19741v4-thinkingbox"></a><a href="https://arxiv.org/html/2608.19741v4">One Success Isn't Reliability: Thinking…</a>        1    3% ▇
 <a name="paper-2609.38480v2-klinikebench"></a><a href="https://arxiv.org/html/2609.38480v2">KlinikeBench: Evaluating Language Model…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 70.2
+weighted average                                   = 70.1
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Agents' Last Exam ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt)) · Legal Research Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · One Success Isn't Reliability: Thinkingbox ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

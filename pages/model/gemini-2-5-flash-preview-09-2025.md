@@ -6,7 +6,7 @@
 
 Google · released 2025-09 · closed weights
 
-**score 63.2** ±1.3 · comparison only: no current run option verified · from 7 benchmark results across 2 sources
+**score 63.1** ±1.3 · comparison only: no current run option verified · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -27,7 +27,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 <pre>
 test                result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail</a>      61.7%  █●··▄··▄·▄·▄ beats 2/6    medium · avg 37%        10%  at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>   34.2%  █·█●·······█ beats 4/6    very hard · avg 11%    8.3%  sharp · at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>   34.2%  █·█●·······█ beats 4/6    very hard · avg 12%    8.3%  sharp · at its level
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline</a>     56.7%  ▄▄······●█▄▄ beats 2/6    hard · avg 29%         7.5%  at its level
 </pre>
 
@@ -39,8 +39,8 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Ins
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises, tw…</a>   40.0%  ●▄····▄··█·▄ beats 1/6    very hard · avg 7.9%     43%  sharp · at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>                   34.2%  █·█●·······█ beats 4/6    very hard · avg 11%     8.3%  sharp · at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises, tw…</a>   40.0%  ●▄····▄··█·▄ beats 1/6    very hard · avg 8.0%     43%  sharp · at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>                   34.2%  █·█●·······█ beats 4/6    very hard · avg 12%     8.3%  sharp · at its level
 </pre>
 
 </details>
@@ -85,7 +85,7 @@ source                                    results  share of the score
 <a name="card-final-apriel-1-6-15b-thinker"></a><a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-Thinker mo…</a>        5   73% ▇▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   26% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 63.2
+weighted average                                   = 63.1
 </pre>
 
 <sub>Licences: ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 ServiceNow · released 2025-11 · 14.9B params · mit
 
-**score 61.7** ±1.5 · #182 of 719 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 61.6** ±1.4 · #182 of 719 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -26,8 +26,8 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (
 <pre>
 test                      result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail (lab)</a>      66.7%  █▄··●··▄·▄·▄ beats 3/6    medium · avg 37%        13%  at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (lab)</a>   23.0%  ●·█▄·······█ beats 1/6    very hard · avg 11%     10%  sharp · at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline (lab)</a>     58.0%  ▄▄······▄●▄▄ beats 4/6    hard · avg 29%         9.1%  at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (lab)</a>   23.0%  ●·█▄·······█ beats 1/6    very hard · avg 12%     10%  sharp · at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline (lab)</a>     58.0%  ▄▄······▄●▄▄ beats 4/6    hard · avg 29%         9.2%  at its level
 </pre>
 
 </details>
@@ -38,8 +38,8 @@ Beats [Qwen3.5 9B](qwen3-5-9b.md), [Devstral 2 (2512)](devstral-2.md) here, thou
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises, tw…</a>   37.7%  ●▄····▄··█·▄ beats 0/6    very hard · avg 7.9%     52%  sharp · at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (lab)</a>             23.0%  ●·█▄·······█ beats 1/6    very hard · avg 11%      10%  sharp · at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises, tw…</a>   37.7%  ●▄····▄··█·▄ beats 0/6    very hard · avg 8.0%     52%  sharp · at its level
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (lab)</a>             23.0%  ●·█▄·······█ beats 1/6    very hard · avg 12%      10%  sharp · at its level
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions) (la…</a>   56.0%  ▄·····●▄·▄·█ beats 1/5    hard · avg 33%    6.6%  at its level
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions (la…</a>   89.8%  ▄····▄···●▄▄ beats 2/5    easy · avg 68%    4.0%  noisy
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions (la…</a>   89.8%  ▄····▄···●▄▄ beats 2/5    easy · avg 69%    4.0%  noisy
 </pre>
 
 </details>
@@ -73,7 +73,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card-final-apriel-1-6-15b-thinker"></a><a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-Thinker mo…</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.7
+weighted average                                   = 61.6
 </pre>
 
 <sub>Licences: ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt))</sub>

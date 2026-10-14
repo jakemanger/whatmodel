@@ -6,7 +6,7 @@
 
 Katanemo · released 2025-06 · 32.76B params · other (katanemo-research)
 
-**score 58.3** ±4.5 · #248 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.2** ±4.5 · #251 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        9% ▇
-weighted average                                   = 58.3
+weighted average                                   = 58.2
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

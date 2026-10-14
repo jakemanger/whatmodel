@@ -6,7 +6,7 @@
 
 Meta · released 2024-07 · 405B params · llama-3.1
 
-**score 54.9** ±0.5 · #268 of 719 · from 36 benchmark results across 19 sources
+**score 54.9** ±0.5 · #267 of 719 · from 36 benchmark results across 19 sources
 
 ## What it's good at
 
@@ -27,7 +27,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified</a>                   33.4%  ▃···▃·▃·▃●·▃ beats 6/7    hard · avg 19%          3.0%  sharp · at its level
-<a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero-sho…</a>   25.6%  █····███·█●█ beats 5/6    hard · avg 16%          2.7%  sharp · at its level
+<a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero-sho…</a>   25.6%  █····███·█●█ beats 5/6    hard · avg 16%          2.6%  sharp · at its level
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/webarena.json">BrowserGym WebArena (AgentLab Gen…</a>   24.0%  █··●·▄█·▄··▄ beats 2/7    hard · avg 18%          1.6%  typical
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/workarena-l1.json">BrowserGym WorkArena-L1 (AgentLab…</a>   43.3%  █···█●▄·▄█·█ beats 4/10   hard · avg 29%          1.5%  at its level
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Llama-3.1-405b/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   64.6%  ▅····▅●▃▃·▃█ beats 4/11   medium · avg 55%        0.9%  blunt · at its level
@@ -46,9 +46,9 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   37.3%  ▁▁·▁▂▄▆●▅▂·▂ beats 22/31  hard · avg 26%          6.8%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    73.5%  ▁▂▆▃▆█●▃▂·▁▁ beats 32/47  medium · avg 61%        5.8%  sharp · at its level
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   66.2%  ▁·▁▂▄▁▆▄●▆▂▂ beats 39/62  medium · avg 54%        4.4%  at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   66.2%  ▁·▁▂▄▁▆▄●▆▂▂ beats 39/62  medium · avg 54%        4.5%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified</a>                   33.4%  ▃···▃·▃·▃●·▃ beats 6/7    hard · avg 19%          3.0%  sharp · at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>   13.8%  █▄··█·●····▄ beats 5/7    very hard · avg 6.7%    2.9%  sharp · noisy
+<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>   13.8%  █▄··█·●····▄ beats 5/7    very hard · avg 6.8%    2.9%  sharp · noisy
 <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>   29.3%  ▄▄·▄·····█●█ beats 5/7    hard · avg 19%          1.9%  at its level
 <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (official l…</a>    1.5%  ▃···●··▂·▃·▂ beats 10/17  very hard · avg 1.1%    1.3%  sharp · too hard for it
 <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+</a>                                87.0%  ██·██···█●██ beats 5/7    easy · avg 79%          1.2%  typical
@@ -77,10 +77,10 @@ Beats [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md), [GPT-4 Turbo (2024-04-09)](gp
 
 <pre>
 test                         result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                  49.8%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 42/92   hard · avg 32%          6.4%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                  49.8%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 42/92   hard · avg 33%          6.4%  sharp · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">AIME 2024</a>                     20.0%  ▁▁▁▂▁●▁▅███▃ beats 11/85   hard · avg 16%          2.4%  sharp · at its level · small run
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>   96.0%  ▁▄·▁▄█▅▅▅██● beats 40/43   very easy · avg 89%     1.8%  sharp · maxed out
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       9.7%  ▃▃▄●▃▃▇▇█▃▂▅ beats 50/193  very hard · avg 8.5%    1.8%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       9.7%  ▃▃▄●▃▃▇▇█▃▂▅ beats 50/193  very hard · avg 8.6%    1.7%  sharp · noisy
 </pre>
 
 </details>
@@ -94,7 +94,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>   25.0%  ▁▁▃▆█●▁▁·▁▁▁ beats 38/57    hard · avg 18%         5.6%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         50.9%  ▁▁▁▁▂▄●▄▅▇█▅ beats 71/208   hard · avg 40%         4.2%  sharp · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8)</a>          90.4%  ▄▄▄··▄▄··●·█ beats 5/7      easy · avg 81%         1.6%  typical
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1058.4  ▁·▂▁●▅▅▃█▄▁▁ beats 6/62     avg 1044               1.6%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1058.4  ▁·▂▁●▅▅▃█▄▁▁ beats 6/62     avg 1045               1.6%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct)</a>              46.2%  ▄··▄▄···▄▄●▄ beats 6/7      medium · avg 36%       1.3%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      77.2%  ▁··▁▁▂▂▆▅▆█● beats 67/70    medium · avg 64%       1.2%  at its level
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   29.6%  ▁▁▂▁▃▄●▆▄▅▂▃ beats 19/39    very hard · avg 22%    1.2%  blunt

@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · closed weights
 
-**score 76.0** ±0.8 · #34 of 719 · from 10 benchmark results across 4 sources
+**score 75.8** ±0.8 · #34 of 719 · from 10 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -25,8 +25,8 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-10-06-qwen-qwen3-8-max-0902-max-claude-code.json">Terminal-Bench 4.0</a>                   27.0%  █▅▅▅●·▅▃▃▅▅▅ beats 10/20  very hard · avg 0.4%    6.8%  sharp
-<a href="https://arxiv.org/html/2610.04432v2">Video2World V2WScore (coding agen…</a>   26.6%  ●··▄█·▄····▄ beats 1/6    very hard · avg 6.6%    2.9%  at its level
+<a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-10-06-qwen-qwen3-8-max-0902-max-claude-code.json">Terminal-Bench 4.0</a>                   27.0%  █▅▅▅●·▅▃▃▅▅▅ beats 10/20  very hard · avg 0.4%    6.7%  sharp
+<a href="https://arxiv.org/html/2610.04432v2">Video2World V2WScore (coding agen…</a>   26.6%  ●··▄█·▄····▄ beats 1/6    very hard · avg 6.7%    2.9%  at its level
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [Claude Fable 5](claude-fable-5.md), [GPT-5
 
 <pre>
 test                       result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1670.0  ▁▂▄▃▅█▄▇▆●▁▁ beats 110/119  avg 981        11%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1670.0  ▁▂▄▃▅█▄▇▆●▁▁ beats 110/119  avg 983        11%  sharp
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Gemini 3.8 Flash](gemini-3
 test                       result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   65.6%  ▂··▁▁▃▄▄●▅▃▃ beats 51/82    very hard · avg 1.2%     28%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      34.1%  ▁▂▁▂█●▂▂▁▁▁▁ beats 39/63    very hard · avg 0.1%     27%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   100.0%  ▃▃▄▃▃▃▇▇█▃▂● beats 188/193  very hard · avg 8.5%    1.0%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   100.0%  ▃▃▄▃▃▃▇▇█▃▂● beats 188/193  very hard · avg 8.6%    1.0%  sharp · maxed out · noisy
 </pre>
 
 </details>
@@ -59,10 +59,10 @@ test                       result  vs the others in its run    difficulty       
 
 <pre>
 test                        result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>   20.0%  ●▆▆▆▆▂▅▂▂▂·▅ beats 0/30     very hard · avg 1.2%     11%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>   20.0%  ●▆▆▆▆▂▅▂▂▂·▅ beats 0/30     very hard · avg 1.3%     11%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>        40.0%  █▁▁▁▁▂▁▄▂●▁▁ beats 118/135  very hard · avg 5.9%    5.5%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                 92.3%  ▁▁▁▁▂▄▆▄▅▇█● beats 188/208  hard · avg 40%          4.4%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>            47.3%  ▁▁▃▂▃▃▆▆●▃▂▅ beats 48/78    very hard · avg 8.0%    2.5%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>            47.3%  ▁▁▃▂▃▃▆▆●▃▂▅ beats 48/78    very hard · avg 8.1%    2.5%  at its level
 </pre>
 
 </details>
@@ -78,7 +78,7 @@ source                                    results  share of the score
 <a name="terminal-bench-leaderboard-submissions"></a><a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-10-06-qwen-qwen3-8-max-0902-max-claude-code.json">Terminal-Bench 4.0 official leaderboard…</a>        1    7% ▇
 <a name="paper-2610.04432v2-video2world"></a><a href="https://arxiv.org/html/2610.04432v2">Video2World: Benchmarking Coding Agents…</a>        1    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 76.0
+weighted average                                   = 75.8
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt)) · Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>

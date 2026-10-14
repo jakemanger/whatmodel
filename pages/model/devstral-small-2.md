@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 24B params · apache-2.0
 
-**score 60.9** ±2.7 · #186 of 719 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.8** ±2.7 · #186 of 719 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -49,7 +49,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24B-Instruct…</a>        3   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 60.9
+weighted average                                   = 60.8
 </pre>
 
 <sub>Licences: mistralai/Devstral-Small-2-24B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt))</sub>

@@ -6,7 +6,7 @@
 
 Deep Cogito · released 2025-03 · 32.76B params · apache-2.0
 
-**score 61.9** ±7.3 · #197 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.8** ±7.3 · #199 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -34,7 +34,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   76% ▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            24% ▇▇▇
-weighted average                        = 61.9
+weighted average                        = 61.8
 </pre>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

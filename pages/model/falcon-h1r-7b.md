@@ -6,7 +6,7 @@
 
 TII · released 2026-01 · 7.59B params · falcon-llm
 
-**score 60.0** ±1.1 · #195 of 719 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.9** ±1.1 · #195 of 719 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -63,7 +63,7 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>                   61.3%  ●·········▂▂ beats 2/5    hard · avg 45%           15%  sharp · at its level
 <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>           11.1%  █··██···█·█● beats 5/5    very hard · avg 3.8%    7.7%  typical
-<a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                       72.1%  █··█··●██··█ beats 2/5    medium · avg 57%        6.6%  at its level
+<a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                       72.1%  █··█··●██··█ beats 2/5    medium · avg 58%        6.6%  at its level
 <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecified)…</a>   53.4%  ███···█●···█ beats 4/5    hard · avg 35%          2.0%  at its level
 </pre>
 
@@ -77,7 +77,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="report-2601.02346v1"></a><a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reasoning Front…</a>       12   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 60.0
+weighted average                                   = 59.9
 </pre>
 
 <sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt))</sub>

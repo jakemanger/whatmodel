@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 34.39B params · apache-2.0
 
-**score 45.8** ±0.7 · #427 of 719 · from 20 benchmark results across 11 sources
+**score 45.8** ±0.7 · #423 of 719 · from 20 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -15,7 +15,7 @@
 <pre>
 task            vs the others          rank  counts  tests
 coding          ▁▁▁▃▆●█▇▆▄▃▁    #294 of 458     17%      5
-chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #299 of 393*    9.1%      2
+chat &amp; writing  ▁▁▁▃▅●▅█▆▆▇▃   #299 of 393*    9.2%      2
 math            ▁▂▃●▆▅▄█▄▁▁▁    #312 of 398     19%      3
 </pre>
 
@@ -34,14 +34,14 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #299 of 393 · 9.1% of its score</summary>
+<details><summary>chat &amp; writing · #299 of 393 · 9.2% of its score</summary>
 
 Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md) here, though they rank higher overall. Trails [LFM2 350M](lfm2-350m.md), [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty  counts  why
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1126.0  ▂▁▂▁▃▇█●▇▄▂▂ beats 59/95   avg 1201      4.6%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1212.8  ▁▁▁▂▃●▃▆▆▇█▃ beats 74/379  avg 1268      4.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1212.8  ▁▁▁▂▃●▃▆▆▇█▃ beats 74/379  avg 1268      4.6%  blunt
 </pre>
 
 </details>
@@ -53,7 +53,7 @@ Beats [Athene-70B](athene-70b.md), [OLMo 2 32B Instruct (0325)](olmo-2-32b.md), 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          84.1%  ▁▄·▁▄█●▅▅███ beats 17/43  very easy · avg 89%    7.9%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         25.5%  ▂▂▅●▄█▆▃▅▂▃▄ beats 24/92  hard · avg 32%         6.6%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         25.5%  ▂▂▅●▄█▆▃▅▂▃▄ beats 24/92  hard · avg 33%         6.6%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   18.2%  ▁▁▁●█▂▇▇▄··▂ beats 5/38   hard · avg 34%         4.9%  sharp
 </pre>
 
@@ -65,8 +65,8 @@ test                                result  vs the others in its run  difficulty
 test                                          result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             72.8%  ▁·▁▁▄▄●▅█▄▂▁ beats 17/53    easy · avg 77%          23%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        33.5%  ▃▂·▆▆●█▆▅▃▃▃ beats 12/33    medium · avg 41%       5.5%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        43.3%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 37/58    medium · avg 50%       5.5%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  45.6135 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 35/52    avg 45.199 WB-Score    5.2%  sharp
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        43.3%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 37/58    medium · avg 51%       5.5%  at its level
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  45.6135 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 35/52    avg 45.277 WB-Score    5.2%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             11.5%  ▁▁▃●██▁▁·▁▁▁ beats 11/57    hard · avg 18%         4.5%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   32.0%  ▁▁▁▁●▄▆▄▅▇█▅ beats 20/208   hard · avg 40%         3.7%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             46.6%  ▁▂▂●▃█▃▆▅▄▂▃ beats 14/95    easy · avg 66%         3.3%  at its level
@@ -83,7 +83,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>             5   54% ▇▇▇▇▇▇
+<a name="zeroeval-published-results"></a><a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">WildEval ZeroEval published results</a>             5   53% ▇▇▇▇▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              2   11% ▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        2   10% ▇
 <a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>                   1    5% ▇

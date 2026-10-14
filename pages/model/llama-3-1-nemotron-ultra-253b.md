@@ -14,19 +14,19 @@ NVIDIA · released 2025-04 · 253B params · nvidia-open-model
 
 <pre>
 task            vs the others          rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #225 of 300*    4.1%      3
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #225 of 300*    4.2%      3
 coding          ▁▁▁▃▆██▇●▄▃▁    #77 of 458*    1.9%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃    #157 of 393     30%      3
 math            ●··········█        #2 of 2     34%      3
 </pre>
 
-<details><summary>agent tasks · #225 of 300 · 4.1% of its score</summary>
+<details><summary>agent tasks · #225 of 300 · 4.2% of its score</summary>
 
 Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           56.7%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 64/114  medium · avg 52%    4.1%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           56.7%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 64/114  medium · avg 52%    4.2%  blunt · at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   10.0%  ▁▁▁▂▇▆▆▆█▂▄▂ beats 0/111   hard · avg 32%         —  failed run: No function call was ever e…
 <a href="https://arxiv.org/html/2505.00949v5">BFCL v2 Live (lab)</a>                74.1%  █··········● beats 1/1                            —  not counted yet: no other model in the …
 </pre>
@@ -66,7 +66,7 @@ Trails [Llama 3.3 Nemotron Super 49B v1](llama-3-3-nemotron-super-49b-v1.md) her
 test             result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>   72.5%  ▁·▁▁▁▂▅▆●▇▅▁ beats 70/133  medium · avg 39%        14%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>   80.8%  ▁▁▁▂▁▃▁▅█●█▃ beats 55/85   medium · avg 48%        12%  sharp · small run
-<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>    97.0%  ▁▃▂▃▅▇▅▇●▅▂▁ beats 68/84   very easy · avg 90%    8.1%  maxed out · small run
+<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>    97.0%  ▁▃▂▃▅▇▅▇●▅▂▁ beats 68/84   very easy · avg 91%    8.1%  maxed out · small run
 </pre>
 
 </details>
@@ -76,7 +76,7 @@ test             result  vs the others in its run   difficulty           counts 
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>                   76.0%  ▁▁▁▁▂▄▅▅●██▄ beats 176/310  hard · avg 47%     16%  sharp · at its level · small run
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1139.8  ▁·▂▁▄●▅▃█▄▁▁ beats 17/62    avg 1044           12%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1139.8  ▁·▂▁▄●▅▃█▄▁▁ beats 17/62    avg 1045           12%  typical
 </pre>
 
 </details>

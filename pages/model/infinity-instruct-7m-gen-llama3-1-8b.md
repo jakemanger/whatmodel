@@ -6,7 +6,7 @@
 
 BAAI · released 2024-08 · 8.03B params · llama3.1
 
-**score 48.2** ±1.6 · #495 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 48.2** ±1.6 · #496 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -19,7 +19,7 @@ chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #297 of 466*     94% 
 
 <details><summary>chat &amp; writing · #297 of 466 · 94% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run   difficulty        counts  why
@@ -32,7 +32,7 @@ test                            result  vs the others in its run   difficulty   
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.6%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 185/276  medium · avg 73%    5.1%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.6%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 185/276  medium · avg 73%    5.2%  at its level · noisy
 </pre>
 
 </details>

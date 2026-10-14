@@ -6,7 +6,7 @@
 
 Xwin-LM · released 2023-11 · llama2
 
-**score 48.3** ±0.9 · #377 of 719 · from 3 benchmark results across 1 source
+**score 48.2** ±0.9 · #377 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 48.3
+weighted average                                   = 48.2
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>

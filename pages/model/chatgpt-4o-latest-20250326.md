@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-03 · closed weights
 
-**score 64.8** ±1.6 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 64.7** ±1.6 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -25,7 +25,7 @@ Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-fl
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   45.3%  ▂·▂▃▅▂▃●▆▄▂▂ beats 23/49  very hard · avg 8.5%     62%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   45.3%  ▂·▂▃▅▂▃●▆▄▂▂ beats 23/49  very hard · avg 8.6%     62%  sharp · at its level
 </pre>
 
 </details>
@@ -61,7 +61,7 @@ source                         results  share of the score
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>        1   62% ▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          2   37% ▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 64.8
+weighted average                        = 64.7
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

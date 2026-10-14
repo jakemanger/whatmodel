@@ -6,7 +6,7 @@
 
 Snorkel AI · released 2024-01 · apache-2.0
 
-**score 43.8** ±1.4 · #622 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 43.8** ±1.4 · #624 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

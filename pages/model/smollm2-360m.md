@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 0.362B params · apache-2.0
 
-**score 18.6** ±2.7 · #693 of 719 · from 6 benchmark results across 2 sources
+**score 18.7** ±2.7 · #693 of 719 · from 6 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -59,7 +59,7 @@ source                                    results  share of the score
 <a name="card3-huggingfacetb-smollm2-360m-instruct"></a><a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HuggingFaceTB/SmolLM2-360M-Instruct mod…</a>        5   94% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    2% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 18.6
+weighted average                                   = 18.7
 </pre>
 
 <sub>Licences: HuggingFaceTB/SmolLM2-360M-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

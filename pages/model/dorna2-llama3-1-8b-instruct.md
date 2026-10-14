@@ -6,7 +6,7 @@
 
 Part AI · released 2024-12 · 8.03B params · llama3.1
 
-**score 43.4** ±4.8 · #634 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.3** ±4.8 · #638 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -33,7 +33,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                           results  share of the score
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>        1   90% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle              10% ▇
-weighted average                          = 43.4
+weighted average                          = 43.3
 </pre>
 
 <sub>Licences: Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

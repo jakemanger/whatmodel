@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-01 · closed weights
 
-**score 68.5** ±1.7 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
+**score 68.4** ±1.7 · comparison only: no current run option verified · from 5 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -38,7 +38,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md) here, though they rank higher overall. Tra
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1338.9  ▁▂▄▃●█▄▇▆▄▁▁ beats 25/119  avg 981                  47%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1338.9  ▁▂▄▃●█▄▇▆▄▁▁ beats 25/119  avg 983                  47%  sharp
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   37.9%  ▃··▃·▃██▃●▃█ beats 10/14   very hard · avg 2.3%     12%  sharp · noisy
 <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.4%  ▄·····▄·▄●▄█ beats 3/6     hard · avg 28%          7.4%  blunt · at its level
 </pre>
@@ -55,7 +55,7 @@ source                                    results  share of the score
 <a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5-3-codex">OpenAI vendor-reported benchmark scores…</a>        3   40% ▇▇▇▇▇
 <a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                                 1   12% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 68.5
+weighted average                                   = 68.4
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vibe Code Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

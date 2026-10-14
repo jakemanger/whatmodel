@@ -6,7 +6,7 @@
 
 Gradient AI · released 2024-04 · 8.03B params · llama3
 
-**score 46.7** ±5.4 · #532 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.6** ±5.4 · #536 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -34,7 +34,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2   87% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       13% ▇▇
-weighted average                                   = 46.7
+weighted average                                   = 46.6
 </pre>
 
 <sub>Licences: NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE))</sub>

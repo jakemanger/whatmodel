@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 33.4B params · apache-2.0
 
-**score 61.9** ±0.7 · #180 of 719 · from 35 benchmark results across 3 sources
+**score 61.8** ±0.7 · #180 of 719 · from 35 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -28,10 +28,10 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 <pre>
 test                    result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">τ²-bench Telecom (lab)</a>   46.9%  ▃·█········● beats 6/6    very hard · avg 10%      11%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>       6.9%  ▂▅▆▂●▆▂▂█▅▅▂ beats 9/27   very hard · avg 2.3%    3.4%  sharp · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>       6.9%  ▂▅▆▂●▆▂▂█▅▅▂ beats 9/27   very hard · avg 2.4%    3.4%  sharp · small run
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>          57.0%  ▁····▂▁●▆█▃▁ beats 7/44   medium · avg 38%        2.2%  at its level
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>         54.4%  ▁▁·▂▁▃▂●█▅▂▃ beats 15/42  hard · avg 29%          1.8%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>            71.7%  █▄··▄█·█▄█▄● beats 12/13  medium · avg 59%        1.7%  blunt · at its level
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>         54.4%  ▁▁·▂▁▃▂●█▅▂▃ beats 15/42  hard · avg 30%          1.8%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>            71.7%  █▄··▄█·█▄█▄● beats 12/13  medium · avg 60%        1.7%  blunt · at its level
 </pre>
 
 </details>
@@ -85,7 +85,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MathVista (testmini) (lab)</a>           85.9%  ▃··▃▅·▃█▅▅▅● beats 16/16  medium · avg 69%       3.9%  typical
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMMU Pro (lab)</a>                       68.1%  ▃·█·▅▃▃▃▅▅▃● beats 15/16  medium · avg 46%       3.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">HallusionBench (lab)</a>                 67.4%  ▃·▃·▅▃▅▅▃▅█● beats 16/16  medium · avg 55%       1.8%  blunt · at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">RealWorldQA (lab)</a>                    78.4%  ▅▃·▃▅▅·█·▃▅● beats 14/16  easy · avg 70%         1.2%  blunt
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">RealWorldQA (lab)</a>                    78.4%  ▅▃·▃▅▅·█·▃▅● beats 14/16  easy · avg 71%         1.2%  blunt
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">ChartQA (lab)</a>                        89.0%  ▂··▂·▂▃·▅▂●█ beats 12/17  easy · avg 85%         1.2%  blunt
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">ScreenSpot-Pro (lab)</a>                 57.1%  ▂····▂▄··▂●▆ beats 5/11   medium · avg 46%       1.1%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">DocVQA (lab)</a>                         96.1%  ▃··▅▃▅▃█▃●▅▅ beats 12/17  very easy · avg 94%    1.0%  blunt · maxed out
@@ -104,11 +104,11 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      59.0%  ▄··▄·▄▄▄█▄█● beats 11/11    medium · avg 37%    3.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                     91.9%  ▃··▃·▃·█▃▅▃● beats 11/11    easy · avg 79%      3.7%  typical
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">LVBench (lab)</a>                        62.6%  ▅··▃·▅▃▃·●·▃ beats 8/10     hard · avg 51%      2.8%  at its level
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">AndroidWorld (lab)</a>                   63.7%  ▃··▃▅▃▃▃▃▃·● beats 10/11    medium · avg 43%    2.8%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">AndroidWorld (lab)</a>                   63.7%  ▃··▃▅▃▃▃▃▃·● beats 10/11    medium · avg 43%    2.7%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">Video-MME (without subtitles) (la…</a>   77.3%  ▃··█··▅█▃▃●▃ beats 12/13    medium · avg 66%    2.3%  blunt · at its level
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag</a>                            62.1%  ▁▁▁▁▂▂▃●█▆▅▃ beats 23/85    medium · avg 64%    1.3%  at its level · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag</a>                            62.1%  ▁▁▁▁▂▂▃●█▆▅▃ beats 23/85    medium · avg 65%    1.3%  at its level · small run
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MVBench (lab)</a>                        73.2%  ▂▂▂·▂█··▆●·▂ beats 11/13    medium · avg 67%    1.0%  blunt · at its level
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                                 71.5%  ▁▁▁▁▁▂▃▅█●▆▃ beats 120/183  medium · avg 71%    0.8%  noisy · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                                 71.5%  ▁▁▁▁▁▂▃▅█●▆▃ beats 120/183  medium · avg 72%    0.8%  noisy · small run
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA</a>                                 88.0%  ▁▁▁▃▃▄▇█▄▃▁● beats 82/83    easy · avg 84%      0.3%  blunt · small run
 </pre>
 
@@ -124,7 +124,7 @@ source                                 results  share of the score
 <a name="paper-2601.03286v1-hyperclova-x-32b-think"></a><a href="https://arxiv.org/html/2601.03286v1#S5.T5">HyperCLOVA X 32B Think</a>                       7   13% ▇▇
 <a name="card2-allenai-olmo-3-1-32b-think"></a><a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">allenai/Olmo-3.1-32B-Think model card</a>        2    2% ▇
 prior: pull toward the middle                     0% ▇
-weighted average                                = 61.9
+weighted average                                = 61.8
 </pre>
 
 <sub>Licences: HyperCLOVA X 32B Think ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · allenai/Olmo-3.1-32B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3.1-32B-Think.txt))</sub>

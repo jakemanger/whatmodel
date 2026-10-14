@@ -6,7 +6,7 @@
 
 TNG Technology Consulting · released 2025-07 · 684.53B params (37B active) · mit
 
-**score 51.1** ±10.2 · #413 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.0** ±10.2 · #417 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -33,7 +33,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                             results  share of the score
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1   54% ▇▇▇▇▇▇
 prior: pull toward the middle                46% ▇▇▇▇▇▇
-weighted average                            = 51.1
+weighted average                            = 51.0
 </pre>
 
 <sub>Licences: Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

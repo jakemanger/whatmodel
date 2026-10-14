@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-04 · proprietary
 
-**score 63.4** ±1.1 · comparison only: no current run option verified · from 8 benchmark results across 6 sources
+**score 63.3** ±1.1 · comparison only: no current run option verified · from 8 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -26,7 +26,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though th
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   25.8%  █·▃▃·█▅▅●▅▃▅ beats 13/18   very hard · avg 5.8%    8.5%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   25.8%  █·▃▃·█▅▅●▅▃▅ beats 13/18   very hard · avg 5.9%    8.5%  sharp
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              63.3%  ▁▁▁▁▁▃▅█●▄▁▁ beats 89/114  medium · avg 52%        2.3%  blunt · at its level
 </pre>
 
@@ -38,7 +38,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gem
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   53.3%  ▂·▂▃▅▂▃●▆▄▂▂ beats 29/49  very hard · avg 8.5%     33%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   53.3%  ▂·▂▃▅▂▃●▆▄▂▂ beats 29/49  very hard · avg 8.6%     33%  sharp · at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   60.2%  ▁··▁·▁▁▁●█▇█ beats 14/45  hard · avg 32%          5.6%  at its level
 </pre>
 
@@ -50,8 +50,8 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-mediu
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               88.7%  ▂▂▅▆▄█▆▃●▂▃▄ beats 76/92   hard · avg 32%           13%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   55.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 82/193  very hard · avg 8.5%     11%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               88.7%  ▂▂▅▆▄█▆▃●▂▃▄ beats 76/92   hard · avg 33%           13%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   55.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 82/193  very hard · avg 8.6%     11%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -62,7 +62,7 @@ Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [Cla
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   25.8%  █·▃▃·█▅▅●▅▃▅ beats 13/18  very hard · avg 5.8%    8.5%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   25.8%  █·▃▃·█▅▅●▅▃▅ beats 13/18  very hard · avg 5.9%    8.5%  sharp
 </pre>
 
 </details>
@@ -72,7 +72,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         75.8%  ▁▁▁▁▂▄▆▄●▇█▅ beats 114/208  hard · avg 40%     20%  sharp · at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1176.6  ▁·▂▁▄▅●▃█▄▁▁ beats 28/62    avg 1044          6.9%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1176.6  ▁·▂▁▄▅●▃█▄▁▁ beats 28/62    avg 1045          6.9%  typical
 </pre>
 
 </details>
@@ -90,7 +90,7 @@ source                                    results  share of the score
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    6% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 63.4
+weighted average                                   = 63.3
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Finance Agent Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

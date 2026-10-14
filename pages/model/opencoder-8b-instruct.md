@@ -6,7 +6,7 @@
 
 INF (infly) · released 2024-11 · 7.77B params · other (inf)
 
-**score 51.2** ±0.9 · #323 of 719 · from 5 benchmark results across 2 sources
+**score 51.1** ±0.9 · #323 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -49,7 +49,7 @@ source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 51.2
+weighted average                                   = 51.1
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

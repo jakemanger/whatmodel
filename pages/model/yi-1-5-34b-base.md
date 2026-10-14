@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 34.39B params · apache-2.0
 
-**score 47.2** ±2.5 · #396 of 719 · from 4 benchmark results across 3 sources
+**score 47.1** ±2.5 · #396 of 719 · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -20,7 +20,7 @@
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              40.0%  ▂▁▁▄▂▅●█▆▂▂▂ beats 28/58    medium · avg 50%     68%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              40.0%  ▂▁▁▄▂▅●█▆▂▂▂ beats 28/58    medium · avg 51%     68%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   72.0%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 191/276  medium · avg 73%     12%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   95.9%  ▃·▁▁▂▁▂▅█▇▄● beats 100/100  medium · avg 68%     10%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   88.3%  ▁▁▁▁▁▁▁▂▄█●▃ beats 112/146  easy · avg 83%      7.1%  at its level · noisy
@@ -38,7 +38,7 @@ source                           results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                  2   17% ▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   12% ▇
 prior: pull toward the middle               3% ▇
-weighted average                          = 47.2
+weighted average                          = 47.1
 </pre>
 
 <sub>Licences: BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

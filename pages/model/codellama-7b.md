@@ -27,10 +27,10 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            37.8%  ▁·▁▁▃●▆▅█▃▁▁ beats 22/99  easy · avg 79%          36%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           35.4%  ▁·▁▁▁▃●▄▄█▃▁ beats 23/99  easy · avg 74%          14%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 39.0%  █·▅▃▃●▅▃▃▅·▅ beats 7/15   easy · avg 82%         9.4%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.2%  ▁·▂▁▂●▅█▄▄▁▂ beats 8/35   medium · avg 64%       3.9%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.2%  ▁·▂▁▂●▅█▄▄▁▂ beats 8/35   medium · avg 65%       3.9%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                46.8%  ▁···▁▁▂●▇█▆▂ beats 16/75  easy · avg 68%         3.0%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>                     35.9%  ▁··▁▅●█▇▁··▁ beats 6/22   medium · avg 59%       2.7%  at its level · several runs
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                              21.5%  ▄▄·▄●█▄█·█·▄ beats 3/12   medium · avg 52%       2.3%  typical
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                              21.5%  ▄▄·▄●█▄█·█·▄ beats 3/12   medium · avg 53%       2.3%  typical
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>                     34.2%  ▁·▂●▁█▁▂···▁ beats 6/22   medium · avg 55%       2.3%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   13.9%  ▄●█▃▄▇▄▁▇▃·▁ beats 7/35   medium · avg 49%       2.1%  typical
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            58.7%  ▃▃▃·▆●▃█▃▂▂▅ beats 10/25  very easy · avg 86%    2.0%  sharp · at its level
@@ -46,7 +46,7 @@ Trails [Qwen2 0.5B Instruct](qwen2-0-5b.md), [Granite 3.0 1B-A400M Instruct](gra
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   12.0%  ●▂▅█▅▅▃▆···▂ beats 1/25   easy · avg 75%    4.7%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">MATH</a>     4.1%  ▃·●····▃···█ beats 1/5    hard · avg 30%    1.9%  several runs
+<a href="https://arxiv.org/html/2405.04324v1">MATH</a>     4.1%  ▃·●····▃···█ beats 1/5    hard · avg 30%    1.8%  several runs
 </pre>
 
 </details>
@@ -56,15 +56,15 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       43.4%  ▁·····▂●▂▅·▁ beats 4/25   easy · avg 77%         3.0%  sharp
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              28.7%  ▂▁▁●▂▅▇█▆▂▂▂ beats 8/58   medium · avg 50%       2.3%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              28.7%  ▂▁▁●▂▅▇█▆▂▂▂ beats 8/58   medium · avg 51%       2.3%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 33.8%  ●▁▃▃▄█▄▁█··▁ beats 0/25   easy · avg 74%         2.1%  at its level · several runs
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">ARC Challenge</a>                        34.5%  ▆▁▁▂▂●▇█▄▃▃▂ beats 29/97  easy · avg 80%         1.5%  sharp · at its level
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">WinoGrande</a>                           62.3%  ▁···▂▁▁●█▇▃▁ beats 30/87  easy · avg 87%         0.9%  at its level
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">Natural Questions (closed book)</a>      11.0%  ▁·▁·▁▂▁▂●▄▃█ beats 10/33  medium · avg 57%       0.9%  typical
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">HellaSwag</a>                            62.9%  ▁▁▁▁▂▂▃●█▆▅▃ beats 27/85  very easy · avg 90%    0.6%  at its level
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">TriviaQA</a>                             34.9%  ▁·▁▁▄▁▂▂●▁▂█ beats 16/38  easy · avg 85%         0.5%  at its level · noisy
-<a href="https://arxiv.org/html/2310.06825v1#S3.T2">ARC Easy</a>                             59.4%  ▁▂▃▂▃▅●█▇▆▄▆ beats 20/65  easy · avg 88%         0.4%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   47.6%  ▂··▁▃▂▂●█▅▁▂ beats 11/25  medium · avg 61%       0.4%  blunt · at its level
+<a href="https://arxiv.org/html/2310.06825v1#S3.T2">ARC Easy</a>                             59.4%  ▁▂▃▂▃▅●█▇▆▄▆ beats 20/65  easy · avg 88%         0.4%  at its level
 <a href="https://arxiv.org/html/2310.06825v1#S3.T2">PIQA</a>                                 72.8%  ▁▁▁▃▃●▇█▄▃▁▁ beats 24/83  easy · avg 87%         0.3%  blunt · at its level
 </pre>
 

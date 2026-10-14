@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-04 · 32.76B params · apache-2.0
 
-**score 54.4** ±1.4 · #277 of 719 · from 6 benchmark results across 2 sources
+**score 54.4** ±1.4 · #275 of 719 · from 6 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -15,7 +15,7 @@ Open Thoughts · released 2025-04 · 32.76B params · apache-2.0
 <pre>
 task            vs the others          rank  counts  tests
 chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #261 of 393*     24%      2
-math            ▁▂▃▅▆▅●█▄▁▁▁    #168 of 398     49%      3
+math            ▁▂▃▅▆▅●█▄▁▁▁    #168 of 398     48%      3
 </pre>
 
 <details><summary>chat &amp; writing · #261 of 393 · 24% of its score</summary>
@@ -24,13 +24,13 @@ Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>    3.2%  ●·▃▅▅·▃█▆▂▂▂ beats 0/22   very hard · avg 12%     20%  sharp
-<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   23.6%  ▆▂▂●▂▂▃█▂▃·▂ beats 6/22   hard · avg 19%         4.3%  sharp · at its level · noisy
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>    3.2%  ●·▃▅▅·▃█▆▂▂▂ beats 0/22   very hard · avg 13%     20%  sharp
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   23.6%  ▆▂▂●▂▂▃█▂▃·▂ beats 6/22   hard · avg 20%         4.3%  sharp · at its level · noisy
 </pre>
 
 </details>
 
-<details><summary>math · #168 of 398 · 49% of its score</summary>
+<details><summary>math · #168 of 398 · 48% of its score</summary>
 
 Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md), [GPT-4.1](gpt-4-1.md) here, though they rank higher overall. Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.md) here, though they rank lower overall.
 

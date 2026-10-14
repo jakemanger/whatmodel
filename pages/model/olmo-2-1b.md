@@ -25,7 +25,7 @@ Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Cod
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (lab)</a>      70.1%  ▁▃▁▃▁●▁▁█▃▃▁ beats 8/22   easy · avg 80%      6.0%  at its level
-<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>    9.1%  ▃●·▁▁█▇▅·▁·▁ beats 2/22   medium · avg 42%    5.6%  typical
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>    9.1%  ▃●·▁▁█▇▅·▁·▁ beats 2/22   medium · avg 43%    5.6%  typical
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test                             result  vs the others in its run  difficulty   
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           40.0%  ▁●·▁·▁▁█·▃▃▅ beats 2/22    easy · avg 77%       26%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 35.0%  ●▄·▁▁·▅█·▄▄▁ beats 0/22    easy · avg 75%       20%  sharp
-<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 48.7%  ▃▃●·▃▃·▅█▂▅▂ beats 4/21    medium · avg 63%    4.7%  blunt · at its level
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 48.7%  ▃▃●·▃▃·▅█▂▅▂ beats 4/21    medium · avg 64%    4.7%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   45.0%  ▃▁▁▁▁▁●▁▂█▅▁ beats 60/276  medium · avg 73%    3.7%  at its level · noisy
 <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          12.9%  ▁●▁▃▃▃▁█▁▃·▄ beats 1/21    hard · avg 32%      3.4%  blunt
 </pre>

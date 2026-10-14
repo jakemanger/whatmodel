@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-11 · 1.558B params · mit
 
-**score 11.4** ±1.1 · #705 of 719 · from 29 benchmark results across 8 sources
+**score 11.5** ±1.1 · #705 of 719 · from 29 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -44,7 +44,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                        38.6%  █·····█·█··● beats 3/3     easy · avg 83%         4.0%  at its level
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                                 69.0%  ▄·▄·●··▆▂··▂ beats 6/12    very easy · avg 96%    2.8%  at its level
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                     67.6%  █····█···█·● beats 3/3     easy · avg 92%         2.2%  blunt · at its level
-<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           39.4%  ●▄····█▄▄··▄ beats 0/7     medium · avg 63%       1.9%  blunt
+<a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                           39.4%  ●▄····█▄▄··▄ beats 0/7     medium · avg 63%       2.0%  blunt
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">PubMedQA</a>                             60.4%  ▂·▂●·▄▂▄▄▂█▂ beats 4/17    medium · avg 75%       1.6%  blunt · at its level · several runs
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">MedMCQA</a>                              30.9%  ▂▂··●▄▂▂·▄██ beats 3/17    medium · avg 68%       1.2%  too hard for it
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/openai-community/gpt2-xl/results_2024-04-29%2013%3A09%3A52.222616.json">MedQA (USMLE, 4 options)</a>             28.0%  ▁▁··●▁▁··▄▃█ beats 4/17    easy · avg 76%         1.1%  sharp · too hard for it
@@ -62,7 +62,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="acl-2021-emnlp-main-564"></a><a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Surface Form Competition</a>                        7   41% ▇▇▇▇▇
+<a name="acl-2021-emnlp-main-564"></a><a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Surface Form Competition</a>                        7   40% ▇▇▇▇▇
 <a name="paper-2309.05463v1"></a><a href="https://arxiv.org/html/2309.05463v1">Textbooks Are All You Need II: phi-1.5 …</a>        8   25% ▇▇▇
 <a name="eleutherai-gpt-j-6b-card"></a><a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">EleutherAI GPT-J-6B model card</a>                  4   19% ▇▇
 <a name="acl-2021-findings-acl-404-prost"></a><a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST</a>                                           1    7% ▇
@@ -71,7 +71,7 @@ source                                    results  share of the score
 <a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                           3    1% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 11.4
+weighted average                                   = 11.5
 </pre>
 
 <sub>Licences: Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · Open Medical-LLM Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

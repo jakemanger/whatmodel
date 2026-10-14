@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-08 · 3.82B params · mit
 
-**score 43.3** ±0.6 · #477 of 719 · from 38 benchmark results across 10 sources
+**score 43.3** ±0.5 · #477 of 719 · from 38 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -80,15 +80,15 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU (lab)</a>                           65.5%  █▄█●▄▄·▄▄··▄ beats 5/10     easy · avg 77%         4.1%  at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           43.0%  ●▄▄▄█▄▂·▄█·▄ beats 1/23     medium · avg 58%       4.0%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (lab)</a>                 63.1%  ██▄·●▄·▄▄··▄ beats 5/10     easy · avg 74%         3.8%  sharp · at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA (lab)</a>                     81.2%  ▂··▄●▂·▂···▄ beats 6/10     easy · avg 87%         3.7%  at its level
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            44.2%  ●▄▄▂▂█▂▄▂█▂▄ beats 0/22     medium · avg 63%       3.6%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA (lab)</a>                     81.2%  ▂··▄●▂·▂···▄ beats 6/10     easy · avg 88%         3.7%  at its level
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            44.2%  ●▄▄▂▂█▂▄▂█▂▄ beats 0/22     medium · avg 63%       3.7%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro (lab)</a>                       47.4%  █▄▄·█●▄▄·▄·▄ beats 6/10     medium · avg 57%       2.4%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft) (la…</a>   51.8%  █▄●██··█···▄ beats 3/10     easy · avg 65%         2.3%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft) (la…</a>   51.8%  █▄●██··█···▄ beats 3/10     easy · avg 66%         2.3%  at its level
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   40.2%  ▁▂●▂▃█▃▆▅▄▂▃ beats 9/95     easy · avg 66%         2.0%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>    6.4%  ▁▁●▆██▁▁·▁▁▁ beats 3/57     hard · avg 18%         2.0%  sharp · too hard for it
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande (lab)</a>                     72.2%  ▃····▃▃█▃·●▅ beats 8/10     medium · avg 74%       1.5%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag (lab)</a>                      72.2%  ▃●█·▃▃▃···▃▃ beats 1/10     easy · avg 84%         1.4%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ (lab)</a>                          77.7%  ▃··▃··●█▃·▃▃ beats 2/10     easy · avg 85%         1.3%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ (lab)</a>                          77.7%  ▃··▃··●█▃·▃▃ beats 2/10     easy · avg 86%         1.3%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA (lab)</a>                     75.1%  ▃·▃▅▅●·▃···▃ beats 6/10     easy · avg 78%         1.2%  blunt · at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   25.4%  ▁▁▁▁▁▂●▃▄▆█▃ beats 20/97    hard · avg 32%         1.2%  blunt · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified) (lab)</a>      26.6%  █··▄●··▂▂··▄ beats 6/10     very hard · avg 33%    0.6%  sharp · too hard for it · noisy

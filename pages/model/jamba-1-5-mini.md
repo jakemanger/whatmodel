@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2024-08 · 52B params (12B active) · jamba-open-model-license
 
-**score 46.4** ±1.3 · #412 of 719 · from 14 benchmark results across 4 sources
+**score 46.3** ±1.3 · #412 of 719 · from 14 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -42,7 +42,7 @@ test             result  vs the others in its run    difficulty      counts  why
 
 <details><summary>chat &amp; writing · #281 of 393 · 23% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
@@ -72,7 +72,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (lab)</a>      32.3%  ▂▁▂▂▄●▆▃▅█▄▃ beats 28/104   hard · avg 37%          10%  sharp · small run
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                           69.7%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 111/183  easy · avg 77%          10%  at its level · small run
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU-Pro (lab)</a>                       39.8%  ▁▁·▁▁▁●▂▄▅█▁ beats 25/188   medium · avg 50%       7.3%  at its level · small run
-<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            92.8%  ▁▁·▁·▂▃▄█▂·● beats 22/22    easy · avg 83%         3.6%  typical
+<a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            92.8%  ▁▁·▁·▂▃▄█▂·● beats 22/22    easy · avg 83%         3.5%  typical
 <a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>                  85.7%  ▆▁▁▂▂▅▇█▄▃●▂ beats 93/97    easy · avg 81%         2.7%  sharp · at its level · noisy · small run
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                           90.0%  ▄··▂▄▂▆██▄▄● beats 21/21    easy · avg 68%         1.3%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   97.1%  ▁▁▂▃▄▄█●▃▂▂▁ beats 106/140  very easy · avg 94%    1.0%  blunt · maxed out · noisy
@@ -91,7 +91,7 @@ source                                    results  share of the score
 <a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2    5% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 46.4
+weighted average                                   = 46.3
 </pre>
 
 <sub>Licences: Jamba-1.5: Hybrid Transformer-Mamba Models at Scale ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

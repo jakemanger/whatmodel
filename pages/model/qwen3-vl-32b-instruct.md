@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 33.4B params · apache-2.0
 
-**score 60.1** ±0.8 · #194 of 719 · from 25 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.0** ±0.8 · #194 of 719 · from 25 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -27,7 +27,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 
 <pre>
 test           result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=22">BFCL v3 (lab)</a>   70.2%  █▄··▄█·█▄█●█ beats 11/13  medium · avg 59%    2.1%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=22">BFCL v3 (lab)</a>   70.2%  █▄··▄█·█▄█●█ beats 11/13  medium · avg 60%    2.1%  blunt · at its level
 </pre>
 
 </details>
@@ -80,7 +80,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMMU Pro (lab)</a>                       65.3%  ▃·█·▅▃▃▃▅▅▃● beats 14/16  medium · avg 46%       4.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">HallusionBench (lab)</a>                 63.8%  ▃·▃·▅▃▅▅▃▅●▅ beats 12/16  medium · avg 55%       2.2%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">ChartQA (lab)</a>                        88.5%  ▂··▂·▂▃·▅▂●█ beats 9/17   easy · avg 85%         1.5%  blunt
-<a href="https://arxiv.org/pdf/2511.21631v2#page=16">RealWorldQA (lab)</a>                    79.0%  ▅▃·▃▅▅·█·▃▅● beats 15/16  easy · avg 70%         1.5%  blunt
+<a href="https://arxiv.org/pdf/2511.21631v2#page=16">RealWorldQA (lab)</a>                    79.0%  ▅▃·▃▅▅·█·▃▅● beats 15/16  easy · avg 71%         1.5%  blunt
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">ScreenSpot-Pro (lab)</a>                 57.9%  ▂····▂▄··▂●▆ beats 7/11   medium · avg 46%       1.4%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">DocVQA (lab)</a>                         96.9%  ▃··▅▃▅▃█▃█▅● beats 16/17  very easy · avg 94%    1.3%  blunt · maxed out
 <a href="https://arxiv.org/pdf/2511.21631v2#page=16">CC-OCR (lab)</a>                         80.3%  ▃··▃▅·▅▅·█●▃ beats 11/13  easy · avg 74%         1.0%  blunt
@@ -113,7 +113,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=16">Qwen (lab)</a>                          25  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             0% ▇
-weighted average                        = 60.1
+weighted average                        = 60.0
 </pre>
 
 ## How to run it

@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-04 · closed weights
 
-**score 71.6** ±0.8 · #69 of 719 · from 15 benchmark results across 6 sources
+**score 71.4** ±0.8 · #69 of 719 · from 15 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -27,7 +27,7 @@ Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md), [Mist
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-2_sierra_2026-05-05/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   18.0%  ▃▃▂●·▆▃▂█▅▅▂ beats 5/25   very hard · avg 4.1%    3.8%  at its level
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-2_sierra_2026-05-05/submission.json">τ³-bench banking_knowledge (v1.0.…</a>   18.0%  ▃▃▂●·▆▃▂█▅▅▂ beats 5/25   very hard · avg 4.2%    3.8%  at its level
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Trails [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md), [Ne
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1374.1  ▁▂▄▃●█▄▇▆▄▁▁ beats 37/119  avg 981        10%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1374.1  ▁▂▄▃●█▄▇▆▄▁▁ beats 37/119  avg 983        10%  sharp
 </pre>
 
 </details>
@@ -56,13 +56,13 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>math · #53 of 398 · 45% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [A.X K2 (688B-A33B)](ax-k2.md) here, though they rank lower overall.
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [DeepSeek V4 Pro (Preview, Apr 2026)](deepseek-v4-pro-preview.md) here, though they rank higher overall. Trails [INTELLECT-3](intellect-3.md), [A.X K2 (688B-A33B)](ax-k2.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   44.9%  ▂··▁▁▃▄●█▅▃▃ beats 30/82    very hard · avg 1.2%     29%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      17.1%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 18/63    very hard · avg 0.1%     14%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    92.2%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 152/193  very hard · avg 8.5%    2.1%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    92.2%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 152/193  very hard · avg 8.6%    2.1%  sharp · noisy
 </pre>
 
 </details>
@@ -74,7 +74,7 @@ Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6
 <pre>
 test                               result  vs the others in its run    difficulty  counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1255.4  ▁▁▂▂▂▂▄▅▅▆●█ beats 106/145  avg 1068      4.0%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1439.4  ▁▁▃▃●▃▇█▅▇▄▅ beats 8/37     avg 1335      1.9%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1439.4  ▁▁▃▃●▃▇█▅▇▄▅ beats 8/37     avg 1336      1.9%  blunt
 </pre>
 
 </details>
@@ -85,11 +85,11 @@ test                               result  vs the others in its run    difficult
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         89.3%  ▁▁▁▁▂▄▆▄▅▇●▅ beats 167/208  hard · avg 40%          6.3%  sharp
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/grok-4.20-beta-0309b-reasoning">ARC-AGI-2 public evaluation set (…</a>   63.6%  █··▂▅▁▃▁▃·●▃ beats 21/24    very hard · avg 0.3%    5.8%  sharp · at its level · noisy
-<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/grok-4.20-beta-0309b-reasoning">ARC-AGI-1 public evaluation set (…</a>   95.5%  ▁·▇▃▁·█▇▁·●▃ beats 23/27    very hard · avg 4.1%    3.8%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/grok-4.20-beta-0309b-reasoning">ARC-AGI-1 public evaluation set (…</a>   95.5%  ▁·▇▃▁·█▇▁·●▃ beats 23/27    very hard · avg 4.2%    3.8%  sharp · at its level · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                24.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 92/135   very hard · avg 5.9%    3.7%  sharp · noisy
-<a href="https://arxiv.org/html/2602.17831v2">The Token Games Elo (10-model puz…</a>  1057.0  █··▄●··▄·▄·▄ beats 3/7      avg 815                 3.4%  typical
+<a href="https://arxiv.org/html/2602.17831v2">The Token Games Elo (10-model puz…</a>  1057.0  █··▄●··▄·▄·▄ beats 3/7      avg 816                 3.4%  typical
 <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                        19.3%  ●·▅▅█·▅█▅▃▃▃ beats 0/17     very hard · avg 11%     3.3%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    30.2%  ▁▁▃▂▃●▆▆█▃▂▅ beats 19/78    very hard · avg 8.0%    2.2%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    30.2%  ▁▁▃▂▃●▆▆█▃▂▅ beats 19/78    very hard · avg 8.1%    2.2%  at its level
 </pre>
 
 </details>
@@ -100,14 +100,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        6   57% ▇▇▇▇▇▇▇
+<a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        6   58% ▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     4   22% ▇▇▇
 <a name="arcprize-model-baseline-outputs"></a><a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/grok-4.20-beta-0309b-reasoning">ARC Prize Foundation model_baseline out…</a>        2   10% ▇
 <a name="tau2-bench-leaderboard-sierra"></a><a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-2_sierra_2026-05-05/submission.json">τ²/τ³-bench leaderboard: Sierra's own e…</a>        1    4% ▇
 <a name="paper-2602.17831v2"></a><a href="https://arxiv.org/html/2602.17831v2">The Token Games: Evaluating Language Mo…</a>        1    3% ▇
 <a name="paper-2605.10912v1-wildclawbench"></a><a href="https://arxiv.org/html/2605.10912v1">WildClawBench: A Benchmark for Real-Wor…</a>        1    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 71.6
+weighted average                                   = 71.4
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · The Token Games: Evaluating Language Model Reasoning with Puzzle Duels ([CC BY-SA 4.0](../../licenses/paper-2602.17831v2-CC-BY-SA-4.0.txt)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

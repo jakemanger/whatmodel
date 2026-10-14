@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-04 · 3.6B params · cc-by-sa-4.0
 
-**score 3.6** ±1.4 · #713 of 719 · from 12 benchmark results across 2 sources
+**score 3.7** ±1.4 · #713 of 719 · from 12 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -45,7 +45,7 @@ source                           results  share of the score
 <a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">Stability AI (lab)</a>                    11   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    1% ▇
 prior: pull toward the middle               1% ▇
-weighted average                          = 3.6
+weighted average                          = 3.7
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -6,7 +6,7 @@
 
 Arcee AI · released 2026-01 · 398B params (13B active) · openmdw-1.1
 
-**score 58.9** ±2.1 · #207 of 719 · from 5 benchmark results across 3 sources
+**score 58.8** ±2.1 · #208 of 719 · from 5 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -15,7 +15,7 @@ Arcee AI · released 2026-01 · 398B params (13B active) · openmdw-1.1
 <pre>
 task            vs the others          rank  counts  tests
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #130 of 393*     41%      1
-math            ●··········█       #2 of 2*    6.3%      1
+math            ●··········█       #2 of 2*    6.2%      1
 </pre>
 
 <details><summary>chat &amp; writing · #130 of 393 · 41% of its score</summary>
@@ -29,11 +29,11 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>math · #2 of 2 · 6.3% of its score</summary>
+<details><summary>math · #2 of 2 · 6.2% of its score</summary>
 
 <pre>
 test             result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">AIME 2025 (lab)</a>   24.0%  ▁·▁▁▁●▅▆█▇▅▁ beats 14/133  medium · avg 39%    6.3%  sharp · at its level · noisy · small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">AIME 2025 (lab)</a>   24.0%  ▁·▁▁▁●▅▆█▇▅▁ beats 14/133  medium · avg 39%    6.2%  sharp · at its level · noisy · small run
 </pre>
 
 </details>
@@ -43,7 +43,7 @@ test             result  vs the others in its run   difficulty        counts  wh
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">GPQA Diamond (lab)</a>                   63.3%  ▁▁▁▁▂▄▅●███▄ beats 121/310  hard · avg 44%          34%  sharp · at its level · small run
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">MMLU-Pro (lab)</a>                       75.2%  ▁▁·▁▁▁▃▂▄●█▁ beats 103/188  medium · avg 59%        17%  at its level · small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">MMLU-Pro (lab)</a>                       75.2%  ▁▁·▁▁▁▃▂▄●█▁ beats 103/188  medium · avg 60%        17%  at its level · small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   93.1%  ▁▂▁▂▅█▂●▄▃▁▁ beats 71/98    very easy · avg 90%    0.0%  blunt
 </pre>
 
@@ -59,7 +59,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   41% ▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 58.9
+weighted average                                   = 58.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-04 · 7.9B params · cc-by-sa-4.0
 
-**score 9.3** ±1.2 · #708 of 719 · from 16 benchmark results across 4 sources
+**score 9.4** ±1.2 · #708 of 719 · from 16 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">PIQA (lab)</a>                           66.8%  ▁·●··▁▁▃█▅█▂ beats 1/26   easy · avg 88%         6.5%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">LAMBADA (OpenAI version), last-wo…</a>   55.1%  ▁··▂●▁▁▂▆█▅▃ beats 3/26   very easy · avg 89%    5.2%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">Social IQA (lab)</a>                     39.5%  ▁···●▃█▁▁▁·▁ beats 1/26   medium · avg 59%       1.8%  blunt · too hard for it
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 26.2%  ▄●·▄···▄▄·██ beats 1/8    easy · avg 77%         1.3%  too hard for it
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 26.2%  ▄●·▄···▄▄·██ beats 1/8    easy · avg 78%         1.3%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">OpenBookQA (lab)</a>                     21.4%  ●·▁▁▃·▁▃▅▇▃▄ beats 4/26   medium · avg 53%       1.0%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">TruthfulQA MC2 (lab)</a>                 40.0%  █·█·█▄···▄·● beats 8/9    medium · avg 61%       0.8%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   25.4%  ●▁▁▁▁▁▁▁▂█▅▁ beats 1/276  medium · avg 73%       0.6%  too hard for it · noisy
@@ -59,7 +59,7 @@ source                                    results  share of the score
 <a name="instruct-eval-readme"></a><a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">InstructEval</a>                                    2    3% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 9.3
+weighted average                                   = 9.4
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

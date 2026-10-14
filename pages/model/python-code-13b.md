@@ -6,7 +6,7 @@
 
 ajibawa-2023 · released 2023-11 · 13.02B params · cc-by-nc-nd-4.0
 
-**score 34.0** ±0.9 · #815 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 34.0** ±0.9 · #817 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

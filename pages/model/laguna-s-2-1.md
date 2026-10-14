@@ -6,7 +6,7 @@
 
 Poolside · released 2026-07 · 118B params (8B active) · openmdw-1.1
 
-**score 73.4** ±4.1 · #57 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 73.3** ±4.1 · #58 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -24,8 +24,8 @@ coding       ▁▁▁▃▆██▇▆●▃▁   #51 of 469*     93%      2
 test                          result  vs the others in its run  difficulty            counts  why
 <a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   78.5%  ▁··▁▃▂▅▇●▃▃▁ beats 49/60  hard · avg 28%           66%  small run
 <a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Pro (lab)</a>            59.4%  ▅▃▃·▃·▅▅▅●▃▃ beats 13/15  hard · avg 30%           26%  blunt · at its level · small run
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Terminal-Bench 2.1 (lab)</a>       70.2%  ▁·▁·▁▁▄▃▄●▃▇ beats 34/56  very hard · avg 7.1%       —  not counted yet: no other model in the …
-<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Toolathlon-Verified (lab)</a>      49.7%  ▂·▂▂▅●···▂██ beats 6/18   hard · avg 24%             —  not counted yet: no other model in the …
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Terminal-Bench 2.1 (lab)</a>       70.2%  ▁·▁·▁▁▄▃▄●▃▇ beats 34/56  very hard · avg 7.2%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Toolathlon-Verified (lab)</a>      49.7%  ▂·▂▂▅●···▂██ beats 6/18   hard · avg 25%             —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-poolside-scores"></a><a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">Poolside vendor-reported benchmark scor…</a>        2   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        7% ▇
-weighted average                                   = 73.4
+weighted average                                   = 73.3
 </pre>
 
 <details><summary>Not counted (2)</summary>

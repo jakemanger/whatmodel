@@ -6,7 +6,7 @@
 
 BigCode · released 2023-07 · 1.14B params · bigcode-openrail-m
 
-**score 25.3** ±1.2 · #895 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 25.3** ±1.2 · #897 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

@@ -6,7 +6,7 @@
 
 Prime Intellect · released 2025-11 · 106B params (12B active) · mit
 
-**score 64.8** ±1.1 · #145 of 719 · from 9 benchmark results across 3 sources
+**score 64.7** ±1.1 · #145 of 719 · from 9 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -14,18 +14,18 @@ Prime Intellect · released 2025-11 · 106B params (12B active) · mit
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁▁▃▆██●▆▄▃▁   #153 of 458*    4.6%      1
+coding          ▁▁▁▃▆██●▆▄▃▁   #153 of 458*    4.5%      1
 chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #153 of 393*     12%      1
 math            ▁▂▃▅▆▅▄█●▁▁▁     #52 of 398     24%      3
 </pre>
 
-<details><summary>coding · #153 of 458 · 4.6% of its score</summary>
+<details><summary>coding · #153 of 458 · 4.5% of its score</summary>
 
 Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-flash-lite.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md) here, though they rank higher overall. Trails [Ministral 3 8B Reasoning 2512](ministral-3-8b-reasoning.md), [Phi-4-reasoning 14B](phi-4-reasoning.md), [DeepSeek V3 (Dec '24)](deepseek-v3.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–May 20…</a>   69.3%  ▄▄·▄·····●·▄ beats 3/5    medium · avg 45%    4.6%  at its level
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–May 20…</a>   69.3%  ▄▄·▄·····●·▄ beats 3/5    medium · avg 45%    4.5%  at its level
 </pre>
 
 </details>
@@ -43,11 +43,11 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>math · #52 of 398 · 24% of its score</summary>
 
-Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank higher overall.
+Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [DeepSeek V4 Pro (Preview, Apr 2026)](deepseek-v4-pro-preview.md) here, though they rank higher overall.
 
 <pre>
 test             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024 (lab)</a>   90.8%  █···███·█··● beats 5/5    medium · avg 49%        13%  sharp
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024 (lab)</a>   90.8%  █···███·█··● beats 5/5    medium · avg 50%        13%  sharp
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025 (lab)</a>   88.0%  █·█···███··● beats 5/5    medium · avg 43%        11%  sharp
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500 (lab)</a>    98.1%  ▄······▄▄▄·● beats 5/5    very easy · avg 86%    1.3%  maxed out · noisy
 </pre>
@@ -61,7 +61,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">GPQA Diamond (lab)</a>                   74.4%  █··█●·██···█ beats 2/5      hard · avg 42%           23%  sharp · at its level
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5660  ▁▄▃▃▇▄█▃●▁▁▁ beats 24/30    avg 0.423                18%  sharp
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam (lab)</a>           14.6%  ▄····▄·●·▄·▄ beats 2/5      very hard · avg 4.3%     12%  typical
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro (lab)</a>                       81.9%  ▁▁·▁▁▁▃▂▄▅●▁ beats 139/188  medium · avg 51%        6.4%  typical
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro (lab)</a>                       81.9%  ▁▁·▁▁▁▃▂▄▅●▁ beats 139/188  medium · avg 52%        6.4%  typical
 </pre>
 
 </details>
@@ -76,7 +76,7 @@ source                                    results  share of the score
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        1   18% ▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   12% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 64.8
+weighted average                                   = 64.7
 </pre>
 
 <sub>Licences: Prime Intellect INTELLECT-3 model card: Evaluation table ([MIT](https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

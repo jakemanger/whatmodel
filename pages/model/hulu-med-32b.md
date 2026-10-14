@@ -20,7 +20,7 @@ ZJU AI4H · released 2025-10 · 33.21B params · apache-2.0
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   38.3%  ▁▁▁▁▁▂▂▃▄●█▃ beats 62/97  hard · avg 32%     91%  blunt · at its level
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   38.3%  ▁▁▁▁▁▂▂▃▄●█▃ beats 62/97  hard · avg 32%     92%  blunt · at its level
 </pre>
 
 </details>
@@ -31,8 +31,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>           1   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             9% ▇
+<a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>           1   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             8% ▇
 weighted average                        = 56.1
 </pre>
 

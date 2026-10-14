@@ -6,7 +6,7 @@
 
 SK Telecom · released 2026-07 · 691.69B params (33B active) · apache-2.0
 
-**score 69.3** ±1.4 · #92 of 719 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 69.2** ±1.4 · #92 of 719 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,11 +14,11 @@ SK Telecom · released 2026-07 · 691.69B params (33B active) · apache-2.0
 
 <pre>
 task    vs the others         rank  counts  tests
-coding  ▁▁▁▃▆██▇▆●▃▁   #76 of 458*     18%      2
+coding  ▁▁▁▃▆██▇▆●▃▁   #76 of 458*     17%      2
 math    ▁▂▃▅▆▅▄█●▁▁▁   #43 of 398*    7.7%      1
 </pre>
 
-<details><summary>coding · #76 of 458 · 18% of its score</summary>
+<details><summary>coding · #76 of 458 · 17% of its score</summary>
 
 Beats [GPT-5.2](gpt-5-2.md), [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md) here, though they rank higher overall. Trails [GLM-4.7](glm-4-7.md), [Gemini 3.5 Flash-Lite](gemini-3-5-flash-lite.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md) here, though they rank lower overall.
 
@@ -46,7 +46,7 @@ test             result  vs the others in its run  difficulty        counts  why
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   85.6%  ▄·····●█▄▄·▄ beats 1/6    hard · avg 45%           33%  sharp
-<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>               87.6%  ▃······●··█▃ beats 2/6    medium · avg 60%         17%  typical
+<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>               87.6%  ▃······●··█▃ beats 2/6    medium · avg 61%         16%  typical
 <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>           27.8%  ▂········●·▂ beats 3/6    very hard · avg 5.4%     15%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)…</a>   75.9%  ▃······●▃▃·▃ beats 2/6    medium · avg 44%        9.5%  typical
 </pre>
@@ -61,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report (lab)</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 69.3
+weighted average                        = 69.2
 </pre>
 
 <sub>Licences: A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

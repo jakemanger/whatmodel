@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-05 · 22.25B params · mnpl
 
-**score 49.7** ±0.8 · #349 of 719 · from 7 benchmark results across 4 sources
+**score 49.7** ±0.8 · #348 of 719 · from 7 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -23,7 +23,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            79.9%  ▁·▁▁▃▄▆▅●▃▁▁ beats 84/99  easy · avg 79%       40%  sharp
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            79.9%  ▁·▁▁▃▄▆▅●▃▁▁ beats 84/99  easy · avg 79%       39%  sharp
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           73.8%  ▁·▁▁▁▃▄▄▄●▃▁ beats 84/99  easy · avg 74%       34%  sharp · at its level
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   51.1%  ▁·▁▂▄▁●▄█▆▂▂ beats 17/62  medium · avg 54%     12%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                61.9%  ▁···▁▁▂▅▇●▆▂ beats 41/75  easy · avg 68%      6.7%  at its level

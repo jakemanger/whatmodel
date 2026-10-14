@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-08 · 106B params (12B active) · mit
 
-**score 61.2** ±1.6 · #184 of 719 · from 12 benchmark results across 4 sources
+**score 61.1** ±1.6 · #184 of 719 · from 12 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -39,9 +39,9 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1152.7  ▁▁▂▂▂▂▄●▅▆██ beats 49/145  avg 1068             15%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   43.8%  ▁·▁·▃▃▁▇▃●·▄ beats 14/22   hard · avg 27%       12%  blunt · at its level
 <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (lab)</a>                     75.4%  ▁····▁▁▄█▇●▆ beats 38/52   medium · avg 58%    7.1%  at its level · small run
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (lab)</a>                       65.2%  ▂▃▁▃▆▇▃●▇██▅ beats 24/52   medium · avg 46%    6.7%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (lab)</a>                       65.2%  ▂▃▁▃▆▇▃●▇██▅ beats 24/52   medium · avg 46%    6.6%  at its level · small run
 <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                         75.3%  ▃▅▂▃▂▂▆█●▆█▅ beats 20/34   medium · avg 63%    5.2%  at its level · small run
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions</a>        90.8%  ▄····▄···●▄▄ beats 3/5     easy · avg 68%      4.8%  noisy
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions</a>        90.8%  ▄····▄···●▄▄ beats 3/5     easy · avg 69%      4.8%  noisy
 <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">OCRBench (lab)</a>                       86.5%  ▁·▃▁▆▅▂●▅█▁▃ beats 20/37   easy · avg 83%      1.6%  blunt · small run
 </pre>
 
@@ -68,7 +68,7 @@ source                                    results  share of the score
 <a name="card-final-apriel-1-6-15b-thinker"></a><a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-Thinker mo…</a>        2   13% ▇▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1   12% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 61.2
+weighted average                                   = 61.1
 </pre>
 
 <sub>Licences: Z.ai GLM-V GitHub repository benchmark image ([Apache-2.0](https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 BAAI · released 2024-07 · 7.24B params · apache-2.0
 
-**score 50.4** ±1.6 · #429 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.4** ±1.6 · #430 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

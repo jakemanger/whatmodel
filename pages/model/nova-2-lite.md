@@ -6,7 +6,7 @@
 
 Amazon · released 2025-10 · closed weights
 
-**score 57.5** ±1.5 · #225 of 719 · from 7 benchmark results across 5 sources
+**score 57.4** ±1.5 · #225 of 719 · from 7 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -25,7 +25,7 @@ Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolL
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      27.1%  ▁▁▁▂●█▅▅▆▂▂▂ beats 21/77  hard · avg 32%       10%  at its level
-<a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user) …</a>   72.4%  ▂··▄···▂●▄█▄ beats 4/13   medium · avg 45%    4.9%  at its level
+<a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 user) …</a>   72.4%  ▂··▄···▂●▄█▄ beats 4/13   medium · avg 45%    4.8%  at its level
 </pre>
 
 </details>
@@ -65,7 +65,7 @@ source                                    results  share of the score
 <a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI (lab)</a>                                1    5% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 57.5
+weighted average                                   = 57.4
 </pre>
 
 <sub>Licences: Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

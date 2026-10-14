@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-07 · 1.28B params · exaone
 
-**score 46.9** ±1.5 · #401 of 719 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 46.8** ±1.5 · #401 of 719 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -34,11 +34,11 @@ test                   result  vs the others in its run   difficulty        coun
 
 <details><summary>chat &amp; writing · #283 of 393 · 6.0% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">IFEval (aggregation unspecified) …</a>   67.8%  ●·▄·▄·▄▄···█ beats 0/6    easy · avg 78%    6.0%  typical
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">IFEval (aggregation unspecified) …</a>   67.8%  ●·▄·▄·▄▄···█ beats 0/6    easy · avg 79%    6.0%  typical
 </pre>
 
 </details>
@@ -75,7 +75,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">LG AI Research vendor-reported benchmar…</a>        9   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 46.9
+weighted average                                   = 46.8
 </pre>
 
 <details><summary>Not counted (1)</summary>

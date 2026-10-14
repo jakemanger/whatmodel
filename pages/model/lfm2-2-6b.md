@@ -6,7 +6,7 @@
 
 Liquid AI · released 2025-09 · 2.57B params · lfm1.0
 
-**score 42.8** ±1.5 · #486 of 719 · from 13 benchmark results across 2 sources
+**score 42.7** ±1.5 · #488 of 719 · from 13 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2511.23404v1">MMLU (lab)</a>                           64.4%  ▄█···●·····▄ beats 3/5     easy · avg 74%          16%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro (lab)</a>                       26.0%  ██●···██···█ beats 2/5     medium · avg 45%        10%  typical
 <a href="https://arxiv.org/html/2511.23404v1">GPQA Diamond (lab)</a>                   26.6%  █●····███··█ beats 1/5     very hard · avg 35%     10%  sharp · too hard for it
-<a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecified)…</a>   22.2%  █··█●█··█··█ beats 2/5     hard · avg 33%         9.3%  typical
+<a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecified)…</a>   22.2%  █··█●█··█··█ beats 2/5     hard · avg 33%         9.4%  typical
 <a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average (lab)</a>    60.3%  ▄··█●··▄···▄ beats 3/5     easy · avg 71%         9.3%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid) (l…</a>   55.4%  ▄·█····●···▄ beats 4/5     medium · avg 60%       7.9%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Liquid…</a>   74.3%  ▄·▄·●···▄··▄ beats 3/5     easy · avg 82%         6.2%  at its level
@@ -68,7 +68,7 @@ source                         results  share of the score
 <a name="report-2511.23404v1"></a><a href="https://arxiv.org/html/2511.23404v1">LFM2 Technical Report (lab)</a>         11   93% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2    6% ▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 42.8
+weighted average                        = 42.7
 </pre>
 
 <sub>Licences: LFM2 Technical Report ([CC BY 4.0](../../licenses/cards-gap-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

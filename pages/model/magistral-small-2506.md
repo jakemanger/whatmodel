@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · 23.57B params · apache-2.0
 
-**score 55.2** ±1.2 · #260 of 719 · from 8 benchmark results across 4 sources
+**score 55.2** ±1.2 · #257 of 719 · from 8 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -15,7 +15,7 @@ Mistral · released 2025-06 · 23.57B params · apache-2.0
 <pre>
 task         vs the others          rank  counts  tests
 agent tasks  ▁▁●▆█▆▅▅▅▄▃▁   #276 of 300*    2.3%      1
-coding       ●█········██       #4 of 4*    6.7%      1
+coding       ●█········██       #4 of 4*    6.6%      1
 math         ▁▂▃▅▆●▄█▄▁▁▁    #198 of 398     45%      3
 </pre>
 
@@ -30,13 +30,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>coding · #4 of 4 · 6.7% of its score</summary>
+<details><summary>coding · #4 of 4 · 6.6% of its score</summary>
 
 Trails [Magistral Small 1.1 (2507)](magistral-small-2507.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   55.8%  ●█▄······▄·▄ beats 0/5    medium · avg 50%    6.7%  at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   55.8%  ●█▄······▄·▄ beats 0/5    medium · avg 50%    6.6%  at its level
 </pre>
 
 </details>
@@ -49,7 +49,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            62.8%  ●▃·····▃···▃ beats 2/5     medium · avg 49%         20%  sharp · at its level
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>            70.7%  ●▃·····▃···▃ beats 1/5     medium · avg 60%         16%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   30.0%  ▃▃▄▃▃●▇▇█▃▂▅ beats 64/193  very hard · avg 8.5%    8.7%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   30.0%  ▃▃▄▃▃●▇▇█▃▂▅ beats 64/193  very hard · avg 8.6%    8.7%  sharp · noisy
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ test                      result  vs the others in its run   difficulty         
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         56.1%  ▁▁▁▁▂▄▆●▅▇█▅ beats 80/208  hard · avg 40%     39%  sharp · at its level · several runs
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   37.6%  ▁▁▁▁▁▂▂▃▄●█▃ beats 58/97   hard · avg 32%    6.5%  blunt · at its level
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   37.6%  ▁▁▁▁▁▂▂▃▄●█▃ beats 58/97   hard · avg 32%    6.6%  blunt · at its level
 </pre>
 
 </details>

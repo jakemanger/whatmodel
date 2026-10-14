@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 88.59B params · llama3.2
 
-**score 49.9** ±1.3 · #342 of 719 · from 13 benchmark results across 7 sources
+**score 49.8** ±1.3 · #342 of 719 · from 13 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -24,8 +24,8 @@ Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               39.4%  ▂▂▅▆●█▆▃▅▂▃▄ beats 31/92   hard · avg 32%           32%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.6%  ▃●▄▃▃▃▇▇█▃▂▅ beats 22/193  very hard · avg 8.5%    4.6%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               39.4%  ▂▂▅▆●█▆▃▅▂▃▄ beats 31/92   hard · avg 33%           32%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.6%  ▃●▄▃▃▃▇▇█▃▂▅ beats 22/193  very hard · avg 8.6%    4.6%  sharp · noisy
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>       49.1%  ▂····▂···▂●▆ beats 3/9     medium · avg 53%        3.4%  at its level
 </pre>
 
@@ -38,8 +38,8 @@ Trails [Qwen3.5 2B](qwen3-5-2b.md), [Pixtral 12B (2409)](pixtral-12b.md), [Qwen3
 <pre>
 test                                                         result  vs the others in its run   difficulty                counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                              1032.3  ▁▁▂▂●▂▄▅▅▆██ beats 19/145  avg 1068                     10%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                         -25.6700  ▃▃▃·●█·▅▃▃▃▃ beats 3/12    avg -0.671                  6.9%  typical
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  5.5000 MM-MT-Bench score (1-10)  ▅··▃·●·▃▃··▅ beats 5/9     avg 5.740 MM-MT-Bench s…    5.0%  sharp · noisy
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>                         -25.6700  ▃▃▃·●█·▅▃▃▃▃ beats 3/12    avg -0.412                  6.8%  typical
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  5.5000 MM-MT-Bench score (1-10)  ▅··▃·●·▃▃··▅ beats 5/9     avg 5.748 MM-MT-Bench s…    5.0%  sharp · noisy
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                    53.7%  ▂·▂······█●▄ beats 6/9     medium · avg 52%            3.6%  at its level
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                          49.1%  ▂····▂···▂●▆ beats 3/9     medium · avg 53%            3.4%  at its level
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   67.0%  ▃···●▃··▅▃▃▃ beats 1/9     easy · avg 74%              2.9%  blunt · at its level
@@ -74,7 +74,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    3% ▇
 <a name="paper-2610.04118v1-longsocialbench"></a><a href="https://arxiv.org/html/2610.04118v1">LongSocialBench: Do Long-Context LLMs U…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 49.9
+weighted average                                   = 49.8
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · LongSocialBench: Do Long-Context LLMs Understand Online Discussion Threads? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

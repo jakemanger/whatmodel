@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 3.09B params · qwen-research
 
-**score 47.6** ±1.2 · #388 of 719 · from 9 benchmark results across 2 sources
+**score 47.6** ±1.2 · #387 of 719 · from 9 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -26,7 +26,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   39.1%  ▁·▁▂●▁▆▄█▆▂▂ beats 11/62  medium · avg 54%        25%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                      84.1%  ▄·▄···●··█·▄ beats 3/6    very easy · avg 86%     21%  sharp
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     80.5%  ▄·▄····▄●·▄█ beats 3/6    easy · avg 82%          17%  sharp
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           73.6%  █···█●█·██·█ beats 2/6    easy · avg 78%          10%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           73.6%  █···█●█·██·█ beats 2/6    easy · avg 79%          10%  typical
 <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      72.1%  ▄·▄····▄●·▄█ beats 3/6    easy · avg 71%         8.4%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          62.4%  ▄····▄●·▄·█▄ beats 2/6    easy · avg 67%         7.3%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     53.2%  █·██·●··█·██ beats 3/6    medium · avg 57%       3.8%  at its level

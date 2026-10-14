@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · proprietary
 
-**score 66.7** ±1.1 · comparison only: no current run option verified · from 19 benchmark results across 8 sources
+**score 66.6** ±1.1 · comparison only: no current run option verified · from 19 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -37,7 +37,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   76.9%  ▂·▂▃▅▂▃█▆▄●▂ beats 44/49  very hard · avg 8.5%     28%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   76.9%  ▂·▂▃▅▂▃█▆▄●▂ beats 44/49  very hard · avg 8.6%     28%  sharp · at its level
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   71.8%  ▃▃▅▃··▃▅█●▅▃ beats 12/15  hard · avg 25%          7.8%  at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   67.4%  ▁··▁·▁▁▁▆●▇█ beats 25/45  hard · avg 32%          4.9%  at its level
 </pre>
@@ -50,7 +50,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [N
 
 <pre>
 test          result  vs the others in its run  difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   95.9%  ▂▂▅▆▄█▆▃▅▂●▄ beats 83/92  hard · avg 32%    7.3%  sharp · maxed out
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   95.9%  ▂▂▅▆▄█▆▃▅▂●▄ beats 83/92  hard · avg 33%    7.3%  sharp · maxed out
 </pre>
 
 </details>
@@ -71,11 +71,11 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         66.7%  ▁▁▁▁▂▄▆▄●▇█▅ beats 99/208  hard · avg 40%          17%  sharp · at its level
-<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>    3.9%  ▂·█··▆▄·▂▂·● beats 13/13   avg 33%                 10%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>    3.9%  ▂·█··▆▄·▂▂·● beats 13/13   avg 32%                 10%  typical
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   68.4%  ▁▁·▁▂▂▄█▄▅●▄ beats 54/66   hard · avg 31%         5.1%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   71.8%  ▁▁▁▁·▂·█▆●▇▁ beats 21/31   medium · avg 48%       3.8%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   75.1%  ▂·▂·▂█▂▄▄··● beats 12/13   very hard · avg 54%    3.6%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   81.3%  ▂·▄··▂▂·▄▂█● beats 13/13   medium · avg 53%       2.2%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   81.3%  ▂·▄··▂▂·▄▂█● beats 13/13   medium · avg 54%       2.2%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   65.5%  ▂·······▆█▆● beats 12/13   very hard · avg 57%    2.1%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>    3.9%  ▃···▃·█▃▅▃▅● beats 13/13   avg 11%                2.1%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   68.3%  ▃█▃▅▃·▃·●▅▃▃ beats 9/13    medium · avg 57%       0.8%  blunt · at its level
@@ -102,7 +102,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    2% ▇
 <a name="paper-2505.20740v3-msearth"></a><a href="https://arxiv.org/html/2505.20740v3">MSEarth: A Multimodal Benchmark for Ear…</a>        1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 66.7
+weighted average                                   = 66.6
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · MSEarth: A Multimodal Benchmark for Earth Science Phenomenon Discovery with MLLMs ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

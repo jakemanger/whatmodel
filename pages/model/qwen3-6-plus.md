@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · closed weights
 
-**score 70.0** ±0.8 · #83 of 719 · from 14 benchmark results across 7 sources
+**score 69.9** ±0.8 · #83 of 719 · from 14 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -40,7 +40,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.
 <pre>
 test                       result  vs the others in its run   difficulty      counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>          57.9%  ▁··▁·●▂▁▄█▄▁ beats 3/29    hard · avg 19%     13%  sharp · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1460.7  ▁▂▄▃▅█●▇▆▄▁▁ beats 61/119  avg 981            11%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1460.7  ▁▂▄▃▅█●▇▆▄▁▁ beats 61/119  avg 983            11%  sharp
 </pre>
 
 </details>
@@ -63,7 +63,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            38.2%  ▂··▁▁▃▄●█▅▃▃ beats 28/82    very hard · avg 1.2%     29%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             93.3%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 155/193  very hard · avg 8.5%    2.9%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             93.3%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 155/193  very hard · avg 8.6%    2.9%  sharp · noisy
 <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, no t…</a>   47.4%  ▄··▄▄·▄▄●▄·▄ beats 6/8      very hard · avg 11%     1.5%  at its level
 </pre>
 
@@ -89,7 +89,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         12.0%  █··●▃▇▄█▂▃▁▁ beats 19/74    very hard · avg 9.4%    4.0%  sharp · noisy
 <a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md">AgentWorldBench (open-ended, over…</a>   50.8%  ▄▄··●▄·▄█▄██ beats 2/11     hard · avg 25%          3.5%  blunt · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                17.0%  █▁▁▁▁▂●▄▂▂▁▁ beats 72/135   very hard · avg 5.9%    3.4%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    44.1%  ▁▁▃▂▃▃▆●█▃▂▅ beats 40/78    very hard · avg 8.0%    2.3%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    44.1%  ▁▁▃▂▃▃▆●█▃▂▅ beats 40/78    very hard · avg 8.1%    2.3%  at its level
 </pre>
 
 </details>
@@ -108,7 +108,7 @@ source                                    results  share of the score
 <a name="paper-2608.17895v1-bear-bench"></a><a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench: A Bilingual Enterprise and …</a>        1    2% ▇
 <a name="paper-2605.08498v1"></a><a href="https://arxiv.org/html/2605.08498v1">MathConstraint: Automated Generation of…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 70.0
+weighted average                                   = 69.9
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Agents' Last Exam ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt)) · Qwen/Qwen-AgentWorld-35B-A3B model card ([Apache-2.0](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md)) · BEAR-Bench: A Bilingual Enterprise and Academic Reasoning Benchmark for Multimodal Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathConstraint: Automated Generation of Verified Combinatorial Reasoning Instances for LLMs ([CC BY 4.0](../../licenses/paper-2605.08498v1-CC-BY-4.0.txt))</sub>

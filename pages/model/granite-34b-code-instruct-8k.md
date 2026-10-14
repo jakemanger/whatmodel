@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 45.8** ±1.2 · #429 of 719 · from 11 benchmark results across 4 sources
+**score 45.7** ±1.2 · #429 of 719 · from 11 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -23,7 +23,7 @@ Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   54.8%  ▁·▂▁▂▆▅█▄●▁▂ beats 32/35  medium · avg 64%     23%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   54.8%  ▁·▂▁▂▆▅█▄●▁▂ beats 32/35  medium · avg 65%     23%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   41.9%  ▄▇█▃▄▇▄▁▇●·▁ beats 33/35  medium · avg 49%     17%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   50.2%  ▁·▁▁▄██▄█▁▅● beats 32/35  medium · avg 56%     17%  sharp · at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   19.3%  ▃··▁▂▂●▂█▃▄▂ beats 13/47  medium · avg 54%    3.4%  sharp · at its level · noisy
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>              35.8%  ▃▂·▆▆█●▆▅▃▃▃ beats 18/33   medium · avg 41%     15%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              43.8%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 40/58   medium · avg 50%     15%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              43.8%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 40/58   medium · avg 51%     15%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   34.1%  ▃·▁▁●▁▂▅█▇▄▁ beats 18/100  medium · avg 68%    2.2%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   51.5%  ▁▁▁▁▁▁●▂▄█▄▃ beats 20/146  easy · avg 83%      1.7%  at its level · noisy
 </pre>
@@ -57,7 +57,7 @@ source                                    results  share of the score
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    9% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 45.8
+weighted average                                   = 45.7
 </pre>
 
 <sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

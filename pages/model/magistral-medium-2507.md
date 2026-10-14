@@ -6,7 +6,7 @@
 
 Mistral · released 2025-07 · proprietary
 
-**score 55.2** ±1.5 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.1** ±1.5 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -58,7 +58,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-mistralai-magistral-small-2509"></a><a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">mistralai/Magistral-Small-2509 model ca…</a>        4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.2
+weighted average                                   = 55.1
 </pre>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt))</sub>

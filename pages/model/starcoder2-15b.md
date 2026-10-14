@@ -6,7 +6,7 @@
 
 BigCode · released 2024-02 · 15.96B params · bigcode-openrail-m
 
-**score 38.8** ±0.5 · #547 of 719 · from 17 benchmark results across 5 sources
+**score 38.7** ±0.5 · #547 of 719 · from 17 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -27,8 +27,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            46.3%  ▁·▁▁▃▄●▅█▃▁▁ beats 30/99  easy · avg 79%       47%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           37.8%  ▁·▁▁▁▃●▄▄█▃▁ beats 27/99  easy · avg 74%       18%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 51.2%  █·▅▃▃▃▅▃▃▅·● beats 14/15  easy · avg 82%      5.6%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   44.4%  ▁·▂▁▂▆▅█●▄▁▂ beats 26/35  medium · avg 64%    4.7%  at its level
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        33.8%  ▄▄·▄██▄█·●·▄ beats 10/12  medium · avg 52%    2.9%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   44.4%  ▁·▂▁▂▆▅█●▄▁▂ beats 26/35  medium · avg 65%    4.7%  at its level
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        33.8%  ▄▄·▄██▄█·●·▄ beats 10/12  medium · avg 53%    2.9%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   17.0%  ▄▇●▃▄▇▄▁▇▃·▁ beats 12/35  medium · avg 49%    2.8%  typical
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           47.4%  ▃▅█▃▃▅·▃▃▅·● beats 14/15  medium · avg 59%    2.7%  at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   21.9%  ▁·▁▁▄██●█▁▅▅ beats 20/35  medium · avg 56%    2.6%  sharp
@@ -53,7 +53,7 @@ test         result  vs the others in its run  difficulty      counts  why
 <pre>
 test                           result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               29.0%  ▂▂▃▄●█▁▄▅▃▁▃ beats 13/42  medium · avg 55%    6.9%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   38.3%  ▂▁▁▄▂▅●█▆▂▂▂ beats 22/58  medium · avg 50%    2.8%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   38.3%  ▂▁▁▄▂▅●█▆▂▂▂ beats 22/58  medium · avg 51%    2.8%  at its level
 </pre>
 
 </details>
@@ -70,7 +70,7 @@ source                                    results  share of the score
 <a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        6   16% ▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        1    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 38.8
+weighted average                                   = 38.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

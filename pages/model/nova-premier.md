@@ -6,7 +6,7 @@
 
 Amazon · released 2025-04 · closed weights
 
-**score 54.2** ±1.6 · #285 of 719 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 54.1** ±1.6 · #285 of 719 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -84,7 +84,7 @@ source                                    results  share of the score
 <a name="first-party-amazon-scores"></a><a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">Amazon vendor-reported benchmark scores…</a>        8   77% ▇▇▇▇▇▇▇▇▇
 <a name="massive-agents-paper"></a><a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents (lab)</a>                            1   22% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 54.2
+weighted average                                   = 54.1
 </pre>
 
 <sub>Licences: MASSIVE-Agents ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

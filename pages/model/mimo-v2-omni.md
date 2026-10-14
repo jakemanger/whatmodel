@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-03 · closed weights
 
-**score 68.1** ±1.8 · comparison only: no current run option verified · from 6 benchmark results across 4 sources
+**score 68.0** ±1.8 · comparison only: no current run option verified · from 6 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -38,7 +38,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://mimo.xiaomi.com/mimo-v2-omni">CharXiv (reasoning questions) (la…</a>   80.1%  ▂▅▃▅▅▆▆▅▆●▆▂ beats 76/100  medium · avg 44%     22%  small run · several runs
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1216.1  ▁▁▂▂▂▂▄▅▅●██ beats 82/145  avg 1068             21%  blunt
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   43.9%  ▁·▁·▃▃▁▇▃●·▄ beats 15/22   hard · avg 27%       17%  blunt · at its level
-<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">MMMU Pro (lab)</a>                       76.8%  ▂▃▁▃▆▇▃▇▇█●▅ beats 43/52   medium · avg 47%    9.1%  at its level · small run
+<a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">MMMU Pro (lab)</a>                       76.8%  ▂▃▁▃▆▇▃▇▇█●▅ beats 43/52   medium · avg 48%    9.1%  at its level · small run
 </pre>
 
 </details>
@@ -64,8 +64,8 @@ source                                    results  share of the score
 <a name="card2-xiaomimimo-mimo-v2-5"></a><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">XiaomiMiMo/MiMo-V2.5 model card (lab)</a>           2   20% ▇▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1   17% ▇▇
 <a name="first-party-xiaomi-scores"></a><a href="https://mimo.xiaomi.com/mimo-v2-omni">Xiaomi MiMo vendor-reported benchmark s…</a>        1   11% ▇
-prior: pull toward the middle                        2% ▇
-weighted average                                   = 68.1
+prior: pull toward the middle                        1% ▇
+weighted average                                   = 68.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · XiaomiMiMo/MiMo-V2.5 model card ([MIT](../../licenses/XiaomiMiMo--MiMo-V2.5.txt)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

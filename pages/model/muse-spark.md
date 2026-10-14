@@ -6,7 +6,7 @@
 
 Meta · released 2026-04 · closed weights
 
-**score 75.0** ±1.9 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 74.9** ±1.9 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -36,7 +36,7 @@ Trails [Granite 4.2 30B](granite-4-2-30b.md), [INTELLECT-3](intellect-3.md), [EX
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   88.9%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 143/193  very hard · avg 8.5%    6.4%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   88.9%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 143/193  very hard · avg 8.6%    6.4%  sharp · maxed out · noisy
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2
 <pre>
 test                               result  vs the others in its run    difficulty  counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1293.6  ▁▁▂▂▂▂▄▅▅▆█● beats 140/145  avg 1068       23%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1467.3  ▁▁▃▃▄▃▇█●▇▄▅ beats 22/37    avg 1335       11%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1467.3  ▁▁▃▃▄▃▇█●▇▄▅ beats 22/37    avg 1336       11%  blunt
 </pre>
 
 </details>
@@ -71,7 +71,7 @@ source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          3   67% ▇▇▇▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                             2   32% ▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 75.0
+weighted average                        = 74.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

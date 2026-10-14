@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · closed weights
 
-**score 61.6** ±2.4 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 61.5** ±2.4 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -61,7 +61,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   86% ▇▇▇▇▇▇▇▇▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   12% ▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 61.6
+weighted average                                   = 61.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

@@ -26,7 +26,7 @@ test                                                      result  vs the others 
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                              7.6%  ▁▂▂●▆▆█▆▄▄▁▁ beats 16/122  medium · avg 39%             17%  typical
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1058.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 29/95   avg 1201                     12%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1115.2  ▁▁▁●▃▃▃▆▆▇█▃ beats 20/379  avg 1268                     12%  blunt
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.1700 MT-Bench score (1-10)  ▆▂▂▆▆▄●█▂▄▄▆ beats 13/28   avg 8.819 MT-Bench scor…     10%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.1700 MT-Bench score (1-10)  ▆▂▂▆▆▄●█▂▄▄▆ beats 13/28   avg 8.826 MT-Bench scor…     10%  sharp · noisy
 </pre>
 
 </details>

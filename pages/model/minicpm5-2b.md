@@ -6,7 +6,7 @@
 
 OpenBMB · released 2026-09 · 2.52B params · apache-2.0
 
-**score 63.5** ±1.1 · #162 of 719 · from 20 benchmark results across 1 source · † every result so far was reported by its maker
+**score 63.4** ±1.1 · #162 of 719 · from 20 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified (lab)</a>             46.4%  ▄··▄▄█··▄·▄● beats 8/8    very hard · avg 12%     5.3%  sharp · at its level · noisy
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BrowseComp-ZH (lab)</a>                  43.5%  ▄▄·▄▄▄·█···● beats 8/8    very hard · avg 13%     5.1%  at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecified)…</a>   14.4%  █▂···▂···●·▂ beats 7/8    very hard · avg 4.3%    5.0%  sharp · noisy
-<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BFCL V4 (December 2025 archive) (…</a>   66.6%  ▄·█·▄▄▄▄·▄·● beats 8/8    medium · avg 43%        3.7%  at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BFCL V4 (December 2025 archive) (…</a>   66.6%  ▄·█·▄▄▄▄·▄·● beats 8/8    medium · avg 44%        3.7%  at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">τ²-bench Telecom (lab)</a>               97.1%  ▁·▅█▆▅▂▃▃●▃▁ beats 79/89  hard · avg 32%          1.9%  sharp · noisy · small run
 </pre>
 
@@ -68,7 +68,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [M
 
 <pre>
 test                      result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">HMMT February 2026 (lab)</a>   63.8%  ▅··▃▃·▃··▃·● beats 7/8    hard · avg 30%          12%  sharp · at its level
+<a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">HMMT February 2026 (lab)</a>   63.8%  ▅··▃▃·▃··▃·● beats 7/8    hard · avg 31%          12%  sharp · at its level
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2025 (lab)</a>            86.5%  █▄▄▄▄····█·● beats 8/8    medium · avg 42%       7.2%  sharp
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2026 (lab)</a>            86.5%  ▄·▄█·▄▄···█● beats 8/8    medium · avg 48%       6.1%  sharp
 <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MATH-500 (lab)</a>             94.6%  ██▄▄●··▄···▄ beats 6/8    very easy · avg 89%    2.7%  maxed out
@@ -110,7 +110,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                results  share of the score
 <a name="card3-openbmb-minicpm5-2b"></a><a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">openbmb/MiniCPM5-2B model card (lab)</a>       20  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                    0% ▇
-weighted average                               = 63.5
+weighted average                               = 63.4
 </pre>
 
 <sub>Licences: openbmb/MiniCPM5-2B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

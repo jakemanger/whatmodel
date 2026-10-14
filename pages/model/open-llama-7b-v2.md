@@ -6,7 +6,7 @@
 
 OpenLM Research · released 2023-07 · apache-2.0
 
-**score 28.9** ±0.9 · #649 of 719 · from 12 benchmark results across 2 sources
+**score 29.0** ±0.9 · #647 of 719 · from 12 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -45,7 +45,7 @@ source                           results  share of the score
 <a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">Stability AI</a>                          11   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    1% ▇
 prior: pull toward the middle               0% ▇
-weighted average                          = 28.9
+weighted average                          = 29.0
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

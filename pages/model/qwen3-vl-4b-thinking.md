@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 4.44B params · apache-2.0
 
-**score 56.1** ±0.7 · #244 of 719 · from 27 benchmark results across 3 sources
+**score 56.0** ±0.7 · #244 of 719 · from 27 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -27,7 +27,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 
 <pre>
 test           result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">BFCL v3 (lab)</a>   67.3%  █▄··▄█·█●█▄█ beats 8/13   medium · avg 59%    2.0%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">BFCL v3 (lab)</a>   67.3%  █▄··▄█·█●█▄█ beats 8/13   medium · avg 60%    2.0%  blunt · at its level
 </pre>
 
 </details>
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #201 of 393 · 2.8% of its score</summary>
 
-Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -82,7 +82,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">HallusionBench (lab)</a>                 64.1%  ▃·▃·▅▃▅▅▃▅●▅ beats 13/16  medium · avg 55%       2.0%  blunt · at its level
 <a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench (bilingual RU/EN enter…</a>   34.5%  ▃▃·▅·●·█·█▅▅ beats 4/14   hard · avg 24%         1.7%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (lab)</a>                        88.8%  ▂··▂·▂▃·▅▂●█ beats 11/17  easy · avg 85%         1.5%  blunt
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>                    73.2%  ▅▃·▃▅▅·●·▃▅█ beats 8/16   easy · avg 70%         1.4%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>                    73.2%  ▅▃·▃▅▅·●·▃▅█ beats 8/16   easy · avg 71%         1.4%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">DocVQA (lab)</a>                         94.2%  ▃··▅▃●▃█▃█▅▅ beats 4/17   very easy · avg 94%    1.3%  blunt · maxed out
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ScreenSpot-Pro (lab)</a>                 49.2%  ▂····▂●··▂█▆ beats 3/11   medium · avg 46%       1.2%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CC-OCR (lab)</a>                         73.8%  ▃··▃●·▅▅·█▅▃ beats 2/13   easy · avg 74%         1.0%  blunt
@@ -117,7 +117,7 @@ source                                    results  share of the score
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    2% ▇
 <a name="paper-2608.17895v1-bear-bench"></a><a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench: A Bilingual Enterprise and …</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 56.1
+weighted average                                   = 56.0
 </pre>
 
 <sub>Licences: ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BEAR-Bench: A Bilingual Enterprise and Academic Reasoning Benchmark for Multimodal Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

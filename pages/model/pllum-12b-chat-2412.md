@@ -6,7 +6,7 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 12.25B params · apache-2.0
 
-**score 43.0** ±2.9 · #643 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 43.0** ±2.9 · #645 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 12.25B params · apache-2.0
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   62.7%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 39/95  easy · avg 66%     57%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   62.7%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 39/95  easy · avg 66%     58%  at its level
 <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, bias-…</a>   29.5%  ●·▂▂▂··█▂▄·▄ beats 0/13   hard · avg 48%     39%  typical
 </pre>
 
@@ -32,7 +32,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   57% ▇▇▇▇▇▇▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   58% ▇▇▇▇▇▇▇
 <a name="paper-2606.12250v1-polish-medical-exams"></a><a href="https://arxiv.org/html/2606.12250v1">Reassessing High-Performing LLMs on Pol…</a>        1   39% ▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
 weighted average                                   = 43.0

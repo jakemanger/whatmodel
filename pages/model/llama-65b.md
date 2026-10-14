@@ -46,14 +46,14 @@ test         result  vs the others in its run   difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   35.3%  ▅····▃▅·██·● beats 12/13   medium · avg 59%        10%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   35.3%  ▅····▃▅·██·● beats 12/13   medium · avg 60%        10%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>                  56.0%  ▆▁▁▂▂▅▇●▄▃▃▂ beats 65/97   easy · avg 86%         8.3%  sharp · at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   52.4%  ▃▅▃··▅▃·█▃▃● beats 13/13   easy · avg 67%         6.3%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                     77.0%  ▁···▂▁▁▅█▇●▁ beats 78/87   easy · avg 90%         6.3%  at its level
-<a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                           63.4%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 79/183  easy · avg 79%         6.0%  at its level
+<a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                           63.4%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 79/183  easy · avg 79%         6.1%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                          85.3%  ▁▄▅▆▂▆▄▄█▃●▄ beats 52/58   very easy · avg 93%    6.0%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                     60.2%  █▁▁▁▄▃▃▇●▁▄▂ beats 54/65   easy · avg 80%         5.6%  at its level
-<a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                      84.2%  ▁▁▁▁▂▂▃▇█▆●▃ beats 74/85   very easy · avg 92%    4.4%  typical
+<a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                      84.2%  ▁▁▁▁▂▂▃▇█▆●▃ beats 74/85   very easy · avg 93%    4.4%  typical
 <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                       78.9%  ▁▂▃▂▃▅▇█▇▆●▆ beats 58/65   very easy · avg 90%    3.2%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                     52.3%  ▂·▂██▅●▁▂▃▆▁ beats 35/51   medium · avg 65%       2.9%  blunt · at its level
 <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                           82.8%  ▁▁▁▃▃▄▇█▄●▁▁ beats 75/83   easy · avg 88%         2.0%  blunt · at its level

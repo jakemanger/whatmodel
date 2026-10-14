@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-04 · 1.64B params · other
 
-**score 36.3** ±6.7 · #783 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.3** ±6.7 · #785 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

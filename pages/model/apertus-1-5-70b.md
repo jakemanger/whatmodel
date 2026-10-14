@@ -6,7 +6,7 @@
 
 Swiss AI · released 2026-07 · 72.01B params · apache-2.0
 
-**score 52.6** ±6.7 · #384 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.6** ±6.6 · #386 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

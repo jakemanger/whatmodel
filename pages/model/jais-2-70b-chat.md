@@ -6,7 +6,7 @@
 
 Inception (G42) · released 2025-12 · 72.04B params · apache-2.0
 
-**score 58.5** ±4.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 58.4** ±4.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -33,7 +33,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards (la…</a>        1   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 58.5
+weighted average                                   = 58.4
 </pre>
 
 <sub>Licences: Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

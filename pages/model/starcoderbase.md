@@ -26,10 +26,10 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                      29.3%  ▂··●▂▄▂··▄▂▂ beats 3/12   easy · avg 79%       24%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 37.4%  █·▅▃●▃▅▃▃▅·▅ beats 6/15   easy · avg 82%       19%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.9%  ▁·▂▁▂●▅█▄▄▁▂ beats 10/35  medium · avg 64%     13%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.9%  ▁·▂▁▂●▅█▄▄▁▂ beats 10/35  medium · avg 65%     13%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           31.3%  ▁··▁●▂█▇▁··▁ beats 4/22   medium · avg 59%    9.2%  at its level · several runs
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           34.2%  ▁·▂●▁█▁▂···▁ beats 5/22   medium · avg 55%    8.1%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        23.8%  ▄▄·▄█●▄█·█·▄ beats 5/12   medium · avg 52%    7.9%  typical
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        23.8%  ▄▄·▄█●▄█·█·▄ beats 5/12   medium · avg 53%    7.9%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   15.3%  ▄▇●▃▄▇▄▁▇▃·▁ beats 11/35  medium · avg 49%    6.8%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   12.9%  ▁·▁▁▄●█▄█▁▅▅ beats 11/35  medium · avg 56%    5.5%  sharp
 </pre>

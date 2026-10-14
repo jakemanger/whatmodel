@@ -6,7 +6,7 @@
 
 Arcee AI · released 2025-12 · 26.12B params (3B active) · openmdw-1.1
 
-**score 52.8** ±6.0 · #377 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.8** ±6.0 · #378 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

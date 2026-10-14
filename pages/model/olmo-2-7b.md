@@ -24,7 +24,7 @@ Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>   29.1%  ▃▃·▁▁●▇▅·▁·▁ beats 6/22   medium · avg 42%    7.8%  typical
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>   29.1%  ▃▃·▁▁●▇▅·▁·▁ beats 6/22   medium · avg 43%    7.8%  typical
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (lab)</a>      72.3%  ▁▃▁▃▁●▁▁█▃▃▁ beats 9/22   easy · avg 80%      3.8%  at its level
 </pre>
 
@@ -38,7 +38,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [DBRX Instruct](dbrx-instru
 test                               result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                         85.1%  ▂▃··▃▂▅●▆▃▂▃ beats 13/22  very easy · avg 88%     14%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (lab)</a>     32.5%  ▃●█▂▂▆·····▁ beats 4/22   medium · avg 61%        10%  at its level · several runs
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation) (lab)</a>    5.2%  ●···▄·▄·▄··█ beats 1/6    hard · avg 20%         3.2%  typical
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation) (lab)</a>    5.2%  ●···▄·▄·▄··█ beats 1/6    hard · avg 20%         3.1%  typical
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 51.4%  ▁▄·▁●·▅█·▄▄▁ beats 5/22     easy · avg 75%          22%  sharp · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.7%  ▃▁▁▁▁▁▁▁●█▅▁ beats 105/276  medium · avg 73%       3.4%  at its level · noisy
 <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          23.2%  ▁▁▁▃▃●▁█▁▃·▄ beats 8/21     hard · avg 32%         3.4%  blunt
-<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 56.5%  ▃▃▂·▃●·▅█▂▅▂ beats 8/21     medium · avg 63%       3.3%  blunt · at its level
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 56.5%  ▃▃▂·▃●·▅█▂▅▂ beats 8/21     medium · avg 64%       3.3%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   64.1%  ▃·▁▁▂▁▂●█▇▄▁ beats 38/100   medium · avg 68%       2.5%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   79.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 62/146   easy · avg 83%         2.3%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   88.9%  ▁▁▂●▄▄█▆▃▂▂▁ beats 21/140   very easy · avg 94%    1.3%  blunt · noisy

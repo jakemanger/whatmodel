@@ -6,7 +6,7 @@
 
 Cohere · released 2026-05 · 218B params (25B active) · apache-2.0
 
-**score 64.3** ±1.0 · #153 of 719 · from 23 benchmark results across 3 sources
+**score 64.2** ±1.0 · #153 of 719 · from 23 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -28,7 +28,7 @@ Beats [DeepSeek V3.2 Exp](deepseek-v3-2-exp.md), [Qwen3 235B-A22B Thinking 2507]
 test                    result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>      25.0%  ▄········●█▄ beats 1/5    very hard · avg 4.2%    8.6%  sharp · small run · several runs
 <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>   85.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 63/89  hard · avg 25%          5.9%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>      1.6%  ●▄····▄···█▄ beats 0/5    very hard · avg 1.8%    3.9%  too hard for it
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>      1.6%  ●▄····▄···█▄ beats 0/5    very hard · avg 1.8%    3.8%  too hard for it
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>   27.2%  ●▄▄·······█▄ beats 0/5    hard · avg 19%          3.4%  at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>       14.4%  ●··········█ beats 0/5    hard · avg 16%          2.5%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>          5.8%  ●·▄▄······▄▄ beats 1/5    very hard · avg 5.1%    1.0%  blunt
@@ -55,7 +55,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [N
 
 <pre>
 test                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            96.0%  ▄▄··▄····●·▄ beats 4/5      medium · avg 64%    8.7%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            96.0%  ▄▄··▄····●·▄ beats 4/5      medium · avg 65%    8.6%  sharp
 <a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>      90.0%  ▁·▁▁▁▂▅▆█▇●▁ beats 116/133  medium · avg 47%    4.5%  sharp · small run
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>   73.5%  █▄●········█ beats 3/5      hard · avg 31%      3.8%  sharp · at its level · noisy
 </pre>
@@ -77,14 +77,14 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                         75.6%  █···●█·█··██ beats 1/5    hard · avg 42%           20%  sharp · at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                             79.0%  ●·▄▄····▄··█ beats 0/5    medium · avg 55%        6.5%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>                 11.4%  ●▄······▄·▄▄ beats 0/5    very hard · avg 4.7%    6.1%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                             79.0%  ●·▄▄····▄··█ beats 0/5    medium · avg 56%        6.5%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>                 11.4%  ●▄······▄·▄▄ beats 0/5    very hard · avg 4.8%    6.1%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)</a>    73.9%  ▄···▄▄··●··█ beats 3/5    medium · avg 43%        4.2%  at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                       45.8%  █··●·▄·····█ beats 2/5    hard · avg 25%          3.3%  at its level
 <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   68.7%  ▂·●··▂·▄▂·█▆ beats 1/12   medium · avg 64%        1.7%  noisy
 <a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) (lab)</a>   74.0%  ▃········●█▅ beats 2/8    medium · avg 41%        1.5%  at its level · small run
 <a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                        81.0%  █·▃·▅▅▃···▃● beats 10/10  easy · avg 71%          0.8%  blunt
-<a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   76.5%  ▄·▄▄▄·▄●█▄█▄ beats 6/12   easy · avg 65%          0.6%  blunt · at its level
+<a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   76.5%  ▄·▄▄▄·▄●█▄█▄ beats 6/12   easy · avg 66%          0.6%  blunt · at its level
 </pre>
 
 </details>
@@ -99,7 +99,7 @@ source                                    results  share of the score
 <a name="first-party-cohere-scores"></a><a href="https://cohere.com/blog/command-a-plus">Cohere vendor-reported benchmark scores…</a>        7   25% ▇▇▇
 <a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere (lab)</a>                                    3    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 64.3
+weighted average                                   = 64.2
 </pre>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -24,7 +24,7 @@ Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistra
 
 <pre>
 test                                                 result  vs the others in its run  difficulty                counts  why
-<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>  8.8100 mean rank (1-11)  ●···▄··▄···▄ beats 0/4    avg 6.444 mean rank (1-…    0.0%  blunt · noisy
+<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>  8.8100 mean rank (1-11)  ●···▄··▄···▄ beats 0/4    avg 6.442 mean rank (1-…    0.0%  blunt · noisy
 </pre>
 
 </details>
@@ -44,8 +44,8 @@ test        result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                       43.9%  ███··█·█·█·● beats 6/6    easy · avg 80%       47%  sharp · at its level · several runs
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 54.5%  ▄▄·▄···▄▄·█● beats 8/8    easy · avg 82%       23%  at its level · several runs
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.6%  ▅····▃▅·●█·█ beats 5/13   medium · avg 59%     10%  typical
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.9%  ▃●▃··▅▃·█▃▃▅ beats 1/13   easy · avg 67%      7.4%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.6%  ▅····▃▅·●█·█ beats 5/13   medium · avg 60%     10%  typical
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   20.9%  ▃●▃··▅▃·█▃▃▅ beats 1/13   easy · avg 67%      7.3%  at its level
 </pre>
 
 </details>

@@ -61,7 +61,7 @@ test         result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                           66.0%  ▁·····▂█▂●·▁ beats 21/25    easy · avg 77%          14%  sharp · at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro…</a>  27.9838 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 10/52    avg 45.199 WB-Score    9.2%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro…</a>  27.9838 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 10/52    avg 45.277 WB-Score    9.2%  sharp
 <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                                     67.8%  ▁▁▃▃▄█▄▁●··▁ beats 23/25    easy · avg 74%         4.9%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             74.1%  ▃▁▁▁▁▁▁▁▂█●▁ beats 213/276  medium · avg 73%       1.8%  at its level · noisy
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>             35.8%  ▂··▁●▂▂▂█▅▁▂ beats 3/25     medium · avg 61%       1.5%  blunt · at its level

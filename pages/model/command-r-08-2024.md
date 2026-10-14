@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 32.3B params · cc-by-nc-4.0
 
-**score 46.0** ±1.0 · #421 of 719 · from 16 benchmark results across 9 sources
+**score 46.0** ±1.0 · #419 of 719 · from 16 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -16,7 +16,7 @@ Cohere · released 2024-08 · 32.3B params · cc-by-nc-4.0
 task            vs the others          rank  counts  tests
 agent tasks     ▁▁●▆█▆▅▅▅▄▃▁   #281 of 300*    5.7%      1
 coding          ▁▁▁▃▆●█▇▆▄▃▁    #336 of 458     37%      6
-chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #275 of 393*    8.3%      1
+chat &amp; writing  ▁▁▁▃▅▄●█▆▆▇▃   #275 of 393*    8.4%      1
 </pre>
 
 <details><summary>agent tasks · #281 of 300 · 5.7% of its score</summary>
@@ -41,18 +41,18 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                          74.3%  █●·██···████ beats 1/7    easy · avg 79%          5.3%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>   11.0%  ▄●·▄·····█▄█ beats 1/7    hard · avg 19%          4.2%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>                 47.3%  ▄··●·▄·█··▄█ beats 1/7    medium · avg 49%        3.1%  at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    1.8%  ●▄··█·█····▄ beats 0/7    very hard · avg 6.7%    2.6%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    1.8%  ●▄··█·█····▄ beats 0/7    very hard · avg 6.8%    2.5%  sharp · too hard for it · noisy
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #275 of 393 · 8.3% of its score</summary>
+<details><summary>chat &amp; writing · #275 of 393 · 8.4% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1250.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 92/379  avg 1268      8.3%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1250.4  ▁▁▁▂▃▃●▆▆▇█▃ beats 92/379  avg 1268      8.4%  blunt
 </pre>
 
 </details>
@@ -63,7 +63,7 @@ test            result  vs the others in its run   difficulty  counts  why
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 30.8%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 29/61    medium · avg 41%        33%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (lab)</a>    73.2%  ▄●▄··▄▄··▄·█ beats 1/7      easy · avg 81%         8.0%  typical
-<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   59.8%  ▂▄▂▃█▄▃●▃▅▂▂ beats 49/81    medium · avg 58%       3.6%  blunt · at its level
+<a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   59.8%  ▂▄▂▃█▄▃●▃▅▂▂ beats 49/81    medium · avg 58%       3.7%  blunt · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>        34.3%  ▄··▄●···▄▄█▄ beats 2/7      medium · avg 36%       3.6%  at its level
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            86.6%  ▁▁·▁·▂▃▄●▂·▁ beats 18/22    easy · avg 83%         2.1%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.4%  ▃▁▁▁▁▁▁▁▂█●▁ beats 218/276  medium · avg 73%       1.9%  at its level · noisy

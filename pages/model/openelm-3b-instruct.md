@@ -6,7 +6,7 @@
 
 Apple · released 2024-04 · 3.04B params · apple-amlr
 
-**score 23.6** ±7.3 · #905 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 23.6** ±7.3 · #907 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ Apple · released 2024-04 · 3.04B params · apple-amlr
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   75.2%  ●▁▂▃▄▄█▆▃▂▂▁ beats 3/140  very easy · avg 94%     76%  blunt · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   75.2%  ●▁▂▃▄▄█▆▃▂▂▁ beats 3/140  very easy · avg 94%     77%  blunt · noisy
 </pre>
 
 </details>
@@ -31,8 +31,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                             results  share of the score
-<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1   76% ▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                24% ▇▇▇
+<a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1   77% ▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                23% ▇▇▇
 weighted average                            = 23.6
 </pre>
 

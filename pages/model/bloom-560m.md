@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 0.559B params · bigscience-bloom-rail-1.0
 
-**score 5.2** ±1.6 · #711 of 719 · from 12 benchmark results across 4 sources
+**score 5.3** ±1.6 · #711 of 719 · from 12 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,14 +14,14 @@ BigScience · released 2022-07 · 0.559B params · bigscience-bloom-rail-1.0
 
 <pre>
 task    vs the others      rank  counts  tests
-coding  ●···█··█··██   #5 of 5*    9.2%      1
+coding  ●···█··█··██   #5 of 5*    9.3%      1
 </pre>
 
-<details><summary>coding · #5 of 5 · 9.2% of its score</summary>
+<details><summary>coding · #5 of 5 · 9.3% of its score</summary>
 
 <pre>
 test             result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>    0.8%  ●···▄·▄·█··▄ beats 0/5    easy · avg 78%    9.2%  sharp · too hard for it
+<a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>    0.8%  ●···▄·▄·█··▄ beats 0/5    easy · avg 78%    9.3%  sharp · too hard for it
 </pre>
 
 </details>
@@ -56,7 +56,7 @@ source                                    results  share of the score
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-560m/results_2024-02-12%2009%3A30%3A18.175863.json">Hallucinations Leaderboard results</a>              4    7% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 5.2
+weighted average                                   = 5.3
 </pre>
 
 <sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

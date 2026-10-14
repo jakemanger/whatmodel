@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-07 · 49B params · nvidia-open-model
 
-**score 57.5** ±1.4 · #226 of 719 · from 4 benchmark results across 2 sources
+**score 57.4** ±1.4 · #226 of 719 · from 4 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -51,7 +51,7 @@ source                         results  share of the score
 <a name="report-2512.13607v2"></a><a href="https://arxiv.org/html/2512.13607v2">NVIDIA (lab)</a>                         3   81% ▇▇▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   18% ▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 57.5
+weighted average                        = 57.4
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

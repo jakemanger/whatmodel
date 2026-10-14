@@ -6,7 +6,7 @@
 
 ByteDance · proprietary
 
-**score 73.6** ±2.1 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 73.5** ±2.1 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -23,7 +23,7 @@ vision &amp; documents  ▁▁▃▃▂▃▅▄▇▇●▃   #45 of 182*     2
 
 <pre>
 test                    result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2607.00248v1">τ²-bench Telecom (lab)</a>   94.2%  ▁·▅█▆▅▂▃●▂▃▁ beats 73/89  hard · avg 25%     33%  sharp · small run
+<a href="https://arxiv.org/pdf/2607.00248v1">τ²-bench Telecom (lab)</a>   94.2%  ▁·▅█▆▅▂▃●▂▃▁ beats 73/89  hard · avg 26%     33%  sharp · small run
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   65% ▇▇▇▇▇▇▇▇
 <a name="paper-2607.00248v1-seed2-0"></a><a href="https://arxiv.org/pdf/2607.00248v1">ByteDance Seed - Seed2.0 Model Card (la…</a>        1   33% ▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 73.6
+weighted average                                   = 73.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ByteDance Seed - Seed2.0 Model Card ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

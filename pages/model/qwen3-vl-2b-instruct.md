@@ -27,7 +27,7 @@ Beats [o3-mini](o3-mini.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-re
 
 <pre>
 test           result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>   55.4%  ●▄··▄█·█▄█▄█ beats 0/13   medium · avg 59%    1.8%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>   55.4%  ●▄··▄█·█▄█▄█ beats 0/13   medium · avg 60%    1.8%  blunt · at its level
 </pre>
 
 </details>
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #279 of 393 · 4.2% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -80,7 +80,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU Pro (lab)</a>                       36.5%  ▃·●·▅▃▃▃▅▅▃█ beats 1/16   medium · avg 46%       3.1%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">HallusionBench (lab)</a>                 51.4%  ▃·▃·●▃▅▅▃▅█▅ beats 3/16   medium · avg 55%       2.6%  blunt · at its level · several runs
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (lab)</a>                        79.1%  ▂··●·▂▃·▅▂▆█ beats 1/17   easy · avg 85%         1.9%  blunt · several runs
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>                    63.9%  ●▃·▃▅▅·█·▃▅█ beats 1/16   easy · avg 70%         1.8%  blunt · at its level · several runs
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>                    63.9%  ●▃·▃▅▅·█·▃▅█ beats 1/16   easy · avg 71%         1.8%  blunt · at its level · several runs
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">DocVQA (lab)</a>                         93.3%  ▃··●▃▅▃█▃█▅▅ beats 2/17   very easy · avg 94%    1.7%  blunt · maxed out
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   27.0%  ▁·▁·▃●▁▇▃█·▄ beats 5/22   hard · avg 27%         1.6%  blunt
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ScreenSpot-Pro (lab)</a>                 48.5%  ▂····▂●··▂█▆ beats 2/11   medium · avg 46%       1.0%  blunt · at its level
@@ -100,7 +100,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                       49.0%  ●·▄·▄▄▄▄█▄██ beats 0/12   medium · avg 63%    9.0%  at its level · several runs
-<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                     66.5%  ●··▃·▃·█▃▅▃▅ beats 0/11   easy · avg 79%      7.0%  at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                     66.5%  ●··▃·▃·█▃▅▃▅ beats 0/11   easy · avg 79%      6.9%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (lab)</a>      42.0%  ▂····●·▂▂█▆█ beats 1/14   hard · avg 49%      4.6%  sharp
 <a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                      24.3%  ●··▄·▄▄▄█▄██ beats 0/11   medium · avg 37%    3.0%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles) (la…</a>   61.9%  ▃··●··▅█▃▃▅▃ beats 1/13   medium · avg 66%    2.5%  blunt · at its level
@@ -108,7 +108,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU</a>                                 63.0%  ▄·····▄▄··●█ beats 3/5    medium · avg 70%    2.1%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                        47.4%  ●··▃·▅▃▃·█·▃ beats 0/10   hard · avg 51%      2.0%  at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MVBench (lab)</a>                        61.7%  ●▂▂·▂█··▆▄·▂ beats 0/13   medium · avg 67%    1.0%  blunt · at its level
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified)</a>   52.3%  ▄·▄··█●····▄ beats 4/5    medium · avg 58%    0.9%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified)</a>   52.3%  ▄·▄··█●····▄ beats 4/5    medium · avg 59%    0.9%  blunt · at its level
 </pre>
 
 </details>

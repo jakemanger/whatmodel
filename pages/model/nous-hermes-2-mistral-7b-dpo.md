@@ -20,9 +20,9 @@ Nous Research · released 2024-02 · 7.24B params · apache-2.0
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">MedQA (USMLE, 4 options)</a>             53.1%  ▁▁··▄▁▁··▄▃● beats 12/17    easy · avg 76%       56%  sharp · at its level
+<a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">MedQA (USMLE, 4 options)</a>             53.1%  ▁▁··▄▁▁··▄▃● beats 12/17    easy · avg 76%       55%  sharp · at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">MedMCQA</a>                              49.0%  ▂▂··▄▄▂▂·▄●█ beats 11/17    medium · avg 68%     30%  at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   66.8%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 129/276  medium · avg 73%    9.5%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   66.8%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 129/276  medium · avg 73%     10%  at its level · noisy
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">PubMedQA</a>                             74.8%  ▂·▂▆·▄▂▄▄▂●▂ beats 15/17    medium · avg 77%    3.2%  blunt · at its level
 </pre>
 
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                results  share of the score
 <a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/results_2024-04-01%2000%3A25%3A17.418543.json">Open Medical-LLM Leaderboard results</a>        3   88% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>             1    9% ▇
+<a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>             1   10% ▇
 prior: pull toward the middle                    2% ▇
 weighted average                               = 40.2
 </pre>

@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 1.3B params · deepseek
 
-**score 32.4** ±0.6 · #623 of 719 · from 12 benchmark results across 5 sources
+**score 32.5** ±0.6 · #623 of 719 · from 12 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -28,7 +28,7 @@ test        result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   25.6%  ▁·▁▁▁●▄▄▄█▃▁ beats 15/99  easy · avg 74%       19%  sharp · at its level
 <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>         55.4%  ▄▄▄█●▄·▄█·▄▄ beats 6/12   easy · avg 82%      4.5%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        47.9%  ▁···▁▁▂●▇█▆▂ beats 17/75  easy · avg 68%      4.3%  at its level
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>      16.2%  ▄●·▄██▄█·█·▄ beats 1/12   medium · avg 52%    3.2%  typical
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>      16.2%  ▄●·▄██▄█·█·▄ beats 1/12   medium · avg 53%    3.2%  typical
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   27.8%  ▁··▁●▂█▇▁··▁ beats 2/22   medium · avg 54%    1.2%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   31.0%  ▁·●▃▁█▁▂···▁ beats 2/22   medium · avg 53%    1.2%  blunt · at its level
 </pre>
@@ -51,7 +51,7 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>         20.3%  ▂▂●▄▄█▁▄▅▃▁▃ beats 5/42   medium · avg 55%    7.1%  typical
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   22.3%  ●▁▁▄▂▅▇█▆▂▂▂ beats 2/58   medium · avg 50%    3.3%  typical
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   22.3%  ●▁▁▄▂▅▇█▆▂▂▂ beats 2/58   medium · avg 51%    3.3%  typical
 </pre>
 
 </details>
@@ -68,7 +68,7 @@ source                                    results  share of the score
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1    3% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 32.4
+weighted average                                   = 32.5
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

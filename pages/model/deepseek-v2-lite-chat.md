@@ -28,7 +28,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">HumanEval (lab)</a>                      57.3%  ▁▁▁▁▁▃▅●█▃▂▁ beats 96/190  easy · avg 84%      8.6%  sharp · at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MBPP (lab)</a>                           45.8%  ▁▁▁▄●█▄▅▃▁▂▁ beats 23/81   easy · avg 71%      4.3%  at its level · small run
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   20.5%  ▃··▁▂▂●▂█▃▄▂ beats 15/47   medium · avg 54%    2.2%  sharp · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   15.0%  ▁▁▁▁▁▁●▂▃█▅▄ beats 10/47   hard · avg 33%      1.7%  typical
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   15.0%  ▁▁▁▁▁▁●▂▃█▅▄ beats 10/47   hard · avg 33%      1.8%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    6.9%  █▂▁▁▂●▂▃▅▅▅▇ beats 16/47   medium · avg 36%    1.5%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   76.8%  ▁▁▁······▁▃● beats 38/47   easy · avg 67%      0.1%  blunt · at its level · noisy
 </pre>
@@ -53,7 +53,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">BIG-Bench Hard (lab)</a>                 48.1%  ▁▁▁▁▂▄●▅█▃▄▁ beats 41/129   easy · avg 75%      8.3%  sharp · at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MMLU (lab)</a>                           55.7%  ▁▁▁▁▁▂▃●█▃▆▃ beats 56/183   easy · avg 77%      5.9%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">C-Eval (lab)</a>                         60.1%  ▁···▁▁▂▁●▂▃█ beats 8/33     easy · avg 74%      4.3%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">CMMLU (lab)</a>                          62.5%  ▅·●····█▃▅█▅ beats 3/14     easy · avg 76%      3.8%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">CMMLU (lab)</a>                          62.5%  ▅·●····█▃▅█▅ beats 3/14     easy · avg 76%      3.7%  at its level · small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.3%  ▃▁▁▁▁▁▁▁●█▅▁ beats 102/276  medium · avg 73%    2.5%  at its level · noisy
 </pre>
 

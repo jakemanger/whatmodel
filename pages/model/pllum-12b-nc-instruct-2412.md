@@ -6,7 +6,7 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 12.25B params · cc-by-nc-4.0
 
-**score 45.8** ±3.8 · #565 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.8** ±3.8 · #563 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

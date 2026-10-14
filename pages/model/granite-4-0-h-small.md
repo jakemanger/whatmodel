@@ -36,7 +36,7 @@ test                result  vs the others in its run    difficulty           cou
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval (lab)</a>      88.0%  ▁▁▁▁▁▃▅▅█▃●▁ beats 180/190  very easy · avg 86%    4.1%  sharp
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval+ (lab)</a>     83.0%  ▁·▁▁▂▃▄▄█●▄▃ beats 114/145  easy · avg 81%         3.9%  sharp
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP (lab)</a>           84.0%  ▁▁▁▄▅█▄▅▃▁●▁ beats 77/81    easy · avg 79%         1.9%  typical
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BigCodeBench (lab)</a>   46.2%  ▅····▃·█▃▅█● beats 12/12    medium · avg 42%       1.9%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BigCodeBench (lab)</a>   46.2%  ▅····▃·█▃▅█● beats 12/12    medium · avg 43%       1.9%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MultiPL-E (lab)</a>      57.4%  ▃··▄·▅●▇▄█▃▄ beats 12/31    medium · avg 58%       1.7%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP+ (lab)</a>          71.0%  ▁··▁▁▃▄█●▄▁▁ beats 87/120   easy · avg 70%         1.4%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">CRUXEval-O (lab)</a>     50.2%  ▂▂██▅●▁·▁·▁▁ beats 45/51    medium · avg 48%       1.0%  blunt · at its level
@@ -46,7 +46,7 @@ test                result  vs the others in its run    difficulty           cou
 
 <details><summary>chat &amp; writing · #231 of 393 · 6.5% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
@@ -59,11 +59,11 @@ test                                result  vs the others in its run    difficul
 
 <details><summary>math · #224 of 398 · 22% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                                83.9%  █····●··▄·▄█ beats 2/7    very easy · avg 86%    7.0%  sharp · several runs
+<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                                83.9%  █····●··▄·▄█ beats 2/7    very easy · avg 87%    7.0%  sharp · several runs
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">DeepMind Mathematics (lab)</a>           59.3%  ▅····▅·█●▃·▅ beats 7/10   medium · avg 55%       3.0%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">Minerva MATH (lab)</a>                   74.0%  ▄·▂▂·██▆·▆●▄ beats 19/21  easy · avg 70%         2.6%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>            75.7%  █●··▄█▄····▄ beats 2/7    easy · avg 81%         2.5%  typical
@@ -84,12 +84,12 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             57.1%  ▄····█·▄●·▄▄ beats 4/7      medium · avg 56%       6.5%  at its level · several runs
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4452  ▁▄▃▃●▄█▃▅▁▁▁ beats 10/30    avg 0.423              6.4%  sharp
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (lab)</a>      40.6%  ▂▁▂▂▄▃●▃▅█▄▃ beats 40/104   hard · avg 37%         5.0%  sharp
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>                 81.6%  ▁▁▁▁▂▄▅▅█●▄▁ beats 111/129  easy · avg 76%         3.7%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>                 81.6%  ▁▁▁▁▂▄▅▅█●▄▁ beats 111/129  easy · avg 77%         3.7%  sharp · at its level
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   44.5%  ▂▃▅▂●▃█▅█▅▃▆ beats 10/34    medium · avg 42%       3.1%  blunt · at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               51.6%  █··▄··█··●·▄ beats 6/7      medium · avg 43%       3.0%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">INCLUDE (lab)</a>                        64.0%  ▂····▂▂▄●▄█▄ beats 14/36    medium · avg 58%       2.6%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        67.4%  ▃··▃▃··▅···● beats 5/7      medium · avg 57%       2.2%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU (lab)</a>                          69.7%  ▂▁▁▂▃▂▄●▅██▃ beats 19/46    medium · avg 63%       2.1%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU (lab)</a>                          69.7%  ▂▁▁▂▃▂▄●▅██▃ beats 19/46    medium · avg 64%       2.1%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             68.1%  ▄···▄·█·▄·●█ beats 5/7      medium · avg 60%       1.9%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>    44.7%  ▄··▄●▄··▄··█ beats 2/7      medium · avg 47%       1.5%  blunt · at its level
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   53.2%  ▁··▃▁●▁▅█▅▁▅ beats 4/24     medium · avg 52%       0.8%  blunt · at its level

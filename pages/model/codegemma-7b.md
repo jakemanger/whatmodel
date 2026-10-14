@@ -26,7 +26,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            44.5%  ▁·▁▁▃▄●▅█▃▁▁ beats 28/99  easy · avg 79%       40%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           41.5%  ▁·▁▁▁▃▄●▄█▃▁ beats 32/99  easy · avg 74%       24%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   41.5%  ▁·▂▁▂▆▅●▄▄▁▂ beats 20/35  medium · avg 64%    6.4%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   41.5%  ▁·▂▁▂▆▅●▄▄▁▂ beats 20/35  medium · avg 65%    6.4%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 53.0%  █·▅▃▃▃▅▃▃▅·● beats 15/15  easy · avg 70%      5.6%  at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                52.4%  ▁···▁▁▂▅●█▆▂ beats 22/75  easy · avg 68%      4.5%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   12.4%  ▄●█▃▄▇▄▁▇▃·▁ beats 4/35   medium · avg 49%    3.8%  typical
@@ -53,7 +53,7 @@ test   result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   37.3%  ▂▁▁▄▂●▇█▆▂▂▂ beats 20/58  medium · avg 50%    3.8%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   37.3%  ▂▁▁▄▂●▇█▆▂▂▂ beats 20/58  medium · avg 51%    3.8%  at its level
 </pre>
 
 </details>

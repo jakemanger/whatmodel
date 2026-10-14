@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-08 · 31.6B params (3.6B active) · openmdw-1.1
 
-**score 62.2** ±2.2 · #174 of 719 · from 3 benchmark results across 2 sources
+**score 62.1** ±2.2 · #174 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -58,7 +58,7 @@ source                         results  share of the score
 <a name="roblox-llm-leaderboard"></a><a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Roblox LLM Leaderboard</a>               2   56% ▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   42% ▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 62.2
+weighted average                        = 62.1
 </pre>
 
 <sub>Licences: Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

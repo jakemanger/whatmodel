@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 57.41B params (14B active) · apache-2.0
 
-**score 47.6** ±1.7 · #387 of 719 · from 5 benchmark results across 4 sources
+**score 47.5** ±1.7 · #390 of 719 · from 5 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -21,10 +21,10 @@ Alibaba · released 2024-06 · 57.41B params (14B active) · apache-2.0
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        35.7%  ▃▂·▆▆█●▆▅▃▃▃ beats 17/33    medium · avg 41%     33%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        46.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 44/58    medium · avg 50%     33%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        46.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 44/58    medium · avg 51%     32%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      57.6%  ▁··▁▁▂▂▆▅●█▆ beats 36/70    medium · avg 64%     15%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   56.5%  ▂▄▂▃█▄●▆▃▅▂▂ beats 46/81    medium · avg 58%     12%  blunt · at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   75.5%  ▃▁▁▁▁▁▁▁▂█●▁ beats 229/276  medium · avg 73%    5.9%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   75.5%  ▃▁▁▁▁▁▁▁▂█●▁ beats 229/276  medium · avg 73%    6.0%  at its level · noisy
 </pre>
 
 </details>
@@ -40,7 +40,7 @@ source                                  results  share of the score
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>               1   12% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>               1    6% ▇
 prior: pull toward the middle                      1% ▇
-weighted average                                 = 47.6
+weighted average                                 = 47.5
 </pre>
 
 <sub>Licences: BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

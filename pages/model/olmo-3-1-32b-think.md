@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 32.2B params · apache-2.0
 
-**score 58.2** ±0.9 · #215 of 719 · from 21 benchmark results across 5 sources
+**score 58.2** ±0.9 · #214 of 719 · from 21 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -34,7 +34,7 @@ test                    result  vs the others in its run  difficulty        coun
 
 <details><summary>chat &amp; writing · #229 of 393 · 12% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
@@ -63,13 +63,13 @@ test                               result  vs the others in its run  difficulty 
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (lab)</a>      56.7%  ▃······▃·▅·● beats 5/6      hard · avg 43%       14%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (lab)</a>      56.7%  ▃······▃·▅·● beats 5/6      hard · avg 44%       14%  sharp · at its level
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5067  ▁▄▃▃▇▄●▃▅▁▁▁ beats 18/30    avg 0.423            12%  sharp
 <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>                 88.6%  ▄·····▄·▄·█● beats 5/6      easy · avg 78%      8.7%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   50.7%  ▂▃▅▂▆▃█●█▅▃▆ beats 18/34    medium · avg 42%    5.8%  blunt · at its level
 <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                           86.4%  ▄···▄··█··▄● beats 6/6      easy · avg 77%      5.0%  typical
 <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>                88.8%  ▄····▄·▄▄··● beats 5/5      easy · avg 76%      3.7%  typical
-<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                     80.1%  █▄····▄·▄·▄● beats 6/6      medium · avg 53%    2.7%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                     80.1%  █▄····▄·▄·▄● beats 6/6      medium · avg 54%    2.7%  at its level
 <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                          30.9%  ▄··█···▄···● beats 4/5      hard · avg 22%      2.6%  blunt · at its level
 <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)…</a>   68.1%  █·██·██····● beats 5/5      medium · avg 36%    2.0%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   74.3%  ▃·▁▁▂▁▂▅●▇▄▁ beats 59/100   medium · avg 68%    1.0%  noisy

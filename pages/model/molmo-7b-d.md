@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-09 · 8.02B params · apache-2.0
 
-**score 40.5** ±1.4 · #525 of 719 · from 21 benchmark results across 5 sources
+**score 40.5** ±1.4 · #524 of 719 · from 21 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -54,12 +54,12 @@ test                                                         result  vs the othe
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   57.1%  ●···█▃··▅▃▃▃ beats 0/9    easy · avg 74%              7.3%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language multimo…</a>                            32.9%  ●·█···█·█·██ beats 0/5    medium · avg 47%            6.8%  at its level
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>                                          72.6%  ▃·▃▅●▃▃▃▃▃▃▃ beats 6/13   easy · avg 79%              6.7%  at its level · small run
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  3.7200 MM-MT-Bench score (1-10)  ●··▃·█·▃▃··▅ beats 1/9    avg 5.740 MM-MT-Bench s…    6.3%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  3.7200 MM-MT-Bench score (1-10)  ●··▃·█·▃▃··▅ beats 1/9    avg 5.748 MM-MT-Bench s…    6.3%  sharp · noisy
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                                              88.5%  ▂▂▃▂·▂●▃▃·▅█ beats 6/18   very easy · avg 91%         6.1%  small run
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                       27.0%  ▄·●▄▄··▄▄▄▄█ beats 1/9    easy · avg 83%              2.8%  blunt · small run · several runs
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                                                  92.2%  ▁··▃▁▁●▇█▇▄▅ beats 5/28   very easy · avg 93%         2.8%  blunt · small run
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                                             70.7%  ▂▃▂█▃●█▆█▂▆▆ beats 13/38  easy · avg 73%              2.1%  blunt · at its level · small run
-<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1056.0  ▄▄·▄·▄▄▄·●·█ beats 6/8    avg 1037                    2.1%  blunt
+<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>                           1056.0  ▄▄·▄·▄▄▄·●·█ beats 6/8    avg 1038                    2.1%  blunt
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                               93.2%  ▁▁▅▇▃▇·▄·●·▃ beats 24/28  easy · avg 86%              1.0%  blunt · small run
 <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                                                 81.7%  ▁▁▁▄▅▁▃·▃●▃█ beats 15/24  easy · avg 79%              1.0%  blunt · at its level · small run
 </pre>
@@ -70,7 +70,7 @@ test                                                         result  vs the othe
 
 <pre>
 test  result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>   61.2%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 73/183  easy · avg 76%     13%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>   61.2%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 73/183  easy · avg 77%     13%  at its level
 </pre>
 
 </details>

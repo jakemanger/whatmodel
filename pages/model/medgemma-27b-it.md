@@ -6,7 +6,7 @@
 
 Google · released 2025-07 · 28.84B params · health-ai-developer-foundations
 
-**score 57.3** ±3.8 · #271 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 57.2** ±3.8 · #273 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -35,7 +35,7 @@ source                           results  share of the score
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>             1   70% ▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   23% ▇▇▇
 prior: pull toward the middle               6% ▇
-weighted average                          = 57.3
+weighted average                          = 57.2
 </pre>
 
 <sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

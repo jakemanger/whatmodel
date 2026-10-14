@@ -6,7 +6,7 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 12.25B params · apache-2.0
 
-**score 44.9** ±2.9 · #590 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 44.8** ±2.9 · #593 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -35,7 +35,7 @@ source                                    results  share of the score
 <a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   55% ▇▇▇▇▇▇▇
 <a name="paper-2606.12250v1-polish-medical-exams"></a><a href="https://arxiv.org/html/2606.12250v1">Reassessing High-Performing LLMs on Pol…</a>        1   41% ▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 44.9
+weighted average                                   = 44.8
 </pre>
 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance? ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>

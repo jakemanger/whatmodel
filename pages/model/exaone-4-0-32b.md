@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-07 · 32B params · exaone
 
-**score 58.7** ±0.9 · #209 of 719 · from 29 benchmark results across 4 sources
+**score 58.6** ±0.9 · #209 of 719 · from 29 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -28,8 +28,8 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 test                   result  vs the others in its run    difficulty            counts  why
 <a href="https://arxiv.org/html/2601.03286v1">τ²-bench Telecom</a>        26.1%  ▁·▅●▆▅▂▃▃▂▃▁ beats 16/89    hard · avg 17%          8.9%  sharp · at its level · small run · seve…
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>         59.5%  ▁····▂▁▃▆●▃▁ beats 22/44    medium · avg 38%        6.8%  at its level · several runs
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>        45.6%  ▁▁·▂▁▃▂●█▅▂▃ beats 14/42    hard · avg 29%          5.2%  at its level · several runs
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>      3.6%  ▂▅●▂▂▆▂▂█▅▅▂ beats 6/27     very hard · avg 2.3%    4.6%  sharp · too hard for it · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>        45.6%  ▁▁·▂▁▃▂●█▅▂▃ beats 14/42    hard · avg 30%          5.2%  at its level · several runs
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>      3.6%  ▂▅●▂▂▆▂▂█▅▅▂ beats 6/27     very hard · avg 2.4%    4.6%  sharp · too hard for it · small run
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Retail (lab)</a>    62.8%  ▁····▃·▂▇●▂▆ beats 13/28    medium · avg 38%        3.6%  at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Airline (lab)</a>   51.5%  ▁▁▁·▅▄▁█▇●▁▇ beats 22/28    hard · avg 27%          2.6%  at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">BFCL v3 (lab)</a>           63.9%  ▁▁▁▁▁▃▅█●▅▄▁ beats 117/170  medium · avg 57%        0.9%  blunt · at its level · small run
@@ -39,11 +39,11 @@ test                   result  vs the others in its run    difficulty           
 
 <details><summary>coding · #229 of 458 · 7.4% of its score</summary>
 
-Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [Hermes 3 Llama 3.1 405B](hermes-3-llama-3-1-405b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unspecif…</a>   66.7%  ▂▃▄▄▅█●▅▄▇▃▆ beats 31/65  medium · avg 46%        3.8%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unspecif…</a>   66.7%  ▂▃▄▄▅█●▅▄▇▃▆ beats 31/65  medium · avg 46%        3.9%  at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench Pro 2025Q2 (Medium)…</a>    4.8%  █··▄▂▂●█▄·▄▆ beats 8/22   very hard · avg 3.0%    3.5%  sharp · small run
 </pre>
 
@@ -51,11 +51,11 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #194 of 393 · 1.6% of its score</summary>
 
-Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">IFEval (aggregation unspecified) …</a>   83.7%  ▄·▄·▄·▄●···█ beats 4/6    easy · avg 78%    1.6%  typical
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">IFEval (aggregation unspecified) …</a>   83.7%  ▄·▄·▄·▄●···█ beats 4/6    easy · avg 79%    1.6%  typical
 </pre>
 
 </details>
@@ -69,7 +69,7 @@ test                      result  vs the others in its run  difficulty        co
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">AIME 2025 (lab)</a>            85.3%  █·▄▄····●··█ beats 4/6    medium · avg 53%    7.8%  sharp
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IMO-AnswerBench (lab)</a>      66.1%  ▁▁·▁▁●▄▅█▄▂▃ beats 6/42   medium · avg 40%    4.2%  at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (lab)</a>   72.9%  ▁▁▁▃▁▅●▃██▁▄ beats 10/31  medium · avg 51%    3.3%  at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">HMMT November 2025 (lab)</a>   78.1%  ▁▁····▁●▃█▇▁ beats 5/23   easy · avg 65%      2.7%  small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">HMMT November 2025 (lab)</a>   78.1%  ▁▁····▁●▃█▇▁ beats 5/23   easy · avg 65%      2.6%  small run
 </pre>
 
 </details>
@@ -85,10 +85,10 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), val…</a>   79.7%  ▂··▂▂·▂▆▆●·▄ beats 11/15    medium · avg 63%        3.0%  at its level
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">Humanity's Last Exam (lab)</a>           10.6%  ▁▁▁▃●▆▇██▆▁▃ beats 18/104   very hard · avg 4.4%    2.7%  small run
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     36.4%  ▂···█▂●▆██▆▂ beats 8/23     very hard · avg 30%     2.4%  typical
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag</a>                            65.7%  ▁▁▁▁▂▂▃●█▆▅▃ beats 31/85    medium · avg 64%        2.3%  at its level · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag</a>                            65.7%  ▁▁▁▁▂▂▃●█▆▅▃ beats 31/85    medium · avg 65%        2.3%  at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Redux (lab)</a>                     92.3%  ▁▁▃▁▂▃▄▅▇▅●▄ beats 46/63    easy · avg 79%          1.9%  small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFBench (aggregation unspecified)…</a>   36.0%  ▃▇▂▄●▅▂▄▄▆█▇ beats 23/80    medium · avg 36%        1.6%  at its level · small run
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                                 89.9%  ▁▁▁▁▁▂▃▅█▃▆● beats 177/183  medium · avg 71%        1.5%  noisy · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                                 89.9%  ▁▁▁▁▁▂▃▅█▃▆● beats 177/183  medium · avg 72%        1.5%  noisy · small run
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA</a>                                 75.7%  ▁▁▁▃▃▄●█▄▃▁▁ beats 38/83    easy · avg 84%          0.6%  blunt · small run
 <a href="https://aclanthology.org/2026.findings-acl.324.pdf">Thunder-KoNUBench symbol 0-shot</a>      81.5%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
 </pre>
@@ -106,7 +106,7 @@ source                                    results  share of the score
 <a name="acl-kcl-2026"></a><a href="https://aclanthology.org/2026.eacl-short.17.pdf">Korean Canonical Legal Benchmark: Towar…</a>        2    7% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    7% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 58.7
+weighted average                                   = 58.6
 </pre>
 
 <sub>Licences: HyperCLOVA X 32B Think ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

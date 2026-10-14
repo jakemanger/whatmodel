@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2023-03 · 6.2B params · chatglm-6b-license
 
-**score 20.3** ±1.6 · #688 of 719 · from 7 benchmark results across 5 sources
+**score 20.4** ±1.6 · #688 of 719 · from 7 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -37,8 +37,8 @@ Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.
 test                                                      result  vs the others in its run  difficulty                counts  why
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         874.0  ●▁▂▁▃▇█▆▇▄▂▂ beats 3/95   avg 1201                     24%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                             995.8  ●▁▁▂▃▃▃▆▆▇█▃ beats 4/379  avg 1268                     23%  blunt
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  4.5000 MT-Bench score (1-10)  ▆▂▂●▆▄██▂▄▄▆ beats 6/28   avg 8.819 MT-Bench scor…     21%  sharp · noisy
-<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>       5.6300 mean rank (1-11)  █···▄··●···▄ beats 3/4    avg 6.444 mean rank (1-…    0.0%  blunt · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  4.5000 MT-Bench score (1-10)  ▆▂▂●▆▄██▂▄▄▆ beats 6/28   avg 8.826 MT-Bench scor…     20%  sharp · noisy
+<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>       5.6300 mean rank (1-11)  █···▄··●···▄ beats 3/4    avg 6.442 mean rank (1-…    0.0%  blunt · noisy
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test                                                      result  vs the others 
 <pre>
 test            result  vs the others in its run  difficulty      counts  why
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>   31.3%  ██●··█·█·█·█ beats 2/6    easy · avg 76%     12%  sharp · too hard for it
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>             36.1%  ▄▄·▄···▄●·██ beats 4/8    easy · avg 77%    6.2%  typical
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>             36.1%  ▄▄·▄···▄●·██ beats 4/8    easy · avg 78%    6.2%  typical
 </pre>
 
 </details>
@@ -62,10 +62,10 @@ source                                    results  share of the score
 <a name="instruct-eval-readme"></a><a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">InstructEval</a>                                    3   32% ▇▇▇▇
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1   24% ▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   23% ▇▇▇
-<a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1   21% ▇▇
+<a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1   20% ▇▇
 <a name="paper-2306.02561v3-llmblender"></a><a href="https://arxiv.org/html/2306.02561v3">LLM-Blender: Ensembling Large Language …</a>        1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 20.3
+weighted average                                   = 20.4
 </pre>
 
 <sub>Licences: InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

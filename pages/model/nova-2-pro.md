@@ -6,7 +6,7 @@
 
 Amazon · released 2025-11 · closed weights
 
-**score 63.5** ±2.2 · #161 of 719 · from 3 benchmark results across 2 sources
+**score 63.4** ±2.1 · #161 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -47,7 +47,7 @@ source                                 results  share of the score
 <a name="korean-personal-benchmark-runs"></a><a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">Daekeun Kim Korean LLM benchmark runs</a>        2   89% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="amazon-tau2-verified"></a><a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">Amazon AGI (lab)</a>                             1    9% ▇
 prior: pull toward the middle                     2% ▇
-weighted average                                = 63.5
+weighted average                                = 63.4
 </pre>
 
 <sub>Licences: Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt))</sub>

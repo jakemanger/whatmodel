@@ -50,12 +50,12 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      919.5  ▁●▂▂▂▂▄▅▅▆██ beats 1/145  avg 1068                15%  blunt
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>        63.7%  █·●·······▄█ beats 2/5    easy · avg 78%          14%  at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar</a>                               49.5%  ●▄▄█·······▄ beats 0/5    medium · avg 62%       7.9%  at its level
-<a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MMMU (val) (lab)</a>                     43.0%  ▁····▁▁●█▇▆▆ beats 4/52   medium · avg 52%       5.9%  typical
+<a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MMMU (val) (lab)</a>                     43.0%  ▁····▁▁●█▇▆▆ beats 4/52   medium · avg 53%       5.9%  typical
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1</a>                  73.1%  █·····●··▃·▃ beats 3/5    easy · avg 79%         5.6%  blunt · at its level
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench</a>                       58.5%  ●▄·▄·····█·▄ beats 0/5    medium · avg 65%       4.3%  blunt · at its level
 <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini) (lab)</a>           43.9%  ▁··▁●▄▇█▅▆█▄ beats 3/47   medium · avg 55%       3.0%  noisy
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench</a>                           64.5%  ▄··●··█··▄·▄ beats 1/5    very easy · avg 86%    2.6%  at its level · noisy
-<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>   982.0  ▄●·▄·▄▄▄·▄·█ beats 1/8    avg 1037               2.4%  blunt
+<a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference Elo (S…</a>   982.0  ▄●·▄·▄▄▄·▄·█ beats 1/8    avg 1038               2.4%  blunt
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA</a>                          58.0%  ▄···●··▄▄··▄ beats 1/5    easy · avg 69%         2.3%  blunt · at its level
 <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>   39.8%  ▅▃●··▅▃····▃ beats 5/9    hard · avg 43%         2.3%  blunt
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test</a>                            79.0%  █···▄▄···▄·● beats 5/5    easy · avg 82%         1.8%  blunt · at its level · several runs
@@ -71,8 +71,8 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU</a>                                 35.5%  ●·····▄▄··▄█ beats 0/5    medium · avg 70%     10%  at its level
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU-Pro</a>                             28.6%  ●▄·······▄▄▄ beats 0/5    medium · avg 50%    8.5%  typical
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified)</a>   30.4%  ●·▄··█▄····▄ beats 0/5    medium · avg 58%    4.4%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU-Pro</a>                             28.6%  ●▄·······▄▄▄ beats 0/5    medium · avg 51%    8.5%  typical
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified)</a>   30.4%  ●·▄··█▄····▄ beats 0/5    medium · avg 59%    4.4%  blunt · at its level
 </pre>
 
 </details>

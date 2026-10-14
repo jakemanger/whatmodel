@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 37.6** ±1.8 · #568 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 37.5** ±1.8 · #568 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -59,7 +59,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-tulu2-2311.10702v2"></a><a href="https://arxiv.org/html/2311.10702v2">Tulu 2 (lab)</a>                         5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 37.6
+weighted average                        = 37.5
 </pre>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt))</sub>

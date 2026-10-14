@@ -42,7 +42,7 @@ test                                                      result  vs the others 
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                         18.9%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 13/60   medium · avg 52%            8.2%  sharp · at its level
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1106.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 50/95   avg 1201                    3.2%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1204.2  ▁▁▁▂▃●▃▆▆▇█▃ beats 71/379  avg 1268                    3.2%  blunt
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.3200 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄●▆ beats 24/28   avg 8.819 MT-Bench scor…    2.8%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.3200 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄●▆ beats 24/28   avg 8.826 MT-Bench scor…    2.8%  sharp · noisy
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         86.3%  ▂▂·▆·▇▃●█▆▄▂ beats 24/45   very easy · avg 96%         0.5%  sharp · maxed out · noisy
 </pre>
 
@@ -54,7 +54,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md) here, though they rank highe
 
 <pre>
 test          result  vs the others in its run  difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   15.9%  ▂▂●▆▄█▆▃▅▂▃▄ beats 14/92  hard · avg 32%    4.8%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   15.9%  ▂▂●▆▄█▆▃▅▂▃▄ beats 14/92  hard · avg 33%    4.8%  sharp
 </pre>
 
 </details>

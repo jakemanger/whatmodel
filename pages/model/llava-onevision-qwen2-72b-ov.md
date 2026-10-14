@@ -24,7 +24,7 @@ Trails [Qwen3.5 0.8B](qwen3-5-0-8b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [Nor
 <pre>
 test                                  result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>        978.3  ▁▁●▂▂▂▄▅▅▆██ beats 6/145  avg 1068           51%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -12.3300  ▃▃▃·▃●·▅▃▃▃▃ beats 4/12   avg -0.671         35%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -12.3300  ▃▃▃·▃●·▅▃▃▃▃ beats 4/12   avg -0.412         35%  typical
 <a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science figur…</a>     51.1%  █·█●····██·█ beats 2/5    hard · avg 48%     10%  blunt · at its level
 </pre>
 

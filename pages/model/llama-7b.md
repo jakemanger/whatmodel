@@ -56,8 +56,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">SciQ</a>                                 94.6%  ▁·▁·▁·▃▅▃█●▁ beats 23/26  very easy · avg 98%    3.4%  several runs
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                       30.9%  █●█··█·█·█·█ beats 1/6    easy · avg 76%         3.3%  sharp
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">Social IQA</a>                           44.8%  ▁···▁▃█▁●▁·▁ beats 22/26  medium · avg 63%       2.6%  blunt · several runs
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 35.2%  ▄▄·▄···●▄·██ beats 3/8    easy · avg 77%         2.6%  several runs
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   14.6%  ▅····▃●·██·█ beats 3/13   medium · avg 59%       1.7%  typical
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 35.2%  ▄▄·▄···●▄·██ beats 3/8    easy · avg 78%         2.6%  several runs
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   14.6%  ▅····▃●·██·█ beats 3/13   medium · avg 60%       1.7%  typical
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   35.0%  ▃▅▃··▅●·█▃▃▅ beats 6/13   easy · avg 67%         1.4%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json">LAMBADA (OpenAI version), last-wo…</a>   73.5%  ▁··▂▁▁▁▂▆█●▃ beats 22/26  very easy · avg 89%    1.0%  blunt · at its level
 </pre>

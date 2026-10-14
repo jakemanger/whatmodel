@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 8.03B params · mit
 
-**score 46.9** ±1.2 · #400 of 719 · from 18 benchmark results across 7 sources
+**score 46.9** ±1.2 · #398 of 719 · from 18 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -35,11 +35,11 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>math · #204 of 398 · 31% of its score</summary>
 
-Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
+Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>   50.4%  ▃·▃·●▃···█·▃ beats 2/7    medium · avg 53%        19%  sharp · at its level · several runs
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>   50.4%  ▃·▃·●▃···█·▃ beats 2/7    medium · avg 54%        19%  sharp · at its level · several runs
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>    89.1%  ▄·●▄·▄▄█···▄ beats 1/7    very easy · avg 91%     12%  several runs
 </pre>
 
@@ -50,7 +50,7 @@ test             result  vs the others in its run  difficulty           counts  
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>                   49.0%  ▄·····●·█▄▄▄ beats 1/7     hard · avg 47%       33%  sharp · several runs
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   28.5%  ▁▁▁▁▁▂▂●▄▆█▃ beats 24/97   hard · avg 32%      6.4%  blunt · at its level
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   28.5%  ▁▁▁▁▁▂▂●▄▆█▃ beats 24/97   hard · avg 32%      6.5%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   42.4%  ▃▁▁▁▁▁●▁▂█▅▁ beats 50/276  medium · avg 73%    3.0%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   53.7%  ▃·▁▁▂▁▂●█▇▄▁ beats 28/100  medium · avg 68%    2.4%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   78.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 61/146  easy · avg 83%      1.7%  at its level · noisy

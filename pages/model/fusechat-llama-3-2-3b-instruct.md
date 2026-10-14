@@ -6,7 +6,7 @@
 
 FuseAI · released 2024-12 · 3.21B params
 
-**score 55.7** ±1.6 · #300 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.6** ±1.6 · #302 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -19,7 +19,7 @@ chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #207 of 466*     99% 
 
 <details><summary>chat &amp; writing · #207 of 466 · 99% of its score</summary>
 
-Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run    difficulty        counts  why
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                               results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        1   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 55.7
+weighted average                              = 55.6
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

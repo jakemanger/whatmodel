@@ -6,7 +6,7 @@
 
 StepFun · proprietary
 
-**score 75.0** ±1.4 · comparison only: no current run option verified · from 4 benchmark results across 1 source
+**score 74.9** ±1.4 · comparison only: no current run option verified · from 4 benchmark results across 1 source
 
 ## What it's good at
 
@@ -17,7 +17,7 @@ task                vs the others         rank  counts  tests
 agent tasks         ▁▁▂▆█▆▅▄▄●▂▁   #39 of 340*     36%      1
 coding              ▁▁▁▃▅▇█▇▅▄●▁   #34 of 524*     32%      1
 chat &amp; writing      ▁▁▁▃▅▄▆█▇▇●▃   #56 of 463*     18%      1
-vision &amp; documents  ▁▁▃▃▂▃▅▄▇▇●▃   #43 of 182*     12%      1
+vision &amp; documents  ▁▁▃▃▂▃▅▄▇▇●▃   #43 of 182*     13%      1
 </pre>
 
 <details><summary>agent tasks · #39 of 340 · 36% of its score</summary>
@@ -26,7 +26,7 @@ Beats [Gemini 3.7 Flash](gemini-3-7-flash.md), [Qwen3.8-Flash-Next](qwen3-8-flas
 
 <pre>
 test                                    result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0048 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 21/49  avg -0.312 IPS     36%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0048 IPS  ▁▁▁▄▂▃●█▂▂▁▃ beats 21/49  avg -0.310 IPS     36%  sharp
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1570.2  ▁▂▄▃▅█▄▇●▄▁▁ beats 88/119  avg 981        32%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1570.2  ▁▂▄▃▅█▄▇●▄▁▁ beats 88/119  avg 983        32%  sharp
 </pre>
 
 </details>
@@ -53,13 +53,13 @@ test            result  vs the others in its run    difficulty  counts  why
 
 </details>
 
-<details><summary>vision &amp; documents · #43 of 182 · 12% of its score</summary>
+<details><summary>vision &amp; documents · #43 of 182 · 13% of its score</summary>
 
 Beats [MiMo-V2.6-Pro](mimo-v2-6-pro.md), [MiMo-V2.6-Flash (309B-A15B)](mimo-v2-6-flash.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md) here, though they rank higher overall. Trails [Qwen3.6 Flash](qwen3-6-flash.md), [Qwen3.6 Plus](qwen3-6-plus.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1259.7  ▁▁▂▂▂▂▄▅▅▆●█ beats 108/145  avg 1068       12%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1259.7  ▁▁▂▂▂▂▄▅▅▆●█ beats 108/145  avg 1068       13%  blunt
 </pre>
 
 </details>
@@ -72,7 +72,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 75.0
+weighted average                        = 74.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

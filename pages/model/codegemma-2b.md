@@ -25,7 +25,7 @@ Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            26.8%  ▁·▁▁●▄▆▅█▃▁▁ beats 10/99  easy · avg 79%       41%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           20.7%  ▁·▁▁▁●▄▄▄█▃▁ beats 9/99   easy · avg 74%       24%  sharp
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   30.4%  ▁·▂▁▂●▅█▄▄▁▂ beats 6/35   medium · avg 64%    6.8%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   30.4%  ▁·▂▁▂●▅█▄▄▁▂ beats 6/35   medium · avg 65%    6.8%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 30.4%  ●·▅▃▃▃▅▃▃▅·▅ beats 1/15   easy · avg 70%      6.6%  at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                46.6%  ▁···▁▁▂●▇█▆▂ beats 15/75  easy · avg 68%      5.4%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   17.3%  ▄▇█●▄▇▄▁▇▃·▁ beats 14/35  medium · avg 49%    3.3%  typical
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   23.9%  ▂●▁▄▂▅▇█▆▂▂▂ beats 3/58   medium · avg 50%    4.1%  typical
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   23.9%  ▂●▁▄▂▅▇█▆▂▂▂ beats 3/58   medium · avg 51%    4.1%  typical
 </pre>
 
 </details>

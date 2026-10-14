@@ -6,7 +6,7 @@
 
 Anthropic · released 2024-02 · proprietary
 
-**score 48.7** ±0.5 · comparison only: no current run option verified · from 30 benchmark results across 18 sources
+**score 48.6** ±0.5 · comparison only: no current run option verified · from 30 benchmark results across 18 sources
 
 ## What it's good at
 
@@ -17,7 +17,7 @@ task                vs the others         rank  counts  tests
 coding              ▁▁▁▃▅●█▇▅▄▃▁   #348 of 524     40%      7
 chat &amp; writing      ▁▁▁▃▅▄●█▇▇▇▃   #300 of 463     17%      4
 math                ▁▂▃●▇▅▅█▄▁▁▁   #376 of 462    6.7%      3
-vision &amp; documents  ▁▁▃●▂▃▅▄▇▇█▃   #160 of 182    9.2%      8
+vision &amp; documents  ▁▁▃●▂▃▅▄▇▇█▃   #160 of 182    9.1%      8
 </pre>
 
 <details><summary>coding · #348 of 524 · 40% of its score</summary>
@@ -57,14 +57,14 @@ Beats [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails 
 
 <pre>
 test                         result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                  18.2%  ▂▂▅●▄█▆▃▅▂▃▄ beats 16/92   hard · avg 32%          3.7%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                  18.2%  ▂▂▅●▄█▆▃▅▂▃▄ beats 16/92   hard · avg 33%          3.7%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>   91.5%  ▁▄·▁▄█▅▅●███ beats 25/43   very easy · avg 89%     2.5%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 19/193  very hard · avg 8.5%    0.5%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 19/193  very hard · avg 8.6%    0.5%  sharp · too hard for it · noisy
 </pre>
 
 </details>
 
-<details><summary>vision &amp; documents · #160 of 182 · 9.2% of its score</summary>
+<details><summary>vision &amp; documents · #160 of 182 · 9.1% of its score</summary>
 
 Beats [Nova Lite](nova-lite.md) here, though they rank higher overall. Trails [InternVL2-26B](internvl2-26b.md), [Qwen3.5 2B](qwen3-5-2b.md) here, though they rank lower overall.
 
@@ -73,9 +73,9 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>        73.7%  ▄█▄▄▄·█●·▄·█ beats 8/12    easy · avg 71%      2.2%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1016.4  ▁▁▂●▂▂▄▅▅▆██ beats 13/145  avg 1068            1.3%  blunt
 <a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv descriptive questions (te…</a>   72.8%  █··▄··●··▄·▄ beats 4/6     easy · avg 71%      1.3%  at its level
-<a href="https://arxiv.org/html/2410.07112v2">MMMU val (VHELM, zero-shot exact …</a>   44.7%  ●▄··▄▄█··▄▄█ beats 0/9     medium · avg 51%    1.2%  at its level
-<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>        32.2%  ▂▂▂●▃▂·▂▂··▂ beats 6/13    medium · avg 36%    1.2%  at its level
-<a href="https://arxiv.org/html/2410.07112v2">MathVista testmini (VHELM, zero-s…</a>   39.3%  ▃·●···▃▃▃·▃█ beats 1/9     medium · avg 43%    1.0%  at its level
+<a href="https://arxiv.org/html/2410.07112v2">MMMU val (VHELM, zero-shot exact …</a>   44.7%  ●▄··▄▄█··▄▄█ beats 0/9     medium · avg 52%    1.2%  at its level
+<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>        32.2%  ▂▂▂●▃▂·▂▂··▂ beats 6/13    medium · avg 37%    1.2%  at its level
+<a href="https://arxiv.org/html/2410.07112v2">MathVista testmini (VHELM, zero-s…</a>   39.3%  ▃·●···▃▃▃·▃█ beats 1/9     medium · avg 44%    1.0%  at its level
 <a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv reasoning questions (test…</a>   32.4%  ▄··▄▄▄●····▄ beats 4/6     hard · avg 32%      0.6%  blunt · at its level
 <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>   36.2%  ●▃█··▅▃····▃ beats 0/9     hard · avg 43%      0.2%  blunt
 </pre>
@@ -90,8 +90,8 @@ test                                          result  vs the others in its run  
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           38.7%  ▁▁▁▂▂▃▂█●▃▅▃ beats 42/61   medium · avg 41%       7.9%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             18.7%  ▁▁▃▆●█▁▁·▁▁▁ beats 24/57   hard · avg 18%         2.5%  sharp
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        42.5%  ▃▂·▆▆██▆▅●▃▃ beats 28/33   medium · avg 41%       2.4%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        53.4%  ▂▁▁▄▂▅▇█▆▂●▂ beats 53/58   medium · avg 50%       2.3%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  45.4815 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 34/52   avg 45.199 WB-Score    2.1%  sharp
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        53.4%  ▂▁▁▄▂▅▇█▆▂●▂ beats 53/58   medium · avg 51%       2.3%  at its level
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  45.4815 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 34/52   avg 45.277 WB-Score    2.1%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   40.6%  ▁▁▁▁▂●▆▄▅▇█▅ beats 40/208  hard · avg 40%         2.0%  sharp
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>             83.7%  ▁▁●▃▄▄█▆▃▂▂▁ beats 10/140  very easy · avg 94%    0.1%  blunt · maxed out · noisy
 </pre>
@@ -123,7 +123,7 @@ source                                    results  share of the score
 <a name="paper-2501.16411v2-physbench"></a><a href="https://arxiv.org/html/2501.16411v2">PhysBench: Benchmarking and Enhancing V…</a>        1    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 48.7
+weighted average                                   = 48.6
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · CharXiv leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VHELM: A Holistic Evaluation of Vision Language Models ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SciCode leaderboard ([Apache-2.0](../../licenses/scicode-Apache-2.0.txt)) · PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2023-10 · 6.24B params · chatglm3-6b-license
 
-**score 27.0** ±2.1 · #661 of 719 · from 4 benchmark results across 4 sources
+**score 27.1** ±2.1 · #661 of 719 · from 4 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -61,7 +61,7 @@ source                                    results  share of the score
 <a name="paper-2406.12793v2-chatglm"></a><a href="https://arxiv.org/html/2406.12793v2#S3.T7">ChatGLM: A Family of Large Language Mod…</a>        1   10% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    6% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 27.0
+weighted average                                   = 27.1
 </pre>
 
 <sub>Licences: Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

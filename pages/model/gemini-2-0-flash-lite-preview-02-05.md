@@ -6,7 +6,7 @@
 
 Google · released 2025-02 · closed weights
 
-**score 59.5** ±2.5 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 59.4** ±2.5 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -58,7 +58,7 @@ source                             results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>              2   95% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1    2% ▇
 prior: pull toward the middle                 3% ▇
-weighted average                            = 59.5
+weighted average                            = 59.4
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

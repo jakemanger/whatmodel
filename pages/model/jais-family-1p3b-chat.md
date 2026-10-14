@@ -6,7 +6,7 @@
 
 Inception (G42) · released 2024-08 · 1.56B params · apache-2.0
 
-**score 36.6** ±4.6 · #780 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 36.5** ±4.6 · #783 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Inception (G42) · released 2024-08 · 1.56B params · apache-2.0
 
 <pre>
 task            vs the others          rank  counts  tests
-chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #387 of 466*     90%      1
+chat &amp; writing  ▁▁▁▄●▅▆█▆▆▆▂   #387 of 466*     91%      1
 </pre>
 
-<details><summary>chat &amp; writing · #387 of 466 · 90% of its score</summary>
+<details><summary>chat &amp; writing · #387 of 466 · 91% of its score</summary>
 
 Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [LFM2 350M](lfm2-350m.md), [Gemma 3 1B](gemma-3-1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   13.6%  ▁·▁▁▂▁●▄▆▄█▄ beats 6/38   medium · avg 49%     90%  sharp
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>   13.6%  ▁·▁▁▂▁●▄▆▄█▄ beats 6/38   medium · avg 49%     91%  sharp
 </pre>
 
 </details>
@@ -34,9 +34,9 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards (la…</a>        1   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       10% ▇
-weighted average                                   = 36.6
+<a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Inception Arabic/Hindi leaderboards (la…</a>        1   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                        9% ▇
+weighted average                                   = 36.5
 </pre>
 
 <sub>Licences: Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

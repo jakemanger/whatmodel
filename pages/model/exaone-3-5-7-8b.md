@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 7.82B params · exaone
 
-**score 50.2** ±3.8 · #435 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 50.1** ±3.8 · #440 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -19,12 +19,12 @@ chat &amp; writing  ▁▁▁▄▆▅▆●▆▆▆▂   #242 of 466*     94% 
 
 <details><summary>chat &amp; writing · #242 of 466 · 94% of its score</summary>
 
-Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation">Arena-Hard (version/judge unspeci…</a>   68.7%  ▃▃▂▅▃▆▅●▅▅▂▃ beats 18/30  easy · avg 68%     57%  at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation">IFEval (aggregation unspecified) …</a>   78.9%  ▄·▄·●·▄▄···█ beats 2/6    easy · avg 78%     37%  typical
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation">IFEval (aggregation unspecified) …</a>   78.9%  ▄·▄·●·▄▄···█ beats 2/6    easy · avg 79%     37%  typical
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation">LG AI Research vendor-reported benchmar…</a>        2   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 50.2
+weighted average                                   = 50.1
 </pre>
 
 ## How to run it

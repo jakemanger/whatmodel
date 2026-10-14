@@ -6,7 +6,7 @@
 
 IBM · released 2024-07 · 20.07B params · apache-2.0
 
-**score 45.0** ±4.1 · #587 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.9** ±4.1 · #590 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -37,7 +37,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        8% ▇
-weighted average                                   = 45.0
+weighted average                                   = 44.9
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

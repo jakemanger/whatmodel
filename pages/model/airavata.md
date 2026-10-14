@@ -6,7 +6,7 @@
 
 AI4Bharat · released 2024-01 · 6.87B params · llama2
 
-**score 28.6** ±6.1 · #873 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 28.6** ±6.1 · #875 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

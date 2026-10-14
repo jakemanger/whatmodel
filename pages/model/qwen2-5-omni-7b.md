@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-03 · 10.7B params · apache-2.0
 
-**score 57.1** ±2.4 · #235 of 719 · from 10 benchmark results across 1 source
+**score 57.0** ±2.4 · #236 of 719 · from 10 benchmark results across 1 source
 
 ## What it's good at
 
@@ -20,8 +20,8 @@ Alibaba · released 2025-03 · 10.7B params · apache-2.0
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   10.3%  ▂·█··▆▄·●▂·▄ beats 10/13  avg 33%                 47%  typical
-<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   56.0%  ▂·▄··▂●·▄▂█▄ beats 4/13   medium · avg 53%        15%  at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   10.3%  ▂·█··▆▄·●▂·▄ beats 10/13  avg 32%                 47%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   56.0%  ▂·▄··▂●·▄▂█▄ beats 4/13   medium · avg 54%        15%  at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   58.1%  ▂·▂·▂█▂▄●··▄ beats 10/13  very hard · avg 54%     10%  sharp · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>   10.3%  ▃···▃·●▃▅▃▅█ beats 4/13   avg 11%                 10%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   58.8%  ▂·······▆●▆▆ beats 7/13   very hard · avg 57%    7.5%  blunt
@@ -42,7 +42,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2508.21376v2-ahelm"></a><a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM: A Holistic Evaluation of Audio-L…</a>       10   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 57.1
+weighted average                                   = 57.0
 </pre>
 
 <sub>Licences: AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

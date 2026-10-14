@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-05 · 8.03B params
 
-**score 50.7** ±1.4 · #331 of 719 · from 3 benchmark results across 3 sources
+**score 50.6** ±1.4 · #332 of 719 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -19,7 +19,7 @@ chat &amp; writing  ▁▁▁▃▅▄▅●▆▆▇▃   #234 of 393*     75% 
 
 <details><summary>chat &amp; writing · #234 of 393 · 75% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run    difficulty        counts  why
@@ -32,8 +32,8 @@ test                            result  vs the others in its run    difficulty  
 
 <pre>
 test                                          result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  37.0497 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 23/52    avg 45.199 WB-Score     20%  sharp
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             68.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 152/276  medium · avg 73%       3.7%  at its level · noisy
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  37.0497 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 23/52    avg 45.277 WB-Score     20%  sharp
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>             68.3%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 152/276  medium · avg 73%       3.8%  at its level · noisy
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ source                               results  share of the score
 <a name="wildbench-leaderboard-data"></a><a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 leaderboard data</a>              1   20% ▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    4% ▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 50.7
+weighted average                              = 50.6
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

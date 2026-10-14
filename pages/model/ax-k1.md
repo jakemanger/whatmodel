@@ -6,7 +6,7 @@
 
 SK Telecom · released 2025-12 · 518.98B params (33B active) · apache-2.0
 
-**score 62.1** ±1.3 · #177 of 719 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 62.0** ±1.2 · #177 of 719 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -45,8 +45,8 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   76.4%  ●·····▄█▄▄·▄ beats 0/6    hard · avg 45%           38%  sharp · at its level
-<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>               77.8%  ●······▅··█▃ beats 0/6    medium · avg 60%         18%  at its level
+<a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>                   76.4%  ●·····▄█▄▄·▄ beats 0/6    hard · avg 45%           39%  sharp · at its level
+<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>               77.8%  ●······▅··█▃ beats 0/6    medium · avg 61%         18%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)…</a>   63.2%  ●······█▃▃·▃ beats 0/6    medium · avg 44%        8.9%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>            8.3%  ●········█·▂ beats 0/6    very hard · avg 5.4%    8.2%  typical
 </pre>
@@ -61,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-2608.30181v1-ax-k2"></a><a href="https://arxiv.org/html/2608.30181v1">A.X K2 Technical Report (lab)</a>        7   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 62.1
+weighted average                        = 62.0
 </pre>
 
 <sub>Licences: A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

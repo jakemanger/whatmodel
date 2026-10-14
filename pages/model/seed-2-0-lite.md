@@ -6,7 +6,7 @@
 
 ByteDance Seed · proprietary
 
-**score 73.0** ±3.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 72.8** ±3.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -21,7 +21,7 @@ agent tasks  ●··········█   #2 of 2*     95%      1
 
 <pre>
 test                    result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/pdf/2607.00248v1">τ²-bench Telecom (lab)</a>   92.1%  ▁·▅█▆▅▂▃●▂▃▁ beats 69/89  hard · avg 25%     95%  sharp · small run
+<a href="https://arxiv.org/pdf/2607.00248v1">τ²-bench Telecom (lab)</a>   92.1%  ▁·▅█▆▅▂▃●▂▃▁ beats 69/89  hard · avg 26%     95%  sharp · small run
 </pre>
 
 </details>
@@ -34,7 +34,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2607.00248v1-seed2-0"></a><a href="https://arxiv.org/pdf/2607.00248v1">ByteDance Seed - Seed2.0 Model Card (la…</a>        1   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 73.0
+weighted average                                   = 72.8
 </pre>
 
 <sub>Licences: ByteDance Seed - Seed2.0 Model Card ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

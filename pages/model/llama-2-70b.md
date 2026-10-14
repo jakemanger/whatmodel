@@ -25,7 +25,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 <pre>
 test                       result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                   29.3%  █···█·██●··█ beats 4/5    easy · avg 66%          11%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   60.1%  ▃▃▃·▆●▃█▃▂▂▅ beats 11/25  very easy · avg 86%    5.0%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   60.1%  ▃▃▃·▆●▃█▃▂▂▅ beats 11/25  very easy · avg 86%    4.9%  sharp · at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                        49.8%  ▄··▄·▄··●··▄ beats 3/5    easy · avg 71%         3.6%  at its level
 </pre>
 
@@ -36,9 +36,9 @@ test                       result  vs the others in its run  difficulty         
 Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B Instruct](llama-3-70b.md) here, though they rank higher overall. Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [CodeGemma 7B (v1.0)](codegemma-7b.md) here, though they rank lower overall.
 
 <pre>
-test   result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   55.5%  ▆▂▅█▅●▃▆···▂ beats 18/25  easy · avg 82%    7.5%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>    13.8%  █·█·█·█●···█ beats 4/5    hard · avg 35%    3.4%  typical
+test   result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   55.5%  ▆▂▅█▅●▃▆···▂ beats 18/25  easy · avg 82%      7.5%  sharp · at its level · several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>    13.8%  █·█·█·█●···█ beats 4/5    medium · avg 35%    3.4%  typical
 </pre>
 
 </details>

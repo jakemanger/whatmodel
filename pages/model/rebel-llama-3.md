@@ -6,7 +6,7 @@
 
 Cornell AGI (REBEL) · released 2024-05 · apache-2.0
 
-**score 47.2** ±1.7 · #516 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.1** ±1.7 · #520 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -19,7 +19,7 @@ chat &amp; writing  ▁▁▁▄▆▅●█▆▆▆▂   #306 of 466*     99% 
 
 <details><summary>chat &amp; writing · #306 of 466 · 99% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
 <pre>
 test                            result  vs the others in its run   difficulty        counts  why
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                               results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        1   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 47.2
+weighted average                              = 47.1
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

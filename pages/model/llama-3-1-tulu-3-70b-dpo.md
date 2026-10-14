@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.55B params · llama3.1
 
-**score 53.1** ±1.1 · #296 of 719 · from 12 benchmark results across 2 sources
+**score 53.1** ±1.1 · #294 of 719 · from 12 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ math            ▁▂▃▅●▅▄█▄▁▁▁    #267 of 398     47%     
 
 <details><summary>chat &amp; writing · #230 of 393 · 8.2% of its score</summary>
 
-Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Qwen2.5 Coder 32B Instruct](qwen2-5-coder-32b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Command R7B (12-2024)](command-r7b-12-2024.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
@@ -36,10 +36,10 @@ Beats [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md), [
 
 <pre>
 test                             result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      42.7%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 35/92    hard · avg 32%           28%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      42.7%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 35/92    hard · avg 33%           28%  sharp · at its level
 <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (lab)</a>   62.3%  ▂▄▄▃█●▅▆▄▃▄▁ beats 36/80    medium · avg 58%        6.7%  at its level · small run
 <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                       93.5%  ▂▂▂▅▅▆▅▇█▇●▃ beats 134/146  very easy · avg 87%     6.2%  sharp · small run
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           4.4%  ▃▃●▃▃▃▇▇█▃▂▅ beats 29/193   very hard · avg 8.5%    5.9%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           4.4%  ▃▃●▃▃▃▇▇█▃▂▅ beats 29/193   very hard · avg 8.6%    5.9%  sharp · noisy
 </pre>
 
 </details>

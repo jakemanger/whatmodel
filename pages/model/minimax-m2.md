@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-10 · 230B params (10B active) · modified-mit
 
-**score 64.6** ±1.2 · #149 of 719 · from 7 benchmark results across 5 sources
+**score 64.5** ±1.2 · #149 of 719 · from 7 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -26,8 +26,8 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-p
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   53.5%  ▆··▆▄▂▄▂●▆█▄ beats 14/23  very hard · avg 14%      12%  sharp · at its level
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (lab)</a>               87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 64/89  medium · avg 35%         12%  sharp · small run
-<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   30.0%  ▃··▃·▃▃█●▅▃▅ beats 8/14   very hard · avg 5.8%     11%  sharp
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (lab)</a>               87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 64/89  medium · avg 36%         12%  sharp · small run
+<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   30.0%  ▃··▃·▃▃█●▅▃▅ beats 8/14   very hard · avg 5.9%     10%  sharp
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gem
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1296.6  ▁▂▄●▅█▄▇▆▄▁▁ beats 20/119  avg 981        23%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1296.6  ▁▂▄●▅█▄▇▆▄▁▁ beats 20/119  avg 983        23%  sharp
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ test            result  vs the others in its run    difficulty  counts  why
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5708  ▁▄▃▃▇▄█▃●▁▁▁ beats 26/30  avg 0.423            20%  sharp
-<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   57.1%  ▂▃▅▂▆▃█▅█●▃▆ beats 27/34  medium · avg 42%    9.5%  blunt · at its level
+<a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   57.1%  ▂▃▅▂▆▃█▅█●▃▆ beats 27/34  medium · avg 42%     10%  blunt · at its level
 </pre>
 
 </details>
@@ -74,9 +74,9 @@ source                                    results  share of the score
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   29% ▇▇▇▇
 <a name="paper-2605.17281v2-contractbench"></a><a href="https://arxiv.org/html/2605.17281v2">ContractBench: Can LLM Agents Preserve …</a>        1   12% ▇
 <a name="first-party-minimax-scores"></a><a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">MiniMax vendor-reported benchmark score…</a>        1   12% ▇
-<a name="paper-2601.11868v1"></a><a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench: Benchmarking Agents on …</a>        1   11% ▇
+<a name="paper-2601.11868v1"></a><a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench: Benchmarking Agents on …</a>        1   10% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 64.6
+weighted average                                   = 64.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt))</sub>

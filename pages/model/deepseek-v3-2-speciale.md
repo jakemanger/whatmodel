@@ -6,7 +6,7 @@
 
 DeepSeek · 685B params (37B active) · mit
 
-**score 75.8** ±2.8 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 75.7** ±2.8 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -19,12 +19,12 @@ math  ▁▂▃▅▇▅▅█▄●▁▁   #20 of 462*     67%      2
 
 <details><summary>math · #20 of 462 · 67% of its score</summary>
 
-Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [Gemini 3.8 Flash](gemini-3-8-flash.md) here, though they rank higher overall.
+Beats [DeepSeek V4.1 Flash](deepseek-v4-1-flash.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [Kimi K3](kimi-k3.md) here, though they rank higher overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">AIME 2025 (lab)</a>                      96.0%  ▁·▁▁▁▂▅▆█▇▅● beats 131/133  medium · avg 52%     35%  sharp · maxed out · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">HMMT 2025 (edition unspecified) (…</a>   99.2%  ▃█▇▅▇▅▁·▁··● beats 32/32    medium · avg 43%     32%  sharp · maxed out · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">AIME 2025 (lab)</a>                      96.0%  ▁·▁▁▁▂▅▆█▇▅● beats 131/133  medium · avg 53%     35%  sharp · maxed out · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">HMMT 2025 (edition unspecified) (…</a>   99.2%  ▃█▇▅▇▅▁·▁··● beats 32/32    medium · avg 44%     32%  sharp · maxed out · small run
 </pre>
 
 </details>
@@ -46,7 +46,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-deepseek-ai-deepseek-v3-2"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md">deepseek-ai/DeepSeek-V3.2 model card (l…</a>        3   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 75.8
+weighted average                                   = 75.7
 </pre>
 
 <sub>Licences: deepseek-ai/DeepSeek-V3.2 model card ([MIT](../../licenses/deepseek-ai--DeepSeek-V3.2.txt))</sub>

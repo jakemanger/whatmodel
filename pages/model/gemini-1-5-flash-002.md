@@ -6,7 +6,7 @@
 
 Google · released 2024-09 · proprietary
 
-**score 52.8** ±0.7 · comparison only: no current run option verified · from 26 benchmark results across 11 sources
+**score 52.7** ±0.6 · comparison only: no current run option verified · from 26 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -60,12 +60,12 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>math · #256 of 462 · 11% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               61.9%  ▂▂▅▆▄█●▃▅▂▃▄ beats 51/92   hard · avg 32%          9.4%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   16.3%  ▃▃▄▃●▃▇▇█▃▂▅ beats 55/193  very hard · avg 8.5%    1.9%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               61.9%  ▂▂▅▆▄█●▃▅▂▃▄ beats 51/92   hard · avg 33%          9.4%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   16.3%  ▃▃▄▃●▃▇▇█▃▂▅ beats 55/193  very hard · avg 8.6%    1.9%  sharp · noisy
 </pre>
 
 </details>
@@ -87,10 +87,10 @@ test                             result  vs the others in its run   difficulty  
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_gemini-1.5-flash-002_5shots.zip">MMLU-Pro</a>                             64.0%  ▃▂▅█▃·●▃▅··▂ beats 16/23    medium · avg 57%       6.4%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         47.3%  ▁▁▁▁▂▄●▄▅▇█▅ beats 58/208   hard · avg 40%         5.5%  sharp · at its level
-<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   21.4%  ▂·█··●▄·▂▂·▄ beats 5/13     avg 33%                3.6%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   21.4%  ▂·█··●▄·▂▂·▄ beats 5/13     avg 32%                3.5%  typical
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-08-31</a>                 49.6%  ▄█·●·▄▄·▄··▄ beats 3/7      medium · avg 42%       2.3%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/gemini-1.5-flash-002_google_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   77.6%  ▂·▂▂▂▆▅●▆▆▃█ beats 14/29    easy · avg 76%         2.1%  typical
-<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   77.6%  ▂·▄··▂▂·▄▂●▄ beats 11/13    medium · avg 53%       1.2%  at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   77.6%  ▂·▄··▂▂·▄▂●▄ beats 11/13    medium · avg 54%       1.2%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   79.9%  ▃▁▁▁▁▁▁▁▂█●▁ beats 259/276  medium · avg 73%       0.8%  at its level · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>    6.2%  ▃···▃·█▃▅●▅█ beats 8/13     avg 11%                0.7%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   54.2%  ▂·▂·▂█●▄▄··▄ beats 7/13     very hard · avg 54%    0.6%  sharp · noisy
@@ -123,7 +123,7 @@ source                                    results  share of the score
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard</a>                       1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 52.8
+weighted average                                   = 52.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

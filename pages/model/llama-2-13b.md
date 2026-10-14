@@ -38,7 +38,7 @@ Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-
 <pre>
 test   result  vs the others in its run  difficulty      counts  why
 <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>   25.0%  ▆▂●█▅▅▃▆···▂ beats 7/25   easy · avg 82%    5.6%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>     6.0%  █·●·█·██···█ beats 1/5    hard · avg 30%    2.2%  several runs
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>     6.0%  █·●·█·██···█ beats 1/5    hard · avg 30%    2.1%  several runs
 </pre>
 
 </details>
@@ -57,7 +57,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">BoolQ</a>                                80.5%  ▂▃▂▅▆▂▅▆█▂●▂ beats 25/26   easy · avg 91%         3.3%  at its level
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-13b-hf/results_2023-12-23%2021%3A45%3A58.973459.json">TriviaQA</a>                              9.5%  ▁··▁●▃▃▁▄▅▄█ beats 5/28    very easy · avg 86%    3.3%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">PIQA</a>                                 79.1%  ▁·▁··▁▁▃█▅●▂ beats 22/26   easy · avg 88%         2.4%  blunt · at its level · several runs
-<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">OpenBookQA</a>                           35.4%  █·▁▁▃·▁▃▅▇▃● beats 24/26   medium · avg 53%       1.8%  typical
+<a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">OpenBookQA</a>                           35.4%  █·▁▁▃·▁▃▅▇▃● beats 24/26   medium · avg 53%       1.7%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">SciQ</a>                                 94.5%  ▁·▁·▁·▃▅▃█●▁ beats 22/26   very easy · avg 98%    1.4%  maxed out
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">Social IQA</a>                           42.8%  ▁···▁▃█●▁▁·▁ beats 20/26   medium · avg 59%       1.0%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">LAMBADA (OpenAI version), last-wo…</a>   76.8%  ▁··▂▁▁▁▂▆█▅● beats 26/26   very easy · avg 89%    0.8%  blunt

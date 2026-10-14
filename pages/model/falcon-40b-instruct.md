@@ -24,7 +24,7 @@ Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Ge
 <pre>
 test                                                      result  vs the others in its run   difficulty                counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                              5.6%  ▁▂●▃▆▆█▆▄▄▁▁ beats 10/122  medium · avg 39%             37%  too hard for it
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  5.1700 MT-Bench score (1-10)  ▆▂▂▆●▄██▂▄▄▆ beats 9/28    avg 8.819 MT-Bench scor…     34%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  5.1700 MT-Bench score (1-10)  ▆▂▂▆●▄██▂▄▄▆ beats 9/28    avg 8.826 MT-Bench scor…     34%  sharp · noisy
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         45.7%  ▂▂·●·▇▃▆█▆▄▂ beats 5/45    very easy · avg 96%          24%  sharp · at its level · noisy
 </pre>
 

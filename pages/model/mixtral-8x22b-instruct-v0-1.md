@@ -6,7 +6,7 @@
 
 Mistral · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 48.6** ±0.6 · #369 of 719 · from 20 benchmark results across 15 sources
+**score 48.6** ±0.6 · #368 of 719 · from 20 benchmark results across 15 sources
 
 ## What it's good at
 
@@ -38,7 +38,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            76.2%  ▁·▁▁▃▄▆▅●▃▁▁ beats 75/99  easy · avg 79%           22%  sharp
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           72.0%  ▁·▁▁▁▃▄▄▄●▃▁ beats 79/99  easy · avg 74%           18%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   64.8%  ▁·▂▁▂▆▅█▄▄▁● beats 34/35  medium · avg 64%        5.4%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   64.8%  ▁·▂▁▂▆▅█▄▄▁● beats 34/35  medium · avg 65%        5.4%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   56.6%  ▄▇█▃▄▇▄▁▇▃·● beats 35/35  medium · avg 49%        4.4%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   56.1%  ▁·▁▁▄██▄█▁▅● beats 35/35  medium · avg 56%        4.2%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                64.3%  ▁···▁▁▂▅▇●▆▂ beats 47/75  easy · avg 68%          3.5%  at its level
@@ -67,7 +67,7 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>              40.4%  ▃▂·▆▆██▆●▃▃▃ beats 25/33    medium · avg 41%       3.8%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              49.6%  ▂▁▁▄▂▅▇█▆●▂▂ beats 50/58    medium · avg 50%       3.7%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              49.6%  ▂▁▁▄▂▅▇█▆●▂▂ beats 50/58    medium · avg 51%       3.7%  at its level
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   71.2%  ▁▂▂▂▃█▃●▅▄▂▃ beats 57/95    easy · avg 66%         2.1%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      67.6%  ▁··▁▁▂▂▆▅▆●▆ beats 46/70    medium · avg 64%       1.7%  at its level
 <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                            84.7%  ▁▁·▁·▂▃▄●▂·▁ beats 13/22    easy · avg 83%         0.7%  typical

@@ -6,7 +6,7 @@
 
 Google · released 2026-07 · closed weights
 
-**score 73.6** ±0.6 · #53 of 719 · from 27 benchmark results across 8 sources
+**score 73.5** ±0.6 · #53 of 719 · from 27 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -27,7 +27,7 @@ Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [Muse Glimmer 30B](muse-glimmer-30
 
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0768 IPS  ▁▁▁●▂▃▇█▂▂▁▃ beats 5/49   avg -0.312 IPS          6.5%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0768 IPS  ▁▁▁●▂▃▇█▂▂▁▃ beats 5/49   avg -0.310 IPS          6.5%  sharp
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-7-flash#whats-new">Terminal-Bench 2.1 (lab)</a>                  73.0%  ▁·▁·▁▁▄▃▄█●▇ beats 38/56  hard · avg 23%          4.4%  small run · several runs
 <a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working codebase…</a>        11.7%  ●··▅··▃█▃▅▃▅ beats 0/12   very hard · avg 3.1%    2.3%  sharp · at its level
 <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">Terminal-Bench 3.0 (lab)</a>                   5.4%  ●·█··██····█ beats 0/4    very hard · avg 1.7%    0.7%  small run
@@ -41,7 +41,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1536.3  ▁▂▄▃▅█▄●▆▄▁▁ beats 80/119  avg 981                 5.8%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1536.3  ▁▂▄▃▅█▄●▆▄▁▁ beats 80/119  avg 983                 5.8%  sharp
 <a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working codebase…</a>   11.7%  ●··▅··▃█▃▅▃▅ beats 0/12    very hard · avg 3.1%    2.3%  sharp · at its level
 </pre>
 
@@ -66,12 +66,12 @@ Beats [Grok 4.7](grok-4-7.md), [GLM-5.3-Flash](glm-5-3-flash.md) here, though th
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            58.9%  ▂··▁▁▃▄▄●▅▃▃ beats 45/82    very hard · avg 1.2%     16%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               22.0%  ▁▂▁▂●▅▂▂▁▁▁▁ beats 23/63    very hard · avg 0.1%     11%  sharp
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026 (48…</a>   56.9%  ▂···▄·●█▆▆▄▂ beats 6/19     very hard · avg 4.6%    8.9%  sharp · at its level
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>   52.5%  ▁·····▅●█▄·▁ beats 8/20     very hard · avg 7.2%    7.4%  sharp · at its level
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 (40 …</a>   54.2%  ▁··▁▄●▄▁·▃·▁ beats 7/17     very hard · avg 10%     2.7%  at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026 (48…</a>   56.9%  ▂···▄·●█▆▆▄▂ beats 6/19     very hard · avg 4.7%    8.9%  sharp · at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 2026 (4…</a>   52.5%  ▁·····▅●█▄·▁ beats 8/20     very hard · avg 7.3%    7.4%  sharp · at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 (40 …</a>   54.2%  ▁··▁▄●▄▁·▃·▁ beats 7/17     very hard · avg 11%     2.7%  at its level
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2026 …</a>   16.0%  ▂▂●█▃▃▂▂▂··▂ beats 3/18     very hard · avg 0.7%    2.6%  sharp · at its level · noisy
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 2026 (…</a>   12.0%  ▄··●▂▂▂▆▄··▂ beats 2/14     very hard · avg 1.1%    1.9%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             94.2%  ▃▃▄▃▃▃▇▇█●▂▅ beats 158/193  very hard · avg 8.5%    0.8%  sharp · maxed out · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             94.2%  ▃▃▄▃▃▃▇▇█●▂▅ beats 158/193  very hard · avg 8.6%    0.8%  sharp · maxed out · noisy
 </pre>
 
 </details>
@@ -85,7 +85,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">CharXiv (reasoning questions) (la…</a>   85.2%  ▃·▃·▃▃▃·▃▃█● beats 10/11    medium · avg 40%    3.6%  typical
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1279.7  ▁▁▂▂▂▂▄▅▅▆█● beats 125/145  avg 1068            2.2%  blunt
 <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-document w…</a>   59.9%  ▃▃···█▃▅▃·●▅ beats 9/11     hard · avg 26%      1.1%  blunt · at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1453.4  ▁▁▃▃▄▃●█▅▇▄▅ beats 14/37    avg 1335            1.1%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>   1453.4  ▁▁▃▃▄▃●█▅▇▄▅ beats 14/37    avg 1336            1.1%  blunt
 <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing (Av…</a>   78.3%  ▂·▁·▂▂▅█·▁▂● beats 21/22    medium · avg 62%    0.1%  blunt · at its level
 </pre>
 
@@ -95,13 +95,13 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                          result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>     23.3%  ●▆▆▆▆▂▅▂▂▂·▅ beats 4/30     very hard · avg 1.2%    4.9%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>     23.3%  ●▆▆▆▆▂▅▂▂▂·▅ beats 4/30     very hard · avg 1.3%    4.9%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   30.0%  █··▂▃▇▄●▂▃▁▁ beats 49/74    very hard · avg 9.4%    3.5%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   94.1%  ▁▁▁▁▂▄▆▄▅▇█● beats 200/208  hard · avg 40%          2.9%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          40.0%  █▁▁▁▁▂▁▄▂●▁▁ beats 119/135  very hard · avg 5.9%    2.5%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              66.2%  ▁▁▃▂▃▃▆▆█▃●▅ beats 67/78    very hard · avg 8.0%    1.3%  at its level
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">MRCR v2 8-needle, 128k (lab)</a>   91.8%  █▄▄█·▄···●·▄ beats 7/8      medium · avg 47%        1.2%  small run
-<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">LVBench (lab)</a>                  84.2%  ▇·█▅▅▄▄··●▁▁ beats 25/28    medium · avg 57%        1.2%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>              66.2%  ▁▁▃▂▃▃▆▆█▃●▅ beats 67/78    very hard · avg 8.1%    1.3%  at its level
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">MRCR v2 8-needle, 128k (lab)</a>   91.8%  █▄▄█·▄···●·▄ beats 7/8      medium · avg 48%        1.2%  small run
+<a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">LVBench (lab)</a>                  84.2%  ▇·█▅▅▄▄··●▁▁ beats 25/28    medium · avg 58%        1.1%  typical
 </pre>
 
 </details>
@@ -113,7 +113,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                                        8   43% ▇▇▇▇▇
-<a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        5   24% ▇▇▇
+<a name="matharena-arxiv-outputs-bysa"></a><a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath / BrokenArXiv / ArX…</a>        5   23% ▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     5   19% ▇▇
 <a name="first-party-google-scores"></a><a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">Google DeepMind Gemini model page and m…</a>        5    9% ▇
 <a name="paper-2609.38335v1-e2e-swe"></a><a href="https://arxiv.org/html/2609.38335v1">E2E-SWE: Benchmarking LLMs on Building …</a>        1    2% ▇
@@ -121,7 +121,7 @@ source                                    results  share of the score
 <a name="paper-2609.05141v2-scidocbench"></a><a href="https://arxiv.org/html/2609.05141v2">SciDocBench: A Workflow-Centered Benchm…</a>        1    1% ▇
 <a name="paper-2605.07492v2-puredocbench"></a><a href="https://arxiv.org/html/2605.07492v2">How Far Is Document Parsing from Solved…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 73.6
+weighted average                                   = 73.5
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Google Cloud developer's guides to Gemini 3.8 Flash and 3.7 Flash ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SciDocBench: A Workflow-Centered Benchmark and Data Pipeline for Scientific Document Understanding ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-05 · 7.62B params · apache-2.0
 
-**score 50.4** ±0.9 · #335 of 719 · from 17 benchmark results across 3 sources
+**score 50.3** ±0.9 · #337 of 719 · from 17 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -53,7 +53,7 @@ test                         result  vs the others in its run  difficulty       
 <a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                     67.7%  ▄·····▄··●██ beats 2/6    medium · avg 59%        13%  sharp · at its level
 <a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                     57.2%  ▄··▄····●▄▄▄ beats 2/6    medium · avg 51%        11%  sharp · at its level
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>     94.5%  ▃·····▃···●█ beats 3/6    very easy · avg 90%    7.7%  typical
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>   38.4%  ▄······█●▄·█ beats 3/6    hard · avg 30%         5.4%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>   38.4%  ▄······█●▄·█ beats 3/6    hard · avg 31%         5.4%  at its level
 </pre>
 
 </details>
@@ -63,11 +63,11 @@ test                         result  vs the others in its run  difficulty       
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                       77.1%  ▄·····▄·●·██ beats 2/6    easy · avg 78%       14%  sharp · at its level
-<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>            47.6%  ▃······▃·●·█ beats 3/6    hard · avg 43%       11%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>            47.6%  ▃······▃·●·█ beats 3/6    hard · avg 44%       11%  sharp · at its level
 <a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                                 77.4%  ▄···▄··●··▄█ beats 2/6    easy · avg 77%      7.0%  at its level
-<a href="https://arxiv.org/html/2512.13961v2">AGIEval English</a>                      78.6%  ▄····●·▄▄··█ beats 1/5    easy · avg 76%      5.1%  typical
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   19.8%  ▁▁▁▁●▂▂▃▄▆█▃ beats 8/97   hard · avg 32%      3.7%  blunt · at its level
-<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                           34.9%  █●····▄·▄·▄▄ beats 2/6    medium · avg 53%    3.1%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">AGIEval English</a>                      78.6%  ▄····●·▄▄··█ beats 1/5    easy · avg 76%      5.0%  typical
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   19.8%  ▁▁▁▁●▂▂▃▄▆█▃ beats 8/97   hard · avg 32%      3.8%  blunt · at its level
+<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                           34.9%  █●····▄·▄·▄▄ beats 2/6    medium · avg 54%    3.1%  at its level
 <a href="https://arxiv.org/html/2512.13961v2">PopQA</a>                                18.0%  ▄··●···▄···█ beats 2/5    hard · avg 22%      2.1%  blunt
 <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)</a>    23.0%  ●·██·██····█ beats 0/5    medium · avg 36%    1.8%  at its level
 </pre>
@@ -84,7 +84,7 @@ source                              results  share of the score
 <a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card</a>        2   13% ▇▇
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                1    4% ▇
 prior: pull toward the middle                  0% ▇
-weighted average                             = 50.4
+weighted average                             = 50.3
 </pre>
 
 <sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · allenai/Olmo-3-7B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Think.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>

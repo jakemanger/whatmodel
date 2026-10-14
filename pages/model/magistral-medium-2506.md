@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · closed weights
 
-**score 55.5** ±1.3 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
+**score 55.4** ±1.3 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -82,7 +82,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   16% ▇▇
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard</a>                       1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.5
+weighted average                                   = 55.4
 </pre>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>

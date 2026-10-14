@@ -27,8 +27,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            17.7%  ▁·▁●▃▄▆▅█▃▁▁ beats 6/99   easy · avg 79%       43%  sharp · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           15.9%  ▁·▁▁●▃▄▄▄█▃▁ beats 6/99   easy · avg 74%       21%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 29.4%  ●·▅▃▃▃▅▃▃▅·▅ beats 0/15   easy · avg 82%       11%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   21.8%  ▁·▂●▂▆▅█▄▄▁▂ beats 3/35   medium · avg 64%    6.7%  typical
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        14.2%  ●▄·▄██▄█·█·▄ beats 0/12   medium · avg 52%    3.9%  typical
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   21.8%  ▁·▂●▂▆▅█▄▄▁▂ beats 3/35   medium · avg 65%    6.7%  typical
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        14.2%  ●▄·▄██▄█·█·▄ beats 0/12   medium · avg 53%    3.9%  typical
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           27.5%  ●▅█▃▃▅·▃▃▅·▅ beats 0/15   medium · avg 59%    3.5%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   11.9%  ●▇█▃▄▇▄▁▇▃·▁ beats 2/35   medium · avg 49%    3.0%  typical
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           27.0%  ●·▃██▅▃·▃▃▅▃ beats 0/15   medium · avg 55%    2.9%  blunt · at its level

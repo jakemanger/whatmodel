@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 1.78B params · mit
 
-**score 37.2** ±1.7 · #574 of 719 · from 16 benchmark results across 7 sources
+**score 37.2** ±1.7 · #573 of 719 · from 16 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -42,7 +42,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                       83.9%  ●·▄▄·▄▄█···▄ beats 0/7     very easy · avg 91%      20%  typical
 <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   62.9%  ●█·▄····▄▄·█ beats 0/7     easy · avg 76%          8.2%  at its level
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                      28.9%  ●·▃·▃▃···█·▃ beats 0/7     medium · avg 50%        5.7%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             21.4%  ▃▃▄▃●▃▇▇█▃▂▅ beats 59/193  very hard · avg 8.5%    0.6%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             21.4%  ▃▃▄▃●▃▇▇█▃▂▅ beats 59/193  very hard · avg 8.6%    0.6%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -72,7 +72,7 @@ source                                    results  share of the score
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1   10% ▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3    8% ▇
 <a name="paper-2505.22113v1-thinkbench"></a><a href="https://arxiv.org/html/2505.22113v1">THINK-Bench: Evaluating Thinking Effici…</a>        1    8% ▇
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    7% ▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    8% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    5% ▇
 prior: pull toward the middle                        1% ▇
 weighted average                                   = 37.2

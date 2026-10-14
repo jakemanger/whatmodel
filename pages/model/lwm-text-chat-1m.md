@@ -6,7 +6,7 @@
 
 Large World Model (UC Berkeley) · released 2024-02
 
-**score 42.1** ±5.1 · #665 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.1** ±5.1 · #667 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

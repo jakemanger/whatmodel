@@ -6,7 +6,7 @@
 
 NovaSky (UC Berkeley) · released 2025-01 · 32.76B params · apache-2.0
 
-**score 56.2** ±4.8 · #242 of 719 · from 3 benchmark results across 2 sources
+**score 56.1** ±4.8 · #243 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -44,10 +44,10 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   46% ▇▇▇▇▇
+<a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   46% ▇▇▇▇▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   44% ▇▇▇▇▇
 prior: pull toward the middle                       10% ▇
-weighted average                                   = 56.2
+weighted average                                   = 56.1
 </pre>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

@@ -6,7 +6,7 @@
 
 FreedomIntelligence (CUHK-SZ) · released 2024-06 · 8.03B params · apache-2.0
 
-**score 51.7** ±4.5 · #398 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.6** ±4.5 · #401 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -33,7 +33,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                               results  share of the score
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>        1   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                   9% ▇
-weighted average                              = 51.7
+weighted average                              = 51.6
 </pre>
 
 <sub>Licences: Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

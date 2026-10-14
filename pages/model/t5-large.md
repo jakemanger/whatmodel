@@ -6,7 +6,7 @@
 
 Google · released 2019-10 · 0.738B params · apache-2.0
 
-**score 48.1** ±8.6 · #380 of 719 · from 3 benchmark results across 1 source
+**score 48.1** ±8.6 · #379 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -21,7 +21,7 @@ Google · released 2019-10 · 0.738B params · apache-2.0
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   42.6%  ▃···▃▃·▃·▃·● beats 7/7    hard · avg 44%          63%  blunt
-<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>   14.0%  ▄···█···██·● beats 7/7    very hard · avg 11%    2.0%  blunt · too hard for it
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>   14.0%  ▄···█···██·● beats 7/7    very hard · avg 11%    2.1%  blunt · too hard for it
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   49.8%  ●·······▁··▁ beats 0/7    very hard · avg 51%    1.5%  blunt · too hard for it · noisy
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   14.8%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 73%          —  failed run: Failed run: average 14.76 v…
 </pre>

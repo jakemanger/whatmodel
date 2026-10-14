@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-02 · closed weights
 
-**score 74.3** ±1.4 · #46 of 719 · from 8 benchmark results across 4 sources
+**score 74.2** ±1.4 · #46 of 719 · from 8 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -15,7 +15,7 @@ OpenAI · released 2026-02 · closed weights
 <pre>
 task         vs the others        rank  counts  tests
 agent tasks  ▁▁▃▆█▆▅▅▅●▃▁   #46 of 300     99%      8
-coding       ▁▁▁▃▆██▇▆●▃▁   #51 of 458     43%      3
+coding       ▁▁▁▃▆██▇▆●▃▁   #51 of 458     44%      3
 web search   ▂▁▂▆▄●▃▃▁▁·▁   #34 of 80*     20%      1
 </pre>
 
@@ -26,18 +26,18 @@ Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Muse Spark 1.2](muse-spark
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   74.8%  ▁··▁·▁▂▁▄●▄▁ beats 17/29  hard · avg 19%           29%  sharp
-<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     77.3%  ●··█▄··▄·▄█▄ beats 0/8    hard · avg 32%           20%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     77.3%  ●··█▄··▄·▄█▄ beats 0/8    hard · avg 33%           20%  typical
 <a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (lab)</a>    51.9%  ▃··▃··▃··●█▅ beats 3/8    very hard · avg 13%      12%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>             77.3%  ██···██··█●█ beats 5/6    very hard · avg 14%      12%  at its level
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   61.8%  ▃··▃·▃██▃▃▃● beats 14/14  very hard · avg 2.3%     10%  sharp · at its level · noisy
-<a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>               64.7%  █▄·····●·▄▄▄ beats 3/6    hard · avg 17%          7.1%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>               64.7%  █▄·····●·▄▄▄ beats 3/6    hard · avg 17%          7.0%  at its level
 <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>                  56.8%  ▄·····▄·▄▄●█ beats 4/6    hard · avg 28%          4.7%  blunt · at its level
 <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (333 i…</a>    3.6%  ▁▁·▁▁●▁▅▃█▅█ beats 4/27   very hard · avg 2.4%    4.5%  typical
 </pre>
 
 </details>
 
-<details><summary>coding · #51 of 458 · 43% of its score</summary>
+<details><summary>coding · #51 of 458 · 44% of its score</summary>
 
 Beats [GPT-5.4](gpt-5-4.md), [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank higher overall. Trails [Mistral Large 4 (public preview)](mistral-large-4.md), [Qwen3.7 Plus](qwen3-7-plus.md), [Claude Sonnet 4.6](claude-sonnet-4-6.md) here, though they rank lower overall.
 
@@ -56,7 +56,7 @@ Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank highe
 
 <pre>
 test              result  vs the others in its run  difficulty      counts  why
-<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>   77.3%  ●··█▄··▄·▄█▄ beats 0/8    hard · avg 32%     20%  typical
+<a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>   77.3%  ●··█▄··▄·▄█▄ beats 0/8    hard · avg 33%     20%  typical
 </pre>
 
 </details>
@@ -72,7 +72,7 @@ source                                    results  share of the score
 <a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                                 1   10% ▇
 <a name="paper-2609.38480v2-klinikebench"></a><a href="https://arxiv.org/html/2609.38480v2">KlinikeBench: Evaluating Language Model…</a>        1    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 74.3
+weighted average                                   = 74.2
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vibe Code Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

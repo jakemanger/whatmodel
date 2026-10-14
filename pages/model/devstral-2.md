@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 123B params · modified-mit
 
-**score 62.2** ±1.7 · #176 of 719 · from 5 benchmark results across 3 sources
+**score 62.1** ±1.7 · #176 of 719 · from 5 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -35,7 +35,7 @@ Beats [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank higher overall. Trails 
 
 <pre>
 test                          result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1196.1  ▁●▄▃▅█▄▇▆▄▁▁ beats 5/119   avg 981            44%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1196.1  ▁●▄▃▅█▄▇▆▄▁▁ beats 5/119   avg 983            44%  sharp
 <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>       72.2%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 85/131  hard · avg 32%     15%  sharp · at its level · small run
 <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>   61.3%  ▁··▁▃▂▅●█▃▃▁ beats 21/60   hard · avg 30%     10%  at its level · small run
 </pre>
@@ -61,7 +61,7 @@ source                                    results  share of the score
 <a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a><a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24B-Instruct…</a>        3   37% ▇▇▇▇
 <a name="paper-2608.30248v1"></a><a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench: Demystifying Large Langua…</a>        1   17% ▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.2
+weighted average                                   = 62.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Devstral-Small-2-24B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt))</sub>

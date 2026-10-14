@@ -6,7 +6,7 @@
 
 UIUC (ise-uiuc) · released 2023-12 · 6.74B params · deepseek
 
-**score 48.5** ±0.7 · #372 of 719 · from 10 benchmark results across 4 sources
+**score 48.5** ±0.7 · #370 of 719 · from 10 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -38,7 +38,7 @@ test        result  vs the others in its run  difficulty        counts  why
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall) (lab)</a>              50.0%  ▂▂▃▄▄█▁▄●▃▁▃ beats 35/42  medium · avg 55%     12%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        36.0%  ▃▂·▆▆█●▆▅▃▃▃ beats 19/33  medium · avg 41%    5.0%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        47.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 46/58  medium · avg 50%    4.8%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        47.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 46/58  medium · avg 51%    4.8%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/ise-uiuc--Magicoder-S-DS-6.7B_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   69.8%  ▂·▂▂▂●▅▆▆▆▃█ beats 7/29   easy · avg 76%      2.6%  at its level
 </pre>
 

@@ -6,7 +6,7 @@
 
 Google · released 2026-07 · closed weights
 
-**score 68.7** ±0.9 · #97 of 719 · from 11 benchmark results across 4 sources
+**score 68.6** ±0.9 · #96 of 719 · from 11 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -26,7 +26,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5.
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1439.7  ▁▂▄▃▅●▄▇▆▄▁▁ beats 59/119  avg 981        13%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1439.7  ▁▂▄▃▅●▄▇▆▄▁▁ beats 59/119  avg 983        13%  sharp
 </pre>
 
 </details>
@@ -48,9 +48,9 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [M
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   26.0%  ▂··▁▁▃●▄█▅▃▃ beats 17/82    very hard · avg 1.2%     31%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   26.0%  ▂··▁▁▃●▄█▅▃▃ beats 17/82    very hard · avg 1.2%     32%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>       0.0%  ●▂▁▂█▅▂▂▁▁▁▁ beats 2/63     very hard · avg 0.1%     10%  sharp · too hard for it
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    71.1%  ▃▃▄▃▃▃▇●█▃▂▅ beats 104/193  very hard · avg 8.5%    4.2%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    71.1%  ▃▃▄▃▃▃▇●█▃▂▅ beats 104/193  very hard · avg 8.6%    4.1%  sharp · noisy
 </pre>
 
 </details>
@@ -90,7 +90,7 @@ source                                    results  share of the score
 <a name="first-party-google-scores"></a><a href="https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/#evaluation">Google DeepMind Gemini model page and m…</a>        1   10% ▇
 <a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 68.7
+weighted average                                   = 68.6
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>

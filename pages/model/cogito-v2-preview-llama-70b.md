@@ -6,7 +6,7 @@
 
 Deep Cogito · released 2025-07 · 70.55B params · llama3.1
 
-**score 61.3** ±7.2 · #204 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.2** ±7.2 · #206 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -34,7 +34,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                2   77% ▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            23% ▇▇▇
-weighted average                        = 61.3
+weighted average                        = 61.2
 </pre>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

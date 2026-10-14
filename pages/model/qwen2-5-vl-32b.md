@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-03 · 33.5B params · apache-2.0
 
-**score 53.0** ±1.5 · #297 of 719 · from 16 benchmark results across 7 sources
+**score 52.9** ±1.5 · #298 of 719 · from 16 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -29,8 +29,8 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/abs/2510.01141v1">CharXiv descriptive questions</a>        72.5%  ▂▄▄●▇▄█▇▇▂▁▂ beats 16/58   easy · avg 72%         9.0%  small run
 <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language multimo…</a>   48.2%  █·█···●·█·██ beats 2/5     medium · avg 47%       8.3%  at its level
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMMU Pro (lab)</a>                       49.5%  ▂▃▁▃●▇▃▇▇██▅ beats 10/52   medium · avg 44%       7.8%  at its level · small run
-<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMStar (lab)</a>                         69.5%  ▃▅▂▃▂▂●█▆▆█▅ beats 12/34   medium · avg 64%       6.2%  at its level · small run
-<a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   52.1%  ▅······▃·▅·● beats 7/7     very hard · avg 36%    4.7%  noisy
+<a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMStar (lab)</a>                         69.5%  ▃▅▂▃▂▂●█▆▆█▅ beats 12/34   medium · avg 65%       6.2%  at its level · small run
+<a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   52.1%  ▅······▃·▅·● beats 7/7     very hard · avg 37%    4.6%  noisy
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">ScreenSpot-Pro (lab)</a>                 39.4%  ▂●▅▆██▅▂···▂ beats 1/24    medium · avg 44%       3.0%  blunt · at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">DocVQA (lab)</a>                         94.8%  ▁··▃▁▁▁▇●▇▄▅ beats 15/28   very easy · avg 94%    2.7%  blunt · maxed out · small run
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">CC-OCR (lab)</a>                         77.1%  ▁·▂··▂▂▃●▂▆█ beats 10/26   easy · avg 72%         1.7%  blunt · at its level · small run
@@ -44,7 +44,7 @@ test                                result  vs the others in its run   difficult
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (with subtitles) (lab)</a>     77.9%  ▁▁▁▁▁·▁●▁▁▁█ beats 7/16     medium · avg 73%    5.9%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">LVBench (lab)</a>                        49.0%  ●·█▅▅▄▄··▃▁▁ beats 4/28     hard · avg 49%      4.4%  at its level · small run
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   80.9%  ▃▁▁▁▁▁▁▁▂█●▁ beats 263/276  medium · avg 73%    4.2%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   80.9%  ▃▁▁▁▁▁▁▁▂█●▁ beats 263/276  medium · avg 73%    4.3%  at its level · noisy
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (without subtitles) (la…</a>   70.5%  ▁▃▁▃▁·●▄▄▅·▇ beats 10/27    medium · avg 67%    4.1%  blunt · at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">AndroidWorld (lab)</a>                   22.0%  ●·▁▁▂▃█▅▂▂·▂ beats 0/24     hard · avg 34%      3.6%  blunt · at its level · small run
 </pre>
@@ -65,7 +65,7 @@ source                                    results  share of the score
 <a name="paper-2508.13680v5-vmmu"></a><a href="https://arxiv.org/html/2508.13680v5">VMMU: A Vietnamese Multitask Multimodal…</a>        1    5% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 53.0
+weighted average                                   = 52.9
 </pre>
 
 <sub>Licences: Qwen2.5-VL-32B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Apriel-1.5-15b-Thinker ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VMMU: A Vietnamese Multitask Multimodal Understanding and Reasoning Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

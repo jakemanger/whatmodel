@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-04 · 6.74B params · other (ai2-impact-license-low-risk)
 
-**score 36.1** ±2.4 · #788 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.1** ±2.4 · #790 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

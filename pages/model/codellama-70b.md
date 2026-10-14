@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 43.1** ±1.1 · #481 of 719 · from 6 benchmark results across 3 sources
+**score 43.0** ±1.1 · #481 of 719 · from 6 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -24,7 +24,7 @@ Beats [LFM2.5 2.6B](lfm2-5-2-6b.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-V
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                      53.0%  █▃▃▅·▃●·▃··▃ beats 8/11   easy · avg 76%       29%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   52.8%  ▁·▂▁▂▆▅█▄●▁▂ beats 31/35  medium · avg 64%     19%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   52.8%  ▁·▂▁▂▆▅█▄●▁▂ beats 31/35  medium · avg 65%     19%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   28.2%  ▄▇█▃▄▇●▁▇▃·▁ beats 24/35  medium · avg 49%     13%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   32.8%  ▁·▁▁▄██▄█●▅▅ beats 27/35  medium · avg 56%     13%  sharp · at its level
 <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                           62.4%  ▃▃▃█··▃▅··●▃ beats 10/11  easy · avg 73%       13%  at its level
@@ -36,7 +36,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   44.3%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 41/58  medium · avg 50%     12%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   44.3%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 41/58  medium · avg 51%     12%  at its level
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ source                                    results  share of the score
 <a name="paper-2308.12950v3"></a><a href="https://arxiv.org/html/2308.12950v3">Code Llama: Open Foundation Models for …</a>        2   41% ▇▇▇▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1   12% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 43.1
+weighted average                                   = 43.0
 </pre>
 
 <sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

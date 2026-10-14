@@ -6,7 +6,7 @@
 
 Poolside · released 2026-06 · 33B params (3B active) · openmdw-1.1
 
-**score 65.6** ±2.4 · #137 of 719 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 65.5** ±2.4 · #137 of 719 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -51,7 +51,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-poolside-scores"></a><a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">Poolside vendor-reported benchmark scor…</a>        4   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 65.6
+weighted average                                   = 65.5
 </pre>
 
 ## How to run it

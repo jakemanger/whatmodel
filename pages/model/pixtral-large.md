@@ -6,7 +6,7 @@
 
 Mistral · released 2024-11 · 124B params · mistral-research
 
-**score 54.3** ±2.7 · #283 of 719 · from 4 benchmark results across 2 sources
+**score 54.2** ±2.7 · #284 of 719 · from 4 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄    #112 of 147     
 
 <details><summary>math · #217 of 398 · 22% of its score</summary>
 
-Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank lower overall.
 
 <pre>
 test                        result  vs the others in its run  difficulty        counts  why
@@ -37,7 +37,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-4 
 test                             result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>  1095.2  ▁▁▂▂▂▂●▅▅▆██ beats 29/145  avg 1068             46%  blunt
 <a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MathVista (testmini) (lab)</a>        69.4%  ▁··▁▄▄▇█●▆█▄ beats 25/47   medium · avg 63%     22%  at its level · small run
-<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MMMU (val) (lab)</a>                  64.0%  ▁····▁▁▄█●▆▆ beats 25/52   medium · avg 57%     22%  at its level · small run
+<a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MMMU (val) (lab)</a>                  64.0%  ▁····▁▁▄█●▆▆ beats 25/52   medium · avg 58%     22%  at its level · small run
 <a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">ChartQA (lab)</a>                     88.1%  ▁··▁▁▁▁▁▂▅▅● beats 34/44   easy · avg 82%      6.8%  blunt · small run
 </pre>
 
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="first-party-mistral-scores"></a><a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">Mistral AI vendor-reported benchmark sc…</a>        3   50% ▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   46% ▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 54.3
+weighted average                                   = 54.2
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

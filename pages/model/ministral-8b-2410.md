@@ -6,7 +6,7 @@
 
 Mistral · released 2024-10 · 8.02B params · mistral-research
 
-**score 43.7** ±0.7 · #471 of 719 · from 39 benchmark results across 12 sources
+**score 43.6** ±0.7 · #471 of 719 · from 39 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -45,13 +45,13 @@ test             result  vs the others in its run    difficulty      counts  why
 
 <details><summary>chat &amp; writing · #284 of 393 · 8.3% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1237.6  ▁▁▁▂▃●▃▆▆▇█▃ beats 88/379  avg 1268            3.9%  blunt
-<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>       31.4%  ▃▃·▁▁●▇▅·▁·▁ beats 8/22    medium · avg 42%    2.2%  at its level
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">Arena-Hard (version/judge unspeci…</a>   70.9%  ▃▃▂▅▃▆▅●▅▅▂▃ beats 21/30   easy · avg 70%      1.3%  at its level · small run
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>       31.4%  ▃▃·▁▁●▇▅·▁·▁ beats 8/22    medium · avg 43%    2.2%  at its level
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">Arena-Hard (version/judge unspeci…</a>   70.9%  ▃▃▂▅▃▆▅●▅▅▂▃ beats 21/30   easy · avg 71%      1.3%  at its level · small run
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>            56.4%  ▁▃●▃▁▄▁▁█▃▃▁ beats 3/22    easy · avg 80%      0.9%  at its level
 </pre>
 
@@ -65,7 +65,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen
 test                       result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                       80.0%  ▂▃··▃▂●█▆▃▂▃ beats 7/22   very easy · avg 91%    9.4%  sharp · several runs
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                        56.7%  ▅▃▃●·▅···▃·▃ beats 5/10   easy · avg 71%         4.7%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                14.9%  ▂▂●▆▄█▆▃▅▂▃▄ beats 13/92  hard · avg 32%         4.2%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                14.9%  ▂▂●▆▄█▆▃▅▂▃▄ beats 13/92  hard · avg 33%         4.2%  sharp
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                        41.6%  ●▄██···▄▄▄·▄ beats 0/10   medium · avg 64%       2.9%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>   40.0%  ▃▃●▂▂▆·····▁ beats 7/22   medium · avg 61%       2.6%  at its level · several runs
 </pre>
@@ -79,16 +79,16 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 68.5%  ▁▂·▁·▁▁●·▃▃▅ beats 8/22     easy · avg 77%          11%  at its level · several runs
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                       70.8%  ▁▄·▁▁·▅●·▄▄▁ beats 13/22    easy · avg 75%          11%  sharp · at its level · several runs
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge</a>                        82.7%  ▂▂▂●▂···▄··▂ beats 4/10     very easy · avg 91%    9.0%  sharp
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA</a>                           80.2%  ▂··▄●▂·▂···▄ beats 5/10     easy · avg 87%         5.2%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA</a>                           80.2%  ▂··▄●▂·▂···▄ beats 5/10     easy · avg 88%         5.2%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro</a>                             36.6%  ●▄▄·█▄▄▄·▄·▄ beats 1/10     medium · avg 57%       3.6%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft)</a>        53.7%  █▄▄●█··█···▄ beats 4/10     easy · avg 65%         3.3%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft)</a>        53.7%  █▄▄●█··█···▄ beats 4/10     easy · avg 66%         3.3%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         27.1%  ▁▁●▁▂▄▆▄▅▇█▅ beats 9/208    hard · avg 40%         2.5%  sharp
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                           63.1%  ▃····▃●█▃·▅▅ beats 2/10     medium · avg 74%       2.2%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                           63.1%  ▃····▃●█▃·▅▅ beats 2/10     medium · avg 74%       2.1%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag</a>                            73.5%  ▃▅●·▃▃▃···▃▃ beats 3/10     easy · avg 84%         2.0%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                                80.5%  ▃··▃··█●▃·▃▃ beats 6/10     easy · avg 85%         1.9%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                                80.5%  ▃··▃··█●▃·▃▃ beats 6/10     easy · avg 86%         1.9%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA</a>                           77.6%  ▃·▃▅▅█·●···▃ beats 9/10     easy · avg 78%         1.8%  blunt · at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   30.4%  ▁▁▁▁▁▂▂▃●▆█▃ beats 32/97    hard · avg 32%         1.7%  blunt · at its level
-<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       55.5%  ▃▃▂·▃●·▅█▂▅▂ beats 7/21     medium · avg 63%       1.4%  blunt · at its level · several runs
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       55.5%  ▃▃▂·▃●·▅█▂▅▂ beats 7/21     medium · avg 64%       1.4%  blunt · at its level · several runs
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   17.6%  ▁▁·▁▂▂●█▄▅▄▄ beats 15/66    hard · avg 31%         1.4%  typical
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified)</a>            26.3%  █··●▂··▂▂··▄ beats 5/10     very hard · avg 33%    0.9%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                20.2%  ▁▁▁▃●▃▁█▁▃·▄ beats 6/21     hard · avg 32%         0.9%  blunt
@@ -120,7 +120,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 43.7
+weighted average                                   = 43.6
 </pre>
 
 <sub>Licences: microsoft/Phi-4-mini-instruct model card ([MIT](../../licenses/card-microsoft-phi-4-mini-instruct.txt)) · 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

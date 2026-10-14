@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-02 · 23.8B params (2.3B active) · lfm1.0
 
-**score 50.7** ±1.2 · #329 of 719 · from 11 benchmark results across 1 source
+**score 50.6** ±1.2 · #329 of 719 · from 11 benchmark results across 1 source
 
 ## What it's good at
 
@@ -19,13 +19,13 @@ math  ▁▂▃▅▆●▄█▄▁▁▁   #215 of 398     31%      4
 
 <details><summary>math · #215 of 398 · 31% of its score</summary>
 
-Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                         87.2%  █····█··●·▄█ beats 4/7    very easy · avg 86%     13%  sharp
+<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                         87.2%  █····█··●·▄█ beats 4/7    very easy · avg 87%     13%  sharp
 <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>     83.9%  █▄··▄●▄····▄ beats 5/7    easy · avg 81%         7.6%  typical
-<a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>   29.3%  ▄··▄█●··▄··▄ beats 5/7    hard · avg 30%         5.6%  at its level
+<a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>   29.3%  ▄··▄█●··▄··▄ beats 5/7    hard · avg 30%         5.5%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>       67.8%  ▄·▄·▄●▄·▄··█ beats 3/7    easy · avg 70%         5.1%  at its level
 </pre>
 
@@ -54,7 +54,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="report-marco-moe-260425578v1"></a><a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual Mixture-of…</a>       11   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 50.7
+weighted average                                   = 50.6
 </pre>
 
 <sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt))</sub>

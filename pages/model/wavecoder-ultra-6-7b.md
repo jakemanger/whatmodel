@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · mit
 
-**score 48.1** ±0.9 · #381 of 719 · from 3 benchmark results across 1 source
+**score 48.0** ±0.9 · #381 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -24,7 +24,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    75.0%  ▁·▁▁▃▄▆▅●▃▁▁ beats 70/99  easy · avg 79%     50%  sharp
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   69.5%  ▁·▁▁▁▃▄▄▄●▃▁ beats 69/99  easy · avg 74%     41%  sharp · at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   69.5%  ▁·▁▁▁▃▄▄▄●▃▁ beats 69/99  easy · avg 74%     42%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        63.5%  ▁···▁▁▂▅▇●▆▂ beats 45/75  easy · avg 68%    7.9%  at its level
 </pre>
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 48.1
+weighted average                                   = 48.0
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>

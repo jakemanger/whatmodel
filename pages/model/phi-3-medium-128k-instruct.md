@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 13.96B params · mit
 
-**score 45.1** ±1.2 · #441 of 719 · from 10 benchmark results across 5 sources
+**score 45.1** ±1.2 · #440 of 719 · from 10 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -38,7 +38,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen
 
 <pre>
 test          result  vs the others in its run  difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   17.6%  ▂▂▅●▄█▆▃▅▂▃▄ beats 15/92  hard · avg 32%     18%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   17.6%  ▂▂▅●▄█▆▃▅▂▃▄ beats 15/92  hard · avg 33%     18%  sharp
 </pre>
 
 </details>

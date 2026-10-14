@@ -6,7 +6,7 @@
 
 Mistral · released 2026-04 · 128B params · modified-mit
 
-**score 64.5** ±0.9 · #152 of 719 · from 22 benchmark results across 5 sources
+**score 64.4** ±0.9 · #152 of 719 · from 22 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -14,20 +14,20 @@ Mistral · released 2026-04 · 128B params · modified-mit
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #103 of 300     28%      8
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁    #103 of 300     27%      8
 coding              ▁▁▁▃▆██●▆▄▃▁    #148 of 458     18%      3
 chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃    #80 of 393*    7.0%      1
 math                ▁▂▃▅▆▅●█▄▁▁▁   #175 of 398*    9.5%      2
 vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #75 of 147*    4.8%      1
 </pre>
 
-<details><summary>agent tasks · #103 of 300 · 28% of its score</summary>
+<details><summary>agent tasks · #103 of 300 · 27% of its score</summary>
 
 Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-pro](o3-pro.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Nova 2 Pro (Preview)](nova-2-pro.md) here, though they rank lower overall.
 
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.1238 IPS  ▁●▁▄▂▃▇█▂▂▁▃ beats 1/49   avg -0.312 IPS           14%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.1238 IPS  ▁●▁▄▂▃▇█▂▂▁▃ beats 1/49   avg -0.310 IPS           14%  sharp
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>                       33.3%  ▄········█●▄ beats 3/5    very hard · avg 4.5%    3.2%  sharp
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>                       6.1%  ▄▄····●···█▄ beats 2/5    very hard · avg 1.8%    3.0%  too hard for it
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>                    30.7%  ▄●▄·······█▄ beats 1/5    hard · avg 19%          2.6%  at its level
@@ -45,7 +45,7 @@ Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-fl
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1262.9  ▁▂▄●▅█▄▇▆▄▁▁ beats 16/119  avg 981              12%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1262.9  ▁▂▄●▅█▄▇▆▄▁▁ beats 16/119  avg 983              12%  sharp
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unspecif…</a>   84.9%  ▄······●▄▄·█ beats 1/5     medium · avg 50%    3.2%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                   69.6%  ▄··········● beats 2/5     hard · avg 16%      1.9%  sharp · at its level · noisy
 </pre>
@@ -69,7 +69,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Tra
 
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            89.0%  ▄●··▄····█·▄ beats 1/5    medium · avg 64%    6.5%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>            89.0%  ▄●··▄····█·▄ beats 1/5    medium · avg 65%    6.5%  sharp
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>   62.9%  ●▄▄········█ beats 1/5    hard · avg 31%      2.9%  sharp · at its level · noisy
 </pre>
 
@@ -91,14 +91,14 @@ test                             result  vs the others in its run   difficulty  
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                         77.5%  █···█●·█··██ beats 2/5    hard · avg 42%           15%  sharp · at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                             81.2%  ▄·▄●····▄··█ beats 2/5    medium · avg 55%        4.9%  typical
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>                 12.8%  █●······▄·▄▄ beats 2/5    very hard · avg 4.7%    4.8%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                             81.2%  ▄·▄●····▄··█ beats 2/5    medium · avg 56%        4.9%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>                 12.8%  █●······▄·▄▄ beats 2/5    very hard · avg 4.8%    4.8%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)</a>    69.0%  ▄···▄●··▄··█ beats 2/5    medium · avg 43%        3.2%  at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                       49.8%  █··▄·●·····█ beats 3/5    hard · avg 25%          2.6%  at its level
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>   14.9%  ▁▁●▂▂▄▁▃▄▄▄█ beats 3/38   very hard · avg 14%     2.2%  at its level
 <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   90.3%  ▂·▂··▂·▄▂·●▆ beats 9/12   medium · avg 64%        1.3%  noisy
 <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                              76.7%  ●·▃·▅▅▃···▃▃ beats 1/10   easy · avg 71%          0.6%  blunt
-<a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   75.7%  ▄·▄▄▄·●██▄█▄ beats 4/12   easy · avg 65%          0.5%  blunt · at its level
+<a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   75.7%  ▄·▄▄▄·●██▄█▄ beats 4/12   easy · avg 66%          0.5%  blunt · at its level
 </pre>
 
 </details>
@@ -115,7 +115,7 @@ source                                    results  share of the score
 <a name="mideind-icelandic-llm-leaderboard"></a><a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Miðeind Icelandic LLM Leaderboard</a>               1    2% ▇
 <a name="paper-2609.31632v1-eegagentbench"></a><a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench: Benchmarking LLM Agents …</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 64.5
+weighted average                                   = 64.4
 </pre>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

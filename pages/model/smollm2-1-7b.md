@@ -25,7 +25,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 
 <pre>
 test             result  vs the others in its run   difficulty      counts  why
-<a href="https://arxiv.org/html/2502.02737v1">HumanEval (lab)</a>   28.1%  ▁▁▁▁▁●▅▅█▃▂▁ beats 28/190  easy · avg 80%    7.1%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2502.02737v1">HumanEval (lab)</a>   28.1%  ▁▁▁▁▁●▅▅█▃▂▁ beats 28/190  easy · avg 81%    7.1%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Beats [Phi-2 (2.7B)](phi-2.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md), [Nous-
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1114.6  ▁▁▁●▃▃▃▆▆▇█▃ beats 19/379  avg 1268             11%  blunt
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>            51.6%  ▁●▁▃▁▄▁▁█▃▃▁ beats 1/22    easy · avg 80%      3.1%  at its level
-<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>        5.8%  ●▃·▁▁█▇▅·▁·▁ beats 0/22    medium · avg 42%    2.3%  too hard for it
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>        5.8%  ●▃·▁▁█▇▅·▁·▁ beats 0/22    medium · avg 43%    2.3%  too hard for it
 <a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecified) …</a>   56.7%  ▁▁▃●▂▄▄▆█▃▂▁ beats 20/141  easy · avg 77%      2.1%  at its level · small run
 </pre>
 
@@ -64,7 +64,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                                 34.3%  ●▂·▁·▁▁█·▃▃▅ beats 0/22    easy · avg 77%       12%  typical
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   29.9%  ●▂▂▂▃█▃▆▅▄▂▃ beats 1/95    easy · avg 66%      7.5%  at its level
 <a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                      66.1%  ▁▁▁▁▂▂▃●█▆▅▃ beats 33/85   easy · avg 86%      3.4%  at its level · small run
-<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       45.3%  ▃●▂·▃▃·▅█▂▅▂ beats 2/21    medium · avg 63%    2.4%  blunt · at its level
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       45.3%  ▃●▂·▃▃·▅█▂▅▂ beats 2/21    medium · avg 64%    2.4%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   50.2%  ▁▁▁▁▁▁●▂▄█▄▃ beats 19/146  easy · avg 83%      1.6%  at its level · noisy
 <a href="https://arxiv.org/html/2502.02737v1">PIQA (lab)</a>                           74.4%  ▁▁▁▃▃▄●█▄▃▁▁ beats 33/83   easy · avg 86%      1.6%  blunt · at its level · small run
 <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                16.4%  ▁▁▁●▃▃▁█▁▃·▄ beats 4/21    hard · avg 32%      1.6%  blunt

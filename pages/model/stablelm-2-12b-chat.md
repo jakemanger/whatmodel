@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-04 · 12.14B params · other
 
-**score 47.1** ±6.4 · #520 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.0** ±6.4 · #524 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -33,7 +33,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                           results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   82% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle              18% ▇▇
-weighted average                          = 47.1
+weighted average                          = 47.0
 </pre>
 
 <sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

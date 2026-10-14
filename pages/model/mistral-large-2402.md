@@ -34,7 +34,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 <details><summary>chat &amp; writing · #332 of 463 · 24% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
@@ -52,8 +52,8 @@ Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B I
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               24.5%  ▂▂▅●▄█▆▃▅▂▃▄ beats 22/92   hard · avg 32%          4.6%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    1.9%  ▃●▄▃▃▃▇▇█▃▂▅ beats 14/193  very hard · avg 8.5%    0.5%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               24.5%  ▂▂▅●▄█▆▃▅▂▃▄ beats 22/92   hard · avg 33%          4.6%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    1.9%  ▃●▄▃▃▃▇▇█▃▂▅ beats 14/193  very hard · avg 8.6%    0.5%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -64,8 +64,8 @@ test                      result  vs the others in its run   difficulty         
 test                                          result  vs the others in its run   difficulty           counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           39.2%  ▁▁▁▂▂▃▂█●▃▅▃ beats 43/61   medium · avg 41%        12%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        29.6%  ▃▂·●▆██▆▅▃▃▃ beats 6/33    medium · avg 41%       3.6%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        37.9%  ▂▁▁▄▂●▇█▆▂▂▂ beats 21/58   medium · avg 50%       3.5%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  38.8937 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 27/52   avg 45.199 WB-Score    3.3%  sharp
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        37.9%  ▂▁▁▄▂●▇█▆▂▂▂ beats 21/58   medium · avg 51%       3.5%  at its level
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  38.8937 WB-Score  ▁·▁▁·▃█▄●▆▅▆ beats 27/52   avg 45.277 WB-Score    3.3%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   38.8%  ▁▁▁▁▂●▆▄▅▇█▅ beats 36/208  hard · avg 40%         2.5%  sharp
 </pre>
 

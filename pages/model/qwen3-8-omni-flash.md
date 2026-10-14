@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · proprietary
 
-**score 75.3** ±1.5 · #37 of 719 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 75.1** ±1.5 · #37 of 719 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -26,8 +26,8 @@ Trails [GLM-5.2](glm-5-2.md), [GLM-5.3-Flash](glm-5-3-flash.md), [Grok 4.7](grok
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>         80.5%  ▁··▁▃▂▅▇█●▃▁ beats 50/60  hard · avg 29%     12%  typical
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwen-re…</a>   63.3%  ▂·····▂·▂█▃● beats 12/12  hard · avg 18%     10%  at its level
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>        57.8%  ▂····▁▁▁●██▆ beats 5/28   hard · avg 15%    3.1%  at its level · noisy
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwen-re…</a>   63.3%  ▂·····▂·▂█▃● beats 12/12  hard · avg 19%     10%  at its level
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>        57.8%  ▂····▁▁▁●██▆ beats 5/28   hard · avg 16%    3.1%  at its level · noisy
 </pre>
 
 </details>
@@ -39,9 +39,9 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [Claude Opus 4.8
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>         80.5%  ▁··▁▃▂▅▇█●▃▁ beats 50/60  hard · avg 29%       12%  typical
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwen-re…</a>   63.3%  ▂·····▂·▂█▃● beats 12/12  hard · avg 18%       10%  at its level
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwen-re…</a>   63.3%  ▂·····▂·▂█▃● beats 12/12  hard · avg 19%       10%  at its level
 <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unspecif…</a>   92.6%  ▃▅█▅▅▃▅···▃● beats 16/16  medium · avg 35%    8.1%  typical
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>        57.8%  ▂····▁▁▁●██▆ beats 5/28   hard · avg 15%      3.1%  at its level · noisy
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>        57.8%  ▂····▁▁▁●██▆ beats 5/28   hard · avg 16%      3.1%  at its level · noisy
 </pre>
 
 </details>
@@ -62,7 +62,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">GPQA Diamond (lab)</a>                   91.0%  ▁▁▁▁▂▄▅▅██●▄ beats 278/310  hard · avg 41%           24%  sharp
-<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (lab)</a>           36.5%  ▁▁▁▃▆▆▇█●▆▁▃ beats 84/104   very hard · avg 5.1%     14%  at its level
+<a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (lab)</a>           36.5%  ▁▁▁▃▆▆▇█●▆▁▃ beats 84/104   very hard · avg 5.2%     14%  at its level
 <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecified)…</a>   81.5%  ▃▇▂▄▅▅▂▄▄▆█● beats 79/80    medium · avg 42%        8.1%  typical
 </pre>
 
@@ -76,7 +76,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Qwen (lab)</a>                           8   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 75.3
+weighted average                        = 75.1
 </pre>
 
 ## How to run it

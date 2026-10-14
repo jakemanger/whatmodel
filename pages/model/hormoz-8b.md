@@ -6,7 +6,7 @@
 
 Mann-E · released 2025-02 · 8.03B params · mit
 
-**score 46.5** ±4.8 · #540 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.5** ±4.8 · #542 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

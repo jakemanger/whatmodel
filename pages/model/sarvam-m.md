@@ -6,7 +6,7 @@
 
 Sarvam AI · released 2025-05 · 23.57B params · apache-2.0
 
-**score 37.7** ±5.0 · #760 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.7** ±5.0 · #762 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

@@ -6,7 +6,7 @@
 
 Upstage · released 2026-07 · 250.29B params (15B active) · upstage-solar-license
 
-**score 71.6** ±1.3 · #70 of 719 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 71.4** ±1.3 · #70 of 719 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -52,7 +52,7 @@ Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>            95.7%  ▄▄··▄····●·▄ beats 3/5    medium · avg 64%    7.2%  sharp · maxed out
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>            95.7%  ▄▄··▄····●·▄ beats 3/5    medium · avg 65%    7.2%  sharp · maxed out
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>   93.9%  █▄▄········● beats 4/5    hard · avg 31%      4.0%  sharp · noisy
 </pre>
 
@@ -63,8 +63,8 @@ test                      result  vs the others in its run  difficulty        co
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (lab)</a>                   86.3%  █···██·█··●█ beats 4/5    hard · avg 42%           21%  sharp
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>           28.8%  █▄······▄·●▄ beats 4/5    very hard · avg 4.7%     14%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                       86.2%  ▄·▄▄····▄··● beats 5/5    medium · avg 55%        7.4%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>           28.8%  █▄······▄·●▄ beats 4/5    very hard · avg 4.8%     14%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                       86.2%  ▄·▄▄····▄··● beats 5/5    medium · avg 56%        7.4%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)…</a>   80.0%  ▄···▄▄··▄··● beats 4/5    medium · avg 43%        5.7%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (lab)</a>                 61.0%  █··▄·▄·····● beats 4/5    hard · avg 25%          5.3%  at its level
 </pre>
@@ -79,7 +79,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                               results  share of the score
 <a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report (lab)</a>       13   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 71.6
+weighted average                              = 71.4
 </pre>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

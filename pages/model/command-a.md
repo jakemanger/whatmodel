@@ -6,7 +6,7 @@
 
 Cohere · released 2025-03 · 111B params · cc-by-nc-4.0
 
-**score 57.2** ±1.0 · #232 of 719 · from 22 benchmark results across 6 sources
+**score 57.1** ±1.0 · #232 of 719 · from 22 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -16,7 +16,7 @@ Cohere · released 2025-03 · 111B params · cc-by-nc-4.0
 task            vs the others          rank  counts  tests
 agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁    #185 of 300     27%      6
 coding          ▁▁▁▃▆█●▇▆▄▃▁    #220 of 458     38%      5
-chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #154 of 393*    8.9%      2
+chat &amp; writing  ▁▁▁▃▅▄▅█●▆▇▃   #154 of 393*    9.0%      2
 math            ▁▂▃▅●▅▄█▄▁▁▁   #243 of 398*    9.0%      2
 web search      ▂▁▂▆●█▃▃▁▁·▁     #44 of 80*    4.3%      1
 </pre>
@@ -29,7 +29,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>             26.8%  ▃···▃·▃·●█·▃ beats 3/7     hard · avg 19%           11%  sharp · at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      46.5%  ▁▁▁▂██▅●▆▂▂▂ beats 52/77   hard · avg 32%          4.4%  at its level
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>    4.6%  █·●▃·█▅▅▅▅▃▅ beats 3/18    very hard · avg 5.8%    4.3%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>    4.6%  █·●▃·█▅▅▅▅▃▅ beats 3/18    very hard · avg 5.9%    4.3%  sharp
 <a href="https://arxiv.org/pdf/2504.00698v2">τ-bench Airline (lab)</a>                45.3%  ▁▁▁·▅▄▁●▇▁▁▇ beats 14/28   hard · avg 23%          2.7%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">τ-bench Retail (lab)</a>                 60.0%  ▁····▃·▂●█▂▆ beats 9/28    hard · avg 29%          2.0%  at its level · noisy
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              64.4%  ▁▁▁▁▁▃▅█▅●▁▁ beats 95/114  medium · avg 52%        1.9%  blunt · at its level
@@ -43,7 +43,7 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>   14.7%  █▄··█·●····▄ beats 6/7    very hard · avg 6.7%     12%  sharp · noisy
+<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>   14.7%  █▄··█·●····▄ beats 6/7    very hard · avg 6.8%     12%  sharp · noisy
 <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>             26.8%  ▃···▃·▃·●█·▃ beats 3/7    hard · avg 19%           11%  sharp · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>   26.9%  ▄▄·▄·····●▄█ beats 4/7    hard · avg 19%          7.1%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                          86.2%  ██·██···●███ beats 4/7    easy · avg 79%          3.8%  typical
@@ -52,13 +52,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #154 of 393 · 8.9% of its score</summary>
+<details><summary>chat &amp; writing · #154 of 393 · 9.0% of its score</summary>
 
 Beats [MiniMax-M2](minimax-m2.md), [MiniCPM5 2B](minicpm5-2b.md), [Granite 4.2 30B](granite-4-2-30b.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1353.7  ▁▁▁▂▃▃▃▆●▇█▃ beats 199/379  avg 1268      8.9%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1353.7  ▁▁▁▂▃▃▃▆●▇█▃ beats 199/379  avg 1268      9.0%  blunt
 <a href="https://arxiv.org/pdf/2504.00698v2">IFEval strict, mean of prompt and…</a>   90.9%  █··········● beats 1/1                       —  not counted yet: no other model in the …
 </pre>
 
@@ -82,7 +82,7 @@ Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md), [Qwen3.7 Max](qwen3-7-max.m
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>    4.6%  █·●▃·█▅▅▅▅▃▅ beats 3/18   very hard · avg 5.8%    4.3%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>    4.6%  █·●▃·█▅▅▅▅▃▅ beats 3/18   very hard · avg 5.9%    4.3%  sharp
 </pre>
 
 </details>
@@ -92,12 +92,12 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (lab)</a>    92.6%  ▄▄▄··▄▄··▄·● beats 7/7     easy · avg 81%         5.0%  typical
-<a href="https://arxiv.org/pdf/2504.00698v2">GPQA Diamond (simple-evals) (lab)</a>    50.8%  ▁·····▄●▂▂▃▃ beats 11/22   hard · avg 36%         4.9%  sharp · at its level · small run
+<a href="https://arxiv.org/pdf/2504.00698v2">GPQA Diamond (simple-evals) (lab)</a>    50.8%  ▁·····▄●▂▂▃▃ beats 11/22   hard · avg 36%         4.8%  sharp · at its level · small run
 <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>        45.4%  ▄··▄▄···▄▄●▄ beats 5/7     medium · avg 36%       4.5%  at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">MMLU-Pro (lab)</a>                       69.6%  ▁▁·▁▁▁▃▂●▅█▁ beats 86/188  medium · avg 56%       3.6%  at its level · small run
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   70.0%  ▂▄▂▃█▄▃▆▃●▂▂ beats 72/81   medium · avg 58%       3.5%  blunt · at its level
 <a href="https://arxiv.org/pdf/2504.00698v2">LongBench v2 (lab)</a>                   43.4%  ▂·▁·▂▂▁▃●▁█▄ beats 11/28   very hard · avg 34%    3.4%  small run
-<a href="https://arxiv.org/pdf/2504.00698v2">RULER 128k (lab)</a>                     90.0%  ▃··▅▄▇▅█▇·●▃ beats 30/32   easy · avg 70%         1.9%  small run
+<a href="https://arxiv.org/pdf/2504.00698v2">RULER 128k (lab)</a>                     90.0%  ▃··▅▄▇▅█▇·●▃ beats 30/32   easy · avg 70%         1.8%  small run
 <a href="https://arxiv.org/pdf/2504.00698v2">MMLU (simple-evals, zero-shot CoT…</a>   85.5%  ▁···▂▁▅●▂▂▃▁ beats 9/22    easy · avg 78%         1.5%  small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   95.5%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 74/140  very easy · avg 94%    0.4%  blunt · maxed out · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   90.7%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 56/98   very easy · avg 90%    0.0%  blunt
@@ -119,7 +119,7 @@ source                                    results  share of the score
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    4% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 57.2
+weighted average                                   = 57.1
 </pre>
 
 <sub>Licences: Cohere ([CC BY 4.0](../../licenses/report-2504.00698v2.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Finance Agent Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

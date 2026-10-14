@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-01 · 10.73B params · apache-2.0
 
-**score 45.3** ±3.6 · #580 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 45.2** ±3.6 · #582 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -35,7 +35,7 @@ source                                  results  share of the score
 <a name="speakleash-polish-eq-bench"></a><a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">SpeakLeash Polish EQ-Bench leaderboard</a>        1   68% ▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>               1   26% ▇▇▇
 prior: pull toward the middle                      6% ▇
-weighted average                                 = 45.3
+weighted average                                 = 45.2
 </pre>
 
 <sub>Licences: SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

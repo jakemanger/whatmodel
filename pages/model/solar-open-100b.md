@@ -6,7 +6,7 @@
 
 Upstage · released 2025-12 · 102.6B params (12B active) · upstage-solar-license
 
-**score 59.7** ±1.1 · #199 of 719 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 59.6** ±1.1 · #200 of 719 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -28,7 +28,7 @@ test                          result  vs the others in its run  difficulty      
 <a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom (lab)</a>         55.6%  ▁·▅█▆●▂▃▃▂▃▁ beats 46/89  hard · avg 15%          5.4%  sharp · at its level · noisy · small run
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>   34.4%  ▄▄●·······█▄ beats 2/5    hard · avg 19%          4.0%  at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>       2.3%  ●········██▄ beats 0/5    very hard · avg 4.5%    3.7%  sharp
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>      2.4%  ▄●····▄···█▄ beats 1/5    very hard · avg 1.8%    3.4%  too hard for it
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>      2.4%  ▄●····▄···█▄ beats 1/5    very hard · avg 1.8%    3.3%  too hard for it
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>       15.4%  ●··········█ beats 1/5    hard · avg 16%          2.9%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>          7.4%  █·●▄······▄▄ beats 2/5    very hard · avg 5.1%    1.1%  blunt
 </pre>
@@ -53,7 +53,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324]
 
 <pre>
 test                      result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>            87.7%  ●▄··▄····█·▄ beats 0/5    medium · avg 64%     15%  sharp
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>            87.7%  ●▄··▄····█·▄ beats 0/5    medium · avg 65%     15%  sharp
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>   68.9%  █●▄········█ beats 2/5    hard · avg 31%      5.5%  sharp · at its level · noisy
 </pre>
 
@@ -64,8 +64,8 @@ test                      result  vs the others in its run  difficulty        co
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (lab)</a>                   66.2%  ●···██·█··██ beats 0/5    hard · avg 42%           27%  sharp · at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                       80.4%  ▄·●▄····▄··█ beats 1/5    medium · avg 55%        9.5%  at its level
-<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>           11.5%  ●▄······▄·▄▄ beats 1/5    very hard · avg 4.7%    5.8%  typical
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                       80.4%  ▄·●▄····▄··█ beats 1/5    medium · avg 56%        9.5%  at its level
+<a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>           11.5%  ●▄······▄·▄▄ beats 1/5    very hard · avg 4.8%    5.8%  typical
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecified)…</a>   57.7%  ●···▄▄··▄··█ beats 0/5    medium · avg 43%        5.7%  at its level
 <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (lab)</a>                 40.5%  ●··▄·▄·····█ beats 1/5    hard · avg 25%          4.0%  at its level
 </pre>
@@ -81,7 +81,7 @@ source                               results  share of the score
 <a name="paper-2607.20062v2-solar-open-2"></a><a href="https://arxiv.org/html/2607.20062v2#S5.T3">Solar Open 2 Technical Report (lab)</a>       13   94% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="report-2601.07022v1"></a><a href="https://arxiv.org/html/2601.07022v1">Solar Open Technical Report (lab)</a>          1    5% ▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 59.7
+weighted average                              = 59.6
 </pre>
 
 <sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Solar Open Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

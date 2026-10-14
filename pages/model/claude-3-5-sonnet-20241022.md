@@ -32,7 +32,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l2.json">BrowserGym WorkArena-L2 (AgentLab…</a>   39.1%  ▃▅▃·▅▃▃··●·▃ beats 8/11    very hard · avg 3.9%    1.5%  sharp · noisy
 <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/miniwob.json">BrowserGym MiniWoB (AgentLab Gene…</a>   69.8%  ▅····▅▅▃▃·●█ beats 8/11    medium · avg 55%        1.0%  blunt · at its level
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              56.9%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 66/114  medium · avg 52%        0.6%  blunt · at its level
-<a href="https://github.com/multi-swe-bench/experiments/tree/6a7d5566f62fa76f4192302cf763051b98e4facc/evaluation">Multi-SWE-bench, 7 languages (Mag…</a>    4.7%  ▄···▄▄·●▄·▄█ beats 3/7     very hard · avg 2.6%    0.6%  blunt · too hard for it
+<a href="https://github.com/multi-swe-bench/experiments/tree/6a7d5566f62fa76f4192302cf763051b98e4facc/evaluation">Multi-SWE-bench, 7 languages (Mag…</a>    4.7%  ▄···▄▄·●▄·▄█ beats 3/7     very hard · avg 2.7%    0.6%  blunt · too hard for it
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   80.1%  ▃▃▃▃●▅▆▅█▂▅▂ beats 8/31    easy · avg 79%          0.4%  blunt
 </pre>
 
@@ -44,14 +44,14 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gem
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   51.6%  ▂·▂▃▅▂▃●▆▄▂▂ beats 27/49  very hard · avg 8.5%    8.1%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   51.6%  ▂·▂▃▅▂▃●▆▄▂▂ beats 27/49  very hard · avg 8.6%    8.1%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    83.9%  ▁▂▆▃▆█▆●▂·▁▁ beats 43/47  medium · avg 61%        4.6%  sharp
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   84.2%  ▁·▁▂▄▁▆▄█▆▂● beats 62/62  medium · avg 54%        4.0%  typical
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   84.2%  ▁·▁▂▄▁▆▄█▆▂● beats 62/62  medium · avg 54%        4.1%  typical
 <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (official l…</a>    4.6%  ▃···█··▂·●·▂ beats 13/17  very hard · avg 1.1%    2.4%  sharp · too hard for it
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   36.4%  ▃▃▅●··▃▅█▅▅▃ beats 4/15   hard · avg 25%          2.4%  at its level
 <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">HumanEval (Vector Institute, Insp…</a>   94.5%  ▄·▄·█·█·●·▄▄ beats 6/9    easy · avg 79%          1.8%  typical
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   75.0%  ▁··▁·▁▁▁▆█▇● beats 38/45  hard · avg 32%          1.5%  at its level
-<a href="https://github.com/multi-swe-bench/experiments/tree/6a7d5566f62fa76f4192302cf763051b98e4facc/evaluation">Multi-SWE-bench, 7 languages (Mag…</a>    4.7%  ▄···▄▄·●▄·▄█ beats 3/7    very hard · avg 2.6%    0.6%  blunt · too hard for it
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   75.0%  ▁··▁·▁▁▁▆█▇● beats 38/45  hard · avg 32%          1.6%  at its level
+<a href="https://github.com/multi-swe-bench/experiments/tree/6a7d5566f62fa76f4192302cf763051b98e4facc/evaluation">Multi-SWE-bench, 7 languages (Mag…</a>    4.7%  ▄···▄▄·●▄·▄█ beats 3/7    very hard · avg 2.7%    0.6%  blunt · too hard for it
 </pre>
 
 </details>
@@ -62,25 +62,25 @@ Beats [EXAONE 4.5 33B](exaone-4-5-33b.md), [INTELLECT-3](intellect-3.md), [Nemot
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   33.0%  ▂·▃▅▅·●█▆▂▂▂ beats 9/22     very hard · avg 12%    4.4%  sharp · at its level
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   33.0%  ▂·▃▅▅·●█▆▂▂▂ beats 9/22     very hard · avg 13%    4.4%  sharp · at its level
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   85.2%  ▂▁▁▅█▅▄▃▃▅●▁ beats 58/60    medium · avg 52%       4.1%  sharp
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1374.0  ▁▁▁▂▃▃▃▆●▇█▃ beats 215/379  avg 1268               2.9%  blunt
 <a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">IFEval prompt-level strict</a>           85.6%  ▄▄··▄·▄··●·▄ beats 4/6      easy · avg 74%         1.2%  typical
-<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   24.2%  ▆▂▂●▂▂▃█▂▃·▂ beats 7/22     hard · avg 19%         0.8%  sharp · at its level · noisy
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   24.2%  ▆▂▂●▂▂▃█▂▃·▂ beats 7/22     hard · avg 20%         0.8%  sharp · at its level · noisy
 </pre>
 
 </details>
 
 <details><summary>math · #263 of 462 · 17% of its score</summary>
 
-Trails [OpenThinker 7B](openthinker-7b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank lower overall.
+Trails [OpenThinker 7B](openthinker-7b.md), [Tulu 2 70B](tulu-2-70b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         56.9%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 50/92   hard · avg 32%          5.2%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         56.9%  ▂▂▅▆▄●▆▃▅▂▃▄ beats 50/92   hard · avg 33%          5.2%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   59.4%  ▁▁▁▆█▂▇●▄··▂ beats 32/38   hard · avg 34%          4.0%  sharp · at its level
 <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MATH (Vector Institute, Inspect E…</a>   79.4%  ▄··██●··▄·▄█ beats 5/9     medium · avg 53%        3.9%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              8.5%  ▃▃▄●▃▃▇▇█▃▂▅ beats 49/193  very hard · avg 8.5%    3.0%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              8.5%  ▃▃▄●▃▃▇▇█▃▂▅ beats 49/193  very hard · avg 8.6%    3.0%  sharp · at its level · noisy
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          96.7%  ▁▄·▁▄█▅▅▅██● beats 43/43   very easy · avg 89%     1.1%  sharp · maxed out
 </pre>
 

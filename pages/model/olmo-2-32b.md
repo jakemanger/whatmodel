@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-03 · 32.2B params · apache-2.0
 
-**score 49.3** ±1.3 · #356 of 719 · from 14 benchmark results across 5 sources
+**score 49.3** ±1.3 · #355 of 719 · from 14 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -20,12 +20,12 @@ math            ▁▂▃●▆▅▄█▄▁▁▁   #318 of 398     20%      
 
 <details><summary>chat &amp; writing · #269 of 393 · 27% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 1.2B](lfm2-1-2b.md), [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1251.6  ▁▁▁▂▃▃●▆▆▇█▃ beats 93/379  avg 1268             14%  blunt
-<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>   42.8%  ▃▃·▁▁█●▅·▁·▁ beats 16/22   medium · avg 42%     10%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>   42.8%  ▃▃·▁▁█●▅·▁·▁ beats 16/22   medium · avg 43%     10%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (lab)</a>      85.6%  ▁▃▁▃▁▄▁▁█●▃▁ beats 18/22   easy · avg 80%      2.8%  typical
 </pre>
 
@@ -52,8 +52,8 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           77.3%  ▁▂·▁·▁▁█·●▃▅ beats 14/22    easy · avg 77%       19%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          37.5%  ▁▁▁▃▃▃▁█▁●·▄ beats 17/21    hard · avg 32%      3.9%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   74.8%  ▃▁▁▁▁▁▁▁▂█●▁ beats 224/276  medium · avg 73%    3.1%  at its level · noisy
-<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 73.2%  ▃▃▂·▃▃·▅█▂▅● beats 21/21    medium · avg 63%    3.0%  blunt · at its level
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   80.6%  ▃·▁▁▂▁▂▅█●▄▁ beats 74/100   medium · avg 68%    2.5%  at its level · noisy
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 73.2%  ▃▃▂·▃▃·▅█▂▅● beats 21/21    medium · avg 64%    3.0%  blunt · at its level
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   80.6%  ▃·▁▁▂▁▂▅█●▄▁ beats 74/100   medium · avg 68%    2.6%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   90.8%  ▁▁▁▁▁▁▁▂▄█●▃ beats 119/146  easy · avg 83%      1.7%  noisy
 </pre>
 

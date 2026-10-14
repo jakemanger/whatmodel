@@ -6,7 +6,7 @@
 
 TII · released 2024-11 · 7.46B params · falcon-llm
 
-**score 44.0** ±2.7 · #462 of 719 · from 7 benchmark results across 3 sources
+**score 43.9** ±2.7 · #462 of 719 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -63,7 +63,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   38% ▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1   15% ▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 44.0
+weighted average                                   = 43.9
 </pre>
 
 <sub>Licences: CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

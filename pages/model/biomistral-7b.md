@@ -6,7 +6,7 @@
 
 BioMistral · released 2024-02 · apache-2.0
 
-**score 38.0** ±3.3 · #566 of 719 · from 3 benchmark results across 3 sources
+**score 37.9** ±3.3 · #566 of 719 · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -37,7 +37,7 @@ source                                    results  share of the score
 <a name="paper-2606.12250v1-polish-medical-exams"></a><a href="https://arxiv.org/html/2606.12250v1">Reassessing High-Performing LLMs on Pol…</a>        1   39% ▇▇▇▇▇
 <a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1   17% ▇▇
 prior: pull toward the middle                        5% ▇
-weighted average                                   = 38.0
+weighted average                                   = 37.9
 </pre>
 
 <sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance? ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

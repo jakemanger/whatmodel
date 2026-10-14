@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-09 · 51.5B params · nvidia-open-model-license
 
-**score 51.0** ±1.8 · #325 of 719 · from 6 benchmark results across 2 sources
+**score 51.0** ±1.8 · #324 of 719 · from 6 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -31,7 +31,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>math · #232 of 398 · 18% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [OpenThinker 7B](openthinker-7b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Tulu 2 70B](tulu-2-70b.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [OpenThinker 7B](openthinker-7b.md), [Tulu 2 70B](tulu-2-70b.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test         result  vs the others in its run    difficulty           counts  why
@@ -47,7 +47,7 @@ test                 result  vs the others in its run    difficulty        count
 <a href="https://arxiv.org/html/2411.19146v5">ARC Challenge (lab)</a>   69.2%  ▆▁▁▂▂▅▇█●▃▃▂ beats 79/97    medium · avg 70%     19%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2411.19146v5">MMLU (lab)</a>            80.2%  ▁▁▁▁▁▂▃▅█▃●▃ beats 137/183  easy · avg 78%       14%  at its level · small run
 <a href="https://arxiv.org/html/2411.19146v5">WinoGrande (lab)</a>      84.5%  ▁···▂▁▁▅█▇▃● beats 85/87    easy · avg 85%       12%  at its level · small run
-<a href="https://arxiv.org/html/2411.19146v5">HellaSwag (lab)</a>       85.6%  ▁▁▁▁▂▂▃▇█▆●▃ beats 79/85    easy · avg 86%      8.9%  small run
+<a href="https://arxiv.org/html/2411.19146v5">HellaSwag (lab)</a>       85.6%  ▁▁▁▁▂▂▃▇█▆●▃ beats 79/85    easy · avg 86%      8.8%  small run
 </pre>
 
 </details>

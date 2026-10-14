@@ -6,7 +6,7 @@
 
 BitAgent (Bittensor) · released 2025-02 · 8.03B params · apache-2.0
 
-**score 61.7** ±6.6 · #201 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.7** ±6.6 · #201 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

@@ -6,7 +6,7 @@
 
 LLaVA · released 2024-01 · 13.35B params · llama2
 
-**score 33.3** ±5.7 · #824 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 33.3** ±5.7 · #826 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -23,7 +23,7 @@ Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128
 
 <pre>
 test              result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>   36.2%  ▁····●▁▄█▇▆▆ beats 1/52   medium · avg 59%     74%  small run
+<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>   36.2%  ▁····●▁▄█▇▆▆ beats 1/52   medium · avg 60%     74%  small run
 <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>      67.1%  ▁▁▁●▅▁▃·▃▃▃█ beats 3/24   easy · avg 77%       12%  blunt · at its level · small run
 </pre>
 

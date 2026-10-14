@@ -58,7 +58,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">ARC Easy</a>                             79.5%  ▁▁·▁▁▄▅▄█▅▁● beats 26/26   easy · avg 88%         2.4%  at its level · several runs
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/mistralai/Mistral-7B-v0.1/results_2023-12-28%2011%3A09%3A06.178683.json">TriviaQA</a>                             70.9%  ▁··▁█▃▃▁▄▅▄● beats 28/28   very easy · avg 86%    2.1%  at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">PIQA</a>                                 80.8%  ▁·▁··▁▁▃█▅█● beats 26/26   easy · avg 88%         1.6%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   28.4%  ▅····▃▅·█●·█ beats 10/13   medium · avg 59%       1.3%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   28.4%  ▅····▃▅·█●·█ beats 10/13   medium · avg 60%       1.3%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">OpenBookQA</a>                           32.8%  █·▁▁▃·▁▃▅▇●▄ beats 22/26   medium · avg 53%       1.3%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">Social IQA</a>                           42.7%  ▁···▁▃●▁▁▁·▁ beats 19/26   medium · avg 59%       1.0%  blunt · several runs
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   40.8%  ▃▅▃··▅▃·●▃▃▅ beats 7/13    easy · avg 67%         0.9%  at its level
@@ -81,7 +81,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   29% ▇▇▇
+<a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   29% ▇▇▇▇
 <a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json">Stability AI</a>                                   10   26% ▇▇▇
 <a name="paper-mixtral-2401.04088v1"></a><a href="https://arxiv.org/html/2401.04088v1#S3.T2">Mixtral of Experts (lab)</a>                       12   16% ▇▇
 <a name="paper-2404.06395v3"></a><a href="https://arxiv.org/html/2404.06395v3">MiniCPM: Unveiling the Potential of Sma…</a>        7    9% ▇

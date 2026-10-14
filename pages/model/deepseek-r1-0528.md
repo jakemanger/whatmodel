@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-05 · 685B params (37B active) · mit
 
-**score 65.2** ±0.6 · #142 of 719 · from 51 benchmark results across 12 sources
+**score 65.1** ±0.6 · #141 of 719 · from 51 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -14,29 +14,29 @@ DeepSeek · released 2025-05 · 685B params (37B active) · mit
 
 <pre>
 task            vs the others         rank  counts  tests
-agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #193 of 300     13%     13
+agent tasks     ▁▁▃▆●▆▅▅▅▄▃▁   #193 of 300     12%     13
 coding          ▁▁▁▃▆██▇●▄▃▁   #115 of 458     38%      7
 chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #87 of 393*    3.0%      1
 math            ▁▂▃▅▆▅▄●▄▁▁▁   #100 of 398     20%      6
 web search      ●········█·█       #3 of 3    2.8%      3
 </pre>
 
-<details><summary>agent tasks · #193 of 300 · 13% of its score</summary>
+<details><summary>agent tasks · #193 of 300 · 12% of its score</summary>
 
 Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [SmolLM3 3B](smollm3-3b.md), [Jamba 1.5 Mini](jamba-1-5-mini.md), [Mellum2 12B-A2.5B Instruct](mellum2-12b-a2-5b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>                   29.6%  █·●▄·······█ beats 2/6     hard · avg 19%          3.4%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>                   29.6%  █·●▄·······█ beats 2/6     hard · avg 20%          3.4%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail</a>                      59.9%  ●▄··▄··▄·▄·▄ beats 0/6     medium · avg 37%        1.9%  at its level
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline</a>                     47.3%  ▄●······▄█▄▄ beats 1/6     hard · avg 29%          1.4%  at its level
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">BrowseComp-ZH (lab)</a>                  35.7%  ▁▁▁▁▁▃·●▄▅▄█ beats 7/23    very hard · avg 15%     1.3%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">BrowseComp-ZH (lab)</a>                  35.7%  ▁▁▁▁▁▃·●▄▅▄█ beats 7/23    hard · avg 15%          1.3%  at its level · small run
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-08-26/score/data_overall.csv">BFCL V4 (2025-08-26 archive, mode…</a>   49.0%  ▄▄····█●···▄ beats 4/5     hard · avg 27%          1.1%  at its level
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">SWE-bench Multilingual (lab)</a>         30.5%  ▁··▁●▂▅▇█▃▃▁ beats 5/60    hard · avg 19%          1.0%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">Humanity's Last Exam with tools (…</a>   24.8%  ▂▂●▁▄▂▃▆█▇▂▆ beats 6/54    very hard · avg 13%     0.8%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">BrowseComp (lab)</a>                      8.9%  ▂·●▁▂▃▆▄█▂▃▄ beats 4/42    very hard · avg 11%     0.7%  at its level · small run
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              63.8%  ▁▁▁▁▁▃▅█▅●▁▁ beats 92/114  medium · avg 52%        0.6%  blunt · at its level
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">Terminal-Bench (pre-2.0) with Ter…</a>    5.7%  ●····█·····█ beats 0/2     very hard · avg 7.1%    0.3%  noisy · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">Terminal-Bench (pre-2.0) with Ter…</a>    5.7%  ●····█·····█ beats 0/2     very hard · avg 7.2%    0.3%  noisy · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">τ-bench Airline (GPT-4.1 user) (l…</a>   53.5%  ●········█·█ beats 0/2                                —  not counted yet: no other model in the …
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">τ-bench Retail (GPT-4.1 user) (la…</a>   63.9%  █●·········█ beats 1/2                                —  not counted yet: no other model in the …
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">BFCL v3 multi-turn (lab)</a>             37.0%  no other model yet                                    —  not counted yet: no other model in the …
@@ -50,8 +50,8 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kim
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   71.4%  ▂·▂▃▅▂▃█▆●▂▂ beats 39/49  very hard · avg 8.5%     26%  sharp · at its level · several runs
-<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>                   29.6%  █·●▄·······█ beats 2/6    hard · avg 19%          3.4%  sharp · at its level · small run · seve…
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   71.4%  ▂·▂▃▅▂▃█▆●▂▂ beats 39/49  very hard · avg 8.6%     26%  sharp · at its level · several runs
+<a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>                   29.6%  █·●▄·······█ beats 2/6    hard · avg 20%          3.4%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (Torpe…</a>   59.6%  ▁▁▁▁·▁▂●▅▃█▇ beats 14/49  hard · avg 18%          2.6%  at its level
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–May 20…</a>   62.5%  ▄●·▄·····█·▄ beats 1/5    medium · avg 45%        1.9%  at its level · several runs
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">LiveCodeBench 2024-08–2025-05 (ve…</a>   73.3%  ▃···█··●··▃▃ beats 4/7    medium · avg 42%        1.5%  at its level · small run · several runs
@@ -78,10 +78,10 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [N
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>                            83.2%  █···●██·█··█ beats 1/5     medium · avg 49%        6.8%  sharp · several runs
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>                            83.2%  █···●██·█··█ beats 1/5     medium · avg 50%        6.8%  sharp · several runs
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025</a>                            73.4%  ●·█···███··█ beats 0/5     medium · avg 43%        5.4%  sharp · several runs
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             66.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 93/193  very hard · avg 8.5%    2.5%  sharp · at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         96.6%  ▂▂▅▆▄█▆▃▅▂▃● beats 86/92   hard · avg 32%          2.5%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             66.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 93/193  very hard · avg 8.6%    2.5%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         96.6%  ▂▂▅▆▄█▆▃▅▂▃● beats 86/92   hard · avg 33%          2.5%  sharp
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">HMMT 2025 (edition unspecified) (…</a>   79.4%  ▃█▇▅●▅▁·▁··▁ beats 25/32   hard · avg 22%          2.1%  sharp · at its level · noisy · small ru…
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500</a>                             87.3%  ●······▄▄▄·█ beats 0/5     very easy · avg 86%     0.3%  maxed out · noisy
 </pre>
@@ -92,7 +92,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">BrowseComp-ZH (lab)</a>                  35.7%  ▁▁▁▁▁▃·●▄▅▄█ beats 7/23   very hard · avg 15%    1.3%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">BrowseComp-ZH (lab)</a>                  35.7%  ▁▁▁▁▁▃·●▄▅▄█ beats 7/23   hard · avg 15%         1.3%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">Humanity's Last Exam with tools (…</a>   24.8%  ▂▂●▁▄▂▃▆█▇▂▆ beats 6/54   very hard · avg 13%    0.8%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">BrowseComp (lab)</a>                      8.9%  ▂·●▁▂▃▆▄█▂▃▄ beats 4/42   very hard · avg 11%    0.7%  at its level · small run
 </pre>
@@ -105,10 +105,10 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         76.3%  ▁▁▁▁▂▄▆▄●▇█▅ beats 118/208  hard · avg 42%           16%  sharp · at its level · several runs
 <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam</a>                 15.9%  ▄····▄·█·●·▄ beats 4/5      very hard · avg 4.3%    5.5%  several runs
-<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro</a>                             75.3%  ▁▁·▁▁▁▃▂▄▅●▁ beats 171/188  medium · avg 51%        2.8%  several runs
+<a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro</a>                             75.3%  ▁▁·▁▁▁▃▂▄▅●▁ beats 171/188  medium · avg 52%        2.8%  several runs
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">MMLU-Redux (lab)</a>                     93.4%  ▁▁▃▁▂▃▄▅▇▅●▄ beats 56/63    easy · avg 80%          2.3%  small run · several runs
+<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   89.2%  ▁▁▃▁●▄▃▃▆▂▂▂ beats 11/49    easy · avg 78%          1.2%  typical
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">SimpleQA (lab)</a>                       27.8%  ▄▄▄▆█▆██●·▂█ beats 26/32    very hard · avg 9.6%    1.1%  at its level · small run
-<a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   89.2%  ▁▁▃▁●▄▃▃▆▂▂▂ beats 11/49    easy · avg 78%          1.1%  typical
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspecified)</a>   73.8%  ●·····▄█▄▄·▄ beats 0/6      easy · avg 66%          0.7%  blunt
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">CNMO 2024 (lab)</a>                      86.9%  █··········● beats 1/1      medium · avg 58%        0.7%  small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">FRAMES (lab)</a>                         83.0%  █··········● beats 1/1      medium · avg 64%        0.6%  small run
@@ -136,7 +136,7 @@ source                                    results  share of the score
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 65.2
+weighted average                                   = 65.1
 </pre>
 
 <sub>Licences: deepseek-ai/DeepSeek-R1-0528 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1-0528.txt)) · Prime Intellect INTELLECT-3 model card: Evaluation table ([MIT](https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md)) · deepseek-ai/DeepSeek-V3.1 model card ([MIT](../../licenses/deepseek-ai--DeepSeek-V3.1.txt)) · ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · deepseek-ai/DeepSeek-R1-0528-Qwen3-8B model card ([MIT](../../licenses/card-deepseek-ai-deepseek-r1-0528-qwen3-8b.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

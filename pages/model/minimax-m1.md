@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-06 · 456B params (45.9B active) · apache-2.0
 
-**score 62.4** ±1.3 · #171 of 719 · from 13 benchmark results across 2 sources
+**score 62.3** ±1.3 · #171 of 719 · from 13 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -56,7 +56,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <pre>
 test             result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2025 (lab)</a>   76.9%  ▁·▁▁▁▂▅▆●▇▅▁ beats 77/133  medium · avg 42%        10%  sharp · small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2025 (lab)</a>   76.9%  ▁·▁▁▁▂▅▆●▇▅▁ beats 77/133  medium · avg 43%        10%  sharp · small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2024 (lab)</a>   86.0%  ▁▁▁▂▁▃▁▅█●█▃ beats 61/85   medium · avg 55%        10%  sharp · small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MATH-500 (lab)</a>    96.8%  ▁▃▂▃▅▇▅▇●▅▂▁ beats 64/84   very easy · avg 89%    6.1%  maxed out · small run
 </pre>
@@ -70,8 +70,8 @@ test                        result  vs the others in its run    difficulty      
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">GPQA Diamond (lab)</a>           70.0%  ▁▁▁▁▂▄▅▅●██▄ beats 153/310  hard · avg 43%           12%  sharp · at its level · small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LongBench v2 (lab)</a>           61.5%  ▂·▁·▂▂▁▃▄▁●▄ beats 24/28    hard · avg 39%          6.6%  at its level · small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">Humanity's Last Exam (lab)</a>    8.4%  ▁▁▁●▆▆▇██▆▁▃ beats 11/104   very hard · avg 3.4%    6.5%  small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SimpleQA (lab)</a>               18.5%  ▄▄▄▆█▆●██·▂█ beats 19/32    very hard · avg 7.7%    5.8%  small run
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MMLU-Pro (lab)</a>               81.1%  ▁▁·▁▁▁▃▂▄▅●▁ beats 131/188  medium · avg 59%        5.7%  small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SimpleQA (lab)</a>               18.5%  ▄▄▄▆█▆●██·▂█ beats 19/32    very hard · avg 7.8%    5.8%  small run
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MMLU-Pro (lab)</a>               81.1%  ▁▁·▁▁▁▃▂▄▅●▁ beats 131/188  medium · avg 60%        5.7%  small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">ZebraLogic (lab)</a>             86.8%  █·▁▁▁▇·●▄▁▄▁ beats 14/24    medium · avg 60%        5.6%  small run
 <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MultiChallenge (lab)</a>         44.7%  ▁·▁·▁▃●▅▃▁█▅ beats 9/29     hard · avg 27%          3.8%  at its level · small run
 </pre>
@@ -87,7 +87,7 @@ source                                    results  share of the score
 <a name="card-minimaxai--minimax-m1-80k"></a><a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MiniMaxAI/MiniMax-M1-80k model card (la…</a>       12   85% ▇▇▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   14% ▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.4
+weighted average                                   = 62.3
 </pre>
 
 <sub>Licences: MiniMaxAI/MiniMax-M1-80k model card ([apache-2.0](../../licenses/MiniMaxAI--MiniMax-M1-80k.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

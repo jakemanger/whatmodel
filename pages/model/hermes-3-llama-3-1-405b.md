@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-08 · 405.85B params · llama3
 
-**score 51.4** ±1.2 · #321 of 719 · from 14 benchmark results across 2 sources
+**score 51.3** ±1.2 · #322 of 719 · from 14 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ chat &amp; writing  █········█·●       #1 of 3*    2.2%      1
 
 <details><summary>coding · #222 of 458 · 24% of its score</summary>
 
-Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -67,7 +67,7 @@ source                                    results  share of the score
 <a name="first-party-nous-research-scores"></a><a href="https://arxiv.org/pdf/2408.11857v1">Nous Research vendor-reported scores fo…</a>       13   75% ▇▇▇▇▇▇▇▇▇
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   24% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 51.4
+weighted average                                   = 51.3
 </pre>
 
 <sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>

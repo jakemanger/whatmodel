@@ -6,7 +6,7 @@
 
 Baichuan · released 2025-01 · 14.47B params
 
-**score 54.0** ±4.4 · #349 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.0** ±4.4 · #350 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

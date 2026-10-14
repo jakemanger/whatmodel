@@ -6,7 +6,7 @@
 
 MeetKai · released 2024-07 · 8.03B params · mit
 
-**score 52.9** ±6.4 · #374 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.9** ±6.4 · #373 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

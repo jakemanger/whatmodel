@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 80B params (3B active) · apache-2.0
 
-**score 63.1** ±0.8 · #165 of 719 · from 31 benchmark results across 6 sources
+**score 63.0** ±0.8 · #165 of 719 · from 31 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -29,7 +29,7 @@ test                    result  vs the others in its run    difficulty          
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">τ²-bench Telecom (lab)</a>   13.2%  ▁·●█▆▅▂▃▃▂▃▁ beats 3/89     very hard · avg 6.0%    4.4%  sharp · at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">τ-bench Retail (lab)</a>     60.9%  ▁····▃·▂●█▂▆ beats 11/28    hard · avg 32%          3.6%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">τ²-bench Retail (lab)</a>    57.3%  ▁····▂▁●▆█▃▁ beats 9/44     medium · avg 36%        2.7%  at its level
-<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">τ²-bench Airline (lab)</a>   45.5%  ▁▁·▂▁●▂▁█▅▂▃ beats 9/42     hard · avg 23%          2.2%  at its level
+<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">τ²-bench Airline (lab)</a>   45.5%  ▁▁·▂▁●▂▁█▅▂▃ beats 9/42     hard · avg 24%          2.2%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">τ-bench Airline (lab)</a>    44.0%  ▁▁▁·▅▄▁●▇▁▁▇ beats 12/28    hard · avg 20%          2.2%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">BFCL v3 (lab)</a>            70.3%  ▁▁▁▁▁▃▅█▆▅●▁ beats 150/170  medium · avg 57%        1.0%  blunt · at its level
 </pre>
@@ -42,7 +42,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Ins
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">Aider polyglot (225 exercises, tw…</a>   49.8%  ▂▁▁▃▆▃▄●█▃▄▂ beats 41/71  very hard · avg 9.0%     12%  sharp · at its level
+<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">Aider polyglot (225 exercises, tw…</a>   49.8%  ▂▁▁▃▆▃▄●█▃▄▂ beats 41/71  very hard · avg 9.1%     12%  sharp · at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">LiveCodeBench v6 (Feb–May 2025) (…</a>   56.6%  ▁▁▃▁█●▄▇▅▅▃█ beats 11/38  hard · avg 28%          2.6%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">MultiPL-E (lab)</a>                      87.8%  ▃··▄·▅▅▇▄█▃● beats 30/31  easy · avg 68%          2.2%  typical
 </pre>
@@ -83,11 +83,11 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">GPQA (subset unspecified) (lab)</a>      72.9%  ▂▁▂▂▄▃▆▃▅●▄▃ beats 80/104   hard · avg 45%         5.6%  sharp · at its level
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   56.9%  ▂▃▅▂▆▃█▅█●▃▆ beats 26/34    medium · avg 42%       4.4%  blunt · at its level
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   30.1%  ▁▁▂▁▃▄█●▄▅▂▃ beats 21/39    very hard · avg 22%    3.6%  blunt
-<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">MMLU-Pro (lab)</a>                       80.6%  ▁▁·▁▁▁▃▂▄▅●▁ beats 129/188  medium · avg 58%       3.6%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">MMLU-Pro (lab)</a>                       80.6%  ▁▁·▁▁▁▃▂▄▅●▁ beats 129/188  medium · avg 59%       3.6%  typical
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">INCLUDE (lab)</a>                        78.9%  ▂····▂▂▄▄▄●▄ beats 25/36    medium · avg 58%       3.4%  at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   39.8%  ▁▁▁▁▁▂▂▃▄▆●▃ beats 71/97    hard · avg 32%         3.3%  blunt · at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">MMLU-Redux (lab)</a>                     90.9%  ▁▁▃▁▂▃▄▅▇●█▄ beats 41/63    easy · avg 79%         3.0%  typical
-<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">Creative Writing v3 (lab)</a>            85.3%  ▂····▂▆··▆●▆ beats 8/14     easy · avg 69%         2.3%  typical
+<a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">Creative Writing v3 (lab)</a>            85.3%  ▂····▂▆··▆●▆ beats 8/14     easy · avg 70%         2.3%  typical
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">MMLU-ProX (lab)</a>                      76.7%  ▁·▁▁▁▂▁▃●█▅▄ beats 14/35    medium · avg 58%       2.1%  typical
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">SuperGPQA (lab)</a>                      58.8%  ▂▁▂▂▅▆▃▇▇●█▃ beats 32/46    medium · avg 36%       2.1%  at its level
 <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/README.md">LiveBench 2024-11-25 (lab)</a>           75.8%  ▄··▂·▂·▂●▆▂▂ beats 8/13     medium · avg 55%       1.7%  at its level
@@ -112,7 +112,7 @@ source                                    results  share of the score
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1    3% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 63.1
+weighted average                                   = 63.0
 </pre>
 
 <sub>Licences: Qwen/Qwen3-Next-80B-A3B-Instruct model card ([apache-2.0](../../licenses/Qwen--Qwen3-Next-80B-A3B-Instruct.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

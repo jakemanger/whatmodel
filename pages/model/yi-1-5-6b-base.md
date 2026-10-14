@@ -20,7 +20,7 @@
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              27.4%  ▂▁●▄▂▅▇█▆▂▂▂ beats 6/58    medium · avg 50%     72%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              27.4%  ▂▁●▄▂▅▇█▆▂▂▂ beats 6/58    medium · avg 51%     72%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   62.4%  ▃▁▁▁▁▁▁▁●█▅▁ beats 95/276  medium · avg 73%     14%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   77.4%  ▁▁▁▁▁▁▁▂●█▄▃ beats 58/146  easy · avg 83%       11%  at its level · noisy
 </pre>

@@ -6,7 +6,7 @@
 
 Deep Cogito · released 2025-03 · 3.61B params · llama3.2
 
-**score 46.2** ±4.4 · #416 of 719 · from 3 benchmark results across 2 sources
+**score 46.1** ±4.4 · #416 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -35,8 +35,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                           results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                  2   53% ▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1   38% ▇▇▇▇▇
-prior: pull toward the middle               9% ▇
-weighted average                          = 46.2
+prior: pull toward the middle               8% ▇
+weighted average                          = 46.1
 </pre>
 
 <sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

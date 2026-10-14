@@ -6,7 +6,7 @@
 
 H2O.ai · released 2024-04 · 1.83B params · apache-2.0
 
-**score 30.1** ±3.5 · #858 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 30.1** ±3.5 · #860 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

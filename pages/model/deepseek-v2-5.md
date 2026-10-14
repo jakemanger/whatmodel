@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-09 · 236B params (21B active) · deepseek
 
-**score 53.6** ±0.8 · #290 of 719 · from 13 benchmark results across 7 sources
+**score 53.5** ±0.8 · #290 of 719 · from 13 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -84,7 +84,7 @@ source                                    results  share of the score
 <a name="opencompass-compassacademic-space-predictions"></a><a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">OpenCompass CompassAcademic leaderboard</a>         2    3% ▇
 <a name="first-party-deepseek-scores"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">DeepSeek vendor-reported benchmark scor…</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 53.6
+weighted average                                   = 53.5
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · OpenCompass CompassAcademic leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

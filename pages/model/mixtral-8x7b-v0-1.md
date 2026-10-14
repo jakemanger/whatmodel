@@ -24,11 +24,11 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   43.3%  ▁·▂▁▂▆▅●▄▄▁▂ beats 22/35  medium · avg 64%     13%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   43.3%  ▁·▂▁▂▆▅●▄▄▁▂ beats 22/35  medium · avg 65%     13%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval (lab)</a>                      40.2%  █···█·███··● beats 5/5    easy · avg 66%       11%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   20.7%  ▄▇█▃●▇▄▁▇▃·▁ beats 16/35  medium · avg 49%    8.1%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   14.3%  ▁·▁▁▄█●▄█▁▅▅ beats 14/35  medium · avg 56%    7.7%  sharp · at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP (lab)</a>                           60.7%  ▄··▄·▄··█··● beats 5/5    easy · avg 71%      3.8%  at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP (lab)</a>                           60.7%  ▄··▄·▄··█··● beats 5/5    easy · avg 71%      3.7%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           39.3%  ▁··▁▅▂●▇▁··▁ beats 10/22  medium · avg 54%    2.7%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           40.5%  ▁·▂▃▁●▁▂···▁ beats 11/22  medium · avg 53%    2.6%  blunt · at its level
 </pre>
@@ -40,9 +40,9 @@ test                                result  vs the others in its run  difficulty
 Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-2-8b.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall. Trails [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank lower overall.
 
 <pre>
-test         result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K (lab)</a>   74.4%  █···█·██··█● beats 5/5    easy · avg 82%    4.1%  sharp · at its level
-<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH (lab)</a>    28.4%  █·█·█·██···● beats 5/5    hard · avg 35%    3.5%  typical
+test         result  vs the others in its run  difficulty        counts  why
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K (lab)</a>   74.4%  █···█·██··█● beats 5/5    easy · avg 82%      4.1%  sharp · at its level
+<a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH (lab)</a>    28.4%  █·█·█·██···● beats 5/5    medium · avg 35%    3.5%  typical
 </pre>
 
 </details>
@@ -72,7 +72,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="paper-mixtral-2401.04088v1"></a><a href="https://arxiv.org/html/2401.04088v1#S3.T2">Mixtral of Experts (lab)</a>                       12   63% ▇▇▇▇▇▇▇▇
-<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        3   29% ▇▇▇
+<a name="paper-2405.04324v1"></a><a href="https://arxiv.org/html/2405.04324v1">Granite Code Models: A Family of Open F…</a>        3   28% ▇▇▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    5% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    1% ▇

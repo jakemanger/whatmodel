@@ -6,7 +6,7 @@
 
 jieliu (Storm) · released 2024-04 · 7.24B params · apache-2.0
 
-**score 54.4** ±1.6 · #336 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.3** ±1.6 · #341 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                               results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        1   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 54.4
+weighted average                              = 54.3
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

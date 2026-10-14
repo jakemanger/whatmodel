@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-04 · 7.25B params · other (tongyi-qianwen-research)
 
-**score 40.7** ±0.8 · #522 of 719 · from 4 benchmark results across 2 sources
+**score 40.7** ±0.8 · #521 of 719 · from 4 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -34,7 +34,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   45.6%  ▂▁▁▄▂▅▇█●▂▂▂ beats 43/58  medium · avg 50%    5.9%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   45.6%  ▂▁▁▄▂▅▇█●▂▂▂ beats 43/58  medium · avg 51%    5.9%  at its level
 </pre>
 
 </details>

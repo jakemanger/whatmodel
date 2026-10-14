@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · proprietary
 
-**score 68.9** ±1.7 · #95 of 719 · from 7 benchmark results across 3 sources
+**score 68.7** ±1.7 · #95 of 719 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -47,7 +47,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [Claude Opus 4.5](claude-opus-4
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 129/193  very hard · avg 8.5%     15%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 129/193  very hard · avg 8.6%     15%  sharp · noisy
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         84.8%  ▁▁▁▁▂▄▆▄▅●█▅ beats 144/208  hard · avg 40%           35%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         16.0%  █··▂●▇▄█▂▃▁▁ beats 23/74    very hard · avg 9.4%     14%  sharp · too hard for it · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                22.0%  █▁▁▁▁▂▁●▂▂▁▁ beats 88/135   very hard · avg 5.9%     13%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    25.4%  ▁▁▃▂▃●▆▆█▃▂▅ beats 16/78    very hard · avg 8.0%    9.5%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    25.4%  ▁▁▃▂▃●▆▆█▃▂▅ beats 16/78    very hard · avg 8.1%    9.5%  at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   89.3%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 36/98    very easy · avg 90%     0.0%  blunt
 </pre>
 
@@ -75,7 +75,7 @@ source                             results  share of the score
 <a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                          1   12% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>        1    0% ▇
 prior: pull toward the middle                 1% ▇
-weighted average                            = 68.9
+weighted average                            = 68.7
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vibe Code Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

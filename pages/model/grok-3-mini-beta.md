@@ -27,7 +27,7 @@ Beats [o3-mini](o3-mini.md) here, though they rank higher overall. Trails [Grani
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   30.9%  █·▃▃·█▅▅▅●▃▅ beats 15/18   very hard · avg 5.8%    7.4%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   30.9%  █·▃▃·█▅▅▅●▃▅ beats 15/18   very hard · avg 5.9%    7.4%  sharp
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              53.0%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 51/114  medium · avg 52%        1.9%  blunt · at its level
 </pre>
 
@@ -39,8 +39,8 @@ Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-fl
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   49.3%  ▂·▂▃▅▂▃●▆▄▂▂ beats 26/49  very hard · avg 8.5%     28%  sharp · at its level
-<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   66.7%  ▃▃▅▃··▃▅●▅▅▃ beats 10/15  hard · avg 25%          7.6%  at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   49.3%  ▂·▂▃▅▂▃●▆▄▂▂ beats 26/49  very hard · avg 8.6%     28%  sharp · at its level
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   66.7%  ▃▃▅▃··▃▅●▅▅▃ beats 10/15  hard · avg 25%          7.5%  at its level
 </pre>
 
 </details>
@@ -62,8 +62,8 @@ Beats [MiniMax-M2.7](minimax-m2-7.md), [MiniMax-M2.1](minimax-m2-1.md), [Mistral
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         88.1%  ▂▂▅▆▄█▆▃●▂▃▄ beats 75/92    hard · avg 32%           11%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             77.8%  ▃▃▄▃▃▃▇●█▃▂▅ beats 111/193  very hard · avg 8.5%    9.4%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         88.1%  ▂▂▅▆▄█▆▃●▂▃▄ beats 75/92    hard · avg 33%           11%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             77.8%  ▃▃▄▃▃▃▇●█▃▂▅ beats 111/193  very hard · avg 8.6%    9.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   91.8%  ▄█·▄····▄●·█ beats 5/7      easy · avg 76%          1.4%  typical
 </pre>
 
@@ -75,7 +75,7 @@ Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [Cla
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   30.9%  █·▃▃·█▅▅▅●▃▅ beats 15/18  very hard · avg 5.8%    7.4%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   30.9%  █·▃▃·█▅▅▅●▃▅ beats 15/18  very hard · avg 5.9%    7.4%  sharp
 </pre>
 
 </details>
@@ -85,7 +85,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty      counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         75.5%  ▁▁▁▁▂▄▆▄●▇█▅ beats 113/208  hard · avg 40%     17%  sharp · at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1146.8  ▁·▂▁▄●▅▃█▄▁▁ beats 19/62    avg 1044          5.9%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1146.8  ▁·▂▁▄●▅▃█▄▁▁ beats 19/62    avg 1045          6.0%  typical
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 LG AI Research · released 2026-07 · 750B params (37B active) · apache-2.0
 
-**score 67.2** ±1.3 · #111 of 719 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
+**score 67.0** ±1.3 · #111 of 719 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -72,7 +72,7 @@ test                      result  vs the others in its run  difficulty        co
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">GPQA Diamond (lab)</a>                   82.2%  ▁▁▁▁▂▄▅▅█●█▄ beats 210/310  hard · avg 43%           13%  sharp · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">GPQA Diamond (lab)</a>                   82.2%  ▁▁▁▁▂▄▅▅█●█▄ beats 210/310  hard · avg 44%           13%  sharp · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">MMLU-Pro (lab)</a>                       83.5%  ▁▁·▁▁▁▃▂▄▅●▁ beats 157/188  medium · avg 56%        8.3%  small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Humanity's Last Exam (lab)</a>           18.3%  ▁▁▁▃▆▆●██▆▁▃ beats 44/104   very hard · avg 4.3%    7.3%  small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFBench (aggregation unspecified)…</a>   72.6%  ▃▇▂▄▅▅▂▄▄●█▇ beats 58/80    medium · avg 41%        4.4%  at its level · small run
@@ -88,7 +88,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-lgai-exaone-k-exaone-2-0-750b-a37b"></a><a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">LGAI-EXAONE/K-EXAONE-2.0-750B-A37B mode…</a>       11   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 67.2
+weighted average                                   = 67.0
 </pre>
 
 <sub>Licences: LGAI-EXAONE/K-EXAONE-2.0-750B-A37B model card ([Apache-2.0](https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/LICENSE))</sub>

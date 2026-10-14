@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 2.41B params · exaone
 
-**score 36.2** ±2.3 · #588 of 719 · from 7 benchmark results across 3 sources
+**score 36.2** ±2.3 · #587 of 719 · from 7 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -34,12 +34,12 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #271 of 393 · 41% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">Arena-Hard (version/judge unspeci…</a>   48.2%  ▃▃▂▅●▆▅█▅▅▂▃ beats 8/30   easy · avg 68%     23%  at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">IFEval (aggregation unspecified) …</a>   73.6%  ▄·●·▄·▄▄···█ beats 1/6    easy · avg 78%     18%  at its level
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">IFEval (aggregation unspecified) …</a>   73.6%  ▄·●·▄·▄▄···█ beats 1/6    easy · avg 79%     18%  at its level
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   33.4%  ▁●▂▂▃█▃▆▅▄▂▃ beats 3/95   easy · avg 66%     36%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   33.4%  ▁●▂▂▃█▃▆▅▄▂▃ beats 3/95   easy · avg 66%     37%  at its level
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">LG AI Research vendor-reported benchmar…</a>        2   41% ▇▇▇▇▇
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   36% ▇▇▇▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                                1   37% ▇▇▇▇
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4   20% ▇▇
 prior: pull toward the middle                        2% ▇
 weighted average                                   = 36.2

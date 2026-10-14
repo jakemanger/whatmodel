@@ -6,7 +6,7 @@
 
 Yhyu13 · released 2023-12 · 10.73B params · llama2
 
-**score 41.4** ±1.9 · #685 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.4** ±1.9 · #686 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

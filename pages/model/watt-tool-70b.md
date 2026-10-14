@@ -6,7 +6,7 @@
 
 Watt AI · released 2024-12 · 70.55B params · apache-2.0
 
-**score 66.7** ±6.8 · #123 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.6** ±6.8 · #125 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   79% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                       21% ▇▇
-weighted average                                   = 66.7
+weighted average                                   = 66.6
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 58.7** ±0.8 · #210 of 719 · from 32 benchmark results across 5 sources
+**score 58.6** ±0.8 · #210 of 719 · from 32 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -67,7 +67,7 @@ test                             result  vs the others in its run  difficulty   
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond (lab)</a>                   69.3%  █··●··▄···█▄ beats 2/6      hard · avg 44%           22%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro</a>                             79.2%  █··█··███··● beats 5/5      medium · avg 57%        9.4%  at its level · several runs
+<a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro</a>                             79.2%  █··█··███··● beats 5/5      medium · avg 58%        9.5%  at its level · several runs
 <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam</a>                  5.9%  █··█●···█·██ beats 2/5      very hard · avg 3.8%    3.8%  typical
 <a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>       97.9%  ▄···▄····▄·● beats 4/4      easy · avg 86%          3.3%  sharp · noisy · several runs
 <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecified)</a>    51.7%  ███···●█···█ beats 3/5      hard · avg 35%          1.1%  at its level
@@ -91,7 +91,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    1% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 58.7
+weighted average                                   = 58.6
 </pre>
 
 <sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2504.21318v1.txt)) · microsoft/Phi-4-reasoning model card ([mit](../../licenses/microsoft--Phi-4-reasoning.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -45,7 +45,7 @@ test         result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 52.8%  ▁·····▂█●▅·▁ beats 15/25  easy · avg 77%       43%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           45.9%  ▁▁▃▃●█▄▁█··▁ beats 6/25   easy · avg 74%       15%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           45.9%  ▁▁▃▃●█▄▁█··▁ beats 6/25   easy · avg 74%       16%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   55.7%  ▂··▁▃▂▂▂█●▁▂ beats 20/25  medium · avg 61%    4.9%  blunt · at its level
 </pre>
 

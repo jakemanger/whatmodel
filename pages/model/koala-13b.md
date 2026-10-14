@@ -37,7 +37,7 @@ Beats [Phi-2 (2.7B)](phi-2.md), [Falcon 40B Instruct](falcon-40b-instruct.md) he
 test                                                      result  vs the others in its run   difficulty                counts  why
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         967.0  ▂▁▂●▃▇█▆▇▄▂▂ beats 11/95   avg 1201                     17%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1070.9  ▁▁●▂▃▃▃▆▆▇█▃ beats 12/379  avg 1268                     17%  blunt
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  5.3500 MT-Bench score (1-10)  ▆▂▂▆●▄██▂▄▄▆ beats 10/28   avg 8.819 MT-Bench scor…     15%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  5.3500 MT-Bench score (1-10)  ▆▂▂▆●▄██▂▄▄▆ beats 10/28   avg 8.826 MT-Bench scor…     15%  sharp · noisy
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ test                                                      result  vs the others 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                       34.6%  ███··●·█·█·█ beats 3/6    easy · avg 76%       17%  sharp
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 44.6%  ▄▄·▄···▄▄·●█ beats 5/8    easy · avg 77%      7.2%  typical
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 44.6%  ▄▄·▄···▄▄·●█ beats 5/8    easy · avg 78%      7.2%  typical
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>   24.9%  ▂··●·▂▆▄▂█·▂ beats 1/14   medium · avg 57%    6.1%  at its level
 </pre>
 

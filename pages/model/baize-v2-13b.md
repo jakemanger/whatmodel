@@ -6,7 +6,7 @@
 
 Project Baize · released 2023-05 · cc-by-nc-4.0
 
-**score 31.6** ±2.4 · #846 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.6** ±2.4 · #848 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

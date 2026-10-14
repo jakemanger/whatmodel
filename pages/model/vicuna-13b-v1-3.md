@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-06
 
-**score 35.8** ±2.2 · #794 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.8** ±2.2 · #796 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-12 · 228.7B params (10B active) · other
 
-**score 65.7** ±1.2 · #135 of 719 · from 12 benchmark results across 5 sources
+**score 65.6** ±1.2 · #135 of 719 · from 12 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -28,9 +28,9 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-p
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   60.6%  ▆··▆▄▂▄▂▆●█▄ beats 16/23  very hard · avg 14%     13%  sharp · at its level
-<a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (lab)</a>               87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 65/89  medium · avg 35%        12%  sharp · small run
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>                   86.6%  ▄······▄█·●▄ beats 4/5    medium · avg 46%        10%  typical
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>                        47.8%  ▁▁▁▁▁▃·▁▄●▄█ beats 11/23  hard · avg 18%         9.4%  at its level
+<a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">τ²-bench Telecom (lab)</a>               87.0%  ▁·▅█▆▅▂●▃▂▃▁ beats 65/89  medium · avg 36%        12%  sharp · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>                   86.6%  ▄······▄█·●▄ beats 4/5    medium · avg 46%       9.5%  typical
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>                        47.8%  ▁▁▁▁▁▃·▁▄●▄█ beats 11/23  hard · avg 19%         9.4%  at its level
 </pre>
 
 </details>
@@ -41,7 +41,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1384.4  ▁▂▄▃▅●▄▇▆▄▁▁ beats 38/119  avg 981        24%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1384.4  ▁▂▄▃▅●▄▇▆▄▁▁ beats 38/119  avg 983        24%  sharp
 </pre>
 
 </details>
@@ -64,8 +64,8 @@ Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](
 <pre>
 test                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">IMO-AnswerBench</a>      60.4%  ▁▁·▁▁●▄▅█▄▂▃ beats 5/42   medium · avg 35%    5.3%  at its level · small run
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025</a>   74.3%  ▁▁····▁●▃█▇▁ beats 3/23   medium · avg 65%    2.6%  noisy
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025</a>   71.0%  ▁▁▁▃▁●▅▃██▁▄ beats 9/31   medium · avg 58%    1.9%  noisy · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025</a>   74.3%  ▁▁····▁●▃█▇▁ beats 3/23   medium · avg 65%    2.5%  noisy
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025</a>   71.0%  ▁▁▁▃▁●▅▃██▁▄ beats 9/31   medium · avg 59%    1.9%  noisy · small run
 </pre>
 
 </details>
@@ -74,7 +74,7 @@ test                result  vs the others in its run  difficulty        counts  
 
 <pre>
 test           result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>   47.8%  ▁▁▁▁▁▃·▁▄●▄█ beats 11/23  hard · avg 18%    9.4%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>   47.8%  ▁▁▁▁▁▃·▁▄●▄█ beats 11/23  hard · avg 19%    9.4%  at its level
 </pre>
 
 </details>
@@ -83,7 +83,7 @@ test           result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics</a>                      60.2%  ███··█●·█··█ beats 4/6    hard · avg 31%         6.3%  at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics</a>                      60.2%  ███··█●·█··█ beats 4/6    hard · avg 31%         6.2%  at its level
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset)</a>                64.3%  ▃●····█▃···▃ beats 1/6    medium · avg 47%       3.3%  at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   88.2%  ▁▂▁▂●█▂▃▄▃▁▁ beats 27/98  very easy · avg 90%    0.0%  blunt
 </pre>
@@ -102,7 +102,7 @@ source                                    results  share of the score
 <a name="first-party-minimax-scores"></a><a href="https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md">MiniMax vendor-reported benchmark score…</a>        1   12% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 65.7
+weighted average                                   = 65.6
 </pre>
 
 <sub>Licences: stepfun-ai/Step-3.5-Flash model card ([Apache-2.0](../../licenses/stepfun-ai--Step-3.5-Flash.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

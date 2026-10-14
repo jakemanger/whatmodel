@@ -6,7 +6,7 @@
 
 Google · released 2024-09 · proprietary
 
-**score 56.3** ±0.7 · comparison only: no current run option verified · from 26 benchmark results across 11 sources
+**score 56.2** ±0.7 · comparison only: no current run option verified · from 26 benchmark results across 11 sources
 
 ## What it's good at
 
@@ -48,12 +48,12 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <details><summary>math · #234 of 462 · 13% of its score</summary>
 
-Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank lower overall.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               70.4%  ▂▂▅▆▄█●▃▅▂▃▄ beats 61/92   hard · avg 32%           10%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   23.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 61/193  very hard · avg 8.5%    3.2%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               70.4%  ▂▂▅▆▄█●▃▅▂▃▄ beats 61/92   hard · avg 33%           10%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   23.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 61/193  very hard · avg 8.6%    3.2%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -65,7 +65,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.
 <pre>
 test                                 result  vs the others in its run   difficulty  counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      1179.4  ▁▁▂▂▂▂▄▅●▆██ beats 60/145  avg 1068      2.8%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  56.1700  ▃▃▃·▃█·▅▃▃▃● beats 12/12   avg -0.671    1.9%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  56.1700  ▃▃▃·▃█·▅▃▃▃● beats 12/12   avg -0.412    1.9%  typical
 </pre>
 
 </details>
@@ -76,11 +76,11 @@ test                                 result  vs the others in its run   difficul
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         57.2%  ▁▁▁▁▂▄▆●▅▇█▅ beats 86/208  hard · avg 40%         6.9%  sharp · at its level
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_gemini-1.5-pro-002_5shots.zip">MMLU-Pro</a>                             70.2%  ▃▂▅█▃·█●▅··▂ beats 18/23   medium · avg 57%       6.4%  at its level
-<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   20.7%  ▂·█··●▄·▂▂·▄ beats 7/13    avg 33%                3.8%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   20.7%  ▂·█··●▄·▂▂·▄ beats 7/13    avg 32%                3.8%  typical
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-08-31</a>                 54.9%  ▄█·▄·▄●·▄··▄ beats 5/7     medium · avg 42%       2.5%  at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   43.9%  ▁▁▁▁▁▂▂▃▄▆█● beats 89/97   hard · avg 32%         2.2%  blunt · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/gemini-1.5-pro-002_google_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   83.7%  ▂·▂▂▂▆▅▆▆●▃█ beats 21/29   easy · avg 76%         1.8%  typical
-<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   79.9%  ▂·▄··▂▂·▄▂█● beats 12/13   medium · avg 53%       1.2%  at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   79.9%  ▂·▄··▂▂·▄▂█● beats 12/13   medium · avg 54%       1.2%  at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   58.5%  ▂·▂·▂█▂▄●··▄ beats 11/13   very hard · avg 54%    0.8%  sharp · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>    5.2%  ▃···▃·█▃▅▃●█ beats 9/13    avg 11%                0.8%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   57.7%  ▂·······▆●▆▆ beats 5/13    very hard · avg 57%    0.6%  blunt
@@ -112,7 +112,7 @@ source                                    results  share of the score
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 56.3
+weighted average                                   = 56.2
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

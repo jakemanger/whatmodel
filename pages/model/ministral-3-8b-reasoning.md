@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 8.8B params · apache-2.0
 
-**score 55.2** ±1.1 · #259 of 719 · from 11 benchmark results across 4 sources
+**score 55.1** ±1.1 · #261 of 719 · from 11 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test             result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2025 (lab)</a>   78.7%  ▁·▁▁▁▂▅▆●▇▅▁ beats 82/133  medium · avg 64%     20%  sharp · small run · several runs
+<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2025 (lab)</a>   78.7%  ▁·▁▁▁▂▅▆●▇▅▁ beats 82/133  medium · avg 65%     20%  sharp · small run · several runs
 <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2024 (lab)</a>   86.0%  ▁▁▁▂▁▃▁▅█●█▃ beats 62/85   easy · avg 73%       19%  sharp · small run · several runs
 </pre>
 
@@ -43,7 +43,7 @@ test             result  vs the others in its run   difficulty        counts  wh
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">GPQA Diamond (lab)</a>                   66.8%  ▁▁▁▁▂▄▅▅●██▄ beats 141/310  hard · avg 51%       24%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">GPQA Diamond (lab)</a>                   66.8%  ▁▁▁▁▂▄▅▅●██▄ beats 141/310  medium · avg 51%     24%  sharp · at its level · small run · seve…
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4312  ▁▄▃●▇▄█▃▅▁▁▁ beats 7/30     avg 0.423            16%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   43.1%  ▂▃▅▂●▃█▅█▅▃▆ beats 7/34     medium · avg 42%    7.8%  blunt · at its level
 <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-shot, l…</a>   58.5%  ▂···▂▂·▃▂▃●█ beats 11/17    medium · avg 53%    2.5%  at its level
@@ -62,7 +62,7 @@ source                                    results  share of the score
 <a name="paper-2605.01417v1"></a><a href="https://arxiv.org/html/2605.01417v1">Medmarks: A Comprehensive Open-Source L…</a>        2   24% ▇▇▇
 <a name="paper-2606.08071v1-surgiq"></a><a href="https://arxiv.org/html/2606.08071v1">SurgiQ: A Large-Scale Multi-Domain Benc…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.2
+weighted average                                   = 55.1
 </pre>
 
 <sub>Licences: mistralai/Ministral-3-8B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-3B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -14,18 +14,18 @@ Meta · released 2023-07 · 6.74B params · llama2
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁●▁▃▆██▇▆▄▃▁   #452 of 458*    5.6%      1
+coding          ▁●▁▃▆██▇▆▄▃▁   #452 of 458*    5.5%      1
 chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃    #377 of 393     38%      7
 math            ▁●▃▅▆▅▄█▄▁▁▁   #386 of 398*    2.7%      1
 </pre>
 
-<details><summary>coding · #452 of 458 · 5.6% of its score</summary>
+<details><summary>coding · #452 of 458 · 5.5% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md) here, though they rank higher overall. Trails [Phi-1 (1.3B)](phi-1.md), [OpenAssistant SFT-4 Pythia 12B](oasst-sft-4-pythia-12b.md), [Falcon3 1B Instruct](falcon3-1b.md) here, though they rank lower overall.
 
 <pre>
 test                       result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   24.0%  ●▃▃·▆▃▃█▃▂▂▅ beats 0/25   very easy · avg 86%    5.6%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   24.0%  ●▃▃·▆▃▃█▃▂▂▅ beats 0/25   very easy · avg 86%    5.5%  sharp · at its level
 </pre>
 
 </details>
@@ -39,7 +39,7 @@ test                                                      result  vs the others 
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                              5.3%  ▁▂●▃▆▆█▆▄▄▁▁ beats 8/122   medium · avg 39%            7.9%  too hard for it
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1036.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 21/95   avg 1201                    7.4%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1107.9  ▁▁▁●▃▃▃▆▆▇█▃ beats 16/379  avg 1268                    7.3%  blunt
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.2700 MT-Bench score (1-10)  ▆▂▂▆▆▄●█▂▄▄▆ beats 14/28   avg 8.819 MT-Bench scor…    6.4%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.2700 MT-Bench score (1-10)  ▆▂▂▆▆▄●█▂▄▄▆ beats 14/28   avg 8.826 MT-Bench scor…    6.4%  sharp · noisy
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         71.4%  ▂▂·▆·●▃▆█▆▄▂ beats 16/45   very easy · avg 96%         4.4%  sharp · at its level · noisy
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                          4.6%  ●▁▁▅█▅▄▃▃▅▃▁ beats 2/60    medium · avg 52%            2.5%  sharp · too hard for it
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (Incep…</a>                          0.7%  ●·▁▁▂▁▄▄▆▄█▄ beats 0/38    medium · avg 49%            1.8%  sharp · too hard for it
@@ -64,12 +64,12 @@ test   result  vs the others in its run  difficulty      counts  why
 test                                         result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                          11.6%  ▁▁▁●▂▃▂█▆▃▅▃ beats 6/61    medium · avg 41%         12%  typical
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-chat-hf/results_2024-02-12%2002%3A41%3A41.097397.json">Natural Questions (closed book)</a>               23.7%  ▁·▁·▁▂▁▂·▅●█ beats 18/28   medium · avg 58%        8.6%  typical
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  8.2621 WB-Score  ▁·▁●·▃█▄▇▆▅▆ beats 2/52    avg 45.199 WB-Score     8.3%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  8.2621 WB-Score  ▁·▁●·▃█▄▇▆▅▆ beats 2/52    avg 45.277 WB-Score     8.3%  sharp
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                                25.6%  ●·····▂█▂▅·▁ beats 0/25    easy · avg 77%          6.8%  sharp
-<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                          46.8%  ▁▁▃▃●█▄▁█··▁ beats 7/25    easy · avg 74%          2.9%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>            31.7%  ●▄▂▃█▄▃▆▃▅▂▂ beats 2/81    medium · avg 58%        2.9%  blunt · at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                          46.8%  ▁▁▃▃●█▄▁█··▁ beats 7/25    easy · avg 74%          2.9%  typical
 <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper …</a>            25.4%  ▂··●·▂▆▄▂█·▂ beats 2/14    medium · avg 57%        2.7%  at its level
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>            16.5%  ▁▁▁●▁▂▂▃▄▆█▃ beats 6/97    hard · avg 32%          2.3%  blunt
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>            16.5%  ▁▁▁●▁▂▂▃▄▆█▃ beats 6/97    hard · avg 32%          2.4%  blunt
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/meta-llama/Llama-2-7b-chat-hf/results_2023-12-22%2004%3A04%3A29.898143.json">TriviaQA</a>                                       8.8%  ▁··▁●▃▃▁▄▅▄█ beats 3/28    easy · avg 79%          1.3%  at its level · noisy
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>            22.7%  ●··▁▃▂▂▂█▅▁▂ beats 0/25    medium · avg 61%        1.2%  blunt · at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>            52.2%  ▃▁▁▁▁▁▁●▂█▅▁ beats 72/276  medium · avg 73%        1.1%  noisy

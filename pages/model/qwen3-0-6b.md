@@ -61,7 +61,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen
 
 <pre>
 test       result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>   11.2%  ●·····▄··▄██ beats 0/6    medium · avg 59%    8.4%  sharp
+<a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>   11.2%  ●·····▄··▄██ beats 0/6    medium · avg 59%    8.3%  sharp
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MGSM</a>        41.3%  █···●▄··▄··▄ beats 2/6    easy · avg 77%      8.3%  at its level
 <a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>   15.2%  ●··▄····█▄▄▄ beats 0/6    medium · avg 51%    5.7%  sharp
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GSM8K</a>       36.5%  ▄·●···▄·▄··█ beats 2/6    easy · avg 83%      4.1%  sharp · at its level
@@ -75,12 +75,12 @@ test       result  vs the others in its run  difficulty        counts  why
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                                 55.8%  ●···▄··█··▄█ beats 0/6     easy · avg 77%          15%  at its level · several runs
 <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                       41.5%  ●·····▄·▄·██ beats 0/6     easy · avg 78%          14%  sharp
-<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>            27.2%  ●······▃·▅·█ beats 0/6     hard · avg 43%         4.6%  sharp · too hard for it · several runs
+<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>            27.2%  ●······▃·▅·█ beats 0/6     hard · avg 44%         4.6%  sharp · too hard for it · several runs
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMMLU</a>                                30.8%  ●···▄·▄▄··▄█ beats 0/6     medium · avg 59%       3.5%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   36.3%  ▂●▂▃█▄▃▆▃▅▂▂ beats 7/81    medium · avg 58%       3.4%  blunt · at its level
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFBench (aggregation unspecified)</a>    19.8%  ▄▄·▄····●·█▄ beats 3/6     medium · avg 40%       3.2%  typical
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   20.4%  ▁▁▁▁▁●▂▃▄▆█▃ beats 11/97   hard · avg 32%         2.9%  blunt
-<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                           29.8%  ●▄····▄·▄·▄▄ beats 0/6     medium · avg 53%       2.3%  typical
+<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                           29.8%  ●▄····▄·▄·▄▄ beats 0/6     medium · avg 54%       2.3%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   50.3%  ▃▁▁▁▁▁▁●▂█▅▁ beats 68/276  medium · avg 73%       1.5%  at its level · noisy
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   14.5%  ●▁▂▁▃▄█▆▄▅▂▃ beats 0/39    very hard · avg 22%    1.5%  blunt · too hard for it
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>    1.6%  ▁●·▁▂▂▄█▄▅▄▄ beats 1/66    hard · avg 31%         1.4%  typical

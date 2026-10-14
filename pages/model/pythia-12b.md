@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 11.8B params · apache-2.0
 
-**score 24.9** ±0.8 · #672 of 719 · from 19 benchmark results across 4 sources
+**score 25.0** ±0.8 · #672 of 719 · from 19 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -28,7 +28,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">BoolQ</a>                                67.3%  ▂▃▂▅▆●▅▆█▂▂▂ beats 11/26   easy · avg 91%         6.8%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">LAMBADA (OpenAI version), last-wo…</a>   70.6%  ▁··▂▁▁▁▂▆●▅▃ beats 15/26   very easy · avg 89%    5.0%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">HellaSwag</a>                            67.4%  ▃···▁▇●█▇▃▁▁ beats 10/26   very easy · avg 92%    4.5%  at its level
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   15.3%  ▅····▃●·██·█ beats 4/13    medium · avg 59%       2.5%  typical
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   15.3%  ▅····▃●·██·█ beats 4/13    medium · avg 60%       2.5%  typical
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   23.2%  ▃▅●··▅▃·█▃▃▅ beats 3/13    easy · avg 67%         2.4%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">OpenBookQA</a>                           26.4%  █·▁▁●·▁▃▅▇▃▄ beats 9/26    medium · avg 53%       1.9%  too hard for it
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">Social IQA</a>                           42.0%  ▁···▁▃●▁▁▁·▁ beats 12/26   medium · avg 59%       1.6%  blunt
@@ -48,7 +48,7 @@ source                                    results  share of the score
 <a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    5% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 24.9
+weighted average                                   = 25.0
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

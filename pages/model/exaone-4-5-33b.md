@@ -6,7 +6,7 @@
 
 LG AI Research · released 2026-04 · 34.4B params · exaone
 
-**score 65.0** ±2.0 · #143 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 64.9** ±2.0 · #143 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -37,7 +37,7 @@ Trails [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [LFM2.5 2.6B](lfm2-5-2-6b.md), [Spark-
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">IFEval (aggregation unspecified) …</a>   89.6%  ▄·▄·▄·▄▄···● beats 5/6    easy · avg 78%    5.6%  typical
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">IFEval (aggregation unspecified) …</a>   89.6%  ▄·▄·▄·▄▄···● beats 5/6    easy · avg 79%    5.6%  typical
 </pre>
 
 </details>
@@ -57,7 +57,7 @@ test             result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">CharXiv (reasoning questions) (la…</a>   71.7%  ▂▅▃▅▅▆▆●▆█▆▂ beats 61/100  medium · avg 36%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">CharXiv (reasoning questions) (la…</a>   71.7%  ▂▅▃▅▅▆▆●▆█▆▂ beats 61/100  medium · avg 37%       —  not counted yet: no other model in the …
 <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMMU-Pro standard (SqueezeBits lm…</a>   17.6%  no other model yet                                —  not counted yet: no other model in the …
 <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMMU-Pro vision (SqueezeBits lmms…</a>   21.5%  no other model yet                                —  not counted yet: no other model in the …
 </pre>
@@ -69,7 +69,7 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">GPQA Diamond (lab)</a>   80.5%  █···▄▄···▄·● beats 6/6      hard · avg 51%       34%  sharp
-<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">MMLU-Pro (lab)</a>       83.3%  ▁▁·▁▁▁▃▂▄▅●▁ beats 155/188  medium · avg 62%     15%  typical
+<a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">MMLU-Pro (lab)</a>       83.3%  ▁▁·▁▁▁▃▂▄▅●▁ beats 155/188  medium · avg 62%     16%  typical
 </pre>
 
 </details>
@@ -82,7 +82,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">LG AI Research vendor-reported benchmar…</a>        5   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 65.0
+weighted average                                   = 64.9
 </pre>
 
 <details><summary>Not counted (4)</summary>

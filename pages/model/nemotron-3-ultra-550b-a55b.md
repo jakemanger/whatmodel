@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-06 · 550B params (55B active) · openmdw
 
-**score 69.4** ±0.7 · #90 of 719 · from 32 benchmark results across 5 sources
+**score 69.3** ±0.7 · #90 of 719 · from 32 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -16,7 +16,7 @@ NVIDIA · released 2026-06 · 550B params (55B active) · openmdw
 task            vs the others         rank  counts  tests
 agent tasks     ▁▁▃▆█▆▅●▅▄▃▁    #83 of 300     22%      7
 coding          ▁▁▁▃▆██▇●▄▃▁    #84 of 458     20%      6
-chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #81 of 393*    4.4%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█▆●▇▃   #81 of 393*    4.5%      1
 math            ▁▂▃▅▆▅▄●▄▁▁▁   #108 of 398    6.6%      3
 web search      ▂▁●▆▄█▃▃▁▁·▁    #71 of 80*    4.6%      2
 </pre>
@@ -47,20 +47,20 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified (lab)</a>             70.7%  ●····██·████ beats 0/6    hard · avg 22%      6.0%  sharp · at its level
 <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (lab)</a>         67.7%  ●··▄▄···▄▄·█ beats 0/6    hard · avg 30%      4.3%  at its level
 <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unspecif…</a>   89.0%  ██···█··●███ beats 3/6    medium · avg 45%    2.8%  typical
-<a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems (lab)</a>            44.6%  ▃····●··█·▃▃ beats 1/6    hard · avg 17%      2.7%  at its level
+<a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems (lab)</a>            44.6%  ▃····●··█·▃▃ beats 1/6    hard · avg 18%      2.7%  at its level
 <a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 2025)</a>      76.4%  ▄··●····▄▄·█ beats 2/6    medium · avg 45%    2.2%  typical
 <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified)</a>          39.9%  ▄·····●█▄▄·▄ beats 1/6    hard · avg 16%      2.2%  at its level
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #81 of 393 · 4.4% of its score</summary>
+<details><summary>chat &amp; writing · #81 of 393 · 4.5% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [Inkling Small (266B-A12B)](inkling-small.md), [Muse Glimmer 30B](muse-glimmer-30b.md) here, though they rank higher overall. Trails [Gemma 4 12B](gemma-4-12b.md), [Gemma 4 26B-A4B](gemma-4-26b-a4b.md), [Mistral Medium 3.5 (128B)](mistral-medium-3-5.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1426.2  ▁▁▁▂▃▃▃▆▆●█▃ beats 279/379  avg 1268      4.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1426.2  ▁▁▁▂▃▃▃▆▆●█▃ beats 279/379  avg 1268      4.5%  blunt
 </pre>
 
 </details>
@@ -72,7 +72,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md) her
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
 <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench (lab)</a>      88.6%  ▄····▄·▄●·█▄ beats 3/6      medium · avg 40%        2.4%  typical
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 135/193  very hard · avg 8.5%    2.3%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 135/193  very hard · avg 8.6%    2.3%  sharp · noisy
 <a href="https://arxiv.org/html/2608.30181v1">AIME 2026</a>                  85.4%  ●·▄·▄▄··█··▄ beats 0/6      medium · avg 56%        1.9%  sharp · maxed out · noisy
 </pre>
 
@@ -95,20 +95,20 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         85.4%  ▁▁▁▁▂▄▆▄▅●█▅ beats 147/208  hard · avg 45%           14%  sharp · several runs
-<a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam (lab)</a>           26.7%  ▄··●▄··▄·▄·▄ beats 1/6      very hard · avg 5.6%    8.2%  at its level · several runs
+<a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam (lab)</a>           26.7%  ▄··●▄··▄·▄·▄ beats 1/6      very hard · avg 5.7%    8.2%  at its level · several runs
 <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified) (lab)</a>      87.0%  ▄●▄▄·▄·····▄ beats 2/6      hard · avg 47%          7.6%  sharp
 <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro (lab)</a>                       86.8%  ▄·····▄▄●·▄█ beats 3/6      medium · avg 53%        4.4%  typical
-<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite</a>                     90.9%  ▃······▅··●▃ beats 5/6      medium · avg 60%        4.1%  typical
+<a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite</a>                     90.9%  ▃······▅··●▃ beats 5/6      medium · avg 61%        4.1%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         20.0%  █··▂▃●▄█▂▃▁▁ beats 35/74    very hard · avg 9.4%    2.6%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2606.15007v1">LongBench v2 (lab)</a>                   61.9%  ▂·▁·▂▂▁▃▄▁█● beats 25/28    very hard · avg 34%     2.5%  at its level
-<a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX (lab)</a>                      83.0%  ▄·····●·▄▄█▄ beats 1/6      medium · avg 57%        2.5%  typical
+<a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX (lab)</a>                      83.0%  ▄·····●·▄▄█▄ beats 1/6      medium · avg 57%        2.4%  typical
 <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecified)</a>    81.4%  ▃······█▃▃·● beats 6/6      medium · avg 44%        2.4%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                12.0%  █▁▁▁▁●▁▄▂▂▁▁ beats 62/135   very hard · avg 5.9%    2.3%  sharp · noisy
 <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose) (lab)</a>   81.7%  ▄▄·▄··▄▄···● beats 5/6      medium · avg 45%        2.1%  typical
 <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge (lab)</a>                 63.8%  ▁··········● beats 4/6      hard · avg 27%          1.9%  at its level
 <a href="https://arxiv.org/html/2606.15007v1">CritPt (lab)</a>                          3.1%  ▄····▄●···█▄ beats 2/6      very hard · avg 1.0%    1.0%  too hard for it · noisy
 <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   84.8%  ▂·▂··▂·●▂·█▆ beats 4/12     medium · avg 64%        0.7%  noisy
-<a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   67.1%  ▄·●▄▄·▄██▄█▄ beats 1/12     easy · avg 65%          0.3%  blunt
+<a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   67.1%  ▄·●▄▄·▄██▄█▄ beats 1/12     easy · avg 66%          0.3%  blunt
 </pre>
 
 </details>
@@ -125,7 +125,7 @@ source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1    4% ▇
 <a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere</a>                               2    1% ▇
 prior: pull toward the middle             0% ▇
-weighted average                        = 69.4
+weighted average                        = 69.3
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

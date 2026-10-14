@@ -6,7 +6,7 @@
 
 Google · released 2026-06 · 11.9B params · apache-2.0
 
-**score 62.4** ±0.8 · #172 of 719 · from 30 benchmark results across 3 sources
+**score 62.3** ±0.8 · #172 of 719 · from 30 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -28,14 +28,14 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 
 <pre>
 test                             result  vs the others in its run   difficulty            counts  why
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal-Bench Hard (lab)</a>         18.0%  ██··█·█·●··█ beats 4/5     very hard · avg 4.7%    5.9%  sharp
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal-Bench Hard (lab)</a>         18.0%  ██··█·█·●··█ beats 4/5     very hard · avg 4.8%    5.9%  sharp
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">τ²-bench Telecom (lab)</a>            54.4%  ▄····█··▄·●▄ beats 4/5     very hard · avg 14%     4.7%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>              75.0%  ▃·▃··▃·····● beats 3/5     medium · avg 42%        3.6%  at its level
-<a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>          69.0%  ▄·▄··▄····●▄ beats 4/5     hard · avg 32%          3.1%  at its level
+<a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>          69.0%  ▄·▄··▄····●▄ beats 4/5     hard · avg 33%          3.1%  at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BFCL V4 (December 2025 archive)</a>   37.4%  ▁▁▁▂▇▆●▆█▂▄▂ beats 48/111  medium · avg 35%        1.4%  at its level
-<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BrowseComp</a>                        10.0%  ▅···●·▃···▃▃ beats 4/7     very hard · avg 10%     1.4%  at its level · noisy
+<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BrowseComp</a>                        10.0%  ▅···●·▃···▃▃ beats 4/7     very hard · avg 11%     1.4%  at its level · noisy
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">τ³-bench</a>                          13.3%  ▃·▃·█·●··▃·▃ beats 5/7     very hard · avg 14%     1.4%  blunt · at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>               77.6%  ▄····▄··▄·●█ beats 3/5     medium · avg 40%        1.2%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>               77.6%  ▄····▄··▄·●█ beats 3/5     medium · avg 41%        1.2%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -74,7 +74,7 @@ test                result  vs the others in its run  difficulty        counts  
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">HMMT February 2026</a>   65.6%  █·▄··▄··●█·▄ beats 4/7    hard · avg 32%      9.4%  sharp · at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IMO-AnswerBench</a>      57.2%  ▄▄···▄·●··█▄ beats 3/6    hard · avg 32%      4.9%  at its level
 <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>    79.7%  ██·█·····●██ beats 3/5    medium · avg 53%    2.8%  at its level
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>      77.5%  ▄·▄▄····●··█ beats 3/5    medium · avg 41%    2.6%  sharp · noisy
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>      77.5%  ▄·▄▄····●··█ beats 3/5    medium · avg 42%    2.6%  sharp · noisy
 </pre>
 
 </details>
@@ -99,7 +99,7 @@ Beats [Qwen3.5 9B](qwen3-5-9b.md) here, though they rank higher overall. Trails 
 
 <pre>
 test        result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BrowseComp</a>   10.0%  ▅···●·▃···▃▃ beats 4/7    very hard · avg 10%    1.4%  at its level · noisy
+<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BrowseComp</a>   10.0%  ▅···●·▃···▃▃ beats 4/7    very hard · avg 11%    1.4%  at its level · noisy
 </pre>
 
 </details>
@@ -108,8 +108,8 @@ test        result  vs the others in its run  difficulty           counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>                   78.8%  █···▄·····●█ beats 3/5    hard · avg 47%          7.1%  sharp · at its level
-<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">Humanity's Last Exam</a>                 13.1%  ▄▄·▄··▄·▄·▄● beats 6/7    very hard · avg 3.8%    7.1%  typical
+<a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>                   78.8%  █···▄·····●█ beats 3/5    hard · avg 47%          7.2%  sharp · at its level
+<a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">Humanity's Last Exam</a>                 13.1%  ▄▄·▄··▄·▄·▄● beats 6/7    very hard · avg 3.9%    7.2%  typical
 <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (lab)</a>                  48.7%  ▂···▂·▃··●▂█ beats 5/13   very hard · avg 30%     5.9%  sharp · at its level
 <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">GPQA (subset unspecified)</a>            72.8%  █···▃···▅·●▃ beats 6/7    hard · avg 45%          5.1%  sharp · at its level
 <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                       77.2%  ▄··█···●··▄▄ beats 3/5    medium · avg 61%        3.6%  typical
@@ -132,7 +132,7 @@ source                                  results  share of the score
 <a name="card3-xhtoken-spark-x2-5-4b"></a><a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">XHToken/Spark-X2.5-4B model card</a>              9   33% ▇▇▇▇
 <a name="card2-google-gemma-4-31b-it"></a><a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">google/gemma-4-31B-it model card (lab)</a>        1    3% ▇
 prior: pull toward the middle                      0% ▇
-weighted average                                 = 62.4
+weighted average                                 = 62.3
 </pre>
 
 <sub>Licences: Gemma Team ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · XHToken/Spark-X2.5-4B model card ([Apache-2.0](https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md)) · google/gemma-4-31B-it model card ([Apache-2.0](../../licenses/google--gemma-4-31B-it.txt))</sub>

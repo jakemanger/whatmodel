@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 10.7B params · llama3.2
 
-**score 42.7** ±1.8 · #489 of 719 · from 11 benchmark results across 4 sources
+**score 42.6** ±1.8 · #489 of 719 · from 11 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -49,9 +49,9 @@ Beats [Gemma 3 4B](gemma-3-4b.md), [CogVLM2 Llama3 Chat 19B](cogvlm2-llama3-chat
 <pre>
 test                                                         result  vs the others in its run  difficulty                counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>                               992.7  ▁▁▂●▂▂▄▅▅▆██ beats 8/145  avg 1068                     19%  blunt
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  4.7900 MM-MT-Bench score (1-10)  ▅··●·█·▃▃··▅ beats 2/9    avg 5.740 MM-MT-Bench s…     10%  sharp · noisy
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o judg…</a>  4.7900 MM-MT-Bench score (1-10)  ▅··●·█·▃▃··▅ beats 2/9    avg 5.748 MM-MT-Bench s…    9.5%  sharp · noisy
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                                   67.1%  ▃···●▃··▅▃▃▃ beats 2/9    easy · avg 74%              6.2%  blunt · at its level
-<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                    23.0%  ●·▂······█▄▄ beats 0/9    medium · avg 52%            5.8%  at its level
+<a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                    23.0%  ●·▂······█▄▄ beats 0/9    medium · avg 52%            5.7%  at its level
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                          24.3%  ▂····●···▂█▆ beats 1/9    medium · avg 53%            5.7%  at its level
 <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                       14.8%  ●·▄▄▄··▄▄▄▄█ beats 0/9    easy · avg 77%              0.5%  blunt · at its level · noisy
 </pre>
@@ -62,8 +62,8 @@ test                                                         result  vs the othe
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                 68.5%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 103/183  easy · avg 76%       19%  at its level
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   24.4%  ▁▁·▁▂▂▄●▄▅▄▄ beats 19/66    hard · avg 31%      9.2%  typical
+<a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                 68.5%  ▁▁▁▁▁▂▃▅●▃▆▃ beats 103/183  easy · avg 77%       19%  at its level
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   24.4%  ▁▁·▁▂▂▄●▄▅▄▄ beats 19/66    hard · avg 31%      9.3%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.0%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 177/276  medium · avg 73%    6.2%  at its level · noisy
 </pre>
 
@@ -80,7 +80,7 @@ source                               results  share of the score
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>        1    9% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    6% ▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 42.7
+weighted average                              = 42.6
 </pre>
 
 <sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

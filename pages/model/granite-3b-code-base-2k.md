@@ -23,7 +23,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   33.1%  ▁·▂▁▂●▅█▄▄▁▂ beats 11/35  medium · avg 64%     24%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   33.1%  ▁·▂▁▂●▅█▄▄▁▂ beats 11/35  medium · avg 65%     24%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                           36.0%  █·▅●▃▃▅▃▃▅·▅ beats 5/15   easy · avg 70%       15%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   21.9%  ▄▇█▃●▇▄▁▇▃·▁ beats 18/35  medium · avg 49%     13%  typical
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                     30.6%  ▃▅●▃▃▅·▃▃▅·▅ beats 3/15   medium · avg 59%     11%  at its level
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              20.2%  ●▁▁▄▂▅▇█▆▂▂▂ beats 0/58   medium · avg 50%     15%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              20.2%  ●▁▁▄▂▅▇█▆▂▂▂ beats 0/58   medium · avg 51%     15%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   33.4%  ▁▁▁▁●▁▁▂▄█▄▃ beats 8/146  easy · avg 83%      2.4%  at its level · noisy
 </pre>
 

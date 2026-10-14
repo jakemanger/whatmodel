@@ -23,7 +23,7 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [DeepSeek R1 Distill Qwen 7B](deepseek-
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   39.6%  ▁·▂▁▂▆▅●▄▄▁▂ beats 18/35  medium · avg 64%     34%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   39.6%  ▁·▂▁▂▆▅●▄▄▁▂ beats 18/35  medium · avg 65%     34%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   26.0%  ▄▇█▃▄●▄▁▇▃·▁ beats 21/35  medium · avg 49%     20%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   27.3%  ▁·▁▁▄██▄●▁▅▅ beats 22/35  medium · avg 56%     18%  sharp
 </pre>
@@ -34,7 +34,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              31.5%  ▂▁▁▄●▅▇█▆▂▂▂ beats 12/58   medium · avg 50%     20%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              31.5%  ▂▁▁▄●▅▇█▆▂▂▂ beats 12/58   medium · avg 51%     20%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   35.5%  ▁▁▁▁▁●▁▂▄█▄▃ beats 11/146  easy · avg 83%      3.0%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   28.5%  ▃·▁●▂▁▂▅█▇▄▁ beats 11/100  medium · avg 68%    2.8%  at its level · noisy
 </pre>

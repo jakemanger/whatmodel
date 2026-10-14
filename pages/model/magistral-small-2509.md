@@ -6,7 +6,7 @@
 
 Mistral · released 2025-09 · 24B params · apache-2.0
 
-**score 57.8** ±1.1 · #219 of 719 · from 14 benchmark results across 6 sources
+**score 57.7** ±1.1 · #220 of 719 · from 14 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -23,7 +23,7 @@ vision &amp; documents  ▁▁▃▂▁▃●▂▆▇█▄   #97 of 147*    8.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   70.9%  ▄█▄······●·▄ beats 4/5    medium · avg 50%    5.5%  at its level
+<a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unspecif…</a>   70.9%  ▄█▄······●·▄ beats 4/5    medium · avg 50%    5.4%  at its level
 <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspecifie…</a>   60.7%  ▁···▁▁▃▅▅●▄▅ beats 25/37  medium · avg 41%    3.9%  at its level · small run
 </pre>
 
@@ -37,7 +37,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324]
 test                      result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>            77.3%  █▃·····●···▃ beats 4/5     medium · avg 49%         15%  sharp · at its level
 <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>            86.1%  █▃·····●···▃ beats 4/5     medium · avg 60%         12%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   28.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 62/193  very hard · avg 8.5%    9.4%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   28.1%  ▃▃▄▃●▃▇▇█▃▂▅ beats 62/193  very hard · avg 8.6%    9.4%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -81,7 +81,7 @@ source                                    results  share of the score
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             1    6% ▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 57.8
+weighted average                                   = 57.7
 </pre>
 
 <sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Apriel-1.5-15b-Thinker ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

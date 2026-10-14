@@ -6,7 +6,7 @@
 
 OpenAI · released 2024-09 · proprietary
 
-**score 62.8** ±0.6 · comparison only: no current run option verified · from 27 benchmark results across 13 sources
+**score 62.7** ±0.6 · comparison only: no current run option verified · from 27 benchmark results across 13 sources
 
 ## What it's good at
 
@@ -56,7 +56,7 @@ Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md), [MiMo-V2-Flash (309B-A15B)](mim
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1388.5  ▁▁▁▂▃▃▃▆▆●█▃ beats 231/379  avg 1268            3.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1388.5  ▁▁▁▂▃▃▃▆▆●█▃ beats 231/379  avg 1268            3.6%  blunt
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   90.4%  ▂▁▁▅█▅▄▃▃▅▃● beats 59/60    medium · avg 52%    3.3%  sharp
 </pre>
 
@@ -68,9 +68,9 @@ Beats [MiniMax-M2.1](minimax-m2-1.md) here, though they rank higher overall. Tra
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         81.6%  ▂▂▅▆▄█▆●▅▂▃▄ beats 67/92   hard · avg 32%          4.4%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         81.6%  ▂▂▅▆▄█▆●▅▂▃▄ beats 67/92   hard · avg 33%          4.4%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   84.5%  ▁▁▁▆█▂▇▇▄··● beats 37/38   hard · avg 34%          4.0%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             31.1%  ▃▃▄▃▃●▇▇█▃▂▅ beats 66/193  very hard · avg 8.5%    3.5%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             31.1%  ▃▃▄▃▃●▇▇█▃▂▅ beats 66/193  very hard · avg 8.6%    3.5%  sharp · at its level · noisy
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MATH-500 (simple-evals) (lab)</a>        85.5%  ▃··▅●▃···▃·█ beats 3/9     medium · avg 61%        2.4%  sharp
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (lab)</a>            90.8%  ▁····▁▅▁█●▃▁ beats 13/16   easy · avg 82%          0.9%  blunt
 </pre>
@@ -82,14 +82,14 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>   71.4%  ▁▁▃▆██▁▁·●▁▁ beats 54/57   hard · avg 18%         8.9%  sharp · at its level
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (lab)</a>    73.3%  █▃▃█·▃▃▅●▃▃▅ beats 12/16   hard · avg 40%         8.1%  sharp · at its level
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (lab)</a>    73.3%  █▃▃█·▃▃▅●▃▃▅ beats 12/16   hard · avg 40%         8.0%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   92.8%  ▁·▁▁▄▄▄▅█▄▂● beats 53/53   easy · avg 77%         7.3%  typical
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         50.3%  ▁▁▁▁▂▄●▄▅▇█▅ beats 70/208  hard · avg 40%         6.3%  sharp · at its level
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-08-31</a>                 66.0%  ▄█·▄·▄▄·▄··● beats 7/7     medium · avg 42%       2.1%  at its level
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MMLU (simple-evals, zero-shot CoT…</a>   90.8%  ▂▂·█▄▄▂·●▂·▂ beats 14/16   easy · avg 80%         1.9%  typical
 <a href="https://arxiv.org/html/2412.16720v2#S6.T17">MMMLU (lab)</a>                          86.7%  ▂▁▁▂▃▂▄▄▅█●▃ beats 39/46   medium · avg 66%       1.3%  small run
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">SimpleQA (simple-evals) (lab)</a>        42.4%  ▄·▁▁▁▁··●▁·▁ beats 11/14   hard · avg 18%         0.3%  at its level · noisy
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals) (l…</a>   74.8%  ●▂▄▆▆█·▂···▄ beats 0/16    easy · avg 78%         0.3%  blunt
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals) (l…</a>   74.8%  ●▂▄▆▆█·▂···▄ beats 0/16    easy · avg 79%         0.3%  blunt
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   96.7%  ▁▁▂▃▄▄█●▃▂▂▁ beats 98/140  very easy · avg 94%    0.1%  blunt · maxed out · noisy
 </pre>
 
@@ -115,7 +115,7 @@ source                                    results  share of the score
 <a name="paper-2412.16720v2"></a><a href="https://arxiv.org/html/2412.16720v2#S6.T17">OpenAI (lab)</a>                                    1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 62.8
+weighted average                                   = 62.7
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · OpenAI simple-evals README benchmark results ([MIT](../../licenses/openai-simple-evals-MIT.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · SciCode leaderboard ([Apache-2.0](../../licenses/scicode-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

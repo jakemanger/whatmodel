@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · proprietary
 
-**score 61.3** ±2.3 · #203 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 61.2** ±2.3 · #205 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Alibaba · released 2025-04 · proprietary
 
 <pre>
 task  vs the others          rank  counts  tests
-math  ▁▂▃▅▆▅●█▄▁▁▁   #147 of 400*    8.2%      1
+math  ▁▂▃▅▆▅●█▄▁▁▁   #147 of 400*    8.1%      1
 </pre>
 
-<details><summary>math · #147 of 400 · 8.2% of its score</summary>
+<details><summary>math · #147 of 400 · 8.1% of its score</summary>
 
 Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank higher overall. Trails [Nemotron 3 Nano 30B-A3B](nemotron-3-nano-30b-a3b.md), [Olmo 3 32B Think](olmo-3-32b-think.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   89.6%  ▄█·▄····●▄·█ beats 4/7    easy · avg 76%    8.2%  typical
+<a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   89.6%  ▄█·▄····●▄·█ beats 4/7    easy · avg 76%    8.1%  typical
 </pre>
 
 </details>
@@ -46,7 +46,7 @@ source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        1   89% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2505.22113v1-thinkbench"></a><a href="https://arxiv.org/html/2505.22113v1">THINK-Bench: Evaluating Thinking Effici…</a>        1    8% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 61.3
+weighted average                                   = 61.2
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

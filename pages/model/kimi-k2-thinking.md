@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2025-11 · 1000B params (32B active) · modified-mit
 
-**score 67.0** ±1.1 · #112 of 719 · from 13 benchmark results across 5 sources
+**score 66.9** ±1.1 · #112 of 719 · from 13 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -18,7 +18,7 @@ agent tasks     ▁▁▃▆█▆●▅▅▄▃▁    #115 of 300     26%     
 coding          ▁▁▁▃▆██▇●▄▃▁   #124 of 458*     24%      2
 chat &amp; writing  ▁▁▁▃▅▄▅█▆▆●▃    #77 of 393*     11%      1
 math            ▁▂▃▅▆▅▄●▄▁▁▁   #101 of 398*     10%      2
-web search      ██···█····●█       #2 of 5*    3.9%      1
+web search      ██···█····●█       #2 of 5*    3.8%      1
 </pre>
 
 <details><summary>agent tasks · #115 of 300 · 26% of its score</summary>
@@ -27,10 +27,10 @@ Beats [o3-pro](o3-pro.md), [o3](o3.md), [GPT-5 mini](gpt-5-mini.md) here, though
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   35.7%  ▃··▃·▃▃██●▃▅ beats 11/14  very hard · avg 5.8%     10%  sharp · at its level
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>                   74.3%  ●······▄█·▄▄ beats 0/5    medium · avg 46%        7.3%  typical
+<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   35.7%  ▃··▃·▃▃██●▃▅ beats 11/14  very hard · avg 5.9%     10%  sharp · at its level
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>                   74.3%  ●······▄█·▄▄ beats 0/5    medium · avg 46%        7.2%  typical
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">Terminal-Bench 2.0</a>                   35.7%  ▂▂▅▅●███▆▂▃▃ beats 9/36   very hard · avg 11%     5.2%  at its level · small run
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp</a>                           41.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 14/42  hard · avg 17%          3.9%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp</a>                           41.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 14/42  hard · avg 17%          3.8%  at its level · small run
 </pre>
 
 </details>
@@ -41,8 +41,8 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here,
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1321.4  ▁▂▄●▅█▄▇▆▄▁▁ beats 22/119  avg 981            19%  sharp
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   70.7%  ▁··▁·▁▁▁▆█●█ beats 32/45   hard · avg 32%    4.8%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1321.4  ▁▂▄●▅█▄▇▆▄▁▁ beats 22/119  avg 983            19%  sharp
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   70.7%  ▁··▁·▁▁▁▆█●█ beats 32/45   hard · avg 32%    4.9%  at its level
 </pre>
 
 </details>
@@ -64,19 +64,19 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [N
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   83.1%  ▃▃▄▃▃▃▇●█▃▂▅ beats 119/193  very hard · avg 8.5%    7.8%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   83.1%  ▃▃▄▃▃▃▇●█▃▂▅ beats 119/193  very hard · avg 8.6%    7.8%  sharp · noisy
 <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025</a>         89.2%  ▁▁····▁▅▃●▇▁ beats 11/23    medium · avg 65%        2.0%  noisy
 </pre>
 
 </details>
 
-<details><summary>web search · #2 of 5 · 3.9% of its score</summary>
+<details><summary>web search · #2 of 5 · 3.8% of its score</summary>
 
 Beats [Kimi K2.5](kimi-k2-5.md) here, though they rank higher overall.
 
 <pre>
 test        result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp</a>   41.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 14/42  hard · avg 17%    3.9%  at its level · small run
+<a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp</a>   41.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 14/42  hard · avg 17%    3.8%  at its level · small run
 </pre>
 
 </details>
@@ -105,7 +105,7 @@ source                                    results  share of the score
 <a name="paper-2601.11868v1"></a><a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench: Benchmarking Agents on …</a>        1   10% ▇
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 67.0
+weighted average                                   = 66.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · stepfun-ai/Step-3.5-Flash model card ([Apache-2.0](../../licenses/stepfun-ai--Step-3.5-Flash.txt)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt))</sub>

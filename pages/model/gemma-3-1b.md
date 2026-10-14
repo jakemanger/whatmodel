@@ -41,7 +41,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">HumanEval (lab)</a>                      41.5%  ▁▁▁▁▁▃●▅█▃▂▁ beats 58/190  easy · avg 85%      5.8%  sharp · at its level
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MBPP (lab)</a>                           35.2%  ▁▁▁●▅█▄▅▃▁▂▁ beats 7/81    easy · avg 72%      2.7%  at its level
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">LiveCodeBench (version unspecifie…</a>    1.9%  ●···▁▁▃▅▅█▄▅ beats 0/37    hard · avg 25%      1.0%  too hard for it
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIRD-SQL (dev) (lab)</a>                  6.4%  ●·······▂▂█▆ beats 0/11    medium · avg 44%    0.7%  typical
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIRD-SQL (dev) (lab)</a>                  6.4%  ●·······▂▂█▆ beats 0/11    medium · avg 45%    0.7%  typical
 </pre>
 
 </details>
@@ -55,7 +55,7 @@ test                              result  vs the others in its run  difficulty  
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFEval (aggregation unspecified)</a>   62.9%  ▄····●▄···▄█ beats 1/6    easy · avg 82%         3.2%  at its level · several runs
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures</a>       63.2%  █·●··█·██·██ beats 1/6    very easy · avg 87%    2.4%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>          60.6%  ▁▃▁●▁▄▁▁█▃▃▁ beats 4/22   easy · avg 80%         1.3%  at its level
-<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>     20.4%  ▃▃·●▁█▇▅·▁·▁ beats 4/22   medium · avg 42%       1.0%  typical
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>     20.4%  ▃▃·●▁█▇▅·▁·▁ beats 4/22   medium · avg 43%       1.0%  typical
 </pre>
 
 </details>
@@ -71,7 +71,7 @@ test                       result  vs the others in its run   difficulty        
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MGSM</a>                        43.6%  █···●▄··▄··▄ beats 3/6     easy · avg 77%          4.4%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                    45.2%  ▄··●▄·▄···▄▄ beats 2/6     easy · avg 80%          1.6%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025</a>                    1.0%  ▄●··▄···▄··█ beats 2/6     hard · avg 33%          0.6%  sharp · too hard for it · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>     1.1%  ●▃▄▃▃▃▇▇█▃▂▅ beats 10/193  very hard · avg 8.5%    0.0%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>     1.1%  ●▃▄▃▃▃▇▇█▃▂▅ beats 10/193  very hard · avg 8.6%    0.0%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -86,16 +86,16 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecified)</a>    20.5%  ▄·●·█······█ beats 1/6     medium · avg 40%        2.7%  several runs
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro</a>                             14.0%  ●···█·██·███ beats 0/6     medium · avg 54%        2.3%  small run · several runs
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         19.9%  ●▁▁▁▂▄▆▄▅▇█▅ beats 3/208   hard · avg 38%          2.1%  sharp · too hard for it · small run · s…
-<a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision makin…</a>   21.4%  ●······█··██ beats 0/3     medium · avg 62%        2.1%  at its level
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">Global-MMLU-Lite (lab)</a>               34.2%  ●···▂·▂▂▂·██ beats 0/12    medium · avg 65%        2.0%  typical
-<a href="https://ai.google.dev/gemma/docs/core/model_card_3">FACTS Grounding (lab)</a>                36.4%  ●········▄·█ beats 0/3     easy · avg 73%          1.9%  at its level
+<a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision makin…</a>   21.4%  ●······█··██ beats 0/3     medium · avg 63%        2.1%  at its level
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">Global-MMLU-Lite (lab)</a>               34.2%  ●···▂·▂▂▂·██ beats 0/12    medium · avg 66%        2.0%  typical
+<a href="https://ai.google.dev/gemma/docs/core/model_card_3">FACTS Grounding (lab)</a>                36.4%  ●········▄·█ beats 0/3     easy · avg 74%          1.8%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   37.5%  ▂▄●▃█▄▃▆▃▅▂▂ beats 12/81   medium · avg 58%        1.8%  blunt · at its level
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMMLU</a>                                34.4%  ▄···●·▄▄··▄█ beats 1/6     medium · avg 59%        1.7%  typical
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   15.7%  ▁▁▁●▁▂▂▃▄▆█▃ beats 5/97    hard · avg 32%          1.5%  blunt
-<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       43.8%  ●▃▂·▃▃·▅█▂▅▂ beats 1/21    medium · avg 63%        1.0%  blunt · at its level
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       43.8%  ●▃▂·▃▃·▅█▂▅▂ beats 1/21    medium · avg 64%        1.0%  blunt · at its level
 <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GPQA (subset unspecified)</a>            21.1%  ●······▄▄█·▄ beats 0/6     hard · avg 39%          0.8%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2503.19786v1">Big Bench Extra Hard micro avg (l…</a>    7.2%  ●▄·█▄·▄·▄·▄▄ beats 0/8     hard · avg 19%          0.8%  too hard for it · small run
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   54.2%  ▃▁▁▁▁▁▁●▂█▅▁ beats 74/276  medium · avg 73%        0.7%  noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   54.2%  ▃▁▁▁▁▁▁●▂█▅▁ beats 74/276  medium · avg 73%        0.8%  noisy
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                        2.2%  ●▄▄▆█▆███·▂█ beats 0/32    very hard · avg 7.4%    0.7%  too hard for it
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   43.7%  ▁▁▁▁▁▁●▂▄█▄▃ beats 15/146  easy · avg 83%          0.7%  at its level · noisy
 <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                 9.6%  ●▁▁▃▃▃▁█▁▃·▄ beats 0/21    hard · avg 32%          0.7%  blunt

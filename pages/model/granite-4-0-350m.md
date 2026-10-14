@@ -27,7 +27,7 @@ Beats [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [QwQ-32B-Preview](qwq-32b-pre
 <pre>
 test                             result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   19.0%  ▁▁▁●██▅▅▆▂▂▂ beats 4/77    hard · avg 32%      1.8%  typical
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BFCL v3 (lab)</a>                     39.3%  ▁▁▁▁●▃▅█▆▅▄▁ beats 14/170  medium · avg 61%    1.7%  blunt · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BFCL v3 (lab)</a>                     39.3%  ▁▁▁▁●▃▅█▆▅▄▁ beats 14/170  medium · avg 62%    1.7%  blunt · at its level
 </pre>
 
 </details>
@@ -38,7 +38,7 @@ Beats [Granite 4.0 H 350M](granite-4-0-h-350m.md) here, though they rank higher 
 
 <pre>
 test                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval (lab)</a>      39.0%  ▁▁▁▁▁▃●▅█▃▂▁ beats 52/190  very easy · avg 90%     12%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval (lab)</a>      39.0%  ▁▁▁▁▁▃●▅█▃▂▁ beats 52/190  very easy · avg 91%     12%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval+ (lab)</a>     37.0%  ▁·▁▁▂▃●▄█▅▄▃ beats 28/145  very easy · avg 88%     10%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MBPP (lab)</a>           48.0%  ▁▁▁▄●█▄▅▃▁▂▁ beats 27/81   easy · avg 82%         5.0%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MultiPL-E (lab)</a>      16.0%  ●··▄·▅▅▇▄█▃▄ beats 1/31    medium · avg 54%       3.5%  typical
@@ -68,11 +68,11 @@ Beats [Llama 2 13B Chat](llama-2-13b-chat.md), [DeepSeek-Coder 1.3B Base](deepse
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GSM8K (lab)</a>                          30.7%  ▂▂▂●▅▆▅▇█▇▄▃ beats 22/146  very easy · avg 89%      10%  sharp · at its level
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GSM-Symbolic (lab)</a>                   26.8%  ●▃····▃·▅▅█▃ beats 0/10    easy · avg 80%          4.9%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GSM-Symbolic (lab)</a>                   26.8%  ●▃····▃·▅▅█▃ beats 0/10    easy · avg 80%          4.8%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">DeepMind Mathematics (lab)</a>            8.5%  ●····▅·█▃▃·▅ beats 1/10    medium · avg 54%        4.0%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">Minerva MATH (lab)</a>                   13.0%  ▄·●▂·██▆·▆▄▄ beats 2/21    medium · avg 62%        2.9%  typical
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MGSM, 5 languages (en, es, fr, ja…</a>   14.7%  ●·▄▄██···█·▄ beats 0/10    medium · avg 49%        2.5%  typical
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              0.3%  ●▃▄▃▃▃▇▇█▃▂▅ beats 2/193   very hard · avg 8.5%    0.0%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              0.3%  ●▃▄▃▃▃▇▇█▃▂▅ beats 2/193   very hard · avg 8.6%    0.0%  sharp · too hard for it · noisy
 </pre>
 
 </details>

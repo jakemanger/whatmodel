@@ -6,7 +6,7 @@
 
 Databricks · released 2024-03 · 132B params (36B active) · databricks-open-model
 
-**score 45.8** ±0.7 · #428 of 719 · from 13 benchmark results across 9 sources
+**score 45.7** ±0.6 · #428 of 719 · from 13 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -64,7 +64,7 @@ Trails [Qwen3 0.6B](qwen3-0-6b.md), [Gemma 7B (base)](gemma-7b-base.md), [Qwen2.
 
 <pre>
 test          result  vs the others in its run  difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   11.7%  ▂▂●▆▄█▆▃▅▂▃▄ beats 9/92   hard · avg 32%    5.5%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   11.7%  ▂▂●▆▄█▆▃▅▂▃▄ beats 9/92   hard · avg 33%    5.5%  sharp
 </pre>
 
 </details>
@@ -73,7 +73,7 @@ test          result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                          result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  32.5989 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 20/52   avg 45.199 WB-Score    4.3%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  32.5989 WB-Score  ▁·▁▁·▃█●▇▆▅▆ beats 20/52   avg 45.277 WB-Score    4.3%  sharp
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   32.9%  ▁▁▁▁●▄▆▄▅▇█▅ beats 21/208  hard · avg 40%         3.0%  sharp
 <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard</a>                                 48.5%  ▁▁▁▁▂▄●▅█▃▄▁ beats 42/129  medium · avg 67%       2.8%  sharp · at its level · small run
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>             91.7%  ▁▁▂▃●▄█▆▃▂▂▁ beats 34/140  very easy · avg 94%    0.3%  blunt · maxed out · noisy
@@ -97,7 +97,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 45.8
+weighted average                                   = 45.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · HuggingFaceH4 zephyr-orpo-141b-A35b-v0.1 model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

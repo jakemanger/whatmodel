@@ -6,7 +6,7 @@
 
 Google · released 2025-02 · proprietary
 
-**score 60.7** ±1.3 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 60.6** ±1.3 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -24,7 +24,7 @@ Beats [Qwen3.5 9B](qwen3-5-9b.md), [Devstral 2 (2512)](devstral-2.md), [Qwen3-VL
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   35.6%  ▂·▂▃▅▂●█▆▄▂▂ beats 18/49  very hard · avg 8.5%     45%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   35.6%  ▂·▂▃▅▂●█▆▄▂▂ beats 18/49  very hard · avg 8.6%     45%  sharp · at its level
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md) here, though they r
 
 <pre>
 test          result  vs the others in its run  difficulty      counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   83.5%  ▂▂▅▆▄█▆▃●▂▃▄ beats 70/92  hard · avg 32%     25%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>   83.5%  ▂▂▅▆▄█▆▃●▂▃▄ beats 70/92  hard · avg 33%     25%  sharp
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ source                             results  share of the score
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>            1   45% ▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1    1% ▇
 prior: pull toward the middle                 1% ▇
-weighted average                            = 60.7
+weighted average                            = 60.6
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

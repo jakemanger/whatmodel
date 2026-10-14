@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 1.07B params · bigscience-bloom-rail-1.0
 
-**score 10.6** ±1.4 · #706 of 719 · from 11 benchmark results across 3 sources
+**score 10.7** ±1.4 · #706 of 719 · from 11 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -54,7 +54,7 @@ source                                    results  share of the score
 <a name="paper-2211.05100v4"></a><a href="https://arxiv.org/html/2211.05100v4">BLOOM: A 176B-Parameter Open-Access Mul…</a>        1   15% ▇▇
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-1b1/results_2024-04-18%2002%3A15%3A36.261617.json">Hallucinations Leaderboard results</a>              4    8% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 10.6
+weighted average                                   = 10.7
 </pre>
 
 <sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

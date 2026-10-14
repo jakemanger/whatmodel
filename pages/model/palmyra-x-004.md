@@ -6,7 +6,7 @@
 
 Writer · released 2024-10 · proprietary
 
-**score 51.8** ±3.5 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 51.7** ±3.5 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -39,7 +39,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2   75% ▇▇▇▇▇▇▇▇▇
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard</a>                       1   20% ▇▇
 prior: pull toward the middle                        6% ▇
-weighted average                                   = 51.8
+weighted average                                   = 51.7
 </pre>
 
 <sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>

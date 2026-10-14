@@ -21,7 +21,7 @@
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">MedQA (USMLE, 4 options)</a>             55.4%  ▁▁··▄▁▁··▄▃● beats 14/17    easy · avg 76%       34%  sharp · at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              35.5%  ▂▁▁▄▂●▇█▆▂▂▂ beats 16/58    medium · avg 50%     30%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              35.5%  ▂▁▁▄▂●▇█▆▂▂▂ beats 16/58    medium · avg 51%     30%  at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/01-ai/Yi-1.5-9B/results_2024-05-16%2007%3A57%3A23.098609.json">MedMCQA</a>                              53.3%  ▂▂··▄▄▂▂·▄█● beats 14/17    medium · avg 68%     18%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   68.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 145/276  medium · avg 73%    5.8%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   79.4%  ▃·▁▁▂▁▂▅█●▄▁ beats 69/100   medium · avg 68%    4.4%  at its level · noisy

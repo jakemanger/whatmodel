@@ -26,7 +26,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   49.0%  ▃··▁▂▂▃▂●▃▄▂ beats 24/47  medium · avg 54%    2.4%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   19.2%  █▂▁▁▂▂▂●▅▅▅▇ beats 19/47  medium · avg 36%    1.9%  sharp · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   19.2%  █▂▁▁▂▂▂●▅▅▅▇ beats 19/47  medium · avg 36%    2.0%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   30.9%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 23/47  hard · avg 33%      1.7%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   78.6%  ▁▁▁······▁▃● beats 41/47  easy · avg 67%      0.0%  blunt · at its level · noisy
 </pre>

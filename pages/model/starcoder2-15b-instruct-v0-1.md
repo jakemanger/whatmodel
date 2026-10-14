@@ -6,7 +6,7 @@
 
 BigCode · released 2024-04 · 15.96B params · bigcode-openrail-m
 
-**score 45.5** ±0.8 · #436 of 719 · from 5 benchmark results across 2 sources
+**score 45.4** ±0.8 · #436 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -34,7 +34,7 @@ test        result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                           result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   43.7%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 38/58  medium · avg 50%    6.4%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   43.7%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 38/58  medium · avg 51%    6.4%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>   36.7%  ▃▂·▆▆█●▆▅▃▃▃ beats 20/33  medium · avg 41%    6.4%  at its level
 </pre>
 
@@ -49,7 +49,7 @@ source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3   87% ▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper (lab)</a>                        2   13% ▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 45.5
+weighted average                                   = 45.4
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>

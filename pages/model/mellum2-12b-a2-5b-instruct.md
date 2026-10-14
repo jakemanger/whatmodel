@@ -6,7 +6,7 @@
 
 JetBrains · released 2026-05 · 12.15B params (2.5B active) · apache-2.0
 
-**score 50.2** ±1.7 · #340 of 719 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.1** ±1.7 · #340 of 719 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -25,7 +25,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL V4 (December 2025 archive) (…</a>   44.2%  ▁▁▁▂▇▆▆●█▂▄▂ beats 60/111   medium · avg 36%    6.7%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL V4 (December 2025 archive) (…</a>   44.2%  ▁▁▁▂▇▆▆●█▂▄▂ beats 60/111   medium · avg 37%    6.7%  at its level
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL v3 (lab)</a>                        66.3%  ▁▁▁▁▁▃▅█▆●▄▁ beats 129/170  medium · avg 56%    3.6%  blunt · at its level
 </pre>
 
@@ -38,7 +38,7 @@ Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-inst
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">LiveCodeBench v6 (window unspecif…</a>   37.2%  ▂▃●▄▅██▅▄▇▃▆ beats 6/65   hard · avg 34%       20%  at its level
-<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MultiPL-E (lab)</a>                      67.1%  ▃··▄·▅▅●▄█▃▄ beats 17/31  medium · avg 55%    5.1%  at its level
+<a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MultiPL-E (lab)</a>                      67.1%  ▃··▄·▅▅●▄█▃▄ beats 17/31  medium · avg 56%    5.1%  at its level
 </pre>
 
 </details>
@@ -73,7 +73,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-jetbrains-mellum2-12b-a2-5b-instruct"></a><a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">JetBrains/Mellum2-12B-A2.5B-Instruct mo…</a>        8   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 50.2
+weighted average                                   = 50.1
 </pre>
 
 <sub>Licences: JetBrains/Mellum2-12B-A2.5B-Instruct model card ([Apache-2.0](https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md))</sub>

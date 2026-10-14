@@ -6,7 +6,7 @@
 
 Poolside · released 2026-04 · 33B params (3B active) · apache-2.0
 
-**score 64.6** ±1.5 · #150 of 719 · from 8 benchmark results across 3 sources
+**score 64.5** ±1.5 · #150 of 719 · from 8 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -22,7 +22,7 @@ coding       ▁▁▁▃▆██▇●▄▃▁   #128 of 458     79%      4
 
 <pre>
 test                          result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 75/131  hard · avg 27%          24%  sharp · at its level · small run · seve…
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 75/131  hard · avg 28%          24%  sharp · at its level · small run · seve…
 <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       35.7%  ▂▂▅▅●███▆▂▃▃ beats 8/36    very hard · avg 11%     20%  at its level · small run · several runs
 <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   57.7%  ▁··▁▃▂●▇█▃▃▁ beats 18/60   hard · avg 28%          18%  at its level · small run · several runs
 <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Pro (lab)</a>            46.3%  ●▃▃·▃·▅▅▅█▃▃ beats 1/15    hard · avg 30%         3.5%  blunt · at its level · small run
@@ -36,8 +36,8 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gem
 
 <pre>
 test                          result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1301.9  ▁▂▄●▅█▄▇▆▄▁▁ beats 21/119  avg 981            34%  sharp
-<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 75/131  hard · avg 27%     24%  sharp · at its level · small run · seve…
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1301.9  ▁▂▄●▅█▄▇▆▄▁▁ beats 21/119  avg 983            34%  sharp
+<a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 75/131  hard · avg 28%     24%  sharp · at its level · small run · seve…
 <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   57.7%  ▁··▁▃▂●▇█▃▃▁ beats 18/60   hard · avg 28%     18%  at its level · small run · several runs
 <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Pro (lab)</a>            46.3%  ●▃▃·▃·▅▅▅█▃▃ beats 1/15    hard · avg 30%    3.5%  blunt · at its level · small run
 </pre>
@@ -54,7 +54,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   34% ▇▇▇▇
 <a name="report-2605.27605v1"></a><a href="https://arxiv.org/html/2605.27605v1">Poolside (lab)</a>                                  3   30% ▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 64.6
+weighted average                                   = 64.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Poolside ([CC BY-SA 4.0](../../licenses/report-2605.27605v1.txt))</sub>

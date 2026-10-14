@@ -6,7 +6,7 @@
 
 Fireworks AI · released 2024-02 · 46.7B params (12.9B active) · apache-2.0
 
-**score 41.5** ±6.4 · #680 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.5** ±6.4 · #682 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -14,16 +14,16 @@ Fireworks AI · released 2024-02 · 46.7B params (12.9B active) · apache-2.0
 
 <pre>
 task         vs the others          rank  counts  tests
-agent tasks  ▁▁●▆█▆▅▄▄▃▂▁   #314 of 334*     81%      1
+agent tasks  ▁▁●▆█▆▅▄▄▃▂▁   #314 of 334*     82%      1
 </pre>
 
-<details><summary>agent tasks · #314 of 334 · 81% of its score</summary>
+<details><summary>agent tasks · #314 of 334 · 82% of its score</summary>
 
 Beats [GLM-4 9B Chat](glm-4-9b-chat.md), [DBRX Instruct](dbrx-instruct.md), [Olmo 3 7B Instruct](olmo-3-7b-instruct.md) here, though they rank higher overall. Trails [Granite 4.0 H 350M](granite-4-0-h-350m.md), [Qwen3 0.6B](qwen3-0-6b.md), [Qwen2.5 1.5B Instruct](qwen2-5-1-5b.md) here, though they rank lower overall.
 
 <pre>
 test     result  vs the others in its run   difficulty        counts  why
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>   40.7%  ▁▁▁▁▁●▅█▅▄▁▁ beats 15/114  medium · avg 52%     81%  blunt · at its level
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>   40.7%  ▁▁▁▁▁●▅█▅▄▁▁ beats 15/114  medium · avg 52%     82%  blunt · at its level
 </pre>
 
 </details>
@@ -34,8 +34,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   81% ▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle                       19% ▇▇
+<a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   82% ▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle                       18% ▇▇
 weighted average                                   = 41.5
 </pre>
 

@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-05 · 19.5B params · cogvlm2
 
-**score 46.6** ±6.7 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 46.5** ±6.7 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="first-party-zai-cogvlm2-scores"></a><a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">Zhipu AI (lab)</a>                       3   80% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            20% ▇▇
-weighted average                        = 46.6
+weighted average                        = 46.5
 </pre>
 
 ## How to run it

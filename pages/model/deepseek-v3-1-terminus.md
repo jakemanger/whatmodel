@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-09 · 671B params (37B active) · mit
 
-**score 66.5** ±1.3 · #121 of 719 · from 11 benchmark results across 2 sources
+**score 66.4** ±1.3 · #121 of 719 · from 11 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -28,8 +28,8 @@ Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Verified (lab)</a>             68.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 71/131  hard · avg 24%         9.2%  sharp · at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp-ZH (lab)</a>                  45.0%  ▁▁▁▁▁▃·▁●▅▄█ beats 10/23   hard · avg 16%         7.1%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Multilingual (lab)</a>         57.8%  ▁··▁▃▂●▇█▃▃▁ beats 19/60   hard · avg 24%         6.0%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp (lab)</a>                     38.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 12/42   very hard · avg 14%    5.4%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Multilingual (lab)</a>         57.8%  ▁··▁▃▂●▇█▃▃▁ beats 19/60   hard · avg 25%         6.0%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp (lab)</a>                     38.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 12/42   very hard · avg 14%    5.3%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Terminal-Bench (pre-2.0 release) …</a>   36.7%  ▃·▃···▃▃▅·●█ beats 6/10    very hard · avg 14%    4.2%  at its level · small run
 </pre>
 
@@ -43,7 +43,7 @@ Beats [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [Qwen3.5
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Aider polyglot (225 exercises, tw…</a>   76.1%  ▂▁▁▃▆▃▄▆█▃●▂ beats 63/71   very hard · avg 13%     22%  sharp · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Verified (lab)</a>             68.4%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 71/131  hard · avg 24%         9.2%  sharp · at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Multilingual (lab)</a>         57.8%  ▁··▁▃▂●▇█▃▃▁ beats 19/60   hard · avg 24%         6.0%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Multilingual (lab)</a>         57.8%  ▁··▁▃▂●▇█▃▃▁ beats 19/60   hard · avg 25%         6.0%  at its level · small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">LiveCodeBench (version unspecifie…</a>   74.9%  ▁···▁▁▃▅▅█▄● beats 34/37   medium · avg 40%       5.5%  at its level · small run
 </pre>
 
@@ -65,7 +65,7 @@ test            result  vs the others in its run    difficulty  counts  why
 <pre>
 test                 result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp-ZH (lab)</a>   45.0%  ▁▁▁▁▁▃·▁●▅▄█ beats 10/23  hard · avg 16%         7.1%  at its level · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp (lab)</a>      38.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 12/42  very hard · avg 14%    5.4%  at its level · small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp (lab)</a>      38.5%  ▂·▄▁▂▃●▄█▂▃▄ beats 12/42  very hard · avg 14%    5.3%  at its level · small run
 </pre>
 
 </details>
@@ -75,7 +75,7 @@ test                 result  vs the others in its run  difficulty           coun
 <pre>
 test                        result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">GPQA Diamond (lab)</a>           80.7%  ▁▁▁▁▂▄▅▅█●█▄ beats 201/310  hard · avg 43%           12%  sharp · small run
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Humanity's Last Exam (lab)</a>   21.7%  ▁▁▁▃▆▆●██▆▁▃ beats 51/104   very hard · avg 4.8%    6.5%  small run
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Humanity's Last Exam (lab)</a>   21.7%  ▁▁▁▃▆▆●██▆▁▃ beats 51/104   very hard · avg 4.9%    6.4%  small run
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">MMLU-Pro (lab)</a>               85.0%  ▁▁·▁▁▁▃▂▄▅●▁ beats 170/188  medium · avg 58%        6.0%  small run
 </pre>
 
@@ -90,7 +90,7 @@ source                                   results  share of the score
 <a name="card-deepseek-ai-deepseek-v3-1-terminus"></a><a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">DeepSeek-V3.1-Terminus model card (lab)</a>       10   84% ▇▇▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                    1   15% ▇▇
 prior: pull toward the middle                       1% ▇
-weighted average                                  = 66.5
+weighted average                                  = 66.4
 </pre>
 
 <sub>Licences: DeepSeek-V3.1-Terminus model card ([MIT](https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

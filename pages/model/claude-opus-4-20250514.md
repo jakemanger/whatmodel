@@ -6,7 +6,7 @@
 
 Anthropic · released 2025-05 · proprietary
 
-**score 67.2** ±0.9 · comparison only: no current run option verified · from 18 benchmark results across 10 sources
+**score 67.1** ±0.9 · comparison only: no current run option verified · from 18 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -29,7 +29,7 @@ Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md) here, though they rank hi
 <pre>
 test                   result  vs the others in its run  difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>      70.7%  ▁··▁·▁▂▁●█▄▁ beats 8/29   hard · avg 19%           16%  sharp · at its level
-<a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md">τ²-bench Telecom</a>        57.0%  ██··█·██··●█ beats 5/6    very hard · avg 9.5%    7.1%  sharp · at its level
+<a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md">τ²-bench Telecom</a>        57.0%  ██··█·██··●█ beats 5/6    very hard · avg 9.6%    7.1%  sharp · at its level
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4_anthropic_2025-05-22/submission.json">τ-bench Retail (lab)</a>    81.4%  ▁····▃·▂▇█▂● beats 27/28  medium · avg 44%        4.3%  small run
 <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4_anthropic_2025-05-22/submission.json">τ-bench Airline (lab)</a>   59.6%  ▁▁▁·▅▄▁█▇▁▁● beats 24/28  hard · avg 26%          2.9%  at its level · small run
 </pre>
@@ -42,7 +42,7 @@ Beats [Grok 4.3](grok-4-3.md), [Muse Glimmer 30B](muse-glimmer-30b.md), [Qwen3.5
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   72.0%  ▂·▂▃▅▂▃█▆●▂▂ beats 40/49  very hard · avg 8.5%     17%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   72.0%  ▂·▂▃▅▂▃█▆●▂▂ beats 40/49  very hard · avg 8.6%     17%  sharp · at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   70.7%  ▁··▁·▁▂▁●█▄▁ beats 8/29   hard · avg 19%           16%  sharp · at its level
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   56.6%  ▃▃▅▃··▃●█▅▅▃ beats 6/15   hard · avg 25%          4.9%  at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   76.3%  ▁··▁·▁▁▁▆█▇● beats 40/45  hard · avg 32%          3.1%  at its level
@@ -67,8 +67,8 @@ Trails [OpenThinker3 7B](openthinker3-7b.md), [Olmo 3 7B Think](olmo-3-7b-think.
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   64.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 92/193  very hard · avg 8.5%    4.9%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               85.0%  ▂▂▅▆▄█▆▃●▂▃▄ beats 72/92   hard · avg 32%          4.3%  sharp · maxed out
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   64.4%  ▃▃▄▃▃▃●▇█▃▂▅ beats 92/193  very hard · avg 8.6%    4.8%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               85.0%  ▂▂▅▆▄█▆▃●▂▃▄ beats 72/92   hard · avg 33%          4.3%  sharp · maxed out
 </pre>
 
 </details>
@@ -100,7 +100,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         76.3%  ▁▁▁▁▂▄▆▄●▇█▅ beats 117/208  hard · avg 40%          10%  sharp · at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1260.4  ▁·▂▁▄▅▅▃●▄▁▁ beats 37/62    avg 1044               4.2%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1260.4  ▁·▂▁▄▅▅▃●▄▁▁ beats 37/62    avg 1045               4.2%  typical
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   81.0%  ▁▁·▁▂▂▄█▄▅▄● beats 63/66    hard · avg 31%         3.2%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   74.5%  ▁▁▁▁·▂·█▆█●▁ beats 27/31    medium · avg 48%       2.4%  typical
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   95.2%  ▁▁▂▃▄▄●▆▃▂▂▁ beats 65/140   very easy · avg 94%    0.2%  blunt · maxed out · noisy
@@ -117,7 +117,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">Epoch AI</a>                                        4   36% ▇▇▇▇
 <a name="aider-polyglot-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot benchmark runs</a>                   1   17% ▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   14% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   15% ▇▇
 <a name="tau2-bench-leaderboard-anthropic"></a><a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4_anthropic_2025-05-22/submission.json">τ-bench leaderboard: Anthropic's own su…</a>        2    7% ▇
 <a name="card-moonshotai-kimi-k2-instruct"></a><a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md">Moonshot AI Kimi-K2-Instruct model card</a>         1    7% ▇
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">Inception Arabic/Hindi leaderboards</a>             2    6% ▇
@@ -126,7 +126,7 @@ source                                    results  share of the score
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    3% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 67.2
+weighted average                                   = 67.1
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · τ-bench leaderboard: Anthropic's own submissions ([MIT](https://opensource.org/license/mit)) · Moonshot AI Kimi-K2-Instruct model card ([Modified MIT License (Kimi K2)](https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/LICENSE)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

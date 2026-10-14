@@ -41,11 +41,11 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           72.0%  ▁·▁▁▁▃▄▄▄●▃▁ beats 80/99  easy · avg 74%           10%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    58.9%  ▁▂▆▃●█▆▃▂·▁▁ beats 18/47  medium · avg 61%        5.1%  sharp · at its level
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   24.3%  ▁▁·▁▂▄●█▅▂·▂ beats 9/31   hard · avg 26%          3.8%  sharp
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   65.5%  ▁·▂▁▂▆▅█▄▄▁● beats 35/35  medium · avg 64%        3.1%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   65.5%  ▁·▂▁▂▆▅█▄▄▁● beats 35/35  medium · avg 65%        3.1%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   45.4%  ▄▇█▃▄▇▄▁▇●·▁ beats 34/35  medium · avg 49%        2.6%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   52.4%  ▁·▁▁▄██▄█▁▅● beats 33/35  medium · avg 56%        2.5%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                69.0%  ▁···▁▁▂▅▇█●▂ beats 60/75  easy · avg 68%          2.0%  at its level
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     33.2%  ▃▁▁●▁▄▅▃▄▇▁▄ beats 8/31   medium · avg 44%        0.9%  sharp · at its level · noisy
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     33.2%  ▃▁▁●▁▄▅▃▄▇▁▄ beats 8/31   medium · avg 44%        0.8%  sharp · at its level · noisy
 <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (official l…</a>    0.0%  ●···█··▂·▃·▂ beats 0/17   very hard · avg 1.1%    0.5%  sharp · too hard for it
 </pre>
 
@@ -71,10 +71,10 @@ Beats [Athene-70B](athene-70b.md) here, though they rank higher overall. Trails 
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         22.6%  ▂▂▅●▄█▆▃▅▂▃▄ beats 18/92   hard · avg 32%          3.9%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         22.6%  ▂▂▅●▄█▆▃▅▂▃▄ beats 18/92   hard · avg 33%          3.9%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   25.1%  ▁▁▁▆●▂▇▇▄··▂ beats 13/38   hard · avg 34%          2.4%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          93.0%  ▁▄·▁▄█▅▅▅●██ beats 28/43   very easy · avg 89%     2.2%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              4.3%  ▃▃●▃▃▃▇▇█▃▂▅ beats 27/193  very hard · avg 8.5%    0.5%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              4.3%  ▃▃●▃▃▃▇▇█▃▂▅ beats 27/193  very hard · avg 8.6%    0.5%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -87,9 +87,9 @@ test                                          result  vs the others in its run  
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           37.7%  ▁▁▁▂▂▃▂█●▃▅▃ beats 41/61    medium · avg 41%       7.7%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             16.8%  ▁▁▃▆●█▁▁·▁▁▁ beats 23/57    hard · avg 18%         2.6%  sharp
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        43.2%  ▃▂·▆▆██▆▅●▃▃ beats 29/33    medium · avg 41%       2.3%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        53.9%  ▂▁▁▄▂▅▇█▆▂●▂ beats 55/58    medium · avg 50%       2.2%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   40.6%  ▁▁▁▁▂●▆▄▅▇█▅ beats 39/208   hard · avg 40%         2.0%  sharp
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  47.7708 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 38/52    avg 45.199 WB-Score    2.0%  sharp
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        53.9%  ▂▁▁▄▂▅▇█▆▂●▂ beats 55/58    medium · avg 51%       2.2%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                   40.6%  ▁▁▁▁▂●▆▄▅▇█▅ beats 39/208   hard · avg 40%         2.1%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  47.7708 WB-Score  ▁·▁▁·▃█▄▇●▅▆ beats 38/52    avg 45.277 WB-Score    2.0%  sharp
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>             75.6%  ▁▂▂▂▃█▃▆●▄▂▃ beats 71/95    easy · avg 66%         1.2%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                71.2%  ▁··▁▁▂▂▆▅▆●▆ beats 58/70    medium · avg 64%       1.0%  at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>             26.1%  ▁▁·▁▂▂▄●▄▅▄▄ beats 21/66    hard · avg 31%         0.8%  at its level

@@ -6,7 +6,7 @@
 
 M-A-P · released 2024-05 · 7.79B params · apache-2.0
 
-**score 38.7** ±3.1 · #732 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.7** ±3.1 · #734 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ M-A-P · released 2024-05 · 7.79B params · apache-2.0
 
 <pre>
 test                                          result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  25.0192 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 7/52   avg 45.199 WB-Score     96%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  25.0192 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 7/52   avg 45.277 WB-Score     96%  sharp
 </pre>
 
 </details>

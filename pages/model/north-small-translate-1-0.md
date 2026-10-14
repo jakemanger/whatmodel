@@ -6,7 +6,7 @@
 
 Cohere · released 2026-08 · 218B params (25B active) · cc-by-nc-4.0
 
-**score 71.4** ±5.9 · #71 of 719 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 71.3** ±5.9 · #71 of 719 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -22,7 +22,7 @@ Cohere · released 2026-08 · 218B params (25B active) · cc-by-nc-4.0
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation (te…</a>   89.7%  ▂·▂··▂·▄▂·●▆ beats 7/12   medium · avg 64%     42%  noisy
 <a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                        80.6%  █·▃·▅▅▃···●▃ beats 9/10   easy · avg 71%       24%  blunt
-<a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   83.6%  ▄·▄▄▄·▄██▄█● beats 12/12  easy · avg 65%       19%  blunt
+<a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, LLM …</a>   83.6%  ▄·▄▄▄·▄██▄█● beats 12/12  easy · avg 66%       19%  blunt
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="paper-2609.13916v1-north-small-translate"></a><a href="https://arxiv.org/html/2609.13916v1">Cohere (lab)</a>                         3   85% ▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle            15% ▇▇
-weighted average                        = 71.4
+weighted average                        = 71.3
 </pre>
 
 <sub>Licences: Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

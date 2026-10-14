@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-07 · 8.03B params · llama3
 
-**score 41.8** ±1.2 · #502 of 719 · from 16 benchmark results across 4 sources
+**score 41.8** ±1.1 · #502 of 719 · from 16 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -53,7 +53,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   50.4%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 31/81    medium · avg 58%       5.2%  blunt · at its level
 <a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                     47.8%  █▁▁▁▄▃▃●▂▁▄▂ beats 41/65    medium · avg 55%       4.4%  small run
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   68.7%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 154/276  medium · avg 73%       2.6%  at its level · noisy
-<a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                           43.5%  ●······█···█ beats 0/2      medium · avg 53%       2.2%  blunt · at its level · small run
+<a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                           43.5%  ●······█···█ beats 0/2      medium · avg 53%       2.1%  blunt · at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                           80.3%  ▁▁▁▃▃▄▇█●▃▁▁ beats 69/83    easy · avg 86%         2.0%  blunt · at its level · small run
 <a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (lab)</a>                 58.7%  █▅▇▅▁▄●▇▅▄▁▁ beats 45/73    medium · avg 64%       1.0%  blunt · at its level · small run
 </pre>

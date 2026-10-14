@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-06 · 7.74B params · other
 
-**score 48.5** ±1.7 · #373 of 719 · from 7 benchmark results across 2 sources
+**score 48.4** ±1.7 · #374 of 719 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -37,7 +37,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU (lab)</a>                           72.8%  ▁▁▁▁▁▂▃▅█●▆▃ beats 123/183  easy · avg 78%       17%  at its level
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified) (lab)</a>      38.4%  ▂▁▂▂▄▃●▃▅█▄▃ beats 35/104   hard · avg 40%       15%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   69.2%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 159/276  medium · avg 73%    5.7%  at its level · noisy
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU (lab)</a>                          78.0%  ▅·▅····●▃▅█▅ beats 5/14     easy · avg 75%      5.2%  at its level · noisy
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU (lab)</a>                          78.0%  ▅·▅····●▃▅█▅ beats 5/14     easy · avg 75%      5.1%  at its level · noisy
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ source                                    results  share of the score
 <a name="internlm-github-model-cards"></a><a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">InternLM GitHub repository model cards …</a>        6   93% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    6% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 48.5
+weighted average                                   = 48.4
 </pre>
 
 <sub>Licences: InternLM GitHub repository model cards ([Apache-2.0](https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

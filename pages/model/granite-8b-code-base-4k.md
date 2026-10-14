@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 8.05B params · apache-2.0
 
-**score 38.8** ±1.2 · #546 of 719 · from 10 benchmark results across 3 sources
+**score 38.7** ±1.2 · #546 of 719 · from 10 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -24,7 +24,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   43.5%  ▁·▂▁▂▆▅●▄▄▁▂ beats 24/35  medium · avg 64%     22%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   43.5%  ▁·▂▁▂▆▅●▄▄▁▂ beats 24/35  medium · avg 65%     22%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   26.4%  ▄▇█▃▄●▄▁▇▃·▁ beats 22/35  medium · avg 49%     13%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   29.6%  ▁·▁▁▄██▄●▁▅▅ beats 26/35  medium · avg 56%     12%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                           42.2%  █·▅▃▃▃●▃▃▅·▅ beats 8/15   easy · avg 70%       12%  at its level
@@ -50,7 +50,7 @@ test         result  vs the others in its run  difficulty        counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              35.6%  ▂▁▁▄▂●▇█▆▂▂▂ beats 17/58  medium · avg 50%     13%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              35.6%  ▂▁▁▄▂●▇█▆▂▂▂ beats 17/58  medium · avg 51%     13%  at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   34.5%  ▁▁▁▁●▁▁▂▄█▄▃ beats 9/146  easy · avg 83%      1.9%  at its level · noisy
 </pre>
 
@@ -66,7 +66,7 @@ source                                    results  share of the score
 <a name="paper-2406.15877v4-bigcodebench"></a><a href="https://arxiv.org/html/2406.15877v4">BigCodeBench paper</a>                              1   13% ▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 38.8
+weighted average                                   = 38.7
 </pre>
 
 <sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

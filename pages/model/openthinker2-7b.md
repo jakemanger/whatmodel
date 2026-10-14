@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-04 · 7.62B params · apache-2.0
 
-**score 49.3** ±1.7 · #357 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 49.2** ±1.7 · #358 of 719 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -24,7 +24,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 
 <pre>
 test                    result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">LiveCodeBench v2 (lab)</a>   55.6%  ▄··█·●···▄▄█ beats 3/7    medium · avg 52%    7.5%  at its level · small run
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">LiveCodeBench v2 (lab)</a>   55.6%  ▄··█·●···▄▄█ beats 3/7    medium · avg 53%    7.5%  at its level · small run
 </pre>
 
 </details>
@@ -46,7 +46,7 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">GPQA Diamond (lab)</a>   49.3%  ▁▁▁▁▂▄●▅███▄ beats 84/310  hard · avg 50%     32%  sharp · at its level · small run
+<a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">GPQA Diamond (lab)</a>   49.3%  ▁▁▁▁▂▄●▅███▄ beats 84/310  hard · avg 51%     32%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -59,7 +59,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-open-thoughts-openthinker2-7b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">open-thoughts/OpenThinker2-7B model car…</a>        5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 49.3
+weighted average                                   = 49.2
 </pre>
 
 <sub>Licences: open-thoughts/OpenThinker2-7B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

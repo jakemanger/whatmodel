@@ -6,7 +6,7 @@
 
 PKU-Baichuan MLSystemLab · released 2024-08 · 70.55B params · llama3
 
-**score 58.8** ±1.6 · #240 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.8** ±1.6 · #241 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

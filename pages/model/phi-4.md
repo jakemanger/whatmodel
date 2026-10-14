@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-12 · 14.7B params · mit
 
-**score 52.7** ±0.7 · #304 of 719 · from 49 benchmark results across 17 sources
+**score 52.7** ±0.7 · #302 of 719 · from 49 benchmark results across 17 sources
 
 ## What it's good at
 
@@ -34,7 +34,7 @@ test                             result  vs the others in its run   difficulty  
 
 <details><summary>coding · #225 of 458 · 19% of its score</summary>
 
-Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [Hermes 3 Llama 3.1 405B](hermes-3-llama-3-1-405b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
@@ -65,12 +65,12 @@ test                                result  vs the others in its run   difficult
 
 <details><summary>math · #219 of 398 · 16% of its score</summary>
 
-Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-20.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      64.9%  ▂▂▅▆▄█●▃▅▂▃▄ beats 56/92   hard · avg 32%           10%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          13.8%  ▃▃▄●▃▃▇▇█▃▂▅ beats 52/193  very hard · avg 8.5%    1.9%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      64.9%  ▂▂▅▆▄█●▃▅▂▃▄ beats 56/92   hard · avg 33%           10%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          13.8%  ▃▃▄●▃▃▇▇█▃▂▅ beats 52/193  very hard · avg 8.6%    1.9%  sharp · noisy
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MGSM (lab)</a>                        80.6%  ▃·▁·▁··▂▄█▄● beats 25/26   easy · avg 72%          1.8%  small run
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MATH (subset unspecified) (lab)</a>   80.4%  ▂▄▄▃█▇▅●▄▃▄▁ beats 54/80   easy · avg 73%          1.7%  small run
 <a href="https://arxiv.org/html/2412.08905v1">MGSM (simple-evals) (lab)</a>         80.6%  ▁·▁●·▁▇▃█▁▃▁ beats 2/20    easy · avg 82%          1.0%  blunt
@@ -82,21 +82,21 @@ test                             result  vs the others in its run   difficulty  
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2412.08905v1">MMLU-Pro (lab)</a>                       70.4%  ▁▁·▁▁▁▃▂▄●█▁ beats 92/188   medium · avg 59%        7.4%  at its level · several runs
+<a href="https://arxiv.org/html/2412.08905v1">MMLU-Pro (lab)</a>                       70.4%  ▁▁·▁▁▁▃▂▄●█▁ beats 92/188   medium · avg 60%        7.4%  at its level · several runs
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         56.1%  ▁▁▁▁▂▄▆●▅▇█▅ beats 81/208   hard · avg 40%          5.5%  sharp · at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>           59.2%  ▆▄●▄█▄▂·▄█·▄ beats 5/23     medium · avg 58%        5.4%  at its level
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>            59.2%  ▄▄●▂▂█▂▄▂█▂▄ beats 4/22     medium · avg 63%        4.6%  at its level
 <a href="https://arxiv.org/html/2412.08905v1">GPQA Diamond (simple-evals) (lab)</a>    56.1%  ▁·····▄█●▂▃▃ beats 13/22    hard · avg 41%          3.5%  sharp · at its level
-<a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>       82.0%  ●···▄····▄·█ beats 0/4      easy · avg 86%          3.3%  sharp · noisy · several runs
+<a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>       82.0%  ●···▄····▄·█ beats 0/4      easy · avg 86%          3.2%  sharp · noisy · several runs
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   66.1%  ▁▂▂▂▃█●▆▅▄▂▃ beats 46/95    easy · avg 66%          2.4%  at its level
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">GPQA (subset unspecified) (lab)</a>      56.1%  ▂▁▂▂▄▃▆▃●█▄▃ beats 59/104   hard · avg 45%          2.1%  sharp · at its level · small run
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   36.1%  ▁▁▁▁▁▂▂▃▄●█▃ beats 51/97    hard · avg 32%          2.0%  blunt · at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   30.0%  ▁▁·▁▂▂▄●▄▅▄▄ beats 26/66    hard · avg 31%          2.0%  at its level
-<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      64.4%  ▁··▁▁▂▂▆▅▆●▆ beats 44/70    medium · avg 64%        1.9%  at its level
+<a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      64.4%  ▁··▁▁▂▂▆▅▆●▆ beats 44/70    medium · avg 64%        2.0%  at its level
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MMLU (lab)</a>                           84.8%  ▁▁▁▁▁▂▃▅█▃●▃ beats 154/183  easy · avg 78%          1.8%  small run
-<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   24.2%  ●···▁▁▁▂▃·▆▂ beats 6/23     very hard · avg 29%     1.6%  sharp · too hard for it
-<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">SimpleQA (lab)</a>                        3.0%  ●▄▄▆█▆███·▂█ beats 1/32     very hard · avg 5.3%    1.4%  too hard for it · small run
-<a href="https://arxiv.org/html/2412.08905v1">MMLU (simple-evals, zero-shot CoT…</a>   84.8%  ▁···▂▁●█▂▂▃▁ beats 5/22     easy · avg 80%          1.3%  typical
+<a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-sho…</a>   24.2%  ●···▁▁▁▂▃·▆▂ beats 6/23     very hard · avg 29%     1.7%  sharp · too hard for it
+<a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">SimpleQA (lab)</a>                        3.0%  ●▄▄▆█▆███·▂█ beats 1/32     very hard · avg 5.4%    1.4%  too hard for it · small run
+<a href="https://arxiv.org/html/2412.08905v1">MMLU (simple-evals, zero-shot CoT…</a>   84.8%  ▁···▂▁●█▂▂▃▁ beats 5/22     easy · avg 81%          1.3%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   76.1%  ▃▁▁▁▁▁▁▁▂█●▁ beats 230/276  medium · avg 73%        0.8%  at its level · noisy
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   50.5%  ▁··▃●▁▁▅█▅▁▅ beats 3/24     medium · avg 52%        0.7%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   84.4%  ▃·▁▁▂▁▂▅█●▄▁ beats 82/100   medium · avg 68%        0.6%  at its level · noisy

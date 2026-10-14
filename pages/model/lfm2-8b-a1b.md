@@ -6,7 +6,7 @@
 
 Liquid AI · released 2025-10 · 8.3B params (1.5B active) · lfm1.0
 
-**score 45.6** ±0.8 · comparison only: no current run option verified · from 31 benchmark results across 3 sources
+**score 45.5** ±0.8 · comparison only: no current run option verified · from 31 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -25,7 +25,7 @@ Trails [Granite 4.0 350M](granite-4-0-350m.md), [Granite 4.0 H 350M](granite-4-0
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (lab)</a>                 7.0%  ●····▂▁▃▆█▃▁ beats 0/44    hard · avg 31%      1.3%  small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (lab)</a>                 7.0%  ●····▂▁▃▆█▃▁ beats 0/44    hard · avg 32%      1.3%  small run
 <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL V4 (December 2025 archive) (…</a>   25.5%  ▁▁▁▂●▆▆▆█▂▄▂ beats 17/111  medium · avg 38%    1.2%  at its level · small run
 <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL v3 (lab)</a>                        45.1%  ▁▁▁▁▁●▅█▆▅▄▁ beats 25/170  medium · avg 57%    0.7%  blunt · at its level · small run
 <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (lab)</a>               13.6%  ●█▄········█ beats 0/5     hard · avg 24%      0.6%  sharp · noisy
@@ -51,10 +51,10 @@ Beats [Command A (03-2025)](command-a.md), [GPT-4o (2024-11-20)](gpt-4o-2024-11-
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                                84.6%  █····●··▄·▄█ beats 3/7     very easy · avg 86%    9.5%  sharp
+<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                                84.6%  █····●··▄·▄█ beats 3/7     very easy · avg 87%    9.5%  sharp
 <a href="https://arxiv.org/html/2511.23404v1">MATH-500 (lab)</a>                       74.2%  ▃····▃·●···▃ beats 4/5     easy · avg 81%         5.9%  at its level · several runs
 <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>            82.6%  █▄··●█▄····▄ beats 3/7     easy · avg 81%         5.2%  at its level
-<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2025 (lab)</a>                      20.0%  ▁·▁▁▁●▅▆█▇▅▁ beats 11/133  medium · avg 36%       4.2%  sharp · small run
+<a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2025 (lab)</a>                      20.0%  ▁·▁▁▁●▅▆█▇▅▁ beats 11/133  medium · avg 37%       4.2%  sharp · small run
 <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>              56.5%  ▄·●·▄▄▄·▄··█ beats 1/7     easy · avg 70%         3.1%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>          26.5%  ▄··▄●█··▄··▄ beats 3/7     hard · avg 30%         2.6%  typical
 <a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy (l…</a>   84.4%  █·█··██●···█ beats 4/5     easy · avg 84%         0.3%  blunt
@@ -93,7 +93,7 @@ source                                    results  share of the score
 <a name="report-2511.23404v1"></a><a href="https://arxiv.org/html/2511.23404v1">LFM2 Technical Report (lab)</a>                    11   32% ▇▇▇▇
 <a name="card-liquidai-lfm2-5-8b-a1b"></a><a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">LiquidAI/LFM2.5-8B-A1B model card (lab)</a>         9   14% ▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 45.6
+weighted average                                   = 45.5
 </pre>
 
 <sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · LFM2 Technical Report ([CC BY 4.0](../../licenses/cards-gap-NOTICE.txt)) · LiquidAI/LFM2.5-8B-A1B model card ([LFM Open License v1.0](../../licenses/cards-gap-NOTICE.txt))</sub>

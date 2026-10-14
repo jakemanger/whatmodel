@@ -6,7 +6,7 @@
 
 Databricks · released 2023-04 · 12B params · mit
 
-**score 17.2** ±1.8 · comparison only: no current run option verified · from 6 benchmark results across 5 sources
+**score 17.3** ±1.8 · comparison only: no current run option verified · from 6 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -37,8 +37,8 @@ Trails [Gemma 3 270M IT](gemma-3-270m.md) here, though they rank lower overall.
 test                                                      result  vs the others in its run  difficulty                counts  why
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         856.0  ●▁▂▁▃▇█▆▇▄▂▂ beats 2/95   avg 1201                     28%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                             982.4  ●▁▁▂▃▃▃▆▆▇█▃ beats 2/379  avg 1268                     28%  blunt
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  3.2800 MT-Bench score (1-10)  ▆●▂▆▆▄██▂▄▄▆ beats 3/28   avg 8.819 MT-Bench scor…     25%  sharp · noisy
-<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>       6.9000 mean rank (1-11)  █···●··▄···▄ beats 2/4    avg 6.444 mean rank (1-…    0.0%  blunt · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  3.2800 MT-Bench score (1-10)  ▆●▂▆▆▄██▂▄▄▆ beats 3/28   avg 8.826 MT-Bench scor…     25%  sharp · noisy
+<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>       6.9000 mean rank (1-11)  █···●··▄···▄ beats 2/4    avg 6.442 mean rank (1-…    0.0%  blunt · noisy
 </pre>
 
 </details>
@@ -47,7 +47,7 @@ test                                                      result  vs the others 
 
 <pre>
 test  result  vs the others in its run  difficulty      counts  why
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>   25.7%  ●▄·▄···▄▄·██ beats 0/8    easy · avg 77%    5.9%  typical
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>   25.7%  ●▄·▄···▄▄·██ beats 0/8    easy · avg 78%    5.9%  typical
 </pre>
 
 </details>
@@ -64,7 +64,7 @@ source                                    results  share of the score
 <a name="instruct-eval-readme"></a><a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">InstructEval</a>                                    2   18% ▇▇
 <a name="paper-2306.02561v3-llmblender"></a><a href="https://arxiv.org/html/2306.02561v3">LLM-Blender: Ensembling Large Language …</a>        1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 17.2
+weighted average                                   = 17.3
 </pre>
 
 <sub>Licences: Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

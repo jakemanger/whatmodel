@@ -26,7 +26,7 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thin
 test        result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    51.2%  ▁·▁▁▃▄●▅█▃▁▁ beats 36/99  easy · avg 79%       55%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   44.5%  ▁·▁▁▁▃▄●▄█▃▁ beats 36/99  easy · avg 74%       21%  sharp · at its level
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>      40.2%  ▄▄·▄██▄█·█·● beats 12/12  medium · avg 52%    3.6%  at its level
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>      40.2%  ▄▄·▄██▄█·█·● beats 12/12  medium · avg 53%    3.6%  at its level
 <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>         73.2%  ▄▄▄██▄·▄█·▄● beats 12/12  easy · avg 82%      3.4%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   46.5%  ▁··▁▅▂█●▁··▁ beats 18/22  medium · avg 54%    1.2%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   48.6%  ▁·▂▃▁█▁●···▁ beats 19/22  medium · avg 53%    1.1%  blunt · at its level
@@ -50,7 +50,7 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>         36.8%  ▂▂▃▄▄█●▄▅▃▁▃ beats 25/42  medium · avg 55%    8.7%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   46.6%  ▂▁▁▄▂▅▇█●▂▂▂ beats 45/58  medium · avg 50%    3.4%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   46.6%  ▂▁▁▄▂▅▇█●▂▂▂ beats 45/58  medium · avg 51%    3.4%  at its level
 </pre>
 
 </details>

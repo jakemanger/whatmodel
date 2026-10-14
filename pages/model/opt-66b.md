@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 66B params · opt-175b-license-noncommercial
 
-**score 30.5** ±1.4 · #639 of 719 · from 7 benchmark results across 2 sources
+**score 30.5** ±1.3 · #639 of 719 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -26,7 +26,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                                 78.8%  ▂·▄▄·▄▂▆▂▄█● beats 19/19   easy · avg 88%          10%  blunt · at its level
 <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                                 92.6%  ▂··▂▃▂▂▆▃▃█● beats 19/19   very easy · avg 98%    7.6%  typical
 <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), last-wo…</a>   73.9%  ▃··▅▃▃▅▅▅██● beats 19/19   very easy · avg 89%    7.1%  blunt · at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   35.0%  ▃▁▁●▁▁▁▁▂█▅▁ beats 41/276  medium · avg 73%       2.6%  noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   35.0%  ▃▁▁●▁▁▁▁▂█▅▁ beats 41/276  medium · avg 73%       2.7%  noisy
 </pre>
 
 </details>

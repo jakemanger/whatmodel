@@ -37,10 +37,10 @@ Trails [Gemma 3 270M IT](gemma-3-270m.md), [SmolLM2 360M Instruct](smollm2-360m.
 test                                                      result  vs the others in its run  difficulty                counts  why
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         912.0  ▂●▂▁▃▇█▆▇▄▂▂ beats 5/95   avg 1201                     18%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1023.5  ▁●▁▂▃▃▃▆▆▇█▃ beats 5/379  avg 1268                     18%  blunt
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  4.3200 MT-Bench score (1-10)  ▆▂▂●▆▄██▂▄▄▆ beats 5/28   avg 8.819 MT-Bench scor…     16%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  4.3200 MT-Bench score (1-10)  ▆▂▂●▆▄██▂▄▄▆ beats 5/28   avg 8.826 MT-Bench scor…     16%  sharp · noisy
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         26.0%  ▂●·▆·▇▃▆█▆▄▂ beats 2/45   very easy · avg 96%          10%  sharp · at its level · noisy
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                              3.3%  ▁●▂▃▆▆█▆▄▄▁▁ beats 2/122  medium · avg 39%            8.9%  too hard for it
-<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>       3.9000 mean rank (1-11)  █···▄··▄···● beats 4/4    avg 6.444 mean rank (1-…    0.0%  blunt · noisy
+<a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Blender…</a>       3.9000 mean rank (1-11)  █···▄··▄···● beats 4/4    avg 6.442 mean rank (1-…    0.0%  blunt · noisy
 </pre>
 
 </details>
@@ -50,7 +50,7 @@ test                                                      result  vs the others 
 <pre>
 test            result  vs the others in its run  difficulty      counts  why
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>   30.0%  ●██··█·█·█·█ beats 0/6    easy · avg 76%     11%  sharp · too hard for it
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>             27.0%  ▄▄·●···▄▄·██ beats 2/8    easy · avg 77%    5.3%  typical
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>             27.0%  ▄▄·●···▄▄·██ beats 2/8    easy · avg 78%    5.3%  typical
 </pre>
 
 </details>

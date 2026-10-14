@@ -6,7 +6,7 @@
 
 Swiss AI · released 2025-08 · 8.05B params · apache-2.0
 
-**score 38.1** ±3.6 · #563 of 719 · from 5 benchmark results across 3 sources
+**score 38.1** ±3.6 · #562 of 719 · from 5 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -23,7 +23,7 @@ Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md)
 
 <pre>
 test                         result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>     21.9%  ●█····██·███ beats 0/6    easy · avg 71%     29%  at its level · noisy
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>     21.9%  ●█····██·███ beats 0/6    easy · avg 72%     29%  at its level · noisy
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>    5.0%  ●···▄·▄·▄··█ beats 0/6    hard · avg 20%     19%  typical
 </pre>
 
@@ -33,7 +33,7 @@ test                         result  vs the others in its run  difficulty      c
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   80.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 68/146  easy · avg 83%          18%  at its level · noisy
+<a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   80.3%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 68/146  easy · avg 83%          19%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   58.1%  ▃·▁▁▂▁▂●█▇▄▁ beats 31/100  medium · avg 68%        17%  at its level · noisy
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard average…</a>    7.7%  ●▁▃▂▂▄▁▃▄▄▄█ beats 0/38    very hard · avg 14%     11%  too hard for it
 </pre>

@@ -25,7 +25,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                            43.3%  ▁█▄▅●█·▄▇▅▄▄ beats 15/42  easy · avg 78%          37%  sharp · at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   37.9%  ▁·▂▁▂▆●█▄▄▁▂ beats 16/35  medium · avg 64%       8.5%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   37.9%  ▁·▂▁▂▆●█▄▄▁▂ beats 16/35  medium · avg 65%       8.5%  at its level
 <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                           44.4%  ▃●▃█··▃▅··▅▃ beats 1/11   easy · avg 73%         6.3%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   25.1%  ▄▇█▃▄●▄▁▇▃·▁ beats 20/35  medium · avg 49%       4.8%  typical
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            64.1%  ▃▃▃·▆▃●█▃▂▂▅ beats 12/25  very easy · avg 86%    4.1%  sharp · at its level
@@ -51,7 +51,7 @@ test   result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    27.9%  ▂▂▃▄●█▁▄▅▃▁▃ beats 12/42  medium · avg 55%     12%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       38.4%  ▁·····●█▂▅·▁ beats 1/25   easy · avg 77%      7.0%  sharp · at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              25.4%  ▂●▁▄▂▅▇█▆▂▂▂ beats 4/58   medium · avg 50%    5.0%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              25.4%  ▂●▁▄▂▅▇█▆▂▂▂ beats 4/58   medium · avg 51%    5.0%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>              21.8%  ●▂·▆▆██▆▅▃▃▃ beats 0/33   medium · avg 41%    4.6%  typical
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 41.5%  ▁▁●▃▄█▄▁█··▁ beats 2/25   easy · avg 74%      2.6%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   41.6%  ▂··▁▃●▂▂█▅▁▂ beats 7/25   medium · avg 61%    0.9%  blunt · at its level

@@ -6,7 +6,7 @@
 
 Contextual AI · released 2024-03 · 7.24B params · apache-2.0
 
-**score 46.4** ±1.7 · #544 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.4** ±1.7 · #544 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

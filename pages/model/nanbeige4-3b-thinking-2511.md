@@ -6,7 +6,7 @@
 
 Nanbeige · released 2025-11 · 3.93B params · apache-2.0
 
-**score 54.2** ±3.1 · #345 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 54.1** ±3.1 · #347 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -32,7 +32,7 @@ test                             result  vs the others in its run  difficulty   
 
 <pre>
 test                                result  vs the others in its run  difficulty  counts  why
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1014.3  ▁·▂●▄▅▅▃█▄▁▁ beats 4/62   avg 1044       54%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1014.3  ▁·▂●▄▅▅▃█▄▁▁ beats 4/62   avg 1045       54%  typical
 </pre>
 
 </details>
@@ -46,7 +46,7 @@ source                                    results  share of the score
 <a name="eqbench3-canonical-results"></a><a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 canonical leaderboard results</a>        1   54% ▇▇▇▇▇▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1   42% ▇▇▇▇▇
 prior: pull toward the middle                        4% ▇
-weighted average                                   = 54.2
+weighted average                                   = 54.1
 </pre>
 
 <sub>Licences: EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

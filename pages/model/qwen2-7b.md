@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 7.62B params · apache-2.0
 
-**score 44.0** ±0.6 · #461 of 719 · from 22 benchmark results across 10 sources
+**score 43.9** ±0.6 · #461 of 719 · from 22 benchmark results across 10 sources
 
 ## What it's good at
 
@@ -44,7 +44,7 @@ test                               result  vs the others in its run  difficulty 
 
 <details><summary>chat &amp; writing · #274 of 393 · 2.8% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 14B](ministral-3-14b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md), [LFM2 1.2B](lfm2-1-2b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -74,14 +74,14 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>   66.9%  ▁·▁▁▄●▄▅█▄▂▁ beats 10/53    easy · avg 77%       19%  at its level
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 26.6%  ▁▁▁▂▂▃●█▆▃▅▃ beats 19/61    medium · avg 41%     14%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        40.7%  ▂▁▁▄▂▅●█▆▂▂▂ beats 29/58    medium · avg 50%    4.4%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        40.7%  ▂▁▁▄▂▅●█▆▂▂▂ beats 29/58    medium · avg 51%    4.4%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        28.0%  ▃▂·●▆██▆▅▃▃▃ beats 3/33     medium · avg 41%    4.3%  at its level
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard</a>                       65.0%  ▁▁▁▁▂▄▅▅●▃▄▁ beats 75/129   easy · avg 75%      3.3%  sharp · at its level · small run
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>    8.4%  ▁▁●▆██▁▁·▁▁▁ beats 5/57     hard · avg 18%      3.0%  sharp
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU</a>                                 70.8%  ▁▁▁▁▁▂▃▅█●▆▃ beats 117/183  easy · avg 78%      2.7%  at its level
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      53.7%  ▁··▁▁▂▂▆●▆█▆ beats 28/70    medium · avg 64%    2.2%  at its level
-<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified)</a>            38.4%  ▂▁▂▂▄▃●▃▅█▄▃ beats 34/104   hard · avg 40%      1.6%  sharp
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   50.0%  ▂▄▂▃●▄▃▆▃▅▂▂ beats 28/81    medium · avg 58%    1.6%  blunt · at its level
+<a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified)</a>            38.4%  ▂▁▂▂▄▃●▃▅█▄▃ beats 34/104   hard · avg 40%      1.6%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   72.1%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 192/276  medium · avg 73%    0.8%  at its level · noisy
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU</a>                                80.9%  ▅·▅····█●▅█▅ beats 7/14     easy · avg 75%      0.8%  at its level · noisy
 </pre>
@@ -105,7 +105,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        1    1% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 44.0
+weighted average                                   = 43.9
 </pre>
 
 <sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · InternLM GitHub repository model cards ([Apache-2.0](https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/LICENSE)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>

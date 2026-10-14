@@ -26,7 +26,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            35.4%  ▁·▁▁▃●▆▅█▃▁▁ beats 20/99  easy · avg 79%       41%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           28.7%  ▁·▁▁▁▃●▄▄█▃▁ beats 17/99  easy · avg 74%       16%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   34.4%  ▁·▂▁▂▆●█▄▄▁▂ beats 12/35  medium · avg 64%    4.2%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   34.4%  ▁·▂▁▂▆●█▄▄▁▂ beats 12/35  medium · avg 65%    4.2%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                43.4%  ▁···▁▁●▅▇█▆▂ beats 9/75   easy · avg 68%      3.1%  at its level
 <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                           44.4%  ▁▁▁▄●█▄▅▃▁▂▁ beats 21/81  easy · avg 74%      2.6%  at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   15.0%  ▄▇●▃▄▇▄▁▇▃·▁ beats 9/35   medium · avg 49%    2.3%  typical

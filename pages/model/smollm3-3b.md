@@ -6,7 +6,7 @@
 
 Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
-**score 42.7** ±1.0 · #487 of 719 · from 25 benchmark results across 6 sources
+**score 42.7** ±1.0 · #485 of 719 · from 25 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -44,7 +44,7 @@ test                    result  vs the others in its run  difficulty        coun
 
 <details><summary>chat &amp; writing · #282 of 393 · 7.6% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md), [Ministral 3 8B](ministral-3-8b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral 3 8B](ministral-3-8b.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
@@ -61,7 +61,7 @@ Beats [GPT-4 Turbo (2024-04-09)](gpt-4-turbo-2024-04-09.md), [Molmo 2 8B](molmo-
 <pre>
 test                            result  vs the others in its run   difficulty        counts  why
 <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">AIME 2025 (lab)</a>                  36.7%  ▁·▁▁▁▂●▆█▇▅▁ beats 23/133  medium · avg 53%    7.8%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2511.23404v1">MATH-500</a>                         73.6%  ▃····▃·●···▃ beats 3/5     easy · avg 81%      4.7%  at its level
+<a href="https://arxiv.org/html/2511.23404v1">MATH-500</a>                         73.6%  ▃····▃·●···▃ beats 3/5     easy · avg 81%      4.6%  at its level
 <a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy</a>   81.1%  █·█··●██···█ beats 2/5     easy · avg 84%      0.5%  blunt
 </pre>
 

@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 7.07B params · bigscience-bloom-rail-1.0
 
-**score 21.0** ±0.9 · #684 of 719 · from 19 benchmark results across 6 sources
+**score 21.1** ±0.9 · #684 of 719 · from 19 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">PIQA</a>                                 72.7%  ▁·▁··▁●▃█▅█▂ beats 3/26    easy · avg 88%         4.3%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">LAMBADA (OpenAI version), last-wo…</a>   57.6%  ▁··▂▁●▁▂▆█▅▃ beats 4/26    very easy · avg 89%    3.0%  blunt · at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   18.1%  ●▅▃··▅▃·█▃▃▅ beats 0/13    easy · avg 67%         2.7%  typical
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>    3.2%  ●····▃▅·██·█ beats 0/13    medium · avg 59%       2.4%  typical
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>    3.2%  ●····▃▅·██·█ beats 0/13    medium · avg 60%       2.4%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">Social IQA</a>                           42.1%  ▁···▁▃●▁▁▁·▁ beats 14/26   medium · avg 59%       1.8%  blunt
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">OpenBookQA</a>                           25.2%  ●·▁▁▃·▁▃▅▇▃▄ beats 2/26    medium · avg 53%       1.7%  too hard for it
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-7b1/results_2023-12-23%2002%3A01%3A26.108634.json">TriviaQA</a>                             26.3%  ▁··▁█▃▃●▄▅▄█ beats 12/28   easy · avg 79%         1.0%  noisy
@@ -58,14 +58,14 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">Stability AI</a>                                   10   71% ▇▇▇▇▇▇▇▇▇
+<a name="stablelm-original-eval-json"></a><a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">Stability AI</a>                                   10   71% ▇▇▇▇▇▇▇▇
 <a name="paper-2211.05100v4"></a><a href="https://arxiv.org/html/2211.05100v4">BLOOM: A 176B-Parameter Open-Access Mul…</a>        1   16% ▇▇
 <a name="hallucinations-leaderboard-results-apache"></a><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/bigscience/bloom-7b1/results_2024-02-26%2019%3A43%3A19.008314.json">Hallucinations Leaderboard results</a>              4    7% ▇
 <a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    5% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 21.0
+weighted average                                   = 21.1
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Hallucinations Leaderboard results ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 GeneZC · released 2023-11 · 3.02B params · apache-2.0
 
-**score 28.5** ±2.6 · #874 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 28.5** ±2.6 · #876 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

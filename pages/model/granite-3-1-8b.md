@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 8.17B params · apache-2.0
 
-**score 42.7** ±1.0 · #488 of 719 · from 19 benchmark results across 6 sources
+**score 42.7** ±1.0 · #486 of 719 · from 19 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -63,7 +63,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MMLU (lab)</a>                           66.8%  ▄█········▄● beats 4/5      easy · avg 78%          10%  at its level · several runs
 <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (lab)</a>                  62.6%  ▆▁▁▂▂▅▇█●▃▃▂ beats 74/97    easy · avg 82%         9.2%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">BIG-Bench Hard (lab)</a>                 69.9%  █·▄·····▄●·▄ beats 4/5      easy · avg 84%         9.0%  sharp · at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (lab)</a>                           58.6%  ▃▃·····▃···● beats 4/5      easy · avg 68%         6.3%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (lab)</a>                           58.6%  ▃▃·····▃···● beats 4/5      easy · avg 68%         6.2%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (lab)</a>                     75.4%  ▁···▂▁▁▅█▇●▁ beats 75/87    easy · avg 84%         5.8%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (lab)</a>                      84.5%  ▁▁▁▁▂▂▃▇█▆●▃ beats 76/85    very easy · avg 89%    3.3%  typical
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (lab)</a>                          28.7%  ▄·█······▄·● beats 5/5      hard · avg 34%         2.9%  blunt

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
-**score 51.6** ±1.1 · #318 of 719 · from 15 benchmark results across 5 sources
+**score 51.5** ±1.1 · #319 of 719 · from 15 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -27,8 +27,8 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   57.9%  ▁·▁▂▄▁▆●█▆▂▂ beats 26/62  medium · avg 54%        19%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                      88.4%  ▄·▄···█··●·▄ beats 4/6    very easy · avg 86%     12%  sharp
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     84.1%  ▄·▄····▄▄·●█ beats 4/6    easy · avg 82%          10%  sharp
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           83.5%  █···███·●█·█ beats 4/6    easy · avg 78%         6.6%  typical
-<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      76.5%  ▄·▄····▄▄·●█ beats 4/6    easy · avg 71%         5.8%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           83.5%  █···███·●█·█ beats 4/6    easy · avg 79%         6.6%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      76.5%  ▄·▄····▄▄·●█ beats 4/6    easy · avg 71%         5.7%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          71.7%  ▄····▄▄·▄·●▄ beats 4/6    easy · avg 67%         5.2%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   10.7%  █▂▁▁▂▂●▃▅▅▅▇ beats 17/47  medium · avg 36%       3.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     65.8%  █·██·█··●·██ beats 4/6    medium · avg 57%       2.8%  at its level
@@ -62,7 +62,7 @@ source                                    results  share of the score
 <a name="paper-2503.16167v2-codereviewqa"></a><a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: The Code Review Comprehen…</a>        4    8% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 51.6
+weighted average                                   = 51.5
 </pre>
 
 <sub>Licences: LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2024-03 · 7.24B params · cc-by-nc-4.0
 
-**score 41.2** ±2.8 · #688 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 41.2** ±2.8 · #690 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## What it's good at
 

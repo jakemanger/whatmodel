@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 44.9** ±1.9 · #444 of 719 · from 4 benchmark results across 3 sources
+**score 44.8** ±1.9 · #446 of 719 · from 4 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -49,7 +49,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   33% ▇▇▇▇
 <a name="card-huggingfaceh4-zephyr-orpo-141b-a35b-v0-1"></a><a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">HuggingFaceH4 zephyr-orpo-141b-A35b-v0.…</a>        2   31% ▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 44.9
+weighted average                                   = 44.8
 </pre>
 
 <sub>Licences: Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · HuggingFaceH4 zephyr-orpo-141b-A35b-v0.1 model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

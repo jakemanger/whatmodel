@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-06 · 9.48B params · other (glm-4)
 
-**score 53.4** ±4.7 · #292 of 719 · from 3 benchmark results across 2 sources
+**score 53.3** ±4.7 · #292 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -36,7 +36,7 @@ source                                    results  share of the score
 <a name="nvidia-ruler-readme-results"></a><a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">NVIDIA RULER repository README results …</a>        2   50% ▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1   40% ▇▇▇▇▇
 prior: pull toward the middle                       10% ▇
-weighted average                                   = 53.4
+weighted average                                   = 53.3
 </pre>
 
 <sub>Licences: NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

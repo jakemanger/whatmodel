@@ -6,7 +6,7 @@
 
 Cohere · released 2024-12 · 8.03B params · cc-by-nc-4.0
 
-**score 44.2** ±1.3 · #453 of 719 · from 14 benchmark results across 4 sources
+**score 44.1** ±1.3 · #454 of 719 · from 14 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -42,14 +42,14 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>              3.6%  ●···▃·▃·▃█·▃ beats 0/7    hard · avg 19%          9.0%  sharp
 <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>    9.0%  ●▄·▄·····█▄█ beats 0/7    hard · avg 19%          6.9%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>                 42.2%  ●··▄·▄·█··▄█ beats 0/7    medium · avg 49%        5.6%  at its level
-<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    2.7%  █●··█·█····▄ beats 2/7    very hard · avg 6.7%    3.4%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    2.7%  █●··█·█····▄ beats 2/7    very hard · avg 6.8%    3.4%  sharp · too hard for it · noisy
 </pre>
 
 </details>
 
 <details><summary>chat &amp; writing · #223 of 393 · 12% of its score</summary>
 
-Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [Gemma 3 4B](gemma-3-4b.md) here, though they rank lower overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Olmo 3.1 32B Think](olmo-3-1-32b-think.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -85,7 +85,7 @@ source                                    results  share of the score
 <a name="bfcl-result-archive-v4"></a><a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">Berkeley Function Calling Leaderboard r…</a>        2    9% ▇
 <a name="open-persian-llm-leaderboard"></a><a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2</a>                 1    7% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 44.2
+weighted average                                   = 44.1
 </pre>
 
 <sub>Licences: Cohere ([CC BY 4.0](../../licenses/report-2504.00698v2.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

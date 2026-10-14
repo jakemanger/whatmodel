@@ -6,7 +6,7 @@
 
 MedAIBase (Ant Group) · released 2025-12 · 102.89B params (6.1B active) · apache-2.0
 
-**score 54.6** ±4.4 · #328 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.5** ±4.4 · #330 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -33,7 +33,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>           1   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             9% ▇
-weighted average                        = 54.6
+weighted average                        = 54.5
 </pre>
 
 <sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>

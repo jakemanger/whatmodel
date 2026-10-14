@@ -6,7 +6,7 @@
 
 FreedomIntelligence (CUHK-SZ) · released 2023-08 · apache-2.0
 
-**score 35.6** ±2.2 · #798 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.6** ±2.2 · #800 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

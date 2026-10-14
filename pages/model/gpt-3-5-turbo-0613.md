@@ -26,7 +26,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   50.4%  ▁·▁▂▄▁●▄█▆▂▂ beats 14/62  medium · avg 54%        11%  at its level
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            88.0%  ▃▃▃·▆▃▃█▃▂▂● beats 24/25  very easy · avg 86%    3.3%  sharp
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            88.0%  ▃▃▃·▆▃▃█▃▂▂● beats 24/25  very easy · avg 86%    3.2%  sharp
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           49.0%  ▁··▁▅▂█▇●··▁ beats 21/22  medium · avg 54%       2.3%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           49.4%  ▁·▂▃▁█▁●···▁ beats 20/22  medium · avg 53%       2.2%  blunt · at its level
 </pre>
@@ -42,7 +42,7 @@ test                                                      result  vs the others 
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                             22.4%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 57/122  medium · avg 39%             20%  at its level
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                         24.8%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 24/60   medium · avg 52%             14%  sharp · at its level
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1161.0  ▂▁▂▁▃▇█▆●▄▂▂ beats 70/95   avg 1201                    5.7%  blunt
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.3900 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄●▆ beats 25/28   avg 8.819 MT-Bench scor…    5.0%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.3900 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂▄●▆ beats 25/28   avg 8.826 MT-Bench scor…    5.0%  sharp · noisy
 </pre>
 
 </details>

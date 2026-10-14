@@ -6,7 +6,7 @@
 
 OpenAccess AI Collective · released 2023-06 · apache-2.0
 
-**score 35.0** ±2.2 · #803 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.0** ±2.2 · #805 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

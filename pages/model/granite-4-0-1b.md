@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 1.63B params · apache-2.0
 
-**score 40.6** ±0.8 · #523 of 719 · from 32 benchmark results across 3 sources
+**score 40.5** ±0.8 · #523 of 719 · from 32 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -26,7 +26,7 @@ Beats [o3-mini](o3-mini.md), [Ministral 3 14B Reasoning 2512](ministral-3-14b-re
 
 <pre>
 test     result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3</a>   52.4%  ▄▄·······▄●█ beats 4/6    medium · avg 61%    1.7%  blunt · at its level · several runs
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3</a>   52.4%  ▄▄·······▄●█ beats 4/6    medium · avg 62%    1.7%  blunt · at its level · several runs
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Trails [Granite 4.0 H 1B](granite-4-0-h-1b.md) here, though they rank lower over
 
 <pre>
 test                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval (lab)</a>      74.0%  ▁▁▁▁▁▃▅▅●▃▂▁ beats 137/190  very easy · avg 90%    6.6%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval (lab)</a>      74.0%  ▁▁▁▁▁▃▅▅●▃▂▁ beats 137/190  very easy · avg 91%    6.6%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval+ (lab)</a>     69.0%  ▁·▁▁▂▃▄▄●▅▄▃ beats 76/145   very easy · avg 88%    5.9%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BigCodeBench (lab)</a>   30.2%  ▅····▃·●▃▅█▃ beats 5/12     medium · avg 42%       3.1%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MultiPL-E (lab)</a>      32.2%  ▃··●·▅▅▇▄█▃▄ beats 2/31     medium · avg 54%       3.0%  at its level
@@ -74,7 +74,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MGSM, 5 languages (en, es, fr, ja…</a>   37.8%  █·▄▄●█···█·▄ beats 4/10   medium · avg 49%        2.1%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                             44.8%  ▄··●▄·▄···▄▄ beats 1/6    easy · avg 80%          2.1%  at its level
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025</a>                             3.3%  ▄█··●···▄··█ beats 3/6    hard · avg 33%          1.9%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              0.8%  ●▃▄▃▃▃▇▇█▃▂▅ beats 6/193  very hard · avg 8.5%    0.3%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              0.8%  ●▃▄▃▃▃▇▇█▃▂▅ beats 6/193  very hard · avg 8.6%    0.3%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -106,7 +106,7 @@ source                                    results  share of the score
 <a name="card-liquidai-lfm2-5-1-2b-thinking"></a><a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">LiquidAI/LFM2.5-1.2B-Thinking model card</a>        8   20% ▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 40.6
+weighted average                                   = 40.5
 </pre>
 
 <sub>Licences: ibm-granite/granite-4.0-h-1b model card ([Apache-2.0](https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md)) · LiquidAI/LFM2.5-1.2B-Thinking model card ([LFM Open License v1.0](../../licenses/cards-gap-NOTICE.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -6,7 +6,7 @@
 
 Bud Ecosystem · released 2024-01 · 33.75B params · llama2
 
-**score 48.2** ±0.9 · #379 of 719 · from 3 benchmark results across 1 source
+**score 48.2** ±0.9 · #378 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 

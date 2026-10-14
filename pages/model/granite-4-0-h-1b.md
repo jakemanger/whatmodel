@@ -22,11 +22,11 @@ math            ▁▂▃●▆▅▄█▄▁▁▁    #325 of 398     29%     
 
 <details><summary>agent tasks · #245 of 300 · 1.8% of its score</summary>
 
-Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 3.3 70B Instruct](llama-3-3-70b.md) here, though they rank higher overall.
+Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md), [Magistral Small 1.0 (2506)](magistral-small-2506.md), [Llama 4 Scout (109B-A17B)](llama-4-scout.md) here, though they rank higher overall.
 
 <pre>
 test     result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3</a>   50.7%  ▄▄·······▄●█ beats 3/6    medium · avg 61%    1.8%  blunt · at its level · several runs
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3</a>   50.7%  ▄▄·······▄●█ beats 3/6    medium · avg 62%    1.8%  blunt · at its level · several runs
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Beats [Granite 4.0 1B](granite-4-0-1b.md) here, though they rank higher overall.
 
 <pre>
 test                result  vs the others in its run    difficulty           counts  why
-<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval (lab)</a>      73.0%  ▁▁▁▁▁▃▅▅●▃▂▁ beats 133/190  very easy · avg 90%    6.8%  sharp · at its level
+<a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval (lab)</a>      73.0%  ▁▁▁▁▁▃▅▅●▃▂▁ beats 133/190  very easy · avg 91%    6.8%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval+ (lab)</a>     68.0%  ▁·▁▁▂▃▄▄●▅▄▃ beats 73/145   very easy · avg 88%    6.2%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BigCodeBench (lab)</a>   29.1%  ▅····▃·●▃▅█▃ beats 4/12     medium · avg 42%       3.2%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MultiPL-E (lab)</a>      36.1%  ▃··●·▅▅▇▄█▃▄ beats 4/31     medium · avg 54%       3.1%  at its level

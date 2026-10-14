@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-04 · 7.25B params · tongyi-qianwen
 
-**score 50.4** ±0.7 · #336 of 719 · from 14 benchmark results across 3 sources
+**score 50.4** ±0.7 · #334 of 719 · from 14 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -26,7 +26,7 @@ test              result  vs the others in its run  difficulty        counts  wh
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>          83.5%  ▁·▁▁▃▄▆▅█●▁▁ beats 89/99  easy · avg 79%       36%  sharp · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>         78.7%  ▁·▁▁▁▃▄▄▄█●▁ beats 89/99  easy · avg 74%       31%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>              69.0%  ▁···▁▁▂▅▇█●▂ beats 61/75  easy · avg 68%      7.8%  at its level · several runs
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>         77.7%  █···██●·██·█ beats 3/6    easy · avg 78%      3.4%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>         77.7%  █···██●·██·█ beats 3/6    easy · avg 79%      3.4%  typical
 <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>    70.8%  ▄·▄····●▄·▄█ beats 2/6    easy · avg 71%      2.9%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>   44.0%  █·●█·█··█·██ beats 1/6    medium · avg 57%    1.4%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>   38.8%  ▄·●··▄·▄··▄▄ beats 2/6    medium · avg 55%    0.5%  blunt · at its level
@@ -39,7 +39,7 @@ test              result  vs the others in its run  difficulty        counts  wh
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        39.3%  ▃▂·▆▆██●▅▃▃▃ beats 24/33  medium · avg 41%    7.9%  at its level · several runs
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        43.7%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 39/58  medium · avg 50%    5.9%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        43.7%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 39/58  medium · avg 51%    5.9%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   74.1%  ▂·▂▂▂▆●▆▆▆▃█ beats 10/29  easy · avg 76%      2.9%  typical
 </pre>
 

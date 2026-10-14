@@ -27,7 +27,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 test                       result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                   30.0%  ▁·▁▁●▄▆▅█▃▁▁ beats 15/99  easy · avg 79%          33%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                  23.2%  ▁·▁▁▁●▄▄▄█▃▁ beats 11/99  easy · avg 74%          20%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                       34.7%  ▁···▁●▂▅▇█▆▂ beats 3/75   easy · avg 68%         4.3%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                       34.7%  ▁···▁●▂▅▇█▆▂ beats 3/75   easy · avg 68%         4.4%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>   54.3%  ▃▃▃·●▃▃█▃▂▂▅ beats 9/25   very easy · avg 86%    3.0%  sharp · at its level
 </pre>
 
@@ -41,7 +41,7 @@ Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-ins
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       13.2%  ▁▂▂▃●▆█▆▄▄▁▁ beats 32/122  medium · avg 39%       5.4%  typical
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1049.0  ▂▁▂▁▃●█▆▇▄▂▂ beats 25/95   avg 1201               3.6%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1130.8  ▁▁▁●▃▃▃▆▆▇█▃ beats 28/379  avg 1268               3.5%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1130.8  ▁▁▁●▃▃▃▆▆▇█▃ beats 28/379  avg 1268               3.6%  blunt
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>   90.6%  ▂▂·▆·▇▃▆●▆▄▂ beats 32/45   very easy · avg 96%    1.8%  sharp · at its level · noisy
 </pre>
 
@@ -62,7 +62,7 @@ test   result  vs the others in its run  difficulty      counts  why
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 16.7%  ▁▁▁▂●▃▂█▆▃▅▃ beats 10/61    medium · avg 41%    7.7%  typical
+<a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                 16.7%  ▁▁▁▂●▃▂█▆▃▅▃ beats 10/61    medium · avg 41%    7.8%  typical
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/HuggingFaceH4/zephyr-7b-beta/results_2024-02-11%2013%3A29%3A45.375857.json">Natural Questions (closed book)</a>      25.2%  ▁·▁·▁▂▁▂·▅▂● beats 20/28    medium · avg 58%    5.1%  typical
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       44.9%  ▁·····▂●▂▅·▁ beats 5/25     easy · avg 77%      4.3%  sharp
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 58.6%  ▁▁▃▃▄█●▁█··▁ beats 17/25    easy · avg 74%      3.2%  at its level · several runs

@@ -46,7 +46,7 @@ test         result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 48.5%  ▁·····▂●▂▅·▁ beats 8/25     easy · avg 77%       38%  sharp · at its level
 <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           50.4%  ▁▁▃▃▄●▄▁█··▁ beats 9/25     easy · avg 74%       14%  at its level
-<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.0%  ▃▁▁▁▁▁▁▁●█▅▁ beats 100/276  medium · avg 73%    5.3%  at its level · noisy
+<a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.0%  ▃▁▁▁▁▁▁▁●█▅▁ beats 100/276  medium · avg 73%    5.4%  at its level · noisy
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   46.4%  ▂··▁▃▂▂●█▅▁▂ beats 10/25    medium · avg 61%    4.9%  blunt · at its level
 </pre>
 

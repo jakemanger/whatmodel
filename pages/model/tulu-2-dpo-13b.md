@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 13B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 37.4** ±1.3 · #571 of 719 · from 8 benchmark results across 3 sources
+**score 37.3** ±1.3 · #571 of 719 · from 8 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -60,7 +60,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 49.4%  ▁·····▂●▂▅·▁ beats 12/25    easy · avg 77%       24%  sharp · at its level
 <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           55.3%  ▁▁▃▃▄█●▁█··▁ beats 15/25    easy · avg 74%      8.7%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   65.8%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 120/276  medium · avg 73%    3.2%  at its level · noisy
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   39.7%  ▂··▁▃●▂▂█▅▁▂ beats 6/25     medium · avg 61%    2.8%  blunt · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   39.7%  ▂··▁▃●▂▂█▅▁▂ beats 6/25     medium · avg 61%    2.9%  blunt · at its level
 </pre>
 
 </details>
@@ -75,7 +75,7 @@ source                               results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>        2   40% ▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>            1    3% ▇
 prior: pull toward the middle                   1% ▇
-weighted average                              = 37.4
+weighted average                              = 37.3
 </pre>
 
 <sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

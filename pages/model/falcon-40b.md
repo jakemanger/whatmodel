@@ -25,7 +25,7 @@ Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek
 <pre>
 test       result  vs the others in its run   difficulty      counts  why
 <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>   24.4%  ▁▁▁▁▁●▅▅█▃▂▁ beats 25/190  easy · avg 71%     11%  sharp · at its level
-<a href="https://arxiv.org/html/2404.06395v3">MBPP</a>        36.5%  ▁▁▁●▅█▄▅▃▁▂▁ beats 10/81   easy · avg 70%    6.3%  at its level
+<a href="https://arxiv.org/html/2404.06395v3">MBPP</a>        36.5%  ▁▁▁●▅█▄▅▃▁▂▁ beats 10/81   easy · avg 70%    6.2%  at its level
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/tiiuae/falcon-40b/results_2024-01-10%2008%3A05%3A28.458205.json">Natural Questions (closed book)</a>      32.0%  ▁·▁·▁▂▁▂·▅▂● beats 27/28   medium · avg 58%     18%  at its level
 <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                       36.2%  ▁▁▁▁▂●▅▅█▃▄▁ beats 17/129  medium · avg 68%     16%  sharp
 <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                        57.7%  ▆▁▁▂▂▅▇●▄▃▃▂ beats 68/97   easy · avg 88%       11%  sharp · at its level
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   26.6%  ▅····▃▅·█●·█ beats 8/13    medium · avg 59%    9.0%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   26.6%  ▅····▃▅·█●·█ beats 8/13    medium · avg 60%    9.0%  at its level
 <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                                 53.5%  ▁▁▁▁▁▂▃●█▃▆▃ beats 47/183  easy · avg 80%      7.6%  at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   42.3%  ▃▅▃··▅▃·●▃▃▅ beats 9/13    easy · avg 67%      6.4%  at its level
 <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                               40.3%  ▁···▁▁●▁▂▂▃█ beats 3/33    medium · avg 62%    2.8%  noisy

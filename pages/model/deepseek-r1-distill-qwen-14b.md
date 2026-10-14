@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 14.8B params · mit
 
-**score 55.7** ±1.1 · #252 of 719 · from 18 benchmark results across 8 sources
+**score 55.6** ±1.1 · #252 of 719 · from 18 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -27,7 +27,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspecifie…</a>   53.1%  ▄····▄▄··●█▄ beats 3/6    medium · avg 41%    9.2%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   53.2%  █▂▁▁▂▂▂▃▅▅●▇ beats 37/47  medium · avg 36%    3.6%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   31.3%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 25/47  hard · avg 33%      2.4%  at its level
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   66.8%  ▃··▁▂▂▃▂█●▄▂ beats 36/47  medium · avg 54%    2.3%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   66.8%  ▃··▁▂▂▃▂█●▄▂ beats 36/47  medium · avg 54%    2.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   72.7%  ▁▁▁······▁▃● beats 23/47  easy · avg 67%      0.0%  blunt · at its level · noisy
 </pre>
 
@@ -39,8 +39,8 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [Mistral Medium 3.5 (128B)](mistral-mediu
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         87.1%  ▂▂▅▆▄█▆▃●▂▃▄ beats 73/92   hard · avg 32%           24%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             50.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 76/193  very hard · avg 8.5%    7.5%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         87.1%  ▂▂▅▆▄█▆▃●▂▃▄ beats 73/92   hard · avg 33%           24%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             50.6%  ▃▃▄▃▃▃●▇█▃▂▅ beats 76/193  very hard · avg 8.6%    7.5%  sharp · noisy
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                      69.7%  ▃·▃·▃▃···●·▃ beats 4/7     medium · avg 50%        3.4%  sharp · at its level · noisy
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                       93.9%  ▄·▄▄·▄●█···▄ beats 4/7     very easy · avg 91%     2.8%  maxed out
 <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accuracy…</a>   70.2%  ▄●·▄····▄▄·█ beats 2/7     easy · avg 76%          2.1%  typical
@@ -78,7 +78,7 @@ source                                    results  share of the score
 <a name="paper-2505.22113v1-thinkbench"></a><a href="https://arxiv.org/html/2505.22113v1">THINK-Bench: Evaluating Thinking Effici…</a>        1    2% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.7
+weighted average                                   = 55.6
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

@@ -6,7 +6,7 @@
 
 DeepReinforce · released 2026-08 · 35.95B params (3B active) · mit
 
-**score 70.6** ±1.5 · #78 of 719 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 70.5** ±1.5 · #77 of 719 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -21,18 +21,18 @@ web search   █··········●      #1 of 2     17%      3
 
 <details><summary>agent tasks · #67 of 300 · 68% of its score</summary>
 
-Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md) here, though they rank lower overall.
+Beats [Gemini 3.6 Flash](gemini-3-6-flash.md), [GPT-5 Pro](gpt-5-pro.md), [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [MiMo-V2.5 (310B-A15B)](mimo-v2-5.md), [MiniMax-M3](minimax-m3.md), [Qwen3.5 397B-A17B](qwen3-5-397b-a17b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Pro (split unspecified)…</a>   59.6%  ▃·▁▁▁▂▂▃█●▃▁ beats 40/55    very hard · avg 10%     13%  sharp · at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Verified (lab)</a>             79.0%  ▁▁▁▁▁▁▂▄█●▁▁ beats 123/131  hard · avg 26%          11%  sharp · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Terminal-Bench 2.1 (lab)</a>             67.8%  ▁·▁·▁▁▄▃▄●▃▇ beats 33/56    hard · avg 18%          10%  at its level · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Multilingual (lab)</a>         71.4%  ▁··▁▃▂▅▇●▃▃▁ beats 36/60    hard · avg 28%         7.3%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Terminal-Bench 2.1 (lab)</a>             67.8%  ▁·▁·▁▁▄▃▄●▃▇ beats 33/56    hard · avg 19%          10%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Multilingual (lab)</a>         71.4%  ▁··▁▃▂▅▇●▃▃▁ beats 36/60    hard · avg 29%         7.3%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">BrowseComp (lab)</a>                     67.6%  ▂·▄▁▂▃▆▄●▂▃▄ beats 30/42    hard · avg 23%         7.0%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">MCP-Atlas (public set) (lab)</a>         70.2%  ▂·▁▂▁·▁▃█●▆▂ beats 25/37    hard · avg 29%         6.5%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with tools (…</a>   33.4%  ▂▂▂▁●▂▃▆█▇▂▆ beats 12/54    very hard · avg 13%    5.4%  at its level · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">WideSearch (lab)</a>                     67.8%  █·▂●··▂···▂▂ beats 6/10     medium · avg 35%       4.5%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">WideSearch (lab)</a>                     67.8%  █·▂●··▂···▂▂ beats 6/10     medium · avg 36%       4.5%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Toolathlon-Verified (lab)</a>            48.7%  ▂·▂▂●▃···▂██ beats 4/18     hard · avg 27%         3.5%  blunt · at its level · small run
 </pre>
 
@@ -46,7 +46,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [Gemini
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Pro (split unspecified)…</a>   59.6%  ▃·▁▁▁▂▂▃█●▃▁ beats 40/55    very hard · avg 10%     13%  sharp · at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Verified (lab)</a>             79.0%  ▁▁▁▁▁▁▂▄█●▁▁ beats 123/131  hard · avg 26%          11%  sharp · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Multilingual (lab)</a>         71.4%  ▁··▁▃▂▅▇●▃▃▁ beats 36/60    hard · avg 28%         7.3%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Multilingual (lab)</a>         71.4%  ▁··▁▃▂▅▇●▃▃▁ beats 36/60    hard · avg 29%         7.3%  at its level · small run
 </pre>
 
 </details>
@@ -57,7 +57,7 @@ test                                result  vs the others in its run    difficul
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">BrowseComp (lab)</a>                     67.6%  ▂·▄▁▂▃▆▄●▂▃▄ beats 30/42  hard · avg 23%         7.0%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with tools (…</a>   33.4%  ▂▂▂▁●▂▃▆█▇▂▆ beats 12/54  very hard · avg 13%    5.4%  at its level · small run
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">WideSearch (lab)</a>                     67.8%  █·▂●··▂···▂▂ beats 6/10   medium · avg 35%       4.5%  at its level · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">WideSearch (lab)</a>                     67.8%  █·▂●··▂···▂▂ beats 6/10   medium · avg 36%       4.5%  at its level · small run
 </pre>
 
 </details>
@@ -66,7 +66,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                        result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">GPQA Diamond (lab)</a>           89.2%  ▁▁▁▁▂▄▅▅██●▄ beats 258/310  hard · avg 45%           15%  sharp · small run
+<a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">GPQA Diamond (lab)</a>           89.2%  ▁▁▁▁▂▄▅▅██●▄ beats 258/310  hard · avg 46%           15%  sharp · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam (lab)</a>   25.6%  ▁▁▁▃▆▆▇●█▆▁▃ beats 61/104   very hard · avg 4.8%    8.8%  at its level · small run
 <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">NL2Repo (lab)</a>                46.2%  ▂▂·▂▂▄█▆●▂▄▆ beats 15/21    very hard · avg 11%     7.0%  at its level · small run
 </pre>
@@ -81,7 +81,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card3-ornith-ai-ornith-1-5-35b-a3b"></a><a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">ornith-ai/Ornith-1.5-35B-A3B model card…</a>       12   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 70.6
+weighted average                                   = 70.5
 </pre>
 
 <sub>Licences: ornith-ai/Ornith-1.5-35B-A3B model card ([MIT](https://opensource.org/licenses/MIT))</sub>

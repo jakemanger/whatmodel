@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 2.51B params · gemma
 
-**score 28.9** ±0.6 · #648 of 719 · from 37 benchmark results across 9 sources
+**score 28.9** ±0.6 · #649 of 719 · from 37 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -26,7 +26,7 @@ Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            25.0%  ▁·▁▁●▄▆▅█▃▁▁ beats 9/99   easy · avg 79%       38%  sharp · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           20.7%  ▁·▁▁▁●▄▄▄█▃▁ beats 8/99   easy · avg 74%       14%  sharp
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   17.2%  ▁·●▁▂▆▅█▄▄▁▂ beats 1/35   medium · avg 64%    4.3%  typical
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   17.2%  ▁·●▁▂▆▅█▄▄▁▂ beats 1/35   medium · avg 65%    4.3%  typical
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                34.1%  ▁···▁●▂▅▇█▆▂ beats 2/75   easy · avg 68%      3.7%  at its level
 <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                           29.2%  ▁▁●▄▅█▄▅▃▁▂▁ beats 5/81   easy · avg 74%      3.0%  at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   10.9%  ●▇█▃▄▇▄▁▇▃·▁ beats 1/35   medium · avg 49%    2.0%  typical
@@ -62,7 +62,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">OpenBookQA (lab)</a>                     47.8%  █▁▁▁▄▃▃●▂▁▄▂ beats 42/65   easy · avg 74%         1.3%  small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BoolQ (lab)</a>                          69.4%  ▁▄▅▆▂●▄▄█▃▄▄ beats 20/58   easy · avg 92%         1.3%  at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MMLU (lab)</a>                           42.3%  ▁▁▁▁▁▂●▅█▃▆▃ beats 21/183  easy · avg 81%         1.2%  at its level · small run
-<a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (lab)</a>                      71.4%  ▁▁▁▁▂▂▃▇●▆▅▃ beats 43/85   very easy · avg 90%    1.1%  at its level · small run
+<a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (lab)</a>                      71.4%  ▁▁▁▁▂▂▃▇●▆▅▃ beats 43/85   very easy · avg 90%    1.0%  at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report) (l…</a>   24.2%  ●··········█ beats 0/2     easy · avg 65%         0.9%  at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">CommonsenseQA (lab)</a>                  65.3%  ▄·▄▄·▄····●█ beats 4/6     easy · avg 84%         0.8%  at its level · small run
 <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Easy (lab)</a>                       73.2%  ▁▂▃▂▃▅▇█▇●▄▆ beats 50/65   very easy · avg 90%    0.7%  at its level · small run

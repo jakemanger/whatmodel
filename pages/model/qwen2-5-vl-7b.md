@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 8.29B params · apache-2.0
 
-**score 49.8** ±1.0 · #347 of 719 · from 14 benchmark results across 2 sources
+**score 49.7** ±1.0 · #349 of 719 · from 14 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -41,11 +41,11 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>           68.2%  ▃··▃▅·●█▅▅▅█ beats 4/16   medium · avg 69%        12%  at its level
 <a href="https://arxiv.org/html/2502.13923v1">MMStar (lab)</a>                         63.9%  ▂··▄▂●·▄█▂▄▆ beats 4/16   medium · avg 65%        10%  at its level
 <a href="https://arxiv.org/html/2502.13923v1">MMMU Pro (lab)</a>                       38.3%  ▃·●·▅▃▃▃▅▅▃█ beats 3/16   medium · avg 46%       7.9%  at its level
-<a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   23.3%  ▁·▁·●▃▁▇▃█·▄ beats 3/22   hard · avg 27%         4.1%  blunt · at its level
+<a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   23.3%  ▁·▁·●▃▁▇▃█·▄ beats 3/22   hard · avg 27%         4.2%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">HallusionBench (lab)</a>                 52.9%  ▃·▃·▅●▅▅▃▅█▅ beats 4/16   medium · avg 55%       4.1%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">ChartQA (lab)</a>                        87.3%  ▂··▂·▂▃·●▂▆█ beats 7/17   easy · avg 85%         3.4%  blunt
 <a href="https://arxiv.org/html/2502.13923v1">DocVQA (lab)</a>                         95.7%  ▃··▅▃▅▃█●█▅▅ beats 10/17  very easy · avg 94%    3.2%  blunt · maxed out
-<a href="https://arxiv.org/html/2502.13923v1">RealWorldQA (lab)</a>                    68.5%  ▅▃·●▅▅·█·▃▅█ beats 3/16   easy · avg 70%         3.0%  blunt · at its level
+<a href="https://arxiv.org/html/2502.13923v1">RealWorldQA (lab)</a>                    68.5%  ▅▃·●▅▅·█·▃▅█ beats 3/16   easy · avg 71%         3.0%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">CC-OCR (lab)</a>                         77.8%  ▃··▃▅·▅●·█▅▃ beats 7/13   easy · avg 74%         2.0%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">OCRBench (lab)</a>                       86.4%  ▅█·▃▃●▃▅▅▃·▃ beats 8/16   easy · avg 84%         1.1%  blunt
 <a href="https://arxiv.org/html/2502.13923v1">TextVQA (lab)</a>                        84.9%  █······▄·▄●▄ beats 4/5    easy · avg 80%         0.6%  blunt
@@ -62,7 +62,7 @@ source                                    results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2502.13923v1">Qwen (lab)</a>                                     13   95% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 49.8
+weighted average                                   = 49.7
 </pre>
 
 <sub>Licences: ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

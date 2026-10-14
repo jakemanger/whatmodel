@@ -6,7 +6,7 @@
 
 LAION (OpenAssistant) · released 2023-05 · apache-2.0
 
-**score 26.1** ±2.8 · #890 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 26.1** ±2.8 · #892 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

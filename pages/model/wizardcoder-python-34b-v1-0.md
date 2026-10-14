@@ -6,7 +6,7 @@
 
 WizardLM · released 2023-08 · 34B params · llama2
 
-**score 45.8** ±0.7 · #430 of 719 · from 8 benchmark results across 4 sources
+**score 45.7** ±0.7 · #430 of 719 · from 8 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -25,7 +25,7 @@ Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7
 test        result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>    73.2%  ▁·▁▁▃▄▆▅●▃▁▁ beats 66/99  easy · avg 79%       54%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>   64.6%  ▁·▁▁▁▃▄▄▄●▃▁ beats 59/99  easy · avg 74%       26%  sharp · at its level
-<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        63.2%  ▁···▁▁▂▅▇●▆▂ beats 44/75  easy · avg 68%      4.6%  at its level
+<a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>        63.2%  ▁···▁▁▂▅▇●▆▂ beats 44/75  easy · avg 68%      4.7%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>   42.7%  ▁··▁▅▂█●▁··▁ beats 15/22  medium · avg 54%    1.6%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>   43.4%  ▁·▂▃▁●▁▂···▁ beats 16/22  medium · avg 53%    1.5%  blunt · at its level
 </pre>
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="first-party-wizardlm-scores"></a><a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">WizardLM team vendor-reported scores fo…</a>        1    4% ▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 45.8
+weighted average                                   = 45.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

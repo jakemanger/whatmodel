@@ -24,7 +24,7 @@ Beats [Gemma 3 4B](gemma-3-4b.md) here, though they rank higher overall. Trails 
 <pre>
 test                                 result  vs the others in its run  difficulty      counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>       963.7  ▁▁●▂▂▂▄▅▅▆██ beats 4/145  avg 1068           49%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -8.5000  ▃▃▃·▃●·▅▃▃▃▃ beats 6/12   avg -0.671         33%  typical
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -8.5000  ▃▃▃·▃●·▅▃▃▃▃ beats 6/12   avg -0.412         33%  typical
 <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>                         81.0%  ▁··▁▁▁▁▁▂●▅█ beats 15/44  easy · avg 81%    6.5%  blunt · small run
 <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (lab)</a>                        75.6%  ▁·▃●▆▅▂█▅█▁▃ beats 4/37   easy · avg 82%    5.2%  blunt · small run
 <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>                         84.2%  ▁▁▁▄▅▁▃·▃▃▃● beats 19/24  easy · avg 78%    3.0%  blunt · small run

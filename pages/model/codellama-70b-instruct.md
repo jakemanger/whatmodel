@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 69B params · llama2
 
-**score 46.1** ±0.6 · #417 of 719 · from 13 benchmark results across 7 sources
+**score 46.0** ±0.6 · #418 of 719 · from 13 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -26,7 +26,7 @@ Beats [Solar Open 100B (102B-A12B)](solar-open-100b.md), [GLM-4.7-Flash](glm-4-7
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            72.0%  ▁·▁▁▃▄▆▅●▃▁▁ beats 63/99  easy · avg 79%       43%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           65.9%  ▁·▁▁▁▃▄▄▄●▃▁ beats 62/99  easy · avg 74%       19%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   58.9%  ▁·▂▁▂▆▅█▄▄●▂ beats 33/35  medium · avg 64%    5.2%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   58.9%  ▁·▂▁▂▆▅█▄▄●▂ beats 33/35  medium · avg 65%    5.2%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   41.1%  ▄▇█▃▄▇▄▁●▃·▁ beats 32/35  medium · avg 49%    4.0%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   53.0%  ▁·▁▁▄██▄█▁▅● beats 34/35  medium · avg 56%    3.9%  sharp · at its level
 <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                           62.2%  ▃▃▃█··▃▅··●▃ beats 9/11   easy · avg 73%      3.3%  at its level
@@ -52,7 +52,7 @@ test                                result  vs the others in its run   difficult
 test                     result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>         47.7%  ▂▂▃▄▄█▁▄●▃▁▃ beats 33/42  medium · avg 55%    8.9%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   40.5%  ▃▂·▆▆██▆●▃▃▃ beats 26/33  medium · avg 41%    3.4%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   48.9%  ▂▁▁▄▂▅▇█●▂▂▂ beats 49/58  medium · avg 50%    3.4%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   48.9%  ▂▁▁▄▂▅▇█●▂▂▂ beats 49/58  medium · avg 51%    3.4%  at its level
 </pre>
 
 </details>
@@ -71,7 +71,7 @@ source                                    results  share of the score
 <a name="paper-2409.00696v3-polyrating"></a><a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating: A Cost-Effective and Bias-A…</a>        1    3% ▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    3% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 46.1
+weighted average                                   = 46.0
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

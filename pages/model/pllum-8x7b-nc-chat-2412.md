@@ -6,7 +6,7 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 46.7B params (12.9B active) · cc-by-nc-4.0
 
-**score 46.6** ±3.8 · #536 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.6** ±3.8 · #537 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 46.7B params (12.9B active)
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   60.6%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 34/95  easy · avg 66%     93%  at its level
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   60.6%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 34/95  easy · avg 66%     94%  at its level
 </pre>
 
 </details>
@@ -31,8 +31,8 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                         results  share of the score
-<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                     1   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior: pull toward the middle             7% ▇
+<a name="speakleash-cptub"></a><a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">SpeakLeash CPTUB</a>                     1   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior: pull toward the middle             6% ▇
 weighted average                        = 46.6
 </pre>
 

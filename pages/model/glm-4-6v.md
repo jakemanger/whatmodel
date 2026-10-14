@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 106B params · mit
 
-**score 62.2** ±1.7 · #175 of 719 · from 10 benchmark results across 3 sources
+**score 62.1** ±1.7 · #175 of 719 · from 10 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-document w…</a>   42.4%  ▃●···█▃▅▃·▃▅ beats 1/11    hard · avg 26%      8.5%  blunt · at its level
 <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (lab)</a>                     76.0%  ▁····▁▁▄█▇●▆ beats 41/52   medium · avg 58%    8.5%  at its level · small run
 <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (lab)</a>                       66.0%  ▂▃▁▃▆▇▃●▇██▅ beats 26/52   medium · avg 46%    8.0%  at its level · small run
-<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                         75.9%  ▃▅▂▃▂▂▆█●▆█▅ beats 22/34   medium · avg 63%    6.3%  at its level · small run
+<a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                         75.9%  ▃▅▂▃▂▂▆█●▆█▅ beats 22/34   medium · avg 63%    6.2%  at its level · small run
 <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">OCRBench (lab)</a>                       86.5%  ▁·▃▁▆▅▂●▅█▁▃ beats 21/37   easy · avg 83%      1.9%  blunt · small run
 </pre>
 
@@ -66,7 +66,7 @@ source                                    results  share of the score
 <a name="glm-v-github-bench-image"></a><a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">Z.ai GLM-V GitHub repository benchmark …</a>        7   45% ▇▇▇▇▇
 <a name="paper-2609.05141v2-scidocbench"></a><a href="https://arxiv.org/html/2609.05141v2">SciDocBench: A Workflow-Centered Benchm…</a>        1    9% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.2
+weighted average                                   = 62.1
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Z.ai GLM-V GitHub repository benchmark image ([Apache-2.0](https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/LICENSE)) · SciDocBench: A Workflow-Centered Benchmark and Data Pipeline for Scientific Document Understanding ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

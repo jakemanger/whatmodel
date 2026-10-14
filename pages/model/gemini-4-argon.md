@@ -6,7 +6,7 @@
 
 Google · released 2026-09 · proprietary
 
-**score 81.8** ±1.4 · #9 of 719 · from 5 benchmark results across 2 sources
+**score 81.7** ±1.4 · #9 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -16,7 +16,7 @@ Google · released 2026-09 · proprietary
 task            vs the others        rank  counts  tests
 agent tasks     ▁▁▃▆█▆▅▅▅▄●▁   #9 of 300*     43%      3
 coding          ▁▁▁▃▆██▇▆▄●▁   #8 of 458*     38%      2
-chat &amp; writing  ▁▁▁▃▅▄▅█▆▆▇●   #1 of 393*     18%      1
+chat &amp; writing  ▁▁▁▃▅▄▅█▆▆▇●   #1 of 393*     19%      1
 </pre>
 
 <details><summary>agent tasks · #9 of 300 · 43% of its score</summary>
@@ -25,7 +25,7 @@ Beats [GPT-5.5 Pro](gpt-5-5-pro.md) here, though they rank higher overall. Trail
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0757 IPS  ▁▁▁▄▂▃▇█▂●▁▃ beats 41/49  avg -0.312 IPS           37%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0757 IPS  ▁▁▁▄▂▃▇█▂●▁▃ beats 41/49  avg -0.310 IPS           37%  sharp
 <a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (lab)</a>            77.9%  ▂····▁▁▁▆██● beats 28/28  hard · avg 23%          5.6%  at its level · small run
 <a href="https://deepmind.google/models/gemini/#performance">Terminal-Bench 4.0 (lab)</a>                 57.4%  ▁·▁··▁▇▇▅█●▃ beats 25/30  very hard · avg 0.4%       —  not counted yet: no other model in the …
 </pre>
@@ -36,19 +36,19 @@ test                                    result  vs the others in its run  diffic
 
 <pre>
 test                           result  vs the others in its run    difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>      1679.5  ▁▂▄▃▅█▄▇▆●▁▁ beats 112/119  avg 981            33%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>      1679.5  ▁▂▄▃▅█▄▇▆●▁▁ beats 112/119  avg 983            33%  sharp
 <a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (lab)</a>   77.9%  ▂····▁▁▁▆██● beats 28/28    hard · avg 23%    5.6%  at its level · small run
 </pre>
 
 </details>
 
-<details><summary>chat &amp; writing · #1 of 393 · 18% of its score</summary>
+<details><summary>chat &amp; writing · #1 of 393 · 19% of its score</summary>
 
 Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [GPT-6.1 Sol](gpt-6-1-sol.md) here, though they rank higher overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1525.2  ▁▁▁▂▃▃▃▆▆▇█● beats 379/379  avg 1268       18%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1525.2  ▁▁▁▂▃▃▃▆▆▇█● beats 379/379  avg 1268       19%  blunt
 </pre>
 
 </details>
@@ -57,7 +57,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <pre>
 test           result  vs the others in its run  difficulty        counts  why
-<a href="https://deepmind.google/models/gemini/#performance">LVBench (lab)</a>   91.7%  ▇·█▅▅▄▄··▃▁● beats 28/28  medium · avg 57%    5.1%  typical
+<a href="https://deepmind.google/models/gemini/#performance">LVBench (lab)</a>   91.7%  ▇·█▅▅▄▄··▃▁● beats 28/28  medium · avg 58%    5.1%  typical
 </pre>
 
 </details>
@@ -71,7 +71,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     3   88% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="first-party-google-scores"></a><a href="https://deepmind.google/models/gemini/#performance">Google DeepMind Gemini model page and m…</a>        2   11% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 81.8
+weighted average                                   = 81.7
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

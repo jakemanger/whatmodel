@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-02 · 230B params (10B active) · modified-mit
 
-**score 65.9** ±1.2 · #131 of 719 · from 11 benchmark results across 9 sources
+**score 65.8** ±1.2 · #131 of 719 · from 11 benchmark results across 9 sources
 
 ## What it's good at
 
@@ -26,7 +26,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [o3-p
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
 <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (33 ob…</a>   62.6%  ▆··▆▄▂▄▂▆●█▄ beats 17/23  very hard · avg 14%      12%  sharp · at its level
-<a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test Wri…</a>   15.2%  ●·▄··█···▄·█ beats 0/6    very hard · avg 6.1%    5.2%  typical
+<a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test Wri…</a>   15.2%  ●·▄··█···▄·█ beats 0/6    very hard · avg 6.1%    5.1%  typical
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   14.8%  ▃··▃·▃●█▃▃▃█ beats 4/14   very hard · avg 2.3%    4.7%  sharp · noisy
 </pre>
 
@@ -38,8 +38,8 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [Grok 4.3](grok-4-3.md), [Muse
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1386.2  ▁▂▄▃▅●▄▇▆▄▁▁ beats 39/119  avg 981                  23%  sharp
-<a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test Wri…</a>   15.2%  ●·▄··█···▄·█ beats 0/6     very hard · avg 6.1%    5.2%  typical
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1386.2  ▁▂▄▃▅●▄▇▆▄▁▁ beats 39/119  avg 983                  23%  sharp
+<a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test Wri…</a>   15.2%  ●·▄··█···▄·█ beats 0/6     very hard · avg 6.1%    5.1%  typical
 <a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench (test split, 50 w…</a>   14.8%  ▃··▃·▃●█▃▃▃█ beats 4/14    very hard · avg 2.3%    4.7%  sharp · noisy
 </pre>
 
@@ -60,7 +60,7 @@ test            result  vs the others in its run    difficulty  counts  why
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/minimax-m2.5">ARC-AGI-1 public evaluation set (…</a>   59.1%  ▁·▇▃▁·●▇▁·▇▃ beats 12/27  very hard · avg 4.1%     11%  sharp · at its level · noisy
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/minimax-m2.5">ARC-AGI-1 public evaluation set (…</a>   59.1%  ▁·▇▃▁·●▇▁·▇▃ beats 12/27  very hard · avg 4.2%     11%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-sci…</a>   42.8%  ▅··▃▅·●·▃██▃ beats 6/15   hard · avg 24%          9.3%  at its level
 <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   30.3%  ▁▁▂▁▃▄█●▄▅▂▃ beats 23/39  very hard · avg 22%     8.6%  blunt · at its level
 <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                        27.1%  ▃·●▅█·▅█▅▃▃▃ beats 2/17   very hard · avg 11%     6.5%  at its level
@@ -86,7 +86,7 @@ source                                    results  share of the score
 <a name="paper-2603.04601v3-vibe-code-bench"></a><a href="https://arxiv.org/abs/2603.04601v3">Vibe Code Bench</a>                                 1    5% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 65.9
+weighted average                                   = 65.8
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SWE Atlas: Benchmarking Coding Agents Beyond Issue Resolution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vibe Code Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

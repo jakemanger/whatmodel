@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 480B params (35B active) · apache-2.0
 
-**score 64.0** ±1.2 · #157 of 719 · from 10 benchmark results across 4 sources
+**score 63.9** ±1.2 · #157 of 719 · from 10 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -25,10 +25,10 @@ Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deep
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   23.9%  ▃··▃·▃▃●█▅▃▅ beats 4/14     very hard · avg 5.8%     11%  sharp
+<a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Terminus …</a>   23.9%  ▃··▃·▃▃●█▅▃▅ beats 4/14     very hard · avg 5.9%     11%  sharp
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (lab)</a>             67.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 74/131   hard · avg 28%          8.0%  sharp · at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>                 77.5%  ▁····▃·▂▇█▂● beats 23/28    medium · avg 45%        5.9%  small run
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>         54.7%  ▁··▁▃▂●▇█▃▃▁ beats 15/60    hard · avg 24%          5.2%  at its level · small run
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>         54.7%  ▁··▁▃▂●▇█▃▃▁ beats 15/60    hard · avg 25%          5.2%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (lab)</a>                60.0%  ▁▁▁·▅▄▁█▇▁▁● beats 26/28    hard · avg 29%          4.6%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">BFCL v3 (lab)</a>                        68.7%  ▁▁▁▁▁▃▅█▆●▄▁ beats 143/170  medium · avg 57%        1.6%  blunt · at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live (lab)</a>                 26.3%  █··········● beats 1/1                                 —  not counted yet: no other model in the …
@@ -42,11 +42,11 @@ Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](gemini-3-1-fl
 
 <pre>
 test                                result  vs the others in its run   difficulty           counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1274.2  ▁▂▄●▅█▄▇▆▄▁▁ beats 18/119  avg 981                 24%  sharp
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises, tw…</a>   61.8%  ▂▁▁▃▆▃▄▆●▃▄▂ beats 55/71   very hard · avg 10%     20%  sharp · at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1274.2  ▁▂▄●▅█▄▇▆▄▁▁ beats 18/119  avg 983                 24%  sharp
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises, tw…</a>   61.8%  ▂▁▁▃▆▃▄▆●▃▄▂ beats 55/71   very hard · avg 11%     20%  sharp · at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (lab)</a>             67.0%  ▁▁▁▁▁▁▂▄●▆▁▁ beats 74/131  hard · avg 28%         8.0%  sharp · at its level · small run
-<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   61.2%  ▁··▁·▁▁▁▆●▇█ beats 15/45   hard · avg 32%         6.5%  at its level
-<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>         54.7%  ▁··▁▃▂●▇█▃▃▁ beats 15/60   hard · avg 24%         5.2%  at its level · small run
+<a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   61.2%  ▁··▁·▁▁▁▆●▇█ beats 15/45   hard · avg 32%         6.6%  at its level
+<a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>         54.7%  ▁··▁▃▂●▇█▃▃▁ beats 15/60   hard · avg 25%         5.2%  at its level · small run
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live (lab)</a>                 26.3%  █··········● beats 1/1                               —  not counted yet: no other model in the …
 </pre>
 
@@ -74,7 +74,7 @@ source                                    results  share of the score
 <a name="paper-2601.11868v1"></a><a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench: Benchmarking Agents on …</a>        1   11% ▇
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    7% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 64.0
+weighted average                                   = 63.9
 </pre>
 
 <sub>Licences: Qwen/Qwen3-Coder-30B-A3B-Instruct model card ([Apache-2.0](../../licenses/card-qwen-qwen3-coder-30b-a3b-instruct.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt))</sub>

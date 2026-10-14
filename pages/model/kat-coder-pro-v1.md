@@ -6,7 +6,7 @@
 
 Kuaishou (Kwaipilot) · released 2025-10 · closed weights
 
-**score 62.1** ±2.5 · #190 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.9** ±2.5 · #193 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -23,7 +23,7 @@ Beats [Gemini 2.5 Pro](gemini-2-5-pro.md), [Qwen3-Coder-Next (80B-A3B)](qwen3-co
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1255.3  ▁▂●▃▅█▄▇▆▄▁▁ beats 14/119  avg 981        97%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1255.3  ▁▂●▃▅█▄▇▆▄▁▁ beats 14/119  avg 983        97%  sharp
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             3% ▇
-weighted average                        = 62.1
+weighted average                        = 61.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

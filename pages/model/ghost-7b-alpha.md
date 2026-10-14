@@ -48,7 +48,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                results  share of the score
 <a name="alpaca-eval-leaderboard-apache"></a><a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 1.0 and 2.0 leaderboards</a>         2   56% ▇▇▇▇▇▇▇
 <a name="openlifescienceai-results-apache"></a><a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/ghost-x/ghost-7b-alpha/results_2024-04-23%2007%3A04%3A42.080410.json">Open Medical-LLM Leaderboard results</a>        3   42% ▇▇▇▇▇
-prior: pull toward the middle                    2% ▇
+prior: pull toward the middle                    1% ▇
 weighted average                               = 31.8
 </pre>
 

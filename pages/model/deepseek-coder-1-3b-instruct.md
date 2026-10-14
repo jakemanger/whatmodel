@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 1.35B params · deepseek
 
-**score 42.6** ±0.6 · #491 of 719 · from 14 benchmark results across 6 sources
+**score 42.6** ±0.6 · #490 of 719 · from 14 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -28,7 +28,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>    6.5%  ▁●·▁▂▄▆█▅▂·▂ beats 1/31   hard · avg 26%      4.3%  sharp
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                54.8%  ▁···▁▁▂▅●█▆▂ beats 28/75  easy · avg 68%      4.0%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           27.2%  ▁··●▅▂█▇▁··▁ beats 1/22   medium · avg 54%    1.3%  at its level
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           28.7%  ▁·●▃▁█▁▂···▁ beats 1/22   medium · avg 53%    1.3%  blunt · at its level
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           28.7%  ▁·●▃▁█▁▂···▁ beats 1/22   medium · avg 53%    1.2%  blunt · at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    0.0%  ●··▁▂▂▃▂█▃▄▂ beats 3/47   medium · avg 54%    0.8%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.0%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 4/47   medium · avg 36%    0.7%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   11.7%  ▁▁▁▁▁●▂▂▃█▅▄ beats 7/47   hard · avg 33%      0.6%  typical
@@ -42,7 +42,7 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>         34.9%  ▂▂▃▄▄●▁▄▅▃▁▃ beats 24/42  medium · avg 55%     10%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   29.3%  ▂▁▁●▂▅▇█▆▂▂▂ beats 10/58  medium · avg 50%    3.8%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   29.3%  ▂▁▁●▂▅▇█▆▂▂▂ beats 10/58  medium · avg 51%    3.8%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   22.7%  ●▂·▆▆██▆▅▃▃▃ beats 1/33   medium · avg 41%    3.7%  at its level
 </pre>
 

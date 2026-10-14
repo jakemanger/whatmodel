@@ -6,7 +6,7 @@
 
 Cohere · released 2026-08 · 2.4B params · apache-2.0
 
-**score 40.7** ±1.9 · #521 of 719 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 40.6** ±1.9 · #522 of 719 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -53,8 +53,8 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU (lab)</a>                           50.4%  ▄·····●▄··▄█ beats 1/5    medium · avg 70%     15%  at its level
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU-Pro (lab)</a>                       30.7%  █●·······▄▄▄ beats 2/5    medium · avg 50%     14%  at its level
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified…</a>   37.3%  ▄·●··█▄····▄ beats 1/5    medium · avg 58%    6.4%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU-Pro (lab)</a>                       30.7%  █●·······▄▄▄ beats 2/5    medium · avg 51%     14%  at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified…</a>   37.3%  ▄·●··█▄····▄ beats 1/5    medium · avg 59%    6.4%  blunt · at its level
 </pre>
 
 </details>
@@ -67,7 +67,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="card2-coherelabs-north-micro-vision-instruct"></a><a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CohereLabs/North-Micro-Vision-Instruct …</a>       13   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 40.7
+weighted average                                   = 40.6
 </pre>
 
 <sub>Licences: CohereLabs/North-Micro-Vision-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

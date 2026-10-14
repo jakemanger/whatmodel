@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · proprietary
 
-**score 62.1** ±1.1 · comparison only: no current run option verified · from 16 benchmark results across 7 sources
+**score 62.0** ±1.1 · comparison only: no current run option verified · from 16 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -25,7 +25,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (
 
 <pre>
 test              result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md">τ²-bench Telecom</a>   16.9%  ●█··█·██··██ beats 0/6    very hard · avg 9.5%     11%  sharp · at its level
+<a href="https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md">τ²-bench Telecom</a>   16.9%  ●█··█·██··██ beats 0/6    very hard · avg 9.6%     11%  sharp · at its level
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gem
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   55.1%  ▂·▂▃▅▂▃●▆▄▂▂ beats 30/49  very hard · avg 8.5%     34%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   55.1%  ▂·▂▃▅▂▃●▆▄▂▂ beats 30/49  very hard · avg 8.6%     34%  sharp · at its level
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 20…</a>   61.9%  ▃▃▅▃··▃▅●▅▅▃ beats 8/15   hard · avg 25%          9.1%  at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   63.4%  ▁··▁·▁▁▁▆●▇█ beats 18/45  hard · avg 32%          5.9%  at its level
 </pre>
@@ -49,7 +49,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2
 
 <pre>
 test                      result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   70.8%  ▃▃▄▃▃▃▇●█▃▂▅ beats 102/193  very hard · avg 8.5%     12%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   70.8%  ▃▃▄▃▃▃▇●█▃▂▅ beats 102/193  very hard · avg 8.6%     12%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -58,16 +58,16 @@ test                      result  vs the others in its run    difficulty        
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>    7.7%  ▂·█··▆▄·▂●·▄ beats 11/13  avg 33%                 11%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>    7.7%  ▂·█··▆▄·▂●·▄ beats 11/13  avg 32%                 11%  typical
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   73.7%  ▁▁▁▁·▂·█▆●▇▁ beats 24/31  medium · avg 48%       4.9%  at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   75.9%  ▂·▂·▂█▂▄▄··● beats 13/13  very hard · avg 54%    3.2%  sharp · noisy
-<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   64.4%  ▂·▄··▂▂·●▂█▄ beats 5/13   medium · avg 53%       2.9%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   64.4%  ▂·▄··▂▂·●▂█▄ beats 5/13   medium · avg 54%       2.9%  typical
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>    7.7%  ▃···▃·█▃●▃▅█ beats 6/13   avg 11%                2.2%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   57.4%  ▂·······▆●▆▆ beats 4/13   very hard · avg 57%    2.0%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T9">AHELM AIR-Bench Foundation music …</a>   57.9%  ▃█▃▅●·▃·▃▅▃▃ beats 7/13   medium · avg 57%       0.9%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MELD audio emotion classifi…</a>   34.0%  ▃··▃●▃·▃▅▅█▅ beats 2/13   medium · avg 40%       0.6%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM FLEURS 7-language transcrip…</a>  273.2%  ●▂···▂▆▂█▂·▂ beats 0/13   avg 80%                0.3%  blunt · noisy
-<a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM Multilingual LibriSpeech 7-…</a>   60.3%  ●▂▂··▂▂·▂▂█▆ beats 0/13   avg 13%                0.0%  blunt · noisy
+<a href="https://arxiv.org/html/2508.21376v2#A8.T15">AHELM Multilingual LibriSpeech 7-…</a>   60.3%  ●▂▂··▂▂·▂▂█▆ beats 0/13   avg 13%                0.1%  blunt · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VocalSound human-sound reco…</a>   62.6%  ██▄●·█·█·█▄▄ beats 5/13   easy · avg 67%         0.0%  blunt · at its level · noisy
 </pre>
 
@@ -87,7 +87,7 @@ source                                    results  share of the score
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>                     1    6% ▇
 <a name="inception-leaderboards-space"></a><a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">Inception Arabic/Hindi leaderboards</a>             1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.1
+weighted average                                   = 62.0
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Moonshot AI Kimi-K2-Instruct model card ([Modified MIT License (Kimi K2)](https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/LICENSE)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

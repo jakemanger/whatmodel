@@ -49,7 +49,7 @@ Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Gemma 2 27B I
 test             result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K (lab)</a>       64.5%  █····●▄▄···█ beats 2/6    very easy · avg 87%     24%  sharp
 <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025 (lab)</a>   14.0%  ▄█··▄···●··█ beats 4/6    hard · avg 33%          11%  sharp · noisy
-<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500 (lab)</a>    63.2%  ▄··█▄·●···▄▄ beats 4/6    easy · avg 80%         8.7%  at its level
+<a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500 (lab)</a>    63.2%  ▄··█▄·●···▄▄ beats 4/6    easy · avg 80%         8.6%  at its level
 </pre>
 
 </details>

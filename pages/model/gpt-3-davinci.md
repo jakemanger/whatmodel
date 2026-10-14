@@ -26,7 +26,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                             40.9%  █···█·███··● beats 5/5    easy · avg 72%          11%  at its level
 <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                           33.6%  ▅·······█··● beats 5/5    medium · avg 52%        10%  typical
 <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), last-wo…</a>   75.0%  █·▄··█··█··● beats 7/7    very easy · avg 90%    6.7%  blunt · several runs
-<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                                 80.0%  █··▃··▃▃·▃·● beats 7/7    easy · avg 89%         5.5%  blunt · at its level · several runs
+<a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                                 80.0%  █··▃··▃▃·▃·● beats 7/7    easy · avg 89%         5.6%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                             76.2%  ▄···▄··█·▄·● beats 5/5    very easy · avg 90%    4.6%  at its level
 <a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                                 94.9%  ██····███··● beats 5/5    very easy · avg 98%    2.9%  maxed out
 </pre>

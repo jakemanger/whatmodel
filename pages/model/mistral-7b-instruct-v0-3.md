@@ -36,7 +36,7 @@ Beats [Gemma 4 E4B](gemma-4-e4b.md), [OpenThinker3 7B](openthinker3-7b.md), [Gem
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>       20.6%  ▁▂▂▃▆●█▆▄▄▁▁ beats 54/122  medium · avg 39%     25%  typical
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">Arena-Hard (version/judge unspeci…</a>   44.3%  ▃▃▂●▃▆▅█▅▅▂▃ beats 6/30    easy · avg 70%      3.5%  at its level · small run
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">Arena-Hard (version/judge unspeci…</a>   44.3%  ▃▃▂●▃▆▅█▅▅▂▃ beats 6/30    easy · avg 71%      3.4%  at its level · small run
 </pre>
 
 </details>
@@ -47,9 +47,9 @@ Beats [Command R (03-2024)](command-r-03-2024.md), [Molmo 7B-D (0924)](molmo-7b-
 
 <pre>
 test                             result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                       3.6%  ●▂▅▆▄█▆▃▅▂▃▄ beats 1/92   hard · avg 32%          5.2%  sharp · too hard for it
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                       3.6%  ●▂▅▆▄█▆▃▅▂▃▄ beats 1/92   hard · avg 33%          5.2%  sharp · too hard for it
 <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MATH (subset unspecified) (lab)</a>   13.2%  ●▄▄▃█▇▅▆▄▃▄▁ beats 2/80   easy · avg 66%          2.8%  at its level · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           0.3%  ●▃▄▃▃▃▇▇█▃▂▅ beats 0/193  very hard · avg 8.5%    0.4%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>           0.3%  ●▃▄▃▃▃▇▇█▃▂▅ beats 0/193  very hard · avg 8.6%    0.4%  sharp · too hard for it · noisy
 </pre>
 
 </details>

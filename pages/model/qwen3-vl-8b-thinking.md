@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 8.77B params · apache-2.0
 
-**score 57.8** ±0.7 · #222 of 719 · from 28 benchmark results across 3 sources
+**score 57.7** ±0.7 · #222 of 719 · from 28 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -27,7 +27,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (
 
 <pre>
 test           result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/pdf/2511.21631v2#page=24">BFCL v3 (lab)</a>   63.0%  █▄··▄●·█▄█▄█ beats 4/13   medium · avg 59%    1.9%  blunt · at its level
+<a href="https://arxiv.org/pdf/2511.21631v2#page=24">BFCL v3 (lab)</a>   63.0%  █▄··▄●·█▄█▄█ beats 4/13   medium · avg 60%    1.9%  blunt · at its level
 </pre>
 
 </details>
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #196 of 393 · 2.5% of its score</summary>
 
-Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
@@ -62,8 +62,8 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2
 test                         result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>    81.4%  ▃··▃▅·▃█▅▅●█ beats 12/16  medium · avg 69%       4.9%  typical
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">AIME 2025 (lab)</a>               80.3%  ▃·▃▃█··▃▅▃·● beats 10/12  medium · avg 45%       4.2%  sharp · at its level
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>   38.1%  ▄······●▄▄·█ beats 2/6    hard · avg 30%         4.0%  at its level
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>     95.2%  ▃·····▃···▅● beats 6/6    very easy · avg 90%    2.9%  maxed out
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>   38.1%  ▄······●▄▄·█ beats 2/6    hard · avg 31%         4.0%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>     95.2%  ▃·····▃···▅● beats 6/6    very easy · avg 90%    3.0%  maxed out
 </pre>
 
 </details>
@@ -83,7 +83,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   39.6%  ▁·▁·▃▃▁▇●█·▄ beats 12/22  hard · avg 27%         2.5%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">HallusionBench (lab)</a>                 65.4%  ▃·▃·▅▃▅▅▃▅●▅ beats 14/16  medium · avg 55%       2.0%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (lab)</a>                        88.6%  ▂··▂·▂▃·▅▂●█ beats 10/17  easy · avg 85%         1.4%  blunt
-<a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>                    73.5%  ▅▃·▃▅▅·●·▃▅█ beats 9/16   easy · avg 70%         1.3%  blunt
+<a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>                    73.5%  ▅▃·▃▅▅·●·▃▅█ beats 9/16   easy · avg 71%         1.3%  blunt
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">DocVQA (lab)</a>                         95.3%  ▃··▅▃▅▃●▃█▅▅ beats 7/17   very easy · avg 94%    1.2%  blunt · maxed out
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ScreenSpot-Pro (lab)</a>                 46.6%  ▂····●▄··▂█▆ beats 1/11   medium · avg 46%       1.2%  blunt · at its level
 <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CC-OCR (lab)</a>                         76.3%  ▃··▃▅·●▅·█▅▃ beats 5/13   easy · avg 74%         0.9%  blunt
@@ -118,7 +118,7 @@ source                                    results  share of the score
 <a name="card2-allenai-olmo-3-7b-think"></a><a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">allenai/Olmo-3-7B-Think model card</a>              2    7% ▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    2% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 57.8
+weighted average                                   = 57.7
 </pre>
 
 <sub>Licences: allenai/Olmo-3-7B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Think.txt)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

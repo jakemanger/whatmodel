@@ -25,8 +25,8 @@ Beats [GLM-4.7-Flash](glm-4-7-flash.md), [Qwen3-VL 8B Instruct](qwen3-vl-8b-inst
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (lab)</a>                      64.6%  ▄·▄█·▄·▄···● beats 7/7    easy · avg 81%      7.5%  sharp · at its level
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (lab)</a>                           49.6%  ▄···▄·▄▄█··● beats 6/7    medium · avg 64%    4.0%  at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (lab)</a>                      64.6%  ▄·▄█·▄·▄···● beats 7/7    easy · avg 82%      7.5%  sharp · at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (lab)</a>                           49.6%  ▄···▄·▄▄█··● beats 6/7    medium · avg 65%    4.0%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   25.3%  ▃··▁▂▂●▂█▃▄▂ beats 16/47  medium · avg 54%    1.6%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   22.7%  █▂▁▁▂▂▂▃●▅▅▇ beats 22/47  medium · avg 36%    1.4%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   31.8%  ▁▁▁▁▁▁▂▂▃●▅▄ beats 26/47  hard · avg 33%      1.1%  typical

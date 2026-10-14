@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-03 · 49.9B params · nvidia-open-model-license
 
-**score 58.3** ±1.6 · #214 of 719 · from 7 benchmark results across 2 sources
+**score 58.2** ±1.6 · #215 of 719 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -59,7 +59,7 @@ Beats [Llama 3.1 Nemotron Ultra 253B v1](llama-3-1-nemotron-ultra-253b.md) here,
 test             result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>   60.0%  ▁·▁▁▁▂▅●█▇▅▁ beats 47/133  medium · avg 39%        17%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>   67.5%  ▁▁▁▂▁▃▁▅●██▃ beats 32/85   medium · avg 48%        16%  sharp · at its level · small run
-<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>    96.6%  ▁▃▂▃▅▇▅▇●▅▂▁ beats 62/84   very easy · avg 90%     11%  maxed out · small run
+<a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>    96.6%  ▁▃▂▃▅▇▅▇●▅▂▁ beats 62/84   very easy · avg 91%     11%  maxed out · small run
 </pre>
 
 </details>
@@ -68,7 +68,7 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                result  vs the others in its run    difficulty      counts  why
-<a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>   66.7%  ▁▁▁▁▂▄▅▅●██▄ beats 140/310  hard · avg 47%     19%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>   66.7%  ▁▁▁▁▂▄▅▅●██▄ beats 140/310  hard · avg 47%     20%  sharp · at its level · small run
 </pre>
 
 </details>
@@ -82,7 +82,7 @@ source                         results  share of the score
 <a name="report-2505.00949v5"></a><a href="https://arxiv.org/html/2505.00949v5">NVIDIA (lab)</a>                         6   75% ▇▇▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          1   23% ▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 58.3
+weighted average                        = 58.2
 </pre>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2505.00949v5.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

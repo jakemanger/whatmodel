@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 67B params · deepseek
 
-**score 40.8** ±1.3 · #518 of 719 · from 11 benchmark results across 5 sources
+**score 40.8** ±1.3 · #517 of 719 · from 11 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -52,8 +52,8 @@ Beats [Yi 34B Chat](yi-34b-chat.md), [Command R (03-2024)](command-r-03-2024.md)
 
 <pre>
 test                      result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                6.4%  ▂●▅▆▄█▆▃▅▂▃▄ beats 4/92   hard · avg 32%           10%  sharp · too hard for it
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    0.8%  ●▃▄▃▃▃▇▇█▃▂▅ beats 7/193  very hard · avg 8.5%    0.8%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                6.4%  ▂●▅▆▄█▆▃▅▂▃▄ beats 4/92   hard · avg 33%           10%  sharp · too hard for it
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    0.8%  ●▃▄▃▃▃▇▇█▃▂▅ beats 7/193  very hard · avg 8.6%    0.8%  sharp · too hard for it · noisy
 </pre>
 
 </details>

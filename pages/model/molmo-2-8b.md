@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 8.66B params · apache-2.0
 
-**score 55.2** ±1.8 · #262 of 719 · from 15 benchmark results across 2 sources
+**score 55.1** ±1.8 · #262 of 719 · from 15 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -14,18 +14,18 @@ Ai2 · released 2025-12 · 8.66B params · apache-2.0
 
 <pre>
 task                vs the others          rank  counts  tests
-chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #195 of 393*     28%      1
+chat &amp; writing      ▁▁▁▃▅▄▅●▆▆▇▃   #195 of 393*     29%      1
 math                ▁▂▃▅●▅▄█▄▁▁▁   #282 of 398*    8.6%      1
 vision &amp; documents  ▁▁▃▂▁●▄▂▆▇█▄    #109 of 147     70%     14
 </pre>
 
-<details><summary>chat &amp; writing · #195 of 393 · 28% of its score</summary>
+<details><summary>chat &amp; writing · #195 of 393 · 29% of its score</summary>
 
-Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1321.8  ▁▁▁▂▃▃▃●▆▇█▃ beats 155/379  avg 1268       28%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1321.8  ▁▁▁▂▃▃▃●▆▇█▃ beats 155/379  avg 1268       29%  blunt
 </pre>
 
 </details>
@@ -74,7 +74,7 @@ source                                    results  share of the score
 <a name="paper-2601.10611v4-molmo2"></a><a href="https://arxiv.org/html/2601.10611v4#S4.T6">Molmo2: Open Weights and Data for Visio…</a>       13   50% ▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   48% ▇▇▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 55.2
+weighted average                                   = 55.1
 </pre>
 
 <sub>Licences: Molmo2: Open Weights and Data for Vision-Language Models with Video Understanding and Grounding ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

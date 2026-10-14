@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 41.7** ±1.2 · #504 of 719 · from 7 benchmark results across 2 sources
+**score 41.7** ±1.2 · #503 of 719 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -23,7 +23,7 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thin
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   49.1%  ▁·▂▁▂▆▅█●▄▁▂ beats 28/35  medium · avg 64%     23%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   49.1%  ▁·▂▁▂▆▅█●▄▁▂ beats 28/35  medium · avg 65%     23%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   34.1%  ▄▇█▃▄▇▄●▇▃·▁ beats 27/35  medium · avg 49%     16%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   29.5%  ▁·▁▁▄██▄●▁▅▅ beats 25/35  medium · avg 56%     15%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                           47.2%  █·▅▃▃▃▅▃▃●·▅ beats 12/15  easy · avg 70%       13%  at its level
@@ -37,7 +37,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   38.5%  ▂▁▁▄▂▅●█▆▂▂▂ beats 24/58  medium · avg 50%     14%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   38.5%  ▂▁▁▄▂▅●█▆▂▂▂ beats 24/58  medium · avg 51%     14%  at its level
 </pre>
 
 </details>

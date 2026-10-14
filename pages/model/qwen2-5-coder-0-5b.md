@@ -26,7 +26,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                      61.6%  ●·▄···█··█·▄ beats 0/6    very easy · avg 86%     28%  sharp · at its level
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     57.3%  ●·▄····▄▄·▄█ beats 0/6    easy · avg 82%          21%  sharp · at its level
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   14.3%  ●·▁▂▄▁▆▄█▆▂▂ beats 0/62   medium · avg 54%        16%  typical
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           52.4%  ●···███·██·█ beats 0/6    easy · avg 78%          12%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           52.4%  ●···███·██·█ beats 0/6    easy · avg 79%          12%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      49.6%  ●·▄····▄▄·▄█ beats 0/6    easy · avg 71%         8.4%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          43.7%  ●····▄▄·▄·█▄ beats 0/6    easy · avg 67%         7.1%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     33.9%  ●·██·█··█·██ beats 0/6    medium · avg 57%       3.3%  at its level

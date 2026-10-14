@@ -6,7 +6,7 @@
 
 WhiteRabbitNeo · released 2023-12 · other (deepseek)
 
-**score 47.0** ±0.9 · #399 of 719 · from 3 benchmark results across 1 source
+**score 47.0** ±0.9 · #397 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 

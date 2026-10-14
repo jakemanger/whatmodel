@@ -40,7 +40,7 @@ test                                                      result  vs the others 
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                             28.2%  ▁▂▂▃▆▆●▆▄▄▁▁ beats 75/122  medium · avg 39%             14%  at its level
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>                         24.0%  ▂▁▁▅●▅▄▃▃▅▃▁ beats 22/60   medium · avg 52%             10%  sharp · at its level
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1164.0  ▂▁▂▁▃▇█▆●▄▂▂ beats 73/95   avg 1201                    3.9%  blunt
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.0600 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂●▄▆ beats 22/28   avg 8.819 MT-Bench scor…    3.4%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  8.0600 MT-Bench score (1-10)  ▆▂▂▆▆▄██▂●▄▆ beats 22/28   avg 8.826 MT-Bench scor…    3.4%  sharp · noisy
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs text-…</a>                         91.4%  ▂▂·▆·▇▃▆●▆▄▂ beats 33/45   very easy · avg 96%         0.7%  sharp · maxed out · noisy
 </pre>
 
@@ -52,8 +52,8 @@ Beats [DBRX Instruct](dbrx-instruct.md) here, though they rank higher overall. T
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               11.7%  ▂▂●▆▄█▆▃▅▂▃▄ beats 10/92   hard · avg 32%          5.2%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 20/193  very hard · avg 8.5%    0.5%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               11.7%  ▂▂●▆▄█▆▃▅▂▃▄ beats 10/92   hard · avg 33%          5.2%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 20/193  very hard · avg 8.6%    0.5%  sharp · too hard for it · noisy
 </pre>
 
 </details>

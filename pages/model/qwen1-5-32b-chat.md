@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-04 · 32.51B params · tongyi-qianwen
 
-**score 44.0** ±1.4 · #459 of 719 · from 7 benchmark results across 6 sources
+**score 44.0** ±1.4 · #456 of 719 · from 7 benchmark results across 6 sources
 
 ## What it's good at
 
@@ -33,7 +33,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        41.0%  ▂▁▁▄▂▅●█▆▂▂▂ beats 30/58    medium · avg 50%     20%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>        41.0%  ▂▁▁▄▂▅●█▆▂▂▂ beats 30/58    medium · avg 51%     20%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>        31.8%  ▃▂·▆●██▆▅▃▃▃ beats 9/33     medium · avg 41%     20%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         30.7%  ▁▁▁▁●▄▆▄▅▇█▅ beats 19/208   hard · avg 40%       11%  sharp
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>      60.7%  ▁··▁▁▂▂▆▅●█▆ beats 41/70    medium · avg 64%     10%  at its level

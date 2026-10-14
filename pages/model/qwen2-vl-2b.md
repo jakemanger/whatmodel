@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 2.21B params · apache-2.0
 
-**score 37.3** ±1.2 · #573 of 719 · from 16 benchmark results across 2 sources
+**score 37.2** ±1.2 · #574 of 719 · from 16 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -44,7 +44,7 @@ test                        result  vs the others in its run  difficulty        
 <a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                73.5%  ●··▂·▂▃·▅▂▆█ beats 0/17   easy · avg 85%         5.9%  blunt
 <a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (lab)</a>         65.5%  ▃·▃●█▃▃▃▃▃▃▃ beats 3/13   easy · avg 80%         5.5%  at its level · small run
 <a href="https://arxiv.org/html/2409.12191v2">HallusionBench (lab)</a>         41.7%  ●·▃·▅▃▅▅▃▅█▅ beats 0/16   medium · avg 55%       5.2%  blunt · at its level
-<a href="https://arxiv.org/html/2409.12191v2">RealWorldQA (lab)</a>            62.9%  ●▃·▃▅▅·█·▃▅█ beats 0/16   easy · avg 70%         4.4%  blunt · at its level
+<a href="https://arxiv.org/html/2409.12191v2">RealWorldQA (lab)</a>            62.9%  ●▃·▃▅▅·█·▃▅█ beats 0/16   easy · avg 71%         4.4%  blunt · at its level
 <a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>            12.4%  ●▁·▁··▄▁▃▇▇█ beats 0/24   hard · avg 27%         4.0%  small run
 <a href="https://arxiv.org/html/2409.12191v2">OCRBench (lab)</a>               80.9%  ▅●·▃▃█▃▅▅▃·▃ beats 3/16   easy · avg 84%         1.8%  blunt
 <a href="https://arxiv.org/html/2409.12191v2">TextVQA (lab)</a>                79.7%  ●······▄·▄▄▄ beats 1/5    easy · avg 80%         1.0%  blunt · at its level
@@ -73,7 +73,7 @@ source                             results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2409.12191v2">Qwen (lab)</a>                              15   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>        1    1% ▇
 prior: pull toward the middle                 1% ▇
-weighted average                            = 37.3
+weighted average                            = 37.2
 </pre>
 
 <sub>Licences: Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

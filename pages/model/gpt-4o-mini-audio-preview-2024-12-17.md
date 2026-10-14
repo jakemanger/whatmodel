@@ -6,7 +6,7 @@
 
 OpenAI · released 2024-12 · proprietary
 
-**score 47.8** ±2.4 · comparison only: no current run option verified · from 10 benchmark results across 1 source
+**score 47.7** ±2.4 · comparison only: no current run option verified · from 10 benchmark results across 1 source
 
 ## What it's good at
 
@@ -20,8 +20,8 @@ OpenAI · released 2024-12 · proprietary
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   47.1%  ▂·●··▆▄·▂▂·▄ beats 2/13   avg 33%                 50%  typical
-<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   51.4%  ▂·▄··●▂·▄▂█▄ beats 3/13   medium · avg 53%        18%  at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   47.1%  ▂·●··▆▄·▂▂·▄ beats 2/13   avg 32%                 49%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   51.4%  ▂·▄··●▂·▄▂█▄ beats 3/13   medium · avg 54%        18%  at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>   16.3%  ▃···●·█▃▅▃▅█ beats 1/13   avg 11%                 10%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   62.3%  ▂·······▆█▆● beats 11/13  very hard · avg 57%    5.7%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   50.9%  ▂·●·▂█▂▄▄··▄ beats 1/13   very hard · avg 54%    5.0%  sharp · too hard for it · noisy
@@ -42,7 +42,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="paper-2508.21376v2-ahelm"></a><a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM: A Holistic Evaluation of Audio-L…</a>       10   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 47.8
+weighted average                                   = 47.7
 </pre>
 
 <sub>Licences: AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

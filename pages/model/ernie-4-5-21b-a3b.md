@@ -46,7 +46,7 @@ test                                result  vs the others in its run    difficul
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">IFEval (aggregation unspecified) …</a>   80.0%  ▁▁▃▁▂▄●▆█▃▂▁ beats 53/141  easy · avg 78%    2.8%  small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">IFEval (aggregation unspecified) …</a>   80.0%  ▁▁▃▁▂▄●▆█▃▂▁ beats 53/141  easy · avg 79%    2.8%  small run
 </pre>
 
 </details>
@@ -74,7 +74,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">CMMLU (lab)</a>                          84.8%  ▅·▅····█▃●█▅ beats 9/14     easy · avg 79%      4.4%  at its level · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SimpleQA (lab)</a>                       24.2%  ▄▄▄▆█▆█●█·▂█ beats 23/32    hard · avg 16%      4.2%  small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ChineseSimpleQA (lab)</a>                48.9%  ●··▄▄▄··▄··█ beats 0/6      medium · avg 52%    3.3%  at its level · small run
-<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SysBench (aggregation unspecified…</a>   48.0%  ●··█····█··█ beats 0/3      medium · avg 52%    3.0%  at its level · small run
+<a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SysBench (aggregation unspecified…</a>   48.0%  ●··█····█··█ beats 0/3      medium · avg 53%    3.0%  at its level · small run
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">Multi-IF (aggregation unspecified…</a>   61.0%  ▁▁▁▁▁●▃▄█▄▁▂ beats 6/41     medium · avg 62%    2.5%  blunt · at its level · small run
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   83.0%  ▃·▁▁▂▁▂▅█●▄▁ beats 79/100   medium · avg 68%    2.1%  at its level · noisy
 <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MuSR (lab)</a>                           67.7%  █·██······●█ beats 3/4      medium · avg 58%    1.8%  blunt · at its level · small run

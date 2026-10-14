@@ -29,9 +29,9 @@ Beats [DeepSeek R1 0528 Qwen3 8B](deepseek-r1-0528-qwen3-8b.md) here, though the
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      37.3%  ▁▁▁▂██●▅▆▂▂▂ beats 42/77   hard · avg 32%          2.9%  at its level
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>    3.1%  ●·▃▃·█▅▅▅▅▃▅ beats 2/18    very hard · avg 5.8%    2.7%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>    3.1%  ●·▃▃·█▅▅▅▅▃▅ beats 2/18    very hard · avg 5.9%    2.7%  sharp
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              52.9%  ▁▁▁▁▁▃▅●▅▄▁▁ beats 49/114  medium · avg 52%        1.3%  blunt · at its level
-<a href="https://github.com/multi-swe-bench/experiments/tree/6a7d5566f62fa76f4192302cf763051b98e4facc/evaluation">Multi-SWE-bench, 7 languages (Mag…</a>    6.1%  ▄···▄▄·▄▄·▄● beats 6/7     very hard · avg 2.6%    1.1%  blunt · too hard for it
+<a href="https://github.com/multi-swe-bench/experiments/tree/6a7d5566f62fa76f4192302cf763051b98e4facc/evaluation">Multi-SWE-bench, 7 languages (Mag…</a>    6.1%  ▄···▄▄·▄▄·▄● beats 6/7     very hard · avg 2.7%    1.1%  blunt · too hard for it
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   74.1%  ▃▃●▃▆▅▆▅█▂▅▂ beats 4/31    easy · avg 79%          0.9%  blunt
 </pre>
 
@@ -43,22 +43,22 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   15.6%  ▂·▂●▅▂▃█▆▄▂▂ beats 6/49   very hard · avg 8.5%     13%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   15.6%  ▂·▂●▅▂▃█▆▄▂▂ beats 6/49   very hard · avg 8.6%     13%  sharp · at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>     76.9%  ▃▁▁█▁▄▅●▄▇▁▄ beats 19/31  medium · avg 44%        2.4%  sharp · at its level · noisy
-<a href="https://github.com/multi-swe-bench/experiments/tree/6a7d5566f62fa76f4192302cf763051b98e4facc/evaluation">Multi-SWE-bench, 7 languages (Mag…</a>    6.1%  ▄···▄▄·▄▄·▄● beats 6/7    very hard · avg 2.6%    1.1%  blunt · too hard for it
+<a href="https://github.com/multi-swe-bench/experiments/tree/6a7d5566f62fa76f4192302cf763051b98e4facc/evaluation">Multi-SWE-bench, 7 languages (Mag…</a>    6.1%  ▄···▄▄·▄▄·▄● beats 6/7    very hard · avg 2.7%    1.1%  blunt · too hard for it
 </pre>
 
 </details>
 
 <details><summary>chat &amp; writing · #190 of 393 · 15% of its score</summary>
 
-Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Seed-OSS 36B Instruct](seed-oss-36b.md), [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
-<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   17.2%  ▂·▃▅●·▃█▆▂▂▂ beats 7/22     very hard · avg 12%    7.8%  sharp · at its level
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts (sty…</a>   17.2%  ▂·▃▅●·▃█▆▂▂▂ beats 7/22     very hard · avg 13%    7.7%  sharp · at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1327.0  ▁▁▁▂▃▃▃●▆▇█▃ beats 165/379  avg 1268               5.9%  blunt
-<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   10.5%  ●▂▂▆▂▂▃█▂▃·▂ beats 2/22     hard · avg 19%         1.5%  sharp · at its level · noisy
+<a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writing …</a>   10.5%  ●▂▂▆▂▂▃█▂▃·▂ beats 2/22     hard · avg 20%         1.5%  sharp · at its level · noisy
 </pre>
 
 </details>
@@ -69,9 +69,9 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [Qwen3 235B-A22B (Apr 2025, hybrid)](qwen
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         73.0%  ▂▂▅▆▄█▆●▅▂▃▄ beats 62/92   hard · avg 32%           14%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             20.6%  ▃▃▄▃●▃▇▇█▃▂▅ beats 58/193  very hard · avg 8.5%    4.9%  sharp · at its level · noisy
-<a href="https://arxiv.org/html/2604.18584v2">MathNet-Solve-Test micro-average …</a>   14.7%  ●▃···█▃·▃·▃▃ beats 0/8     hard · avg 15%          1.6%  typical
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                         73.0%  ▂▂▅▆▄█▆●▅▂▃▄ beats 62/92   hard · avg 33%           14%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             20.6%  ▃▃▄▃●▃▇▇█▃▂▅ beats 58/193  very hard · avg 8.6%    4.9%  sharp · at its level · noisy
+<a href="https://arxiv.org/html/2604.18584v2">MathNet-Solve-Test micro-average …</a>   14.7%  ●▃···█▃·▃·▃▃ beats 0/8     hard · avg 15%          1.6%  at its level
 </pre>
 
 </details>
@@ -85,7 +85,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>     1145.2  ▁▁▂▂▂▂▄●▅▆██ beats 46/145  avg 1068               4.1%  blunt
 <a href="https://arxiv.org/abs/2510.01141v1">CharXiv (reasoning questions)</a>        55.0%  ▂▅▃▅▅●▆▅▆█▆▂ beats 35/100  medium · avg 38%       2.6%  at its level · small run
 <a href="https://arxiv.org/abs/2510.01141v1">CharXiv descriptive questions</a>        87.7%  ▂▄▄▅▇▄█●▇▂▁▂ beats 40/58   easy · avg 72%         2.2%  small run
-<a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   38.4%  ▅······▃·●·█ beats 3/7     very hard · avg 36%    1.6%  at its level · noisy
+<a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal under…</a>   38.4%  ▅······▃·●·█ beats 3/7     very hard · avg 37%    1.6%  at its level · noisy
 </pre>
 
 </details>
@@ -96,7 +96,7 @@ Beats [Kimi K2.6](kimi-k2-6.md), [GPT-5 Pro](gpt-5-pro.md), [DeepSeek V4 Flash (
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>    3.1%  ●·▃▃·█▅▅▅▅▃▅ beats 2/18   very hard · avg 5.8%    2.7%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>    3.1%  ●·▃▃·█▅▅▅▅▃▅ beats 2/18   very hard · avg 5.9%    2.7%  sharp
 </pre>
 
 </details>
@@ -107,9 +107,9 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         67.0%  ▁▁▁▁▂▄▆▄●▇█▅ beats 101/208  hard · avg 40%          10%  sharp · at its level
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                    25.6%  ▁···▁▃●█▂▃▃▂ beats 6/23     hard · avg 18%         3.6%  at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1062.0  ▁·▂▁●▅▅▃█▄▁▁ beats 8/62     avg 1044               3.6%  typical
-<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   78.7%  ▁▂▂▂▃█▃▆▅●▂▃ beats 77/95    easy · avg 66%         3.3%  typical
-<a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   31.6%  ▁▁▂▁▃▄█●▄▅▂▃ beats 24/39    very hard · avg 22%    2.9%  blunt
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1062.0  ▁·▂▁●▅▅▃█▄▁▁ beats 8/62     avg 1045               3.6%  typical
+<a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   78.7%  ▁▂▂▂▃█▃▆▅●▂▃ beats 77/95    easy · avg 66%         3.4%  typical
+<a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah's A…</a>   31.6%  ▁▁▂▁▃▄█●▄▅▂▃ beats 24/39    very hard · avg 22%    3.0%  blunt
 <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                     43.3%  ▂···█▂▆▆●█▆▂ beats 13/23    very hard · avg 30%    1.7%  typical
 <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context, 4-…</a>   41.2%  ▆▂·▄●·▂▂·▄▄▂ beats 6/16     very hard · avg 36%    1.6%  blunt
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   63.3%  ▁··▃▁▁▁▅●▅▁▅ beats 15/24    medium · avg 52%       1.2%  blunt · at its level

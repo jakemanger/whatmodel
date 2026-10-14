@@ -25,7 +25,7 @@ Beats [Gemma 3 1B](gemma-3-1b.md) here, though they rank higher overall.
 <pre>
 test                             result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                           19.7%  ●▁▁▁▁▃▅█▅▄▁▁ beats 1/114  medium · avg 52%     27%  blunt · at its level
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   11.1%  ▁●▁▂██▅▅▆▂▂▂ beats 2/77   hard · avg 32%       25%  typical
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>   11.1%  ▁●▁▂██▅▅▆▂▂▂ beats 2/77   hard · avg 32%       24%  typical
 </pre>
 
 </details>
@@ -36,7 +36,7 @@ Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    3.4%  ▁●▁▁▁▁▂▂▃█▅▄ beats 1/47   hard · avg 33%       12%  typical
+<a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>    3.4%  ▁●▁▁▁▁▂▂▃█▅▄ beats 1/47   hard · avg 33%       12%  too hard for it
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>    0.0%  ●··▁▂▂▃▂█▃▄▂ beats 1/47   medium · avg 54%    6.8%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    0.0%  ●▂▁▁▂▂▂▃▅▅▅▇ beats 2/47   medium · avg 36%    3.6%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type recogni…</a>   55.8%  ▁▁▁······●▃█ beats 7/47   easy · avg 67%      0.8%  blunt · at its level · noisy

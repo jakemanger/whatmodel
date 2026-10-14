@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 0.162B params · apache-2.0
 
-**score 2.6** ±1.7 · #714 of 719 · from 7 benchmark results across 2 sources
+**score 2.7** ±1.7 · #714 of 719 · from 7 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -40,7 +40,7 @@ source                                    results  share of the score
 <a name="paper-2304.01373v2"></a><a href="https://arxiv.org/html/2304.01373v2">Pythia: A Suite for Analyzing Large Lan…</a>        6   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 2.6
+weighted average                                   = 2.7
 </pre>
 
 <sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

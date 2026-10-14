@@ -36,7 +36,7 @@ Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-Coder-V2 Instruct (0724)](deepseek-
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    4.6%  ▃▃●▃▃▃▇▇█▃▂▅ beats 30/193  very hard · avg 8.5%    7.1%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    4.6%  ▃▃●▃▃▃▇▇█▃▂▅ beats 30/193  very hard · avg 8.6%    7.1%  sharp · too hard for it · noisy
 </pre>
 
 </details>

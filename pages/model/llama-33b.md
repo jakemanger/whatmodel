@@ -52,7 +52,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                            83.7%  █···██···●██ beats 3/5    very easy · avg 92%    6.0%  at its level · several runs
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                             68.5%  █···██··●·██ beats 3/5    very easy · avg 86%    4.7%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed book)</a>      24.1%  █·····▄●▄··▄ beats 3/5    medium · avg 51%       4.6%  typical
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   27.3%  ▅····▃▅·█●·█ beats 9/13   medium · avg 59%       4.5%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   27.3%  ▅····▃▅·█●·█ beats 9/13   medium · avg 60%       4.5%  at its level
 <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                             79.6%  ▄···▄···●▄·▄ beats 2/5    very easy · avg 89%    3.8%  at its level · several runs
 <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                          83.1%  ▁▄▅▆▂▆▄▄█●▄▄ beats 46/58  very easy · avg 93%    3.1%  at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   48.9%  ▃▅▃··▅▃·█▃●▅ beats 11/13  easy · avg 67%         3.1%  at its level

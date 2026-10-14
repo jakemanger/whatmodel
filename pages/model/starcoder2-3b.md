@@ -27,9 +27,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            31.7%  ▁·▁▁▃●▆▅█▃▁▁ beats 16/99  easy · avg 79%       48%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           27.4%  ▁·▁▁▁●▄▄▄█▃▁ beats 16/99  easy · avg 74%       17%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 42.4%  █·▅▃▃▃●▃▃▅·▅ beats 9/15   easy · avg 82%      6.7%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.7%  ▁·▂▁▂●▅█▄▄▁▂ beats 9/35   medium · avg 64%    4.8%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   31.7%  ▁·▂▁▂●▅█▄▄▁▂ beats 9/35   medium · avg 65%    4.8%  at its level
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                           32.1%  ▃▅●▃▃▅·▃▃▅·▅ beats 5/15   medium · avg 59%    2.9%  at its level · several runs
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        25.0%  ▄▄·▄█●▄█·█·▄ beats 6/12   medium · avg 52%    2.8%  typical
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        25.0%  ▄▄·▄█●▄█·█·▄ beats 6/12   medium · avg 53%    2.8%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   13.1%  ▄●█▃▄▇▄▁▇▃·▁ beats 5/35   medium · avg 49%    2.5%  typical
 <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                           34.0%  ▃·▃█●▅▃·▃▃▅▃ beats 6/15   medium · avg 55%    2.4%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   11.0%  ▁·▁▁▄●█▄█▁▅▅ beats 8/35   medium · avg 56%    2.0%  sharp
@@ -53,7 +53,7 @@ test         result  vs the others in its run  difficulty      counts  why
 <pre>
 test                           result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               20.2%  ▂▂●▄▄█▁▄▅▃▁▃ beats 4/42   medium · avg 55%    6.3%  typical
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   21.4%  ●▁▁▄▂▅▇█▆▂▂▂ beats 1/58   medium · avg 50%    2.8%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   21.4%  ●▁▁▄▂▅▇█▆▂▂▂ beats 1/58   medium · avg 51%    2.8%  at its level
 </pre>
 
 </details>

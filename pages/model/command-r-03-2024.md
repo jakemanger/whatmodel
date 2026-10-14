@@ -6,7 +6,7 @@
 
 Cohere · released 2024-03 · 35B params · cc-by-nc-4.0
 
-**score 41.6** ±0.8 · #506 of 719 · from 15 benchmark results across 12 sources
+**score 41.6** ±0.7 · #505 of 719 · from 15 benchmark results across 12 sources
 
 ## What it's good at
 
@@ -49,7 +49,7 @@ test                                          result  vs the others in its run  
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             61.1%  ▁·▁▁●▄▄▅█▄▂▁ beats 3/53     easy · avg 77%          26%  at its level
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           26.8%  ▁▁▁▂▂▃●█▆▃▅▃ beats 20/61    medium · avg 41%        17%  at its level
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_c4ai-command-r-v01_5shots.zip">MMLU-Pro</a>                                       36.6%  ▃▂●█▃·█▃▅··▂ beats 5/23     medium · avg 57%       7.9%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.5331 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 12/52    avg 45.199 WB-Score    5.7%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.5331 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 12/52    avg 45.277 WB-Score    5.7%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>              9.9%  ▁▁▃●██▁▁·▁▁▁ beats 9/57     hard · avg 18%         3.0%  sharp · too hard for it
 <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeash)</a>                56.4%  ▁··▁▁▂▂▆▅●█▆ beats 33/70    medium · avg 64%       3.0%  at its level
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>             55.4%  ▂▄▂▃█▄●▆▃▅▂▂ beats 44/81    medium · avg 58%       2.2%  blunt · at its level

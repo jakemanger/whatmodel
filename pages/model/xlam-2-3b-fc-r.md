@@ -6,7 +6,7 @@
 
 Salesforce · released 2025-03 · 3.09B params · cc-by-nc-4.0
 
-**score 57.5** ±3.9 · #267 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.5** ±3.8 · #265 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

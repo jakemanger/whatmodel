@@ -6,7 +6,7 @@
 
 Google · released 2024-12 · proprietary
 
-**score 56.3** ±1.4 · comparison only: no current run option verified · from 13 benchmark results across 4 sources
+**score 56.2** ±1.4 · comparison only: no current run option verified · from 13 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -23,7 +23,7 @@ Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   22.2%  ▂·▂▃●▂▃█▆▄▂▂ beats 13/49  very hard · avg 8.5%     36%  sharp
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   22.2%  ▂·▂▃●▂▃█▆▄▂▂ beats 13/49  very hard · avg 8.6%     36%  sharp
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   69.9%  ▁·▁▂▄▁▆▄█●▂▂ beats 47/62  medium · avg 54%         28%  at its level
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/v5.json">LiveCodeBench official release_v5…</a>   37.9%  ●···█····█·█ beats 0/3    medium · avg 52%        1.7%  at its level · noisy
 </pre>
@@ -34,8 +34,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   17.1%  ▂·█··▆●·▂▂·▄ beats 9/13   avg 33%                 16%  typical
-<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   75.4%  ▂·▄··▂▂·▄▂●▄ beats 9/13   medium · avg 53%       5.2%  at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   17.1%  ▂·█··▆●·▂▂·▄ beats 9/13   avg 32%                 16%  typical
+<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   75.4%  ▂·▄··▂▂·▄▂●▄ beats 9/13   medium · avg 54%       5.2%  at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   53.0%  ▂·▂·▂●▂▄▄··▄ beats 6/13   very hard · avg 54%    3.3%  sharp · noisy
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>    4.4%  ▃···▃·█▃▅▃▅● beats 11/13  avg 11%                3.3%  blunt
 <a href="https://arxiv.org/html/2508.21376v2#A8.T11">AHELM MUStARD audio sarcasm detec…</a>   60.4%  ▂·······▆█●▆ beats 10/13  very hard · avg 57%    2.5%  blunt
@@ -59,7 +59,7 @@ source                                    results  share of the score
 <a name="aider-code-editing-runs"></a><a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing benchmark runs</a>               1   28% ▇▇▇
 <a name="livecodebench-website-20250801"></a><a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/v5.json">LiveCodeBench official website results</a>          1    2% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 56.3
+weighted average                                   = 56.2
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · AHELM: A Holistic Evaluation of Audio-Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt))</sub>

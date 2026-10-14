@@ -6,7 +6,7 @@
 
 Voicelab · released 2023-09
 
-**score 35.6** ±2.9 · #797 of 949 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 35.6** ±2.9 · #799 of 951 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

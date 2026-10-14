@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 8.19B params · apache-2.0
 
-**score 55.7** ±0.6 · #251 of 719 · from 46 benchmark results across 20 sources
+**score 55.6** ±0.6 · #251 of 719 · from 46 benchmark results across 20 sources
 
 ## What it's good at
 
@@ -26,9 +26,9 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 0
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://arxiv.org/html/2508.18669v1">τ²-bench Telecom</a>                     19.1%  ●··██··██··█ beats 0/5      very hard · avg 10%      12%  sharp · several runs
+<a href="https://arxiv.org/html/2508.18669v1">τ²-bench Telecom</a>                     19.1%  ●··██··██··█ beats 0/5      very hard · avg 11%      12%  sharp · several runs
 <a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard</a>                   2.1%  ▂●▆▂▂▆▂▂█▅▅▂ beats 1/27     very hard · avg 1.4%    2.2%  sharp · too hard for it
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              66.3%  ▁▁▁▁▁▃▅█▅●▁▁ beats 100/114  medium · avg 59%        2.0%  blunt · at its level · several runs
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              66.3%  ▁▁▁▁▁▃▅█▅●▁▁ beats 100/114  medium · avg 60%        2.0%  blunt · at its level · several runs
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>      42.6%  ▁▁▁▂██▅●▆▂▂▂ beats 49/77    hard · avg 32%          1.5%  at its level
 <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-based…</a>   33.2%  ▂·▁●··▇▇█▂·▁ beats 3/25     hard · avg 29%          0.8%  blunt · at its level
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">BFCL (version not stated)</a>            60.2%  ▄●▄▂·█▆·▄··▂ beats 4/17     easy · avg 66%          0.7%  blunt · at its level
@@ -68,9 +68,9 @@ test                             result  vs the others in its run   difficulty  
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">AIME 2025 (lab)</a>                   67.3%  ▃·▃▃█··▃●▃·█ beats 7/12    medium · avg 53%        7.1%  sharp · at its level · several runs
 <a href="https://arxiv.org/html/2601.02346v1">AIME 2024</a>                         77.9%  ●▄···█·····▄ beats 1/5     medium · avg 62%        4.7%  sharp
 <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified)</a>   41.0%  ●··▄▄·▄····█ beats 0/5     hard · avg 29%          4.1%  sharp · at its level
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>       43.4%  ▄······█▄▄·● beats 6/6     hard · avg 30%          3.9%  at its level · several runs
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>       43.4%  ▄······█▄▄·● beats 6/6     hard · avg 31%          3.8%  at its level · several runs
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>         95.1%  ▃·····▃···▅● beats 4/6     very easy · avg 90%     2.8%  maxed out · several runs
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          56.1%  ▃▃▄▃▃▃●▇█▃▂▅ beats 85/193  very hard · avg 8.5%    2.4%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          56.1%  ▃▃▄▃▃▃●▇█▃▂▅ beats 85/193  very hard · avg 8.6%    2.4%  sharp · noisy
 <a href="https://arxiv.org/html/2601.02346v1">MATH-500</a>                          97.4%  ▄·▄·····█··● beats 4/5     very easy · avg 92%     2.1%  maxed out
 </pre>
 
@@ -86,7 +86,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Redux (lab)</a>                     87.5%  ▃··▃·▃·█●▅▃▅ beats 6/11     easy · avg 79%          3.6%  typical
 <a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (lab)</a>                      47.6%  ▄··▄·▄▄▄●▄██ beats 6/11     medium · avg 37%        2.7%  at its level
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   50.2%  ▂▃▅▂▆▃●▅█▅▃▆ beats 17/34    medium · avg 42%        2.4%  blunt · at its level
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1083.3  ▁·▂▁●▅▅▃█▄▁▁ beats 11/62    avg 1044                2.0%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1083.3  ▁·▂▁●▅▅▃█▄▁▁ beats 11/62    avg 1045                2.0%  typical
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   61.2%  ▁▂▂▂▃●▃▆▅▄▂▃ beats 35/95    easy · avg 66%          1.9%  at its level
 <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam</a>                  4.2%  ●··██···█·██ beats 0/5      very hard · avg 3.8%    1.8%  too hard for it
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   26.6%  ▁▁·▁▂▂▄●▄▅▄▄ beats 23/66    hard · avg 31%          1.7%  at its level
@@ -111,7 +111,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 
 <pre>
 source                                    results  share of the score
-<a name="report-2601.02346v1"></a><a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reasoning Front…</a>       12   33% ▇▇▇▇
+<a name="report-2601.02346v1"></a><a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reasoning Front…</a>       12   32% ▇▇▇▇
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/pdf/2511.21631v2#page=24">Qwen (lab)</a>                                      8   25% ▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3    8% ▇
 <a name="paper-2508.18669v1-mua-rl"></a><a href="https://arxiv.org/html/2508.18669v1">MUA-RL: Multi-turn User-interacting Age…</a>        1    6% ▇
@@ -132,7 +132,7 @@ source                                    results  share of the score
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 55.7
+weighted average                                   = 55.6
 </pre>
 
 <sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MUA-RL: Multi-turn User-interacting Agent Reinforcement Learning for agentic tool use ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · allenai/Olmo-3-7B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Think.txt)) · Synthesize and Reward: Reinforcement Learning for Multi-Step Tool Use in Live Environments ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · allenai/Olmo-3-7B-Instruct model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Instruct.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

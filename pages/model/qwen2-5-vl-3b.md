@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 3.75B params · qwen-research
 
-**score 44.1** ±1.0 · #458 of 719 · from 14 benchmark results across 2 sources
+**score 44.0** ±1.0 · #460 of 719 · from 14 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -45,7 +45,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2502.13923v1">ChartQA (lab)</a>                        84.0%  ▂··▂·▂●·▅▂▆█ beats 3/17   easy · avg 85%         3.9%  blunt
 <a href="https://arxiv.org/html/2502.13923v1">DocVQA (lab)</a>                         93.9%  ▃··▅●▅▃█▃█▅▅ beats 3/17   very easy · avg 94%    3.9%  blunt · maxed out
 <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (English…</a>   21.4%  ▁·▁·●▃▁▇▃█·▄ beats 2/22   hard · avg 27%         3.5%  blunt
-<a href="https://arxiv.org/html/2502.13923v1">RealWorldQA (lab)</a>                    65.4%  ▅●·▃▅▅·█·▃▅█ beats 2/16   easy · avg 70%         3.2%  blunt · at its level
+<a href="https://arxiv.org/html/2502.13923v1">RealWorldQA (lab)</a>                    65.4%  ▅●·▃▅▅·█·▃▅█ beats 2/16   easy · avg 71%         3.2%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">CC-OCR (lab)</a>                         74.5%  ▃··▃●·▅▅·█▅▃ beats 3/13   easy · avg 74%         2.2%  blunt · at its level
 <a href="https://arxiv.org/html/2502.13923v1">OCRBench (lab)</a>                       79.7%  ●█·▃▃█▃▅▅▃·▃ beats 1/16   easy · avg 84%         1.2%  blunt
 <a href="https://arxiv.org/html/2502.13923v1">TextVQA (lab)</a>                        79.3%  ●······▄·▄▄▄ beats 0/5    easy · avg 80%         0.7%  blunt
@@ -62,7 +62,7 @@ source                                    results  share of the score
 <a name="first-party-qwen-scores"></a><a href="https://arxiv.org/html/2502.13923v1">Qwen (lab)</a>                                     13   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2606.01348v3-chartarena"></a><a href="https://arxiv.org/html/2606.01348v3">ChartArena: Benchmarking Chart Parsing …</a>        1    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 44.1
+weighted average                                   = 44.0
 </pre>
 
 <sub>Licences: ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

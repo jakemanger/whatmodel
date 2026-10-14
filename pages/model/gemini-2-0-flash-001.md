@@ -27,7 +27,7 @@ Beats [o1 (2024-12-17)](o1-2024-12-17.md), [o3-mini](o3-mini.md), [DeepSeek R1 (
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   14.4%  █·▃▃·█●▅▅▅▃▅ beats 9/18    very hard · avg 5.8%    5.1%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   14.4%  █·▃▃·█●▅▅▅▃▅ beats 9/18    very hard · avg 5.9%    5.1%  sharp
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                              61.2%  ▁▁▁▁▁▃▅█●▄▁▁ beats 84/114  medium · avg 52%        1.8%  blunt · at its level
 <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 (too…</a>   93.8%  ▃▃▃▃▆▅▆▅█▂●▂ beats 29/31   easy · avg 79%          1.1%  blunt
 </pre>
@@ -51,15 +51,15 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [DeepSeek V3 0324](deepseek-v3-0324.md) h
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               82.2%  ▂▂▅▆▄█▆▃●▂▃▄ beats 68/92   hard · avg 32%           15%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   31.1%  ▃▃▄▃▃●▇▇█▃▂▅ beats 67/193  very hard · avg 8.5%    8.7%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               82.2%  ▂▂▅▆▄█▆▃●▂▃▄ beats 68/92   hard · avg 33%           15%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   31.1%  ▃▃▄▃▃●▇▇█▃▂▅ beats 67/193  very hard · avg 8.6%    8.6%  sharp · at its level · noisy
 </pre>
 
 </details>
 
 <details><summary>vision &amp; documents · #104 of 182 · 5.9% of its score</summary>
 
-Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.6V](glm-4-6v.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank lower overall.
+Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GLM-4.6V](glm-4-6v.md), [GPT-5 nano](gpt-5-nano.md) here, though they rank higher overall. Trails [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run   difficulty  counts  why
@@ -74,7 +74,7 @@ Beats [GPT-6 Astra](gpt-6-astra.md), [Claude Opus 5.5](claude-opus-5-5.md), [Cla
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   14.4%  █·▃▃·█●▅▅▅▃▅ beats 9/18   very hard · avg 5.8%    5.1%  sharp
+<a href="https://arxiv.org/abs/2508.00828v1">Finance Agent Benchmark v1 (537 q…</a>   14.4%  █·▃▃·█●▅▅▅▃▅ beats 9/18   very hard · avg 5.9%    5.1%  sharp
 </pre>
 
 </details>
@@ -84,12 +84,12 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty           counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         64.1%  ▁▁▁▁▂▄▆●▅▇█▅ beats 92/208   hard · avg 40%          16%  sharp · at its level
-<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   17.8%  ▂·█··▆●·▂▂·▄ beats 8/13     avg 33%                8.0%  typical
-<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1096.6  ▁·▂▁●▅▅▃█▄▁▁ beats 12/62    avg 1044               5.2%  typical
-<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   43.0%  ▁▁▁▁▁▂▂▃▄▆█● beats 88/97    hard · avg 32%         4.7%  blunt · at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T19">AHELM Speech Robust Bench (LibriS…</a>   17.8%  ▂·█··▆●·▂▂·▄ beats 8/13     avg 32%                8.0%  typical
+<a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelligenc…</a>  1096.6  ▁·▂▁●▅▅▃█▄▁▁ beats 12/62    avg 1045               5.2%  typical
+<a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   43.0%  ▁▁▁▁▁▂▂▃▄▆█● beats 88/97    hard · avg 32%         4.8%  blunt · at its level
 <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-5 ju…</a>   85.8%  ▁▂▂▂▃█▃▆▅▄▂● beats 90/95    easy · avg 66%         4.3%  typical
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   73.8%  ▂▄▂▃█▄▃▆▃▅●▂ beats 77/81    medium · avg 58%       3.2%  blunt · at its level
-<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   75.6%  ▂·▄··▂▂·▄▂●▄ beats 10/13    medium · avg 53%       2.3%  at its level
+<a href="https://arxiv.org/html/2508.21376v2#A8.T10">AHELM CoRe-Bench conversational a…</a>   75.6%  ▂·▄··▂▂·▄▂●▄ beats 10/13    medium · avg 54%       2.3%  at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM VoxCeleb2 same-speaker dete…</a>   52.9%  ▂·▂·▂●▂▄▄··▄ beats 5/13     very hard · avg 54%    2.1%  sharp · noisy
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   57.6%  ▁··▃▁▁▁●█▅▁▅ beats 7/24     medium · avg 52%       1.7%  blunt · at its level
 <a href="https://arxiv.org/html/2508.21376v2#A8.T8">AHELM LibriSpeech transcription b…</a>    4.3%  ▃···▃·█▃▅▃▅● beats 12/13    avg 11%                1.7%  blunt

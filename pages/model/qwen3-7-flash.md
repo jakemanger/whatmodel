@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-07 · closed weights
 
-**score 67.0** ±1.3 · #114 of 719 · from 5 benchmark results across 1 source
+**score 66.8** ±1.3 · #118 of 719 · from 5 benchmark results across 1 source
 
 ## What it's good at
 
@@ -23,8 +23,8 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [M
 
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   19.3%  ▂··▁▁●▄▄█▅▃▃ beats 13/82    very hard · avg 1.2%     55%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 130/193  very hard · avg 8.5%     10%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   19.3%  ▂··▁▁●▄▄█▅▃▃ beats 13/82    very hard · avg 1.2%     56%  sharp · at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    86.7%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 130/193  very hard · avg 8.6%     10%  sharp · noisy
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">Epoch AI</a>                             5   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 67.0
+weighted average                        = 66.8
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

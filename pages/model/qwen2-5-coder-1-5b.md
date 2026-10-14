@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 42.8** ±1.2 · #485 of 719 · from 9 benchmark results across 2 sources
+**score 42.8** ±1.2 · #484 of 719 · from 9 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -26,10 +26,10 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                      70.7%  ▄·●···█··█·▄ beats 1/6    very easy · avg 86%     25%  sharp · at its level
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   31.6%  ▁·▁●▄▁▆▄█▆▂▂ beats 3/62   medium · avg 54%        21%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     66.5%  ▄·●····▄▄·▄█ beats 1/6    easy · avg 82%          19%  sharp · at its level
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           69.2%  █···●██·██·█ beats 1/6    easy · avg 78%          11%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           69.2%  █···●██·██·█ beats 1/6    easy · avg 79%          11%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      56.7%  ▄·●····▄▄·▄█ beats 1/6    easy · avg 71%         8.2%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          59.4%  ▄····●▄·▄·█▄ beats 1/6    easy · avg 67%         7.0%  at its level
-<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     45.4%  █·█●·█··█·██ beats 2/6    medium · avg 57%       3.5%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          59.4%  ▄····●▄·▄·█▄ beats 1/6    easy · avg 67%         7.1%  at its level
+<a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                     45.4%  █·█●·█··█·██ beats 2/6    medium · avg 57%       3.4%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                     37.5%  ▄·●··▄·▄··▄▄ beats 1/6    medium · avg 55%       1.2%  blunt · at its level
 </pre>
 

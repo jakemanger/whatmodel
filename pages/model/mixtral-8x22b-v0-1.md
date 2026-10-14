@@ -6,7 +6,7 @@
 
 Mistral · released 2024-04 · 140.62B params (39B active) · apache-2.0
 
-**score 47.0** ±3.0 · #524 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.0** ±3.0 · #522 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ Mistral · released 2024-04 · 140.62B params (39B active) · apache-2.0
 
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   45.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 42/58  medium · avg 50%     96%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   45.5%  ▂▁▁▄▂▅▇█●▂▂▂ beats 42/58  medium · avg 51%     96%  at its level
 </pre>
 
 </details>

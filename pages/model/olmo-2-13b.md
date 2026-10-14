@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-12 · 13.72B params · apache-2.0
 
-**score 46.3** ±1.4 · #414 of 719 · from 11 benchmark results across 3 sources
+**score 46.3** ±1.4 · #413 of 719 · from 11 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -24,7 +24,7 @@ Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reaso
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>   39.5%  ▃▃·▁▁█●▅·▁·▁ beats 15/22  medium · avg 42%     11%  at its level
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled (l…</a>   39.5%  ▃▃·▁▁█●▅·▁·▁ beats 15/22  medium · avg 43%     11%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (lab)</a>      82.6%  ▁▃▁▃▁▄▁▁●▃▃▁ beats 15/22  easy · avg 80%      3.8%  typical
 </pre>
 
@@ -49,7 +49,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>                 63.0%  ▁▄·▁▁·●█·▄▄▁ beats 6/22    easy · avg 75%          26%  sharp · at its level
 <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                           68.5%  ▁▂·▁·▁▁●·▃▃▅ beats 7/22    easy · avg 77%          25%  at its level
 <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                          28.8%  ▁▁▁▃▃▃▁●▁▃·▄ beats 12/21   hard · avg 32%         4.4%  blunt · at its level
-<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 64.3%  ▃▃▂·▃▃·▅●▂▅▂ beats 13/21   medium · avg 63%       3.7%  blunt · at its level
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>                 64.3%  ▃▃▂·▃▃·▅●▂▅▂ beats 13/21   medium · avg 64%       3.7%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   68.5%  ▃·▁▁▂▁▂▅●▇▄▁ beats 45/100  medium · avg 68%       3.2%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   83.0%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 84/146  easy · avg 83%         2.3%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   89.2%  ▁▁▂●▄▄█▆▃▂▂▁ beats 22/140  very easy · avg 94%    1.3%  blunt · maxed out · noisy

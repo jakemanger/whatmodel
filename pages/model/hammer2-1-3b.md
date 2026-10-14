@@ -6,7 +6,7 @@
 
 MadeAgents · released 2024-12 · 3.09B params · other (qwen-research)
 
-**score 51.1** ±3.9 · #412 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.1** ±3.9 · #411 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 3.8B params · mit
 
-**score 47.0** ±2.2 · #397 of 719 · from 6 benchmark results across 3 sources
+**score 46.9** ±2.2 · #399 of 719 · from 6 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -23,8 +23,8 @@ Beats [MiniMax-M2.1](minimax-m2-1.md), [GPT-4.1](gpt-4-1.md), [DeepSeek V3 0324]
 
 <pre>
 test             result  vs the others in its run  difficulty           counts  why
-<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024 (lab)</a>   57.5%  ▁▁▁▂▁▃▁●███▃ beats 27/85  medium · avg 53%        25%  sharp · at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500 (lab)</a>    94.6%  ▁▃▂▃▅▇▅●█▅▂▁ beats 52/84  very easy · avg 87%    6.8%  noisy
+<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024 (lab)</a>   57.5%  ▁▁▁▂▁▃▁●███▃ beats 27/85  medium · avg 54%        25%  sharp · at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500 (lab)</a>    94.6%  ▁▃▂▃▅▇▅●█▅▂▁ beats 52/84  very easy · avg 87%    6.7%  noisy
 </pre>
 
 </details>
@@ -51,7 +51,7 @@ source                                    results  share of the score
 <a name="bridge-medical-leaderboard"></a><a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE Medical Leaderboard</a>                      1   20% ▇▇
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2   13% ▇▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 47.0
+weighted average                                   = 46.9
 </pre>
 
 <sub>Licences: microsoft/Phi-4-mini-reasoning model card ([MIT](../../licenses/card-microsoft-phi-4-mini-reasoning.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>

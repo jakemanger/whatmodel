@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · closed weights
 
-**score 68.6** ±0.8 · #99 of 719 · from 23 benchmark results across 7 sources
+**score 68.5** ±0.8 · #99 of 719 · from 23 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -14,17 +14,17 @@ OpenAI · released 2026-03 · closed weights
 
 <pre>
 task                vs the others          rank  counts  tests
-agent tasks         ▁▁▃▆█▆▅●▅▄▃▁     #91 of 300     18%      7
+agent tasks         ▁▁▃▆█▆▅●▅▄▃▁     #91 of 300     17%      7
 coding              ▁▁▁▃▆██▇●▄▃▁    #83 of 458*    6.2%      2
-chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #109 of 393*    5.4%      1
+chat &amp; writing      ▁▁▁▃▅▄▅█▆●▇▃   #109 of 393*    5.5%      1
 math                ▁▂▃▅▆▅▄█●▁▁▁     #62 of 398     34%      3
 vision &amp; documents  ▁▁▃▂▁▃▄▂●▇█▄    #80 of 147*    8.4%      2
 web search          ▂▁▂●▄█▃▃▁▁·▁     #69 of 80*    3.3%      1
 </pre>
 
-<details><summary>agent tasks · #91 of 300 · 18% of its score</summary>
+<details><summary>agent tasks · #91 of 300 · 17% of its score</summary>
 
-Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [Qwen3.6 35B-A3B](qwen3-6-35b-a3b.md), [MiniMax-M2.7](minimax-m2-7.md) here, though they rank lower overall.
+Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.1](gpt-5-1.md), [Grok 4.3](grok-4-3.md) here, though they rank higher overall. Trails [Hy3 preview (295B-A21B)](hy3-preview.md), [MiniMax-M2.7](minimax-m2-7.md), [Qwen3.6 35B-A3B](qwen3-6-35b-a3b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
@@ -51,13 +51,13 @@ test                                result  vs the others in its run  difficulty
 
 </details>
 
-<details><summary>chat &amp; writing · #109 of 393 · 5.4% of its score</summary>
+<details><summary>chat &amp; writing · #109 of 393 · 5.5% of its score</summary>
 
 Beats [LongCat 2.0 (1.6T-A48B)](longcat-2-0.md) here, though they rank higher overall. Trails [Nemotron-Cascade-8B](nemotron-cascade-8b.md), [Gemini 2.5 Flash](gemini-2-5-flash.md), [Mistral Large 3 (675B-A41B)](mistral-large-3.md) here, though they rank lower overall.
 
 <pre>
 test            result  vs the others in its run    difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1401.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 246/379  avg 1268      5.4%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>  1401.3  ▁▁▁▂▃▃▃▆▆●█▃ beats 246/379  avg 1268      5.5%  blunt
 </pre>
 
 </details>
@@ -69,8 +69,8 @@ Beats [Qwen3.6 Max Preview](qwen3-6-max-preview.md), [Claude Sonnet 4.6](claude-
 <pre>
 test                       result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   44.9%  ▂··▁▁▃▄●█▅▃▃ beats 31/82    very hard · avg 1.2%     24%  sharp · at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      12.2%  ▁▂▁●█▅▂▂▁▁▁▁ beats 13/63    very hard · avg 0.1%    7.4%  sharp · too hard for it
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    87.8%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 136/193  very hard · avg 8.5%    3.2%  sharp · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      12.2%  ▁▂▁●█▅▂▂▁▁▁▁ beats 13/63    very hard · avg 0.1%    7.5%  sharp · too hard for it
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    87.8%  ▃▃▄▃▃▃▇▇●▃▂▅ beats 136/193  very hard · avg 8.6%    3.2%  sharp · noisy
 </pre>
 
 </details>
@@ -103,12 +103,12 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         78.5%  ▁▁▁▁▂▄▆▄▅●█▅ beats 122/208  hard · avg 40%          7.4%  sharp
-<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Humanity's Last Exam (lab)</a>           24.3%  ▃··●·▃▃···▃█ beats 1/7      very hard · avg 4.4%    4.7%  typical
-<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-nano-high">ARC-AGI-1 public evaluation set (…</a>   51.6%  ▁·▇▃▁·●▇▁·▇▃ beats 9/27     very hard · avg 4.1%    4.4%  sharp · at its level · noisy
+<a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Humanity's Last Exam (lab)</a>           24.3%  ▃··●·▃▃···▃█ beats 1/7      very hard · avg 4.5%    4.7%  typical
+<a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-nano-high">ARC-AGI-1 public evaluation set (…</a>   51.6%  ▁·▇▃▁·●▇▁·▇▃ beats 9/27     very hard · avg 4.2%    4.4%  sharp · at its level · noisy
 <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-4-nano-medium">ARC-AGI-2 public evaluation set (…</a>    3.5%  █··●▅▁▃▁▃·▁▃ beats 7/24     very hard · avg 0.3%    3.7%  sharp · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          5.0%  ●··▂▃▇▄█▂▃▁▁ beats 11/74    very hard · avg 9.4%    2.8%  sharp · too hard for it · noisy
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                30.0%  █▁▁▁▁▂▁▄●▂▁▁ beats 103/135  very hard · avg 5.9%    2.6%  sharp · noisy
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    11.7%  ▁▁●▂▃▃▆▆█▃▂▅ beats 4/78     very hard · avg 8.0%    1.9%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    11.7%  ▁▁●▂▃▃▆▆█▃▂▅ beats 4/78     very hard · avg 8.1%    1.9%  at its level
 <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice (To…</a>   89.0%  ▁▁▃▁●▄▃▃▆▂▂▂ beats 10/49    easy · avg 78%          1.8%  typical
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   96.9%  ▁▂▁▂▅█▂▃▄▃▁● beats 98/98    very easy · avg 90%     0.0%  blunt
 </pre>
@@ -129,7 +129,7 @@ source                                    results  share of the score
 <a name="paper-2606.11070v1-t1-bench"></a><a href="https://arxiv.org/html/2606.11070v1">T1-Bench: Benchmarking Multi-Scenario A…</a>        1    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 68.6
+weighted average                                   = 68.5
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · T1-Bench: Benchmarking Multi-Scenario Agents in Real-World Domains ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

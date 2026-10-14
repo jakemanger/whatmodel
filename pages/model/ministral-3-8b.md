@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 8.92B params · apache-2.0
 
-**score 52.7** ±0.9 · #306 of 719 · from 21 benchmark results across 8 sources
+**score 52.7** ±0.9 · #303 of 719 · from 21 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -32,23 +32,23 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #285 of 393 · 3.2% of its score</summary>
 
-Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Gemma 4 E4B](gemma-4-e4b.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
+Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md) here, though they rank higher overall. Trails [Flan-T5 XXL](flan-t5-xxl.md), [LFM2 700M](lfm2-700m.md), [EXAONE 3.5 2.4B Instruct](exaone-3-5-2-4b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge unspeci…</a>   50.9%  ▃▃▂▅●▆▅█▅▅▂▃ beats 9/30   medium · avg 48%    3.2%  at its level · small run
+<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge unspeci…</a>   50.9%  ▃▃▂▅●▆▅█▅▅▂▃ beats 9/30   medium · avg 49%    3.2%  at its level · small run
 </pre>
 
 </details>
 
 <details><summary>math · #211 of 398 · 24% of its score</summary>
 
-Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md) here, though they rank lower overall.
+Beats [DeepSeek V3 (Dec '24)](deepseek-v3.md), [GPT-4o (2024-08-06)](gpt-4o-2024-08-06.md), [Command A (03-2025)](command-a.md) here, though they rank higher overall. Trails [Olmo 3 7B Instruct](olmo-3-7b-instruct.md), [Phi-4-mini-reasoning 3.8B](phi-4-mini-reasoning.md), [DeepSeek R1 Distill Llama 8B](deepseek-r1-distill-llama-8b.md) here, though they rank lower overall.
 
 <pre>
 test                         result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>     86.2%  █▄··▄█●····▄ beats 6/7    easy · avg 81%          11%  several runs
-<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                         89.5%  █····█··▄·▄● beats 6/7    very easy · avg 86%    6.4%  sharp
+<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                         89.5%  █····█··▄·▄● beats 6/7    very easy · avg 87%    6.3%  sharp
 <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>   26.4%  ▄··▄●█··▄··▄ beats 2/7    hard · avg 30%         3.4%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>       68.7%  ▄·▄·▄▄●·▄··█ beats 4/7    easy · avg 70%         2.8%  at its level
 </pre>

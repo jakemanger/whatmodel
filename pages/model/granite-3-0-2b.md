@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 2.63B params · apache-2.0
 
-**score 38.6** ±0.9 · #551 of 719 · from 22 benchmark results across 5 sources
+**score 38.6** ±0.9 · #550 of 719 · from 22 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -25,8 +25,8 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thin
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (lab)</a>                      50.6%  ▄·▄█·▄·●···█ beats 5/7    easy · avg 81%      8.9%  sharp · at its level
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (lab)</a>                           41.0%  ▄···▄·▄▄●··█ beats 5/7    medium · avg 64%    4.3%  at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (lab)</a>                      50.6%  ▄·▄█·▄·●···█ beats 5/7    easy · avg 82%      8.9%  sharp · at its level
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (lab)</a>                           41.0%  ▄···▄·▄▄●··█ beats 5/7    medium · avg 65%    4.2%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   14.2%  ▃··▁▂●▃▂█▃▄▂ beats 11/47  medium · avg 54%    1.3%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   20.4%  ▁▁▁▁▁▁▂●▃█▅▄ beats 12/47  hard · avg 33%      1.0%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    1.0%  █●▁▁▂▂▂▃▅▅▅▇ beats 9/47   medium · avg 36%    0.9%  sharp · noisy
@@ -41,7 +41,7 @@ Beats [Gemma 4 E2B](gemma-4-e2b.md), [Code Llama 70B Instruct](codellama-70b-ins
 
 <pre>
 test                                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1156.6  ▁▁▁▂●▃▃▆▆▇█▃ beats 45/379  avg 1268          6.7%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1156.6  ▁▁▁▂●▃▃▆▆▇█▃ beats 45/379  avg 1268          6.8%  blunt
 <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">IFEval (aggregation unspecified) …</a>   46.1%  ▄····█·●··██ beats 3/7     easy · avg 68%    2.6%  at its level
 </pre>
 

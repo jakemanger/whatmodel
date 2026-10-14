@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · 5.44B params (2B active) · gemma
 
-**score 42.9** ±1.6 · #482 of 719 · from 12 benchmark results across 4 sources
+**score 42.8** ±1.6 · #482 of 719 · from 12 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -24,7 +24,7 @@ math    ●··········█   #2 of 2*     24%      2
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                      66.5%  ▁▁▁▁▁▃▅▅●▃▂▁ beats 112/190  easy · avg 81%       16%  sharp · at its level · small run
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                           56.6%  ▁▁▁▄▅█●▅▃▁▂▁ beats 47/81    easy · avg 71%      7.9%  at its level · small run
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">LiveCodeBench v5 (window unspecif…</a>   18.6%  ●▃·····▃█··▅ beats 0/7      medium · avg 35%    5.5%  small run
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">LiveCodeBench v5 (window unspecif…</a>   18.6%  ●▃·····▃█··▅ beats 0/7      medium · avg 35%    5.4%  small run
 </pre>
 
 </details>
@@ -67,7 +67,7 @@ source                                    results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                           2    7% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    5% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 42.9
+weighted average                                   = 42.8
 </pre>
 
 <sub>Licences: Google DeepMind Gemma 3n E2B IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

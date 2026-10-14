@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-04 · closed weights
 
-**score 68.5** ±1.7 · #102 of 719 · from 4 benchmark results across 1 source
+**score 68.4** ±1.7 · #101 of 719 · from 4 benchmark results across 1 source
 
 ## What it's good at
 
@@ -25,7 +25,7 @@ Beats [Grok 4.20 (0309 reasoning)](grok-4-20.md), [GPT-5.4 mini](gpt-5-4-mini.md
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1399.8  ▁▂▄▃▅●▄▇▆▄▁▁ beats 46/119  avg 981        46%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1399.8  ▁▂▄▃▅●▄▇▆▄▁▁ beats 46/119  avg 983        46%  sharp
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ Beats [DeepSeek V4 Flash Vision (Exp)](deepseek-v4-flash-vision-exp.md), [GPT-5]
 <pre>
 test                               result  vs the others in its run   difficulty  counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1230.1  ▁▁▂▂▂▂▄▅▅●██ beats 88/145  avg 1068       18%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1400.1  ●▁▃▃▄▃▇█▅▇▄▅ beats 0/37    avg 1335      8.7%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1400.1  ●▁▃▃▄▃▇█▅▇▄▅ beats 0/37    avg 1336      8.7%  blunt
 </pre>
 
 </details>
@@ -61,7 +61,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          4   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 68.5
+weighted average                        = 68.4
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

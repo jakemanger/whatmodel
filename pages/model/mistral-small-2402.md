@@ -33,7 +33,7 @@ test     result  vs the others in its run   difficulty        counts  why
 <pre>
 test                     result  vs the others in its run  difficulty        counts  why
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>      32.2%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 33/61  medium · avg 41%     59%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   39.0%  ▂▁▁▄▂▅●█▆▂▂▂ beats 25/58  medium · avg 50%     19%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>   39.0%  ▂▁▁▄▂▅●█▆▂▂▂ beats 25/58  medium · avg 51%     19%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>   31.8%  ▃▂·▆●██▆▅▃▃▃ beats 8/33   medium · avg 41%     18%  at its level
 </pre>
 

@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-06 · 70.55B params · llama3
 
-**score 47.7** ±1.9 · #384 of 719 · from 3 benchmark results across 1 source
+**score 47.6** ±1.9 · #384 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -23,8 +23,8 @@ Beats [Athene-70B](athene-70b.md), [OLMo 2 32B Instruct (0325)](olmo-2-32b.md) h
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               22.7%  ▂▂▅●▄█▆▃▅▂▃▄ beats 19/92   hard · avg 32%           60%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 18/193  very hard · avg 8.5%    6.9%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               22.7%  ▂▂▅●▄█▆▃▅▂▃▄ beats 19/92   hard · avg 33%           60%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    2.5%  ▃●▄▃▃▃▇▇█▃▂▅ beats 18/193  very hard · avg 8.6%    6.9%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -46,7 +46,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                             3   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 47.7
+weighted average                        = 47.6
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

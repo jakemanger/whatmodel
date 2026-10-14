@@ -38,7 +38,7 @@ Beats [GPT-4 (0613)](gpt-4-0613.md), [Athene-70B](athene-70b.md), [Llama 3 70B I
 test             result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>       72.5%  █··●·····▄·█ beats 2/5    very easy · avg 90%     21%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>    3.3%  █···▄▄●····▄ beats 4/5    very hard · avg 11%     10%  sharp · too hard for it
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>    58.1%  █···▄·▄●···▄ beats 4/5    easy · avg 74%         9.5%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>    58.1%  █···▄·▄●···▄ beats 4/5    easy · avg 74%         9.4%  at its level
 </pre>
 
 </details>

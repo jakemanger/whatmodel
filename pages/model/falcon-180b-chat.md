@@ -33,7 +33,7 @@ test                                result  vs the others in its run   difficult
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   40.0%  ▅····▃▅·██·● beats 13/13  medium · avg 59%     24%  at its level
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   40.0%  ▅····▃▅·██·● beats 13/13  medium · avg 60%     24%  at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   49.3%  ▃▅▃··▅▃·█▃▃● beats 12/13  easy · avg 67%       16%  at its level
 </pre>
 

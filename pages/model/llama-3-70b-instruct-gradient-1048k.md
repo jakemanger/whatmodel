@@ -6,7 +6,7 @@
 
 Gradient AI · released 2024-05 · 70.55B params · llama3
 
-**score 49.5** ±5.7 · #459 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.5** ±5.6 · #459 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 

@@ -26,7 +26,7 @@ Beats [DeepSeek R1 Distill Qwen 7B](deepseek-r1-distill-qwen-7b.md), [Qwen3.5 2B
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            28.7%  ▁·▁▁●▄▆▅█▃▁▁ beats 12/99  easy · avg 79%       42%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           25.0%  ▁·▁▁▁●▄▄▄█▃▁ beats 13/99  easy · avg 74%       18%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   19.8%  ▁·●▁▂▆▅█▄▄▁▂ beats 2/35   medium · avg 64%    5.2%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   19.8%  ▁·●▁▂▆▅█▄▄▁▂ beats 2/35   medium · avg 65%    5.2%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                36.8%  ▁···▁▁●▅▇█▆▂ beats 5/75   easy · avg 68%      4.1%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   21.5%  ▄▇█▃●▇▄▁▇▃·▁ beats 17/35  medium · avg 49%    2.6%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   13.7%  ▁·▁▁▄█●▄█▁▅▅ beats 12/35  medium · avg 56%    2.0%  sharp
@@ -53,7 +53,7 @@ test                                result  vs the others in its run   difficult
 <pre>
 test                                         result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                             17.7%  ▂●▃▄▄█▁▄▅▃▁▃ beats 3/42    medium · avg 55%       6.7%  typical
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  6.6198 WB-Score  ▁·●▁·▃█▄▇▆▅▆ beats 1/52    avg 45.199 WB-Score    3.9%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  6.6198 WB-Score  ▁·●▁·▃█▄▇▆▅▆ beats 1/52    avg 45.277 WB-Score    3.9%  sharp
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>            48.0%  ▃▁▁▁▁▁▁●▂█▅▁ beats 64/276  medium · avg 73%       0.6%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>            64.0%  ▁▁▁▁▁▁▁●▄█▄▃ beats 34/146  easy · avg 83%         0.5%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>            85.2%  ▁▁●▃▄▄█▆▃▂▂▁ beats 14/140  very easy · avg 94%    0.4%  blunt · noisy

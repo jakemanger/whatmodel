@@ -6,7 +6,7 @@
 
 Meta · released 2026-08 · closed weights
 
-**score 75.1** ±1.4 · #39 of 719 · from 5 benchmark results across 2 sources
+**score 75.0** ±1.4 · #39 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -26,7 +26,7 @@ Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank highe
 
 <pre>
 test                                     result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0327 IPS  ▁▁▁▄▂●▇█▂▂▁▃ beats 13/49  avg -0.312 IPS     34%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0327 IPS  ▁▁▁▄▂●▇█▂▂▁▃ beats 13/49  avg -0.310 IPS     34%  sharp
 </pre>
 
 </details>
@@ -37,7 +37,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1531.8  ▁▂▄▃▅█▄●▆▄▁▁ beats 79/119  avg 981        30%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1531.8  ▁▂▄▃▅█▄●▆▄▁▁ beats 79/119  avg 983        30%  sharp
 </pre>
 
 </details>
@@ -68,7 +68,7 @@ test                             result  vs the others in its run    difficulty 
 
 <pre>
 test               result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>   60.3%  ▁▁▃▂▃▃▆▆█●▂▅ beats 64/78  very hard · avg 8.0%    6.8%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>   60.3%  ▁▁▃▂▃▃▆▆█●▂▅ beats 64/78  very hard · avg 8.1%    6.8%  at its level
 </pre>
 
 </details>
@@ -82,7 +82,7 @@ source                         results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>          4   92% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">Epoch AI</a>                             1    7% ▇
 prior: pull toward the middle             1% ▇
-weighted average                        = 75.1
+weighted average                        = 75.0
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

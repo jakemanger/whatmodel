@@ -6,7 +6,7 @@
 
 NAVER Cloud · released 2025-12 · 33.31B params · hyperclovax
 
-**score 61.0** ±1.9 · comparison only: no current run option verified · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 60.9** ±1.9 · comparison only: no current run option verified · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -24,11 +24,11 @@ Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [DeepSeek V3.2 Exp](deep
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard (lab)</a>             9.9%  ▂▅▆▂▂●▂▂█▅▅▂ beats 13/27  very hard · avg 2.3%     23%  sharp · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard (lab)</a>             9.9%  ▂▅▆▂▂●▂▂█▅▅▂ beats 13/27  very hard · avg 2.4%     23%  sharp · small run
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Telecom (lab)</a>               65.1%  ▁·▅█▆●▂▃▃▂▃▁ beats 52/89  very hard · avg 13%      19%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail (lab)</a>                71.6%  ▁····▂▁▃▆●▃▁ beats 30/44  medium · avg 38%         16%  at its level
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline (lab)</a>               58.0%  ▁▁·▂▁▃▂▁●▅▂▃ beats 21/42  hard · avg 29%           13%  at its level
-<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>    2.3%  ●····█··▃█·▃ beats 0/8    very hard · avg 3.4%     12%  typical
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline (lab)</a>               58.0%  ▁▁·▂▁▃▂▁●▅▂▃ beats 21/42  hard · avg 30%           13%  at its level
+<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>    2.3%  ●····█··▃█·▃ beats 0/8    very hard · avg 3.5%     12%  typical
 </pre>
 
 </details>
@@ -39,7 +39,7 @@ Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gp
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>    2.3%  ●····█··▃█·▃ beats 0/8    very hard · avg 3.4%     12%  typical
+<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>    2.3%  ●····█··▃█·▃ beats 0/8    very hard · avg 3.5%     12%  typical
 </pre>
 
 </details>
@@ -48,8 +48,8 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test             result  vs the others in its run    difficulty        counts  why
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag (lab)</a>   57.2%  ▁▁▁▁▂▂●▇█▆▅▃ beats 17/85    medium · avg 64%    9.1%  at its level · small run
-<a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU (lab)</a>        87.7%  ▁▁▁▁▁▂▃▅█▃▆● beats 171/183  medium · avg 71%    5.6%  noisy · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag (lab)</a>   57.2%  ▁▁▁▁▂▂●▇█▆▅▃ beats 17/85    medium · avg 65%    9.1%  at its level · small run
+<a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU (lab)</a>        87.7%  ▁▁▁▁▁▂▃▅█▃▆● beats 171/183  medium · avg 72%    5.6%  noisy · small run
 <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA (lab)</a>        76.7%  ▁▁▁▃▃▄▇●▄▃▁▁ beats 48/83    easy · avg 84%      2.3%  blunt · small run
 </pre>
 
@@ -64,7 +64,7 @@ source                                    results  share of the score
 <a name="paper-2601.03286v1-hyperclova-x-32b-think"></a><a href="https://arxiv.org/html/2601.03286v1#S5.T5">HyperCLOVA X 32B Think (lab)</a>                    7   87% ▇▇▇▇▇▇▇▇▇▇
 <a name="paper-2606.02404v1-k-browsecomp"></a><a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp: A Web Browsing Agent Benc…</a>        1   12% ▇
 prior: pull toward the middle                        2% ▇
-weighted average                                   = 61.0
+weighted average                                   = 60.9
 </pre>
 
 <sub>Licences: HyperCLOVA X 32B Think ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

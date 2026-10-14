@@ -32,7 +32,7 @@ test        result  vs the others in its run  difficulty      counts  why
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                 37.5%  ▁▁▁▁▂●▅▅█▃▄▁ beats 19/129  easy · avg 80%          45%  sharp
 <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                           45.1%  ▁▁▁▁▁▂●▅█▃▆▃ beats 28/183  easy · avg 82%          29%  typical
-<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   81.7%  ▁●▂▃▄▄█▆▃▂▂▁ beats 6/140   very easy · avg 94%    4.9%  blunt · noisy
+<a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard…</a>   81.7%  ▁●▂▃▄▄█▆▃▂▂▁ beats 6/140   very easy · avg 94%    5.0%  blunt · noisy
 </pre>
 
 </details>

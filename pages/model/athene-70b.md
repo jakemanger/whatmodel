@@ -6,7 +6,7 @@
 
 Nexusflow · released 2024-07 · 70.6B params · nexusflow-research
 
-**score 50.6** ±0.8 · #332 of 719 · from 8 benchmark results across 4 sources
+**score 50.6** ±0.8 · #330 of 719 · from 8 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -48,7 +48,7 @@ Trails [Gemma 7B (base)](gemma-7b-base.md), [DeepSeek R1 Distill Qwen 1.5B](deep
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   20.7%  ▁▁▁▆●▂▇▇▄··▂ beats 9/38   hard · avg 34%         8.8%  sharp · at its level
+<a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>   20.7%  ▁▁▁▆●▂▇▇▄··▂ beats 9/38   hard · avg 34%         8.7%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          86.7%  ▁▄·▁▄█▅●▅███ beats 18/43  very easy · avg 89%    6.8%  sharp
 </pre>
 
@@ -60,7 +60,7 @@ test                                result  vs the others in its run  difficulty
 test                                          result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 quest…</a>             76.6%  ▁·▁▁▄▄▄●█▄▂▁ beats 23/53  easy · avg 77%          27%  at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 puzzl…</a>             16.7%  ▁▁▃▆●█▁▁·▁▁▁ beats 22/57  hard · avg 18%          10%  sharp
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  59.5374 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 52/52  avg 45.199 WB-Score    7.0%  sharp
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  59.5374 WB-Score  ▁·▁▁·▃█▄▇▆▅● beats 52/52  avg 45.277 WB-Score    7.0%  sharp
 </pre>
 
 </details>

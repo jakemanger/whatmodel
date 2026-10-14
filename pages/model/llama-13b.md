@@ -39,7 +39,7 @@ Trails [Gemma 3 270M IT](gemma-3-270m.md), [FastChat-T5 3B](fastchat-t5-3b.md), 
 test                                                      result  vs the others in its run  difficulty                counts  why
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                         853.0  ●▁▂▁▃▇█▆▇▄▂▂ beats 1/95   avg 1201                    8.3%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                             975.0  ●▁▁▂▃▃▃▆▆▇█▃ beats 1/379  avg 1268                    8.2%  blunt
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  2.6100 MT-Bench score (1-10)  ●▂▂▆▆▄██▂▄▄▆ beats 0/28   avg 8.819 MT-Bench scor…    7.2%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  2.6100 MT-Bench score (1-10)  ●▂▂▆▆▄██▂▄▄▆ beats 0/28   avg 8.826 MT-Bench scor…    7.3%  sharp · noisy
 </pre>
 
 </details>
@@ -61,12 +61,12 @@ test         result  vs the others in its run   difficulty      counts  why
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
 <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                       37.1%  ███··█·●·█·█ beats 4/6    easy · avg 76%         8.3%  sharp
-<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 46.2%  ▄▄·▄···▄▄·●█ beats 6/8    easy · avg 77%         6.7%  several runs
+<a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                 46.2%  ▄▄·▄···▄▄·●█ beats 6/8    easy · avg 78%         6.7%  several runs
 <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                          78.1%  ▁▄▅▆▂▆▄●█▃▄▄ beats 36/58  very easy · avg 93%    4.8%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>                  52.7%  ▆▁▁▂▂▅▇●▄▃▃▂ beats 61/97  easy · avg 86%         4.5%  sharp
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   21.3%  ▅····▃▅·●█·█ beats 6/13   medium · avg 59%       4.3%  typical
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   21.3%  ▅····▃▅·●█·█ beats 6/13   medium · avg 60%       4.3%  typical
 <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                     73.0%  ▁···▂▁▁▅█●▃▁ beats 71/87  easy · avg 90%         4.2%  at its level
-<a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                      79.2%  ▁▁▁▁▂▂▃▇█●▅▃ beats 64/85  very easy · avg 92%    4.0%  at its level
+<a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                      79.2%  ▁▁▁▁▂▂▃▇█●▅▃ beats 64/85  very easy · avg 93%    4.0%  at its level
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   41.2%  ▃▅▃··▅▃·●▃▃▅ beats 8/13   easy · avg 67%         3.8%  at its level
 <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                     56.4%  █▁▁▁▄▃▃▇●▁▄▂ beats 51/65  easy · avg 80%         3.1%  typical
 <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                       74.8%  ▁▂▃▂▃▅▇█▇●▄▆ beats 51/65  very easy · avg 90%    2.7%  at its level

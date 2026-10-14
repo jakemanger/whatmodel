@@ -25,8 +25,8 @@ Beats [Qwen3.5 2B](qwen3-5-2b.md), [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek
 
 <pre>
 test             result  vs the others in its run  difficulty        counts  why
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (lab)</a>   30.2%  ●·▄█·▄·▄···█ beats 0/7    easy · avg 81%       11%  sharp
-<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (lab)</a>        15.4%  ●···▄·▄▄█··█ beats 0/7    medium · avg 64%    5.5%  typical
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (lab)</a>   30.2%  ●·▄█·▄·▄···█ beats 0/7    easy · avg 82%       11%  sharp
+<a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (lab)</a>        15.4%  ●···▄·▄▄█··█ beats 0/7    medium · avg 65%    5.5%  typical
 </pre>
 
 </details>

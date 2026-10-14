@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 3.85B params · apache-2.0
 
-**score 45.2** ±0.8 · #439 of 719 · from 33 benchmark results across 8 sources
+**score 45.1** ±0.8 · #439 of 719 · from 33 benchmark results across 8 sources
 
 ## What it's good at
 
@@ -37,7 +37,7 @@ Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Cod
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge unspeci…</a>   30.5%  ▃●▂▅▃▆▅█▅▅▂▃ beats 3/30   medium · avg 48%    2.7%  at its level · small run
+<a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge unspeci…</a>   30.5%  ▃●▂▅▃▆▅█▅▅▂▃ beats 3/30   medium · avg 49%    2.7%  at its level · small run
 <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">IFEval (aggregation unspecified)</a>     72.5%  ▄···▄●▄····▄ beats 2/5    easy · avg 79%      1.2%  at its level
 </pre>
 
@@ -50,9 +50,9 @@ Beats [Molmo 2 8B](molmo-2-8b.md), [DeepSeek-V2.5](deepseek-v2-5.md), [DeepSeek-
 <pre>
 test                         result  vs the others in its run  difficulty           counts  why
 <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>     70.2%  ●▄··▄█▄····▄ beats 0/7    easy · avg 81%          14%  at its level · several runs
-<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                         79.0%  ●····█··▄·▄█ beats 1/7    very easy · avg 86%    9.4%  sharp
+<a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                         79.0%  ●····█··▄·▄█ beats 1/7    very easy · avg 87%    9.4%  sharp
 <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>       47.0%  ●·▄·▄▄▄·▄··█ beats 0/7    easy · avg 70%         3.0%  at its level
-<a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>   16.3%  ●··▄██··▄··▄ beats 0/7    hard · avg 30%         2.5%  typical
+<a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>   16.3%  ●··▄██··▄··▄ beats 0/7    hard · avg 30%         2.4%  typical
 </pre>
 
 </details>
@@ -82,14 +82,14 @@ test                           result  vs the others in its run  difficulty     
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                                 69.8%  ▄···●▄·▄█··█ beats 1/7     easy · avg 75%          11%  at its level · several runs
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.3927  ▁▄●▃▇▄█▃▅▁▁▁ beats 4/30    avg 0.423               10%  sharp
-<a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             49.5%  ▄····●·▄█·▄▄ beats 2/7     medium · avg 56%       8.5%  at its level · several runs
-<a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                         31.6%  ▄···●·▄·█·▄▄ beats 1/7     hard · avg 38%         6.0%  sharp
+<a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                             49.5%  ▄····●·▄█·▄▄ beats 2/7     medium · avg 56%       8.6%  at its level · several runs
+<a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                         31.6%  ▄···●·▄·█·▄▄ beats 1/7     hard · avg 38%         6.1%  sharp
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   39.3%  ▂▃●▂▆▃█▅█▅▃▆ beats 4/34    medium · avg 42%       4.4%  blunt · at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>               26.7%  ●··▄··█··█·▄ beats 0/7     medium · avg 43%       4.1%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>        38.4%  ●··▃▃··▅···█ beats 0/7     medium · avg 57%       2.9%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>             39.4%  ●···▄·█·▄·▄█ beats 0/7     medium · avg 60%       2.6%  at its level
 <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecified)</a>    44.7%  ▄··▄●▄··▄··█ beats 3/7     medium · avg 47%       2.1%  blunt · at its level
-<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified)</a>   47.0%  ▄·▄··●▄····▄ beats 3/5     medium · avg 58%       1.3%  blunt · at its level
+<a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspecified)</a>   47.0%  ▄·▄··●▄····▄ beats 3/5     medium · avg 59%       1.3%  blunt · at its level
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   69.8%  ▃·▁▁▂▁▂▅●▇▄▁ beats 50/100  medium · avg 68%       1.1%  at its level · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   81.5%  ▁▁▁▁▁▁▁▂▄●▄▃ beats 72/146  easy · avg 83%         0.9%  at its level · noisy
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   75.8%  ●▂▁▂▅█▂▃▄▃▁▁ beats 0/98    very easy · avg 90%    0.0%  blunt
@@ -112,7 +112,7 @@ source                                    results  share of the score
 <a name="paper-2605.17281v2-contractbench"></a><a href="https://arxiv.org/html/2605.17281v2">ContractBench: Can LLM Agents Preserve …</a>        1    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard</a>               1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 45.2
+weighted average                                   = 45.1
 </pre>
 
 <sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · CohereLabs/North-Micro-Vision-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · mistralai/Ministral-3-14B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-8B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

@@ -6,7 +6,7 @@
 
 Tencent · released 2026-08 · 770B params (49B active) · apache-2.0
 
-**score 79.1** ±1.1 · #16 of 719 · from 15 benchmark results across 2 sources
+**score 78.9** ±1.1 · #16 of 719 · from 15 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -26,12 +26,12 @@ Beats [GPT-5.5](gpt-5-5.md) here, though they rank higher overall. Trails [Grok 
 
 <pre>
 test                                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0395 IPS  ▁▁▁▄▂▃▇●▂▂▁▃ beats 32/49  avg -0.312 IPS           23%  sharp
-<a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SWE-bench Pro (split unspecified)…</a>       65.7%  ▃·▁▁▁▂▂▃█●▃▁ beats 48/55  very hard · avg 6.8%    7.0%  sharp · at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  0.0395 IPS  ▁▁▁▄▂▃▇●▂▂▁▃ beats 32/49  avg -0.310 IPS           23%  sharp
+<a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SWE-bench Pro (split unspecified)…</a>       65.7%  ▃·▁▁▁▂▂▃█●▃▁ beats 48/55  very hard · avg 6.9%    7.0%  sharp · at its level · small run
 <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">Terminal-Bench 2.1 (lab)</a>                 85.4%  ▁·▁·▁▁▄▃▄█▃● beats 47/56  hard · avg 17%          5.7%  small run
-<a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">APEX-Agents (pass@1) (lab)</a>               37.1%  ▃▃··▃··█▃·▃● beats 8/8    very hard · avg 2.8%    5.4%  at its level · small run
+<a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">APEX-Agents (pass@1) (lab)</a>               37.1%  ▃▃··▃··█▃·▃● beats 8/8    very hard · avg 2.9%    5.4%  at its level · small run
 <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SWE-bench Multilingual (lab)</a>             82.9%  ▁··▁▃▂▅▇█●▃▁ beats 52/60  hard · avg 27%          4.2%  small run
-<a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">MCP-Atlas (public set) (lab)</a>             83.7%  ▂·▁▂▁·▁▃█▆▆● beats 37/37  hard · avg 29%          3.7%  small run
+<a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">MCP-Atlas (public set) (lab)</a>             83.7%  ▂·▁▂▁·▁▃█▆▆● beats 37/37  hard · avg 30%          3.7%  small run
 <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">Humanity's Last Exam with tools (…</a>       55.4%  ▂▂▂▁▄▂▃▆█●▂▆ beats 40/54  very hard · avg 15%     3.1%  at its level · small run
 <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">WideSearch (lab)</a>                         83.9%  █·▂▆··▂···▂● beats 10/10  medium · avg 40%        2.5%  small run
 </pre>
@@ -44,8 +44,8 @@ Beats [GPT-5.6 Sol](gpt-5-6-sol.md), [GPT-5.5](gpt-5-5.md), [MiMo-V2.6-Pro](mimo
 
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1633.2  ▁▂▄▃▅█▄▇▆●▁▁ beats 104/119  avg 981                  21%  sharp
-<a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SWE-bench Pro (split unspecified)…</a>   65.7%  ▃·▁▁▁▂▂▃█●▃▁ beats 48/55    very hard · avg 6.8%    7.0%  sharp · at its level · small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1633.2  ▁▂▄▃▅█▄▇▆●▁▁ beats 104/119  avg 983                  21%  sharp
+<a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SWE-bench Pro (split unspecified)…</a>   65.7%  ▃·▁▁▁▂▂▃█●▃▁ beats 48/55    very hard · avg 6.9%    7.0%  sharp · at its level · small run
 <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SWE-bench Multilingual (lab)</a>         82.9%  ▁··▁▃▂▅▇█●▃▁ beats 52/60    hard · avg 27%          4.2%  small run
 </pre>
 
@@ -75,9 +75,9 @@ test                                result  vs the others in its run  difficulty
 <pre>
 test                                result  vs the others in its run    difficulty            counts  why
 <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">GPQA Diamond (lab)</a>                   92.3%  ▁▁▁▁▂▄▅▅███● beats 287/310  hard · avg 40%          6.8%  sharp · maxed out · small run
-<a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">Humanity's Last Exam (lab)</a>           43.4%  ▁▁▁▃▆▆▇██●▁▃ beats 96/104   very hard · avg 4.9%    5.3%  at its level · small run
+<a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">Humanity's Last Exam (lab)</a>           43.4%  ▁▁▁▃▆▆▇██●▁▃ beats 96/104   very hard · avg 5.0%    5.3%  at its level · small run
 <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">NL2Repo (lab)</a>                        58.9%  ▂▂·▂▂▄█▆▆▂▄● beats 19/21    very hard · avg 10%     4.3%  at its level · small run
-<a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SkillsBench 79-task text-only (Cl…</a>   62.9%  █··········● beats 1/1      hard · avg 16%          2.8%  at its level · small run
+<a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SkillsBench 79-task text-only (Cl…</a>   62.9%  █··········● beats 1/1      hard · avg 17%          2.8%  at its level · small run
 <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SuperChem (lab)</a>                      66.4%  █··········● beats 1/1      hard · avg 20%          2.4%  at its level · small run
 </pre>
 
@@ -92,7 +92,7 @@ source                                results  share of the score
 <a name="card2-tencent-hy4-preview"></a><a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">Tencent Hy4 preview model card (lab)</a>       13   56% ▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                 2   44% ▇▇▇▇▇
 prior: pull toward the middle                    1% ▇
-weighted average                               = 79.1
+weighted average                               = 78.9
 </pre>
 
 <sub>Licences: Tencent Hy4 preview model card ([Apache-2.0](https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

@@ -21,7 +21,7 @@ TII · released 2025-05 · 3.15B params · other (falcon-llm-license)
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Inception…</a>   14.4%  ▁▁●▁·▂·█▆█▇▁ beats 2/31     medium · avg 48%     44%  at its level
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   15.0%  ▁▁·▁▂▂●█▄▅▄▄ beats 11/66    hard · avg 31%       27%  typical
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   15.0%  ▁▁·▁▂▂●█▄▅▄▄ beats 11/66    hard · avg 31%       28%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   71.4%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 182/276  medium · avg 73%     23%  at its level · noisy
 </pre>
 

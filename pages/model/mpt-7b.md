@@ -6,7 +6,7 @@
 
 MosaicML · released 2023-05 · 6.7B params · apache-2.0
 
-**score 29.5** ±0.7 · comparison only: no current run option verified · from 30 benchmark results across 5 sources
+**score 29.6** ±0.7 · comparison only: no current run option verified · from 30 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">SciQ</a>                                 93.7%  ▁·▁·▁·▃▅▃●▄▁ beats 18/26  very easy · avg 98%    4.6%  several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">PIQA</a>                                 78.9%  ▁·▁··▁▁▃█▅●▂ beats 21/26  easy · avg 88%         4.6%  blunt · at its level · several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">Social IQA</a>                           45.1%  ▁···▁▃█▁●▁·▁ beats 23/26  medium · avg 63%       2.7%  blunt · several runs
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>    3.5%  ●····▃▅·██·█ beats 1/13   medium · avg 59%       2.2%  typical
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>    3.5%  ●····▃▅·██·█ beats 1/13   medium · avg 60%       2.2%  typical
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   30.4%  ▃▅▃··●▃·█▃▃▅ beats 4/13   easy · avg 67%         1.9%  at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">LAMBADA (OpenAI version), last-wo…</a>   68.6%  ▁··▂▁▁▁▂●█▅▃ beats 12/26  very easy · avg 89%    1.3%  blunt · at its level
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">TruthfulQA MC2</a>                       33.5%  ●·█·█▄···▄·█ beats 1/9    medium · avg 61%       0.3%  blunt · at its level
@@ -50,7 +50,7 @@ source                                    results  share of the score
 <a name="paper-2404.16164v1-factrecall"></a><a href="https://arxiv.org/html/2404.16164v1">Towards a Holistic Evaluation of LLMs o…</a>        2    4% ▇
 <a name="paper-2410.14897v1-gencopa"></a><a href="https://arxiv.org/html/2410.14897v1">From Test-Taking to Test-Making: Examin…</a>        1    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 29.5
+weighted average                                   = 29.6
 </pre>
 
 <sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

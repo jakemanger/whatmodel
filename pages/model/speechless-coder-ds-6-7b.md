@@ -6,7 +6,7 @@
 
 uukuguy · released 2023-12 · apache-2.0
 
-**score 46.8** ±0.9 · #403 of 719 · from 3 benchmark results across 1 source
+**score 46.7** ±0.8 · #405 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -38,7 +38,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                                    results  share of the score
 <a name="evalplus-published-runs"></a><a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">EvalPlus / EvalPerf published evaluatio…</a>        3  100% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 46.8
+weighted average                                   = 46.7
 </pre>
 
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>

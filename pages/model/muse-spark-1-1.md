@@ -6,7 +6,7 @@
 
 Meta · released 2026-07 · closed weights
 
-**score 75.0** ±1.0 · #42 of 719 · from 9 benchmark results across 4 sources
+**score 74.9** ±1.0 · #42 of 719 · from 9 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -27,8 +27,8 @@ Beats [Gemini 3.1 Pro (Preview)](gemini-3-1-pro.md) here, though they rank highe
 
 <pre>
 test                                     result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0488 IPS  ▁▁▁▄●▃▇█▂▂▁▃ beats 12/49  avg -0.312 IPS           20%  sharp
-<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json">τ³-bench banking_knowledge (v1.0.…</a>        40.5%  ▃▃▂▃·▆▃▂█●▅▂ beats 20/25  very hard · avg 4.1%    7.2%  at its level
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 aggrega…</a>  -0.0488 IPS  ▁▁▁▄●▃▇█▂▂▁▃ beats 12/49  avg -0.310 IPS           19%  sharp
+<a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json">τ³-bench banking_knowledge (v1.0.…</a>        40.5%  ▃▃▂▃·▆▃▂█●▅▂ beats 20/25  very hard · avg 4.2%    7.2%  at its level
 </pre>
 
 </details>
@@ -39,7 +39,7 @@ Beats [GPT-5.5](gpt-5-5.md), [GPT-5.6 Terra](gpt-5-6-terra.md), [GPT-5.4](gpt-5-
 
 <pre>
 test                       result  vs the others in its run   difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1541.7  ▁▂▄▃▅█▄●▆▄▁▁ beats 83/119  avg 981        17%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1541.7  ▁▂▄▃▅█▄●▆▄▁▁ beats 83/119  avg 983        17%  sharp
 </pre>
 
 </details>
@@ -61,7 +61,7 @@ Beats [Claude Opus 4.7](claude-opus-4-7.md), [Grok 4.5](grok-4-5.md) here, thoug
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026 (48…</a>   56.9%  ▂···▄·●█▆▆▄▂ beats 5/19   very hard · avg 4.6%     26%  sharp · at its level
+<a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026 (48…</a>   56.9%  ▂···▄·●█▆▆▄▂ beats 5/19   very hard · avg 4.7%     26%  sharp · at its level
 <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 2026 (…</a>   50.6%  ▄··█▂▂▂●▄··▂ beats 10/14  very hard · avg 1.1%    6.1%  sharp · at its level · noisy
 </pre>
 
@@ -74,7 +74,7 @@ Beats [Claude Sonnet 5.5](claude-sonnet-5-5.md), [MiMo-V2.6-Pro](mimo-v2-6-pro.m
 <pre>
 test                               result  vs the others in its run    difficulty  counts  why
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>    1281.1  ▁▁▂▂▂▂▄▅▅▆█● beats 127/145  avg 1068      6.7%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1479.5  ▁▁▃▃▄▃▇█▅●▄▅ beats 29/37    avg 1335      3.2%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style controlled)</a>  1479.5  ▁▁▃▃▄▃▇█▅●▄▅ beats 29/37    avg 1336      3.3%  blunt
 </pre>
 
 </details>
@@ -83,7 +83,7 @@ test                               result  vs the others in its run    difficult
 
 <pre>
 test               result  vs the others in its run  difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>   57.8%  ▁▁▃▂▃▃▆▆█●▂▅ beats 62/78  very hard · avg 8.0%    3.9%  at its level
+<a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>   57.8%  ▁▁▃▂▃▃▆▆█●▂▅ beats 62/78  very hard · avg 8.1%    3.9%  at its level
 </pre>
 
 </details>
@@ -99,7 +99,7 @@ source                                    results  share of the score
 <a name="tau2-bench-leaderboard-sierra"></a><a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json">τ²/τ³-bench leaderboard: Sierra's own e…</a>        1    7% ▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">Epoch AI</a>                                        1    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 75.0
+weighted average                                   = 74.9
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

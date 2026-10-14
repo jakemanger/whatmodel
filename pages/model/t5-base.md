@@ -6,7 +6,7 @@
 
 Google · released 2019-10 · 0.223B params · apache-2.0
 
-**score 45.9** ±8.7 · #423 of 719 · from 3 benchmark results across 1 source
+**score 45.8** ±8.7 · #424 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 
@@ -20,7 +20,7 @@ Google · released 2019-10 · 0.223B params · apache-2.0
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   42.3%  ▃···▃▃·▃·▃·● beats 6/7    hard · avg 44%          62%  blunt
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   42.3%  ▃···▃▃·▃·▃·● beats 6/7    hard · avg 44%          63%  blunt
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity judgm…</a>   10.3%  ▄···█···●█·▄ beats 3/7    very hard · avg 11%    2.1%  blunt · too hard for it
 <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property judgmen…</a>   49.5%  ●·······▁··▁ beats 1/7    very hard · avg 51%    1.5%  blunt · too hard for it · noisy
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   13.7%  ▃▁▁▁▁▁▁▁▂█▅▁ beats 0/276  medium · avg 73%          —  failed run: Failed run: average 13.68 v…
@@ -36,7 +36,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 source                         results  share of the score
 <a name="copen-emnlp2022-zero-shot"></a><a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN</a>                                3   66% ▇▇▇▇▇▇▇▇
 prior: pull toward the middle            34% ▇▇▇▇
-weighted average                        = 45.9
+weighted average                        = 45.8
 </pre>
 
 <sub>Licences: COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>

@@ -27,10 +27,10 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            24.4%  ▁·▁▁●▄▆▅█▃▁▁ beats 8/99   easy · avg 79%       42%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           21.3%  ▁·▁▁▁●▄▄▄█▃▁ beats 10/99  easy · avg 74%       21%  sharp
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 34.8%  █·●▃▃▃▅▃▃▅·▅ beats 3/15   easy · avg 82%      9.2%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   26.7%  ▁·▂▁●▆▅█▄▄▁▂ beats 4/35   medium · avg 64%    6.1%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   26.7%  ▁·▂▁●▆▅█▄▄▁▂ beats 4/35   medium · avg 65%    6.1%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                           29.7%  ▁··▁●▂█▇▁··▁ beats 3/22   medium · avg 59%    4.4%  at its level · several runs
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                           32.2%  ▁·▂●▁█▁▂···▁ beats 3/22   medium · avg 55%    3.8%  blunt · at its level · several runs
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        19.1%  ▄▄·●██▄█·█·▄ beats 2/12   medium · avg 52%    3.6%  typical
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                        19.1%  ▄▄·●██▄█·█·▄ beats 2/12   medium · avg 53%    3.6%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   14.8%  ▄▇●▃▄▇▄▁▇▃·▁ beats 8/35   medium · avg 49%    2.9%  typical
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   12.5%  ▁·▁▁▄●█▄█▁▅▅ beats 9/35   medium · avg 56%    2.2%  sharp
 </pre>

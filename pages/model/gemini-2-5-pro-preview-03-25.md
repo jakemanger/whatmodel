@@ -6,7 +6,7 @@
 
 Google · released 2025-04 · proprietary
 
-**score 66.8** ±1.9 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
+**score 66.7** ±1.9 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -35,7 +35,7 @@ Beats [Grok 4.3](grok-4-3.md), [Qwen3.5 Plus](qwen3-5-plus.md), [DeepSeek V3.2](
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   72.9%  ▂·▂▃▅▂▃█▆●▂▂ beats 42/49  very hard · avg 8.5%     81%  sharp · at its level
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   72.9%  ▂·▂▃▅▂▃█▆●▂▂ beats 42/49  very hard · avg 8.6%     81%  sharp · at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (onekq-…</a>   58.7%  ▁··▁·▁▁▁●█▇█ beats 13/45  hard · avg 32%           14%  at its level
 </pre>
 
@@ -51,7 +51,7 @@ source                         results  share of the score
 <a name="webapp1k-leaderboard"></a><a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K models leaderboard</a>          1   14% ▇▇
 <a name="galileo-agent-leaderboard"></a><a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard</a>            1    3% ▇
 prior: pull toward the middle             2% ▇
-weighted average                        = 66.8
+weighted average                        = 66.7
 </pre>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>

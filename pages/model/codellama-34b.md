@@ -27,11 +27,11 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            51.8%  ▁·▁▁▃▄●▅█▃▁▁ beats 38/99  easy · avg 79%          39%  sharp · at its level · several runs
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           43.9%  ▁·▁▁▁▃▄●▄█▃▁ beats 35/99  easy · avg 74%          17%  sharp · at its level
 <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                                 48.6%  █·▅▃▃▃▅▃▃●·▅ beats 13/15  easy · avg 73%         8.4%  at its level · several runs
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   43.3%  ▁·▂▁▂▆▅●▄▄▁▂ beats 23/35  medium · avg 64%       4.5%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   43.3%  ▁·▂▁▂▆▅●▄▄▁▂ beats 23/35  medium · avg 65%       4.5%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                56.3%  ▁···▁▁▂▅●█▆▂ beats 32/75  easy · avg 68%         3.1%  at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>                     47.2%  ▁··▁▅▂█●▁··▁ beats 20/22  medium · avg 59%       3.0%  at its level · several runs
-<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                              34.3%  ▄▄·▄██▄█·●·▄ beats 11/12  medium · avg 52%       2.8%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   17.1%  ▄▇●▃▄▇▄▁▇▃·▁ beats 13/35  medium · avg 49%       2.8%  at its level
+<a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                              34.3%  ▄▄·▄██▄█·●·▄ beats 11/12  medium · avg 53%       2.8%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   19.7%  ▁·▁▁▄██●█▁▅▅ beats 19/35  medium · avg 56%       2.7%  sharp · at its level
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>                     42.4%  ▁·▂▃▁●▁▂···▁ beats 15/22  medium · avg 55%       2.5%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>            77.6%  ▃▃▃·▆▃▃█▃●▂▅ beats 21/25  very easy · avg 86%    1.9%  sharp · at its level
@@ -55,7 +55,7 @@ test   result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                       57.0%  ▁·····▂█●▅·▁ beats 16/25  easy · avg 77%      4.0%  sharp · at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              37.1%  ▂▁▁▄▂●▇█▆▂▂▂ beats 19/58  medium · avg 50%    2.7%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              37.1%  ▂▁▁▄▂●▇█▆▂▂▂ beats 19/58  medium · avg 51%    2.7%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                 47.4%  ▁▁▃▃●█▄▁█··▁ beats 8/25   easy · avg 74%      1.4%  at its level
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   57.1%  ▂··▁▃▂▂▂█●▁▂ beats 22/25  medium · avg 61%    0.4%  blunt · at its level
 </pre>

@@ -6,7 +6,7 @@
 
 WizardLM · released 2023-08 · 13B params · llama2
 
-**score 41.9** ±2.4 · #501 of 719 · from 3 benchmark results across 2 sources
+**score 41.8** ±2.4 · #501 of 719 · from 3 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -39,7 +39,7 @@ source                                    results  share of the score
 <a name="first-party-wizardlm-scores"></a><a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">WizardLM team vendor-reported scores fo…</a>        1   57% ▇▇▇▇▇▇▇
 <a name="cruxeval-published-results"></a><a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval published evaluation results</a>           2   40% ▇▇▇▇▇
 prior: pull toward the middle                        3% ▇
-weighted average                                   = 41.9
+weighted average                                   = 41.8
 </pre>
 
 <sub>Licences: CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>

@@ -6,7 +6,7 @@
 
 All Hands AI · released 2025-03 · 32.76B params · mit
 
-**score 51.0** ±3.1 · #415 of 949 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.0** ±3.1 · #416 of 951 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -23,7 +23,7 @@ Beats [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   10.2%  ▂·●▃▅▂▃█▆▄▂▂ beats 3/49   very hard · avg 8.5%     96%  sharp
+<a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises, tw…</a>   10.2%  ▂·●▃▅▂▃█▆▄▂▂ beats 3/49   very hard · avg 8.6%     96%  sharp
 </pre>
 
 </details>

@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-08 · 13B params · llama2
 
-**score 36.2** ±1.5 · #586 of 719 · from 5 benchmark results across 5 sources
+**score 36.1** ±1.5 · #588 of 719 · from 5 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -26,7 +26,7 @@ test                                                      result  vs the others 
 <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                             10.5%  ▁▂▂▃●▆█▆▄▄▁▁ beats 24/122  medium · avg 39%             38%  typical
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>                        1077.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 36/95   avg 1201                     20%  blunt
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                            1141.5  ▁▁▁●▃▃▃▆▆▇█▃ beats 34/379  avg 1268                     20%  blunt
-<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.5700 MT-Bench score (1-10)  ▆▂▂▆▆▄█●▂▄▄▆ beats 18/28   avg 8.819 MT-Bench scor…     17%  sharp · noisy
+<a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer gra…</a>  6.5700 MT-Bench score (1-10)  ▆▂▂▆▆▄█●▂▄▄▆ beats 18/28   avg 8.826 MT-Bench scor…     17%  sharp · noisy
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ source                                    results  share of the score
 <a name="lmsys-arena-space-mtbench"></a><a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">LMSYS Chatbot Arena leaderboard Space: …</a>        1   17% ▇▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>                 1    4% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 36.2
+weighted average                                   = 36.1
 </pre>
 
 <sub>Licences: AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

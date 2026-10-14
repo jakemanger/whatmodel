@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-08 · 0.774B params · mit
 
-**score 0.7** ±1.9 · #716 of 719 · from 14 benchmark results across 5 sources
+**score 0.8** ±1.9 · #716 of 719 · from 14 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -28,7 +28,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                             52.7%  ▁▂▃▂●▅▇█▇▆▄▆ beats 12/65   very easy · avg 92%    9.0%  at its level
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                                 69.8%  ▄·▄·●··▆▂··▂ beats 7/12    very easy · avg 96%    7.7%  at its level
 <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                     66.1%  █····█···●·█ beats 2/3     easy · avg 92%         6.1%  blunt · at its level
-<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   33.8%  ▃···▃▃·●·▃·█ beats 3/7     hard · avg 44%         1.2%  blunt · too hard for it
+<a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification in c…</a>   33.8%  ▃···▃▃·●·▃·█ beats 3/7     hard · avg 44%         1.3%  blunt · too hard for it
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (English …</a>   26.5%  ▁▁●▁▁▁▁▂▄█▄▃ beats 3/146   easy · avg 83%         0.9%  too hard for it · noisy
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   27.4%  ●▁▁▁▁▁▁▁▂█▅▁ beats 25/276  medium · avg 73%       0.8%  too hard for it · noisy
 <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English), tes…</a>   25.0%  ●·▁▁▂▁▂▅█▇▄▁ beats 2/100   medium · avg 68%       0.2%  too hard for it · noisy
@@ -50,7 +50,7 @@ source                           results  share of the score
 <a name="euroeval-leaderboards"></a><a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval leaderboards</a>                  2    1% ▇
 <a name="open-pt-llm-leaderboard"></a><a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open Portuguese LLM Leaderboard</a>        1    1% ▇
 prior: pull toward the middle               2% ▇
-weighted average                          = 0.7
+weighted average                          = 0.8
 </pre>
 
 <sub>Licences: Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>

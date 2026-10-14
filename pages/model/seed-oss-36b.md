@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-08 · 36.2B params · apache-2.0
 
-**score 62.6** ±1.0 · #169 of 719 · from 21 benchmark results across 2 sources
+**score 62.5** ±1.0 · #169 of 719 · from 21 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -29,7 +29,7 @@ test                                result  vs the others in its run   difficult
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SWE-bench Verified (lab)</a>             56.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 44/131  hard · avg 17%          5.0%  sharp · at its level · small run
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">τ-bench Retail (lab)</a>                 70.4%  ▁····▃·▂▇█●▆ beats 21/28   hard · avg 34%          4.2%  at its level · small run
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">τ-bench Airline (lab)</a>                46.0%  ▁▁▁·▅▄▁●▇▁▁▇ beats 16/28   hard · avg 25%          3.9%  at its level · small run
-<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Multi-SWE-bench (scaffold per not…</a>   17.0%  █··█·······● beats 2/2     very hard · avg 5.7%    2.3%  small run
+<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Multi-SWE-bench (scaffold per not…</a>   17.0%  █··█·······● beats 2/2     very hard · avg 5.8%    2.3%  small run
 </pre>
 
 </details>
@@ -42,7 +42,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Kim
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SWE-bench Verified (lab)</a>             56.0%  ▁▁▁▁▁▁▂●█▆▁▁ beats 44/131  hard · avg 17%          5.0%  sharp · at its level · small run
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">LiveCodeBench v6 (Feb–May 2025) (…</a>   67.4%  ▁▁▃▁█▅▄●▅▅▃█ beats 18/38   medium · avg 41%        4.3%  at its level
-<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Multi-SWE-bench (scaffold per not…</a>   17.0%  █··█·······● beats 2/2     very hard · avg 5.7%    2.3%  small run
+<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Multi-SWE-bench (scaffold per not…</a>   17.0%  █··█·······● beats 2/2     very hard · avg 5.8%    2.3%  small run
 </pre>
 
 </details>
@@ -64,7 +64,7 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiMo-V2.5 (310B-A15B)](mimo-v2
 
 <pre>
 test                      result  vs the others in its run   difficulty            counts  why
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   67.5%  ▃▃▄▃▃▃●▇█▃▂▅ beats 97/193  very hard · avg 8.5%    8.9%  sharp · at its level · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   67.5%  ▃▃▄▃▃▃●▇█▃▂▅ beats 97/193  very hard · avg 8.6%    8.9%  sharp · at its level · noisy
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">AIME 2024 (lab)</a>            91.7%  ▁▁▁▂▁▃▁▅██●▃ beats 78/85   easy · avg 68%          6.0%  sharp
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">AIME 2025 (lab)</a>            84.7%  ▁·▁▁▁▂▅▆█●▅▁ beats 98/133  medium · avg 56%        5.4%  sharp
 </pre>
@@ -79,13 +79,13 @@ test                        result  vs the others in its run    difficulty      
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMLU (lab)</a>                   87.4%  ▁▁▁▁▁▂▃▅█▃▆● beats 170/183  medium · avg 72%        5.3%  typical
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Humanity's Last Exam (lab)</a>   10.1%  ▁▁▁▃●▆▇██▆▁▃ beats 16/104   very hard · avg 4.2%    5.2%  typical
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMLU-Pro (lab)</a>               82.7%  ▁▁·▁▁▁▃▂▄▅●▁ beats 151/188  medium · avg 63%        4.6%  typical
-<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMMLU (lab)</a>                  78.4%  ▂▁▁▂▃▂▄▄▅●█▃ beats 26/46    medium · avg 64%        4.0%  typical
+<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMMLU (lab)</a>                  78.4%  ▂▁▁▂▃▂▄▄▅●█▃ beats 26/46    medium · avg 65%        4.0%  typical
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SuperGPQA (lab)</a>              55.7%  ▂▁▂▂▅▆▃▇●▇█▃ beats 27/46    medium · avg 37%        3.3%  at its level
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SimpleQA (lab)</a>                9.7%  ▄▄▄▆●▆███·▂█ beats 10/32    very hard · avg 6.4%    2.9%  typical
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">KOR-Bench (lab)</a>              70.6%  ▄·······●··▄ beats 2/3      medium · avg 55%        2.5%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>        13.0%  █▁▁▁▁●▁▄▂▂▁▁ beats 64/135   very hard · avg 5.9%    2.0%  sharp · too hard for it · noisy
 <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">RULER 128k (lab)</a>             94.6%  ▃··▅▄▇▅█▇·▃● beats 32/32    easy · avg 72%          1.7%  typical
-<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">BeyondAIME (lab)</a>             65.0%  ▄·▂·▂▄··▄▄●█ beats 10/15    medium · avg 36%        1.0%  at its level
+<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">BeyondAIME (lab)</a>             65.0%  ▄·▂·▂▄··▄▄●█ beats 10/15    medium · avg 37%        1.0%  at its level
 </pre>
 
 </details>
@@ -99,7 +99,7 @@ source                                    results  share of the score
 <a name="card-bytedance-seed--seed-oss-36b-instruct"></a><a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">ByteDance-Seed/Seed-OSS-36B-Instruct mo…</a>       18   73% ▇▇▇▇▇▇▇▇▇
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">Epoch AI</a>                                        3   27% ▇▇▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 62.6
+weighted average                                   = 62.5
 </pre>
 
 <sub>Licences: ByteDance-Seed/Seed-OSS-36B-Instruct model card ([apache-2.0](../../licenses/ByteDance-Seed--Seed-OSS-36B-Instruct.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

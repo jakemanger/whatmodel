@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-01 · 7.62B params · apache-2.0
 
-**score 45.2** ±1.6 · #440 of 719 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 45.1** ±1.6 · #441 of 719 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## What it's good at
 
@@ -46,7 +46,7 @@ test             result  vs the others in its run   difficulty           counts 
 
 <pre>
 test                result  vs the others in its run   difficulty      counts  why
-<a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">GPQA Diamond (lab)</a>   42.4%  ▁▁▁▁▂▄●▅███▄ beats 60/310  hard · avg 50%     30%  sharp · small run · several runs
+<a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">GPQA Diamond (lab)</a>   42.4%  ▁▁▁▁▂▄●▅███▄ beats 60/310  hard · avg 51%     30%  sharp · small run · several runs
 </pre>
 
 </details>
@@ -60,7 +60,7 @@ source                                    results  share of the score
 <a name="card3-open-thoughts-openthinker2-7b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">open-thoughts/OpenThinker2-7B model car…</a>        5   78% ▇▇▇▇▇▇▇▇▇
 <a name="card3-open-thoughts-openthinker-7b"></a><a href="https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md">open-thoughts/OpenThinker-7B model card…</a>        4   21% ▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 45.2
+weighted average                                   = 45.1
 </pre>
 
 <sub>Licences: open-thoughts/OpenThinker2-7B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · open-thoughts/OpenThinker-7B model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

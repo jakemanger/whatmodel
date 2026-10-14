@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 14.77B params · apache-2.0
 
-**score 55.1** ±1.2 · #264 of 719 · from 15 benchmark results across 5 sources
+**score 55.1** ±1.2 · #263 of 719 · from 15 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -26,7 +26,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exercism …</a>   69.2%  ▁·▁▂▄▁▆▄█●▂▂ beats 46/62  medium · avg 54%        23%  at its level
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                      89.6%  ▄·▄···█··●·▄ beats 5/6    very easy · avg 86%     12%  sharp · maxed out
 <a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                     87.2%  ▄·▄····▄▄·▄● beats 6/6    easy · avg 82%          11%  sharp
-<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           86.2%  █···███·█●·█ beats 5/6    easy · avg 78%         7.7%  typical
+<a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                           86.2%  █···███·█●·█ beats 5/6    easy · avg 79%         7.7%  typical
 <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                      79.6%  ▄·▄····▄▄·▄● beats 6/6    easy · avg 71%         7.0%  typical
 <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                          72.8%  ▄····▄▄·▄·●▄ beats 5/6    easy · avg 67%         6.5%  at its level
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>   37.3%  █▂▁▁▂▂▂▃▅●▅▇ beats 30/47  medium · avg 36%       4.9%  sharp · at its level · noisy

@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 32.2B params · apache-2.0
 
-**score 57.9** ±1.0 · #218 of 719 · from 18 benchmark results across 4 sources
+**score 57.8** ±1.0 · #218 of 719 · from 18 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -51,8 +51,8 @@ Beats [Claude Sonnet 4.6](claude-sonnet-4-6.md), [MiniMax-M3](minimax-m3.md), [M
 
 <pre>
 test                               result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                     76.8%  ▄·····▄··▄█● beats 5/6    medium · avg 59%     10%  sharp
 <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                     72.5%  ▄··▄····█▄●▄ beats 5/6    medium · avg 51%     10%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                     76.8%  ▄·····▄··▄█● beats 5/6    medium · avg 59%     10%  sharp
 <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation) (lab)</a>   50.8%  ▅···▃▃···▃▃● beats 7/8    hard · avg 24%      2.8%  at its level
 <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">MATH (subset unspecified) (lab)</a>     96.1%  ▅····▃▃··▃▃● beats 6/8    easy · avg 74%      1.1%  noisy
 </pre>
@@ -63,12 +63,12 @@ test                               result  vs the others in its run  difficulty 
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (lab)</a>      58.1%  ▃······▃·▅·● beats 6/6    hard · avg 43%       14%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (lab)</a>      58.1%  ▃······▃·▅·● beats 6/6    hard · avg 44%       14%  sharp · at its level
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.5021  ▁▄▃▃▇▄●▃▅▁▁▁ beats 17/30  avg 0.423            13%  sharp
 <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>                 89.8%  ▄·····▄·▄·█● beats 6/6    easy · avg 78%       10%  sharp
 <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                           85.4%  ▄···▄··█··▄● beats 5/6    easy · avg 77%      5.4%  typical
 <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>                88.2%  ▄····▄·▄▄··● beats 4/5    easy · avg 76%      4.1%  typical
-<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                     76.0%  █▄····▄·▄·●▄ beats 5/6    medium · avg 53%    2.9%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                     76.0%  █▄····▄·▄·●▄ beats 5/6    medium · avg 54%    2.9%  at its level
 <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                          31.9%  ▄··█···▄···● beats 5/5    hard · avg 22%      2.7%  blunt · at its level
 <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)…</a>   47.6%  █·██·█●····█ beats 4/5    medium · avg 36%    2.1%  at its level
 </pre>
@@ -86,7 +86,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1    8% ▇
 <a name="card2-allenai-olmo-3-1-32b-think"></a><a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">allenai/Olmo-3.1-32B-Think model card (…</a>        2    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 57.9
+weighted average                                   = 57.8
 </pre>
 
 <sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · allenai/Olmo-3.1-32B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3.1-32B-Think.txt))</sub>

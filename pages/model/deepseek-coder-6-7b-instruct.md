@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 6.74B params · deepseek
 
-**score 47.5** ±0.6 · #389 of 719 · from 11 benchmark results across 5 sources
+**score 47.5** ±0.6 · #388 of 719 · from 11 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -39,7 +39,7 @@ test                                result  vs the others in its run  difficulty
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                    46.9%  ▂▂▃▄▄█▁▄●▃▁▃ beats 32/42  medium · avg 55%     11%  at its level
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>              35.3%  ▃▂·▆▆█●▆▅▃▃▃ beats 16/33  medium · avg 41%    4.4%  at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              43.2%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 35/58  medium · avg 50%    4.3%  at its level
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>              43.2%  ▂▁▁▄▂▅▇●▆▂▂▂ beats 35/58  medium · avg 51%    4.3%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/deepseek-ai--deepseek-coder-6.7b-instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>   73.6%  ▂·▂▂▂▆●▆▆▆▃█ beats 9/29   easy · avg 76%      2.5%  at its level
 </pre>
 

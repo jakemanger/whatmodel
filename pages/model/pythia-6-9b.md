@@ -30,7 +30,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">OpenBookQA</a>                           25.8%  █·●▁▃·▁▃▅▇▃▄ beats 6/26   easy · avg 84%         4.6%  several runs
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">LAMBADA (OpenAI version), last-wo…</a>   67.0%  ▁··▂▁▁▁▂●█▅▃ beats 9/26   very easy · avg 89%    4.0%  blunt · at its level · several runs
 <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   21.7%  ▃●▃··▅▃·█▃▃▅ beats 2/13   easy · avg 67%         1.8%  typical
-<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   11.0%  ▅····●▅·██·█ beats 2/13   medium · avg 59%       1.8%  typical
+<a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Premium…</a>   11.0%  ▅····●▅·██·█ beats 2/13   medium · avg 60%       1.8%  typical
 <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">Social IQA</a>                           40.7%  ▁···▁●█▁▁▁·▁ beats 3/26   medium · avg 59%       1.2%  blunt
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   29.0%  ●▁▁▁▁▁▁▁▂█▅▁ beats 6/276  medium · avg 73%       0.5%  noisy
 </pre>

@@ -6,7 +6,7 @@
 
 uukuguy · released 2024-03 · 15.96B params · bigcode-openrail-m
 
-**score 45.4** ±0.8 · #438 of 719 · from 3 benchmark results across 1 source
+**score 45.4** ±0.8 · #437 of 719 · from 3 benchmark results across 1 source
 
 ## What it's good at
 

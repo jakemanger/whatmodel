@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
-**score 47.2** ±1.0 · #394 of 719 · from 17 benchmark results across 7 sources
+**score 47.2** ±0.9 · #393 of 719 · from 17 benchmark results across 7 sources
 
 ## What it's good at
 
@@ -40,7 +40,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>             17.0%  ▃···▃·●·▃█·▃ beats 2/7    hard · avg 19%          6.0%  sharp
 <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                          78.8%  ██·●█···████ beats 2/7    easy · avg 79%          4.9%  typical
 <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Feb 20…</a>   14.4%  ▄▄·●·····█▄█ beats 2/7    hard · avg 19%          4.3%  typical
-<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    2.2%  ●▄··█·█····▄ beats 1/7    very hard · avg 6.7%    3.0%  sharp · too hard for it · noisy
+<a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises, tw…</a>    2.2%  ●▄··█·█····▄ beats 1/7    very hard · avg 6.8%    3.0%  sharp · too hard for it · noisy
 <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>                 52.7%  ▄··▄·▄·●··▄█ beats 3/7    medium · avg 49%        3.0%  at its level
 </pre>
 

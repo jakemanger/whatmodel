@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 52.9** ±0.8 · #301 of 719 · from 25 benchmark results across 5 sources
+**score 52.9** ±0.8 · #297 of 719 · from 25 benchmark results across 5 sources
 
 ## What it's good at
 
@@ -21,7 +21,7 @@ math            ▁▂▃▅▆▅●█▄▁▁▁   #157 of 398     29%      
 
 <details><summary>coding · #230 of 458 · 10% of its score</summary>
 
-Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [GPT-4 (0613)](gpt-4-0613.md) here, though they rank lower overall.
+Beats [Qwen3.5 4B](qwen3-5-4b.md), [Qwen3-VL 32B Instruct](qwen3-vl-32b-instruct.md), [Solar Open 100B (102B-A12B)](solar-open-100b.md) here, though they rank higher overall. Trails [QwQ-32B-Preview](qwq-32b-preview.md), [Ministral 3 3B Reasoning 2512](ministral-3-3b-reasoning.md), [Hermes 3 Llama 3.1 405B](hermes-3-llama-3-1-405b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -35,7 +35,7 @@ test                                result  vs the others in its run  difficulty
 
 <details><summary>chat &amp; writing · #197 of 393 · 4.7% of its score</summary>
 
-Beats [Granite 4.2 8B](granite-4-2-8b.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
+Beats [Granite 4.2 8B](granite-4-2-8b.md), [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Qwen3-VL 30B-A3B Thinking](qwen3-vl-30b-a3b-thinking.md) here, though they rank higher overall. Trails [LFM2.5 1.2B Instruct](lfm2-5-1-2b-instruct.md), [LFM2.5 1.2B Thinking](lfm2-5-1-2b-thinking.md), [Gemma 3 12B](gemma-3-12b.md) here, though they rank lower overall.
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
@@ -54,7 +54,7 @@ test                               result  vs the others in its run  difficulty 
 <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                     71.6%  ▄·····▄··▄●█ beats 3/6    medium · avg 59%        10%  sharp · at its level
 <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                     64.6%  ▄··▄····█●▄▄ beats 4/6    medium · avg 51%       9.0%  sharp · at its level
 <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified) (lab)</a>     95.1%  ▃·····▃···▅● beats 5/6    very easy · avg 90%    5.3%  maxed out
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (lab)</a>   37.8%  ▄······●▄▄·█ beats 1/6    hard · avg 30%         4.7%  at its level
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (lab)</a>   37.8%  ▄······●▄▄·█ beats 1/6    hard · avg 31%         4.7%  at its level
 </pre>
 
 </details>
@@ -64,13 +64,13 @@ test                               result  vs the others in its run  difficulty 
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>                 86.6%  ▄·····▄·▄·●█ beats 4/6      easy · avg 78%       10%  sharp
-<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (lab)</a>      46.2%  ▃······▃·●·█ beats 2/6      hard · avg 43%       10%  sharp · at its level
+<a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (lab)</a>      46.2%  ▃······▃·●·█ beats 2/6      hard · avg 44%       10%  sharp · at its level
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 veri…</a>  0.4130  ▁▄▃●▇▄█▃▅▁▁▁ beats 6/30     avg 0.423           9.4%  sharp
 <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                           77.8%  ▄···▄··●··▄█ beats 3/6      easy · avg 77%      5.2%  typical
 <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win rate…</a>   41.3%  ▂▃▅●▆▃█▅█▅▃▆ beats 6/34     medium · avg 42%    4.6%  blunt · at its level
 <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>                81.5%  ▄····▄·●▄··█ beats 2/5      easy · avg 76%      3.8%  typical
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">MMLU-Redux</a>                           71.3%  ▁▁●▁▂▃▄▅▇▅█▄ beats 2/63     easy · avg 77%      2.8%  at its level
-<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                     66.5%  █▄····▄·●·▄▄ beats 4/6      medium · avg 53%    2.5%  at its level
+<a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                     66.5%  █▄····▄·●·▄▄ beats 4/6      medium · avg 54%    2.5%  at its level
 <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">GPQA Diamond</a>                         29.3%  ▁▁▁●▂▄▅▅███▄ beats 17/310   hard · avg 42%      2.4%  sharp · at its level · noisy
 <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                          23.7%  ▄··█···●···█ beats 3/5      hard · avg 22%      1.8%  blunt
 <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified)…</a>   41.6%  █·██·●█····█ beats 3/5      medium · avg 36%    1.5%  at its level

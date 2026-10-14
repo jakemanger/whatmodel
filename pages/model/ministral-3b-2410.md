@@ -6,7 +6,7 @@
 
 Mistral · released 2024-10 · proprietary
 
-**score 41.5** ±0.8 · comparison only: no current run option verified · from 24 benchmark results across 4 sources
+**score 41.4** ±0.8 · comparison only: no current run option verified · from 24 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -14,12 +14,12 @@ Mistral · released 2024-10 · proprietary
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▄··········●       #2 of 3*    4.7%      2
+coding          ▄··········●       #2 of 3*    4.8%      2
 chat &amp; writing  ▁▁▁▃▅▄●█▇▇▇▃   #287 of 463*    1.9%      1
 math            ▁▂▃●▇▅▅█▄▁▁▁    #391 of 462     27%      5
 </pre>
 
-<details><summary>coding · #2 of 3 · 4.7% of its score</summary>
+<details><summary>coding · #2 of 3 · 4.8% of its score</summary>
 
 <pre>
 test             result  vs the others in its run    difficulty      counts  why
@@ -35,7 +35,7 @@ Beats [Mistral Small 4 (119B-A6.5B)](mistral-small-4.md), [Ministral 3 14B Reaso
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">Arena-Hard (version/judge unspeci…</a>   64.3%  ▃▃▂▅▃▆●█▅▅▂▃ beats 14/30  easy · avg 70%    1.9%  at its level · small run
+<a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">Arena-Hard (version/judge unspeci…</a>   64.3%  ▃▃▂▅▃▆●█▅▅▂▃ beats 14/30  easy · avg 71%    1.9%  at its level · small run
 </pre>
 
 </details>
@@ -48,7 +48,7 @@ Beats [GPT-3.5 Turbo (0125)](gpt-3-5-turbo-0125.md), [Qwen2-VL 7B Instruct](qwen
 test                             result  vs the others in its run  difficulty           counts  why
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K</a>                             80.1%  █·●▄▄█···█·▄ beats 2/10   very easy · avg 91%     10%  sharp
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                              44.6%  ●▃▃█·▅···▃·▃ beats 0/10   easy · avg 71%         6.8%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      14.4%  ▂▂●▆▄█▆▃▅▂▃▄ beats 11/92  hard · avg 32%         4.3%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      14.4%  ▂▂●▆▄█▆▃▅▂▃▄ beats 11/92  hard · avg 33%         4.3%  sharp
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                              41.8%  ●▄██···▄▄▄·▄ beats 1/10   medium · avg 64%       4.1%  at its level
 <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MATH (subset unspecified) (lab)</a>   51.7%  ▂▄▄▃●▇▅▆▄▃▄▁ beats 28/80  easy · avg 66%         1.6%  at its level · noisy
 </pre>
@@ -61,13 +61,13 @@ test                             result  vs the others in its run  difficulty   
 test                                result  vs the others in its run   difficulty           counts  why
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge</a>                        80.3%  ▂▂●█▂···▄··▂ beats 2/10    very easy · avg 91%     15%  sharp · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU</a>                                 60.8%  ●▄█▄▄▄·▄▄··▄ beats 0/10    easy · avg 77%         8.4%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA</a>                           79.8%  ▂··▄●▂·▂···▄ beats 3/10    easy · avg 87%         8.1%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA</a>                           79.8%  ▂··▄●▂·▂···▄ beats 3/10    easy · avg 88%         8.1%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard</a>                       51.2%  ●█▄·█▄·▄▄··▄ beats 0/10    easy · avg 74%         7.6%  sharp · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro</a>                             35.3%  ●▄▄·█▄▄▄·▄·▄ beats 0/10    medium · avg 57%       4.9%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft)</a>        46.4%  ●▄▄██··█···▄ beats 0/10    easy · avg 65%         4.8%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft)</a>        46.4%  ●▄▄██··█···▄ beats 0/10    easy · avg 66%         4.8%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag</a>                            74.6%  ▃▅●·▃▃▃···▃▃ beats 4/10    easy · avg 84%         3.0%  at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                           59.8%  ▃····●▃█▃·▅▅ beats 1/10    medium · avg 74%       2.9%  at its level
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                                79.4%  ▃··▃··●█▃·▃▃ beats 4/10    easy · avg 85%         2.8%  at its level
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                                79.4%  ▃··▃··●█▃·▃▃ beats 4/10    easy · avg 86%         2.8%  at its level
 <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         25.3%  ●▁▁▁▂▄▆▄▅▇█▅ beats 0/208   hard · avg 40%         2.8%  sharp · too hard for it
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA</a>                           73.9%  ▃·▃▅●█·▃···▃ beats 4/10    easy · avg 78%         2.6%  blunt · at its level
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified)</a>            24.4%  ●··▄▂··▂▂··▄ beats 0/10    very hard · avg 33%    1.1%  sharp · too hard for it · noisy
@@ -90,7 +90,7 @@ source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">Epoch AI</a>                                        2    7% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a><a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderboard</a>               2    0% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 41.5
+weighted average                                   = 41.4
 </pre>
 
 <sub>Licences: microsoft/Phi-4-mini-instruct model card ([MIT](../../licenses/card-microsoft-phi-4-mini-instruct.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>

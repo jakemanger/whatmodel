@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-04 · closed weights
 
-**score 82.1** ±1.1 · #8 of 719 · from 5 benchmark results across 2 sources
+**score 81.9** ±1.1 · #8 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -25,7 +25,7 @@ Trails [GLM-5.3](glm-5-3.md), [Claude Haiku 5.5](claude-haiku-5-5.md), [DeepSeek
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                     90.1%  ▄··█▄··▄·▄●▄ beats 6/8    hard · avg 32%         9.3%  typical
+<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                     90.1%  ▄··█▄··▄·▄●▄ beats 6/8    hard · avg 33%         9.3%  typical
 <a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with tools (…</a>   57.2%  ▃·▃·▅····▅·● beats 6/8    very hard · avg 12%    7.4%  at its level
 </pre>
 
@@ -49,7 +49,7 @@ Beats [Claude Fable 5.1](claude-fable-5-1.md), [Claude Sonnet 5.5](claude-sonnet
 
 <pre>
 test                                result  vs the others in its run  difficulty           counts  why
-<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                     90.1%  ▄··█▄··▄·▄●▄ beats 6/8    hard · avg 32%         9.3%  typical
+<a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                     90.1%  ▄··█▄··▄·▄●▄ beats 6/8    hard · avg 33%         9.3%  typical
 <a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with tools (…</a>   57.2%  ▃·▃·▅····▅·● beats 6/8    very hard · avg 12%    7.4%  at its level
 </pre>
 
@@ -59,7 +59,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                        result  vs the others in its run  difficulty            counts  why
-<a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam (lab)</a>   43.1%  ▃··▃·▃▃···▃● beats 7/7    very hard · avg 4.4%     14%  at its level
+<a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam (lab)</a>   43.1%  ▃··▃·▃▃···▃● beats 7/7    very hard · avg 4.5%     14%  at its level
 </pre>
 
 </details>
@@ -73,7 +73,7 @@ source                                    results  share of the score
 <a name="epoch-internal"></a><a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">Epoch AI</a>                                        2   68% ▇▇▇▇▇▇▇▇
 <a name="first-party-openai-scores"></a><a href="https://openai.com/index/introducing-gpt-5-5">OpenAI vendor-reported benchmark scores…</a>        3   31% ▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 82.1
+weighted average                                   = 81.9
 </pre>
 
 <sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

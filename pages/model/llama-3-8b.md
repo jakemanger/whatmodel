@@ -41,9 +41,9 @@ test                                result  vs the others in its run  difficulty
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                            61.6%  ▁·▁▁▃▄▆●█▃▁▁ beats 47/99  easy · avg 79%       15%  sharp · at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                           56.7%  ▁·▁▁▁▃▄▄●█▃▁ beats 48/99  easy · avg 74%       11%  sharp · at its level
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 problems)</a>    37.8%  ▁▂●▃▆█▆▃▂·▁▁ beats 3/47   medium · avg 61%    4.4%  sharp · at its level
-<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   36.9%  ▁·▂▁▂▆●█▄▄▁▂ beats 13/35  medium · avg 64%    3.0%  at its level
-<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   29.1%  ▄▇█▃▄▇●▁▇▃·▁ beats 25/35  medium · avg 49%    2.0%  at its level
+<a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEvalPac…</a>   36.9%  ▁·▂▁▂▆●█▄▄▁▂ beats 13/35  medium · avg 65%    3.0%  at its level
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov…</a>   13.3%  ▁▁·●▂▄▆█▅▂·▂ beats 2/31   hard · avg 26%      2.0%  sharp
+<a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPack, …</a>   29.1%  ▄▇█▃▄▇●▁▇▃·▁ beats 25/35  medium · avg 49%    2.0%  at its level
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                54.8%  ▁···▁▁▂▅●█▆▂ beats 27/75  easy · avg 68%      2.0%  at its level
 <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, 6-la…</a>   29.3%  ▁·▁▁▄██▄●▁▅▅ beats 24/35  medium · avg 56%    2.0%  sharp · at its level
 <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-ai)</a>      6.8%  ●▁▁█▁▄▅▃▄▇▁▄ beats 0/31   medium · avg 44%    0.5%  sharp · noisy
@@ -73,10 +73,10 @@ Beats [Yi 34B Chat](yi-34b-chat.md) here, though they rank higher overall. Trail
 test                                result  vs the others in its run   difficulty            counts  why
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>          78.5%  ▁▄·▁▄●▅▅▅███ beats 8/43    very easy · avg 89%     3.7%  sharp · at its level
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K</a>                                72.9%  ▂▂▂▅▅▆▅●█▇▄▃ beats 75/146  very easy · avg 89%     1.7%  sharp
-<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                          6.1%  ▂●▅▆▄█▆▃▅▂▃▄ beats 3/92    hard · avg 32%          1.3%  sharp
+<a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                          6.1%  ▂●▅▆▄█▆▃▅▂▃▄ beats 3/92    hard · avg 33%          1.3%  sharp
 <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 probl…</a>    7.9%  ▁●▁▆█▂▇▇▄··▂ beats 1/38    hard · avg 34%          1.2%  sharp
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified)</a>            27.9%  ▂▄●▃█▇▅▆▄▃▄▁ beats 12/80   medium · avg 60%        0.9%  at its level
-<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              1.9%  ▃●▄▃▃▃▇▇█▃▂▅ beats 15/193  very hard · avg 8.5%    0.1%  sharp · too hard for it · noisy
+<a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              1.9%  ▃●▄▃▃▃▇▇█▃▂▅ beats 15/193  very hard · avg 8.6%    0.1%  sharp · too hard for it · noisy
 </pre>
 
 </details>
@@ -89,8 +89,8 @@ test                                          result  vs the others in its run  
 <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                           27.6%  ▁▁▁▂▂▃▂●▆▃▅▃ beats 21/61    medium · avg 41%        5.5%  at its level
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Meta-Llama-3-8B-Instruct_5shots.zip">MMLU-Pro</a>                                       40.1%  ▃▂▅●▃·█▃▅··▂ beats 6/23     medium · avg 57%        2.6%  at its level
 <a href="https://huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/meta-llama/Meta-Llama-3-8B-Instruct/results_2024-04-22%2022%3A18%3A47.513878.json">MedQA (USMLE, 4 options)</a>                       60.7%  ▁▁··▄▁▁··▄▃● beats 17/17    easy · avg 76%          2.1%  sharp · at its level
-<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        36.8%  ▂▁▁▄▂●▇█▆▂▂▂ beats 18/58    medium · avg 50%        1.9%  at its level
-<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.2028 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 11/52    avg 45.199 WB-Score     1.8%  sharp
+<a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>                        36.8%  ▂▁▁▄▂●▇█▆▂▂▂ beats 18/58    medium · avg 51%        1.9%  at its level
+<a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task macro)</a>  29.2028 WB-Score  ▁·▁▁·▃●▄▇▆▅▆ beats 11/52    avg 45.277 WB-Score     1.8%  sharp
 <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>                        31.7%  ▃▂·▆●██▆▅▃▃▃ beats 7/33     medium · avg 41%        1.8%  at its level
 <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard</a>                                 54.4%  ▁▁▁▁▂▄▅●█▃▄▁ beats 57/129   easy · avg 75%          1.4%  sharp · at its level · small run
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/meta-llama--Meta-Llama-3-8B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, …</a>             43.7%  ●·▂▂▂▆▅▆▆▆▃█ beats 0/29     easy · avg 76%          1.3%  at its level

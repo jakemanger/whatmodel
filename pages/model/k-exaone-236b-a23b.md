@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-12 · 236B params (23B active) · k-exaone
 
-**score 65.3** ±0.9 · #141 of 719 · from 25 benchmark results across 3 sources
+**score 65.2** ±0.9 · #140 of 719 · from 25 benchmark results across 3 sources
 
 ## What it's good at
 
@@ -27,11 +27,11 @@ Beats [o3](o3.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gemini 3.1 Flash-Lite](
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>             49.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 40/131  hard · avg 20%          5.5%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>             49.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 40/131  hard · avg 20%          5.6%  sharp · at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Telecom (lab)</a>               73.5%  ▁·▅█▆▅●▃▃▂▃▁ beats 58/89   hard · avg 17%          4.7%  sharp · at its level · small run
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Terminal-Bench 2.1 (lab)</a>             30.3%  ▁·▁·▁▁●▃▄█▃▇ beats 9/56    very hard · avg 11%     4.1%  at its level · small run
-<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>   10.3%  ▃····●··▃█·▃ beats 1/8     very hard · avg 3.4%    3.9%  typical
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Retail (lab)</a>                78.6%  ▁····▂▁▃▆█●▁ beats 40/44   medium · avg 44%        2.7%  at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Terminal-Bench 2.1 (lab)</a>             30.3%  ▁·▁·▁▁●▃▄█▃▇ beats 9/56    very hard · avg 11%     4.0%  at its level · small run
+<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>   10.3%  ▃····●··▃█·▃ beats 1/8     very hard · avg 3.5%    3.9%  typical
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Retail (lab)</a>                78.6%  ▁····▂▁▃▆█●▁ beats 40/44   medium · avg 45%        2.7%  at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Airline (lab)</a>               60.4%  ▁▁·▂▁▃▂▁█●▂▃ beats 32/42   hard · avg 31%          2.3%  at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">τ³-bench Banking (lab)</a>               14.2%  ▂▂·▅█▂▂●▂▅▂▃ beats 12/20   very hard · avg 5.6%    1.2%  blunt · small run
 </pre>
@@ -44,7 +44,7 @@ Beats [Qwen3.5 Plus](qwen3-5-plus.md), [Gemini 2.5 Pro](gemini-2-5-pro.md), [Gem
 
 <pre>
 test                                result  vs the others in its run   difficulty            counts  why
-<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>             49.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 40/131  hard · avg 20%          5.5%  sharp · at its level · small run
+<a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>             49.4%  ▁▁▁▁▁▁▂●█▆▁▁ beats 40/131  hard · avg 20%          5.6%  sharp · at its level · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench Pro 2025Q2 (Medium)…</a>   25.9%  █··▄▂▂██▄·▄● beats 21/22   very hard · avg 3.0%    4.6%  sharp · small run
 <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unspecif…</a>   80.7%  ▂▃▄▄▅██▅●▇▃▆ beats 45/65   medium · avg 46%        3.4%  small run
 </pre>
@@ -83,7 +83,7 @@ Trails [GPT-4.1 nano](gpt-4-1-nano-2025-04-14.md), [GPT-4o mini (2024-07-18)](gp
 
 <pre>
 test                                result  vs the others in its run  difficulty            counts  why
-<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>   10.3%  ▃····●··▃█·▃ beats 1/8    very hard · avg 3.4%    3.9%  typical
+<a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean web…</a>   10.3%  ▃····●··▃█·▃ beats 1/8    very hard · avg 3.5%    3.9%  typical
 </pre>
 
 </details>
@@ -110,7 +110,7 @@ source                                    results  share of the score
 <a name="first-party-lgai-scores"></a><a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LG AI Research vendor-reported benchmar…</a>       13   46% ▇▇▇▇▇▇
 <a name="paper-2606.02404v1-k-browsecomp"></a><a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp: A Web Browsing Agent Benc…</a>        1    4% ▇
 prior: pull toward the middle                        0% ▇
-weighted average                                   = 65.3
+weighted average                                   = 65.2
 </pre>
 
 <sub>Licences: LGAI-EXAONE/K-EXAONE-2.0-750B-A37B model card ([Apache-2.0](https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/LICENSE)) · K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

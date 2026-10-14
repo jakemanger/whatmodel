@@ -37,7 +37,7 @@ Beats [LFM2.5 8B-A1B](lfm2-5-8b-a1b.md), [Qwen3-VL 2B Thinking](qwen3-vl-2b-thin
 
 <pre>
 test                                result  vs the others in its run   difficulty        counts  why
-<a href="https://arxiv.org/html/2502.02737v1">HumanEval</a>                            30.5%  ▁▁▁▁▁●▅▅█▃▂▁ beats 37/190  easy · avg 80%      6.3%  sharp · at its level · small run
+<a href="https://arxiv.org/html/2502.02737v1">HumanEval</a>                            30.5%  ▁▁▁▁▁●▅▅█▃▂▁ beats 37/190  easy · avg 81%      6.2%  sharp · at its level · small run
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identifica…</a>   37.8%  ▃··▁▂▂▃●█▃▄▂ beats 20/47   medium · avg 54%    1.2%  sharp · noisy
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code refi…</a>   20.0%  ▁▁▁▁▁▁▂●▃█▅▄ beats 11/47   hard · avg 33%      1.1%  typical
 <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisation…</a>    1.2%  █●▁▁▂▂▂▃▅▅▅▇ beats 10/47   medium · avg 36%    0.8%  sharp · too hard for it · noisy
@@ -52,7 +52,7 @@ Beats [Phi-2 (2.7B)](phi-2.md) here, though they rank higher overall. Trails [Ge
 
 <pre>
 test                              result  vs the others in its run  difficulty        counts  why
-<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>      7.4%  ●▃·▁▁█▇▅·▁·▁ beats 1/22   medium · avg 42%    2.8%  typical
+<a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>      7.4%  ●▃·▁▁█▇▅·▁·▁ beats 1/22   medium · avg 43%    2.8%  typical
 <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>          44.2%  ●▃▁▃▁▄▁▁█▃▃▁ beats 0/22   easy · avg 80%      2.3%  at its level
 <a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecified)</a>   47.4%  ▁▁●▁▂▄▄▆█▃▂▁ beats 7/141  easy · avg 77%      1.6%  at its level · small run
 </pre>
@@ -82,7 +82,7 @@ test                                result  vs the others in its run    difficul
 <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard v2 a…</a>   36.8%  ▂●▂▃█▄▃▆▃▅▂▂ beats 9/81     medium · avg 58%       3.5%  blunt · at its level
 <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-shot a…</a>   22.2%  ▁▁▁▁▁●▂▃▄▆█▃ beats 15/97    hard · avg 32%         3.1%  blunt
 <a href="https://arxiv.org/html/2502.02737v1">HellaSwag</a>                            60.9%  ▁▁▁▁▂▂▃●█▆▅▃ beats 22/85    easy · avg 86%         2.6%  at its level · small run
-<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       46.5%  ▃●▂·▃▃·▅█▂▅▂ beats 3/21     medium · avg 63%       1.9%  blunt · at its level
+<a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                       46.5%  ▃●▂·▃▃·▅█▂▅▂ beats 3/21     medium · avg 64%       1.9%  blunt · at its level
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   13.2%  ▁▁·▁▂●▄█▄▅▄▄ beats 9/66     hard · avg 31%         1.7%  typical
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   65.6%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 117/276  medium · avg 73%       1.6%  at its level · noisy
 <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                15.5%  ▁▁▁●▃▃▁█▁▃·▄ beats 3/21     hard · avg 32%         1.5%  blunt

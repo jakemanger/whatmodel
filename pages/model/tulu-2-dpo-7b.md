@@ -14,18 +14,18 @@ Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; 
 
 <pre>
 task            vs the others          rank  counts  tests
-coding          ▁▁●▃▆██▇▆▄▃▁   #441 of 458*     15%      1
+coding          ▁▁●▃▆██▇▆▄▃▁   #441 of 458*     14%      1
 chat &amp; writing  ▁▁▁●▅▄▅█▆▆▇▃   #362 of 393*     38%      2
 math            ▁▂●▅▆▅▄█▄▁▁▁   #347 of 398*    8.3%      1
 </pre>
 
-<details><summary>coding · #441 of 458 · 15% of its score</summary>
+<details><summary>coding · #441 of 458 · 14% of its score</summary>
 
 Beats [Molmo 7B-D (0924)](molmo-7b-d.md), [DeepSeek R1 Distill Qwen 1.5B](deepseek-r1-distill-qwen-1-5b.md), [Tulu 2 7B](tulu-2-7b.md) here, though they rank higher overall. Trails [Falcon3 1B Instruct](falcon3-1b.md), [Granite 3.0 1B-A400M Instruct](granite-3-0-1b-a400m.md), [Gemma 1.1 2B IT](gemma-1-1-2b.md) here, though they rank lower overall.
 
 <pre>
 test                             result  vs the others in its run  difficulty           counts  why
-<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (lab)</a>   40.0%  ▃▃●·▆▃▃█▃▂▂▅ beats 5/25   very easy · avg 86%     15%  sharp · at its level
+<a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (lab)</a>   40.0%  ▃▃●·▆▃▃█▃▂▂▅ beats 5/25   very easy · avg 86%     14%  sharp · at its level
 </pre>
 
 </details>
@@ -58,7 +58,7 @@ test         result  vs the others in its run  difficulty      counts  why
 <pre>
 test                                result  vs the others in its run    difficulty        counts  why
 <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                 45.5%  ▁·····▂●▂▅·▁ beats 6/25     easy · avg 77%       23%  sharp · at its level
-<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           50.7%  ▁▁▃▃▄●▄▁█··▁ beats 10/25    easy · avg 74%      8.7%  at its level
+<a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                           50.7%  ▁▁▃▃▄●▄▁█··▁ beats 10/25    easy · avg 74%      8.8%  at its level
 <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard average (…</a>   63.9%  ▃▁▁▁▁▁▁▁▂●▅▁ beats 106/276  medium · avg 73%    3.3%  at its level · noisy
 <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, 1-sh…</a>   44.5%  ▂··▁▃▂●▂█▅▁▂ beats 9/25     medium · avg 61%    3.1%  blunt · at its level
 </pre>

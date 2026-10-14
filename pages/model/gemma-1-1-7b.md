@@ -39,7 +39,7 @@ Beats [OpenThinker3 7B](openthinker3-7b.md), [Gemma 4 E2B](gemma-4-e2b.md), [Cod
 test                                result  vs the others in its run   difficulty        counts  why
 <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 judg…</a>   12.1%  ▂▁▁●█▅▄▃▃▅▃▁ beats 6/60    medium · avg 52%    4.1%  sharp
 <a href="https://arxiv.org/html/2409.00696v3#A6.T7">Polyrating rating (bias-aware re-…</a>  1097.0  ▂▁▂▁▃▇●▆▇▄▂▂ beats 43/95   avg 1201            4.0%  blunt
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1182.5  ▁▁▁▂●▃▃▆▆▇█▃ beats 57/379  avg 1268            3.9%  blunt
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1182.5  ▁▁▁▂●▃▃▆▆▇█▃ beats 57/379  avg 1268            4.0%  blunt
 </pre>
 
 </details>

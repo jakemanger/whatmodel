@@ -24,11 +24,11 @@ Beats [Gemma 3 4B](gemma-3-4b.md), [Phi-3-vision-128k-instruct](phi-3-vision-128
 <pre>
 test                                  result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>          51.0%  ●█▄▄▄·██·▄·█ beats 0/12   easy · avg 71%       31%  at its level
-<a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv descriptive questions (te…</a>     51.5%  ●··▄··█··▄·▄ beats 0/6    easy · avg 71%       18%  at its level
+<a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv descriptive questions (te…</a>     51.5%  ●··▄··█··▄·▄ beats 0/6    easy · avg 71%       17%  at its level
 <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>        964.4  ▁▁●▂▂▂▄▅▅▆██ beats 5/145  avg 1068             16%  blunt
-<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -67.5000  ●▃▃·▃█·▅▃▃▃▃ beats 0/12   avg -0.671           11%  typical
-<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>          22.5%  ●▂▂█▃▂·▂▂··▂ beats 0/13   medium · avg 36%     10%  typical
-<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>                       51.1%  ▁····▁▁▄●▇▆▆ beats 10/52  medium · avg 59%    6.8%  at its level · small run
+<a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image capt…</a>  -67.5000  ●▃▃·▃█·▅▃▃▃▃ beats 0/12   avg -0.412           11%  typical
+<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>          22.5%  ●▂▂█▃▂·▂▂··▂ beats 0/13   medium · avg 37%     10%  typical
+<a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>                       51.1%  ▁····▁▁▄●▇▆▆ beats 10/52  medium · avg 60%    6.8%  at its level · small run
 <a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv reasoning questions (test…</a>     20.0%  ●··▄▄▄█····▄ beats 0/6    hard · avg 32%      6.0%  blunt
 <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>                          69.5%  ▁▁▁▄●▁▃·▃▃▃█ beats 6/24   easy · avg 77%      0.9%  blunt · at its level · small run
 </pre>
@@ -42,7 +42,7 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   42% ▇▇▇▇▇
-<a name="paper-2406.18521v1-charxiv"></a><a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv: Charting Gaps in Realistic Cha…</a>        2   24% ▇▇▇
+<a name="paper-2406.18521v1-charxiv"></a><a href="https://arxiv.org/html/2406.18521v1#A3.T4">CharXiv: Charting Gaps in Realistic Cha…</a>        2   23% ▇▇▇
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   16% ▇▇
 <a name="paper-2503.12329v1-caparena"></a><a href="https://arxiv.org/html/2503.12329v1">CapArena: Benchmarking and Analyzing De…</a>        1   11% ▇
 <a name="llava-model-zoo-apache"></a><a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">LLaVA repository model zoo (lab)</a>                2    8% ▇

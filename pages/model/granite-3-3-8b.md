@@ -24,7 +24,7 @@ Beats [Ministral 3 14B Reasoning 2512](ministral-3-14b-reasoning.md), [Ministral
 
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge unspeci…</a>   57.6%  █·▄··▄·····● beats 5/5    medium · avg 58%    6.2%  at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge unspeci…</a>   57.6%  █·▄··▄·····● beats 5/5    medium · avg 58%    6.1%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecified) …</a>   74.8%  ▄▄·▄······▄● beats 5/5    easy · avg 79%      4.9%  at its level
 </pre>
 
@@ -39,8 +39,8 @@ test                         result  vs the others in its run  difficulty       
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>                8.1%  █···▄▄▄····● beats 5/5    very hard · avg 11%     16%  sharp · too hard for it
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>                   80.9%  █··▄·····▄·● beats 4/5    very easy · avg 90%     14%  sharp
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>                69.0%  █···▄·▄▄···● beats 5/5    easy · avg 74%         8.0%  at its level
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>   10.7%  █···●·▄·▄··█ beats 2/6    hard · avg 20%         3.6%  typical
-<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>     67.3%  ██····●█·███ beats 2/6    easy · avg 71%         3.2%  at its level · noisy
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>   10.7%  █···●·▄·▄··█ beats 2/6    hard · avg 20%         3.5%  typical
+<a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>     67.3%  ██····●█·███ beats 2/6    easy · avg 72%         3.2%  at its level · noisy
 </pre>
 
 </details>
@@ -52,7 +52,7 @@ test                                result  vs the others in its run  difficulty
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">BIG-Bench Hard (lab)</a>                 69.1%  █·▄·····●▄·▄ beats 3/5    easy · avg 84%          14%  sharp · at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MMLU (lab)</a>                           65.5%  ▄█········●█ beats 3/5    easy · avg 78%          12%  at its level
 <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (lab)</a>                           59.4%  ▃▃·····▃···● beats 5/5    easy · avg 68%          10%  at its level
-<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (lab)</a>                          26.2%  ▄·█······●·█ beats 3/5    hard · avg 34%         5.1%  blunt · at its level
+<a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (lab)</a>                          26.2%  ▄·█······●·█ beats 3/5    hard · avg 34%         5.2%  blunt · at its level
 <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maintenan…</a>   59.5%  ▁··▃▁▁▁●█▅▁▅ beats 8/24   medium · avg 52%       2.4%  blunt · at its level
 <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderboard…</a>   89.4%  ▁▂▁▂▅●▂▃▄▃▁▁ beats 37/98  very easy · avg 90%    0.0%  blunt
 </pre>

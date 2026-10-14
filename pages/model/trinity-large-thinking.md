@@ -6,7 +6,7 @@
 
 Arcee AI · released 2026-04 · 398B params (13B active) · openmdw-1.1
 
-**score 62.6** ±1.6 · #170 of 719 · from 5 benchmark results across 2 sources
+**score 62.5** ±1.6 · #170 of 719 · from 5 benchmark results across 2 sources
 
 ## What it's good at
 
@@ -24,7 +24,7 @@ math            █··········●         #1 of 2*    3.2%      1
 
 <pre>
 test                    result  vs the others in its run  difficulty            counts  why
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">τ²-bench Telecom (lab)</a>   94.7%  ▁·▅█▆▅▂▃●▂▃▁ beats 74/89  very hard · avg 9.6%       —  not counted yet: no other model in the …
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">τ²-bench Telecom (lab)</a>   94.7%  ▁·▅█▆▅▂▃●▂▃▁ beats 74/89  very hard · avg 9.7%       —  not counted yet: no other model in the …
 </pre>
 
 </details>
@@ -35,7 +35,7 @@ Beats [Qwen3-Coder-Next (80B-A3B)](qwen3-coder-next.md), [Qwen3-VL 235B-A22B Ins
 
 <pre>
 test                       result  vs the others in its run  difficulty  counts  why
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1237.6  ▁▂●▃▅█▄▇▆▄▁▁ beats 9/119  avg 981        43%  sharp
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1237.6  ▁▂●▃▅█▄▇▆▄▁▁ beats 9/119  avg 983        43%  sharp
 </pre>
 
 </details>
@@ -65,7 +65,7 @@ test             result  vs the others in its run    difficulty        counts  w
 <pre>
 test                result  vs the others in its run    difficulty        counts  why
 <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">GPQA Diamond (lab)</a>   76.3%  ▁▁▁▁▂▄▅▅●██▄ beats 180/310  hard · avg 44%       19%  sharp · at its level · small run
-<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (lab)</a>       83.4%  ▁▁·▁▁▁▃▂▄▅●▁ beats 156/188  medium · avg 59%    9.2%  small run
+<a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (lab)</a>       83.4%  ▁▁·▁▁▁▃▂▄▅●▁ beats 156/188  medium · avg 60%    9.2%  small run
 </pre>
 
 </details>
@@ -79,7 +79,7 @@ source                                    results  share of the score
 <a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     2   67% ▇▇▇▇▇▇▇▇
 <a name="first-party-arcee-scores"></a><a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">Arcee AI vendor-reported benchmark scor…</a>        3   32% ▇▇▇▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 62.6
+weighted average                                   = 62.5
 </pre>
 
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>

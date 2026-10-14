@@ -6,7 +6,7 @@
 
 FreedomIntelligence (CUHK-SZ) · released 2023-09 · apache-2.0
 
-**score 39.9** ±3.5 · #713 of 949 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.9** ±3.5 · #715 of 951 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## What it's good at
 
@@ -32,7 +32,7 @@ test                                result  vs the others in its run  difficulty
 
 <pre>
 test                                result  vs the others in its run  difficulty      counts  why
-<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   12.4%  ▁▁·▁▂●▄█▄▅▄▄ beats 8/66   hard · avg 31%     29%  typical
+<a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, …</a>   12.4%  ▁▁·▁▂●▄█▄▅▄▄ beats 8/66   hard · avg 31%     30%  typical
 </pre>
 
 </details>

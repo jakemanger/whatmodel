@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-05 · 4.15B params · mit
 
-**score 41.4** ±1.8 · #510 of 719 · from 9 benchmark results across 4 sources
+**score 41.3** ±1.8 · #511 of 719 · from 9 benchmark results across 4 sources
 
 ## What it's good at
 
@@ -36,9 +36,9 @@ Trails [Qwen2-VL 2B Instruct](qwen2-vl-2b.md), [Phi-3.5-vision-instruct](phi-3-5
 <pre>
 test                                result  vs the others in its run  difficulty        counts  why
 <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>        60.5%  ▄█●▄▄·██·▄·█ beats 3/12   easy · avg 71%       41%  at its level
-<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      881.1  ●▁▂▂▂▂▄▅▅▆██ beats 0/145  avg 1068             20%  blunt
-<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>        31.6%  ▂▂▂●▃▂·▂▂··▂ beats 4/13   medium · avg 36%     15%  typical
-<a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (lab)</a>                     40.4%  ▁····▁●▄█▇▆▆ beats 2/52   medium · avg 50%     10%  small run
+<a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlled)</a>      881.1  ●▁▂▂▂▂▄▅▅▆██ beats 0/145  avg 1068             21%  blunt
+<a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>        31.6%  ▂▂▂●▃▂·▂▂··▂ beats 4/13   medium · avg 37%     15%  typical
+<a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (lab)</a>                     40.4%  ▁····▁●▄█▇▆▆ beats 2/52   medium · avg 51%     10%  small run
 <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>           44.5%  ▁··▁●▄▇█▅▆█▄ beats 4/47   medium · avg 52%    6.3%  at its level · small run
 <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world understa…</a>   38.4%  ▅●█··▅▃····▃ beats 2/9    hard · avg 43%      3.4%  blunt
 <a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA (lab)</a>                        81.4%  ▁··▁▁▁▁▁▂●▅█ beats 16/44  easy · avg 79%      1.3%  blunt · at its level · noisy · small run
@@ -55,11 +55,11 @@ Each result implies a score on its own, after adjusting for how hard that test i
 <pre>
 source                                    results  share of the score
 <a name="charxiv-readme-apache"></a><a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv leaderboard</a>                             2   56% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   20% ▇▇
+<a name="lmarena-dataset"></a><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">LMArena leaderboard dataset</a>                     1   21% ▇▇
 <a name="paper-2404.14219v3-phi3"></a><a href="https://arxiv.org/html/2404.14219v3#S7">Phi-3 Technical Report (lab)</a>                    5   19% ▇▇
 <a name="paper-2501.16411v2-physbench"></a><a href="https://arxiv.org/html/2501.16411v2">PhysBench: Benchmarking and Enhancing V…</a>        1    3% ▇
 prior: pull toward the middle                        1% ▇
-weighted average                                   = 41.4
+weighted average                                   = 41.3
 </pre>
 
 <sub>Licences: CharXiv leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Phi-3 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
