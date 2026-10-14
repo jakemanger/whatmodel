@@ -37,7 +37,10 @@ export type Model = {
   category?: Category; // default "llm"
   released?: string;
   released_source?: string;
-  availability?: "preview"; // announced limited access; visible without claiming a public run route
+  // preview: announced limited access, visible without claiming a public run route; app: available
+  // only in the maker's own app or subscription (no API or download), named in `app`.
+  availability?: "preview" | "app";
+  app?: string;
   availability_source?: string;
   source?: string;
   model_repo?: string;

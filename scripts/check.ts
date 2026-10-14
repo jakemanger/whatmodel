@@ -31,8 +31,9 @@ for (const m of models) {
   if (ids.has(m.id)) errors.push(`duplicate model: ${m.id}`);
   ids.add(m.id);
   if (catalogueOnly(m)) retired.push(m.id);
-  if (m.availability !== undefined && (m.availability !== "preview" || !/^https?:\/\//.test(m.availability_source ?? "")))
-    errors.push(`${m.id}: preview availability needs a reviewed announcement URL`);
+  if (m.availability !== undefined && (!["preview", "app"].includes(m.availability) || !/^https?:\/\//.test(m.availability_source ?? "")))
+    errors.push(`${m.id}: ${m.availability} availability needs a reviewed announcement URL`);
+  if (m.availability === "app" && !m.app) errors.push(`${m.id}: app availability needs the app's name`);
   for (const v of m.local?.variants ?? []) {
     if (!v.cmd) errors.push(`${m.id}: variant without a command ${JSON.stringify(v)}`);
     if (!(v.gb > 0) && !m.params_b) errors.push(`${m.id}: variant ${v.quant} needs gb, or params_b on the model to estimate it`);

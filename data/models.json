@@ -222,6 +222,38 @@
     "context_source": "https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/xai/grok-4.6.toml"
   },
   {
+    "id": "muse-wonder-full",
+    "name": "Muse Wonder Full",
+    "provider": "Meta",
+    "released": "2026-10",
+    "source": "https://research.meta.ai/blog/muse-wonder",
+    "identity_note": "The most capable Muse Wonder model. Meta offers it to Muse Code subscribers only, not on the Meta Model API (announcement, 2026-10-12).",
+    "open_weights": false,
+    "context_k": 1048.576,
+    "context_source": "https://github.com/anomalyco/models.dev/blob/b76390e131da169014dab4ca4eff21ca774fe5d3/models/meta/muse-wonder-full.toml",
+    "availability": "app",
+    "availability_source": "https://research.meta.ai/blog/muse-wonder",
+    "app": "Muse Code"
+  },
+  {
+    "id": "muse-wonder",
+    "name": "Muse Wonder",
+    "provider": "Meta",
+    "released": "2026-10",
+    "source": "https://research.meta.ai/blog/muse-wonder",
+    "open_weights": false,
+    "api": {
+      "url": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "provider": "Meta",
+      "price_in": 4,
+      "price_out": 20,
+      "price_source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "price_note": "USD per 1M tokens, Meta Developer Platform Standard mode for muse-wonder-1.0; cached input $0.20/1M excluded; Contributor mode is not available for Muse Wonder; web-search grounding billed separately ($2.50 per 1,000 searches); page states no long-context premium. Currency: USD. Meta official pricing page, observed 2026-10-14."
+    },
+    "context_k": 1048.576,
+    "context_source": "https://github.com/anomalyco/models.dev/blob/b76390e131da169014dab4ca4eff21ca774fe5d3/models/meta/muse-wonder-1.0.toml"
+  },
+  {
     "id": "muse-spark-1-3",
     "name": "Muse Spark 1.3",
     "provider": "Meta",

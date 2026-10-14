@@ -268198,5 +268198,53 @@
     "date": "2024-05-16",
     "note": "Open Medical-LLM Leaderboard results (openlifescienceai/results @62d7322, Apache-2.0), file 'upstage/SOLAR-10.7B-Instruct-v1.0/results_2024-05-16 15:38:23.436788.json', PubMedQA labelled set, accuracy, lm-eval task 'pubmedqa': results['pubmedqa']['acc,none'] = 0.526000; read 2026-10-11. An lm-evaluation-harness output from the leaderboard backend (config.model_args 'pretrained=upstage/SOLAR-10.7B-Instruct-v1.0,revision=main,dtype=float16'); zero-shot as in the harness task. Only harness-generated files are used (hand-entered rows such as Flan-PaLM, GPT-4, Med-PaLM 2, and files without harness metadata are not). Checkpoint: HF repo upstage/SOLAR-10.7B-Instruct-v1.0 (catalogue solar-10-7b-instruct, exact model_repo match).",
     "source_id": "openlifescienceai-results-apache"
+  },
+  {
+    "model": "muse-wonder",
+    "bench": "epoch-ebr",
+    "score": 0.3142857142857143,
+    "source": "https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv",
+    "by": "independent",
+    "date": "2026-10-12",
+    "note": "Epoch AI internal evaluation; file ebr_bench.csv; snapshot 2026-10-14; exact model version 'muse-wonder-1.0_max'; run id fMDaGtyboCNfTpP9aStwaU; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.041513323271815936.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "muse-wonder",
+    "bench": "programbench-almost1",
+    "score": 0.5,
+    "source": "https://research.meta.ai/static/muse-wonder-model-card#page=3",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-12",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Wonder model card (published 2026-10-12), capabilities scorecard, row 'ProgramBench', column 'Muse Wonder (max)'. Card methodology: Muse Wonder and Muse Wonder Full results use max reasoning effort; 'All compared models use mini-swe-agent. The primary metric is the percentage of rollouts passing at least 95% of tests.' Only rows Meta ran itself are used: the card credits Harvey LAB-AA, AutomationBench-AA, Terminal-Bench 4.0 and the AA Index to Artificial Analysis, Vals Finance Agent V2 to Vals AI, GDP.pdf to Surge, DeepSWE to Datacurve and SWE-Marathon to Abundant AI.",
+    "evidence": {
+      "kind": "table",
+      "section": "Coding",
+      "row_label": "ProgramBench",
+      "column_label": "Muse Wonder (max)",
+      "raw_value": "50.0",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "muse-wonder-full",
+    "bench": "programbench-almost1",
+    "score": 0.59,
+    "source": "https://research.meta.ai/static/muse-wonder-model-card#page=3",
+    "source_id": "first-party-meta-scores",
+    "by": "lab",
+    "date": "2026-10-12",
+    "mode": "max reasoning effort",
+    "note": "Meta own evaluation in the Muse Wonder model card (published 2026-10-12), capabilities scorecard, row 'ProgramBench', column 'Muse Wonder Full (max)'. Card methodology: Muse Wonder and Muse Wonder Full results use max reasoning effort; 'All compared models use mini-swe-agent. The primary metric is the percentage of rollouts passing at least 95% of tests.' Only rows Meta ran itself are used: the card credits Harvey LAB-AA, AutomationBench-AA, Terminal-Bench 4.0 and the AA Index to Artificial Analysis, Vals Finance Agent V2 to Vals AI, GDP.pdf to Surge, DeepSWE to Datacurve and SWE-Marathon to Abundant AI.",
+    "evidence": {
+      "kind": "table",
+      "section": "Coding",
+      "row_label": "ProgramBench",
+      "column_label": "Muse Wonder Full (max)",
+      "raw_value": "59.0",
+      "scale_divisor": 100
+    }
   }
 ]

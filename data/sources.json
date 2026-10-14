@@ -372,7 +372,9 @@
       "github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-5.3.toml",
       "github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-5.toml",
       "github.com/anomalyco/models.dev/blob/6b32416340759c52202fef2b0e69cd89adb74bbe/providers/openai/models/gpt-4o-2024-11-20.toml",
-      "github.com/anomalyco/models.dev/blob/6b32416340759c52202fef2b0e69cd89adb74bbe/providers/xiaomi/models/mimo-v2.6-pro.toml"
+      "github.com/anomalyco/models.dev/blob/6b32416340759c52202fef2b0e69cd89adb74bbe/providers/xiaomi/models/mimo-v2.6-pro.toml",
+      "github.com/anomalyco/models.dev/blob/b76390e131da169014dab4ca4eff21ca774fe5d3/models/meta/muse-wonder-1.0.toml",
+      "github.com/anomalyco/models.dev/blob/b76390e131da169014dab4ca4eff21ca774fe5d3/models/meta/muse-wonder-full.toml"
     ],
     "kind": "dataset",
     "license": "MIT",
@@ -3040,6 +3042,22 @@
     "icon": "meta.ai",
     "attribution": "Meta official pricing/docs, observed 2026-09-25",
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped."
+  },
+  {
+    "id": "first-party-meta-scores",
+    "name": "Meta vendor-reported benchmark scores for its own Muse models (Muse Wonder model card)",
+    "match": [
+      "research.meta.ai/static/muse-wonder-model-card"
+    ],
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://research.meta.ai/blog/muse-wonder",
+    "verdict": "allowed",
+    "checked": "2026-10-14",
+    "exact": true,
+    "icon": "research.meta.ai",
+    "attribution": "Meta, vendor-reported results for Meta’s own Muse Wonder models from the Muse Wonder model card (2026-10-12); individual figures hand-recorded 2026-10-14; percentages converted to fractions. Only rows Meta ran itself; scores the card credits to Artificial Analysis, Vals AI, Surge, Datacurve or Abundant AI, and other labs’ columns, are not used. Lab-reported, not independent measurements. No endorsement.",
+    "quote": "Owner policy 2026-10-07: a vendor’s published scores for its own models may be hand-recorded one figure at a time with link, date and printed settings, labelled lab-reported; cells the source credits to a third party are not used."
   },
   {
     "id": "first-party-xai",
