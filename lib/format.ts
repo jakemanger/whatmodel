@@ -120,6 +120,7 @@ export function terminalHelp(base: string, cat: Category, width = 80) {
     `Terms: ${host}/terms`, '',
     'curl does not send your terminal size. Set width explicitly, or:',
     `curl "${host}${path}?width=$(tput cols)"`,
+    '', 'Quote URLs containing ? or & so shells such as zsh do not expand them.',
   ];
   return '\n' + lines.flatMap((line) => line ? (line.length <= terminalColumns(width) - 2 ? [line] : terminalWrap(line, terminalColumns(width) - 2)).map((s) => '  ' + s) : ['']).join('\n') + '\n';
 }
@@ -177,7 +178,8 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   if (width >= 80 && shown.some((r) => r.speed && r.speed.how !== 'measured')) say('~speed: measured on other machines (?format=json says which)', '2');
   if (!specs && max === null) say(`Your machine: curl "${host}${path}?ram=32&gpu=apple"`);
   if (o.withApis) say(`Include API models: ${o.withApis}`);
-  say('?help=1 options · ?n=20 more · ?format=json full details', '2');
+  say(`Help: curl "${host}${path}?help=1"`, '2');
+  say('?n=20 more · ?format=json full details', '2');
   say(`Sources: ${host}/method · Lists: /image /video /tts /stt`, '2');
   if (sponsor) say(`Sponsor: ${sponsor.text} — ${sponsor.url}`, '35');
   out.push('');

@@ -41,6 +41,12 @@ test('wide output adds useful columns and requested row limits work', async () =
   for (const value of ['0', '-1', 'NaN', 'Infinity', 'bad']) bounded(await response(`width=${value}&n=${value}`).text(), 80);
 });
 
+test('terminal help commands quote query strings for shells such as zsh', async () => {
+  const text = await response().text();
+  assert.match(text, /Help: curl "whatmodel.sh\/\?help=1"/);
+  assert.match(await response('help=1').text(), /Quote URLs containing \? or &/);
+});
+
 test('graphemes align by terminal cell width without splitting emoji or accents', () => {
   assert.equal(terminalWidth('模型'), 4);
   assert.equal(terminalWidth('e\u0301'), 1);
