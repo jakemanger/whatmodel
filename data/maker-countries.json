@@ -1,0 +1,21 @@
+{
+  "OpenAI": "us",
+  "Google": "us",
+  "Anthropic": "us",
+  "Meta": "us",
+  "Princeton NLP": "us",
+  "Phind": "us",
+  "DeepSeek": "cn",
+  "Alibaba Cloud": "cn",
+  "THUDM": "cn",
+  "Meituan": "cn",
+  "Z.ai": "cn",
+  "Moonshot AI": "cn",
+  "Tencent": "cn",
+  "Xiaomi": "cn",
+  "uukuguy": "cn",
+  "Chujie Zheng (ExPO)": "cn",
+  "BigScience": "intl",
+  "EleutherAI": "intl",
+  "M-A-P": "intl"
+}

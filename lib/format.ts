@@ -52,6 +52,7 @@ export function whereLabel(r: Row) {
   if (r.where === "local-slow") return "local (slow)";
   if (r.where === "api") return `api ${r.price === null ? "price unknown" : price(r.price, r.category)}${r.also_local ? " +local" : ""}`;
   if (r.where === "retired") return "comparison only";
+  if (r.where === "research") return "never released";
   if (r.where === "preview") return "limited preview";
   if (r.where === "app") return `${r.app ?? "app"} only`;
   const why = [r.need_gb !== null && `needs ${r.need_gb}GB`, r.over_budget && (r.price === null ? "price unknown" : price(r.price, r.category))].filter(Boolean);
