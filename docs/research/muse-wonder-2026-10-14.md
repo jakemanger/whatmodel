@@ -49,4 +49,12 @@ except Muse Spark 1.2, which was evaluated on version 06.24"; Anthropic's Fable 
 recorded: SWE-Atlas Codebase QnA and MRCR v2 at 256K-1M (no matching benchmark here), GDPVal-AA (Artificial
 Analysis), the internal Agentic IF Index, and other labs' columns.
 
+OpenAI's own HealthBench Professional figures (length-adjusted, from the GPT-5.6, GPT-6 Astra and GPT-6.1 Sol system
+cards, recorded in `vendor-scores-openai-2026-10-07.json`) join `healthbench-professional` too: 9 OpenAI rows, so the
+test links Meta's, Anthropic's and OpenAI's own runs.
+
+Leaderboards checked for an open licence on 2026-10-14 (none has one, so none is used): Datacurve's DeepSWE, Abundant AI's
+SWE-Marathon, Vals AI's Finance Agent v2 and Surge's GDP.pdf. Surge's GDP.pdf paper (arXiv 2607.11192v3, CC BY 4.0)
+mirrors its July leaderboard for 17 models, without Muse Wonder.
+
 With these, Muse Wonder has 5 results and Muse Wonder Full 4, so both are on the main list.

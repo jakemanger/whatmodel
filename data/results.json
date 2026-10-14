@@ -268733,5 +268733,149 @@
       "raw_value": "39.5%",
       "scale_divisor": 100
     }
+  },
+  {
+    "model": "gpt-5-4",
+    "bench": "healthbench-professional",
+    "score": 0.481,
+    "source": "https://deploymentsafety.openai.com/gpt-5-6",
+    "source_id": "first-party-openai-scores",
+    "by": "lab",
+    "note": "OpenAI, GPT-5.6 system card, HealthBench table, HealthBench Professional length-adjusted score 48.1 (OpenAI's official length adjustment: 1.47 points off per 500 characters beyond 2,000; unadjusted 51.9.). Vendor-reported; recorded in docs/research/vendor-scores-openai-2026-10-07.json and matched to this benchmark on 2026-10-14.",
+    "evidence": {
+      "kind": "table",
+      "row_label": "HealthBench Professional (length-adjusted)",
+      "column_label": "gpt-5-4",
+      "raw_value": "48.1",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gpt-5-5",
+    "bench": "healthbench-professional",
+    "score": 0.518,
+    "source": "https://deploymentsafety.openai.com/gpt-5-6",
+    "source_id": "first-party-openai-scores",
+    "by": "lab",
+    "note": "OpenAI, GPT-5.6 system card, HealthBench table, HealthBench Professional length-adjusted score 51.8 (OpenAI's official length adjustment: 1.47 points off per 500 characters beyond 2,000; unadjusted 57.2.). Vendor-reported; recorded in docs/research/vendor-scores-openai-2026-10-07.json and matched to this benchmark on 2026-10-14.",
+    "evidence": {
+      "kind": "table",
+      "row_label": "HealthBench Professional (length-adjusted)",
+      "column_label": "gpt-5-5",
+      "raw_value": "51.8",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gpt-5-6-sol",
+    "bench": "healthbench-professional",
+    "score": 0.605,
+    "source": "https://deploymentsafety.openai.com/gpt-5-6",
+    "source_id": "first-party-openai-scores",
+    "by": "lab",
+    "note": "OpenAI, GPT-5.6 system card, HealthBench table, HealthBench Professional length-adjusted score 60.5 (OpenAI's official length adjustment: 1.47 points off per 500 characters beyond 2,000; unadjusted 64.1.). Vendor-reported; recorded in docs/research/vendor-scores-openai-2026-10-07.json and matched to this benchmark on 2026-10-14.",
+    "evidence": {
+      "kind": "table",
+      "row_label": "HealthBench Professional (length-adjusted)",
+      "column_label": "gpt-5-6-sol",
+      "raw_value": "60.5",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gpt-5-6-terra",
+    "bench": "healthbench-professional",
+    "score": 0.577,
+    "source": "https://deploymentsafety.openai.com/gpt-5-6",
+    "source_id": "first-party-openai-scores",
+    "by": "lab",
+    "note": "OpenAI, GPT-5.6 system card, HealthBench table, HealthBench Professional length-adjusted score 57.7 (OpenAI's official length adjustment: 1.47 points off per 500 characters beyond 2,000; unadjusted 62.4.). Vendor-reported; recorded in docs/research/vendor-scores-openai-2026-10-07.json and matched to this benchmark on 2026-10-14.",
+    "evidence": {
+      "kind": "table",
+      "row_label": "HealthBench Professional (length-adjusted)",
+      "column_label": "gpt-5-6-terra",
+      "raw_value": "57.7",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gpt-5-6-luna",
+    "bench": "healthbench-professional",
+    "score": 0.557,
+    "source": "https://deploymentsafety.openai.com/gpt-5-6",
+    "source_id": "first-party-openai-scores",
+    "by": "lab",
+    "note": "OpenAI, GPT-5.6 system card, HealthBench table, HealthBench Professional length-adjusted score 55.7 (OpenAI's official length adjustment: 1.47 points off per 500 characters beyond 2,000; unadjusted 59.8.). Vendor-reported; recorded in docs/research/vendor-scores-openai-2026-10-07.json and matched to this benchmark on 2026-10-14.",
+    "evidence": {
+      "kind": "table",
+      "row_label": "HealthBench Professional (length-adjusted)",
+      "column_label": "gpt-5-6-luna",
+      "raw_value": "55.7",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gpt-6-astra",
+    "bench": "healthbench-professional",
+    "score": 0.647,
+    "source": "https://deploymentsafety.openai.com/gpt-6-astra",
+    "source_id": "first-party-openai-scores",
+    "by": "lab",
+    "note": "OpenAI, GPT-6 Astra system card (revised September 22, 2026 to correct a misconfiguration), HealthBench table, HealthBench Professional length-adjusted score 64.7 (OpenAI's official length adjustment: 1.47 points off per 500 characters beyond 2,000; unadjusted 68.2.). Vendor-reported; recorded in docs/research/vendor-scores-openai-2026-10-07.json and matched to this benchmark on 2026-10-14.",
+    "evidence": {
+      "kind": "table",
+      "row_label": "HealthBench Professional (length-adjusted)",
+      "column_label": "gpt-6-astra",
+      "raw_value": "64.7",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gpt-6-sol",
+    "bench": "healthbench-professional",
+    "score": 0.608,
+    "source": "https://deploymentsafety.openai.com/gpt-6-astra",
+    "source_id": "first-party-openai-scores",
+    "by": "lab",
+    "note": "OpenAI, GPT-6 Astra system card (revised September 22, 2026 to correct a misconfiguration), HealthBench table, HealthBench Professional length-adjusted score 60.8 (OpenAI's official length adjustment: 1.47 points off per 500 characters beyond 2,000; unadjusted 59.5.). Vendor-reported; recorded in docs/research/vendor-scores-openai-2026-10-07.json and matched to this benchmark on 2026-10-14.",
+    "evidence": {
+      "kind": "table",
+      "row_label": "HealthBench Professional (length-adjusted)",
+      "column_label": "gpt-6-sol",
+      "raw_value": "60.8",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gpt-6-luna",
+    "bench": "healthbench-professional",
+    "score": 0.608,
+    "source": "https://deploymentsafety.openai.com/gpt-6-astra",
+    "source_id": "first-party-openai-scores",
+    "by": "lab",
+    "note": "OpenAI, GPT-6 Astra system card (revised September 22, 2026 to correct a misconfiguration), HealthBench table, HealthBench Professional length-adjusted score 60.8 (OpenAI's official length adjustment: 1.47 points off per 500 characters beyond 2,000; unadjusted 61.2.). Vendor-reported; recorded in docs/research/vendor-scores-openai-2026-10-07.json and matched to this benchmark on 2026-10-14.",
+    "evidence": {
+      "kind": "table",
+      "row_label": "HealthBench Professional (length-adjusted)",
+      "column_label": "gpt-6-luna",
+      "raw_value": "60.8",
+      "scale_divisor": 100
+    }
+  },
+  {
+    "model": "gpt-6-1-sol",
+    "bench": "healthbench-professional",
+    "score": 0.642,
+    "source": "https://deploymentsafety.openai.com/gpt-6-1-sol",
+    "source_id": "first-party-openai-scores",
+    "by": "lab",
+    "note": "OpenAI, GPT-6.1 Sol system card, HealthBench table, HealthBench Professional length-adjusted score 64.2 (OpenAI's official length adjustment: 1.47 points off per 500 characters beyond 2,000; unadjusted 67.2.). Vendor-reported; recorded in docs/research/vendor-scores-openai-2026-10-07.json and matched to this benchmark on 2026-10-14.",
+    "evidence": {
+      "kind": "table",
+      "row_label": "HealthBench Professional (length-adjusted)",
+      "column_label": "gpt-6-1-sol",
+      "raw_value": "64.2",
+      "scale_divisor": 100
+    }
   }
 ]
